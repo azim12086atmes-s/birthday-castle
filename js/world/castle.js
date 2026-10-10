@@ -155,8 +155,9 @@ export function createCastle(scene) {
 
   // --- towers ---------------------------------------------------------------
   for (const sx of [-1, 1]) {
-    tower(cx + sx * wx, fz, 5.5, 24, 'cone', { roofH: 15, flag: sx < 0 ? '#5b3fd6' : '#d6408f' });
-    tower(cx + sx * wx, bz, 5.5, 22, 'cone', { roofH: 13, flag: '#2bb7c4' });
+    // outer corner towers wear onion domes (U221); gothic spires stay at the centre
+    tower(cx + sx * wx, fz, 5.5, 24, 'onion', { flag: sx < 0 ? '#5b3fd6' : '#d6408f' });
+    tower(cx + sx * wx, bz, 5.5, 22, 'onion', { flag: '#2bb7c4' });
     tower(cx + sx * 9, fz, 3.3, 18, 'onion', { windows: 3, wOff: 0.4, wRows: [12] });
   }
 
