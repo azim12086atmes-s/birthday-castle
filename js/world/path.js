@@ -75,7 +75,7 @@ export function createPath(scene) {
       varying float vGlow; varying vec3 vN; varying float vHue; varying float vTop; varying float vDist; varying float vR;
       vec3 hue(float h){ return clamp(abs(mod(h * 6. + vec3(0., 4., 2.), 6.) - 3.) - 1., 0., 1.); }
       void main(){
-        vec3 gem = mix(vec3(.18, .28, .75), hue(.55 + vHue * .35), .35);
+        vec3 gem = mix(vec3(.66, .62, .86), hue(.5 + vHue * .45), .28);   // pale moonstone with an opal tint
         float shimmer = .5 + .5 * sin(uTime * 2. + vHue * 30.);
         vec3 col = gem * (.45 + .25 * shimmer) + vec3(.3, .25, .6) * vTop * .3;
         // a faceted gem: bright table in the middle, darker bevelled rim

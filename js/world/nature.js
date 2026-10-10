@@ -2,17 +2,18 @@
 // light beneath them, glowing flowers and grass tufts. All instanced: one draw
 // call per kind no matter how many there are.
 import * as THREE from 'three';
-import { FOG_COLOR } from './sky.js';
 import { mergeGeometries } from 'three/addons/utils/BufferGeometryUtils.js';
-import { toon, additive } from './materials.js';
-import { trunkTexture, glowTexture, leafTexture, rng } from './textures.js';
-import { ISLANDS, isClearOfBuildings, addCollider, groundAt } from './layout.js';
+import { toon, additive, nightGrade } from './materials.js';
+import { trunkTexture, glowTexture, leafTexture, leafClumpTexture, flowerTexture, rng } from './textures.js';
+import { ISLANDS, isClearOfBuildings, addCollider, groundAt, islandAt, terrainHeight, groundHSL } from './layout.js';
+import { MOOD } from './sky.js';
+
+const BLOBS = [[0, 0, 0, 1], [0.9, -0.35, 0.3, 0.72], [-0.8, -0.3, -0.4, 0.75], [0.2, 0.55, -0.5, 0.65], [-0.3, -0.25, 0.9, 0.6],
+    [0.55, 0.3, 0.6, 0.55], [-0.6, 0.35, 0.3, 0.55], [0.1, -0.55, -0.85, 0.55], [0.7, 0.1, -0.7, 0.5]];
 
 function canopyGeometry(r) {
   const parts = [];
-  const blobs = [[0, 0, 0, 1], [0.9, -0.35, 0.3, 0.72], [-0.8, -0.3, -0.4, 0.75], [0.2, 0.55, -0.5, 0.65], [-0.3, -0.25, 0.9, 0.6],
-    [0.55, 0.3, 0.6, 0.55], [-0.6, 0.35, 0.3, 0.55], [0.1, -0.55, -0.85, 0.55], [0.7, 0.1, -0.7, 0.5]];
-  for (const [x, y, z, s] of blobs) {
+  for (const [x, y, z, s] of BLOBS) {
     const g = new THREE.IcosahedronGeometry(s, 1);
     const p = g.attributes.position;
     const seed = r() * 10;
@@ -38,23 +39,66 @@ function canopyGeometry(r) {
   return g;
 }
 
+// Leaf-card shell (reference T1): clumps of painted leaves scattered over the
+// blobs, each card lit with the canopy's spherical normal so the whole crown
+// shades as one soft volume while its edge breaks up into real leaves.
+function leafCardGeometry(r, count) {
+  const pos = [], nor = [], uv = [], idx = [];
+  const n = new THREE.Vector3(), u = new THREE.Vector3(), v = new THREE.Vector3(), c = new THREE.Vector3(), sn = new THREE.Vector3();
+  const total = BLOBS.reduce((a, b) => a + b[3] * b[3], 0);
+  for (let k = 0; k < count; k++) {
+    let pick = r() * total, b = BLOBS[0];
+    for (const bb of BLOBS) { pick -= bb[3] * bb[3]; if (pick <= 0) { b = bb; break; } }
+    n.set(r() * 2 - 1, r() * 1.6 - 0.45, r() * 2 - 1).normalize();
+    c.set(b[0], b[1], b[2]).addScaledVector(n, b[3] * 0.92);
+    const size = 0.42 + r() * 0.3;
+    u.set(0, 1, 0).cross(n); if (u.lengthSq() < 0.01) u.set(1, 0, 0); u.normalize();
+    v.crossVectors(n, u);
+    const roll = r() * Math.PI * 2, cr = Math.cos(roll), srr = Math.sin(roll);
+    const uu = u.clone().multiplyScalar(cr).addScaledVector(v, srr), vv = v.clone().multiplyScalar(cr).addScaledVector(u, -srr);
+    const base = pos.length / 3;
+    for (const [a, bq, s, t] of [[-1, -1, 0, 0], [1, -1, 1, 0], [1, 1, 1, 1], [-1, 1, 0, 1]]) {
+      const px = c.x + (uu.x * a + vv.x * bq) * size, py = c.y + (uu.y * a + vv.y * bq) * size, pz = c.z + (uu.z * a + vv.z * bq) * size;
+      pos.push(px, py * 0.85, pz);
+      sn.set(px, py + 0.2, pz).normalize();
+      nor.push(sn.x, sn.y, sn.z);
+      uv.push(s, t);
+    }
+    idx.push(base, base + 1, base + 2, base, base + 2, base + 3);
+  }
+  const g = new THREE.BufferGeometry();
+  g.setAttribute('position', new THREE.Float32BufferAttribute(pos, 3));
+  g.setAttribute('normal', new THREE.Float32BufferAttribute(nor, 3));
+  g.setAttribute('uv', new THREE.Float32BufferAttribute(uv, 2));
+  g.setIndex(idx);
+  return g;
+}
+
 // Height-mask tint (reference F2): crowns lighter and warmer on top, cooler
-// and darker underneath, so every tree reads as a soft lit volume.
-function canopyMaterial() {
-  const m = new THREE.MeshLambertMaterial({ color: '#ffffff', map: leafTexture(), emissive: '#0d2236', emissiveIntensity: 0.9 });
+// and darker underneath. The inner blob is the dark core, the leaf cards the
+// bright rim (reference T2), and leaves glow when backlit (T3).
+function canopyMaterial(core) {
+  const m = new THREE.MeshLambertMaterial({
+    color: '#ffffff', map: core ? leafTexture() : leafClumpTexture(), emissive: '#10283a', emissiveIntensity: 0.8,
+    ...(core ? {} : { alphaTest: 0.45, side: THREE.DoubleSide }),
+  });
   m.onBeforeCompile = (sh) => {
+    sh.uniforms.uNight = MOOD.night;
     sh.vertexShader = sh.vertexShader.replace('#include <common>', '#include <common>\nvarying float vCanopyY;')
       .replace('#include <begin_vertex>', '#include <begin_vertex>\nvCanopyY = position.y;');
-    sh.fragmentShader = sh.fragmentShader.replace('#include <common>', '#include <common>\nvarying float vCanopyY;')
+    sh.fragmentShader = sh.fragmentShader.replace('#include <common>', '#include <common>\nvarying float vCanopyY;\nuniform float uNight;')
+      // both faces of a leaf card share the outward canopy normal
+      .replace('#include <normal_fragment_maps>', '#include <normal_fragment_maps>\nnormal = normalize(vNormal);')
       .replace('#include <opaque_fragment>', `
         float hm = smoothstep(-0.9, 1.1, vCanopyY);
-        outgoingLight *= mix(vec3(0.62, 0.66, 0.85), vec3(1.18, 1.1, 0.95), hm);
+        outgoingLight *= mix(vec3(0.55, 0.62, 0.82), vec3(1.15, 1.1, 0.92), hm) * ${core ? '0.62' : '1.0'};
         vec3 rimView = normalize(vViewPosition);
-        outgoingLight += vec3(0.55, 0.62, 1.0) * pow(1.0 - clamp(abs(dot(normal, rimView)), 0.0, 1.0), 4.0) * 0.18;
+        float edge = pow(1.0 - clamp(abs(dot(normal, rimView)), 0.0, 1.0), 3.0);
+        vec3 backlit = mix(vec3(1.0, 0.72, 0.35), vec3(0.45, 0.95, 1.0), uNight);
+        outgoingLight += diffuseColor.rgb * backlit * edge * ${core ? '0.15' : '0.55'};
         #include <opaque_fragment>`);
   };
-  m.customProgramCacheKey = () => 'canopy-heightmask';
-  return m;
+  return nightGrade(m, core ? 'canopy-core' : 'canopy-cards');
 }
 
 function scatter(count, r, minEdge = 4, margin = 0) {
@@ -89,93 +133,130 @@ export function createNature(scene, preset) {
   trunkGeo.translate(0, 0.5, 0);
   const tTex = trunkTexture(); tTex.repeat.set(1, 2);
   const trunks = new THREE.InstancedMesh(trunkGeo, toon('#ffffff', { map: tTex, emissive: '#ffffff', emissiveMap: tTex, emissiveIntensity: 0.9 }), spots.length);
-  const canopy = new THREE.InstancedMesh(canopyGeometry(r), canopyMaterial(), spots.length);
+  const canopyGeo = canopyGeometry(r);
+  const cardGeo = leafCardGeometry(r, preset.leafCards ?? 60);
+  const coreMat = canopyMaterial(true), cardMat = canopyMaterial(false);
+  const canopy = new THREE.InstancedMesh(canopyGeo, coreMat, spots.length);
+  const cards = new THREE.InstancedMesh(cardGeo, cardMat, spots.length);
   const pools = new THREE.InstancedMesh(new THREE.PlaneGeometry(1, 1).rotateX(-Math.PI / 2), additive('#ffffff', { map: glowTexture(), opacity: 0.55 }), spots.length);
+  // lush saturated greens with complementary accent trees (reference T14):
+  // pink blossom, gold and teal against the green
   const palette = [
-    [0.36, 0.55, 0.42], [0.40, 0.6, 0.38], [0.30, 0.5, 0.40], // lush greens
-    [0.88, 0.55, 0.70], [0.78, 0.45, 0.68], [0.50, 0.6, 0.55], [0.13, 0.75, 0.62], // pink, violet, teal, gold
+    [0.32, 0.68, 0.40], [0.29, 0.72, 0.42], [0.36, 0.62, 0.36], [0.27, 0.68, 0.44],
+    [0.94, 0.68, 0.78], [0.11, 0.95, 0.68], [0.48, 0.62, 0.44], [0.82, 0.5, 0.72],
   ];
   spots.forEach((s, i) => {
     const h = 4 + r() * 5, scale = 2.2 + r() * 2.2;
     dummy.position.set(s.x, s.y, s.z); dummy.rotation.set(0, r() * 6.28, 0); dummy.scale.set(1 + r() * 0.4, h, 1 + r() * 0.4);
     dummy.updateMatrix(); trunks.setMatrixAt(i, dummy.matrix);
     dummy.position.y = s.y + h + scale * 0.35; dummy.scale.setScalar(scale);
-    dummy.updateMatrix(); canopy.setMatrixAt(i, dummy.matrix);
-    const p = palette[(s.isl.main && r() < 0.6) ? Math.floor(r() * 3) : Math.floor(r() * palette.length)];
-    color.setHSL(p[0] + (r() - 0.5) * 0.04, p[1], p[2] + (r() - 0.5) * 0.1);
-    canopy.setColorAt(i, color);
+    dummy.updateMatrix(); canopy.setMatrixAt(i, dummy.matrix); cards.setMatrixAt(i, dummy.matrix);
+    const p = palette[r() < (s.isl.main ? 0.72 : 0.55) ? Math.floor(r() * 4) : 4 + Math.floor(r() * 4)];
+    color.setHSL(p[0] + (r() - 0.5) * 0.04, p[1], p[2] + (r() - 0.5) * 0.08);
+    canopy.setColorAt(i, color); cards.setColorAt(i, color);
     dummy.position.set(s.x, s.y + 0.06, s.z); dummy.rotation.set(0, 0, 0); dummy.scale.setScalar(scale * 3.4);
     dummy.updateMatrix(); pools.setMatrixAt(i, dummy.matrix);
     pools.setColorAt(i, color.setHSL(r() < 0.5 ? 0.5 : 0.8, 0.9, 0.55));
     addCollider({ x: s.x, z: s.z, r: 0.75, y0: s.y, y1: s.y + h });
   });
   trunks.castShadow = canopy.castShadow = true;
-  group.add(trunks, canopy, pools);
+  group.add(trunks, canopy, cards, pools);
 
-  // --- glowing flowers & mushrooms ---
-  const fspots = scatter(preset.flowers, r, 2, 0);
-  const bulbGeo = new THREE.IcosahedronGeometry(0.22, 0);
-  const flowers = new THREE.InstancedMesh(bulbGeo, new THREE.MeshBasicMaterial({ color: '#ffffff', toneMapped: false }), fspots.length);
-  const stemGeo = new THREE.ConeGeometry(0.25, 0.9, 4); stemGeo.translate(0, 0.45, 0);
-  const tufts = new THREE.InstancedMesh(stemGeo, toon('#3f9a6a', { emissive: '#0b2a2a' }), fspots.length);
-  const fcols = ['#7ff3ff', '#ff9bd6', '#ffd47a', '#c9a6ff', '#8dffb0'];
-  fspots.forEach((s, i) => {
-    const h = 0.4 + r() * 0.6;
-    dummy.position.set(s.x, s.y + h, s.z); dummy.rotation.set(0, 0, 0); dummy.scale.setScalar(0.7 + r() * 0.8);
-    dummy.updateMatrix(); flowers.setMatrixAt(i, dummy.matrix);
-    flowers.setColorAt(i, color.set(fcols[Math.floor(r() * fcols.length)]));
-    dummy.position.set(s.x + 0.4, s.y, s.z + 0.2); dummy.rotation.set((r() - 0.5) * 0.3, r() * 6, (r() - 0.5) * 0.3); dummy.scale.set(1, 0.6 + r(), 1);
-    dummy.updateMatrix(); tufts.setMatrixAt(i, dummy.matrix);
+  // --- round shrubs: small copies of the tree crowns sitting on the ground ---
+  const bspots = scatter(Math.round(preset.flowers * 0.45), r, 3, 0);
+  const bushCore = new THREE.InstancedMesh(canopyGeo, coreMat, bspots.length);
+  const bushCards = new THREE.InstancedMesh(cardGeo, cardMat, bspots.length);
+  bspots.forEach((s, i) => {
+    const sc = 0.6 + r() * 0.8;
+    dummy.position.set(s.x, s.y + sc * 0.45, s.z); dummy.rotation.set(0, r() * 6.28, 0); dummy.scale.set(sc * 1.2, sc, sc * 1.2);
+    dummy.updateMatrix(); bushCore.setMatrixAt(i, dummy.matrix); bushCards.setMatrixAt(i, dummy.matrix);
+    const p = palette[r() < 0.8 ? Math.floor(r() * 4) : 4 + Math.floor(r() * 4)];
+    color.setHSL(p[0], p[1], p[2] - 0.04);
+    bushCore.setColorAt(i, color); bushCards.setColorAt(i, color);
   });
-  group.add(flowers, tufts);
+  bushCore.castShadow = true;
+  group.add(bushCore, bushCards);
 
-  // --- wind-swept grass: Genshin / Ghibli meadows, swaying in the vertex shader ---
+  // --- flower patches (U05 / U13): specks of colour in clusters ---
+  const centres = scatter(Math.round(preset.flowers / 7), r, 3, 0);
+  const fl = [];
+  const fcols = ['#ffd84a', '#ffffff', '#ff9bd6', '#ff8a4a', '#c9a6ff', '#7ff3ff'];
+  for (const c of centres) {
+    const col = fcols[Math.floor(r() * fcols.length)];
+    const k = 6 + Math.floor(r() * 9);
+    for (let j = 0; j < k; j++) {
+      const a = r() * 6.28, d = Math.sqrt(r()) * 2.6;
+      const x = c.x + Math.cos(a) * d, z = c.z + Math.sin(a) * d;
+      if (!isClearOfBuildings(x, z)) continue;
+      const y = groundAt(x, z);
+      if (y == null) continue;
+      fl.push({ x, y, z, col });
+    }
+  }
+  const petal = new THREE.PlaneGeometry(0.42, 0.42).rotateX(-Math.PI / 2);
+  const flowers = new THREE.InstancedMesh(petal, new THREE.MeshBasicMaterial({ color: '#ffffff', map: flowerTexture(), alphaTest: 0.5, side: THREE.DoubleSide, toneMapped: false }), fl.length);
+  fl.forEach((f, i) => {
+    dummy.position.set(f.x, f.y + 0.25 + r() * 0.3, f.z); dummy.rotation.set((r() - 0.5) * 0.7, r() * 6, (r() - 0.5) * 0.7); dummy.scale.setScalar(0.7 + r() * 0.7);
+    dummy.updateMatrix(); flowers.setMatrixAt(i, dummy.matrix);
+    flowers.setColorAt(i, color.set(f.col).multiplyScalar(0.85));
+  });
+  group.add(flowers);
+
+  // --- wind-swept grass tufts: Genshin / Ghibli meadows ---
+  // Each tuft is a fan of blades coloured from the ground beneath it and lit
+  // with the ground's own upward normal, so grass and terrain read as one.
   const gspots = scatter(preset.grass, r, 1.5, 0);
-  const n = gspots.length;
-  const gp = new Float32Array(n * 9), gc = new Float32Array(n * 9), gw = new Float32Array(n * 3);
-  gspots.forEach((s, i) => {
-    const a = r() * Math.PI, w = 0.07 + r() * 0.05, h = 0.3 + r() * 0.45;
-    const dx = Math.cos(a) * w, dz = Math.sin(a) * w, lean = (r() - 0.5) * 0.3;
-    gp.set([s.x - dx, s.y, s.z - dz, s.x + dx, s.y, s.z + dz, s.x + lean, s.y + h, s.z + lean], i * 9);
-    const base = color.setHSL(0.33 + (r() - 0.5) * 0.08, 0.5, 0.2);
-    const tip = new THREE.Color().setHSL(r() < 0.12 ? 0.5 : 0.31 + r() * 0.06, 0.55, 0.3 + r() * 0.08);
-    gc.set([base.r, base.g, base.b, base.r, base.g, base.b, tip.r, tip.g, tip.b], i * 9);
-    gw.set([0, 0, 1], i * 3);
+  const blades = preset.grassBlades ?? 4;
+  const n = gspots.length * blades;
+  const gp = new Float32Array(n * 9), gc = new Float32Array(n * 9), gw = new Float32Array(n * 3), gn = new Float32Array(n * 9);
+  const base = new THREE.Color(), tip = new THREE.Color();
+  let bi = 0;
+  gspots.forEach((s) => {
+    const isl = islandAt(s.x, s.z) || s.isl;
+    const hsl = groundHSL(isl, s.x, s.z, terrainHeight(isl, s.x, s.z));
+    for (let k = 0; k < blades; k++, bi++) {
+      const ox = s.x + (r() - 0.5) * 0.7, oz = s.z + (r() - 0.5) * 0.7;
+      const a = r() * Math.PI, w = 0.06 + r() * 0.06, h = 0.35 + r() * 0.5;
+      const dx = Math.cos(a) * w, dz = Math.sin(a) * w, lx = (r() - 0.5) * 0.35, lz = (r() - 0.5) * 0.35;
+      gp.set([ox - dx, s.y - 0.05, oz - dz, ox + dx, s.y - 0.05, oz + dz, ox + lx, s.y + h, oz + lz], bi * 9);
+      base.setHSL(hsl[0] + 0.01, hsl[1], hsl[2] * 0.72);
+      tip.setHSL(hsl[0] - 0.035 - r() * 0.02, Math.min(1, hsl[1] + 0.08), Math.min(0.8, hsl[2] * 1.35 + r() * 0.04));
+      gc.set([base.r, base.g, base.b, base.r, base.g, base.b, tip.r, tip.g, tip.b], bi * 9);
+      gn.set([0, 1, 0, 0, 1, 0, 0, 1, 0], bi * 9);
+      gw.set([0, 0, 1], bi * 3);
+    }
   });
   const gg = new THREE.BufferGeometry();
   gg.setAttribute('position', new THREE.BufferAttribute(gp, 3));
+  gg.setAttribute('normal', new THREE.BufferAttribute(gn, 3));
   gg.setAttribute('color', new THREE.BufferAttribute(gc, 3));
   gg.setAttribute('aTip', new THREE.BufferAttribute(gw, 1));
-  const grassMat = new THREE.ShaderMaterial({
-    side: THREE.DoubleSide, vertexColors: true,
-    uniforms: { uTime: { value: 0 }, uFog: { value: FOG_COLOR } },
-    vertexShader: /* glsl */`
-      uniform float uTime; attribute float aTip; varying vec3 vC; varying float vDist;
-      void main(){
-        vec3 p = position;
-        float gust = sin(p.x * .08 + uTime * 1.3) * .5 + sin(p.z * .11 + uTime * .9) * .5;
-        p.x += aTip * (.18 + .22 * gust); p.z += aTip * .1 * sin(uTime * 2. + p.x);
-        vC = color * (1. + aTip * .25 * gust);
-        vec4 mv = modelViewMatrix * vec4(p, 1.);
-        vDist = -mv.z;
-        gl_Position = projectionMatrix * mv;
-      }
-    `,
-    fragmentShader: /* glsl */`
-      uniform vec3 uFog; varying vec3 vC; varying float vDist;
-      void main(){ gl_FragColor = vec4(mix(vC, uFog, smoothstep(60., 300., vDist) * .7), 1.); }
-    `,
-  });
+  const grassTime = { value: 0 };
+  const grassMat = new THREE.MeshLambertMaterial({ vertexColors: true, side: THREE.DoubleSide, emissive: '#10283a', emissiveIntensity: 0.5 });
+  grassMat.onBeforeCompile = (sh) => {
+    sh.uniforms.uTime = grassTime;
+    sh.vertexShader = sh.vertexShader
+      .replace('#include <common>', '#include <common>\nuniform float uTime; attribute float aTip;')
+      .replace('#include <begin_vertex>', `#include <begin_vertex>
+        float gust = sin(transformed.x * .08 + uTime * 1.3) * .5 + sin(transformed.z * .11 + uTime * .9) * .5;
+        transformed.x += aTip * (.12 + .2 * gust); transformed.z += aTip * .08 * sin(uTime * 2. + transformed.x);`);
+    sh.fragmentShader = sh.fragmentShader
+      .replace('#include <normal_fragment_maps>', '#include <normal_fragment_maps>\nnormal = normalize(vNormal);');
+  };
+  nightGrade(grassMat, 'grass-wind');
   const grass = new THREE.Mesh(gg, grassMat);
+  grass.receiveShadow = true;
   group.add(grass);
 
   scene.add(group);
   return {
     update(t) {
-      grassMat.uniforms.uTime.value = t;
+      grassTime.value = t;
       // canopies breathe with a soft bioluminescent pulse
-      canopy.material.emissiveIntensity = 0.85 + Math.sin(t * 0.8) * 0.15;
-      pools.material.opacity = 0.45 + Math.sin(t * 1.1) * 0.12;
+      trunks.material.emissiveIntensity = 0.2 + 0.7 * MOOD.night.value;
+      coreMat.emissiveIntensity = cardMat.emissiveIntensity = 0.7 + Math.sin(t * 0.8) * 0.1;
+      // bioluminescent pools only really show after dark
+      pools.material.opacity = (0.08 + 0.4 * MOOD.night.value) * (1 + Math.sin(t * 1.1) * 0.25);
     },
   };
 }

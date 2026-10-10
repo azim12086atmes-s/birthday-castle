@@ -172,21 +172,122 @@ export const cobbleTexture = () => once('cobble', () => {
   return tex(c, true);
 });
 
-// Grass meadow painted in broad strokes.
+// Grass meadow: a pale, low-contrast stroke pattern. The colour itself comes
+// from the terrain's vertex colours, so this only adds a painted grain.
 export const grassTexture = () => once('grass', () => {
   const S = 256;
   const [c, g] = canvas(S);
   const r = rng(9);
-  g.fillStyle = '#2f7a5a'; g.fillRect(0, 0, S, S);
-  const tones = ['#3f9a6a', '#2a6b55', '#4fb07a', '#2c5f6e', '#5ab98a'];
-  for (let i = 0; i < 900; i++) {
+  g.fillStyle = '#e8f0e0'; g.fillRect(0, 0, S, S);
+  const tones = ['#ffffff', '#d2e2c8', '#f4fbe8', '#c4d6c4', '#fafff0'];
+  for (let i = 0; i < 1100; i++) {
     g.strokeStyle = tones[Math.floor(r() * tones.length)];
-    g.globalAlpha = 0.35; g.lineWidth = 2 + r() * 3;
+    g.globalAlpha = 0.4; g.lineWidth = 2 + r() * 3;
     const x = r() * S, y = r() * S, a = -Math.PI / 2 + (r() - 0.5) * 0.8, l = 6 + r() * 10;
-    g.beginPath(); g.moveTo(x, y); g.lineTo(x + Math.cos(a) * l, y + Math.sin(a) * l); g.stroke();
+    for (const dx of [-S, 0, S]) for (const dy of [-S, 0, S]) {
+      g.beginPath(); g.moveTo(x + dx, y + dy); g.lineTo(x + dx + Math.cos(a) * l, y + dy + Math.sin(a) * l); g.stroke();
+    }
   }
   g.globalAlpha = 1;
   return tex(c, true);
+});
+
+// Leaf clump card (reference T1 / C08 foliage atlas): a rounded cluster of
+// painted leaves on transparent ground, lighter towards the top. Dozens of
+// these on a sphere make a canopy read as real foliage, not a blob.
+export const leafClumpTexture = () => once('leafClump', () => {
+  const S = 256;
+  const [c, g] = canvas(S);
+  const r = rng(77);
+  for (let i = 0; i < 150; i++) {
+    const a = r() * Math.PI * 2, d = Math.sqrt(r()) * 92;
+    const x = S / 2 + Math.cos(a) * d, y = S / 2 + Math.sin(a) * d * 0.9;
+    const l = 15 + r() * 13, ang = Math.atan2(y - S / 2, x - S / 2) + (r() - 0.5) * 1.2;
+    const v = Math.round(130 + (1 - y / S) * 95 + (r() - 0.5) * 40);
+    g.fillStyle = `rgb(${v},${v},${v})`;
+    g.save(); g.translate(x, y); g.rotate(ang);
+    g.beginPath(); g.moveTo(-l, 0); g.quadraticCurveTo(0, -l * 0.55, l, 0); g.quadraticCurveTo(0, l * 0.55, -l, 0); g.fill();
+    g.strokeStyle = `rgba(255,255,255,0.25)`; g.lineWidth = 1.5;
+    g.beginPath(); g.moveTo(-l * 0.8, 0); g.lineTo(l * 0.8, 0); g.stroke();
+    g.restore();
+  }
+  const t = tex(c);
+  t.generateMipmaps = true;
+  return t;
+});
+
+// A little five-petal flower with a golden heart, white so instances tint it.
+export const flowerTexture = () => once('flower', () => {
+  const S = 64;
+  const [c, g] = canvas(S);
+  g.translate(S / 2, S / 2);
+  for (let i = 0; i < 5; i++) {
+    g.rotate((Math.PI * 2) / 5);
+    const grd = g.createLinearGradient(0, 0, 0, -28);
+    grd.addColorStop(0, '#dddddd'); grd.addColorStop(1, '#ffffff');
+    g.fillStyle = grd;
+    g.beginPath(); g.ellipse(0, -15, 9, 14, 0, 0, Math.PI * 2); g.fill();
+  }
+  g.fillStyle = '#ffd36b'; g.beginPath(); g.arc(0, 0, 6, 0, Math.PI * 2); g.fill();
+  return tex(c);
+});
+
+// Warm pale flagstones for the plaza, laid in rings like a real piazza.
+export const flagstoneTexture = () => once('flagstone', () => {
+  const S = 512;
+  const [c, g] = canvas(S);
+  const r = rng(15);
+  g.fillStyle = '#9d8f96'; g.fillRect(0, 0, S, S);
+  const tones = ['#f2e8da', '#e9dccb', '#f7efe2', '#e3d3c6', '#efe2d8', '#ddd2c8'];
+  let y = 0;
+  while (y < S) {
+    const hgt = 40 + Math.floor(r() * 3) * 12;
+    let x = -r() * 60;
+    while (x < S) {
+      const w = 50 + r() * 70;
+      g.fillStyle = tones[Math.floor(r() * tones.length)];
+      g.beginPath(); g.roundRect(x + 2, y + 2, w - 4, Math.min(hgt, S - y) - 4, 6); g.fill();
+      const grd = g.createLinearGradient(0, y, 0, y + hgt);
+      grd.addColorStop(0, 'rgba(255,255,255,0.18)'); grd.addColorStop(1, 'rgba(120,100,110,0.12)');
+      g.fillStyle = grd; g.fill();
+      x += w;
+    }
+    y += hgt;
+  }
+  return tex(c, true);
+});
+
+// Eight-fold star rosette (Islamic geometric inlay) for the plaza centre.
+export const rosetteTexture = () => once('rosette', () => {
+  const S = 1024;
+  const [c, g] = canvas(S);
+  g.translate(S / 2, S / 2);
+  const star = (R, rIn, n = 8, rot = 0) => {
+    g.beginPath();
+    for (let i = 0; i < n * 2; i++) {
+      const a = rot + (i / (n * 2)) * Math.PI * 2, rr = i % 2 ? rIn : R;
+      g.lineTo(Math.cos(a) * rr, Math.sin(a) * rr);
+    }
+    g.closePath();
+  };
+  g.fillStyle = '#2f6f86'; g.beginPath(); g.arc(0, 0, 500, 0, Math.PI * 2); g.fill();
+  g.fillStyle = '#f2e8da'; g.beginPath(); g.arc(0, 0, 470, 0, Math.PI * 2); g.fill();
+  // ring of small stars
+  for (let i = 0; i < 16; i++) {
+    const a = (i / 16) * Math.PI * 2;
+    g.save(); g.translate(Math.cos(a) * 400, Math.sin(a) * 400);
+    g.fillStyle = i % 2 ? '#3b8fa3' : '#c9a24a'; star(52, 26, 8, a); g.fill();
+    g.restore();
+  }
+  g.lineWidth = 10; g.strokeStyle = '#c9a24a';
+  g.beginPath(); g.arc(0, 0, 330, 0, Math.PI * 2); g.stroke();
+  g.fillStyle = '#2f6f86'; star(320, 200, 8, Math.PI / 8); g.fill();
+  g.fillStyle = '#3b8fa3'; star(300, 210, 8, 0); g.fill();
+  g.strokeStyle = '#e8c76a'; g.lineWidth = 8; star(300, 210, 8, 0); g.stroke();
+  g.fillStyle = '#f2e8da'; star(205, 120, 8, Math.PI / 8); g.fill();
+  g.fillStyle = '#c96f8a'; star(150, 100, 8, 0); g.fill();
+  g.strokeStyle = '#e8c76a'; g.lineWidth = 6; star(150, 100, 8, 0); g.stroke();
+  return tex(c);
 });
 
 // Rocky cliff underside of floating islands.

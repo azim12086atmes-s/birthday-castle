@@ -6,6 +6,7 @@ import { createIslands } from './world/islands.js';
 import { createCastle } from './world/castle.js';
 import { createNature } from './world/nature.js';
 import { createPath } from './world/path.js';
+import { createGarden } from './world/garden.js';
 import { createCreatures } from './world/creatures.js';
 import { createEffects } from './world/effects.js';
 import { createAtmosphere } from './world/atmosphere.js';
@@ -56,8 +57,8 @@ scene.add(warm);
 
 // Lighting mood: golden-hour dusk before the celebration, aurora night during it.
 const LIGHT = {
-  dusk: { sky: new THREE.Color('#c9b8ff'), ground: new THREE.Color('#8a5a62'), hemi: 1.25, key: new THREE.Color('#ffb98a'), keyI: 2.6, warm: new THREE.Color('#ff9ec4'), warmI: 0.45 },
-  night: { sky: new THREE.Color('#9fb0ff'), ground: new THREE.Color('#3a2a6a'), hemi: 1.6, key: new THREE.Color('#d8e0ff'), keyI: 1.6, warm: new THREE.Color('#ffb7d9'), warmI: 0.5 },
+  dusk: { sky: new THREE.Color('#c9b8ff'), ground: new THREE.Color('#5e4a78'), hemi: 1.25, key: new THREE.Color('#ffb98a'), keyI: 2.6, warm: new THREE.Color('#ff9ec4'), warmI: 0.45 },
+  night: { sky: new THREE.Color('#9fb0ff'), ground: new THREE.Color('#3a2a6a'), hemi: 1.15, key: new THREE.Color('#c4ceff'), keyI: 1.3, warm: new THREE.Color('#ffb7d9'), warmI: 0.5 },
 };
 const forcedMood = params.get('night') === '1' ? 1 : params.get('dusk') === '1' ? 0 : null;
 const keyDir = new THREE.Vector3();
@@ -105,6 +106,7 @@ const islands = createIslands(scene, quality);
 const castle = createCastle(scene);
 const nature = createNature(scene, quality);
 const path = createPath(scene);
+const garden = createGarden(scene, quality);
 const creatures = createCreatures(scene, quality);
 const effects = createEffects(scene, quality);
 const atmosphere = createAtmosphere(scene, quality);
@@ -341,6 +343,7 @@ function frame() {
   nature.update(t);
   atmosphere.update(t);
   path.update(t);
+  garden.update(t, camera);
   creatures.update(t, dt);
   effects.update(t, dt, camera, governor.ratio);
   celebration.update(t, dt);

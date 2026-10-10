@@ -1,6 +1,8 @@
 // Shared materials. Toon shading with three soft steps gives the painted,
 // cel-like look of BotW / Genshin while being cheaper than PBR.
 import * as THREE from 'three';
+import { MOOD } from './sky.js';
+const NIGHT = MOOD.night;
 
 let ramp;
 function toonRamp() {
@@ -69,4 +71,19 @@ export function flagMaterial(color, map = null) {
       }
     `,
   });
+}
+
+// Night grade for living surfaces (grass, hedges, canopies): as the aurora night
+// falls, greens cool to moonlit teal-blue instead of staying daylight-bright.
+export function nightGrade(m, key) {
+  const prev = m.onBeforeCompile;
+  m.onBeforeCompile = (sh, r) => {
+    if (prev) prev(sh, r);
+    sh.uniforms.uNightG = NIGHT;
+    sh.fragmentShader = sh.fragmentShader
+      .replace('#include <common>', '#include <common>\nuniform float uNightG;')
+      .replace('#include <opaque_fragment>', 'outgoingLight *= mix(vec3(1.0), vec3(0.36, 0.46, 0.92), uNightG);\n#include <opaque_fragment>');
+  };
+  m.customProgramCacheKey = () => key + '-ng';
+  return m;
 }

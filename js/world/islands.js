@@ -2,10 +2,11 @@
 // portals, Lantern Lake and the little landmark on each island.
 import * as THREE from 'three';
 import { mergeGeometries } from 'three/addons/utils/BufferGeometryUtils.js';
-import { toon, glowBasic, additive } from './materials.js';
-import { grassTexture, rockTexture, cobbleTexture, friezeTexture, glowTexture, textTexture, rng } from './textures.js';
-import { ISLANDS, PORTALS, RETURNS, PLAZA, LAKE_POND, SPAWN, addCollider, groundAt, terrainHeight } from './layout.js';
+import { toon, glowBasic, additive, nightGrade } from './materials.js';
+import { grassTexture, rockTexture, flagstoneTexture, rosetteTexture, friezeTexture, glowTexture, textTexture, rng } from './textures.js';
+import { ISLANDS, PORTALS, RETURNS, PLAZA, LAKE_POND, SPAWN, addCollider, groundAt, terrainHeight, groundHSL } from './layout.js';
 import { archFrameGeometry, pointedArchPath } from './castle.js';
+import { MOOD } from './sky.js';
 
 // Rolling meadow: a polar grid lifted by the shared hill function, painted
 // with vertex colours (sunny hilltops, cool hollows, flowery patches).
@@ -13,7 +14,6 @@ function terrainGeometry(isl) {
   const rings = Math.ceil(isl.r / 1.6), segs = isl.main ? 128 : 72;
   const pos = [], col = [], uv = [], idx = [];
   const c = new THREE.Color();
-  const base = isl.main ? [0.29, 0.5, 0.56] : [0.27 + (isl.hue ?? 0.5) * 0.04, 0.5, 0.56];
   for (let i = 0; i <= rings; i++) {
     const rr = (i / rings) * isl.r;
     const n = i === 0 ? 1 : segs;
@@ -23,8 +23,7 @@ function terrainGeometry(isl) {
       const h = terrainHeight(isl, x, z);
       pos.push(x, isl.y + h, z);
       uv.push(x / 6, z / 6);
-      const patch = Math.sin(x * 0.11 + Math.cos(z * 0.07) * 2) * 0.5 + 0.5;
-      c.setHSL(base[0] - patch * 0.05 + (isl.id === 'meadow' ? patch * 0.5 * (patch > 0.8 ? 1 : 0) : 0), base[1] - h * 0.01, base[2] + h * 0.035 - 0.05 + patch * 0.06);
+      c.setHSL(...groundHSL(isl, x, z, h));
       col.push(c.r, c.g, c.b);
     }
   }
@@ -49,7 +48,7 @@ function islandBody(isl, r) {
   const group = new THREE.Group();
   const grass = grassTexture().clone(); grass.needsUpdate = true;
   grass.repeat.set(isl.r / 6, isl.r / 6);
-  const top = new THREE.Mesh(terrainGeometry(isl), new THREE.MeshLambertMaterial({ map: grass, vertexColors: true, emissive: '#0b2a2a', emissiveIntensity: 0.6 }));
+  const top = new THREE.Mesh(terrainGeometry(isl), nightGrade(new THREE.MeshLambertMaterial({ map: grass, vertexColors: true, emissive: '#10283a', emissiveIntensity: 0.5 }), 'terrain'));
   top.receiveShadow = true;
   const cliff = new THREE.Mesh(new THREE.CylinderGeometry(isl.r, isl.r * 0.96, 3, 72, 1, true), toon('#7a6a9a', { emissive: '#1a1440', emissiveIntensity: 0.6 }));
   cliff.position.set(isl.x, isl.y - 1.5, isl.z);
@@ -67,7 +66,7 @@ function islandBody(isl, r) {
   }
   geo.computeVertexNormals();
   const rock = rockTexture(); rock.repeat.set(4, 2);
-  const under = new THREE.Mesh(geo, toon('#8a76c4', { map: rock, emissive: '#1a1440', emissiveIntensity: 0.8 }));
+  const under = new THREE.Mesh(geo, new THREE.MeshLambertMaterial({ color: '#a592c8', map: rock, emissive: '#1a1440', emissiveIntensity: 0.7 }));
   under.rotation.x = Math.PI;
   under.position.set(isl.x, isl.y - 3 - h / 2, isl.z);
   group.add(top, under);
@@ -221,23 +220,44 @@ function landmarks(group, r) {
 
   // Lantern Lake: a shimmering pond and the wish pavilion
   const lI = byId.lake;
-  const pond = new THREE.Mesh(new THREE.CircleGeometry(LAKE_POND.r, 48), new THREE.ShaderMaterial({
-    uniforms: { uTime: { value: 0 } },
-    vertexShader: 'varying vec2 vUv; void main(){ vUv = uv; gl_Position = projectionMatrix * modelViewMatrix * vec4(position,1.); }',
+  // A sky mirror (references U25 / U34, technique T19): the water reflects the
+  // dusk or aurora sky with a fresnel blend, rippled by moving wavelets, with a
+  // bright glowing shoreline (T11). No render-to-texture, so it costs nothing.
+  const pond = new THREE.Mesh(new THREE.CircleGeometry(LAKE_POND.r, 64), new THREE.ShaderMaterial({
+    uniforms: { uTime: { value: 0 }, uNight: MOOD.night },
+    vertexShader: 'varying vec2 vUv; varying vec3 vW; void main(){ vUv = uv; vec4 w = modelMatrix * vec4(position,1.); vW = w.xyz; gl_Position = projectionMatrix * viewMatrix * w; }',
     fragmentShader: /* glsl */`
-      uniform float uTime; varying vec2 vUv;
+      uniform float uTime; uniform float uNight; varying vec2 vUv; varying vec3 vW;
       float h(vec2 p){ return fract(sin(dot(p, vec2(12.9898, 78.233))) * 43758.5453); }
       void main(){
-        vec2 p = vUv - .5; float r = length(p);
-        float w = sin(r * 60. - uTime * 2.) * .5 + .5;
-        vec3 c = mix(vec3(.04, .08, .25), vec3(.15, .35, .7), w * .35 + (1. - r * 2.) * .3);
-        vec2 g = floor(vUv * 90.); float s = step(.985, h(g)) * (.5 + .5 * sin(uTime * 3. + h(g + 1.) * 40.));
-        c += vec3(1., .9, .6) * s;
+        vec2 p = vUv - .5; float r = length(p) * 2.;
+        // wavelets bend the reflection
+        vec2 q = vW.xz;
+        vec3 n = normalize(vec3(
+          sin(q.x * .9 + uTime * 1.3) * .5 + sin(q.x * 2.3 - q.y * 1.7 + uTime * 2.1) * .25,
+          6.,
+          sin(q.y * 1.1 - uTime * 1.1) * .5 + sin(q.y * 2.7 + q.x * 1.3 + uTime * 1.7) * .25));
+        vec3 v = normalize(vW - cameraPosition);
+        vec3 rd = reflect(v, n);
+        float up = clamp(rd.y, 0., 1.);
+        vec3 duskSky = mix(vec3(.98, .72, .62), vec3(.55, .46, .78), pow(up, .6));
+        vec3 nightSky = mix(vec3(.20, .17, .45), vec3(.04, .04, .14), pow(up, .6));
+        // aurora ribbons mirrored in the water at night
+        nightSky += vec3(.2, .9, .7) * smoothstep(.6, 1., sin(rd.x * 6. + rd.z * 3. + uTime * .3)) * smoothstep(.15, .5, up) * .18;
+        vec3 sky = mix(duskSky, nightSky, uNight);
+        vec3 deep = mix(vec3(.10, .22, .32), vec3(.02, .05, .16), uNight);
+        float fres = .25 + .75 * pow(1. - abs(v.y), 3.);
+        vec3 c = mix(deep, sky, fres);
+        // drifting star glints
+        vec2 g = floor(vUv * 110.); float s = step(.988, h(g)) * (.5 + .5 * sin(uTime * 3. + h(g + 1.) * 40.));
+        c += vec3(1., .9, .7) * s * (.3 + .7 * uNight);
+        // glowing shoreline
+        c += vec3(.4, .95, 1.) * smoothstep(.86, 1., r) * (.35 + .4 * uNight);
         gl_FragColor = vec4(c, 1.);
       }
     `,
   }));
-  pond.rotation.x = -Math.PI / 2; pond.position.set(LAKE_POND.x, lI.y - 0.25, LAKE_POND.z);
+  pond.rotation.x = -Math.PI / 2; pond.position.set(LAKE_POND.x, lI.y + 0.06, LAKE_POND.z);
   group.add(pond);
   items.pond = pond;
 
@@ -273,10 +293,15 @@ export function createIslands(scene, preset) {
   const r = rng(42);
   for (const isl of ISLANDS) group.add(islandBody(isl, r));
 
-  // plaza of glass cobblestone
-  const cob = cobbleTexture(); cob.repeat.set(PLAZA.r / 3, PLAZA.r / 3);
-  const plaza = new THREE.Mesh(new THREE.CircleGeometry(PLAZA.r, 64), toon('#f3e6ff', { map: cob, emissive: '#ffffff', emissiveMap: cob, emissiveIntensity: 0.45 }));
+  // plaza of warm pale flagstones with an eight-fold star inlay round the fountain
+  const flag = flagstoneTexture(); flag.repeat.set(PLAZA.r / 5, PLAZA.r / 5);
+  const plaza = new THREE.Mesh(new THREE.CircleGeometry(PLAZA.r, 64), new THREE.MeshLambertMaterial({ map: flag, emissive: '#2a2050', emissiveIntensity: 0.35 }));
   plaza.rotation.x = -Math.PI / 2; plaza.position.set(PLAZA.x, 0.03, PLAZA.z);
+  plaza.receiveShadow = true;
+  const inlay = new THREE.Mesh(new THREE.CircleGeometry(14, 64), new THREE.MeshLambertMaterial({ map: rosetteTexture(), emissive: '#2a2050', emissiveIntensity: 0.35, polygonOffset: true, polygonOffsetFactor: -1 }));
+  inlay.rotation.x = -Math.PI / 2; inlay.position.set(PLAZA.x, 0.05, PLAZA.z);
+  inlay.receiveShadow = true;
+  group.add(inlay);
   const plazaRing = new THREE.Mesh(new THREE.RingGeometry(PLAZA.r - 0.4, PLAZA.r, 96), additive('#ffd47a', { opacity: 0.8 }));
   plazaRing.rotation.x = -Math.PI / 2; plazaRing.position.set(PLAZA.x, 0.05, PLAZA.z);
   group.add(plaza, plazaRing);

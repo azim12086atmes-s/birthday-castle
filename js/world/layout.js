@@ -79,6 +79,19 @@ export function terrainHeight(isl, x, z) {
   return Math.max(0, n - 0.25) * amp * 1.35 * rim * flat;
 }
 
+// Meadow colour as HSL (reference U13 / U05): big soft patches of sunny
+// yellow-green and cooler blue-green, never olive or grey. Shared by the
+// terrain and the grass blades so the two blend into one surface.
+const ISLE_HUE = { castle: 0.31, garden: 0.34, aurora: 0.38, lake: 0.29, meadow: 0.27, star: 0.35 };
+export function groundHSL(isl, x, z, h) {
+  const big = vnoise(x * 0.035 + 50, z * 0.035 + 9);
+  const small = vnoise(x * 0.16, z * 0.16);
+  const hue = (ISLE_HUE[isl.id] ?? 0.28) - big * 0.055 + (small - 0.5) * 0.025 - h * 0.002;
+  const sat = 0.64 + big * 0.14;
+  const light = 0.31 + big * 0.13 + Math.min(h, 12) * 0.008 + (small - 0.5) * 0.05;
+  return [hue, sat, light];
+}
+
 export function groundAt(x, z) {
   const isl = islandAt(x, z);
   if (!isl) return null;
