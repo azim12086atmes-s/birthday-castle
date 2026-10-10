@@ -15,7 +15,13 @@ function canopyGeometry(r) {
   for (const [x, y, z, s] of blobs) {
     const g = new THREE.IcosahedronGeometry(s, 1);
     const p = g.attributes.position;
-    for (let i = 0; i < p.count; i++) { const k = 1 + (r() - 0.5) * 0.18; p.setXYZ(i, p.getX(i) * k, p.getY(i) * k * 0.85, p.getZ(i) * k); }
+    const seed = r() * 10;
+    // displacement is a function of position, so neighbouring triangles stay stitched together
+    for (let i = 0; i < p.count; i++) {
+      const x0 = p.getX(i), y0 = p.getY(i), z0 = p.getZ(i);
+      const k = 1 + (Math.sin(x0 * 5.1 + seed) + Math.sin(y0 * 4.3 + z0 * 3.7 + seed)) * 0.05;
+      p.setXYZ(i, x0 * k, y0 * k * 0.85, z0 * k);
+    }
     g.translate(x, y, z);
     parts.push(g);
   }
@@ -26,10 +32,29 @@ function canopyGeometry(r) {
   const p = g.attributes.position, n = g.attributes.normal, v = new THREE.Vector3(), f = new THREE.Vector3();
   for (let i = 0; i < p.count; i++) {
     v.set(p.getX(i), p.getY(i) + 0.2, p.getZ(i)).normalize();
-    f.set(n.getX(i), n.getY(i), n.getZ(i)).multiplyScalar(0.25).add(v.multiplyScalar(0.75)).normalize();
+    f.set(n.getX(i), n.getY(i), n.getZ(i)).multiplyScalar(0.1).add(v.multiplyScalar(0.9)).normalize();
     n.setXYZ(i, f.x, f.y, f.z);
   }
   return g;
+}
+
+// Height-mask tint (reference F2): crowns lighter and warmer on top, cooler
+// and darker underneath, so every tree reads as a soft lit volume.
+function canopyMaterial() {
+  const m = new THREE.MeshLambertMaterial({ color: '#ffffff', map: leafTexture(), emissive: '#0d2236', emissiveIntensity: 0.9 });
+  m.onBeforeCompile = (sh) => {
+    sh.vertexShader = sh.vertexShader.replace('#include <common>', '#include <common>\nvarying float vCanopyY;')
+      .replace('#include <begin_vertex>', '#include <begin_vertex>\nvCanopyY = position.y;');
+    sh.fragmentShader = sh.fragmentShader.replace('#include <common>', '#include <common>\nvarying float vCanopyY;')
+      .replace('#include <opaque_fragment>', `
+        float hm = smoothstep(-0.9, 1.1, vCanopyY);
+        outgoingLight *= mix(vec3(0.62, 0.66, 0.85), vec3(1.18, 1.1, 0.95), hm);
+        vec3 rimView = normalize(vViewPosition);
+        outgoingLight += vec3(0.55, 0.62, 1.0) * pow(1.0 - clamp(abs(dot(normal, rimView)), 0.0, 1.0), 4.0) * 0.18;
+        #include <opaque_fragment>`);
+  };
+  m.customProgramCacheKey = () => 'canopy-heightmask';
+  return m;
 }
 
 function scatter(count, r, minEdge = 4, margin = 0) {
@@ -64,7 +89,7 @@ export function createNature(scene, preset) {
   trunkGeo.translate(0, 0.5, 0);
   const tTex = trunkTexture(); tTex.repeat.set(1, 2);
   const trunks = new THREE.InstancedMesh(trunkGeo, toon('#ffffff', { map: tTex, emissive: '#ffffff', emissiveMap: tTex, emissiveIntensity: 0.9 }), spots.length);
-  const canopy = new THREE.InstancedMesh(canopyGeometry(r), toon('#ffffff', { map: leafTexture(), emissive: '#0d2236', emissiveIntensity: 0.9 }), spots.length);
+  const canopy = new THREE.InstancedMesh(canopyGeometry(r), canopyMaterial(), spots.length);
   const pools = new THREE.InstancedMesh(new THREE.PlaneGeometry(1, 1).rotateX(-Math.PI / 2), additive('#ffffff', { map: glowTexture(), opacity: 0.55 }), spots.length);
   const palette = [
     [0.36, 0.55, 0.42], [0.40, 0.6, 0.38], [0.30, 0.5, 0.40], // lush greens
@@ -109,7 +134,7 @@ export function createNature(scene, preset) {
   const n = gspots.length;
   const gp = new Float32Array(n * 9), gc = new Float32Array(n * 9), gw = new Float32Array(n * 3);
   gspots.forEach((s, i) => {
-    const a = r() * Math.PI, w = 0.09 + r() * 0.06, h = 0.45 + r() * 0.7;
+    const a = r() * Math.PI, w = 0.07 + r() * 0.05, h = 0.3 + r() * 0.45;
     const dx = Math.cos(a) * w, dz = Math.sin(a) * w, lean = (r() - 0.5) * 0.3;
     gp.set([s.x - dx, s.y, s.z - dz, s.x + dx, s.y, s.z + dz, s.x + lean, s.y + h, s.z + lean], i * 9);
     const base = color.setHSL(0.33 + (r() - 0.5) * 0.08, 0.5, 0.2);

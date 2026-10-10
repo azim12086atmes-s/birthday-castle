@@ -120,7 +120,7 @@ function cloudSea(preset) {
         // toon steps give the painted, Zelda-like cloud tops
         float s = smoothstep(0.45, 0.5, n) * 0.35 + smoothstep(0.62, 0.66, n) * 0.35 + smoothstep(0.78, 0.82, n) * 0.3;
         vec3 low = vec3(0.20, 0.16, 0.42);
-        vec3 high = vec3(0.78, 0.74, 0.98);
+        vec3 high = vec3(0.52, 0.48, 0.80);
         vec3 col = mix(low, high, s);
         col += vec3(0.25, 0.35, 0.6) * pow(s, 3.) * 0.4; // moonlit rims
         // dusk: cream-gold tops lit by the low sun, lavender-rose valleys

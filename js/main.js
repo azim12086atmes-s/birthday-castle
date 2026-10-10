@@ -9,6 +9,7 @@ import { createPath } from './world/path.js';
 import { createCreatures } from './world/creatures.js';
 import { createEffects } from './world/effects.js';
 import { createAtmosphere } from './world/atmosphere.js';
+import { createHorizon } from './world/horizon.js';
 import { SPAWN, MAIN } from './world/layout.js';
 import { Avatar } from './avatar.js';
 import { Controller } from './controls.js';
@@ -99,6 +100,7 @@ addEventListener('resize', () => {
 
 // ------------------------------------------------------------------- world --
 const sky = createSky(scene, quality);
+createHorizon(scene);
 const islands = createIslands(scene, quality);
 const castle = createCastle(scene);
 const nature = createNature(scene, quality);
