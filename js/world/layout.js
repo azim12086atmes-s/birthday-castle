@@ -25,6 +25,14 @@ export const TERRACE_REAR = -118;
 export const STAIR = { hw: 8, run: 6 };
 export const TOWN = { x0: 46, x1: 100, z0: 0, z1: 66 };   // mirrored on both sides of the lake
 export const LAKE_POND = { x: -155, z: 110, r: 18 };
+// Monuments around the axis (architecture catalogue 1A): two round temples,
+// an aqueduct either side of the acropolis, a ferris wheel and a rune ring
+// in the arrival meadow.
+export const THOLOI = [{ x: -80, z: -10 }, { x: 80, z: -10 }];
+export const AQUEDUCT = { z: -100, x0: 58 };
+export const WHEEL = { x: 42, z: 112 };
+export const RUNES = { x: -42, z: 110, r: 8 };
+const MONUMENT_ZONES = [...THOLOI.map((t) => ({ ...t, r: 9 })), { ...WHEEL, r: 13 }, { ...RUNES, r: RUNES.r + 3 }];
 
 // Portals on the rim of the main island, each pointing at one floating island.
 export const PORTALS = ISLANDS.filter((i) => !i.main).map((isl) => {
@@ -181,5 +189,7 @@ export function isClearOfBuildings(x, z, margin = 0) {
   for (const p of PORTALS) if (Math.hypot(x - p.x, z - p.z) < 9 + margin) return false;
   for (const p of RETURNS) if (Math.hypot(x - p.x, z - p.z) < 8 + margin) return false;
   if (Math.hypot(x - LAKE_POND.x, z - LAKE_POND.z) < LAKE_POND.r + 4 + margin) return false;
+  for (const m of MONUMENT_ZONES) if (Math.hypot(x - m.x, z - m.z) < m.r + margin) return false;
+  if (ax > AQUEDUCT.x0 - 2 && Math.abs(z - AQUEDUCT.z) < 4 + margin) return false;
   return true;
 }

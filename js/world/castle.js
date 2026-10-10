@@ -4,7 +4,7 @@
 import * as THREE from 'three';
 import { mergeGeometries } from 'three/addons/utils/BufferGeometryUtils.js';
 import { toon, glowBasic, additive, flagMaterial } from './materials.js';
-import { stoneTexture, stainedGlassTexture, roseWindowTexture, friezeTexture, glowTexture, crownTexture } from './textures.js';
+import { stoneTexture, stainedGlassTexture, roseWindowTexture, friezeTexture, glowTexture, crownTexture, arcadeTexture, rosetteTexture } from './textures.js';
 import { CASTLE, addCollider as addWorldCollider } from './layout.js';
 
 // The castle is built at ground level around (CASTLE.x, CASTLE.z) and then
@@ -133,6 +133,14 @@ export function createCastle(scene) {
     addCollider({ x, z, r: r * 1.08 });
   };
 
+  // a strip of repeating carved arches, about 4.4 m per bay
+  const arcadePanel = (len, h) => {
+    const g = new THREE.PlaneGeometry(len, h);
+    const uv = g.attributes.uv;
+    for (let i = 0; i < uv.count; i++) uv.setX(i, uv.getX(i) * Math.max(1, Math.round(len / 4.4)));
+    return g;
+  };
+
   // --- curtain walls with battlements ---------------------------------------
   const wallH = 11, wallT = 2.6;
   const wall = (x0, z0, x1, z1) => {
@@ -142,7 +150,10 @@ export function createCastle(scene) {
     for (const side of [-1, 1]) {
       const off = side * (wallT / 2 + 0.04);
       B.add('frieze', new THREE.PlaneGeometry(len, 1.2), mx + Math.cos(ang) * off, wallH - 1.6, mz - Math.sin(ang) * off, 0, ang - Math.PI / 2);
+      // blind pointed arcade carved along the lower wall, under a gold string course
+      B.add('arcade', arcadePanel(len, 6.4), mx + Math.cos(ang) * (off + side * 0.02), 3.9, mz - Math.sin(ang) * (off + side * 0.02), 0, ang - Math.PI / 2);
     }
+    B.add('gold', new THREE.BoxGeometry(wallT + 0.5, 0.28, len), mx, 7.35, mz, 0, ang);
     const count = Math.floor(len / 2.2);
     for (let i = 0; i < count; i++) {
       const t = (i + 0.5) / count;
@@ -161,6 +172,12 @@ export function createCastle(scene) {
   const gateW = 9, gateH = 12;
   B.add('stone', archFrameGeometry(gateW, gateH, 2.2, wallT + 0.6), cx, 0, fz);
   B.add('stone', new THREE.BoxGeometry(gateW + 4.4, 3.2, wallT + 0.6), cx, gateH + 1.6 + 1.2, fz);
+  // carved star medallion over the gate (U178), glowing at night
+  for (const side of [-1, 1]) {
+    const med = new THREE.CircleGeometry(1.35, 32);
+    B.add('medal', med, cx, gateH + 2.8, fz + side * (wallT / 2 + 0.32), 0, side < 0 ? Math.PI : 0);
+    B.add('gold', new THREE.TorusGeometry(1.4, 0.12, 6, 32), cx, gateH + 2.8, fz + side * (wallT / 2 + 0.34));
+  }
   const gateTrim = new THREE.TubeGeometry(pointedArchPath(gateW + 0.3, gateH + 0.2), 64, 0.22, 6, false);
   B.add('goldGlow', gateTrim, cx, 0, fz + wallT / 2 + 0.35);
   B.add('goldGlow', gateTrim, cx, 0, fz - wallT / 2 - 0.35);
@@ -182,6 +199,11 @@ export function createCastle(scene) {
   B.add('roof', roofGeo, cx, kh, kz, 0, Math.PI / 2);
   B.add('frieze', new THREE.PlaneGeometry(kw, 1.6), cx, kh - 2, kz + kd / 2 + 0.04);
   B.add('gold', new THREE.BoxGeometry(kw + 0.4, 0.3, kd + 0.4), cx, kh + 0.15, kz);
+  // string courses and a carved arcade round the keep's base (sides and back)
+  B.add('gold', new THREE.BoxGeometry(kw + 0.5, 0.26, kd + 0.5), cx, 13.8, kz);
+  B.add('gold', new THREE.BoxGeometry(kw + 0.5, 0.26, kd + 0.5), cx, 6.9, kz - 0.3);
+  for (const s of [-1, 1]) B.add('arcade', arcadePanel(kd, 6.2), cx + s * (kw / 2 + 0.05), 3.6, kz, 0, s * Math.PI / 2);
+  B.add('arcade', arcadePanel(kw, 6.2), cx, 3.6, kz - kd / 2 - 0.05, 0, Math.PI);
   addCollider({ minX: cx - kw / 2, maxX: cx + kw / 2, minZ: kz - kd / 2, maxZ: kz + kd / 2 });
 
   // keep doors (decorative, glowing)
@@ -245,6 +267,8 @@ export function createCastle(scene) {
     roof: toon('#9a3f7e', { emissive: '#2a0e2a', emissiveIntensity: 0.6 }),
     roof2: toon('#b8508c', { emissive: '#3a1030', emissiveIntensity: 0.6 }),
     crown: glowBasic('#ffffff', { map: crownMap }),
+    arcade: toon('#f4d4e4', { map: arcadeTexture(), emissive: '#3e2250', emissiveIntensity: 0.45, side: THREE.DoubleSide }),
+    medal: glowBasic('#ffb6dc', { map: rosetteTexture() }),
     gold: toon('#ffcf5a', { emissive: '#6a4a10', emissiveIntensity: 0.9 }),
     goldGlow: glowBasic('#ffd47a'),
     frieze: additive('#ffcf6a', { map: frieze, side: THREE.DoubleSide, opacity: 0.9 }),
