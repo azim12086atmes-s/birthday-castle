@@ -229,9 +229,9 @@ export function createCastle(scene) {
   const frieze = friezeTexture(); frieze.repeat.set(6, 1);
   const crownMap = crownTexture();
   const group = B.build({
-    stone: toon('#ffffff', { map: stoneMap, emissive: '#3a3266', emissiveIntensity: 0.4 }),
-    roof: toon('#5474ae', { emissive: '#1a2050', emissiveIntensity: 0.6 }),
-    roof2: toon('#4aa6bf', { emissive: '#0d3a4a', emissiveIntensity: 0.7 }),
+    stone: toon('#f6d6e6', { map: stoneMap, emissive: '#3e2250', emissiveIntensity: 0.45 }),
+    roof: toon('#9a3f7e', { emissive: '#2a0e2a', emissiveIntensity: 0.6 }),
+    roof2: toon('#b8508c', { emissive: '#3a1030', emissiveIntensity: 0.6 }),
     crown: glowBasic('#ffffff', { map: crownMap }),
     gold: toon('#ffcf5a', { emissive: '#6a4a10', emissiveIntensity: 0.9 }),
     goldGlow: glowBasic('#ffd47a'),
