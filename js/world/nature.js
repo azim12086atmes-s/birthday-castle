@@ -93,9 +93,50 @@ export function createNature(scene, preset) {
   });
   group.add(flowers, tufts);
 
+  // --- wind-swept grass: Genshin / Ghibli meadows, swaying in the vertex shader ---
+  const gspots = scatter(preset.grass, r, 1.5, 0);
+  const n = gspots.length;
+  const gp = new Float32Array(n * 9), gc = new Float32Array(n * 9), gw = new Float32Array(n * 3);
+  gspots.forEach((s, i) => {
+    const a = r() * Math.PI, w = 0.09 + r() * 0.06, h = 0.45 + r() * 0.7;
+    const dx = Math.cos(a) * w, dz = Math.sin(a) * w, lean = (r() - 0.5) * 0.3;
+    gp.set([s.x - dx, s.y, s.z - dz, s.x + dx, s.y, s.z + dz, s.x + lean, s.y + h, s.z + lean], i * 9);
+    const base = color.setHSL(0.36 + (r() - 0.5) * 0.08, 0.55, 0.22);
+    const tip = new THREE.Color().setHSL(r() < 0.12 ? 0.5 : 0.33 + r() * 0.06, 0.6, 0.48 + r() * 0.12);
+    gc.set([base.r, base.g, base.b, base.r, base.g, base.b, tip.r, tip.g, tip.b], i * 9);
+    gw.set([0, 0, 1], i * 3);
+  });
+  const gg = new THREE.BufferGeometry();
+  gg.setAttribute('position', new THREE.BufferAttribute(gp, 3));
+  gg.setAttribute('color', new THREE.BufferAttribute(gc, 3));
+  gg.setAttribute('aTip', new THREE.BufferAttribute(gw, 1));
+  const grassMat = new THREE.ShaderMaterial({
+    side: THREE.DoubleSide, vertexColors: true,
+    uniforms: { uTime: { value: 0 }, uFog: { value: new THREE.Color('#2b2466') } },
+    vertexShader: /* glsl */`
+      uniform float uTime; attribute float aTip; varying vec3 vC; varying float vDist;
+      void main(){
+        vec3 p = position;
+        float gust = sin(p.x * .08 + uTime * 1.3) * .5 + sin(p.z * .11 + uTime * .9) * .5;
+        p.x += aTip * (.18 + .22 * gust); p.z += aTip * .1 * sin(uTime * 2. + p.x);
+        vC = color * (1. + aTip * .25 * gust);
+        vec4 mv = modelViewMatrix * vec4(p, 1.);
+        vDist = -mv.z;
+        gl_Position = projectionMatrix * mv;
+      }
+    `,
+    fragmentShader: /* glsl */`
+      uniform vec3 uFog; varying vec3 vC; varying float vDist;
+      void main(){ gl_FragColor = vec4(mix(vC, uFog, smoothstep(60., 300., vDist) * .7), 1.); }
+    `,
+  });
+  const grass = new THREE.Mesh(gg, grassMat);
+  group.add(grass);
+
   scene.add(group);
   return {
     update(t) {
+      grassMat.uniforms.uTime.value = t;
       // canopies breathe with a soft bioluminescent pulse
       canopy.material.emissiveIntensity = 0.85 + Math.sin(t * 0.8) * 0.15;
       pools.material.opacity = 0.45 + Math.sin(t * 1.1) * 0.12;

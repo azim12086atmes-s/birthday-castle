@@ -8,6 +8,7 @@ import { createNature } from './world/nature.js';
 import { createPath } from './world/path.js';
 import { createCreatures } from './world/creatures.js';
 import { createEffects } from './world/effects.js';
+import { createAtmosphere } from './world/atmosphere.js';
 import { SPAWN, MAIN } from './world/layout.js';
 import { Avatar } from './avatar.js';
 import { Controller } from './controls.js';
@@ -75,6 +76,7 @@ const nature = createNature(scene, quality);
 const path = createPath(scene);
 const creatures = createCreatures(scene, quality);
 const effects = createEffects(scene, quality);
+const atmosphere = createAtmosphere(scene, quality);
 const celebration = createCelebration(scene, effects, sky, castle);
 const lanterns = createWishLanterns(scene);
 
@@ -298,6 +300,7 @@ function frame() {
   islands.update(t);
   castle.update(t, dt);
   nature.update(t);
+  atmosphere.update(t);
   path.update(t);
   creatures.update(t, dt);
   effects.update(t, dt, camera, governor.ratio);

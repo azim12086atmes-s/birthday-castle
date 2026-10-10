@@ -4,15 +4,15 @@
 export const PRESETS = {
   low: {
     name: 'Low', pixelRatio: 0.75, antialias: false, bloom: false,
-    particles: 450, trees: 70, flowers: 120, clouds: 14, skyOctaves: 2, strokes: 4, birds: 10,
+    particles: 450, trees: 70, flowers: 120, clouds: 14, skyOctaves: 2, strokes: 4, birds: 10, grass: 2500, shafts: 3,
   },
   medium: {
     name: 'Medium', pixelRatio: 1, antialias: true, bloom: false,
-    particles: 1300, trees: 150, flowers: 320, clouds: 26, skyOctaves: 3, strokes: 8, birds: 24,
+    particles: 1300, trees: 150, flowers: 320, clouds: 26, skyOctaves: 3, strokes: 8, birds: 24, grass: 7000, shafts: 6,
   },
   high: {
     name: 'High', pixelRatio: 1.5, antialias: true, bloom: true,
-    particles: 2600, trees: 230, flowers: 600, clouds: 40, skyOctaves: 4, strokes: 12, birds: 40,
+    particles: 2600, trees: 230, flowers: 600, clouds: 40, skyOctaves: 4, strokes: 12, birds: 40, grass: 14000, shafts: 8,
   },
 };
 
