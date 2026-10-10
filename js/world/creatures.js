@@ -3,7 +3,7 @@
 import * as THREE from 'three';
 import { toon, glowBasic, additive } from './materials.js';
 import { glowTexture, rng } from './textures.js';
-import { ISLANDS, CASTLE, isClearOfBuildings } from './layout.js';
+import { ISLANDS, CASTLE, isClearOfBuildings, groundAt } from './layout.js';
 
 const RAINBOW = ['#ff9bd6', '#c9a6ff', '#7ff3ff', '#8dffb0', '#ffd47a'];
 
@@ -146,7 +146,8 @@ export function createCreatures(scene, preset) {
   const meadow = ISLANDS.find((i) => i.id === 'meadow');
   const grazers = [0, 1].map((i) => {
     const u = makeUnicorn(r);
-    u.position.set(meadow.x + (i ? 8 : -6), meadow.y + 1.9, meadow.z + (i ? -4 : 6));
+    u.position.set(meadow.x + (i ? 8 : -6), 0, meadow.z + (i ? -4 : 6));
+    u.position.y = (groundAt(u.position.x, u.position.z) ?? meadow.y) + 1.9;
     u.rotation.y = i ? 2.2 : -0.6;
     u.userData.wings.forEach((w, k) => { w.rotation.z = (k ? -1 : 1) * -0.9; });
     group.add(u); return u;
@@ -163,6 +164,7 @@ export function createCreatures(scene, preset) {
     d.userData.home = home;
     d.position.set(home.x + (r() - 0.5) * home.r, home.y, home.z + (r() - 0.5) * home.r);
     if (!isClearOfBuildings(d.position.x, d.position.z)) d.position.set(home.x + home.r * 0.6, home.y, home.z);
+    d.position.y = groundAt(d.position.x, d.position.z) ?? home.y;
     group.add(d); deer.push(d);
   }
 
@@ -239,6 +241,7 @@ export function createCreatures(scene, preset) {
         const step = Math.min(v.length(), u.speed * dt);
         v.normalize();
         d.position.addScaledVector(v, step);
+        d.position.y = groundAt(d.position.x, d.position.z) ?? d.position.y;
         d.rotation.y = Math.atan2(v.x, v.z);
         u.legs.forEach((l, k) => { l.rotation.x = Math.sin(t * 8 + k * Math.PI * 0.5) * 0.4; });
       }

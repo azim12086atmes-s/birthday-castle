@@ -1,6 +1,7 @@
 // The gemstone pathway: hexagonal glass tiles that light up, ripple and rise
 // under every footstep and every click, for every player.
 import * as THREE from 'three';
+import { FOG_COLOR } from './sky.js';
 import { PORTALS, PLAZA, SPAWN, CASTLE, MAIN } from './layout.js';
 import { rng } from './textures.js';
 
@@ -40,7 +41,7 @@ export function createPath(scene) {
   const geo = new THREE.CylinderGeometry(0.62, 0.62, 0.25, 6);
   const steps = Array.from({ length: MAX_STEPS }, () => new THREE.Vector4(0, 0, -100, 0));
   const mat = new THREE.ShaderMaterial({
-    uniforms: { uTime: { value: 0 }, uSteps: { value: steps }, uFogColor: { value: new THREE.Color('#2b2466') } },
+    uniforms: { uTime: { value: 0 }, uSteps: { value: steps }, uFogColor: { value: FOG_COLOR } },
     vertexShader: /* glsl */`
       uniform float uTime; uniform vec4 uSteps[${MAX_STEPS}];
       varying float vGlow; varying vec3 vN; varying float vHue; varying float vTop; varying float vDist; varying float vR;

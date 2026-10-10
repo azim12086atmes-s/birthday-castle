@@ -183,6 +183,7 @@ export class Avatar {
       const aura = new THREE.Sprite(new THREE.SpriteMaterial({ map: glowTexture(), color: '#ffcf6a', transparent: true, opacity: 0.6, blending: THREE.AdditiveBlending, depthWrite: false }));
       aura.scale.set(2.6, 3.6, 1); aura.position.y = 1; B.add(aura);
     }
+    this.body.traverse((o) => { if (o.isMesh && o.material.isMeshToonMaterial) o.castShadow = true; });
     this.tag = nameTag(profile.name || 'Guest', profile.honoree);
     this.root.add(this.tag);
   }

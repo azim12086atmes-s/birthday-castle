@@ -26,6 +26,7 @@ class Builder {
     for (const [key, list] of Object.entries(this.parts)) {
       const mesh = new THREE.Mesh(mergeGeometries(list), materials[key]);
       mesh.name = key;
+      if (materials[key].isMeshToonMaterial) { mesh.castShadow = true; mesh.receiveShadow = true; }
       group.add(mesh);
     }
     return group;

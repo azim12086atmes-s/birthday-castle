@@ -4,6 +4,7 @@
 import * as THREE from 'three';
 import { rng } from './textures.js';
 import { CASTLE, ISLANDS } from './layout.js';
+import { MOOD } from './sky.js';
 
 function shaftMaterial(color, strength) {
   return new THREE.ShaderMaterial({
@@ -68,5 +69,6 @@ export function createAtmosphere(scene, preset) {
   }
 
   scene.add(group);
-  return { update(t) { for (const m of mats) m.uniforms.uTime.value = t; } };
+  // moonbeams belong to the night; at dusk they fade to a faint warm haze
+  return { update(t) { for (const m of mats) { m.uniforms.uTime.value = t; m.userData.base ??= m.uniforms.uStrength.value; m.uniforms.uStrength.value = m.userData.base * (0.25 + 0.75 * MOOD.night.value); } } };
 }

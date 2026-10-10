@@ -6,7 +6,7 @@
 import * as THREE from 'three';
 import { glowBasic } from './world/materials.js';
 import { glowTexture, textTexture, rng } from './world/textures.js';
-import { ISLANDS, isClearOfBuildings } from './world/layout.js';
+import { ISLANDS, isClearOfBuildings, groundAt } from './world/layout.js';
 
 const SHARDS = 45;
 const RESPAWN = 75; // seconds before a collected shard reappears for you
@@ -22,7 +22,7 @@ export function createStardustHunt(scene, onCollect) {
       const a = r() * Math.PI * 2, d = Math.sqrt(r()) * (isl.r - 4);
       const x = isl.x + Math.cos(a) * d, z = isl.z + Math.sin(a) * d;
       if (!isClearOfBuildings(x, z, -2)) continue;
-      spots.push({ x, y: isl.y + 1.2 + r() * 1.5, z, gone: 0 });
+      spots.push({ x, y: (groundAt(x, z) ?? isl.y) + 1.2 + r() * 1.5, z, gone: 0 });
       k++;
     }
   }

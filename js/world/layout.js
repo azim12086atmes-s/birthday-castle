@@ -42,6 +42,43 @@ export function islandAt(x, z) {
   return null;
 }
 
+// --- rolling hills --------------------------------------------------------
+// Deterministic value noise so every player gets the same landscape.
+function h2(x, z) { const s = Math.sin(x * 127.1 + z * 311.7) * 43758.5453; return s - Math.floor(s); }
+function vnoise(x, z) {
+  const ix = Math.floor(x), iz = Math.floor(z), fx = x - ix, fz = z - iz;
+  const u = fx * fx * (3 - 2 * fx), v = fz * fz * (3 - 2 * fz);
+  const a = h2(ix, iz), b = h2(ix + 1, iz), c = h2(ix, iz + 1), d = h2(ix + 1, iz + 1);
+  return a + (b - a) * u + (c - a) * v + (a - b - c + d) * u * v;
+}
+const smooth = (e0, e1, x) => { const t = Math.min(1, Math.max(0, (x - e0) / (e1 - e0))); return t * t * (3 - 2 * t); };
+
+// Places that must stay level (buildings, plaza, path, portals, the pond),
+// as circles and one strip; hills fade in beyond them.
+const FLAT = [];
+function flatDistance(x, z) {
+  let d = Infinity;
+  for (const f of FLAT) d = Math.min(d, Math.hypot(x - f.x, z - f.z) - f.r);
+  if (z > -14 && z < 92) d = Math.min(d, Math.abs(x) - 8);
+  return d;
+}
+function initFlat() {
+  FLAT.push({ x: CASTLE.x, z: CASTLE.z, r: 46 }, { x: PLAZA.x, z: PLAZA.z, r: PLAZA.r + 8 }, { x: LAKE_POND.x, z: LAKE_POND.z, r: LAKE_POND.r + 4 });
+  for (const p of PORTALS) FLAT.push({ x: p.x, z: p.z, r: 9 });
+  for (const p of RETURNS) FLAT.push({ x: p.x, z: p.z, r: 9 });
+  const by = Object.fromEntries(ISLANDS.map((i) => [i.id, i]));
+  FLAT.push({ x: by.aurora.x, z: by.aurora.z, r: 10 }, { x: by.lake.x + 26, z: by.lake.z - 10, r: 8 }, { x: by.star.x, z: by.star.z - 6, r: 9 });
+}
+
+export function terrainHeight(isl, x, z) {
+  if (!FLAT.length) initFlat();
+  const amp = isl.main ? 10 : 6;
+  const n = vnoise(x * 0.028 + isl.x, z * 0.028 + isl.z) * 0.75 + vnoise(x * 0.09, z * 0.09) * 0.25;
+  const rim = smooth(isl.r, isl.r - 12, Math.hypot(x - isl.x, z - isl.z));
+  const flat = smooth(0, 14, flatDistance(x, z));
+  return Math.max(0, n - 0.25) * amp * 1.35 * rim * flat;
+}
+
 export function groundAt(x, z) {
   const isl = islandAt(x, z);
   if (!isl) return null;
@@ -49,7 +86,7 @@ export function groundAt(x, z) {
     const dx = x - LAKE_POND.x, dz = z - LAKE_POND.z;
     if (dx * dx + dz * dz < LAKE_POND.r * LAKE_POND.r) return isl.y - 0.3;
   }
-  return isl.y;
+  return isl.y + terrainHeight(isl, x, z);
 }
 
 // Push a point of radius `pr` out of every collider. Mutates pos.

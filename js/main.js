@@ -1,7 +1,7 @@
 import * as THREE from 'three';
 import { CONFIG, isCelebration, celebrationTime } from './config.js';
 import { resolveQuality, saveQuality, savedQuality, FrameGovernor } from './quality.js';
-import { createSky, FOG_COLOR } from './world/sky.js';
+import { createSky, FOG_COLOR, MOOD, SUN_DIR, MOON_DIR } from './world/sky.js';
 import { createIslands } from './world/islands.js';
 import { createCastle } from './world/castle.js';
 import { createNature } from './world/nature.js';
@@ -21,13 +21,17 @@ import { loadProfile, openLobby } from './lobby.js';
 
 const $ = (id) => document.getElementById(id);
 const params = new URLSearchParams(location.search);
-const quality = resolveQuality();
+const quality = resolveQuality(params.get('quality') || undefined);
 
 // ---------------------------------------------------------------- renderer --
 const canvas = $('c');
 const renderer = new THREE.WebGLRenderer({ canvas, antialias: quality.antialias, powerPreference: 'high-performance' });
 renderer.setSize(innerWidth, innerHeight);
 renderer.outputColorSpace = THREE.SRGBColorSpace;
+if (quality.shadows) {
+  renderer.shadowMap.enabled = true;
+  renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+}
 const governor = new FrameGovernor(renderer, quality);
 
 const scene = new THREE.Scene();
@@ -35,13 +39,38 @@ scene.fog = new THREE.Fog(FOG_COLOR, 90, 620);
 const camera = new THREE.PerspectiveCamera(60, innerWidth / innerHeight, 0.1, 1400);
 camera.position.set(0, 40, 160);
 
-scene.add(new THREE.HemisphereLight('#9fb0ff', '#3a2a6a', 1.6));
-const moon = new THREE.DirectionalLight('#d8e0ff', 1.6);
-moon.position.set(-260, 330, -520).normalize();
-scene.add(moon);
+const hemi = new THREE.HemisphereLight('#9fb0ff', '#3a2a6a', 1.6);
+scene.add(hemi);
+const key = new THREE.DirectionalLight('#d8e0ff', 1.6);
+if (quality.shadows) {
+  key.castShadow = true;
+  key.shadow.mapSize.set(quality.shadows, quality.shadows);
+  Object.assign(key.shadow.camera, { left: -70, right: 70, top: 70, bottom: -70, near: 1, far: 400 });
+  key.shadow.bias = -0.0008; key.shadow.normalBias = 0.6;
+}
+scene.add(key, key.target);
 const warm = new THREE.DirectionalLight('#ffb7d9', 0.5);
 warm.position.set(1, 0.4, 1);
 scene.add(warm);
+
+// Lighting mood: golden-hour dusk before the celebration, aurora night during it.
+const LIGHT = {
+  dusk: { sky: new THREE.Color('#c9b8ff'), ground: new THREE.Color('#8a5a62'), hemi: 1.25, key: new THREE.Color('#ffb98a'), keyI: 2.6, warm: new THREE.Color('#ff9ec4'), warmI: 0.45 },
+  night: { sky: new THREE.Color('#9fb0ff'), ground: new THREE.Color('#3a2a6a'), hemi: 1.6, key: new THREE.Color('#d8e0ff'), keyI: 1.6, warm: new THREE.Color('#ffb7d9'), warmI: 0.5 },
+};
+const forcedMood = params.get('night') === '1' ? 1 : params.get('dusk') === '1' ? 0 : null;
+const keyDir = new THREE.Vector3();
+function applyMood(n) {
+  MOOD.night.value = n;
+  const a = LIGHT.dusk, b = LIGHT.night;
+  hemi.color.copy(a.sky).lerp(b.sky, n); hemi.groundColor.copy(a.ground).lerp(b.ground, n);
+  hemi.intensity = a.hemi + (b.hemi - a.hemi) * n;
+  key.color.copy(a.key).lerp(b.key, n); key.intensity = a.keyI + (b.keyI - a.keyI) * n;
+  warm.color.copy(a.warm).lerp(b.warm, n); warm.intensity = a.warmI + (b.warmI - a.warmI) * n;
+  keyDir.copy(SUN_DIR).lerp(MOON_DIR, n).normalize();
+  scene.fog.color.copy(FOG_COLOR);
+}
+let mood = forcedMood ?? (isCelebration() ? 1 : 0);
 
 let composer = null;
 async function setupBloom() {
@@ -54,7 +83,7 @@ async function setupBloom() {
   ]);
   composer = new EffectComposer(renderer);
   composer.addPass(new RenderPass(scene, camera));
-  composer.addPass(new UnrealBloomPass(new THREE.Vector2(innerWidth / 2, innerHeight / 2), 0.55, 0.6, 0.78));
+  composer.addPass(new UnrealBloomPass(new THREE.Vector2(innerWidth / 2, innerHeight / 2), quality.key === 'high' ? 0.4 : 0.32, 0.5, 0.93));
   composer.addPass(new OutputPass());
   composer.setPixelRatio(governor.ratio);
   composer.setSize(innerWidth, innerHeight);
@@ -296,7 +325,15 @@ function frame() {
   const dt = Math.min(clock.getDelta(), 0.05);
   t += dt;
 
+  const wantMood = forcedMood ?? (celebration.active ? 1 : 0);
+  mood += (wantMood - mood) * Math.min(1, dt * 0.25);
+  if (Math.abs(wantMood - mood) < 0.001) mood = wantMood;
   sky.update(t, camera);
+  applyMood(mood);
+  // shadows cover the area around the player (or the camera), snapped to whole metres to avoid shimmer
+  const focus = game ? game.controller.pos : camera.position;
+  key.target.position.set(Math.round(focus.x), Math.round(focus.y), Math.round(focus.z));
+  key.position.copy(key.target.position).addScaledVector(keyDir, 200);
   islands.update(t);
   castle.update(t, dt);
   nature.update(t);
@@ -351,8 +388,12 @@ function frame() {
   } else {
     // attract mode: a slow orbit around the castle behind the entrance screen
     const a = t * 0.05;
-    camera.position.set(Math.sin(a) * 150, 48 + Math.sin(t * 0.1) * 8, -30 + Math.cos(a) * 150);
-    camera.lookAt(0, 22, -40);
+    const fixed = params.get('cam')?.split(',').map(Number);
+    if (fixed?.length === 6) { camera.position.set(fixed[0], fixed[1], fixed[2]); camera.lookAt(fixed[3], fixed[4], fixed[5]); }
+    else {
+      camera.position.set(Math.sin(a) * 150, 48 + Math.sin(t * 0.1) * 8, -30 + Math.cos(a) * 150);
+      camera.lookAt(0, 22, -40);
+    }
   }
 
   governor.tick(dt);

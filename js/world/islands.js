@@ -4,15 +4,56 @@ import * as THREE from 'three';
 import { mergeGeometries } from 'three/addons/utils/BufferGeometryUtils.js';
 import { toon, glowBasic, additive } from './materials.js';
 import { grassTexture, rockTexture, cobbleTexture, friezeTexture, glowTexture, textTexture, rng } from './textures.js';
-import { ISLANDS, PORTALS, RETURNS, PLAZA, LAKE_POND, SPAWN, addCollider } from './layout.js';
+import { ISLANDS, PORTALS, RETURNS, PLAZA, LAKE_POND, SPAWN, addCollider, groundAt, terrainHeight } from './layout.js';
 import { archFrameGeometry, pointedArchPath } from './castle.js';
+
+// Rolling meadow: a polar grid lifted by the shared hill function, painted
+// with vertex colours (sunny hilltops, cool hollows, flowery patches).
+function terrainGeometry(isl) {
+  const rings = Math.ceil(isl.r / 1.6), segs = isl.main ? 128 : 72;
+  const pos = [], col = [], uv = [], idx = [];
+  const c = new THREE.Color();
+  const base = isl.main ? [0.29, 0.5, 0.56] : [0.27 + (isl.hue ?? 0.5) * 0.04, 0.5, 0.56];
+  for (let i = 0; i <= rings; i++) {
+    const rr = (i / rings) * isl.r;
+    const n = i === 0 ? 1 : segs;
+    for (let j = 0; j < n; j++) {
+      const a = (j / segs) * Math.PI * 2;
+      const x = isl.x + Math.cos(a) * rr, z = isl.z + Math.sin(a) * rr;
+      const h = terrainHeight(isl, x, z);
+      pos.push(x, isl.y + h, z);
+      uv.push(x / 6, z / 6);
+      const patch = Math.sin(x * 0.11 + Math.cos(z * 0.07) * 2) * 0.5 + 0.5;
+      c.setHSL(base[0] - patch * 0.05 + (isl.id === 'meadow' ? patch * 0.5 * (patch > 0.8 ? 1 : 0) : 0), base[1] - h * 0.01, base[2] + h * 0.035 - 0.05 + patch * 0.06);
+      col.push(c.r, c.g, c.b);
+    }
+  }
+  for (let j = 0; j < segs; j++) idx.push(0, 1 + ((j + 1) % segs), 1 + j);
+  for (let i = 1; i < rings; i++) {
+    const a0 = 1 + (i - 1) * segs, a1 = 1 + i * segs;
+    for (let j = 0; j < segs; j++) {
+      const j1 = (j + 1) % segs;
+      idx.push(a0 + j, a0 + j1, a1 + j, a0 + j1, a1 + j1, a1 + j);
+    }
+  }
+  const g = new THREE.BufferGeometry();
+  g.setAttribute('position', new THREE.Float32BufferAttribute(pos, 3));
+  g.setAttribute('color', new THREE.Float32BufferAttribute(col, 3));
+  g.setAttribute('uv', new THREE.Float32BufferAttribute(uv, 2));
+  g.setIndex(idx);
+  g.computeVertexNormals();
+  return g;
+}
 
 function islandBody(isl, r) {
   const group = new THREE.Group();
   const grass = grassTexture().clone(); grass.needsUpdate = true;
   grass.repeat.set(isl.r / 6, isl.r / 6);
-  const top = new THREE.Mesh(new THREE.CylinderGeometry(isl.r, isl.r * 0.96, 3, 56), toon('#6fd3a0', { map: grass, emissive: '#0b2a2a', emissiveIntensity: 0.7 }));
-  top.position.set(isl.x, isl.y - 1.5, isl.z);
+  const top = new THREE.Mesh(terrainGeometry(isl), new THREE.MeshLambertMaterial({ map: grass, vertexColors: true, emissive: '#0b2a2a', emissiveIntensity: 0.6 }));
+  top.receiveShadow = true;
+  const cliff = new THREE.Mesh(new THREE.CylinderGeometry(isl.r, isl.r * 0.96, 3, 72, 1, true), toon('#7a6a9a', { emissive: '#1a1440', emissiveIntensity: 0.6 }));
+  cliff.position.set(isl.x, isl.y - 1.5, isl.z);
+  group.add(cliff);
 
   // jagged rocky underside
   const h = isl.r * (isl.main ? 1.1 : 1.5);
@@ -152,7 +193,8 @@ function landmarks(group, r) {
     const m = new THREE.Mesh(new THREE.OctahedronGeometry(1, 0), crystalMats[i % 3]);
     const hgt = 3 + r() * 6;
     m.scale.set(1 + r(), hgt, 1 + r());
-    m.position.set(gI.x + Math.cos(a) * d, gI.y + hgt * 0.8, gI.z + Math.sin(a) * d);
+    m.position.set(gI.x + Math.cos(a) * d, 0, gI.z + Math.sin(a) * d);
+    m.position.y = (groundAt(m.position.x, m.position.z) ?? gI.y) + hgt * 0.8;
     m.rotation.set((r() - 0.5) * 0.4, r() * 3, (r() - 0.5) * 0.4);
     group.add(m);
     addCollider({ x: m.position.x, z: m.position.z, r: 1.4 });
@@ -233,7 +275,7 @@ export function createIslands(scene, preset) {
 
   // plaza of glass cobblestone
   const cob = cobbleTexture(); cob.repeat.set(PLAZA.r / 3, PLAZA.r / 3);
-  const plaza = new THREE.Mesh(new THREE.CircleGeometry(PLAZA.r, 64), toon('#ffffff', { map: cob, emissive: '#ffffff', emissiveMap: cob, emissiveIntensity: 0.55 }));
+  const plaza = new THREE.Mesh(new THREE.CircleGeometry(PLAZA.r, 64), toon('#f3e6ff', { map: cob, emissive: '#ffffff', emissiveMap: cob, emissiveIntensity: 0.45 }));
   plaza.rotation.x = -Math.PI / 2; plaza.position.set(PLAZA.x, 0.03, PLAZA.z);
   const plazaRing = new THREE.Mesh(new THREE.RingGeometry(PLAZA.r - 0.4, PLAZA.r, 96), additive('#ffd47a', { opacity: 0.8 }));
   plazaRing.rotation.x = -Math.PI / 2; plazaRing.position.set(PLAZA.x, 0.05, PLAZA.z);

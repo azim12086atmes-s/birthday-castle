@@ -2,14 +2,16 @@
 // light beneath them, glowing flowers and grass tufts. All instanced: one draw
 // call per kind no matter how many there are.
 import * as THREE from 'three';
+import { FOG_COLOR } from './sky.js';
 import { mergeGeometries } from 'three/addons/utils/BufferGeometryUtils.js';
 import { toon, additive } from './materials.js';
 import { trunkTexture, glowTexture, leafTexture, rng } from './textures.js';
-import { ISLANDS, isClearOfBuildings, addCollider } from './layout.js';
+import { ISLANDS, isClearOfBuildings, addCollider, groundAt } from './layout.js';
 
 function canopyGeometry(r) {
   const parts = [];
-  const blobs = [[0, 0, 0, 1], [0.9, -0.35, 0.3, 0.72], [-0.8, -0.3, -0.4, 0.75], [0.2, 0.55, -0.5, 0.65], [-0.3, -0.25, 0.9, 0.6]];
+  const blobs = [[0, 0, 0, 1], [0.9, -0.35, 0.3, 0.72], [-0.8, -0.3, -0.4, 0.75], [0.2, 0.55, -0.5, 0.65], [-0.3, -0.25, 0.9, 0.6],
+    [0.55, 0.3, 0.6, 0.55], [-0.6, 0.35, 0.3, 0.55], [0.1, -0.55, -0.85, 0.55], [0.7, 0.1, -0.7, 0.5]];
   for (const [x, y, z, s] of blobs) {
     const g = new THREE.IcosahedronGeometry(s, 1);
     const p = g.attributes.position;
@@ -19,6 +21,14 @@ function canopyGeometry(r) {
   }
   const g = mergeGeometries(parts.map((p) => (p.index ? p.toNonIndexed() : p)));
   g.computeVertexNormals();
+  // The Genshin / Ghibli tree trick: bend every normal towards "away from the
+  // canopy centre" so the many blobs shade like one soft, fluffy cloud.
+  const p = g.attributes.position, n = g.attributes.normal, v = new THREE.Vector3(), f = new THREE.Vector3();
+  for (let i = 0; i < p.count; i++) {
+    v.set(p.getX(i), p.getY(i) + 0.2, p.getZ(i)).normalize();
+    f.set(n.getX(i), n.getY(i), n.getZ(i)).multiplyScalar(0.25).add(v.multiplyScalar(0.75)).normalize();
+    n.setXYZ(i, f.x, f.y, f.z);
+  }
   return g;
 }
 
@@ -35,7 +45,7 @@ function scatter(count, r, minEdge = 4, margin = 0) {
       if (isl.id === 'lake' && Math.hypot(x - (isl.x + 26), z - (isl.z - 10)) < 8) continue;
       if (isl.id === 'aurora' && Math.hypot(x - isl.x, z - isl.z) < 9) continue;
       if (pts.some((p) => margin > 0 && Math.hypot(p.x - x, p.z - z) < margin)) continue;
-      pts.push({ x, z, y: isl.y, isl });
+      pts.push({ x, z, y: groundAt(x, z) ?? isl.y, isl });
       made++;
     }
   }
@@ -74,6 +84,7 @@ export function createNature(scene, preset) {
     pools.setColorAt(i, color.setHSL(r() < 0.5 ? 0.5 : 0.8, 0.9, 0.55));
     addCollider({ x: s.x, z: s.z, r: 0.75, y0: s.y, y1: s.y + h });
   });
+  trunks.castShadow = canopy.castShadow = true;
   group.add(trunks, canopy, pools);
 
   // --- glowing flowers & mushrooms ---
@@ -101,8 +112,8 @@ export function createNature(scene, preset) {
     const a = r() * Math.PI, w = 0.09 + r() * 0.06, h = 0.45 + r() * 0.7;
     const dx = Math.cos(a) * w, dz = Math.sin(a) * w, lean = (r() - 0.5) * 0.3;
     gp.set([s.x - dx, s.y, s.z - dz, s.x + dx, s.y, s.z + dz, s.x + lean, s.y + h, s.z + lean], i * 9);
-    const base = color.setHSL(0.36 + (r() - 0.5) * 0.08, 0.55, 0.22);
-    const tip = new THREE.Color().setHSL(r() < 0.12 ? 0.5 : 0.33 + r() * 0.06, 0.6, 0.48 + r() * 0.12);
+    const base = color.setHSL(0.33 + (r() - 0.5) * 0.08, 0.5, 0.2);
+    const tip = new THREE.Color().setHSL(r() < 0.12 ? 0.5 : 0.31 + r() * 0.06, 0.55, 0.3 + r() * 0.08);
     gc.set([base.r, base.g, base.b, base.r, base.g, base.b, tip.r, tip.g, tip.b], i * 9);
     gw.set([0, 0, 1], i * 3);
   });
@@ -112,7 +123,7 @@ export function createNature(scene, preset) {
   gg.setAttribute('aTip', new THREE.BufferAttribute(gw, 1));
   const grassMat = new THREE.ShaderMaterial({
     side: THREE.DoubleSide, vertexColors: true,
-    uniforms: { uTime: { value: 0 }, uFog: { value: new THREE.Color('#2b2466') } },
+    uniforms: { uTime: { value: 0 }, uFog: { value: FOG_COLOR } },
     vertexShader: /* glsl */`
       uniform float uTime; attribute float aTip; varying vec3 vC; varying float vDist;
       void main(){
