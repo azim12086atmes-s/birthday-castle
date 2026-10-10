@@ -105,6 +105,10 @@ export function createCastle(scene) {
     }
     B.add('gold', new THREE.ConeGeometry(0.18, 2.5, 6), x, top + 1.1, z);
     B.add('gold', new THREE.SphereGeometry(0.35, 8, 6), x, top + 0.3, z);
+    // crescent-moon tip (U211): a gold crescent opening to the sky
+    const cres = new THREE.TorusGeometry(0.55, 0.11, 6, 18, Math.PI * 1.45);
+    cres.rotateZ(-Math.PI * 0.225 - Math.PI / 2 + Math.PI);
+    B.add('goldGlow', cres, x, top + 3.0, z);
     if (opts.flag) flags.push({ x, y: top + 2.2, z, color: opts.flag });
     // windows facing outward around the tower
     const n = opts.windows ?? 4;
@@ -195,6 +199,30 @@ export function createCastle(scene) {
     B.add('roof', new THREE.ConeGeometry(0.7, 4, 6), cx + Math.sin(a + 0.5) * 7.8, 48.5, kz - 3 + Math.cos(a + 0.5) * 7.8);
   }
 
+  // --- lantern strings between the front towers (U211) --------------------
+  const strings = [];
+  for (const [ax, bx, y] of [[-wx, -9, 17], [9, wx, 17], [-9, 9, 15.5]]) {
+    const a = new THREE.Vector3(cx + ax, y, fz + 1.5), b = new THREE.Vector3(cx + bx, y, fz + 1.5);
+    strings.push({ a, b, sag: Math.abs(bx - ax) * 0.12 });
+  }
+  const bulbPos = [], linePts = [];
+  for (const { a, b, sag } of strings) {
+    const n = Math.round(a.distanceTo(b) / 1.3);
+    const pts = [];
+    for (let i = 0; i <= n; i++) {
+      const t = i / n, p = a.clone().lerp(b, t); p.y -= Math.sin(t * Math.PI) * sag;
+      pts.push(p);
+      if (i > 0 && i < n) bulbPos.push(p);
+    }
+    for (let i = 0; i < n; i++) linePts.push(pts[i], pts[i + 1]);
+  }
+  const lineGeo = new THREE.BufferGeometry().setFromPoints(linePts);
+  const stringLine = new THREE.LineSegments(lineGeo, new THREE.LineBasicMaterial({ color: '#6a5a8a' }));
+  const bulbs = new THREE.InstancedMesh(new THREE.SphereGeometry(0.22, 8, 6), glowBasic('#ffffff'), bulbPos.length);
+  const bulbCols = ['#ffc65c', '#ff90c8', '#5ef2ff', '#ffe7a8'];
+  const tmpO = new THREE.Object3D(), tmpC = new THREE.Color();
+  bulbPos.forEach((p, i) => { tmpO.position.copy(p); tmpO.updateMatrix(); bulbs.setMatrixAt(i, tmpO.matrix); bulbs.setColorAt(i, tmpC.set(bulbCols[i % 4])); });
+
   // --- materials & meshes ---------------------------------------------------
   const stoneMap = stoneTexture(); stoneMap.repeat.set(3, 3);
   const frieze = friezeTexture(); frieze.repeat.set(6, 1);
@@ -228,7 +256,7 @@ export function createCastle(scene) {
   const glassMats = [0, 1, 2].map((v) => glowBasic('#ffffff', { map: stainedGlassTexture(v), side: THREE.DoubleSide }));
   const glass = glassB.build({ g0: glassMats[0], g1: glassMats[1], g2: glassMats[2] });
   const halos = haloB.build({ halo: additive('#8f7bff', { map: glowTexture(), opacity: 0.35 }) });
-  group.add(glass, halos, roseMesh, roseRing);
+  group.add(glass, halos, roseMesh, roseRing, stringLine, bulbs);
 
   // the birthday balcony (U128): a half-round balcony over the keep door with a
   // gold railing, flanked by heart-shaped windows glowing pink
