@@ -20,7 +20,7 @@ export const CONFIG = {
 
   // She joins with the link  ...?key=<honoreeKey>  so the game knows it is her.
   // Change this to something only you know before sharing the game.
-  honoreeKey: 'starlight',
+  honoreeKey: 'xCOM5xrDuiCU',
 
   // Players with the same room name meet each other. ?room=xyz overrides it.
   roomId: 'castle-of-starlight-2026',
