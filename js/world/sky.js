@@ -22,13 +22,13 @@ function skyDome(preset) {
   const mat = new THREE.ShaderMaterial({
     side: THREE.BackSide, depthWrite: false, fog: false,
     defines: { OCT: preset.skyOctaves },
-    uniforms: { uTime: { value: 0 }, uCelebrate: { value: 0 }, uNight: MOOD.night, uSun: { value: SUN_DIR } },
+    uniforms: { uTime: { value: 0 }, uCelebrate: { value: 0 }, uReveal: { value: 0 }, uNight: MOOD.night, uSun: { value: SUN_DIR } },
     vertexShader: /* glsl */`
       varying vec3 vDir;
       void main(){ vDir = position; vec4 p = modelViewMatrix * vec4(position, 1.); gl_Position = projectionMatrix * p; gl_Position.z = gl_Position.w * 0.9999; }
     `,
     fragmentShader: /* glsl */`
-      uniform float uTime; uniform float uCelebrate; uniform float uNight; uniform vec3 uSun; varying vec3 vDir;
+      uniform float uTime; uniform float uCelebrate; uniform float uReveal; uniform float uNight; uniform vec3 uSun; varying vec3 vDir;
       ${NOISE}
       void main(){
         vec3 d = normalize(vDir);
@@ -107,6 +107,28 @@ function skyDome(preset) {
           float seg = ph < arcLen ? pow(ph / arcLen, 2.) : 0.;
           float trail = line * seg * step(0.5, hk) * smoothstep(0.02, 0.5, rr);
           col += vec3(0.78, 0.86, 1.) * trail * 0.5 * uCelebrate * uNight * smoothstep(0.03, 0.3, h);
+        }
+        // midnight reveal (U279): a giant Islamic eight-pointed star pattern
+        // draws itself across the sky around the pole, then softly shimmers
+        if (uReveal > 0.) {
+          vec3 P2 = normalize(vec3(0., 0.55, -1.));
+          vec3 bx = normalize(cross(P2, vec3(0., 1., 0.))), by = cross(bx, P2);
+          vec2 q = vec2(dot(d, bx), dot(d, by)) / (1. + dot(d, P2)) * 2.2;
+          float lines = 1e3;
+          for (int i = 0; i < 3; i++) {
+            float R = 0.22 + float(i) * 0.24;
+            vec2 a = abs(q);
+            vec2 r45 = abs(mat2(0.7071, -0.7071, 0.7071, 0.7071) * q);
+            lines = min(lines, abs(max(a.x, a.y) - R));
+            lines = min(lines, abs(max(r45.x, r45.y) - R));
+            lines = min(lines, abs(length(q) - R * 1.307));
+          }
+          float ang = atan(q.y, q.x) / 6.28318 + 0.5;
+          float drawn = smoothstep(ang, ang + 0.02, uReveal * 1.02);
+          float glow = smoothstep(0.012, 0.0, lines) + smoothstep(0.06, 0.0, lines) * 0.12;
+          float fade = smoothstep(0.95, 0.6, length(q));
+          vec3 pc = mix(vec3(1.0, 0.8, 0.4), vec3(0.45, 0.95, 1.0), 0.5 + 0.5 * sin(length(q) * 9. - uTime * 0.8));
+          col += pc * glow * drawn * fade * (0.55 + 0.15 * sin(uTime * 1.3)) * uNight;
         }
         gl_FragColor = vec4(col, 1.);
       }
@@ -230,10 +252,14 @@ export function createSky(scene, preset) {
   const extras = moonAndStars(group);
   const puffs = cloudPuffs(group, preset);
   scene.add(group);
+  let revealing = false, lastT = null;
 
   return {
     dome, sea,
     update(t, camera) {
+      const dt = lastT == null ? 0 : Math.min(0.5, t - lastT); lastT = t;
+      const rv = dome.material.uniforms.uReveal;
+      rv.value = revealing ? Math.min(1, rv.value + dt / 14) : 0;   // draws over about 14 seconds
       dome.material.uniforms.uTime.value = t;
       sea.material.uniforms.uTime.value = t;
       dome.position.copy(camera.position);
@@ -253,6 +279,7 @@ export function createSky(scene, preset) {
     },
     setCelebration(on) {
       dome.material.uniforms.uCelebrate.value = on ? 1 : 0;
+      revealing = on;
       extras.bow.material.uniforms.uOpacity.value = on ? 0.32 : 0.14;
     },
   };
