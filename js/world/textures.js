@@ -137,11 +137,11 @@ export const stoneTexture = () => once('stone', () => {
   const S = 256;
   const [c, g] = canvas(S);
   const r = rng(3);
-  g.fillStyle = '#e9e4f5'; g.fillRect(0, 0, S, S);
+  g.fillStyle = '#f5f2f9'; g.fillRect(0, 0, S, S);
   for (let i = 0; i < 260; i++) {
     const x = r() * S, y = r() * S, rad = 6 + r() * 30;
     const grd = g.createRadialGradient(x, y, 0, x, y, rad);
-    const tone = r() < 0.5 ? '200,190,235' : '255,250,255';
+    const tone = r() < 0.5 ? '215,208,235' : '255,250,255';
     grd.addColorStop(0, `rgba(${tone},0.25)`); grd.addColorStop(1, `rgba(${tone},0)`);
     g.fillStyle = grd; g.fillRect(x - rad, y - rad, rad * 2, rad * 2);
   }
@@ -400,4 +400,27 @@ export const leafTexture = () => once('leaf', () => {
     g.restore();
   }
   return tex(c, true);
+});
+
+// Turret crown (reference U129, technique T51): a band of pale stone pierced by
+// pointed arches that glow pink from inside, like lanterns at the top of every tower.
+export const crownTexture = () => once('crown', () => {
+  const W = 512, H = 128;
+  const [c, g] = canvas(W, H);
+  g.fillStyle = '#ddd3ea'; g.fillRect(0, 0, W, H);
+  const n = 6, cw = W / n;
+  for (let i = 0; i < n; i++) {
+    const x = i * cw + cw / 2, w = cw * 0.5, top = 16, bottom = H - 14;
+    const grd = g.createLinearGradient(0, top, 0, bottom);
+    grd.addColorStop(0, '#ffe2f2'); grd.addColorStop(0.5, '#ff9fd0'); grd.addColorStop(1, '#ff6fb6');
+    g.fillStyle = grd;
+    g.beginPath();
+    g.moveTo(x - w / 2, bottom); g.lineTo(x - w / 2, top + w * 0.6);
+    g.quadraticCurveTo(x - w / 2, top, x, top - 6); g.quadraticCurveTo(x + w / 2, top, x + w / 2, top + w * 0.6);
+    g.lineTo(x + w / 2, bottom); g.closePath(); g.fill();
+    g.strokeStyle = '#e8c76a'; g.lineWidth = 3; g.stroke();
+  }
+  g.fillStyle = '#e8c76a'; g.fillRect(0, 0, W, 5); g.fillRect(0, H - 5, W, 5);
+  const t = tex(c, true);
+  return t;
 });

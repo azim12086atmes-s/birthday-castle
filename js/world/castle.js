@@ -4,7 +4,7 @@
 import * as THREE from 'three';
 import { mergeGeometries } from 'three/addons/utils/BufferGeometryUtils.js';
 import { toon, glowBasic, additive, flagMaterial } from './materials.js';
-import { stoneTexture, stainedGlassTexture, roseWindowTexture, friezeTexture, glowTexture } from './textures.js';
+import { stoneTexture, stainedGlassTexture, roseWindowTexture, friezeTexture, glowTexture, crownTexture } from './textures.js';
 import { CASTLE, addCollider } from './layout.js';
 
 const tmpM = new THREE.Matrix4();
@@ -88,6 +88,13 @@ export function createCastle(scene) {
     B.add('gold', new THREE.TorusGeometry(r * 1.07, 0.12, 6, 24), x, h * 0.55, z, Math.PI / 2);
     B.add('frieze', new THREE.CylinderGeometry(r * 1.075, r * 1.075, 1.4, 16, 1, true), x, h - 1.4, z);
     let top = h + 0.5;
+    // glowing lantern storey under the roof (U129 turret tops lit pink inside)
+    if (roof) {
+      const ch = Math.max(1.6, r * 0.75);
+      B.add('crown', new THREE.CylinderGeometry(r * 0.98, r * 0.98, ch, 16, 1, true), x, top + ch / 2, z);
+      B.add('gold', new THREE.TorusGeometry(r * 1.02, 0.12, 6, 24), x, top + ch, z, Math.PI / 2);
+      top += ch;
+    }
     if (roof === 'cone') {
       const rh = opts.roofH || r * 2.8;
       B.add('roof', new THREE.ConeGeometry(r * 1.3, rh, 12), x, top + rh / 2, z);
@@ -176,6 +183,7 @@ export function createCastle(scene) {
   // the grand central spire
   tower(cx, kz - 3, 7.5, 46, null, { windows: 6, wRows: [30, 38] });
   B.add('stone', new THREE.CylinderGeometry(5, 5.4, 9, 16, 1, true), cx, 51, kz - 3);
+  B.add('crown', new THREE.CylinderGeometry(5.05, 5.05, 2.2, 16, 1, true), cx, 53.9, kz - 3);
   B.add('gold', new THREE.TorusGeometry(5.5, 0.2, 6, 24), cx, 55.5, kz - 3, Math.PI / 2);
   B.add('roof', new THREE.ConeGeometry(6.3, 26, 12), cx, 55.5 + 13, kz - 3);
   B.add('gold', new THREE.ConeGeometry(0.25, 4, 6), cx, 55.5 + 27, kz - 3);
@@ -190,10 +198,12 @@ export function createCastle(scene) {
   // --- materials & meshes ---------------------------------------------------
   const stoneMap = stoneTexture(); stoneMap.repeat.set(3, 3);
   const frieze = friezeTexture(); frieze.repeat.set(6, 1);
+  const crownMap = crownTexture();
   const group = B.build({
-    stone: toon('#f1ecff', { map: stoneMap, emissive: '#2a2050', emissiveIntensity: 0.6 }),
-    roof: toon('#3d3aa8', { emissive: '#1a1440', emissiveIntensity: 0.6 }),
-    roof2: toon('#2fb2b8', { emissive: '#0d3a4a', emissiveIntensity: 0.8 }),
+    stone: toon('#ffffff', { map: stoneMap, emissive: '#3a3266', emissiveIntensity: 0.4 }),
+    roof: toon('#5474ae', { emissive: '#1a2050', emissiveIntensity: 0.6 }),
+    roof2: toon('#4aa6bf', { emissive: '#0d3a4a', emissiveIntensity: 0.7 }),
+    crown: glowBasic('#ffffff', { map: crownMap }),
     gold: toon('#ffcf5a', { emissive: '#6a4a10', emissiveIntensity: 0.9 }),
     goldGlow: glowBasic('#ffd47a'),
     frieze: additive('#ffcf6a', { map: frieze, side: THREE.DoubleSide, opacity: 0.9 }),
@@ -219,6 +229,42 @@ export function createCastle(scene) {
   const glass = glassB.build({ g0: glassMats[0], g1: glassMats[1], g2: glassMats[2] });
   const halos = haloB.build({ halo: additive('#8f7bff', { map: glowTexture(), opacity: 0.35 }) });
   group.add(glass, halos, roseMesh, roseRing);
+
+  // the birthday balcony (U128): a half-round balcony over the keep door with a
+  // gold railing, flanked by heart-shaped windows glowing pink
+  const heart = (s) => {
+    const h = new THREE.Shape();
+    h.moveTo(0, -s);
+    h.bezierCurveTo(-s * 0.2, -s * 0.6, -s, -s * 0.2, -s, s * 0.3);
+    h.bezierCurveTo(-s, s * 0.85, -s * 0.25, s * 0.95, 0, s * 0.45);
+    h.bezierCurveTo(s * 0.25, s * 0.95, s, s * 0.85, s, s * 0.3);
+    h.bezierCurveTo(s, -s * 0.2, s * 0.2, -s * 0.6, 0, -s);
+    return new THREE.ShapeGeometry(h, 12);
+  };
+  const hearts = [], heartHalos = [];
+  const front = kz + kd / 2;
+  for (const [x, y, z, s] of [[cx - 4.6, 12.7, front + 0.08, 0.9], [cx + 4.6, 12.7, front + 0.08, 0.9],
+    [cx - 9, 8.5, fz + 3.3 * 1.02 + 0.06, 0.8], [cx + 9, 8.5, fz + 3.3 * 1.02 + 0.06, 0.8]]) {
+    const g = heart(s); g.translate(x, y, z); hearts.push(g);
+    const hg = new THREE.PlaneGeometry(s * 5, s * 5); hg.translate(x, y, z + 0.05); heartHalos.push(hg);
+  }
+  group.add(new THREE.Mesh(mergeGeometries(hearts), glowBasic('#ff8cc6')));
+  group.add(new THREE.Mesh(mergeGeometries(heartHalos), additive('#ff6fb6', { map: glowTexture(), opacity: 0.45 })));
+  const balc = new THREE.Group();
+  balc.position.set(cx, 9.6, front);
+  const floor = new THREE.Mesh(new THREE.CylinderGeometry(3.6, 3.6, 0.5, 24, 1, false, -Math.PI / 2, Math.PI), toon('#f1ecff', { emissive: '#2a2050', emissiveIntensity: 0.6 }));
+  const corbel = new THREE.Mesh(new THREE.ConeGeometry(3.4, 2.4, 24, 1, false, -Math.PI / 2, Math.PI), floor.material);
+  corbel.rotation.z = Math.PI; corbel.position.y = -1.45;
+  const rail = new THREE.Mesh(new THREE.TorusGeometry(3.5, 0.09, 6, 24, Math.PI), toon('#ffcf5a', { emissive: '#6a4a10', emissiveIntensity: 0.9 }));
+  rail.rotation.x = Math.PI / 2; rail.position.y = 1.25;
+  const posts = [];
+  for (let i = 0; i <= 12; i++) {
+    const a = (i / 12) * Math.PI;
+    const p = new THREE.CylinderGeometry(0.05, 0.05, 1, 5); p.translate(Math.cos(a) * 3.5, 0.75, Math.sin(a) * 3.5); posts.push(p);
+  }
+  const railPosts = new THREE.Mesh(mergeGeometries(posts), rail.material);
+  balc.add(floor, corbel, rail, railPosts);
+  group.add(balc);
 
   // flags
   const flagMats = new Map();

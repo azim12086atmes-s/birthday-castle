@@ -92,6 +92,22 @@ function skyDome(preset) {
           }
           col += aur * smoothstep(0.02, 0.25, h) * smoothstep(0.95, 0.5, h) * (0.8 + uCelebrate * 0.3) * mix(0.12, 1., uNight);
         }
+        // circular star trails after midnight (U129, technique T57): faint arcs
+        // wheeling slowly round a pole above the castle, brightest at their heads
+        if (uCelebrate > 0.) {
+          vec3 P = normalize(vec3(0., 0.55, -1.));
+          vec3 ax = normalize(cross(P, vec3(0., 1., 0.))), ay = cross(ax, P);
+          float rr = acos(clamp(dot(d, P), -1., 1.));
+          float ang = atan(dot(d, ay), dot(d, ax));
+          float k = floor(rr * 240.), fr = fract(rr * 240.);
+          float hk = fract(sin(k * 12.9898) * 43758.5453);
+          float line = 1. - smoothstep(0.08, 0.38, abs(fr - .5));
+          float ph = fract(ang / 6.28318 + hk * 7. + uTime * 0.006 * (0.6 + hk));
+          float arcLen = 0.05 + hk * 0.14;
+          float seg = ph < arcLen ? pow(ph / arcLen, 2.) : 0.;
+          float trail = line * seg * step(0.5, hk) * smoothstep(0.02, 0.5, rr);
+          col += vec3(0.78, 0.86, 1.) * trail * 0.5 * uCelebrate * uNight * smoothstep(0.03, 0.3, h);
+        }
         gl_FragColor = vec4(col, 1.);
       }
     `,
