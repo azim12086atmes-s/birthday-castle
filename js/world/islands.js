@@ -4,7 +4,7 @@ import * as THREE from 'three';
 import { mergeGeometries } from 'three/addons/utils/BufferGeometryUtils.js';
 import { toon, glowBasic, additive, nightGrade } from './materials.js';
 import { grassTexture, rockTexture, flagstoneTexture, rosetteTexture, friezeTexture, glowTexture, textTexture, rng } from './textures.js';
-import { ISLANDS, PORTALS, RETURNS, PLAZA, LAKE_POND, SPAWN, addCollider, groundAt, terrainHeight, groundHSL } from './layout.js';
+import { ISLANDS, PORTALS, RETURNS, PLAZA, LAKE, LAKE_POND, SPAWN, addCollider, groundAt, terrainHeight, groundHSL } from './layout.js';
 import { archFrameGeometry, pointedArchPath } from './castle.js';
 import { MOOD } from './sky.js';
 
@@ -20,7 +20,9 @@ function terrainGeometry(isl) {
     for (let j = 0; j < n; j++) {
       const a = (j / segs) * Math.PI * 2;
       const x = isl.x + Math.cos(a) * rr, z = isl.z + Math.sin(a) * rr;
-      const h = terrainHeight(isl, x, z);
+      let h = terrainHeight(isl, x, z);
+      // the long lake's bed sits below the water
+      if (isl.main && Math.abs(x) < LAKE.hw - 0.5 && z > LAKE.z0 + 0.5 && z < LAKE.z1 - 0.5) h = -1.6;
       pos.push(x, isl.y + h, z);
       uv.push(x / 6, z / 6);
       c.setHSL(...groundHSL(isl, x, z, h));
@@ -425,7 +427,7 @@ export function createIslands(scene, preset) {
   const plaza = new THREE.Mesh(new THREE.CircleGeometry(PLAZA.r, 64), new THREE.MeshLambertMaterial({ map: flag, emissive: '#2a2050', emissiveIntensity: 0.35 }));
   plaza.rotation.x = -Math.PI / 2; plaza.position.set(PLAZA.x, 0.03, PLAZA.z);
   plaza.receiveShadow = true;
-  const inlay = new THREE.Mesh(new THREE.CircleGeometry(14, 64), new THREE.MeshLambertMaterial({ map: rosetteTexture(), emissive: '#2a2050', emissiveIntensity: 0.35, polygonOffset: true, polygonOffsetFactor: -1 }));
+  const inlay = new THREE.Mesh(new THREE.CircleGeometry(12, 64), new THREE.MeshLambertMaterial({ map: rosetteTexture(), emissive: '#2a2050', emissiveIntensity: 0.35, polygonOffset: true, polygonOffsetFactor: -1 }));
   inlay.rotation.x = -Math.PI / 2; inlay.position.set(PLAZA.x, 0.05, PLAZA.z);
   inlay.receiveShadow = true;
   group.add(inlay);

@@ -260,3 +260,36 @@ export function createNature(scene, preset) {
     },
   };
 }
+
+// Giant trees lining the grand approach (owner's request: "pathways to the castle
+// filled with lush giant trees"): the same leafy crowns, three times the size,
+// with tall trunks. Positions are given by the caller.
+export function giantTrees(scene, spots, preset) {
+  const r = rng(808);
+  const group = new THREE.Group();
+  const dummy = new THREE.Object3D();
+  const color = new THREE.Color();
+  const trunkGeo = new THREE.CylinderGeometry(0.35, 0.75, 1, 9);
+  trunkGeo.translate(0, 0.5, 0);
+  const tTex = trunkTexture(); 
+  const trunks = new THREE.InstancedMesh(trunkGeo, toon('#ffffff', { map: tTex, emissive: '#ffffff', emissiveMap: tTex, emissiveIntensity: 0.4 }), spots.length);
+  const coreMat = canopyMaterial(true), cardMat = canopyMaterial(false);
+  const crowns = new THREE.InstancedMesh(canopyGeometry(r), coreMat, spots.length);
+  const cards = new THREE.InstancedMesh(leafCardGeometry(r, (preset.leafCards ?? 60) + 24), cardMat, spots.length);
+  const greens = [[0.31, 0.62, 0.36], [0.28, 0.66, 0.4], [0.34, 0.55, 0.34], [0.94, 0.6, 0.74]];
+  spots.forEach((s, i) => {
+    const h = 13 + r() * 5, sc = 7 + r() * 2.5;
+    dummy.position.set(s.x, s.y, s.z); dummy.rotation.set(0, r() * 6.28, 0); dummy.scale.set(2.4, h, 2.4);
+    dummy.updateMatrix(); trunks.setMatrixAt(i, dummy.matrix);
+    dummy.position.y = s.y + h + sc * 0.2; dummy.scale.setScalar(sc);
+    dummy.updateMatrix(); crowns.setMatrixAt(i, dummy.matrix); cards.setMatrixAt(i, dummy.matrix);
+    const p = greens[s.pink ? 3 : Math.floor(r() * 3)];
+    color.setHSL(p[0], p[1], p[2] + (r() - 0.5) * 0.05);
+    crowns.setColorAt(i, color); cards.setColorAt(i, color);
+    addCollider({ x: s.x, z: s.z, r: 1.6, y0: s.y, y1: s.y + h });
+  });
+  trunks.castShadow = crowns.castShadow = true;
+  group.add(trunks, crowns, cards);
+  scene.add(group);
+  return group;
+}

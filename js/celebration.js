@@ -39,9 +39,9 @@ export function createCelebration(scene, effects, sky, castle) {
   const bannerTex = textTexture(`Happy Birthday, ${name}!`, { font: '700 96px "Cinzel Decorative", Georgia, serif', color: '#fff3c8', glow: '#ff9bd6', pad: 40 });
   const banner = new THREE.Sprite(new THREE.SpriteMaterial({ map: bannerTex, transparent: true, depthWrite: false, fog: false }));
   banner.scale.set(bannerTex.userData.aspect * 5, 5, 1);
-  banner.position.set(CASTLE.x, 36, CASTLE.z + 22);
+  banner.position.set(CASTLE.x, CASTLE.y + 36 * CASTLE.s, CASTLE.z + 22 * CASTLE.s);
   const cake = makeCake();
-  cake.position.set(PLAZA.x + 15, 0, PLAZA.z + 3);
+  cake.position.set(PLAZA.x + 10, 0, PLAZA.z + 3);
   const group = new THREE.Group();
   group.add(banner, cake);
   group.visible = false;
@@ -58,7 +58,7 @@ export function createCelebration(scene, effects, sky, castle) {
       effects.lanterns.active = on;
       sky.setCelebration(on);
     },
-    burst(n = 1, center = new THREE.Vector3(CASTLE.x, 60, CASTLE.z)) {
+    burst(n = 1, center = new THREE.Vector3(CASTLE.x, 80, CASTLE.z)) {
       for (let i = 0; i < n; i++) {
         effects.fireworks.launch(new THREE.Vector3(center.x + (Math.random() - 0.5) * 90, center.y + Math.random() * 30, center.z + (Math.random() - 0.5) * 60));
       }
@@ -81,11 +81,12 @@ export function playWelcome({ camera, castle, celebration, controller, target, u
   const lines = CONFIG.welcomeLines.map((l) => l.replaceAll('{name}', name));
   const tgt = target.clone();
   const keys = [
-    [new THREE.Vector3(40, 150, 300), new THREE.Vector3(0, 40, -48)],
-    [new THREE.Vector3(150, 95, 110), new THREE.Vector3(0, 45, -48)],
-    [new THREE.Vector3(70, 60, -5), new THREE.Vector3(0, 55, -51)],
-    [new THREE.Vector3(-35, 22, 0), new THREE.Vector3(0, 12, -28)],
-    [new THREE.Vector3(0, 7, 2), new THREE.Vector3(0, 7, -28)],
+    [new THREE.Vector3(40, 170, 330), new THREE.Vector3(0, 55, -86)],
+    [new THREE.Vector3(170, 110, 140), new THREE.Vector3(0, 60, -86)],
+    [new THREE.Vector3(85, 72, -25), new THREE.Vector3(0, 70, -90)],
+    [new THREE.Vector3(-40, 30, -28), new THREE.Vector3(0, 22, -62)],
+    [new THREE.Vector3(0, 16, -40), new THREE.Vector3(0, 18, -62)],
+    [new THREE.Vector3(0, 14, 20), new THREE.Vector3(0, 6, 90)],
     [tgt.clone().add(new THREE.Vector3(0, 3, -7)), tgt.clone().add(new THREE.Vector3(0, 1.6, 0))],
   ];
   const posCurve = new THREE.CatmullRomCurve3(keys.map((k) => k[0]), false, 'centripetal');

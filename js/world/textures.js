@@ -64,9 +64,10 @@ export const stainedGlassTexture = (variant = 0) => once('glass' + variant, () =
   const S = 256;
   const [c, g] = canvas(S);
   const palettes = [
-    ['#1b3fa8', '#7b2fd0', '#e0a400', '#0fa3a3', '#d23c78', '#2e7bff'],
-    ['#7a1fa2', '#e04b8a', '#ffc94a', '#2bc4c4', '#3a4fd8', '#9b5cff'],
-    ['#0f6d8f', '#30c9a0', '#f2c14e', '#6f3ad6', '#e5577a', '#1f9dff'],
+    // pink-led palettes (the owner asked for pink stained glass)
+    ['#8a1f5c', '#d23c78', '#ffc94a', '#ff8cc6', '#f2d0ff', '#b02a6e'],
+    ['#6e1a6a', '#e04b8a', '#ffd36b', '#ff9fd0', '#9b5cff', '#c23a84'],
+    ['#9a2d6a', '#ff6fb6', '#f2c14e', '#ffc2e0', '#6f3ad6', '#d8548f'],
   ][variant % 3];
   const r = rng(11 + variant);
   g.fillStyle = palettes[0]; g.fillRect(0, 0, S, S);
@@ -423,4 +424,31 @@ export const crownTexture = () => once('crown', () => {
   g.fillStyle = '#e8c76a'; g.fillRect(0, 0, W, 5); g.fillRect(0, H - 5, W, 5);
   const t = tex(c, true);
   return t;
+});
+
+// Blind arcade for terrace and bridge faces: pale marble with recessed pointed
+// arches, a gold string course and a small pink lamp in every bay.
+export const arcadeTexture = () => once('arcade', () => {
+  const W = 256, H = 256;
+  const [c, g] = canvas(W, H);
+  g.fillStyle = '#f4e4ec'; g.fillRect(0, 0, W, H);
+  const r = rng(23);
+  for (let i = 0; i < 120; i++) {
+    g.fillStyle = `rgba(${r() < 0.5 ? '220,190,210' : '255,250,252'},0.25)`;
+    g.fillRect(r() * W, r() * H, 10 + r() * 40, 4 + r() * 10);
+  }
+  g.fillStyle = '#d9b6c9';
+  g.beginPath(); g.moveTo(48, H - 20); g.lineTo(48, 110); g.quadraticCurveTo(48, 50, 128, 36); g.quadraticCurveTo(208, 50, 208, 110); g.lineTo(208, H - 20); g.closePath(); g.fill();
+  g.fillStyle = '#c99ab4';
+  g.beginPath(); g.moveTo(64, H - 20); g.lineTo(64, 116); g.quadraticCurveTo(64, 66, 128, 54); g.quadraticCurveTo(192, 66, 192, 116); g.lineTo(192, H - 20); g.closePath(); g.fill();
+  g.strokeStyle = '#e8c76a'; g.lineWidth = 4;
+  g.beginPath(); g.moveTo(48, H - 20); g.lineTo(48, 110); g.quadraticCurveTo(48, 50, 128, 36); g.quadraticCurveTo(208, 50, 208, 110); g.lineTo(208, H - 20); g.stroke();
+  g.fillStyle = '#e8c76a'; g.fillRect(0, 8, W, 8); g.fillRect(0, H - 14, W, 6);
+  // eight-point star in each spandrel
+  for (const x of [0, W]) {
+    g.save(); g.translate(x, 60); g.fillStyle = '#c23a84';
+    for (const rot of [0, Math.PI / 4]) { g.save(); g.rotate(rot); g.fillRect(-12, -12, 24, 24); g.restore(); }
+    g.restore();
+  }
+  return tex(c, true);
 });

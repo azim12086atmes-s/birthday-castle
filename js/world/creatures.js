@@ -139,7 +139,7 @@ export function createCreatures(scene, preset) {
 
   const unicorns = [0, 1, 2, 3].map((i) => {
     const u = makeUnicorn(r);
-    u.userData.orbit = { R: 55 + i * 22, y: 30 + i * 9, speed: (0.09 + r() * 0.05) * (i % 2 ? -1 : 1), off: i * 1.7, cx: CASTLE.x, cz: CASTLE.z + 10 };
+    u.userData.orbit = { R: 70 + i * 24, y: 42 + i * 10, speed: (0.09 + r() * 0.05) * (i % 2 ? -1 : 1), off: i * 1.7, cx: CASTLE.x, cz: CASTLE.z + 10 };
     group.add(u); return u;
   });
   // two unicorns grazing in the meadow

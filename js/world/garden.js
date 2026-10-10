@@ -6,7 +6,7 @@ import * as THREE from 'three';
 import { mergeGeometries } from 'three/addons/utils/BufferGeometryUtils.js';
 import { additive, glowBasic, nightGrade } from './materials.js';
 import { leafTexture, flowerTexture, glowTexture, rng } from './textures.js';
-import { CASTLE, PLAZA, SPAWN, addCollider, groundAt } from './layout.js';
+import { SPAWN, TERRACES, addCollider, groundAt } from './layout.js';
 import { MOOD } from './sky.js';
 
 function box(w, h, d, x, y, z) {
@@ -23,7 +23,9 @@ export function createGarden(scene, preset) {
   const gy = (x, z) => groundAt(x, z) ?? 0;
 
   // --- two parterres, mirrored either side of the gate walkway ---
-  const z0 = -23, z1 = -13, xin = 6, xout = 26, hh = 0.85, ht = 0.7;
+  // they sit on the first marble terrace, either side of the grand stairs
+  const TY = TERRACES[0].y;
+  const z0 = TERRACES[1].front + 2, z1 = TERRACES[0].front - 2, xin = 12, xout = 54, hh = 0.85, ht = 0.7;
   for (const s of [-1, 1]) {
     const xa = s * xin, xb = s * xout, cx = (xa + xb) / 2, cz = (z0 + z1) / 2;
     const w = Math.abs(xb - xa), d = z1 - z0;
@@ -31,9 +33,9 @@ export function createGarden(scene, preset) {
     hedges.push(box(w, hh, ht, cx, hh / 2, z0), box(w, hh, ht, cx, hh / 2, z1));
     hedges.push(box(ht, hh, d, xb, hh / 2, cz));
     hedges.push(box(ht, hh, d / 2 - 1.4, xa, hh / 2, z0 + (d / 2 - 1.4) / 2), box(ht, hh, d / 2 - 1.4, xa, hh / 2, z1 - (d / 2 - 1.4) / 2));
-    addCollider({ minX: Math.min(xa, xb), maxX: Math.max(xa, xb), minZ: z0 - ht / 2, maxZ: z0 + ht / 2, y0: 0, y1: hh });
-    addCollider({ minX: Math.min(xa, xb), maxX: Math.max(xa, xb), minZ: z1 - ht / 2, maxZ: z1 + ht / 2, y0: 0, y1: hh });
-    addCollider({ minX: xb - ht / 2, maxX: xb + ht / 2, minZ: z0, maxZ: z1, y0: 0, y1: hh });
+    addCollider({ minX: Math.min(xa, xb), maxX: Math.max(xa, xb), minZ: z0 - ht / 2, maxZ: z0 + ht / 2, y0: TY, y1: TY + hh });
+    addCollider({ minX: Math.min(xa, xb), maxX: Math.max(xa, xb), minZ: z1 - ht / 2, maxZ: z1 + ht / 2, y0: TY, y1: TY + hh });
+    addCollider({ minX: xb - ht / 2, maxX: xb + ht / 2, minZ: z0, maxZ: z1, y0: TY, y1: TY + hh });
     // cross of pale gravel paths
     gravel.push(box(w - 1, 0.04, 1.6, cx, 0.02, cz), box(1.6, 0.04, d - 1, cx, 0.021, cz));
     // four beds, each a low hedge frame full of flowers
@@ -53,7 +55,7 @@ export function createGarden(scene, preset) {
     // eight-sided basin in the middle
     const basin = new THREE.CylinderGeometry(1.9, 2.1, 0.6, 8); basin.translate(cx, 0.3, cz);
     basins.push(basin);
-    addCollider({ x: cx, z: cz, r: 2 });
+    addCollider({ x: cx, z: cz, r: 2, y0: TY, y1: TY + 1 });
     // cypresses at the four corners
     for (const [px, pz] of [[xa, z0], [xb, z0], [xa, z1], [xb, z1]]) {
       // flame-shaped clipped cypress, smooth so it reads as one soft column
@@ -62,7 +64,7 @@ export function createGarden(scene, preset) {
       c.translate(0, -3.8, 0);
       c.translate(px + s * 0.3, 3.8, pz);
       cypress.push(c);
-      addCollider({ x: px, z: pz, r: 1 });
+      addCollider({ x: px, z: pz, r: 1, y0: TY, y1: TY + 8 });
     }
   }
 
@@ -73,12 +75,15 @@ export function createGarden(scene, preset) {
   const B = new THREE.Mesh(mergeGeometries(beds), new THREE.MeshLambertMaterial({ color: '#4a7a3c', emissive: '#10283a', emissiveIntensity: 0.4 })); B.receiveShadow = true;
   const C = new THREE.Mesh(mergeGeometries(cypress), nightGrade(new THREE.MeshLambertMaterial({ color: '#2f6a44', map: leafy, emissive: '#10283a', emissiveIntensity: 0.5 }), 'cypress')); C.castShadow = true;
   const S = new THREE.Mesh(mergeGeometries(basins), new THREE.MeshLambertMaterial({ color: '#f2e8da', emissive: '#2a2050', emissiveIntensity: 0.3 }));
-  group.add(H, G, B, C, S);
+  const parterres = new THREE.Group();
+  parterres.position.y = TY;
+  group.add(parterres);
+  parterres.add(H, G, B, C, S);
   // glowing water in each basin
   for (const s of [-1, 1]) {
     const w = new THREE.Mesh(new THREE.CircleGeometry(1.7, 8), additive('#5fd6ff', { map: glowTexture(), opacity: 0.7 }));
     w.rotation.x = -Math.PI / 2; w.position.set(s * (xin + xout) / 2, 0.62, (z0 + z1) / 2);
-    group.add(w);
+    parterres.add(w);
   }
 
   // flowers in the beds
@@ -90,12 +95,12 @@ export function createGarden(scene, preset) {
     dummy.updateMatrix(); fm.setMatrixAt(i, dummy.matrix);
     fm.setColorAt(i, color.set(f.col).multiplyScalar(0.85));
   });
-  group.add(fm);
+  parterres.add(fm);
 
   // --- lanterns along the walkway (gate approach and the arrival path) ---
   const spots = [];
-  for (let z = -25; z <= -13; z += 4) spots.push([-4.4, z], [4.4, z]);
-  for (let z = PLAZA.z + PLAZA.r + 4; z <= SPAWN.z + 14; z += 7) if (Math.abs(z - (SPAWN.z - 12)) > 3) spots.push([-4.8, z], [4.8, z]);
+  for (let z = z0; z <= z1; z += 3.5) spots.push([-9.5, z], [9.5, z]);
+  for (let z = 86; z <= SPAWN.z + 10; z += 7) if (Math.abs(z - (SPAWN.z - 12)) > 3) spots.push([-6, z], [6, z]);
   const posts = [], caps = [];
   const ys = spots.map(([x, z]) => gy(x, z));
   for (const [i, [x, z]] of spots.entries()) {

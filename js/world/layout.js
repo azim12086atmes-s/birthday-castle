@@ -2,7 +2,7 @@
 // grow, and the ground height / collision queries the player controller uses.
 
 export const ISLANDS = [
-  { id: 'castle', name: 'Castle of Starlight', x: 0, z: 0, y: 0, r: 95, main: true },
+  { id: 'castle', name: 'Castle of Starlight', x: 0, z: 0, y: 0, r: 136, main: true },
   { id: 'garden', name: 'Crystal Garden', x: 175, z: -55, y: 16, r: 38, hue: 0.52 },
   { id: 'aurora', name: 'Aurora Peak', x: -165, z: -115, y: 40, r: 32, hue: 0.42 },
   { id: 'lake', name: 'Lantern Lake', x: -155, z: 110, y: 6, r: 44, hue: 0.12 },
@@ -11,9 +11,19 @@ export const ISLANDS = [
 ];
 
 export const MAIN = ISLANDS[0];
-export const SPAWN = { x: 0, z: 62 };
-export const CASTLE = { x: 0, z: -48 };
-export const PLAZA = { x: 0, z: 14, r: 26 };
+// The main island is laid out like Atlantis (U398–U400): one long axis from the
+// arrival meadow, down an avenue of giant trees, across a long bridge over a
+// long lake with a white town on both shores, through the plaza and up three
+// marble terraces to a monumental castle.
+export const SPAWN = { x: 0, z: 116 };
+export const CASTLE = { x: 0, z: -86, y: 9, s: 1.2 };
+export const PLAZA = { x: 0, z: -6, r: 15 };
+export const LAKE = { hw: 34, z0: 12, z1: 80 };
+export const BRIDGE = { hw: 3.6, z0: 10, z1: 82, y: 2.2, ramp: 8 };
+export const TERRACES = [{ y: 3, hw: 58, front: -26 }, { y: 6, hw: 52, front: -40 }, { y: 9, hw: 46, front: -54 }];
+export const TERRACE_REAR = -118;
+export const STAIR = { hw: 8, run: 6 };
+export const TOWN = { x0: 46, x1: 100, z0: 0, z1: 66 };   // mirrored on both sides of the lake
 export const LAKE_POND = { x: -155, z: 110, r: 18 };
 
 // Portals on the rim of the main island, each pointing at one floating island.
@@ -56,14 +66,22 @@ const smooth = (e0, e1, x) => { const t = Math.min(1, Math.max(0, (x - e0) / (e1
 // Places that must stay level (buildings, plaza, path, portals, the pond),
 // as circles and one strip; hills fade in beyond them.
 const FLAT = [];
-function flatDistance(x, z) {
+const FLAT_RECTS = [
+  { x0: -104, x1: 104, z0: -140, z1: 84 },   // the whole monumental core
+  { x0: -22, x1: 22, z0: 84, z1: 140 },      // arrival avenue and meadow
+];
+function rectDistance(x, z, r) {
+  const dx = Math.max(r.x0 - x, 0, x - r.x1), dz = Math.max(r.z0 - z, 0, z - r.z1);
+  return Math.hypot(dx, dz);
+}
+function flatDistance(x, z, isl) {
   let d = Infinity;
   for (const f of FLAT) d = Math.min(d, Math.hypot(x - f.x, z - f.z) - f.r);
-  if (z > -14 && z < 92) d = Math.min(d, Math.abs(x) - 8);
+  if (isl.main) for (const r of FLAT_RECTS) d = Math.min(d, rectDistance(x, z, r));
   return d;
 }
 function initFlat() {
-  FLAT.push({ x: CASTLE.x, z: CASTLE.z, r: 46 }, { x: PLAZA.x, z: PLAZA.z, r: PLAZA.r + 8 }, { x: LAKE_POND.x, z: LAKE_POND.z, r: LAKE_POND.r + 4 });
+  FLAT.push({ x: LAKE_POND.x, z: LAKE_POND.z, r: LAKE_POND.r + 4 });
   for (const p of PORTALS) FLAT.push({ x: p.x, z: p.z, r: 9 });
   for (const p of RETURNS) FLAT.push({ x: p.x, z: p.z, r: 9 });
   const by = Object.fromEntries(ISLANDS.map((i) => [i.id, i]));
@@ -75,7 +93,7 @@ export function terrainHeight(isl, x, z) {
   const amp = isl.main ? 10 : 6;
   const n = vnoise(x * 0.028 + isl.x, z * 0.028 + isl.z) * 0.75 + vnoise(x * 0.09, z * 0.09) * 0.25;
   const rim = smooth(isl.r, isl.r - 12, Math.hypot(x - isl.x, z - isl.z));
-  const flat = smooth(0, 14, flatDistance(x, z));
+  const flat = smooth(0, 14, flatDistance(x, z, isl));
   return Math.max(0, n - 0.25) * amp * 1.35 * rim * flat;
 }
 
@@ -92,12 +110,40 @@ export function groundHSL(isl, x, z, h) {
   return [hue, sat, light];
 }
 
+// Height of the built-up axis: bridge deck, lake bed, grand stairs, terraces.
+// Returns null where the natural ground applies.
+export function builtHeight(x, z) {
+  const ax = Math.abs(x);
+  if (ax <= BRIDGE.hw && z >= BRIDGE.z0 && z <= BRIDGE.z1) {
+    return BRIDGE.y * Math.min(1, (z - BRIDGE.z0) / BRIDGE.ramp, (BRIDGE.z1 - z) / BRIDGE.ramp);
+  }
+  if (ax < LAKE.hw && z > LAKE.z0 && z < LAKE.z1) return -0.6;
+  let prev = 0;
+  for (const T of TERRACES) {
+    const zs = T.front + STAIR.run;
+    if (ax <= STAIR.hw && z <= zs && z >= T.front) return prev + (T.y - prev) * Math.round(((zs - z) / STAIR.run) * 12) / 12;
+    prev = T.y;
+  }
+  for (let k = TERRACES.length - 1; k >= 0; k--) {
+    const T = TERRACES[k];
+    if (ax <= T.hw && z <= T.front && z >= TERRACE_REAR) {
+      // the next flight up is cut into this terrace's top
+      return T.y;
+    }
+  }
+  return null;
+}
+
 export function groundAt(x, z) {
   const isl = islandAt(x, z);
   if (!isl) return null;
   if (isl.id === 'lake') {
     const dx = x - LAKE_POND.x, dz = z - LAKE_POND.z;
     if (dx * dx + dz * dz < LAKE_POND.r * LAKE_POND.r) return isl.y - 0.3;
+  }
+  if (isl.main) {
+    const b = builtHeight(x, z);
+    if (b !== null) return b;
   }
   return isl.y + terrainHeight(isl, x, z);
 }
@@ -126,9 +172,12 @@ export function resolveCollisions(pos, pr = 0.5) {
 
 // Places where trees and decorations must not be put.
 export function isClearOfBuildings(x, z, margin = 0) {
-  if (Math.hypot(x - CASTLE.x, z - CASTLE.z) < 44 + margin) return false;
+  const ax = Math.abs(x);
+  if (ax < LAKE.hw + 4 + margin && z > LAKE.z0 - 4 - margin && z < LAKE.z1 + 4 + margin) return false;
+  if (ax < 16 + margin && z > LAKE.z1 && z < 140) return false;                       // avenue and spawn
   if (Math.hypot(x - PLAZA.x, z - PLAZA.z) < PLAZA.r + 6 + margin) return false;
-  if (Math.abs(x) < 7 + margin && z > -10 && z < 90) return false; // main path
+  if (ax < TERRACES[0].hw + 4 + margin && z < TERRACES[0].front + STAIR.run + 4 + margin) return false;
+  if (ax > TOWN.x0 - 3 - margin && ax < TOWN.x1 + 3 + margin && z > TOWN.z0 - 3 - margin && z < TOWN.z1 + 3 + margin) return false;
   for (const p of PORTALS) if (Math.hypot(x - p.x, z - p.z) < 9 + margin) return false;
   for (const p of RETURNS) if (Math.hypot(x - p.x, z - p.z) < 8 + margin) return false;
   if (Math.hypot(x - LAKE_POND.x, z - LAKE_POND.z) < LAKE_POND.r + 4 + margin) return false;

@@ -5,7 +5,19 @@ import * as THREE from 'three';
 import { mergeGeometries } from 'three/addons/utils/BufferGeometryUtils.js';
 import { toon, glowBasic, additive, flagMaterial } from './materials.js';
 import { stoneTexture, stainedGlassTexture, roseWindowTexture, friezeTexture, glowTexture, crownTexture } from './textures.js';
-import { CASTLE, addCollider } from './layout.js';
+import { CASTLE, addCollider as addWorldCollider } from './layout.js';
+
+// The castle is built at ground level around (CASTLE.x, CASTLE.z) and then
+// raised onto the top terrace and scaled up; colliders follow the same move.
+const S = CASTLE.s;
+const toWorld = (x, y, z) => new THREE.Vector3(CASTLE.x + (x - CASTLE.x) * S, CASTLE.y + y * S, CASTLE.z + (z - CASTLE.z) * S);
+function addCollider(c) {
+  const X = (x) => CASTLE.x + (x - CASTLE.x) * S, Z = (z) => CASTLE.z + (z - CASTLE.z) * S;
+  const w = c.r !== undefined ? { x: X(c.x), z: Z(c.z), r: c.r * S } : { minX: X(c.minX), maxX: X(c.maxX), minZ: Z(c.minZ), maxZ: Z(c.maxZ) };
+  w.y0 = CASTLE.y + (c.y0 ?? 0) * S - 0.5;
+  w.y1 = CASTLE.y + (c.y1 ?? 200) * S;
+  addWorldCollider(w);
+}
 
 const tmpM = new THREE.Matrix4();
 const tmpQ = new THREE.Quaternion();
@@ -326,13 +338,16 @@ export function createCastle(scene) {
   });
   let gateOpen = 1, gateTarget = 1;
 
+  group.scale.setScalar(S);
+  group.position.set(CASTLE.x * (1 - S), CASTLE.y, CASTLE.z * (1 - S));
   scene.add(group);
+  group.updateMatrixWorld(true);
 
   return {
     group,
-    gatePosition: new THREE.Vector3(cx, 0, fz),
-    rosePosition: roseMesh.position.clone(),
-    spireTop: new THREE.Vector3(cx, 84, kz - 3),
+    gatePosition: toWorld(cx, 0, fz),
+    rosePosition: roseMesh.getWorldPosition(new THREE.Vector3()),
+    spireTop: toWorld(cx, 84, kz - 3),
     setGate(open, instant = false) { gateTarget = open ? 1 : 0; if (instant) gateOpen = gateTarget; },
     update(t, dt) {
       for (const m of flagMats.values()) m.uniforms.uTime.value = t;
