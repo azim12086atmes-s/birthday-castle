@@ -4,7 +4,7 @@
 import * as THREE from 'three';
 import { mergeGeometries } from 'three/addons/utils/BufferGeometryUtils.js';
 import { toon, additive } from './materials.js';
-import { trunkTexture, glowTexture, rng } from './textures.js';
+import { trunkTexture, glowTexture, leafTexture, rng } from './textures.js';
 import { ISLANDS, isClearOfBuildings, addCollider } from './layout.js';
 
 function canopyGeometry(r) {
@@ -54,7 +54,7 @@ export function createNature(scene, preset) {
   trunkGeo.translate(0, 0.5, 0);
   const tTex = trunkTexture(); tTex.repeat.set(1, 2);
   const trunks = new THREE.InstancedMesh(trunkGeo, toon('#ffffff', { map: tTex, emissive: '#ffffff', emissiveMap: tTex, emissiveIntensity: 0.9 }), spots.length);
-  const canopy = new THREE.InstancedMesh(canopyGeometry(r), toon('#ffffff', { emissive: '#0d2236', emissiveIntensity: 0.9 }), spots.length);
+  const canopy = new THREE.InstancedMesh(canopyGeometry(r), toon('#ffffff', { map: leafTexture(), emissive: '#0d2236', emissiveIntensity: 0.9 }), spots.length);
   const pools = new THREE.InstancedMesh(new THREE.PlaneGeometry(1, 1).rotateX(-Math.PI / 2), additive('#ffffff', { map: glowTexture(), opacity: 0.55 }), spots.length);
   const palette = [
     [0.36, 0.55, 0.42], [0.40, 0.6, 0.38], [0.30, 0.5, 0.40], // lush greens

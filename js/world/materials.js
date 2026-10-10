@@ -12,8 +12,22 @@ function toonRamp() {
   return ramp;
 }
 
+// Every toon surface gets a soft moonlit rim, the glowing silhouette edge that
+// gives Breath of the Wild and Ghibli backgrounds their painted look.
+const RIM = /* glsl */`
+  vec3 rimView = normalize(vViewPosition);
+  float rim = pow(1.0 - clamp(abs(dot(normal, rimView)), 0.0, 1.0), 3.0);
+  vec3 rimUp = normalize((viewMatrix * vec4(0.0, 1.0, 0.0, 0.0)).xyz);
+  rim *= 1.0 - smoothstep(0.4, 0.85, dot(normal, rimUp)); // keep flat ground unwashed
+  outgoingLight += vec3(0.55, 0.62, 1.0) * rim * 0.45;
+  #include <opaque_fragment>
+`;
+
 export function toon(color, opts = {}) {
-  return new THREE.MeshToonMaterial({ color, gradientMap: toonRamp(), ...opts });
+  const m = new THREE.MeshToonMaterial({ color, gradientMap: toonRamp(), ...opts });
+  m.onBeforeCompile = (sh) => { sh.fragmentShader = sh.fragmentShader.replace('#include <opaque_fragment>', RIM); };
+  m.customProgramCacheKey = () => 'toon-rim';
+  return m;
 }
 
 export function glowBasic(color, opts = {}) {

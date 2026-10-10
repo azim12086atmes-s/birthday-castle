@@ -280,3 +280,23 @@ export const trunkTexture = () => once('trunk', () => {
   for (let i = 0; i < 10; i++) { g.beginPath(); g.arc(20 + (i * 37) % 100, 20 + i * 24, 3, 0, Math.PI * 2); g.fillStyle = '#c9a6ff'; g.fill(); }
   return tex(c, true);
 });
+
+// Painted foliage: overlapping leaf-shaped brush dabs, lighter towards the top,
+// tinted per tree by instance colour. Ghibli-style canopies instead of flat blobs.
+export const leafTexture = () => once('leaf', () => {
+  const S = 256;
+  const [c, g] = canvas(S);
+  const r = rng(61);
+  const grd = g.createLinearGradient(0, 0, 0, S);
+  grd.addColorStop(0, '#ffffff'); grd.addColorStop(1, '#9a9ab0');
+  g.fillStyle = grd; g.fillRect(0, 0, S, S);
+  for (let i = 0; i < 700; i++) {
+    const x = r() * S, y = r() * S, l = 6 + r() * 12, a = r() * Math.PI;
+    const v = Math.round(150 + (1 - y / S) * 80 + (r() - 0.5) * 60);
+    g.fillStyle = `rgba(${v},${v},${Math.min(255, v + 20)},0.55)`;
+    g.save(); g.translate(x, y); g.rotate(a);
+    g.beginPath(); g.ellipse(0, 0, l, l * 0.38, 0, 0, Math.PI * 2); g.fill();
+    g.restore();
+  }
+  return tex(c, true);
+});
