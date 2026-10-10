@@ -56,19 +56,29 @@ function islandBody(isl, r) {
 
   // jagged rocky underside
   const h = isl.r * (isl.main ? 1.1 : 1.5);
-  const geo = new THREE.ConeGeometry(isl.r * 0.96, h, 28, 8, true);
+  // a lathe profile from the rim down to a point, with smooth bulges so the
+  // rock reads as big painted planes (T6)
+  const prof = [];
+  for (let i = 0; i <= 10; i++) {
+    const t = i / 10;
+    prof.push(new THREE.Vector2(Math.max(0.01, isl.r * 0.96 * Math.pow(1 - t, 0.75) * (1 + Math.sin(t * 9) * 0.04)), -t * h));
+  }
+  const geo = new THREE.LatheGeometry(prof.reverse(), 28);
   const pos = geo.attributes.position;
   for (let i = 0; i < pos.count; i++) {
     const x = pos.getX(i), y = pos.getY(i), z = pos.getZ(i);
     const a = Math.atan2(z, x);
-    const k = 1 + (Math.sin(a * 5 + y * 0.3) * 0.08 + (r() - 0.5) * 0.12) * (1 - (y / h + 0.5) * 0.3);
-    pos.setXYZ(i, x * k, y + (r() - 0.5) * 1.5, z * k);
+    const k = 1 + Math.sin(a * 5 + y * 0.3) * 0.08 + Math.sin(a * 11 + y * 0.7 + 1.3) * 0.05;
+    pos.setXYZ(i, x * k, y, z * k);
   }
   geo.computeVertexNormals();
   const rock = rockTexture(); rock.repeat.set(4, 2);
-  const under = new THREE.Mesh(geo, new THREE.MeshLambertMaterial({ color: '#a592c8', map: rock, emissive: '#1a1440', emissiveIntensity: 0.7 }));
-  under.rotation.x = Math.PI;
-  under.position.set(isl.x, isl.y - 3 - h / 2, isl.z);
+  const underMat = new THREE.MeshLambertMaterial({ color: '#a592c8', map: rock, emissive: '#1a1440', emissiveIntensity: 0.7, side: THREE.DoubleSide });
+  // some cone faces wind inward once displaced; shade both sides with the outward normal
+  underMat.onBeforeCompile = (sh) => { sh.fragmentShader = sh.fragmentShader.replace('#include <normal_fragment_maps>', '#include <normal_fragment_maps>\nnormal = normalize(vNormal);'); };
+  underMat.customProgramCacheKey = () => 'island-under';
+  const under = new THREE.Mesh(geo, underMat);
+  under.position.set(isl.x, isl.y - 3, isl.z);
   group.add(top, under);
 
   // hanging crystals and glowing vines
@@ -288,10 +298,127 @@ function landmarks(group, r) {
   return items;
 }
 
+// Island signatures from the world build plan (U137, U96, U124): rubble
+// orbiting every island, a waterfall pouring off its edge into the clouds, and
+// a light pillar in each island's colour so you can see where to travel.
+function islandExtras(group, r, preset) {
+  const rockGeo = new THREE.DodecahedronGeometry(1, 0);
+  const rockMat = new THREE.MeshLambertMaterial({ color: '#a592c8', emissive: '#1a1440', emissiveIntensity: 0.7 });
+  const perIsland = preset.particles > 1000 ? 14 : 8;
+  const ring = new THREE.InstancedMesh(rockGeo, rockMat, ISLANDS.length * perIsland);
+  const orbit = [];
+  let k = 0;
+  for (const isl of ISLANDS) {
+    for (let i = 0; i < perIsland; i++, k++) {
+      orbit.push({ isl, a: r() * Math.PI * 2, d: isl.r * (1.15 + r() * 0.35), y: isl.y - 4 - r() * isl.r * 0.35, s: 0.8 + r() * (isl.main ? 3.2 : 2), sp: (0.02 + r() * 0.03) * (r() < 0.5 ? 1 : -1), bob: r() * 6.28 });
+    }
+  }
+  group.add(ring);
+
+  // waterfalls: a curved ribbon with scrolling streaks, fading into mist below
+  const fallMat = new THREE.ShaderMaterial({
+    transparent: true, depthWrite: false, side: THREE.DoubleSide,
+    uniforms: { uTime: { value: 0 }, uNight: MOOD.night },
+    vertexShader: 'varying vec2 vUv; void main(){ vUv = uv; gl_Position = projectionMatrix * modelViewMatrix * vec4(position,1.); }',
+    fragmentShader: /* glsl */`
+      uniform float uTime; uniform float uNight; varying vec2 vUv;
+      float h(float x){ return fract(sin(x * 91.7) * 4375.5); }
+      void main(){
+        float col = floor(vUv.x * 28.);
+        float streak = fract(vUv.y * 3. + uTime * (0.6 + h(col) * 0.5) + h(col + 3.));
+        float s = smoothstep(0.0, 0.6, streak) * (0.55 + 0.45 * h(col + 7.));
+        float edge = smoothstep(0.0, 0.18, vUv.x) * smoothstep(1.0, 0.82, vUv.x);
+        float fade = smoothstep(0.0, 0.55, vUv.y);
+        vec3 c = mix(vec3(0.85, 0.9, 1.0), vec3(0.45, 0.85, 1.0), uNight);
+        gl_FragColor = vec4(c * (0.75 + 0.35 * s), (0.35 + 0.45 * s) * edge * fade);
+      }
+    `,
+  });
+  const falls = [];
+  for (const isl of ISLANDS) {
+    const a = isl.main ? -2.2 : Math.atan2(-isl.z, -isl.x) + Math.PI * 0.6;
+    const w = isl.main ? 9 : 5, drop = isl.main ? 70 : 40;
+    const g = new THREE.PlaneGeometry(w, drop, 1, 12);
+    const p = g.attributes.position;
+    for (let i = 0; i < p.count; i++) {
+      const t = (p.getY(i) + drop / 2) / drop;   // 1 at top, 0 at bottom
+      p.setZ(i, Math.pow(1 - t, 1.6) * drop * 0.18);       // arcs outward as it falls
+    }
+    g.translate(0, -drop / 2, 0);
+    const m = new THREE.Mesh(g, fallMat);
+    m.position.set(isl.x + Math.cos(a) * (isl.r + 0.3), isl.y + 0.2, isl.z + Math.sin(a) * (isl.r + 0.3));
+    m.rotation.y = Math.PI / 2 - a;
+    falls.push(m); group.add(m);
+  }
+
+  // beacon pillars, one colour per island
+  const beaconGeo = new THREE.CylinderGeometry(1.6, 2.4, 160, 12, 1, true); beaconGeo.translate(0, 80, 0);
+  const beaconMats = [];
+  for (const isl of ISLANDS) {
+    if (isl.main) continue;
+    const mat = new THREE.ShaderMaterial({
+      transparent: true, depthWrite: false, blending: THREE.AdditiveBlending, side: THREE.DoubleSide,
+      uniforms: { uTime: { value: 0 }, uColor: { value: new THREE.Color().setHSL(isl.hue, 0.85, 0.62) }, uNight: MOOD.night },
+      vertexShader: 'varying vec2 vUv; void main(){ vUv = uv; gl_Position = projectionMatrix * modelViewMatrix * vec4(position,1.); }',
+      fragmentShader: /* glsl */`
+        uniform float uTime; uniform vec3 uColor; uniform float uNight; varying vec2 vUv;
+        void main(){
+          float a = (1. - vUv.y) * (0.6 + 0.4 * sin(vUv.y * 30. - uTime * 2.));
+          gl_FragColor = vec4(uColor, a * (0.12 + 0.18 * uNight));
+        }
+      `,
+    });
+    beaconMats.push(mat);
+    const b = new THREE.Mesh(beaconGeo, mat);
+    b.position.set(isl.x, isl.y, isl.z);
+    b.renderOrder = 2;
+    group.add(b);
+  }
+
+  const d = new THREE.Object3D();
+  return {
+    update(t) {
+      fallMat.uniforms.uTime.value = t;
+      for (const m of beaconMats) m.uniforms.uTime.value = t;
+      orbit.forEach((o, i) => {
+        const a = o.a + t * o.sp;
+        d.position.set(o.isl.x + Math.cos(a) * o.d, o.y + Math.sin(t * 0.5 + o.bob) * 1.2, o.isl.z + Math.sin(a) * o.d);
+        d.rotation.set(t * 0.1 + o.bob, t * 0.07, 0); d.scale.set(o.s, o.s * 0.8, o.s);
+        d.updateMatrix(); ring.setMatrixAt(i, d.matrix);
+      });
+      ring.instanceMatrix.needsUpdate = true;
+    },
+  };
+}
+
+// The forecourt's golden armillary (U380): three gold rings turning slowly
+// around the fountain's glowing orb.
+function armillarySphere(group, orb) {
+  const g = new THREE.Group();
+  const gold = toon('#e0b040', { emissive: '#6a4a10', emissiveIntensity: 0.9 });
+  const rings = [2.2, 1.9, 1.6].map((rad, i) => {
+    const m = new THREE.Mesh(new THREE.TorusGeometry(rad, 0.08, 6, 48), gold);
+    g.add(m);
+    return m;
+  });
+  rings[1].rotation.x = Math.PI / 2;
+  g.position.set(PLAZA.x, orb.position.y, PLAZA.z);
+  group.add(g);
+  return {
+    update(t, y) {
+      g.position.set(PLAZA.x, y, PLAZA.z);
+      rings[0].rotation.y = t * 0.3;
+      rings[1].rotation.z = t * 0.22;
+      rings[2].rotation.set(t * 0.17, 0, Math.PI / 4);
+    },
+  };
+}
+
 export function createIslands(scene, preset) {
   const group = new THREE.Group();
   const r = rng(42);
   for (const isl of ISLANDS) group.add(islandBody(isl, r));
+  const islandLife = islandExtras(group, r, preset);
 
   // plaza of warm pale flagstones with an eight-fold star inlay round the fountain
   const flag = flagstoneTexture(); flag.repeat.set(PLAZA.r / 5, PLAZA.r / 5);
@@ -306,6 +433,7 @@ export function createIslands(scene, preset) {
   plazaRing.rotation.x = -Math.PI / 2; plazaRing.position.set(PLAZA.x, 0.05, PLAZA.z);
   group.add(plaza, plazaRing);
   const fountainOrb = fountain(group);
+  const armillary = armillarySphere(group, fountainOrb);
 
   // the magical arch gate you walk through after arriving
   archGate(group, SPAWN.x, SPAWN.z - 12, 9, 11);
@@ -334,6 +462,8 @@ export function createIslands(scene, preset) {
       for (const d of disks) d.material.uniforms.uTime.value = t;
       items.pond.material.uniforms.uTime.value = t;
       fountainOrb.position.y = 6.2 + Math.sin(t * 1.5) * 0.3;
+      islandLife.update(t);
+      armillary.update(t, fountainOrb.position.y);
       for (const s of items.spinning) { s.rotation.y = t; s.position.y += Math.sin(t * 2) * 0.01; }
     },
   };
