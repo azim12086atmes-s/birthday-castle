@@ -413,7 +413,8 @@ function cove(group, lamps) {
   // little lantern huts round the stage
   const huts = [], roofs = [], wins = [];
   for (let i = 0; i < 5; i++) {
-    const a = 2.3 + i * 0.75, hx = COVE.x + Math.cos(a) * (COVE.r + 14), hz = COVE.z + Math.sin(a) * (COVE.r + 14), hy = groundAt(hx, hz) ?? y;
+    // in an arc behind the dais, leaving the view to the bridge open
+    const a = Math.atan2(COVE.z - BRIDGE.pts[1][1], COVE.x - BRIDGE.pts[1][0]) + (i - 2) * 0.62, hx = COVE.x + Math.cos(a) * (COVE.r + 14), hz = COVE.z + Math.sin(a) * (COVE.r + 14), hy = groundAt(hx, hz) ?? y;
     huts.push(box(5, 4, 5, hx, hy + 2, hz));
     roofs.push(new THREE.ConeGeometry(4.6, 3.4, 4).rotateY(Math.PI / 4).translate(hx, hy + 5.7, hz));
     wins.push(box(5.1, 1.4, 1.2, hx, hy + 2.3, hz), box(1.2, 1.4, 5.1, hx, hy + 2.3, hz));

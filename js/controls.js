@@ -14,10 +14,10 @@ export class Controller {
     this.camera = camera;
     this.dom = dom;
     this.pos = new THREE.Vector3(SPAWN.x, (groundAt(SPAWN.x, SPAWN.z) ?? MAIN.y) + 0.5, SPAWN.z);
-    this.firstPerson = false;
+    this.firstPerson = true;          // first person by default; V switches to the follow camera
     this.vel = new THREE.Vector3();
     this.facing = SPAWN_FACING;
-    this.camYaw = SPAWN_FACING; this.camPitch = 0.28; this.camDist = 7.5;
+    this.camYaw = SPAWN_FACING; this.camPitch = 0.04; this.camDist = 7.5;
     this.keys = new Set();
     this.onGround = true;
     this.locked = false;

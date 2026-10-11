@@ -165,7 +165,15 @@ function lakeRaw(x, z) {
     const dx = s.x - x, dz = s.z - z, d = dx * dx + dz * dz;
     if (d < bd) { bd = d; bs = s.s; }
   }
-  return Math.sqrt(bd) - lakeHalfWidth(bs) - (vnoise(x * 0.02, z * 0.02) - 0.5) * 30;
+  let d = Math.sqrt(bd) - lakeHalfWidth(bs) - (vnoise(x * 0.02, z * 0.02) - 0.5) * 30;
+  // the lake reaches up to the cove as a widening inlet under the first stretch of bridge,
+  // so the view from the dais opens straight across the water
+  for (const b of BRIDGE_LINE.samples) {
+    if (b.s < 30 || b.s > 320) continue;
+    const e = Math.hypot(b.x - x, b.z - z) - (22 + (b.s - 30) * 0.22);
+    if (e < d) d = e;
+  }
+  return d;
 }
 // signed distance to the lake shore (negative on the water)
 export function lakeDistance(x, z) {
