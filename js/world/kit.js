@@ -133,7 +133,8 @@ export class Kit {
     return this;
   }
   world(lx, ly, lz) { return new THREE.Vector3(lx, ly, lz).applyMatrix4(this.m); }
-  add(key, g, color = WHITE) {
+  // `grad`: a colour for the foot of the piece, blending up to `color` at its head (rose marble)
+  add(key, g, color = WHITE, grad = null) {
     g = g.index ? g.toNonIndexed() : g;
     const shade = g.attributes.shade;
     for (const k of Object.keys(g.attributes)) if (!['position', 'normal', 'uv'].includes(k)) g.deleteAttribute(k);
@@ -141,7 +142,14 @@ export class Kit {
     if (!g.attributes.normal) g.computeVertexNormals();
     const n = g.attributes.position.count, col = new Float32Array(n * 3);
     tmpC.set(color);
-    for (let i = 0; i < n; i++) { const k = shade ? shade.getX(i) : 1; col[i * 3] = tmpC.r * k; col[i * 3 + 1] = tmpC.g * k; col[i * 3 + 2] = tmpC.b * k; }
+    if (grad) {
+      const lo = new THREE.Color(grad), pos = g.attributes.position;
+      let y0 = Infinity, y1 = -Infinity; for (let i = 0; i < n; i++) { const y = pos.getY(i); if (y < y0) y0 = y; if (y > y1) y1 = y; }
+      for (let i = 0; i < n; i++) {
+        const t = Math.pow(Math.min(1, (pos.getY(i) - y0) / Math.max(1e-6, y1 - y0)), 0.7), k = shade ? shade.getX(i) : 1;
+        col[i * 3] = (lo.r + (tmpC.r - lo.r) * t) * k; col[i * 3 + 1] = (lo.g + (tmpC.g - lo.g) * t) * k; col[i * 3 + 2] = (lo.b + (tmpC.b - lo.b) * t) * k;
+      }
+    } else for (let i = 0; i < n; i++) { const k = shade ? shade.getX(i) : 1; col[i * 3] = tmpC.r * k; col[i * 3 + 1] = tmpC.g * k; col[i * 3 + 2] = tmpC.b * k; }
     g.setAttribute('color', new THREE.Float32BufferAttribute(col, 3));
     g.applyMatrix4(this.m);
     (this.parts[key] ||= []).push(g);
@@ -259,7 +267,7 @@ export function kitMaterials() {
 
 // --- water ----------------------------------------------------------------------------
 // still or flowing water for rivers, pools and falls; uFlow > 0 streams along v
-export function waterMaterial(flow = 0, fall = false) {
+export function waterMaterial(flow = 0, fall = false, pool = false) {
   return new THREE.ShaderMaterial({
     transparent: fall, depthWrite: !fall, side: THREE.DoubleSide,
     uniforms: { uTime: { value: 0 }, uNight: MOOD.night, uFlow: { value: flow } },
@@ -271,15 +279,22 @@ export function waterMaterial(flow = 0, fall = false) {
         float s = sin(vUv.x * 60. + sin(vUv.x * 13.) * 3.) * .5 + .5;
         float st = fract(vUv.y * .08 + uTime * 1.6 + s * .3);
         vec3 c = mix(vec3(.75, .9, 1.), vec3(.5, .78, 1.), uNight) * (.75 + .35 * smoothstep(.4, 1., st));
-        gl_FragColor = vec4(pow(c, vec3(2.2)), .78);
+        ${pool ? 'c = mix(c, vec3(1.), .25 * smoothstep(.85, 1., st));' : ''}
+        gl_FragColor = vec4(pow(c, vec3(2.2)), ${pool ? '.93' : '.78'});
         ` : `
         vec2 q = vW.xz;
         float rip = sin(q.x * .3 + vUv.y * 2. - uTime * uFlow * 3.) * sin(q.y * .27 + uTime * .7) * .5 + .5;
         vec3 v = normalize(vW - cameraPosition);
         float fres = pow(1. - abs(v.y), 2.);
+        ${pool ? `
+        // palace pools (L02-7, sheet 03): clear turquoise over pale marble, bright caustic ripples
+        float rip2 = sin(q.x * .9 - uTime * 1.3 + sin(q.y * .7)) * sin(q.y * .8 + uTime * 1.1 + sin(q.x * .5)) * .5 + .5;
+        vec3 deep = mix(vec3(.22, .6, .84), vec3(.1, .22, .5), uNight);
+        vec3 sky = mix(vec3(.72, .92, 1.), vec3(.35, .4, .7), uNight);
+        vec3 c = mix(deep, sky, .25 + .45 * fres) + vec3(1.) * (smoothstep(.8, 1., rip) * .18 + smoothstep(.86, 1., rip2) * .22);` : `
         vec3 deep = mix(vec3(.16, .2, .42), vec3(.07, .09, .26), uNight);
         vec3 sky = mix(vec3(.62, .45, .66), vec3(.3, .24, .55), uNight);
-        vec3 c = mix(deep, sky, .3 + .5 * fres) + vec3(.8, .7, .95) * smoothstep(.75, 1., rip) * .12;
+        vec3 c = mix(deep, sky, .3 + .5 * fres) + vec3(.8, .7, .95) * smoothstep(.75, 1., rip) * .12;`}
         gl_FragColor = vec4(pow(c, vec3(2.2)), 1.);
         `}
         #include <colorspace_fragment>

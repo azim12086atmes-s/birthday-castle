@@ -96,6 +96,8 @@ export const PALACE_BLOCKS = [
     ['arcade', 30, [[232, 296], [330, 296]]], ['upper', 44, [[232, 284], [330, 284]]], ['return', 36, [[330, 296], [385, 250]]]]),
   ...L1(1, [['landing', 12, [[110, 346], [158, 346]]], ['flank', 22, [[158, 346], [200, 306]]], ['pavilion', 48, [[200, 318], [238, 318]]],
     ['arcade', 32, [[238, 300], [400, 300]]], ['upper', 46, [[238, 288], [400, 288]]], ['return', 38, [[400, 300], [450, 258]]]]),
+  // the arcaded hall wall rising behind the gate gable, under the spire cluster (sheet 03)
+  { kind: 'hall', top: 200, pts: [[-64, 191], [64, 191], [64, 179], [-64, 179]] },
 ];
 export function inPlan(pts, x, z) {
   let inside = false;
