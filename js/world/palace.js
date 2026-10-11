@@ -148,22 +148,57 @@ function courtFloorTex() {
   for (const [x, y] of [[0, 0], [128, 128], [256, 0], [0, 256], [256, 256]]) star8(g, x, y, 22, '#e2b44c');
   return tex(c);
 }
-// A001 great lancet (35 x 198 m): three lancet lights under a rose window, gold tracery
+// A001 great lancet (35 x 69 m drawn), zoomed off sheet 03, A001 and P01-01: three cusped
+// lancet lights of fine cobalt shards under a twelve-petal rose, trefoils in the spandrels, gold
+// leading with lozenges and fleurons up each light, and a rose-violet glow rising in the middle
+// light (the figure of light in the sheet 03 windows). Also dresses the small lancets.
 const lancetTex = () => pair((g, glow) => {
-  const W = 128, Hh = 704;
-  if (!glow) { g.fillStyle = '#e8c870'; g.fillRect(0, 0, W, Hh); }
-  lancetPath(g, 8, 112, 8, Hh); if (!glow) { g.fillStyle = '#fbf4ee'; g.fill(); }
-  g.beginPath(); g.arc(64, 160, 46, 0, Math.PI * 2); glassFill(g, 18, 114, 92, 92, glow);
-  if (!glow) {
-    g.strokeStyle = '#d9b25a'; g.lineWidth = 4; g.stroke();
-    for (let i = 0; i < 12; i++) { const a = (i / 12) * Math.PI * 2; g.beginPath(); g.moveTo(64, 160); g.lineTo(64 + Math.cos(a) * 46, 160 + Math.sin(a) * 46); g.stroke(); }
-    g.beginPath(); g.arc(64, 160, 20, 0, Math.PI * 2); g.stroke(); star8(g, 64, 160, 12, '#f0c860');
+  const W = 160, Hh = 316, Wm = 35, Hm = 69, X = (m) => (m + Wm / 2) * W / Wm, Y = (m) => Hh - m * Hh / Hm, k = W / Wm;
+  const R3 = rng(41);
+  const nx = 18, ny = 36, pts = [];
+  for (let j = 0; j <= ny; j++) for (let i = 0; i <= nx; i++) pts.push([i * W / nx + (i % nx ? (R3() - 0.5) * 6 : 0), j * Hh / ny + (j % ny ? (R3() - 0.5) * 6 : 0)]);
+  const blues = ['#16207a', '#1c2a8e', '#2236a4', '#2a44b8', '#3450c4', '#3a3aa8', '#2a58c8'];
+  for (let j = 0; j < ny; j++) for (let i = 0; i < nx; i++) {
+    const A = pts[j * (nx + 1) + i], B = pts[j * (nx + 1) + i + 1], C = pts[(j + 1) * (nx + 1) + i], D = pts[(j + 1) * (nx + 1) + i + 1];
+    for (const tri of (R3() < 0.5 ? [[A, B, D], [A, D, C]] : [[A, B, C], [B, D, C]])) {
+      g.beginPath(); g.moveTo(...tri[0]); g.lineTo(...tri[1]); g.lineTo(...tri[2]); g.closePath();
+      g.fillStyle = glow ? '#141c58' : blues[Math.floor(R3() * blues.length)]; g.fill();
+      if (!glow) { g.strokeStyle = 'rgba(10,14,50,0.5)'; g.lineWidth = 0.7; g.stroke(); }
+    }
   }
-  for (const x of [16, 50, 84]) {
-    lancetPath(g, x, 28, 230, 690); glassFill(g, x, 230, 28, 460, glow);
-    if (!glow) { g.strokeStyle = '#d9b25a'; g.lineWidth = 3; g.stroke(); for (let y = 300; y < 690; y += 70) { g.beginPath(); g.arc(x + 14, y, 7, 0, Math.PI * 2); g.stroke(); } }
+  g.save(); g.globalCompositeOperation = 'lighter';                       // the glow rising in the middle light
+  const rg = g.createRadialGradient(X(0), Y(16), 0, X(0), Y(16), 26 * k);
+  rg.addColorStop(0, glow ? 'rgba(255,200,240,0.9)' : 'rgba(255,190,236,0.55)'); rg.addColorStop(0.5, 'rgba(170,120,240,0.3)'); rg.addColorStop(1, 'rgba(80,60,200,0)');
+  g.fillStyle = rg; g.fillRect(0, 0, W, Hh); g.restore();
+  const gold = glow ? '#806020' : '#e2b44c', stone = glow ? '#302838' : '#f6ece6';
+  g.lineCap = 'round'; g.lineJoin = 'round';
+  // stone mullions between the lights, up to the shoulders
+  g.fillStyle = stone; for (const c of [-5.6, 5.6]) g.fillRect(X(c) - 0.8 * k, Y(37), 1.6 * k, Y(0) - Y(37));
+  // the three cusped lights: gold outline, stem with lozenges and fleurons
+  for (const c of [-11.2, 0, 11.2]) {
+    const lw = 9.6, x0 = X(c - lw / 2), x1 = X(c + lw / 2), ys = Y(33), yt = Y(41);
+    g.strokeStyle = gold; g.lineWidth = 3;
+    g.beginPath(); g.moveTo(x0, Y(0)); g.lineTo(x0, ys); g.quadraticCurveTo(x0, yt + 8, X(c), yt); g.quadraticCurveTo(x1, yt + 8, x1, ys); g.lineTo(x1, Y(0)); g.stroke();
+    g.lineWidth = 2; for (const sd of [-1, 1]) { g.beginPath(); g.arc(X(c + sd * 2.2), Y(35.5), 2 * k, 0, Math.PI * 2); g.stroke(); }   // cusps
+    g.beginPath(); g.moveTo(X(c), Y(1)); g.lineTo(X(c), Y(32)); g.stroke();
+    for (let y = 5; y < 31; y += 6.5) {
+      g.lineWidth = 2; g.beginPath(); g.moveTo(X(c), Y(y + 2.4)); g.lineTo(X(c + 2.6), Y(y)); g.lineTo(X(c), Y(y - 2.4)); g.lineTo(X(c - 2.6), Y(y)); g.closePath(); g.stroke();
+      g.fillStyle = glow ? '#ffd890' : (c ? '#ff9ad8' : '#ffd36a'); g.beginPath(); g.arc(X(c), Y(y), 0.9 * k, 0, Math.PI * 2); g.fill();
+      for (const sd of [-1, 1]) { g.beginPath(); g.moveTo(X(c), Y(y + 3.4)); g.quadraticCurveTo(X(c + sd * 3.6), Y(y + 3.6), X(c + sd * 3.2), Y(y + 5.6)); g.stroke(); }
+    }
   }
-}, 128, 704);
+  // the twelve-petal rose in the head, trefoils either side
+  const cx = X(0), cy = Y(52), rr = 10.4 * k;
+  g.fillStyle = stone; g.beginPath(); g.arc(cx, cy, rr + 1.2 * k, 0, Math.PI * 2); g.fill();
+  for (let i = 0; i < 12; i++) {
+    g.save(); g.translate(cx, cy); g.rotate((i / 12) * Math.PI * 2);
+    g.beginPath(); g.moveTo(0, -rr * 0.24); g.quadraticCurveTo(-rr * 0.3, -rr * 0.6, 0, -rr * 0.96); g.quadraticCurveTo(rr * 0.3, -rr * 0.6, 0, -rr * 0.24);
+    g.fillStyle = glow ? '#6050c0' : (i % 2 ? '#5a6cff' : '#7a5cf0'); g.fill(); g.strokeStyle = gold; g.lineWidth = 2.2; g.stroke(); g.restore();
+  }
+  g.strokeStyle = gold; g.lineWidth = 3; g.beginPath(); g.arc(cx, cy, rr, 0, Math.PI * 2); g.stroke();
+  star8(g, cx, cy, rr * 0.22, glow ? '#ffe9a0' : '#f0c860');
+  for (const sd of [-1, 1]) { const tx = X(sd * 12.2), ty = Y(44.5); g.lineWidth = 2; for (let q = 0; q < 3; q++) { const a = -Math.PI / 2 + (q - 1) * 2.1; g.beginPath(); g.arc(tx + Math.cos(a) * 1.4 * k, ty + Math.sin(a) * 1.4 * k, 1.3 * k, 0, Math.PI * 2); g.stroke(); } }
+}, 160, 316);
 // The Rose Gate door, zoomed off sheet 03 and sheet 02: tiny fractured shards of deep cobalt
 // glass with gold leading and constellations picked out in light; a slender gold arch set
 // inside the opening with narrow side lights and a crossbar at the springing; a gold tree up
@@ -787,17 +822,35 @@ export function createPalace(scene, preset, { makePortal } = {}) {
     kit.add('ivory', archFrameGeometry(w + 4.6, h + 3.4, 1.3, 1.2).translate(x, y - 0.4, z + 0.4), ROSE);  // second order
     kit.add('gold', new THREE.TubeGeometry(pointedArchPath(w + 7.4, h + 5), 40, 0.55, 5, false).translate(x, y - 0.6, z + 1.4), GOLD);   // hood mould
     kit.add('gold', new THREE.TubeGeometry(pointedArchPath(w - 0.3, h - 0.2), 40, 0.32, 4, false).translate(x, y, z - 0.7), GOLD);      // gold trim
-    const hs = h - w * 0.866;
-    kit.add('ivory', box(1.2, hs + w * 0.3, 0.8, x, y, z - 0.9), PEARL);                                   // mullion
-    for (let k = 1; k <= 6; k++) kit.add('gold', box(w - 1, 0.35, 0.5, x, y + (k * hs) / 7, z - 0.9), GOLD);  // transoms
-    kit.add('gold', new THREE.TorusGeometry(w * 0.2, 0.35, 4, 20).translate(x, y + hs + w * 0.36, z - 0.8), GOLD);   // the rose in the head
+    const hs = h - w * 0.866, kq = w / 35;
+    for (const sd of [-1, 1]) kit.add('ivory', box(1.6 * kq, 37 * kq, 1.2, x + sd * 5.6 * kq, y, z - 0.8), PEARL);   // stone mullions between the three lights
+    kit.add('ivory', new THREE.TorusGeometry(11.4 * kq, 0.9 * kq, 5, 28).translate(x, y + 52 * (h / 69), z - 0.7), PEARL);   // the rose's stone ring
+    kit.add('gold', new THREE.TorusGeometry(10.4 * kq, 0.35, 4, 28).translate(x, y + 52 * (h / 69), z - 0.3), GOLD);
+    // the crocketed gable over the window (sheet 03, A001): carved tympanum, gold rakes, crockets, finial
+    {
+      const gw = w / 2 + 6, gb = y + hs + 2, ga = y + h + 15;
+      const b0 = gb - y, arc = pointedArchShape(w + 8.4, h + 5.6).getPoints(20).map((q) => new THREE.Vector2(q.x, q.y - 0.8)).filter((q) => q.y > b0).reverse();
+      const sh = new THREE.Shape(); sh.moveTo(-gw, b0); sh.lineTo(arc[0].x, b0);        // the gable, its foot cut round the arch head
+      for (const q of arc) sh.lineTo(q.x, q.y);
+      sh.lineTo(arc[arc.length - 1].x, b0); sh.lineTo(gw, b0); sh.lineTo(0, ga - y); sh.lineTo(-gw, b0);
+      const slab = new THREE.ExtrudeGeometry(sh, { depth: 1.4, bevelEnabled: false, curveSegments: 10 });
+      const p = slab.attributes.position, uv = slab.attributes.uv;
+      for (let i = 0; i < p.count; i++) uv.setXY(i, (p.getX(i) + gw) / (gw * 2), (p.getY(i) - (gb - y)) / (ga - gb));
+      kit.add('gable', slab.translate(x, y, z + 0.6), '#ffffff');
+      const L = Math.hypot(gw, ga - gb), ang = Math.atan2(ga - gb, gw);
+      for (const sd of [-1, 1]) {
+        kit.add('gold', new THREE.BoxGeometry(L + 2, 1.5, 1.6).rotateZ(-sd * ang).translate(x + sd * gw / 2, (gb + ga) / 2 + 0.4, z + 1.6), GOLD);
+        for (let t = 0.1; t < 0.95; t += 0.14) spirelets.push([x + sd * gw * (1 - t), gb + (ga - gb) * t + 0.8, z + 1.6, 0.3, 0]);
+      }
+      kit.add('gold', needle(1, 7, 6).translate(x, ga, z + 1.2), GOLD);
+      kit.add('gold', finialGeo(1.8).translate(x, ga + 6.4, z + 1.2), GOLD);
+    }
     for (const sd of [-1, 1]) {
       kit.add('ivory', cyl(0.8, 0.8, hs, 8, x + sd * (w / 2 + 2.6), y, z + 0.8), PEARL);                  // colonnette
       kit.add('gold', box(2.4, 1, 2.4, x + sd * (w / 2 + 2.6), y + hs, z + 0.8), GOLD);                   // capital
       kit.add('ivory', box(2.4, 1.4, 2.4, x + sd * (w / 2 + 2.6), y - 1.4, z + 0.8), PEARL);              // base
     }
     kit.add('ivory', box(w + 8, 1.6, 3.4, x, y - 2.4, z + 0.8), PEARL);                                   // sill
-    spirelets.push([x, y + h + 5.5, z + 1.4, 0.9, 0]);
   };
   for (const x of [-158, -92, 92, 158]) {
     greatWindow(x, 58, FRONT + 1.6, 35, 69);
