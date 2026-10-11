@@ -70,11 +70,56 @@ export const PALACE_TIERS = [
   [-260, 330, -260, 110, 197],                               // T3 the dome terrace
   [-130, 260, -200, 40, 228],                                // T4 the crown garden
 ];
+// Plans in drawn metres, as [x, z] outlines. The owner's notes on sheet 03 (11 Oct): no level is
+// a plain box. The lancet storey (T2) and the dome terrace (T3) round in at their front corners
+// as curved wings of uneven length, following the walls above; the ground storey's front steps
+// in depth, from the stair-foot landings (furthest out) through slanted stair flanks, projecting
+// pavilions and set-back two-storey arcades, to the corners (deepest).
+function roundedFront(x0, x1, z0, z1, [lrx, lrz], [rrx, rrz], n = 12) {
+  const pts = [[x0, z0], [x1, z0], [x1, z1 - rrz]];
+  for (let i = 1; i <= n; i++) { const a = (i / n) * Math.PI / 2; pts.push([x1 - rrx + Math.cos(a) * rrx, z1 - rrz + Math.sin(a) * rrz]); }
+  pts.push([x0 + lrx, z1]);
+  for (let i = 1; i <= n; i++) { const a = Math.PI / 2 + (i / n) * Math.PI / 2; pts.push([x0 + lrx + Math.cos(a) * lrx, z1 - lrz + Math.sin(a) * lrz]); }
+  return pts;
+}
+export const PALACE_PLANS = [
+  null,
+  roundedFront(-330, 400, -300, 191, [130, 81], [130, 71]),
+  roundedFront(-260, 330, -260, 110, [140, 80], [130, 60]),
+  null,
+];
+// the stepped ground-storey front, each block running back to the podium face (z 235):
+// { pts, top, kind } with kind landing | flank | pavilion | arcade | upper | return
+const L1 = (sd, spec) => spec.map(([kind, top, front]) => ({ kind, top, pts: [...front.map(([x, z]) => [sd * x, z]), [sd * front[front.length - 1][0], 235], [sd * front[0][0], 235]] }));
+export const PALACE_BLOCKS = [
+  ...L1(-1, [['landing', 14, [[110, 350], [150, 350]]], ['flank', 24, [[150, 350], [196, 300]]], ['pavilion', 46, [[196, 312], [232, 312]]],
+    ['arcade', 30, [[232, 296], [330, 296]]], ['upper', 44, [[232, 284], [330, 284]]], ['return', 36, [[330, 296], [385, 250]]]]),
+  ...L1(1, [['landing', 12, [[110, 346], [158, 346]]], ['flank', 22, [[158, 346], [200, 306]]], ['pavilion', 48, [[200, 318], [238, 318]]],
+    ['arcade', 32, [[238, 300], [400, 300]]], ['upper', 46, [[238, 288], [400, 288]]], ['return', 38, [[400, 300], [450, 258]]]]),
+];
+export function inPlan(pts, x, z) {
+  let inside = false;
+  for (let i = 0, j = pts.length - 1; i < pts.length; j = i++) {
+    const [xi, zi] = pts[i], [xj, zj] = pts[j];
+    if ((zi > z) !== (zj > z) && x < ((xj - xi) * (z - zi)) / (zj - zi) + xi) inside = !inside;
+  }
+  return inside;
+}
+export function tierContains(k, x, z) {
+  const [x0, x1, z0, z1] = PALACE_TIERS[k];
+  if (x < x0 || x > x1 || z < z0 || z > z1) return false;
+  return !PALACE_PLANS[k] || inPlan(PALACE_PLANS[k], x, z);
+}
+// the roof height (drawn metres) at a drawn point, or 0 off the palace
+export function palaceTop(x, z) {
+  let top = 0;
+  PALACE_TIERS.forEach((t, k) => { if (t[4] > top && tierContains(k, x, z)) top = t[4]; });
+  for (const b of PALACE_BLOCKS) if (b.top > top && inPlan(b.pts, x, z)) top = b.top;
+  return top;
+}
 export function palaceRoofY(x, z) {
-  const lx = x / S, lz = z / S;
-  let top = null;
-  for (const [x0, x1, z0, z1, h] of PALACE_TIERS) if (lx >= x0 && lx <= x1 && lz >= z0 && lz <= z1 && (top === null || h > top)) top = h;
-  return top === null ? null : PAL.y + top * S;
+  const t = palaceTop(x / S, z / S);
+  return t ? PAL.y + t * S : null;
 }
 // The Rose Gate (A003): 54 x 93 m drawn, its sill on the podium roof, its face at z 205.
 export const GATE = { w: 54 * S, h: 93 * S, sill: 52 * S, z: 205 * S };
