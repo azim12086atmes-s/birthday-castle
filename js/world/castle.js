@@ -550,6 +550,7 @@ export function createCastle(scene, preset = {}) {
     rosePosition: new THREE.Vector3(GX, SILL + GATE_H * 0.6, GZ),
     spireTop: new THREE.Vector3(GX + 66, coneTip, ZC + 10),
     tips, crowns,
+    dome: { x: GX - 14, z: ZC, r: 48 }, cone: { x: GX + 66, z: ZC + 10, r: 28 },
     setGate(open, instant = false) { gateTarget = open ? 1 : 0; if (instant) gateOpen = gateTarget; },
     update(t, dt) {
       haloMat.uniforms.uTime.value = t;

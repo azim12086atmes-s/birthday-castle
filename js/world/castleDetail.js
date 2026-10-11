@@ -90,7 +90,7 @@ export function createCastleDetail(scene, preset, castle) {
         K.add('gold', new THREE.SphereGeometry(0.45, 8, 6).translate(GX + s * x, top + 17.3, GZ + 1.1));
       }
       // a gallery balcony under the windows, with balusters
-      const len = x1 - x0, cx = GX + s * (x0 + len / 2), by = Y + CROWN.winY - 6;
+      const len = x1 - x0, cx = GX + s * (x0 + len / 2), by = Y + 16;   // the Grand Balcony, just under the great windows
       K.add('plain', box(len, 1, 4, cx, by, GZ + 2), MARBLE);
       K.add('plain', box(len, 0.4, 0.4, cx, by + 2.2, GZ + 3.8), MARBLE);
       for (let x = x0 + 1; x < x1; x += 1.4) K.add('plain', cyl(0.14, 0.18, 1.2, 5, GX + s * x, by + 1, GZ + 3.8), MARBLE);
