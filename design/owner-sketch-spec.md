@@ -81,6 +81,8 @@ Sheet 03 (Towering Garden Palace, revision 03) is the latest, so **its sizes win
 - A rose-garland parapet runs along each terrace.
 - Arch panels sit between the bays.
 
+**Heights:** the owner chose the labelled heights. The B01 build sheet multiplies the drawn heights by 2.75 (`H_SCALE`).
+
 **Gate and windows *(default)*:** scale the v4 rule up with the palace.
 
 | Element | Size |

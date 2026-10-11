@@ -11,7 +11,7 @@
 
 **Where:** on its own island in Lantern Lake, west of the golden causeway at about (−630, 1320), facing south. It is joined to the causeway by a lake bridge with A023 rails.
 
-**Scale:** the sheet gives no sizes, so these are measured from the drawing with the outer minarets set 200 m apart. That keeps it clearly smaller than the Princess Palace. Every height can scale with the same `H_SCALE` as B01.
+**Scale:** the sheet gives no sizes, so these are measured from the drawing with the outer minarets set 200 m apart. That keeps it clearly smaller than the Princess Palace. The labelled-heights choice applies to the Princess Palace only. B02 stays as drawn.
 
 ## 1. Shape (crops 01 to 03)
 

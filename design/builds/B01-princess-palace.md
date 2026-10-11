@@ -11,16 +11,16 @@
 
 Magnified crops of each part are in [B01-crops/](B01-crops/), numbered 01 to 10. Build every part by looking at its crop, not from this text alone.
 
-## 0. One scale question (the owner is deciding)
+## 0. Scale: the owner chose the labelled heights (2026-10-11)
 
 Measured on sheet 03, the drawing is 800 m wide at about 1.16 m per pixel. At that scale, the drawn heights come out about 2.7× smaller than the labelled heights. For example, the tallest spire is drawn at about 400 m but labelled 1100 m, and the cone pavilion is drawn at about 250 m but labelled 700 m.
 
 | Option | Width | Tallest spire | Effect |
 |---|---|---|---|
-| **A: as drawn** *(working default)* | 800 m | about 400 m | Looks exactly like the sketch. |
-| **B: labelled heights** | 800 m | 1100 m | Every tower is about 2.7× taller and thinner than drawn. |
+| A: as drawn | 800 m | about 400 m | Looks exactly like the sketch. |
+| **B: labelled heights** *(chosen)* | 800 m | 1100 m | Every tower is about 2.7× taller and thinner than drawn. |
 
-Every height below is given as **drawn**. For B, multiply the heights by 2.75 (`H_SCALE`). The plan sizes are the same in both.
+**The owner chose B.** Every height below is given as drawn, so **multiply all heights by `H_SCALE` = 2.75**. That gives spires of 840, 960 and 1100 m, a cone pavilion of 700 m, a great dome finial of about 960 m, and a front wall of about 425 m. Plan sizes and widths stay as listed, so the towers come out taller and thinner than drawn.
 
 ## 1. Footprint and levels (crops 08 and 09)
 
