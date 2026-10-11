@@ -14,6 +14,7 @@ The game is a magical multiplayer web game for a birthday. The celebration unloc
 
 | File | What it is |
 |---|---|
+| [owner-sketch-spec.md](owner-sketch-spec.md) | **The current plan.** The owner's own 16 concept sheets ([owner-sketches/](owner-sketches/)) merged into one buildable spec: the 7.5 km Starlight Coast, the 800 m Princess Palace, the roof gardens, artifacts, trees, water and gardens. It wins over world-layout.md where they differ. |
 | [requirements.md](requirements.md) | **Every request the owner made, in one table**, with where it is answered and its status. Start here. |
 | [image-index.md](image-index.md) | One row per reference picture (U01 to U403), with categories and a verdict. The pictures themselves are listed in section 5. |
 | [image-analysis.md](image-analysis.md), [style-guide.md](style-guide.md), [reference-table.md](reference-table.md) | The first analysis of every picture: style, lighting, shaders and laptop cost. |
@@ -37,7 +38,8 @@ The game is a magical multiplayer web game for a birthday. The celebration unloc
 | Castle v2 | Oct 10 | Taller and asymmetric, with joined gothic towers, domes and a 50 m gate. |
 | Castle v3 | Oct 11 | 100 m opening gate in fractured blue, yellow and purple glass. 200 m front wall. Dome of radius 30 m. Three levels from the stair foot with white ring walkways and sitouts. Cascade stair. |
 | Castle v4 | Oct 11 | Taller and wider: 308 m front wall, four 75 m great windows, 80 m tower windows, cone tip at 514 m. Built in the game. |
-| Castle front v5 | Oct 11 (in progress) | The plain front wall becomes **clusters of towers that bulge out from the walls**, after U403: corbelled "arching-out" towers, bartizans, varied crowns, and the detailed Rose Gate. |
+| Castle front v5 study | Oct 11 | The plain front wall becomes **clusters of towers that bulge out from the walls**, after U403: corbelled "arching-out" towers, bartizans, varied crowns, and the detailed Rose Gate. |
+| **Owner sketches v5** | Oct 11 | The owner drew 16 concept sheets. The world becomes the 7.5 km Starlight Coast with 25 districts and 4 sky isles. The Princess Palace becomes 800 m wide with an 1100 m spire and roof gardens. See [owner-sketch-spec.md](owner-sketch-spec.md). |
 
 ## 4. Work in progress: the design sheets
 
