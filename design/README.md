@@ -58,7 +58,7 @@ The owner asked for every part to be designed on the drawing sheet, in rounds, c
 
 ## 5. The reference pictures
 
-The 403 reference pictures the owner supplied (U01 to U403) are listed and described in [image-index.md](image-index.md) and [detail-catalogue.md](detail-catalogue.md). The image files themselves (623 MB) are in the project's shared files at `art-references/images/`. They are kept out of this public repository for now, because most of them are other artists' copyrighted work and the repository and its website are public.
+All the reference pictures the owner supplied are in [images/](images/): U01 to U403, plus the C01 to C13 Moorish set. Each one is described in [image-index.md](image-index.md) and [detail-catalogue.md](detail-catalogue.md). Most are other artists' work, kept here as design references at the owner's choice.
 
 ## 6. Standing rules
 
