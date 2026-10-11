@@ -38,10 +38,10 @@ export function createCelebration(scene, effects, sky, castle) {
   const name = CONFIG.honoreeName;
   const bannerTex = textTexture(`Happy Birthday, ${name}!`, { font: '700 96px "Cinzel Decorative", Georgia, serif', color: '#fff3c8', glow: '#ff9bd6', pad: 40 });
   const banner = new THREE.Sprite(new THREE.SpriteMaterial({ map: bannerTex, transparent: true, depthWrite: false, fog: false }));
-  banner.scale.set(bannerTex.userData.aspect * 60, 60, 1);
-  banner.position.set(CASTLE.x, CASTLE.y + 330, CASTLE.z + 60);          // across the gate gable
+  banner.scale.set(bannerTex.userData.aspect * 110, 110, 1);
+  banner.position.set(CASTLE.x, CASTLE.y + 300, CASTLE.z + 40);          // across the gate gable
   const cake = makeCake();
-  cake.position.set(PLAZA.x + 110, PLAZA.y, PLAZA.z);
+  cake.position.set(PLAZA.x + 160, PLAZA.y, PLAZA.z + 40);
   const group = new THREE.Group();
   group.add(banner, cake);
   group.visible = false;
@@ -58,9 +58,9 @@ export function createCelebration(scene, effects, sky, castle) {
       effects.lanterns.active = on;
       sky.setCelebration(on);
     },
-    burst(n = 1, center = new THREE.Vector3(CASTLE.x, CASTLE.y + 650, CASTLE.z - 300)) {
+    burst(n = 1, center = new THREE.Vector3(CASTLE.x + 80, CASTLE.y + 1050, CASTLE.z - 700)) {
       for (let i = 0; i < n; i++) {
-        effects.fireworks.launch(new THREE.Vector3(center.x + (Math.random() - 0.5) * 500, center.y + Math.random() * 200, center.z + (Math.random() - 0.5) * 300));
+        effects.fireworks.launch(new THREE.Vector3(center.x + (Math.random() - 0.5) * 1300, center.y + Math.random() * 400, center.z + (Math.random() - 0.5) * 800));
       }
     },
     update(t, dt) {
@@ -83,11 +83,11 @@ export function playWelcome({ camera, castle, celebration, controller, target, u
   const C = (x, y, z) => new THREE.Vector3(CASTLE.x + x, CASTLE.y + y, CASTLE.z + z);
   const keys = [
     // over the lake, round the castle's flank, past the gate, then down to her
-    [C(-1500, 600, 2200), C(0, 300, -340)],
-    [C(900, 420, 1200), C(0, 350, -340)],
-    [C(480, 220, 300), C(0, 250, -200)],
-    [C(-200, 40, 240), C(0, 100, 0)],
-    [C(0, -60, 160), C(0, 60, 0)],
+    [C(-3500, 1300, 4500), C(0, 500, -800)],
+    [C(2000, 800, 2400), C(0, 600, -700)],
+    [C(900, 300, 700), C(0, 350, -300)],
+    [C(-300, 40, 500), C(0, 120, 0)],
+    [C(0, -100, 380), C(0, 90, 0)],
     [tgt.clone().add(new THREE.Vector3(0, 3, -7)), tgt.clone().add(new THREE.Vector3(0, 1.6, 0))],
   ];
   const posCurve = new THREE.CatmullRomCurve3(keys.map((k) => k[0]), false, 'centripetal');

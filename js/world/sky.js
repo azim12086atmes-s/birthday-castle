@@ -271,9 +271,9 @@ function stylizedClouds(preset) {
   };
   for (let c = 0; c < count; c++) {
     // a cumulus heap: a broad row of puffs along a flat belly, then a smaller crown stacked on top
-        const a = (c / count) * Math.PI * 2 + r() * 0.3, d = 4200 + r() * 2600;
-    const base = 1250 + r() * 600;
-    const cx = Math.cos(a) * d, cz = Math.sin(a) * d, W = 460 + r() * 600, ang = a + Math.PI / 2 + (r() - 0.5) * 0.8;
+        const a = (c / count) * Math.PI * 2 + r() * 0.3, d = 6500 + r() * 4500;
+    const base = 1700 + r() * 700;
+    const cx = Math.cos(a) * d, cz = Math.sin(a) * d, W = 800 + r() * 900, ang = a + Math.PI / 2 + (r() - 0.5) * 0.8;
     const rows = [[5 + Math.floor(r() * 3), 1, 0], [3 + Math.floor(r() * 2), 0.62, 0.55], [1 + Math.floor(r() * 2), 0.4, 0.95]];
     rows.forEach(([n, sc, lift], ri) => {
       for (let i = 0; i < n; i++) {

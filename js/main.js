@@ -39,8 +39,8 @@ if (quality.shadows) {
 const governor = new FrameGovernor(renderer, quality);
 
 const scene = new THREE.Scene();
-scene.fog = new THREE.Fog(FOG_COLOR, 600, 9000);
-const camera = new THREE.PerspectiveCamera(60, innerWidth / innerHeight, 0.3, 14000);
+scene.fog = new THREE.Fog(FOG_COLOR, 900, 16000);
+const camera = new THREE.PerspectiveCamera(60, innerWidth / innerHeight, 0.3, 32000);
 camera.position.set(SPAWN.x, SPAWN_Y + 40, SPAWN.z + 60);
 
 const hemi = new THREE.HemisphereLight('#9fb0ff', '#3a2a6a', 1.6);
@@ -398,10 +398,13 @@ function frame() {
     // attract mode: a slow orbit around the castle behind the entrance screen
     const a = t * 0.05;
     const fixed = params.get('cam')?.split(',').map(Number);
-    if (fixed?.length === 6) { camera.position.set(fixed[0], fixed[1], fixed[2]); camera.lookAt(fixed[3], fixed[4], fixed[5]); }
+    if (fixed?.length >= 6) {
+      camera.position.set(fixed[0], fixed[1], fixed[2]); camera.lookAt(fixed[3], fixed[4], fixed[5]);
+      if (fixed[6] && camera.fov !== fixed[6]) { camera.fov = fixed[6]; camera.updateProjectionMatrix(); }   // ?cam=...,fov for elevation shots
+    }
     else {
-      camera.position.set(Math.sin(a) * 2100, 520 + Math.sin(t * 0.1) * 60, 600 + Math.cos(a) * 2100);
-      camera.lookAt(0, 380, 0);
+      camera.position.set(Math.sin(a) * 5200, 1300 + Math.sin(t * 0.1) * 150, 1400 + Math.cos(a) * 5200);
+      camera.lookAt(80, 650, 0);
     }
   }
 

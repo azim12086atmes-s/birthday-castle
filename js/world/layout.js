@@ -5,46 +5,29 @@
 // Pavilions (B20, where everyone arrives) north across the lake to the gate.
 // Metres; north is -z. This module answers the ground and collision queries.
 
-// --- the palace and its approach --------------------------------------------------
-// Palace heights are the drawn heights of build sheet B01 times H_SCALE: the owner
-// chose the labelled heights (spires 840, 960 and 1100 m), so H_SCALE is 2.75.
-export const H_SCALE = 2.75;
-export const PAL = { x: 0, z: 0, y: 40, hw: 400, hd: 340 };           // 800 x 680 m plan, front at z = +340
-// The Rose Gate (A003) opens 75 m wide in the main front above the arcaded podium;
-// the cascade stair climbs to its landing up twin flights beside a water stair.
-export const GATE = { w: 75, h: 100 * H_SCALE, sill: 45 * H_SCALE };
-export const CASTLE = { x: 0, z: PAL.hd, y: PAL.y + GATE.sill, base: PAL.y };   // z: gate plane, y: gate sill
-export const LANDING = { hw: 84, z0: PAL.hd, z1: 382, y: PAL.y + GATE.sill };
-export const CASCADE = { z0: LANDING.z1, z1: 536, xs: [-56, 56], hw: 16 };
-// The roof is all gardens, stepping up to the north (sheet 03): [z0, z1, height above the base]
-export const ROOF = [[180, PAL.hd, 155 * H_SCALE], [20, 180, 170 * H_SCALE], [-160, 20, 185 * H_SCALE], [-PAL.hd, -160, 200 * H_SCALE]];
-export function roofY(z) { for (const [z0, z1, y] of ROOF) if (z >= z0 && z <= z1) return PAL.y + y; return null; }
-// G04 terrace gardens from the gate down to the lake (sheet 15): upper, middle, lower
-export const TERRACES = [
-  { name: 'upper', y: PAL.y, z0: PAL.hd, z1: 560, hw: 470 },
+// --- world scale -------------------------------------------------------------------
+// The owner's rule (Oct 11 18:42): height is the parameter and everything scales with
+// it. The sketches are drawn at x1; the palace takes its labelled heights, which are
+// 2.75 times its drawn proportions, so every drawn size and position is multiplied by S.
+// Human-scale things (paths, rails, lamps, benches, trees and plants) do not scale.
+export const S = 2.75;
+export const H_SCALE = S;
+const WS = S;
+
+// --- the drawn (x1) plan: sheet 04 and build sheet B01 ----------------------------------
+const PAL1 = { y: 40, hw: 400, hd: 340 };
+const TERRACES1 = [
+  { name: 'upper', y: 40, z0: 340, z1: 560, hw: 470 },
   { name: 'middle', y: 24, z0: 560, z1: 720, hw: 520 },
   { name: 'lower', y: 8, z0: 720, z1: 880, hw: 560 },
 ];
-// flights of the grand stair between the terraces: [z top, z bottom, y top, y bottom, half width]
-export const STAIRS = [
+const STAIRS1 = [
   [560, 592, 40, 24, 30], [720, 752, 24, 8, 30],                     // centre, either side of the water stair
   ...[-1, 1].flatMap((s) => [[560, 592, 40, 24, 12, s * 330], [720, 752, 24, 8, 12, s * 380]]),
 ];
-export const CAUSEWAY = { x: 0, z0: 880, z1: 2262, hw: 15, y: 6 };
-export const B20 = { x: 0, z: 2335, r: 72, y: 5 };                      // Bridge Pavilions plaza: the spawn
-export const SPAWN = { x: 0, z: 2350 };
-export const PLAZA = { x: 0, z: 548, y: PAL.y, r: 14 };                // the cascade's lotus basin at the stair foot
-export const LAKE = { x: -150, z: 1500, rx: 1650, rz: 620, y: 0 };
-export const SEA_Y = 0;
-// arched bridges from the causeway to the two lake islands
-export const BRANCHES = [
-  { to: 'B02', pts: [[-CAUSEWAY.hw, 1320], [-480, 1320]], hw: 6, y: 6, hump: 6 },
-  { to: 'B03', pts: [[CAUSEWAY.hw, 1410], [628, 1410]], hw: 6, y: 6, hump: 6 },
-];
-
-// --- the districts (sheet 04 table), with the ground each one stands on -----------------
-// pad: flattened ground { r, y, e (blend width) }
-export const SITES = {
+const LAKE1 = { x: -150, z: 1500, rx: 1650, rz: 620 };
+const B20_1 = { x: 0, z: 2335, r: 72, y: 5 };
+const SITES1 = {
   B02: { name: 'Moon Water Palace', x: -630, z: 1320, pad: { r: 150, y: 5, e: 30 } },
   B03: { name: 'Star Chapel', x: 750, z: 1410, pad: { r: 140, y: 5, e: 30 } },
   B04: { name: 'Rose Keep', x: -960, z: -540, pad: { r: 70, y: 95, e: 150 } },
@@ -63,34 +46,82 @@ export const SITES = {
   B17: { name: 'Glowwood Ruin', x: -2040, z: -300, pad: { r: 110, y: 38, e: 160 } },
   B18: { name: 'Mother Tree', x: -1320, z: 1800, pad: { r: 150, y: 5, e: 60 } },
   B19: { name: 'Lantern Cove', x: -1650, z: 2180, pad: { r: 120, y: 4, e: 80 } },
-  B20: { name: 'Bridge Pavilions', x: B20.x, z: B20.z, pad: { r: 110, y: B20.y, e: 120 } },
+  B20: { name: 'Bridge Pavilions', x: B20_1.x, z: B20_1.z, pad: { r: 110, y: B20_1.y, e: 120 } },
   B21: { name: 'Tidal Observatory', x: -2580, z: 2760, pad: { r: 100, y: 26, e: 140 } },
   B22: { name: 'Lighthouse', x: -1920, z: 3180, pad: { r: 70, y: 10, e: 50 } },
   B23: { name: 'Sea Pavilion', x: 1620, z: 3480, pad: { r: 110, y: 4, e: 100 } },
   B24: { name: 'Reef Shrine', x: 2940, z: 3120, pad: { r: 60, y: 2.5, e: 40 } },
   B25: { name: 'Crystal Conservatory', x: -420, z: -540, pad: { r: 80, y: 40, e: 40 } },
 };
-const EXTRA_PADS = [
+const EXTRA_PADS1 = [
   { x: -2650, z: 1050, r: 70, y: 4, e: 25 }, { x: -2330, z: 1380, r: 60, y: 4, e: 25 },   // Lagoon City islets
 ];
 
+// --- the palace and its approach (world metres = drawn x S) -----------------------------
+// B01 is measured off sheet 03 (south elevation and roof plan) in drawn metres, with the
+// Rose Gate on x = 0 and the front of the arcaded podium at z = +340. The palace is not
+// symmetric about the gate: the great dome stands west, the spire cluster east, and the
+// east wing runs 65 m further out than the west one, as drawn.
+export const PAL = { x: 0, z: 0, y: PAL1.y * S, hw: 450 * S, hd: PAL1.hd * S, x0: -385 * S, x1: 450 * S, z0: -338 * S };
+// The stepped garden tiers in drawn metres: [x0, x1, z0, z1, top]. Each roof is a walkable garden.
+export const PALACE_TIERS = [
+  [-385, 450, -338, 235, 52],                                // T1 the arcaded rose podium (and the gate landing)
+  [-385, -110, 235, 340, 52], [110, 450, 235, 340, 52],      // its front wings either side of the cascade court
+  [-330, 400, -300, 191, 128],                               // T2 the great-lancet storey
+  [-260, 330, -260, 110, 197],                               // T3 the dome terrace
+  [-130, 260, -200, 40, 228],                                // T4 the crown garden
+];
+export function palaceRoofY(x, z) {
+  const lx = x / S, lz = z / S;
+  let top = null;
+  for (const [x0, x1, z0, z1, h] of PALACE_TIERS) if (lx >= x0 && lx <= x1 && lz >= z0 && lz <= z1 && (top === null || h > top)) top = h;
+  return top === null ? null : PAL.y + top * S;
+}
+// The Rose Gate (A003): 54 x 93 m drawn, its sill on the podium roof, its face at z 205.
+export const GATE = { w: 54 * S, h: 93 * S, sill: 52 * S, z: 205 * S };
+export const CASTLE = { x: 0, z: GATE.z, y: PAL.y + GATE.sill, base: PAL.y };   // z: gate face, y: gate sill
+// The cascade court cuts the podium: a water stair between twin flights, from the gate landing down to the upper terrace.
+export const CASCADE = { z0: 235 * S, z1: 340 * S, hw: 110 * S, water: 30 * S, flights: [[-62.5 * S, 32.5 * S], [62.5 * S, 32.5 * S]] };
+// G04 terrace gardens from the palace down to the lake (sheet 15): upper, middle, lower
+export const TERRACES = TERRACES1.map((t) => ({ ...t, y: t.y * S, z0: t.z0 * S, z1: t.z1 * S, hw: t.hw * S }));
+// flights of the grand stair between the terraces: [z top, z bottom, y top, y bottom, half width, x]
+export const STAIRS = STAIRS1.map(([za, zb, ya, yb, hw, cx = 0]) => [za * S, zb * S, ya * S, yb * S, hw * S, cx * S]);
+export const CAUSEWAY = { x: 0, z0: 880 * S, z1: 2262 * S, hw: 15, y: 6 };
+export const B20 = { x: B20_1.x * S, z: B20_1.z * S, r: B20_1.r * S, y: B20_1.y * S };   // Bridge Pavilions plaza: the spawn
+export const SPAWN = { x: 0, z: 2350 * S };
+export const PLAZA = { x: 0, z: 362 * S, y: PAL.y, r: 14 * S };       // the cascade's lotus basin at the stair foot
+export const LAKE = { x: LAKE1.x * S, z: LAKE1.z * S, rx: LAKE1.rx * S, rz: LAKE1.rz * S, y: 0 };
+export const SEA_Y = 0;
+// arched bridges from the causeway to the two lake islands
+export const BRANCHES = [
+  { to: 'B02', pts: [[-CAUSEWAY.hw, 1320 * S], [-480 * S, 1320 * S]], hw: 6, y: 6, hump: 14 },
+  { to: 'B03', pts: [[CAUSEWAY.hw, 1410 * S], [628 * S, 1410 * S]], hw: 6, y: 6, hump: 14 },
+];
+
+// --- the districts (sheet 04 table), with the ground each one stands on -----------------
+// pad: flattened ground { r, y, e (blend width) }
+export const SITES = Object.fromEntries(Object.entries(SITES1).map(([k, s]) => [k, {
+  name: s.name, x: s.x * S, z: s.z * S, pad: { r: s.pad.r * S, y: s.pad.y * S, e: s.pad.e * S },
+}]));
+const EXTRA_PADS = EXTRA_PADS1.map((p) => ({ x: p.x * S, z: p.z * S, r: p.r * S, y: p.y * S, e: p.e * S }));
+
 // --- floating islands, reached by sky portals ------------------------------------------
 export const ISLANDS = [
-  { id: 'castle', name: 'Starlight Coast', x: 0, z: 0, y: 0, r: 5200, main: true },
-  { id: 'garden', name: 'Crystal Garden', x: 1560, z: -1680, y: 520, r: 76, hue: 0.52 },
-  { id: 'aurora', name: 'Aurora Isle', x: -3240, z: -1500, y: 600, r: 64, hue: 0.42 },
-  { id: 'lake', name: 'Lantern Isle', x: -1100, z: 3000, y: 450, r: 88, hue: 0.12 },
-  { id: 'meadow', name: 'Unicorn Meadow', x: 2760, z: 4320, y: 420, r: 80, hue: 0.85 },
-  { id: 'star', name: 'Starfall Isle', x: -180, z: -2280, y: 680, r: 60, hue: 0.62 },
+  { id: 'castle', name: 'Starlight Coast', x: 0, z: 0, y: 0, r: 5200 * S, main: true },
+  { id: 'garden', name: 'Crystal Garden', x: 1560 * S, z: -1680 * S, y: 520 * S, r: 76, hue: 0.52 },
+  { id: 'aurora', name: 'Aurora Isle', x: -3240 * S, z: -1500 * S, y: 600 * S, r: 64, hue: 0.42 },
+  { id: 'lake', name: 'Lantern Isle', x: -1100 * S, z: 3000 * S, y: 450 * S, r: 88, hue: 0.12 },
+  { id: 'meadow', name: 'Unicorn Meadow', x: 2760 * S, z: 4320 * S, y: 420 * S, r: 80, hue: 0.85 },
+  { id: 'star', name: 'Starfall Isle', x: -180 * S, z: -2280 * S, y: 680 * S, r: 60, hue: 0.62 },
 ];
 export const MAIN = ISLANDS[0];
 const SKY = ISLANDS.filter((i) => !i.main);
 export const LAKE_POND = { x: ISLANDS[3].x, z: ISLANDS[3].z, r: 22 };
 
 // Sky portals stand in a row on the upper terrace before the palace.
-const PORTAL_X = { lake: -420, aurora: -330, garden: 330, star: 420, meadow: 240 };
+const PORTAL_X = { lake: -420 * S, aurora: -330 * S, garden: 330 * S, star: 420 * S, meadow: 240 * S };
 export const PORTALS = SKY.map((isl) => {
-  const x = PORTAL_X[isl.id], z = 520;
+  const x = PORTAL_X[isl.id], z = 520 * S;
   return { to: isl.id, name: isl.name, x, z, y: PAL.y, angle: Math.atan2(isl.z - z, isl.x - x) };
 });
 export const RETURNS = SKY.map((isl) => {
@@ -123,7 +154,7 @@ const lerp = (a, b, t) => a + (b - a) * t;
 const ridge = (x, z) => 1 - Math.abs(2 * vnoise(x, z) - 1);
 
 // --- the coastline ------------------------------------------------------------------
-// Traced from sheet 04, clockwise from the north-west.
+// Traced from sheet 04, clockwise from the north-west (drawn metres).
 const COAST = [
   [-2700, -1800], [-1800, -2350], [-700, -2500], [500, -2450], [1500, -2250], [2350, -1850], [2900, -1150],
   [3150, -350], [3050, 450], [2850, 1150], [3050, 1850], [2950, 2550], [2500, 3050], [2050, 3550], [1500, 3750],
@@ -157,7 +188,7 @@ function segDist(x, z, a, b) {
 }
 
 // the B10 red canyon: a mesa cut by a winding gorge
-const CANYON = { x: 1600, z: 1600, r: 430, top: 95, gorge: [[1230, 1330], [1480, 1500], [1640, 1620], [1960, 1900]], hw: 55 };
+const CANYON1 = { x: 1600, z: 1600, r: 430, top: 95, gorge: [[1230, 1330], [1480, 1500], [1640, 1620], [1960, 1900]], hw: 55 };
 
 // offshore sea stacks, scattered along the coast
 const STACKS = [];
@@ -172,22 +203,24 @@ const STACKS = [];
   }
 }
 
+const CANYON = { x: CANYON1.x * S, z: CANYON1.z * S, r: CANYON1.r * S };
 const PAD_LIST = [...Object.values(SITES).map((s) => ({ x: s.x, z: s.z, ...s.pad })), ...EXTRA_PADS];
 
-// signed distance to the lake shore (negative on the water)
-export function lakeDistance(x, z) {
-  const dx = (x - LAKE.x) / LAKE.rx, dz = (z - LAKE.z) / LAKE.rz;
-  return (Math.hypot(dx, dz) - 1) * LAKE.rz + (vnoise(x * 0.004, z * 0.004) - 0.5) * 140 + (vnoise(x * 0.015, z * 0.015) - 0.5) * 30;
+// signed distance to the lake shore (negative on the water), drawn metres
+function lake1(x, z) {
+  const dx = (x - LAKE1.x) / LAKE1.rx, dz = (z - LAKE1.z) / LAKE1.rz;
+  return (Math.hypot(dx, dz) - 1) * LAKE1.rz + (vnoise(x * 0.004, z * 0.004) - 0.5) * 140 + (vnoise(x * 0.015, z * 0.015) - 0.5) * 30;
 }
+export function lakeDistance(x, z) { return lake1(x / S, z / S) * S; }
 
-// the palace plateau and the terraces: [ground y or null, blend 0..1]
+// the palace plateau and the terraces, drawn metres: [ground y or null, blend 0..1]
 function palaceGround(x, z) {
   const ax = Math.abs(x);
   // the plateau the palace stands on, with B25 beside it
-  const dx = Math.max(0, ax - 470), dz = Math.max(0, -420 - z, z - PAL.hd);
+  const dx = Math.max(0, x - 470, -425 - x), dz = Math.max(0, -420 - z, z - PAL1.hd);
   const d = Math.hypot(dx, dz);
-  if (z <= PAL.hd + 2 && d < 260) return [PAL.y - 0.4, 1 - smooth(0, 260, d)];
-  for (const T of TERRACES) {
+  if (z <= PAL1.hd + 2 && d < 260) return [PAL1.y - 0.4, 1 - smooth(0, 260, d)];
+  for (const T of TERRACES1) {
     if (z > T.z0 - 2 && z <= T.z1 + 2) {
       const e = Math.max(0, ax - T.hw);
       if (e < 200) return [T.y - 0.4, 1 - smooth(0, 200, e)];
@@ -196,7 +229,8 @@ function palaceGround(x, z) {
   return [null, 0];
 }
 
-export function terrainRaw(x, z) {
+// the natural land in drawn metres: coast, mountains, sea stacks, the lake and the canyon
+function natural1(x, z) {
   let d = coastRaw(x, z) + (vnoise(x * 0.0022, z * 0.0022) - 0.5) * 260 + (vnoise(x * 0.009, z * 0.009) - 0.5) * 70;
   for (const c of CARVES) d = Math.min(d, segDist(x, z, c.a, c.b) - c.r - (vnoise(x * 0.01, z * 0.01) - 0.5) * 60);
   let h;
@@ -217,31 +251,37 @@ export function terrainRaw(x, z) {
     if (q < s.r * 2) h = Math.max(h, s.h * (1 - smooth(s.r * 0.6, s.r * 2, q)) - 8);
   }
   // Lantern Lake
-  const ld = lakeDistance(x, z);
+  const ld = lake1(x, z);
   if (ld < 170) h = lerp(-0.8 - 11 * smooth(0, -280, ld), Math.max(h, 1.4), smooth(-10, 170, ld));
   // the red canyon mesa and its gorge
-  const cd = Math.hypot(x - CANYON.x, z - CANYON.z);
-  if (cd < CANYON.r + 200) {
+  const C = CANYON1, cd = Math.hypot(x - C.x, z - C.z);
+  if (cd < C.r + 200) {
     const n = vnoise(x * 0.012, z * 0.012);
-    h = lerp(h, CANYON.top + n * 30 + Math.floor(n * 4) * 8, 1 - smooth(CANYON.r - 60, CANYON.r + 120 + n * 60, cd));
+    h = lerp(h, C.top + n * 30 + Math.floor(n * 4) * 8, 1 - smooth(C.r - 60, C.r + 120 + n * 60, cd));
     let g = Infinity;
-    for (let i = 0; i < CANYON.gorge.length - 1; i++) g = Math.min(g, segDist(x, z, CANYON.gorge[i], CANYON.gorge[i + 1]));
-    h = lerp(10, h, smooth(CANYON.hw, CANYON.hw + 30, g));
+    for (let i = 0; i < C.gorge.length - 1; i++) g = Math.min(g, segDist(x, z, C.gorge[i], C.gorge[i + 1]));
+    h = lerp(10, h, smooth(C.hw, C.hw + 30, g));
   }
+  return h;
+}
+
+// world ground: the drawn land scaled by S, then the district pads, the spawn shore and the palace plateau
+export function terrainRaw(x, z) {
+  let h = natural1(x / S, z / S) * S;
   // flat ground under each district
   for (const p of PAD_LIST) {
     const q = Math.hypot(x - p.x, z - p.z);
     if (q < p.r + p.e) h = lerp(p.y - 0.3, h, smooth(p.r, p.r + p.e, q));
   }
   // B20 shore: the causeway's south end lands on a broad flat shore
-  if (Math.abs(x) < 200 && z > 2150 && z < 2480) h = lerp(h, B20.y - 0.3, 1 - smooth(120, 200, Math.abs(x)));
-  const [py, pb] = palaceGround(x, z);
-  if (py !== null) h = lerp(h, py, pb);
+  if (Math.abs(x) < 200 * S && z > 2150 * S && z < 2480 * S) h = lerp(h, B20.y - 0.3, 1 - smooth(120 * S, 200 * S, Math.abs(x)));
+  const [py, pb] = palaceGround(x / S, z / S);
+  if (py !== null) h = lerp(h, py * S, pb);
   return h;
 }
 
 // --- the baked height grid ---------------------------------------------------------------
-const GX0 = -4800, GZ0 = -3400, GSPAN = 9600, GSTEP = 12, GN = GSPAN / GSTEP + 1;
+const GX0 = -4800 * S, GZ0 = -3400 * S, GSPAN = 9600 * S, GSTEP = 30, GN = GSPAN / GSTEP + 1;
 let grid = null;
 function bake() {
   grid = new Float32Array(GN * GN);
@@ -268,13 +308,14 @@ export function terrainHeight(isl, x, z) {
 
 // forest cover 0..1: woods everywhere inland, thinning on high rock and round the districts
 export function forestAt(x, z, h = mainTerrain(x, z)) {
-  if (h < 3 || h > 330) return 0;
-  let f = smooth(0.38, 0.58, vnoise(x * 0.0035 + 11, z * 0.0035 - 4) * 0.7 + vnoise(x * 0.015, z * 0.015) * 0.3);
-  f *= smooth(330, 240, h);
-  if (Math.abs(x) < 700 && z > -700 && z < 950) f = 0;                   // palace grounds
-  if (Math.abs(x) < 260 && z > 2100 && z < 2550) f = 0;                  // spawn shore
-  if (Math.hypot(x - CANYON.x, z - CANYON.z) < CANYON.r + 80) f *= 0.15;
-  for (const p of PAD_LIST) if (Math.hypot(x - p.x, z - p.z) < p.r + 30) return 0;
+  const hd = h / S;
+  if (hd < 3 || hd > 330) return 0;
+  let f = smooth(0.38, 0.58, vnoise(x * 0.0035 / S + 11, z * 0.0035 / S - 4) * 0.7 + vnoise(x * 0.015 / S, z * 0.015 / S) * 0.3);
+  f *= smooth(330, 240, hd);
+  if (x > -700 * S && x < 760 * S && z > -700 * S && z < 950 * S) f = 0;   // palace grounds
+  if (Math.abs(x) < 260 * S && z > 2100 * S && z < 2550 * S) f = 0;       // spawn shore
+  if (Math.hypot(x - CANYON.x, z - CANYON.z) < CANYON.r + 80 * S) f *= 0.15;
+  for (const p of PAD_LIST) if (Math.hypot(x - p.x, z - p.z) < p.r + 30 * S) return 0;
   return f;
 }
 
@@ -283,23 +324,24 @@ const ISLE_HUE = { castle: 0.3, garden: 0.34, aurora: 0.38, lake: 0.29, meadow: 
 export function groundHSL(isl, x, z, h) {
   const big = vnoise(x * 0.012 + 50, z * 0.012 + 9), small = vnoise(x * 0.08, z * 0.08);
   let H = (ISLE_HUE[isl.id] ?? 0.28) - big * 0.05 + (small - 0.5) * 0.025;
-  let S = 0.6 + big * 0.14, L = 0.33 + big * 0.12 + (small - 0.5) * 0.05;
-  if (!isl.main) return [H, S, L];
+  let Sat = 0.6 + big * 0.14, L = 0.33 + big * 0.12 + (small - 0.5) * 0.05;
+  if (!isl.main) return [H, Sat, L];
   const e = 6, s = Math.hypot(mainTerrain(x + e, z) - mainTerrain(x - e, z), mainTerrain(x, z + e) - mainTerrain(x, z - e)) / (2 * e);
   const f = forestAt(x, z, h);
-  H = lerp(H, 0.33, f * 0.6); L = lerp(L, 0.2 + big * 0.06, f * 0.8); S = lerp(S, 0.55, f * 0.5);
-  const sand = smooth(4.5, 2, h) * (h > -6 ? 1 : 0.6);
-  H = lerp(H, 0.11, sand); S = lerp(S, 0.42, sand); L = lerp(L, 0.72 + small * 0.06, sand);
-  const rock = Math.max(smooth(0.75, 1.3, s), smooth(220, 340, h));
-  H = lerp(H, 0.74, rock); S = lerp(S, 0.16, rock); L = lerp(L, 0.46 + small * 0.08, rock);
-  const snow = smooth(470, 560, h + small * 40);
-  H = lerp(H, 0.66, snow); S = lerp(S, 0.12, snow); L = lerp(L, 0.92, snow);
+  H = lerp(H, 0.33, f * 0.6); L = lerp(L, 0.2 + big * 0.06, f * 0.8); Sat = lerp(Sat, 0.55, f * 0.5);
+  const hd = h / WS;
+  const sand = smooth(4.5, 2, hd) * (hd > -6 ? 1 : 0.6);
+  H = lerp(H, 0.11, sand); Sat = lerp(Sat, 0.42, sand); L = lerp(L, 0.72 + small * 0.06, sand);
+  const rock = Math.max(smooth(0.75, 1.3, s), smooth(220, 340, hd));
+  H = lerp(H, 0.74, rock); Sat = lerp(Sat, 0.16, rock); L = lerp(L, 0.46 + small * 0.08, rock);
+  const snow = smooth(470, 560, hd + small * 40);
+  H = lerp(H, 0.66, snow); Sat = lerp(Sat, 0.12, snow); L = lerp(L, 0.92, snow);
   const cd = Math.hypot(x - CANYON.x, z - CANYON.z);
-  if (cd < CANYON.r + 160) {
-    const t = smooth(CANYON.r + 160, CANYON.r, cd) * smooth(12, 25, h);
-    H = lerp(H, 0.025 + big * 0.02, t); S = lerp(S, 0.55, t); L = lerp(L, 0.42 + Math.sin(h * 0.3) * 0.05, t);
+  if (cd < CANYON.r + 160 * S) {
+    const t = smooth(CANYON.r + 160 * S, CANYON.r, cd) * smooth(12, 25, hd);
+    H = lerp(H, 0.025 + big * 0.02, t); Sat = lerp(Sat, 0.55, t); L = lerp(L, 0.42 + Math.sin(hd * 0.3) * 0.05, t);
   }
-  return [H, S, L];
+  return [H, Sat, L];
 }
 
 // --- built ground: terraces, stairs, causeway, bridges, plazas ---------------------------------
@@ -308,8 +350,8 @@ export function groundHSL(isl, x, z, h) {
 export const PADS = [];
 export function addPad(p) { PADS.push({ ...p, c: Math.cos(p.a || 0), s: Math.sin(p.a || 0) }); }
 export function causewayY(z) {
-  if (z < CAUSEWAY.z0 + 24) return lerp(TERRACES[2].y, CAUSEWAY.y, (z - CAUSEWAY.z0) / 24);
-  if (z > CAUSEWAY.z1 - 30) return lerp(CAUSEWAY.y, B20.y, (z - CAUSEWAY.z1 + 30) / 30);
+  if (z < CAUSEWAY.z0 + 24 * S) return lerp(TERRACES[2].y, CAUSEWAY.y, (z - CAUSEWAY.z0) / (24 * S));
+  if (z > CAUSEWAY.z1 - 30 * S) return lerp(CAUSEWAY.y, B20.y, (z - CAUSEWAY.z1 + 30 * S) / (30 * S));
   return CAUSEWAY.y;
 }
 export function branchY(B, t) { return B.y + B.hump * Math.sin(Math.PI * t); }
@@ -320,10 +362,11 @@ export function builtHeight(x, z, y = 0) {
     if (Math.abs(u) <= p.hw && Math.abs(v) <= p.hd) return p.y;
   }
   const ax = Math.abs(x);
-  // up on the palace roof gardens
-  if (y > PAL.y + 300 && ax <= PAL.hw && Math.abs(z) <= PAL.hd) return roofY(z);
-  if (ax <= LANDING.hw && z >= LANDING.z0 && z <= LANDING.z1) return LANDING.y;
-  for (const cx of CASCADE.xs) if (Math.abs(x - cx) <= CASCADE.hw && z > CASCADE.z0 && z <= CASCADE.z1) return lerp(LANDING.y, PAL.y, (z - CASCADE.z0) / (CASCADE.z1 - CASCADE.z0));
+  // up on the palace: the gate landing and the garden roof of whichever tier you stand on
+  const roof = palaceRoofY(x, z);
+  if (roof !== null && y > roof - 30) return roof;
+  // the cascade court: twin flights from the gate landing down to the upper terrace
+  if (z > CASCADE.z0 && z <= CASCADE.z1) for (const [cx, hw] of CASCADE.flights) if (Math.abs(x - cx) <= hw) return lerp(CASTLE.y, PAL.y, (z - CASCADE.z0) / (CASCADE.z1 - CASCADE.z0));
   if (ax <= CAUSEWAY.hw && z >= CAUSEWAY.z0 && z <= CAUSEWAY.z1) return causewayY(z);
   for (const B of BRANCHES) {
     const [[x0, z0], [x1, z1]] = B.pts;
@@ -370,12 +413,12 @@ export function isClearOfBuildings(x, z, margin = 0, y = 0) {
   if (!isl.main) return Math.hypot(x - LAKE_POND.x, z - LAKE_POND.z) >= LAKE_POND.r + 4 + margin && Math.hypot(x - isl.x, z - isl.z) > 14 + margin;
   if (mainTerrain(x, z) < 1.5 + margin * 0.1) return false;
   const ax = Math.abs(x);
-  if (ax < PAL.hw + 30 + margin && z > -PAL.hd - 30 - margin && z < PAL.hd + 60 + margin) return false;
+  if (x > PAL.x0 - 40 - margin && x < PAL.x1 + 40 + margin && z > PAL.z0 - 40 - margin && z < PAL.hd + 20 + margin) return false;
   if (ax < CAUSEWAY.hw + 10 + margin && z > PAL.hd && z < CAUSEWAY.z1 + 10) return false;
-  if (ax < 70 + margin && z > PAL.hd && z < 900) return false;                   // water stair and grand stair
+  if (ax < 70 * S + margin && z > PAL.hd && z < 900 * S) return false;           // water channel and grand stair
   for (const [za, zb, , , hw, cx = 0] of STAIRS) if (z > za - 6 - margin && z < zb + 6 + margin && Math.abs(x - cx) < hw + 6 + margin) return false;
   for (const p of PORTALS) if (Math.hypot(x - p.x, z - p.z) < 14 + margin) return false;
-  if (Math.hypot(x - PLAZA.x, z - PLAZA.z) < 60 + margin) return false;
+  if (Math.hypot(x - PLAZA.x, z - PLAZA.z) < PLAZA.r + 40 + margin) return false;
   if (Math.hypot(x - B20.x, z - B20.z) < B20.r + 30 + margin) return false;
   for (const s of Object.values(SITES)) if (s !== SITES.B20 && Math.hypot(x - s.x, z - s.z) < s.pad.r * 0.8 + margin) return false;
   for (const p of PADS) if (Math.hypot(x - p.x, z - p.z) < Math.max(p.hw, p.hd) + margin) return false;
@@ -384,12 +427,12 @@ export function isClearOfBuildings(x, z, margin = 0, y = 0) {
 
 // Where small life (shrubs, flowers, collectables) goes on the main land: round the places people walk.
 export const MAIN_ZONES = [
-  { x: 0, z: 2330, r: 230 },                 // the spawn shore
-  { x: -420, z: 640, r: 160 }, { x: 420, z: 640, r: 160 },   // the terrace gardens
-  { x: -760, z: 820, r: 160 }, { x: 760, z: 820, r: 160 },   // lake shores beside the terraces
-  { x: SITES.B02.x, z: SITES.B02.z, r: 120 }, { x: SITES.B03.x, z: SITES.B03.z, r: 110 },
-  { x: SITES.B18.x, z: SITES.B18.z, r: 140 },
-  { x: -300, z: 2350, r: 160 }, { x: 300, z: 2350, r: 160 },
+  { x: 0, z: 2330 * S, r: 230 * S },                 // the spawn shore
+  { x: -420 * S, z: 640 * S, r: 160 * S }, { x: 420 * S, z: 640 * S, r: 160 * S },   // the terrace gardens
+  { x: -760 * S, z: 820 * S, r: 160 * S }, { x: 760 * S, z: 820 * S, r: 160 * S },   // lake shores beside the terraces
+  { x: SITES.B02.x, z: SITES.B02.z, r: 120 * S }, { x: SITES.B03.x, z: SITES.B03.z, r: 110 * S },
+  { x: SITES.B18.x, z: SITES.B18.z, r: 140 * S },
+  { x: -300 * S, z: 2350 * S, r: 160 * S }, { x: 300 * S, z: 2350 * S, r: 160 * S },
 ];
 export function randomOnIsland(isl, r, minEdge = 4) {
   if (!isl.main) {
@@ -400,4 +443,4 @@ export function randomOnIsland(isl, r, minEdge = 4) {
   const a = r() * Math.PI * 2, d = Math.sqrt(r()) * Z.r;
   return [Z.x + Math.cos(a) * d, Z.z + Math.sin(a) * d];
 }
-export const MAIN_SHARE_R = 260;
+export const MAIN_SHARE_R = 260 * S;

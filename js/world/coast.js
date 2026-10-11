@@ -9,7 +9,7 @@ import * as THREE from 'three';
 import { mergeGeometries } from 'three/addons/utils/BufferGeometryUtils.js';
 import { nightGrade, meadowGrade } from './materials.js';
 import { grassTexture, rng } from './textures.js';
-import { MAIN, TERRAIN_GRID, terrainHeight, groundHSL, forestAt, lakeDistance } from './layout.js';
+import { S, MAIN, TERRAIN_GRID, terrainHeight, groundHSL, forestAt, lakeDistance } from './layout.js';
 import { MOOD, FOG_COLOR, SUN_DIR, MOON_DIR } from './sky.js';
 
 const G = TERRAIN_GRID;
@@ -60,11 +60,11 @@ function landGeometry(x0, z0, n, step, skipDeep) {
 
 // --- the sea and the lake --------------------------------------------------------------------
 function depthTexture() {
-  const n = 201, step = G.span / (n - 1), data = new Uint8Array(n * n * 4);
+  const n = 401, step = G.span / (n - 1), data = new Uint8Array(n * n * 4);
   for (let j = 0; j < n; j++) for (let i = 0; i < n; i++) {
     const x = G.x0 + i * step, z = G.z0 + j * step, h = terrainHeight(MAIN, x, z), k = (j * n + i) * 4;
-    data[k] = Math.round(Math.min(1, Math.max(0, (h + 40) / 60)) * 255);
-    data[k + 1] = lakeDistance(x, z) < 40 ? 0 : 255;                // calm water in the lake
+    data[k] = Math.round(Math.min(1, Math.max(0, (h / S + 40) / 60)) * 255);   // depth in drawn metres, so the shading keeps its proportions
+    data[k + 1] = lakeDistance(x, z) < 40 * S ? 0 : 255;                // calm water in the lake
     data[k + 2] = 0; data[k + 3] = 255;
   }
   const t = new THREE.DataTexture(data, n, n, THREE.RGBAFormat);
@@ -78,7 +78,7 @@ function waterMesh() {
     uniforms: {
       uH: { value: depthTexture() }, uGrid: { value: new THREE.Vector3(G.x0, G.z0, G.span) },
       uTime: { value: 0 }, uNight: MOOD.night, uSun: { value: SUN_DIR }, uMoon: { value: MOON_DIR },
-      uFog: { value: FOG_COLOR }, uFogNear: { value: 600 }, uFogFar: { value: 9000 },
+      uFog: { value: FOG_COLOR }, uFogNear: { value: 900 }, uFogFar: { value: 16000 },
     },
     vertexShader: 'varying vec3 vW; void main(){ vec4 w = modelMatrix * vec4(position, 1.); vW = w.xyz; gl_Position = projectionMatrix * viewMatrix * w; }',
     fragmentShader: /* glsl */`
@@ -134,7 +134,7 @@ function waterMesh() {
         #include <colorspace_fragment>
       }`,
   });
-  const mesh = new THREE.Mesh(new THREE.PlaneGeometry(26000, 26000).rotateX(-Math.PI / 2), mat);
+  const mesh = new THREE.Mesh(new THREE.PlaneGeometry(64000, 64000).rotateX(-Math.PI / 2), mat);
   mesh.frustumCulled = false;
   mesh.name = 'sea';
   return mesh;
@@ -207,8 +207,8 @@ function forests(scene, preset) {
 export function createCoast(scene, preset) {
   const group = new THREE.Group();
   group.name = 'coast';
-  const farStep = 48, farN = G.span / farStep;
-  const far = new THREE.Mesh(landGeometry(G.x0, G.z0, farN, farStep, -24), landMaterial(true));
+  const farStep = 110, farN = Math.round(G.span / farStep);
+  const far = new THREE.Mesh(landGeometry(G.x0, G.z0, farN, farStep, -24 * S), landMaterial(true));
   far.frustumCulled = false; far.receiveShadow = true;
   group.add(far);
   const nearMat = landMaterial(false);

@@ -1,6 +1,6 @@
 // The grand approach (sheets 04, 10, 15): the G04 terrace gardens stepping down
 // from the palace to Lantern Lake, the lake ghats and willow grove, and the
-// 1.4 km golden causeway lined with 100 m white-bark avenue trees, crystal post
+// 3.8 km golden causeway lined with 100 m white-bark avenue trees, crystal post
 // lamps and carved see-through rails, from the Bridge Pavilions (B20, where
 // everyone arrives) to the palace. Arched bridges branch off to the two lake
 // islands, and every footstep on the causeway sends out a ring of neon light.
@@ -8,7 +8,7 @@ import * as THREE from 'three';
 import { toon, glowBasic, additive, nightGrade } from './materials.js';
 import { glowTexture, rng } from './textures.js';
 import { Kit, box, cyl, lathe, cap, scaleUV, waterMaterial, haloPoints } from './kit.js';
-import { TERRACES, STAIRS, CAUSEWAY, B20, BRANCHES, LAKE, PAL, causewayY, branchY, addCollider, lakeDistance } from './layout.js';
+import { S, TERRACES, STAIRS, CAUSEWAY, B20, BRANCHES, LAKE, PAL, PLAZA, causewayY, branchY, addCollider, lakeDistance } from './layout.js';
 import {
   IVORY, PEARL, ROSE, GOLD, paint, merge, finialGeo, cypressGeo, blossomGeo, willowGeo, avenueTreeGeo, roseClumpGeo,
   postLampGeo, lotusFountainGeo, benchGeo, artifactMaterials, instances,
@@ -114,40 +114,40 @@ export function createApproach(scene, preset, { makePortal } = {}) {
     kit.add('arcade', scaleUV(new THREE.PlaneGeometry(T.hw * 2, wallH).translate(0, below + wallH / 2, T.z1 + 0.05), (T.hw * 2) / (wallH * 2), 1), '#ffffff');
     kit.add('ivory', box(T.hw * 2 + 2, 1.2, 2.4, 0, T.y, T.z1), PEARL);                            // flowering parapet
     kit.add('gold', box(T.hw * 2 + 2.2, 0.15, 2.6, 0, T.y + 1.2, T.z1), GOLD);
-    for (let x = -T.hw + 3; x < T.hw; x += 7) if (Math.abs(x) > 34 && !STAIRS.some(([za, , , , hw, cx = 0]) => Math.abs(za - T.z1) < 2 && Math.abs(x - cx) < hw + 2)) clumps.push([x, T.y + 1.6, T.z1, 1.3, x]);
+    for (let x = -T.hw + 3; x < T.hw; x += 13) if (Math.abs(x) > 90 && !STAIRS.some(([za, , , , hw, cx = 0]) => Math.abs(za - T.z1) < 2 && Math.abs(x - cx) < hw + 2)) clumps.push([x, T.y + 1.6, T.z1, 1.3, x]);
     for (const s of [-1, 1]) kit.add('ivory', box(2, T.y + 20, d, s * T.hw, -20, (T.z0 + T.z1) / 2), PEARL);
     // cypress rows along the walks and blossom trees in carved planters
-    for (let x = -T.hw + 20; x < T.hw - 10; x += 30) if (Math.abs(x) > 80) cypress.push([x, T.y, T.z1 - 6, 16 + R() * 5, 0]);
+    for (let x = -T.hw + 20; x < T.hw - 10; x += 30) if (Math.abs(x) > 100) cypress.push([x, T.y, T.z1 - 6, 16 + R() * 5, 0]);
   });
   // upper terrace: two round rose parterres with lotus fountains, and two mirror pools
   const up = TERRACES[0];
   for (const s of [-1, 1]) {
-    const cx = s * 300, cz = 470;
+    const cx = s * 300 * S, cz = 470 * S;
     fountains.push([cx, up.y, cz, 0.8]);
     addCollider({ x: cx, z: cz, r: 7.5 });
     for (let i = 0; i < 16; i++) { const a = (i / 16) * Math.PI * 2; for (const rr of [17]) clumps.push([cx + Math.cos(a) * rr, up.y + 0.4, cz + Math.sin(a) * rr, 1.6, a]); }
     for (let i = 0; i < 6; i++) { const a = (i / 6) * Math.PI * 2 + 0.3; benches.push([cx + Math.cos(a) * 12, up.y, cz + Math.sin(a) * 12, 1, -a - Math.PI / 2]); }
-    const mx = s * 150;
-    kit.add('ivory', box(14, 0.6, 32, mx, up.y, 470), PEARL);
-    water.push(new THREE.PlaneGeometry(12, 30).rotateX(-Math.PI / 2).translate(mx, up.y + 0.65, 470));
-    addCollider({ minX: mx - 7, maxX: mx + 7, minZ: 454, maxZ: 486 });
-    for (const z of [440, 500]) blossoms.push([mx + s * 22, up.y, z, 0.7, z]);
+    const mx = s * 150 * S, mz = 470 * S;
+    kit.add('ivory', box(14 * S, 0.6, 32 * S, mx, up.y, mz), PEARL);
+    water.push(new THREE.PlaneGeometry(12 * S, 30 * S).rotateX(-Math.PI / 2).translate(mx, up.y + 0.65, mz));
+    addCollider({ minX: mx - 7 * S, maxX: mx + 7 * S, minZ: mz - 16 * S, maxZ: mz + 16 * S });
+    for (let z = mz - 44; z <= mz + 44; z += 22) for (const d of [-1, 1]) blossoms.push([mx + d * (7 * S + 8), up.y, z, 0.7, z]);
   }
   // middle terrace: fragrant gardens of blossom trees and roses
   const mid = TERRACES[1];
-  for (let i = 0; i < 26; i++) {
-    const s = i % 2 ? 1 : -1, x = s * (90 + R() * (mid.hw - 120)), z = mid.z0 + 30 + R() * (mid.z1 - mid.z0 - 60);
+  for (let i = 0; i < 70; i++) {
+    const s = i % 2 ? 1 : -1, x = s * (90 * S + R() * (mid.hw - 120 * S)), z = mid.z0 + 30 + R() * (mid.z1 - mid.z0 - 60);
     if (STAIRS.some(([za, zb, , , hw, cx = 0]) => Math.abs(x - cx) < hw + 14)) continue;
     kit.add('ivory', box(6, 1.6, 6, x, mid.y, z), PEARL);
     blossoms.push([x, mid.y + 1.6, z, 0.75 + R() * 0.25, R() * 6]);
   }
   // lower terrace: willow grove and the lake ghats
   const low = TERRACES[2];
-  for (let i = 0; i < 22; i++) { const s = i % 2 ? 1 : -1, x = s * (120 + R() * (low.hw - 150)), z = low.z0 + 25 + R() * (low.z1 - low.z0 - 40); willows.push([x, low.y, z, 0.8 + R() * 0.4, R() * 6]); }
+  for (let i = 0; i < 60; i++) { const s = i % 2 ? 1 : -1, x = s * (120 * S + R() * (low.hw - 150 * S)), z = low.z0 + 25 + R() * (low.z1 - low.z0 - 40); willows.push([x, low.y, z, 0.8 + R() * 0.4, R() * 6]); }
   for (const s of [-1, 1]) {
     // ghats: broad steps from the lower terrace down into the lake, with domed kiosks on the landings
-    kit.add('steps', flight(s * 290, 240, low.z1, low.y, low.z1 + 24, -1.2), '#ffffff');
-    for (const x of [s * 70, s * 520]) {
+    kit.add('steps', flight(s * 290 * S, 240 * S, low.z1, low.y, low.z1 + 24 * S, -1.2), '#ffffff');
+    for (const x of [s * 70 * S, s * 520 * S]) {
       kit.add('ivory', cyl(7, 7.5, 1, 8, x, low.y, low.z1 - 10), PEARL);
       for (let i = 0; i < 6; i++) { const a = (i / 6) * Math.PI * 2; kit.add('ivory', cyl(0.4, 0.45, 7, 8, x + Math.cos(a) * 5.5, low.y + 1, low.z1 - 10 + Math.sin(a) * 5.5), PEARL); }
       kit.add('gold', cap('onion', 6.5, 8, 16).translate(x, low.y + 8, low.z1 - 10), GOLD);
@@ -165,19 +165,19 @@ export function createApproach(scene, preset, { makePortal } = {}) {
       lamps.push([x, ya, za - 1, 1, 0], [x, yb, zb + 1, 1, 0]);
     }
     if (!cx) {
-      falls.push(new THREE.PlaneGeometry(20, len).rotateX(-Math.PI / 2 + Math.atan2(ya - yb, zb - za)).translate(0, (ya + yb) / 2 + 0.15, (za + zb) / 2));
+      falls.push(new THREE.PlaneGeometry(20 * S, len).rotateX(-Math.PI / 2 + Math.atan2(ya - yb, zb - za)).translate(0, (ya + yb) / 2 + 0.15, (za + zb) / 2));
     }
   }
   // the water channel continues down every terrace to the lake
-  for (const [z0, z1, y] of [[536, 560, up.y], [592, 720, mid.y], [752, 880, low.y]]) {
-    kit.add('ivory', box(24, 0.5, z1 - z0, 0, y, (z0 + z1) / 2), PEARL);
-    water.push(new THREE.PlaneGeometry(20, z1 - z0).rotateX(-Math.PI / 2).translate(0, y + 0.55, (z0 + z1) / 2));
+  for (const [z0, z1, y] of [[PLAZA.z + PLAZA.r + 6, 560 * S, up.y], [592 * S, 720 * S, mid.y], [752 * S, 880 * S, low.y]]) {
+    kit.add('ivory', box(24 * S, 0.5, z1 - z0, 0, y, (z0 + z1) / 2), PEARL);
+    water.push(new THREE.PlaneGeometry(20 * S, z1 - z0).rotateX(-Math.PI / 2).translate(0, y + 0.55, (z0 + z1) / 2));
   }
-  falls.push(new THREE.PlaneGeometry(20, low.y + 1, 1, 4).translate(0, low.y / 2, low.z1 + 0.3));
+  falls.push(new THREE.PlaneGeometry(20 * S, low.y + 1, 1, 4).translate(0, low.y / 2, low.z1 + 0.3));
 
   // ---- the golden causeway ----
   const C = CAUSEWAY, zs = [];
-  for (let z = C.z0; z <= C.z1 + 0.01; z += 12) zs.push(Math.min(z, C.z1));
+  for (let z = C.z0; z <= C.z1 + 0.01; z += 16) zs.push(Math.min(z, C.z1));
   {
     // deck top as a strip following causewayY, then arched viaduct sides down to the water
     const pos = [], uv = [], idx = [];
@@ -191,7 +191,7 @@ export function createApproach(scene, preset, { makePortal } = {}) {
       const rail = new THREE.PlaneGeometry(L, 1.5).rotateY(s * Math.PI / 2);
       kit.add('rail', scaleUV(rail, L / 2.8, 1).translate(s * (C.hw - 0.4), C.y + 0.75, (C.z0 + C.z1) / 2), PEARL);
       kit.add('gold', box(0.35, 0.18, L, s * (C.hw - 0.4), C.y + 1.55, (C.z0 + C.z1) / 2), GOLD);
-      for (let z = C.z0 + 30; z < C.z1 - 30; z += 6) posts.push([s * (C.hw - 0.4), C.y, z, 1, 0]);
+      for (let z = C.z0 + 30; z < C.z1 - 30; z += 8) posts.push([s * (C.hw - 0.4), C.y, z, 1, 0]);
       for (let z = C.z0 + 40; z < C.z1 - 20; z += 30) lamps.push([s * (C.hw - 2), C.y, z + (s > 0 ? 15 : 0), 1, 0]);
       // white-bark avenue trees about every 60 m in round planters
       for (let z = C.z0 + 50; z < C.z1 - 30; z += 60) {
@@ -223,7 +223,8 @@ export function createApproach(scene, preset, { makePortal } = {}) {
       for (let i = 0; i < q.count; i++) { const t = (q.getX(i) + L / 2) / L, top = branchY(B, Math.sign(x1 - x0) > 0 ? t : 1 - t); q.setY(i, q.getY(i) > 0 ? top : -1); }
       kit.add('arcade', scaleUV(side, L / 12, 1).translate((x0 + x1) / 2, 0, z0 + s * B.hw), '#ffffff');
     }
-    for (let k = 1; k < 6; k++) { const t = k / 6, x = x0 + (x1 - x0) * t; lamps.push([x, branchY(B, t), z0 + B.hw - 1, 0.8, 0]); }
+    const nl = Math.round(L / 60);
+    for (let k = 1; k < nl; k++) { const t = k / nl, x = x0 + (x1 - x0) * t; lamps.push([x, branchY(B, t), z0 + B.hw - 1, 0.8, 0]); }
   }
 
   // ---- B20 Bridge Pavilions: the arrival plaza (detail pass to follow from its sheet-06 panel) ----
@@ -232,15 +233,15 @@ export function createApproach(scene, preset, { makePortal } = {}) {
     for (let i = 0; i < uv.count; i++) uv.setXY(i, uv.getX(i) * 8, uv.getY(i) * 8);
     kit.add('deck', g.translate(B20.x, B20.y + 0.02, B20.z), '#ffffff');
     kit.add('gold', new THREE.TorusGeometry(B20.r, 0.4, 4, 96).rotateX(Math.PI / 2).translate(B20.x, B20.y + 0.1, B20.z), GOLD);
-    for (const s of [-1, 1]) {
-      const x = B20.x + s * 46, z = B20.z - 10;
-      kit.add('ivory', cyl(13, 13.5, 1.4, 8, x, B20.y, z), PEARL);
-      for (let i = 0; i < 8; i++) { const a = (i / 8) * Math.PI * 2; kit.add('ivory', cyl(0.7, 0.8, 12, 10, x + Math.cos(a) * 10.5, B20.y + 1.4, z + Math.sin(a) * 10.5), PEARL); addCollider({ x: x + Math.cos(a) * 10.5, z: z + Math.sin(a) * 10.5, r: 0.9 }); }
-      kit.add('ivory', cyl(12, 12, 2, 16, x, B20.y + 13.4, z), PEARL);
-      kit.add('gold', cyl(12.2, 12.2, 0.4, 16, x, B20.y + 15.4, z), GOLD);
-      kit.add('dome', cap('dome', 11, 12, 24).translate(x, B20.y + 15.8, z), '#7fb0ff');
-      kit.add('gold', finialGeo(1.6).translate(x, B20.y + 27.6, z), GOLD);
-      fountains.push([x, B20.y + 1.4, z, 0.35]);
+    for (const s of [-1, 1]) {                                     // the twin blue-domed pavilions, scaled with the world
+      const x = B20.x + s * 46 * S, z = B20.z - 10 * S, k = S;
+      kit.add('ivory', cyl(13 * k, 13.5 * k, 1.4 * k, 8, x, B20.y, z), PEARL);
+      for (let i = 0; i < 8; i++) { const a = (i / 8) * Math.PI * 2; kit.add('ivory', cyl(0.7 * k, 0.8 * k, 12 * k, 10, x + Math.cos(a) * 10.5 * k, B20.y + 1.4 * k, z + Math.sin(a) * 10.5 * k), PEARL); addCollider({ x: x + Math.cos(a) * 10.5 * k, z: z + Math.sin(a) * 10.5 * k, r: 0.9 * k }); }
+      kit.add('ivory', cyl(12 * k, 12 * k, 2 * k, 16, x, B20.y + 13.4 * k, z), PEARL);
+      kit.add('gold', cyl(12.2 * k, 12.2 * k, 0.4 * k, 16, x, B20.y + 15.4 * k, z), GOLD);
+      kit.add('dome', cap('dome', 11 * k, 12 * k, 24).translate(x, B20.y + 15.8 * k, z), '#7fb0ff');
+      kit.add('gold', finialGeo(1.6 * k).translate(x, B20.y + 27.6 * k, z), GOLD);
+      fountains.push([x, B20.y + 1.4 * k, z, 0.35 * k]);
     }
     // the gateway arch where the causeway begins
     const gz = C.z1 + 6;
@@ -248,7 +249,7 @@ export function createApproach(scene, preset, { makePortal } = {}) {
     const archS = new THREE.Shape(); archS.moveTo(-C.hw - 5.5, 0); archS.lineTo(C.hw + 5.5, 0); archS.lineTo(C.hw + 5.5, 6); archS.quadraticCurveTo(0, 14, -C.hw - 5.5, 6); archS.lineTo(-C.hw - 5.5, 0);
     const inner = new THREE.Path(); inner.moveTo(-C.hw - 0.5, -0.1); inner.lineTo(C.hw + 0.5, -0.1); inner.quadraticCurveTo(0, 8, -C.hw - 0.5, -0.1); archS.holes.push(inner);
     kit.add('ivory', new THREE.ExtrudeGeometry(archS, { depth: 3, bevelEnabled: false }).translate(0, B20.y + 16, gz - 1.5), PEARL);
-    for (let i = 0; i < 12; i++) { const a = (i / 12) * Math.PI * 2 + Math.PI / 12, x = B20.x + Math.cos(a) * (B20.r - 4); if (Math.abs(x) > 22) lamps.push([x, B20.y, B20.z + Math.sin(a) * (B20.r - 4), 1, 0]); }
+    for (let i = 0; i < 28; i++) { const a = (i / 28) * Math.PI * 2 + Math.PI / 28, x = B20.x + Math.cos(a) * (B20.r - 4); if (Math.abs(x) > 22) lamps.push([x, B20.y, B20.z + Math.sin(a) * (B20.r - 4), 1, 0]); }
   }
 
   // ---- lotus fountains ----
@@ -282,7 +283,7 @@ export function createApproach(scene, preset, { makePortal } = {}) {
     lp[i * 3] = x; lp[i * 3 + 1] = 0.6; lp[i * 3 + 2] = z;
   }
   const lg = new THREE.BufferGeometry(); lg.setAttribute('position', new THREE.BufferAttribute(lp, 3));
-  const lanternMat = new THREE.PointsMaterial({ map: glowTexture(), color: '#ffc070', size: 9, transparent: true, depthWrite: false, blending: THREE.AdditiveBlending, opacity: 0 });
+  const lanternMat = new THREE.PointsMaterial({ map: glowTexture(), color: '#ffc070', size: 14, transparent: true, depthWrite: false, blending: THREE.AdditiveBlending, opacity: 0 });
   const lakeLanterns = new THREE.Points(lg, lanternMat);
   group.add(lakeLanterns);
 
@@ -298,7 +299,7 @@ export function createApproach(scene, preset, { makePortal } = {}) {
   // a sky-boat station at each end of the golden route
   const portals = [];
   if (makePortal) {
-    const a = { x: B20.x + 30, z: B20.z + 34, y: B20.y }, b = { x: 150, z: 505, y: PAL.y };
+    const a = { x: B20.x + 30 * S, z: B20.z + 34 * S, y: B20.y }, b = { x: 150 * S, z: 505 * S, y: PAL.y };
     const pa = makePortal(a.x, a.y, a.z, 0, '#ffd47a', '✦ Sky Boat to the Palace'), pb = makePortal(b.x, b.y, b.z, Math.PI, '#ffd47a', '✦ Sky Boat to the Bridge Pavilions');
     group.add(pa.group, pb.group);
     portals.push(
