@@ -64,3 +64,7 @@ then lowers the resolution on the fly whenever the frame rate dips.
 * Lady / gentleman is chosen by each player, so the party-gown privacy is a
   courtesy between friends, not a security system.
 * The secret key is visible to anyone who reads this repository's source.
+
+## Design handout
+
+The whole art and world design (reference analysis, world layout, castle versions, component library, design sheets and the owner's requirements) is in [design/README.md](design/README.md).
