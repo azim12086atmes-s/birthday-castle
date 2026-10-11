@@ -401,6 +401,11 @@ function frame() {
     if (fixed?.length >= 6) {
       camera.position.set(fixed[0], fixed[1], fixed[2]); camera.lookAt(fixed[3], fixed[4], fixed[5]);
       if (fixed[6] && camera.fov !== fixed[6]) { camera.fov = fixed[6]; camera.updateProjectionMatrix(); }   // ?cam=...,fov for elevation shots
+      if (fixed[7]) {                                                     // ?cam=...,fov,halfHeight: a true orthographic elevation
+        const hh = fixed[7], hw = hh * camera.aspect;
+        camera.projectionMatrix.makeOrthographic(-hw, hw, hh, -hh, 0.3, 32000); camera.projectionMatrixInverse.copy(camera.projectionMatrix).invert();
+        if (!camera.userData.ortho) { camera.userData.ortho = true; scene.traverse((o) => { if (o.isPoints) o.visible = false; }); }   // point sprites size by depth
+      }
     }
     else {
       camera.position.set(Math.sin(a) * 5200, 1300 + Math.sin(t * 0.1) * 150, 1400 + Math.cos(a) * 5200);

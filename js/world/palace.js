@@ -106,12 +106,47 @@ const towerTex = () => pair((g, glow) => {
   star8(g, 64, 510, 26, glow ? '#ffe9a0' : '#f0c860');
   for (const x of [34, 70]) { lancetPath(g, x, 24, 110, 250); glassFill(g, x, 110, 24, 140, glow); }
 }, 128, 1024);
-// needle spire face: a full-height indigo glass strip in a pearl frame
+// needle spire face (owner's hi-res elevation): a tall pointed light of violet-blue glass strung
+// with gold lozenges and pink diamonds, in a pearl frame with gold fillets
 const spireTex = () => pair((g, glow) => {
-  if (!glow) { marble(g, 64, 512, '#faf3ee'); g.fillStyle = '#d9b25a'; g.fillRect(0, 0, 64, 8); g.fillRect(0, 504, 64, 8); g.fillRect(12, 8, 3, 496); g.fillRect(49, 8, 3, 496); }
-  g.beginPath(); g.rect(16, 10, 32, 492); glassFill(g, 16, 10, 32, 492, glow);
-  if (!glow) { g.fillStyle = '#d9b25a'; for (let y = 40; y < 500; y += 48) g.fillRect(16, y, 32, 3); g.fillRect(31, 10, 2, 492); }
+  if (!glow) { marble(g, 64, 512, '#faf3ee'); g.fillStyle = '#d9b25a'; g.fillRect(0, 0, 64, 6); g.fillRect(0, 506, 64, 6); g.fillRect(9, 6, 3, 500); g.fillRect(52, 6, 3, 500); }
+  lancetPath(g, 15, 34, 14, 500);
+  if (glow) { g.fillStyle = '#5a58c8'; g.fill(); }
+  else {
+    const lg = g.createLinearGradient(0, 14, 0, 500); lg.addColorStop(0, '#2a2a9a'); lg.addColorStop(0.5, '#4a3ab8'); lg.addColorStop(0.8, '#7a5ad0'); lg.addColorStop(1, '#c87ad8');
+    g.fillStyle = lg; g.fill(); g.strokeStyle = '#e2b44c'; g.lineWidth = 3; g.stroke();
+  }
+  for (let y = 70; y < 480; y += 64) {                                         // lozenges down the light
+    g.beginPath(); g.moveTo(32, y - 22); g.lineTo(44, y); g.lineTo(32, y + 22); g.lineTo(20, y); g.closePath();
+    g.fillStyle = glow ? '#c088e0' : (y / 64) % 2 < 1 ? '#ff8ec8' : '#f0b860'; g.fill();
+    if (!glow) { g.strokeStyle = '#f0d070'; g.lineWidth = 2; g.stroke(); g.fillStyle = '#fff2c0'; g.beginPath(); g.arc(32, y, 3, 0, Math.PI * 2); g.fill(); }
+  }
 }, 64, 512);
+// the corner towers' great star window: a tall pointed light of cobalt shards, a gold lozenge
+// frame round a gold eight-point star, a rose glow at the foot and a gold lotus sill
+const starWinTex = () => pair((g, glow) => {
+  lancetPath(g, 4, 120, 4, 508);
+  if (glow) { g.fillStyle = '#2a2a80'; g.fill(); }
+  else {
+    const lg = g.createLinearGradient(0, 0, 0, 512); lg.addColorStop(0, '#16206e'); lg.addColorStop(0.45, '#2438a8'); lg.addColorStop(0.8, '#5a48c0'); lg.addColorStop(1, '#d880c8');
+    g.fillStyle = lg; g.fill();
+    g.save(); g.clip();
+    for (let i = 0; i < 260; i++) { g.fillStyle = ['#3a5ad8', '#5a4ac8', '#2a70d0', '#141c6a', '#7a8af0'][i % 5]; g.globalAlpha = 0.45; g.beginPath(); const x = R() * 128, y = R() * 512; g.moveTo(x, y); g.lineTo(x + 4 + R() * 9, y + R() * 6); g.lineTo(x + R() * 5, y + 6 + R() * 12); g.fill(); }
+    g.globalAlpha = 1; g.strokeStyle = 'rgba(226,180,76,0.55)'; g.lineWidth = 1.5;
+    for (let k = -512; k < 640; k += 22) { g.beginPath(); g.moveTo(k, 0); g.lineTo(k + 256, 512); g.stroke(); g.beginPath(); g.moveTo(k + 256, 0); g.lineTo(k, 512); g.stroke(); }
+    g.restore();
+    lancetPath(g, 4, 120, 4, 508); g.strokeStyle = '#e2b44c'; g.lineWidth = 6; g.stroke();
+  }
+  g.beginPath(); g.moveTo(64, 150); g.lineTo(108, 256); g.lineTo(64, 362); g.lineTo(20, 256); g.closePath();   // the lozenge
+  if (!glow) { g.strokeStyle = '#f0c860'; g.lineWidth = 5; g.stroke(); }
+  star8(g, 64, 256, 46, glow ? '#ffe9a0' : '#f4c850');
+  star8(g, 64, 256, 16, glow ? '#ffffff' : '#fff2c0');
+  if (!glow) {
+    g.fillStyle = '#e2b44c'; g.beginPath(); g.moveTo(64, 470); g.quadraticCurveTo(30, 470, 24, 500); g.lineTo(104, 500); g.quadraticCurveTo(98, 470, 64, 470); g.fill();   // lotus sill
+    for (const x of [64, 40, 88]) { g.beginPath(); g.ellipse(x, 470, 7, 18, 0, 0, Math.PI * 2); g.fill(); }
+    g.fillStyle = '#e2b44c'; g.fillRect(60, 362, 8, 108); g.fillRect(60, 40, 8, 110);       // gold stem through the light
+  }
+}, 128, 512);
 // drum: two rings of arched indigo windows with a gold ring between
 const drumTex = () => pair((g, glow) => {
   if (!glow) { marble(g, 128, 256, '#f8efe9'); g.fillStyle = '#d9b25a'; g.fillRect(0, 124, 128, 8); g.fillRect(0, 248, 128, 8); g.fillRect(0, 0, 128, 5); }
@@ -120,10 +155,15 @@ const drumTex = () => pair((g, glow) => {
 // purple dome with a gold rib on each tile edge and a gold neck ring at the foot
 function domeTex() {
   const [c, g] = cv(64, 256);
-  const lg = g.createLinearGradient(0, 0, 64, 0); lg.addColorStop(0, '#4a2468'); lg.addColorStop(0.45, '#8a5cb4'); lg.addColorStop(1, '#4a2468');
+  const lg = g.createLinearGradient(0, 0, 64, 0); lg.addColorStop(0, '#1c0634'); lg.addColorStop(0.35, '#4e1e86'); lg.addColorStop(0.5, '#7040b0'); lg.addColorStop(0.65, '#4e1e86'); lg.addColorStop(1, '#1c0634');
   g.fillStyle = lg; g.fillRect(0, 0, 64, 256);
-  g.fillStyle = 'rgba(255,255,255,0.08)'; g.fillRect(22, 0, 8, 256);
-  g.fillStyle = '#e2b44c'; g.fillRect(0, 0, 5, 256); g.fillRect(59, 0, 5, 256); g.fillRect(0, 236, 64, 20);
+  const vg = g.createLinearGradient(0, 0, 0, 256); vg.addColorStop(0, 'rgba(255,255,255,0.1)'); vg.addColorStop(0.5, 'rgba(255,255,255,0)'); vg.addColorStop(1, 'rgba(20,0,40,0.25)');
+  g.fillStyle = vg; g.fillRect(0, 0, 64, 256);
+  g.fillStyle = 'rgba(255,240,255,0.22)'; g.fillRect(24, 0, 3, 256);                       // a glossy streak down each gore
+  g.fillStyle = '#c9963a'; g.fillRect(0, 0, 4, 256); g.fillRect(60, 0, 4, 256);
+  g.fillStyle = '#ffe08a'; g.fillRect(0, 0, 2, 256); g.fillRect(62, 0, 2, 256);           // slim bright gold ribs
+  g.fillStyle = '#e2b44c'; g.fillRect(0, 230, 64, 26); g.fillStyle = '#ffe08a'; g.fillRect(0, 232, 64, 2);
+  for (let x = 4; x < 64; x += 12) { g.fillStyle = '#e2b44c'; g.beginPath(); g.moveTo(x, 230); g.lineTo(x + 6, 214); g.lineTo(x + 12, 230); g.fill(); }   // gold petal crest at the foot
   return tex(c);
 }
 // roof garden (64 m tile): square beds framed by 3 m paths with gold star inlays
@@ -433,13 +473,16 @@ function gableTex(W = 88, H = 56) {
   marble(g, 512, 326, '#f8efe9');
   g.strokeStyle = '#e2b44c'; g.lineCap = 'round';
   for (const sd of [-1, 1]) {
-    for (let t = 0.08; t < 0.92; t += 0.075) {                         // cusped panels down the rake, 5 m in from the edge
-      const x = sd * (W / 2 - 7) * (1 - t), y = 3 + (H - 10) * t, [cx, cy] = P(x, y);
+    const q = (t, ins) => { const ax = sd * (W / 2 - ins), ay = 2, bx = sd * (W / 2 - ins) * 0.96, by = 2 + (H - ins * 1.6) * 0.62, cx2 = 0, cy2 = H - ins * 1.6, u = 1 - t;
+      return [u * u * ax + 2 * u * t * bx + t * t * cx2, u * u * ay + 2 * u * t * by + t * t * cy2]; };   // the curved rake, inset
+    g.strokeStyle = '#e2b44c'; g.lineWidth = 3; g.beginPath(); for (let t = 0; t <= 1.001; t += 0.05) g.lineTo(...P(...q(t, 10))); g.stroke();   // inner gold line
+    for (let t = 0.06; t < 0.94; t += 0.07) {                          // cusped panels following the curved rake
+      const [x, y] = q(t, 6), [cx, cy] = P(x, y);
       g.fillStyle = '#3440a8'; g.beginPath(); for (let k = 0; k < 4; k++) { const a = (k / 4) * Math.PI * 2; g.moveTo(cx + Math.cos(a) * 9 + 8, cy + Math.sin(a) * 9); g.arc(cx + Math.cos(a) * 9, cy + Math.sin(a) * 9, 8, 0, Math.PI * 2); } g.fill();
       g.lineWidth = 2; g.stroke(); star8(g, cx, cy, 5, '#ffe08a');
     }
-    g.lineWidth = 3;                                                     // gold scrolls either side of the medallion
-    for (const [x0, y0, r] of [[10, 30, 5], [17, 22, 4], [7, 40, 3.5]]) {
+    g.lineWidth = 3; g.strokeStyle = '#e2b44c';                         // gold filigree scrolls filling the tympanum
+    for (const [x0, y0, r] of [[13, 17, 5], [22, 9, 4.5], [10, 30, 4.4], [27, 20, 3.4], [5, 38, 3], [18, 30, 3.2], [32, 8, 3.4]]) {
       const [cx, cy] = P(sd * x0, y0);
       g.beginPath(); for (let a = 0; a < Math.PI * 3.2; a += 0.15) { const q = r * sx * (1 - a / (Math.PI * 3.6)); g.lineTo(cx + sd * Math.cos(a) * q, cy + Math.sin(a) * q); } g.stroke();
     }
@@ -524,9 +567,24 @@ export function createPalace(scene, preset, { makePortal } = {}) {
   body.add(detail); group.add(body);
   const kit = new Kit();
   const am = artifactMaterials();
+  // a glossy sheen: a fixed key light from upper left gives every dome and gold piece its shine
+  const glossy = (m, k) => {
+    const prev = m.onBeforeCompile;
+    m.onBeforeCompile = (sh) => {
+      prev(sh);
+      sh.fragmentShader = sh.fragmentShader.replace('#include <opaque_fragment>', `{
+        vec3 gV = normalize(vViewPosition), gH = normalize(normalize(vec3(-0.45, 0.6, 0.66)) + gV);
+        float gD = max(dot(normal, gH), 0.0);
+        outgoingLight += vec3(1.0, 0.94, 1.0) * (pow(gD, 60.0) * 1.2 + pow(gD, 9.0) * 0.16) * ${k.toFixed(2)};
+      }
+      #include <opaque_fragment>`);
+    };
+    m.customProgramCacheKey = () => 'toon-rim-gloss-' + k;
+    return m;
+  };
   const tile = (t, emissive, opts = {}) => toon('#ffffff', { map: t.map, emissiveMap: t.glow, emissive, emissiveIntensity: 0.5, vertexColors: true, ...opts });
   const steps = (() => { const [c, g] = cv(64, 64); g.fillStyle = '#fbf3ee'; g.fillRect(0, 0, 64, 64); g.fillStyle = '#e8c9c6'; g.fillRect(0, 50, 64, 14); g.fillStyle = '#d9b25a'; g.fillRect(0, 48, 64, 2); return tex(c); })();
-  const garden = gardenTex(), dome = domeTex(), jali = jaliTex();
+  const garden = gardenTex(), dome = domeTex(), jali = jaliTex(), lancetT = lancetTex(), starWin = starWinTex();
   const mats = {
     ivory: toon('#ffffff', { vertexColors: true, emissive: '#2a1838', emissiveIntensity: 0.3 }),
     podium: tile(podiumTex(), '#ffb070'),
@@ -534,10 +592,12 @@ export function createPalace(scene, preset, { makePortal } = {}) {
     tower: tile(towerTex(), '#ffd36a'),
     spire: tile(spireTex(), '#9fa8ff'),
     drum: tile(drumTex(), '#a99bff'),
-    lancet: tile(lancetTex(), '#b0a8ff', { side: THREE.DoubleSide }),
+    lancet: tile(lancetT, '#b0a8ff', { side: THREE.DoubleSide }),
+    lancetDark: tile(lancetT, '#3a46c8', { side: THREE.DoubleSide }),
+    starwin: tile(starWin, '#8a90ff', { side: THREE.DoubleSide }),     // the small arched windows: dark cobalt
     gate: tile(gateTex(), '#ffc890', { side: THREE.DoubleSide }),
-    dome: toon('#ffffff', { map: dome, vertexColors: true, emissive: '#2a1040', emissiveIntensity: 0.4 }),
-    gold: toon('#ffffff', { vertexColors: true, emissive: '#6a4a10', emissiveIntensity: 0.55 }),
+    dome: glossy(toon('#ffffff', { map: dome, vertexColors: true, emissive: '#2a1040', emissiveIntensity: 0.4 }), 1),
+    gold: glossy(toon('#ffffff', { vertexColors: true, emissive: '#6a4a10', emissiveIntensity: 0.55 }), 0.7),
     garden: nightGrade(new THREE.MeshLambertMaterial({ map: garden, vertexColors: true, emissive: '#10202a', emissiveIntensity: 0.4 }), 'roof-garden'),
     paving: toon('#ffffff', { map: courtFloorTex(), vertexColors: true, emissive: '#2a1838', emissiveIntensity: 0.3 }),
     steps: toon('#ffffff', { map: steps, vertexColors: true, emissive: '#2a1838', emissiveIntensity: 0.3 }),
@@ -548,7 +608,7 @@ export function createPalace(scene, preset, { makePortal } = {}) {
     ashlar: toon('#ffffff', { map: ashlarTex(), vertexColors: true, emissive: '#2a1838', emissiveIntensity: 0.3 }),
     shaft: toon('#ffffff', { map: shaftTex(), vertexColors: true, emissive: '#2a1838', emissiveIntensity: 0.3 }),
     pier: toon('#ffffff', { map: pierTex(), vertexColors: true, emissive: '#2a1838', emissiveIntensity: 0.3 }),
-    gable: toon('#ffffff', { map: gableTex(), vertexColors: true, emissive: '#2a1838', emissiveIntensity: 0.3 }),
+    gable: toon('#ffffff', { map: gableTex(88, 48), vertexColors: true, emissive: '#2a1838', emissiveIntensity: 0.3 }),
     corbel: toon('#ffffff', { map: corbelTex(), alphaTest: 0.5, vertexColors: true, emissive: '#2a1838', emissiveIntensity: 0.3 }),
     jali: toon('#ffffff', { map: jali, alphaTest: 0.5, side: THREE.DoubleSide, vertexColors: true, emissive: '#2a1838', emissiveIntensity: 0.3 }),
     water: waterMaterial(0.3, false, true),
@@ -568,12 +628,13 @@ export function createPalace(scene, preset, { makePortal } = {}) {
   const CZ0 = CASCADE.z0 / S, CZ1 = CASCADE.z1 / S, CW = CASCADE.water / S, CHW = CASCADE.hw / S;
 
   // ---- landmarks first, so the garden planting keeps clear of them ----
-  const CORNERS = [[-356, 92], [420, 183], [-356, -305], [420, -305]];          // purple-domed corner pavilions
-  const FRONT_TOWERS = [[235, 207, 22, 170, 30], [-272, 207, 16, 150, 20]];     // [x, z, r, dome base, dome height]
-  const GREAT_DOME = { x: -190, z: -100, r: 40 };
+  const CORNERS = [[-398, 258], [451, 262]];                                   // the two front corner towers          // purple-domed corner pavilions
+  const FRONT_TOWERS = [[232, 214, 25, 178, 36], [-224, 212, 12, 146, 18], [-302, 230, 13, 132, 20]];     // [x, z, r, dome base, dome height]
+  const GREAT_DOME = { x: -200, z: 30, r: 44 };
   // needle spires [x, z, top, width]: the cluster behind the gate, the slim western spires, the tall glass spires east
-  const SPIRES = [[-20, 150, 394, 26], [-50, 162, 345, 16], [12, 162, 347, 16], [-80, 170, 316, 12],
-    [155, 60, 258, 8], [-303, 40, 290, 12], [-253, 20, 260, 8],
+  // (the gate cluster stands at the back, on the crown garden, as the owner's elevation shows)
+  const SPIRES = [[-26, 18, 394, 26], [-52, 30, 345, 16], [22, 22, 347, 16], [-78, 34, 316, 12],
+    [155, 60, 258, 8], [-322, 120, 297, 15], [-285, 100, 257, 10],
     [206, -120, 316, 16], [228, -60, 278, 12], [281, -200, 287, 18], [322, -215, 333, 22], [351, -190, 353, 26], [380, -210, 295, 18]];
   const DOME_TOWERS = [[35, 60, 16, 258, 23], [113, 0, 17, 252, 20]];           // [x, z, r, dome base, dome height]
   const CONE = { x: 0, z: -280, r: 22, top: 255 };
@@ -631,7 +692,7 @@ export function createPalace(scene, preset, { makePortal } = {}) {
   };
   // P01-01 / A001 lancet window, small: glass, a stepped frame, a gold hood and a sill
   const lancet = (k, u, y, w, h) => {
-    k.add('lancet', archPanel(w, h).translate(u, y, 0.15), '#ffffff');
+    k.add('lancetDark', archPanel(w, h).translate(u, y, 0.15), '#7480f4');
     k.add('ivory', new THREE.TubeGeometry(pointedArchPath(w + w * 0.12, h + w * 0.06), 12, Math.max(0.35, w * 0.08), 4, false).translate(u, y, 0.5), PEARL);   // roll frame
     k.add('gold', new THREE.TubeGeometry(pointedArchPath(w + w * 0.36, h + w * 0.2), 12, Math.max(0.16, w * 0.035), 3, false).translate(u, y - 0.2, 0.9), GOLD);   // gold hood
     k.add('ivory', box(w + 1.4, 0.7, 1.6, u, y - 0.7, 0.8), PEARL);
@@ -694,16 +755,16 @@ export function createPalace(scene, preset, { makePortal } = {}) {
   };
   // P02-3 octagonal wall bastion: lancets in two stages, a corbelled balcony with a jali ring,
   // gold rings, a purple onion dome on a drum, pinnacles round the parapet
-  const bastion = (x, z, h, r = 10) => {
-    kit.frame(x, 0, z);
+  const bastion = (x, z, h, r = 10, y0 = 0) => {
+    kit.frame(x, y0, z);
     kit.add('ivory', oct(r + 2, 6, -4), ROSE);
     kit.add('ivory', oct(r, h, 0), PEARL, '#eeaab6');
     for (const y of [2, h * 0.45, h - 1]) kit.add('gold', ring(r + 0.6, 0.9, y, 8).rotateY(Math.PI / 8), GOLD);
     for (let i = 0; i < 8; i += 2) {
       const a = (i / 8) * Math.PI * 2, c = Math.cos(a), sn = Math.sin(a), d = r * 0.924;
-      kit.frame(x + sn * d, 0, z + c * d, a);
+      kit.frame(x + sn * d, y0, z + c * d, a);
       for (const [y, hh] of [[h * 0.14, h * 0.24], [h * 0.58, h * 0.26]]) lancet(kit, 0, y, r * 0.38, hh);
-      kit.frame(x, 0, z);
+      kit.frame(x, y0, z);
     }
     const by = h * 0.47;                                                                                   // the balcony on corbels
     kit.add('ivory', ring(r + 3.2, 1.2, by, 16), PEARL);
@@ -715,9 +776,9 @@ export function createPalace(scene, preset, { makePortal } = {}) {
     kit.add('gold', ring(r * 0.86, 0.8, h + 8.6, 16), GOLD);
     kit.add('dome', onion(r * 0.9, r * 1.5, 16).translate(0, h + 9, 0), '#ffffff');
     kit.add('gold', finialGeo(r * 0.16).translate(0, h + 9 + r * 1.5 - 1, 0), GOLD);
-    for (let i = 0; i < 8; i++) { const a = (i / 8) * Math.PI * 2 + Math.PI / 8, p = kit.world(Math.cos(a) * (r + 1.3), 0, Math.sin(a) * (r + 1.3)); spirelets.push([p.x, h + 1.8, p.z, 0.45, 0]); }
+    for (let i = 0; i < 8; i++) { const a = (i / 8) * Math.PI * 2 + Math.PI / 8, p = kit.world(Math.cos(a) * (r + 1.3), 0, Math.sin(a) * (r + 1.3)); spirelets.push([p.x, y0 + h + 1.8, p.z, 0.45, 0]); }
     kit.frame();
-    solids.push({ x, z, r: r + 1, y0: -10, y1: h + 30 });
+    solids.push({ x, z, r: r + 1, y0: y0 - 10, y1: y0 + h + 30 });
     taken.push([x, z, r + 4]);
   };
   // colliders for an outline: vertical strips, each the span of the outline across it
@@ -736,19 +797,19 @@ export function createPalace(scene, preset, { makePortal } = {}) {
 
   // ---- the four stepped garden tiers ----
   const LOOK = [['podium', PEARL, 24, 52], ['wing', IVORY, 25, 76], ['podium', IVORY, 24, 69], ['wing', PEARL, 25, 33]];
-  const BASE = [-4, 50, 126, 195];
+  const BASE = [-4, 50, 152, 184];
   PALACE_TIERS.forEach(([x0, x1, z0, z1, t], k) => {
     const [key, tint, tw, th] = LOOK[k], w = x1 - x0, d = z1 - z0, cx = (x0 + x1) / 2, cz = (z0 + z1) / 2;
     if (PALACE_PLANS[k]) {                                       // a planned tier: rounded wings, walls dressed in real detail
       const pts = PALACE_PLANS[k];
       kit.add('ashlar', prism(pts, BASE[k], t, 12, 12), '#fff4f0', '#f0b8c0');                     // rose marble, deepening toward the foot
       kit.add('garden', roofPlane(pts, t + 0.15), '#ffffff');
-      const great = (x) => [-158, -92, 92, 158].some((c) => Math.abs(x - c) < 27) || Math.abs(x) < 62;
+      const great = (x) => [-168, -92, 92, 168].some((c) => Math.abs(x - c) < 29) || Math.abs(x) < 62;
       edgesOf(pts).forEach((e) => {
         const back = e.nz < -0.7;
         if (!back) parapet(e, t);
         if (e.nz > 0.15) {
-          dressEdge(e, BASE[k], t, { bay: k === 1 ? 24 : 20, win: k === 1 ? [11, 44, 14] : [8, 30, 10], skip: (x, z, pil) => (k === 1 && e.nz > 0.99 && (great(x) || (pil && Math.abs(x) < 70))) || (k === 2 && Math.abs(x) < 13), tint });
+          dressEdge(e, BASE[k], t, { bay: k === 1 ? 24 : 15, win: k === 1 ? [11, 50, 14] : [10, 20, 5], skip: (x, z, pil) => (k === 1 && e.nz > 0.99 && (great(x) || (pil && Math.abs(x) < 70))) || (k === 2 && Math.abs(x) < 13), tint });
           for (let u = -e.len / 2 + 5, i = 0; u < e.len / 2 - 3; u += 10, i++) {          // planting along the front, inset 7 m
             const x = e.mx + Math.cos(e.ang) * u - e.nx * 7, z = e.mz + Math.sin(e.ang) * u - e.nz * 7;
             if (roofAt(x, z) !== t || !clear(x, z, 4) || (Math.abs(x) < 64 && z > 100)) continue;
@@ -789,6 +850,25 @@ export function createPalace(scene, preset, { makePortal } = {}) {
   // ---- the stepped ground-storey front (owner's colour notes on sheet 03): landings, slanted stair
   // flanks, projecting pavilions, set-back two-storey arcades and the returns to the corners ----
   for (const b of PALACE_BLOCKS) {
+    if (b.kind === 'wing') {                                                  // a stepped wing on the ground-storey roof
+      const h = b.top - 52;
+      kit.add('ashlar', prism(b.pts, 48, b.top, 12, 12), '#fff4f0', '#f0b8c0');
+      kit.add('garden', roofPlane(b.pts, b.top + 0.15), '#ffffff');
+      edgesOf(b.pts).forEach((e) => {
+        if (e.nz < -0.7) return;
+        parapet(e, b.top);
+        if (e.nz > 0.15 && e.len > 6) {
+          dressEdge(e, 52, b.top, { bay: 11, win: [8, 22, h - 33] });
+          for (let u = -e.len / 2 + 4; u < e.len / 2 - 2; u += 9) {                                       // roses and cypress along the balustrade
+            const x = e.mx + Math.cos(e.ang) * u - e.nx * 5, z = e.mz + Math.sin(e.ang) * u - e.nz * 5;
+            if (roofAt(x, z) !== b.top || !clear(x, z, 3)) continue;
+            if (R() < 0.6) blossoms.push([x, b.top, z, 0.8 + R() * 0.3, R() * 6]); else cypress.push([x, b.top, z, 16 + R() * 8, 0]);
+          }
+        } else dressEdge(e, 52, b.top, { bay: 24 });
+      });
+      outlineSolids(b.pts, b.top - 3 / S, 6);
+      continue;
+    }
     const recess = b.kind === 'arcade' || b.kind === 'return' ? 4 : 0;
     const front = edgesOf(b.pts)[0];
     const pts = b.pts.map((q, i) => (i < 2 ? [q[0] - front.nx * recess, q[1] - front.nz * recess] : q));
@@ -806,8 +886,7 @@ export function createPalace(scene, preset, { makePortal } = {}) {
     }
     else if (b.kind === 'flank') dressEdge(ef, 0, b.top, { bay: 12, win: [4, 11, 5] });
     else if (b.kind === 'hall') {                                             // two arcaded storeys over the gate block
-      dressEdge(ef, 128, 164, { bay: 16, win: [7, 22, 5] });
-      dressEdge(ef, 164, 200, { bay: 10.7, win: [5, 20, 5] });
+      dressEdge(ef, 154, 186, { bay: 10.7, win: [6, 18, 5] });
       onEdge(kit, ef);
       for (let u = -ef.len / 2 + 4; u < ef.len / 2; u += 12) kit.add('gold', lathe([[0, 0], [1.4, 0.8], [0.9, 2.2], [1.7, 3.4], [0, 4.4]], 10).translate(u, b.top + 3.6, -0.6), GOLD);   // urns on the balustrade
       kit.frame();
@@ -825,7 +904,11 @@ export function createPalace(scene, preset, { makePortal } = {}) {
   // the podium face (T1 front, z 235) above the stepped blocks: real pilasters, lancets, cornice set
   for (const [xa, xb] of [[-385, -110], [110, 450]]) dressEdge(edgesOf([[xa, 235], [xb, 235], [xb, 200], [xa, 200]])[0], 0, 52, { bay: 18, win: [7, 20, 26] });
   // bastions where the steps meet, and before the curved wings of the lancet storey
-  for (const [x, z, h, r] of [[-330, 296, 62, 9], [-385, 250, 70, 10], [-196, 312, 58, 7], [400, 300, 66, 9], [450, 258, 74, 10], [200, 318, 60, 7]]) bastion(x, z, h, r);
+  for (const [x, z, h, r] of [[-330, 296, 62, 9], [-468, 262, 64, 6], [-196, 312, 58, 7], [400, 300, 66, 9], [484, 266, 50, 5], [200, 318, 60, 7]]) bastion(x, z, h, r);
+  // the dome terrace folds round two towers either side of the gate gable (owner's elevation)
+  for (const [x, h, r] of [[-66, 40, 11], [96, 36, 10]]) bastion(x, 113, h, r, 152);
+  // the crown garden's front: a storey of dark-blue arched windows under its balustrade
+  dressEdge(edgesOf([[-130, 40], [260, 40], [260, 0], [-130, 0]])[0], 184, 216, { bay: 13, win: [8, 17, 5] });
   // cypress and blossom before the arcades, as drawn
   for (const b of PALACE_BLOCKS) if (b.kind === 'arcade') {
     const [[ax, az], [bx]] = b.pts;
@@ -837,9 +920,9 @@ export function createPalace(scene, preset, { makePortal } = {}) {
 
   // ---- the great-lancet front: buttress pinnacles, four great lancets (A001) ----
   for (let x = -192.5; x <= 265; x += 25) {
-    if (Math.abs(x) < 62 || [92, 158].some((c) => Math.abs(Math.abs(x) - c) < 26) || !clear(x, FRONT + 3, 2)) continue;
-    kit.add('ivory', box(4, 82, 6, x, 50, FRONT + 3), IVORY);
-    spirelets.push([x, 132, FRONT + 3, 1.1, 0]);
+    if (Math.abs(x) < 62 || [92, 168].some((c) => Math.abs(Math.abs(x) - c) < 28) || !clear(x, FRONT + 3, 2)) continue;
+    kit.add('ivory', box(4, 100, 6, x, 50, FRONT + 3), IVORY);
+    spirelets.push([x, 150, FRONT + 3, 1.1, 0]);
   }
   // A001: flowing glass in a deep rose-gold reveal, stepped white and rose orders, a gold hood
   // mould, a central mullion with gilded transoms, jamb colonnettes with gold capitals, a sill
@@ -854,25 +937,12 @@ export function createPalace(scene, preset, { makePortal } = {}) {
     for (const sd of [-1, 1]) kit.add('ivory', box(1.6 * kq, 37 * kq, 1.2, x + sd * 5.6 * kq, y, z - 0.8), PEARL);   // stone mullions between the three lights
     kit.add('ivory', new THREE.TorusGeometry(11.4 * kq, 0.9 * kq, 5, 28).translate(x, y + 52 * (h / 69), z - 0.7), PEARL);   // the rose's stone ring
     kit.add('gold', new THREE.TorusGeometry(10.4 * kq, 0.35, 4, 28).translate(x, y + 52 * (h / 69), z - 0.3), GOLD);
-    // the crocketed gable over the window (sheet 03, A001): carved tympanum, gold rakes, crockets, finial
-    {
-      const gw = w / 2 + 6, gb = y + hs + 2, ga = y + h + 15;
-      const b0 = gb - y, arc = pointedArchShape(w + 8.4, h + 5.6).getPoints(20).map((q) => new THREE.Vector2(q.x, q.y - 0.8)).filter((q) => q.y > b0).reverse();
-      const sh = new THREE.Shape(); sh.moveTo(-gw, b0); sh.lineTo(arc[0].x, b0);        // the gable, its foot cut round the arch head
-      for (const q of arc) sh.lineTo(q.x, q.y);
-      sh.lineTo(arc[arc.length - 1].x, b0); sh.lineTo(gw, b0); sh.lineTo(0, ga - y); sh.lineTo(-gw, b0);
-      const slab = new THREE.ExtrudeGeometry(sh, { depth: 1.4, bevelEnabled: false, curveSegments: 10 });
-      const p = slab.attributes.position, uv = slab.attributes.uv;
-      for (let i = 0; i < p.count; i++) uv.setXY(i, (p.getX(i) + gw) / (gw * 2), (p.getY(i) - (gb - y)) / (ga - gb));
-      kit.add('gable', slab.translate(x, y, z + 0.6), '#ffffff');
-      const L = Math.hypot(gw, ga - gb), ang = Math.atan2(ga - gb, gw);
-      for (const sd of [-1, 1]) {
-        kit.add('gold', new THREE.BoxGeometry(L + 2, 1.5, 1.6).rotateZ(-sd * ang).translate(x + sd * gw / 2, (gb + ga) / 2 + 0.4, z + 1.6), GOLD);
-        for (let t = 0.1; t < 0.95; t += 0.14) spirelets.push([x + sd * gw * (1 - t), gb + (ga - gb) * t + 0.8, z + 1.6, 0.3, 0]);
-      }
-      kit.add('gold', needle(1, 7, 6).translate(x, ga, z + 1.2), GOLD);
-      kit.add('gold', finialGeo(1.8).translate(x, ga + 6.4, z + 1.2), GOLD);
+    // (no gable over these in the owner's hi-res elevation: the arch rises into carved rose spandrels)
+    for (const sd of [-1, 1]) {                                                                         // a carved rose in each spandrel
+      kit.add('rose12', new THREE.CircleGeometry(3.4, 16).translate(x + sd * (w / 2 + 2.4), y + h - 4, z + 0.3), '#ffd8e0');
+      kit.add('gold', new THREE.TorusGeometry(3.7, 0.3, 4, 16).translate(x + sd * (w / 2 + 2.4), y + h - 4, z + 0.5), GOLD);
     }
+    kit.add('gold', finialGeo(1.4).translate(x, y + h + 5.6, z + 1.4), GOLD);                           // a gold fleuron at the apex
     for (const sd of [-1, 1]) {
       kit.add('ivory', cyl(0.8, 0.8, hs, 8, x + sd * (w / 2 + 2.6), y, z + 0.8), PEARL);                  // colonnette
       kit.add('gold', box(2.4, 1, 2.4, x + sd * (w / 2 + 2.6), y + hs, z + 0.8), GOLD);                   // capital
@@ -882,20 +952,32 @@ export function createPalace(scene, preset, { makePortal } = {}) {
   };
   // P01-05 girih relief panels in the piers between the great windows: a recessed gold-framed
   // square of the ten-point star over a lancet niche, set in a moulded surround
-  for (const x of [-125, 125]) for (const [y, kind] of [[100, 'girih'], [64, 'niche']]) {
+  for (const x of [-130, 130]) for (const [y, kind] of [[100, 'girih'], [64, 'niche']]) {
     const z = FRONT + 0.2;
     kit.add('ivory', box(12, 1.2, 1.6, x, y - 1, z + 0.8), PEARL); kit.add('ivory', box(12, 1.2, 1.6, x, y + (kind === 'girih' ? 12 : 30), z + 0.8), PEARL);
     for (const sd of [-1, 1]) kit.add('ivory', box(1.2, kind === 'girih' ? 14 : 32, 1.6, x + sd * 5.4, y - 1, z + 0.8), PEARL);
     if (kind === 'girih') { kit.add('pier', scaleUV(new THREE.PlaneGeometry(9.6, 11).translate(x, y + 5.5, z + 0.1), 1, 1).translate(0, 0, 0), '#ffffff'); kit.add('rose12', new THREE.CircleGeometry(3.6, 20).translate(x, y + 5.5, z + 0.5), '#ffffff'); kit.add('gold', new THREE.TorusGeometry(3.9, 0.3, 4, 20).translate(x, y + 5.5, z + 0.7), GOLD); }
     else lancet(kit, x, y + 1, 6, 26);
   }
-  for (const x of [-158, -92, 92, 158]) {
-    greatWindow(x, 58, FRONT + 1.6, 35, 69);
-    for (const sd of [-1, 1]) {                                                                         // flanking pinnacle buttresses
-      kit.add('ivory', box(3.4, 66, 3.4, x + sd * (35 / 2 + 7), 54, FRONT + 2), IVORY);
-      kit.add('gold', box(3.8, 0.6, 3.8, x + sd * (35 / 2 + 7), 86, FRONT + 2), GOLD);
-      spirelets.push([x + sd * (35 / 2 + 7), 120, FRONT + 2, 0.9, 0]);
+  // the carved cobalt band under the lancet storey's cornice, with carved rose roundels in the spandrels
+  kit.add('band', scaleUV(new THREE.PlaneGeometry(400, 5.4).translate(0, 145.5, FRONT + 0.35), 89, 1), '#ffffff');
+  for (const y of [142.6, 148.4]) kit.add('gold', box(400, 0.6, 0.9, 0, y - 0.3, FRONT + 0.4), GOLD);
+  for (const x of [-130, 130]) {
+    kit.add('rose12', new THREE.CircleGeometry(4.2, 20).translate(x, 133, FRONT + 0.5), '#ffffff');
+    kit.add('gold', new THREE.TorusGeometry(4.5, 0.35, 4, 20).translate(x, 133, FRONT + 0.7), GOLD);
+  }
+  for (const x of [-168, -92, 92, 168]) {
+    greatWindow(x, 54, FRONT + 1.6, 39, 74);
+    for (const sd of [-1, 1]) {                                                                         // slender gold-capped piers
+      const px = x + sd * (39 / 2 + 6.5);
+      kit.add('ivory', box(3.4, 84, 3.4, px, 54, FRONT + 2), IVORY);
+      for (const y of [86, 112, 137]) kit.add('gold', box(3.9, 0.7, 3.9, px, y, FRONT + 2), GOLD);
+      spirelets.push([px, 138, FRONT + 2, 0.9, 0]);
     }
+  }
+  for (const x of [-208, -130, 130, 208]) {                                                             // crystal lanterns on brackets between the windows
+    kit.add('gold', box(1, 1, 5, x, 118, FRONT + 3), GOLD);
+    hanging.push([x, 116, FRONT + 6, 2.4, 0]);
   }
 
   // ---- the Rose Gate (A003), part by part off sheets 03 and 02 (map: castle-previews/v7/front-elevation-map.md) ----
@@ -907,7 +989,7 @@ export function createPalace(scene, preset, { makePortal } = {}) {
   // G5 buttress piers: twin colonnettes, a glass niche, a crystal lantern, gold capital band,
   //    a niche stage and a gold pinnacle cluster
   // G6 rose-glass lancet strips beside the piers; G7 the stained-glass door: lights, tracery tree, star medallion
-  const PF = GZ + 9, PW = 44, GB = 128, GA = 182;                           // porch front, gable half width, base, apex
+  const PF = GZ + 9, PW = 44, GB = 148, GA = 196;                           // porch front, gable half width, base, apex
   const ORD = [0, 1, 2, 3, 4].map((k) => ({ w: GW + 3 + k * 3.2, h: GH + 2 + k * 2, z: GZ + 0.6 + k * 1.6 }));
   kit.add('wing', wallBox(110, GB - 50, GZ - FRONT, 0, 50, (FRONT + GZ) / 2, 27.5, GB - 50), PEARL);
   kit.add('gate', archPanel(GW, GH).translate(0, SILL, GZ + 0.2), '#ffffff');
@@ -920,7 +1002,9 @@ export function createPalace(scene, preset, { makePortal } = {}) {
   // G3 the porch slab: gable over the arch, carved tympanum
   {
     const hw = ORD[4].w / 2 + 1.8, hh = ORD[4].h + 2.2;
-    const sh = new THREE.Shape(); sh.moveTo(-PW, SILL - 2); sh.lineTo(PW, SILL - 2); sh.lineTo(PW, GB); sh.lineTo(0, GA); sh.lineTo(-PW, GB); sh.lineTo(-PW, SILL - 2);
+    // the gable rises as a tall pointed arch, its sides swelling out before they meet (owner's hi-res elevation)
+    const sh = new THREE.Shape(); sh.moveTo(-PW, SILL - 2); sh.lineTo(PW, SILL - 2); sh.lineTo(PW, GB);
+    sh.quadraticCurveTo(PW * 0.96, GB + (GA - GB) * 0.62, 0, GA); sh.quadraticCurveTo(-PW * 0.96, GB + (GA - GB) * 0.62, -PW, GB); sh.lineTo(-PW, SILL - 2);
     sh.holes.push(new THREE.Path(pointedArchShape(hw * 2, hh).getPoints(24).map((p) => new THREE.Vector2(p.x, p.y + SILL - 0.4))));
     const slab = new THREE.ExtrudeGeometry(sh, { depth: 3, bevelEnabled: false, curveSegments: 16 });
     const p = slab.attributes.position, uv = slab.attributes.uv;
@@ -930,12 +1014,17 @@ export function createPalace(scene, preset, { makePortal } = {}) {
     kit.add('gold', new THREE.TubeGeometry(pointedArchPath(hw * 2 - 0.2, hh - 0.2), 48, 0.6, 6, false).translate(0, SILL - 0.4, PF + 0.3), GOLD);   // inner gold edge
     kit.add('gold', new THREE.TubeGeometry(pointedArchPath(hw * 2 + 7.4, hh + 4.6), 48, 0.85, 6, false).translate(0, SILL - 0.6, PF + 0.4), GOLD);   // hood mould
     for (const sd of [-1, 1]) kit.add('gold', box(6.5, 1.4, 4, sd * 42.5, GB - 1.4, PF - 1.6), GOLD);                                              // string course at the gable foot
-    const L = Math.hypot(PW, GA - GB), ang = Math.atan2(GA - GB, PW);
+    const rake = (sd, inset, z) => new THREE.QuadraticBezierCurve3(new THREE.Vector3(sd * (PW - inset), GB - 1, z), new THREE.Vector3(sd * (PW * 0.96 - inset), GB + (GA - GB) * 0.62 - inset * 0.4, z), new THREE.Vector3(0, GA - inset * 1.6, z));
     for (const sd of [-1, 1]) {
-      kit.add('gold', new THREE.BoxGeometry(L + 3, 2.6, 2.6).rotateZ(-sd * ang).translate(sd * PW / 2, (GB + GA) / 2 + 0.6, PF + 0.2), GOLD);      // gold raking moulding
-      kit.add('ivory', new THREE.BoxGeometry(L - 6, 1.4, 1.4).rotateZ(-sd * ang).translate(sd * (PW / 2 - 1.6), (GB + GA) / 2 - 3.2, PF + 0.4), PEARL);   // inner ivory moulding
-      kit.add('gold', new THREE.BoxGeometry(L - 10, 0.5, 0.6).rotateZ(-sd * ang).translate(sd * (PW / 2 - 2.6), (GB + GA) / 2 - 5.2, PF + 0.3), GOLD);
-      for (let t = 0.06; t < 0.95; t += 0.085) spirelets.push([sd * PW * (1 - t), GB + (GA - GB) * t + 1.4, PF + 0.2, 0.42, 0]);   // crockets up the rakes
+      kit.add('gold', new THREE.TubeGeometry(rake(sd, 0, PF + 0.4), 24, 1.4, 6, false), GOLD);                 // gold raking moulding
+      kit.add('ivory', new THREE.TubeGeometry(rake(sd, 3.4, PF + 0.4), 20, 0.8, 5, false), PEARL);            // inner ivory moulding
+      kit.add('gold', new THREE.TubeGeometry(rake(sd, 5.4, PF + 0.3), 20, 0.32, 4, false), GOLD);            // inner gold line
+      const c = rake(sd, -1.2, PF + 0.2);
+      for (let t = 0.06; t < 0.95; t += 0.075) { const q = c.getPoint(t); spirelets.push([q.x, q.y + 0.6, q.z, 0.42, 0]); }   // crockets up the rakes
+    }
+    for (const sd of [-1, 1]) for (const [t, r] of [[0.32, 2.2], [0.62, 1.8]]) {                        // carved gold scrolls in the tympanum
+      const q = rake(sd, 9, PF + 0.3).getPoint(t);
+      kit.add('gold', new THREE.TorusGeometry(r, 0.3, 4, 14, Math.PI * 1.5).rotateZ(sd > 0 ? 0 : Math.PI).translate(q.x, q.y, PF + 0.3), GOLD);
     }
     kit.add('gold', ring(2.6, 1.6, GA - 1, 12), GOLD);                                                    // the gable finial
     kit.add('gold', needle(1.8, 14, 8).translate(0, GA + 0.6, PF - 0.6), GOLD);
@@ -947,14 +1036,14 @@ export function createPalace(scene, preset, { makePortal } = {}) {
     kit.add('ivory', lotusGeo().scale(4.2, 4.6, 3).translate(0, SILL - 0.6 + hh + 4.6 - 1.4, PF + 1.2), '#fbe8e2');   // A003 lotus keystone
     kit.add('gold', lathe([[0, -0.2], [0.55, -0.12], [0.75, 0.08], [0, 0.12]], 12).scale(4.2, 4.6, 3).translate(0, SILL - 0.6 + hh + 4.6 - 1.4, PF + 1.2), GOLD);
     {                                                                                                   // P01-02 twelve-petal rose in the tympanum
-      const ry = GB + 44, rr = 4.6;
+      const ry = GB + 17, rr = 7.4;
       kit.add('rose12', new THREE.CircleGeometry(rr, 32).translate(0, ry, PF + 0.15), '#ffffff');
       kit.add('gold', new THREE.TorusGeometry(rr + 0.3, 0.45, 6, 32).translate(0, ry, PF + 0.3), GOLD);
       for (const [dx, dy] of [[0, 1], [0, -1], [1, 0], [-1, 0]]) kit.add('gold', new THREE.OctahedronGeometry(0.9, 0).scale(dx ? 1.3 : 0.7, dy ? 1.3 : 0.7, 0.4).translate(dx * (rr + 1.4), ry + dy * (rr + 1.4), PF + 0.3), GOLD);
     }
     for (const sd of [-1, 1]) kit.add('gold', lathe([[0, 0], [0.9, 0.6], [0.5, 2.6], [0, 3.6]], 6).translate(sd * 2.6, GA + 3, PF - 0.6), GOLD);
   }
-  const roseY = GB + 44;
+  const roseY = GB + 17;
   // G4 jamb shafts, one per order, gold annulets and lotus capitals at the springing
   // A010 / P01-C lotus capital: gold sawtooth necking, an ivory bell ringed by gold-edged petals, a gold abacus
   const lotusCapital = (x, y, z, r) => {
@@ -986,7 +1075,7 @@ export function createPalace(scene, preset, { makePortal } = {}) {
     for (const dx of [-5, 5]) {                                                                             // clustered shafts on the face
       for (const [ox, oz, tint] of [[-1.3, 0.3, PEARL], [1.3, 0.3, PEARL], [0, 1.5, ROSE]]) {
         kit.add('shaft', scaleUV(cyl(0.8, 0.8, GB - 62, 8, cx + dx + ox, 54, z1 + oz, true), 2, (GB - 62) / 7), tint);
-        for (const y of [66, 80, 94, 108]) kit.add('gold', ring(1.05, 0.7, y, 8).translate(cx + dx + ox, 0, z1 + oz), GOLD);
+        for (const y of [66, 82, 98, 114, 130]) kit.add('gold', ring(1.05, 0.7, y, 8).translate(cx + dx + ox, 0, z1 + oz), GOLD);
       }
       kit.add('ivory', box(5, 2.2, 4, cx + dx, 53, z1 + 0.8), PEARL);
       lotusCapital(cx + dx, GB - 8, z1 + 0.8, 1.15);
@@ -1007,8 +1096,8 @@ export function createPalace(scene, preset, { makePortal } = {}) {
     solids.push({ minX: cx - 8, maxX: cx + 8, minZ: FRONT, maxZ: z1 + 1, y0: 40, y1: GB + 50 });
     // G6 rose-glass lancet strip beside the pier
     kit.add('ivory', box(9, GB - 54, 3, sd * 59.5, 52, FRONT + 1.5), IVORY);
-    kit.add('lancet', archPanel(4.6, 62).translate(sd * 59.5, 58, FRONT + 3.1), '#ffb0c8');
-    kit.add('gold', new THREE.TubeGeometry(pointedArchPath(5.6, 62.6), 24, 0.3, 4, false).translate(sd * 59.5, 58, FRONT + 3.2), GOLD);
+    kit.add('lancet', archPanel(4.6, 84).translate(sd * 59.5, 58, FRONT + 3.1), '#ffb0c8');
+    kit.add('gold', new THREE.TubeGeometry(pointedArchPath(5.6, 84.6), 24, 0.3, 4, false).translate(sd * 59.5, 58, FRONT + 3.2), GOLD);
     cypress.push([sd * 47, SILL, PF + 12, 16, 0]);                                                       // the topiary cones before the piers
   }
   // the light from the door spilling out over the jambs and the landing, fading as it spreads
@@ -1034,8 +1123,13 @@ export function createPalace(scene, preset, { makePortal } = {}) {
   const flightLen = Math.hypot(CZ1 - CZ0, SILL), flightA = Math.atan2(SILL, CZ1 - CZ0);
   for (const [fx, fhw] of CASCADE.flights) {
     kit.add('steps', flight(fx / S, fhw / S, CZ0, SILL, CZ1, 0, 0.45 / S), '#ffffff');
-    const runner = flight(fx / S, fhw / S * 0.34, CZ0, SILL + 0.06, CZ1, 0.06, 1e9);
-    kit.add('ivory', runner, '#e88aa8');                                                     // the rose runner
+    const runner = flight(fx / S, fhw / S * 0.22, CZ0, SILL + 0.06, CZ1, 0.06, 1e9);
+    kit.add('ivory', runner, '#f4c6d0');                                                     // the rose runner
+    for (let t = 1 / 8; t < 0.99; t += 1 / 8) {                                               // half-landings: a moulded nosing with a gold edge every few steps
+      const y = SILL * (1 - t), z = CZ0 + (CZ1 - CZ0) * t;
+      kit.add('ivory', box(fhw / S * 2, 0.9, 2.4, fx / S, y - 0.4, z), PEARL);
+      kit.add('gold', box(fhw / S * 2, 0.25, 0.4, fx / S, y + 0.4, z + 1.1), GOLD);
+    }
     for (const sd of [-1, 1]) kit.add('gold', flight(fx / S + sd * fhw / S * 0.36, 0.35, CZ0, SILL + 0.1, CZ1, 0.1, 1e9), GOLD);
   }
   for (const sd of [-1, 1]) for (const rx of [sd * (CW + 0.5), sd * 95.5]) for (let t = 0; t <= 1.001; t += 0.25) {   // newel pedestals with urns
@@ -1074,30 +1168,84 @@ export function createPalace(scene, preset, { makePortal } = {}) {
     }
   }
 
-  // ---- corner pavilions: rose pedestal, starred banner shaft, gallery, drum, purple onion dome ----
+  // ---- the corner towers (owner's hi-res elevation, read part by part): a marble plinth with a small
+  // arched light; an octagonal shaft with a great star window on each main face and rose-violet
+  // lights on the diagonals, colonnettes at the angles; a corbelled gallery with a jali balustrade
+  // and corner pinnacles; crystal lanterns on gold scroll brackets; an arcaded drum; a glossy
+  // purple onion dome with a gold crest, and a gold cross ----
   for (const [x, z] of CORNERS) {
+    const r = 31, ap = r * 0.924, fw = r * 0.765;
     kit.frame(x, 0, z);
-    kit.add('ivory', oct(33, 44, -4), ROSE);
-    kit.add('tower', oct(29, 87, 40), IVORY, '#eea6b4');
-    for (const y of [40, 90, 127]) kit.add('gold', ring(30.2, 1.6, y - 0.8, 8).rotateY(Math.PI / 8), GOLD);
-    kit.add('ivory', ring(33, 4, 127, 8).rotateY(Math.PI / 8), PEARL);
-    kit.add('drum', scaleUV(new THREE.CylinderGeometry(24, 25, 18, 16, 1, true).translate(0, 140, 0), 8, 1), IVORY);
-    kit.add('gold', ring(26, 1.6, 148), GOLD);
-    kit.add('dome', onion(27, 32).translate(0, 149, 0), '#ffffff');
-    kit.add('gold', finialGeo(4.6).translate(0, 180, 0), GOLD);
-    for (let i = 0; i < 8; i++) { const a = (i / 8) * Math.PI * 2 + Math.PI / 8, p = kit.world(Math.cos(a) * 32, 0, Math.sin(a) * 32); spirelets.push([p.x, 131, p.z, 0.7, 0]); }
-    for (const [dx, dz] of [[1, 0], [-1, 0], [0, 1], [0, -1]]) {                // crystal lanterns on gold bracket arms
-      kit.add('gold', box(Math.abs(dx) * 8 + 1, 1, Math.abs(dz) * 8 + 1, dx * 33, 110, dz * 33), GOLD);
-      const p = kit.world(dx * 37, 0, dz * 37); hanging.push([p.x, 110, p.z, 3.2, 0]);
+    kit.add('ashlar', wallBox(66, 30, 66, 0, -6, 0, 12, 12), '#fff6f2', '#f2c8cc');                    // the plinth
+    kit.add('ivory', box(70, 2.4, 70, 0, 24, 0), PEARL); kit.add('gold', box(70.6, 0.6, 70.6, 0, 26.2, 0), GOLD);
+    kit.add('ivory', box(68, 2, 68, 0, -6, 0), ROSE);
+    kit.add('ivory', oct(r + 2.4, 4, 26.4), ROSE);                                                        // the base mouldings
+    kit.add('ivory', oct(r, 104, 30), PEARL, '#f4cdd2');                                                 // the shaft
+    for (const y of [30.4, 64, 130]) kit.add('gold', ring(r + 0.7, 1, y, 8).rotateY(Math.PI / 8), GOLD);
+    for (let i = 0; i < 8; i++) {
+      const a = (i / 8) * Math.PI * 2, ca = a + Math.PI / 8;
+      const cxx = Math.sin(ca) * (r + 0.6), czz = Math.cos(ca) * (r + 0.6);
+      kit.add('ivory', cyl(1.1, 1.1, 100, 6, cxx, 30, czz), PEARL);                                         // angle colonnettes
+      for (const y of [56, 96]) kit.add('gold', ring(1.5, 0.8, y, 6).translate(cxx, 0, czz), GOLD);
+      kit.frame(x + Math.sin(a) * ap, 0, z + Math.cos(a) * ap, a);
+      if (i % 2 === 0) {                                                                                  // a great star window
+        kit.add('starwin', archPanel(fw * 0.62, 74).translate(0, 38, 0.2), '#ffffff');
+        kit.add('gold', new THREE.TubeGeometry(pointedArchPath(fw * 0.62 + 0.6, 74.4), 24, 0.55, 5, false).translate(0, 38, 0.5), GOLD);
+        kit.add('ivory', new THREE.TubeGeometry(pointedArchPath(fw * 0.62 + 3, 76), 24, 0.9, 5, false).translate(0, 37.6, 0.5), PEARL);
+        kit.add('gold', box(fw * 0.7, 1.2, 1.6, 0, 36.6, 0.8), GOLD);
+      } else {                                                                                            // rose-violet lights on the diagonals
+        kit.add('lancet', archPanel(fw * 0.42, 64).translate(0, 42, 0.2), '#ffc0e0');
+        kit.add('gold', new THREE.TubeGeometry(pointedArchPath(fw * 0.42 + 0.6, 64.4), 20, 0.4, 4, false).translate(0, 42, 0.45), GOLD);
+      }
+      kit.frame(x, 0, z);
     }
+    for (let i = 0; i < 16; i++) { const a = (i / 16) * Math.PI * 2; kit.add('ivory', box(1.6, 4, 3.4, 0, 126, 0).translate(0, 0, r + 1.2).rotateY(a), PEARL); }   // corbels
+    kit.add('ivory', ring(r + 4.4, 1.6, 130, 24), PEARL);                                                 // the gallery
+    kit.add('jali', scaleUV(new THREE.CylinderGeometry(r + 4, r + 4, 3.2, 24, 1, true).translate(0, 133.2, 0), 24, 1), IVORY);
+    kit.add('gold', ring(r + 4.3, 0.5, 134.8, 24), GOLD);
+    for (let i = 0; i < 8; i++) { const a = (i / 8) * Math.PI * 2 + Math.PI / 8, p = kit.world(Math.sin(a) * (r + 3.6), 0, Math.cos(a) * (r + 3.6)); spirelets.push([p.x, 131.6, p.z, 0.75, 0]); }
+    kit.add('drum', scaleUV(new THREE.CylinderGeometry(24, 25, 18, 16, 1, true).translate(0, 140, 0), 8, 1), IVORY);
+    kit.add('ivory', ring(26.4, 2, 148, 24), PEARL); kit.add('gold', ring(26, 1.4, 150, 24), GOLD);
+    kit.add('dome', onion(27, 34).translate(0, 151, 0), '#ffffff');
+    for (let i = 0; i < 16; i++) { const a = (i / 16) * Math.PI * 2; kit.add('gold', new THREE.ConeGeometry(1.3, 3.4, 4).translate(Math.sin(a) * 26.4, 153.4, Math.cos(a) * 26.4), GOLD); }   // gold crest
+    kit.add('gold', ring(3.4, 1.4, 184, 12), GOLD);
+    kit.add('gold', needle(1.8, 10, 8).translate(0, 185, 0), GOLD);
+    kit.add('gold', finialGeo(4.4).translate(0, 194, 0), GOLD);
+    for (const sd of [-1, 1]) {                                                                           // crystal lanterns on gold scroll brackets
+      kit.add('gold', box(12, 1, 1, sd * (r + 6), 118, 0), GOLD);
+      kit.add('gold', new THREE.TorusGeometry(3, 0.45, 4, 12, Math.PI).rotateZ(sd > 0 ? -Math.PI / 2 : Math.PI / 2).translate(sd * (r + 3), 115, 0), GOLD);
+      kit.add('gold', box(9, 0.8, 0.8, sd * (r + 4.5), 104, 0), GOLD);
+      for (const [dx, y, sc] of [[r + 12, 116, 3.4], [r + 9, 101, 2.8], [r + 4, 112, 2.4]]) { const p = kit.world(sd * dx, 0, 2); hanging.push([p.x, y, p.z, sc, 0]); }
+    }
+    kit.frame(x, 0, z + 33.1); lancet(kit, 0, -1, 8, 19);                                               // the plinth's arched light
     kit.frame();
-    solids.push({ x, z, r: 33, y0: -10, y1: 200 });
+    solids.push({ minX: x - 33, maxX: x + 33, minZ: z - 33, maxZ: z + 33, y0: -10, y1: 24 });
+    solids.push({ x, z, r: r + 5, y0: 20, y1: 200 });
   }
+
   // the tall purple-domed towers standing against the lancet front
+  // in stages, as drawn: each stage a ring of dark-blue pointed windows between angle colonnettes,
+  // closed by a corbelled jali balcony with a gold rail
   for (const [x, z, r, yb, dh] of FRONT_TOWERS) {
     kit.frame(x, 0, z);
-    kit.add('tower', oct(r, yb + 4, -4), IVORY, '#eea6b4');
-    for (const y of [52, 110, yb - 2]) kit.add('gold', ring(r + 1.2, 1.4, y, 8).rotateY(Math.PI / 8), GOLD);
+    kit.add('ivory', oct(r, yb + 4, -4), PEARL, '#efb6c0');
+    const ap = r * 0.924, fw = r * 0.765, st = [52, 52 + (yb - 56) * 0.5, yb - 4];
+    for (let k = 0; k < 2; k++) {
+      const y0 = st[k], y1 = st[k + 1], hh = y1 - y0;
+      for (let i = 0; i < 8; i++) {
+        const a = (i / 8) * Math.PI * 2;
+        if (Math.cos(a) < -0.1) continue;                                                                 // the faces that are seen
+        kit.frame(x + Math.sin(a) * ap, 0, z + Math.cos(a) * ap, a);
+        lancet(kit, 0, y0 + hh * 0.16, fw * (k ? 0.42 : 0.5), hh * 0.62);
+        kit.frame(x, 0, z);
+      }
+      for (let i = 0; i < 8; i++) { const a = (i / 8) * Math.PI * 2 + Math.PI / 8; kit.add('ivory', cyl(0.8, 0.8, hh - 2, 6, Math.sin(a) * (r + 0.4), y0 + 1, Math.cos(a) * (r + 0.4)), PEARL); }
+      for (let i = 0; i < 12; i++) { const a = (i / 12) * Math.PI * 2; kit.add('ivory', box(1.2, 2.6, 2.4, 0, y1 - 2.6, 0).translate(0, 0, r + 0.8).rotateY(a), PEARL); }   // corbels
+      kit.add('ivory', ring(r + 3, 1.2, y1, 16), PEARL);
+      kit.add('jali', scaleUV(new THREE.CylinderGeometry(r + 2.8, r + 2.8, 2.6, 16, 1, true).translate(0, y1 + 2.5, 0), 12, 1), IVORY);
+      kit.add('gold', ring(r + 3, 0.4, y1 + 3.8, 16), GOLD);
+    }
+    for (const y of [52, yb - 2]) kit.add('gold', ring(r + 1.2, 1.4, y, 8).rotateY(Math.PI / 8), GOLD);
     kit.add('ivory', ring(r + 3, 3, yb - 3, 8).rotateY(Math.PI / 8), PEARL);
     kit.add('drum', scaleUV(new THREE.CylinderGeometry(r * 0.86, r * 0.9, 10, 16, 1, true).translate(0, yb + 5, 0), 6, 0.5), IVORY);
     kit.add('dome', onion(r * 1.05, dh).translate(0, yb + 10, 0), '#ffffff');
@@ -1114,22 +1262,26 @@ export function createPalace(scene, preset, { makePortal } = {}) {
     const { x, z, r } = GREAT_DOME, y0 = roofAt(x, z);
     kit.frame(x, 0, z);
     kit.add('ivory', ring(r + 6, 4, y0, 24), PEARL);
-    kit.add('drum', scaleUV(new THREE.CylinderGeometry(r, r + 1, 44, 24, 1, true).translate(0, y0 + 26, 0), 14, 2), IVORY);
-    for (const y of [y0 + 4, y0 + 26, y0 + 47]) kit.add('gold', ring(r + 1.2, 1.4, y - 0.7), GOLD);
-    kit.add('ivory', ring(r + 3, 3, y0 + 46, 24), PEARL);
-    kit.add('dome', onion(r + 4, 58, 32, 12).translate(0, y0 + 48, 0), '#ffffff');
-    kit.add('gold', ring(r * 0.86, 2, y0 + 47), GOLD);
-    kit.add('gold', needle(2.2, 32, 8).translate(0, y0 + 104, 0), GOLD);
-    kit.add('gold', finialGeo(4).translate(0, y0 + 134, 0), GOLD);
+    kit.add('drum', scaleUV(new THREE.CylinderGeometry(r, r + 1, 66, 24, 1, true).translate(0, y0 + 33, 0), 14, 3), IVORY);
+    for (const y of [y0 + 4, y0 + 34, y0 + 67]) kit.add('gold', ring(r + 1.2, 1.4, y - 0.7), GOLD);
+    kit.add('ivory', ring(r + 4.4, 1.6, y0 + 33, 24), PEARL);                                  // the balcony ring between the window stages
+    kit.add('jali', scaleUV(new THREE.CylinderGeometry(r + 4.2, r + 4.2, 2.6, 24, 1, true).translate(0, y0 + 35.9, 0), 24, 1), IVORY);
+    kit.add('gold', ring(r + 4.4, 0.4, y0 + 37.2, 24), GOLD);
+    kit.add('ivory', ring(r + 3, 3, y0 + 66, 24), PEARL);
+    kit.add('dome', onion(r + 4, 58, 32, 12).translate(0, y0 + 68, 0), '#ffffff');
+    kit.add('gold', ring(r * 0.86, 2, y0 + 67), GOLD);
+    for (let i = 0; i < 16; i++) { const a = (i / 16) * Math.PI * 2, p = kit.world(Math.cos(a) * (r + 3.4), 0, Math.sin(a) * (r + 3.4)); kit.add('gold', new THREE.ConeGeometry(1.4, 3.6, 4).translate(p.x - x, y0 + 70.4, p.z - z), GOLD); }   // gold crest round the foot of the bulb
+    kit.add('gold', needle(2.2, 32, 8).translate(0, y0 + 124, 0), GOLD);
+    kit.add('gold', finialGeo(4).translate(0, y0 + 154, 0), GOLD);
     for (let i = 0; i < 10; i++) { const a = (i / 10) * Math.PI * 2, p = kit.world(Math.cos(a) * (r + 5), 0, Math.sin(a) * (r + 5)); spirelets.push([p.x, y0 + 4, p.z, 0.9, 0]); }
     for (let i = 0; i < 4; i++) {                                               // four slim turrets round the drum
       const a = (i / 4) * Math.PI * 2 + Math.PI / 4;
       kit.frame(x + Math.cos(a) * (r + 12), 0, z + Math.sin(a) * (r + 12));
-      kit.add('drum', scaleUV(new THREE.CylinderGeometry(5, 5, 40, 10, 1, true).translate(0, y0 + 20, 0), 3, 1), IVORY);
-      kit.add('gold', ring(5.6, 1, y0 + 40, 10), GOLD);
-      kit.add('dome', needle(5.5, 16, 10).translate(0, y0 + 41, 0), '#ffffff');
-      kit.add('gold', finialGeo(1).translate(0, y0 + 56, 0), GOLD);
-      solids.push({ x: x + Math.cos(a) * (r + 12), z: z + Math.sin(a) * (r + 12), r: 5.5, y0: y0 - 4, y1: y0 + 60 });
+      kit.add('drum', scaleUV(new THREE.CylinderGeometry(5, 5, 60, 10, 1, true).translate(0, y0 + 30, 0), 3, 2), IVORY);
+      kit.add('gold', ring(5.6, 1, y0 + 60, 10), GOLD);
+      kit.add('dome', needle(5.5, 18, 10).translate(0, y0 + 61, 0), '#ffffff');
+      kit.add('gold', finialGeo(1).translate(0, y0 + 78, 0), GOLD);
+      solids.push({ x: x + Math.cos(a) * (r + 12), z: z + Math.sin(a) * (r + 12), r: 5.5, y0: y0 - 4, y1: y0 + 82 });
     }
     kit.frame();
     solids.push({ x, z, r: r + 6, y0: y0 - 4, y1: 350 });
@@ -1142,11 +1294,16 @@ export function createPalace(scene, preset, { makePortal } = {}) {
     const stages = shaftTop - y0 > 90 ? 3 : 2, sh = (shaftTop - y0) / stages;
     for (let k = 0; k < stages; k++) {
       const ww = w * (1 - k * 0.12), yb = y0 + k * sh;
-      kit.add('spire', scaleUV(new THREE.BoxGeometry(ww, sh - 2, ww).translate(0, yb + (sh - 2) / 2, 0), 1, Math.max(1, Math.round((sh - 2) / 45))), IVORY);
-      kit.add('ivory', box(ww + 2.4, 2, ww + 2.4, 0, yb + sh - 2, 0), PEARL);
-      kit.add('gold', box(ww + 2.8, 0.5, ww + 2.8, 0, yb + sh - 0.3, 0), GOLD);
+      const cr = ww / 2 / 0.924;                                                                          // eight-sided, a glass light on every face
+      kit.add('spire', scaleUV(new THREE.CylinderGeometry(cr, cr, sh - 2, 8, 1, true).rotateY(Math.PI / 8).translate(0, yb + (sh - 2) / 2, 0), 8, Math.max(1, Math.round((sh - 2) / 45))), '#ffffff');
+      kit.add('ivory', ring(cr + 1.4, 2, yb + sh - 2, 8).rotateY(Math.PI / 8), PEARL);
+      kit.add('gold', ring(cr + 1.6, 0.5, yb + sh - 0.3, 8).rotateY(Math.PI / 8), GOLD);
+      if (ww >= 10) { kit.add('jali', scaleUV(new THREE.CylinderGeometry(cr + 1.5, cr + 1.5, 2.2, 8, 1, true).rotateY(Math.PI / 8).translate(0, yb + sh + 1.1, 0), 8, 1), IVORY); kit.add('gold', ring(cr + 1.6, 0.3, yb + sh + 2.2, 8).rotateY(Math.PI / 8), GOLD); }   // the gallery
       for (const [cx, cz] of [[1, 1], [1, -1], [-1, 1], [-1, -1]]) { const p = kit.world(cx * (ww / 2 + 0.8), 0, cz * (ww / 2 + 0.8)); spirelets.push([p.x, yb + sh, p.z, ww / 30, 0]); }
-      if (w >= 12) hanging.push([x + ww / 2 + 1.4, yb + sh - 2, z, 1.4, 0]);
+      if (w >= 12) for (const sd of [-1, 1]) {                                                       // crystal lanterns on gold brackets, both sides
+        kit.add('gold', box(3.4, 0.6, 0.6, sd * (ww / 2 + 1.5), yb + sh - 3, 0), GOLD);
+        hanging.push([x + sd * (ww / 2 + 3), yb + sh - 4, z, 1.6, 0]);
+      }
     }
     const lw = w * 0.5;
     kit.add('drum', scaleUV(new THREE.CylinderGeometry(lw, lw, lantH, 8, 1, true).translate(0, shaftTop + lantH / 2, 0), 4, 1), IVORY);
@@ -1226,15 +1383,15 @@ export function createPalace(scene, preset, { makePortal } = {}) {
   }
 
   // ---- roof gardens (crop 08): the water channel down the axis, wheel parterres, conservatories, pools ----
-  for (const [z0, z1, y] of [[-195, 38, 228], [42, 108, 197]]) {
+  for (const [z0, z1, y] of [[-195, 38, 216], [42, 108, 186]]) {
     kit.add('ivory', box(24, 0.8, z1 - z0, 0, y, (z0 + z1) / 2), PEARL);
     water.push(new THREE.PlaneGeometry(20, z1 - z0 - 1).rotateX(-Math.PI / 2).translate(0, y + 0.9, (z0 + z1) / 2));
     for (let z = z0 + 12; z < z1; z += 26) sprays.push([0, y + 0.9, z, 1.6]);
   }
-  falls.push(new THREE.PlaneGeometry(18, 31, 1, 6).translate(0, 212.5, 40.8), new THREE.PlaneGeometry(18, 69, 1, 12).translate(0, 162.5, 110.8));
-  kit.add('ivory', box(64, 1, 26, 0, 128, 123), PEARL);                                  // the pool at the foot of the spires
-  water.push(new THREE.PlaneGeometry(60, 22).rotateX(-Math.PI / 2).translate(0, 129.1, 123));
-  fountains.push([0, 129, 123, 0.55]);
+  falls.push(new THREE.PlaneGeometry(18, 30, 1, 6).translate(0, 201, 40.8), new THREE.PlaneGeometry(18, 32, 1, 8).translate(0, 170, 110.8));
+  kit.add('ivory', box(64, 1, 26, 0, 154, 123), PEARL);                                  // the pool behind the gate gable
+  water.push(new THREE.PlaneGeometry(60, 22).rotateX(-Math.PI / 2).translate(0, 155.1, 123));
+  fountains.push([0, 155, 123, 0.55]);
   {  // eight-spoke wheel parterres
     const [c, g] = cv(256, 256);
     g.fillStyle = '#f3dfd8'; g.fillRect(0, 0, 256, 256);

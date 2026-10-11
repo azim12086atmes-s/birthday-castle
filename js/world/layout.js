@@ -66,9 +66,9 @@ export const PAL = { x: 0, z: 0, y: PAL1.y * S, hw: 450 * S, hd: PAL1.hd * S, x0
 // The stepped garden tiers in drawn metres: [x0, x1, z0, z1, top]. Each roof is a walkable garden.
 export const PALACE_TIERS = [
   [-385, 450, -338, 235, 52],                                // T1 the arcaded ground storey (and the gate landing)
-  [-330, 400, -300, 191, 128],                               // T2 the great-lancet storey
-  [-260, 330, -260, 110, 197],                               // T3 the dome terrace
-  [-130, 260, -200, 40, 228],                                // T4 the crown garden
+  [-330, 400, -300, 191, 154],                               // T2 the great-lancet storey
+  [-260, 330, -260, 110, 186],                               // T3 the dome terrace
+  [-130, 260, -200, 40, 216],                                // T4 the crown garden
 ];
 // Plans in drawn metres, as [x, z] outlines. The owner's notes on sheet 03 (11 Oct): no level is
 // a plain box. The lancet storey (T2) and the dome terrace (T3) round in at their front corners
@@ -97,7 +97,13 @@ export const PALACE_BLOCKS = [
   ...L1(1, [['landing', 12, [[110, 346], [158, 346]]], ['flank', 22, [[158, 346], [200, 306]]], ['pavilion', 48, [[200, 318], [238, 318]]],
     ['arcade', 32, [[238, 300], [400, 300]]], ['upper', 46, [[238, 288], [400, 288]]], ['return', 38, [[400, 300], [450, 258]]]]),
   // the arcaded hall wall rising behind the gate gable, under the spire cluster (sheet 03)
-  { kind: 'hall', top: 200, pts: [[-64, 191], [64, 191], [64, 179], [-64, 179]] },
+  { kind: 'hall', top: 186, pts: [[-64, 191], [64, 191], [64, 179], [-64, 179]] },
+  // the stepped wings between the ground storey and the lancet storey (owner's hi-res elevation,
+  // 11 Oct): each a lower storey of dark-blue arched windows under a balustrade, standing out from
+  // the wall above in a different length, the outer ones curving round at the end
+  { kind: 'wing', top: 97, pts: roundedFront(342, 404, 150, 232, [30, 30], [30, 30], 4) },
+  { kind: 'wing', top: 117, pts: roundedFront(246, 346, 150, 222, [4, 4], [20, 18], 3) },
+  { kind: 'wing', top: 107, pts: roundedFront(-358, -212, 150, 224, [34, 30], [4, 4], 4) },
 ];
 export function inPlan(pts, x, z) {
   let inside = false;
