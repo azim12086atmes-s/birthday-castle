@@ -14,6 +14,9 @@ import { MOOD } from './sky.js';
 
 const GX = CASTLE.x, GZ = CASTLE.z, SILL = CASTLE.y, BASE = CASTLE.base;
 const GATE_W = 56, GATE_H = 100;
+// v4 crown (Oct 11): a 308 m front wall 125 m tall, with great pointed windows at
+// 75% of the gate (42 m by 75 m), two each side of the gate
+export const CROWN = { wallHW: 154, wallH: 125, frameHW: 40, gableSide: 145, gableTop: 172, winW: 42, winH: 75, winY: 18, winX: [74, 126] };
 
 // --- shared shape helpers (also used by the island arches) -----------------------
 export function pointedArchShape(w, h, shape = new THREE.Shape()) {
@@ -91,6 +94,31 @@ function windowWall() {
     lancet(gg, 84, 70, 88, 380); gg.lineWidth = 7; gg.strokeStyle = glow ? '#000' : '#e2b24c'; gg.stroke();
   }
   return { map: tex(c), glow: tex(e) };
+}
+// blush ashlar with a faint girih lattice, for the front wall between its great windows
+function ashlarWall() {
+  const [c, g] = canvas(256, 256), [e, ge] = canvas(8, 8);
+  const bg = g.createLinearGradient(0, 0, 256, 0);
+  bg.addColorStop(0, '#dc9fb7'); bg.addColorStop(0.5, '#ecbccd'); bg.addColorStop(1, '#dc9fb7');
+  g.fillStyle = bg; g.fillRect(0, 0, 256, 256);
+  g.strokeStyle = 'rgba(150,70,110,0.2)'; g.lineWidth = 2;
+  for (let y = 0; y < 256; y += 32) {
+    g.beginPath(); g.moveTo(0, y); g.lineTo(256, y); g.stroke();
+    for (let x = (y / 32) % 2 ? 0 : 64; x < 256; x += 128) { g.beginPath(); g.moveTo(x, y); g.lineTo(x, y + 32); g.stroke(); }
+  }
+  g.strokeStyle = 'rgba(255,235,245,0.22)'; g.lineWidth = 3;
+  for (let k = -256; k < 512; k += 64) { g.beginPath(); g.moveTo(k, 0); g.lineTo(k + 256, 256); g.stroke(); g.beginPath(); g.moveTo(k + 256, 0); g.lineTo(k, 256); g.stroke(); }
+  ge.fillStyle = '#000'; ge.fillRect(0, 0, 8, 8);
+  return { map: tex(c), glow: tex(e) };
+}
+// one great window's glass: flowing colour behind a tracery of two lights and a rose
+export function greatGlass() {
+  const [c, g] = canvas(256, 512);
+  g.beginPath(); g.rect(0, 0, 256, 512);
+  flowingGlass(g, 0, 0, 256, 512, 3);
+  g.strokeStyle = 'rgba(40,10,50,0.5)'; g.lineWidth = 3;
+  for (let x = 0; x < 256; x += 32) { g.beginPath(); g.moveTo(x, 0); g.lineTo(x, 512); g.stroke(); }
+  return tex(c);
 }
 // one level's arcade: a tall round-headed arch lit peach from within
 function arcadeWall() {
@@ -191,22 +219,35 @@ function capGeometry(kind, r, h) {
   return lathe([[r * 1.1, 0], [0, h]], 20);           // gothic cone
 }
 
-export function createCastle(scene) {
+export function createCastle(scene, preset = {}) {
+  const low = (preset.grass ?? 9999) < 4000;
   const B = new Builder();
   const group = new THREE.Group();
   const glows = [];               // spire tips and lamps that get a halo
-  const ww = windowWall(), aw = arcadeWall();
+  const ww = windowWall(), aw = arcadeWall(), aw2 = ashlarWall();
+  const tips = [], crowns = [];   // spire tips and parapet rings, for pennants and fairy lights
 
   // --- a tower with its band, parapet, cap, finial and optional sitout balconies
   function tower({ x, z, y, r, h, cap, capH, seg = 18, balconies = [], pinnacles = cap === 'gothic' }) {
     B.add('wall', body(r, h, seg).translate(x, y, z));
     B.add('gold', new THREE.CylinderGeometry(r + 0.7, r + 0.7, 1.6, seg).translate(x, y + h - 2.5, z));
     B.add('stone', new THREE.CylinderGeometry(r + 1.4, r + 0.9, 3, seg).translate(x, y + h - 0.5, z));
+    // machicolations: a ring of corbels joined by little round arches under the parapet
+    {
+      const n = Math.max(10, Math.round((Math.PI * 2 * r) / 2.6)), rr = r + 0.55;
+      for (let k = 0; k < n; k++) {
+        const a = (k / n) * Math.PI * 2, b = a + Math.PI / n;
+        B.add('stone', new THREE.BoxGeometry(0.6, 2, 1.1).translate(0, 0, rr).rotateY(a).translate(x, y + h - 4.2, z));
+        if (!low) B.add('white', new THREE.TorusGeometry(Math.PI * rr / n - 0.3, 0.16, 3, 6, Math.PI).translate(0, y + h - 5.2, rr + 0.2).rotateY(b).translate(x, 0, z));
+      }
+      B.add('white', new THREE.CylinderGeometry(r + 0.35, r + 0.35, 0.5, seg).translate(x, y + h - 6.8, z));
+    }
     const capR = cap === 'onion' ? r * 1.15 : r;
     B.add('roof', capGeometry(cap, capR, capH).translate(x, y + h + 1, z));
     const tip = y + h + 1 + capH;
     B.add('gold', new THREE.ConeGeometry(Math.max(0.4, r * 0.05), capH * 0.18 + 3, 8).translate(x, tip + capH * 0.09 + 1, z));
     glows.push([x, tip + capH * 0.18 + 3, z, Math.max(6, r * 0.6)]);
+    tips.push([x, tip + capH * 0.18 + 3, z]); crowns.push([x, y + h, z, r]);
     if (pinnacles) {
       for (let k = 0; k < 4; k++) {
         const a = k * Math.PI / 2 + Math.PI / 4, px = x + Math.cos(a) * (r + 0.6), pz = z + Math.sin(a) * (r + 0.6);
@@ -328,70 +369,78 @@ export function createCastle(scene) {
   }
 
   // --- the 200 m front wall with flowing-glass lancets, girih band and pinnacles -------
-  const WALL_TOP = SILL + 75, WALL_D = 12, FRAME_HW = 40;
+  const WALL_TOP = SILL + CROWN.wallH, WALL_D = 12, FRAME_HW = CROWN.frameHW, WHW = CROWN.wallHW;
   for (const s of [-1, 1]) {
-    const len = 100 - FRAME_HW, cx = GX + s * (FRAME_HW + len / 2);
-    B.add('wall', wallBox(len, WALL_TOP - SILL, WALL_D, 10, 37).translate(cx, (SILL + WALL_TOP) / 2, GZ - WALL_D / 2));
-    B.add('gold', new THREE.BoxGeometry(len + 0.4, 2.4, WALL_D + 0.6).translate(cx, SILL + 52, GZ - WALL_D / 2));  // girih band
+    const len = WHW - FRAME_HW, cx = GX + s * (FRAME_HW + len / 2);
+    B.add('ashlar', wallBox(len, WALL_TOP - SILL, WALL_D, 16, 16).translate(cx, (SILL + WALL_TOP) / 2, GZ - WALL_D / 2));
+    for (const yb of [SILL + 11, SILL + 100]) B.add('gold', new THREE.BoxGeometry(len + 0.4, 2.4, WALL_D + 0.6).translate(cx, yb, GZ - WALL_D / 2));  // girih bands
     B.add('stone', new THREE.BoxGeometry(len + 1, 3, WALL_D + 1.6).translate(cx, WALL_TOP + 1.5, GZ - WALL_D / 2));
-    for (let x = FRAME_HW + 10; x <= 100.01; x += 20) {
-      B.add('roof', new THREE.ConeGeometry(2.2, 16, 8).translate(GX + s * x, WALL_TOP + 11, GZ + 0.5));
-      B.add('stone', new THREE.CylinderGeometry(1.8, 1.8, 6, 8).translate(GX + s * x, WALL_TOP + 3, GZ + 0.5));
+    for (let x = FRAME_HW + 15; x <= WHW + 0.01; x += 18.3) {
+      B.add('roof', new THREE.ConeGeometry(2.4, 18, 8).translate(GX + s * x, WALL_TOP + 12, GZ + 0.5));
+      B.add('stone', new THREE.CylinderGeometry(2, 2, 6, 8).translate(GX + s * x, WALL_TOP + 3, GZ + 0.5));
     }
+    // a corner tower closing each end of the wall
+    tower({ x: GX + s * (WHW + 8), z: GZ - 6, y: SILL, r: 8.5, h: 150, cap: s < 0 ? 'onion' : 'gothic', capH: s < 0 ? 30 : 46, balconies: [70, 118] });
     addCollider({ minX: cx - len / 2, maxX: cx + len / 2, minZ: GZ - WALL_D, maxZ: GZ, y0: SILL, y1: WALL_TOP });
   }
   // the gate frame: a pale gable rising to 222 m round the 100 m pointed opening
   {
     const sh = new THREE.Shape();
-    sh.moveTo(-FRAME_HW, 0); sh.lineTo(FRAME_HW, 0); sh.lineTo(FRAME_HW, 110); sh.lineTo(0, 132); sh.lineTo(-FRAME_HW, 110); sh.lineTo(-FRAME_HW, 0);
+    const GS = CROWN.gableSide, GT = CROWN.gableTop;
+    sh.moveTo(-FRAME_HW, 0); sh.lineTo(FRAME_HW, 0); sh.lineTo(FRAME_HW, GS); sh.lineTo(0, GT); sh.lineTo(-FRAME_HW, GS); sh.lineTo(-FRAME_HW, 0);
     sh.holes.push(new THREE.Path(pointedArchShape(GATE_W, GATE_H).getPoints(32)));
     const g = new THREE.ExtrudeGeometry(sh, { depth: WALL_D + 4, bevelEnabled: false, curveSegments: 24 });
     B.add('frame', g.translate(GX, SILL, GZ - WALL_D - 2));
     const trim = new THREE.TubeGeometry(pointedArchPath(GATE_W + 1, GATE_H + 0.6), 96, 1.1, 6, false);
     B.add('gold', trim.translate(GX, SILL, GZ + 2.2));
     for (const s of [-1, 1]) {
-      const edge = new THREE.CylinderGeometry(0.9, 0.9, Math.hypot(FRAME_HW, 22), 6);
-      edge.rotateZ(s * (Math.PI / 2 - Math.atan2(22, FRAME_HW))).translate(GX + s * FRAME_HW / 2, SILL + 121, GZ + 2.2);
+      const rise = GT - GS, edge = new THREE.CylinderGeometry(0.9, 0.9, Math.hypot(FRAME_HW, rise), 6);
+      edge.rotateZ(s * (Math.PI / 2 - Math.atan2(rise, FRAME_HW))).translate(GX + s * FRAME_HW / 2, SILL + (GS + GT) / 2, GZ + 2.2);
       B.add('gold', edge);
-      addCollider({ minX: s < 0 ? GX - FRAME_HW : GX + GATE_W / 2, maxX: s < 0 ? GX - GATE_W / 2 : GX + FRAME_HW, minZ: GZ - WALL_D - 2, maxZ: GZ + 2, y0: SILL, y1: SILL + 110 });
+      addCollider({ minX: s < 0 ? GX - FRAME_HW : GX + GATE_W / 2, maxX: s < 0 ? GX - GATE_W / 2 : GX + FRAME_HW, minZ: GZ - WALL_D - 2, maxZ: GZ + 2, y0: SILL, y1: SILL + GS });
     }
-    // the two 212 m pinnacle turrets beside it
-    for (const s of [-1, 1]) tower({ x: GX + s * (FRAME_HW + 4), z: GZ - 2, y: SILL, r: 5, h: 112, cap: 'gothic', capH: 22, seg: 12, pinnacles: false });
+    // the two pinnacle turrets beside it, rising past the gable
+    for (const s of [-1, 1]) tower({ x: GX + s * (FRAME_HW + 4), z: GZ - 2, y: SILL, r: 5.5, h: 168, cap: 'gothic', capH: 28, seg: 12, pinnacles: false });
   }
 
   // --- the crown: joined towers stepping up unevenly to the cone tower ------------------
   // a vestibule behind the gate, then the hall mass that ties every tower together
   const HALL_FRONT = GZ - 40, HALL_D = 100;
-  B.add('wall', wallBox(196, 82, HALL_D, 12, 37).translate(GX, SILL + 41, HALL_FRONT - HALL_D / 2));
-  B.add('stone', new THREE.BoxGeometry(200, 3, HALL_D + 4).translate(GX, SILL + 83.5, HALL_FRONT - HALL_D / 2));
-  addCollider({ minX: GX - 98, maxX: GX + 98, minZ: HALL_FRONT - HALL_D, maxZ: HALL_FRONT, y0: SILL, y1: SILL + 82 });
+  const HALL_H = 132;
+  B.add('wall', wallBox(290, HALL_H, HALL_D, 12, 37).translate(GX, SILL + HALL_H / 2, HALL_FRONT - HALL_D / 2));
+  B.add('stone', new THREE.BoxGeometry(294, 3, HALL_D + 4).translate(GX, SILL + HALL_H + 1.5, HALL_FRONT - HALL_D / 2));
+  addCollider({ minX: GX - 145, maxX: GX + 145, minZ: HALL_FRONT - HALL_D, maxZ: HALL_FRONT, y0: SILL, y1: SILL + HALL_H });
   for (const s of [-1, 1]) {   // vestibule side walls
     B.add('stone', new THREE.BoxGeometry(4, 60, 28).translate(GX + s * 42, SILL + 30, (HALL_FRONT + GZ - WALL_D) / 2));
     addCollider({ minX: GX + s * 42 - 2, maxX: GX + s * 42 + 2, minZ: HALL_FRONT, maxZ: GZ - WALL_D, y0: SILL, y1: SILL + 60 });
   }
   const ZC = GZ - 80;
   // central dome tower (the wider one) and the taller gothic cone tower beside it
-  B.add('wall', body(42, 172, 24).translate(GX - 10, SILL, ZC));
-  B.add('gold', new THREE.CylinderGeometry(43, 43, 2, 24).translate(GX - 10, SILL + 172, ZC));
-  B.add('stone', new THREE.CylinderGeometry(44, 42.5, 4, 24).translate(GX - 10, SILL + 174, ZC));
-  B.add('wall', body(31, 14, 24, 8, 14).translate(GX - 10, SILL + 176, ZC));                          // windowed drum
-  B.add('gold', new THREE.CylinderGeometry(32, 32, 1.6, 24).translate(GX - 10, SILL + 190, ZC));
-  B.add('roof', capGeometry('onion', 30 / 1.08, 72).translate(GX - 10, SILL + 190, ZC));
-  B.add('gold', new THREE.ConeGeometry(1.4, 24, 8).translate(GX - 10, SILL + 274, ZC));
-  B.add('gold', new THREE.SphereGeometry(2.2, 10, 8).translate(GX - 10, SILL + 266, ZC));
-  glows.push([GX - 10, SILL + 287, ZC, 22]);
-  addCollider({ x: GX - 10, z: ZC, r: 42, y0: SILL, y1: SILL + 172 });
-  const coneTip = tower({ x: GX + 52, z: ZC + 8, y: SILL, r: 23, h: 240, cap: 'gothic', capH: 88, seg: 22, balconies: [96, 168] });
+  {
+    const DX = GX - 14, DR = 48, DH = 236, DOME = 34;
+    B.add('wall', body(DR, DH, 28).translate(DX, SILL, ZC));
+    B.add('gold', new THREE.CylinderGeometry(DR + 1, DR + 1, 2, 28).translate(DX, SILL + DH, ZC));
+    B.add('stone', new THREE.CylinderGeometry(DR + 2, DR + 0.5, 4, 28).translate(DX, SILL + DH + 2, ZC));
+    B.add('wall', body(DOME + 1, 18, 28, 8, 14).translate(DX, SILL + DH + 4, ZC));                         // windowed drum
+    B.add('gold', new THREE.CylinderGeometry(DOME + 2, DOME + 2, 1.8, 28).translate(DX, SILL + DH + 22, ZC));
+    B.add('roof', capGeometry('onion', DOME / 1.08, 84).translate(DX, SILL + DH + 22, ZC));
+    B.add('gold', new THREE.ConeGeometry(1.6, 28, 8).translate(DX, SILL + DH + 120, ZC));
+    B.add('gold', new THREE.SphereGeometry(2.6, 10, 8).translate(DX, SILL + DH + 110, ZC));
+    glows.push([DX, SILL + DH + 134, ZC, 24]);
+    tips.push([DX, SILL + DH + 134, ZC]); crowns.push([DX, SILL + DH, ZC, DR]);
+    addCollider({ x: DX, z: ZC, r: DR, y0: SILL, y1: SILL + DH });
+  }
+  const coneTip = tower({ x: GX + 66, z: ZC + 10, y: SILL, r: 28, h: 312, cap: 'gothic', capH: 112, seg: 24, balconies: [130, 230] });
   // back towers: witch-hat and gothic cones on the left, a gothic cone and a small onion on the right
-  tower({ x: GX - 96, z: ZC - 6, y: SILL, r: 16, h: 112, cap: 'witch', capH: 38, balconies: [70] });
-  tower({ x: GX - 70, z: ZC + 40, y: SILL, r: 13, h: 88, cap: 'gothic', capH: 37 });
-  tower({ x: GX + 96, z: ZC - 8, y: SILL, r: 15, h: 118, cap: 'gothic', capH: 42 });
-  tower({ x: GX + 118, z: ZC + 34, y: SILL, r: 12, h: 98, cap: 'onion', capH: 27, balconies: [64] });
+  tower({ x: GX - 136, z: ZC - 8, y: SILL, r: 20, h: 168, cap: 'witch', capH: 50, balconies: [100] });
+  tower({ x: GX - 98, z: ZC + 42, y: SILL, r: 16, h: 150, cap: 'onion', capH: 40, balconies: [96] });
+  tower({ x: GX + 134, z: ZC - 10, y: SILL, r: 19, h: 176, cap: 'gothic', capH: 58 });
+  tower({ x: GX + 150, z: ZC + 36, y: SILL, r: 15, h: 150, cap: 'onion', capH: 36, balconies: [92] });
   // small domes alongside on the hall roof
-  for (const [dx, dz, r] of [[-46, 30, 9], [86, 50, 8], [-60, -24, 10]]) {
-    B.add('wall', body(r, 10, 16, 8, 10).translate(GX + dx, SILL + 84, ZC + dz));
-    B.add('roof', capGeometry('onion', r, r * 2.3).translate(GX + dx, SILL + 94, ZC + dz));
-    B.add('gold', new THREE.ConeGeometry(0.5, 5, 6).translate(GX + dx, SILL + 94 + r * 2.3 + 2.4, ZC + dz));
+  for (const [dx, dz, r] of [[-66, 32, 11], [112, 52, 10], [-90, -26, 12], [20, 40, 9]]) {
+    B.add('wall', body(r, 12, 16, 8, 10).translate(GX + dx, SILL + HALL_H + 3, ZC + dz));
+    B.add('roof', capGeometry('onion', r, r * 2.3).translate(GX + dx, SILL + HALL_H + 15, ZC + dz));
+    B.add('gold', new THREE.ConeGeometry(0.5, 5, 6).translate(GX + dx, SILL + HALL_H + 15 + r * 2.3 + 2.4, ZC + dz));
   }
   // the four courtyard towers on the crag top, each different, with sitout balconies
   const capFor = { witch: 0.24, onion: 0.22, gothic: 0.25 };
@@ -435,6 +484,7 @@ export function createCastle(scene) {
   // --- materials and the merged static castle ---------------------------------------------
   const mats = {
     wall: toon('#ffffff', { map: ww.map, emissive: '#ffffff', emissiveMap: ww.glow, emissiveIntensity: 0.5 }),
+    ashlar: toon('#ffffff', { map: aw2.map, emissive: '#3a1a3a', emissiveIntensity: 0.3 }),
     arcade: toon('#ffffff', { map: aw.map, emissive: '#ffffff', emissiveMap: aw.glow, emissiveIntensity: 0.6 }),
     white: toon('#fbf2f6', { emissive: '#3a2a4a', emissiveIntensity: 0.3, side: THREE.DoubleSide }),
     floor: toon('#f4e8ee', { emissive: '#2a2040', emissiveIntensity: 0.3 }),
@@ -498,7 +548,8 @@ export function createCastle(scene) {
     group,
     gatePosition: new THREE.Vector3(GX, SILL, GZ),
     rosePosition: new THREE.Vector3(GX, SILL + GATE_H * 0.6, GZ),
-    spireTop: new THREE.Vector3(GX + 52, coneTip, ZC + 8),
+    spireTop: new THREE.Vector3(GX + 66, coneTip, ZC + 10),
+    tips, crowns,
     setGate(open, instant = false) { gateTarget = open ? 1 : 0; if (instant) gateOpen = gateTarget; },
     update(t, dt) {
       haloMat.uniforms.uTime.value = t;

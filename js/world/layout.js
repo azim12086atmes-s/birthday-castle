@@ -24,9 +24,9 @@ export const COVE = { x: -742, z: 884, r: 18, y: 5 };
 // the gate sill 90 m up, where the 100 m gate opens in a 200 m front wall.
 export const CASTLE = { x: 0, z: 30, y: CRAG.y + 90, base: CRAG.y };   // z: gate plane, y: gate sill
 export const TERRACES = [                                                // the three levels, bottom first
-  { y: CRAG.y + 30, hw: 122, front: 164 },
-  { y: CRAG.y + 60, hw: 114, front: 132 },
-  { y: CRAG.y + 90, hw: 106, front: 100 },                               // a 70 m deep landing before the gate
+  { y: CRAG.y + 30, hw: 184, front: 164 },                               // widened Oct 11 for the 300 m front wall
+  { y: CRAG.y + 60, hw: 178, front: 132 },
+  { y: CRAG.y + 90, hw: 172, front: 100 },                               // a 70 m deep landing before the gate
 ];
 export const TERRACE_REAR = -110;
 export const TERRACE_R = 34;                                             // rounded front corners
@@ -54,8 +54,8 @@ export function inTerrace(T, x, z, m = 0) {
 }
 // four tall courtyard towers rise from the crag top beside the levels, all different
 export const COURT_TOWERS = [
-  { x: -152, z: 58, r: 13, h: 150, cap: 'witch' }, { x: -134, z: 104, r: 11, h: 118, cap: 'onion' },
-  { x: 140, z: 100, r: 14, h: 170, cap: 'gothic' }, { x: 162, z: 52, r: 11, h: 126, cap: 'witch' },
+  { x: -206, z: 58, r: 13, h: 190, cap: 'witch' }, { x: -199, z: 106, r: 11, h: 150, cap: 'onion' },
+  { x: 204, z: 100, r: 14, h: 215, cap: 'gothic' }, { x: 220, z: 50, r: 11, h: 160, cap: 'witch' },
 ];
 export const PLAZA = { x: 0, z: STAIR_FOOT + 16, y: CRAG.y, r: 16 };   // the round cascade pool at the stair foot
 // the long lake, as a centre line with a varying half width

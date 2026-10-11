@@ -7,10 +7,11 @@ import { mergeGeometries } from 'three/addons/utils/BufferGeometryUtils.js';
 import { Kit, kitMaterials, box, cyl, lathe, haloPoints } from './kit.js';
 import { flagMaterial, additive } from './materials.js';
 import { CASTLE, TERRACES } from './layout.js';
+import { CROWN } from './castle.js';
 
 const MARBLE = '#f8e6ee', ROSE = '#e7a9c0', PLUM = '#7a2a5e';
 
-export function createCastleDetail(scene, preset) {
+export function createCastleDetail(scene, preset, castle) {
   const low = preset.grass < 4000;
   const K = new Kit(), group = new THREE.Group();
   const GX = CASTLE.x, GZ = CASTLE.z, Y = CASTLE.y, FRONT = TERRACES[2].front;
@@ -74,36 +75,37 @@ export function createCastleDetail(scene, preset) {
     }
   }
 
-  // --- the front wall: pilasters, a gallery balcony, merlons, gold rosettes -----------
+  // --- the front wall: buttresses between the great windows, a gallery, merlons --------
   {
     K.frame();
-    const top = Y + 75;
+    const top = Y + CROWN.wallH, W = CROWN.winW, x0 = CROWN.frameHW + 2, x1 = CROWN.wallHW;
     for (const s of [-1, 1]) {
-      for (let x = 50; x <= 100; x += 10) {
-        K.add('plain', box(2.2, 75, 1.4, GX + s * x, Y, GZ + 0.7), ROSE);
-        K.add('gold', box(2.6, 1.2, 1.8, GX + s * x, Y + 38, GZ + 0.9));
-        K.add('plain', new THREE.ConeGeometry(1.1, 5, 6).translate(GX + s * x, top + 4, GZ + 0.7), PLUM);
+      // stepped buttresses between and beside the windows, each crowned by a pinnacle
+      for (const x of [(CROWN.winX[0] + CROWN.winX[1]) / 2]) {
+        K.add('plain', box(4, CROWN.wallH * 0.55, 3.2, GX + s * x, Y, GZ + 1.6), ROSE);
+        K.add('plain', box(3, CROWN.wallH * 0.45, 2.2, GX + s * x, Y + CROWN.wallH * 0.55, GZ + 1.1), ROSE);
+        K.add('gold', box(4.4, 1, 3.6, GX + s * x, Y + CROWN.wallH * 0.55 - 0.5, GZ + 1.6));
+        K.add('plain', cyl(1.3, 1.5, 5, 8, GX + s * x, top + 3, GZ + 1.1), MARBLE);
+        K.add('plain', new THREE.ConeGeometry(1.4, 9, 8).translate(GX + s * x, top + 12.5, GZ + 1.1), PLUM);
+        K.add('gold', new THREE.SphereGeometry(0.45, 8, 6).translate(GX + s * x, top + 17.3, GZ + 1.1));
       }
-      // the gallery balcony across the wall, with balusters
-      const x0 = 42, x1 = 100, len = x1 - x0, cx = GX + s * (x0 + len / 2);
-      K.add('plain', box(len, 1, 4, cx, Y + 26, GZ + 2), MARBLE);
-      K.add('plain', box(len, 0.4, 0.4, cx, Y + 28.2, GZ + 3.8), MARBLE);
-      for (let x = x0 + 1; x < x1; x += 1.4) K.add('plain', cyl(0.14, 0.18, 1.2, 5, GX + s * x, Y + 27, GZ + 3.8), MARBLE);
-      for (let x = x0 + 4; x < x1; x += 8) K.add('plain', new THREE.ConeGeometry(1.6, 1.4, 8).rotateX(Math.PI).translate(GX + s * x, Y + 25.3, GZ + 2), MARBLE);
+      // a gallery balcony under the windows, with balusters
+      const len = x1 - x0, cx = GX + s * (x0 + len / 2), by = Y + CROWN.winY - 6;
+      K.add('plain', box(len, 1, 4, cx, by, GZ + 2), MARBLE);
+      K.add('plain', box(len, 0.4, 0.4, cx, by + 2.2, GZ + 3.8), MARBLE);
+      for (let x = x0 + 1; x < x1; x += 1.4) K.add('plain', cyl(0.14, 0.18, 1.2, 5, GX + s * x, by + 1, GZ + 3.8), MARBLE);
+      for (let x = x0 + 4; x < x1; x += 8) K.add('plain', new THREE.ConeGeometry(1.6, 1.4, 8).rotateX(Math.PI).translate(GX + s * x, by - 0.7, GZ + 2), MARBLE);
       // crenellations along the wall top
       for (let x = x0; x <= x1; x += 3) K.add('plain', box(1.6, 2.4, 2, GX + s * x, top + 3, GZ - 0.6), MARBLE);
-      // gold rosettes between the lancets
-      for (let x = 50; x < 100; x += 10) K.add('gold', new THREE.TorusGeometry(1.6, 0.25, 4, 16).translate(GX + s * x, Y + 60, GZ + 1.6));
     }
   }
 
   // --- pennants on the spires and fairy lights between towers ---------------------------
   const flagMat = flagMaterial('#ff7fbf');
   {
-    const tips = [[52, 515, -42], [-10, 476, -50], [-96, 336, -56], [-70, 311, -10], [96, 346, -58], [118, 311, -16], [-44, 320, 28], [44, 320, 28]];
-    const pens = tips.map(([x, y, z]) => new THREE.PlaneGeometry(14, 3.4, 10, 1).translate(x + 7, y, z));
+    const pens = castle.tips.map(([x, y, z]) => new THREE.PlaneGeometry(14, 3.4, 10, 1).translate(x + 7, y - 2, z));
     group.add(new THREE.Mesh(mergeGeometries(pens), flagMat));
-    // strings of fairy lights draped from tower to tower across the crown
+    // strings of fairy lights draped from parapet to parapet across the crown, on the front sides
     const pts = [];
     const string = (a, b, sag, n) => {
       for (let i = 0; i <= n; i++) {
@@ -111,10 +113,13 @@ export function createCastleDetail(scene, preset) {
         pts.push(a[0] + (b[0] - a[0]) * t, a[1] + (b[1] - a[1]) * t - Math.sin(t * Math.PI) * sag, a[2] + (b[2] - a[2]) * t);
       }
     };
-    const SIL = Y;
-    const anchors = [[-96, SIL + 112, -40], [-70, SIL + 88, 0], [-44, SIL + 112, 28], [44, SIL + 112, 28], [52, SIL + 168, -18], [96, SIL + 118, -42], [118, SIL + 98, 0]];
-    for (let i = 0; i < anchors.length - 1; i++) string(anchors[i], anchors[i + 1], 10, low ? 18 : 30);
-    string([-44, SIL + 100, 30], [44, SIL + 100, 30], 16, low ? 30 : 50);   // across the gate gable
+    const anchors = castle.crowns.filter(([, , , r]) => r > 6).map(([x, y, z, r]) => [x, y - 3, z + r + 1]).sort((a, b) => a[0] - b[0]);
+    for (let i = 0; i < anchors.length - 1; i++) {
+      const a = anchors[i], b = anchors[i + 1];
+      if (Math.hypot(a[0] - b[0], a[2] - b[2]) > 140) continue;
+      string(a, b, 10, low ? 18 : 30);
+    }
+    string([-CROWN.frameHW, Y + CROWN.gableSide - 4, GZ + 3], [CROWN.frameHW, Y + CROWN.gableSide - 4, GZ + 3], 16, low ? 30 : 50);   // across the gate gable
     const g = new THREE.BufferGeometry();
     g.setAttribute('position', new THREE.Float32BufferAttribute(pts, 3));
     const fairy = new THREE.Points(g, new THREE.PointsMaterial({ color: '#ffe0a8', size: 1.3, sizeAttenuation: true, transparent: true, blending: THREE.AdditiveBlending, depthWrite: false }));
