@@ -207,7 +207,7 @@ function forests(scene, preset) {
 export function createCoast(scene, preset) {
   const group = new THREE.Group();
   group.name = 'coast';
-  const farStep = 110, farN = Math.round(G.span / farStep);
+  const farStep = 132, farN = Math.round(G.span / farStep);
   const far = new THREE.Mesh(landGeometry(G.x0, G.z0, farN, farStep, -24 * S), landMaterial(true));
   far.frustumCulled = false; far.receiveShadow = true;
   group.add(far);
