@@ -49,9 +49,9 @@ export function createAtmosphere(scene, preset) {
   roseBeam.translate(0, 13, 0);
   const rm = shaftMaterial('#ffcf8a', 0.16); mats.push(rm);
   const rose = new THREE.Mesh(roseBeam, rm);
-  rose.position.set(CASTLE.x, CASTLE.y + 17 * CASTLE.s, CASTLE.z + 13 * CASTLE.s);
+  rose.position.set(CASTLE.x, CASTLE.y + 55, CASTLE.z + 3);            // light spilling from the great gate
   rose.rotation.x = Math.PI / 2 + 0.35;
-  rose.scale.setScalar(CASTLE.s);
+  rose.scale.setScalar(5);
   group.add(rose);
 
   // mist rings around each floating island, for depth and scale

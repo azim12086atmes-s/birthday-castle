@@ -19,18 +19,51 @@ const SKY = ISLANDS.filter((i) => !i.main);
 export const CRAG = { x: 0, z: -10, rx: 250, rz: 190, y: 90 };
 export const SPAWN = { x: -742, z: 884 };                       // Lantern Cove dais
 export const COVE = { x: -742, z: 884, r: 18, y: 5 };
-// the castle sits on three podium terraces on the crag top, gate facing the lake
-export const CASTLE = { x: 0, z: -60, y: 108, s: 3 };
-export const TERRACES = [{ y: 96, hw: 150, front: 90 }, { y: 102, hw: 140, front: 60 }, { y: 108, hw: 130, front: 30 }];
-export const TERRACE_REAR = -170;
-export const STAIR = { hw: 20, run: 12 };
-export const PLAZA = { x: 0, z: 146, y: CRAG.y, r: 18 };          // armillary forecourt at the crag's lake edge
+// The castle v3 (world-layout.md section 5) begins at the foot of its grand
+// stair on the crag top: three towering 30 m levels with ring walkways climb to
+// the gate sill 90 m up, where the 100 m gate opens in a 200 m front wall.
+export const CASTLE = { x: 0, z: 30, y: CRAG.y + 90, base: CRAG.y };   // z: gate plane, y: gate sill
+export const TERRACES = [                                                // the three levels, bottom first
+  { y: CRAG.y + 30, hw: 122, front: 126 },
+  { y: CRAG.y + 60, hw: 114, front: 94 },
+  { y: CRAG.y + 90, hw: 106, front: 62 },
+];
+export const TERRACE_REAR = -110;
+export const TERRACE_R = 34;                                             // rounded front corners
+// the grand stair: flights between landings level with each ring walkway
+const LANDING = 6;
+const STAIR_FOOT = TERRACES[0].front + LANDING + 28;
+export const STAIR = {
+  hw0: 34, hw1: 28, foot: STAIR_FOOT, top: TERRACES[2].front,
+  profile: [[STAIR_FOOT, CRAG.y], ...TERRACES.flatMap((T) => [[T.front + LANDING, T.y], [T.front, T.y]])],
+};
+export function stairY(z) {
+  const P = STAIR.profile;
+  for (let i = 0; i < P.length - 1; i++) {
+    const [z0, y0] = P[i], [z1, y1] = P[i + 1];
+    if (z <= z0 && z >= z1) return y0 + (y1 - y0) * ((z0 - z) / (z0 - z1 || 1));
+  }
+  return z > P[0][0] ? P[0][1] : P[P.length - 1][1];
+}
+export function stairHW(z) { return STAIR.hw0 + (STAIR.hw1 - STAIR.hw0) * Math.min(1, Math.max(0, (STAIR.foot - z) / (STAIR.foot - STAIR.top))); }
+export function inTerrace(T, x, z, m = 0) {
+  const ax = Math.abs(x - CASTLE.x), R = TERRACE_R;
+  if (ax > T.hw + m || z > T.front + m || z < TERRACE_REAR - m) return false;
+  if (z > T.front - R && ax > T.hw - R) return Math.hypot(ax - (T.hw - R), z - (T.front - R)) <= R + m;
+  return true;
+}
+// four tall courtyard towers rise from the crag top beside the levels, all different
+export const COURT_TOWERS = [
+  { x: -152, z: 58, r: 13, h: 150, cap: 'witch' }, { x: -134, z: 104, r: 11, h: 118, cap: 'onion' },
+  { x: 140, z: 100, r: 14, h: 170, cap: 'gothic' }, { x: 162, z: 52, r: 11, h: 126, cap: 'witch' },
+];
+export const PLAZA = { x: 0, z: STAIR_FOOT + 16, y: CRAG.y, r: 16 };   // the round cascade pool at the stair foot
 // the long lake, as a centre line with a varying half width
 export const LAKE_PATH = [[-650, 790], [-520, 690], [-390, 600], [-250, 520], [-100, 430], [60, 360], [220, 355], [380, 410], [520, 500]];
 // the long bridge, from the cove across the lake to the foot of the crag
 export const BRIDGE = { pts: [[-728, 868], [-600, 768], [-450, 655], [-310, 560], [-200, 440], [-152, 284]], hw: 7, y: 14, ramp: 45 };
 // the Giant-Tree Way: a winding road climbing the crag's gentle west slope [x, z, y]
-export const TREE_WAY = { pts: [[-152, 284, 1.5], [-300, 282, 18], [-420, 250, 30], [-410, 190, 40], [-260, 200, 66], [-200, 170, 80], [-150, 140, 90], [-80, 126, 90], [-24, 142, CRAG.y]], hw: 6 };
+export const TREE_WAY = { pts: [[-152, 284, 1.5], [-300, 282, 18], [-420, 250, 30], [-410, 190, 40], [-260, 200, 66], [-200, 170, 80], [-150, 140, 90], [-90, 158, 90], [-22, 176, CRAG.y]], hw: 6 };
 export const LAGOON = { x: -700, z: 560, r: 90, y: 6 };           // Lagoon City (Atlantis white town) on the west shore
 export const TEMPLE_HILL = { x: 140, z: -560, r: 150, top: 70, y: 110 };
 export const ROSE_CRAG = { x: -560, z: -600, r: 90, top: 40, y: 70 };
@@ -299,17 +332,10 @@ export function builtHeight(x, z) {
   }
   const w = nearest(WAY_LINE, x, z, TREE_WAY.hw + 0.5);
   if (w && w.d <= TREE_WAY.hw) return w.s.y;
-  const ax = Math.abs(x - CASTLE.x);
-  let prev = CRAG.y;
-  for (const T of TERRACES) {
-    const zs = T.front + STAIR.run;
-    if (ax <= STAIR.hw && z <= zs && z >= T.front) return prev + (T.y - prev) * Math.round(((zs - z) / STAIR.run) * 12) / 12;
-    prev = T.y;
-  }
-  for (let k = TERRACES.length - 1; k >= 0; k--) {
-    const T = TERRACES[k];
-    if (ax <= T.hw && z <= T.front && z >= TERRACE_REAR) return T.y;
-  }
+  if (z <= STAIR.foot && z >= STAIR.top && Math.abs(x - CASTLE.x) <= stairHW(z)) return stairY(z);
+  for (let k = TERRACES.length - 1; k >= 0; k--) if (inTerrace(TERRACES[k], x, z)) return TERRACES[k].y;
+  // the pool forecourt is a bastion that juts out over the crag's lake edge
+  if (Math.hypot(x - PLAZA.x, z - PLAZA.z) <= PLAZA.r + 3) return PLAZA.y;
   return null;
 }
 
@@ -362,7 +388,9 @@ export function isClearOfBuildings(x, z, margin = 0, y = 0) {
   if (nearest(BRIDGE_LINE, x, z, BRIDGE.hw + 6 + margin)) return false;
   if (nearest(WAY_LINE, x, z, TREE_WAY.hw + 2 + margin)) return false;
   if (cragDistance(x, z) < 6 + margin) {
-    if (Math.abs(x) < TERRACES[0].hw + 6 + margin && z < TERRACES[0].front + STAIR.run + 6 + margin && z > TERRACE_REAR - 8) return false;
+    if (inTerrace(TERRACES[0], x, z, 6 + margin)) return false;
+    if (Math.abs(x - CASTLE.x) < STAIR.hw0 + 6 + margin && z < STAIR.foot + 6 + margin && z > STAIR.top) return false;
+    for (const t of COURT_TOWERS) if (Math.hypot(x - t.x, z - t.z) < t.r + 6 + margin) return false;
     if (Math.hypot(x - PLAZA.x, z - PLAZA.z) < PLAZA.r + 6 + margin) return false;
   }
   for (const p of PORTALS) if (Math.hypot(x - p.x, z - p.z) < 10 + margin) return false;

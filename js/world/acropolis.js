@@ -8,7 +8,7 @@ import { mergeGeometries } from 'three/addons/utils/BufferGeometryUtils.js';
 import { glowBasic, additive, nightGrade, toon } from './materials.js';
 import { arcadeTexture, flagstoneTexture, glowTexture, stoneTexture, leafTexture, rosetteTexture, rockTexture, rng } from './textures.js';
 import {
-  TERRACES, TERRACE_REAR, STAIR, CRAG, BRIDGE, BRIDGE_LINE, WAY_LINE, TREE_WAY, LAKE_LINE, COVE, LAGOON, WHEEL,
+  CRAG, BRIDGE, BRIDGE_LINE, WAY_LINE, TREE_WAY, LAKE_LINE, COVE, LAGOON, WHEEL,
   addCollider, addPad, groundAt, lakeDistance, isClearOfBuildings, nearestOnLine,
 } from './layout.js';
 import { MOOD } from './sky.js';
@@ -52,67 +52,6 @@ function railColliders(pts, every = 1.5, r = 0.45, y0, y1) {
 }
 
 // --- the castle's podium terraces and grand stairs ---------------------------
-function terraces(group) {
-  const bodies = [], tops = [], fronts = [], gold = [], rails = [], posts = [];
-  let prev = CRAG.y;
-  for (const T of TERRACES) {
-    const depth = T.front - TERRACE_REAR, cz = (T.front + TERRACE_REAR) / 2, hgt = T.y - CRAG.y + 2;
-    bodies.push(box(T.hw * 2, hgt, depth, 0, T.y - hgt / 2, cz));
-    const top = new THREE.PlaneGeometry(T.hw * 2, depth); top.rotateX(-Math.PI / 2); top.translate(0, T.y + 0.02, cz);
-    tops.push(top);
-    const fh = T.y - prev;
-    const f = new THREE.PlaneGeometry(T.hw * 2, fh); f.translate(0, prev + fh / 2, T.front + 0.03);
-    const fu = f.attributes.uv; for (let i = 0; i < fu.count; i++) fu.setX(i, fu.getX(i) * Math.round(T.hw * 2 / 7));
-    fronts.push(f);
-    for (const s of [-1, 1]) {
-      const side = new THREE.PlaneGeometry(depth, T.y - CRAG.y); side.rotateY(s * Math.PI / 2); side.translate(s * (T.hw + 0.03), (T.y + CRAG.y) / 2, cz);
-      const su = side.attributes.uv; for (let i = 0; i < su.count; i++) su.setX(i, su.getX(i) * Math.round(depth / 7));
-      fronts.push(side);
-    }
-    gold.push(box(T.hw * 2 + 0.6, 0.35, 0.6, 0, T.y + 0.1, T.front + 0.1));
-    for (const s of [-1, 1]) {
-      const len = T.hw - STAIR.hw - 1, mx = s * (STAIR.hw + 1 + len / 2);
-      rails.push(box(len, 0.18, 0.4, mx, T.y + 1.05, T.front - 0.3), box(len, 0.25, 0.5, mx, T.y + 0.2, T.front - 0.3));
-      for (let x = STAIR.hw + 1.4; x < T.hw - 0.4; x += 0.9) posts.push([s * x, T.y + 0.6, T.front - 0.3]);
-      gold.push(box(0.9, 2.2, 0.9, s * (STAIR.hw + 0.9), T.y + 1.1, T.front - 0.3));
-    }
-    const steps = 12, rise = (T.y - prev) / steps, run = STAIR.run / steps;
-    for (let i = 0; i < steps; i++) {
-      const top = prev + rise * (i + 1);
-      bodies.push(box(STAIR.hw * 2, top - CRAG.y + 1, run, 0, (top + CRAG.y - 1) / 2, T.front + STAIR.run - run * (i + 0.5)));
-    }
-    for (const s of [-1, 1]) {
-      const cheek = new THREE.BoxGeometry(1.2, 1, STAIR.run);
-      const p = cheek.attributes.position;
-      for (let i = 0; i < p.count; i++) {
-        const zz = p.getZ(i), yy = p.getY(i);
-        p.setY(i, yy > 0 ? prev + (T.y - prev) * (0.5 - zz / STAIR.run) + 1.2 : CRAG.y - 1);
-      }
-      cheek.computeVertexNormals();
-      cheek.translate(s * (STAIR.hw + 0.6), 0, T.front + STAIR.run / 2);
-      bodies.push(cheek);
-    }
-    for (const s of [-1, 1]) {
-      const x0 = s < 0 ? -T.hw : STAIR.hw, x1 = s < 0 ? -STAIR.hw : T.hw;
-      addCollider({ minX: x0, maxX: x1, minZ: TERRACE_REAR, maxZ: T.front, y0: prev, y1: T.y - 0.3 });
-    }
-    prev = T.y;
-  }
-  const marble = marbleMat('marble', 6);
-  const B = new THREE.Mesh(merge(bodies), marble);
-  B.castShadow = B.receiveShadow = true;
-  const pave = flagstoneTexture().clone(); pave.needsUpdate = true; pave.repeat.set(40, 30);
-  const P = new THREE.Mesh(mergeGeometries(tops), new THREE.MeshLambertMaterial({ map: pave, emissive: '#2a2050', emissiveIntensity: 0.35 }));
-  P.receiveShadow = true;
-  const F = new THREE.Mesh(mergeGeometries(fronts), new THREE.MeshLambertMaterial({ map: arcadeTexture(), emissive: '#3e2250', emissiveIntensity: 0.4 }));
-  const G = new THREE.Mesh(merge(gold), goldMat());
-  const R = new THREE.Mesh(merge(rails), marble);
-  const postMesh = new THREE.InstancedMesh(new THREE.CylinderGeometry(0.11, 0.16, 0.9, 6), marble, posts.length);
-  const d = new THREE.Object3D();
-  posts.forEach(([x, y, z], i) => { d.position.set(x, y, z); d.updateMatrix(); postMesh.setMatrixAt(i, d.matrix); });
-  group.add(B, P, F, G, R, postMesh);
-}
-
 // --- the long lake: a sky mirror over the whole basin -------------------------
 function lake(group) {
   let x0 = Infinity, x1 = -Infinity, z0 = Infinity, z1 = -Infinity;
@@ -549,7 +488,6 @@ export function createAcropolis(scene, preset) {
   const group = new THREE.Group();
   const r = rng(2026);
   const lamps = [], blossoms = [];
-  terraces(group);
   const lakeMat = lake(group);
   bridge(group, lamps);
   const side = moonPalace(group, lamps);
@@ -559,7 +497,6 @@ export function createAcropolis(scene, preset) {
   const coveMat = cove(group, lamps);
   treeWay(group, preset, r);
   lagoonCity(group, r);
-  for (const T of TERRACES) for (const s of [-1, 1]) lamps.push([s * (STAIR.hw + 0.9), T.y + 2.8, T.front - 0.3]);
 
   // every lamp is a small glowing globe with a soft halo point
   const lampMesh = new THREE.InstancedMesh(new THREE.SphereGeometry(0.34, 7, 5), glowBasic('#ffc65c'), lamps.length);

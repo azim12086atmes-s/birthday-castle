@@ -10,7 +10,7 @@ import * as THREE from 'three';
 import { mergeGeometries } from 'three/addons/utils/BufferGeometryUtils.js';
 import { glowBasic, additive, nightGrade } from './materials.js';
 import { stoneTexture, glowTexture, rng } from './textures.js';
-import { TERRACES, STAIR, BRIDGE, BRIDGE_LINE, THOLOI, WHEEL, RUNES, PLAZA, CRAG, PILLAR_REACH, addCollider, groundAt, lakeDistance, nearestOnLine } from './layout.js';
+import { STAIR, BRIDGE, BRIDGE_LINE, THOLOI, WHEEL, RUNES, PLAZA, CRAG, PILLAR_REACH, addCollider, groundAt, lakeDistance, nearestOnLine } from './layout.js';
 import { MOOD } from './sky.js';
 
 const MARBLE = '#f6e4ee';
@@ -68,29 +68,6 @@ export function createMonuments(scene, preset) {
   const stars = [];               // glowing points that get a halo
   const low = preset.grass < 4000;
 
-  // --- stoa: a colonnade along the face of the top terrace -----------------
-  {
-    const T2 = TERRACES[1], T3 = TERRACES[2], h = 13, D = 10, zc = T3.front + D - 1;
-    for (const s of [-1, 1]) {
-      const xa = STAIR.hw + 8, xb = T3.hw - 2;
-      for (let x = xa; x <= xb + 0.01; x += 6.4) {
-        const c = column(h, 0.8); c.translate(s * x, T2.y, zc);
-        marble.push(c);
-        addCollider({ x: s * x, z: zc, r: 1.05, y0: T2.y, y1: T2.y + h });
-      }
-      const cx = s * (xa + xb) / 2, w = xb - xa + 3;
-      marble.push(box(w, 1.3, D, cx, T2.y + h + 0.65, zc - D / 2 + 0.6));      // architrave and roof slab
-      gold.push(box(w + 0.6, 0.4, D + 0.6, cx, T2.y + h + 1.5, zc - D / 2 + 0.6)); // gold cornice
-      marble.push(box(w, 0.6, 1.2, cx, T2.y + h - 0.3, zc));                     // beam over the columns
-      marble.push(box(w, 0.1, D - 1, cx, T2.y + 0.05, zc - D / 2 + 0.6));        // paved floor
-      // gold acroteria along the roof line
-      for (let x = xa; x <= xb + 0.01; x += 12.8) {
-        const a = new THREE.OctahedronGeometry(0.7, 0); a.scale(1, 1.6, 1); a.translate(s * x, T2.y + h + 2.6, zc + 0.6);
-        gold.push(a);
-      }
-    }
-  }
-
   // --- obelisks at both ends of the bridge ---------------------------------
   {
     const [ax, az] = BRIDGE.pts[0], [bx, bz] = BRIDGE.pts[1];
@@ -111,10 +88,10 @@ export function createMonuments(scene, preset) {
   {
     const G = guardian();
     const spots = [
-      { x: -(STAIR.hw + 12), z: TERRACES[0].front + STAIR.run + 6, s: 30, ry: 0.35 },
-      { x: STAIR.hw + 12, z: TERRACES[0].front + STAIR.run + 6, s: 30, ry: -0.35 },
-      { x: PLAZA.x - 16, z: PLAZA.z + 24, s: 20, ry: 0.2 },
-      { x: PLAZA.x + 16, z: PLAZA.z + 24, s: 20, ry: -0.2 },
+      { x: -(STAIR.hw0 + 12), z: STAIR.foot - 4, s: 30, ry: 0.35 },
+      { x: STAIR.hw0 + 12, z: STAIR.foot - 4, s: 30, ry: -0.35 },
+      { x: PLAZA.x - (PLAZA.r + 12), z: PLAZA.z + 2, s: 20, ry: 0.5 },
+      { x: PLAZA.x + PLAZA.r + 12, z: PLAZA.z + 2, s: 20, ry: -0.5 },
     ];
     for (const sp of spots) {
       const base = (groundAt(sp.x, sp.z, CRAG.y) ?? CRAG.y) + 0.34 * sp.s;

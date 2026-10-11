@@ -6,7 +6,7 @@ import * as THREE from 'three';
 import { mergeGeometries } from 'three/addons/utils/BufferGeometryUtils.js';
 import { additive, glowBasic, nightGrade } from './materials.js';
 import { leafTexture, flowerTexture, glowTexture, rng } from './textures.js';
-import { TERRACES, STAIR, TREE_WAY, WAY_LINE, CRAG, addCollider, groundAt } from './layout.js';
+import { TERRACES, TERRACE_R, STAIR, TREE_WAY, WAY_LINE, CRAG, addCollider, groundAt } from './layout.js';
 import { MOOD } from './sky.js';
 
 function box(w, h, d, x, y, z) {
@@ -25,7 +25,7 @@ export function createGarden(scene, preset) {
   // --- two parterres, mirrored either side of the gate walkway ---
   // they sit on the first marble terrace, either side of the grand stairs
   const TY = TERRACES[0].y;
-  const z0 = TERRACES[1].front + 2, z1 = TERRACES[0].front - 2, xin = STAIR.hw + 6, xout = STAIR.hw + 70, hh = 1.1, ht = 0.9;
+  const z0 = TERRACES[1].front + 2, z1 = TERRACES[0].front - 2, xin = STAIR.hw0 + 8, xout = TERRACES[0].hw - TERRACE_R - 2, hh = 1.1, ht = 0.9;
   for (const s of [-1, 1]) {
     const xa = s * xin, xb = s * xout, cx = (xa + xb) / 2, cz = (z0 + z1) / 2;
     const w = Math.abs(xb - xa), d = z1 - z0;
@@ -98,7 +98,7 @@ export function createGarden(scene, preset) {
 
   // --- lanterns along the walkway on the terrace and up the Giant-Tree Way ---
   const spots = [];
-  for (let z = z0; z <= z1; z += 7) spots.push([-(STAIR.hw + 2), z], [STAIR.hw + 2, z]);
+  for (let z = z0; z <= z1; z += 7) spots.push([-(STAIR.hw0 + 3), z], [STAIR.hw0 + 3, z]);
   const WS = WAY_LINE.samples;
   for (let k = 0; k < WS.length - 1; k += 9) {
     const a = WS[k], b = WS[k + 1], l = Math.hypot(b.x - a.x, b.z - a.z) || 1, px = -(b.z - a.z) / l, pz = (b.x - a.x) / l;

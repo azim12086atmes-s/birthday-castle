@@ -36,6 +36,7 @@ function makeMask(clearings) {
     if (d > R + (noise(x * 0.01, z * 0.01) - 0.5) * 160) return 0;
     if (lakeDistance(x, z) < 14) return 0;
     if (cragDistance(x, z) < -28) return 0;                    // the castle grounds on the crag top stay open
+    if (z > 120 && x > -170 && x < 420 && lakeDistance(x, z) < 220) return 0;   // the castle's lake frontage stays open, as in U402
     if (Math.hypot(x - TEMPLE_HILL.x, z - TEMPLE_HILL.z) < TEMPLE_HILL.r) return 0;
     if (Math.hypot(x - ROSE_CRAG.x, z - ROSE_CRAG.z) < ROSE_CRAG.r) return 0;
     // keep the sky open over the Giant-Tree Way; trunks may come closer than the roof

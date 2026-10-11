@@ -44,10 +44,11 @@ export function createPath(scene) {
   };
   const ring = (a) => [PLAZA.x + Math.cos(a) * (PLAZA.r + 1), PLAZA.z + Math.sin(a) * (PLAZA.r + 1)];
   for (const s of [-1, 1]) {
-    const start = ring(s > 0 ? -0.5 : Math.PI + 0.5), side = [s * 162, 112];
-    toPortal([start, side, [s * 196, 92]].slice(0, s > 0 ? 3 : 2).concat(s > 0 ? [] : [[s * 175, 40], [s * 210, -10]]));
-    if (s > 0) toPortal([[s * 196, 92], [s * 175, 40], [s * 210, -10]]);
-    toPortal([[s * 175, 40], [s * 168, -60], [s * 190, -120]]);
+    // round the outside of the castle levels and its courtyard towers
+    const start = ring(s > 0 ? -0.2 : Math.PI + 0.2), side = [s * 100, 150], wide = [s * 180, 130];
+    if (s > 0) { toPortal([start, side, wide, [s * 196, 92]]); toPortal([[s * 196, 92], [s * 190, 20], [s * 210, -10]]); }
+    else toPortal([start, side, wide, [s * 186, 60], [s * 190, 20], [s * 210, -10]]);
+    toPortal([[s * 190, 20], [s * 175, -60], [s * 190, -120]]);
   }
   const usable = tiles.filter(([x, z]) => groundAt(x, z) !== null);
 

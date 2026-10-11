@@ -406,8 +406,8 @@ function frame() {
     const fixed = params.get('cam')?.split(',').map(Number);
     if (fixed?.length === 6) { camera.position.set(fixed[0], fixed[1], fixed[2]); camera.lookAt(fixed[3], fixed[4], fixed[5]); }
     else {
-      camera.position.set(Math.sin(a) * 150, 48 + Math.sin(t * 0.1) * 8, -30 + Math.cos(a) * 150);
-      camera.lookAt(0, 22, -40);
+      camera.position.set(Math.sin(a) * 620, 260 + Math.sin(t * 0.1) * 20, -40 + Math.cos(a) * 620);
+      camera.lookAt(0, 230, -40);
     }
   }
 
