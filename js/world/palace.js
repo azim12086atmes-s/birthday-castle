@@ -164,73 +164,211 @@ const lancetTex = () => pair((g, glow) => {
     if (!glow) { g.strokeStyle = '#d9b25a'; g.lineWidth = 3; g.stroke(); for (let y = 300; y < 690; y += 70) { g.beginPath(); g.arc(x + 14, y, 7, 0, Math.PI * 2); g.stroke(); } }
   }
 }, 128, 704);
-// The Rose Gate door (sheet 03 / 02): indigo glass with gold tracery. Two lancet lights under
-// pointed sub-arches, a central mullion, a tree of gold ogee strokes rising from the foot and
-// fanning out, a gold star medallion in the head, a pale rose light glowing at the foot.
-// `head` paints only the arch head (above the springing, the top `head` fraction) and the lit
-// hall below, for the panel the leaves swing away from.
+// The Rose Gate door, zoomed off sheet 03 and sheet 02: tiny fractured shards of deep cobalt
+// glass with gold leading and constellations picked out in light; a slender gold arch set
+// inside the opening with narrow side lights and a crossbar at the springing; a gold tree up
+// the centre with a diamond medallion of gold petals and a lower diamond round a glowing
+// core; pale rose light trunks rising at the foot. `head` paints the lit hall below the
+// springing for the panel behind the leaves.
 function drawDoor(g, glow, W, Hh, head = 0) {
-  const lg = g.createLinearGradient(0, 0, 0, Hh);
-  lg.addColorStop(0, glow ? '#5058c8' : '#2c34a8'); lg.addColorStop(0.45, glow ? '#7070e0' : '#4048c8');
-  lg.addColorStop(0.75, glow ? '#c8a0f0' : '#9a80e0'); lg.addColorStop(1, glow ? '#ffd8f0' : '#f2c6ea');
-  g.fillStyle = lg; g.fillRect(0, 0, W, Hh);
-  if (!glow) {
-    const cols = ['#6f8cff', '#a77cff', '#ff9ad8', '#ffd36a', '#4ac0ff', '#2a2f9a'];
-    for (let i = 0; i < 900; i++) { const y = R() * Hh * 0.8; g.fillStyle = cols[Math.floor(R() * cols.length)]; g.globalAlpha = 0.3; g.fillRect(R() * W, y, 3 + R() * 6, 3 + R() * 7); }
-    g.globalAlpha = 0.35; g.fillStyle = '#ffffff';
-    for (const x of [30, 58, 92, 164, 198, 226]) g.fillRect(x, Hh * 0.62, 5, Hh * 0.38);   // pale light streaks at the foot
-    g.globalAlpha = 1;
-  }
-  const gold = glow ? '#806020' : '#e2b44c', sp = Hh * (1 - 0.497);       // the springing line, from the top
-  g.strokeStyle = gold; g.lineCap = 'round';
-  const line = (wd, pts) => { g.lineWidth = wd; g.beginPath(); g.moveTo(...pts[0]); for (let i = 1; i < pts.length; i += 3) g.bezierCurveTo(...pts[i], ...pts[i + 1], ...pts[i + 2]); g.stroke(); };
-  // mullions: the centre one up into the head, the side ones up to the sub-arches
-  line(6, [[W / 2, Hh], [W / 2, Hh * 0.7], [W / 2, Hh * 0.4], [W / 2, Hh * 0.17]]);
-  for (const x of [W * 0.25, W * 0.75]) line(4, [[x, Hh], [x, Hh * 0.85], [x, sp + 50], [x, sp + 40]]);
-  // the two pointed sub-arches over the lights, each with a trefoil in its head
-  for (const [x0, x1] of [[6, W / 2], [W / 2, W - 6]]) {
-    const m = (x0 + x1) / 2;
-    line(5, [[x0, sp + 40], [x0, sp - 10], [m - 20, sp - 40], [m, sp - 56]]); line(5, [[x1, sp + 40], [x1, sp - 10], [m + 20, sp - 40], [m, sp - 56]]);
-    g.lineWidth = 3; for (let k = 0; k < 3; k++) { const a = -Math.PI / 2 + (k - 1) * 2.1; g.beginPath(); g.arc(m + Math.cos(a) * 9, sp - 14 + Math.sin(a) * 9, 8, 0, Math.PI * 2); g.stroke(); }
-  }
-  // the tree of ogee strokes: pairs of S-curves from the centre foot, fanning up and out, leaf tips at their ends
-  for (const sd of [-1, 1]) {
-    for (const [y0, y1, xo, wd] of [[Hh * 0.96, Hh * 0.6, 0.4, 5], [Hh * 0.82, Hh * 0.5, 0.3, 4], [Hh * 0.7, Hh * 0.43, 0.2, 3]]) {
-      const xe = W / 2 + sd * W * xo;
-      line(wd, [[W / 2, y0], [W / 2, (y0 + y1) / 2], [xe, y0 - (y0 - y1) * 0.2], [xe, y1]]);
-      g.fillStyle = gold; g.beginPath(); g.ellipse(xe, y1 - 7, 4, 9, 0, 0, Math.PI * 2); g.fill();
+  const GWm = 54, GHm = 93, kx = W / GWm, ky = Hh / GHm;
+  const X = (m) => W / 2 + m * kx, Y = (m) => Hh - m * ky;               // door metres to canvas
+  const sp = Y(GHm - GWm * 0.866);
+  const R2 = rng(77);                                                    // same shards on the map and the glow map
+  // fractured glass: a jittered grid split into shards, cobalt to violet, rose light at the foot
+  const nx = 26, ny = 46, pts = [];
+  for (let j = 0; j <= ny; j++) for (let i = 0; i <= nx; i++) pts.push([i * W / nx + (i % nx ? (R2() - 0.5) * 7 : 0), j * Hh / ny + (j % ny ? (R2() - 0.5) * 7 : 0)]);
+  const blues = ['#131c66', '#1a2680', '#1f3196', '#2440ae', '#2c4cc0', '#3a3aa8', '#1c3aa0', '#3560d0'];
+  const roses = ['#b8a4e8', '#d4b0e6', '#e8c0e6', '#c6b8f0', '#f0d0ea', '#9c90e0'];
+  for (let j = 0; j < ny; j++) for (let i = 0; i < nx; i++) {
+    const A = pts[j * (nx + 1) + i], B = pts[j * (nx + 1) + i + 1], C = pts[(j + 1) * (nx + 1) + i], D = pts[(j + 1) * (nx + 1) + i + 1];
+    const foot = Math.max(0, (j / ny - 0.58) / 0.42);
+    for (const tri of (R2() < 0.5 ? [[A, B, D], [A, D, C]] : [[A, B, C], [B, D, C]])) {
+      const useRose = R2() < foot * 1.1, pal = useRose ? roses : blues, col = pal[Math.floor(R2() * pal.length)];
+      g.beginPath(); g.moveTo(...tri[0]); g.lineTo(...tri[1]); g.lineTo(...tri[2]); g.closePath();
+      g.fillStyle = glow ? (useRose ? '#a080c0' : '#101850') : col; g.fill();
+      if (!glow) { g.strokeStyle = 'rgba(12,16,60,0.55)'; g.lineWidth = 0.8; g.stroke(); }
     }
-    line(3, [[W / 2, sp - 70], [W / 2 + sd * 30, sp - 80], [W / 2 + sd * 50, sp - 110], [W / 2 + sd * 36, sp - 140]]);   // curls round the medallion
   }
-  // the star medallion in the head
-  const my = Hh * 0.2;
-  g.lineWidth = 5; g.beginPath(); g.arc(W / 2, my, 30, 0, Math.PI * 2); g.stroke();
-  g.lineWidth = 2; for (let i = 0; i < 8; i++) { const a = (i / 8) * Math.PI * 2; g.beginPath(); g.arc(W / 2 + Math.cos(a) * 30, my + Math.sin(a) * 30, 6, 0, Math.PI * 2); g.stroke(); }
-  star8(g, W / 2, my, 22, glow ? '#ffe9a0' : '#f0c860');
-  g.fillStyle = glow ? '#ffd0f0' : '#ff9ad8'; g.beginPath(); g.arc(W / 2, my, 6, 0, Math.PI * 2); g.fill();
+  // the rose light trunks at the foot, branching into the tree
+  for (const [x, w] of [[-17, 3], [-10, 2.4], [-4, 2], [4, 2], [10, 2.4], [17, 3]]) {
+    const lg = g.createLinearGradient(0, Y(0), 0, Y(34)); lg.addColorStop(0, glow ? '#ffd8f0' : 'rgba(255,236,246,0.85)'); lg.addColorStop(1, 'rgba(255,220,240,0)');
+    g.fillStyle = lg; g.fillRect(X(x) - w * kx / 2, Y(34), w * kx, 34 * ky);
+  }
+  // constellations: bright stars joined by fine lines, and a dust of small stars
+  const cons = [[[-18, 70], [-12, 74], [-8, 69], [-14, 64], [-20, 61]], [[10, 76], [15, 72], [19, 75], [16, 66]], [[-19, 40], [-15, 46], [-11, 43], [-9, 50]], [[12, 44], [16, 49], [20, 45], [18, 39], [13, 37]], [[-6, 84], [0, 87], [6, 84]], [[-20, 22], [-16, 27], [-19, 31]], [[16, 23], [20, 28], [15, 31]]];
+  g.lineWidth = 1.1; g.strokeStyle = glow ? '#8090d0' : 'rgba(220,230,255,0.75)';
+  for (const c of cons) { g.beginPath(); c.forEach(([x, y], i) => (i ? g.lineTo(X(x), Y(y)) : g.moveTo(X(x), Y(y)))); g.stroke(); }
+  const star = (x, y, r) => { const rg = g.createRadialGradient(x, y, 0, x, y, r * 3); rg.addColorStop(0, '#ffffff'); rg.addColorStop(0.3, glow ? '#c8d8ff' : 'rgba(210,225,255,0.9)'); rg.addColorStop(1, 'rgba(160,180,255,0)'); g.fillStyle = rg; g.beginPath(); g.arc(x, y, r * 3, 0, Math.PI * 2); g.fill(); };
+  for (const c of cons) for (const [x, y] of c) star(X(x), Y(y), 2.2);
+  for (let i = 0; i < 160; i++) { const x = R2() * W, y = R2() * Hh * 0.7; g.fillStyle = `rgba(230,236,255,${0.35 + R2() * 0.5})`; g.fillRect(x, y, 1.4, 1.4); }
+  // the light from the centre: a warm rose-white bloom at the foot of the tree, spreading up and
+  // out through the glass and fading toward the edges
+  {
+    const cx = X(0), cy = Y(26), r = 62 * kx;
+    g.save(); g.globalCompositeOperation = 'lighter';
+    const rg = g.createRadialGradient(cx, cy, 0, cx, cy, r);
+    rg.addColorStop(0, glow ? 'rgba(255,240,250,1)' : 'rgba(255,236,246,0.7)'); rg.addColorStop(0.18, glow ? 'rgba(255,200,236,0.7)' : 'rgba(255,200,236,0.42)');
+    rg.addColorStop(0.45, glow ? 'rgba(170,140,255,0.45)' : 'rgba(150,130,255,0.28)'); rg.addColorStop(1, 'rgba(60,60,200,0)');
+    g.fillStyle = rg; g.fillRect(0, 0, W, Hh);
+    for (let i = 0; i < 26; i++) {                                         // rays fanning up from the bloom
+      const a = -Math.PI / 2 + (i / 25 - 0.5) * 2.6, len = (0.55 + R2() * 0.45) * r;
+      const lg = g.createLinearGradient(cx, cy, cx + Math.cos(a) * len, cy + Math.sin(a) * len);
+      lg.addColorStop(0, 'rgba(255,230,250,0.35)'); lg.addColorStop(1, 'rgba(255,230,250,0)');
+      g.strokeStyle = lg; g.lineWidth = 2 + R2() * 3; g.beginPath(); g.moveTo(cx, cy); g.lineTo(cx + Math.cos(a) * len, cy + Math.sin(a) * len); g.stroke();
+    }
+    g.restore();
+  }
+  const gold = glow ? '#806020' : '#e2b44c', goldHi = glow ? '#a08040' : '#ffe08a';
+  // fine gold leading in a diamond lattice over all the glass
+  g.save(); g.strokeStyle = glow ? 'rgba(128,96,32,0.5)' : 'rgba(226,180,76,0.38)'; g.lineWidth = 1;
+  for (let k = -Hh; k < W + Hh; k += 4 * kx) { g.beginPath(); g.moveTo(k, 0); g.lineTo(k - Hh * 0.55, Hh); g.stroke(); g.beginPath(); g.moveTo(k, 0); g.lineTo(k + Hh * 0.55, Hh); g.stroke(); }
+  g.restore();
+  g.strokeStyle = gold; g.lineCap = 'round'; g.lineJoin = 'round';
+  const curve = (wd, pts2) => { g.lineWidth = wd; g.beginPath(); g.moveTo(...pts2[0]); for (let i = 1; i < pts2.length; i += 3) g.bezierCurveTo(...pts2[i], ...pts2[i + 1], ...pts2[i + 2]); g.stroke(); };
+  const petal = (x, y, a, l, w) => { g.save(); g.translate(x, y); g.rotate(a); g.beginPath(); g.moveTo(0, 0); g.quadraticCurveTo(-w, -l * 0.5, 0, -l); g.quadraticCurveTo(w, -l * 0.5, 0, 0); g.fillStyle = gold; g.fill(); g.fillStyle = goldHi; g.beginPath(); g.ellipse(0, -l * 0.45, w * 0.3, l * 0.25, 0, 0, Math.PI * 2); g.fill(); g.restore(); };
+  // the gold arch set inside the opening, side lights and the springing crossbar
+  const archLine = (wi, hi, wd) => {
+    const hs = hi - wi * 0.866; g.lineWidth = wd; g.beginPath(); g.moveTo(X(-wi / 2), Y(0)); g.lineTo(X(-wi / 2), Y(hs));
+    for (let i = 1; i <= 16; i++) { const t = Math.PI - (i / 16) * (Math.PI / 3); g.lineTo(X(wi / 2 + Math.cos(t) * wi), Y(hs + Math.sin(t) * wi)); }
+    for (let i = 1; i <= 16; i++) { const t = Math.PI / 3 - (i / 16) * (Math.PI / 3); g.lineTo(X(-wi / 2 + Math.cos(t) * wi), Y(hs + Math.sin(t) * wi)); }
+    g.lineTo(X(wi / 2), Y(0)); g.stroke();
+  };
+  archLine(42, 84, 5); archLine(39, 80, 2);
+  for (const sd of [-1, 1]) { curve(3.5, [[X(sd * 24), Y(0)], [X(sd * 24), Y(15)], [X(sd * 24), Y(35)], [X(sd * 24), Y(46)]]); }
+  g.lineWidth = 3.5; g.beginPath(); g.moveTo(X(-25), Y(46)); g.lineTo(X(25), Y(46)); g.stroke();
+  for (const sd of [-1, 1]) { petal(X(sd * 25), Y(46), sd * Math.PI / 2, 9, 3.5); petal(X(sd * 21), Y(46) + 1, Math.PI, 8, 3); }
+  // the side lights: a chain of gold quatrefoils and diamonds up each one
+  for (const sd of [-1, 1]) for (let y = 4, i = 0; y < 44; y += 5, i++) {
+    const x = X(sd * 25.2), yy = Y(y);
+    if (i % 2) { g.lineWidth = 1.6; for (let k = 0; k < 4; k++) { const a = (k / 4) * Math.PI * 2; g.beginPath(); g.arc(x + Math.cos(a) * 3.2, yy + Math.sin(a) * 3.2, 3, 0, Math.PI * 2); g.stroke(); } }
+    else { g.lineWidth = 2; g.beginPath(); g.moveTo(x, yy - 9); g.lineTo(x + 4.5, yy); g.lineTo(x, yy + 9); g.lineTo(x - 4.5, yy); g.closePath(); g.stroke(); }
+  }
+  // the head between the inner arch and the tree: curling sprigs of gold petals
+  for (const sd of [-1, 1]) for (const [y0, x0, x1, y1] of [[50, 4, 14, 58], [58, 6, 12, 70], [70, 3, 8, 78], [36, 6, 16, 30], [24, 5, 15, 16]]) {
+    curve(2.4, [[X(sd * x0), Y(y0)], [X(sd * (x0 + 6)), Y(y0 + 3)], [X(sd * x1), Y((y0 + y1) / 2)], [X(sd * x1), Y(y1)]]);
+    g.save(); g.lineWidth = 2; g.beginPath(); g.arc(X(sd * x1) - sd * 4, Y(y1), 4, 0, Math.PI * 1.6); g.stroke(); g.restore();
+  }
+  // the gold tree: central stem, branches fanning out, the petal diamond and the lower diamond
+  curve(5, [[X(0), Y(0)], [X(0), Y(20)], [X(0), Y(55)], [X(0), Y(80)]]);
+  for (const sd of [-1, 1]) {
+    curve(3.5, [[X(0), Y(30)], [X(sd * 4), Y(34)], [X(sd * 12), Y(36)], [X(sd * 18), Y(44)]]);
+    curve(3, [[X(0), Y(40)], [X(sd * 6), Y(46)], [X(sd * 14), Y(48)], [X(sd * 17), Y(58)]]);
+    curve(3, [[X(0), Y(56)], [X(sd * 5), Y(62)], [X(sd * 12), Y(64)], [X(sd * 14), Y(72)]]);
+    for (const [x, y, a] of [[18, 44, 0.3], [17, 58, 0.2], [14, 72, 0.1], [9, 36, 1.2], [11, 49, 1.1]]) petal(X(sd * x), Y(y), sd * a, 10, 3.6);
+  }
+  const diamond = (cy, hw, hh, wd) => { g.lineWidth = wd; g.beginPath(); g.moveTo(X(0), Y(cy + hh)); g.lineTo(X(hw), Y(cy)); g.lineTo(X(0), Y(cy - hh)); g.lineTo(X(-hw), Y(cy)); g.closePath(); g.stroke(); };
+  diamond(64, 8, 10, 4.5); diamond(64, 5, 6.5, 2);
+  for (let i = 0; i < 8; i++) { const a = (i / 8) * Math.PI * 2; petal(X(0), Y(64), a, 11, 3.4); }
+  g.fillStyle = goldHi; g.beginPath(); g.arc(X(0), Y(64), 5, 0, Math.PI * 2); g.fill();
+  diamond(44, 5, 6.5, 3.5);
+  { const rg = g.createRadialGradient(X(0), Y(44), 0, X(0), Y(44), 14); rg.addColorStop(0, '#fff6c0'); rg.addColorStop(0.5, glow ? '#ffd870' : '#ffd86a'); rg.addColorStop(1, 'rgba(255,200,90,0)'); g.fillStyle = rg; g.beginPath(); g.arc(X(0), Y(44), 14, 0, Math.PI * 2); g.fill(); }
+  for (const sd of [-1, 1]) petal(X(0), Y(80), sd * 0.5, 10, 3.4);
   if (head) {                                                          // below the springing: the lit hall behind the leaves
     const hall = g.createLinearGradient(0, sp, 0, Hh); hall.addColorStop(0, '#ffd890'); hall.addColorStop(1, glow ? '#ffb070' : '#ff9a68');
     g.fillStyle = hall; g.fillRect(0, sp + 2, W, Hh - sp);
     g.fillStyle = glow ? '#c09060' : '#f4d7c0'; for (const x of [36, 100, 156, 220]) g.fillRect(x - 5, sp + 30, 10, Hh - sp);
+  } else { g.fillStyle = gold; g.fillRect(W / 2 - 3, sp, 6, Hh - sp); }  // the meeting stile, on the leaves only
+}
+// P01-02 rose window, twelve petals: pointed petals of indigo and violet glass in gold
+// tracery, an inner gold flower, a ring of small foils round the rim
+function rose12Tex() {
+  const [c, g] = cv(256, 256);
+  g.translate(128, 128);
+  g.fillStyle = '#f4e6dc'; g.beginPath(); g.arc(0, 0, 128, 0, Math.PI * 2); g.fill();
+  g.fillStyle = '#2c34a8'; g.beginPath(); g.arc(0, 0, 112, 0, Math.PI * 2); g.fill();
+  g.strokeStyle = '#e2b44c'; g.lineJoin = 'round';
+  for (let i = 0; i < 12; i++) {
+    g.save(); g.rotate((i / 12) * Math.PI * 2);
+    g.beginPath(); g.moveTo(0, -30); g.quadraticCurveTo(-30, -62, 0, -104); g.quadraticCurveTo(30, -62, 0, -30);
+    const pg = g.createLinearGradient(0, -30, 0, -104); pg.addColorStop(0, '#ff9ad8'); pg.addColorStop(0.4, i % 2 ? '#7a6cff' : '#5a7cff'); pg.addColorStop(1, '#3a44c8');
+    g.fillStyle = pg; g.fill(); g.lineWidth = 5; g.stroke();
+    g.beginPath(); g.arc(0, -118, 7, 0, Math.PI * 2); g.fillStyle = '#6f8cff'; g.fill(); g.lineWidth = 3; g.stroke();   // rim foils
+    g.restore();
   }
+  for (let i = 0; i < 12; i++) { const a = (i / 12) * Math.PI * 2 + Math.PI / 12; g.lineWidth = 3; g.beginPath(); g.moveTo(Math.cos(a) * 30, Math.sin(a) * 30); g.lineTo(Math.cos(a) * 110, Math.sin(a) * 110); g.stroke(); }
+  g.lineWidth = 6; g.beginPath(); g.arc(0, 0, 112, 0, Math.PI * 2); g.stroke();
+  g.fillStyle = '#e2b44c'; for (let i = 0; i < 8; i++) { g.save(); g.rotate((i / 8) * Math.PI * 2); g.beginPath(); g.ellipse(0, -16, 6, 14, 0, 0, Math.PI * 2); g.fill(); g.restore(); }
+  g.fillStyle = '#fff2c0'; g.beginPath(); g.arc(0, 0, 9, 0, Math.PI * 2); g.fill();
+  const t = tex(c, false); return t;
+}
+// A003 lotus keystone: pearl petals in two rings over a gold cup, unit height about 1
+function lotusGeo() {
+  const parts = [];
+  for (const [n, tilt, l, off] of [[8, 1.0, 1, 0], [6, 0.45, 1.1, 0.5], [1, 0, 1.15, 0]]) for (let i = 0; i < n; i++) {
+    const petal = new THREE.SphereGeometry(1, 8, 5).scale(0.3, 0.5 * l, 0.12).translate(0, 0.5 * l, 0).rotateX(n === 1 ? 0 : tilt).rotateY(((i + off) / n) * Math.PI * 2);
+    parts.push(paint(petal, '#fbe8e2'));
+  }
+  return merge(parts);
 }
 const gateTex = () => pair((g, glow) => drawDoor(g, glow, 256, 448, 1), 256, 448);
 const doorTex = () => pair((g, glow) => drawDoor(g, glow, 256, 448), 256, 448);
-// archivolt band (one 4.5 m tile along the arch): blue ground, gold rails, a gold cusped
-// quatrefoil between paired curved strokes, as carved round the gate arch in sheet 03
+// archivolt band (one 4.5 m tile along the arch), zoomed off sheet 03: a cobalt band between
+// gold rails carrying a running vine of gold petals and small four-petal gold flowers
 function archBandTex() {
   const [c, g] = cv(128, 64);
   g.fillStyle = '#f6ece6'; g.fillRect(0, 0, 128, 64);
-  g.fillStyle = '#3440a8'; g.fillRect(0, 10, 128, 44);
-  g.strokeStyle = '#e2b44c'; g.lineCap = 'round';
-  g.fillStyle = '#e2b44c'; g.fillRect(0, 6, 128, 5); g.fillRect(0, 53, 128, 5);
-  g.lineWidth = 4;
-  for (const x0 of [0, 64]) {
-    g.beginPath(); g.moveTo(x0 + 2, 50); g.bezierCurveTo(x0 + 20, 50, x0 + 4, 14, x0 + 26, 14); g.stroke();
-    g.beginPath(); g.moveTo(x0 + 62, 50); g.bezierCurveTo(x0 + 44, 50, x0 + 60, 14, x0 + 38, 14); g.stroke();
-    g.lineWidth = 3; for (let k = 0; k < 4; k++) { const a = (k / 4) * Math.PI * 2; g.beginPath(); g.arc(x0 + 32 + Math.cos(a) * 7, 32 + Math.sin(a) * 7, 6.5, 0, Math.PI * 2); g.stroke(); }
-    g.fillStyle = '#7f9cff'; g.beginPath(); g.arc(x0 + 32, 32, 5, 0, Math.PI * 2); g.fill();
-    star8(g, x0 + 32, 32, 4, '#ffe08a'); g.lineWidth = 4;
+  g.fillStyle = '#22309a'; g.fillRect(0, 10, 128, 44);
+  g.fillStyle = '#e2b44c'; g.fillRect(0, 5, 128, 6); g.fillRect(0, 53, 128, 6);
+  g.strokeStyle = '#e2b44c'; g.lineWidth = 3; g.beginPath();
+  for (let x = 0; x <= 128; x += 2) g.lineTo(x, 32 + Math.sin((x / 128) * Math.PI * 4) * 9);
+  g.stroke();
+  const petal = (x, y, a, l, w) => { g.save(); g.translate(x, y); g.rotate(a); g.beginPath(); g.moveTo(0, 0); g.quadraticCurveTo(-w, -l * 0.5, 0, -l); g.quadraticCurveTo(w, -l * 0.5, 0, 0); g.fillStyle = '#e8bc52'; g.fill(); g.fillStyle = '#ffe9a6'; g.beginPath(); g.ellipse(0, -l * 0.45, w * 0.3, l * 0.22, 0, 0, Math.PI * 2); g.fill(); g.restore(); };
+  for (let k = 0; k < 4; k++) {
+    const x = 16 + k * 32, up = k % 2 === 0, y = 32 + (up ? -9 : 9);
+    petal(x, y, up ? -0.5 : Math.PI + 0.5, 15, 5); petal(x, y, up ? 0.5 : Math.PI - 0.5, 15, 5);
+    const fx = x + 16, fy = 32 + (up ? 12 : -12);
+    for (let i = 0; i < 4; i++) petal(fx, fy, (i / 4) * Math.PI * 2, 7, 3);
+    g.fillStyle = '#ff9ad8'; g.beginPath(); g.arc(fx, fy, 2, 0, Math.PI * 2); g.fill();
+  }
+  return tex(c);
+}
+// gate pier face (one tile, 15 x 78 m), zoomed off sheets 03, 02 and P01 close-up C: rose and
+// ivory flutes with gold inlay between them, a gold scroll pair and gem at the head, a girih
+// star panel at mid height, a frieze of trefoil gothic arcading and a lotus dado at the foot
+function pierTex() {
+  const [c, g] = cv(128, 640);
+  for (let x = 0; x < 128; x += 16) {                                   // the flutes, shaded round
+    const lg = g.createLinearGradient(x, 0, x + 16, 0); lg.addColorStop(0, '#e9c4c6'); lg.addColorStop(0.5, (x / 16) % 2 ? '#fbf1ec' : '#f6dcdc'); lg.addColorStop(1, '#e9c4c6');
+    g.fillStyle = lg; g.fillRect(x, 0, 16, 640);
+  }
+  g.fillStyle = '#d9b25a'; for (let x = 0; x <= 128; x += 16) g.fillRect(x - 1, 130, 2, 400);
+  g.fillStyle = '#e2b44c'; g.fillRect(0, 0, 6, 640); g.fillRect(122, 0, 6, 640);
+  // head: a frame with a pair of gold scrolls round a blue gem
+  g.fillStyle = '#f8efe9'; g.fillRect(8, 20, 112, 100); g.strokeStyle = '#e2b44c'; g.lineWidth = 3; g.strokeRect(10, 22, 108, 96);
+  for (const sd of [-1, 1]) { g.lineWidth = 3; g.beginPath(); for (let a = 0; a < Math.PI * 3.4; a += 0.12) { const q = 24 * (1 - a / (Math.PI * 3.8)); g.lineTo(64 + sd * (20 + Math.cos(a) * q), 70 + Math.sin(a) * q); } g.stroke(); }
+  g.fillStyle = '#3a48c0'; g.beginPath(); g.moveTo(64, 52); g.lineTo(74, 70); g.lineTo(64, 88); g.lineTo(54, 70); g.closePath(); g.fill(); g.stroke();
+  // girih star panel
+  g.fillStyle = '#f8efe9'; g.fillRect(14, 270, 100, 100); g.lineWidth = 3; g.strokeRect(16, 272, 96, 96);
+  g.save(); g.translate(64, 320);
+  g.beginPath(); for (let i = 0; i < 20; i++) { const a = (i / 20) * Math.PI * 2, q = i % 2 ? 22 : 40; g.lineTo(Math.cos(a) * q, Math.sin(a) * q); } g.closePath(); g.fillStyle = '#2c3aa8'; g.fill(); g.stroke();
+  g.lineWidth = 2; for (let i = 0; i < 10; i++) { const a = (i / 10) * Math.PI * 2; g.beginPath(); g.moveTo(Math.cos(a) * 40, Math.sin(a) * 40); g.lineTo(Math.cos(a + 0.9) * 46, Math.sin(a + 0.9) * 46); g.stroke(); }
+  star8(g, 0, 0, 14, '#f0c860'); g.restore();
+  // trefoil gothic arcading at the foot
+  g.fillStyle = '#f8efe9'; g.fillRect(0, 540, 128, 70);
+  for (let i = 0; i < 4; i++) {
+    const x = 6 + i * 29;
+    lancetPath(g, x, 26, 548, 606); g.fillStyle = '#c8b0e0'; g.fill(); g.strokeStyle = '#e2b44c'; g.lineWidth = 2.5; g.stroke();
+    g.lineWidth = 1.8; for (let k = 0; k < 3; k++) { const a = -Math.PI / 2 + (k - 1) * 2.1; g.beginPath(); g.arc(x + 13 + Math.cos(a) * 4, 566 + Math.sin(a) * 4, 3.6, 0, Math.PI * 2); g.stroke(); }
+  }
+  // lotus dado
+  g.fillStyle = '#e2b44c'; g.fillRect(0, 610, 128, 30);
+  for (let i = 0; i < 8; i++) { const x = 8 + i * 16; g.fillStyle = '#fbeee6'; g.beginPath(); g.moveTo(x, 636); g.quadraticCurveTo(x - 7, 624, x, 614); g.quadraticCurveTo(x + 7, 624, x, 636); g.fill(); }
+  g.fillStyle = '#c9963a'; g.fillRect(0, 606, 128, 4);
+  return tex(c);
+}
+// shaft carving (A003 jambs, P01-C): a lace diaper of fine gold and rose lines with a small
+// rosette in each lozenge, one tile per 7 m of shaft and half its girth
+function shaftTex() {
+  const [c, g] = cv(64, 128);
+  g.fillStyle = '#fbf1ec'; g.fillRect(0, 0, 64, 128);
+  g.strokeStyle = 'rgba(214,150,160,0.8)'; g.lineWidth = 2;
+  for (let k = -128; k < 192; k += 32) { g.beginPath(); g.moveTo(k, 0); g.lineTo(k + 64, 128); g.stroke(); g.beginPath(); g.moveTo(k + 64, 0); g.lineTo(k, 128); g.stroke(); }
+  g.strokeStyle = '#e2b44c'; g.lineWidth = 1;
+  for (let k = -128; k < 192; k += 32) { g.beginPath(); g.moveTo(k + 3, 0); g.lineTo(k + 67, 128); g.stroke(); }
+  for (let y = 0; y <= 128; y += 32) for (let x = 0; x <= 64; x += 32) for (const [dx, dy] of [[0, 0], [16, 16]]) {
+    const px = x + dx, py = y + dy; g.fillStyle = '#e8a6b8'; for (let i = 0; i < 4; i++) { const a = (i / 4) * Math.PI * 2; g.beginPath(); g.arc(px + Math.cos(a) * 3, py + Math.sin(a) * 3, 2.6, 0, Math.PI * 2); g.fill(); }
+    g.fillStyle = '#e2b44c'; g.beginPath(); g.arc(px, py, 1.6, 0, Math.PI * 2); g.fill();
   }
   return tex(c);
 }
@@ -253,10 +391,6 @@ function gableTex(W = 88, H = 56) {
       g.beginPath(); for (let a = 0; a < Math.PI * 3.2; a += 0.15) { const q = r * sx * (1 - a / (Math.PI * 3.6)); g.lineTo(cx + sd * Math.cos(a) * q, cy + Math.sin(a) * q); } g.stroke();
     }
   }
-  const [mx, my] = P(0, 42);
-  g.lineWidth = 5; g.beginPath(); g.arc(mx, my, 34, 0, Math.PI * 2); g.stroke();
-  g.fillStyle = '#3440a8'; g.beginPath(); for (let k = 0; k < 4; k++) { const a = (k / 4) * Math.PI * 2 + Math.PI / 4; g.moveTo(mx + Math.cos(a) * 13 + 13, my + Math.sin(a) * 13); g.arc(mx + Math.cos(a) * 13, my + Math.sin(a) * 13, 13, 0, Math.PI * 2); } g.fill();
-  g.lineWidth = 3; g.stroke(); star8(g, mx, my, 16, '#f0c860');
   return tex(c, false);
 }
 // jali rail: gold-framed quatrefoils with a gold star (alpha cut)
@@ -355,7 +489,11 @@ export function createPalace(scene, preset, { makePortal } = {}) {
     paving: toon('#ffffff', { map: courtFloorTex(), vertexColors: true, emissive: '#2a1838', emissiveIntensity: 0.3 }),
     steps: toon('#ffffff', { map: steps, vertexColors: true, emissive: '#2a1838', emissiveIntensity: 0.3 }),
     rose: new THREE.MeshBasicMaterial({ map: roseWindowTexture(), toneMapped: false }),
+    rose12: toon('#ffffff', { map: rose12Tex(), emissive: '#8a7cff', emissiveIntensity: 0.5, vertexColors: true }),
+    crystal: am.crystal,
     band: toon('#ffffff', { map: archBandTex(), vertexColors: true, emissive: '#2a2050', emissiveIntensity: 0.35 }),
+    shaft: toon('#ffffff', { map: shaftTex(), vertexColors: true, emissive: '#2a1838', emissiveIntensity: 0.3 }),
+    pier: toon('#ffffff', { map: pierTex(), vertexColors: true, emissive: '#2a1838', emissiveIntensity: 0.3 }),
     gable: toon('#ffffff', { map: gableTex(), vertexColors: true, emissive: '#2a1838', emissiveIntensity: 0.3 }),
     corbel: toon('#ffffff', { map: corbelTex(), alphaTest: 0.5, vertexColors: true, emissive: '#2a1838', emissiveIntensity: 0.3 }),
     jali: toon('#ffffff', { map: jali, alphaTest: 0.5, side: THREE.DoubleSide, vertexColors: true, emissive: '#2a1838', emissiveIntensity: 0.3 }),
@@ -524,37 +662,66 @@ export function createPalace(scene, preset, { makePortal } = {}) {
     kit.add('gold', ring(2.6, 1.6, GA - 1, 12), GOLD);                                                    // the gable finial
     kit.add('gold', needle(1.8, 14, 8).translate(0, GA + 0.6, PF - 0.6), GOLD);
     kit.add('gold', finialGeo(3.4).translate(0, GA + 13, PF - 0.6), GOLD);
+    for (const sd of [-1, 1]) {                                                                           // P02-5C: crystal pendants off the star's arms
+      kit.add('gold', box(0.25, 2.4, 0.25, sd * 1.9, GA + 15.2, PF - 0.6), GOLD);
+      kit.add('crystal', new THREE.OctahedronGeometry(0.7, 0).scale(0.7, 1.5, 0.7).translate(sd * 1.9, GA + 14.4, PF - 0.6), '#b8c8ff');
+    }
+    kit.add('ivory', lotusGeo().scale(4.2, 4.6, 3).translate(0, SILL - 0.6 + hh + 4.6 - 1.4, PF + 1.2), '#fbe8e2');   // A003 lotus keystone
+    kit.add('gold', lathe([[0, -0.2], [0.55, -0.12], [0.75, 0.08], [0, 0.12]], 12).scale(4.2, 4.6, 3).translate(0, SILL - 0.6 + hh + 4.6 - 1.4, PF + 1.2), GOLD);
+    {                                                                                                   // P01-02 twelve-petal rose in the tympanum
+      const ry = GB + 44, rr = 4.6;
+      kit.add('rose12', new THREE.CircleGeometry(rr, 32).translate(0, ry, PF + 0.15), '#ffffff');
+      kit.add('gold', new THREE.TorusGeometry(rr + 0.3, 0.45, 6, 32).translate(0, ry, PF + 0.3), GOLD);
+      for (const [dx, dy] of [[0, 1], [0, -1], [1, 0], [-1, 0]]) kit.add('gold', new THREE.OctahedronGeometry(0.9, 0).scale(dx ? 1.3 : 0.7, dy ? 1.3 : 0.7, 0.4).translate(dx * (rr + 1.4), ry + dy * (rr + 1.4), PF + 0.3), GOLD);
+    }
     for (const sd of [-1, 1]) kit.add('gold', lathe([[0, 0], [0.9, 0.6], [0.5, 2.6], [0, 3.6]], 6).translate(sd * 2.6, GA + 3, PF - 0.6), GOLD);
   }
-  const roseY = GB + 42;
+  const roseY = GB + 44;
   // G4 jamb shafts, one per order, gold annulets and lotus capitals at the springing
-  const lotusCap = (r) => lathe([[r, 0], [r * 1.25, r * 0.5], [r * 1.9, r * 1.4], [r * 2.3, r * 2.1], [r * 2.4, r * 2.5], [0, r * 2.5]], 10);
+  // A010 / P01-C lotus capital: gold sawtooth necking, an ivory bell ringed by gold-edged petals, a gold abacus
+  const lotusCapital = (x, y, z, r) => {
+    kit.add('gold', cyl(r * 1.12, r * 1.12, r * 0.7, 10, x, y, z), GOLD);
+    for (let i = 0; i < 10; i++) { const a = (i / 10) * Math.PI * 2; kit.add('gold', new THREE.ConeGeometry(r * 0.28, r * 0.55, 3).translate(Math.cos(a) * r * 1.14, y + r * 0.42, Math.sin(a) * r * 1.14).translate(x, 0, z), GOLD); }   // sawtooth
+    kit.add('ivory', lathe([[r, 0], [r * 1.25, r * 0.7], [r * 1.75, r * 1.7], [r * 2.05, r * 2.3], [0, r * 2.3]], 10).translate(x, y + r * 0.7, z), PEARL);
+    for (let i = 0; i < 8; i++) {
+      const a = (i / 8) * Math.PI * 2, petal = new THREE.SphereGeometry(1, 5, 4).scale(r * 0.55, r * 1.05, r * 0.2).translate(0, r * 1.05, 0).rotateX(0.38).translate(0, 0, r * 1.05).rotateY(a).translate(x, y + r * 0.7, z);
+      kit.add(i % 2 ? 'gold' : 'ivory', petal, i % 2 ? GOLD : '#fbeee6');
+    }
+    kit.add('gold', box(r * 4.6, r * 0.5, r * 4.6, x, y + r * 3, z), GOLD);
+  };
   const hsp = GH - GW * 0.866;
   ORD.forEach(({ w, z }, k) => {
     for (const sd of [-1, 1]) {
-      const x = sd * (w / 2 + 0.9), zz = z + 0.6, top = SILL + hsp + k * 2 - 1;
-      kit.add('ivory', cyl(0.75, 0.75, top - SILL, 8, x, SILL, zz), k % 2 ? IVORY : PEARL);
+      const x = sd * (w / 2 + 0.9), zz = z + 0.6, top = SILL + hsp + k * 2 - 3;
+      kit.add('shaft', scaleUV(cyl(0.75, 0.75, top - SILL, 8, x, SILL, zz, true), 2, (top - SILL) / 7), k % 2 ? ROSE : PEARL);
       for (const f of [0.25, 0.5, 0.75]) kit.add('gold', ring(1, 0.6, SILL + (top - SILL) * f, 8).translate(x, 0, zz), GOLD);
-      kit.add('gold', lotusCap(0.75).translate(x, top, zz), GOLD);
-      kit.add('ivory', box(2.2, 1.6, 2.2, x, SILL, zz), PEARL);
+      lotusCapital(x, top, zz, 0.72);
+      kit.add('ivory', box(2.2, 1.6, 2.2, x, SILL, zz), PEARL); kit.add('gold', ring(1.05, 0.5, SILL + 1.6, 8).translate(x, 0, zz), GOLD);
     }
   });
-  // G5 buttress piers either side of the porch
+  // G5 buttress piers either side of the porch: carved fluted faces, clustered shafts, a great crystal lantern
   for (const sd of [-1, 1]) {
     const cx = sd * 46.5, z1 = PF + 4, d = z1 - FRONT, cz = (FRONT + z1) / 2;
-    kit.add('ivory', box(15, GB - 50, d, cx, 50, cz), PEARL);
+    kit.add('pier', wallBox(15, GB - 50, d, cx, 50, cz, 15, GB - 50), '#ffffff');
     kit.add('ivory', box(16.4, 3, d + 1.4, cx, 50, cz), ROSE);                                               // plinth
-    for (const dx of [-5, 5]) {                                                                             // twin colonnettes on the face
-      kit.add('ivory', cyl(1, 1, GB - 58, 8, cx + dx, 53, z1 + 0.6), IVORY);
-      for (const y of [70, 88, 106]) kit.add('gold', ring(1.35, 0.9, y, 8).translate(cx + dx, 0, z1 + 0.6), GOLD);
-      kit.add('gold', lotusCap(1).translate(cx + dx, GB - 5, z1 + 0.6), GOLD);
+    kit.add('gold', box(16.6, 0.6, d + 1.6, cx, 53, cz), GOLD);
+    for (const dx of [-5, 5]) {                                                                             // clustered shafts on the face
+      for (const [ox, oz, tint] of [[-1.3, 0.3, PEARL], [1.3, 0.3, PEARL], [0, 1.5, ROSE]]) {
+        kit.add('shaft', scaleUV(cyl(0.8, 0.8, GB - 62, 8, cx + dx + ox, 54, z1 + oz, true), 2, (GB - 62) / 7), tint);
+        for (const y of [66, 80, 94, 108]) kit.add('gold', ring(1.05, 0.7, y, 8).translate(cx + dx + ox, 0, z1 + oz), GOLD);
+      }
+      kit.add('ivory', box(5, 2.2, 4, cx + dx, 53, z1 + 0.8), PEARL);
+      lotusCapital(cx + dx, GB - 8, z1 + 0.8, 1.15);
     }
-    kit.add('lancet', archPanel(5.2, 26).translate(cx, 66, z1 + 0.15), '#ffffff');                         // glass niche
-    kit.add('gold', new THREE.TubeGeometry(pointedArchPath(6.2, 26.6), 24, 0.35, 4, false).translate(cx, 66, z1 + 0.3), GOLD);
-    kit.add('gold', box(1, 1, 5, cx, 98, z1 + 2.5), GOLD); hanging.push([cx, 97.5, z1 + 5, 2.4, 0]);       // crystal lantern on a bracket
+    kit.add('lancet', archPanel(5, 14).translate(cx, 98, z1 + 0.15), '#ffffff');                           // glass niche over the girih panel
+    kit.add('gold', new THREE.TubeGeometry(pointedArchPath(6, 14.6), 24, 0.35, 4, false).translate(cx, 98, z1 + 0.3), GOLD);
+    kit.add('gold', box(1.2, 1.2, 8, cx, 83, z1 + 4), GOLD); kit.add('gold', new THREE.TorusGeometry(1.6, 0.35, 4, 10, Math.PI).rotateY(Math.PI / 2).translate(cx, 81.4, z1 + 1.6), GOLD);
+    hanging.push([cx, 82, z1 + 7.6, 7.5, 0]);                                                               // a great crystal lantern on a scrolled bracket
     kit.add('gold', box(16.8, 1.6, d + 1.8, cx, GB - 1.6, cz), GOLD);                                       // gold capital band
     kit.add('ivory', box(11, 22, 11, cx, GB, z1 - 7), PEARL);                                               // the niche stage
     kit.add('lancet', archPanel(4, 15).translate(cx, GB + 3, z1 - 1.4), '#ffffff');
+    kit.add('gold', new THREE.TubeGeometry(pointedArchPath(5, 15.8), 20, 0.3, 4, false).translate(cx, GB + 3, z1 - 1.3), GOLD);
+    for (const ex of [-4.6, 4.6]) { kit.add('ivory', cyl(0.5, 0.5, 18, 6, cx + ex, GB + 2, z1 - 1.2), ROSE); kit.add('gold', ring(0.75, 0.6, GB + 19, 6).translate(cx + ex, 0, z1 - 1.2), GOLD); }
     kit.add('gold', box(12, 1, 12, cx, GB + 22, z1 - 7), GOLD);
     kit.add('gold', needle(3.4, 24, 8).translate(cx, GB + 23, z1 - 7), GOLD);                                // gold pinnacle cluster
     kit.add('gold', finialGeo(2).translate(cx, GB + 46, z1 - 7), GOLD);
@@ -565,6 +732,13 @@ export function createPalace(scene, preset, { makePortal } = {}) {
     kit.add('lancet', archPanel(4.6, 62).translate(sd * 59.5, 58, FRONT + 3.1), '#ffb0c8');
     kit.add('gold', new THREE.TubeGeometry(pointedArchPath(5.6, 62.6), 24, 0.3, 4, false).translate(sd * 59.5, 58, FRONT + 3.2), GOLD);
     cypress.push([sd * 47, SILL, PF + 12, 16, 0]);                                                       // the topiary cones before the piers
+  }
+  // the light from the door spilling out over the jambs and the landing, fading as it spreads
+  {
+    const spill = new THREE.Mesh(new THREE.PlaneGeometry(1, 1), additive('#ffd8f0', { map: glowTexture(), opacity: 0.3, depthWrite: false }));
+    spill.scale.set(GW * 1.9, GH * 1.25, 1); spill.position.set(0, SILL + 26, GZ + 2.2); spill.name = 'gate-light'; body.add(spill);
+    const pool = new THREE.Mesh(new THREE.PlaneGeometry(1, 1).rotateX(-Math.PI / 2), additive('#ffd0ec', { map: glowTexture(), opacity: 0.5, depthWrite: false }));
+    pool.scale.set(GW * 1.6, 1, 30); pool.position.set(0, SILL + 0.5, GZ + 12); body.add(pool);
   }
   // G7 the door leaves: the lower half of the stained-glass door, each swinging on its jamb
   const lt = doorTex(), leafMat = toon('#ffffff', { map: lt.map, emissiveMap: lt.glow, emissive: '#b0a0ff', emissiveIntensity: 0.6, side: THREE.DoubleSide });
