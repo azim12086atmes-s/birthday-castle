@@ -271,9 +271,9 @@ function stylizedClouds(preset) {
   };
   for (let c = 0; c < count; c++) {
     // a cumulus heap: a broad row of puffs along a flat belly, then a smaller crown stacked on top
-        const a = (c / count) * Math.PI * 2 + r() * 0.3, d = 1500 + r() * 1100;
-    const base = 620 + r() * 420;
-    const cx = Math.cos(a) * d, cz = Math.sin(a) * d, W = 230 + r() * 300, ang = a + Math.PI / 2 + (r() - 0.5) * 0.8;
+        const a = (c / count) * Math.PI * 2 + r() * 0.3, d = 4200 + r() * 2600;
+    const base = 1250 + r() * 600;
+    const cx = Math.cos(a) * d, cz = Math.sin(a) * d, W = 460 + r() * 600, ang = a + Math.PI / 2 + (r() - 0.5) * 0.8;
     const rows = [[5 + Math.floor(r() * 3), 1, 0], [3 + Math.floor(r() * 2), 0.62, 0.55], [1 + Math.floor(r() * 2), 0.4, 0.95]];
     rows.forEach(([n, sc, lift], ri) => {
       for (let i = 0; i < n; i++) {
@@ -320,6 +320,7 @@ export function createSky(scene, preset) {
   const group = new THREE.Group();
   const dome = skyDome(preset);
   const sea = cloudSea(preset);
+  sea.visible = false;                    // the Starlight Coast has a real sea now
   group.add(dome, sea);
   // the moon, nova, moonbow and towering clouds sit out beyond the mountain rim
   const far = new THREE.Group(); far.scale.setScalar(4.5); group.add(far);
@@ -338,6 +339,8 @@ export function createSky(scene, preset) {
       dome.material.uniforms.uTime.value = t;
       sea.material.uniforms.uTime.value = t;
       dome.position.copy(camera.position);
+      far.position.set(camera.position.x, 0, camera.position.z);
+      clouds.position.set(camera.position.x * 0.6, 0, camera.position.z * 0.6);
       const k = 1 + Math.sin(t * 0.7) * 0.15;
       extras.nova.scale.setScalar(150 * k);
       extras.novaGlow.material.opacity = 0.35 + Math.sin(t * 0.7) * 0.15;

@@ -2,23 +2,15 @@ import * as THREE from 'three';
 import { CONFIG, isCelebration, celebrationTime } from './config.js';
 import { resolveQuality, saveQuality, savedQuality, FrameGovernor } from './quality.js';
 import { createSky, FOG_COLOR, MOOD, SUN_DIR, MOON_DIR } from './world/sky.js';
-import { createIslands } from './world/islands.js';
-import { createCastle } from './world/castle.js';
+import { createIslands, portal as makePortal } from './world/islands.js';
+import { createCoast } from './world/coast.js';
+import { createPalace } from './world/palace.js';
 import { createNature } from './world/nature.js';
-import { createPath } from './world/path.js';
-import { createGarden } from './world/garden.js';
-import { createAcropolis } from './world/acropolis.js';
-import { createMonuments } from './world/monuments.js';
-import { createForest } from './world/forest.js';
-import { createDistricts } from './world/districts.js';
 import { createApproach } from './world/approach.js';
-import { createCastleDetail } from './world/castleDetail.js';
 import { createMeadow } from './world/meadow.js';
-import { createCastleArch } from './world/castleArch.js';
 import { createCreatures } from './world/creatures.js';
 import { createEffects } from './world/effects.js';
 import { createAtmosphere } from './world/atmosphere.js';
-import { createHorizon } from './world/horizon.js';
 import { SPAWN, MAIN, groundAt } from './world/layout.js';
 import { MEADOW_TIME } from './world/materials.js';
 const SPAWN_Y = groundAt(SPAWN.x, SPAWN.z) ?? MAIN.y;
@@ -47,8 +39,8 @@ if (quality.shadows) {
 const governor = new FrameGovernor(renderer, quality);
 
 const scene = new THREE.Scene();
-scene.fog = new THREE.Fog(FOG_COLOR, 260, 3000);
-const camera = new THREE.PerspectiveCamera(60, innerWidth / innerHeight, 0.2, 6000);
+scene.fog = new THREE.Fog(FOG_COLOR, 600, 9000);
+const camera = new THREE.PerspectiveCamera(60, innerWidth / innerHeight, 0.3, 14000);
 camera.position.set(SPAWN.x, SPAWN_Y + 40, SPAWN.z + 60);
 
 const hemi = new THREE.HemisphereLight('#9fb0ff', '#3a2a6a', 1.6);
@@ -111,20 +103,12 @@ addEventListener('resize', () => {
 
 // ------------------------------------------------------------------- world --
 const sky = createSky(scene, quality);
-createHorizon(scene);
+const coast = createCoast(scene, quality);
 const islands = createIslands(scene, quality);
-const castle = createCastle(scene, quality);
+const castle = createPalace(scene, quality, { makePortal });
+const approach = createApproach(scene, quality, { makePortal });
 const nature = createNature(scene, quality);
 const meadow = createMeadow(scene, quality);
-const path = createPath(scene);
-const acropolis = createAcropolis(scene, quality);
-const monuments = createMonuments(scene, quality);
-const garden = createGarden(scene, quality);
-const forest = createForest(scene, quality);
-const approach = createApproach(scene, quality);
-const castleDetail = createCastleDetail(scene, quality, castle);
-const castleArch = createCastleArch(scene, quality, castle);
-const districts = createDistricts(scene, quality, { pillars: monuments.pillarTops });
 const creatures = createCreatures(scene, quality);
 const effects = createEffects(scene, quality);
 const atmosphere = createAtmosphere(scene, quality);
@@ -183,7 +167,7 @@ function startGame(p) {
     onStart: (name) => ui.toast(`Flying to ${name}…`),
     onArrive: (name) => ui.toast(`✦ ${name} ✦`),
   });
-  travel.setPortals([...islands.portals, ...islands.returns]);
+  travel.setPortals([...islands.portals, ...islands.returns, ...castle.portals, ...approach.portals]);
 
   const remotes = new Map(); // id -> { avatar, target, facing, speed, score, boat, stepAcc, last }
   const voicePositions = new Map();
@@ -198,11 +182,11 @@ function startGame(p) {
   });
 
   const raycaster = new THREE.Raycaster();
-  controller.onStep = (x, z) => path.step(x, z, 1);
+  controller.onStep = (x, z) => approach.step(x, controller.pos.y, z, 1);
   controller.onTap = (nx, ny) => {
     raycaster.setFromCamera({ x: nx, y: ny }, camera);
-    const hit = raycaster.intersectObject(path.mesh, false)[0];
-    if (hit) { path.step(hit.point.x, hit.point.z, 2.2); net.sendEvent({ k: 'tap', x: +hit.point.x.toFixed(2), z: +hit.point.z.toFixed(2) }); }
+    const hit = approach.tapMesh && raycaster.intersectObject(approach.tapMesh, false)[0];
+    if (hit) { approach.step(hit.point.x, hit.point.y, hit.point.z, 2.2); net.sendEvent({ k: 'tap', x: +hit.point.x.toFixed(2), z: +hit.point.z.toFixed(2) }); }
   };
   controller.onFallReset = () => ui.toast('The stars caught you ✦');
 
@@ -268,7 +252,7 @@ function startGame(p) {
   });
   net.on('event', (id, e) => {
     const r = remotes.get(id);
-    if (e.k === 'tap') path.step(e.x, e.z, 2.2);
+    if (e.k === 'tap') approach.step(e.x, groundAt(e.x, e.z, 50) ?? 0, e.z, 2.2);
     else if (e.k === 'twirl' && r) r.avatar.twirl();
     else if (e.k === 'wish' && r) { lanterns.release(islands.shrine, String(e.text).slice(0, 60), r.profile.name); ui.toast(`${r.profile.name} released a wish lantern 🏮`); }
   });
@@ -356,21 +340,14 @@ function frame() {
   const focus = game ? game.controller.pos : camera.position;
   key.target.position.set(Math.round(focus.x), Math.round(focus.y), Math.round(focus.z));
   key.position.copy(key.target.position).addScaledVector(keyDir, 200);
+  coast.update(t, camera);
   islands.update(t);
-  castle.update(t, dt);
+  castle.update(t, dt, camera);
   nature.update(t);
   atmosphere.update(t);
-  path.update(t);
-  garden.update(t, camera);
-  acropolis.update(t, camera);
-  monuments.update(t);
-  forest.update(t);
-  districts.update(t, camera);
   MEADOW_TIME.value = t;
   meadow.update(t, camera);
-  approach.update(t);
-  castleDetail.update(t);
-  castleArch.update(t);
+  approach.update(t, dt);
   creatures.update(t, dt, camera);
   effects.update(t, dt, camera, governor.ratio);
   celebration.update(t, dt);
@@ -402,7 +379,7 @@ function frame() {
       if (r.boat.visible) { r.boat.position.copy(a.position).add(new THREE.Vector3(0, -0.35, 0)); r.boat.rotation.y = t * 0.3; }
       r.stepAcc += Math.hypot(a.position.x - r.last.x, a.position.z - r.last.z);
       r.last.copy(a.position);
-      if (r.stepAcc > 1.4) { r.stepAcc = 0; if (a.position.y < 150) path.step(a.position.x, a.position.z, 1); }
+      if (r.stepAcc > 1.4) { r.stepAcc = 0; approach.step(a.position.x, a.position.y, a.position.z, 1); }
       g.voicePositions.set(id, a.position);
     }
     const head = g.controller.pos.clone(); head.y += 1.6;
@@ -423,8 +400,8 @@ function frame() {
     const fixed = params.get('cam')?.split(',').map(Number);
     if (fixed?.length === 6) { camera.position.set(fixed[0], fixed[1], fixed[2]); camera.lookAt(fixed[3], fixed[4], fixed[5]); }
     else {
-      camera.position.set(Math.sin(a) * 620, 260 + Math.sin(t * 0.1) * 20, -40 + Math.cos(a) * 620);
-      camera.lookAt(0, 230, -40);
+      camera.position.set(Math.sin(a) * 2100, 520 + Math.sin(t * 0.1) * 60, 600 + Math.cos(a) * 2100);
+      camera.lookAt(0, 380, 0);
     }
   }
 
