@@ -9,7 +9,7 @@ export const FOG_COLOR = new THREE.Color('#2b2466');
 export const MOOD = { night: { value: 1 } };
 export const SUN_DIR = new THREE.Vector3(-600, 75, -330).normalize();
 export const MOON_DIR = new THREE.Vector3(-260, 330, -520).normalize();
-const FOG_DUSK = new THREE.Color('#d9bcd8'), FOG_NIGHT = new THREE.Color('#2b2466');
+const FOG_DUSK = new THREE.Color('#e4dcea'), FOG_NIGHT = new THREE.Color('#2b2466');
 
 const NOISE = /* glsl */`
   float hash12(vec2 p){ vec3 p3 = fract(vec3(p.xyx) * .1031); p3 += dot(p3, p3.yzx + 33.33); return fract((p3.x + p3.y) * p3.z); }

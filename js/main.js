@@ -59,7 +59,7 @@ scene.add(warm);
 
 // Lighting mood: golden-hour dusk before the celebration, aurora night during it.
 const LIGHT = {
-  dusk: { sky: new THREE.Color('#ffe0f0'), ground: new THREE.Color('#7d6a8c'), hemi: 1.65, key: new THREE.Color('#ffd7a8'), keyI: 3.0, warm: new THREE.Color('#ffb0d0'), warmI: 0.5 },
+  dusk: { sky: new THREE.Color('#fff4ec'), ground: new THREE.Color('#8f8296'), hemi: 1.7, key: new THREE.Color('#fff1dc'), keyI: 3.0, warm: new THREE.Color('#ffd6e6'), warmI: 0.35 },   // bright watercolour day, as the sheets are drawn
   night: { sky: new THREE.Color('#9fb0ff'), ground: new THREE.Color('#3a2a6a'), hemi: 1.15, key: new THREE.Color('#c4ceff'), keyI: 1.3, warm: new THREE.Color('#ffb7d9'), warmI: 0.5 },
 };
 const forcedMood = params.get('night') === '1' ? 1 : params.get('dusk') === '1' ? 0 : null;

@@ -14,7 +14,7 @@ import * as THREE from 'three';
 import { toon, glowBasic, additive, nightGrade } from './materials.js';
 import { glowTexture, rng } from './textures.js';
 import { Kit, box, cyl, lathe, cap, scaleUV, wallBox, waterMaterial, haloPoints, roseWindowTexture } from './kit.js';
-import { pointedArchShape, archFrameGeometry } from './arch.js';
+import { pointedArchShape, pointedArchPath, archFrameGeometry } from './arch.js';
 import { S, PAL, PALACE_TIERS, GATE, CASTLE, CASCADE, PLAZA, PORTALS, addCollider, addPad } from './layout.js';
 import {
   IVORY, PEARL, ROSE, GOLD, paint, merge, finialGeo, spireletGeo, cypressGeo, blossomGeo, orangeTreeGeo, roseClumpGeo,
@@ -344,17 +344,40 @@ export function createPalace(scene, preset, { makePortal } = {}) {
     kit.add('ivory', box(4, 82, 6, x, 50, FRONT + 3), IVORY);
     spirelets.push([x, 132, FRONT + 3, 1.1, 0]);
   }
-  for (const x of [-158, -92, 92, 158]) {
-    const w = 35, h = 69, y = 58;
-    kit.add('lancet', archPanel(w, h).translate(x, y, FRONT + 0.5), '#ffffff');
-    kit.add('gold', archFrameGeometry(w, h, 1.2, 1.2).translate(x, y, FRONT + 0.9), GOLD);
-    kit.add('ivory', archFrameGeometry(w + 4, h + 4, 1.6, 2).translate(x, y - 1, FRONT + 1.2), PEARL);     // carved hood
-    kit.add('ivory', box(w + 6, 2, 3, x, y - 2, FRONT + 1.5), PEARL);                                     // sill
+  // A001: flowing glass in a deep rose-gold reveal, stepped white and rose orders, a gold hood
+  // mould, a central mullion with gilded transoms, jamb colonnettes with gold capitals, a sill
+  const greatWindow = (x, y, z, w, h) => {
+    kit.add('lancet', archPanel(w, h).translate(x, y, z - 1.2), '#ffffff');
+    kit.add('ivory', archFrameGeometry(w, h, 0.9, 2.4).translate(x, y, z - 1.4), '#e0a888');                // the rose-gold reveal
+    kit.add('ivory', archFrameGeometry(w + 1.8, h + 1.4, 1.4, 1.6).translate(x, y - 0.2, z), PEARL);       // first order
+    kit.add('ivory', archFrameGeometry(w + 4.6, h + 3.4, 1.3, 1.2).translate(x, y - 0.4, z + 0.4), ROSE);  // second order
+    kit.add('gold', new THREE.TubeGeometry(pointedArchPath(w + 7.4, h + 5), 40, 0.55, 5, false).translate(x, y - 0.6, z + 1.4), GOLD);   // hood mould
+    kit.add('gold', new THREE.TubeGeometry(pointedArchPath(w - 0.3, h - 0.2), 40, 0.32, 4, false).translate(x, y, z - 0.7), GOLD);      // gold trim
+    const hs = h - w * 0.866;
+    kit.add('ivory', box(1.2, hs + w * 0.3, 0.8, x, y, z - 0.9), PEARL);                                   // mullion
+    for (let k = 1; k <= 6; k++) kit.add('gold', box(w - 1, 0.35, 0.5, x, y + (k * hs) / 7, z - 0.9), GOLD);  // transoms
+    kit.add('gold', new THREE.TorusGeometry(w * 0.2, 0.35, 4, 20).translate(x, y + hs + w * 0.36, z - 0.8), GOLD);   // the rose in the head
     for (const sd of [-1, 1]) {
-      kit.add('ivory', box(3, h * 0.9, 3, x + sd * (w / 2 + 4), y, FRONT + 2), IVORY);
-      spirelets.push([x + sd * (w / 2 + 4), y + h * 0.9, FRONT + 2, 0.9, 0]);
+      kit.add('ivory', cyl(0.8, 0.8, hs, 8, x + sd * (w / 2 + 2.6), y, z + 0.8), PEARL);                  // colonnette
+      kit.add('gold', box(2.4, 1, 2.4, x + sd * (w / 2 + 2.6), y + hs, z + 0.8), GOLD);                   // capital
+      kit.add('ivory', box(2.4, 1.4, 2.4, x + sd * (w / 2 + 2.6), y - 1.4, z + 0.8), PEARL);              // base
     }
-    spirelets.push([x, y + h + 4, FRONT + 2, 1, 0]);
+    kit.add('ivory', box(w + 8, 1.6, 3.4, x, y - 2.4, z + 0.8), PEARL);                                   // sill
+    spirelets.push([x, y + h + 5.5, z + 1.4, 0.9, 0]);
+  };
+  for (const x of [-158, -92, 92, 158]) {
+    greatWindow(x, 58, FRONT + 1.6, 35, 69);
+    for (const sd of [-1, 1]) {                                                                         // flanking pinnacle buttresses
+      kit.add('ivory', box(3.4, 66, 3.4, x + sd * (35 / 2 + 7), 54, FRONT + 2), IVORY);
+      kit.add('gold', box(3.8, 0.6, 3.8, x + sd * (35 / 2 + 7), 86, FRONT + 2), GOLD);
+      spirelets.push([x + sd * (35 / 2 + 7), 120, FRONT + 2, 0.9, 0]);
+    }
+  }
+  // a corbel table of little pointed arches under the lancet storey's cornice, gilded keystones between
+  for (let x = -326; x < 398; x += 6) {
+    if (Math.abs(x) < 52) continue;
+    kit.add('ivory', archFrameGeometry(4.2, 4.4, 0.5, 0.8).translate(x, 119, FRONT + 0.2), PEARL);
+    kit.add('gold', box(0.8, 1, 0.9, x + 3, 123.2, FRONT + 0.5), GOLD);
   }
 
   // ---- the Rose Gate (A003): gate block, five archivolt orders, crocketed gable with a rose, leaves ----
@@ -365,6 +388,13 @@ export function createPalace(scene, preset, { makePortal } = {}) {
     kit.add(k % 2 ? 'gold' : 'ivory', archFrameGeometry(w, h, 1.6, 1 + k * 0.4).translate(0, SILL - 0.5, GZ + 0.6 + k * 0.5), k % 2 ? GOLD : (k ? ROSE : PEARL));
   }
   kit.add('gold', lathe([[0, 0], [2, 1], [3.2, 3], [1.6, 5], [0, 6.5]], 10).translate(0, SILL + GH + 13, GZ + 3), GOLD);   // lotus keystone
+  kit.add('gold', new THREE.TubeGeometry(pointedArchPath(GW + 26, GH + 18), 48, 0.8, 6, false).translate(0, SILL - 1, GZ + 3.6), GOLD);   // hood mould
+  for (const sd of [-1, 1]) for (let k = 0; k < 5; k++) {                       // jamb colonnettes, one per order
+    const x = sd * (GW / 2 + 1.5 + k * 2), hs = GH - GW * 0.866 + k * 2;
+    kit.add(k % 2 ? 'gold' : 'ivory', cyl(0.7, 0.7, hs, 8, x, SILL, GZ + 0.8 + k * 0.5), k % 2 ? GOLD : PEARL);
+    kit.add('gold', box(1.8, 0.9, 1.8, x, SILL + hs, GZ + 0.8 + k * 0.5), GOLD);
+  }
+  for (const sd of [-1, 1]) { kit.add('ivory', box(4, 6, 4, sd * (GW / 2 + 14), SILL, GZ + 4), PEARL); kit.add('gold', lathe([[0, 0], [2.2, 1.5], [1.4, 4], [2.6, 6], [0, 8]], 12).translate(sd * (GW / 2 + 14), SILL + 6, GZ + 4), GOLD); }   // urns at the door
   const gTop = 140, apex = 182 - gTop, roseY = gTop + 24;
   {
     const gs = new THREE.Shape(); gs.moveTo(-52, 0); gs.lineTo(52, 0); gs.lineTo(0, apex); gs.lineTo(-52, 0);
@@ -394,7 +424,18 @@ export function createPalace(scene, preset, { makePortal } = {}) {
 
   // ---- the cascade court: a three-basin water stair between twin flights, down to the upper terrace ----
   const flightLen = Math.hypot(CZ1 - CZ0, SILL), flightA = Math.atan2(SILL, CZ1 - CZ0);
-  for (const [fx, fhw] of CASCADE.flights) kit.add('steps', flight(fx / S, fhw / S, CZ0, SILL, CZ1, 0, 0.45 / S), '#ffffff');
+  for (const [fx, fhw] of CASCADE.flights) {
+    kit.add('steps', flight(fx / S, fhw / S, CZ0, SILL, CZ1, 0, 0.45 / S), '#ffffff');
+    const runner = flight(fx / S, fhw / S * 0.34, CZ0, SILL + 0.06, CZ1, 0.06, 1e9);
+    kit.add('ivory', runner, '#e88aa8');                                                     // the rose runner
+    for (const sd of [-1, 1]) kit.add('gold', flight(fx / S + sd * fhw / S * 0.36, 0.35, CZ0, SILL + 0.1, CZ1, 0.1, 1e9), GOLD);
+  }
+  for (const sd of [-1, 1]) for (const rx of [sd * (CW + 0.5), sd * 95.5]) for (let t = 0; t <= 1.001; t += 0.25) {   // newel pedestals with urns
+    const y = SILL * (1 - t), z = CZ0 + (CZ1 - CZ0) * t;
+    kit.add('ivory', box(3, 4.5, 3, rx, y, z), PEARL);
+    kit.add('gold', lathe([[0, 0], [1.6, 1], [1, 2.6], [1.9, 4], [0, 5.2]], 10).translate(rx, y + 4.5, z), GOLD);
+    clumps.push([rx, y + 9, z, 3, t * 9]);
+  }
   for (const sd of [-1, 1]) {
     const xa = sd > 0 ? CW : -CHW, xb = sd > 0 ? CHW : -CW;
     const wedge = new THREE.Shape([new THREE.Vector2(CZ0, 0), new THREE.Vector2(CZ1, 0), new THREE.Vector2(CZ0, SILL)]);
