@@ -4,9 +4,11 @@ On 2026-10-11 the owner drew 16 concept sheets and asked for them to be built ex
 
 The sheets are in [owner-sketches/](owner-sketches/), numbered 01 to 16. This page supersedes world-layout.md §2 (map) and §5 (castle v4) wherever they conflict. Anything this page leaves out stays as it is in world-layout.md.
 
+> **Scale rule (owner, 2026-10-11 18:42): height is the parameter, and everything scales with it.** The palace takes the labelled heights, which are 2.75× its drawn proportions. So **every size and every position on this page is multiplied by the world scale `S = 2.75`**: the world envelope, district coordinates, the lake, the causeway, the plan sizes and each landmark's drawn sizes. That keeps the map's proportions and the sketches' looks exactly, only bigger. Numbers below are the drawn (×1) values unless marked "×S done". Tree, plant, prop and path sizes are human-scale and **do not** scale.
+
 ## 1. The world: Starlight Coast (sheet 04)
 
-- **Size:** a 7.5 × 7.5 km island coast, which is 3× the linear size of world v2 (2.4 km). The ocean surrounds it, with an uneven wave field, reefs, beaches, sea stacks and boat routes.
+- **Size:** a 7.5 × 7.5 km island coast at ×1, which is **about 20.6 × 20.6 km at ×S**. The ocean surrounds it, with an uneven wave field, reefs, beaches, sea stacks and boat routes.
 - **Origin:** the Princess Palace (B01) is at (0, 0), north is −z, and units are metres. The palace sits north of the map centre, so the envelope runs from x −4000 to +3500 and from z −2600 to +4900.
 - **The golden route:** spawn at the B20 Bridge Pavilions on the south shore of Lantern Lake. From there, one straight causeway runs north for about 2.3 km across the lake to the palace gate, lined with the 100 m avenue trees (T02). The cove-and-winding-path entrance is replaced; the old path can stay as a secondary route.
 - **Secondary paths** link every district. A dashed **boat route** runs from Lantern Cove past the Lighthouse to the Sea Pavilion. **Sky portals** reach the four sky isles.
@@ -62,8 +64,8 @@ Sheet 03 (Towering Garden Palace, revision 03) is the latest, so **its sizes win
 
 | Part | Size |
 |---|---|
-| South front | 800 m wide |
-| Plan | 800 × 680 m |
+| South front | 800 m wide at ×1, **2200 m at ×S** |
+| Plan | 800 × 680 m at ×1, **2200 × 1870 m at ×S** |
 | Tallest needle spire (central) | 1100 m |
 | Two flanking spires | 960 m and 840 m |
 | Central pavilion roof | 700 m |
@@ -81,7 +83,7 @@ Sheet 03 (Towering Garden Palace, revision 03) is the latest, so **its sizes win
 - A rose-garland parapet runs along each terrace.
 - Arch panels sit between the bays.
 
-**Heights:** the owner chose the labelled heights. The B01 build sheet multiplies the drawn heights by 2.75 (`H_SCALE`).
+**Heights and plan:** the owner chose the labelled heights, then said the area must widen to match. So the palace scales uniformly by S = 2.75: **plan about 2200 × 1870 m**, spires 840, 960 and 1100 m (the labels).
 
 **Gate and windows *(default)*:** scale the v4 rule up with the palace.
 
@@ -196,7 +198,9 @@ Each landmark B02 to B25 has its own elevation, isometric view, plan and swatche
   - Then the Lantern Lake shoreline.
   - Walks are 3 to 6 m clear. Bed edging is 600 mm. Use the paving patterns from the sheet.
 
-## 8. Keeping a 7.5 km world playable on a laptop
+## 8. Keeping a 20 km world playable on a laptop
+
+- At ×S the walk from spawn to the palace gate is about 6 km. **Travel must be built in:** sky boats (A058) on the lake, a fast "glide" along the golden causeway, and portals between districts.
 
 - **Stream by district.** Only the district you stand in, plus its neighbours, gets full detail. Everything else is a low far mesh or a billboard impostor.
 - **The palace is visible from everywhere,** so it needs three levels of detail:

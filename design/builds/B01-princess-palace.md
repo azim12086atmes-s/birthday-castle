@@ -20,7 +20,18 @@ Measured on sheet 03, the drawing is 800 m wide at about 1.16 m per pixel. At th
 | A: as drawn | 800 m | about 400 m | Looks exactly like the sketch. |
 | **B: labelled heights** *(chosen)* | 800 m | 1100 m | Every tower is about 2.7× taller and thinner than drawn. |
 
-**The owner chose B.** Every height below is given as drawn, so **multiply all heights by `H_SCALE` = 2.75**. That gives spires of 840, 960 and 1100 m, a cone pavilion of 700 m, a great dome finial of about 960 m, and a front wall of about 425 m. Plan sizes and widths stay as listed, so the towers come out taller and thinner than drawn.
+**The owner chose B, then (18:42) said the area must be wider and broader, with height as the parameter.** So the whole palace scales **uniformly by S = 2.75**: every height *and* width below is drawn, multiply all of them by 2.75.
+
+| Part | ×S result |
+|---|---|
+| Plan | about 2200 × 1870 m |
+| Spires | 840, 960 and 1100 m |
+| Cone pavilion | 700 m |
+| Front wall | about 425 m tall |
+| Gate opening | about 205 × 275 m |
+| Great lancets | about 96 × 200 m |
+
+The proportions now match your drawing exactly, with no stretched towers. Human-scale things (paths 3 to 6 m, stair treads, rails, trees, lanterns, benches) do not scale; use more of them instead.
 
 ## 1. Footprint and levels (crops 08 and 09)
 
