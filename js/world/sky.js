@@ -1,6 +1,7 @@
 // Night sky: gradient, stars, milky way, aurora, moon, a supernova, a moonbow,
 // a painterly sea of clouds below the islands and drifting cloud puffs.
 import * as THREE from 'three';
+import { mergeGeometries } from 'three/addons/utils/BufferGeometryUtils.js';
 import { glowTexture, sparkleTexture, cloudTexture, rng } from './textures.js';
 
 export const FOG_COLOR = new THREE.Color('#2b2466');
@@ -8,7 +9,7 @@ export const FOG_COLOR = new THREE.Color('#2b2466');
 export const MOOD = { night: { value: 1 } };
 export const SUN_DIR = new THREE.Vector3(-600, 75, -330).normalize();
 export const MOON_DIR = new THREE.Vector3(-260, 330, -520).normalize();
-const FOG_DUSK = new THREE.Color('#a88fc0'), FOG_NIGHT = new THREE.Color('#2b2466');
+const FOG_DUSK = new THREE.Color('#d9bcd8'), FOG_NIGHT = new THREE.Color('#2b2466');
 
 const NOISE = /* glsl */`
   float hash12(vec2 p){ vec3 p3 = fract(vec3(p.xyx) * .1031); p3 += dot(p3, p3.yzx + 33.33); return fract((p3.x + p3.y) * p3.z); }
@@ -43,7 +44,7 @@ function skyDome(preset) {
         // golden-hour dusk: warm peach horizon, lilac middle, deep blue top,
         // and a sun glow (Ghibli / BotW evening palette)
         float sunDot = max(dot(d, uSun), 0.);
-        vec3 dz = vec3(0.16, 0.22, 0.52), dm = vec3(0.56, 0.46, 0.74), dh = vec3(1.0, 0.64, 0.44);
+        vec3 dz = vec3(0.30, 0.44, 0.82), dm = vec3(0.80, 0.66, 0.88), dh = vec3(1.0, 0.76, 0.58);
         vec3 dusk = mix(dh, dm, smoothstep(-0.02, 0.22, h));
         dusk = mix(dusk, dz, smoothstep(0.22, 0.85, h));
         dusk = mix(dusk, vec3(0.74, 0.52, 0.62), smoothstep(0.0, -0.25, h));
@@ -244,6 +245,77 @@ function cloudPuffs(group, preset) {
   return puffs;
 }
 
+// Stylized 3D cumulus (BotW / Ghibli / Genshin): each cloud is a cluster of lumpy
+// puffs with a flat belly, shaded in two soft toon steps with a warm sunlit crown,
+// lilac shadows and a bright rim. All clouds share one mesh in a slow-turning ring.
+function stylizedClouds(preset) {
+  const r = rng(4242), detail = preset.clouds >= 40 ? 2 : 1;
+  const count = Math.round(preset.clouds * 0.7) + 6;
+  const geos = [];
+  const lump = (x, y, z, s) => Math.sin(x * 0.9 + s) * Math.sin(y * 1.1 + s * 2) * Math.sin(z * 0.8 + s * 3);
+  const puff = (px, py, pz, R, base, seed) => {
+    const g = new THREE.IcosahedronGeometry(R, detail), p = g.attributes.position;
+    const nrm = new Float32Array(p.count * 3);
+    for (let k = 0; k < p.count; k++) {
+      let x = p.getX(k), y = p.getY(k), z = p.getZ(k);
+      const L = Math.hypot(x, y, z) || 1;
+      nrm[k * 3] = x / L; nrm[k * 3 + 1] = y / L; nrm[k * 3 + 2] = z / L;
+      const f = 1 + 0.1 * lump(x / R * 3, y / R * 3, z / R * 3, seed);
+      x *= f; y *= f; z *= f;
+      if (py + y < base) y = base - py + (py + y - base) * 0.15;         // flat belly
+      p.setXYZ(k, px + x, py + y, pz + z);
+    }
+    g.setAttribute('normal', new THREE.Float32BufferAttribute(nrm, 3));
+    g.deleteAttribute('uv');
+    geos.push(g.index ? g.toNonIndexed() : g);
+  };
+  for (let c = 0; c < count; c++) {
+    // a cumulus heap: a broad row of puffs along a flat belly, then a smaller crown stacked on top
+        const a = (c / count) * Math.PI * 2 + r() * 0.3, d = 1500 + r() * 1100;
+    const base = 620 + r() * 420;
+    const cx = Math.cos(a) * d, cz = Math.sin(a) * d, W = 230 + r() * 300, ang = a + Math.PI / 2 + (r() - 0.5) * 0.8;
+    const rows = [[5 + Math.floor(r() * 3), 1, 0], [3 + Math.floor(r() * 2), 0.62, 0.55], [1 + Math.floor(r() * 2), 0.4, 0.95]];
+    rows.forEach(([n, sc, lift], ri) => {
+      for (let i = 0; i < n; i++) {
+        const t = n === 1 ? 0 : i / (n - 1) - 0.5, mid = 1 - Math.abs(t) * 1.2;
+        const R = W * sc * (0.2 + 0.16 * mid) * (0.85 + r() * 0.3);
+        const ox = t * W * 1.5 * sc, oz = (r() - 0.5) * W * 0.35, oy = R * 0.45 + W * lift * 0.42;
+        const px = cx + ox * Math.cos(ang) - oz * Math.sin(ang), pz = cz + ox * Math.sin(ang) + oz * Math.cos(ang);
+        puff(px, base + oy, pz, R, base, i + c * 7 + ri * 3);
+      }
+    });
+  }
+  const mat = new THREE.ShaderMaterial({
+    fog: false,
+    uniforms: { uTime: { value: 0 }, uNight: MOOD.night, uSun: { value: SUN_DIR }, uMoon: { value: MOON_DIR } },
+    vertexShader: /* glsl */`
+      varying vec3 vN; varying vec3 vW;
+      void main(){ vN = normalize(mat3(modelMatrix) * normal); vec4 w = modelMatrix * vec4(position, 1.); vW = w.xyz; gl_Position = projectionMatrix * viewMatrix * w; }`,
+    fragmentShader: /* glsl */`
+      uniform float uNight; uniform vec3 uSun; uniform vec3 uMoon; varying vec3 vN; varying vec3 vW;
+      void main(){
+        vec3 L = normalize(mix(uSun, uMoon, uNight) + vec3(0., 1.1, 0.));   // lit from above so the crowns glow
+        float d = dot(normalize(vN), L) * .5 + .5;
+        float lit = smoothstep(.36, .54, d) * .55 + smoothstep(.62, .82, d) * .45;   // two soft toon steps
+        vec3 V = normalize(cameraPosition - vW);
+        float rim = pow(1. - max(dot(normalize(vN), V), 0.), 3.);
+        vec3 shadeD = vec3(.8, .74, .93), litD = vec3(1., .88, .9), topD = vec3(1., .99, .96);
+        vec3 shadeN = vec3(.18, .17, .38), litN = vec3(.48, .46, .72), topN = vec3(.72, .72, .92);
+        vec3 shade = mix(shadeD, shadeN, uNight), mid = mix(litD, litN, uNight), top = mix(topD, topN, uNight);
+        vec3 c = mix(shade, mid, smoothstep(0., .55, lit));
+        c = mix(c, top, smoothstep(.6, 1., lit) * smoothstep(-.2, .6, vN.y));
+        c += mix(vec3(1., .75, .7), vec3(.6, .65, 1.), uNight) * rim * .22;
+        c = mix(c, mix(vec3(.95, .82, .9), vec3(.2, .18, .4), uNight), .1);       // a breath of sky haze
+        gl_FragColor = vec4(pow(c, vec3(2.2)), 1.);
+        #include <colorspace_fragment>
+      }`,
+  });
+  const mesh = new THREE.Mesh(mergeGeometries(geos), mat);
+  mesh.frustumCulled = false;
+  mesh.name = 'clouds';
+  return mesh;
+}
+
 export function createSky(scene, preset) {
   const group = new THREE.Group();
   const dome = skyDome(preset);
@@ -252,7 +324,8 @@ export function createSky(scene, preset) {
   // the moon, nova, moonbow and towering clouds sit out beyond the mountain rim
   const far = new THREE.Group(); far.scale.setScalar(4.5); group.add(far);
   const extras = moonAndStars(far);
-  const puffs = cloudPuffs(far, preset);
+  const clouds = stylizedClouds(preset);
+  group.add(clouds);
   scene.add(group);
   let revealing = false, lastT = null;
 
@@ -272,12 +345,8 @@ export function createSky(scene, preset) {
       FOG_COLOR.copy(FOG_DUSK).lerp(FOG_NIGHT, n);
       extras.halo.material.opacity = 0.55 * n; extras.disk.material.opacity = 0.1 + 0.9 * n;
       extras.novaGlow.material.opacity *= n; extras.nova.material.opacity = n;
-      for (const p of puffs) {
-        p.material.color.copy(p.userData.dusk).lerp(p.userData.night, n);
-        p.userData.a += p.userData.speed * 0.016;
-        p.position.x = Math.cos(p.userData.a) * p.userData.d;
-        p.position.z = Math.sin(p.userData.a) * p.userData.d;
-      }
+      clouds.rotation.y = t * 0.0035;
+      clouds.material.uniforms.uTime.value = t;
     },
     setCelebration(on) {
       dome.material.uniforms.uCelebrate.value = on ? 1 : 0;

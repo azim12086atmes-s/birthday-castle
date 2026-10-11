@@ -2,7 +2,7 @@
 // portals, Lantern Lake and the little landmark on each island.
 import * as THREE from 'three';
 import { mergeGeometries } from 'three/addons/utils/BufferGeometryUtils.js';
-import { toon, glowBasic, additive, nightGrade } from './materials.js';
+import { toon, glowBasic, additive, nightGrade, meadowGrade } from './materials.js';
 import { grassTexture, rockTexture, flagstoneTexture, rosetteTexture, friezeTexture, glowTexture, textTexture, rng } from './textures.js';
 import { ISLANDS, PORTALS, RETURNS, PLAZA, LAKE_POND, SPAWN, BRIDGE, MAIN, addCollider, groundAt, terrainHeight, groundHSL } from './layout.js';
 
@@ -79,14 +79,14 @@ function islandBody(isl, r, preset) {
   if (isl.main) {
     const grass = grassTexture().clone(); grass.needsUpdate = true;
     const N = preset.grass < 4000 ? 150 : preset.grass < 8000 ? 190 : 230;
-    const land = new THREE.Mesh(landGeometry(N), nightGrade(new THREE.MeshLambertMaterial({ map: grass, vertexColors: true, emissive: '#10283a', emissiveIntensity: 0.5 }), 'terrain'));
+    const land = new THREE.Mesh(landGeometry(N), meadowGrade(nightGrade(new THREE.MeshLambertMaterial({ map: grass, vertexColors: true, emissive: '#10283a', emissiveIntensity: 0.5 }), 'terrain')));
     land.receiveShadow = true;
     group.add(land);
     return group;
   }
   const grass = grassTexture().clone(); grass.needsUpdate = true;
   grass.repeat.set(isl.r / 6, isl.r / 6);
-  const top = new THREE.Mesh(terrainGeometry(isl), nightGrade(new THREE.MeshLambertMaterial({ map: grass, vertexColors: true, emissive: '#10283a', emissiveIntensity: 0.5 }), 'terrain'));
+  const top = new THREE.Mesh(terrainGeometry(isl), meadowGrade(nightGrade(new THREE.MeshLambertMaterial({ map: grass, vertexColors: true, emissive: '#10283a', emissiveIntensity: 0.5 }), 'terrain')));
   top.receiveShadow = true;
   const cliff = new THREE.Mesh(new THREE.CylinderGeometry(isl.r, isl.r * 0.96, 3, 72, 1, true), toon('#7a6a9a', { emissive: '#1a1440', emissiveIntensity: 0.6 }));
   cliff.position.set(isl.x, isl.y - 1.5, isl.z);

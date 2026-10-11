@@ -13,11 +13,13 @@ import { createForest } from './world/forest.js';
 import { createDistricts } from './world/districts.js';
 import { createApproach } from './world/approach.js';
 import { createCastleDetail } from './world/castleDetail.js';
+import { createMeadow } from './world/meadow.js';
 import { createCreatures } from './world/creatures.js';
 import { createEffects } from './world/effects.js';
 import { createAtmosphere } from './world/atmosphere.js';
 import { createHorizon } from './world/horizon.js';
 import { SPAWN, MAIN, groundAt } from './world/layout.js';
+import { MEADOW_TIME } from './world/materials.js';
 const SPAWN_Y = groundAt(SPAWN.x, SPAWN.z) ?? MAIN.y;
 import { Avatar } from './avatar.js';
 import { Controller } from './controls.js';
@@ -64,7 +66,7 @@ scene.add(warm);
 
 // Lighting mood: golden-hour dusk before the celebration, aurora night during it.
 const LIGHT = {
-  dusk: { sky: new THREE.Color('#c9b8ff'), ground: new THREE.Color('#5e4a78'), hemi: 1.25, key: new THREE.Color('#ffb98a'), keyI: 2.6, warm: new THREE.Color('#ff9ec4'), warmI: 0.45 },
+  dusk: { sky: new THREE.Color('#ffe0f0'), ground: new THREE.Color('#7d6a8c'), hemi: 1.65, key: new THREE.Color('#ffd7a8'), keyI: 3.0, warm: new THREE.Color('#ffb0d0'), warmI: 0.5 },
   night: { sky: new THREE.Color('#9fb0ff'), ground: new THREE.Color('#3a2a6a'), hemi: 1.15, key: new THREE.Color('#c4ceff'), keyI: 1.3, warm: new THREE.Color('#ffb7d9'), warmI: 0.5 },
 };
 const forcedMood = params.get('night') === '1' ? 1 : params.get('dusk') === '1' ? 0 : null;
@@ -112,6 +114,7 @@ createHorizon(scene);
 const islands = createIslands(scene, quality);
 const castle = createCastle(scene);
 const nature = createNature(scene, quality);
+const meadow = createMeadow(scene, quality);
 const path = createPath(scene);
 const acropolis = createAcropolis(scene, quality);
 const monuments = createMonuments(scene, quality);
@@ -361,6 +364,8 @@ function frame() {
   monuments.update(t);
   forest.update(t);
   districts.update(t, camera);
+  MEADOW_TIME.value = t;
+  meadow.update(t, camera);
   approach.update(t);
   castleDetail.update(t);
   creatures.update(t, dt, camera);

@@ -87,3 +87,56 @@ export function nightGrade(m, key) {
   m.customProgramCacheKey = () => key + '-ng';
   return m;
 }
+
+// Painted meadows: on the green parts of the land, broad sunlit and cool patches,
+// a wind sheen rolling across the grass, and drifts of tiny wildflowers that fade
+// into a soft colour wash with distance.
+export const MEADOW_TIME = { value: 0 };
+export function meadowGrade(m) {
+  const prev = m.onBeforeCompile;
+  m.onBeforeCompile = (sh, r) => {
+    if (prev) prev(sh, r);
+    sh.uniforms.uMTime = MEADOW_TIME;
+    sh.vertexShader = sh.vertexShader
+      .replace('#include <common>', '#include <common>\nvarying vec3 vMWorld; varying float vMUp;')
+      .replace('#include <project_vertex>', '#include <project_vertex>\nvMWorld = (modelMatrix * vec4(transformed, 1.0)).xyz; vMUp = normalize(mat3(modelMatrix) * objectNormal).y;');
+    sh.fragmentShader = sh.fragmentShader
+      .replace('#include <common>', `#include <common>
+        uniform float uMTime; varying vec3 vMWorld; varying float vMUp;
+        float mHash(vec2 p){ return fract(sin(dot(p, vec2(127.1, 311.7))) * 43758.5453); }
+        float mNoise(vec2 p){ vec2 i = floor(p), f = fract(p); f = f * f * (3. - 2. * f);
+          return mix(mix(mHash(i), mHash(i + vec2(1, 0)), f.x), mix(mHash(i + vec2(0, 1)), mHash(i + vec2(1, 1)), f.x), f.y); }`)
+      .replace('#include <color_fragment>', `#include <color_fragment>
+        {
+          vec3 dc = diffuseColor.rgb;
+          float grassy = smoothstep(0.01, 0.06, dc.g - max(dc.r, dc.b * 0.95)) * smoothstep(0.62, 0.85, vMUp);
+          vec2 wp = vMWorld.xz;
+          float n1 = mNoise(wp * 0.011) * 0.65 + mNoise(wp * 0.031 + 5.) * 0.35, n2 = mNoise(wp * 0.09 + 11.);
+          vec3 tint = mix(vec3(0.74, 0.98, 0.92), vec3(1.2, 1.12, 0.7), smoothstep(0.3, 0.74, n1)) * (0.9 + 0.2 * n2);
+          float camD = length(vMWorld - cameraPosition), nearF = 1. - smoothstep(30., 120., camD);
+          // painterly clumps: short brush strokes of darker and lighter green, stretched along the wind
+          vec2 sw = vec2(wp.x * 0.7 + wp.y * 0.7, -wp.x * 0.7 + wp.y * 0.7);
+          float clump = mNoise(sw * vec2(0.35, 1.1)) * 0.6 + mNoise(sw * vec2(0.9, 2.6) + 3.) * 0.4;
+          tint *= mix(1., 0.82 + 0.34 * clump, 0.4 + 0.6 * nearF);
+          float wind = sin(dot(wp, vec2(0.045, 0.028)) - uMTime * 1.1 + n1 * 5.);
+          vec3 g = diffuseColor.rgb * tint + vec3(0.1, 0.12, 0.03) * smoothstep(0.55, 1., wind);
+          // wildflower drifts: clusters of blossoms, each cluster one colour
+          float drift = smoothstep(0.45, 0.75, mNoise(wp * 0.016 + 3.));
+          vec2 q = wp / 2.6, cell = floor(q), f = fract(q) - 0.5;
+          float h = mHash(cell), h2 = mHash(cell + 17.3);
+          vec3 fc = h2 < 0.3 ? vec3(1., 0.5, 0.76) : h2 < 0.52 ? vec3(1., 0.98, 0.94) : h2 < 0.72 ? vec3(1., 0.85, 0.3) : h2 < 0.88 ? vec3(0.76, 0.56, 1.) : vec3(0.5, 0.72, 1.);
+          float bloom = 0.;
+          for (int k = 0; k < 4; k++) {
+            vec2 o = vec2(mHash(cell + float(k) * 3.1), mHash(cell + float(k) * 7.7 + 1.)) - 0.5;
+            bloom = max(bloom, 1. - smoothstep(0.05, 0.085, length(f - o * 0.62)));
+          }
+          float show = step(h, 0.06 + 0.6 * drift) * bloom;
+          g = mix(g, fc * 1.1, show * nearF);
+          g = mix(g, vec3(1., 0.74, 0.86), drift * 0.22 * (1. - nearF));   // far off, the drifts read as a soft pink wash
+          diffuseColor.rgb = mix(diffuseColor.rgb, g, grassy);
+        }`);
+  };
+  const prevKey = m.customProgramCacheKey;
+  m.customProgramCacheKey = () => (prevKey ? prevKey.call(m) : '') + '-meadow';
+  return m;
+}
