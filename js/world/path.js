@@ -1,6 +1,7 @@
 // The gemstone pathway: hexagonal glass tiles that light up, ripple and rise
 // under every footstep and every click, for every player.
 import * as THREE from 'three';
+import { mergeGeometries } from 'three/addons/utils/BufferGeometryUtils.js';
 import { FOG_COLOR } from './sky.js';
 import { PORTALS, PLAZA, COVE, BRIDGE, WAY_LINE, groundAt } from './layout.js';
 import { rng } from './textures.js';
@@ -45,14 +46,18 @@ export function createPath(scene) {
   const ring = (a) => [PLAZA.x + Math.cos(a) * (PLAZA.r + 1), PLAZA.z + Math.sin(a) * (PLAZA.r + 1)];
   for (const s of [-1, 1]) {
     // round the outside of the castle levels and its courtyard towers
-    const start = ring(s > 0 ? -0.2 : Math.PI + 0.2), side = [s * 100, 150], wide = [s * 180, 130];
+    const start = ring(s > 0 ? -0.2 : Math.PI + 0.2), side = [s * 100, 196], wide = [s * 180, 156];
     if (s > 0) { toPortal([start, side, wide, [s * 196, 92]]); toPortal([[s * 196, 92], [s * 190, 20], [s * 210, -10]]); }
     else toPortal([start, side, wide, [s * 186, 60], [s * 190, 20], [s * 210, -10]]);
     toPortal([[s * 190, 20], [s * 175, -60], [s * 190, -120]]);
   }
   const usable = tiles.filter(([x, z]) => groundAt(x, z) !== null);
 
-  const geo = new THREE.CylinderGeometry(0.62, 0.62, 0.25, 6);
+  // a hex prism with no underside (nobody sees it): 18 triangles instead of 24
+  const geo = mergeGeometries([
+    new THREE.CylinderGeometry(0.62, 0.62, 0.25, 6, 1, true),
+    new THREE.CircleGeometry(0.62, 6).rotateX(-Math.PI / 2).rotateY(Math.PI / 2).translate(0, 0.125, 0),
+  ].map((g) => g.toNonIndexed()));
   const steps = Array.from({ length: MAX_STEPS }, () => new THREE.Vector4(0, 0, -100, 0));
   const mat = new THREE.ShaderMaterial({
     uniforms: { uTime: { value: 0 }, uSteps: { value: steps }, uFogColor: { value: FOG_COLOR } },
@@ -104,9 +109,14 @@ export function createPath(scene) {
     `,
   });
   const mesh = new THREE.InstancedMesh(geo, mat, usable.length);
-  const d = new THREE.Object3D();
+  const d = new THREE.Object3D(), up = new THREE.Vector3(0, 1, 0), n = new THREE.Vector3(), spin = new THREE.Quaternion();
   usable.forEach(([x, z], i) => {
-    d.position.set(x, groundAt(x, z) + 0.1, z); d.rotation.y = r() * 0.3; d.scale.set(0.95 + r() * 0.1, 1, 0.95 + r() * 0.1);
+    // lie flush with the slope so the tiles read as one smooth inlaid seam
+    const g = groundAt(x, z), e = 0.7;
+    n.set(-((groundAt(x + e, z) ?? g) - (groundAt(x - e, z) ?? g)) / (2 * e), 1, -((groundAt(x, z + e) ?? g) - (groundAt(x, z - e) ?? g)) / (2 * e)).normalize();
+    d.position.set(x, g + 0.06, z);
+    d.quaternion.setFromUnitVectors(up, n).multiply(spin.setFromAxisAngle(up, r() * 0.3));
+    d.scale.set(0.95 + r() * 0.1, 0.6, 0.95 + r() * 0.1);
     d.updateMatrix(); mesh.setMatrixAt(i, d.matrix);
   });
   mesh.frustumCulled = false;

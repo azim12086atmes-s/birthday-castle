@@ -130,7 +130,7 @@ export function createMonuments(scene, preset) {
   }
 
   // --- Pillar Reach: ten sandstone pillars, three hovering, rope bridges -----
-  const fallSpots = [], wood = [];
+  const fallSpots = [], wood = [], pillarTops = [];
   {
     const pr = rng(303), P = [];
     for (let tries = 0; P.length < 10 && tries < 4000; tries++) {
@@ -162,6 +162,7 @@ export function createMonuments(scene, preset) {
       let y0 = Infinity;
       for (let k = 0; k < 6; k++) { const a = k * 1.05; y0 = Math.min(y0, groundAt(q.x + Math.cos(a) * q.rb, q.z + Math.sin(a) * q.rb) ?? 0); }
       y0 -= 4; q.top = y0 + q.H;
+      pillarTops.push(q);
       if (q.float) {
         const hs = 30 + pr() * 30, gap = 20 + pr() * 40, rs = q.rb * 0.95;
         rock.push(pillar(rs * 0.8, rs, hs, i).translate(q.x, y0 + hs / 2, q.z));                  // the stump left behind
@@ -388,6 +389,7 @@ export function createMonuments(scene, preset) {
   scene.add(group);
   const tmp = new THREE.Object3D();
   return {
+    pillarTops,
     update(t) {
       haloMat.uniforms.uTime.value = t;
       fallMat.uniforms.uTime.value = t;

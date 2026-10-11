@@ -2,10 +2,10 @@
 // drag to look around, scroll to zoom, V to switch to first person. On touch screens: left thumb moves,
 // right thumb looks.
 import * as THREE from 'three';
-import { groundAt, resolveCollisions, SPAWN, MAIN, BRIDGE } from './world/layout.js';
+import { groundAt, resolveCollisions, SPAWN, MAIN, CASTLE } from './world/layout.js';
 
 // arrive facing along the long bridge towards the castle
-const SPAWN_FACING = Math.atan2(BRIDGE.pts[1][0] - SPAWN.x, BRIDGE.pts[1][1] - SPAWN.z);
+const SPAWN_FACING = Math.atan2(CASTLE.x - SPAWN.x, CASTLE.z - SPAWN.z);   // straight up the Grand Approach
 
 const UP = new THREE.Vector3(0, 1, 0);
 

@@ -389,15 +389,29 @@ function treeWay(group, preset, r) {
     const a = S[Math.max(0, i - 1)], b = S[Math.min(S.length - 1, i + 1)], h = Math.atan2(b.x - a.x, b.z - a.z), c = Math.cos(h), sn = Math.sin(h);
     for (const sd of [-1, 1]) { pos.push(S[i].x + c * sd * TREE_WAY.hw, S[i].y + 0.06, S[i].z - sn * sd * TREE_WAY.hw); uv.push(sd * TREE_WAY.hw / 4, S[i].s / 4); }
     if (i < S.length - 1) { const k = i * 2; idx.push(k, k + 2, k + 1, k + 1, k + 2, k + 3); }
-    if (i % 3 === 0 && i < S.length - 3) {
-      const e = S[i + 3], len = Math.hypot(e.x - S[i].x, e.z - S[i].z);
-      for (const sd of [-1, 1]) {
-        const g = new THREE.BoxGeometry(0.8, 0.7, len + 0.3);
-        g.rotateX(-Math.atan2(e.y - S[i].y, len)); g.rotateY(h);
-        g.translate((S[i].x + e.x) / 2 + c * sd * (TREE_WAY.hw + 0.4), (S[i].y + e.y) / 2 + 0.3, (S[i].z + e.z) / 2 - sn * sd * (TREE_WAY.hw + 0.4));
-        curbs.push(g);
+  }
+  // continuous marble curbs that follow every bend and slope of the road
+  for (const sd of [-1, 1]) {
+    const cp = [], cn = [];
+    const prof = [[TREE_WAY.hw, 0], [TREE_WAY.hw, 0.55], [TREE_WAY.hw + 0.25, 0.7], [TREE_WAY.hw + 0.9, 0.7], [TREE_WAY.hw + 0.9, -1.2]];
+    const ring = (i) => {
+      const a = S[Math.max(0, i - 2)], b = S[Math.min(S.length - 1, i + 2)], h = Math.atan2(b.x - a.x, b.z - a.z), c = Math.cos(h), sn = Math.sin(h);
+      return prof.map(([o, y]) => [S[i].x + c * sd * o, S[i].y + y, S[i].z - sn * sd * o]);
+    };
+    let prev = ring(0);
+    for (let i = 1; i < S.length; i++) {
+      const cur = ring(i);
+      for (let k = 0; k < prof.length - 1; k++) {
+        const A = prev[k], B = prev[k + 1], C = cur[k + 1], D = cur[k];
+        if (sd > 0) cp.push(...A, ...D, ...C, ...A, ...C, ...B); else cp.push(...A, ...B, ...C, ...A, ...C, ...D);
       }
+      prev = cur;
     }
+    const g = new THREE.BufferGeometry();
+    g.setAttribute('position', new THREE.Float32BufferAttribute(cp, 3));
+    g.setAttribute('uv', new THREE.Float32BufferAttribute(new Float32Array(cp.length / 3 * 2), 2));
+    g.computeVertexNormals();
+    curbs.push(g);
   }
   const road = new THREE.BufferGeometry();
   road.setAttribute('position', new THREE.Float32BufferAttribute(pos, 3));

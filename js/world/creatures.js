@@ -158,7 +158,7 @@ export function createCreatures(scene, preset) {
 
   const deer = [];
   // deer wander the sky meadows and a few clearings on the land
-  const deerHomes = [...ISLANDS.filter((i) => !i.main && i.id !== 'star' && i.id !== 'aurora'), ...[0, 3, 5].map((k) => ({ ...MAIN_ZONES[k], y: 0 }))];
+  const deerHomes = [...ISLANDS.filter((i) => !i.main && i.id !== 'star' && i.id !== 'aurora'), ...[0, 1, 4, 6].map((k) => ({ ...MAIN_ZONES[k], y: 0 }))];
   for (let i = 0; i < 6; i++) {
     const d = makeDeer(r);
     const home = deerHomes[i % deerHomes.length];
