@@ -347,7 +347,7 @@ function frame() {
   atmosphere.update(t);
   MEADOW_TIME.value = t;
   meadow.update(t, camera);
-  approach.update(t, dt);
+  approach.update(t, dt, camera);
   creatures.update(t, dt, camera);
   effects.update(t, dt, camera, governor.ratio);
   celebration.update(t, dt);

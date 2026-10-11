@@ -203,3 +203,26 @@ export function instances(geo, mat, list, name) {
   mesh.name = name || 'instances';
   return mesh;
 }
+
+// The same, split into square tiles of `tile` metres so that tiles beyond a range can be
+// hidden: call group.userData.cull(x, z, range) each frame with the camera position in the
+// list's own units.
+export function tiledInstances(geo, mat, list, name, tile = 400) {
+  const cells = new Map();
+  for (const it of list) {
+    const k = Math.floor(it[0] / tile) + ',' + Math.floor(it[2] / tile);
+    if (!cells.has(k)) cells.set(k, []);
+    cells.get(k).push(it);
+  }
+  const group = new THREE.Group(); group.name = name;
+  const tiles = [];
+  for (const items of cells.values()) {
+    const m = instances(geo, mat, items, name);
+    let cx = 0, cz = 0, r = 0;
+    for (const it of items) { cx += it[0] / items.length; cz += it[2] / items.length; }
+    for (const it of items) r = Math.max(r, Math.hypot(it[0] - cx, it[2] - cz));
+    tiles.push({ m, cx, cz, r }); group.add(m);
+  }
+  group.userData.cull = (x, z, range) => { for (const t of tiles) t.m.visible = Math.hypot(t.cx - x, t.cz - z) - t.r < range; };
+  return group;
+}

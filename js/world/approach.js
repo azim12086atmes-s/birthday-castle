@@ -11,7 +11,7 @@ import { Kit, box, cyl, lathe, cap, scaleUV, waterMaterial, haloPoints } from '.
 import { S, TERRACES, STAIRS, CAUSEWAY, B20, BRANCHES, LAKE, PAL, PLAZA, causewayY, branchY, addCollider, lakeDistance } from './layout.js';
 import {
   IVORY, PEARL, ROSE, GOLD, paint, merge, finialGeo, cypressGeo, blossomGeo, willowGeo, avenueTreeGeo, roseClumpGeo,
-  postLampGeo, lotusFountainGeo, benchGeo, artifactMaterials, instances,
+  postLampGeo, lotusFountainGeo, benchGeo, artifactMaterials, instances, tiledInstances,
 } from './artifacts.js';
 import { MOOD } from './sky.js';
 
@@ -108,7 +108,7 @@ export function createApproach(scene, preset, { makePortal } = {}) {
   // ---- G04 terraces: garden tops, arcaded retaining walls, side walls ----
   TERRACES.forEach((T, k) => {
     const d = T.z1 - T.z0;
-    kit.add('terrace', scaleUV(new THREE.PlaneGeometry(T.hw * 2, d).rotateX(-Math.PI / 2).translate(0, T.y + 0.03, (T.z0 + T.z1) / 2), T.hw / 20, d / 40), '#ffffff');
+    kit.add('terrace', scaleUV(new THREE.PlaneGeometry(T.hw * 2, d).rotateX(-Math.PI / 2).translate(0, T.y + 0.03, (T.z0 + T.z1) / 2), T.hw / 60, d / 120), '#ffffff');
     const below = k < TERRACES.length - 1 ? TERRACES[k + 1].y : -1;
     const wallH = T.y - below;
     kit.add('arcade', scaleUV(new THREE.PlaneGeometry(T.hw * 2, wallH).translate(0, below + wallH / 2, T.z1 + 0.05), (T.hw * 2) / (wallH * 2), 1), '#ffffff');
@@ -264,12 +264,15 @@ export function createApproach(scene, preset, { makePortal } = {}) {
   group.add(new THREE.Mesh(merge(water), watMat), new THREE.Mesh(merge(falls), fallMat));
   const lamp = postLampGeo();
   const railPost = merge([paint(new THREE.BoxGeometry(0.5, 1.7, 0.5).translate(0, 0.85, 0), PEARL), paint(new THREE.OctahedronGeometry(0.36, 0).translate(0, 2, 0), GOLD)]);
-  group.add(
-    instances(lamp.body, am.lit, lamps, 'lamp.bodylamps'), instances(lamp.glass, am.crystal, lamps, 'lamp.glasslamps'),
-    instances(cypressGeo(), am.leaf, cypress, 'cypressGeocypress'), instances(blossomGeo(), am.leaf, blossoms, 'blossomGeoblossoms'), instances(willowGeo(), am.leaf, willows, 'willowGeowillows'),
-    instances(roseClumpGeo(), am.leaf, clumps, 'roseClumpGeoclumps'), instances(avenueTreeGeo(), am.leaf, avenue, 'avenue-trees'),
-    instances(railPost, am.lit, posts, 'railPostposts'), instances(benchGeo(), am.lit, benches, 'benchGeobenches'),
-  );
+  // tiled so that only the stretch round the camera is drawn: [group, range in metres]
+  const tiled = [
+    [tiledInstances(lamp.body, am.lit, lamps, 'lamp-body'), 1100], [tiledInstances(lamp.glass, am.crystal, lamps, 'lamp-glass'), 1100],
+    [tiledInstances(cypressGeo(), am.leaf, cypress, 'terrace-cypress'), 2600], [tiledInstances(blossomGeo(), am.leaf, blossoms, 'terrace-blossoms'), 2600],
+    [tiledInstances(willowGeo(), am.leaf, willows, 'willows'), 2600], [tiledInstances(roseClumpGeo(), am.leaf, clumps, 'terrace-roses'), 1000],
+    [tiledInstances(avenueTreeGeo(), am.leaf, avenue, 'avenue-trees'), 2200], [tiledInstances(railPost, am.lit, posts, 'rail-posts'), 700],
+  ];
+  for (const [g] of tiled) group.add(g);
+  group.add(instances(benchGeo(), am.lit, benches, 'benches'));
   const halos = haloPoints(lamps.map(([x, y, z, s]) => [x, y + 5.3 * s, z, 2.2 * s]), [1, 0.85, 0.7]);
   group.add(halos);
   group.traverse((o) => { if (o.isMesh) { o.receiveShadow = true; o.castShadow = o.name === 'avenue-trees'; } });
@@ -314,7 +317,8 @@ export function createApproach(scene, preset, { makePortal } = {}) {
       const r = ripples[rip++ % ripples.length];
       r.m.position.set(x, y + 0.06, z); r.t = 0; r.s = strength; r.m.visible = true;
     },
-    update(t, dt = 0.016) {
+    update(t, dt = 0.016, camera) {
+      if (camera) for (const [g, range] of tiled) g.userData.cull(camera.position.x, camera.position.z, range);
       watMat.uniforms.uTime.value = t; fallMat.uniforms.uTime.value = t; halos.material.uniforms.uTime.value = t;
       lanternMat.opacity = 0.15 + 0.75 * MOOD.night.value;
       mats.arcade.emissiveIntensity = 0.35 + 0.6 * MOOD.night.value;

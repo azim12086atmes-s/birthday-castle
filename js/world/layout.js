@@ -59,14 +59,13 @@ const EXTRA_PADS1 = [
 
 // --- the palace and its approach (world metres = drawn x S) -----------------------------
 // B01 is measured off sheet 03 (south elevation and roof plan) in drawn metres, with the
-// Rose Gate on x = 0 and the front of the arcaded podium at z = +340. The palace is not
+// Rose Gate on x = 0 and the front boundary towers at z = +340. The palace is not
 // symmetric about the gate: the great dome stands west, the spire cluster east, and the
 // east wing runs 65 m further out than the west one, as drawn.
 export const PAL = { x: 0, z: 0, y: PAL1.y * S, hw: 450 * S, hd: PAL1.hd * S, x0: -385 * S, x1: 450 * S, z0: -338 * S };
 // The stepped garden tiers in drawn metres: [x0, x1, z0, z1, top]. Each roof is a walkable garden.
 export const PALACE_TIERS = [
-  [-385, 450, -338, 235, 52],                                // T1 the arcaded rose podium (and the gate landing)
-  [-385, -110, 235, 340, 52], [110, 450, 235, 340, 52],      // its front wings either side of the cascade court
+  [-385, 450, -338, 235, 52],                                // T1 the arcaded ground storey (and the gate landing)
   [-330, 400, -300, 191, 128],                               // T2 the great-lancet storey
   [-260, 330, -260, 110, 197],                               // T3 the dome terrace
   [-130, 260, -200, 40, 228],                                // T4 the crown garden

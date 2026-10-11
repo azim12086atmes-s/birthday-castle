@@ -18,7 +18,7 @@ import { pointedArchShape, archFrameGeometry } from './arch.js';
 import { S, PAL, PALACE_TIERS, GATE, CASTLE, CASCADE, PLAZA, PORTALS, addCollider, addPad } from './layout.js';
 import {
   IVORY, PEARL, ROSE, GOLD, paint, merge, finialGeo, spireletGeo, cypressGeo, blossomGeo, orangeTreeGeo, roseClumpGeo,
-  postLampGeo, hangingLanternGeo, lotusFountainGeo, benchGeo, artifactMaterials, instances,
+  postLampGeo, hangingLanternGeo, lotusFountainGeo, benchGeo, artifactMaterials, instances, tiledInstances,
 } from './artifacts.js';
 import { MOOD } from './sky.js';
 
@@ -275,7 +275,12 @@ export function createPalace(scene, preset, { makePortal } = {}) {
 
   // ---- landmarks first, so the garden planting keeps clear of them ----
   const CORNERS = [[-356, 92], [420, 183], [-356, -305], [420, -305]];          // purple-domed corner pavilions
-  const FRONT_PAVILIONS = [[-125, 305], [125, 305], [-280, 285], [300, 290]];   // gold-domed pavilions on the podium
+  // the front boundary (z 335): towers linked by low arcades, round a forecourt garden on either side of the cascade
+  // Two stepped layers rising toward the gate, towers of uneven height and spacing: [x, z, purple onion?, height, radius]
+  const BOUNDARY = [[-372, 330, 1, 42, 13], [-318, 338, 0, 35, 10], [-262, 326, 1, 50, 14], [-190, 334, 0, 44, 12], [-148, 322, 1, 62, 15], [-122, 338, 0, 53, 12],
+    [124, 336, 0, 55, 12], [152, 320, 1, 67, 16], [214, 333, 0, 46, 12], [262, 340, 1, 40, 11], [318, 327, 1, 54, 14], [384, 336, 0, 37, 11], [436, 324, 1, 47, 13]];
+  const INNER = [[-330, 282, 1, 69, 14], [-236, 276, 0, 60, 12], [-160, 268, 1, 79, 15], [170, 266, 1, 82, 16], [246, 280, 0, 62, 12], [352, 274, 1, 73, 14], [420, 286, 0, 57, 12]];
+  const BZ = 335;
   const FRONT_TOWERS = [[235, 207, 22, 170, 30], [-272, 207, 16, 150, 20]];     // [x, z, r, dome base, dome height]
   const GREAT_DOME = { x: -190, z: -100, r: 40 };
   // needle spires [x, z, top, width]: the cluster behind the gate, the slim western spires, the tall glass spires east
@@ -288,18 +293,19 @@ export function createPalace(scene, preset, { makePortal } = {}) {
   const CONSERVATORIES = [[290, -100, 90], [290, 40, 90]];
   const WHEELS = [[176, -160], [176, 75]];
   for (const [x, z] of CORNERS) taken.push([x, z, 36]);
-  for (const [x, z] of FRONT_PAVILIONS) taken.push([x, z, 19]);
+  for (const [x, z, , , r] of [...BOUNDARY, ...INNER]) taken.push([x, z, r + 5]);
   for (const [x, z, r] of FRONT_TOWERS) taken.push([x, z, r + 3]);
   taken.push([GREAT_DOME.x, GREAT_DOME.z, GREAT_DOME.r + 18], [CONE.x, CONE.z, CONE.r + 4], [COURT.x, COURT.z, COURT.r]);
   for (const [x, z, , w] of SPIRES) taken.push([x, z, w * 0.75 + 3]);
   for (const [x, z, r] of DOME_TOWERS) taken.push([x, z, r + 3]);
   for (const [x, z, L] of CONSERVATORIES) taken.push([x, z - L / 4, 26], [x, z + L / 4, 26]);
   for (const [x, z] of WHEELS) taken.push([x, z, 32]);
-  taken.push([0, 120, 32], [-198, 62, 26], [-295, -184, 26]);                  // channel pool, west pool, glass pavilion
+  taken.push([0, 120, 32], [-198, 62, 26], [-295, -184, 26]);
+  taken.push([-290, 306, 9], [-200, 306, 9], [205, 306, 9], [290, 306, 9]);                 // forecourt fountains                  // channel pool, west pool, glass pavilion
 
   // ---- the four stepped garden tiers ----
-  const LOOK = [['podium', ROSE, 24, 52], ['podium', ROSE, 24, 52], ['podium', ROSE, 24, 52], ['wing', IVORY, 25, 76], ['podium', PEARL, 24, 69], ['wing', PEARL, 25, 33]];
-  const BASE = [-4, -4, -4, 50, 126, 195];
+  const LOOK = [['podium', PEARL, 24, 52], ['wing', IVORY, 25, 76], ['podium', IVORY, 24, 69], ['wing', PEARL, 25, 33]];
+  const BASE = [-4, 50, 126, 195];
   PALACE_TIERS.forEach(([x0, x1, z0, z1, t], k) => {
     const [key, tint, tw, th] = LOOK[k], w = x1 - x0, d = z1 - z0, cx = (x0 + x1) / 2, cz = (z0 + z1) / 2;
     kit.add(key, wallBox(w, t - BASE[k], d, cx, BASE[k], cz, tw, th), tint);
@@ -308,19 +314,26 @@ export function createPalace(scene, preset, { makePortal } = {}) {
     kit.add('gold', box(w + 2.4, 0.5, d + 2.4, cx, t - 2.9, cz), GOLD);
     // jali parapet with a gold rail and rose garlands; none where a tier meets the one beside it
     for (const [px, pz, len, ry, side] of [[cx, z1 - 0.6, w, 0, 'front'], [cx, z0 + 0.6, w, 0, 'back'], [x0 + 0.6, cz, d, Math.PI / 2, 'side'], [x1 - 0.6, cz, d, Math.PI / 2, 'side']]) {
-      if ((k === 0 && side === 'front') || ((k === 1 || k === 2) && side === 'back')) continue;
+      if (k === 0 && side === 'front') {                                     // open where the cascade arrives
+        for (const sd of [-1, 1]) { const l = (sd > 0 ? x1 : -x0) - CHW, c = sd * (CHW + l / 2); kit.add('jali', scaleUV(new THREE.PlaneGeometry(l, 3).translate(c, t + 1.5, pz), l / 3, 1), IVORY); kit.add('gold', box(l, 0.6, 0.8, c, t + 3, pz), GOLD); }
+        continue;
+      }
       kit.add('jali', scaleUV(new THREE.PlaneGeometry(len, 3).rotateY(ry).translate(px, t + 1.5, pz), len / 3, 1), IVORY);
       kit.add('gold', box(ry ? 0.8 : len, 0.6, ry ? len : 0.8, px, t + 3, pz), GOLD);
-      const step = side === 'back' ? 22 : 11;
-      for (let u = -len / 2 + step / 2; u < len / 2; u += step) clumps.push([ry ? px : px + u, t + 3.3, ry ? pz + u : pz, 3 + R() * 1.2, R() * 6]);
+      if (side === 'back') continue;
+      for (let u = -len / 2 + 7; u < len / 2; u += 14) clumps.push([ry ? px : px + u, t + 3.3, ry ? pz + u : pz, 5 + R() * 2, R() * 6]);   // rose garlands on the parapet
     }
-    // cypress rows along the front and the sides of every terrace
-    for (let x = x0 + 8; x < x1 - 6; x += 12) {
-      const z = z1 - 6;
-      if (k === 0 && Math.abs(x) < CHW + 6) continue;
-      if (roofAt(x, z) === t && clear(x, z, 4)) cypress.push([x, t, z, 15 + R() * 6, 0]);
+    // along every terrace front, as drawn: tall cypresses with pink blossom trees between them, set in carved planters
+    for (let x = x0 + 8, i = 0; x < x1 - 6; x += 10, i++) {
+      const z = z1 - 7;
+      if ((k === 0 && Math.abs(x) < CHW + 6) || roofAt(x, z) !== t || !clear(x, z, 4)) continue;
+      if (i % 3 === 1) { kit.add('ivory', box(7, 2, 7, x, t, z), PEARL); blossoms.push([x, t + 2, z, 1 + R() * 0.3, R() * 6]); }
+      else cypress.push([x, t, z, 26 + R() * 12, 0]);
     }
-    for (const sx of [x0 + 6, x1 - 6]) for (let z = z0 + 14; z < z1 - 10; z += 18) if (roofAt(sx, z) === t && clear(sx, z, 4)) cypress.push([sx, t, z, 14 + R() * 5, 0]);
+    for (const sx of [x0 + 7, x1 - 7]) for (let z = z0 + 14, i = 0; z < z1 - 10; z += 14, i++) {
+      if (roofAt(sx, z) !== t || !clear(sx, z, 4)) continue;
+      if (i % 3 === 1) blossoms.push([sx, t, z, 0.9 + R() * 0.3, R() * 6]); else cypress.push([sx, t, z, 22 + R() * 10, 0]);
+    }
   });
   // the gate landing: rose and ivory paving with gold stars
   kit.add('paving', scaleUV(new THREE.PlaneGeometry(CHW * 2, CZ0 - FRONT).rotateX(-Math.PI / 2).translate(0, SILL + 0.25, (FRONT + CZ0) / 2), CHW / 4, (CZ0 - FRONT) / 8), '#ffffff');
@@ -424,18 +437,57 @@ export function createPalace(scene, preset, { makePortal } = {}) {
     kit.frame();
     solids.push({ x, z, r: 33, y0: -10, y1: 200 });
   }
-  // gold-domed pavilions on the podium roof
-  for (const [x, z] of FRONT_PAVILIONS) {
+  // ---- the front boundary: domed towers linked by two-storey open arcades, round the forecourt gardens ----
+  const boundaryTower = (x, z, purple, h, r) => {
     kit.frame(x, 0, z);
-    kit.add('tower', oct(16, 79, -4), IVORY);
-    kit.add('gold', ring(17, 1.4, 52, 8).rotateY(Math.PI / 8), GOLD);
-    kit.add('ivory', ring(18, 3, 75, 8).rotateY(Math.PI / 8), PEARL);
-    kit.add('drum', scaleUV(new THREE.CylinderGeometry(13, 13.5, 8, 16, 1, true).translate(0, 82, 0), 6, 0.5), IVORY);
-    kit.add('gold', cap('dome', 15, 18, 20).translate(0, 86, 0), GOLD);
-    kit.add('gold', finialGeo(2.2).translate(0, 103, 0), GOLD);
-    for (let i = 0; i < 8; i++) { const a = (i / 8) * Math.PI * 2 + Math.PI / 8, p = kit.world(Math.cos(a) * 17, 0, Math.sin(a) * 17); spirelets.push([p.x, 78, p.z, 0.45, 0]); }
+    kit.add('ivory', oct(r + 3, 14, -4), PEARL);
+    kit.add('tower', oct(r, h - 10, 10), IVORY);
+    for (const y of [10, h * 0.42, h - 2]) kit.add('gold', ring(r + 1, 1.3, y, 8).rotateY(Math.PI / 8), GOLD);
+    kit.add('ivory', ring(r + 2.5, 3, h, 8).rotateY(Math.PI / 8), PEARL);
+    kit.add('drum', scaleUV(new THREE.CylinderGeometry(r * 0.82, r * 0.86, 9, 16, 1, true).translate(0, h + 7.5, 0), 6, 0.5), IVORY);
+    if (purple) kit.add('dome', onion(r * 0.95, r * 1.6).translate(0, h + 12, 0), '#ffffff');
+    else kit.add('gold', cap('dome', r * 0.95, r * 1.1, 20).translate(0, h + 12, 0), GOLD);
+    kit.add('gold', finialGeo(r * 0.14).translate(0, h + 12 + (purple ? r * 1.6 : r * 1.1) - 1, 0), GOLD);
+    for (let k = 0; k < 8; k++) { const a = (k / 8) * Math.PI * 2 + Math.PI / 8, p = kit.world(Math.cos(a) * (r + 2), 0, Math.sin(a) * (r + 2)); spirelets.push([p.x, h + 3, p.z, 0.5, 0]); }
+    for (const dx of [-1, 1]) { const p = kit.world(dx * (r + 4), 0, 3); hanging.push([p.x, h * 0.72, p.z, 2.4, 0]); kit.add('gold', box(5, 0.8, 0.8, dx * (r + 2), h * 0.72 + 0.5, 3), GOLD); }
     kit.frame();
-    solids.push({ x, z, r: 17, y0: -10, y1: 110 });
+    solids.push({ x, z, r: r + 2, y0: -10, y1: h + 40 });
+  };
+  // an arcade between two towers, at its own height, stepped with the layer
+  const arcade = (ax, az, ar, bx, bz, br, h) => {
+    const dx = bx - ax, dz = bz - az, L = Math.hypot(dx, dz) - ar - br, a = Math.atan2(dz, dx), mx = ax + Math.cos(a) * (ar + L / 2), mz = az + Math.sin(a) * (ar + L / 2);
+    if (L < 4) return;
+    kit.frame(mx, 0, mz, -a);
+    kit.add('podium', wallBox(L, h + 4, 5, 0, -4, 0, 12, h + 4), PEARL);
+    kit.add('ivory', box(L, 2, 8, 0, h - 4, 0), PEARL);
+    kit.add('jali', scaleUV(new THREE.PlaneGeometry(L, 3).translate(0, h - 0.5, 2), L / 3, 1), IVORY);
+    for (let u = -L / 2 + 5; u < L / 2 - 2; u += 11) { const p = kit.world(u, 0, 2.5), q = kit.world(u + 5, 0, 5); clumps.push([p.x, h + 1, p.z, 4.5 + R() * 1.5, R() * 6], [q.x, 2, q.z, 4 + R(), R() * 6]); }
+    kit.frame();
+    const n = Math.ceil(L / 20);
+    for (let i = 0; i < n; i++) { const t = (i + 0.5) / n, cx = ax + Math.cos(a) * (ar + L * t), cz = az + Math.sin(a) * (ar + L * t); solids.push({ x: cx, z: cz, r: L / n / 2 + 1, y0: -10, y1: h + 4 }); }
+  };
+  for (const list of [BOUNDARY, INNER]) list.forEach(([x, z, purple, h, r], i) => {
+    boundaryTower(x, z, purple, h, r);
+    const nb = list[i + 1];
+    if (!nb || (x < 0 && nb[0] > 0)) return;
+    arcade(x, z, r, nb[0], nb[1], nb[4], Math.round(Math.min(h, nb[3]) * 0.38 + (list === INNER ? 14 : 4)));
+  });
+  // short stepped arcades joining the outer layer to the inner one at each end, at uneven lengths
+  for (const [o, n] of [[0, 0], [5, 2], [6, 3], [12, 6]]) { const A = BOUNDARY[o], B = INNER[n]; arcade(A[0], A[1], A[4], B[0], B[1], B[4], 30); }
+  for (const x of [-385, 450]) {                                              // the side arcades back to the ground storey
+    kit.add('podium', wallBox(5, 30, BZ - 235, x, -4, (BZ + 235) / 2, 12, 34), PEARL);
+    solids.push({ minX: x - 3, maxX: x + 3, minZ: 235, maxZ: BZ, y0: -10, y1: 34 });
+  }
+  // the forecourt gardens: lawns and rose beds, cypress walks, blossom trees, lotus fountains
+  for (const sd of [-1, 1]) {
+    const xa = sd > 0 ? CHW + 4 : -381, xb = sd > 0 ? 446 : -CHW - 4, w = xb - xa, cx = (xa + xb) / 2;
+    kit.add('garden', scaleUV(new THREE.PlaneGeometry(w, BZ - 238).rotateX(-Math.PI / 2).translate(cx, 0.3, (BZ + 238) / 2), w / 40, (BZ - 238) / 40), '#ffffff');
+    for (let x = xa + 12, i = 0; x < xb - 8; x += 13, i++) {
+      for (const z of [246, 306]) {
+        if (!clear(x, z, 5)) continue;
+        if (i % 3 === 1) blossoms.push([x, 0, z, 1 + R() * 0.3, R() * 6]); else cypress.push([x, 0, z, 24 + R() * 10, 0]);
+      }
+    }
   }
   // the tall purple-domed towers standing against the lancet front
   for (const [x, z, r, yb, dh] of FRONT_TOWERS) {
@@ -527,7 +579,7 @@ export function createPalace(scene, preset, { makePortal } = {}) {
   // drum turrets with small onion domes or slim cones at the tier corners and along the tier fronts
   {
     const spots = [];
-    for (const k of [3, 4, 5]) {
+    for (const k of [1, 2, 3]) {
       const [x0, x1, z0, z1] = PALACE_TIERS[k];
       spots.push([x0 + 5, z1 - 5], [x1 - 5, z1 - 5], [x0 + 5, z0 + 5], [x1 - 5, z0 + 5]);
       for (let x = x0 + 55; x < x1 - 40; x += 70) spots.push([x, z1 - 5]);
@@ -546,6 +598,26 @@ export function createPalace(scene, preset, { makePortal } = {}) {
       taken.push([x, z, r + 1]);
       solids.push({ x, z, r: r + 0.5, y0: y0 - 4, y1: y0 + h + r * 4 });
     });
+  }
+
+  // ---- garden pavilions on the lancet storey and the dome terrace: arched loggias with small purple domes ----
+  for (const [k, zf] of [[1, 150], [2, 75]]) {
+    const [x0, x1, , , t] = PALACE_TIERS[k];
+    for (let x = x0 + 30; x < x1 - 20; x += 46) {
+      if (Math.abs(x) < 70 || !clear(x, zf, 14)) continue;
+      const w = 22, h = 24 + (Math.abs(x) % 3) * 4;
+      kit.frame(x, 0, zf);
+      kit.add('wing', wallBox(w, h, 16, 0, t, 0, w / 2, h), IVORY);
+      kit.add('ivory', box(w + 3, 2, 19, 0, t + h, 0), PEARL);
+      kit.add('gold', box(w + 3.4, 0.5, 19.4, 0, t + h + 2, 0), GOLD);
+      kit.add('gold', ring(6.6, 1, t + h + 2.4, 12), GOLD);
+      kit.add('dome', onion(7, 10, 16).translate(0, t + h + 3, 0), '#ffffff');
+      kit.add('gold', finialGeo(1.2).translate(0, t + h + 12.5, 0), GOLD);
+      for (const sd of [-1, 1]) for (const dz of [-9, 9]) spirelets.push([x + sd * (w / 2 + 1), t + h + 2, zf + dz, 0.6, 0]);
+      kit.frame();
+      taken.push([x, zf, 15]);
+      solids.push({ minX: x - w / 2, maxX: x + w / 2, minZ: zf - 8, maxZ: zf + 8, y0: t - 4, y1: t + h + 14 });
+    }
   }
 
   // ---- roof gardens (crop 08): the water channel down the axis, wheel parterres, conservatories, pools ----
@@ -599,9 +671,9 @@ export function createPalace(scene, preset, { makePortal } = {}) {
     fountains.push([x, y + 1, z, 0.5]);
     solids.push({ minX: x - 22, maxX: x + 22, minZ: z - 14, maxZ: z + 14, y0: y - 4, y1: y + 2 });
   }
-  for (const [x, z] of [[-200, 300], [210, 300], [100, 150], [-140, 150], [-70, 80], [40, -150]]) fountains.push([x, roofAt(x, z), z, 0.7]);
+  for (const [x, z] of [[-290, 306], [-200, 306], [205, 306], [290, 306], [100, 150], [-140, 150], [-70, 80], [40, -150]]) fountains.push([x, roofAt(x, z), z, 0.7]);
   // blossom trees in carved planters across every terrace
-  for (let i = 0, tries = 0; i < 90 && tries < 900; tries++) {
+  for (let i = 0, tries = 0; i < 50 && tries < 900; tries++) {
     const x = -380 + R() * 825, z = -330 + R() * 665, t = roofAt(x, z);
     if (!t || Math.abs(x) < 18 || (Math.abs(x) < CHW + 6 && z > FRONT - 4) || !clear(x, z, 8)) continue;
     const [x0, x1, z0, z1] = PALACE_TIERS.find(([a, b, c, d, h]) => h === t && x >= a && x <= b && z >= c && z <= d);
@@ -638,14 +710,16 @@ export function createPalace(scene, preset, { makePortal } = {}) {
   kit.build(mats, body, 'palace');
   body.add(new THREE.Mesh(merge(water), mats.water), new THREE.Mesh(merge(falls), mats.fall));
   const spr = spireletGeo(), hang = hangingLanternGeo();
-  detail.add(
-    instances(spr, am.lit, spirelets, 'spirelets'),
-    instances(cypressGeo(), am.leaf, cypress, 'cypress'),
-    instances(blossomGeo(), am.leaf, blossoms, 'blossoms'),
-    instances(roseClumpGeo(), am.leaf, clumps, 'rose-clumps'),
-    instances(orangeTreeGeo(), am.leaf, oranges, 'orange-trees'),
-    instances(hang.body, am.lit, hanging, 'lantern-body'), instances(hang.glass, am.crystal, hanging, 'lantern-glass'),
-  );
+  // drawn-metre tiles, each hidden beyond its range (world metres) from the camera
+  const tiled = [
+    [tiledInstances(spr, am.lit, spirelets, 'spirelets', 120), 3000],
+    [tiledInstances(cypressGeo(), am.leaf, cypress, 'cypress', 120), 7000],
+    [tiledInstances(blossomGeo(), am.leaf, blossoms, 'blossoms', 120), 7000],
+    [tiledInstances(roseClumpGeo(), am.leaf, clumps, 'rose-clumps', 120), 1100],
+    [tiledInstances(orangeTreeGeo(), am.leaf, oranges, 'orange-trees', 120), 800],
+    [tiledInstances(hang.body, am.lit, hanging, 'lantern-body', 120), 1200], [tiledInstances(hang.glass, am.crystal, hanging, 'lantern-glass', 120), 1200],
+  ];
+  for (const [g] of tiled) detail.add(g);
   const sprayMat = additive('#cfeaff', { opacity: 0.28, side: THREE.DoubleSide });
   detail.add(new THREE.Mesh(merge(sprays.map(([x, y, z, r]) => new THREE.ConeGeometry(r * 0.5, r * 1.6, 6, 1, true).translate(x, y + r * 0.8, z))), sprayMat));
 
@@ -725,7 +799,10 @@ export function createPalace(scene, preset, { makePortal } = {}) {
       mats.rose.color.setScalar(0.65 + 0.45 * n);
       sprayMat.opacity = 0.22 + 0.06 * Math.sin(t * 3);
       for (const p of portals) p.disk.material.uniforms.uTime.value = t;
-      if (camera) detail.visible = camera.position.distanceTo(centre) < 5200;
+      if (camera) {
+        detail.visible = camera.position.distanceTo(centre) < 5200;
+        for (const [g, range] of tiled) g.userData.cull(camera.position.x / S, camera.position.z / S, range / S);
+      }
       court.update(t);
     },
   };
