@@ -2,7 +2,7 @@
 // under every footstep and every click, for every player.
 import * as THREE from 'three';
 import { FOG_COLOR } from './sky.js';
-import { PORTALS, PLAZA, SPAWN, MAIN, groundAt } from './layout.js';
+import { PORTALS, PLAZA, COVE, BRIDGE, WAY_LINE, groundAt } from './layout.js';
 import { rng } from './textures.js';
 
 const MAX_STEPS = 32;
@@ -29,23 +29,27 @@ function polylineTiles(points, width, spacing, r, out) {
 export function createPath(scene) {
   const r = rng(99);
   const tiles = [];
-  // the grand axis: arrival meadow, tree avenue, across the bridge to the plaza
-  polylineTiles([[SPAWN.x, SPAWN.z + 14], [0, PLAZA.z]], 2.4, 1.15, r, tiles);
-  // side routes to each portal, bending round the lake, the town and the terraces
+  // a glowing seam down the middle of the Giant-Tree Way, from the bridge foot to the forecourt
+  polylineTiles(WAY_LINE.samples.filter((_, i) => i % 5 === 0).map((p) => [p.x, p.z]), 0, 1.3, r, tiles);
+  // from the cove dais to the foot of the bridge
+  const [bx, bz] = BRIDGE.pts[0], ca = Math.atan2(bz - COVE.z, bx - COVE.x);
+  polylineTiles([[COVE.x + Math.cos(ca) * (COVE.r + 1), COVE.z + Math.sin(ca) * (COVE.r + 1)], [bx, bz]], 0.65, 1.3, r, tiles);
+  // single strands from the forecourt round the terraces to each portal
   const near = (x, z) => PORTALS.reduce((b, p) => (Math.hypot(p.x - x, p.z - z) < Math.hypot(b.x - x, b.z - z) ? p : b));
   const toPortal = (pts) => {
     const p = near(...pts[pts.length - 1]), [qx, qz] = pts[pts.length - 2];
     const a = Math.atan2(p.z - qz, p.x - qx);
-    pts[pts.length - 1] = [p.x - Math.cos(a) * 3.5, p.z - Math.sin(a) * 3.5];
-    polylineTiles(pts, 1.2, 1.15, r, tiles);
+    pts[pts.length - 1] = [p.x - Math.cos(a) * 4.5, p.z - Math.sin(a) * 4.5];
+    polylineTiles(pts, 0, 1.3, r, tiles);
   };
-  const ring = (a) => [PLAZA.x + Math.cos(a) * (PLAZA.r - 1), PLAZA.z + Math.sin(a) * (PLAZA.r - 1)];
-  toPortal([ring(-0.3), [118, -37]]);
-  toPortal([ring(Math.PI + 0.25), [-66, -20], [-101, -70]]);
-  toPortal([[-66, -20], [-64, -122], [13, -123]]);
-  toPortal([[0, 92], [-20, 92], [-101, 71]]);
-  toPortal([[0, 92], [20, 92], [79, 95]]);
-  const usable = tiles.filter(([x, z]) => Math.hypot(x, z) < MAIN.r - 2 && groundAt(x, z) !== null);
+  const ring = (a) => [PLAZA.x + Math.cos(a) * (PLAZA.r + 1), PLAZA.z + Math.sin(a) * (PLAZA.r + 1)];
+  for (const s of [-1, 1]) {
+    const start = ring(s > 0 ? -0.5 : Math.PI + 0.5), side = [s * 162, 112];
+    toPortal([start, side, [s * 196, 92]].slice(0, s > 0 ? 3 : 2).concat(s > 0 ? [] : [[s * 175, 40], [s * 210, -10]]));
+    if (s > 0) toPortal([[s * 196, 92], [s * 175, 40], [s * 210, -10]]);
+    toPortal([[s * 175, 40], [s * 168, -60], [s * 190, -120]]);
+  }
+  const usable = tiles.filter(([x, z]) => groundAt(x, z) !== null);
 
   const geo = new THREE.CylinderGeometry(0.62, 0.62, 0.25, 6);
   const steps = Array.from({ length: MAX_STEPS }, () => new THREE.Vector4(0, 0, -100, 0));

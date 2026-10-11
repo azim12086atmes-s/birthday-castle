@@ -134,7 +134,7 @@ function skyDome(preset) {
       }
     `,
   });
-  const mesh = new THREE.Mesh(new THREE.SphereGeometry(900, 48, 24), mat);
+  const mesh = new THREE.Mesh(new THREE.SphereGeometry(5000, 48, 24), mat);
   mesh.renderOrder = -10;
   mesh.frustumCulled = false;
   return mesh;
@@ -173,7 +173,7 @@ function cloudSea(preset) {
       }
     `,
   });
-  const mesh = new THREE.Mesh(new THREE.PlaneGeometry(2400, 2400, 1, 1).rotateX(-Math.PI / 2), mat);
+  const mesh = new THREE.Mesh(new THREE.PlaneGeometry(14000, 14000, 1, 1).rotateX(-Math.PI / 2), mat);
   mesh.position.y = -75;
   return mesh;
 }
@@ -222,7 +222,7 @@ function cloudPuffs(group, preset) {
   const puffs = [];
   const clusters = Math.max(5, Math.round(preset.clouds / 2.5));
   for (let c = 0; c < clusters; c++) {
-    const a = r() * Math.PI * 2, d = 240 + r() * 380, y = -45 + r() * 70;
+    const a = r() * Math.PI * 2, d = 240 + r() * 380, y = 18 + r() * 60;
     const size = 70 + r() * 70;
     const parts = 5 + Math.floor(r() * 4);
     for (let i = 0; i < parts; i++) {
@@ -249,8 +249,10 @@ export function createSky(scene, preset) {
   const dome = skyDome(preset);
   const sea = cloudSea(preset);
   group.add(dome, sea);
-  const extras = moonAndStars(group);
-  const puffs = cloudPuffs(group, preset);
+  // the moon, nova, moonbow and towering clouds sit out beyond the mountain rim
+  const far = new THREE.Group(); far.scale.setScalar(4.5); group.add(far);
+  const extras = moonAndStars(far);
+  const puffs = cloudPuffs(far, preset);
   scene.add(group);
   let revealing = false, lastT = null;
 

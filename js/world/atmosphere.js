@@ -3,7 +3,7 @@
 // the rose window, and low mist hugging the island edges for depth.
 import * as THREE from 'three';
 import { rng } from './textures.js';
-import { CASTLE, ISLANDS } from './layout.js';
+import { CASTLE, ISLANDS, groundAt } from './layout.js';
 import { MOOD } from './sky.js';
 
 function shaftMaterial(color, strength) {
@@ -33,11 +33,12 @@ export function createAtmosphere(scene, preset) {
   for (let i = 0; i < preset.shafts; i++) {
     const m = shaftMaterial(i % 2 ? '#a9b8ff' : '#d9c4ff', 0.07 + r() * 0.05);
     mats.push(m);
-    const len = 160 + r() * 80;
-    const geo = new THREE.CylinderGeometry(4 + r() * 6, 10 + r() * 10, len, 16, 1, true);
+    const len = 520 + r() * 260;
+    const geo = new THREE.CylinderGeometry(12 + r() * 18, 30 + r() * 30, len, 16, 1, true);
     geo.translate(0, len / 2, 0);
     const beam = new THREE.Mesh(geo, m);
-    const target = new THREE.Vector3((r() - 0.5) * 220, -10, (r() - 0.5) * 220 - 30);
+    const tx = -350 + (r() - 0.5) * 900, tz = 350 + (r() - 0.5) * 900;
+    const target = new THREE.Vector3(tx, (groundAt(tx, tz) ?? 0) - 10, tz);
     beam.position.copy(target);
     beam.quaternion.setFromUnitVectors(new THREE.Vector3(0, 1, 0), moonDir);
     group.add(beam);
@@ -50,10 +51,12 @@ export function createAtmosphere(scene, preset) {
   const rose = new THREE.Mesh(roseBeam, rm);
   rose.position.set(CASTLE.x, CASTLE.y + 17 * CASTLE.s, CASTLE.z + 13 * CASTLE.s);
   rose.rotation.x = Math.PI / 2 + 0.35;
+  rose.scale.setScalar(CASTLE.s);
   group.add(rose);
 
   // mist rings around each floating island, for depth and scale
   for (const isl of ISLANDS) {
+    if (isl.main) continue;
     const m = new THREE.Mesh(
       new THREE.RingGeometry(isl.r * 0.85, isl.r * 1.6, 48, 1),
       new THREE.ShaderMaterial({

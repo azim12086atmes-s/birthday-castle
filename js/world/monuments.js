@@ -1,16 +1,16 @@
-// Monuments that fill the world around the monumental axis, taken from the
-// architecture catalogue: a stoa against the top terrace (1A), obelisk pairs
-// at both ends of the bridge (U398), colossal winged guardian statues (U136,
-// U379), two round temples (tholos, U364), an aqueduct either side of the
-// acropolis spilling off the island (U401), lily pads and floating candles on
+// Monuments that fill the world, taken from the architecture catalogue: a
+// stoa against the top terrace (1A), obelisks at the cove end of the bridge
+// (U398), colossal winged guardian statues (U136, U379), two round temples on
+// Temple Hill (tholos, U364), the sandstone pillars of Pillar Reach with rope
+// bridges and waterfalls (U98, U236, U121), lily pads and floating candles on
 // the lake (U258, U292), a ferris wheel (U343), a rune stone ring (U105) and
-// hot-air balloons drifting round the island (U142).
+// hot-air balloons drifting round the crag (U142).
 // Static stone is merged into a handful of meshes so the lot costs few draw calls.
 import * as THREE from 'three';
 import { mergeGeometries } from 'three/addons/utils/BufferGeometryUtils.js';
 import { glowBasic, additive, nightGrade } from './materials.js';
 import { stoneTexture, glowTexture, rng } from './textures.js';
-import { TERRACES, STAIR, LAKE, BRIDGE, THOLOI, AQUEDUCT, WHEEL, RUNES, MAIN, addCollider, groundAt } from './layout.js';
+import { TERRACES, STAIR, BRIDGE, BRIDGE_LINE, THOLOI, WHEEL, RUNES, PLAZA, CRAG, PILLAR_REACH, addCollider, groundAt, lakeDistance, nearestOnLine } from './layout.js';
 import { MOOD } from './sky.js';
 
 const MARBLE = '#f6e4ee';
@@ -64,56 +64,60 @@ function guardian() {
 export function createMonuments(scene, preset) {
   const r = rng(77);
   const group = new THREE.Group();
-  const marble = [], gold = [], glow = [], statue = [];
+  const marble = [], gold = [], glow = [], statue = [], rock = [], moss = [];
   const stars = [];               // glowing points that get a halo
   const low = preset.grass < 4000;
 
   // --- stoa: a colonnade along the face of the top terrace -----------------
   {
-    const T2 = TERRACES[1], T3 = TERRACES[2], h = 6.6, zc = T3.front + 4;
+    const T2 = TERRACES[1], T3 = TERRACES[2], h = 13, D = 10, zc = T3.front + D - 1;
     for (const s of [-1, 1]) {
-      const xa = STAIR.hw + 4, xb = T3.hw - 1;
-      for (let x = xa; x <= xb + 0.01; x += 3.2) {
-        const c = column(h, 0.42); c.translate(s * x, T2.y, zc);
-        marble.push(c);
-        addCollider({ x: s * x, z: zc, r: 0.55, y0: T2.y, y1: T2.y + h });
-      }
-      const cx = s * (xa + xb) / 2, w = xb - xa + 1.6;
-      marble.push(box(w, 0.7, 5, cx, T2.y + h + 0.35, zc - 2));          // architrave and roof slab
-      gold.push(box(w + 0.3, 0.22, 5.3, cx, T2.y + h + 0.8, zc - 2));     // gold cornice
-      marble.push(box(w, 0.3, 0.6, cx, T2.y + h - 0.15, zc));             // beam over the columns
-      marble.push(box(w, 0.08, 4, cx, T2.y + 0.04, zc - 2));              // paved floor
-      // gold acroteria along the roof line
+      const xa = STAIR.hw + 8, xb = T3.hw - 2;
       for (let x = xa; x <= xb + 0.01; x += 6.4) {
-        const a = new THREE.OctahedronGeometry(0.35, 0); a.scale(1, 1.6, 1); a.translate(s * x, T2.y + h + 1.4, zc + 0.3);
+        const c = column(h, 0.8); c.translate(s * x, T2.y, zc);
+        marble.push(c);
+        addCollider({ x: s * x, z: zc, r: 1.05, y0: T2.y, y1: T2.y + h });
+      }
+      const cx = s * (xa + xb) / 2, w = xb - xa + 3;
+      marble.push(box(w, 1.3, D, cx, T2.y + h + 0.65, zc - D / 2 + 0.6));      // architrave and roof slab
+      gold.push(box(w + 0.6, 0.4, D + 0.6, cx, T2.y + h + 1.5, zc - D / 2 + 0.6)); // gold cornice
+      marble.push(box(w, 0.6, 1.2, cx, T2.y + h - 0.3, zc));                     // beam over the columns
+      marble.push(box(w, 0.1, D - 1, cx, T2.y + 0.05, zc - D / 2 + 0.6));        // paved floor
+      // gold acroteria along the roof line
+      for (let x = xa; x <= xb + 0.01; x += 12.8) {
+        const a = new THREE.OctahedronGeometry(0.7, 0); a.scale(1, 1.6, 1); a.translate(s * x, T2.y + h + 2.6, zc + 0.6);
         gold.push(a);
       }
     }
   }
 
   // --- obelisks at both ends of the bridge ---------------------------------
-  for (const z of [BRIDGE.z0, BRIDGE.z1 + 2]) for (const s of [-1, 1]) {
-    const x = s * 8, y = groundAt(x, z) ?? 0;
-    marble.push(box(2.6, 0.5, 2.6, x, y + 0.25, z), box(2.1, 0.5, 2.1, x, y + 0.75, z));
-    const o = new THREE.CylinderGeometry(0.55, 0.85, 13, 4); o.rotateY(Math.PI / 4); o.translate(x, y + 1 + 6.5, z);
-    marble.push(o);
-    const tip = new THREE.ConeGeometry(0.62, 1.4, 4); tip.rotateY(Math.PI / 4); tip.translate(x, y + 14.2, z);
-    gold.push(tip);
-    stars.push([x, y + 15.3, z, 2.6]);
-    addCollider({ x, z, r: 1.5 });
+  {
+    const [ax, az] = BRIDGE.pts[0], [bx, bz] = BRIDGE.pts[1];
+    const L = Math.hypot(bx - ax, bz - az), dx = (bx - ax) / L, dz = (bz - az) / L;
+    for (const s of [-1, 1]) {
+      const x = ax - dx * 6 - dz * s * (BRIDGE.hw + 6), z = az - dz * 6 + dx * s * (BRIDGE.hw + 6), y = groundAt(x, z) ?? 0, k = 2;
+      marble.push(box(2.6 * k, 0.5 * k, 2.6 * k, x, y + 0.25 * k, z), box(2.1 * k, 0.5 * k, 2.1 * k, x, y + 0.75 * k, z));
+      const o = new THREE.CylinderGeometry(0.55 * k, 0.85 * k, 13 * k, 4); o.rotateY(Math.PI / 4); o.translate(x, y + k + 6.5 * k, z);
+      marble.push(o);
+      const tip = new THREE.ConeGeometry(0.62 * k, 1.4 * k, 4); tip.rotateY(Math.PI / 4); tip.translate(x, y + 14.2 * k, z);
+      gold.push(tip);
+      stars.push([x, y + 15.3 * k, z, 5]);
+      addCollider({ x, z, r: 1.5 * k });
+    }
   }
 
   // --- colossal guardians: flanking the grand stair and in the lake corners -
   {
     const G = guardian();
     const spots = [
-      { x: -22, z: TERRACES[0].front + STAIR.run, s: 15, ry: 0.35 },
-      { x: 22, z: TERRACES[0].front + STAIR.run, s: 15, ry: -0.35 },
-      { x: -24, z: LAKE.z0 + 8, s: 12, ry: 0.5 },
-      { x: 24, z: LAKE.z0 + 8, s: 12, ry: -0.5 },
+      { x: -(STAIR.hw + 12), z: TERRACES[0].front + STAIR.run + 6, s: 30, ry: 0.35 },
+      { x: STAIR.hw + 12, z: TERRACES[0].front + STAIR.run + 6, s: 30, ry: -0.35 },
+      { x: PLAZA.x - 16, z: PLAZA.z + 24, s: 20, ry: 0.2 },
+      { x: PLAZA.x + 16, z: PLAZA.z + 24, s: 20, ry: -0.2 },
     ];
     for (const sp of spots) {
-      const base = (sp.z > LAKE.z0 && sp.z < LAKE.z1 ? -0.6 : groundAt(sp.x, sp.z) ?? 0) + 0.34 * sp.s;
+      const base = (groundAt(sp.x, sp.z, CRAG.y) ?? CRAG.y) + 0.34 * sp.s;
       const m = new THREE.Matrix4().compose(new THREE.Vector3(sp.x, base, sp.z), new THREE.Quaternion().setFromEuler(new THREE.Euler(0, sp.ry, 0)), new THREE.Vector3(sp.s, sp.s, sp.s));
       for (const g of G.marble) statue.push(g.clone().applyMatrix4(m));
       for (const g of G.gold) gold.push(g.clone().applyMatrix4(m));
@@ -127,13 +131,13 @@ export function createMonuments(scene, preset) {
 
   // --- two round temples (tholos) with gold domes ---------------------------
   for (const t of THOLOI) {
-    const y = groundAt(t.x, t.z) ?? 0, R = 5.2, h = 6.4;
-    for (let k = 0; k < 3; k++) marble.push(cyl(R + 2.2 - k * 0.7, R + 2.2 - k * 0.7, 0.4, 32, t.x, y + k * 0.4, t.z));
-    const fy = y + 1.2;
-    for (let i = 0; i < 12; i++) {
-      const a = (i / 12) * Math.PI * 2, cx = t.x + Math.cos(a) * R, cz = t.z + Math.sin(a) * R;
-      const c = column(h, 0.36); c.translate(cx, fy, cz); marble.push(c);
-      addCollider({ x: cx, z: cz, r: 0.5 });
+    const y = (groundAt(t.x, t.z) ?? 0) - 0.4, R = 9, h = 11;
+    for (let k = 0; k < 3; k++) marble.push(cyl(R + 3.6 - k * 1.1, R + 3.6 - k * 1.1, 0.6, 32, t.x, y + k * 0.6, t.z));
+    const fy = y + 1.8;
+    for (let i = 0; i < 14; i++) {
+      const a = (i / 14) * Math.PI * 2, cx = t.x + Math.cos(a) * R, cz = t.z + Math.sin(a) * R;
+      const c = column(h, 0.6); c.translate(cx, fy, cz); marble.push(c);
+      addCollider({ x: cx, z: cz, r: 0.8 });
     }
     const ent = new THREE.CylinderGeometry(R + 0.7, R + 0.7, 1.1, 32, 1, true); ent.translate(t.x, fy + h + 0.55, t.z);
     marble.push(ent, cyl(R + 0.9, R + 0.9, 0.3, 32, t.x, fy + h + 1.1, t.z));
@@ -148,39 +152,111 @@ export function createMonuments(scene, preset) {
     stars.push([t.x, fy + 3.2, t.z, 7]);
   }
 
-  // --- aqueducts: two tiers of arches carrying a glowing channel ------------
-  const fallSpots = [];
+  // --- Pillar Reach: ten sandstone pillars, three hovering, rope bridges -----
+  const fallSpots = [], wood = [];
   {
-    const z = AQUEDUCT.z, rim = Math.sqrt(MAIN.r * MAIN.r - z * z) - 1, span = 8, H1 = 8.5, H2 = 4, D = 2.4;
-    const arch = (w, h, ar, d) => {
-      const sh = new THREE.Shape();
-      sh.moveTo(-w / 2, 0); sh.lineTo(w / 2, 0); sh.lineTo(w / 2, h); sh.lineTo(-w / 2, h); sh.lineTo(-w / 2, 0);
-      const hole = new THREE.Path(), cy = h - 0.6 - ar;
-      hole.moveTo(-ar, 0); hole.lineTo(-ar, cy); hole.absarc(0, cy, ar, Math.PI, 0, true); hole.lineTo(ar, 0); hole.lineTo(-ar, 0);
-      sh.holes.push(hole);
-      const g = new THREE.ExtrudeGeometry(sh, { depth: d, bevelEnabled: false, curveSegments: 8 });
-      g.translate(0, 0, -d / 2);
+    const pr = rng(303), P = [];
+    for (let tries = 0; P.length < 10 && tries < 4000; tries++) {
+      const a = pr() * Math.PI * 2, d = Math.sqrt(pr()) * 240;
+      const x = PILLAR_REACH.x + Math.cos(a) * d, z = PILLAR_REACH.z + Math.sin(a) * d;
+      const rb = 20 + pr() * 15;
+      if (x * x + z * z > 1000 * 1000 || lakeDistance(x, z) < rb + 25) continue;
+      if (P.some((q) => Math.hypot(q.x - x, q.z - z) < q.rb + rb + 28)) continue;
+      P.push({ x, z, rb, rt: rb * (0.72 + pr() * 0.2), H: 180 + pr() * 120, float: P.length % 3 === 1 && P.length < 9 });
+    }
+    // rough rock with strata: a lathe-like cylinder pushed in and out
+    const pillar = (rt, rb, h, seed) => {
+      const g = new THREE.CylinderGeometry(rt, rb, h, 16, Math.max(6, Math.round(h / 14)));
+      const p = g.attributes.position, cols = [], c = new THREE.Color();
+      for (let i = 0; i < p.count; i++) {
+        const x = p.getX(i), y = p.getY(i), z = p.getZ(i), ang = Math.atan2(z, x);
+        const f = 1 + 0.1 * Math.sin(ang * 3 + seed + y * 0.02) + 0.06 * Math.sin(ang * 7 - y * 0.05 + seed * 2) + 0.03 * Math.sin(ang * 13 + y * 0.11);
+        p.setX(i, x * f); p.setZ(i, z * f);
+        // soft sandstone bands, warmer and lighter towards the top (U236)
+        const t = (y + h / 2) / h, band = Math.sin(y * 0.07 + seed) * 0.5 + 0.5;
+        c.setHSL(0.05 + band * 0.025, 0.42 + band * 0.1, 0.5 + t * 0.14 + band * 0.06);
+        cols.push(c.r, c.g, c.b);
+      }
+      g.setAttribute('color', new THREE.Float32BufferAttribute(cols, 3));
+      g.computeVertexNormals();
       return g;
     };
-    const lowerArch = arch(span, H1, span / 2 - 0.8, D), upperArch = arch(span / 2, H2, span / 4 - 0.5, D * 0.85);
-    for (const s of [-1, 1]) {
-      const x0 = AQUEDUCT.x0 + 2;
-      const n = Math.floor((rim - x0) / span);
-      for (let i = 0; i < n; i++) {
-        const cx = s * (x0 + span / 2 + i * span);
-        marble.push(lowerArch.clone().translate(cx, 0, z));
-        for (const q of [-1, 1]) marble.push(upperArch.clone().translate(cx + q * span / 4, H1, z));
-        addCollider({ minX: cx + span / 2 - 0.8, maxX: cx + span / 2 + 0.8, minZ: z - D / 2, maxZ: z + D / 2 });
+    for (const [i, q] of P.entries()) {
+      let y0 = Infinity;
+      for (let k = 0; k < 6; k++) { const a = k * 1.05; y0 = Math.min(y0, groundAt(q.x + Math.cos(a) * q.rb, q.z + Math.sin(a) * q.rb) ?? 0); }
+      y0 -= 4; q.top = y0 + q.H;
+      if (q.float) {
+        const hs = 30 + pr() * 30, gap = 20 + pr() * 40, rs = q.rb * 0.95;
+        rock.push(pillar(rs * 0.8, rs, hs, i).translate(q.x, y0 + hs / 2, q.z));                  // the stump left behind
+        moss.push(cyl(rs * 0.82, rs * 0.82, 1.2, 16, q.x, y0 + hs - 0.4, q.z));
+        const h = q.H - hs - gap, b = y0 + hs + gap;
+        rock.push(pillar(q.rt, q.rb * 0.9, h, i + 5).translate(q.x, b + h / 2, q.z));
+        const under = new THREE.ConeGeometry(q.rb * 0.9, 26, 16, 3); under.rotateX(Math.PI); under.translate(q.x, b - 13, q.z);
+        rock.push(under);
+        stars.push([q.x, b - 30, q.z, 30]);                                                         // a glow where it hangs
+        addCollider({ x: q.x, z: q.z, r: rs * 0.95 });
+      } else {
+        rock.push(pillar(q.rt, q.rb, q.H, i).translate(q.x, y0 + q.H / 2, q.z));
+        addCollider({ x: q.x, z: q.z, r: q.rb * 0.95 });
+        if (fallSpots.length < 3) {
+          const a = pr() * Math.PI * 2;
+          fallSpots.push({ x: q.x + Math.cos(a) * (q.rt + 1), z: q.z + Math.sin(a) * (q.rt + 1), y: q.top, L: q.H - 4, a: Math.atan2(Math.cos(a), Math.sin(a)) });
+        }
       }
-      addCollider({ minX: s * x0 - 0.8, maxX: s * x0 + 0.8, minZ: z - D / 2, maxZ: z + D / 2 });
-      const len = n * span, mid = s * (x0 + len / 2);
-      gold.push(box(len, 0.2, D + 0.2, mid, H1 + H2 + 0.1, z));
-      const ch = new THREE.PlaneGeometry(len, D * 0.6); ch.rotateX(-Math.PI / 2); ch.translate(mid, H1 + H2 + 0.22, z);
-      glow.push(ch);
-      fallSpots.push({ x: s * (x0 + len), y: H1 + H2 + 0.2, z, s });
+      // grassy top with a few trees
+      moss.push(cyl(q.rt * 1.06, q.rt * 0.98, 3, 16, q.x, q.top - 2, q.z));
+      for (let k = 0, n = 3 + Math.floor(pr() * 3); k < n; k++) {
+        const a = pr() * 6.28, d = pr() * q.rt * 0.7, h = 12 + pr() * 10;
+        const c = new THREE.ConeGeometry(3 + pr() * 2, h, 7); c.translate(q.x + Math.cos(a) * d, q.top + 1 + h / 2, q.z + Math.sin(a) * d);
+        moss.push(c);
+      }
+      // a domed pavilion on two of the tops
+      if (i === 0 || i === 4) {
+        const R = 6, h = 9, fy = q.top + 1;
+        marble.push(cyl(R + 1.6, R + 1.6, 1, 24, q.x, fy - 1, q.z));
+        for (let k = 0; k < 8; k++) { const a = k * Math.PI / 4, c = column(h, 0.45); c.translate(q.x + Math.cos(a) * R, fy, q.z + Math.sin(a) * R); marble.push(c); }
+        const dome = new THREE.SphereGeometry(R + 0.6, 20, 8, 0, Math.PI * 2, 0, Math.PI / 2); dome.translate(q.x, fy + h, q.z);
+        gold.push(dome);
+        stars.push([q.x, fy + 4, q.z, 12]);
+      }
+    }
+    // rope bridges between tops less than 190 m apart: a sagging plank deck and two hand ropes
+    const strip = (pts, w) => {
+      const pos = [], uv = [], nrm = [];
+      for (let k = 0; k < pts.length - 1; k++) {
+        const a = pts[k], b = pts[k + 1], dx = b.x - a.x, dz = b.z - a.z, l = Math.hypot(dx, dz), px = -dz / l * w, pz = dx / l * w;
+        const q = [[a.x - px, a.y, a.z - pz], [a.x + px, a.y, a.z + pz], [b.x + px, b.y, b.z + pz], [b.x - px, b.y, b.z - pz]];
+        for (const t of [0, 1, 2, 0, 2, 3]) { pos.push(...q[t]); nrm.push(0, 1, 0); uv.push(t === 1 || t === 2 ? 1 : 0, k % 2); }
+      }
+      const g = new THREE.BufferGeometry();
+      g.setAttribute('position', new THREE.Float32BufferAttribute(pos, 3));
+      g.setAttribute('normal', new THREE.Float32BufferAttribute(nrm, 3));
+      g.setAttribute('uv', new THREE.Float32BufferAttribute(uv, 2));
+      return g;
+    };
+    const linked = new Set();
+    for (const [i, a] of P.entries()) {
+      let best = null, bd = 190;
+      for (const [j, b] of P.entries()) {
+        if (i === j || linked.has(Math.min(i, j) + ':' + Math.max(i, j))) continue;
+        const d = Math.hypot(a.x - b.x, a.z - b.z);
+        if (d < bd) { bd = d; best = [j, b]; }
+      }
+      if (!best) continue;
+      const [j, b] = best; linked.add(Math.min(i, j) + ':' + Math.max(i, j));
+      const ux = (b.x - a.x) / bd, uz = (b.z - a.z) / bd;
+      const A = { x: a.x + ux * a.rt * 0.9, z: a.z + uz * a.rt * 0.9, y: a.top + 0.2 }, B = { x: b.x - ux * b.rt * 0.9, z: b.z - uz * b.rt * 0.9, y: b.top + 0.2 };
+      const span = Math.hypot(B.x - A.x, B.z - A.z), sag = span * 0.07, n = Math.max(8, Math.round(span / 4));
+      const pts = [];
+      for (let k = 0; k <= n; k++) { const t = k / n; pts.push({ x: A.x + (B.x - A.x) * t, z: A.z + (B.z - A.z) * t, y: A.y + (B.y - A.y) * t - sag * 4 * t * (1 - t) }); }
+      wood.push(strip(pts, 1.3));
+      for (const s of [-1, 1]) {
+        const c = new THREE.CatmullRomCurve3(pts.map((p) => new THREE.Vector3(p.x - uz * s * 1.4, p.y + 1.1, p.z + ux * s * 1.4)));
+        wood.push(new THREE.TubeGeometry(c, n, 0.1, 3));
+      }
+      for (let k = 2; k < n; k += 6) stars.push([pts[k].x, pts[k].y + 1.6, pts[k].z, 3]);
     }
   }
-
   // --- rune stone ring in the arrival meadow --------------------------------
   {
     const n = 9;
@@ -213,7 +289,13 @@ export function createMonuments(scene, preset) {
   // statues in smooth polished marble, without the block pattern
   const Sm = new THREE.Mesh(mergeGeometries(statue.map(clean)), nightGrade(new THREE.MeshLambertMaterial({ color: '#fbeaf2', emissive: '#4a2a5a', emissiveIntensity: 0.35 }), 'statue'));
   Sm.castShadow = true;
-  group.add(M, Gm, Lm, Sm);
+  // rock keeps its vertex colours; pieces without them (the hanging undersides) get a plain sandstone tint
+  for (const g of rock) if (!g.attributes.color) { const n = g.attributes.position.count, a = new Float32Array(n * 3); for (let i = 0; i < n; i++) a.set([0.62, 0.42, 0.33], i * 3); g.setAttribute('color', new THREE.BufferAttribute(a, 3)); }
+  const Rm = new THREE.Mesh(mergeGeometries(rock.map((g) => { g = g.index ? g.toNonIndexed() : g; for (const k of Object.keys(g.attributes)) if (!['position', 'normal', 'uv', 'color'].includes(k)) g.deleteAttribute(k); return g; })), nightGrade(new THREE.MeshLambertMaterial({ vertexColors: true, emissive: '#3a2030', emissiveIntensity: 0.4 }), 'pillar-rock'));
+  Rm.castShadow = Rm.receiveShadow = true;
+  const Mm = new THREE.Mesh(mergeGeometries(moss.map(clean)), nightGrade(new THREE.MeshLambertMaterial({ color: '#4f8a56', emissive: '#10283a', emissiveIntensity: 0.4 }), 'pillar-moss'));
+  const Wm = new THREE.Mesh(mergeGeometries(wood.map(clean)), new THREE.MeshLambertMaterial({ color: '#8a6a4a', emissive: '#2a1a20', emissiveIntensity: 0.4, side: THREE.DoubleSide }));
+  group.add(M, Gm, Lm, Sm, Rm, Mm, Wm);
 
   // halos round every glowing star, as one point cloud
   const hp = new THREE.BufferGeometry();
@@ -244,12 +326,12 @@ export function createMonuments(scene, preset) {
       }`,
   });
   for (const f of fallSpots) {
-    const g = new THREE.PlaneGeometry(1.6, 46, 1, 8);
+    const g = new THREE.PlaneGeometry(7, f.L, 1, 12);
     const p = g.attributes.position;
-    for (let i = 0; i < p.count; i++) { const t = (23 - p.getY(i)) / 46; p.setZ(i, t * t * 6); }
-    g.rotateY(f.s * Math.PI / 2);
+    for (let i = 0; i < p.count; i++) { const t = (f.L / 2 - p.getY(i)) / f.L; p.setZ(i, Math.sqrt(Math.max(0, t)) * 14); }
+    g.rotateY(f.a);
     const m = new THREE.Mesh(g, fallMat);
-    m.position.set(f.x, f.y - 23, f.z);
+    m.position.set(f.x, f.y - f.L / 2, f.z);
     group.add(m);
   }
 
@@ -261,9 +343,13 @@ export function createMonuments(scene, preset) {
   const d = new THREE.Object3D();
   const candles = [];
   for (let i = 0, k = 0; i < nPads; i++) {
-    let x, z;
-    do { x = (r() * 2 - 1) * (LAKE.hw - 2); z = LAKE.z0 + 2 + r() * (LAKE.z1 - LAKE.z0 - 4); } while (Math.abs(x) < BRIDGE.hw + 2.5 || (Math.abs(Math.abs(x) - 24) < 3 && z < LAKE.z0 + 12));
-    d.position.set(x, -0.2, z); d.rotation.set(0, r() * 6.28, 0); d.scale.setScalar(0.7 + r() * 0.8); d.updateMatrix();
+    // in clusters along both sides of the bridge, where people walk past them
+    let x, z, tries = 0;
+    do {
+      const s = BRIDGE_LINE.samples[Math.floor(r() * BRIDGE_LINE.samples.length)], a = r() * Math.PI * 2, dd = 10 + r() * 60;
+      x = s.x + Math.cos(a) * dd; z = s.z + Math.sin(a) * dd;
+    } while (++tries < 50 && (lakeDistance(x, z) > -5 || nearestOnLine(BRIDGE_LINE, x, z, BRIDGE.hw + 4)));
+    d.position.set(x, -0.2, z); d.rotation.set(0, r() * 6.28, 0); d.scale.setScalar(1.2 + r() * 1.4); d.updateMatrix();
     pads.setMatrixAt(i, d.matrix);
     if (i % 3 === 0) { d.position.y = 0.05; d.updateMatrix(); lotus.setMatrixAt(k++, d.matrix); }
     if (i % 2 === 0) candles.push(x + 0.9, -0.05, z + 0.4);
@@ -275,7 +361,7 @@ export function createMonuments(scene, preset) {
   group.add(new THREE.Points(cg, candleMat));
 
   // --- ferris wheel ---------------------------------------------------------
-  const wy = groundAt(WHEEL.x, WHEEL.z) ?? 0, WR = 11, hubY = wy + WR + 2.5;
+  const wy = groundAt(WHEEL.x, WHEEL.z) ?? 0, WR = 22, hubY = wy + WR + 3;
   const wheel = new THREE.Group(); wheel.position.set(WHEEL.x, hubY, WHEEL.z);
   {
     const parts = [];
@@ -290,7 +376,7 @@ export function createMonuments(scene, preset) {
     const bulbPos = [];
     for (let i = 0; i < 48; i++) { const a = (i / 48) * Math.PI * 2; for (const zz of [-1.1, 1.1]) bulbPos.push(Math.cos(a) * WR, Math.sin(a) * WR, zz); }
     const bg = new THREE.BufferGeometry(); bg.setAttribute('position', new THREE.Float32BufferAttribute(bulbPos, 3));
-    wheel.add(new THREE.Points(bg, new THREE.PointsMaterial({ color: '#ffd0f0', map: glowTexture(), size: 1.1, transparent: true, depthWrite: false, blending: THREE.AdditiveBlending, toneMapped: false })));
+    wheel.add(new THREE.Points(bg, new THREE.PointsMaterial({ color: '#ffd0f0', map: glowTexture(), size: 2, transparent: true, depthWrite: false, blending: THREE.AdditiveBlending, toneMapped: false })));
     group.add(wheel);
     // A-frame legs
     const legs = [];
@@ -318,7 +404,7 @@ export function createMonuments(scene, preset) {
   const bData = [];
   for (let i = 0; i < nB; i++) {
     balloons.setColorAt(i, new THREE.Color(balloonCols[i % balloonCols.length]));
-    bData.push({ R: 95 + r() * 60, a: (i / nB) * Math.PI * 2, y: 38 + r() * 30, sp: (0.008 + r() * 0.008) * (i % 2 ? 1 : -1), s: 1.2 + r() * 0.6, ph: r() * 6 });
+    bData.push({ R: 300 + r() * 600, a: (i / nB) * Math.PI * 2, y: 150 + r() * 110, sp: (0.003 + r() * 0.004) * (i % 2 ? 1 : -1), s: 3 + r() * 1.5, ph: r() * 6 });
   }
   group.add(balloons);
 
@@ -334,8 +420,8 @@ export function createMonuments(scene, preset) {
       wheel.rotation.z = rot;
       for (let i = 0; i < nCars; i++) {
         const a = rot + (i / nCars) * Math.PI * 2;
-        tmp.position.set(WHEEL.x + Math.cos(a) * WR, hubY + Math.sin(a) * WR - 1.2, WHEEL.z);
-        tmp.rotation.set(0, 0, Math.sin(t + i) * 0.05); tmp.scale.setScalar(1); tmp.updateMatrix();
+        tmp.position.set(WHEEL.x + Math.cos(a) * WR, hubY + Math.sin(a) * WR - 2.2, WHEEL.z);
+        tmp.rotation.set(0, 0, Math.sin(t + i) * 0.05); tmp.scale.setScalar(1.8); tmp.updateMatrix();
         cars.setMatrixAt(i, tmp.matrix);
       }
       cars.instanceMatrix.needsUpdate = true;

@@ -9,11 +9,13 @@ import { createPath } from './world/path.js';
 import { createGarden } from './world/garden.js';
 import { createAcropolis } from './world/acropolis.js';
 import { createMonuments } from './world/monuments.js';
+import { createForest } from './world/forest.js';
 import { createCreatures } from './world/creatures.js';
 import { createEffects } from './world/effects.js';
 import { createAtmosphere } from './world/atmosphere.js';
 import { createHorizon } from './world/horizon.js';
-import { SPAWN, MAIN } from './world/layout.js';
+import { SPAWN, MAIN, groundAt } from './world/layout.js';
+const SPAWN_Y = groundAt(SPAWN.x, SPAWN.z) ?? MAIN.y;
 import { Avatar } from './avatar.js';
 import { Controller } from './controls.js';
 import { createTravel, makeLotusBoat } from './travel.js';
@@ -39,9 +41,9 @@ if (quality.shadows) {
 const governor = new FrameGovernor(renderer, quality);
 
 const scene = new THREE.Scene();
-scene.fog = new THREE.Fog(FOG_COLOR, 90, 620);
-const camera = new THREE.PerspectiveCamera(60, innerWidth / innerHeight, 0.1, 1400);
-camera.position.set(0, 40, 160);
+scene.fog = new THREE.Fog(FOG_COLOR, 260, 3000);
+const camera = new THREE.PerspectiveCamera(60, innerWidth / innerHeight, 0.2, 6000);
+camera.position.set(SPAWN.x, SPAWN_Y + 40, SPAWN.z + 60);
 
 const hemi = new THREE.HemisphereLight('#9fb0ff', '#3a2a6a', 1.6);
 scene.add(hemi);
@@ -111,6 +113,7 @@ const path = createPath(scene);
 const acropolis = createAcropolis(scene, quality);
 const monuments = createMonuments(scene, quality);
 const garden = createGarden(scene, quality);
+const forest = createForest(scene, quality);
 const creatures = createCreatures(scene, quality);
 const effects = createEffects(scene, quality);
 const atmosphere = createAtmosphere(scene, quality);
@@ -210,7 +213,7 @@ function startGame(p) {
   function addRemote(id, prof) {
     if (remotes.has(id)) { remotes.get(id).avatar.build(prof, p.gender); remotes.get(id).profile = prof; return; }
     const avatar = new Avatar(prof, p.gender);
-    avatar.root.position.set(SPAWN.x, MAIN.y, SPAWN.z);
+    avatar.root.position.set(SPAWN.x, SPAWN_Y, SPAWN.z);
     scene.add(avatar.root);
     const boat = makeLotusBoat(); boat.visible = false; scene.add(boat);
     remotes.set(id, { avatar, profile: prof, target: avatar.root.position.clone(), facing: Math.PI, speed: 0, score: 0, boat, stepAcc: 0, last: avatar.root.position.clone() });
@@ -227,7 +230,7 @@ function startGame(p) {
     if (!fromRoster) ui.toast(`${prof.name} has arrived ✦`);
     if (prof.honoree && !fromRoster && !p.honoree && game && !game.cutscene) {
       const st = net.players.get(id)?.state;
-      const target = st ? new THREE.Vector3(st[0], st[1], st[2]) : new THREE.Vector3(SPAWN.x, MAIN.y, SPAWN.z);
+      const target = st ? new THREE.Vector3(st[0], st[1], st[2]) : new THREE.Vector3(SPAWN.x, SPAWN_Y, SPAWN.z);
       game.cutscene = playWelcome({ camera, castle, celebration, controller, target, ui, onDone: () => { game.cutscene = null; } });
     }
   });
@@ -350,7 +353,8 @@ function frame() {
   garden.update(t, camera);
   acropolis.update(t, camera);
   monuments.update(t);
-  creatures.update(t, dt);
+  forest.update(t);
+  creatures.update(t, dt, camera);
   effects.update(t, dt, camera, governor.ratio);
   celebration.update(t, dt);
   lanterns.update(t, dt);
@@ -381,7 +385,7 @@ function frame() {
       if (r.boat.visible) { r.boat.position.copy(a.position).add(new THREE.Vector3(0, -0.35, 0)); r.boat.rotation.y = t * 0.3; }
       r.stepAcc += Math.hypot(a.position.x - r.last.x, a.position.z - r.last.z);
       r.last.copy(a.position);
-      if (r.stepAcc > 1.4) { r.stepAcc = 0; if (Math.abs(a.position.y - MAIN.y) < 0.5) path.step(a.position.x, a.position.z, 1); }
+      if (r.stepAcc > 1.4) { r.stepAcc = 0; if (a.position.y < 150) path.step(a.position.x, a.position.z, 1); }
       g.voicePositions.set(id, a.position);
     }
     const head = g.controller.pos.clone(); head.y += 1.6;

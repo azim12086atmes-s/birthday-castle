@@ -6,7 +6,7 @@
 import * as THREE from 'three';
 import { glowBasic } from './world/materials.js';
 import { glowTexture, textTexture, rng } from './world/textures.js';
-import { ISLANDS, isClearOfBuildings, groundAt } from './world/layout.js';
+import { ISLANDS, isClearOfBuildings, groundAt, randomOnIsland, MAIN_SHARE_R } from './world/layout.js';
 
 const SHARDS = 45;
 const RESPAWN = 75; // seconds before a collected shard reappears for you
@@ -14,15 +14,17 @@ const RESPAWN = 75; // seconds before a collected shard reappears for you
 export function createStardustHunt(scene, onCollect) {
   const r = rng(2026);
   const spots = [];
-  const total = ISLANDS.reduce((s, i) => s + i.r, 0);
+  const share = (i) => (i.main ? MAIN_SHARE_R * 2 : i.r);
+  const total = ISLANDS.reduce((s, i) => s + share(i), 0);
   for (const isl of ISLANDS) {
-    const n = Math.round((SHARDS * isl.r) / total);
+    const n = Math.round((SHARDS * share(isl)) / total);
     let k = 0, tries = 0;
     while (k < n && tries++ < 400) {
-      const a = r() * Math.PI * 2, d = Math.sqrt(r()) * (isl.r - 4);
-      const x = isl.x + Math.cos(a) * d, z = isl.z + Math.sin(a) * d;
-      if (!isClearOfBuildings(x, z, -2)) continue;
-      spots.push({ x, y: (groundAt(x, z) ?? isl.y) + 1.2 + r() * 1.5, z, gone: 0 });
+      const [x, z] = randomOnIsland(isl, r, 4);
+      if (!isClearOfBuildings(x, z, -2, isl.y)) continue;
+      const g = groundAt(x, z, isl.y);
+      if (g == null) continue;
+      spots.push({ x, y: g + 1.2 + r() * 1.5, z, gone: 0 });
       k++;
     }
   }

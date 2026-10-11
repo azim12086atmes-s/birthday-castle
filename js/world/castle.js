@@ -169,7 +169,7 @@ export function createCastle(scene) {
   wall(cx + wx, bz, cx + wx, fz);
 
   // the grand gate: pointed arch in a raised gatehouse
-  const gateW = 9, gateH = 12;
+  const gateW = 10, gateH = 16;   // 30 m by 48 m once the castle is scaled up
   B.add('stone', archFrameGeometry(gateW, gateH, 2.2, wallT + 0.6), cx, 0, fz);
   B.add('stone', new THREE.BoxGeometry(gateW + 4.4, 3.2, wallT + 0.6), cx, gateH + 1.6 + 1.2, fz);
   // carved star medallion over the gate (U178), glowing at night

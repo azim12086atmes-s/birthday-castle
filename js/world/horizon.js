@@ -86,6 +86,8 @@ export function createHorizon(scene) {
     m.frustumCulled = false;
     group.add(m);
   });
+  // painted ranges far beyond the walkable land and its mountain rim
+  group.scale.set(3.6, 4, 3.6);
   scene.add(group);
   return group;
 }

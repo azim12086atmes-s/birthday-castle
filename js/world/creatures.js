@@ -3,7 +3,7 @@
 import * as THREE from 'three';
 import { toon, glowBasic, additive } from './materials.js';
 import { glowTexture, rng } from './textures.js';
-import { ISLANDS, CASTLE, isClearOfBuildings, groundAt } from './layout.js';
+import { ISLANDS, CASTLE, MAIN_ZONES, isClearOfBuildings, groundAt } from './layout.js';
 
 const RAINBOW = ['#ff9bd6', '#c9a6ff', '#7ff3ff', '#8dffb0', '#ffd47a'];
 
@@ -139,7 +139,7 @@ export function createCreatures(scene, preset) {
 
   const unicorns = [0, 1, 2, 3].map((i) => {
     const u = makeUnicorn(r);
-    u.userData.orbit = { R: 70 + i * 24, y: 42 + i * 10, speed: (0.09 + r() * 0.05) * (i % 2 ? -1 : 1), off: i * 1.7, cx: CASTLE.x, cz: CASTLE.z + 10 };
+    u.userData.orbit = { R: 210 + i * 60, y: CASTLE.y + 90 + i * 25, speed: (0.09 + r() * 0.05) * (i % 2 ? -1 : 1), off: i * 1.7, cx: CASTLE.x, cz: CASTLE.z + 10 };
     group.add(u); return u;
   });
   // two unicorns grazing in the meadow
@@ -147,7 +147,7 @@ export function createCreatures(scene, preset) {
   const grazers = [0, 1].map((i) => {
     const u = makeUnicorn(r);
     u.position.set(meadow.x + (i ? 8 : -6), 0, meadow.z + (i ? -4 : 6));
-    u.position.y = (groundAt(u.position.x, u.position.z) ?? meadow.y) + 1.9;
+    u.position.y = (groundAt(u.position.x, u.position.z, meadow.y) ?? meadow.y) + 1.9;
     u.rotation.y = i ? 2.2 : -0.6;
     u.userData.wings.forEach((w, k) => { w.rotation.z = (k ? -1 : 1) * -0.9; });
     group.add(u); return u;
@@ -157,14 +157,15 @@ export function createCreatures(scene, preset) {
   group.add(dragon);
 
   const deer = [];
-  const deerHomes = ISLANDS.filter((i) => i.id !== 'star' && i.id !== 'aurora');
+  // deer wander the sky meadows and a few clearings on the land
+  const deerHomes = [...ISLANDS.filter((i) => !i.main && i.id !== 'star' && i.id !== 'aurora'), ...[0, 3, 5].map((k) => ({ ...MAIN_ZONES[k], y: 0 }))];
   for (let i = 0; i < 6; i++) {
     const d = makeDeer(r);
     const home = deerHomes[i % deerHomes.length];
     d.userData.home = home;
     d.position.set(home.x + (r() - 0.5) * home.r, home.y, home.z + (r() - 0.5) * home.r);
-    if (!isClearOfBuildings(d.position.x, d.position.z)) d.position.set(home.x + home.r * 0.6, home.y, home.z);
-    d.position.y = groundAt(d.position.x, d.position.z) ?? home.y;
+    for (let k = 0; k < 20 && !isClearOfBuildings(d.position.x, d.position.z, 0, home.y); k++) d.position.set(home.x + (r() - 0.5) * home.r, home.y, home.z + (r() - 0.5) * home.r);
+    d.position.y = groundAt(d.position.x, d.position.z, home.y) ?? home.y;
     group.add(d); deer.push(d);
   }
 
@@ -200,7 +201,9 @@ export function createCreatures(scene, preset) {
 
   return {
     unicorns, dragon,
-    update(t, dt) {
+    update(t, dt, camera) {
+      // creatures far from the camera are too small to see; skip drawing them
+      if (camera) for (const c of group.children) if (c !== birds) c.visible = c.position.distanceToSquared(camera.position) < 520 * 520;
       for (const u of unicorns) {
         const o = u.userData.orbit, a = t * o.speed + o.off;
         u.position.set(o.cx + Math.cos(a) * o.R, o.y + Math.sin(t * 0.8 + o.off) * 3, o.cz + Math.sin(a) * o.R);
@@ -232,7 +235,7 @@ export function createCreatures(scene, preset) {
           for (let k = 0; k < 8; k++) {
             const a = Math.random() * Math.PI * 2, rr = Math.random() * (h.r - 6);
             const x = h.x + Math.cos(a) * rr, z = h.z + Math.sin(a) * rr;
-            if (isClearOfBuildings(x, z, 2)) { u.target.set(x, h.y, z); break; }
+            if (isClearOfBuildings(x, z, 2, h.y)) { u.target.set(x, h.y, z); break; }
           }
           u.wait = 2 + Math.random() * 5;
           continue;
@@ -241,7 +244,7 @@ export function createCreatures(scene, preset) {
         const step = Math.min(v.length(), u.speed * dt);
         v.normalize();
         d.position.addScaledVector(v, step);
-        d.position.y = groundAt(d.position.x, d.position.z) ?? d.position.y;
+        d.position.y = groundAt(d.position.x, d.position.z, u.home.y) ?? d.position.y;
         d.rotation.y = Math.atan2(v.x, v.z);
         u.legs.forEach((l, k) => { l.rotation.x = Math.sin(t * 8 + k * Math.PI * 0.5) * 0.4; });
       }

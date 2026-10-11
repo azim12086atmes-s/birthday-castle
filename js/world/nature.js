@@ -5,16 +5,17 @@ import * as THREE from 'three';
 import { mergeGeometries } from 'three/addons/utils/BufferGeometryUtils.js';
 import { toon, additive, nightGrade } from './materials.js';
 import { trunkTexture, glowTexture, leafTexture, leafClumpTexture, flowerTexture, rng } from './textures.js';
-import { ISLANDS, isClearOfBuildings, addCollider, groundAt, islandAt, terrainHeight, groundHSL } from './layout.js';
+import { ISLANDS, isClearOfBuildings, addCollider, groundAt, islandAt, terrainHeight, groundHSL, randomOnIsland, MAIN_SHARE_R } from './layout.js';
 import { MOOD } from './sky.js';
 
 const BLOBS = [[0, 0, 0, 1], [0.9, -0.35, 0.3, 0.72], [-0.8, -0.3, -0.4, 0.75], [0.2, 0.55, -0.5, 0.65], [-0.3, -0.25, 0.9, 0.6],
     [0.55, 0.3, 0.6, 0.55], [-0.6, 0.35, 0.3, 0.55], [0.1, -0.55, -0.85, 0.55], [0.7, 0.1, -0.7, 0.5]];
 
-function canopyGeometry(r) {
+// detail 0 is the light Low-quality crown (a fifth of the triangles)
+export function canopyGeometry(r, detail = 1) {
   const parts = [];
   for (const [x, y, z, s] of BLOBS) {
-    const g = new THREE.IcosahedronGeometry(s, 1);
+    const g = new THREE.IcosahedronGeometry(s, detail);
     const p = g.attributes.position;
     const seed = r() * 10;
     // displacement is a function of position, so neighbouring triangles stay stitched together
@@ -42,7 +43,7 @@ function canopyGeometry(r) {
 // Leaf-card shell (reference T1): clumps of painted leaves scattered over the
 // blobs, each card lit with the canopy's spherical normal so the whole crown
 // shades as one soft volume while its edge breaks up into real leaves.
-function leafCardGeometry(r, count) {
+export function leafCardGeometry(r, count) {
   const pos = [], nor = [], uv = [], idx = [];
   const n = new THREE.Vector3(), u = new THREE.Vector3(), v = new THREE.Vector3(), c = new THREE.Vector3(), sn = new THREE.Vector3();
   const total = BLOBS.reduce((a, b) => a + b[3] * b[3], 0);
@@ -77,7 +78,7 @@ function leafCardGeometry(r, count) {
 // Height-mask tint (reference F2): crowns lighter and warmer on top, cooler
 // and darker underneath. The inner blob is the dark core, the leaf cards the
 // bright rim (reference T2), and leaves glow when backlit (T3).
-function canopyMaterial(core) {
+export function canopyMaterial(core) {
   const m = new THREE.MeshLambertMaterial({
     color: '#ffffff', map: core ? leafTexture() : leafClumpTexture(), emissive: '#10283a', emissiveIntensity: 0.8,
     ...(core ? {} : { alphaTest: 0.45, side: THREE.DoubleSide }),
@@ -102,19 +103,21 @@ function canopyMaterial(core) {
 }
 
 function scatter(count, r, minEdge = 4, margin = 0) {
-  const total = ISLANDS.reduce((s, i) => s + i.r * i.r, 0);
+  const share = (i) => (i.main ? MAIN_SHARE_R : i.r) ** 2;
+  const total = ISLANDS.reduce((s, i) => s + share(i), 0);
   const pts = [];
   for (const isl of ISLANDS) {
-    const n = Math.round((count * isl.r * isl.r) / total);
+    const n = Math.round((count * share(isl)) / total);
     let tries = 0, made = 0;
     while (made < n && tries++ < n * 20) {
-      const a = r() * Math.PI * 2, d = Math.sqrt(r()) * (isl.r - minEdge);
-      const x = isl.x + Math.cos(a) * d, z = isl.z + Math.sin(a) * d;
-      if (!isClearOfBuildings(x, z, margin)) continue;
+      const [x, z] = randomOnIsland(isl, r, minEdge);
+      if (!isClearOfBuildings(x, z, margin, isl.y)) continue;
       if (isl.id === 'lake' && Math.hypot(x - (isl.x + 26), z - (isl.z - 10)) < 8) continue;
       if (isl.id === 'aurora' && Math.hypot(x - isl.x, z - isl.z) < 9) continue;
       if (pts.some((p) => margin > 0 && Math.hypot(p.x - x, p.z - z) < margin)) continue;
-      pts.push({ x, z, y: groundAt(x, z) ?? isl.y, isl });
+      const y = groundAt(x, z, isl.y);
+      if (y == null) continue;
+      pts.push({ x, z, y, isl });
       made++;
     }
   }
@@ -133,7 +136,7 @@ export function createNature(scene, preset) {
   trunkGeo.translate(0, 0.5, 0);
   const tTex = trunkTexture(); tTex.repeat.set(1, 2);
   const trunks = new THREE.InstancedMesh(trunkGeo, toon('#ffffff', { map: tTex, emissive: '#ffffff', emissiveMap: tTex, emissiveIntensity: 0.9 }), spots.length);
-  const canopyGeo = canopyGeometry(r);
+  const canopyGeo = canopyGeometry(r, preset.grass < 4000 ? 0 : 1);
   const cardGeo = leafCardGeometry(r, preset.leafCards ?? 60);
   const coreMat = canopyMaterial(true), cardMat = canopyMaterial(false);
   const canopy = new THREE.InstancedMesh(canopyGeo, coreMat, spots.length);
@@ -187,8 +190,8 @@ export function createNature(scene, preset) {
     for (let j = 0; j < k; j++) {
       const a = r() * 6.28, d = Math.sqrt(r()) * 2.6;
       const x = c.x + Math.cos(a) * d, z = c.z + Math.sin(a) * d;
-      if (!isClearOfBuildings(x, z)) continue;
-      const y = groundAt(x, z);
+      if (!isClearOfBuildings(x, z, 0, c.y)) continue;
+      const y = groundAt(x, z, c.y);
       if (y == null) continue;
       fl.push({ x, y, z, col });
     }
@@ -212,7 +215,7 @@ export function createNature(scene, preset) {
   const base = new THREE.Color(), tip = new THREE.Color();
   let bi = 0;
   gspots.forEach((s) => {
-    const isl = islandAt(s.x, s.z) || s.isl;
+    const isl = islandAt(s.x, s.z, s.y) || s.isl;
     const hsl = groundHSL(isl, s.x, s.z, terrainHeight(isl, s.x, s.z));
     for (let k = 0; k < blades; k++, bi++) {
       const ox = s.x + (r() - 0.5) * 0.7, oz = s.z + (r() - 0.5) * 0.7;
@@ -274,19 +277,19 @@ export function giantTrees(scene, spots, preset) {
   const tTex = trunkTexture(); 
   const trunks = new THREE.InstancedMesh(trunkGeo, toon('#ffffff', { map: tTex, emissive: '#ffffff', emissiveMap: tTex, emissiveIntensity: 0.4 }), spots.length);
   const coreMat = canopyMaterial(true), cardMat = canopyMaterial(false);
-  const crowns = new THREE.InstancedMesh(canopyGeometry(r), coreMat, spots.length);
+  const crowns = new THREE.InstancedMesh(canopyGeometry(r, preset.grass < 4000 ? 0 : 1), coreMat, spots.length);
   const cards = new THREE.InstancedMesh(leafCardGeometry(r, (preset.leafCards ?? 60) + 24), cardMat, spots.length);
   const greens = [[0.31, 0.62, 0.36], [0.28, 0.66, 0.4], [0.34, 0.55, 0.34], [0.94, 0.6, 0.74]];
   spots.forEach((s, i) => {
-    const h = 13 + r() * 5, sc = 7 + r() * 2.5;
-    dummy.position.set(s.x, s.y, s.z); dummy.rotation.set(0, r() * 6.28, 0); dummy.scale.set(2.4, h, 2.4);
+    const h = s.h ?? 13 + r() * 5, sc = s.sc ?? 7 + r() * 2.5, w = s.w ?? 2.4;
+    dummy.position.set(s.x, s.y, s.z); dummy.rotation.set(0, r() * 6.28, 0); dummy.scale.set(w, h, w);
     dummy.updateMatrix(); trunks.setMatrixAt(i, dummy.matrix);
     dummy.position.y = s.y + h + sc * 0.2; dummy.scale.setScalar(sc);
     dummy.updateMatrix(); crowns.setMatrixAt(i, dummy.matrix); cards.setMatrixAt(i, dummy.matrix);
     const p = greens[s.pink ? 3 : Math.floor(r() * 3)];
     color.setHSL(p[0], p[1], p[2] + (r() - 0.5) * 0.05);
     crowns.setColorAt(i, color); cards.setColorAt(i, color);
-    addCollider({ x: s.x, z: s.z, r: 1.6, y0: s.y, y1: s.y + h });
+    addCollider({ x: s.x, z: s.z, r: w * 0.67, y0: s.y, y1: s.y + h });
   });
   trunks.castShadow = crowns.castShadow = true;
   group.add(trunks, crowns, cards);

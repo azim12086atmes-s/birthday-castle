@@ -6,7 +6,7 @@ import * as THREE from 'three';
 import { mergeGeometries } from 'three/addons/utils/BufferGeometryUtils.js';
 import { additive, glowBasic, nightGrade } from './materials.js';
 import { leafTexture, flowerTexture, glowTexture, rng } from './textures.js';
-import { SPAWN, TERRACES, addCollider, groundAt } from './layout.js';
+import { TERRACES, STAIR, TREE_WAY, WAY_LINE, CRAG, addCollider, groundAt } from './layout.js';
 import { MOOD } from './sky.js';
 
 function box(w, h, d, x, y, z) {
@@ -20,12 +20,12 @@ export function createGarden(scene, preset) {
   const group = new THREE.Group();
   const hedges = [], gravel = [], beds = [], cypress = [], basins = [];
   const flowers = [];
-  const gy = (x, z) => groundAt(x, z) ?? 0;
+  const gy = (x, z) => groundAt(x, z, CRAG.y) ?? 0;
 
   // --- two parterres, mirrored either side of the gate walkway ---
   // they sit on the first marble terrace, either side of the grand stairs
   const TY = TERRACES[0].y;
-  const z0 = TERRACES[1].front + 2, z1 = TERRACES[0].front - 2, xin = 12, xout = 54, hh = 0.85, ht = 0.7;
+  const z0 = TERRACES[1].front + 2, z1 = TERRACES[0].front - 2, xin = STAIR.hw + 6, xout = STAIR.hw + 70, hh = 1.1, ht = 0.9;
   for (const s of [-1, 1]) {
     const xa = s * xin, xb = s * xout, cx = (xa + xb) / 2, cz = (z0 + z1) / 2;
     const w = Math.abs(xb - xa), d = z1 - z0;
@@ -49,22 +49,21 @@ export function createGarden(scene, preset) {
         hedges.push(box(fw, 0.45, fd, fx, 0.22, fz));
       }
       const col = bedCols[q++ % bedCols.length];
-      const n = Math.round((preset.flowers / 900) * 46) + 10;
+      const n = Math.round((preset.flowers / 900) * 140) + 30;
       for (let i = 0; i < n; i++) flowers.push({ x: ex + (r() - 0.5) * (bw - 0.6), z: ez + (r() - 0.5) * (bd - 0.6), col });
     }
     // eight-sided basin in the middle
-    const basin = new THREE.CylinderGeometry(1.9, 2.1, 0.6, 8); basin.translate(cx, 0.3, cz);
+    const basin = new THREE.CylinderGeometry(3.8, 4.2, 0.6, 8); basin.translate(cx, 0.3, cz);
     basins.push(basin);
-    addCollider({ x: cx, z: cz, r: 2, y0: TY, y1: TY + 1 });
+    addCollider({ x: cx, z: cz, r: 4, y0: TY, y1: TY + 1 });
     // cypresses at the four corners
     for (const [px, pz] of [[xa, z0], [xb, z0], [xa, z1], [xb, z1]]) {
       // flame-shaped clipped cypress, smooth so it reads as one soft column
-      const tall = 7 + r() * 1.5;
-      const c = new THREE.LatheGeometry([[0, 0], [0.9, 0.4], [1.25, 1.8], [1.2, 3.6], [0.85, 5.4], [0.35, 6.6], [0, 7]].map(([x, y]) => new THREE.Vector2(x, y * tall / 7)), 12);
-      c.translate(0, -3.8, 0);
-      c.translate(px + s * 0.3, 3.8, pz);
+      const tall = 13 + r() * 3;
+      const c = new THREE.LatheGeometry([[0, 0], [0.9, 0.4], [1.25, 1.8], [1.2, 3.6], [0.85, 5.4], [0.35, 6.6], [0, 7]].map(([x, y]) => new THREE.Vector2(x * 1.6, y * tall / 7)), 12);
+      c.translate(px + s * 0.3, 0, pz);
       cypress.push(c);
-      addCollider({ x: px, z: pz, r: 1, y0: TY, y1: TY + 8 });
+      addCollider({ x: px, z: pz, r: 1.8, y0: TY, y1: TY + 14 });
     }
   }
 
@@ -81,7 +80,7 @@ export function createGarden(scene, preset) {
   parterres.add(H, G, B, C, S);
   // glowing water in each basin
   for (const s of [-1, 1]) {
-    const w = new THREE.Mesh(new THREE.CircleGeometry(1.7, 8), additive('#5fd6ff', { map: glowTexture(), opacity: 0.7 }));
+    const w = new THREE.Mesh(new THREE.CircleGeometry(3.5, 8), additive('#5fd6ff', { map: glowTexture(), opacity: 0.7 }));
     w.rotation.x = -Math.PI / 2; w.position.set(s * (xin + xout) / 2, 0.62, (z0 + z1) / 2);
     parterres.add(w);
   }
@@ -97,10 +96,15 @@ export function createGarden(scene, preset) {
   });
   parterres.add(fm);
 
-  // --- lanterns along the walkway (gate approach and the arrival path) ---
+  // --- lanterns along the walkway on the terrace and up the Giant-Tree Way ---
   const spots = [];
-  for (let z = z0; z <= z1; z += 3.5) spots.push([-9.5, z], [9.5, z]);
-  for (let z = 86; z <= SPAWN.z + 10; z += 7) if (Math.abs(z - (SPAWN.z - 12)) > 3) spots.push([-6, z], [6, z]);
+  for (let z = z0; z <= z1; z += 7) spots.push([-(STAIR.hw + 2), z], [STAIR.hw + 2, z]);
+  const WS = WAY_LINE.samples;
+  for (let k = 0; k < WS.length - 1; k += 9) {
+    const a = WS[k], b = WS[k + 1], l = Math.hypot(b.x - a.x, b.z - a.z) || 1, px = -(b.z - a.z) / l, pz = (b.x - a.x) / l;
+    const sd = (k / 9) % 2 ? 1 : -1, o = TREE_WAY.hw + 1.6;
+    spots.push([a.x + px * sd * o, a.z + pz * sd * o]);
+  }
   const posts = [], caps = [];
   const ys = spots.map(([x, z]) => gy(x, z));
   for (const [i, [x, z]] of spots.entries()) {

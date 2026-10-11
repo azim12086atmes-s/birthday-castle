@@ -4,7 +4,9 @@ import * as THREE from 'three';
 import { mergeGeometries } from 'three/addons/utils/BufferGeometryUtils.js';
 import { toon, glowBasic, additive, nightGrade } from './materials.js';
 import { grassTexture, rockTexture, flagstoneTexture, rosetteTexture, friezeTexture, glowTexture, textTexture, rng } from './textures.js';
-import { ISLANDS, PORTALS, RETURNS, PLAZA, LAKE, LAKE_POND, SPAWN, addCollider, groundAt, terrainHeight, groundHSL } from './layout.js';
+import { ISLANDS, PORTALS, RETURNS, PLAZA, LAKE_POND, SPAWN, BRIDGE, MAIN, addCollider, groundAt, terrainHeight, groundHSL } from './layout.js';
+
+const SKYI = ISLANDS.filter((i) => !i.main);
 import { archFrameGeometry, pointedArchPath } from './castle.js';
 import { MOOD } from './sky.js';
 
@@ -20,9 +22,7 @@ function terrainGeometry(isl) {
     for (let j = 0; j < n; j++) {
       const a = (j / segs) * Math.PI * 2;
       const x = isl.x + Math.cos(a) * rr, z = isl.z + Math.sin(a) * rr;
-      let h = terrainHeight(isl, x, z);
-      // the long lake's bed sits below the water
-      if (isl.main && Math.abs(x) < LAKE.hw - 0.5 && z > LAKE.z0 + 0.5 && z < LAKE.z1 - 0.5) h = -1.6;
+      const h = terrainHeight(isl, x, z);
       pos.push(x, isl.y + h, z);
       uv.push(x / 6, z / 6);
       c.setHSL(...groundHSL(isl, x, z, h));
@@ -46,8 +46,44 @@ function terrainGeometry(isl) {
   return g;
 }
 
-function islandBody(isl, r) {
+// The main land: a square grid whose cells are small round the crag and the
+// lake (where people walk) and grow towards the mountain rim.
+function landGeometry(N) {
+  const cx = -250, cz = 300, E = MAIN.r;
+  const warp = (u, c) => { const t = Math.abs(u), f = 0.4 * t + 0.6 * t * t * t; return c + Math.sign(u) * f * (u < 0 ? c + E : E - c); };
+  const pos = [], col = [], uv = [], idx = [];
+  const c = new THREE.Color();
+  for (let j = 0; j <= N; j++) for (let i = 0; i <= N; i++) {
+    const x = warp((i / N) * 2 - 1, cx), z = warp((j / N) * 2 - 1, cz);
+    const h = terrainHeight(MAIN, x, z);
+    pos.push(x, h, z);
+    uv.push(x / 4, z / 4);
+    c.setHSL(...groundHSL(MAIN, x, z, h));
+    col.push(c.r, c.g, c.b);
+  }
+  for (let j = 0; j < N; j++) for (let i = 0; i < N; i++) {
+    const a = j * (N + 1) + i, b = a + 1, d = a + N + 1, e = d + 1;
+    idx.push(a, d, b, b, d, e);
+  }
+  const g = new THREE.BufferGeometry();
+  g.setAttribute('position', new THREE.Float32BufferAttribute(pos, 3));
+  g.setAttribute('color', new THREE.Float32BufferAttribute(col, 3));
+  g.setAttribute('uv', new THREE.Float32BufferAttribute(uv, 2));
+  g.setIndex(idx);
+  g.computeVertexNormals();
+  return g;
+}
+
+function islandBody(isl, r, preset) {
   const group = new THREE.Group();
+  if (isl.main) {
+    const grass = grassTexture().clone(); grass.needsUpdate = true;
+    const N = preset.grass < 4000 ? 150 : preset.grass < 8000 ? 190 : 230;
+    const land = new THREE.Mesh(landGeometry(N), nightGrade(new THREE.MeshLambertMaterial({ map: grass, vertexColors: true, emissive: '#10283a', emissiveIntensity: 0.5 }), 'terrain'));
+    land.receiveShadow = true;
+    group.add(land);
+    return group;
+  }
   const grass = grassTexture().clone(); grass.needsUpdate = true;
   grass.repeat.set(isl.r / 6, isl.r / 6);
   const top = new THREE.Mesh(terrainGeometry(isl), nightGrade(new THREE.MeshLambertMaterial({ map: grass, vertexColors: true, emissive: '#10283a', emissiveIntensity: 0.5 }), 'terrain'));
@@ -156,7 +192,7 @@ function portal(x, y, z, angle, color, text) {
 
 function fountain(group) {
   const g = new THREE.Group();
-  g.position.set(PLAZA.x, 0, PLAZA.z);
+  g.position.set(PLAZA.x, PLAZA.y, PLAZA.z);
   const stone = toon('#efe9ff', { emissive: '#2a2050' });
   const b1 = new THREE.Mesh(new THREE.CylinderGeometry(6, 6.4, 1.2, 32), stone); b1.position.y = 0.6;
   const water = new THREE.Mesh(new THREE.CircleGeometry(5.5, 32), additive('#5fd6ff', { opacity: 0.55, map: glowTexture() }));
@@ -175,9 +211,9 @@ function fountain(group) {
   return orb;
 }
 
-function archGate(group, x, z, w = 8, h = 10) {
+function archGate(group, x, z, w = 8, h = 10, a = 0, y = 0) {
   const g = new THREE.Group();
-  g.position.set(x, 0, z);
+  g.position.set(x, y, z); g.rotation.y = a;
   const frame = new THREE.Mesh(archFrameGeometry(w, h, 1.4, 1.6), toon('#f4efff', { emissive: '#2a2050', emissiveIntensity: 0.7 }));
   const trim = new THREE.Mesh(new THREE.TubeGeometry(pointedArchPath(w + 0.2, h + 0.1), 64, 0.16, 6, false), glowBasic('#ffd47a'));
   trim.position.z = 0.85;
@@ -187,8 +223,7 @@ function archGate(group, x, z, w = 8, h = 10) {
   veil.position.y = h / 2;
   g.add(frame, trim, trim2, veil);
   group.add(g);
-  addCollider({ x: x - w / 2 - 0.7, z, r: 1.2 });
-  addCollider({ x: x + w / 2 + 0.7, z, r: 1.2 });
+  for (const s of [-1, 1]) addCollider({ x: x + s * Math.cos(a) * (w / 2 + 0.7), z: z - s * Math.sin(a) * (w / 2 + 0.7), r: 1.2 });
   return g;
 }
 
@@ -307,10 +342,10 @@ function islandExtras(group, r, preset) {
   const rockGeo = new THREE.DodecahedronGeometry(1, 0);
   const rockMat = new THREE.MeshLambertMaterial({ color: '#a592c8', emissive: '#1a1440', emissiveIntensity: 0.7 });
   const perIsland = preset.particles > 1000 ? 14 : 8;
-  const ring = new THREE.InstancedMesh(rockGeo, rockMat, ISLANDS.length * perIsland);
+  const ring = new THREE.InstancedMesh(rockGeo, rockMat, SKYI.length * perIsland);
   const orbit = [];
   let k = 0;
-  for (const isl of ISLANDS) {
+  for (const isl of SKYI) {
     for (let i = 0; i < perIsland; i++, k++) {
       orbit.push({ isl, a: r() * Math.PI * 2, d: isl.r * (1.15 + r() * 0.35), y: isl.y - 4 - r() * isl.r * 0.35, s: 0.8 + r() * (isl.main ? 3.2 : 2), sp: (0.02 + r() * 0.03) * (r() < 0.5 ? 1 : -1), bob: r() * 6.28 });
     }
@@ -337,7 +372,7 @@ function islandExtras(group, r, preset) {
     `,
   });
   const falls = [];
-  for (const isl of ISLANDS) {
+  for (const isl of SKYI) {
     const a = isl.main ? -2.2 : Math.atan2(-isl.z, -isl.x) + Math.PI * 0.6;
     const w = isl.main ? 9 : 5, drop = isl.main ? 70 : 40;
     const g = new THREE.PlaneGeometry(w, drop, 1, 12);
@@ -356,7 +391,7 @@ function islandExtras(group, r, preset) {
   // beacon pillars, one colour per island
   const beaconGeo = new THREE.CylinderGeometry(1.6, 2.4, 160, 12, 1, true); beaconGeo.translate(0, 80, 0);
   const beaconMats = [];
-  for (const isl of ISLANDS) {
+  for (const isl of SKYI) {
     if (isl.main) continue;
     const mat = new THREE.ShaderMaterial({
       transparent: true, depthWrite: false, blending: THREE.AdditiveBlending, side: THREE.DoubleSide,
@@ -404,11 +439,11 @@ function armillarySphere(group, orb) {
     return m;
   });
   rings[1].rotation.x = Math.PI / 2;
-  g.position.set(PLAZA.x, orb.position.y, PLAZA.z);
+  g.position.set(PLAZA.x, PLAZA.y + orb.position.y, PLAZA.z);
   group.add(g);
   return {
     update(t, y) {
-      g.position.set(PLAZA.x, y, PLAZA.z);
+      g.position.set(PLAZA.x, PLAZA.y + y, PLAZA.z);
       rings[0].rotation.y = t * 0.3;
       rings[1].rotation.z = t * 0.22;
       rings[2].rotation.set(t * 0.17, 0, Math.PI / 4);
@@ -419,26 +454,29 @@ function armillarySphere(group, orb) {
 export function createIslands(scene, preset) {
   const group = new THREE.Group();
   const r = rng(42);
-  for (const isl of ISLANDS) group.add(islandBody(isl, r));
+  for (const isl of ISLANDS) group.add(islandBody(isl, r, preset));
   const islandLife = islandExtras(group, r, preset);
 
   // plaza of warm pale flagstones with an eight-fold star inlay round the fountain
   const flag = flagstoneTexture(); flag.repeat.set(PLAZA.r / 5, PLAZA.r / 5);
   const plaza = new THREE.Mesh(new THREE.CircleGeometry(PLAZA.r, 64), new THREE.MeshLambertMaterial({ map: flag, emissive: '#2a2050', emissiveIntensity: 0.35 }));
-  plaza.rotation.x = -Math.PI / 2; plaza.position.set(PLAZA.x, 0.03, PLAZA.z);
+  plaza.rotation.x = -Math.PI / 2; plaza.position.set(PLAZA.x, PLAZA.y + 0.03, PLAZA.z);
   plaza.receiveShadow = true;
   const inlay = new THREE.Mesh(new THREE.CircleGeometry(12, 64), new THREE.MeshLambertMaterial({ map: rosetteTexture(), emissive: '#2a2050', emissiveIntensity: 0.35, polygonOffset: true, polygonOffsetFactor: -1 }));
-  inlay.rotation.x = -Math.PI / 2; inlay.position.set(PLAZA.x, 0.05, PLAZA.z);
+  inlay.rotation.x = -Math.PI / 2; inlay.position.set(PLAZA.x, PLAZA.y + 0.05, PLAZA.z);
   inlay.receiveShadow = true;
   group.add(inlay);
   const plazaRing = new THREE.Mesh(new THREE.RingGeometry(PLAZA.r - 0.4, PLAZA.r, 96), additive('#ffd47a', { opacity: 0.8 }));
-  plazaRing.rotation.x = -Math.PI / 2; plazaRing.position.set(PLAZA.x, 0.05, PLAZA.z);
+  plazaRing.rotation.x = -Math.PI / 2; plazaRing.position.set(PLAZA.x, PLAZA.y + 0.05, PLAZA.z);
   group.add(plaza, plazaRing);
   const fountainOrb = fountain(group);
   const armillary = armillarySphere(group, fountainOrb);
 
-  // the magical arch gate you walk through after arriving
-  archGate(group, SPAWN.x, SPAWN.z - 12, 9, 11);
+  // the magical arch gate at the foot of the long bridge, spanning its deck
+  {
+    const [gx, gz] = BRIDGE.pts[0], [bx, bz] = BRIDGE.pts[1], a = Math.atan2(bx - gx, bz - gz);
+    archGate(group, gx, gz, BRIDGE.hw * 2 + 3, 18, a, groundAt(gx, gz) ?? 0);
+  }
 
   // travel portals and their way back
   const disks = [];
