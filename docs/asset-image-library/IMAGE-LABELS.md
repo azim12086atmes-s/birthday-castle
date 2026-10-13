@@ -835,3 +835,9 @@ R03 uses plain tower circles and source-reviewed garden symbols. See [garden pla
 | SRC-DRESS-GEN-25-A08 | [Silk balloon and lantern basket — original source panel](interior-celebration-dressing/source-panels/GEN-25-A08.png) |
 | SRC-DRESS-GEN-25-A09 | [Floral ceremonial arch — original source panel](interior-celebration-dressing/source-panels/GEN-25-A09.png) |
 | SRC-DRESS-GEN-25-A10 | [Invitation and guest book — original source panel](interior-celebration-dressing/source-panels/GEN-25-A10.png) |
+
+## Generated celebration prop sheet
+
+| ID | Reference |
+| --- | --- |
+| PAL-CELEBRATION-PROP-001 | [Missing palace celebration props](interior-celebration-dressing/PAL-CELEBRATION-PROP-001/PAL-CELEBRATION-PROP-001.png) |

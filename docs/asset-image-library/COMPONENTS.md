@@ -449,3 +449,18 @@ These layer reconstructions were reported inconsistent and retired from placemen
 | GEN-25-A08 | [Silk balloon and lantern basket](interior-celebration-dressing/source-panels/GEN-25-A08.png) |
 | GEN-25-A09 | [Floral ceremonial arch](interior-celebration-dressing/source-panels/GEN-25-A09.png) |
 | GEN-25-A10 | [Invitation and guest book](interior-celebration-dressing/source-panels/GEN-25-A10.png) |
+
+## New celebration prop targets
+
+| ID | Reference |
+| --- | --- |
+| PAL-CELEBRATION-PROP-001-A01 | [Celebration chair](interior-celebration-dressing/PAL-CELEBRATION-PROP-001/PAL-CELEBRATION-PROP-001.png) |
+| PAL-CELEBRATION-PROP-001-A02 | [Rose-lotus teapot](interior-celebration-dressing/PAL-CELEBRATION-PROP-001/PAL-CELEBRATION-PROP-001.png) |
+| PAL-CELEBRATION-PROP-001-A03 | [Teacup and saucer](interior-celebration-dressing/PAL-CELEBRATION-PROP-001/PAL-CELEBRATION-PROP-001.png) |
+| PAL-CELEBRATION-PROP-001-A04 | [Milk jug](interior-celebration-dressing/PAL-CELEBRATION-PROP-001/PAL-CELEBRATION-PROP-001.png) |
+| PAL-CELEBRATION-PROP-001-A05 | [Lidded sugar bowl](interior-celebration-dressing/PAL-CELEBRATION-PROP-001/PAL-CELEBRATION-PROP-001.png) |
+| PAL-CELEBRATION-PROP-001-A06 | [Dessert plate](interior-celebration-dressing/PAL-CELEBRATION-PROP-001/PAL-CELEBRATION-PROP-001.png) |
+| PAL-CELEBRATION-PROP-001-A07 | [Cake server](interior-celebration-dressing/PAL-CELEBRATION-PROP-001/PAL-CELEBRATION-PROP-001.png) |
+| PAL-CELEBRATION-PROP-001-A08 | [Serving tray](interior-celebration-dressing/PAL-CELEBRATION-PROP-001/PAL-CELEBRATION-PROP-001.png) |
+| PAL-CELEBRATION-PROP-001-A09 | [Invitation holder](interior-celebration-dressing/PAL-CELEBRATION-PROP-001/PAL-CELEBRATION-PROP-001.png) |
+| PAL-CELEBRATION-PROP-001-A10 | [Birthday memory display](interior-celebration-dressing/PAL-CELEBRATION-PROP-001/PAL-CELEBRATION-PROP-001.png) |

@@ -54,3 +54,7 @@ Continuous wall/ward host bodies; roof and floor substrates; angled/curved wing 
 ## Audited ballroom missing pieces
 
 [Ten new reference candidates and eight existing extraction/reuse groups](../interior-celebration-dressing/MISSING-PIECES.md). New candidates are a celebration chair, tea/serving/place-setting pieces and an optional memory display. Cushions, candles, tassels, floral swags, mounts and textile motifs are already illustrated; isolate/fit those rather than redesigning them. No new images or selected slots are produced by this audit.
+
+## Celebration props generated
+
+[One ten-item labelled sheet](../interior-celebration-dressing/PAL-CELEBRATION-PROP-001/README.md) now covers the audited chair, tea/serving/place-setting pieces and optional birthday memory display. Source-compatible new shapes remain pending review; backs, mounts and actual fit unverified. Existing decor remains reused. Private furniture pack is deferred to keep65 palace slots; beds/wardrobes remain missing. No models or dressed-room placement view generated.

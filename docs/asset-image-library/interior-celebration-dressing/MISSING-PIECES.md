@@ -1,6 +1,6 @@
 # Missing ballroom celebration pieces
 
-Ten useful reference gaps are identified in the audited dressing sources: **nine core/supporting pieces and one optional memory display**. This is an audit, not a new generated sheet or a claim that all45 original boards have been visually exhausted. The original cake, stands, tables, chaises, curtains, rug, floral arches/swags, festoons, gifts and lanterns already have source art.
+Ten useful reference gaps are identified in the audited dressing sources: **nine core/supporting pieces and one optional memory display**. This audit was followed by [one generated ten-item reference sheet](PAL-CELEBRATION-PROP-001/PAL-CELEBRATION-PROP-001.png). It is not a claim that all45 original boards have been visually exhausted. The original cake, stands, tables, chaises, curtains, rug, floral arches/swags, festoons, gifts and lanterns already have source art.
 
 | New reference candidate | Why it is useful |
 | --- | --- |
@@ -34,4 +34,4 @@ The next new reference sheet can contain the10 candidates together with names/ID
 
 A dressed-room view remains necessary to judge actual celebration density. The gap list alone will not make the room look furnished. Keep pink/ivory marble, cherry/rose textiles, thin gold, blue/lilac accents and existing motifs consistent. All humans/props use their own scale, not the monumental palace multiplier. Bath/kitchen/service/music spaces remain excluded.
 
-No new generation or selected slot is added by this audit. Palace65/global230 limits remain; producing another selected sheet will require reallocation. [Machine-readable source evidence and gap list](missing-pieces.json).
+The owner subsequently authorized the10 candidates. One generated reference sheet replaces an unproduced private-furniture reservation; palace65/global230 limits remain. Private-room furniture stays deferred. No models are generated. [Machine-readable source evidence and gap list](missing-pieces.json).

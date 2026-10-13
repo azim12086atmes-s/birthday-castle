@@ -31,9 +31,11 @@
       "reason": "Ordinary upright guest seating; existing throne, chaise and garden bench do not supply this compact party-chair variant.",
       "priority": "core",
       "design_direction": "Rose upholstery, ivory frame, fine gold; compact source-compatible chair rather than another throne.",
-      "status": "identified-reference-gap; not generated or reserved",
+      "status": "generated-reference-pending-review",
       "scope": "Audited original ballroom/celebration references",
-      "new_model_approval": false
+      "new_model_approval": false,
+      "asset_id": "PAL-CELEBRATION-PROP-001-A01",
+      "reference_file": "PAL-CELEBRATION-PROP-001/PAL-CELEBRATION-PROP-001.png"
     },
     {
       "proposed_part_key": "CELEBRATION-GAP-02",
@@ -41,9 +43,11 @@
       "reason": "Tea-service hero; no dedicated teapot construction reference in audited boards/registry.",
       "priority": "core",
       "design_direction": "Small ivory/rose ceramic body, restrained lotus shaping, gold rim; spout, handle and lid separable.",
-      "status": "identified-reference-gap; not generated or reserved",
+      "status": "generated-reference-pending-review",
       "scope": "Audited original ballroom/celebration references",
-      "new_model_approval": false
+      "new_model_approval": false,
+      "asset_id": "PAL-CELEBRATION-PROP-001-A02",
+      "reference_file": "PAL-CELEBRATION-PROP-001/PAL-CELEBRATION-PROP-001.png"
     },
     {
       "proposed_part_key": "CELEBRATION-GAP-03",
@@ -51,9 +55,11 @@
       "reason": "Human-scale place setting; no dedicated cup/saucer reference.",
       "priority": "core",
       "design_direction": "One coordinated assembly with separate cup and saucer geometry; thin gold and rose/blue motif.",
-      "status": "identified-reference-gap; not generated or reserved",
+      "status": "generated-reference-pending-review",
       "scope": "Audited original ballroom/celebration references",
-      "new_model_approval": false
+      "new_model_approval": false,
+      "asset_id": "PAL-CELEBRATION-PROP-001-A03",
+      "reference_file": "PAL-CELEBRATION-PROP-001/PAL-CELEBRATION-PROP-001.png"
     },
     {
       "proposed_part_key": "CELEBRATION-GAP-04",
@@ -61,9 +67,11 @@
       "reason": "Small pouring vessel for tea-service grouping; source wish bowl is a different object.",
       "priority": "supporting",
       "design_direction": "Match teapot ceramic/glaze vocabulary; readable open lip and handle.",
-      "status": "identified-reference-gap; not generated or reserved",
+      "status": "generated-reference-pending-review",
       "scope": "Audited original ballroom/celebration references",
-      "new_model_approval": false
+      "new_model_approval": false,
+      "asset_id": "PAL-CELEBRATION-PROP-001-A04",
+      "reference_file": "PAL-CELEBRATION-PROP-001/PAL-CELEBRATION-PROP-001.png"
     },
     {
       "proposed_part_key": "CELEBRATION-GAP-05",
@@ -71,9 +79,11 @@
       "reason": "Tea-service table detail; no dedicated sugar-bowl reference.",
       "priority": "supporting",
       "design_direction": "Small low vessel and removable lid; gold rim and modest star/lotus knob.",
-      "status": "identified-reference-gap; not generated or reserved",
+      "status": "generated-reference-pending-review",
       "scope": "Audited original ballroom/celebration references",
-      "new_model_approval": false
+      "new_model_approval": false,
+      "asset_id": "PAL-CELEBRATION-PROP-001-A05",
+      "reference_file": "PAL-CELEBRATION-PROP-001/PAL-CELEBRATION-PROP-001.png"
     },
     {
       "proposed_part_key": "CELEBRATION-GAP-06",
@@ -81,9 +91,11 @@
       "reason": "Birthday-cake place setting; cake stand is not a serving plate.",
       "priority": "core",
       "design_direction": "Shallow human-scale ceramic plate with source rose/star border; distinct from large floor medallion.",
-      "status": "identified-reference-gap; not generated or reserved",
+      "status": "generated-reference-pending-review",
       "scope": "Audited original ballroom/celebration references",
-      "new_model_approval": false
+      "new_model_approval": false,
+      "asset_id": "PAL-CELEBRATION-PROP-001-A06",
+      "reference_file": "PAL-CELEBRATION-PROP-001/PAL-CELEBRATION-PROP-001.png"
     },
     {
       "proposed_part_key": "CELEBRATION-GAP-07",
@@ -91,9 +103,11 @@
       "reason": "Cake-display accessory; no dedicated hand-held server reference.",
       "priority": "supporting",
       "design_direction": "Delicate gold/silver blade and ivory/rose handle; fully readable silhouette.",
-      "status": "identified-reference-gap; not generated or reserved",
+      "status": "generated-reference-pending-review",
       "scope": "Audited original ballroom/celebration references",
-      "new_model_approval": false
+      "new_model_approval": false,
+      "asset_id": "PAL-CELEBRATION-PROP-001-A07",
+      "reference_file": "PAL-CELEBRATION-PROP-001/PAL-CELEBRATION-PROP-001.png"
     },
     {
       "proposed_part_key": "CELEBRATION-GAP-08",
@@ -101,9 +115,11 @@
       "reason": "Grouping cups/place settings; existing cake stand and marble side table do not provide a portable tray.",
       "priority": "supporting",
       "design_direction": "Low-rim ivory/rose/gold tray; optional small handles, no source cake glued onto it.",
-      "status": "identified-reference-gap; not generated or reserved",
+      "status": "generated-reference-pending-review",
       "scope": "Audited original ballroom/celebration references",
-      "new_model_approval": false
+      "new_model_approval": false,
+      "asset_id": "PAL-CELEBRATION-PROP-001-A08",
+      "reference_file": "PAL-CELEBRATION-PROP-001/PAL-CELEBRATION-PROP-001.png"
     },
     {
       "proposed_part_key": "CELEBRATION-GAP-09",
@@ -111,9 +127,11 @@
       "reason": "Support existing invitation artwork upright on tables; guest-book/card art exists but a dedicated holder profile is missing.",
       "priority": "supporting",
       "design_direction": "Small stable gold/ivory holder with removable card slot; reuse GEN-25-A10 invitation art.",
-      "status": "identified-reference-gap; not generated or reserved",
+      "status": "generated-reference-pending-review",
       "scope": "Audited original ballroom/celebration references",
-      "new_model_approval": false
+      "new_model_approval": false,
+      "asset_id": "PAL-CELEBRATION-PROP-001-A09",
+      "reference_file": "PAL-CELEBRATION-PROP-001/PAL-CELEBRATION-PROP-001.png"
     },
     {
       "proposed_part_key": "CELEBRATION-GAP-10",
@@ -121,9 +139,11 @@
       "reason": "Optional framed portrait or birthday-memory insert to make the room personal; mirror is a different function.",
       "priority": "optional",
       "design_direction": "Reuse GEN-24-A03 frame/crest vocabulary when suitable; design a picture insert/backing/stand rather than another ornamental mirror.",
-      "status": "identified-reference-gap; not generated or reserved",
+      "status": "generated-reference-pending-review",
       "scope": "Audited original ballroom/celebration references",
-      "new_model_approval": false
+      "new_model_approval": false,
+      "asset_id": "PAL-CELEBRATION-PROP-001-A10",
+      "reference_file": "PAL-CELEBRATION-PROP-001/PAL-CELEBRATION-PROP-001.png"
     }
   ],
   "existing_parts_needing_isolation_or_fit": [
@@ -220,13 +240,15 @@
   "reuse_groups": 8,
   "generation_proposal": {
     "sheet_id_candidate": "PAL-CELEBRATION-PROP-001",
-    "status": "not generated, not reserved; gap list only",
+    "status": "generated-pending-user-reference-review",
     "component_count": 10,
     "layout": "One labelled sheet; independent illustration scales. Chair larger cell, nine small tabletop/display objects readable and separated.",
     "palette": "rose/cherry upholstery and ceramic accents, ivory/cream surfaces, fine gold, restrained blue/lilac motif accents",
-    "budget": "Do not add an eleventh palace sheet slot beyond cap65. Reallocate an unproduced/superseded reservation when this sheet is scheduled. Global230 target unchanged."
+    "budget": "Do not add an eleventh palace sheet slot beyond cap65. Reallocate an unproduced/superseded reservation when this sheet is scheduled. Global230 target unchanged.",
+    "sheet_id": "PAL-CELEBRATION-PROP-001",
+    "file": "PAL-CELEBRATION-PROP-001/PAL-CELEBRATION-PROP-001.png"
   },
-  "new_generated_images": 0,
+  "new_generated_images": 1,
   "new_models": 0,
   "placement_verified": false,
   "excluded": [
@@ -234,5 +256,13 @@
     "kitchens/bakeries",
     "service rooms",
     "music spaces"
-  ]
+  ],
+  "production_result": {
+    "new_reference_sheets": 1,
+    "new_component_targets": 10,
+    "model_count": 0,
+    "private_furniture_reservation_deferred": "PAL-INT-PROP-001",
+    "palace_slots": 65,
+    "global_selected_or_reserved": 85
+  }
 }

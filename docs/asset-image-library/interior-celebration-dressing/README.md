@@ -1,5 +1,7 @@
 # Palace celebration dressing: reuse existing designs
 
+Current: [PAL-CELEBRATION-PROP-001 ten new missing props](PAL-CELEBRATION-PROP-001/README.md), labelled and indexed; source-compatible proposals, no3D models.
+
 The rooms need furnishings, textiles and celebration arrangements in addition to their architecture. Original boards already contain much of this detail. **Nine existing designs are now individually indexed; no new illustrations or selected sheet slots are consumed.**
 
 [Browse one source panel at a time](index.html) · [Stable model IDs](components.csv) · [Proposed dressing recipe](index.json)

@@ -174,10 +174,10 @@
       "model_status": "unregistered"
     }
   ],
-  "new_images_generated": 0,
-  "new_selected_sheet_slots": 0,
+  "new_images_generated": 1,
+  "new_selected_sheet_slots": 1,
   "newly_indexed_existing_designs": 9,
-  "selected_saved_sheets": 81,
+  "selected_saved_sheets": 82,
   "selected_or_reserved": 85,
   "final_image_target": 230,
   "excluded_rooms": [
@@ -232,7 +232,7 @@
   ],
   "circulation_rule": "Keep central floor star readable, south arrival and north paired stairs clear, and continuous perimeter/gallery routes. This is a proposed dressing recipe, not a verified placement layout.",
   "candidate_missing_pack": {
-    "status": "audited gap list; not generated/reserved",
+    "status": "generated-pending-user-reference-review",
     "audit_file": "missing-pieces.json",
     "suggested_sheet_count": 1,
     "max_items": 10,
@@ -249,9 +249,26 @@
       "Birthday memory display"
     ],
     "rule": "Existing cushions/candles/fittings/garlands/vessels are isolation/fit jobs, not new masters. Optional memory display can be omitted.",
-    "budget_rule": "Do not add an eleventh palace sheet slot beyond cap65. Reallocate an unproduced/superseded reservation when this sheet is scheduled. Global230 target unchanged."
+    "budget_rule": "Do not add an eleventh palace sheet slot beyond cap65. Reallocate an unproduced/superseded reservation when this sheet is scheduled. Global230 target unchanged.",
+    "sheet_id": "PAL-CELEBRATION-PROP-001",
+    "reference_file": "PAL-CELEBRATION-PROP-001/PAL-CELEBRATION-PROP-001.png",
+    "component_ids": [
+      "PAL-CELEBRATION-PROP-001-A01",
+      "PAL-CELEBRATION-PROP-001-A02",
+      "PAL-CELEBRATION-PROP-001-A03",
+      "PAL-CELEBRATION-PROP-001-A04",
+      "PAL-CELEBRATION-PROP-001-A05",
+      "PAL-CELEBRATION-PROP-001-A06",
+      "PAL-CELEBRATION-PROP-001-A07",
+      "PAL-CELEBRATION-PROP-001-A08",
+      "PAL-CELEBRATION-PROP-001-A09",
+      "PAL-CELEBRATION-PROP-001-A10"
+    ]
   },
   "next_visual_review": "A dressed ballroom view using existing designs; preserve its stairs/windows/vault while showing celebration props. Not generated in this source audit.",
   "model_placement_verified": false,
-  "new_models": 0
+  "new_models": 0,
+  "generated_reference_sheets": [
+    "PAL-CELEBRATION-PROP-001"
+  ]
 }

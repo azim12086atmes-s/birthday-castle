@@ -39,7 +39,7 @@
       "category_id": "PAL-NEED-04",
       "name": "Dining and tea salons",
       "asset_examples": "Dining tables, chairs, tea sets, dishes and serving cabinets",
-      "current_status": "missing dedicated kit",
+      "current_status": "Tea/serving props referenced in PAL-CELEBRATION-PROP-001; celebration chair referenced; dedicated dining table/full-room kit still missing",
       "existing_reference_basis": "GEN-24 side table only",
       "optional_magical_idea": "Teacups, blossom place settings and an intimate tea pavilion",
       "design_or_model_approval": "not inferred",
@@ -96,7 +96,7 @@
       "category_id": "PAL-NEED-09",
       "name": "Portrait and memory galleries",
       "asset_examples": "Frames, display plinths, picture lights, albums and keepsake cabinets",
-      "current_status": "new optional experience/supporting-prop kit",
+      "current_status": "Small optional birthday-memory display reference in PAL-CELEBRATION-PROP-001; whole gallery kit/placement remains incomplete",
       "existing_reference_basis": "GEN-24 mirror/console partly reusable",
       "optional_magical_idea": "A gallery of illustrated memories revealed through light",
       "design_or_model_approval": "not inferred",
@@ -268,7 +268,9 @@
     "new_design_candidates": 10,
     "optional_candidates": 1,
     "existing_isolation_or_fit_groups": 8,
-    "new_images_generated": 0,
-    "new_slots_reserved": 0
+    "new_images_generated": 1,
+    "new_slots_reserved": 1,
+    "status": "generated-reference-pending-review",
+    "sheet_id": "PAL-CELEBRATION-PROP-001"
   }
 }

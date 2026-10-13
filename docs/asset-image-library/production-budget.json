@@ -852,16 +852,6 @@
       "review_notes": "No models generated or physical fit certified. Wall return depth/direction is inferred: S02 shows a concave oblique return, not a verified source plan extrusion. Preserve source front contours when laying out the wing. S03 stair turning/exit geometry remains a proposed connection; its top railing must be opened at the actual exit when modeled. Flat landing slabs and empty planter seats corrected. D07/D08 include supporting parapet beneath coping; isolate the upper coping only if generating trim instead of a complete low parapet segment."
     },
     {
-      "sheet_id": "PAL-INT-PROP-001",
-      "owner": "palace",
-      "family": "Interiors and furniture",
-      "title": "Princess palace \u2014 missing private-room furniture",
-      "status": "paused-for-wing-source-comparison",
-      "file": "",
-      "sha256": "",
-      "generation_attempts_in_this_pass": 0
-    },
-    {
       "sheet_id": "INT-R02",
       "owner": "palace",
       "family": "Interiors and furniture",
@@ -1257,6 +1247,18 @@
       ],
       "review_notes": "R02 removes the attached chandelier from S04 and corrects its installation-datum label; reuse GEN-24-A07 separately. S01/S02 are proposed wall hosts; glass, capitals, bands and bosses shown for placement must be separable when modeled. Their construction remains a reference illustration, not a tested aperture/CSG result. S03 support drop2.4m is proposed; installed gallery floor datum7m remains independent. Bracket, ledger and railing joint interfaces are unverified. S04 is an isolated pointed vault, not a dome interior. Span/length/rise/feet and shell thickness remain proposed geometry; no load/collision fit verified.",
       "component_count": 4
+    },
+    {
+      "sheet_id": "PAL-CELEBRATION-PROP-001",
+      "owner": "palace",
+      "family": "Interiors and furniture",
+      "title": "Ten missing palace celebration props",
+      "status": "generated-pending-source-and-user-review",
+      "file": "interior-celebration-dressing/PAL-CELEBRATION-PROP-001/PAL-CELEBRATION-PROP-001.png",
+      "sha256": "f736ab08529558be36efcadec0eecc8796a5fbfb7dd1c56bf930276e40259993",
+      "generation_attempts_in_this_pass": 1,
+      "component_count": 10,
+      "review_notes": "All10 named cells have complete separated silhouettes in the first generated sheet; no new room or duplicate cake/curtain/lantern is added. Illustration scales are independent. Printed dimensions and registry dimensions are proposed human-scale values, not measured geometry. Chair rear surfaces/joinery, vessel interiors, lid seams, cup/saucer separation, tray underside and frame backing/support require model review. A09 holder shows an empty horizontal receiving feature; its actual card slot depth, grip and rear retention must be specified before modeling. No invitation artwork is newly generated. No meshes, support contact, topology, UV/PBR, mesh separation or runtime placement are verified."
     }
   ],
   "production_pass": "palace-coverage-missing-only",
@@ -1293,7 +1295,7 @@
     "side_rear_schedule": "palace-side-rear/schedule.json",
     "complete_roof_plan": "palace-roof-plan/schedule.json"
   },
-  "production_pass_status": "Original ballroom first interior pass: two selected reference sheets, four structural targets; fixture/view parity and all model joints unverified. Other rooms deferred. Glass material requirements corrected.",
+  "production_pass_status": "Ten missing celebration prop references generated from one original source; private furniture reservation deferred, caps unchanged. No meshes, fit or room placement verified.",
   "structural_sheet_rule": "Display source-fitted assemblies with existing canonical decor so identity and proportions can be checked. Bare host views are internal construction proposals, not replacements for the original decorated wing references.",
   "generation_paused": true,
   "pause_reason": "Requested roof/stair proposal finished. Painted attempt rejected; coordinate diagram covers33 placements and11 stair links. Source-depth registration remains a layout task.",
@@ -1442,6 +1444,18 @@
       "generation_attempts_in_this_pass": 0,
       "retirement_date": "2026-10-14",
       "reason": "Replace a standalone entrance-hall scene reservation with the requested original ballroom multi-view and reusable shell references. Entrance-hall need remains deferred, not claimed complete."
+    },
+    {
+      "sheet_id": "PAL-INT-PROP-001",
+      "owner": "palace",
+      "family": "Interiors and furniture",
+      "title": "Princess palace \u2014 missing private-room furniture",
+      "status": "retired-unproduced-reallocated",
+      "file": "",
+      "sha256": "",
+      "generation_attempts_in_this_pass": 0,
+      "retirement_date": "2026-10-14",
+      "reason": "Owner authorizes the audited ten-piece celebration kit now. Defer unproduced private-room furniture pack to keep palace65/global230 caps. Bed/wardrobe/private furniture needs remain outstanding; no source art removed."
     }
   ],
   "allocation_changes": [
@@ -1452,12 +1466,13 @@
     }
   ],
   "component_workflow": "Modular walls first; later stairs, wards/wings, towers and fountain components. Exhaustive palace section inventory later.",
-  "generation_resume_reason": "Owner asks to continue after identifying incomplete interior views/components. Original ballroom source inspected separately; no exterior footprint changes or paid models.",
+  "generation_resume_reason": "Owner says Ok lets add after the ten-piece missing-reference audit. Generate references only, one source image at a time; no paid models.",
   "allocation_notes": [
     "Latest owner crops add royal needle with attached turrets and slim star-glass onion gallery; move one unspent interior allowance to tower bodies, keeping palace cap65/world165/total230. Shared existing detail packs cover both; no extra decor sheets.",
     "Owner requests location-specific surface/pillar/stair/parapet variety. Transfer one unspent whole-layout allowance to interior repeat components, keeping65 palace and230 total. Eight packed sheets; original masters reused.",
     "Scope correction: park three map-building surface packs, preserve their files/prompts; conservatory pack owns palace slot and keeps provisional B25 alias. Retire unapproved PAL-FRONT-001 layout selection, retaining its archive, to keep65 palace. No original palace architecture changed.",
     "2026-10-14: INT-R04 bath reservation retired;64/65 palace and84/230 selected/reserved. Interiors remain partially covered; no new slots reserved by audit.",
-    "2026-10-14: freed bath slot and deferred unproduced INT-R01 fund ballroom coordinated views plus structural kit; total caps unchanged."
+    "2026-10-14: freed bath slot and deferred unproduced INT-R01 fund ballroom coordinated views plus structural kit; total caps unchanged.",
+    "2026-10-14: unproduced PAL-INT-PROP-001 reservation deferred/replaced with PAL-CELEBRATION-PROP-001 for ten requested celebration pieces. Private furniture coverage not claimed complete."
   ]
 }

@@ -66,3 +66,7 @@ Four unregistered targets INT-BALLROOM-SHELL-001-S01…S04 are indexed in interi
 ## Original interior celebration references
 
 GEN-24-A10…A12 and GEN-25-A05…A10 index nine existing original-art designs. Source panels include several views/details; isolate/normalize before using them as model inputs. Existing IDs remain unchanged. New targets remain unregistered; no meshes or new selected sheet slots.
+
+## Ten missing celebration props
+
+PAL-CELEBRATION-PROP-001-A01…A10 are new source-compatible reference targets with proposed human-scale dimensions, mounts/fronts and suggested filenames. The named sheet and its ten expected batch IDs are indexed. All models unregistered; no paid generation or actual geometry verification. Cup/saucer, removable lids and frame backing/support remain separable model groups.

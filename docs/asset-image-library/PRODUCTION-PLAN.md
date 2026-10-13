@@ -1,5 +1,7 @@
 # Asset production plan and caps
 
+Current addition: [ten missing celebration props](interior-celebration-dressing/PAL-CELEBRATION-PROP-001/README.md). **82 selected sheets saved;85/230 selected/reserved;65/65 palace.** Models and placement unverified.
+
 Current room dressing: [nine existing textile/celebration designs newly indexed](interior-celebration-dressing/README.md). No new generated sheets; dress the ballroom with these before adding more ornament.
 
 Current interior work: [two ballroom reference sheets and four structural targets](interior-room-kits/README.md). Room/ceiling views remain proposals with unresolved fixture/bay parity; actual models and joins are unverified.
@@ -20,7 +22,7 @@ The final library is capped at **230 selected sheets**, including the 45 origina
 | shared-outdoor-props-and-bridge | 25 | 5 | 20 |
 | maps-magic-travel-and-birthday | 20 | 4 | 16 |
 
-The 726-file archive contains crops, previews and historical experiments; it is not the final 230-sheet selection. Selected reference slots may still require visual review.
+The 727-file archive contains crops, previews and historical experiments; it is not the final 230-sheet selection. Selected reference slots may still require visual review.
 
 ## Palace caps
 

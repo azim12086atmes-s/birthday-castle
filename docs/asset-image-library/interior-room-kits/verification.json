@@ -8,8 +8,8 @@
   "archive_hashes_verified": true,
   "registry_consistency_verified": true,
   "budget_caps_verified": true,
-  "archive_images": 726,
-  "model_targets": 402,
+  "archive_images": 727,
+  "model_targets": 412,
   "selected_sheets_with_saved_files": 81,
   "selected_or_reserved": 85,
   "palace_selected_or_reserved": 65,
@@ -18,5 +18,5 @@
   "physical_interface_fit_verified": false,
   "review_status": "pending-user-reference-review",
   "limits": "Source/provenance checks do not certify geometry, fixture counts, image projections, dimensions, UVs or runtime behavior.",
-  "archive_counts_updated_after": "interior celebration source audit"
+  "archive_counts_updated_after": "ten celebration props added"
 }

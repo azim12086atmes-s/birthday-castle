@@ -1,0 +1,338 @@
+{
+  "sheet_id": "PAL-CELEBRATION-PROP-001",
+  "name": "Missing palace celebration props",
+  "owner": "palace",
+  "family": "Interiors and furniture",
+  "source_reference_id": "GEN-24",
+  "source_reference_file": "images/illustrated-boards/GEN-24.png",
+  "source_reference_sha256": "deb78cfce6dab5c31d9b3519d3bc01a07e58bba453b013fcdb76bd2e8be3f349",
+  "generation_reference_path": "/workspace/birthday-castle/docs/asset-image-library/images/illustrated-boards/GEN-24.png",
+  "generator": "image_gen.imagegen",
+  "prompt": "Generate ONE high-resolution landscape princess-palace COMPONENT REFERENCE SHEET, title PAL-CELEBRATION-PROP-001 \u2014 Missing celebration props. EXACTLY TEN fully isolated named assets, arranged FIVE columns by TWO rows, one numbered cell per asset. Use ONLY the supplied original princess furniture sheet for rose/ivory/gold palette and delicate petal, rose-scroll, lotus and star vocabulary. The owner has requested missing items; create source-compatible new objects, not copies of the source throne/chandelier. Refined ivory/cream and rose/cherry accents, slender polished gold lines and a little blue/lilac star detail. Chair is ivory-painted wood/rose upholstery; tea service is warm ivory/rose glazed PORCELAIN with subtle marble-like pattern, not heavy stone vessels. Warm-white studio background, even neutral light, crisp three-quarter or gently tilted views showing depth, open vessel interiors and construction. Clean separate cells, no scene or neighboring props fused into items, no dramatic shadows, no warped/melted ornament, no cropping or floating unsupported pieces.\nEach cell must print its EXACT FULL asset ID on a readable line and short NAME immediately below it. Objects are shown at INDEPENDENT ILLUSTRATION SCALES so small utensils remain readable; actual human-scale dimensions in millimetres may be printed as small captions. Do not enlarge all tabletop objects to chair scale. The full chair has four grounded legs; the frame has an actual rear support; teapot/jug have open pouring lips and complete handles. Cup+saucer is intentionally ONE named assembly with separable geometry, all other cells show only the named complete object. NO loose accessories or alternate views that increase the ten-object count.\nPAL-CELEBRATION-PROP-001-A01 \u2014 Celebration chair: A complete compact upright chair,1.05m tall with0.45m seat height. Four curved ivory-painted timber legs all stand on ground, slim gold petal feet/apron and a modest star/rose carved crest. Rose upholstered seat and small tufted rose back with cream piping. Clear open space under seat, an ordinary guest chair, not an enormous royal throne. No cushions floating separately. Entire rear leg/back structure legible in three-quarter view.\nPAL-CELEBRATION-PROP-001-A02 \u2014 Rose-lotus teapot: A whole21cm-high ceramic teapot: warm ivory porcelain, pale rose marbling/inset petal panels, thin gilt lips, a short blue/rose star band. Rounded gently lotus-ribbed body, curved hollow spout, open loop handle and fully seated removable lid with small gold lotus knob. Physically plausible hollow pouring vessel, not a fountain. No detached floating lid or extra cup.\nPAL-CELEBRATION-PROP-001-A03 \u2014 Teacup and saucer: One deliberately paired assembly: small open ceramic cup with readable thin rim/interior and one loop handle, resting on ONE16cm saucer. Same ivory/rose ceramic and slender gold/star trim as teapot. Cup and saucer have separate visible edges and contact, never fused into one shapeless bowl. No extra spoon or food.\nPAL-CELEBRATION-PROP-001-A04 \u2014 Milk jug: One complete12cm-high open ceramic milk jug, with short pouring lip, hollow body/rim and a single small loop handle. Match the teapot palette and restrained lotus/rose panel trim. No lid or extra cup.\nPAL-CELEBRATION-PROP-001-A05 \u2014 Lidded sugar bowl: One complete14cm-wide low sugar bowl with a fully seated separate lid and small gold lotus/star knob. Ivory ceramic body with blush petal panels, fine gold rim and one restrained blue/rose star motif. Lid seam visible, no detached lid, no loose sugar or extra spoon.\nPAL-CELEBRATION-PROP-001-A06 \u2014 Dessert plate: One shallow22cm plate: ivory porcelain, rose scalloped rim and thin gold edge, delicate blue/rose star and petal inlay motif. Show slightly oblique top face and actual thin rim thickness. A table serving plate, not a cake stand or giant floor medallion. No food, stand or utensils.\nPAL-CELEBRATION-PROP-001-A07 \u2014 Cake server: One whole26cm handheld cake server lying flat diagonally, with a slim triangular polished pale-gold/silver blade and an ivory/rose carved handle joined by a small gold collar. Blade and handle share one firm readable construction. Only one utensil, no hand/food/knife set.\nPAL-CELEBRATION-PROP-001-A08 \u2014 Serving tray: One empty44x30cm oval or softly chamfered serving tray with a shallow rim and two modest integral handles. Ivory/rose surface, fine gold border and a small source-compatible blue/rose star motif inside. Entire top and depth visible. No tea service glued onto it; no legs or tabletop stand.\nPAL-CELEBRATION-PROP-001-A09 \u2014 Invitation holder: One small10cm-high tabletop invitation/place-card holder: weighted ivory/gold lotus base, short delicate gold stem with a small open star/scroll card-receiving slit at top. Show stable base and actual empty card slot clearly. The invitation artwork is an EXISTING asset, so NO card/letter/new text/sign included or fused here.\nPAL-CELEBRATION-PROP-001-A10 \u2014 Birthday memory display: One40cm-high tabletop oval portrait/memory-display frame, ivory with fine gold shell/star crest and delicate rose-scroll accents derived from source moon-mirror frame vocabulary. Show nonreflective matte insert with a simple rose-and-star keepsake illustration, removable backing and a short hinged rear support leg visible in three-quarter angle. It is a picture display, not another reflecting mirror or a gigantic palace monument. No actual person photo or text.\nOrder top row A01,A02,A03,A04,A05; bottom row A06,A07,A08,A09,A10. Keep all ten silhouettes generously framed and IDs legible. Do not add an extra birthday cake, curtain, rug, candleholder, lantern, table, chandelier, wreath or existing ornament pack. Footer: HUMAN-SCALE PROPS / ORIGINAL PALACE PALETTE / PROPOSED NEW REFERENCES / INDEPENDENT DISPLAY SCALES. No people or room scenery.",
+  "parts": [
+    {
+      "asset_id": "PAL-CELEBRATION-PROP-001-A01",
+      "name": "Celebration chair",
+      "function": "Ordinary upright guest seating; existing throne, chaise and garden bench do not supply this compact party-chair variant.",
+      "description": "A complete compact upright chair,1.05m tall with0.45m seat height. Four curved ivory-painted timber legs all stand on ground, slim gold petal feet/apron and a modest star/rose carved crest. Rose upholstered seat and small tufted rose back with cream piping. Clear open space under seat, an ordinary guest chair, not an enormous royal throne. No cushions floating separately. Entire rear leg/back structure legible in three-quarter view.",
+      "dimensions_m_proposed": [
+        0.52,
+        0.58,
+        1.05
+      ],
+      "attachment_face": "bottom -Z",
+      "semantic_front": "forward +Y",
+      "reuse_component_ids": [
+        "GEN-24-A05",
+        "GEN-35-A04"
+      ],
+      "model_status": "unregistered",
+      "review_status": "pending-reference-review",
+      "design_basis": "newly requested source-compatible celebration prop, not an exact object extracted from GEN-24",
+      "target_polycount_proposed": 5000,
+      "rejection_criteria": [
+        "cropped or fused neighboring objects",
+        "wrong count or missing full ID/name",
+        "warped/floating support, closed pouring lip or ambiguous attachment",
+        "wrong palette/motif family",
+        "extra objects instead of one named assembly"
+      ]
+    },
+    {
+      "asset_id": "PAL-CELEBRATION-PROP-001-A02",
+      "name": "Rose-lotus teapot",
+      "function": "Tea-service hero; no dedicated teapot construction reference in audited boards/registry.",
+      "description": "A whole21cm-high ceramic teapot: warm ivory porcelain, pale rose marbling/inset petal panels, thin gilt lips, a short blue/rose star band. Rounded gently lotus-ribbed body, curved hollow spout, open loop handle and fully seated removable lid with small gold lotus knob. Physically plausible hollow pouring vessel, not a fountain. No detached floating lid or extra cup.",
+      "dimensions_m_proposed": [
+        0.17,
+        0.25,
+        0.21
+      ],
+      "attachment_face": "bottom -Z",
+      "semantic_front": "spout +Y",
+      "reuse_component_ids": [
+        "GEN-24-A06"
+      ],
+      "model_status": "unregistered",
+      "review_status": "pending-reference-review",
+      "design_basis": "newly requested source-compatible celebration prop, not an exact object extracted from GEN-24",
+      "target_polycount_proposed": 1500,
+      "rejection_criteria": [
+        "cropped or fused neighboring objects",
+        "wrong count or missing full ID/name",
+        "warped/floating support, closed pouring lip or ambiguous attachment",
+        "wrong palette/motif family",
+        "extra objects instead of one named assembly"
+      ],
+      "mesh_groups_expected": [
+        "teapot body",
+        "lid"
+      ]
+    },
+    {
+      "asset_id": "PAL-CELEBRATION-PROP-001-A03",
+      "name": "Teacup and saucer",
+      "function": "Human-scale place setting; no dedicated cup/saucer reference.",
+      "description": "One deliberately paired assembly: small open ceramic cup with readable thin rim/interior and one loop handle, resting on ONE16cm saucer. Same ivory/rose ceramic and slender gold/star trim as teapot. Cup and saucer have separate visible edges and contact, never fused into one shapeless bowl. No extra spoon or food.",
+      "dimensions_m_proposed": [
+        0.16,
+        0.16,
+        0.09
+      ],
+      "attachment_face": "saucer underside -Z",
+      "semantic_front": "cup opening +Z",
+      "reuse_component_ids": [
+        "GEN-24-A06"
+      ],
+      "model_status": "unregistered",
+      "review_status": "pending-reference-review",
+      "design_basis": "newly requested source-compatible celebration prop, not an exact object extracted from GEN-24",
+      "target_polycount_proposed": 1500,
+      "rejection_criteria": [
+        "cropped or fused neighboring objects",
+        "wrong count or missing full ID/name",
+        "warped/floating support, closed pouring lip or ambiguous attachment",
+        "wrong palette/motif family",
+        "extra objects instead of one named assembly"
+      ],
+      "mesh_groups_expected": [
+        "cup",
+        "saucer"
+      ]
+    },
+    {
+      "asset_id": "PAL-CELEBRATION-PROP-001-A04",
+      "name": "Milk jug",
+      "function": "Small pouring vessel for tea-service grouping; source wish bowl is a different object.",
+      "description": "One complete12cm-high open ceramic milk jug, with short pouring lip, hollow body/rim and a single small loop handle. Match the teapot palette and restrained lotus/rose panel trim. No lid or extra cup.",
+      "dimensions_m_proposed": [
+        0.1,
+        0.12,
+        0.12
+      ],
+      "attachment_face": "bottom -Z",
+      "semantic_front": "pouring lip +Y",
+      "reuse_component_ids": [
+        "GEN-24-A06"
+      ],
+      "model_status": "unregistered",
+      "review_status": "pending-reference-review",
+      "design_basis": "newly requested source-compatible celebration prop, not an exact object extracted from GEN-24",
+      "target_polycount_proposed": 1500,
+      "rejection_criteria": [
+        "cropped or fused neighboring objects",
+        "wrong count or missing full ID/name",
+        "warped/floating support, closed pouring lip or ambiguous attachment",
+        "wrong palette/motif family",
+        "extra objects instead of one named assembly"
+      ]
+    },
+    {
+      "asset_id": "PAL-CELEBRATION-PROP-001-A05",
+      "name": "Lidded sugar bowl",
+      "function": "Tea-service table detail; no dedicated sugar-bowl reference.",
+      "description": "One complete14cm-wide low sugar bowl with a fully seated separate lid and small gold lotus/star knob. Ivory ceramic body with blush petal panels, fine gold rim and one restrained blue/rose star motif. Lid seam visible, no detached lid, no loose sugar or extra spoon.",
+      "dimensions_m_proposed": [
+        0.14,
+        0.14,
+        0.12
+      ],
+      "attachment_face": "bottom -Z",
+      "semantic_front": "upright +Z",
+      "reuse_component_ids": [
+        "GEN-24-A06"
+      ],
+      "model_status": "unregistered",
+      "review_status": "pending-reference-review",
+      "design_basis": "newly requested source-compatible celebration prop, not an exact object extracted from GEN-24",
+      "target_polycount_proposed": 1500,
+      "rejection_criteria": [
+        "cropped or fused neighboring objects",
+        "wrong count or missing full ID/name",
+        "warped/floating support, closed pouring lip or ambiguous attachment",
+        "wrong palette/motif family",
+        "extra objects instead of one named assembly"
+      ],
+      "mesh_groups_expected": [
+        "bowl",
+        "lid"
+      ]
+    },
+    {
+      "asset_id": "PAL-CELEBRATION-PROP-001-A06",
+      "name": "Dessert plate",
+      "function": "Birthday-cake place setting; cake stand is not a serving plate.",
+      "description": "One shallow22cm plate: ivory porcelain, rose scalloped rim and thin gold edge, delicate blue/rose star and petal inlay motif. Show slightly oblique top face and actual thin rim thickness. A table serving plate, not a cake stand or giant floor medallion. No food, stand or utensils.",
+      "dimensions_m_proposed": [
+        0.22,
+        0.22,
+        0.025
+      ],
+      "attachment_face": "underside -Z",
+      "semantic_front": "serving face +Z",
+      "reuse_component_ids": [
+        "GEN-24-A06",
+        "GEN-24-A11"
+      ],
+      "model_status": "unregistered",
+      "review_status": "pending-reference-review",
+      "design_basis": "newly requested source-compatible celebration prop, not an exact object extracted from GEN-24",
+      "target_polycount_proposed": 1500,
+      "rejection_criteria": [
+        "cropped or fused neighboring objects",
+        "wrong count or missing full ID/name",
+        "warped/floating support, closed pouring lip or ambiguous attachment",
+        "wrong palette/motif family",
+        "extra objects instead of one named assembly"
+      ]
+    },
+    {
+      "asset_id": "PAL-CELEBRATION-PROP-001-A07",
+      "name": "Cake server",
+      "function": "Cake-display accessory; no dedicated hand-held server reference.",
+      "description": "One whole26cm handheld cake server lying flat diagonally, with a slim triangular polished pale-gold/silver blade and an ivory/rose carved handle joined by a small gold collar. Blade and handle share one firm readable construction. Only one utensil, no hand/food/knife set.",
+      "dimensions_m_proposed": [
+        0.055,
+        0.26,
+        0.025
+      ],
+      "attachment_face": "underside -Z",
+      "semantic_front": "broad blade face +Z",
+      "reuse_component_ids": [
+        "GEN-25-A02"
+      ],
+      "model_status": "unregistered",
+      "review_status": "pending-reference-review",
+      "design_basis": "newly requested source-compatible celebration prop, not an exact object extracted from GEN-24",
+      "target_polycount_proposed": 1500,
+      "rejection_criteria": [
+        "cropped or fused neighboring objects",
+        "wrong count or missing full ID/name",
+        "warped/floating support, closed pouring lip or ambiguous attachment",
+        "wrong palette/motif family",
+        "extra objects instead of one named assembly"
+      ]
+    },
+    {
+      "asset_id": "PAL-CELEBRATION-PROP-001-A08",
+      "name": "Serving tray",
+      "function": "Grouping cups/place settings; existing cake stand and marble side table do not provide a portable tray.",
+      "description": "One empty44x30cm oval or softly chamfered serving tray with a shallow rim and two modest integral handles. Ivory/rose surface, fine gold border and a small source-compatible blue/rose star motif inside. Entire top and depth visible. No tea service glued onto it; no legs or tabletop stand.",
+      "dimensions_m_proposed": [
+        0.44,
+        0.3,
+        0.04
+      ],
+      "attachment_face": "underside -Z",
+      "semantic_front": "serving face +Z",
+      "reuse_component_ids": [
+        "GEN-24-A06",
+        "GEN-25-A05"
+      ],
+      "model_status": "unregistered",
+      "review_status": "pending-reference-review",
+      "design_basis": "newly requested source-compatible celebration prop, not an exact object extracted from GEN-24",
+      "target_polycount_proposed": 1500,
+      "rejection_criteria": [
+        "cropped or fused neighboring objects",
+        "wrong count or missing full ID/name",
+        "warped/floating support, closed pouring lip or ambiguous attachment",
+        "wrong palette/motif family",
+        "extra objects instead of one named assembly"
+      ]
+    },
+    {
+      "asset_id": "PAL-CELEBRATION-PROP-001-A09",
+      "name": "Invitation holder",
+      "function": "Support existing invitation artwork upright on tables; guest-book/card art exists but a dedicated holder profile is missing.",
+      "description": "One small10cm-high tabletop invitation/place-card holder: weighted ivory/gold lotus base, short delicate gold stem with a small open star/scroll card-receiving slit at top. Show stable base and actual empty card slot clearly. The invitation artwork is an EXISTING asset, so NO card/letter/new text/sign included or fused here.",
+      "dimensions_m_proposed": [
+        0.08,
+        0.045,
+        0.1
+      ],
+      "attachment_face": "base underside -Z",
+      "semantic_front": "card facing +Y",
+      "reuse_component_ids": [
+        "GEN-25-A10"
+      ],
+      "model_status": "unregistered",
+      "review_status": "pending-reference-review",
+      "design_basis": "newly requested source-compatible celebration prop, not an exact object extracted from GEN-24",
+      "target_polycount_proposed": 1500,
+      "rejection_criteria": [
+        "cropped or fused neighboring objects",
+        "wrong count or missing full ID/name",
+        "warped/floating support, closed pouring lip or ambiguous attachment",
+        "wrong palette/motif family",
+        "extra objects instead of one named assembly"
+      ]
+    },
+    {
+      "asset_id": "PAL-CELEBRATION-PROP-001-A10",
+      "name": "Birthday memory display",
+      "function": "Optional framed portrait or birthday-memory insert to make the room personal; mirror is a different function.",
+      "description": "One40cm-high tabletop oval portrait/memory-display frame, ivory with fine gold shell/star crest and delicate rose-scroll accents derived from source moon-mirror frame vocabulary. Show nonreflective matte insert with a simple rose-and-star keepsake illustration, removable backing and a short hinged rear support leg visible in three-quarter angle. It is a picture display, not another reflecting mirror or a gigantic palace monument. No actual person photo or text.",
+      "dimensions_m_proposed": [
+        0.3,
+        0.08,
+        0.4
+      ],
+      "attachment_face": "foot underside -Z",
+      "semantic_front": "picture facing +Y",
+      "reuse_component_ids": [
+        "GEN-24-A03"
+      ],
+      "model_status": "unregistered",
+      "review_status": "pending-reference-review",
+      "design_basis": "newly requested source-compatible celebration prop, not an exact object extracted from GEN-24",
+      "target_polycount_proposed": 5000,
+      "rejection_criteria": [
+        "cropped or fused neighboring objects",
+        "wrong count or missing full ID/name",
+        "warped/floating support, closed pouring lip or ambiguous attachment",
+        "wrong palette/motif family",
+        "extra objects instead of one named assembly"
+      ],
+      "mesh_groups_expected": [
+        "frame",
+        "picture insert",
+        "backing",
+        "rear support"
+      ]
+    }
+  ],
+  "component_count": 10,
+  "reuse_rule": "Existing source designs/cushions/candles/curtains/festoons remain reused; these10 requested gaps alone receive new references. Printed IDs identify future meshes, not proof of generated models.",
+  "source_rule": "One original source image for vocabulary only; new tabletop objects and unseen backs are design proposals. Reuse IDs identify related motifs/assemblies, not additional image-generation inputs.",
+  "outputs": [
+    {
+      "file": "interior-celebration-dressing/PAL-CELEBRATION-PROP-001/PAL-CELEBRATION-PROP-001.png",
+      "sha256": "f736ab08529558be36efcadec0eecc8796a5fbfb7dd1c56bf930276e40259993",
+      "original_file": "/workspace/generated_images/exec-7f9b5b5e-e09e-43ae-a15b-585a80348b51.png",
+      "actual_input_file": "images/illustrated-boards/GEN-24.png",
+      "actual_input_sha256": "deb78cfce6dab5c31d9b3519d3bc01a07e58bba453b013fcdb76bd2e8be3f349",
+      "generator": "image_gen.imagegen",
+      "attempt": 1
+    }
+  ],
+  "models_generated": 0,
+  "review_status": "pending-user-reference-review",
+  "actual_geometry_or_model_fit_verified": false,
+  "mesh_generation_allowed_without_approval": false,
+  "review_notes": [
+    "All10 named cells have complete separated silhouettes in the first generated sheet; no new room or duplicate cake/curtain/lantern is added.",
+    "Illustration scales are independent. Printed dimensions and registry dimensions are proposed human-scale values, not measured geometry.",
+    "Chair rear surfaces/joinery, vessel interiors, lid seams, cup/saucer separation, tray underside and frame backing/support require model review.",
+    "A09 holder shows an empty horizontal receiving feature; its actual card slot depth, grip and rear retention must be specified before modeling. No invitation artwork is newly generated.",
+    "No meshes, support contact, topology, UV/PBR, mesh separation or runtime placement are verified."
+  ],
+  "visible_art_review": {
+    "count": 10,
+    "full_ids_and_names_present": true,
+    "separate_cells_present": true,
+    "complete_silhouettes_present": true,
+    "palette": "rose/ivory/gold with restrained blue star accents; source-compatible new proposals",
+    "model_geometry_verified": false
+  }
+}

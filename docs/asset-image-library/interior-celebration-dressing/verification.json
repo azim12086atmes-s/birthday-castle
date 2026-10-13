@@ -4,12 +4,16 @@
   "new_selected_sheet_slots": 0,
   "source_pixels_verified": true,
   "registry_and_source_hashes_verified": true,
-  "archive_images": 726,
-  "model_targets": 402,
+  "archive_images": 727,
+  "model_targets": 412,
   "selected_saved_sheets": 81,
   "selected_or_reserved": 85,
   "dressed_room_view_generated": false,
   "new_models": 0,
   "placement_verified": false,
-  "review_status": "reference-only; model and room placement review pending"
+  "review_status": "reference-only; model and room placement review pending",
+  "archive_counts_updated_after": "ten celebration props added",
+  "generated_prop_pack_verification": "PAL-CELEBRATION-PROP-001/verification.json",
+  "current_selected_saved_sheets": 82,
+  "source_audit_scope": "Nine original designs; generated ten-prop pack verified separately"
 }

@@ -1,8 +1,8 @@
 {
   "date": "2026-10-13",
-  "distinct_image_count": 726,
+  "distinct_image_count": 727,
   "source_file_count": 969,
-  "total_bytes": 680449245,
+  "total_bytes": 682682408,
   "categories": {
     "additional-generated-studies": 33,
     "component-development-studies": 3,
@@ -17,6 +17,7 @@
     "original-bridge-source-crops": 10,
     "original-column-source-crops": 7,
     "original-palace-source-regions": 4,
+    "palace-celebration-prop-kits": 1,
     "palace-front-and-entrance-corrections": 2,
     "palace-layer-reference-sheets": 4,
     "palace-roof-layouts": 1,
@@ -14714,6 +14715,37 @@
       "reference_role": "direct-original-source-panel",
       "design_status": "Existing original design, unchanged pixels; not a newly generated sheet",
       "review_status": "source-reference"
+    },
+    {
+      "id": "PAL-CELEBRATION-PROP-001",
+      "title": "Missing palace celebration props",
+      "label": "PAL-CELEBRATION-PROP-001 \u2014 Missing palace celebration props",
+      "category": "palace-celebration-prop-kits",
+      "file": "interior-celebration-dressing/PAL-CELEBRATION-PROP-001/PAL-CELEBRATION-PROP-001.png",
+      "sha256": "f736ab08529558be36efcadec0eecc8796a5fbfb7dd1c56bf930276e40259993",
+      "bytes": 2233163,
+      "source_aliases": [
+        "/workspace/generated_images/exec-7f9b5b5e-e09e-43ae-a15b-585a80348b51.png"
+      ],
+      "alias_ids": [],
+      "component_ids": [
+        "PAL-CELEBRATION-PROP-001-A01",
+        "PAL-CELEBRATION-PROP-001-A02",
+        "PAL-CELEBRATION-PROP-001-A03",
+        "PAL-CELEBRATION-PROP-001-A04",
+        "PAL-CELEBRATION-PROP-001-A05",
+        "PAL-CELEBRATION-PROP-001-A06",
+        "PAL-CELEBRATION-PROP-001-A07",
+        "PAL-CELEBRATION-PROP-001-A08",
+        "PAL-CELEBRATION-PROP-001-A09",
+        "PAL-CELEBRATION-PROP-001-A10"
+      ],
+      "related_image_ids": [
+        "GEN-24"
+      ],
+      "reference_role": "named-component-reference-sheet",
+      "design_status": "Newly requested source-compatible props; proposed dimensions and hidden geometry",
+      "review_status": "pending-user-reference-review"
     }
   ],
   "label_schema_version": 1

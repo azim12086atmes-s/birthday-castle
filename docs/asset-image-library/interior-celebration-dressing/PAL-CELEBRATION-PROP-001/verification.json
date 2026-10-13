@@ -1,0 +1,18 @@
+{
+  "active_sheets": 1,
+  "named_components": 10,
+  "generation_attempts": 1,
+  "archive_hashes_verified": true,
+  "source_and_output_provenance_verified": true,
+  "model_ids_and_batch_mapping_verified": true,
+  "budget_caps_verified": true,
+  "archive_images": 727,
+  "registered_model_targets": 412,
+  "selected_saved_sheets": 82,
+  "selected_or_reserved": 85,
+  "palace_selected_or_reserved": 65,
+  "new_models": 0,
+  "physical_geometry_or_fit_verified": false,
+  "review_status": "pending-user-reference-review",
+  "limits": "Human-scale dimensions, material images and mounting features are proposed; this check does not certify geometry, support contact, slot/lid fit, texture seams or runtime placement."
+}

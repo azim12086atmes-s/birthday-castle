@@ -20,7 +20,7 @@ This pass completes **asset references**, not Blender assembly. The selected fro
 | Lighting/hanging crystals | GEN-20/24/32/45 complete lamps, cage, brackets, drops and mounts | No new generic lantern | Reuse |
 | Existing interior rooms | GEN-26 ballroom, throne room, library and conservatory scenes with small plans/sections | Preserve styles; coordinated reverse/side/ceiling views and room component schedules missing | Partial reuse; interior audit |
 | Floor/wall/ceiling detail | INT-C01/C02/C03, GEN-26/29/41/42 | Reuse motifs; dome interiors, matched reflected-ceiling plans and room-specific wall/roof junctions missing | Partial reuse; interior audit |
-| Private/dining furniture | GEN-24 already has throne/dais, chandelier, mirror, console, bookcase, lectern, chaise, curtain, round side table, rug and guardian | Bed, bedside cabinet, wardrobe, stool/chest, writing/dining pieces, tea service | PAL-INT-PROP-001, one 12-piece pack |
+| Private/dining furniture | GEN-24 already has throne/dais, chandelier, mirror, console, bookcase, lectern, chaise, curtain, round side table, rug and guardian | Bed, bedside cabinet, wardrobe, stool/chest, writing/dining pieces, tea service | Private furniture deferred; PAL-CELEBRATION-PROP-001 covers10 celebration props only |
 | Missing interior assembly views | GEN-26 existing room style; the catalogue's hall/private/dining/bath descriptions | Entrance stair hall, princess suite and dining room; bath excluded | INT-R01/R02/R03; coordinated original-room views also missing |
 
 ## Window selection matters
@@ -68,3 +68,7 @@ Earlier blanket reuse rows do not mean every room/outdoor surface should share t
 ## Room celebration dressing
 
 [Nine original-art designs newly indexed](interior-celebration-dressing/README.md) include curtains/rug/guardian and wish table, floral swag, festoon, balloon basket, ceremonial arch and guest book. No new illustration was necessary. Room-wide furnishing/celebration placement remains unbuilt; this source audit does not certify the ballroom is fully dressed.
+
+## New celebration prop sheet
+
+[PAL-CELEBRATION-PROP-001](interior-celebration-dressing/PAL-CELEBRATION-PROP-001/README.md) provides10 source-compatible human-scale reference targets. One slot replaces unproduced PAL-INT-PROP-001; private furniture remains missing. Existing curtains/candles/swags/mounts reused. No meshes or dressed-room placement view created.
