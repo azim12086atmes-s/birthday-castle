@@ -25,3 +25,7 @@ The first room draft had an end-facing “longitudinal section” and unclear ga
 The first structural draft embedded a chandelier in the vault and confused installed springing height with module dimensions. The revision removes the fixture and separates the16m installation datum from6m vault rise. S03 support drop2.4m is proposed. Actual repeat ends, window apertures, stairs, vault feet, ledgers, mounting and physical join fit require geometry review. No meshes, collision or runtime checks were performed.
 
 The room uses a pointed vault, not a dome; dome interiors and throne/library/conservatory coordinated views remain missing. Entrance hall is deferred rather than claimed complete. INT-R01 unproduced hall reservation is retired to fund this component work along with the freed bath slot. All existing art and both first drafts are preserved. Current selected/reserved:65/65 palace,85/230 globally;81 selected sheets have saved files.
+
+## Birthday dressing preview
+
+[One dressed placement view](INT-BALLROOM-DRESS-001/README.md) combines the existing birthday/furniture/textile families and ten-prop kit with the ballroom architecture. Source and first draft preserved; no selected sheet slot or unique prop target added. Exact source prop contours and measured clearances are unverified.

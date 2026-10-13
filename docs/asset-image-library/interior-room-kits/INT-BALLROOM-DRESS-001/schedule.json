@@ -1,0 +1,151 @@
+{
+  "image_id": "INT-BALLROOM-DRESS-001",
+  "name": "Princess birthday ballroom \u2014 dressed placement preview",
+  "kind": "generated-composition-preview",
+  "date": "2026-10-14",
+  "source_reference_id": "INT-BALLROOM-MV-001",
+  "source_reference_file": "interior-room-kits/INT-BALLROOM-MV-001/INT-BALLROOM-MV-001.png",
+  "source_reference_sha256": "cf95f8bc5ccf6c88222be5477d851f425aab53e7e1191634af86eb935b596f7a",
+  "source_panel_id": "SRC-INT-BALLROOM-ARRIVAL-DRESS",
+  "source_box_xyxy": [
+    16,
+    83,
+    399,
+    478
+  ],
+  "source_panel_file": "interior-room-kits/INT-BALLROOM-DRESS-001/source-arrival-view.png",
+  "source_panel_sha256": "8838ca968a284d4c8dbc49d15b3835a65f5a2330b8c92b279a5da8a33ccfc29f",
+  "generation_reference_path": "/workspace/birthday-castle/docs/asset-image-library/interior-room-kits/INT-BALLROOM-DRESS-001/rejected-drafts/INT-BALLROOM-DRESS-001-R01.png",
+  "generator": "image_gen.imagegen",
+  "prompt": "Edit the supplied dressed princess birthday ballroom image in place. Keep the exact scene, architecture, two curved north stairs, side galleries, pointed celestial vault, blue glass, chandeliers, all rose/ivory/gold decor, floral swags, pearl festoons, gifts, curtain positions and furniture arrangement. Keep exact title INT-BALLROOM-DRESS-001 \u2014 Princess birthday ballroom and existing footer. Do not move the celebration group to the centre or create a new room.\nTWO SPECIFIC CORRECTIONS ONLY:\n1) CENTRAL FLOOR STAR MUST BE COMPLETELY FLAT: Replace the entire raised/star-spike effect with a polished rose/ivory/blue/gold MARBLE INLAY lying flush in the surrounding floor. The star's gold lines are flush brass inlay, not tall gold three-dimensional rays, a sculpture or a raised pedestal. All blue/pink star faces share the SAME floor plane. The medallion remains in exactly the same position/diameter and keeps its source star pattern, but not a single point/boss/leaf protrudes upward. Show clean reflections and no raised rim, plinth, bulges or vertical shadows. Floor is walkable and continuous through the design. Do not cover it with furniture.\n2) THE FIVE-TIER CAKE ON THE LEFT IS A HUMAN-SCALE650mm TALL CAKE, on an approx280mm cake stand resting on an800mm-high table. Reduce the cake's own height and diameter significantly (about60percent of current cake silhouette) while keeping five rose/ivory tiers and blue/gold star/rose details. Reposition small candles/crown to its resized top and keep stand/table normal scale. Its total cake+stand+table height is around1.73m, not the current giant display. Keep gift boxes varied normal sizes and the same tablecloth/flowers.\nPreserve the right foreground tea-group objects at believable tabletop scale:21cm-high teapot,16cm saucer,12cm jug. Reduce only clearly oversize vessel proportions if needed relative to600mm side table; no new tea designs or extra furniture. All ornaments crisp, supports grounded, floor reflections legible. Richly celebrated but human-scale. No people, extra scene panels, new castle, new thrones, raised floor-star geometry or narrowed stairs.",
+  "asset_reference_ids": [
+    "GEN-25-A01",
+    "GEN-25-A02",
+    "GEN-25-A03",
+    "GEN-25-A04",
+    "GEN-25-A05",
+    "GEN-25-A06",
+    "GEN-25-A07",
+    "GEN-25-A08",
+    "GEN-25-A09",
+    "GEN-25-A10",
+    "GEN-24-A04",
+    "GEN-24-A05",
+    "GEN-24-A06",
+    "GEN-24-A07",
+    "GEN-24-A10",
+    "GEN-24-A11",
+    "GEN-35-A01",
+    "PAL-CELEBRATION-PROP-001-A01",
+    "PAL-CELEBRATION-PROP-001-A02",
+    "PAL-CELEBRATION-PROP-001-A03",
+    "PAL-CELEBRATION-PROP-001-A04",
+    "PAL-CELEBRATION-PROP-001-A05",
+    "PAL-CELEBRATION-PROP-001-A06",
+    "PAL-CELEBRATION-PROP-001-A07",
+    "PAL-CELEBRATION-PROP-001-A08",
+    "PAL-CELEBRATION-PROP-001-A09",
+    "PAL-CELEBRATION-PROP-001-A10"
+  ],
+  "reference_usage": "One room-view crop supplied to image generation; all listed asset families are textual design/placement requirements, not additional input images. Preview does not certify exact prop contour replication.",
+  "budget_classification": "Placement preview reusing selected architecture/prop references; no new selected asset sheet, model target or owner allocation. Counting rule keeps previews outside230 selected-sheet cap.",
+  "generation_attempts": [
+    {
+      "attempt": 1,
+      "status": "generated",
+      "reference_file": "interior-room-kits/INT-BALLROOM-DRESS-001/source-arrival-view.png",
+      "reference_sha256": "8838ca968a284d4c8dbc49d15b3835a65f5a2330b8c92b279a5da8a33ccfc29f"
+    },
+    {
+      "attempt": 2,
+      "status": "generated",
+      "reference_file": "interior-room-kits/INT-BALLROOM-DRESS-001/rejected-drafts/INT-BALLROOM-DRESS-001-R01.png",
+      "reference_sha256": "9dcb785eb24b8669315776b0f6c34a441b426da3a63bc2313124daaa4a98a7f2",
+      "reason": "Floor-star medallion is rendered as raised relief/spikes rather than flush floor inlay; cake appears oversized relative to the human-scale table/chair references."
+    }
+  ],
+  "outputs": [
+    {
+      "file": "interior-room-kits/INT-BALLROOM-DRESS-001/INT-BALLROOM-DRESS-001.png",
+      "sha256": "0cf72f85ad1b8471176d381038ec2cab94eab3819db8840cbba42a0bb24c7e0e",
+      "original_file": "/workspace/generated_images/exec-bf355fb0-e23d-4faf-b3ae-04129b06735c.png",
+      "actual_input_file": "interior-room-kits/INT-BALLROOM-DRESS-001/rejected-drafts/INT-BALLROOM-DRESS-001-R01.png",
+      "actual_input_sha256": "9dcb785eb24b8669315776b0f6c34a441b426da3a63bc2313124daaa4a98a7f2",
+      "attempt": 2,
+      "generator": "image_gen.imagegen"
+    }
+  ],
+  "review_status": "pending-user-composition-review",
+  "max_attempts_this_pass": 2,
+  "new_design_targets": 0,
+  "models_generated": 0,
+  "physical_placement_or_fit_verified": false,
+  "architectural_parity_verified": false,
+  "placement_groups": [
+    {
+      "id": "DRESS-FOCAL-W",
+      "name": "West birthday display",
+      "role": "Cake/stand/wish table, gifts, invitations and guestbook; near arrival side, outside central route"
+    },
+    {
+      "id": "DRESS-LOUNGE-W",
+      "name": "West lounge/tea group",
+      "role": "Chaise, small guest chairs, rug, tea-service side table"
+    },
+    {
+      "id": "DRESS-LOUNGE-E",
+      "name": "East lounge/tea group",
+      "role": "Smaller companion seating, rug and console/memory display"
+    },
+    {
+      "id": "DRESS-GALLERY",
+      "name": "Gallery textile/flower/light rhythm",
+      "role": "Source swags, banners, pearl-globe festoons and planters on visible mounts"
+    }
+  ],
+  "preserve": [
+    "North paired curved stairs",
+    "Central stained-glass focus",
+    "Continuous side galleries",
+    "Pointed celestial rib vault",
+    "Readable central floor-star medallion",
+    "Arrival and both stair routes"
+  ],
+  "reference_review_needed": [
+    "Source-specific prop contours and scale",
+    "Furniture support and mounting",
+    "Stair/gallery clearance",
+    "Fixture/bay parity remains unresolved in architectural source",
+    "No metric/dimension claim from this perspective"
+  ],
+  "previous_attempts": [
+    {
+      "file": "interior-room-kits/INT-BALLROOM-DRESS-001/rejected-drafts/INT-BALLROOM-DRESS-001-R01.png",
+      "sha256": "9dcb785eb24b8669315776b0f6c34a441b426da3a63bc2313124daaa4a98a7f2",
+      "original_file": "/workspace/generated_images/exec-58f208dc-e78a-4bc4-a4de-0d9ee22e07f7.png",
+      "actual_input_file": "interior-room-kits/INT-BALLROOM-DRESS-001/source-arrival-view.png",
+      "actual_input_sha256": "8838ca968a284d4c8dbc49d15b3835a65f5a2330b8c92b279a5da8a33ccfc29f",
+      "attempt": 1,
+      "generator": "image_gen.imagegen",
+      "prompt": "Create ONE high-resolution richly detailed LANDSCAPE interior perspective of the SAME princess palace BALLROOM in the supplied image, now carefully DRESSED FOR A PRINCESS BIRTHDAY CELEBRATION. The reference image alone fixes the actual visible room architecture and view direction: south arrival looking north, continuous two-storey side galleries, tall gold/ivory lotus piers and pointed arcades, blue-lilac-rose glass, a tall pointed rib vault with blue star-patterned panels and suspended crystal chandeliers, central north blue stained-glass focus and the TWO curved stairs rising on its left and right to the north gallery. Preserve that actual composition, silhouettes and paired stair locations. Do NOT replace it with a domed room, new castle, church altar, throne room or flat hotel ballroom. Keep veined IVORY AND ROSE MARBLE, slender GOLD tracery and BLUE celestial glazing. Add cherry/rose-pink textiles, gold/blue detailing, lush roses, restrained crystal/pearl light.\nHuman eye-level architectural perspective, lens about24mm, slightly wider horizontal framing than source so foreground SIDE arrangements are legible while the complete north stairs, full galleries and vault are visible. This is a source-compatible PLACEMENT PREVIEW, not a measured construction view. Overall proposed room is40m long,20m wide,22m high; furniture is human scale and must not inherit the giant palace scale. Chairs about1.05m tall,450mm seat, side tables600mm, wish/serving table800mm; tabletop objects120\u2013440mm. Real thin lips, cloth folds, grounded legs and mount contacts. No people.\nComposition and decoration:\n1) LEFT FOREGROUND/PERIMETER BIRTHDAY DISPLAY, OUTSIDE THE CENTRAL WALKWAY: one1.6m embroidered ivory/rose wish table with gold/pearl fringe and rose floral embroidery; one ornate gold cake stand supporting ONE65cm five-tier rose/ivory birthday cake with blue/rose star details, small gold crowns and candles. The cake+stand are tabletop-sized, never several metres tall. A cluster of tasteful rose/blue/ivory gift boxes with gold ribbons sits beside and beneath the table. An open gilt star/rose guest book, existing invitations, floral vessel and small gold candlesticks make the display memorable. One source-compatible rose swag/ceremonial floral arch frames this side display, not the stairs or central north glazing. Main focal celebration group is on the left, architecture remains clearly visible behind.\n2) SEATING AND TEA GROUPS ON BOTH SIDE EDGES: two small welcoming lounge groups with rose-upholstered gold/ivory chaises and compact rose-tufted upright guest chairs with slim ivory curved legs, gold petal feet, modest star/rose crest, source-compatible rather than royal thrones. Small ivory/rose circular marble side tables and2.4x1.6m embroidered rose/blue star rugs ground these groups. A few separate cushions on chaises, NOT floating. On the closest table put the coordinated warm ivory/rose porcelain tea set:21cm lotus-ribbed teapot with open curved spout and loop handle, blue/gold star band and gold lotus lid knob; one cup on a16cm saucer;12cm milk jug;14cm lidded sugar bowl;22cm rose-star dessert plate. An EMPTY shallow oval44cm gold/rose tray and single26cm cake server lie sensibly on the display table, not fused into vessels. A small lotus-base star-slot invitation holder uses an existing invitation card. One40cm tabletop oval rose/gold birthday memory frame with matte star/rose keepsake illustration sits on an existing console; not a mirror or huge wall sculpture. All props are small compared to7m galleries.\n3) TEXTILES AND CELEBRATION TRIM: rose/cherry gathered curtain panels with cream sheers, blue-and-gold star valances and gold/pearl tiebacks decorate SELECTED LOWER side bays; keep the upper lancets and most stained glass visible. Do not blanket every window. Short floral swags, pearl strings and ornate pearl-globe lantern festoons follow the gallery edge with visible ties/brackets at column seats. Alternating short rose/blue royal birthday-crest banners hang at selected bays. Decorate the gallery rhythm abundantly but keep the original marble/gold rail visible. No giant web of floating ribbons or new bridges.\n4) FLOWERS AND MAGIC: lush source-compatible pink/cherry roses, small cream blossoms, green ivy and restrained purple accents in gold-rimmed ivory planters at side clusters and gallery corners; never a giant hedge across paths. A FEW small tethered silk balloon/lantern baskets near the peripheral birthday display and distant gallery, ivory/rose/blue with thin gold star ribs. Warm pearl/crystal glow and chandelier sparkles, small star charms integrated into festoons; restrained effect, not a sky full of competing fireworks.\n5) CLEAR PLACEMENT: retain the original large BLUE/ROSE/GOLD STAR FLOOR MEDALLION plainly readable in the centre, with a CLEAR central arrival-to-north passage and BOTH dry stair entrances fully visible/unblocked. Fill side/perimeter areas and foreground edges with celebration groups so this feels inhabited, richly furnished and magical, rather than an empty hall or a table in an enormous vacant floor. Do not put banquet furniture on the central medallion, across the stair feet or along every gallery path. The dominant birthday group is only on the left; smaller side groups support it.\nRender as an exceptionally detailed warm architectural concept illustration matching the source quality: readable rose marble veining, gold profiles, crystal facets, embossed fabric edges, coherent cloth/flowers, individual chair legs, clear tabletop rims and support shadows. No distorted/melted decor, disjoint stairs, floating furniture, duplicate cakes, oversized tea cups, gigantic floor lamps, new thrones, new fountains, kitchen/music/service elements or altered roof silhouette. No multi-panel contact sheet, exploded assembly or new asset pack. Thin ivory sheet border only. Print title above: INT-BALLROOM-DRESS-001 \u2014 Princess birthday ballroom. Small footer: CELEBRATION PLACEMENT PREVIEW / EXISTING REFERENCE FAMILIES REUSED / GEOMETRY AND FIT UNVERIFIED. No other text inside the room or invented birthday name.",
+      "rejection_reason": "Floor-star medallion is rendered as raised relief/spikes rather than flush floor inlay; cake appears oversized relative to the human-scale table/chair references."
+    }
+  ],
+  "review_notes": [
+    "R02 makes the medallion read as flush marble/gold inlay and reduces the left display cake. This is a visual correction, not proof of physical floor height or actual prop dimensions.",
+    "Paired north stairs, side galleries, celestial pointed vault and blue stained-glass focus remain visually recognizable. The preview adds birthday display, side seating/tea, curtains, gifts, floral swags, pearl/festoon lights and banners.",
+    "One small room-view crop was supplied; props were specified by text against saved asset families. Exact likeness to every existing prop outline/material, rear shape and source dimension is not established. Frame/tea/service details in this perspective may differ from their standalone construction sheets; use the standalone sheets as their modeling references.",
+    "Foreground furniture is partly framed/cropped for room composition; this image is not an isolated-object mesh input.",
+    "Clearance, measured scale, support contact, light/fixture counts, original source multi-view parity and model fit are unverified. Reconstruct from approved geometry/contracts rather than measuring this perspective.",
+    "No new unique asset types are identified solely by this preview; existing source and the ten-prop kit supply the intended dressing vocabulary."
+  ],
+  "visual_review": {
+    "festive_dressing_visible": true,
+    "source_stairs_and_vault_recognizable": true,
+    "central_floor_star_readable": true,
+    "central_and_stair_routes_visually_visible": true,
+    "floor_inlay_visually_flat_after_revision": true,
+    "metric_clearance_verified": false,
+    "exact_prop_contours_verified": false
+  }
+}

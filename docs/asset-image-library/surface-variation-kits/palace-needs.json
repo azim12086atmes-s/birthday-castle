@@ -272,5 +272,13 @@
     "new_slots_reserved": 1,
     "status": "generated-reference-pending-review",
     "sheet_id": "PAL-CELEBRATION-PROP-001"
+  },
+  "ballroom_dressed_preview": {
+    "image_id": "INT-BALLROOM-DRESS-001",
+    "file": "../interior-room-kits/INT-BALLROOM-DRESS-001/README.md",
+    "status": "generated-pending-composition-review",
+    "new_selected_sheets": 0,
+    "new_component_targets": 0,
+    "physical_fit_verified": false
   }
 }

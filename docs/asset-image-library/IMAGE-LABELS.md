@@ -841,3 +841,11 @@ R03 uses plain tower circles and source-reviewed garden symbols. See [garden pla
 | ID | Reference |
 | --- | --- |
 | PAL-CELEBRATION-PROP-001 | [Missing palace celebration props](interior-celebration-dressing/PAL-CELEBRATION-PROP-001/PAL-CELEBRATION-PROP-001.png) |
+
+## Dressed ballroom preview and provenance
+
+| ID | Reference |
+| --- | --- |
+| SRC-INT-BALLROOM-ARRIVAL-DRESS | [Ballroom arrival view — exact source crop](interior-room-kits/INT-BALLROOM-DRESS-001/source-arrival-view.png) |
+| INT-BALLROOM-DRESS-001 | [Princess birthday ballroom — dressed placement preview](interior-room-kits/INT-BALLROOM-DRESS-001/INT-BALLROOM-DRESS-001.png) |
+| INT-BALLROOM-DRESS-001-R01 | [Birthday ballroom — first placement draft](interior-room-kits/INT-BALLROOM-DRESS-001/rejected-drafts/INT-BALLROOM-DRESS-001-R01.png) |

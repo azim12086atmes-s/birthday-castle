@@ -1474,5 +1474,17 @@
     "2026-10-14: INT-R04 bath reservation retired;64/65 palace and84/230 selected/reserved. Interiors remain partially covered; no new slots reserved by audit.",
     "2026-10-14: freed bath slot and deferred unproduced INT-R01 fund ballroom coordinated views plus structural kit; total caps unchanged.",
     "2026-10-14: unproduced PAL-INT-PROP-001 reservation deferred/replaced with PAL-CELEBRATION-PROP-001 for ten requested celebration pieces. Private furniture coverage not claimed complete."
+  ],
+  "composition_previews": [
+    {
+      "image_id": "INT-BALLROOM-DRESS-001",
+      "file": "interior-room-kits/INT-BALLROOM-DRESS-001/INT-BALLROOM-DRESS-001.png",
+      "sha256": "0cf72f85ad1b8471176d381038ec2cab94eab3819db8840cbba42a0bb24c7e0e",
+      "classification": "placement-preview; outside selected asset-sheet slots",
+      "new_design_targets": 0,
+      "selected_asset_slots_added": 0,
+      "generation_attempts": 2,
+      "reason": "Owner requests a dressed view to assess existing ballroom/celebration asset placement; previews excluded under saved counting rule."
+    }
   ]
 }

@@ -33,5 +33,14 @@
   "active_sheet_count": 2,
   "structural_target_count": 4,
   "view_parity_verified": false,
-  "models_generated": 0
+  "models_generated": 0,
+  "placement_previews": [
+    {
+      "image_id": "INT-BALLROOM-DRESS-001",
+      "file": "interior-room-kits/INT-BALLROOM-DRESS-001/INT-BALLROOM-DRESS-001.png",
+      "model_targets_added": 0,
+      "selected_slots_added": 0
+    }
+  ],
+  "dressing_preview_status": "generated-pending-composition-review; geometry/parity/prop contour fidelity unverified"
 }

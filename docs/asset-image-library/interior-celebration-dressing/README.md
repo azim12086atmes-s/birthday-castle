@@ -1,5 +1,7 @@
 # Palace celebration dressing: reuse existing designs
 
+Current placement preview: [dressed princess birthday ballroom](../interior-room-kits/INT-BALLROOM-DRESS-001/README.md), using existing references; no new asset-design slot.
+
 Current: [PAL-CELEBRATION-PROP-001 ten new missing props](PAL-CELEBRATION-PROP-001/README.md), labelled and indexed; source-compatible proposals, no3D models.
 
 The rooms need furnishings, textiles and celebration arrangements in addition to their architecture. Original boards already contain much of this detail. **Nine existing designs are now individually indexed; no new illustrations or selected sheet slots are consumed.**
@@ -27,7 +29,7 @@ The rooms need furnishings, textiles and celebration arrangements in addition to
 
 These are proposed arrangements, not assembled geometry. Keep the ballroom floor star, arrival, paired northern stairs and gallery paths readable. Human-scale objects should not inherit the palace's exterior scale multiplier. Celebration density should come from coordinated groups and textile/flower rhythm, not filling every circulation path.
 
-[The missing-piece audit](MISSING-PIECES.md) identifies10 new reference candidates: a guest chair, serving/place-setting details and an optional memory display. Existing cushions, candles, tassels, mounts and garlands need isolation/fit, not new masters. The cake, main lanterns, curtains, rug and arch decoration already have source designs. Whole-room decoration still needs a placement view; this audit does not supply one.
+[The missing-piece audit](MISSING-PIECES.md) identifies10 new reference candidates: a guest chair, serving/place-setting details and an optional memory display. Existing cushions, candles, tassels, mounts and garlands need isolation/fit, not new masters. The cake, main lanterns, curtains, rug and arch decoration already have source designs. A dressed-room placement preview is now available; geometry and actual fit remain unverified.
 
 Baths/spas, kitchens/bakeries, service rooms and music spaces remain excluded. The outdoor festival wheel/celebration skyline on GEN-25 are not introduced into the interior kit. Guardians are a reusable optional foyer/gallery accent, not required ballroom clutter. All models remain unregistered, with no paid generation, mesh fit or runtime proof.
 

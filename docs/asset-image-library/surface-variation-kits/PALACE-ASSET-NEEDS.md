@@ -58,3 +58,7 @@ Continuous wall/ward host bodies; roof and floor substrates; angled/curved wing 
 ## Celebration props generated
 
 [One ten-item labelled sheet](../interior-celebration-dressing/PAL-CELEBRATION-PROP-001/README.md) now covers the audited chair, tea/serving/place-setting pieces and optional birthday memory display. Source-compatible new shapes remain pending review; backs, mounts and actual fit unverified. Existing decor remains reused. Private furniture pack is deferred to keep65 palace slots; beds/wardrobes remain missing. No models or dressed-room placement view generated.
+
+## Ballroom celebration placement preview
+
+[The dressed ballroom](../interior-room-kits/INT-BALLROOM-DRESS-001/README.md) now shows birthday display, gifts, tea/seating groups, textiles, floral swags and festoons using existing source families. This is a composition preview: exact prop designs/scale, fixture parity, room clearances and physical fit are unverified. No new asset type or selected slot is added. Other interior/structural gaps remain.

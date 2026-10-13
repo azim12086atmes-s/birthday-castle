@@ -264,5 +264,11 @@
     "private_furniture_reservation_deferred": "PAL-INT-PROP-001",
     "palace_slots": 65,
     "global_selected_or_reserved": 85
+  },
+  "dressed_room_preview": {
+    "image_id": "INT-BALLROOM-DRESS-001",
+    "file": "../interior-room-kits/INT-BALLROOM-DRESS-001/INT-BALLROOM-DRESS-001.png",
+    "new_design_targets": 0,
+    "physical_fit_verified": false
   }
 }

@@ -1,0 +1,21 @@
+{
+  "placement_previews": 1,
+  "selected_asset_slots_added": 0,
+  "new_unique_model_targets": 0,
+  "source_crop_pixels_verified": true,
+  "source_output_and_draft_hashes_verified": true,
+  "existing_asset_reference_ids_verified": true,
+  "first_draft_preserved": true,
+  "generation_attempts": 2,
+  "archive_images": 730,
+  "model_targets": 412,
+  "selected_saved_sheets": 82,
+  "selected_or_reserved": 85,
+  "palace_selected_or_reserved": 65,
+  "models_generated": 0,
+  "measured_clearance_verified": false,
+  "physical_scale_or_fit_verified": false,
+  "exact_prop_contours_verified": false,
+  "review_status": "pending-user-composition-review",
+  "limits": "This is an illustrated placement preview, not a rendered game capture, measured plan or verified3D assembly."
+}

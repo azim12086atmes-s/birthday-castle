@@ -265,10 +265,16 @@
       "PAL-CELEBRATION-PROP-001-A10"
     ]
   },
-  "next_visual_review": "A dressed ballroom view using existing designs; preserve its stairs/windows/vault while showing celebration props. Not generated in this source audit.",
+  "next_visual_review": "Dressed ballroom preview generated; composition review pending and physical placement unverified",
   "model_placement_verified": false,
   "new_models": 0,
   "generated_reference_sheets": [
     "PAL-CELEBRATION-PROP-001"
-  ]
+  ],
+  "dressed_room_preview": {
+    "image_id": "INT-BALLROOM-DRESS-001",
+    "file": "../interior-room-kits/INT-BALLROOM-DRESS-001/INT-BALLROOM-DRESS-001.png",
+    "selected_asset_slots_added": 0,
+    "review_status": "pending-user-composition-review"
+  }
 }

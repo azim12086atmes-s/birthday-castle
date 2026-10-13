@@ -72,3 +72,7 @@ Earlier blanket reuse rows do not mean every room/outdoor surface should share t
 ## New celebration prop sheet
 
 [PAL-CELEBRATION-PROP-001](interior-celebration-dressing/PAL-CELEBRATION-PROP-001/README.md) provides10 source-compatible human-scale reference targets. One slot replaces unproduced PAL-INT-PROP-001; private furniture remains missing. Existing curtains/candles/swags/mounts reused. No meshes or dressed-room placement view created.
+
+## Dressed ballroom visualization
+
+[Birthday placement preview](interior-room-kits/INT-BALLROOM-DRESS-001/README.md) reuses existing architecture/celebration/prop families. Two source/revision attempts preserve the first draft and correct raised floor inlay/cake scale. This is visual composition evidence, not exact prop contour, geometry/parity or clearance validation; no new unique asset or selected design slot.

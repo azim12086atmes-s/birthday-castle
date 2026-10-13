@@ -1,0 +1,14 @@
+{
+  "source_reference_id": "INT-BALLROOM-MV-001",
+  "source_reference_file": "interior-room-kits/INT-BALLROOM-MV-001/INT-BALLROOM-MV-001.png",
+  "source_reference_sha256": "cf95f8bc5ccf6c88222be5477d851f425aab53e7e1191634af86eb935b596f7a",
+  "source_panel_id": "SRC-INT-BALLROOM-ARRIVAL-DRESS",
+  "source_box_xyxy": [
+    16,
+    83,
+    399,
+    478
+  ],
+  "source_panel_file": "interior-room-kits/INT-BALLROOM-DRESS-001/source-arrival-view.png",
+  "source_panel_sha256": "8838ca968a284d4c8dbc49d15b3835a65f5a2330b8c92b279a5da8a33ccfc29f"
+}

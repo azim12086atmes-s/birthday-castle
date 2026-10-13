@@ -14387,6 +14387,47 @@
       ],
       "component_register": "interior-celebration-dressing/PAL-CELEBRATION-PROP-001/schedule.json",
       "next_step": "Review source-compatible art and normalize each component to proposed human scale; no paid models generated or approved here."
+    },
+    {
+      "family_id": "FAM-INT-BALLROOM-DRESS-001",
+      "name": "Dressed birthday ballroom placement preview",
+      "kind": "existing-asset-composition-review",
+      "reference_image_ids": [
+        "INT-BALLROOM-DRESS-001",
+        "INT-BALLROOM-MV-001",
+        "PAL-CELEBRATION-PROP-001"
+      ],
+      "component_ids": [
+        "GEN-25-A01",
+        "GEN-25-A02",
+        "GEN-25-A03",
+        "GEN-25-A04",
+        "GEN-25-A05",
+        "GEN-25-A06",
+        "GEN-25-A07",
+        "GEN-25-A08",
+        "GEN-25-A09",
+        "GEN-25-A10",
+        "GEN-24-A04",
+        "GEN-24-A05",
+        "GEN-24-A06",
+        "GEN-24-A07",
+        "GEN-24-A10",
+        "GEN-24-A11",
+        "GEN-35-A01",
+        "PAL-CELEBRATION-PROP-001-A01",
+        "PAL-CELEBRATION-PROP-001-A02",
+        "PAL-CELEBRATION-PROP-001-A03",
+        "PAL-CELEBRATION-PROP-001-A04",
+        "PAL-CELEBRATION-PROP-001-A05",
+        "PAL-CELEBRATION-PROP-001-A06",
+        "PAL-CELEBRATION-PROP-001-A07",
+        "PAL-CELEBRATION-PROP-001-A08",
+        "PAL-CELEBRATION-PROP-001-A09",
+        "PAL-CELEBRATION-PROP-001-A10"
+      ],
+      "component_register": "interior-room-kits/INT-BALLROOM-DRESS-001/schedule.json",
+      "next_step": "Review composition density; use existing isolated asset references and proposed room contracts for future geometry. No unique props, whole-room mesh request or runtime fit certified."
     }
   ],
   "generation_batches": [
