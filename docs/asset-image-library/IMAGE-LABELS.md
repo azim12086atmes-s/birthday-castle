@@ -622,3 +622,18 @@ Stable IDs refer to exact saved images. Pack pieces are numbered within each lab
 | Image ID | Label | Components |
 | --- | --- | --- |
 | PACK-BRG-001-R01 | [Original kit with superseded open-capital variant](images/superseded-pack-revisions/PACK-BRG-001-R01.png) | Use current PACK-BRG-001 revision 2 for A03 |
+
+## Original bridge source crops
+
+| Image ID | Label |
+| --- | --- |
+| BRIDGE-OV-01 | [Bridge overview — source-labelled plan view](bridge-source-panels/overview-source-plan-view.png) |
+| BRIDGE-OV-02 | [Bridge overview — three-quarter isometric](bridge-source-panels/overview-three-quarter-isometric.png) |
+| BRIDGE-OV-03 | [Longitudinal bridge elevation](bridge-source-panels/longitudinal-bridge-elevation.png) |
+| BRIDGE-SRC-A | [Railing panel — four-metre repeat](bridge-source-panels/A-railing-panel-four-metre-repeat.png) |
+| BRIDGE-SRC-B | [Terminal post and freestanding crystal lantern](bridge-source-panels/B-terminal-post-and-crystal-lantern.png) |
+| BRIDGE-SRC-C | [Structural arch module — lower tier](bridge-source-panels/C-structural-arch-module-lower-tier.png) |
+| BRIDGE-SRC-D | [Cutwater pier — two-tier aqueduct support](bridge-source-panels/D-cutwater-pier-two-tier-aqueduct.png) |
+| BRIDGE-SRC-E | [Star-inlay deck tile — four-metre square](bridge-source-panels/E-star-inlay-deck-tile-four-metre-square.png) |
+| BRIDGE-SRC-F | [Deck cross section — eighteen-metre width](bridge-source-panels/F-deck-cross-section-eighteen-metre-width.png) |
+| BRIDGE-SRC-G | [Footstep ripples — glossy deck effect at dusk](bridge-source-panels/G-footstep-ripples-glossy-deck-effect.png) |

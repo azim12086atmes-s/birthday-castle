@@ -1,8 +1,8 @@
 {
   "date": "2026-10-13",
-  "distinct_image_count": 571,
-  "source_file_count": 822,
-  "total_bytes": 512691598,
+  "distinct_image_count": 581,
+  "source_file_count": 832,
+  "total_bytes": 515379425,
   "categories": {
     "additional-generated-studies": 33,
     "component-development-studies": 3,
@@ -13,7 +13,8 @@
     "reference-crops-and-studies": 73,
     "renders-and-screenshots": 48,
     "vector-drawings": 130,
-    "superseded-pack-revisions": 1
+    "superseded-pack-revisions": 1,
+    "original-bridge-source-crops": 10
   },
   "active_palace_authority": "GEN-37 original front elevation; GEN-03 and GEN-16 supporting views",
   "notes": [
@@ -24,7 +25,8 @@
     "Registered render pairs share model geometry, but the native model is not certified as an exact match to the reference art.",
     "Every image has a stable ID and versioned content hash; component IDs link named model targets to an exact reference hash. IDs are not approval or completion claims.",
     "PACK-BRG-001 contains 16 named ornaments; PACK-BRG-002 contains four named bridge segments. MOD sheets are retained single-component development studies, superseded by the user-requested pack format.",
-    "PACK-BRG-001 revision 2 corrects A03 to the supplied stepped capital. Original revision is preserved as PACK-BRG-001-R01. Model provenance must include the reference hash or revision."
+    "PACK-BRG-001 revision 2 corrects A03 to the supplied stepped capital. Original revision is preserved as PACK-BRG-001-R01. Model provenance must include the reference hash or revision.",
+    "Original bridge panels A\u2013G and overview views are preserved as ten named exact pixel crops. Source comparison flags discrepancies in the generated bridge packs; do not claim exact GEN-18 reconstruction readiness."
   ],
   "images": [
     {
@@ -1850,7 +1852,7 @@
       ],
       "label": "PACK-BRG-001 \u2014 Porcelain Long Bridge \u2014 ornament kit",
       "reference_role": "multi-component-design-pack",
-      "design_status": "pending-user-review",
+      "design_status": "needs-source-correction; retained-generated-interpretation",
       "related_image_ids": [
         "GEN-18",
         "MOD-COL-001",
@@ -1869,7 +1871,8 @@
           "sha256": "575987486fed7086b5d31d4db5229d191fb986d9491582446c8645b7272b9d77",
           "reason": "A03 replaced with the user-supplied stepped lotus-capital design, including solid abacus and tall rose petals."
         }
-      ]
+      ],
+      "source_comparison": "bridge-source-panels/COMPARISON.md"
     },
     {
       "id": "PACK-BRG-002",
@@ -1891,10 +1894,11 @@
       ],
       "label": "PACK-BRG-002 \u2014 Porcelain Long Bridge \u2014 existing segment details",
       "reference_role": "multi-component-design-pack",
-      "design_status": "pending-user-review",
+      "design_status": "needs-source-correction; retained-generated-interpretation",
       "related_image_ids": [
         "GEN-18"
-      ]
+      ],
+      "source_comparison": "bridge-source-panels/COMPARISON.md"
     },
     {
       "id": "REF-0029EF295D07",
@@ -10971,6 +10975,316 @@
       "related_image_ids": [
         "PACK-BRG-001"
       ]
+    },
+    {
+      "id": "BRIDGE-OV-01",
+      "title": "Bridge overview \u2014 source-labelled plan view",
+      "category": "original-bridge-source-crops",
+      "file": "bridge-source-panels/overview-source-plan-view.png",
+      "sha256": "f1dd38ccb563611eba3801ff7059c083d07db2d13b4c1e42458699d47b694553",
+      "bytes": 558170,
+      "source_aliases": [
+        "shared/birthday-castle-bridge-source-segmentation/overview-source-plan-view.png"
+      ],
+      "review_status": "direct-source-extraction",
+      "alias_ids": [
+        "OV-01"
+      ],
+      "component_ids": [],
+      "label": "BRIDGE-OV-01 \u2014 Bridge overview \u2014 source-labelled plan view",
+      "reference_role": "direct-source-panel",
+      "design_status": "source-reference-not-dimensionally-resolved",
+      "related_image_ids": [
+        "GEN-18"
+      ],
+      "source_image_id": "GEN-18",
+      "source_sha256": "b4e604896f127f6964f9d0af15ea5077fcef5c4abde1d6800014c5ad7dd07624",
+      "crop_box_xyxy": [
+        12,
+        42,
+        773,
+        405
+      ],
+      "source_printed_dimensions": "240 m overall; 18 m deck width"
+    },
+    {
+      "id": "BRIDGE-OV-02",
+      "title": "Bridge overview \u2014 three-quarter isometric",
+      "category": "original-bridge-source-crops",
+      "file": "bridge-source-panels/overview-three-quarter-isometric.png",
+      "sha256": "77fc25996645bdc4ea71685056d593af83184983f135ec29ceb8cbb2ccdaae6d",
+      "bytes": 625983,
+      "source_aliases": [
+        "shared/birthday-castle-bridge-source-segmentation/overview-three-quarter-isometric.png"
+      ],
+      "review_status": "direct-source-extraction",
+      "alias_ids": [
+        "OV-02"
+      ],
+      "component_ids": [],
+      "label": "BRIDGE-OV-02 \u2014 Bridge overview \u2014 three-quarter isometric",
+      "reference_role": "direct-source-panel",
+      "design_status": "source-reference-not-dimensionally-resolved",
+      "related_image_ids": [
+        "GEN-18"
+      ],
+      "source_image_id": "GEN-18",
+      "source_sha256": "b4e604896f127f6964f9d0af15ea5077fcef5c4abde1d6800014c5ad7dd07624",
+      "crop_box_xyxy": [
+        780,
+        42,
+        1523,
+        405
+      ],
+      "source_printed_dimensions": ""
+    },
+    {
+      "id": "BRIDGE-OV-03",
+      "title": "Longitudinal bridge elevation",
+      "category": "original-bridge-source-crops",
+      "file": "bridge-source-panels/longitudinal-bridge-elevation.png",
+      "sha256": "714444ee589018ae0cbe3d665d26cbb44654d5e74bb1699c9dc36b4ff130076d",
+      "bytes": 479136,
+      "source_aliases": [
+        "shared/birthday-castle-bridge-source-segmentation/longitudinal-bridge-elevation.png"
+      ],
+      "review_status": "direct-source-extraction",
+      "alias_ids": [
+        "OV-03"
+      ],
+      "component_ids": [],
+      "label": "BRIDGE-OV-03 \u2014 Longitudinal bridge elevation",
+      "reference_role": "direct-source-panel",
+      "design_status": "source-reference-not-dimensionally-resolved",
+      "related_image_ids": [
+        "GEN-18"
+      ],
+      "source_image_id": "GEN-18",
+      "source_sha256": "b4e604896f127f6964f9d0af15ea5077fcef5c4abde1d6800014c5ad7dd07624",
+      "crop_box_xyxy": [
+        12,
+        410,
+        1523,
+        590
+      ],
+      "source_printed_dimensions": "240 m overall; 26 m overall height shown"
+    },
+    {
+      "id": "BRIDGE-SRC-A",
+      "title": "Railing panel \u2014 four-metre repeat",
+      "category": "original-bridge-source-crops",
+      "file": "bridge-source-panels/A-railing-panel-four-metre-repeat.png",
+      "sha256": "b9e4b74691794d3a9e6773b66fbf970fe86e86da2d13d6378d4f457da9633ae5",
+      "bytes": 162694,
+      "source_aliases": [
+        "shared/birthday-castle-bridge-source-segmentation/A-railing-panel-four-metre-repeat.png"
+      ],
+      "review_status": "direct-source-extraction",
+      "alias_ids": [
+        "SRC-A"
+      ],
+      "component_ids": [],
+      "label": "BRIDGE-SRC-A \u2014 Railing panel \u2014 four-metre repeat",
+      "reference_role": "direct-source-panel",
+      "design_status": "source-reference-not-dimensionally-resolved",
+      "related_image_ids": [
+        "GEN-18"
+      ],
+      "source_image_id": "GEN-18",
+      "source_sha256": "b4e604896f127f6964f9d0af15ea5077fcef5c4abde1d6800014c5ad7dd07624",
+      "crop_box_xyxy": [
+        12,
+        596,
+        549,
+        791
+      ],
+      "source_printed_dimensions": "4.0 m module length; 1.5 m height"
+    },
+    {
+      "id": "BRIDGE-SRC-B",
+      "title": "Terminal post and freestanding crystal lantern",
+      "category": "original-bridge-source-crops",
+      "file": "bridge-source-panels/B-terminal-post-and-crystal-lantern.png",
+      "sha256": "b399f6107ed6e69033d9b29be60acd37e6f210e9d43619b4d2fa4cde74a671d7",
+      "bytes": 131061,
+      "source_aliases": [
+        "shared/birthday-castle-bridge-source-segmentation/B-terminal-post-and-crystal-lantern.png"
+      ],
+      "review_status": "direct-source-extraction",
+      "alias_ids": [
+        "SRC-B"
+      ],
+      "component_ids": [],
+      "label": "BRIDGE-SRC-B \u2014 Terminal post and freestanding crystal lantern",
+      "reference_role": "direct-source-panel",
+      "design_status": "source-reference-not-dimensionally-resolved",
+      "related_image_ids": [
+        "GEN-18"
+      ],
+      "source_image_id": "GEN-18",
+      "source_sha256": "b4e604896f127f6964f9d0af15ea5077fcef5c4abde1d6800014c5ad7dd07624",
+      "crop_box_xyxy": [
+        553,
+        596,
+        963,
+        809
+      ],
+      "source_printed_dimensions": "3.8 m overall; 1.5 m lower post; 0.9 m base width shown"
+    },
+    {
+      "id": "BRIDGE-SRC-C",
+      "title": "Structural arch module \u2014 lower tier",
+      "category": "original-bridge-source-crops",
+      "file": "bridge-source-panels/C-structural-arch-module-lower-tier.png",
+      "sha256": "f6d5002865ed71e6188aa0a2cd98d763d966f1eb81522b94d21de3f04386a921",
+      "bytes": 186922,
+      "source_aliases": [
+        "shared/birthday-castle-bridge-source-segmentation/C-structural-arch-module-lower-tier.png"
+      ],
+      "review_status": "direct-source-extraction",
+      "alias_ids": [
+        "SRC-C"
+      ],
+      "component_ids": [],
+      "label": "BRIDGE-SRC-C \u2014 Structural arch module \u2014 lower tier",
+      "reference_role": "direct-source-panel",
+      "design_status": "source-reference-not-dimensionally-resolved",
+      "related_image_ids": [
+        "GEN-18"
+      ],
+      "source_image_id": "GEN-18",
+      "source_sha256": "b4e604896f127f6964f9d0af15ea5077fcef5c4abde1d6800014c5ad7dd07624",
+      "crop_box_xyxy": [
+        966,
+        596,
+        1523,
+        809
+      ],
+      "source_printed_dimensions": "14 m span; 12 m height"
+    },
+    {
+      "id": "BRIDGE-SRC-D",
+      "title": "Cutwater pier \u2014 two-tier aqueduct support",
+      "category": "original-bridge-source-crops",
+      "file": "bridge-source-panels/D-cutwater-pier-two-tier-aqueduct.png",
+      "sha256": "665f9c8d496e6e6d64ea6eb5699b4a69698b8b9f719d95c9c740f174609d929f",
+      "bytes": 200138,
+      "source_aliases": [
+        "shared/birthday-castle-bridge-source-segmentation/D-cutwater-pier-two-tier-aqueduct.png"
+      ],
+      "review_status": "direct-source-extraction",
+      "alias_ids": [
+        "SRC-D"
+      ],
+      "component_ids": [],
+      "label": "BRIDGE-SRC-D \u2014 Cutwater pier \u2014 two-tier aqueduct support",
+      "reference_role": "direct-source-panel",
+      "design_status": "source-reference-not-dimensionally-resolved",
+      "related_image_ids": [
+        "GEN-18"
+      ],
+      "source_image_id": "GEN-18",
+      "source_sha256": "b4e604896f127f6964f9d0af15ea5077fcef5c4abde1d6800014c5ad7dd07624",
+      "crop_box_xyxy": [
+        12,
+        796,
+        549,
+        1017
+      ],
+      "source_printed_dimensions": "24 m overall; 12 m plus 12 m tiers; 6.0 m width"
+    },
+    {
+      "id": "BRIDGE-SRC-E",
+      "title": "Star-inlay deck tile \u2014 four-metre square",
+      "category": "original-bridge-source-crops",
+      "file": "bridge-source-panels/E-star-inlay-deck-tile-four-metre-square.png",
+      "sha256": "f05d8c72fdbf0984d4837b73dc34812869d960971d26d129def2dd8bdad743ec",
+      "bytes": 136516,
+      "source_aliases": [
+        "shared/birthday-castle-bridge-source-segmentation/E-star-inlay-deck-tile-four-metre-square.png"
+      ],
+      "review_status": "direct-source-extraction",
+      "alias_ids": [
+        "SRC-E"
+      ],
+      "component_ids": [],
+      "label": "BRIDGE-SRC-E \u2014 Star-inlay deck tile \u2014 four-metre square",
+      "reference_role": "direct-source-panel",
+      "design_status": "source-reference-not-dimensionally-resolved",
+      "related_image_ids": [
+        "GEN-18"
+      ],
+      "source_image_id": "GEN-18",
+      "source_sha256": "b4e604896f127f6964f9d0af15ea5077fcef5c4abde1d6800014c5ad7dd07624",
+      "crop_box_xyxy": [
+        553,
+        813,
+        963,
+        1017
+      ],
+      "source_printed_dimensions": "4.0 m by 4.0 m; 0.3 m thickness"
+    },
+    {
+      "id": "BRIDGE-SRC-F",
+      "title": "Deck cross section \u2014 eighteen-metre width",
+      "category": "original-bridge-source-crops",
+      "file": "bridge-source-panels/F-deck-cross-section-eighteen-metre-width.png",
+      "sha256": "887753b17ec115902ff0e0eaa8c9e2e95eb51d9045c4f1d9e3de12701d52fde1",
+      "bytes": 107329,
+      "source_aliases": [
+        "shared/birthday-castle-bridge-source-segmentation/F-deck-cross-section-eighteen-metre-width.png"
+      ],
+      "review_status": "direct-source-extraction",
+      "alias_ids": [
+        "SRC-F"
+      ],
+      "component_ids": [],
+      "label": "BRIDGE-SRC-F \u2014 Deck cross section \u2014 eighteen-metre width",
+      "reference_role": "direct-source-panel",
+      "design_status": "source-reference-not-dimensionally-resolved",
+      "related_image_ids": [
+        "GEN-18"
+      ],
+      "source_image_id": "GEN-18",
+      "source_sha256": "b4e604896f127f6964f9d0af15ea5077fcef5c4abde1d6800014c5ad7dd07624",
+      "crop_box_xyxy": [
+        966,
+        813,
+        1269,
+        1017
+      ],
+      "source_printed_dimensions": "18 m width; 2.5 m plus 13 m plus 2.5 m"
+    },
+    {
+      "id": "BRIDGE-SRC-G",
+      "title": "Footstep ripples \u2014 glossy deck effect at dusk",
+      "category": "original-bridge-source-crops",
+      "file": "bridge-source-panels/G-footstep-ripples-glossy-deck-effect.png",
+      "sha256": "452cc1ea20a1df646a4c581770e79e222386760569f6aa88b5c0b3fe4265cbad",
+      "bytes": 99878,
+      "source_aliases": [
+        "shared/birthday-castle-bridge-source-segmentation/G-footstep-ripples-glossy-deck-effect.png"
+      ],
+      "review_status": "direct-source-extraction",
+      "alias_ids": [
+        "SRC-G"
+      ],
+      "component_ids": [],
+      "label": "BRIDGE-SRC-G \u2014 Footstep ripples \u2014 glossy deck effect at dusk",
+      "reference_role": "direct-source-panel",
+      "design_status": "source-reference-not-dimensionally-resolved",
+      "related_image_ids": [
+        "GEN-18"
+      ],
+      "source_image_id": "GEN-18",
+      "source_sha256": "b4e604896f127f6964f9d0af15ea5077fcef5c4abde1d6800014c5ad7dd07624",
+      "crop_box_xyxy": [
+        1273,
+        813,
+        1523,
+        1017
+      ],
+      "source_printed_dimensions": "Live-only ripple FX"
     }
   ],
   "label_schema_version": 1

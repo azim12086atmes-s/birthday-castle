@@ -1,0 +1,194 @@
+{
+  "source_image_id": "GEN-18",
+  "source_file": "../images/illustrated-boards/GEN-18.png",
+  "source_sha256": "b4e604896f127f6964f9d0af15ea5077fcef5c4abde1d6800014c5ad7dd07624",
+  "source_dimensions": [
+    1536,
+    1024
+  ],
+  "method": "Direct lossless pixel crops; no image generation or recolouring",
+  "coordinate_convention": "x1,y1 inclusive; x2,y2 exclusive; origin top left",
+  "dimension_warning": "Transcribed source labels, not verified dimensions or a resolved module contract",
+  "panels": [
+    {
+      "id": "OV-01",
+      "title": "Bridge overview \u2014 source-labelled plan view",
+      "file": "overview-source-plan-view.png",
+      "box_xyxy": [
+        12,
+        42,
+        773,
+        405
+      ],
+      "size": [
+        761,
+        363
+      ],
+      "sha256": "f1dd38ccb563611eba3801ff7059c083d07db2d13b4c1e42458699d47b694553",
+      "source_printed_dimensions": "240 m overall; 18 m deck width",
+      "note": "Overview illustration, not a proven orthographic plan"
+    },
+    {
+      "id": "OV-02",
+      "title": "Bridge overview \u2014 three-quarter isometric",
+      "file": "overview-three-quarter-isometric.png",
+      "box_xyxy": [
+        780,
+        42,
+        1523,
+        405
+      ],
+      "size": [
+        743,
+        363
+      ],
+      "sha256": "77fc25996645bdc4ea71685056d593af83184983f135ec29ceb8cbb2ccdaae6d",
+      "source_printed_dimensions": "",
+      "note": "Overview and support rhythm"
+    },
+    {
+      "id": "OV-03",
+      "title": "Longitudinal bridge elevation",
+      "file": "longitudinal-bridge-elevation.png",
+      "box_xyxy": [
+        12,
+        410,
+        1523,
+        590
+      ],
+      "size": [
+        1511,
+        180
+      ],
+      "sha256": "714444ee589018ae0cbe3d665d26cbb44654d5e74bb1699c9dc36b4ff130076d",
+      "source_printed_dimensions": "240 m overall; 26 m overall height shown",
+      "note": "Major spans, narrow central support and terminal approaches"
+    },
+    {
+      "id": "SRC-A",
+      "title": "Railing panel \u2014 four-metre repeat",
+      "file": "A-railing-panel-four-metre-repeat.png",
+      "box_xyxy": [
+        12,
+        596,
+        549,
+        791
+      ],
+      "size": [
+        537,
+        195
+      ],
+      "sha256": "b9e4b74691794d3a9e6773b66fbf970fe86e86da2d13d6378d4f457da9633ae5",
+      "source_printed_dimensions": "4.0 m module length; 1.5 m height",
+      "note": "Front, profile and isometric of the same rail family"
+    },
+    {
+      "id": "SRC-B",
+      "title": "Terminal post and freestanding crystal lantern",
+      "file": "B-terminal-post-and-crystal-lantern.png",
+      "box_xyxy": [
+        553,
+        596,
+        963,
+        809
+      ],
+      "size": [
+        410,
+        213
+      ],
+      "sha256": "b399f6107ed6e69033d9b29be60acd37e6f210e9d43619b4d2fa4cde74a671d7",
+      "source_printed_dimensions": "3.8 m overall; 1.5 m lower post; 0.9 m base width shown",
+      "note": "Front, side, top and isometric; freestanding post rather than hanging arm"
+    },
+    {
+      "id": "SRC-C",
+      "title": "Structural arch module \u2014 lower tier",
+      "file": "C-structural-arch-module-lower-tier.png",
+      "box_xyxy": [
+        966,
+        596,
+        1523,
+        809
+      ],
+      "size": [
+        557,
+        213
+      ],
+      "sha256": "f6d5002865ed71e6188aa0a2cd98d763d966f1eb81522b94d21de3f04386a921",
+      "source_printed_dimensions": "14 m span; 12 m height",
+      "note": "Pointed open arch, spandrels, end piers and source profiles"
+    },
+    {
+      "id": "SRC-D",
+      "title": "Cutwater pier \u2014 two-tier aqueduct support",
+      "file": "D-cutwater-pier-two-tier-aqueduct.png",
+      "box_xyxy": [
+        12,
+        796,
+        549,
+        1017
+      ],
+      "size": [
+        537,
+        221
+      ],
+      "sha256": "665f9c8d496e6e6d64ea6eb5699b4a69698b8b9f719d95c9c740f174609d929f",
+      "source_printed_dimensions": "24 m overall; 12 m plus 12 m tiers; 6.0 m width",
+      "note": "Cutwater base, two stacked stages, inset faces, top seat and side structure"
+    },
+    {
+      "id": "SRC-E",
+      "title": "Star-inlay deck tile \u2014 four-metre square",
+      "file": "E-star-inlay-deck-tile-four-metre-square.png",
+      "box_xyxy": [
+        553,
+        813,
+        963,
+        1017
+      ],
+      "size": [
+        410,
+        204
+      ],
+      "sha256": "f05d8c72fdbf0984d4837b73dc34812869d960971d26d129def2dd8bdad743ec",
+      "source_printed_dimensions": "4.0 m by 4.0 m; 0.3 m thickness",
+      "note": "Single square tile, profile and isometric"
+    },
+    {
+      "id": "SRC-F",
+      "title": "Deck cross section \u2014 eighteen-metre width",
+      "file": "F-deck-cross-section-eighteen-metre-width.png",
+      "box_xyxy": [
+        966,
+        813,
+        1269,
+        1017
+      ],
+      "size": [
+        303,
+        204
+      ],
+      "sha256": "887753b17ec115902ff0e0eaa8c9e2e95eb51d9045c4f1d9e3de12701d52fde1",
+      "source_printed_dimensions": "18 m width; 2.5 m plus 13 m plus 2.5 m",
+      "note": "Deck bands, rail/post placement and support section; not a longitudinal deck-segment drawing"
+    },
+    {
+      "id": "SRC-G",
+      "title": "Footstep ripples \u2014 glossy deck effect at dusk",
+      "file": "G-footstep-ripples-glossy-deck-effect.png",
+      "box_xyxy": [
+        1273,
+        813,
+        1523,
+        1017
+      ],
+      "size": [
+        250,
+        204
+      ],
+      "sha256": "452cc1ea20a1df646a4c581770e79e222386760569f6aa88b5c0b3fe4265cbad",
+      "source_printed_dimensions": "Live-only ripple FX",
+      "note": "Runtime/material effect, not a separate physical bridge segment"
+    }
+  ]
+}

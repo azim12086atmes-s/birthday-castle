@@ -2714,9 +2714,10 @@
       "model_sha256": "",
       "model_batch_id": "",
       "mesh_name": "",
-      "review_status": "pending",
+      "review_status": "needs-source-correction",
       "suggested_model_filename": "PACK-BRG-001-A14__crystal-lantern-and-mounting-arm__v001.glb",
-      "reference_revision": 2
+      "reference_revision": 2,
+      "source_comparison": "bridge-source-panels/COMPARISON.md"
     },
     {
       "asset_id": "PACK-BRG-001-A15",
@@ -2762,9 +2763,10 @@
       "model_sha256": "",
       "model_batch_id": "",
       "mesh_name": "",
-      "review_status": "pending",
+      "review_status": "needs-source-correction",
       "suggested_model_filename": "PACK-BRG-001-A16__star-inlay-paving-tile__v001.glb",
-      "reference_revision": 2
+      "reference_revision": 2,
+      "source_comparison": "bridge-source-panels/COMPARISON.md"
     },
     {
       "asset_id": "PACK-BRG-002-S01",
@@ -2786,8 +2788,9 @@
       "model_sha256": "",
       "model_batch_id": "",
       "mesh_name": "",
-      "review_status": "pending",
-      "suggested_model_filename": "PACK-BRG-002-S01__lower-tier-arch-span__v001.glb"
+      "review_status": "needs-source-correction",
+      "suggested_model_filename": "PACK-BRG-002-S01__lower-tier-arch-span__v001.glb",
+      "source_comparison": "bridge-source-panels/COMPARISON.md"
     },
     {
       "asset_id": "PACK-BRG-002-S02",
@@ -2809,8 +2812,9 @@
       "model_sha256": "",
       "model_batch_id": "",
       "mesh_name": "",
-      "review_status": "pending",
-      "suggested_model_filename": "PACK-BRG-002-S02__two-tier-cutwater-pier__v001.glb"
+      "review_status": "needs-source-correction",
+      "suggested_model_filename": "PACK-BRG-002-S02__two-tier-cutwater-pier__v001.glb",
+      "source_comparison": "bridge-source-panels/COMPARISON.md"
     },
     {
       "asset_id": "PACK-BRG-002-S03",
@@ -2832,8 +2836,9 @@
       "model_sha256": "",
       "model_batch_id": "",
       "mesh_name": "",
-      "review_status": "pending",
-      "suggested_model_filename": "PACK-BRG-002-S03__porcelain-deck-segment__v001.glb"
+      "review_status": "needs-source-correction",
+      "suggested_model_filename": "PACK-BRG-002-S03__porcelain-deck-segment__v001.glb",
+      "source_comparison": "bridge-source-panels/COMPARISON.md"
     },
     {
       "asset_id": "PACK-BRG-002-S04",
@@ -3175,7 +3180,7 @@
       "generator": "",
       "generator_job_id": "",
       "model_sha256": "",
-      "review_status": "pending",
+      "review_status": "needs-source-correction",
       "suggested_model_filename": "PACK-BRG-001__porcelain-long-bridge-ornament-kit__v001.glb",
       "reference_revision": 2
     },
@@ -3196,7 +3201,7 @@
       "generator": "",
       "generator_job_id": "",
       "model_sha256": "",
-      "review_status": "pending",
+      "review_status": "needs-source-correction",
       "suggested_model_filename": "PACK-BRG-002__porcelain-long-bridge-existing-segment-details__v001.glb"
     }
   ]

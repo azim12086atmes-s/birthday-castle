@@ -1,0 +1,11 @@
+id,title,file,source_printed_dimensions,note
+OV-01,Bridge overview — source-labelled plan view,overview-source-plan-view.png,240 m overall; 18 m deck width,"Overview illustration, not a proven orthographic plan"
+OV-02,Bridge overview — three-quarter isometric,overview-three-quarter-isometric.png,,Overview and support rhythm
+OV-03,Longitudinal bridge elevation,longitudinal-bridge-elevation.png,240 m overall; 26 m overall height shown,"Major spans, narrow central support and terminal approaches"
+SRC-A,Railing panel — four-metre repeat,A-railing-panel-four-metre-repeat.png,4.0 m module length; 1.5 m height,"Front, profile and isometric of the same rail family"
+SRC-B,Terminal post and freestanding crystal lantern,B-terminal-post-and-crystal-lantern.png,3.8 m overall; 1.5 m lower post; 0.9 m base width shown,"Front, side, top and isometric; freestanding post rather than hanging arm"
+SRC-C,Structural arch module — lower tier,C-structural-arch-module-lower-tier.png,14 m span; 12 m height,"Pointed open arch, spandrels, end piers and source profiles"
+SRC-D,Cutwater pier — two-tier aqueduct support,D-cutwater-pier-two-tier-aqueduct.png,24 m overall; 12 m plus 12 m tiers; 6.0 m width,"Cutwater base, two stacked stages, inset faces, top seat and side structure"
+SRC-E,Star-inlay deck tile — four-metre square,E-star-inlay-deck-tile-four-metre-square.png,4.0 m by 4.0 m; 0.3 m thickness,"Single square tile, profile and isometric"
+SRC-F,Deck cross section — eighteen-metre width,F-deck-cross-section-eighteen-metre-width.png,18 m width; 2.5 m plus 13 m plus 2.5 m,"Deck bands, rail/post placement and support section; not a longitudinal deck-segment drawing"
+SRC-G,Footstep ripples — glossy deck effect at dusk,G-footstep-ripples-glossy-deck-effect.png,Live-only ripple FX,"Runtime/material effect, not a separate physical bridge segment"

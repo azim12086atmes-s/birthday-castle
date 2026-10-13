@@ -4,11 +4,16 @@
   "structure_sheet": "PACK-BRG-002",
   "ornament_sheet": "PACK-BRG-001",
   "ornament_revision": 2,
-  "design_coverage": "Sufficient references for a first 3D assembly pass; not a completed or fit-verified model",
+  "design_coverage": "Earlier provisional coverage assessment superseded by direct source-panel comparison; kits need correction before exact bridge reconstruction",
   "covered": {
-    "segment_types": ["Lower-tier arch span", "Two-tier cutwater pier", "Porcelain deck segment", "Parapet railing segment"],
+    "segment_types": [
+      "Lower-tier arch span",
+      "Two-tier cutwater pier",
+      "Porcelain deck segment",
+      "Parapet railing segment"
+    ],
     "ornament_count": 16,
-    "corrected_capital": "PACK-BRG-001-A03 — Stepped lotus capital, based on MOD-COL-001"
+    "corrected_capital": "PACK-BRG-001-A03 \u2014 Stepped lotus capital, based on MOD-COL-001"
   },
   "remaining_reference_gap": {
     "name": "Freestanding terminal crystal lantern post",
@@ -23,5 +28,8 @@
     "Check railing infills and repeated border ends against their host frames",
     "Inspect returned batch meshes for identifiable separate components"
   ],
-  "scope_note": "Sea, water and bridge footstep ripple effects are separate runtime/environment assets; they do not require additional bridge structure sketches"
+  "scope_note": "Sea, water and bridge footstep ripple effects are separate runtime/environment assets; they do not require additional bridge structure sketches",
+  "source_panels": "bridge-source-panels/INDEX.md",
+  "source_comparison": "bridge-source-panels/COMPARISON.md",
+  "new_generation": "paused for source segmentation and discrepancy review"
 }
