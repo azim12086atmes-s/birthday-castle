@@ -317,3 +317,112 @@ These layer reconstructions were reported inconsistent and retired from placemen
 | PAL-TOWER-007-S02 | [Shallow floral neck collar](remaining-palace-kits/slim-onion/PAL-TOWER-007.png) |
 | PAL-TOWER-007-S03 | [Short blue-lancet gallery](remaining-palace-kits/slim-onion/PAL-TOWER-007.png) |
 | PAL-TOWER-007-S04 | [Narrow onion crown and spindle](remaining-palace-kits/slim-onion/PAL-TOWER-007.png) |
+
+## Palace surface variants and discovered wishing designs
+
+| ID | Name/reference |
+| --- | --- |
+| INT-FLOOR-REPEAT-001-A01 | [Hall field repeat](surface-variation-kits/INT-FLOOR-REPEAT-001/INT-FLOOR-REPEAT-001.png) |
+| INT-FLOOR-REPEAT-001-A02 | [Hall border repeat](surface-variation-kits/INT-FLOOR-REPEAT-001/INT-FLOOR-REPEAT-001.png) |
+| INT-FLOOR-REPEAT-001-A03 | [Hall border corner](surface-variation-kits/INT-FLOOR-REPEAT-001/INT-FLOOR-REPEAT-001.png) |
+| INT-FLOOR-REPEAT-001-A04 | [Hall focal quarter](surface-variation-kits/INT-FLOOR-REPEAT-001/INT-FLOOR-REPEAT-001.png) |
+| INT-FLOOR-REPEAT-001-A05 | [Ballroom field repeat](surface-variation-kits/INT-FLOOR-REPEAT-001/INT-FLOOR-REPEAT-001.png) |
+| INT-FLOOR-REPEAT-001-A06 | [Ballroom border repeat](surface-variation-kits/INT-FLOOR-REPEAT-001/INT-FLOOR-REPEAT-001.png) |
+| INT-FLOOR-REPEAT-001-A07 | [Ballroom border corner](surface-variation-kits/INT-FLOOR-REPEAT-001/INT-FLOOR-REPEAT-001.png) |
+| INT-FLOOR-REPEAT-001-A08 | [Ballroom focal quarter](surface-variation-kits/INT-FLOOR-REPEAT-001/INT-FLOOR-REPEAT-001.png) |
+| INT-FLOOR-REPEAT-001-A09 | [Gallery field repeat](surface-variation-kits/INT-FLOOR-REPEAT-001/INT-FLOOR-REPEAT-001.png) |
+| INT-FLOOR-REPEAT-001-A10 | [Gallery border repeat](surface-variation-kits/INT-FLOOR-REPEAT-001/INT-FLOOR-REPEAT-001.png) |
+| INT-FLOOR-REPEAT-001-A11 | [Gallery border corner](surface-variation-kits/INT-FLOOR-REPEAT-001/INT-FLOOR-REPEAT-001.png) |
+| INT-FLOOR-REPEAT-001-A12 | [Gallery focal quarter](surface-variation-kits/INT-FLOOR-REPEAT-001/INT-FLOOR-REPEAT-001.png) |
+| INT-FLOOR-REPEAT-001-A13 | [Suite field repeat](surface-variation-kits/INT-FLOOR-REPEAT-001/INT-FLOOR-REPEAT-001.png) |
+| INT-FLOOR-REPEAT-001-A14 | [Suite border repeat](surface-variation-kits/INT-FLOOR-REPEAT-001/INT-FLOOR-REPEAT-001.png) |
+| INT-FLOOR-REPEAT-001-A15 | [Suite border corner](surface-variation-kits/INT-FLOOR-REPEAT-001/INT-FLOOR-REPEAT-001.png) |
+| INT-FLOOR-REPEAT-001-A16 | [Suite focal quarter](surface-variation-kits/INT-FLOOR-REPEAT-001/INT-FLOOR-REPEAT-001.png) |
+| INT-TRIM-VAR-001-A01 | [Hall cornice repeat](surface-variation-kits/INT-TRIM-VAR-001/INT-TRIM-VAR-001.png) |
+| INT-TRIM-VAR-001-A02 | [Hall inside return](surface-variation-kits/INT-TRIM-VAR-001/INT-TRIM-VAR-001.png) |
+| INT-TRIM-VAR-001-A03 | [Hall pillar collar](surface-variation-kits/INT-TRIM-VAR-001/INT-TRIM-VAR-001.png) |
+| INT-TRIM-VAR-001-A04 | [Hall dado repeat](surface-variation-kits/INT-TRIM-VAR-001/INT-TRIM-VAR-001.png) |
+| INT-TRIM-VAR-001-A05 | [Ballroom cornice repeat](surface-variation-kits/INT-TRIM-VAR-001/INT-TRIM-VAR-001.png) |
+| INT-TRIM-VAR-001-A06 | [Ballroom inside return](surface-variation-kits/INT-TRIM-VAR-001/INT-TRIM-VAR-001.png) |
+| INT-TRIM-VAR-001-A07 | [Ballroom pillar collar](surface-variation-kits/INT-TRIM-VAR-001/INT-TRIM-VAR-001.png) |
+| INT-TRIM-VAR-001-A08 | [Ballroom dado repeat](surface-variation-kits/INT-TRIM-VAR-001/INT-TRIM-VAR-001.png) |
+| INT-TRIM-VAR-001-A09 | [Gallery cornice repeat](surface-variation-kits/INT-TRIM-VAR-001/INT-TRIM-VAR-001.png) |
+| INT-TRIM-VAR-001-A10 | [Gallery inside return](surface-variation-kits/INT-TRIM-VAR-001/INT-TRIM-VAR-001.png) |
+| INT-TRIM-VAR-001-A11 | [Gallery pillar collar](surface-variation-kits/INT-TRIM-VAR-001/INT-TRIM-VAR-001.png) |
+| INT-TRIM-VAR-001-A12 | [Gallery dado repeat](surface-variation-kits/INT-TRIM-VAR-001/INT-TRIM-VAR-001.png) |
+| INT-TRIM-VAR-001-A13 | [Suite cornice repeat](surface-variation-kits/INT-TRIM-VAR-001/INT-TRIM-VAR-001.png) |
+| INT-TRIM-VAR-001-A14 | [Suite inside return](surface-variation-kits/INT-TRIM-VAR-001/INT-TRIM-VAR-001.png) |
+| INT-TRIM-VAR-001-A15 | [Suite pillar collar](surface-variation-kits/INT-TRIM-VAR-001/INT-TRIM-VAR-001.png) |
+| INT-TRIM-VAR-001-A16 | [Suite dado repeat](surface-variation-kits/INT-TRIM-VAR-001/INT-TRIM-VAR-001.png) |
+| PAL-STAIR-VAR-001-A01 | [Ballroom grand-flight section](surface-variation-kits/PAL-STAIR-VAR-001/PAL-STAIR-VAR-001.png) |
+| PAL-STAIR-VAR-001-A02 | [Throne dais-step section](surface-variation-kits/PAL-STAIR-VAR-001/PAL-STAIR-VAR-001.png) |
+| PAL-STAIR-VAR-001-A03 | [Library helical stair section](surface-variation-kits/PAL-STAIR-VAR-001/PAL-STAIR-VAR-001.png) |
+| PAL-STAIR-VAR-001-A04 | [Conservatory short-step section](surface-variation-kits/PAL-STAIR-VAR-001/PAL-STAIR-VAR-001.png) |
+| GDN-PAVING-VAR-001-A01 | [Rose plain paving](surface-variation-kits/GDN-PAVING-VAR-001/GDN-PAVING-VAR-001.png) |
+| GDN-PAVING-VAR-001-A02 | [Rose star insert](surface-variation-kits/GDN-PAVING-VAR-001/GDN-PAVING-VAR-001.png) |
+| GDN-PAVING-VAR-001-A03 | [Rose vine border](surface-variation-kits/GDN-PAVING-VAR-001/GDN-PAVING-VAR-001.png) |
+| GDN-PAVING-VAR-001-A04 | [Rose outer corner](surface-variation-kits/GDN-PAVING-VAR-001/GDN-PAVING-VAR-001.png) |
+| GDN-PAVING-VAR-001-A05 | [Rose bed inner corner](surface-variation-kits/GDN-PAVING-VAR-001/GDN-PAVING-VAR-001.png) |
+| GDN-PAVING-VAR-001-A06 | [Rose basin radial coping](surface-variation-kits/GDN-PAVING-VAR-001/GDN-PAVING-VAR-001.png) |
+| GDN-PAVING-VAR-001-A07 | [Rose path threshold](surface-variation-kits/GDN-PAVING-VAR-001/GDN-PAVING-VAR-001.png) |
+| GDN-PAVING-VAR-001-A08 | [Rose runoff edge](surface-variation-kits/GDN-PAVING-VAR-001/GDN-PAVING-VAR-001.png) |
+| GDN-PAVING-VAR-001-A09 | [Moon stepping stone](surface-variation-kits/GDN-PAVING-VAR-001/GDN-PAVING-VAR-001.png) |
+| GDN-PAVING-VAR-001-A10 | [Moon leaf stone](surface-variation-kits/GDN-PAVING-VAR-001/GDN-PAVING-VAR-001.png) |
+| GDN-PAVING-VAR-001-A11 | [Moon outer path coping](surface-variation-kits/GDN-PAVING-VAR-001/GDN-PAVING-VAR-001.png) |
+| GDN-PAVING-VAR-001-A12 | [Moon inner path coping](surface-variation-kits/GDN-PAVING-VAR-001/GDN-PAVING-VAR-001.png) |
+| GDN-PAVING-VAR-001-A13 | [Moon pond shore stone](surface-variation-kits/GDN-PAVING-VAR-001/GDN-PAVING-VAR-001.png) |
+| GDN-PAVING-VAR-001-A14 | [Moon bridge threshold](surface-variation-kits/GDN-PAVING-VAR-001/GDN-PAVING-VAR-001.png) |
+| GDN-PAVING-VAR-001-A15 | [Moon bed foot return](surface-variation-kits/GDN-PAVING-VAR-001/GDN-PAVING-VAR-001.png) |
+| GDN-PAVING-VAR-001-A16 | [Moon low path tread](surface-variation-kits/GDN-PAVING-VAR-001/GDN-PAVING-VAR-001.png) |
+| WLD-PARAPET-JOINS-001-A01 | [Star concave return](surface-variation-kits/WLD-PARAPET-JOINS-001/WLD-PARAPET-JOINS-001.png) |
+| WLD-PARAPET-JOINS-001-A02 | [Star inside corner](surface-variation-kits/WLD-PARAPET-JOINS-001/WLD-PARAPET-JOINS-001.png) |
+| WLD-PARAPET-JOINS-001-A03 | [Star end stop](surface-variation-kits/WLD-PARAPET-JOINS-001/WLD-PARAPET-JOINS-001.png) |
+| WLD-PARAPET-JOINS-001-A04 | [Star slope transition](surface-variation-kits/WLD-PARAPET-JOINS-001/WLD-PARAPET-JOINS-001.png) |
+| WLD-PARAPET-JOINS-001-A05 | [Flower concave return](surface-variation-kits/WLD-PARAPET-JOINS-001/WLD-PARAPET-JOINS-001.png) |
+| WLD-PARAPET-JOINS-001-A06 | [Flower inside corner](surface-variation-kits/WLD-PARAPET-JOINS-001/WLD-PARAPET-JOINS-001.png) |
+| WLD-PARAPET-JOINS-001-A07 | [Flower end stop](surface-variation-kits/WLD-PARAPET-JOINS-001/WLD-PARAPET-JOINS-001.png) |
+| WLD-PARAPET-JOINS-001-A08 | [Flower slope transition](surface-variation-kits/WLD-PARAPET-JOINS-001/WLD-PARAPET-JOINS-001.png) |
+| WLD-PARAPET-JOINS-001-A09 | [Vase concave return](surface-variation-kits/WLD-PARAPET-JOINS-001/WLD-PARAPET-JOINS-001.png) |
+| WLD-PARAPET-JOINS-001-A10 | [Vase inside corner](surface-variation-kits/WLD-PARAPET-JOINS-001/WLD-PARAPET-JOINS-001.png) |
+| WLD-PARAPET-JOINS-001-A11 | [Vase end stop](surface-variation-kits/WLD-PARAPET-JOINS-001/WLD-PARAPET-JOINS-001.png) |
+| WLD-PARAPET-JOINS-001-A12 | [Vase slope transition](surface-variation-kits/WLD-PARAPET-JOINS-001/WLD-PARAPET-JOINS-001.png) |
+| WLD-PARAPET-JOINS-001-A13 | [Gallery concave return](surface-variation-kits/WLD-PARAPET-JOINS-001/WLD-PARAPET-JOINS-001.png) |
+| WLD-PARAPET-JOINS-001-A14 | [Gallery inside corner](surface-variation-kits/WLD-PARAPET-JOINS-001/WLD-PARAPET-JOINS-001.png) |
+| WLD-PARAPET-JOINS-001-A15 | [Gallery end stop](surface-variation-kits/WLD-PARAPET-JOINS-001/WLD-PARAPET-JOINS-001.png) |
+| WLD-PARAPET-JOINS-001-A16 | [Gallery slope transition](surface-variation-kits/WLD-PARAPET-JOINS-001/WLD-PARAPET-JOINS-001.png) |
+| PAL-CONSERV-SURF-001-A01 | [Leaf-vine paving repeat](surface-variation-kits/PAL-CONSERV-SURF-001/PAL-CONSERV-SURF-001.png) |
+| PAL-CONSERV-SURF-001-A02 | [Oval-star border repeat](surface-variation-kits/PAL-CONSERV-SURF-001/PAL-CONSERV-SURF-001.png) |
+| PAL-CONSERV-SURF-001-A03 | [Paving border corner](surface-variation-kits/PAL-CONSERV-SURF-001/PAL-CONSERV-SURF-001.png) |
+| PAL-CONSERV-SURF-001-A04 | [Focal ring quadrant](surface-variation-kits/PAL-CONSERV-SURF-001/PAL-CONSERV-SURF-001.png) |
+| PAL-CONSERV-SURF-001-A05 | [Low plinth-screen repeat](surface-variation-kits/PAL-CONSERV-SURF-001/PAL-CONSERV-SURF-001.png) |
+| PAL-CONSERV-SURF-001-A06 | [Foot-rail outside return](surface-variation-kits/PAL-CONSERV-SURF-001/PAL-CONSERV-SURF-001.png) |
+| PAL-CONSERV-SURF-001-A07 | [Foot-rail inside return](surface-variation-kits/PAL-CONSERV-SURF-001/PAL-CONSERV-SURF-001.png) |
+| PAL-CONSERV-SURF-001-A08 | [Foot-rail slope link](surface-variation-kits/PAL-CONSERV-SURF-001/PAL-CONSERV-SURF-001.png) |
+| PAL-CONSERV-SURF-001-A09 | [Low screen end block](surface-variation-kits/PAL-CONSERV-SURF-001/PAL-CONSERV-SURF-001.png) |
+| PAL-CONSERV-SURF-001-A10 | [Conservatory pier foot](surface-variation-kits/PAL-CONSERV-SURF-001/PAL-CONSERV-SURF-001.png) |
+| PAL-CONSERV-SURF-001-A11 | [Water-edge pointed panel](surface-variation-kits/PAL-CONSERV-SURF-001/PAL-CONSERV-SURF-001.png) |
+| PAL-CONSERV-SURF-001-A12 | [Water spill coping](surface-variation-kits/PAL-CONSERV-SURF-001/PAL-CONSERV-SURF-001.png) |
+| PAL-CONSERV-SURF-001-A13 | [Inner curved pool coping](surface-variation-kits/PAL-CONSERV-SURF-001/PAL-CONSERV-SURF-001.png) |
+| PAL-CONSERV-SURF-001-A14 | [Outer curved foot rail](surface-variation-kits/PAL-CONSERV-SURF-001/PAL-CONSERV-SURF-001.png) |
+| PAL-CONSERV-SURF-001-A15 | [Exterior tread-edge piece](surface-variation-kits/PAL-CONSERV-SURF-001/PAL-CONSERV-SURF-001.png) |
+| PAL-CONSERV-SURF-001-A16 | [Door-to-plinth threshold](surface-variation-kits/PAL-CONSERV-SURF-001/PAL-CONSERV-SURF-001.png) |
+| WLD-PARAPET-NEW-001-A01 | [Petal lace straight repeat](surface-variation-kits/WLD-PARAPET-NEW-001/WLD-PARAPET-NEW-001.png) |
+| WLD-PARAPET-NEW-001-A02 | [Petal lace curved repeat](surface-variation-kits/WLD-PARAPET-NEW-001/WLD-PARAPET-NEW-001.png) |
+| WLD-PARAPET-NEW-001-A03 | [Petal lace terminal post](surface-variation-kits/WLD-PARAPET-NEW-001/WLD-PARAPET-NEW-001.png) |
+| WLD-PARAPET-NEW-001-A04 | [Petal lace stepped connector](surface-variation-kits/WLD-PARAPET-NEW-001/WLD-PARAPET-NEW-001.png) |
+| WLD-PARAPET-NEW-001-A05 | [Crescent veil straight repeat](surface-variation-kits/WLD-PARAPET-NEW-001/WLD-PARAPET-NEW-001.png) |
+| WLD-PARAPET-NEW-001-A06 | [Crescent veil curved repeat](surface-variation-kits/WLD-PARAPET-NEW-001/WLD-PARAPET-NEW-001.png) |
+| WLD-PARAPET-NEW-001-A07 | [Crescent veil terminal post](surface-variation-kits/WLD-PARAPET-NEW-001/WLD-PARAPET-NEW-001.png) |
+| WLD-PARAPET-NEW-001-A08 | [Crescent veil stepped connector](surface-variation-kits/WLD-PARAPET-NEW-001/WLD-PARAPET-NEW-001.png) |
+| WLD-PARAPET-NEW-001-A09 | [Cherry ribbon straight repeat](surface-variation-kits/WLD-PARAPET-NEW-001/WLD-PARAPET-NEW-001.png) |
+| WLD-PARAPET-NEW-001-A10 | [Cherry ribbon curved repeat](surface-variation-kits/WLD-PARAPET-NEW-001/WLD-PARAPET-NEW-001.png) |
+| WLD-PARAPET-NEW-001-A11 | [Cherry ribbon terminal post](surface-variation-kits/WLD-PARAPET-NEW-001/WLD-PARAPET-NEW-001.png) |
+| WLD-PARAPET-NEW-001-A12 | [Cherry ribbon stepped connector](surface-variation-kits/WLD-PARAPET-NEW-001/WLD-PARAPET-NEW-001.png) |
+| WLD-PARAPET-NEW-001-A13 | [Garden petal straight repeat](surface-variation-kits/WLD-PARAPET-NEW-001/WLD-PARAPET-NEW-001.png) |
+| WLD-PARAPET-NEW-001-A14 | [Garden petal curved repeat](surface-variation-kits/WLD-PARAPET-NEW-001/WLD-PARAPET-NEW-001.png) |
+| WLD-PARAPET-NEW-001-A15 | [Garden petal terminal post](surface-variation-kits/WLD-PARAPET-NEW-001/WLD-PARAPET-NEW-001.png) |
+| WLD-PARAPET-NEW-001-A16 | [Garden petal stepped connector](surface-variation-kits/WLD-PARAPET-NEW-001/WLD-PARAPET-NEW-001.png) |
+| GEN-28-A05 | [Boat landing platform](surface-variation-kits/wishing-source-audit/GEN-28-A05.png) |
+| GEN-28-A06 | [Wish lantern](surface-variation-kits/wishing-source-audit/GEN-28-A06.png) |
+| GEN-28-A07 | [Star runestone](surface-variation-kits/wishing-source-audit/GEN-28-A07.png) |
+| GEN-28-A08 | [Wayfinding kiosk](surface-variation-kits/wishing-source-audit/GEN-28-A08.png) |

@@ -1,0 +1,697 @@
+{
+  "sheet_id": "PAL-CONSERV-SURF-001",
+  "name": "Conservatory exterior paving, pool-edge and low foot-rail kit",
+  "owner": "palace",
+  "family": "Stairs, fountains, terraces and courtyards",
+  "source_id": "GEN-36",
+  "count": 16,
+  "source_reference_id": "GEN-36",
+  "source_reference_file": "images/illustrated-boards/GEN-36.png",
+  "source_reference_sha256": "7fb524bc99c2cf1cba0b509241f7776492f70d0a22fb06278ec119d889262dbb",
+  "generation_reference_path": "/workspace/generated_images/exec-934bb31d-9315-4d66-9753-58210ea77449.png",
+  "source_rules": "Source provides observed palette/motifs; owner-requested new variant geometry and hidden backs are proposals",
+  "style_groups": [
+    [
+      "CONSERVATORY-EXTERIOR",
+      "star/rose/leaf paving"
+    ],
+    [
+      "CONSERVATORY-FOOT-RAIL",
+      "low base screen"
+    ],
+    [
+      "CONSERVATORY-WATER-EDGE",
+      "separate retaining/coping"
+    ]
+  ],
+  "parts": [
+    {
+      "asset_id": "PAL-CONSERV-SURF-001-A01",
+      "name": "Leaf-vine paving repeat",
+      "description": "One thin ivory/rose square exterior floor tile with SMALL blue/rose star blossom and delicate green-leaf/gold vine rhythm. Keep motif inside plain margins; DO NOT duplicate the giant focal circle medallion as a field tile.",
+      "style_family": "CONSERVATORY-EXTERIOR",
+      "role": "field-tile",
+      "basis": "newly-requested source-compatible variant/join; visible motifs reused",
+      "dimensions_m_proposed": [
+        1,
+        1,
+        0.025
+      ],
+      "attachment_face": "bottom -Z",
+      "semantic_front": "up +Z",
+      "model_status": "unregistered",
+      "review_status": "pending-reference-review",
+      "alias_ids": [
+        "B25-EXTERIOR-SURFACE-001-A01"
+      ],
+      "function": "field-tile",
+      "target_polycount_proposed": 1200,
+      "rejection_criteria": [
+        "cropped/fused components",
+        "wrong source/style family",
+        "incorrect planar/radial/handed join",
+        "non-flush floor inlay",
+        "broken supports/whole scene instead of part"
+      ],
+      "reference_approval": "pending",
+      "reuse_component_ids": [
+        "GEN-36-S01",
+        "GEN-36-S02",
+        "GEN-36-S03",
+        "GEN-36-S04",
+        "GEN-36-S05",
+        "GEN-36-S06"
+      ]
+    },
+    {
+      "asset_id": "PAL-CONSERV-SURF-001-A02",
+      "name": "Oval-star border repeat",
+      "description": "One short thin exterior floor border with the source linked blue/rose oval star panels and fine gold lines. Equal end phase, flush inlay.",
+      "style_family": "CONSERVATORY-EXTERIOR",
+      "role": "floor-border",
+      "basis": "newly-requested source-compatible variant/join; visible motifs reused",
+      "dimensions_m_proposed": [
+        1,
+        0.2,
+        0.025
+      ],
+      "attachment_face": "bottom -Z",
+      "semantic_front": "up +Z",
+      "model_status": "unregistered",
+      "review_status": "pending-reference-review",
+      "alias_ids": [
+        "B25-EXTERIOR-SURFACE-001-A02"
+      ],
+      "function": "floor-border",
+      "target_polycount_proposed": 1200,
+      "rejection_criteria": [
+        "cropped/fused components",
+        "wrong source/style family",
+        "incorrect planar/radial/handed join",
+        "non-flush floor inlay",
+        "broken supports/whole scene instead of part"
+      ],
+      "reference_approval": "pending",
+      "reuse_component_ids": [
+        "GEN-36-S01",
+        "GEN-36-S02",
+        "GEN-36-S03",
+        "GEN-36-S04",
+        "GEN-36-S05",
+        "GEN-36-S06"
+      ]
+    },
+    {
+      "asset_id": "PAL-CONSERV-SURF-001-A03",
+      "name": "Paving border corner",
+      "description": "One thin90-degree flat corner of the same oval-star paving border, not a raised wall.",
+      "style_family": "CONSERVATORY-EXTERIOR",
+      "role": "floor-corner",
+      "basis": "newly-requested source-compatible variant/join; visible motifs reused",
+      "dimensions_m_proposed": [
+        1,
+        0.2,
+        0.025
+      ],
+      "attachment_face": "bottom -Z",
+      "semantic_front": "up +Z",
+      "model_status": "unregistered",
+      "review_status": "pending-reference-review",
+      "alias_ids": [
+        "B25-EXTERIOR-SURFACE-001-A03"
+      ],
+      "function": "floor-corner",
+      "target_polycount_proposed": 1200,
+      "rejection_criteria": [
+        "cropped/fused components",
+        "wrong source/style family",
+        "incorrect planar/radial/handed join",
+        "non-flush floor inlay",
+        "broken supports/whole scene instead of part"
+      ],
+      "reference_approval": "pending",
+      "reuse_component_ids": [
+        "GEN-36-S01",
+        "GEN-36-S02",
+        "GEN-36-S03",
+        "GEN-36-S04",
+        "GEN-36-S05",
+        "GEN-36-S06"
+      ]
+    },
+    {
+      "asset_id": "PAL-CONSERV-SURF-001-A04",
+      "name": "Focal ring quadrant",
+      "description": "One flat quarter-ring segment around the source pink/blue star focal insert. Reuse source complete star centre separately; clean radial ends, no full medallion.",
+      "style_family": "CONSERVATORY-EXTERIOR",
+      "role": "floor-medallion-quarter",
+      "basis": "newly-requested source-compatible variant/join; visible motifs reused",
+      "dimensions_m_proposed": [
+        0.5,
+        0.5,
+        0.025
+      ],
+      "attachment_face": "bottom -Z",
+      "semantic_front": "up +Z",
+      "model_status": "unregistered",
+      "review_status": "pending-reference-review",
+      "alias_ids": [
+        "B25-EXTERIOR-SURFACE-001-A04"
+      ],
+      "function": "floor-medallion-quarter",
+      "target_polycount_proposed": 1200,
+      "rejection_criteria": [
+        "cropped/fused components",
+        "wrong source/style family",
+        "incorrect planar/radial/handed join",
+        "non-flush floor inlay",
+        "broken supports/whole scene instead of part"
+      ],
+      "reference_approval": "pending",
+      "reuse_component_ids": [
+        "GEN-36-S01",
+        "GEN-36-S02",
+        "GEN-36-S03",
+        "GEN-36-S04",
+        "GEN-36-S05",
+        "GEN-36-S06"
+      ]
+    },
+    {
+      "asset_id": "PAL-CONSERV-SURF-001-A05",
+      "name": "Low plinth-screen repeat",
+      "description": "One VERY LOW narrow patterned foot rail/plinth screen beneath the conservatory wall: source tiny ivory/gold diamond/star lattice on a modest solid marble foot, clean backed mounting face. Not a human-height terrace guard.",
+      "style_family": "CONSERVATORY-FOOT-RAIL",
+      "role": "foot-rail-repeat",
+      "basis": "newly-requested source-compatible variant/join; visible motifs reused",
+      "dimensions_m_proposed": [
+        0.6,
+        0.08,
+        0.18
+      ],
+      "attachment_face": "rear at plinth/end profiles",
+      "semantic_front": "+Y",
+      "model_status": "unregistered",
+      "review_status": "pending-reference-review",
+      "alias_ids": [
+        "B25-EXTERIOR-SURFACE-001-A05"
+      ],
+      "function": "foot-rail-repeat",
+      "target_polycount_proposed": 1200,
+      "rejection_criteria": [
+        "cropped/fused components",
+        "wrong source/style family",
+        "incorrect planar/radial/handed join",
+        "non-flush floor inlay",
+        "broken supports/whole scene instead of part"
+      ],
+      "reference_approval": "pending",
+      "reuse_component_ids": [
+        "GEN-36-S01",
+        "GEN-36-S02",
+        "GEN-36-S03",
+        "GEN-36-S04",
+        "GEN-36-S05",
+        "GEN-36-S06"
+      ]
+    },
+    {
+      "asset_id": "PAL-CONSERV-SURF-001-A06",
+      "name": "Foot-rail outside return",
+      "description": "One small outward90-degree corner of the SAME very low conservatory plinth screen, same profile.",
+      "style_family": "CONSERVATORY-FOOT-RAIL",
+      "role": "foot-rail-corner",
+      "basis": "newly-requested source-compatible variant/join; visible motifs reused",
+      "dimensions_m_proposed": [
+        0.6,
+        0.08,
+        0.18
+      ],
+      "attachment_face": "rear at plinth/end profiles",
+      "semantic_front": "+Y",
+      "model_status": "unregistered",
+      "review_status": "pending-reference-review",
+      "alias_ids": [
+        "B25-EXTERIOR-SURFACE-001-A06"
+      ],
+      "function": "foot-rail-corner",
+      "target_polycount_proposed": 1200,
+      "rejection_criteria": [
+        "cropped/fused components",
+        "wrong source/style family",
+        "incorrect planar/radial/handed join",
+        "non-flush floor inlay",
+        "broken supports/whole scene instead of part"
+      ],
+      "reference_approval": "pending",
+      "reuse_component_ids": [
+        "GEN-36-S01",
+        "GEN-36-S02",
+        "GEN-36-S03",
+        "GEN-36-S04",
+        "GEN-36-S05",
+        "GEN-36-S06"
+      ]
+    },
+    {
+      "asset_id": "PAL-CONSERV-SURF-001-A07",
+      "name": "Foot-rail inside return",
+      "description": "One small inward90-degree corner of the SAME very low screen; separate from outside corner.",
+      "style_family": "CONSERVATORY-FOOT-RAIL",
+      "role": "foot-rail-corner",
+      "basis": "newly-requested source-compatible variant/join; visible motifs reused",
+      "dimensions_m_proposed": [
+        0.6,
+        0.08,
+        0.18
+      ],
+      "attachment_face": "rear at plinth/end profiles",
+      "semantic_front": "+Y",
+      "model_status": "unregistered",
+      "review_status": "pending-reference-review",
+      "alias_ids": [
+        "B25-EXTERIOR-SURFACE-001-A07"
+      ],
+      "function": "foot-rail-corner",
+      "target_polycount_proposed": 1200,
+      "rejection_criteria": [
+        "cropped/fused components",
+        "wrong source/style family",
+        "incorrect planar/radial/handed join",
+        "non-flush floor inlay",
+        "broken supports/whole scene instead of part"
+      ],
+      "reference_approval": "pending",
+      "reuse_component_ids": [
+        "GEN-36-S01",
+        "GEN-36-S02",
+        "GEN-36-S03",
+        "GEN-36-S04",
+        "GEN-36-S05",
+        "GEN-36-S06"
+      ]
+    },
+    {
+      "asset_id": "PAL-CONSERV-SURF-001-A08",
+      "name": "Foot-rail slope link",
+      "description": "One short inclined-to-flat low plinth screen/coping junction for its adjacent steps, source tiny arches/diamond edging, no full flight.",
+      "style_family": "CONSERVATORY-FOOT-RAIL",
+      "role": "foot-rail-transition",
+      "basis": "newly-requested source-compatible variant/join; visible motifs reused",
+      "dimensions_m_proposed": [
+        0.6,
+        0.08,
+        0.18
+      ],
+      "attachment_face": "rear at plinth/end profiles",
+      "semantic_front": "+Y",
+      "model_status": "unregistered",
+      "review_status": "pending-reference-review",
+      "alias_ids": [
+        "B25-EXTERIOR-SURFACE-001-A08"
+      ],
+      "function": "foot-rail-transition",
+      "target_polycount_proposed": 1200,
+      "rejection_criteria": [
+        "cropped/fused components",
+        "wrong source/style family",
+        "incorrect planar/radial/handed join",
+        "non-flush floor inlay",
+        "broken supports/whole scene instead of part"
+      ],
+      "reference_approval": "pending",
+      "reuse_component_ids": [
+        "GEN-36-S01",
+        "GEN-36-S02",
+        "GEN-36-S03",
+        "GEN-36-S04",
+        "GEN-36-S05",
+        "GEN-36-S06"
+      ]
+    },
+    {
+      "asset_id": "PAL-CONSERV-SURF-001-A09",
+      "name": "Low screen end block",
+      "description": "A small plain ivory/rose plinth end block with restrained star inset, no giant balustrade post.",
+      "style_family": "CONSERVATORY-FOOT-RAIL",
+      "role": "foot-rail-end",
+      "basis": "newly-requested source-compatible variant/join; visible motifs reused",
+      "dimensions_m_proposed": [
+        0.6,
+        0.08,
+        0.18
+      ],
+      "attachment_face": "rear at plinth/end profiles",
+      "semantic_front": "+Y",
+      "model_status": "unregistered",
+      "review_status": "pending-reference-review",
+      "alias_ids": [
+        "B25-EXTERIOR-SURFACE-001-A09"
+      ],
+      "function": "foot-rail-end",
+      "target_polycount_proposed": 1200,
+      "rejection_criteria": [
+        "cropped/fused components",
+        "wrong source/style family",
+        "incorrect planar/radial/handed join",
+        "non-flush floor inlay",
+        "broken supports/whole scene instead of part"
+      ],
+      "reference_approval": "pending",
+      "reuse_component_ids": [
+        "GEN-36-S01",
+        "GEN-36-S02",
+        "GEN-36-S03",
+        "GEN-36-S04",
+        "GEN-36-S05",
+        "GEN-36-S06"
+      ]
+    },
+    {
+      "asset_id": "PAL-CONSERV-SURF-001-A10",
+      "name": "Conservatory pier foot",
+      "description": "A single modest faceted ivory/rose marble foot shoe with gold lip receiving an existing slender conservatory rib/pier. No full column.",
+      "style_family": "CONSERVATORY-FOOT-RAIL",
+      "role": "pillar-foot",
+      "basis": "newly-requested source-compatible variant/join; visible motifs reused",
+      "dimensions_m_proposed": [
+        0.6,
+        0.12,
+        0.16
+      ],
+      "attachment_face": "bearing face",
+      "semantic_front": "outward radial face",
+      "model_status": "unregistered",
+      "review_status": "pending-reference-review",
+      "alias_ids": [
+        "B25-EXTERIOR-SURFACE-001-A10"
+      ],
+      "function": "pillar-foot",
+      "target_polycount_proposed": 1200,
+      "rejection_criteria": [
+        "cropped/fused components",
+        "wrong source/style family",
+        "incorrect planar/radial/handed join",
+        "non-flush floor inlay",
+        "broken supports/whole scene instead of part"
+      ],
+      "reference_approval": "pending",
+      "reuse_component_ids": [
+        "GEN-36-S01",
+        "GEN-36-S02",
+        "GEN-36-S03",
+        "GEN-36-S04",
+        "GEN-36-S05",
+        "GEN-36-S06"
+      ]
+    },
+    {
+      "asset_id": "PAL-CONSERV-SURF-001-A11",
+      "name": "Water-edge pointed panel",
+      "description": "A short source water-terrace retaining-face panel with shallow pointed relief/inset, backed stone, modest gold trim. This is separate from the low wall foot rail.",
+      "style_family": "CONSERVATORY-WATER-EDGE",
+      "role": "water-edge-panel",
+      "basis": "newly-requested source-compatible variant/join; visible motifs reused",
+      "dimensions_m_proposed": [
+        0.6,
+        0.12,
+        0.16
+      ],
+      "attachment_face": "rear -Y",
+      "semantic_front": "+Y",
+      "model_status": "unregistered",
+      "review_status": "pending-reference-review",
+      "alias_ids": [
+        "B25-EXTERIOR-SURFACE-001-A11"
+      ],
+      "function": "water-edge-panel",
+      "target_polycount_proposed": 1200,
+      "rejection_criteria": [
+        "cropped/fused components",
+        "wrong source/style family",
+        "incorrect planar/radial/handed join",
+        "non-flush floor inlay",
+        "broken supports/whole scene instead of part"
+      ],
+      "reference_approval": "pending",
+      "reuse_component_ids": [
+        "GEN-36-S01",
+        "GEN-36-S02",
+        "GEN-36-S03",
+        "GEN-36-S04",
+        "GEN-36-S05",
+        "GEN-36-S06"
+      ]
+    },
+    {
+      "asset_id": "PAL-CONSERV-SURF-001-A12",
+      "name": "Water spill coping",
+      "description": "One clean marble/gold spill-edge lip and shallow water outlet mouth, no flowing water modeled, no complete fountain.",
+      "style_family": "CONSERVATORY-WATER-EDGE",
+      "role": "water-coping",
+      "basis": "newly-requested source-compatible variant/join; visible motifs reused",
+      "dimensions_m_proposed": [
+        0.6,
+        0.12,
+        0.16
+      ],
+      "attachment_face": "rear -Y",
+      "semantic_front": "+Y",
+      "model_status": "unregistered",
+      "review_status": "pending-reference-review",
+      "alias_ids": [
+        "B25-EXTERIOR-SURFACE-001-A12"
+      ],
+      "function": "water-coping",
+      "target_polycount_proposed": 1200,
+      "rejection_criteria": [
+        "cropped/fused components",
+        "wrong source/style family",
+        "incorrect planar/radial/handed join",
+        "non-flush floor inlay",
+        "broken supports/whole scene instead of part"
+      ],
+      "reference_approval": "pending",
+      "reuse_component_ids": [
+        "GEN-36-S01",
+        "GEN-36-S02",
+        "GEN-36-S03",
+        "GEN-36-S04",
+        "GEN-36-S05",
+        "GEN-36-S06"
+      ]
+    },
+    {
+      "asset_id": "PAL-CONSERV-SURF-001-A13",
+      "name": "Inner curved pool coping",
+      "description": "One smooth concave shallow marble basin/path coping segment with matched radial end planes, no water.",
+      "style_family": "CONSERVATORY-WATER-EDGE",
+      "role": "water-coping",
+      "basis": "newly-requested source-compatible variant/join; visible motifs reused",
+      "dimensions_m_proposed": [
+        0.6,
+        0.12,
+        0.16
+      ],
+      "attachment_face": "rear -Y",
+      "semantic_front": "+Y",
+      "model_status": "unregistered",
+      "review_status": "pending-reference-review",
+      "alias_ids": [
+        "B25-EXTERIOR-SURFACE-001-A13"
+      ],
+      "function": "water-coping",
+      "target_polycount_proposed": 1200,
+      "rejection_criteria": [
+        "cropped/fused components",
+        "wrong source/style family",
+        "incorrect planar/radial/handed join",
+        "non-flush floor inlay",
+        "broken supports/whole scene instead of part"
+      ],
+      "reference_approval": "pending",
+      "reuse_component_ids": [
+        "GEN-36-S01",
+        "GEN-36-S02",
+        "GEN-36-S03",
+        "GEN-36-S04",
+        "GEN-36-S05",
+        "GEN-36-S06"
+      ]
+    },
+    {
+      "asset_id": "PAL-CONSERV-SURF-001-A14",
+      "name": "Outer curved foot rail",
+      "description": "One gentle convex low conservatory plinth-screen segment, tiny diamond/star lattice matched to A05. Not a full circular balcony.",
+      "style_family": "CONSERVATORY-FOOT-RAIL",
+      "role": "foot-rail-curve",
+      "basis": "newly-requested source-compatible variant/join; visible motifs reused",
+      "dimensions_m_proposed": [
+        0.6,
+        0.08,
+        0.18
+      ],
+      "attachment_face": "rear at plinth/end profiles",
+      "semantic_front": "+Y",
+      "model_status": "unregistered",
+      "review_status": "pending-reference-review",
+      "alias_ids": [
+        "B25-EXTERIOR-SURFACE-001-A14"
+      ],
+      "function": "foot-rail-curve",
+      "target_polycount_proposed": 1200,
+      "rejection_criteria": [
+        "cropped/fused components",
+        "wrong source/style family",
+        "incorrect planar/radial/handed join",
+        "non-flush floor inlay",
+        "broken supports/whole scene instead of part"
+      ],
+      "reference_approval": "pending",
+      "reuse_component_ids": [
+        "GEN-36-S01",
+        "GEN-36-S02",
+        "GEN-36-S03",
+        "GEN-36-S04",
+        "GEN-36-S05",
+        "GEN-36-S06"
+      ]
+    },
+    {
+      "asset_id": "PAL-CONSERV-SURF-001-A15",
+      "name": "Exterior tread-edge piece",
+      "description": "One shallow dry conservatory exterior tread/nosing section with its own rose/blue geometric edge inlay and marble riser. No complete interior staircase.",
+      "style_family": "CONSERVATORY-EXTERIOR",
+      "role": "stair-tread",
+      "basis": "newly-requested source-compatible variant/join; visible motifs reused",
+      "dimensions_m_proposed": [
+        0.8,
+        0.5,
+        0.08
+      ],
+      "attachment_face": "bottom -Z",
+      "semantic_front": "up +Z",
+      "model_status": "unregistered",
+      "review_status": "pending-reference-review",
+      "alias_ids": [
+        "B25-EXTERIOR-SURFACE-001-A15"
+      ],
+      "function": "stair-tread",
+      "target_polycount_proposed": 1200,
+      "rejection_criteria": [
+        "cropped/fused components",
+        "wrong source/style family",
+        "incorrect planar/radial/handed join",
+        "non-flush floor inlay",
+        "broken supports/whole scene instead of part"
+      ],
+      "reference_approval": "pending",
+      "reuse_component_ids": [
+        "GEN-36-S01",
+        "GEN-36-S02",
+        "GEN-36-S03",
+        "GEN-36-S04",
+        "GEN-36-S05",
+        "GEN-36-S06"
+      ]
+    },
+    {
+      "asset_id": "PAL-CONSERV-SURF-001-A16",
+      "name": "Door-to-plinth threshold",
+      "description": "One simple flat exterior doorway threshold meeting the low screen base, source small star/leaf edge, no door/arch/gate.",
+      "style_family": "CONSERVATORY-EXTERIOR",
+      "role": "floor-threshold",
+      "basis": "newly-requested source-compatible variant/join; visible motifs reused",
+      "dimensions_m_proposed": [
+        1,
+        0.2,
+        0.025
+      ],
+      "attachment_face": "bottom -Z",
+      "semantic_front": "up +Z",
+      "model_status": "unregistered",
+      "review_status": "pending-reference-review",
+      "alias_ids": [
+        "B25-EXTERIOR-SURFACE-001-A16"
+      ],
+      "function": "floor-threshold",
+      "target_polycount_proposed": 1200,
+      "rejection_criteria": [
+        "cropped/fused components",
+        "wrong source/style family",
+        "incorrect planar/radial/handed join",
+        "non-flush floor inlay",
+        "broken supports/whole scene instead of part"
+      ],
+      "reference_approval": "pending",
+      "reuse_component_ids": [
+        "GEN-36-S01",
+        "GEN-36-S02",
+        "GEN-36-S03",
+        "GEN-36-S04",
+        "GEN-36-S05",
+        "GEN-36-S06"
+      ]
+    }
+  ],
+  "prompt": "Correct this conservatory component sheet for our ORIGINAL palace, not a separate map build. Replace the title identifier B25-EXTERIOR-SURFACE-001 with PAL-CONSERV-SURF-001 and replace that same prefix in EVERY A01\u2013A16 caption; preserve all short part names and grid positions. Geometry corrections: A05/A06/A07/A08/A14 LOW FOOT RAILS must use the ORIGINAL conservatory plinth pattern: very shallow ivory/gold LINKED DIAMOND-AND-OVAL lattice with small gold star medallions and tiny blue accents. REMOVE the invented repeated small pointed church-window arches. Keep the foot rail low and narrow on a plain modest stone plinth, same pattern through straight/outside/inside/slope/curve variants. It is not a tall guard wall. A10 Conservatory pier foot: REMOVE the cropped tall column above the foot; show just one complete modest faceted marble foot shoe and gold leaf collar with an empty flat receiving face, all uncropped. A16 Door-to-plinth threshold: REMOVE the tall/cropped post attached on the right; leave one flat complete threshold slab with subtle source star/leaf edge and a shallow clean attachment notch only. A04 Focal ring quadrant must be an ANNULAR quarter-ring: remove the giant blue star centre fragment, leave its rose/ivory/gold ring sector around an EMPTY central quarter-circle cutout; the complete star centre already exists separately. Keep other objects, source ivory/rose marble, blue/rose star/leaf paving, thin gold, title words and all sixteen items unchanged. No new palace, map building, flowers or roof. Clear complete isolated pieces, no cropped supports or fused extra neighbors.",
+  "generator": "image_gen.imagegen",
+  "outputs": [
+    {
+      "sheet_id": "PAL-CONSERV-SURF-001",
+      "file": "surface-variation-kits/PAL-CONSERV-SURF-001/PAL-CONSERV-SURF-001.png",
+      "sha256": "69f5a93493bc8bfe85a4080e11670d8bccb75f8e74915b37f5cad907f2e3fc61",
+      "original_file": "/workspace/generated_images/exec-c86eb181-41fc-4a33-a55d-f264ec42f716.png",
+      "generator": "image_gen.imagegen",
+      "prompt_key": "prompt",
+      "reference_path": "/workspace/generated_images/exec-934bb31d-9315-4d66-9753-58210ea77449.png",
+      "review_status": "pending-reference-review",
+      "actual_input_file": "surface-variation-kits/PAL-CONSERV-SURF-001/rejected-drafts/B25-EXTERIOR-SURFACE-001-R01.png",
+      "actual_input_sha256": "bdf48edc880b3e521cbf417ee7e683a7b1acc5fac68bbe000b3a04ea98bdbc89"
+    }
+  ],
+  "generation_attempts": [],
+  "review_status": "pending-reference-review",
+  "actual_geometry_or_texture_seams_verified": false,
+  "models_generated": 0,
+  "reuse_reference_ids": [
+    "GEN-36"
+  ],
+  "repeat_contract": {
+    "field_rule": "Closed small motifs inside common plain margins; hero medallion uses existing GEN-36-S05",
+    "border_rule": "One oval/star period; identical end line offsets",
+    "foot_rail_rule": "Same low screen profile through straight/curve/inside/outside returns; normalize to actual source plinth height",
+    "water_edge_rule": "Retaining panel/coping independent of low foot screen; flowing water is runtime effect",
+    "guard_rule": "Use complete terrace parapet separately where the walkway needs a guard"
+  },
+  "reuse_component_ids": [
+    "GEN-36-S01",
+    "GEN-36-S02",
+    "GEN-36-S03",
+    "GEN-36-S04",
+    "GEN-36-S05",
+    "GEN-36-S06"
+  ],
+  "previous_attempts": [
+    {
+      "sheet_id": "B25-EXTERIOR-SURFACE-001",
+      "file": "surface-variation-kits/PAL-CONSERV-SURF-001/rejected-drafts/B25-EXTERIOR-SURFACE-001-R01.png",
+      "sha256": "bdf48edc880b3e521cbf417ee7e683a7b1acc5fac68bbe000b3a04ea98bdbc89",
+      "original_file": "/workspace/generated_images/exec-934bb31d-9315-4d66-9753-58210ea77449.png",
+      "generator": "image_gen.imagegen",
+      "prompt_key": "prompt",
+      "reference_path": "/workspace/birthday-castle/docs/asset-image-library/images/illustrated-boards/GEN-36.png",
+      "review_status": "superseded-provisional-map-label-and-source-footrail-refinement",
+      "canonical_sheet_id": "PAL-CONSERV-SURF-001"
+    }
+  ],
+  "provisional_sheet_alias": "B25-EXTERIOR-SURFACE-001",
+  "scope": "Original palace conservatory exterior component study, not a new map building",
+  "original_prompt": "Make a clean high-resolution named component reference sheet, not a whole room/building. Use ONLY the one supplied source for material/motif vocabulary. Owner-requested new variations and junctions must stay coordinated with it. Separate complete objects, no fused neighbors, no cropped silhouettes, no shadows over patterns, no melting scrolls or warped rails. Straight edges/columns remain straight; thin gold stays thin. Warm-white background, even light. Print exact full ID AND short name below EVERY item, title above. One object per cell, no duplicate alternate views. Palette/style follows this source. Source illustrations are not measured models; do not invent fixed palace dimensions. No people, whole buildings, scenery, plants or loose decoration glued onto parts.\nTitle: PAL-CONSERV-SURF-001 \u2014 Conservatory exterior paving, pool-edge and low foot-rail kit. Exactly 16 items, 4-by-4 grid. Exactly16 isolated small exterior conservatory components in4-by-4 grid. The owner specifically identifies DIFFERENT exterior paving and FOOT RAIL. Preserve the reference leaf-vine/star paving, tiny low wall-base screen, dry step trim and separate water-terrace coping. Low foot rail is a small plinth treatment, not a tall palace parapet. Do not redraw the complete greenhouse, its roof, rooms, fountains or a whole garden. Tiles are FLAT flush inlays, not raised plaques; rail/edge parts show sensible full depth. Each piece named/ID below.\nPAL-CONSERV-SURF-001-A01 \u2014 Leaf-vine paving repeat: One thin ivory/rose square exterior floor tile with SMALL blue/rose star blossom and delicate green-leaf/gold vine rhythm. Keep motif inside plain margins; DO NOT duplicate the giant focal circle medallion as a field tile.\nPAL-CONSERV-SURF-001-A02 \u2014 Oval-star border repeat: One short thin exterior floor border with the source linked blue/rose oval star panels and fine gold lines. Equal end phase, flush inlay.\nPAL-CONSERV-SURF-001-A03 \u2014 Paving border corner: One thin90-degree flat corner of the same oval-star paving border, not a raised wall.\nPAL-CONSERV-SURF-001-A04 \u2014 Focal ring quadrant: One flat quarter-ring segment around the source pink/blue star focal insert. Reuse source complete star centre separately; clean radial ends, no full medallion.\nPAL-CONSERV-SURF-001-A05 \u2014 Low plinth-screen repeat: One VERY LOW narrow patterned foot rail/plinth screen beneath the conservatory wall: source tiny ivory/gold diamond/star lattice on a modest solid marble foot, clean backed mounting face. Not a human-height terrace guard.\nPAL-CONSERV-SURF-001-A06 \u2014 Foot-rail outside return: One small outward90-degree corner of the SAME very low conservatory plinth screen, same profile.\nPAL-CONSERV-SURF-001-A07 \u2014 Foot-rail inside return: One small inward90-degree corner of the SAME very low screen; separate from outside corner.\nPAL-CONSERV-SURF-001-A08 \u2014 Foot-rail slope link: One short inclined-to-flat low plinth screen/coping junction for its adjacent steps, source tiny arches/diamond edging, no full flight.\nPAL-CONSERV-SURF-001-A09 \u2014 Low screen end block: A small plain ivory/rose plinth end block with restrained star inset, no giant balustrade post.\nPAL-CONSERV-SURF-001-A10 \u2014 Conservatory pier foot: A single modest faceted ivory/rose marble foot shoe with gold lip receiving an existing slender conservatory rib/pier. No full column.\nPAL-CONSERV-SURF-001-A11 \u2014 Water-edge pointed panel: A short source water-terrace retaining-face panel with shallow pointed relief/inset, backed stone, modest gold trim. This is separate from the low wall foot rail.\nPAL-CONSERV-SURF-001-A12 \u2014 Water spill coping: One clean marble/gold spill-edge lip and shallow water outlet mouth, no flowing water modeled, no complete fountain.\nPAL-CONSERV-SURF-001-A13 \u2014 Inner curved pool coping: One smooth concave shallow marble basin/path coping segment with matched radial end planes, no water.\nPAL-CONSERV-SURF-001-A14 \u2014 Outer curved foot rail: One gentle convex low conservatory plinth-screen segment, tiny diamond/star lattice matched to A05. Not a full circular balcony.\nPAL-CONSERV-SURF-001-A15 \u2014 Exterior tread-edge piece: One shallow dry conservatory exterior tread/nosing section with its own rose/blue geometric edge inlay and marble riser. No complete interior staircase.\nPAL-CONSERV-SURF-001-A16 \u2014 Door-to-plinth threshold: One simple flat exterior doorway threshold meeting the low screen base, source small star/leaf edge, no door/arch/gate.\nPreserve all names/IDs and the requested count. Do not replace details with a new full building or a material swatch sheet.",
+  "review_notes": [
+    "Returned to original palace scope. Provisional B25 label preserved as an alias, not a new map building.",
+    "Low foot-screen changed to source linked diamond/oval/star pattern, distinct from tall water-edge panels. Cropped column fragments removed.",
+    "Actual foot-screen height, annular inlay radii and water outlet geometry remain proposed."
+  ],
+  "mesh_generation_allowed_without_approval": false
+}

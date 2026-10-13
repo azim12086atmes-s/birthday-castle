@@ -1,0 +1,82 @@
+{
+  "scope": "Original palace rooms, terrace gardens and conservatory only; source-compatible and new optional parapet variants. Map-building generation parked.",
+  "request": "Owner asks for coordinated variety across rooms/outdoors/buildings and more parapets",
+  "source_authority": "Original source for observed motifs; newly requested varieties and hidden joins explicitly proposed",
+  "palette": "Palace rose/ivory marble and gold maintained. Pagoda/cottage retain their own timber and roof palettes.",
+  "planned_sheets": [
+    {
+      "sheet_id": "INT-FLOOR-REPEAT-001",
+      "name": "Great hall, ballroom, gallery and suite floor repeat kits",
+      "owner": "palace",
+      "family": "Interiors and furniture",
+      "source_id": "INT-C01",
+      "count": 16
+    },
+    {
+      "sheet_id": "INT-TRIM-VAR-001",
+      "name": "Four interior wall, cornice and pillar treatment families",
+      "owner": "palace",
+      "family": "Glass, carvings, rails and architectural fittings",
+      "source_id": "INT-C02",
+      "count": 16
+    },
+    {
+      "sheet_id": "PAL-STAIR-VAR-001",
+      "name": "Ballroom, throne, library and conservatory stair sections",
+      "owner": "palace",
+      "family": "Stairs, fountains, terraces and courtyards",
+      "source_id": "GEN-26",
+      "count": 4
+    },
+    {
+      "sheet_id": "GDN-PAVING-VAR-001",
+      "name": "Rose Court and Moon Courtyard paving/edge kits",
+      "owner": "terrain-water-and-planting",
+      "family": "Palace grounds and rose gardens",
+      "source_id": "GEN-14",
+      "count": 16
+    },
+    {
+      "sheet_id": "WLD-PARAPET-JOINS-001",
+      "name": "Four parapet families and missing transition pieces",
+      "owner": "shared-outdoor-props-and-bridge",
+      "family": "Garden and path furniture",
+      "source_id": "GEN-39",
+      "count": 16
+    },
+    {
+      "sheet_id": "PAL-CONSERV-SURF-001",
+      "name": "Conservatory exterior paving, pool-edge and low foot-rail kit",
+      "owner": "palace",
+      "family": "Stairs, fountains, terraces and courtyards",
+      "source_id": "GEN-36",
+      "count": 16,
+      "alias_ids": [
+        "B25-EXTERIOR-SURFACE-001"
+      ]
+    },
+    {
+      "sheet_id": "WLD-PARAPET-NEW-001",
+      "name": "Four new coordinated princess parapet styles",
+      "owner": "shared-outdoor-props-and-bridge",
+      "family": "Garden and path furniture",
+      "source_id": "GEN-39",
+      "count": 16
+    }
+  ],
+  "generation_policy": "One saved reference per image call, source and prompts indexed; reuse existing complete masters and generate only newly requested variants/joins",
+  "repeat_policy": "Field tiles, straight borders, inside/outside corners, endpoints and focal inlays separate; pattern matching requires explicit edge profiles, no AI seam guarantee",
+  "mesh_status": "No Blender or paid 3D calls",
+  "new_style_policy": "Explicit owner-requested alternatives are labelled NEW STYLE, not misrepresented as source extractions. Original designs remain available.",
+  "parked_sheet_ids": [
+    "B06-SURFACE-001",
+    "B08-SURFACE-001",
+    "B12-SURFACE-001"
+  ],
+  "status": "generated-indexed-pending-user-reference-review",
+  "active_generated_sheets": 7,
+  "active_component_count": 100,
+  "new_wishing_designs": 0,
+  "newly_registered_existing_wish_designs": 4,
+  "models_generated": 0
+}

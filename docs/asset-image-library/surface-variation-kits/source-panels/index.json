@@ -1,0 +1,174 @@
+{
+  "panels": [
+    {
+      "image_id": "SRC-SURF-UPPER-STAR-RAIL",
+      "name": "upper-star-rail",
+      "source_id": "GEN-39",
+      "source_file": "images/illustrated-boards/GEN-39.png",
+      "source_sha256": "bbe9f03266ab8b443d0a00780f2b62ee2741e3089f0cad8ab9347cc0cfe4d1d4",
+      "source_box_xyxy": [
+        15,
+        41,
+        876,
+        374
+      ],
+      "file": "surface-variation-kits/source-panels/upper-star-rail.png",
+      "sha256": "5b642b761cf69f9b5f8d50646c09d2e86dfc0344f1550e94a8006cc9d9a14af1",
+      "existing_component_id": "GEN-39-M01",
+      "role": "Direct source extraction; not a new design or counted sheet"
+    },
+    {
+      "image_id": "SRC-SURF-LOWER-FLOWER-WHEEL-RAIL",
+      "name": "lower-flower-wheel-rail",
+      "source_id": "GEN-39",
+      "source_file": "images/illustrated-boards/GEN-39.png",
+      "source_sha256": "bbe9f03266ab8b443d0a00780f2b62ee2741e3089f0cad8ab9347cc0cfe4d1d4",
+      "source_box_xyxy": [
+        883,
+        41,
+        1533,
+        374
+      ],
+      "file": "surface-variation-kits/source-panels/lower-flower-wheel-rail.png",
+      "sha256": "afdfc7528b766097253a18dda26ab42e316aae05c6b8841cc6a965ffea46d4bd",
+      "existing_component_id": "GEN-39-M02",
+      "role": "Direct source extraction; not a new design or counted sheet"
+    },
+    {
+      "image_id": "SRC-SURF-VASE-AND-ARCADE-RAIL",
+      "name": "vase-and-arcade-rail",
+      "source_id": "GEN-39",
+      "source_file": "images/illustrated-boards/GEN-39.png",
+      "source_sha256": "bbe9f03266ab8b443d0a00780f2b62ee2741e3089f0cad8ab9347cc0cfe4d1d4",
+      "source_box_xyxy": [
+        15,
+        389,
+        876,
+        696
+      ],
+      "file": "surface-variation-kits/source-panels/vase-and-arcade-rail.png",
+      "sha256": "f5c3127a00f53fe420fa9c607193c3cf3820158941ed5ce20fc3db63fa765108",
+      "existing_component_id": "GEN-39-M03",
+      "role": "Direct source extraction; not a new design or counted sheet"
+    },
+    {
+      "image_id": "SRC-SURF-COMPACT-GALLERY-RAIL",
+      "name": "compact-gallery-rail",
+      "source_id": "GEN-39",
+      "source_file": "images/illustrated-boards/GEN-39.png",
+      "source_sha256": "bbe9f03266ab8b443d0a00780f2b62ee2741e3089f0cad8ab9347cc0cfe4d1d4",
+      "source_box_xyxy": [
+        883,
+        389,
+        1533,
+        696
+      ],
+      "file": "surface-variation-kits/source-panels/compact-gallery-rail.png",
+      "sha256": "02dbcfa06b8bd28a2741f0f7eb97c65a5752852a8411c2714baf95eec55510ea",
+      "existing_component_id": "GEN-39-M04",
+      "role": "Direct source extraction; not a new design or counted sheet"
+    },
+    {
+      "image_id": "SRC-SURF-RISING-STAIR-RAIL",
+      "name": "rising-stair-rail",
+      "source_id": "GEN-39",
+      "source_file": "images/illustrated-boards/GEN-39.png",
+      "source_sha256": "bbe9f03266ab8b443d0a00780f2b62ee2741e3089f0cad8ab9347cc0cfe4d1d4",
+      "source_box_xyxy": [
+        15,
+        707,
+        876,
+        1019
+      ],
+      "file": "surface-variation-kits/source-panels/rising-stair-rail.png",
+      "sha256": "8aadf482cd7a1000edb479903ddd30895ad3e433ce24e42d7358b5e47e2868cd",
+      "existing_component_id": "GEN-39-M05",
+      "role": "Direct source extraction; not a new design or counted sheet"
+    },
+    {
+      "image_id": "SRC-SURF-CORNER-CURVED-RAIL",
+      "name": "corner-curved-rail",
+      "source_id": "GEN-39",
+      "source_file": "images/illustrated-boards/GEN-39.png",
+      "source_sha256": "bbe9f03266ab8b443d0a00780f2b62ee2741e3089f0cad8ab9347cc0cfe4d1d4",
+      "source_box_xyxy": [
+        883,
+        707,
+        1533,
+        1019
+      ],
+      "file": "surface-variation-kits/source-panels/corner-curved-rail.png",
+      "sha256": "49a83bb2020c2399678b165683540b099d930eea486065cdd25ed9cddb6eca5f",
+      "existing_component_id": "GEN-39-M06",
+      "role": "Direct source extraction; not a new design or counted sheet"
+    },
+    {
+      "image_id": "SRC-SURF-B06-MISTY-PAGODA",
+      "name": "B06-misty-pagoda",
+      "source_id": "GEN-27",
+      "source_file": "images/illustrated-boards/GEN-27.png",
+      "source_sha256": "24c53bf783000da360b391b29640a0c2be9c30420aaf8c7152031139f5ede92f",
+      "source_box_xyxy": [
+        8,
+        348,
+        386,
+        679
+      ],
+      "file": "surface-variation-kits/source-panels/B06-misty-pagoda.png",
+      "sha256": "c2c4c10ec9cdd4105767bbcd2efdf5e74137b3c984d15ddee96436469a76ac5a",
+      "existing_component_id": null,
+      "role": "Direct source extraction; not a new design or counted sheet"
+    },
+    {
+      "image_id": "SRC-SURF-B08-COLOSSEUM",
+      "name": "B08-colosseum",
+      "source_id": "GEN-27",
+      "source_file": "images/illustrated-boards/GEN-27.png",
+      "source_sha256": "24c53bf783000da360b391b29640a0c2be9c30420aaf8c7152031139f5ede92f",
+      "source_box_xyxy": [
+        773,
+        348,
+        1147,
+        679
+      ],
+      "file": "surface-variation-kits/source-panels/B08-colosseum.png",
+      "sha256": "8e3cdff44057536af9d175217b98d16efdb7f708eccd4f4a656549ff5f3d0114",
+      "existing_component_id": null,
+      "role": "Direct source extraction; not a new design or counted sheet"
+    },
+    {
+      "image_id": "SRC-SURF-B12-STORYBOOK-COTTAGE",
+      "name": "B12-storybook-cottage",
+      "source_id": "GEN-27",
+      "source_file": "images/illustrated-boards/GEN-27.png",
+      "source_sha256": "24c53bf783000da360b391b29640a0c2be9c30420aaf8c7152031139f5ede92f",
+      "source_box_xyxy": [
+        773,
+        686,
+        1147,
+        1022
+      ],
+      "file": "surface-variation-kits/source-panels/B12-storybook-cottage.png",
+      "sha256": "c535f494f165ab0082afadb8fc7fa2267e11046526734530d4e7769a0843063c",
+      "existing_component_id": null,
+      "role": "Direct source extraction; not a new design or counted sheet"
+    },
+    {
+      "image_id": "SRC-SURF-CONSERVATORY-FOOTRAIL",
+      "name": "Conservatory original outside footrail and paving edge",
+      "source_id": "GEN-36",
+      "source_file": "images/illustrated-boards/GEN-36.png",
+      "source_sha256": "7fb524bc99c2cf1cba0b509241f7776492f70d0a22fb06278ec119d889262dbb",
+      "source_box_xyxy": [
+        307,
+        486,
+        561,
+        617
+      ],
+      "file": "surface-variation-kits/source-panels/conservatory-outside-footrail.png",
+      "sha256": "c93b16b4bb3bbf3c6e257b7975b22c3c42779c1f46b3a84566984bd0c63c8d68",
+      "existing_component_id": "GEN-36-S06",
+      "role": "Direct original pixels, low conservatory plinth screen below glazed bay"
+    }
+  ]
+}

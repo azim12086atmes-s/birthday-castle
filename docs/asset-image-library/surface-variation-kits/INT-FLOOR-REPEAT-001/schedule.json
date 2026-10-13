@@ -1,0 +1,588 @@
+{
+  "sheet_id": "INT-FLOOR-REPEAT-001",
+  "name": "Great hall, ballroom, gallery and suite floor repeat kits",
+  "owner": "palace",
+  "family": "Interiors and furniture",
+  "source_id": "INT-C01",
+  "count": 16,
+  "source_reference_id": "INT-C01",
+  "source_reference_file": "images/interior-components/INT-C01.png",
+  "source_reference_sha256": "5e880ab2fcf33e537a222d4911f421c9e0499dcab0ebae73f78aa5d49d506620",
+  "generation_reference_path": "/workspace/generated_images/exec-50c40c24-482d-4ad9-a532-5f499717a6fe.png",
+  "source_rules": "Source provides observed palette/motifs; owner-requested new variant geometry and hidden backs are proposals",
+  "style_groups": [
+    [
+      "HALL",
+      "Hall",
+      "ivory/rose marble, indigo eight-point star and rose core; diamond/Greek-key border"
+    ],
+    [
+      "BALL",
+      "Ballroom",
+      "periwinkle blue, rose and ivory intersecting petal curves with fine gold, white/rose floral centre"
+    ],
+    [
+      "GALLERY",
+      "Gallery",
+      "cream/rose interlaced circular petals and indigo diamonds, quiet ivory field"
+    ],
+    [
+      "SUITE",
+      "Suite",
+      "rose/ivory rectangular panel rhythm, restrained blue floral inserts, rose butterfly/lotus flourish"
+    ]
+  ],
+  "parts": [
+    {
+      "asset_id": "INT-FLOOR-REPEAT-001-A01",
+      "name": "Hall field repeat",
+      "description": "ONE square flush floor tile, ivory/rose marble, indigo eight-point star and rose core; diamond/Greek-key border. Keep its small motif COMPLETE INSIDE an even plain marble margin on every edge, never a huge central room medallion. All four perimeter edges plain and identical so tiles translate continuously.",
+      "style_family": "HALL",
+      "role": "field-tile",
+      "basis": "newly-requested source-compatible variant/join; visible motifs reused",
+      "dimensions_m_proposed": [
+        1,
+        1,
+        0.025
+      ],
+      "attachment_face": "bottom -Z",
+      "semantic_front": "up +Z",
+      "model_status": "unregistered",
+      "review_status": "pending-reference-review",
+      "function": "field-tile",
+      "target_polycount_proposed": 1200,
+      "rejection_criteria": [
+        "cropped/fused components",
+        "wrong source/style family",
+        "incorrect planar/radial/handed join",
+        "non-flush floor inlay",
+        "broken supports/whole scene instead of part"
+      ],
+      "reference_approval": "pending",
+      "reuse_component_ids": [
+        "GEN-38-M05",
+        "GEN-36-S05"
+      ]
+    },
+    {
+      "asset_id": "INT-FLOOR-REPEAT-001-A02",
+      "name": "Hall border repeat",
+      "description": "ONE narrow straight flush floor border segment in this source style: ivory/rose marble, indigo eight-point star and rose core; diamond/Greek-key border. Gold guide lines enter and leave both short ends at the SAME offsets; use one complete ornament repeat, no terminal post.",
+      "style_family": "HALL",
+      "role": "floor-border",
+      "basis": "newly-requested source-compatible variant/join; visible motifs reused",
+      "dimensions_m_proposed": [
+        1,
+        0.2,
+        0.025
+      ],
+      "attachment_face": "bottom -Z",
+      "semantic_front": "up +Z",
+      "model_status": "unregistered",
+      "review_status": "pending-reference-review",
+      "function": "floor-border",
+      "target_polycount_proposed": 1200,
+      "rejection_criteria": [
+        "cropped/fused components",
+        "wrong source/style family",
+        "incorrect planar/radial/handed join",
+        "non-flush floor inlay",
+        "broken supports/whole scene instead of part"
+      ],
+      "reference_approval": "pending",
+      "reuse_component_ids": [
+        "GEN-38-M05",
+        "GEN-36-S05"
+      ]
+    },
+    {
+      "asset_id": "INT-FLOOR-REPEAT-001-A03",
+      "name": "Hall border corner",
+      "description": "ONE square 90-degree flush inlay corner turning the SAME border smoothly. Outside edges square and flat; not a raised wall, gold line widths match border.",
+      "style_family": "HALL",
+      "role": "floor-corner",
+      "basis": "newly-requested source-compatible variant/join; visible motifs reused",
+      "dimensions_m_proposed": [
+        1,
+        0.2,
+        0.025
+      ],
+      "attachment_face": "bottom -Z",
+      "semantic_front": "up +Z",
+      "model_status": "unregistered",
+      "review_status": "pending-reference-review",
+      "function": "floor-corner",
+      "target_polycount_proposed": 1200,
+      "rejection_criteria": [
+        "cropped/fused components",
+        "wrong source/style family",
+        "incorrect planar/radial/handed join",
+        "non-flush floor inlay",
+        "broken supports/whole scene instead of part"
+      ],
+      "reference_approval": "pending",
+      "reuse_component_ids": [
+        "GEN-38-M05",
+        "GEN-36-S05"
+      ]
+    },
+    {
+      "asset_id": "INT-FLOOR-REPEAT-001-A04",
+      "name": "Hall focal quarter",
+      "description": "ONE FLAT quarter-disc marble inlay wedge for the existing source focal medallion, curved inner motif follows ivory/rose marble, indigo eight-point star and rose core; diamond/Greek-key border. Four rotations compose one focal insert; never present this wedge as a translation-repeat field tile.",
+      "style_family": "HALL",
+      "role": "floor-medallion-quarter",
+      "basis": "newly-requested source-compatible variant/join; visible motifs reused",
+      "dimensions_m_proposed": [
+        0.5,
+        0.5,
+        0.025
+      ],
+      "attachment_face": "bottom -Z",
+      "semantic_front": "up +Z",
+      "model_status": "unregistered",
+      "review_status": "pending-reference-review",
+      "function": "floor-medallion-quarter",
+      "target_polycount_proposed": 1200,
+      "rejection_criteria": [
+        "cropped/fused components",
+        "wrong source/style family",
+        "incorrect planar/radial/handed join",
+        "non-flush floor inlay",
+        "broken supports/whole scene instead of part"
+      ],
+      "reference_approval": "pending",
+      "reuse_component_ids": [
+        "GEN-38-M05",
+        "GEN-36-S05"
+      ]
+    },
+    {
+      "asset_id": "INT-FLOOR-REPEAT-001-A05",
+      "name": "Ballroom field repeat",
+      "description": "ONE square flush floor tile, periwinkle blue, rose and ivory intersecting petal curves with fine gold, white/rose floral centre. Keep its small motif COMPLETE INSIDE an even plain marble margin on every edge, never a huge central room medallion. All four perimeter edges plain and identical so tiles translate continuously.",
+      "style_family": "BALL",
+      "role": "field-tile",
+      "basis": "newly-requested source-compatible variant/join; visible motifs reused",
+      "dimensions_m_proposed": [
+        1,
+        1,
+        0.025
+      ],
+      "attachment_face": "bottom -Z",
+      "semantic_front": "up +Z",
+      "model_status": "unregistered",
+      "review_status": "pending-reference-review",
+      "function": "field-tile",
+      "target_polycount_proposed": 1200,
+      "rejection_criteria": [
+        "cropped/fused components",
+        "wrong source/style family",
+        "incorrect planar/radial/handed join",
+        "non-flush floor inlay",
+        "broken supports/whole scene instead of part"
+      ],
+      "reference_approval": "pending",
+      "reuse_component_ids": [
+        "GEN-38-M05",
+        "GEN-36-S05"
+      ]
+    },
+    {
+      "asset_id": "INT-FLOOR-REPEAT-001-A06",
+      "name": "Ballroom border repeat",
+      "description": "ONE narrow straight flush floor border segment in this source style: periwinkle blue, rose and ivory intersecting petal curves with fine gold, white/rose floral centre. Gold guide lines enter and leave both short ends at the SAME offsets; use one complete ornament repeat, no terminal post.",
+      "style_family": "BALL",
+      "role": "floor-border",
+      "basis": "newly-requested source-compatible variant/join; visible motifs reused",
+      "dimensions_m_proposed": [
+        1,
+        0.2,
+        0.025
+      ],
+      "attachment_face": "bottom -Z",
+      "semantic_front": "up +Z",
+      "model_status": "unregistered",
+      "review_status": "pending-reference-review",
+      "function": "floor-border",
+      "target_polycount_proposed": 1200,
+      "rejection_criteria": [
+        "cropped/fused components",
+        "wrong source/style family",
+        "incorrect planar/radial/handed join",
+        "non-flush floor inlay",
+        "broken supports/whole scene instead of part"
+      ],
+      "reference_approval": "pending",
+      "reuse_component_ids": [
+        "GEN-38-M05",
+        "GEN-36-S05"
+      ]
+    },
+    {
+      "asset_id": "INT-FLOOR-REPEAT-001-A07",
+      "name": "Ballroom border corner",
+      "description": "ONE square 90-degree flush inlay corner turning the SAME border smoothly. Outside edges square and flat; not a raised wall, gold line widths match border.",
+      "style_family": "BALL",
+      "role": "floor-corner",
+      "basis": "newly-requested source-compatible variant/join; visible motifs reused",
+      "dimensions_m_proposed": [
+        1,
+        0.2,
+        0.025
+      ],
+      "attachment_face": "bottom -Z",
+      "semantic_front": "up +Z",
+      "model_status": "unregistered",
+      "review_status": "pending-reference-review",
+      "function": "floor-corner",
+      "target_polycount_proposed": 1200,
+      "rejection_criteria": [
+        "cropped/fused components",
+        "wrong source/style family",
+        "incorrect planar/radial/handed join",
+        "non-flush floor inlay",
+        "broken supports/whole scene instead of part"
+      ],
+      "reference_approval": "pending",
+      "reuse_component_ids": [
+        "GEN-38-M05",
+        "GEN-36-S05"
+      ]
+    },
+    {
+      "asset_id": "INT-FLOOR-REPEAT-001-A08",
+      "name": "Ballroom focal quarter",
+      "description": "ONE FLAT quarter-disc marble inlay wedge for the existing source focal medallion, curved inner motif follows periwinkle blue, rose and ivory intersecting petal curves with fine gold, white/rose floral centre. Four rotations compose one focal insert; never present this wedge as a translation-repeat field tile.",
+      "style_family": "BALL",
+      "role": "floor-medallion-quarter",
+      "basis": "newly-requested source-compatible variant/join; visible motifs reused",
+      "dimensions_m_proposed": [
+        0.5,
+        0.5,
+        0.025
+      ],
+      "attachment_face": "bottom -Z",
+      "semantic_front": "up +Z",
+      "model_status": "unregistered",
+      "review_status": "pending-reference-review",
+      "function": "floor-medallion-quarter",
+      "target_polycount_proposed": 1200,
+      "rejection_criteria": [
+        "cropped/fused components",
+        "wrong source/style family",
+        "incorrect planar/radial/handed join",
+        "non-flush floor inlay",
+        "broken supports/whole scene instead of part"
+      ],
+      "reference_approval": "pending",
+      "reuse_component_ids": [
+        "GEN-38-M05",
+        "GEN-36-S05"
+      ]
+    },
+    {
+      "asset_id": "INT-FLOOR-REPEAT-001-A09",
+      "name": "Gallery field repeat",
+      "description": "ONE square flush floor tile, cream/rose interlaced circular petals and indigo diamonds, quiet ivory field. Keep its small motif COMPLETE INSIDE an even plain marble margin on every edge, never a huge central room medallion. All four perimeter edges plain and identical so tiles translate continuously.",
+      "style_family": "GALLERY",
+      "role": "field-tile",
+      "basis": "newly-requested source-compatible variant/join; visible motifs reused",
+      "dimensions_m_proposed": [
+        1,
+        1,
+        0.025
+      ],
+      "attachment_face": "bottom -Z",
+      "semantic_front": "up +Z",
+      "model_status": "unregistered",
+      "review_status": "pending-reference-review",
+      "function": "field-tile",
+      "target_polycount_proposed": 1200,
+      "rejection_criteria": [
+        "cropped/fused components",
+        "wrong source/style family",
+        "incorrect planar/radial/handed join",
+        "non-flush floor inlay",
+        "broken supports/whole scene instead of part"
+      ],
+      "reference_approval": "pending",
+      "reuse_component_ids": [
+        "GEN-38-M05",
+        "GEN-36-S05"
+      ]
+    },
+    {
+      "asset_id": "INT-FLOOR-REPEAT-001-A10",
+      "name": "Gallery border repeat",
+      "description": "ONE narrow straight flush floor border segment in this source style: cream/rose interlaced circular petals and indigo diamonds, quiet ivory field. Gold guide lines enter and leave both short ends at the SAME offsets; use one complete ornament repeat, no terminal post.",
+      "style_family": "GALLERY",
+      "role": "floor-border",
+      "basis": "newly-requested source-compatible variant/join; visible motifs reused",
+      "dimensions_m_proposed": [
+        1,
+        0.2,
+        0.025
+      ],
+      "attachment_face": "bottom -Z",
+      "semantic_front": "up +Z",
+      "model_status": "unregistered",
+      "review_status": "pending-reference-review",
+      "function": "floor-border",
+      "target_polycount_proposed": 1200,
+      "rejection_criteria": [
+        "cropped/fused components",
+        "wrong source/style family",
+        "incorrect planar/radial/handed join",
+        "non-flush floor inlay",
+        "broken supports/whole scene instead of part"
+      ],
+      "reference_approval": "pending",
+      "reuse_component_ids": [
+        "GEN-38-M05",
+        "GEN-36-S05"
+      ]
+    },
+    {
+      "asset_id": "INT-FLOOR-REPEAT-001-A11",
+      "name": "Gallery border corner",
+      "description": "ONE square 90-degree flush inlay corner turning the SAME border smoothly. Outside edges square and flat; not a raised wall, gold line widths match border.",
+      "style_family": "GALLERY",
+      "role": "floor-corner",
+      "basis": "newly-requested source-compatible variant/join; visible motifs reused",
+      "dimensions_m_proposed": [
+        1,
+        0.2,
+        0.025
+      ],
+      "attachment_face": "bottom -Z",
+      "semantic_front": "up +Z",
+      "model_status": "unregistered",
+      "review_status": "pending-reference-review",
+      "function": "floor-corner",
+      "target_polycount_proposed": 1200,
+      "rejection_criteria": [
+        "cropped/fused components",
+        "wrong source/style family",
+        "incorrect planar/radial/handed join",
+        "non-flush floor inlay",
+        "broken supports/whole scene instead of part"
+      ],
+      "reference_approval": "pending",
+      "reuse_component_ids": [
+        "GEN-38-M05",
+        "GEN-36-S05"
+      ]
+    },
+    {
+      "asset_id": "INT-FLOOR-REPEAT-001-A12",
+      "name": "Gallery focal quarter",
+      "description": "ONE FLAT quarter-disc marble inlay wedge for the existing source focal medallion, curved inner motif follows cream/rose interlaced circular petals and indigo diamonds, quiet ivory field. Four rotations compose one focal insert; never present this wedge as a translation-repeat field tile.",
+      "style_family": "GALLERY",
+      "role": "floor-medallion-quarter",
+      "basis": "newly-requested source-compatible variant/join; visible motifs reused",
+      "dimensions_m_proposed": [
+        0.5,
+        0.5,
+        0.025
+      ],
+      "attachment_face": "bottom -Z",
+      "semantic_front": "up +Z",
+      "model_status": "unregistered",
+      "review_status": "pending-reference-review",
+      "function": "floor-medallion-quarter",
+      "target_polycount_proposed": 1200,
+      "rejection_criteria": [
+        "cropped/fused components",
+        "wrong source/style family",
+        "incorrect planar/radial/handed join",
+        "non-flush floor inlay",
+        "broken supports/whole scene instead of part"
+      ],
+      "reference_approval": "pending",
+      "reuse_component_ids": [
+        "GEN-38-M05",
+        "GEN-36-S05"
+      ]
+    },
+    {
+      "asset_id": "INT-FLOOR-REPEAT-001-A13",
+      "name": "Suite field repeat",
+      "description": "ONE square flush floor tile, rose/ivory rectangular panel rhythm, restrained blue floral inserts, rose butterfly/lotus flourish. Keep its small motif COMPLETE INSIDE an even plain marble margin on every edge, never a huge central room medallion. All four perimeter edges plain and identical so tiles translate continuously.",
+      "style_family": "SUITE",
+      "role": "field-tile",
+      "basis": "newly-requested source-compatible variant/join; visible motifs reused",
+      "dimensions_m_proposed": [
+        1,
+        1,
+        0.025
+      ],
+      "attachment_face": "bottom -Z",
+      "semantic_front": "up +Z",
+      "model_status": "unregistered",
+      "review_status": "pending-reference-review",
+      "function": "field-tile",
+      "target_polycount_proposed": 1200,
+      "rejection_criteria": [
+        "cropped/fused components",
+        "wrong source/style family",
+        "incorrect planar/radial/handed join",
+        "non-flush floor inlay",
+        "broken supports/whole scene instead of part"
+      ],
+      "reference_approval": "pending",
+      "reuse_component_ids": [
+        "GEN-38-M05",
+        "GEN-36-S05"
+      ]
+    },
+    {
+      "asset_id": "INT-FLOOR-REPEAT-001-A14",
+      "name": "Suite border repeat",
+      "description": "ONE narrow straight flush floor border segment in this source style: rose/ivory rectangular panel rhythm, restrained blue floral inserts, rose butterfly/lotus flourish. Gold guide lines enter and leave both short ends at the SAME offsets; use one complete ornament repeat, no terminal post.",
+      "style_family": "SUITE",
+      "role": "floor-border",
+      "basis": "newly-requested source-compatible variant/join; visible motifs reused",
+      "dimensions_m_proposed": [
+        1,
+        0.2,
+        0.025
+      ],
+      "attachment_face": "bottom -Z",
+      "semantic_front": "up +Z",
+      "model_status": "unregistered",
+      "review_status": "pending-reference-review",
+      "function": "floor-border",
+      "target_polycount_proposed": 1200,
+      "rejection_criteria": [
+        "cropped/fused components",
+        "wrong source/style family",
+        "incorrect planar/radial/handed join",
+        "non-flush floor inlay",
+        "broken supports/whole scene instead of part"
+      ],
+      "reference_approval": "pending",
+      "reuse_component_ids": [
+        "GEN-38-M05",
+        "GEN-36-S05"
+      ]
+    },
+    {
+      "asset_id": "INT-FLOOR-REPEAT-001-A15",
+      "name": "Suite border corner",
+      "description": "ONE square 90-degree flush inlay corner turning the SAME border smoothly. Outside edges square and flat; not a raised wall, gold line widths match border.",
+      "style_family": "SUITE",
+      "role": "floor-corner",
+      "basis": "newly-requested source-compatible variant/join; visible motifs reused",
+      "dimensions_m_proposed": [
+        1,
+        0.2,
+        0.025
+      ],
+      "attachment_face": "bottom -Z",
+      "semantic_front": "up +Z",
+      "model_status": "unregistered",
+      "review_status": "pending-reference-review",
+      "function": "floor-corner",
+      "target_polycount_proposed": 1200,
+      "rejection_criteria": [
+        "cropped/fused components",
+        "wrong source/style family",
+        "incorrect planar/radial/handed join",
+        "non-flush floor inlay",
+        "broken supports/whole scene instead of part"
+      ],
+      "reference_approval": "pending",
+      "reuse_component_ids": [
+        "GEN-38-M05",
+        "GEN-36-S05"
+      ]
+    },
+    {
+      "asset_id": "INT-FLOOR-REPEAT-001-A16",
+      "name": "Suite focal quarter",
+      "description": "One flat square quarter-panel of the suite rectangular focal inlay. Four rotations around centre; not a circular medallion or translation-repeat field.",
+      "style_family": "SUITE",
+      "role": "floor-medallion-quarter",
+      "basis": "newly-requested source-compatible variant/join; visible motifs reused",
+      "dimensions_m_proposed": [
+        0.5,
+        0.5,
+        0.025
+      ],
+      "attachment_face": "bottom -Z",
+      "semantic_front": "up +Z",
+      "model_status": "unregistered",
+      "review_status": "pending-reference-review",
+      "function": "floor-medallion-quarter",
+      "target_polycount_proposed": 1200,
+      "rejection_criteria": [
+        "cropped/fused components",
+        "wrong source/style family",
+        "incorrect planar/radial/handed join",
+        "non-flush floor inlay",
+        "broken supports/whole scene instead of part"
+      ],
+      "reference_approval": "pending",
+      "reuse_component_ids": [
+        "GEN-38-M05",
+        "GEN-36-S05"
+      ]
+    }
+  ],
+  "prompt": "Correct this sixteen-cell palace FLOOR COMPONENT sheet without changing any title, ID/name caption, row order or grid. ONLY change first-column A01,A05,A09,A13 and last-cell A16. For FIRST COLUMN field repeats, remove the complete room-medallion composition and every decorative perimeter frame. Each is ONE simple SQUARE thin walking tile with a SMALL closed motif occupying at most the middle half, surrounded by an uninterrupted identical plain ivory/rose marble margin on ALL FOUR EDGES, with no flourishes touching the edge. A01 small indigo/gold eight-point star with pink centre; A05 small periwinkle/rose linked petal motif; A09 small rose interlace/blue diamond; A13 small blue/pink lotus flourish. These are genuine field repeats, not another big framed room-centre medallion. A16 Suite focal quarter must be a SQUARE quarter-panel of the source rectangular suite focal inlay, NOT a circular quadrant. Show one square corner quadrant carrying the appropriate partial rose/blue central floral motif and a plain square outside perimeter; four rotations make the suite's square focal panel. Keep other three rooms' curved focal quarters, all straight borders and L corners unchanged. All floor designs are flat FLUSH marble/mineral inlays with thin gold lines, no raised gold wire or wall-like relief. Almost orthographic top-down, clean complete uncropped boundaries. No new room/scenery or extra items, captions retained exactly.",
+  "generator": "image_gen.imagegen",
+  "outputs": [
+    {
+      "sheet_id": "INT-FLOOR-REPEAT-001",
+      "file": "surface-variation-kits/INT-FLOOR-REPEAT-001/INT-FLOOR-REPEAT-001.png",
+      "sha256": "517068d54d73c56bcad3d0446a8a53ce7e4bc16775c52f5391cdbfbdeb39dab1",
+      "original_file": "/workspace/generated_images/exec-93285ab9-b493-485f-8a95-4317a3e87aed.png",
+      "generator": "image_gen.imagegen",
+      "prompt_key": "prompt",
+      "reference_path": "/workspace/generated_images/exec-50c40c24-482d-4ad9-a532-5f499717a6fe.png",
+      "review_status": "pending-reference-review",
+      "actual_input_file": "surface-variation-kits/INT-FLOOR-REPEAT-001/rejected-drafts/INT-FLOOR-REPEAT-001-R01.png",
+      "actual_input_sha256": "c2c3c28c5f687392dd161ccaf296b742d07fe1ab62598d492e21eb5981812f35"
+    }
+  ],
+  "generation_attempts": [],
+  "review_status": "pending-reference-review",
+  "actual_geometry_or_texture_seams_verified": false,
+  "models_generated": 0,
+  "reuse_reference_ids": [
+    "INT-C01"
+  ],
+  "repeat_contract": {
+    "units": "normalized tile pitch before model fitting",
+    "field_pitch": [
+      1,
+      1
+    ],
+    "field_edge_rule": "Plain marble margin >=0.08 pitch on all four edges; closed ornament remains within margin",
+    "border_pitch": 1,
+    "border_width": 0.2,
+    "border_endpoint_rule": "Guide-line offsets0.04/0.16 across width, identical endpoints and one complete repeat per module",
+    "corner_rule": "Quarter-turn with identical end profiles, same band width",
+    "medallion_rule": "Four rotations around one centre; focal feature, not translational field",
+    "material_rule": "Rose/ivory material veins vary naturally; generated reference is not a verified seamless UV texture"
+  },
+  "previous_attempts": [
+    {
+      "sheet_id": "INT-FLOOR-REPEAT-001",
+      "file": "surface-variation-kits/INT-FLOOR-REPEAT-001/rejected-drafts/INT-FLOOR-REPEAT-001-R01.png",
+      "sha256": "c2c3c28c5f687392dd161ccaf296b742d07fe1ab62598d492e21eb5981812f35",
+      "original_file": "/workspace/generated_images/exec-50c40c24-482d-4ad9-a532-5f499717a6fe.png",
+      "generator": "image_gen.imagegen",
+      "prompt_key": "prompt",
+      "reference_path": "/workspace/birthday-castle/docs/asset-image-library/images/interior-components/INT-C01.png",
+      "review_status": "superseded-field-tile-became-room-medallion"
+    }
+  ],
+  "original_prompt": "Make a clean high-resolution named component reference sheet, not a whole room/building. Use ONLY the one supplied source for material/motif vocabulary. Owner-requested new variations and junctions must stay coordinated with it. Separate complete objects, no fused neighbors, no cropped silhouettes, no shadows over patterns, no melting scrolls or warped rails. Straight edges/columns remain straight; thin gold stays thin. Warm-white background, even light. Print exact full ID AND short name below EVERY item, title above. One object per cell, no duplicate alternate views. Palette/style follows this source. Source illustrations are not measured models; do not invent fixed palace dimensions. No people, whole buildings, scenery, plants or loose decoration glued onto parts.\nTitle: INT-FLOOR-REPEAT-001 \u2014 Great hall, ballroom, gallery and suite floor repeat kits. Exactly 16 items, 4-by-4 grid. Four rows in order HALL, BALLROOM, GALLERY, SUITE. Each row has4 flat inlay COMPONENTS: field repeat / straight border /90-degree border corner / focal medallion quadrant. Almost top-down orthographic views, no severe perspective. Every piece is an actual thin floor component with clean straight/curved boundaries, not wallpaper swatches. FLUSH inlays, no raised filigree above walking surface. Do not copy the source giant full medallions as repeated tiles. Proposed continuous borders end with matching line phase.\nINT-FLOOR-REPEAT-001-A01 \u2014 Hall field repeat: ONE square flush floor tile, ivory/rose marble, indigo eight-point star and rose core; diamond/Greek-key border. Keep its small motif COMPLETE INSIDE an even plain marble margin on every edge, never a huge central room medallion. All four perimeter edges plain and identical so tiles translate continuously.\nINT-FLOOR-REPEAT-001-A02 \u2014 Hall border repeat: ONE narrow straight flush floor border segment in this source style: ivory/rose marble, indigo eight-point star and rose core; diamond/Greek-key border. Gold guide lines enter and leave both short ends at the SAME offsets; use one complete ornament repeat, no terminal post.\nINT-FLOOR-REPEAT-001-A03 \u2014 Hall border corner: ONE square 90-degree flush inlay corner turning the SAME border smoothly. Outside edges square and flat; not a raised wall, gold line widths match border.\nINT-FLOOR-REPEAT-001-A04 \u2014 Hall focal quarter: ONE FLAT quarter-disc marble inlay wedge for the existing source focal medallion, curved inner motif follows ivory/rose marble, indigo eight-point star and rose core; diamond/Greek-key border. Four rotations compose one focal insert; never present this wedge as a translation-repeat field tile.\nINT-FLOOR-REPEAT-001-A05 \u2014 Ballroom field repeat: ONE square flush floor tile, periwinkle blue, rose and ivory intersecting petal curves with fine gold, white/rose floral centre. Keep its small motif COMPLETE INSIDE an even plain marble margin on every edge, never a huge central room medallion. All four perimeter edges plain and identical so tiles translate continuously.\nINT-FLOOR-REPEAT-001-A06 \u2014 Ballroom border repeat: ONE narrow straight flush floor border segment in this source style: periwinkle blue, rose and ivory intersecting petal curves with fine gold, white/rose floral centre. Gold guide lines enter and leave both short ends at the SAME offsets; use one complete ornament repeat, no terminal post.\nINT-FLOOR-REPEAT-001-A07 \u2014 Ballroom border corner: ONE square 90-degree flush inlay corner turning the SAME border smoothly. Outside edges square and flat; not a raised wall, gold line widths match border.\nINT-FLOOR-REPEAT-001-A08 \u2014 Ballroom focal quarter: ONE FLAT quarter-disc marble inlay wedge for the existing source focal medallion, curved inner motif follows periwinkle blue, rose and ivory intersecting petal curves with fine gold, white/rose floral centre. Four rotations compose one focal insert; never present this wedge as a translation-repeat field tile.\nINT-FLOOR-REPEAT-001-A09 \u2014 Gallery field repeat: ONE square flush floor tile, cream/rose interlaced circular petals and indigo diamonds, quiet ivory field. Keep its small motif COMPLETE INSIDE an even plain marble margin on every edge, never a huge central room medallion. All four perimeter edges plain and identical so tiles translate continuously.\nINT-FLOOR-REPEAT-001-A10 \u2014 Gallery border repeat: ONE narrow straight flush floor border segment in this source style: cream/rose interlaced circular petals and indigo diamonds, quiet ivory field. Gold guide lines enter and leave both short ends at the SAME offsets; use one complete ornament repeat, no terminal post.\nINT-FLOOR-REPEAT-001-A11 \u2014 Gallery border corner: ONE square 90-degree flush inlay corner turning the SAME border smoothly. Outside edges square and flat; not a raised wall, gold line widths match border.\nINT-FLOOR-REPEAT-001-A12 \u2014 Gallery focal quarter: ONE FLAT quarter-disc marble inlay wedge for the existing source focal medallion, curved inner motif follows cream/rose interlaced circular petals and indigo diamonds, quiet ivory field. Four rotations compose one focal insert; never present this wedge as a translation-repeat field tile.\nINT-FLOOR-REPEAT-001-A13 \u2014 Suite field repeat: ONE square flush floor tile, rose/ivory rectangular panel rhythm, restrained blue floral inserts, rose butterfly/lotus flourish. Keep its small motif COMPLETE INSIDE an even plain marble margin on every edge, never a huge central room medallion. All four perimeter edges plain and identical so tiles translate continuously.\nINT-FLOOR-REPEAT-001-A14 \u2014 Suite border repeat: ONE narrow straight flush floor border segment in this source style: rose/ivory rectangular panel rhythm, restrained blue floral inserts, rose butterfly/lotus flourish. Gold guide lines enter and leave both short ends at the SAME offsets; use one complete ornament repeat, no terminal post.\nINT-FLOOR-REPEAT-001-A15 \u2014 Suite border corner: ONE square 90-degree flush inlay corner turning the SAME border smoothly. Outside edges square and flat; not a raised wall, gold line widths match border.\nINT-FLOOR-REPEAT-001-A16 \u2014 Suite focal quarter: ONE FLAT quarter-disc marble inlay wedge for the existing source focal medallion, curved inner motif follows rose/ivory rectangular panel rhythm, restrained blue floral inserts, rose butterfly/lotus flourish. Four rotations compose one focal insert; never present this wedge as a translation-repeat field tile.\nPreserve all names/IDs and the requested count. Do not replace details with a new full building or a material swatch sheet.",
+  "review_notes": [
+    "Field repeats simplified to closed central motifs/plain edges; source suite focal uses a rectangular quarter.",
+    "Art borders/corners still need exact endpoint/phase reconstruction; no pixel/UV seamlessness certified."
+  ],
+  "mesh_generation_allowed_without_approval": false
+}

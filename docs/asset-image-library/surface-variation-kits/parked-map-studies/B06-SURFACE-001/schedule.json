@@ -1,0 +1,322 @@
+{
+  "sheet_id": "B06-SURFACE-001",
+  "name": "Misty Pagoda timber and jade surface kit",
+  "owner": "other-map-buildings",
+  "family": "B06",
+  "source_id": "GEN-27",
+  "count": 16,
+  "source_reference_id": "GEN-27",
+  "source_reference_file": "images/illustrated-boards/GEN-27.png",
+  "source_reference_sha256": "24c53bf783000da360b391b29640a0c2be9c30420aaf8c7152031139f5ede92f",
+  "generation_reference_path": "/workspace/birthday-castle/docs/asset-image-library/surface-variation-kits/source-panels/B06-misty-pagoda.png",
+  "source_rules": "Source provides observed palette/motifs; owner-requested new variant geometry and hidden backs are proposals",
+  "style_groups": [
+    [
+      "PAGODA-TIMBER",
+      "red timber, teal/jade, cloud brackets and wood rails"
+    ]
+  ],
+  "parts": [
+    {
+      "asset_id": "B06-SURFACE-001-A01",
+      "name": "Timber field plank",
+      "description": "One warm red-brown timber floor repeat plank with straight clean grain, no royal marble medallion.",
+      "style_family": "PAGODA-TIMBER",
+      "role": "field-tile",
+      "basis": "newly-requested source-compatible variant/join; visible motifs reused",
+      "dimensions_m_proposed": [
+        1,
+        1,
+        0.025
+      ],
+      "attachment_face": "bottom -Z",
+      "semantic_front": "up +Z",
+      "model_status": "unregistered",
+      "review_status": "pending-reference-review"
+    },
+    {
+      "asset_id": "B06-SURFACE-001-A02",
+      "name": "Jade-cloud floor inset",
+      "description": "One proposed small jade/cream cloud-and-wave inset floor tile framed in red-brown timber, motif closed inside plain margins. Source pagoda roof palette, newly requested floor variant.",
+      "style_family": "PAGODA-TIMBER",
+      "role": "field-tile",
+      "basis": "newly-requested source-compatible variant/join; visible motifs reused",
+      "dimensions_m_proposed": [
+        1,
+        1,
+        0.025
+      ],
+      "attachment_face": "bottom -Z",
+      "semantic_front": "up +Z",
+      "model_status": "unregistered",
+      "review_status": "pending-reference-review"
+    },
+    {
+      "asset_id": "B06-SURFACE-001-A03",
+      "name": "Timber floor border",
+      "description": "One short warm timber border with restrained teal/gold cloud rhythm, matching seam ends.",
+      "style_family": "PAGODA-TIMBER",
+      "role": "floor-border",
+      "basis": "newly-requested source-compatible variant/join; visible motifs reused",
+      "dimensions_m_proposed": [
+        1,
+        0.2,
+        0.025
+      ],
+      "attachment_face": "bottom -Z",
+      "semantic_front": "up +Z",
+      "model_status": "unregistered",
+      "review_status": "pending-reference-review"
+    },
+    {
+      "asset_id": "B06-SURFACE-001-A04",
+      "name": "Timber border corner",
+      "description": "One thin flat mitred90-degree floor-border corner, no large beam or wall.",
+      "style_family": "PAGODA-TIMBER",
+      "role": "floor-corner",
+      "basis": "newly-requested source-compatible variant/join; visible motifs reused",
+      "dimensions_m_proposed": [
+        1,
+        0.2,
+        0.025
+      ],
+      "attachment_face": "bottom -Z",
+      "semantic_front": "up +Z",
+      "model_status": "unregistered",
+      "review_status": "pending-reference-review"
+    },
+    {
+      "asset_id": "B06-SURFACE-001-A05",
+      "name": "Carved wood frieze",
+      "description": "One short backed timber cloud-scroll wall frieze repeat matching source carved bracket vocabulary, no marble Gothic flowers.",
+      "style_family": "PAGODA-TIMBER",
+      "role": "wall-panel-repeat",
+      "basis": "newly-requested source-compatible variant/join; visible motifs reused",
+      "dimensions_m_proposed": [
+        0.6,
+        0.12,
+        0.16
+      ],
+      "attachment_face": "rear -Y",
+      "semantic_front": "+Y",
+      "model_status": "unregistered",
+      "review_status": "pending-reference-review"
+    },
+    {
+      "asset_id": "B06-SURFACE-001-A06",
+      "name": "Eave-beam return",
+      "description": "A small stepped timber cornice/eave-beam corner return with source teal upper lip; not a whole roof.",
+      "style_family": "PAGODA-TIMBER",
+      "role": "cornice-corner",
+      "basis": "newly-requested source-compatible variant/join; visible motifs reused",
+      "dimensions_m_proposed": [
+        0.6,
+        0.12,
+        0.16
+      ],
+      "attachment_face": "rear -Y",
+      "semantic_front": "+Y",
+      "model_status": "unregistered",
+      "review_status": "pending-reference-review"
+    },
+    {
+      "asset_id": "B06-SURFACE-001-A07",
+      "name": "Bracket-stack block",
+      "description": "One compact interlocking carved timber bracket block with complete rear/top bearing faces, source wooden eave supports, no floating parts.",
+      "style_family": "PAGODA-TIMBER",
+      "role": "pillar-bracket",
+      "basis": "newly-requested source-compatible variant/join; visible motifs reused",
+      "dimensions_m_proposed": [
+        0.6,
+        0.12,
+        0.16
+      ],
+      "attachment_face": "rear -Y",
+      "semantic_front": "+Y",
+      "model_status": "unregistered",
+      "review_status": "pending-reference-review"
+    },
+    {
+      "asset_id": "B06-SURFACE-001-A08",
+      "name": "Wood lattice infill",
+      "description": "One short straight timber diagonal/rectilinear lattice decorative panel, open cells, clean frame, no complete wall/window facade.",
+      "style_family": "PAGODA-TIMBER",
+      "role": "wall-panel-repeat",
+      "basis": "newly-requested source-compatible variant/join; visible motifs reused",
+      "dimensions_m_proposed": [
+        0.6,
+        0.12,
+        0.16
+      ],
+      "attachment_face": "rear -Y",
+      "semantic_front": "+Y",
+      "model_status": "unregistered",
+      "review_status": "pending-reference-review"
+    },
+    {
+      "asset_id": "B06-SURFACE-001-A09",
+      "name": "Pillar stone foot",
+      "description": "One small pale faceted stone pillar-foot shoe with modest gold line, receiving source timber column.",
+      "style_family": "PAGODA-TIMBER",
+      "role": "pillar-foot",
+      "basis": "newly-requested source-compatible variant/join; visible motifs reused",
+      "dimensions_m_proposed": [
+        0.6,
+        0.12,
+        0.16
+      ],
+      "attachment_face": "rear -Y",
+      "semantic_front": "+Y",
+      "model_status": "unregistered",
+      "review_status": "pending-reference-review"
+    },
+    {
+      "asset_id": "B06-SURFACE-001-A10",
+      "name": "Carved pillar head",
+      "description": "One small warm timber cloud-scroll head/corbel from the source bracket vocabulary.",
+      "style_family": "PAGODA-TIMBER",
+      "role": "pillar-collar",
+      "basis": "newly-requested source-compatible variant/join; visible motifs reused",
+      "dimensions_m_proposed": [
+        0.6,
+        0.12,
+        0.16
+      ],
+      "attachment_face": "rear -Y",
+      "semantic_front": "+Y",
+      "model_status": "unregistered",
+      "review_status": "pending-reference-review"
+    },
+    {
+      "asset_id": "B06-SURFACE-001-A11",
+      "name": "Red timber neck band",
+      "description": "One detachable simple red-brown timber pillar-neck band with small teal/gold wave accent, open mounting back.",
+      "style_family": "PAGODA-TIMBER",
+      "role": "pillar-wrap",
+      "basis": "newly-requested source-compatible variant/join; visible motifs reused",
+      "dimensions_m_proposed": [
+        0.6,
+        0.12,
+        0.16
+      ],
+      "attachment_face": "rear -Y",
+      "semantic_front": "+Y",
+      "model_status": "unregistered",
+      "review_status": "pending-reference-review"
+    },
+    {
+      "asset_id": "B06-SURFACE-001-A12",
+      "name": "Post cloud faceplate",
+      "description": "One thin flat carved timber cloud relief to mount on a rail or column face, simple rear.",
+      "style_family": "PAGODA-TIMBER",
+      "role": "wall-panel-repeat",
+      "basis": "newly-requested source-compatible variant/join; visible motifs reused",
+      "dimensions_m_proposed": [
+        0.6,
+        0.12,
+        0.16
+      ],
+      "attachment_face": "rear -Y",
+      "semantic_front": "+Y",
+      "model_status": "unregistered",
+      "review_status": "pending-reference-review"
+    },
+    {
+      "asset_id": "B06-SURFACE-001-A13",
+      "name": "Timber rail repeat",
+      "description": "A short straight warm timber low rail repeat with the source vertical wood balusters and tiny gold caps, no pink marble jali.",
+      "style_family": "PAGODA-TIMBER",
+      "role": "parapet-repeat",
+      "basis": "newly-requested source-compatible variant/join; visible motifs reused",
+      "dimensions_m_proposed": [
+        0.6,
+        0.12,
+        0.16
+      ],
+      "attachment_face": "rear -Y",
+      "semantic_front": "+Y",
+      "model_status": "unregistered",
+      "review_status": "pending-reference-review"
+    },
+    {
+      "asset_id": "B06-SURFACE-001-A14",
+      "name": "Timber rail turn",
+      "description": "One matching inward90-degree timber railing corner/connector, vertical balusters, clean rail ends.",
+      "style_family": "PAGODA-TIMBER",
+      "role": "parapet-corner",
+      "basis": "newly-requested source-compatible variant/join; visible motifs reused",
+      "dimensions_m_proposed": [
+        0.6,
+        0.12,
+        0.16
+      ],
+      "attachment_face": "rear -Y",
+      "semantic_front": "+Y",
+      "model_status": "unregistered",
+      "review_status": "pending-reference-review"
+    },
+    {
+      "asset_id": "B06-SURFACE-001-A15",
+      "name": "Pale stone path tread",
+      "description": "One shallow dry pale stone exterior step with restrained cloud/wave edge inset, source pagoda approach language, no waterfall.",
+      "style_family": "PAGODA-TIMBER",
+      "role": "stair-tread",
+      "basis": "newly-requested source-compatible variant/join; visible motifs reused",
+      "dimensions_m_proposed": [
+        0.6,
+        0.12,
+        0.16
+      ],
+      "attachment_face": "rear -Y",
+      "semantic_front": "+Y",
+      "model_status": "unregistered",
+      "review_status": "pending-reference-review"
+    },
+    {
+      "asset_id": "B06-SURFACE-001-A16",
+      "name": "Stone stair cheek end",
+      "description": "Small pale stone lower stair-side return/shoe receiving a separate timber rail, no full flight.",
+      "style_family": "PAGODA-TIMBER",
+      "role": "stair-side-end",
+      "basis": "newly-requested source-compatible variant/join; visible motifs reused",
+      "dimensions_m_proposed": [
+        0.6,
+        0.12,
+        0.16
+      ],
+      "attachment_face": "rear -Y",
+      "semantic_front": "+Y",
+      "model_status": "unregistered",
+      "review_status": "pending-reference-review"
+    }
+  ],
+  "prompt": "Make a clean high-resolution named component reference sheet, not a whole room/building. Use ONLY the one supplied source for material/motif vocabulary. Owner-requested new variations and junctions must stay coordinated with it. Separate complete objects, no fused neighbors, no cropped silhouettes, no shadows over patterns, no melting scrolls or warped rails. Straight edges/columns remain straight; thin gold stays thin. Warm-white background, even light. Print exact full ID AND short name below EVERY item, title above. One object per cell, no duplicate alternate views. Palette/style follows this source. Source illustrations are not measured models; do not invent fixed palace dimensions. No people, whole buildings, scenery, plants or loose decoration glued onto parts.\nTitle: B06-SURFACE-001 \u2014 Misty Pagoda timber and jade surface kit. Exactly 16 items, 4-by-4 grid. Exactly16 parts in4-by-4 grid, focused on THIS pagoda source. Keep warm red-brown carved timber, teal/jade eave accents, light stone feet/treads and restrained gold. Do NOT repaint everything as palace pink/ivory marble. Rows:4 floor repeats/corners;4 wall/eave parts;4 pillar/post fittings;4 rail/stair pieces. Unknown floor micro-patterns are owner-requested proposed variants. Preserve source timber rail and bracket language; no roofs/towers/lights/flowers fused.\nB06-SURFACE-001-A01 \u2014 Timber field plank: One warm red-brown timber floor repeat plank with straight clean grain, no royal marble medallion.\nB06-SURFACE-001-A02 \u2014 Jade-cloud floor inset: One proposed small jade/cream cloud-and-wave inset floor tile framed in red-brown timber, motif closed inside plain margins. Source pagoda roof palette, newly requested floor variant.\nB06-SURFACE-001-A03 \u2014 Timber floor border: One short warm timber border with restrained teal/gold cloud rhythm, matching seam ends.\nB06-SURFACE-001-A04 \u2014 Timber border corner: One thin flat mitred90-degree floor-border corner, no large beam or wall.\nB06-SURFACE-001-A05 \u2014 Carved wood frieze: One short backed timber cloud-scroll wall frieze repeat matching source carved bracket vocabulary, no marble Gothic flowers.\nB06-SURFACE-001-A06 \u2014 Eave-beam return: A small stepped timber cornice/eave-beam corner return with source teal upper lip; not a whole roof.\nB06-SURFACE-001-A07 \u2014 Bracket-stack block: One compact interlocking carved timber bracket block with complete rear/top bearing faces, source wooden eave supports, no floating parts.\nB06-SURFACE-001-A08 \u2014 Wood lattice infill: One short straight timber diagonal/rectilinear lattice decorative panel, open cells, clean frame, no complete wall/window facade.\nB06-SURFACE-001-A09 \u2014 Pillar stone foot: One small pale faceted stone pillar-foot shoe with modest gold line, receiving source timber column.\nB06-SURFACE-001-A10 \u2014 Carved pillar head: One small warm timber cloud-scroll head/corbel from the source bracket vocabulary.\nB06-SURFACE-001-A11 \u2014 Red timber neck band: One detachable simple red-brown timber pillar-neck band with small teal/gold wave accent, open mounting back.\nB06-SURFACE-001-A12 \u2014 Post cloud faceplate: One thin flat carved timber cloud relief to mount on a rail or column face, simple rear.\nB06-SURFACE-001-A13 \u2014 Timber rail repeat: A short straight warm timber low rail repeat with the source vertical wood balusters and tiny gold caps, no pink marble jali.\nB06-SURFACE-001-A14 \u2014 Timber rail turn: One matching inward90-degree timber railing corner/connector, vertical balusters, clean rail ends.\nB06-SURFACE-001-A15 \u2014 Pale stone path tread: One shallow dry pale stone exterior step with restrained cloud/wave edge inset, source pagoda approach language, no waterfall.\nB06-SURFACE-001-A16 \u2014 Stone stair cheek end: Small pale stone lower stair-side return/shoe receiving a separate timber rail, no full flight.\nPreserve all names/IDs and the requested count. Do not replace details with a new full building or a material swatch sheet.",
+  "generator": "image_gen.imagegen",
+  "outputs": [
+    {
+      "sheet_id": "B06-SURFACE-001",
+      "file": "surface-variation-kits/parked-map-studies/B06-SURFACE-001/B06-SURFACE-001.png",
+      "sha256": "e834c764393b7f3c894a7a05f5cb403df385f2b0edf5a9d0ba52f3536cbb1c88",
+      "original_file": "/workspace/generated_images/exec-97195ba6-6c20-47bd-9f37-434330f191cd.png",
+      "generator": "image_gen.imagegen",
+      "prompt_key": "prompt",
+      "reference_path": "/workspace/birthday-castle/docs/asset-image-library/surface-variation-kits/source-panels/B06-misty-pagoda.png",
+      "review_status": "parked-outside-current-scope"
+    }
+  ],
+  "generation_attempts": [],
+  "review_status": "parked-outside-current-scope",
+  "actual_geometry_or_texture_seams_verified": false,
+  "models_generated": 0,
+  "reuse_reference_ids": [
+    "GEN-27"
+  ],
+  "focused_source_panel_id": "SRC-SURF-B06-MISTY-PAGODA",
+  "repeat_contract": {
+    "field_rule": "Regular timber pitch, small contained inlay; source grain remains material-level variation",
+    "trim_rule": "Same end section within timber frieze/rail family; corner matches that family",
+    "attachment_rule": "Timber heads/rails meet their own source stone-foot supports, not palace jali profiles"
+  },
+  "unseen_design_note": "Source shows facades/brackets/railing, not a measured interior floor. Proposed cloud-floor inset is a labelled new design.",
+  "mesh_generation_allowed": false
+}

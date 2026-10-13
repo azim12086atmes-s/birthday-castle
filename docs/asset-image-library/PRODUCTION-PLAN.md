@@ -1,6 +1,8 @@
 # Asset production plan and caps
 
-Current component work: [12 screenshot-led palace sheets](remaining-palace-kits/index.html), with32 structural sections and64 detail fittings. [Source/reuse audit and remaining issues](remaining-palace-kits/GAPS-AND-REUSE.md). Selected/reserved: **62/65 palace,79/230 total**. References are pending review; no models or verified joins.
+Current: [original-palace surface/parapet variants](surface-variation-kits/index.html),7 sheets and100 components; [20-category palace needs/confidence](surface-variation-kits/PALACE-ASSET-NEEDS.md). **65/65 palace,85/230 total selected or reserved**. Map-building surface work parked. Existing wishing artwork audited; no new wishing designs.
+
+Current component work: [12 screenshot-led palace sheets](remaining-palace-kits/index.html), with32 structural sections and64 detail fittings. [Source/reuse audit and remaining issues](remaining-palace-kits/GAPS-AND-REUSE.md). Selected/reserved: **65/65 palace,85/230 total**. References are pending review; no models or verified joins.
 
 The final library is capped at **230 selected sheets**, including the 45 original boards. **65 are reserved for the palace and interiors; 165 for other buildings and the world.** Existing shared designs count once. This is an allowance, not a target to fill with duplicates.
 
@@ -8,24 +10,24 @@ The final library is capped at **230 selected sheets**, including the 45 origina
 
 | Scope | Cap | Currently selected/reserved | Remaining |
 | --- | ---: | ---: | ---: |
-| palace | 65 | 62 | 3 |
+| palace | 65 | 65 | 0 |
 | other-map-buildings | 55 | 3 | 52 |
-| terrain-water-and-planting | 65 | 7 | 58 |
-| shared-outdoor-props-and-bridge | 25 | 3 | 22 |
+| terrain-water-and-planting | 65 | 8 | 57 |
+| shared-outdoor-props-and-bridge | 25 | 5 | 20 |
 | maps-magic-travel-and-birthday | 20 | 4 | 16 |
 
-The 683-file archive contains crops, previews and historical experiments; it is not the final 230-sheet selection. Selected reference slots may still require visual review.
+The 712-file archive contains crops, previews and historical experiments; it is not the final 230-sheet selection. Selected reference slots may still require visual review.
 
 ## Palace caps
 
 | Structural/detail family | Cap | Existing + selected/reserved |
 | --- | ---: | ---: |
-| Layout and envelope | 7 | 6 |
+| Layout and envelope | 5 | 5 |
 | Base, wall bodies and stepped wings | 9 | 9 |
 | Tower bodies and roof assemblies | 10 | 10 |
-| Glass, carvings, rails and architectural fittings | 18 | 17 |
-| Stairs, fountains, terraces and courtyards | 10 | 9 |
-| Interiors and furniture | 11 | 11 |
+| Glass, carvings, rails and architectural fittings | 18 | 18 |
+| Stairs, fountains, terraces and courtyards | 11 | 11 |
+| Interiors and furniture | 12 | 12 |
 
 ## Other map buildings and locations
 

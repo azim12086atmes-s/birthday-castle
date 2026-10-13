@@ -1,0 +1,311 @@
+{
+  "sheet_id": "B08-SURFACE-001",
+  "name": "Colosseum star-marble and curved detail kit",
+  "owner": "other-map-buildings",
+  "family": "B08",
+  "source_id": "GEN-27",
+  "count": 16,
+  "source_reference_id": "GEN-27",
+  "source_reference_file": "images/illustrated-boards/GEN-27.png",
+  "source_reference_sha256": "24c53bf783000da360b391b29640a0c2be9c30420aaf8c7152031139f5ede92f",
+  "generation_reference_path": "/workspace/birthday-castle/docs/asset-image-library/surface-variation-kits/source-panels/B08-colosseum.png",
+  "source_rules": "Source provides observed palette/motifs; owner-requested new variant geometry and hidden backs are proposals",
+  "style_groups": [
+    [
+      "COLOSSEUM",
+      "round arcades, concentric tiers, fluted stone, indigo star floors"
+    ]
+  ],
+  "parts": [
+    {
+      "asset_id": "B08-SURFACE-001-A01",
+      "name": "Ivory arena field tile",
+      "description": "One thin ivory/rose marble walking tile with a small indigo/gold star inset contained within plain margins; source arena star-tile motif, not pagoda clouds.",
+      "style_family": "COLOSSEUM",
+      "role": "field-tile",
+      "basis": "newly-requested source-compatible variant/join; visible motifs reused",
+      "dimensions_m_proposed": [
+        1,
+        1,
+        0.025
+      ],
+      "attachment_face": "bottom -Z",
+      "semantic_front": "up +Z",
+      "model_status": "unregistered",
+      "review_status": "pending-reference-review"
+    },
+    {
+      "asset_id": "B08-SURFACE-001-A02",
+      "name": "Star-medallion quadrant",
+      "description": "One FLAT quarter-disc sector of source indigo/gold arena floor star medallion, clean radial edges, four rotate into one focal insert.",
+      "style_family": "COLOSSEUM",
+      "role": "floor-medallion-quarter",
+      "basis": "newly-requested source-compatible variant/join; visible motifs reused",
+      "dimensions_m_proposed": [
+        1,
+        0.2,
+        0.025
+      ],
+      "attachment_face": "bottom -Z",
+      "semantic_front": "up +Z",
+      "model_status": "unregistered",
+      "review_status": "pending-reference-review"
+    },
+    {
+      "asset_id": "B08-SURFACE-001-A03",
+      "name": "Arena border repeat",
+      "description": "One short flat cream/gold bead-and-star floor border, equal seam line offsets, restrained inlay.",
+      "style_family": "COLOSSEUM",
+      "role": "floor-border",
+      "basis": "newly-requested source-compatible variant/join; visible motifs reused",
+      "dimensions_m_proposed": [
+        1,
+        0.2,
+        0.025
+      ],
+      "attachment_face": "bottom -Z",
+      "semantic_front": "up +Z",
+      "model_status": "unregistered",
+      "review_status": "pending-reference-review"
+    },
+    {
+      "asset_id": "B08-SURFACE-001-A04",
+      "name": "Arena radial border",
+      "description": "One matching flat gently curved floor border/ring segment with clean radial end cuts.",
+      "style_family": "COLOSSEUM",
+      "role": "floor-border",
+      "basis": "newly-requested source-compatible variant/join; visible motifs reused",
+      "dimensions_m_proposed": [
+        1,
+        0.2,
+        0.025
+      ],
+      "attachment_face": "bottom -Z",
+      "semantic_front": "up +Z",
+      "model_status": "unregistered",
+      "review_status": "pending-reference-review"
+    },
+    {
+      "asset_id": "B08-SURFACE-001-A05",
+      "name": "Rounded arcade spandrel",
+      "description": "One small backed ivory/rose carved spandrel above a ROUND Roman arch, source bead/leaf/star details; no pointed Gothic arch.",
+      "style_family": "COLOSSEUM",
+      "role": "wall-panel-repeat",
+      "basis": "newly-requested source-compatible variant/join; visible motifs reused",
+      "dimensions_m_proposed": [
+        0.6,
+        0.12,
+        0.16
+      ],
+      "attachment_face": "rear -Y",
+      "semantic_front": "+Y",
+      "model_status": "unregistered",
+      "review_status": "pending-reference-review"
+    },
+    {
+      "asset_id": "B08-SURFACE-001-A06",
+      "name": "Curved entablature repeat",
+      "description": "One shallow curved horizontal ivory/gold entablature/frieze segment matching arena concentric arcades, clean end profiles.",
+      "style_family": "COLOSSEUM",
+      "role": "cornice-repeat",
+      "basis": "newly-requested source-compatible variant/join; visible motifs reused",
+      "dimensions_m_proposed": [
+        0.6,
+        0.12,
+        0.16
+      ],
+      "attachment_face": "rear -Y",
+      "semantic_front": "+Y",
+      "model_status": "unregistered",
+      "review_status": "pending-reference-review"
+    },
+    {
+      "asset_id": "B08-SURFACE-001-A07",
+      "name": "Entablature radial end",
+      "description": "One small clean end cap of that curved arena frieze profile, modest leaf relief.",
+      "style_family": "COLOSSEUM",
+      "role": "cornice-end",
+      "basis": "newly-requested source-compatible variant/join; visible motifs reused",
+      "dimensions_m_proposed": [
+        0.6,
+        0.12,
+        0.16
+      ],
+      "attachment_face": "rear -Y",
+      "semantic_front": "+Y",
+      "model_status": "unregistered",
+      "review_status": "pending-reference-review"
+    },
+    {
+      "asset_id": "B08-SURFACE-001-A08",
+      "name": "Arena wall-base band",
+      "description": "One short low cream/rose/gold backed stone wall-base moulding repeat with quiet bead rhythm.",
+      "style_family": "COLOSSEUM",
+      "role": "wall-panel-repeat",
+      "basis": "newly-requested source-compatible variant/join; visible motifs reused",
+      "dimensions_m_proposed": [
+        0.6,
+        0.12,
+        0.16
+      ],
+      "attachment_face": "rear -Y",
+      "semantic_front": "+Y",
+      "model_status": "unregistered",
+      "review_status": "pending-reference-review"
+    },
+    {
+      "asset_id": "B08-SURFACE-001-A09",
+      "name": "Fluted column foot",
+      "description": "One faceted ivory marble base shoe receiving the source straight fluted arena column; source gold/bead foot collar, no full pillar.",
+      "style_family": "COLOSSEUM",
+      "role": "pillar-foot",
+      "basis": "newly-requested source-compatible variant/join; visible motifs reused",
+      "dimensions_m_proposed": [
+        0.6,
+        0.12,
+        0.16
+      ],
+      "attachment_face": "rear -Y",
+      "semantic_front": "+Y",
+      "model_status": "unregistered",
+      "review_status": "pending-reference-review"
+    },
+    {
+      "asset_id": "B08-SURFACE-001-A10",
+      "name": "Arena leaf capital",
+      "description": "One small ivory/gold leaf-capital head from arena column vocabulary, modest acanthus/petal relief, no giant palace lotus cup.",
+      "style_family": "COLOSSEUM",
+      "role": "pillar-collar",
+      "basis": "newly-requested source-compatible variant/join; visible motifs reused",
+      "dimensions_m_proposed": [
+        0.6,
+        0.12,
+        0.16
+      ],
+      "attachment_face": "rear -Y",
+      "semantic_front": "+Y",
+      "model_status": "unregistered",
+      "review_status": "pending-reference-review"
+    },
+    {
+      "asset_id": "B08-SURFACE-001-A11",
+      "name": "Fluted neck sleeve",
+      "description": "One short detachable fluted ivory/gold neck sleeve for the arena column, open clean mounting back.",
+      "style_family": "COLOSSEUM",
+      "role": "pillar-wrap",
+      "basis": "newly-requested source-compatible variant/join; visible motifs reused",
+      "dimensions_m_proposed": [
+        0.6,
+        0.12,
+        0.16
+      ],
+      "attachment_face": "rear -Y",
+      "semantic_front": "+Y",
+      "model_status": "unregistered",
+      "review_status": "pending-reference-review"
+    },
+    {
+      "asset_id": "B08-SURFACE-001-A12",
+      "name": "Arcade springer block",
+      "description": "One small source cream/gold round-arch springer block with bead/leaf underside, flat bearing faces.",
+      "style_family": "COLOSSEUM",
+      "role": "pillar-bracket",
+      "basis": "newly-requested source-compatible variant/join; visible motifs reused",
+      "dimensions_m_proposed": [
+        0.6,
+        0.12,
+        0.16
+      ],
+      "attachment_face": "rear -Y",
+      "semantic_front": "+Y",
+      "model_status": "unregistered",
+      "review_status": "pending-reference-review"
+    },
+    {
+      "asset_id": "B08-SURFACE-001-A13",
+      "name": "Arena low rail repeat",
+      "description": "One short curved low stone arcade/parapet segment with ROUND arch voids and fine gold trim, matching arena style, not palace jali.",
+      "style_family": "COLOSSEUM",
+      "role": "parapet-repeat",
+      "basis": "newly-requested source-compatible variant/join; visible motifs reused",
+      "dimensions_m_proposed": [
+        0.6,
+        0.12,
+        0.16
+      ],
+      "attachment_face": "rear -Y",
+      "semantic_front": "+Y",
+      "model_status": "unregistered",
+      "review_status": "pending-reference-review"
+    },
+    {
+      "asset_id": "B08-SURFACE-001-A14",
+      "name": "Arena end post",
+      "description": "One modest ivory/rose square railing end post, star plaque and simple cap, no full rail.",
+      "style_family": "COLOSSEUM",
+      "role": "parapet-end",
+      "basis": "newly-requested source-compatible variant/join; visible motifs reused",
+      "dimensions_m_proposed": [
+        0.6,
+        0.12,
+        0.16
+      ],
+      "attachment_face": "rear -Y",
+      "semantic_front": "+Y",
+      "model_status": "unregistered",
+      "review_status": "pending-reference-review"
+    },
+    {
+      "asset_id": "B08-SURFACE-001-A15",
+      "name": "Radial seating tread",
+      "description": "One shallow curved stone seat/step tread section with concentric front nosing, from source arena stepped seating. Not a chair or entire arena staircase.",
+      "style_family": "COLOSSEUM",
+      "role": "stair-tread",
+      "basis": "newly-requested source-compatible variant/join; visible motifs reused",
+      "dimensions_m_proposed": [
+        0.6,
+        0.12,
+        0.16
+      ],
+      "attachment_face": "rear -Y",
+      "semantic_front": "+Y",
+      "model_status": "unregistered",
+      "review_status": "pending-reference-review"
+    },
+    {
+      "asset_id": "B08-SURFACE-001-A16",
+      "name": "Arena aisle tread",
+      "description": "One shallow straight dry aisle step/nosing with small star-edge inset and plain complete sides.",
+      "style_family": "COLOSSEUM",
+      "role": "stair-tread",
+      "basis": "newly-requested source-compatible variant/join; visible motifs reused",
+      "dimensions_m_proposed": [
+        0.6,
+        0.12,
+        0.16
+      ],
+      "attachment_face": "rear -Y",
+      "semantic_front": "+Y",
+      "model_status": "unregistered",
+      "review_status": "pending-reference-review"
+    }
+  ],
+  "prompt": "Make a clean high-resolution named component reference sheet, not a whole room/building. Use ONLY the one supplied source for material/motif vocabulary. Owner-requested new variations and junctions must stay coordinated with it. Separate complete objects, no fused neighbors, no cropped silhouettes, no shadows over patterns, no melting scrolls or warped rails. Straight edges/columns remain straight; thin gold stays thin. Warm-white background, even light. Print exact full ID AND short name below EVERY item, title above. One object per cell, no duplicate alternate views. Palette/style follows this source. Source illustrations are not measured models; do not invent fixed palace dimensions. No people, whole buildings, scenery, plants or loose decoration glued onto parts.\nTitle: B08-SURFACE-001 \u2014 Colosseum star-marble and curved detail kit. Exactly 16 items, 4-by-4 grid. Exactly16 arena surface/trim fittings: first4floor parts, next4wall/cornice parts, next4pillar/arch fittings, last4rail/seating/aisle parts. Keep ivory/rose/indigo/gold source palette BUT ROUND ROMAN ARCADES and concentric stone tiers distinguish this location from Gothic palace and timber pagoda. No entire arena/building or statues, banners, plants. Source floor star is visible; added border/junctions are requested modular interpretations.\nB08-SURFACE-001-A01 \u2014 Ivory arena field tile: One thin ivory/rose marble walking tile with a small indigo/gold star inset contained within plain margins; source arena star-tile motif, not pagoda clouds.\nB08-SURFACE-001-A02 \u2014 Star-medallion quadrant: One FLAT quarter-disc sector of source indigo/gold arena floor star medallion, clean radial edges, four rotate into one focal insert.\nB08-SURFACE-001-A03 \u2014 Arena border repeat: One short flat cream/gold bead-and-star floor border, equal seam line offsets, restrained inlay.\nB08-SURFACE-001-A04 \u2014 Arena radial border: One matching flat gently curved floor border/ring segment with clean radial end cuts.\nB08-SURFACE-001-A05 \u2014 Rounded arcade spandrel: One small backed ivory/rose carved spandrel above a ROUND Roman arch, source bead/leaf/star details; no pointed Gothic arch.\nB08-SURFACE-001-A06 \u2014 Curved entablature repeat: One shallow curved horizontal ivory/gold entablature/frieze segment matching arena concentric arcades, clean end profiles.\nB08-SURFACE-001-A07 \u2014 Entablature radial end: One small clean end cap of that curved arena frieze profile, modest leaf relief.\nB08-SURFACE-001-A08 \u2014 Arena wall-base band: One short low cream/rose/gold backed stone wall-base moulding repeat with quiet bead rhythm.\nB08-SURFACE-001-A09 \u2014 Fluted column foot: One faceted ivory marble base shoe receiving the source straight fluted arena column; source gold/bead foot collar, no full pillar.\nB08-SURFACE-001-A10 \u2014 Arena leaf capital: One small ivory/gold leaf-capital head from arena column vocabulary, modest acanthus/petal relief, no giant palace lotus cup.\nB08-SURFACE-001-A11 \u2014 Fluted neck sleeve: One short detachable fluted ivory/gold neck sleeve for the arena column, open clean mounting back.\nB08-SURFACE-001-A12 \u2014 Arcade springer block: One small source cream/gold round-arch springer block with bead/leaf underside, flat bearing faces.\nB08-SURFACE-001-A13 \u2014 Arena low rail repeat: One short curved low stone arcade/parapet segment with ROUND arch voids and fine gold trim, matching arena style, not palace jali.\nB08-SURFACE-001-A14 \u2014 Arena end post: One modest ivory/rose square railing end post, star plaque and simple cap, no full rail.\nB08-SURFACE-001-A15 \u2014 Radial seating tread: One shallow curved stone seat/step tread section with concentric front nosing, from source arena stepped seating. Not a chair or entire arena staircase.\nB08-SURFACE-001-A16 \u2014 Arena aisle tread: One shallow straight dry aisle step/nosing with small star-edge inset and plain complete sides.\nPreserve all names/IDs and the requested count. Do not replace details with a new full building or a material swatch sheet.",
+  "generator": "image_gen.imagegen",
+  "outputs": [],
+  "generation_attempts": [],
+  "review_status": "parked-outside-current-scope",
+  "actual_geometry_or_texture_seams_verified": false,
+  "models_generated": 0,
+  "reuse_reference_ids": [
+    "GEN-27"
+  ],
+  "focused_source_panel_id": "SRC-SURF-B08-COLOSSEUM",
+  "repeat_contract": {
+    "field_rule": "Closed motif on common marble margin",
+    "focal_rule": "Four medallion sectors meet radially; not repeated at every floor cell",
+    "curved_rule": "Cornice/rail/seat segments share a declared radius only after arena layout normalization",
+    "arch_rule": "Round arcade profile is retained; do not substitute pointed palace surrounds"
+  },
+  "mesh_generation_allowed": false
+}

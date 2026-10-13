@@ -1,8 +1,10 @@
 # Birthday Castle image archive
 
-Current component work: [12 screenshot-led palace sheets](remaining-palace-kits/index.html), with32 structural sections and64 detail fittings. [Source/reuse audit and remaining issues](remaining-palace-kits/GAPS-AND-REUSE.md). Selected/reserved: **62/65 palace,79/230 total**. References are pending review; no models or verified joins.
+Current: [original-palace surface/parapet variants](surface-variation-kits/index.html),7 sheets and100 components; [20-category palace needs/confidence](surface-variation-kits/PALACE-ASSET-NEEDS.md). **65/65 palace,85/230 total selected or reserved**. Map-building surface work parked. Existing wishing artwork audited; no new wishing designs.
 
-This archive contains **683 distinct image files** (605.4 MiB), including the 45 original illustrated boards, later generated concepts, vector drawings, crops, previews and build renders.
+Current component work: [12 screenshot-led palace sheets](remaining-palace-kits/index.html), with32 structural sections and64 detail fittings. [Source/reuse audit and remaining issues](remaining-palace-kits/GAPS-AND-REUSE.md). Selected/reserved: **65/65 palace,85/230 total**. References are pending review; no models or verified joins.
+
+This archive contains **712 distinct image files** (635.2 MiB), including the 45 original illustrated boards, later generated concepts, vector drawings, crops, previews and build renders.
 
 The active palace reference is **GEN-37**, with GEN-03 and GEN-16 as supporting views. Additional studies are retained for review; preservation does not mean approval. The corrected INT-C01 floor uses rose and ivory marble.
 
@@ -39,6 +41,11 @@ Use [the illustrated boards](images/illustrated-boards) to browse the original a
 | [palace-screenshot-source-crops](remaining-palace-kits/index.html) | 4 |
 | [palace-screenshot-source-sections](remaining-palace-kits/index.html) | 28 |
 | [palace-screenshot-rejected-drafts](remaining-palace-kits/index.html) | 9 |
+| [palace-surface-variation-kits](surface-variation-kits/index.html) | 7 |
+| [surface-variation-source-panels](surface-variation-kits/index.html) | 10 |
+| [wishing-original-source-panels](surface-variation-kits/index.html) | 8 |
+| [surface-variation-superseded-drafts](surface-variation-kits/index.html) | 3 |
+| [parked-map-surface-studies](surface-variation-kits/index.html) | 1 |
 
 All image bytes are unchanged. Identical copies are stored once, with every original path listed in the manifest. Different previews and cropped versions remain separate. Native Blender files, application changes and non-image documents are outside this image-only archive.
 

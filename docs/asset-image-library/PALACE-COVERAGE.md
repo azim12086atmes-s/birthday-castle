@@ -52,3 +52,7 @@ The owner clarified [side/rear wall-face gaps](palace-side-rear/README.md):100 g
 ## Complete roof and stair plan
 
 The [whole top view](palace-roof-plan/index.html) centres the highest ward and steps down outward. It includes33 inventoried tower placements and11 dry stairs linking ground/L1 and every higher pair on west,east and rear. Walls retain100 m side/75 m rear gaps and the established south approach. Working800×680 m envelope and extra60 m upper-front setback are proposed. One unused wall-body slot transfers to layout; family caps7/9 still sum with other families to65.
+
+## Current location-specific variation request
+
+Earlier blanket reuse rows do not mean every room/outdoor surface should share the same pattern. Use [surface/parapet variant kits](surface-variation-kits/index.html) to distinguish great-hall/ballroom/gallery/suite floor/trim motifs, dry interior stair types, formal Rose Court versus natural Moon paths, and the original conservatory exterior foot screen. New parapet styles are alternatives, not substitutions for the selected front. [Whole-palace needs and confidence](surface-variation-kits/PALACE-ASSET-NEEDS.md) records remaining furnishings and gameplay/model gaps. No complete2km palace or actual component-fit readiness has been established.

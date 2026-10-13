@@ -1,0 +1,209 @@
+{
+  "sheet_id": "PAL-STAIR-VAR-001",
+  "name": "Ballroom, throne, library and conservatory stair sections",
+  "owner": "palace",
+  "family": "Stairs, fountains, terraces and courtyards",
+  "source_id": "GEN-26",
+  "count": 4,
+  "source_reference_id": "GEN-26",
+  "source_reference_file": "images/illustrated-boards/GEN-26.png",
+  "source_reference_sha256": "6ca64686df3226a1da314f2865d3cd2699124b9f746b44ace5fbb72aa9801321",
+  "generation_reference_path": "/workspace/generated_images/exec-267dce55-711d-4692-a8bb-f8b16c6ca329.png",
+  "source_rules": "Source provides observed palette/motifs; owner-requested new variant geometry and hidden backs are proposals",
+  "style_groups": [
+    [
+      "BALL",
+      "Ballroom grand-flight section"
+    ],
+    [
+      "THRONE",
+      "Throne dais-step section"
+    ],
+    [
+      "LIBRARY",
+      "Library helical stair section"
+    ],
+    [
+      "CONSERVATORY",
+      "Conservatory short-step section"
+    ]
+  ],
+  "parts": [
+    {
+      "asset_id": "PAL-STAIR-VAR-001-A01",
+      "name": "Ballroom grand-flight section",
+      "description": "ONE wide straight shallow-tread marble flight SECTION, source blue/rose floral tracery side rails and slender ivory/gold newels. Full bottom/top join planes, no giant entrance platform, no attached pots, people or room. Match source grand stair vocabulary.",
+      "style_family": "BALL",
+      "role": "stair-section",
+      "basis": "newly-requested source-compatible variant/join; visible motifs reused",
+      "dimensions_m_proposed": [
+        6,
+        6,
+        1.8
+      ],
+      "attachment_face": "bottom/stringer support -Z",
+      "semantic_front": "ascending direction +Y",
+      "model_status": "unregistered",
+      "review_status": "pending-reference-review",
+      "target_polycount_proposed": 6000,
+      "function": "stair-section",
+      "rejection_criteria": [
+        "cropped/fused components",
+        "wrong source/style family",
+        "incorrect planar/radial/handed join",
+        "non-flush floor inlay",
+        "broken supports/whole scene instead of part"
+      ],
+      "reference_approval": "pending",
+      "reuse_component_ids": [
+        "GEN-43-M02",
+        "GEN-43-M06",
+        "GEN-39-M05"
+      ]
+    },
+    {
+      "asset_id": "PAL-STAIR-VAR-001-A02",
+      "name": "Throne dais-step section",
+      "description": "ONE short wide shallow three-step rose/ivory marble dais section, gold edge lip and low clean source plinth side, restrained floral inset; no throne, cushions or pavilion. Much shorter and quieter than ballroom stair.",
+      "style_family": "THRONE",
+      "role": "stair-section",
+      "basis": "newly-requested source-compatible variant/join; visible motifs reused",
+      "dimensions_m_proposed": [
+        4,
+        1.2,
+        0.45
+      ],
+      "attachment_face": "bottom/stringer support -Z",
+      "semantic_front": "ascending direction +Y",
+      "model_status": "unregistered",
+      "review_status": "pending-reference-review",
+      "target_polycount_proposed": 6000,
+      "function": "stair-section",
+      "rejection_criteria": [
+        "cropped/fused components",
+        "wrong source/style family",
+        "incorrect planar/radial/handed join",
+        "non-flush floor inlay",
+        "broken supports/whole scene instead of part"
+      ],
+      "reference_approval": "pending",
+      "reuse_component_ids": [
+        "GEN-43-M02",
+        "GEN-43-M06",
+        "GEN-39-M05"
+      ]
+    },
+    {
+      "asset_id": "PAL-STAIR-VAR-001-A03",
+      "name": "Library helical stair section",
+      "description": "ONE curved helical quarter-turn stair SECTION with proper radial wedge treads, curved ivory/gold open rail and a clear supported inner edge/stringer, from the source library spiral staircase. This is curved in plan, not a bent straight flight. Clean radial end planes; no bookshelves or room fused.",
+      "style_family": "LIBRARY",
+      "role": "stair-section",
+      "basis": "newly-requested source-compatible variant/join; visible motifs reused",
+      "dimensions_m_proposed": [
+        3,
+        3,
+        1.5
+      ],
+      "attachment_face": "bottom/stringer support -Z",
+      "semantic_front": "ascending direction +Y",
+      "model_status": "unregistered",
+      "review_status": "pending-reference-review",
+      "target_polycount_proposed": 6000,
+      "function": "stair-section",
+      "rejection_criteria": [
+        "cropped/fused components",
+        "wrong source/style family",
+        "incorrect planar/radial/handed join",
+        "non-flush floor inlay",
+        "broken supports/whole scene instead of part"
+      ],
+      "reference_approval": "pending",
+      "reuse_component_ids": [
+        "GEN-43-M02",
+        "GEN-43-M06",
+        "GEN-39-M05"
+      ]
+    },
+    {
+      "asset_id": "PAL-STAIR-VAR-001-A04",
+      "name": "Conservatory short-step section",
+      "description": "ONE narrow gentle two-step marble garden-room entry SECTION with a thin blue/rose geometric tread-edge inlay and small floral rail ends; no wet channel or fountain, no greenhouse. Preserve its lighter small-scale treatment.",
+      "style_family": "CONSERVATORY",
+      "role": "stair-section",
+      "basis": "newly-requested source-compatible variant/join; visible motifs reused",
+      "dimensions_m_proposed": [
+        1.8,
+        0.6,
+        0.3
+      ],
+      "attachment_face": "bottom/stringer support -Z",
+      "semantic_front": "ascending direction +Y",
+      "model_status": "unregistered",
+      "review_status": "pending-reference-review",
+      "target_polycount_proposed": 6000,
+      "function": "stair-section",
+      "rejection_criteria": [
+        "cropped/fused components",
+        "wrong source/style family",
+        "incorrect planar/radial/handed join",
+        "non-flush floor inlay",
+        "broken supports/whole scene instead of part"
+      ],
+      "reference_approval": "pending",
+      "reuse_component_ids": [
+        "GEN-43-M02",
+        "GEN-43-M06",
+        "GEN-39-M05"
+      ]
+    }
+  ],
+  "prompt": "Correct ONLY the bottom-left A03 Library helical stair SECTION on this four-part palace stair sheet. Its central shaft and upper rail are currently clipped by the top cell boundary. Make it a FINITE uncropped quarter-turn module: shorten the centre support shaft so it ends at a visible plain flat receiving plane JUST ABOVE the highest tread/upper landing of this section. Remove the long column extending outside the picture; no huge tall room column. Keep all radial wedge treads, curved source open gold/ivory rail, complete lower base and upper landing. Fit the ENTIRE resulting A03 including both rail ends/support top inside its cell with clean white margin above and around. Do not shrink/crop other cells or remove necessary support; match original ivory/rose/gold and blue inlay palette. A01 Ballroom, A02 Throne, A04 Conservatory stay exactly as shown. Keep title and all four exact IDs AND names unchanged and legible. No whole room, new stair types, plants, pots or extra furniture. Clear end planes for a proposed modular join, no physical-fit guarantee written onto the image.",
+  "generator": "image_gen.imagegen",
+  "outputs": [
+    {
+      "sheet_id": "PAL-STAIR-VAR-001",
+      "file": "surface-variation-kits/PAL-STAIR-VAR-001/PAL-STAIR-VAR-001.png",
+      "sha256": "9c76b0dcd2bf991635f5542fa62de5eb31451ad98bd61f265b5b169c253a4f85",
+      "original_file": "/workspace/generated_images/exec-370dedc1-355c-4518-93a9-f15e38a2c78c.png",
+      "generator": "image_gen.imagegen",
+      "prompt_key": "prompt",
+      "reference_path": "/workspace/generated_images/exec-267dce55-711d-4692-a8bb-f8b16c6ca329.png",
+      "review_status": "pending-reference-review",
+      "actual_input_file": "surface-variation-kits/PAL-STAIR-VAR-001/rejected-drafts/PAL-STAIR-VAR-001-R01.png",
+      "actual_input_sha256": "edf17a1adbfe96ba9405bb62b6634c81e98b2bd269c236f2521f4af9d7606cac"
+    }
+  ],
+  "generation_attempts": [],
+  "review_status": "pending-reference-review",
+  "actual_geometry_or_texture_seams_verified": false,
+  "models_generated": 0,
+  "reuse_reference_ids": [
+    "GEN-26"
+  ],
+  "repeat_contract": {
+    "linear_flight": "Repeated tread segments at consistent rise/run, terminate at separate landing",
+    "dais": "Three shallow rises; spans later normalize to throne platform width",
+    "helical": "Quarter-turn segments rotate90 degrees around same centre and increase height by segment rise; wedge treads follow common inner/outer radius",
+    "conservatory": "Two low dry rises; water-channel coping stays a separate object"
+  },
+  "dimension_policy": "Illustrative human-scale starting dimensions, not source measurements or confirmed palace level dimensions. Helical bounds/inner and outer radii must normalize before joining.",
+  "previous_attempts": [
+    {
+      "sheet_id": "PAL-STAIR-VAR-001",
+      "file": "surface-variation-kits/PAL-STAIR-VAR-001/rejected-drafts/PAL-STAIR-VAR-001-R01.png",
+      "sha256": "edf17a1adbfe96ba9405bb62b6634c81e98b2bd269c236f2521f4af9d7606cac",
+      "original_file": "/workspace/generated_images/exec-267dce55-711d-4692-a8bb-f8b16c6ca329.png",
+      "generator": "image_gen.imagegen",
+      "prompt_key": "prompt",
+      "reference_path": "/workspace/birthday-castle/docs/asset-image-library/images/illustrated-boards/GEN-26.png",
+      "review_status": "superseded-clipped-helical-support"
+    }
+  ],
+  "original_prompt": "Make a clean high-resolution named component reference sheet, not a whole room/building. Use ONLY the one supplied source for material/motif vocabulary. Owner-requested new variations and junctions must stay coordinated with it. Separate complete objects, no fused neighbors, no cropped silhouettes, no shadows over patterns, no melting scrolls or warped rails. Straight edges/columns remain straight; thin gold stays thin. Warm-white background, even light. Print exact full ID AND short name below EVERY item, title above. One object per cell, no duplicate alternate views. Palette/style follows this source. Source illustrations are not measured models; do not invent fixed palace dimensions. No people, whole buildings, scenery, plants or loose decoration glued onto parts.\nTitle: PAL-STAIR-VAR-001 \u2014 Ballroom, throne, library and conservatory stair sections. Exactly 4 items, 2-by-2 grid. Exactly FOUR different joinable stair SECTION types for these actual source room roles, 2-by-2 grid. Respect source grand-flight vs shallow dais vs HELICAL library vs small conservatory entry differences. All remain DRY pedestrian steps. No gardens, plants or furniture baked into geometry. Source illustrates complete room stairs; segment backs/landings and proposed heights are new modular interpretations, not measured full-room reconstructions. Existing PAL-STAIR-001 remains the outdoor source wing stair; do not replace it with these indoor variants.\nPAL-STAIR-VAR-001-A01 \u2014 Ballroom grand-flight section: ONE wide straight shallow-tread marble flight SECTION, source blue/rose floral tracery side rails and slender ivory/gold newels. Full bottom/top join planes, no giant entrance platform, no attached pots, people or room. Match source grand stair vocabulary.\nPAL-STAIR-VAR-001-A02 \u2014 Throne dais-step section: ONE short wide shallow three-step rose/ivory marble dais section, gold edge lip and low clean source plinth side, restrained floral inset; no throne, cushions or pavilion. Much shorter and quieter than ballroom stair.\nPAL-STAIR-VAR-001-A03 \u2014 Library helical stair section: ONE curved helical quarter-turn stair SECTION with proper radial wedge treads, curved ivory/gold open rail and a clear supported inner edge/stringer, from the source library spiral staircase. This is curved in plan, not a bent straight flight. Clean radial end planes; no bookshelves or room fused.\nPAL-STAIR-VAR-001-A04 \u2014 Conservatory short-step section: ONE narrow gentle two-step marble garden-room entry SECTION with a thin blue/rose geometric tread-edge inlay and small floral rail ends; no wet channel or fountain, no greenhouse. Preserve its lighter small-scale treatment.\nPreserve all names/IDs and the requested count. Do not replace details with a new full building or a material swatch sheet.",
+  "review_notes": [
+    "Clipped central helical support corrected to a complete finite section.",
+    "Quarter-turn helical radius/rise, upper exit and straight-flight endpoints remain model-fit tasks; source illustration is not a measured stair schedule."
+  ],
+  "mesh_generation_allowed_without_approval": false
+}

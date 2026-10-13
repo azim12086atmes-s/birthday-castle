@@ -1,0 +1,588 @@
+{
+  "sheet_id": "GDN-PAVING-VAR-001",
+  "name": "Rose Court and Moon Courtyard paving/edge kits",
+  "owner": "terrain-water-and-planting",
+  "family": "Palace grounds and rose gardens",
+  "source_id": "GEN-14",
+  "count": 16,
+  "source_reference_id": "GEN-14",
+  "source_reference_file": "images/illustrated-boards/GEN-14.png",
+  "source_reference_sha256": "c46f17ea88a79bdf51fd6fb1c47734d2a749c0a24ee7d1eae1e961dce503bcd8",
+  "generation_reference_path": "/workspace/birthday-castle/docs/asset-image-library/images/illustrated-boards/GEN-14.png",
+  "source_rules": "Source provides observed palette/motifs; owner-requested new variant geometry and hidden backs are proposals",
+  "style_groups": [
+    [
+      "ROSE-COURT",
+      "formal star/rose paving"
+    ],
+    [
+      "MOON-COURT",
+      "natural pond-side stone and leaf paths"
+    ]
+  ],
+  "parts": [
+    {
+      "asset_id": "GDN-PAVING-VAR-001-A01",
+      "name": "Rose plain paving",
+      "description": "Thin ivory/rose marble square walking tile, fine gold joint guide, no whole floor medallion.",
+      "style_family": "ROSE-COURT",
+      "role": "field-tile",
+      "basis": "newly-requested source-compatible variant/join; visible motifs reused",
+      "dimensions_m_proposed": [
+        1,
+        1,
+        0.025
+      ],
+      "attachment_face": "bottom -Z",
+      "semantic_front": "up +Z",
+      "model_status": "unregistered",
+      "review_status": "pending-reference-review",
+      "function": "field-tile",
+      "target_polycount_proposed": 1200,
+      "rejection_criteria": [
+        "cropped/fused components",
+        "wrong source/style family",
+        "incorrect planar/radial/handed join",
+        "non-flush floor inlay",
+        "broken supports/whole scene instead of part"
+      ],
+      "reference_approval": "pending",
+      "reuse_component_ids": [
+        "GEN-35-A01",
+        "GEN-35-A04",
+        "GEN-34-M01",
+        "GEN-36-S05"
+      ]
+    },
+    {
+      "asset_id": "GDN-PAVING-VAR-001-A02",
+      "name": "Rose star insert",
+      "description": "Single small eight-point gold star/rose mineral inlay tile from the source court paving, flush, plain margin.",
+      "style_family": "ROSE-COURT",
+      "role": "field-tile",
+      "basis": "newly-requested source-compatible variant/join; visible motifs reused",
+      "dimensions_m_proposed": [
+        1,
+        1,
+        0.025
+      ],
+      "attachment_face": "bottom -Z",
+      "semantic_front": "up +Z",
+      "model_status": "unregistered",
+      "review_status": "pending-reference-review",
+      "function": "field-tile",
+      "target_polycount_proposed": 1200,
+      "rejection_criteria": [
+        "cropped/fused components",
+        "wrong source/style family",
+        "incorrect planar/radial/handed join",
+        "non-flush floor inlay",
+        "broken supports/whole scene instead of part"
+      ],
+      "reference_approval": "pending",
+      "reuse_component_ids": [
+        "GEN-35-A01",
+        "GEN-35-A04",
+        "GEN-34-M01",
+        "GEN-36-S05"
+      ]
+    },
+    {
+      "asset_id": "GDN-PAVING-VAR-001-A03",
+      "name": "Rose vine border",
+      "description": "Short straight flush rose/leaf gold-edged floor border repeat, identical line phase at both ends.",
+      "style_family": "ROSE-COURT",
+      "role": "floor-border",
+      "basis": "newly-requested source-compatible variant/join; visible motifs reused",
+      "dimensions_m_proposed": [
+        1,
+        0.2,
+        0.025
+      ],
+      "attachment_face": "bottom -Z",
+      "semantic_front": "up +Z",
+      "model_status": "unregistered",
+      "review_status": "pending-reference-review",
+      "function": "floor-border",
+      "target_polycount_proposed": 1200,
+      "rejection_criteria": [
+        "cropped/fused components",
+        "wrong source/style family",
+        "incorrect planar/radial/handed join",
+        "non-flush floor inlay",
+        "broken supports/whole scene instead of part"
+      ],
+      "reference_approval": "pending",
+      "reuse_component_ids": [
+        "GEN-35-A01",
+        "GEN-35-A04",
+        "GEN-34-M01",
+        "GEN-36-S05"
+      ]
+    },
+    {
+      "asset_id": "GDN-PAVING-VAR-001-A04",
+      "name": "Rose outer corner",
+      "description": "One outward90-degree flush border corner, square boundary, same band profile.",
+      "style_family": "ROSE-COURT",
+      "role": "floor-corner",
+      "basis": "newly-requested source-compatible variant/join; visible motifs reused",
+      "dimensions_m_proposed": [
+        1,
+        0.2,
+        0.025
+      ],
+      "attachment_face": "bottom -Z",
+      "semantic_front": "up +Z",
+      "model_status": "unregistered",
+      "review_status": "pending-reference-review",
+      "function": "floor-corner",
+      "target_polycount_proposed": 1200,
+      "rejection_criteria": [
+        "cropped/fused components",
+        "wrong source/style family",
+        "incorrect planar/radial/handed join",
+        "non-flush floor inlay",
+        "broken supports/whole scene instead of part"
+      ],
+      "reference_approval": "pending",
+      "reuse_component_ids": [
+        "GEN-35-A01",
+        "GEN-35-A04",
+        "GEN-34-M01",
+        "GEN-36-S05"
+      ]
+    },
+    {
+      "asset_id": "GDN-PAVING-VAR-001-A05",
+      "name": "Rose bed inner corner",
+      "description": "One inward L turn of the low rose/ivory planted-bed retaining edge, no plants.",
+      "style_family": "ROSE-COURT",
+      "role": "garden-edge",
+      "basis": "newly-requested source-compatible variant/join; visible motifs reused",
+      "dimensions_m_proposed": [
+        0.6,
+        0.2,
+        0.25
+      ],
+      "attachment_face": "bottom -Z",
+      "semantic_front": "outward face",
+      "model_status": "unregistered",
+      "review_status": "pending-reference-review",
+      "function": "garden-edge",
+      "target_polycount_proposed": 1200,
+      "rejection_criteria": [
+        "cropped/fused components",
+        "wrong source/style family",
+        "incorrect planar/radial/handed join",
+        "non-flush floor inlay",
+        "broken supports/whole scene instead of part"
+      ],
+      "reference_approval": "pending",
+      "reuse_component_ids": [
+        "GEN-35-A01",
+        "GEN-35-A04",
+        "GEN-34-M01",
+        "GEN-36-S05"
+      ]
+    },
+    {
+      "asset_id": "GDN-PAVING-VAR-001-A06",
+      "name": "Rose basin radial coping",
+      "description": "One shallow curved marble rim segment for the lobed fountain approach, clean radial ends, no fountain or water.",
+      "style_family": "ROSE-COURT",
+      "role": "garden-edge",
+      "basis": "newly-requested source-compatible variant/join; visible motifs reused",
+      "dimensions_m_proposed": [
+        0.6,
+        0.2,
+        0.25
+      ],
+      "attachment_face": "bottom -Z",
+      "semantic_front": "outward face",
+      "model_status": "unregistered",
+      "review_status": "pending-reference-review",
+      "function": "garden-edge",
+      "target_polycount_proposed": 1200,
+      "rejection_criteria": [
+        "cropped/fused components",
+        "wrong source/style family",
+        "incorrect planar/radial/handed join",
+        "non-flush floor inlay",
+        "broken supports/whole scene instead of part"
+      ],
+      "reference_approval": "pending",
+      "reuse_component_ids": [
+        "GEN-35-A01",
+        "GEN-35-A04",
+        "GEN-34-M01",
+        "GEN-36-S05"
+      ]
+    },
+    {
+      "asset_id": "GDN-PAVING-VAR-001-A07",
+      "name": "Rose path threshold",
+      "description": "Small shallow dry marble path threshold slab with simple gold star-edge inlay, no stairs/portal.",
+      "style_family": "ROSE-COURT",
+      "role": "floor-threshold",
+      "basis": "newly-requested source-compatible variant/join; visible motifs reused",
+      "dimensions_m_proposed": [
+        1,
+        0.2,
+        0.025
+      ],
+      "attachment_face": "bottom -Z",
+      "semantic_front": "up +Z",
+      "model_status": "unregistered",
+      "review_status": "pending-reference-review",
+      "function": "floor-threshold",
+      "target_polycount_proposed": 1200,
+      "rejection_criteria": [
+        "cropped/fused components",
+        "wrong source/style family",
+        "incorrect planar/radial/handed join",
+        "non-flush floor inlay",
+        "broken supports/whole scene instead of part"
+      ],
+      "reference_approval": "pending",
+      "reuse_component_ids": [
+        "GEN-35-A01",
+        "GEN-35-A04",
+        "GEN-34-M01",
+        "GEN-36-S05"
+      ]
+    },
+    {
+      "asset_id": "GDN-PAVING-VAR-001-A08",
+      "name": "Rose runoff edge",
+      "description": "One restrained narrow slotted stone path-drain edge, functional new junction proposal, no water.",
+      "style_family": "ROSE-COURT",
+      "role": "garden-edge",
+      "basis": "newly-requested source-compatible variant/join; visible motifs reused",
+      "dimensions_m_proposed": [
+        0.6,
+        0.2,
+        0.25
+      ],
+      "attachment_face": "bottom -Z",
+      "semantic_front": "outward face",
+      "model_status": "unregistered",
+      "review_status": "pending-reference-review",
+      "function": "garden-edge",
+      "target_polycount_proposed": 1200,
+      "rejection_criteria": [
+        "cropped/fused components",
+        "wrong source/style family",
+        "incorrect planar/radial/handed join",
+        "non-flush floor inlay",
+        "broken supports/whole scene instead of part"
+      ],
+      "reference_approval": "pending",
+      "reuse_component_ids": [
+        "GEN-35-A01",
+        "GEN-35-A04",
+        "GEN-34-M01",
+        "GEN-36-S05"
+      ]
+    },
+    {
+      "asset_id": "GDN-PAVING-VAR-001-A09",
+      "name": "Moon stepping stone",
+      "description": "One pale irregular softly rounded stepping-stone slab for natural pond-side walking path, subtle rose/ivory stone.",
+      "style_family": "MOON-COURT",
+      "role": "stepping-stone",
+      "basis": "newly-requested source-compatible variant/join; visible motifs reused",
+      "dimensions_m_proposed": [
+        0.8,
+        0.5,
+        0.08
+      ],
+      "attachment_face": "bottom -Z",
+      "semantic_front": "up +Z",
+      "model_status": "unregistered",
+      "review_status": "pending-reference-review",
+      "function": "stepping-stone",
+      "target_polycount_proposed": 1200,
+      "rejection_criteria": [
+        "cropped/fused components",
+        "wrong source/style family",
+        "incorrect planar/radial/handed join",
+        "non-flush floor inlay",
+        "broken supports/whole scene instead of part"
+      ],
+      "reference_approval": "pending",
+      "reuse_component_ids": [
+        "GEN-35-A01",
+        "GEN-35-A04",
+        "GEN-34-M01",
+        "GEN-36-S05"
+      ]
+    },
+    {
+      "asset_id": "GDN-PAVING-VAR-001-A10",
+      "name": "Moon leaf stone",
+      "description": "One irregular stone slab with a small shallow leaf/lily mineral impression, newly requested restrained variant.",
+      "style_family": "MOON-COURT",
+      "role": "stepping-stone",
+      "basis": "newly-requested source-compatible variant/join; visible motifs reused",
+      "dimensions_m_proposed": [
+        0.8,
+        0.5,
+        0.08
+      ],
+      "attachment_face": "bottom -Z",
+      "semantic_front": "up +Z",
+      "model_status": "unregistered",
+      "review_status": "pending-reference-review",
+      "function": "stepping-stone",
+      "target_polycount_proposed": 1200,
+      "rejection_criteria": [
+        "cropped/fused components",
+        "wrong source/style family",
+        "incorrect planar/radial/handed join",
+        "non-flush floor inlay",
+        "broken supports/whole scene instead of part"
+      ],
+      "reference_approval": "pending",
+      "reuse_component_ids": [
+        "GEN-35-A01",
+        "GEN-35-A04",
+        "GEN-34-M01",
+        "GEN-36-S05"
+      ]
+    },
+    {
+      "asset_id": "GDN-PAVING-VAR-001-A11",
+      "name": "Moon outer path coping",
+      "description": "One curved low ivory stone path-edge segment, gentle convex curve, modest gold lip only.",
+      "style_family": "MOON-COURT",
+      "role": "garden-edge",
+      "basis": "newly-requested source-compatible variant/join; visible motifs reused",
+      "dimensions_m_proposed": [
+        0.6,
+        0.2,
+        0.25
+      ],
+      "attachment_face": "bottom -Z",
+      "semantic_front": "outward face",
+      "model_status": "unregistered",
+      "review_status": "pending-reference-review",
+      "function": "garden-edge",
+      "target_polycount_proposed": 1200,
+      "rejection_criteria": [
+        "cropped/fused components",
+        "wrong source/style family",
+        "incorrect planar/radial/handed join",
+        "non-flush floor inlay",
+        "broken supports/whole scene instead of part"
+      ],
+      "reference_approval": "pending",
+      "reuse_component_ids": [
+        "GEN-35-A01",
+        "GEN-35-A04",
+        "GEN-34-M01",
+        "GEN-36-S05"
+      ]
+    },
+    {
+      "asset_id": "GDN-PAVING-VAR-001-A12",
+      "name": "Moon inner path coping",
+      "description": "One complementary concave low stone path-edge segment, matching edge section.",
+      "style_family": "MOON-COURT",
+      "role": "garden-edge",
+      "basis": "newly-requested source-compatible variant/join; visible motifs reused",
+      "dimensions_m_proposed": [
+        0.6,
+        0.2,
+        0.25
+      ],
+      "attachment_face": "bottom -Z",
+      "semantic_front": "outward face",
+      "model_status": "unregistered",
+      "review_status": "pending-reference-review",
+      "function": "garden-edge",
+      "target_polycount_proposed": 1200,
+      "rejection_criteria": [
+        "cropped/fused components",
+        "wrong source/style family",
+        "incorrect planar/radial/handed join",
+        "non-flush floor inlay",
+        "broken supports/whole scene instead of part"
+      ],
+      "reference_approval": "pending",
+      "reuse_component_ids": [
+        "GEN-35-A01",
+        "GEN-35-A04",
+        "GEN-34-M01",
+        "GEN-36-S05"
+      ]
+    },
+    {
+      "asset_id": "GDN-PAVING-VAR-001-A13",
+      "name": "Moon pond shore stone",
+      "description": "One softly weathered pale pond-edge stone with complete flat underside, no pool, fish or water.",
+      "style_family": "MOON-COURT",
+      "role": "garden-edge",
+      "basis": "newly-requested source-compatible variant/join; visible motifs reused",
+      "dimensions_m_proposed": [
+        0.6,
+        0.2,
+        0.25
+      ],
+      "attachment_face": "bottom -Z",
+      "semantic_front": "outward face",
+      "model_status": "unregistered",
+      "review_status": "pending-reference-review",
+      "function": "garden-edge",
+      "target_polycount_proposed": 1200,
+      "rejection_criteria": [
+        "cropped/fused components",
+        "wrong source/style family",
+        "incorrect planar/radial/handed join",
+        "non-flush floor inlay",
+        "broken supports/whole scene instead of part"
+      ],
+      "reference_approval": "pending",
+      "reuse_component_ids": [
+        "GEN-35-A01",
+        "GEN-35-A04",
+        "GEN-34-M01",
+        "GEN-36-S05"
+      ]
+    },
+    {
+      "asset_id": "GDN-PAVING-VAR-001-A14",
+      "name": "Moon bridge threshold",
+      "description": "Small pale stone landing/threshold connecting garden path to a separate small bridge, no complete bridge.",
+      "style_family": "MOON-COURT",
+      "role": "floor-threshold",
+      "basis": "newly-requested source-compatible variant/join; visible motifs reused",
+      "dimensions_m_proposed": [
+        1,
+        0.2,
+        0.025
+      ],
+      "attachment_face": "bottom -Z",
+      "semantic_front": "up +Z",
+      "model_status": "unregistered",
+      "review_status": "pending-reference-review",
+      "function": "floor-threshold",
+      "target_polycount_proposed": 1200,
+      "rejection_criteria": [
+        "cropped/fused components",
+        "wrong source/style family",
+        "incorrect planar/radial/handed join",
+        "non-flush floor inlay",
+        "broken supports/whole scene instead of part"
+      ],
+      "reference_approval": "pending",
+      "reuse_component_ids": [
+        "GEN-35-A01",
+        "GEN-35-A04",
+        "GEN-34-M01",
+        "GEN-36-S05"
+      ]
+    },
+    {
+      "asset_id": "GDN-PAVING-VAR-001-A15",
+      "name": "Moon bed foot return",
+      "description": "Small low curved planted-bed retaining foot, quiet pale stone and modest leaf edge; no flowers.",
+      "style_family": "MOON-COURT",
+      "role": "garden-edge",
+      "basis": "newly-requested source-compatible variant/join; visible motifs reused",
+      "dimensions_m_proposed": [
+        0.6,
+        0.2,
+        0.25
+      ],
+      "attachment_face": "bottom -Z",
+      "semantic_front": "outward face",
+      "model_status": "unregistered",
+      "review_status": "pending-reference-review",
+      "function": "garden-edge",
+      "target_polycount_proposed": 1200,
+      "rejection_criteria": [
+        "cropped/fused components",
+        "wrong source/style family",
+        "incorrect planar/radial/handed join",
+        "non-flush floor inlay",
+        "broken supports/whole scene instead of part"
+      ],
+      "reference_approval": "pending",
+      "reuse_component_ids": [
+        "GEN-35-A01",
+        "GEN-35-A04",
+        "GEN-34-M01",
+        "GEN-36-S05"
+      ]
+    },
+    {
+      "asset_id": "GDN-PAVING-VAR-001-A16",
+      "name": "Moon low path tread",
+      "description": "One shallow pale stone garden step, gently rounded nosing, lighter than royal grand stairs, no rails fused.",
+      "style_family": "MOON-COURT",
+      "role": "stair-tread",
+      "basis": "newly-requested source-compatible variant/join; visible motifs reused",
+      "dimensions_m_proposed": [
+        0.8,
+        0.5,
+        0.08
+      ],
+      "attachment_face": "bottom -Z",
+      "semantic_front": "up +Z",
+      "model_status": "unregistered",
+      "review_status": "pending-reference-review",
+      "function": "stair-tread",
+      "target_polycount_proposed": 1200,
+      "rejection_criteria": [
+        "cropped/fused components",
+        "wrong source/style family",
+        "incorrect planar/radial/handed join",
+        "non-flush floor inlay",
+        "broken supports/whole scene instead of part"
+      ],
+      "reference_approval": "pending",
+      "reuse_component_ids": [
+        "GEN-35-A01",
+        "GEN-35-A04",
+        "GEN-34-M01",
+        "GEN-36-S05"
+      ]
+    }
+  ],
+  "prompt": "Make a clean high-resolution named component reference sheet, not a whole room/building. Use ONLY the one supplied source for material/motif vocabulary. Owner-requested new variations and junctions must stay coordinated with it. Separate complete objects, no fused neighbors, no cropped silhouettes, no shadows over patterns, no melting scrolls or warped rails. Straight edges/columns remain straight; thin gold stays thin. Warm-white background, even light. Print exact full ID AND short name below EVERY item, title above. One object per cell, no duplicate alternate views. Palette/style follows this source. Source illustrations are not measured models; do not invent fixed palace dimensions. No people, whole buildings, scenery, plants or loose decoration glued onto parts.\nTitle: GDN-PAVING-VAR-001 \u2014 Rose Court and Moon Courtyard paving/edge kits. Exactly 16 items, 4-by-4 grid. Exactly16 components,4-by-4 grid. TOP TWO ROWS Rose Court formal geometric ivory/rose/star paving; BOTTOM TWO ROWS Moon Courtyard natural lily-pond path stones/quiet curved edges. DO NOT give Moon Court the same tiled medallion grid as Rose Court. Floor pieces seen nearly top-down, edge/tread pieces in clean slight oblique views. Keep all inlay flush and edges restrained. These are isolated parts, not entire gardens or planter assemblies.\nGDN-PAVING-VAR-001-A01 \u2014 Rose plain paving: Thin ivory/rose marble square walking tile, fine gold joint guide, no whole floor medallion.\nGDN-PAVING-VAR-001-A02 \u2014 Rose star insert: Single small eight-point gold star/rose mineral inlay tile from the source court paving, flush, plain margin.\nGDN-PAVING-VAR-001-A03 \u2014 Rose vine border: Short straight flush rose/leaf gold-edged floor border repeat, identical line phase at both ends.\nGDN-PAVING-VAR-001-A04 \u2014 Rose outer corner: One outward90-degree flush border corner, square boundary, same band profile.\nGDN-PAVING-VAR-001-A05 \u2014 Rose bed inner corner: One inward L turn of the low rose/ivory planted-bed retaining edge, no plants.\nGDN-PAVING-VAR-001-A06 \u2014 Rose basin radial coping: One shallow curved marble rim segment for the lobed fountain approach, clean radial ends, no fountain or water.\nGDN-PAVING-VAR-001-A07 \u2014 Rose path threshold: Small shallow dry marble path threshold slab with simple gold star-edge inlay, no stairs/portal.\nGDN-PAVING-VAR-001-A08 \u2014 Rose runoff edge: One restrained narrow slotted stone path-drain edge, functional new junction proposal, no water.\nGDN-PAVING-VAR-001-A09 \u2014 Moon stepping stone: One pale irregular softly rounded stepping-stone slab for natural pond-side walking path, subtle rose/ivory stone.\nGDN-PAVING-VAR-001-A10 \u2014 Moon leaf stone: One irregular stone slab with a small shallow leaf/lily mineral impression, newly requested restrained variant.\nGDN-PAVING-VAR-001-A11 \u2014 Moon outer path coping: One curved low ivory stone path-edge segment, gentle convex curve, modest gold lip only.\nGDN-PAVING-VAR-001-A12 \u2014 Moon inner path coping: One complementary concave low stone path-edge segment, matching edge section.\nGDN-PAVING-VAR-001-A13 \u2014 Moon pond shore stone: One softly weathered pale pond-edge stone with complete flat underside, no pool, fish or water.\nGDN-PAVING-VAR-001-A14 \u2014 Moon bridge threshold: Small pale stone landing/threshold connecting garden path to a separate small bridge, no complete bridge.\nGDN-PAVING-VAR-001-A15 \u2014 Moon bed foot return: Small low curved planted-bed retaining foot, quiet pale stone and modest leaf edge; no flowers.\nGDN-PAVING-VAR-001-A16 \u2014 Moon low path tread: One shallow pale stone garden step, gently rounded nosing, lighter than royal grand stairs, no rails fused.\nPreserve all names/IDs and the requested count. Do not replace details with a new full building or a material swatch sheet.",
+  "generator": "image_gen.imagegen",
+  "outputs": [
+    {
+      "sheet_id": "GDN-PAVING-VAR-001",
+      "file": "surface-variation-kits/GDN-PAVING-VAR-001/GDN-PAVING-VAR-001.png",
+      "sha256": "3a94a0b6903f3f3231679e16da18eebe98a0ecae1460ce1f1c29f8407dfe9a48",
+      "original_file": "/workspace/generated_images/exec-16e9dd2a-d3f7-4e20-b632-9f913fd8e376.png",
+      "generator": "image_gen.imagegen",
+      "prompt_key": "prompt",
+      "reference_path": "/workspace/birthday-castle/docs/asset-image-library/images/illustrated-boards/GEN-14.png",
+      "review_status": "pending-reference-review",
+      "actual_input_file": "images/illustrated-boards/GEN-14.png",
+      "actual_input_sha256": "c46f17ea88a79bdf51fd6fb1c47734d2a749c0a24ee7d1eae1e961dce503bcd8"
+    }
+  ],
+  "generation_attempts": [],
+  "review_status": "pending-reference-review",
+  "actual_geometry_or_texture_seams_verified": false,
+  "models_generated": 0,
+  "reuse_reference_ids": [
+    "GEN-14"
+  ],
+  "repeat_contract": {
+    "rose_field": "Plain matching square edges; local star motif contained within margins",
+    "rose_border": "One complete motif period per strip; matching line phase",
+    "moon_path": "Authored irregular placement, not a translation-tiled pattern; common low edge profile at connections",
+    "curved_rims": "Normalize radius/angular pitch to the actual basin; source curve art is not a measured radius"
+  },
+  "review_notes": [
+    "Rose Court formal paving and Moon Courtyard natural path stones stay distinct.",
+    "A04 is illustrated as raised edge/coping rather than a certified flush inlay; use as a bed-edge corner or flatten/reconstruct for a floor application. A05 corner turn is a proposed treatment; plan geometry needs review.",
+    "Floor flowers/leaf motifs must remain flush when used in walkable paving; source-like shaded relief does not certify height."
+  ],
+  "mesh_generation_allowed_without_approval": false
+}

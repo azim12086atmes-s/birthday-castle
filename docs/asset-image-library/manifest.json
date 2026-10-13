@@ -1,8 +1,8 @@
 {
   "date": "2026-10-13",
-  "distinct_image_count": 683,
-  "source_file_count": 940,
-  "total_bytes": 634852655,
+  "distinct_image_count": 712,
+  "source_file_count": 969,
+  "total_bytes": 666102383,
   "categories": {
     "additional-generated-studies": 33,
     "component-development-studies": 3,
@@ -22,17 +22,22 @@
     "palace-screenshot-source-sections": 28,
     "palace-structural-studies": 1,
     "palace-structure-drafts": 10,
+    "palace-surface-variation-kits": 7,
     "palace-wall-input-crops": 3,
     "palace-wall-module-kits": 3,
     "palace-wall-return-studies": 2,
+    "parked-map-surface-studies": 1,
     "previews-and-reference-copies": 237,
     "reference-crops-and-studies": 73,
     "renders-and-screenshots": 48,
     "superseded-pack-revisions": 1,
+    "surface-variation-source-panels": 10,
+    "surface-variation-superseded-drafts": 3,
     "terminal-tower-component-kits": 2,
     "terminal-tower-rejected-drafts": 1,
     "terminal-tower-source-sections": 4,
-    "vector-drawings": 130
+    "vector-drawings": 130,
+    "wishing-original-source-panels": 8
   },
   "active_palace_authority": "GEN-37 original front elevation; GEN-03 and GEN-16 supporting views",
   "notes": [
@@ -1292,9 +1297,13 @@
       "alias_ids": [],
       "component_ids": [
         "GEN-28-A01",
+        "GEN-28-A05",
         "GEN-28-A02",
+        "GEN-28-A06",
         "GEN-28-A03",
-        "GEN-28-A04"
+        "GEN-28-A07",
+        "GEN-28-A04",
+        "GEN-28-A08"
       ],
       "label": "GEN-28 \u2014 Lotus travel and wishing objects",
       "reference_role": "illustrated-design-board",
@@ -13714,6 +13723,699 @@
         "PAL-TOWER-007",
         "SRC-PAL-TOWER-007"
       ]
+    },
+    {
+      "id": "SRC-SURF-UPPER-STAR-RAIL",
+      "label": "SRC-SURF-UPPER-STAR-RAIL \u2014 upper-star-rail",
+      "title": "upper-star-rail",
+      "category": "surface-variation-source-panels",
+      "file": "surface-variation-kits/source-panels/upper-star-rail.png",
+      "sha256": "5b642b761cf69f9b5f8d50646c09d2e86dfc0344f1550e94a8006cc9d9a14af1",
+      "bytes": 515256,
+      "reference_role": "direct-original-source-panel",
+      "design_status": "Unchanged original source pixels; bounds are reference panels, not object masks.",
+      "review_status": "source-reference",
+      "component_ids": [
+        "GEN-39-M01"
+      ],
+      "related_image_ids": [
+        "GEN-39"
+      ],
+      "source_aliases": [],
+      "alias_ids": []
+    },
+    {
+      "id": "SRC-SURF-LOWER-FLOWER-WHEEL-RAIL",
+      "label": "SRC-SURF-LOWER-FLOWER-WHEEL-RAIL \u2014 lower-flower-wheel-rail",
+      "title": "lower-flower-wheel-rail",
+      "category": "surface-variation-source-panels",
+      "file": "surface-variation-kits/source-panels/lower-flower-wheel-rail.png",
+      "sha256": "afdfc7528b766097253a18dda26ab42e316aae05c6b8841cc6a965ffea46d4bd",
+      "bytes": 375294,
+      "reference_role": "direct-original-source-panel",
+      "design_status": "Unchanged original source pixels; bounds are reference panels, not object masks.",
+      "review_status": "source-reference",
+      "component_ids": [
+        "GEN-39-M02"
+      ],
+      "related_image_ids": [
+        "GEN-39"
+      ],
+      "source_aliases": [],
+      "alias_ids": []
+    },
+    {
+      "id": "SRC-SURF-VASE-AND-ARCADE-RAIL",
+      "label": "SRC-SURF-VASE-AND-ARCADE-RAIL \u2014 vase-and-arcade-rail",
+      "title": "vase-and-arcade-rail",
+      "category": "surface-variation-source-panels",
+      "file": "surface-variation-kits/source-panels/vase-and-arcade-rail.png",
+      "sha256": "f5c3127a00f53fe420fa9c607193c3cf3820158941ed5ce20fc3db63fa765108",
+      "bytes": 439191,
+      "reference_role": "direct-original-source-panel",
+      "design_status": "Unchanged original source pixels; bounds are reference panels, not object masks.",
+      "review_status": "source-reference",
+      "component_ids": [
+        "GEN-39-M03"
+      ],
+      "related_image_ids": [
+        "GEN-39"
+      ],
+      "source_aliases": [],
+      "alias_ids": []
+    },
+    {
+      "id": "SRC-SURF-COMPACT-GALLERY-RAIL",
+      "label": "SRC-SURF-COMPACT-GALLERY-RAIL \u2014 compact-gallery-rail",
+      "title": "compact-gallery-rail",
+      "category": "surface-variation-source-panels",
+      "file": "surface-variation-kits/source-panels/compact-gallery-rail.png",
+      "sha256": "02dbcfa06b8bd28a2741f0f7eb97c65a5752852a8411c2714baf95eec55510ea",
+      "bytes": 320199,
+      "reference_role": "direct-original-source-panel",
+      "design_status": "Unchanged original source pixels; bounds are reference panels, not object masks.",
+      "review_status": "source-reference",
+      "component_ids": [
+        "GEN-39-M04"
+      ],
+      "related_image_ids": [
+        "GEN-39"
+      ],
+      "source_aliases": [],
+      "alias_ids": []
+    },
+    {
+      "id": "SRC-SURF-RISING-STAIR-RAIL",
+      "label": "SRC-SURF-RISING-STAIR-RAIL \u2014 rising-stair-rail",
+      "title": "rising-stair-rail",
+      "category": "surface-variation-source-panels",
+      "file": "surface-variation-kits/source-panels/rising-stair-rail.png",
+      "sha256": "8aadf482cd7a1000edb479903ddd30895ad3e433ce24e42d7358b5e47e2868cd",
+      "bytes": 485663,
+      "reference_role": "direct-original-source-panel",
+      "design_status": "Unchanged original source pixels; bounds are reference panels, not object masks.",
+      "review_status": "source-reference",
+      "component_ids": [
+        "GEN-39-M05"
+      ],
+      "related_image_ids": [
+        "GEN-39"
+      ],
+      "source_aliases": [],
+      "alias_ids": []
+    },
+    {
+      "id": "SRC-SURF-CORNER-CURVED-RAIL",
+      "label": "SRC-SURF-CORNER-CURVED-RAIL \u2014 corner-curved-rail",
+      "title": "corner-curved-rail",
+      "category": "surface-variation-source-panels",
+      "file": "surface-variation-kits/source-panels/corner-curved-rail.png",
+      "sha256": "49a83bb2020c2399678b165683540b099d930eea486065cdd25ed9cddb6eca5f",
+      "bytes": 391046,
+      "reference_role": "direct-original-source-panel",
+      "design_status": "Unchanged original source pixels; bounds are reference panels, not object masks.",
+      "review_status": "source-reference",
+      "component_ids": [
+        "GEN-39-M06"
+      ],
+      "related_image_ids": [
+        "GEN-39"
+      ],
+      "source_aliases": [],
+      "alias_ids": []
+    },
+    {
+      "id": "SRC-SURF-B06-MISTY-PAGODA",
+      "label": "SRC-SURF-B06-MISTY-PAGODA \u2014 B06-misty-pagoda",
+      "title": "B06-misty-pagoda",
+      "category": "surface-variation-source-panels",
+      "file": "surface-variation-kits/source-panels/B06-misty-pagoda.png",
+      "sha256": "c2c4c10ec9cdd4105767bbcd2efdf5e74137b3c984d15ddee96436469a76ac5a",
+      "bytes": 237193,
+      "reference_role": "direct-original-source-panel",
+      "design_status": "Unchanged original source pixels; bounds are reference panels, not object masks.",
+      "review_status": "parked-map-source",
+      "component_ids": [],
+      "related_image_ids": [
+        "GEN-27"
+      ],
+      "source_aliases": [],
+      "alias_ids": []
+    },
+    {
+      "id": "SRC-SURF-B08-COLOSSEUM",
+      "label": "SRC-SURF-B08-COLOSSEUM \u2014 B08-colosseum",
+      "title": "B08-colosseum",
+      "category": "surface-variation-source-panels",
+      "file": "surface-variation-kits/source-panels/B08-colosseum.png",
+      "sha256": "8e3cdff44057536af9d175217b98d16efdb7f708eccd4f4a656549ff5f3d0114",
+      "bytes": 247930,
+      "reference_role": "direct-original-source-panel",
+      "design_status": "Unchanged original source pixels; bounds are reference panels, not object masks.",
+      "review_status": "parked-map-source",
+      "component_ids": [],
+      "related_image_ids": [
+        "GEN-27"
+      ],
+      "source_aliases": [],
+      "alias_ids": []
+    },
+    {
+      "id": "SRC-SURF-B12-STORYBOOK-COTTAGE",
+      "label": "SRC-SURF-B12-STORYBOOK-COTTAGE \u2014 B12-storybook-cottage",
+      "title": "B12-storybook-cottage",
+      "category": "surface-variation-source-panels",
+      "file": "surface-variation-kits/source-panels/B12-storybook-cottage.png",
+      "sha256": "c535f494f165ab0082afadb8fc7fa2267e11046526734530d4e7769a0843063c",
+      "bytes": 246289,
+      "reference_role": "direct-original-source-panel",
+      "design_status": "Unchanged original source pixels; bounds are reference panels, not object masks.",
+      "review_status": "parked-map-source",
+      "component_ids": [],
+      "related_image_ids": [
+        "GEN-27"
+      ],
+      "source_aliases": [],
+      "alias_ids": []
+    },
+    {
+      "id": "SRC-SURF-CONSERVATORY-FOOTRAIL",
+      "label": "SRC-SURF-CONSERVATORY-FOOTRAIL \u2014 Conservatory original outside footrail and paving edge",
+      "title": "Conservatory original outside footrail and paving edge",
+      "category": "surface-variation-source-panels",
+      "file": "surface-variation-kits/source-panels/conservatory-outside-footrail.png",
+      "sha256": "c93b16b4bb3bbf3c6e257b7975b22c3c42779c1f46b3a84566984bd0c63c8d68",
+      "bytes": 79480,
+      "reference_role": "direct-original-source-panel",
+      "design_status": "Unchanged original source pixels; bounds are reference panels, not object masks.",
+      "review_status": "source-reference",
+      "component_ids": [
+        "GEN-36-S06"
+      ],
+      "related_image_ids": [
+        "GEN-36"
+      ],
+      "source_aliases": [],
+      "alias_ids": []
+    },
+    {
+      "id": "SRC-WISH-GEN-28-A01",
+      "label": "SRC-WISH-GEN-28-A01 \u2014 Lotus sky-boat \u2014 existing original panel",
+      "title": "Lotus sky-boat \u2014 existing original panel",
+      "category": "wishing-original-source-panels",
+      "file": "surface-variation-kits/wishing-source-audit/GEN-28-A01.png",
+      "sha256": "9a8051d579303971cd1bc77d9109c40a84f7a5525c99a37c752cd58f623f5ce7",
+      "bytes": 466990,
+      "reference_role": "direct-original-source-panel",
+      "design_status": "Existing original artwork, not a new wishing design; source panel includes assembly/parts/views.",
+      "review_status": "source-reference",
+      "component_ids": [
+        "GEN-28-A01"
+      ],
+      "related_image_ids": [
+        "GEN-28"
+      ],
+      "source_aliases": [],
+      "alias_ids": []
+    },
+    {
+      "id": "SRC-WISH-GEN-28-A05",
+      "label": "SRC-WISH-GEN-28-A05 \u2014 Boat landing platform \u2014 existing original panel",
+      "title": "Boat landing platform \u2014 existing original panel",
+      "category": "wishing-original-source-panels",
+      "file": "surface-variation-kits/wishing-source-audit/GEN-28-A05.png",
+      "sha256": "79a6e463990f5434fd083ebbbdb7b78d426b9495c333e05016de58c925e8d80c",
+      "bytes": 494572,
+      "reference_role": "direct-original-source-panel",
+      "design_status": "Existing original artwork, not a new wishing design; source panel includes assembly/parts/views.",
+      "review_status": "source-reference",
+      "component_ids": [
+        "GEN-28-A05"
+      ],
+      "related_image_ids": [
+        "GEN-28"
+      ],
+      "source_aliases": [],
+      "alias_ids": []
+    },
+    {
+      "id": "SRC-WISH-GEN-28-A02",
+      "label": "SRC-WISH-GEN-28-A02 \u2014 Wishing portal ring \u2014 existing original panel",
+      "title": "Wishing portal ring \u2014 existing original panel",
+      "category": "wishing-original-source-panels",
+      "file": "surface-variation-kits/wishing-source-audit/GEN-28-A02.png",
+      "sha256": "208df44634d3c2c08eb942f23790620c2346c69abe4db30e1e35ffb3fd0ef4eb",
+      "bytes": 390403,
+      "reference_role": "direct-original-source-panel",
+      "design_status": "Existing original artwork, not a new wishing design; source panel includes assembly/parts/views.",
+      "review_status": "source-reference",
+      "component_ids": [
+        "GEN-28-A02"
+      ],
+      "related_image_ids": [
+        "GEN-28"
+      ],
+      "source_aliases": [],
+      "alias_ids": []
+    },
+    {
+      "id": "SRC-WISH-GEN-28-A06",
+      "label": "SRC-WISH-GEN-28-A06 \u2014 Wish lantern \u2014 existing original panel",
+      "title": "Wish lantern \u2014 existing original panel",
+      "category": "wishing-original-source-panels",
+      "file": "surface-variation-kits/wishing-source-audit/GEN-28-A06.png",
+      "sha256": "79a2336b06aab9b041b2b01c56ae956220a5a32fd9d9df92c79f9932f5066524",
+      "bytes": 316670,
+      "reference_role": "direct-original-source-panel",
+      "design_status": "Existing original artwork, not a new wishing design; source panel includes assembly/parts/views.",
+      "review_status": "source-reference",
+      "component_ids": [
+        "GEN-28-A06"
+      ],
+      "related_image_ids": [
+        "GEN-28"
+      ],
+      "source_aliases": [],
+      "alias_ids": []
+    },
+    {
+      "id": "SRC-WISH-GEN-28-A03",
+      "label": "SRC-WISH-GEN-28-A03 \u2014 Floating lotus candle \u2014 existing original panel",
+      "title": "Floating lotus candle \u2014 existing original panel",
+      "category": "wishing-original-source-panels",
+      "file": "surface-variation-kits/wishing-source-audit/GEN-28-A03.png",
+      "sha256": "cb265569aee3b052ff331347c8dda2c24c56e433c51ba6dd8c6a1635370813be",
+      "bytes": 267343,
+      "reference_role": "direct-original-source-panel",
+      "design_status": "Existing original artwork, not a new wishing design; source panel includes assembly/parts/views.",
+      "review_status": "source-reference",
+      "component_ids": [
+        "GEN-28-A03"
+      ],
+      "related_image_ids": [
+        "GEN-28"
+      ],
+      "source_aliases": [],
+      "alias_ids": []
+    },
+    {
+      "id": "SRC-WISH-GEN-28-A07",
+      "label": "SRC-WISH-GEN-28-A07 \u2014 Star runestone \u2014 existing original panel",
+      "title": "Star runestone \u2014 existing original panel",
+      "category": "wishing-original-source-panels",
+      "file": "surface-variation-kits/wishing-source-audit/GEN-28-A07.png",
+      "sha256": "1cb37c1c4aacc4086f18d83e1e66566b0019964d2a02939f7f65d0e1ad4e744d",
+      "bytes": 286555,
+      "reference_role": "direct-original-source-panel",
+      "design_status": "Existing original artwork, not a new wishing design; source panel includes assembly/parts/views.",
+      "review_status": "source-reference",
+      "component_ids": [
+        "GEN-28-A07"
+      ],
+      "related_image_ids": [
+        "GEN-28"
+      ],
+      "source_aliases": [],
+      "alias_ids": []
+    },
+    {
+      "id": "SRC-WISH-GEN-28-A04",
+      "label": "SRC-WISH-GEN-28-A04 \u2014 Celestial armillary \u2014 existing original panel",
+      "title": "Celestial armillary \u2014 existing original panel",
+      "category": "wishing-original-source-panels",
+      "file": "surface-variation-kits/wishing-source-audit/GEN-28-A04.png",
+      "sha256": "fa732c94e51db8ca56c1fe43c5f2e74f8b80dd0f3765221c240d3bb87dcdf5c1",
+      "bytes": 230778,
+      "reference_role": "direct-original-source-panel",
+      "design_status": "Existing original artwork, not a new wishing design; source panel includes assembly/parts/views.",
+      "review_status": "source-reference",
+      "component_ids": [
+        "GEN-28-A04"
+      ],
+      "related_image_ids": [
+        "GEN-28"
+      ],
+      "source_aliases": [],
+      "alias_ids": []
+    },
+    {
+      "id": "SRC-WISH-GEN-28-A08",
+      "label": "SRC-WISH-GEN-28-A08 \u2014 Wayfinding kiosk \u2014 existing original panel",
+      "title": "Wayfinding kiosk \u2014 existing original panel",
+      "category": "wishing-original-source-panels",
+      "file": "surface-variation-kits/wishing-source-audit/GEN-28-A08.png",
+      "sha256": "a6e1f31fd00ebc2f7a8bc5dd466282f87ccb0f94ea4899b5ad140de4a7af96b2",
+      "bytes": 229504,
+      "reference_role": "direct-original-source-panel",
+      "design_status": "Existing original artwork, not a new wishing design; source panel includes assembly/parts/views.",
+      "review_status": "source-reference",
+      "component_ids": [
+        "GEN-28-A08"
+      ],
+      "related_image_ids": [
+        "GEN-28"
+      ],
+      "source_aliases": [],
+      "alias_ids": []
+    },
+    {
+      "id": "INT-FLOOR-REPEAT-001",
+      "label": "INT-FLOOR-REPEAT-001 \u2014 Great hall, ballroom, gallery and suite floor repeat kits",
+      "title": "Great hall, ballroom, gallery and suite floor repeat kits",
+      "category": "palace-surface-variation-kits",
+      "file": "surface-variation-kits/INT-FLOOR-REPEAT-001/INT-FLOOR-REPEAT-001.png",
+      "sha256": "517068d54d73c56bcad3d0446a8a53ce7e4bc16775c52f5391cdbfbdeb39dab1",
+      "bytes": 2088683,
+      "reference_role": "named-location-component-reference",
+      "design_status": "Source-compatible/reference variants; geometry, hidden faces and seams proposed",
+      "review_status": "pending-user-reference-review",
+      "component_ids": [
+        "INT-FLOOR-REPEAT-001-A01",
+        "INT-FLOOR-REPEAT-001-A02",
+        "INT-FLOOR-REPEAT-001-A03",
+        "INT-FLOOR-REPEAT-001-A04",
+        "INT-FLOOR-REPEAT-001-A05",
+        "INT-FLOOR-REPEAT-001-A06",
+        "INT-FLOOR-REPEAT-001-A07",
+        "INT-FLOOR-REPEAT-001-A08",
+        "INT-FLOOR-REPEAT-001-A09",
+        "INT-FLOOR-REPEAT-001-A10",
+        "INT-FLOOR-REPEAT-001-A11",
+        "INT-FLOOR-REPEAT-001-A12",
+        "INT-FLOOR-REPEAT-001-A13",
+        "INT-FLOOR-REPEAT-001-A14",
+        "INT-FLOOR-REPEAT-001-A15",
+        "INT-FLOOR-REPEAT-001-A16"
+      ],
+      "related_image_ids": [
+        "INT-C01",
+        "INT-C01"
+      ],
+      "source_aliases": [
+        "/workspace/generated_images/exec-93285ab9-b493-485f-8a95-4317a3e87aed.png"
+      ],
+      "alias_ids": []
+    },
+    {
+      "id": "DRAFT-SURF-INT-FLOOR-REPEAT-001-R01",
+      "label": "DRAFT-SURF-INT-FLOOR-REPEAT-001-R01 \u2014 INT-FLOOR-REPEAT-001 \u2014 superseded draft",
+      "title": "INT-FLOOR-REPEAT-001 \u2014 superseded draft",
+      "category": "surface-variation-superseded-drafts",
+      "file": "surface-variation-kits/INT-FLOOR-REPEAT-001/rejected-drafts/INT-FLOOR-REPEAT-001-R01.png",
+      "sha256": "c2c3c28c5f687392dd161ccaf296b742d07fe1ab62598d492e21eb5981812f35",
+      "bytes": 2331432,
+      "reference_role": "superseded-generated-reference",
+      "design_status": "superseded-field-tile-became-room-medallion",
+      "review_status": "superseded",
+      "component_ids": [],
+      "related_image_ids": [
+        "INT-FLOOR-REPEAT-001",
+        "INT-C01"
+      ],
+      "source_aliases": [
+        "/workspace/generated_images/exec-50c40c24-482d-4ad9-a532-5f499717a6fe.png"
+      ],
+      "alias_ids": []
+    },
+    {
+      "id": "INT-TRIM-VAR-001",
+      "label": "INT-TRIM-VAR-001 \u2014 Four interior wall, cornice and pillar treatment families",
+      "title": "Four interior wall, cornice and pillar treatment families",
+      "category": "palace-surface-variation-kits",
+      "file": "surface-variation-kits/INT-TRIM-VAR-001/INT-TRIM-VAR-001.png",
+      "sha256": "3f0aa5ec1a6df3e723930f3e6d9b5369c92e9a448785517a930ccd517298420f",
+      "bytes": 2659950,
+      "reference_role": "named-location-component-reference",
+      "design_status": "Source-compatible/reference variants; geometry, hidden faces and seams proposed",
+      "review_status": "pending-user-reference-review",
+      "component_ids": [
+        "INT-TRIM-VAR-001-A01",
+        "INT-TRIM-VAR-001-A02",
+        "INT-TRIM-VAR-001-A03",
+        "INT-TRIM-VAR-001-A04",
+        "INT-TRIM-VAR-001-A05",
+        "INT-TRIM-VAR-001-A06",
+        "INT-TRIM-VAR-001-A07",
+        "INT-TRIM-VAR-001-A08",
+        "INT-TRIM-VAR-001-A09",
+        "INT-TRIM-VAR-001-A10",
+        "INT-TRIM-VAR-001-A11",
+        "INT-TRIM-VAR-001-A12",
+        "INT-TRIM-VAR-001-A13",
+        "INT-TRIM-VAR-001-A14",
+        "INT-TRIM-VAR-001-A15",
+        "INT-TRIM-VAR-001-A16"
+      ],
+      "related_image_ids": [
+        "INT-C02",
+        "INT-C02"
+      ],
+      "source_aliases": [
+        "/workspace/generated_images/exec-de04c0af-01fb-4741-8fd3-437e6bacc052.png"
+      ],
+      "alias_ids": []
+    },
+    {
+      "id": "PAL-STAIR-VAR-001",
+      "label": "PAL-STAIR-VAR-001 \u2014 Ballroom, throne, library and conservatory stair sections",
+      "title": "Ballroom, throne, library and conservatory stair sections",
+      "category": "palace-surface-variation-kits",
+      "file": "surface-variation-kits/PAL-STAIR-VAR-001/PAL-STAIR-VAR-001.png",
+      "sha256": "9c76b0dcd2bf991635f5542fa62de5eb31451ad98bd61f265b5b169c253a4f85",
+      "bytes": 2182558,
+      "reference_role": "named-location-component-reference",
+      "design_status": "Source-compatible/reference variants; geometry, hidden faces and seams proposed",
+      "review_status": "pending-user-reference-review",
+      "component_ids": [
+        "PAL-STAIR-VAR-001-A01",
+        "PAL-STAIR-VAR-001-A02",
+        "PAL-STAIR-VAR-001-A03",
+        "PAL-STAIR-VAR-001-A04"
+      ],
+      "related_image_ids": [
+        "GEN-26",
+        "GEN-26"
+      ],
+      "source_aliases": [
+        "/workspace/generated_images/exec-370dedc1-355c-4518-93a9-f15e38a2c78c.png"
+      ],
+      "alias_ids": []
+    },
+    {
+      "id": "DRAFT-SURF-PAL-STAIR-VAR-001-R01",
+      "label": "DRAFT-SURF-PAL-STAIR-VAR-001-R01 \u2014 PAL-STAIR-VAR-001 \u2014 superseded draft",
+      "title": "PAL-STAIR-VAR-001 \u2014 superseded draft",
+      "category": "surface-variation-superseded-drafts",
+      "file": "surface-variation-kits/PAL-STAIR-VAR-001/rejected-drafts/PAL-STAIR-VAR-001-R01.png",
+      "sha256": "edf17a1adbfe96ba9405bb62b6634c81e98b2bd269c236f2521f4af9d7606cac",
+      "bytes": 2323022,
+      "reference_role": "superseded-generated-reference",
+      "design_status": "superseded-clipped-helical-support",
+      "review_status": "superseded",
+      "component_ids": [],
+      "related_image_ids": [
+        "PAL-STAIR-VAR-001",
+        "GEN-26"
+      ],
+      "source_aliases": [
+        "/workspace/generated_images/exec-267dce55-711d-4692-a8bb-f8b16c6ca329.png"
+      ],
+      "alias_ids": []
+    },
+    {
+      "id": "GDN-PAVING-VAR-001",
+      "label": "GDN-PAVING-VAR-001 \u2014 Rose Court and Moon Courtyard paving/edge kits",
+      "title": "Rose Court and Moon Courtyard paving/edge kits",
+      "category": "palace-surface-variation-kits",
+      "file": "surface-variation-kits/GDN-PAVING-VAR-001/GDN-PAVING-VAR-001.png",
+      "sha256": "3a94a0b6903f3f3231679e16da18eebe98a0ecae1460ce1f1c29f8407dfe9a48",
+      "bytes": 2216353,
+      "reference_role": "named-location-component-reference",
+      "design_status": "Source-compatible/reference variants; geometry, hidden faces and seams proposed",
+      "review_status": "pending-user-reference-review",
+      "component_ids": [
+        "GDN-PAVING-VAR-001-A01",
+        "GDN-PAVING-VAR-001-A02",
+        "GDN-PAVING-VAR-001-A03",
+        "GDN-PAVING-VAR-001-A04",
+        "GDN-PAVING-VAR-001-A05",
+        "GDN-PAVING-VAR-001-A06",
+        "GDN-PAVING-VAR-001-A07",
+        "GDN-PAVING-VAR-001-A08",
+        "GDN-PAVING-VAR-001-A09",
+        "GDN-PAVING-VAR-001-A10",
+        "GDN-PAVING-VAR-001-A11",
+        "GDN-PAVING-VAR-001-A12",
+        "GDN-PAVING-VAR-001-A13",
+        "GDN-PAVING-VAR-001-A14",
+        "GDN-PAVING-VAR-001-A15",
+        "GDN-PAVING-VAR-001-A16"
+      ],
+      "related_image_ids": [
+        "GEN-14",
+        "GEN-14"
+      ],
+      "source_aliases": [
+        "/workspace/generated_images/exec-16e9dd2a-d3f7-4e20-b632-9f913fd8e376.png"
+      ],
+      "alias_ids": []
+    },
+    {
+      "id": "WLD-PARAPET-JOINS-001",
+      "label": "WLD-PARAPET-JOINS-001 \u2014 Four parapet families and missing transition pieces",
+      "title": "Four parapet families and missing transition pieces",
+      "category": "palace-surface-variation-kits",
+      "file": "surface-variation-kits/WLD-PARAPET-JOINS-001/WLD-PARAPET-JOINS-001.png",
+      "sha256": "7418d70720a28d48449bf464df6bf4d8e5df55458a4a25b28a684459a9b1eb51",
+      "bytes": 2287798,
+      "reference_role": "named-location-component-reference",
+      "design_status": "Source-compatible/reference variants; geometry, hidden faces and seams proposed",
+      "review_status": "pending-user-reference-review",
+      "component_ids": [
+        "WLD-PARAPET-JOINS-001-A01",
+        "WLD-PARAPET-JOINS-001-A02",
+        "WLD-PARAPET-JOINS-001-A03",
+        "WLD-PARAPET-JOINS-001-A04",
+        "WLD-PARAPET-JOINS-001-A05",
+        "WLD-PARAPET-JOINS-001-A06",
+        "WLD-PARAPET-JOINS-001-A07",
+        "WLD-PARAPET-JOINS-001-A08",
+        "WLD-PARAPET-JOINS-001-A09",
+        "WLD-PARAPET-JOINS-001-A10",
+        "WLD-PARAPET-JOINS-001-A11",
+        "WLD-PARAPET-JOINS-001-A12",
+        "WLD-PARAPET-JOINS-001-A13",
+        "WLD-PARAPET-JOINS-001-A14",
+        "WLD-PARAPET-JOINS-001-A15",
+        "WLD-PARAPET-JOINS-001-A16"
+      ],
+      "related_image_ids": [
+        "GEN-39",
+        "GEN-39"
+      ],
+      "source_aliases": [
+        "/workspace/generated_images/exec-87f5a616-1521-4678-9e9f-33494df451df.png"
+      ],
+      "alias_ids": []
+    },
+    {
+      "id": "PAL-CONSERV-SURF-001",
+      "label": "PAL-CONSERV-SURF-001 \u2014 Conservatory exterior paving, pool-edge and low foot-rail kit",
+      "title": "Conservatory exterior paving, pool-edge and low foot-rail kit",
+      "category": "palace-surface-variation-kits",
+      "file": "surface-variation-kits/PAL-CONSERV-SURF-001/PAL-CONSERV-SURF-001.png",
+      "sha256": "69f5a93493bc8bfe85a4080e11670d8bccb75f8e74915b37f5cad907f2e3fc61",
+      "bytes": 2265461,
+      "reference_role": "named-location-component-reference",
+      "design_status": "Source-compatible/reference variants; geometry, hidden faces and seams proposed",
+      "review_status": "pending-user-reference-review",
+      "component_ids": [
+        "PAL-CONSERV-SURF-001-A01",
+        "PAL-CONSERV-SURF-001-A02",
+        "PAL-CONSERV-SURF-001-A03",
+        "PAL-CONSERV-SURF-001-A04",
+        "PAL-CONSERV-SURF-001-A05",
+        "PAL-CONSERV-SURF-001-A06",
+        "PAL-CONSERV-SURF-001-A07",
+        "PAL-CONSERV-SURF-001-A08",
+        "PAL-CONSERV-SURF-001-A09",
+        "PAL-CONSERV-SURF-001-A10",
+        "PAL-CONSERV-SURF-001-A11",
+        "PAL-CONSERV-SURF-001-A12",
+        "PAL-CONSERV-SURF-001-A13",
+        "PAL-CONSERV-SURF-001-A14",
+        "PAL-CONSERV-SURF-001-A15",
+        "PAL-CONSERV-SURF-001-A16"
+      ],
+      "related_image_ids": [
+        "GEN-36",
+        "GEN-36"
+      ],
+      "source_aliases": [
+        "/workspace/generated_images/exec-c86eb181-41fc-4a33-a55d-f264ec42f716.png"
+      ],
+      "alias_ids": [
+        "B25-EXTERIOR-SURFACE-001"
+      ]
+    },
+    {
+      "id": "DRAFT-SURF-B25-EXTERIOR-SURFACE-001-R01",
+      "label": "DRAFT-SURF-B25-EXTERIOR-SURFACE-001-R01 \u2014 B25-EXTERIOR-SURFACE-001 \u2014 superseded draft",
+      "title": "B25-EXTERIOR-SURFACE-001 \u2014 superseded draft",
+      "category": "surface-variation-superseded-drafts",
+      "file": "surface-variation-kits/PAL-CONSERV-SURF-001/rejected-drafts/B25-EXTERIOR-SURFACE-001-R01.png",
+      "sha256": "bdf48edc880b3e521cbf417ee7e683a7b1acc5fac68bbe000b3a04ea98bdbc89",
+      "bytes": 2360617,
+      "reference_role": "superseded-generated-reference",
+      "design_status": "superseded-provisional-map-label-and-source-footrail-refinement",
+      "review_status": "superseded",
+      "component_ids": [],
+      "related_image_ids": [
+        "PAL-CONSERV-SURF-001",
+        "GEN-36"
+      ],
+      "source_aliases": [
+        "/workspace/generated_images/exec-934bb31d-9315-4d66-9753-58210ea77449.png"
+      ],
+      "alias_ids": []
+    },
+    {
+      "id": "WLD-PARAPET-NEW-001",
+      "label": "WLD-PARAPET-NEW-001 \u2014 Four new coordinated princess parapet styles",
+      "title": "Four new coordinated princess parapet styles",
+      "category": "palace-surface-variation-kits",
+      "file": "surface-variation-kits/WLD-PARAPET-NEW-001/WLD-PARAPET-NEW-001.png",
+      "sha256": "8f168373cbb9fdb32405ef20b1a09bd9bc618cb9a122be20b0fba5ba1406f0b5",
+      "bytes": 2234695,
+      "reference_role": "named-location-component-reference",
+      "design_status": "Source-compatible/reference variants; geometry, hidden faces and seams proposed",
+      "review_status": "pending-user-reference-review",
+      "component_ids": [
+        "WLD-PARAPET-NEW-001-A01",
+        "WLD-PARAPET-NEW-001-A02",
+        "WLD-PARAPET-NEW-001-A03",
+        "WLD-PARAPET-NEW-001-A04",
+        "WLD-PARAPET-NEW-001-A05",
+        "WLD-PARAPET-NEW-001-A06",
+        "WLD-PARAPET-NEW-001-A07",
+        "WLD-PARAPET-NEW-001-A08",
+        "WLD-PARAPET-NEW-001-A09",
+        "WLD-PARAPET-NEW-001-A10",
+        "WLD-PARAPET-NEW-001-A11",
+        "WLD-PARAPET-NEW-001-A12",
+        "WLD-PARAPET-NEW-001-A13",
+        "WLD-PARAPET-NEW-001-A14",
+        "WLD-PARAPET-NEW-001-A15",
+        "WLD-PARAPET-NEW-001-A16"
+      ],
+      "related_image_ids": [
+        "GEN-39",
+        "GEN-39"
+      ],
+      "source_aliases": [
+        "/workspace/generated_images/exec-ea69ad2f-a235-459d-a80c-96af81c690d0.png"
+      ],
+      "alias_ids": []
+    },
+    {
+      "id": "PARKED-B06-SURFACE-001",
+      "label": "PARKED-B06-SURFACE-001 \u2014 Misty Pagoda timber and jade surface kit \u2014 parked outside palace scope",
+      "title": "Misty Pagoda timber and jade surface kit \u2014 parked outside palace scope",
+      "category": "parked-map-surface-studies",
+      "file": "surface-variation-kits/parked-map-studies/B06-SURFACE-001/B06-SURFACE-001.png",
+      "sha256": "e834c764393b7f3c894a7a05f5cb403df385f2b0edf5a9d0ba52f3536cbb1c88",
+      "bytes": 2278803,
+      "reference_role": "parked-source-compatible-study",
+      "design_status": "Owner corrected scope back to original palace; do not assign these timber/map styles to palace surfaces.",
+      "review_status": "parked-outside-current-scope",
+      "component_ids": [],
+      "related_image_ids": [
+        "GEN-27"
+      ],
+      "source_aliases": [
+        "/workspace/generated_images/exec-97195ba6-6c20-47bd-9f37-434330f191cd.png"
+      ],
+      "alias_ids": []
     }
   ],
   "label_schema_version": 1

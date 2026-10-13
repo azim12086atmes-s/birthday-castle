@@ -1,0 +1,599 @@
+{
+  "sheet_id": "WLD-PARAPET-NEW-001",
+  "name": "Four new coordinated princess parapet styles",
+  "owner": "shared-outdoor-props-and-bridge",
+  "family": "Garden and path furniture",
+  "source_id": "GEN-39",
+  "count": 16,
+  "source_reference_id": "GEN-39",
+  "source_reference_file": "images/illustrated-boards/GEN-39.png",
+  "source_reference_sha256": "bbe9f03266ab8b443d0a00780f2b62ee2741e3089f0cad8ab9347cc0cfe4d1d4",
+  "generation_reference_path": "/workspace/birthday-castle/docs/asset-image-library/images/illustrated-boards/GEN-39.png",
+  "source_rules": "Source provides observed palette/motifs; owner-requested new variant geometry and hidden backs are proposals",
+  "style_groups": [
+    [
+      "PETAL-LACE",
+      "Petal lace",
+      "ivory scalloped petal loops with fine gold rose centres, rose marble base, light open lattice"
+    ],
+    [
+      "CRESCENT-VEIL",
+      "Crescent veil",
+      "interlocking ivory crescent-and-pearl loops with thin gold edging, restrained lilac mineral accents, open rhythm"
+    ],
+    [
+      "CHERRY-RIBBON",
+      "Cherry ribbon",
+      "thin cherry-pink stone ribbon diagonals with gold vine ties and ivory tiny blossom junctions, open airy screen"
+    ],
+    [
+      "GARDEN-PETAL",
+      "Garden petal",
+      "low SOLID rose marble garden-edge wall with ivory shallow petal relief and fine gold coping, solid backed retaining edge"
+    ]
+  ],
+  "parts": [
+    {
+      "asset_id": "WLD-PARAPET-NEW-001-A01",
+      "name": "Petal lace straight repeat",
+      "description": "ONE short straight repeating parapet/low-edge module in ivory scalloped petal loops with fine gold rose centres, rose marble base, light open lattice. Equal seam profiles; ornament does not exceed coping.",
+      "style_family": "PETAL-LACE",
+      "role": "parapet-repeat",
+      "basis": "newly-requested source-compatible variant/join; visible motifs reused",
+      "dimensions_m_proposed": [
+        1,
+        0.12,
+        1.1
+      ],
+      "attachment_face": "bottom -Z/end profiles",
+      "semantic_front": "+Y",
+      "model_status": "unregistered",
+      "review_status": "pending-reference-review",
+      "function": "parapet-repeat",
+      "target_polycount_proposed": 1200,
+      "rejection_criteria": [
+        "cropped/fused components",
+        "wrong source/style family",
+        "incorrect planar/radial/handed join",
+        "non-flush floor inlay",
+        "broken supports/whole scene instead of part"
+      ],
+      "reference_approval": "pending",
+      "reuse_component_ids": [
+        "GEN-39-M01",
+        "GEN-39-M02",
+        "GEN-39-M03",
+        "GEN-39-M04"
+      ]
+    },
+    {
+      "asset_id": "WLD-PARAPET-NEW-001-A02",
+      "name": "Petal lace curved repeat",
+      "description": "ONE matching gently curved module in ivory scalloped petal loops with fine gold rose centres, rose marble base, light open lattice, same section and top/bottom levels, no whole balcony.",
+      "style_family": "PETAL-LACE",
+      "role": "parapet-curve",
+      "basis": "newly-requested source-compatible variant/join; visible motifs reused",
+      "dimensions_m_proposed": [
+        1,
+        0.12,
+        1.1
+      ],
+      "attachment_face": "bottom -Z/end profiles",
+      "semantic_front": "+Y",
+      "model_status": "unregistered",
+      "review_status": "pending-reference-review",
+      "function": "parapet-curve",
+      "target_polycount_proposed": 1200,
+      "rejection_criteria": [
+        "cropped/fused components",
+        "wrong source/style family",
+        "incorrect planar/radial/handed join",
+        "non-flush floor inlay",
+        "broken supports/whole scene instead of part"
+      ],
+      "reference_approval": "pending",
+      "reuse_component_ids": [
+        "GEN-39-M01",
+        "GEN-39-M02",
+        "GEN-39-M03",
+        "GEN-39-M04"
+      ]
+    },
+    {
+      "asset_id": "WLD-PARAPET-NEW-001-A03",
+      "name": "Petal lace terminal post",
+      "description": "ONE slim endpoint post matching ivory scalloped petal loops with fine gold rose centres, rose marble base, light open lattice, plain flat mounting ends, no fused full rail.",
+      "style_family": "PETAL-LACE",
+      "role": "parapet-end",
+      "basis": "newly-requested source-compatible variant/join; visible motifs reused",
+      "dimensions_m_proposed": [
+        1,
+        0.12,
+        1.1
+      ],
+      "attachment_face": "bottom -Z/end profiles",
+      "semantic_front": "+Y",
+      "model_status": "unregistered",
+      "review_status": "pending-reference-review",
+      "function": "parapet-end",
+      "target_polycount_proposed": 1200,
+      "rejection_criteria": [
+        "cropped/fused components",
+        "wrong source/style family",
+        "incorrect planar/radial/handed join",
+        "non-flush floor inlay",
+        "broken supports/whole scene instead of part"
+      ],
+      "reference_approval": "pending",
+      "reuse_component_ids": [
+        "GEN-39-M01",
+        "GEN-39-M02",
+        "GEN-39-M03",
+        "GEN-39-M04"
+      ]
+    },
+    {
+      "asset_id": "WLD-PARAPET-NEW-001-A04",
+      "name": "Petal lace stepped connector",
+      "description": "ONE short low stepped terrain/landing transition in ivory scalloped petal loops with fine gold rose centres, rose marble base, light open lattice. Supports vertical, upper rail/coping connects different heights with a clean stepped return. No stair flight, no plants.",
+      "style_family": "PETAL-LACE",
+      "role": "parapet-step-transition",
+      "basis": "newly-requested source-compatible variant/join; visible motifs reused",
+      "dimensions_m_proposed": [
+        1,
+        0.12,
+        1.1
+      ],
+      "attachment_face": "bottom -Z/end profiles",
+      "semantic_front": "+Y",
+      "model_status": "unregistered",
+      "review_status": "pending-reference-review",
+      "function": "parapet-step-transition",
+      "target_polycount_proposed": 1200,
+      "rejection_criteria": [
+        "cropped/fused components",
+        "wrong source/style family",
+        "incorrect planar/radial/handed join",
+        "non-flush floor inlay",
+        "broken supports/whole scene instead of part"
+      ],
+      "reference_approval": "pending",
+      "reuse_component_ids": [
+        "GEN-39-M01",
+        "GEN-39-M02",
+        "GEN-39-M03",
+        "GEN-39-M04"
+      ]
+    },
+    {
+      "asset_id": "WLD-PARAPET-NEW-001-A05",
+      "name": "Crescent veil straight repeat",
+      "description": "ONE short straight repeating parapet/low-edge module in interlocking ivory crescent-and-pearl loops with thin gold edging, restrained lilac mineral accents, open rhythm. Equal seam profiles; ornament does not exceed coping.",
+      "style_family": "CRESCENT-VEIL",
+      "role": "parapet-repeat",
+      "basis": "newly-requested source-compatible variant/join; visible motifs reused",
+      "dimensions_m_proposed": [
+        1,
+        0.12,
+        1.1
+      ],
+      "attachment_face": "bottom -Z/end profiles",
+      "semantic_front": "+Y",
+      "model_status": "unregistered",
+      "review_status": "pending-reference-review",
+      "function": "parapet-repeat",
+      "target_polycount_proposed": 1200,
+      "rejection_criteria": [
+        "cropped/fused components",
+        "wrong source/style family",
+        "incorrect planar/radial/handed join",
+        "non-flush floor inlay",
+        "broken supports/whole scene instead of part"
+      ],
+      "reference_approval": "pending",
+      "reuse_component_ids": [
+        "GEN-39-M01",
+        "GEN-39-M02",
+        "GEN-39-M03",
+        "GEN-39-M04"
+      ]
+    },
+    {
+      "asset_id": "WLD-PARAPET-NEW-001-A06",
+      "name": "Crescent veil curved repeat",
+      "description": "ONE matching gently curved module in interlocking ivory crescent-and-pearl loops with thin gold edging, restrained lilac mineral accents, open rhythm, same section and top/bottom levels, no whole balcony.",
+      "style_family": "CRESCENT-VEIL",
+      "role": "parapet-curve",
+      "basis": "newly-requested source-compatible variant/join; visible motifs reused",
+      "dimensions_m_proposed": [
+        1,
+        0.12,
+        1.1
+      ],
+      "attachment_face": "bottom -Z/end profiles",
+      "semantic_front": "+Y",
+      "model_status": "unregistered",
+      "review_status": "pending-reference-review",
+      "function": "parapet-curve",
+      "target_polycount_proposed": 1200,
+      "rejection_criteria": [
+        "cropped/fused components",
+        "wrong source/style family",
+        "incorrect planar/radial/handed join",
+        "non-flush floor inlay",
+        "broken supports/whole scene instead of part"
+      ],
+      "reference_approval": "pending",
+      "reuse_component_ids": [
+        "GEN-39-M01",
+        "GEN-39-M02",
+        "GEN-39-M03",
+        "GEN-39-M04"
+      ]
+    },
+    {
+      "asset_id": "WLD-PARAPET-NEW-001-A07",
+      "name": "Crescent veil terminal post",
+      "description": "ONE slim endpoint post matching interlocking ivory crescent-and-pearl loops with thin gold edging, restrained lilac mineral accents, open rhythm, plain flat mounting ends, no fused full rail.",
+      "style_family": "CRESCENT-VEIL",
+      "role": "parapet-end",
+      "basis": "newly-requested source-compatible variant/join; visible motifs reused",
+      "dimensions_m_proposed": [
+        1,
+        0.12,
+        1.1
+      ],
+      "attachment_face": "bottom -Z/end profiles",
+      "semantic_front": "+Y",
+      "model_status": "unregistered",
+      "review_status": "pending-reference-review",
+      "function": "parapet-end",
+      "target_polycount_proposed": 1200,
+      "rejection_criteria": [
+        "cropped/fused components",
+        "wrong source/style family",
+        "incorrect planar/radial/handed join",
+        "non-flush floor inlay",
+        "broken supports/whole scene instead of part"
+      ],
+      "reference_approval": "pending",
+      "reuse_component_ids": [
+        "GEN-39-M01",
+        "GEN-39-M02",
+        "GEN-39-M03",
+        "GEN-39-M04"
+      ]
+    },
+    {
+      "asset_id": "WLD-PARAPET-NEW-001-A08",
+      "name": "Crescent veil stepped connector",
+      "description": "ONE short low stepped terrain/landing transition in interlocking ivory crescent-and-pearl loops with thin gold edging, restrained lilac mineral accents, open rhythm. Supports vertical, upper rail/coping connects different heights with a clean stepped return. No stair flight, no plants.",
+      "style_family": "CRESCENT-VEIL",
+      "role": "parapet-step-transition",
+      "basis": "newly-requested source-compatible variant/join; visible motifs reused",
+      "dimensions_m_proposed": [
+        1,
+        0.12,
+        1.1
+      ],
+      "attachment_face": "bottom -Z/end profiles",
+      "semantic_front": "+Y",
+      "model_status": "unregistered",
+      "review_status": "pending-reference-review",
+      "function": "parapet-step-transition",
+      "target_polycount_proposed": 1200,
+      "rejection_criteria": [
+        "cropped/fused components",
+        "wrong source/style family",
+        "incorrect planar/radial/handed join",
+        "non-flush floor inlay",
+        "broken supports/whole scene instead of part"
+      ],
+      "reference_approval": "pending",
+      "reuse_component_ids": [
+        "GEN-39-M01",
+        "GEN-39-M02",
+        "GEN-39-M03",
+        "GEN-39-M04"
+      ]
+    },
+    {
+      "asset_id": "WLD-PARAPET-NEW-001-A09",
+      "name": "Cherry ribbon straight repeat",
+      "description": "ONE short straight repeating parapet/low-edge module in thin cherry-pink stone ribbon diagonals with gold vine ties and ivory tiny blossom junctions, open airy screen. Equal seam profiles; ornament does not exceed coping.",
+      "style_family": "CHERRY-RIBBON",
+      "role": "parapet-repeat",
+      "basis": "newly-requested source-compatible variant/join; visible motifs reused",
+      "dimensions_m_proposed": [
+        1,
+        0.12,
+        1.1
+      ],
+      "attachment_face": "bottom -Z/end profiles",
+      "semantic_front": "+Y",
+      "model_status": "unregistered",
+      "review_status": "pending-reference-review",
+      "function": "parapet-repeat",
+      "target_polycount_proposed": 1200,
+      "rejection_criteria": [
+        "cropped/fused components",
+        "wrong source/style family",
+        "incorrect planar/radial/handed join",
+        "non-flush floor inlay",
+        "broken supports/whole scene instead of part"
+      ],
+      "reference_approval": "pending",
+      "reuse_component_ids": [
+        "GEN-39-M01",
+        "GEN-39-M02",
+        "GEN-39-M03",
+        "GEN-39-M04"
+      ]
+    },
+    {
+      "asset_id": "WLD-PARAPET-NEW-001-A10",
+      "name": "Cherry ribbon curved repeat",
+      "description": "ONE matching gently curved module in thin cherry-pink stone ribbon diagonals with gold vine ties and ivory tiny blossom junctions, open airy screen, same section and top/bottom levels, no whole balcony.",
+      "style_family": "CHERRY-RIBBON",
+      "role": "parapet-curve",
+      "basis": "newly-requested source-compatible variant/join; visible motifs reused",
+      "dimensions_m_proposed": [
+        1,
+        0.12,
+        1.1
+      ],
+      "attachment_face": "bottom -Z/end profiles",
+      "semantic_front": "+Y",
+      "model_status": "unregistered",
+      "review_status": "pending-reference-review",
+      "function": "parapet-curve",
+      "target_polycount_proposed": 1200,
+      "rejection_criteria": [
+        "cropped/fused components",
+        "wrong source/style family",
+        "incorrect planar/radial/handed join",
+        "non-flush floor inlay",
+        "broken supports/whole scene instead of part"
+      ],
+      "reference_approval": "pending",
+      "reuse_component_ids": [
+        "GEN-39-M01",
+        "GEN-39-M02",
+        "GEN-39-M03",
+        "GEN-39-M04"
+      ]
+    },
+    {
+      "asset_id": "WLD-PARAPET-NEW-001-A11",
+      "name": "Cherry ribbon terminal post",
+      "description": "ONE slim endpoint post matching thin cherry-pink stone ribbon diagonals with gold vine ties and ivory tiny blossom junctions, open airy screen, plain flat mounting ends, no fused full rail.",
+      "style_family": "CHERRY-RIBBON",
+      "role": "parapet-end",
+      "basis": "newly-requested source-compatible variant/join; visible motifs reused",
+      "dimensions_m_proposed": [
+        1,
+        0.12,
+        1.1
+      ],
+      "attachment_face": "bottom -Z/end profiles",
+      "semantic_front": "+Y",
+      "model_status": "unregistered",
+      "review_status": "pending-reference-review",
+      "function": "parapet-end",
+      "target_polycount_proposed": 1200,
+      "rejection_criteria": [
+        "cropped/fused components",
+        "wrong source/style family",
+        "incorrect planar/radial/handed join",
+        "non-flush floor inlay",
+        "broken supports/whole scene instead of part"
+      ],
+      "reference_approval": "pending",
+      "reuse_component_ids": [
+        "GEN-39-M01",
+        "GEN-39-M02",
+        "GEN-39-M03",
+        "GEN-39-M04"
+      ]
+    },
+    {
+      "asset_id": "WLD-PARAPET-NEW-001-A12",
+      "name": "Cherry ribbon stepped connector",
+      "description": "ONE short low stepped terrain/landing transition in thin cherry-pink stone ribbon diagonals with gold vine ties and ivory tiny blossom junctions, open airy screen. Supports vertical, upper rail/coping connects different heights with a clean stepped return. No stair flight, no plants.",
+      "style_family": "CHERRY-RIBBON",
+      "role": "parapet-step-transition",
+      "basis": "newly-requested source-compatible variant/join; visible motifs reused",
+      "dimensions_m_proposed": [
+        1,
+        0.12,
+        1.1
+      ],
+      "attachment_face": "bottom -Z/end profiles",
+      "semantic_front": "+Y",
+      "model_status": "unregistered",
+      "review_status": "pending-reference-review",
+      "function": "parapet-step-transition",
+      "target_polycount_proposed": 1200,
+      "rejection_criteria": [
+        "cropped/fused components",
+        "wrong source/style family",
+        "incorrect planar/radial/handed join",
+        "non-flush floor inlay",
+        "broken supports/whole scene instead of part"
+      ],
+      "reference_approval": "pending",
+      "reuse_component_ids": [
+        "GEN-39-M01",
+        "GEN-39-M02",
+        "GEN-39-M03",
+        "GEN-39-M04"
+      ]
+    },
+    {
+      "asset_id": "WLD-PARAPET-NEW-001-A13",
+      "name": "Garden petal straight repeat",
+      "description": "ONE short straight repeating parapet/low-edge module in low SOLID rose marble garden-edge wall with ivory shallow petal relief and fine gold coping, solid backed retaining edge. Equal seam profiles; ornament does not exceed coping.",
+      "style_family": "GARDEN-PETAL",
+      "role": "parapet-repeat",
+      "basis": "newly-requested source-compatible variant/join; visible motifs reused",
+      "dimensions_m_proposed": [
+        1,
+        0.12,
+        0.45
+      ],
+      "attachment_face": "bottom -Z/end profiles",
+      "semantic_front": "+Y",
+      "model_status": "unregistered",
+      "review_status": "pending-reference-review",
+      "function": "parapet-repeat",
+      "target_polycount_proposed": 1200,
+      "rejection_criteria": [
+        "cropped/fused components",
+        "wrong source/style family",
+        "incorrect planar/radial/handed join",
+        "non-flush floor inlay",
+        "broken supports/whole scene instead of part"
+      ],
+      "reference_approval": "pending",
+      "reuse_component_ids": [
+        "GEN-39-M01",
+        "GEN-39-M02",
+        "GEN-39-M03",
+        "GEN-39-M04"
+      ]
+    },
+    {
+      "asset_id": "WLD-PARAPET-NEW-001-A14",
+      "name": "Garden petal curved repeat",
+      "description": "ONE matching gently curved module in low SOLID rose marble garden-edge wall with ivory shallow petal relief and fine gold coping, solid backed retaining edge, same section and top/bottom levels, no whole balcony.",
+      "style_family": "GARDEN-PETAL",
+      "role": "parapet-curve",
+      "basis": "newly-requested source-compatible variant/join; visible motifs reused",
+      "dimensions_m_proposed": [
+        1,
+        0.12,
+        0.45
+      ],
+      "attachment_face": "bottom -Z/end profiles",
+      "semantic_front": "+Y",
+      "model_status": "unregistered",
+      "review_status": "pending-reference-review",
+      "function": "parapet-curve",
+      "target_polycount_proposed": 1200,
+      "rejection_criteria": [
+        "cropped/fused components",
+        "wrong source/style family",
+        "incorrect planar/radial/handed join",
+        "non-flush floor inlay",
+        "broken supports/whole scene instead of part"
+      ],
+      "reference_approval": "pending",
+      "reuse_component_ids": [
+        "GEN-39-M01",
+        "GEN-39-M02",
+        "GEN-39-M03",
+        "GEN-39-M04"
+      ]
+    },
+    {
+      "asset_id": "WLD-PARAPET-NEW-001-A15",
+      "name": "Garden petal terminal post",
+      "description": "ONE slim endpoint post matching low SOLID rose marble garden-edge wall with ivory shallow petal relief and fine gold coping, solid backed retaining edge, plain flat mounting ends, no fused full rail.",
+      "style_family": "GARDEN-PETAL",
+      "role": "parapet-end",
+      "basis": "newly-requested source-compatible variant/join; visible motifs reused",
+      "dimensions_m_proposed": [
+        1,
+        0.12,
+        0.45
+      ],
+      "attachment_face": "bottom -Z/end profiles",
+      "semantic_front": "+Y",
+      "model_status": "unregistered",
+      "review_status": "pending-reference-review",
+      "function": "parapet-end",
+      "target_polycount_proposed": 1200,
+      "rejection_criteria": [
+        "cropped/fused components",
+        "wrong source/style family",
+        "incorrect planar/radial/handed join",
+        "non-flush floor inlay",
+        "broken supports/whole scene instead of part"
+      ],
+      "reference_approval": "pending",
+      "reuse_component_ids": [
+        "GEN-39-M01",
+        "GEN-39-M02",
+        "GEN-39-M03",
+        "GEN-39-M04"
+      ]
+    },
+    {
+      "asset_id": "WLD-PARAPET-NEW-001-A16",
+      "name": "Garden petal stepped connector",
+      "description": "ONE short low stepped terrain/landing transition in low SOLID rose marble garden-edge wall with ivory shallow petal relief and fine gold coping, solid backed retaining edge. Supports vertical, upper rail/coping connects different heights with a clean stepped return. No stair flight, no plants.",
+      "style_family": "GARDEN-PETAL",
+      "role": "parapet-step-transition",
+      "basis": "newly-requested source-compatible variant/join; visible motifs reused",
+      "dimensions_m_proposed": [
+        1,
+        0.12,
+        0.45
+      ],
+      "attachment_face": "bottom -Z/end profiles",
+      "semantic_front": "+Y",
+      "model_status": "unregistered",
+      "review_status": "pending-reference-review",
+      "function": "parapet-step-transition",
+      "target_polycount_proposed": 1200,
+      "rejection_criteria": [
+        "cropped/fused components",
+        "wrong source/style family",
+        "incorrect planar/radial/handed join",
+        "non-flush floor inlay",
+        "broken supports/whole scene instead of part"
+      ],
+      "reference_approval": "pending",
+      "reuse_component_ids": [
+        "GEN-39-M01",
+        "GEN-39-M02",
+        "GEN-39-M03",
+        "GEN-39-M04"
+      ]
+    }
+  ],
+  "prompt": "Make a clean high-resolution named component reference sheet, not a whole room/building. Use ONLY the one supplied source for material/motif vocabulary. Owner-requested new variations and junctions must stay coordinated with it. Separate complete objects, no fused neighbors, no cropped silhouettes, no shadows over patterns, no melting scrolls or warped rails. Straight edges/columns remain straight; thin gold stays thin. Warm-white background, even light. Print exact full ID AND short name below EVERY item, title above. One object per cell, no duplicate alternate views. Palette/style follows this source. Source illustrations are not measured models; do not invent fixed palace dimensions. No people, whole buildings, scenery, plants or loose decoration glued onto parts.\nTitle: WLD-PARAPET-NEW-001 \u2014 Four new coordinated princess parapet styles. Exactly 16 items, 4-by-4 grid. Print subtitle NEW STYLE OPTIONS \u2014 not source replicas. Four rows PETAL LACE / CRESCENT VEIL / CHERRY RIBBON / GARDEN PETAL. Each has4 separated parts: straight repeat / matching curve / terminal post / stepped connector. Owner requests NEW coordinated princess alternatives; retain source ivory/rose/gold delicacy but make these four motif grammars visibly different. First three styles are OPEN rail screens; last style is a LOW SOLID planted-bed edge, NOT another open railing. No giant solid walls, roofs or buildings. Fine supported stone/gold pieces, no impossible dangling loops or twisted bars.\nWLD-PARAPET-NEW-001-A01 \u2014 Petal lace straight repeat: ONE short straight repeating parapet/low-edge module in ivory scalloped petal loops with fine gold rose centres, rose marble base, light open lattice. Equal seam profiles; ornament does not exceed coping.\nWLD-PARAPET-NEW-001-A02 \u2014 Petal lace curved repeat: ONE matching gently curved module in ivory scalloped petal loops with fine gold rose centres, rose marble base, light open lattice, same section and top/bottom levels, no whole balcony.\nWLD-PARAPET-NEW-001-A03 \u2014 Petal lace terminal post: ONE slim endpoint post matching ivory scalloped petal loops with fine gold rose centres, rose marble base, light open lattice, plain flat mounting ends, no fused full rail.\nWLD-PARAPET-NEW-001-A04 \u2014 Petal lace stepped connector: ONE short low stepped terrain/landing transition in ivory scalloped petal loops with fine gold rose centres, rose marble base, light open lattice. Supports vertical, upper rail/coping connects different heights with a clean stepped return. No stair flight, no plants.\nWLD-PARAPET-NEW-001-A05 \u2014 Crescent veil straight repeat: ONE short straight repeating parapet/low-edge module in interlocking ivory crescent-and-pearl loops with thin gold edging, restrained lilac mineral accents, open rhythm. Equal seam profiles; ornament does not exceed coping.\nWLD-PARAPET-NEW-001-A06 \u2014 Crescent veil curved repeat: ONE matching gently curved module in interlocking ivory crescent-and-pearl loops with thin gold edging, restrained lilac mineral accents, open rhythm, same section and top/bottom levels, no whole balcony.\nWLD-PARAPET-NEW-001-A07 \u2014 Crescent veil terminal post: ONE slim endpoint post matching interlocking ivory crescent-and-pearl loops with thin gold edging, restrained lilac mineral accents, open rhythm, plain flat mounting ends, no fused full rail.\nWLD-PARAPET-NEW-001-A08 \u2014 Crescent veil stepped connector: ONE short low stepped terrain/landing transition in interlocking ivory crescent-and-pearl loops with thin gold edging, restrained lilac mineral accents, open rhythm. Supports vertical, upper rail/coping connects different heights with a clean stepped return. No stair flight, no plants.\nWLD-PARAPET-NEW-001-A09 \u2014 Cherry ribbon straight repeat: ONE short straight repeating parapet/low-edge module in thin cherry-pink stone ribbon diagonals with gold vine ties and ivory tiny blossom junctions, open airy screen. Equal seam profiles; ornament does not exceed coping.\nWLD-PARAPET-NEW-001-A10 \u2014 Cherry ribbon curved repeat: ONE matching gently curved module in thin cherry-pink stone ribbon diagonals with gold vine ties and ivory tiny blossom junctions, open airy screen, same section and top/bottom levels, no whole balcony.\nWLD-PARAPET-NEW-001-A11 \u2014 Cherry ribbon terminal post: ONE slim endpoint post matching thin cherry-pink stone ribbon diagonals with gold vine ties and ivory tiny blossom junctions, open airy screen, plain flat mounting ends, no fused full rail.\nWLD-PARAPET-NEW-001-A12 \u2014 Cherry ribbon stepped connector: ONE short low stepped terrain/landing transition in thin cherry-pink stone ribbon diagonals with gold vine ties and ivory tiny blossom junctions, open airy screen. Supports vertical, upper rail/coping connects different heights with a clean stepped return. No stair flight, no plants.\nWLD-PARAPET-NEW-001-A13 \u2014 Garden petal straight repeat: ONE short straight repeating parapet/low-edge module in low SOLID rose marble garden-edge wall with ivory shallow petal relief and fine gold coping, solid backed retaining edge. Equal seam profiles; ornament does not exceed coping.\nWLD-PARAPET-NEW-001-A14 \u2014 Garden petal curved repeat: ONE matching gently curved module in low SOLID rose marble garden-edge wall with ivory shallow petal relief and fine gold coping, solid backed retaining edge, same section and top/bottom levels, no whole balcony.\nWLD-PARAPET-NEW-001-A15 \u2014 Garden petal terminal post: ONE slim endpoint post matching low SOLID rose marble garden-edge wall with ivory shallow petal relief and fine gold coping, solid backed retaining edge, plain flat mounting ends, no fused full rail.\nWLD-PARAPET-NEW-001-A16 \u2014 Garden petal stepped connector: ONE short low stepped terrain/landing transition in low SOLID rose marble garden-edge wall with ivory shallow petal relief and fine gold coping, solid backed retaining edge. Supports vertical, upper rail/coping connects different heights with a clean stepped return. No stair flight, no plants.\nPreserve all names/IDs and the requested count. Do not replace details with a new full building or a material swatch sheet.",
+  "generator": "image_gen.imagegen",
+  "outputs": [
+    {
+      "sheet_id": "WLD-PARAPET-NEW-001",
+      "file": "surface-variation-kits/WLD-PARAPET-NEW-001/WLD-PARAPET-NEW-001.png",
+      "sha256": "8f168373cbb9fdb32405ef20b1a09bd9bc618cb9a122be20b0fba5ba1406f0b5",
+      "original_file": "/workspace/generated_images/exec-ea69ad2f-a235-459d-a80c-96af81c690d0.png",
+      "generator": "image_gen.imagegen",
+      "prompt_key": "prompt",
+      "reference_path": "/workspace/birthday-castle/docs/asset-image-library/images/illustrated-boards/GEN-39.png",
+      "review_status": "pending-reference-review",
+      "actual_input_file": "images/illustrated-boards/GEN-39.png",
+      "actual_input_sha256": "bbe9f03266ab8b443d0a00780f2b62ee2741e3089f0cad8ab9347cc0cfe4d1d4"
+    }
+  ],
+  "generation_attempts": [],
+  "review_status": "pending-reference-review",
+  "actual_geometry_or_texture_seams_verified": false,
+  "models_generated": 0,
+  "reuse_reference_ids": [
+    "GEN-39"
+  ],
+  "design_basis": "New styles explicitly requested by owner; source palette/architectural delicacy only, not claimed present in original",
+  "repeat_contract": {
+    "repeat_rule": "Common ends within style, one whole motif period; break at terminal/corner for different styles",
+    "style_policy": "No automatic substitution on original palace front; styles assigned only to specified optional zones after review",
+    "height_roles": "Three guard/railing styles vs one low retaining-edge style; preserve function distinction"
+  },
+  "review_notes": [
+    "Explicit new style options: Petal Lace, Crescent Veil, Cherry Ribbon, Garden Petal. Not substitutions for original front architecture.",
+    "Stepped connector drawings depict sloped/curved transitions; exact steps/landing heights must be designed for the chosen location. Low solid Garden Petal is a bed edge rather than a full terrace guard."
+  ],
+  "mesh_generation_allowed_without_approval": false
+}

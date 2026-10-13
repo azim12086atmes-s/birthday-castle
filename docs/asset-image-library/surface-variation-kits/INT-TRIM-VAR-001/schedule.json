@@ -1,0 +1,615 @@
+{
+  "sheet_id": "INT-TRIM-VAR-001",
+  "name": "Four interior wall, cornice and pillar treatment families",
+  "owner": "palace",
+  "family": "Glass, carvings, rails and architectural fittings",
+  "source_id": "INT-C02",
+  "count": 16,
+  "source_reference_id": "INT-C02",
+  "source_reference_file": "images/interior-components/INT-C02.png",
+  "source_reference_sha256": "da3d9342555ad81d5dd9139f7307e569467a5153d3e9138191346544151e0723",
+  "generation_reference_path": "/workspace/birthday-castle/docs/asset-image-library/images/interior-components/INT-C02.png",
+  "source_rules": "Source provides observed palette/motifs; owner-requested new variant geometry and hidden backs are proposals",
+  "style_groups": [
+    [
+      "HALL",
+      "Hall",
+      "star-and-diamond blue stone inlay, ivory fluted ribs, restrained gold beads"
+    ],
+    [
+      "BALL",
+      "Ballroom",
+      "interlaced rose and blue floral loops, petal/lotus ivory relief, fine gold stems"
+    ],
+    [
+      "GALLERY",
+      "Gallery",
+      "quiet ivory/rose diamond rhythm, fine bead-and-leaf edging, slender flutes"
+    ],
+    [
+      "SUITE",
+      "Suite",
+      "soft rose marble and ivory rose/vine relief, small blue floral accents, fine gold"
+    ]
+  ],
+  "parts": [
+    {
+      "asset_id": "INT-TRIM-VAR-001-A01",
+      "name": "Hall cornice repeat",
+      "description": "ONE short horizontal wall-top cornice module with star-and-diamond blue stone inlay, ivory fluted ribs, restrained gold beads. Clean straight end cuts; trim profile enters and leaves at identical height, one complete motif repeat. Colored bands are flush mineral inlay, NEVER extra window openings.",
+      "style_family": "HALL",
+      "role": "cornice-repeat",
+      "basis": "newly-requested source-compatible variant/join; visible motifs reused",
+      "dimensions_m_proposed": [
+        0.6,
+        0.12,
+        0.16
+      ],
+      "attachment_face": "rear -Y",
+      "semantic_front": "+Y",
+      "model_status": "unregistered",
+      "review_status": "pending-reference-review",
+      "function": "cornice-repeat",
+      "target_polycount_proposed": 1200,
+      "rejection_criteria": [
+        "cropped/fused components",
+        "wrong source/style family",
+        "incorrect planar/radial/handed join",
+        "non-flush floor inlay",
+        "broken supports/whole scene instead of part"
+      ],
+      "reference_approval": "pending",
+      "reuse_component_ids": [
+        "GEN-41-M01",
+        "GEN-41-M05",
+        "GEN-42-M02",
+        "GEN-42-M03",
+        "GEN-42-M05"
+      ]
+    },
+    {
+      "asset_id": "INT-TRIM-VAR-001-A02",
+      "name": "Hall inside return",
+      "description": "ONE compact inward90-degree L return of that SAME cornice, matching height/depth and line phase. No whole wall or column.",
+      "style_family": "HALL",
+      "role": "cornice-corner",
+      "basis": "newly-requested source-compatible variant/join; visible motifs reused",
+      "dimensions_m_proposed": [
+        0.6,
+        0.12,
+        0.16
+      ],
+      "attachment_face": "rear -Y",
+      "semantic_front": "+Y",
+      "model_status": "unregistered",
+      "review_status": "pending-reference-review",
+      "function": "cornice-corner",
+      "target_polycount_proposed": 1200,
+      "rejection_criteria": [
+        "cropped/fused components",
+        "wrong source/style family",
+        "incorrect planar/radial/handed join",
+        "non-flush floor inlay",
+        "broken supports/whole scene instead of part"
+      ],
+      "reference_approval": "pending",
+      "reuse_component_ids": [
+        "GEN-41-M01",
+        "GEN-41-M05",
+        "GEN-42-M02",
+        "GEN-42-M03",
+        "GEN-42-M05"
+      ]
+    },
+    {
+      "asset_id": "INT-TRIM-VAR-001-A03",
+      "name": "Hall pillar collar",
+      "description": "ONE small detachable split semicircular pillar-neck/foot sleeve in star-and-diamond blue stone inlay, ivory fluted ribs, restrained gold beads. Show hollow mounting back and clean meeting ends, no entire column shaft or hanging spikes. Fits an existing pillar rather than replacing it.",
+      "style_family": "HALL",
+      "role": "pillar-wrap",
+      "basis": "newly-requested source-compatible variant/join; visible motifs reused",
+      "dimensions_m_proposed": [
+        0.6,
+        0.12,
+        0.16
+      ],
+      "attachment_face": "inner radial mount",
+      "semantic_front": "outward radial face",
+      "model_status": "unregistered",
+      "review_status": "pending-reference-review",
+      "function": "pillar-wrap",
+      "target_polycount_proposed": 1200,
+      "rejection_criteria": [
+        "cropped/fused components",
+        "wrong source/style family",
+        "incorrect planar/radial/handed join",
+        "non-flush floor inlay",
+        "broken supports/whole scene instead of part"
+      ],
+      "reference_approval": "pending",
+      "reuse_component_ids": [
+        "GEN-41-M01",
+        "GEN-41-M05",
+        "GEN-42-M02",
+        "GEN-42-M03",
+        "GEN-42-M05"
+      ]
+    },
+    {
+      "asset_id": "INT-TRIM-VAR-001-A04",
+      "name": "Hall dado repeat",
+      "description": "ONE thin backed wall dado/frieze tile with star-and-diamond blue stone inlay, ivory fluted ribs, restrained gold beads. Source carvings stay shallow, regular and readable, straight seam edges at same profile; no giant arch/passage.",
+      "style_family": "HALL",
+      "role": "wall-panel-repeat",
+      "basis": "newly-requested source-compatible variant/join; visible motifs reused",
+      "dimensions_m_proposed": [
+        0.6,
+        0.12,
+        0.16
+      ],
+      "attachment_face": "rear -Y",
+      "semantic_front": "+Y",
+      "model_status": "unregistered",
+      "review_status": "pending-reference-review",
+      "function": "wall-panel-repeat",
+      "target_polycount_proposed": 1200,
+      "rejection_criteria": [
+        "cropped/fused components",
+        "wrong source/style family",
+        "incorrect planar/radial/handed join",
+        "non-flush floor inlay",
+        "broken supports/whole scene instead of part"
+      ],
+      "reference_approval": "pending",
+      "reuse_component_ids": [
+        "GEN-41-M01",
+        "GEN-41-M05",
+        "GEN-42-M02",
+        "GEN-42-M03",
+        "GEN-42-M05"
+      ]
+    },
+    {
+      "asset_id": "INT-TRIM-VAR-001-A05",
+      "name": "Ballroom cornice repeat",
+      "description": "ONE short horizontal wall-top cornice module with interlaced rose and blue floral loops, petal/lotus ivory relief, fine gold stems. Clean straight end cuts; trim profile enters and leaves at identical height, one complete motif repeat. Colored bands are flush mineral inlay, NEVER extra window openings.",
+      "style_family": "BALL",
+      "role": "cornice-repeat",
+      "basis": "newly-requested source-compatible variant/join; visible motifs reused",
+      "dimensions_m_proposed": [
+        0.6,
+        0.12,
+        0.16
+      ],
+      "attachment_face": "rear -Y",
+      "semantic_front": "+Y",
+      "model_status": "unregistered",
+      "review_status": "pending-reference-review",
+      "function": "cornice-repeat",
+      "target_polycount_proposed": 1200,
+      "rejection_criteria": [
+        "cropped/fused components",
+        "wrong source/style family",
+        "incorrect planar/radial/handed join",
+        "non-flush floor inlay",
+        "broken supports/whole scene instead of part"
+      ],
+      "reference_approval": "pending",
+      "reuse_component_ids": [
+        "GEN-41-M01",
+        "GEN-41-M05",
+        "GEN-42-M02",
+        "GEN-42-M03",
+        "GEN-42-M05"
+      ]
+    },
+    {
+      "asset_id": "INT-TRIM-VAR-001-A06",
+      "name": "Ballroom inside return",
+      "description": "ONE compact inward90-degree L return of that SAME cornice, matching height/depth and line phase. No whole wall or column.",
+      "style_family": "BALL",
+      "role": "cornice-corner",
+      "basis": "newly-requested source-compatible variant/join; visible motifs reused",
+      "dimensions_m_proposed": [
+        0.6,
+        0.12,
+        0.16
+      ],
+      "attachment_face": "rear -Y",
+      "semantic_front": "+Y",
+      "model_status": "unregistered",
+      "review_status": "pending-reference-review",
+      "function": "cornice-corner",
+      "target_polycount_proposed": 1200,
+      "rejection_criteria": [
+        "cropped/fused components",
+        "wrong source/style family",
+        "incorrect planar/radial/handed join",
+        "non-flush floor inlay",
+        "broken supports/whole scene instead of part"
+      ],
+      "reference_approval": "pending",
+      "reuse_component_ids": [
+        "GEN-41-M01",
+        "GEN-41-M05",
+        "GEN-42-M02",
+        "GEN-42-M03",
+        "GEN-42-M05"
+      ]
+    },
+    {
+      "asset_id": "INT-TRIM-VAR-001-A07",
+      "name": "Ballroom pillar collar",
+      "description": "ONE small detachable split semicircular pillar-neck/foot sleeve in interlaced rose and blue floral loops, petal/lotus ivory relief, fine gold stems. Show hollow mounting back and clean meeting ends, no entire column shaft or hanging spikes. Fits an existing pillar rather than replacing it.",
+      "style_family": "BALL",
+      "role": "pillar-wrap",
+      "basis": "newly-requested source-compatible variant/join; visible motifs reused",
+      "dimensions_m_proposed": [
+        0.6,
+        0.12,
+        0.16
+      ],
+      "attachment_face": "inner radial mount",
+      "semantic_front": "outward radial face",
+      "model_status": "unregistered",
+      "review_status": "pending-reference-review",
+      "function": "pillar-wrap",
+      "target_polycount_proposed": 1200,
+      "rejection_criteria": [
+        "cropped/fused components",
+        "wrong source/style family",
+        "incorrect planar/radial/handed join",
+        "non-flush floor inlay",
+        "broken supports/whole scene instead of part"
+      ],
+      "reference_approval": "pending",
+      "reuse_component_ids": [
+        "GEN-41-M01",
+        "GEN-41-M05",
+        "GEN-42-M02",
+        "GEN-42-M03",
+        "GEN-42-M05"
+      ]
+    },
+    {
+      "asset_id": "INT-TRIM-VAR-001-A08",
+      "name": "Ballroom dado repeat",
+      "description": "ONE thin backed wall dado/frieze tile with interlaced rose and blue floral loops, petal/lotus ivory relief, fine gold stems. Source carvings stay shallow, regular and readable, straight seam edges at same profile; no giant arch/passage.",
+      "style_family": "BALL",
+      "role": "wall-panel-repeat",
+      "basis": "newly-requested source-compatible variant/join; visible motifs reused",
+      "dimensions_m_proposed": [
+        0.6,
+        0.12,
+        0.16
+      ],
+      "attachment_face": "rear -Y",
+      "semantic_front": "+Y",
+      "model_status": "unregistered",
+      "review_status": "pending-reference-review",
+      "function": "wall-panel-repeat",
+      "target_polycount_proposed": 1200,
+      "rejection_criteria": [
+        "cropped/fused components",
+        "wrong source/style family",
+        "incorrect planar/radial/handed join",
+        "non-flush floor inlay",
+        "broken supports/whole scene instead of part"
+      ],
+      "reference_approval": "pending",
+      "reuse_component_ids": [
+        "GEN-41-M01",
+        "GEN-41-M05",
+        "GEN-42-M02",
+        "GEN-42-M03",
+        "GEN-42-M05"
+      ]
+    },
+    {
+      "asset_id": "INT-TRIM-VAR-001-A09",
+      "name": "Gallery cornice repeat",
+      "description": "ONE short horizontal wall-top cornice module with quiet ivory/rose diamond rhythm, fine bead-and-leaf edging, slender flutes. Clean straight end cuts; trim profile enters and leaves at identical height, one complete motif repeat. Colored bands are flush mineral inlay, NEVER extra window openings.",
+      "style_family": "GALLERY",
+      "role": "cornice-repeat",
+      "basis": "newly-requested source-compatible variant/join; visible motifs reused",
+      "dimensions_m_proposed": [
+        0.6,
+        0.12,
+        0.16
+      ],
+      "attachment_face": "rear -Y",
+      "semantic_front": "+Y",
+      "model_status": "unregistered",
+      "review_status": "pending-reference-review",
+      "function": "cornice-repeat",
+      "target_polycount_proposed": 1200,
+      "rejection_criteria": [
+        "cropped/fused components",
+        "wrong source/style family",
+        "incorrect planar/radial/handed join",
+        "non-flush floor inlay",
+        "broken supports/whole scene instead of part"
+      ],
+      "reference_approval": "pending",
+      "reuse_component_ids": [
+        "GEN-41-M01",
+        "GEN-41-M05",
+        "GEN-42-M02",
+        "GEN-42-M03",
+        "GEN-42-M05"
+      ]
+    },
+    {
+      "asset_id": "INT-TRIM-VAR-001-A10",
+      "name": "Gallery inside return",
+      "description": "ONE compact inward90-degree L return of that SAME cornice, matching height/depth and line phase. No whole wall or column.",
+      "style_family": "GALLERY",
+      "role": "cornice-corner",
+      "basis": "newly-requested source-compatible variant/join; visible motifs reused",
+      "dimensions_m_proposed": [
+        0.6,
+        0.12,
+        0.16
+      ],
+      "attachment_face": "rear -Y",
+      "semantic_front": "+Y",
+      "model_status": "unregistered",
+      "review_status": "pending-reference-review",
+      "function": "cornice-corner",
+      "target_polycount_proposed": 1200,
+      "rejection_criteria": [
+        "cropped/fused components",
+        "wrong source/style family",
+        "incorrect planar/radial/handed join",
+        "non-flush floor inlay",
+        "broken supports/whole scene instead of part"
+      ],
+      "reference_approval": "pending",
+      "reuse_component_ids": [
+        "GEN-41-M01",
+        "GEN-41-M05",
+        "GEN-42-M02",
+        "GEN-42-M03",
+        "GEN-42-M05"
+      ]
+    },
+    {
+      "asset_id": "INT-TRIM-VAR-001-A11",
+      "name": "Gallery pillar collar",
+      "description": "ONE small detachable split semicircular pillar-neck/foot sleeve in quiet ivory/rose diamond rhythm, fine bead-and-leaf edging, slender flutes. Show hollow mounting back and clean meeting ends, no entire column shaft or hanging spikes. Fits an existing pillar rather than replacing it.",
+      "style_family": "GALLERY",
+      "role": "pillar-wrap",
+      "basis": "newly-requested source-compatible variant/join; visible motifs reused",
+      "dimensions_m_proposed": [
+        0.6,
+        0.12,
+        0.16
+      ],
+      "attachment_face": "inner radial mount",
+      "semantic_front": "outward radial face",
+      "model_status": "unregistered",
+      "review_status": "pending-reference-review",
+      "function": "pillar-wrap",
+      "target_polycount_proposed": 1200,
+      "rejection_criteria": [
+        "cropped/fused components",
+        "wrong source/style family",
+        "incorrect planar/radial/handed join",
+        "non-flush floor inlay",
+        "broken supports/whole scene instead of part"
+      ],
+      "reference_approval": "pending",
+      "reuse_component_ids": [
+        "GEN-41-M01",
+        "GEN-41-M05",
+        "GEN-42-M02",
+        "GEN-42-M03",
+        "GEN-42-M05"
+      ]
+    },
+    {
+      "asset_id": "INT-TRIM-VAR-001-A12",
+      "name": "Gallery dado repeat",
+      "description": "ONE thin backed wall dado/frieze tile with quiet ivory/rose diamond rhythm, fine bead-and-leaf edging, slender flutes. Source carvings stay shallow, regular and readable, straight seam edges at same profile; no giant arch/passage.",
+      "style_family": "GALLERY",
+      "role": "wall-panel-repeat",
+      "basis": "newly-requested source-compatible variant/join; visible motifs reused",
+      "dimensions_m_proposed": [
+        0.6,
+        0.12,
+        0.16
+      ],
+      "attachment_face": "rear -Y",
+      "semantic_front": "+Y",
+      "model_status": "unregistered",
+      "review_status": "pending-reference-review",
+      "function": "wall-panel-repeat",
+      "target_polycount_proposed": 1200,
+      "rejection_criteria": [
+        "cropped/fused components",
+        "wrong source/style family",
+        "incorrect planar/radial/handed join",
+        "non-flush floor inlay",
+        "broken supports/whole scene instead of part"
+      ],
+      "reference_approval": "pending",
+      "reuse_component_ids": [
+        "GEN-41-M01",
+        "GEN-41-M05",
+        "GEN-42-M02",
+        "GEN-42-M03",
+        "GEN-42-M05"
+      ]
+    },
+    {
+      "asset_id": "INT-TRIM-VAR-001-A13",
+      "name": "Suite cornice repeat",
+      "description": "ONE short horizontal wall-top cornice module with soft rose marble and ivory rose/vine relief, small blue floral accents, fine gold. Clean straight end cuts; trim profile enters and leaves at identical height, one complete motif repeat. Colored bands are flush mineral inlay, NEVER extra window openings.",
+      "style_family": "SUITE",
+      "role": "cornice-repeat",
+      "basis": "newly-requested source-compatible variant/join; visible motifs reused",
+      "dimensions_m_proposed": [
+        0.6,
+        0.12,
+        0.16
+      ],
+      "attachment_face": "rear -Y",
+      "semantic_front": "+Y",
+      "model_status": "unregistered",
+      "review_status": "pending-reference-review",
+      "function": "cornice-repeat",
+      "target_polycount_proposed": 1200,
+      "rejection_criteria": [
+        "cropped/fused components",
+        "wrong source/style family",
+        "incorrect planar/radial/handed join",
+        "non-flush floor inlay",
+        "broken supports/whole scene instead of part"
+      ],
+      "reference_approval": "pending",
+      "reuse_component_ids": [
+        "GEN-41-M01",
+        "GEN-41-M05",
+        "GEN-42-M02",
+        "GEN-42-M03",
+        "GEN-42-M05"
+      ]
+    },
+    {
+      "asset_id": "INT-TRIM-VAR-001-A14",
+      "name": "Suite inside return",
+      "description": "ONE compact inward90-degree L return of that SAME cornice, matching height/depth and line phase. No whole wall or column.",
+      "style_family": "SUITE",
+      "role": "cornice-corner",
+      "basis": "newly-requested source-compatible variant/join; visible motifs reused",
+      "dimensions_m_proposed": [
+        0.6,
+        0.12,
+        0.16
+      ],
+      "attachment_face": "rear -Y",
+      "semantic_front": "+Y",
+      "model_status": "unregistered",
+      "review_status": "pending-reference-review",
+      "function": "cornice-corner",
+      "target_polycount_proposed": 1200,
+      "rejection_criteria": [
+        "cropped/fused components",
+        "wrong source/style family",
+        "incorrect planar/radial/handed join",
+        "non-flush floor inlay",
+        "broken supports/whole scene instead of part"
+      ],
+      "reference_approval": "pending",
+      "reuse_component_ids": [
+        "GEN-41-M01",
+        "GEN-41-M05",
+        "GEN-42-M02",
+        "GEN-42-M03",
+        "GEN-42-M05"
+      ]
+    },
+    {
+      "asset_id": "INT-TRIM-VAR-001-A15",
+      "name": "Suite pillar collar",
+      "description": "ONE small detachable split semicircular pillar-neck/foot sleeve in soft rose marble and ivory rose/vine relief, small blue floral accents, fine gold. Show hollow mounting back and clean meeting ends, no entire column shaft or hanging spikes. Fits an existing pillar rather than replacing it.",
+      "style_family": "SUITE",
+      "role": "pillar-wrap",
+      "basis": "newly-requested source-compatible variant/join; visible motifs reused",
+      "dimensions_m_proposed": [
+        0.6,
+        0.12,
+        0.16
+      ],
+      "attachment_face": "inner radial mount",
+      "semantic_front": "outward radial face",
+      "model_status": "unregistered",
+      "review_status": "pending-reference-review",
+      "function": "pillar-wrap",
+      "target_polycount_proposed": 1200,
+      "rejection_criteria": [
+        "cropped/fused components",
+        "wrong source/style family",
+        "incorrect planar/radial/handed join",
+        "non-flush floor inlay",
+        "broken supports/whole scene instead of part"
+      ],
+      "reference_approval": "pending",
+      "reuse_component_ids": [
+        "GEN-41-M01",
+        "GEN-41-M05",
+        "GEN-42-M02",
+        "GEN-42-M03",
+        "GEN-42-M05"
+      ]
+    },
+    {
+      "asset_id": "INT-TRIM-VAR-001-A16",
+      "name": "Suite dado repeat",
+      "description": "ONE thin backed wall dado/frieze tile with soft rose marble and ivory rose/vine relief, small blue floral accents, fine gold. Source carvings stay shallow, regular and readable, straight seam edges at same profile; no giant arch/passage.",
+      "style_family": "SUITE",
+      "role": "wall-panel-repeat",
+      "basis": "newly-requested source-compatible variant/join; visible motifs reused",
+      "dimensions_m_proposed": [
+        0.6,
+        0.12,
+        0.16
+      ],
+      "attachment_face": "rear -Y",
+      "semantic_front": "+Y",
+      "model_status": "unregistered",
+      "review_status": "pending-reference-review",
+      "function": "wall-panel-repeat",
+      "target_polycount_proposed": 1200,
+      "rejection_criteria": [
+        "cropped/fused components",
+        "wrong source/style family",
+        "incorrect planar/radial/handed join",
+        "non-flush floor inlay",
+        "broken supports/whole scene instead of part"
+      ],
+      "reference_approval": "pending",
+      "reuse_component_ids": [
+        "GEN-41-M01",
+        "GEN-41-M05",
+        "GEN-42-M02",
+        "GEN-42-M03",
+        "GEN-42-M05"
+      ]
+    }
+  ],
+  "prompt": "Make a clean high-resolution named component reference sheet, not a whole room/building. Use ONLY the one supplied source for material/motif vocabulary. Owner-requested new variations and junctions must stay coordinated with it. Separate complete objects, no fused neighbors, no cropped silhouettes, no shadows over patterns, no melting scrolls or warped rails. Straight edges/columns remain straight; thin gold stays thin. Warm-white background, even light. Print exact full ID AND short name below EVERY item, title above. One object per cell, no duplicate alternate views. Palette/style follows this source. Source illustrations are not measured models; do not invent fixed palace dimensions. No people, whole buildings, scenery, plants or loose decoration glued onto parts.\nTitle: INT-TRIM-VAR-001 \u2014 Four interior wall, cornice and pillar treatment families. Exactly 16 items, 4-by-4 grid. Four rows HALL/BALLROOM/GALLERY/SUITE, four pieces each: straight cornice / inside cornice return / detachable small pillar collar / dado repeat. The supplied wall-bay source is the shared lotus/star/rose vocabulary; the four room-specific variants are explicitly newly requested coordinated alternatives. Never draw a complete room or big structural wall. Clean slight three-quarter product views, moderate restrained source carving; no melted flowers, spikes or glass windows inserted into cornice bands.\nINT-TRIM-VAR-001-A01 \u2014 Hall cornice repeat: ONE short horizontal wall-top cornice module with star-and-diamond blue stone inlay, ivory fluted ribs, restrained gold beads. Clean straight end cuts; trim profile enters and leaves at identical height, one complete motif repeat. Colored bands are flush mineral inlay, NEVER extra window openings.\nINT-TRIM-VAR-001-A02 \u2014 Hall inside return: ONE compact inward90-degree L return of that SAME cornice, matching height/depth and line phase. No whole wall or column.\nINT-TRIM-VAR-001-A03 \u2014 Hall pillar collar: ONE small detachable split semicircular pillar-neck/foot sleeve in star-and-diamond blue stone inlay, ivory fluted ribs, restrained gold beads. Show hollow mounting back and clean meeting ends, no entire column shaft or hanging spikes. Fits an existing pillar rather than replacing it.\nINT-TRIM-VAR-001-A04 \u2014 Hall dado repeat: ONE thin backed wall dado/frieze tile with star-and-diamond blue stone inlay, ivory fluted ribs, restrained gold beads. Source carvings stay shallow, regular and readable, straight seam edges at same profile; no giant arch/passage.\nINT-TRIM-VAR-001-A05 \u2014 Ballroom cornice repeat: ONE short horizontal wall-top cornice module with interlaced rose and blue floral loops, petal/lotus ivory relief, fine gold stems. Clean straight end cuts; trim profile enters and leaves at identical height, one complete motif repeat. Colored bands are flush mineral inlay, NEVER extra window openings.\nINT-TRIM-VAR-001-A06 \u2014 Ballroom inside return: ONE compact inward90-degree L return of that SAME cornice, matching height/depth and line phase. No whole wall or column.\nINT-TRIM-VAR-001-A07 \u2014 Ballroom pillar collar: ONE small detachable split semicircular pillar-neck/foot sleeve in interlaced rose and blue floral loops, petal/lotus ivory relief, fine gold stems. Show hollow mounting back and clean meeting ends, no entire column shaft or hanging spikes. Fits an existing pillar rather than replacing it.\nINT-TRIM-VAR-001-A08 \u2014 Ballroom dado repeat: ONE thin backed wall dado/frieze tile with interlaced rose and blue floral loops, petal/lotus ivory relief, fine gold stems. Source carvings stay shallow, regular and readable, straight seam edges at same profile; no giant arch/passage.\nINT-TRIM-VAR-001-A09 \u2014 Gallery cornice repeat: ONE short horizontal wall-top cornice module with quiet ivory/rose diamond rhythm, fine bead-and-leaf edging, slender flutes. Clean straight end cuts; trim profile enters and leaves at identical height, one complete motif repeat. Colored bands are flush mineral inlay, NEVER extra window openings.\nINT-TRIM-VAR-001-A10 \u2014 Gallery inside return: ONE compact inward90-degree L return of that SAME cornice, matching height/depth and line phase. No whole wall or column.\nINT-TRIM-VAR-001-A11 \u2014 Gallery pillar collar: ONE small detachable split semicircular pillar-neck/foot sleeve in quiet ivory/rose diamond rhythm, fine bead-and-leaf edging, slender flutes. Show hollow mounting back and clean meeting ends, no entire column shaft or hanging spikes. Fits an existing pillar rather than replacing it.\nINT-TRIM-VAR-001-A12 \u2014 Gallery dado repeat: ONE thin backed wall dado/frieze tile with quiet ivory/rose diamond rhythm, fine bead-and-leaf edging, slender flutes. Source carvings stay shallow, regular and readable, straight seam edges at same profile; no giant arch/passage.\nINT-TRIM-VAR-001-A13 \u2014 Suite cornice repeat: ONE short horizontal wall-top cornice module with soft rose marble and ivory rose/vine relief, small blue floral accents, fine gold. Clean straight end cuts; trim profile enters and leaves at identical height, one complete motif repeat. Colored bands are flush mineral inlay, NEVER extra window openings.\nINT-TRIM-VAR-001-A14 \u2014 Suite inside return: ONE compact inward90-degree L return of that SAME cornice, matching height/depth and line phase. No whole wall or column.\nINT-TRIM-VAR-001-A15 \u2014 Suite pillar collar: ONE small detachable split semicircular pillar-neck/foot sleeve in soft rose marble and ivory rose/vine relief, small blue floral accents, fine gold. Show hollow mounting back and clean meeting ends, no entire column shaft or hanging spikes. Fits an existing pillar rather than replacing it.\nINT-TRIM-VAR-001-A16 \u2014 Suite dado repeat: ONE thin backed wall dado/frieze tile with soft rose marble and ivory rose/vine relief, small blue floral accents, fine gold. Source carvings stay shallow, regular and readable, straight seam edges at same profile; no giant arch/passage.\nPreserve all names/IDs and the requested count. Do not replace details with a new full building or a material swatch sheet.",
+  "generator": "image_gen.imagegen",
+  "outputs": [
+    {
+      "sheet_id": "INT-TRIM-VAR-001",
+      "file": "surface-variation-kits/INT-TRIM-VAR-001/INT-TRIM-VAR-001.png",
+      "sha256": "3f0aa5ec1a6df3e723930f3e6d9b5369c92e9a448785517a930ccd517298420f",
+      "original_file": "/workspace/generated_images/exec-de04c0af-01fb-4741-8fd3-437e6bacc052.png",
+      "generator": "image_gen.imagegen",
+      "prompt_key": "prompt",
+      "reference_path": "/workspace/birthday-castle/docs/asset-image-library/images/interior-components/INT-C02.png",
+      "review_status": "pending-reference-review",
+      "actual_input_file": "images/interior-components/INT-C02.png",
+      "actual_input_sha256": "da3d9342555ad81d5dd9139f7307e569467a5153d3e9138191346544151e0723"
+    }
+  ],
+  "generation_attempts": [],
+  "review_status": "pending-reference-review",
+  "actual_geometry_or_texture_seams_verified": false,
+  "models_generated": 0,
+  "reuse_reference_ids": [
+    "INT-C02"
+  ],
+  "repeat_contract": {
+    "cornice_rule": "Same profile and motif phase at left/right ends within each style; inside returns turn that same profile",
+    "wall_rule": "One full ornament period per backed panel; same top/bottom bands at neighboring ends",
+    "pillar_rule": "Collars normalize to actual pillar radius before fitting; open/closed support class is preserved",
+    "cross_style_rule": "Do not assume different style profiles mate; use blank transition/end cap or change at architectural corner"
+  },
+  "review_notes": [
+    "Four requested room variants derived from existing lotus/star/rose palette. These are coordinated proposals, not proof that all four variants appear literally in the source bay.",
+    "Split collar halves belong to one assembly ID; actual collar radius and motif end phase need normalization."
+  ],
+  "mesh_generation_allowed_without_approval": false
+}

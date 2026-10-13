@@ -1,0 +1,184 @@
+{
+  "scope": "Audit existing original illustrated references; no new wishing art, no spending, no models",
+  "objects": [
+    {
+      "asset_id": "GEN-28-A01",
+      "name": "Lotus sky-boat",
+      "source_id": "GEN-28",
+      "source_file": "images/illustrated-boards/GEN-28.png",
+      "source_sha256": "def5d59f383fbbddbea8fa00558480c3e31e708cb5529cbc5a97ed83402533ba",
+      "source_box_xyxy": [
+        12,
+        42,
+        410,
+        647
+      ],
+      "file": "surface-variation-kits/wishing-source-audit/GEN-28-A01.png",
+      "sha256": "9a8051d579303971cd1bc77d9109c40a84f7a5525c99a37c752cd58f623f5ce7",
+      "image_id": "SRC-WISH-GEN-28-A01",
+      "registry_action": "existing",
+      "art_reference_exists": true,
+      "new_design_needed": false,
+      "model_reviewed": false,
+      "gameplay_states_specified": false
+    },
+    {
+      "asset_id": "GEN-28-A05",
+      "name": "Boat landing platform",
+      "source_id": "GEN-28",
+      "source_file": "images/illustrated-boards/GEN-28.png",
+      "source_sha256": "def5d59f383fbbddbea8fa00558480c3e31e708cb5529cbc5a97ed83402533ba",
+      "source_box_xyxy": [
+        419,
+        42,
+        825,
+        647
+      ],
+      "file": "surface-variation-kits/wishing-source-audit/GEN-28-A05.png",
+      "sha256": "79a6e463990f5434fd083ebbbdb7b78d426b9495c333e05016de58c925e8d80c",
+      "image_id": "SRC-WISH-GEN-28-A05",
+      "registry_action": "newly-indexed-existing-art",
+      "art_reference_exists": true,
+      "new_design_needed": false,
+      "model_reviewed": false,
+      "gameplay_states_specified": false
+    },
+    {
+      "asset_id": "GEN-28-A02",
+      "name": "Wishing portal ring",
+      "source_id": "GEN-28",
+      "source_file": "images/illustrated-boards/GEN-28.png",
+      "source_sha256": "def5d59f383fbbddbea8fa00558480c3e31e708cb5529cbc5a97ed83402533ba",
+      "source_box_xyxy": [
+        834,
+        42,
+        1184,
+        647
+      ],
+      "file": "surface-variation-kits/wishing-source-audit/GEN-28-A02.png",
+      "sha256": "208df44634d3c2c08eb942f23790620c2346c69abe4db30e1e35ffb3fd0ef4eb",
+      "image_id": "SRC-WISH-GEN-28-A02",
+      "registry_action": "existing",
+      "art_reference_exists": true,
+      "new_design_needed": false,
+      "model_reviewed": false,
+      "gameplay_states_specified": false
+    },
+    {
+      "asset_id": "GEN-28-A06",
+      "name": "Wish lantern",
+      "source_id": "GEN-28",
+      "source_file": "images/illustrated-boards/GEN-28.png",
+      "source_sha256": "def5d59f383fbbddbea8fa00558480c3e31e708cb5529cbc5a97ed83402533ba",
+      "source_box_xyxy": [
+        1195,
+        42,
+        1528,
+        647
+      ],
+      "file": "surface-variation-kits/wishing-source-audit/GEN-28-A06.png",
+      "sha256": "79a2336b06aab9b041b2b01c56ae956220a5a32fd9d9df92c79f9932f5066524",
+      "image_id": "SRC-WISH-GEN-28-A06",
+      "registry_action": "newly-indexed-existing-art",
+      "art_reference_exists": true,
+      "new_design_needed": false,
+      "model_reviewed": false,
+      "gameplay_states_specified": false
+    },
+    {
+      "asset_id": "GEN-28-A03",
+      "name": "Floating lotus candle",
+      "source_id": "GEN-28",
+      "source_file": "images/illustrated-boards/GEN-28.png",
+      "source_sha256": "def5d59f383fbbddbea8fa00558480c3e31e708cb5529cbc5a97ed83402533ba",
+      "source_box_xyxy": [
+        12,
+        654,
+        410,
+        1023
+      ],
+      "file": "surface-variation-kits/wishing-source-audit/GEN-28-A03.png",
+      "sha256": "cb265569aee3b052ff331347c8dda2c24c56e433c51ba6dd8c6a1635370813be",
+      "image_id": "SRC-WISH-GEN-28-A03",
+      "registry_action": "existing",
+      "art_reference_exists": true,
+      "new_design_needed": false,
+      "model_reviewed": false,
+      "gameplay_states_specified": false
+    },
+    {
+      "asset_id": "GEN-28-A07",
+      "name": "Star runestone",
+      "source_id": "GEN-28",
+      "source_file": "images/illustrated-boards/GEN-28.png",
+      "source_sha256": "def5d59f383fbbddbea8fa00558480c3e31e708cb5529cbc5a97ed83402533ba",
+      "source_box_xyxy": [
+        419,
+        654,
+        825,
+        1023
+      ],
+      "file": "surface-variation-kits/wishing-source-audit/GEN-28-A07.png",
+      "sha256": "1cb37c1c4aacc4086f18d83e1e66566b0019964d2a02939f7f65d0e1ad4e744d",
+      "image_id": "SRC-WISH-GEN-28-A07",
+      "registry_action": "newly-indexed-existing-art",
+      "art_reference_exists": true,
+      "new_design_needed": false,
+      "model_reviewed": false,
+      "gameplay_states_specified": false
+    },
+    {
+      "asset_id": "GEN-28-A04",
+      "name": "Celestial armillary",
+      "source_id": "GEN-28",
+      "source_file": "images/illustrated-boards/GEN-28.png",
+      "source_sha256": "def5d59f383fbbddbea8fa00558480c3e31e708cb5529cbc5a97ed83402533ba",
+      "source_box_xyxy": [
+        834,
+        654,
+        1184,
+        1023
+      ],
+      "file": "surface-variation-kits/wishing-source-audit/GEN-28-A04.png",
+      "sha256": "fa732c94e51db8ca56c1fe43c5f2e74f8b80dd0f3765221c240d3bb87dcdf5c1",
+      "image_id": "SRC-WISH-GEN-28-A04",
+      "registry_action": "existing",
+      "art_reference_exists": true,
+      "new_design_needed": false,
+      "model_reviewed": false,
+      "gameplay_states_specified": false
+    },
+    {
+      "asset_id": "GEN-28-A08",
+      "name": "Wayfinding kiosk",
+      "source_id": "GEN-28",
+      "source_file": "images/illustrated-boards/GEN-28.png",
+      "source_sha256": "def5d59f383fbbddbea8fa00558480c3e31e708cb5529cbc5a97ed83402533ba",
+      "source_box_xyxy": [
+        1195,
+        654,
+        1528,
+        1023
+      ],
+      "file": "surface-variation-kits/wishing-source-audit/GEN-28-A08.png",
+      "sha256": "a6e1f31fd00ebc2f7a8bc5dd466282f87ccb0f94ea4899b5ad140de4a7af96b2",
+      "image_id": "SRC-WISH-GEN-28-A08",
+      "registry_action": "newly-indexed-existing-art",
+      "art_reference_exists": true,
+      "new_design_needed": false,
+      "model_reviewed": false,
+      "gameplay_states_specified": false
+    }
+  ],
+  "decision": "Eight main illustrated designs exist. Register four previously unindexed designs. New objects/states require a concrete gameplay gap; do not equate reference presence with a working game.",
+  "runtime_evidence": {
+    "files": [
+      "js/minigames.js:createWishLanterns",
+      "js/main.js:wish-send"
+    ],
+    "inspection": "source read only; no runtime execution performed",
+    "existing_flow": "write text, release lantern, rise, fade text; cap40 lanterns",
+    "current_visual": "procedural cylinder with glow/text sprites",
+    "need": "Reviewed decorative wish-lantern model and attachment/glow integration, not a new wishing-object type"
+  }
+}

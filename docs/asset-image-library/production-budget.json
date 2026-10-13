@@ -16,7 +16,7 @@
   "palace_family_caps": [
     {
       "family": "Layout and envelope",
-      "cap": 7,
+      "cap": 5,
       "existing_ids": [
         "GEN-01",
         "GEN-02",
@@ -61,7 +61,7 @@
     },
     {
       "family": "Stairs, fountains, terraces and courtyards",
-      "cap": 10,
+      "cap": 11,
       "existing_ids": [
         "GEN-11",
         "GEN-14",
@@ -74,7 +74,7 @@
     },
     {
       "family": "Interiors and furniture",
-      "cap": 11,
+      "cap": 12,
       "existing_ids": [
         "GEN-07",
         "GEN-24",
@@ -902,20 +902,6 @@
       "generation_attempts_in_this_pass": 0
     },
     {
-      "sheet_id": "PAL-FRONT-001",
-      "owner": "palace",
-      "family": "Layout and envelope",
-      "title": "Continuous five-arch frontage and attached wings",
-      "status": "generated-pending-review",
-      "file": "palace-front-correction/PAL-FRONT-001.png",
-      "sha256": "bb4073eafc36d143ef544fd6f9de811561fe112c9a133065cc7f660fc9082da0",
-      "generation_attempts_in_this_pass": 2,
-      "retry_reasons": [
-        "Whole-front leaders miss arch centres and redrawn tower proportions drift; replace multi-view redraw with minimal annotation edit of original source."
-      ],
-      "review_notes": "Minimal source-based labeling edit retains the connected five-bay wall and major lateral tower groups; leaders now identify the large arches. Caption layout affects displayed vertical extent; GEN-37 remains the exact source and height/placement master, not this generated edit."
-    },
-    {
       "sheet_id": "PAL-ENTRY-001",
       "owner": "palace",
       "family": "Layout and envelope",
@@ -1160,6 +1146,107 @@
       ],
       "component_count": 4,
       "review_notes": "No models generated or physical fit certified. Invented stacked lanterns removed from the body. Slim onion gallery reuses existing star-glass and small-canopy details rather than a new decor pack."
+    },
+    {
+      "sheet_id": "INT-FLOOR-REPEAT-001",
+      "title": "Great hall, ballroom, gallery and suite floor repeat kits",
+      "owner": "palace",
+      "family": "Interiors and furniture",
+      "status": "generated-pending-source-and-user-review",
+      "file": "surface-variation-kits/INT-FLOOR-REPEAT-001/INT-FLOOR-REPEAT-001.png",
+      "sha256": "517068d54d73c56bcad3d0446a8a53ce7e4bc16775c52f5391cdbfbdeb39dab1",
+      "generation_attempts_in_this_pass": 2,
+      "location_ids": [],
+      "retry_reasons": [
+        "Field tiles need plain matching margins instead of whole-room frames; suite source focal is rectangular"
+      ],
+      "component_count": 16,
+      "review_notes": "Field repeats simplified to closed central motifs/plain edges; source suite focal uses a rectangular quarter. Art borders/corners still need exact endpoint/phase reconstruction; no pixel/UV seamlessness certified."
+    },
+    {
+      "sheet_id": "INT-TRIM-VAR-001",
+      "title": "Four interior wall, cornice and pillar treatment families",
+      "owner": "palace",
+      "family": "Glass, carvings, rails and architectural fittings",
+      "status": "generated-pending-source-and-user-review",
+      "file": "surface-variation-kits/INT-TRIM-VAR-001/INT-TRIM-VAR-001.png",
+      "sha256": "3f0aa5ec1a6df3e723930f3e6d9b5369c92e9a448785517a930ccd517298420f",
+      "generation_attempts_in_this_pass": 1,
+      "location_ids": [],
+      "component_count": 16,
+      "review_notes": "Four requested room variants derived from existing lotus/star/rose palette. These are coordinated proposals, not proof that all four variants appear literally in the source bay. Split collar halves belong to one assembly ID; actual collar radius and motif end phase need normalization."
+    },
+    {
+      "sheet_id": "PAL-STAIR-VAR-001",
+      "title": "Ballroom, throne, library and conservatory stair sections",
+      "owner": "palace",
+      "family": "Stairs, fountains, terraces and courtyards",
+      "status": "generated-pending-source-and-user-review",
+      "file": "surface-variation-kits/PAL-STAIR-VAR-001/PAL-STAIR-VAR-001.png",
+      "sha256": "9c76b0dcd2bf991635f5542fa62de5eb31451ad98bd61f265b5b169c253a4f85",
+      "generation_attempts_in_this_pass": 2,
+      "location_ids": [],
+      "retry_reasons": [
+        "Complete the clipped library helical support as a finite module; keep all other stair types"
+      ],
+      "component_count": 4,
+      "review_notes": "Clipped central helical support corrected to a complete finite section. Quarter-turn helical radius/rise, upper exit and straight-flight endpoints remain model-fit tasks; source illustration is not a measured stair schedule."
+    },
+    {
+      "sheet_id": "GDN-PAVING-VAR-001",
+      "title": "Rose Court and Moon Courtyard paving/edge kits",
+      "owner": "terrain-water-and-planting",
+      "family": "Palace grounds and rose gardens",
+      "status": "generated-pending-source-and-user-review",
+      "file": "surface-variation-kits/GDN-PAVING-VAR-001/GDN-PAVING-VAR-001.png",
+      "sha256": "3a94a0b6903f3f3231679e16da18eebe98a0ecae1460ce1f1c29f8407dfe9a48",
+      "generation_attempts_in_this_pass": 1,
+      "location_ids": [],
+      "component_count": 16,
+      "review_notes": "Rose Court formal paving and Moon Courtyard natural path stones stay distinct. A04 is illustrated as raised edge/coping rather than a certified flush inlay; use as a bed-edge corner or flatten/reconstruct for a floor application. A05 corner turn is a proposed treatment; plan geometry needs review. Floor flowers/leaf motifs must remain flush when used in walkable paving; source-like shaded relief does not certify height."
+    },
+    {
+      "sheet_id": "WLD-PARAPET-JOINS-001",
+      "title": "Four parapet families and missing transition pieces",
+      "owner": "shared-outdoor-props-and-bridge",
+      "family": "Garden and path furniture",
+      "status": "generated-pending-source-and-user-review",
+      "file": "surface-variation-kits/WLD-PARAPET-JOINS-001/WLD-PARAPET-JOINS-001.png",
+      "sha256": "7418d70720a28d48449bf464df6bf4d8e5df55458a4a25b28a684459a9b1eb51",
+      "generation_attempts_in_this_pass": 1,
+      "location_ids": [],
+      "component_count": 16,
+      "review_notes": "Existing six source masters are reused; new drawings add inward/concave/end/slope variants. A02/A06/A10/A14 appear outward-facing in the oblique view; actual inner/outer corner handedness must be resolved from plan before modeling. Curvature sign/void backing also require geometry review."
+    },
+    {
+      "sheet_id": "PAL-CONSERV-SURF-001",
+      "title": "Conservatory exterior paving, pool-edge and low foot-rail kit",
+      "owner": "palace",
+      "family": "Stairs, fountains, terraces and courtyards",
+      "status": "generated-pending-source-and-user-review",
+      "file": "surface-variation-kits/PAL-CONSERV-SURF-001/PAL-CONSERV-SURF-001.png",
+      "sha256": "69f5a93493bc8bfe85a4080e11670d8bccb75f8e74915b37f5cad907f2e3fc61",
+      "generation_attempts_in_this_pass": 2,
+      "alias_ids": [
+        "B25-EXTERIOR-SURFACE-001"
+      ],
+      "retry_reasons": [
+        "Return to original palace scope, fix provisional map label, match original low footrail lattice, and remove cropped column fragments"
+      ],
+      "component_count": 16,
+      "review_notes": "Returned to original palace scope. Provisional B25 label preserved as an alias, not a new map building. Low foot-screen changed to source linked diamond/oval/star pattern, distinct from tall water-edge panels. Cropped column fragments removed. Actual foot-screen height, annular inlay radii and water outlet geometry remain proposed."
+    },
+    {
+      "sheet_id": "WLD-PARAPET-NEW-001",
+      "title": "Four new coordinated princess parapet styles",
+      "owner": "shared-outdoor-props-and-bridge",
+      "family": "Garden and path furniture",
+      "status": "generated-pending-source-and-user-review",
+      "file": "surface-variation-kits/WLD-PARAPET-NEW-001/WLD-PARAPET-NEW-001.png",
+      "sha256": "8f168373cbb9fdb32405ef20b1a09bd9bc618cb9a122be20b0fba5ba1406f0b5",
+      "generation_attempts_in_this_pass": 1,
+      "component_count": 16,
+      "review_notes": "Explicit new style options: Petal Lace, Crescent Veil, Cherry Ribbon, Garden Petal. Not substitutions for original front architecture. Stepped connector drawings depict sloped/curved transitions; exact steps/landing heights must be designed for the chosen location. Low solid Garden Petal is a bed edge rather than a full terrace guard."
     }
   ],
   "production_pass": "palace-coverage-missing-only",
@@ -1196,7 +1283,7 @@
     "side_rear_schedule": "palace-side-rear/schedule.json",
     "complete_roof_plan": "palace-roof-plan/schedule.json"
   },
-  "production_pass_status": "All supplied screenshot families covered by12 new draft sheets:32 structural sections and64 detail fittings; shared details reused. Reference review pending, no meshes.",
+  "production_pass_status": "Original palace surface pass:7 active sheets,100 component targets; map studies parked, four existing wishing designs newly indexed.20-category future needs checklist; no models/verified seams.",
   "structural_sheet_rule": "Display source-fitted assemblies with existing canonical decor so identity and proportions can be checked. Bare host views are internal construction proposals, not replacements for the original decorated wing references.",
   "generation_paused": true,
   "pause_reason": "Requested roof/stair proposal finished. Painted attempt rejected; coordinate diagram covers33 placements and11 stair links. Source-depth registration remains a layout task.",
@@ -1262,6 +1349,65 @@
       "revision": "R03",
       "source_review": "palace-roof-plan/GARDEN-SOURCE-REVIEW.md",
       "review_notes": "Owner redirected work to modular components after reporting inaccurate wing/corner outline. Whole-palace reconstruction is paused."
+    },
+    {
+      "sheet_id": "B06-SURFACE-001",
+      "title": "Misty Pagoda timber and jade surface kit",
+      "owner": "other-map-buildings",
+      "family": "B06",
+      "status": "parked-outside-owner-current-palace-scope",
+      "file": "surface-variation-kits/B06-SURFACE-001/B06-SURFACE-001.png",
+      "sha256": "e834c764393b7f3c894a7a05f5cb403df385f2b0edf5a9d0ba52f3536cbb1c88",
+      "generation_attempts_in_this_pass": 1,
+      "location_ids": [
+        "B06"
+      ],
+      "retirement_reason": "Owner pointed out that this pass moved to a different build; keep palace/conservatory detail work only."
+    },
+    {
+      "sheet_id": "B08-SURFACE-001",
+      "title": "Colosseum star-marble and curved detail kit",
+      "owner": "other-map-buildings",
+      "family": "B08",
+      "status": "parked-outside-owner-current-palace-scope",
+      "file": "",
+      "sha256": "",
+      "generation_attempts_in_this_pass": 0,
+      "location_ids": [
+        "B08"
+      ],
+      "retirement_reason": "Owner pointed out that this pass moved to a different build; keep palace/conservatory detail work only.",
+      "cancelled_pre_call_attempt_reservation": 1,
+      "image_generation_calls_completed": 0
+    },
+    {
+      "sheet_id": "B12-SURFACE-001",
+      "title": "Storybook cottage timber and patterned finish kit",
+      "owner": "other-map-buildings",
+      "family": "B12",
+      "status": "parked-outside-owner-current-palace-scope",
+      "file": "",
+      "sha256": "",
+      "generation_attempts_in_this_pass": 0,
+      "location_ids": [
+        "B12"
+      ],
+      "retirement_reason": "Owner pointed out that this pass moved to a different build; keep palace/conservatory detail work only."
+    },
+    {
+      "sheet_id": "PAL-FRONT-001",
+      "owner": "palace",
+      "family": "Layout and envelope",
+      "title": "Continuous five-arch frontage and attached wings",
+      "status": "unselected-unapproved-whole-front-study",
+      "file": "palace-front-correction/PAL-FRONT-001.png",
+      "sha256": "bb4073eafc36d143ef544fd6f9de811561fe112c9a133065cc7f660fc9082da0",
+      "generation_attempts_in_this_pass": 2,
+      "retry_reasons": [
+        "Whole-front leaders miss arch centres and redrawn tower proportions drift; replace multi-view redraw with minimal annotation edit of original source."
+      ],
+      "review_notes": "Minimal source-based labeling edit retains the connected five-bay wall and major lateral tower groups; leaders now identify the large arches. Caption layout affects displayed vertical extent; GEN-37 remains the exact source and height/placement master, not this generated edit.",
+      "retirement_reason": "Replace unapproved complete-layout allowance with owner-requested original-palace conservatory component reference; original GEN-37 stays authoritative."
     }
   ],
   "allocation_changes": [
@@ -1272,8 +1418,10 @@
     }
   ],
   "component_workflow": "Modular walls first; later stairs, wards/wings, towers and fountain components. Exhaustive palace section inventory later.",
-  "generation_resume_reason": "Owner requests the same section/decor treatment for all remaining supplied screenshot families, reviewed and generated sequentially with one local reference per call.",
+  "generation_resume_reason": "Owner explicitly requests different tilings/decor/cornices/pillars/stairs/parapets, one reference per generated pack.",
   "allocation_notes": [
-    "Latest owner crops add royal needle with attached turrets and slim star-glass onion gallery; move one unspent interior allowance to tower bodies, keeping palace cap65/world165/total230. Shared existing detail packs cover both; no extra decor sheets."
+    "Latest owner crops add royal needle with attached turrets and slim star-glass onion gallery; move one unspent interior allowance to tower bodies, keeping palace cap65/world165/total230. Shared existing detail packs cover both; no extra decor sheets.",
+    "Owner requests location-specific surface/pillar/stair/parapet variety. Transfer one unspent whole-layout allowance to interior repeat components, keeping65 palace and230 total. Eight packed sheets; original masters reused.",
+    "Scope correction: park three map-building surface packs, preserve their files/prompts; conservatory pack owns palace slot and keeps provisional B25 alias. Retire unapproved PAL-FRONT-001 layout selection, retaining its archive, to keep65 palace. No original palace architecture changed."
   ]
 }

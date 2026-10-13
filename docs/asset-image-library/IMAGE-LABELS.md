@@ -777,3 +777,37 @@ R03 uses plain tower circles and source-reviewed garden symbols. See [garden pla
 | SRC-PAL-TOWER-007-S04 | [Narrow onion crown and spindle — original visible section guide](remaining-palace-kits/slim-onion/source-sections/PAL-TOWER-007-S04.png) |
 | PAL-TOWER-007 | [Slim star-glass onion gallery tower — four joinable sections](remaining-palace-kits/slim-onion/PAL-TOWER-007.png) |
 | DRAFT-PAL-TOWER-007-R01 | [PAL-TOWER-007 — superseded study](remaining-palace-kits/slim-onion/rejected-drafts/PAL-TOWER-007-R01.png) |
+
+## Surface variants and direct source audit
+
+| ID | Name/reference |
+| --- | --- |
+| SRC-SURF-UPPER-STAR-RAIL | [upper-star-rail](surface-variation-kits/source-panels/upper-star-rail.png) |
+| SRC-SURF-LOWER-FLOWER-WHEEL-RAIL | [lower-flower-wheel-rail](surface-variation-kits/source-panels/lower-flower-wheel-rail.png) |
+| SRC-SURF-VASE-AND-ARCADE-RAIL | [vase-and-arcade-rail](surface-variation-kits/source-panels/vase-and-arcade-rail.png) |
+| SRC-SURF-COMPACT-GALLERY-RAIL | [compact-gallery-rail](surface-variation-kits/source-panels/compact-gallery-rail.png) |
+| SRC-SURF-RISING-STAIR-RAIL | [rising-stair-rail](surface-variation-kits/source-panels/rising-stair-rail.png) |
+| SRC-SURF-CORNER-CURVED-RAIL | [corner-curved-rail](surface-variation-kits/source-panels/corner-curved-rail.png) |
+| SRC-SURF-B06-MISTY-PAGODA | [B06-misty-pagoda](surface-variation-kits/source-panels/B06-misty-pagoda.png) |
+| SRC-SURF-B08-COLOSSEUM | [B08-colosseum](surface-variation-kits/source-panels/B08-colosseum.png) |
+| SRC-SURF-B12-STORYBOOK-COTTAGE | [B12-storybook-cottage](surface-variation-kits/source-panels/B12-storybook-cottage.png) |
+| SRC-SURF-CONSERVATORY-FOOTRAIL | [Conservatory original outside footrail and paving edge](surface-variation-kits/source-panels/conservatory-outside-footrail.png) |
+| SRC-WISH-GEN-28-A01 | [Lotus sky-boat — existing original panel](surface-variation-kits/wishing-source-audit/GEN-28-A01.png) |
+| SRC-WISH-GEN-28-A05 | [Boat landing platform — existing original panel](surface-variation-kits/wishing-source-audit/GEN-28-A05.png) |
+| SRC-WISH-GEN-28-A02 | [Wishing portal ring — existing original panel](surface-variation-kits/wishing-source-audit/GEN-28-A02.png) |
+| SRC-WISH-GEN-28-A06 | [Wish lantern — existing original panel](surface-variation-kits/wishing-source-audit/GEN-28-A06.png) |
+| SRC-WISH-GEN-28-A03 | [Floating lotus candle — existing original panel](surface-variation-kits/wishing-source-audit/GEN-28-A03.png) |
+| SRC-WISH-GEN-28-A07 | [Star runestone — existing original panel](surface-variation-kits/wishing-source-audit/GEN-28-A07.png) |
+| SRC-WISH-GEN-28-A04 | [Celestial armillary — existing original panel](surface-variation-kits/wishing-source-audit/GEN-28-A04.png) |
+| SRC-WISH-GEN-28-A08 | [Wayfinding kiosk — existing original panel](surface-variation-kits/wishing-source-audit/GEN-28-A08.png) |
+| INT-FLOOR-REPEAT-001 | [Great hall, ballroom, gallery and suite floor repeat kits](surface-variation-kits/INT-FLOOR-REPEAT-001/INT-FLOOR-REPEAT-001.png) |
+| DRAFT-SURF-INT-FLOOR-REPEAT-001-R01 | [INT-FLOOR-REPEAT-001 — superseded draft](surface-variation-kits/INT-FLOOR-REPEAT-001/rejected-drafts/INT-FLOOR-REPEAT-001-R01.png) |
+| INT-TRIM-VAR-001 | [Four interior wall, cornice and pillar treatment families](surface-variation-kits/INT-TRIM-VAR-001/INT-TRIM-VAR-001.png) |
+| PAL-STAIR-VAR-001 | [Ballroom, throne, library and conservatory stair sections](surface-variation-kits/PAL-STAIR-VAR-001/PAL-STAIR-VAR-001.png) |
+| DRAFT-SURF-PAL-STAIR-VAR-001-R01 | [PAL-STAIR-VAR-001 — superseded draft](surface-variation-kits/PAL-STAIR-VAR-001/rejected-drafts/PAL-STAIR-VAR-001-R01.png) |
+| GDN-PAVING-VAR-001 | [Rose Court and Moon Courtyard paving/edge kits](surface-variation-kits/GDN-PAVING-VAR-001/GDN-PAVING-VAR-001.png) |
+| WLD-PARAPET-JOINS-001 | [Four parapet families and missing transition pieces](surface-variation-kits/WLD-PARAPET-JOINS-001/WLD-PARAPET-JOINS-001.png) |
+| PAL-CONSERV-SURF-001 | [Conservatory exterior paving, pool-edge and low foot-rail kit](surface-variation-kits/PAL-CONSERV-SURF-001/PAL-CONSERV-SURF-001.png) |
+| DRAFT-SURF-B25-EXTERIOR-SURFACE-001-R01 | [B25-EXTERIOR-SURFACE-001 — superseded draft](surface-variation-kits/PAL-CONSERV-SURF-001/rejected-drafts/B25-EXTERIOR-SURFACE-001-R01.png) |
+| WLD-PARAPET-NEW-001 | [Four new coordinated princess parapet styles](surface-variation-kits/WLD-PARAPET-NEW-001/WLD-PARAPET-NEW-001.png) |
+| PARKED-B06-SURFACE-001 | [Misty Pagoda timber and jade surface kit — parked outside palace scope](surface-variation-kits/parked-map-studies/B06-SURFACE-001/B06-SURFACE-001.png) |

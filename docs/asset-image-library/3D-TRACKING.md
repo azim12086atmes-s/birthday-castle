@@ -54,3 +54,7 @@ Use PAL-TOWER-001 for four structural sections and PAL-TOWER-001-DECOR for16 det
 ## Remaining screenshot inputs
 
 [96 source-linked targets](remaining-palace-kits/components.csv) comprise32 structural sections and64 fitting parts on12 sheets. Shared lantern/star/crown/planting references count once. Model filename uses the printed part ID. All targets remain unregistered and pending reference review. Family schedules describe proposed joins, inferred back faces and remaining shape issues. No generated model is implied by a sheet.
+
+## Palace surface and parapet variants
+
+100 new pending-reference targets are listed in surface-variation-kits/components.csv. Exact proposed repeat profiles, role/dimensions and corner/curve constraints are in family schedules; no UV or physical model fit is certified. PAL-CONSERV-SURF-001 supersedes provisional B25 printed labels; model-id-aliases.json maps old IDs. Map study is parked outside current scope. GEN-28-A05…A08 index existing landing platform, wish lantern, runestone and kiosk artwork; no new wishing design or model was generated.
