@@ -1,0 +1,13 @@
+{
+  "sheets": 4,
+  "assemblies": 12,
+  "distinct_archive_images": 606,
+  "asset_targets": 152,
+  "source_input_count_per_call": 1,
+  "layer_2_attempts": 2,
+  "original_archive_image_hashes_verified": true,
+  "selected_and_reserved_caps_pass": true,
+  "model_status": "No meshes generated",
+  "visual_status": "Reference studies pending; geometry registration and source parity unverified",
+  "note": "Source JPEGs are analysis previews, rejected attempt is archived; neither adds selected design slots."
+}

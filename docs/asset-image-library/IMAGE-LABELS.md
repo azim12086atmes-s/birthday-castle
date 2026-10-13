@@ -664,3 +664,17 @@ Stable IDs refer to exact saved images. Pack pieces are numbered within each lab
 | DRAFT-PAL-WING-001-R01 | [Rejected bare wing hosts](images/palace-structure-drafts/DRAFT-PAL-WING-001-R01.png) | rejected-by-user; wrong wing structure |
 | DRAFT-PAL-WING-001-R02 | [Rejected decorated wing redraw](images/palace-structure-drafts/DRAFT-PAL-WING-001-R02.png) | rejected-by-user; changed massing and tower attachments |
 | DRAFT-PAL-BASE-001-R01 | [Unapproved base and gate host proposal](images/palace-structure-drafts/DRAFT-PAL-BASE-001-R01.png) | paused-proposal; source correspondence not established |
+
+
+
+
+<!-- layer-register -->
+## Layer sheets
+
+Pending-review reconstructions. Source GEN-37 controls the front; new rear geometry is proposed.
+
+- [PAL-LAYER-01: Lower base and first terrace](palace-layer-sheets/PAL-LAYER-01.png) — PAL-LAYER-01-W, PAL-LAYER-01-C, PAL-LAYER-01-E
+- [PAL-LAYER-02: Gate wall and four great-window ranges](palace-layer-sheets/PAL-LAYER-02.png) — PAL-LAYER-02-W, PAL-LAYER-02-C, PAL-LAYER-02-E
+- [PAL-LAYER-03: Intermediate garden wards and stepped returns](palace-layer-sheets/PAL-LAYER-03.png) — PAL-LAYER-03-W, PAL-LAYER-03-C, PAL-LAYER-03-E
+- [PAL-LAYER-04: Upper inner wards and original tower-group seats](palace-layer-sheets/PAL-LAYER-04.png) — PAL-LAYER-04-W, PAL-LAYER-04-C, PAL-LAYER-04-E
+<!-- /layer-register -->

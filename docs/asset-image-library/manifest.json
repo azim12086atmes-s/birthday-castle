@@ -1,25 +1,26 @@
 {
   "date": "2026-10-13",
-  "distinct_image_count": 597,
-  "source_file_count": 854,
-  "total_bytes": 534192557,
+  "distinct_image_count": 606,
+  "source_file_count": 863,
+  "total_bytes": 552115559,
   "categories": {
     "additional-generated-studies": 33,
     "component-development-studies": 3,
     "illustrated-boards": 45,
     "interior-components": 3,
+    "missing-component-packs": 1,
     "modular-component-packs": 2,
-    "previews-and-reference-copies": 233,
+    "original-bridge-source-crops": 10,
+    "original-column-source-crops": 7,
+    "original-palace-source-regions": 4,
+    "palace-layer-reference-sheets": 4,
+    "palace-structural-studies": 1,
+    "palace-structure-drafts": 4,
+    "previews-and-reference-copies": 237,
     "reference-crops-and-studies": 73,
     "renders-and-screenshots": 48,
-    "vector-drawings": 130,
     "superseded-pack-revisions": 1,
-    "original-bridge-source-crops": 10,
-    "missing-component-packs": 1,
-    "original-column-source-crops": 7,
-    "palace-structural-studies": 1,
-    "original-palace-source-regions": 4,
-    "palace-structure-drafts": 3
+    "vector-drawings": 130
   },
   "active_palace_authority": "GEN-37 original front elevation; GEN-03 and GEN-16 supporting views",
   "notes": [
@@ -11706,6 +11707,192 @@
       "label": "SRC-PAL-EAST-COMPLETE \u2014 Eastern source assembly with its actual spires and nested wards",
       "reference_role": "complete-original-front-region",
       "design_status": "source-front-context; not-isolated-mesh-proof",
+      "related_image_ids": [
+        "GEN-37"
+      ]
+    },
+    {
+      "id": "PAL-LAYER-01",
+      "title": "Lower base and first terrace",
+      "category": "palace-layer-reference-sheets",
+      "file": "palace-layer-sheets/PAL-LAYER-01.png",
+      "sha256": "a9a8e124013060e5d116db202bd0df38083fc0c0df4fd489d4911671237d0514",
+      "bytes": 3411115,
+      "source_aliases": [
+        "/workspace/generated_images/exec-46ccd42b-8217-40eb-a6be-da06cc61ae4a.png"
+      ],
+      "alias_ids": [],
+      "component_ids": [
+        "PAL-LAYER-01-W",
+        "PAL-LAYER-01-C",
+        "PAL-LAYER-01-E"
+      ],
+      "label": "PAL-LAYER-01 \u2014 Lower base and first terrace",
+      "reference_role": "source-linked-layer-reconstruction-study",
+      "design_status": "pending-review; rear depth proposed; view registration unresolved",
+      "review_status": "pending-user-review",
+      "related_image_ids": [
+        "GEN-37"
+      ]
+    },
+    {
+      "id": "PAL-LAYER-02",
+      "title": "Gate wall and four great-window ranges",
+      "category": "palace-layer-reference-sheets",
+      "file": "palace-layer-sheets/PAL-LAYER-02.png",
+      "sha256": "7d22d7208c5b7a08f9f06346081b7dffba28dc149daec42fc8988a21a5aa5e61",
+      "bytes": 3732592,
+      "source_aliases": [
+        "/workspace/generated_images/exec-f935606c-cea2-4b55-a630-35da3938c101.png"
+      ],
+      "alias_ids": [],
+      "component_ids": [
+        "PAL-LAYER-02-W",
+        "PAL-LAYER-02-C",
+        "PAL-LAYER-02-E"
+      ],
+      "label": "PAL-LAYER-02 \u2014 Gate wall and four great-window ranges",
+      "reference_role": "source-linked-layer-reconstruction-study",
+      "design_status": "pending-review; rear depth proposed; view registration unresolved",
+      "review_status": "pending-user-review",
+      "related_image_ids": [
+        "GEN-37"
+      ]
+    },
+    {
+      "id": "PAL-LAYER-03",
+      "title": "Intermediate garden wards and stepped returns",
+      "category": "palace-layer-reference-sheets",
+      "file": "palace-layer-sheets/PAL-LAYER-03.png",
+      "sha256": "75d95c1290aefa68f69d7c1dad8bdfddbd817bf3be792793320ccf5d9ffe48a8",
+      "bytes": 3587851,
+      "source_aliases": [
+        "/workspace/generated_images/exec-a179cbdc-47e4-42cb-a4fb-3248fe74940b.png"
+      ],
+      "alias_ids": [],
+      "component_ids": [
+        "PAL-LAYER-03-W",
+        "PAL-LAYER-03-C",
+        "PAL-LAYER-03-E"
+      ],
+      "label": "PAL-LAYER-03 \u2014 Intermediate garden wards and stepped returns",
+      "reference_role": "source-linked-layer-reconstruction-study",
+      "design_status": "pending-review; rear depth proposed; view registration unresolved",
+      "review_status": "pending-user-review",
+      "related_image_ids": [
+        "GEN-37"
+      ]
+    },
+    {
+      "id": "PAL-LAYER-04",
+      "title": "Upper inner wards and original tower-group seats",
+      "category": "palace-layer-reference-sheets",
+      "file": "palace-layer-sheets/PAL-LAYER-04.png",
+      "sha256": "458893ff63c9fdc686b759ff739272bf3a28298f98be54a4d64867ff1f5930aa",
+      "bytes": 3201421,
+      "source_aliases": [
+        "/workspace/generated_images/exec-f2b9a3d2-aafa-426f-8cbb-df42369f6aa1.png"
+      ],
+      "alias_ids": [],
+      "component_ids": [
+        "PAL-LAYER-04-W",
+        "PAL-LAYER-04-C",
+        "PAL-LAYER-04-E"
+      ],
+      "label": "PAL-LAYER-04 \u2014 Upper inner wards and original tower-group seats",
+      "reference_role": "source-linked-layer-reconstruction-study",
+      "design_status": "pending-review; rear depth proposed; view registration unresolved",
+      "review_status": "pending-user-review",
+      "related_image_ids": [
+        "GEN-37"
+      ]
+    },
+    {
+      "id": "DRAFT-PAL-LAYER-02-R01",
+      "title": "Gate-wall attempt with added domed towers",
+      "category": "palace-structure-drafts",
+      "file": "palace-layer-sheets/rejected-drafts/PAL-LAYER-02-R01.png",
+      "sha256": "450125715f179defd7474a183d10c4264a45494f4287f1a49ad178cf98f16d19",
+      "bytes": 3374045,
+      "source_aliases": [],
+      "alias_ids": [],
+      "component_ids": [],
+      "label": "DRAFT-PAL-LAYER-02-R01 \u2014 Gate-wall attempt with added domed towers",
+      "reference_role": "rejected-draft",
+      "design_status": "rejected-on-source-comparison",
+      "review_status": "rejected-on-source-comparison",
+      "related_image_ids": [
+        "GEN-37"
+      ]
+    },
+    {
+      "id": "SRC-LAYER-FULL",
+      "title": "Small complete original front reference",
+      "category": "previews-and-reference-copies",
+      "file": "palace-layer-sheets/source-reference/GEN-37-reference.jpg",
+      "sha256": "4a004b944211b264c7499e6906460341037b631c34c2a9120923a71246318e30",
+      "bytes": 262289,
+      "source_aliases": [],
+      "alias_ids": [],
+      "component_ids": [],
+      "label": "SRC-LAYER-FULL \u2014 Small complete original front reference",
+      "reference_role": "analysis-reference",
+      "design_status": "direct-source-preview",
+      "review_status": "direct-source-preview",
+      "related_image_ids": [
+        "GEN-37"
+      ]
+    },
+    {
+      "id": "SRC-LAYER-GATE",
+      "title": "Original gate-wall crop",
+      "category": "previews-and-reference-copies",
+      "file": "palace-layer-sheets/source-reference/gate-wall-source.jpg",
+      "sha256": "d915cccef938bdf45e11465bfe283425c2dc75838e8c8ed05f16ecd1412f2da1",
+      "bytes": 116388,
+      "source_aliases": [],
+      "alias_ids": [],
+      "component_ids": [],
+      "label": "SRC-LAYER-GATE \u2014 Original gate-wall crop",
+      "reference_role": "analysis-reference",
+      "design_status": "direct-source-preview",
+      "review_status": "direct-source-preview",
+      "related_image_ids": [
+        "GEN-37"
+      ]
+    },
+    {
+      "id": "SRC-LAYER-MID",
+      "title": "Original intermediate ward crop",
+      "category": "previews-and-reference-copies",
+      "file": "palace-layer-sheets/source-reference/intermediate-wards-source.jpg",
+      "sha256": "ea625505aacf9cc5105b7c38013abb427c3939c7df9b10f37e23a81af9e743d5",
+      "bytes": 122090,
+      "source_aliases": [],
+      "alias_ids": [],
+      "component_ids": [],
+      "label": "SRC-LAYER-MID \u2014 Original intermediate ward crop",
+      "reference_role": "analysis-reference",
+      "design_status": "direct-source-preview",
+      "review_status": "direct-source-preview",
+      "related_image_ids": [
+        "GEN-37"
+      ]
+    },
+    {
+      "id": "SRC-LAYER-UPPER",
+      "title": "Original upper tower group crop",
+      "category": "previews-and-reference-copies",
+      "file": "palace-layer-sheets/source-reference/upper-tower-seats-source.jpg",
+      "sha256": "3d4898f61af2070620fce2c0a1a5725b71d51a96c8e70256533fc07e46956047",
+      "bytes": 115211,
+      "source_aliases": [],
+      "alias_ids": [],
+      "component_ids": [],
+      "label": "SRC-LAYER-UPPER \u2014 Original upper tower group crop",
+      "reference_role": "analysis-reference",
+      "design_status": "direct-source-preview",
+      "review_status": "direct-source-preview",
       "related_image_ids": [
         "GEN-37"
       ]

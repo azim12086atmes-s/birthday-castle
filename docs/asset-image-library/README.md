@@ -1,6 +1,6 @@
 # Birthday Castle image archive
 
-This archive contains **597 distinct image files** (509.4 MiB), including the 45 original illustrated boards, later generated concepts, vector drawings, crops, previews and build renders.
+This archive contains **606 distinct image files** (509.4 MiB), including the 45 original illustrated boards, later generated concepts, vector drawings, crops, previews and build renders.
 
 The active palace reference is **GEN-37**, with GEN-03 and GEN-16 as supporting views. Additional studies are retained for review; preservation does not mean approval. The corrected INT-C01 floor uses rose and ivory marble.
 
@@ -17,9 +17,10 @@ Use [the illustrated boards](images/illustrated-boards) to browse the original a
 | [original-bridge-source-crops](bridge-source-panels/INDEX.md) | 10 |
 | [original-column-source-crops](column-source-panels/INDEX.md) | 7 |
 | [original-palace-source-regions](original-palace-structure/INDEX.md) | 4 |
+| [palace-layer-reference-sheets](palace-layer-sheets/README.md) | 4 |
 | [palace-structural-studies](images/palace-structural-studies) | 1 |
-| [palace-structure-drafts](images/palace-structure-drafts) | 3 |
-| [previews-and-reference-copies](images/previews-and-reference-copies) | 233 |
+| [palace-structure-drafts](images/palace-structure-drafts) | 4 |
+| [previews-and-reference-copies](images/previews-and-reference-copies) | 237 |
 | [reference-crops-and-studies](images/reference-crops-and-studies) | 73 |
 | [renders-and-screenshots](images/renders-and-screenshots) | 48 |
 | [superseded-pack-revisions](images/superseded-pack-revisions) | 1 |
@@ -103,3 +104,7 @@ A03 in PACK-BRG-001 revision 2 is **Stepped lotus capital**, matching the suppli
 ## Original palace fidelity correction
 
 The two wing redraws are rejected; they changed the structure even when the materials/decor looked related. Use [the exact original palace regions](original-palace-structure/INDEX.md) and [the single-panel viewer](original-palace-structure/index.html) instead. [Production caps and work plan](PRODUCTION-PLAN.md) reserve 65 sheets for palace/interiors and 165 for the rest of the world; the nine proposed palace slots remain a work queue, not completed or approved references. Further structural generation is paused for source correspondence.
+
+## Layer-by-layer palace references
+
+The current requested pass is [four source-linked layer sheets](palace-layer-sheets/README.md), each with three assemblies and a proposed backward extension. The original front remains the authority; unseen rear depth is proposed. Generated sheets require visual review before modelling.

@@ -30,7 +30,7 @@ def main():
         slots.append({'sheet_id':a.id,'owner':a.owner,'family':a.family,'title':a.title,'status':'reserved-for-verified-gap','file':'','sha256':'','generation_attempts_in_this_pass':0})
     elif a.action=='attempt':
         if not slot:raise SystemExit('Reserve the slot first')
-        if d.get('generation_paused'):
+        if d.get('generation_paused') and a.id not in d.get('generation_resume_allowlist', []):
             raise SystemExit('Generation paused for source correspondence; record the resolved structural trace before resuming')
         n=slot.get('generation_attempts_in_this_pass',0)
         if n>=2:raise SystemExit('Two attempts already recorded; review before further generation')

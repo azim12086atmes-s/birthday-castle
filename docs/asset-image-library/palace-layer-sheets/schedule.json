@@ -1,0 +1,403 @@
+{
+  "schema_version": 1,
+  "scope": "Four layer-specific reference sheets; asset references only",
+  "authority": "GEN-37",
+  "source_dimensions_px": [
+    1898,
+    829
+  ],
+  "uniform_scale": 2.75,
+  "rear_extension": {
+    "grid_m": 30,
+    "world_m": 82.5,
+    "status": "proposed under owner instruction to extend segments backward",
+    "rule": "One aligned rear strip per layer; do not accumulate three strips when neighboring parts join; front datums unchanged; tower locations locked; depth does not add height or front width"
+  },
+  "confirmed_front_distances_grid_m": {
+    "L1_front_to_gate": 150,
+    "stair_top_to_gate": 75,
+    "L2_to_L3": 60
+  },
+  "uncertainty": "An illustrated elevation does not determine hidden physical floors, tower centres in depth, room counts or back dimensions. Source region rectangles overlap. Assignments are construction proposals, not traced 3D geometry. Generated plans must be checked before modelling.",
+  "sheets": [
+    {
+      "sheet_id": "PAL-LAYER-01",
+      "title": "Lower base and first terrace",
+      "status": "generated-pending-review",
+      "source_image_id": "GEN-37",
+      "reference": "/workspace/shared/birthday-castle-layer-sheets/GEN-37-reference.jpg",
+      "prompt": "Create a highly detailed architectural SKETCH SHEET, landscape, on clean warm ivory paper, fine ink contour with rose/ivory watercolor materials and meticulous gold ornament. This is an extraction-and-extension study of the ORIGINAL PALACE shown in the one attached reference, not a new palace design. Three named structural assemblies on each sheet, with generous separation. Each assembly has a large clear front-three-quarter view, a smaller matching front elevation and a small true overhead footprint outline. All three views must depict the same object with identical bay counts, projections and attachments. A narrow top strip shows how these three parts join left-to-right in the original front, with upper/lower neighboring architecture only in faint gray context. Do not shrink the source's great windows into repetitive little doors. Preserve unequal west/east structure. Closed glazed wall apertures have actual recessed blue/lilac/pink glass and thick carved masonry; actual galleries are open. Carved spandrels, engaged lotus piers, gold leaf ribs, rose/starlight medallions, fine pierced parapets and veined pink and ivory stone must follow the reference. Canonical small fittings are installed for identity, not reinvented. Do not create a featureless box or a row of separated towers. Connected ranges have curved, chamfered and recessed fronts. All parts fully framed, even lighting. Print the title and the exact three component IDs and short names legibly beside parts. Label FRONT and REAR in each footprint. Mark new rear strip with restrained violet dashed line and 'PROPOSED REAR +30 GRID m'. Back extension goes only away from the locked front face, maintaining width and height, with continuous side return and roof. Rear strip is a proposed modelling allowance, not measured from illustration. It must not move the original gate, stair, cascade, front tower or window positions. Do not invent new crowns, bridges or ornament motifs. The sheet is a concept reference pending comparison, not an exact measured construction drawing. Detailed realistic palace architecture sketch, not icon art, not generic fantasy asset blocks.\nTITLE: PAL-LAYER-01 \u2014 Lower base and first terrace.\nFocus only on this level and the three requested source assemblies, not another complete castle.\nPAL-LAYER-01-W Western lower glazed arcade and rounded projecting terrace: Extract the lower left curved continuous wall below the great windows. Preserve the three-lancet glazed rhythms, thick lotus pilasters, inward/receding returns and the small forward star-panel tower socket. Keep the western terminal tower as gray context beyond the seam; do not replace this range by a freestanding open colonnade.\nPAL-LAYER-01-C Central paired dry stairs and wet cascade apron: Extract the original blue tiered central cascade, its central wet bed, original top landing, dry stair on EACH side, carved newels and lowest retaining cheeks. Both dry stairs and the central water cascade belong to this ONE connector assembly. Show the wet and dry routes distinctly; do not replace this by a single stair or circular fountain. Rear addition starts behind the landing, not in front of stairs.\nPAL-LAYER-01-E Eastern lower nested arcade and angled return: Extract the lower right curved wall and unequal nested returning fronts, lower garden terrace, short side stair and star-panel projection. Preserve different east/west rhythm; do not mirror the western part. Show seats for original terminal tower and the higher projecting belvedere in gray context.\nPrint a small note: SOURCE GEN-37 / REAR DEPTH PROPOSED / PENDING REVIEW. The confirmed vertical body band is 0\u201360 grid m; tower crowns and attached projections may cross bands. Do not label visible source image bands as measured level cuts.",
+      "bottom_grid_m": 0,
+      "roof_grid_m": 60,
+      "front_y_grid_m": -150,
+      "front_y_status": "confirmed",
+      "components": [
+        {
+          "asset_id": "PAL-LAYER-01-W",
+          "name": "Western lower glazed arcade and rounded projecting terrace",
+          "source_image_id": "GEN-37",
+          "source_bounds_px": [
+            0,
+            560,
+            620,
+            815
+          ],
+          "source_bounds_role": "overlapping visual region, not physical level mask",
+          "description": "Extract the lower left curved continuous wall below the great windows. Preserve the three-lancet glazed rhythms, thick lotus pilasters, inward/receding returns and the small forward star-panel tower socket. Keep the western terminal tower as gray context beyond the seam; do not replace this range by a freestanding open colonnade.",
+          "attachment_face": "base underside; rear/side seam as proposed",
+          "semantic_front": "original ceremonial front",
+          "rear_extension_grid_m": 30,
+          "rear_extension_world_m": 82.5,
+          "dimension_status": "front relationships observed; unseen depths proposed; snap fits unresolved"
+        },
+        {
+          "asset_id": "PAL-LAYER-01-C",
+          "name": "Central paired dry stairs and wet cascade apron",
+          "source_image_id": "GEN-37",
+          "source_bounds_px": [
+            540,
+            605,
+            1295,
+            815
+          ],
+          "source_bounds_role": "overlapping visual region, not physical level mask",
+          "description": "Extract the original blue tiered central cascade, its central wet bed, original top landing, dry stair on EACH side, carved newels and lowest retaining cheeks. Both dry stairs and the central water cascade belong to this ONE connector assembly. Show the wet and dry routes distinctly; do not replace this by a single stair or circular fountain. Rear addition starts behind the landing, not in front of stairs.",
+          "attachment_face": "base underside; rear/side seam as proposed",
+          "semantic_front": "original ceremonial front",
+          "rear_extension_grid_m": 30,
+          "rear_extension_world_m": 82.5,
+          "dimension_status": "front relationships observed; unseen depths proposed; snap fits unresolved"
+        },
+        {
+          "asset_id": "PAL-LAYER-01-E",
+          "name": "Eastern lower nested arcade and angled return",
+          "source_image_id": "GEN-37",
+          "source_bounds_px": [
+            1280,
+            555,
+            1898,
+            815
+          ],
+          "source_bounds_role": "overlapping visual region, not physical level mask",
+          "description": "Extract the lower right curved wall and unequal nested returning fronts, lower garden terrace, short side stair and star-panel projection. Preserve different east/west rhythm; do not mirror the western part. Show seats for original terminal tower and the higher projecting belvedere in gray context.",
+          "attachment_face": "base underside; rear/side seam as proposed",
+          "semantic_front": "original ceremonial front",
+          "rear_extension_grid_m": 30,
+          "rear_extension_world_m": 82.5,
+          "dimension_status": "front relationships observed; unseen depths proposed; snap fits unresolved"
+        }
+      ],
+      "reuse": [
+        "GEN-19",
+        "GEN-29",
+        "GEN-38",
+        "GEN-39",
+        "GEN-41",
+        "GEN-42",
+        "GEN-43",
+        "GEN-45"
+      ],
+      "review_status": "pending-user-review; not approved geometry",
+      "output_file": "palace-layer-sheets/PAL-LAYER-01.png",
+      "sha256": "a9a8e124013060e5d116db202bd0df38083fc0c0df4fd489d4911671237d0514",
+      "review_notes": "Paired dry stairs and central wet cascade present. Views labelled front retain perspective; inferred overhead boundaries and tower attachments require comparison. Context towers may overlap source layer assignments.",
+      "generator": "image_gen.imagegen",
+      "generated_source_file": "/workspace/generated_images/exec-46ccd42b-8217-40eb-a6be-da06cc61ae4a.png",
+      "reference_sha256": "4a004b944211b264c7499e6906460341037b631c34c2a9120923a71246318e30",
+      "reference_file": "palace-layer-sheets/source-reference/GEN-37-reference.jpg",
+      "reference_source_bounds_px": [
+        0,
+        0,
+        1898,
+        829
+      ]
+    },
+    {
+      "sheet_id": "PAL-LAYER-02",
+      "title": "Gate wall and four great-window ranges",
+      "status": "generated-pending-review",
+      "source_image_id": "GEN-37",
+      "reference": "/workspace/shared/birthday-castle-layer-sheets/gate-wall-source.jpg",
+      "prompt": "Make one very detailed fine-ink and watercolor architectural sketch sheet from this precise ORIGINAL FRONT CROP. Title PAL-LAYER-02 \u2014 Gate wall and four great windows. The crop is the authoritative view of this exact gate wall, not merely a style reference. Follow it faithfully. Top half: ONE big front elevation of the complete cropped wall, exactly TWO huge blue/pink/lilac pointed window bays to the left of ONE giant central gold glass gate and TWO huge pointed window bays to the right. Preserve the actual narrow shaft piers, gold floral tracery, gabled central rose-star medallion and source window envelope. The WEST GREAT WINDOW PAIR has small engaged pointed pier/pinnacle attachments, NOT large onion-domed corner towers. The large west pavilion and east domed belvedere belong beyond/behind this cropped wall, NOT new identical corner towers for each segment. Do not insert a freestanding domed tower at any join. Do not multiply the narrow pointed piers into tower masses. Subdivide the elevation only by two thin vertical dotted lines around the gate. Below it, print labels PAL-LAYER-02-W Western great-window pair, PAL-LAYER-02-C Ceremonial gate wall, PAL-LAYER-02-E Eastern great-window pair, with each label below its matching original section. Lower half: THREE corresponding isolated shallow overhead three-quarter studies, one per these exact sections. Wall fronts in the lower studies repeat exactly the top view and its bay count, thick rose and ivory marble walls, real recessed glazed apertures with matching source glass, intricately carved gold lotus pilasters and rose/star spandrels. Side returns extend backward modestly. At the rear only, show a light violet outline strip labeled PROPOSED REAR +30 GRID m. Keep front and width unchanged. Segment C has a rear-going roof hall behind the actual gate, while W and E have garden roofs with source railing and flowerbeds. Show existing central dry stairs and wet cascade only lightly below the original gate as context, do not redesign them. Plain warm ivory paper, sophisticated classical architectural sketch sheet, sharp fine detail, material swatches tiny at margin: rose marble, ivory marble, gold, indigo/lilac glass. Print SOURCE GEN-37 / REAR DEPTH PROPOSED / PENDING REVIEW. No decorative border towers, no copied symmetric end towers, no extra domes, no extra windows. Hidden rear geometry is a proposed study, not an exact source measurement.",
+      "bottom_grid_m": 60,
+      "roof_grid_m": 160,
+      "front_y_grid_m": 0,
+      "front_y_status": "confirmed",
+      "components": [
+        {
+          "asset_id": "PAL-LAYER-02-W",
+          "name": "Western paired great-window wing",
+          "source_image_id": "GEN-37",
+          "source_bounds_px": [
+            490,
+            440,
+            815,
+            685
+          ],
+          "source_bounds_role": "overlapping visual region, not physical level mask",
+          "description": "Exactly TWO immense pointed glazed outer bays west of the ceremonial gate, as in the image, with smaller engaged pier towers between and at their ends. One outer arch is one bay; do not put two large arches within each bay. Keep the stepped roof garden and the original broad onion pavilion behind in gray context; do not turn the pavilion into a small end dome.",
+          "attachment_face": "base underside; rear/side seam as proposed",
+          "semantic_front": "original ceremonial front",
+          "rear_extension_grid_m": 30,
+          "rear_extension_world_m": 82.5,
+          "dimension_status": "front relationships observed; unseen depths proposed; snap fits unresolved"
+        },
+        {
+          "asset_id": "PAL-LAYER-02-C",
+          "name": "Ceremonial gate and rose-gable wall",
+          "source_image_id": "GEN-37",
+          "source_bounds_px": [
+            818,
+            354,
+            1018,
+            680
+          ],
+          "source_bounds_role": "overlapping visual region, not physical level mask",
+          "description": "The SINGLE immense central pointed gate, gold tracery, blue/lilac/pink glass, large rose-star gable, unequal stepped shoulder attachments and original approach landing. Keep the source central axis and cascade/stairs below in gray context. Extend the hall backward behind the gate wall with a visible continuous roof, side glazing, and a back seam.",
+          "attachment_face": "base underside; rear/side seam as proposed",
+          "semantic_front": "original ceremonial front",
+          "rear_extension_grid_m": 30,
+          "rear_extension_world_m": 82.5,
+          "dimension_status": "front relationships observed; unseen depths proposed; snap fits unresolved"
+        },
+        {
+          "asset_id": "PAL-LAYER-02-E",
+          "name": "Eastern paired great-window wing",
+          "source_image_id": "GEN-37",
+          "source_bounds_px": [
+            1000,
+            440,
+            1390,
+            685
+          ],
+          "source_bounds_role": "overlapping visual region, not physical level mask",
+          "description": "Exactly TWO immense pointed outer glazed bays east of the gate, preserving unequal source width, the eastern domed belvedere attached near the outer range and roof garden return. Show only its attachment seat and faint source context, not a substitute tower placed at an arbitrary end. The four great windows across W and E must remain four.",
+          "attachment_face": "base underside; rear/side seam as proposed",
+          "semantic_front": "original ceremonial front",
+          "rear_extension_grid_m": 30,
+          "rear_extension_world_m": 82.5,
+          "dimension_status": "front relationships observed; unseen depths proposed; snap fits unresolved"
+        }
+      ],
+      "reuse": [
+        "GEN-19",
+        "GEN-29",
+        "GEN-38",
+        "GEN-39",
+        "GEN-41",
+        "GEN-42",
+        "GEN-43",
+        "GEN-45"
+      ],
+      "review_status": "pending-user-review; not approved geometry",
+      "output_file": "palace-layer-sheets/PAL-LAYER-02.png",
+      "previous_drafts": [
+        {
+          "file": "/workspace/generated_images/exec-9d1059e2-30a7-4244-8ec1-b0aa412df202.png",
+          "status": "rejected-on-assistant-comparison",
+          "reason": "Introduces extra domed corner towers and inconsistent tower counts between views, which are absent at the source great-window range.",
+          "archive_file": "palace-layer-sheets/rejected-drafts/PAL-LAYER-02-R01.png",
+          "sha256": "450125715f179defd7474a183d10c4264a45494f4287f1a49ad178cf98f16d19",
+          "prompt": "Create a highly detailed architectural SKETCH SHEET, landscape, on clean warm ivory paper, fine ink contour with rose/ivory watercolor materials and meticulous gold ornament. This is an extraction-and-extension study of the ORIGINAL PALACE shown in the one attached reference, not a new palace design. Three named structural assemblies on each sheet, with generous separation. Each assembly has a large clear front-three-quarter view, a smaller matching front elevation and a small true overhead footprint outline. All three views must depict the same object with identical bay counts, projections and attachments. A narrow top strip shows how these three parts join left-to-right in the original front, with upper/lower neighboring architecture only in faint gray context. Do not shrink the source's great windows into repetitive little doors. Preserve unequal west/east structure. Closed glazed wall apertures have actual recessed blue/lilac/pink glass and thick carved masonry; actual galleries are open. Carved spandrels, engaged lotus piers, gold leaf ribs, rose/starlight medallions, fine pierced parapets and veined pink and ivory stone must follow the reference. Canonical small fittings are installed for identity, not reinvented. Do not create a featureless box or a row of separated towers. Connected ranges have curved, chamfered and recessed fronts. All parts fully framed, even lighting. Print the title and the exact three component IDs and short names legibly beside parts. Label FRONT and REAR in each footprint. Mark new rear strip with restrained violet dashed line and 'PROPOSED REAR +30 GRID m'. Back extension goes only away from the locked front face, maintaining width and height, with continuous side return and roof. Rear strip is a proposed modelling allowance, not measured from illustration. It must not move the original gate, stair, cascade, front tower or window positions. Do not invent new crowns, bridges or ornament motifs. The sheet is a concept reference pending comparison, not an exact measured construction drawing. Detailed realistic palace architecture sketch, not icon art, not generic fantasy asset blocks.\nTITLE: PAL-LAYER-02 \u2014 Gate wall and four great-window ranges.\nFocus only on this level and the three requested source assemblies, not another complete castle.\nPAL-LAYER-02-W Western paired great-window wing: Exactly TWO immense pointed glazed outer bays west of the ceremonial gate, as in the image, with smaller engaged pier towers between and at their ends. One outer arch is one bay; do not put two large arches within each bay. Keep the stepped roof garden and the original broad onion pavilion behind in gray context; do not turn the pavilion into a small end dome.\nPAL-LAYER-02-C Ceremonial gate and rose-gable wall: The SINGLE immense central pointed gate, gold tracery, blue/lilac/pink glass, large rose-star gable, unequal stepped shoulder attachments and original approach landing. Keep the source central axis and cascade/stairs below in gray context. Extend the hall backward behind the gate wall with a visible continuous roof, side glazing, and a back seam.\nPAL-LAYER-02-E Eastern paired great-window wing: Exactly TWO immense pointed outer glazed bays east of the gate, preserving unequal source width, the eastern domed belvedere attached near the outer range and roof garden return. Show only its attachment seat and faint source context, not a substitute tower placed at an arbitrary end. The four great windows across W and E must remain four.\nPrint a small note: SOURCE GEN-37 / REAR DEPTH PROPOSED / PENDING REVIEW. The confirmed vertical body band is 60\u2013160 grid m; tower crowns and attached projections may cross bands. Do not label visible source image bands as measured level cuts.",
+          "reference_file": "palace-layer-sheets/source-reference/GEN-37-reference.jpg"
+        }
+      ],
+      "sha256": "7d22d7208c5b7a08f9f06346081b7dffba28dc149daec42fc8988a21a5aa5e61",
+      "review_notes": "Corrected extra domed end towers; top view retains four great windows and one gate. Tracery, small piers, roof hall and side returns are reconstructed; dimensions and agreement between views remain unverified.",
+      "generator": "image_gen.imagegen",
+      "generated_source_file": "/workspace/generated_images/exec-f935606c-cea2-4b55-a630-35da3938c101.png",
+      "reference_sha256": "d915cccef938bdf45e11465bfe283425c2dc75838e8c8ed05f16ecd1412f2da1",
+      "reference_file": "palace-layer-sheets/source-reference/gate-wall-source.jpg",
+      "reference_source_bounds_px": [
+        485,
+        375,
+        1425,
+        700
+      ]
+    },
+    {
+      "sheet_id": "PAL-LAYER-03",
+      "title": "Intermediate garden wards and stepped returns",
+      "status": "generated-pending-review",
+      "source_image_id": "GEN-37",
+      "reference": "/workspace/shared/birthday-castle-layer-sheets/intermediate-wards-source.jpg",
+      "prompt": "Create a highly detailed architectural SKETCH SHEET, landscape, on clean warm ivory paper, fine ink contour with rose/ivory watercolor materials and meticulous gold ornament. This is an extraction-and-extension study of the ORIGINAL PALACE shown in the one attached reference, not a new palace design. Three named structural assemblies on each sheet, with generous separation. Each assembly has a large clear front-three-quarter view, a smaller matching front elevation and a small true overhead footprint outline. All three views must depict the same object with identical bay counts, projections and attachments. A narrow top strip shows how these three parts join left-to-right in the original front, with upper/lower neighboring architecture only in faint gray context. Do not shrink the source's great windows into repetitive little doors. Preserve unequal west/east structure. Closed glazed wall apertures have actual recessed blue/lilac/pink glass and thick carved masonry; actual galleries are open. Carved spandrels, engaged lotus piers, gold leaf ribs, rose/starlight medallions, fine pierced parapets and veined pink and ivory stone must follow the reference. Canonical small fittings are installed for identity, not reinvented. Do not create a featureless box or a row of separated towers. Connected ranges have curved, chamfered and recessed fronts. All parts fully framed, even lighting. Print the title and the exact three component IDs and short names legibly beside parts. Label FRONT and REAR in each footprint. Mark new rear strip with restrained violet dashed line and 'PROPOSED REAR +30 GRID m'. Back extension goes only away from the locked front face, maintaining width and height, with continuous side return and roof. Rear strip is a proposed modelling allowance, not measured from illustration. It must not move the original gate, stair, cascade, front tower or window positions. Do not invent new crowns, bridges or ornament motifs. The sheet is a concept reference pending comparison, not an exact measured construction drawing. Detailed realistic palace architecture sketch, not icon art, not generic fantasy asset blocks.\nTITLE: PAL-LAYER-03 \u2014 Intermediate garden wards and stepped returns.\nFocus only on this level and the three requested source assemblies, not another complete castle.\nPAL-LAYER-03-W Western stepped garden ward: Extract the intermediate western wing behind the great-window roof, alternating small glazed chambers and genuine recessed loggia apertures, multiple unequal fronts, soft angled returns, rose beds and the broad western pavilion attachment. Keep its relative location rather than centering a new dome on the wing.\nPAL-LAYER-03-C Central recessed garden loggia ward: Extract the stepped smaller inner ward behind the gate gable, with short continuous arched gallery, tall narrow glazed chambers, tree/rose terrace strip and existing stair links. Preserve central tower pedestal seats in gray context. Show the exposed courtyard roof, small source-family fountain and connected circulation on the extension, without covering the gate silhouette.\nPAL-LAYER-03-E Eastern layered return and belvedere seat: Extract the eastern unequal nested garden ward, stepped small chambers, setbacks, curving terrace ends and attached east belvedere interface. Show the higher eastern spire cluster in gray context at its original source projection, not at the back edge of a newly invented huge footprint. No west/east mirroring.\nPrint a small note: SOURCE GEN-37 / REAR DEPTH PROPOSED / PENDING REVIEW. The confirmed vertical body band is 160\u2013230 grid m; tower crowns and attached projections may cross bands. Do not label visible source image bands as measured level cuts.\nIMPORTANT: The supplied crop is the ORIGINAL intermediate tier. Large glazed bays at its lower edge are neighboring Level 2 context and must be pale gray, not duplicated as new windows in Level 3. Onion pavilions and chapel clusters at its upper edges are neighboring tower context. Only extract the continuous small-chamber/loggia strips, their unequal returns and roof gardens BETWEEN those big masses. Never turn every seam into a new domed corner tower. Keep a continuous whole tier context strip above the three isolated sections, so asymmetric heights and attachments can be compared.",
+      "bottom_grid_m": 160,
+      "roof_grid_m": 230,
+      "front_y_grid_m": 60,
+      "front_y_status": "confirmed",
+      "components": [
+        {
+          "asset_id": "PAL-LAYER-03-W",
+          "name": "Western stepped garden ward",
+          "source_image_id": "GEN-37",
+          "source_bounds_px": [
+            230,
+            250,
+            820,
+            535
+          ],
+          "source_bounds_role": "overlapping visual region, not physical level mask",
+          "description": "Extract the intermediate western wing behind the great-window roof, alternating small glazed chambers and genuine recessed loggia apertures, multiple unequal fronts, soft angled returns, rose beds and the broad western pavilion attachment. Keep its relative location rather than centering a new dome on the wing.",
+          "attachment_face": "base underside; rear/side seam as proposed",
+          "semantic_front": "original ceremonial front",
+          "rear_extension_grid_m": 30,
+          "rear_extension_world_m": 82.5,
+          "dimension_status": "front relationships observed; unseen depths proposed; snap fits unresolved"
+        },
+        {
+          "asset_id": "PAL-LAYER-03-C",
+          "name": "Central recessed garden loggia ward",
+          "source_image_id": "GEN-37",
+          "source_bounds_px": [
+            760,
+            260,
+            1085,
+            525
+          ],
+          "source_bounds_role": "overlapping visual region, not physical level mask",
+          "description": "Extract the stepped smaller inner ward behind the gate gable, with short continuous arched gallery, tall narrow glazed chambers, tree/rose terrace strip and existing stair links. Preserve central tower pedestal seats in gray context. Show the exposed courtyard roof, small source-family fountain and connected circulation on the extension, without covering the gate silhouette.",
+          "attachment_face": "base underside; rear/side seam as proposed",
+          "semantic_front": "original ceremonial front",
+          "rear_extension_grid_m": 30,
+          "rear_extension_world_m": 82.5,
+          "dimension_status": "front relationships observed; unseen depths proposed; snap fits unresolved"
+        },
+        {
+          "asset_id": "PAL-LAYER-03-E",
+          "name": "Eastern layered return and belvedere seat",
+          "source_image_id": "GEN-37",
+          "source_bounds_px": [
+            1060,
+            260,
+            1700,
+            585
+          ],
+          "source_bounds_role": "overlapping visual region, not physical level mask",
+          "description": "Extract the eastern unequal nested garden ward, stepped small chambers, setbacks, curving terrace ends and attached east belvedere interface. Show the higher eastern spire cluster in gray context at its original source projection, not at the back edge of a newly invented huge footprint. No west/east mirroring.",
+          "attachment_face": "base underside; rear/side seam as proposed",
+          "semantic_front": "original ceremonial front",
+          "rear_extension_grid_m": 30,
+          "rear_extension_world_m": 82.5,
+          "dimension_status": "front relationships observed; unseen depths proposed; snap fits unresolved"
+        }
+      ],
+      "reuse": [
+        "GEN-19",
+        "GEN-29",
+        "GEN-38",
+        "GEN-39",
+        "GEN-41",
+        "GEN-42",
+        "GEN-43",
+        "GEN-45"
+      ],
+      "review_status": "pending-user-review; not approved geometry",
+      "output_file": "palace-layer-sheets/PAL-LAYER-03.png",
+      "sha256": "75d95c1290aefa68f69d7c1dad8bdfddbd817bf3be792793320ccf5d9ffe48a8",
+      "review_notes": "Unequal stepped ranges, garden roofs and stair links shown. Additional courts and rear masses are inferred, tower context and bay counts require source comparison. Overhead FRONT orientation differs from earlier sheets; normalize axes during modelling.",
+      "generator": "image_gen.imagegen",
+      "generated_source_file": "/workspace/generated_images/exec-a179cbdc-47e4-42cb-a4fb-3248fe74940b.png",
+      "reference_sha256": "ea625505aacf9cc5105b7c38013abb427c3939c7df9b10f37e23a81af9e743d5",
+      "reference_file": "palace-layer-sheets/source-reference/intermediate-wards-source.jpg",
+      "reference_source_bounds_px": [
+        220,
+        190,
+        1700,
+        610
+      ]
+    },
+    {
+      "sheet_id": "PAL-LAYER-04",
+      "title": "Upper inner wards and original tower-group seats",
+      "status": "generated-pending-review",
+      "source_image_id": "GEN-37",
+      "reference": "/workspace/shared/birthday-castle-layer-sheets/upper-tower-seats-source.jpg",
+      "prompt": "Create a highly detailed architectural SKETCH SHEET, landscape, on clean warm ivory paper, fine ink contour with rose/ivory watercolor materials and meticulous gold ornament. This is an extraction-and-extension study of the ORIGINAL PALACE shown in the one attached reference, not a new palace design. Three named structural assemblies on each sheet, with generous separation. Each assembly has a large clear front-three-quarter view, a smaller matching front elevation and a small true overhead footprint outline. All three views must depict the same object with identical bay counts, projections and attachments. A narrow top strip shows how these three parts join left-to-right in the original front, with upper/lower neighboring architecture only in faint gray context. Do not shrink the source's great windows into repetitive little doors. Preserve unequal west/east structure. Closed glazed wall apertures have actual recessed blue/lilac/pink glass and thick carved masonry; actual galleries are open. Carved spandrels, engaged lotus piers, gold leaf ribs, rose/starlight medallions, fine pierced parapets and veined pink and ivory stone must follow the reference. Canonical small fittings are installed for identity, not reinvented. Do not create a featureless box or a row of separated towers. Connected ranges have curved, chamfered and recessed fronts. All parts fully framed, even lighting. Print the title and the exact three component IDs and short names legibly beside parts. Label FRONT and REAR in each footprint. Mark new rear strip with restrained violet dashed line and 'PROPOSED REAR +30 GRID m'. Back extension goes only away from the locked front face, maintaining width and height, with continuous side return and roof. Rear strip is a proposed modelling allowance, not measured from illustration. It must not move the original gate, stair, cascade, front tower or window positions. Do not invent new crowns, bridges or ornament motifs. The sheet is a concept reference pending comparison, not an exact measured construction drawing. Detailed realistic palace architecture sketch, not icon art, not generic fantasy asset blocks.\nTITLE: PAL-LAYER-04 \u2014 Upper inner wards and original tower-group seats.\nFocus only on this level and the three requested source assemblies, not another complete castle.\nPAL-LAYER-04-W Broad western domed pavilion and upper seat: Extract the original wide plum onion dome with gold ribs and star finial, broad glazed drum and lower pointed-window pavilion, with the adjacent slender chapel spire in its source relationship. Show the upper ward it sits on with a modest backward extension and small connected garden court. The dome remains wide and bulbous, never a narrow conical cap.\nPAL-LAYER-04-C Royal central needle group and inner court seat: Extract the original central tallest needle with its asymmetrical attached turret extensions, pastel glass shafts, gold ribs and finials, mounted on a continuous upper ward with an exposed courtyard terrace. Preserve the clustered source silhouette; show slender tower rising from court rather than many randomly scattered towers. Fit entire finial in frame. Do not pile a taller building behind it.\nPAL-LAYER-04-E Eastern chapel-spire group and upper seat: Extract the original right-hand broad/tall chapel-like spire group, staggered narrow needles and attached smaller extensions, ivory/rose walls and blue/pink/lilac glass. Keep these at their original lateral locations. Show a backward-extended shared upper ward roof and small stair-linked garden return. Do not omit the right-side tall towers or mirror the central group.\nPrint a small note: SOURCE GEN-37 / REAR DEPTH PROPOSED / PENDING REVIEW. The confirmed vertical body band is 230\u2013300 grid m; tower crowns and attached projections may cross bands. Do not label visible source image bands as measured level cuts.\nThe exact source bounds for the three tower groups are WEST broad onion pavilion, CENTRAL highest needle with its attached turrets, EAST right-hand tall chapel-spire cluster. Each retains the source SHAFT WIDTH, crown count and unequal tip heights, do not grow a forest of additional fantasy needles. Attached turrets must visibly join the parent body. Preserve space to either side of each tower group and fit entire star finials. In the overhead roof outlines use FRONT at the bottom and REAR at the top. The violet rear extension adds roof courtyard length only and must not drag these front-located tower groups backward. No extra domed pavilion in the central courtyard.",
+      "bottom_grid_m": 230,
+      "roof_grid_m": 300,
+      "front_y_grid_m": null,
+      "front_y_status": "unresolved; old 120 grid m proposal not adopted as confirmed",
+      "components": [
+        {
+          "asset_id": "PAL-LAYER-04-W",
+          "name": "Broad western domed pavilion and upper seat",
+          "source_image_id": "GEN-37",
+          "source_bounds_px": [
+            414,
+            65,
+            650,
+            475
+          ],
+          "source_bounds_role": "overlapping visual region, not physical level mask",
+          "description": "Extract the original wide plum onion dome with gold ribs and star finial, broad glazed drum and lower pointed-window pavilion, with the adjacent slender chapel spire in its source relationship. Show the upper ward it sits on with a modest backward extension and small connected garden court. The dome remains wide and bulbous, never a narrow conical cap.",
+          "attachment_face": "base underside; rear/side seam as proposed",
+          "semantic_front": "original ceremonial front",
+          "rear_extension_grid_m": 30,
+          "rear_extension_world_m": 82.5,
+          "dimension_status": "front relationships observed; unseen depths proposed; snap fits unresolved"
+        },
+        {
+          "asset_id": "PAL-LAYER-04-C",
+          "name": "Royal central needle group and inner court seat",
+          "source_image_id": "GEN-37",
+          "source_bounds_px": [
+            807,
+            0,
+            947,
+            331
+          ],
+          "source_bounds_role": "overlapping visual region, not physical level mask",
+          "description": "Extract the original central tallest needle with its asymmetrical attached turret extensions, pastel glass shafts, gold ribs and finials, mounted on a continuous upper ward with an exposed courtyard terrace. Preserve the clustered source silhouette; show slender tower rising from court rather than many randomly scattered towers. Fit entire finial in frame. Do not pile a taller building behind it.",
+          "attachment_face": "base underside; rear/side seam as proposed",
+          "semantic_front": "original ceremonial front",
+          "rear_extension_grid_m": 30,
+          "rear_extension_world_m": 82.5,
+          "dimension_status": "front relationships observed; unseen depths proposed; snap fits unresolved"
+        },
+        {
+          "asset_id": "PAL-LAYER-04-E",
+          "name": "Eastern chapel-spire group and upper seat",
+          "source_image_id": "GEN-37",
+          "source_bounds_px": [
+            1485,
+            48,
+            1715,
+            523
+          ],
+          "source_bounds_role": "overlapping visual region, not physical level mask",
+          "description": "Extract the original right-hand broad/tall chapel-like spire group, staggered narrow needles and attached smaller extensions, ivory/rose walls and blue/pink/lilac glass. Keep these at their original lateral locations. Show a backward-extended shared upper ward roof and small stair-linked garden return. Do not omit the right-side tall towers or mirror the central group.",
+          "attachment_face": "base underside; rear/side seam as proposed",
+          "semantic_front": "original ceremonial front",
+          "rear_extension_grid_m": 30,
+          "rear_extension_world_m": 82.5,
+          "dimension_status": "front relationships observed; unseen depths proposed; snap fits unresolved"
+        }
+      ],
+      "reuse": [
+        "GEN-19",
+        "GEN-29",
+        "GEN-38",
+        "GEN-39",
+        "GEN-41",
+        "GEN-42",
+        "GEN-43",
+        "GEN-45"
+      ],
+      "review_status": "pending-user-review; not approved geometry",
+      "output_file": "palace-layer-sheets/PAL-LAYER-04.png",
+      "sha256": "458893ff63c9fdc686b759ff739272bf3a28298f98be54a4d64867ff1f5930aa",
+      "review_notes": "Western onion pavilion, central needle group and eastern chapel-spire group present. Exact shaft proportions, attached turret counts and positions differ between some views; rear courtyard arrangements and side ward depth are proposals, not source-traced geometry.",
+      "generator": "image_gen.imagegen",
+      "generated_source_file": "/workspace/generated_images/exec-f2b9a3d2-aafa-426f-8cbb-df42369f6aa1.png",
+      "reference_sha256": "3d4898f61af2070620fce2c0a1a5725b71d51a96c8e70256533fc07e46956047",
+      "reference_file": "palace-layer-sheets/source-reference/upper-tower-seats-source.jpg",
+      "reference_source_bounds_px": [
+        350,
+        0,
+        1730,
+        525
+      ]
+    }
+  ]
+}

@@ -12,7 +12,7 @@ The final library is capped at **230 selected sheets**, including the 45 origina
 | shared-outdoor-props-and-bridge | 25 | 3 | 22 |
 | maps-magic-travel-and-birthday | 20 | 4 | 16 |
 
-The 590-file archive contains crops, previews and historical experiments; it is not the final 230-sheet selection. Selected reference slots may still require visual review.
+The 606-file archive contains crops, previews and historical experiments; it is not the final 230-sheet selection. Selected reference slots may still require visual review.
 
 ## Palace caps
 
@@ -89,3 +89,9 @@ Each ordinary named location gets **at most two dedicated sheets**; four larger 
 6. Complete the palace reference coverage matrix, then audit the next map locations under their local caps.
 
 Current palace pass covers missing wing bodies, base/gate hosts, tower shafts, stair/cascade bodies and absent private-room furniture. Existing roof gardens, crowns, window/door assemblies and ornaments are reused. A later modelling pass will resolve dimensions and snap fits; this pass does not claim a completed palace model.
+
+## Layer-by-layer palace references
+
+The current requested pass is [four source-linked layer sheets](palace-layer-sheets/README.md), each with three assemblies and a proposed backward extension. The original front remains the authority; unseen rear depth is proposed. Generated sheets require visual review before modelling.
+
+Four layer sheets now occupy four additional palace slots. There are 64 selected/reserved slots globally, 47 within the palace cap. These counts include unproduced reservations; they do not imply accepted sheets. Twelve proposed assembly IDs are indexed. Rear length, hidden tower joins, tracery parity and projection agreement remain review tasks.

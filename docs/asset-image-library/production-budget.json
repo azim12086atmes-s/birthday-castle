@@ -890,6 +890,53 @@
       "file": "",
       "sha256": "",
       "generation_attempts_in_this_pass": 0
+    },
+    {
+      "sheet_id": "PAL-LAYER-01",
+      "owner": "palace",
+      "family": "Base, wall bodies and stepped wings",
+      "title": "Lower base and first terrace",
+      "status": "generated-pending-review",
+      "file": "palace-layer-sheets/PAL-LAYER-01.png",
+      "sha256": "a9a8e124013060e5d116db202bd0df38083fc0c0df4fd489d4911671237d0514",
+      "generation_attempts_in_this_pass": 1,
+      "review_notes": "Paired dry stairs and central wet cascade present. Views labelled front retain perspective; inferred overhead boundaries and tower attachments require comparison. Context towers may overlap source layer assignments."
+    },
+    {
+      "sheet_id": "PAL-LAYER-02",
+      "owner": "palace",
+      "family": "Base, wall bodies and stepped wings",
+      "title": "Gate wall and four great-window ranges",
+      "status": "generated-pending-review",
+      "file": "palace-layer-sheets/PAL-LAYER-02.png",
+      "sha256": "7d22d7208c5b7a08f9f06346081b7dffba28dc149daec42fc8988a21a5aa5e61",
+      "generation_attempts_in_this_pass": 2,
+      "retry_reasons": [
+        "Extra onion-domed end towers and inconsistent shaft counts introduced on great-window ranges; source uses narrow engaged piers."
+      ],
+      "review_notes": "Corrected extra domed end towers; top view retains four great windows and one gate. Tracery, small piers, roof hall and side returns are reconstructed; dimensions and agreement between views remain unverified."
+    },
+    {
+      "sheet_id": "PAL-LAYER-03",
+      "owner": "palace",
+      "family": "Base, wall bodies and stepped wings",
+      "title": "Intermediate garden wards and stepped returns",
+      "status": "generated-pending-review",
+      "file": "palace-layer-sheets/PAL-LAYER-03.png",
+      "sha256": "75d95c1290aefa68f69d7c1dad8bdfddbd817bf3be792793320ccf5d9ffe48a8",
+      "generation_attempts_in_this_pass": 1,
+      "review_notes": "Unequal stepped ranges, garden roofs and stair links shown. Additional courts and rear masses are inferred, tower context and bay counts require source comparison. Overhead FRONT orientation differs from earlier sheets; normalize axes during modelling."
+    },
+    {
+      "sheet_id": "PAL-LAYER-04",
+      "owner": "palace",
+      "family": "Base, wall bodies and stepped wings",
+      "title": "Upper inner wards and original tower-group seats",
+      "status": "generated-pending-review",
+      "file": "palace-layer-sheets/PAL-LAYER-04.png",
+      "sha256": "458893ff63c9fdc686b759ff739272bf3a28298f98be54a4d64867ff1f5930aa",
+      "generation_attempts_in_this_pass": 1,
+      "review_notes": "Western onion pavilion, central needle group and eastern chapel-spire group present. Exact shaft proportions, attached turret counts and positions differ between some views; rear courtyard arrangements and side ward depth are proposals, not source-traced geometry."
     }
   ],
   "production_pass": "palace-coverage-missing-only",
@@ -919,10 +966,12 @@
       825
     ],
     "historic_highest_tip_world_m": 1100,
-    "note": "Confirmed level schedule; rear depths and module snap dimensions remain unresolved. These values do not certify an exact generated perspective or retrofit generic prop dimensions."
+    "note": "Confirmed level schedule; rear depths and module snap dimensions remain unresolved. These values do not certify an exact generated perspective or retrofit generic prop dimensions.",
+    "layer_schedule": "palace-layer-sheets/schedule.json"
   },
-  "production_pass_status": "Original palace structure trace required; no further structural synthesis until source correspondence is established",
+  "production_pass_status": "Four layer sheets generated and indexed; source comparison pending. Layer 2 first attempt rejected; replacement saved. Further generation paused for discrepancy review.",
   "structural_sheet_rule": "Display source-fitted assemblies with existing canonical decor so identity and proportions can be checked. Bare host views are internal construction proposals, not replacements for the original decorated wing references.",
   "generation_paused": true,
-  "pause_reason": "Two wing attempts changed original palace structure. Use canonical original-region trace to establish correspondence before further image calls."
+  "pause_reason": "Requested four-layer reference batch finished. Review source correspondence before more structural variants; no automatic retries.",
+  "generation_resume_allowlist": []
 }

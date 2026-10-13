@@ -1,0 +1,13 @@
+sheet_id,asset_id,name,source_image_id,source_bounds_px,reference_file,rear_extension_grid_m,rear_extension_world_m,status
+PAL-LAYER-01,PAL-LAYER-01-W,Western lower glazed arcade and rounded projecting terrace,GEN-37,"0,560,620,815",palace-layer-sheets/PAL-LAYER-01.png,30,82.5,pending-review
+PAL-LAYER-01,PAL-LAYER-01-C,Central paired dry stairs and wet cascade apron,GEN-37,"540,605,1295,815",palace-layer-sheets/PAL-LAYER-01.png,30,82.5,pending-review
+PAL-LAYER-01,PAL-LAYER-01-E,Eastern lower nested arcade and angled return,GEN-37,"1280,555,1898,815",palace-layer-sheets/PAL-LAYER-01.png,30,82.5,pending-review
+PAL-LAYER-02,PAL-LAYER-02-W,Western paired great-window wing,GEN-37,"490,440,815,685",palace-layer-sheets/PAL-LAYER-02.png,30,82.5,pending-review
+PAL-LAYER-02,PAL-LAYER-02-C,Ceremonial gate and rose-gable wall,GEN-37,"818,354,1018,680",palace-layer-sheets/PAL-LAYER-02.png,30,82.5,pending-review
+PAL-LAYER-02,PAL-LAYER-02-E,Eastern paired great-window wing,GEN-37,"1000,440,1390,685",palace-layer-sheets/PAL-LAYER-02.png,30,82.5,pending-review
+PAL-LAYER-03,PAL-LAYER-03-W,Western stepped garden ward,GEN-37,"230,250,820,535",palace-layer-sheets/PAL-LAYER-03.png,30,82.5,pending-review
+PAL-LAYER-03,PAL-LAYER-03-C,Central recessed garden loggia ward,GEN-37,"760,260,1085,525",palace-layer-sheets/PAL-LAYER-03.png,30,82.5,pending-review
+PAL-LAYER-03,PAL-LAYER-03-E,Eastern layered return and belvedere seat,GEN-37,"1060,260,1700,585",palace-layer-sheets/PAL-LAYER-03.png,30,82.5,pending-review
+PAL-LAYER-04,PAL-LAYER-04-W,Broad western domed pavilion and upper seat,GEN-37,"414,65,650,475",palace-layer-sheets/PAL-LAYER-04.png,30,82.5,pending-review
+PAL-LAYER-04,PAL-LAYER-04-C,Royal central needle group and inner court seat,GEN-37,"807,0,947,331",palace-layer-sheets/PAL-LAYER-04.png,30,82.5,pending-review
+PAL-LAYER-04,PAL-LAYER-04-E,Eastern chapel-spire group and upper seat,GEN-37,"1485,48,1715,523",palace-layer-sheets/PAL-LAYER-04.png,30,82.5,pending-review

@@ -144,3 +144,17 @@ Current source bindings are authoritative for model intake; earlier generated va
 | PACK-BRG-003-S07 | Shore approach segment | [PACK-BRG-003](images/missing-component-packs/PACK-BRG-003.png) |
 | BRIDGE-SRC-B-L01 | Freestanding terminal crystal lantern post | [BRIDGE-SRC-B](bridge-source-panels/B-terminal-post-and-crystal-lantern.png) |
 | PAL-WALL-001-S01 | Complete glazed wall bay | [PAL-WALL-001](images/palace-structural-studies/PAL-WALL-001.png) |
+
+
+
+
+<!-- layer-register -->
+## Layer assemblies
+
+Pending-review reconstructions. Source GEN-37 controls the front; new rear geometry is proposed.
+
+- [PAL-LAYER-01: Lower base and first terrace](palace-layer-sheets/PAL-LAYER-01.png) — PAL-LAYER-01-W, PAL-LAYER-01-C, PAL-LAYER-01-E
+- [PAL-LAYER-02: Gate wall and four great-window ranges](palace-layer-sheets/PAL-LAYER-02.png) — PAL-LAYER-02-W, PAL-LAYER-02-C, PAL-LAYER-02-E
+- [PAL-LAYER-03: Intermediate garden wards and stepped returns](palace-layer-sheets/PAL-LAYER-03.png) — PAL-LAYER-03-W, PAL-LAYER-03-C, PAL-LAYER-03-E
+- [PAL-LAYER-04: Upper inner wards and original tower-group seats](palace-layer-sheets/PAL-LAYER-04.png) — PAL-LAYER-04-W, PAL-LAYER-04-C, PAL-LAYER-04-E
+<!-- /layer-register -->
