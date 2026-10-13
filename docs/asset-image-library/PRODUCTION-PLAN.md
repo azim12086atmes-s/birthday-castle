@@ -1,8 +1,8 @@
 # Asset production plan and caps
 
-Current: [original-palace surface/parapet variants](surface-variation-kits/index.html),7 sheets and100 components; [20-category palace needs/confidence](surface-variation-kits/PALACE-ASSET-NEEDS.md). **65/65 palace,85/230 total selected or reserved**. Map-building surface work parked. Existing wishing artwork audited; no new wishing designs.
+Current: [original-palace surface/parapet variants](surface-variation-kits/index.html),7 sheets and100 components; [16 active palace categories and interior gaps](surface-variation-kits/PALACE-ASSET-NEEDS.md). **64/65 palace,84/230 total selected or reserved**. Map-building surface work parked. Existing wishing artwork audited; no new wishing designs.
 
-Current component work: [12 screenshot-led palace sheets](remaining-palace-kits/index.html), with32 structural sections and64 detail fittings. [Source/reuse audit and remaining issues](remaining-palace-kits/GAPS-AND-REUSE.md). Selected/reserved: **65/65 palace,85/230 total**. References are pending review; no models or verified joins.
+Current component work: [12 screenshot-led palace sheets](remaining-palace-kits/index.html), with32 structural sections and64 detail fittings. [Source/reuse audit and remaining issues](remaining-palace-kits/GAPS-AND-REUSE.md). Selected/reserved: **64/65 palace,84/230 total**. References are pending review; no models or verified joins.
 
 The final library is capped at **230 selected sheets**, including the 45 original boards. **65 are reserved for the palace and interiors; 165 for other buildings and the world.** Existing shared designs count once. This is an allowance, not a target to fill with duplicates.
 
@@ -10,7 +10,7 @@ The final library is capped at **230 selected sheets**, including the 45 origina
 
 | Scope | Cap | Currently selected/reserved | Remaining |
 | --- | ---: | ---: | ---: |
-| palace | 65 | 65 | 0 |
+| palace | 65 | 64 | 1 |
 | other-map-buildings | 55 | 3 | 52 |
 | terrain-water-and-planting | 65 | 8 | 57 |
 | shared-outdoor-props-and-bridge | 25 | 5 | 20 |
@@ -27,7 +27,7 @@ The 712-file archive contains crops, previews and historical experiments; it is 
 | Tower bodies and roof assemblies | 10 | 10 |
 | Glass, carvings, rails and architectural fittings | 18 | 18 |
 | Stairs, fountains, terraces and courtyards | 11 | 11 |
-| Interiors and furniture | 12 | 12 |
+| Interiors and furniture | 12 | 11 |
 
 ## Other map buildings and locations
 

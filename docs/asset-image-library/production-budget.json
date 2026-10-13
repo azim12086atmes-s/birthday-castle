@@ -892,16 +892,6 @@
       "generation_attempts_in_this_pass": 0
     },
     {
-      "sheet_id": "INT-R04",
-      "owner": "palace",
-      "family": "Interiors and furniture",
-      "title": "Royal bathing room and basin suite",
-      "status": "paused-for-wing-source-comparison",
-      "file": "",
-      "sha256": "",
-      "generation_attempts_in_this_pass": 0
-    },
-    {
       "sheet_id": "PAL-ENTRY-001",
       "owner": "palace",
       "family": "Layout and envelope",
@@ -1408,6 +1398,18 @@
       ],
       "review_notes": "Minimal source-based labeling edit retains the connected five-bay wall and major lateral tower groups; leaders now identify the large arches. Caption layout affects displayed vertical extent; GEN-37 remains the exact source and height/placement master, not this generated edit.",
       "retirement_reason": "Replace unapproved complete-layout allowance with owner-requested original-palace conservatory component reference; original GEN-37 stays authoritative."
+    },
+    {
+      "sheet_id": "INT-R04",
+      "owner": "palace",
+      "family": "Interiors and furniture",
+      "title": "Royal bathing room and basin suite",
+      "status": "retired-unproduced-owner-excluded",
+      "file": "",
+      "sha256": "",
+      "generation_attempts_in_this_pass": 0,
+      "retirement_date": "2026-10-14",
+      "reason": "Owner excludes baths/spas because these spaces will not be played. No saved image removed."
     }
   ],
   "allocation_changes": [
@@ -1422,6 +1424,7 @@
   "allocation_notes": [
     "Latest owner crops add royal needle with attached turrets and slim star-glass onion gallery; move one unspent interior allowance to tower bodies, keeping palace cap65/world165/total230. Shared existing detail packs cover both; no extra decor sheets.",
     "Owner requests location-specific surface/pillar/stair/parapet variety. Transfer one unspent whole-layout allowance to interior repeat components, keeping65 palace and230 total. Eight packed sheets; original masters reused.",
-    "Scope correction: park three map-building surface packs, preserve their files/prompts; conservatory pack owns palace slot and keeps provisional B25 alias. Retire unapproved PAL-FRONT-001 layout selection, retaining its archive, to keep65 palace. No original palace architecture changed."
+    "Scope correction: park three map-building surface packs, preserve their files/prompts; conservatory pack owns palace slot and keeps provisional B25 alias. Retire unapproved PAL-FRONT-001 layout selection, retaining its archive, to keep65 palace. No original palace architecture changed.",
+    "2026-10-14: INT-R04 bath reservation retired;64/65 palace and84/230 selected/reserved. Interiors remain partially covered; no new slots reserved by audit."
   ]
 }

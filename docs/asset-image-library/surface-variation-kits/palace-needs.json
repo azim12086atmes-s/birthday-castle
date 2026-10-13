@@ -9,7 +9,8 @@
       "existing_reference_basis": "GEN-24; PAL-INT-PROP-001 reservation",
       "optional_magical_idea": "Canopy fabric with a quiet constellation glow",
       "design_or_model_approval": "not inferred",
-      "new_images_generated_for_this_category": 0
+      "new_images_generated_for_this_category": 0,
+      "in_current_scope": true
     },
     {
       "category_id": "PAL-NEED-02",
@@ -19,7 +20,8 @@
       "existing_reference_basis": "GEN-24 mirror/console",
       "optional_magical_idea": "Small jewel cases and a rose-trimmed dressing mirror",
       "design_or_model_approval": "not inferred",
-      "new_images_generated_for_this_category": 0
+      "new_images_generated_for_this_category": 0,
+      "in_current_scope": true
     },
     {
       "category_id": "PAL-NEED-03",
@@ -29,7 +31,9 @@
       "existing_reference_basis": "GEN-34 fountain vocabulary only",
       "optional_magical_idea": "Pearl-lit water and a shell-patterned basin",
       "design_or_model_approval": "not inferred",
-      "new_images_generated_for_this_category": 0
+      "new_images_generated_for_this_category": 0,
+      "in_current_scope": false,
+      "scope_status": "excluded-by-owner; do not generate"
     },
     {
       "category_id": "PAL-NEED-04",
@@ -39,7 +43,8 @@
       "existing_reference_basis": "GEN-24 side table only",
       "optional_magical_idea": "Teacups, blossom place settings and an intimate tea pavilion",
       "design_or_model_approval": "not inferred",
-      "new_images_generated_for_this_category": 0
+      "new_images_generated_for_this_category": 0,
+      "in_current_scope": true
     },
     {
       "category_id": "PAL-NEED-05",
@@ -49,7 +54,9 @@
       "existing_reference_basis": "GEN-25 cake reference",
       "optional_magical_idea": "A birthday pastry workshop with a flower-shaped oven door",
       "design_or_model_approval": "not inferred",
-      "new_images_generated_for_this_category": 0
+      "new_images_generated_for_this_category": 0,
+      "in_current_scope": false,
+      "scope_status": "excluded-by-owner; do not generate"
     },
     {
       "category_id": "PAL-NEED-06",
@@ -59,7 +66,9 @@
       "existing_reference_basis": "No dedicated selected kit",
       "optional_magical_idea": "Quiet practical spaces behind the grand rooms",
       "design_or_model_approval": "not inferred",
-      "new_images_generated_for_this_category": 0
+      "new_images_generated_for_this_category": 0,
+      "in_current_scope": false,
+      "scope_status": "excluded-by-owner; do not generate"
     },
     {
       "category_id": "PAL-NEED-07",
@@ -69,7 +78,8 @@
       "existing_reference_basis": "GEN-24/25/35",
       "optional_magical_idea": "Layered translucent rose curtains and embroidered star hangings",
       "design_or_model_approval": "not inferred",
-      "new_images_generated_for_this_category": 0
+      "new_images_generated_for_this_category": 0,
+      "in_current_scope": true
     },
     {
       "category_id": "PAL-NEED-08",
@@ -79,7 +89,8 @@
       "existing_reference_basis": "INT-C01 hard-floor motifs support palettes only",
       "optional_magical_idea": "Different woven motifs for quiet suites and grand halls",
       "design_or_model_approval": "not inferred",
-      "new_images_generated_for_this_category": 0
+      "new_images_generated_for_this_category": 0,
+      "in_current_scope": true
     },
     {
       "category_id": "PAL-NEED-09",
@@ -89,7 +100,8 @@
       "existing_reference_basis": "GEN-24 mirror/console partly reusable",
       "optional_magical_idea": "A gallery of illustrated memories revealed through light",
       "design_or_model_approval": "not inferred",
-      "new_images_generated_for_this_category": 0
+      "new_images_generated_for_this_category": 0,
+      "in_current_scope": true
     },
     {
       "category_id": "PAL-NEED-10",
@@ -99,7 +111,9 @@
       "existing_reference_basis": "GEN-26 ballroom architectural setting",
       "optional_magical_idea": "A music balcony whose lanterns respond to a melody",
       "design_or_model_approval": "not inferred",
-      "new_images_generated_for_this_category": 0
+      "new_images_generated_for_this_category": 0,
+      "in_current_scope": false,
+      "scope_status": "excluded-by-owner; do not generate"
     },
     {
       "category_id": "PAL-NEED-11",
@@ -109,7 +123,8 @@
       "existing_reference_basis": "GEN-26 library; GEN-24 bookcase/lectern",
       "optional_magical_idea": "A hidden rotating shelf and softly moving story pages",
       "design_or_model_approval": "not inferred",
-      "new_images_generated_for_this_category": 0
+      "new_images_generated_for_this_category": 0,
+      "in_current_scope": true
     },
     {
       "category_id": "PAL-NEED-12",
@@ -119,7 +134,8 @@
       "existing_reference_basis": "GEN-28 armillary",
       "optional_magical_idea": "A star chart that aligns with the palace night sky",
       "design_or_model_approval": "not inferred",
-      "new_images_generated_for_this_category": 0
+      "new_images_generated_for_this_category": 0,
+      "in_current_scope": true
     },
     {
       "category_id": "PAL-NEED-13",
@@ -129,7 +145,8 @@
       "existing_reference_basis": "No dedicated selected kit",
       "optional_magical_idea": "An atelier for gowns, mosaics and painted wishes",
       "design_or_model_approval": "not inferred",
-      "new_images_generated_for_this_category": 0
+      "new_images_generated_for_this_category": 0,
+      "in_current_scope": true
     },
     {
       "category_id": "PAL-NEED-14",
@@ -139,7 +156,8 @@
       "existing_reference_basis": "GEN-09/13/35/36; PAL-CONSERV-SURF-001",
       "optional_magical_idea": "A fragrant moon-bloom collection with its own small paths",
       "design_or_model_approval": "not inferred",
-      "new_images_generated_for_this_category": 0
+      "new_images_generated_for_this_category": 0,
+      "in_current_scope": true
     },
     {
       "category_id": "PAL-NEED-15",
@@ -149,7 +167,8 @@
       "existing_reference_basis": "GEN-09/13 garden vocabulary",
       "optional_magical_idea": "A small butterfly court beside the conservatory",
       "design_or_model_approval": "not inferred",
-      "new_images_generated_for_this_category": 0
+      "new_images_generated_for_this_category": 0,
+      "in_current_scope": true
     },
     {
       "category_id": "PAL-NEED-16",
@@ -159,7 +178,8 @@
       "existing_reference_basis": "GEN-11/14/34/43",
       "optional_magical_idea": "Pools that reflect a different constellation after a wish",
       "design_or_model_approval": "not inferred",
-      "new_images_generated_for_this_category": 0
+      "new_images_generated_for_this_category": 0,
+      "in_current_scope": true
     },
     {
       "category_id": "PAL-NEED-17",
@@ -169,7 +189,8 @@
       "existing_reference_basis": "Existing door/arch styles support appearance only",
       "optional_magical_idea": "A birthday trail of small discoveries; mechanics not implemented by this plan",
       "design_or_model_approval": "not inferred",
-      "new_images_generated_for_this_category": 0
+      "new_images_generated_for_this_category": 0,
+      "in_current_scope": true
     },
     {
       "category_id": "PAL-NEED-18",
@@ -179,7 +200,8 @@
       "existing_reference_basis": "GEN-28/25/35; wishing-source-audit",
       "optional_magical_idea": "Reuse the lantern for idle/lit/released states; add props only for a real interaction",
       "design_or_model_approval": "not inferred",
-      "new_images_generated_for_this_category": 0
+      "new_images_generated_for_this_category": 0,
+      "in_current_scope": true
     },
     {
       "category_id": "PAL-NEED-19",
@@ -189,7 +211,8 @@
       "existing_reference_basis": "GEN-28; js/travel.js",
       "optional_magical_idea": "A light travelling platform or star lift to make tall levels usable",
       "design_or_model_approval": "not inferred",
-      "new_images_generated_for_this_category": 0
+      "new_images_generated_for_this_category": 0,
+      "in_current_scope": true
     },
     {
       "category_id": "PAL-NEED-20",
@@ -199,15 +222,16 @@
       "existing_reference_basis": "GEN-20/24/45; GEN-28 wish lantern",
       "optional_magical_idea": "Petal lamps, quiet floating lights and a clock that blooms at celebrations",
       "design_or_model_approval": "not inferred",
-      "new_images_generated_for_this_category": 0
+      "new_images_generated_for_this_category": 0,
+      "in_current_scope": true
     }
   ],
   "priority_order": [
-    "Core room furnishings",
+    "Coordinated interior room, ceiling and wall references",
+    "Missing core room furnishings",
     "Textiles and lighting",
     "Planting containers and room dressing",
-    "Travel/circulation supports",
-    "Optional magical experiences"
+    "Optional aesthetic display props"
   ],
   "coverage_confidence": {
     "visible_surface_vocabulary": "Useful source coverage and new variants; not exact model proof",
@@ -218,5 +242,18 @@
     "tile_texture_seams_and_3D_join_fit": "Not verified"
   },
   "scale_rule": "A2km palace uses repeated normalized modules and area-specific families, not one unique asset for every bay/tile; quantity and navigation remain placement tasks",
-  "budget_rule": "230 final selected sheets,65 palace. Categories do not each require one sheet. Future small props packed10\u201320; reuse existing art; reallocate unproduced/retired reservations before further palace generation."
+  "budget_rule": "230 final selected sheets,65 palace. Categories do not each require one sheet. Future small props packed10\u201320; reuse existing art; reallocate unproduced/retired reservations before further palace generation.",
+  "active_category_count": 16,
+  "excluded_category_count": 4,
+  "excluded_by_owner": [
+    "Bath and spa rooms",
+    "Royal kitchens and bakery",
+    "Staff and service rooms",
+    "Music and performance spaces"
+  ],
+  "interior_architecture_coverage": {
+    "status": "partial; coordinated room views and dome interiors missing",
+    "audit_file": "interior-coverage-audit.json",
+    "priority": "Coordinate room architecture before making new room-specific decoration"
+  }
 }

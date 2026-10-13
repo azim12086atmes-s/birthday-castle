@@ -2,7 +2,7 @@
 
 Seven active sheets provide100 reference targets: four interior floor families, matching wall/cornice/pillar treatments, four indoor stair sections, two garden paving/edge families, existing parapet junction variants, original conservatory exterior details and four NEW parapet options. Original palace architecture remains GEN-37; no new complete building is created.
 
-[Browse one image at a time](index.html) · [100 components](components.csv) · [20-category needs/confidence](PALACE-ASSET-NEEDS.md) · [Wishing audit](wishing-source-audit/index.html)
+[Browse one image at a time](index.html) · [100 components](components.csv) · [16 active categories and interior gaps](PALACE-ASSET-NEEDS.md) · [Wishing audit](wishing-source-audit/index.html)
 
 | Sheet | Scope |
 | --- | --- |
@@ -20,4 +20,4 @@ Each schedule contains exact prompts, source hashes, original output aliases, pr
 
 The B06 map study is parked under parked-map-studies; B08/B12 prompts were never generated. Map crops and original drafts are preserved as archive evidence and excluded from active selected sheets. The conservatory provisional B25 label is superseded by PAL-CONSERV-SURF-001, with alias mapping for every old printed part ID.
 
-An unapproved full-front layout selection was retired while retaining its files to fit the requested conservatory references inside65 palace slots. Current selection/reservations:65/65 palace,85/230 total. This includes unproduced reservations and unapproved images. No new wishing designs were necessary: eight original designs exist and four previously unindexed ones now have model targets.
+An unapproved full-front layout selection was retired while retaining its files to fit the requested conservatory references inside65 palace slots. Current selection/reservations:64/65 palace,84/230 total. This includes unproduced reservations and unapproved images. No new wishing designs were necessary: eight original designs exist and four previously unindexed ones now have model targets.
