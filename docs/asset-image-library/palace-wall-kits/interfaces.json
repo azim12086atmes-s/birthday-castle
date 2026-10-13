@@ -1,0 +1,560 @@
+{
+  "status": "Proposed dimensional contracts; no actual generated mesh inspected",
+  "warning_scope": "Images illustrate design, not proof of geometric snapping",
+  "modules": [
+    {
+      "asset_id": "PACK-PAL-WALL-L1-S01",
+      "interface_family": "WALL-H60-D6",
+      "height_grid_m": 60,
+      "thickness_grid_m": 6,
+      "world_massing_scale": 2.75,
+      "centreline_grid_m": [
+        [
+          0,
+          0
+        ],
+        [
+          72,
+          0
+        ]
+      ],
+      "port_A": {
+        "position_grid_m": [
+          0,
+          0,
+          0
+        ],
+        "outward_yaw_degrees": 180
+      },
+      "port_B": {
+        "position_grid_m": [
+          72,
+          0,
+          0
+        ],
+        "outward_yaw_degrees": 0
+      },
+      "semantic_front": "Local -Y",
+      "attachment": "Z0 bottom on structural floor",
+      "dimensions_status": "Proposed modelling contract, not image measurements",
+      "shared_pier_policy": "One pier/column instance per seam; cut structural ends at join planes; avoid doubled full end posts",
+      "mirror_rule": "Mirror turn sign for opposite return, then correct face normals and UVs",
+      "trim_policy": "Use existing profile meshes; continuous base/dado/cornice datums; terminate relief before the joint",
+      "opening_policy": "Actual glass apertures and passage/door cutter geometry belong to structural wall; infill and surrounds are separate reusable assets",
+      "joinability_verified": false
+    },
+    {
+      "asset_id": "PACK-PAL-WALL-L1-S02",
+      "interface_family": "WALL-H60-D6",
+      "height_grid_m": 60,
+      "thickness_grid_m": 6,
+      "world_massing_scale": 2.75,
+      "centreline_grid_m": [
+        [
+          0,
+          0
+        ],
+        [
+          24,
+          0
+        ],
+        [
+          44.785,
+          12.0
+        ]
+      ],
+      "port_A": {
+        "position_grid_m": [
+          0,
+          0,
+          0
+        ],
+        "outward_yaw_degrees": 180
+      },
+      "port_B": {
+        "position_grid_m": [
+          44.785,
+          12.0,
+          0
+        ],
+        "outward_yaw_degrees": 30
+      },
+      "semantic_front": "Local -Y",
+      "attachment": "Z0 bottom on structural floor",
+      "dimensions_status": "Proposed modelling contract, not image measurements",
+      "shared_pier_policy": "One pier/column instance per seam; cut structural ends at join planes; avoid doubled full end posts",
+      "mirror_rule": "Mirror turn sign for opposite return, then correct face normals and UVs",
+      "trim_policy": "Use existing profile meshes; continuous base/dado/cornice datums; terminate relief before the joint",
+      "opening_policy": "Actual glass apertures and passage/door cutter geometry belong to structural wall; infill and surrounds are separate reusable assets",
+      "joinability_verified": false
+    },
+    {
+      "asset_id": "PACK-PAL-WALL-L1-S03",
+      "interface_family": "WALL-H60-D6",
+      "height_grid_m": 60,
+      "thickness_grid_m": 6,
+      "world_massing_scale": 2.75,
+      "centreline_grid_m": [
+        [
+          0,
+          0
+        ],
+        [
+          5.996,
+          0.196
+        ],
+        [
+          11.966,
+          0.784
+        ],
+        [
+          17.885,
+          1.761
+        ],
+        [
+          23.727,
+          3.124
+        ],
+        [
+          29.467,
+          4.865
+        ],
+        [
+          35.082,
+          6.978
+        ],
+        [
+          40.546,
+          9.454
+        ],
+        [
+          45.837,
+          12.282
+        ],
+        [
+          50.931,
+          15.45
+        ],
+        [
+          55.807,
+          18.944
+        ],
+        [
+          60.444,
+          22.75
+        ],
+        [
+          64.823,
+          26.85
+        ]
+      ],
+      "port_A": {
+        "position_grid_m": [
+          0,
+          0,
+          0
+        ],
+        "outward_yaw_degrees": 180
+      },
+      "port_B": {
+        "position_grid_m": [
+          64.823,
+          26.85,
+          0
+        ],
+        "outward_yaw_degrees": 45
+      },
+      "semantic_front": "Local -Y",
+      "attachment": "Z0 bottom on structural floor",
+      "dimensions_status": "Proposed modelling contract, not image measurements",
+      "shared_pier_policy": "One pier/column instance per seam; cut structural ends at join planes; avoid doubled full end posts",
+      "mirror_rule": "Mirror turn sign for opposite return, then correct face normals and UVs",
+      "trim_policy": "Use existing profile meshes; continuous base/dado/cornice datums; terminate relief before the joint",
+      "opening_policy": "Actual glass apertures and passage/door cutter geometry belong to structural wall; infill and surrounds are separate reusable assets",
+      "joinability_verified": false
+    },
+    {
+      "asset_id": "PACK-PAL-WALL-L1-S04",
+      "interface_family": "WALL-H60-D6",
+      "height_grid_m": 60,
+      "thickness_grid_m": 6,
+      "world_massing_scale": 2.75,
+      "centreline_grid_m": [
+        [
+          0,
+          0
+        ],
+        [
+          24,
+          0
+        ]
+      ],
+      "port_A": {
+        "position_grid_m": [
+          0,
+          0,
+          0
+        ],
+        "outward_yaw_degrees": 180
+      },
+      "port_B": {
+        "position_grid_m": [
+          24,
+          0,
+          0
+        ],
+        "outward_yaw_degrees": 0,
+        "status": "provisional; tower junction requires matching tower interface"
+      },
+      "semantic_front": "Local -Y",
+      "attachment": "Z0 bottom on structural floor",
+      "dimensions_status": "Proposed modelling contract, not image measurements",
+      "shared_pier_policy": "One pier/column instance per seam; cut structural ends at join planes; avoid doubled full end posts",
+      "mirror_rule": "Mirror turn sign for opposite return, then correct face normals and UVs",
+      "trim_policy": "Use existing profile meshes; continuous base/dado/cornice datums; terminate relief before the joint",
+      "opening_policy": "Actual glass apertures and passage/door cutter geometry belong to structural wall; infill and surrounds are separate reusable assets",
+      "joinability_verified": false,
+      "tower_dock": "Wall end and exposed partial pier are reference only; final tower docking face depends on the later tower kit"
+    },
+    {
+      "asset_id": "PACK-PAL-WALL-L2-S01",
+      "interface_family": "WALL-H100-D8",
+      "height_grid_m": 100,
+      "thickness_grid_m": 8,
+      "world_massing_scale": 2.75,
+      "centreline_grid_m": [
+        [
+          0,
+          0
+        ],
+        [
+          60,
+          0
+        ]
+      ],
+      "port_A": {
+        "position_grid_m": [
+          0,
+          0,
+          0
+        ],
+        "outward_yaw_degrees": 180
+      },
+      "port_B": {
+        "position_grid_m": [
+          60,
+          0,
+          0
+        ],
+        "outward_yaw_degrees": 0
+      },
+      "semantic_front": "Local -Y",
+      "attachment": "Z0 bottom on structural floor",
+      "dimensions_status": "Proposed modelling contract, not image measurements",
+      "shared_pier_policy": "One pier/column instance per seam; cut structural ends at join planes; avoid doubled full end posts",
+      "mirror_rule": "Mirror turn sign for opposite return, then correct face normals and UVs",
+      "trim_policy": "Use existing profile meshes; continuous base/dado/cornice datums; terminate relief before the joint",
+      "opening_policy": "Actual glass apertures and passage/door cutter geometry belong to structural wall; infill and surrounds are separate reusable assets",
+      "joinability_verified": false
+    },
+    {
+      "asset_id": "PACK-PAL-WALL-L2-S02",
+      "interface_family": "WALL-H100-D8",
+      "height_grid_m": 100,
+      "thickness_grid_m": 8,
+      "world_massing_scale": 2.75,
+      "centreline_grid_m": [
+        [
+          0,
+          0
+        ],
+        [
+          60,
+          0
+        ]
+      ],
+      "port_A": {
+        "position_grid_m": [
+          0,
+          0,
+          0
+        ],
+        "outward_yaw_degrees": 180
+      },
+      "port_B": {
+        "position_grid_m": [
+          60,
+          0,
+          0
+        ],
+        "outward_yaw_degrees": 0
+      },
+      "semantic_front": "Local -Y",
+      "attachment": "Z0 bottom on structural floor",
+      "dimensions_status": "Proposed modelling contract, not image measurements",
+      "shared_pier_policy": "One pier/column instance per seam; cut structural ends at join planes; avoid doubled full end posts",
+      "mirror_rule": "Mirror turn sign for opposite return, then correct face normals and UVs",
+      "trim_policy": "Use existing profile meshes; continuous base/dado/cornice datums; terminate relief before the joint",
+      "opening_policy": "Actual glass apertures and passage/door cutter geometry belong to structural wall; infill and surrounds are separate reusable assets",
+      "joinability_verified": false
+    },
+    {
+      "asset_id": "PACK-PAL-WALL-L2-S03",
+      "interface_family": "WALL-H100-D8",
+      "height_grid_m": 100,
+      "thickness_grid_m": 8,
+      "world_massing_scale": 2.75,
+      "centreline_grid_m": [
+        [
+          0,
+          0
+        ],
+        [
+          60,
+          0
+        ],
+        [
+          77.321,
+          10
+        ]
+      ],
+      "port_A": {
+        "position_grid_m": [
+          0,
+          0,
+          0
+        ],
+        "outward_yaw_degrees": 180
+      },
+      "port_B": {
+        "position_grid_m": [
+          77.321,
+          10,
+          0
+        ],
+        "outward_yaw_degrees": 30
+      },
+      "semantic_front": "Local -Y",
+      "attachment": "Z0 bottom on structural floor",
+      "dimensions_status": "Proposed modelling contract, not image measurements",
+      "shared_pier_policy": "One pier/column instance per seam; cut structural ends at join planes; avoid doubled full end posts",
+      "mirror_rule": "Mirror turn sign for opposite return, then correct face normals and UVs",
+      "trim_policy": "Use existing profile meshes; continuous base/dado/cornice datums; terminate relief before the joint",
+      "opening_policy": "Actual glass apertures and passage/door cutter geometry belong to structural wall; infill and surrounds are separate reusable assets",
+      "joinability_verified": false
+    },
+    {
+      "asset_id": "PACK-PAL-WALL-L2-S04",
+      "interface_family": "WALL-H100-D8",
+      "height_grid_m": 100,
+      "thickness_grid_m": 8,
+      "world_massing_scale": 2.75,
+      "centreline_grid_m": [
+        [
+          0,
+          0
+        ],
+        [
+          60,
+          0
+        ]
+      ],
+      "port_A": {
+        "position_grid_m": [
+          0,
+          0,
+          0
+        ],
+        "outward_yaw_degrees": 180
+      },
+      "port_B": {
+        "position_grid_m": [
+          60,
+          0,
+          0
+        ],
+        "outward_yaw_degrees": 0,
+        "status": "provisional; tower junction requires matching tower interface"
+      },
+      "semantic_front": "Local -Y",
+      "attachment": "Z0 bottom on structural floor",
+      "dimensions_status": "Proposed modelling contract, not image measurements",
+      "shared_pier_policy": "One pier/column instance per seam; cut structural ends at join planes; avoid doubled full end posts",
+      "mirror_rule": "Mirror turn sign for opposite return, then correct face normals and UVs",
+      "trim_policy": "Use existing profile meshes; continuous base/dado/cornice datums; terminate relief before the joint",
+      "opening_policy": "Actual glass apertures and passage/door cutter geometry belong to structural wall; infill and surrounds are separate reusable assets",
+      "joinability_verified": false,
+      "tower_dock": "Wall end and exposed partial pier are reference only; final tower docking face depends on the later tower kit"
+    },
+    {
+      "asset_id": "PACK-PAL-WALL-UP-S01",
+      "interface_family": "WALL-H70-D6",
+      "height_grid_m": 70,
+      "thickness_grid_m": 6,
+      "world_massing_scale": 2.75,
+      "centreline_grid_m": [
+        [
+          0,
+          0
+        ],
+        [
+          90,
+          0
+        ]
+      ],
+      "port_A": {
+        "position_grid_m": [
+          0,
+          0,
+          0
+        ],
+        "outward_yaw_degrees": 180
+      },
+      "port_B": {
+        "position_grid_m": [
+          90,
+          0,
+          0
+        ],
+        "outward_yaw_degrees": 0
+      },
+      "semantic_front": "Local -Y",
+      "attachment": "Z0 bottom on structural floor",
+      "dimensions_status": "Proposed modelling contract, not image measurements",
+      "shared_pier_policy": "One pier/column instance per seam; cut structural ends at join planes; avoid doubled full end posts",
+      "mirror_rule": "Mirror turn sign for opposite return, then correct face normals and UVs",
+      "trim_policy": "Use existing profile meshes; continuous base/dado/cornice datums; terminate relief before the joint",
+      "opening_policy": "Actual glass apertures and passage/door cutter geometry belong to structural wall; infill and surrounds are separate reusable assets",
+      "joinability_verified": false
+    },
+    {
+      "asset_id": "PACK-PAL-WALL-UP-S02",
+      "interface_family": "WALL-H70-D6",
+      "height_grid_m": 70,
+      "thickness_grid_m": 6,
+      "world_massing_scale": 2.75,
+      "centreline_grid_m": [
+        [
+          0,
+          0
+        ],
+        [
+          90,
+          0
+        ]
+      ],
+      "port_A": {
+        "position_grid_m": [
+          0,
+          0,
+          0
+        ],
+        "outward_yaw_degrees": 180
+      },
+      "port_B": {
+        "position_grid_m": [
+          90,
+          0,
+          0
+        ],
+        "outward_yaw_degrees": 0
+      },
+      "semantic_front": "Local -Y",
+      "attachment": "Z0 bottom on structural floor",
+      "dimensions_status": "Proposed modelling contract, not image measurements",
+      "shared_pier_policy": "One pier/column instance per seam; cut structural ends at join planes; avoid doubled full end posts",
+      "mirror_rule": "Mirror turn sign for opposite return, then correct face normals and UVs",
+      "trim_policy": "Use existing profile meshes; continuous base/dado/cornice datums; terminate relief before the joint",
+      "opening_policy": "Actual glass apertures and passage/door cutter geometry belong to structural wall; infill and surrounds are separate reusable assets",
+      "joinability_verified": false
+    },
+    {
+      "asset_id": "PACK-PAL-WALL-UP-S03",
+      "interface_family": "WALL-H70-D6",
+      "height_grid_m": 70,
+      "thickness_grid_m": 6,
+      "world_massing_scale": 2.75,
+      "centreline_grid_m": [
+        [
+          0,
+          0
+        ],
+        [
+          30,
+          0
+        ],
+        [
+          55.981,
+          15.0
+        ]
+      ],
+      "port_A": {
+        "position_grid_m": [
+          0,
+          0,
+          0
+        ],
+        "outward_yaw_degrees": 180
+      },
+      "port_B": {
+        "position_grid_m": [
+          55.981,
+          15.0,
+          0
+        ],
+        "outward_yaw_degrees": 30
+      },
+      "semantic_front": "Local -Y",
+      "attachment": "Z0 bottom on structural floor",
+      "dimensions_status": "Proposed modelling contract, not image measurements",
+      "shared_pier_policy": "One pier/column instance per seam; cut structural ends at join planes; avoid doubled full end posts",
+      "mirror_rule": "Mirror turn sign for opposite return, then correct face normals and UVs",
+      "trim_policy": "Use existing profile meshes; continuous base/dado/cornice datums; terminate relief before the joint",
+      "opening_policy": "Actual glass apertures and passage/door cutter geometry belong to structural wall; infill and surrounds are separate reusable assets",
+      "joinability_verified": false
+    },
+    {
+      "asset_id": "PACK-PAL-WALL-UP-S04",
+      "interface_family": "WALL-H70-D6",
+      "height_grid_m": 70,
+      "thickness_grid_m": 6,
+      "world_massing_scale": 2.75,
+      "centreline_grid_m": [
+        [
+          0,
+          0
+        ],
+        [
+          30,
+          0
+        ]
+      ],
+      "port_A": {
+        "position_grid_m": [
+          0,
+          0,
+          0
+        ],
+        "outward_yaw_degrees": 180
+      },
+      "port_B": {
+        "position_grid_m": [
+          30,
+          0,
+          0
+        ],
+        "outward_yaw_degrees": 0,
+        "status": "provisional; tower junction requires matching tower interface"
+      },
+      "semantic_front": "Local -Y",
+      "attachment": "Z0 bottom on structural floor",
+      "dimensions_status": "Proposed modelling contract, not image measurements",
+      "shared_pier_policy": "One pier/column instance per seam; cut structural ends at join planes; avoid doubled full end posts",
+      "mirror_rule": "Mirror turn sign for opposite return, then correct face normals and UVs",
+      "trim_policy": "Use existing profile meshes; continuous base/dado/cornice datums; terminate relief before the joint",
+      "opening_policy": "Actual glass apertures and passage/door cutter geometry belong to structural wall; infill and surrounds are separate reusable assets",
+      "joinability_verified": false,
+      "tower_dock": "Wall end and exposed partial pier are reference only; final tower docking face depends on the later tower kit"
+    }
+  ]
+}

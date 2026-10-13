@@ -12,7 +12,7 @@ The final library is capped at **230 selected sheets**, including the 45 origina
 | shared-outdoor-props-and-bridge | 25 | 3 | 22 |
 | maps-magic-travel-and-birthday | 20 | 4 | 16 |
 
-The 617-file archive contains crops, previews and historical experiments; it is not the final 230-sheet selection. Selected reference slots may still require visual review.
+The 630-file archive contains crops, previews and historical experiments; it is not the final 230-sheet selection. Selected reference slots may still require visual review.
 
 ## Palace caps
 
@@ -113,3 +113,5 @@ The two side/rear studies consume two base/wall/wing slots and share three assem
 The [whole top view](palace-roof-plan/index.html) centres the highest ward and steps down outward. It includes33 inventoried tower placements and11 dry stairs linking ground/L1 and every higher pair on west,east and rear. Walls retain100 m side/75 m rear gaps and the established south approach. Working800×680 m envelope and extra60 m upper-front setback are proposed. One unused wall-body slot transfers to layout; family caps7/9 still sum with other families to65.
 
 Current ledger: 65 selected/reserved globally, 48 for the palace. The roof diagram is one slot; painted rejected output is archival.
+
+Active screenshot-led work: [first terminal tower kit](palace-terminal-tower-kit/index.html), four structural sections and16 detail pieces. Other families remain queued; full section inventory is deferred.

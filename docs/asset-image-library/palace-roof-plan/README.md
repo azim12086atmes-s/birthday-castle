@@ -1,3 +1,5 @@
+> **Paused / unapproved:** The owner reported inaccurate corners and wings, then redirected work to reusable components. This is an archived layout study, not a construction master. GEN-37 remains the front authority.
+
 # Plain, centrally nested palace roof plan
 
 Revision R03 follows the owner's request for simple symbols. Before drawing it, the original roof-garden, terrace and courtyard boards GEN-16, GEN-15 and GEN-14 were inspected individually, together with GEN-03. The [source review](GARDEN-SOURCE-REVIEW.md) records what each contributes and where the previous generic court boxes departed from them.

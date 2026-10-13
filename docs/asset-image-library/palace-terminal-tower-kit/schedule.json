@@ -1,0 +1,431 @@
+{
+  "scope": "Only first terminal tower from supplied screenshots; other families wait",
+  "source_front": "GEN-37",
+  "source_crop_id": "REF-2BAD18DEFB6A",
+  "source_crop_file": "images/reference-crops-and-studies/T04-2bad18defb6a.png",
+  "source_crop_xyxy_in_GEN37": [
+    53,
+    325,
+    254,
+    810
+  ],
+  "source_crop_size": [
+    201,
+    485
+  ],
+  "source_reference_path": "/workspace/shared/birthday-castle-front-crops/T04.png",
+  "source_upload_status": "Matched first user screenshot to exact previously saved GEN-37 crop; uploaded image bytes were not separately available",
+  "structural_sheet_id": "PAL-TOWER-001",
+  "decor_sheet_id": "PAL-TOWER-001-DECOR",
+  "generator": "image_gen.imagegen",
+  "assembly_order_bottom_to_top": [
+    "S01",
+    "S02",
+    "S03",
+    "S04"
+  ],
+  "source_vertical_seams_y_in_crop": [
+    385,
+    200,
+    134
+  ],
+  "normalized_height": 100,
+  "height_status": "Approximate proportions from the visible front; not measured building dimensions",
+  "joint_profiles": {
+    "J1": {
+      "nominal_across_flats": 24,
+      "faces": 8,
+      "orientation": "front flat facet faces -Y",
+      "matches": [
+        "S01.top",
+        "S02.bottom"
+      ]
+    },
+    "J2": {
+      "nominal_across_flats": 24,
+      "faces": 8,
+      "orientation": "front flat facet faces -Y",
+      "matches": [
+        "S02.top",
+        "S03.bottom"
+      ]
+    },
+    "J3": {
+      "nominal_across_flats": 25,
+      "faces": 8,
+      "orientation": "front flat facet faces -Y",
+      "matches": [
+        "S03.top",
+        "S04.bottom"
+      ]
+    }
+  },
+  "profile_status": "Shared centred octagonal modelling proposals; unseen back and dimensions inferred, physical fit not verified",
+  "parts": [
+    {
+      "asset_id": "PAL-TOWER-001-S01",
+      "name": "Stepped pedestal",
+      "source_box_xyxy_in_crop": [
+        46,
+        385,
+        191,
+        480
+      ],
+      "relative_height": 20.13,
+      "reuse_component_ids": [
+        "GEN-41-M06",
+        "GEN-29-C04"
+      ],
+      "review_status": "pending",
+      "model_status": "unregistered",
+      "source_reference_id": "SRC-PAL-TOWER-001-S01",
+      "source_reference_file": "palace-terminal-tower-kit/source-sections/PAL-TOWER-001-S01.png",
+      "source_reference_sha256": "422e4330c7724e4af6310899d1fec6a1674deafa87dded9d8ab493cf294c962d"
+    },
+    {
+      "asset_id": "PAL-TOWER-001-S02",
+      "name": "Tall star-glazed shaft",
+      "source_box_xyxy_in_crop": [
+        52,
+        200,
+        184,
+        385
+      ],
+      "relative_height": 39.17,
+      "reuse_component_ids": [
+        "GEN-38-M03",
+        "GEN-41-M02",
+        "GEN-41-M04"
+      ],
+      "review_status": "pending",
+      "model_status": "unregistered",
+      "source_reference_id": "SRC-PAL-TOWER-001-S02",
+      "source_reference_file": "palace-terminal-tower-kit/source-sections/PAL-TOWER-001-S02.png",
+      "source_reference_sha256": "759b4fe4510bdac6d17febd9c80c4a60462de92c075775b60f4f00c2aca3254c"
+    },
+    {
+      "asset_id": "PAL-TOWER-001-S03",
+      "name": "Arched crown gallery",
+      "source_box_xyxy_in_crop": [
+        50,
+        134,
+        190,
+        200
+      ],
+      "relative_height": 13.98,
+      "reuse_component_ids": [
+        "GEN-44-M04",
+        "GEN-45-M05"
+      ],
+      "review_status": "pending",
+      "model_status": "unregistered",
+      "source_reference_id": "SRC-PAL-TOWER-001-S03",
+      "source_reference_file": "palace-terminal-tower-kit/source-sections/PAL-TOWER-001-S03.png",
+      "source_reference_sha256": "097ff082afbcdbdb3a17d8822636ac9f33eff0de78eae9e5faae26968cc2fe37"
+    },
+    {
+      "asset_id": "PAL-TOWER-001-S04",
+      "name": "Onion roof and finial",
+      "source_box_xyxy_in_crop": [
+        66,
+        8,
+        179,
+        134
+      ],
+      "relative_height": 26.72,
+      "reuse_component_ids": [
+        "GEN-44-M01",
+        "GEN-44-M03",
+        "GEN-44-M05"
+      ],
+      "review_status": "pending",
+      "model_status": "unregistered",
+      "source_reference_id": "SRC-PAL-TOWER-001-S04",
+      "source_reference_file": "palace-terminal-tower-kit/source-sections/PAL-TOWER-001-S04.png",
+      "source_reference_sha256": "52be71f323adbc667ee1baa0b52ae382624c05688504ba752a39336b712a0301"
+    }
+  ],
+  "decor": [
+    {
+      "asset_id": "PAL-TOWER-001-D01",
+      "name": "Engaged half-column shaft",
+      "reuse_component_ids": [
+        "GEN-41-M04"
+      ],
+      "review_status": "pending",
+      "model_status": "unregistered",
+      "applies_to": [
+        "PAL-TOWER-001-S02",
+        "PAL-TOWER-001-S03"
+      ]
+    },
+    {
+      "asset_id": "PAL-TOWER-001-D02",
+      "name": "Leaf capital and arch impost",
+      "reuse_component_ids": [
+        "GEN-41-M02"
+      ],
+      "review_status": "pending",
+      "model_status": "unregistered",
+      "applies_to": [
+        "PAL-TOWER-001-S02",
+        "PAL-TOWER-001-S03"
+      ]
+    },
+    {
+      "asset_id": "PAL-TOWER-001-D03",
+      "name": "Column foot collar",
+      "reuse_component_ids": [
+        "GEN-29-C04",
+        "GEN-41-M06"
+      ],
+      "review_status": "pending",
+      "model_status": "unregistered",
+      "applies_to": [
+        "PAL-TOWER-001-S01",
+        "PAL-TOWER-001-S02"
+      ]
+    },
+    {
+      "asset_id": "PAL-TOWER-001-D04",
+      "name": "Pointed arch moulding frame",
+      "reuse_component_ids": [
+        "GEN-42-M01"
+      ],
+      "review_status": "pending",
+      "model_status": "unregistered",
+      "applies_to": [
+        "PAL-TOWER-001-S02"
+      ]
+    },
+    {
+      "asset_id": "PAL-TOWER-001-D05",
+      "name": "White floral spandrel relief",
+      "reuse_component_ids": [
+        "GEN-30-W01",
+        "GEN-40-M01"
+      ],
+      "review_status": "pending",
+      "model_status": "unregistered",
+      "applies_to": [
+        "PAL-TOWER-001-S02",
+        "PAL-TOWER-001-S03"
+      ]
+    },
+    {
+      "asset_id": "PAL-TOWER-001-D06",
+      "name": "Rose and vine frieze repeat",
+      "reuse_component_ids": [
+        "GEN-42-M03"
+      ],
+      "review_status": "pending",
+      "model_status": "unregistered",
+      "applies_to": [
+        "PAL-TOWER-001-S01",
+        "PAL-TOWER-001-S03"
+      ]
+    },
+    {
+      "asset_id": "PAL-TOWER-001-D07",
+      "name": "Lower belt cornice repeat",
+      "reuse_component_ids": [
+        "GEN-42-M02",
+        "GEN-42-M05"
+      ],
+      "review_status": "pending",
+      "model_status": "unregistered",
+      "applies_to": [
+        "PAL-TOWER-001-S01",
+        "PAL-TOWER-001-S02"
+      ]
+    },
+    {
+      "asset_id": "PAL-TOWER-001-D08",
+      "name": "Octagonal corner cornice return",
+      "reuse_component_ids": [
+        "GEN-42-M06"
+      ],
+      "review_status": "pending",
+      "model_status": "unregistered",
+      "applies_to": [
+        "PAL-TOWER-001-S01",
+        "PAL-TOWER-001-S02",
+        "PAL-TOWER-001-S03"
+      ]
+    },
+    {
+      "asset_id": "PAL-TOWER-001-D09",
+      "name": "Miniature gallery arch surround",
+      "reuse_component_ids": [
+        "GEN-44-M04"
+      ],
+      "review_status": "pending",
+      "model_status": "unregistered",
+      "applies_to": [
+        "PAL-TOWER-001-S03"
+      ]
+    },
+    {
+      "asset_id": "PAL-TOWER-001-D10",
+      "name": "Gold eave leaf crest",
+      "reuse_component_ids": [
+        "GEN-44-M03"
+      ],
+      "review_status": "pending",
+      "model_status": "unregistered",
+      "applies_to": [
+        "PAL-TOWER-001-S04"
+      ]
+    },
+    {
+      "asset_id": "PAL-TOWER-001-D11",
+      "name": "Curved gold roof rib",
+      "reuse_component_ids": [
+        "GEN-44-M01"
+      ],
+      "review_status": "pending",
+      "model_status": "unregistered",
+      "applies_to": [
+        "PAL-TOWER-001-S04"
+      ]
+    },
+    {
+      "asset_id": "PAL-TOWER-001-D12",
+      "name": "Gold spindle and collar stack",
+      "reuse_component_ids": [
+        "GEN-44-M05"
+      ],
+      "review_status": "pending",
+      "model_status": "unregistered",
+      "applies_to": [
+        "PAL-TOWER-001-S04"
+      ]
+    },
+    {
+      "asset_id": "PAL-TOWER-001-D13",
+      "name": "Gold star finial",
+      "reuse_component_ids": [
+        "GEN-44-M05"
+      ],
+      "review_status": "pending",
+      "model_status": "unregistered",
+      "applies_to": [
+        "PAL-TOWER-001-S04"
+      ]
+    },
+    {
+      "asset_id": "PAL-TOWER-001-D14",
+      "name": "Scroll lantern arm and mount",
+      "reuse_component_ids": [
+        "GEN-45-M02"
+      ],
+      "review_status": "pending",
+      "model_status": "unregistered",
+      "applies_to": [
+        "PAL-TOWER-001-S03"
+      ]
+    },
+    {
+      "asset_id": "PAL-TOWER-001-D15",
+      "name": "Glazed lantern cage",
+      "reuse_component_ids": [
+        "GEN-45-M01",
+        "GEN-32-T04"
+      ],
+      "review_status": "pending",
+      "model_status": "unregistered",
+      "applies_to": [
+        "PAL-TOWER-001-S03"
+      ]
+    },
+    {
+      "asset_id": "PAL-TOWER-001-D16",
+      "name": "Pendant drop and hanger",
+      "reuse_component_ids": [
+        "GEN-45-M03",
+        "GEN-45-M04"
+      ],
+      "review_status": "pending",
+      "model_status": "unregistered",
+      "applies_to": [
+        "PAL-TOWER-001-S03"
+      ]
+    }
+  ],
+  "existing_references_reviewed_one_at_a_time": [
+    "GEN-17",
+    "GEN-32",
+    "GEN-41",
+    "GEN-44",
+    "GEN-45"
+  ],
+  "purpose": "Separate full structural sections plus a consolidated detached-detail pack; existing designs reused, no Blender models",
+  "prompts": {
+    "structure": "Create one exact source-derived modular ARCHITECTURAL COMPONENT SKETCH SHEET titled \"PAL-TOWER-001 \u2014 Western terminal tower sections\". The reference is the approved front of ONE small terminal onion-dome tower, not the larger broad palace pavilion. Preserve its specific anatomy and silhouette. Create four fully separated complete parts, in left-to-right stacking order, generous white studio/ivory paper background, clean fine architectural linework and precise shaded 3D concept rendering with visible depth, all at one common model scale. No assembled tower, no palace scene, no fifth object. Neutral front three-quarter view showing the principal front facet and narrow adjacent facets. Preserve the rose-veined/ivory-veined marble, muted polished gold, deep blue star-panel glass with lilac/pink side accents, and plum-violet onion roof with thin gold ribs. Do not redesign the tower into a cylindrical temple or a large pavilion.\nS01 \u2014 Stepped pedestal: the complete low, spreading octagonal marble footing and plinth die, horizontal rose/ivory block courses, small pointed blue/gold window on its FRONT ONLY, side panels primarily marble, top collar ends at the original horizontal seam just beneath the tall glazed shaft. Relative height about20 of100.\nS02 \u2014 Tall star-glazed shaft: ONE single-storey long octagonal shaft, no intermediate floors. It has the original very tall narrow front blue pointed-arch window with the big gold star, pink/lilac slender side glazing, pale marble engaged corner shafts, thin gold borders and carved shoulder/spandrel details. Keep the source's long slim proportions. Include its lower belt mouldings and top supporting neck at the source seams. Relative height about39 of100, core width roughly22. This must be visibly taller than any other individual module, not a stubby drum.\nS03 \u2014 Arched crown gallery: the short widening octagonal clerestory immediately above the tall shaft, small blue pointed gallery windows around its visible facets, slender ivory columns, the source gold-trimmed floral collar and ledge at its lower edge, roof seating ring at upper edge. Relative height about14 of100; keep it shallow and distinct from the long shaft. Show small plain lantern attachment pads, but leave detachable lantern/scroll-arm accessories for the decor sheet.\nS04 \u2014 Onion roof and finial: the exact terminal tower's modest bulging plum onion dome with gold meridian ribs, alternating gold leaf eave crests, the long delicate stacked gold spindle and star finial from the reference. Include the roof's seating edge. Relative combined dome/finial height about27 of100. The gold spindle has a substantial visible length like the source; avoid a large new broad pavilion dome or needle roof.\nMATCHING JOINTS: horizontal planes at the three existing stone bands. S01 top and S02 bottom share centered octagonal profile J1; S02 top and S03 bottom share J2; S03 top and S04 underside share J3. Keep the same eight-face orientation, front centered flat facet, flat mating surfaces and ring profiles across each joint. A wider exposed moulding may project outside the matching core. No industrial pegs, screws, mechanical connectors or supports. Every module is a complete object with sensible back/underside, not a clipped front photograph. Infer hidden surfaces conservatively from these visible profiles; no additional doors or windows on the plinth sides, no invented side buildings, balconies, buttress towers or extra floors. Four separate modules only. Exact legible captions below objects: PAL-TOWER-001-S01 \u2014 Stepped pedestal; PAL-TOWER-001-S02 \u2014 Tall star-glazed shaft; PAL-TOWER-001-S03 \u2014 Arched crown gallery; PAL-TOWER-001-S04 \u2014 Onion roof and finial. Label J1/J2/J3 at mating ends without text on stone. No people, vegetation, flowers around the base, hanging lanterns or neighboring towers in this structural sheet. All source carving and glass may be shown installed for appearance, but not reinvented.",
+    "decor": "Create ONE professional isolated architectural ORNAMENT COMPONENT SKETCH SHEET titled \"PAL-TOWER-001-DECOR \u2014 Terminal tower detail kit\". Exactly16 separate complete objects, one per cell in a clean4-by-4 grid, generous gaps and warm-white studio/paper background. Each item in neutral three-quarter view revealing back/mounting surface and actual depth. Detailed precise fine-line architectural concept rendering with realistic shaded rose/ivory marble, subtle veins, source polished gold and indigo/blue/lilac/pink crystal glass. This is the detachable detail kit for the EXACT terminal tower in the supplied image. Preserve its Gothic pointed arches, slim leaf capitals, white floral relief, stepped cornice edges, plum-dome gold ribs, slender star-finial and delicate external lanterns. Reuse those motifs, no new aesthetic. Do not depict a tower, room or whole palace. Every part fully visible and separate, with captions below, no lettering on objects.\nThe sixteen objects MUST be:\nD01 Engaged half-column shaft: a slender ivory/rose marble half-shaft with narrow gold fillet and flat rear mounting face; no capital/base attached.\nD02 Leaf capital and arch impost: the source's SMALL engaged-column flaring leaf capital, ivory moulded abacus and gold fleur/leaf tip, not a giant corinthian crown.\nD03 Column foot collar: short layered ivory/rose base cuff with gold edge, full depth and flat support face.\nD04 Pointed arch moulding frame: one complete slender nested pointed-arch surround, open centre with no glass pane, three ivory/rose/gold rolls and flat rear attachment.\nD05 White floral spandrel relief: a single compact raised white rose-and-leaf cluster with a flat pink-marble triangular mounting field shaped to fit outside the pointed window crown.\nD06 Rose and vine frieze repeat: one short straight pink-marble strip with white rose/leaf carving, subtle gilded edge, clean repeat ends.\nD07 Lower belt cornice repeat: one straight layered ivory/rose projecting string-course segment with two fine gold bands, flat rear and repeatable clean ends.\nD08 Octagonal corner cornice return: one45-degree corner return of that SAME cornice profile, not a full octagonal ring, full underside and two matched ends.\nD09 Miniature gallery arch surround: one small ivory and gold pointed clerestory surround with slim pilasters, open centre; no whole gallery.\nD10 Gold eave leaf crest: one small gilded fleur/leaf crest with plain mounting foot, copied from the dome eave repetition.\nD11 Curved gold roof rib: one complete mountable gold meridian-rib strip following the terminal onion dome curve, no roof panels or full dome.\nD12 Gold spindle and collar stack: the terminal roof's thin stacked orb/lotus gold spindle, no star top, readable small socket at top, no heavy blue gems.\nD13 Gold star finial: the gold radial star and centre orb at the terminal roof tip, with short lower mounting stem; not a blue stained-glass medallion.\nD14 Scroll lantern arm and mount: one elegant gilded horizontal curling support arm with leaf relief and floral wall plate, complete mount and hanging eye, no lantern.\nD15 Glazed lantern cage: one complete blue/lilac/pink faceted lantern cage with gold Gothic ribs, pointed gold/plum cap, suspension eye and lower drop socket; no bracket and no long lower pendant.\nD16 Pendant drop and hanger: one blue crystal pointed drop with gold cap and short complete gold ring/knop hanger, no lantern cage.\nLegible exact captions in each cell begin PAL-TOWER-001-D01 through PAL-TOWER-001-D16, followed by the corresponding short object name. The parts are displayed at individual review scales so tiny carvings remain legible; do not add a size ruler. No duplicate views, extra objects, plants, scenic background, fused ornaments or unfinished cropped shapes. Four rows of four complete isolated items. The source is the visible style authority. Hidden mounting backs are conservative inferred flat faces, not new decorative designs."
+  },
+  "structure_retry_prompt": "Edit this EXISTING FOUR-PART terminal-tower section sheet. Preserve all four modules, material palette, carved motifs, component IDs, J1/J2/J3 labels, octagonal front orientation, colors, captions and clean layout. Correct relative proportions only. S01 pedestal is currently too shallow: increase its complete height about25 percent, adding matching plain rose/ivory marble courses, while preserving its width. Its FRONT blue window should remain a small inset, not grow with the new stone height. S02 shaft currently too elongated: reduce the main shaft total height about15 percent while preserving its width, single tall pointed front star-window and side pink/blue narrow glazing. Do not add any new storey or windows. S03 shallow arched crown gallery is already correct: preserve its geometry and height. S04 roof's spindle/finial is far too tall: shorten ONLY the gold spindle between the onion dome and star about45 percent, preserve the terminal star and the actual onion dome bulb width and height. The spindle must read as a delicate roof ornament rather than another tower. Original source proportions are pedestal20, shaft39, gallery14, complete roof/finial27 out of joined height100. Module core widths/end profiles must still match for stacking. Keep all pieces at a common structural scale on a horizontal ground line; body/footing/core diameters remain consistent. Keep four separate whole modules and the exact existing labels. No extra objects, perspectives, palace, plants, lanterns or alternative design.",
+  "previous_attempts": [
+    {
+      "file": "palace-terminal-tower-kit/rejected-drafts/PAL-TOWER-001-R01.png",
+      "original": "/workspace/generated_images/exec-cf42bf7f-19d4-42b3-b2e0-227afa59fa0e.png",
+      "status": "rejected-relative-proportions",
+      "reason": "Finial too long and pedestal too shallow relative to original terminal source crop"
+    }
+  ],
+  "PAL-TOWER-001_output": {
+    "file": "palace-terminal-tower-kit/PAL-TOWER-001.png",
+    "sha256": "81ea8c304ae4a2aa66382d21e7ab64cc6b907fa9bd4f1972bd97a34ec8ceba1c",
+    "generated_original": "/workspace/generated_images/exec-3b87bce6-1302-4694-b1a0-28b360390f18.png",
+    "review_status": "pending-user-review"
+  },
+  "PAL-TOWER-001-DECOR_output": {
+    "file": "palace-terminal-tower-kit/PAL-TOWER-001-DECOR.png",
+    "sha256": "b627ba489424ac45c0cc83ad615acb4e193d9f12affd47e4942c3e7da67559f5",
+    "generated_original": "/workspace/generated_images/exec-74a65497-ad84-499d-a997-8384a1491b81.png",
+    "review_status": "pending-user-review"
+  },
+  "review_status": "pending-user-review",
+  "models_generated": 0,
+  "visual_review": {
+    "structural_section_count": 4,
+    "decor_object_count": 16,
+    "all_printed_ids_present": true,
+    "source_palette_preserved": true,
+    "actual_join_fit_verified": false,
+    "source_pixel_proportions_reference": true,
+    "limits": "Generated shaded drawings are not measured models; original section crops control proportions and visible motifs."
+  },
+  "generation_history": [
+    {
+      "sheet_id": "PAL-TOWER-001",
+      "attempt": 1,
+      "prompt_key": "prompts.structure",
+      "input_image_id": "REF-2BAD18DEFB6A",
+      "input_sha256": "2bad18defb6a6500eeb6f1d1fb8dd3827c65cf76788d1a952717fed6ca70ea5e",
+      "output_image_id": "DRAFT-PAL-TOWER-001-R01",
+      "output_sha256": "0f4d66d989be7beaf7300df67e37c6d4f52c60d79f616234e99ae3d209abca0e",
+      "status": "rejected-relative-proportions"
+    },
+    {
+      "sheet_id": "PAL-TOWER-001",
+      "attempt": 2,
+      "prompt_key": "structure_retry_prompt",
+      "input_image_id": "DRAFT-PAL-TOWER-001-R01",
+      "input_sha256": "0f4d66d989be7beaf7300df67e37c6d4f52c60d79f616234e99ae3d209abca0e",
+      "output_image_id": "PAL-TOWER-001",
+      "output_sha256": "81ea8c304ae4a2aa66382d21e7ab64cc6b907fa9bd4f1972bd97a34ec8ceba1c",
+      "status": "pending-user-review;source-proportions-remain-authority"
+    },
+    {
+      "sheet_id": "PAL-TOWER-001-DECOR",
+      "attempt": 1,
+      "prompt_key": "prompts.decor",
+      "input_image_id": "REF-2BAD18DEFB6A",
+      "input_sha256": "2bad18defb6a6500eeb6f1d1fb8dd3827c65cf76788d1a952717fed6ca70ea5e",
+      "output_image_id": "PAL-TOWER-001-DECOR",
+      "output_sha256": "b627ba489424ac45c0cc83ad615acb4e193d9f12affd47e4942c3e7da67559f5",
+      "status": "pending-user-review"
+    }
+  ]
+}

@@ -239,10 +239,10 @@
       "image_id": "GEN-17",
       "title": "Tower crowns, roofs and balconies",
       "source_file": "images/illustrated-boards/GEN-17.png",
-      "stage": "pending-source-panel-index",
+      "stage": "board-reviewed-for-terminal-kit;full-panel-index-deferred",
       "indexed_panel_count": 0,
       "new_generation_count": 0,
-      "decision": "Audit before generating; existing assets are reused"
+      "decision": "Focused terminal screenshot comparison, one board at a time; existing motif families reused in first-family section/decor references."
     },
     {
       "image_id": "GEN-20",
@@ -338,10 +338,10 @@
       "image_id": "GEN-32",
       "title": "Crown ornaments, turret joints and lanterns",
       "source_file": "images/illustrated-boards/GEN-32.png",
-      "stage": "pending-source-panel-index",
+      "stage": "board-reviewed-for-terminal-kit;full-panel-index-deferred",
       "indexed_panel_count": 0,
       "new_generation_count": 0,
-      "decision": "Audit before generating; existing assets are reused"
+      "decision": "Focused terminal screenshot comparison, one board at a time; existing motif families reused in first-family section/decor references."
     },
     {
       "image_id": "GEN-35",
@@ -383,28 +383,28 @@
       "image_id": "GEN-41",
       "title": "Column and capital masters",
       "source_file": "images/illustrated-boards/GEN-41.png",
-      "stage": "pending-source-panel-index",
+      "stage": "board-reviewed-for-terminal-kit;full-panel-index-deferred",
       "indexed_panel_count": 0,
       "new_generation_count": 0,
-      "decision": "Audit before generating; existing assets are reused"
+      "decision": "Focused terminal screenshot comparison, one board at a time; existing motif families reused in first-family section/decor references."
     },
     {
       "image_id": "GEN-44",
       "title": "Crowns, roofs and star finials",
       "source_file": "images/illustrated-boards/GEN-44.png",
-      "stage": "pending-source-panel-index",
+      "stage": "board-reviewed-for-terminal-kit;full-panel-index-deferred",
       "indexed_panel_count": 0,
       "new_generation_count": 0,
-      "decision": "Audit before generating; existing assets are reused"
+      "decision": "Focused terminal screenshot comparison, one board at a time; existing motif families reused in first-family section/decor references."
     },
     {
       "image_id": "GEN-45",
       "title": "Lanterns and metalwork",
       "source_file": "images/illustrated-boards/GEN-45.png",
-      "stage": "pending-source-panel-index",
+      "stage": "board-reviewed-for-terminal-kit;full-panel-index-deferred",
       "indexed_panel_count": 0,
       "new_generation_count": 0,
-      "decision": "Audit before generating; existing assets are reused"
+      "decision": "Focused terminal screenshot comparison, one board at a time; existing motif families reused in first-family section/decor references."
     }
   ],
   "palace_scope_register": "PALACE-STRUCTURE-AND-DETAIL-REGISTER.md"

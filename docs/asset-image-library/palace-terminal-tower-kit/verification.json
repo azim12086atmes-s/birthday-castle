@@ -1,0 +1,21 @@
+{
+  "source_family": "Western terminal tower only",
+  "structural_sections": 4,
+  "detachable_details": 16,
+  "direct_source_section_crops": 4,
+  "direct_crops_match_source_pixels": true,
+  "joint_target_count": 3,
+  "shared_octagonal_profiles_declared": true,
+  "actual_3D_joint_fit_verified": false,
+  "generated_meshes": 0,
+  "all_archive_hashes_verified": true,
+  "archive_images": 630,
+  "model_targets": 189,
+  "original45_boards_preserved": true,
+  "selected_or_reserved_sheets": 68,
+  "palace_selected_or_reserved": 51,
+  "palace_cap": 65,
+  "global_cap": 230,
+  "review_status": "pending-user-reference-review",
+  "limits": "Illustrated proportions/backs are proposals; direct source cuts control visible proportions; no construction geometry validated."
+}

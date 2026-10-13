@@ -1,6 +1,6 @@
 # Birthday Castle image archive
 
-This archive contains **617 distinct image files** (552.4 MiB), including the 45 original illustrated boards, later generated concepts, vector drawings, crops, previews and build renders.
+This archive contains **630 distinct image files** (566.1 MiB), including the 45 original illustrated boards, later generated concepts, vector drawings, crops, previews and build renders.
 
 The active palace reference is **GEN-37**, with GEN-03 and GEN-16 as supporting views. Additional studies are retained for review; preservation does not mean approval. The corrected INT-C01 floor uses rose and ivory marble.
 
@@ -20,13 +20,18 @@ Use [the illustrated boards](images/illustrated-boards) to browse the original a
 | [palace-front-and-entrance-corrections](palace-front-correction/README.md) | 2 |
 | [palace-layer-reference-sheets](palace-layer-sheets/README.md) | 4 |
 | [palace-roof-layouts](palace-roof-plan/README.md) | 1 |
-| [palace-wall-return-studies](palace-side-rear/README.md) | 2 |
 | [palace-structural-studies](images/palace-structural-studies) | 1 |
-| [palace-structure-drafts](images/palace-structure-drafts) | 9 |
+| [palace-structure-drafts](images/palace-structure-drafts) | 10 |
+| [palace-wall-input-crops](palace-wall-kits/SOURCE-REVIEW.md) | 3 |
+| [palace-wall-module-kits](palace-wall-kits/index.html) | 3 |
+| [palace-wall-return-studies](palace-side-rear/README.md) | 2 |
 | [previews-and-reference-copies](images/previews-and-reference-copies) | 237 |
 | [reference-crops-and-studies](images/reference-crops-and-studies) | 73 |
 | [renders-and-screenshots](images/renders-and-screenshots) | 48 |
 | [superseded-pack-revisions](images/superseded-pack-revisions) | 1 |
+| [terminal-tower-component-kits](palace-terminal-tower-kit/index.html) | 2 |
+| [terminal-tower-rejected-drafts](palace-terminal-tower-kit/rejected-drafts/PAL-TOWER-001-R01.png) | 1 |
+| [terminal-tower-source-sections](palace-terminal-tower-kit/index.html) | 4 |
 | [vector-drawings](images/vector-drawings) | 130 |
 
 All image bytes are unchanged. Identical copies are stored once, with every original path listed in the manifest. Different previews and cropped versions remain separate. Native Blender files, application changes and non-image documents are outside this image-only archive.
@@ -124,4 +129,8 @@ The owner clarified [side/rear wall-face gaps](palace-side-rear/README.md):100 g
 
 The [whole top view](palace-roof-plan/index.html) centres the highest ward and steps down outward. It includes33 inventoried tower placements and11 dry stairs linking ground/L1 and every higher pair on west,east and rear. Walls retain100 m side/75 m rear gaps and the established south approach. Working800×680 m envelope and extra60 m upper-front setback are proposed. One unused wall-body slot transfers to layout; family caps7/9 still sum with other families to65.
 
-The [plain palace roof plan](palace-roof-plan/index.html) reuses [reviewed garden and courtyard motifs](palace-roof-plan/GARDEN-SOURCE-REVIEW.md), with tower circles and schematic stair/path connections. The earlier ornamental plan is retained as history.
+The archived, user-reported inaccurate [roof-plan attempt](palace-roof-plan/index.html) reuses [reviewed garden and courtyard motifs](palace-roof-plan/GARDEN-SOURCE-REVIEW.md), with tower circles and schematic stair/path connections. The earlier ornamental plan is retained as history.
+
+The active pass is [modular palace walls](palace-wall-kits/index.html): three sheets and twelve named structural references. Whole-palace layout iteration is paused. A complete section inventory will be compiled later.
+
+Active screenshot-led work: [first terminal tower kit](palace-terminal-tower-kit/index.html), four structural sections and16 detail pieces. Other families remain queued; full section inventory is deferred.

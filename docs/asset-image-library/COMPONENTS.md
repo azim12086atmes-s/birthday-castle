@@ -178,3 +178,41 @@ These layer reconstructions were reported inconsistent and retired from placemen
 ## Complete roof layout and staircase network
 
 [PAL-ROOF-PLAN-001](palace-roof-plan/PAL-ROOF-PLAN-001.png) is a coordinate-authored layout proposal, with [33 placement IDs](palace-roof-plan/tower-placements.csv) and [11 staircase links](palace-roof-plan/stair-connections.csv). Placement IDs name instances, not new mesh assets. Match generated models to their archetype and fill mesh_asset_id in the placement register when models exist. Source GEN-37 remains the appearance master; proposed depths require review.
+
+## Initial modular palace walls
+
+| PACK-PAL-WALL-L1-S01 | Straight three-bay arcade | [PACK-PAL-WALL-L1](palace-wall-kits/PACK-PAL-WALL-L1.png) |
+| PACK-PAL-WALL-L1-S02 | Angled two-bay return | [PACK-PAL-WALL-L1](palace-wall-kits/PACK-PAL-WALL-L1.png) |
+| PACK-PAL-WALL-L1-S03 | Curved three-bay wall | [PACK-PAL-WALL-L1](palace-wall-kits/PACK-PAL-WALL-L1.png) |
+| PACK-PAL-WALL-L1-S04 | Tower / end-pier junction | [PACK-PAL-WALL-L1](palace-wall-kits/PACK-PAL-WALL-L1.png) |
+| PACK-PAL-WALL-L2-S01 | Single great-window wall | [PACK-PAL-WALL-L2](palace-wall-kits/PACK-PAL-WALL-L2.png) |
+| PACK-PAL-WALL-L2-S02 | Central gate wall host | [PACK-PAL-WALL-L2](palace-wall-kits/PACK-PAL-WALL-L2.png) |
+| PACK-PAL-WALL-L2-S03 | Angled great-window return | [PACK-PAL-WALL-L2](palace-wall-kits/PACK-PAL-WALL-L2.png) |
+| PACK-PAL-WALL-L2-S04 | Solid spacer / tower junction | [PACK-PAL-WALL-L2](palace-wall-kits/PACK-PAL-WALL-L2.png) |
+| PACK-PAL-WALL-UP-S01 | Straight medium-window gallery | [PACK-PAL-WALL-UP](palace-wall-kits/PACK-PAL-WALL-UP.png) |
+| PACK-PAL-WALL-UP-S02 | Narrow-lancet wall variant | [PACK-PAL-WALL-UP](palace-wall-kits/PACK-PAL-WALL-UP.png) |
+| PACK-PAL-WALL-UP-S03 | Angled two-bay gallery return | [PACK-PAL-WALL-UP](palace-wall-kits/PACK-PAL-WALL-UP.png) |
+| PACK-PAL-WALL-UP-S04 | Gallery / tower junction | [PACK-PAL-WALL-UP](palace-wall-kits/PACK-PAL-WALL-UP.png) |
+
+## First terminal tower screenshot family
+
+| PAL-TOWER-001-S01 | Stepped pedestal | [PAL-TOWER-001](palace-terminal-tower-kit/PAL-TOWER-001.png) |
+| PAL-TOWER-001-S02 | Tall star-glazed shaft | [PAL-TOWER-001](palace-terminal-tower-kit/PAL-TOWER-001.png) |
+| PAL-TOWER-001-S03 | Arched crown gallery | [PAL-TOWER-001](palace-terminal-tower-kit/PAL-TOWER-001.png) |
+| PAL-TOWER-001-S04 | Onion roof and finial | [PAL-TOWER-001](palace-terminal-tower-kit/PAL-TOWER-001.png) |
+| PAL-TOWER-001-D01 | Engaged half-column shaft | [PAL-TOWER-001-DECOR](palace-terminal-tower-kit/PAL-TOWER-001-DECOR.png) |
+| PAL-TOWER-001-D02 | Leaf capital and arch impost | [PAL-TOWER-001-DECOR](palace-terminal-tower-kit/PAL-TOWER-001-DECOR.png) |
+| PAL-TOWER-001-D03 | Column foot collar | [PAL-TOWER-001-DECOR](palace-terminal-tower-kit/PAL-TOWER-001-DECOR.png) |
+| PAL-TOWER-001-D04 | Pointed arch moulding frame | [PAL-TOWER-001-DECOR](palace-terminal-tower-kit/PAL-TOWER-001-DECOR.png) |
+| PAL-TOWER-001-D05 | White floral spandrel relief | [PAL-TOWER-001-DECOR](palace-terminal-tower-kit/PAL-TOWER-001-DECOR.png) |
+| PAL-TOWER-001-D06 | Rose and vine frieze repeat | [PAL-TOWER-001-DECOR](palace-terminal-tower-kit/PAL-TOWER-001-DECOR.png) |
+| PAL-TOWER-001-D07 | Lower belt cornice repeat | [PAL-TOWER-001-DECOR](palace-terminal-tower-kit/PAL-TOWER-001-DECOR.png) |
+| PAL-TOWER-001-D08 | Octagonal corner cornice return | [PAL-TOWER-001-DECOR](palace-terminal-tower-kit/PAL-TOWER-001-DECOR.png) |
+| PAL-TOWER-001-D09 | Miniature gallery arch surround | [PAL-TOWER-001-DECOR](palace-terminal-tower-kit/PAL-TOWER-001-DECOR.png) |
+| PAL-TOWER-001-D10 | Gold eave leaf crest | [PAL-TOWER-001-DECOR](palace-terminal-tower-kit/PAL-TOWER-001-DECOR.png) |
+| PAL-TOWER-001-D11 | Curved gold roof rib | [PAL-TOWER-001-DECOR](palace-terminal-tower-kit/PAL-TOWER-001-DECOR.png) |
+| PAL-TOWER-001-D12 | Gold spindle and collar stack | [PAL-TOWER-001-DECOR](palace-terminal-tower-kit/PAL-TOWER-001-DECOR.png) |
+| PAL-TOWER-001-D13 | Gold star finial | [PAL-TOWER-001-DECOR](palace-terminal-tower-kit/PAL-TOWER-001-DECOR.png) |
+| PAL-TOWER-001-D14 | Scroll lantern arm and mount | [PAL-TOWER-001-DECOR](palace-terminal-tower-kit/PAL-TOWER-001-DECOR.png) |
+| PAL-TOWER-001-D15 | Glazed lantern cage | [PAL-TOWER-001-DECOR](palace-terminal-tower-kit/PAL-TOWER-001-DECOR.png) |
+| PAL-TOWER-001-D16 | Pendant drop and hanger | [PAL-TOWER-001-DECOR](palace-terminal-tower-kit/PAL-TOWER-001-DECOR.png) |

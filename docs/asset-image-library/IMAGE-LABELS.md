@@ -700,3 +700,22 @@ These layer reconstructions were reported inconsistent and retired from placemen
 [PAL-ROOF-PLAN-001](palace-roof-plan/PAL-ROOF-PLAN-001.png) is a coordinate-authored layout proposal, with [33 placement IDs](palace-roof-plan/tower-placements.csv) and [11 staircase links](palace-roof-plan/stair-connections.csv). Placement IDs name instances, not new mesh assets. Match generated models to their archetype and fill mesh_asset_id in the placement register when models exist. Source GEN-37 remains the appearance master; proposed depths require review.
 
 R03 uses plain tower circles and source-reviewed garden symbols. See [garden placements](palace-roof-plan/garden-placements.csv) and [source review](palace-roof-plan/GARDEN-SOURCE-REVIEW.md). [HIST-PAL-ROOF-PLAN-001-R02](palace-roof-plan/superseded/R02/PAL-ROOF-PLAN-001.png) preserves the previous diagram; it is not an extra selected sheet.
+
+## Modular palace wall batch
+
+| PACK-PAL-WALL-L1 | [Lower arcade wall kit](palace-wall-kits/PACK-PAL-WALL-L1.png) | PACK-PAL-WALL-L1-S01; PACK-PAL-WALL-L1-S02; PACK-PAL-WALL-L1-S03; PACK-PAL-WALL-L1-S04 |
+| SRC-PACK-PAL-WALL-L1 | [PACK-PAL-WALL-L1 component-detail input crop](palace-wall-kits/source-references/PACK-PAL-WALL-L1-source.png) |  |
+| PACK-PAL-WALL-L2 | [Great-window and gate wall kit](palace-wall-kits/PACK-PAL-WALL-L2.png) | PACK-PAL-WALL-L2-S01; PACK-PAL-WALL-L2-S02; PACK-PAL-WALL-L2-S03; PACK-PAL-WALL-L2-S04 |
+| SRC-PACK-PAL-WALL-L2 | [PACK-PAL-WALL-L2 component-detail input crop](palace-wall-kits/source-references/PACK-PAL-WALL-L2-source.png) |  |
+| PACK-PAL-WALL-UP | [Shared L3 and L4 gallery wall kit](palace-wall-kits/PACK-PAL-WALL-UP.png) | PACK-PAL-WALL-UP-S01; PACK-PAL-WALL-UP-S02; PACK-PAL-WALL-UP-S03; PACK-PAL-WALL-UP-S04 |
+| SRC-PACK-PAL-WALL-UP | [PACK-PAL-WALL-UP component-detail input crop](palace-wall-kits/source-references/PACK-PAL-WALL-UP-source.png) |  |
+
+## Terminal tower section and decor kit
+
+| SRC-PAL-TOWER-001-S01 | [Stepped pedestal — direct original source section](palace-terminal-tower-kit/source-sections/PAL-TOWER-001-S01.png) | PAL-TOWER-001-S01 |
+| SRC-PAL-TOWER-001-S02 | [Tall star-glazed shaft — direct original source section](palace-terminal-tower-kit/source-sections/PAL-TOWER-001-S02.png) | PAL-TOWER-001-S02 |
+| SRC-PAL-TOWER-001-S03 | [Arched crown gallery — direct original source section](palace-terminal-tower-kit/source-sections/PAL-TOWER-001-S03.png) | PAL-TOWER-001-S03 |
+| SRC-PAL-TOWER-001-S04 | [Onion roof and finial — direct original source section](palace-terminal-tower-kit/source-sections/PAL-TOWER-001-S04.png) | PAL-TOWER-001-S04 |
+| PAL-TOWER-001 | [Western terminal tower — four structural sections](palace-terminal-tower-kit/PAL-TOWER-001.png) | PAL-TOWER-001-S01; PAL-TOWER-001-S02; PAL-TOWER-001-S03; PAL-TOWER-001-S04 |
+| PAL-TOWER-001-DECOR | [Terminal tower —16 detachable details](palace-terminal-tower-kit/PAL-TOWER-001-DECOR.png) | PAL-TOWER-001-D01; PAL-TOWER-001-D02; PAL-TOWER-001-D03; PAL-TOWER-001-D04; PAL-TOWER-001-D05; PAL-TOWER-001-D06; PAL-TOWER-001-D07; PAL-TOWER-001-D08; PAL-TOWER-001-D09; PAL-TOWER-001-D10; PAL-TOWER-001-D11; PAL-TOWER-001-D12; PAL-TOWER-001-D13; PAL-TOWER-001-D14; PAL-TOWER-001-D15; PAL-TOWER-001-D16 |
+| DRAFT-PAL-TOWER-001-R01 | [Terminal section study — rejected relative proportions](palace-terminal-tower-kit/rejected-drafts/PAL-TOWER-001-R01.png) |  |

@@ -1,8 +1,8 @@
 {
   "date": "2026-10-13",
-  "distinct_image_count": 617,
-  "source_file_count": 874,
-  "total_bytes": 579273000,
+  "distinct_image_count": 630,
+  "source_file_count": 887,
+  "total_bytes": 593575783,
   "categories": {
     "additional-generated-studies": 33,
     "component-development-studies": 3,
@@ -18,11 +18,16 @@
     "palace-roof-layouts": 1,
     "palace-structural-studies": 1,
     "palace-structure-drafts": 10,
+    "palace-wall-input-crops": 3,
+    "palace-wall-module-kits": 3,
     "palace-wall-return-studies": 2,
     "previews-and-reference-copies": 237,
     "reference-crops-and-studies": 73,
     "renders-and-screenshots": 48,
     "superseded-pack-revisions": 1,
+    "terminal-tower-component-kits": 2,
+    "terminal-tower-rejected-drafts": 1,
+    "terminal-tower-source-sections": 4,
     "vector-drawings": 130
   },
   "active_palace_authority": "GEN-37 original front elevation; GEN-03 and GEN-16 supporting views",
@@ -12115,8 +12120,8 @@
       ],
       "label": "PAL-ROOF-PLAN-001 \u2014 Plain palace roof, stair and garden plan",
       "reference_role": "coordinate-authored-layout-diagram",
-      "design_status": "plain symbols; garden fitting, depths and envelope proposed",
-      "review_status": "pending-user-review",
+      "design_status": "Archived proposal; missed wings/corners; component-first work replaces whole-layout iteration",
+      "review_status": "user-reported-inaccurate;whole-layout-paused",
       "related_image_ids": [
         "GEN-37",
         "GEN-03",
@@ -12164,6 +12169,328 @@
       "related_image_ids": [
         "PAL-ROOF-PLAN-001"
       ]
+    },
+    {
+      "id": "PACK-PAL-WALL-L1",
+      "title": "Lower arcade wall kit",
+      "category": "palace-wall-module-kits",
+      "file": "palace-wall-kits/PACK-PAL-WALL-L1.png",
+      "sha256": "e038afa09829181c54445adaf078f0f6a0a7541b31947a7781628ac29e5fb264",
+      "bytes": 2640817,
+      "reference_role": "source-derived-modular-wall-reference",
+      "design_status": "wall bodies and join extents inferred; existing glass and carving appearance reused",
+      "review_status": "pending-user-review",
+      "source_aliases": [
+        "/workspace/generated_images/exec-3c21d183-da45-4fae-9633-72b614923273.png"
+      ],
+      "alias_ids": [],
+      "component_ids": [
+        "PACK-PAL-WALL-L1-S01",
+        "PACK-PAL-WALL-L1-S02",
+        "PACK-PAL-WALL-L1-S03",
+        "PACK-PAL-WALL-L1-S04"
+      ],
+      "related_image_ids": [
+        "GEN-37",
+        "GEN-43",
+        "GEN-19",
+        "GEN-42",
+        "SRC-PACK-PAL-WALL-L1"
+      ],
+      "label": "PACK-PAL-WALL-L1 \u2014 Lower arcade wall kit"
+    },
+    {
+      "id": "SRC-PACK-PAL-WALL-L1",
+      "title": "PACK-PAL-WALL-L1 component-detail input crop",
+      "category": "palace-wall-input-crops",
+      "file": "palace-wall-kits/source-references/PACK-PAL-WALL-L1-source.png",
+      "sha256": "bf3f9514bfb70ebbf6dcb61168c276edf5b2b2f29f22237709dff2547302dbf6",
+      "bytes": 357242,
+      "reference_role": "direct-source-crop",
+      "design_status": "existing component detail; source preserved",
+      "review_status": "visually-reviewed-one-at-a-time",
+      "source_aliases": [
+        "/workspace/shared/palace-wall-kit-references/PACK-PAL-WALL-L1-source.png"
+      ],
+      "alias_ids": [],
+      "component_ids": [],
+      "related_image_ids": [
+        "GEN-43"
+      ],
+      "label": "SRC-PACK-PAL-WALL-L1 \u2014 PACK-PAL-WALL-L1 component-detail input crop"
+    },
+    {
+      "id": "PACK-PAL-WALL-L2",
+      "title": "Great-window and gate wall kit",
+      "category": "palace-wall-module-kits",
+      "file": "palace-wall-kits/PACK-PAL-WALL-L2.png",
+      "sha256": "d450b59797d6b4178f7d2a1b53a3ad6073dc7adc559f803645b3bae6950496d9",
+      "bytes": 2253707,
+      "reference_role": "source-derived-modular-wall-reference",
+      "design_status": "wall bodies and join extents inferred; existing glass and carving appearance reused",
+      "review_status": "pending-user-review",
+      "source_aliases": [
+        "/workspace/generated_images/exec-5166ceb3-9d58-4218-abc2-8c517dee91fd.png"
+      ],
+      "alias_ids": [],
+      "component_ids": [
+        "PACK-PAL-WALL-L2-S01",
+        "PACK-PAL-WALL-L2-S02",
+        "PACK-PAL-WALL-L2-S03",
+        "PACK-PAL-WALL-L2-S04"
+      ],
+      "related_image_ids": [
+        "GEN-37",
+        "GEN-38",
+        "GEN-19",
+        "GEN-42",
+        "SRC-PACK-PAL-WALL-L2"
+      ],
+      "label": "PACK-PAL-WALL-L2 \u2014 Great-window and gate wall kit"
+    },
+    {
+      "id": "SRC-PACK-PAL-WALL-L2",
+      "title": "PACK-PAL-WALL-L2 component-detail input crop",
+      "category": "palace-wall-input-crops",
+      "file": "palace-wall-kits/source-references/PACK-PAL-WALL-L2-source.png",
+      "sha256": "c7b4c770ee9a27b079f10944a055e5157aece985db6e16effdff9a9832fea7fa",
+      "bytes": 333834,
+      "reference_role": "direct-source-crop",
+      "design_status": "existing component detail; source preserved",
+      "review_status": "visually-reviewed-one-at-a-time",
+      "source_aliases": [
+        "/workspace/shared/palace-wall-kit-references/PACK-PAL-WALL-L2-source.png"
+      ],
+      "alias_ids": [],
+      "component_ids": [],
+      "related_image_ids": [
+        "GEN-38"
+      ],
+      "label": "SRC-PACK-PAL-WALL-L2 \u2014 PACK-PAL-WALL-L2 component-detail input crop"
+    },
+    {
+      "id": "PACK-PAL-WALL-UP",
+      "title": "Shared L3 and L4 gallery wall kit",
+      "category": "palace-wall-module-kits",
+      "file": "palace-wall-kits/PACK-PAL-WALL-UP.png",
+      "sha256": "42d0727a3644db9265f9e8b3fe2a0ebbd5e8e8316dc469e00f0c03de34ab55b8",
+      "bytes": 2279446,
+      "reference_role": "source-derived-modular-wall-reference",
+      "design_status": "wall bodies and join extents inferred; existing glass and carving appearance reused",
+      "review_status": "pending-user-review",
+      "source_aliases": [
+        "/workspace/generated_images/exec-a60b70de-e76c-454b-a608-f7c68062f052.png"
+      ],
+      "alias_ids": [],
+      "component_ids": [
+        "PACK-PAL-WALL-UP-S01",
+        "PACK-PAL-WALL-UP-S02",
+        "PACK-PAL-WALL-UP-S03",
+        "PACK-PAL-WALL-UP-S04"
+      ],
+      "related_image_ids": [
+        "GEN-37",
+        "GEN-38",
+        "GEN-19",
+        "GEN-42",
+        "SRC-PACK-PAL-WALL-UP"
+      ],
+      "label": "PACK-PAL-WALL-UP \u2014 Shared L3 and L4 gallery wall kit"
+    },
+    {
+      "id": "SRC-PACK-PAL-WALL-UP",
+      "title": "PACK-PAL-WALL-UP component-detail input crop",
+      "category": "palace-wall-input-crops",
+      "file": "palace-wall-kits/source-references/PACK-PAL-WALL-UP-source.png",
+      "sha256": "b65751d0df2fc2a0e8a7923612772f89269f10a9bf735e775341f686721e8a5d",
+      "bytes": 230449,
+      "reference_role": "direct-source-crop",
+      "design_status": "existing component detail; source preserved",
+      "review_status": "visually-reviewed-one-at-a-time",
+      "source_aliases": [
+        "/workspace/shared/palace-wall-kit-references/PACK-PAL-WALL-UP-source.png"
+      ],
+      "alias_ids": [],
+      "component_ids": [],
+      "related_image_ids": [
+        "GEN-38"
+      ],
+      "label": "SRC-PACK-PAL-WALL-UP \u2014 PACK-PAL-WALL-UP component-detail input crop"
+    },
+    {
+      "id": "SRC-PAL-TOWER-001-S01",
+      "title": "Stepped pedestal \u2014 direct original source section",
+      "category": "terminal-tower-source-sections",
+      "file": "palace-terminal-tower-kit/source-sections/PAL-TOWER-001-S01.png",
+      "sha256": "422e4330c7724e4af6310899d1fec6a1674deafa87dded9d8ab493cf294c962d",
+      "bytes": 26634,
+      "source_aliases": [],
+      "alias_ids": [],
+      "component_ids": [
+        "PAL-TOWER-001-S01"
+      ],
+      "reference_role": "direct-source-section-crop",
+      "design_status": "Source front pixels; crop bounds are section guides, not solid-object masks",
+      "review_status": "source-reference",
+      "related_image_ids": [
+        "REF-2BAD18DEFB6A",
+        "GEN-37"
+      ],
+      "label": "SRC-PAL-TOWER-001-S01 \u2014 Stepped pedestal \u2014 direct original source section"
+    },
+    {
+      "id": "SRC-PAL-TOWER-001-S02",
+      "title": "Tall star-glazed shaft \u2014 direct original source section",
+      "category": "terminal-tower-source-sections",
+      "file": "palace-terminal-tower-kit/source-sections/PAL-TOWER-001-S02.png",
+      "sha256": "759b4fe4510bdac6d17febd9c80c4a60462de92c075775b60f4f00c2aca3254c",
+      "bytes": 51517,
+      "source_aliases": [],
+      "alias_ids": [],
+      "component_ids": [
+        "PAL-TOWER-001-S02"
+      ],
+      "reference_role": "direct-source-section-crop",
+      "design_status": "Source front pixels; crop bounds are section guides, not solid-object masks",
+      "review_status": "source-reference",
+      "related_image_ids": [
+        "REF-2BAD18DEFB6A",
+        "GEN-37"
+      ],
+      "label": "SRC-PAL-TOWER-001-S02 \u2014 Tall star-glazed shaft \u2014 direct original source section"
+    },
+    {
+      "id": "SRC-PAL-TOWER-001-S03",
+      "title": "Arched crown gallery \u2014 direct original source section",
+      "category": "terminal-tower-source-sections",
+      "file": "palace-terminal-tower-kit/source-sections/PAL-TOWER-001-S03.png",
+      "sha256": "097ff082afbcdbdb3a17d8822636ac9f33eff0de78eae9e5faae26968cc2fe37",
+      "bytes": 22682,
+      "source_aliases": [],
+      "alias_ids": [],
+      "component_ids": [
+        "PAL-TOWER-001-S03"
+      ],
+      "reference_role": "direct-source-section-crop",
+      "design_status": "Source front pixels; crop bounds are section guides, not solid-object masks",
+      "review_status": "source-reference",
+      "related_image_ids": [
+        "REF-2BAD18DEFB6A",
+        "GEN-37"
+      ],
+      "label": "SRC-PAL-TOWER-001-S03 \u2014 Arched crown gallery \u2014 direct original source section"
+    },
+    {
+      "id": "SRC-PAL-TOWER-001-S04",
+      "title": "Onion roof and finial \u2014 direct original source section",
+      "category": "terminal-tower-source-sections",
+      "file": "palace-terminal-tower-kit/source-sections/PAL-TOWER-001-S04.png",
+      "sha256": "52be71f323adbc667ee1baa0b52ae382624c05688504ba752a39336b712a0301",
+      "bytes": 24664,
+      "source_aliases": [],
+      "alias_ids": [],
+      "component_ids": [
+        "PAL-TOWER-001-S04"
+      ],
+      "reference_role": "direct-source-section-crop",
+      "design_status": "Source front pixels; crop bounds are section guides, not solid-object masks",
+      "review_status": "source-reference",
+      "related_image_ids": [
+        "REF-2BAD18DEFB6A",
+        "GEN-37"
+      ],
+      "label": "SRC-PAL-TOWER-001-S04 \u2014 Onion roof and finial \u2014 direct original source section"
+    },
+    {
+      "id": "PAL-TOWER-001",
+      "title": "Western terminal tower \u2014 four structural sections",
+      "category": "terminal-tower-component-kits",
+      "file": "palace-terminal-tower-kit/PAL-TOWER-001.png",
+      "sha256": "81ea8c304ae4a2aa66382d21e7ab64cc6b907fa9bd4f1972bd97a34ec8ceba1c",
+      "bytes": 1985165,
+      "source_aliases": [
+        "/workspace/generated_images/exec-3b87bce6-1302-4694-b1a0-28b360390f18.png"
+      ],
+      "alias_ids": [],
+      "component_ids": [
+        "PAL-TOWER-001-S01",
+        "PAL-TOWER-001-S02",
+        "PAL-TOWER-001-S03",
+        "PAL-TOWER-001-S04"
+      ],
+      "reference_role": "source-derived-component-reference",
+      "design_status": "Visible tower vocabulary reused; hidden geometry/mounting profiles and displayed scale inferred",
+      "review_status": "pending-user-review",
+      "related_image_ids": [
+        "REF-2BAD18DEFB6A",
+        "GEN-37",
+        "GEN-41",
+        "GEN-44",
+        "GEN-45"
+      ],
+      "label": "PAL-TOWER-001 \u2014 Western terminal tower \u2014 four structural sections"
+    },
+    {
+      "id": "PAL-TOWER-001-DECOR",
+      "title": "Terminal tower \u201416 detachable details",
+      "category": "terminal-tower-component-kits",
+      "file": "palace-terminal-tower-kit/PAL-TOWER-001-DECOR.png",
+      "sha256": "b627ba489424ac45c0cc83ad615acb4e193d9f12affd47e4942c3e7da67559f5",
+      "bytes": 2074404,
+      "source_aliases": [
+        "/workspace/generated_images/exec-74a65497-ad84-499d-a997-8384a1491b81.png"
+      ],
+      "alias_ids": [],
+      "component_ids": [
+        "PAL-TOWER-001-D01",
+        "PAL-TOWER-001-D02",
+        "PAL-TOWER-001-D03",
+        "PAL-TOWER-001-D04",
+        "PAL-TOWER-001-D05",
+        "PAL-TOWER-001-D06",
+        "PAL-TOWER-001-D07",
+        "PAL-TOWER-001-D08",
+        "PAL-TOWER-001-D09",
+        "PAL-TOWER-001-D10",
+        "PAL-TOWER-001-D11",
+        "PAL-TOWER-001-D12",
+        "PAL-TOWER-001-D13",
+        "PAL-TOWER-001-D14",
+        "PAL-TOWER-001-D15",
+        "PAL-TOWER-001-D16"
+      ],
+      "reference_role": "source-derived-component-reference",
+      "design_status": "Visible tower vocabulary reused; hidden geometry/mounting profiles and displayed scale inferred",
+      "review_status": "pending-user-review",
+      "related_image_ids": [
+        "REF-2BAD18DEFB6A",
+        "GEN-37",
+        "GEN-41",
+        "GEN-44",
+        "GEN-45"
+      ],
+      "label": "PAL-TOWER-001-DECOR \u2014 Terminal tower \u201416 detachable details"
+    },
+    {
+      "id": "DRAFT-PAL-TOWER-001-R01",
+      "title": "Terminal section study \u2014 rejected relative proportions",
+      "category": "terminal-tower-rejected-drafts",
+      "file": "palace-terminal-tower-kit/rejected-drafts/PAL-TOWER-001-R01.png",
+      "sha256": "0f4d66d989be7beaf7300df67e37c6d4f52c60d79f616234e99ae3d209abca0e",
+      "bytes": 2022222,
+      "source_aliases": [
+        "/workspace/generated_images/exec-cf42bf7f-19d4-42b3-b2e0-227afa59fa0e.png"
+      ],
+      "alias_ids": [],
+      "component_ids": [],
+      "reference_role": "rejected-generated-section-study",
+      "design_status": "Rejected: pedestal/finial proportions drifted",
+      "review_status": "rejected",
+      "related_image_ids": [
+        "PAL-TOWER-001",
+        "REF-2BAD18DEFB6A"
+      ],
+      "label": "DRAFT-PAL-TOWER-001-R01 \u2014 Terminal section study \u2014 rejected relative proportions"
     }
   ],
   "label_schema_version": 1

@@ -25,7 +25,7 @@ GEN-12,Open sea and uneven shore,images/illustrated-boards/GEN-12.png,pending-so
 GEN-13,Garden planting kit,images/illustrated-boards/GEN-13.png,pending-source-panel-index,0,0,Audit before generating; existing assets are reused
 GEN-14,Rose Court and Moon Courtyard,images/illustrated-boards/GEN-14.png,source-board-reviewed-for-roof-layout,0,0,"Original PNG reviewed individually; reuse distinct court, garden, fountain and conservatory motifs in plain plan; no new component sheet generated"
 GEN-15,Terrace gardens and grand approach,images/illustrated-boards/GEN-15.png,source-board-reviewed-for-roof-layout,0,0,"Original PNG reviewed individually; reuse distinct court, garden, fountain and conservatory motifs in plain plan; no new component sheet generated"
-GEN-17,"Tower crowns, roofs and balconies",images/illustrated-boards/GEN-17.png,pending-source-panel-index,0,0,Audit before generating; existing assets are reused
+GEN-17,"Tower crowns, roofs and balconies",images/illustrated-boards/GEN-17.png,board-reviewed-for-terminal-kit;full-panel-index-deferred,0,0,"Focused terminal screenshot comparison, one board at a time; existing motif families reused in first-family section/decor references."
 GEN-20,Garden furnishings and lighting,images/illustrated-boards/GEN-20.png,pending-source-panel-index,0,0,Audit before generating; existing assets are reused
 GEN-21,"Cliffs, reefs and terrain",images/illustrated-boards/GEN-21.png,pending-source-panel-index,0,0,Audit before generating; existing assets are reused
 GEN-22,"Paths, stairs and water connections",images/illustrated-boards/GEN-22.png,pending-source-panel-index,0,0,Audit before generating; existing assets are reused
@@ -36,11 +36,11 @@ GEN-26,Palace interior architecture,images/illustrated-boards/GEN-26.png,pending
 GEN-27,Kingdom landmark building studies,images/illustrated-boards/GEN-27.png,pending-source-panel-index,0,0,Audit before generating; existing assets are reused
 GEN-28,Lotus travel and wishing objects,images/illustrated-boards/GEN-28.png,pending-source-panel-index,0,0,Audit before generating; existing assets are reused
 GEN-30,Wall carvings and pattern grammar,images/illustrated-boards/GEN-30.png,pending-source-panel-index,0,0,Audit before generating; existing assets are reused
-GEN-32,"Crown ornaments, turret joints and lanterns",images/illustrated-boards/GEN-32.png,pending-source-panel-index,0,0,Audit before generating; existing assets are reused
+GEN-32,"Crown ornaments, turret joints and lanterns",images/illustrated-boards/GEN-32.png,board-reviewed-for-terminal-kit;full-panel-index-deferred,0,0,"Focused terminal screenshot comparison, one board at a time; existing motif families reused in first-family section/decor references."
 GEN-35,Garden artifacts and small fittings,images/illustrated-boards/GEN-35.png,pending-source-panel-index,0,0,Audit before generating; existing assets are reused
 GEN-36,Conservatory joints and paving,images/illustrated-boards/GEN-36.png,pending-source-panel-index,0,0,Audit before generating; existing assets are reused
 GEN-38,Glass patterns,images/illustrated-boards/GEN-38.png,pending-source-panel-index,0,0,Audit before generating; existing assets are reused
 GEN-39,Rails and gallery patterns,images/illustrated-boards/GEN-39.png,pending-source-panel-index,0,0,Audit before generating; existing assets are reused
-GEN-41,Column and capital masters,images/illustrated-boards/GEN-41.png,pending-source-panel-index,0,0,Audit before generating; existing assets are reused
-GEN-44,"Crowns, roofs and star finials",images/illustrated-boards/GEN-44.png,pending-source-panel-index,0,0,Audit before generating; existing assets are reused
-GEN-45,Lanterns and metalwork,images/illustrated-boards/GEN-45.png,pending-source-panel-index,0,0,Audit before generating; existing assets are reused
+GEN-41,Column and capital masters,images/illustrated-boards/GEN-41.png,board-reviewed-for-terminal-kit;full-panel-index-deferred,0,0,"Focused terminal screenshot comparison, one board at a time; existing motif families reused in first-family section/decor references."
+GEN-44,"Crowns, roofs and star finials",images/illustrated-boards/GEN-44.png,board-reviewed-for-terminal-kit;full-panel-index-deferred,0,0,"Focused terminal screenshot comparison, one board at a time; existing motif families reused in first-family section/decor references."
+GEN-45,Lanterns and metalwork,images/illustrated-boards/GEN-45.png,board-reviewed-for-terminal-kit;full-panel-index-deferred,0,0,"Focused terminal screenshot comparison, one board at a time; existing motif families reused in first-family section/decor references."

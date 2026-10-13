@@ -825,11 +825,16 @@
       "sheet_id": "PAL-TOWER-001",
       "owner": "palace",
       "family": "Tower bodies and roof assemblies",
-      "title": "Original palace \u2014 missing long tower bodies",
-      "status": "paused-for-wing-source-comparison",
-      "file": "",
-      "sha256": "",
-      "generation_attempts_in_this_pass": 0
+      "title": "Western terminal tower \u2014 four joinable structural sections",
+      "status": "generated-pending-source-and-user-review",
+      "file": "palace-terminal-tower-kit/PAL-TOWER-001.png",
+      "sha256": "81ea8c304ae4a2aa66382d21e7ab64cc6b907fa9bd4f1972bd97a34ec8ceba1c",
+      "generation_attempts_in_this_pass": 2,
+      "review_notes": "Only first terminal family. Use source cuts for relative proportions; dimensions/hidden interfaces proposed. No meshes generated.",
+      "retry_reasons": [
+        "Source comparison: pedestal too short relative to shaft and roof finial too long relative to dome; correct relative proportions without adding parts."
+      ],
+      "component_count": 4
     },
     {
       "sheet_id": "PAL-STAIR-001",
@@ -948,17 +953,52 @@
       "review_notes": "West/east appearance insets carry100/100/100 labels; rear carries75/75/75 after text correction. Rear orientation shows eastern spires left and western broad pavilion right. Actual tower depths, rear glazing choices and exact wing contours remain proposed; elevations are not a registered shared 3D projection."
     },
     {
-      "sheet_id": "PAL-ROOF-PLAN-001",
+      "sheet_id": "PACK-PAL-WALL-L1",
       "owner": "palace",
-      "family": "Layout and envelope",
-      "title": "Complete centrally nested palace roof plan",
-      "status": "plain-layout-source-reviewed-pending-review",
-      "file": "palace-roof-plan/PAL-ROOF-PLAN-001.png",
-      "sha256": "c7a4ffd16003f0faced362679e3a7c1f16853edb4fa210c5ee26fd74bbce5f85",
+      "family": "Base, wall bodies and stepped wings",
+      "title": "Lower arcade wall kit",
+      "status": "generated-pending-reference-review",
+      "file": "palace-wall-kits/PACK-PAL-WALL-L1.png",
+      "sha256": "e038afa09829181c54445adaf078f0f6a0a7541b31947a7781628ac29e5fb264",
       "generation_attempts_in_this_pass": 1,
-      "generator": "coordinate-authored Matplotlib engineering drawing",
-      "revision": "R03",
-      "source_review": "palace-roof-plan/GARDEN-SOURCE-REVIEW.md"
+      "component_count": 4,
+      "review_notes": "Exactly four separately shown sections; source palette/window families retained; nominal joins require mesh normalization."
+    },
+    {
+      "sheet_id": "PACK-PAL-WALL-L2",
+      "owner": "palace",
+      "family": "Base, wall bodies and stepped wings",
+      "title": "Great-window and gate wall kit",
+      "status": "generated-pending-reference-review",
+      "file": "palace-wall-kits/PACK-PAL-WALL-L2.png",
+      "sha256": "d450b59797d6b4178f7d2a1b53a3ad6073dc7adc559f803645b3bae6950496d9",
+      "generation_attempts_in_this_pass": 1,
+      "component_count": 4,
+      "review_notes": "Exactly four separately shown sections; source palette/window families retained; nominal joins require mesh normalization."
+    },
+    {
+      "sheet_id": "PACK-PAL-WALL-UP",
+      "owner": "palace",
+      "family": "Base, wall bodies and stepped wings",
+      "title": "Shared L3 and L4 gallery wall kit",
+      "status": "generated-pending-reference-review",
+      "file": "palace-wall-kits/PACK-PAL-WALL-UP.png",
+      "sha256": "42d0727a3644db9265f9e8b3fe2a0ebbd5e8e8316dc469e00f0c03de34ab55b8",
+      "generation_attempts_in_this_pass": 1,
+      "component_count": 4,
+      "review_notes": "Exactly four separately shown sections; source palette/window families retained; nominal joins require mesh normalization."
+    },
+    {
+      "sheet_id": "PAL-TOWER-001-DECOR",
+      "owner": "palace",
+      "family": "Glass, carvings, rails and architectural fittings",
+      "title": "Terminal tower \u201416 detachable detail pieces",
+      "status": "generated-pending-source-and-user-review",
+      "file": "palace-terminal-tower-kit/PAL-TOWER-001-DECOR.png",
+      "sha256": "b627ba489424ac45c0cc83ad615acb4e193d9f12affd47e4942c3e7da67559f5",
+      "generation_attempts_in_this_pass": 1,
+      "component_count": 16,
+      "review_notes": "Only first terminal family. Use source cuts for relative proportions; dimensions/hidden interfaces proposed. No meshes generated."
     }
   ],
   "production_pass": "palace-coverage-missing-only",
@@ -995,7 +1035,7 @@
     "side_rear_schedule": "palace-side-rear/schedule.json",
     "complete_roof_plan": "palace-roof-plan/schedule.json"
   },
-  "production_pass_status": "Full top view with central highest court, outward descending terraces and all adjacent-level stairs; proposed positions indexed",
+  "production_pass_status": "First terminal screenshot family generated:4 structural sections +16 details. One family at a time; no Blender builds; other screenshots queued.",
   "structural_sheet_rule": "Display source-fitted assemblies with existing canonical decor so identity and proportions can be checked. Bare host views are internal construction proposals, not replacements for the original decorated wing references.",
   "generation_paused": true,
   "pause_reason": "Requested roof/stair proposal finished. Painted attempt rejected; coordinate diagram covers33 placements and11 stair links. Source-depth registration remains a layout task.",
@@ -1047,6 +1087,20 @@
       "sha256": "458893ff63c9fdc686b759ff739272bf3a28298f98be54a4d64867ff1f5930aa",
       "generation_attempts_in_this_pass": 1,
       "review_notes": "Western onion pavilion, central needle group and eastern chapel-spire group present. Exact shaft proportions, attached turret counts and positions differ between some views; rear courtyard arrangements and side ward depth are proposals, not source-traced geometry."
+    },
+    {
+      "sheet_id": "PAL-ROOF-PLAN-001",
+      "owner": "palace",
+      "family": "Layout and envelope",
+      "title": "Complete centrally nested palace roof plan",
+      "status": "retired-from-final-selection;user-reported-inaccurate;whole-layout-paused",
+      "file": "palace-roof-plan/PAL-ROOF-PLAN-001.png",
+      "sha256": "c7a4ffd16003f0faced362679e3a7c1f16853edb4fa210c5ee26fd74bbce5f85",
+      "generation_attempts_in_this_pass": 1,
+      "generator": "coordinate-authored Matplotlib engineering drawing",
+      "revision": "R03",
+      "source_review": "palace-roof-plan/GARDEN-SOURCE-REVIEW.md",
+      "review_notes": "Owner redirected work to modular components after reporting inaccurate wing/corner outline. Whole-palace reconstruction is paused."
     }
   ],
   "allocation_changes": [
@@ -1055,5 +1109,7 @@
       "layout_cap": 7,
       "wall_body_cap": 9
     }
-  ]
+  ],
+  "component_workflow": "Modular walls first; later stairs, wards/wings, towers and fountain components. Exhaustive palace section inventory later.",
+  "generation_resume_reason": "Explicit source-screenshot instruction: one terminal tower family only, four mating sections and one16-piece decor pack. No Blender build."
 }

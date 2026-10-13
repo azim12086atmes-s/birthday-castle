@@ -1,0 +1,477 @@
+{
+  "scope": "Asset reference sheets; no complete palace build or paid mesh generation",
+  "inventory_policy": "Full section inventory later; this is only the initial wall batch",
+  "authority": "GEN-37 front; other sources derive components and fill details",
+  "new_sheets": 3,
+  "upper_body_reuse": "Both L3 and L4 rises are70 grid m, so use a shared gallery body family with glazing variants",
+  "kits": [
+    {
+      "sheet_id": "PACK-PAL-WALL-L1",
+      "title": "Lower arcade wall kit",
+      "height_grid_m": 60,
+      "bay_pitch_grid_m": 24,
+      "wall_thickness_grid_m": 6,
+      "source_front_authority": "GEN-37",
+      "component_reference": "GEN-43",
+      "reference_crop_xyxy": [
+        10,
+        90,
+        575,
+        402
+      ],
+      "reference_path": "/workspace/shared/palace-wall-kit-references/PACK-PAL-WALL-L1-source.png",
+      "file": "palace-wall-kits/PACK-PAL-WALL-L1.png",
+      "approval_status": "generated reference; pending user review; no mesh exists",
+      "parts": [
+        {
+          "asset_id": "PACK-PAL-WALL-L1-S01",
+          "name": "Straight three-bay arcade",
+          "function": "Reusable structural wall section hosting existing glass and decor",
+          "dimensions_grid_m": {
+            "height": 60,
+            "bay_pitch": 24,
+            "thickness": 6
+          },
+          "semantic_front": "Decorated exterior faces -Y",
+          "attachment_face": "Flat bottom Z=0 on structural floor",
+          "origin": "Floor-level inlet wall centreline",
+          "join_rule": "Plain inlet/outlet faces match wall profile and trim datums within family",
+          "reuse_class": "repeatable architecture",
+          "polygon_target": 24000,
+          "image_prompt_id": "PACK-PAL-WALL-L1",
+          "mesh_status": "not generated",
+          "objective_rejection_criteria": [
+            "Wrong arch/window hierarchy",
+            "Glazed wall replaced by open colonnade",
+            "Missing complete base, thickness or clean join end",
+            "Fused panel objects",
+            "Different base/cornice elevations",
+            "Whole palace or complete tower instead of reusable section"
+          ],
+          "reuse_component_ids": [
+            "GEN-43-M01",
+            "GEN-42-M01",
+            "GEN-42-M06"
+          ]
+        },
+        {
+          "asset_id": "PACK-PAL-WALL-L1-S02",
+          "name": "Angled two-bay return",
+          "function": "Reusable structural wall section hosting existing glass and decor",
+          "dimensions_grid_m": {
+            "height": 60,
+            "bay_pitch": 24,
+            "thickness": 6
+          },
+          "semantic_front": "Decorated exterior faces -Y",
+          "attachment_face": "Flat bottom Z=0 on structural floor",
+          "origin": "Floor-level inlet wall centreline",
+          "join_rule": "Plain inlet/outlet faces match wall profile and trim datums within family",
+          "reuse_class": "repeatable architecture",
+          "polygon_target": 24000,
+          "image_prompt_id": "PACK-PAL-WALL-L1",
+          "mesh_status": "not generated",
+          "objective_rejection_criteria": [
+            "Wrong arch/window hierarchy",
+            "Glazed wall replaced by open colonnade",
+            "Missing complete base, thickness or clean join end",
+            "Fused panel objects",
+            "Different base/cornice elevations",
+            "Whole palace or complete tower instead of reusable section"
+          ],
+          "reuse_component_ids": [
+            "GEN-43-M01",
+            "GEN-42-M01",
+            "GEN-42-M06"
+          ]
+        },
+        {
+          "asset_id": "PACK-PAL-WALL-L1-S03",
+          "name": "Curved three-bay wall",
+          "function": "Reusable structural wall section hosting existing glass and decor",
+          "dimensions_grid_m": {
+            "height": 60,
+            "bay_pitch": 24,
+            "thickness": 6
+          },
+          "semantic_front": "Decorated exterior faces -Y",
+          "attachment_face": "Flat bottom Z=0 on structural floor",
+          "origin": "Floor-level inlet wall centreline",
+          "join_rule": "Plain inlet/outlet faces match wall profile and trim datums within family",
+          "reuse_class": "repeatable architecture",
+          "polygon_target": 24000,
+          "image_prompt_id": "PACK-PAL-WALL-L1",
+          "mesh_status": "not generated",
+          "objective_rejection_criteria": [
+            "Wrong arch/window hierarchy",
+            "Glazed wall replaced by open colonnade",
+            "Missing complete base, thickness or clean join end",
+            "Fused panel objects",
+            "Different base/cornice elevations",
+            "Whole palace or complete tower instead of reusable section"
+          ],
+          "reuse_component_ids": [
+            "GEN-43-M01",
+            "GEN-42-M01",
+            "GEN-42-M06"
+          ]
+        },
+        {
+          "asset_id": "PACK-PAL-WALL-L1-S04",
+          "name": "Tower / end-pier junction",
+          "function": "Reusable structural wall section hosting existing glass and decor",
+          "dimensions_grid_m": {
+            "height": 60,
+            "bay_pitch": 24,
+            "thickness": 6
+          },
+          "semantic_front": "Decorated exterior faces -Y",
+          "attachment_face": "Flat bottom Z=0 on structural floor",
+          "origin": "Floor-level inlet wall centreline",
+          "join_rule": "Plain inlet/outlet faces match wall profile and trim datums within family",
+          "reuse_class": "repeatable architecture",
+          "polygon_target": 24000,
+          "image_prompt_id": "PACK-PAL-WALL-L1",
+          "mesh_status": "not generated",
+          "objective_rejection_criteria": [
+            "Wrong arch/window hierarchy",
+            "Glazed wall replaced by open colonnade",
+            "Missing complete base, thickness or clean join end",
+            "Fused panel objects",
+            "Different base/cornice elevations",
+            "Whole palace or complete tower instead of reusable section"
+          ],
+          "reuse_component_ids": [
+            "GEN-43-M01",
+            "GEN-42-M01",
+            "GEN-42-M06",
+            "GEN-43-M03",
+            "GEN-38-M03"
+          ]
+        }
+      ],
+      "prompt": "Create ONE professional modular 3D architectural component reference sheet titled \"PACK-PAL-WALL-L1 \u2014 Lower arcade wall kit\". EXACTLY FOUR separate wall modules, in a 2-by-2 grid on warm-white studio background, even lighting and light contact shadows. Each panel contains ONE COMPLETE uncropped isolated wall section from full base to full coping, front three-quarter view with visible wall thickness, flat join ends and enough back surface to understand construction. All four same apparent wall height and material/trim datums. These are plug-together STRUCTURAL WALL sections derived from an existing princess-palace illustration. Rose/ivory veined marble, source gold edging and indigo/blue/lilac/pink glass. Use the existing LOWER ARCADE in the reference: ivory engaged slender columns, layered pointed arches, rose-marble spandrels with white rose/leaf relief, blue/lilac/pink glazed infill with gold leaf/star tracery, narrow ivory cornice and blue/gold floral parapet band. Solid thick glazed walls, not an open colonnade. Preserve arch proportions and add the missing complete marble base and back thickness. S01 three straight bays. S02 two bays meeting at a 30-degree wall turn. S03 three bays on a genuinely curved 45-degree wall arc. S04 one bay and an attached half-octagonal terminal/tower pier with a flat join side, no full tower.\nLabel exactly below each model:\nPACK-PAL-WALL-L1-S01 \u2014 Straight three-bay arcade\nPACK-PAL-WALL-L1-S02 \u2014 Angled two-bay return\nPACK-PAL-WALL-L1-S03 \u2014 Curved three-bay wall\nPACK-PAL-WALL-L1-S04 \u2014 Tower / end-pier junction\nAll end planes use matching wall-height datum 60 and thickness datum 6, with base/dado/cornice/parapet profiles continuing to the seam at matching heights. These are proposed design-grid dimensions; do not distort source arch proportions. Plain marble connection faces with no ornament projecting across seams. No industrial plugs or metal kit connectors. Include original window/decor appearance as installed guides, reusing the existing motifs rather than inventing new glass/carvings. Show complete physically thick walls, not flat murals, detached fragments or open column rows. Actual angular and curved wall construction where requested. The structural tower junction is only an attached partial pier, no full tower. Generous blank gaps around objects. No assembled palace, gardens, lawns, fountains, people, stairs, extra props or watermarks. Names below objects, no text on object surfaces. Exactly four models and no extra detached detail objects; captions must be legible.",
+      "sha256": "e038afa09829181c54445adaf078f0f6a0a7541b31947a7781628ac29e5fb264",
+      "generator": "image_gen.imagegen",
+      "generated_original": "/workspace/generated_images/exec-3c21d183-da45-4fae-9633-72b614923273.png",
+      "generation_attempt": 1,
+      "joinability_status": "Design target only; actual geometry and snap faces require verification after modelling",
+      "generation_reference_id": "SRC-PACK-PAL-WALL-L1",
+      "generation_reference_file": "palace-wall-kits/source-references/PACK-PAL-WALL-L1-source.png",
+      "generation_reference_sha256": "bf3f9514bfb70ebbf6dcb61168c276edf5b2b2f29f22237709dff2547302dbf6"
+    },
+    {
+      "sheet_id": "PACK-PAL-WALL-L2",
+      "title": "Great-window and gate wall kit",
+      "height_grid_m": 100,
+      "bay_pitch_grid_m": 60,
+      "wall_thickness_grid_m": 8,
+      "source_front_authority": "GEN-37",
+      "component_reference": "GEN-38",
+      "reference_crop_xyxy": [
+        488,
+        55,
+        833,
+        538
+      ],
+      "reference_path": "/workspace/shared/palace-wall-kit-references/PACK-PAL-WALL-L2-source.png",
+      "file": "palace-wall-kits/PACK-PAL-WALL-L2.png",
+      "approval_status": "generated reference; pending user review; no mesh exists",
+      "parts": [
+        {
+          "asset_id": "PACK-PAL-WALL-L2-S01",
+          "name": "Single great-window wall",
+          "function": "Reusable structural wall section hosting existing glass and decor",
+          "dimensions_grid_m": {
+            "height": 100,
+            "bay_pitch": 60,
+            "thickness": 8
+          },
+          "semantic_front": "Decorated exterior faces -Y",
+          "attachment_face": "Flat bottom Z=0 on structural floor",
+          "origin": "Floor-level inlet wall centreline",
+          "join_rule": "Plain inlet/outlet faces match wall profile and trim datums within family",
+          "reuse_class": "repeatable architecture",
+          "polygon_target": 24000,
+          "image_prompt_id": "PACK-PAL-WALL-L2",
+          "mesh_status": "not generated",
+          "objective_rejection_criteria": [
+            "Wrong arch/window hierarchy",
+            "Glazed wall replaced by open colonnade",
+            "Missing complete base, thickness or clean join end",
+            "Fused panel objects",
+            "Different base/cornice elevations",
+            "Whole palace or complete tower instead of reusable section"
+          ],
+          "reuse_component_ids": [
+            "GEN-38-M02",
+            "GEN-29-C01",
+            "GEN-42-M01",
+            "GEN-42-M06"
+          ]
+        },
+        {
+          "asset_id": "PACK-PAL-WALL-L2-S02",
+          "name": "Central gate wall host",
+          "function": "Reusable structural wall section hosting existing glass and decor",
+          "dimensions_grid_m": {
+            "height": 100,
+            "bay_pitch": 60,
+            "thickness": 8
+          },
+          "semantic_front": "Decorated exterior faces -Y",
+          "attachment_face": "Flat bottom Z=0 on structural floor",
+          "origin": "Floor-level inlet wall centreline",
+          "join_rule": "Plain inlet/outlet faces match wall profile and trim datums within family",
+          "reuse_class": "repeatable architecture",
+          "polygon_target": 24000,
+          "image_prompt_id": "PACK-PAL-WALL-L2",
+          "mesh_status": "not generated",
+          "objective_rejection_criteria": [
+            "Wrong arch/window hierarchy",
+            "Glazed wall replaced by open colonnade",
+            "Missing complete base, thickness or clean join end",
+            "Fused panel objects",
+            "Different base/cornice elevations",
+            "Whole palace or complete tower instead of reusable section"
+          ],
+          "reuse_component_ids": [
+            "GEN-38-M01",
+            "GEN-31-G01",
+            "GEN-31-G05"
+          ]
+        },
+        {
+          "asset_id": "PACK-PAL-WALL-L2-S03",
+          "name": "Angled great-window return",
+          "function": "Reusable structural wall section hosting existing glass and decor",
+          "dimensions_grid_m": {
+            "height": 100,
+            "bay_pitch": 60,
+            "thickness": 8
+          },
+          "semantic_front": "Decorated exterior faces -Y",
+          "attachment_face": "Flat bottom Z=0 on structural floor",
+          "origin": "Floor-level inlet wall centreline",
+          "join_rule": "Plain inlet/outlet faces match wall profile and trim datums within family",
+          "reuse_class": "repeatable architecture",
+          "polygon_target": 24000,
+          "image_prompt_id": "PACK-PAL-WALL-L2",
+          "mesh_status": "not generated",
+          "objective_rejection_criteria": [
+            "Wrong arch/window hierarchy",
+            "Glazed wall replaced by open colonnade",
+            "Missing complete base, thickness or clean join end",
+            "Fused panel objects",
+            "Different base/cornice elevations",
+            "Whole palace or complete tower instead of reusable section"
+          ],
+          "reuse_component_ids": [
+            "GEN-38-M02",
+            "GEN-29-C01",
+            "GEN-42-M01",
+            "GEN-42-M06"
+          ]
+        },
+        {
+          "asset_id": "PACK-PAL-WALL-L2-S04",
+          "name": "Solid spacer / tower junction",
+          "function": "Reusable structural wall section hosting existing glass and decor",
+          "dimensions_grid_m": {
+            "height": 100,
+            "bay_pitch": 60,
+            "thickness": 8
+          },
+          "semantic_front": "Decorated exterior faces -Y",
+          "attachment_face": "Flat bottom Z=0 on structural floor",
+          "origin": "Floor-level inlet wall centreline",
+          "join_rule": "Plain inlet/outlet faces match wall profile and trim datums within family",
+          "reuse_class": "repeatable architecture",
+          "polygon_target": 24000,
+          "image_prompt_id": "PACK-PAL-WALL-L2",
+          "mesh_status": "not generated",
+          "objective_rejection_criteria": [
+            "Wrong arch/window hierarchy",
+            "Glazed wall replaced by open colonnade",
+            "Missing complete base, thickness or clean join end",
+            "Fused panel objects",
+            "Different base/cornice elevations",
+            "Whole palace or complete tower instead of reusable section"
+          ],
+          "reuse_component_ids": [
+            "GEN-38-M02",
+            "GEN-29-C01",
+            "GEN-42-M01",
+            "GEN-42-M06"
+          ]
+        }
+      ],
+      "prompt": "Create ONE professional modular 3D architectural component reference sheet titled \"PACK-PAL-WALL-L2 \u2014 Great-window and gate wall kit\". EXACTLY FOUR separate wall modules, in a 2-by-2 grid on warm-white studio background, even lighting and light contact shadows. Each panel contains ONE COMPLETE uncropped isolated wall section from full base to full coping, front three-quarter view with visible wall thickness, flat join ends and enough back surface to understand construction. All four same apparent wall height and material/trim datums. These are plug-together STRUCTURAL WALL sections derived from an existing princess-palace illustration. Rose/ivory veined marble, source gold edging and indigo/blue/lilac/pink glass. Use the existing giant pointed STAR/ROSE window in the reference: ivory/rose veined marble piers, lotus capitals, layered pointed mouldings, pink carved spandrels, gold-edged indigo/blue/lilac/pink glass. S01 ONE giant bay, not the two-bay source panel. S02 distinct central ceremonial pointed GATE wall host with a deep passage and visible door/glazed gate insert recess, not another regular window. S03 the same giant bay with a 30-degree wall return. S04 a smaller solid marble spacer and half-faceted tower junction pier. All share base/cornice datums. No whole tower or dome.\nLabel exactly below each model:\nPACK-PAL-WALL-L2-S01 \u2014 Single great-window wall\nPACK-PAL-WALL-L2-S02 \u2014 Central gate wall host\nPACK-PAL-WALL-L2-S03 \u2014 Angled great-window return\nPACK-PAL-WALL-L2-S04 \u2014 Solid spacer / tower junction\nAll end planes use matching wall-height datum 100 and thickness datum 8, with base/dado/cornice/parapet profiles continuing to the seam at matching heights. These are proposed design-grid dimensions; do not distort source arch proportions. Plain marble connection faces with no ornament projecting across seams. No industrial plugs or metal kit connectors. Include original window/decor appearance as installed guides, reusing the existing motifs rather than inventing new glass/carvings. Show complete physically thick walls, not flat murals, detached fragments or open column rows. Actual angular and curved wall construction where requested. The structural tower junction is only an attached partial pier, no full tower. Generous blank gaps around objects. No assembled palace, gardens, lawns, fountains, people, stairs, extra props or watermarks. Names below objects, no text on object surfaces. Exactly four models and no extra detached detail objects; captions must be legible.",
+      "sha256": "d450b59797d6b4178f7d2a1b53a3ad6073dc7adc559f803645b3bae6950496d9",
+      "generator": "image_gen.imagegen",
+      "generated_original": "/workspace/generated_images/exec-5166ceb3-9d58-4218-abc2-8c517dee91fd.png",
+      "generation_attempt": 1,
+      "joinability_status": "Design target only; actual geometry and snap faces require verification after modelling",
+      "generation_reference_id": "SRC-PACK-PAL-WALL-L2",
+      "generation_reference_file": "palace-wall-kits/source-references/PACK-PAL-WALL-L2-source.png",
+      "generation_reference_sha256": "c7b4c770ee9a27b079f10944a055e5157aece985db6e16effdff9a9832fea7fa"
+    },
+    {
+      "sheet_id": "PACK-PAL-WALL-UP",
+      "title": "Shared L3 and L4 gallery wall kit",
+      "height_grid_m": 70,
+      "bay_pitch_grid_m": 30,
+      "wall_thickness_grid_m": 6,
+      "source_front_authority": "GEN-37",
+      "component_reference": "GEN-38",
+      "reference_crop_xyxy": [
+        18,
+        650,
+        418,
+        1005
+      ],
+      "reference_path": "/workspace/shared/palace-wall-kit-references/PACK-PAL-WALL-UP-source.png",
+      "file": "palace-wall-kits/PACK-PAL-WALL-UP.png",
+      "approval_status": "generated reference; pending user review; no mesh exists",
+      "parts": [
+        {
+          "asset_id": "PACK-PAL-WALL-UP-S01",
+          "name": "Straight medium-window gallery",
+          "function": "Reusable structural wall section hosting existing glass and decor",
+          "dimensions_grid_m": {
+            "height": 70,
+            "bay_pitch": 30,
+            "thickness": 6
+          },
+          "semantic_front": "Decorated exterior faces -Y",
+          "attachment_face": "Flat bottom Z=0 on structural floor",
+          "origin": "Floor-level inlet wall centreline",
+          "join_rule": "Plain inlet/outlet faces match wall profile and trim datums within family",
+          "reuse_class": "repeatable architecture",
+          "polygon_target": 24000,
+          "image_prompt_id": "PACK-PAL-WALL-UP",
+          "mesh_status": "not generated",
+          "objective_rejection_criteria": [
+            "Wrong arch/window hierarchy",
+            "Glazed wall replaced by open colonnade",
+            "Missing complete base, thickness or clean join end",
+            "Fused panel objects",
+            "Different base/cornice elevations",
+            "Whole palace or complete tower instead of reusable section"
+          ],
+          "reuse_component_ids": [
+            "GEN-38-M04",
+            "GEN-42-M05",
+            "GEN-42-M06"
+          ]
+        },
+        {
+          "asset_id": "PACK-PAL-WALL-UP-S02",
+          "name": "Narrow-lancet wall variant",
+          "function": "Reusable structural wall section hosting existing glass and decor",
+          "dimensions_grid_m": {
+            "height": 70,
+            "bay_pitch": 30,
+            "thickness": 6
+          },
+          "semantic_front": "Decorated exterior faces -Y",
+          "attachment_face": "Flat bottom Z=0 on structural floor",
+          "origin": "Floor-level inlet wall centreline",
+          "join_rule": "Plain inlet/outlet faces match wall profile and trim datums within family",
+          "reuse_class": "repeatable architecture",
+          "polygon_target": 24000,
+          "image_prompt_id": "PACK-PAL-WALL-UP",
+          "mesh_status": "not generated",
+          "objective_rejection_criteria": [
+            "Wrong arch/window hierarchy",
+            "Glazed wall replaced by open colonnade",
+            "Missing complete base, thickness or clean join end",
+            "Fused panel objects",
+            "Different base/cornice elevations",
+            "Whole palace or complete tower instead of reusable section"
+          ],
+          "reuse_component_ids": [
+            "GEN-38-M04",
+            "GEN-42-M05",
+            "GEN-42-M06"
+          ]
+        },
+        {
+          "asset_id": "PACK-PAL-WALL-UP-S03",
+          "name": "Angled two-bay gallery return",
+          "function": "Reusable structural wall section hosting existing glass and decor",
+          "dimensions_grid_m": {
+            "height": 70,
+            "bay_pitch": 30,
+            "thickness": 6
+          },
+          "semantic_front": "Decorated exterior faces -Y",
+          "attachment_face": "Flat bottom Z=0 on structural floor",
+          "origin": "Floor-level inlet wall centreline",
+          "join_rule": "Plain inlet/outlet faces match wall profile and trim datums within family",
+          "reuse_class": "repeatable architecture",
+          "polygon_target": 24000,
+          "image_prompt_id": "PACK-PAL-WALL-UP",
+          "mesh_status": "not generated",
+          "objective_rejection_criteria": [
+            "Wrong arch/window hierarchy",
+            "Glazed wall replaced by open colonnade",
+            "Missing complete base, thickness or clean join end",
+            "Fused panel objects",
+            "Different base/cornice elevations",
+            "Whole palace or complete tower instead of reusable section"
+          ],
+          "reuse_component_ids": [
+            "GEN-38-M04",
+            "GEN-42-M05",
+            "GEN-42-M06"
+          ]
+        },
+        {
+          "asset_id": "PACK-PAL-WALL-UP-S04",
+          "name": "Gallery / tower junction",
+          "function": "Reusable structural wall section hosting existing glass and decor",
+          "dimensions_grid_m": {
+            "height": 70,
+            "bay_pitch": 30,
+            "thickness": 6
+          },
+          "semantic_front": "Decorated exterior faces -Y",
+          "attachment_face": "Flat bottom Z=0 on structural floor",
+          "origin": "Floor-level inlet wall centreline",
+          "join_rule": "Plain inlet/outlet faces match wall profile and trim datums within family",
+          "reuse_class": "repeatable architecture",
+          "polygon_target": 24000,
+          "image_prompt_id": "PACK-PAL-WALL-UP",
+          "mesh_status": "not generated",
+          "objective_rejection_criteria": [
+            "Wrong arch/window hierarchy",
+            "Glazed wall replaced by open colonnade",
+            "Missing complete base, thickness or clean join end",
+            "Fused panel objects",
+            "Different base/cornice elevations",
+            "Whole palace or complete tower instead of reusable section"
+          ],
+          "reuse_component_ids": [
+            "GEN-38-M04",
+            "GEN-42-M05",
+            "GEN-42-M06"
+          ]
+        }
+      ],
+      "prompt": "Create ONE professional modular 3D architectural component reference sheet titled \"PACK-PAL-WALL-UP \u2014 Shared L3 and L4 gallery wall kit\". EXACTLY FOUR separate wall modules, in a 2-by-2 grid on warm-white studio background, even lighting and light contact shadows. Each panel contains ONE COMPLETE uncropped isolated wall section from full base to full coping, front three-quarter view with visible wall thickness, flat join ends and enough back surface to understand construction. All four same apparent wall height and material/trim datums. These are plug-together STRUCTURAL WALL sections derived from an existing princess-palace illustration. Rose/ivory veined marble, source gold edging and indigo/blue/lilac/pink glass. Use the existing medium GALLERY WINDOW in the reference: gold leaf/lotus Y-shaped tracery with blue/lilac/pink glazing, ivory/rose marble surrounds. S01 straight three-window solid gallery. S02 smaller narrow-lancet straight wall variant, same marble and thin gold ribs, pale pink/lilac glass. S03 two medium bays meeting at a 30-degree angled return. S04 one gallery bay with an attached half-octagonal tower-seat pier. Preserve small gallery-window hierarchy, no giant gates. These reusable 70-height wall bodies are shared by Levels3/4 with existing glazing variations.\nLabel exactly below each model:\nPACK-PAL-WALL-UP-S01 \u2014 Straight medium-window gallery\nPACK-PAL-WALL-UP-S02 \u2014 Narrow-lancet wall variant\nPACK-PAL-WALL-UP-S03 \u2014 Angled two-bay gallery return\nPACK-PAL-WALL-UP-S04 \u2014 Gallery / tower junction\nAll end planes use matching wall-height datum 70 and thickness datum 6, with base/dado/cornice/parapet profiles continuing to the seam at matching heights. These are proposed design-grid dimensions; do not distort source arch proportions. Plain marble connection faces with no ornament projecting across seams. No industrial plugs or metal kit connectors. Include original window/decor appearance as installed guides, reusing the existing motifs rather than inventing new glass/carvings. Show complete physically thick walls, not flat murals, detached fragments or open column rows. Actual angular and curved wall construction where requested. The structural tower junction is only an attached partial pier, no full tower. Generous blank gaps around objects. No assembled palace, gardens, lawns, fountains, people, stairs, extra props or watermarks. Names below objects, no text on object surfaces. Exactly four models and no extra detached detail objects; captions must be legible.\nComponent construction also follows already existing palace corner/moulding studies: clean continuous base, recessed window reveals, wraparound cornice with a corresponding concave inside return on S03, and a faceted side pier whose trim continues around its exposed sides on S04. Gold ornaments terminate before each connection face. Full structural backs are plain consistent marble; carving is confined to visible fronts and exposed return faces. Keep this an isolated four-part kit.",
+      "additional_references_reviewed": [
+        "GEN-19",
+        "GEN-42"
+      ],
+      "sha256": "42d0727a3644db9265f9e8b3fe2a0ebbd5e8e8316dc469e00f0c03de34ab55b8",
+      "generator": "image_gen.imagegen",
+      "generated_original": "/workspace/generated_images/exec-a60b70de-e76c-454b-a608-f7c68062f052.png",
+      "generation_attempt": 1,
+      "joinability_status": "Design target only; actual geometry and snap faces require verification after modelling",
+      "generation_reference_id": "SRC-PACK-PAL-WALL-UP",
+      "generation_reference_file": "palace-wall-kits/source-references/PACK-PAL-WALL-UP-source.png",
+      "generation_reference_sha256": "b65751d0df2fc2a0e8a7923612772f89269f10a9bf735e775341f686721e8a5d"
+    }
+  ]
+}

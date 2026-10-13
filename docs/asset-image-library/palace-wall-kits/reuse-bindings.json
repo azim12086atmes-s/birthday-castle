@@ -1,0 +1,106 @@
+{
+  "scope": "Initial wall batch only; full palace section inventory deferred",
+  "bindings": [
+    {
+      "asset_id": "PACK-PAL-WALL-L1-S01",
+      "uses": [
+        "GEN-43-M01",
+        "GEN-42-M01",
+        "GEN-42-M06"
+      ]
+    },
+    {
+      "asset_id": "PACK-PAL-WALL-L1-S02",
+      "uses": [
+        "GEN-43-M01",
+        "GEN-42-M01",
+        "GEN-42-M06"
+      ]
+    },
+    {
+      "asset_id": "PACK-PAL-WALL-L1-S03",
+      "uses": [
+        "GEN-43-M01",
+        "GEN-42-M01",
+        "GEN-42-M06"
+      ]
+    },
+    {
+      "asset_id": "PACK-PAL-WALL-L1-S04",
+      "uses": [
+        "GEN-43-M01",
+        "GEN-42-M01",
+        "GEN-42-M06",
+        "GEN-43-M03",
+        "GEN-38-M03"
+      ]
+    },
+    {
+      "asset_id": "PACK-PAL-WALL-L2-S01",
+      "uses": [
+        "GEN-38-M02",
+        "GEN-29-C01",
+        "GEN-42-M01",
+        "GEN-42-M06"
+      ]
+    },
+    {
+      "asset_id": "PACK-PAL-WALL-L2-S02",
+      "uses": [
+        "GEN-38-M01",
+        "GEN-31-G01",
+        "GEN-31-G05"
+      ]
+    },
+    {
+      "asset_id": "PACK-PAL-WALL-L2-S03",
+      "uses": [
+        "GEN-38-M02",
+        "GEN-29-C01",
+        "GEN-42-M01",
+        "GEN-42-M06"
+      ]
+    },
+    {
+      "asset_id": "PACK-PAL-WALL-L2-S04",
+      "uses": [
+        "GEN-38-M02",
+        "GEN-29-C01",
+        "GEN-42-M01",
+        "GEN-42-M06"
+      ]
+    },
+    {
+      "asset_id": "PACK-PAL-WALL-UP-S01",
+      "uses": [
+        "GEN-38-M04",
+        "GEN-42-M05",
+        "GEN-42-M06"
+      ]
+    },
+    {
+      "asset_id": "PACK-PAL-WALL-UP-S02",
+      "uses": [
+        "GEN-38-M04",
+        "GEN-42-M05",
+        "GEN-42-M06"
+      ]
+    },
+    {
+      "asset_id": "PACK-PAL-WALL-UP-S03",
+      "uses": [
+        "GEN-38-M04",
+        "GEN-42-M05",
+        "GEN-42-M06"
+      ]
+    },
+    {
+      "asset_id": "PACK-PAL-WALL-UP-S04",
+      "uses": [
+        "GEN-38-M04",
+        "GEN-42-M05",
+        "GEN-42-M06"
+      ]
+    }
+  ]
+}

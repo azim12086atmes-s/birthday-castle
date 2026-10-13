@@ -42,3 +42,11 @@ Use BRIDGE-REFERENCE-SET.md for current bridge intake. Adequate original source 
 ## Complete roof layout and staircase network
 
 [PAL-ROOF-PLAN-001](palace-roof-plan/PAL-ROOF-PLAN-001.png) is a coordinate-authored layout proposal, with [33 placement IDs](palace-roof-plan/tower-placements.csv) and [11 staircase links](palace-roof-plan/stair-connections.csv). Placement IDs name instances, not new mesh assets. Match generated models to their archetype and fill mesh_asset_id in the placement register when models exist. Source GEN-37 remains the appearance master; proposed depths require review.
+
+## Modular palace wall intake
+
+The roof-plan study is unapproved and paused. Use the [wall kit component register](palace-wall-kits/components.csv) for the first wall batch. Each sheet has four named parts. If generated together, record the batch ID and map the actual separated mesh names to S01–S04. Existing glass/carving models can be reused via reuse-bindings.json; the complete palace inventory is deferred. Join contracts are proposals until model bounds, ends, thickness and trim datums have been checked.
+
+## Terminal tower input
+
+Use PAL-TOWER-001 for four structural sections and PAL-TOWER-001-DECOR for16 detachable details. Full part IDs are PAL-TOWER-001-S01…S04 and PAL-TOWER-001-D01…D16. Original source sections control proportions; shaded backs and profiles are inferred. No Blender models were produced. Record an actual batch mesh file only after identifying each separated component.
