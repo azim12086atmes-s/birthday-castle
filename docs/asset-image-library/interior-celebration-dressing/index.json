@@ -1,0 +1,253 @@
+{
+  "date": "2026-10-14",
+  "scope": "Celebrate/dress original palace rooms; existing art reuse first. No new rooms, paid meshes or gameplay systems.",
+  "objects": [
+    {
+      "asset_id": "GEN-24-A10",
+      "name": "Draped curtain and star valance",
+      "source_id": "GEN-24",
+      "source_file": "images/illustrated-boards/GEN-24.png",
+      "source_sha256": "deb78cfce6dab5c31d9b3519d3bc01a07e58bba453b013fcdb76bd2e8be3f349",
+      "source_box_xyxy": [
+        8,
+        760,
+        382,
+        1020
+      ],
+      "file": "interior-celebration-dressing/source-panels/GEN-24-A10.png",
+      "sha256": "51d33810af7eecf13840f2db2882be550599b48ac907de6154fcb70f050c23fa",
+      "image_id": "SRC-DRESS-GEN-24-A10",
+      "registry_action": "newly-indexed-existing-original-art",
+      "new_design_needed": false,
+      "model_status": "unregistered"
+    },
+    {
+      "asset_id": "GEN-24-A11",
+      "name": "Embroidered rose-star rug",
+      "source_id": "GEN-24",
+      "source_file": "images/illustrated-boards/GEN-24.png",
+      "source_sha256": "deb78cfce6dab5c31d9b3519d3bc01a07e58bba453b013fcdb76bd2e8be3f349",
+      "source_box_xyxy": [
+        770,
+        760,
+        1148,
+        1020
+      ],
+      "file": "interior-celebration-dressing/source-panels/GEN-24-A11.png",
+      "sha256": "62bf9b7644ba171855b42cfe60536fdfb5914bfd2dc02b2edd6f9409dbd3b45f",
+      "image_id": "SRC-DRESS-GEN-24-A11",
+      "registry_action": "newly-indexed-existing-original-art",
+      "new_design_needed": false,
+      "model_status": "unregistered"
+    },
+    {
+      "asset_id": "GEN-24-A12",
+      "name": "Veiled guardian sculpture",
+      "source_id": "GEN-24",
+      "source_file": "images/illustrated-boards/GEN-24.png",
+      "source_sha256": "deb78cfce6dab5c31d9b3519d3bc01a07e58bba453b013fcdb76bd2e8be3f349",
+      "source_box_xyxy": [
+        1153,
+        760,
+        1525,
+        1020
+      ],
+      "file": "interior-celebration-dressing/source-panels/GEN-24-A12.png",
+      "sha256": "d99e28797777946933e762429448332318bcf5f1a837f82d0c3c3062aaf1053d",
+      "image_id": "SRC-DRESS-GEN-24-A12",
+      "registry_action": "newly-indexed-existing-original-art",
+      "new_design_needed": false,
+      "model_status": "unregistered"
+    },
+    {
+      "asset_id": "GEN-25-A05",
+      "name": "Embroidered wish table",
+      "source_id": "GEN-25",
+      "source_file": "images/illustrated-boards/GEN-25.png",
+      "source_sha256": "9ef8a873ba4469a122f8d6b195f958834babb94bd9481ba41986a78adf6c19c7",
+      "source_box_xyxy": [
+        386,
+        42,
+        766,
+        395
+      ],
+      "file": "interior-celebration-dressing/source-panels/GEN-25-A05.png",
+      "sha256": "a1c45cbd0b770425e8434018f101f857b45d60f0357e6424b86617521449a1f1",
+      "image_id": "SRC-DRESS-GEN-25-A05",
+      "registry_action": "newly-indexed-existing-original-art",
+      "new_design_needed": false,
+      "model_status": "unregistered"
+    },
+    {
+      "asset_id": "GEN-25-A06",
+      "name": "Draped floral arch swag",
+      "source_id": "GEN-25",
+      "source_file": "images/illustrated-boards/GEN-25.png",
+      "source_sha256": "9ef8a873ba4469a122f8d6b195f958834babb94bd9481ba41986a78adf6c19c7",
+      "source_box_xyxy": [
+        386,
+        398,
+        766,
+        729
+      ],
+      "file": "interior-celebration-dressing/source-panels/GEN-25-A06.png",
+      "sha256": "9bcbfab8f6a0985c66b105652d8cf0ea1eb8dd47ffb8e13cf34efb4d0b77d47b",
+      "image_id": "SRC-DRESS-GEN-25-A06",
+      "registry_action": "newly-indexed-existing-original-art",
+      "new_design_needed": false,
+      "model_status": "unregistered"
+    },
+    {
+      "asset_id": "GEN-25-A07",
+      "name": "Pearl-globe lantern festoon",
+      "source_id": "GEN-25",
+      "source_file": "images/illustrated-boards/GEN-25.png",
+      "source_sha256": "9ef8a873ba4469a122f8d6b195f958834babb94bd9481ba41986a78adf6c19c7",
+      "source_box_xyxy": [
+        769,
+        398,
+        1149,
+        729
+      ],
+      "file": "interior-celebration-dressing/source-panels/GEN-25-A07.png",
+      "sha256": "b6baeb02fc570f7357524ea215d2ec42c587d37c54b3ee42312d2788587e11dd",
+      "image_id": "SRC-DRESS-GEN-25-A07",
+      "registry_action": "newly-indexed-existing-original-art",
+      "new_design_needed": false,
+      "model_status": "unregistered"
+    },
+    {
+      "asset_id": "GEN-25-A08",
+      "name": "Silk balloon and lantern basket",
+      "source_id": "GEN-25",
+      "source_file": "images/illustrated-boards/GEN-25.png",
+      "source_sha256": "9ef8a873ba4469a122f8d6b195f958834babb94bd9481ba41986a78adf6c19c7",
+      "source_box_xyxy": [
+        1152,
+        398,
+        1525,
+        729
+      ],
+      "file": "interior-celebration-dressing/source-panels/GEN-25-A08.png",
+      "sha256": "60e9765ea49923fbd1716b0e21c6045f2bd35373a648fc5c55996c4a6d7ae8c8",
+      "image_id": "SRC-DRESS-GEN-25-A08",
+      "registry_action": "newly-indexed-existing-original-art",
+      "new_design_needed": false,
+      "model_status": "unregistered"
+    },
+    {
+      "asset_id": "GEN-25-A09",
+      "name": "Floral ceremonial arch",
+      "source_id": "GEN-25",
+      "source_file": "images/illustrated-boards/GEN-25.png",
+      "source_sha256": "9ef8a873ba4469a122f8d6b195f958834babb94bd9481ba41986a78adf6c19c7",
+      "source_box_xyxy": [
+        8,
+        733,
+        382,
+        1017
+      ],
+      "file": "interior-celebration-dressing/source-panels/GEN-25-A09.png",
+      "sha256": "6051e3fabd443a98c7a887582d86eb8c70a29e51a8540d62d8850699028a9219",
+      "image_id": "SRC-DRESS-GEN-25-A09",
+      "registry_action": "newly-indexed-existing-original-art",
+      "new_design_needed": false,
+      "model_status": "unregistered"
+    },
+    {
+      "asset_id": "GEN-25-A10",
+      "name": "Invitation and guest book",
+      "source_id": "GEN-25",
+      "source_file": "images/illustrated-boards/GEN-25.png",
+      "source_sha256": "9ef8a873ba4469a122f8d6b195f958834babb94bd9481ba41986a78adf6c19c7",
+      "source_box_xyxy": [
+        386,
+        733,
+        766,
+        1017
+      ],
+      "file": "interior-celebration-dressing/source-panels/GEN-25-A10.png",
+      "sha256": "ba4a00e9d241024fb17abdb9f1c56cc9545888e02ecf16c4b74a85c3d4f89e40",
+      "image_id": "SRC-DRESS-GEN-25-A10",
+      "registry_action": "newly-indexed-existing-original-art",
+      "new_design_needed": false,
+      "model_status": "unregistered"
+    }
+  ],
+  "new_images_generated": 0,
+  "new_selected_sheet_slots": 0,
+  "newly_indexed_existing_designs": 9,
+  "selected_saved_sheets": 81,
+  "selected_or_reserved": 85,
+  "final_image_target": 230,
+  "excluded_rooms": [
+    "baths/spas",
+    "kitchens/bakeries",
+    "service rooms",
+    "music spaces"
+  ],
+  "next_room": "Original ballroom",
+  "dressing_layers": [
+    {
+      "layer": "Celebration focal group",
+      "proposed_placement": "One south-west/perimeter display visible after arrival; cake/stand with wish table, guest book and gifts. Actual coordinates must be reviewed against room openings.",
+      "existing_asset_ids": [
+        "GEN-25-A01",
+        "GEN-25-A02",
+        "GEN-25-A03",
+        "GEN-25-A05",
+        "GEN-25-A10"
+      ]
+    },
+    {
+      "layer": "Seating and textiles",
+      "proposed_placement": "Small facing chaise/table groups along west/east perimeter, with rugs; curtains at selected lower bays, source sizes reviewed rather than blindly scaled.",
+      "existing_asset_ids": [
+        "GEN-24-A05",
+        "GEN-24-A06",
+        "GEN-24-A10",
+        "GEN-24-A11"
+      ]
+    },
+    {
+      "layer": "Gallery and doorway celebration trim",
+      "proposed_placement": "Restrained floral swags/festoon runs at real openings/gallery edges and birthday banners on selected wall bays. Show mounting; keep stained-glass focal bays visible.",
+      "existing_asset_ids": [
+        "GEN-25-A04",
+        "GEN-25-A06",
+        "GEN-25-A07",
+        "GEN-35-A06"
+      ]
+    },
+    {
+      "layer": "Magical accent and planting",
+      "proposed_placement": "A few tethered balloon baskets, source urns/rose clusters and existing crystal chandelier; avoid wallpapering every bay with huge props.",
+      "existing_asset_ids": [
+        "GEN-25-A08",
+        "GEN-25-A09",
+        "GEN-35-A01",
+        "GEN-24-A07"
+      ]
+    }
+  ],
+  "circulation_rule": "Keep central floor star readable, south arrival and north paired stairs clear, and continuous perimeter/gallery routes. This is a proposed dressing recipe, not a verified placement layout.",
+  "candidate_missing_pack": {
+    "status": "not generated or reserved; inspect source parts before production",
+    "suggested_sheet_count": 1,
+    "max_items": 16,
+    "asset_examples": [
+      "small celebration chair variant",
+      "compact tea/celebration table if existing side/wish tables are insufficient",
+      "place-setting/tea-service group",
+      "cushion variants",
+      "runner/border ends for long textiles",
+      "garland/festoon mounting bracket",
+      "small candle/display fittings",
+      "frame or birthday memory-display insert"
+    ],
+    "rule": "Remove candidates already adequately drawn; no new cake/lantern/curtain/rug master just because it was missing from registry."
+  },
+  "next_visual_review": "A dressed ballroom view using existing designs; preserve its stairs/windows/vault while showing celebration props. Not generated in this source audit.",
+  "model_placement_verified": false,
+  "new_models": 0
+}

@@ -74,7 +74,7 @@
       "category_id": "PAL-NEED-07",
       "name": "Curtains and hanging textiles",
       "asset_examples": "Curtain panels, tiebacks, canopies, tassels, tapestries and banners",
-      "current_status": "individual variants/joints not indexed as complete kit",
+      "current_status": "Curtain master GEN-24-A10 and celebration swags/festoons GEN-25-A06/A07 now indexed; remaining variants and joints incomplete",
       "existing_reference_basis": "GEN-24/25/35",
       "optional_magical_idea": "Layered translucent rose curtains and embroidered star hangings",
       "design_or_model_approval": "not inferred",
@@ -85,7 +85,7 @@
       "category_id": "PAL-NEED-08",
       "name": "Carpets and soft furnishings",
       "asset_examples": "Area rugs, stair runners, cushions, bed throws and tablecloths",
-      "current_status": "individual variants not indexed as complete kit",
+      "current_status": "Embroidered rug master GEN-24-A11 now indexed; stair runners/cushions/throws incomplete",
       "existing_reference_basis": "INT-C01 hard-floor motifs support palettes only",
       "optional_magical_idea": "Different woven motifs for quiet suites and grand halls",
       "design_or_model_approval": "not inferred",
@@ -257,5 +257,10 @@
     "priority": "Coordinate room architecture before making new room-specific decoration",
     "current_reference_progress": "Ballroom multi-view and four structural hosts drawn; fixture/bay parity and fit unverified. Other rooms and dome interiors missing.",
     "current_reference_file": "../interior-room-kits/README.md"
+  },
+  "existing_dressing_source_audit": {
+    "file": "../interior-celebration-dressing/index.json",
+    "newly_indexed_existing_designs": 9,
+    "new_images_generated": 0
   }
 }

@@ -9,8 +9,8 @@ We have useful visible architecture/decor vocabulary, not a proven complete2km p
 | Royal bedrooms | Beds, headboards, bedside cabinets, chests and bedding | missing supporting furniture references — GEN-24; PAL-INT-PROP-001 reservation | Canopy fabric with a quiet constellation glow |
 | Dressing and jewellery rooms | Wardrobes, dressing tables, stools, jewellery stands and storage boxes | incomplete furniture kit — GEN-24 mirror/console | Small jewel cases and a rose-trimmed dressing mirror |
 | Dining and tea salons | Dining tables, chairs, tea sets, dishes and serving cabinets | missing dedicated kit — GEN-24 side table only | Teacups, blossom place settings and an intimate tea pavilion |
-| Curtains and hanging textiles | Curtain panels, tiebacks, canopies, tassels, tapestries and banners | individual variants/joints not indexed as complete kit — GEN-24/25/35 | Layered translucent rose curtains and embroidered star hangings |
-| Carpets and soft furnishings | Area rugs, stair runners, cushions, bed throws and tablecloths | individual variants not indexed as complete kit — INT-C01 hard-floor motifs support palettes only | Different woven motifs for quiet suites and grand halls |
+| Curtains and hanging textiles | Curtain panels, tiebacks, canopies, tassels, tapestries and banners | curtain master and celebration swags/festoons now indexed; extra variants/joints still incomplete — GEN-24-A10; GEN-25-A06/A07; GEN-35 | Layered translucent rose curtains and embroidered star hangings |
+| Carpets and soft furnishings | Area rugs, stair runners, cushions, bed throws and tablecloths | embroidered rug master indexed; runners/cushions/throws remain incomplete — GEN-24-A11; INT-C01 is hard-floor vocabulary only | Different woven motifs for quiet suites and grand halls |
 | Portrait and memory galleries | Frames, display plinths, picture lights, albums and keepsake cabinets | new optional experience/supporting-prop kit — GEN-24 mirror/console partly reusable | A gallery of illustrated memories revealed through light |
 | Enchanted library and archives | Books, writing desks, reading chairs, ladders, scroll cases and shelf props | hero/reference room exists; supporting kit incomplete — GEN-26 library; GEN-24 bookcase/lectern | A hidden rotating shelf and softly moving story pages |
 | Celestial observatory | Telescopes, star charts, instrument desks, globes and viewing seats | armillary exists; rest optional/missing — GEN-28 armillary | A star chart that aligns with the palace night sky |
@@ -46,3 +46,7 @@ Continuous wall/ward host bodies; roof and floor substrates; angled/curved wing 
 ## First interior reference progress
 
 [Ballroom multi-view and four-part structural kit](../interior-room-kits/README.md) are now drawn and indexed. These are source-compatible proposals; room/ceiling fixture parity and physical fit are unverified. Other rooms, dome interiors, per-room furnishing and missing decor remain outstanding.
+
+## Celebration dressing next
+
+[Nine existing decor/furnishing designs](../interior-celebration-dressing/README.md) are newly indexed from original GEN-24/25 art. Use them for a focal birthday display, small seating groups, curtains/rugs, floral swags and lantern festoons. No new cake/curtain/rug master is needed merely because it was unindexed. A dressed-room placement view and missing small furniture/tabletop/textile/mounting details remain to produce.

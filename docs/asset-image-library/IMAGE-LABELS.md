@@ -821,3 +821,17 @@ R03 uses plain tower circles and source-reviewed garden symbols. See [garden pla
 | INT-BALLROOM-MV-001-R01 | [Ballroom room and ceiling multi-view reference — previous draft](interior-room-kits/INT-BALLROOM-MV-001/rejected-drafts/INT-BALLROOM-MV-001-R01.png) |
 | INT-BALLROOM-SHELL-001 | [Ballroom modular wall gallery and vault kit](interior-room-kits/INT-BALLROOM-SHELL-001/INT-BALLROOM-SHELL-001.png) |
 | INT-BALLROOM-SHELL-001-R01 | [Ballroom modular wall gallery and vault kit — previous draft](interior-room-kits/INT-BALLROOM-SHELL-001/rejected-drafts/INT-BALLROOM-SHELL-001-R01.png) |
+
+## Existing room and celebration source panels
+
+| ID | Reference |
+| --- | --- |
+| SRC-DRESS-GEN-24-A10 | [Draped curtain and star valance — original source panel](interior-celebration-dressing/source-panels/GEN-24-A10.png) |
+| SRC-DRESS-GEN-24-A11 | [Embroidered rose-star rug — original source panel](interior-celebration-dressing/source-panels/GEN-24-A11.png) |
+| SRC-DRESS-GEN-24-A12 | [Veiled guardian sculpture — original source panel](interior-celebration-dressing/source-panels/GEN-24-A12.png) |
+| SRC-DRESS-GEN-25-A05 | [Embroidered wish table — original source panel](interior-celebration-dressing/source-panels/GEN-25-A05.png) |
+| SRC-DRESS-GEN-25-A06 | [Draped floral arch swag — original source panel](interior-celebration-dressing/source-panels/GEN-25-A06.png) |
+| SRC-DRESS-GEN-25-A07 | [Pearl-globe lantern festoon — original source panel](interior-celebration-dressing/source-panels/GEN-25-A07.png) |
+| SRC-DRESS-GEN-25-A08 | [Silk balloon and lantern basket — original source panel](interior-celebration-dressing/source-panels/GEN-25-A08.png) |
+| SRC-DRESS-GEN-25-A09 | [Floral ceremonial arch — original source panel](interior-celebration-dressing/source-panels/GEN-25-A09.png) |
+| SRC-DRESS-GEN-25-A10 | [Invitation and guest book — original source panel](interior-celebration-dressing/source-panels/GEN-25-A10.png) |

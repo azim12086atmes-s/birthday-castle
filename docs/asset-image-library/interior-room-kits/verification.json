@@ -8,8 +8,8 @@
   "archive_hashes_verified": true,
   "registry_consistency_verified": true,
   "budget_caps_verified": true,
-  "archive_images": 717,
-  "model_targets": 393,
+  "archive_images": 726,
+  "model_targets": 402,
   "selected_sheets_with_saved_files": 81,
   "selected_or_reserved": 85,
   "palace_selected_or_reserved": 65,
@@ -17,5 +17,6 @@
   "view_parity_verified": false,
   "physical_interface_fit_verified": false,
   "review_status": "pending-user-reference-review",
-  "limits": "Source/provenance checks do not certify geometry, fixture counts, image projections, dimensions, UVs or runtime behavior."
+  "limits": "Source/provenance checks do not certify geometry, fixture counts, image projections, dimensions, UVs or runtime behavior.",
+  "archive_counts_updated_after": "interior celebration source audit"
 }

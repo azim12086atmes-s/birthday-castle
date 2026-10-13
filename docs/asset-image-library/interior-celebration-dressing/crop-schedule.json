@@ -1,0 +1,103 @@
+{
+  "items": [
+    {
+      "asset_id": "GEN-24-A10",
+      "name": "Draped curtain and star valance",
+      "source_id": "GEN-24",
+      "box_xyxy": [
+        8,
+        760,
+        382,
+        1020
+      ]
+    },
+    {
+      "asset_id": "GEN-24-A11",
+      "name": "Embroidered rose-star rug",
+      "source_id": "GEN-24",
+      "box_xyxy": [
+        770,
+        760,
+        1148,
+        1020
+      ]
+    },
+    {
+      "asset_id": "GEN-24-A12",
+      "name": "Veiled guardian sculpture",
+      "source_id": "GEN-24",
+      "box_xyxy": [
+        1153,
+        760,
+        1525,
+        1020
+      ]
+    },
+    {
+      "asset_id": "GEN-25-A05",
+      "name": "Embroidered wish table",
+      "source_id": "GEN-25",
+      "box_xyxy": [
+        386,
+        42,
+        766,
+        395
+      ]
+    },
+    {
+      "asset_id": "GEN-25-A06",
+      "name": "Draped floral arch swag",
+      "source_id": "GEN-25",
+      "box_xyxy": [
+        386,
+        398,
+        766,
+        729
+      ]
+    },
+    {
+      "asset_id": "GEN-25-A07",
+      "name": "Pearl-globe lantern festoon",
+      "source_id": "GEN-25",
+      "box_xyxy": [
+        769,
+        398,
+        1149,
+        729
+      ]
+    },
+    {
+      "asset_id": "GEN-25-A08",
+      "name": "Silk balloon and lantern basket",
+      "source_id": "GEN-25",
+      "box_xyxy": [
+        1152,
+        398,
+        1525,
+        729
+      ]
+    },
+    {
+      "asset_id": "GEN-25-A09",
+      "name": "Floral ceremonial arch",
+      "source_id": "GEN-25",
+      "box_xyxy": [
+        8,
+        733,
+        382,
+        1017
+      ]
+    },
+    {
+      "asset_id": "GEN-25-A10",
+      "name": "Invitation and guest book",
+      "source_id": "GEN-25",
+      "box_xyxy": [
+        386,
+        733,
+        766,
+        1017
+      ]
+    }
+  ]
+}

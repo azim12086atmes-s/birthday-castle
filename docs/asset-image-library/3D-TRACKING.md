@@ -62,3 +62,7 @@ Use PAL-TOWER-001 for four structural sections and PAL-TOWER-001-DECOR for16 det
 ## Original ballroom structural hosts
 
 Four unregistered targets INT-BALLROOM-SHELL-001-S01…S04 are indexed in interior-room-kits/components.csv. Reuse existing capitals/cornices/rail/chandelier; mount those separately. Eight room views are reference-only, not a whole-room3D target. All dimensions, host fits and view parity remain proposed/unverified. Both initial drafts remain saved.
+
+## Original interior celebration references
+
+GEN-24-A10…A12 and GEN-25-A05…A10 index nine existing original-art designs. Source panels include several views/details; isolate/normalize before using them as model inputs. Existing IDs remain unchanged. New targets remain unregistered; no meshes or new selected sheet slots.

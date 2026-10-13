@@ -64,3 +64,7 @@ Earlier blanket reuse rows do not mean every room/outdoor surface should share t
 ## First coordinated interior references
 
 [Ballroom room/ceiling views and four structural hosts](interior-room-kits/README.md) are generated, indexed and pending review. The revised sheet now includes a longitudinal section and gallery void; fixture/boss/bay parity remains unresolved. Existing capitals, cornices, glass and chandelier remain reuse sources. Pointed-vault geometry is not a dome design. Other rooms/dome interiors remain missing. [Water-edge glass requirements](surface-variation-kits/GLAZED-EDGE-NOTES.md) distinguish blue/lilac/rose water-edge panels from the owner-reported green parapet.
+
+## Room celebration dressing
+
+[Nine original-art designs newly indexed](interior-celebration-dressing/README.md) include curtains/rug/guardian and wish table, floral swag, festoon, balloon basket, ceremonial arch and guest book. No new illustration was necessary. Room-wide furnishing/celebration placement remains unbuilt; this source audit does not certify the ballroom is fully dressed.

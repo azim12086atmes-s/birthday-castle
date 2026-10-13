@@ -435,3 +435,17 @@ These layer reconstructions were reported inconsistent and retired from placemen
 | INT-BALLROOM-SHELL-001-S02 | [Upper gallery wall bay](interior-room-kits/INT-BALLROOM-SHELL-001/INT-BALLROOM-SHELL-001.png) |
 | INT-BALLROOM-SHELL-001-S03 | [Gallery floor support bay](interior-room-kits/INT-BALLROOM-SHELL-001/INT-BALLROOM-SHELL-001.png) |
 | INT-BALLROOM-SHELL-001-S04 | [Complete pointed vault bay](interior-room-kits/INT-BALLROOM-SHELL-001/INT-BALLROOM-SHELL-001.png) |
+
+## Existing interior textiles and birthday dressing
+
+| ID | Reference |
+| --- | --- |
+| GEN-24-A10 | [Draped curtain and star valance](interior-celebration-dressing/source-panels/GEN-24-A10.png) |
+| GEN-24-A11 | [Embroidered rose-star rug](interior-celebration-dressing/source-panels/GEN-24-A11.png) |
+| GEN-24-A12 | [Veiled guardian sculpture](interior-celebration-dressing/source-panels/GEN-24-A12.png) |
+| GEN-25-A05 | [Embroidered wish table](interior-celebration-dressing/source-panels/GEN-25-A05.png) |
+| GEN-25-A06 | [Draped floral arch swag](interior-celebration-dressing/source-panels/GEN-25-A06.png) |
+| GEN-25-A07 | [Pearl-globe lantern festoon](interior-celebration-dressing/source-panels/GEN-25-A07.png) |
+| GEN-25-A08 | [Silk balloon and lantern basket](interior-celebration-dressing/source-panels/GEN-25-A08.png) |
+| GEN-25-A09 | [Floral ceremonial arch](interior-celebration-dressing/source-panels/GEN-25-A09.png) |
+| GEN-25-A10 | [Invitation and guest book](interior-celebration-dressing/source-panels/GEN-25-A10.png) |
