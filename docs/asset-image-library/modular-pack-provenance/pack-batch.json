@@ -22,8 +22,9 @@
         },
         {
           "id": "A03",
-          "name": "Lotus capital crown",
-          "attachment": "Underside socket to shaft; flat top to abacus"
+          "name": "Stepped lotus capital",
+          "attachment": "Underside socket to shaft; flat top to abacus",
+          "reference_design_image_id": "MOD-COL-001"
         },
         {
           "id": "A04",
@@ -93,13 +94,15 @@
       ],
       "prompt": "Generate ONE detailed 16-ASSET ORNAMENT PACK SHEET for the porcelain princess-palace bridge in the supplied reference. The user wants MANY TINY DESIGN COMPONENTS ON ONE SHEET for batch image-to-3D generation, not multiple views of one object. Exactly 16 different COMPLETE SEPARATE solid objects, arranged in a clean FOUR COLUMNS BY FOUR ROWS grid, row-major A01 to A16. Each object gets exactly ONE clear orthographic three-quarter view. Same camera angle, lighting and coherent materials across the pack. Each piece floats visually in its own generous blank cell with a subtle ground shadow, no shared scene or substrate, no overlaps or fused neighbors. Full object silhouette visible. Keep the frame airy and uncluttered. Add a clearly legible sheet heading PORCELAIN LONG BRIDGE \u2014 ORNAMENT KIT. Under each object print its ID and its SHORT ENGLISH NAME, matching the named list below. Names must remain readable and outside silhouettes. No prose paragraphs, dimensions or decorative frames.\n\nDerive all motifs from the supplied bridge: luminous ivory/white porcelain, some rose-pink veined marble insert fields, restrained fine warm gold, indigo/lapis star inlays and lilac/pink facets, lotus/leaf carving, eight-point stars, quatrefoils and crystal lanterns. Preserve the princess delicacy. Every ornament has clear physical thickness, readable carving depth and an appropriate mounting face; real pierced areas show background through them. These are reusable pieces added to otherwise plain bridge modules.\n\nROW 1, left to right: A01 round backed eight-point star-rosette medallion with blue/gold facets; A02 small circular carved ivory floral rosette; A03 isolated lotus capital crown with flaring petals and short indigo/gold collar, no whole pillar; A04 short fluted marble column sleeve with gilded narrow ribs and clean end rings, no whole pillar.\nROW 2: A05 complete leaf-carved support corbel with flat back and flat upper seat; A06 shallow rectangular pierced quatrefoil/lotus railing infill with true open holes; A07 separate shallow rectangular blue-star railing infill backed with indigo, rose-star center and gold tracery; A08 straight repeatable beaded cornice strip with stepped ivory moulding and thin gold bead line.\nROW 3: A09 straight repeatable rose-vine carved frieze strip with a flat mounting back; A10 small rolled-leaf corner scroll relief; A11 chamfered ivory/rose ornamental plinth block with gold band and flat support surfaces; A12 gold eight-point star finial with a short mounting stem, not a religious cross.\nROW 4: A13 one curved gold lantern-crown rib segment following the crystal-post crown in the reference; A14 complete crystal lantern on its own curved gold mounting arm, crystal cage suspended visibly, no disconnected floating pieces; A15 one ivory/gold scroll water spout with visible outlet and rear inlet, no animal head; A16 thick square white-porcelain deck paving tile with a flush blue/gold/rose eight-point star inlay and clean edges.\n\nNo palace, bridge assembly, landscape, human, extra objects or duplicate object views. Model each tiny object with crisp but selective detail, not amorphous filigree. A sculptural high-resolution architectural asset-kit reference, intended for subsequent separate-mesh checking and additive assembly. Exactly 16 distinct cells.\nPRINT THESE EXACT SHORT LABELS beneath the sixteen objects, row-major: A01 Star medallion; A02 Floral rosette; A03 Lotus capital; A04 Column sleeve; A05 Leaf corbel; A06 Quatrefoil infill; A07 Blue-star infill; A08 Beaded cornice; A09 Rose-vine frieze; A10 Corner scroll; A11 Marble plinth; A12 Star finial; A13 Lantern crown rib; A14 Crystal lantern; A15 Scroll water spout; A16 Star-inlay tile. The words label each actual visible object, never replace it.",
       "output_file": "images/modular-component-packs/PACK-BRG-001.png",
-      "sha256": "fb0192e2e67c0228bae18c121bf7780ac673097da0ae761b938a7282d2b4eb08",
+      "sha256": "575987486fed7086b5d31d4db5229d191fb986d9491582446c8645b7272b9d77",
       "status": "generated-pending-review",
       "review_notes": [
         "Exactly 16 distinct named objects in a 4 by 4 grid.",
         "A06 and A07 include their own thin end frames, which should be separated or fitted if replacing S04 infills.",
         "Names and silhouettes are readable; a returned batch mesh has not yet been generated or checked."
-      ]
+      ],
+      "revision": 2,
+      "revision_record": "capital-correction-r02.json"
     },
     {
       "id": "PACK-BRG-002",

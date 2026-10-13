@@ -1,8 +1,8 @@
 {
   "date": "2026-10-13",
-  "distinct_image_count": 570,
-  "source_file_count": 821,
-  "total_bytes": 510385238,
+  "distinct_image_count": 571,
+  "source_file_count": 822,
+  "total_bytes": 512691598,
   "categories": {
     "additional-generated-studies": 33,
     "component-development-studies": 3,
@@ -12,7 +12,8 @@
     "previews-and-reference-copies": 233,
     "reference-crops-and-studies": 73,
     "renders-and-screenshots": 48,
-    "vector-drawings": 130
+    "vector-drawings": 130,
+    "superseded-pack-revisions": 1
   },
   "active_palace_authority": "GEN-37 original front elevation; GEN-03 and GEN-16 supporting views",
   "notes": [
@@ -21,8 +22,9 @@
     "Additional generated studies include superseded palace experiments and unapproved variants.",
     "Previews, crops, vectors and renders do not count as newly completed illustrated asset sheets.",
     "Registered render pairs share model geometry, but the native model is not certified as an exact match to the reference art.",
-    "Every image has an immutable image ID; component IDs link named model targets to an exact reference hash. IDs are not approval or completion claims.",
-    "PACK-BRG-001 contains 16 named ornaments; PACK-BRG-002 contains four named bridge segments. MOD sheets are retained single-component development studies, superseded by the user-requested pack format."
+    "Every image has a stable ID and versioned content hash; component IDs link named model targets to an exact reference hash. IDs are not approval or completion claims.",
+    "PACK-BRG-001 contains 16 named ornaments; PACK-BRG-002 contains four named bridge segments. MOD sheets are retained single-component development studies, superseded by the user-requested pack format.",
+    "PACK-BRG-001 revision 2 corrects A03 to the supplied stepped capital. Original revision is preserved as PACK-BRG-001-R01. Model provenance must include the reference hash or revision."
   ],
   "images": [
     {
@@ -1821,10 +1823,10 @@
       "title": "Porcelain Long Bridge \u2014 ornament kit",
       "category": "modular-component-packs",
       "file": "images/modular-component-packs/PACK-BRG-001.png",
-      "sha256": "fb0192e2e67c0228bae18c121bf7780ac673097da0ae761b938a7282d2b4eb08",
-      "bytes": 2480552,
+      "sha256": "575987486fed7086b5d31d4db5229d191fb986d9491582446c8645b7272b9d77",
+      "bytes": 2306360,
       "source_aliases": [
-        "generated_images/exec-bca3a6cf-ec0a-4fe5-8e76-9d72f8cc3551.png"
+        "generated_images/exec-a2268708-e5dd-4891-b8d7-a06e5147141d.png"
       ],
       "review_status": "pending-user-review",
       "alias_ids": [],
@@ -1850,7 +1852,23 @@
       "reference_role": "multi-component-design-pack",
       "design_status": "pending-user-review",
       "related_image_ids": [
-        "GEN-18"
+        "GEN-18",
+        "MOD-COL-001",
+        "PACK-BRG-001-R01"
+      ],
+      "revision": 2,
+      "revision_history": [
+        {
+          "revision": 1,
+          "image_id": "PACK-BRG-001-R01",
+          "sha256": "fb0192e2e67c0228bae18c121bf7780ac673097da0ae761b938a7282d2b4eb08",
+          "reason": "Original A03 was an open lotus-bowl variant, not the supplied stepped capital."
+        },
+        {
+          "revision": 2,
+          "sha256": "575987486fed7086b5d31d4db5229d191fb986d9491582446c8645b7272b9d77",
+          "reason": "A03 replaced with the user-supplied stepped lotus-capital design, including solid abacus and tall rose petals."
+        }
       ]
     },
     {
@@ -10933,6 +10951,26 @@
       "reference_role": "vector-schematic",
       "design_status": "reference-only",
       "related_image_ids": []
+    },
+    {
+      "id": "PACK-BRG-001-R01",
+      "title": "Porcelain bridge ornament kit \u2014 original capital variant (superseded)",
+      "category": "superseded-pack-revisions",
+      "file": "images/superseded-pack-revisions/PACK-BRG-001-R01.png",
+      "sha256": "fb0192e2e67c0228bae18c121bf7780ac673097da0ae761b938a7282d2b4eb08",
+      "bytes": 2480552,
+      "source_aliases": [
+        "generated_images/exec-bca3a6cf-ec0a-4fe5-8e76-9d72f8cc3551.png"
+      ],
+      "review_status": "pending-user-review",
+      "alias_ids": [],
+      "component_ids": [],
+      "label": "PACK-BRG-001-R01 \u2014 Porcelain bridge ornament kit \u2014 original capital variant (superseded)",
+      "reference_role": "superseded-pack-revision",
+      "design_status": "superseded-capital-variant",
+      "related_image_ids": [
+        "PACK-BRG-001"
+      ]
     }
   ],
   "label_schema_version": 1

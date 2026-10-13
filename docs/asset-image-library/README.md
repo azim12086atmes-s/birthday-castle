@@ -1,6 +1,6 @@
 # Birthday Castle image archive
 
-This archive contains **570 distinct image files** (486.7 MiB), including the 45 original illustrated boards, later generated concepts, vector drawings, crops, previews and build renders.
+This archive contains **571 distinct image files** (488.9 MiB), including the 45 original illustrated boards, later generated concepts, vector drawings, crops, previews and build renders.
 
 The active palace reference is **GEN-37**, with GEN-03 and GEN-16 as supporting views. Additional studies are retained for review; preservation does not mean approval. The corrected INT-C01 floor uses rose and ivory marble.
 
@@ -10,6 +10,7 @@ Use [the illustrated boards](images/illustrated-boards) to browse the original a
 | --- | ---: |
 | [component-development-studies](images/component-development-studies) | 3 |
 | [modular-component-packs](images/modular-component-packs) | 2 |
+| [superseded-pack-revisions](images/superseded-pack-revisions) | 1 |
 | [additional-generated-studies](images/additional-generated-studies) | 33 |
 | [illustrated-boards](images/illustrated-boards) | 45 |
 | [interior-components](images/interior-components) | 3 |
@@ -78,3 +79,5 @@ Every image now has a stable ID. Browse [all image labels](IMAGE-LABELS.md), [na
 - [PACK-BRG-001: 16 ornaments](images/modular-component-packs/PACK-BRG-001.png): labelled A01–A16, with names printed on the image.
 
 The three earlier isolated component sheets are retained as development studies. The current format uses 10–20 tiny pieces per ornament sheet and 3–4 major segments per structural sheet. [Batch model tracker](batch-model-tracker.csv) records a whole generated pack; [individual model tracker](model-tracker.csv) records the parts after identification. Generated references require dimensional reconciliation in Blender.
+
+A03 in PACK-BRG-001 revision 2 is **Stepped lotus capital**, matching the supplied MOD-COL-001 direction. Its broad stepped top, tall rose-marble petals, gold flowers and indigo star collar are included. [Revision 1](images/superseded-pack-revisions/PACK-BRG-001-R01.png) is preserved for historical model provenance.

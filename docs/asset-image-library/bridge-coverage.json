@@ -1,0 +1,27 @@
+{
+  "asset_family": "Porcelain Long Bridge",
+  "reference_image_id": "GEN-18",
+  "structure_sheet": "PACK-BRG-002",
+  "ornament_sheet": "PACK-BRG-001",
+  "ornament_revision": 2,
+  "design_coverage": "Sufficient references for a first 3D assembly pass; not a completed or fit-verified model",
+  "covered": {
+    "segment_types": ["Lower-tier arch span", "Two-tier cutwater pier", "Porcelain deck segment", "Parapet railing segment"],
+    "ornament_count": 16,
+    "corrected_capital": "PACK-BRG-001-A03 — Stepped lotus capital, based on MOD-COL-001"
+  },
+  "remaining_reference_gap": {
+    "name": "Freestanding terminal crystal lantern post",
+    "existing_reference": "GEN-18 source panel B",
+    "gap": "The source design exists, but this complete post is absent from the isolated pack. A14 is a hanging lantern and mounting arm.",
+    "plan": "Include in the next lighting/post component kit; avoid another sheet devoted to one piece"
+  },
+  "assembly_checks": [
+    "Reconcile deck width, arch pitch, pier height and railing repeat lengths from a single 3D layout",
+    "Split or reconcile S01 end supports with S02 piers to avoid duplicate support meshes",
+    "Check A03 capital socket, top seating and shaft sleeve fit",
+    "Check railing infills and repeated border ends against their host frames",
+    "Inspect returned batch meshes for identifiable separate components"
+  ],
+  "scope_note": "Sea, water and bridge footstep ripple effects are separate runtime/environment assets; they do not require additional bridge structure sketches"
+}

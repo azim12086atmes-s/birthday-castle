@@ -121,7 +121,7 @@ Component IDs identify actual reference targets, not completed or approved meshe
 | GEN-24-A09 | Lectern | [GEN-24](images/illustrated-boards/GEN-24.png) |
 | PACK-BRG-001-A01 | Star-rosette medallion | [PACK-BRG-001](images/modular-component-packs/PACK-BRG-001.png) |
 | PACK-BRG-001-A02 | Carved floral rosette | [PACK-BRG-001](images/modular-component-packs/PACK-BRG-001.png) |
-| PACK-BRG-001-A03 | Lotus capital crown | [PACK-BRG-001](images/modular-component-packs/PACK-BRG-001.png) |
+| PACK-BRG-001-A03 | Stepped lotus capital | [PACK-BRG-001](images/modular-component-packs/PACK-BRG-001.png) |
 | PACK-BRG-001-A04 | Fluted column sleeve | [PACK-BRG-001](images/modular-component-packs/PACK-BRG-001.png) |
 | PACK-BRG-001-A05 | Leaf corbel bracket | [PACK-BRG-001](images/modular-component-packs/PACK-BRG-001.png) |
 | PACK-BRG-001-A06 | Pierced quatrefoil rail infill | [PACK-BRG-001](images/modular-component-packs/PACK-BRG-001.png) |

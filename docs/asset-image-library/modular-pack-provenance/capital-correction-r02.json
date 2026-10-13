@@ -1,0 +1,16 @@
+{
+  "sheet_id": "PACK-BRG-001",
+  "revision": 2,
+  "component_id": "PACK-BRG-001-A03",
+  "generator": "image_gen.imagegen",
+  "reference_policy": "Focused edit using a small kit and a small capital crop; only two necessary references.",
+  "reference_image_ids": [
+    "PACK-BRG-001-R01",
+    "MOD-COL-001"
+  ],
+  "change_request": "Replace A03 only with the supplied capital: solid stepped octagonal abacus, tall rose/ivory veined petals, gold floral lobes, beaded rings, indigo collar with gold stars, short neck and mounting lugs. Print A03 Stepped lotus capital. Retain other 15 kit objects.",
+  "output_file": "images/modular-component-packs/PACK-BRG-001.png",
+  "output_sha256": "575987486fed7086b5d31d4db5229d191fb986d9491582446c8645b7272b9d77",
+  "review_status": "pending-user-review",
+  "pixel_preservation": "Generated edit, not a pixel-identical compositing guarantee."
+}

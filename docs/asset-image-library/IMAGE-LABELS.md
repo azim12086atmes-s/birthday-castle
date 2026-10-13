@@ -616,3 +616,9 @@ Stable IDs refer to exact saved images. Pack pieces are numbered within each lab
 | VEC-M01 | [WORLD / EXPANDED MASTER PLAN](images/vector-drawings/VEC-M01.svg) |  |
 | VEC-M02 | [SEA / UNEVEN WAVES + COASTAL SECTION](images/vector-drawings/VEC-M02.svg) |  |
 | VEC-M03 | [ASSET PLACEMENT / DISTRICT INDEX](images/vector-drawings/VEC-M03.svg) |  |
+
+## Superseded pack revisions
+
+| Image ID | Label | Components |
+| --- | --- | --- |
+| PACK-BRG-001-R01 | [Original kit with superseded open-capital variant](images/superseded-pack-revisions/PACK-BRG-001-R01.png) | Use current PACK-BRG-001 revision 2 for A03 |
