@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1120" viewBox="0 0 1600 1120"><rect width="1600" height="1120" fill="#f8f3e8"/>
+<rect x="20" y="20" width="1560" height="1080" rx="0" fill="none" stroke="#ac8644" stroke-width="1"/>
+<text x="50" y="64" fill="#24263d" font-family="Georgia,serif" font-size="30" text-anchor="start">A081 / FLOATING ISLAND UNDERSIDE</text>
+<text x="50" y="94" fill="#24263d" font-family="Georgia,serif" font-size="15" text-anchor="start">FAMILY DESIGN STUDY • module W 140 × D 140 × H 100 m • placements: S01 S02 S03 S04 S05</text>
+<line x1="50" y1="111" x2="1550" y2="111" stroke="#ac8644" stroke-width="1"/>
+<text x="50" y="1080" fill="#24263d" font-family="Georgia,serif" font-size="13" text-anchor="start">BIRTHDAY CASTLE V5  /  PROPOSED — APPROVAL BEFORE GAME IMPLEMENTATION</text>
+<text x="1550" y="1080" fill="#24263d" font-family="Georgia,serif" font-size="15" text-anchor="end">A081</text>
+<line x1="50" y1="1054" x2="1550" y2="1054" stroke="#ac8644" stroke-width="1"/>
+<rect x="50" y="145" width="480" height="460" rx="0" fill="none" stroke="#d4c6ad" stroke-width="1"/>
+<text x="65" y="173" fill="#24263d" font-family="Georgia,serif" font-size="19" text-anchor="start">FRONT / PRIMARY SHAPE</text>
+<polygon points="153.50,511.00 150.00,279.80 185.00,245.80 220.00,286.60 213.00,511.00" fill="#b8ad9e" stroke="#ac8644" stroke-width="1"/>
+<polygon points="216.50,511.00 213.00,324.00 248.00,290.00 283.00,330.80 276.00,511.00" fill="#b8ad9e" stroke="#ac8644" stroke-width="1"/>
+<polygon points="279.50,511.00 276.00,368.20 311.00,334.20 346.00,375.00 339.00,511.00" fill="#b8ad9e" stroke="#ac8644" stroke-width="1"/>
+<polygon points="342.50,511.00 339.00,310.40 374.00,276.40 409.00,317.20 402.00,511.00" fill="#b8ad9e" stroke="#ac8644" stroke-width="1"/>
+<rect x="550" y="145" width="480" height="460" rx="0" fill="none" stroke="#d4c6ad" stroke-width="1"/>
+<text x="565" y="173" fill="#24263d" font-family="Georgia,serif" font-size="19" text-anchor="start">SIDE / DEPTH &amp; PROFILE</text>
+<rect x="720" y="245" width="85" height="250" rx="0" fill="#ddacb6" stroke="#ac8644" stroke-width="2"/>
+<path d="M710 490 Q740 450 720 390 Q820 370 805 250" fill="none" stroke="#ac8644" stroke-width="2"/>
+<line x1="720" y1="525" x2="805" y2="525" stroke="#ac8644" stroke-width="1"/>
+<line x1="720" y1="519" x2="720" y2="531" stroke="#ac8644" stroke-width="1"/>
+<line x1="805" y1="519" x2="805" y2="531" stroke="#ac8644" stroke-width="1"/>
+<text x="762.5" y="516" fill="#24263d" font-family="Georgia,serif" font-size="14" text-anchor="middle">140 m depth</text>
+<text x="580" y="575" fill="#24263d" font-family="Georgia,serif" font-size="14" text-anchor="start">Profile sketch; low mesh keeps visible</text>
+<text x="580" y="596" fill="#24263d" font-family="Georgia,serif" font-size="14" text-anchor="start">silhouette.</text>
+<rect x="1050" y="145" width="480" height="460" rx="0" fill="none" stroke="#d4c6ad" stroke-width="1"/>
+<text x="1065" y="173" fill="#24263d" font-family="Georgia,serif" font-size="19" text-anchor="start">PLAN / REPEAT LOGIC</text>
+<rect x="1150" y="250" width="270" height="225" rx="0" fill="#e6d5be" stroke="#ac8644" stroke-width="2"/>
+<circle cx="1285" cy="363" r="75" fill="none" stroke="#ac8644" stroke-width="1"/>
+<circle cx="1285" cy="363" r="60.0" fill="none" stroke="#ac8644" stroke-width="1"/>
+<circle cx="1320.25" cy="363.0" r="21.000000000000004" fill="none" stroke="#ac8644" stroke-width="0.75"/>
+<circle cx="1309.9255140368257" cy="387.9255140368258" r="21.000000000000004" fill="none" stroke="#ac8644" stroke-width="0.75"/>
+<circle cx="1285.0" cy="398.25" r="21.000000000000004" fill="none" stroke="#ac8644" stroke-width="0.75"/>
+<circle cx="1260.0744859631743" cy="387.9255140368258" r="21.000000000000004" fill="none" stroke="#ac8644" stroke-width="0.75"/>
+<circle cx="1249.75" cy="363.0" r="21.000000000000004" fill="none" stroke="#ac8644" stroke-width="0.75"/>
+<circle cx="1260.074485963174" cy="338.0744859631742" r="21.000000000000004" fill="none" stroke="#ac8644" stroke-width="0.75"/>
+<circle cx="1285.0" cy="327.75" r="21.000000000000004" fill="none" stroke="#ac8644" stroke-width="0.75"/>
+<circle cx="1309.9255140368257" cy="338.0744859631742" r="21.000000000000004" fill="none" stroke="#ac8644" stroke-width="0.75"/>
+<polygon points="1285.00,336.75 1289.42,352.33 1303.56,344.44 1295.67,358.58 1311.25,363.00 1295.67,367.42 1303.56,381.56 1289.42,373.67 1285.00,389.25 1280.58,373.67 1266.44,381.56 1274.33,367.42 1258.75,363.00 1274.33,358.58 1266.44,344.44 1280.58,352.33" fill="none" stroke="#ac8644" stroke-width="1"/>
+<line x1="1150" y1="520" x2="1420" y2="520" stroke="#ac8644" stroke-width="1"/>
+<line x1="1150" y1="514" x2="1150" y2="526" stroke="#ac8644" stroke-width="1"/>
+<line x1="1420" y1="514" x2="1420" y2="526" stroke="#ac8644" stroke-width="1"/>
+<text x="1285.0" y="511" fill="#24263d" font-family="Georgia,serif" font-size="14" text-anchor="middle">140 × 140 m envelope</text>
+<rect x="50" y="640" width="730" height="380" rx="0" fill="none" stroke="#d4c6ad" stroke-width="1"/>
+<text x="65" y="668" fill="#24263d" font-family="Georgia,serif" font-size="19" text-anchor="start">PASS 03 / CARVING + OBJECT DETAIL</text>
+<polygon points="101.90,931.50 99.00,737.70 128.00,709.20 157.00,743.40 151.20,931.50" fill="#b8ad9e" stroke="#ac8644" stroke-width="1"/>
+<polygon points="154.10,931.50 151.20,774.75 180.20,746.25 209.20,780.45 203.40,931.50" fill="#b8ad9e" stroke="#ac8644" stroke-width="1"/>
+<polygon points="206.30,931.50 203.40,811.80 232.40,783.30 261.40,817.50 255.60,931.50" fill="#b8ad9e" stroke="#ac8644" stroke-width="1"/>
+<polygon points="258.50,931.50 255.60,763.35 284.60,734.85 313.60,769.05 307.80,931.50" fill="#b8ad9e" stroke="#ac8644" stroke-width="1"/>
+<text x="390" y="700" fill="#24263d" font-family="Georgia,serif" font-size="19" text-anchor="start">Jagged hanging strata, waterfall</text>
+<text x="390" y="726" fill="#24263d" font-family="Georgia,serif" font-size="19" text-anchor="start">lip, crystal fissures.</text>
+<text x="390" y="840" fill="#24263d" font-family="Georgia,serif" font-size="16" text-anchor="start">Variants: intact / weathered /</text>
+<text x="390" y="863" fill="#24263d" font-family="Georgia,serif" font-size="16" text-anchor="start">celebration. Keep the family</text>
+<text x="390" y="886" fill="#24263d" font-family="Georgia,serif" font-size="16" text-anchor="start">silhouette; vary relief, color</text>
+<text x="390" y="909" fill="#24263d" font-family="Georgia,serif" font-size="16" text-anchor="start">masks and dressing.</text>
+<rect x="810" y="640" width="740" height="380" rx="0" fill="none" stroke="#d4c6ad" stroke-width="1"/>
+<text x="825" y="668" fill="#24263d" font-family="Georgia,serif" font-size="19" text-anchor="start">MATERIAL / PERFORMANCE / SOURCE TRACE</text>
+<text x="830" y="695" fill="#24263d" font-family="Georgia,serif" font-size="17" text-anchor="start">High detail sculpt → low silhouette mesh → normal/AO/trim bake; instance</text>
+<text x="830" y="719" fill="#24263d" font-family="Georgia,serif" font-size="17" text-anchor="start">repeated modules.</text>
+<text x="830" y="790" fill="#24263d" font-family="Georgia,serif" font-size="17" text-anchor="start">LOD: near / mid / far. Relief budget and switching distances depend on</text>
+<text x="830" y="814" fill="#24263d" font-family="Georgia,serif" font-size="17" text-anchor="start">projected size, not only metres. Design targets require later</text>
+<text x="830" y="838" fill="#24263d" font-family="Georgia,serif" font-size="17" text-anchor="start">profiling.</text>
+<text x="830" y="905" fill="#24263d" font-family="Georgia,serif" font-size="15" text-anchor="start">Catalogue sources: U21, U83, U91, U105, U108, U136, U137, U185, U199,</text>
+<text x="830" y="927" fill="#24263d" font-family="Georgia,serif" font-size="15" text-anchor="start">U228</text>
+<text x="830" y="990" fill="#24263d" font-family="Georgia,serif" font-size="14" text-anchor="start">Legend: schematic family views; dimensions govern the envelope.</text></svg>

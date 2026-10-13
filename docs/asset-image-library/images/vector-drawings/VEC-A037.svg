@@ -1,0 +1,145 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1120" viewBox="0 0 1600 1120"><rect width="1600" height="1120" fill="#f8f3e8"/>
+<rect x="20" y="20" width="1560" height="1080" rx="0" fill="none" stroke="#ac8644" stroke-width="1"/>
+<text x="50" y="64" fill="#24263d" font-family="Georgia,serif" font-size="30" text-anchor="start">A037 / WALL NYMPHAEUM</text>
+<text x="50" y="94" fill="#24263d" font-family="Georgia,serif" font-size="15" text-anchor="start">FAMILY DESIGN STUDY • module W 14 × D 6 × H 12 m • placements: Z04</text>
+<line x1="50" y1="111" x2="1550" y2="111" stroke="#ac8644" stroke-width="1"/>
+<text x="50" y="1080" fill="#24263d" font-family="Georgia,serif" font-size="13" text-anchor="start">BIRTHDAY CASTLE V5  /  PROPOSED — APPROVAL BEFORE GAME IMPLEMENTATION</text>
+<text x="1550" y="1080" fill="#24263d" font-family="Georgia,serif" font-size="15" text-anchor="end">A037</text>
+<line x1="50" y1="1054" x2="1550" y2="1054" stroke="#ac8644" stroke-width="1"/>
+<rect x="50" y="145" width="480" height="460" rx="0" fill="none" stroke="#d4c6ad" stroke-width="1"/>
+<text x="65" y="173" fill="#24263d" font-family="Georgia,serif" font-size="19" text-anchor="start">FRONT / PRIMARY SHAPE</text>
+<path d="M185.0 483.8 L185.0 340.456 Q185.0 289.592 290.0 252.6 Q395.0 289.592 395.0 340.456 L395.0 483.8 Z" fill="#8c9ac4" stroke="#ac8644" stroke-width="1.4"/>
+<line x1="254.3" y1="326.584" x2="254.3" y2="483.8" stroke="#ac8644" stroke-width="0.7"/>
+<line x1="323.6" y1="326.584" x2="323.6" y2="483.8" stroke="#ac8644" stroke-width="0.7"/>
+<line x1="185.0" y1="402.88" x2="395.0" y2="402.88" stroke="#ac8644" stroke-width="0.7"/>
+<circle cx="290.0" cy="317.336" r="27.744" fill="none" stroke="#ac8644" stroke-width="1"/>
+<circle cx="290.0" cy="317.336" r="22.1952" fill="none" stroke="#ac8644" stroke-width="1"/>
+<circle cx="303.03968" cy="317.336" r="7.768320000000001" fill="none" stroke="#ac8644" stroke-width="0.75"/>
+<circle cx="299.2204461525026" cy="326.5564461525026" r="7.768320000000001" fill="none" stroke="#ac8644" stroke-width="0.75"/>
+<circle cx="290.0" cy="330.37568" r="7.768320000000001" fill="none" stroke="#ac8644" stroke-width="0.75"/>
+<circle cx="280.7795538474974" cy="326.5564461525026" r="7.768320000000001" fill="none" stroke="#ac8644" stroke-width="0.75"/>
+<circle cx="276.96032" cy="317.336" r="7.768320000000001" fill="none" stroke="#ac8644" stroke-width="0.75"/>
+<circle cx="280.7795538474974" cy="308.11555384749744" r="7.768320000000001" fill="none" stroke="#ac8644" stroke-width="0.75"/>
+<circle cx="290.0" cy="304.29632000000004" r="7.768320000000001" fill="none" stroke="#ac8644" stroke-width="0.75"/>
+<circle cx="299.2204461525026" cy="308.11555384749744" r="7.768320000000001" fill="none" stroke="#ac8644" stroke-width="0.75"/>
+<polygon points="290.00,307.63 291.64,313.39 296.87,310.47 293.95,315.70 299.71,317.34 293.95,318.97 296.87,324.20 291.64,321.28 290.00,327.05 288.36,321.28 283.13,324.20 286.05,318.97 280.29,317.34 286.05,315.70 283.13,310.47 288.36,313.39" fill="none" stroke="#ac8644" stroke-width="1"/>
+<path d="M157.0 463.4 L157.0 320.056 Q157.0 269.192 290.0 232.2 Q423.0 269.192 423.0 320.056 L423.0 463.4 Z" fill="none" stroke="#ac8644" stroke-width="1.4"/>
+<line x1="244.78" y1="306.18399999999997" x2="244.78" y2="463.4" stroke="#ac8644" stroke-width="0.7"/>
+<line x1="332.56" y1="306.18399999999997" x2="332.56" y2="463.4" stroke="#ac8644" stroke-width="0.7"/>
+<line x1="157.0" y1="382.48" x2="423.0" y2="382.48" stroke="#ac8644" stroke-width="0.7"/>
+<circle cx="290.0" cy="296.936" r="27.744" fill="none" stroke="#ac8644" stroke-width="1"/>
+<circle cx="290.0" cy="296.936" r="22.1952" fill="none" stroke="#ac8644" stroke-width="1"/>
+<circle cx="303.03968" cy="296.936" r="7.768320000000001" fill="none" stroke="#ac8644" stroke-width="0.75"/>
+<circle cx="299.2204461525026" cy="306.15644615250255" r="7.768320000000001" fill="none" stroke="#ac8644" stroke-width="0.75"/>
+<circle cx="290.0" cy="309.97567999999995" r="7.768320000000001" fill="none" stroke="#ac8644" stroke-width="0.75"/>
+<circle cx="280.7795538474974" cy="306.15644615250255" r="7.768320000000001" fill="none" stroke="#ac8644" stroke-width="0.75"/>
+<circle cx="276.96032" cy="296.936" r="7.768320000000001" fill="none" stroke="#ac8644" stroke-width="0.75"/>
+<circle cx="280.7795538474974" cy="287.7155538474974" r="7.768320000000001" fill="none" stroke="#ac8644" stroke-width="0.75"/>
+<circle cx="290.0" cy="283.89632" r="7.768320000000001" fill="none" stroke="#ac8644" stroke-width="0.75"/>
+<circle cx="299.2204461525026" cy="287.7155538474974" r="7.768320000000001" fill="none" stroke="#ac8644" stroke-width="0.75"/>
+<polygon points="290.00,287.23 291.64,292.99 296.87,290.07 293.95,295.30 299.71,296.94 293.95,298.57 296.87,303.80 291.64,300.88 290.00,306.65 288.36,300.88 283.13,303.80 286.05,298.57 280.29,296.94 286.05,295.30 283.13,290.07 288.36,292.99" fill="none" stroke="#ac8644" stroke-width="1"/>
+<path d="M174.5 463.4 L174.5 330.596 Q174.5 283.472 290.0 249.2 Q405.5 283.472 405.5 330.596 L405.5 463.4 Z" fill="none" stroke="#ac8644" stroke-width="1.4"/>
+<line x1="250.73" y1="317.74399999999997" x2="250.73" y2="463.4" stroke="#ac8644" stroke-width="0.7"/>
+<line x1="326.96" y1="317.74399999999997" x2="326.96" y2="463.4" stroke="#ac8644" stroke-width="0.7"/>
+<line x1="174.5" y1="388.42999999999995" x2="405.5" y2="388.42999999999995" stroke="#ac8644" stroke-width="0.7"/>
+<circle cx="290.0" cy="309.176" r="25.703999999999997" fill="none" stroke="#ac8644" stroke-width="1"/>
+<circle cx="290.0" cy="309.176" r="20.5632" fill="none" stroke="#ac8644" stroke-width="1"/>
+<circle cx="302.08088" cy="309.176" r="7.19712" fill="none" stroke="#ac8644" stroke-width="0.75"/>
+<circle cx="298.54247217070093" cy="317.7184721707009" r="7.19712" fill="none" stroke="#ac8644" stroke-width="0.75"/>
+<circle cx="290.0" cy="321.25687999999997" r="7.19712" fill="none" stroke="#ac8644" stroke-width="0.75"/>
+<circle cx="281.45752782929907" cy="317.7184721707009" r="7.19712" fill="none" stroke="#ac8644" stroke-width="0.75"/>
+<circle cx="277.91912" cy="309.176" r="7.19712" fill="none" stroke="#ac8644" stroke-width="0.75"/>
+<circle cx="281.45752782929907" cy="300.63352782929906" r="7.19712" fill="none" stroke="#ac8644" stroke-width="0.75"/>
+<circle cx="290.0" cy="297.09512" r="7.19712" fill="none" stroke="#ac8644" stroke-width="0.75"/>
+<circle cx="298.54247217070093" cy="300.63352782929906" r="7.19712" fill="none" stroke="#ac8644" stroke-width="0.75"/>
+<polygon points="290.00,300.18 291.51,305.52 296.36,302.81 293.66,307.66 299.00,309.18 293.66,310.69 296.36,315.54 291.51,312.83 290.00,318.17 288.49,312.83 283.64,315.54 286.34,310.69 281.00,309.18 286.34,307.66 283.64,302.81 288.49,305.52" fill="none" stroke="#ac8644" stroke-width="1"/>
+<rect x="550" y="145" width="480" height="460" rx="0" fill="none" stroke="#d4c6ad" stroke-width="1"/>
+<text x="565" y="173" fill="#24263d" font-family="Georgia,serif" font-size="19" text-anchor="start">SIDE / DEPTH &amp; PROFILE</text>
+<rect x="720" y="245" width="85" height="250" rx="0" fill="#ddacb6" stroke="#ac8644" stroke-width="2"/>
+<path d="M710 490 Q740 450 720 390 Q820 370 805 250" fill="none" stroke="#ac8644" stroke-width="2"/>
+<line x1="720" y1="525" x2="805" y2="525" stroke="#ac8644" stroke-width="1"/>
+<line x1="720" y1="519" x2="720" y2="531" stroke="#ac8644" stroke-width="1"/>
+<line x1="805" y1="519" x2="805" y2="531" stroke="#ac8644" stroke-width="1"/>
+<text x="762.5" y="516" fill="#24263d" font-family="Georgia,serif" font-size="14" text-anchor="middle">6 m depth</text>
+<text x="580" y="575" fill="#24263d" font-family="Georgia,serif" font-size="14" text-anchor="start">Profile sketch; low mesh keeps visible</text>
+<text x="580" y="596" fill="#24263d" font-family="Georgia,serif" font-size="14" text-anchor="start">silhouette.</text>
+<rect x="1050" y="145" width="480" height="460" rx="0" fill="none" stroke="#d4c6ad" stroke-width="1"/>
+<text x="1065" y="173" fill="#24263d" font-family="Georgia,serif" font-size="19" text-anchor="start">PLAN / REPEAT LOGIC</text>
+<rect x="1150" y="250" width="270" height="225" rx="0" fill="#e6d5be" stroke="#ac8644" stroke-width="2"/>
+<circle cx="1285" cy="363" r="75" fill="none" stroke="#ac8644" stroke-width="1"/>
+<circle cx="1285" cy="363" r="60.0" fill="none" stroke="#ac8644" stroke-width="1"/>
+<circle cx="1320.25" cy="363.0" r="21.000000000000004" fill="none" stroke="#ac8644" stroke-width="0.75"/>
+<circle cx="1309.9255140368257" cy="387.9255140368258" r="21.000000000000004" fill="none" stroke="#ac8644" stroke-width="0.75"/>
+<circle cx="1285.0" cy="398.25" r="21.000000000000004" fill="none" stroke="#ac8644" stroke-width="0.75"/>
+<circle cx="1260.0744859631743" cy="387.9255140368258" r="21.000000000000004" fill="none" stroke="#ac8644" stroke-width="0.75"/>
+<circle cx="1249.75" cy="363.0" r="21.000000000000004" fill="none" stroke="#ac8644" stroke-width="0.75"/>
+<circle cx="1260.074485963174" cy="338.0744859631742" r="21.000000000000004" fill="none" stroke="#ac8644" stroke-width="0.75"/>
+<circle cx="1285.0" cy="327.75" r="21.000000000000004" fill="none" stroke="#ac8644" stroke-width="0.75"/>
+<circle cx="1309.9255140368257" cy="338.0744859631742" r="21.000000000000004" fill="none" stroke="#ac8644" stroke-width="0.75"/>
+<polygon points="1285.00,336.75 1289.42,352.33 1303.56,344.44 1295.67,358.58 1311.25,363.00 1295.67,367.42 1303.56,381.56 1289.42,373.67 1285.00,389.25 1280.58,373.67 1266.44,381.56 1274.33,367.42 1258.75,363.00 1274.33,358.58 1266.44,344.44 1280.58,352.33" fill="none" stroke="#ac8644" stroke-width="1"/>
+<line x1="1150" y1="520" x2="1420" y2="520" stroke="#ac8644" stroke-width="1"/>
+<line x1="1150" y1="514" x2="1150" y2="526" stroke="#ac8644" stroke-width="1"/>
+<line x1="1420" y1="514" x2="1420" y2="526" stroke="#ac8644" stroke-width="1"/>
+<text x="1285.0" y="511" fill="#24263d" font-family="Georgia,serif" font-size="14" text-anchor="middle">14 × 6 m envelope</text>
+<rect x="50" y="640" width="730" height="380" rx="0" fill="none" stroke="#d4c6ad" stroke-width="1"/>
+<text x="65" y="668" fill="#24263d" font-family="Georgia,serif" font-size="19" text-anchor="start">PASS 03 / CARVING + OBJECT DETAIL</text>
+<path d="M128.0 908.7 L128.0 788.544 Q128.0 745.908 215.0 714.9 Q302.0 745.908 302.0 788.544 L302.0 908.7 Z" fill="#8c9ac4" stroke="#ac8644" stroke-width="1.4"/>
+<line x1="185.42000000000002" y1="776.9159999999999" x2="185.42000000000002" y2="908.7" stroke="#ac8644" stroke-width="0.7"/>
+<line x1="242.84" y1="776.9159999999999" x2="242.84" y2="908.7" stroke="#ac8644" stroke-width="0.7"/>
+<line x1="128.0" y1="840.87" x2="302.0" y2="840.87" stroke="#ac8644" stroke-width="0.7"/>
+<circle cx="215.0" cy="769.164" r="23.256" fill="none" stroke="#ac8644" stroke-width="1"/>
+<circle cx="215.0" cy="769.164" r="18.6048" fill="none" stroke="#ac8644" stroke-width="1"/>
+<circle cx="225.93032" cy="769.164" r="6.511680000000001" fill="none" stroke="#ac8644" stroke-width="0.75"/>
+<circle cx="222.72890339253894" cy="776.892903392539" r="6.511680000000001" fill="none" stroke="#ac8644" stroke-width="0.75"/>
+<circle cx="215.0" cy="780.09432" r="6.511680000000001" fill="none" stroke="#ac8644" stroke-width="0.75"/>
+<circle cx="207.27109660746106" cy="776.892903392539" r="6.511680000000001" fill="none" stroke="#ac8644" stroke-width="0.75"/>
+<circle cx="204.06968" cy="769.164" r="6.511680000000001" fill="none" stroke="#ac8644" stroke-width="0.75"/>
+<circle cx="207.27109660746106" cy="761.435096607461" r="6.511680000000001" fill="none" stroke="#ac8644" stroke-width="0.75"/>
+<circle cx="215.0" cy="758.2336799999999" r="6.511680000000001" fill="none" stroke="#ac8644" stroke-width="0.75"/>
+<circle cx="222.72890339253894" cy="761.435096607461" r="6.511680000000001" fill="none" stroke="#ac8644" stroke-width="0.75"/>
+<polygon points="215.00,761.02 216.37,765.86 220.76,763.41 218.31,767.79 223.14,769.16 218.31,770.53 220.76,774.92 216.37,772.47 215.00,777.30 213.63,772.47 209.24,774.92 211.69,770.53 206.86,769.16 211.69,767.79 209.24,763.41 213.63,765.86" fill="none" stroke="#ac8644" stroke-width="1"/>
+<path d="M104.8 891.5999999999999 L104.8 771.444 Q104.8 728.808 215.0 697.8 Q325.2 728.808 325.2 771.444 L325.2 891.5999999999999 Z" fill="none" stroke="#ac8644" stroke-width="1.4"/>
+<line x1="177.53199999999998" y1="759.8159999999999" x2="177.53199999999998" y2="891.5999999999999" stroke="#ac8644" stroke-width="0.7"/>
+<line x1="250.264" y1="759.8159999999999" x2="250.264" y2="891.5999999999999" stroke="#ac8644" stroke-width="0.7"/>
+<line x1="104.8" y1="823.77" x2="325.2" y2="823.77" stroke="#ac8644" stroke-width="0.7"/>
+<circle cx="215.0" cy="752.064" r="23.256" fill="none" stroke="#ac8644" stroke-width="1"/>
+<circle cx="215.0" cy="752.064" r="18.6048" fill="none" stroke="#ac8644" stroke-width="1"/>
+<circle cx="225.93032" cy="752.064" r="6.511680000000001" fill="none" stroke="#ac8644" stroke-width="0.75"/>
+<circle cx="222.72890339253894" cy="759.792903392539" r="6.511680000000001" fill="none" stroke="#ac8644" stroke-width="0.75"/>
+<circle cx="215.0" cy="762.99432" r="6.511680000000001" fill="none" stroke="#ac8644" stroke-width="0.75"/>
+<circle cx="207.27109660746106" cy="759.792903392539" r="6.511680000000001" fill="none" stroke="#ac8644" stroke-width="0.75"/>
+<circle cx="204.06968" cy="752.064" r="6.511680000000001" fill="none" stroke="#ac8644" stroke-width="0.75"/>
+<circle cx="207.27109660746106" cy="744.335096607461" r="6.511680000000001" fill="none" stroke="#ac8644" stroke-width="0.75"/>
+<circle cx="215.0" cy="741.1336799999999" r="6.511680000000001" fill="none" stroke="#ac8644" stroke-width="0.75"/>
+<circle cx="222.72890339253894" cy="744.335096607461" r="6.511680000000001" fill="none" stroke="#ac8644" stroke-width="0.75"/>
+<polygon points="215.00,743.92 216.37,748.76 220.76,746.31 218.31,750.69 223.14,752.06 218.31,753.43 220.76,757.82 216.37,755.37 215.00,760.20 213.63,755.37 209.24,757.82 211.69,753.43 206.86,752.06 211.69,750.69 209.24,746.31 213.63,748.76" fill="none" stroke="#ac8644" stroke-width="1"/>
+<path d="M119.30000000000001 891.5999999999999 L119.30000000000001 780.279 Q119.30000000000001 740.7779999999999 215.0 712.05 Q310.7 740.7779999999999 310.7 780.279 L310.7 891.5999999999999 Z" fill="none" stroke="#ac8644" stroke-width="1.4"/>
+<line x1="182.462" y1="769.506" x2="182.462" y2="891.5999999999999" stroke="#ac8644" stroke-width="0.7"/>
+<line x1="245.624" y1="769.506" x2="245.624" y2="891.5999999999999" stroke="#ac8644" stroke-width="0.7"/>
+<line x1="119.30000000000001" y1="828.7574999999999" x2="310.7" y2="828.7574999999999" stroke="#ac8644" stroke-width="0.7"/>
+<circle cx="215.0" cy="762.324" r="21.546" fill="none" stroke="#ac8644" stroke-width="1"/>
+<circle cx="215.0" cy="762.324" r="17.2368" fill="none" stroke="#ac8644" stroke-width="1"/>
+<circle cx="225.12662" cy="762.324" r="6.0328800000000005" fill="none" stroke="#ac8644" stroke-width="0.75"/>
+<circle cx="222.16060167249933" cy="769.4846016724993" r="6.0328800000000005" fill="none" stroke="#ac8644" stroke-width="0.75"/>
+<circle cx="215.0" cy="772.45062" r="6.0328800000000005" fill="none" stroke="#ac8644" stroke-width="0.75"/>
+<circle cx="207.83939832750067" cy="769.4846016724993" r="6.0328800000000005" fill="none" stroke="#ac8644" stroke-width="0.75"/>
+<circle cx="204.87338" cy="762.324" r="6.0328800000000005" fill="none" stroke="#ac8644" stroke-width="0.75"/>
+<circle cx="207.83939832750067" cy="755.1633983275007" r="6.0328800000000005" fill="none" stroke="#ac8644" stroke-width="0.75"/>
+<circle cx="215.0" cy="752.19738" r="6.0328800000000005" fill="none" stroke="#ac8644" stroke-width="0.75"/>
+<circle cx="222.16060167249933" cy="755.1633983275007" r="6.0328800000000005" fill="none" stroke="#ac8644" stroke-width="0.75"/>
+<polygon points="215.00,754.78 216.27,759.26 220.33,756.99 218.07,761.05 222.54,762.32 218.07,763.59 220.33,767.66 216.27,765.39 215.00,769.87 213.73,765.39 209.67,767.66 211.93,763.59 207.46,762.32 211.93,761.05 209.67,756.99 213.73,759.26" fill="none" stroke="#ac8644" stroke-width="1"/>
+<text x="390" y="700" fill="#24263d" font-family="Georgia,serif" font-size="19" text-anchor="start">Exedra niches, shell spout, floral</text>
+<text x="390" y="726" fill="#24263d" font-family="Georgia,serif" font-size="19" text-anchor="start">relief, shallow rill.</text>
+<text x="390" y="840" fill="#24263d" font-family="Georgia,serif" font-size="16" text-anchor="start">Variants: intact / weathered /</text>
+<text x="390" y="863" fill="#24263d" font-family="Georgia,serif" font-size="16" text-anchor="start">celebration. Keep the family</text>
+<text x="390" y="886" fill="#24263d" font-family="Georgia,serif" font-size="16" text-anchor="start">silhouette; vary relief, color</text>
+<text x="390" y="909" fill="#24263d" font-family="Georgia,serif" font-size="16" text-anchor="start">masks and dressing.</text>
+<rect x="810" y="640" width="740" height="380" rx="0" fill="none" stroke="#d4c6ad" stroke-width="1"/>
+<text x="825" y="668" fill="#24263d" font-family="Georgia,serif" font-size="19" text-anchor="start">MATERIAL / PERFORMANCE / SOURCE TRACE</text>
+<text x="830" y="695" fill="#24263d" font-family="Georgia,serif" font-size="17" text-anchor="start">High detail sculpt → low silhouette mesh → normal/AO/trim bake; instance</text>
+<text x="830" y="719" fill="#24263d" font-family="Georgia,serif" font-size="17" text-anchor="start">repeated modules.</text>
+<text x="830" y="790" fill="#24263d" font-family="Georgia,serif" font-size="17" text-anchor="start">LOD: near / mid / far. Relief budget and switching distances depend on</text>
+<text x="830" y="814" fill="#24263d" font-family="Georgia,serif" font-size="17" text-anchor="start">projected size, not only metres. Design targets require later</text>
+<text x="830" y="838" fill="#24263d" font-family="Georgia,serif" font-size="17" text-anchor="start">profiling.</text>
+<text x="830" y="905" fill="#24263d" font-family="Georgia,serif" font-size="15" text-anchor="start">Catalogue sources: U261</text>
+<text x="830" y="990" fill="#24263d" font-family="Georgia,serif" font-size="14" text-anchor="start">Legend: schematic family views; dimensions govern the envelope.</text></svg>

@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 570">
+<rect width="1120" height="570" fill="#fcf7ed"/>
+<style>text{font:15px sans-serif;fill:#2e3040}.dim{stroke:#745c80;fill:none;stroke-width:1.4}</style>
+<text x="40" y="35" font-size="24">Confirmed four-level section: design metres × 2.75 = world metres</text>
+<rect x="135.0" y="401.0" width="884.5" height="69.0" fill="#e7dbc8" stroke="#62546b"/>
+<text x="1034.5" y="421.0">L1: roof 60 → 165 m</text>
+<rect x="352.5" y="286.0" width="667.0" height="114.99999999999999" fill="#d7c4b4" stroke="#62546b"/>
+<text x="1034.5" y="306.0">L2: roof 160 → 440 m</text>
+<rect x="439.5" y="205.5" width="580.0" height="80.5" fill="#c4b6ca" stroke="#62546b"/>
+<text x="1034.5" y="225.5">L3: roof 230 → 632.5 m</text>
+<rect x="526.5" y="125.0" width="493.0" height="80.5" fill="#acabc3" stroke="#62546b"/>
+<text x="1034.5" y="145.0">L4: roof 300 → 825 m</text>
+<path d="M 135.0,470.0 L 243.75,401.0 L 352.5,401.0" fill="none" stroke="#7d6461" stroke-width="5"/>
+<polygon points="135.0,470.0 135.0,401.0 243.75,401.0" fill="#fcf7ed"/>
+<path d="M 135.0,470.0 L 243.75,401.0" stroke="#7d6461" stroke-width="5"/>
+<path class="dim" d="M 135.0,505 V 515 M 135.0,510 H 352.5 M 352.5,505 V 515"/>
+<text x="135.0" y="534">150 → 412.5 m front to gate</text>
+<path class="dim" d="M 243.75,435 V 445 M 243.75,440 H 352.5 M 352.5,435 V 445"/>
+<text x="243.75" y="464">75 → 206.25 m landing</text>
+<path class="dim" d="M 352.5,255 V 265 M 352.5,260 H 439.5 M 439.5,255 V 265"/>
+<text x="352.5" y="284">60 → 165 m setback</text>
+<text x="40" y="550">Schematic dimensions. The companion Blender section shows actual geometry. L3–L4 setback is proposed.</text>
+</svg>

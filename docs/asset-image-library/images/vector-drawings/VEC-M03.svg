@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1120" viewBox="0 0 1600 1120"><rect width="1600" height="1120" fill="#f8f3e8"/>
+<rect x="20" y="20" width="1560" height="1080" rx="0" fill="none" stroke="#ac8644" stroke-width="1"/>
+<text x="50" y="64" fill="#24263d" font-family="Georgia,serif" font-size="30" text-anchor="start">ASSET PLACEMENT / DISTRICT INDEX</text>
+<text x="50" y="94" fill="#24263d" font-family="Georgia,serif" font-size="15" text-anchor="start">Every proposed family appears in a listed district • district anchors and building footprints are on M01</text>
+<line x1="50" y1="111" x2="1550" y2="111" stroke="#ac8644" stroke-width="1"/>
+<text x="50" y="1080" fill="#24263d" font-family="Georgia,serif" font-size="13" text-anchor="start">BIRTHDAY CASTLE V5  /  PROPOSED — APPROVAL BEFORE GAME IMPLEMENTATION</text>
+<text x="1550" y="1080" fill="#24263d" font-family="Georgia,serif" font-size="15" text-anchor="end">M03</text>
+<line x1="50" y1="1054" x2="1550" y2="1054" stroke="#ac8644" stroke-width="1"/>
+<rect x="50" y="140" width="480" height="137" rx="0" fill="none" stroke="#d4c6ad" stroke-width="1"/>
+<text x="65" y="168" fill="#24263d" font-family="Georgia,serif" font-size="19" text-anchor="start">Z01 / Palace terraces</text>
+<text x="65" y="198" fill="#24263d" font-family="Georgia,serif" font-size="10" text-anchor="start">A001, A002, A003, A004, A005, A006, A007, A008, A009, A010, A011, A012, A013, A014,</text>
+<text x="65" y="215" fill="#24263d" font-family="Georgia,serif" font-size="10" text-anchor="start">A015, A016, A017, A018, A019, A020, A021, A022, A028, A029, A030, A032, A034, A035,</text>
+<text x="65" y="232" fill="#24263d" font-family="Georgia,serif" font-size="10" text-anchor="start">A036, A038, A039, A040, A043, A044, A045, A046, A047, A048, A049, A050, A051, A052,</text>
+<text x="65" y="249" fill="#24263d" font-family="Georgia,serif" font-size="10" text-anchor="start">A087</text>
+<text x="65" y="259" fill="#24263d" font-family="Georgia,serif" font-size="11" text-anchor="start">Anchor X 0, Z 0 m; detailed instances follow site approval.</text>
+<rect x="550" y="140" width="480" height="137" rx="0" fill="none" stroke="#d4c6ad" stroke-width="1"/>
+<text x="565" y="168" fill="#24263d" font-family="Georgia,serif" font-size="19" text-anchor="start">Z02 / Lake &amp; long bridge</text>
+<text x="565" y="198" fill="#24263d" font-family="Georgia,serif" font-size="10" text-anchor="start">A007, A009, A011, A013, A015, A023, A024, A025, A026, A027, A030, A031, A035, A058,</text>
+<text x="565" y="215" fill="#24263d" font-family="Georgia,serif" font-size="10" text-anchor="start">A059, A073, A077, A083, A085</text>
+<text x="565" y="259" fill="#24263d" font-family="Georgia,serif" font-size="11" text-anchor="start">Anchor X -1100, Z 1500 m; detailed instances follow site approval.</text>
+<rect x="1050" y="140" width="480" height="137" rx="0" fill="none" stroke="#d4c6ad" stroke-width="1"/>
+<text x="1065" y="168" fill="#24263d" font-family="Georgia,serif" font-size="19" text-anchor="start">Z03 / Arrival avenue</text>
+<text x="1065" y="198" fill="#24263d" font-family="Georgia,serif" font-size="10" text-anchor="start">A019, A028, A033, A038, A056, A060, A061, A070, A071, A085, A089, A090</text>
+<text x="1065" y="259" fill="#24263d" font-family="Georgia,serif" font-size="11" text-anchor="start">Anchor X 0, Z 2300 m; detailed instances follow site approval.</text>
+<rect x="50" y="288" width="480" height="137" rx="0" fill="none" stroke="#d4c6ad" stroke-width="1"/>
+<text x="65" y="316" fill="#24263d" font-family="Georgia,serif" font-size="19" text-anchor="start">Z04 / Rose gardens</text>
+<text x="65" y="346" fill="#24263d" font-family="Georgia,serif" font-size="10" text-anchor="start">A002, A004, A037, A039, A040, A041, A042, A070, A075, A088</text>
+<text x="65" y="407" fill="#24263d" font-family="Georgia,serif" font-size="11" text-anchor="start">Anchor X -650, Z -500 m; detailed instances follow site approval.</text>
+<rect x="550" y="288" width="480" height="137" rx="0" fill="none" stroke="#d4c6ad" stroke-width="1"/>
+<text x="565" y="316" fill="#24263d" font-family="Georgia,serif" font-size="19" text-anchor="start">Z05 / Northern temple hills</text>
+<text x="565" y="346" fill="#24263d" font-family="Georgia,serif" font-size="10" text-anchor="start">A010, A012, A032, A061, A062, A065, A090</text>
+<text x="565" y="407" fill="#24263d" font-family="Georgia,serif" font-size="11" text-anchor="start">Anchor X 550, Z -1900 m; detailed instances follow site approval.</text>
+<rect x="1050" y="288" width="480" height="137" rx="0" fill="none" stroke="#d4c6ad" stroke-width="1"/>
+<text x="1065" y="316" fill="#24263d" font-family="Georgia,serif" font-size="19" text-anchor="start">Z06 / Glowwood</text>
+<text x="1065" y="346" fill="#24263d" font-family="Georgia,serif" font-size="10" text-anchor="start">A017, A029, A034, A053, A054, A067, A068, A069, A072, A073, A076, A087</text>
+<text x="1065" y="407" fill="#24263d" font-family="Georgia,serif" font-size="11" text-anchor="start">Anchor X -2600, Z 100 m; detailed instances follow site approval.</text>
+<rect x="50" y="436" width="480" height="137" rx="0" fill="none" stroke="#d4c6ad" stroke-width="1"/>
+<text x="65" y="464" fill="#24263d" font-family="Georgia,serif" font-size="19" text-anchor="start">Z07 / Misty gardens</text>
+<text x="65" y="494" fill="#24263d" font-family="Georgia,serif" font-size="10" text-anchor="start">A064, A076</text>
+<text x="65" y="555" fill="#24263d" font-family="Georgia,serif" font-size="11" text-anchor="start">Anchor X 2200, Z -1600 m; detailed instances follow site approval.</text>
+<rect x="550" y="436" width="480" height="137" rx="0" fill="none" stroke="#d4c6ad" stroke-width="1"/>
+<text x="565" y="464" fill="#24263d" font-family="Georgia,serif" font-size="19" text-anchor="start">Z08 / Pillar Reach</text>
+<text x="565" y="494" fill="#24263d" font-family="Georgia,serif" font-size="10" text-anchor="start">A066, A084</text>
+<text x="565" y="555" fill="#24263d" font-family="Georgia,serif" font-size="11" text-anchor="start">Anchor X 2450, Z 150 m; detailed instances follow site approval.</text>
+<rect x="1050" y="436" width="480" height="137" rx="0" fill="none" stroke="#d4c6ad" stroke-width="1"/>
+<text x="1065" y="464" fill="#24263d" font-family="Georgia,serif" font-size="19" text-anchor="start">Z09 / Canyon gardens</text>
+<text x="1065" y="494" fill="#24263d" font-family="Georgia,serif" font-size="10" text-anchor="start">A007, A014, A015, A036, A049, A084</text>
+<text x="1065" y="555" fill="#24263d" font-family="Georgia,serif" font-size="11" text-anchor="start">Anchor X 1900, Z 2300 m; detailed instances follow site approval.</text>
+<rect x="50" y="584" width="480" height="137" rx="0" fill="none" stroke="#d4c6ad" stroke-width="1"/>
+<text x="65" y="612" fill="#24263d" font-family="Georgia,serif" font-size="19" text-anchor="start">Z10 / Lagoon harbor</text>
+<text x="65" y="642" fill="#24263d" font-family="Georgia,serif" font-size="10" text-anchor="start">A020, A033, A054, A055, A056, A057, A062, A063, A089, A090</text>
+<text x="65" y="703" fill="#24263d" font-family="Georgia,serif" font-size="11" text-anchor="start">Anchor X -2350, Z 1800 m; detailed instances follow site approval.</text>
+<rect x="550" y="584" width="480" height="137" rx="0" fill="none" stroke="#d4c6ad" stroke-width="1"/>
+<text x="565" y="612" fill="#24263d" font-family="Georgia,serif" font-size="19" text-anchor="start">Z11 / Open sea &amp; reefs</text>
+<text x="565" y="642" fill="#24263d" font-family="Georgia,serif" font-size="10" text-anchor="start">A078, A079, A080, A082</text>
+<text x="565" y="703" fill="#24263d" font-family="Georgia,serif" font-size="11" text-anchor="start">Anchor X 2400, Z 3000 m; detailed instances follow site approval.</text>
+<rect x="1050" y="584" width="480" height="137" rx="0" fill="none" stroke="#d4c6ad" stroke-width="1"/>
+<text x="1065" y="612" fill="#24263d" font-family="Georgia,serif" font-size="19" text-anchor="start">Z12 / Fjord cliffs</text>
+<text x="1065" y="642" fill="#24263d" font-family="Georgia,serif" font-size="10" text-anchor="start">A072, A074, A078, A084</text>
+<text x="1065" y="703" fill="#24263d" font-family="Georgia,serif" font-size="11" text-anchor="start">Anchor X -2300, Z -2100 m; detailed instances follow site approval.</text>
+<rect x="50" y="732" width="480" height="137" rx="0" fill="none" stroke="#d4c6ad" stroke-width="1"/>
+<text x="65" y="760" fill="#24263d" font-family="Georgia,serif" font-size="19" text-anchor="start">S01 / Crystal Garden</text>
+<text x="65" y="790" fill="#24263d" font-family="Georgia,serif" font-size="10" text-anchor="start">A058, A060, A069, A081</text>
+<text x="65" y="851" fill="#24263d" font-family="Georgia,serif" font-size="11" text-anchor="start">Anchor X 1500, Z -950 m; detailed instances follow site approval.</text>
+<rect x="550" y="732" width="480" height="137" rx="0" fill="none" stroke="#d4c6ad" stroke-width="1"/>
+<text x="565" y="760" fill="#24263d" font-family="Georgia,serif" font-size="19" text-anchor="start">S02 / Aurora Peak</text>
+<text x="565" y="790" fill="#24263d" font-family="Georgia,serif" font-size="10" text-anchor="start">A058, A060, A081, A086</text>
+<text x="565" y="851" fill="#24263d" font-family="Georgia,serif" font-size="11" text-anchor="start">Anchor X -1500, Z -2500 m; detailed instances follow site approval.</text>
+<rect x="1050" y="732" width="480" height="137" rx="0" fill="none" stroke="#d4c6ad" stroke-width="1"/>
+<text x="1065" y="760" fill="#24263d" font-family="Georgia,serif" font-size="19" text-anchor="start">S03 / Lantern Lake</text>
+<text x="1065" y="790" fill="#24263d" font-family="Georgia,serif" font-size="10" text-anchor="start">A031, A058, A059, A060, A077, A081</text>
+<text x="1065" y="851" fill="#24263d" font-family="Georgia,serif" font-size="11" text-anchor="start">Anchor X -1450, Z 900 m; detailed instances follow site approval.</text>
+<rect x="50" y="880" width="480" height="137" rx="0" fill="none" stroke="#d4c6ad" stroke-width="1"/>
+<text x="65" y="908" fill="#24263d" font-family="Georgia,serif" font-size="19" text-anchor="start">S04 / Unicorn Meadow</text>
+<text x="65" y="938" fill="#24263d" font-family="Georgia,serif" font-size="10" text-anchor="start">A058, A060, A075, A081, A088</text>
+<text x="65" y="999" fill="#24263d" font-family="Georgia,serif" font-size="11" text-anchor="start">Anchor X 1500, Z 1150 m; detailed instances follow site approval.</text>
+<rect x="550" y="880" width="480" height="137" rx="0" fill="none" stroke="#d4c6ad" stroke-width="1"/>
+<text x="565" y="908" fill="#24263d" font-family="Georgia,serif" font-size="19" text-anchor="start">S05 / Starfall Isle</text>
+<text x="565" y="938" fill="#24263d" font-family="Georgia,serif" font-size="10" text-anchor="start">A058, A060, A081, A086</text>
+<text x="565" y="999" fill="#24263d" font-family="Georgia,serif" font-size="11" text-anchor="start">Anchor X 250, Z -2800 m; detailed instances follow site approval.</text>
+<rect x="1050" y="880" width="480" height="137" rx="0" fill="none" stroke="#d4c6ad" stroke-width="1"/>
+<text x="1065" y="908" fill="#24263d" font-family="Georgia,serif" font-size="19" text-anchor="start">S06 / Coastal meadow</text>
+<text x="1065" y="938" fill="#24263d" font-family="Georgia,serif" font-size="10" text-anchor="start">A074, A075, A080</text>
+<text x="1065" y="999" fill="#24263d" font-family="Georgia,serif" font-size="11" text-anchor="start">Anchor X 450, Z 3100 m; detailed instances follow site approval.</text></svg>
