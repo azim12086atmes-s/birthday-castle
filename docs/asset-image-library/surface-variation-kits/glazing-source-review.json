@@ -1,0 +1,29 @@
+{
+  "review_date": "2026-10-14",
+  "source_id": "GEN-36",
+  "source_file": "images/illustrated-boards/GEN-36.png",
+  "source_sha256": "7fb524bc99c2cf1cba0b509241f7776492f70d0a22fb06278ec119d889262dbb",
+  "water_edge": {
+    "source_panels": [
+      "hero foreground water-edge face",
+      "panel3 Water-Terrace Coping"
+    ],
+    "materials": "Blue/lilac/rose stained-glass infills in pointed ivory/rose marble and fine-gold frames",
+    "asset_ids": [
+      "GEN-36-S03",
+      "PAL-CONSERV-SURF-001-A11"
+    ],
+    "required_separation": [
+      "frame",
+      "glazing",
+      "retaining/backing substrate"
+    ],
+    "hydraulic_and_structural_fit": "unverified; not a transparent glass pool-wall engineering specification"
+  },
+  "green_parapet": {
+    "status": "owner-reported distinct variant; exact source panel and location unresolved",
+    "material": "green stained glass with its own source-derived framing and joins",
+    "rule": "Do not recolour all water-edge panels or replace low linked-diamond/oval/star foot rail. Locate original panel before generating its geometry."
+  },
+  "new_images_generated": 0
+}

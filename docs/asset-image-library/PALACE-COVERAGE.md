@@ -60,3 +60,7 @@ Earlier blanket reuse rows do not mean every room/outdoor surface should share t
 ## Interior coverage correction — 14 October 2026
 
 [Inspected source coverage and missing-view schedule](surface-variation-kits/INTERIOR-COVERAGE-AUDIT.md). Existing room scenes and small plans/sections are partial evidence; wall/vault/coffer detail studies do not establish complete dome interiors or matched multi-view rooms. Preserve the distinct vault, coffer and glazed-roof types, reuse visible motifs, and develop hidden geometry as proposals. Bath/service/kitchen/music spaces are excluded; INT-R04 is retired unproduced. No new art or model is created by this audit.
+
+## First coordinated interior references
+
+[Ballroom room/ceiling views and four structural hosts](interior-room-kits/README.md) are generated, indexed and pending review. The revised sheet now includes a longitudinal section and gallery void; fixture/boss/bay parity remains unresolved. Existing capitals, cornices, glass and chandelier remain reuse sources. Pointed-vault geometry is not a dome design. Other rooms/dome interiors remain missing. [Water-edge glass requirements](surface-variation-kits/GLAZED-EDGE-NOTES.md) distinguish blue/lilac/rose water-edge panels from the owner-reported green parapet.

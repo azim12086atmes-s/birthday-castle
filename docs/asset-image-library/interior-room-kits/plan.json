@@ -1,0 +1,37 @@
+{
+  "date": "2026-10-14",
+  "scope": "One original ballroom, references only; no Blender, paid generation or other buildings",
+  "sheets": [
+    "INT-BALLROOM-MV-001",
+    "INT-BALLROOM-SHELL-001"
+  ],
+  "source_panel": {
+    "source_id": "GEN-26",
+    "source_file": "images/illustrated-boards/GEN-26.png",
+    "source_sha256": "6ca64686df3226a1da314f2865d3cd2699124b9f746b44ace5fbb72aa9801321",
+    "source_panel_id": "SRC-INT-BALLROOM-GEN26",
+    "source_panel_file": "interior-room-kits/source-panels/GEN-26-ballroom.png",
+    "source_panel_sha256": "748a56778643321c763bc2dc78487a3c77da4fd4788af0c02861e9724c3745f1",
+    "source_box_xyxy": [
+      0,
+      35,
+      392,
+      790
+    ]
+  },
+  "model_count": 0,
+  "review_status": "pending-user-reference-review",
+  "deferred_rooms": [
+    "throne room",
+    "library",
+    "conservatory",
+    "tower dome interiors",
+    "private and dining rooms"
+  ],
+  "new_room_geometry_basis": "proposed hidden geometry consistent with source; source is not a measured construction plan",
+  "status": "generated-indexed-pending-user-reference-review",
+  "active_sheet_count": 2,
+  "structural_target_count": 4,
+  "view_parity_verified": false,
+  "models_generated": 0
+}

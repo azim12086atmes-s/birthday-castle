@@ -33,8 +33,16 @@ Tile/cornice/parapet repeats here have declared matching rules. Their illustrate
 
 ## Budget
 
-64/65 palace slots are selected/reserved, including unproduced room/furniture reservations;84/230 total. Do not generate a separate image for each remaining category automatically. Consolidate these categories into10–20-part prop sheets, reuse original references and replace unproduced or superseded selections when warranted. Files remain preserved when a selection is retired.
+65/65 palace slots are selected/reserved, including unproduced room/furniture reservations;85/230 total. Do not generate a separate image for each remaining category automatically. Consolidate these categories into10–20-part prop sheets, reuse original references and replace unproduced or superseded selections when warranted. Files remain preserved when a selection is retired.
 
 ## Structural core still to prove
 
 Continuous wall/ward host bodies; roof and floor substrates; angled/curved wing returns; tower/wing/terrace mating seats; door/window apertures and their returns; landing and wet/dry stair junctions; roof/back drainage/edges; courtyard containment; collision and navigation/travel links. Their references partly exist, but physical assembled fit is unverified. These core systems precede filling the palace with more optional decor.
+
+## Glazed water edges and parapets
+
+[Source/material correction](GLAZED-EDGE-NOTES.md): GEN-36 water-edge pointed bays include blue/lilac/rose glass. Green stained glass in another parapet is a distinct owner-reported variant awaiting exact source identification. Frame/pane/backing material separation must be retained.
+
+## First interior reference progress
+
+[Ballroom multi-view and four-part structural kit](../interior-room-kits/README.md) are now drawn and indexed. These are source-compatible proposals; room/ceiling fixture parity and physical fit are unverified. Other rooms, dome interiors, per-room furnishing and missing decor remain outstanding.

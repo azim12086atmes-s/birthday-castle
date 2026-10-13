@@ -27,3 +27,7 @@ The sequence is ballroom → throne room → library → conservatory, one room/
 Baths/spas, kitchens/bakeries, service rooms and music spaces are excluded by the owner. Their previous candidate descriptions remain in the JSON as excluded history. The unproduced INT-R04 bath reservation is retired without removing saved art. Palace cap65 and global target230 remain unchanged. This audit does not reserve or generate new sheets. Further room/ceiling/decor sheets need consolidation or replacement of unused/superseded selections within those limits.
 
 [Machine-readable evidence and missing-view schedule](interior-coverage-audit.json). Reference coverage, multi-view parity and actual 3D fit remain incomplete.
+
+## Subsequent first-room work
+
+[Two ballroom reference sheets](../interior-room-kits/README.md) now cover eight room/ceiling panels and four structural module targets. This improves coverage but does not resolve fixture/bay parity or model fit. Other rooms and all dome interiors remain missing. Current selection/reservations65/65 palace and85/230 total.

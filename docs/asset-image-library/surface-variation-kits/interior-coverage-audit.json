@@ -160,5 +160,15 @@
   "budget_rule": "230 total, palace cap65 unchanged. Retire the unproduced bath reservation. Remaining headroom is not enough for every room plus every decor pack; consolidate/reallocate selections before authorizing a new production batch. No new image slots reserved by this audit.",
   "complete_interior_reference_coverage": false,
   "multi_view_parity_verified": false,
-  "models_generated": 0
+  "models_generated": 0,
+  "subsequent_reference_progress": {
+    "sheets": [
+      "INT-BALLROOM-MV-001",
+      "INT-BALLROOM-SHELL-001"
+    ],
+    "new_structural_targets": 4,
+    "room": "original ballroom",
+    "view_parity_verified": false,
+    "models_generated": 0
+  }
 }

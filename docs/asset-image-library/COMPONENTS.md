@@ -426,3 +426,12 @@ These layer reconstructions were reported inconsistent and retired from placemen
 | GEN-28-A06 | [Wish lantern](surface-variation-kits/wishing-source-audit/GEN-28-A06.png) |
 | GEN-28-A07 | [Star runestone](surface-variation-kits/wishing-source-audit/GEN-28-A07.png) |
 | GEN-28-A08 | [Wayfinding kiosk](surface-variation-kits/wishing-source-audit/GEN-28-A08.png) |
+
+## Original ballroom structural assembly targets
+
+| ID | Name/reference |
+| --- | --- |
+| INT-BALLROOM-SHELL-001-S01 | [Lower glazed wall bay](interior-room-kits/INT-BALLROOM-SHELL-001/INT-BALLROOM-SHELL-001.png) |
+| INT-BALLROOM-SHELL-001-S02 | [Upper gallery wall bay](interior-room-kits/INT-BALLROOM-SHELL-001/INT-BALLROOM-SHELL-001.png) |
+| INT-BALLROOM-SHELL-001-S03 | [Gallery floor support bay](interior-room-kits/INT-BALLROOM-SHELL-001/INT-BALLROOM-SHELL-001.png) |
+| INT-BALLROOM-SHELL-001-S04 | [Complete pointed vault bay](interior-room-kits/INT-BALLROOM-SHELL-001/INT-BALLROOM-SHELL-001.png) |

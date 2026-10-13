@@ -1,0 +1,215 @@
+{
+  "source_id": "GEN-26",
+  "source_file": "images/illustrated-boards/GEN-26.png",
+  "source_sha256": "6ca64686df3226a1da314f2865d3cd2699124b9f746b44ace5fbb72aa9801321",
+  "source_panel_id": "SRC-INT-BALLROOM-GEN26",
+  "source_panel_file": "interior-room-kits/source-panels/GEN-26-ballroom.png",
+  "source_panel_sha256": "748a56778643321c763bc2dc78487a3c77da4fd4788af0c02861e9724c3745f1",
+  "source_box_xyxy": [
+    0,
+    35,
+    392,
+    790
+  ],
+  "generation_reference_path": "/workspace/birthday-castle/docs/asset-image-library/interior-room-kits/INT-BALLROOM-SHELL-001/rejected-drafts/INT-BALLROOM-SHELL-001-R01.png",
+  "generator": "image_gen.imagegen",
+  "source_rule": "Original ballroom scene/plan/section determine visible motifs and arrangement. Reverse/hidden geometry and numerical module dimensions are proposals, not recovered facts.",
+  "review_status": "generated-pending-user-reference-review",
+  "models_generated": 0,
+  "outputs": [
+    {
+      "file": "interior-room-kits/INT-BALLROOM-SHELL-001/INT-BALLROOM-SHELL-001.png",
+      "sha256": "75a95002d90047b2f756b25e03371a27678789ce5c9b8df5284658e07828fadc",
+      "original_file": "/workspace/generated_images/exec-6348b233-c63d-4aa9-a54e-c0a1f39efcfa.png",
+      "actual_input_file": "interior-room-kits/INT-BALLROOM-SHELL-001/rejected-drafts/INT-BALLROOM-SHELL-001-R01.png",
+      "actual_input_sha256": "517e1146d619b7d156f49da3eadcecdeba3f68a0d45dc44f0668115c45df0614",
+      "generator": "image_gen.imagegen",
+      "attempt": 2
+    }
+  ],
+  "sheet_id": "INT-BALLROOM-SHELL-001",
+  "name": "Ballroom modular wall gallery and vault kit",
+  "kind": "structural-component-reference",
+  "parts": [
+    {
+      "asset_id": "INT-BALLROOM-SHELL-001-S01",
+      "name": "Lower glazed wall bay",
+      "description": "One whole straight10m lower side wall bay,7m high, with rose/ivory wall host and one central3m-wide5m-tall pointed glass aperture. Two engaged slender lotus piers at bay ends; glazed opening, sill and reveal clear. Marble backing around aperture has thickness0.6m. Cutaway edge reveals wall substrate; glazing/back inset separate. Level profile ends clean for repeating. No rail on top of this part, no room scene.",
+      "dimensions_m_proposed": [
+        10,
+        0.6,
+        7
+      ],
+      "attachment_face": "bottom -Z",
+      "semantic_front": "roomward +Y",
+      "model_status": "unregistered",
+      "review_status": "pending-reference-review",
+      "basis": "source-compatible structural proposal; hidden backs and module widths not measured",
+      "function": "Reusable structural host for original ballroom details",
+      "reuse_component_ids": [
+        "GEN-41-M01",
+        "GEN-42-M01",
+        "GEN-42-M05",
+        "GEN-24-A07",
+        "GEN-39-M04"
+      ],
+      "target_polycount_proposed": 10000,
+      "rejection_criteria": [
+        "cropped or fused assemblies",
+        "floating unsupported gallery or vault",
+        "opaque blank infill instead of glazed aperture",
+        "wrong ceiling type or new ornament theme",
+        "unclear or inconsistent repeat ends"
+      ]
+    },
+    {
+      "asset_id": "INT-BALLROOM-SHELL-001-S02",
+      "name": "Upper gallery wall bay",
+      "description": "One whole matching10m upper side wall bay,9m high, with one central3m-wide7m-tall pointed glazed aperture, lotus engaged piers and gold cornice/rib springing seats. No lower bay or stairs attached. Backside and0.6m wall thickness visible at clean ends. Same pane motifs as source. Upper opening is actual glazing, not a false doorway.",
+      "dimensions_m_proposed": [
+        10,
+        0.6,
+        9
+      ],
+      "attachment_face": "bottom -Z",
+      "semantic_front": "roomward +Y",
+      "model_status": "unregistered",
+      "review_status": "pending-reference-review",
+      "basis": "source-compatible structural proposal; hidden backs and module widths not measured",
+      "function": "Reusable structural host for original ballroom details",
+      "reuse_component_ids": [
+        "GEN-41-M01",
+        "GEN-42-M01",
+        "GEN-42-M05",
+        "GEN-24-A07",
+        "GEN-39-M04"
+      ],
+      "target_polycount_proposed": 10000,
+      "rejection_criteria": [
+        "cropped or fused assemblies",
+        "floating unsupported gallery or vault",
+        "opaque blank infill instead of glazed aperture",
+        "wrong ceiling type or new ornament theme",
+        "unclear or inconsistent repeat ends"
+      ]
+    },
+    {
+      "asset_id": "INT-BALLROOM-SHELL-001-S03",
+      "name": "Gallery floor support bay",
+      "description": "One whole10m long2.4m-deep rose/ivory marble gallery slab and its underside arched support brackets. Show clean stone floor top, supported underside and horizontal ledgers into wall. Leave roomward rail seat clear for EXISTING parapet to attach separately. Not a freestanding bridge, not a floating balcony, no complete railing/new lantern design.",
+      "dimensions_m_proposed": [
+        10,
+        2.4,
+        2.4
+      ],
+      "attachment_face": "rear -Y",
+      "semantic_front": "roomward +Y",
+      "model_status": "unregistered",
+      "review_status": "pending-reference-review",
+      "basis": "source-compatible structural proposal; hidden backs and module widths not measured",
+      "function": "Reusable structural host for original ballroom details",
+      "reuse_component_ids": [
+        "GEN-41-M01",
+        "GEN-42-M01",
+        "GEN-42-M05",
+        "GEN-24-A07",
+        "GEN-39-M04"
+      ],
+      "target_polycount_proposed": 10000,
+      "rejection_criteria": [
+        "cropped or fused assemblies",
+        "floating unsupported gallery or vault",
+        "opaque blank infill instead of glazed aperture",
+        "wrong ceiling type or new ornament theme",
+        "unclear or inconsistent repeat ends"
+      ],
+      "dimension_review_note": "Support assembly total drop2.4m proposed, distinguished from gallery floor installation at Z7m. First schedule1.2m value superseded to match reference support proportions."
+    },
+    {
+      "asset_id": "INT-BALLROOM-SHELL-001-S04",
+      "name": "Complete pointed vault bay",
+      "description": "One complete10m-long pointed cross-rib vault bay spanning20m,6m rise above springing; underside blue star/rose infills and ivory/rose shell are bounded by narrow gold ribs meeting one star boss. Show the COMPLETE underside with four springing feet and roof shell thickness in a clear lower three-quarter cutaway. No dome hemisphere, no flat coffer, no whole chandelier fused in. Small fixture seat only at boss; actual chandelier reused. Clean end planes for repeating vault bays.",
+      "dimensions_m_proposed": [
+        20,
+        10,
+        6
+      ],
+      "attachment_face": "springing feet lower -Z",
+      "semantic_front": "roomward underside -Z",
+      "model_status": "unregistered",
+      "review_status": "pending-reference-review",
+      "basis": "source-compatible structural proposal; hidden backs and module widths not measured",
+      "function": "Reusable structural host for original ballroom details",
+      "reuse_component_ids": [
+        "GEN-41-M01",
+        "GEN-42-M01",
+        "GEN-42-M05",
+        "GEN-24-A07",
+        "GEN-39-M04"
+      ],
+      "target_polycount_proposed": 10000,
+      "rejection_criteria": [
+        "cropped or fused assemblies",
+        "floating unsupported gallery or vault",
+        "opaque blank infill instead of glazed aperture",
+        "wrong ceiling type or new ornament theme",
+        "unclear or inconsistent repeat ends"
+      ]
+    }
+  ],
+  "layout_contract": {
+    "units": "metres, room scale independent of giant exterior multiplier",
+    "room_length_m": {
+      "value": 40,
+      "basis": "drawn source plan annotation, not measured geometry"
+    },
+    "vault_apex_height_m": {
+      "value": 22,
+      "basis": "drawn source section annotation, not measured geometry"
+    },
+    "room_width_m": {
+      "value": 20,
+      "basis": "proposed for room-view coordination"
+    },
+    "gallery_height_m": {
+      "value": 7,
+      "basis": "proposed"
+    },
+    "vault_springing_height_m": {
+      "value": 16,
+      "basis": "proposed"
+    },
+    "side_bay_count_per_wall": 4,
+    "bay_length_m": 10,
+    "plan_shape": "elongated octagon: chamfered corners, continuous side galleries",
+    "orientation": "arrival south; paired stairs and glazed focus at north",
+    "openings": "South open arrival; side west/garden connections near arrival; north upper circulation toward throne room; central north stained-glass focus stays glazing, not a doorway",
+    "circulation": "central clear dance floor, paired curved end stairs to gallery; no giant exterior scale furnishings",
+    "symmetry": "bilateral room shell and paired stairs; no new whole-palace symmetry claim",
+    "geometry_fit_verified": false
+  },
+  "prompt": "EDIT ONLY the supplied four-part ballroom modular reference sheet, preserving its title INT-BALLROOM-SHELL-001, exact S01/S02/S03/S04 IDs, rose/ivory marble, delicate gold, blue/lilac glass, four separate fully framed assemblies and lower assembly diagrams. Do not generate a new room or additional objects.\nCritical S04 VAULT correction: REMOVE EVERY HANGING CHANDELIER, CRYSTAL PENDANT AND CHAIN from this vault assembly. The first draft wrongly fused a chandelier; it must remain a separate reused object. Keep a SMALL flat star boss/ceiling rose with a discreet empty mounting socket only at the central rib crossing. No chandelier stalk, bell, beads or suspended fixture at all. Preserve ALL four short springing feet, full underside and structural shell, actual6.0m rise,20.0m span and10.0m length; golden ribs and blue star infills remain. This part is ONE structural pointed cross-vault bay, not a complete hall. Remove the left16.0m vertical dimension arrow ENTIRELY:16m is installation elevation, not physical length of this isolated object. Add a plain small text note 'Installed springing datum Z=16m (proposed)' beneath the vault object, with NO dimension arrow. Keep only correct arrows6m rise,20m span,10m bay length and0.6m shell thickness.\nS03 GALLERY: Keep its complete clean floor slab, underside arched brackets and supporting wall ledgers. Dimensional labels must clearly be10m length,2.4m horizontal depth and2.4m vertical total support drop. Add note 'Floor installed Z=7m (proposed)' under it with no new height arrow. Keep rail seat empty for an EXISTING parapet to attach; do not add any rail or chandelier.\nS01/S02 remain unchanged: lower7m and upper9m wall sections, one glazed opening per bay, engaged piers, source material detail and clean repeat ends. Window infills blue/lilac/pink glass, not opaque stone. Preserve complete silhouette and cutaway shell thickness. No rounded dome, new motif theme, floating/broken supports, melted ornaments or red revision scribbles. Footer still PROPOSED MODULE DIMENSIONS / SOURCE GEN-26 / JOINTS UNVERIFIED.",
+  "interfaces_verified": false,
+  "previous_attempts": [
+    {
+      "file": "interior-room-kits/INT-BALLROOM-SHELL-001/rejected-drafts/INT-BALLROOM-SHELL-001-R01.png",
+      "sha256": "517e1146d619b7d156f49da3eadcecdeba3f68a0d45dc44f0668115c45df0614",
+      "original_file": "/workspace/generated_images/exec-64730aed-992b-43e1-b8a6-380750e3f129.png",
+      "actual_input_file": "interior-room-kits/source-panels/GEN-26-ballroom.png",
+      "actual_input_sha256": "748a56778643321c763bc2dc78487a3c77da4fd4788af0c02861e9724c3745f1",
+      "generator": "image_gen.imagegen",
+      "attempt": 1,
+      "prompt": "Create a high-resolution architectural reference sheet for the ORIGINAL PALACE BALLROOM shown in the ONLY supplied crop. Preserve ivory and rose veined marble, slender gold ribs/tracery, blue stained glass with lilac/rose lower accents, lotus capitals, star bosses, blue celestial vault infills, crystal chandeliers, rose planters, floor star medallion. This is NOT a redesign, new castle, bathroom, flat coffer room or hemisphere dome. Keep the POINTED RIB VAULT. Ornament is crisp, mechanically legible; no melted tracery, warped columns or fused supports. Quiet ivory sheet background, even light, thin ruled panels, legible names and exact IDs. No people. Show actual thickness and support, not floating ceiling decoration.\nTitle: INT-BALLROOM-SHELL-001 \u2014 Ballroom modular wall gallery and vault assemblies. EXACTLY FOUR fully isolated assemblies in2-by2 grid. One view per assembly, ample space. This is the companion structural reference for the SAME ballroom, not a second whole room rendering. Each module shown as a full three-quarter architectural CUTAWAY with attached structural substrate thickness, entire silhouette including all supports. Modules do not touch.\nOne proposed coherent room: elongated octagonal/chamfer-corner plan, 40m long,20m width proposed,22m apex, galleries7m above floor, springing16m; four10m side bays per wall. South arrival, north focal blue stained-glass wall with paired curved side stairs rising to the north gallery; continuous west/east side galleries. One large blue/rose/gold star floor medallion centred under the main chandelier; keep central dance floor clear. Separate central glazed focus from passages beside it; don't draw doorway surrounds ending at a plain wall. West and garden terrace passages near arrival. All numeric widths/levels beyond source40m/22m are PROPOSED coordination values.\nINT-BALLROOM-SHELL-001-S01 \u2014 Lower glazed wall bay: One whole straight10m lower side wall bay,7m high, with rose/ivory wall host and one central3m-wide5m-tall pointed glass aperture. Two engaged slender lotus piers at bay ends; glazed opening, sill and reveal clear. Marble backing around aperture has thickness0.6m. Cutaway edge reveals wall substrate; glazing/back inset separate. Level profile ends clean for repeating. No rail on top of this part, no room scene.\nINT-BALLROOM-SHELL-001-S02 \u2014 Upper gallery wall bay: One whole matching10m upper side wall bay,9m high, with one central3m-wide7m-tall pointed glazed aperture, lotus engaged piers and gold cornice/rib springing seats. No lower bay or stairs attached. Backside and0.6m wall thickness visible at clean ends. Same pane motifs as source. Upper opening is actual glazing, not a false doorway.\nINT-BALLROOM-SHELL-001-S03 \u2014 Gallery floor support bay: One whole10m long2.4m-deep rose/ivory marble gallery slab and its underside arched support brackets. Show clean stone floor top, supported underside and horizontal ledgers into wall. Leave roomward rail seat clear for EXISTING parapet to attach separately. Not a freestanding bridge, not a floating balcony, no complete railing/new lantern design.\nINT-BALLROOM-SHELL-001-S04 \u2014 Complete pointed vault bay: One complete10m-long pointed cross-rib vault bay spanning20m,6m rise above springing; underside blue star/rose infills and ivory/rose shell are bounded by narrow gold ribs meeting one star boss. Show the COMPLETE underside with four springing feet and roof shell thickness in a clear lower three-quarter cutaway. No dome hemisphere, no flat coffer, no whole chandelier fused in. Small fixture seat only at boss; actual chandelier reused. Clean end planes for repeating vault bays.\nLabel four exact IDs/names and small arrow marks LOWER / UPPER / GALLERY / VAULT. Show a tiny order diagram only with these four IDs; no new fifth assembly. Preserve observed motifs; avoid embedding decoration that should be removable. Footer: PROPOSED MODULE DIMENSIONS / SOURCE GEN-26 / JOINTS UNVERIFIED. ",
+      "rejection_reason": "S04 embeds a hanging chandelier despite separate GEN-24-A07 reuse; its16m installation datum is shown as an isolated-object dimension. S03 support drop label and proposed metadata need alignment."
+    }
+  ],
+  "revision_input_file": "interior-room-kits/INT-BALLROOM-SHELL-001/rejected-drafts/INT-BALLROOM-SHELL-001-R01.png",
+  "revision_input_sha256": "517e1146d619b7d156f49da3eadcecdeba3f68a0d45dc44f0668115c45df0614",
+  "review_notes": [
+    "R02 removes the attached chandelier from S04 and corrects its installation-datum label; reuse GEN-24-A07 separately.",
+    "S01/S02 are proposed wall hosts; glass, capitals, bands and bosses shown for placement must be separable when modeled. Their construction remains a reference illustration, not a tested aperture/CSG result.",
+    "S03 support drop2.4m is proposed; installed gallery floor datum7m remains independent. Bracket, ledger and railing joint interfaces are unverified.",
+    "S04 is an isolated pointed vault, not a dome interior. Span/length/rise/feet and shell thickness remain proposed geometry; no load/collision fit verified."
+  ],
+  "mesh_generation_allowed_without_approval": false
+}

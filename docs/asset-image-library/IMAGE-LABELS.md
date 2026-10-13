@@ -811,3 +811,13 @@ R03 uses plain tower circles and source-reviewed garden symbols. See [garden pla
 | DRAFT-SURF-B25-EXTERIOR-SURFACE-001-R01 | [B25-EXTERIOR-SURFACE-001 — superseded draft](surface-variation-kits/PAL-CONSERV-SURF-001/rejected-drafts/B25-EXTERIOR-SURFACE-001-R01.png) |
 | WLD-PARAPET-NEW-001 | [Four new coordinated princess parapet styles](surface-variation-kits/WLD-PARAPET-NEW-001/WLD-PARAPET-NEW-001.png) |
 | PARKED-B06-SURFACE-001 | [Misty Pagoda timber and jade surface kit — parked outside palace scope](surface-variation-kits/parked-map-studies/B06-SURFACE-001/B06-SURFACE-001.png) |
+
+## Original ballroom references and source panels
+
+| ID | Name/reference |
+| --- | --- |
+| SRC-INT-BALLROOM-GEN26 | [Original ballroom scene plan and section crop](interior-room-kits/source-panels/GEN-26-ballroom.png) |
+| INT-BALLROOM-MV-001 | [Ballroom room and ceiling multi-view reference](interior-room-kits/INT-BALLROOM-MV-001/INT-BALLROOM-MV-001.png) |
+| INT-BALLROOM-MV-001-R01 | [Ballroom room and ceiling multi-view reference — previous draft](interior-room-kits/INT-BALLROOM-MV-001/rejected-drafts/INT-BALLROOM-MV-001-R01.png) |
+| INT-BALLROOM-SHELL-001 | [Ballroom modular wall gallery and vault kit](interior-room-kits/INT-BALLROOM-SHELL-001/INT-BALLROOM-SHELL-001.png) |
+| INT-BALLROOM-SHELL-001-R01 | [Ballroom modular wall gallery and vault kit — previous draft](interior-room-kits/INT-BALLROOM-SHELL-001/rejected-drafts/INT-BALLROOM-SHELL-001-R01.png) |

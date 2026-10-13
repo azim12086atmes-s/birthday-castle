@@ -1,0 +1,21 @@
+{
+  "active_sheets": 2,
+  "source_crops": 1,
+  "previous_drafts_preserved": 2,
+  "structural_targets": 4,
+  "view_panels": 8,
+  "source_pixels_verified": true,
+  "archive_hashes_verified": true,
+  "registry_consistency_verified": true,
+  "budget_caps_verified": true,
+  "archive_images": 717,
+  "model_targets": 393,
+  "selected_sheets_with_saved_files": 81,
+  "selected_or_reserved": 85,
+  "palace_selected_or_reserved": 65,
+  "new_models": 0,
+  "view_parity_verified": false,
+  "physical_interface_fit_verified": false,
+  "review_status": "pending-user-reference-review",
+  "limits": "Source/provenance checks do not certify geometry, fixture counts, image projections, dimensions, UVs or runtime behavior."
+}

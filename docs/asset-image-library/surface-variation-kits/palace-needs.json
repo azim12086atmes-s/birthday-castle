@@ -254,6 +254,8 @@
   "interior_architecture_coverage": {
     "status": "partial; coordinated room views and dome interiors missing",
     "audit_file": "interior-coverage-audit.json",
-    "priority": "Coordinate room architecture before making new room-specific decoration"
+    "priority": "Coordinate room architecture before making new room-specific decoration",
+    "current_reference_progress": "Ballroom multi-view and four structural hosts drawn; fixture/bay parity and fit unverified. Other rooms and dome interiors missing.",
+    "current_reference_file": "../interior-room-kits/README.md"
   }
 }

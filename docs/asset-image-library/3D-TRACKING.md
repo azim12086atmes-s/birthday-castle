@@ -58,3 +58,7 @@ Use PAL-TOWER-001 for four structural sections and PAL-TOWER-001-DECOR for16 det
 ## Palace surface and parapet variants
 
 100 new pending-reference targets are listed in surface-variation-kits/components.csv. Exact proposed repeat profiles, role/dimensions and corner/curve constraints are in family schedules; no UV or physical model fit is certified. PAL-CONSERV-SURF-001 supersedes provisional B25 printed labels; model-id-aliases.json maps old IDs. Map study is parked outside current scope. GEN-28-A05…A08 index existing landing platform, wish lantern, runestone and kiosk artwork; no new wishing design or model was generated.
+
+## Original ballroom structural hosts
+
+Four unregistered targets INT-BALLROOM-SHELL-001-S01…S04 are indexed in interior-room-kits/components.csv. Reuse existing capitals/cornices/rail/chandelier; mount those separately. Eight room views are reference-only, not a whole-room3D target. All dimensions, host fits and view parity remain proposed/unverified. Both initial drafts remain saved.

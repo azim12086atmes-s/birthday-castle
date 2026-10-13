@@ -408,7 +408,7 @@
     {
       "asset_id": "PAL-CONSERV-SURF-001-A11",
       "name": "Water-edge pointed panel",
-      "description": "A short source water-terrace retaining-face panel with shallow pointed relief/inset, backed stone, modest gold trim. This is separate from the low wall foot rail.",
+      "description": "Water-edge retaining-face module with pointed marble/gold frames and blue/lilac/rose stained-glass infills. Keep the glazing a distinct inset from the frame and backing. It is not merely carved stone; do not replace these panes with green glass. Backing, waterproofing and structural support are unresolved; the illustration is not a glass tank detail.",
       "style_family": "CONSERVATORY-WATER-EDGE",
       "role": "water-edge-panel",
       "basis": "newly-requested source-compatible variant/join; visible motifs reused",
@@ -431,7 +431,8 @@
         "wrong source/style family",
         "incorrect planar/radial/handed join",
         "non-flush floor inlay",
-        "broken supports/whole scene instead of part"
+        "broken supports/whole scene instead of part",
+        "stone-only arch infill or wrong glass palette"
       ],
       "reference_approval": "pending",
       "reuse_component_ids": [
@@ -441,6 +442,12 @@
         "GEN-36-S04",
         "GEN-36-S05",
         "GEN-36-S06"
+      ],
+      "original_generation_description": "A short source water-terrace retaining-face panel with shallow pointed relief/inset, backed stone, modest gold trim. This is separate from the low wall foot rail.",
+      "material_slots_required": [
+        "ivory/rose marble frame and backing",
+        "fine gold mouldings and tracery",
+        "blue/lilac/rose stained-glass infills"
       ]
     },
     {
@@ -691,7 +698,9 @@
   "review_notes": [
     "Returned to original palace scope. Provisional B25 label preserved as an alias, not a new map building.",
     "Low foot-screen changed to source linked diamond/oval/star pattern, distinct from tall water-edge panels. Cropped column fragments removed.",
-    "Actual foot-screen height, annular inlay radii and water outlet geometry remain proposed."
+    "Actual foot-screen height, annular inlay radii and water outlet geometry remain proposed.",
+    "2026-10-14 source review: GEN-36 water-edge pointed bays include blue/lilac/rose glazing. Green stained-glass parapet is a separate owner-reported variant; its exact source panel/profile is unresolved. Existing A11 art contains blue infill but the stone-relief-only wording was incomplete."
   ],
-  "mesh_generation_allowed_without_approval": false
+  "mesh_generation_allowed_without_approval": false,
+  "material_correction_date": "2026-10-14"
 }
