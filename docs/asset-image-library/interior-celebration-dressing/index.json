@@ -232,20 +232,24 @@
   ],
   "circulation_rule": "Keep central floor star readable, south arrival and north paired stairs clear, and continuous perimeter/gallery routes. This is a proposed dressing recipe, not a verified placement layout.",
   "candidate_missing_pack": {
-    "status": "not generated or reserved; inspect source parts before production",
+    "status": "audited gap list; not generated/reserved",
+    "audit_file": "missing-pieces.json",
     "suggested_sheet_count": 1,
-    "max_items": 16,
+    "max_items": 10,
     "asset_examples": [
-      "small celebration chair variant",
-      "compact tea/celebration table if existing side/wish tables are insufficient",
-      "place-setting/tea-service group",
-      "cushion variants",
-      "runner/border ends for long textiles",
-      "garland/festoon mounting bracket",
-      "small candle/display fittings",
-      "frame or birthday memory-display insert"
+      "Celebration chair",
+      "Rose-lotus teapot",
+      "Teacup and saucer",
+      "Milk jug",
+      "Lidded sugar bowl",
+      "Dessert plate",
+      "Cake server",
+      "Serving tray",
+      "Invitation/place-card holder",
+      "Birthday memory display"
     ],
-    "rule": "Remove candidates already adequately drawn; no new cake/lantern/curtain/rug master just because it was missing from registry."
+    "rule": "Existing cushions/candles/fittings/garlands/vessels are isolation/fit jobs, not new masters. Optional memory display can be omitted.",
+    "budget_rule": "Do not add an eleventh palace sheet slot beyond cap65. Reallocate an unproduced/superseded reservation when this sheet is scheduled. Global230 target unchanged."
   },
   "next_visual_review": "A dressed ballroom view using existing designs; preserve its stairs/windows/vault while showing celebration props. Not generated in this source audit.",
   "model_placement_verified": false,

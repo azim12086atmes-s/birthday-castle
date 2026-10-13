@@ -1,0 +1,238 @@
+{
+  "date": "2026-10-14",
+  "scope": "Identify original ballroom celebration dressing gaps; no new art/model generation",
+  "audit_method": "Registry-wide name review plus separate visual inspection of GEN-07 and GEN-20; previous one-at-a-time visual reviews of GEN-24/GEN-25 and their source panels. Not an exhaustive visual review of all45 boards.",
+  "source_refs": [
+    {
+      "id": "GEN-07",
+      "file": "images/illustrated-boards/GEN-07.png",
+      "sha256": "83817757947838f1905e1755ab24b190d05e4bd296f16e8f04956f5b7358d9a5"
+    },
+    {
+      "id": "GEN-20",
+      "file": "images/illustrated-boards/GEN-20.png",
+      "sha256": "db3ae76d698c1851a2330c67cc3972125babbbacfa23321ff632f92f85c74358"
+    },
+    {
+      "id": "GEN-24",
+      "file": "images/illustrated-boards/GEN-24.png",
+      "sha256": "deb78cfce6dab5c31d9b3519d3bc01a07e58bba453b013fcdb76bd2e8be3f349"
+    },
+    {
+      "id": "GEN-25",
+      "file": "images/illustrated-boards/GEN-25.png",
+      "sha256": "9ef8a873ba4469a122f8d6b195f958834babb94bd9481ba41986a78adf6c19c7"
+    }
+  ],
+  "new_design_gaps": [
+    {
+      "proposed_part_key": "CELEBRATION-GAP-01",
+      "name": "Celebration chair",
+      "reason": "Ordinary upright guest seating; existing throne, chaise and garden bench do not supply this compact party-chair variant.",
+      "priority": "core",
+      "design_direction": "Rose upholstery, ivory frame, fine gold; compact source-compatible chair rather than another throne.",
+      "status": "identified-reference-gap; not generated or reserved",
+      "scope": "Audited original ballroom/celebration references",
+      "new_model_approval": false
+    },
+    {
+      "proposed_part_key": "CELEBRATION-GAP-02",
+      "name": "Rose-lotus teapot",
+      "reason": "Tea-service hero; no dedicated teapot construction reference in audited boards/registry.",
+      "priority": "core",
+      "design_direction": "Small ivory/rose ceramic body, restrained lotus shaping, gold rim; spout, handle and lid separable.",
+      "status": "identified-reference-gap; not generated or reserved",
+      "scope": "Audited original ballroom/celebration references",
+      "new_model_approval": false
+    },
+    {
+      "proposed_part_key": "CELEBRATION-GAP-03",
+      "name": "Teacup and saucer",
+      "reason": "Human-scale place setting; no dedicated cup/saucer reference.",
+      "priority": "core",
+      "design_direction": "One coordinated assembly with separate cup and saucer geometry; thin gold and rose/blue motif.",
+      "status": "identified-reference-gap; not generated or reserved",
+      "scope": "Audited original ballroom/celebration references",
+      "new_model_approval": false
+    },
+    {
+      "proposed_part_key": "CELEBRATION-GAP-04",
+      "name": "Milk jug",
+      "reason": "Small pouring vessel for tea-service grouping; source wish bowl is a different object.",
+      "priority": "supporting",
+      "design_direction": "Match teapot ceramic/glaze vocabulary; readable open lip and handle.",
+      "status": "identified-reference-gap; not generated or reserved",
+      "scope": "Audited original ballroom/celebration references",
+      "new_model_approval": false
+    },
+    {
+      "proposed_part_key": "CELEBRATION-GAP-05",
+      "name": "Lidded sugar bowl",
+      "reason": "Tea-service table detail; no dedicated sugar-bowl reference.",
+      "priority": "supporting",
+      "design_direction": "Small low vessel and removable lid; gold rim and modest star/lotus knob.",
+      "status": "identified-reference-gap; not generated or reserved",
+      "scope": "Audited original ballroom/celebration references",
+      "new_model_approval": false
+    },
+    {
+      "proposed_part_key": "CELEBRATION-GAP-06",
+      "name": "Dessert plate",
+      "reason": "Birthday-cake place setting; cake stand is not a serving plate.",
+      "priority": "core",
+      "design_direction": "Shallow human-scale ceramic plate with source rose/star border; distinct from large floor medallion.",
+      "status": "identified-reference-gap; not generated or reserved",
+      "scope": "Audited original ballroom/celebration references",
+      "new_model_approval": false
+    },
+    {
+      "proposed_part_key": "CELEBRATION-GAP-07",
+      "name": "Cake server",
+      "reason": "Cake-display accessory; no dedicated hand-held server reference.",
+      "priority": "supporting",
+      "design_direction": "Delicate gold/silver blade and ivory/rose handle; fully readable silhouette.",
+      "status": "identified-reference-gap; not generated or reserved",
+      "scope": "Audited original ballroom/celebration references",
+      "new_model_approval": false
+    },
+    {
+      "proposed_part_key": "CELEBRATION-GAP-08",
+      "name": "Serving tray",
+      "reason": "Grouping cups/place settings; existing cake stand and marble side table do not provide a portable tray.",
+      "priority": "supporting",
+      "design_direction": "Low-rim ivory/rose/gold tray; optional small handles, no source cake glued onto it.",
+      "status": "identified-reference-gap; not generated or reserved",
+      "scope": "Audited original ballroom/celebration references",
+      "new_model_approval": false
+    },
+    {
+      "proposed_part_key": "CELEBRATION-GAP-09",
+      "name": "Invitation/place-card holder",
+      "reason": "Support existing invitation artwork upright on tables; guest-book/card art exists but a dedicated holder profile is missing.",
+      "priority": "supporting",
+      "design_direction": "Small stable gold/ivory holder with removable card slot; reuse GEN-25-A10 invitation art.",
+      "status": "identified-reference-gap; not generated or reserved",
+      "scope": "Audited original ballroom/celebration references",
+      "new_model_approval": false
+    },
+    {
+      "proposed_part_key": "CELEBRATION-GAP-10",
+      "name": "Birthday memory display",
+      "reason": "Optional framed portrait or birthday-memory insert to make the room personal; mirror is a different function.",
+      "priority": "optional",
+      "design_direction": "Reuse GEN-24-A03 frame/crest vocabulary when suitable; design a picture insert/backing/stand rather than another ornamental mirror.",
+      "status": "identified-reference-gap; not generated or reserved",
+      "scope": "Audited original ballroom/celebration references",
+      "new_model_approval": false
+    }
+  ],
+  "existing_parts_needing_isolation_or_fit": [
+    {
+      "name": "Loose seat/throw cushions",
+      "existing_refs": [
+        "GEN-24-A05"
+      ],
+      "evidence": "Chaise source already shows cushions; GEN-20 also supplies cushion construction/embroidery.",
+      "action": "Isolate existing cushion shape/embroidery. Extra styles are optional, not a proven missing master."
+    },
+    {
+      "name": "Table candles and candlesticks",
+      "existing_refs": [
+        "GEN-25-A05"
+      ],
+      "evidence": "Visible on the original wish table.",
+      "action": "Extract visible parts; add another view only if shaft/base/back remains ambiguous. Do not create a new candle style by default."
+    },
+    {
+      "name": "Curtain rod, finials, tiebacks and tassels",
+      "existing_refs": [
+        "GEN-24-A10"
+      ],
+      "evidence": "Explicit detail panels in existing curtain source.",
+      "action": "Index/isolate existing detail parts and normalize span/mounts."
+    },
+    {
+      "name": "Pearl strings, hanging loops and moon/star charms",
+      "existing_refs": [
+        "GEN-25-A07",
+        "GEN-35-A05"
+      ],
+      "evidence": "Festoon source includes pearl/chain/charm/ring details.",
+      "action": "Use existing motifs; define repeat segment and end attachment lengths."
+    },
+    {
+      "name": "Floral clusters and ribbon swags",
+      "existing_refs": [
+        "GEN-25-A06",
+        "GEN-25-A09"
+      ],
+      "evidence": "Existing floral arch/swag assembly and detailed cluster source.",
+      "action": "Reuse/isolate existing clusters, not another generic bouquet pack."
+    },
+    {
+      "name": "Garland/banner hanging brackets",
+      "existing_refs": [
+        "PAL-TOWER-002-D15",
+        "GEN-35-A06"
+      ],
+      "evidence": "An indexed garland hanging bracket and banner mounting design already exist.",
+      "action": "Compare mounting face/scale to interior support; generate a new adapter only if actual fit requires it."
+    },
+    {
+      "name": "Table flower vase/bowl",
+      "existing_refs": [
+        "GEN-25-A05"
+      ],
+      "evidence": "A flower vessel and star bowl already appear on the wish table.",
+      "action": "Isolate existing vessels; no new centerpiece-vase master yet."
+    },
+    {
+      "name": "Rug, embroidered tablecloth and long runner motifs",
+      "existing_refs": [
+        "GEN-24-A11",
+        "GEN-25-A05"
+      ],
+      "evidence": "Rug border/corner and tablecloth embroidery/corner/tassel details exist.",
+      "action": "Reuse source textile motifs; a long runner needs length/repeat/end planning, not an unrelated new floor or cloth design."
+    }
+  ],
+  "assembly_reference_gaps": [
+    {
+      "name": "Long textile and festoon repetition",
+      "rule": "Declare straight repeat length and terminal/corner treatment from existing border/pearl/swags; end phase and curves are not proven by source art."
+    },
+    {
+      "name": "Curtain-to-window fitting",
+      "rule": "Original curtain label is3.2m high, while proposed lower ballroom opening is taller. Use deliberate partial-height dressing or reviewed extensions; do not blindly stretch trim, tassels or human-scale objects."
+    },
+    {
+      "name": "Support/mount fitting",
+      "rule": "Confirm hanging points, hooks/brackets and load path on real walls/galleries. Existing mounts remain candidates until the attachment face fits."
+    },
+    {
+      "name": "Celebration placement",
+      "rule": "Actual display/seating group placement is missing even where art exists. Keep arrival, paired stairs and central floor-star routes readable; fixture/view parity is unresolved."
+    }
+  ],
+  "new_design_count": 10,
+  "core_and_supporting_count": 9,
+  "optional_count": 1,
+  "reuse_groups": 8,
+  "generation_proposal": {
+    "sheet_id_candidate": "PAL-CELEBRATION-PROP-001",
+    "status": "not generated, not reserved; gap list only",
+    "component_count": 10,
+    "layout": "One labelled sheet; independent illustration scales. Chair larger cell, nine small tabletop/display objects readable and separated.",
+    "palette": "rose/cherry upholstery and ceramic accents, ivory/cream surfaces, fine gold, restrained blue/lilac motif accents",
+    "budget": "Do not add an eleventh palace sheet slot beyond cap65. Reallocate an unproduced/superseded reservation when this sheet is scheduled. Global230 target unchanged."
+  },
+  "new_generated_images": 0,
+  "new_models": 0,
+  "placement_verified": false,
+  "excluded": [
+    "baths/spas",
+    "kitchens/bakeries",
+    "service rooms",
+    "music spaces"
+  ]
+}

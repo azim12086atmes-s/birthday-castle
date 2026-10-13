@@ -25,8 +25,10 @@ The rooms need furnishings, textiles and celebration arrangements in addition to
 
 These are proposed arrangements, not assembled geometry. Keep the ballroom floor star, arrival, paired northern stairs and gallery paths readable. Human-scale objects should not inherit the palace's exterior scale multiplier. Celebration density should come from coordinated groups and textile/flower rhythm, not filling every circulation path.
 
-The next new component pack, if needed after source review, should consolidate up to16 missing human-scale seating/tabletop/cushion/mounting details. The cake, main lanterns, curtains, rug and arch decoration already have source designs. Whole-room decoration still needs a placement view; this audit does not supply one.
+[The missing-piece audit](MISSING-PIECES.md) identifies10 new reference candidates: a guest chair, serving/place-setting details and an optional memory display. Existing cushions, candles, tassels, mounts and garlands need isolation/fit, not new masters. The cake, main lanterns, curtains, rug and arch decoration already have source designs. Whole-room decoration still needs a placement view; this audit does not supply one.
 
 Baths/spas, kitchens/bakeries, service rooms and music spaces remain excluded. The outdoor festival wheel/celebration skyline on GEN-25 are not introduced into the interior kit. Guardians are a reusable optional foyer/gallery accent, not required ballroom clutter. All models remain unregistered, with no paid generation, mesh fit or runtime proof.
 
 GEN-24-A12 is an alternative guardian reference. Compare it with existing GEN-34-M05 and reuse that master when adequate; it is not an automatic request for another sculpture mesh.
+
+[Missing-piece audit](MISSING-PIECES.md): ten candidates, eight existing extraction/reuse groups; no new art or image slot.

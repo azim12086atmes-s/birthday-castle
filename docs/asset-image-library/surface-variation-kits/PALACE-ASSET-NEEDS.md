@@ -50,3 +50,7 @@ Continuous wall/ward host bodies; roof and floor substrates; angled/curved wing 
 ## Celebration dressing next
 
 [Nine existing decor/furnishing designs](../interior-celebration-dressing/README.md) are newly indexed from original GEN-24/25 art. Use them for a focal birthday display, small seating groups, curtains/rugs, floral swags and lantern festoons. No new cake/curtain/rug master is needed merely because it was unindexed. A dressed-room placement view and missing small furniture/tabletop/textile/mounting details remain to produce.
+
+## Audited ballroom missing pieces
+
+[Ten new reference candidates and eight existing extraction/reuse groups](../interior-celebration-dressing/MISSING-PIECES.md). New candidates are a celebration chair, tea/serving/place-setting pieces and an optional memory display. Cushions, candles, tassels, floral swags, mounts and textile motifs are already illustrated; isolate/fit those rather than redesigning them. No new images or selected slots are produced by this audit.
