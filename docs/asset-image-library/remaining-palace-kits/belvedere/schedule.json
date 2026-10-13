@@ -1,0 +1,493 @@
+{
+  "family": "Eastern projecting onion belvedere",
+  "key": "belvedere",
+  "source_front_authority": "GEN-37",
+  "source_reference_id": "REF-48132B5FA126",
+  "source_reference_file": "images/reference-crops-and-studies/T05-48132b5fa126.png",
+  "source_reference_sha256": "48132b5fa126464ccfb68ed1596da47a2c34fc2390c28e26698b82473196daf5",
+  "generation_reference_path": "/workspace/shared/birthday-castle-front-crops/T05.png",
+  "scope": "Modular sketch references only, no Blender models",
+  "source_boxes_status": "Direct visible-front region guides; not object masks or measured building dimensions",
+  "section_connections": "Stack S01\u2192S02\u2192S03\u2192S04 on the same narrow faceted core. J1 shaft-to-relief neck; J2 relief belt-to-gallery sill; J3 gallery eave-to-bulb underside. Small corbel mounting faces are on the collar/shaft side; no neighboring building fused.",
+  "parts": [
+    {
+      "asset_id": "PAL-TOWER-004-S01",
+      "name": "Long rose marble support shaft",
+      "description": "Tall narrow faceted rose/ivory shaft, delicate vertical white engaged columns and small gold foot/head leaves. The lower source shaft is largely plain stone between columns, not giant blue windows. Extend only the flower-obscured bottom to a modest flat attachment face.",
+      "source_box_xyxy": [
+        37,
+        233,
+        137,
+        359
+      ],
+      "model_status": "unregistered",
+      "review_status": "pending",
+      "source_reference_id": "SRC-PAL-TOWER-004-S01",
+      "source_reference_file": "remaining-palace-kits/belvedere/source-sections/PAL-TOWER-004-S01.png",
+      "source_reference_sha256": "3021522d9d946dc28e371ef6b7bf19cf6eb07d3783262052bea4e81a3d7cd127",
+      "reuse_component_ids": [
+        "GEN-41-M01",
+        "GEN-42-M05",
+        "GEN-44-M01",
+        "PAL-TOWER-001-D13",
+        "PAL-TOWER-001-D14",
+        "PAL-TOWER-001-D15",
+        "PAL-TOWER-001-D16"
+      ]
+    },
+    {
+      "asset_id": "PAL-TOWER-004-S02",
+      "name": "Floral belt and relief neck",
+      "description": "Shallow ivory/gold collar belt at shaft head with pale white floral relief panels on rose marble and closely spaced gold trim. Preserve source little brackets and profile changes; do not invent a broad balcony.",
+      "source_box_xyxy": [
+        33,
+        190,
+        137,
+        245
+      ],
+      "model_status": "unregistered",
+      "review_status": "pending",
+      "source_reference_id": "SRC-PAL-TOWER-004-S02",
+      "source_reference_file": "remaining-palace-kits/belvedere/source-sections/PAL-TOWER-004-S02.png",
+      "source_reference_sha256": "db701a9dc0abbdeae621732a7c506a56ffc3443042670f4a80b7e5ed372e788b",
+      "reuse_component_ids": [
+        "GEN-41-M01",
+        "GEN-42-M05",
+        "GEN-44-M01",
+        "PAL-TOWER-001-D13",
+        "PAL-TOWER-001-D14",
+        "PAL-TOWER-001-D15",
+        "PAL-TOWER-001-D16"
+      ]
+    },
+    {
+      "asset_id": "PAL-TOWER-004-S03",
+      "name": "Small arched lookout drum",
+      "description": "Short narrow gallery drum with small blue lancets, slim ivory columns, gold leaf springers, delicate white/gold sill balustrade. No giant windows and no added second gallery floor.",
+      "source_box_xyxy": [
+        20,
+        130,
+        144,
+        201
+      ],
+      "model_status": "unregistered",
+      "review_status": "pending",
+      "source_reference_id": "SRC-PAL-TOWER-004-S03",
+      "source_reference_file": "remaining-palace-kits/belvedere/source-sections/PAL-TOWER-004-S03.png",
+      "source_reference_sha256": "dd819e37a177d865adcd0efab30937dd4e57252abd9a5794d09740af54579a04",
+      "reuse_component_ids": [
+        "GEN-41-M01",
+        "GEN-42-M05",
+        "GEN-44-M01",
+        "PAL-TOWER-001-D13",
+        "PAL-TOWER-001-D14",
+        "PAL-TOWER-001-D15",
+        "PAL-TOWER-001-D16"
+      ]
+    },
+    {
+      "asset_id": "PAL-TOWER-004-S04",
+      "name": "Compact plum onion canopy",
+      "description": "Compact violet onion crown with slender gold meridians and a tall delicate multi-knop gold spindle/star. Keep a modest overhang relative to the narrow drum, pointed rising shoulder; not the broad western pavilion bulb.",
+      "source_box_xyxy": [
+        18,
+        0,
+        144,
+        145
+      ],
+      "model_status": "unregistered",
+      "review_status": "pending",
+      "source_reference_id": "SRC-PAL-TOWER-004-S04",
+      "source_reference_file": "remaining-palace-kits/belvedere/source-sections/PAL-TOWER-004-S04.png",
+      "source_reference_sha256": "eb7a8df7d7d8ac4873e243da38acb7eed74298fc2c2f12428f81e6c204c2102f",
+      "reuse_component_ids": [
+        "GEN-41-M01",
+        "GEN-42-M05",
+        "GEN-44-M01",
+        "PAL-TOWER-001-D13",
+        "PAL-TOWER-001-D14",
+        "PAL-TOWER-001-D15",
+        "PAL-TOWER-001-D16"
+      ]
+    }
+  ],
+  "decor": [
+    {
+      "asset_id": "PAL-TOWER-004-D01",
+      "name": "Support shaft pilaster",
+      "description": "Long thin ivory marble engaged column with subtle fluting and a flat rear.",
+      "model_status": "unregistered",
+      "review_status": "pending",
+      "reuse_component_ids": [
+        "GEN-41-M01",
+        "GEN-42-M05",
+        "GEN-44-M01",
+        "PAL-TOWER-001-D13",
+        "PAL-TOWER-001-D14",
+        "PAL-TOWER-001-D15",
+        "PAL-TOWER-001-D16"
+      ],
+      "applies_to": [
+        "PAL-TOWER-004-S01"
+      ]
+    },
+    {
+      "asset_id": "PAL-TOWER-004-D02",
+      "name": "Pilaster foot leaf",
+      "description": "Tiny gold/ivory leaf foot clamp, detached.",
+      "model_status": "unregistered",
+      "review_status": "pending",
+      "reuse_component_ids": [
+        "GEN-41-M01",
+        "GEN-42-M05",
+        "GEN-44-M01",
+        "PAL-TOWER-001-D13",
+        "PAL-TOWER-001-D14",
+        "PAL-TOWER-001-D15",
+        "PAL-TOWER-001-D16"
+      ],
+      "applies_to": [
+        "PAL-TOWER-004-S01"
+      ]
+    },
+    {
+      "asset_id": "PAL-TOWER-004-D03",
+      "name": "Pilaster floral head",
+      "description": "Small gilded floral head matching source support columns.",
+      "model_status": "unregistered",
+      "review_status": "pending",
+      "reuse_component_ids": [
+        "GEN-41-M01",
+        "GEN-42-M05",
+        "GEN-44-M01",
+        "PAL-TOWER-001-D13",
+        "PAL-TOWER-001-D14",
+        "PAL-TOWER-001-D15",
+        "PAL-TOWER-001-D16"
+      ],
+      "applies_to": [
+        "PAL-TOWER-004-S01"
+      ]
+    },
+    {
+      "asset_id": "PAL-TOWER-004-D04",
+      "name": "Rose marble shaft panel",
+      "description": "One tall pale rose/ivory veined marble facet between columns, no giant glass inserted.",
+      "model_status": "unregistered",
+      "review_status": "pending",
+      "reuse_component_ids": [
+        "GEN-41-M01",
+        "GEN-42-M05",
+        "GEN-44-M01",
+        "PAL-TOWER-001-D13",
+        "PAL-TOWER-001-D14",
+        "PAL-TOWER-001-D15",
+        "PAL-TOWER-001-D16"
+      ],
+      "applies_to": [
+        "PAL-TOWER-004-S01"
+      ]
+    },
+    {
+      "asset_id": "PAL-TOWER-004-D05",
+      "name": "Floral neck relief panel",
+      "description": "One curved rose panel with pale white rose/petal relief and fine gold perimeter.",
+      "model_status": "unregistered",
+      "review_status": "pending",
+      "reuse_component_ids": [
+        "GEN-41-M01",
+        "GEN-42-M05",
+        "GEN-44-M01",
+        "PAL-TOWER-001-D13",
+        "PAL-TOWER-001-D14",
+        "PAL-TOWER-001-D15",
+        "PAL-TOWER-001-D16"
+      ],
+      "applies_to": [
+        "PAL-TOWER-004-S02"
+      ]
+    },
+    {
+      "asset_id": "PAL-TOWER-004-D06",
+      "name": "Neck bead and leaf strip",
+      "description": "Short curved gold bead/leaf repeat under floral belt.",
+      "model_status": "unregistered",
+      "review_status": "pending",
+      "reuse_component_ids": [
+        "GEN-41-M01",
+        "GEN-42-M05",
+        "GEN-44-M01",
+        "PAL-TOWER-001-D13",
+        "PAL-TOWER-001-D14",
+        "PAL-TOWER-001-D15",
+        "PAL-TOWER-001-D16"
+      ],
+      "applies_to": [
+        "PAL-TOWER-004-S02"
+      ]
+    },
+    {
+      "asset_id": "PAL-TOWER-004-D07",
+      "name": "Faceted belt cornice",
+      "description": "Short ivory/rose/gold neck cornice with matched cut ends.",
+      "model_status": "unregistered",
+      "review_status": "pending",
+      "reuse_component_ids": [
+        "GEN-41-M01",
+        "GEN-42-M05",
+        "GEN-44-M01",
+        "PAL-TOWER-001-D13",
+        "PAL-TOWER-001-D14",
+        "PAL-TOWER-001-D15",
+        "PAL-TOWER-001-D16"
+      ],
+      "applies_to": [
+        "PAL-TOWER-004-S02"
+      ]
+    },
+    {
+      "asset_id": "PAL-TOWER-004-D08",
+      "name": "Belt corner return",
+      "description": "Mitred faceted return of the same small belt profile.",
+      "model_status": "unregistered",
+      "review_status": "pending",
+      "reuse_component_ids": [
+        "GEN-41-M01",
+        "GEN-42-M05",
+        "GEN-44-M01",
+        "PAL-TOWER-001-D13",
+        "PAL-TOWER-001-D14",
+        "PAL-TOWER-001-D15",
+        "PAL-TOWER-001-D16"
+      ],
+      "applies_to": [
+        "PAL-TOWER-004-S02"
+      ]
+    },
+    {
+      "asset_id": "PAL-TOWER-004-D09",
+      "name": "Lookout lancet surround",
+      "description": "One complete small ivory/gold pointed window surround, open middle.",
+      "model_status": "unregistered",
+      "review_status": "pending",
+      "reuse_component_ids": [
+        "GEN-41-M01",
+        "GEN-42-M05",
+        "GEN-44-M01",
+        "PAL-TOWER-001-D13",
+        "PAL-TOWER-001-D14",
+        "PAL-TOWER-001-D15",
+        "PAL-TOWER-001-D16"
+      ],
+      "applies_to": [
+        "PAL-TOWER-004-S03"
+      ]
+    },
+    {
+      "asset_id": "PAL-TOWER-004-D10",
+      "name": "Small blue gallery glass",
+      "description": "A separate narrow blue/lilac lancet glass insert with gold leading.",
+      "model_status": "unregistered",
+      "review_status": "pending",
+      "reuse_component_ids": [
+        "GEN-41-M01",
+        "GEN-42-M05",
+        "GEN-44-M01",
+        "PAL-TOWER-001-D13",
+        "PAL-TOWER-001-D14",
+        "PAL-TOWER-001-D15",
+        "PAL-TOWER-001-D16"
+      ],
+      "applies_to": [
+        "PAL-TOWER-004-S03"
+      ]
+    },
+    {
+      "asset_id": "PAL-TOWER-004-D11",
+      "name": "Gallery dwarf column",
+      "description": "One short fine ivory column with source gold leaf head/base, no arch attached.",
+      "model_status": "unregistered",
+      "review_status": "pending",
+      "reuse_component_ids": [
+        "GEN-41-M01",
+        "GEN-42-M05",
+        "GEN-44-M01",
+        "PAL-TOWER-001-D13",
+        "PAL-TOWER-001-D14",
+        "PAL-TOWER-001-D15",
+        "PAL-TOWER-001-D16"
+      ],
+      "applies_to": [
+        "PAL-TOWER-004-S03"
+      ]
+    },
+    {
+      "asset_id": "PAL-TOWER-004-D12",
+      "name": "Curved gallery balustrade",
+      "description": "Short fine pierced ivory/gold gallery sill rail, matched ends.",
+      "model_status": "unregistered",
+      "review_status": "pending",
+      "reuse_component_ids": [
+        "GEN-41-M01",
+        "GEN-42-M05",
+        "GEN-44-M01",
+        "PAL-TOWER-001-D13",
+        "PAL-TOWER-001-D14",
+        "PAL-TOWER-001-D15",
+        "PAL-TOWER-001-D16"
+      ],
+      "applies_to": [
+        "PAL-TOWER-004-S03"
+      ]
+    },
+    {
+      "asset_id": "PAL-TOWER-004-D13",
+      "name": "Onion eave leaf repeat",
+      "description": "One small gold leaf crest repeat from the source narrow onion eave.",
+      "model_status": "unregistered",
+      "review_status": "pending",
+      "reuse_component_ids": [
+        "GEN-41-M01",
+        "GEN-42-M05",
+        "GEN-44-M01",
+        "PAL-TOWER-001-D13",
+        "PAL-TOWER-001-D14",
+        "PAL-TOWER-001-D15",
+        "PAL-TOWER-001-D16"
+      ],
+      "applies_to": [
+        "PAL-TOWER-004-S04"
+      ]
+    },
+    {
+      "asset_id": "PAL-TOWER-004-D14",
+      "name": "Compact bulb meridian",
+      "description": "One complete curved slender gold meridian strip for the small onion, no dome panel.",
+      "model_status": "unregistered",
+      "review_status": "pending",
+      "reuse_component_ids": [
+        "GEN-41-M01",
+        "GEN-42-M05",
+        "GEN-44-M01",
+        "PAL-TOWER-001-D13",
+        "PAL-TOWER-001-D14",
+        "PAL-TOWER-001-D15",
+        "PAL-TOWER-001-D16"
+      ],
+      "applies_to": [
+        "PAL-TOWER-004-S04"
+      ]
+    },
+    {
+      "asset_id": "PAL-TOWER-004-D15",
+      "name": "Tall canopy spindle",
+      "description": "Source delicate gold orb/knop spindle as one detached piece; shared terminal star mounts at top.",
+      "model_status": "unregistered",
+      "review_status": "pending",
+      "reuse_component_ids": [
+        "GEN-41-M01",
+        "GEN-42-M05",
+        "GEN-44-M01",
+        "PAL-TOWER-001-D13",
+        "PAL-TOWER-001-D14",
+        "PAL-TOWER-001-D15",
+        "PAL-TOWER-001-D16"
+      ],
+      "applies_to": [
+        "PAL-TOWER-004-S04"
+      ]
+    },
+    {
+      "asset_id": "PAL-TOWER-004-D16",
+      "name": "Lantern corbel mount",
+      "description": "Family-specific small white/gold carved bracket seat, lantern arm and cage reused separately.",
+      "model_status": "unregistered",
+      "review_status": "pending",
+      "reuse_component_ids": [
+        "GEN-41-M01",
+        "GEN-42-M05",
+        "GEN-44-M01",
+        "PAL-TOWER-001-D13",
+        "PAL-TOWER-001-D14",
+        "PAL-TOWER-001-D15",
+        "PAL-TOWER-001-D16"
+      ],
+      "applies_to": [
+        "PAL-TOWER-004-S01",
+        "PAL-TOWER-004-S02"
+      ]
+    }
+  ],
+  "prompts": {
+    "structure": "Use the SINGLE supplied original GEN-37 crop as the visible design authority. Other existing component studies only support construction/ornament vocabulary. Maintain rose/ivory veined marble, source blue/lilac/pink glass, fine muted polished gold, plum-violet roof surfaces. Neutral front three-quarter technical concept view with enough depth to see interfaces; whole uncropped models on clean warm-white paper/studio background. Preserve visible relative proportions and asymmetric offsets; infer only unseen backs, support faces and join undersides conservatively. No complete palace or redesigned tower, no scene, people, extra background buildings or plants unless a planting asset is explicitly requested. All pieces separated, no neighbor fusion. Labels below objects, not embedded on surfaces. Exactly the requested item count.\nTitle: PAL-TOWER-004 \u2014 Eastern projecting onion belvedere sections. Create exactly FOUR isolated structural sections in a clear 2-by-2 grid. MUST PRINT a title above the grid and the COMPLETE asset ID AND short part name below each object; neither IDs alone nor names alone are sufficient. Visible hierarchy roughly shaft34%, neck14%, gallery15%, compact bulb and long spindle37%. Preserve the pale mostly solid lower support and narrow glass drum, unlike the fully glazed terminal tower. Exactly four modules, source neighbors excluded.\nStack S01\u2192S02\u2192S03\u2192S04 on the same narrow faceted core. J1 shaft-to-relief neck; J2 relief belt-to-gallery sill; J3 gallery eave-to-bulb underside. Small corbel mounting faces are on the collar/shaft side; no neighboring building fused.\nPAL-TOWER-004-S01 \u2014 Long rose marble support shaft: Tall narrow faceted rose/ivory shaft, delicate vertical white engaged columns and small gold foot/head leaves. The lower source shaft is largely plain stone between columns, not giant blue windows. Extend only the flower-obscured bottom to a modest flat attachment face.\nPAL-TOWER-004-S02 \u2014 Floral belt and relief neck: Shallow ivory/gold collar belt at shaft head with pale white floral relief panels on rose marble and closely spaced gold trim. Preserve source little brackets and profile changes; do not invent a broad balcony.\nPAL-TOWER-004-S03 \u2014 Small arched lookout drum: Short narrow gallery drum with small blue lancets, slim ivory columns, gold leaf springers, delicate white/gold sill balustrade. No giant windows and no added second gallery floor.\nPAL-TOWER-004-S04 \u2014 Compact plum onion canopy: Compact violet onion crown with slender gold meridians and a tall delicate multi-knop gold spindle/star. Keep a modest overhang relative to the narrow drum, pointed rising shoulder; not the broad western pavilion bulb.\nKeep small reused ornament installed for source appearance, but detachable decor belongs to the corresponding detail pack. Do not bake neighboring towers, plants or hanging lantern bodies into these modules. Common mating profile and front-facing facet orientation wherever two vertical sections stack; section cut planes follow the source stone bands. Mark small J labels at mating rims. No industrial joints, mechanical plugs or added hidden floors. Displayed pixel dimensions are illustrative; visible original crop proportions remain master.",
+    "decor": "Use the SINGLE supplied original GEN-37 crop as the visible design authority. Other existing component studies only support construction/ornament vocabulary. Maintain rose/ivory veined marble, source blue/lilac/pink glass, fine muted polished gold, plum-violet roof surfaces. Neutral front three-quarter technical concept view with enough depth to see interfaces; whole uncropped models on clean warm-white paper/studio background. Preserve visible relative proportions and asymmetric offsets; infer only unseen backs, support faces and join undersides conservatively. No complete palace or redesigned tower, no scene, people, extra background buildings or plants unless a planting asset is explicitly requested. All pieces separated, no neighbor fusion. Labels below objects, not embedded on surfaces. Exactly the requested item count.\nTitle: PAL-TOWER-004-DECOR \u2014 Eastern projecting onion belvedere detail kit. Exactly16 complete separately isolated detail assets in a4-by-4 grid, one per cell. Sixteen removable fittings for this rose-shaft lookout. Reuse terminal star and lantern assemblies and the broader pavilion floral vocabulary, but keep these smaller profiles.\nPAL-TOWER-004-D01 \u2014 Support shaft pilaster: Long thin ivory marble engaged column with subtle fluting and a flat rear.\nPAL-TOWER-004-D02 \u2014 Pilaster foot leaf: Tiny gold/ivory leaf foot clamp, detached.\nPAL-TOWER-004-D03 \u2014 Pilaster floral head: Small gilded floral head matching source support columns.\nPAL-TOWER-004-D04 \u2014 Rose marble shaft panel: One tall pale rose/ivory veined marble facet between columns, no giant glass inserted.\nPAL-TOWER-004-D05 \u2014 Floral neck relief panel: One curved rose panel with pale white rose/petal relief and fine gold perimeter.\nPAL-TOWER-004-D06 \u2014 Neck bead and leaf strip: Short curved gold bead/leaf repeat under floral belt.\nPAL-TOWER-004-D07 \u2014 Faceted belt cornice: Short ivory/rose/gold neck cornice with matched cut ends.\nPAL-TOWER-004-D08 \u2014 Belt corner return: Mitred faceted return of the same small belt profile.\nPAL-TOWER-004-D09 \u2014 Lookout lancet surround: One complete small ivory/gold pointed window surround, open middle.\nPAL-TOWER-004-D10 \u2014 Small blue gallery glass: A separate narrow blue/lilac lancet glass insert with gold leading.\nPAL-TOWER-004-D11 \u2014 Gallery dwarf column: One short fine ivory column with source gold leaf head/base, no arch attached.\nPAL-TOWER-004-D12 \u2014 Curved gallery balustrade: Short fine pierced ivory/gold gallery sill rail, matched ends.\nPAL-TOWER-004-D13 \u2014 Onion eave leaf repeat: One small gold leaf crest repeat from the source narrow onion eave.\nPAL-TOWER-004-D14 \u2014 Compact bulb meridian: One complete curved slender gold meridian strip for the small onion, no dome panel.\nPAL-TOWER-004-D15 \u2014 Tall canopy spindle: Source delicate gold orb/knop spindle as one detached piece; shared terminal star mounts at top.\nPAL-TOWER-004-D16 \u2014 Lantern corbel mount: Family-specific small white/gold carved bracket seat, lantern arm and cage reused separately.\nNo whole wall, tower, roof or assembled staircase in this detail pack. Individual objects shown at readable independent review scales; full depth, mounting backs and clean seam ends. Source motifs remain consistent with their parent structural sections. Preserve exact printed IDs and short item names, no extra objects or duplicate alternate views. Thin profile parts have sensible complete ends. Avoid detached ornaments fused to each other. Common lantern cages/pendants already exist in PAL-TOWER-001-D14/D15/D16; only family-specific mounts/junctions are requested here.\nSTRICT SHAPE QUALITY: use restrained simple technical product views with nearly frontal orthographic geometry. Straight columns remain straight, arches regular, curved strips smooth and single. No melted curls, warped faces, gratuitous spikes or asymmetric duplicated leaves. Do not thicken delicate parts to giant ornaments. A roof rib is only ONE thin curved gold strip, no roof panels or whole cone. Each fitting is isolated, complete, and evenly separated from its label. Caption every cell with the exact full ID AND short name.",
+    "decor_correction": "Correct only the faulty cells of this 16-item belvedere detail sheet. Keep all IDs/names, 4-by-4 grid, palette and all other parts unchanged. D07 Faceted belt cornice and D08 Belt corner return are SOURCE MOULDED STONE BANDS, not small window walls: DELETE every miniature pointed arch and every blue glazed inset from these two pieces. Show smooth ivory/rose veined marble bands with three fine horizontal mouldings and thin gold lips; D07 one short faceted strip, D08 its matching clean mitred corner. No extra flowers or windows on these two bands. D12 Curved gallery balustrade is an OPEN pierced ivory/gold low railing: remove the blue infill panels from between its tiny arches; leave clean see-through voids and thin supports, no blue glass. D02 Pilaster foot leaf is a tiny restrained gold leaf clamp for an ivory shaft foot, remove the oversized rectangular wall corbel and large scroll. Source shape quality: regular smooth edges, straight shafts, complete ends, delicate gold rather than bloated or melting ornaments. All sixteen objects remain single isolated components with unchanged exact full captions."
+  },
+  "outputs": [
+    {
+      "sheet_id": "PAL-TOWER-004",
+      "kind": "structure",
+      "file": "remaining-palace-kits/belvedere/PAL-TOWER-004.png",
+      "sha256": "6e1390b08a11b97dd5c044e2b7cf3ddbf6495751dcce93bad5f0584f98301d15",
+      "original_file": "/workspace/generated_images/exec-5a4dbd5b-ee68-4fc9-9b69-db8bd2e05847.png",
+      "source_reference_id": "REF-48132B5FA126",
+      "source_reference_sha256": "48132b5fa126464ccfb68ed1596da47a2c34fc2390c28e26698b82473196daf5",
+      "prompt_key": "structure",
+      "generator": "image_gen.imagegen",
+      "review_status": "pending-user-review",
+      "actual_generation_input_file": "images/reference-crops-and-studies/T05-48132b5fa126.png",
+      "actual_generation_input_sha256": "48132b5fa126464ccfb68ed1596da47a2c34fc2390c28e26698b82473196daf5"
+    },
+    {
+      "sheet_id": "PAL-TOWER-004-DECOR",
+      "kind": "decor_correction",
+      "file": "remaining-palace-kits/belvedere/PAL-TOWER-004-DECOR.png",
+      "sha256": "70607714cd79cd8d859fc1bb6872084f21f1ba85a73b14d8b5c6d5d87efc10ea",
+      "original_file": "/workspace/generated_images/exec-cfc884bd-2be8-4c83-ba54-238b7a2478df.png",
+      "source_reference_id": "REF-48132B5FA126",
+      "source_reference_sha256": "48132b5fa126464ccfb68ed1596da47a2c34fc2390c28e26698b82473196daf5",
+      "prompt_key": "decor_correction",
+      "generator": "image_gen.imagegen",
+      "review_status": "pending-user-review",
+      "actual_generation_input_file": "remaining-palace-kits/belvedere/rejected-drafts/PAL-TOWER-004-DECOR-R01.png",
+      "actual_generation_input_sha256": "7665ec89d9230d279cf0b5ee5fc2c4679e38820b4e9404ccb6a325ab1f5a5457"
+    }
+  ],
+  "shared_decor_id": null,
+  "shared_common_ids": [
+    "PAL-TOWER-001-D13",
+    "PAL-TOWER-001-D14",
+    "PAL-TOWER-001-D15",
+    "PAL-TOWER-001-D16"
+  ],
+  "limits": "Hidden backs/profile dimensions inferred. Actual model fit unverified. Original front determines visible design.",
+  "review_notes": [
+    "Invented glazing removed from cornice/rail fittings. S04 still shows a pointed terminal instead of the source star: use existing PAL-TOWER-001-D13 at its tip."
+  ],
+  "previous_attempts": [
+    {
+      "sheet_id": "PAL-TOWER-004-DECOR",
+      "kind": "decor",
+      "file": "remaining-palace-kits/belvedere/rejected-drafts/PAL-TOWER-004-DECOR-R01.png",
+      "sha256": "7665ec89d9230d279cf0b5ee5fc2c4679e38820b4e9404ccb6a325ab1f5a5457",
+      "original_file": "/workspace/generated_images/exec-a5adbbd1-7a89-45f5-9cca-a56fd720cb0e.png",
+      "source_reference_id": "REF-48132B5FA126",
+      "source_reference_sha256": "48132b5fa126464ccfb68ed1596da47a2c34fc2390c28e26698b82473196daf5",
+      "prompt_key": "decor",
+      "generator": "image_gen.imagegen",
+      "review_status": "superseded-invented-blue-arches-in-stone-bands"
+    }
+  ],
+  "review_status": "pending-user-reference-review",
+  "models_generated": 0,
+  "actual_3D_joint_fit_verified": false,
+  "part_scales": "Independent drawing scales, not measured manufacturing dimensions",
+  "existing_board_reuse": [
+    "GEN-17",
+    "GEN-32",
+    "GEN-38",
+    "GEN-41",
+    "GEN-44",
+    "GEN-45"
+  ]
+}

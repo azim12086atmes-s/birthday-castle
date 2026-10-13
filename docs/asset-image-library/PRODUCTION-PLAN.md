@@ -1,29 +1,31 @@
 # Asset production plan and caps
 
+Current component work: [12 screenshot-led palace sheets](remaining-palace-kits/index.html), with32 structural sections and64 detail fittings. [Source/reuse audit and remaining issues](remaining-palace-kits/GAPS-AND-REUSE.md). Selected/reserved: **62/65 palace,79/230 total**. References are pending review; no models or verified joins.
+
 The final library is capped at **230 selected sheets**, including the 45 original boards. **65 are reserved for the palace and interiors; 165 for other buildings and the world.** Existing shared designs count once. This is an allowance, not a target to fill with duplicates.
 
 ## Global allocation
 
-| Scope | Cap | Currently selected | Remaining |
+| Scope | Cap | Currently selected/reserved | Remaining |
 | --- | ---: | ---: | ---: |
-| palace | 65 | 34 | 31 |
+| palace | 65 | 62 | 3 |
 | other-map-buildings | 55 | 3 | 52 |
 | terrain-water-and-planting | 65 | 7 | 58 |
 | shared-outdoor-props-and-bridge | 25 | 3 | 22 |
 | maps-magic-travel-and-birthday | 20 | 4 | 16 |
 
-The 630-file archive contains crops, previews and historical experiments; it is not the final 230-sheet selection. Selected reference slots may still require visual review.
+The 683-file archive contains crops, previews and historical experiments; it is not the final 230-sheet selection. Selected reference slots may still require visual review.
 
 ## Palace caps
 
-| Structural/detail family | Cap | Existing selected |
+| Structural/detail family | Cap | Existing + selected/reserved |
 | --- | ---: | ---: |
-| Layout and envelope | 7 | 4 |
-| Base, wall bodies and stepped wings | 9 | 1 |
-| Tower bodies and roof assemblies | 9 | 3 |
-| Glass, carvings, rails and architectural fittings | 18 | 13 |
-| Stairs, fountains, terraces and courtyards | 10 | 7 |
-| Interiors and furniture | 12 | 6 |
+| Layout and envelope | 7 | 6 |
+| Base, wall bodies and stepped wings | 9 | 9 |
+| Tower bodies and roof assemblies | 10 | 10 |
+| Glass, carvings, rails and architectural fittings | 18 | 17 |
+| Stairs, fountains, terraces and courtyards | 10 | 9 |
+| Interiors and furniture | 11 | 11 |
 
 ## Other map buildings and locations
 
@@ -114,4 +116,8 @@ The [whole top view](palace-roof-plan/index.html) centres the highest ward and s
 
 Current ledger: 65 selected/reserved globally, 48 for the palace. The roof diagram is one slot; painted rejected output is archival.
 
-Active screenshot-led work: [first terminal tower kit](palace-terminal-tower-kit/index.html), four structural sections and16 detail pieces. Other families remain queued; full section inventory is deferred.
+Current screenshot pass: [all remaining component families](remaining-palace-kits/index.html),12 new sheets with32 structural sections and64 detail fittings. Earlier terminal kit reused; all are pending reference review. Full palace inventory remains deferred.
+
+## Current screenshot pass
+
+[Remaining screenshot component kits](remaining-palace-kits/index.html) cover seven families on12 sheets;32 structural targets and64 details. Distortion corrections and direct source cuts are preserved. [Review gaps/reuse](remaining-palace-kits/GAPS-AND-REUSE.md). **62 palace /79 total selected or reserved**; caps65/230 unchanged. No models or verified joints. Earlier pass notes above are historical, not current queue or acceptance status.

@@ -1,6 +1,8 @@
 # Birthday Castle image archive
 
-This archive contains **630 distinct image files** (566.1 MiB), including the 45 original illustrated boards, later generated concepts, vector drawings, crops, previews and build renders.
+Current component work: [12 screenshot-led palace sheets](remaining-palace-kits/index.html), with32 structural sections and64 detail fittings. [Source/reuse audit and remaining issues](remaining-palace-kits/GAPS-AND-REUSE.md). Selected/reserved: **62/65 palace,79/230 total**. References are pending review; no models or verified joins.
+
+This archive contains **683 distinct image files** (605.4 MiB), including the 45 original illustrated boards, later generated concepts, vector drawings, crops, previews and build renders.
 
 The active palace reference is **GEN-37**, with GEN-03 and GEN-16 as supporting views. Additional studies are retained for review; preservation does not mean approval. The corrected INT-C01 floor uses rose and ivory marble.
 
@@ -33,6 +35,10 @@ Use [the illustrated boards](images/illustrated-boards) to browse the original a
 | [terminal-tower-rejected-drafts](palace-terminal-tower-kit/rejected-drafts/PAL-TOWER-001-R01.png) | 1 |
 | [terminal-tower-source-sections](palace-terminal-tower-kit/index.html) | 4 |
 | [vector-drawings](images/vector-drawings) | 130 |
+| [palace-screenshot-component-kits](remaining-palace-kits/index.html) | 12 |
+| [palace-screenshot-source-crops](remaining-palace-kits/index.html) | 4 |
+| [palace-screenshot-source-sections](remaining-palace-kits/index.html) | 28 |
+| [palace-screenshot-rejected-drafts](remaining-palace-kits/index.html) | 9 |
 
 All image bytes are unchanged. Identical copies are stored once, with every original path listed in the manifest. Different previews and cropped versions remain separate. Native Blender files, application changes and non-image documents are outside this image-only archive.
 
@@ -133,4 +139,8 @@ The archived, user-reported inaccurate [roof-plan attempt](palace-roof-plan/inde
 
 The active pass is [modular palace walls](palace-wall-kits/index.html): three sheets and twelve named structural references. Whole-palace layout iteration is paused. A complete section inventory will be compiled later.
 
-Active screenshot-led work: [first terminal tower kit](palace-terminal-tower-kit/index.html), four structural sections and16 detail pieces. Other families remain queued; full section inventory is deferred.
+Current screenshot pass: [all remaining component families](remaining-palace-kits/index.html),12 new sheets with32 structural sections and64 detail fittings. Earlier terminal kit reused; all are pending reference review. Full palace inventory remains deferred.
+
+## Current screenshot pass
+
+[Remaining screenshot component kits](remaining-palace-kits/index.html) cover seven families on12 sheets;32 structural targets and64 details. Distortion corrections and direct source cuts are preserved. [Review gaps/reuse](remaining-palace-kits/GAPS-AND-REUSE.md). **62 palace /79 total selected or reserved**; caps65/230 unchanged. No models or verified joints. Earlier pass notes above are historical, not current queue or acceptance status.

@@ -1,31 +1,49 @@
 {
   "policy": "Review one screenshot family at a time. Duplicated pavilion context is not a separate asset request. Full palace inventory is deferred.",
-  "active_family": "Western terminal onion tower",
+  "active_family": "All supplied screenshot families \u2014 draft coverage",
   "queued_families": [
     {
       "name": "Broad western domed pavilion",
-      "source_reference": "T02 / GEN-37 western pavilion",
-      "status": "not generated this pass"
+      "source_reference": "T02",
+      "status": "generated-pending-reference-review",
+      "schedule": "remaining-palace-kits/pavilion/schedule.json"
     },
     {
       "name": "Slender western needle",
-      "source_reference": "T06 / GEN-37 western needle",
-      "status": "not generated this pass"
+      "source_reference": "T06",
+      "status": "generated-pending-reference-review",
+      "schedule": "remaining-palace-kits/needle/schedule.json"
     },
     {
       "name": "Eastern projecting onion belvedere",
-      "source_reference": "T05 / GEN-37 eastern belvedere",
-      "status": "not generated this pass"
+      "source_reference": "T05",
+      "status": "generated-pending-reference-review",
+      "schedule": "remaining-palace-kits/belvedere/schedule.json"
     },
     {
       "name": "Eastern unequal spire pair",
-      "source_reference": "T03 / GEN-37 eastern cluster",
-      "status": "not generated this pass"
+      "source_reference": "T03",
+      "status": "generated-pending-reference-review",
+      "schedule": "remaining-palace-kits/spire-pair/schedule.json"
     },
     {
-      "name": "Lower angled arcades, star pier, stairs and terrace decor",
-      "source_reference": "W03/W04/S02/S03 and latest owner crop",
-      "status": "early wall refs saved; specific screenshot-led segmentation pending"
+      "name": "Lower angled arcades, star pier and stairs",
+      "source_reference": "W03 + S02, same western source frontage",
+      "status": "generated-pending-reference-review",
+      "schedule": "remaining-palace-kits/lower-wing/schedule.json"
+    },
+    {
+      "name": "Royal needle with attached companion turrets",
+      "source_reference": "T01",
+      "status": "generated-pending-reference-review",
+      "schedule": "remaining-palace-kits/royal-needle/schedule.json"
+    },
+    {
+      "name": "Slim star-glass onion gallery tower",
+      "source_reference": "Latest-owner-crop",
+      "status": "generated-pending-reference-review",
+      "schedule": "remaining-palace-kits/slim-onion/schedule.json"
     }
-  ]
+  ],
+  "remaining_family_index": "remaining-palace-kits/batch.json"
 }

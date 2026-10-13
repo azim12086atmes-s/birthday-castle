@@ -216,3 +216,104 @@ These layer reconstructions were reported inconsistent and retired from placemen
 | PAL-TOWER-001-D14 | Scroll lantern arm and mount | [PAL-TOWER-001-DECOR](palace-terminal-tower-kit/PAL-TOWER-001-DECOR.png) |
 | PAL-TOWER-001-D15 | Glazed lantern cage | [PAL-TOWER-001-DECOR](palace-terminal-tower-kit/PAL-TOWER-001-DECOR.png) |
 | PAL-TOWER-001-D16 | Pendant drop and hanger | [PAL-TOWER-001-DECOR](palace-terminal-tower-kit/PAL-TOWER-001-DECOR.png) |
+
+## Remaining screenshot component IDs
+
+| ID | Name/reference |
+| --- | --- |
+| PAL-TOWER-002-S01 | [Broad faceted window body](remaining-palace-kits/pavilion/PAL-TOWER-002.png) |
+| PAL-TOWER-002-S02 | [Terrace collar and wing junction](remaining-palace-kits/pavilion/PAL-TOWER-002.png) |
+| PAL-TOWER-002-S03 | [Broad arched dome drum](remaining-palace-kits/pavilion/PAL-TOWER-002.png) |
+| PAL-TOWER-002-S04 | [Wide onion crown and spindle](remaining-palace-kits/pavilion/PAL-TOWER-002.png) |
+| PAL-TOWER-002-D01 | [Great-window faceted jamb](remaining-palace-kits/pavilion/PAL-TOWER-002-DECOR.png) |
+| PAL-TOWER-002-D02 | [Broad lotus arch impost](remaining-palace-kits/pavilion/PAL-TOWER-002-DECOR.png) |
+| PAL-TOWER-002-D03 | [Floral spandrel shell](remaining-palace-kits/pavilion/PAL-TOWER-002-DECOR.png) |
+| PAL-TOWER-002-D04 | [Rose tracery medallion](remaining-palace-kits/pavilion/PAL-TOWER-002-DECOR.png) |
+| PAL-TOWER-002-D05 | [Curved gallery sill repeat](remaining-palace-kits/pavilion/PAL-TOWER-002-DECOR.png) |
+| PAL-TOWER-002-D06 | [Clerestory arch surround](remaining-palace-kits/pavilion/PAL-TOWER-002-DECOR.png) |
+| PAL-TOWER-002-D07 | [Gallery facet pier](remaining-palace-kits/pavilion/PAL-TOWER-002-DECOR.png) |
+| PAL-TOWER-002-D08 | [Pierced terrace rail repeat](remaining-palace-kits/pavilion/PAL-TOWER-002-DECOR.png) |
+| PAL-TOWER-002-D09 | [Rail junction post](remaining-palace-kits/pavilion/PAL-TOWER-002-DECOR.png) |
+| PAL-TOWER-002-D10 | [Wing collar attachment pad](remaining-palace-kits/pavilion/PAL-TOWER-002-DECOR.png) |
+| PAL-TOWER-002-D11 | [Wide crown eave crest](remaining-palace-kits/pavilion/PAL-TOWER-002-DECOR.png) |
+| PAL-TOWER-002-D12 | [Wide meridian rib](remaining-palace-kits/pavilion/PAL-TOWER-002-DECOR.png) |
+| PAL-TOWER-002-D13 | [Rib-to-spindle lotus saddle](remaining-palace-kits/pavilion/PAL-TOWER-002-DECOR.png) |
+| PAL-TOWER-002-D14 | [Spindle neck sequence](remaining-palace-kits/pavilion/PAL-TOWER-002-DECOR.png) |
+| PAL-TOWER-002-D15 | [Garland hanging bracket](remaining-palace-kits/pavilion/PAL-TOWER-002-DECOR.png) |
+| PAL-TOWER-002-D16 | [Mitred collar return](remaining-palace-kits/pavilion/PAL-TOWER-002-DECOR.png) |
+| PAL-TOWER-003-S01 | [Tapered petal plinth](remaining-palace-kits/needle/PAL-TOWER-003.png) |
+| PAL-TOWER-003-S02 | [Slender star-glass shaft](remaining-palace-kits/needle/PAL-TOWER-003.png) |
+| PAL-TOWER-003-S03 | [Needle clerestory collar](remaining-palace-kits/needle/PAL-TOWER-003.png) |
+| PAL-TOWER-003-S04 | [Steep violet needle crown](remaining-palace-kits/needle/PAL-TOWER-003.png) |
+| PAL-TOWER-003-D01 | [Shaft lancet frame](remaining-palace-kits/needle/PAL-TOWER-003-DECOR.png) |
+| PAL-TOWER-003-D02 | [Vertical gold mullion](remaining-palace-kits/needle/PAL-TOWER-003-DECOR.png) |
+| PAL-TOWER-003-D03 | [Star-glass insert](remaining-palace-kits/needle/PAL-TOWER-003-DECOR.png) |
+| PAL-TOWER-003-D04 | [Slender engaged shaft pier](remaining-palace-kits/needle/PAL-TOWER-003-DECOR.png) |
+| PAL-TOWER-003-D05 | [Lancet shoulder impost](remaining-palace-kits/needle/PAL-TOWER-003-DECOR.png) |
+| PAL-TOWER-003-D06 | [Triangular plinth face](remaining-palace-kits/needle/PAL-TOWER-003-DECOR.png) |
+| PAL-TOWER-003-D07 | [Petal base relief](remaining-palace-kits/needle/PAL-TOWER-003-DECOR.png) |
+| PAL-TOWER-003-D08 | [Shaft foot leaf clamp](remaining-palace-kits/needle/PAL-TOWER-003-DECOR.png) |
+| PAL-TOWER-003-D09 | [Crown arch surround](remaining-palace-kits/needle/PAL-TOWER-003-DECOR.png) |
+| PAL-TOWER-003-D10 | [Collar cornice repeat](remaining-palace-kits/needle/PAL-TOWER-003-DECOR.png) |
+| PAL-TOWER-003-D11 | [Facet corner cap](remaining-palace-kits/needle/PAL-TOWER-003-DECOR.png) |
+| PAL-TOWER-003-D12 | [Steep roof rib](remaining-palace-kits/needle/PAL-TOWER-003-DECOR.png) |
+| PAL-TOWER-003-D13 | [Needle eave crocket](remaining-palace-kits/needle/PAL-TOWER-003-DECOR.png) |
+| PAL-TOWER-003-D14 | [Spindle neck socket](remaining-palace-kits/needle/PAL-TOWER-003-DECOR.png) |
+| PAL-TOWER-003-D15 | [Pinnacle attachment corbel](remaining-palace-kits/needle/PAL-TOWER-003-DECOR.png) |
+| PAL-TOWER-003-D16 | [Lantern mount collar](remaining-palace-kits/needle/PAL-TOWER-003-DECOR.png) |
+| PAL-TOWER-004-S01 | [Long rose marble support shaft](remaining-palace-kits/belvedere/PAL-TOWER-004.png) |
+| PAL-TOWER-004-S02 | [Floral belt and relief neck](remaining-palace-kits/belvedere/PAL-TOWER-004.png) |
+| PAL-TOWER-004-S03 | [Small arched lookout drum](remaining-palace-kits/belvedere/PAL-TOWER-004.png) |
+| PAL-TOWER-004-S04 | [Compact plum onion canopy](remaining-palace-kits/belvedere/PAL-TOWER-004.png) |
+| PAL-TOWER-004-D01 | [Support shaft pilaster](remaining-palace-kits/belvedere/PAL-TOWER-004-DECOR.png) |
+| PAL-TOWER-004-D02 | [Pilaster foot leaf](remaining-palace-kits/belvedere/PAL-TOWER-004-DECOR.png) |
+| PAL-TOWER-004-D03 | [Pilaster floral head](remaining-palace-kits/belvedere/PAL-TOWER-004-DECOR.png) |
+| PAL-TOWER-004-D04 | [Rose marble shaft panel](remaining-palace-kits/belvedere/PAL-TOWER-004-DECOR.png) |
+| PAL-TOWER-004-D05 | [Floral neck relief panel](remaining-palace-kits/belvedere/PAL-TOWER-004-DECOR.png) |
+| PAL-TOWER-004-D06 | [Neck bead and leaf strip](remaining-palace-kits/belvedere/PAL-TOWER-004-DECOR.png) |
+| PAL-TOWER-004-D07 | [Faceted belt cornice](remaining-palace-kits/belvedere/PAL-TOWER-004-DECOR.png) |
+| PAL-TOWER-004-D08 | [Belt corner return](remaining-palace-kits/belvedere/PAL-TOWER-004-DECOR.png) |
+| PAL-TOWER-004-D09 | [Lookout lancet surround](remaining-palace-kits/belvedere/PAL-TOWER-004-DECOR.png) |
+| PAL-TOWER-004-D10 | [Small blue gallery glass](remaining-palace-kits/belvedere/PAL-TOWER-004-DECOR.png) |
+| PAL-TOWER-004-D11 | [Gallery dwarf column](remaining-palace-kits/belvedere/PAL-TOWER-004-DECOR.png) |
+| PAL-TOWER-004-D12 | [Curved gallery balustrade](remaining-palace-kits/belvedere/PAL-TOWER-004-DECOR.png) |
+| PAL-TOWER-004-D13 | [Onion eave leaf repeat](remaining-palace-kits/belvedere/PAL-TOWER-004-DECOR.png) |
+| PAL-TOWER-004-D14 | [Compact bulb meridian](remaining-palace-kits/belvedere/PAL-TOWER-004-DECOR.png) |
+| PAL-TOWER-004-D15 | [Tall canopy spindle](remaining-palace-kits/belvedere/PAL-TOWER-004-DECOR.png) |
+| PAL-TOWER-004-D16 | [Lantern corbel mount](remaining-palace-kits/belvedere/PAL-TOWER-004-DECOR.png) |
+| PAL-TOWER-005-S01 | [Tall eastern star-glass stem](remaining-palace-kits/spire-pair/PAL-TOWER-005.png) |
+| PAL-TOWER-005-S02 | [Shorter companion glazed stem](remaining-palace-kits/spire-pair/PAL-TOWER-005.png) |
+| PAL-TOWER-005-S03 | [Tall member steep crown](remaining-palace-kits/spire-pair/PAL-TOWER-005.png) |
+| PAL-TOWER-005-S04 | [Companion steep crown](remaining-palace-kits/spire-pair/PAL-TOWER-005.png) |
+| PAL-LOWER-WING-001-S01 | [Straight pointed arcade bay](remaining-palace-kits/lower-wing/PAL-LOWER-WING-001.png) |
+| PAL-LOWER-WING-001-S02 | [Angled wing return bay](remaining-palace-kits/lower-wing/PAL-LOWER-WING-001.png) |
+| PAL-LOWER-WING-001-S03 | [Lower stepped terrace arcade](remaining-palace-kits/lower-wing/PAL-LOWER-WING-001.png) |
+| PAL-LOWER-WING-001-S04 | [Projecting star-window pier](remaining-palace-kits/lower-wing/PAL-LOWER-WING-001.png) |
+| PAL-LOWER-WING-001-D01 | [Angled rail return](remaining-palace-kits/lower-wing/PAL-LOWER-WING-DECOR-001.png) |
+| PAL-LOWER-WING-001-D02 | [Pier-to-rail end block](remaining-palace-kits/lower-wing/PAL-LOWER-WING-DECOR-001.png) |
+| PAL-LOWER-WING-001-D03 | [Star-pier wall saddle](remaining-palace-kits/lower-wing/PAL-LOWER-WING-DECOR-001.png) |
+| PAL-LOWER-WING-001-D04 | [Terrace corner bed coping](remaining-palace-kits/lower-wing/PAL-LOWER-WING-DECOR-001.png) |
+| PAL-LOWER-WING-001-D05 | [Stepped flower-bed edging](remaining-palace-kits/lower-wing/PAL-LOWER-WING-DECOR-001.png) |
+| PAL-LOWER-WING-001-D06 | [Rail end leaf clasp](remaining-palace-kits/lower-wing/PAL-LOWER-WING-DECOR-001.png) |
+| PAL-LOWER-WING-001-D07 | [Stair side coping repeat](remaining-palace-kits/lower-wing/PAL-LOWER-WING-DECOR-001.png) |
+| PAL-LOWER-WING-001-D08 | [Turned stair coping corner](remaining-palace-kits/lower-wing/PAL-LOWER-WING-DECOR-001.png) |
+| PAL-LOWER-WING-001-D09 | [Stair bottom return shoe](remaining-palace-kits/lower-wing/PAL-LOWER-WING-DECOR-001.png) |
+| PAL-LOWER-WING-001-D10 | [Stair head rail transition](remaining-palace-kits/lower-wing/PAL-LOWER-WING-DECOR-001.png) |
+| PAL-LOWER-WING-001-D11 | [Pier plinth front panel](remaining-palace-kits/lower-wing/PAL-LOWER-WING-DECOR-001.png) |
+| PAL-LOWER-WING-001-D12 | [Pier plinth corner fillet](remaining-palace-kits/lower-wing/PAL-LOWER-WING-DECOR-001.png) |
+| PAL-LOWER-WING-001-D13 | [Bed retaining-foot corner](remaining-palace-kits/lower-wing/PAL-LOWER-WING-DECOR-001.png) |
+| PAL-LOWER-WING-001-D14 | [Planter pedestal seat](remaining-palace-kits/lower-wing/PAL-LOWER-WING-DECOR-001.png) |
+| PAL-LOWER-WING-001-D15 | [Stair-end floral relief](remaining-palace-kits/lower-wing/PAL-LOWER-WING-DECOR-001.png) |
+| PAL-LOWER-WING-001-D16 | [Arcade sill mitre return](remaining-palace-kits/lower-wing/PAL-LOWER-WING-DECOR-001.png) |
+| PAL-STAIR-001-S01 | [Straight dry stair flight](remaining-palace-kits/lower-wing/PAL-STAIR-001.png) |
+| PAL-STAIR-001-S02 | [Intermediate landing](remaining-palace-kits/lower-wing/PAL-STAIR-001.png) |
+| PAL-STAIR-001-S03 | [Turning flight and corner landing](remaining-palace-kits/lower-wing/PAL-STAIR-001.png) |
+| PAL-STAIR-001-S04 | [Upper arrival landing](remaining-palace-kits/lower-wing/PAL-STAIR-001.png) |
+| PAL-TOWER-006-S01 | [Royal star-glass shaft](remaining-palace-kits/royal-needle/PAL-TOWER-006.png) |
+| PAL-TOWER-006-S02 | [Royal steep spire crown](remaining-palace-kits/royal-needle/PAL-TOWER-006.png) |
+| PAL-TOWER-006-S03 | [Two-stage companion turret body](remaining-palace-kits/royal-needle/PAL-TOWER-006.png) |
+| PAL-TOWER-006-S04 | [Tall lantern support standard](remaining-palace-kits/royal-needle/PAL-TOWER-006.png) |
+| PAL-TOWER-007-S01 | [Slim star-glass body](remaining-palace-kits/slim-onion/PAL-TOWER-007.png) |
+| PAL-TOWER-007-S02 | [Shallow floral neck collar](remaining-palace-kits/slim-onion/PAL-TOWER-007.png) |
+| PAL-TOWER-007-S03 | [Short blue-lancet gallery](remaining-palace-kits/slim-onion/PAL-TOWER-007.png) |
+| PAL-TOWER-007-S04 | [Narrow onion crown and spindle](remaining-palace-kits/slim-onion/PAL-TOWER-007.png) |

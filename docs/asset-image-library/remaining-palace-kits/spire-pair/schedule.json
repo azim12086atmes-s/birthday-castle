@@ -1,0 +1,165 @@
+{
+  "family": "Eastern unequal spire pair",
+  "key": "spire-pair",
+  "source_front_authority": "GEN-37",
+  "source_reference_id": "SRC-PAL-TOWER-005",
+  "source_reference_file": "remaining-palace-kits/spire-pair/original-source.png",
+  "source_reference_sha256": "70a56b8598c2c27830574876c5151d0d202e43618e334d07583683e03e8919d1",
+  "generation_reference_path": "/workspace/shared/palace-tower-screenshot-review/eastern-pair-source.png",
+  "scope": "Modular sketch references only, no Blender models",
+  "source_boxes_status": "Direct visible-front region guides; not object masks or measured building dimensions",
+  "section_connections": "Two independent vertical joins only: S01\u2192S03 at J-A, S02\u2192S04 at J-B. The members remain horizontally offset, not stacked into one tower. Each crown underside matches its own stem top; front facets aligned. Connecting gallery/terrace is a separate wall component.",
+  "parts": [
+    {
+      "asset_id": "PAL-TOWER-005-S01",
+      "name": "Tall eastern star-glass stem",
+      "description": "The taller pair member: long very slim blue/lilac/pink glazed shaft with two vertical star emblems, fine ivory engaged ribs, source short pointed collar, small lower blue-glass support stage beneath its floral belt. Preserve long needle proportions. Tiny attachment seats remain; lantern bodies are separate.",
+      "source_box_xyxy": [
+        0,
+        110,
+        80,
+        435
+      ],
+      "model_status": "unregistered",
+      "review_status": "pending",
+      "source_reference_id": "SRC-PAL-TOWER-005-S01",
+      "source_reference_file": "remaining-palace-kits/spire-pair/source-sections/PAL-TOWER-005-S01.png",
+      "source_reference_sha256": "08a9831f350198109b69337c4c6cd8ef410d1fae7acfabcb1de0d7ae7b2acf8b",
+      "reuse_component_ids": [
+        "PAL-TOWER-003-D01",
+        "PAL-TOWER-003-D03",
+        "PAL-TOWER-003-D09",
+        "PAL-TOWER-003-D12",
+        "PAL-TOWER-003-D15",
+        "PAL-TOWER-001-D13",
+        "PAL-TOWER-001-D14",
+        "PAL-TOWER-001-D15",
+        "PAL-TOWER-001-D16"
+      ]
+    },
+    {
+      "asset_id": "PAL-TOWER-005-S02",
+      "name": "Shorter companion glazed stem",
+      "description": "The right-hand narrower companion is visibly shorter, with one long blue pointed light, rose/ivory ribs and short gold/ivory collar. Source small offset subsidiary pinnacle and lower support/junction are allowed only where visible. Do not duplicate the tall member at equal height.",
+      "source_box_xyxy": [
+        63,
+        215,
+        135,
+        475
+      ],
+      "model_status": "unregistered",
+      "review_status": "pending",
+      "source_reference_id": "SRC-PAL-TOWER-005-S02",
+      "source_reference_file": "remaining-palace-kits/spire-pair/source-sections/PAL-TOWER-005-S02.png",
+      "source_reference_sha256": "4d52ca221d4a1239aeb47e3e33e5ad9e1b8f71239c22d5af677982f354958c84",
+      "reuse_component_ids": [
+        "PAL-TOWER-003-D01",
+        "PAL-TOWER-003-D03",
+        "PAL-TOWER-003-D09",
+        "PAL-TOWER-003-D12",
+        "PAL-TOWER-003-D15",
+        "PAL-TOWER-001-D13",
+        "PAL-TOWER-001-D14",
+        "PAL-TOWER-001-D15",
+        "PAL-TOWER-001-D16"
+      ]
+    },
+    {
+      "asset_id": "PAL-TOWER-005-S03",
+      "name": "Tall member steep crown",
+      "description": "Slender plum/violet steep roof, thin gold ribs, small gold eave leaf crests and the source delicate star spindle, matching S01 collar profile.",
+      "source_box_xyxy": [
+        0,
+        0,
+        75,
+        125
+      ],
+      "model_status": "unregistered",
+      "review_status": "pending",
+      "source_reference_id": "SRC-PAL-TOWER-005-S03",
+      "source_reference_file": "remaining-palace-kits/spire-pair/source-sections/PAL-TOWER-005-S03.png",
+      "source_reference_sha256": "88f4b2b215d496ef5e49abd6931a4e1f6b403c9a23a1c09e653647576d36c7a9",
+      "reuse_component_ids": [
+        "PAL-TOWER-003-D01",
+        "PAL-TOWER-003-D03",
+        "PAL-TOWER-003-D09",
+        "PAL-TOWER-003-D12",
+        "PAL-TOWER-003-D15",
+        "PAL-TOWER-001-D13",
+        "PAL-TOWER-001-D14",
+        "PAL-TOWER-001-D15",
+        "PAL-TOWER-001-D16"
+      ]
+    },
+    {
+      "asset_id": "PAL-TOWER-005-S04",
+      "name": "Companion steep crown",
+      "description": "Shorter narrow steep violet roof with gold ribs and source delicate spindle, matching S02 smaller crown collar, not the taller cone copied at the same scale.",
+      "source_box_xyxy": [
+        57,
+        122,
+        123,
+        235
+      ],
+      "model_status": "unregistered",
+      "review_status": "pending",
+      "source_reference_id": "SRC-PAL-TOWER-005-S04",
+      "source_reference_file": "remaining-palace-kits/spire-pair/source-sections/PAL-TOWER-005-S04.png",
+      "source_reference_sha256": "4e9842e023ba22f03db9485fca880e5cb5a0655a15f56a24a59b92109711c6d3",
+      "reuse_component_ids": [
+        "PAL-TOWER-003-D01",
+        "PAL-TOWER-003-D03",
+        "PAL-TOWER-003-D09",
+        "PAL-TOWER-003-D12",
+        "PAL-TOWER-003-D15",
+        "PAL-TOWER-001-D13",
+        "PAL-TOWER-001-D14",
+        "PAL-TOWER-001-D15",
+        "PAL-TOWER-001-D16"
+      ]
+    }
+  ],
+  "decor": [],
+  "prompts": {
+    "structure": "Use the SINGLE supplied original GEN-37 crop as the visible design authority. Other existing component studies only support construction/ornament vocabulary. Maintain rose/ivory veined marble, source blue/lilac/pink glass, fine muted polished gold, plum-violet roof surfaces. Clean restrained nearly frontal orthographic technical product view with enough depth to see interfaces; whole uncropped models on clean warm-white paper/studio background. Preserve visible relative proportions and asymmetric offsets; infer only unseen backs, support faces and join undersides conservatively. No complete palace or redesigned tower, no scene, people, extra background buildings or plants unless a planting asset is explicitly requested. All pieces separated, no neighbor fusion. Labels below objects, not embedded on surfaces. Exactly the requested item count. Straight columns remain straight, arches regular, curved strips smooth and single, no melted curls, warped faces or gratuitous extra spikes. Preserve fine source details without exaggerating their size.\nTitle: PAL-TOWER-005 \u2014 Eastern unequal spire pair sections. Create exactly FOUR isolated structural sections in a clear 2-by-2 grid. MUST PRINT a title above the grid and the COMPLETE asset ID AND short part name below each object; neither IDs alone nor names alone are sufficient. This is exactly the TWO unequal right-hand needles from the source. Four isolated components: two stems with their source lower supports/collars and their two matching crowns. Keep height contrast and different diameters. Exclude other large neighboring towers. Reuse PAL-TOWER-003-DECOR and terminal lantern/finial details; no new decor sheet.\nTwo independent vertical joins only: S01\u2192S03 at J-A, S02\u2192S04 at J-B. The members remain horizontally offset, not stacked into one tower. Each crown underside matches its own stem top; front facets aligned. Connecting gallery/terrace is a separate wall component.\nPAL-TOWER-005-S01 \u2014 Tall eastern star-glass stem: The taller pair member: long very slim blue/lilac/pink glazed shaft with two vertical star emblems, fine ivory engaged ribs, source short pointed collar, small lower blue-glass support stage beneath its floral belt. Preserve long needle proportions. Tiny attachment seats remain; lantern bodies are separate.\nPAL-TOWER-005-S02 \u2014 Shorter companion glazed stem: The right-hand narrower companion is visibly shorter, with one long blue pointed light, rose/ivory ribs and short gold/ivory collar. Source small offset subsidiary pinnacle and lower support/junction are allowed only where visible. Do not duplicate the tall member at equal height.\nPAL-TOWER-005-S03 \u2014 Tall member steep crown: Slender plum/violet steep roof, thin gold ribs, small gold eave leaf crests and the source delicate star spindle, matching S01 collar profile.\nPAL-TOWER-005-S04 \u2014 Companion steep crown: Shorter narrow steep violet roof with gold ribs and source delicate spindle, matching S02 smaller crown collar, not the taller cone copied at the same scale.\nKeep small reused ornament installed for source appearance, but detachable decor belongs to the corresponding detail pack. Do not bake neighboring towers, plants or hanging lantern bodies into these modules. Common mating profile and front-facing facet orientation wherever two vertical sections stack; section cut planes follow the source stone bands. Mark small J labels at mating rims. No industrial joints, mechanical plugs or added hidden floors. Displayed pixel dimensions are illustrative; visible original crop proportions remain master."
+  },
+  "outputs": [
+    {
+      "sheet_id": "PAL-TOWER-005",
+      "kind": "structure",
+      "file": "remaining-palace-kits/spire-pair/PAL-TOWER-005.png",
+      "sha256": "bbc3bf79a326581899f2e0ee02bba91c12afaf72e2813e8b1d277b4e81a4eef6",
+      "original_file": "/workspace/generated_images/exec-68ceee05-7e55-41d2-8686-61b5f279626c.png",
+      "source_reference_id": "SRC-PAL-TOWER-005",
+      "source_reference_sha256": "70a56b8598c2c27830574876c5151d0d202e43618e334d07583683e03e8919d1",
+      "prompt_key": "structure",
+      "generator": "image_gen.imagegen",
+      "review_status": "pending-user-review",
+      "actual_generation_input_file": "remaining-palace-kits/spire-pair/original-source.png",
+      "actual_generation_input_sha256": "70a56b8598c2c27830574876c5151d0d202e43618e334d07583683e03e8919d1"
+    }
+  ],
+  "shared_decor_id": "PAL-TOWER-003-DECOR",
+  "shared_common_ids": [
+    "PAL-TOWER-001-D13",
+    "PAL-TOWER-001-D14",
+    "PAL-TOWER-001-D15",
+    "PAL-TOWER-001-D16"
+  ],
+  "limits": "Hidden backs/profile dimensions inferred. Actual model fit unverified. Original front determines visible design.",
+  "review_notes": [
+    "Lanterns shown on the stems are installation context for existing detachable parts; do not fuse them into meshes. Main/companion heights remain distinct. Resolve collar overlap at crown join before modeling."
+  ],
+  "review_status": "pending-user-reference-review",
+  "models_generated": 0,
+  "actual_3D_joint_fit_verified": false,
+  "part_scales": "Independent drawing scales, not measured manufacturing dimensions",
+  "existing_board_reuse": [
+    "GEN-17",
+    "GEN-32",
+    "GEN-38",
+    "GEN-41",
+    "GEN-44",
+    "GEN-45"
+  ]
+}

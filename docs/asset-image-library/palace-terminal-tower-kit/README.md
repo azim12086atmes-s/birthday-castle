@@ -1,5 +1,7 @@
 # Western terminal tower: first screenshot family
 
+The remaining supplied screenshot families now have [their own indexed draft kits](../remaining-palace-kits/index.html). This page records the earlier terminal family only.
+
 This pass covers **only the first terminal onion-dome tower**. The owner clarified that the deliverables are component sketch sheets, not Blender models, and requested one family at a time with a matching decor sheet.
 
 The original [tower crop](../images/reference-crops-and-studies/T04-2bad18defb6a.png) is the visible design authority. Its pixels are identical to the corresponding GEN-37 crop. The repeated broad pavilion screenshots are another family and have not been generated in this pass.

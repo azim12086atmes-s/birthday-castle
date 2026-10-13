@@ -1,8 +1,8 @@
 {
   "date": "2026-10-13",
-  "distinct_image_count": 630,
-  "source_file_count": 887,
-  "total_bytes": 593575783,
+  "distinct_image_count": 683,
+  "source_file_count": 940,
+  "total_bytes": 634852655,
   "categories": {
     "additional-generated-studies": 33,
     "component-development-studies": 3,
@@ -16,6 +16,10 @@
     "palace-front-and-entrance-corrections": 2,
     "palace-layer-reference-sheets": 4,
     "palace-roof-layouts": 1,
+    "palace-screenshot-component-kits": 12,
+    "palace-screenshot-rejected-drafts": 9,
+    "palace-screenshot-source-crops": 4,
+    "palace-screenshot-source-sections": 28,
     "palace-structural-studies": 1,
     "palace-structure-drafts": 10,
     "palace-wall-input-crops": 3,
@@ -12491,6 +12495,1225 @@
         "REF-2BAD18DEFB6A"
       ],
       "label": "DRAFT-PAL-TOWER-001-R01 \u2014 Terminal section study \u2014 rejected relative proportions"
+    },
+    {
+      "id": "SRC-PAL-TOWER-002-S01",
+      "label": "SRC-PAL-TOWER-002-S01 \u2014 Broad faceted window body \u2014 original visible section guide",
+      "title": "Broad faceted window body \u2014 original visible section guide",
+      "category": "palace-screenshot-source-sections",
+      "file": "remaining-palace-kits/pavilion/source-sections/PAL-TOWER-002-S01.png",
+      "sha256": "acbfc9ea83c7a762d42f476d5b757b23a08860f4a92d2b039f7366ad0676effe",
+      "bytes": 60301,
+      "source_aliases": [],
+      "alias_ids": [],
+      "component_ids": [
+        "PAL-TOWER-002-S01"
+      ],
+      "reference_role": "direct-source-section-crop",
+      "review_status": "source-reference",
+      "design_status": "Direct original front pixels. Bounds are overlapping region guides, not object masks or measured solid geometry.",
+      "related_image_ids": [
+        "REF-9F4D290C4C4D",
+        "GEN-37"
+      ]
+    },
+    {
+      "id": "SRC-PAL-TOWER-002-S02",
+      "label": "SRC-PAL-TOWER-002-S02 \u2014 Terrace collar and wing junction \u2014 original visible section guide",
+      "title": "Terrace collar and wing junction \u2014 original visible section guide",
+      "category": "palace-screenshot-source-sections",
+      "file": "remaining-palace-kits/pavilion/source-sections/PAL-TOWER-002-S02.png",
+      "sha256": "0ff944a1320e81745004a90f2cd001081de15a427f73cc624b536d1504e71697",
+      "bytes": 11319,
+      "source_aliases": [],
+      "alias_ids": [],
+      "component_ids": [
+        "PAL-TOWER-002-S02"
+      ],
+      "reference_role": "direct-source-section-crop",
+      "review_status": "source-reference",
+      "design_status": "Direct original front pixels. Bounds are overlapping region guides, not object masks or measured solid geometry.",
+      "related_image_ids": [
+        "REF-9F4D290C4C4D",
+        "GEN-37"
+      ]
+    },
+    {
+      "id": "SRC-PAL-TOWER-002-S03",
+      "label": "SRC-PAL-TOWER-002-S03 \u2014 Broad arched dome drum \u2014 original visible section guide",
+      "title": "Broad arched dome drum \u2014 original visible section guide",
+      "category": "palace-screenshot-source-sections",
+      "file": "remaining-palace-kits/pavilion/source-sections/PAL-TOWER-002-S03.png",
+      "sha256": "ee0f6e2fd8395250e528945394fbb2f2e4d30cb2ca1d615665b390c19fe54cd6",
+      "bytes": 41411,
+      "source_aliases": [],
+      "alias_ids": [],
+      "component_ids": [
+        "PAL-TOWER-002-S03"
+      ],
+      "reference_role": "direct-source-section-crop",
+      "review_status": "source-reference",
+      "design_status": "Direct original front pixels. Bounds are overlapping region guides, not object masks or measured solid geometry.",
+      "related_image_ids": [
+        "REF-9F4D290C4C4D",
+        "GEN-37"
+      ]
+    },
+    {
+      "id": "SRC-PAL-TOWER-002-S04",
+      "label": "SRC-PAL-TOWER-002-S04 \u2014 Wide onion crown and spindle \u2014 original visible section guide",
+      "title": "Wide onion crown and spindle \u2014 original visible section guide",
+      "category": "palace-screenshot-source-sections",
+      "file": "remaining-palace-kits/pavilion/source-sections/PAL-TOWER-002-S04.png",
+      "sha256": "6924780ca5529435d9dfcc51fd69a324d08928f7be4324aca7d006e6ae7d0b30",
+      "bytes": 65527,
+      "source_aliases": [],
+      "alias_ids": [],
+      "component_ids": [
+        "PAL-TOWER-002-S04"
+      ],
+      "reference_role": "direct-source-section-crop",
+      "review_status": "source-reference",
+      "design_status": "Direct original front pixels. Bounds are overlapping region guides, not object masks or measured solid geometry.",
+      "related_image_ids": [
+        "REF-9F4D290C4C4D",
+        "GEN-37"
+      ]
+    },
+    {
+      "id": "PAL-TOWER-002",
+      "label": "PAL-TOWER-002 \u2014 Broad western domed pavilion \u2014 four joinable sections",
+      "title": "Broad western domed pavilion \u2014 four joinable sections",
+      "category": "palace-screenshot-component-kits",
+      "file": "remaining-palace-kits/pavilion/PAL-TOWER-002.png",
+      "sha256": "7198e83e31d8392b4260c5371c93a6a9478df802dc42203b0d95a327f6eb0c13",
+      "bytes": 2102544,
+      "source_aliases": [
+        "/workspace/generated_images/exec-61f716c6-99d9-4d1b-b3e2-7dfe61671e2a.png"
+      ],
+      "alias_ids": [],
+      "component_ids": [
+        "PAL-TOWER-002-S01",
+        "PAL-TOWER-002-S02",
+        "PAL-TOWER-002-S03",
+        "PAL-TOWER-002-S04"
+      ],
+      "reference_role": "source-derived-component-reference",
+      "review_status": "pending-user-review",
+      "design_status": "Original source controls visible contours; hidden profiles and model fitting remain proposed",
+      "related_image_ids": [
+        "REF-9F4D290C4C4D",
+        "GEN-37"
+      ]
+    },
+    {
+      "id": "PAL-TOWER-002-DECOR",
+      "label": "PAL-TOWER-002-DECOR \u2014 Broad western domed pavilion \u2014 sixteen detail fittings",
+      "title": "Broad western domed pavilion \u2014 sixteen detail fittings",
+      "category": "palace-screenshot-component-kits",
+      "file": "remaining-palace-kits/pavilion/PAL-TOWER-002-DECOR.png",
+      "sha256": "8c4aa329c720d7a4c41d1e7a9e193b6431edaf0dc20543fcceb2e26555720adb",
+      "bytes": 2053665,
+      "source_aliases": [
+        "/workspace/generated_images/exec-3706e888-6cd9-44bf-a872-388959f1009f.png"
+      ],
+      "alias_ids": [],
+      "component_ids": [
+        "PAL-TOWER-002-D01",
+        "PAL-TOWER-002-D02",
+        "PAL-TOWER-002-D03",
+        "PAL-TOWER-002-D04",
+        "PAL-TOWER-002-D05",
+        "PAL-TOWER-002-D06",
+        "PAL-TOWER-002-D07",
+        "PAL-TOWER-002-D08",
+        "PAL-TOWER-002-D09",
+        "PAL-TOWER-002-D10",
+        "PAL-TOWER-002-D11",
+        "PAL-TOWER-002-D12",
+        "PAL-TOWER-002-D13",
+        "PAL-TOWER-002-D14",
+        "PAL-TOWER-002-D15",
+        "PAL-TOWER-002-D16"
+      ],
+      "reference_role": "source-derived-component-reference",
+      "review_status": "pending-user-review",
+      "design_status": "Original source controls visible contours; hidden profiles and model fitting remain proposed",
+      "related_image_ids": [
+        "REF-9F4D290C4C4D",
+        "GEN-37"
+      ]
+    },
+    {
+      "id": "DRAFT-PAL-TOWER-002-R01",
+      "label": "DRAFT-PAL-TOWER-002-R01 \u2014 PAL-TOWER-002 \u2014 superseded study",
+      "title": "PAL-TOWER-002 \u2014 superseded study",
+      "category": "palace-screenshot-rejected-drafts",
+      "file": "remaining-palace-kits/pavilion/rejected-drafts/PAL-TOWER-002-R01.png",
+      "sha256": "99dbaa7f43420c9e625f0a086b570792832050c6a149f40ab82b42fe20b969d5",
+      "bytes": 2065353,
+      "source_aliases": [
+        "/workspace/generated_images/exec-f493426c-876a-410e-99cf-8a3685112e0f.png"
+      ],
+      "alias_ids": [],
+      "component_ids": [],
+      "reference_role": "superseded-generated-study",
+      "review_status": "superseded",
+      "design_status": "superseded-for-missing-part-names",
+      "related_image_ids": [
+        "PAL-TOWER-002",
+        "REF-9F4D290C4C4D"
+      ]
+    },
+    {
+      "id": "DRAFT-PAL-TOWER-002-DECOR-R01",
+      "label": "DRAFT-PAL-TOWER-002-DECOR-R01 \u2014 PAL-TOWER-002-DECOR \u2014 superseded study",
+      "title": "PAL-TOWER-002-DECOR \u2014 superseded study",
+      "category": "palace-screenshot-rejected-drafts",
+      "file": "remaining-palace-kits/pavilion/rejected-drafts/PAL-TOWER-002-DECOR-R01.png",
+      "sha256": "eabaa4dce5b6131c3d9b0fd1d2455c5f2424d32a4df25ec82fd8b53b54562a48",
+      "bytes": 2112352,
+      "source_aliases": [
+        "/workspace/generated_images/exec-829ff048-a981-4ef1-9b64-47a70181cae7.png"
+      ],
+      "alias_ids": [],
+      "component_ids": [],
+      "reference_role": "superseded-generated-study",
+      "review_status": "superseded",
+      "design_status": "superseded-oversized-tip-saddle-and-ornament-shapes",
+      "related_image_ids": [
+        "PAL-TOWER-002-DECOR",
+        "REF-9F4D290C4C4D"
+      ]
+    },
+    {
+      "id": "SRC-PAL-TOWER-003-S01",
+      "label": "SRC-PAL-TOWER-003-S01 \u2014 Tapered petal plinth \u2014 original visible section guide",
+      "title": "Tapered petal plinth \u2014 original visible section guide",
+      "category": "palace-screenshot-source-sections",
+      "file": "remaining-palace-kits/needle/source-sections/PAL-TOWER-003-S01.png",
+      "sha256": "0685c21ba16534dbae6ce8ab723a7b62f30bac29c32649fbbd6f2f74ded99d3d",
+      "bytes": 19350,
+      "source_aliases": [],
+      "alias_ids": [],
+      "component_ids": [
+        "PAL-TOWER-003-S01"
+      ],
+      "reference_role": "direct-source-section-crop",
+      "review_status": "source-reference",
+      "design_status": "Direct original front pixels. Bounds are overlapping region guides, not object masks or measured solid geometry.",
+      "related_image_ids": [
+        "REF-9733E91F9610",
+        "GEN-37"
+      ]
+    },
+    {
+      "id": "SRC-PAL-TOWER-003-S02",
+      "label": "SRC-PAL-TOWER-003-S02 \u2014 Slender star-glass shaft \u2014 original visible section guide",
+      "title": "Slender star-glass shaft \u2014 original visible section guide",
+      "category": "palace-screenshot-source-sections",
+      "file": "remaining-palace-kits/needle/source-sections/PAL-TOWER-003-S02.png",
+      "sha256": "9c4fb06e9a44c3d0cd38377cad785d8b873d58f3090ea3690b69f6b53c81aab8",
+      "bytes": 20472,
+      "source_aliases": [],
+      "alias_ids": [],
+      "component_ids": [
+        "PAL-TOWER-003-S02"
+      ],
+      "reference_role": "direct-source-section-crop",
+      "review_status": "source-reference",
+      "design_status": "Direct original front pixels. Bounds are overlapping region guides, not object masks or measured solid geometry.",
+      "related_image_ids": [
+        "REF-9733E91F9610",
+        "GEN-37"
+      ]
+    },
+    {
+      "id": "SRC-PAL-TOWER-003-S03",
+      "label": "SRC-PAL-TOWER-003-S03 \u2014 Needle clerestory collar \u2014 original visible section guide",
+      "title": "Needle clerestory collar \u2014 original visible section guide",
+      "category": "palace-screenshot-source-sections",
+      "file": "remaining-palace-kits/needle/source-sections/PAL-TOWER-003-S03.png",
+      "sha256": "4aaaa0392ef336ab36cd92d3b4870a876b7b18c2d569090adb568fa8b78c6269",
+      "bytes": 5615,
+      "source_aliases": [],
+      "alias_ids": [],
+      "component_ids": [
+        "PAL-TOWER-003-S03"
+      ],
+      "reference_role": "direct-source-section-crop",
+      "review_status": "source-reference",
+      "design_status": "Direct original front pixels. Bounds are overlapping region guides, not object masks or measured solid geometry.",
+      "related_image_ids": [
+        "REF-9733E91F9610",
+        "GEN-37"
+      ]
+    },
+    {
+      "id": "SRC-PAL-TOWER-003-S04",
+      "label": "SRC-PAL-TOWER-003-S04 \u2014 Steep violet needle crown \u2014 original visible section guide",
+      "title": "Steep violet needle crown \u2014 original visible section guide",
+      "category": "palace-screenshot-source-sections",
+      "file": "remaining-palace-kits/needle/source-sections/PAL-TOWER-003-S04.png",
+      "sha256": "3dd29c13ea873ca6af305974b341eb54c3a3fd672b7ca70e35644f41d386cf91",
+      "bytes": 10294,
+      "source_aliases": [],
+      "alias_ids": [],
+      "component_ids": [
+        "PAL-TOWER-003-S04"
+      ],
+      "reference_role": "direct-source-section-crop",
+      "review_status": "source-reference",
+      "design_status": "Direct original front pixels. Bounds are overlapping region guides, not object masks or measured solid geometry.",
+      "related_image_ids": [
+        "REF-9733E91F9610",
+        "GEN-37"
+      ]
+    },
+    {
+      "id": "PAL-TOWER-003",
+      "label": "PAL-TOWER-003 \u2014 Slender western needle \u2014 four joinable sections",
+      "title": "Slender western needle \u2014 four joinable sections",
+      "category": "palace-screenshot-component-kits",
+      "file": "remaining-palace-kits/needle/PAL-TOWER-003.png",
+      "sha256": "a1c9c37bb27123c23f93417069a817d430a7ffee83400c616ac96bc045606898",
+      "bytes": 1761741,
+      "source_aliases": [
+        "/workspace/generated_images/exec-1b8a3cf5-070f-4d5f-ace6-aaa048b44522.png"
+      ],
+      "alias_ids": [],
+      "component_ids": [
+        "PAL-TOWER-003-S01",
+        "PAL-TOWER-003-S02",
+        "PAL-TOWER-003-S03",
+        "PAL-TOWER-003-S04"
+      ],
+      "reference_role": "source-derived-component-reference",
+      "review_status": "pending-user-review",
+      "design_status": "Original source controls visible contours; hidden profiles and model fitting remain proposed",
+      "related_image_ids": [
+        "REF-9733E91F9610",
+        "GEN-37"
+      ]
+    },
+    {
+      "id": "PAL-TOWER-003-DECOR",
+      "label": "PAL-TOWER-003-DECOR \u2014 Slender western needle \u2014 sixteen detail fittings",
+      "title": "Slender western needle \u2014 sixteen detail fittings",
+      "category": "palace-screenshot-component-kits",
+      "file": "remaining-palace-kits/needle/PAL-TOWER-003-DECOR.png",
+      "sha256": "ce866d4fac50cf34e9e3386e2d5b1122211b1e2d5bc3817a0640c7c4aa1abcd8",
+      "bytes": 1909513,
+      "source_aliases": [
+        "/workspace/generated_images/exec-6f1af78f-8ca0-4e2d-98f5-b9b443505349.png"
+      ],
+      "alias_ids": [],
+      "component_ids": [
+        "PAL-TOWER-003-D01",
+        "PAL-TOWER-003-D02",
+        "PAL-TOWER-003-D03",
+        "PAL-TOWER-003-D04",
+        "PAL-TOWER-003-D05",
+        "PAL-TOWER-003-D06",
+        "PAL-TOWER-003-D07",
+        "PAL-TOWER-003-D08",
+        "PAL-TOWER-003-D09",
+        "PAL-TOWER-003-D10",
+        "PAL-TOWER-003-D11",
+        "PAL-TOWER-003-D12",
+        "PAL-TOWER-003-D13",
+        "PAL-TOWER-003-D14",
+        "PAL-TOWER-003-D15",
+        "PAL-TOWER-003-D16"
+      ],
+      "reference_role": "source-derived-component-reference",
+      "review_status": "pending-user-review",
+      "design_status": "Original source controls visible contours; hidden profiles and model fitting remain proposed",
+      "related_image_ids": [
+        "REF-9733E91F9610",
+        "GEN-37"
+      ]
+    },
+    {
+      "id": "DRAFT-PAL-TOWER-003-R01",
+      "label": "DRAFT-PAL-TOWER-003-R01 \u2014 PAL-TOWER-003 \u2014 superseded study",
+      "title": "PAL-TOWER-003 \u2014 superseded study",
+      "category": "palace-screenshot-rejected-drafts",
+      "file": "remaining-palace-kits/needle/rejected-drafts/PAL-TOWER-003-R01.png",
+      "sha256": "be3f39bd2d6478413996f914e6e8754dd3ad323b816c66d86770a7dd762c6e54",
+      "bytes": 1817773,
+      "source_aliases": [
+        "/workspace/generated_images/exec-0482d1c7-bbd4-43c3-9383-a0dd2ba0a9ee.png"
+      ],
+      "alias_ids": [],
+      "component_ids": [],
+      "reference_role": "superseded-generated-study",
+      "review_status": "superseded",
+      "design_status": "superseded-extra-crown-tier",
+      "related_image_ids": [
+        "PAL-TOWER-003",
+        "REF-9733E91F9610"
+      ]
+    },
+    {
+      "id": "DRAFT-PAL-TOWER-003-DECOR-R01",
+      "label": "DRAFT-PAL-TOWER-003-DECOR-R01 \u2014 PAL-TOWER-003-DECOR \u2014 superseded study",
+      "title": "PAL-TOWER-003-DECOR \u2014 superseded study",
+      "category": "palace-screenshot-rejected-drafts",
+      "file": "remaining-palace-kits/needle/rejected-drafts/PAL-TOWER-003-DECOR-R01.png",
+      "sha256": "ec224e0f978ac4def9c6993046e1e423b01ff06bfd5aaa62848d071dd5951996",
+      "bytes": 1751989,
+      "source_aliases": [
+        "/workspace/generated_images/exec-7a95abd7-8973-4fcb-b176-4d5058555aae.png"
+      ],
+      "alias_ids": [],
+      "component_ids": [],
+      "reference_role": "superseded-generated-study",
+      "review_status": "superseded",
+      "design_status": "superseded-rib-became-whole-cone-and-mount-oversized",
+      "related_image_ids": [
+        "PAL-TOWER-003-DECOR",
+        "REF-9733E91F9610"
+      ]
+    },
+    {
+      "id": "SRC-PAL-TOWER-004-S01",
+      "label": "SRC-PAL-TOWER-004-S01 \u2014 Long rose marble support shaft \u2014 original visible section guide",
+      "title": "Long rose marble support shaft \u2014 original visible section guide",
+      "category": "palace-screenshot-source-sections",
+      "file": "remaining-palace-kits/belvedere/source-sections/PAL-TOWER-004-S01.png",
+      "sha256": "3021522d9d946dc28e371ef6b7bf19cf6eb07d3783262052bea4e81a3d7cd127",
+      "bytes": 28432,
+      "source_aliases": [],
+      "alias_ids": [],
+      "component_ids": [
+        "PAL-TOWER-004-S01"
+      ],
+      "reference_role": "direct-source-section-crop",
+      "review_status": "source-reference",
+      "design_status": "Direct original front pixels. Bounds are overlapping region guides, not object masks or measured solid geometry.",
+      "related_image_ids": [
+        "REF-48132B5FA126",
+        "GEN-37"
+      ]
+    },
+    {
+      "id": "SRC-PAL-TOWER-004-S02",
+      "label": "SRC-PAL-TOWER-004-S02 \u2014 Floral belt and relief neck \u2014 original visible section guide",
+      "title": "Floral belt and relief neck \u2014 original visible section guide",
+      "category": "palace-screenshot-source-sections",
+      "file": "remaining-palace-kits/belvedere/source-sections/PAL-TOWER-004-S02.png",
+      "sha256": "db701a9dc0abbdeae621732a7c506a56ffc3443042670f4a80b7e5ed372e788b",
+      "bytes": 13474,
+      "source_aliases": [],
+      "alias_ids": [],
+      "component_ids": [
+        "PAL-TOWER-004-S02"
+      ],
+      "reference_role": "direct-source-section-crop",
+      "review_status": "source-reference",
+      "design_status": "Direct original front pixels. Bounds are overlapping region guides, not object masks or measured solid geometry.",
+      "related_image_ids": [
+        "REF-48132B5FA126",
+        "GEN-37"
+      ]
+    },
+    {
+      "id": "SRC-PAL-TOWER-004-S03",
+      "label": "SRC-PAL-TOWER-004-S03 \u2014 Small arched lookout drum \u2014 original visible section guide",
+      "title": "Small arched lookout drum \u2014 original visible section guide",
+      "category": "palace-screenshot-source-sections",
+      "file": "remaining-palace-kits/belvedere/source-sections/PAL-TOWER-004-S03.png",
+      "sha256": "dd819e37a177d865adcd0efab30937dd4e57252abd9a5794d09740af54579a04",
+      "bytes": 22012,
+      "source_aliases": [],
+      "alias_ids": [],
+      "component_ids": [
+        "PAL-TOWER-004-S03"
+      ],
+      "reference_role": "direct-source-section-crop",
+      "review_status": "source-reference",
+      "design_status": "Direct original front pixels. Bounds are overlapping region guides, not object masks or measured solid geometry.",
+      "related_image_ids": [
+        "REF-48132B5FA126",
+        "GEN-37"
+      ]
+    },
+    {
+      "id": "SRC-PAL-TOWER-004-S04",
+      "label": "SRC-PAL-TOWER-004-S04 \u2014 Compact plum onion canopy \u2014 original visible section guide",
+      "title": "Compact plum onion canopy \u2014 original visible section guide",
+      "category": "palace-screenshot-source-sections",
+      "file": "remaining-palace-kits/belvedere/source-sections/PAL-TOWER-004-S04.png",
+      "sha256": "eb7a8df7d7d8ac4873e243da38acb7eed74298fc2c2f12428f81e6c204c2102f",
+      "bytes": 37352,
+      "source_aliases": [],
+      "alias_ids": [],
+      "component_ids": [
+        "PAL-TOWER-004-S04"
+      ],
+      "reference_role": "direct-source-section-crop",
+      "review_status": "source-reference",
+      "design_status": "Direct original front pixels. Bounds are overlapping region guides, not object masks or measured solid geometry.",
+      "related_image_ids": [
+        "REF-48132B5FA126",
+        "GEN-37"
+      ]
+    },
+    {
+      "id": "PAL-TOWER-004",
+      "label": "PAL-TOWER-004 \u2014 Eastern projecting onion belvedere \u2014 four joinable sections",
+      "title": "Eastern projecting onion belvedere \u2014 four joinable sections",
+      "category": "palace-screenshot-component-kits",
+      "file": "remaining-palace-kits/belvedere/PAL-TOWER-004.png",
+      "sha256": "6e1390b08a11b97dd5c044e2b7cf3ddbf6495751dcce93bad5f0584f98301d15",
+      "bytes": 2003170,
+      "source_aliases": [
+        "/workspace/generated_images/exec-5a4dbd5b-ee68-4fc9-9b69-db8bd2e05847.png"
+      ],
+      "alias_ids": [],
+      "component_ids": [
+        "PAL-TOWER-004-S01",
+        "PAL-TOWER-004-S02",
+        "PAL-TOWER-004-S03",
+        "PAL-TOWER-004-S04"
+      ],
+      "reference_role": "source-derived-component-reference",
+      "review_status": "pending-user-review",
+      "design_status": "Original source controls visible contours; hidden profiles and model fitting remain proposed",
+      "related_image_ids": [
+        "REF-48132B5FA126",
+        "GEN-37"
+      ]
+    },
+    {
+      "id": "PAL-TOWER-004-DECOR",
+      "label": "PAL-TOWER-004-DECOR \u2014 Eastern projecting onion belvedere \u2014 sixteen detail fittings",
+      "title": "Eastern projecting onion belvedere \u2014 sixteen detail fittings",
+      "category": "palace-screenshot-component-kits",
+      "file": "remaining-palace-kits/belvedere/PAL-TOWER-004-DECOR.png",
+      "sha256": "70607714cd79cd8d859fc1bb6872084f21f1ba85a73b14d8b5c6d5d87efc10ea",
+      "bytes": 1846668,
+      "source_aliases": [
+        "/workspace/generated_images/exec-cfc884bd-2be8-4c83-ba54-238b7a2478df.png"
+      ],
+      "alias_ids": [],
+      "component_ids": [
+        "PAL-TOWER-004-D01",
+        "PAL-TOWER-004-D02",
+        "PAL-TOWER-004-D03",
+        "PAL-TOWER-004-D04",
+        "PAL-TOWER-004-D05",
+        "PAL-TOWER-004-D06",
+        "PAL-TOWER-004-D07",
+        "PAL-TOWER-004-D08",
+        "PAL-TOWER-004-D09",
+        "PAL-TOWER-004-D10",
+        "PAL-TOWER-004-D11",
+        "PAL-TOWER-004-D12",
+        "PAL-TOWER-004-D13",
+        "PAL-TOWER-004-D14",
+        "PAL-TOWER-004-D15",
+        "PAL-TOWER-004-D16"
+      ],
+      "reference_role": "source-derived-component-reference",
+      "review_status": "pending-user-review",
+      "design_status": "Original source controls visible contours; hidden profiles and model fitting remain proposed",
+      "related_image_ids": [
+        "REF-48132B5FA126",
+        "GEN-37"
+      ]
+    },
+    {
+      "id": "DRAFT-PAL-TOWER-004-DECOR-R01",
+      "label": "DRAFT-PAL-TOWER-004-DECOR-R01 \u2014 PAL-TOWER-004-DECOR \u2014 superseded study",
+      "title": "PAL-TOWER-004-DECOR \u2014 superseded study",
+      "category": "palace-screenshot-rejected-drafts",
+      "file": "remaining-palace-kits/belvedere/rejected-drafts/PAL-TOWER-004-DECOR-R01.png",
+      "sha256": "7665ec89d9230d279cf0b5ee5fc2c4679e38820b4e9404ccb6a325ab1f5a5457",
+      "bytes": 1895161,
+      "source_aliases": [
+        "/workspace/generated_images/exec-a5adbbd1-7a89-45f5-9cca-a56fd720cb0e.png"
+      ],
+      "alias_ids": [],
+      "component_ids": [],
+      "reference_role": "superseded-generated-study",
+      "review_status": "superseded",
+      "design_status": "superseded-invented-blue-arches-in-stone-bands",
+      "related_image_ids": [
+        "PAL-TOWER-004-DECOR",
+        "REF-48132B5FA126"
+      ]
+    },
+    {
+      "id": "SRC-PAL-TOWER-005",
+      "label": "SRC-PAL-TOWER-005 \u2014 Eastern unequal spire pair \u2014 original front source crop",
+      "title": "Eastern unequal spire pair \u2014 original front source crop",
+      "category": "palace-screenshot-source-crops",
+      "file": "remaining-palace-kits/spire-pair/original-source.png",
+      "sha256": "70a56b8598c2c27830574876c5151d0d202e43618e334d07583683e03e8919d1",
+      "bytes": 124087,
+      "source_aliases": [
+        "/workspace/shared/palace-tower-screenshot-review/eastern-pair-source.png"
+      ],
+      "alias_ids": [],
+      "component_ids": [],
+      "reference_role": "direct-source-crop",
+      "review_status": "source-reference",
+      "design_status": "Direct crop of original GEN-37 pixels, not a redraw or uploaded screenshot byte copy",
+      "related_image_ids": [
+        "GEN-37"
+      ]
+    },
+    {
+      "id": "SRC-PAL-TOWER-005-S01",
+      "label": "SRC-PAL-TOWER-005-S01 \u2014 Tall eastern star-glass stem \u2014 original visible section guide",
+      "title": "Tall eastern star-glass stem \u2014 original visible section guide",
+      "category": "palace-screenshot-source-sections",
+      "file": "remaining-palace-kits/spire-pair/source-sections/PAL-TOWER-005-S01.png",
+      "sha256": "08a9831f350198109b69337c4c6cd8ef410d1fae7acfabcb1de0d7ae7b2acf8b",
+      "bytes": 55745,
+      "source_aliases": [],
+      "alias_ids": [],
+      "component_ids": [
+        "PAL-TOWER-005-S01"
+      ],
+      "reference_role": "direct-source-section-crop",
+      "review_status": "source-reference",
+      "design_status": "Direct original front pixels. Bounds are overlapping region guides, not object masks or measured solid geometry.",
+      "related_image_ids": [
+        "SRC-PAL-TOWER-005",
+        "GEN-37"
+      ]
+    },
+    {
+      "id": "SRC-PAL-TOWER-005-S02",
+      "label": "SRC-PAL-TOWER-005-S02 \u2014 Shorter companion glazed stem \u2014 original visible section guide",
+      "title": "Shorter companion glazed stem \u2014 original visible section guide",
+      "category": "palace-screenshot-source-sections",
+      "file": "remaining-palace-kits/spire-pair/source-sections/PAL-TOWER-005-S02.png",
+      "sha256": "4d52ca221d4a1239aeb47e3e33e5ad9e1b8f71239c22d5af677982f354958c84",
+      "bytes": 39488,
+      "source_aliases": [],
+      "alias_ids": [],
+      "component_ids": [
+        "PAL-TOWER-005-S02"
+      ],
+      "reference_role": "direct-source-section-crop",
+      "review_status": "source-reference",
+      "design_status": "Direct original front pixels. Bounds are overlapping region guides, not object masks or measured solid geometry.",
+      "related_image_ids": [
+        "SRC-PAL-TOWER-005",
+        "GEN-37"
+      ]
+    },
+    {
+      "id": "SRC-PAL-TOWER-005-S03",
+      "label": "SRC-PAL-TOWER-005-S03 \u2014 Tall member steep crown \u2014 original visible section guide",
+      "title": "Tall member steep crown \u2014 original visible section guide",
+      "category": "palace-screenshot-source-sections",
+      "file": "remaining-palace-kits/spire-pair/source-sections/PAL-TOWER-005-S03.png",
+      "sha256": "88f4b2b215d496ef5e49abd6931a4e1f6b403c9a23a1c09e653647576d36c7a9",
+      "bytes": 14142,
+      "source_aliases": [],
+      "alias_ids": [],
+      "component_ids": [
+        "PAL-TOWER-005-S03"
+      ],
+      "reference_role": "direct-source-section-crop",
+      "review_status": "source-reference",
+      "design_status": "Direct original front pixels. Bounds are overlapping region guides, not object masks or measured solid geometry.",
+      "related_image_ids": [
+        "SRC-PAL-TOWER-005",
+        "GEN-37"
+      ]
+    },
+    {
+      "id": "SRC-PAL-TOWER-005-S04",
+      "label": "SRC-PAL-TOWER-005-S04 \u2014 Companion steep crown \u2014 original visible section guide",
+      "title": "Companion steep crown \u2014 original visible section guide",
+      "category": "palace-screenshot-source-sections",
+      "file": "remaining-palace-kits/spire-pair/source-sections/PAL-TOWER-005-S04.png",
+      "sha256": "4e9842e023ba22f03db9485fca880e5cb5a0655a15f56a24a59b92109711c6d3",
+      "bytes": 13044,
+      "source_aliases": [],
+      "alias_ids": [],
+      "component_ids": [
+        "PAL-TOWER-005-S04"
+      ],
+      "reference_role": "direct-source-section-crop",
+      "review_status": "source-reference",
+      "design_status": "Direct original front pixels. Bounds are overlapping region guides, not object masks or measured solid geometry.",
+      "related_image_ids": [
+        "SRC-PAL-TOWER-005",
+        "GEN-37"
+      ]
+    },
+    {
+      "id": "PAL-TOWER-005",
+      "label": "PAL-TOWER-005 \u2014 Eastern unequal spire pair \u2014 four joinable sections",
+      "title": "Eastern unequal spire pair \u2014 four joinable sections",
+      "category": "palace-screenshot-component-kits",
+      "file": "remaining-palace-kits/spire-pair/PAL-TOWER-005.png",
+      "sha256": "bbc3bf79a326581899f2e0ee02bba91c12afaf72e2813e8b1d277b4e81a4eef6",
+      "bytes": 1678371,
+      "source_aliases": [
+        "/workspace/generated_images/exec-68ceee05-7e55-41d2-8686-61b5f279626c.png"
+      ],
+      "alias_ids": [],
+      "component_ids": [
+        "PAL-TOWER-005-S01",
+        "PAL-TOWER-005-S02",
+        "PAL-TOWER-005-S03",
+        "PAL-TOWER-005-S04"
+      ],
+      "reference_role": "source-derived-component-reference",
+      "review_status": "pending-user-review",
+      "design_status": "Original source controls visible contours; hidden profiles and model fitting remain proposed",
+      "related_image_ids": [
+        "SRC-PAL-TOWER-005",
+        "GEN-37",
+        "PAL-TOWER-003-DECOR"
+      ]
+    },
+    {
+      "id": "SRC-PAL-LOWER-WING-001",
+      "label": "SRC-PAL-LOWER-WING-001 \u2014 Lower angled arcades, star pier and stairs \u2014 original front source crop",
+      "title": "Lower angled arcades, star pier and stairs \u2014 original front source crop",
+      "category": "palace-screenshot-source-crops",
+      "file": "remaining-palace-kits/lower-wing/original-source.png",
+      "sha256": "e59a042eac958210021baf4ac3f065e34f7364543dbdfaa477766310cec410cd",
+      "bytes": 398208,
+      "source_aliases": [
+        "/workspace/shared/palace-tower-screenshot-review/lower-arcade-stair-source.png"
+      ],
+      "alias_ids": [],
+      "component_ids": [],
+      "reference_role": "direct-source-crop",
+      "review_status": "source-reference",
+      "design_status": "Direct crop of original GEN-37 pixels, not a redraw or uploaded screenshot byte copy",
+      "related_image_ids": [
+        "GEN-37"
+      ]
+    },
+    {
+      "id": "SRC-PAL-LOWER-WING-001-S01",
+      "label": "SRC-PAL-LOWER-WING-001-S01 \u2014 Straight pointed arcade bay \u2014 original visible section guide",
+      "title": "Straight pointed arcade bay \u2014 original visible section guide",
+      "category": "palace-screenshot-source-sections",
+      "file": "remaining-palace-kits/lower-wing/source-sections/PAL-LOWER-WING-001-S01.png",
+      "sha256": "49de9c40d2b9de4ead6bab1ae92763c6a6849f8836d1d9b34afea8c8d4b3f9f4",
+      "bytes": 46578,
+      "source_aliases": [],
+      "alias_ids": [],
+      "component_ids": [
+        "PAL-LOWER-WING-001-S01"
+      ],
+      "reference_role": "direct-source-section-crop",
+      "review_status": "source-reference",
+      "design_status": "Direct original front pixels. Bounds are overlapping region guides, not object masks or measured solid geometry.",
+      "related_image_ids": [
+        "SRC-PAL-LOWER-WING-001",
+        "GEN-37"
+      ]
+    },
+    {
+      "id": "SRC-PAL-LOWER-WING-001-S02",
+      "label": "SRC-PAL-LOWER-WING-001-S02 \u2014 Angled wing return bay \u2014 original visible section guide",
+      "title": "Angled wing return bay \u2014 original visible section guide",
+      "category": "palace-screenshot-source-sections",
+      "file": "remaining-palace-kits/lower-wing/source-sections/PAL-LOWER-WING-001-S02.png",
+      "sha256": "f246d3733fef103b05f9cf392b0fbb7ef75c1988741d4f758f4b7b19b8bbc552",
+      "bytes": 34148,
+      "source_aliases": [],
+      "alias_ids": [],
+      "component_ids": [
+        "PAL-LOWER-WING-001-S02"
+      ],
+      "reference_role": "direct-source-section-crop",
+      "review_status": "source-reference",
+      "design_status": "Direct original front pixels. Bounds are overlapping region guides, not object masks or measured solid geometry.",
+      "related_image_ids": [
+        "SRC-PAL-LOWER-WING-001",
+        "GEN-37"
+      ]
+    },
+    {
+      "id": "SRC-PAL-LOWER-WING-001-S03",
+      "label": "SRC-PAL-LOWER-WING-001-S03 \u2014 Lower stepped terrace arcade \u2014 original visible section guide",
+      "title": "Lower stepped terrace arcade \u2014 original visible section guide",
+      "category": "palace-screenshot-source-sections",
+      "file": "remaining-palace-kits/lower-wing/source-sections/PAL-LOWER-WING-001-S03.png",
+      "sha256": "6709d32c45eccd89ee57ed42bf29ffeaa8f1e02f98b33742ed335c85f88f5448",
+      "bytes": 34794,
+      "source_aliases": [],
+      "alias_ids": [],
+      "component_ids": [
+        "PAL-LOWER-WING-001-S03"
+      ],
+      "reference_role": "direct-source-section-crop",
+      "review_status": "source-reference",
+      "design_status": "Direct original front pixels. Bounds are overlapping region guides, not object masks or measured solid geometry.",
+      "related_image_ids": [
+        "SRC-PAL-LOWER-WING-001",
+        "GEN-37"
+      ]
+    },
+    {
+      "id": "SRC-PAL-LOWER-WING-001-S04",
+      "label": "SRC-PAL-LOWER-WING-001-S04 \u2014 Projecting star-window pier \u2014 original visible section guide",
+      "title": "Projecting star-window pier \u2014 original visible section guide",
+      "category": "palace-screenshot-source-sections",
+      "file": "remaining-palace-kits/lower-wing/source-sections/PAL-LOWER-WING-001-S04.png",
+      "sha256": "793e4b3155f658349471e74c55ac9a8678ad57f19cfe9718ef26bdb784cb7eec",
+      "bytes": 33094,
+      "source_aliases": [],
+      "alias_ids": [],
+      "component_ids": [
+        "PAL-LOWER-WING-001-S04"
+      ],
+      "reference_role": "direct-source-section-crop",
+      "review_status": "source-reference",
+      "design_status": "Direct original front pixels. Bounds are overlapping region guides, not object masks or measured solid geometry.",
+      "related_image_ids": [
+        "SRC-PAL-LOWER-WING-001",
+        "GEN-37"
+      ]
+    },
+    {
+      "id": "PAL-LOWER-WING-001",
+      "label": "PAL-LOWER-WING-001 \u2014 Lower angled arcades, star pier and stairs \u2014 four joinable sections",
+      "title": "Lower angled arcades, star pier and stairs \u2014 four joinable sections",
+      "category": "palace-screenshot-component-kits",
+      "file": "remaining-palace-kits/lower-wing/PAL-LOWER-WING-001.png",
+      "sha256": "0eb0d163e527f3b325bec64cfb4faa51d057fcfb746edf49987d1c6d6acd18c3",
+      "bytes": 1986164,
+      "source_aliases": [
+        "/workspace/generated_images/exec-b8866254-0b63-4f12-8eb1-19490c9f1d03.png"
+      ],
+      "alias_ids": [],
+      "component_ids": [
+        "PAL-LOWER-WING-001-S01",
+        "PAL-LOWER-WING-001-S02",
+        "PAL-LOWER-WING-001-S03",
+        "PAL-LOWER-WING-001-S04"
+      ],
+      "reference_role": "source-derived-component-reference",
+      "review_status": "pending-user-review",
+      "design_status": "Original source controls visible contours; hidden profiles and model fitting remain proposed",
+      "related_image_ids": [
+        "SRC-PAL-LOWER-WING-001",
+        "GEN-37"
+      ]
+    },
+    {
+      "id": "PAL-LOWER-WING-DECOR-001",
+      "label": "PAL-LOWER-WING-DECOR-001 \u2014 Lower angled arcades, star pier and stairs \u2014 sixteen detail fittings",
+      "title": "Lower angled arcades, star pier and stairs \u2014 sixteen detail fittings",
+      "category": "palace-screenshot-component-kits",
+      "file": "remaining-palace-kits/lower-wing/PAL-LOWER-WING-DECOR-001.png",
+      "sha256": "f93a2a85097835018b430671a76b04347268bd88f518316f4edc7fd2eccfc573",
+      "bytes": 1783396,
+      "source_aliases": [
+        "/workspace/generated_images/exec-c72b3971-8f83-4a16-87ce-62aea3772f57.png"
+      ],
+      "alias_ids": [],
+      "component_ids": [
+        "PAL-LOWER-WING-001-D01",
+        "PAL-LOWER-WING-001-D02",
+        "PAL-LOWER-WING-001-D03",
+        "PAL-LOWER-WING-001-D04",
+        "PAL-LOWER-WING-001-D05",
+        "PAL-LOWER-WING-001-D06",
+        "PAL-LOWER-WING-001-D07",
+        "PAL-LOWER-WING-001-D08",
+        "PAL-LOWER-WING-001-D09",
+        "PAL-LOWER-WING-001-D10",
+        "PAL-LOWER-WING-001-D11",
+        "PAL-LOWER-WING-001-D12",
+        "PAL-LOWER-WING-001-D13",
+        "PAL-LOWER-WING-001-D14",
+        "PAL-LOWER-WING-001-D15",
+        "PAL-LOWER-WING-001-D16"
+      ],
+      "reference_role": "source-derived-component-reference",
+      "review_status": "pending-user-review",
+      "design_status": "Original source controls visible contours; hidden profiles and model fitting remain proposed",
+      "related_image_ids": [
+        "SRC-PAL-LOWER-WING-001",
+        "GEN-37"
+      ]
+    },
+    {
+      "id": "PAL-STAIR-001",
+      "label": "PAL-STAIR-001 \u2014 Lower angled arcades, star pier and stairs \u2014 four joinable sections",
+      "title": "Lower angled arcades, star pier and stairs \u2014 four joinable sections",
+      "category": "palace-screenshot-component-kits",
+      "file": "remaining-palace-kits/lower-wing/PAL-STAIR-001.png",
+      "sha256": "1c1053b7ead81ce2e0279fd533ebe84341919ff88e8d83af2886a4c0fcbdece4",
+      "bytes": 2040988,
+      "source_aliases": [
+        "/workspace/generated_images/exec-78cd3052-1c0d-4960-8808-4d9cc4f7f305.png"
+      ],
+      "alias_ids": [],
+      "component_ids": [
+        "PAL-STAIR-001-S01",
+        "PAL-STAIR-001-S02",
+        "PAL-STAIR-001-S03",
+        "PAL-STAIR-001-S04"
+      ],
+      "reference_role": "source-derived-component-reference",
+      "review_status": "pending-user-review",
+      "design_status": "Original source controls visible contours; hidden profiles and model fitting remain proposed",
+      "related_image_ids": [
+        "SRC-PAL-LOWER-WING-001",
+        "GEN-37"
+      ]
+    },
+    {
+      "id": "DRAFT-PAL-LOWER-WING-001-R01",
+      "label": "DRAFT-PAL-LOWER-WING-001-R01 \u2014 PAL-LOWER-WING-001 \u2014 superseded study",
+      "title": "PAL-LOWER-WING-001 \u2014 superseded study",
+      "category": "palace-screenshot-rejected-drafts",
+      "file": "remaining-palace-kits/lower-wing/rejected-drafts/PAL-LOWER-WING-001-R01.png",
+      "sha256": "2363b269fa226dcb4a5dcb1804f09dbba152e8fbc6c310c42d74dedca6242e97",
+      "bytes": 1929287,
+      "source_aliases": [
+        "/workspace/generated_images/exec-0ad6ee96-18dc-40a1-abd2-2aea218f5e21.png"
+      ],
+      "alias_ids": [],
+      "component_ids": [],
+      "reference_role": "superseded-generated-study",
+      "review_status": "superseded",
+      "design_status": "superseded-right-angle-return-and-extra-window-bay",
+      "related_image_ids": [
+        "PAL-LOWER-WING-001",
+        "SRC-PAL-LOWER-WING-001"
+      ]
+    },
+    {
+      "id": "DRAFT-PAL-STAIR-001-R01",
+      "label": "DRAFT-PAL-STAIR-001-R01 \u2014 PAL-STAIR-001 \u2014 superseded study",
+      "title": "PAL-STAIR-001 \u2014 superseded study",
+      "category": "palace-screenshot-rejected-drafts",
+      "file": "remaining-palace-kits/lower-wing/rejected-drafts/PAL-STAIR-001-R01.png",
+      "sha256": "c161a97f00403d861fb232393f060abaa57f2f68acacf0c60061da32edcaee32",
+      "bytes": 1928217,
+      "source_aliases": [
+        "/workspace/generated_images/exec-03a2c714-556c-4aee-ab60-c268d3b6f621.png"
+      ],
+      "alias_ids": [],
+      "component_ids": [],
+      "reference_role": "superseded-generated-study",
+      "review_status": "superseded",
+      "design_status": "superseded-fused-planting-and-stepped-flat-landings",
+      "related_image_ids": [
+        "PAL-STAIR-001",
+        "SRC-PAL-LOWER-WING-001"
+      ]
+    },
+    {
+      "id": "SRC-PAL-TOWER-006",
+      "label": "SRC-PAL-TOWER-006 \u2014 Royal needle with attached companion turrets \u2014 original front source crop",
+      "title": "Royal needle with attached companion turrets \u2014 original front source crop",
+      "category": "palace-screenshot-source-crops",
+      "file": "remaining-palace-kits/royal-needle/original-source.png",
+      "sha256": "62b4e6eeadb99e9e7ccf9cff9ab39785857d3530da16c92378e9e429f75c96f5",
+      "bytes": 107333,
+      "source_aliases": [
+        "/workspace/shared/palace-tower-screenshot-review/royal-needle-source.png"
+      ],
+      "alias_ids": [],
+      "component_ids": [],
+      "reference_role": "direct-source-crop",
+      "review_status": "source-reference",
+      "design_status": "Direct crop of original GEN-37 pixels, not a redraw or uploaded screenshot byte copy",
+      "related_image_ids": [
+        "GEN-37"
+      ]
+    },
+    {
+      "id": "SRC-PAL-TOWER-006-S01",
+      "label": "SRC-PAL-TOWER-006-S01 \u2014 Royal star-glass shaft \u2014 original visible section guide",
+      "title": "Royal star-glass shaft \u2014 original visible section guide",
+      "category": "palace-screenshot-source-sections",
+      "file": "remaining-palace-kits/royal-needle/source-sections/PAL-TOWER-006-S01.png",
+      "sha256": "6b81dcbef1c7b828bc7e4eb1a15f7244951ddd61087ddbc17b5716d40868bab3",
+      "bytes": 25743,
+      "source_aliases": [],
+      "alias_ids": [],
+      "component_ids": [
+        "PAL-TOWER-006-S01"
+      ],
+      "reference_role": "direct-source-section-crop",
+      "review_status": "source-reference",
+      "design_status": "Direct original front pixels. Bounds are overlapping region guides, not object masks or measured solid geometry.",
+      "related_image_ids": [
+        "SRC-PAL-TOWER-006",
+        "GEN-37"
+      ]
+    },
+    {
+      "id": "SRC-PAL-TOWER-006-S02",
+      "label": "SRC-PAL-TOWER-006-S02 \u2014 Royal steep spire crown \u2014 original visible section guide",
+      "title": "Royal steep spire crown \u2014 original visible section guide",
+      "category": "palace-screenshot-source-sections",
+      "file": "remaining-palace-kits/royal-needle/source-sections/PAL-TOWER-006-S02.png",
+      "sha256": "4f2de4d3d59b3a3a0164baf93ee4427855be3830885c3f555887b81f0ca1fa3f",
+      "bytes": 10165,
+      "source_aliases": [],
+      "alias_ids": [],
+      "component_ids": [
+        "PAL-TOWER-006-S02"
+      ],
+      "reference_role": "direct-source-section-crop",
+      "review_status": "source-reference",
+      "design_status": "Direct original front pixels. Bounds are overlapping region guides, not object masks or measured solid geometry.",
+      "related_image_ids": [
+        "SRC-PAL-TOWER-006",
+        "GEN-37"
+      ]
+    },
+    {
+      "id": "SRC-PAL-TOWER-006-S03",
+      "label": "SRC-PAL-TOWER-006-S03 \u2014 Two-stage companion turret body \u2014 original visible section guide",
+      "title": "Two-stage companion turret body \u2014 original visible section guide",
+      "category": "palace-screenshot-source-sections",
+      "file": "remaining-palace-kits/royal-needle/source-sections/PAL-TOWER-006-S03.png",
+      "sha256": "da08f27e370909021442e5129d6f5111921aa99d672f105299ac67ebc7a9974c",
+      "bytes": 16598,
+      "source_aliases": [],
+      "alias_ids": [],
+      "component_ids": [
+        "PAL-TOWER-006-S03"
+      ],
+      "reference_role": "direct-source-section-crop",
+      "review_status": "source-reference",
+      "design_status": "Direct original front pixels. Bounds are overlapping region guides, not object masks or measured solid geometry.",
+      "related_image_ids": [
+        "SRC-PAL-TOWER-006",
+        "GEN-37"
+      ]
+    },
+    {
+      "id": "SRC-PAL-TOWER-006-S04",
+      "label": "SRC-PAL-TOWER-006-S04 \u2014 Tall lantern support standard \u2014 original visible section guide",
+      "title": "Tall lantern support standard \u2014 original visible section guide",
+      "category": "palace-screenshot-source-sections",
+      "file": "remaining-palace-kits/royal-needle/source-sections/PAL-TOWER-006-S04.png",
+      "sha256": "0f8c47f84cd47f75d5d41d66ab52123c0c4265626175c8c59b2434dadb2a9097",
+      "bytes": 11020,
+      "source_aliases": [],
+      "alias_ids": [],
+      "component_ids": [
+        "PAL-TOWER-006-S04"
+      ],
+      "reference_role": "direct-source-section-crop",
+      "review_status": "source-reference",
+      "design_status": "Direct original front pixels. Bounds are overlapping region guides, not object masks or measured solid geometry.",
+      "related_image_ids": [
+        "SRC-PAL-TOWER-006",
+        "GEN-37"
+      ]
+    },
+    {
+      "id": "PAL-TOWER-006",
+      "label": "PAL-TOWER-006 \u2014 Royal needle with attached companion turrets \u2014 four joinable sections",
+      "title": "Royal needle with attached companion turrets \u2014 four joinable sections",
+      "category": "palace-screenshot-component-kits",
+      "file": "remaining-palace-kits/royal-needle/PAL-TOWER-006.png",
+      "sha256": "0d946db63dc537b9b701ade1ed3c196bc5b5c01d385aec891def0136da441d68",
+      "bytes": 1726947,
+      "source_aliases": [
+        "/workspace/generated_images/exec-367d1d50-6555-4df7-a5fb-4b61ee0d92d1.png"
+      ],
+      "alias_ids": [],
+      "component_ids": [
+        "PAL-TOWER-006-S01",
+        "PAL-TOWER-006-S02",
+        "PAL-TOWER-006-S03",
+        "PAL-TOWER-006-S04"
+      ],
+      "reference_role": "source-derived-component-reference",
+      "review_status": "pending-user-review",
+      "design_status": "Original source controls visible contours; hidden profiles and model fitting remain proposed",
+      "related_image_ids": [
+        "SRC-PAL-TOWER-006",
+        "GEN-37",
+        "PAL-TOWER-003-DECOR"
+      ]
+    },
+    {
+      "id": "DRAFT-PAL-TOWER-006-R01",
+      "label": "DRAFT-PAL-TOWER-006-R01 \u2014 PAL-TOWER-006 \u2014 superseded study",
+      "title": "PAL-TOWER-006 \u2014 superseded study",
+      "category": "palace-screenshot-rejected-drafts",
+      "file": "remaining-palace-kits/royal-needle/rejected-drafts/PAL-TOWER-006-R01.png",
+      "sha256": "e218633a07bb966127e97e07ec4ff347f2260f9265ff68469b6a3b41a5bc75c0",
+      "bytes": 1642091,
+      "source_aliases": [
+        "/workspace/generated_images/exec-15b3a64e-09b7-4078-8413-2f563ee61608.png"
+      ],
+      "alias_ids": [],
+      "component_ids": [],
+      "reference_role": "superseded-generated-study",
+      "review_status": "superseded",
+      "design_status": "superseded-duplicate-clerestory-at-crown-join",
+      "related_image_ids": [
+        "PAL-TOWER-006",
+        "SRC-PAL-TOWER-006"
+      ]
+    },
+    {
+      "id": "SRC-PAL-TOWER-007",
+      "label": "SRC-PAL-TOWER-007 \u2014 Slim star-glass onion gallery tower \u2014 original front source crop",
+      "title": "Slim star-glass onion gallery tower \u2014 original front source crop",
+      "category": "palace-screenshot-source-crops",
+      "file": "remaining-palace-kits/slim-onion/original-source.png",
+      "sha256": "864cbc83d1c5d43996ebcd4d70b81a5f8cb3c5d5c02aeab519c42a317b4be917",
+      "bytes": 48025,
+      "source_aliases": [
+        "/workspace/shared/palace-tower-screenshot-review/slim-onion-source.png"
+      ],
+      "alias_ids": [],
+      "component_ids": [],
+      "reference_role": "direct-source-crop",
+      "review_status": "source-reference",
+      "design_status": "Direct crop of original GEN-37 pixels, not a redraw or uploaded screenshot byte copy",
+      "related_image_ids": [
+        "GEN-37"
+      ]
+    },
+    {
+      "id": "SRC-PAL-TOWER-007-S01",
+      "label": "SRC-PAL-TOWER-007-S01 \u2014 Slim star-glass body \u2014 original visible section guide",
+      "title": "Slim star-glass body \u2014 original visible section guide",
+      "category": "palace-screenshot-source-sections",
+      "file": "remaining-palace-kits/slim-onion/source-sections/PAL-TOWER-007-S01.png",
+      "sha256": "2c857c2a175df25f5e6f840823c36c8d153aefd9fd822cb33591f027d5176bb1",
+      "bytes": 18911,
+      "source_aliases": [],
+      "alias_ids": [],
+      "component_ids": [
+        "PAL-TOWER-007-S01"
+      ],
+      "reference_role": "direct-source-section-crop",
+      "review_status": "source-reference",
+      "design_status": "Direct original front pixels. Bounds are overlapping region guides, not object masks or measured solid geometry.",
+      "related_image_ids": [
+        "SRC-PAL-TOWER-007",
+        "GEN-37"
+      ]
+    },
+    {
+      "id": "SRC-PAL-TOWER-007-S02",
+      "label": "SRC-PAL-TOWER-007-S02 \u2014 Shallow floral neck collar \u2014 original visible section guide",
+      "title": "Shallow floral neck collar \u2014 original visible section guide",
+      "category": "palace-screenshot-source-sections",
+      "file": "remaining-palace-kits/slim-onion/source-sections/PAL-TOWER-007-S02.png",
+      "sha256": "b881804d27f0015848fe3ca752473c411752126a0d366a4cee1e8fdf5e58b13b",
+      "bytes": 4163,
+      "source_aliases": [],
+      "alias_ids": [],
+      "component_ids": [
+        "PAL-TOWER-007-S02"
+      ],
+      "reference_role": "direct-source-section-crop",
+      "review_status": "source-reference",
+      "design_status": "Direct original front pixels. Bounds are overlapping region guides, not object masks or measured solid geometry.",
+      "related_image_ids": [
+        "SRC-PAL-TOWER-007",
+        "GEN-37"
+      ]
+    },
+    {
+      "id": "SRC-PAL-TOWER-007-S03",
+      "label": "SRC-PAL-TOWER-007-S03 \u2014 Short blue-lancet gallery \u2014 original visible section guide",
+      "title": "Short blue-lancet gallery \u2014 original visible section guide",
+      "category": "palace-screenshot-source-sections",
+      "file": "remaining-palace-kits/slim-onion/source-sections/PAL-TOWER-007-S03.png",
+      "sha256": "8731b82169298b574819af5ec7020220424cad4912dd0c2dbcfae5011580b046",
+      "bytes": 5087,
+      "source_aliases": [],
+      "alias_ids": [],
+      "component_ids": [
+        "PAL-TOWER-007-S03"
+      ],
+      "reference_role": "direct-source-section-crop",
+      "review_status": "source-reference",
+      "design_status": "Direct original front pixels. Bounds are overlapping region guides, not object masks or measured solid geometry.",
+      "related_image_ids": [
+        "SRC-PAL-TOWER-007",
+        "GEN-37"
+      ]
+    },
+    {
+      "id": "SRC-PAL-TOWER-007-S04",
+      "label": "SRC-PAL-TOWER-007-S04 \u2014 Narrow onion crown and spindle \u2014 original visible section guide",
+      "title": "Narrow onion crown and spindle \u2014 original visible section guide",
+      "category": "palace-screenshot-source-sections",
+      "file": "remaining-palace-kits/slim-onion/source-sections/PAL-TOWER-007-S04.png",
+      "sha256": "0833a5b957758806a6f62c75724b321d00d6796d07359d59e33b0b1c6e1b9b2f",
+      "bytes": 13193,
+      "source_aliases": [],
+      "alias_ids": [],
+      "component_ids": [
+        "PAL-TOWER-007-S04"
+      ],
+      "reference_role": "direct-source-section-crop",
+      "review_status": "source-reference",
+      "design_status": "Direct original front pixels. Bounds are overlapping region guides, not object masks or measured solid geometry.",
+      "related_image_ids": [
+        "SRC-PAL-TOWER-007",
+        "GEN-37"
+      ]
+    },
+    {
+      "id": "PAL-TOWER-007",
+      "label": "PAL-TOWER-007 \u2014 Slim star-glass onion gallery tower \u2014 four joinable sections",
+      "title": "Slim star-glass onion gallery tower \u2014 four joinable sections",
+      "category": "palace-screenshot-component-kits",
+      "file": "remaining-palace-kits/slim-onion/PAL-TOWER-007.png",
+      "sha256": "f9fd5a41324fe4a0c348394ad119abb6b4c0e0daf8c86d41f14c68eaba320156",
+      "bytes": 1890826,
+      "source_aliases": [
+        "/workspace/generated_images/exec-8ed4515c-7249-4a2e-9fbe-172e04d3d350.png"
+      ],
+      "alias_ids": [],
+      "component_ids": [
+        "PAL-TOWER-007-S01",
+        "PAL-TOWER-007-S02",
+        "PAL-TOWER-007-S03",
+        "PAL-TOWER-007-S04"
+      ],
+      "reference_role": "source-derived-component-reference",
+      "review_status": "pending-user-review",
+      "design_status": "Original source controls visible contours; hidden profiles and model fitting remain proposed",
+      "related_image_ids": [
+        "SRC-PAL-TOWER-007",
+        "GEN-37"
+      ]
+    },
+    {
+      "id": "DRAFT-PAL-TOWER-007-R01",
+      "label": "DRAFT-PAL-TOWER-007-R01 \u2014 PAL-TOWER-007 \u2014 superseded study",
+      "title": "PAL-TOWER-007 \u2014 superseded study",
+      "category": "palace-screenshot-rejected-drafts",
+      "file": "remaining-palace-kits/slim-onion/rejected-drafts/PAL-TOWER-007-R01.png",
+      "sha256": "3fa38abefb1f0a8f5d94d493f1c787e1224d9ecb20661ceb97bb635ded2b7649",
+      "bytes": 1961531,
+      "source_aliases": [
+        "/workspace/generated_images/exec-a10afd2f-8eb1-419b-9b1a-cef3aaba635a.png"
+      ],
+      "alias_ids": [],
+      "component_ids": [],
+      "reference_role": "superseded-generated-study",
+      "review_status": "superseded",
+      "design_status": "superseded-stacked-lanterns-fused-to-body",
+      "related_image_ids": [
+        "PAL-TOWER-007",
+        "SRC-PAL-TOWER-007"
+      ]
     }
   ],
   "label_schema_version": 1

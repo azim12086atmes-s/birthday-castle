@@ -719,3 +719,61 @@ R03 uses plain tower circles and source-reviewed garden symbols. See [garden pla
 | PAL-TOWER-001 | [Western terminal tower — four structural sections](palace-terminal-tower-kit/PAL-TOWER-001.png) | PAL-TOWER-001-S01; PAL-TOWER-001-S02; PAL-TOWER-001-S03; PAL-TOWER-001-S04 |
 | PAL-TOWER-001-DECOR | [Terminal tower —16 detachable details](palace-terminal-tower-kit/PAL-TOWER-001-DECOR.png) | PAL-TOWER-001-D01; PAL-TOWER-001-D02; PAL-TOWER-001-D03; PAL-TOWER-001-D04; PAL-TOWER-001-D05; PAL-TOWER-001-D06; PAL-TOWER-001-D07; PAL-TOWER-001-D08; PAL-TOWER-001-D09; PAL-TOWER-001-D10; PAL-TOWER-001-D11; PAL-TOWER-001-D12; PAL-TOWER-001-D13; PAL-TOWER-001-D14; PAL-TOWER-001-D15; PAL-TOWER-001-D16 |
 | DRAFT-PAL-TOWER-001-R01 | [Terminal section study — rejected relative proportions](palace-terminal-tower-kit/rejected-drafts/PAL-TOWER-001-R01.png) |  |
+
+## Remaining screenshot images
+
+| ID | Name/reference |
+| --- | --- |
+| SRC-PAL-TOWER-002-S01 | [Broad faceted window body — original visible section guide](remaining-palace-kits/pavilion/source-sections/PAL-TOWER-002-S01.png) |
+| SRC-PAL-TOWER-002-S02 | [Terrace collar and wing junction — original visible section guide](remaining-palace-kits/pavilion/source-sections/PAL-TOWER-002-S02.png) |
+| SRC-PAL-TOWER-002-S03 | [Broad arched dome drum — original visible section guide](remaining-palace-kits/pavilion/source-sections/PAL-TOWER-002-S03.png) |
+| SRC-PAL-TOWER-002-S04 | [Wide onion crown and spindle — original visible section guide](remaining-palace-kits/pavilion/source-sections/PAL-TOWER-002-S04.png) |
+| PAL-TOWER-002 | [Broad western domed pavilion — four joinable sections](remaining-palace-kits/pavilion/PAL-TOWER-002.png) |
+| PAL-TOWER-002-DECOR | [Broad western domed pavilion — sixteen detail fittings](remaining-palace-kits/pavilion/PAL-TOWER-002-DECOR.png) |
+| DRAFT-PAL-TOWER-002-R01 | [PAL-TOWER-002 — superseded study](remaining-palace-kits/pavilion/rejected-drafts/PAL-TOWER-002-R01.png) |
+| DRAFT-PAL-TOWER-002-DECOR-R01 | [PAL-TOWER-002-DECOR — superseded study](remaining-palace-kits/pavilion/rejected-drafts/PAL-TOWER-002-DECOR-R01.png) |
+| SRC-PAL-TOWER-003-S01 | [Tapered petal plinth — original visible section guide](remaining-palace-kits/needle/source-sections/PAL-TOWER-003-S01.png) |
+| SRC-PAL-TOWER-003-S02 | [Slender star-glass shaft — original visible section guide](remaining-palace-kits/needle/source-sections/PAL-TOWER-003-S02.png) |
+| SRC-PAL-TOWER-003-S03 | [Needle clerestory collar — original visible section guide](remaining-palace-kits/needle/source-sections/PAL-TOWER-003-S03.png) |
+| SRC-PAL-TOWER-003-S04 | [Steep violet needle crown — original visible section guide](remaining-palace-kits/needle/source-sections/PAL-TOWER-003-S04.png) |
+| PAL-TOWER-003 | [Slender western needle — four joinable sections](remaining-palace-kits/needle/PAL-TOWER-003.png) |
+| PAL-TOWER-003-DECOR | [Slender western needle — sixteen detail fittings](remaining-palace-kits/needle/PAL-TOWER-003-DECOR.png) |
+| DRAFT-PAL-TOWER-003-R01 | [PAL-TOWER-003 — superseded study](remaining-palace-kits/needle/rejected-drafts/PAL-TOWER-003-R01.png) |
+| DRAFT-PAL-TOWER-003-DECOR-R01 | [PAL-TOWER-003-DECOR — superseded study](remaining-palace-kits/needle/rejected-drafts/PAL-TOWER-003-DECOR-R01.png) |
+| SRC-PAL-TOWER-004-S01 | [Long rose marble support shaft — original visible section guide](remaining-palace-kits/belvedere/source-sections/PAL-TOWER-004-S01.png) |
+| SRC-PAL-TOWER-004-S02 | [Floral belt and relief neck — original visible section guide](remaining-palace-kits/belvedere/source-sections/PAL-TOWER-004-S02.png) |
+| SRC-PAL-TOWER-004-S03 | [Small arched lookout drum — original visible section guide](remaining-palace-kits/belvedere/source-sections/PAL-TOWER-004-S03.png) |
+| SRC-PAL-TOWER-004-S04 | [Compact plum onion canopy — original visible section guide](remaining-palace-kits/belvedere/source-sections/PAL-TOWER-004-S04.png) |
+| PAL-TOWER-004 | [Eastern projecting onion belvedere — four joinable sections](remaining-palace-kits/belvedere/PAL-TOWER-004.png) |
+| PAL-TOWER-004-DECOR | [Eastern projecting onion belvedere — sixteen detail fittings](remaining-palace-kits/belvedere/PAL-TOWER-004-DECOR.png) |
+| DRAFT-PAL-TOWER-004-DECOR-R01 | [PAL-TOWER-004-DECOR — superseded study](remaining-palace-kits/belvedere/rejected-drafts/PAL-TOWER-004-DECOR-R01.png) |
+| SRC-PAL-TOWER-005 | [Eastern unequal spire pair — original front source crop](remaining-palace-kits/spire-pair/original-source.png) |
+| SRC-PAL-TOWER-005-S01 | [Tall eastern star-glass stem — original visible section guide](remaining-palace-kits/spire-pair/source-sections/PAL-TOWER-005-S01.png) |
+| SRC-PAL-TOWER-005-S02 | [Shorter companion glazed stem — original visible section guide](remaining-palace-kits/spire-pair/source-sections/PAL-TOWER-005-S02.png) |
+| SRC-PAL-TOWER-005-S03 | [Tall member steep crown — original visible section guide](remaining-palace-kits/spire-pair/source-sections/PAL-TOWER-005-S03.png) |
+| SRC-PAL-TOWER-005-S04 | [Companion steep crown — original visible section guide](remaining-palace-kits/spire-pair/source-sections/PAL-TOWER-005-S04.png) |
+| PAL-TOWER-005 | [Eastern unequal spire pair — four joinable sections](remaining-palace-kits/spire-pair/PAL-TOWER-005.png) |
+| SRC-PAL-LOWER-WING-001 | [Lower angled arcades, star pier and stairs — original front source crop](remaining-palace-kits/lower-wing/original-source.png) |
+| SRC-PAL-LOWER-WING-001-S01 | [Straight pointed arcade bay — original visible section guide](remaining-palace-kits/lower-wing/source-sections/PAL-LOWER-WING-001-S01.png) |
+| SRC-PAL-LOWER-WING-001-S02 | [Angled wing return bay — original visible section guide](remaining-palace-kits/lower-wing/source-sections/PAL-LOWER-WING-001-S02.png) |
+| SRC-PAL-LOWER-WING-001-S03 | [Lower stepped terrace arcade — original visible section guide](remaining-palace-kits/lower-wing/source-sections/PAL-LOWER-WING-001-S03.png) |
+| SRC-PAL-LOWER-WING-001-S04 | [Projecting star-window pier — original visible section guide](remaining-palace-kits/lower-wing/source-sections/PAL-LOWER-WING-001-S04.png) |
+| PAL-LOWER-WING-001 | [Lower angled arcades, star pier and stairs — four joinable sections](remaining-palace-kits/lower-wing/PAL-LOWER-WING-001.png) |
+| PAL-LOWER-WING-DECOR-001 | [Lower angled arcades, star pier and stairs — sixteen detail fittings](remaining-palace-kits/lower-wing/PAL-LOWER-WING-DECOR-001.png) |
+| PAL-STAIR-001 | [Lower angled arcades, star pier and stairs — four joinable sections](remaining-palace-kits/lower-wing/PAL-STAIR-001.png) |
+| DRAFT-PAL-LOWER-WING-001-R01 | [PAL-LOWER-WING-001 — superseded study](remaining-palace-kits/lower-wing/rejected-drafts/PAL-LOWER-WING-001-R01.png) |
+| DRAFT-PAL-STAIR-001-R01 | [PAL-STAIR-001 — superseded study](remaining-palace-kits/lower-wing/rejected-drafts/PAL-STAIR-001-R01.png) |
+| SRC-PAL-TOWER-006 | [Royal needle with attached companion turrets — original front source crop](remaining-palace-kits/royal-needle/original-source.png) |
+| SRC-PAL-TOWER-006-S01 | [Royal star-glass shaft — original visible section guide](remaining-palace-kits/royal-needle/source-sections/PAL-TOWER-006-S01.png) |
+| SRC-PAL-TOWER-006-S02 | [Royal steep spire crown — original visible section guide](remaining-palace-kits/royal-needle/source-sections/PAL-TOWER-006-S02.png) |
+| SRC-PAL-TOWER-006-S03 | [Two-stage companion turret body — original visible section guide](remaining-palace-kits/royal-needle/source-sections/PAL-TOWER-006-S03.png) |
+| SRC-PAL-TOWER-006-S04 | [Tall lantern support standard — original visible section guide](remaining-palace-kits/royal-needle/source-sections/PAL-TOWER-006-S04.png) |
+| PAL-TOWER-006 | [Royal needle with attached companion turrets — four joinable sections](remaining-palace-kits/royal-needle/PAL-TOWER-006.png) |
+| DRAFT-PAL-TOWER-006-R01 | [PAL-TOWER-006 — superseded study](remaining-palace-kits/royal-needle/rejected-drafts/PAL-TOWER-006-R01.png) |
+| SRC-PAL-TOWER-007 | [Slim star-glass onion gallery tower — original front source crop](remaining-palace-kits/slim-onion/original-source.png) |
+| SRC-PAL-TOWER-007-S01 | [Slim star-glass body — original visible section guide](remaining-palace-kits/slim-onion/source-sections/PAL-TOWER-007-S01.png) |
+| SRC-PAL-TOWER-007-S02 | [Shallow floral neck collar — original visible section guide](remaining-palace-kits/slim-onion/source-sections/PAL-TOWER-007-S02.png) |
+| SRC-PAL-TOWER-007-S03 | [Short blue-lancet gallery — original visible section guide](remaining-palace-kits/slim-onion/source-sections/PAL-TOWER-007-S03.png) |
+| SRC-PAL-TOWER-007-S04 | [Narrow onion crown and spindle — original visible section guide](remaining-palace-kits/slim-onion/source-sections/PAL-TOWER-007-S04.png) |
+| PAL-TOWER-007 | [Slim star-glass onion gallery tower — four joinable sections](remaining-palace-kits/slim-onion/PAL-TOWER-007.png) |
+| DRAFT-PAL-TOWER-007-R01 | [PAL-TOWER-007 — superseded study](remaining-palace-kits/slim-onion/rejected-drafts/PAL-TOWER-007-R01.png) |

@@ -1,0 +1,686 @@
+{
+  "family": "Lower angled arcades, star pier and stairs",
+  "key": "lower-wing",
+  "source_front_authority": "GEN-37",
+  "source_reference_id": "SRC-PAL-LOWER-WING-001",
+  "source_reference_file": "remaining-palace-kits/lower-wing/original-source.png",
+  "source_reference_sha256": "e59a042eac958210021baf4ac3f065e34f7364543dbdfaa477766310cec410cd",
+  "generation_reference_path": "/workspace/shared/palace-tower-screenshot-review/lower-arcade-stair-source.png",
+  "scope": "Modular sketch references only, no Blender models",
+  "source_boxes_status": "Direct visible-front region guides; not object masks or measured building dimensions",
+  "section_connections": "S01 straight bay joins S02 at matched wall/cornice/sill end planes. S02 rear edge mates to S04 pier rear saddle. S03 is the lower terrace arcade, inset beneath the adjoining upper range, not appended as an extra tall floor. All roof rails end at matching junction posts. Stair modules attach to the lower/upper terrace landings, not through a window.",
+  "parts": [
+    {
+      "asset_id": "PAL-LOWER-WING-001-S01",
+      "name": "Straight pointed arcade bay",
+      "description": "A joinable two-window section of the upper lower-wing wall: tall pointed blue/pink glass bays, thin ivory piers, rose triangular floral spandrels, fine gold arch edges, narrow pierced floral roof rail and plain shallow rear mating plane. No great gate or giant tower.",
+      "source_box_xyxy": [
+        5,
+        106,
+        176,
+        219
+      ],
+      "model_status": "unregistered",
+      "review_status": "pending",
+      "source_reference_id": "SRC-PAL-LOWER-WING-001-S01",
+      "source_reference_file": "remaining-palace-kits/lower-wing/source-sections/PAL-LOWER-WING-001-S01.png",
+      "source_reference_sha256": "49de9c40d2b9de4ead6bab1ae92763c6a6849f8836d1d9b34afea8c8d4b3f9f4",
+      "reuse_component_ids": [
+        "GEN-43-M01",
+        "GEN-43-M02",
+        "GEN-43-M03",
+        "GEN-43-M06",
+        "GEN-33-R04",
+        "GEN-35-A01",
+        "GEN-38-M03",
+        "GEN-38-M04",
+        "GEN-41-M02"
+      ]
+    },
+    {
+      "asset_id": "PAL-LOWER-WING-001-S02",
+      "name": "Angled wing return bay",
+      "description": "A two-bay angled wall section matching the change of direction beside the projecting star pier. Preserve pointed windows and rose/ivory trim, a gentle mitred/faceted plan bend, contiguous wall and roof terrace shelf; not a separate square box.",
+      "source_box_xyxy": [
+        247,
+        108,
+        369,
+        224
+      ],
+      "model_status": "unregistered",
+      "review_status": "pending",
+      "source_reference_id": "SRC-PAL-LOWER-WING-001-S02",
+      "source_reference_file": "remaining-palace-kits/lower-wing/source-sections/PAL-LOWER-WING-001-S02.png",
+      "source_reference_sha256": "f246d3733fef103b05f9cf392b0fbb7ef75c1988741d4f758f4b7b19b8bbc552",
+      "reuse_component_ids": [
+        "GEN-43-M01",
+        "GEN-43-M02",
+        "GEN-43-M03",
+        "GEN-43-M06",
+        "GEN-33-R04",
+        "GEN-35-A01",
+        "GEN-38-M03",
+        "GEN-38-M04",
+        "GEN-41-M02"
+      ]
+    },
+    {
+      "asset_id": "PAL-LOWER-WING-001-S03",
+      "name": "Lower stepped terrace arcade",
+      "description": "One short lower-level pointed arcade supporting a shallow roof terrace shelf with the source sloping/stepping retaining parapet and flower-bed coping. Keep the low garden-retaining front source contours; flower plants are separate. Do not raise this to the upper wall height.",
+      "source_box_xyxy": [
+        0,
+        189,
+        167,
+        271
+      ],
+      "model_status": "unregistered",
+      "review_status": "pending",
+      "source_reference_id": "SRC-PAL-LOWER-WING-001-S03",
+      "source_reference_file": "remaining-palace-kits/lower-wing/source-sections/PAL-LOWER-WING-001-S03.png",
+      "source_reference_sha256": "6709d32c45eccd89ee57ed42bf29ffeaa8f1e02f98b33742ed335c85f88f5448",
+      "reuse_component_ids": [
+        "GEN-43-M01",
+        "GEN-43-M02",
+        "GEN-43-M03",
+        "GEN-43-M06",
+        "GEN-33-R04",
+        "GEN-35-A01",
+        "GEN-38-M03",
+        "GEN-38-M04",
+        "GEN-41-M02"
+      ]
+    },
+    {
+      "asset_id": "PAL-LOWER-WING-001-S04",
+      "name": "Projecting star-window pier",
+      "description": "The actual short projecting pale faceted pier: stepped square/faceted marble plinth, single tall blue star lancet, thin ivory corner piers, gold collar and a small open floral rail cap. It attaches to the wall at the rear. No onion or cone roof on this projection.",
+      "source_box_xyxy": [
+        176,
+        81,
+        251,
+        280
+      ],
+      "model_status": "unregistered",
+      "review_status": "pending",
+      "source_reference_id": "SRC-PAL-LOWER-WING-001-S04",
+      "source_reference_file": "remaining-palace-kits/lower-wing/source-sections/PAL-LOWER-WING-001-S04.png",
+      "source_reference_sha256": "793e4b3155f658349471e74c55ac9a8678ad57f19cfe9718ef26bdb784cb7eec",
+      "reuse_component_ids": [
+        "GEN-43-M01",
+        "GEN-43-M02",
+        "GEN-43-M03",
+        "GEN-43-M06",
+        "GEN-33-R04",
+        "GEN-35-A01",
+        "GEN-38-M03",
+        "GEN-38-M04",
+        "GEN-41-M02"
+      ]
+    }
+  ],
+  "decor": [
+    {
+      "asset_id": "PAL-LOWER-WING-001-D01",
+      "name": "Angled rail return",
+      "description": "One mitred floral pierced ivory/gold rail corner matching the wing bend, no full wall.",
+      "model_status": "unregistered",
+      "review_status": "pending",
+      "reuse_component_ids": [
+        "GEN-43-M01",
+        "GEN-43-M02",
+        "GEN-43-M03",
+        "GEN-43-M06",
+        "GEN-33-R04",
+        "GEN-35-A01",
+        "GEN-38-M03",
+        "GEN-38-M04",
+        "GEN-41-M02"
+      ],
+      "applies_to": [
+        "PAL-LOWER-WING-001-S01",
+        "PAL-LOWER-WING-001-S02",
+        "PAL-LOWER-WING-001-S03",
+        "PAL-LOWER-WING-001-S04"
+      ]
+    },
+    {
+      "asset_id": "PAL-LOWER-WING-001-D02",
+      "name": "Pier-to-rail end block",
+      "description": "Small carved end block where roof railing meets the star pier.",
+      "model_status": "unregistered",
+      "review_status": "pending",
+      "reuse_component_ids": [
+        "GEN-43-M01",
+        "GEN-43-M02",
+        "GEN-43-M03",
+        "GEN-43-M06",
+        "GEN-33-R04",
+        "GEN-35-A01",
+        "GEN-38-M03",
+        "GEN-38-M04",
+        "GEN-41-M02"
+      ],
+      "applies_to": [
+        "PAL-LOWER-WING-001-S01",
+        "PAL-LOWER-WING-001-S02",
+        "PAL-LOWER-WING-001-S03",
+        "PAL-LOWER-WING-001-S04"
+      ]
+    },
+    {
+      "asset_id": "PAL-LOWER-WING-001-D03",
+      "name": "Star-pier wall saddle",
+      "description": "Shallow moulded marble/gold rear junction pad receiving the neighboring wing cornice.",
+      "model_status": "unregistered",
+      "review_status": "pending",
+      "reuse_component_ids": [
+        "GEN-43-M01",
+        "GEN-43-M02",
+        "GEN-43-M03",
+        "GEN-43-M06",
+        "GEN-33-R04",
+        "GEN-35-A01",
+        "GEN-38-M03",
+        "GEN-38-M04",
+        "GEN-41-M02"
+      ],
+      "applies_to": [
+        "PAL-LOWER-WING-001-S01",
+        "PAL-LOWER-WING-001-S02",
+        "PAL-LOWER-WING-001-S03",
+        "PAL-LOWER-WING-001-S04"
+      ]
+    },
+    {
+      "asset_id": "PAL-LOWER-WING-001-D04",
+      "name": "Terrace corner bed coping",
+      "description": "Single angled rose/ivory bed-edge coping corner, gold lip.",
+      "model_status": "unregistered",
+      "review_status": "pending",
+      "reuse_component_ids": [
+        "GEN-43-M01",
+        "GEN-43-M02",
+        "GEN-43-M03",
+        "GEN-43-M06",
+        "GEN-33-R04",
+        "GEN-35-A01",
+        "GEN-38-M03",
+        "GEN-38-M04",
+        "GEN-41-M02"
+      ],
+      "applies_to": [
+        "PAL-LOWER-WING-001-S01",
+        "PAL-LOWER-WING-001-S02",
+        "PAL-LOWER-WING-001-S03",
+        "PAL-LOWER-WING-001-S04"
+      ]
+    },
+    {
+      "asset_id": "PAL-LOWER-WING-001-D05",
+      "name": "Stepped flower-bed edging",
+      "description": "Single short sloped marble bed-retaining edge with clean join ends; no plants.",
+      "model_status": "unregistered",
+      "review_status": "pending",
+      "reuse_component_ids": [
+        "GEN-43-M01",
+        "GEN-43-M02",
+        "GEN-43-M03",
+        "GEN-43-M06",
+        "GEN-33-R04",
+        "GEN-35-A01",
+        "GEN-38-M03",
+        "GEN-38-M04",
+        "GEN-41-M02"
+      ],
+      "applies_to": [
+        "PAL-LOWER-WING-001-S01",
+        "PAL-LOWER-WING-001-S02",
+        "PAL-LOWER-WING-001-S03",
+        "PAL-LOWER-WING-001-S04"
+      ]
+    },
+    {
+      "asset_id": "PAL-LOWER-WING-001-D06",
+      "name": "Rail end leaf clasp",
+      "description": "Tiny gilded leaf clasp at rail termination, one fitting.",
+      "model_status": "unregistered",
+      "review_status": "pending",
+      "reuse_component_ids": [
+        "GEN-43-M01",
+        "GEN-43-M02",
+        "GEN-43-M03",
+        "GEN-43-M06",
+        "GEN-33-R04",
+        "GEN-35-A01",
+        "GEN-38-M03",
+        "GEN-38-M04",
+        "GEN-41-M02"
+      ],
+      "applies_to": [
+        "PAL-LOWER-WING-001-S01",
+        "PAL-LOWER-WING-001-S02",
+        "PAL-LOWER-WING-001-S03",
+        "PAL-LOWER-WING-001-S04"
+      ]
+    },
+    {
+      "asset_id": "PAL-LOWER-WING-001-D07",
+      "name": "Stair side coping repeat",
+      "description": "One straight rose/ivory handrail-coping strip, gentle source incline; no stairs or wall.",
+      "model_status": "unregistered",
+      "review_status": "pending",
+      "reuse_component_ids": [
+        "GEN-43-M01",
+        "GEN-43-M02",
+        "GEN-43-M03",
+        "GEN-43-M06",
+        "GEN-33-R04",
+        "GEN-35-A01",
+        "GEN-38-M03",
+        "GEN-38-M04",
+        "GEN-41-M02"
+      ],
+      "applies_to": [
+        "PAL-STAIR-001-S01",
+        "PAL-STAIR-001-S02",
+        "PAL-STAIR-001-S03",
+        "PAL-STAIR-001-S04"
+      ]
+    },
+    {
+      "asset_id": "PAL-LOWER-WING-001-D08",
+      "name": "Turned stair coping corner",
+      "description": "One clean L-turn marble/gold coping segment meeting the landing.",
+      "model_status": "unregistered",
+      "review_status": "pending",
+      "reuse_component_ids": [
+        "GEN-43-M01",
+        "GEN-43-M02",
+        "GEN-43-M03",
+        "GEN-43-M06",
+        "GEN-33-R04",
+        "GEN-35-A01",
+        "GEN-38-M03",
+        "GEN-38-M04",
+        "GEN-41-M02"
+      ],
+      "applies_to": [
+        "PAL-STAIR-001-S01",
+        "PAL-STAIR-001-S02",
+        "PAL-STAIR-001-S03",
+        "PAL-STAIR-001-S04"
+      ]
+    },
+    {
+      "asset_id": "PAL-LOWER-WING-001-D09",
+      "name": "Stair bottom return shoe",
+      "description": "Small moulded foot return of the sloped stair parapet, separate.",
+      "model_status": "unregistered",
+      "review_status": "pending",
+      "reuse_component_ids": [
+        "GEN-43-M01",
+        "GEN-43-M02",
+        "GEN-43-M03",
+        "GEN-43-M06",
+        "GEN-33-R04",
+        "GEN-35-A01",
+        "GEN-38-M03",
+        "GEN-38-M04",
+        "GEN-41-M02"
+      ],
+      "applies_to": [
+        "PAL-STAIR-001-S01",
+        "PAL-STAIR-001-S02",
+        "PAL-STAIR-001-S03",
+        "PAL-STAIR-001-S04"
+      ]
+    },
+    {
+      "asset_id": "PAL-LOWER-WING-001-D10",
+      "name": "Stair head rail transition",
+      "description": "Small moulded transition from rising handrail to horizontal landing coping.",
+      "model_status": "unregistered",
+      "review_status": "pending",
+      "reuse_component_ids": [
+        "GEN-43-M01",
+        "GEN-43-M02",
+        "GEN-43-M03",
+        "GEN-43-M06",
+        "GEN-33-R04",
+        "GEN-35-A01",
+        "GEN-38-M03",
+        "GEN-38-M04",
+        "GEN-41-M02"
+      ],
+      "applies_to": [
+        "PAL-STAIR-001-S01",
+        "PAL-STAIR-001-S02",
+        "PAL-STAIR-001-S03",
+        "PAL-STAIR-001-S04"
+      ]
+    },
+    {
+      "asset_id": "PAL-LOWER-WING-001-D11",
+      "name": "Pier plinth front panel",
+      "description": "One source ivory marble rectangular panel with faint rose veining and fine moulded border.",
+      "model_status": "unregistered",
+      "review_status": "pending",
+      "reuse_component_ids": [
+        "GEN-43-M01",
+        "GEN-43-M02",
+        "GEN-43-M03",
+        "GEN-43-M06",
+        "GEN-33-R04",
+        "GEN-35-A01",
+        "GEN-38-M03",
+        "GEN-38-M04",
+        "GEN-41-M02"
+      ],
+      "applies_to": [
+        "PAL-LOWER-WING-001-S01",
+        "PAL-LOWER-WING-001-S02",
+        "PAL-LOWER-WING-001-S03",
+        "PAL-LOWER-WING-001-S04"
+      ]
+    },
+    {
+      "asset_id": "PAL-LOWER-WING-001-D12",
+      "name": "Pier plinth corner fillet",
+      "description": "One tall thin marble/gold corner edging piece for the projecting pedestal.",
+      "model_status": "unregistered",
+      "review_status": "pending",
+      "reuse_component_ids": [
+        "GEN-43-M01",
+        "GEN-43-M02",
+        "GEN-43-M03",
+        "GEN-43-M06",
+        "GEN-33-R04",
+        "GEN-35-A01",
+        "GEN-38-M03",
+        "GEN-38-M04",
+        "GEN-41-M02"
+      ],
+      "applies_to": [
+        "PAL-LOWER-WING-001-S01",
+        "PAL-LOWER-WING-001-S02",
+        "PAL-LOWER-WING-001-S03",
+        "PAL-LOWER-WING-001-S04"
+      ]
+    },
+    {
+      "asset_id": "PAL-LOWER-WING-001-D13",
+      "name": "Bed retaining-foot corner",
+      "description": "One low stepped moulded base corner for the terrace flower-bed edge.",
+      "model_status": "unregistered",
+      "review_status": "pending",
+      "reuse_component_ids": [
+        "GEN-43-M01",
+        "GEN-43-M02",
+        "GEN-43-M03",
+        "GEN-43-M06",
+        "GEN-33-R04",
+        "GEN-35-A01",
+        "GEN-38-M03",
+        "GEN-38-M04",
+        "GEN-41-M02"
+      ],
+      "applies_to": [
+        "PAL-LOWER-WING-001-S01",
+        "PAL-LOWER-WING-001-S02",
+        "PAL-LOWER-WING-001-S03",
+        "PAL-LOWER-WING-001-S04"
+      ]
+    },
+    {
+      "asset_id": "PAL-LOWER-WING-001-D14",
+      "name": "Planter pedestal seat",
+      "description": "One small pale square stone pedestal top and shallow stem for an existing planter, no new pot or flowers.",
+      "model_status": "unregistered",
+      "review_status": "pending",
+      "reuse_component_ids": [
+        "GEN-43-M01",
+        "GEN-43-M02",
+        "GEN-43-M03",
+        "GEN-43-M06",
+        "GEN-33-R04",
+        "GEN-35-A01",
+        "GEN-38-M03",
+        "GEN-38-M04",
+        "GEN-41-M02"
+      ],
+      "applies_to": [
+        "PAL-STAIR-001-S01",
+        "PAL-STAIR-001-S02",
+        "PAL-STAIR-001-S03",
+        "PAL-STAIR-001-S04"
+      ]
+    },
+    {
+      "asset_id": "PAL-LOWER-WING-001-D15",
+      "name": "Stair-end floral relief",
+      "description": "One restrained white/gold rose relief fitted to the stair parapet end.",
+      "model_status": "unregistered",
+      "review_status": "pending",
+      "reuse_component_ids": [
+        "GEN-43-M01",
+        "GEN-43-M02",
+        "GEN-43-M03",
+        "GEN-43-M06",
+        "GEN-33-R04",
+        "GEN-35-A01",
+        "GEN-38-M03",
+        "GEN-38-M04",
+        "GEN-41-M02"
+      ],
+      "applies_to": [
+        "PAL-STAIR-001-S01",
+        "PAL-STAIR-001-S02",
+        "PAL-STAIR-001-S03",
+        "PAL-STAIR-001-S04"
+      ]
+    },
+    {
+      "asset_id": "PAL-LOWER-WING-001-D16",
+      "name": "Arcade sill mitre return",
+      "description": "One short mitred ivory/rose/gold window-sill return matching the angled bay.",
+      "model_status": "unregistered",
+      "review_status": "pending",
+      "reuse_component_ids": [
+        "GEN-43-M01",
+        "GEN-43-M02",
+        "GEN-43-M03",
+        "GEN-43-M06",
+        "GEN-33-R04",
+        "GEN-35-A01",
+        "GEN-38-M03",
+        "GEN-38-M04",
+        "GEN-41-M02"
+      ],
+      "applies_to": [
+        "PAL-LOWER-WING-001-S01",
+        "PAL-LOWER-WING-001-S02",
+        "PAL-LOWER-WING-001-S03",
+        "PAL-LOWER-WING-001-S04"
+      ]
+    }
+  ],
+  "prompts": {
+    "structure": "Use the SINGLE supplied original GEN-37 crop as the visible design authority. Other existing component studies only support construction/ornament vocabulary. Maintain rose/ivory veined marble, source blue/lilac/pink glass, fine muted polished gold, plum-violet roof surfaces. Clean restrained nearly frontal orthographic technical product view with enough depth to see interfaces; whole uncropped models on clean warm-white paper/studio background. Preserve visible relative proportions and asymmetric offsets; infer only unseen backs, support faces and join undersides conservatively. No complete palace or redesigned tower, no scene, people, extra background buildings or plants unless a planting asset is explicitly requested. All pieces separated, no neighbor fusion. Labels below objects, not embedded on surfaces. Exactly the requested item count. Straight columns remain straight, arches regular, curved strips smooth and single, no melted curls, warped faces or gratuitous extra spikes. Preserve fine source details without exaggerating their size.\nTitle: PAL-LOWER-WING-001 \u2014 Lower angled arcades, star pier and stairs sections. Create exactly FOUR isolated structural sections in a clear 2-by-2 grid. MUST PRINT a title above the grid and the COMPLETE asset ID AND short part name below each object; neither IDs alone nor names alone are sufficient. Make exactly four SOURCE-shaped wall modules, each with enough shallow roof/rear depth to join a continuous wing. Do not turn a slim wall into a whole cube building. The source has angled returns and overlapping low terraces; keep each distinct and retain pointed glass, floral rails and the star projection. Garden planting, pots and fountains are separate existing assets.\nS01 straight bay joins S02 at matched wall/cornice/sill end planes. S02 rear edge mates to S04 pier rear saddle. S03 is the lower terrace arcade, inset beneath the adjoining upper range, not appended as an extra tall floor. All roof rails end at matching junction posts. Stair modules attach to the lower/upper terrace landings, not through a window.\nPAL-LOWER-WING-001-S01 \u2014 Straight pointed arcade bay: A joinable two-window section of the upper lower-wing wall: tall pointed blue/pink glass bays, thin ivory piers, rose triangular floral spandrels, fine gold arch edges, narrow pierced floral roof rail and plain shallow rear mating plane. No great gate or giant tower.\nPAL-LOWER-WING-001-S02 \u2014 Angled wing return bay: A two-bay angled wall section matching the change of direction beside the projecting star pier. Preserve pointed windows and rose/ivory trim, a gentle mitred/faceted plan bend, contiguous wall and roof terrace shelf; not a separate square box.\nPAL-LOWER-WING-001-S03 \u2014 Lower stepped terrace arcade: One short lower-level pointed arcade supporting a shallow roof terrace shelf with the source sloping/stepping retaining parapet and flower-bed coping. Keep the low garden-retaining front source contours; flower plants are separate. Do not raise this to the upper wall height.\nPAL-LOWER-WING-001-S04 \u2014 Projecting star-window pier: The actual short projecting pale faceted pier: stepped square/faceted marble plinth, single tall blue star lancet, thin ivory corner piers, gold collar and a small open floral rail cap. It attaches to the wall at the rear. No onion or cone roof on this projection.\nKeep small reused ornament installed for source appearance, but detachable decor belongs to the corresponding detail pack. Do not bake neighboring towers, plants or hanging lantern bodies into these modules. Common mating profile and front-facing facet orientation wherever two vertical sections stack; section cut planes follow the source stone bands. Mark small J labels at mating rims. No industrial joints, mechanical plugs or added hidden floors. Displayed pixel dimensions are illustrative; visible original crop proportions remain master.",
+    "decor": "Use the SINGLE supplied original GEN-37 crop as the visible design authority. Other existing component studies only support construction/ornament vocabulary. Maintain rose/ivory veined marble, source blue/lilac/pink glass, fine muted polished gold, plum-violet roof surfaces. Clean restrained nearly frontal orthographic technical product view with enough depth to see interfaces; whole uncropped models on clean warm-white paper/studio background. Preserve visible relative proportions and asymmetric offsets; infer only unseen backs, support faces and join undersides conservatively. No complete palace or redesigned tower, no scene, people, extra background buildings or plants unless a planting asset is explicitly requested. All pieces separated, no neighbor fusion. Labels below objects, not embedded on surfaces. Exactly the requested item count. Straight columns remain straight, arches regular, curved strips smooth and single, no melted curls, warped faces or gratuitous extra spikes. Preserve fine source details without exaggerating their size.\nTitle: PAL-LOWER-WING-DECOR-001 \u2014 Lower angled arcades, star pier and stairs detail kit. Exactly16 complete separately isolated detail assets in a4-by-4 grid, one per cell. Sixteen missing join/profile fittings only. Reuse existing full windows, lotus capitals, lanterns, urns, trees, roses and fountain masters. Keep these small architectural ends restrained; no extra glass inserted into cornice bands. Clearly isolated smooth profiles, no twisted stone.\nPAL-LOWER-WING-001-D01 \u2014 Angled rail return: One mitred floral pierced ivory/gold rail corner matching the wing bend, no full wall.\nPAL-LOWER-WING-001-D02 \u2014 Pier-to-rail end block: Small carved end block where roof railing meets the star pier.\nPAL-LOWER-WING-001-D03 \u2014 Star-pier wall saddle: Shallow moulded marble/gold rear junction pad receiving the neighboring wing cornice.\nPAL-LOWER-WING-001-D04 \u2014 Terrace corner bed coping: Single angled rose/ivory bed-edge coping corner, gold lip.\nPAL-LOWER-WING-001-D05 \u2014 Stepped flower-bed edging: Single short sloped marble bed-retaining edge with clean join ends; no plants.\nPAL-LOWER-WING-001-D06 \u2014 Rail end leaf clasp: Tiny gilded leaf clasp at rail termination, one fitting.\nPAL-LOWER-WING-001-D07 \u2014 Stair side coping repeat: One straight rose/ivory handrail-coping strip, gentle source incline; no stairs or wall.\nPAL-LOWER-WING-001-D08 \u2014 Turned stair coping corner: One clean L-turn marble/gold coping segment meeting the landing.\nPAL-LOWER-WING-001-D09 \u2014 Stair bottom return shoe: Small moulded foot return of the sloped stair parapet, separate.\nPAL-LOWER-WING-001-D10 \u2014 Stair head rail transition: Small moulded transition from rising handrail to horizontal landing coping.\nPAL-LOWER-WING-001-D11 \u2014 Pier plinth front panel: One source ivory marble rectangular panel with faint rose veining and fine moulded border.\nPAL-LOWER-WING-001-D12 \u2014 Pier plinth corner fillet: One tall thin marble/gold corner edging piece for the projecting pedestal.\nPAL-LOWER-WING-001-D13 \u2014 Bed retaining-foot corner: One low stepped moulded base corner for the terrace flower-bed edge.\nPAL-LOWER-WING-001-D14 \u2014 Planter pedestal seat: One small pale square stone pedestal top and shallow stem for an existing planter, no new pot or flowers.\nPAL-LOWER-WING-001-D15 \u2014 Stair-end floral relief: One restrained white/gold rose relief fitted to the stair parapet end.\nPAL-LOWER-WING-001-D16 \u2014 Arcade sill mitre return: One short mitred ivory/rose/gold window-sill return matching the angled bay.\nNo whole wall, tower, roof or assembled staircase in this detail pack. Individual objects shown at readable independent review scales; full depth, mounting backs and clean seam ends. Source motifs remain consistent with their parent structural sections. Preserve exact printed IDs and short item names, no extra objects or duplicate alternate views. Thin profile parts have sensible complete ends. Avoid detached ornaments fused to each other. Common lantern cages/pendants already exist in PAL-TOWER-001-D14/D15/D16; only family-specific mounts/junctions are requested here.",
+    "stairs": "Use the SINGLE supplied original GEN-37 crop as the visible design authority. Other existing component studies only support construction/ornament vocabulary. Maintain rose/ivory veined marble, source blue/lilac/pink glass, fine muted polished gold, plum-violet roof surfaces. Clean restrained nearly frontal orthographic technical product view with enough depth to see interfaces; whole uncropped models on clean warm-white paper/studio background. Preserve visible relative proportions and asymmetric offsets; infer only unseen backs, support faces and join undersides conservatively. No complete palace or redesigned tower, no scene, people, extra background buildings or plants unless a planting asset is explicitly requested. All pieces separated, no neighbor fusion. Labels below objects, not embedded on surfaces. Exactly the requested item count. Straight columns remain straight, arches regular, curved strips smooth and single, no melted curls, warped faces or gratuitous extra spikes. Preserve fine source details without exaggerating their size.\nTitle PAL-STAIR-001 \u2014 Joinable staircase sections. Exactly4 separate complete modules in a2-by-2 grid. The source pedestrian flight rises from left/lower to right/upper beside the planted wing; preserve shallow regular treads and its continuous low ivory/rose floral parapets. Four modules only, same nominal flight width and handrail profile. S01\u2192S02\u2192S03\u2192S04 defines a proposed reusable circulation chain; the corner turn is inferred for modular reuse. Do not copy the adjacent royal blue cascade into these stairs. Print exact full IDs AND part names under all four.\nPAL-STAIR-001-S01 \u2014 Straight dry stair flight: One straight wide shallow-tread marble flight with source ivory/rose sides and low floral balustrade; clean first/last tread planes, no fountain.\nPAL-STAIR-001-S02 \u2014 Intermediate landing: Plain shallow rectangular marble landing matching the flight width, floral rail ends, complete rear join.\nPAL-STAIR-001-S03 \u2014 Turning flight and corner landing: A dry flight with a modest angled return landing and source floral parapet, for the wall-side change of direction. This hidden turn is a conservative proposed connection, not claimed visible exact geometry.\nPAL-STAIR-001-S04 \u2014 Upper arrival landing: Wide shallow marble terrace landing ending flush against a separate wing wall, source low rails and planter seats, no neighboring palace wall fused.\nSource stair profile and railing vocabulary remain unchanged; clean modular start/end landings, continuous side coping and matched handrail/edge heights. Keep staircase dry and pedestrian; do not add a wet cascade. No neighboring walls/gardens or a whole palace in the sheet. Inferred backs and structural underside remain conservative. Caption each model below with exact IDs AND the short part names. Print the sheet title above the grid.",
+    "structure_correction": "Correct this four-cell lower palace wall reference sheet. Preserve title, exact IDs/names, layout and marble/glass/gold details. S03 lower stepped arcade and S04 projecting star pier remain unchanged. S01 top-left must be a compact TWO-window straight module, two pointed windows of equal width, not three. Remove the extra third window bay and shorten the rail/plinth correspondingly while retaining full end piers. S02 top-right must be a gentle OBLIQUE convex wing return, TWO pointed window bays total, one on each face. The direction changes by about 30\u201345 degrees with a soft short faceted corner, never an L-shaped ninety-degree inward recess. Show the outward convex front face, its two window faces joined continuously across a slender moulded corner pier; one continuous matching roof rail, cornice and sill. This is a palace wing protrusion with angled edges, not a square cuboid and not an interior corner. Thin shallow wall backing only. No extra windows, plants, walls or pedestals. Columns straight, carvings neat, captions all retained and legible, whole objects uncropped.",
+    "stairs_correction": "Correct this four-section palace stair reference sheet for detachable modular construction. Preserve title, every exact ID and name, white/rose marble, shallow even treads, source gold floral parapet style. ALL FOUR sections: remove ALL flower plants, roses, green leaves, pots and urns; leave clean EMPTY flat planter seats on the same posts, because planting and pots are separate existing assets. Do not remove the structural railing posts. S01 Straight dry stair flight remains a flight with even treads. S02 Intermediate landing and S04 Upper arrival landing must be FLAT thin landing slabs only: REMOVE all three front entrance treads/steps from these two sections, leaving a single plain flat seam edge aligned at top surface for joining the next flight. Side rails only, no barrier across their front/back circulation openings. S03 keep the shallow flight and its upper corner landing as a conservative reusable turn proposal, show a clear open exit at the side of its top landing, no rail blocking circulation. Keep start and end mating surfaces clean and complete; no palace, fountain, glass, added floors or giant pedestals. Straight regular geometry, readable thin ornament and exact full printed captions beneath each part."
+  },
+  "outputs": [
+    {
+      "sheet_id": "PAL-LOWER-WING-001",
+      "kind": "structure_correction",
+      "file": "remaining-palace-kits/lower-wing/PAL-LOWER-WING-001.png",
+      "sha256": "0eb0d163e527f3b325bec64cfb4faa51d057fcfb746edf49987d1c6d6acd18c3",
+      "original_file": "/workspace/generated_images/exec-b8866254-0b63-4f12-8eb1-19490c9f1d03.png",
+      "source_reference_id": "SRC-PAL-LOWER-WING-001",
+      "source_reference_sha256": "e59a042eac958210021baf4ac3f065e34f7364543dbdfaa477766310cec410cd",
+      "prompt_key": "structure_correction",
+      "generator": "image_gen.imagegen",
+      "review_status": "pending-user-review",
+      "actual_generation_input_file": "remaining-palace-kits/lower-wing/rejected-drafts/PAL-LOWER-WING-001-R01.png",
+      "actual_generation_input_sha256": "2363b269fa226dcb4a5dcb1804f09dbba152e8fbc6c310c42d74dedca6242e97"
+    },
+    {
+      "sheet_id": "PAL-LOWER-WING-DECOR-001",
+      "kind": "decor",
+      "file": "remaining-palace-kits/lower-wing/PAL-LOWER-WING-DECOR-001.png",
+      "sha256": "f93a2a85097835018b430671a76b04347268bd88f518316f4edc7fd2eccfc573",
+      "original_file": "/workspace/generated_images/exec-c72b3971-8f83-4a16-87ce-62aea3772f57.png",
+      "source_reference_id": "SRC-PAL-LOWER-WING-001",
+      "source_reference_sha256": "e59a042eac958210021baf4ac3f065e34f7364543dbdfaa477766310cec410cd",
+      "prompt_key": "decor",
+      "generator": "image_gen.imagegen",
+      "review_status": "pending-user-review",
+      "actual_generation_input_file": "remaining-palace-kits/lower-wing/original-source.png",
+      "actual_generation_input_sha256": "e59a042eac958210021baf4ac3f065e34f7364543dbdfaa477766310cec410cd"
+    },
+    {
+      "sheet_id": "PAL-STAIR-001",
+      "kind": "stairs_correction",
+      "file": "remaining-palace-kits/lower-wing/PAL-STAIR-001.png",
+      "sha256": "1c1053b7ead81ce2e0279fd533ebe84341919ff88e8d83af2886a4c0fcbdece4",
+      "original_file": "/workspace/generated_images/exec-78cd3052-1c0d-4960-8808-4d9cc4f7f305.png",
+      "source_reference_id": "SRC-PAL-LOWER-WING-001",
+      "source_reference_sha256": "e59a042eac958210021baf4ac3f065e34f7364543dbdfaa477766310cec410cd",
+      "prompt_key": "stairs_correction",
+      "generator": "image_gen.imagegen",
+      "review_status": "pending-user-review",
+      "actual_generation_input_file": "remaining-palace-kits/lower-wing/rejected-drafts/PAL-STAIR-001-R01.png",
+      "actual_generation_input_sha256": "c161a97f00403d861fb232393f060abaa57f2f68acacf0c60061da32edcaee32"
+    }
+  ],
+  "shared_decor_id": null,
+  "shared_common_ids": [
+    "PAL-TOWER-001-D13",
+    "PAL-TOWER-001-D14",
+    "PAL-TOWER-001-D15",
+    "PAL-TOWER-001-D16"
+  ],
+  "limits": "Hidden backs/profile dimensions inferred. Actual model fit unverified. Original front determines visible design.",
+  "extra_structure": {
+    "sheet_id": "PAL-STAIR-001",
+    "parts": [
+      {
+        "asset_id": "PAL-STAIR-001-S01",
+        "name": "Straight dry stair flight",
+        "description": "One straight wide shallow-tread marble flight with source ivory/rose sides and low floral balustrade; clean first/last tread planes, no fountain.",
+        "model_status": "unregistered",
+        "review_status": "pending",
+        "reuse_component_ids": [
+          "GEN-43-M01",
+          "GEN-43-M02",
+          "GEN-43-M03",
+          "GEN-43-M06",
+          "GEN-33-R04",
+          "GEN-35-A01",
+          "GEN-38-M03",
+          "GEN-38-M04",
+          "GEN-41-M02"
+        ]
+      },
+      {
+        "asset_id": "PAL-STAIR-001-S02",
+        "name": "Intermediate landing",
+        "description": "Plain shallow rectangular marble landing matching the flight width, floral rail ends, complete rear join.",
+        "model_status": "unregistered",
+        "review_status": "pending",
+        "reuse_component_ids": [
+          "GEN-43-M01",
+          "GEN-43-M02",
+          "GEN-43-M03",
+          "GEN-43-M06",
+          "GEN-33-R04",
+          "GEN-35-A01",
+          "GEN-38-M03",
+          "GEN-38-M04",
+          "GEN-41-M02"
+        ]
+      },
+      {
+        "asset_id": "PAL-STAIR-001-S03",
+        "name": "Turning flight and corner landing",
+        "description": "A dry flight with a modest angled return landing and source floral parapet, for the wall-side change of direction. This hidden turn is a conservative proposed connection, not claimed visible exact geometry.",
+        "model_status": "unregistered",
+        "review_status": "pending",
+        "reuse_component_ids": [
+          "GEN-43-M01",
+          "GEN-43-M02",
+          "GEN-43-M03",
+          "GEN-43-M06",
+          "GEN-33-R04",
+          "GEN-35-A01",
+          "GEN-38-M03",
+          "GEN-38-M04",
+          "GEN-41-M02"
+        ]
+      },
+      {
+        "asset_id": "PAL-STAIR-001-S04",
+        "name": "Upper arrival landing",
+        "description": "Wide shallow marble terrace landing ending flush against a separate wing wall, source low rails and planter seats, no neighboring palace wall fused.",
+        "model_status": "unregistered",
+        "review_status": "pending",
+        "reuse_component_ids": [
+          "GEN-43-M01",
+          "GEN-43-M02",
+          "GEN-43-M03",
+          "GEN-43-M06",
+          "GEN-33-R04",
+          "GEN-35-A01",
+          "GEN-38-M03",
+          "GEN-38-M04",
+          "GEN-41-M02"
+        ]
+      }
+    ]
+  },
+  "previous_attempts": [
+    {
+      "sheet_id": "PAL-LOWER-WING-001",
+      "kind": "structure",
+      "file": "remaining-palace-kits/lower-wing/rejected-drafts/PAL-LOWER-WING-001-R01.png",
+      "sha256": "2363b269fa226dcb4a5dcb1804f09dbba152e8fbc6c310c42d74dedca6242e97",
+      "original_file": "/workspace/generated_images/exec-0ad6ee96-18dc-40a1-abd2-2aea218f5e21.png",
+      "source_reference_id": "SRC-PAL-LOWER-WING-001",
+      "source_reference_sha256": "e59a042eac958210021baf4ac3f065e34f7364543dbdfaa477766310cec410cd",
+      "prompt_key": "structure",
+      "generator": "image_gen.imagegen",
+      "review_status": "superseded-right-angle-return-and-extra-window-bay"
+    },
+    {
+      "sheet_id": "PAL-STAIR-001",
+      "kind": "stairs",
+      "file": "remaining-palace-kits/lower-wing/rejected-drafts/PAL-STAIR-001-R01.png",
+      "sha256": "c161a97f00403d861fb232393f060abaa57f2f68acacf0c60061da32edcaee32",
+      "original_file": "/workspace/generated_images/exec-03a2c714-556c-4aee-ab60-c268d3b6f621.png",
+      "source_reference_id": "SRC-PAL-LOWER-WING-001",
+      "source_reference_sha256": "e59a042eac958210021baf4ac3f065e34f7364543dbdfaa477766310cec410cd",
+      "prompt_key": "stairs",
+      "generator": "image_gen.imagegen",
+      "review_status": "superseded-fused-planting-and-stepped-flat-landings"
+    }
+  ],
+  "review_notes": [
+    "Wall return depth/direction is inferred: S02 shows a concave oblique return, not a verified source plan extrusion. Preserve source front contours when laying out the wing.",
+    "S03 stair turning/exit geometry remains a proposed connection; its top railing must be opened at the actual exit when modeled. Flat landing slabs and empty planter seats corrected.",
+    "D07/D08 include supporting parapet beneath coping; isolate the upper coping only if generating trim instead of a complete low parapet segment."
+  ],
+  "review_status": "pending-user-reference-review",
+  "models_generated": 0,
+  "actual_3D_joint_fit_verified": false,
+  "part_scales": "Independent drawing scales, not measured manufacturing dimensions",
+  "existing_board_reuse": [
+    "GEN-09",
+    "GEN-13",
+    "GEN-35",
+    "GEN-34",
+    "GEN-43"
+  ]
+}

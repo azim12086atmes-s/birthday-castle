@@ -33,7 +33,7 @@
     },
     {
       "family": "Tower bodies and roof assemblies",
-      "cap": 9,
+      "cap": 10,
       "existing_ids": [
         "GEN-17",
         "GEN-32",
@@ -74,7 +74,7 @@
     },
     {
       "family": "Interiors and furniture",
-      "cap": 12,
+      "cap": 11,
       "existing_ids": [
         "GEN-07",
         "GEN-24",
@@ -840,11 +840,16 @@
       "sheet_id": "PAL-STAIR-001",
       "owner": "palace",
       "family": "Stairs, fountains, terraces and courtyards",
-      "title": "Original palace \u2014 stair and cascade bodies",
-      "status": "paused-for-wing-source-comparison",
-      "file": "",
-      "sha256": "",
-      "generation_attempts_in_this_pass": 0
+      "title": "Lower wing \u2014 joinable stair and landing sections",
+      "status": "generated-pending-source-and-user-review",
+      "file": "remaining-palace-kits/lower-wing/PAL-STAIR-001.png",
+      "sha256": "1c1053b7ead81ce2e0279fd533ebe84341919ff88e8d83af2886a4c0fcbdece4",
+      "generation_attempts_in_this_pass": 2,
+      "retry_reasons": [
+        "Remove fused planters/flowers from structural stairs and remove added treads on flat connecting landings"
+      ],
+      "component_count": 4,
+      "review_notes": "No models generated or physical fit certified. Wall return depth/direction is inferred: S02 shows a concave oblique return, not a verified source plan extrusion. Preserve source front contours when laying out the wing. S03 stair turning/exit geometry remains a proposed connection; its top railing must be opened at the actual exit when modeled. Flat landing slabs and empty planter seats corrected. D07/D08 include supporting parapet beneath coping; isolate the upper coping only if generating trim instead of a complete low parapet segment."
     },
     {
       "sheet_id": "PAL-INT-PROP-001",
@@ -999,6 +1004,162 @@
       "generation_attempts_in_this_pass": 1,
       "component_count": 16,
       "review_notes": "Only first terminal family. Use source cuts for relative proportions; dimensions/hidden interfaces proposed. No meshes generated."
+    },
+    {
+      "sheet_id": "PAL-TOWER-002",
+      "owner": "palace",
+      "family": "Tower bodies and roof assemblies",
+      "title": "Broad western domed pavilion structural sections",
+      "status": "generated-pending-source-and-user-review",
+      "file": "remaining-palace-kits/pavilion/PAL-TOWER-002.png",
+      "sha256": "7198e83e31d8392b4260c5371c93a6a9478df802dc42203b0d95a327f6eb0c13",
+      "generation_attempts_in_this_pass": 2,
+      "retry_reasons": [
+        "Structural pieces match the source family, but captions omitted the requested readable part names; edit captions only."
+      ],
+      "component_count": 4,
+      "review_notes": "No models generated or physical fit certified. Tip saddle/spindle/rib profile simplified after owner distortion report. Displayed parts use independent illustration scales; source crop controls assembled proportions."
+    },
+    {
+      "sheet_id": "PAL-TOWER-002-DECOR",
+      "owner": "palace",
+      "family": "Glass, carvings, rails and architectural fittings",
+      "title": "Broad western domed pavilion detachable details",
+      "status": "generated-pending-source-and-user-review",
+      "file": "remaining-palace-kits/pavilion/PAL-TOWER-002-DECOR.png",
+      "sha256": "8c4aa329c720d7a4c41d1e7a9e193b6431edaf0dc20543fcceb2e26555720adb",
+      "generation_attempts_in_this_pass": 2,
+      "retry_reasons": [
+        "User reports distorted decor; simplify oversized tip saddle and keep coherent thin mounting pieces"
+      ],
+      "component_count": 16,
+      "review_notes": "No models generated or physical fit certified. Tip saddle/spindle/rib profile simplified after owner distortion report. Displayed parts use independent illustration scales; source crop controls assembled proportions."
+    },
+    {
+      "sheet_id": "PAL-TOWER-003",
+      "owner": "palace",
+      "family": "Tower bodies and roof assemblies",
+      "title": "Slender western needle structural sections",
+      "status": "generated-pending-source-and-user-review",
+      "file": "remaining-palace-kits/needle/PAL-TOWER-003.png",
+      "sha256": "a1c9c37bb27123c23f93417069a817d430a7ffee83400c616ac96bc045606898",
+      "generation_attempts_in_this_pass": 2,
+      "retry_reasons": [
+        "Remove invented extra arched tier from needle crown collar"
+      ],
+      "component_count": 4,
+      "review_notes": "No models generated or physical fit certified. Extra lower crown tier removed. Whole-cone decor corrected to a single rib; mounts simplified. D12 is a fitting concept, its section/thickness remains to be normalized."
+    },
+    {
+      "sheet_id": "PAL-TOWER-003-DECOR",
+      "owner": "palace",
+      "family": "Glass, carvings, rails and architectural fittings",
+      "title": "Slender western needle detachable details",
+      "status": "generated-pending-source-and-user-review",
+      "file": "remaining-palace-kits/needle/PAL-TOWER-003-DECOR.png",
+      "sha256": "ce866d4fac50cf34e9e3386e2d5b1122211b1e2d5bc3817a0640c7c4aa1abcd8",
+      "generation_attempts_in_this_pass": 2,
+      "retry_reasons": [
+        "User reports distorted decor; replace whole cone with single rib and simplify oversized mounts"
+      ],
+      "component_count": 16,
+      "review_notes": "No models generated or physical fit certified. Extra lower crown tier removed. Whole-cone decor corrected to a single rib; mounts simplified. D12 is a fitting concept, its section/thickness remains to be normalized."
+    },
+    {
+      "sheet_id": "PAL-TOWER-004",
+      "owner": "palace",
+      "family": "Tower bodies and roof assemblies",
+      "title": "Eastern projecting onion belvedere structural sections",
+      "status": "generated-pending-source-and-user-review",
+      "file": "remaining-palace-kits/belvedere/PAL-TOWER-004.png",
+      "sha256": "6e1390b08a11b97dd5c044e2b7cf3ddbf6495751dcce93bad5f0584f98301d15",
+      "generation_attempts_in_this_pass": 1,
+      "component_count": 4,
+      "review_notes": "No models generated or physical fit certified. Invented glazing removed from cornice/rail fittings. S04 still shows a pointed terminal instead of the source star: use existing PAL-TOWER-001-D13 at its tip."
+    },
+    {
+      "sheet_id": "PAL-TOWER-004-DECOR",
+      "owner": "palace",
+      "family": "Glass, carvings, rails and architectural fittings",
+      "title": "Eastern projecting onion belvedere detachable details",
+      "status": "generated-pending-source-and-user-review",
+      "file": "remaining-palace-kits/belvedere/PAL-TOWER-004-DECOR.png",
+      "sha256": "70607714cd79cd8d859fc1bb6872084f21f1ba85a73b14d8b5c6d5d87efc10ea",
+      "generation_attempts_in_this_pass": 2,
+      "retry_reasons": [
+        "Remove invented blue clerestory glazing from cornice and rail parts, simplify foot clamp"
+      ],
+      "component_count": 16,
+      "review_notes": "No models generated or physical fit certified. Invented glazing removed from cornice/rail fittings. S04 still shows a pointed terminal instead of the source star: use existing PAL-TOWER-001-D13 at its tip."
+    },
+    {
+      "sheet_id": "PAL-TOWER-005",
+      "owner": "palace",
+      "family": "Tower bodies and roof assemblies",
+      "title": "Eastern unequal spire pair structural sections",
+      "status": "generated-pending-source-and-user-review",
+      "file": "remaining-palace-kits/spire-pair/PAL-TOWER-005.png",
+      "sha256": "bbc3bf79a326581899f2e0ee02bba91c12afaf72e2813e8b1d277b4e81a4eef6",
+      "generation_attempts_in_this_pass": 1,
+      "component_count": 4,
+      "review_notes": "No models generated or physical fit certified. Lanterns shown on the stems are installation context for existing detachable parts; do not fuse them into meshes. Main/companion heights remain distinct. Resolve collar overlap at crown join before modeling."
+    },
+    {
+      "sheet_id": "PAL-LOWER-WING-001",
+      "owner": "palace",
+      "family": "Base, wall bodies and stepped wings",
+      "title": "Lower angled arcades, star pier and stairs structural sections",
+      "status": "generated-pending-source-and-user-review",
+      "file": "remaining-palace-kits/lower-wing/PAL-LOWER-WING-001.png",
+      "sha256": "0eb0d163e527f3b325bec64cfb4faa51d057fcfb746edf49987d1c6d6acd18c3",
+      "generation_attempts_in_this_pass": 2,
+      "retry_reasons": [
+        "Replace right-angle return with soft oblique wing bend and honor two-window section counts"
+      ],
+      "component_count": 4,
+      "review_notes": "No models generated or physical fit certified. Wall return depth/direction is inferred: S02 shows a concave oblique return, not a verified source plan extrusion. Preserve source front contours when laying out the wing. S03 stair turning/exit geometry remains a proposed connection; its top railing must be opened at the actual exit when modeled. Flat landing slabs and empty planter seats corrected. D07/D08 include supporting parapet beneath coping; isolate the upper coping only if generating trim instead of a complete low parapet segment."
+    },
+    {
+      "sheet_id": "PAL-LOWER-WING-DECOR-001",
+      "owner": "palace",
+      "family": "Stairs, fountains, terraces and courtyards",
+      "title": "Lower angled arcades, star pier and stairs detachable details",
+      "status": "generated-pending-source-and-user-review",
+      "file": "remaining-palace-kits/lower-wing/PAL-LOWER-WING-DECOR-001.png",
+      "sha256": "f93a2a85097835018b430671a76b04347268bd88f518316f4edc7fd2eccfc573",
+      "generation_attempts_in_this_pass": 1,
+      "component_count": 16,
+      "review_notes": "No models generated or physical fit certified. Wall return depth/direction is inferred: S02 shows a concave oblique return, not a verified source plan extrusion. Preserve source front contours when laying out the wing. S03 stair turning/exit geometry remains a proposed connection; its top railing must be opened at the actual exit when modeled. Flat landing slabs and empty planter seats corrected. D07/D08 include supporting parapet beneath coping; isolate the upper coping only if generating trim instead of a complete low parapet segment."
+    },
+    {
+      "sheet_id": "PAL-TOWER-006",
+      "owner": "palace",
+      "family": "Tower bodies and roof assemblies",
+      "title": "Royal needle with attached companion turrets structural sections",
+      "status": "generated-pending-source-and-user-review",
+      "file": "remaining-palace-kits/royal-needle/PAL-TOWER-006.png",
+      "sha256": "0d946db63dc537b9b701ade1ed3c196bc5b5c01d385aec891def0136da441d68",
+      "generation_attempts_in_this_pass": 2,
+      "retry_reasons": [
+        "Remove duplicated window-bearing collar from royal roof; shaft already includes collar"
+      ],
+      "component_count": 4,
+      "review_notes": "No models generated or physical fit certified. Duplicated clerestory removed from roof section. S03 companion roof uses existing needle crown vocabulary with source diameter/height normalization. Lantern-support underside is inferred."
+    },
+    {
+      "sheet_id": "PAL-TOWER-007",
+      "owner": "palace",
+      "family": "Tower bodies and roof assemblies",
+      "title": "Slim star-glass onion gallery tower structural sections",
+      "status": "generated-pending-source-and-user-review",
+      "file": "remaining-palace-kits/slim-onion/PAL-TOWER-007.png",
+      "sha256": "f9fd5a41324fe4a0c348394ad119abb6b4c0e0daf8c86d41f14c68eaba320156",
+      "generation_attempts_in_this_pass": 2,
+      "retry_reasons": [
+        "Remove invented stacked hanging lanterns from slim body; lanterns already have separate shared kit"
+      ],
+      "component_count": 4,
+      "review_notes": "No models generated or physical fit certified. Invented stacked lanterns removed from the body. Slim onion gallery reuses existing star-glass and small-canopy details rather than a new decor pack."
     }
   ],
   "production_pass": "palace-coverage-missing-only",
@@ -1035,7 +1196,7 @@
     "side_rear_schedule": "palace-side-rear/schedule.json",
     "complete_roof_plan": "palace-roof-plan/schedule.json"
   },
-  "production_pass_status": "First terminal screenshot family generated:4 structural sections +16 details. One family at a time; no Blender builds; other screenshots queued.",
+  "production_pass_status": "All supplied screenshot families covered by12 new draft sheets:32 structural sections and64 detail fittings; shared details reused. Reference review pending, no meshes.",
   "structural_sheet_rule": "Display source-fitted assemblies with existing canonical decor so identity and proportions can be checked. Bare host views are internal construction proposals, not replacements for the original decorated wing references.",
   "generation_paused": true,
   "pause_reason": "Requested roof/stair proposal finished. Painted attempt rejected; coordinate diagram covers33 placements and11 stair links. Source-depth registration remains a layout task.",
@@ -1111,5 +1272,8 @@
     }
   ],
   "component_workflow": "Modular walls first; later stairs, wards/wings, towers and fountain components. Exhaustive palace section inventory later.",
-  "generation_resume_reason": "Explicit source-screenshot instruction: one terminal tower family only, four mating sections and one16-piece decor pack. No Blender build."
+  "generation_resume_reason": "Owner requests the same section/decor treatment for all remaining supplied screenshot families, reviewed and generated sequentially with one local reference per call.",
+  "allocation_notes": [
+    "Latest owner crops add royal needle with attached turrets and slim star-glass onion gallery; move one unspent interior allowance to tower bodies, keeping palace cap65/world165/total230. Shared existing detail packs cover both; no extra decor sheets."
+  ]
 }

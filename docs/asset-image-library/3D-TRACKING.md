@@ -50,3 +50,7 @@ The roof-plan study is unapproved and paused. Use the [wall kit component regist
 ## Terminal tower input
 
 Use PAL-TOWER-001 for four structural sections and PAL-TOWER-001-DECOR for16 detachable details. Full part IDs are PAL-TOWER-001-S01…S04 and PAL-TOWER-001-D01…D16. Original source sections control proportions; shaded backs and profiles are inferred. No Blender models were produced. Record an actual batch mesh file only after identifying each separated component.
+
+## Remaining screenshot inputs
+
+[96 source-linked targets](remaining-palace-kits/components.csv) comprise32 structural sections and64 fitting parts on12 sheets. Shared lantern/star/crown/planting references count once. Model filename uses the printed part ID. All targets remain unregistered and pending reference review. Family schedules describe proposed joins, inferred back faces and remaining shape issues. No generated model is implied by a sheet.

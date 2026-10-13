@@ -1,0 +1,20 @@
+{
+  "new_sheets": 12,
+  "structural_targets": 32,
+  "detail_targets": 64,
+  "source_section_crops": 28,
+  "direct_crops_match_original_pixels": true,
+  "source_and_output_hashes_verified": true,
+  "archive_hashes_verified": true,
+  "all45_original_boards_preserved": true,
+  "archive_images": 683,
+  "model_targets": 285,
+  "generated_models_this_pass": 0,
+  "selected_or_reserved": 79,
+  "palace_selected_or_reserved": 62,
+  "global_cap": 230,
+  "palace_cap": 65,
+  "actual_3D_join_fit_verified": false,
+  "review_status": "pending-user-reference-review",
+  "limitations": "Integrity checks do not establish geometric fidelity. Independent illustration scales, hidden profiles, stair turn and listed source differences still need review."
+}

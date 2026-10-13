@@ -1,0 +1,399 @@
+{
+  "scope": "Remaining supplied screenshot families only, no full palace redraw or Blender models",
+  "workflow": "One family at a time; original GEN-37 source and direct crops control visible design",
+  "shared_detail_rule": "The eastern spire pair reuses the needle detail pack and shared terminal lantern/finial parts",
+  "families": [
+    {
+      "key": "pavilion",
+      "name": "Broad western domed pavilion",
+      "structure_id": "PAL-TOWER-002",
+      "decor_id": "PAL-TOWER-002-DECOR",
+      "crop_alias": "T02",
+      "shared_decor_id": null,
+      "status": "generated-pending-reference-review",
+      "schedule": "remaining-palace-kits/pavilion/schedule.json",
+      "review_notes": [
+        "Tip saddle/spindle/rib profile simplified after owner distortion report. Displayed parts use independent illustration scales; source crop controls assembled proportions."
+      ]
+    },
+    {
+      "key": "needle",
+      "name": "Slender western needle",
+      "structure_id": "PAL-TOWER-003",
+      "decor_id": "PAL-TOWER-003-DECOR",
+      "crop_alias": "T06",
+      "shared_decor_id": null,
+      "status": "generated-pending-reference-review",
+      "schedule": "remaining-palace-kits/needle/schedule.json",
+      "review_notes": [
+        "Extra lower crown tier removed. Whole-cone decor corrected to a single rib; mounts simplified. D12 is a fitting concept, its section/thickness remains to be normalized."
+      ]
+    },
+    {
+      "key": "belvedere",
+      "name": "Eastern projecting onion belvedere",
+      "structure_id": "PAL-TOWER-004",
+      "decor_id": "PAL-TOWER-004-DECOR",
+      "crop_alias": "T05",
+      "shared_decor_id": null,
+      "status": "generated-pending-reference-review",
+      "schedule": "remaining-palace-kits/belvedere/schedule.json",
+      "review_notes": [
+        "Invented glazing removed from cornice/rail fittings. S04 still shows a pointed terminal instead of the source star: use existing PAL-TOWER-001-D13 at its tip."
+      ]
+    },
+    {
+      "key": "spire-pair",
+      "name": "Eastern unequal spire pair",
+      "structure_id": "PAL-TOWER-005",
+      "decor_id": null,
+      "crop_alias": "T03",
+      "shared_decor_id": "PAL-TOWER-003-DECOR",
+      "status": "generated-pending-reference-review",
+      "schedule": "remaining-palace-kits/spire-pair/schedule.json",
+      "review_notes": [
+        "Lanterns shown on the stems are installation context for existing detachable parts; do not fuse them into meshes. Main/companion heights remain distinct. Resolve collar overlap at crown join before modeling."
+      ]
+    },
+    {
+      "key": "lower-wing",
+      "name": "Lower angled arcades, star pier and stairs",
+      "structure_id": "PAL-LOWER-WING-001",
+      "decor_id": "PAL-LOWER-WING-DECOR-001",
+      "crop_alias": "W03 + S02, same western source frontage",
+      "shared_decor_id": null,
+      "status": "generated-pending-reference-review",
+      "schedule": "remaining-palace-kits/lower-wing/schedule.json",
+      "review_notes": [
+        "Wall return depth/direction is inferred: S02 shows a concave oblique return, not a verified source plan extrusion. Preserve source front contours when laying out the wing.",
+        "S03 stair turning/exit geometry remains a proposed connection; its top railing must be opened at the actual exit when modeled. Flat landing slabs and empty planter seats corrected.",
+        "D07/D08 include supporting parapet beneath coping; isolate the upper coping only if generating trim instead of a complete low parapet segment."
+      ]
+    },
+    {
+      "key": "royal-needle",
+      "name": "Royal needle with attached companion turrets",
+      "structure_id": "PAL-TOWER-006",
+      "decor_id": null,
+      "crop_alias": "T01",
+      "shared_decor_id": "PAL-TOWER-003-DECOR",
+      "status": "generated-pending-reference-review",
+      "schedule": "remaining-palace-kits/royal-needle/schedule.json",
+      "review_notes": [
+        "Duplicated clerestory removed from roof section. S03 companion roof uses existing needle crown vocabulary with source diameter/height normalization. Lantern-support underside is inferred."
+      ]
+    },
+    {
+      "key": "slim-onion",
+      "name": "Slim star-glass onion gallery tower",
+      "structure_id": "PAL-TOWER-007",
+      "decor_id": null,
+      "crop_alias": "Latest-owner-crop",
+      "shared_decor_id": "PAL-TOWER-001-DECOR + PAL-TOWER-004-DECOR",
+      "status": "generated-pending-reference-review",
+      "schedule": "remaining-palace-kits/slim-onion/schedule.json",
+      "review_notes": [
+        "Invented stacked lanterns removed from the body. Slim onion gallery reuses existing star-glass and small-canopy details rather than a new decor pack."
+      ]
+    }
+  ],
+  "sheet_ids": [
+    "PAL-TOWER-002",
+    "PAL-TOWER-002-DECOR",
+    "PAL-TOWER-003",
+    "PAL-TOWER-003-DECOR",
+    "PAL-TOWER-004",
+    "PAL-TOWER-004-DECOR",
+    "PAL-TOWER-005",
+    "PAL-LOWER-WING-001",
+    "PAL-LOWER-WING-DECOR-001",
+    "PAL-STAIR-001",
+    "PAL-TOWER-006",
+    "PAL-TOWER-007"
+  ],
+  "generation_records": [
+    {
+      "sheet_id": "PAL-TOWER-002",
+      "kind": "structure",
+      "file": "remaining-palace-kits/pavilion/rejected-drafts/PAL-TOWER-002-R01.png",
+      "sha256": "99dbaa7f43420c9e625f0a086b570792832050c6a149f40ab82b42fe20b969d5",
+      "original_file": "/workspace/generated_images/exec-f493426c-876a-410e-99cf-8a3685112e0f.png",
+      "source_reference_id": "REF-9F4D290C4C4D",
+      "source_reference_sha256": "9f4d290c4c4d18bca8cc2587c7745ddb6e879af193f5491359a97183ce58a785",
+      "prompt_key": "structure",
+      "generator": "image_gen.imagegen",
+      "review_status": "superseded-for-missing-part-names"
+    },
+    {
+      "sheet_id": "PAL-TOWER-002-DECOR",
+      "kind": "decor",
+      "file": "remaining-palace-kits/pavilion/rejected-drafts/PAL-TOWER-002-DECOR-R01.png",
+      "sha256": "eabaa4dce5b6131c3d9b0fd1d2455c5f2424d32a4df25ec82fd8b53b54562a48",
+      "original_file": "/workspace/generated_images/exec-829ff048-a981-4ef1-9b64-47a70181cae7.png",
+      "source_reference_id": "REF-9F4D290C4C4D",
+      "source_reference_sha256": "9f4d290c4c4d18bca8cc2587c7745ddb6e879af193f5491359a97183ce58a785",
+      "prompt_key": "decor",
+      "generator": "image_gen.imagegen",
+      "review_status": "superseded-oversized-tip-saddle-and-ornament-shapes"
+    },
+    {
+      "sheet_id": "PAL-TOWER-002",
+      "kind": "structure_labels",
+      "file": "remaining-palace-kits/pavilion/PAL-TOWER-002.png",
+      "sha256": "7198e83e31d8392b4260c5371c93a6a9478df802dc42203b0d95a327f6eb0c13",
+      "original_file": "/workspace/generated_images/exec-61f716c6-99d9-4d1b-b3e2-7dfe61671e2a.png",
+      "source_reference_id": "REF-9F4D290C4C4D",
+      "source_reference_sha256": "9f4d290c4c4d18bca8cc2587c7745ddb6e879af193f5491359a97183ce58a785",
+      "prompt_key": "structure_labels",
+      "generator": "image_gen.imagegen",
+      "review_status": "pending-user-review",
+      "actual_generation_input_file": "remaining-palace-kits/pavilion/rejected-drafts/PAL-TOWER-002-R01.png",
+      "actual_generation_input_sha256": "99dbaa7f43420c9e625f0a086b570792832050c6a149f40ab82b42fe20b969d5"
+    },
+    {
+      "sheet_id": "PAL-TOWER-002-DECOR",
+      "kind": "decor_correction",
+      "file": "remaining-palace-kits/pavilion/PAL-TOWER-002-DECOR.png",
+      "sha256": "8c4aa329c720d7a4c41d1e7a9e193b6431edaf0dc20543fcceb2e26555720adb",
+      "original_file": "/workspace/generated_images/exec-3706e888-6cd9-44bf-a872-388959f1009f.png",
+      "source_reference_id": "REF-9F4D290C4C4D",
+      "source_reference_sha256": "9f4d290c4c4d18bca8cc2587c7745ddb6e879af193f5491359a97183ce58a785",
+      "prompt_key": "decor_correction",
+      "generator": "image_gen.imagegen",
+      "review_status": "pending-user-review",
+      "actual_generation_input_file": "remaining-palace-kits/pavilion/rejected-drafts/PAL-TOWER-002-DECOR-R01.png",
+      "actual_generation_input_sha256": "eabaa4dce5b6131c3d9b0fd1d2455c5f2424d32a4df25ec82fd8b53b54562a48"
+    },
+    {
+      "sheet_id": "PAL-TOWER-003",
+      "kind": "structure",
+      "file": "remaining-palace-kits/needle/rejected-drafts/PAL-TOWER-003-R01.png",
+      "sha256": "be3f39bd2d6478413996f914e6e8754dd3ad323b816c66d86770a7dd762c6e54",
+      "original_file": "/workspace/generated_images/exec-0482d1c7-bbd4-43c3-9383-a0dd2ba0a9ee.png",
+      "source_reference_id": "REF-9733E91F9610",
+      "source_reference_sha256": "9733e91f96104c314c146c311ec102a37d5394277292704fa43253928021e058",
+      "prompt_key": "structure",
+      "generator": "image_gen.imagegen",
+      "review_status": "superseded-extra-crown-tier"
+    },
+    {
+      "sheet_id": "PAL-TOWER-003-DECOR",
+      "kind": "decor",
+      "file": "remaining-palace-kits/needle/rejected-drafts/PAL-TOWER-003-DECOR-R01.png",
+      "sha256": "ec224e0f978ac4def9c6993046e1e423b01ff06bfd5aaa62848d071dd5951996",
+      "original_file": "/workspace/generated_images/exec-7a95abd7-8973-4fcb-b176-4d5058555aae.png",
+      "source_reference_id": "REF-9733E91F9610",
+      "source_reference_sha256": "9733e91f96104c314c146c311ec102a37d5394277292704fa43253928021e058",
+      "prompt_key": "decor",
+      "generator": "image_gen.imagegen",
+      "review_status": "superseded-rib-became-whole-cone-and-mount-oversized"
+    },
+    {
+      "sheet_id": "PAL-TOWER-003",
+      "kind": "structure",
+      "file": "remaining-palace-kits/needle/PAL-TOWER-003.png",
+      "sha256": "a1c9c37bb27123c23f93417069a817d430a7ffee83400c616ac96bc045606898",
+      "original_file": "/workspace/generated_images/exec-1b8a3cf5-070f-4d5f-ace6-aaa048b44522.png",
+      "source_reference_id": "REF-9733E91F9610",
+      "source_reference_sha256": "9733e91f96104c314c146c311ec102a37d5394277292704fa43253928021e058",
+      "prompt_key": "structure_correction",
+      "generator": "image_gen.imagegen",
+      "review_status": "pending-user-review",
+      "edit_reference_file": "remaining-palace-kits/needle/rejected-drafts/PAL-TOWER-003-R01.png",
+      "actual_generation_input_file": "remaining-palace-kits/needle/rejected-drafts/PAL-TOWER-003-R01.png",
+      "actual_generation_input_sha256": "be3f39bd2d6478413996f914e6e8754dd3ad323b816c66d86770a7dd762c6e54"
+    },
+    {
+      "sheet_id": "PAL-TOWER-003-DECOR",
+      "kind": "decor_correction",
+      "file": "remaining-palace-kits/needle/PAL-TOWER-003-DECOR.png",
+      "sha256": "ce866d4fac50cf34e9e3386e2d5b1122211b1e2d5bc3817a0640c7c4aa1abcd8",
+      "original_file": "/workspace/generated_images/exec-6f1af78f-8ca0-4e2d-98f5-b9b443505349.png",
+      "source_reference_id": "REF-9733E91F9610",
+      "source_reference_sha256": "9733e91f96104c314c146c311ec102a37d5394277292704fa43253928021e058",
+      "prompt_key": "decor_correction",
+      "generator": "image_gen.imagegen",
+      "review_status": "pending-user-review",
+      "actual_generation_input_file": "remaining-palace-kits/needle/rejected-drafts/PAL-TOWER-003-DECOR-R01.png",
+      "actual_generation_input_sha256": "ec224e0f978ac4def9c6993046e1e423b01ff06bfd5aaa62848d071dd5951996"
+    },
+    {
+      "sheet_id": "PAL-TOWER-004-DECOR",
+      "kind": "decor",
+      "file": "remaining-palace-kits/belvedere/rejected-drafts/PAL-TOWER-004-DECOR-R01.png",
+      "sha256": "7665ec89d9230d279cf0b5ee5fc2c4679e38820b4e9404ccb6a325ab1f5a5457",
+      "original_file": "/workspace/generated_images/exec-a5adbbd1-7a89-45f5-9cca-a56fd720cb0e.png",
+      "source_reference_id": "REF-48132B5FA126",
+      "source_reference_sha256": "48132b5fa126464ccfb68ed1596da47a2c34fc2390c28e26698b82473196daf5",
+      "prompt_key": "decor",
+      "generator": "image_gen.imagegen",
+      "review_status": "superseded-invented-blue-arches-in-stone-bands"
+    },
+    {
+      "sheet_id": "PAL-TOWER-004",
+      "kind": "structure",
+      "file": "remaining-palace-kits/belvedere/PAL-TOWER-004.png",
+      "sha256": "6e1390b08a11b97dd5c044e2b7cf3ddbf6495751dcce93bad5f0584f98301d15",
+      "original_file": "/workspace/generated_images/exec-5a4dbd5b-ee68-4fc9-9b69-db8bd2e05847.png",
+      "source_reference_id": "REF-48132B5FA126",
+      "source_reference_sha256": "48132b5fa126464ccfb68ed1596da47a2c34fc2390c28e26698b82473196daf5",
+      "prompt_key": "structure",
+      "generator": "image_gen.imagegen",
+      "review_status": "pending-user-review",
+      "actual_generation_input_file": "images/reference-crops-and-studies/T05-48132b5fa126.png",
+      "actual_generation_input_sha256": "48132b5fa126464ccfb68ed1596da47a2c34fc2390c28e26698b82473196daf5"
+    },
+    {
+      "sheet_id": "PAL-TOWER-004-DECOR",
+      "kind": "decor_correction",
+      "file": "remaining-palace-kits/belvedere/PAL-TOWER-004-DECOR.png",
+      "sha256": "70607714cd79cd8d859fc1bb6872084f21f1ba85a73b14d8b5c6d5d87efc10ea",
+      "original_file": "/workspace/generated_images/exec-cfc884bd-2be8-4c83-ba54-238b7a2478df.png",
+      "source_reference_id": "REF-48132B5FA126",
+      "source_reference_sha256": "48132b5fa126464ccfb68ed1596da47a2c34fc2390c28e26698b82473196daf5",
+      "prompt_key": "decor_correction",
+      "generator": "image_gen.imagegen",
+      "review_status": "pending-user-review",
+      "actual_generation_input_file": "remaining-palace-kits/belvedere/rejected-drafts/PAL-TOWER-004-DECOR-R01.png",
+      "actual_generation_input_sha256": "7665ec89d9230d279cf0b5ee5fc2c4679e38820b4e9404ccb6a325ab1f5a5457"
+    },
+    {
+      "sheet_id": "PAL-TOWER-005",
+      "kind": "structure",
+      "file": "remaining-palace-kits/spire-pair/PAL-TOWER-005.png",
+      "sha256": "bbc3bf79a326581899f2e0ee02bba91c12afaf72e2813e8b1d277b4e81a4eef6",
+      "original_file": "/workspace/generated_images/exec-68ceee05-7e55-41d2-8686-61b5f279626c.png",
+      "source_reference_id": "SRC-PAL-TOWER-005",
+      "source_reference_sha256": "70a56b8598c2c27830574876c5151d0d202e43618e334d07583683e03e8919d1",
+      "prompt_key": "structure",
+      "generator": "image_gen.imagegen",
+      "review_status": "pending-user-review",
+      "actual_generation_input_file": "remaining-palace-kits/spire-pair/original-source.png",
+      "actual_generation_input_sha256": "70a56b8598c2c27830574876c5151d0d202e43618e334d07583683e03e8919d1"
+    },
+    {
+      "sheet_id": "PAL-LOWER-WING-001",
+      "kind": "structure",
+      "file": "remaining-palace-kits/lower-wing/rejected-drafts/PAL-LOWER-WING-001-R01.png",
+      "sha256": "2363b269fa226dcb4a5dcb1804f09dbba152e8fbc6c310c42d74dedca6242e97",
+      "original_file": "/workspace/generated_images/exec-0ad6ee96-18dc-40a1-abd2-2aea218f5e21.png",
+      "source_reference_id": "SRC-PAL-LOWER-WING-001",
+      "source_reference_sha256": "e59a042eac958210021baf4ac3f065e34f7364543dbdfaa477766310cec410cd",
+      "prompt_key": "structure",
+      "generator": "image_gen.imagegen",
+      "review_status": "superseded-right-angle-return-and-extra-window-bay"
+    },
+    {
+      "sheet_id": "PAL-STAIR-001",
+      "kind": "stairs",
+      "file": "remaining-palace-kits/lower-wing/rejected-drafts/PAL-STAIR-001-R01.png",
+      "sha256": "c161a97f00403d861fb232393f060abaa57f2f68acacf0c60061da32edcaee32",
+      "original_file": "/workspace/generated_images/exec-03a2c714-556c-4aee-ab60-c268d3b6f621.png",
+      "source_reference_id": "SRC-PAL-LOWER-WING-001",
+      "source_reference_sha256": "e59a042eac958210021baf4ac3f065e34f7364543dbdfaa477766310cec410cd",
+      "prompt_key": "stairs",
+      "generator": "image_gen.imagegen",
+      "review_status": "superseded-fused-planting-and-stepped-flat-landings"
+    },
+    {
+      "sheet_id": "PAL-LOWER-WING-001",
+      "kind": "structure_correction",
+      "file": "remaining-palace-kits/lower-wing/PAL-LOWER-WING-001.png",
+      "sha256": "0eb0d163e527f3b325bec64cfb4faa51d057fcfb746edf49987d1c6d6acd18c3",
+      "original_file": "/workspace/generated_images/exec-b8866254-0b63-4f12-8eb1-19490c9f1d03.png",
+      "source_reference_id": "SRC-PAL-LOWER-WING-001",
+      "source_reference_sha256": "e59a042eac958210021baf4ac3f065e34f7364543dbdfaa477766310cec410cd",
+      "prompt_key": "structure_correction",
+      "generator": "image_gen.imagegen",
+      "review_status": "pending-user-review",
+      "actual_generation_input_file": "remaining-palace-kits/lower-wing/rejected-drafts/PAL-LOWER-WING-001-R01.png",
+      "actual_generation_input_sha256": "2363b269fa226dcb4a5dcb1804f09dbba152e8fbc6c310c42d74dedca6242e97"
+    },
+    {
+      "sheet_id": "PAL-LOWER-WING-DECOR-001",
+      "kind": "decor",
+      "file": "remaining-palace-kits/lower-wing/PAL-LOWER-WING-DECOR-001.png",
+      "sha256": "f93a2a85097835018b430671a76b04347268bd88f518316f4edc7fd2eccfc573",
+      "original_file": "/workspace/generated_images/exec-c72b3971-8f83-4a16-87ce-62aea3772f57.png",
+      "source_reference_id": "SRC-PAL-LOWER-WING-001",
+      "source_reference_sha256": "e59a042eac958210021baf4ac3f065e34f7364543dbdfaa477766310cec410cd",
+      "prompt_key": "decor",
+      "generator": "image_gen.imagegen",
+      "review_status": "pending-user-review",
+      "actual_generation_input_file": "remaining-palace-kits/lower-wing/original-source.png",
+      "actual_generation_input_sha256": "e59a042eac958210021baf4ac3f065e34f7364543dbdfaa477766310cec410cd"
+    },
+    {
+      "sheet_id": "PAL-STAIR-001",
+      "kind": "stairs_correction",
+      "file": "remaining-palace-kits/lower-wing/PAL-STAIR-001.png",
+      "sha256": "1c1053b7ead81ce2e0279fd533ebe84341919ff88e8d83af2886a4c0fcbdece4",
+      "original_file": "/workspace/generated_images/exec-78cd3052-1c0d-4960-8808-4d9cc4f7f305.png",
+      "source_reference_id": "SRC-PAL-LOWER-WING-001",
+      "source_reference_sha256": "e59a042eac958210021baf4ac3f065e34f7364543dbdfaa477766310cec410cd",
+      "prompt_key": "stairs_correction",
+      "generator": "image_gen.imagegen",
+      "review_status": "pending-user-review",
+      "actual_generation_input_file": "remaining-palace-kits/lower-wing/rejected-drafts/PAL-STAIR-001-R01.png",
+      "actual_generation_input_sha256": "c161a97f00403d861fb232393f060abaa57f2f68acacf0c60061da32edcaee32"
+    },
+    {
+      "sheet_id": "PAL-TOWER-006",
+      "kind": "structure",
+      "file": "remaining-palace-kits/royal-needle/rejected-drafts/PAL-TOWER-006-R01.png",
+      "sha256": "e218633a07bb966127e97e07ec4ff347f2260f9265ff68469b6a3b41a5bc75c0",
+      "original_file": "/workspace/generated_images/exec-15b3a64e-09b7-4078-8413-2f563ee61608.png",
+      "source_reference_id": "SRC-PAL-TOWER-006",
+      "source_reference_sha256": "62b4e6eeadb99e9e7ccf9cff9ab39785857d3530da16c92378e9e429f75c96f5",
+      "prompt_key": "structure",
+      "generator": "image_gen.imagegen",
+      "review_status": "superseded-duplicate-clerestory-at-crown-join"
+    },
+    {
+      "sheet_id": "PAL-TOWER-006",
+      "kind": "structure_correction",
+      "file": "remaining-palace-kits/royal-needle/PAL-TOWER-006.png",
+      "sha256": "0d946db63dc537b9b701ade1ed3c196bc5b5c01d385aec891def0136da441d68",
+      "original_file": "/workspace/generated_images/exec-367d1d50-6555-4df7-a5fb-4b61ee0d92d1.png",
+      "source_reference_id": "SRC-PAL-TOWER-006",
+      "source_reference_sha256": "62b4e6eeadb99e9e7ccf9cff9ab39785857d3530da16c92378e9e429f75c96f5",
+      "prompt_key": "structure_correction",
+      "generator": "image_gen.imagegen",
+      "review_status": "pending-user-review",
+      "actual_generation_input_file": "remaining-palace-kits/royal-needle/rejected-drafts/PAL-TOWER-006-R01.png",
+      "actual_generation_input_sha256": "e218633a07bb966127e97e07ec4ff347f2260f9265ff68469b6a3b41a5bc75c0"
+    },
+    {
+      "sheet_id": "PAL-TOWER-007",
+      "kind": "structure",
+      "file": "remaining-palace-kits/slim-onion/rejected-drafts/PAL-TOWER-007-R01.png",
+      "sha256": "3fa38abefb1f0a8f5d94d493f1c787e1224d9ecb20661ceb97bb635ded2b7649",
+      "original_file": "/workspace/generated_images/exec-a10afd2f-8eb1-419b-9b1a-cef3aaba635a.png",
+      "source_reference_id": "SRC-PAL-TOWER-007",
+      "source_reference_sha256": "864cbc83d1c5d43996ebcd4d70b81a5f8cb3c5d5c02aeab519c42a317b4be917",
+      "prompt_key": "structure",
+      "generator": "image_gen.imagegen",
+      "review_status": "superseded-stacked-lanterns-fused-to-body"
+    },
+    {
+      "sheet_id": "PAL-TOWER-007",
+      "kind": "structure_correction",
+      "file": "remaining-palace-kits/slim-onion/PAL-TOWER-007.png",
+      "sha256": "f9fd5a41324fe4a0c348394ad119abb6b4c0e0daf8c86d41f14c68eaba320156",
+      "original_file": "/workspace/generated_images/exec-8ed4515c-7249-4a2e-9fbe-172e04d3d350.png",
+      "source_reference_id": "SRC-PAL-TOWER-007",
+      "source_reference_sha256": "864cbc83d1c5d43996ebcd4d70b81a5f8cb3c5d5c02aeab519c42a317b4be917",
+      "prompt_key": "structure_correction",
+      "generator": "image_gen.imagegen",
+      "review_status": "pending-user-review",
+      "actual_generation_input_file": "remaining-palace-kits/slim-onion/rejected-drafts/PAL-TOWER-007-R01.png",
+      "actual_generation_input_sha256": "3fa38abefb1f0a8f5d94d493f1c787e1224d9ecb20661ceb97bb635ded2b7649"
+    }
+  ],
+  "status": "generated-and-indexed;pending-user-reference-review",
+  "models_generated": 0,
+  "new_sheet_count": 12,
+  "structural_target_count": 32,
+  "detail_target_count": 64,
+  "source_section_crop_count": 28
+}

@@ -1,0 +1,506 @@
+{
+  "family": "Slender western needle",
+  "key": "needle",
+  "source_front_authority": "GEN-37",
+  "source_reference_id": "REF-9733E91F9610",
+  "source_reference_file": "images/reference-crops-and-studies/T06-9733e91f9610.png",
+  "source_reference_sha256": "9733e91f96104c314c146c311ec102a37d5394277292704fa43253928021e058",
+  "generation_reference_path": "/workspace/shared/birthday-castle-front-crops/T06.png",
+  "scope": "Modular sketch references only, no Blender models",
+  "source_boxes_status": "Direct visible-front region guides; not object masks or measured building dimensions",
+  "section_connections": "Stack S01\u2192S02\u2192S03\u2192S04, centred on the same faceted core. J1 plinth top/shaft foot; J2 shaft head/collar underside; J3 collar top/roof underside. Slim front face remains aligned. Lantern seat positions are separate attachment surfaces on S02.",
+  "parts": [
+    {
+      "asset_id": "PAL-TOWER-003-S01",
+      "name": "Tapered petal plinth",
+      "description": "Small faceted base flaring gently from slim shaft, ivory and rose triangular petal panels with blue/lilac glass inset and floral gold edging. Neighboring plants and walls excluded.",
+      "source_box_xyxy": [
+        9,
+        254,
+        99,
+        343
+      ],
+      "model_status": "unregistered",
+      "review_status": "pending",
+      "source_reference_id": "SRC-PAL-TOWER-003-S01",
+      "source_reference_file": "remaining-palace-kits/needle/source-sections/PAL-TOWER-003-S01.png",
+      "source_reference_sha256": "0685c21ba16534dbae6ce8ab723a7b62f30bac29c32649fbbd6f2f74ded99d3d",
+      "reuse_component_ids": [
+        "GEN-38-M03",
+        "GEN-41-M02",
+        "GEN-44-M02",
+        "PAL-TOWER-001-D13",
+        "PAL-TOWER-001-D14",
+        "PAL-TOWER-001-D15",
+        "PAL-TOWER-001-D16"
+      ]
+    },
+    {
+      "asset_id": "PAL-TOWER-003-S02",
+      "name": "Slender star-glass shaft",
+      "description": "Long very slim faceted shaft with blue and pink vertical glass lights, slender white marble engaged ribs and two spaced gold star emblems. Preserve length and source narrowness, not a broad solid tube. Lantern arms are separate fittings.",
+      "source_box_xyxy": [
+        18,
+        112,
+        82,
+        261
+      ],
+      "model_status": "unregistered",
+      "review_status": "pending",
+      "source_reference_id": "SRC-PAL-TOWER-003-S02",
+      "source_reference_file": "remaining-palace-kits/needle/source-sections/PAL-TOWER-003-S02.png",
+      "source_reference_sha256": "9c4fb06e9a44c3d0cd38377cad785d8b873d58f3090ea3690b69f6b53c81aab8",
+      "reuse_component_ids": [
+        "GEN-38-M03",
+        "GEN-41-M02",
+        "GEN-44-M02",
+        "PAL-TOWER-001-D13",
+        "PAL-TOWER-001-D14",
+        "PAL-TOWER-001-D15",
+        "PAL-TOWER-001-D16"
+      ]
+    },
+    {
+      "asset_id": "PAL-TOWER-003-S03",
+      "name": "Needle clerestory collar",
+      "description": "Short shallow arched crown collar above the main shaft, tiny blue lancets with slim ivory supports and gold ledges, small source side pinnacles where they spring from this collar.",
+      "source_box_xyxy": [
+        20,
+        88,
+        80,
+        126
+      ],
+      "model_status": "unregistered",
+      "review_status": "pending",
+      "source_reference_id": "SRC-PAL-TOWER-003-S03",
+      "source_reference_file": "remaining-palace-kits/needle/source-sections/PAL-TOWER-003-S03.png",
+      "source_reference_sha256": "4aaaa0392ef336ab36cd92d3b4870a876b7b18c2d569090adb568fa8b78c6269",
+      "reuse_component_ids": [
+        "GEN-38-M03",
+        "GEN-41-M02",
+        "GEN-44-M02",
+        "PAL-TOWER-001-D13",
+        "PAL-TOWER-001-D14",
+        "PAL-TOWER-001-D15",
+        "PAL-TOWER-001-D16"
+      ]
+    },
+    {
+      "asset_id": "PAL-TOWER-003-S04",
+      "name": "Steep violet needle crown",
+      "description": "Long steep violet conical/faceted spire with fine gold ribs, tiny gold side finials at eave, long thin star-tipped spindle. Preserve the sharp slender taper, never an onion dome.",
+      "source_box_xyxy": [
+        28,
+        0,
+        78,
+        112
+      ],
+      "model_status": "unregistered",
+      "review_status": "pending",
+      "source_reference_id": "SRC-PAL-TOWER-003-S04",
+      "source_reference_file": "remaining-palace-kits/needle/source-sections/PAL-TOWER-003-S04.png",
+      "source_reference_sha256": "3dd29c13ea873ca6af305974b341eb54c3a3fd672b7ca70e35644f41d386cf91",
+      "reuse_component_ids": [
+        "GEN-38-M03",
+        "GEN-41-M02",
+        "GEN-44-M02",
+        "PAL-TOWER-001-D13",
+        "PAL-TOWER-001-D14",
+        "PAL-TOWER-001-D15",
+        "PAL-TOWER-001-D16"
+      ]
+    }
+  ],
+  "decor": [
+    {
+      "asset_id": "PAL-TOWER-003-D01",
+      "name": "Shaft lancet frame",
+      "description": "One very tall slim pointed ivory/gold surround with clean mounting back.",
+      "model_status": "unregistered",
+      "review_status": "pending",
+      "reuse_component_ids": [
+        "GEN-38-M03",
+        "GEN-41-M02",
+        "GEN-44-M02",
+        "PAL-TOWER-001-D13",
+        "PAL-TOWER-001-D14",
+        "PAL-TOWER-001-D15",
+        "PAL-TOWER-001-D16"
+      ],
+      "applies_to": [
+        "PAL-TOWER-003-S02"
+      ]
+    },
+    {
+      "asset_id": "PAL-TOWER-003-D02",
+      "name": "Vertical gold mullion",
+      "description": "One narrow gold leading rib for the long glass shaft, complete ends.",
+      "model_status": "unregistered",
+      "review_status": "pending",
+      "reuse_component_ids": [
+        "GEN-38-M03",
+        "GEN-41-M02",
+        "GEN-44-M02",
+        "PAL-TOWER-001-D13",
+        "PAL-TOWER-001-D14",
+        "PAL-TOWER-001-D15",
+        "PAL-TOWER-001-D16"
+      ],
+      "applies_to": [
+        "PAL-TOWER-003-S02"
+      ]
+    },
+    {
+      "asset_id": "PAL-TOWER-003-D03",
+      "name": "Star-glass insert",
+      "description": "One blue/pink lancet glass tile with the source elongated gold star, separate from surround.",
+      "model_status": "unregistered",
+      "review_status": "pending",
+      "reuse_component_ids": [
+        "GEN-38-M03",
+        "GEN-41-M02",
+        "GEN-44-M02",
+        "PAL-TOWER-001-D13",
+        "PAL-TOWER-001-D14",
+        "PAL-TOWER-001-D15",
+        "PAL-TOWER-001-D16"
+      ],
+      "applies_to": [
+        "PAL-TOWER-003-S02"
+      ]
+    },
+    {
+      "asset_id": "PAL-TOWER-003-D04",
+      "name": "Slender engaged shaft pier",
+      "description": "One slender ivory marble fluted pier with a modest leaf head and flat rear.",
+      "model_status": "unregistered",
+      "review_status": "pending",
+      "reuse_component_ids": [
+        "GEN-38-M03",
+        "GEN-41-M02",
+        "GEN-44-M02",
+        "PAL-TOWER-001-D13",
+        "PAL-TOWER-001-D14",
+        "PAL-TOWER-001-D15",
+        "PAL-TOWER-001-D16"
+      ],
+      "applies_to": [
+        "PAL-TOWER-003-S02"
+      ]
+    },
+    {
+      "asset_id": "PAL-TOWER-003-D05",
+      "name": "Lancet shoulder impost",
+      "description": "Small gold-edged ivory lotus head where tall pointed windows spring.",
+      "model_status": "unregistered",
+      "review_status": "pending",
+      "reuse_component_ids": [
+        "GEN-38-M03",
+        "GEN-41-M02",
+        "GEN-44-M02",
+        "PAL-TOWER-001-D13",
+        "PAL-TOWER-001-D14",
+        "PAL-TOWER-001-D15",
+        "PAL-TOWER-001-D16"
+      ],
+      "applies_to": [
+        "PAL-TOWER-003-S02"
+      ]
+    },
+    {
+      "asset_id": "PAL-TOWER-003-D06",
+      "name": "Triangular plinth face",
+      "description": "One faceted rose/ivory base panel with blue violet inset and petal gold edge.",
+      "model_status": "unregistered",
+      "review_status": "pending",
+      "reuse_component_ids": [
+        "GEN-38-M03",
+        "GEN-41-M02",
+        "GEN-44-M02",
+        "PAL-TOWER-001-D13",
+        "PAL-TOWER-001-D14",
+        "PAL-TOWER-001-D15",
+        "PAL-TOWER-001-D16"
+      ],
+      "applies_to": [
+        "PAL-TOWER-003-S01"
+      ]
+    },
+    {
+      "asset_id": "PAL-TOWER-003-D07",
+      "name": "Petal base relief",
+      "description": "Small white/gold floral-petal relief from tapered plinth.",
+      "model_status": "unregistered",
+      "review_status": "pending",
+      "reuse_component_ids": [
+        "GEN-38-M03",
+        "GEN-41-M02",
+        "GEN-44-M02",
+        "PAL-TOWER-001-D13",
+        "PAL-TOWER-001-D14",
+        "PAL-TOWER-001-D15",
+        "PAL-TOWER-001-D16"
+      ],
+      "applies_to": [
+        "PAL-TOWER-003-S01"
+      ]
+    },
+    {
+      "asset_id": "PAL-TOWER-003-D08",
+      "name": "Shaft foot leaf clamp",
+      "description": "Tiny gold leaf surround at the shaft foot, no mechanical bolt.",
+      "model_status": "unregistered",
+      "review_status": "pending",
+      "reuse_component_ids": [
+        "GEN-38-M03",
+        "GEN-41-M02",
+        "GEN-44-M02",
+        "PAL-TOWER-001-D13",
+        "PAL-TOWER-001-D14",
+        "PAL-TOWER-001-D15",
+        "PAL-TOWER-001-D16"
+      ],
+      "applies_to": [
+        "PAL-TOWER-003-S01"
+      ]
+    },
+    {
+      "asset_id": "PAL-TOWER-003-D09",
+      "name": "Crown arch surround",
+      "description": "One small pointed clerestory open surround matching the needle collar.",
+      "model_status": "unregistered",
+      "review_status": "pending",
+      "reuse_component_ids": [
+        "GEN-38-M03",
+        "GEN-41-M02",
+        "GEN-44-M02",
+        "PAL-TOWER-001-D13",
+        "PAL-TOWER-001-D14",
+        "PAL-TOWER-001-D15",
+        "PAL-TOWER-001-D16"
+      ],
+      "applies_to": [
+        "PAL-TOWER-003-S03"
+      ]
+    },
+    {
+      "asset_id": "PAL-TOWER-003-D10",
+      "name": "Collar cornice repeat",
+      "description": "Short gently faceted ivory/gold collar cornice, matching seam ends.",
+      "model_status": "unregistered",
+      "review_status": "pending",
+      "reuse_component_ids": [
+        "GEN-38-M03",
+        "GEN-41-M02",
+        "GEN-44-M02",
+        "PAL-TOWER-001-D13",
+        "PAL-TOWER-001-D14",
+        "PAL-TOWER-001-D15",
+        "PAL-TOWER-001-D16"
+      ],
+      "applies_to": [
+        "PAL-TOWER-003-S03"
+      ]
+    },
+    {
+      "asset_id": "PAL-TOWER-003-D11",
+      "name": "Facet corner cap",
+      "description": "Small marble corner return with fine gold bands.",
+      "model_status": "unregistered",
+      "review_status": "pending",
+      "reuse_component_ids": [
+        "GEN-38-M03",
+        "GEN-41-M02",
+        "GEN-44-M02",
+        "PAL-TOWER-001-D13",
+        "PAL-TOWER-001-D14",
+        "PAL-TOWER-001-D15",
+        "PAL-TOWER-001-D16"
+      ],
+      "applies_to": [
+        "PAL-TOWER-003-S03"
+      ]
+    },
+    {
+      "asset_id": "PAL-TOWER-003-D12",
+      "name": "Steep roof rib",
+      "description": "One complete thin tapered gold rib shaped for the steep needle, not a curved bulb rib.",
+      "model_status": "unregistered",
+      "review_status": "pending",
+      "reuse_component_ids": [
+        "GEN-38-M03",
+        "GEN-41-M02",
+        "GEN-44-M02",
+        "PAL-TOWER-001-D13",
+        "PAL-TOWER-001-D14",
+        "PAL-TOWER-001-D15",
+        "PAL-TOWER-001-D16"
+      ],
+      "applies_to": [
+        "PAL-TOWER-003-S04"
+      ]
+    },
+    {
+      "asset_id": "PAL-TOWER-003-D13",
+      "name": "Needle eave crocket",
+      "description": "Small gold leaf crest at spire eave, isolated.",
+      "model_status": "unregistered",
+      "review_status": "pending",
+      "reuse_component_ids": [
+        "GEN-38-M03",
+        "GEN-41-M02",
+        "GEN-44-M02",
+        "PAL-TOWER-001-D13",
+        "PAL-TOWER-001-D14",
+        "PAL-TOWER-001-D15",
+        "PAL-TOWER-001-D16"
+      ],
+      "applies_to": [
+        "PAL-TOWER-003-S04"
+      ]
+    },
+    {
+      "asset_id": "PAL-TOWER-003-D14",
+      "name": "Spindle neck socket",
+      "description": "Delicate architectural gold knop/socket under the existing shared star finial.",
+      "model_status": "unregistered",
+      "review_status": "pending",
+      "reuse_component_ids": [
+        "GEN-38-M03",
+        "GEN-41-M02",
+        "GEN-44-M02",
+        "PAL-TOWER-001-D13",
+        "PAL-TOWER-001-D14",
+        "PAL-TOWER-001-D15",
+        "PAL-TOWER-001-D16"
+      ],
+      "applies_to": [
+        "PAL-TOWER-003-S04"
+      ]
+    },
+    {
+      "asset_id": "PAL-TOWER-003-D15",
+      "name": "Pinnacle attachment corbel",
+      "description": "Small ivory/gold seat for a subsidiary pencil pinnacle on crown collar.",
+      "model_status": "unregistered",
+      "review_status": "pending",
+      "reuse_component_ids": [
+        "GEN-38-M03",
+        "GEN-41-M02",
+        "GEN-44-M02",
+        "PAL-TOWER-001-D13",
+        "PAL-TOWER-001-D14",
+        "PAL-TOWER-001-D15",
+        "PAL-TOWER-001-D16"
+      ],
+      "applies_to": [
+        "PAL-TOWER-003-S03"
+      ]
+    },
+    {
+      "asset_id": "PAL-TOWER-003-D16",
+      "name": "Lantern mount collar",
+      "description": "The needle-specific carved gold collar mounted to the slim pier, cage/arm reused from terminal kit.",
+      "model_status": "unregistered",
+      "review_status": "pending",
+      "reuse_component_ids": [
+        "GEN-38-M03",
+        "GEN-41-M02",
+        "GEN-44-M02",
+        "PAL-TOWER-001-D13",
+        "PAL-TOWER-001-D14",
+        "PAL-TOWER-001-D15",
+        "PAL-TOWER-001-D16"
+      ],
+      "applies_to": [
+        "PAL-TOWER-003-S02"
+      ]
+    }
+  ],
+  "prompts": {
+    "structure": "Use the SINGLE supplied original GEN-37 crop as the visible design authority. Other existing component studies only support construction/ornament vocabulary. Maintain rose/ivory veined marble, source blue/lilac/pink glass, fine muted polished gold, plum-violet roof surfaces. Neutral front three-quarter technical concept view with enough depth to see interfaces; whole uncropped models on clean warm-white paper/studio background. Preserve visible relative proportions and asymmetric offsets; infer only unseen backs, support faces and join undersides conservatively. No complete palace or redesigned tower, no scene, people, extra background buildings or plants unless a planting asset is explicitly requested. All pieces separated, no neighbor fusion. Labels below objects, not embedded on surfaces. Exactly the requested item count.\nTitle: PAL-TOWER-003 \u2014 Slender western needle sections. Create exactly FOUR isolated structural sections in a clear 2-by-2 grid. MUST PRINT a title above the grid and the COMPLETE asset ID AND short part name below each object; neither IDs alone nor names alone are sufficient. Four source sections only. Approx visible hierarchy: plinth20%, main slim shaft43%, shallow crown10%, steep spire/spindle27%. Faceted core remains slim throughout; keep the narrow white ribs and very long blue/pink lights.\nStack S01\u2192S02\u2192S03\u2192S04, centred on the same faceted core. J1 plinth top/shaft foot; J2 shaft head/collar underside; J3 collar top/roof underside. Slim front face remains aligned. Lantern seat positions are separate attachment surfaces on S02.\nPAL-TOWER-003-S01 \u2014 Tapered petal plinth: Small faceted base flaring gently from slim shaft, ivory and rose triangular petal panels with blue/lilac glass inset and floral gold edging. Neighboring plants and walls excluded.\nPAL-TOWER-003-S02 \u2014 Slender star-glass shaft: Long very slim faceted shaft with blue and pink vertical glass lights, slender white marble engaged ribs and two spaced gold star emblems. Preserve length and source narrowness, not a broad solid tube. Lantern arms are separate fittings.\nPAL-TOWER-003-S03 \u2014 Needle clerestory collar: Short shallow arched crown collar above the main shaft, tiny blue lancets with slim ivory supports and gold ledges, small source side pinnacles where they spring from this collar.\nPAL-TOWER-003-S04 \u2014 Steep violet needle crown: Long steep violet conical/faceted spire with fine gold ribs, tiny gold side finials at eave, long thin star-tipped spindle. Preserve the sharp slender taper, never an onion dome.\nKeep small reused ornament installed for source appearance, but detachable decor belongs to the corresponding detail pack. Do not bake neighboring towers, plants or hanging lantern bodies into these modules. Common mating profile and front-facing facet orientation wherever two vertical sections stack; section cut planes follow the source stone bands. Mark small J labels at mating rims. No industrial joints, mechanical plugs or added hidden floors. Displayed pixel dimensions are illustrative; visible original crop proportions remain master.",
+    "decor": "Use the SINGLE supplied original GEN-37 crop as the visible design authority. Other existing component studies only support construction/ornament vocabulary. Maintain rose/ivory veined marble, source blue/lilac/pink glass, fine muted polished gold, plum-violet roof surfaces. Neutral front three-quarter technical concept view with enough depth to see interfaces; whole uncropped models on clean warm-white paper/studio background. Preserve visible relative proportions and asymmetric offsets; infer only unseen backs, support faces and join undersides conservatively. No complete palace or redesigned tower, no scene, people, extra background buildings or plants unless a planting asset is explicitly requested. All pieces separated, no neighbor fusion. Labels below objects, not embedded on surfaces. Exactly the requested item count.\nTitle: PAL-TOWER-003-DECOR \u2014 Slender western needle detail kit. Exactly16 complete separately isolated detail assets in a4-by-4 grid, one per cell. These fittings serve both this western needle and the later unequal eastern pair. Vary only lengths when modeling the pair; keep their source collars and gilded lancet vocabulary. No duplicate whole needle or hanging lanterns.\nPAL-TOWER-003-D01 \u2014 Shaft lancet frame: One very tall slim pointed ivory/gold surround with clean mounting back.\nPAL-TOWER-003-D02 \u2014 Vertical gold mullion: One narrow gold leading rib for the long glass shaft, complete ends.\nPAL-TOWER-003-D03 \u2014 Star-glass insert: One blue/pink lancet glass tile with the source elongated gold star, separate from surround.\nPAL-TOWER-003-D04 \u2014 Slender engaged shaft pier: One slender ivory marble fluted pier with a modest leaf head and flat rear.\nPAL-TOWER-003-D05 \u2014 Lancet shoulder impost: Small gold-edged ivory lotus head where tall pointed windows spring.\nPAL-TOWER-003-D06 \u2014 Triangular plinth face: One faceted rose/ivory base panel with blue violet inset and petal gold edge.\nPAL-TOWER-003-D07 \u2014 Petal base relief: Small white/gold floral-petal relief from tapered plinth.\nPAL-TOWER-003-D08 \u2014 Shaft foot leaf clamp: Tiny gold leaf surround at the shaft foot, no mechanical bolt.\nPAL-TOWER-003-D09 \u2014 Crown arch surround: One small pointed clerestory open surround matching the needle collar.\nPAL-TOWER-003-D10 \u2014 Collar cornice repeat: Short gently faceted ivory/gold collar cornice, matching seam ends.\nPAL-TOWER-003-D11 \u2014 Facet corner cap: Small marble corner return with fine gold bands.\nPAL-TOWER-003-D12 \u2014 Steep roof rib: One complete thin tapered gold rib shaped for the steep needle, not a curved bulb rib.\nPAL-TOWER-003-D13 \u2014 Needle eave crocket: Small gold leaf crest at spire eave, isolated.\nPAL-TOWER-003-D14 \u2014 Spindle neck socket: Delicate architectural gold knop/socket under the existing shared star finial.\nPAL-TOWER-003-D15 \u2014 Pinnacle attachment corbel: Small ivory/gold seat for a subsidiary pencil pinnacle on crown collar.\nPAL-TOWER-003-D16 \u2014 Lantern mount collar: The needle-specific carved gold collar mounted to the slim pier, cage/arm reused from terminal kit.\nNo whole wall, tower, roof or assembled staircase in this detail pack. Individual objects shown at readable independent review scales; full depth, mounting backs and clean seam ends. Source motifs remain consistent with their parent structural sections. Preserve exact printed IDs and short item names, no extra objects or duplicate alternate views. Thin profile parts have sensible complete ends. Avoid detached ornaments fused to each other. Common lantern cages/pendants already exist in PAL-TOWER-001-D14/D15/D16; only family-specific mounts/junctions are requested here.",
+    "structure_correction": "Edit R01 only: remove invented second tier of open arches and dangling feet from S03, retaining one shallow clerestory collar. Other parts and captions unchanged.",
+    "decor_correction": "Correct this 16-cell palace needle-tower decor sheet. Preserve the 4-by-4 grid, every exact printed ID and part name, and source ivory/rose marble, blue/pink glass, gold palette. Use clean nearly frontal technical reference views with simple readable silhouettes and no ornamental warping. CRITICAL D12 Steep roof rib is wrong: remove its whole cone, roof faces, circular base and star. Replace it with ONE SINGLE very thin straight gently tapered gold meridian strip, seen as an isolated long narrow rod, plain complete top and bottom, no other ribs or panels. D16 Lantern mount collar: simplify to a small gold half-collar/socket on a short curved support with a flat wall plate; remove the invented huge lotus pedestal and long arm. D05 Lancet shoulder impost: keep a small restrained ivory/gold leaf capital without a hanging ornamental spike. D01/D04/D09 keep clean regular thin straight shafts and balanced pointed arches, no twisting or leaning columns. All motifs on other cells stay source-compatible and recognizable, remove irregular extra curls rather than inventing detail. One component per cell only, full silhouette and mounting ends visible; do not turn a detail into an assembly. All sixteen item captions remain unchanged and legible, no empty cells and no cropped assets."
+  },
+  "outputs": [
+    {
+      "sheet_id": "PAL-TOWER-003",
+      "kind": "structure",
+      "file": "remaining-palace-kits/needle/PAL-TOWER-003.png",
+      "sha256": "a1c9c37bb27123c23f93417069a817d430a7ffee83400c616ac96bc045606898",
+      "original_file": "/workspace/generated_images/exec-1b8a3cf5-070f-4d5f-ace6-aaa048b44522.png",
+      "source_reference_id": "REF-9733E91F9610",
+      "source_reference_sha256": "9733e91f96104c314c146c311ec102a37d5394277292704fa43253928021e058",
+      "prompt_key": "structure_correction",
+      "generator": "image_gen.imagegen",
+      "review_status": "pending-user-review",
+      "edit_reference_file": "remaining-palace-kits/needle/rejected-drafts/PAL-TOWER-003-R01.png",
+      "actual_generation_input_file": "remaining-palace-kits/needle/rejected-drafts/PAL-TOWER-003-R01.png",
+      "actual_generation_input_sha256": "be3f39bd2d6478413996f914e6e8754dd3ad323b816c66d86770a7dd762c6e54"
+    },
+    {
+      "sheet_id": "PAL-TOWER-003-DECOR",
+      "kind": "decor_correction",
+      "file": "remaining-palace-kits/needle/PAL-TOWER-003-DECOR.png",
+      "sha256": "ce866d4fac50cf34e9e3386e2d5b1122211b1e2d5bc3817a0640c7c4aa1abcd8",
+      "original_file": "/workspace/generated_images/exec-6f1af78f-8ca0-4e2d-98f5-b9b443505349.png",
+      "source_reference_id": "REF-9733E91F9610",
+      "source_reference_sha256": "9733e91f96104c314c146c311ec102a37d5394277292704fa43253928021e058",
+      "prompt_key": "decor_correction",
+      "generator": "image_gen.imagegen",
+      "review_status": "pending-user-review",
+      "actual_generation_input_file": "remaining-palace-kits/needle/rejected-drafts/PAL-TOWER-003-DECOR-R01.png",
+      "actual_generation_input_sha256": "ec224e0f978ac4def9c6993046e1e423b01ff06bfd5aaa62848d071dd5951996"
+    }
+  ],
+  "shared_decor_id": null,
+  "shared_common_ids": [
+    "PAL-TOWER-001-D13",
+    "PAL-TOWER-001-D14",
+    "PAL-TOWER-001-D15",
+    "PAL-TOWER-001-D16"
+  ],
+  "limits": "Hidden backs/profile dimensions inferred. Actual model fit unverified. Original front determines visible design.",
+  "previous_attempts": [
+    {
+      "sheet_id": "PAL-TOWER-003",
+      "kind": "structure",
+      "file": "remaining-palace-kits/needle/rejected-drafts/PAL-TOWER-003-R01.png",
+      "sha256": "be3f39bd2d6478413996f914e6e8754dd3ad323b816c66d86770a7dd762c6e54",
+      "original_file": "/workspace/generated_images/exec-0482d1c7-bbd4-43c3-9383-a0dd2ba0a9ee.png",
+      "source_reference_id": "REF-9733E91F9610",
+      "source_reference_sha256": "9733e91f96104c314c146c311ec102a37d5394277292704fa43253928021e058",
+      "prompt_key": "structure",
+      "generator": "image_gen.imagegen",
+      "review_status": "superseded-extra-crown-tier"
+    },
+    {
+      "sheet_id": "PAL-TOWER-003-DECOR",
+      "kind": "decor",
+      "file": "remaining-palace-kits/needle/rejected-drafts/PAL-TOWER-003-DECOR-R01.png",
+      "sha256": "ec224e0f978ac4def9c6993046e1e423b01ff06bfd5aaa62848d071dd5951996",
+      "original_file": "/workspace/generated_images/exec-7a95abd7-8973-4fcb-b176-4d5058555aae.png",
+      "source_reference_id": "REF-9733E91F9610",
+      "source_reference_sha256": "9733e91f96104c314c146c311ec102a37d5394277292704fa43253928021e058",
+      "prompt_key": "decor",
+      "generator": "image_gen.imagegen",
+      "review_status": "superseded-rib-became-whole-cone-and-mount-oversized"
+    }
+  ],
+  "review_notes": [
+    "Extra lower crown tier removed. Whole-cone decor corrected to a single rib; mounts simplified. D12 is a fitting concept, its section/thickness remains to be normalized."
+  ],
+  "review_status": "pending-user-reference-review",
+  "models_generated": 0,
+  "actual_3D_joint_fit_verified": false,
+  "part_scales": "Independent drawing scales, not measured manufacturing dimensions",
+  "existing_board_reuse": [
+    "GEN-17",
+    "GEN-32",
+    "GEN-38",
+    "GEN-41",
+    "GEN-44",
+    "GEN-45"
+  ]
+}

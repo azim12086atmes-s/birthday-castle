@@ -1,0 +1,180 @@
+{
+  "family": "Royal needle with attached companion turrets",
+  "key": "royal-needle",
+  "source_front_authority": "GEN-37",
+  "source_reference_id": "SRC-PAL-TOWER-006",
+  "source_reference_file": "remaining-palace-kits/royal-needle/original-source.png",
+  "source_reference_sha256": "62b4e6eeadb99e9e7ccf9cff9ab39785857d3530da16c92378e9e429f75c96f5",
+  "generation_reference_path": "/workspace/shared/palace-tower-screenshot-review/royal-needle-source.png",
+  "scope": "Modular sketch references only, no Blender models",
+  "source_boxes_status": "Direct visible-front region guides; not object masks or measured building dimensions",
+  "section_connections": "S01\u2192S02 at J-R. S03 top takes the reused slender needle crown profile with diameter normalization before modeling; S03 side pad joins a separate gallery wall. S04 hanger seat receives the reused lantern assembly. These four pieces do NOT form one vertical stack.",
+  "parts": [
+    {
+      "asset_id": "PAL-TOWER-006-S01",
+      "name": "Royal star-glass shaft",
+      "description": "The tallest central needle shaft, extremely slender and long, multiple source gold stars in blue/rose vertical glass, straight ivory engaged ribs and shallow upper pointed crown collar. Bottom terminates only just below the flower-obscured sill; no huge added pedestal. Exclude its cone roof and neighboring companion.",
+      "source_box_xyxy": [
+        53,
+        90,
+        111,
+        306
+      ],
+      "model_status": "unregistered",
+      "review_status": "pending",
+      "source_reference_id": "SRC-PAL-TOWER-006-S01",
+      "source_reference_file": "remaining-palace-kits/royal-needle/source-sections/PAL-TOWER-006-S01.png",
+      "source_reference_sha256": "6b81dcbef1c7b828bc7e4eb1a15f7244951ddd61087ddbc17b5716d40868bab3",
+      "reuse_component_ids": [
+        "PAL-TOWER-003-S04",
+        "PAL-TOWER-003-D01",
+        "PAL-TOWER-003-D03",
+        "PAL-TOWER-003-D09",
+        "PAL-TOWER-003-D12",
+        "PAL-TOWER-001-D13",
+        "PAL-TOWER-001-D14",
+        "PAL-TOWER-001-D15",
+        "PAL-TOWER-001-D16"
+      ]
+    },
+    {
+      "asset_id": "PAL-TOWER-006-S02",
+      "name": "Royal steep spire crown",
+      "description": "Source long sharp plum/violet spire with fine gold ribs, small slender eave pencil pinnacles and the delicate gold star tip. Match the shaft collar without adding a second lower floor.",
+      "source_box_xyxy": [
+        58,
+        0,
+        108,
+        100
+      ],
+      "model_status": "unregistered",
+      "review_status": "pending",
+      "source_reference_id": "SRC-PAL-TOWER-006-S02",
+      "source_reference_file": "remaining-palace-kits/royal-needle/source-sections/PAL-TOWER-006-S02.png",
+      "source_reference_sha256": "4f2de4d3d59b3a3a0164baf93ee4427855be3830885c3f555887b81f0ca1fa3f",
+      "reuse_component_ids": [
+        "PAL-TOWER-003-S04",
+        "PAL-TOWER-003-D01",
+        "PAL-TOWER-003-D03",
+        "PAL-TOWER-003-D09",
+        "PAL-TOWER-003-D12",
+        "PAL-TOWER-001-D13",
+        "PAL-TOWER-001-D14",
+        "PAL-TOWER-001-D15",
+        "PAL-TOWER-001-D16"
+      ]
+    },
+    {
+      "asset_id": "PAL-TOWER-006-S03",
+      "name": "Two-stage companion turret body",
+      "description": "The shorter RIGHT attached companion: tall lower pointed blue/rose glazed body and a short upper blue-lancet drum separated by the source narrow gold/ivory belt. Keep this true two-stage body and modest side attachment pad; cone roof excluded and reused from needle crown vocabulary.",
+      "source_box_xyxy": [
+        109,
+        166,
+        158,
+        322
+      ],
+      "model_status": "unregistered",
+      "review_status": "pending",
+      "source_reference_id": "SRC-PAL-TOWER-006-S03",
+      "source_reference_file": "remaining-palace-kits/royal-needle/source-sections/PAL-TOWER-006-S03.png",
+      "source_reference_sha256": "da08f27e370909021442e5129d6f5111921aa99d672f105299ac67ebc7a9974c",
+      "reuse_component_ids": [
+        "PAL-TOWER-003-S04",
+        "PAL-TOWER-003-D01",
+        "PAL-TOWER-003-D03",
+        "PAL-TOWER-003-D09",
+        "PAL-TOWER-003-D12",
+        "PAL-TOWER-001-D13",
+        "PAL-TOWER-001-D14",
+        "PAL-TOWER-001-D15",
+        "PAL-TOWER-001-D16"
+      ]
+    },
+    {
+      "asset_id": "PAL-TOWER-006-S04",
+      "name": "Tall lantern support standard",
+      "description": "The LEFT lantern is a hanging light, not an extra inhabited tower. Its slender ivory/gold standard with floral foot, small collar, and gold hanger socket is a separate support. Exclude the blue cage and pendent which reuse terminal lantern parts. Complete modest base only where hidden by flowers.",
+      "source_box_xyxy": [
+        28,
+        178,
+        64,
+        312
+      ],
+      "model_status": "unregistered",
+      "review_status": "pending",
+      "source_reference_id": "SRC-PAL-TOWER-006-S04",
+      "source_reference_file": "remaining-palace-kits/royal-needle/source-sections/PAL-TOWER-006-S04.png",
+      "source_reference_sha256": "0f8c47f84cd47f75d5d41d66ab52123c0c4265626175c8c59b2434dadb2a9097",
+      "reuse_component_ids": [
+        "PAL-TOWER-003-S04",
+        "PAL-TOWER-003-D01",
+        "PAL-TOWER-003-D03",
+        "PAL-TOWER-003-D09",
+        "PAL-TOWER-003-D12",
+        "PAL-TOWER-001-D13",
+        "PAL-TOWER-001-D14",
+        "PAL-TOWER-001-D15",
+        "PAL-TOWER-001-D16"
+      ]
+    }
+  ],
+  "decor": [],
+  "prompts": {
+    "structure": "Use the SINGLE supplied original GEN-37 crop as the visible design authority. Other existing component studies only support construction/ornament vocabulary. Maintain rose/ivory veined marble, source blue/lilac/pink glass, fine muted polished gold, plum-violet roof surfaces. Clean restrained nearly frontal orthographic technical product view with enough depth to see interfaces; whole uncropped models on clean warm-white paper/studio background. Preserve visible relative proportions and asymmetric offsets; infer only unseen backs, support faces and join undersides conservatively. No complete palace or redesigned tower, no scene, people, extra background buildings or plants unless a planting asset is explicitly requested. All pieces separated, no neighbor fusion. Labels below objects, not embedded on surfaces. Exactly the requested item count. Straight columns remain straight, arches regular, curved strips smooth and single, no melted curls, warped faces or gratuitous extra spikes. Preserve fine source details without exaggerating their size.\nTitle: PAL-TOWER-006 \u2014 Royal needle with attached companion turrets sections. Create exactly FOUR isolated structural sections in a clear 2-by-2 grid. MUST PRINT a title above the grid and the COMPLETE asset ID AND short part name below each object; neither IDs alone nor names alone are sufficient. Four source-derived pieces cover the tall central needle and its different support roles. Do not create three equal needle towers or turn the hanging blue lantern into a blue-window building. Main shaft is far taller/slimmer than companion body. Keep source details restrained; no plants or backgrounds. The companion crown and common stars/lantern cage reuse already saved references.\nS01\u2192S02 at J-R. S03 top takes the reused slender needle crown profile with diameter normalization before modeling; S03 side pad joins a separate gallery wall. S04 hanger seat receives the reused lantern assembly. These four pieces do NOT form one vertical stack.\nPAL-TOWER-006-S01 \u2014 Royal star-glass shaft: The tallest central needle shaft, extremely slender and long, multiple source gold stars in blue/rose vertical glass, straight ivory engaged ribs and shallow upper pointed crown collar. Bottom terminates only just below the flower-obscured sill; no huge added pedestal. Exclude its cone roof and neighboring companion.\nPAL-TOWER-006-S02 \u2014 Royal steep spire crown: Source long sharp plum/violet spire with fine gold ribs, small slender eave pencil pinnacles and the delicate gold star tip. Match the shaft collar without adding a second lower floor.\nPAL-TOWER-006-S03 \u2014 Two-stage companion turret body: The shorter RIGHT attached companion: tall lower pointed blue/rose glazed body and a short upper blue-lancet drum separated by the source narrow gold/ivory belt. Keep this true two-stage body and modest side attachment pad; cone roof excluded and reused from needle crown vocabulary.\nPAL-TOWER-006-S04 \u2014 Tall lantern support standard: The LEFT lantern is a hanging light, not an extra inhabited tower. Its slender ivory/gold standard with floral foot, small collar, and gold hanger socket is a separate support. Exclude the blue cage and pendent which reuse terminal lantern parts. Complete modest base only where hidden by flowers.\nKeep small reused ornament installed for source appearance, but detachable decor belongs to the corresponding detail pack. Do not bake neighboring towers, plants or hanging lantern bodies into these modules. Common mating profile and front-facing facet orientation wherever two vertical sections stack; section cut planes follow the source stone bands. Mark small J labels at mating rims. No industrial joints, mechanical plugs or added hidden floors. Displayed pixel dimensions are illustrative; visible original crop proportions remain master.",
+    "structure_correction": "Correct ONLY PAL-TOWER-006-S02 Royal steep spire crown in the top-right cell of this four-part royal needle reference. S01 already includes the source small blue clerestory collar at its top, so S02 must be ONLY the sharp violet/gold roof and its star spindle plus slender side eave pencil pinnacles. DELETE the entire window-bearing ivory stone clerestory row from the bottom of S02, and delete all its blue-window base faces, leaving a simple THIN plain ivory/gold eave mounting lip directly under the roof. No second gallery or extra arched floor in the stacked result. Preserve the long sharp source roof shape, slender gold meridians and delicate side pinnacles at eave. S01/S03/S04 unchanged, exact title and all four printed IDs AND part names unchanged, same layout and palette. Whole objects uncropped, clean join underside, no added ornament or background scene."
+  },
+  "outputs": [
+    {
+      "sheet_id": "PAL-TOWER-006",
+      "kind": "structure_correction",
+      "file": "remaining-palace-kits/royal-needle/PAL-TOWER-006.png",
+      "sha256": "0d946db63dc537b9b701ade1ed3c196bc5b5c01d385aec891def0136da441d68",
+      "original_file": "/workspace/generated_images/exec-367d1d50-6555-4df7-a5fb-4b61ee0d92d1.png",
+      "source_reference_id": "SRC-PAL-TOWER-006",
+      "source_reference_sha256": "62b4e6eeadb99e9e7ccf9cff9ab39785857d3530da16c92378e9e429f75c96f5",
+      "prompt_key": "structure_correction",
+      "generator": "image_gen.imagegen",
+      "review_status": "pending-user-review",
+      "actual_generation_input_file": "remaining-palace-kits/royal-needle/rejected-drafts/PAL-TOWER-006-R01.png",
+      "actual_generation_input_sha256": "e218633a07bb966127e97e07ec4ff347f2260f9265ff68469b6a3b41a5bc75c0"
+    }
+  ],
+  "shared_decor_id": "PAL-TOWER-003-DECOR",
+  "shared_common_ids": [
+    "PAL-TOWER-001-D13",
+    "PAL-TOWER-001-D14",
+    "PAL-TOWER-001-D15",
+    "PAL-TOWER-001-D16"
+  ],
+  "limits": "Hidden backs/profile dimensions inferred. Actual model fit unverified. Original front determines visible design.",
+  "previous_attempts": [
+    {
+      "sheet_id": "PAL-TOWER-006",
+      "kind": "structure",
+      "file": "remaining-palace-kits/royal-needle/rejected-drafts/PAL-TOWER-006-R01.png",
+      "sha256": "e218633a07bb966127e97e07ec4ff347f2260f9265ff68469b6a3b41a5bc75c0",
+      "original_file": "/workspace/generated_images/exec-15b3a64e-09b7-4078-8413-2f563ee61608.png",
+      "source_reference_id": "SRC-PAL-TOWER-006",
+      "source_reference_sha256": "62b4e6eeadb99e9e7ccf9cff9ab39785857d3530da16c92378e9e429f75c96f5",
+      "prompt_key": "structure",
+      "generator": "image_gen.imagegen",
+      "review_status": "superseded-duplicate-clerestory-at-crown-join"
+    }
+  ],
+  "review_notes": [
+    "Duplicated clerestory removed from roof section. S03 companion roof uses existing needle crown vocabulary with source diameter/height normalization. Lantern-support underside is inferred."
+  ],
+  "review_status": "pending-user-reference-review",
+  "models_generated": 0,
+  "actual_3D_joint_fit_verified": false,
+  "part_scales": "Independent drawing scales, not measured manufacturing dimensions",
+  "existing_board_reuse": [
+    "GEN-17",
+    "GEN-32",
+    "GEN-38",
+    "GEN-41",
+    "GEN-44",
+    "GEN-45"
+  ]
+}
