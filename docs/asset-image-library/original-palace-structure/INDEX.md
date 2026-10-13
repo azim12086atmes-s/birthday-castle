@@ -26,3 +26,10 @@ The two generated wing redraws were rejected. These references use exact pixels 
 ## Working rule
 
 Preserve these original references. Establish source correspondence before any new structural synthesis. The existing component masters decorate the actual source layout; they do not determine a new layout. Roof/garden placement and hidden depths must be resolved explicitly, not silently invented. Other reserved structural generations are paused for this review.
+
+## Complete original side assemblies
+
+These larger exact crops retain the actual upper tower/pavilion and lower ward relationships together. They still include overlapping front-projection context; they are not manufactured isolated meshes.
+
+- [Western source assembly with its actual upper pavilion and lower wings](western-complete-source-assembly.png)
+- [Eastern source assembly with its actual spires and nested wards](eastern-complete-source-assembly.png)

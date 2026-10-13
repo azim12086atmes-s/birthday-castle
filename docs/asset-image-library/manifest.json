@@ -1,8 +1,8 @@
 {
   "date": "2026-10-13",
-  "distinct_image_count": 595,
+  "distinct_image_count": 597,
   "source_file_count": 854,
-  "total_bytes": 531643320,
+  "total_bytes": 534192557,
   "categories": {
     "additional-generated-studies": 33,
     "component-development-studies": 3,
@@ -18,7 +18,7 @@
     "missing-component-packs": 1,
     "original-column-source-crops": 7,
     "palace-structural-studies": 1,
-    "original-palace-source-regions": 2,
+    "original-palace-source-regions": 4,
     "palace-structure-drafts": 3
   },
   "active_palace_authority": "GEN-37 original front elevation; GEN-03 and GEN-16 supporting views",
@@ -11670,6 +11670,42 @@
       "label": "DRAFT-PAL-BASE-001-R01 \u2014 Unapproved base and gate host proposal",
       "reference_role": "rejected-or-paused-generated-proposal",
       "design_status": "paused-proposal; source correspondence not established",
+      "related_image_ids": [
+        "GEN-37"
+      ]
+    },
+    {
+      "id": "SRC-PAL-WEST-COMPLETE",
+      "title": "Western source assembly with its actual upper pavilion and lower wings",
+      "category": "original-palace-source-regions",
+      "file": "original-palace-structure/western-complete-source-assembly.png",
+      "sha256": "65883a6cd5d95df579d5f2ec9bb682ba92c44a751e9c7258cf51b6d4108b0772",
+      "bytes": 1201893,
+      "source_aliases": [],
+      "review_status": "direct-source-extraction",
+      "alias_ids": [],
+      "component_ids": [],
+      "label": "SRC-PAL-WEST-COMPLETE \u2014 Western source assembly with its actual upper pavilion and lower wings",
+      "reference_role": "complete-original-front-region",
+      "design_status": "source-front-context; not-isolated-mesh-proof",
+      "related_image_ids": [
+        "GEN-37"
+      ]
+    },
+    {
+      "id": "SRC-PAL-EAST-COMPLETE",
+      "title": "Eastern source assembly with its actual spires and nested wards",
+      "category": "original-palace-source-regions",
+      "file": "original-palace-structure/eastern-complete-source-assembly.png",
+      "sha256": "19896bd0bc7412f5a04cdaf951fdc517e6ddff146c9b14c880bf6e33ffadeef9",
+      "bytes": 1347344,
+      "source_aliases": [],
+      "review_status": "direct-source-extraction",
+      "alias_ids": [],
+      "component_ids": [],
+      "label": "SRC-PAL-EAST-COMPLETE \u2014 Eastern source assembly with its actual spires and nested wards",
+      "reference_role": "complete-original-front-region",
+      "design_status": "source-front-context; not-isolated-mesh-proof",
       "related_image_ids": [
         "GEN-37"
       ]

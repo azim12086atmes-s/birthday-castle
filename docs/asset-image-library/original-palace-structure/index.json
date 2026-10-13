@@ -195,6 +195,42 @@
         198
       ],
       "reference_image_id": "REF-E67FD4EFFE7F"
+    },
+    {
+      "id": "SRC-PAL-WEST-COMPLETE",
+      "title": "Western source assembly with its actual upper pavilion and lower wings",
+      "file": "western-complete-source-assembly.png",
+      "box_xyxy": [
+        0,
+        0,
+        817,
+        815
+      ],
+      "sha256": "65883a6cd5d95df579d5f2ec9bb682ba92c44a751e9c7258cf51b6d4108b0772",
+      "size": [
+        817,
+        815
+      ],
+      "reference_image_id": "SRC-PAL-WEST-COMPLETE",
+      "observed": "Exact original front-projection context, including associated towers and gardens; not a newly invented isolated wing or a measured footprint"
+    },
+    {
+      "id": "SRC-PAL-EAST-COMPLETE",
+      "title": "Eastern source assembly with its actual spires and nested wards",
+      "file": "eastern-complete-source-assembly.png",
+      "box_xyxy": [
+        998,
+        0,
+        1898,
+        815
+      ],
+      "sha256": "19896bd0bc7412f5a04cdaf951fdc517e6ddff146c9b14c880bf6e33ffadeef9",
+      "size": [
+        900,
+        815
+      ],
+      "reference_image_id": "SRC-PAL-EAST-COMPLETE",
+      "observed": "Exact original front-projection context, including associated towers and gardens; not a newly invented isolated wing or a measured footprint"
     }
   ],
   "reuse_bindings": [

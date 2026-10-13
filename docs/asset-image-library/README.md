@@ -1,6 +1,6 @@
 # Birthday Castle image archive
 
-This archive contains **595 distinct image files** (507.0 MiB), including the 45 original illustrated boards, later generated concepts, vector drawings, crops, previews and build renders.
+This archive contains **597 distinct image files** (509.4 MiB), including the 45 original illustrated boards, later generated concepts, vector drawings, crops, previews and build renders.
 
 The active palace reference is **GEN-37**, with GEN-03 and GEN-16 as supporting views. Additional studies are retained for review; preservation does not mean approval. The corrected INT-C01 floor uses rose and ivory marble.
 
@@ -8,19 +8,21 @@ Use [the illustrated boards](images/illustrated-boards) to browse the original a
 
 | Category | Files |
 | --- | ---: |
-| [component-development-studies](images/component-development-studies) | 3 |
-| [modular-component-packs](images/modular-component-packs) | 2 |
-| [superseded-pack-revisions](images/superseded-pack-revisions) | 1 |
-| [original-bridge-source-crops](bridge-source-panels/INDEX.md) | 10 |
-| [missing-component-packs](images/missing-component-packs) | 1 |
-| [original-column-source-crops](column-source-panels/INDEX.md) | 7 |
-| [palace-structural-studies](images/palace-structural-studies) | 1 |
 | [additional-generated-studies](images/additional-generated-studies) | 33 |
+| [component-development-studies](images/component-development-studies) | 3 |
 | [illustrated-boards](images/illustrated-boards) | 45 |
 | [interior-components](images/interior-components) | 3 |
+| [missing-component-packs](images/missing-component-packs) | 1 |
+| [modular-component-packs](images/modular-component-packs) | 2 |
+| [original-bridge-source-crops](bridge-source-panels/INDEX.md) | 10 |
+| [original-column-source-crops](column-source-panels/INDEX.md) | 7 |
+| [original-palace-source-regions](original-palace-structure/INDEX.md) | 4 |
+| [palace-structural-studies](images/palace-structural-studies) | 1 |
+| [palace-structure-drafts](images/palace-structure-drafts) | 3 |
 | [previews-and-reference-copies](images/previews-and-reference-copies) | 233 |
 | [reference-crops-and-studies](images/reference-crops-and-studies) | 73 |
 | [renders-and-screenshots](images/renders-and-screenshots) | 48 |
+| [superseded-pack-revisions](images/superseded-pack-revisions) | 1 |
 | [vector-drawings](images/vector-drawings) | 130 |
 
 All image bytes are unchanged. Identical copies are stored once, with every original path listed in the manifest. Different previews and cropped versions remain separate. Native Blender files, application changes and non-image documents are outside this image-only archive.
