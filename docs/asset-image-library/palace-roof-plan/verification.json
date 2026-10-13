@@ -1,16 +1,29 @@
 {
   "reference_image": "PAL-ROOF-PLAN-001",
-  "archive_images": 616,
+  "revision": "R03",
+  "archive_images": 617,
   "tower_placements": 33,
   "dry_stair_links": 11,
+  "roof_access_terminals": 28,
   "every_level_pair_connected": true,
-  "stair_landings_match_roof_levels": true,
+  "same_level_paths_connected": true,
+  "tower_placements_preserved_from_R02": true,
+  "main_contours_heights_gates_and_stairs_preserved": true,
+  "confirmed_wall_gaps_checked": true,
+  "source_garden_boards_reviewed_one_at_a_time": [
+    "GEN-16",
+    "GEN-14",
+    "GEN-15",
+    "GEN-03"
+  ],
   "source_image_pixels_modified": false,
-  "all_archive_hashes_and_gallery_links_verified": true,
+  "all_archive_hashes_and_new_gallery_links_verified": true,
   "original45_boards_retained": true,
   "palace_cap": 65,
   "global_cap": 230,
   "selected_or_reserved_total": 65,
   "palace_selected_or_reserved": 48,
-  "limits": "Contours, depths, envelope and extra upper-front setback proposed. No registered source mesh or final stair geometry claimed."
+  "new_component_sheets": 0,
+  "selected_sheet_allowance_change": 0,
+  "limits": "Garden fitting, contours, tower depths, envelope and extra upper-front setback proposed. Path and fixture widths symbolic. No registered source mesh or final structural/stair geometry claimed."
 }

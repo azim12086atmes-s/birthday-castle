@@ -1,0 +1,1000 @@
+{
+  "schema_version": 1,
+  "sheet_id": "PAL-ROOF-PLAN-001",
+  "title": "Complete nested palace roof plan",
+  "owner_correction": "Higher wards centrally nested; terraces step down and outward; show whole palace with all inventoried tower places, stairs and wings",
+  "source_front": "GEN-37",
+  "reference": "/workspace/shared/birthday-castle-layer-sheets/GEN-37-reference.jpg",
+  "prompt": "Create ONE complete architectural ROOF PLAN SKETCH of the original princess palace viewed EXACTLY FROM ABOVE, looking vertically down. Title PAL-ROOF-PLAN-001 \u2014 Complete nested palace roof plan. No side sections, no elevation panels, no isometric camera, no upright tower shafts, no vertical front-facing windows. The supplied original FRONT gives tower identity, colors and carved architectural vocabulary, not a plan to copy. Draw actual connected roof footprints, radial dome crowns, chapel roof ridges, spire crown/star footprints, roof gardens, wall thickness, parapets, courtyards and stairs, fully framed on warm ivory paper in fine ink and restrained rose/ivory marble watercolor, gold trim, plum/indigo crowns, small blue water features.\nCRITICAL correction: terraces STEP DOWN AND OUTWARD FROM A CENTRAL HEART. L4 is the SMALL CENTRAL highest roof court, enclosed by L3, then L2, then the LARGE lowest L1 OUTER BASE. Every lower layer continues around the higher layer on WEST,EAST,NORTH and its appropriate SOUTH front. Do not put L4 at the north/top edge of a long upward staircase strip; do not accumulate all high wings at the back. Colour/label nested exposed roof bands L1=60,L2=160,L3=230,L4=300 GRID m. Heights stay60,160,230,300; descending from inner to outer is300\u2192230\u2192160\u219260. NORTH/REAR at page TOP; SOUTH/FRONT at BOTTOM; WEST LEFT,EAST RIGHT.\nWORKING PLAN frame, deliberately PROPOSED:800 grid m wide and680 deep, X=-400..400, Y=-150..530, using rounded/chamfered main contours with asymmetric connected wing projections. L1 outside footprint X\u00b1400,Y-150..530. L2 inside X\u00b1300,Y0..455. L3 inside X\u00b1200,Y60..380. L4 central X\u00b1100,Y120..305. Keep these contours NESTED, no clipped upper island touching outer rear wall. L4 centre Y212.5 is near overall centre190, not pushed to extreme rear. These overall dimensions and L4 frontY120 are proposed, not previously confirmed exact measurements. Main side wall-face gaps100 between every successive level; rear gaps75. Draw SIDE dimension arrows horizontally EAST-WEST across contour faces, and REAR arrows vertically NORTH-SOUTH between rear contour faces. Never switch those arrow axes. You may place clean extension lines outside drawing. Do not force the100 or75 onto unconfirmed front gaps.\nSOUTH arrival: SINGLE connected five-arch gate-wall footprint at Y0 with G1,G2,G3,G4,G5, four glazed bays and centreG3 entrance, not five standalone gate blocks. Preserve original gate asymmetry and original source front tower anchors. Stair foot Y-150 Z0; BOTH dry stair strips flank the separate blue CENTRAL WET CASCADE, climbing to Y-75 Z60. Keep clear75 m L1 roof terrace from stair topY-75 to gateY0. Total front-wall-to-gate150. L2\u2192L3 front60; L3\u2192L4 front60 here is PROPOSED. Do not press stair top against gate. All decorative rails and landings join continuous walls.\nShow ALL33 inventoried tower-footprint marks from the coordinate list appended below, with small legible full placement IDs or T01\u2013T33 next to them. Tower X order follows the original front, do not mirror west/east, do not drag all towers onto the highest contour, and do not create new dominant towers at layer corners. Main WEST broad onion pavilionT05 is left-of-centre aroundX-175,Y145, distinct large bulbous radial crown. Royal needleT12 and attached small turret marksT13/T14 are near centreX-30,Y205 within highest royal COURTYARD, not at the north edge. EAST belvedereT22 is aroundX170,Y45 toward front; tall EAST chapel-spire clusterT24,T25,T26 remains on the eastern attached lower wing aroundX250\u2013310,Y205\u2013240, not mirrored onto west. Original terminal onionsT02/T27 stay south corners. Minor towers connect to the main wall, curved projections, ward wings or parent turret cluster; not random detached circles across gardens. Attached childrenT13,T14,T21 join parents, not freestanding extra towers. Roofs shown in TRUE PLAN as concentric/ribbed dome discs and chapel polygons, never side-view domes. Tiny decorative pinnacles may appear at source-family parapets but must not replace numbered tower footprints.\nContinuous irregular palace wards: soft angled and semihexagonal/circular projections, recessed garden bays, attached secondary wings, no row of separate boxes. Add the four roof courts in the appended list; small pools, lotus fountains, benches, flower beds, lamps and walking paths use existing palette/detail families. Royal tower footprint sits within central roof court. West garden court and eastern chapel court retain asymmetric shape. Stairs and roof paths connect every pair of adjacent tiers at sides and rear; dry access remains to centreG3. Avoid new large bridges, gigantic empty platforms, enormous replacement fountains and a front facade transplanted to rear.\nPrint geographic compass, seven major tower-name callouts, numbered secondary tower marks, stair route keys and four level roof heights. Put short footer: CENTRE HIGH \u2192 OUTER LOW / MAIN WALL GAPS100 SIDE,75 REAR / DEPTHS AND EXTRA FRONT SETBACK PROPOSED / ORIGINAL GEN-37 FRONT CONTROLS. One coherent complete roof plan, enough detail to read all towers, stairs, wings and courts, not merely an empty contour diagram. True overhead roof silhouettes and plan geometry are essential.\nTOWER PLACEMENTS (design-grid m; depth provisional):\nPAL-PLAN-T01: west ground needle, centre X-377.6 Y-130, crown spire, parent ward.\nPAL-PLAN-T02: west terminal onion, centre X-327.08 Y-125, crown onion, parent ward.\nPAL-PLAN-T03: west tall needle, centre X-282.4 Y220, crown spire, parent ward.\nPAL-PLAN-T04: west gallery needle, centre X-238.39 Y55, crown spire, parent ward.\nPAL-PLAN-T05: broad west onion pavilion, centre X-174.92 Y145, crown onion, parent ward.\nPAL-PLAN-T06: west copper satellite, centre X-257.84 Y25, crown onion, parent ward.\nPAL-PLAN-T07: west facade projecting tower, centre X-191.3 Y10, crown spire, parent ward.\nPAL-PLAN-T08: west lower stained-glass tower, centre X-199.49 Y-85, crown spire, parent ward.\nPAL-PLAN-T09: west inner gallery needle, centre X-98.0 Y95, crown spire, parent ward.\nPAL-PLAN-T10: west royal needle, centre X-80.08 Y150, crown spire, parent ward.\nPAL-PLAN-T11: west royal copper cap, centre X-60.06 Y155, crown spire, parent ward.\nPAL-PLAN-T12: highest royal needle, centre X-29.5 Y205, crown spire, parent ward.\nPAL-PLAN-T13: royal left attached turret, centre X-38.5 Y202, crown spire, parent PAL-PLAN-T12.\nPAL-PLAN-T14: royal right attached turret, centre X-20.5 Y208, crown spire, parent PAL-PLAN-T12.\nPAL-PLAN-T15: central onion gallery, centre X12.95 Y110, crown onion, parent ward.\nPAL-PLAN-T16: central copper needle, centre X34.18 Y160, crown spire, parent ward.\nPAL-PLAN-T17: central pink needle, centre X55.41 Y140, crown spire, parent ward.\nPAL-PLAN-T18: middle east onion gallery, centre X79.41 Y175, crown onion, parent ward.\nPAL-PLAN-T19: east copper gallery tower, centre X110.79 Y130, crown spire, parent ward.\nPAL-PLAN-T20: middle east tall needle, centre X152.33 Y195, crown spire, parent ward.\nPAL-PLAN-T21: middle east attached turret, centre X160.33 Y199, crown spire, parent PAL-PLAN-T20.\nPAL-PLAN-T22: east foreground onion pavilion, centre X169.86 Y45, crown onion, parent ward.\nPAL-PLAN-T23: east garden needle, centre X214.23 Y280, crown spire, parent ward.\nPAL-PLAN-T24: east cluster west needle, centre X248.52 Y225, crown spire, parent ward.\nPAL-PLAN-T25: east cluster high needle, centre X277.77 Y240, crown spire, parent ward.\nPAL-PLAN-T26: east cluster right needle, centre X300.22 Y205, crown spire, parent ward.\nPAL-PLAN-T27: east terminal onion, centre X346.05 Y-125, crown onion, parent ward.\nPAL-PLAN-T28: east lower stained-glass tower, centre X144.94 Y-90, crown spire, parent ward.\nPAL-PLAN-T29: gate west flanking turret, centre X-47.42 Y15, crown spire, parent ward.\nPAL-PLAN-T30: gate east flanking turret, centre X26.8 Y15, crown spire, parent ward.\nPAL-PLAN-T31: east facade projecting tower, centre X148.63 Y10, crown spire, parent ward.\nPAL-PLAN-T32: west rose terrace slender needle, centre X-121.18 Y105, crown spire, parent ward.\nPAL-PLAN-T33: east rose terrace slender needle, centre X131.1 Y115, crown spire, parent ward.\nCOURTS:\n[{\"id\": \"C-ROYAL\", \"name\": \"Royal roof courtyard\", \"level\": \"L4\", \"centre\": [0, 210]}, {\"id\": \"C-WEST\", \"name\": \"Western rose court\", \"level\": \"L2\", \"centre\": [-245, 180]}, {\"id\": \"C-EAST\", \"name\": \"Eastern chapel court\", \"level\": \"L2\", \"centre\": [265, 240]}, {\"id\": \"C-REAR\", \"name\": \"Rear lotus garden court\", \"level\": \"L2\", \"centre\": [0, 425]}]\nSTAIR CONNECTIONS:\n[{\"id\": \"S-FRONT-W\", \"name\": \"West dry entrance stair\", \"from\": [-49.07, -150, 0], \"to\": [-49.07, -75, 60]}, {\"id\": \"S-FRONT-E\", \"name\": \"East dry entrance stair\", \"from\": [22.93, -150, 0], \"to\": [22.93, -75, 60]}, {\"id\": \"W-CASCADE\", \"name\": \"Original central wet cascade\", \"from\": [-13.07, -75, 60], \"to\": [-13.07, -150, 0]}, {\"id\": \"S-W12\", \"from\": [-350, 45, 60], \"to\": [-275, 90, 160]}, {\"id\": \"S-E12\", \"from\": [350, 70, 60], \"to\": [275, 115, 160]}, {\"id\": \"S-W23\", \"from\": [-265, 230, 160], \"to\": [-180, 250, 230]}, {\"id\": \"S-E23\", \"from\": [265, 170, 160], \"to\": [180, 190, 230]}, {\"id\": \"S-W34\", \"from\": [-170, 195, 230], \"to\": [-80, 185, 300]}, {\"id\": \"S-E34\", \"from\": [170, 265, 230], \"to\": [80, 255, 300]}, {\"id\": \"S-N23\", \"from\": [65, 425, 160], \"to\": [65, 360, 230]}, {\"id\": \"S-N34\", \"from\": [-55, 345, 230], \"to\": [-55, 285, 300]}]",
+  "proposed_envelope_grid_m": [
+    800,
+    680
+  ],
+  "envelope_status": "Working dimensions from prior illustrative multi-view proportions, not a registered or owner-confirmed footprint",
+  "front_extra_setback_grid_m": 60,
+  "front_extra_setback_status": "L3-to-L4 proposed; previous uncertainty retained, not claimed confirmed",
+  "levels": [
+    {
+      "id": "L1",
+      "roof_grid_m": 60,
+      "xmin": -400,
+      "xmax": 400,
+      "front_y": -150,
+      "rear_y": 530,
+      "chamfer": 35,
+      "main_contour": [
+        [
+          -365,
+          -150
+        ],
+        [
+          365,
+          -150
+        ],
+        [
+          400,
+          -115
+        ],
+        [
+          400,
+          495
+        ],
+        [
+          365,
+          530
+        ],
+        [
+          -365,
+          530
+        ],
+        [
+          -400,
+          495
+        ],
+        [
+          -400,
+          -115
+        ]
+      ]
+    },
+    {
+      "id": "L2",
+      "roof_grid_m": 160,
+      "xmin": -300,
+      "xmax": 300,
+      "front_y": 0,
+      "rear_y": 455,
+      "chamfer": 30,
+      "main_contour": [
+        [
+          -270,
+          0
+        ],
+        [
+          270,
+          0
+        ],
+        [
+          300,
+          30
+        ],
+        [
+          300,
+          425
+        ],
+        [
+          270,
+          455
+        ],
+        [
+          -270,
+          455
+        ],
+        [
+          -300,
+          425
+        ],
+        [
+          -300,
+          30
+        ]
+      ]
+    },
+    {
+      "id": "L3",
+      "roof_grid_m": 230,
+      "xmin": -200,
+      "xmax": 200,
+      "front_y": 60,
+      "rear_y": 380,
+      "chamfer": 25,
+      "main_contour": [
+        [
+          -175,
+          60
+        ],
+        [
+          175,
+          60
+        ],
+        [
+          200,
+          85
+        ],
+        [
+          200,
+          355
+        ],
+        [
+          175,
+          380
+        ],
+        [
+          -175,
+          380
+        ],
+        [
+          -200,
+          355
+        ],
+        [
+          -200,
+          85
+        ]
+      ]
+    },
+    {
+      "id": "L4",
+      "roof_grid_m": 300,
+      "xmin": -100,
+      "xmax": 100,
+      "front_y": 120,
+      "rear_y": 305,
+      "chamfer": 15,
+      "main_contour": [
+        [
+          -85,
+          120
+        ],
+        [
+          85,
+          120
+        ],
+        [
+          100,
+          135
+        ],
+        [
+          100,
+          290
+        ],
+        [
+          85,
+          305
+        ],
+        [
+          -85,
+          305
+        ],
+        [
+          -100,
+          290
+        ],
+        [
+          -100,
+          135
+        ]
+      ]
+    }
+  ],
+  "tower_placements": [
+    {
+      "placement_id": "PAL-PLAN-T01",
+      "name": "west ground needle",
+      "legacy_trace_id": "T01",
+      "parent_placement_id": "",
+      "x_grid_m": -377.6,
+      "y_grid_m": -130,
+      "radius_grid_m": 6.4,
+      "roof_kind": "spire",
+      "source_front_u": 0.028,
+      "front_anchor_status": "minor anchor interpolated in legacy source order; verify GEN-37",
+      "depth_status": "proposed for centred nested plan; replaces old inferred depth",
+      "mesh_asset_id": "",
+      "model_status": "not generated; placement only"
+    },
+    {
+      "placement_id": "PAL-PLAN-T02",
+      "name": "west terminal onion",
+      "legacy_trace_id": "T02",
+      "parent_placement_id": "",
+      "x_grid_m": -327.08,
+      "y_grid_m": -125,
+      "radius_grid_m": 24,
+      "roof_kind": "onion",
+      "source_front_u": 0.09115,
+      "front_anchor_status": "approximate direct GEN-37 major anchor",
+      "depth_status": "proposed for centred nested plan; replaces old inferred depth",
+      "mesh_asset_id": "",
+      "model_status": "not generated; placement only"
+    },
+    {
+      "placement_id": "PAL-PLAN-T03",
+      "name": "west tall needle",
+      "legacy_trace_id": "T03",
+      "parent_placement_id": "",
+      "x_grid_m": -282.4,
+      "y_grid_m": 220,
+      "radius_grid_m": 8.72,
+      "roof_kind": "spire",
+      "source_front_u": 0.147,
+      "front_anchor_status": "approximate direct GEN-37 major anchor",
+      "depth_status": "proposed for centred nested plan; replaces old inferred depth",
+      "mesh_asset_id": "",
+      "model_status": "not generated; placement only"
+    },
+    {
+      "placement_id": "PAL-PLAN-T04",
+      "name": "west gallery needle",
+      "legacy_trace_id": "T04",
+      "parent_placement_id": "",
+      "x_grid_m": -238.39,
+      "y_grid_m": 55,
+      "radius_grid_m": 5.81,
+      "roof_kind": "spire",
+      "source_front_u": 0.20202,
+      "front_anchor_status": "minor anchor interpolated in legacy source order; verify GEN-37",
+      "depth_status": "proposed for centred nested plan; replaces old inferred depth",
+      "mesh_asset_id": "",
+      "model_status": "not generated; placement only"
+    },
+    {
+      "placement_id": "PAL-PLAN-T05",
+      "name": "broad west onion pavilion",
+      "legacy_trace_id": "T05",
+      "parent_placement_id": "",
+      "x_grid_m": -174.92,
+      "y_grid_m": 145,
+      "radius_grid_m": 37,
+      "roof_kind": "onion",
+      "source_front_u": 0.28135,
+      "front_anchor_status": "approximate direct GEN-37 major anchor",
+      "depth_status": "proposed for centred nested plan; replaces old inferred depth",
+      "mesh_asset_id": "",
+      "model_status": "not generated; placement only"
+    },
+    {
+      "placement_id": "PAL-PLAN-T06",
+      "name": "west copper satellite",
+      "legacy_trace_id": "T06",
+      "parent_placement_id": "",
+      "x_grid_m": -257.84,
+      "y_grid_m": -25,
+      "radius_grid_m": 7.56,
+      "roof_kind": "onion",
+      "source_front_u": 0.17771,
+      "front_anchor_status": "minor anchor interpolated in legacy source order; verify GEN-37",
+      "depth_status": "proposed for centred nested plan; replaces old inferred depth",
+      "mesh_asset_id": "",
+      "model_status": "not generated; placement only"
+    },
+    {
+      "placement_id": "PAL-PLAN-T07",
+      "name": "west facade projecting tower",
+      "legacy_trace_id": "T07",
+      "parent_placement_id": "",
+      "x_grid_m": -191.3,
+      "y_grid_m": -25,
+      "radius_grid_m": 6.98,
+      "roof_kind": "spire",
+      "source_front_u": 0.26088,
+      "front_anchor_status": "minor anchor interpolated in legacy source order; verify GEN-37",
+      "depth_status": "proposed for centred nested plan; replaces old inferred depth",
+      "mesh_asset_id": "",
+      "model_status": "not generated; placement only"
+    },
+    {
+      "placement_id": "PAL-PLAN-T08",
+      "name": "west lower stained-glass tower",
+      "legacy_trace_id": "T08",
+      "parent_placement_id": "",
+      "x_grid_m": -199.49,
+      "y_grid_m": -85,
+      "radius_grid_m": 6.98,
+      "roof_kind": "spire",
+      "source_front_u": 0.25064,
+      "front_anchor_status": "minor anchor interpolated in legacy source order; verify GEN-37",
+      "depth_status": "proposed for centred nested plan; replaces old inferred depth",
+      "mesh_asset_id": "",
+      "model_status": "not generated; placement only"
+    },
+    {
+      "placement_id": "PAL-PLAN-T09",
+      "name": "west inner gallery needle",
+      "legacy_trace_id": "T09",
+      "parent_placement_id": "",
+      "x_grid_m": -98.0,
+      "y_grid_m": 95,
+      "radius_grid_m": 6.98,
+      "roof_kind": "spire",
+      "source_front_u": 0.3775,
+      "front_anchor_status": "minor anchor interpolated in legacy source order; verify GEN-37",
+      "depth_status": "proposed for centred nested plan; replaces old inferred depth",
+      "mesh_asset_id": "",
+      "model_status": "not generated; placement only"
+    },
+    {
+      "placement_id": "PAL-PLAN-T10",
+      "name": "west royal needle",
+      "legacy_trace_id": "T10",
+      "parent_placement_id": "",
+      "x_grid_m": -80.08,
+      "y_grid_m": 150,
+      "radius_grid_m": 6.98,
+      "roof_kind": "spire",
+      "source_front_u": 0.39989,
+      "front_anchor_status": "minor anchor interpolated in legacy source order; verify GEN-37",
+      "depth_status": "proposed for centred nested plan; replaces old inferred depth",
+      "mesh_asset_id": "",
+      "model_status": "not generated; placement only"
+    },
+    {
+      "placement_id": "PAL-PLAN-T11",
+      "name": "west royal copper cap",
+      "legacy_trace_id": "T11",
+      "parent_placement_id": "",
+      "x_grid_m": -60.06,
+      "y_grid_m": 80,
+      "radius_grid_m": 9.3,
+      "roof_kind": "spire",
+      "source_front_u": 0.42492,
+      "front_anchor_status": "minor anchor interpolated in legacy source order; verify GEN-37",
+      "depth_status": "proposed for centred nested plan; replaces old inferred depth",
+      "mesh_asset_id": "",
+      "model_status": "not generated; placement only"
+    },
+    {
+      "placement_id": "PAL-PLAN-T12",
+      "name": "highest royal needle",
+      "legacy_trace_id": "T12",
+      "parent_placement_id": "",
+      "x_grid_m": -29.5,
+      "y_grid_m": 205,
+      "radius_grid_m": 14,
+      "roof_kind": "spire",
+      "source_front_u": 0.46312,
+      "front_anchor_status": "approximate direct GEN-37 major anchor",
+      "depth_status": "proposed for centred nested plan; replaces old inferred depth",
+      "mesh_asset_id": "",
+      "model_status": "not generated; placement only"
+    },
+    {
+      "placement_id": "PAL-PLAN-T13",
+      "name": "royal left attached turret",
+      "legacy_trace_id": "T13",
+      "parent_placement_id": "PAL-PLAN-T12",
+      "x_grid_m": -38.5,
+      "y_grid_m": 202,
+      "radius_grid_m": 5,
+      "roof_kind": "spire",
+      "source_front_u": 0.44073,
+      "front_anchor_status": "attached within parent group; precise attachment proposed",
+      "depth_status": "proposed for centred nested plan; replaces old inferred depth",
+      "mesh_asset_id": "",
+      "model_status": "not generated; placement only"
+    },
+    {
+      "placement_id": "PAL-PLAN-T14",
+      "name": "royal right attached turret",
+      "legacy_trace_id": "T14",
+      "parent_placement_id": "PAL-PLAN-T12",
+      "x_grid_m": -20.5,
+      "y_grid_m": 208,
+      "radius_grid_m": 5,
+      "roof_kind": "spire",
+      "source_front_u": 0.48619,
+      "front_anchor_status": "attached within parent group; precise attachment proposed",
+      "depth_status": "proposed for centred nested plan; replaces old inferred depth",
+      "mesh_asset_id": "",
+      "model_status": "not generated; placement only"
+    },
+    {
+      "placement_id": "PAL-PLAN-T15",
+      "name": "central onion gallery",
+      "legacy_trace_id": "T15",
+      "parent_placement_id": "",
+      "x_grid_m": 12.95,
+      "y_grid_m": 90,
+      "radius_grid_m": 12.79,
+      "roof_kind": "onion",
+      "source_front_u": 0.51619,
+      "front_anchor_status": "minor anchor interpolated in legacy source order; verify GEN-37",
+      "depth_status": "proposed for centred nested plan; replaces old inferred depth",
+      "mesh_asset_id": "",
+      "model_status": "not generated; placement only"
+    },
+    {
+      "placement_id": "PAL-PLAN-T16",
+      "name": "central copper needle",
+      "legacy_trace_id": "T16",
+      "parent_placement_id": "",
+      "x_grid_m": 34.18,
+      "y_grid_m": 75,
+      "radius_grid_m": 5,
+      "roof_kind": "spire",
+      "source_front_u": 0.54273,
+      "front_anchor_status": "minor anchor interpolated in legacy source order; verify GEN-37",
+      "depth_status": "proposed for centred nested plan; replaces old inferred depth",
+      "mesh_asset_id": "",
+      "model_status": "not generated; placement only"
+    },
+    {
+      "placement_id": "PAL-PLAN-T17",
+      "name": "central pink needle",
+      "legacy_trace_id": "T17",
+      "parent_placement_id": "",
+      "x_grid_m": 55.41,
+      "y_grid_m": 100,
+      "radius_grid_m": 5,
+      "roof_kind": "spire",
+      "source_front_u": 0.56926,
+      "front_anchor_status": "minor anchor interpolated in legacy source order; verify GEN-37",
+      "depth_status": "proposed for centred nested plan; replaces old inferred depth",
+      "mesh_asset_id": "",
+      "model_status": "not generated; placement only"
+    },
+    {
+      "placement_id": "PAL-PLAN-T18",
+      "name": "middle east onion gallery",
+      "legacy_trace_id": "T18",
+      "parent_placement_id": "",
+      "x_grid_m": 79.41,
+      "y_grid_m": 90,
+      "radius_grid_m": 15.12,
+      "roof_kind": "onion",
+      "source_front_u": 0.59926,
+      "front_anchor_status": "minor anchor interpolated in legacy source order; verify GEN-37",
+      "depth_status": "proposed for centred nested plan; replaces old inferred depth",
+      "mesh_asset_id": "",
+      "model_status": "not generated; placement only"
+    },
+    {
+      "placement_id": "PAL-PLAN-T19",
+      "name": "east copper gallery tower",
+      "legacy_trace_id": "T19",
+      "parent_placement_id": "",
+      "x_grid_m": 110.79,
+      "y_grid_m": 130,
+      "radius_grid_m": 8.14,
+      "roof_kind": "spire",
+      "source_front_u": 0.63849,
+      "front_anchor_status": "minor anchor interpolated in legacy source order; verify GEN-37",
+      "depth_status": "proposed for centred nested plan; replaces old inferred depth",
+      "mesh_asset_id": "",
+      "model_status": "not generated; placement only"
+    },
+    {
+      "placement_id": "PAL-PLAN-T20",
+      "name": "middle east tall needle",
+      "legacy_trace_id": "T20",
+      "parent_placement_id": "",
+      "x_grid_m": 152.33,
+      "y_grid_m": 195,
+      "radius_grid_m": 8.14,
+      "roof_kind": "spire",
+      "source_front_u": 0.69041,
+      "front_anchor_status": "minor anchor interpolated in legacy source order; verify GEN-37",
+      "depth_status": "proposed for centred nested plan; replaces old inferred depth",
+      "mesh_asset_id": "",
+      "model_status": "not generated; placement only"
+    },
+    {
+      "placement_id": "PAL-PLAN-T21",
+      "name": "middle east attached turret",
+      "legacy_trace_id": "T21",
+      "parent_placement_id": "PAL-PLAN-T20",
+      "x_grid_m": 160.33,
+      "y_grid_m": 199,
+      "radius_grid_m": 5,
+      "roof_kind": "spire",
+      "source_front_u": 0.70541,
+      "front_anchor_status": "attached within parent group; precise attachment proposed",
+      "depth_status": "proposed for centred nested plan; replaces old inferred depth",
+      "mesh_asset_id": "",
+      "model_status": "not generated; placement only"
+    },
+    {
+      "placement_id": "PAL-PLAN-T22",
+      "name": "east foreground onion pavilion",
+      "legacy_trace_id": "T22",
+      "parent_placement_id": "",
+      "x_grid_m": 169.86,
+      "y_grid_m": 45,
+      "radius_grid_m": 24,
+      "roof_kind": "onion",
+      "source_front_u": 0.71233,
+      "front_anchor_status": "approximate direct GEN-37 major anchor",
+      "depth_status": "proposed for centred nested plan; replaces old inferred depth",
+      "mesh_asset_id": "",
+      "model_status": "not generated; placement only"
+    },
+    {
+      "placement_id": "PAL-PLAN-T23",
+      "name": "east garden needle",
+      "legacy_trace_id": "T23",
+      "parent_placement_id": "",
+      "x_grid_m": 214.23,
+      "y_grid_m": 280,
+      "radius_grid_m": 9.3,
+      "roof_kind": "spire",
+      "source_front_u": 0.76779,
+      "front_anchor_status": "minor anchor interpolated in legacy source order; verify GEN-37",
+      "depth_status": "proposed for centred nested plan; replaces old inferred depth",
+      "mesh_asset_id": "",
+      "model_status": "not generated; placement only"
+    },
+    {
+      "placement_id": "PAL-PLAN-T24",
+      "name": "east cluster west needle",
+      "legacy_trace_id": "T24",
+      "parent_placement_id": "",
+      "x_grid_m": 248.52,
+      "y_grid_m": 225,
+      "radius_grid_m": 9.3,
+      "roof_kind": "spire",
+      "source_front_u": 0.81065,
+      "front_anchor_status": "minor anchor interpolated in legacy source order; verify GEN-37",
+      "depth_status": "proposed for centred nested plan; replaces old inferred depth",
+      "mesh_asset_id": "",
+      "model_status": "not generated; placement only"
+    },
+    {
+      "placement_id": "PAL-PLAN-T25",
+      "name": "east cluster high needle",
+      "legacy_trace_id": "T25",
+      "parent_placement_id": "",
+      "x_grid_m": 277.77,
+      "y_grid_m": 240,
+      "radius_grid_m": 11.63,
+      "roof_kind": "spire",
+      "source_front_u": 0.84721,
+      "front_anchor_status": "approximate direct GEN-37 major anchor",
+      "depth_status": "proposed for centred nested plan; replaces old inferred depth",
+      "mesh_asset_id": "",
+      "model_status": "not generated; placement only"
+    },
+    {
+      "placement_id": "PAL-PLAN-T26",
+      "name": "east cluster right needle",
+      "legacy_trace_id": "T26",
+      "parent_placement_id": "",
+      "x_grid_m": 300.22,
+      "y_grid_m": 205,
+      "radius_grid_m": 8.14,
+      "roof_kind": "spire",
+      "source_front_u": 0.87527,
+      "front_anchor_status": "minor anchor interpolated in legacy source order; verify GEN-37",
+      "depth_status": "proposed for centred nested plan; replaces old inferred depth",
+      "mesh_asset_id": "",
+      "model_status": "not generated; placement only"
+    },
+    {
+      "placement_id": "PAL-PLAN-T27",
+      "name": "east terminal onion",
+      "legacy_trace_id": "T27",
+      "parent_placement_id": "",
+      "x_grid_m": 346.05,
+      "y_grid_m": -125,
+      "radius_grid_m": 24,
+      "roof_kind": "onion",
+      "source_front_u": 0.93256,
+      "front_anchor_status": "approximate direct GEN-37 major anchor",
+      "depth_status": "proposed for centred nested plan; replaces old inferred depth",
+      "mesh_asset_id": "",
+      "model_status": "not generated; placement only"
+    },
+    {
+      "placement_id": "PAL-PLAN-T28",
+      "name": "east lower stained-glass tower",
+      "legacy_trace_id": "T28",
+      "parent_placement_id": "",
+      "x_grid_m": 144.94,
+      "y_grid_m": -90,
+      "radius_grid_m": 6.98,
+      "roof_kind": "spire",
+      "source_front_u": 0.68118,
+      "front_anchor_status": "minor anchor interpolated in legacy source order; verify GEN-37",
+      "depth_status": "proposed for centred nested plan; replaces old inferred depth",
+      "mesh_asset_id": "",
+      "model_status": "not generated; placement only"
+    },
+    {
+      "placement_id": "PAL-PLAN-T29",
+      "name": "gate west flanking turret",
+      "legacy_trace_id": "T29",
+      "parent_placement_id": "",
+      "x_grid_m": -47.42,
+      "y_grid_m": 15,
+      "radius_grid_m": 5.81,
+      "roof_kind": "spire",
+      "source_front_u": 0.44073,
+      "front_anchor_status": "minor anchor interpolated in legacy source order; verify GEN-37",
+      "depth_status": "proposed for centred nested plan; replaces old inferred depth",
+      "mesh_asset_id": "",
+      "model_status": "not generated; placement only"
+    },
+    {
+      "placement_id": "PAL-PLAN-T30",
+      "name": "gate east flanking turret",
+      "legacy_trace_id": "T30",
+      "parent_placement_id": "",
+      "x_grid_m": 26.8,
+      "y_grid_m": 15,
+      "radius_grid_m": 6.4,
+      "roof_kind": "spire",
+      "source_front_u": 0.5335,
+      "front_anchor_status": "minor anchor interpolated in legacy source order; verify GEN-37",
+      "depth_status": "proposed for centred nested plan; replaces old inferred depth",
+      "mesh_asset_id": "",
+      "model_status": "not generated; placement only"
+    },
+    {
+      "placement_id": "PAL-PLAN-T31",
+      "name": "east facade projecting tower",
+      "legacy_trace_id": "T31",
+      "parent_placement_id": "",
+      "x_grid_m": 148.63,
+      "y_grid_m": -25,
+      "radius_grid_m": 6.98,
+      "roof_kind": "spire",
+      "source_front_u": 0.68579,
+      "front_anchor_status": "minor anchor interpolated in legacy source order; verify GEN-37",
+      "depth_status": "proposed for centred nested plan; replaces old inferred depth",
+      "mesh_asset_id": "",
+      "model_status": "not generated; placement only"
+    },
+    {
+      "placement_id": "PAL-PLAN-T32",
+      "name": "west rose terrace slender needle",
+      "legacy_trace_id": "T32",
+      "parent_placement_id": "",
+      "x_grid_m": -121.18,
+      "y_grid_m": 105,
+      "radius_grid_m": 5.81,
+      "roof_kind": "spire",
+      "source_front_u": 0.34852,
+      "front_anchor_status": "minor anchor interpolated in legacy source order; verify GEN-37",
+      "depth_status": "proposed for centred nested plan; replaces old inferred depth",
+      "mesh_asset_id": "",
+      "model_status": "not generated; placement only"
+    },
+    {
+      "placement_id": "PAL-PLAN-T33",
+      "name": "east rose terrace slender needle",
+      "legacy_trace_id": "T33",
+      "parent_placement_id": "",
+      "x_grid_m": 131.1,
+      "y_grid_m": 35,
+      "radius_grid_m": 5,
+      "roof_kind": "spire",
+      "source_front_u": 0.66387,
+      "front_anchor_status": "minor anchor interpolated in legacy source order; verify GEN-37",
+      "depth_status": "proposed for centred nested plan; replaces old inferred depth",
+      "mesh_asset_id": "",
+      "model_status": "not generated; placement only"
+    }
+  ],
+  "tower_inventory_status": "33 historical inventoried tower instances; no claim of complete census of every decorative pinnacle in GEN-37",
+  "tower_coordinate_basis": "Major lateral anchors approximately from GEN-37. Minor lateral positions interpolated from previous inventory; all depths proposed for new central layout. No old inferred depth promoted to fact.",
+  "gates": [
+    {
+      "id": "G1",
+      "x_grid_m": -154.27,
+      "y_grid_m": 0,
+      "role": "great glazed bay"
+    },
+    {
+      "id": "G2",
+      "x_grid_m": -93.15,
+      "y_grid_m": 0,
+      "role": "great glazed bay"
+    },
+    {
+      "id": "G3",
+      "x_grid_m": -13.07,
+      "y_grid_m": 0,
+      "role": "entrance"
+    },
+    {
+      "id": "G4",
+      "x_grid_m": 57.32,
+      "y_grid_m": 0,
+      "role": "great glazed bay"
+    },
+    {
+      "id": "G5",
+      "x_grid_m": 111.28,
+      "y_grid_m": 0,
+      "role": "great glazed bay"
+    }
+  ],
+  "stairs": [
+    {
+      "id": "S-FRONT-W",
+      "name": "West dry entrance stair",
+      "from": [
+        -49.07,
+        -150,
+        0
+      ],
+      "to": [
+        -49.07,
+        -75,
+        60
+      ],
+      "lower_level": "G0",
+      "upper_level": "L1",
+      "transition": "G0 \u2194 L1",
+      "route_color": "#395f8a",
+      "plan_label": "W0"
+    },
+    {
+      "id": "S-FRONT-E",
+      "name": "East dry entrance stair",
+      "from": [
+        22.93,
+        -150,
+        0
+      ],
+      "to": [
+        22.93,
+        -75,
+        60
+      ],
+      "lower_level": "G0",
+      "upper_level": "L1",
+      "transition": "G0 \u2194 L1",
+      "route_color": "#395f8a",
+      "plan_label": "E0"
+    },
+    {
+      "id": "W-CASCADE",
+      "name": "Original central wet cascade",
+      "from": [
+        -13.07,
+        -75,
+        60
+      ],
+      "to": [
+        -13.07,
+        -150,
+        0
+      ],
+      "role": "water-only; not pedestrian stair"
+    },
+    {
+      "id": "S-W12",
+      "from": [
+        -350,
+        45,
+        60
+      ],
+      "to": [
+        -275,
+        90,
+        160
+      ],
+      "lower_level": "L1",
+      "upper_level": "L2",
+      "transition": "L1 \u2194 L2",
+      "route_color": "#327f71",
+      "plan_label": "W1"
+    },
+    {
+      "id": "S-E12",
+      "from": [
+        350,
+        70,
+        60
+      ],
+      "to": [
+        275,
+        115,
+        160
+      ],
+      "lower_level": "L1",
+      "upper_level": "L2",
+      "transition": "L1 \u2194 L2",
+      "route_color": "#327f71",
+      "plan_label": "E1"
+    },
+    {
+      "id": "S-W23",
+      "from": [
+        -265,
+        230,
+        160
+      ],
+      "to": [
+        -180,
+        250,
+        230
+      ],
+      "lower_level": "L2",
+      "upper_level": "L3",
+      "transition": "L2 \u2194 L3",
+      "route_color": "#b07835",
+      "plan_label": "W2"
+    },
+    {
+      "id": "S-E23",
+      "from": [
+        265,
+        170,
+        160
+      ],
+      "to": [
+        180,
+        190,
+        230
+      ],
+      "lower_level": "L2",
+      "upper_level": "L3",
+      "transition": "L2 \u2194 L3",
+      "route_color": "#b07835",
+      "plan_label": "E2"
+    },
+    {
+      "id": "S-W34",
+      "from": [
+        -170,
+        195,
+        230
+      ],
+      "to": [
+        -80,
+        185,
+        300
+      ],
+      "lower_level": "L3",
+      "upper_level": "L4",
+      "transition": "L3 \u2194 L4",
+      "route_color": "#805a97",
+      "plan_label": "W3"
+    },
+    {
+      "id": "S-E34",
+      "from": [
+        170,
+        265,
+        230
+      ],
+      "to": [
+        80,
+        255,
+        300
+      ],
+      "lower_level": "L3",
+      "upper_level": "L4",
+      "transition": "L3 \u2194 L4",
+      "route_color": "#805a97",
+      "plan_label": "E3"
+    },
+    {
+      "id": "S-N23",
+      "from": [
+        65,
+        425,
+        160
+      ],
+      "to": [
+        65,
+        360,
+        230
+      ],
+      "lower_level": "L2",
+      "upper_level": "L3",
+      "transition": "L2 \u2194 L3",
+      "route_color": "#b07835",
+      "plan_label": "N2"
+    },
+    {
+      "id": "S-N34",
+      "from": [
+        -55,
+        345,
+        230
+      ],
+      "to": [
+        -55,
+        285,
+        300
+      ],
+      "lower_level": "L3",
+      "upper_level": "L4",
+      "transition": "L3 \u2194 L4",
+      "route_color": "#805a97",
+      "plan_label": "N3"
+    },
+    {
+      "id": "S-N12",
+      "name": "Rear L1-to-L2 stair",
+      "from": [
+        -170,
+        495,
+        60
+      ],
+      "to": [
+        -170,
+        430,
+        160
+      ],
+      "lower_level": "L1",
+      "upper_level": "L2",
+      "transition": "L1 \u2194 L2",
+      "route_color": "#327f71",
+      "plan_label": "N1"
+    }
+  ],
+  "courtyards": [
+    {
+      "id": "C-ROYAL",
+      "name": "Royal roof courtyard",
+      "level": "L4",
+      "centre": [
+        0,
+        210
+      ]
+    },
+    {
+      "id": "C-WEST",
+      "name": "Western rose court",
+      "level": "L2",
+      "centre": [
+        -245,
+        180
+      ]
+    },
+    {
+      "id": "C-EAST",
+      "name": "Eastern chapel court",
+      "level": "L2",
+      "centre": [
+        265,
+        240
+      ]
+    },
+    {
+      "id": "C-REAR",
+      "name": "Rear lotus garden court",
+      "level": "L2",
+      "centre": [
+        0,
+        425
+      ]
+    }
+  ],
+  "world_scale": 2.75,
+  "front_constraints": {
+    "L1_front_to_gate": 150,
+    "stair_top_to_gate": 75,
+    "L2_to_L3_front": 60
+  },
+  "side_rear_gaps": {
+    "side_each": 100,
+    "rear": 75
+  },
+  "status": "prepared; not registered 3D layout",
+  "previous_drafts": [
+    {
+      "file": "palace-roof-plan/rejected-drafts/PAL-ROOF-PLAN-001-R01.png",
+      "sha256": "e9fb61c4db7fd209ffc02345c8f56de3068333d7e95035b73847fdfe7b24269f",
+      "prompt": "Create ONE complete architectural ROOF PLAN SKETCH of the original princess palace viewed EXACTLY FROM ABOVE, looking vertically down. Title PAL-ROOF-PLAN-001 \u2014 Complete nested palace roof plan. No side sections, no elevation panels, no isometric camera, no upright tower shafts, no vertical front-facing windows. The supplied original FRONT gives tower identity, colors and carved architectural vocabulary, not a plan to copy. Draw actual connected roof footprints, radial dome crowns, chapel roof ridges, spire crown/star footprints, roof gardens, wall thickness, parapets, courtyards and stairs, fully framed on warm ivory paper in fine ink and restrained rose/ivory marble watercolor, gold trim, plum/indigo crowns, small blue water features.\nCRITICAL correction: terraces STEP DOWN AND OUTWARD FROM A CENTRAL HEART. L4 is the SMALL CENTRAL highest roof court, enclosed by L3, then L2, then the LARGE lowest L1 OUTER BASE. Every lower layer continues around the higher layer on WEST,EAST,NORTH and its appropriate SOUTH front. Do not put L4 at the north/top edge of a long upward staircase strip; do not accumulate all high wings at the back. Colour/label nested exposed roof bands L1=60,L2=160,L3=230,L4=300 GRID m. Heights stay60,160,230,300; descending from inner to outer is300\u2192230\u2192160\u219260. NORTH/REAR at page TOP; SOUTH/FRONT at BOTTOM; WEST LEFT,EAST RIGHT.\nWORKING PLAN frame, deliberately PROPOSED:800 grid m wide and680 deep, X=-400..400, Y=-150..530, using rounded/chamfered main contours with asymmetric connected wing projections. L1 outside footprint X\u00b1400,Y-150..530. L2 inside X\u00b1300,Y0..455. L3 inside X\u00b1200,Y60..380. L4 central X\u00b1100,Y120..305. Keep these contours NESTED, no clipped upper island touching outer rear wall. L4 centre Y212.5 is near overall centre190, not pushed to extreme rear. These overall dimensions and L4 frontY120 are proposed, not previously confirmed exact measurements. Main side wall-face gaps100 between every successive level; rear gaps75. Draw SIDE dimension arrows horizontally EAST-WEST across contour faces, and REAR arrows vertically NORTH-SOUTH between rear contour faces. Never switch those arrow axes. You may place clean extension lines outside drawing. Do not force the100 or75 onto unconfirmed front gaps.\nSOUTH arrival: SINGLE connected five-arch gate-wall footprint at Y0 with G1,G2,G3,G4,G5, four glazed bays and centreG3 entrance, not five standalone gate blocks. Preserve original gate asymmetry and original source front tower anchors. Stair foot Y-150 Z0; BOTH dry stair strips flank the separate blue CENTRAL WET CASCADE, climbing to Y-75 Z60. Keep clear75 m L1 roof terrace from stair topY-75 to gateY0. Total front-wall-to-gate150. L2\u2192L3 front60; L3\u2192L4 front60 here is PROPOSED. Do not press stair top against gate. All decorative rails and landings join continuous walls.\nShow ALL33 inventoried tower-footprint marks from the coordinate list appended below, with small legible full placement IDs or T01\u2013T33 next to them. Tower X order follows the original front, do not mirror west/east, do not drag all towers onto the highest contour, and do not create new dominant towers at layer corners. Main WEST broad onion pavilionT05 is left-of-centre aroundX-175,Y145, distinct large bulbous radial crown. Royal needleT12 and attached small turret marksT13/T14 are near centreX-30,Y205 within highest royal COURTYARD, not at the north edge. EAST belvedereT22 is aroundX170,Y45 toward front; tall EAST chapel-spire clusterT24,T25,T26 remains on the eastern attached lower wing aroundX250\u2013310,Y205\u2013240, not mirrored onto west. Original terminal onionsT02/T27 stay south corners. Minor towers connect to the main wall, curved projections, ward wings or parent turret cluster; not random detached circles across gardens. Attached childrenT13,T14,T21 join parents, not freestanding extra towers. Roofs shown in TRUE PLAN as concentric/ribbed dome discs and chapel polygons, never side-view domes. Tiny decorative pinnacles may appear at source-family parapets but must not replace numbered tower footprints.\nContinuous irregular palace wards: soft angled and semihexagonal/circular projections, recessed garden bays, attached secondary wings, no row of separate boxes. Add the four roof courts in the appended list; small pools, lotus fountains, benches, flower beds, lamps and walking paths use existing palette/detail families. Royal tower footprint sits within central roof court. West garden court and eastern chapel court retain asymmetric shape. Stairs and roof paths connect every pair of adjacent tiers at sides and rear; dry access remains to centreG3. Avoid new large bridges, gigantic empty platforms, enormous replacement fountains and a front facade transplanted to rear.\nPrint geographic compass, seven major tower-name callouts, numbered secondary tower marks, stair route keys and four level roof heights. Put short footer: CENTRE HIGH \u2192 OUTER LOW / MAIN WALL GAPS100 SIDE,75 REAR / DEPTHS AND EXTRA FRONT SETBACK PROPOSED / ORIGINAL GEN-37 FRONT CONTROLS. One coherent complete roof plan, enough detail to read all towers, stairs, wings and courts, not merely an empty contour diagram. True overhead roof silhouettes and plan geometry are essential.\nTOWER PLACEMENTS (design-grid m; depth provisional):\nPAL-PLAN-T01: west ground needle, centre X-377.6 Y-130, crown spire, parent ward.\nPAL-PLAN-T02: west terminal onion, centre X-327.08 Y-125, crown onion, parent ward.\nPAL-PLAN-T03: west tall needle, centre X-282.4 Y220, crown spire, parent ward.\nPAL-PLAN-T04: west gallery needle, centre X-238.39 Y55, crown spire, parent ward.\nPAL-PLAN-T05: broad west onion pavilion, centre X-174.92 Y145, crown onion, parent ward.\nPAL-PLAN-T06: west copper satellite, centre X-257.84 Y25, crown onion, parent ward.\nPAL-PLAN-T07: west facade projecting tower, centre X-191.3 Y10, crown spire, parent ward.\nPAL-PLAN-T08: west lower stained-glass tower, centre X-199.49 Y-85, crown spire, parent ward.\nPAL-PLAN-T09: west inner gallery needle, centre X-98.0 Y95, crown spire, parent ward.\nPAL-PLAN-T10: west royal needle, centre X-80.08 Y150, crown spire, parent ward.\nPAL-PLAN-T11: west royal copper cap, centre X-60.06 Y155, crown spire, parent ward.\nPAL-PLAN-T12: highest royal needle, centre X-29.5 Y205, crown spire, parent ward.\nPAL-PLAN-T13: royal left attached turret, centre X-38.5 Y202, crown spire, parent PAL-PLAN-T12.\nPAL-PLAN-T14: royal right attached turret, centre X-20.5 Y208, crown spire, parent PAL-PLAN-T12.\nPAL-PLAN-T15: central onion gallery, centre X12.95 Y110, crown onion, parent ward.\nPAL-PLAN-T16: central copper needle, centre X34.18 Y160, crown spire, parent ward.\nPAL-PLAN-T17: central pink needle, centre X55.41 Y140, crown spire, parent ward.\nPAL-PLAN-T18: middle east onion gallery, centre X79.41 Y175, crown onion, parent ward.\nPAL-PLAN-T19: east copper gallery tower, centre X110.79 Y130, crown spire, parent ward.\nPAL-PLAN-T20: middle east tall needle, centre X152.33 Y195, crown spire, parent ward.\nPAL-PLAN-T21: middle east attached turret, centre X160.33 Y199, crown spire, parent PAL-PLAN-T20.\nPAL-PLAN-T22: east foreground onion pavilion, centre X169.86 Y45, crown onion, parent ward.\nPAL-PLAN-T23: east garden needle, centre X214.23 Y280, crown spire, parent ward.\nPAL-PLAN-T24: east cluster west needle, centre X248.52 Y225, crown spire, parent ward.\nPAL-PLAN-T25: east cluster high needle, centre X277.77 Y240, crown spire, parent ward.\nPAL-PLAN-T26: east cluster right needle, centre X300.22 Y205, crown spire, parent ward.\nPAL-PLAN-T27: east terminal onion, centre X346.05 Y-125, crown onion, parent ward.\nPAL-PLAN-T28: east lower stained-glass tower, centre X144.94 Y-90, crown spire, parent ward.\nPAL-PLAN-T29: gate west flanking turret, centre X-47.42 Y15, crown spire, parent ward.\nPAL-PLAN-T30: gate east flanking turret, centre X26.8 Y15, crown spire, parent ward.\nPAL-PLAN-T31: east facade projecting tower, centre X148.63 Y10, crown spire, parent ward.\nPAL-PLAN-T32: west rose terrace slender needle, centre X-121.18 Y105, crown spire, parent ward.\nPAL-PLAN-T33: east rose terrace slender needle, centre X131.1 Y115, crown spire, parent ward.\nCOURTS:\n[{\"id\": \"C-ROYAL\", \"name\": \"Royal roof courtyard\", \"level\": \"L4\", \"centre\": [0, 210]}, {\"id\": \"C-WEST\", \"name\": \"Western rose court\", \"level\": \"L2\", \"centre\": [-245, 180]}, {\"id\": \"C-EAST\", \"name\": \"Eastern chapel court\", \"level\": \"L2\", \"centre\": [265, 240]}, {\"id\": \"C-REAR\", \"name\": \"Rear lotus garden court\", \"level\": \"L2\", \"centre\": [0, 425]}]\nSTAIR CONNECTIONS:\n[{\"id\": \"S-FRONT-W\", \"name\": \"West dry entrance stair\", \"from\": [-49.07, -150, 0], \"to\": [-49.07, -75, 60]}, {\"id\": \"S-FRONT-E\", \"name\": \"East dry entrance stair\", \"from\": [22.93, -150, 0], \"to\": [22.93, -75, 60]}, {\"id\": \"W-CASCADE\", \"name\": \"Original central wet cascade\", \"from\": [-13.07, -75, 60], \"to\": [-13.07, -150, 0]}, {\"id\": \"S-W12\", \"from\": [-350, 45, 60], \"to\": [-275, 90, 160]}, {\"id\": \"S-E12\", \"from\": [350, 70, 60], \"to\": [275, 115, 160]}, {\"id\": \"S-W23\", \"from\": [-265, 230, 160], \"to\": [-180, 250, 230]}, {\"id\": \"S-E23\", \"from\": [265, 170, 160], \"to\": [180, 190, 230]}, {\"id\": \"S-W34\", \"from\": [-170, 195, 230], \"to\": [-80, 185, 300]}, {\"id\": \"S-E34\", \"from\": [170, 265, 230], \"to\": [80, 255, 300]}, {\"id\": \"S-N23\", \"from\": [65, 425, 160], \"to\": [65, 360, 230]}, {\"id\": \"S-N34\", \"from\": [-55, 345, 230], \"to\": [-55, 285, 300]}]",
+      "reference_image_id": "SRC-LAYER-FULL",
+      "status": "rejected-on-projection-and-label-comparison",
+      "reason": "Oblique view instead of true overhead; duplicate/missing tower labels; royal needle drawn as onion dome; artwork not registered to contour specification."
+    }
+  ],
+  "final_drawing_method": "Coordinate-authored engineering roof plan; fresh drawing from schedule, no source image pixels modified.",
+  "stair_layout_status": "11 labelled dry stairs: two ground-L1, and west/east/rear links for each higher transition. Flights/landings are schematic, not final tread/collision geometry."
+}

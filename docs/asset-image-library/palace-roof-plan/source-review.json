@@ -1,0 +1,29 @@
+{
+  "review_method": "One original board preview at a time; no PDF or image montage",
+  "reviewed_sources": [
+    {
+      "id": "GEN-16",
+      "file": "images/illustrated-boards/GEN-16.png",
+      "sha256": "7bd2e64078fb526204113287b3fe012821f10e3c1f02b9005d8b56bd58e56f4f"
+    },
+    {
+      "id": "GEN-14",
+      "file": "images/illustrated-boards/GEN-14.png",
+      "sha256": "c46f17ea88a79bdf51fd6fb1c47734d2a749c0a24ee7d1eae1e961dce503bcd8"
+    },
+    {
+      "id": "GEN-15",
+      "file": "images/illustrated-boards/GEN-15.png",
+      "sha256": "a9f4863bb88ce774d1953e81de6d8f0518987d71b99ba070b8d5780f29fab1b3"
+    },
+    {
+      "id": "GEN-03",
+      "file": "images/illustrated-boards/GEN-03.png",
+      "sha256": "e298eada0a3023680aa8397132c7640fa852557c24baae67555cfd8ead95a568"
+    }
+  ],
+  "observations": "palace-roof-plan/GARDEN-SOURCE-REVIEW.md",
+  "proposal_status": "Recomposed fitting of existing motifs, not measured source geometry",
+  "new_component_generation": 0,
+  "selected_sheet_allowance_change": 0
+}

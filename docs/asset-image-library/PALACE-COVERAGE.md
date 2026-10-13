@@ -15,7 +15,7 @@ This pass completes **asset references**, not Blender assembly. The selected fro
 | Stairs and central cascade | GEN-37 and direct S01/S02/S03/S04 crops; GEN-43 coping/newel/tread/basin ornament | Isolated dry flight, wet cascade bed and landing/junction body | PAL-STAIR-001 |
 | Fountain bowls/sculpture | GEN-11, GEN-34 complete monument, spouts, bowls, pedestal/guardian views | No new generic fountain | Reuse |
 | Parapets and stair rails | GEN-33/39/43 including straight, corner, curved and stair examples | No new motif pack; reconcile fit during modelling | Reuse |
-| Roof gardens and courtyards | GEN-14/15/16 plans, isometric, sections, planted parapets, loggia and conservatory | No new whole garden or top-view redesign | Reuse and fit to wing roofs |
+| Roof gardens and courtyards | GEN-14/15/16 plans, isometric, sections, planted parapets, loggia and conservatory | No new garden component designs; requested plain layout revision only | Source review completed for GEN-14/15/16; fit existing motifs to proposed wing roofs |
 | Carved panels/cornices | GEN-30/40/41/42 and GEN-19 close-ups | No new carving theme | Reuse |
 | Lighting/hanging crystals | GEN-20/24/32/45 complete lamps, cage, brackets, drops and mounts | No new generic lantern | Reuse |
 | Existing interior rooms | GEN-26 ballroom, throne room, library and conservatory with plans/sections | Keep these rooms | Reuse |

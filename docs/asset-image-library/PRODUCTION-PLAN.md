@@ -12,7 +12,7 @@ The final library is capped at **230 selected sheets**, including the 45 origina
 | shared-outdoor-props-and-bridge | 25 | 3 | 22 |
 | maps-magic-travel-and-birthday | 20 | 4 | 16 |
 
-The 616-file archive contains crops, previews and historical experiments; it is not the final 230-sheet selection. Selected reference slots may still require visual review.
+The 617-file archive contains crops, previews and historical experiments; it is not the final 230-sheet selection. Selected reference slots may still require visual review.
 
 ## Palace caps
 

@@ -952,11 +952,13 @@
       "owner": "palace",
       "family": "Layout and envelope",
       "title": "Complete centrally nested palace roof plan",
-      "status": "coordinate-authored-layout-pending-review",
+      "status": "plain-layout-source-reviewed-pending-review",
       "file": "palace-roof-plan/PAL-ROOF-PLAN-001.png",
-      "sha256": "258edbcb4eee342554bc0850608aa23d4c1c5059928ccacd76deaf03c72cd709",
+      "sha256": "c7a4ffd16003f0faced362679e3a7c1f16853edb4fa210c5ee26fd74bbce5f85",
       "generation_attempts_in_this_pass": 1,
-      "generator": "coordinate-authored Matplotlib engineering drawing"
+      "generator": "coordinate-authored Matplotlib engineering drawing",
+      "revision": "R03",
+      "source_review": "palace-roof-plan/GARDEN-SOURCE-REVIEW.md"
     }
   ],
   "production_pass": "palace-coverage-missing-only",

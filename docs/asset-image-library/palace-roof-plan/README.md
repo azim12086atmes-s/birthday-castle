@@ -1,4 +1,8 @@
-# Complete, centrally nested palace roof plan
+# Plain, centrally nested palace roof plan
+
+Revision R03 follows the owner's request for simple symbols. Before drawing it, the original roof-garden, terrace and courtyard boards GEN-16, GEN-15 and GEN-14 were inspected individually, together with GEN-03. The [source review](GARDEN-SOURCE-REVIEW.md) records what each contributes and where the previous generic court boxes departed from them.
+
+Circles mark towers, simple outlines mark wings and garden zones, F/P/H symbols mark fountains/water/covered structures, and tread strips mark stairs. The drawing has no rendered tower crowns, marble textures or decorative facade art. It is a new coordinate diagram, not an alteration of the supplied reference.
 
 The owner rejected the earlier plan's rear-biased stacking and requested the whole palace from above, including towers, stairs and wings. This replacement shows **high central wards with terraces stepping down and outward**. It is a roof-layout proposal, not a registered 3D model.
 
@@ -28,7 +32,11 @@ The royal needle group occupies the central roof court. The broad western onion 
 
 The five large south bays G1–G5 stay on one gate wall: four glazed bays beside the central entrance. Paired dry stairs flank the original separate wet cascade, ending 75 grid m before the gate on the L1 arrival terrace. They are not moved to the rear.
 
-The schedule records eleven dry stair routes, a separate wet cascade and four courts: royal roof courtyard, western rose court, eastern chapel court and rear lotus garden court. The [stair connection table](stair-connections.csv) records both landings for each route. **W0/E0** join ground to L1. **W1/E1/N1** join L1 to L2; **W2/E2/N2** join L2 to L3; **W3/E3/N3** join L3 to L4. The drawing uses transition colours, landing platforms, tread symbols and two-way arrows. New side/rear stairs are proposals; individual treads, switchbacks, door clearances and final collision geometry remain unresolved. Wings join continuous walls, with curved/chamfered projections and recessed bays. Gardens reuse existing small fountain, planter, rail, lamp, bench and paving families.
+The schedule records eleven dry stair routes and a separate wet cascade. The [stair connection table](stair-connections.csv) records both landings for each route. **W0/E0** join ground to L1. **W1/E1/N1** join L1 to L2; **W2/E2/N2** join L2 to L3; **W3/E3/N3** join L3 to L4. Tread strips and arrows point toward the higher landing. New side/rear stairs are proposals; individual treads, switchbacks, door clearances and final collision geometry remain unresolved.
+
+Seven garden zones now distinguish the royal roof court, western rose/lotus court, eastern conservatory garden, northern fountain loggia, lower western Moon Courtyard, circular west approach parterre and rectangular east approach mirror garden. The lotus/star water connection, irregular moon pond and east conservatory come from existing sources. Their fitting coordinates are proposals, not traced footprints. The [garden placement register](garden-placements.csv) labels every F/P/H marker and cites its existing source.
+
+Dashed same-level paths connect stair landings, court access points and the G3 approach. The [path register](path-connections.json) stores a connected path tree on each roof, avoiding the main upper-ward footprints and marked tower/water/building obstacles. This is a schematic circulation check, not a final architectural clearance or stair structure check. Paths may be refined into smoother walks without changing their connectivity. Fixture symbols are enlarged for readability; local garden dimensions on the source boards are not automatically multiplied by the palace massing scale.
 
 The source [GEN-37 front](../images/illustrated-boards/GEN-37.png) remains the visual and tower-identity master. The technical [side/rear sections](../palace-side-rear/PAL-RETURN-SETBACK-001.png) still govern the 100/75 m gaps. Earlier generated appearance views are not registered placement masters. The attached rejected plan remains archived as a failed proposal.
 
@@ -36,4 +44,6 @@ The source [GEN-37 front](../images/illustrated-boards/GEN-37.png) remains the v
 
 This is one complete sheet. One unused wall-body allowance is transferred to layout/envelope, changing those family caps from 10/6 to 9/7 while keeping the palace total **65** and global total **230**. All 45 original boards remain included.
 
-The final sheet is a **coordinate-authored engineering drawing**, rendered from the [schedule](schedule.json) with the [reproducible renderer](scripts/render_roof_plan.py). It uses no source-image pixels. The painted attempt was rejected for its oblique camera, changed crowns and duplicated IDs. The renderer fixes all 33 footprint labels and 11 stair connections to their declared coordinates. This verifies the drawing against its proposal; it does not make proposed contours, depths or dimensions measured facts. Review remains necessary before a shared Blender layout or mesh generation.
+The final sheet is a **coordinate-authored engineering drawing**, rendered from the [schedule](schedule.json) with the [plain-plan renderer](scripts/render_plain_roof_plan.py). It uses no source-image pixels. The painted attempt was rejected for its oblique camera, changed crowns and duplicated IDs. The earlier ornamental engineering plan and its data remain in [superseded/R02](superseded/R02/PAL-ROOF-PLAN-001.png). R03 replaces the same selected sheet allowance; no new palace allowance is consumed.
+
+The renderer fixes all 33 footprint labels and 11 stair connections to their declared coordinates and checks all 28 roof access terminals. This verifies the drawing against its proposal; it does not make proposed contours, depths or dimensions measured facts. Review remains necessary before a shared Blender layout or mesh generation.

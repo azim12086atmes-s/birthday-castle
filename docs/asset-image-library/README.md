@@ -1,6 +1,6 @@
 # Birthday Castle image archive
 
-This archive contains **616 distinct image files** (509.4 MiB), including the 45 original illustrated boards, later generated concepts, vector drawings, crops, previews and build renders.
+This archive contains **617 distinct image files** (552.4 MiB), including the 45 original illustrated boards, later generated concepts, vector drawings, crops, previews and build renders.
 
 The active palace reference is **GEN-37**, with GEN-03 and GEN-16 as supporting views. Additional studies are retained for review; preservation does not mean approval. The corrected INT-C01 floor uses rose and ivory marble.
 
@@ -123,3 +123,5 @@ The owner clarified [side/rear wall-face gaps](palace-side-rear/README.md):100 g
 ## Complete roof and stair plan
 
 The [whole top view](palace-roof-plan/index.html) centres the highest ward and steps down outward. It includes33 inventoried tower placements and11 dry stairs linking ground/L1 and every higher pair on west,east and rear. Walls retain100 m side/75 m rear gaps and the established south approach. Working800×680 m envelope and extra60 m upper-front setback are proposed. One unused wall-body slot transfers to layout; family caps7/9 still sum with other families to65.
+
+The [plain palace roof plan](palace-roof-plan/index.html) reuses [reviewed garden and courtyard motifs](palace-roof-plan/GARDEN-SOURCE-REVIEW.md), with tower circles and schematic stair/path connections. The earlier ornamental plan is retained as history.

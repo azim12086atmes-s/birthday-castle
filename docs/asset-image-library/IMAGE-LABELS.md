@@ -698,3 +698,5 @@ These layer reconstructions were reported inconsistent and retired from placemen
 ## Complete roof layout and staircase network
 
 [PAL-ROOF-PLAN-001](palace-roof-plan/PAL-ROOF-PLAN-001.png) is a coordinate-authored layout proposal, with [33 placement IDs](palace-roof-plan/tower-placements.csv) and [11 staircase links](palace-roof-plan/stair-connections.csv). Placement IDs name instances, not new mesh assets. Match generated models to their archetype and fill mesh_asset_id in the placement register when models exist. Source GEN-37 remains the appearance master; proposed depths require review.
+
+R03 uses plain tower circles and source-reviewed garden symbols. See [garden placements](palace-roof-plan/garden-placements.csv) and [source review](palace-roof-plan/GARDEN-SOURCE-REVIEW.md). [HIST-PAL-ROOF-PLAN-001-R02](palace-roof-plan/superseded/R02/PAL-ROOF-PLAN-001.png) preserves the previous diagram; it is not an extra selected sheet.

@@ -3833,15 +3833,23 @@
     },
     {
       "family_id": "FAM-PAL-ROOF-PLAN",
-      "name": "Complete nested roof plan and stair network",
+      "name": "Plain palace roof, stair and garden plan",
       "kind": "layout-reference; placement instances not new mesh assets",
       "reference_image_ids": [
-        "PAL-ROOF-PLAN-001",
-        "GEN-37"
+        "GEN-37",
+        "GEN-03",
+        "GEN-14",
+        "GEN-15",
+        "GEN-16",
+        "PAL-ENTRY-001",
+        "PAL-RETURN-SETBACK-001"
       ],
       "placement_register": "palace-roof-plan/tower-placements.csv",
       "stair_register": "palace-roof-plan/stair-connections.csv",
-      "next_step": "Review proposed contours/depths, then create shared registered layout before independent structural meshes."
+      "next_step": "Review proposed contours/depths, then create shared registered layout before independent structural meshes.",
+      "garden_register": "palace-roof-plan/garden-placements.csv",
+      "path_register": "palace-roof-plan/path-connections.json",
+      "source_review": "palace-roof-plan/GARDEN-SOURCE-REVIEW.md"
     }
   ],
   "generation_batches": [

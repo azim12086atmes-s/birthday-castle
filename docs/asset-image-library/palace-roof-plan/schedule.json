@@ -939,39 +939,152 @@
   "courtyards": [
     {
       "id": "C-ROYAL",
-      "name": "Royal roof courtyard",
+      "name": "Royal roof court",
       "level": "L4",
       "centre": [
         0,
         210
-      ]
+      ],
+      "size": [
+        145,
+        140
+      ],
+      "access": [
+        25,
+        214
+      ],
+      "source": [
+        "GEN-16",
+        "GEN-37"
+      ],
+      "status": "proposed court around retained royal tower group"
     },
     {
       "id": "C-WEST",
-      "name": "Western rose court",
+      "name": "Rose / lotus court",
       "level": "L2",
       "centre": [
         -245,
-        180
-      ]
+        162
+      ],
+      "size": [
+        72,
+        98
+      ],
+      "access": [
+        -245,
+        113
+      ],
+      "source": [
+        "GEN-16",
+        "GEN-14"
+      ],
+      "status": "source motif fitted to proposed western terrace"
     },
     {
       "id": "C-EAST",
-      "name": "Eastern chapel court",
+      "name": "Conservatory garden",
       "level": "L2",
       "centre": [
-        265,
-        240
-      ]
+        253,
+        359
+      ],
+      "size": [
+        74,
+        82
+      ],
+      "access": [
+        242,
+        317
+      ],
+      "source": [
+        "GEN-16"
+      ],
+      "status": "source motif fitted north of retained eastern tower cluster"
     },
     {
-      "id": "C-REAR",
-      "name": "Rear lotus garden court",
+      "id": "C-NORTH",
+      "name": "Fountain loggia",
       "level": "L2",
       "centre": [
         0,
-        425
-      ]
+        420
+      ],
+      "size": [
+        100,
+        52
+      ],
+      "access": [
+        0,
+        397
+      ],
+      "source": [
+        "GEN-16"
+      ],
+      "status": "proposed northern terrace placement"
+    },
+    {
+      "id": "C-MOON",
+      "name": "Moon courtyard",
+      "level": "L1",
+      "centre": [
+        -350,
+        315
+      ],
+      "size": [
+        68,
+        82
+      ],
+      "access": [
+        -345,
+        268
+      ],
+      "source": [
+        "GEN-14"
+      ],
+      "status": "proposed western lower terrace placement"
+    },
+    {
+      "id": "C-APP-W",
+      "name": "Circular rose parterre",
+      "level": "L1",
+      "centre": [
+        -240,
+        -70
+      ],
+      "size": [
+        78,
+        72
+      ],
+      "access": [
+        -230,
+        -28
+      ],
+      "source": [
+        "GEN-15"
+      ],
+      "status": "proposed western arrival garden"
+    },
+    {
+      "id": "C-APP-E",
+      "name": "Mirror garden",
+      "level": "L1",
+      "centre": [
+        223,
+        -70
+      ],
+      "size": [
+        84,
+        64
+      ],
+      "access": [
+        223,
+        -29
+      ],
+      "source": [
+        "GEN-15"
+      ],
+      "status": "proposed eastern arrival garden"
     }
   ],
   "world_scale": 2.75,
@@ -984,7 +1097,7 @@
     "side_each": 100,
     "rear": 75
   },
-  "status": "complete roof/stair layout proposal; source depth registration pending",
+  "status": "plain roof/stair/garden layout proposal; source depth registration pending",
   "previous_drafts": [
     {
       "file": "palace-roof-plan/rejected-drafts/PAL-ROOF-PLAN-001-R01.png",
@@ -998,10 +1111,159 @@
   "final_drawing_method": "Coordinate-authored engineering roof plan; fresh drawing from schedule, no source image pixels modified.",
   "stair_layout_status": "11 labelled dry stairs: two ground-L1, and west/east/rear links for each higher transition. Flights/landings are schematic, not final tread/collision geometry.",
   "output_file": "palace-roof-plan/PAL-ROOF-PLAN-001.png",
-  "sha256": "258edbcb4eee342554bc0850608aa23d4c1c5059928ccacd76deaf03c72cd709",
+  "sha256": "c7a4ffd16003f0faced362679e3a7c1f16853edb4fa210c5ee26fd74bbce5f85",
   "generator": "coordinate-authored Matplotlib engineering drawing",
-  "generator_script": "palace-roof-plan/scripts/render_roof_plan.py",
+  "generator_script": "palace-roof-plan/scripts/render_plain_roof_plan.py",
   "render_input": "palace-roof-plan/render-input.json",
   "review_status": "pending-user-review",
-  "review_notes": "True planar drawing: centrally nested levels,33 labelled tower footprints,11 dry stair links with landings. Envelope, extra front setback and depths proposed. No palace mesh generated."
+  "review_notes": "Plain circles and symbols; existing garden motifs reviewed individually; garden placements and same-level paths proposed. Envelope and tower depth registration pending.",
+  "revision": "R03 plain symbols after original garden source review",
+  "display_style": "plain overhead engineering diagram; circles for towers; no rendered roofs or marble textures",
+  "garden_reference_ids": [
+    "GEN-16",
+    "GEN-14",
+    "GEN-15",
+    "GEN-03"
+  ],
+  "garden_source_review": "palace-roof-plan/GARDEN-SOURCE-REVIEW.md",
+  "garden_features": [
+    {
+      "id": "F1",
+      "kind": "lotus",
+      "centre": [
+        -248,
+        163
+      ],
+      "radius": 5,
+      "level": "L2",
+      "source": "GEN-14/16"
+    },
+    {
+      "id": "P1",
+      "kind": "star",
+      "centre": [
+        -223,
+        171
+      ],
+      "radius": 7,
+      "level": "L2",
+      "source": "GEN-14"
+    },
+    {
+      "id": "P2",
+      "kind": "pool",
+      "centre": [
+        233,
+        360
+      ],
+      "size": [
+        12,
+        58
+      ],
+      "level": "L2",
+      "source": "GEN-16"
+    },
+    {
+      "id": "H1",
+      "kind": "conservatory",
+      "centre": [
+        269,
+        360
+      ],
+      "size": [
+        24,
+        64
+      ],
+      "level": "L2",
+      "source": "GEN-16"
+    },
+    {
+      "id": "F2",
+      "kind": "fountain",
+      "centre": [
+        -15,
+        416
+      ],
+      "radius": 5,
+      "level": "L2",
+      "source": "GEN-16"
+    },
+    {
+      "id": "H2",
+      "kind": "loggia",
+      "centre": [
+        0,
+        440
+      ],
+      "size": [
+        48,
+        10
+      ],
+      "level": "L2",
+      "source": "GEN-16"
+    },
+    {
+      "id": "P3",
+      "kind": "pond",
+      "centre": [
+        -351,
+        315
+      ],
+      "size": [
+        42,
+        52
+      ],
+      "level": "L1",
+      "source": "GEN-14"
+    },
+    {
+      "id": "F3",
+      "kind": "fountain",
+      "centre": [
+        -240,
+        -70
+      ],
+      "radius": 4,
+      "level": "L1",
+      "source": "GEN-15"
+    },
+    {
+      "id": "P4",
+      "kind": "pool",
+      "centre": [
+        223,
+        -70
+      ],
+      "size": [
+        35,
+        16
+      ],
+      "level": "L1",
+      "source": "GEN-15"
+    },
+    {
+      "id": "F4",
+      "kind": "fountain",
+      "centre": [
+        26,
+        166
+      ],
+      "radius": 3.8,
+      "level": "L4",
+      "source": "GEN-16 component reuse"
+    },
+    {
+      "id": "F5",
+      "kind": "fountain",
+      "centre": [
+        26,
+        253
+      ],
+      "radius": 3.8,
+      "level": "L4",
+      "source": "GEN-16 component reuse"
+    }
+  ],
+  "fixture_scale_status": "Symbols enlarged for readability; illustrated local feature dimensions are not automatically multiplied by the palace massing scale.",
+  "previous_coordinate_revision": "palace-roof-plan/superseded/R02/schedule.json"
 }

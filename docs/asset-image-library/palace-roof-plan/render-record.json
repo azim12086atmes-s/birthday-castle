@@ -1,6 +1,11 @@
 {
   "generator": "coordinate-authored Matplotlib engineering drawing",
+  "revision": "R03",
   "source_pixels_modified": false,
+  "projection": "true planar overhead",
+  "tower_symbol": "plain circle",
+  "tower_footprint_count": 33,
+  "label_count": 33,
   "rendered_placement_ids": [
     "PAL-PLAN-T01",
     "PAL-PLAN-T02",
@@ -36,8 +41,6 @@
     "PAL-PLAN-T32",
     "PAL-PLAN-T33"
   ],
-  "tower_footprint_count": 33,
-  "label_count": 33,
   "rendered_stair_routes": [
     "S-FRONT-W",
     "S-FRONT-E",
@@ -51,57 +54,190 @@
     "S-N34",
     "S-N12"
   ],
-  "stair_connections": [
-    [
-      "W0",
-      "G0 \u2194 L1"
-    ],
-    [
-      "E0",
-      "G0 \u2194 L1"
-    ],
-    [
-      "W1",
-      "L1 \u2194 L2"
-    ],
-    [
-      "E1",
-      "L1 \u2194 L2"
-    ],
-    [
-      "W2",
-      "L2 \u2194 L3"
-    ],
-    [
-      "E2",
-      "L2 \u2194 L3"
-    ],
-    [
-      "W3",
-      "L3 \u2194 L4"
-    ],
-    [
-      "E3",
-      "L3 \u2194 L4"
-    ],
-    [
-      "N2",
-      "L2 \u2194 L3"
-    ],
-    [
-      "N3",
-      "L3 \u2194 L4"
-    ],
-    [
-      "N1",
-      "L1 \u2194 L2"
-    ]
+  "garden_sources_reviewed": [
+    "GEN-16",
+    "GEN-14",
+    "GEN-15",
+    "GEN-03"
   ],
-  "coordinates_match_schedule": true,
-  "projection": "true planar orthographic; no perspective transform",
-  "scope": "Proposed roof layout; not full palace mesh or original geometry trace",
-  "input_schedule_sha256": "2f068fac8a677f01b3ae65a8650259ff2964200bf4c80257b8d689a71b48388a",
-  "renderer_sha256": "e4cf66362980ee766610cb6979a5c9d98742a381fc9d155f5b99176d38b4080c",
-  "stair_landings_match_roof_bands": true,
-  "each_level_pair_connected": true
+  "path_terminal_checks": [
+    {
+      "level": "L1",
+      "terminal": "W0",
+      "on_roof": true,
+      "clear_of_marked_obstacles": true
+    },
+    {
+      "level": "L1",
+      "terminal": "E0",
+      "on_roof": true,
+      "clear_of_marked_obstacles": true
+    },
+    {
+      "level": "L1",
+      "terminal": "W1",
+      "on_roof": true,
+      "clear_of_marked_obstacles": true
+    },
+    {
+      "level": "L1",
+      "terminal": "E1",
+      "on_roof": true,
+      "clear_of_marked_obstacles": true
+    },
+    {
+      "level": "L1",
+      "terminal": "N1",
+      "on_roof": true,
+      "clear_of_marked_obstacles": true
+    },
+    {
+      "level": "L1",
+      "terminal": "C-MOON",
+      "on_roof": true,
+      "clear_of_marked_obstacles": true
+    },
+    {
+      "level": "L1",
+      "terminal": "C-APP-W",
+      "on_roof": true,
+      "clear_of_marked_obstacles": true
+    },
+    {
+      "level": "L1",
+      "terminal": "C-APP-E",
+      "on_roof": true,
+      "clear_of_marked_obstacles": true
+    },
+    {
+      "level": "L1",
+      "terminal": "G3",
+      "on_roof": true,
+      "clear_of_marked_obstacles": true
+    },
+    {
+      "level": "L2",
+      "terminal": "W1",
+      "on_roof": true,
+      "clear_of_marked_obstacles": true
+    },
+    {
+      "level": "L2",
+      "terminal": "E1",
+      "on_roof": true,
+      "clear_of_marked_obstacles": true
+    },
+    {
+      "level": "L2",
+      "terminal": "W2",
+      "on_roof": true,
+      "clear_of_marked_obstacles": true
+    },
+    {
+      "level": "L2",
+      "terminal": "E2",
+      "on_roof": true,
+      "clear_of_marked_obstacles": true
+    },
+    {
+      "level": "L2",
+      "terminal": "N2",
+      "on_roof": true,
+      "clear_of_marked_obstacles": true
+    },
+    {
+      "level": "L2",
+      "terminal": "N1",
+      "on_roof": true,
+      "clear_of_marked_obstacles": true
+    },
+    {
+      "level": "L2",
+      "terminal": "C-WEST",
+      "on_roof": true,
+      "clear_of_marked_obstacles": true
+    },
+    {
+      "level": "L2",
+      "terminal": "C-EAST",
+      "on_roof": true,
+      "clear_of_marked_obstacles": true
+    },
+    {
+      "level": "L2",
+      "terminal": "C-NORTH",
+      "on_roof": true,
+      "clear_of_marked_obstacles": true
+    },
+    {
+      "level": "L3",
+      "terminal": "W2",
+      "on_roof": true,
+      "clear_of_marked_obstacles": true
+    },
+    {
+      "level": "L3",
+      "terminal": "E2",
+      "on_roof": true,
+      "clear_of_marked_obstacles": true
+    },
+    {
+      "level": "L3",
+      "terminal": "W3",
+      "on_roof": true,
+      "clear_of_marked_obstacles": true
+    },
+    {
+      "level": "L3",
+      "terminal": "E3",
+      "on_roof": true,
+      "clear_of_marked_obstacles": true
+    },
+    {
+      "level": "L3",
+      "terminal": "N2",
+      "on_roof": true,
+      "clear_of_marked_obstacles": true
+    },
+    {
+      "level": "L3",
+      "terminal": "N3",
+      "on_roof": true,
+      "clear_of_marked_obstacles": true
+    },
+    {
+      "level": "L4",
+      "terminal": "W3",
+      "on_roof": true,
+      "clear_of_marked_obstacles": true
+    },
+    {
+      "level": "L4",
+      "terminal": "E3",
+      "on_roof": true,
+      "clear_of_marked_obstacles": true
+    },
+    {
+      "level": "L4",
+      "terminal": "N3",
+      "on_roof": true,
+      "clear_of_marked_obstacles": true
+    },
+    {
+      "level": "L4",
+      "terminal": "C-ROYAL",
+      "on_roof": true,
+      "clear_of_marked_obstacles": true
+    }
+  ],
+  "connected_access_count_by_level": {
+    "L1": 9,
+    "L2": 9,
+    "L3": 6,
+    "L4": 4
+  },
+  "path_limit": "Connected schematic paths avoid main upper footprints and marked solid features, not final clearance or structural analysis.",
+  "source_registration_limit": "Garden fitting, tower depths and complete envelope are proposed.",
+  "render_input_sha256": "fd9ef794d1aa1b61fbe97dc3841bc4431754102680f32003e3bcafb46f10a59f",
+  "output_sha256": "c7a4ffd16003f0faced362679e3a7c1f16853edb4fa210c5ee26fd74bbce5f85"
 }

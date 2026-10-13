@@ -7,7 +7,7 @@ GEN-33,"Balconies, parapets and stair rails",images/illustrated-boards/GEN-33.pn
 GEN-43,"Lower arcade, stairs and water ornament",images/illustrated-boards/GEN-43.png,pending-source-panel-index,0,0,Audit before generating; existing assets are reused
 GEN-34,Fountain monuments and sculpture,images/illustrated-boards/GEN-34.png,pending-source-panel-index,0,0,Audit before generating; existing assets are reused
 GEN-03,Towering garden palace multi-view,images/illustrated-boards/GEN-03.png,pending-source-panel-index,0,0,Audit before generating; existing assets are reused
-GEN-16,Palace roof gardens,images/illustrated-boards/GEN-16.png,pending-source-panel-index,0,0,Audit before generating; existing assets are reused
+GEN-16,Palace roof gardens,images/illustrated-boards/GEN-16.png,source-board-reviewed-for-roof-layout,0,0,"Original PNG reviewed individually; reuse distinct court, garden, fountain and conservatory motifs in plain plan; no new component sheet generated"
 GEN-37,Detailed front elevation,images/illustrated-boards/GEN-37.png,pending-source-panel-index,0,0,Audit before generating; existing assets are reused
 GEN-40,Floral relief and crests,images/illustrated-boards/GEN-40.png,pending-source-panel-index,0,0,Audit before generating; existing assets are reused
 GEN-42,Mouldings and cornices,images/illustrated-boards/GEN-42.png,pending-source-panel-index,0,0,Audit before generating; existing assets are reused
@@ -23,8 +23,8 @@ GEN-10,Lantern Lake,images/illustrated-boards/GEN-10.png,pending-source-panel-in
 GEN-11,Palace ponds and lotus fountain,images/illustrated-boards/GEN-11.png,pending-source-panel-index,0,0,Audit before generating; existing assets are reused
 GEN-12,Open sea and uneven shore,images/illustrated-boards/GEN-12.png,pending-source-panel-index,0,0,Audit before generating; existing assets are reused
 GEN-13,Garden planting kit,images/illustrated-boards/GEN-13.png,pending-source-panel-index,0,0,Audit before generating; existing assets are reused
-GEN-14,Rose Court and Moon Courtyard,images/illustrated-boards/GEN-14.png,pending-source-panel-index,0,0,Audit before generating; existing assets are reused
-GEN-15,Terrace gardens and grand approach,images/illustrated-boards/GEN-15.png,pending-source-panel-index,0,0,Audit before generating; existing assets are reused
+GEN-14,Rose Court and Moon Courtyard,images/illustrated-boards/GEN-14.png,source-board-reviewed-for-roof-layout,0,0,"Original PNG reviewed individually; reuse distinct court, garden, fountain and conservatory motifs in plain plan; no new component sheet generated"
+GEN-15,Terrace gardens and grand approach,images/illustrated-boards/GEN-15.png,source-board-reviewed-for-roof-layout,0,0,"Original PNG reviewed individually; reuse distinct court, garden, fountain and conservatory motifs in plain plan; no new component sheet generated"
 GEN-17,"Tower crowns, roofs and balconies",images/illustrated-boards/GEN-17.png,pending-source-panel-index,0,0,Audit before generating; existing assets are reused
 GEN-20,Garden furnishings and lighting,images/illustrated-boards/GEN-20.png,pending-source-panel-index,0,0,Audit before generating; existing assets are reused
 GEN-21,"Cliffs, reefs and terrain",images/illustrated-boards/GEN-21.png,pending-source-panel-index,0,0,Audit before generating; existing assets are reused

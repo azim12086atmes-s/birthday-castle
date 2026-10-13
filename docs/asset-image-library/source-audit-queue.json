@@ -77,10 +77,10 @@
       "image_id": "GEN-16",
       "title": "Palace roof gardens",
       "source_file": "images/illustrated-boards/GEN-16.png",
-      "stage": "pending-source-panel-index",
+      "stage": "source-board-reviewed-for-roof-layout",
       "indexed_panel_count": 0,
       "new_generation_count": 0,
-      "decision": "Audit before generating; existing assets are reused"
+      "decision": "Original PNG reviewed individually; reuse distinct court, garden, fountain and conservatory motifs in plain plan; no new component sheet generated"
     },
     {
       "image_id": "GEN-37",
@@ -221,19 +221,19 @@
       "image_id": "GEN-14",
       "title": "Rose Court and Moon Courtyard",
       "source_file": "images/illustrated-boards/GEN-14.png",
-      "stage": "pending-source-panel-index",
+      "stage": "source-board-reviewed-for-roof-layout",
       "indexed_panel_count": 0,
       "new_generation_count": 0,
-      "decision": "Audit before generating; existing assets are reused"
+      "decision": "Original PNG reviewed individually; reuse distinct court, garden, fountain and conservatory motifs in plain plan; no new component sheet generated"
     },
     {
       "image_id": "GEN-15",
       "title": "Terrace gardens and grand approach",
       "source_file": "images/illustrated-boards/GEN-15.png",
-      "stage": "pending-source-panel-index",
+      "stage": "source-board-reviewed-for-roof-layout",
       "indexed_panel_count": 0,
       "new_generation_count": 0,
-      "decision": "Audit before generating; existing assets are reused"
+      "decision": "Original PNG reviewed individually; reuse distinct court, garden, fountain and conservatory motifs in plain plan; no new component sheet generated"
     },
     {
       "image_id": "GEN-17",

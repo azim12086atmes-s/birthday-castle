@@ -1,8 +1,8 @@
 {
   "date": "2026-10-13",
-  "distinct_image_count": 616,
-  "source_file_count": 873,
-  "total_bytes": 578666994,
+  "distinct_image_count": 617,
+  "source_file_count": 874,
+  "total_bytes": 579273000,
   "categories": {
     "additional-generated-studies": 33,
     "component-development-studies": 3,
@@ -17,7 +17,7 @@
     "palace-layer-reference-sheets": 4,
     "palace-roof-layouts": 1,
     "palace-structural-studies": 1,
-    "palace-structure-drafts": 9,
+    "palace-structure-drafts": 10,
     "palace-wall-return-studies": 2,
     "previews-and-reference-copies": 237,
     "reference-crops-and-studies": 73,
@@ -12070,11 +12070,11 @@
     },
     {
       "id": "PAL-ROOF-PLAN-001",
-      "title": "Complete palace roof and stair plan",
+      "title": "Plain palace roof, stair and garden plan",
       "category": "palace-roof-layouts",
       "file": "palace-roof-plan/PAL-ROOF-PLAN-001.png",
-      "sha256": "258edbcb4eee342554bc0850608aa23d4c1c5059928ccacd76deaf03c72cd709",
-      "bytes": 743332,
+      "sha256": "c7a4ffd16003f0faced362679e3a7c1f16853edb4fa210c5ee26fd74bbce5f85",
+      "bytes": 606006,
       "source_aliases": [],
       "alias_ids": [],
       "component_ids": [],
@@ -12113,16 +12113,21 @@
         "PAL-PLAN-T32",
         "PAL-PLAN-T33"
       ],
-      "label": "PAL-ROOF-PLAN-001 \u2014 Complete palace roof and stair plan",
+      "label": "PAL-ROOF-PLAN-001 \u2014 Plain palace roof, stair and garden plan",
       "reference_role": "coordinate-authored-layout-diagram",
-      "design_status": "proposed contours and depths; not source-measured geometry",
+      "design_status": "plain symbols; garden fitting, depths and envelope proposed",
       "review_status": "pending-user-review",
       "related_image_ids": [
         "GEN-37",
         "GEN-03",
+        "GEN-14",
+        "GEN-15",
+        "GEN-16",
         "PAL-ENTRY-001",
         "PAL-RETURN-SETBACK-001"
-      ]
+      ],
+      "revision": "R03",
+      "source_review": "palace-roof-plan/GARDEN-SOURCE-REVIEW.md"
     },
     {
       "id": "DRAFT-PAL-ROOF-PLAN-001-R01",
@@ -12140,6 +12145,24 @@
       "review_status": "rejected-on-projection-and-label-comparison",
       "related_image_ids": [
         "GEN-37"
+      ]
+    },
+    {
+      "id": "HIST-PAL-ROOF-PLAN-001-R02",
+      "title": "Superseded ornamental engineering roof plan",
+      "category": "palace-structure-drafts",
+      "file": "palace-roof-plan/superseded/R02/PAL-ROOF-PLAN-001.png",
+      "sha256": "258edbcb4eee342554bc0850608aa23d4c1c5059928ccacd76deaf03c72cd709",
+      "bytes": 743332,
+      "source_aliases": [],
+      "alias_ids": [],
+      "component_ids": [],
+      "label": "HIST-PAL-ROOF-PLAN-001-R02 \u2014 Superseded ornamental engineering roof plan",
+      "reference_role": "superseded-coordinate-layout",
+      "design_status": "historical proposal; replaced by plain symbols and source-reviewed garden fit",
+      "review_status": "superseded",
+      "related_image_ids": [
+        "PAL-ROOF-PLAN-001"
       ]
     }
   ],
