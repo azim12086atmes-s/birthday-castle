@@ -1,0 +1,98 @@
+{
+  "scope": "Ornamental design components for additive palace and bridge modelling, not replacement whole buildings",
+  "reference_policy": "One small existing reference per generation; saved originals retained",
+  "status": "Retained development studies; user requests multi-component pack sheets instead",
+  "sheets": [
+    {
+      "id": "MOD-BRG-001",
+      "title": "Porcelain bridge star-rosette ornament",
+      "component_id": "MOD-BRG-001-A01",
+      "name": "Bridge star-rosette medallion",
+      "reference_image_id": "GEN-18",
+      "reference": "reference image GEN-18 (one 800px-or-smaller preview per call)",
+      "function": "Repeatable ornamental medallion on bridge spandrels and parapet panels",
+      "dimensions": "Proposed normalized design envelope: diameter 1.0 unit, total depth 0.12 unit; scale to each host surface rather than claiming measured source dimensions",
+      "attachment_face": "Flat rear mounting face against host stone; hidden central locator recess",
+      "semantic_front": "Decorated star face points away from host surface",
+      "reuse_class": "repeatable ornament",
+      "symmetry": "Eight-point central star; outer rose crest accents repeat at four cardinal positions",
+      "polygon_target": "Authoring detail unrestricted; runtime version to be retopologized/baked, provisional 3000 triangles",
+      "rejection_criteria": [
+        "Cropped medallion",
+        "Star or ring patterns vary between views",
+        "Rear face lacks a mountable plane",
+        "Whole bridge scene replaces isolated ornament",
+        "Ornament becomes beige stone or loses indigo/gold palette"
+      ],
+      "prompt": "Create ONE detailed ORNAMENT DESIGN COMPONENT SHEET from the provided porcelain-bridge reference, concentrating only on the decorative STAR ROSETTE medallion visible on its upper parapet and arch-spandrel centers. Do not draw the whole bridge or add a new building. This is an individual modular ornament for additive 3D modelling. Preserve the reference's ivory/white porcelain and fine muted warm gold, deep indigo/lapis star facets and subtle rose/lilac accents.\n\nDraw one complete circular stone setting with an eight-point gold-ribbed star, blue/lilac facets, small rose-petal center, alternating finely carved ivory leaf petals around the star, nested ring mouldings, a narrow gold bead rim and real shallow stepped depth. The perimeter is a clean circular silhouette. Ornament is modelled relief with visible undercuts, not a flat painted sticker. Keep the backing continuous; this component is a backed medallion, not a passage or giant pierced window. Natural ivory marble/porcelain surface, extremely subtle veins, rose accent inserts, restrained gilding.\n\nComposition: generous clean warm-neutral background; large exact front orthographic drawing left, large readable three-quarter orthographic object at upper right, narrow side/profile view at lower right showing the shallow stepped thickness and flat back, and small rear view showing the flat mounting face with one recessed locator socket. All four views must portray the SAME pattern, same proportions, same ring count and same eight-point star. Consistent scale across the two main views. Whole object visible in every view. Detail all gold ribs, bead repetition, petal incisions and stone/enamel boundaries precisely. The part must be visually separate from its host, without neighboring props, water, scenery or foliage. Highly detailed architectural concept drawing with crisp modelling-ready contours, soft material rendering, subtle shadows. No writing, labels, dimensions, arrows, logos or decorative page frame; asset IDs will be recorded externally. Hidden underside/back details are proposed construction interpretations, not claimed historical measurements.",
+      "output_file": "images/component-development-studies/MOD-BRG-001.png",
+      "sha256": "ad8f2e64f152ab183b7b512c4cd0ebf65954f4e693f68f835386af3e9c3e9b6c",
+      "status": "generated-pending-review",
+      "review_notes": [
+        "Shallow circular backing and rear locator recess are visible.",
+        "Views are generated interpretations; not geometrically registered projections.",
+        "Front composition and colors follow bridge motif family; four cardinal crests are a developed design detail."
+      ]
+    },
+    {
+      "id": "MOD-COL-001",
+      "title": "Lotus capital ornamental crown",
+      "component_id": "MOD-COL-001-A01",
+      "name": "Lotus capital crown",
+      "reference_image_id": "GEN-29",
+      "reference": "reference image GEN-29 (one 800px-or-smaller preview per call)",
+      "function": "Reusable carved crown above a pillar shaft, supporting a separate abacus and arch springing",
+      "dimensions": "Normalized outer width 1.0 unit, height 0.75 unit; socket and shaft fit remain authoring parameters",
+      "attachment_face": "Flat upper abacus and centered underside shaft socket",
+      "semantic_front": "Radial lotus ornament surrounds vertical shaft axis",
+      "reuse_class": "repeatable ornament",
+      "symmetry": "Radial petal repetition, checked between views",
+      "polygon_target": "Provisional 5000 triangles after retopology; tiny incisions can be baked",
+      "rejection_criteria": [
+        "Full column replaces isolated capital",
+        "Corinthian/acanthus design replaces lotus vocabulary",
+        "Floating petals without a connected bell core",
+        "Underside does not resolve shaft seating",
+        "Petal counts drift between views"
+      ],
+      "prompt": "Create ONE exceptionally detailed design-component sheet for an ISOLATED LOTUS CAPITAL CROWN, referring only to the provided column-and-capital reference. Preserve its lotus/leaf carved ivory and rose-marble ornament and restrained gold; use its actual petal vocabulary, not generic Corinthian acanthus or a honeycomb/muqarnas substitute. Draw only the capital/crown and its short neck collar, not a complete pillar, palace or room.\n\nThe capital has a continuous bell core, layered outward-curling lotus leaves/petals, sharply resolved incised petal ribs and rolled tips, an ivory carved body, small rose marble accent fields, delicate gold edging on selected ribs, and a crisp square/octagonal abacus appropriate to the reference. Resolve the transition from circular shaft collar to outward flaring petal crown and flat load-bearing upper abacus. Leaves are connected to the bell body, with believable solid thickness and restrained undercuts. Natural marble veins, no tan plaster or overpowering gold.\n\nOne clean pale-neutral design sheet: a large three-quarter object view, front orthographic elevation, exact side/profile view, underside view exposing the central shaft seating recess and carved petal undersides, plus one macro inset of the lotus carving showing depth and edge finish. All views must show the SAME capital, same number and arrangement of petal tiers, same abacus outline and same collar. Whole capital visible with empty space around it; no neighboring props or decoration behind it. The underside is a proposed fit design; do not claim measured reference dimensions. Crisp architectural drawing with extremely readable sculptural depths and material boundaries, nuanced ivory/rose marble, soft studio shadows. No text, labels, arrows, dimensions, logos or page border; component identification is external.\nREFERENCE-SPECIFIC CONSTRUCTION: Copy the tall flaring concave LOTUS petals in the supplied crown: large smooth rose/ivory veined stone petals bounded by thin gold ribs, a few small gold flowers near their bases, and the INDIGO BLUE NECK COLLAR with repeated small gold stars and bead rings. Keep its broad stepped octagonal abacus and octagonal underside shaft seating. Do not replace these broad petals with a leafy Corinthian foliage mass. Show small mounting lugs where its separately modelled crystal pendants would attach, but leave off the hanging chains and crystals on this capital sheet to avoid fusing separate ornament assets.",
+      "output_file": "images/component-development-studies/MOD-COL-001.png",
+      "sha256": "91723a752cb899ee88abf7417aea9b3baf392a7972cca0f74a35c662264ca91a",
+      "status": "generated-pending-review",
+      "review_notes": [
+        "Rose/ivory tall petals, gilded ribs, indigo star collar, mounting lugs and octagonal underside are readable.",
+        "Views and hidden seating geometry remain generated design interpretations; fit requires modelling checks."
+      ]
+    },
+    {
+      "id": "MOD-RAIL-001",
+      "title": "Pierced floral railing ornament",
+      "component_id": "MOD-RAIL-001-A01",
+      "name": "Pierced floral railing infill",
+      "reference_image_id": "GEN-33",
+      "reference": "reference image GEN-33 (one 800px-or-smaller preview per call)",
+      "function": "Repeatable ornamental infill fitted between separately modelled railing posts, coping and bottom rail",
+      "dimensions": "Normalized width 2.0 units, height 1.0 unit, frame depth 0.10 unit; fit clear opening on host rail",
+      "attachment_face": "Flat vertical end edges and horizontal lower seating strip",
+      "semantic_front": "Decorative face follows terrace/bridge outer edge; rear has finished matching motif",
+      "reuse_class": "repeatable openwork ornament",
+      "symmetry": "Four main petal loops alternate with four diagonal leaf sprays",
+      "polygon_target": "Provisional 4000 triangles; genuine apertures retained in near view",
+      "rejection_criteria": [
+        "Pierced holes become painted dark patches",
+        "Panel includes entire terrace scene",
+        "End repeat pitch or silhouette differs across views",
+        "Filigree floats disconnected from frame",
+        "Too many unrelated motifs obscure reference pattern"
+      ],
+      "prompt": "Create ONE very detailed ORNAMENT DESIGN COMPONENT SHEET by carefully isolating the PIERCED FLORAL INFILL in the LEFT half of the rail module shown in the supplied balcony/parapet reference. That original module has a floral wheel on the left and a separate blue-star panel on the right. This sheet develops ONLY the floral wheel and its shallow rectangular mounting frame, not the star neighbor, posts, entire rail or balcony. Preserve the existing floral pattern rather than designing a generic new fence.\n\nOne complete ivory carved round floral wheel enclosed by delicate circular ring mouldings: eight radiating lotus/rose petal loops and curling leaf stems, visibly connected to a small central INDIGO QUATREFOIL jewel/button with thin gold edging. This little central inset is solid; all surrounding floral openings are genuine pierced holes. Carve the stems, overlapping petal ridges, bevelled inner edges and subtle undercuts in ivory marble. Ring and stem edges have restrained fine gold trim. A shallow rectangular rose/ivory marble border encloses the whole wheel, with slim gold/bead detail on its top and bottom, flat parallel mounting edges on both sides, and no heavy new posts or finials. Original alternating rose-pink and ivory marble with natural veins, blue limited to the tiny central jewel. Background must be visible through real holes; never paint the openings dark. All petals and stems connect to their circle or central body with readable depth; no floating filigree.\n\nFive coherent views of this ONE ornament: large exact front elevation, large three-quarter object view, back elevation with identical apertures, narrow side/profile showing shallow thickness and flat seating edges, and one macro inset of carved petal-to-ring transition showing gold/stone boundaries and true cutout depth. Front and back must have same petal count, same circle and frame proportions. Entire object visible in every main view. Clean pale neutral background, no scene, plants, neighboring objects, lamps, text, labels, dimensions, arrows, logos or page borders. Architectural concept illustration with extremely crisp fine carving and softly shaded realistic marble. This sheet is for an additive model component; back/edge fit details are proposed design interpretations, not measured fabrication geometry. Identification will be stored externally.",
+      "output_file": "images/component-development-studies/MOD-RAIL-001.png",
+      "sha256": "f50398fe3400340af95ba160c45d7544ae33c3cfd3d10a42ac8e26e1aaa02417",
+      "status": "generated-development-study",
+      "review_notes": [
+        "Openwork and rose/ivory material are readable.",
+        "Generated side/back views are not registered geometry."
+      ]
+    }
+  ]
+}

@@ -24,3 +24,9 @@ Model statuses: unregistered, generated, reviewed, needs-revision, integrated. A
 The CSV is the editable model intake record. asset-register.json contains the initial component catalogue and reference families; future imports should use the actual CSV registration records, rather than treating the initial JSON statuses as live progress.
 
 No artwork pixels were modified by labelling. IDs and descriptions are stored beside the images and shown in the gallery, preserving clean generation references.
+
+## Multi-component packs
+
+Use PACK-BRG-001 for the 16-piece ornament kit and PACK-BRG-002 for the four bridge segment types. Both images print each item name beside its local ID. The globally unique model IDs include the sheet prefix: `PACK-BRG-001-A14` is Crystal lantern; `PACK-BRG-002-S01` is Lower-tier arch span.
+
+For a generator returning one file containing the whole pack, record the batch in batch-model-tracker.csv, e.g. `PACK-BRG-001__ornament-kit__v001.glb`. After inspecting its actual contents, use model_batch_id and mesh_name in model-tracker.csv to link each identifiable part to the shared file, or record separately exported files. A batch submission does not prove that all 16 objects were returned or separated correctly. Missing, fused or inaccurate parts retain needs-revision status until repaired.

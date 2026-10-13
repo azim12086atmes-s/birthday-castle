@@ -1,0 +1,149 @@
+{
+  "reference_policy": "One small existing reference per sheet",
+  "sheet_policy": "10\u201320 tiny ornamental components per pack; 3\u20134 structural bridge modules per sheet; one complete three-quarter object per cell",
+  "status": "Both pack sheets generated; pending review and 3D generation",
+  "sheets": [
+    {
+      "id": "PACK-BRG-001",
+      "title": "Porcelain Long Bridge \u2014 ornament kit",
+      "reference_image_id": "GEN-18",
+      "reference": "reference image GEN-18 (one 800px-or-smaller preview per call)",
+      "layout": "4 columns by 4 rows, row-major A01\u2013A16",
+      "components": [
+        {
+          "id": "A01",
+          "name": "Star-rosette medallion",
+          "attachment": "Flat rear to parapet/spandrel"
+        },
+        {
+          "id": "A02",
+          "name": "Carved floral rosette",
+          "attachment": "Flat rear to stone panel"
+        },
+        {
+          "id": "A03",
+          "name": "Lotus capital crown",
+          "attachment": "Underside socket to shaft; flat top to abacus"
+        },
+        {
+          "id": "A04",
+          "name": "Fluted column sleeve",
+          "attachment": "Coaxial shaft sleeve; flat ends"
+        },
+        {
+          "id": "A05",
+          "name": "Leaf corbel bracket",
+          "attachment": "Flat rear to pier; flat upper seat"
+        },
+        {
+          "id": "A06",
+          "name": "Pierced quatrefoil rail infill",
+          "attachment": "Flat ends between railing posts"
+        },
+        {
+          "id": "A07",
+          "name": "Blue-star rail infill",
+          "attachment": "Flat ends between railing posts"
+        },
+        {
+          "id": "A08",
+          "name": "Beaded cornice strip",
+          "attachment": "Flat rear to fascia; matching repeat ends"
+        },
+        {
+          "id": "A09",
+          "name": "Rose-vine frieze strip",
+          "attachment": "Flat rear to fascia; matching repeat ends"
+        },
+        {
+          "id": "A10",
+          "name": "Corner scroll ornament",
+          "attachment": "Flat rear to corner stone"
+        },
+        {
+          "id": "A11",
+          "name": "Chamfered ornamental plinth",
+          "attachment": "Flat underside and upper seat"
+        },
+        {
+          "id": "A12",
+          "name": "Star finial",
+          "attachment": "Centered lower mounting stem"
+        },
+        {
+          "id": "A13",
+          "name": "Lantern crown rib",
+          "attachment": "Curved underside to matching dome surface"
+        },
+        {
+          "id": "A14",
+          "name": "Crystal lantern and mounting arm",
+          "attachment": "Arm mounting plate to pier; lantern suspended from arm"
+        },
+        {
+          "id": "A15",
+          "name": "Scroll water spout",
+          "attachment": "Rear inlet to host basin wall"
+        },
+        {
+          "id": "A16",
+          "name": "Star-inlay paving tile",
+          "attachment": "Flat underside to deck substrate"
+        }
+      ],
+      "prompt": "Generate ONE detailed 16-ASSET ORNAMENT PACK SHEET for the porcelain princess-palace bridge in the supplied reference. The user wants MANY TINY DESIGN COMPONENTS ON ONE SHEET for batch image-to-3D generation, not multiple views of one object. Exactly 16 different COMPLETE SEPARATE solid objects, arranged in a clean FOUR COLUMNS BY FOUR ROWS grid, row-major A01 to A16. Each object gets exactly ONE clear orthographic three-quarter view. Same camera angle, lighting and coherent materials across the pack. Each piece floats visually in its own generous blank cell with a subtle ground shadow, no shared scene or substrate, no overlaps or fused neighbors. Full object silhouette visible. Keep the frame airy and uncluttered. Add a clearly legible sheet heading PORCELAIN LONG BRIDGE \u2014 ORNAMENT KIT. Under each object print its ID and its SHORT ENGLISH NAME, matching the named list below. Names must remain readable and outside silhouettes. No prose paragraphs, dimensions or decorative frames.\n\nDerive all motifs from the supplied bridge: luminous ivory/white porcelain, some rose-pink veined marble insert fields, restrained fine warm gold, indigo/lapis star inlays and lilac/pink facets, lotus/leaf carving, eight-point stars, quatrefoils and crystal lanterns. Preserve the princess delicacy. Every ornament has clear physical thickness, readable carving depth and an appropriate mounting face; real pierced areas show background through them. These are reusable pieces added to otherwise plain bridge modules.\n\nROW 1, left to right: A01 round backed eight-point star-rosette medallion with blue/gold facets; A02 small circular carved ivory floral rosette; A03 isolated lotus capital crown with flaring petals and short indigo/gold collar, no whole pillar; A04 short fluted marble column sleeve with gilded narrow ribs and clean end rings, no whole pillar.\nROW 2: A05 complete leaf-carved support corbel with flat back and flat upper seat; A06 shallow rectangular pierced quatrefoil/lotus railing infill with true open holes; A07 separate shallow rectangular blue-star railing infill backed with indigo, rose-star center and gold tracery; A08 straight repeatable beaded cornice strip with stepped ivory moulding and thin gold bead line.\nROW 3: A09 straight repeatable rose-vine carved frieze strip with a flat mounting back; A10 small rolled-leaf corner scroll relief; A11 chamfered ivory/rose ornamental plinth block with gold band and flat support surfaces; A12 gold eight-point star finial with a short mounting stem, not a religious cross.\nROW 4: A13 one curved gold lantern-crown rib segment following the crystal-post crown in the reference; A14 complete crystal lantern on its own curved gold mounting arm, crystal cage suspended visibly, no disconnected floating pieces; A15 one ivory/gold scroll water spout with visible outlet and rear inlet, no animal head; A16 thick square white-porcelain deck paving tile with a flush blue/gold/rose eight-point star inlay and clean edges.\n\nNo palace, bridge assembly, landscape, human, extra objects or duplicate object views. Model each tiny object with crisp but selective detail, not amorphous filigree. A sculptural high-resolution architectural asset-kit reference, intended for subsequent separate-mesh checking and additive assembly. Exactly 16 distinct cells.\nPRINT THESE EXACT SHORT LABELS beneath the sixteen objects, row-major: A01 Star medallion; A02 Floral rosette; A03 Lotus capital; A04 Column sleeve; A05 Leaf corbel; A06 Quatrefoil infill; A07 Blue-star infill; A08 Beaded cornice; A09 Rose-vine frieze; A10 Corner scroll; A11 Marble plinth; A12 Star finial; A13 Lantern crown rib; A14 Crystal lantern; A15 Scroll water spout; A16 Star-inlay tile. The words label each actual visible object, never replace it.",
+      "output_file": "images/modular-component-packs/PACK-BRG-001.png",
+      "sha256": "fb0192e2e67c0228bae18c121bf7780ac673097da0ae761b938a7282d2b4eb08",
+      "status": "generated-pending-review",
+      "review_notes": [
+        "Exactly 16 distinct named objects in a 4 by 4 grid.",
+        "A06 and A07 include their own thin end frames, which should be separated or fitted if replacing S04 infills.",
+        "Names and silhouettes are readable; a returned batch mesh has not yet been generated or checked."
+      ]
+    },
+    {
+      "id": "PACK-BRG-002",
+      "title": "Porcelain Long Bridge \u2014 existing segment details",
+      "reference_image_id": "GEN-18",
+      "reference": "reference image GEN-18 (one 800px-or-smaller preview per call)",
+      "layout": "2 columns by 2 rows, row-major S01\u2013S04",
+      "interface": {
+        "status": "Use the reference segment families and its illustrated proportions; do not claim generated images prove dimensional fits",
+        "source_envelopes": "Source diagram labels: lower arch roughly 14 m span/12 m high, cutwater pier roughly 6 m wide/24 m high, deck 18 m wide, railing 4 m repeat/1.5 m high. Treat as illustrated design labels pending consistency checks.",
+        "axis": "+X along bridge, Y across deck, +Z up",
+        "assembly": "Piers carry repeated arches and the deck; parapet attaches along deck edges. Small ornament pieces attach after these bases are modelled. Deck pitch/cut locations must be reconciled with arch/pier spacing in Blender."
+      },
+      "components": [
+        {
+          "id": "S01",
+          "name": "Lower-tier arch span",
+          "attachment": "Between cutwater piers; repeat along bridge centerline"
+        },
+        {
+          "id": "S02",
+          "name": "Two-tier cutwater pier",
+          "attachment": "Foundation below, upper deck seat above, arch springings on both sides"
+        },
+        {
+          "id": "S03",
+          "name": "Porcelain deck segment",
+          "attachment": "Flat underside above support structure; matching deck edges"
+        },
+        {
+          "id": "S04",
+          "name": "Parapet railing segment",
+          "attachment": "Flat lower seat along deck edge; repeat end to end"
+        }
+      ],
+      "prompt": "Produce ONE highly detailed ARCHITECTURAL SEGMENT SHEET of the EXISTING PORCELAIN LONG BRIDGE in the supplied reference, concentrating on the four component families already illustrated in its lower diagram panels. Do not invent a new bridge variant, alternate twin-arch landing, new terminal arrangement or universal dimensions. Retain that bridge's recognizable pointed arches, two-tier cutwater piers, wide white porcelain deck and delicate star/quatrefoil parapets.\n\nExactly FOUR distinct component assemblies in a generous TWO COLUMNS BY TWO ROWS grid, each shown ONE TIME in an informative orthographic three-quarter view. Same camera and material vocabulary, consistent form, all objects entirely visible and physically separate from each other, pale uncluttered background. Add the clear top heading PORCELAIN LONG BRIDGE \u2014 SEGMENT DETAILS. Under each assembly print its ID and name: S01 Lower-tier arch span; S02 Two-tier cutwater pier; S03 Porcelain deck segment; S04 Parapet railing segment. Readable tidy text outside object silhouettes. No prose paragraphs or extra view panels.\n\nS01 TOP LEFT, LOWER-TIER ARCH SPAN: carefully develop the pointed open structural arch module in source panel C. One complete elongated ivory stone arch with believable voussoir thickness, narrow gold edges, plain upper spandrel/fascia surfaces, readable side depth and clean end attachment/springing seats. The opening is real and extends through the piece. Its springing shoes attach to the separate piers rather than carrying two entire duplicate piers. Keep ornament seating recesses on the spandrel. Retain the source's roughly 14 m span to 12 m lower-tier height relationship in appearance, no hard new numerical labels.\n\nS02 TOP RIGHT, TWO-TIER CUTWATER PIER: develop source panel D faithfully, a complete slender-but-solid two-storey ivory/rose stone pier with a pointed/chamfered cutwater foot, two stacked structural stages, arched side recesses, top deck-support seat, blue inset fields in the same positions as the reference, and distinct arch springing shoulders at both levels. Retain its approximately 24 m total height and 6 m width proportions visually. Genuine side recesses have thickness/backing and do not pretend to be open passages. No extra palace tower.\n\nS03 BOTTOM LEFT, PORCELAIN DECK SEGMENT: one wide shallow rectangular bridge-floor assembly with physically thick white-porcelain slabs, clean adjoining end cuts, plain fascia mouldings, small paved edge walks and matching flat seating strips for parapets on both sides. Preserve the reference's broad deck proportions and visible modular paving seams. No assembled lamps or decorative medallions; show small shallow recesses/seats where the separate ornament kit can fit. Whole upper surface and underside edge readable in the same view.\n\nS04 BOTTOM RIGHT, PARAPET RAILING SEGMENT: one full repeatable 4 m-style rail bay from source panel A, 1.5 m-style height proportions, including clean slender end posts, top coping and lower rail frame. Reproduce the reference's alternating quatrefoil/floral and star panel family in simplified but clearly recognizable seated infills, with actual cutouts where the floral panels are pierced. Give it true thickness and end faces that can repeat along the deck. No lantern mounted on it yet.\n\nAll four share luminous ivory and rose-veined marble/porcelain, restrained gold accent, indigo only in the source inset zones. Keep them architecturally beautiful but spare the minute detachable rosettes, filigree, beads, lanterns and finials: those are supplied on the separate ornament-kit sheet. Concentrate here on the actual source component forms, their cross-section depth, structural seating and clean silhouettes. No assembled whole bridge, landscape, water, people, extra fifth object or duplicate views. Segment labels describe the drawings; these are design interpretations requiring dimensional reconciliation during 3D assembly.",
+      "output_file": "images/modular-component-packs/PACK-BRG-002.png",
+      "sha256": "e5d4f773e23c14cf69aaddabbed07c0c72204569dfbfb33f60af2977a22d79dd",
+      "status": "generated-pending-review",
+      "review_notes": [
+        "Four complete named segment families are visible.",
+        "The arch includes decorative end supports; these must be split/reconciled with S02 rather than blindly overlapped.",
+        "Illustrated deck and rail interfaces require 3D fit checks; this image is not a geometric join proof."
+      ]
+    }
+  ]
+}

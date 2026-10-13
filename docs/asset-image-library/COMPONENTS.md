@@ -1,6 +1,6 @@
 # Named model targets
 
-These labels come from existing source catalogues and board records. They identify intended targets; they do not certify hidden geometry, exact dimensions or generation readiness. Model registration and visual review are still required.
+Component IDs identify actual reference targets, not completed or approved meshes. Record model files and versions in model-tracker.csv; record combined pack outputs in batch-model-tracker.csv.
 
 | Component ID | Name | Reference image |
 | --- | --- | --- |
@@ -119,3 +119,23 @@ These labels come from existing source catalogues and board records. They identi
 | GEN-24-A07 | Crystal chandelier | [GEN-24](images/illustrated-boards/GEN-24.png) |
 | GEN-24-A08 | Bookcase | [GEN-24](images/illustrated-boards/GEN-24.png) |
 | GEN-24-A09 | Lectern | [GEN-24](images/illustrated-boards/GEN-24.png) |
+| PACK-BRG-001-A01 | Star-rosette medallion | [PACK-BRG-001](images/modular-component-packs/PACK-BRG-001.png) |
+| PACK-BRG-001-A02 | Carved floral rosette | [PACK-BRG-001](images/modular-component-packs/PACK-BRG-001.png) |
+| PACK-BRG-001-A03 | Lotus capital crown | [PACK-BRG-001](images/modular-component-packs/PACK-BRG-001.png) |
+| PACK-BRG-001-A04 | Fluted column sleeve | [PACK-BRG-001](images/modular-component-packs/PACK-BRG-001.png) |
+| PACK-BRG-001-A05 | Leaf corbel bracket | [PACK-BRG-001](images/modular-component-packs/PACK-BRG-001.png) |
+| PACK-BRG-001-A06 | Pierced quatrefoil rail infill | [PACK-BRG-001](images/modular-component-packs/PACK-BRG-001.png) |
+| PACK-BRG-001-A07 | Blue-star rail infill | [PACK-BRG-001](images/modular-component-packs/PACK-BRG-001.png) |
+| PACK-BRG-001-A08 | Beaded cornice strip | [PACK-BRG-001](images/modular-component-packs/PACK-BRG-001.png) |
+| PACK-BRG-001-A09 | Rose-vine frieze strip | [PACK-BRG-001](images/modular-component-packs/PACK-BRG-001.png) |
+| PACK-BRG-001-A10 | Corner scroll ornament | [PACK-BRG-001](images/modular-component-packs/PACK-BRG-001.png) |
+| PACK-BRG-001-A11 | Chamfered ornamental plinth | [PACK-BRG-001](images/modular-component-packs/PACK-BRG-001.png) |
+| PACK-BRG-001-A12 | Star finial | [PACK-BRG-001](images/modular-component-packs/PACK-BRG-001.png) |
+| PACK-BRG-001-A13 | Lantern crown rib | [PACK-BRG-001](images/modular-component-packs/PACK-BRG-001.png) |
+| PACK-BRG-001-A14 | Crystal lantern and mounting arm | [PACK-BRG-001](images/modular-component-packs/PACK-BRG-001.png) |
+| PACK-BRG-001-A15 | Scroll water spout | [PACK-BRG-001](images/modular-component-packs/PACK-BRG-001.png) |
+| PACK-BRG-001-A16 | Star-inlay paving tile | [PACK-BRG-001](images/modular-component-packs/PACK-BRG-001.png) |
+| PACK-BRG-002-S01 | Lower-tier arch span | [PACK-BRG-002](images/modular-component-packs/PACK-BRG-002.png) |
+| PACK-BRG-002-S02 | Two-tier cutwater pier | [PACK-BRG-002](images/modular-component-packs/PACK-BRG-002.png) |
+| PACK-BRG-002-S03 | Porcelain deck segment | [PACK-BRG-002](images/modular-component-packs/PACK-BRG-002.png) |
+| PACK-BRG-002-S04 | Parapet railing segment | [PACK-BRG-002](images/modular-component-packs/PACK-BRG-002.png) |

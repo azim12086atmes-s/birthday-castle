@@ -1,6 +1,6 @@
 # Birthday Castle image archive
 
-This archive contains **565 distinct image files** (474.6 MiB), including the 45 original illustrated boards, later generated concepts, vector drawings, crops, previews and build renders.
+This archive contains **570 distinct image files** (486.7 MiB), including the 45 original illustrated boards, later generated concepts, vector drawings, crops, previews and build renders.
 
 The active palace reference is **GEN-37**, with GEN-03 and GEN-16 as supporting views. Additional studies are retained for review; preservation does not mean approval. The corrected INT-C01 floor uses rose and ivory marble.
 
@@ -8,6 +8,8 @@ Use [the illustrated boards](images/illustrated-boards) to browse the original a
 
 | Category | Files |
 | --- | ---: |
+| [component-development-studies](images/component-development-studies) | 3 |
+| [modular-component-packs](images/modular-component-packs) | 2 |
 | [additional-generated-studies](images/additional-generated-studies) | 33 |
 | [illustrated-boards](images/illustrated-boards) | 45 |
 | [interior-components](images/interior-components) | 3 |
@@ -69,3 +71,10 @@ All image bytes are unchanged. Identical copies are stored once, with every orig
 ## Labels and generated 3D models
 
 Every image now has a stable ID. Browse [all image labels](IMAGE-LABELS.md), [named model components](COMPONENTS.md) and the [3D tracking guide](3D-TRACKING.md). Record actual outputs in [model-tracker.csv](model-tracker.csv). For example, `GEN-29-C01__lotus-capital__v001.glb` identifies the lotus capital from GEN-29. The gallery shows labels beside clean, unchanged reference images.
+
+## New named bridge packs
+
+- [PACK-BRG-002: four existing bridge segment families](images/modular-component-packs/PACK-BRG-002.png): lower-tier arch span, two-tier cutwater pier, deck and parapet.
+- [PACK-BRG-001: 16 ornaments](images/modular-component-packs/PACK-BRG-001.png): labelled A01–A16, with names printed on the image.
+
+The three earlier isolated component sheets are retained as development studies. The current format uses 10–20 tiny pieces per ornament sheet and 3–4 major segments per structural sheet. [Batch model tracker](batch-model-tracker.csv) records a whole generated pack; [individual model tracker](model-tracker.csv) records the parts after identification. Generated references require dimensional reconciliation in Blender.
