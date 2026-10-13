@@ -16,7 +16,7 @@
   "palace_family_caps": [
     {
       "family": "Layout and envelope",
-      "cap": 6,
+      "cap": 7,
       "existing_ids": [
         "GEN-01",
         "GEN-02",
@@ -26,7 +26,7 @@
     },
     {
       "family": "Base, wall bodies and stepped wings",
-      "cap": 10,
+      "cap": 9,
       "existing_ids": [
         "PAL-WALL-001"
       ]
@@ -946,6 +946,17 @@
         "Rear horizontal gap70 contradicts confirmed75; rename decorative facade insets as terrace-return studies rather than side-cut sections."
       ],
       "review_notes": "West/east appearance insets carry100/100/100 labels; rear carries75/75/75 after text correction. Rear orientation shows eastern spires left and western broad pavilion right. Actual tower depths, rear glazing choices and exact wing contours remain proposed; elevations are not a registered shared 3D projection."
+    },
+    {
+      "sheet_id": "PAL-ROOF-PLAN-001",
+      "owner": "palace",
+      "family": "Layout and envelope",
+      "title": "Complete centrally nested palace roof plan",
+      "status": "coordinate-authored-layout-pending-review",
+      "file": "palace-roof-plan/PAL-ROOF-PLAN-001.png",
+      "sha256": "258edbcb4eee342554bc0850608aa23d4c1c5059928ccacd76deaf03c72cd709",
+      "generation_attempts_in_this_pass": 1,
+      "generator": "coordinate-authored Matplotlib engineering drawing"
     }
   ],
   "production_pass": "palace-coverage-missing-only",
@@ -979,12 +990,13 @@
     "layer_schedule": "palace-layer-sheets/schedule.json",
     "entrance_schedule": "palace-front-correction/schedule.json",
     "layer_schedule_status": "retired as placement authority; source regions remain archival evidence",
-    "side_rear_schedule": "palace-side-rear/schedule.json"
+    "side_rear_schedule": "palace-side-rear/schedule.json",
+    "complete_roof_plan": "palace-roof-plan/schedule.json"
   },
-  "production_pass_status": "Side/rear reference pass100 grid m each side and75 rear per inter-layer transition; front retained; registration pending",
+  "production_pass_status": "Full top view with central highest court, outward descending terraces and all adjacent-level stairs; proposed positions indexed",
   "structural_sheet_rule": "Display source-fitted assemblies with existing canonical decor so identity and proportions can be checked. Bare host views are internal construction proposals, not replacements for the original decorated wing references.",
   "generation_paused": true,
-  "pause_reason": "Two requested side/rear studies saved after correcting axes and rear-gap annotation. Further structural generation needs source/geometry review, not automatic variants.",
+  "pause_reason": "Requested roof/stair proposal finished. Painted attempt rejected; coordinate diagram covers33 placements and11 stair links. Source-depth registration remains a layout task.",
   "generation_resume_allowlist": [],
   "retired_slots": [
     {
@@ -1033,6 +1045,13 @@
       "sha256": "458893ff63c9fdc686b759ff739272bf3a28298f98be54a4d64867ff1f5930aa",
       "generation_attempts_in_this_pass": 1,
       "review_notes": "Western onion pavilion, central needle group and eastern chapel-spire group present. Exact shaft proportions, attached turret counts and positions differ between some views; rear courtyard arrangements and side ward depth are proposals, not source-traced geometry."
+    }
+  ],
+  "allocation_changes": [
+    {
+      "reason": "Requested whole-palace roof plan needs one layout slot. Transfer one unused wall-body allowance to layout; palace total65 and global230 unchanged. Original45 boards retained.",
+      "layout_cap": 7,
+      "wall_body_cap": 9
     }
   ]
 }

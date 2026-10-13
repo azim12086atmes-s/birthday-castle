@@ -48,3 +48,7 @@ The owner reported tower, wing and five-arch adjacency inconsistencies in the la
 ## Side and rear wall returns
 
 The owner clarified [side/rear wall-face gaps](palace-side-rear/README.md):100 grid m on either side and75 grid m at the rear for each successive main-wall transition. These are not overall wing lengths. The front150/75 m approach and60 m L2-L3 front setback are retained; upper front setback and hidden contours remain unresolved. Existing garden and ornament sheets are reused.
+
+## Complete roof and stair plan
+
+The [whole top view](palace-roof-plan/index.html) centres the highest ward and steps down outward. It includes33 inventoried tower placements and11 dry stairs linking ground/L1 and every higher pair on west,east and rear. Walls retain100 m side/75 m rear gaps and the established south approach. Working800×680 m envelope and extra60 m upper-front setback are proposed. One unused wall-body slot transfers to layout; family caps7/9 still sum with other families to65.

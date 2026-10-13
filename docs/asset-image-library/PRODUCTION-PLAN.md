@@ -12,14 +12,14 @@ The final library is capped at **230 selected sheets**, including the 45 origina
 | shared-outdoor-props-and-bridge | 25 | 3 | 22 |
 | maps-magic-travel-and-birthday | 20 | 4 | 16 |
 
-The 614-file archive contains crops, previews and historical experiments; it is not the final 230-sheet selection. Selected reference slots may still require visual review.
+The 616-file archive contains crops, previews and historical experiments; it is not the final 230-sheet selection. Selected reference slots may still require visual review.
 
 ## Palace caps
 
 | Structural/detail family | Cap | Existing selected |
 | --- | ---: | ---: |
-| Layout and envelope | 6 | 4 |
-| Base, wall bodies and stepped wings | 10 | 1 |
+| Layout and envelope | 7 | 4 |
+| Base, wall bodies and stepped wings | 9 | 1 |
 | Tower bodies and roof assemblies | 9 | 3 |
 | Glass, carvings, rails and architectural fittings | 18 | 13 |
 | Stairs, fountains, terraces and courtyards | 10 | 7 |
@@ -107,3 +107,9 @@ The four inconsistent PAL-LAYER slots are now retired from final selection, with
 The owner clarified [side/rear wall-face gaps](palace-side-rear/README.md):100 grid m on either side and75 grid m at the rear for each successive main-wall transition. These are not overall wing lengths. The front150/75 m approach and60 m L2-L3 front setback are retained; upper front setback and hidden contours remain unresolved. Existing garden and ornament sheets are reused.
 
 The two side/rear studies consume two base/wall/wing slots and share three assembly IDs, rather than creating duplicate models per appearance view. Current ledger: 64 selected/reserved globally; 47 for the palace. Unproduced reservations and pending visual approvals are not accepted-model counts.
+
+## Complete roof and stair plan
+
+The [whole top view](palace-roof-plan/index.html) centres the highest ward and steps down outward. It includes33 inventoried tower placements and11 dry stairs linking ground/L1 and every higher pair on west,east and rear. Walls retain100 m side/75 m rear gaps and the established south approach. Working800×680 m envelope and extra60 m upper-front setback are proposed. One unused wall-body slot transfers to layout; family caps7/9 still sum with other families to65.
+
+Current ledger: 65 selected/reserved globally, 48 for the palace. The roof diagram is one slot; painted rejected output is archival.

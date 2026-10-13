@@ -3830,6 +3830,18 @@
       ],
       "next_step": "Many full objects are already visible in multi-item boards. Crop first; generate only when important geometry remains ambiguous or occluded.",
       "kind": "reference-family-not-isolated-asset"
+    },
+    {
+      "family_id": "FAM-PAL-ROOF-PLAN",
+      "name": "Complete nested roof plan and stair network",
+      "kind": "layout-reference; placement instances not new mesh assets",
+      "reference_image_ids": [
+        "PAL-ROOF-PLAN-001",
+        "GEN-37"
+      ],
+      "placement_register": "palace-roof-plan/tower-placements.csv",
+      "stair_register": "palace-roof-plan/stair-connections.csv",
+      "next_step": "Review proposed contours/depths, then create shared registered layout before independent structural meshes."
     }
   ],
   "generation_batches": [

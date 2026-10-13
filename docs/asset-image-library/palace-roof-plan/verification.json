@@ -1,0 +1,16 @@
+{
+  "reference_image": "PAL-ROOF-PLAN-001",
+  "archive_images": 616,
+  "tower_placements": 33,
+  "dry_stair_links": 11,
+  "every_level_pair_connected": true,
+  "stair_landings_match_roof_levels": true,
+  "source_image_pixels_modified": false,
+  "all_archive_hashes_and_gallery_links_verified": true,
+  "original45_boards_retained": true,
+  "palace_cap": 65,
+  "global_cap": 230,
+  "selected_or_reserved_total": 65,
+  "palace_selected_or_reserved": 48,
+  "limits": "Contours, depths, envelope and extra upper-front setback proposed. No registered source mesh or final stair geometry claimed."
+}

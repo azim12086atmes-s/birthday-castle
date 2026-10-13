@@ -174,3 +174,7 @@ These layer reconstructions were reported inconsistent and retired from placemen
 - [PAL-RETURN-SETBACK-001 — Side and rear inter-layer wall setbacks](palace-side-rear/PAL-RETURN-SETBACK-001.png) — PAL-RETURN-W-001, PAL-RETURN-E-001, PAL-RETURN-N-001; pending review.
 - [PAL-SIDE-REAR-001 — Connected west, east and rear wards](palace-side-rear/PAL-SIDE-REAR-001.png) — PAL-RETURN-W-001, PAL-RETURN-E-001, PAL-RETURN-N-001; pending review.
 <!-- /side-rear -->
+
+## Complete roof layout and staircase network
+
+[PAL-ROOF-PLAN-001](palace-roof-plan/PAL-ROOF-PLAN-001.png) is a coordinate-authored layout proposal, with [33 placement IDs](palace-roof-plan/tower-placements.csv) and [11 staircase links](palace-roof-plan/stair-connections.csv). Placement IDs name instances, not new mesh assets. Match generated models to their archetype and fill mesh_asset_id in the placement register when models exist. Source GEN-37 remains the appearance master; proposed depths require review.

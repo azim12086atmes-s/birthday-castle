@@ -1,0 +1,12 @@
+route_id,plan_label,transition,lower_x,lower_y,lower_z,upper_x,upper_y,upper_z,role
+S-FRONT-W,W0,G0 ↔ L1,-49.07,-150,0,-49.07,-75,60,proposed dry stair with landings; tread geometry unresolved
+S-FRONT-E,E0,G0 ↔ L1,22.93,-150,0,22.93,-75,60,proposed dry stair with landings; tread geometry unresolved
+S-W12,W1,L1 ↔ L2,-350,45,60,-275,90,160,proposed dry stair with landings; tread geometry unresolved
+S-E12,E1,L1 ↔ L2,350,70,60,275,115,160,proposed dry stair with landings; tread geometry unresolved
+S-W23,W2,L2 ↔ L3,-265,230,160,-180,250,230,proposed dry stair with landings; tread geometry unresolved
+S-E23,E2,L2 ↔ L3,265,170,160,180,190,230,proposed dry stair with landings; tread geometry unresolved
+S-W34,W3,L3 ↔ L4,-170,195,230,-80,185,300,proposed dry stair with landings; tread geometry unresolved
+S-E34,E3,L3 ↔ L4,170,265,230,80,255,300,proposed dry stair with landings; tread geometry unresolved
+S-N23,N2,L2 ↔ L3,65,425,160,65,360,230,proposed dry stair with landings; tread geometry unresolved
+S-N34,N3,L3 ↔ L4,-55,345,230,-55,285,300,proposed dry stair with landings; tread geometry unresolved
+S-N12,N1,L1 ↔ L2,-170,495,60,-170,430,160,proposed dry stair with landings; tread geometry unresolved

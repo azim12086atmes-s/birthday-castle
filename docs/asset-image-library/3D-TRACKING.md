@@ -38,3 +38,7 @@ PACK-BRG-001 revision 2 replaces A03 with the user-supplied stepped lotus capita
 ## Source overrides and missing-only generation
 
 Use BRIDGE-REFERENCE-SET.md for current bridge intake. Adequate original source crops override inaccurate generated interpretations without another image-generation call. Current component IDs remain stable; source histories preserve prior hashes. PACK-BRG-003 contains only S05 Wide arch span, S06 Slender central support and S07 Shore approach segment. Model IDs are PACK-BRG-003-S05/S06/S07. Existing output files, when supplied, retain their original reference provenance.
+
+## Complete roof layout and staircase network
+
+[PAL-ROOF-PLAN-001](palace-roof-plan/PAL-ROOF-PLAN-001.png) is a coordinate-authored layout proposal, with [33 placement IDs](palace-roof-plan/tower-placements.csv) and [11 staircase links](palace-roof-plan/stair-connections.csv). Placement IDs name instances, not new mesh assets. Match generated models to their archetype and fill mesh_asset_id in the placement register when models exist. Source GEN-37 remains the appearance master; proposed depths require review.
