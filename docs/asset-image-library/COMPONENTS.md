@@ -151,10 +151,18 @@ Current source bindings are authoritative for model intake; earlier generated va
 <!-- layer-register -->
 ## Layer assemblies
 
-Pending-review reconstructions. Source GEN-37 controls the front; new rear geometry is proposed.
+These layer reconstructions were reported inconsistent and retired from placement use. Their IDs remain archival; see the connected-front and entrance correction.
 
 - [PAL-LAYER-01: Lower base and first terrace](palace-layer-sheets/PAL-LAYER-01.png) — PAL-LAYER-01-W, PAL-LAYER-01-C, PAL-LAYER-01-E
 - [PAL-LAYER-02: Gate wall and four great-window ranges](palace-layer-sheets/PAL-LAYER-02.png) — PAL-LAYER-02-W, PAL-LAYER-02-C, PAL-LAYER-02-E
 - [PAL-LAYER-03: Intermediate garden wards and stepped returns](palace-layer-sheets/PAL-LAYER-03.png) — PAL-LAYER-03-W, PAL-LAYER-03-C, PAL-LAYER-03-E
 - [PAL-LAYER-04: Upper inner wards and original tower-group seats](palace-layer-sheets/PAL-LAYER-04.png) — PAL-LAYER-04-W, PAL-LAYER-04-C, PAL-LAYER-04-E
 <!-- /layer-register -->
+
+
+<!-- continuous-correction -->
+## Connected palace correction references
+
+- [PAL-FRONT-001 — Continuous five-arch frontage and attached wings](palace-front-correction/PAL-FRONT-001.png) — PAL-FRONT-001-S01; pending source comparison.
+- [PAL-ENTRY-001 — Ground wall, L1 arrival terrace and gate-wall setback](palace-front-correction/PAL-ENTRY-001.png) — PAL-ENTRY-001-S01; pending source comparison.
+<!-- /continuous-correction -->

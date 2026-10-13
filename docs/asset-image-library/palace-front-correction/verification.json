@@ -1,0 +1,13 @@
+{
+  "corrected_sheets": 2,
+  "archive_images": 610,
+  "retired_layer_sheets": 4,
+  "selected_or_reserved_total": 62,
+  "palace_selected_or_reserved": 45,
+  "all_archive_image_hashes_verified": true,
+  "reference_hashes_and_gallery_links_verified": true,
+  "numeric_layout_constraints_verified": true,
+  "visual_observations": "Entrance plan uses north-south dimension arrows, equal consecutive 75 m bands; section places gate after flat terrace. New front labels correspond to large arches.",
+  "visual_limitations": "Generated edits are not pixel-identical geometry proof; wing footprints proposed and simplified; section vertical graphics not to scale. GEN-37 remains placement master.",
+  "model_status": "No new meshes or Blender assembly in this reference pass"
+}

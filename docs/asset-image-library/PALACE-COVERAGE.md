@@ -40,3 +40,7 @@ The nine planned sheets are capped reservations, not automatic approvals. Genera
 ## User fidelity review
 
 Both wing redraws were rejected for structure mismatch. The supposed wing-view gap cannot be filled by freeform assemblies. Use original-palace-structure/INDEX.md to establish the existing structure and attachment relationships first. No generated wing or base proposal is accepted as a source-correct complete palace module. Other structural calls are paused; private-room/furniture reservations are retained but have not been generated in this batch.
+
+## Continuous front and entrance correction
+
+The owner reported tower, wing and five-arch adjacency inconsistencies in the layer sheets. Use the [whole-front and entrance correction](palace-front-correction/README.md) to resolve layout before splitting modules. The entrance constraints keep 150 grid m between the ground-facing front wall and gate wall, including 75 grid m of terrace after the stair top. Generated sheet parity remains pending.

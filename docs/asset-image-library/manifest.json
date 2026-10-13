@@ -1,8 +1,8 @@
 {
   "date": "2026-10-13",
-  "distinct_image_count": 606,
-  "source_file_count": 863,
-  "total_bytes": 552115559,
+  "distinct_image_count": 610,
+  "source_file_count": 867,
+  "total_bytes": 563810397,
   "categories": {
     "additional-generated-studies": 33,
     "component-development-studies": 3,
@@ -13,9 +13,10 @@
     "original-bridge-source-crops": 10,
     "original-column-source-crops": 7,
     "original-palace-source-regions": 4,
+    "palace-front-and-entrance-corrections": 2,
     "palace-layer-reference-sheets": 4,
     "palace-structural-studies": 1,
-    "palace-structure-drafts": 4,
+    "palace-structure-drafts": 6,
     "previews-and-reference-copies": 237,
     "reference-crops-and-studies": 73,
     "renders-and-screenshots": 48,
@@ -11729,8 +11730,8 @@
       ],
       "label": "PAL-LAYER-01 \u2014 Lower base and first terrace",
       "reference_role": "source-linked-layer-reconstruction-study",
-      "design_status": "pending-review; rear depth proposed; view registration unresolved",
-      "review_status": "pending-user-review",
+      "design_status": "not-placement-master; continuous-front correction requested",
+      "review_status": "user-reported-inconsistent",
       "related_image_ids": [
         "GEN-37"
       ]
@@ -11753,8 +11754,8 @@
       ],
       "label": "PAL-LAYER-02 \u2014 Gate wall and four great-window ranges",
       "reference_role": "source-linked-layer-reconstruction-study",
-      "design_status": "pending-review; rear depth proposed; view registration unresolved",
-      "review_status": "pending-user-review",
+      "design_status": "not-placement-master; continuous-front correction requested",
+      "review_status": "user-reported-inconsistent",
       "related_image_ids": [
         "GEN-37"
       ]
@@ -11777,8 +11778,8 @@
       ],
       "label": "PAL-LAYER-03 \u2014 Intermediate garden wards and stepped returns",
       "reference_role": "source-linked-layer-reconstruction-study",
-      "design_status": "pending-review; rear depth proposed; view registration unresolved",
-      "review_status": "pending-user-review",
+      "design_status": "not-placement-master; continuous-front correction requested",
+      "review_status": "user-reported-inconsistent",
       "related_image_ids": [
         "GEN-37"
       ]
@@ -11801,8 +11802,8 @@
       ],
       "label": "PAL-LAYER-04 \u2014 Upper inner wards and original tower-group seats",
       "reference_role": "source-linked-layer-reconstruction-study",
-      "design_status": "pending-review; rear depth proposed; view registration unresolved",
-      "review_status": "pending-user-review",
+      "design_status": "not-placement-master; continuous-front correction requested",
+      "review_status": "user-reported-inconsistent",
       "related_image_ids": [
         "GEN-37"
       ]
@@ -11893,6 +11894,86 @@
       "reference_role": "analysis-reference",
       "design_status": "direct-source-preview",
       "review_status": "direct-source-preview",
+      "related_image_ids": [
+        "GEN-37"
+      ]
+    },
+    {
+      "id": "PAL-FRONT-001",
+      "title": "Continuous five-arch frontage and attached wings",
+      "category": "palace-front-and-entrance-corrections",
+      "file": "palace-front-correction/PAL-FRONT-001.png",
+      "sha256": "bb4073eafc36d143ef544fd6f9de811561fe112c9a133065cc7f660fc9082da0",
+      "bytes": 2702285,
+      "source_aliases": [
+        "/workspace/generated_images/exec-52cb6b8e-76cc-4a4a-af35-cbc16050bcd6.png"
+      ],
+      "alias_ids": [],
+      "component_ids": [
+        "PAL-FRONT-001-S01"
+      ],
+      "label": "PAL-FRONT-001 \u2014 Continuous five-arch frontage and attached wings",
+      "reference_role": "connected-front-or-entrance-study",
+      "design_status": "pending-review; GEN-37 controls front; hidden entrance geometry proposed",
+      "review_status": "pending-user-review",
+      "related_image_ids": [
+        "GEN-37"
+      ]
+    },
+    {
+      "id": "DRAFT-PAL-FRONT-001-R01",
+      "title": "Rejected PAL-FRONT-001 first attempt",
+      "category": "palace-structure-drafts",
+      "file": "palace-front-correction/rejected-drafts/PAL-FRONT-001-R01.png",
+      "sha256": "323cbd77f133cccdf22a99864169d8d4f36ba39002defdf6c754745db8be951b",
+      "bytes": 3444936,
+      "source_aliases": [],
+      "alias_ids": [],
+      "component_ids": [],
+      "label": "DRAFT-PAL-FRONT-001-R01 \u2014 Rejected PAL-FRONT-001 first attempt",
+      "reference_role": "rejected-draft",
+      "design_status": "rejected; Several whole-front G1-G5 leaders point at piers rather than arch centres; redrawn tower-group proportions and lateral relationships drift from GEN-37.",
+      "review_status": "rejected",
+      "related_image_ids": [
+        "GEN-37"
+      ]
+    },
+    {
+      "id": "PAL-ENTRY-001",
+      "title": "Ground wall, L1 arrival terrace and gate-wall setback",
+      "category": "palace-front-and-entrance-corrections",
+      "file": "palace-front-correction/PAL-ENTRY-001.png",
+      "sha256": "9961f1dd4b3767def2d57e703876984d29fa2c512fa55cea49122ad79c9913c9",
+      "bytes": 2461281,
+      "source_aliases": [
+        "/workspace/generated_images/exec-4c11d726-9580-41f8-af3a-d1a39c52abfd.png"
+      ],
+      "alias_ids": [],
+      "component_ids": [
+        "PAL-ENTRY-001-S01"
+      ],
+      "label": "PAL-ENTRY-001 \u2014 Ground wall, L1 arrival terrace and gate-wall setback",
+      "reference_role": "connected-front-or-entrance-study",
+      "design_status": "pending-review; GEN-37 controls front; hidden entrance geometry proposed",
+      "review_status": "pending-user-review",
+      "related_image_ids": [
+        "GEN-37"
+      ]
+    },
+    {
+      "id": "DRAFT-PAL-ENTRY-001-R01",
+      "title": "Rejected PAL-ENTRY-001 first attempt",
+      "category": "palace-structure-drafts",
+      "file": "palace-front-correction/rejected-drafts/PAL-ENTRY-001-R01.png",
+      "sha256": "85ae18babc25608606845d42893b831a44cb5b698949d7e192187fbe09df0fa6",
+      "bytes": 3086336,
+      "source_aliases": [],
+      "alias_ids": [],
+      "component_ids": [],
+      "label": "DRAFT-PAL-ENTRY-001-R01 \u2014 Rejected PAL-ENTRY-001 first attempt",
+      "reference_role": "rejected-draft",
+      "design_status": "rejected; Overhead panel is perspective; depth dimensions are drawn across width; section shows a front-facing five-bay wall and leaves the gate at the stair top instead of after the 75 m terrace.",
+      "review_status": "rejected",
       "related_image_ids": [
         "GEN-37"
       ]

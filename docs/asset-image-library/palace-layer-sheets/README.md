@@ -1,5 +1,7 @@
 # Original palace: four layer reference sheets
 
+**User reported inconsistent tower placement, wings and five-bay connections. These sheets are not placement masters.** See the [continuous front and entrance correction](../palace-front-correction/README.md).
+
 The owner requested layer-by-layer segments, with a modest extension backward. These studies use **GEN-37**, the original detailed palace front, and preserve its visible window hierarchy, asymmetric pavilions, tier returns, gate, cascade and paired dry stairs. They are reference proposals awaiting comparison, not approved or measured 3D plans.
 
 | Sheet | Body band, grid m | Three source-linked assemblies |

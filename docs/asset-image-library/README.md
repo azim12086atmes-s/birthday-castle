@@ -1,6 +1,6 @@
 # Birthday Castle image archive
 
-This archive contains **606 distinct image files** (509.4 MiB), including the 45 original illustrated boards, later generated concepts, vector drawings, crops, previews and build renders.
+This archive contains **610 distinct image files** (509.4 MiB), including the 45 original illustrated boards, later generated concepts, vector drawings, crops, previews and build renders.
 
 The active palace reference is **GEN-37**, with GEN-03 and GEN-16 as supporting views. Additional studies are retained for review; preservation does not mean approval. The corrected INT-C01 floor uses rose and ivory marble.
 
@@ -17,9 +17,10 @@ Use [the illustrated boards](images/illustrated-boards) to browse the original a
 | [original-bridge-source-crops](bridge-source-panels/INDEX.md) | 10 |
 | [original-column-source-crops](column-source-panels/INDEX.md) | 7 |
 | [original-palace-source-regions](original-palace-structure/INDEX.md) | 4 |
+| [palace-front-and-entrance-corrections](palace-front-correction/README.md) | 2 |
 | [palace-layer-reference-sheets](palace-layer-sheets/README.md) | 4 |
 | [palace-structural-studies](images/palace-structural-studies) | 1 |
-| [palace-structure-drafts](images/palace-structure-drafts) | 4 |
+| [palace-structure-drafts](images/palace-structure-drafts) | 6 |
 | [previews-and-reference-copies](images/previews-and-reference-copies) | 237 |
 | [reference-crops-and-studies](images/reference-crops-and-studies) | 73 |
 | [renders-and-screenshots](images/renders-and-screenshots) | 48 |
@@ -108,3 +109,7 @@ The two wing redraws are rejected; they changed the structure even when the mate
 ## Layer-by-layer palace references
 
 The current requested pass is [four source-linked layer sheets](palace-layer-sheets/README.md), each with three assemblies and a proposed backward extension. The original front remains the authority; unseen rear depth is proposed. Generated sheets require visual review before modelling.
+
+## Continuous front and entrance correction
+
+The owner reported tower, wing and five-arch adjacency inconsistencies in the layer sheets. Use the [whole-front and entrance correction](palace-front-correction/README.md) to resolve layout before splitting modules. The entrance constraints keep 150 grid m between the ground-facing front wall and gate wall, including 75 grid m of terrace after the stair top. Generated sheet parity remains pending.

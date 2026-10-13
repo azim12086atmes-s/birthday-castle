@@ -1,0 +1,206 @@
+{
+  "schema_version": 1,
+  "source": "GEN-37",
+  "source_dimensions_px": [
+    1898,
+    829
+  ],
+  "source_coordinate_status": "Manual approximate image anchors, not measured mesh coordinates",
+  "tower_anchor_groups": [
+    {
+      "id": "WT",
+      "name": "Western terminal onion",
+      "approx_source_centre_x_px": 173,
+      "source_bounds_px": [
+        53,
+        325,
+        254,
+        810
+      ]
+    },
+    {
+      "id": "WN",
+      "name": "Western needle",
+      "approx_source_centre_x_px": 279,
+      "source_bounds_px": [
+        225,
+        171,
+        326,
+        524
+      ]
+    },
+    {
+      "id": "WP",
+      "name": "Broad western pavilion",
+      "approx_source_centre_x_px": 534,
+      "source_bounds_px": [
+        414,
+        65,
+        650,
+        475
+      ]
+    },
+    {
+      "id": "RN",
+      "name": "Royal needle group",
+      "approx_source_centre_x_px": 879,
+      "source_bounds_px": [
+        807,
+        0,
+        947,
+        331
+      ]
+    },
+    {
+      "id": "EB",
+      "name": "Eastern belvedere",
+      "approx_source_centre_x_px": 1352,
+      "source_bounds_px": [
+        1270,
+        252,
+        1439,
+        611
+      ]
+    },
+    {
+      "id": "EC",
+      "name": "Eastern chapel-spire group",
+      "approx_source_centre_x_px": 1608,
+      "source_bounds_px": [
+        1485,
+        48,
+        1715,
+        523
+      ]
+    },
+    {
+      "id": "ET",
+      "name": "Eastern terminal onion",
+      "approx_source_centre_x_px": 1770,
+      "source_bounds_px": [
+        1695,
+        324,
+        1879,
+        810
+      ]
+    }
+  ],
+  "five_arch_schedule": [
+    {
+      "id": "G1",
+      "name": "West outer great glazed bay",
+      "approx_source_centre_x_px": 583
+    },
+    {
+      "id": "G2",
+      "name": "West inner great glazed bay",
+      "approx_source_centre_x_px": 728
+    },
+    {
+      "id": "G3",
+      "name": "Central ceremonial entrance",
+      "approx_source_centre_x_px": 918
+    },
+    {
+      "id": "G4",
+      "name": "East inner great glazed bay",
+      "approx_source_centre_x_px": 1085
+    },
+    {
+      "id": "G5",
+      "name": "East outer great glazed bay",
+      "approx_source_centre_x_px": 1213
+    }
+  ],
+  "entrance_coordinates": {
+    "units": "design-grid metres; world = grid \u00d7 2.75",
+    "front": "south, negative Y",
+    "gate_wall_y": 0,
+    "front_ground_facing_wall_y": -150,
+    "stair_foot": {
+      "y": -150,
+      "z": 0
+    },
+    "stair_top": {
+      "y": -75,
+      "z": 60
+    },
+    "L1_terrace": {
+      "z": 60,
+      "central_front_y": -75,
+      "back_y": 0
+    },
+    "gate_wall": {
+      "bottom_z": 60,
+      "top_z": 160
+    },
+    "front_wall_height": 60,
+    "front_wall_role": "Ground-facing L1 retaining wall; no separately invented low perimeter fence",
+    "wall_to_wall_gap_grid_m": 150,
+    "wall_to_wall_gap_world_m": 412.5,
+    "stair_top_to_gate_grid_m": 75,
+    "stair_top_to_gate_world_m": 206.25,
+    "L2_to_L3_setback_grid_m": 60,
+    "L4_setback_status": "unresolved",
+    "rear_extension_grid_m": 30,
+    "rear_extension_status": "proposed only behind palace ranges, not added to the confirmed forecourt gap",
+    "scope_note": "The confirmed entrance spacing controls the proposed plan. The painted reference collapses depth; its pixels do not measure this setback. No separate L0 perimeter-wall position or height was supplied.",
+    "drawing_scale_status": "Generated section is schematic; dimensions control, not pixel-measured vertical ratios"
+  },
+  "sheets": [
+    {
+      "sheet_id": "PAL-FRONT-001",
+      "title": "Continuous five-arch frontage and attached wings",
+      "prompt": "Edit the attached original palace image minimally into a single FRONT PLACEMENT REFERENCE. Preserve the actual original building, all tower positions, tower proportions, small attached turret counts, wing forms, colors, connected walls, gardens, central cascade and both dry stairs. Do not redesign, restyle, recompose, simplify or rearrange any architecture. Keep the original broad wide composition. Add a narrow blank ivory margin BELOW the original picture, keeping the palace itself unchanged. In that new margin put five short black leader lines directly BELOW the five dominant great pointed arches, numbered G1 G2 G3 G4 G5 from left to right. G1 is the left OUTER giant blue-pink glazed arch around 31% of original image width; G2 the left INNER giant glazed arch around 38%; G3 the centre gigantic ceremonial entrance around 49%; G4 the right INNER giant glazed arch around 57%; G5 the right OUTER giant glazed arch around 64%. Each leader points to its actual arch centre, not to an intervening small column, tower, dry stair, or fountain. There are exactly FOUR huge window arches plus ONE central gate; preserve their connected masonry, original frame silhouettes, unequal widths and all narrow engaged pier extensions. Do not turn all five into doors. Below the five markers, write one short title: PAL-FRONT-001 \u2014 Original connected five-arch frontage. Write a small secondary line: G1/G2/G4/G5 glazed bays; G3 entrance. GEN-37 remains placement master. No enlarged lower detail, no duplicate image, no extra isometric, no new domed towers at joins, no new rear buildings, no relocation of wings. The top and main picture must remain the attached original palace with every original group intact. A minimal labeling edit of an existing image, NOT a newly synthesized castle concept.",
+      "reference": "/workspace/birthday-castle/docs/asset-image-library/images/illustrated-boards/GEN-37.png",
+      "scope": "Complete source-constrained front, not independent modules",
+      "asset_id": "PAL-FRONT-001-S01",
+      "previous_drafts": [
+        {
+          "file": "palace-front-correction/rejected-drafts/PAL-FRONT-001-R01.png",
+          "sha256": "323cbd77f133cccdf22a99864169d8d4f36ba39002defdf6c754745db8be951b",
+          "prompt": "Edit the attached ORIGINAL PALACE FRONT into one unified architectural reference sheet, NOT a new concept palace and NOT separated asset parts. Title PAL-FRONT-001 \u2014 Continuous five-arch frontage and attached wings. Use the original image faithfully for all tower shafts, tip heights, crown types, relative horizontal locations, wing silhouettes, stepped terrace boundaries and proportions. Main image occupying 75 percent of sheet: the WHOLE original palace in a continuous south front elevation, all connected walls and wings, with the original rose/ivory marble, gold lotus and leaf carving, blue/lilac/pink stained glass and purple ribbed onion domes. Keep the broad western onion pavilion far left of the royal needle, the central tallest needle slightly left of the gate axis, the east belvedere and the tall right chapel-spire group in precisely their source relationships. Do not mirror the palace or equalize asymmetry. Keep all original small attached turrets; do not add new towers at segment joins. Tiered stepped chambers, concave recesses, curved terrace projections, engaged tower buttresses and connected garden roofs remain the actual source shapes. The central blue wet cascade and BOTH separate dry flanking staircases keep their source position. Wings are continuous attached volumes, not separate boxes or a lineup of detached towers. The middle hero gate-wall range must be a SINGLE CONNECTED WALL with the FIVE dominant pointed arches in this order: G1 west outer great glazed bay; G2 west inner great glazed bay; G3 central large ceremonial entrance; G4 east inner great glazed bay; G5 east outer great glazed bay. There are exactly four great-window bays plus one central gate; do not manufacture five identical walk-through doors. Print G1 G2 G3 G4 G5 below their respective large arch centres, with fine leader lines. All five share the same ceremonial wall datum, with engaged carved piers connecting neighboring arches; no white gaps, exploded views, separate podiums or independent corner towers between the five bays. Match the original gate gable, central star-rose and delicate narrow pier extensions. Lower 25 percent: ONE enlarged FRONT DETAIL of the ENTIRE connected five-arch wall, not five isolated panels. Keep two great windows on EACH side of the gate, identical count to the whole front above. Print the same G1-G5 IDs again. Retain western pavilion and east belvedere only as light upper context in this enlarged detail, do not convert them into new corner domes. Warm ivory paper, highly detailed fine-ink and softly shaded architectural illustration, fully framed, no giant text blocks, no top view, no isometric reconstruction. Small note: ORIGINAL GEN-37 FRONT CONTROLS / JOINS CONTINUOUS / PENDING SOURCE COMPARISON. This task corrects disjoint five-bay segmentation and drifting tower positions; faithfully preserve existing anatomy rather than synthesizing another attractive fantasy castle.",
+          "reference_image_id": "SRC-LAYER-FULL",
+          "status": "rejected-on-source-comparison",
+          "reason": "Several whole-front G1-G5 leaders point at piers rather than arch centres; redrawn tower-group proportions and lateral relationships drift from GEN-37."
+        }
+      ],
+      "output_file": "palace-front-correction/PAL-FRONT-001.png",
+      "sha256": "bb4073eafc36d143ef544fd6f9de811561fe112c9a133065cc7f660fc9082da0",
+      "generator": "image_gen.imagegen",
+      "generated_source_file": "/workspace/generated_images/exec-52cb6b8e-76cc-4a4a-af35-cbc16050bcd6.png",
+      "review_status": "pending-user-review; source parity unverified",
+      "review_notes": "Minimal source-based labeling edit retains the connected five-bay wall and major lateral tower groups; leaders now identify the large arches. Caption layout affects displayed vertical extent; GEN-37 remains the exact source and height/placement master, not this generated edit.",
+      "reference_image_id": "GEN-37",
+      "reference_sha256": "93e90aa60c98e29cd47f4c319661a390d16ae79e0517fd26af566eab2a09440a"
+    },
+    {
+      "sheet_id": "PAL-ENTRY-001",
+      "title": "Ground wall, L1 arrival terrace and gate-wall setback",
+      "prompt": "Draw a precise architectural engineering SKETCH SHEET, pure overhead FLOOR PLAN above and a simple longitudinal SIDE SECTION below. Title: PAL-ENTRY-001 \u2014 Level 1 entrance and gate-wall setback. TWO views ONLY. No isometric, no perspective, no third view, no facade elevation inside the plan. Use fine black technical linework on ivory paper, pale rose fill for solid masonry, light blue for water; restrained decorative motif on wall footprint only. The supplied palace image is a motif reference and a five-bay wall reference, NOT a camera to copy. This task is about depth spacing, not pretty rendered architecture.\nUPPER PANEL \u2014 TRUE PLAN, looking exactly vertically down. North/rear at TOP, south/front at BOTTOM. Three parallel HORIZONTAL datum lines from left to right: TOP line Y=0, gate wall; MIDDLE line Y=-75, stair top; BOTTOM line Y=-150, front retaining wall/stair foot. These three horizontal lines are vertically spaced EQUALLY on the page. Draw one SINGLE thick connected gate-wall FOOTPRINT on the TOP datum Y=0. It has five labelled shallow openings across its WIDTH: G1 G2 G3 G4 G5, centre G3 arrival doorway and four glazed window wall apertures indicated by thin blue lines. Labels are just above their footprint openings. Do not draw front-facing arches, stained-glass elevations or towers in this overhead plan. Draw attached unequal wing FOOTPRINTS on left and right, continuously joining this top gate wall; use rounded/chamfered returns and source-inspired terrace outlines. These lateral proposed footprints must not move the gate datum. The middle-to-top band Y=-75 to Y=0 is a large open L1 ARRIVAL TERRACE, labelled 75 GRID m DEEP; keep a broad central dry path to G3, gardens and small round fountain footprints only at SIDE edges. Draw the FRONT retaining wall footprint along bottom Y=-150, continuing on either side of a wide central U-SHAPED NOTCH. Within that notch, draw TWO clearly hatched dry stair strips flanking a CENTRAL blue stepped water cascade, extending from BOTTOM Y=-150 to MIDDLE Y=-75. Small arrows on stair strips point north/up. Stair strips and cascade STOP at the middle datum, not at the gate wall. A narrow blue channel on the terrace is optional but must not block dry access or G3. Draw all small plants/benches/lamps as TRUE plan marks, not upright objects. NO domed tower elevations in plan. Important dimensions placed at the RIGHT side of plan, with VERTICAL arrows aligned to north-south depth: ONE overall 150 GRID m arrow from bottom Y=-150 to top Y=0; alongside it TWO consecutive 75 GRID m arrows, bottom-to-middle and middle-to-top. Dimension arrows must be VERTICAL on this panel, never across the wall's width. Label terrace height Z=60; ground at stair foot Z=0. Leave width undimensioned, since exact widths and hidden wing footprints are proposals.\nLOWER PANEL \u2014 TRUE LONGITUDINAL SIDE SECTION through a dry stair route to the central gate, SOUTH/FRONT on LEFT, NORTH/REAR on RIGHT. Show ONLY the side-cut shell and stair, not five frontal arches. Three Y stations LEFT-TO-RIGHT equally spaced: Y=-150 at LEFT (stair foot Z=0), Y=-75 at CENTRE (stair top Z=60), Y=0 at RIGHT (gate wall base Z=60). Draw an ascending stepped stair line from the LEFT ground point to the CENTRE terrace point. Then a FLAT HORIZONTAL terrace line from CENTRE to RIGHT at Z=60: this is the clear 75 GRID m terrace between the stair top and the gate. Put the SINGLE thin vertical gate-wall side-cut at the RIGHT station Y=0, rising from Z=60 to Z=160. Do not put the gate at CENTRE or at the stair top. Below the whole stair and terrace span, draw ONE 150 GRID m HORIZONTAL dimension arrow LEFT-to-RIGHT, and TWO consecutive 75 GRID m arrows LEFT-to-CENTRE and CENTRE-to-RIGHT. Draw separate vertical height arrows: 60 GRID m ground-to-terrace, 100 GRID m gate-wall rise above the terrace. Label ground Z=0, terrace Z=60, gate wall top Z=160. Masonry below terrace is continuous retaining base except the stair arrival notch. Show actual cut hatching, a side-view threshold at the gate and a short roof/interior line beyond Y=0. Do NOT draw stained-glass front elevations in this side section.\nSmall footer: Design grid m; world scale \u00d72.75. Front wall to gate 150 m; stair top to gate 75 m. Wing depth/width proposed. GEN-37 controls front appearance. Crisp clear geometric drawing, ample white space, legible datum labels and exactly aligned plan/section distances. This is a dimensioned proposed layout, not a measured model. Avoid ornamental complexity that compromises the parallel datums and two equal consecutive depth bands.",
+      "reference": "/workspace/shared/birthday-castle-layer-sheets/GEN-37-reference.jpg",
+      "scope": "One complete entrance layout in true overhead plan and side section; decoration/hidden footprints proposed",
+      "asset_id": "PAL-ENTRY-001-S01",
+      "previous_drafts": [
+        {
+          "file": "palace-front-correction/rejected-drafts/PAL-ENTRY-001-R01.png",
+          "sha256": "85ae18babc25608606845d42893b831a44cb5b698949d7e192187fbe09df0fa6",
+          "prompt": "Generate a very detailed architectural SKETCH SHEET titled PAL-ENTRY-001 \u2014 Ground wall, Level 1 arrival terrace and gate-wall setback. One coherent entrance assembly shown in THREE views on the same sheet: large clean TRUE OVERHEAD PLAN on left, LONGITUDINAL CENTRE SECTION at bottom, and a smaller overhead THREE-QUARTER ENTRANCE STUDY on right. Follow the attached ORIGINAL palace for the five-arch gate frontage, curved/asymmetric wing ends, lotus piers, rose/ivory marble, gold rails and carving, blue-lilac glass, blue central water cascade and the two dry flanking stairs. This is NOT a different castle or another set of isolated stair assets. The confirmed numeric arrangement MUST be the SAME in ALL views. Front/south at bottom of plan, rear/north at top. Define gate wall datum Y=0. Ground-facing outer/retaining front wall at Y=-150 grid m. The L1 retaining base rises from ground Z=0 to L1 terrace Z=60 grid m. Cut a generous central U-shaped arrival notch into the front base wall, so the two dry stairs and central wet cascade run through the notch rather than being pasted onto an unbroken wall. Stair foot Y=-150 Z=0; stair top Y=-75 Z=60. Behind the stair top, show a CLEAR 75 grid m DEEP WALKABLE L1 ARRIVAL TERRACE from Y=-75 to the gate wall Y=0. Keep this generous visible gap, not a landing pressed against the gate. Gate-wall base Z=60, its top Z=160 grid m. Total front-wall-to-gate-wall horizontal distance 150 grid m. Draw exactly one overall dimension arrow 150 GRID m between front wall and gate wall and two consecutive 75 GRID m arrows: front wall to stair top, stair top to gate wall. Section repeats precisely those distances and shows 60 GRID m terrace rise, plus 100 GRID m gate-wall rise. Do NOT label 150 as the distance after stair top. The plan must show five dominant arches G1 G2 G3 G4 G5 continuously along ONE connected gate wall at Y=0, centre entrance G3, two glazed great bays on either side. Upper L2 front is this same gate wall datum, not a sixth row of detached gates. Show W and E wings physically joining the gate wall with original unequal curved/chamfered returns and recessed garden terraces. Towers drawn only as pale existing source-context outlines at their actual lateral anchors; do not add symmetric dome towers to each bay. Dry stairs flank a separate CENTRAL WET CASCADE. On the 75 m deep arrival terrace add human-scale benches, lamps, flower parterres and SMALL lotus fountains at its SIDE EDGES, with clear central movement to G3. The watercourse may cross the central forecourt toward the source cascade, with dry access on BOTH sides and an unobstructed gate landing; not a wall of water blocking the door. No new enormous monumental fountain replacing the source cascade. The retaining wall outside the central notch continues on left and right with the original decorated glazed lower arcades and round/chamfered projections. Actual glazing is CLOSED glass, not an open empty colonnade. Garden roofs contain small ornament and paths, not gigantic unused squares. Use mostly fine black ink for plan and section, selective blush/ivory stone and pale blue water in the study, restrained gold details, plain ivory page, crisp legible names. Print small note: GRID m; WORLD SCALE \u00d72.75 / HIDDEN WING DEPTH PROPOSED / SOURCE GEN-37. Print y=0, y=-75, y=-150 only at their correct datum lines. No reversed FRONT/REAR labels. Do not compress or remove the 75 m arrival terrace in the 3D study. Do not put freestanding tower or gate blocks into the wall-to-wall gap. No bridges in this correction. This entrance plan is proposed hidden geometry constrained by confirmed front distances, not geometry measured from painted source pixels.",
+          "reference_image_id": "SRC-LAYER-FULL",
+          "status": "rejected-on-layout-comparison",
+          "reason": "Overhead panel is perspective; depth dimensions are drawn across width; section shows a front-facing five-bay wall and leaves the gate at the stair top instead of after the 75 m terrace."
+        }
+      ],
+      "output_file": "palace-front-correction/PAL-ENTRY-001.png",
+      "sha256": "9961f1dd4b3767def2d57e703876984d29fa2c512fa55cea49122ad79c9913c9",
+      "generator": "image_gen.imagegen",
+      "generated_source_file": "/workspace/generated_images/exec-4c11d726-9580-41f8-af3a-d1a39c52abfd.png",
+      "review_status": "pending-user-review; source parity unverified",
+      "review_notes": "True overhead layout and side section show consecutive 75 grid m bands, total 150 grid m wall-to-wall gap, stair top Z=60 and gate base after the terrace at Y=0. Wing and tower footprints are proposed and simplified; section height graphics are schematic, so numeric constraints and GEN-37 source control rather than pixel measurements.",
+      "reference_image_id": "SRC-LAYER-FULL",
+      "reference_sha256": "4a004b944211b264c7499e6906460341037b631c34c2a9120923a71246318e30"
+    }
+  ],
+  "status": "two corrected reference sheets saved; source comparison pending",
+  "previous_layer_sheets": "User reported inconsistent tower locations, wing anatomy and disjoint five-bay wall. Do not use previous layer sheets as placement masters."
+}

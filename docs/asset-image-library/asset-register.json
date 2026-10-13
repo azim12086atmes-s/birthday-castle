@@ -3105,7 +3105,7 @@
       "source_alias_ids": [
         "GEN-37"
       ],
-      "notes": "Proposed rear extension 30 grid m / 82.5 world m. Paired dry stairs and central wet cascade present. Views labelled front retain perspective; inferred overhead boundaries and tower attachments require comparison. Context towers may overlap source layer assignments.",
+      "notes": "Proposed rear extension 30 grid m / 82.5 world m. Paired dry stairs and central wet cascade present. Views labelled front retain perspective; inferred overhead boundaries and tower attachments require comparison. Context towers may overlap source layer assignments. Owner identified drifting tower locations, disconnected five-bay wall and inconsistent wings. Reference correction required before modelling.",
       "design_basis": "Original front region + explicitly proposed rear geometry; generated view registration not verified",
       "model_status": "unregistered",
       "model_file": "",
@@ -3115,7 +3115,7 @@
       "generator": "",
       "generator_job_id": "",
       "model_sha256": "",
-      "review_status": "pending",
+      "review_status": "user-reported-inconsistent; not-placement-master",
       "suggested_model_filename": "PAL-LAYER-01-W__layer-assembly__v001.glb"
     },
     {
@@ -3130,7 +3130,7 @@
       "source_alias_ids": [
         "GEN-37"
       ],
-      "notes": "Proposed rear extension 30 grid m / 82.5 world m. Paired dry stairs and central wet cascade present. Views labelled front retain perspective; inferred overhead boundaries and tower attachments require comparison. Context towers may overlap source layer assignments.",
+      "notes": "Proposed rear extension 30 grid m / 82.5 world m. Paired dry stairs and central wet cascade present. Views labelled front retain perspective; inferred overhead boundaries and tower attachments require comparison. Context towers may overlap source layer assignments. Owner identified drifting tower locations, disconnected five-bay wall and inconsistent wings. Reference correction required before modelling.",
       "design_basis": "Original front region + explicitly proposed rear geometry; generated view registration not verified",
       "model_status": "unregistered",
       "model_file": "",
@@ -3140,7 +3140,7 @@
       "generator": "",
       "generator_job_id": "",
       "model_sha256": "",
-      "review_status": "pending",
+      "review_status": "user-reported-inconsistent; not-placement-master",
       "suggested_model_filename": "PAL-LAYER-01-C__layer-assembly__v001.glb"
     },
     {
@@ -3155,7 +3155,7 @@
       "source_alias_ids": [
         "GEN-37"
       ],
-      "notes": "Proposed rear extension 30 grid m / 82.5 world m. Paired dry stairs and central wet cascade present. Views labelled front retain perspective; inferred overhead boundaries and tower attachments require comparison. Context towers may overlap source layer assignments.",
+      "notes": "Proposed rear extension 30 grid m / 82.5 world m. Paired dry stairs and central wet cascade present. Views labelled front retain perspective; inferred overhead boundaries and tower attachments require comparison. Context towers may overlap source layer assignments. Owner identified drifting tower locations, disconnected five-bay wall and inconsistent wings. Reference correction required before modelling.",
       "design_basis": "Original front region + explicitly proposed rear geometry; generated view registration not verified",
       "model_status": "unregistered",
       "model_file": "",
@@ -3165,7 +3165,7 @@
       "generator": "",
       "generator_job_id": "",
       "model_sha256": "",
-      "review_status": "pending",
+      "review_status": "user-reported-inconsistent; not-placement-master",
       "suggested_model_filename": "PAL-LAYER-01-E__layer-assembly__v001.glb"
     },
     {
@@ -3180,7 +3180,7 @@
       "source_alias_ids": [
         "GEN-37"
       ],
-      "notes": "Proposed rear extension 30 grid m / 82.5 world m. Corrected extra domed end towers; top view retains four great windows and one gate. Tracery, small piers, roof hall and side returns are reconstructed; dimensions and agreement between views remain unverified.",
+      "notes": "Proposed rear extension 30 grid m / 82.5 world m. Corrected extra domed end towers; top view retains four great windows and one gate. Tracery, small piers, roof hall and side returns are reconstructed; dimensions and agreement between views remain unverified. Owner identified drifting tower locations, disconnected five-bay wall and inconsistent wings. Reference correction required before modelling.",
       "design_basis": "Original front region + explicitly proposed rear geometry; generated view registration not verified",
       "model_status": "unregistered",
       "model_file": "",
@@ -3190,7 +3190,7 @@
       "generator": "",
       "generator_job_id": "",
       "model_sha256": "",
-      "review_status": "pending",
+      "review_status": "user-reported-inconsistent; not-placement-master",
       "suggested_model_filename": "PAL-LAYER-02-W__layer-assembly__v001.glb"
     },
     {
@@ -3205,7 +3205,7 @@
       "source_alias_ids": [
         "GEN-37"
       ],
-      "notes": "Proposed rear extension 30 grid m / 82.5 world m. Corrected extra domed end towers; top view retains four great windows and one gate. Tracery, small piers, roof hall and side returns are reconstructed; dimensions and agreement between views remain unverified.",
+      "notes": "Proposed rear extension 30 grid m / 82.5 world m. Corrected extra domed end towers; top view retains four great windows and one gate. Tracery, small piers, roof hall and side returns are reconstructed; dimensions and agreement between views remain unverified. Owner identified drifting tower locations, disconnected five-bay wall and inconsistent wings. Reference correction required before modelling.",
       "design_basis": "Original front region + explicitly proposed rear geometry; generated view registration not verified",
       "model_status": "unregistered",
       "model_file": "",
@@ -3215,7 +3215,7 @@
       "generator": "",
       "generator_job_id": "",
       "model_sha256": "",
-      "review_status": "pending",
+      "review_status": "user-reported-inconsistent; not-placement-master",
       "suggested_model_filename": "PAL-LAYER-02-C__layer-assembly__v001.glb"
     },
     {
@@ -3230,7 +3230,7 @@
       "source_alias_ids": [
         "GEN-37"
       ],
-      "notes": "Proposed rear extension 30 grid m / 82.5 world m. Corrected extra domed end towers; top view retains four great windows and one gate. Tracery, small piers, roof hall and side returns are reconstructed; dimensions and agreement between views remain unverified.",
+      "notes": "Proposed rear extension 30 grid m / 82.5 world m. Corrected extra domed end towers; top view retains four great windows and one gate. Tracery, small piers, roof hall and side returns are reconstructed; dimensions and agreement between views remain unverified. Owner identified drifting tower locations, disconnected five-bay wall and inconsistent wings. Reference correction required before modelling.",
       "design_basis": "Original front region + explicitly proposed rear geometry; generated view registration not verified",
       "model_status": "unregistered",
       "model_file": "",
@@ -3240,7 +3240,7 @@
       "generator": "",
       "generator_job_id": "",
       "model_sha256": "",
-      "review_status": "pending",
+      "review_status": "user-reported-inconsistent; not-placement-master",
       "suggested_model_filename": "PAL-LAYER-02-E__layer-assembly__v001.glb"
     },
     {
@@ -3255,7 +3255,7 @@
       "source_alias_ids": [
         "GEN-37"
       ],
-      "notes": "Proposed rear extension 30 grid m / 82.5 world m. Unequal stepped ranges, garden roofs and stair links shown. Additional courts and rear masses are inferred, tower context and bay counts require source comparison. Overhead FRONT orientation differs from earlier sheets; normalize axes during modelling.",
+      "notes": "Proposed rear extension 30 grid m / 82.5 world m. Unequal stepped ranges, garden roofs and stair links shown. Additional courts and rear masses are inferred, tower context and bay counts require source comparison. Overhead FRONT orientation differs from earlier sheets; normalize axes during modelling. Owner identified drifting tower locations, disconnected five-bay wall and inconsistent wings. Reference correction required before modelling.",
       "design_basis": "Original front region + explicitly proposed rear geometry; generated view registration not verified",
       "model_status": "unregistered",
       "model_file": "",
@@ -3265,7 +3265,7 @@
       "generator": "",
       "generator_job_id": "",
       "model_sha256": "",
-      "review_status": "pending",
+      "review_status": "user-reported-inconsistent; not-placement-master",
       "suggested_model_filename": "PAL-LAYER-03-W__layer-assembly__v001.glb"
     },
     {
@@ -3280,7 +3280,7 @@
       "source_alias_ids": [
         "GEN-37"
       ],
-      "notes": "Proposed rear extension 30 grid m / 82.5 world m. Unequal stepped ranges, garden roofs and stair links shown. Additional courts and rear masses are inferred, tower context and bay counts require source comparison. Overhead FRONT orientation differs from earlier sheets; normalize axes during modelling.",
+      "notes": "Proposed rear extension 30 grid m / 82.5 world m. Unequal stepped ranges, garden roofs and stair links shown. Additional courts and rear masses are inferred, tower context and bay counts require source comparison. Overhead FRONT orientation differs from earlier sheets; normalize axes during modelling. Owner identified drifting tower locations, disconnected five-bay wall and inconsistent wings. Reference correction required before modelling.",
       "design_basis": "Original front region + explicitly proposed rear geometry; generated view registration not verified",
       "model_status": "unregistered",
       "model_file": "",
@@ -3290,7 +3290,7 @@
       "generator": "",
       "generator_job_id": "",
       "model_sha256": "",
-      "review_status": "pending",
+      "review_status": "user-reported-inconsistent; not-placement-master",
       "suggested_model_filename": "PAL-LAYER-03-C__layer-assembly__v001.glb"
     },
     {
@@ -3305,7 +3305,7 @@
       "source_alias_ids": [
         "GEN-37"
       ],
-      "notes": "Proposed rear extension 30 grid m / 82.5 world m. Unequal stepped ranges, garden roofs and stair links shown. Additional courts and rear masses are inferred, tower context and bay counts require source comparison. Overhead FRONT orientation differs from earlier sheets; normalize axes during modelling.",
+      "notes": "Proposed rear extension 30 grid m / 82.5 world m. Unequal stepped ranges, garden roofs and stair links shown. Additional courts and rear masses are inferred, tower context and bay counts require source comparison. Overhead FRONT orientation differs from earlier sheets; normalize axes during modelling. Owner identified drifting tower locations, disconnected five-bay wall and inconsistent wings. Reference correction required before modelling.",
       "design_basis": "Original front region + explicitly proposed rear geometry; generated view registration not verified",
       "model_status": "unregistered",
       "model_file": "",
@@ -3315,7 +3315,7 @@
       "generator": "",
       "generator_job_id": "",
       "model_sha256": "",
-      "review_status": "pending",
+      "review_status": "user-reported-inconsistent; not-placement-master",
       "suggested_model_filename": "PAL-LAYER-03-E__layer-assembly__v001.glb"
     },
     {
@@ -3330,7 +3330,7 @@
       "source_alias_ids": [
         "GEN-37"
       ],
-      "notes": "Proposed rear extension 30 grid m / 82.5 world m. Western onion pavilion, central needle group and eastern chapel-spire group present. Exact shaft proportions, attached turret counts and positions differ between some views; rear courtyard arrangements and side ward depth are proposals, not source-traced geometry.",
+      "notes": "Proposed rear extension 30 grid m / 82.5 world m. Western onion pavilion, central needle group and eastern chapel-spire group present. Exact shaft proportions, attached turret counts and positions differ between some views; rear courtyard arrangements and side ward depth are proposals, not source-traced geometry. Owner identified drifting tower locations, disconnected five-bay wall and inconsistent wings. Reference correction required before modelling.",
       "design_basis": "Original front region + explicitly proposed rear geometry; generated view registration not verified",
       "model_status": "unregistered",
       "model_file": "",
@@ -3340,7 +3340,7 @@
       "generator": "",
       "generator_job_id": "",
       "model_sha256": "",
-      "review_status": "pending",
+      "review_status": "user-reported-inconsistent; not-placement-master",
       "suggested_model_filename": "PAL-LAYER-04-W__layer-assembly__v001.glb"
     },
     {
@@ -3355,7 +3355,7 @@
       "source_alias_ids": [
         "GEN-37"
       ],
-      "notes": "Proposed rear extension 30 grid m / 82.5 world m. Western onion pavilion, central needle group and eastern chapel-spire group present. Exact shaft proportions, attached turret counts and positions differ between some views; rear courtyard arrangements and side ward depth are proposals, not source-traced geometry.",
+      "notes": "Proposed rear extension 30 grid m / 82.5 world m. Western onion pavilion, central needle group and eastern chapel-spire group present. Exact shaft proportions, attached turret counts and positions differ between some views; rear courtyard arrangements and side ward depth are proposals, not source-traced geometry. Owner identified drifting tower locations, disconnected five-bay wall and inconsistent wings. Reference correction required before modelling.",
       "design_basis": "Original front region + explicitly proposed rear geometry; generated view registration not verified",
       "model_status": "unregistered",
       "model_file": "",
@@ -3365,7 +3365,7 @@
       "generator": "",
       "generator_job_id": "",
       "model_sha256": "",
-      "review_status": "pending",
+      "review_status": "user-reported-inconsistent; not-placement-master",
       "suggested_model_filename": "PAL-LAYER-04-C__layer-assembly__v001.glb"
     },
     {
@@ -3380,7 +3380,7 @@
       "source_alias_ids": [
         "GEN-37"
       ],
-      "notes": "Proposed rear extension 30 grid m / 82.5 world m. Western onion pavilion, central needle group and eastern chapel-spire group present. Exact shaft proportions, attached turret counts and positions differ between some views; rear courtyard arrangements and side ward depth are proposals, not source-traced geometry.",
+      "notes": "Proposed rear extension 30 grid m / 82.5 world m. Western onion pavilion, central needle group and eastern chapel-spire group present. Exact shaft proportions, attached turret counts and positions differ between some views; rear courtyard arrangements and side ward depth are proposals, not source-traced geometry. Owner identified drifting tower locations, disconnected five-bay wall and inconsistent wings. Reference correction required before modelling.",
       "design_basis": "Original front region + explicitly proposed rear geometry; generated view registration not verified",
       "model_status": "unregistered",
       "model_file": "",
@@ -3390,8 +3390,58 @@
       "generator": "",
       "generator_job_id": "",
       "model_sha256": "",
-      "review_status": "pending",
+      "review_status": "user-reported-inconsistent; not-placement-master",
       "suggested_model_filename": "PAL-LAYER-04-E__layer-assembly__v001.glb"
+    },
+    {
+      "asset_id": "PAL-FRONT-001-S01",
+      "name": "Continuous five-arch frontage and attached wings",
+      "kind": "connected-palace-layout-reference",
+      "component_family": "whole-front",
+      "parent_asset_family": "Original palace connected envelope",
+      "reference_image_id": "PAL-FRONT-001",
+      "reference_file": "palace-front-correction/PAL-FRONT-001.png",
+      "reference_sha256": "bb4073eafc36d143ef544fd6f9de811561fe112c9a133065cc7f660fc9082da0",
+      "source_alias_ids": [
+        "GEN-37"
+      ],
+      "notes": "Minimal source-based labeling edit retains the connected five-bay wall and major lateral tower groups; leaders now identify the large arches. Caption layout affects displayed vertical extent; GEN-37 remains the exact source and height/placement master, not this generated edit. Confirmed entrance coordinates are in palace-front-correction/schedule.json. Prior PAL-LAYER references are not placement masters.",
+      "design_basis": "Continuous frontage from GEN-37; entrance proposal constrained by owner-confirmed spacing",
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending",
+      "suggested_model_filename": "PAL-FRONT-001-S01__connected-assembly__v001.glb"
+    },
+    {
+      "asset_id": "PAL-ENTRY-001-S01",
+      "name": "Ground wall, L1 arrival terrace and gate-wall setback",
+      "kind": "connected-palace-layout-reference",
+      "component_family": "complete-entrance-base",
+      "parent_asset_family": "Original palace connected envelope",
+      "reference_image_id": "PAL-ENTRY-001",
+      "reference_file": "palace-front-correction/PAL-ENTRY-001.png",
+      "reference_sha256": "9961f1dd4b3767def2d57e703876984d29fa2c512fa55cea49122ad79c9913c9",
+      "source_alias_ids": [
+        "GEN-37"
+      ],
+      "notes": "True overhead layout and side section show consecutive 75 grid m bands, total 150 grid m wall-to-wall gap, stair top Z=60 and gate base after the terrace at Y=0. Wing and tower footprints are proposed and simplified; section height graphics are schematic, so numeric constraints and GEN-37 source control rather than pixel measurements. Confirmed entrance coordinates are in palace-front-correction/schedule.json. Prior PAL-LAYER references are not placement masters.",
+      "design_basis": "Continuous frontage from GEN-37; entrance proposal constrained by owner-confirmed spacing",
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending",
+      "suggested_model_filename": "PAL-ENTRY-001-S01__connected-assembly__v001.glb"
     }
   ],
   "reference_families": [
@@ -3769,7 +3819,7 @@
       "generator": "",
       "generator_job_id": "",
       "model_sha256": "",
-      "review_status": "pending",
+      "review_status": "user-reported-inconsistent; not-placement-master",
       "suggested_model_filename": "PAL-LAYER-01__layer-reference__v001.glb"
     },
     {
@@ -3788,7 +3838,7 @@
       "generator": "",
       "generator_job_id": "",
       "model_sha256": "",
-      "review_status": "pending",
+      "review_status": "user-reported-inconsistent; not-placement-master",
       "suggested_model_filename": "PAL-LAYER-02__layer-reference__v001.glb"
     },
     {
@@ -3807,7 +3857,7 @@
       "generator": "",
       "generator_job_id": "",
       "model_sha256": "",
-      "review_status": "pending",
+      "review_status": "user-reported-inconsistent; not-placement-master",
       "suggested_model_filename": "PAL-LAYER-03__layer-reference__v001.glb"
     },
     {
@@ -3826,7 +3876,7 @@
       "generator": "",
       "generator_job_id": "",
       "model_sha256": "",
-      "review_status": "pending",
+      "review_status": "user-reported-inconsistent; not-placement-master",
       "suggested_model_filename": "PAL-LAYER-04__layer-reference__v001.glb"
     }
   ]

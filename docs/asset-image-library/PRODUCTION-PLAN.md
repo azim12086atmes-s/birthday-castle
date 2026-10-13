@@ -12,7 +12,7 @@ The final library is capped at **230 selected sheets**, including the 45 origina
 | shared-outdoor-props-and-bridge | 25 | 3 | 22 |
 | maps-magic-travel-and-birthday | 20 | 4 | 16 |
 
-The 606-file archive contains crops, previews and historical experiments; it is not the final 230-sheet selection. Selected reference slots may still require visual review.
+The 610-file archive contains crops, previews and historical experiments; it is not the final 230-sheet selection. Selected reference slots may still require visual review.
 
 ## Palace caps
 
@@ -95,3 +95,9 @@ Current palace pass covers missing wing bodies, base/gate hosts, tower shafts, s
 The current requested pass is [four source-linked layer sheets](palace-layer-sheets/README.md), each with three assemblies and a proposed backward extension. The original front remains the authority; unseen rear depth is proposed. Generated sheets require visual review before modelling.
 
 Four layer sheets now occupy four additional palace slots. There are 64 selected/reserved slots globally, 47 within the palace cap. These counts include unproduced reservations; they do not imply accepted sheets. Twelve proposed assembly IDs are indexed. Rear length, hidden tower joins, tracery parity and projection agreement remain review tasks.
+
+## Continuous front and entrance correction
+
+The owner reported tower, wing and five-arch adjacency inconsistencies in the layer sheets. Use the [whole-front and entrance correction](palace-front-correction/README.md) to resolve layout before splitting modules. The entrance constraints keep 150 grid m between the ground-facing front wall and gate wall, including 75 grid m of terrace after the stair top. Generated sheet parity remains pending.
+
+The four inconsistent PAL-LAYER slots are now retired from final selection, with their files, IDs and attempt history retained. The two requested corrections replace them as layout studies. The ledger currently holds 62 selected/reserved slots globally and 45 for the palace; existing images and unproduced reservations remain distinct from approvals.
