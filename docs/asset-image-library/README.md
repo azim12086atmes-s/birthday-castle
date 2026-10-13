@@ -65,3 +65,7 @@ All image bytes are unchanged. Identical copies are stored once, with every orig
 - [GEN-43: Lower arcade, stairs and water ornament](images/illustrated-boards/GEN-43.png)
 - [GEN-44: Crowns, roofs and star finials](images/illustrated-boards/GEN-44.png)
 - [GEN-45: Lanterns and metalwork](images/illustrated-boards/GEN-45.png)
+
+## Labels and generated 3D models
+
+Every image now has a stable ID. Browse [all image labels](IMAGE-LABELS.md), [named model components](COMPONENTS.md) and the [3D tracking guide](3D-TRACKING.md). Record actual outputs in [model-tracker.csv](model-tracker.csv). For example, `GEN-29-C01__lotus-capital__v001.glb` identifies the lotus capital from GEN-29. The gallery shows labels beside clean, unchanged reference images.

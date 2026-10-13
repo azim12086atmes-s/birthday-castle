@@ -1,0 +1,2669 @@
+{
+  "schema_version": 1,
+  "status_definition": "unregistered means no model has been linked here; it does not assert that a model does not exist elsewhere",
+  "assets": [
+    {
+      "asset_id": "GEN-29-C01",
+      "name": "lotus capital",
+      "kind": "component",
+      "reference_image_id": "GEN-29",
+      "reference_file": "images/illustrated-boards/GEN-29.png",
+      "reference_sha256": "88a558a29cc52bd50459307297f946d88a274f090a1bf96c4da212383a2fd1ad",
+      "source_alias_ids": [
+        "DETAIL-D01-C01"
+      ],
+      "notes": "Layered upright pointed lotus petals; gold leaf outlines and collar; crystal pendants flank capital.",
+      "design_basis": "visible",
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending",
+      "suggested_model_filename": "GEN-29-C01__lotus-capital__v001.glb"
+    },
+    {
+      "asset_id": "GEN-29-C02",
+      "name": "column shaft",
+      "kind": "component",
+      "reference_image_id": "GEN-29",
+      "reference_file": "images/illustrated-boards/GEN-29.png",
+      "reference_sha256": "88a558a29cc52bd50459307297f946d88a274f090a1bf96c4da212383a2fd1ad",
+      "source_alias_ids": [
+        "DETAIL-D01-C02"
+      ],
+      "notes": "Ivory or blush shaft with narrow vertical gold ribs, moulded neck ring and broad stepped foot.",
+      "design_basis": "visible",
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending",
+      "suggested_model_filename": "GEN-29-C02__column-shaft__v001.glb"
+    },
+    {
+      "asset_id": "GEN-29-C03",
+      "name": "clustered portal pier",
+      "kind": "component",
+      "reference_image_id": "GEN-29",
+      "reference_file": "images/illustrated-boards/GEN-29.png",
+      "reference_sha256": "88a558a29cc52bd50459307297f946d88a274f090a1bf96c4da212383a2fd1ad",
+      "source_alias_ids": [
+        "DETAIL-D01-C03"
+      ],
+      "notes": "Slender engaged shafts group around the gate; separate necks and capitals meet nested arch ribs.",
+      "design_basis": "visible",
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending",
+      "suggested_model_filename": "GEN-29-C03__clustered-portal-pier__v001.glb"
+    },
+    {
+      "asset_id": "GEN-29-C04",
+      "name": "base and plinth",
+      "kind": "component",
+      "reference_image_id": "GEN-29",
+      "reference_file": "images/illustrated-boards/GEN-29.png",
+      "reference_sha256": "88a558a29cc52bd50459307297f946d88a274f090a1bf96c4da212383a2fd1ad",
+      "source_alias_ids": [
+        "DETAIL-D01-C04"
+      ],
+      "notes": "Square/octagonal stepped marble base with small gold bands and chamfered edges.",
+      "design_basis": "visible",
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending",
+      "suggested_model_filename": "GEN-29-C04__base-and-plinth__v001.glb"
+    },
+    {
+      "asset_id": "GEN-29-C05",
+      "name": "capital underside and shaft socket",
+      "kind": "component",
+      "reference_image_id": "GEN-29",
+      "reference_file": "images/illustrated-boards/GEN-29.png",
+      "reference_sha256": "88a558a29cc52bd50459307297f946d88a274f090a1bf96c4da212383a2fd1ad",
+      "source_alias_ids": [
+        "DETAIL-D01-C05"
+      ],
+      "notes": "Resolve attachment and underside petal carving using the observed lotus vocabulary.",
+      "design_basis": "developed",
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending",
+      "suggested_model_filename": "GEN-29-C05__capital-underside-and-shaft-socket__v001.glb"
+    },
+    {
+      "asset_id": "GEN-29-C06",
+      "name": "bracket and springing joint",
+      "kind": "component",
+      "reference_image_id": "GEN-29",
+      "reference_file": "images/illustrated-boards/GEN-29.png",
+      "reference_sha256": "88a558a29cc52bd50459307297f946d88a274f090a1bf96c4da212383a2fd1ad",
+      "source_alias_ids": [
+        "DETAIL-D01-C06"
+      ],
+      "notes": "Petal corbel connects gallery or arch to column; one articulated structural assembly.",
+      "design_basis": "developed",
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending",
+      "suggested_model_filename": "GEN-29-C06__bracket-and-springing-joint__v001.glb"
+    },
+    {
+      "asset_id": "GEN-31-G01",
+      "name": "grand pointed portal frame",
+      "kind": "component",
+      "reference_image_id": "GEN-31",
+      "reference_file": "images/illustrated-boards/GEN-31.png",
+      "reference_sha256": "678906d3d65e914c1ab7fa8623bc479d9d4ad41646c2d87e2906db03d84c7e2a",
+      "source_alias_ids": [
+        "DETAIL-D02-G01"
+      ],
+      "notes": "Several nested gold/ivory mouldings; deeply recessed arch; steep triangular gable.",
+      "design_basis": "visible",
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending",
+      "suggested_model_filename": "GEN-31-G01__grand-pointed-portal-frame__v001.glb"
+    },
+    {
+      "asset_id": "GEN-31-G02",
+      "name": "pediment spandrel carving",
+      "kind": "component",
+      "reference_image_id": "GEN-31",
+      "reference_file": "images/illustrated-boards/GEN-31.png",
+      "reference_sha256": "678906d3d65e914c1ab7fa8623bc479d9d4ad41646c2d87e2906db03d84c7e2a",
+      "source_alias_ids": [
+        "DETAIL-D02-G02"
+      ],
+      "notes": "Dense gold leaf/rosette filigree on blush panels, arranged around a central medallion.",
+      "design_basis": "visible",
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending",
+      "suggested_model_filename": "GEN-31-G02__pediment-spandrel-carving__v001.glb"
+    },
+    {
+      "asset_id": "GEN-31-G03",
+      "name": "indigo rose-and-star glass",
+      "kind": "component",
+      "reference_image_id": "GEN-31",
+      "reference_file": "images/illustrated-boards/GEN-31.png",
+      "reference_sha256": "678906d3d65e914c1ab7fa8623bc479d9d4ad41646c2d87e2906db03d84c7e2a",
+      "source_alias_ids": [
+        "DETAIL-D02-G03"
+      ],
+      "notes": "Blue field with pink/lilac facets and gold branching geometric tracery.",
+      "design_basis": "visible",
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending",
+      "suggested_model_filename": "GEN-31-G03__indigo-rose-and-star-glass__v001.glb"
+    },
+    {
+      "asset_id": "GEN-31-G04",
+      "name": "gate side pilasters",
+      "kind": "component",
+      "reference_image_id": "GEN-31",
+      "reference_file": "images/illustrated-boards/GEN-31.png",
+      "reference_sha256": "678906d3d65e914c1ab7fa8623bc479d9d4ad41646c2d87e2906db03d84c7e2a",
+      "source_alias_ids": [
+        "DETAIL-D02-G04"
+      ],
+      "notes": "Narrow blue recesses, gilded ribs and tiny crown tops flank the opening.",
+      "design_basis": "visible",
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending",
+      "suggested_model_filename": "GEN-31-G04__gate-side-pilasters__v001.glb"
+    },
+    {
+      "asset_id": "GEN-31-G05",
+      "name": "double door and postern",
+      "kind": "component",
+      "reference_image_id": "GEN-31",
+      "reference_file": "images/illustrated-boards/GEN-31.png",
+      "reference_sha256": "678906d3d65e914c1ab7fa8623bc479d9d4ad41646c2d87e2906db03d84c7e2a",
+      "source_alias_ids": [
+        "DETAIL-D02-G05"
+      ],
+      "notes": "Resolve the illustrated portal into practical ceremonial leaves with a smaller access door.",
+      "design_basis": "developed",
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending",
+      "suggested_model_filename": "GEN-31-G05__double-door-and-postern__v001.glb"
+    },
+    {
+      "asset_id": "GEN-31-G06",
+      "name": "hinges, latch, pull and threshold",
+      "kind": "component",
+      "reference_image_id": "GEN-31",
+      "reference_file": "images/illustrated-boards/GEN-31.png",
+      "reference_sha256": "678906d3d65e914c1ab7fa8623bc479d9d4ad41646c2d87e2906db03d84c7e2a",
+      "source_alias_ids": [
+        "DETAIL-D02-G06"
+      ],
+      "notes": "Lotus/rosette hardware with gold straps and geometric handles; recessed stone sill and joints.",
+      "design_basis": "developed",
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending",
+      "suggested_model_filename": "GEN-31-G06__hinges-latch-pull-and-threshold__v001.glb"
+    },
+    {
+      "asset_id": "GEN-30-W01",
+      "name": "pointed bay spandrel",
+      "kind": "component",
+      "reference_image_id": "GEN-30",
+      "reference_file": "images/illustrated-boards/GEN-30.png",
+      "reference_sha256": "5a2980b8df397de42ca55cd46deda1e7f40a669b88bd7d679e926a1568b0db35",
+      "source_alias_ids": [
+        "DETAIL-D03-W01"
+      ],
+      "notes": "Floral or interlaced pale relief fills triangular areas above pointed windows.",
+      "design_basis": "visible",
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending",
+      "suggested_model_filename": "GEN-30-W01__pointed-bay-spandrel__v001.glb"
+    },
+    {
+      "asset_id": "GEN-30-W02",
+      "name": "star and petal jali",
+      "kind": "component",
+      "reference_image_id": "GEN-30",
+      "reference_file": "images/illustrated-boards/GEN-30.png",
+      "reference_sha256": "5a2980b8df397de42ca55cd46deda1e7f40a669b88bd7d679e926a1568b0db35",
+      "source_alias_ids": [
+        "DETAIL-D03-W02"
+      ],
+      "notes": "Pierced flower wheel beside an eight-point blue star inset, edged with gold.",
+      "design_basis": "visible",
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending",
+      "suggested_model_filename": "GEN-30-W02__star-and-petal-jali__v001.glb"
+    },
+    {
+      "asset_id": "GEN-30-W03",
+      "name": "floral frieze",
+      "kind": "component",
+      "reference_image_id": "GEN-30",
+      "reference_file": "images/illustrated-boards/GEN-30.png",
+      "reference_sha256": "5a2980b8df397de42ca55cd46deda1e7f40a669b88bd7d679e926a1568b0db35",
+      "source_alias_ids": [
+        "DETAIL-D03-W03"
+      ],
+      "notes": "Narrow ornament bands separate shaft, arch gallery and roof edge.",
+      "design_basis": "visible",
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending",
+      "suggested_model_filename": "GEN-30-W03__floral-frieze__v001.glb"
+    },
+    {
+      "asset_id": "GEN-30-W04",
+      "name": "string courses",
+      "kind": "component",
+      "reference_image_id": "GEN-30",
+      "reference_file": "images/illustrated-boards/GEN-30.png",
+      "reference_sha256": "5a2980b8df397de42ca55cd46deda1e7f40a669b88bd7d679e926a1568b0db35",
+      "source_alias_ids": [
+        "DETAIL-D03-W04"
+      ],
+      "notes": "Layered horizontal moulded ledges with very thin gold bead lines.",
+      "design_basis": "visible",
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending",
+      "suggested_model_filename": "GEN-30-W04__string-courses__v001.glb"
+    },
+    {
+      "asset_id": "GEN-30-W05",
+      "name": "repeat tile grammar",
+      "kind": "component",
+      "reference_image_id": "GEN-30",
+      "reference_file": "images/illustrated-boards/GEN-30.png",
+      "reference_sha256": "5a2980b8df397de42ca55cd46deda1e7f40a669b88bd7d679e926a1568b0db35",
+      "source_alias_ids": [
+        "DETAIL-D03-W05"
+      ],
+      "notes": "Connect lotus, rose, star and vine into seamless relief panels with coherent borders.",
+      "design_basis": "developed",
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending",
+      "suggested_model_filename": "GEN-30-W05__repeat-tile-grammar__v001.glb"
+    },
+    {
+      "asset_id": "GEN-30-W06",
+      "name": "relief sections and corner transition",
+      "kind": "component",
+      "reference_image_id": "GEN-30",
+      "reference_file": "images/illustrated-boards/GEN-30.png",
+      "reference_sha256": "5a2980b8df397de42ca55cd46deda1e7f40a669b88bd7d679e926a1568b0db35",
+      "source_alias_ids": [
+        "DETAIL-D03-W06"
+      ],
+      "notes": "Show recessed field, shallow relief, projecting silhouette and convex/re-entrant joins separately.",
+      "design_basis": "developed",
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending",
+      "suggested_model_filename": "GEN-30-W06__relief-sections-and-corner-transition__v001.glb"
+    },
+    {
+      "asset_id": "GEN-33-R01",
+      "name": "pierced star railing",
+      "kind": "component",
+      "reference_image_id": "GEN-33",
+      "reference_file": "images/illustrated-boards/GEN-33.png",
+      "reference_sha256": "e5c722a0fb3755b82d67656c5921d9c77fb0211107d7955b73c509feba6fa6f7",
+      "source_alias_ids": [
+        "DETAIL-D04-R01"
+      ],
+      "notes": "Ivory openwork panel with flower wheel and gold-edged indigo star.",
+      "design_basis": "visible",
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending",
+      "suggested_model_filename": "GEN-33-R01__pierced-star-railing__v001.glb"
+    },
+    {
+      "asset_id": "GEN-33-R02",
+      "name": "rose baluster rail",
+      "kind": "component",
+      "reference_image_id": "GEN-33",
+      "reference_file": "images/illustrated-boards/GEN-33.png",
+      "reference_sha256": "e5c722a0fb3755b82d67656c5921d9c77fb0211107d7955b73c509feba6fa6f7",
+      "source_alias_ids": [
+        "DETAIL-D04-R02"
+      ],
+      "notes": "Turned vase balusters, moulded handrail and flower-covered planters.",
+      "design_basis": "visible",
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending",
+      "suggested_model_filename": "GEN-33-R02__rose-baluster-rail__v001.glb"
+    },
+    {
+      "asset_id": "GEN-33-R03",
+      "name": "gallery corbel",
+      "kind": "component",
+      "reference_image_id": "GEN-33",
+      "reference_file": "images/illustrated-boards/GEN-33.png",
+      "reference_sha256": "e5c722a0fb3755b82d67656c5921d9c77fb0211107d7955b73c509feba6fa6f7",
+      "source_alias_ids": [
+        "DETAIL-D04-R03"
+      ],
+      "notes": "Small projecting tower/gallery bases have stepped gilded underside brackets.",
+      "design_basis": "visible",
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending",
+      "suggested_model_filename": "GEN-33-R03__gallery-corbel__v001.glb"
+    },
+    {
+      "asset_id": "GEN-33-R04",
+      "name": "stair-edge coping",
+      "kind": "component",
+      "reference_image_id": "GEN-33",
+      "reference_file": "images/illustrated-boards/GEN-33.png",
+      "reference_sha256": "e5c722a0fb3755b82d67656c5921d9c77fb0211107d7955b73c509feba6fa6f7",
+      "source_alias_ids": [
+        "DETAIL-D04-R04"
+      ],
+      "notes": "Smooth swept stair edges and gold-capped posts connect terrace landings.",
+      "design_basis": "visible",
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending",
+      "suggested_model_filename": "GEN-33-R04__stair-edge-coping__v001.glb"
+    },
+    {
+      "asset_id": "GEN-33-R05",
+      "name": "cornice and drip profile",
+      "kind": "component",
+      "reference_image_id": "GEN-33",
+      "reference_file": "images/illustrated-boards/GEN-33.png",
+      "reference_sha256": "e5c722a0fb3755b82d67656c5921d9c77fb0211107d7955b73c509feba6fa6f7",
+      "source_alias_ids": [
+        "DETAIL-D04-R05"
+      ],
+      "notes": "Coordinate scalloped eave, bevelled coping, dentil/bead strip and underside groove.",
+      "design_basis": "developed",
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending",
+      "suggested_model_filename": "GEN-33-R05__cornice-and-drip-profile__v001.glb"
+    },
+    {
+      "asset_id": "GEN-33-R06",
+      "name": "corner, curved and returning modules",
+      "kind": "component",
+      "reference_image_id": "GEN-33",
+      "reference_file": "images/illustrated-boards/GEN-33.png",
+      "reference_sha256": "e5c722a0fb3755b82d67656c5921d9c77fb0211107d7955b73c509feba6fa6f7",
+      "source_alias_ids": [
+        "DETAIL-D04-R06"
+      ],
+      "notes": "Resolve the same railing grammar around angled and rounded palace projections.",
+      "design_basis": "developed",
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending",
+      "suggested_model_filename": "GEN-33-R06__corner-curved-and-returning-modules__v001.glb"
+    },
+    {
+      "asset_id": "GEN-32-T01",
+      "name": "purple crown ribs",
+      "kind": "component",
+      "reference_image_id": "GEN-32",
+      "reference_file": "images/illustrated-boards/GEN-32.png",
+      "reference_sha256": "24f902148b67e7834e2f8bd03f5a50c3247e638e345cd22dfe7a4f84343e78a8",
+      "source_alias_ids": [
+        "DETAIL-D05-T01"
+      ],
+      "notes": "Narrow gold ribs follow onion and needle roofs; beads/crest pieces sit at the eave.",
+      "design_basis": "visible",
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending",
+      "suggested_model_filename": "GEN-32-T01__purple-crown-ribs__v001.glb"
+    },
+    {
+      "asset_id": "GEN-32-T02",
+      "name": "star finial",
+      "kind": "component",
+      "reference_image_id": "GEN-32",
+      "reference_file": "images/illustrated-boards/GEN-32.png",
+      "reference_sha256": "24f902148b67e7834e2f8bd03f5a50c3247e638e345cd22dfe7a4f84343e78a8",
+      "source_alias_ids": [
+        "DETAIL-D05-T02"
+      ],
+      "notes": "Tall thin gold spindle with stacked ornaments and star crown.",
+      "design_basis": "visible",
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending",
+      "suggested_model_filename": "GEN-32-T02__star-finial__v001.glb"
+    },
+    {
+      "asset_id": "GEN-32-T03",
+      "name": "attached belvedere turret",
+      "kind": "component",
+      "reference_image_id": "GEN-32",
+      "reference_file": "images/illustrated-boards/GEN-32.png",
+      "reference_sha256": "24f902148b67e7834e2f8bd03f5a50c3247e638e345cd22dfe7a4f84343e78a8",
+      "source_alias_ids": [
+        "DETAIL-D05-T03"
+      ],
+      "notes": "Tiny shaft with blue openings and projecting ring galleries attaches to the royal needle.",
+      "design_basis": "visible",
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending",
+      "suggested_model_filename": "GEN-32-T03__attached-belvedere-turret__v001.glb"
+    },
+    {
+      "asset_id": "GEN-32-T04",
+      "name": "faceted crystal lantern",
+      "kind": "component",
+      "reference_image_id": "GEN-32",
+      "reference_file": "images/illustrated-boards/GEN-32.png",
+      "reference_sha256": "24f902148b67e7834e2f8bd03f5a50c3247e638e345cd22dfe7a4f84343e78a8",
+      "source_alias_ids": [
+        "DETAIL-D05-T04"
+      ],
+      "notes": "Gold cage, blue crystal/glass, pointed crown and hanging drop.",
+      "design_basis": "visible",
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending",
+      "suggested_model_filename": "GEN-32-T04__faceted-crystal-lantern__v001.glb"
+    },
+    {
+      "asset_id": "GEN-32-T05",
+      "name": "curved hanging arm",
+      "kind": "component",
+      "reference_image_id": "GEN-32",
+      "reference_file": "images/illustrated-boards/GEN-32.png",
+      "reference_sha256": "24f902148b67e7834e2f8bd03f5a50c3247e638e345cd22dfe7a4f84343e78a8",
+      "source_alias_ids": [
+        "DETAIL-D05-T05"
+      ],
+      "notes": "Small lanterns project from shafts and gallery edges on slender gilded arms.",
+      "design_basis": "visible",
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending",
+      "suggested_model_filename": "GEN-32-T05__curved-hanging-arm__v001.glb"
+    },
+    {
+      "asset_id": "GEN-32-T06",
+      "name": "turret seat and corbel assembly",
+      "kind": "component",
+      "reference_image_id": "GEN-32",
+      "reference_file": "images/illustrated-boards/GEN-32.png",
+      "reference_sha256": "24f902148b67e7834e2f8bd03f5a50c3247e638e345cd22dfe7a4f84343e78a8",
+      "source_alias_ids": [
+        "DETAIL-D05-T06"
+      ],
+      "notes": "Show bracket and collar connections without floating or detached components.",
+      "design_basis": "developed",
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending",
+      "suggested_model_filename": "GEN-32-T06__turret-seat-and-corbel-assembly__v001.glb"
+    },
+    {
+      "asset_id": "GEN-34-M01",
+      "name": "tiered fountain bowls",
+      "kind": "component",
+      "reference_image_id": "GEN-34",
+      "reference_file": "images/illustrated-boards/GEN-34.png",
+      "reference_sha256": "8564bfb59c77dcddda9355c00d483f99004a8bf90485760268499820167b32b4",
+      "source_alias_ids": [
+        "DETAIL-D06-M01"
+      ],
+      "notes": "Nested small blue basins and ornamental central uprights occur along the water axis.",
+      "design_basis": "visible",
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending",
+      "suggested_model_filename": "GEN-34-M01__tiered-fountain-bowls__v001.glb"
+    },
+    {
+      "asset_id": "GEN-34-M02",
+      "name": "cascade crest and outlet",
+      "kind": "component",
+      "reference_image_id": "GEN-34",
+      "reference_file": "images/illustrated-boards/GEN-34.png",
+      "reference_sha256": "8564bfb59c77dcddda9355c00d483f99004a8bf90485760268499820167b32b4",
+      "source_alias_ids": [
+        "DETAIL-D06-M02"
+      ],
+      "notes": "Water steps between large terrace pools and spills over carved coping.",
+      "design_basis": "visible",
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending",
+      "suggested_model_filename": "GEN-34-M02__cascade-crest-and-outlet__v001.glb"
+    },
+    {
+      "asset_id": "GEN-34-M03",
+      "name": "rosette pedestal",
+      "kind": "component",
+      "reference_image_id": "GEN-34",
+      "reference_file": "images/illustrated-boards/GEN-34.png",
+      "reference_sha256": "8564bfb59c77dcddda9355c00d483f99004a8bf90485760268499820167b32b4",
+      "source_alias_ids": [
+        "DETAIL-D06-M03"
+      ],
+      "notes": "Faceted blush-marble plinth with lotus/rose relief supports royal artefacts.",
+      "design_basis": "developed",
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending",
+      "suggested_model_filename": "GEN-34-M03__rosette-pedestal__v001.glb"
+    },
+    {
+      "asset_id": "GEN-34-M04",
+      "name": "lotus-and-star royal monument",
+      "kind": "component",
+      "reference_image_id": "GEN-34",
+      "reference_file": "images/illustrated-boards/GEN-34.png",
+      "reference_sha256": "8564bfb59c77dcddda9355c00d483f99004a8bf90485760268499820167b32b4",
+      "source_alias_ids": [
+        "DETAIL-D06-M04"
+      ],
+      "notes": "Abstract crown/star held by layered lotus sculpture; use the source motif grammar.",
+      "design_basis": "developed",
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending",
+      "suggested_model_filename": "GEN-34-M04__lotus-and-star-royal-monument__v001.glb"
+    },
+    {
+      "asset_id": "GEN-34-M05",
+      "name": "veiled faceless guardian",
+      "kind": "component",
+      "reference_image_id": "GEN-34",
+      "reference_file": "images/illustrated-boards/GEN-34.png",
+      "reference_sha256": "8564bfb59c77dcddda9355c00d483f99004a8bf90485760268499820167b32b4",
+      "source_alias_ids": [
+        "DETAIL-D06-M05"
+      ],
+      "notes": "A restrained optional garden statue developed from the supplied catalogue, not asserted as visible in this raster.",
+      "design_basis": "document-inspired",
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending",
+      "suggested_model_filename": "GEN-34-M05__veiled-faceless-guardian__v001.glb"
+    },
+    {
+      "asset_id": "GEN-34-M06",
+      "name": "scroll water spout and wish vessel",
+      "kind": "component",
+      "reference_image_id": "GEN-34",
+      "reference_file": "images/illustrated-boards/GEN-34.png",
+      "reference_sha256": "8564bfb59c77dcddda9355c00d483f99004a8bf90485760268499820167b32b4",
+      "source_alias_ids": [
+        "DETAIL-D06-M06"
+      ],
+      "notes": "Use lotus/scroll substitutions for creature heads; crown-shaped ceremonial vessel beside fountain.",
+      "design_basis": "document-inspired",
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending",
+      "suggested_model_filename": "GEN-34-M06__scroll-water-spout-and-wish-vessel__v001.glb"
+    },
+    {
+      "asset_id": "GEN-35-A01",
+      "name": "gold-rimmed urn and planter",
+      "kind": "component",
+      "reference_image_id": "GEN-35",
+      "reference_file": "images/illustrated-boards/GEN-35.png",
+      "reference_sha256": "6dcccdc9b9519a96d1f387dbf0d90cf4fcb8af6d382f61005e9b62c1511cc9dc",
+      "source_alias_ids": [
+        "DETAIL-D07-A01"
+      ],
+      "notes": "Decorative bowls and urn-like pots punctuate terrace flower beds and posts.",
+      "design_basis": "visible",
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending",
+      "suggested_model_filename": "GEN-35-A01__gold-rimmed-urn-and-planter__v001.glb"
+    },
+    {
+      "asset_id": "GEN-35-A02",
+      "name": "niche surround",
+      "kind": "component",
+      "reference_image_id": "GEN-35",
+      "reference_file": "images/illustrated-boards/GEN-35.png",
+      "reference_sha256": "6dcccdc9b9519a96d1f387dbf0d90cf4fcb8af6d382f61005e9b62c1511cc9dc",
+      "source_alias_ids": [
+        "DETAIL-D07-A02"
+      ],
+      "notes": "Small pointed recesses and star accents repeat in lower garden arcades.",
+      "design_basis": "visible",
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending",
+      "suggested_model_filename": "GEN-35-A02__niche-surround__v001.glb"
+    },
+    {
+      "asset_id": "GEN-35-A03",
+      "name": "garden gate",
+      "kind": "component",
+      "reference_image_id": "GEN-35",
+      "reference_file": "images/illustrated-boards/GEN-35.png",
+      "reference_sha256": "6dcccdc9b9519a96d1f387dbf0d90cf4fcb8af6d382f61005e9b62c1511cc9dc",
+      "source_alias_ids": [
+        "DETAIL-D07-A03"
+      ],
+      "notes": "Smaller pierced rose/star gate reuses the ceremonial gate motifs.",
+      "design_basis": "developed",
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending",
+      "suggested_model_filename": "GEN-35-A03__garden-gate__v001.glb"
+    },
+    {
+      "asset_id": "GEN-35-A04",
+      "name": "scroll bench",
+      "kind": "component",
+      "reference_image_id": "GEN-35",
+      "reference_file": "images/illustrated-boards/GEN-35.png",
+      "reference_sha256": "6dcccdc9b9519a96d1f387dbf0d90cf4fcb8af6d382f61005e9b62c1511cc9dc",
+      "source_alias_ids": [
+        "DETAIL-D07-A04"
+      ],
+      "notes": "Ivory bench with lotus-petal supports and restrained gold inlay.",
+      "design_basis": "document-inspired",
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending",
+      "suggested_model_filename": "GEN-35-A04__scroll-bench__v001.glb"
+    },
+    {
+      "asset_id": "GEN-35-A05",
+      "name": "hanging wish charm",
+      "kind": "component",
+      "reference_image_id": "GEN-35",
+      "reference_file": "images/illustrated-boards/GEN-35.png",
+      "reference_sha256": "6dcccdc9b9519a96d1f387dbf0d90cf4fcb8af6d382f61005e9b62c1511cc9dc",
+      "source_alias_ids": [
+        "DETAIL-D07-A05"
+      ],
+      "notes": "Faceted star pendants and crystal ornaments match the observed lantern vocabulary.",
+      "design_basis": "document-inspired",
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending",
+      "suggested_model_filename": "GEN-35-A05__hanging-wish-charm__v001.glb"
+    },
+    {
+      "asset_id": "GEN-35-A06",
+      "name": "royal crest and banner mount",
+      "kind": "component",
+      "reference_image_id": "GEN-35",
+      "reference_file": "images/illustrated-boards/GEN-35.png",
+      "reference_sha256": "6dcccdc9b9519a96d1f387dbf0d90cf4fcb8af6d382f61005e9b62c1511cc9dc",
+      "source_alias_ids": [
+        "DETAIL-D07-A06"
+      ],
+      "notes": "Abstract rose/crown/star heraldry with a carved mounting bracket; no arbitrary inscription.",
+      "design_basis": "developed",
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending",
+      "suggested_model_filename": "GEN-35-A06__royal-crest-and-banner-mount__v001.glb"
+    },
+    {
+      "asset_id": "GEN-36-S01",
+      "name": "arched conservatory ribs",
+      "kind": "component",
+      "reference_image_id": "GEN-36",
+      "reference_file": "images/illustrated-boards/GEN-36.png",
+      "reference_sha256": "7fb524bc99c2cf1cba0b509241f7776492f70d0a22fb06278ec119d889262dbb",
+      "source_alias_ids": [
+        "DETAIL-D08-S01"
+      ],
+      "notes": "Gold structural ribs span curved pale-blue glass roof; gable end carries decorative branching members.",
+      "design_basis": "visible",
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending",
+      "suggested_model_filename": "GEN-36-S01__arched-conservatory-ribs__v001.glb"
+    },
+    {
+      "asset_id": "GEN-36-S02",
+      "name": "glass roof ridge and end arch",
+      "kind": "component",
+      "reference_image_id": "GEN-36",
+      "reference_file": "images/illustrated-boards/GEN-36.png",
+      "reference_sha256": "7fb524bc99c2cf1cba0b509241f7776492f70d0a22fb06278ec119d889262dbb",
+      "source_alias_ids": [
+        "DETAIL-D08-S02"
+      ],
+      "notes": "Thin gold grids follow the glazed barrel roof with ornamental end panels.",
+      "design_basis": "visible",
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending",
+      "suggested_model_filename": "GEN-36-S02__glass-roof-ridge-and-end-arch__v001.glb"
+    },
+    {
+      "asset_id": "GEN-36-S03",
+      "name": "pool rim and island coping",
+      "kind": "component",
+      "reference_image_id": "GEN-36",
+      "reference_file": "images/illustrated-boards/GEN-36.png",
+      "reference_sha256": "7fb524bc99c2cf1cba0b509241f7776492f70d0a22fb06278ec119d889262dbb",
+      "source_alias_ids": [
+        "DETAIL-D08-S03"
+      ],
+      "notes": "Blush/ivory shaped pool edges carry thin gold lines; curved island and narrow bridges interrupt the axis.",
+      "design_basis": "visible",
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending",
+      "suggested_model_filename": "GEN-36-S03__pool-rim-and-island-coping__v001.glb"
+    },
+    {
+      "asset_id": "GEN-36-S04",
+      "name": "paving and stair inlay",
+      "kind": "component",
+      "reference_image_id": "GEN-36",
+      "reference_file": "images/illustrated-boards/GEN-36.png",
+      "reference_sha256": "7fb524bc99c2cf1cba0b509241f7776492f70d0a22fb06278ec119d889262dbb",
+      "source_alias_ids": [
+        "DETAIL-D08-S04"
+      ],
+      "notes": "Warm pale paving bands and inset borders are visible; fine tile pattern is not reliably resolvable.",
+      "design_basis": "partially-resolved",
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending",
+      "suggested_model_filename": "GEN-36-S04__paving-and-stair-inlay__v001.glb"
+    },
+    {
+      "asset_id": "GEN-36-S05",
+      "name": "rose-star mosaic module",
+      "kind": "component",
+      "reference_image_id": "GEN-36",
+      "reference_file": "images/illustrated-boards/GEN-36.png",
+      "reference_sha256": "7fb524bc99c2cf1cba0b509241f7776492f70d0a22fb06278ec119d889262dbb",
+      "source_alias_ids": [
+        "DETAIL-D08-S05"
+      ],
+      "notes": "Develop a coherent paving medallion and border from observed stars, petals and glass colours.",
+      "design_basis": "developed",
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending",
+      "suggested_model_filename": "GEN-36-S05__rose-star-mosaic-module__v001.glb"
+    },
+    {
+      "asset_id": "GEN-36-S06",
+      "name": "joint/corner/edge detail",
+      "kind": "component",
+      "reference_image_id": "GEN-36",
+      "reference_file": "images/illustrated-boards/GEN-36.png",
+      "reference_sha256": "7fb524bc99c2cf1cba0b509241f7776492f70d0a22fb06278ec119d889262dbb",
+      "source_alias_ids": [
+        "DETAIL-D08-S06"
+      ],
+      "notes": "Resolve curved coping returns, expansion-joint locations and roof-rib joints for future asset modelling.",
+      "design_basis": "developed",
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending",
+      "suggested_model_filename": "GEN-36-S06__joint-corner-edge-detail__v001.glb"
+    },
+    {
+      "asset_id": "GEN-38-M01",
+      "name": "Ceremonial gate glass",
+      "kind": "ornament-module",
+      "reference_image_id": "GEN-38",
+      "reference_file": "images/illustrated-boards/GEN-38.png",
+      "reference_sha256": "275a70b02fcac96e7acd2946c7dd766f2d94f13651e004f33ac97edc18c75aac",
+      "source_alias_ids": [
+        "PATTERN-P01-01"
+      ],
+      "notes": "Central star/rose ring, branching gold ribs, lower pink lobes and right-hand postern field.",
+      "design_basis": "Visible ornament family; enlarged fine geometry is a design interpretation.",
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending",
+      "suggested_model_filename": "GEN-38-M01__ceremonial-gate-glass__v001.glb"
+    },
+    {
+      "asset_id": "GEN-38-M02",
+      "name": "Great-window bay",
+      "kind": "ornament-module",
+      "reference_image_id": "GEN-38",
+      "reference_file": "images/illustrated-boards/GEN-38.png",
+      "reference_sha256": "275a70b02fcac96e7acd2946c7dd766f2d94f13651e004f33ac97edc18c75aac",
+      "source_alias_ids": [
+        "PATTERN-P01-02"
+      ],
+      "notes": "Repeated floral medallions and gold branches inside the four monumental pointed windows.",
+      "design_basis": "Visible ornament family; enlarged fine geometry is a design interpretation.",
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending",
+      "suggested_model_filename": "GEN-38-M02__great-window-bay__v001.glb"
+    },
+    {
+      "asset_id": "GEN-38-M03",
+      "name": "Terminal star panel",
+      "kind": "ornament-module",
+      "reference_image_id": "GEN-38",
+      "reference_file": "images/illustrated-boards/GEN-38.png",
+      "reference_sha256": "275a70b02fcac96e7acd2946c7dd766f2d94f13651e004f33ac97edc18c75aac",
+      "source_alias_ids": [
+        "PATTERN-P01-03"
+      ],
+      "notes": "A single gold star within a tall pointed indigo lozenge.",
+      "design_basis": "Visible ornament family; enlarged fine geometry is a design interpretation.",
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending",
+      "suggested_model_filename": "GEN-38-M03__terminal-star-panel__v001.glb"
+    },
+    {
+      "asset_id": "GEN-38-M04",
+      "name": "Gallery Y tracery",
+      "kind": "ornament-module",
+      "reference_image_id": "GEN-38",
+      "reference_file": "images/illustrated-boards/GEN-38.png",
+      "reference_sha256": "275a70b02fcac96e7acd2946c7dd766f2d94f13651e004f33ac97edc18c75aac",
+      "source_alias_ids": [
+        "PATTERN-P01-04"
+      ],
+      "notes": "Simple forked/Y bars within the smaller pointed dome-gallery windows.",
+      "design_basis": "Visible ornament family; enlarged fine geometry is a design interpretation.",
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending",
+      "suggested_model_filename": "GEN-38-M04__gallery-y-tracery__v001.glb"
+    },
+    {
+      "asset_id": "GEN-38-M05",
+      "name": "Rose-star medallion",
+      "kind": "ornament-module",
+      "reference_image_id": "GEN-38",
+      "reference_file": "images/illustrated-boards/GEN-38.png",
+      "reference_sha256": "275a70b02fcac96e7acd2946c7dd766f2d94f13651e004f33ac97edc18c75aac",
+      "source_alias_ids": [
+        "PATTERN-P01-05"
+      ],
+      "notes": "Enlarged coloured facets and metal boundaries of the floral star centres.",
+      "design_basis": "Visible ornament family; enlarged fine geometry is a design interpretation.",
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending",
+      "suggested_model_filename": "GEN-38-M05__rose-star-medallion__v001.glb"
+    },
+    {
+      "asset_id": "GEN-38-M06",
+      "name": "Diamond/lancet infill",
+      "kind": "ornament-module",
+      "reference_image_id": "GEN-38",
+      "reference_file": "images/illustrated-boards/GEN-38.png",
+      "reference_sha256": "275a70b02fcac96e7acd2946c7dd766f2d94f13651e004f33ac97edc18c75aac",
+      "source_alias_ids": [
+        "PATTERN-P01-06"
+      ],
+      "notes": "Small diamond cells and pointed lower subdivisions within the glass field.",
+      "design_basis": "Visible ornament family; enlarged fine geometry is a design interpretation.",
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending",
+      "suggested_model_filename": "GEN-38-M06__diamond-lancet-infill__v001.glb"
+    },
+    {
+      "asset_id": "GEN-40-M01",
+      "name": "Paired rose-vine spandrel",
+      "kind": "ornament-module",
+      "reference_image_id": "GEN-40",
+      "reference_file": "images/illustrated-boards/GEN-40.png",
+      "reference_sha256": "04f065d91a100c64941b7eb3a61b19bf1aee8add9a1fbdeba934a8beaea2ef7b",
+      "source_alias_ids": [
+        "PATTERN-P02-01"
+      ],
+      "notes": "Carved rose rosettes and coiling leaf stems filling triangular arch corners.",
+      "design_basis": "Visible ornament family; enlarged fine geometry is a design interpretation.",
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending",
+      "suggested_model_filename": "GEN-40-M01__paired-rose-vine-spandrel__v001.glb"
+    },
+    {
+      "asset_id": "GEN-40-M02",
+      "name": "Portal star crest",
+      "kind": "ornament-module",
+      "reference_image_id": "GEN-40",
+      "reference_file": "images/illustrated-boards/GEN-40.png",
+      "reference_sha256": "04f065d91a100c64941b7eb3a61b19bf1aee8add9a1fbdeba934a8beaea2ef7b",
+      "source_alias_ids": [
+        "PATTERN-P02-02"
+      ],
+      "notes": "Gold star on a blue flower-shaped field with ivory/gold surround.",
+      "design_basis": "Visible ornament family; enlarged fine geometry is a design interpretation.",
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending",
+      "suggested_model_filename": "GEN-40-M02__portal-star-crest__v001.glb"
+    },
+    {
+      "asset_id": "GEN-40-M03",
+      "name": "Gable foliage surround",
+      "kind": "ornament-module",
+      "reference_image_id": "GEN-40",
+      "reference_file": "images/illustrated-boards/GEN-40.png",
+      "reference_sha256": "04f065d91a100c64941b7eb3a61b19bf1aee8add9a1fbdeba934a8beaea2ef7b",
+      "source_alias_ids": [
+        "PATTERN-P02-03"
+      ],
+      "notes": "Connected foliage/interlace around the steep pointed portal gable.",
+      "design_basis": "Visible ornament family; enlarged fine geometry is a design interpretation.",
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending",
+      "suggested_model_filename": "GEN-40-M03__gable-foliage-surround__v001.glb"
+    },
+    {
+      "asset_id": "GEN-40-M04",
+      "name": "Gallery floral frieze",
+      "kind": "ornament-module",
+      "reference_image_id": "GEN-40",
+      "reference_file": "images/illustrated-boards/GEN-40.png",
+      "reference_sha256": "04f065d91a100c64941b7eb3a61b19bf1aee8add9a1fbdeba934a8beaea2ef7b",
+      "source_alias_ids": [
+        "PATTERN-P02-04"
+      ],
+      "notes": "Rose/lotus relief band beneath the dome-gallery ledge.",
+      "design_basis": "Visible ornament family; enlarged fine geometry is a design interpretation.",
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending",
+      "suggested_model_filename": "GEN-40-M04__gallery-floral-frieze__v001.glb"
+    },
+    {
+      "asset_id": "GEN-40-M05",
+      "name": "Window-apron lotus scroll",
+      "kind": "ornament-module",
+      "reference_image_id": "GEN-40",
+      "reference_file": "images/illustrated-boards/GEN-40.png",
+      "reference_sha256": "04f065d91a100c64941b7eb3a61b19bf1aee8add9a1fbdeba934a8beaea2ef7b",
+      "source_alias_ids": [
+        "PATTERN-P02-05"
+      ],
+      "notes": "Pointed floral/scroll accent beneath a foreground belvedere opening.",
+      "design_basis": "Visible ornament family; enlarged fine geometry is a design interpretation.",
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending",
+      "suggested_model_filename": "GEN-40-M05__window-apron-lotus-scroll__v001.glb"
+    },
+    {
+      "asset_id": "GEN-40-M06",
+      "name": "Arch-apex leaf crest",
+      "kind": "ornament-module",
+      "reference_image_id": "GEN-40",
+      "reference_file": "images/illustrated-boards/GEN-40.png",
+      "reference_sha256": "04f065d91a100c64941b7eb3a61b19bf1aee8add9a1fbdeba934a8beaea2ef7b",
+      "source_alias_ids": [
+        "PATTERN-P02-06"
+      ],
+      "notes": "Small gilded leaf/crown accent joining the outer pointed arch ribs.",
+      "design_basis": "Visible ornament family; enlarged fine geometry is a design interpretation.",
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending",
+      "suggested_model_filename": "GEN-40-M06__arch-apex-leaf-crest__v001.glb"
+    },
+    {
+      "asset_id": "GEN-39-M01",
+      "name": "Upper terrace jali",
+      "kind": "ornament-module",
+      "reference_image_id": "GEN-39",
+      "reference_file": "images/illustrated-boards/GEN-39.png",
+      "reference_sha256": "bbe9f03266ab8b443d0a00780f2b62ee2741e3089f0cad8ab9347cc0cfe4d1d4",
+      "source_alias_ids": [
+        "PATTERN-P03-01"
+      ],
+      "notes": "Interlaced loops with dark-blue flower/star medallions and real cut voids.",
+      "design_basis": "Visible ornament family; enlarged fine geometry is a design interpretation.",
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending",
+      "suggested_model_filename": "GEN-39-M01__upper-terrace-jali__v001.glb"
+    },
+    {
+      "asset_id": "GEN-39-M02",
+      "name": "Lower flower-wheel rail",
+      "kind": "ornament-module",
+      "reference_image_id": "GEN-39",
+      "reference_file": "images/illustrated-boards/GEN-39.png",
+      "reference_sha256": "bbe9f03266ab8b443d0a00780f2b62ee2741e3089f0cad8ab9347cc0cfe4d1d4",
+      "source_alias_ids": [
+        "PATTERN-P03-02"
+      ],
+      "notes": "Simpler flower-wheel rail and gilded centres on the lower gardens.",
+      "design_basis": "Visible ornament family; enlarged fine geometry is a design interpretation.",
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending",
+      "suggested_model_filename": "GEN-39-M02__lower-flower-wheel-rail__v001.glb"
+    },
+    {
+      "asset_id": "GEN-39-M03",
+      "name": "Vase-baluster profile",
+      "kind": "ornament-module",
+      "reference_image_id": "GEN-39",
+      "reference_file": "images/illustrated-boards/GEN-39.png",
+      "reference_sha256": "bbe9f03266ab8b443d0a00780f2b62ee2741e3089f0cad8ab9347cc0cfe4d1d4",
+      "source_alias_ids": [
+        "PATTERN-P03-03"
+      ],
+      "notes": "Turned stone balusters with moulded rail and compact pier caps.",
+      "design_basis": "Visible ornament family; enlarged fine geometry is a design interpretation.",
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending",
+      "suggested_model_filename": "GEN-39-M03__vase-baluster-profile__v001.glb"
+    },
+    {
+      "asset_id": "GEN-39-M04",
+      "name": "Compact gallery screen",
+      "kind": "ornament-module",
+      "reference_image_id": "GEN-39",
+      "reference_file": "images/illustrated-boards/GEN-39.png",
+      "reference_sha256": "bbe9f03266ab8b443d0a00780f2b62ee2741e3089f0cad8ab9347cc0cfe4d1d4",
+      "source_alias_ids": [
+        "PATTERN-P03-04"
+      ],
+      "notes": "Small pierced openings, posts and crest pieces around tower galleries.",
+      "design_basis": "Visible ornament family; enlarged fine geometry is a design interpretation.",
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending",
+      "suggested_model_filename": "GEN-39-M04__compact-gallery-screen__v001.glb"
+    },
+    {
+      "asset_id": "GEN-39-M05",
+      "name": "Rising stair-rail pattern",
+      "kind": "ornament-module",
+      "reference_image_id": "GEN-39",
+      "reference_file": "images/illustrated-boards/GEN-39.png",
+      "reference_sha256": "bbe9f03266ab8b443d0a00780f2b62ee2741e3089f0cad8ab9347cc0cfe4d1d4",
+      "source_alias_ids": [
+        "PATTERN-P03-05"
+      ],
+      "notes": "Repeating ornament meets an inclined rail and a level landing.",
+      "design_basis": "Visible ornament family; enlarged fine geometry is a design interpretation.",
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending",
+      "suggested_model_filename": "GEN-39-M05__rising-stair-rail-pattern__v001.glb"
+    },
+    {
+      "asset_id": "GEN-39-M06",
+      "name": "Corner/curved return",
+      "kind": "ornament-module",
+      "reference_image_id": "GEN-39",
+      "reference_file": "images/illustrated-boards/GEN-39.png",
+      "reference_sha256": "bbe9f03266ab8b443d0a00780f2b62ee2741e3089f0cad8ab9347cc0cfe4d1d4",
+      "source_alias_ids": [
+        "PATTERN-P03-06"
+      ],
+      "notes": "Repeat grammar continues around angled and rounded projections.",
+      "design_basis": "Visible ornament family; enlarged fine geometry is a design interpretation.",
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending",
+      "suggested_model_filename": "GEN-39-M06__corner-curved-return__v001.glb"
+    },
+    {
+      "asset_id": "GEN-41-M01",
+      "name": "Lotus/leaf capital crown",
+      "kind": "ornament-module",
+      "reference_image_id": "GEN-41",
+      "reference_file": "images/illustrated-boards/GEN-41.png",
+      "reference_sha256": "1882043115cf511799f657be00711cc9dbd0b6241124b8852a11b187b76d5d6a",
+      "source_alias_ids": [
+        "PATTERN-P04-01"
+      ],
+      "notes": "Layered leaves/petals and radial ribs join the shaft.",
+      "design_basis": "Visible ornament family; enlarged fine geometry is a design interpretation.",
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending",
+      "suggested_model_filename": "GEN-41-M01__lotus-leaf-capital-crown__v001.glb"
+    },
+    {
+      "asset_id": "GEN-41-M02",
+      "name": "Engaged-shaft impost",
+      "kind": "ornament-module",
+      "reference_image_id": "GEN-41",
+      "reference_file": "images/illustrated-boards/GEN-41.png",
+      "reference_sha256": "1882043115cf511799f657be00711cc9dbd0b6241124b8852a11b187b76d5d6a",
+      "source_alias_ids": [
+        "PATTERN-P04-02"
+      ],
+      "notes": "Narrow gilded leaf collar and moulded neck at arch springing.",
+      "design_basis": "Visible ornament family; enlarged fine geometry is a design interpretation.",
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending",
+      "suggested_model_filename": "GEN-41-M02__engaged-shaft-impost__v001.glb"
+    },
+    {
+      "asset_id": "GEN-41-M03",
+      "name": "Clustered portal rib",
+      "kind": "ornament-module",
+      "reference_image_id": "GEN-41",
+      "reference_file": "images/illustrated-boards/GEN-41.png",
+      "reference_sha256": "1882043115cf511799f657be00711cc9dbd0b6241124b8852a11b187b76d5d6a",
+      "source_alias_ids": [
+        "PATTERN-P04-03"
+      ],
+      "notes": "Parallel narrow shaft ribs flow into the pointed gate frame.",
+      "design_basis": "Visible ornament family; enlarged fine geometry is a design interpretation.",
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending",
+      "suggested_model_filename": "GEN-41-M03__clustered-portal-rib__v001.glb"
+    },
+    {
+      "asset_id": "GEN-41-M04",
+      "name": "Shaft fillets and blue inset",
+      "kind": "ornament-module",
+      "reference_image_id": "GEN-41",
+      "reference_file": "images/illustrated-boards/GEN-41.png",
+      "reference_sha256": "1882043115cf511799f657be00711cc9dbd0b6241124b8852a11b187b76d5d6a",
+      "source_alias_ids": [
+        "PATTERN-P04-04"
+      ],
+      "notes": "Vertical gold fillets, restrained fluting and slender blue recess.",
+      "design_basis": "Visible ornament family; enlarged fine geometry is a design interpretation.",
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending",
+      "suggested_model_filename": "GEN-41-M04__shaft-fillets-and-blue-inset__v001.glb"
+    },
+    {
+      "asset_id": "GEN-41-M05",
+      "name": "Floral/diamond neck ring",
+      "kind": "ornament-module",
+      "reference_image_id": "GEN-41",
+      "reference_file": "images/illustrated-boards/GEN-41.png",
+      "reference_sha256": "1882043115cf511799f657be00711cc9dbd0b6241124b8852a11b187b76d5d6a",
+      "source_alias_ids": [
+        "PATTERN-P04-05"
+      ],
+      "notes": "Raised collar relief and recessed fields repeated around the neck.",
+      "design_basis": "Visible ornament family; enlarged fine geometry is a design interpretation.",
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending",
+      "suggested_model_filename": "GEN-41-M05__floral-diamond-neck-ring__v001.glb"
+    },
+    {
+      "asset_id": "GEN-41-M06",
+      "name": "Faceted base and foot accent",
+      "kind": "ornament-module",
+      "reference_image_id": "GEN-41",
+      "reference_file": "images/illustrated-boards/GEN-41.png",
+      "reference_sha256": "1882043115cf511799f657be00711cc9dbd0b6241124b8852a11b187b76d5d6a",
+      "source_alias_ids": [
+        "PATTERN-P04-06"
+      ],
+      "notes": "Stepped/faceted plinth, small pointed/lotus accent and bevelled edge.",
+      "design_basis": "Visible ornament family; enlarged fine geometry is a design interpretation.",
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending",
+      "suggested_model_filename": "GEN-41-M06__faceted-base-and-foot-accent__v001.glb"
+    },
+    {
+      "asset_id": "GEN-42-M01",
+      "name": "Nested arch rolls",
+      "kind": "ornament-module",
+      "reference_image_id": "GEN-42",
+      "reference_file": "images/illustrated-boards/GEN-42.png",
+      "reference_sha256": "ee936eb8b538c4791c1a506ea779e6543b73f7d70fef451d65af1cf1c3ce1fd2",
+      "source_alias_ids": [
+        "PATTERN-P05-01"
+      ],
+      "notes": "Ordered ivory roll mouldings and narrow gold fillets.",
+      "design_basis": "Visible ornament family; enlarged fine geometry is a design interpretation.",
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending",
+      "suggested_model_filename": "GEN-42-M01__nested-arch-rolls__v001.glb"
+    },
+    {
+      "asset_id": "GEN-42-M02",
+      "name": "Bead/leaf band",
+      "kind": "ornament-module",
+      "reference_image_id": "GEN-42",
+      "reference_file": "images/illustrated-boards/GEN-42.png",
+      "reference_sha256": "ee936eb8b538c4791c1a506ea779e6543b73f7d70fef451d65af1cf1c3ce1fd2",
+      "source_alias_ids": [
+        "PATTERN-P05-02"
+      ],
+      "notes": "Thin beading and leaf accents within the moulded gallery/string course.",
+      "design_basis": "Visible ornament family; enlarged fine geometry is a design interpretation.",
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending",
+      "suggested_model_filename": "GEN-42-M02__bead-leaf-band__v001.glb"
+    },
+    {
+      "asset_id": "GEN-42-M03",
+      "name": "Rose/vine strip",
+      "kind": "ornament-module",
+      "reference_image_id": "GEN-42",
+      "reference_file": "images/illustrated-boards/GEN-42.png",
+      "reference_sha256": "ee936eb8b538c4791c1a506ea779e6543b73f7d70fef451d65af1cf1c3ce1fd2",
+      "source_alias_ids": [
+        "PATTERN-P05-03"
+      ],
+      "notes": "Connected floral/rosette band below gallery ledges.",
+      "design_basis": "Visible ornament family; enlarged fine geometry is a design interpretation.",
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending",
+      "suggested_model_filename": "GEN-42-M03__rose-vine-strip__v001.glb"
+    },
+    {
+      "asset_id": "GEN-42-M04",
+      "name": "Cusped blind-arcade edge",
+      "kind": "ornament-module",
+      "reference_image_id": "GEN-42",
+      "reference_file": "images/illustrated-boards/GEN-42.png",
+      "reference_sha256": "ee936eb8b538c4791c1a506ea779e6543b73f7d70fef451d65af1cf1c3ce1fd2",
+      "source_alias_ids": [
+        "PATTERN-P05-04"
+      ],
+      "notes": "Repeated pointed/scalloped edge motifs under cornices.",
+      "design_basis": "Visible ornament family; enlarged fine geometry is a design interpretation.",
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending",
+      "suggested_model_filename": "GEN-42-M04__cusped-blind-arcade-edge__v001.glb"
+    },
+    {
+      "asset_id": "GEN-42-M05",
+      "name": "Cornice and underside rhythm",
+      "kind": "ornament-module",
+      "reference_image_id": "GEN-42",
+      "reference_file": "images/illustrated-boards/GEN-42.png",
+      "reference_sha256": "ee936eb8b538c4791c1a506ea779e6543b73f7d70fef451d65af1cf1c3ce1fd2",
+      "source_alias_ids": [
+        "PATTERN-P05-05"
+      ],
+      "notes": "Stepped ledge, small brackets/dentils and gilded coping lip.",
+      "design_basis": "Visible ornament family; enlarged fine geometry is a design interpretation.",
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending",
+      "suggested_model_filename": "GEN-42-M05__cornice-and-underside-rhythm__v001.glb"
+    },
+    {
+      "asset_id": "GEN-42-M06",
+      "name": "Mitre and inset return",
+      "kind": "ornament-module",
+      "reference_image_id": "GEN-42",
+      "reference_file": "images/illustrated-boards/GEN-42.png",
+      "reference_sha256": "ee936eb8b538c4791c1a506ea779e6543b73f7d70fef451d65af1cf1c3ce1fd2",
+      "source_alias_ids": [
+        "PATTERN-P05-06"
+      ],
+      "notes": "Mouldings resolve convex faceted corners and inward returns.",
+      "design_basis": "Visible ornament family; enlarged fine geometry is a design interpretation.",
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending",
+      "suggested_model_filename": "GEN-42-M06__mitre-and-inset-return__v001.glb"
+    },
+    {
+      "asset_id": "GEN-44-M01",
+      "name": "Onion rib termination",
+      "kind": "ornament-module",
+      "reference_image_id": "GEN-44",
+      "reference_file": "images/illustrated-boards/GEN-44.png",
+      "reference_sha256": "e41f3ecb1b5a6e38903b0a6eed05c218bae8de350bc3ea31e873be1a16cca807",
+      "source_alias_ids": [
+        "PATTERN-P06-01"
+      ],
+      "notes": "Thin gold rib meets a small leaf/star crest at the purple-panel eave.",
+      "design_basis": "Visible ornament family; enlarged fine geometry is a design interpretation.",
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending",
+      "suggested_model_filename": "GEN-44-M01__onion-rib-termination__v001.glb"
+    },
+    {
+      "asset_id": "GEN-44-M02",
+      "name": "Needle rib/collar junction",
+      "kind": "ornament-module",
+      "reference_image_id": "GEN-44",
+      "reference_file": "images/illustrated-boards/GEN-44.png",
+      "reference_sha256": "e41f3ecb1b5a6e38903b0a6eed05c218bae8de350bc3ea31e873be1a16cca807",
+      "source_alias_ids": [
+        "PATTERN-P06-02"
+      ],
+      "notes": "Roof rib, pointed collar and small crown pinnacle form a connected ornamental silhouette.",
+      "design_basis": "Visible ornament family; enlarged fine geometry is a design interpretation.",
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending",
+      "suggested_model_filename": "GEN-44-M02__needle-rib-collar-junction__v001.glb"
+    },
+    {
+      "asset_id": "GEN-44-M03",
+      "name": "Eave crest repeat",
+      "kind": "ornament-module",
+      "reference_image_id": "GEN-44",
+      "reference_file": "images/illustrated-boards/GEN-44.png",
+      "reference_sha256": "e41f3ecb1b5a6e38903b0a6eed05c218bae8de350bc3ea31e873be1a16cca807",
+      "source_alias_ids": [
+        "PATTERN-P06-03"
+      ],
+      "notes": "Small gilded leaf/lotus/star pieces repeat above the moulded eave ring.",
+      "design_basis": "Visible ornament family; enlarged fine geometry is a design interpretation.",
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending",
+      "suggested_model_filename": "GEN-44-M03__eave-crest-repeat__v001.glb"
+    },
+    {
+      "asset_id": "GEN-44-M04",
+      "name": "Crown-gallery collar strip",
+      "kind": "ornament-module",
+      "reference_image_id": "GEN-44",
+      "reference_file": "images/illustrated-boards/GEN-44.png",
+      "reference_sha256": "e41f3ecb1b5a6e38903b0a6eed05c218bae8de350bc3ea31e873be1a16cca807",
+      "source_alias_ids": [
+        "PATTERN-P06-04"
+      ],
+      "notes": "Compact pierced arcade, bead ring and collar relief.",
+      "design_basis": "Visible ornament family; enlarged fine geometry is a design interpretation.",
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending",
+      "suggested_model_filename": "GEN-44-M04__crown-gallery-collar-strip__v001.glb"
+    },
+    {
+      "asset_id": "GEN-44-M05",
+      "name": "Spindle/star finial",
+      "kind": "ornament-module",
+      "reference_image_id": "GEN-44",
+      "reference_file": "images/illustrated-boards/GEN-44.png",
+      "reference_sha256": "e41f3ecb1b5a6e38903b0a6eed05c218bae8de350bc3ea31e873be1a16cca807",
+      "source_alias_ids": [
+        "PATTERN-P06-05"
+      ],
+      "notes": "Slim pole with stacked knops/collars and a multi-point star.",
+      "design_basis": "Visible ornament family; enlarged fine geometry is a design interpretation.",
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending",
+      "suggested_model_filename": "GEN-44-M05__spindle-star-finial__v001.glb"
+    },
+    {
+      "asset_id": "GEN-44-M06",
+      "name": "Turret crown border",
+      "kind": "ornament-module",
+      "reference_image_id": "GEN-44",
+      "reference_file": "images/illustrated-boards/GEN-44.png",
+      "reference_sha256": "e41f3ecb1b5a6e38903b0a6eed05c218bae8de350bc3ea31e873be1a16cca807",
+      "source_alias_ids": [
+        "PATTERN-P06-06"
+      ],
+      "notes": "Compact roof rib and gallery-opening pattern of the small attached turret.",
+      "design_basis": "Visible ornament family; enlarged fine geometry is a design interpretation.",
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending",
+      "suggested_model_filename": "GEN-44-M06__turret-crown-border__v001.glb"
+    },
+    {
+      "asset_id": "GEN-43-M01",
+      "name": "Lower pointed-arcade frame",
+      "kind": "ornament-module",
+      "reference_image_id": "GEN-43",
+      "reference_file": "images/illustrated-boards/GEN-43.png",
+      "reference_sha256": "9ac3c5102040b5718737468eda71fdb1caa89e475f9e5427192a249c55ae2750",
+      "source_alias_ids": [
+        "PATTERN-P07-01"
+      ],
+      "notes": "Small triangular spandrel relief and arch-corner border.",
+      "design_basis": "Visible ornament family; enlarged fine geometry is a design interpretation.",
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending",
+      "suggested_model_filename": "GEN-43-M01__lower-pointed-arcade-frame__v001.glb"
+    },
+    {
+      "asset_id": "GEN-43-M02",
+      "name": "Stair-post panel and cap",
+      "kind": "ornament-module",
+      "reference_image_id": "GEN-43",
+      "reference_file": "images/illustrated-boards/GEN-43.png",
+      "reference_sha256": "9ac3c5102040b5718737468eda71fdb1caa89e475f9e5427192a249c55ae2750",
+      "source_alias_ids": [
+        "PATTERN-P07-02"
+      ],
+      "notes": "Gilded lotus/knop cap, recessed panel and miniature crest/floral border.",
+      "design_basis": "Visible ornament family; enlarged fine geometry is a design interpretation.",
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending",
+      "suggested_model_filename": "GEN-43-M02__stair-post-panel-and-cap__v001.glb"
+    },
+    {
+      "asset_id": "GEN-43-M03",
+      "name": "Low tower star surround",
+      "kind": "ornament-module",
+      "reference_image_id": "GEN-43",
+      "reference_file": "images/illustrated-boards/GEN-43.png",
+      "reference_sha256": "9ac3c5102040b5718737468eda71fdb1caa89e475f9e5427192a249c55ae2750",
+      "source_alias_ids": [
+        "PATTERN-P07-03"
+      ],
+      "notes": "Narrow blue star panel with pointed outer frame and small foot/apron accent.",
+      "design_basis": "Visible ornament family; enlarged fine geometry is a design interpretation.",
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending",
+      "suggested_model_filename": "GEN-43-M03__low-tower-star-surround__v001.glb"
+    },
+    {
+      "asset_id": "GEN-43-M04",
+      "name": "Cascade coping border",
+      "kind": "ornament-module",
+      "reference_image_id": "GEN-43",
+      "reference_file": "images/illustrated-boards/GEN-43.png",
+      "reference_sha256": "9ac3c5102040b5718737468eda71fdb1caa89e475f9e5427192a249c55ae2750",
+      "source_alias_ids": [
+        "PATTERN-P07-04"
+      ],
+      "notes": "Moulded edge and restrained floral border; water-obscured carving is interpreted.",
+      "design_basis": "Visible ornament family; enlarged fine geometry is a design interpretation.",
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending",
+      "suggested_model_filename": "GEN-43-M04__cascade-coping-border__v001.glb"
+    },
+    {
+      "asset_id": "GEN-43-M05",
+      "name": "Small fountain crest/band",
+      "kind": "ornament-module",
+      "reference_image_id": "GEN-43",
+      "reference_file": "images/illustrated-boards/GEN-43.png",
+      "reference_sha256": "9ac3c5102040b5718737468eda71fdb1caa89e475f9e5427192a249c55ae2750",
+      "source_alias_ids": [
+        "PATTERN-P07-05"
+      ],
+      "notes": "Small gilded floral/star accents developed into a readable motif, not a new large monument.",
+      "design_basis": "Visible ornament family; enlarged fine geometry is a design interpretation.",
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending",
+      "suggested_model_filename": "GEN-43-M05__small-fountain-crest-band__v001.glb"
+    },
+    {
+      "asset_id": "GEN-43-M06",
+      "name": "Tread/plinth profile",
+      "kind": "ornament-module",
+      "reference_image_id": "GEN-43",
+      "reference_file": "images/illustrated-boards/GEN-43.png",
+      "reference_sha256": "9ac3c5102040b5718737468eda71fdb1caa89e475f9e5427192a249c55ae2750",
+      "source_alias_ids": [
+        "PATTERN-P07-06"
+      ],
+      "notes": "Plain walking surface, moulded nosing, thin border and stepped terrace edge.",
+      "design_basis": "Visible ornament family; enlarged fine geometry is a design interpretation.",
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending",
+      "suggested_model_filename": "GEN-43-M06__tread-plinth-profile__v001.glb"
+    },
+    {
+      "asset_id": "GEN-45-M01",
+      "name": "Lantern cage face",
+      "kind": "ornament-module",
+      "reference_image_id": "GEN-45",
+      "reference_file": "images/illustrated-boards/GEN-45.png",
+      "reference_sha256": "7af18860bcd8f4d0e245670049fe02e2f35de3f4d5da42e97c810806fca629aa",
+      "source_alias_ids": [
+        "PATTERN-P08-01"
+      ],
+      "notes": "Pointed cage lattice with small crest/leaf intersections.",
+      "design_basis": "Visible ornament family; enlarged fine geometry is a design interpretation.",
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending",
+      "suggested_model_filename": "GEN-45-M01__lantern-cage-face__v001.glb"
+    },
+    {
+      "asset_id": "GEN-45-M02",
+      "name": "Scroll arm and mounting plate",
+      "kind": "ornament-module",
+      "reference_image_id": "GEN-45",
+      "reference_file": "images/illustrated-boards/GEN-45.png",
+      "reference_sha256": "7af18860bcd8f4d0e245670049fe02e2f35de3f4d5da42e97c810806fca629aa",
+      "source_alias_ids": [
+        "PATTERN-P08-02"
+      ],
+      "notes": "Curved double-scroll silhouette, engraved leaf veins, rosette plate and collar.",
+      "design_basis": "Visible ornament family; enlarged fine geometry is a design interpretation.",
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending",
+      "suggested_model_filename": "GEN-45-M02__scroll-arm-and-mounting-plate__v001.glb"
+    },
+    {
+      "asset_id": "GEN-45-M03",
+      "name": "Pendant faceting and drop",
+      "kind": "ornament-module",
+      "reference_image_id": "GEN-45",
+      "reference_file": "images/illustrated-boards/GEN-45.png",
+      "reference_sha256": "7af18860bcd8f4d0e245670049fe02e2f35de3f4d5da42e97c810806fca629aa",
+      "source_alias_ids": [
+        "PATTERN-P08-03"
+      ],
+      "notes": "Blue faceted glass/crystal silhouette and small gold lower cap.",
+      "design_basis": "Visible ornament family; enlarged fine geometry is a design interpretation.",
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending",
+      "suggested_model_filename": "GEN-45-M03__pendant-faceting-and-drop__v001.glb"
+    },
+    {
+      "asset_id": "GEN-45-M04",
+      "name": "Hanger bead/knop sequence",
+      "kind": "ornament-module",
+      "reference_image_id": "GEN-45",
+      "reference_file": "images/illustrated-boards/GEN-45.png",
+      "reference_sha256": "7af18860bcd8f4d0e245670049fe02e2f35de3f4d5da42e97c810806fca629aa",
+      "source_alias_ids": [
+        "PATTERN-P08-04"
+      ],
+      "notes": "Ring links, beading and decorative socket connect the pendant.",
+      "design_basis": "Visible ornament family; enlarged fine geometry is a design interpretation.",
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending",
+      "suggested_model_filename": "GEN-45-M04__hanger-bead-knop-sequence__v001.glb"
+    },
+    {
+      "asset_id": "GEN-45-M05",
+      "name": "Gallery collar/bracket medallion",
+      "kind": "ornament-module",
+      "reference_image_id": "GEN-45",
+      "reference_file": "images/illustrated-boards/GEN-45.png",
+      "reference_sha256": "7af18860bcd8f4d0e245670049fe02e2f35de3f4d5da42e97c810806fca629aa",
+      "source_alias_ids": [
+        "PATTERN-P08-05"
+      ],
+      "notes": "Small gilded relief accent on gallery/shaft brackets.",
+      "design_basis": "Visible ornament family; enlarged fine geometry is a design interpretation.",
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending",
+      "suggested_model_filename": "GEN-45-M05__gallery-collar-bracket-medallion__v001.glb"
+    },
+    {
+      "asset_id": "GEN-45-M06",
+      "name": "Lotus/star post finial",
+      "kind": "ornament-module",
+      "reference_image_id": "GEN-45",
+      "reference_file": "images/illustrated-boards/GEN-45.png",
+      "reference_sha256": "7af18860bcd8f4d0e245670049fe02e2f35de3f4d5da42e97c810806fca629aa",
+      "source_alias_ids": [
+        "PATTERN-P08-06"
+      ],
+      "notes": "Compact ornamental cap matching lamps and terrace posts.",
+      "design_basis": "Visible ornament family; enlarged fine geometry is a design interpretation.",
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending",
+      "suggested_model_filename": "GEN-45-M06__lotus-star-post-finial__v001.glb"
+    },
+    {
+      "asset_id": "GEN-08-A01",
+      "name": "Royal rose-blossom tree",
+      "kind": "component",
+      "reference_image_id": "GEN-08",
+      "reference_file": "images/illustrated-boards/GEN-08.png",
+      "reference_sha256": "a3f03ab50108a7f99de138cdb71acf5e74414f85fcb67be6b1a5944c76a29cef",
+      "source_alias_ids": [],
+      "notes": "Select and isolate the complete object from the board before image-to-3D. Variant/view selection remains subject to review.",
+      "design_basis": "Named in existing board/readiness records",
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending",
+      "suggested_model_filename": "GEN-08-A01__royal-rose-blossom-tree__v001.glb"
+    },
+    {
+      "asset_id": "GEN-18-A01",
+      "name": "Porcelain Long Bridge",
+      "kind": "component",
+      "reference_image_id": "GEN-18",
+      "reference_file": "images/illustrated-boards/GEN-18.png",
+      "reference_sha256": "b4e604896f127f6964f9d0af15ea5077fcef5c4abde1d6800014c5ad7dd07624",
+      "source_alias_ids": [],
+      "notes": "Select and isolate the complete object from the board before image-to-3D. Variant/view selection remains subject to review.",
+      "design_basis": "Named in existing board/readiness records",
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending",
+      "suggested_model_filename": "GEN-18-A01__porcelain-long-bridge__v001.glb"
+    },
+    {
+      "asset_id": "GEN-28-A01",
+      "name": "Lotus boat",
+      "kind": "component",
+      "reference_image_id": "GEN-28",
+      "reference_file": "images/illustrated-boards/GEN-28.png",
+      "reference_sha256": "def5d59f383fbbddbea8fa00558480c3e31e708cb5529cbc5a97ed83402533ba",
+      "source_alias_ids": [],
+      "notes": "Select and isolate the complete object from the board before image-to-3D. Variant/view selection remains subject to review.",
+      "design_basis": "Named in existing board/readiness records",
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending",
+      "suggested_model_filename": "GEN-28-A01__lotus-boat__v001.glb"
+    },
+    {
+      "asset_id": "GEN-28-A02",
+      "name": "Wishing ring",
+      "kind": "component",
+      "reference_image_id": "GEN-28",
+      "reference_file": "images/illustrated-boards/GEN-28.png",
+      "reference_sha256": "def5d59f383fbbddbea8fa00558480c3e31e708cb5529cbc5a97ed83402533ba",
+      "source_alias_ids": [],
+      "notes": "Select and isolate the complete object from the board before image-to-3D. Variant/view selection remains subject to review.",
+      "design_basis": "Named in existing board/readiness records",
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending",
+      "suggested_model_filename": "GEN-28-A02__wishing-ring__v001.glb"
+    },
+    {
+      "asset_id": "GEN-28-A03",
+      "name": "Floating candle",
+      "kind": "component",
+      "reference_image_id": "GEN-28",
+      "reference_file": "images/illustrated-boards/GEN-28.png",
+      "reference_sha256": "def5d59f383fbbddbea8fa00558480c3e31e708cb5529cbc5a97ed83402533ba",
+      "source_alias_ids": [],
+      "notes": "Select and isolate the complete object from the board before image-to-3D. Variant/view selection remains subject to review.",
+      "design_basis": "Named in existing board/readiness records",
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending",
+      "suggested_model_filename": "GEN-28-A03__floating-candle__v001.glb"
+    },
+    {
+      "asset_id": "GEN-28-A04",
+      "name": "Armillary",
+      "kind": "component",
+      "reference_image_id": "GEN-28",
+      "reference_file": "images/illustrated-boards/GEN-28.png",
+      "reference_sha256": "def5d59f383fbbddbea8fa00558480c3e31e708cb5529cbc5a97ed83402533ba",
+      "source_alias_ids": [],
+      "notes": "Select and isolate the complete object from the board before image-to-3D. Variant/view selection remains subject to review.",
+      "design_basis": "Named in existing board/readiness records",
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending",
+      "suggested_model_filename": "GEN-28-A04__armillary__v001.glb"
+    },
+    {
+      "asset_id": "GEN-25-A01",
+      "name": "Birthday cake",
+      "kind": "component",
+      "reference_image_id": "GEN-25",
+      "reference_file": "images/illustrated-boards/GEN-25.png",
+      "reference_sha256": "9ef8a873ba4469a122f8d6b195f958834babb94bd9481ba41986a78adf6c19c7",
+      "source_alias_ids": [],
+      "notes": "Select and isolate the complete object from the board before image-to-3D. Variant/view selection remains subject to review.",
+      "design_basis": "Named in existing board/readiness records",
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending",
+      "suggested_model_filename": "GEN-25-A01__birthday-cake__v001.glb"
+    },
+    {
+      "asset_id": "GEN-25-A02",
+      "name": "Cake stand",
+      "kind": "component",
+      "reference_image_id": "GEN-25",
+      "reference_file": "images/illustrated-boards/GEN-25.png",
+      "reference_sha256": "9ef8a873ba4469a122f8d6b195f958834babb94bd9481ba41986a78adf6c19c7",
+      "source_alias_ids": [],
+      "notes": "Select and isolate the complete object from the board before image-to-3D. Variant/view selection remains subject to review.",
+      "design_basis": "Named in existing board/readiness records",
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending",
+      "suggested_model_filename": "GEN-25-A02__cake-stand__v001.glb"
+    },
+    {
+      "asset_id": "GEN-25-A03",
+      "name": "Gift box",
+      "kind": "component",
+      "reference_image_id": "GEN-25",
+      "reference_file": "images/illustrated-boards/GEN-25.png",
+      "reference_sha256": "9ef8a873ba4469a122f8d6b195f958834babb94bd9481ba41986a78adf6c19c7",
+      "source_alias_ids": [],
+      "notes": "Select and isolate the complete object from the board before image-to-3D. Variant/view selection remains subject to review.",
+      "design_basis": "Named in existing board/readiness records",
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending",
+      "suggested_model_filename": "GEN-25-A03__gift-box__v001.glb"
+    },
+    {
+      "asset_id": "GEN-25-A04",
+      "name": "Birthday banner",
+      "kind": "component",
+      "reference_image_id": "GEN-25",
+      "reference_file": "images/illustrated-boards/GEN-25.png",
+      "reference_sha256": "9ef8a873ba4469a122f8d6b195f958834babb94bd9481ba41986a78adf6c19c7",
+      "source_alias_ids": [],
+      "notes": "Select and isolate the complete object from the board before image-to-3D. Variant/view selection remains subject to review.",
+      "design_basis": "Named in existing board/readiness records",
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending",
+      "suggested_model_filename": "GEN-25-A04__birthday-banner__v001.glb"
+    },
+    {
+      "asset_id": "GEN-24-A01",
+      "name": "Throne",
+      "kind": "component",
+      "reference_image_id": "GEN-24",
+      "reference_file": "images/illustrated-boards/GEN-24.png",
+      "reference_sha256": "deb78cfce6dab5c31d9b3519d3bc01a07e58bba453b013fcdb76bd2e8be3f349",
+      "source_alias_ids": [],
+      "notes": "Select and isolate the complete object from the board before image-to-3D. Variant/view selection remains subject to review.",
+      "design_basis": "Named in existing board/readiness records",
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending",
+      "suggested_model_filename": "GEN-24-A01__throne__v001.glb"
+    },
+    {
+      "asset_id": "GEN-24-A02",
+      "name": "Dais",
+      "kind": "component",
+      "reference_image_id": "GEN-24",
+      "reference_file": "images/illustrated-boards/GEN-24.png",
+      "reference_sha256": "deb78cfce6dab5c31d9b3519d3bc01a07e58bba453b013fcdb76bd2e8be3f349",
+      "source_alias_ids": [],
+      "notes": "Select and isolate the complete object from the board before image-to-3D. Variant/view selection remains subject to review.",
+      "design_basis": "Named in existing board/readiness records",
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending",
+      "suggested_model_filename": "GEN-24-A02__dais__v001.glb"
+    },
+    {
+      "asset_id": "GEN-24-A03",
+      "name": "Mirror",
+      "kind": "component",
+      "reference_image_id": "GEN-24",
+      "reference_file": "images/illustrated-boards/GEN-24.png",
+      "reference_sha256": "deb78cfce6dab5c31d9b3519d3bc01a07e58bba453b013fcdb76bd2e8be3f349",
+      "source_alias_ids": [],
+      "notes": "Select and isolate the complete object from the board before image-to-3D. Variant/view selection remains subject to review.",
+      "design_basis": "Named in existing board/readiness records",
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending",
+      "suggested_model_filename": "GEN-24-A03__mirror__v001.glb"
+    },
+    {
+      "asset_id": "GEN-24-A04",
+      "name": "Console",
+      "kind": "component",
+      "reference_image_id": "GEN-24",
+      "reference_file": "images/illustrated-boards/GEN-24.png",
+      "reference_sha256": "deb78cfce6dab5c31d9b3519d3bc01a07e58bba453b013fcdb76bd2e8be3f349",
+      "source_alias_ids": [],
+      "notes": "Select and isolate the complete object from the board before image-to-3D. Variant/view selection remains subject to review.",
+      "design_basis": "Named in existing board/readiness records",
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending",
+      "suggested_model_filename": "GEN-24-A04__console__v001.glb"
+    },
+    {
+      "asset_id": "GEN-24-A05",
+      "name": "Chaise",
+      "kind": "component",
+      "reference_image_id": "GEN-24",
+      "reference_file": "images/illustrated-boards/GEN-24.png",
+      "reference_sha256": "deb78cfce6dab5c31d9b3519d3bc01a07e58bba453b013fcdb76bd2e8be3f349",
+      "source_alias_ids": [],
+      "notes": "Select and isolate the complete object from the board before image-to-3D. Variant/view selection remains subject to review.",
+      "design_basis": "Named in existing board/readiness records",
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending",
+      "suggested_model_filename": "GEN-24-A05__chaise__v001.glb"
+    },
+    {
+      "asset_id": "GEN-24-A06",
+      "name": "Side table",
+      "kind": "component",
+      "reference_image_id": "GEN-24",
+      "reference_file": "images/illustrated-boards/GEN-24.png",
+      "reference_sha256": "deb78cfce6dab5c31d9b3519d3bc01a07e58bba453b013fcdb76bd2e8be3f349",
+      "source_alias_ids": [],
+      "notes": "Select and isolate the complete object from the board before image-to-3D. Variant/view selection remains subject to review.",
+      "design_basis": "Named in existing board/readiness records",
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending",
+      "suggested_model_filename": "GEN-24-A06__side-table__v001.glb"
+    },
+    {
+      "asset_id": "GEN-24-A07",
+      "name": "Crystal chandelier",
+      "kind": "component",
+      "reference_image_id": "GEN-24",
+      "reference_file": "images/illustrated-boards/GEN-24.png",
+      "reference_sha256": "deb78cfce6dab5c31d9b3519d3bc01a07e58bba453b013fcdb76bd2e8be3f349",
+      "source_alias_ids": [],
+      "notes": "Select and isolate the complete object from the board before image-to-3D. Variant/view selection remains subject to review.",
+      "design_basis": "Named in existing board/readiness records",
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending",
+      "suggested_model_filename": "GEN-24-A07__crystal-chandelier__v001.glb"
+    },
+    {
+      "asset_id": "GEN-24-A08",
+      "name": "Bookcase",
+      "kind": "component",
+      "reference_image_id": "GEN-24",
+      "reference_file": "images/illustrated-boards/GEN-24.png",
+      "reference_sha256": "deb78cfce6dab5c31d9b3519d3bc01a07e58bba453b013fcdb76bd2e8be3f349",
+      "source_alias_ids": [],
+      "notes": "Select and isolate the complete object from the board before image-to-3D. Variant/view selection remains subject to review.",
+      "design_basis": "Named in existing board/readiness records",
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending",
+      "suggested_model_filename": "GEN-24-A08__bookcase__v001.glb"
+    },
+    {
+      "asset_id": "GEN-24-A09",
+      "name": "Lectern",
+      "kind": "component",
+      "reference_image_id": "GEN-24",
+      "reference_file": "images/illustrated-boards/GEN-24.png",
+      "reference_sha256": "deb78cfce6dab5c31d9b3519d3bc01a07e58bba453b013fcdb76bd2e8be3f349",
+      "source_alias_ids": [],
+      "notes": "Select and isolate the complete object from the board before image-to-3D. Variant/view selection remains subject to review.",
+      "design_basis": "Named in existing board/readiness records",
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending",
+      "suggested_model_filename": "GEN-24-A09__lectern__v001.glb"
+    }
+  ],
+  "reference_families": [
+    {
+      "family_id": "FAM-001",
+      "name": "Stained glass, gate glass and rose/star medallions",
+      "reference_image_ids": [
+        "GEN-19",
+        "GEN-31",
+        "GEN-38"
+      ],
+      "next_step": "Choose the pattern matching each elevation bay; crop the existing panel. Do not double a single bay with a paired assembly.",
+      "kind": "reference-family-not-isolated-asset"
+    },
+    {
+      "family_id": "FAM-002",
+      "name": "Columns, capitals and carved pier details",
+      "reference_image_ids": [
+        "GEN-29",
+        "GEN-41"
+      ],
+      "next_step": "Use existing front and detail panels; construct repeatable column geometry.",
+      "kind": "reference-family-not-isolated-asset"
+    },
+    {
+      "family_id": "FAM-003",
+      "name": "Floral wall relief, crests and patterned panels",
+      "reference_image_ids": [
+        "GEN-30",
+        "GEN-40"
+      ],
+      "next_step": "Crop existing patterns; build relief or bake surface detail from a sculpt.",
+      "kind": "reference-family-not-isolated-asset"
+    },
+    {
+      "family_id": "FAM-004",
+      "name": "Cornices, mouldings and roof eaves",
+      "reference_image_ids": [
+        "GEN-17",
+        "GEN-42"
+      ],
+      "next_step": "Trace the existing profile; model straight runs and junctions.",
+      "kind": "reference-family-not-isolated-asset"
+    },
+    {
+      "family_id": "FAM-005",
+      "name": "Balustrades, balcony rails and newels",
+      "reference_image_ids": [
+        "GEN-33",
+        "GEN-39",
+        "GEN-43"
+      ],
+      "next_step": "Reuse illustrated motifs; fit their geometry to actual terrace edges.",
+      "kind": "reference-family-not-isolated-asset"
+    },
+    {
+      "family_id": "FAM-006",
+      "name": "Roof crowns, dome ribs, pinnacles and star finials",
+      "reference_image_ids": [
+        "GEN-17",
+        "GEN-32",
+        "GEN-44"
+      ],
+      "next_step": "Existing crown and attachment views are available; match the appropriate tower rather than assigning one crown to all.",
+      "kind": "reference-family-not-isolated-asset"
+    },
+    {
+      "family_id": "FAM-007",
+      "name": "Main portal ornament and small fittings",
+      "reference_image_ids": [
+        "GEN-31",
+        "GEN-35",
+        "GEN-45"
+      ],
+      "next_step": "Reuse existing hardware and frame details; establish wall openings separately.",
+      "kind": "reference-family-not-isolated-asset"
+    },
+    {
+      "family_id": "FAM-008",
+      "name": "Lotus fountains, basins, sculptures and water spouts",
+      "reference_image_ids": [
+        "GEN-11",
+        "GEN-22",
+        "GEN-34"
+      ],
+      "next_step": "Separate each assembly and crop its existing views; preserve its basin and support.",
+      "kind": "reference-family-not-isolated-asset"
+    },
+    {
+      "family_id": "FAM-009",
+      "name": "Guardian sculptures",
+      "reference_image_ids": [
+        "GEN-24",
+        "GEN-34"
+      ],
+      "next_step": "Use the existing illustrated sculpture views; do not use the vector placeholder.",
+      "kind": "reference-family-not-isolated-asset"
+    },
+    {
+      "family_id": "FAM-010",
+      "name": "Benches, urns and tree planters",
+      "reference_image_ids": [
+        "GEN-20",
+        "GEN-35"
+      ],
+      "next_step": "Crop full objects from the existing front/side/isometric sheets.",
+      "kind": "reference-family-not-isolated-asset"
+    },
+    {
+      "family_id": "FAM-011",
+      "name": "Garden gates, trellises, gazebos and pergolas",
+      "reference_image_ids": [
+        "GEN-20"
+      ],
+      "next_step": "Crop each existing object and its supports before modelling.",
+      "kind": "reference-family-not-isolated-asset"
+    },
+    {
+      "family_id": "FAM-012",
+      "name": "Avenue, wall, floor, pendant and crystal lanterns",
+      "reference_image_ids": [
+        "GEN-20",
+        "GEN-32",
+        "GEN-45"
+      ],
+      "next_step": "Extract the chosen existing fixture, including its bracket or suspension.",
+      "kind": "reference-family-not-isolated-asset"
+    },
+    {
+      "family_id": "FAM-013",
+      "name": "Blossom trees, cypress, willow, gold-leaf and coastal trees",
+      "reference_image_ids": [
+        "GEN-08",
+        "GEN-09"
+      ],
+      "next_step": "Use existing silhouettes; construct reusable branch and leaf systems.",
+      "kind": "reference-family-not-isolated-asset"
+    },
+    {
+      "family_id": "FAM-014",
+      "name": "Rose bushes, hedges, garlands and meadow flowers",
+      "reference_image_ids": [
+        "GEN-13"
+      ],
+      "next_step": "Existing plant clusters are sufficient for design; create separable reusable plant geometry.",
+      "kind": "reference-family-not-isolated-asset"
+    },
+    {
+      "family_id": "FAM-015",
+      "name": "Lotus, lily pads, reeds, ferns and bank vegetation",
+      "reference_image_ids": [
+        "GEN-13"
+      ],
+      "next_step": "Reuse existing plant and leaf studies.",
+      "kind": "reference-family-not-isolated-asset"
+    },
+    {
+      "family_id": "FAM-016",
+      "name": "Paving, garden stairs, ramps, retaining walls and drainage",
+      "reference_image_ids": [
+        "GEN-22",
+        "GEN-36"
+      ],
+      "next_step": "Build modules from existing design studies; adapt dimensions to the final layout.",
+      "kind": "reference-family-not-isolated-asset"
+    },
+    {
+      "family_id": "FAM-017",
+      "name": "Shoreline rocks, cliffs and reef forms",
+      "reference_image_ids": [
+        "GEN-21"
+      ],
+      "next_step": "Use existing studies for form and materials; create variation through modelling.",
+      "kind": "reference-family-not-isolated-asset"
+    },
+    {
+      "family_id": "FAM-018",
+      "name": "Throne, dais, mirror, console, chaise and side tables",
+      "reference_image_ids": [
+        "GEN-24"
+      ],
+      "next_step": "Crop selected objects and retain their existing ornament family.",
+      "kind": "reference-family-not-isolated-asset"
+    },
+    {
+      "family_id": "FAM-019",
+      "name": "Crystal chandelier, curtains, rug, bookcase and lectern",
+      "reference_image_ids": [
+        "GEN-24"
+      ],
+      "next_step": "Use illustrated object sheets; vector template drawings are not the source.",
+      "kind": "reference-family-not-isolated-asset"
+    },
+    {
+      "family_id": "FAM-020",
+      "name": "Cake, stand, gifts, banners, swags and guest book",
+      "reference_image_ids": [
+        "GEN-25"
+      ],
+      "next_step": "Extract existing objects; no redesign required.",
+      "kind": "reference-family-not-isolated-asset"
+    },
+    {
+      "family_id": "FAM-021",
+      "name": "Lotus boat, wishing ring, floating candles and armillary",
+      "reference_image_ids": [
+        "GEN-28"
+      ],
+      "next_step": "Extract existing objects and record functional/moving parts before modelling.",
+      "kind": "reference-family-not-isolated-asset"
+    },
+    {
+      "family_id": "FAM-022",
+      "name": "Complete hero tower shafts and attached turret groups",
+      "reference_image_ids": [
+        "GEN-03",
+        "GEN-17",
+        "GEN-37"
+      ],
+      "next_step": "The crowns are already designed. Resolve each full shaft, unequal extensions, balcony attachment and depth with close-up multi-view studies derived from the chosen elevation.",
+      "kind": "reference-family-not-isolated-asset"
+    },
+    {
+      "family_id": "FAM-023",
+      "name": "Wing junctions, angled projections and recessed wall returns",
+      "reference_image_ids": [
+        "GEN-03",
+        "GEN-37"
+      ],
+      "next_step": "Produce registered plan and side sections for the visible wing transitions. Accurate geometry should be authored in Blender rather than invented by a new overall castle image.",
+      "kind": "reference-family-not-isolated-asset"
+    },
+    {
+      "family_id": "FAM-024",
+      "name": "Curved terrace corners and stair-to-level connections",
+      "reference_image_ids": [
+        "GEN-15",
+        "GEN-22",
+        "GEN-33",
+        "GEN-37"
+      ],
+      "next_step": "Existing motifs cover the look. Fit corner and landing geometry to the confirmed palace layout; generate a local reference only if an unseen decorative form is needed.",
+      "kind": "reference-family-not-isolated-asset"
+    },
+    {
+      "family_id": "FAM-025",
+      "name": "Rear and side continuity between palace ranges",
+      "reference_image_ids": [
+        "GEN-03"
+      ],
+      "next_step": "The overview exists but is not a registered construction drawing. Resolve occluded connections and common levels in the building layout.",
+      "kind": "reference-family-not-isolated-asset"
+    },
+    {
+      "family_id": "FAM-026",
+      "name": "Room connections and private apartments",
+      "reference_image_ids": [
+        "GEN-26"
+      ],
+      "next_step": "Ballroom, throne room, library and conservatory concepts exist. Define circulation and room-specific furniture before generating additional items.",
+      "kind": "reference-family-not-isolated-asset"
+    },
+    {
+      "family_id": "FAM-027",
+      "name": "Sea waves, lake surface and cascading water",
+      "reference_image_ids": [
+        "GEN-10",
+        "GEN-11",
+        "GEN-12",
+        "GEN-22"
+      ],
+      "next_step": "Design images exist. Build animated surfaces, reflections and foam in the game; another still image alone will not produce these effects.",
+      "kind": "reference-family-not-isolated-asset"
+    },
+    {
+      "family_id": "FAM-028",
+      "name": "One-object reference crops for reusable props",
+      "reference_image_ids": [
+        "GEN-13",
+        "GEN-20",
+        "GEN-24",
+        "GEN-25",
+        "GEN-28"
+      ],
+      "next_step": "Many full objects are already visible in multi-item boards. Crop first; generate only when important geometry remains ambiguous or occluded.",
+      "kind": "reference-family-not-isolated-asset"
+    }
+  ]
+}
