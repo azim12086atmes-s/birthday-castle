@@ -1,6 +1,6 @@
 # Birthday Castle image archive
 
-This archive contains **581 distinct image files** (491.5 MiB), including the 45 original illustrated boards, later generated concepts, vector drawings, crops, previews and build renders.
+This archive contains **590 distinct image files** (498.9 MiB), including the 45 original illustrated boards, later generated concepts, vector drawings, crops, previews and build renders.
 
 The active palace reference is **GEN-37**, with GEN-03 and GEN-16 as supporting views. Additional studies are retained for review; preservation does not mean approval. The corrected INT-C01 floor uses rose and ivory marble.
 
@@ -12,6 +12,9 @@ Use [the illustrated boards](images/illustrated-boards) to browse the original a
 | [modular-component-packs](images/modular-component-packs) | 2 |
 | [superseded-pack-revisions](images/superseded-pack-revisions) | 1 |
 | [original-bridge-source-crops](bridge-source-panels/INDEX.md) | 10 |
+| [missing-component-packs](images/missing-component-packs) | 1 |
+| [original-column-source-crops](column-source-panels/INDEX.md) | 7 |
+| [palace-structural-studies](images/palace-structural-studies) | 1 |
 | [additional-generated-studies](images/additional-generated-studies) | 33 |
 | [illustrated-boards](images/illustrated-boards) | 45 |
 | [interior-components](images/interior-components) | 3 |
@@ -86,3 +89,11 @@ A03 in PACK-BRG-001 revision 2 is **Stepped lotus capital**, matching the suppli
 ## Original bridge source audit
 
 [Ten named original-source crops](bridge-source-panels/INDEX.md) were saved before review, with a one-panel-at-a-time viewer. [The comparison](bridge-source-panels/COMPARISON.md) identifies changes to the cutwater pier, lantern post, tile motif and inferred deck segment, as well as unresolved span families and source dimension inconsistencies. The generated kits are retained interpretations and need correction before claiming an exact match. New asset generation is paused for this audit.
+
+## Missing-only source workflow
+
+[Current bridge references](BRIDGE-REFERENCE-SET.md) reuse the actual original components. [PACK-BRG-003](images/missing-component-packs/PACK-BRG-003.png) adds only the unisolated wide arch, central support and shore approach. [Seven column panels](column-source-panels/INDEX.md) were extracted and reviewed with no duplicate generation. Apply [the source-first workflow](SOURCE-FIRST-WORKFLOW.md) to subsequent sketches, using [the audit queue](source-audit-queue.csv). The next queued board is GEN-31, royal portal and gate.
+
+## Palace structural families
+
+[PAL-WALL-001](images/palace-structural-studies/PAL-WALL-001.png) shows the reconstructed full clustered-pier/stained-glass wall assembly, including front, three-quarter and profile views. The source crop was an assembly close-up, not a cross-section. [Structural and matching detail register](PALACE-STRUCTURE-AND-DETAIL-REGISTER.md) covers wall/decor, railing, fountain/staircase, wing/ward and tower families while preserving the original palace layout and material theme. It identifies existing sources before missing-only generation.

@@ -1,8 +1,8 @@
 # Named model targets
 
-Component IDs identify actual reference targets, not completed or approved meshes. Record model files and versions in model-tracker.csv; record combined pack outputs in batch-model-tracker.csv.
+Current source bindings are authoritative for model intake; earlier generated variants retain their history. Registration does not certify geometry.
 
-| Component ID | Name | Reference image |
+| Component ID | Name | Current reference |
 | --- | --- | --- |
 | GEN-29-C01 | lotus capital | [GEN-29](images/illustrated-boards/GEN-29.png) |
 | GEN-29-C02 | column shaft | [GEN-29](images/illustrated-boards/GEN-29.png) |
@@ -119,23 +119,28 @@ Component IDs identify actual reference targets, not completed or approved meshe
 | GEN-24-A07 | Crystal chandelier | [GEN-24](images/illustrated-boards/GEN-24.png) |
 | GEN-24-A08 | Bookcase | [GEN-24](images/illustrated-boards/GEN-24.png) |
 | GEN-24-A09 | Lectern | [GEN-24](images/illustrated-boards/GEN-24.png) |
-| PACK-BRG-001-A01 | Star-rosette medallion | [PACK-BRG-001](images/modular-component-packs/PACK-BRG-001.png) |
+| PACK-BRG-001-A01 | Star-rosette medallion | [BRIDGE-SRC-A](bridge-source-panels/A-railing-panel-four-metre-repeat.png) |
 | PACK-BRG-001-A02 | Carved floral rosette | [PACK-BRG-001](images/modular-component-packs/PACK-BRG-001.png) |
-| PACK-BRG-001-A03 | Stepped lotus capital | [PACK-BRG-001](images/modular-component-packs/PACK-BRG-001.png) |
-| PACK-BRG-001-A04 | Fluted column sleeve | [PACK-BRG-001](images/modular-component-packs/PACK-BRG-001.png) |
-| PACK-BRG-001-A05 | Leaf corbel bracket | [PACK-BRG-001](images/modular-component-packs/PACK-BRG-001.png) |
-| PACK-BRG-001-A06 | Pierced quatrefoil rail infill | [PACK-BRG-001](images/modular-component-packs/PACK-BRG-001.png) |
-| PACK-BRG-001-A07 | Blue-star rail infill | [PACK-BRG-001](images/modular-component-packs/PACK-BRG-001.png) |
-| PACK-BRG-001-A08 | Beaded cornice strip | [PACK-BRG-001](images/modular-component-packs/PACK-BRG-001.png) |
+| PACK-BRG-001-A03 | Stepped lotus capital | [MOD-COL-001](images/component-development-studies/MOD-COL-001.png) |
+| PACK-BRG-001-A04 | Fluted column sleeve | [BRIDGE-SRC-C](bridge-source-panels/C-structural-arch-module-lower-tier.png) |
+| PACK-BRG-001-A05 | Leaf corbel bracket | [BRIDGE-SRC-C](bridge-source-panels/C-structural-arch-module-lower-tier.png) |
+| PACK-BRG-001-A06 | Pierced quatrefoil rail infill | [BRIDGE-SRC-A](bridge-source-panels/A-railing-panel-four-metre-repeat.png) |
+| PACK-BRG-001-A07 | Blue-star rail infill | [BRIDGE-SRC-A](bridge-source-panels/A-railing-panel-four-metre-repeat.png) |
+| PACK-BRG-001-A08 | Beaded cornice strip | [BRIDGE-SRC-C](bridge-source-panels/C-structural-arch-module-lower-tier.png) |
 | PACK-BRG-001-A09 | Rose-vine frieze strip | [PACK-BRG-001](images/modular-component-packs/PACK-BRG-001.png) |
-| PACK-BRG-001-A10 | Corner scroll ornament | [PACK-BRG-001](images/modular-component-packs/PACK-BRG-001.png) |
-| PACK-BRG-001-A11 | Chamfered ornamental plinth | [PACK-BRG-001](images/modular-component-packs/PACK-BRG-001.png) |
-| PACK-BRG-001-A12 | Star finial | [PACK-BRG-001](images/modular-component-packs/PACK-BRG-001.png) |
+| PACK-BRG-001-A10 | Corner scroll ornament | [BRIDGE-SRC-C](bridge-source-panels/C-structural-arch-module-lower-tier.png) |
+| PACK-BRG-001-A11 | Chamfered ornamental plinth | [BRIDGE-SRC-C](bridge-source-panels/C-structural-arch-module-lower-tier.png) |
+| PACK-BRG-001-A12 | Star finial | [BRIDGE-SRC-B](bridge-source-panels/B-terminal-post-and-crystal-lantern.png) |
 | PACK-BRG-001-A13 | Lantern crown rib | [PACK-BRG-001](images/modular-component-packs/PACK-BRG-001.png) |
 | PACK-BRG-001-A14 | Crystal lantern and mounting arm | [PACK-BRG-001](images/modular-component-packs/PACK-BRG-001.png) |
 | PACK-BRG-001-A15 | Scroll water spout | [PACK-BRG-001](images/modular-component-packs/PACK-BRG-001.png) |
-| PACK-BRG-001-A16 | Star-inlay paving tile | [PACK-BRG-001](images/modular-component-packs/PACK-BRG-001.png) |
-| PACK-BRG-002-S01 | Lower-tier arch span | [PACK-BRG-002](images/modular-component-packs/PACK-BRG-002.png) |
-| PACK-BRG-002-S02 | Two-tier cutwater pier | [PACK-BRG-002](images/modular-component-packs/PACK-BRG-002.png) |
+| PACK-BRG-001-A16 | Floral deck tile | [BRIDGE-SRC-E](bridge-source-panels/E-star-inlay-deck-tile-four-metre-square.png) |
+| PACK-BRG-002-S01 | Lower-tier arch span | [BRIDGE-SRC-C](bridge-source-panels/C-structural-arch-module-lower-tier.png) |
+| PACK-BRG-002-S02 | Lotus cutwater pier | [BRIDGE-SRC-D](bridge-source-panels/D-cutwater-pier-two-tier-aqueduct.png) |
 | PACK-BRG-002-S03 | Porcelain deck segment | [PACK-BRG-002](images/modular-component-packs/PACK-BRG-002.png) |
-| PACK-BRG-002-S04 | Parapet railing segment | [PACK-BRG-002](images/modular-component-packs/PACK-BRG-002.png) |
+| PACK-BRG-002-S04 | Parapet railing segment | [BRIDGE-SRC-A](bridge-source-panels/A-railing-panel-four-metre-repeat.png) |
+| PACK-BRG-003-S05 | Wide arch span | [PACK-BRG-003](images/missing-component-packs/PACK-BRG-003.png) |
+| PACK-BRG-003-S06 | Slender central support | [PACK-BRG-003](images/missing-component-packs/PACK-BRG-003.png) |
+| PACK-BRG-003-S07 | Shore approach segment | [PACK-BRG-003](images/missing-component-packs/PACK-BRG-003.png) |
+| BRIDGE-SRC-B-L01 | Freestanding terminal crystal lantern post | [BRIDGE-SRC-B](bridge-source-panels/B-terminal-post-and-crystal-lantern.png) |
+| PAL-WALL-001-S01 | Complete glazed wall bay | [PAL-WALL-001](images/palace-structural-studies/PAL-WALL-001.png) |

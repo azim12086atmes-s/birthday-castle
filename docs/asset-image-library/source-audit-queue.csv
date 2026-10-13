@@ -1,0 +1,46 @@
+image_id,title,source_file,stage,indexed_panel_count,new_generation_count,decision
+GEN-18,Porcelain Long Bridge,images/illustrated-boards/GEN-18.png,source-panels-reviewed; gaps-studied,10,1,Reuse seven source panels; PACK-BRG-003 adds three unisolated families
+GEN-29,Columns and lotus capitals,images/illustrated-boards/GEN-29.png,source-panels-reviewed; full-assembly-gap-studied,7,1,Reused seven original component panels; PAL-WALL-001 develops the separately requested full wall assembly
+GEN-19,"Windows, portals and wall details",images/illustrated-boards/GEN-19.png,pending-source-panel-index,0,0,Audit before generating; existing assets are reused
+GEN-31,Royal portal and gate,images/illustrated-boards/GEN-31.png,pending-source-panel-index,0,0,Audit before generating; existing assets are reused
+GEN-33,"Balconies, parapets and stair rails",images/illustrated-boards/GEN-33.png,pending-source-panel-index,0,0,Audit before generating; existing assets are reused
+GEN-43,"Lower arcade, stairs and water ornament",images/illustrated-boards/GEN-43.png,pending-source-panel-index,0,0,Audit before generating; existing assets are reused
+GEN-34,Fountain monuments and sculpture,images/illustrated-boards/GEN-34.png,pending-source-panel-index,0,0,Audit before generating; existing assets are reused
+GEN-03,Towering garden palace multi-view,images/illustrated-boards/GEN-03.png,pending-source-panel-index,0,0,Audit before generating; existing assets are reused
+GEN-16,Palace roof gardens,images/illustrated-boards/GEN-16.png,pending-source-panel-index,0,0,Audit before generating; existing assets are reused
+GEN-37,Detailed front elevation,images/illustrated-boards/GEN-37.png,pending-source-panel-index,0,0,Audit before generating; existing assets are reused
+GEN-40,Floral relief and crests,images/illustrated-boards/GEN-40.png,pending-source-panel-index,0,0,Audit before generating; existing assets are reused
+GEN-42,Mouldings and cornices,images/illustrated-boards/GEN-42.png,pending-source-panel-index,0,0,Audit before generating; existing assets are reused
+GEN-01,Castle massing study,images/illustrated-boards/GEN-01.png,pending-source-panel-index,0,0,Audit before generating; existing assets are reused
+GEN-02,Castle ornament study,images/illustrated-boards/GEN-02.png,pending-source-panel-index,0,0,Audit before generating; existing assets are reused
+GEN-04,Expanded world map,images/illustrated-boards/GEN-04.png,pending-source-panel-index,0,0,Audit before generating; existing assets are reused
+GEN-05,Landmark architecture A,images/illustrated-boards/GEN-05.png,pending-source-panel-index,0,0,Audit before generating; existing assets are reused
+GEN-06,Landmark architecture B,images/illustrated-boards/GEN-06.png,pending-source-panel-index,0,0,Audit before generating; existing assets are reused
+GEN-07,Princess palace hero artifacts,images/illustrated-boards/GEN-07.png,pending-source-panel-index,0,0,Audit before generating; existing assets are reused
+GEN-08,Royal rose-blossom tree,images/illustrated-boards/GEN-08.png,pending-source-panel-index,0,0,Audit before generating; existing assets are reused
+GEN-09,Garden and coastal trees,images/illustrated-boards/GEN-09.png,pending-source-panel-index,0,0,Audit before generating; existing assets are reused
+GEN-10,Lantern Lake,images/illustrated-boards/GEN-10.png,pending-source-panel-index,0,0,Audit before generating; existing assets are reused
+GEN-11,Palace ponds and lotus fountain,images/illustrated-boards/GEN-11.png,pending-source-panel-index,0,0,Audit before generating; existing assets are reused
+GEN-12,Open sea and uneven shore,images/illustrated-boards/GEN-12.png,pending-source-panel-index,0,0,Audit before generating; existing assets are reused
+GEN-13,Garden planting kit,images/illustrated-boards/GEN-13.png,pending-source-panel-index,0,0,Audit before generating; existing assets are reused
+GEN-14,Rose Court and Moon Courtyard,images/illustrated-boards/GEN-14.png,pending-source-panel-index,0,0,Audit before generating; existing assets are reused
+GEN-15,Terrace gardens and grand approach,images/illustrated-boards/GEN-15.png,pending-source-panel-index,0,0,Audit before generating; existing assets are reused
+GEN-17,"Tower crowns, roofs and balconies",images/illustrated-boards/GEN-17.png,pending-source-panel-index,0,0,Audit before generating; existing assets are reused
+GEN-20,Garden furnishings and lighting,images/illustrated-boards/GEN-20.png,pending-source-panel-index,0,0,Audit before generating; existing assets are reused
+GEN-21,"Cliffs, reefs and terrain",images/illustrated-boards/GEN-21.png,pending-source-panel-index,0,0,Audit before generating; existing assets are reused
+GEN-22,"Paths, stairs and water connections",images/illustrated-boards/GEN-22.png,pending-source-panel-index,0,0,Audit before generating; existing assets are reused
+GEN-23,"Mother Tree, sky isles and moon crystals",images/illustrated-boards/GEN-23.png,pending-source-panel-index,0,0,Audit before generating; existing assets are reused
+GEN-24,Princess furniture and interior ornament,images/illustrated-boards/GEN-24.png,pending-source-panel-index,0,0,Audit before generating; existing assets are reused
+GEN-25,Birthday celebration decorations,images/illustrated-boards/GEN-25.png,pending-source-panel-index,0,0,Audit before generating; existing assets are reused
+GEN-26,Palace interior architecture,images/illustrated-boards/GEN-26.png,pending-source-panel-index,0,0,Audit before generating; existing assets are reused
+GEN-27,Kingdom landmark building studies,images/illustrated-boards/GEN-27.png,pending-source-panel-index,0,0,Audit before generating; existing assets are reused
+GEN-28,Lotus travel and wishing objects,images/illustrated-boards/GEN-28.png,pending-source-panel-index,0,0,Audit before generating; existing assets are reused
+GEN-30,Wall carvings and pattern grammar,images/illustrated-boards/GEN-30.png,pending-source-panel-index,0,0,Audit before generating; existing assets are reused
+GEN-32,"Crown ornaments, turret joints and lanterns",images/illustrated-boards/GEN-32.png,pending-source-panel-index,0,0,Audit before generating; existing assets are reused
+GEN-35,Garden artifacts and small fittings,images/illustrated-boards/GEN-35.png,pending-source-panel-index,0,0,Audit before generating; existing assets are reused
+GEN-36,Conservatory joints and paving,images/illustrated-boards/GEN-36.png,pending-source-panel-index,0,0,Audit before generating; existing assets are reused
+GEN-38,Glass patterns,images/illustrated-boards/GEN-38.png,pending-source-panel-index,0,0,Audit before generating; existing assets are reused
+GEN-39,Rails and gallery patterns,images/illustrated-boards/GEN-39.png,pending-source-panel-index,0,0,Audit before generating; existing assets are reused
+GEN-41,Column and capital masters,images/illustrated-boards/GEN-41.png,pending-source-panel-index,0,0,Audit before generating; existing assets are reused
+GEN-44,"Crowns, roofs and star finials",images/illustrated-boards/GEN-44.png,pending-source-panel-index,0,0,Audit before generating; existing assets are reused
+GEN-45,Lanterns and metalwork,images/illustrated-boards/GEN-45.png,pending-source-panel-index,0,0,Audit before generating; existing assets are reused

@@ -637,3 +637,22 @@ Stable IDs refer to exact saved images. Pack pieces are numbered within each lab
 | BRIDGE-SRC-E | [Star-inlay deck tile — four-metre square](bridge-source-panels/E-star-inlay-deck-tile-four-metre-square.png) |
 | BRIDGE-SRC-F | [Deck cross section — eighteen-metre width](bridge-source-panels/F-deck-cross-section-eighteen-metre-width.png) |
 | BRIDGE-SRC-G | [Footstep ripples — glossy deck effect at dusk](bridge-source-panels/G-footstep-ripples-glossy-deck-effect.png) |
+
+## Missing-only bridge sheet and column source panels
+
+| Image ID | Label |
+| --- | --- |
+| PACK-BRG-003 | [Porcelain Long Bridge — missing structural references](images/missing-component-packs/PACK-BRG-003.png) |
+| COLUMN-SRC-HERO | [Column assembly](column-source-panels/column-assembly.png) |
+| COLUMN-SRC-FRONT | [Lotus capital front elevation](column-source-panels/lotus-capital-front-elevation.png) |
+| COLUMN-SRC-UNDERSIDE | [Lotus capital underside and socket](column-source-panels/lotus-capital-underside-and-socket.png) |
+| COLUMN-SRC-SECTION | [Column section and joinery](column-source-panels/column-section-and-joinery.png) |
+| COLUMN-SRC-PORTAL | [Portal pier and arch springing](column-source-panels/portal-pier-and-arch-springing.png) |
+| COLUMN-SRC-BASE | [Column base and plinth](column-source-panels/column-base-and-plinth.png) |
+| COLUMN-SRC-CARVING | [Leaf carving close-up](column-source-panels/leaf-carving-close-up.png) |
+
+## Palace full assembly study
+
+| Image ID | Label |
+| --- | --- |
+| PAL-WALL-001 | [Clustered pier and complete glazed wall bay](images/palace-structural-studies/PAL-WALL-001.png) |

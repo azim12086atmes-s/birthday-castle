@@ -1,0 +1,43 @@
+{
+  "id": "PAL-WALL-001",
+  "title": "Clustered pier and complete stained-glass wall bay",
+  "component_id": "PAL-WALL-001-S01",
+  "kind": "missing-structural-assembly-view",
+  "source_image_id": "GEN-29",
+  "source_panel": "COLUMN-SRC-PORTAL",
+  "reference": "GEN-29, one 1100px preview",
+  "reference_policy": "One small original sheet; its indexed portal detail controls the capitals and arch springing, and its existing base detail controls the plinth vocabulary",
+  "function": "Full wall/window assembly showing how the clustered pier supports two adjoining pointed glazed bays",
+  "opening_type": "window; glass closes the aperture, not a walk-through door",
+  "dimensions": "Unresolved absolute dimensions; maintain source proportions and record the reconstructed bay widths, arch extents and depth as proposed",
+  "attachment_face": "Flat foundation underside; vertical end joins for neighboring wall units; glazing seated in recessed aperture",
+  "semantic_front": "Decorated face with visible columns, arch ribs and stained glass",
+  "symmetry": "Paired bays balanced around one central triple-column pier; this local assembly symmetry does not override the palace's asymmetrical massing",
+  "reuse_class": "modular structural family study",
+  "status": "generated-missing-assembly-study-pending-review",
+  "prompt": "Generate ONE COMPLETE FULL VIEW of the architectural assembly partly shown in the supplied COLUMN REFERENCE, especially its lower-middle panel labelled PORTAL PIER & ARCH SPRINGING. The user asks what this close-up belongs to and needs a full building WALL ASSET view. It is a clustered pier/arch assembly with stained glass behind, NOT a cross-section. Show its missing whole extent rather than another cropped close-up or unrelated palace scene. Use the capital and plinth drawings in this SAME reference as the detail vocabulary.\n\nOne complete standalone facade/wall unit: TWO tall pointed stained-glass window bays sharing a CENTRAL CLUSTER OF THREE COLUMNS, with restrained outer end piers, physically thick rose/ivory marble wall/frame around the apertures, full foundations and bases below, all arch apexes above, narrow crown cornice, clean joining ends. The central cluster has one main fluted ivory/rose shaft and two slightly slimmer adjoining shafts, stepped ivory/rose plinths, delicate gold ribs, narrow indigo recesses, solid stepped abaci and the source's long concave LOTUS capitals. Gold-edged tall rose/ivory petals, small gold/ivory floral lobes, INDIGO neck collars with GOLD STARS, bead rings and small hanging blue crystal drops. Curving pointed arch ribs branch outward from the capitals into the TWO complete adjoining arches, as indicated by the source close-up. All components visibly support/connect; no dangling arch or floating capital.\n\nWINDOWS are real pointed apertures framed in thick masonry, with recessed indigo/blue, lilac and soft rose stained glass and delicate gold leaf/rose/star tracery. Glass remains visible behind the arch piers, matching the source. Do not turn them into door passages, blind painted arches or a completely opaque wall behind freestanding columns. Show the reveals and frame depth clearly. Ivory mouldings and real rose marble slab fields with restrained gold and the original lotus motif, no beige plaster, generic Corinthian acanthus, muqarnas replacement, invented giant tower, dome, fountain, stairs, garden or separate room scene.\n\nA wide clean architectural asset sheet with ONE large full three-quarter orthographic view, entire wall unit in frame, generous empty margins, clear depth on one side and a plain grounded foundation strip. Keep the proportions graceful and tall; do not flatten the window bays into short squat arches. A tiny subtly drawn side/profile inset may show the wall and glazing recess only if it does not crowd the main view. No sliced/cutaway main view. Print the heading CLUSTERED PIER & STAINED-GLASS WALL BAY and the label PAL-WALL-001-S01 Complete glazed wall bay. Small optional labels can identify Clustered pier, Lotus capital, Window aperture, Arch ribs and Plinth, with unobtrusive fine leaders. Fine architectural concept detail, sculpturally readable rose-and-ivory marble, restrained gold and the original blue/lilac glass. Neutral studio backdrop, no people or surrounding palace. The hidden dimensions and full-wall extent are reconstructed design proposals, not a measured original elevation.",
+  "output_file": "images/palace-structural-studies/PAL-WALL-001.png",
+  "sha256": "9d32fba3dcf9168347cc70d25de6019822cbb4cb5e7448d064ffef3042038123",
+  "openings": [
+    {
+      "id": "W01",
+      "type": "window",
+      "position": "left bay",
+      "dimensions": "unresolved",
+      "glazing": "recessed blue/lilac/rose glass"
+    },
+    {
+      "id": "W02",
+      "type": "window",
+      "position": "right bay",
+      "dimensions": "unresolved",
+      "glazing": "recessed blue/lilac/rose glass"
+    }
+  ],
+  "review_notes": [
+    "Full front, three-quarter and side/profile views are present.",
+    "Rose/ivory marble, lotus capital motif, blue star collars and blue/lilac/rose glazing follow the reference family.",
+    "Full wall extents, depth and tracery arrangement are reconstructed proposals; this is not a replacement palace front authority.",
+    "Views and labels are not registered geometry; verify pier shaft count, wall apertures and joint fit when modelling."
+  ]
+}

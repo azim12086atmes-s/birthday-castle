@@ -1,0 +1,122 @@
+{
+  "source_image_id": "GEN-29",
+  "source_file": "../images/illustrated-boards/GEN-29.png",
+  "source_sha256": "88a558a29cc52bd50459307297f946d88a274f090a1bf96c4da212383a2fd1ad",
+  "method": "Direct lossless crops saved and named before individual review",
+  "panels": [
+    {
+      "id": "COL-HERO",
+      "title": "Column assembly",
+      "file": "column-assembly.png",
+      "box_xyxy": [
+        10,
+        32,
+        451,
+        1013
+      ],
+      "size": [
+        441,
+        981
+      ],
+      "sha256": "4e80ddae28ed4a7efd9a72dd896b29bf30d13e3ebb838c931f5181620e37f345"
+    },
+    {
+      "id": "COL-FRONT",
+      "title": "Lotus capital front elevation",
+      "file": "lotus-capital-front-elevation.png",
+      "box_xyxy": [
+        457,
+        48,
+        811,
+        509
+      ],
+      "size": [
+        354,
+        461
+      ],
+      "sha256": "8c9bd35c1146b611848f0eb6599b0e5f1bbad42618bb41978e9f86b2e02e334a"
+    },
+    {
+      "id": "COL-UNDERSIDE",
+      "title": "Lotus capital underside and socket",
+      "file": "lotus-capital-underside-and-socket.png",
+      "box_xyxy": [
+        815,
+        48,
+        1160,
+        509
+      ],
+      "size": [
+        345,
+        461
+      ],
+      "sha256": "2a5a8f0a2621c6f25e2e33059fddc25aa6db12d85aa5b636fbf21543ce071ba7"
+    },
+    {
+      "id": "COL-SECTION",
+      "title": "Column section and joinery",
+      "file": "column-section-and-joinery.png",
+      "box_xyxy": [
+        1169,
+        48,
+        1523,
+        509
+      ],
+      "size": [
+        354,
+        461
+      ],
+      "sha256": "c78d7c616e66f013be31c2e0d24994d628436de9785338070a7252cded4fce9f"
+    },
+    {
+      "id": "COL-PORTAL",
+      "title": "Portal pier and arch springing",
+      "file": "portal-pier-and-arch-springing.png",
+      "box_xyxy": [
+        457,
+        515,
+        878,
+        1013
+      ],
+      "size": [
+        421,
+        498
+      ],
+      "sha256": "f500fea13402a0cbe09a04aa80e3c13b5825f30a9a1c5861393635cbc48e17c7"
+    },
+    {
+      "id": "COL-BASE",
+      "title": "Column base and plinth",
+      "file": "column-base-and-plinth.png",
+      "box_xyxy": [
+        884,
+        515,
+        1210,
+        1013
+      ],
+      "size": [
+        326,
+        498
+      ],
+      "sha256": "c63b3395be44e681959064207b453760069f491de4e74284917bc0b80fb0c156"
+    },
+    {
+      "id": "COL-CARVING",
+      "title": "Leaf carving close-up",
+      "file": "leaf-carving-close-up.png",
+      "box_xyxy": [
+        1217,
+        515,
+        1523,
+        1013
+      ],
+      "size": [
+        306,
+        498
+      ],
+      "sha256": "2a41daf6a3900d6b0e2faf5e73f5f0f85298055bdd83efaf33c09f81ec7a7abc"
+    }
+  ],
+  "boundary_review": "Panel dividers checked using one 640px layout preview; corrected crops exclude neighboring panels",
+  "review_status": "Seven source panels reviewed individually; no duplicate design generation required"
+}

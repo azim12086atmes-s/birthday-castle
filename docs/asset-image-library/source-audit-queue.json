@@ -1,0 +1,411 @@
+{
+  "policy": "Generate only verified gaps; do not fill image-count targets with duplicate designs",
+  "queue": [
+    {
+      "image_id": "GEN-18",
+      "title": "Porcelain Long Bridge",
+      "source_file": "images/illustrated-boards/GEN-18.png",
+      "stage": "source-panels-reviewed; gaps-studied",
+      "indexed_panel_count": 10,
+      "new_generation_count": 1,
+      "decision": "Reuse seven source panels; PACK-BRG-003 adds three unisolated families"
+    },
+    {
+      "image_id": "GEN-29",
+      "title": "Columns and lotus capitals",
+      "source_file": "images/illustrated-boards/GEN-29.png",
+      "stage": "source-panels-reviewed; full-assembly-gap-studied",
+      "indexed_panel_count": 7,
+      "new_generation_count": 1,
+      "decision": "Reused seven original component panels; PAL-WALL-001 develops the separately requested full wall assembly"
+    },
+    {
+      "image_id": "GEN-19",
+      "title": "Windows, portals and wall details",
+      "source_file": "images/illustrated-boards/GEN-19.png",
+      "stage": "pending-source-panel-index",
+      "indexed_panel_count": 0,
+      "new_generation_count": 0,
+      "decision": "Audit before generating; existing assets are reused"
+    },
+    {
+      "image_id": "GEN-31",
+      "title": "Royal portal and gate",
+      "source_file": "images/illustrated-boards/GEN-31.png",
+      "stage": "pending-source-panel-index",
+      "indexed_panel_count": 0,
+      "new_generation_count": 0,
+      "decision": "Audit before generating; existing assets are reused"
+    },
+    {
+      "image_id": "GEN-33",
+      "title": "Balconies, parapets and stair rails",
+      "source_file": "images/illustrated-boards/GEN-33.png",
+      "stage": "pending-source-panel-index",
+      "indexed_panel_count": 0,
+      "new_generation_count": 0,
+      "decision": "Audit before generating; existing assets are reused"
+    },
+    {
+      "image_id": "GEN-43",
+      "title": "Lower arcade, stairs and water ornament",
+      "source_file": "images/illustrated-boards/GEN-43.png",
+      "stage": "pending-source-panel-index",
+      "indexed_panel_count": 0,
+      "new_generation_count": 0,
+      "decision": "Audit before generating; existing assets are reused"
+    },
+    {
+      "image_id": "GEN-34",
+      "title": "Fountain monuments and sculpture",
+      "source_file": "images/illustrated-boards/GEN-34.png",
+      "stage": "pending-source-panel-index",
+      "indexed_panel_count": 0,
+      "new_generation_count": 0,
+      "decision": "Audit before generating; existing assets are reused"
+    },
+    {
+      "image_id": "GEN-03",
+      "title": "Towering garden palace multi-view",
+      "source_file": "images/illustrated-boards/GEN-03.png",
+      "stage": "pending-source-panel-index",
+      "indexed_panel_count": 0,
+      "new_generation_count": 0,
+      "decision": "Audit before generating; existing assets are reused"
+    },
+    {
+      "image_id": "GEN-16",
+      "title": "Palace roof gardens",
+      "source_file": "images/illustrated-boards/GEN-16.png",
+      "stage": "pending-source-panel-index",
+      "indexed_panel_count": 0,
+      "new_generation_count": 0,
+      "decision": "Audit before generating; existing assets are reused"
+    },
+    {
+      "image_id": "GEN-37",
+      "title": "Detailed front elevation",
+      "source_file": "images/illustrated-boards/GEN-37.png",
+      "stage": "pending-source-panel-index",
+      "indexed_panel_count": 0,
+      "new_generation_count": 0,
+      "decision": "Audit before generating; existing assets are reused"
+    },
+    {
+      "image_id": "GEN-40",
+      "title": "Floral relief and crests",
+      "source_file": "images/illustrated-boards/GEN-40.png",
+      "stage": "pending-source-panel-index",
+      "indexed_panel_count": 0,
+      "new_generation_count": 0,
+      "decision": "Audit before generating; existing assets are reused"
+    },
+    {
+      "image_id": "GEN-42",
+      "title": "Mouldings and cornices",
+      "source_file": "images/illustrated-boards/GEN-42.png",
+      "stage": "pending-source-panel-index",
+      "indexed_panel_count": 0,
+      "new_generation_count": 0,
+      "decision": "Audit before generating; existing assets are reused"
+    },
+    {
+      "image_id": "GEN-01",
+      "title": "Castle massing study",
+      "source_file": "images/illustrated-boards/GEN-01.png",
+      "stage": "pending-source-panel-index",
+      "indexed_panel_count": 0,
+      "new_generation_count": 0,
+      "decision": "Audit before generating; existing assets are reused"
+    },
+    {
+      "image_id": "GEN-02",
+      "title": "Castle ornament study",
+      "source_file": "images/illustrated-boards/GEN-02.png",
+      "stage": "pending-source-panel-index",
+      "indexed_panel_count": 0,
+      "new_generation_count": 0,
+      "decision": "Audit before generating; existing assets are reused"
+    },
+    {
+      "image_id": "GEN-04",
+      "title": "Expanded world map",
+      "source_file": "images/illustrated-boards/GEN-04.png",
+      "stage": "pending-source-panel-index",
+      "indexed_panel_count": 0,
+      "new_generation_count": 0,
+      "decision": "Audit before generating; existing assets are reused"
+    },
+    {
+      "image_id": "GEN-05",
+      "title": "Landmark architecture A",
+      "source_file": "images/illustrated-boards/GEN-05.png",
+      "stage": "pending-source-panel-index",
+      "indexed_panel_count": 0,
+      "new_generation_count": 0,
+      "decision": "Audit before generating; existing assets are reused"
+    },
+    {
+      "image_id": "GEN-06",
+      "title": "Landmark architecture B",
+      "source_file": "images/illustrated-boards/GEN-06.png",
+      "stage": "pending-source-panel-index",
+      "indexed_panel_count": 0,
+      "new_generation_count": 0,
+      "decision": "Audit before generating; existing assets are reused"
+    },
+    {
+      "image_id": "GEN-07",
+      "title": "Princess palace hero artifacts",
+      "source_file": "images/illustrated-boards/GEN-07.png",
+      "stage": "pending-source-panel-index",
+      "indexed_panel_count": 0,
+      "new_generation_count": 0,
+      "decision": "Audit before generating; existing assets are reused"
+    },
+    {
+      "image_id": "GEN-08",
+      "title": "Royal rose-blossom tree",
+      "source_file": "images/illustrated-boards/GEN-08.png",
+      "stage": "pending-source-panel-index",
+      "indexed_panel_count": 0,
+      "new_generation_count": 0,
+      "decision": "Audit before generating; existing assets are reused"
+    },
+    {
+      "image_id": "GEN-09",
+      "title": "Garden and coastal trees",
+      "source_file": "images/illustrated-boards/GEN-09.png",
+      "stage": "pending-source-panel-index",
+      "indexed_panel_count": 0,
+      "new_generation_count": 0,
+      "decision": "Audit before generating; existing assets are reused"
+    },
+    {
+      "image_id": "GEN-10",
+      "title": "Lantern Lake",
+      "source_file": "images/illustrated-boards/GEN-10.png",
+      "stage": "pending-source-panel-index",
+      "indexed_panel_count": 0,
+      "new_generation_count": 0,
+      "decision": "Audit before generating; existing assets are reused"
+    },
+    {
+      "image_id": "GEN-11",
+      "title": "Palace ponds and lotus fountain",
+      "source_file": "images/illustrated-boards/GEN-11.png",
+      "stage": "pending-source-panel-index",
+      "indexed_panel_count": 0,
+      "new_generation_count": 0,
+      "decision": "Audit before generating; existing assets are reused"
+    },
+    {
+      "image_id": "GEN-12",
+      "title": "Open sea and uneven shore",
+      "source_file": "images/illustrated-boards/GEN-12.png",
+      "stage": "pending-source-panel-index",
+      "indexed_panel_count": 0,
+      "new_generation_count": 0,
+      "decision": "Audit before generating; existing assets are reused"
+    },
+    {
+      "image_id": "GEN-13",
+      "title": "Garden planting kit",
+      "source_file": "images/illustrated-boards/GEN-13.png",
+      "stage": "pending-source-panel-index",
+      "indexed_panel_count": 0,
+      "new_generation_count": 0,
+      "decision": "Audit before generating; existing assets are reused"
+    },
+    {
+      "image_id": "GEN-14",
+      "title": "Rose Court and Moon Courtyard",
+      "source_file": "images/illustrated-boards/GEN-14.png",
+      "stage": "pending-source-panel-index",
+      "indexed_panel_count": 0,
+      "new_generation_count": 0,
+      "decision": "Audit before generating; existing assets are reused"
+    },
+    {
+      "image_id": "GEN-15",
+      "title": "Terrace gardens and grand approach",
+      "source_file": "images/illustrated-boards/GEN-15.png",
+      "stage": "pending-source-panel-index",
+      "indexed_panel_count": 0,
+      "new_generation_count": 0,
+      "decision": "Audit before generating; existing assets are reused"
+    },
+    {
+      "image_id": "GEN-17",
+      "title": "Tower crowns, roofs and balconies",
+      "source_file": "images/illustrated-boards/GEN-17.png",
+      "stage": "pending-source-panel-index",
+      "indexed_panel_count": 0,
+      "new_generation_count": 0,
+      "decision": "Audit before generating; existing assets are reused"
+    },
+    {
+      "image_id": "GEN-20",
+      "title": "Garden furnishings and lighting",
+      "source_file": "images/illustrated-boards/GEN-20.png",
+      "stage": "pending-source-panel-index",
+      "indexed_panel_count": 0,
+      "new_generation_count": 0,
+      "decision": "Audit before generating; existing assets are reused"
+    },
+    {
+      "image_id": "GEN-21",
+      "title": "Cliffs, reefs and terrain",
+      "source_file": "images/illustrated-boards/GEN-21.png",
+      "stage": "pending-source-panel-index",
+      "indexed_panel_count": 0,
+      "new_generation_count": 0,
+      "decision": "Audit before generating; existing assets are reused"
+    },
+    {
+      "image_id": "GEN-22",
+      "title": "Paths, stairs and water connections",
+      "source_file": "images/illustrated-boards/GEN-22.png",
+      "stage": "pending-source-panel-index",
+      "indexed_panel_count": 0,
+      "new_generation_count": 0,
+      "decision": "Audit before generating; existing assets are reused"
+    },
+    {
+      "image_id": "GEN-23",
+      "title": "Mother Tree, sky isles and moon crystals",
+      "source_file": "images/illustrated-boards/GEN-23.png",
+      "stage": "pending-source-panel-index",
+      "indexed_panel_count": 0,
+      "new_generation_count": 0,
+      "decision": "Audit before generating; existing assets are reused"
+    },
+    {
+      "image_id": "GEN-24",
+      "title": "Princess furniture and interior ornament",
+      "source_file": "images/illustrated-boards/GEN-24.png",
+      "stage": "pending-source-panel-index",
+      "indexed_panel_count": 0,
+      "new_generation_count": 0,
+      "decision": "Audit before generating; existing assets are reused"
+    },
+    {
+      "image_id": "GEN-25",
+      "title": "Birthday celebration decorations",
+      "source_file": "images/illustrated-boards/GEN-25.png",
+      "stage": "pending-source-panel-index",
+      "indexed_panel_count": 0,
+      "new_generation_count": 0,
+      "decision": "Audit before generating; existing assets are reused"
+    },
+    {
+      "image_id": "GEN-26",
+      "title": "Palace interior architecture",
+      "source_file": "images/illustrated-boards/GEN-26.png",
+      "stage": "pending-source-panel-index",
+      "indexed_panel_count": 0,
+      "new_generation_count": 0,
+      "decision": "Audit before generating; existing assets are reused"
+    },
+    {
+      "image_id": "GEN-27",
+      "title": "Kingdom landmark building studies",
+      "source_file": "images/illustrated-boards/GEN-27.png",
+      "stage": "pending-source-panel-index",
+      "indexed_panel_count": 0,
+      "new_generation_count": 0,
+      "decision": "Audit before generating; existing assets are reused"
+    },
+    {
+      "image_id": "GEN-28",
+      "title": "Lotus travel and wishing objects",
+      "source_file": "images/illustrated-boards/GEN-28.png",
+      "stage": "pending-source-panel-index",
+      "indexed_panel_count": 0,
+      "new_generation_count": 0,
+      "decision": "Audit before generating; existing assets are reused"
+    },
+    {
+      "image_id": "GEN-30",
+      "title": "Wall carvings and pattern grammar",
+      "source_file": "images/illustrated-boards/GEN-30.png",
+      "stage": "pending-source-panel-index",
+      "indexed_panel_count": 0,
+      "new_generation_count": 0,
+      "decision": "Audit before generating; existing assets are reused"
+    },
+    {
+      "image_id": "GEN-32",
+      "title": "Crown ornaments, turret joints and lanterns",
+      "source_file": "images/illustrated-boards/GEN-32.png",
+      "stage": "pending-source-panel-index",
+      "indexed_panel_count": 0,
+      "new_generation_count": 0,
+      "decision": "Audit before generating; existing assets are reused"
+    },
+    {
+      "image_id": "GEN-35",
+      "title": "Garden artifacts and small fittings",
+      "source_file": "images/illustrated-boards/GEN-35.png",
+      "stage": "pending-source-panel-index",
+      "indexed_panel_count": 0,
+      "new_generation_count": 0,
+      "decision": "Audit before generating; existing assets are reused"
+    },
+    {
+      "image_id": "GEN-36",
+      "title": "Conservatory joints and paving",
+      "source_file": "images/illustrated-boards/GEN-36.png",
+      "stage": "pending-source-panel-index",
+      "indexed_panel_count": 0,
+      "new_generation_count": 0,
+      "decision": "Audit before generating; existing assets are reused"
+    },
+    {
+      "image_id": "GEN-38",
+      "title": "Glass patterns",
+      "source_file": "images/illustrated-boards/GEN-38.png",
+      "stage": "pending-source-panel-index",
+      "indexed_panel_count": 0,
+      "new_generation_count": 0,
+      "decision": "Audit before generating; existing assets are reused"
+    },
+    {
+      "image_id": "GEN-39",
+      "title": "Rails and gallery patterns",
+      "source_file": "images/illustrated-boards/GEN-39.png",
+      "stage": "pending-source-panel-index",
+      "indexed_panel_count": 0,
+      "new_generation_count": 0,
+      "decision": "Audit before generating; existing assets are reused"
+    },
+    {
+      "image_id": "GEN-41",
+      "title": "Column and capital masters",
+      "source_file": "images/illustrated-boards/GEN-41.png",
+      "stage": "pending-source-panel-index",
+      "indexed_panel_count": 0,
+      "new_generation_count": 0,
+      "decision": "Audit before generating; existing assets are reused"
+    },
+    {
+      "image_id": "GEN-44",
+      "title": "Crowns, roofs and star finials",
+      "source_file": "images/illustrated-boards/GEN-44.png",
+      "stage": "pending-source-panel-index",
+      "indexed_panel_count": 0,
+      "new_generation_count": 0,
+      "decision": "Audit before generating; existing assets are reused"
+    },
+    {
+      "image_id": "GEN-45",
+      "title": "Lanterns and metalwork",
+      "source_file": "images/illustrated-boards/GEN-45.png",
+      "stage": "pending-source-panel-index",
+      "indexed_panel_count": 0,
+      "new_generation_count": 0,
+      "decision": "Audit before generating; existing assets are reused"
+    }
+  ],
+  "palace_scope_register": "PALACE-STRUCTURE-AND-DETAIL-REGISTER.md"
+}

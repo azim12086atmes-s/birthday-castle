@@ -1,0 +1,49 @@
+{
+  "id": "PACK-BRG-003",
+  "title": "Porcelain Long Bridge \u2014 missing structural references",
+  "status": "generated-gap-study-pending-review",
+  "reference_image_id": "GEN-18",
+  "reference": "GEN-18, one 1100px preview",
+  "reference_policy": "One small original bridge image; reuse all existing labelled source panels without regenerating them",
+  "excluded_existing_references": {
+    "railing": "BRIDGE-SRC-A",
+    "freestanding_lantern_post": "BRIDGE-SRC-B",
+    "narrow_arch": "BRIDGE-SRC-C",
+    "lotus_cutwater_pier": "BRIDGE-SRC-D",
+    "deck_tile": "BRIDGE-SRC-E",
+    "deck_cross_section": "BRIDGE-SRC-F",
+    "deck_ripple_effect": "BRIDGE-SRC-G",
+    "requested_stepped_capital": "MOD-COL-001"
+  },
+  "components": [
+    {
+      "id": "S05",
+      "name": "Wide arch span",
+      "source": "GEN-18 longitudinal elevation; broad middle spans",
+      "missing": "No dedicated isolated component view",
+      "notes": "Visible front span proportion controls; hidden side depth and join seats are proposed"
+    },
+    {
+      "id": "S06",
+      "name": "Slender central support",
+      "source": "GEN-18 longitudinal elevation; very thin center support",
+      "missing": "No dedicated isolated component view",
+      "notes": "Thin silhouette controls; submerged foundation remains unresolved"
+    },
+    {
+      "id": "S07",
+      "name": "Shore approach segment",
+      "source": "GEN-18 right-hand elevation endpoint and upper isometric approach",
+      "missing": "No dedicated isolated component view",
+      "notes": "Use the source sloped approach; exact gradient and shore-level transition remain unresolved"
+    }
+  ],
+  "prompt": "Create ONE MISSING-COMPONENT REFERENCE SHEET for the original PORCELAIN LONG BRIDGE in the supplied source illustration. Generate ONLY THREE isolated structural component families that are visible in the full bridge but DO NOT have a dedicated source panel: a wide middle arch, the very slender central support, and the shore approach. Do NOT redraw the existing narrow arch from panel C, cutwater pier D, lantern post B, rail A, tile E or cross-section F. Exactly THREE whole separate objects in one spacious horizontal sheet, one clear orthographic three-quarter view per object. Print the heading PORCELAIN LONG BRIDGE \u2014 MISSING STRUCTURAL REFERENCES and short names S05 Wide arch span, S06 Slender central support, S07 Shore approach segment below their respective objects. No fourth object, no entire assembled bridge or extra duplicate views.\n\nS05 LEFT, WIDE ARCH SPAN: follow one of the broad middle spans visible in the original longitudinal elevation. Its opening is roughly twice as broad as the smaller outer bays at a similar springing/deck height, with an elegant gently pointed/flattened rise, pale ivory structural voussoirs, thin gold opening ribs, blue/white/gold star/floral ornament in the spandrel and a stepped narrow upper fascia. Keep the source's delicate, graceful broad opening rather than a semicircular Roman arch or a copied tall narrow C arch. Show the arch as a complete additive span with compact end springing/attachment blocks, not two entire heavy cutwater pier towers fused into it. Whole solid arch thickness and true open aperture are legible. No lanterns mounted to the top; source lamps and railing are existing separate parts.\n\nS06 CENTER, SLENDER CENTRAL SUPPORT: isolate the extraordinarily thin support at the center of the original elevation, where the two broad central arches meet. A very slim ivory/gold vertical column/stem with small collars, almost needle-like compared with the broad lotus piers, a minimal lower foot/seat and a shallow split corbel/Y springing head that receives adjacent arches. Maintain its tall thin proportions from the illustration. Do not turn it into a blue-windowed tower, a thick lotus cutwater or a generic chunky column. It is a single coherent load-receiving component, no floating limbs, no ornamental oversized capital. Only a tiny proposed base seating plane; no invented massive submerged foundation.\n\nS07 RIGHT, SHORE APPROACH SEGMENT: isolate the short terminal stone approach at the right end of the original elevation, also suggested by the upper isometric. A gently descending ivory/porcelain walk from bridge level toward the shore, with matching shallow fascia and delicate low parapet rails along its sides, a small flared/chamfered terminal plinth and clean upper end interface. Preserve the original sloped stone approach silhouette. No spiral stair, giant new gatehouse, tall extra tower, huge invented viaduct or unrelated terrain scene. Its lower end rests on a compact local stone landing, not floating in air. Keep the approach sparse so existing lantern posts and ornaments can be added separately.\n\nConsistent source materials throughout: luminous ivory/porcelain with subtle rose marble veining, fine warm gold, modest indigo details. Soft neutral background with empty margins between all objects, full silhouettes visible, crisp readable geometry and fine but restrained carving. A source-faithful component study; unseen thickness, joints and approach gradient are design interpretations, not claimed measured engineering dimensions. Keep each name legible and outside its object's outline.",
+  "output_file": "images/missing-component-packs/PACK-BRG-003.png",
+  "sha256": "f6af34a7f21fec0b290852fb46035d4faf280091cc7037acedbaf8114c7e82f0",
+  "review_notes": [
+    "Exactly three named component families are visible.",
+    "Broad arch ends, central fork head and shore support details are inferred; not geometrically registered to the original source.",
+    "The shore approach includes local rocks and footing details; remove/separate environment geometry during 3D intake if unnecessary."
+  ]
+}

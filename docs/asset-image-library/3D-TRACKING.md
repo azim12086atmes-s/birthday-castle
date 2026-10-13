@@ -34,3 +34,7 @@ For a generator returning one file containing the whole pack, record the batch i
 ## Reference revisions
 
 PACK-BRG-001 revision 2 replaces A03 with the user-supplied stepped lotus capital. The part ID remains PACK-BRG-001-A03. Record the reference SHA-256 or revision when generating a model. An existing model made from revision 1 keeps that original reference hash; it does not automatically become a match to revision 2.
+
+## Source overrides and missing-only generation
+
+Use BRIDGE-REFERENCE-SET.md for current bridge intake. Adequate original source crops override inaccurate generated interpretations without another image-generation call. Current component IDs remain stable; source histories preserve prior hashes. PACK-BRG-003 contains only S05 Wide arch span, S06 Slender central support and S07 Shore approach segment. Model IDs are PACK-BRG-003-S05/S06/S07. Existing output files, when supplied, retain their original reference provenance.

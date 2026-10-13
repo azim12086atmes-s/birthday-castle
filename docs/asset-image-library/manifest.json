@@ -1,8 +1,8 @@
 {
   "date": "2026-10-13",
-  "distinct_image_count": 581,
-  "source_file_count": 832,
-  "total_bytes": 515379425,
+  "distinct_image_count": 590,
+  "source_file_count": 841,
+  "total_bytes": 523153842,
   "categories": {
     "additional-generated-studies": 33,
     "component-development-studies": 3,
@@ -14,7 +14,10 @@
     "renders-and-screenshots": 48,
     "vector-drawings": 130,
     "superseded-pack-revisions": 1,
-    "original-bridge-source-crops": 10
+    "original-bridge-source-crops": 10,
+    "missing-component-packs": 1,
+    "original-column-source-crops": 7,
+    "palace-structural-studies": 1
   },
   "active_palace_authority": "GEN-37 original front elevation; GEN-03 and GEN-16 supporting views",
   "notes": [
@@ -26,7 +29,9 @@
     "Every image has a stable ID and versioned content hash; component IDs link named model targets to an exact reference hash. IDs are not approval or completion claims.",
     "PACK-BRG-001 contains 16 named ornaments; PACK-BRG-002 contains four named bridge segments. MOD sheets are retained single-component development studies, superseded by the user-requested pack format.",
     "PACK-BRG-001 revision 2 corrects A03 to the supplied stepped capital. Original revision is preserved as PACK-BRG-001-R01. Model provenance must include the reference hash or revision.",
-    "Original bridge panels A\u2013G and overview views are preserved as ten named exact pixel crops. Source comparison flags discrepancies in the generated bridge packs; do not claim exact GEN-18 reconstruction readiness."
+    "Original bridge panels A\u2013G and overview views are preserved as ten named exact pixel crops. Source comparison flags discrepancies in the generated bridge packs; do not claim exact GEN-18 reconstruction readiness.",
+    "Missing-only production: existing bridge targets now use adequate original source panels. PACK-BRG-003 adds only three previously unisolated families. GEN-29 source panels are indexed with no new column generation.",
+    "PAL-WALL-001 reconstructs the missing full wall/arch assembly from GEN-29. It reuses the existing capital/base motif, adds no new palace layout authority, and does not certify hidden dimensions or view parity."
   ],
   "images": [
     {
@@ -1852,7 +1857,7 @@
       ],
       "label": "PACK-BRG-001 \u2014 Porcelain Long Bridge \u2014 ornament kit",
       "reference_role": "multi-component-design-pack",
-      "design_status": "needs-source-correction; retained-generated-interpretation",
+      "design_status": "superseded-generated-interpretation; use-source-overrides",
       "related_image_ids": [
         "GEN-18",
         "MOD-COL-001",
@@ -1872,7 +1877,8 @@
           "reason": "A03 replaced with the user-supplied stepped lotus-capital design, including solid abacus and tall rose petals."
         }
       ],
-      "source_comparison": "bridge-source-panels/COMPARISON.md"
+      "source_comparison": "bridge-source-panels/COMPARISON.md",
+      "current_reference_register": "BRIDGE-REFERENCE-SET.md"
     },
     {
       "id": "PACK-BRG-002",
@@ -1894,11 +1900,12 @@
       ],
       "label": "PACK-BRG-002 \u2014 Porcelain Long Bridge \u2014 existing segment details",
       "reference_role": "multi-component-design-pack",
-      "design_status": "needs-source-correction; retained-generated-interpretation",
+      "design_status": "superseded-generated-interpretation; use-source-overrides",
       "related_image_ids": [
         "GEN-18"
       ],
-      "source_comparison": "bridge-source-panels/COMPARISON.md"
+      "source_comparison": "bridge-source-panels/COMPARISON.md",
+      "current_reference_register": "BRIDGE-REFERENCE-SET.md"
     },
     {
       "id": "REF-0029EF295D07",
@@ -11114,7 +11121,9 @@
       "alias_ids": [
         "SRC-B"
       ],
-      "component_ids": [],
+      "component_ids": [
+        "BRIDGE-SRC-B-L01"
+      ],
       "label": "BRIDGE-SRC-B \u2014 Terminal post and freestanding crystal lantern",
       "reference_role": "direct-source-panel",
       "design_status": "source-reference-not-dimensionally-resolved",
@@ -11285,6 +11294,266 @@
         1017
       ],
       "source_printed_dimensions": "Live-only ripple FX"
+    },
+    {
+      "id": "PACK-BRG-003",
+      "title": "Porcelain Long Bridge \u2014 missing structural references",
+      "category": "missing-component-packs",
+      "file": "images/missing-component-packs/PACK-BRG-003.png",
+      "sha256": "f6af34a7f21fec0b290852fb46035d4faf280091cc7037acedbaf8114c7e82f0",
+      "bytes": 2266246,
+      "source_aliases": [
+        "generated_images/exec-19c6d3a1-3ef5-427a-a05e-53678a7d48bd.png"
+      ],
+      "review_status": "pending-user-review",
+      "alias_ids": [],
+      "component_ids": [
+        "PACK-BRG-003-S05",
+        "PACK-BRG-003-S06",
+        "PACK-BRG-003-S07"
+      ],
+      "label": "PACK-BRG-003 \u2014 Porcelain Long Bridge \u2014 missing structural references",
+      "reference_role": "generated-missing-component-study",
+      "design_status": "source-inspired-gap-study; hidden geometry proposed",
+      "related_image_ids": [
+        "GEN-18",
+        "BRIDGE-OV-03"
+      ]
+    },
+    {
+      "id": "COLUMN-SRC-HERO",
+      "title": "Column assembly",
+      "category": "original-column-source-crops",
+      "file": "column-source-panels/column-assembly.png",
+      "sha256": "4e80ddae28ed4a7efd9a72dd896b29bf30d13e3ebb838c931f5181620e37f345",
+      "bytes": 702530,
+      "source_aliases": [
+        "shared/birthday-castle-column-source-segmentation/column-assembly.png"
+      ],
+      "review_status": "direct-source-extraction",
+      "alias_ids": [
+        "COL-HERO"
+      ],
+      "component_ids": [],
+      "label": "COLUMN-SRC-HERO \u2014 Column assembly",
+      "reference_role": "direct-source-panel",
+      "design_status": "existing-reference; no duplicate generation",
+      "related_image_ids": [
+        "GEN-29"
+      ],
+      "source_image_id": "GEN-29",
+      "source_sha256": "88a558a29cc52bd50459307297f946d88a274f090a1bf96c4da212383a2fd1ad",
+      "crop_box_xyxy": [
+        10,
+        32,
+        451,
+        1013
+      ]
+    },
+    {
+      "id": "COLUMN-SRC-FRONT",
+      "title": "Lotus capital front elevation",
+      "category": "original-column-source-crops",
+      "file": "column-source-panels/lotus-capital-front-elevation.png",
+      "sha256": "8c9bd35c1146b611848f0eb6599b0e5f1bbad42618bb41978e9f86b2e02e334a",
+      "bytes": 280617,
+      "source_aliases": [
+        "shared/birthday-castle-column-source-segmentation/lotus-capital-front-elevation.png"
+      ],
+      "review_status": "direct-source-extraction",
+      "alias_ids": [
+        "COL-FRONT"
+      ],
+      "component_ids": [],
+      "label": "COLUMN-SRC-FRONT \u2014 Lotus capital front elevation",
+      "reference_role": "direct-source-panel",
+      "design_status": "existing-reference; no duplicate generation",
+      "related_image_ids": [
+        "GEN-29"
+      ],
+      "source_image_id": "GEN-29",
+      "source_sha256": "88a558a29cc52bd50459307297f946d88a274f090a1bf96c4da212383a2fd1ad",
+      "crop_box_xyxy": [
+        457,
+        48,
+        811,
+        509
+      ]
+    },
+    {
+      "id": "COLUMN-SRC-UNDERSIDE",
+      "title": "Lotus capital underside and socket",
+      "category": "original-column-source-crops",
+      "file": "column-source-panels/lotus-capital-underside-and-socket.png",
+      "sha256": "2a5a8f0a2621c6f25e2e33059fddc25aa6db12d85aa5b636fbf21543ce071ba7",
+      "bytes": 296441,
+      "source_aliases": [
+        "shared/birthday-castle-column-source-segmentation/lotus-capital-underside-and-socket.png"
+      ],
+      "review_status": "direct-source-extraction",
+      "alias_ids": [
+        "COL-UNDERSIDE"
+      ],
+      "component_ids": [],
+      "label": "COLUMN-SRC-UNDERSIDE \u2014 Lotus capital underside and socket",
+      "reference_role": "direct-source-panel",
+      "design_status": "existing-reference; no duplicate generation",
+      "related_image_ids": [
+        "GEN-29"
+      ],
+      "source_image_id": "GEN-29",
+      "source_sha256": "88a558a29cc52bd50459307297f946d88a274f090a1bf96c4da212383a2fd1ad",
+      "crop_box_xyxy": [
+        815,
+        48,
+        1160,
+        509
+      ]
+    },
+    {
+      "id": "COLUMN-SRC-SECTION",
+      "title": "Column section and joinery",
+      "category": "original-column-source-crops",
+      "file": "column-source-panels/column-section-and-joinery.png",
+      "sha256": "c78d7c616e66f013be31c2e0d24994d628436de9785338070a7252cded4fce9f",
+      "bytes": 260667,
+      "source_aliases": [
+        "shared/birthday-castle-column-source-segmentation/column-section-and-joinery.png"
+      ],
+      "review_status": "direct-source-extraction",
+      "alias_ids": [
+        "COL-SECTION"
+      ],
+      "component_ids": [],
+      "label": "COLUMN-SRC-SECTION \u2014 Column section and joinery",
+      "reference_role": "direct-source-panel",
+      "design_status": "existing-reference; no duplicate generation",
+      "related_image_ids": [
+        "GEN-29"
+      ],
+      "source_image_id": "GEN-29",
+      "source_sha256": "88a558a29cc52bd50459307297f946d88a274f090a1bf96c4da212383a2fd1ad",
+      "crop_box_xyxy": [
+        1169,
+        48,
+        1523,
+        509
+      ]
+    },
+    {
+      "id": "COLUMN-SRC-PORTAL",
+      "title": "Portal pier and arch springing",
+      "category": "original-column-source-crops",
+      "file": "column-source-panels/portal-pier-and-arch-springing.png",
+      "sha256": "f500fea13402a0cbe09a04aa80e3c13b5825f30a9a1c5861393635cbc48e17c7",
+      "bytes": 398976,
+      "source_aliases": [
+        "shared/birthday-castle-column-source-segmentation/portal-pier-and-arch-springing.png"
+      ],
+      "review_status": "direct-source-extraction",
+      "alias_ids": [
+        "COL-PORTAL"
+      ],
+      "component_ids": [],
+      "label": "COLUMN-SRC-PORTAL \u2014 Portal pier and arch springing",
+      "reference_role": "direct-source-panel",
+      "design_status": "existing-reference; no duplicate generation",
+      "related_image_ids": [
+        "GEN-29"
+      ],
+      "source_image_id": "GEN-29",
+      "source_sha256": "88a558a29cc52bd50459307297f946d88a274f090a1bf96c4da212383a2fd1ad",
+      "crop_box_xyxy": [
+        457,
+        515,
+        878,
+        1013
+      ]
+    },
+    {
+      "id": "COLUMN-SRC-BASE",
+      "title": "Column base and plinth",
+      "category": "original-column-source-crops",
+      "file": "column-source-panels/column-base-and-plinth.png",
+      "sha256": "c63b3395be44e681959064207b453760069f491de4e74284917bc0b80fb0c156",
+      "bytes": 292149,
+      "source_aliases": [
+        "shared/birthday-castle-column-source-segmentation/column-base-and-plinth.png"
+      ],
+      "review_status": "direct-source-extraction",
+      "alias_ids": [
+        "COL-BASE"
+      ],
+      "component_ids": [],
+      "label": "COLUMN-SRC-BASE \u2014 Column base and plinth",
+      "reference_role": "direct-source-panel",
+      "design_status": "existing-reference; no duplicate generation",
+      "related_image_ids": [
+        "GEN-29"
+      ],
+      "source_image_id": "GEN-29",
+      "source_sha256": "88a558a29cc52bd50459307297f946d88a274f090a1bf96c4da212383a2fd1ad",
+      "crop_box_xyxy": [
+        884,
+        515,
+        1210,
+        1013
+      ]
+    },
+    {
+      "id": "COLUMN-SRC-CARVING",
+      "title": "Leaf carving close-up",
+      "category": "original-column-source-crops",
+      "file": "column-source-panels/leaf-carving-close-up.png",
+      "sha256": "2a41daf6a3900d6b0e2faf5e73f5f0f85298055bdd83efaf33c09f81ec7a7abc",
+      "bytes": 304487,
+      "source_aliases": [
+        "shared/birthday-castle-column-source-segmentation/leaf-carving-close-up.png"
+      ],
+      "review_status": "direct-source-extraction",
+      "alias_ids": [
+        "COL-CARVING"
+      ],
+      "component_ids": [],
+      "label": "COLUMN-SRC-CARVING \u2014 Leaf carving close-up",
+      "reference_role": "direct-source-panel",
+      "design_status": "existing-reference; no duplicate generation",
+      "related_image_ids": [
+        "GEN-29"
+      ],
+      "source_image_id": "GEN-29",
+      "source_sha256": "88a558a29cc52bd50459307297f946d88a274f090a1bf96c4da212383a2fd1ad",
+      "crop_box_xyxy": [
+        1217,
+        515,
+        1523,
+        1013
+      ]
+    },
+    {
+      "id": "PAL-WALL-001",
+      "title": "Clustered pier and complete stained-glass wall bay",
+      "category": "palace-structural-studies",
+      "file": "images/palace-structural-studies/PAL-WALL-001.png",
+      "sha256": "9d32fba3dcf9168347cc70d25de6019822cbb4cb5e7448d064ffef3042038123",
+      "bytes": 2972304,
+      "source_aliases": [
+        "generated_images/exec-94951705-a3ce-4a82-b9a0-0d3d8590c53c.png"
+      ],
+      "review_status": "pending-user-review",
+      "alias_ids": [],
+      "component_ids": [
+        "PAL-WALL-001-S01"
+      ],
+      "label": "PAL-WALL-001 \u2014 Clustered pier and complete stained-glass wall bay",
+      "reference_role": "reconstructed-missing-assembly-view",
+      "design_status": "proposed-full-wall-extent; not-palace-layout-authority",
+      "related_image_ids": [
+        "GEN-29",
+        "COLUMN-SRC-PORTAL",
+        "COLUMN-SRC-BASE",
+        "MOD-COL-001"
+      ]
     }
   ],
   "label_schema_version": 1

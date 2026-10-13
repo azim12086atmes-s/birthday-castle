@@ -2385,12 +2385,12 @@
       "kind": "ornament-component",
       "component_family": "medallion",
       "parent_asset_family": "Porcelain Long Bridge",
-      "reference_image_id": "PACK-BRG-001",
-      "reference_file": "images/modular-component-packs/PACK-BRG-001.png",
-      "reference_sha256": "575987486fed7086b5d31d4db5229d191fb986d9491582446c8645b7272b9d77",
+      "reference_image_id": "BRIDGE-SRC-A",
+      "reference_file": "bridge-source-panels/A-railing-panel-four-metre-repeat.png",
+      "reference_sha256": "b9e4b74691794d3a9e6773b66fbf970fe86e86da2d13d6378d4f457da9633ae5",
       "source_alias_ids": [],
       "notes": "Flat rear to parapet/spandrel; 3D dimensional fit remains to be checked.",
-      "design_basis": "Developed from GEN-18",
+      "design_basis": "Existing original source panel reused; no new image generation",
       "model_status": "unregistered",
       "model_file": "",
       "model_version": "",
@@ -2399,9 +2399,16 @@
       "model_sha256": "",
       "model_batch_id": "",
       "mesh_name": "",
-      "review_status": "pending",
+      "review_status": "authoritative-reference-rebound; geometry-pending",
       "suggested_model_filename": "PACK-BRG-001-A01__star-rosette-medallion__v001.glb",
-      "reference_revision": 2
+      "reference_revision": "source-panel",
+      "reference_history": [
+        {
+          "reference_image_id": "PACK-BRG-001",
+          "reference_file": "images/modular-component-packs/PACK-BRG-001.png",
+          "reference_sha256": "575987486fed7086b5d31d4db5229d191fb986d9491582446c8645b7272b9d77"
+        }
+      ]
     },
     {
       "asset_id": "PACK-BRG-001-A02",
@@ -2433,15 +2440,15 @@
       "kind": "ornament-component",
       "component_family": "column-capital",
       "parent_asset_family": "Porcelain Long Bridge",
-      "reference_image_id": "PACK-BRG-001",
-      "reference_file": "images/modular-component-packs/PACK-BRG-001.png",
-      "reference_sha256": "575987486fed7086b5d31d4db5229d191fb986d9491582446c8645b7272b9d77",
+      "reference_image_id": "MOD-COL-001",
+      "reference_file": "images/component-development-studies/MOD-COL-001.png",
+      "reference_sha256": "91723a752cb899ee88abf7417aea9b3baf392a7972cca0f74a35c662264ca91a",
       "source_alias_ids": [
         "MOD-COL-001",
         "GEN-29"
       ],
       "notes": "Solid stepped upper abacus; lower shaft socket/neck; tall lotus petals; crystal mounting lugs. Dimensional fit remains to be checked.",
-      "design_basis": "User-supplied MOD-COL-001 capital: stepped abacus, tall rose/ivory petals, gilded floral lobes and blue star collar",
+      "design_basis": "Existing original source panel reused; no new image generation",
       "model_status": "unregistered",
       "model_file": "",
       "model_version": "",
@@ -2450,9 +2457,16 @@
       "model_sha256": "",
       "model_batch_id": "",
       "mesh_name": "",
-      "review_status": "pending",
+      "review_status": "authoritative-reference-rebound; geometry-pending",
       "suggested_model_filename": "PACK-BRG-001-A03__stepped-lotus-capital__v001.glb",
-      "reference_revision": 2
+      "reference_revision": "source-panel",
+      "reference_history": [
+        {
+          "reference_image_id": "PACK-BRG-001",
+          "reference_file": "images/modular-component-packs/PACK-BRG-001.png",
+          "reference_sha256": "575987486fed7086b5d31d4db5229d191fb986d9491582446c8645b7272b9d77"
+        }
+      ]
     },
     {
       "asset_id": "PACK-BRG-001-A04",
@@ -2460,12 +2474,12 @@
       "kind": "ornament-component",
       "component_family": "column-shaft",
       "parent_asset_family": "Porcelain Long Bridge",
-      "reference_image_id": "PACK-BRG-001",
-      "reference_file": "images/modular-component-packs/PACK-BRG-001.png",
-      "reference_sha256": "575987486fed7086b5d31d4db5229d191fb986d9491582446c8645b7272b9d77",
+      "reference_image_id": "BRIDGE-SRC-C",
+      "reference_file": "bridge-source-panels/C-structural-arch-module-lower-tier.png",
+      "reference_sha256": "f6d5002865ed71e6188aa0a2cd98d763d966f1eb81522b94d21de3f04386a921",
       "source_alias_ids": [],
       "notes": "Coaxial shaft sleeve; flat ends; 3D dimensional fit remains to be checked.",
-      "design_basis": "Developed from GEN-18",
+      "design_basis": "Existing original source panel reused; no new image generation",
       "model_status": "unregistered",
       "model_file": "",
       "model_version": "",
@@ -2474,9 +2488,16 @@
       "model_sha256": "",
       "model_batch_id": "",
       "mesh_name": "",
-      "review_status": "pending",
+      "review_status": "authoritative-reference-rebound; geometry-pending",
       "suggested_model_filename": "PACK-BRG-001-A04__fluted-column-sleeve__v001.glb",
-      "reference_revision": 2
+      "reference_revision": "source-panel",
+      "reference_history": [
+        {
+          "reference_image_id": "PACK-BRG-001",
+          "reference_file": "images/modular-component-packs/PACK-BRG-001.png",
+          "reference_sha256": "575987486fed7086b5d31d4db5229d191fb986d9491582446c8645b7272b9d77"
+        }
+      ]
     },
     {
       "asset_id": "PACK-BRG-001-A05",
@@ -2484,12 +2505,12 @@
       "kind": "ornament-component",
       "component_family": "corbel",
       "parent_asset_family": "Porcelain Long Bridge",
-      "reference_image_id": "PACK-BRG-001",
-      "reference_file": "images/modular-component-packs/PACK-BRG-001.png",
-      "reference_sha256": "575987486fed7086b5d31d4db5229d191fb986d9491582446c8645b7272b9d77",
+      "reference_image_id": "BRIDGE-SRC-C",
+      "reference_file": "bridge-source-panels/C-structural-arch-module-lower-tier.png",
+      "reference_sha256": "f6d5002865ed71e6188aa0a2cd98d763d966f1eb81522b94d21de3f04386a921",
       "source_alias_ids": [],
       "notes": "Flat rear to pier; flat upper seat; 3D dimensional fit remains to be checked.",
-      "design_basis": "Developed from GEN-18",
+      "design_basis": "Existing original source panel reused; no new image generation",
       "model_status": "unregistered",
       "model_file": "",
       "model_version": "",
@@ -2498,9 +2519,16 @@
       "model_sha256": "",
       "model_batch_id": "",
       "mesh_name": "",
-      "review_status": "pending",
+      "review_status": "authoritative-reference-rebound; geometry-pending",
       "suggested_model_filename": "PACK-BRG-001-A05__leaf-corbel-bracket__v001.glb",
-      "reference_revision": 2
+      "reference_revision": "source-panel",
+      "reference_history": [
+        {
+          "reference_image_id": "PACK-BRG-001",
+          "reference_file": "images/modular-component-packs/PACK-BRG-001.png",
+          "reference_sha256": "575987486fed7086b5d31d4db5229d191fb986d9491582446c8645b7272b9d77"
+        }
+      ]
     },
     {
       "asset_id": "PACK-BRG-001-A06",
@@ -2508,12 +2536,12 @@
       "kind": "ornament-component",
       "component_family": "railing-infill",
       "parent_asset_family": "Porcelain Long Bridge",
-      "reference_image_id": "PACK-BRG-001",
-      "reference_file": "images/modular-component-packs/PACK-BRG-001.png",
-      "reference_sha256": "575987486fed7086b5d31d4db5229d191fb986d9491582446c8645b7272b9d77",
+      "reference_image_id": "BRIDGE-SRC-A",
+      "reference_file": "bridge-source-panels/A-railing-panel-four-metre-repeat.png",
+      "reference_sha256": "b9e4b74691794d3a9e6773b66fbf970fe86e86da2d13d6378d4f457da9633ae5",
       "source_alias_ids": [],
       "notes": "Flat ends between railing posts; 3D dimensional fit remains to be checked.",
-      "design_basis": "Developed from GEN-18",
+      "design_basis": "Existing original source panel reused; no new image generation",
       "model_status": "unregistered",
       "model_file": "",
       "model_version": "",
@@ -2522,9 +2550,16 @@
       "model_sha256": "",
       "model_batch_id": "",
       "mesh_name": "",
-      "review_status": "pending",
+      "review_status": "authoritative-reference-rebound; geometry-pending",
       "suggested_model_filename": "PACK-BRG-001-A06__pierced-quatrefoil-rail-infill__v001.glb",
-      "reference_revision": 2
+      "reference_revision": "source-panel",
+      "reference_history": [
+        {
+          "reference_image_id": "PACK-BRG-001",
+          "reference_file": "images/modular-component-packs/PACK-BRG-001.png",
+          "reference_sha256": "575987486fed7086b5d31d4db5229d191fb986d9491582446c8645b7272b9d77"
+        }
+      ]
     },
     {
       "asset_id": "PACK-BRG-001-A07",
@@ -2532,12 +2567,12 @@
       "kind": "ornament-component",
       "component_family": "railing-infill",
       "parent_asset_family": "Porcelain Long Bridge",
-      "reference_image_id": "PACK-BRG-001",
-      "reference_file": "images/modular-component-packs/PACK-BRG-001.png",
-      "reference_sha256": "575987486fed7086b5d31d4db5229d191fb986d9491582446c8645b7272b9d77",
+      "reference_image_id": "BRIDGE-SRC-A",
+      "reference_file": "bridge-source-panels/A-railing-panel-four-metre-repeat.png",
+      "reference_sha256": "b9e4b74691794d3a9e6773b66fbf970fe86e86da2d13d6378d4f457da9633ae5",
       "source_alias_ids": [],
       "notes": "Flat ends between railing posts; 3D dimensional fit remains to be checked.",
-      "design_basis": "Developed from GEN-18",
+      "design_basis": "Existing original source panel reused; no new image generation",
       "model_status": "unregistered",
       "model_file": "",
       "model_version": "",
@@ -2546,9 +2581,16 @@
       "model_sha256": "",
       "model_batch_id": "",
       "mesh_name": "",
-      "review_status": "pending",
+      "review_status": "authoritative-reference-rebound; geometry-pending",
       "suggested_model_filename": "PACK-BRG-001-A07__blue-star-rail-infill__v001.glb",
-      "reference_revision": 2
+      "reference_revision": "source-panel",
+      "reference_history": [
+        {
+          "reference_image_id": "PACK-BRG-001",
+          "reference_file": "images/modular-component-packs/PACK-BRG-001.png",
+          "reference_sha256": "575987486fed7086b5d31d4db5229d191fb986d9491582446c8645b7272b9d77"
+        }
+      ]
     },
     {
       "asset_id": "PACK-BRG-001-A08",
@@ -2556,12 +2598,12 @@
       "kind": "ornament-component",
       "component_family": "cornice",
       "parent_asset_family": "Porcelain Long Bridge",
-      "reference_image_id": "PACK-BRG-001",
-      "reference_file": "images/modular-component-packs/PACK-BRG-001.png",
-      "reference_sha256": "575987486fed7086b5d31d4db5229d191fb986d9491582446c8645b7272b9d77",
+      "reference_image_id": "BRIDGE-SRC-C",
+      "reference_file": "bridge-source-panels/C-structural-arch-module-lower-tier.png",
+      "reference_sha256": "f6d5002865ed71e6188aa0a2cd98d763d966f1eb81522b94d21de3f04386a921",
       "source_alias_ids": [],
       "notes": "Flat rear to fascia; matching repeat ends; 3D dimensional fit remains to be checked.",
-      "design_basis": "Developed from GEN-18",
+      "design_basis": "Existing original source panel reused; no new image generation",
       "model_status": "unregistered",
       "model_file": "",
       "model_version": "",
@@ -2570,9 +2612,16 @@
       "model_sha256": "",
       "model_batch_id": "",
       "mesh_name": "",
-      "review_status": "pending",
+      "review_status": "authoritative-reference-rebound; geometry-pending",
       "suggested_model_filename": "PACK-BRG-001-A08__beaded-cornice-strip__v001.glb",
-      "reference_revision": 2
+      "reference_revision": "source-panel",
+      "reference_history": [
+        {
+          "reference_image_id": "PACK-BRG-001",
+          "reference_file": "images/modular-component-packs/PACK-BRG-001.png",
+          "reference_sha256": "575987486fed7086b5d31d4db5229d191fb986d9491582446c8645b7272b9d77"
+        }
+      ]
     },
     {
       "asset_id": "PACK-BRG-001-A09",
@@ -2594,7 +2643,7 @@
       "model_sha256": "",
       "model_batch_id": "",
       "mesh_name": "",
-      "review_status": "pending",
+      "review_status": "optional-generated-variant; not-exact-bridge-source",
       "suggested_model_filename": "PACK-BRG-001-A09__rose-vine-frieze-strip__v001.glb",
       "reference_revision": 2
     },
@@ -2604,12 +2653,12 @@
       "kind": "ornament-component",
       "component_family": "corner-relief",
       "parent_asset_family": "Porcelain Long Bridge",
-      "reference_image_id": "PACK-BRG-001",
-      "reference_file": "images/modular-component-packs/PACK-BRG-001.png",
-      "reference_sha256": "575987486fed7086b5d31d4db5229d191fb986d9491582446c8645b7272b9d77",
+      "reference_image_id": "BRIDGE-SRC-C",
+      "reference_file": "bridge-source-panels/C-structural-arch-module-lower-tier.png",
+      "reference_sha256": "f6d5002865ed71e6188aa0a2cd98d763d966f1eb81522b94d21de3f04386a921",
       "source_alias_ids": [],
       "notes": "Flat rear to corner stone; 3D dimensional fit remains to be checked.",
-      "design_basis": "Developed from GEN-18",
+      "design_basis": "Existing original source panel reused; no new image generation",
       "model_status": "unregistered",
       "model_file": "",
       "model_version": "",
@@ -2618,9 +2667,16 @@
       "model_sha256": "",
       "model_batch_id": "",
       "mesh_name": "",
-      "review_status": "pending",
+      "review_status": "authoritative-reference-rebound; geometry-pending",
       "suggested_model_filename": "PACK-BRG-001-A10__corner-scroll-ornament__v001.glb",
-      "reference_revision": 2
+      "reference_revision": "source-panel",
+      "reference_history": [
+        {
+          "reference_image_id": "PACK-BRG-001",
+          "reference_file": "images/modular-component-packs/PACK-BRG-001.png",
+          "reference_sha256": "575987486fed7086b5d31d4db5229d191fb986d9491582446c8645b7272b9d77"
+        }
+      ]
     },
     {
       "asset_id": "PACK-BRG-001-A11",
@@ -2628,12 +2684,12 @@
       "kind": "ornament-component",
       "component_family": "plinth",
       "parent_asset_family": "Porcelain Long Bridge",
-      "reference_image_id": "PACK-BRG-001",
-      "reference_file": "images/modular-component-packs/PACK-BRG-001.png",
-      "reference_sha256": "575987486fed7086b5d31d4db5229d191fb986d9491582446c8645b7272b9d77",
+      "reference_image_id": "BRIDGE-SRC-C",
+      "reference_file": "bridge-source-panels/C-structural-arch-module-lower-tier.png",
+      "reference_sha256": "f6d5002865ed71e6188aa0a2cd98d763d966f1eb81522b94d21de3f04386a921",
       "source_alias_ids": [],
       "notes": "Flat underside and upper seat; 3D dimensional fit remains to be checked.",
-      "design_basis": "Developed from GEN-18",
+      "design_basis": "Existing original source panel reused; no new image generation",
       "model_status": "unregistered",
       "model_file": "",
       "model_version": "",
@@ -2642,9 +2698,16 @@
       "model_sha256": "",
       "model_batch_id": "",
       "mesh_name": "",
-      "review_status": "pending",
+      "review_status": "authoritative-reference-rebound; geometry-pending",
       "suggested_model_filename": "PACK-BRG-001-A11__chamfered-ornamental-plinth__v001.glb",
-      "reference_revision": 2
+      "reference_revision": "source-panel",
+      "reference_history": [
+        {
+          "reference_image_id": "PACK-BRG-001",
+          "reference_file": "images/modular-component-packs/PACK-BRG-001.png",
+          "reference_sha256": "575987486fed7086b5d31d4db5229d191fb986d9491582446c8645b7272b9d77"
+        }
+      ]
     },
     {
       "asset_id": "PACK-BRG-001-A12",
@@ -2652,12 +2715,12 @@
       "kind": "ornament-component",
       "component_family": "finial",
       "parent_asset_family": "Porcelain Long Bridge",
-      "reference_image_id": "PACK-BRG-001",
-      "reference_file": "images/modular-component-packs/PACK-BRG-001.png",
-      "reference_sha256": "575987486fed7086b5d31d4db5229d191fb986d9491582446c8645b7272b9d77",
+      "reference_image_id": "BRIDGE-SRC-B",
+      "reference_file": "bridge-source-panels/B-terminal-post-and-crystal-lantern.png",
+      "reference_sha256": "b399f6107ed6e69033d9b29be60acd37e6f210e9d43619b4d2fa4cde74a671d7",
       "source_alias_ids": [],
       "notes": "Centered lower mounting stem; 3D dimensional fit remains to be checked.",
-      "design_basis": "Developed from GEN-18",
+      "design_basis": "Existing original source panel reused; no new image generation",
       "model_status": "unregistered",
       "model_file": "",
       "model_version": "",
@@ -2666,9 +2729,16 @@
       "model_sha256": "",
       "model_batch_id": "",
       "mesh_name": "",
-      "review_status": "pending",
+      "review_status": "authoritative-reference-rebound; geometry-pending",
       "suggested_model_filename": "PACK-BRG-001-A12__star-finial__v001.glb",
-      "reference_revision": 2
+      "reference_revision": "source-panel",
+      "reference_history": [
+        {
+          "reference_image_id": "PACK-BRG-001",
+          "reference_file": "images/modular-component-packs/PACK-BRG-001.png",
+          "reference_sha256": "575987486fed7086b5d31d4db5229d191fb986d9491582446c8645b7272b9d77"
+        }
+      ]
     },
     {
       "asset_id": "PACK-BRG-001-A13",
@@ -2690,7 +2760,7 @@
       "model_sha256": "",
       "model_batch_id": "",
       "mesh_name": "",
-      "review_status": "pending",
+      "review_status": "optional-generated-variant; not-exact-bridge-source",
       "suggested_model_filename": "PACK-BRG-001-A13__lantern-crown-rib__v001.glb",
       "reference_revision": 2
     },
@@ -2714,7 +2784,7 @@
       "model_sha256": "",
       "model_batch_id": "",
       "mesh_name": "",
-      "review_status": "needs-source-correction",
+      "review_status": "optional-generated-variant; not-exact-bridge-source",
       "suggested_model_filename": "PACK-BRG-001-A14__crystal-lantern-and-mounting-arm__v001.glb",
       "reference_revision": 2,
       "source_comparison": "bridge-source-panels/COMPARISON.md"
@@ -2739,22 +2809,22 @@
       "model_sha256": "",
       "model_batch_id": "",
       "mesh_name": "",
-      "review_status": "pending",
+      "review_status": "optional-generated-variant; not-exact-bridge-source",
       "suggested_model_filename": "PACK-BRG-001-A15__scroll-water-spout__v001.glb",
       "reference_revision": 2
     },
     {
       "asset_id": "PACK-BRG-001-A16",
-      "name": "Star-inlay paving tile",
+      "name": "Floral deck tile",
       "kind": "ornament-component",
       "component_family": "paving-tile",
       "parent_asset_family": "Porcelain Long Bridge",
-      "reference_image_id": "PACK-BRG-001",
-      "reference_file": "images/modular-component-packs/PACK-BRG-001.png",
-      "reference_sha256": "575987486fed7086b5d31d4db5229d191fb986d9491582446c8645b7272b9d77",
+      "reference_image_id": "BRIDGE-SRC-E",
+      "reference_file": "bridge-source-panels/E-star-inlay-deck-tile-four-metre-square.png",
+      "reference_sha256": "f05d8c72fdbf0984d4837b73dc34812869d960971d26d129def2dd8bdad743ec",
       "source_alias_ids": [],
-      "notes": "Flat underside to deck substrate; 3D dimensional fit remains to be checked.",
-      "design_basis": "Developed from GEN-18",
+      "notes": "Reuse source E blue petal/rose-star mosaic, gold border and illustrated thickness; do not use the previous sharp-star variant.",
+      "design_basis": "Existing original source panel reused; no new image generation",
       "model_status": "unregistered",
       "model_file": "",
       "model_version": "",
@@ -2763,10 +2833,17 @@
       "model_sha256": "",
       "model_batch_id": "",
       "mesh_name": "",
-      "review_status": "needs-source-correction",
+      "review_status": "authoritative-reference-rebound; geometry-pending",
       "suggested_model_filename": "PACK-BRG-001-A16__star-inlay-paving-tile__v001.glb",
-      "reference_revision": 2,
-      "source_comparison": "bridge-source-panels/COMPARISON.md"
+      "reference_revision": "source-panel",
+      "source_comparison": "bridge-source-panels/COMPARISON.md",
+      "reference_history": [
+        {
+          "reference_image_id": "PACK-BRG-001",
+          "reference_file": "images/modular-component-packs/PACK-BRG-001.png",
+          "reference_sha256": "575987486fed7086b5d31d4db5229d191fb986d9491582446c8645b7272b9d77"
+        }
+      ]
     },
     {
       "asset_id": "PACK-BRG-002-S01",
@@ -2774,12 +2851,12 @@
       "kind": "bridge-segment",
       "component_family": "Lower-tier arch span",
       "parent_asset_family": "Porcelain Long Bridge",
-      "reference_image_id": "PACK-BRG-002",
-      "reference_file": "images/modular-component-packs/PACK-BRG-002.png",
-      "reference_sha256": "e5d4f773e23c14cf69aaddabbed07c0c72204569dfbfb33f60af2977a22d79dd",
+      "reference_image_id": "BRIDGE-SRC-C",
+      "reference_file": "bridge-source-panels/C-structural-arch-module-lower-tier.png",
+      "reference_sha256": "f6d5002865ed71e6188aa0a2cd98d763d966f1eb81522b94d21de3f04386a921",
       "source_alias_ids": [],
       "notes": "Between cutwater piers; repeat along bridge centerline; 3D dimensional fit remains to be checked.",
-      "design_basis": "Developed from GEN-18",
+      "design_basis": "Existing original source panel reused; no new image generation",
       "model_status": "unregistered",
       "model_file": "",
       "model_version": "",
@@ -2788,22 +2865,30 @@
       "model_sha256": "",
       "model_batch_id": "",
       "mesh_name": "",
-      "review_status": "needs-source-correction",
+      "review_status": "authoritative-reference-rebound; geometry-pending",
       "suggested_model_filename": "PACK-BRG-002-S01__lower-tier-arch-span__v001.glb",
-      "source_comparison": "bridge-source-panels/COMPARISON.md"
+      "source_comparison": "bridge-source-panels/COMPARISON.md",
+      "reference_history": [
+        {
+          "reference_image_id": "PACK-BRG-002",
+          "reference_file": "images/modular-component-packs/PACK-BRG-002.png",
+          "reference_sha256": "e5d4f773e23c14cf69aaddabbed07c0c72204569dfbfb33f60af2977a22d79dd"
+        }
+      ],
+      "reference_revision": "source-panel"
     },
     {
       "asset_id": "PACK-BRG-002-S02",
-      "name": "Two-tier cutwater pier",
+      "name": "Lotus cutwater pier",
       "kind": "bridge-segment",
       "component_family": "Two-tier cutwater pier",
       "parent_asset_family": "Porcelain Long Bridge",
-      "reference_image_id": "PACK-BRG-002",
-      "reference_file": "images/modular-component-packs/PACK-BRG-002.png",
-      "reference_sha256": "e5d4f773e23c14cf69aaddabbed07c0c72204569dfbfb33f60af2977a22d79dd",
+      "reference_image_id": "BRIDGE-SRC-D",
+      "reference_file": "bridge-source-panels/D-cutwater-pier-two-tier-aqueduct.png",
+      "reference_sha256": "665f9c8d496e6e6d64ea6eb5699b4a69698b8b9f719d95c9c740f174609d929f",
       "source_alias_ids": [],
-      "notes": "Foundation below, upper deck seat above, arch springings on both sides; 3D dimensional fit remains to be checked.",
-      "design_basis": "Developed from GEN-18",
+      "notes": "Original D front/isometric: bulging lotus lower body and one upper glazed body. Side-view structure requires reconciliation.",
+      "design_basis": "Existing original source panel reused; no new image generation",
       "model_status": "unregistered",
       "model_file": "",
       "model_version": "",
@@ -2812,9 +2897,17 @@
       "model_sha256": "",
       "model_batch_id": "",
       "mesh_name": "",
-      "review_status": "needs-source-correction",
+      "review_status": "authoritative-reference-rebound; geometry-pending",
       "suggested_model_filename": "PACK-BRG-002-S02__two-tier-cutwater-pier__v001.glb",
-      "source_comparison": "bridge-source-panels/COMPARISON.md"
+      "source_comparison": "bridge-source-panels/COMPARISON.md",
+      "reference_history": [
+        {
+          "reference_image_id": "PACK-BRG-002",
+          "reference_file": "images/modular-component-packs/PACK-BRG-002.png",
+          "reference_sha256": "e5d4f773e23c14cf69aaddabbed07c0c72204569dfbfb33f60af2977a22d79dd"
+        }
+      ],
+      "reference_revision": "source-panel"
     },
     {
       "asset_id": "PACK-BRG-002-S03",
@@ -2826,7 +2919,7 @@
       "reference_file": "images/modular-component-packs/PACK-BRG-002.png",
       "reference_sha256": "e5d4f773e23c14cf69aaddabbed07c0c72204569dfbfb33f60af2977a22d79dd",
       "source_alias_ids": [],
-      "notes": "Flat underside above support structure; matching deck edges; 3D dimensional fit remains to be checked.",
+      "notes": "Flat underside above support structure; matching deck edges; 3D dimensional fit remains to be checked. Original F is a cross-section, not a longitudinal segment design.",
       "design_basis": "Developed from GEN-18",
       "model_status": "unregistered",
       "model_file": "",
@@ -2836,7 +2929,7 @@
       "model_sha256": "",
       "model_batch_id": "",
       "mesh_name": "",
-      "review_status": "needs-source-correction",
+      "review_status": "superseded-inferred-segment",
       "suggested_model_filename": "PACK-BRG-002-S03__porcelain-deck-segment__v001.glb",
       "source_comparison": "bridge-source-panels/COMPARISON.md"
     },
@@ -2846,12 +2939,12 @@
       "kind": "bridge-segment",
       "component_family": "Parapet railing segment",
       "parent_asset_family": "Porcelain Long Bridge",
-      "reference_image_id": "PACK-BRG-002",
-      "reference_file": "images/modular-component-packs/PACK-BRG-002.png",
-      "reference_sha256": "e5d4f773e23c14cf69aaddabbed07c0c72204569dfbfb33f60af2977a22d79dd",
+      "reference_image_id": "BRIDGE-SRC-A",
+      "reference_file": "bridge-source-panels/A-railing-panel-four-metre-repeat.png",
+      "reference_sha256": "b9e4b74691794d3a9e6773b66fbf970fe86e86da2d13d6378d4f457da9633ae5",
       "source_alias_ids": [],
       "notes": "Flat lower seat along deck edge; repeat end to end; 3D dimensional fit remains to be checked.",
-      "design_basis": "Developed from GEN-18",
+      "design_basis": "Existing original source panel reused; no new image generation",
       "model_status": "unregistered",
       "model_file": "",
       "model_version": "",
@@ -2860,8 +2953,145 @@
       "model_sha256": "",
       "model_batch_id": "",
       "mesh_name": "",
+      "review_status": "authoritative-reference-rebound; geometry-pending",
+      "suggested_model_filename": "PACK-BRG-002-S04__parapet-railing-segment__v001.glb",
+      "reference_history": [
+        {
+          "reference_image_id": "PACK-BRG-002",
+          "reference_file": "images/modular-component-packs/PACK-BRG-002.png",
+          "reference_sha256": "e5d4f773e23c14cf69aaddabbed07c0c72204569dfbfb33f60af2977a22d79dd"
+        }
+      ],
+      "reference_revision": "source-panel"
+    },
+    {
+      "asset_id": "PACK-BRG-003-S05",
+      "name": "Wide arch span",
+      "kind": "bridge-structural-gap-study",
+      "component_family": "Wide arch span",
+      "parent_asset_family": "Porcelain Long Bridge",
+      "reference_image_id": "PACK-BRG-003",
+      "reference_file": "images/missing-component-packs/PACK-BRG-003.png",
+      "reference_sha256": "f6af34a7f21fec0b290852fb46035d4faf280091cc7037acedbaf8114c7e82f0",
+      "source_alias_ids": [
+        "GEN-18",
+        "BRIDGE-OV-03"
+      ],
+      "notes": "Visible front span proportion controls; hidden side depth and join seats are proposed",
+      "design_basis": "GEN-18 longitudinal elevation; broad middle spans",
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
       "review_status": "pending",
-      "suggested_model_filename": "PACK-BRG-002-S04__parapet-railing-segment__v001.glb"
+      "suggested_model_filename": "PACK-BRG-003-S05__wide-arch-span__v001.glb"
+    },
+    {
+      "asset_id": "PACK-BRG-003-S06",
+      "name": "Slender central support",
+      "kind": "bridge-structural-gap-study",
+      "component_family": "Slender central support",
+      "parent_asset_family": "Porcelain Long Bridge",
+      "reference_image_id": "PACK-BRG-003",
+      "reference_file": "images/missing-component-packs/PACK-BRG-003.png",
+      "reference_sha256": "f6af34a7f21fec0b290852fb46035d4faf280091cc7037acedbaf8114c7e82f0",
+      "source_alias_ids": [
+        "GEN-18",
+        "BRIDGE-OV-03"
+      ],
+      "notes": "Thin silhouette controls; submerged foundation remains unresolved",
+      "design_basis": "GEN-18 longitudinal elevation; very thin center support",
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending",
+      "suggested_model_filename": "PACK-BRG-003-S06__slender-central-support__v001.glb"
+    },
+    {
+      "asset_id": "PACK-BRG-003-S07",
+      "name": "Shore approach segment",
+      "kind": "bridge-structural-gap-study",
+      "component_family": "Shore approach segment",
+      "parent_asset_family": "Porcelain Long Bridge",
+      "reference_image_id": "PACK-BRG-003",
+      "reference_file": "images/missing-component-packs/PACK-BRG-003.png",
+      "reference_sha256": "f6af34a7f21fec0b290852fb46035d4faf280091cc7037acedbaf8114c7e82f0",
+      "source_alias_ids": [
+        "GEN-18",
+        "BRIDGE-OV-03"
+      ],
+      "notes": "Use the source sloped approach; exact gradient and shore-level transition remain unresolved",
+      "design_basis": "GEN-18 right-hand elevation endpoint and upper isometric approach",
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending",
+      "suggested_model_filename": "PACK-BRG-003-S07__shore-approach-segment__v001.glb"
+    },
+    {
+      "asset_id": "BRIDGE-SRC-B-L01",
+      "name": "Freestanding terminal crystal lantern post",
+      "kind": "existing-source-assembly",
+      "component_family": "standing-lantern",
+      "parent_asset_family": "Porcelain Long Bridge",
+      "reference_image_id": "BRIDGE-SRC-B",
+      "reference_file": "bridge-source-panels/B-terminal-post-and-crystal-lantern.png",
+      "reference_sha256": "b399f6107ed6e69033d9b29be60acd37e6f210e9d43619b4d2fa4cde74a671d7",
+      "source_alias_ids": [
+        "GEN-18"
+      ],
+      "notes": "Source B already provides front/side/top/isometric. Reuse it instead of regenerating the existing assembly.",
+      "design_basis": "Original source panel B",
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "source-reference-available",
+      "suggested_model_filename": "BRIDGE-SRC-B-L01__terminal-crystal-lantern-post__v001.glb"
+    },
+    {
+      "asset_id": "PAL-WALL-001-S01",
+      "name": "Complete glazed wall bay",
+      "kind": "palace-structural-assembly",
+      "component_family": "window-wall-bay",
+      "parent_asset_family": "Original palace walls",
+      "reference_image_id": "PAL-WALL-001",
+      "reference_file": "images/palace-structural-studies/PAL-WALL-001.png",
+      "reference_sha256": "9d32fba3dcf9168347cc70d25de6019822cbb4cb5e7448d064ffef3042038123",
+      "source_alias_ids": [
+        "GEN-29",
+        "COLUMN-SRC-PORTAL"
+      ],
+      "notes": "Two proposed window apertures, central clustered pier and thick frame; numerical dimensions and joints unresolved.",
+      "design_basis": "Full extent reconstructed from existing pier/arch springing, capital and plinth sources",
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending",
+      "suggested_model_filename": "PAL-WALL-001-S01__complete-glazed-wall-bay__v001.glb"
     }
   ],
   "reference_families": [
@@ -3203,6 +3433,25 @@
       "model_sha256": "",
       "review_status": "needs-source-correction",
       "suggested_model_filename": "PACK-BRG-002__porcelain-long-bridge-existing-segment-details__v001.glb"
+    },
+    {
+      "batch_id": "PACK-BRG-003",
+      "name": "Porcelain Long Bridge \u2014 missing structural references",
+      "reference_file": "images/missing-component-packs/PACK-BRG-003.png",
+      "reference_sha256": "f6af34a7f21fec0b290852fb46035d4faf280091cc7037acedbaf8114c7e82f0",
+      "expected_component_ids": [
+        "PACK-BRG-003-S05",
+        "PACK-BRG-003-S06",
+        "PACK-BRG-003-S07"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending",
+      "suggested_model_filename": "PACK-BRG-003__missing-structural-references__v001.glb"
     }
   ]
 }
