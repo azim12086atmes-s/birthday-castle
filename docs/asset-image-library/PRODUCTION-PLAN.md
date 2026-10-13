@@ -12,7 +12,7 @@ The final library is capped at **230 selected sheets**, including the 45 origina
 | shared-outdoor-props-and-bridge | 25 | 3 | 22 |
 | maps-magic-travel-and-birthday | 20 | 4 | 16 |
 
-The 610-file archive contains crops, previews and historical experiments; it is not the final 230-sheet selection. Selected reference slots may still require visual review.
+The 614-file archive contains crops, previews and historical experiments; it is not the final 230-sheet selection. Selected reference slots may still require visual review.
 
 ## Palace caps
 
@@ -101,3 +101,9 @@ Four layer sheets now occupy four additional palace slots. There are 64 selected
 The owner reported tower, wing and five-arch adjacency inconsistencies in the layer sheets. Use the [whole-front and entrance correction](palace-front-correction/README.md) to resolve layout before splitting modules. The entrance constraints keep 150 grid m between the ground-facing front wall and gate wall, including 75 grid m of terrace after the stair top. Generated sheet parity remains pending.
 
 The four inconsistent PAL-LAYER slots are now retired from final selection, with their files, IDs and attempt history retained. The two requested corrections replace them as layout studies. The ledger currently holds 62 selected/reserved slots globally and 45 for the palace; existing images and unproduced reservations remain distinct from approvals.
+
+## Side and rear wall returns
+
+The owner clarified [side/rear wall-face gaps](palace-side-rear/README.md):100 grid m on either side and75 grid m at the rear for each successive main-wall transition. These are not overall wing lengths. The front150/75 m approach and60 m L2-L3 front setback are retained; upper front setback and hidden contours remain unresolved. Existing garden and ornament sheets are reused.
+
+The two side/rear studies consume two base/wall/wing slots and share three assembly IDs, rather than creating duplicate models per appearance view. Current ledger: 64 selected/reserved globally; 47 for the palace. Unproduced reservations and pending visual approvals are not accepted-model counts.

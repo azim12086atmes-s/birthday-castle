@@ -1,0 +1,15 @@
+{
+  "completed_reference_sheets": 2,
+  "new_assembly_ids": 3,
+  "archive_images": 614,
+  "asset_targets": 157,
+  "selected_or_reserved_total": 64,
+  "palace_selected_or_reserved": 47,
+  "numeric_constraints_verified": true,
+  "archive_and_model_reference_hashes_verified": true,
+  "gallery_and_input_reference_links_verified": true,
+  "caps_verified": true,
+  "observed_diagram": "Local sections ascend outer-left to inward-right; side100/100/100, rear75/75/75; roofs60/160/230/300",
+  "observed_appearance": "Rear75 annotation corrected; eastern group left, western dome right; decorated insets labelled terrace-return studies",
+  "limitations": "Wall contours and tower depths unregistered; diagrams schematic, source front remains master. No meshes generated."
+}

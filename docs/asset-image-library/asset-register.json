@@ -3442,6 +3442,108 @@
       "model_sha256": "",
       "review_status": "pending",
       "suggested_model_filename": "PAL-ENTRY-001-S01__connected-assembly__v001.glb"
+    },
+    {
+      "asset_id": "PAL-RETURN-W-001",
+      "name": "West layered wall return",
+      "kind": "proposed-layered-wall-return",
+      "component_family": "side-or-rear-continuous-ward",
+      "parent_asset_family": "Original palace stepped wings",
+      "reference_image_id": "PAL-RETURN-SETBACK-001",
+      "reference_file": "palace-side-rear/PAL-RETURN-SETBACK-001.png",
+      "reference_sha256": "f7188cb3bda15b50485df5d1454b78b0e88ecab6425e97991d937b8629c80070",
+      "source_alias_ids": [
+        "GEN-37"
+      ],
+      "alternate_reference_views": [
+        {
+          "image_id": "PAL-SIDE-REAR-001",
+          "file": "palace-side-rear/PAL-SIDE-REAR-001.png",
+          "sha256": "322d45ceceac31f201b6e85fb001d65bda36f60701d7417c053e2e54268c7814",
+          "role": "proposed-return-elevation-study",
+          "review_status": "pending"
+        }
+      ],
+      "notes": "Three local sections ascend from outer-left to inward-right, with correct100/100/100 side and75/75/75 rear labels and roofs60/160/230/300. Dimensions govern; diagram pixel scales are schematic, not a registered whole footprint. Side wall-face gaps100 grid m; rear75 grid m per transition. Exact main-wall contours and tower-depth joins unresolved. Appearance study palace-side-rear/PAL-SIDE-REAR-001.png; pending registration. West/east appearance insets carry100/100/100 labels; rear carries75/75/75 after text correction. Rear orientation shows eastern spires left and western broad pavilion right. Actual tower depths, rear glazing choices and exact wing contours remain proposed; elevations are not a registered shared 3D projection.",
+      "design_basis": "Owner-confirmed inter-layer setbacks; original GEN-37 front identity retained",
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending",
+      "suggested_model_filename": "PAL-RETURN-W-001__wall-return__v001.glb"
+    },
+    {
+      "asset_id": "PAL-RETURN-E-001",
+      "name": "East layered wall return",
+      "kind": "proposed-layered-wall-return",
+      "component_family": "side-or-rear-continuous-ward",
+      "parent_asset_family": "Original palace stepped wings",
+      "reference_image_id": "PAL-RETURN-SETBACK-001",
+      "reference_file": "palace-side-rear/PAL-RETURN-SETBACK-001.png",
+      "reference_sha256": "f7188cb3bda15b50485df5d1454b78b0e88ecab6425e97991d937b8629c80070",
+      "source_alias_ids": [
+        "GEN-37"
+      ],
+      "alternate_reference_views": [
+        {
+          "image_id": "PAL-SIDE-REAR-001",
+          "file": "palace-side-rear/PAL-SIDE-REAR-001.png",
+          "sha256": "322d45ceceac31f201b6e85fb001d65bda36f60701d7417c053e2e54268c7814",
+          "role": "proposed-return-elevation-study",
+          "review_status": "pending"
+        }
+      ],
+      "notes": "Three local sections ascend from outer-left to inward-right, with correct100/100/100 side and75/75/75 rear labels and roofs60/160/230/300. Dimensions govern; diagram pixel scales are schematic, not a registered whole footprint. Side wall-face gaps100 grid m; rear75 grid m per transition. Exact main-wall contours and tower-depth joins unresolved. Appearance study palace-side-rear/PAL-SIDE-REAR-001.png; pending registration. West/east appearance insets carry100/100/100 labels; rear carries75/75/75 after text correction. Rear orientation shows eastern spires left and western broad pavilion right. Actual tower depths, rear glazing choices and exact wing contours remain proposed; elevations are not a registered shared 3D projection.",
+      "design_basis": "Owner-confirmed inter-layer setbacks; original GEN-37 front identity retained",
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending",
+      "suggested_model_filename": "PAL-RETURN-E-001__wall-return__v001.glb"
+    },
+    {
+      "asset_id": "PAL-RETURN-N-001",
+      "name": "Rear layered wall return",
+      "kind": "proposed-layered-wall-return",
+      "component_family": "side-or-rear-continuous-ward",
+      "parent_asset_family": "Original palace stepped wings",
+      "reference_image_id": "PAL-RETURN-SETBACK-001",
+      "reference_file": "palace-side-rear/PAL-RETURN-SETBACK-001.png",
+      "reference_sha256": "f7188cb3bda15b50485df5d1454b78b0e88ecab6425e97991d937b8629c80070",
+      "source_alias_ids": [
+        "GEN-37"
+      ],
+      "alternate_reference_views": [
+        {
+          "image_id": "PAL-SIDE-REAR-001",
+          "file": "palace-side-rear/PAL-SIDE-REAR-001.png",
+          "sha256": "322d45ceceac31f201b6e85fb001d65bda36f60701d7417c053e2e54268c7814",
+          "role": "proposed-return-elevation-study",
+          "review_status": "pending"
+        }
+      ],
+      "notes": "Three local sections ascend from outer-left to inward-right, with correct100/100/100 side and75/75/75 rear labels and roofs60/160/230/300. Dimensions govern; diagram pixel scales are schematic, not a registered whole footprint. Side wall-face gaps100 grid m; rear75 grid m per transition. Exact main-wall contours and tower-depth joins unresolved. Appearance study palace-side-rear/PAL-SIDE-REAR-001.png; pending registration. West/east appearance insets carry100/100/100 labels; rear carries75/75/75 after text correction. Rear orientation shows eastern spires left and western broad pavilion right. Actual tower depths, rear glazing choices and exact wing contours remain proposed; elevations are not a registered shared 3D projection.",
+      "design_basis": "Owner-confirmed inter-layer setbacks; original GEN-37 front identity retained",
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending",
+      "suggested_model_filename": "PAL-RETURN-N-001__wall-return__v001.glb"
     }
   ],
   "reference_families": [

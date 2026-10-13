@@ -918,6 +918,34 @@
         "Perspective mislabeled plan, width-directed depth arrows, front-facing facade in side section and gate at stair top instead of after arrival terrace."
       ],
       "review_notes": "True overhead layout and side section show consecutive 75 grid m bands, total 150 grid m wall-to-wall gap, stair top Z=60 and gate base after the terrace at Y=0. Wing and tower footprints are proposed and simplified; section height graphics are schematic, so numeric constraints and GEN-37 source control rather than pixel measurements."
+    },
+    {
+      "sheet_id": "PAL-RETURN-SETBACK-001",
+      "owner": "palace",
+      "family": "Base, wall bodies and stepped wings",
+      "title": "Side and rear inter-layer wall setbacks",
+      "status": "generated-pending-review",
+      "file": "palace-side-rear/PAL-RETURN-SETBACK-001.png",
+      "sha256": "f7188cb3bda15b50485df5d1454b78b0e88ecab6425e97991d937b8629c80070",
+      "generation_attempts_in_this_pass": 2,
+      "retry_reasons": [
+        "Wrong plan-arrow axes and reversed inward local sections; replace with three ascending wall sections and no unregistered whole-plan outline."
+      ],
+      "review_notes": "Three local sections ascend from outer-left to inward-right, with correct100/100/100 side and75/75/75 rear labels and roofs60/160/230/300. Dimensions govern; diagram pixel scales are schematic, not a registered whole footprint."
+    },
+    {
+      "sheet_id": "PAL-SIDE-REAR-001",
+      "owner": "palace",
+      "family": "Base, wall bodies and stepped wings",
+      "title": "Connected west, east and rear wards",
+      "status": "generated-pending-review",
+      "file": "palace-side-rear/PAL-SIDE-REAR-001.png",
+      "sha256": "322d45ceceac31f201b6e85fb001d65bda36f60701d7417c053e2e54268c7814",
+      "generation_attempts_in_this_pass": 2,
+      "retry_reasons": [
+        "Rear horizontal gap70 contradicts confirmed75; rename decorative facade insets as terrace-return studies rather than side-cut sections."
+      ],
+      "review_notes": "West/east appearance insets carry100/100/100 labels; rear carries75/75/75 after text correction. Rear orientation shows eastern spires left and western broad pavilion right. Actual tower depths, rear glazing choices and exact wing contours remain proposed; elevations are not a registered shared 3D projection."
     }
   ],
   "production_pass": "palace-coverage-missing-only",
@@ -950,12 +978,13 @@
     "note": "Confirmed level schedule; rear depths and module snap dimensions remain unresolved. These values do not certify an exact generated perspective or retrofit generic prop dimensions.",
     "layer_schedule": "palace-layer-sheets/schedule.json",
     "entrance_schedule": "palace-front-correction/schedule.json",
-    "layer_schedule_status": "retired as placement authority; source regions remain archival evidence"
+    "layer_schedule_status": "retired as placement authority; source regions remain archival evidence",
+    "side_rear_schedule": "palace-side-rear/schedule.json"
   },
-  "production_pass_status": "Connected source-front annotation and dimensioned entrance proposal saved; prior split-layer layouts retired from final selection",
+  "production_pass_status": "Side/rear reference pass100 grid m each side and75 rear per inter-layer transition; front retained; registration pending",
   "structural_sheet_rule": "Display source-fitted assemblies with existing canonical decor so identity and proportions can be checked. Bare host views are internal construction proposals, not replacements for the original decorated wing references.",
   "generation_paused": true,
-  "pause_reason": "Two requested connected-front and entrance corrections completed. No automatic further structural redraws; source/view comparison still pending.",
+  "pause_reason": "Two requested side/rear studies saved after correcting axes and rear-gap annotation. Further structural generation needs source/geometry review, not automatic variants.",
   "generation_resume_allowlist": [],
   "retired_slots": [
     {

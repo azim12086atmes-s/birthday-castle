@@ -1,6 +1,6 @@
 # Birthday Castle image archive
 
-This archive contains **610 distinct image files** (509.4 MiB), including the 45 original illustrated boards, later generated concepts, vector drawings, crops, previews and build renders.
+This archive contains **614 distinct image files** (509.4 MiB), including the 45 original illustrated boards, later generated concepts, vector drawings, crops, previews and build renders.
 
 The active palace reference is **GEN-37**, with GEN-03 and GEN-16 as supporting views. Additional studies are retained for review; preservation does not mean approval. The corrected INT-C01 floor uses rose and ivory marble.
 
@@ -19,8 +19,9 @@ Use [the illustrated boards](images/illustrated-boards) to browse the original a
 | [original-palace-source-regions](original-palace-structure/INDEX.md) | 4 |
 | [palace-front-and-entrance-corrections](palace-front-correction/README.md) | 2 |
 | [palace-layer-reference-sheets](palace-layer-sheets/README.md) | 4 |
+| [palace-wall-return-studies](palace-side-rear/README.md) | 2 |
 | [palace-structural-studies](images/palace-structural-studies) | 1 |
-| [palace-structure-drafts](images/palace-structure-drafts) | 6 |
+| [palace-structure-drafts](images/palace-structure-drafts) | 8 |
 | [previews-and-reference-copies](images/previews-and-reference-copies) | 237 |
 | [reference-crops-and-studies](images/reference-crops-and-studies) | 73 |
 | [renders-and-screenshots](images/renders-and-screenshots) | 48 |
@@ -113,3 +114,7 @@ The current requested pass is [four source-linked layer sheets](palace-layer-she
 ## Continuous front and entrance correction
 
 The owner reported tower, wing and five-arch adjacency inconsistencies in the layer sheets. Use the [whole-front and entrance correction](palace-front-correction/README.md) to resolve layout before splitting modules. The entrance constraints keep 150 grid m between the ground-facing front wall and gate wall, including 75 grid m of terrace after the stair top. Generated sheet parity remains pending.
+
+## Side and rear wall returns
+
+The owner clarified [side/rear wall-face gaps](palace-side-rear/README.md):100 grid m on either side and75 grid m at the rear for each successive main-wall transition. These are not overall wing lengths. The front150/75 m approach and60 m L2-L3 front setback are retained; upper front setback and hidden contours remain unresolved. Existing garden and ornament sheets are reused.

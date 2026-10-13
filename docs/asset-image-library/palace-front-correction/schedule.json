@@ -145,7 +145,9 @@
     "rear_extension_grid_m": 30,
     "rear_extension_status": "proposed only behind palace ranges, not added to the confirmed forecourt gap",
     "scope_note": "The confirmed entrance spacing controls the proposed plan. The painted reference collapses depth; its pixels do not measure this setback. No separate L0 perimeter-wall position or height was supplied.",
-    "drawing_scale_status": "Generated section is schematic; dimensions control, not pixel-measured vertical ratios"
+    "drawing_scale_status": "Generated section is schematic; dimensions control, not pixel-measured vertical ratios",
+    "related_side_rear_schedule": "palace-side-rear/schedule.json",
+    "side_rear_constraint_note": "Owner clarified inter-layer wall-face gaps100 grid m at sides,75 rear. Front approach dimensions remain150 total,75 terrace."
   },
   "sheets": [
     {

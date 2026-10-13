@@ -166,3 +166,11 @@ These layer reconstructions were reported inconsistent and retired from placemen
 - [PAL-FRONT-001 — Continuous five-arch frontage and attached wings](palace-front-correction/PAL-FRONT-001.png) — PAL-FRONT-001-S01; pending source comparison.
 - [PAL-ENTRY-001 — Ground wall, L1 arrival terrace and gate-wall setback](palace-front-correction/PAL-ENTRY-001.png) — PAL-ENTRY-001-S01; pending source comparison.
 <!-- /continuous-correction -->
+
+
+<!-- side-rear -->
+## Side and rear wall returns
+
+- [PAL-RETURN-SETBACK-001 — Side and rear inter-layer wall setbacks](palace-side-rear/PAL-RETURN-SETBACK-001.png) — PAL-RETURN-W-001, PAL-RETURN-E-001, PAL-RETURN-N-001; pending review.
+- [PAL-SIDE-REAR-001 — Connected west, east and rear wards](palace-side-rear/PAL-SIDE-REAR-001.png) — PAL-RETURN-W-001, PAL-RETURN-E-001, PAL-RETURN-N-001; pending review.
+<!-- /side-rear -->

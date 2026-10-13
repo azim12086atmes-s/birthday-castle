@@ -1,0 +1,186 @@
+{
+  "schema_version": 1,
+  "source_front": "GEN-37",
+  "support_view_audit": {
+    "GEN-03": "Side/rear decoration references exist, but tower positions and printed measurements are not registered to source front. Detail inspiration only.",
+    "GEN-16": "Existing roof-garden fittings reused, not regenerated"
+  },
+  "owner_clarification": "75 m rear and100 m sides are distances between preceding layer walls and next layer walls",
+  "units": "design-grid m; world = grid \u00d72.75",
+  "measurement_definition": "Horizontal separation of successive main wall faces, before projections. Not total wing length or net path width.",
+  "transitions": [
+    {
+      "from": "L1",
+      "to": "L2",
+      "west_gap_grid_m": 100,
+      "east_gap_grid_m": 100,
+      "rear_gap_grid_m": 75,
+      "west_gap_world_m": 275,
+      "east_gap_world_m": 275,
+      "rear_gap_world_m": 206.25
+    },
+    {
+      "from": "L2",
+      "to": "L3",
+      "west_gap_grid_m": 100,
+      "east_gap_grid_m": 100,
+      "rear_gap_grid_m": 75,
+      "west_gap_world_m": 275,
+      "east_gap_world_m": 275,
+      "rear_gap_world_m": 206.25
+    },
+    {
+      "from": "L3",
+      "to": "L4",
+      "west_gap_grid_m": 100,
+      "east_gap_grid_m": 100,
+      "rear_gap_grid_m": 75,
+      "west_gap_world_m": 275,
+      "east_gap_world_m": 275,
+      "rear_gap_world_m": 206.25
+    }
+  ],
+  "levels": [
+    {
+      "id": "L1",
+      "bottom_grid_m": 0,
+      "roof_grid_m": 60,
+      "west_inward_local_m": 0,
+      "east_inward_local_m": 0,
+      "rear_inward_local_m": 0
+    },
+    {
+      "id": "L2",
+      "bottom_grid_m": 60,
+      "roof_grid_m": 160,
+      "west_inward_local_m": 100,
+      "east_inward_local_m": 100,
+      "rear_inward_local_m": 75
+    },
+    {
+      "id": "L3",
+      "bottom_grid_m": 160,
+      "roof_grid_m": 230,
+      "west_inward_local_m": 200,
+      "east_inward_local_m": 200,
+      "rear_inward_local_m": 150
+    },
+    {
+      "id": "L4",
+      "bottom_grid_m": 230,
+      "roof_grid_m": 300,
+      "west_inward_local_m": 300,
+      "east_inward_local_m": 300,
+      "rear_inward_local_m": 225
+    }
+  ],
+  "front_constraints": {
+    "L1_front_to_gate_grid_m": 150,
+    "stair_top_to_gate_grid_m": 75,
+    "L2_to_L3_front_grid_m": 60,
+    "L3_to_L4_front_status": "unresolved; rear/side gap not applied to front"
+  },
+  "uncertainties": [
+    "Wall contours, whole rear depth, upper front setback and tower depth remain unregistered.",
+    "Source tower groups retain identity and front anchors; main-wall inset does not move every tower.",
+    "Earlier generic30 m rear-body length proposal is not added to new75 m inter-layer gaps."
+  ],
+  "reuse": [
+    "GEN-19",
+    "GEN-29",
+    "GEN-38",
+    "GEN-39",
+    "GEN-41",
+    "GEN-42",
+    "GEN-43",
+    "GEN-45",
+    "GEN-16",
+    "GEN-17",
+    "GEN-32",
+    "GEN-44"
+  ],
+  "sheets": [
+    {
+      "sheet_id": "PAL-RETURN-SETBACK-001",
+      "title": "Side and rear inter-layer wall setbacks",
+      "prompt": "Make a precise architectural TECHNICAL SKETCH SHEET titled PAL-RETURN-SETBACK-001 \u2014 Successive wall-face gaps. THREE local wall sections ONLY, in three columns: WEST RETURN / PAL-RETURN-W-001; EAST RETURN / PAL-RETURN-E-001; REAR RETURN / PAL-RETURN-N-001. No overhead plan, no castle perspective, no front-facing facades, no tower crowns, no plants, no decorative scene. Black drafting lines, subtle pale rose solid masonry hatching, clean ivory background. Each section is one continuous solid stepped wall/roof body, with four wall faces and three exposed terraces, rising from LEFT LOW to RIGHT HIGH. The THREE profiles all ascend LEFT-to-RIGHT. Do NOT mirror WEST or REAR. Local axis u increases RIGHT in all three diagrams; label below: OUTER WALL \u2192 INWARD. Local axes are not the same as global east-west orientation.\nHeight levels are identical across all three: L1 body0\u201360; L2 body60\u2013160; L3 body160\u2013230; L4 body230\u2013300 grid m. Label Z=0, Z=60, Z=160, Z=230, Z=300 on light horizontal datums. Four face labels L1,L2,L3,L4 appear in order LEFT-to-RIGHT, never reverse their heights. Build ascending roof silhouette: begin at outer-left ground(0,0), rise vertically to(0,60), go horizontally to next face, rise there to160, go horizontally to next face, rise there to230, go horizontally to last face, rise there to300, then a short upper roof continues inward. Cross-section hatch continues down to common Z=0 ground under the whole body; roof/wall substrates are connected, not four floating boxes. The wall faces at terrace boundaries align to dimension extension lines.\nWEST local positions L1u=0,L2u=100,L3u=200,L4u=300. Terrace at Z60 between L1 and L2 =100 GRID m; terrace at Z160 between L2 and L3 =100 GRID m; terrace at Z230 between L3 and L4 =100 GRID m. At bottom of WEST panel draw three consecutive horizontal dimension arrows100,100,100 tied to these four face positions. Label WEST local inward = geographic EAST.\nEAST same local positions0,100,200,300, same LEFT LOW to RIGHT HIGH silhouette, same three consecutive100 GRID m arrows. Label EAST local inward = geographic WEST. Do NOT mirror the drawing based on this geographic word: local u still increases RIGHT.\nREAR local positions0,75,150,225, same LEFT LOW to RIGHT HIGH silhouette, same roof heights. Three consecutive horizontal arrows75,75,75 for L1-L2,L2-L3,L3-L4. Label REAR local inward = geographic SOUTH. Again do not mirror.\nNear each panel add a small vertical rise schedule60,100,70,70 for the four walls; these are heights, separate from terrace widths. A small footer table has three rows L1\u2192L2,L2\u2192L3,L3\u2192L4; columns West100,East100,Rear75 grid m for every row. Footer: HORIZONTAL MAIN WALL FACES / GRID m \u00d72.75 / WEST-EAST100 EACH; REAR75 / SOURCE TOWERS RETAINED ON EXISTING WINGS / HIDDEN CONTOURS UNRESOLVED. Front note: gate setback150; stair-top-to-gate75; L2-L3 front60; L3-L4 front unresolved. Do not apply these side/rear gaps to front. Technical dimensions control; full palace outline and tower placements are not specified by these local sections. Sharp legible lines and labels, geometric simplicity, no new architecture concept.",
+      "reference": "",
+      "role": "dimensional-return-study",
+      "components": [
+        {
+          "asset_id": "PAL-RETURN-W-001",
+          "name": "West layered wall return"
+        },
+        {
+          "asset_id": "PAL-RETURN-E-001",
+          "name": "East layered wall return"
+        },
+        {
+          "asset_id": "PAL-RETURN-N-001",
+          "name": "Rear layered wall return"
+        }
+      ],
+      "previous_drafts": [
+        {
+          "file": "palace-side-rear/rejected-drafts/PAL-RETURN-SETBACK-001-R01.png",
+          "sha256": "5e73a29511138674df16a36abf64a5fe91bf413cc3b80ceeec468ea4139e34d6",
+          "prompt": "Create a clear ENGINEERING SKETCH SHEET titled PAL-RETURN-SETBACK-001 \u2014 Side and rear inter-layer wall setbacks. A true overhead schematic above, and THREE precise local side-cut sections below: WEST RETURN, EAST RETURN, REAR RETURN. Fine black technical lines, pale rose/ivory masonry hatching, muted planting marks, clean ivory paper. Source picture supplies materials only; no facade elevation or perspective inside plan/sections.\nThe owner clarified that distances are between SUCCESSIVE MAIN WALL FACES, not whole wing lengths or an overall terrace extension. SAME FOUR connected levels in each section: L1 from Z=0 to roof60; L2 from Z=60 to roof160; L3 from160 to230; L4 from230 to300 GRID m. Individual rises60,100,70,70. Draw continuous retaining bodies, real wall thickness and roof slabs; terrace meets next wall at its base. Outer wall LEFT, inward toward palace centre RIGHT in each local section. Label L1-L4 and four roof datums60,160,230,300.\nWEST: four wall faces at local inward horizontal positions0,100,200,300. THREE exposed terraces between adjacent levels at Z60,160,230, each exactly100 GRID m face-to-face. Three consecutive horizontal arrows below section100,100,100, tied to those four faces. EAST: same three100 GRID m gaps; note local inward means WEST geographically. REAR: four wall faces at local inward0,75,150,225. Three terraces at Z60,160,230, each75 GRID m face-to-face, with three consecutive arrows75,75,75. Rear inward means SOUTH geographically. These100 and75 are horizontal gaps, NOT vertical rises. Inset main walls, not four freestanding floating blocks. Do not put front-facing windows or towers in side-cut sections.\nTop plan: ONE connected proposed perimeter with softly chamfered/curved returns, four progressively inset main-wall contours L1-L4. NORTH/REAR top; SOUTH/FRONT bottom; WEST left; EAST right. Rear gaps annotated by north-south75 arrows; side gaps by east-west100 arrows. Tower-seat outlines faint schematic context; note SOURCE TOWER ANCHORS RETAINED / HIDDEN DEPTH UNRESOLVED. Main-wall setbacks do NOT drag every attached tower inward or generate identical corner towers on each contour. Do not invent total footprint dimensions. Front constraint note only: front wall to gate150; stair top to gate75; L2-L3 front setback60; L3-L4 front setback unresolved. Do not apply rear75 to all front gaps. Footer: GRID m \u00d72.75 / WALL FACES, NOT PATH WIDTH / HIDDEN CONTOURS PROPOSED / GEN-37 FRONT CONTROLS. Crisp readable geometry showing100/100/100 SIDE and75/75/75 REAR. No giant fountain or redesigned castle scene.",
+          "reference_image_id": "SRC-LAYER-FULL",
+          "status": "rejected-on-dimensional-comparison",
+          "reason": "Plan side arrows run north-south and rear arrows east-west. West/rear local sections ascend opposite to their stated inward direction."
+        }
+      ],
+      "output_file": "palace-side-rear/PAL-RETURN-SETBACK-001.png",
+      "sha256": "f7188cb3bda15b50485df5d1454b78b0e88ecab6425e97991d937b8629c80070",
+      "generator": "image_gen.imagegen",
+      "generated_source_file": "/workspace/generated_images/exec-89b4781b-f195-45bc-91c2-57c0cfd4ddef.png",
+      "review_status": "pending-user-review",
+      "review_notes": "Three local sections ascend from outer-left to inward-right, with correct100/100/100 side and75/75/75 rear labels and roofs60/160/230/300. Dimensions govern; diagram pixel scales are schematic, not a registered whole footprint.",
+      "reference_image_id": "",
+      "reference_sha256": ""
+    },
+    {
+      "sheet_id": "PAL-SIDE-REAR-001",
+      "title": "Connected west, east and rear wards",
+      "prompt": "Edit this attached three-panel palace architecture sheet MINIMALLY. Preserve every building, tower, crown, window, terrace, stair, garden, color, panel layout and relative geometry exactly; no new architecture or restyling. Make only these text corrections: (1) In the BOTTOM-RIGHT NORTH REAR inset, change the RIGHTMOST HORIZONTAL gap dimension70 to75. The three horizontal rear-gap callouts must read75,75,75. Do NOT change vertical rise70 labels for L3 orL4; those height rises stay70. The WEST and EAST horizontal gap labels stay100,100,100. (2) Change the title LOCAL SIDE-CUT (WEST) to TERRACE-RETURN STUDY (WEST), change LOCAL SIDE-CUT (EAST) to TERRACE-RETURN STUDY (EAST), and LOCAL SIDE-CUT (NORTH REAR) to TERRACE-RETURN STUDY (NORTH REAR). These decorated little facades are appearance studies, not actual cuts. All roof datums and rise captions60,160,230,300 and60,100,70,70 remain unchanged. Everything else including main title PAL-SIDE-REAR-001, full panel component IDs PAL-RETURN-W-001/PAL-RETURN-E-001/PAL-RETURN-N-001, geographic orientations, source/reference footer and the THREE full palace elevations stays as in the original attached sheet. Add no new panels, no additional front gates or tower groups. A text correction to the same image, not a new concept.",
+      "reference": "/workspace/generated_images/exec-855b7b5b-1708-403d-9194-a356aa0a7e62.png",
+      "role": "proposed-return-elevation-study",
+      "components": [
+        {
+          "asset_id": "PAL-RETURN-W-001",
+          "name": "West layered wall return"
+        },
+        {
+          "asset_id": "PAL-RETURN-E-001",
+          "name": "East layered wall return"
+        },
+        {
+          "asset_id": "PAL-RETURN-N-001",
+          "name": "Rear layered wall return"
+        }
+      ],
+      "previous_drafts": [
+        {
+          "file": "palace-side-rear/rejected-drafts/PAL-SIDE-REAR-001-R01.png",
+          "sha256": "54f8f980b90a2b87262d1c3a2c3401ccb995c31dfea658ebd4bbfc8156d7508e",
+          "prompt": "Detailed fine-ink and watercolor architectural SKETCH SHEET titled PAL-SIDE-REAR-001 \u2014 Connected west, east and rear wards. THREE generous panels: WEST SIDE, EAST SIDE, NORTH REAR. Three views of ONE connected original princess palace, not different castles, detached blocks or a line of independent towers. Original FRONT reference controls anatomy and material: broad WEST purple onion pavilion, central royal needle slightly west of gate axis, EAST belvedere, tall EAST chapel-spire cluster, terminal onions and attached turret extensions remain SAME groups. No new dominant towers. Rose/ivory veined marble, gold lotus/leaf ribs, rose/star spandrels, pierced rails, blue/indigo/lilac/pink glass, plum ribbed crowns. Side/rear depths are proposals, not measured source geometry.\nFour connected stepped main ward walls and garden roofs: L1roof60,L2roof160,L3roof230,L4roof300 GRID m; rises60,100,70,70. Closed glazed masonry with thick recessed apertures and engaged carved piers; only genuine recessed loggias open. Continuous asymmetric wings with curved/chamfered projections, small connecting wings and stair returns. WEST and EAST main wall-to-next wall gaps100 GRID m at EACH L1-L2,L2-L3,L3-L4 transition. NORTH REAR gaps75 GRID m each. Show three exposed terrace steps and small face-to-face100 or75 annotations in each panel's LOCAL SIDE-CUT inset. These are wall separations, not wing lengths or new tower heights. Existing projecting towers and lower-wing pavilions occupy part of terrace and are not relocated onto every next inset wall. Keep roofs connected, small rose beds, small lotus fountains, paths, benches and delicate lamps from existing asset families. Do not obscure castle with giant courtyards or a hill rising only at the back. Front cascade and paired dry stairs remain SOUTH, not transferred to side/rear.\nWEST elevation: FRONT/SOUTH LEFT, REAR/NORTH RIGHT; original western terminal toward front, broad western onion pavilion toward its established wing, royal needle toward inner court. Unequal small glazed chambers, stepped loggias, side stairs and source rails. EAST elevation also FRONT LEFT, REAR RIGHT, but shows EAST belvedere and taller chapel-spire group, different from west. Do not mirror broad west onion pavilion onto east. REAR elevation faces SOUTH: geographic EAST on image LEFT, WEST on image RIGHT. Therefore eastern tall chapel-spire group LEFT, broad western onion pavilion RIGHT, royal needle near centre slightly toward RIGHT. Front five great arches G1-G5 stay SOUTH; do not duplicate whole five-gate frontage on NORTH. Rear shows smaller source-family lancets, rose medallions, modest chapel/loggia access and garden-room glazing. No new bridges or forests of domes. Fit existing tower groups entirely within frame.\nThree panels of precise fine ink with restrained rose/ivory/gold color, full wall forms, intricate reusable canonical carving. Small four-level local section inset per panel carries its100/100/100 side or75/75/75 rear steps. No invented overall footprint dimensions. Footer: PROPOSED SIDE/REAR CONTINUATION / GEN-37 CONTROLS TOWER IDENTITY / GRID m \u00d72.75 / VIEW REGISTRATION PENDING. Do not treat this concept as an exact registered 3D model.\nPrint the full panel IDs: PAL-RETURN-W-001 under WEST, PAL-RETURN-E-001 under EAST, PAL-RETURN-N-001 under NORTH REAR.\nThe whole WEST/EAST elevations project along east-west and cannot show the100m side setback as a measured north-south facade length. Put100/100/100 ONLY in the perpendicular local side-cut inset. The NORTH rear elevation cannot show its75m depth as a measured east-west facade length: put75/75/75 ONLY in its perpendicular local inset. All three LOCAL insets use outer-low LEFT and inner-high RIGHT. In geographic elevation artwork do not invent numerical total lengths or move tower groups to fit inset axes.",
+          "reference_image_id": "SRC-LAYER-FULL",
+          "status": "rejected-on-callout-comparison",
+          "reason": "Last horizontal rear-gap callout shows70 instead of75, and decorated facade insets are labelled local side-cuts despite being appearance studies."
+        }
+      ],
+      "output_file": "palace-side-rear/PAL-SIDE-REAR-001.png",
+      "sha256": "322d45ceceac31f201b6e85fb001d65bda36f60701d7417c053e2e54268c7814",
+      "generator": "image_gen.imagegen",
+      "generated_source_file": "/workspace/generated_images/exec-5f42748e-0bf2-4961-8215-5c7e51e53b2e.png",
+      "review_status": "pending-user-review",
+      "review_notes": "West/east appearance insets carry100/100/100 labels; rear carries75/75/75 after text correction. Rear orientation shows eastern spires left and western broad pavilion right. Actual tower depths, rear glazing choices and exact wing contours remain proposed; elevations are not a registered shared 3D projection.",
+      "reference_image_id": "DRAFT-PAL-SIDE-REAR-001-R01",
+      "reference_sha256": "54f8f980b90a2b87262d1c3a2c3401ccb995c31dfea658ebd4bbfc8156d7508e"
+    }
+  ],
+  "status": "Two requested wall-return reference sheets complete; appearance/geometry registration pending",
+  "dimension_sheet": "PAL-RETURN-SETBACK-001",
+  "appearance_sheet": "PAL-SIDE-REAR-001",
+  "full_3D_approval_status": "No registered whole mesh or approval claimed"
+}

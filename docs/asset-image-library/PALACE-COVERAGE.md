@@ -44,3 +44,7 @@ Both wing redraws were rejected for structure mismatch. The supposed wing-view g
 ## Continuous front and entrance correction
 
 The owner reported tower, wing and five-arch adjacency inconsistencies in the layer sheets. Use the [whole-front and entrance correction](palace-front-correction/README.md) to resolve layout before splitting modules. The entrance constraints keep 150 grid m between the ground-facing front wall and gate wall, including 75 grid m of terrace after the stair top. Generated sheet parity remains pending.
+
+## Side and rear wall returns
+
+The owner clarified [side/rear wall-face gaps](palace-side-rear/README.md):100 grid m on either side and75 grid m at the rear for each successive main-wall transition. These are not overall wing lengths. The front150/75 m approach and60 m L2-L3 front setback are retained; upper front setback and hidden contours remain unresolved. Existing garden and ornament sheets are reused.

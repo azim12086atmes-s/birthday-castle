@@ -1,0 +1,4 @@
+asset_id,name,dimension_file,appearance_file,west_or_east_gap_grid_m,rear_gap_grid_m,status
+PAL-RETURN-W-001,West layered wall return,palace-side-rear/PAL-RETURN-SETBACK-001.png,palace-side-rear/PAL-SIDE-REAR-001.png,100,,proposed; not registered mesh
+PAL-RETURN-E-001,East layered wall return,palace-side-rear/PAL-RETURN-SETBACK-001.png,palace-side-rear/PAL-SIDE-REAR-001.png,100,,proposed; not registered mesh
+PAL-RETURN-N-001,Rear layered wall return,palace-side-rear/PAL-RETURN-SETBACK-001.png,palace-side-rear/PAL-SIDE-REAR-001.png,,75,proposed; not registered mesh

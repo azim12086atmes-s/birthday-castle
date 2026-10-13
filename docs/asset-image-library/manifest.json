@@ -1,8 +1,8 @@
 {
   "date": "2026-10-13",
-  "distinct_image_count": 610,
-  "source_file_count": 867,
-  "total_bytes": 563810397,
+  "distinct_image_count": 614,
+  "source_file_count": 871,
+  "total_bytes": 574373612,
   "categories": {
     "additional-generated-studies": 33,
     "component-development-studies": 3,
@@ -16,7 +16,8 @@
     "palace-front-and-entrance-corrections": 2,
     "palace-layer-reference-sheets": 4,
     "palace-structural-studies": 1,
-    "palace-structure-drafts": 6,
+    "palace-structure-drafts": 8,
+    "palace-wall-return-studies": 2,
     "previews-and-reference-copies": 237,
     "reference-crops-and-studies": 73,
     "renders-and-screenshots": 48,
@@ -11973,6 +11974,94 @@
       "label": "DRAFT-PAL-ENTRY-001-R01 \u2014 Rejected PAL-ENTRY-001 first attempt",
       "reference_role": "rejected-draft",
       "design_status": "rejected; Overhead panel is perspective; depth dimensions are drawn across width; section shows a front-facing five-bay wall and leaves the gate at the stair top instead of after the 75 m terrace.",
+      "review_status": "rejected",
+      "related_image_ids": [
+        "GEN-37"
+      ]
+    },
+    {
+      "id": "PAL-RETURN-SETBACK-001",
+      "title": "Side and rear inter-layer wall setbacks",
+      "category": "palace-wall-return-studies",
+      "file": "palace-side-rear/PAL-RETURN-SETBACK-001.png",
+      "sha256": "f7188cb3bda15b50485df5d1454b78b0e88ecab6425e97991d937b8629c80070",
+      "bytes": 1912204,
+      "source_aliases": [
+        "/workspace/generated_images/exec-89b4781b-f195-45bc-91c2-57c0cfd4ddef.png"
+      ],
+      "alias_ids": [],
+      "component_ids": [
+        "PAL-RETURN-W-001",
+        "PAL-RETURN-E-001",
+        "PAL-RETURN-N-001"
+      ],
+      "label": "PAL-RETURN-SETBACK-001 \u2014 Side and rear inter-layer wall setbacks",
+      "reference_role": "dimensional-return-study",
+      "design_status": "pending-review; main-wall offsets specified; unseen contours proposed",
+      "review_status": "pending-user-review",
+      "related_image_ids": [
+        "GEN-37",
+        "GEN-03",
+        "GEN-16"
+      ]
+    },
+    {
+      "id": "DRAFT-PAL-RETURN-SETBACK-001-R01",
+      "title": "Rejected setback diagram: Plan side arrows run north-south and rear arrows east-west. West/rear local sections ascend opposite to their stated inward direction.",
+      "category": "palace-structure-drafts",
+      "file": "palace-side-rear/rejected-drafts/PAL-RETURN-SETBACK-001-R01.png",
+      "sha256": "5e73a29511138674df16a36abf64a5fe91bf413cc3b80ceeec468ea4139e34d6",
+      "bytes": 2458724,
+      "source_aliases": [],
+      "alias_ids": [],
+      "component_ids": [],
+      "label": "DRAFT-PAL-RETURN-SETBACK-001-R01 \u2014 rejected",
+      "reference_role": "rejected-draft",
+      "design_status": "rejected-on-axis-comparison",
+      "review_status": "rejected",
+      "related_image_ids": [
+        "GEN-37"
+      ]
+    },
+    {
+      "id": "PAL-SIDE-REAR-001",
+      "title": "Connected west, east and rear wards",
+      "category": "palace-wall-return-studies",
+      "file": "palace-side-rear/PAL-SIDE-REAR-001.png",
+      "sha256": "322d45ceceac31f201b6e85fb001d65bda36f60701d7417c053e2e54268c7814",
+      "bytes": 2935546,
+      "source_aliases": [
+        "/workspace/generated_images/exec-5f42748e-0bf2-4961-8215-5c7e51e53b2e.png"
+      ],
+      "alias_ids": [],
+      "component_ids": [
+        "PAL-RETURN-W-001",
+        "PAL-RETURN-E-001",
+        "PAL-RETURN-N-001"
+      ],
+      "label": "PAL-SIDE-REAR-001 \u2014 Connected west, east and rear wards",
+      "reference_role": "proposed-return-elevation-study",
+      "design_status": "pending-review; main-wall offsets specified; unseen contours proposed",
+      "review_status": "pending-user-review",
+      "related_image_ids": [
+        "GEN-37",
+        "GEN-03",
+        "GEN-16"
+      ]
+    },
+    {
+      "id": "DRAFT-PAL-SIDE-REAR-001-R01",
+      "title": "Rejected setback diagram: Last horizontal rear-gap callout shows70 instead of75, and decorated facade insets are labelled local side-cuts despite being appearance studies.",
+      "category": "palace-structure-drafts",
+      "file": "palace-side-rear/rejected-drafts/PAL-SIDE-REAR-001-R01.png",
+      "sha256": "54f8f980b90a2b87262d1c3a2c3401ccb995c31dfea658ebd4bbfc8156d7508e",
+      "bytes": 3256741,
+      "source_aliases": [],
+      "alias_ids": [],
+      "component_ids": [],
+      "label": "DRAFT-PAL-SIDE-REAR-001-R01 \u2014 rejected",
+      "reference_role": "rejected-draft",
+      "design_status": "rejected-on-axis-comparison",
       "review_status": "rejected",
       "related_image_ids": [
         "GEN-37"
