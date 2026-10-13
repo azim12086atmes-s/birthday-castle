@@ -1,0 +1,252 @@
+{
+  "source_image_id": "GEN-37",
+  "source_file": "../images/illustrated-boards/GEN-37.png",
+  "source_size": [
+    1898,
+    829
+  ],
+  "method": "Direct original-image regions and observed front-elevation relationships; no freeform replacement architecture",
+  "limitations": "Rectangular source regions overlap and are not solid-object masks. Front projection does not establish hidden rear depth, footprint or numerical module interfaces.",
+  "principal_regions": [
+    {
+      "id": "SRC-PAL-WEST-RANGE",
+      "title": "Western original connected ranges",
+      "file": "../images/reference-crops-and-studies/W01-ae10389395cc.png",
+      "box_xyxy": [
+        235,
+        328,
+        817,
+        807
+      ],
+      "existing_crop": "W01",
+      "observed": "Two dominant great-window bays, lower curved/returning arcades, smaller upper gallery bays, roof-garden setbacks and attached star-panel projections",
+      "sha256": "ae10389395cc39506b768fdd7265e985d0c55a991b4d92ffb44dad0fa86f2bd7",
+      "size": [
+        582,
+        479
+      ],
+      "reference_image_id": "REF-AE10389395CC"
+    },
+    {
+      "id": "SRC-PAL-EAST-RANGE",
+      "title": "Eastern original connected ranges",
+      "file": "../images/reference-crops-and-studies/W02-2b6c700b5864.png",
+      "box_xyxy": [
+        1000,
+        324,
+        1710,
+        807
+      ],
+      "existing_crop": "W02",
+      "observed": "Two great-window bays at the left of the range; longer nested/angled ward fronts and projections to the right; different levels and lengths from the west",
+      "sha256": "2b6c700b5864783b75585454ff9fd74d0971cecea596a09578204e1bfd2d9d73",
+      "size": [
+        710,
+        483
+      ],
+      "reference_image_id": "REF-2B6C700B5864"
+    },
+    {
+      "id": "SRC-PAL-WEST-LOWER",
+      "title": "Western lower arcade and projections",
+      "file": "../images/reference-crops-and-studies/W03-d70f84a2e81d.png",
+      "box_xyxy": [
+        242,
+        568,
+        586,
+        807
+      ],
+      "existing_crop": "W03",
+      "observed": "Small pointed glazed bays with solid rose/ivory masonry, stepped garden roofs and projecting star-panel bastion",
+      "sha256": "d70f84a2e81d103d7e00be088213819b862aeac02f521f4309d968642ecd8692",
+      "size": [
+        344,
+        239
+      ],
+      "reference_image_id": "REF-D70F84A2E81D"
+    },
+    {
+      "id": "SRC-PAL-EAST-NESTED",
+      "title": "Eastern nested wards and changing fronts",
+      "file": "../images/reference-crops-and-studies/W04-7b502c9945e9.png",
+      "box_xyxy": [
+        1375,
+        449,
+        1708,
+        807
+      ],
+      "existing_crop": "W04",
+      "observed": "Several connected unequal-length fronts, glazed medium/small bays, recessed terraces and a lower stair return; not a uniform repeated arcade",
+      "sha256": "7b502c9945e9fd4a071daa9d4f71636a8ae8a94d49ac829d1c188a76106a893e",
+      "size": [
+        333,
+        358
+      ],
+      "reference_image_id": "REF-7B502C9945E9"
+    },
+    {
+      "id": "SRC-PAL-WEST-PAVILION",
+      "title": "Broad western onion pavilion above the wing",
+      "file": "../images/reference-crops-and-studies/T02-9f4d290c4c4d.png",
+      "box_xyxy": [
+        414,
+        65,
+        650,
+        475
+      ],
+      "existing_crop": "T02",
+      "observed": "Large wide onion-roof pavilion visually above/behind the western hero-window range; must not be replaced by a small dome at an arbitrary wing end",
+      "sha256": "9f4d290c4c4d18bca8cc2587c7745ddb6e879af193f5491359a97183ce58a785",
+      "size": [
+        236,
+        410
+      ],
+      "reference_image_id": "REF-9F4D290C4C4D"
+    },
+    {
+      "id": "SRC-PAL-EAST-BELVEDERE",
+      "title": "Eastern projecting belvedere and wing attachment",
+      "file": "../images/reference-crops-and-studies/T05-48132b5fa126.png",
+      "box_xyxy": [
+        1270,
+        252,
+        1439,
+        611
+      ],
+      "existing_crop": "T05",
+      "observed": "Tall projecting pale/rose body, glazed gallery and plum dome integrated into the eastern composition",
+      "sha256": "48132b5fa126464ccfb68ed1596da47a2c34fc2390c28e26698b82473196daf5",
+      "size": [
+        169,
+        359
+      ],
+      "reference_image_id": "REF-48132B5FA126"
+    },
+    {
+      "id": "SRC-PAL-EAST-SPIRES",
+      "title": "Eastern spire cluster behind the wards",
+      "file": "../images/reference-crops-and-studies/T03-ac54329e2b5d.png",
+      "box_xyxy": [
+        1485,
+        48,
+        1715,
+        523
+      ],
+      "existing_crop": "T03",
+      "observed": "Unequal close-set tall stems and attached extensions behind the eastern wards; existing positions control",
+      "sha256": "ac54329e2b5d97167cd2e9dc4c1eea36769ae08bdf20f2a4b9576cc8cbb33e6c",
+      "size": [
+        230,
+        475
+      ],
+      "reference_image_id": "REF-AC54329E2B5D"
+    },
+    {
+      "id": "SRC-PAL-WEST-GREAT",
+      "title": "Western great-window pair \u2014 original positions",
+      "file": "../original-palace-structure/western-great-window-pair.png",
+      "box_xyxy": [
+        505,
+        443,
+        815,
+        667
+      ],
+      "observed": "The two actual west great bays. Reuse the selected single-bay master twice at these source positions, not a generic new row of small open arches",
+      "sha256": "7dd9f57b322e329c83a9c06f671fbd6fd1a3eb40c73a9b19434311706e94a839",
+      "size": [
+        310,
+        224
+      ],
+      "reference_image_id": "SRC-PAL-WEST-GREAT"
+    },
+    {
+      "id": "SRC-PAL-GATE",
+      "title": "Original ceremonial gate and gable",
+      "file": "../original-palace-structure/original-ceremonial-gate-and-gable.png",
+      "box_xyxy": [
+        818,
+        354,
+        1018,
+        667
+      ],
+      "observed": "Principal entry axis and gable; source composition is slightly offset, not forced to perfect symmetry",
+      "sha256": "81b142714f9193001fc6215e5700f85e5b537f7459864ee4e39f1cf9ab6fe1ac",
+      "size": [
+        200,
+        313
+      ],
+      "reference_image_id": "SRC-PAL-GATE"
+    },
+    {
+      "id": "SRC-PAL-STAIR-AXIS",
+      "title": "Original complete stair and cascade axis",
+      "file": "../images/reference-crops-and-studies/S01-e67fd4effe7f.png",
+      "box_xyxy": [
+        546,
+        617,
+        1294,
+        815
+      ],
+      "existing_crop": "S01",
+      "observed": "Central wet spine and two dry flanking flights connect to the original gate/terrace junction; do not rearrange them to suit a generated module",
+      "sha256": "e67fd4effe7f849e7241fd9bc6344bca0597b3063ffadb5e63a6e5f27ec69860",
+      "size": [
+        748,
+        198
+      ],
+      "reference_image_id": "REF-E67FD4EFFE7F"
+    }
+  ],
+  "reuse_bindings": [
+    {
+      "component": "Four principal great bays",
+      "master": "GEN-38-M02",
+      "placement": "Two actual west bays plus two actual east bays flanking the existing gate; one master per bay"
+    },
+    {
+      "component": "Small upper/gallery windows",
+      "master": "GEN-38-M04",
+      "placement": "Existing smaller set-back ranges and gallery faces"
+    },
+    {
+      "component": "Lower arcade surround",
+      "master": "GEN-43-M01",
+      "placement": "Observed lower curved/returning wing faces"
+    },
+    {
+      "component": "Terminal/projection star panel",
+      "master": "GEN-38-M03 / GEN-43-M03",
+      "placement": "Actual source projecting pier/tower faces"
+    },
+    {
+      "component": "Rose carved spandrels",
+      "master": "GEN-40-M01 / source visible relief",
+      "placement": "Triangular rose wall fields over the selected great and smaller bays"
+    },
+    {
+      "component": "Parapet and frieze runs",
+      "master": "GEN-39 / GEN-42",
+      "placement": "Actual roof/terrace contours, with curved and returning profiles"
+    },
+    {
+      "component": "Lanterns and mounts",
+      "master": "GEN-32 / GEN-45",
+      "placement": "Existing pier faces and bracket positions; no new arbitrary lamp rhythm"
+    },
+    {
+      "component": "Gardens, urns and trees",
+      "master": "GEN-13 / GEN-16 / GEN-20 / GEN-35",
+      "placement": "Existing roof terraces and source garden pockets; reuse rather than create a new planting composition"
+    }
+  ],
+  "rejected_changes": [
+    "Open colonnades replacing solid stained-glass wing walls",
+    "A decorative two-bay building invented independently of the source tier layout",
+    "Changed wing lengths, front planes and roof setbacks",
+    "Moved or substituted onion pavilions, projecting towers and attached stems",
+    "Uniform repeated arch rhythm replacing the hierarchy of great, medium and small windows",
+    "Assuming matching marble, glass and carving alone makes the structure match"
+  ],
+  "next_step": "Use these exact regions to establish the structural assembly/placement graph. Reuse the original images as canonical references. Do not generate another wing silhouette before the front correspondence and unresolved depth have been recorded.",
+  "source_sha256": "93e90aa60c98e29cd47f4c319661a390d16ae79e0517fd26af566eab2a09440a"
+}

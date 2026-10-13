@@ -1,6 +1,6 @@
 # Birthday Castle image archive
 
-This archive contains **590 distinct image files** (498.9 MiB), including the 45 original illustrated boards, later generated concepts, vector drawings, crops, previews and build renders.
+This archive contains **595 distinct image files** (507.0 MiB), including the 45 original illustrated boards, later generated concepts, vector drawings, crops, previews and build renders.
 
 The active palace reference is **GEN-37**, with GEN-03 and GEN-16 as supporting views. Additional studies are retained for review; preservation does not mean approval. The corrected INT-C01 floor uses rose and ivory marble.
 
@@ -97,3 +97,7 @@ A03 in PACK-BRG-001 revision 2 is **Stepped lotus capital**, matching the suppli
 ## Palace structural families
 
 [PAL-WALL-001](images/palace-structural-studies/PAL-WALL-001.png) shows the reconstructed full clustered-pier/stained-glass wall assembly, including front, three-quarter and profile views. The source crop was an assembly close-up, not a cross-section. [Structural and matching detail register](PALACE-STRUCTURE-AND-DETAIL-REGISTER.md) covers wall/decor, railing, fountain/staircase, wing/ward and tower families while preserving the original palace layout and material theme. It identifies existing sources before missing-only generation.
+
+## Original palace fidelity correction
+
+The two wing redraws are rejected; they changed the structure even when the materials/decor looked related. Use [the exact original palace regions](original-palace-structure/INDEX.md) and [the single-panel viewer](original-palace-structure/index.html) instead. [Production caps and work plan](PRODUCTION-PLAN.md) reserve 65 sheets for palace/interiors and 165 for the rest of the world; the nine proposed palace slots remain a work queue, not completed or approved references. Further structural generation is paused for source correspondence.

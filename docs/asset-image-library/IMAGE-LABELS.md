@@ -656,3 +656,11 @@ Stable IDs refer to exact saved images. Pack pieces are numbered within each lab
 | Image ID | Label |
 | --- | --- |
 | PAL-WALL-001 | [Clustered pier and complete glazed wall bay](images/palace-structural-studies/PAL-WALL-001.png) |
+
+## Rejected or paused palace structural drafts
+
+| Image ID | Label | Status |
+| --- | --- | --- |
+| DRAFT-PAL-WING-001-R01 | [Rejected bare wing hosts](images/palace-structure-drafts/DRAFT-PAL-WING-001-R01.png) | rejected-by-user; wrong wing structure |
+| DRAFT-PAL-WING-001-R02 | [Rejected decorated wing redraw](images/palace-structure-drafts/DRAFT-PAL-WING-001-R02.png) | rejected-by-user; changed massing and tower attachments |
+| DRAFT-PAL-BASE-001-R01 | [Unapproved base and gate host proposal](images/palace-structure-drafts/DRAFT-PAL-BASE-001-R01.png) | paused-proposal; source correspondence not established |

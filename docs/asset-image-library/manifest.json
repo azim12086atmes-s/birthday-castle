@@ -1,8 +1,8 @@
 {
   "date": "2026-10-13",
-  "distinct_image_count": 590,
-  "source_file_count": 841,
-  "total_bytes": 523153842,
+  "distinct_image_count": 595,
+  "source_file_count": 854,
+  "total_bytes": 531643320,
   "categories": {
     "additional-generated-studies": 33,
     "component-development-studies": 3,
@@ -17,7 +17,9 @@
     "original-bridge-source-crops": 10,
     "missing-component-packs": 1,
     "original-column-source-crops": 7,
-    "palace-structural-studies": 1
+    "palace-structural-studies": 1,
+    "original-palace-source-regions": 2,
+    "palace-structure-drafts": 3
   },
   "active_palace_authority": "GEN-37 original front elevation; GEN-03 and GEN-16 supporting views",
   "notes": [
@@ -31,7 +33,8 @@
     "PACK-BRG-001 revision 2 corrects A03 to the supplied stepped capital. Original revision is preserved as PACK-BRG-001-R01. Model provenance must include the reference hash or revision.",
     "Original bridge panels A\u2013G and overview views are preserved as ten named exact pixel crops. Source comparison flags discrepancies in the generated bridge packs; do not claim exact GEN-18 reconstruction readiness.",
     "Missing-only production: existing bridge targets now use adequate original source panels. PACK-BRG-003 adds only three previously unisolated families. GEN-29 source panels are indexed with no new column generation.",
-    "PAL-WALL-001 reconstructs the missing full wall/arch assembly from GEN-29. It reuses the existing capital/base motif, adds no new palace layout authority, and does not certify hidden dimensions or view parity."
+    "PAL-WALL-001 reconstructs the missing full wall/arch assembly from GEN-29. It reuses the existing capital/base motif, adds no new palace layout authority, and does not certify hidden dimensions or view parity.",
+    "Both PAL-WING-001 redraws are rejected history, not model references. Use original-palace-structure/INDEX.md and GEN-37 for actual wing morphology. Structural generation is paused pending source correspondence; global/local sheet caps remain unchanged."
   ],
   "images": [
     {
@@ -6442,11 +6445,13 @@
       "bytes": 809541,
       "source_aliases": [
         "shared/birthday-castle-front-crops/W02.png",
-        "shared/birthday-castle-image-library/direct-crops/CROP-W02.png"
+        "shared/birthday-castle-image-library/direct-crops/CROP-W02.png",
+        "shared/birthday-castle-palace-coverage/original-structure-regions/eastern-original-connected-ranges.png"
       ],
       "review_status": "preserved-reference-or-study; no new approval implied",
       "alias_ids": [
-        "FRONT-CROP-W02"
+        "FRONT-CROP-W02",
+        "SRC-PAL-EAST-RANGE"
       ],
       "component_ids": [],
       "label": "REF-2B6C700B5864 \u2014 Eastern stepped connected ranges",
@@ -6574,11 +6579,13 @@
       "bytes": 136676,
       "source_aliases": [
         "shared/birthday-castle-front-crops/T05.png",
-        "shared/birthday-castle-image-library/direct-crops/CROP-T05.png"
+        "shared/birthday-castle-image-library/direct-crops/CROP-T05.png",
+        "shared/birthday-castle-palace-coverage/original-structure-regions/eastern-projecting-belvedere.png"
       ],
       "review_status": "preserved-reference-or-study; no new approval implied",
       "alias_ids": [
-        "FRONT-CROP-T05"
+        "FRONT-CROP-T05",
+        "SRC-PAL-EAST-BELVEDERE"
       ],
       "component_ids": [],
       "label": "REF-48132B5FA126 \u2014 Eastern projecting belvedere",
@@ -6869,11 +6876,13 @@
       "bytes": 285132,
       "source_aliases": [
         "shared/birthday-castle-front-crops/W04.png",
-        "shared/birthday-castle-image-library/direct-crops/CROP-W04.png"
+        "shared/birthday-castle-image-library/direct-crops/CROP-W04.png",
+        "shared/birthday-castle-palace-coverage/original-structure-regions/eastern-nested-wards-and-changing-fronts.png"
       ],
       "review_status": "preserved-reference-or-study; no new approval implied",
       "alias_ids": [
-        "FRONT-CROP-W04"
+        "FRONT-CROP-W04",
+        "SRC-PAL-EAST-NESTED"
       ],
       "component_ids": [],
       "label": "REF-7B502C9945E9 \u2014 Eastern nested wards and changing fronts",
@@ -7078,11 +7087,13 @@
       "bytes": 186704,
       "source_aliases": [
         "shared/birthday-castle-front-crops/T02.png",
-        "shared/birthday-castle-image-library/direct-crops/CROP-T02.png"
+        "shared/birthday-castle-image-library/direct-crops/CROP-T02.png",
+        "shared/birthday-castle-palace-coverage/original-structure-regions/western-onion-pavilion-above-wing.png"
       ],
       "review_status": "preserved-reference-or-study; no new approval implied",
       "alias_ids": [
-        "FRONT-CROP-T02"
+        "FRONT-CROP-T02",
+        "SRC-PAL-WEST-PAVILION"
       ],
       "component_ids": [],
       "label": "REF-9F4D290C4C4D \u2014 Broad western onion pavilion",
@@ -7210,11 +7221,13 @@
       "bytes": 204312,
       "source_aliases": [
         "shared/birthday-castle-front-crops/T03.png",
-        "shared/birthday-castle-image-library/direct-crops/CROP-T03.png"
+        "shared/birthday-castle-image-library/direct-crops/CROP-T03.png",
+        "shared/birthday-castle-palace-coverage/original-structure-regions/eastern-spire-cluster-behind-wards.png"
       ],
       "review_status": "preserved-reference-or-study; no new approval implied",
       "alias_ids": [
-        "FRONT-CROP-T03"
+        "FRONT-CROP-T03",
+        "SRC-PAL-EAST-SPIRES"
       ],
       "component_ids": [],
       "label": "REF-AC54329E2B5D \u2014 Eastern spire cluster and extensions",
@@ -7231,11 +7244,13 @@
       "bytes": 660020,
       "source_aliases": [
         "shared/birthday-castle-front-crops/W01.png",
-        "shared/birthday-castle-image-library/direct-crops/CROP-W01.png"
+        "shared/birthday-castle-image-library/direct-crops/CROP-W01.png",
+        "shared/birthday-castle-palace-coverage/original-structure-regions/western-original-connected-ranges.png"
       ],
       "review_status": "preserved-reference-or-study; no new approval implied",
       "alias_ids": [
-        "FRONT-CROP-W01"
+        "FRONT-CROP-W01",
+        "SRC-PAL-WEST-RANGE"
       ],
       "component_ids": [],
       "label": "REF-AE10389395CC \u2014 Western stepped connected ranges",
@@ -7471,11 +7486,13 @@
       "bytes": 194577,
       "source_aliases": [
         "shared/birthday-castle-front-crops/W03.png",
-        "shared/birthday-castle-image-library/direct-crops/CROP-W03.png"
+        "shared/birthday-castle-image-library/direct-crops/CROP-W03.png",
+        "shared/birthday-castle-palace-coverage/original-structure-regions/western-lower-arcade-and-projections.png"
       ],
       "review_status": "preserved-reference-or-study; no new approval implied",
       "alias_ids": [
-        "FRONT-CROP-W03"
+        "FRONT-CROP-W03",
+        "SRC-PAL-WEST-LOWER"
       ],
       "component_ids": [],
       "label": "REF-D70F84A2E81D \u2014 Western lower arcade and projections",
@@ -7531,11 +7548,13 @@
       "bytes": 336818,
       "source_aliases": [
         "shared/birthday-castle-front-crops/S01.png",
-        "shared/birthday-castle-image-library/direct-crops/CROP-S01.png"
+        "shared/birthday-castle-image-library/direct-crops/CROP-S01.png",
+        "shared/birthday-castle-palace-coverage/original-structure-regions/original-stair-and-cascade-axis.png"
       ],
       "review_status": "preserved-reference-or-study; no new approval implied",
       "alias_ids": [
-        "FRONT-CROP-S01"
+        "FRONT-CROP-S01",
+        "SRC-PAL-STAIR-AXIS"
       ],
       "component_ids": [],
       "label": "REF-E67FD4EFFE7F \u2014 Complete stair and cascade composition",
@@ -11553,6 +11572,106 @@
         "COLUMN-SRC-PORTAL",
         "COLUMN-SRC-BASE",
         "MOD-COL-001"
+      ]
+    },
+    {
+      "id": "SRC-PAL-WEST-GREAT",
+      "title": "Western great-window pair \u2014 original positions",
+      "category": "original-palace-source-regions",
+      "file": "original-palace-structure/western-great-window-pair.png",
+      "sha256": "7dd9f57b322e329c83a9c06f671fbd6fd1a3eb40c73a9b19434311706e94a839",
+      "bytes": 170309,
+      "source_aliases": [
+        "shared/birthday-castle-palace-coverage/original-structure-regions/western-great-window-pair.png"
+      ],
+      "review_status": "direct-source-extraction",
+      "alias_ids": [],
+      "component_ids": [],
+      "label": "SRC-PAL-WEST-GREAT \u2014 Western great-window pair \u2014 original positions",
+      "reference_role": "exact-original-structure-region",
+      "design_status": "source-front-region; hidden-depth-unresolved",
+      "related_image_ids": [
+        "GEN-37"
+      ]
+    },
+    {
+      "id": "SRC-PAL-GATE",
+      "title": "Original ceremonial gate and gable",
+      "category": "original-palace-source-regions",
+      "file": "original-palace-structure/original-ceremonial-gate-and-gable.png",
+      "sha256": "81b142714f9193001fc6215e5700f85e5b537f7459864ee4e39f1cf9ab6fe1ac",
+      "bytes": 150970,
+      "source_aliases": [
+        "shared/birthday-castle-palace-coverage/original-structure-regions/original-ceremonial-gate-and-gable.png"
+      ],
+      "review_status": "direct-source-extraction",
+      "alias_ids": [],
+      "component_ids": [],
+      "label": "SRC-PAL-GATE \u2014 Original ceremonial gate and gable",
+      "reference_role": "exact-original-structure-region",
+      "design_status": "source-front-region; hidden-depth-unresolved",
+      "related_image_ids": [
+        "GEN-37"
+      ]
+    },
+    {
+      "id": "DRAFT-PAL-WING-001-R01",
+      "title": "Rejected bare wing hosts",
+      "category": "palace-structure-drafts",
+      "file": "images/palace-structure-drafts/DRAFT-PAL-WING-001-R01.png",
+      "sha256": "e7f4b9e1a056736cb47561c594833a3544f8aa3f787b78f8b88e6f5a92d9d154",
+      "bytes": 2480303,
+      "source_aliases": [
+        "generated_images/exec-388e8ba9-814e-42b3-9554-9d19f34eb899.png"
+      ],
+      "review_status": "rejected-by-user; wrong wing structure",
+      "alias_ids": [],
+      "component_ids": [],
+      "label": "DRAFT-PAL-WING-001-R01 \u2014 Rejected bare wing hosts",
+      "reference_role": "rejected-or-paused-generated-proposal",
+      "design_status": "rejected-by-user; wrong wing structure",
+      "related_image_ids": [
+        "GEN-37"
+      ]
+    },
+    {
+      "id": "DRAFT-PAL-WING-001-R02",
+      "title": "Rejected decorated wing redraw",
+      "category": "palace-structure-drafts",
+      "file": "images/palace-structure-drafts/DRAFT-PAL-WING-001-R02.png",
+      "sha256": "546cc32f5c9c3c015e1adcef976cf753f93ecc8f1ed220a00713030267fab388",
+      "bytes": 3253751,
+      "source_aliases": [
+        "generated_images/exec-407fcca2-8f8d-4354-839b-a5c4d785042f.png"
+      ],
+      "review_status": "rejected-by-user; changed massing and tower attachments",
+      "alias_ids": [],
+      "component_ids": [],
+      "label": "DRAFT-PAL-WING-001-R02 \u2014 Rejected decorated wing redraw",
+      "reference_role": "rejected-or-paused-generated-proposal",
+      "design_status": "rejected-by-user; changed massing and tower attachments",
+      "related_image_ids": [
+        "GEN-37"
+      ]
+    },
+    {
+      "id": "DRAFT-PAL-BASE-001-R01",
+      "title": "Unapproved base and gate host proposal",
+      "category": "palace-structure-drafts",
+      "file": "images/palace-structure-drafts/DRAFT-PAL-BASE-001-R01.png",
+      "sha256": "37fee851d2866bb673eca1a7018266436b79146425f0e1bbce30c02a842196d2",
+      "bytes": 2434145,
+      "source_aliases": [
+        "generated_images/exec-7060030a-2a48-499c-9ad1-f635c8047e02.png"
+      ],
+      "review_status": "paused-proposal; source correspondence not established",
+      "alias_ids": [],
+      "component_ids": [],
+      "label": "DRAFT-PAL-BASE-001-R01 \u2014 Unapproved base and gate host proposal",
+      "reference_role": "rejected-or-paused-generated-proposal",
+      "design_status": "paused-proposal; source correspondence not established",
+      "related_image_ids": [
+        "GEN-37"
       ]
     }
   ],

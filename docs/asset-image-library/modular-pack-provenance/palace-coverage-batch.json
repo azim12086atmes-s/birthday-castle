@@ -1,0 +1,310 @@
+{
+  "source_authority": "GEN-37 original front; existing component masters reused",
+  "generation_scope": "Only verified missing references",
+  "sheets": [
+    {
+      "id": "PAL-WING-001",
+      "title": "Original palace \u2014 continuous wing bodies",
+      "owner": "palace",
+      "family": "Base, wall bodies and stepped wings",
+      "kind": "missing-structural-pack",
+      "reference": "Existing source GEN-37; local small/cropped reference",
+      "reference_image_id": "GEN-37",
+      "components": [
+        {
+          "id": "S01",
+          "name": "Continuous stepped wing"
+        },
+        {
+          "id": "S02",
+          "name": "Rounded projecting pavilion"
+        },
+        {
+          "id": "S03",
+          "name": "Angled wing return"
+        }
+      ],
+      "reuse": [
+        "GEN-38-M02 single great-bay template",
+        "GEN-38-M04 gallery windows",
+        "GEN-43-M01 lower arcade",
+        "GEN-33/39 parapets",
+        "GEN-16 roof gardens",
+        "GEN-40/42 relief/cornices"
+      ],
+      "status": "both-generated-variants-rejected; use-original-source",
+      "prompt": "Correct the princess-palace WING ASSEMBLY references using this EXACT original western-wing crop. The earlier attempt showed generic bare open colonnades and is REJECTED. The user needs the source's actual solid windowed walls, hierarchy and rich fitted ornament, not stripped placeholder hosts. Generate ONE wide sheet with THREE complete wing assemblies, each one clear three-quarter architectural view, fully visible and separate, ivory/rose-pink veined marble, fine gold, indigo/blue to lilac/rose stained glass, deep lotus/rose carved ornament. Heading ORIGINAL PALACE \u2014 SOURCE-FITTED WINGS. Print S01 Continuous stepped wing, S02 Rounded projecting pavilion, S03 Angled wing return beneath them. These are assembled references using existing window, rail, carving, tower-panel, lantern, fountain and planting designs, NOT new competing decor designs.\n\nS01: the source WESTERN HERO-WINDOW RANGE, fully fitted. Its principal wall level has EXACTLY TWO very large tall pointed stained-glass bays with the source pattern: deep-blue upper fields, an eight-point/floral star medallion high in each bay, pink/lilac middle rose center and pale pink lower lance fields, branching fine gold tracery. Each of these is ONE bay; do not replace them with a row of equal little open arches. Broad ROSE MARBLE wall fields around their ivory/gold multistep arch surrounds. Dense but delicate CARVED ROSE SPANDRELS fill the triangles above/between the arches. Narrow projecting ivory/rose piers with tall blue STAR INSETS and small blue crystal lamps flank the bays. Below, a LOWER SMALL-WINDOW ARCADE runs continuously around softened curved/angled projections. Above and behind, smaller upper ranges SET BACK with actual glazed gallery arches, roof-garden terrace platforms, ornate star/rose parapets, relief cornices and small planters. The connected body has stepped levels and sublevel protrusions, not stacked disconnected boxes. Its lower frontage turns gently rather than remaining one flat straight line. Source large-window dominance and richly articulated solid masonry MUST be obvious.\n\nS02: the source LOWER CURVED PROJECTING WING PAVILION. A continuous semi-round/part-octagonal wing extension with several small pointed glazed bays, ivory pilasters, rose carved spandrels, fine moulded sills and cornices, a slightly receding next-level terrace and patterned roof parapet. Add the slim projecting star-panel pier/bastion visible in the source lower wing: it rises from an articulated faceted foot and forms part of the wall rather than a detached enormous tower. Use the existing blue/gold star panel and lantern family. The roof garden has a restrained source-like rose/topiary planting preview and small ivory urns; these are existing reused props, not novel designs. No giant new dome or new independent palace composition.\n\nS03: a source-style ANGLED STEPPED WARD RETURN. Several connected unequal-length wall fronts with chamfered/rounded ends and a genuine recessed court-side return, two or three staggered levels that step inward rather than forming a giant hill at the back. Medium and small POINTED STAINED-GLASS windows, source-type rose/leaf spandrels, ivory/gold clustered pier edges, patterned parapet bands, garden roof strips and a short source-type stair/landing connecting levels. Fronts and windows turn with the semi-hexagonal/trapezoid geometry, avoiding Lego rectangles lined up in a row. Place a slim attached star-panel extrusion at one corner with the existing ornament family, no huge added spire forest.\n\nAll three are SOLID PALACE WARDS WITH GLAZED WINDOWS, not wall-less colonnades. Some small open gallery arches may appear where genuinely intended, but most facade bays hold recessed colored glass. Keep actual wall depth and reveal thickness, extensive source-matching carved gold/ivory details, natural rose marble fields, narrow support proportions, blue crystal hanging lamps and source-style planted terraces. Do not invent a new simple baluster pattern: use the source's pierced gold/ivory star-and-rose rail rhythm. Clear studio background, no surrounding city or entire palace. The purpose is to understand the complete palace wing identity and then build it from already catalogued components. Hidden rear depth is proposed; source front silhouette and component designs control. Do not simplify away the intricate windows and decor.",
+      "output_file": "historical local output; see image archive draft IDs",
+      "sha256": "e7f4b9e1a056736cb47561c594833a3544f8aa3f787b78f8b88e6f5a92d9d154",
+      "review_notes": [
+        "Three complete connected/rounded/angled wing-body types; no new glass patterns generated.",
+        "Rounded pavilion is a single main arcade body with roof seat; additional tiers use the connected wing modules.",
+        "Generated view/proportions are design proposals; hidden dimensions, exact joins and mesh geometry remain unverified. Existing component masters override any incidental decorative variants shown."
+      ],
+      "previous_drafts": [
+        {
+          "output_file": "/workspace/generated_images/exec-388e8ba9-814e-42b3-9554-9d19f34eb899.png",
+          "sha256": "e7f4b9e1a056736cb47561c594833a3544f8aa3f787b78f8b88e6f5a92d9d154",
+          "reason": "Open-colonnade host appearance does not match the source solid walls, large glazed bays, spandrels and installed detailing."
+        },
+        {
+          "output_file": "/workspace/generated_images/exec-407fcca2-8f8d-4354-839b-a5c4d785042f.png",
+          "sha256": "546cc32f5c9c3c015e1adcef976cf753f93ecc8f1ed220a00713030267fab388",
+          "reason": "User rejected structure: decorative resemblance does not preserve original palace massing and attachment layout."
+        }
+      ],
+      "source_crops": [
+        "W01",
+        "W02",
+        "W03",
+        "W04"
+      ]
+    },
+    {
+      "id": "PAL-BASE-001",
+      "title": "Original palace \u2014 base and gate-wall hosts",
+      "owner": "palace",
+      "family": "Base, wall bodies and stepped wings",
+      "kind": "missing-structural-pack",
+      "reference": "Existing source GEN-37; local small/cropped reference",
+      "reference_image_id": "GEN-37",
+      "components": [
+        {
+          "id": "S01",
+          "name": "Terraced foundation podium"
+        },
+        {
+          "id": "S02",
+          "name": "Gate-wall host"
+        },
+        {
+          "id": "S03",
+          "name": "Returning terrace wall"
+        }
+      ],
+      "reuse": [
+        "GEN-31 gate assembly/leaf/postern",
+        "GEN-38-M01 gate glass",
+        "GEN-43-M01 arcade",
+        "GEN-42 mouldings",
+        "GEN-37 front stair/gate composition"
+      ],
+      "status": "generated-pending-review",
+      "prompt": "One clean architectural asset sheet, pale neutral studio backdrop, one complete three-quarter orthographic view per object, full silhouettes with clear gaps between them. Print each object ID and short name below it. Exactly the listed objects, no duplicate views, no extra whole-palace scene. Luminous IVORY and ROSE-PINK VEINED MARBLE, restrained warm gold edge mouldings, the original palace curved/chamfered stepped architecture. Do not introduce tan plaster, generic unrelated carving or disconnected box stacks. Existing ornaments, window meshes, crowns, rails, fountains and planting will be attached separately; this is a missing structural body sheet, not a new decor kit. Give walls real thickness and apertures real open depth. Hidden rear faces and joins are proposed, not measured reconstructions.\nTitle ORIGINAL PALACE \u2014 BASE & GATE HOSTS. Exactly THREE separated structural assemblies.\nS01 Terraced foundation podium: broad shallow stepped palace base, a continuous ivory/rose retaining body with rounded/chamfered end protrusions and a CENTRAL OPEN STAIR SLOT that allows the existing main stair/cascade route to climb through it. Keep broad upper court/terrace surfaces and continuous walls, curved arcaded edge recesses and plain seats for existing lower-arcade inserts. It is a buildable foundation podium, not a mountain, not a plaza full of statues and not a stack of three unconnected boxes. Preserve room for dry stairs beside the central wet spine.\nS02 Gate-wall host: a solid monumental rose/ivory gate facade segment with ONE tall pointed CENTRAL DOOR APERTURE, narrow articulated flanking piers and a modest steep gable/cornice seat above. The opening is genuinely open and visible through the wall, with full reveal thickness and a clean threshold for the EXISTING ceremonial frame/leaves/postern to attach. No new gate glass artwork or a painted blind portal. Include adjoining curved/angled short returns so the body joins the surrounding wings, and one open roof/landing behind it. No tower or new roof composition. This is the host for the existing gate design, not a new gate.\nS03 Returning terrace wall: one L/angled continuous retaining-and-gallery wall with an INNER RECESS and softened corner, repeated actual pointed bays, thicker structural end piers and a flat roof-court seat. Show how the wall supports a next-level terrace while returning into an attached ward; a little balustrade seating edge, no garden or detached parapet props. Its faces use rose marble fields and ivory arch mouldings from the original; depth and turns give palace-like relief.\nSource palette, proportions and step hierarchy control. No numerical dimensions; approved global levels and setbacks are supplied separately. Tiny relief, rail and fountain pieces are already available and must not be redesigned on this sheet.",
+      "output_file": "historical local output; see image archive draft IDs",
+      "sha256": "37fee851d2866bb673eca1a7018266436b79146425f0e1bbce30c02a842196d2",
+      "review_notes": [
+        "Bare host proposal; source-fitted wall/window/decor appearance needs correction after user wing feedback.",
+        "Generated view/proportions are design proposals; hidden dimensions, exact joins and mesh geometry remain unverified. Existing component masters override any incidental decorative variants shown."
+      ]
+    },
+    {
+      "id": "PAL-TOWER-001",
+      "title": "Original palace \u2014 missing long tower bodies",
+      "owner": "palace",
+      "family": "Tower bodies and roof assemblies",
+      "kind": "missing-structural-pack",
+      "reference": "Existing source GEN-37; local small/cropped reference",
+      "reference_image_id": "GEN-37",
+      "components": [
+        {
+          "id": "S01",
+          "name": "Long needle-tower shaft"
+        },
+        {
+          "id": "S02",
+          "name": "Western onion-pavilion drum"
+        },
+        {
+          "id": "S03",
+          "name": "Royal clustered tower core"
+        }
+      ],
+      "reuse": [
+        "GEN-17 crowns/onion dome/bastion/belvedere",
+        "GEN-32 attached belvedere and crystal mounts",
+        "GEN-44 crowns and finials",
+        "GEN-38 window masters",
+        "GEN-37 T01/T02/T03 silhouettes"
+      ],
+      "status": "reserved-gap",
+      "prompt": "One clean architectural asset sheet, pale neutral studio backdrop, one complete three-quarter orthographic view per object, full silhouettes with clear gaps between them. Print each object ID and short name below it. Exactly the listed objects, no duplicate views, no extra whole-palace scene. Luminous IVORY and ROSE-PINK VEINED MARBLE, restrained warm gold edge mouldings, the original palace curved/chamfered stepped architecture. Do not introduce tan plaster, generic unrelated carving or disconnected box stacks. Existing ornaments, window meshes, crowns, rails, fountains and planting will be attached separately; this is a missing structural body sheet, not a new decor kit. Give walls real thickness and apertures real open depth. Hidden rear faces and joins are proposed, not measured reconstructions.\nTitle ORIGINAL PALACE \u2014 LONG TOWER BODIES. Exactly THREE whole separated tower BODY assemblies. The source's crowns, domes and attached belvederes already exist. Draw NO roofs, domes, cone tops, star finials or new tiny side lanterns: clean upper crown sockets/collars only.\nS01 Long needle-tower shaft: the source's slender tall main/secondary needle tower body with continuous faceted/cylindrical ivory/rose stone, vertical gold-edged ribs, tall pointed single window apertures, small story/collar bands and a clear lower footing/wing attachment seat. Make it distinctly TALL AND SLIM, not a short stump and not a disconnected stacked canister. Plain upper mounting collar accepts an existing needle crown.\nS02 Western onion-pavilion drum: reproduce the broad western onion pavilion's LOWER BODY from the source, with its large gently faceted round/octagonal drum, three tall curved-face pointed bay apertures below a smaller upper arch-gallery band, stepped curved base and gold-edged ivory/rose ribs. Keep the wide graceful body and taller great-window stage; OMIT its already designed purple onion dome, leaving a clear circular roof seat. This is the broad palace pavilion drum, not another generic small dome crown from the roof sheet.\nS03 Royal clustered tower core: a coherent taller central shaft with TWO slightly slimmer OFFSET ATTACHED NEEDLE STEMS at different heights/depths, as in the source royal grouping. The three stems connect through shared solid shoulders/corbelled wall connections rather than floating apart. Long vertical window recesses, pink/ivory fields, fine gold ribs and separate upper crown sockets on the three stems. No copied whole roof crown assembly. Preserve the source's asymmetric attached-stem relationship and close grouping; do not create ten towers or a giant unrelated rear mountain. Lower core has attachment faces to the roof/ward, hidden roots are proposed.\nActual window panels and crown meshes will use existing masters. Empty window/recess host geometry is sufficient; no new glass motif. All bodies fully visible from foot to upper seat, fine structural contours and compatible marble theme."
+    },
+    {
+      "id": "PAL-STAIR-001",
+      "title": "Original palace \u2014 stair and cascade bodies",
+      "owner": "palace",
+      "family": "Stairs, fountains, terraces and courtyards",
+      "kind": "missing-structural-pack",
+      "reference": "Existing source GEN-37; local small/cropped reference",
+      "reference_image_id": "GEN-37",
+      "components": [
+        {
+          "id": "S01",
+          "name": "Dry stair flight"
+        },
+        {
+          "id": "S02",
+          "name": "Central cascade bed"
+        },
+        {
+          "id": "S03",
+          "name": "Gate landing junction"
+        }
+      ],
+      "reuse": [
+        "GEN-43-M02 newels",
+        "GEN-43-M04 cascade coping",
+        "GEN-43-M05 basin crest",
+        "GEN-43-M06 treads/edges",
+        "GEN-33 stair rails",
+        "GEN-34 bowls/spouts",
+        "GEN-37 S01/S02/S03/S04 placements"
+      ],
+      "status": "reserved-gap",
+      "prompt": "One clean architectural asset sheet, pale neutral studio backdrop, one complete three-quarter orthographic view per object, full silhouettes with clear gaps between them. Print each object ID and short name below it. Exactly the listed objects, no duplicate views, no extra whole-palace scene. Luminous IVORY and ROSE-PINK VEINED MARBLE, restrained warm gold edge mouldings, the original palace curved/chamfered stepped architecture. Do not introduce tan plaster, generic unrelated carving or disconnected box stacks. Existing ornaments, window meshes, crowns, rails, fountains and planting will be attached separately; this is a missing structural body sheet, not a new decor kit. Give walls real thickness and apertures real open depth. Hidden rear faces and joins are proposed, not measured reconstructions.\nTitle ORIGINAL PALACE \u2014 STAIR & CASCADE BODIES. Exactly THREE complete structural modules. Carefully preserve the source's CENTRAL wet spine and DRY stairs at its flanks. These are the missing solid bodies and joints; the ornate coping, rails, newels, bowls and spouts already exist separately.\nS01 Dry stair flight: one broad straight/gently flared ivory/rose marble stair run with many consistent small risers, a compact intermediate landing and clean top/bottom end seating. Thick continuous side supports, simple parapet/rail seating edges but no newly invented ornate rail pattern. It can be mirrored for left and right flanks; do not curve it into a spiral or replace both flanks with a central dry stair.\nS02 Central cascade bed: the source's elongated descending series of progressively wider shallow stepped water BASINS, rounded/flared front lips, narrower upper chute/entry and broad lower catching basin. One connected structural cascade body, complete in three-quarter view, stepped terrain-like supports beneath. Show the basin depth, inlet/overflow lips and channel logic clearly. Draw it mostly DRY so stone geometry is legible, not concealed by sprays or a giant unrelated freestanding tiered fountain. Keep the source's low spreading stepped waterfall silhouette and longitudinal wet axis; do not put water over the dry stair.\nS03 Gate landing junction: one wide ivory/rose rectangular/chamfered platform with a CENTRAL water-channel seat and TWO usable dry side landings, flat upper threshold to the existing gate host, and three clear lower attachment edges for the cascade and flanking stair flights. Rounded/chamfered front corners and modest side returns. It establishes the original three-lane junction, not a new fountain/statue or garden scene.\nAll three have real structural thickness, coherent seating faces, full visible footprints and original marble/gold trim. The source is a front crop, so hidden side profiles are developed proposals, not measured facts. Do not add plants, water particles, new gates, lamps, towers or unrelated decorative pieces."
+    },
+    {
+      "id": "PAL-INT-PROP-001",
+      "title": "Princess palace \u2014 missing private-room furniture",
+      "owner": "palace",
+      "family": "Interiors and furniture",
+      "kind": "missing-small-component-pack",
+      "reference": "Existing source GEN-24; local small/cropped reference",
+      "reference_image_id": "GEN-24",
+      "components": [
+        {
+          "id": "A01",
+          "name": "Canopy bed"
+        },
+        {
+          "id": "A02",
+          "name": "Bedside cabinet"
+        },
+        {
+          "id": "A03",
+          "name": "Wardrobe"
+        },
+        {
+          "id": "A04",
+          "name": "Dressing stool"
+        },
+        {
+          "id": "A05",
+          "name": "Jewellery chest"
+        },
+        {
+          "id": "A06",
+          "name": "Writing desk"
+        },
+        {
+          "id": "A07",
+          "name": "Desk chair"
+        },
+        {
+          "id": "A08",
+          "name": "Dining table"
+        },
+        {
+          "id": "A09",
+          "name": "Dining chair"
+        },
+        {
+          "id": "A10",
+          "name": "Tea service"
+        },
+        {
+          "id": "A11",
+          "name": "Royal bath"
+        },
+        {
+          "id": "A12",
+          "name": "Washbasin vanity"
+        }
+      ],
+      "reuse": [
+        "GEN-24 mirror/console/chandelier/curtains and existing furniture",
+        "GEN-40/41/42 ornamental palette"
+      ],
+      "status": "reserved-gap",
+      "prompt": "Create ONE TWELVE-OBJECT private-room FURNITURE asset sheet for the princess palace, ONLY the missing items listed below. The supplied original furniture board already has throne, dais, chandelier, mirror, console, bookcase, lectern, chaise, curtains, round side table and rug: DO NOT repeat those. Exactly 12 complete separated objects in FOUR COLUMNS BY THREE ROWS, one clear three-quarter orthographic view each, whole silhouettes and readable IDs/names below. Title PRINCESS PALACE \u2014 PRIVATE ROOM FURNITURE. Reuse the source's ivory/rose marble or ivory-painted frames, fine gold lotus/leaf/star carving, blue/lilac insets and soft rose/plum upholstery. Preserve princess delicacy, no beige/brown dominant frame, no human figures or palace scene. Human-scale proportions, not monumental outdoor props.\nROW 1: A01 Canopy bed, a complete 2.3m-style double bed with head/footboard, four connected delicate posts and an airy 3m-style canopy using the source drape vocabulary, soft rose quilt and thin gold/blue-star accents; A02 Bedside cabinet, small coordinated ivory/rose two-drawer unit with marble top, lotus pulls and connected feet; A03 Wardrobe, tall human-scale double-door storage cabinet with clear doors, carved lotus corners and star/rose panels, not another arch-shaped bookcase; A04 Dressing stool, a small stable four-legged cushioned ivory/gold stool with matching rose fabric, no mirror or console.\nROW 2: A05 Jewellery chest, small closed/open-lid hinged chest with a connected lid, fine geometric/rose fittings and velvet interior, no floating jewellery scattered around; A06 Writing desk, a proper work desk with knee space, drawers and ivory/rose top, not the existing console or lectern; A07 Desk chair, one comfortable human chair with seat/back, softly padded rose upholstery and delicate gold/ivory frame; A08 Dining table, one long oval/chamfered 5m-style tabletop, stable ivory/gold support arrangement and modest floral inlay, no chairs or banquet props fused to it.\nROW 3: A09 Dining chair, one upright coordinated dining seat distinct from a throne, normal human scale and slim patterned back; A10 Tea service, one coherent compact tray assembly containing teapot, two cups/saucers and a small sugar bowl, white/rose porcelain with restrained gold and blue-star accents, no unrelated food; A11 Royal bath, one human-scale freestanding oval 2.2m-style ivory/rose stone bath with visible bowl and lotus/scroll taps at one end, no animal heads; A12 Washbasin vanity, complete compact ivory/rose cabinet with a shallow basin and scroll/lotus faucet, no mirror since the mirror is already available.\nDo not make a multi-view plate for every item; one object per cell. All frames/legs visibly connect and each object has a clear floor/resting underside. Crisp intricate but selective source-compatible carving, softly rendered realistic marble/fabric, neutral pale background and small shadows. No extra objects, no text paragraphs or dimensions, no decorative borders. IDs and names must match the listed objects."
+    },
+    {
+      "id": "INT-R01",
+      "title": "Great Hall and twin staircase",
+      "owner": "palace",
+      "family": "Interiors and furniture",
+      "kind": "missing-interior-layout-study",
+      "reference": "Existing source GEN-26; local small/cropped reference",
+      "reference_image_id": "GEN-26",
+      "components": [],
+      "reuse": [
+        "INT-C01 floors",
+        "INT-C02 walls and lotus capitals",
+        "INT-C03 ceiling/chandelier",
+        "GEN-24 existing furniture",
+        "PAL-INT-PROP-001 missing furniture kit"
+      ],
+      "status": "reserved-gap",
+      "prompt": "Keep the ORIGINAL palace interior language shown in this single reference: ivory and blush marble, thin warm gold, blue/violet and pink stained glass, lotus/rose/star/vine ornament. No recent map-palace exterior blend, no new exterior tower redesign. A meticulously drawn architectural design sheet with crisp linework and restrained watercolor on pale parchment, no long text or decorative unrelated collage. Existing historical U references are supplied in writing; develop their documented details without claiming recovered unseen pixels. No brand logos, eyes on creatures, animal-head spouts or cross finials; use stars, lotus/scrolls and veiled/faceless sculpture where applicable. Show complete structural attachments, readable profiles and genuine passage/window depth.\nDesign the ORIGINAL palace GREAT HALL interior as a single architectural sketch sheet with one large three-quarter eye-level room view and three detailed component closeups below. This is the arrival hall behind the original great gate; DO NOT change its exterior stair/cascade layout. The hall has ivory/blush inhabited walls, tall gold-framed pointed blue/violet/pink windows with reveals, paired leaf-capital columns and ribbed/coffered upper ceiling surfaces matched to the reference. A bifurcated IMPERIAL INTERIOR STAIR rises to one shared central landing then splits into two curved flights to upper galleries (U332), with actual connected landings, parapets and entry routes. The stair is a clear circulation hero, not a floating sculpture.\nGive the floor one 8-point compass/rose medallion in a pearl/blush slab field with lapis/pale-blue detail, thin gold and a documented geometric border (U133,U257,U338); floor is flush and polished with soft reflections. A narrow ceremonial arrival route stays unobstructed from foreground to stair. Show a clear side corridor entrance and balcony exits leading somewhere. Lamps mounted on brackets, a few urns placed against edges, no throne on the same central axis and no garden water cascade indoors.\nBottom closeups: floor medallion/border junction; stair newel/curved handrail and actual landing; column capital/vault springing with chandelier support. No generic repeated furnishings, no portrait faces, no wildly oversized furniture. A few tiny human-scale silhouettes optional solely for room scale. Restrained pale-gold light, cool colored window light, clean readable structural outlines and deep carve detail. New room concept, not proof of exact building floorplan.\nPALETTE CONSISTENCY LOCK, latest user requirement: natural IVORY MARBLE and clearly recognizable ROSE-PINK MARBLE are the two main stones, matching GEN-40 rose relief backgrounds and GEN-41/GEN-42 ivory mouldings. Avoid beige, brown or peach plaster becoming the principal wall/floor finish. Ivory is a pale warm white, not yellow tan. Rose is muted dusty pink with deeper rose veins, not flat salmon paint; alternate intended rose inset panels and ivory structure naturally. Muted gold is thin accent edging and leaf relief, not a uniform gold stone skin. Indigo/blue/lilac glass/enamel remains accent, not stone. Default capitals reuse the existing LOTUS/LEAF family; honeycomb/muqarnas is optional only and does not replace standard room capitals. Keep relief grammar consistent with original rose/lotus/star/vine masters.\nONLY THIS ROOM IS NEW. Existing ballroom, throne room, library and conservatory are retained. Furniture depicted here is layout illustration, not a new competing furniture catalogue; PAL-INT-PROP-001 and GEN-24 are the canonical model targets. Keep rose and ivory marble, lotus/leaf capitals, blue/lilac/pink glass and restrained gold consistent. The room placement in the full palace remains proposed. Print a clear room title and its ID, with concise readable labels for the main functional zones."
+    },
+    {
+      "id": "INT-R02",
+      "title": "Princess bedroom and dressing suite",
+      "owner": "palace",
+      "family": "Interiors and furniture",
+      "kind": "missing-interior-layout-study",
+      "reference": "Existing source GEN-26; local small/cropped reference",
+      "reference_image_id": "GEN-26",
+      "components": [],
+      "reuse": [
+        "INT-C01 floors",
+        "INT-C02 walls and lotus capitals",
+        "INT-C03 ceiling/chandelier",
+        "GEN-24 existing furniture",
+        "PAL-INT-PROP-001 missing furniture kit"
+      ],
+      "status": "reserved-gap",
+      "prompt": "Keep the ORIGINAL palace interior language shown in this single reference: ivory and blush marble, thin warm gold, blue/violet and pink stained glass, lotus/rose/star/vine ornament. No recent map-palace exterior blend, no new exterior tower redesign. A meticulously drawn architectural design sheet with crisp linework and restrained watercolor on pale parchment, no long text or decorative unrelated collage. Existing historical U references are supplied in writing; develop their documented details without claiming recovered unseen pixels. No brand logos, eyes on creatures, animal-head spouts or cross finials; use stars, lotus/scrolls and veiled/faceless sculpture where applicable. Show complete structural attachments, readable profiles and genuine passage/window depth.\nDesign a human-scaled PRINCESS BEDROOM AND CONNECTED DRESSING ALCOVE in the original palace vocabulary. One large three-quarter room perspective plus three closeups of furniture/finish junctions below; not a new palace exterior or a hotel mega-atrium. Working room envelope 12m by 10m with about 8m upper vault; ordinary furniture proportions: bed about 2.3m long, 2m wide, canopy about 3m tall. The bed is one focal object against the far wall, coordinated two low bedside cabinets, rose/lilac velvet and ivory/gold lotus carving, a visible canopy structure with posts and anchored fabric swags (U71,U268). No giant throne masquerading as a bed.\nFloor has pearl/ivory and blush marble panels with restrained inset floral medallions, not every inch shimmering neon; a soft embroidered rug lies flat under bed front. Left side has a real arched opening with depth into a dressing nook containing wardrobe, original-style moon mirror, console/dressing table and one stool, with clear access around their fronts. Right window corner has a small original-style chaise and table; seating faces the view. Wall columns/piers, lotus capitals, gold/indigo border and a delicate coffer/rib ceiling match original existing interiors (U81,U159,U266,U388). Tall pointed rose/lilac/blue windows have actual reveals and sheer drapes, lamp brackets touch walls and chandelier has visible ceiling suspension.\nBottom closeups: canopy post/lotus foot and curtain attachment; bedside cabinet handles and marble top edge; mirror/dressing table/stool ensemble. Rich detail in carving, fabrics and joinery, quiet readable architecture, no oversized bed platform or inaccessible furnishing clutter. Room is a new proposed design; no claim of an exact measured apartment layout.\nPALETTE CONSISTENCY LOCK, latest user requirement: natural IVORY MARBLE and clearly recognizable ROSE-PINK MARBLE are the two main stones, matching GEN-40 rose relief backgrounds and GEN-41/GEN-42 ivory mouldings. Avoid beige, brown or peach plaster becoming the principal wall/floor finish. Ivory is a pale warm white, not yellow tan. Rose is muted dusty pink with deeper rose veins, not flat salmon paint; alternate intended rose inset panels and ivory structure naturally. Muted gold is thin accent edging and leaf relief, not a uniform gold stone skin. Indigo/blue/lilac glass/enamel remains accent, not stone. Default capitals reuse the existing LOTUS/LEAF family; honeycomb/muqarnas is optional only and does not replace standard room capitals. Keep relief grammar consistent with original rose/lotus/star/vine masters.\nONLY THIS ROOM IS NEW. Existing ballroom, throne room, library and conservatory are retained. Furniture depicted here is layout illustration, not a new competing furniture catalogue; PAL-INT-PROP-001 and GEN-24 are the canonical model targets. Keep rose and ivory marble, lotus/leaf capitals, blue/lilac/pink glass and restrained gold consistent. The room placement in the full palace remains proposed. Print a clear room title and its ID, with concise readable labels for the main functional zones."
+    },
+    {
+      "id": "INT-R03",
+      "title": "Royal dining room and service connection",
+      "owner": "palace",
+      "family": "Interiors and furniture",
+      "kind": "missing-interior-layout-study",
+      "reference": "Existing source GEN-26; local small/cropped reference",
+      "reference_image_id": "GEN-26",
+      "components": [],
+      "reuse": [
+        "INT-C01 floors",
+        "INT-C02 walls and lotus capitals",
+        "INT-C03 ceiling/chandelier",
+        "GEN-24 existing furniture",
+        "PAL-INT-PROP-001 missing furniture kit"
+      ],
+      "status": "reserved-gap",
+      "prompt": "Keep the ORIGINAL palace interior language shown in this single reference: ivory and blush marble, thin warm gold, blue/violet and pink stained glass, lotus/rose/star/vine ornament. No recent map-palace exterior blend, no new exterior tower redesign. A meticulously drawn architectural design sheet with crisp linework and restrained watercolor on pale parchment, no long text or decorative unrelated collage. Existing historical U references are supplied in writing; develop their documented details without claiming recovered unseen pixels. No brand logos, eyes on creatures, animal-head spouts or cross finials; use stars, lotus/scrolls and veiled/faceless sculpture where applicable. Show complete structural attachments, readable profiles and genuine passage/window depth.\nDesign the original palace ROYAL DINING ROOM as one large three-quarter interior sketch and three closeup panels below. Working room around 18m by 12m, ceiling about 9m, normal human furniture. Hero: ONE coherent long oval/rounded-rectangle dining table about 5m by 1.6m on paired carved ivory/gold supports, around twelve light coordinated dining chairs with rose velvet seats. All seats face the table; no thrones replacing every chair. Table has a restrained rose/lotus inlay border, practical flat dining surface, coordinated small porcelain tea service with gilt rims, one low flower centerpiece and footed fruit tazza (U262,U286). Enough clear walking space and unobstructed chair pull-back zones.\nIvory/blush walls, gilded leaf columns, gold-edged arches, blue/pink stained glass and sheer drapes match source palace rooms. Floor uses interlaced rose/cream marble rings with lozenge border around a clear central table zone, not a random checkerboard. Coffered ceiling with rosettes and one/two proportionate hanging crystal fixtures supported from actual ceiling roses. One open arched door shows ceremonial gallery beyond; a side door gives a real service pantry connection, not a fake arch pasted on a wall. A low matching sideboard sits against one side with closed drawers and mounted sconces; no floating fixtures.\nCloseups below: table apron/leg-to-floor contact and top inlay; dining chair front/side ornament with human seat height; full tea-service vignette with teapot spout, handle, lid, cups and serving tray. Keep details original, believable and finely carved; avoid gigantic food, neon colors, unrelated styles or room overcrowding. Concept sheet only; room connections proposed for later registered layout.\nPALETTE CONSISTENCY LOCK, latest user requirement: natural IVORY MARBLE and clearly recognizable ROSE-PINK MARBLE are the two main stones, matching GEN-40 rose relief backgrounds and GEN-41/GEN-42 ivory mouldings. Avoid beige, brown or peach plaster becoming the principal wall/floor finish. Ivory is a pale warm white, not yellow tan. Rose is muted dusty pink with deeper rose veins, not flat salmon paint; alternate intended rose inset panels and ivory structure naturally. Muted gold is thin accent edging and leaf relief, not a uniform gold stone skin. Indigo/blue/lilac glass/enamel remains accent, not stone. Default capitals reuse the existing LOTUS/LEAF family; honeycomb/muqarnas is optional only and does not replace standard room capitals. Keep relief grammar consistent with original rose/lotus/star/vine masters.\nONLY THIS ROOM IS NEW. Existing ballroom, throne room, library and conservatory are retained. Furniture depicted here is layout illustration, not a new competing furniture catalogue; PAL-INT-PROP-001 and GEN-24 are the canonical model targets. Keep rose and ivory marble, lotus/leaf capitals, blue/lilac/pink glass and restrained gold consistent. The room placement in the full palace remains proposed. Print a clear room title and its ID, with concise readable labels for the main functional zones."
+    },
+    {
+      "id": "INT-R04",
+      "title": "Royal bathing room and basin suite",
+      "owner": "palace",
+      "family": "Interiors and furniture",
+      "kind": "missing-interior-layout-study",
+      "reference": "Existing source GEN-26; local small/cropped reference",
+      "reference_image_id": "GEN-26",
+      "components": [],
+      "reuse": [
+        "INT-C01 floors",
+        "INT-C02 walls and lotus capitals",
+        "INT-C03 ceiling/chandelier",
+        "GEN-24 existing furniture",
+        "PAL-INT-PROP-001 missing furniture kit"
+      ],
+      "status": "reserved-gap",
+      "prompt": "Keep the ORIGINAL palace interior language shown in this single reference: ivory and blush marble, thin warm gold, blue/violet and pink stained glass, lotus/rose/star/vine ornament. No recent map-palace exterior blend, no new exterior tower redesign. A meticulously drawn architectural design sheet with crisp linework and restrained watercolor on pale parchment, no long text or decorative unrelated collage. Existing historical U references are supplied in writing; develop their documented details without claiming recovered unseen pixels. No brand logos, eyes on creatures, animal-head spouts or cross finials; use stars, lotus/scrolls and veiled/faceless sculpture where applicable. Show complete structural attachments, readable profiles and genuine passage/window depth.\nDesign a refined original-palace ROYAL BATHING ROOM: one main three-quarter architectural sketch plus three detailed fixture/finish studies below. Human room around 10m by 8m, 6m ceiling, not a giant swimming hall. One freestanding oval ivory/blush marble bath about 2.2m long with a gently lotus-lobed rim, coherent raised stone plinth/feet and delicate gold/bronze scroll taps. Two wall-side pearl/rose basin vanities with matching moon/lotus mirrors, taps physically mounted and drain connections suggested, small stool/towel stand. Do not use animal-head water spouts; lotus/scroll handles instead.\nCream/blush marble floor with a restrained compass/lozenge border (U154,U257), softly honed walking field and polished decorative inset bands; readable stone joints, not neon or a floor made of water. Ivory engaged piers and cusped/pointed arches with lotus relief (U283,U346), a true deep wall niche holding small vessels, frosted rose/lilac/opal glass windows with reveals, delicate pierced screen near a changing alcove (U292). An open doorway shows depth into the dressing corridor. Real wall/ceiling thickness implied, no decorative false passage behind bath.\nCloseups: bath rim/scroll-tap/stone support; basin and mirror mount on wall with drain detail; floor border turning into plinth and wet-zone edge, not a collage of full new rooms. Warm cream light, pale blue/pink glass highlights, soft gold, restrained fern/rose urns only near edges. Fixtures ordinary human scale, clear floor circulation, no colossal fountain swallowing the bath room. A richly detailed proposed room, not an engineered plumbing diagram.\nPALETTE CONSISTENCY LOCK, latest user requirement: natural IVORY MARBLE and clearly recognizable ROSE-PINK MARBLE are the two main stones, matching GEN-40 rose relief backgrounds and GEN-41/GEN-42 ivory mouldings. Avoid beige, brown or peach plaster becoming the principal wall/floor finish. Ivory is a pale warm white, not yellow tan. Rose is muted dusty pink with deeper rose veins, not flat salmon paint; alternate intended rose inset panels and ivory structure naturally. Muted gold is thin accent edging and leaf relief, not a uniform gold stone skin. Indigo/blue/lilac glass/enamel remains accent, not stone. Default capitals reuse the existing LOTUS/LEAF family; honeycomb/muqarnas is optional only and does not replace standard room capitals. Keep relief grammar consistent with original rose/lotus/star/vine masters.\nONLY THIS ROOM IS NEW. Existing ballroom, throne room, library and conservatory are retained. Furniture depicted here is layout illustration, not a new competing furniture catalogue; PAL-INT-PROP-001 and GEN-24 are the canonical model targets. Keep rose and ivory marble, lotus/leaf capitals, blue/lilac/pink glass and restrained gold consistent. The room placement in the full palace remains proposed. Print a clear room title and its ID, with concise readable labels for the main functional zones."
+    }
+  ],
+  "pass_status": "All structural generation paused; exact source segmentation and placement trace first"
+}

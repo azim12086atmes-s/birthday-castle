@@ -1,0 +1,928 @@
+{
+  "schema_version": 1,
+  "total_final_sheet_cap": 230,
+  "original_boards_included": 45,
+  "generation_scope": "Asset references only; no Blender assembly or paid 3D calls in this pass",
+  "counting_rule": "Count one selected final/reference image per slot and owner. Existing 45 boards are included. Direct analysis crops, previews, renders and superseded experiments stay in the archive without consuming new design slots. Shared designs count once, with multiple reuse tags.",
+  "generation_rule": "Only verified missing references. Ordinary structural sheets contain 3\u20134 assemblies; tiny-component packs contain 10\u201320 objects. Do not generate repeats to fill an allowance. A directly requested full-view assembly may use one full sheet.",
+  "revision_rule": "Revisions keep a slot and are tracked separately. At most two generator attempts per new slot without a new explicit review of the rejection reason; no automatic retries.",
+  "global_caps": {
+    "palace": 65,
+    "other-map-buildings": 55,
+    "terrain-water-and-planting": 65,
+    "shared-outdoor-props-and-bridge": 25,
+    "maps-magic-travel-and-birthday": 20
+  },
+  "palace_family_caps": [
+    {
+      "family": "Layout and envelope",
+      "cap": 6,
+      "existing_ids": [
+        "GEN-01",
+        "GEN-02",
+        "GEN-03",
+        "GEN-37"
+      ]
+    },
+    {
+      "family": "Base, wall bodies and stepped wings",
+      "cap": 10,
+      "existing_ids": [
+        "PAL-WALL-001"
+      ]
+    },
+    {
+      "family": "Tower bodies and roof assemblies",
+      "cap": 9,
+      "existing_ids": [
+        "GEN-17",
+        "GEN-32",
+        "GEN-44"
+      ]
+    },
+    {
+      "family": "Glass, carvings, rails and architectural fittings",
+      "cap": 18,
+      "existing_ids": [
+        "GEN-19",
+        "GEN-29",
+        "GEN-30",
+        "GEN-31",
+        "GEN-33",
+        "GEN-36",
+        "GEN-38",
+        "GEN-39",
+        "GEN-40",
+        "GEN-41",
+        "GEN-42",
+        "GEN-45",
+        "MOD-COL-001"
+      ]
+    },
+    {
+      "family": "Stairs, fountains, terraces and courtyards",
+      "cap": 10,
+      "existing_ids": [
+        "GEN-11",
+        "GEN-14",
+        "GEN-15",
+        "GEN-16",
+        "GEN-34",
+        "GEN-35",
+        "GEN-43"
+      ]
+    },
+    {
+      "family": "Interiors and furniture",
+      "cap": 12,
+      "existing_ids": [
+        "GEN-07",
+        "GEN-24",
+        "GEN-26",
+        "INT-C01",
+        "INT-C02",
+        "INT-C03"
+      ]
+    }
+  ],
+  "other_building_caps": [
+    {
+      "location_id": "B02",
+      "name": "Moon Water Palace",
+      "dedicated_sheet_cap": 3,
+      "scope": "Source-dependent structure/component views plus a packed decor sheet; reuse shared parts",
+      "status": "pending-source-audit; no new generation approved by count alone"
+    },
+    {
+      "location_id": "B03",
+      "name": "Star Chapel",
+      "dedicated_sheet_cap": 2,
+      "scope": "Source-dependent structure/component views plus a packed decor sheet; reuse shared parts",
+      "status": "pending-source-audit; no new generation approved by count alone"
+    },
+    {
+      "location_id": "B04",
+      "name": "Rose Keep",
+      "dedicated_sheet_cap": 2,
+      "scope": "Source-dependent structure/component views plus a packed decor sheet; reuse shared parts",
+      "status": "pending-source-audit; no new generation approved by count alone"
+    },
+    {
+      "location_id": "B05",
+      "name": "Misty Lantern Palace",
+      "dedicated_sheet_cap": 2,
+      "scope": "Source-dependent structure/component views plus a packed decor sheet; reuse shared parts",
+      "status": "pending-source-audit; no new generation approved by count alone"
+    },
+    {
+      "location_id": "B06",
+      "name": "Misty Pagoda",
+      "dedicated_sheet_cap": 2,
+      "scope": "Source-dependent structure/component views plus a packed decor sheet; reuse shared parts",
+      "status": "pending-source-audit; no new generation approved by count alone"
+    },
+    {
+      "location_id": "B07",
+      "name": "Temple Hill",
+      "dedicated_sheet_cap": 2,
+      "scope": "Source-dependent structure/component views plus a packed decor sheet; reuse shared parts",
+      "status": "pending-source-audit; no new generation approved by count alone"
+    },
+    {
+      "location_id": "B08",
+      "name": "Colosseum",
+      "dedicated_sheet_cap": 2,
+      "scope": "Source-dependent structure/component views plus a packed decor sheet; reuse shared parts",
+      "status": "pending-source-audit; no new generation approved by count alone"
+    },
+    {
+      "location_id": "B09",
+      "name": "Lagoon Housing",
+      "dedicated_sheet_cap": 2,
+      "scope": "Source-dependent structure/component views plus a packed decor sheet; reuse shared parts",
+      "status": "pending-source-audit; no new generation approved by count alone"
+    },
+    {
+      "location_id": "B10",
+      "name": "Canyon Palace",
+      "dedicated_sheet_cap": 3,
+      "scope": "Source-dependent structure/component views plus a packed decor sheet; reuse shared parts",
+      "status": "pending-source-audit; no new generation approved by count alone"
+    },
+    {
+      "location_id": "B11",
+      "name": "Crescent Rock Arch",
+      "dedicated_sheet_cap": 2,
+      "scope": "Source-dependent structure/component views plus a packed decor sheet; reuse shared parts",
+      "status": "pending-source-audit; no new generation approved by count alone"
+    },
+    {
+      "location_id": "B12",
+      "name": "Storybook Village",
+      "dedicated_sheet_cap": 2,
+      "scope": "Source-dependent structure/component views plus a packed decor sheet; reuse shared parts",
+      "status": "pending-source-audit; no new generation approved by count alone"
+    },
+    {
+      "location_id": "B13",
+      "name": "Windmill",
+      "dedicated_sheet_cap": 2,
+      "scope": "Source-dependent structure/component views plus a packed decor sheet; reuse shared parts",
+      "status": "pending-source-audit; no new generation approved by count alone"
+    },
+    {
+      "location_id": "B14",
+      "name": "Pillar Sky City",
+      "dedicated_sheet_cap": 2,
+      "scope": "Source-dependent structure/component views plus a packed decor sheet; reuse shared parts",
+      "status": "pending-source-audit; no new generation approved by count alone"
+    },
+    {
+      "location_id": "B15",
+      "name": "Jade Jungle Temple",
+      "dedicated_sheet_cap": 3,
+      "scope": "Source-dependent structure/component views plus a packed decor sheet; reuse shared parts",
+      "status": "pending-source-audit; no new generation approved by count alone"
+    },
+    {
+      "location_id": "B16",
+      "name": "Fjord Longhouse",
+      "dedicated_sheet_cap": 2,
+      "scope": "Source-dependent structure/component views plus a packed decor sheet; reuse shared parts",
+      "status": "pending-source-audit; no new generation approved by count alone"
+    },
+    {
+      "location_id": "B17",
+      "name": "Glowwood Ruin Court",
+      "dedicated_sheet_cap": 2,
+      "scope": "Source-dependent structure/component views plus a packed decor sheet; reuse shared parts",
+      "status": "pending-source-audit; no new generation approved by count alone"
+    },
+    {
+      "location_id": "B18",
+      "name": "Mother Tree",
+      "dedicated_sheet_cap": 2,
+      "scope": "Source-dependent structure/component views plus a packed decor sheet; reuse shared parts",
+      "status": "pending-source-audit; no new generation approved by count alone"
+    },
+    {
+      "location_id": "B19",
+      "name": "Lantern Cove Gatehouse",
+      "dedicated_sheet_cap": 2,
+      "scope": "Source-dependent structure/component views plus a packed decor sheet; reuse shared parts",
+      "status": "pending-source-audit; no new generation approved by count alone"
+    },
+    {
+      "location_id": "B20",
+      "name": "Glass Bridge Pavilion",
+      "dedicated_sheet_cap": 2,
+      "scope": "Source-dependent structure/component views plus a packed decor sheet; reuse shared parts",
+      "status": "pending-source-audit; no new generation approved by count alone"
+    },
+    {
+      "location_id": "B21",
+      "name": "Tidal Observatory",
+      "dedicated_sheet_cap": 2,
+      "scope": "Source-dependent structure/component views plus a packed decor sheet; reuse shared parts",
+      "status": "pending-source-audit; no new generation approved by count alone"
+    },
+    {
+      "location_id": "B22",
+      "name": "Pearl Lighthouse",
+      "dedicated_sheet_cap": 2,
+      "scope": "Source-dependent structure/component views plus a packed decor sheet; reuse shared parts",
+      "status": "pending-source-audit; no new generation approved by count alone"
+    },
+    {
+      "location_id": "B23",
+      "name": "Sea Pavilion",
+      "dedicated_sheet_cap": 2,
+      "scope": "Source-dependent structure/component views plus a packed decor sheet; reuse shared parts",
+      "status": "pending-source-audit; no new generation approved by count alone"
+    },
+    {
+      "location_id": "B24",
+      "name": "Reef Star Shrine",
+      "dedicated_sheet_cap": 2,
+      "scope": "Source-dependent structure/component views plus a packed decor sheet; reuse shared parts",
+      "status": "pending-source-audit; no new generation approved by count alone"
+    },
+    {
+      "location_id": "B25",
+      "name": "Crystal Conservatory",
+      "dedicated_sheet_cap": 3,
+      "scope": "Source-dependent structure/component views plus a packed decor sheet; reuse shared parts",
+      "status": "pending-source-audit; no new generation approved by count alone"
+    }
+  ],
+  "shared_landmark_original_board_pool": 3,
+  "terrain_location_caps": [
+    {
+      "location": "Palace grounds and rose gardens",
+      "cap": 12
+    },
+    {
+      "location": "Lantern Lake and pond habitats",
+      "cap": 6
+    },
+    {
+      "location": "Coast, open sea and reefs",
+      "cap": 10
+    },
+    {
+      "location": "Jade jungle and wetlands",
+      "cap": 7
+    },
+    {
+      "location": "Forest and Mother Tree environs",
+      "cap": 8
+    },
+    {
+      "location": "Fjord, highland and cliffs",
+      "cap": 7
+    },
+    {
+      "location": "Desert, canyon and crescent-arch terrain",
+      "cap": 7
+    },
+    {
+      "location": "Sky-island landscape substrates",
+      "cap": 8
+    }
+  ],
+  "shared_outdoor_caps": [
+    {
+      "location_or_family": "Porcelain bridge and associated fittings",
+      "cap": 4
+    },
+    {
+      "location_or_family": "Garden and path furniture",
+      "cap": 5
+    },
+    {
+      "location_or_family": "Lighting and wayfinding",
+      "cap": 4
+    },
+    {
+      "location_or_family": "Monuments and guardian pieces",
+      "cap": 5
+    },
+    {
+      "location_or_family": "Docks, ramps and travel infrastructure",
+      "cap": 3
+    },
+    {
+      "location_or_family": "Water-garden fittings",
+      "cap": 4
+    }
+  ],
+  "world_feature_caps": [
+    {
+      "family": "Maps and placements",
+      "cap": 4
+    },
+    {
+      "family": "Sky and magical-place artifacts",
+      "cap": 7
+    },
+    {
+      "family": "Travel and wishing objects",
+      "cap": 3
+    },
+    {
+      "family": "Birthday celebration pieces",
+      "cap": 6
+    }
+  ],
+  "selected_slots": [
+    {
+      "sheet_id": "GEN-01",
+      "owner": "palace",
+      "title": "Castle massing study",
+      "status": "existing-reference-selected; approval varies",
+      "file": "images/illustrated-boards/GEN-01.png",
+      "sha256": "07804f3c14e1a3699a5be5369074e76718f19e419a426b454193c6166e26d718",
+      "generation_attempts_in_this_pass": 0
+    },
+    {
+      "sheet_id": "GEN-02",
+      "owner": "palace",
+      "title": "Castle ornament study",
+      "status": "existing-reference-selected; approval varies",
+      "file": "images/illustrated-boards/GEN-02.png",
+      "sha256": "020853e5aaaa2209a961186fee1d3823897ad98958090067edec55293a5d4aef",
+      "generation_attempts_in_this_pass": 0
+    },
+    {
+      "sheet_id": "GEN-03",
+      "owner": "palace",
+      "title": "Towering garden palace multi-view",
+      "status": "existing-reference-selected; approval varies",
+      "file": "images/illustrated-boards/GEN-03.png",
+      "sha256": "e298eada0a3023680aa8397132c7640fa852557c24baae67555cfd8ead95a568",
+      "generation_attempts_in_this_pass": 0
+    },
+    {
+      "sheet_id": "GEN-07",
+      "owner": "palace",
+      "title": "Princess palace hero artifacts",
+      "status": "existing-reference-selected; approval varies",
+      "file": "images/illustrated-boards/GEN-07.png",
+      "sha256": "83817757947838f1905e1755ab24b190d05e4bd296f16e8f04956f5b7358d9a5",
+      "generation_attempts_in_this_pass": 0
+    },
+    {
+      "sheet_id": "GEN-11",
+      "owner": "palace",
+      "title": "Palace ponds and lotus fountain",
+      "status": "existing-reference-selected; approval varies",
+      "file": "images/illustrated-boards/GEN-11.png",
+      "sha256": "d2303b4471ce76120542965e3d1c6326a19ffca684586a8a66e0a4df3946dbe4",
+      "generation_attempts_in_this_pass": 0
+    },
+    {
+      "sheet_id": "GEN-14",
+      "owner": "palace",
+      "title": "Rose Court and Moon Courtyard",
+      "status": "existing-reference-selected; approval varies",
+      "file": "images/illustrated-boards/GEN-14.png",
+      "sha256": "c46f17ea88a79bdf51fd6fb1c47734d2a749c0a24ee7d1eae1e961dce503bcd8",
+      "generation_attempts_in_this_pass": 0
+    },
+    {
+      "sheet_id": "GEN-15",
+      "owner": "palace",
+      "title": "Terrace gardens and grand approach",
+      "status": "existing-reference-selected; approval varies",
+      "file": "images/illustrated-boards/GEN-15.png",
+      "sha256": "a9f4863bb88ce774d1953e81de6d8f0518987d71b99ba070b8d5780f29fab1b3",
+      "generation_attempts_in_this_pass": 0
+    },
+    {
+      "sheet_id": "GEN-16",
+      "owner": "palace",
+      "title": "Palace roof gardens",
+      "status": "existing-reference-selected; approval varies",
+      "file": "images/illustrated-boards/GEN-16.png",
+      "sha256": "7bd2e64078fb526204113287b3fe012821f10e3c1f02b9005d8b56bd58e56f4f",
+      "generation_attempts_in_this_pass": 0
+    },
+    {
+      "sheet_id": "GEN-17",
+      "owner": "palace",
+      "title": "Tower crowns, roofs and balconies",
+      "status": "existing-reference-selected; approval varies",
+      "file": "images/illustrated-boards/GEN-17.png",
+      "sha256": "48341d361006c5b7096bb7fda3a8320f0c534fc9cfe397b574371bee07a68542",
+      "generation_attempts_in_this_pass": 0
+    },
+    {
+      "sheet_id": "GEN-19",
+      "owner": "palace",
+      "title": "Windows, portals and wall details",
+      "status": "existing-reference-selected; approval varies",
+      "file": "images/illustrated-boards/GEN-19.png",
+      "sha256": "e9af81e2135ac821c10607ec84b9ef7f21bad6246b1c1439eaffb3a413ba8bce",
+      "generation_attempts_in_this_pass": 0
+    },
+    {
+      "sheet_id": "GEN-24",
+      "owner": "palace",
+      "title": "Princess furniture and interior ornament",
+      "status": "existing-reference-selected; approval varies",
+      "file": "images/illustrated-boards/GEN-24.png",
+      "sha256": "deb78cfce6dab5c31d9b3519d3bc01a07e58bba453b013fcdb76bd2e8be3f349",
+      "generation_attempts_in_this_pass": 0
+    },
+    {
+      "sheet_id": "GEN-26",
+      "owner": "palace",
+      "title": "Palace interior architecture",
+      "status": "existing-reference-selected; approval varies",
+      "file": "images/illustrated-boards/GEN-26.png",
+      "sha256": "6ca64686df3226a1da314f2865d3cd2699124b9f746b44ace5fbb72aa9801321",
+      "generation_attempts_in_this_pass": 0
+    },
+    {
+      "sheet_id": "GEN-29",
+      "owner": "palace",
+      "title": "Columns and lotus capitals",
+      "status": "existing-reference-selected; approval varies",
+      "file": "images/illustrated-boards/GEN-29.png",
+      "sha256": "88a558a29cc52bd50459307297f946d88a274f090a1bf96c4da212383a2fd1ad",
+      "generation_attempts_in_this_pass": 0
+    },
+    {
+      "sheet_id": "GEN-30",
+      "owner": "palace",
+      "title": "Wall carvings and pattern grammar",
+      "status": "existing-reference-selected; approval varies",
+      "file": "images/illustrated-boards/GEN-30.png",
+      "sha256": "5a2980b8df397de42ca55cd46deda1e7f40a669b88bd7d679e926a1568b0db35",
+      "generation_attempts_in_this_pass": 0
+    },
+    {
+      "sheet_id": "GEN-31",
+      "owner": "palace",
+      "title": "Royal portal and gate",
+      "status": "existing-reference-selected; approval varies",
+      "file": "images/illustrated-boards/GEN-31.png",
+      "sha256": "678906d3d65e914c1ab7fa8623bc479d9d4ad41646c2d87e2906db03d84c7e2a",
+      "generation_attempts_in_this_pass": 0
+    },
+    {
+      "sheet_id": "GEN-32",
+      "owner": "palace",
+      "title": "Crown ornaments, turret joints and lanterns",
+      "status": "existing-reference-selected; approval varies",
+      "file": "images/illustrated-boards/GEN-32.png",
+      "sha256": "24f902148b67e7834e2f8bd03f5a50c3247e638e345cd22dfe7a4f84343e78a8",
+      "generation_attempts_in_this_pass": 0
+    },
+    {
+      "sheet_id": "GEN-33",
+      "owner": "palace",
+      "title": "Balconies, parapets and stair rails",
+      "status": "existing-reference-selected; approval varies",
+      "file": "images/illustrated-boards/GEN-33.png",
+      "sha256": "e5c722a0fb3755b82d67656c5921d9c77fb0211107d7955b73c509feba6fa6f7",
+      "generation_attempts_in_this_pass": 0
+    },
+    {
+      "sheet_id": "GEN-34",
+      "owner": "palace",
+      "title": "Fountain monuments and sculpture",
+      "status": "existing-reference-selected; approval varies",
+      "file": "images/illustrated-boards/GEN-34.png",
+      "sha256": "8564bfb59c77dcddda9355c00d483f99004a8bf90485760268499820167b32b4",
+      "generation_attempts_in_this_pass": 0
+    },
+    {
+      "sheet_id": "GEN-35",
+      "owner": "palace",
+      "title": "Garden artifacts and small fittings",
+      "status": "existing-reference-selected; approval varies",
+      "file": "images/illustrated-boards/GEN-35.png",
+      "sha256": "6dcccdc9b9519a96d1f387dbf0d90cf4fcb8af6d382f61005e9b62c1511cc9dc",
+      "generation_attempts_in_this_pass": 0
+    },
+    {
+      "sheet_id": "GEN-36",
+      "owner": "palace",
+      "title": "Conservatory joints and paving",
+      "status": "existing-reference-selected; approval varies",
+      "file": "images/illustrated-boards/GEN-36.png",
+      "sha256": "7fb524bc99c2cf1cba0b509241f7776492f70d0a22fb06278ec119d889262dbb",
+      "generation_attempts_in_this_pass": 0
+    },
+    {
+      "sheet_id": "GEN-37",
+      "owner": "palace",
+      "title": "Detailed front elevation",
+      "status": "existing-reference-selected; approval varies",
+      "file": "images/illustrated-boards/GEN-37.png",
+      "sha256": "93e90aa60c98e29cd47f4c319661a390d16ae79e0517fd26af566eab2a09440a",
+      "generation_attempts_in_this_pass": 0
+    },
+    {
+      "sheet_id": "GEN-38",
+      "owner": "palace",
+      "title": "Glass patterns",
+      "status": "existing-reference-selected; approval varies",
+      "file": "images/illustrated-boards/GEN-38.png",
+      "sha256": "275a70b02fcac96e7acd2946c7dd766f2d94f13651e004f33ac97edc18c75aac",
+      "generation_attempts_in_this_pass": 0
+    },
+    {
+      "sheet_id": "GEN-39",
+      "owner": "palace",
+      "title": "Rails and gallery patterns",
+      "status": "existing-reference-selected; approval varies",
+      "file": "images/illustrated-boards/GEN-39.png",
+      "sha256": "bbe9f03266ab8b443d0a00780f2b62ee2741e3089f0cad8ab9347cc0cfe4d1d4",
+      "generation_attempts_in_this_pass": 0
+    },
+    {
+      "sheet_id": "GEN-40",
+      "owner": "palace",
+      "title": "Floral relief and crests",
+      "status": "existing-reference-selected; approval varies",
+      "file": "images/illustrated-boards/GEN-40.png",
+      "sha256": "04f065d91a100c64941b7eb3a61b19bf1aee8add9a1fbdeba934a8beaea2ef7b",
+      "generation_attempts_in_this_pass": 0
+    },
+    {
+      "sheet_id": "GEN-41",
+      "owner": "palace",
+      "title": "Column and capital masters",
+      "status": "existing-reference-selected; approval varies",
+      "file": "images/illustrated-boards/GEN-41.png",
+      "sha256": "1882043115cf511799f657be00711cc9dbd0b6241124b8852a11b187b76d5d6a",
+      "generation_attempts_in_this_pass": 0
+    },
+    {
+      "sheet_id": "GEN-42",
+      "owner": "palace",
+      "title": "Mouldings and cornices",
+      "status": "existing-reference-selected; approval varies",
+      "file": "images/illustrated-boards/GEN-42.png",
+      "sha256": "ee936eb8b538c4791c1a506ea779e6543b73f7d70fef451d65af1cf1c3ce1fd2",
+      "generation_attempts_in_this_pass": 0
+    },
+    {
+      "sheet_id": "GEN-43",
+      "owner": "palace",
+      "title": "Lower arcade, stairs and water ornament",
+      "status": "existing-reference-selected; approval varies",
+      "file": "images/illustrated-boards/GEN-43.png",
+      "sha256": "9ac3c5102040b5718737468eda71fdb1caa89e475f9e5427192a249c55ae2750",
+      "generation_attempts_in_this_pass": 0
+    },
+    {
+      "sheet_id": "GEN-44",
+      "owner": "palace",
+      "title": "Crowns, roofs and star finials",
+      "status": "existing-reference-selected; approval varies",
+      "file": "images/illustrated-boards/GEN-44.png",
+      "sha256": "e41f3ecb1b5a6e38903b0a6eed05c218bae8de350bc3ea31e873be1a16cca807",
+      "generation_attempts_in_this_pass": 0
+    },
+    {
+      "sheet_id": "GEN-45",
+      "owner": "palace",
+      "title": "Lanterns and metalwork",
+      "status": "existing-reference-selected; approval varies",
+      "file": "images/illustrated-boards/GEN-45.png",
+      "sha256": "7af18860bcd8f4d0e245670049fe02e2f35de3f4d5da42e97c810806fca629aa",
+      "generation_attempts_in_this_pass": 0
+    },
+    {
+      "sheet_id": "INT-C01",
+      "owner": "palace",
+      "title": "Palace floor inlay and border construction",
+      "status": "existing-reference-selected; approval varies",
+      "file": "images/interior-components/INT-C01.png",
+      "sha256": "5e880ab2fcf33e537a222d4911f421c9e0499dcab0ebae73f78aa5d49d506620",
+      "generation_attempts_in_this_pass": 0
+    },
+    {
+      "sheet_id": "INT-C02",
+      "owner": "palace",
+      "title": "Interior wall bay, column and vault springing",
+      "status": "existing-reference-selected; approval varies",
+      "file": "images/interior-components/INT-C02.png",
+      "sha256": "da3d9342555ad81d5dd9139f7307e569467a5153d3e9138191346544151e0723",
+      "generation_attempts_in_this_pass": 0
+    },
+    {
+      "sheet_id": "INT-C03",
+      "owner": "palace",
+      "title": "Ceiling, coffer and chandelier attachments",
+      "status": "existing-reference-selected; approval varies",
+      "file": "images/interior-components/INT-C03.png",
+      "sha256": "122d89fa199b2d1ff84fc9f226dd7567c1dd286479d9da3e334afd54c20fb19f",
+      "generation_attempts_in_this_pass": 0
+    },
+    {
+      "sheet_id": "MOD-COL-001",
+      "owner": "palace",
+      "title": "Lotus capital ornamental crown",
+      "status": "existing-reference-selected; approval varies",
+      "file": "images/component-development-studies/MOD-COL-001.png",
+      "sha256": "91723a752cb899ee88abf7417aea9b3baf392a7972cca0f74a35c662264ca91a",
+      "generation_attempts_in_this_pass": 0
+    },
+    {
+      "sheet_id": "PAL-WALL-001",
+      "owner": "palace",
+      "title": "Clustered pier and complete stained-glass wall bay",
+      "status": "existing-reference-selected; approval varies",
+      "file": "images/palace-structural-studies/PAL-WALL-001.png",
+      "sha256": "9d32fba3dcf9168347cc70d25de6019822cbb4cb5e7448d064ffef3042038123",
+      "generation_attempts_in_this_pass": 0
+    },
+    {
+      "sheet_id": "GEN-05",
+      "owner": "other-map-buildings",
+      "title": "Landmark architecture A",
+      "status": "existing-reference-selected; approval varies",
+      "file": "images/illustrated-boards/GEN-05.png",
+      "sha256": "00c630f7a2e78d7fdf3c7e7febd60d53e820afd0d8dfc55531604229620de9c0",
+      "generation_attempts_in_this_pass": 0
+    },
+    {
+      "sheet_id": "GEN-06",
+      "owner": "other-map-buildings",
+      "title": "Landmark architecture B",
+      "status": "existing-reference-selected; approval varies",
+      "file": "images/illustrated-boards/GEN-06.png",
+      "sha256": "badad1f8f413ed3fdfb0f83f6764ee6789bb85255474eab7a6e15a120628c051",
+      "generation_attempts_in_this_pass": 0
+    },
+    {
+      "sheet_id": "GEN-27",
+      "owner": "other-map-buildings",
+      "title": "Kingdom landmark building studies",
+      "status": "existing-reference-selected; approval varies",
+      "file": "images/illustrated-boards/GEN-27.png",
+      "sha256": "24c53bf783000da360b391b29640a0c2be9c30420aaf8c7152031139f5ede92f",
+      "generation_attempts_in_this_pass": 0
+    },
+    {
+      "sheet_id": "GEN-08",
+      "owner": "terrain-water-and-planting",
+      "title": "Royal rose-blossom tree",
+      "status": "existing-reference-selected; approval varies",
+      "file": "images/illustrated-boards/GEN-08.png",
+      "sha256": "a3f03ab50108a7f99de138cdb71acf5e74414f85fcb67be6b1a5944c76a29cef",
+      "generation_attempts_in_this_pass": 0
+    },
+    {
+      "sheet_id": "GEN-09",
+      "owner": "terrain-water-and-planting",
+      "title": "Garden and coastal trees",
+      "status": "existing-reference-selected; approval varies",
+      "file": "images/illustrated-boards/GEN-09.png",
+      "sha256": "5e0048ce4b277c2a6c319edf6b0e2a57a388d605dd17e9ac455cc6924bb60cd4",
+      "generation_attempts_in_this_pass": 0
+    },
+    {
+      "sheet_id": "GEN-10",
+      "owner": "terrain-water-and-planting",
+      "title": "Lantern Lake",
+      "status": "existing-reference-selected; approval varies",
+      "file": "images/illustrated-boards/GEN-10.png",
+      "sha256": "ef99f59ef7d06b1660be2024819685aae8df5ebf63c73dfc5f72c76eb28e58e6",
+      "generation_attempts_in_this_pass": 0
+    },
+    {
+      "sheet_id": "GEN-12",
+      "owner": "terrain-water-and-planting",
+      "title": "Open sea and uneven shore",
+      "status": "existing-reference-selected; approval varies",
+      "file": "images/illustrated-boards/GEN-12.png",
+      "sha256": "db77402f0a0dea2c3ec813521e0edc7f7e1594a18c456b4cea0daded1228969f",
+      "generation_attempts_in_this_pass": 0
+    },
+    {
+      "sheet_id": "GEN-13",
+      "owner": "terrain-water-and-planting",
+      "title": "Garden planting kit",
+      "status": "existing-reference-selected; approval varies",
+      "file": "images/illustrated-boards/GEN-13.png",
+      "sha256": "07420c2f8a6edf1b00cd9c0aae4a78abd1959426d4ba5842e0ecf3ec215d51bf",
+      "generation_attempts_in_this_pass": 0
+    },
+    {
+      "sheet_id": "GEN-21",
+      "owner": "terrain-water-and-planting",
+      "title": "Cliffs, reefs and terrain",
+      "status": "existing-reference-selected; approval varies",
+      "file": "images/illustrated-boards/GEN-21.png",
+      "sha256": "d20e6fc8e6b02fa67a8fb69e20f2814a83a58a8e19981c605a9df5c4fef25559",
+      "generation_attempts_in_this_pass": 0
+    },
+    {
+      "sheet_id": "GEN-22",
+      "owner": "terrain-water-and-planting",
+      "title": "Paths, stairs and water connections",
+      "status": "existing-reference-selected; approval varies",
+      "file": "images/illustrated-boards/GEN-22.png",
+      "sha256": "1cf6b019bce335c3fe9db2bd0696f6c85ca8ec791ea8872109466c0727b9aa5e",
+      "generation_attempts_in_this_pass": 0
+    },
+    {
+      "sheet_id": "GEN-18",
+      "owner": "shared-outdoor-props-and-bridge",
+      "title": "Porcelain Long Bridge",
+      "status": "existing-reference-selected; approval varies",
+      "file": "images/illustrated-boards/GEN-18.png",
+      "sha256": "b4e604896f127f6964f9d0af15ea5077fcef5c4abde1d6800014c5ad7dd07624",
+      "generation_attempts_in_this_pass": 0
+    },
+    {
+      "sheet_id": "GEN-20",
+      "owner": "shared-outdoor-props-and-bridge",
+      "title": "Garden furnishings and lighting",
+      "status": "existing-reference-selected; approval varies",
+      "file": "images/illustrated-boards/GEN-20.png",
+      "sha256": "db3ae76d698c1851a2330c67cc3972125babbbacfa23321ff632f92f85c74358",
+      "generation_attempts_in_this_pass": 0
+    },
+    {
+      "sheet_id": "PACK-BRG-003",
+      "owner": "shared-outdoor-props-and-bridge",
+      "title": "Porcelain Long Bridge \u2014 missing structural references",
+      "status": "existing-reference-selected; approval varies",
+      "file": "images/missing-component-packs/PACK-BRG-003.png",
+      "sha256": "f6af34a7f21fec0b290852fb46035d4faf280091cc7037acedbaf8114c7e82f0",
+      "generation_attempts_in_this_pass": 0
+    },
+    {
+      "sheet_id": "GEN-04",
+      "owner": "maps-magic-travel-and-birthday",
+      "title": "Expanded world map",
+      "status": "existing-reference-selected; approval varies",
+      "file": "images/illustrated-boards/GEN-04.png",
+      "sha256": "98e7df7ad2823a2b3409a157e1d8f06ddbb21579b35a813d5b1bfc829530c544",
+      "generation_attempts_in_this_pass": 0
+    },
+    {
+      "sheet_id": "GEN-23",
+      "owner": "maps-magic-travel-and-birthday",
+      "title": "Mother Tree, sky isles and moon crystals",
+      "status": "existing-reference-selected; approval varies",
+      "file": "images/illustrated-boards/GEN-23.png",
+      "sha256": "0cf7e0584efa554ae0ff90881050634df75ea70e666889df1a7a7fc6ffd2d532",
+      "generation_attempts_in_this_pass": 0
+    },
+    {
+      "sheet_id": "GEN-25",
+      "owner": "maps-magic-travel-and-birthday",
+      "title": "Birthday celebration decorations",
+      "status": "existing-reference-selected; approval varies",
+      "file": "images/illustrated-boards/GEN-25.png",
+      "sha256": "9ef8a873ba4469a122f8d6b195f958834babb94bd9481ba41986a78adf6c19c7",
+      "generation_attempts_in_this_pass": 0
+    },
+    {
+      "sheet_id": "GEN-28",
+      "owner": "maps-magic-travel-and-birthday",
+      "title": "Lotus travel and wishing objects",
+      "status": "existing-reference-selected; approval varies",
+      "file": "images/illustrated-boards/GEN-28.png",
+      "sha256": "def5d59f383fbbddbea8fa00558480c3e31e708cb5529cbc5a97ed83402533ba",
+      "generation_attempts_in_this_pass": 0
+    },
+    {
+      "sheet_id": "PAL-WING-001",
+      "owner": "palace",
+      "family": "Base, wall bodies and stepped wings",
+      "title": "Original palace \u2014 continuous wing bodies",
+      "status": "rejected-variants; source-trace-required",
+      "file": "",
+      "sha256": "",
+      "generation_attempts_in_this_pass": 2,
+      "retry_reasons": [
+        "Rejected bare colonnade draft: source wings have solid glazed great-window walls, tier hierarchy and installed ornate decor."
+      ],
+      "rejected_outputs": [
+        "/workspace/generated_images/exec-388e8ba9-814e-42b3-9554-9d19f34eb899.png",
+        "/workspace/generated_images/exec-407fcca2-8f8d-4354-839b-a5c4d785042f.png"
+      ]
+    },
+    {
+      "sheet_id": "PAL-BASE-001",
+      "owner": "palace",
+      "family": "Base, wall bodies and stepped wings",
+      "title": "Original palace \u2014 base and gate-wall hosts",
+      "status": "generated-pending-review",
+      "file": "/workspace/generated_images/exec-7060030a-2a48-499c-9ad1-f635c8047e02.png",
+      "sha256": "37fee851d2866bb673eca1a7018266436b79146425f0e1bbce30c02a842196d2",
+      "generation_attempts_in_this_pass": 1
+    },
+    {
+      "sheet_id": "PAL-TOWER-001",
+      "owner": "palace",
+      "family": "Tower bodies and roof assemblies",
+      "title": "Original palace \u2014 missing long tower bodies",
+      "status": "paused-for-wing-source-comparison",
+      "file": "",
+      "sha256": "",
+      "generation_attempts_in_this_pass": 0
+    },
+    {
+      "sheet_id": "PAL-STAIR-001",
+      "owner": "palace",
+      "family": "Stairs, fountains, terraces and courtyards",
+      "title": "Original palace \u2014 stair and cascade bodies",
+      "status": "paused-for-wing-source-comparison",
+      "file": "",
+      "sha256": "",
+      "generation_attempts_in_this_pass": 0
+    },
+    {
+      "sheet_id": "PAL-INT-PROP-001",
+      "owner": "palace",
+      "family": "Interiors and furniture",
+      "title": "Princess palace \u2014 missing private-room furniture",
+      "status": "paused-for-wing-source-comparison",
+      "file": "",
+      "sha256": "",
+      "generation_attempts_in_this_pass": 0
+    },
+    {
+      "sheet_id": "INT-R01",
+      "owner": "palace",
+      "family": "Interiors and furniture",
+      "title": "Great Hall and twin staircase",
+      "status": "paused-for-wing-source-comparison",
+      "file": "",
+      "sha256": "",
+      "generation_attempts_in_this_pass": 0
+    },
+    {
+      "sheet_id": "INT-R02",
+      "owner": "palace",
+      "family": "Interiors and furniture",
+      "title": "Princess bedroom and dressing suite",
+      "status": "paused-for-wing-source-comparison",
+      "file": "",
+      "sha256": "",
+      "generation_attempts_in_this_pass": 0
+    },
+    {
+      "sheet_id": "INT-R03",
+      "owner": "palace",
+      "family": "Interiors and furniture",
+      "title": "Royal dining room and service connection",
+      "status": "paused-for-wing-source-comparison",
+      "file": "",
+      "sha256": "",
+      "generation_attempts_in_this_pass": 0
+    },
+    {
+      "sheet_id": "INT-R04",
+      "owner": "palace",
+      "family": "Interiors and furniture",
+      "title": "Royal bathing room and basin suite",
+      "status": "paused-for-wing-source-comparison",
+      "file": "",
+      "sha256": "",
+      "generation_attempts_in_this_pass": 0
+    }
+  ],
+  "production_pass": "palace-coverage-missing-only",
+  "palace_geometry_authority": {
+    "front": "GEN-37",
+    "support": [
+      "GEN-03",
+      "GEN-16"
+    ],
+    "levels_grid_m": [
+      60,
+      160,
+      230,
+      300
+    ],
+    "individual_rises_grid_m": [
+      60,
+      100,
+      70,
+      70
+    ],
+    "historic_uniform_scale": 2.75,
+    "roof_levels_world_m": [
+      165,
+      440,
+      632.5,
+      825
+    ],
+    "historic_highest_tip_world_m": 1100,
+    "note": "Confirmed level schedule; rear depths and module snap dimensions remain unresolved. These values do not certify an exact generated perspective or retrofit generic prop dimensions."
+  },
+  "production_pass_status": "Original palace structure trace required; no further structural synthesis until source correspondence is established",
+  "structural_sheet_rule": "Display source-fitted assemblies with existing canonical decor so identity and proportions can be checked. Bare host views are internal construction proposals, not replacements for the original decorated wing references.",
+  "generation_paused": true,
+  "pause_reason": "Two wing attempts changed original palace structure. Use canonical original-region trace to establish correspondence before further image calls."
+}

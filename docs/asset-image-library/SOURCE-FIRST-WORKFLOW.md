@@ -16,3 +16,7 @@ Use this approach for the bridge and subsequent palace, building, garden, furnit
 For the bridge, the primary source is GEN-18. Its direct panel register and discrepancy report are in bridge-source-panels. The stepped lotus capital from MOD-COL-001 is a user-requested supplemental part; it is not claimed as a literal bridge-source crop. Glossy-deck ripples remain a runtime effect rather than a physical ornament.
 
 Keep rose and ivory marble, the selected glass colours and the observed carving vocabulary consistent across sources. Numerical labels copied from illustrative art remain unverified until a coherent model layout resolves them.
+
+## Structure correspondence before ornament
+
+Matching palette and motifs is insufficient. Trace the actual source wing masses, tier offsets, great/medium/small window hierarchy, tower/pavilion attachments and stair axes before generating a replacement structural view. A decorated reinterpretation is still a rejected reference when that arrangement changes. Direct original crops are preferred until correspondence is established.
