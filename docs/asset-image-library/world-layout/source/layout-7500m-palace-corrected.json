@@ -1,0 +1,1521 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-14",
+  "world_name": "Starlight Coast",
+  "map_sheet_id": "WLD-MAP-001",
+  "source_reference_id": "GEN-04",
+  "source_reference_file": "images/illustrated-boards/GEN-04.png",
+  "source_reference_sha256": "98e7df7ad2823a2b3409a157e1d8f06ddbb21579b35a813d5b1bfc829530c544",
+  "legacy_placement_file": "world-layout/source/legacy-v5-placements.json",
+  "legacy_placement_sha256": "8d92fca8c0d75764abf381a4030bfdb86464e7f2e9200ae462a010b95871b72b",
+  "extent_m": [
+    7500,
+    7500
+  ],
+  "extent_basis": "Existing expanded GEN-04 and savedv5 placement proposal:2.5km\u21927.5km width/depth (3x linear,9x planning area). No second enlargement applied.",
+  "coordinates": "X east, Z south; north is -Z; horizontal map reservation only",
+  "landmarks": [
+    {
+      "id": "B01",
+      "name": "Birthday Castle",
+      "kind": "palace",
+      "x_m": 0,
+      "z_m": 0,
+      "width_m": 2500,
+      "depth_m": 2125,
+      "height_m": null,
+      "materials": "Rose marble, gold, indigo glass",
+      "detail": "Asymmetric towering crown; eight projecting bastions; connected roof gardens with three fountains",
+      "legacy_x_m": 0,
+      "legacy_z_m": 0,
+      "label_name": "Princess Palace",
+      "terrain_region_id": "T01",
+      "source_reference_ids": [
+        "GEN-37",
+        "GEN-04"
+      ],
+      "reference_status": "Existing illustration; complete modular construction/joins not established",
+      "dimension_basis": "Owner states palace2.5km; interpreted as full horizontal width from earlier width discussion. Depth2.125km is a provisional planning reservation retaining prior800:680 aspect, not confirmed architecture. Tower height/levels and prop scale are independent.",
+      "legacy_width_m": 800,
+      "legacy_depth_m": 680,
+      "legacy_height_m": 1100,
+      "source_truth": "GEN-37 front; palace roof/wing geometry still pending parity review",
+      "dedicated_sheet_cap": 65,
+      "geometry_placement_verified": false,
+      "width_basis": "owner clarification2026-10-14; width interpretation",
+      "depth_basis": "provisional reservation only; inferred aspect, actual depth unresolved",
+      "height_policy": "Map width correction does not scale heights or human-size details."
+    },
+    {
+      "id": "B02",
+      "name": "Moon Water Palace",
+      "kind": "dome",
+      "x_m": -1100,
+      "z_m": 1500,
+      "width_m": 210,
+      "depth_m": 150,
+      "height_m": 210,
+      "materials": "Pearl marble, moonstone, gold",
+      "detail": "Cusped water arcade; four chhatris; lotus ghat",
+      "legacy_x_m": -1100,
+      "legacy_z_m": 1500,
+      "label_name": "Moon Palace",
+      "terrain_region_id": "T02",
+      "source_reference_ids": [
+        "GEN-05",
+        "GEN-04"
+      ],
+      "reference_status": "Existing illustration; complete modular construction/joins not established",
+      "dimension_basis": "Inherited legacy proposed dimensions; not measured or resized by map expansion",
+      "dedicated_sheet_cap": 3,
+      "geometry_placement_verified": false
+    },
+    {
+      "id": "B03",
+      "name": "Star Chapel",
+      "kind": "gothic",
+      "x_m": 850,
+      "z_m": 1450,
+      "width_m": 100,
+      "depth_m": 160,
+      "height_m": 240,
+      "materials": "Pale lilac stone, opal glass",
+      "detail": "Rose wheel; rib vault; star finials; candle niches",
+      "legacy_x_m": 850,
+      "legacy_z_m": 1450,
+      "label_name": "Star Chapel",
+      "terrain_region_id": "T02",
+      "source_reference_ids": [
+        "GEN-05",
+        "GEN-04"
+      ],
+      "reference_status": "Existing illustration; complete modular construction/joins not established",
+      "dimension_basis": "Inherited legacy proposed dimensions; not measured or resized by map expansion",
+      "dedicated_sheet_cap": 2,
+      "geometry_placement_verified": false
+    },
+    {
+      "id": "B04",
+      "name": "Rose Keep",
+      "kind": "keep",
+      "x_m": -1700,
+      "z_m": -1500,
+      "width_m": 180,
+      "depth_m": 160,
+      "height_m": 360,
+      "materials": "Blush limestone, wine roofs",
+      "detail": "Rose-window bays; hanging rose gardens; corner turrets",
+      "legacy_x_m": -1700,
+      "legacy_z_m": -1500,
+      "label_name": "Rose Keep",
+      "terrain_region_id": "T01",
+      "source_reference_ids": [
+        "GEN-05",
+        "GEN-04"
+      ],
+      "reference_status": "Existing illustration; complete modular construction/joins not established",
+      "dimension_basis": "Inherited legacy proposed dimensions; not measured or resized by map expansion",
+      "dedicated_sheet_cap": 2,
+      "geometry_placement_verified": false
+    },
+    {
+      "id": "B05",
+      "name": "Misty Lantern Keep",
+      "kind": "keep",
+      "x_m": 2100,
+      "z_m": -1700,
+      "width_m": 160,
+      "depth_m": 180,
+      "height_m": 300,
+      "materials": "Jade stone, amber glass",
+      "detail": "Cloud-wrapped bridges; gilded bracket galleries",
+      "legacy_x_m": 2100,
+      "legacy_z_m": -1700,
+      "label_name": "Misty Keep",
+      "terrain_region_id": "T06",
+      "source_reference_ids": [
+        "GEN-05",
+        "GEN-04"
+      ],
+      "reference_status": "Existing illustration; complete modular construction/joins not established",
+      "dimension_basis": "Inherited legacy proposed dimensions; not measured or resized by map expansion",
+      "dedicated_sheet_cap": 2,
+      "geometry_placement_verified": false
+    },
+    {
+      "id": "B06",
+      "name": "Misty Pagoda",
+      "kind": "pagoda",
+      "x_m": 2300,
+      "z_m": -1400,
+      "width_m": 85,
+      "depth_m": 85,
+      "height_m": 220,
+      "materials": "Ivory plaster, teal glazed roofs",
+      "detail": "Five tiers; cloud brackets; paper-lattice glow",
+      "legacy_x_m": 2300,
+      "legacy_z_m": -1400,
+      "label_name": "Pagoda",
+      "terrain_region_id": "T06",
+      "source_reference_ids": [
+        "GEN-05",
+        "GEN-04"
+      ],
+      "reference_status": "Existing illustration; complete modular construction/joins not established",
+      "dimension_basis": "Inherited legacy proposed dimensions; not measured or resized by map expansion",
+      "dedicated_sheet_cap": 2,
+      "geometry_placement_verified": false
+    },
+    {
+      "id": "B07",
+      "name": "Temple Hill Rotundas",
+      "kind": "temple",
+      "x_m": 550,
+      "z_m": -1900,
+      "width_m": 120,
+      "depth_m": 120,
+      "height_m": 100,
+      "materials": "Cream marble, brushed gold",
+      "detail": "Paired tholoi; acanthus capitals; star-coffer ceilings",
+      "legacy_x_m": 550,
+      "legacy_z_m": -1900,
+      "label_name": "Temple Hill",
+      "terrain_region_id": "T06",
+      "source_reference_ids": [
+        "GEN-05",
+        "GEN-04"
+      ],
+      "reference_status": "Existing illustration; complete modular construction/joins not established",
+      "dimension_basis": "Inherited legacy proposed dimensions; not measured or resized by map expansion",
+      "dedicated_sheet_cap": 2,
+      "geometry_placement_verified": false
+    },
+    {
+      "id": "B08",
+      "name": "Colosseum of Wishes",
+      "kind": "arena",
+      "x_m": -600,
+      "z_m": -2000,
+      "width_m": 280,
+      "depth_m": 210,
+      "height_m": 85,
+      "materials": "Honey limestone, copper",
+      "detail": "Three arcaded orders; wishing stage; flower garlands",
+      "legacy_x_m": -600,
+      "legacy_z_m": -2000,
+      "label_name": "Colosseum",
+      "terrain_region_id": "T06",
+      "source_reference_ids": [
+        "GEN-05",
+        "GEN-04"
+      ],
+      "reference_status": "Existing illustration; complete modular construction/joins not established",
+      "dimension_basis": "Inherited legacy proposed dimensions; not measured or resized by map expansion",
+      "dedicated_sheet_cap": 2,
+      "geometry_placement_verified": false
+    },
+    {
+      "id": "B09",
+      "name": "Lagoon City",
+      "kind": "village",
+      "x_m": -2200,
+      "z_m": 1200,
+      "width_m": 450,
+      "depth_m": 400,
+      "height_m": 95,
+      "materials": "Pearl plaster, teal pools",
+      "detail": "Canal courts; roof gardens; arch bridges; tiled parapets",
+      "legacy_x_m": -2200,
+      "legacy_z_m": 1200,
+      "label_name": "Lagoon City",
+      "terrain_region_id": "T03",
+      "source_reference_ids": [
+        "GEN-05",
+        "GEN-04"
+      ],
+      "reference_status": "Existing illustration; complete modular construction/joins not established",
+      "dimension_basis": "Inherited legacy proposed dimensions; not measured or resized by map expansion",
+      "dedicated_sheet_cap": 2,
+      "geometry_placement_verified": false
+    },
+    {
+      "id": "B10",
+      "name": "Canyon Moon Palace",
+      "kind": "dome",
+      "x_m": 1900,
+      "z_m": 2400,
+      "width_m": 240,
+      "depth_m": 180,
+      "height_m": 210,
+      "materials": "Apricot sandstone, turquoise",
+      "detail": "Terraced ghats; moon viewing screens; lotus domes",
+      "legacy_x_m": 1900,
+      "legacy_z_m": 2400,
+      "label_name": "Canyon Palace",
+      "terrain_region_id": "T07",
+      "source_reference_ids": [
+        "GEN-05",
+        "GEN-04"
+      ],
+      "reference_status": "Existing illustration; complete modular construction/joins not established",
+      "dimension_basis": "Inherited legacy proposed dimensions; not measured or resized by map expansion",
+      "dedicated_sheet_cap": 3,
+      "geometry_placement_verified": false
+    },
+    {
+      "id": "B11",
+      "name": "Crescent Rock Arch",
+      "kind": "arch",
+      "x_m": 3100,
+      "z_m": 1900,
+      "width_m": 220,
+      "depth_m": 70,
+      "height_m": 170,
+      "materials": "Rose sandstone, opal veins",
+      "detail": "Eroded uneven arch; suspended star lanterns",
+      "legacy_x_m": 1600,
+      "legacy_z_m": 1950,
+      "label_name": "Crescent Arch",
+      "terrain_region_id": "T07",
+      "source_reference_ids": [
+        "GEN-06",
+        "GEN-04"
+      ],
+      "reference_status": "Existing illustration; complete modular construction/joins not established",
+      "dimension_basis": "Inherited legacy proposed dimensions; not measured or resized by map expansion",
+      "dedicated_sheet_cap": 2,
+      "geometry_placement_verified": false
+    },
+    {
+      "id": "B12",
+      "name": "Storybook Village",
+      "kind": "village",
+      "x_m": -2300,
+      "z_m": -650,
+      "width_m": 340,
+      "depth_m": 280,
+      "height_m": 55,
+      "materials": "Timber, cream plaster, plum tile",
+      "detail": "Sagged gables; carved bargeboards; warm window boxes",
+      "legacy_x_m": -2300,
+      "legacy_z_m": -650,
+      "label_name": "Storybook Village",
+      "terrain_region_id": "T05",
+      "source_reference_ids": [
+        "GEN-06",
+        "GEN-04"
+      ],
+      "reference_status": "Existing illustration; complete modular construction/joins not established",
+      "dimension_basis": "Inherited legacy proposed dimensions; not measured or resized by map expansion",
+      "dedicated_sheet_cap": 2,
+      "geometry_placement_verified": false
+    },
+    {
+      "id": "B13",
+      "name": "Storybook Windmill",
+      "kind": "windmill",
+      "x_m": -2600,
+      "z_m": -950,
+      "width_m": 55,
+      "depth_m": 55,
+      "height_m": 95,
+      "materials": "Cream ashlar, cedar, brass",
+      "detail": "Four lattice sails; round gallery; ivy wall",
+      "legacy_x_m": -2600,
+      "legacy_z_m": -950,
+      "label_name": "Windmill",
+      "terrain_region_id": "T05",
+      "source_reference_ids": [
+        "GEN-06",
+        "GEN-04"
+      ],
+      "reference_status": "Existing illustration; complete modular construction/joins not established",
+      "dimension_basis": "Inherited legacy proposed dimensions; not measured or resized by map expansion",
+      "dedicated_sheet_cap": 2,
+      "geometry_placement_verified": false
+    },
+    {
+      "id": "B14",
+      "name": "Pillar Sky City",
+      "kind": "pillars",
+      "x_m": 2450,
+      "z_m": 150,
+      "width_m": 420,
+      "depth_m": 420,
+      "height_m": 390,
+      "materials": "Pale sandstone, moss, gold",
+      "detail": "Unequal pillars; suspended gardens; rope sky bridges",
+      "legacy_x_m": 2450,
+      "legacy_z_m": 150,
+      "label_name": "Pillar City",
+      "terrain_region_id": "T06",
+      "source_reference_ids": [
+        "GEN-06",
+        "GEN-04"
+      ],
+      "reference_status": "Existing illustration; complete modular construction/joins not established",
+      "dimension_basis": "Inherited legacy proposed dimensions; not measured or resized by map expansion",
+      "dedicated_sheet_cap": 2,
+      "geometry_placement_verified": false
+    },
+    {
+      "id": "B15",
+      "name": "Jade Jungle Temple",
+      "kind": "stepped",
+      "x_m": 2600,
+      "z_m": 1250,
+      "width_m": 240,
+      "depth_m": 220,
+      "height_m": 145,
+      "materials": "Verdigris stone, emissive jade",
+      "detail": "Setback terraces; lotus glyphs; fern-framed stair",
+      "legacy_x_m": 2600,
+      "legacy_z_m": 1250,
+      "label_name": "Jungle Temple",
+      "terrain_region_id": "T04",
+      "source_reference_ids": [
+        "GEN-06",
+        "GEN-04"
+      ],
+      "reference_status": "Existing illustration; complete modular construction/joins not established",
+      "dimension_basis": "Inherited legacy proposed dimensions; not measured or resized by map expansion",
+      "dedicated_sheet_cap": 3,
+      "geometry_placement_verified": false
+    },
+    {
+      "id": "B16",
+      "name": "Fjord Longhouse",
+      "kind": "longhouse",
+      "x_m": -2300,
+      "z_m": -2100,
+      "width_m": 150,
+      "depth_m": 70,
+      "height_m": 80,
+      "materials": "Cedar, slate, bronze",
+      "detail": "Root-scroll ridge; woven banding; lantern hearth",
+      "legacy_x_m": -2300,
+      "legacy_z_m": -2100,
+      "label_name": "Fjord Longhouse",
+      "terrain_region_id": "T06",
+      "source_reference_ids": [
+        "GEN-06",
+        "GEN-04"
+      ],
+      "reference_status": "Existing illustration; complete modular construction/joins not established",
+      "dimension_basis": "Inherited legacy proposed dimensions; not measured or resized by map expansion",
+      "dedicated_sheet_cap": 2,
+      "geometry_placement_verified": false
+    },
+    {
+      "id": "B17",
+      "name": "Glowwood Ruin Court",
+      "kind": "ruin",
+      "x_m": -2700,
+      "z_m": -1200,
+      "width_m": 220,
+      "depth_m": 180,
+      "height_m": 90,
+      "materials": "Moss ashlar, moon crystal",
+      "detail": "Broken arcades; faceless niches; canopy root arches",
+      "legacy_x_m": -2850,
+      "legacy_z_m": 350,
+      "label_name": "Glowwood Ruins",
+      "terrain_region_id": "T05",
+      "source_reference_ids": [
+        "GEN-06",
+        "GEN-04"
+      ],
+      "reference_status": "Existing illustration; complete modular construction/joins not established",
+      "dimension_basis": "Inherited legacy proposed dimensions; not measured or resized by map expansion",
+      "dedicated_sheet_cap": 2,
+      "geometry_placement_verified": false
+    },
+    {
+      "id": "B18",
+      "name": "Mother Tree Sanctuary",
+      "kind": "tree",
+      "x_m": -1550,
+      "z_m": 1500,
+      "width_m": 280,
+      "depth_m": 280,
+      "height_m": 350,
+      "materials": "Pale bark, magenta blossom",
+      "detail": "Arched root cloister; dangling wish charms; living balconies",
+      "legacy_x_m": -850,
+      "legacy_z_m": 750,
+      "label_name": "Mother Tree",
+      "terrain_region_id": "T05",
+      "source_reference_ids": [
+        "GEN-06",
+        "GEN-04"
+      ],
+      "reference_status": "Existing illustration; complete modular construction/joins not established",
+      "dimension_basis": "Inherited legacy proposed dimensions; not measured or resized by map expansion",
+      "dedicated_sheet_cap": 2,
+      "geometry_placement_verified": false
+    },
+    {
+      "id": "B19",
+      "name": "Lantern Cove Gatehouse",
+      "kind": "gate",
+      "x_m": -2200,
+      "z_m": 2600,
+      "width_m": 140,
+      "depth_m": 65,
+      "height_m": 110,
+      "materials": "White porcelain, gilt tracery",
+      "detail": "Harbor welcome court; paired lantern pylons",
+      "legacy_x_m": -2200,
+      "legacy_z_m": 2600,
+      "label_name": "Lantern Cove",
+      "terrain_region_id": "T03",
+      "source_reference_ids": [
+        "GEN-06",
+        "GEN-04"
+      ],
+      "reference_status": "Existing illustration; complete modular construction/joins not established",
+      "dimension_basis": "Inherited legacy proposed dimensions; not measured or resized by map expansion",
+      "dedicated_sheet_cap": 2,
+      "geometry_placement_verified": false
+    },
+    {
+      "id": "B20",
+      "name": "Glass Bridge Pavilions",
+      "kind": "dome",
+      "x_m": -1550,
+      "z_m": 2200,
+      "width_m": 48,
+      "depth_m": 48,
+      "height_m": 55,
+      "materials": "Clear glass, pearl marble, gold",
+      "detail": "Seat ring; jali screens; touch-ripple basin",
+      "legacy_x_m": -1550,
+      "legacy_z_m": 2200,
+      "label_name": "Bridge Pavilions",
+      "terrain_region_id": "T02",
+      "source_reference_ids": [
+        "GEN-06",
+        "GEN-04"
+      ],
+      "reference_status": "Existing illustration; complete modular construction/joins not established",
+      "dimension_basis": "Inherited legacy proposed dimensions; not measured or resized by map expansion",
+      "placement_instances": [
+        {
+          "id": "B20-I01",
+          "x_m": -1550,
+          "z_m": 2200
+        },
+        {
+          "id": "B20-I02",
+          "x_m": 0,
+          "z_m": 2350
+        }
+      ],
+      "instance_rule": "Two proposed stops reuse one existing B20 pavilion family; not two new building types.",
+      "dedicated_sheet_cap": 2,
+      "geometry_placement_verified": false
+    },
+    {
+      "id": "B21",
+      "name": "Tidal Observatory",
+      "kind": "observatory",
+      "x_m": -3050,
+      "z_m": 1550,
+      "width_m": 110,
+      "depth_m": 110,
+      "height_m": 180,
+      "materials": "Sea-green bronze, ivory",
+      "detail": "Armillary dome; star clock; wave-facing balconies",
+      "legacy_x_m": -3050,
+      "legacy_z_m": 1550,
+      "label_name": "Tidal Observatory",
+      "terrain_region_id": "T03",
+      "source_reference_ids": [
+        "GEN-06",
+        "GEN-04"
+      ],
+      "reference_status": "Existing illustration; complete modular construction/joins not established",
+      "dimension_basis": "Inherited legacy proposed dimensions; not measured or resized by map expansion",
+      "dedicated_sheet_cap": 2,
+      "geometry_placement_verified": false
+    },
+    {
+      "id": "B22",
+      "name": "Pearl Harbor Lighthouse",
+      "kind": "lighthouse",
+      "x_m": -2750,
+      "z_m": 2600,
+      "width_m": 45,
+      "depth_m": 45,
+      "height_m": 200,
+      "materials": "Pearl plaster, lilac stripe, gold",
+      "detail": "Uneven taper; gallery; rotating moon beam",
+      "legacy_x_m": -2750,
+      "legacy_z_m": 2600,
+      "label_name": "Pearl Lighthouse",
+      "terrain_region_id": "T03",
+      "source_reference_ids": [
+        "GEN-06",
+        "GEN-04"
+      ],
+      "reference_status": "Existing illustration; complete modular construction/joins not established",
+      "dimension_basis": "Inherited legacy proposed dimensions; not measured or resized by map expansion",
+      "dedicated_sheet_cap": 2,
+      "geometry_placement_verified": false
+    },
+    {
+      "id": "B23",
+      "name": "Sea Pavilion",
+      "kind": "dome",
+      "x_m": 1850,
+      "z_m": 3100,
+      "width_m": 65,
+      "depth_m": 65,
+      "height_m": 80,
+      "materials": "White nacre, turquoise glass",
+      "detail": "Petal canopy; sea-facing jali; shell basin",
+      "legacy_x_m": 1850,
+      "legacy_z_m": 3100,
+      "label_name": "Sea Pavilion",
+      "terrain_region_id": "T03",
+      "source_reference_ids": [
+        "GEN-06",
+        "GEN-04"
+      ],
+      "reference_status": "Existing illustration; complete modular construction/joins not established",
+      "dimension_basis": "Inherited legacy proposed dimensions; not measured or resized by map expansion",
+      "dedicated_sheet_cap": 2,
+      "geometry_placement_verified": false
+    },
+    {
+      "id": "B24",
+      "name": "Reef Star Shrine",
+      "kind": "temple",
+      "x_m": 2900,
+      "z_m": 2300,
+      "width_m": 85,
+      "depth_m": 85,
+      "height_m": 90,
+      "materials": "Coral limestone, opal",
+      "detail": "Open star plan; shell capitals; tidal pool steps",
+      "legacy_x_m": 2900,
+      "legacy_z_m": 2300,
+      "label_name": "Reef Shrine",
+      "terrain_region_id": "T03",
+      "source_reference_ids": [
+        "GEN-06",
+        "GEN-04"
+      ],
+      "reference_status": "Existing illustration; complete modular construction/joins not established",
+      "dimension_basis": "Inherited legacy proposed dimensions; not measured or resized by map expansion",
+      "dedicated_sheet_cap": 2,
+      "geometry_placement_verified": false
+    },
+    {
+      "id": "B25",
+      "name": "Crystal Conservatory",
+      "kind": "observatory",
+      "x_m": -1400,
+      "z_m": -1400,
+      "width_m": 180,
+      "depth_m": 100,
+      "height_m": 140,
+      "materials": "Gold ribs, pale glass, fern",
+      "detail": "Branching lattice dome; orchid walks; moon mirror",
+      "legacy_x_m": -650,
+      "legacy_z_m": -500,
+      "label_name": "Conservatory",
+      "terrain_region_id": "T01",
+      "source_reference_ids": [
+        "GEN-06",
+        "GEN-04"
+      ],
+      "reference_status": "Existing illustration; complete modular construction/joins not established",
+      "dimension_basis": "Inherited legacy proposed dimensions; not measured or resized by map expansion",
+      "dedicated_sheet_cap": 3,
+      "geometry_placement_verified": false
+    }
+  ],
+  "special_sites": [
+    {
+      "id": "S01",
+      "name": "Crystal Garden",
+      "x_m": 3100,
+      "z_m": -2850,
+      "kind": "sky-island-projection",
+      "source": "GEN-04",
+      "legacy_xz_m": [
+        1500,
+        -950
+      ],
+      "placement_basis": "Proposed world-plan anchor; sky coordinates are horizontal projection only, altitude/arrival geometry unresolved."
+    },
+    {
+      "id": "S02",
+      "name": "Aurora Isle",
+      "aliases": [
+        "Aurora Peak"
+      ],
+      "x_m": -3150,
+      "z_m": -2850,
+      "kind": "sky-island-projection",
+      "source": "GEN-04",
+      "legacy_xz_m": [
+        -1500,
+        -2500
+      ],
+      "placement_basis": "Proposed world-plan anchor; sky coordinates are horizontal projection only, altitude/arrival geometry unresolved."
+    },
+    {
+      "id": "S03",
+      "name": "Lantern Lake",
+      "x_m": -1950,
+      "z_m": 650,
+      "kind": "sheltered-inland-lake",
+      "source": "GEN-10",
+      "legacy_xz_m": [
+        -1450,
+        900
+      ],
+      "reason": "Keep calm lake separate from tidal Moonwater basin and enlarged palace grounds.",
+      "placement_basis": "Proposed world-plan anchor; sky coordinates are horizontal projection only, altitude/arrival geometry unresolved."
+    },
+    {
+      "id": "S04",
+      "name": "Unicorn Meadow",
+      "x_m": 3000,
+      "z_m": 3200,
+      "kind": "sky-island-projection",
+      "source": "GEN-04",
+      "legacy_xz_m": [
+        1500,
+        1150
+      ],
+      "placement_basis": "Proposed world-plan anchor; sky coordinates are horizontal projection only, altitude/arrival geometry unresolved."
+    },
+    {
+      "id": "S05",
+      "name": "Starfall Isle",
+      "x_m": 0,
+      "z_m": -3150,
+      "kind": "sky-island-projection",
+      "source": "GEN-04",
+      "legacy_xz_m": [
+        250,
+        -2800
+      ],
+      "placement_basis": "Proposed world-plan anchor; sky coordinates are horizontal projection only, altitude/arrival geometry unresolved."
+    },
+    {
+      "id": "S06",
+      "name": "Coastal Meadow",
+      "x_m": 450,
+      "z_m": 3100,
+      "kind": "ground-meadow",
+      "source": "GEN-04",
+      "legacy_xz_m": [
+        450,
+        3100
+      ],
+      "placement_basis": "Proposed world-plan anchor; sky coordinates are horizontal projection only, altitude/arrival geometry unresolved."
+    }
+  ],
+  "terrain_regions": [
+    {
+      "id": "T01",
+      "name": "Royal terraces and rose gardens",
+      "location_ids": [
+        "B01",
+        "B04",
+        "B25"
+      ],
+      "existing_reference_ids": [
+        "GEN-08",
+        "GEN-13",
+        "GEN-14",
+        "GEN-15",
+        "GEN-16",
+        "GEN-35"
+      ],
+      "terrain_sheet_cap": 12,
+      "design_rule": "Rose/ivory stone, cherry blossoms, hedges, rose beds, garden rills; ground-facing palace outline is reservation only.",
+      "status": "Existing vocabulary, regional module/placement audit pending"
+    },
+    {
+      "id": "T02",
+      "name": "Sheltered lakes and Moonwater gardens",
+      "location_ids": [
+        "B02",
+        "B03",
+        "B20"
+      ],
+      "existing_reference_ids": [
+        "GEN-10",
+        "GEN-11",
+        "GEN-12",
+        "GEN-14",
+        "GEN-18"
+      ],
+      "terrain_sheet_cap": 6,
+      "design_rule": "Separate calm Lantern Lake from larger tidal/lagoon basin; lilies, reeds, small ponds and wet/dry banks.",
+      "status": "Existing vocabulary, regional module/placement audit pending"
+    },
+    {
+      "id": "T03",
+      "name": "Open coast sea and reefs",
+      "location_ids": [
+        "B09",
+        "B19",
+        "B21",
+        "B22",
+        "B23",
+        "B24"
+      ],
+      "existing_reference_ids": [
+        "GEN-04",
+        "GEN-09",
+        "GEN-21",
+        "GEN-28"
+      ],
+      "terrain_sheet_cap": 10,
+      "design_rule": "Open sea, irregular beaches/headlands, dunes, coves, reefs and variable wave packets; no enclosing mountain ring.",
+      "status": "Existing vocabulary, regional module/placement audit pending"
+    },
+    {
+      "id": "T04",
+      "name": "Jade jungle and wetlands",
+      "location_ids": [
+        "B15"
+      ],
+      "existing_reference_ids": [
+        "GEN-09",
+        "GEN-13",
+        "GEN-21"
+      ],
+      "terrain_sheet_cap": 7,
+      "design_rule": "Jade/verdigris stone, fern/large-leaf understory, roots, palms, shallow wetland pockets and broken moss ledges.",
+      "status": "Existing vocabulary, regional module/placement audit pending"
+    },
+    {
+      "id": "T05",
+      "name": "Glowwood storybook and Mother Tree forest",
+      "location_ids": [
+        "B12",
+        "B13",
+        "B17",
+        "B18"
+      ],
+      "existing_reference_ids": [
+        "GEN-06",
+        "GEN-08",
+        "GEN-09",
+        "GEN-13",
+        "GEN-22"
+      ],
+      "terrain_sheet_cap": 8,
+      "design_rule": "Mixed canopy, blossom focus at Mother Tree, meadow edges, timber/stone paths and ruins; avoid one tree species everywhere.",
+      "status": "Existing vocabulary, regional module/placement audit pending"
+    },
+    {
+      "id": "T06",
+      "name": "Local fjord highlands and misty ridges",
+      "location_ids": [
+        "B05",
+        "B06",
+        "B07",
+        "B08",
+        "B14",
+        "B16"
+      ],
+      "existing_reference_ids": [
+        "GEN-04",
+        "GEN-09",
+        "GEN-21"
+      ],
+      "terrain_sheet_cap": 7,
+      "design_rule": "Localized north-west fjord and north-east misty ridges, valleys and pillar outcrops; many low coastal approaches remain open.",
+      "status": "Existing vocabulary, regional module/placement audit pending"
+    },
+    {
+      "id": "T07",
+      "name": "Canyon and crescent-arch terrain",
+      "location_ids": [
+        "B10",
+        "B11"
+      ],
+      "existing_reference_ids": [
+        "GEN-05",
+        "GEN-06",
+        "GEN-21"
+      ],
+      "terrain_sheet_cap": 7,
+      "design_rule": "Apricot/rose sandstone, uneven eroded arch, gullies and dry terraces; a local south-east patch, not a border wall.",
+      "status": "Existing vocabulary, regional module/placement audit pending"
+    },
+    {
+      "id": "T08",
+      "name": "Sky-island substrates",
+      "location_ids": [
+        "S01",
+        "S02",
+        "S04",
+        "S05"
+      ],
+      "existing_reference_ids": [
+        "GEN-04",
+        "GEN-22",
+        "GEN-23"
+      ],
+      "terrain_sheet_cap": 8,
+      "design_rule": "Floating terrain shells/edges and garden/meadow surfaces; horizontal projections separate from ground/sea routes.",
+      "status": "Existing vocabulary, regional module/placement audit pending"
+    }
+  ],
+  "routes": [
+    {
+      "id": "R01",
+      "name": "South ceremonial arrival",
+      "mode": "main-path",
+      "location_ids": [
+        "B01",
+        "B20"
+      ],
+      "points_xz_m": [
+        [
+          0,
+          1350
+        ],
+        [
+          0,
+          1500
+        ],
+        [
+          0,
+          1950
+        ],
+        [
+          0,
+          2550
+        ]
+      ],
+      "polyline_length_m": 1200.0,
+      "status": "Proposed route, no terrain/grade/collision validation"
+    },
+    {
+      "id": "R02",
+      "name": "West rose/storybook/fjord loop",
+      "mode": "main-path",
+      "location_ids": [
+        "B01",
+        "B25",
+        "B04",
+        "B08",
+        "B16",
+        "B17",
+        "B13",
+        "B12",
+        "B09",
+        "B18"
+      ],
+      "points_xz_m": [
+        [
+          -1100,
+          -600
+        ],
+        [
+          -1400,
+          -1400
+        ],
+        [
+          -1700,
+          -1500
+        ],
+        [
+          -600,
+          -2000
+        ],
+        [
+          -1500,
+          -2400
+        ],
+        [
+          -2300,
+          -2100
+        ],
+        [
+          -2700,
+          -1200
+        ],
+        [
+          -2600,
+          -950
+        ],
+        [
+          -2300,
+          -650
+        ],
+        [
+          -2200,
+          1200
+        ],
+        [
+          -1550,
+          1500
+        ]
+      ],
+      "polyline_length_m": 8465.2,
+      "status": "Proposed route, no terrain/grade/collision validation"
+    },
+    {
+      "id": "R03",
+      "name": "East temple/misty/jungle/canyon loop",
+      "mode": "main-path",
+      "location_ids": [
+        "B01",
+        "B07",
+        "B05",
+        "B06",
+        "B14",
+        "B15",
+        "B10",
+        "B11",
+        "B24",
+        "B23",
+        "B03"
+      ],
+      "points_xz_m": [
+        [
+          1100,
+          -600
+        ],
+        [
+          1500,
+          -1000
+        ],
+        [
+          550,
+          -1900
+        ],
+        [
+          1500,
+          -2200
+        ],
+        [
+          2100,
+          -1700
+        ],
+        [
+          2300,
+          -1400
+        ],
+        [
+          2450,
+          150
+        ],
+        [
+          2600,
+          1250
+        ],
+        [
+          1900,
+          2400
+        ],
+        [
+          3100,
+          1900
+        ],
+        [
+          2900,
+          2300
+        ],
+        [
+          1850,
+          3100
+        ],
+        [
+          850,
+          1450
+        ]
+      ],
+      "polyline_length_m": 13022.5,
+      "status": "Proposed route, no terrain/grade/collision validation"
+    },
+    {
+      "id": "BR01",
+      "name": "Curved porcelain long bridge",
+      "mode": "bridge",
+      "location_ids": [
+        "B19",
+        "B20",
+        "B02",
+        "B01"
+      ],
+      "points_xz_m": [
+        [
+          -2200,
+          2600
+        ],
+        [
+          -1750,
+          2550
+        ],
+        [
+          -1550,
+          2200
+        ],
+        [
+          -1050,
+          2250
+        ],
+        [
+          -600,
+          2400
+        ],
+        [
+          0,
+          2350
+        ],
+        [
+          0,
+          1950
+        ],
+        [
+          0,
+          1450
+        ],
+        [
+          0,
+          1350
+        ]
+      ],
+      "polyline_length_m": 3434.8,
+      "status": "Proposed route, no terrain/grade/collision validation"
+    },
+    {
+      "id": "R04",
+      "name": "Lantern Lake forest path",
+      "mode": "secondary-path",
+      "location_ids": [
+        "B12",
+        "S03",
+        "B18",
+        "B02"
+      ],
+      "points_xz_m": [
+        [
+          -2300,
+          -650
+        ],
+        [
+          -2300,
+          200
+        ],
+        [
+          -1950,
+          650
+        ],
+        [
+          -1700,
+          1150
+        ],
+        [
+          -1550,
+          1500
+        ],
+        [
+          -1100,
+          1500
+        ]
+      ],
+      "polyline_length_m": 2809.9,
+      "status": "Proposed route, no terrain/grade/collision validation"
+    },
+    {
+      "id": "BO01",
+      "name": "Coastal boat circuit",
+      "mode": "boat",
+      "location_ids": [
+        "B22",
+        "B19",
+        "B09",
+        "B21",
+        "B20",
+        "B23",
+        "B24"
+      ],
+      "points_xz_m": [
+        [
+          -2750,
+          2600
+        ],
+        [
+          -2200,
+          2600
+        ],
+        [
+          -2400,
+          1450
+        ],
+        [
+          -3050,
+          1550
+        ],
+        [
+          -1550,
+          2200
+        ],
+        [
+          450,
+          2800
+        ],
+        [
+          1850,
+          3100
+        ],
+        [
+          2900,
+          2300
+        ]
+      ],
+      "polyline_length_m": 8849.6,
+      "status": "Proposed route, no terrain/grade/collision validation"
+    }
+  ],
+  "sky_travel": {
+    "id": "SK01",
+    "name": "Existing sky-boat/portal network",
+    "mode": "portal-sky-travel",
+    "anchors": [
+      "B01",
+      "B19",
+      "B14",
+      "S01",
+      "S02",
+      "S04",
+      "S05"
+    ],
+    "reuse_asset_ids": [
+      "GEN-28-A01",
+      "GEN-28-A02",
+      "GEN-28-A05",
+      "GEN-28-A08"
+    ],
+    "status": "Existing art reused; endpoint geometry and access not implemented or validated"
+  },
+  "water_and_coast": {
+    "sea": "Outside the irregular main coastline, with optional offshore rocks/reef patches. This polyline is proposed, not a sampled terrain boundary.",
+    "mainland_shoreline_xz_m": [
+      [
+        -3450,
+        -500
+      ],
+      [
+        -3200,
+        -1300
+      ],
+      [
+        -3000,
+        -2350
+      ],
+      [
+        -2650,
+        -2850
+      ],
+      [
+        -2050,
+        -2950
+      ],
+      [
+        -1250,
+        -2600
+      ],
+      [
+        -500,
+        -2750
+      ],
+      [
+        450,
+        -2600
+      ],
+      [
+        1200,
+        -2750
+      ],
+      [
+        2400,
+        -2750
+      ],
+      [
+        2850,
+        -2300
+      ],
+      [
+        3250,
+        -1500
+      ],
+      [
+        3000,
+        -800
+      ],
+      [
+        3350,
+        -250
+      ],
+      [
+        3000,
+        450
+      ],
+      [
+        3250,
+        1200
+      ],
+      [
+        3150,
+        1850
+      ],
+      [
+        3300,
+        2550
+      ],
+      [
+        2600,
+        2900
+      ],
+      [
+        1900,
+        3400
+      ],
+      [
+        1100,
+        3150
+      ],
+      [
+        300,
+        3200
+      ],
+      [
+        -500,
+        2900
+      ],
+      [
+        -1550,
+        3000
+      ],
+      [
+        -2200,
+        2900
+      ],
+      [
+        -3000,
+        2650
+      ],
+      [
+        -3250,
+        1700
+      ],
+      [
+        -3450,
+        900
+      ]
+    ],
+    "Lantern_Lake": {
+      "site": "S03",
+      "centre_xz_m": [
+        -1950,
+        650
+      ],
+      "approx_size_m": [
+        650,
+        700
+      ],
+      "water_type": "sheltered calm lake, distinct from tidal coast",
+      "level_status": "unresolved"
+    },
+    "Moonwater_basin": {
+      "centre_xz_m": [
+        -100,
+        1850
+      ],
+      "approx_size_m": [
+        2800,
+        1700
+      ],
+      "water_type": "sheltered southern lagoon/basin connected to sea",
+      "support_rule": "B02/B03 occupy raised shore/island pads; bridge pavilion seats reuse BR01, exact bank/island contours unresolved"
+    },
+    "rivers": [
+      {
+        "id": "WV01",
+        "name": "Fjord-to-Lantern drainage",
+        "points_xz_m": [
+          [
+            -2700,
+            -2350
+          ],
+          [
+            -2700,
+            -1650
+          ],
+          [
+            -2250,
+            -350
+          ],
+          [
+            -1950,
+            650
+          ],
+          [
+            -1900,
+            1400
+          ],
+          [
+            -2300,
+            1800
+          ],
+          [
+            -3000,
+            2250
+          ]
+        ]
+      },
+      {
+        "id": "WV02",
+        "name": "Misty-to-jungle drainage",
+        "points_xz_m": [
+          [
+            2250,
+            -2500
+          ],
+          [
+            2100,
+            -1700
+          ],
+          [
+            1800,
+            -950
+          ],
+          [
+            1750,
+            400
+          ],
+          [
+            1900,
+            1200
+          ],
+          [
+            2250,
+            1700
+          ],
+          [
+            2800,
+            2350
+          ]
+        ]
+      }
+    ],
+    "wave_rule": "Crossing swell/chop packets with varied wavelength/height, broken selective whitecaps, refracted shallow-water approach and sheltered coves. Draw unequal foam arcs, not concentric uniform stripes. No simulation implemented."
+  },
+  "placement_changes": [
+    {
+      "id": "B11",
+      "old_xz_m": [
+        1600,
+        1950
+      ],
+      "proposed_xz_m": [
+        3100,
+        1900
+      ],
+      "reason": "Follow the illustrated eastern shoreline arch relative to Canyon Palace; legacy point placed it west of that palace."
+    },
+    {
+      "id": "B17",
+      "old_xz_m": [
+        -2850,
+        350
+      ],
+      "proposed_xz_m": [
+        -2700,
+        -1200
+      ],
+      "reason": "Follow the illustrated northern Glowwood/storybook adjacency instead of legacy south-of-village coordinate."
+    },
+    {
+      "id": "B18",
+      "old_xz_m": [
+        -850,
+        750
+      ],
+      "proposed_xz_m": [
+        -1450,
+        1450
+      ],
+      "reason": "Move the root sanctuary outside the enlarged palace reservation; retain western waterside/forest role."
+    },
+    {
+      "id": "B25",
+      "old_xz_m": [
+        -650,
+        -500
+      ],
+      "proposed_xz_m": [
+        -1500,
+        -1300
+      ],
+      "reason": "Move external conservatory beyond enlarged palace footprint; retain north-west garden adjacency."
+    },
+    {
+      "id": "B25",
+      "old_xz_m": [
+        -1500,
+        -1300
+      ],
+      "proposed_xz_m": [
+        -1400,
+        -1400
+      ],
+      "reason": "Keep existing external site beyond proposed250m landscape/approach band around owner2.5km palace width; actual ground/shore support unresolved.",
+      "revision": "palace-width-2500m"
+    },
+    {
+      "id": "B18",
+      "old_xz_m": [
+        -1450,
+        1450
+      ],
+      "proposed_xz_m": [
+        -1550,
+        1500
+      ],
+      "reason": "Keep existing external site beyond proposed250m landscape/approach band around owner2.5km palace width; actual ground/shore support unresolved.",
+      "revision": "palace-width-2500m"
+    }
+  ],
+  "palace_reservation_rule": "Owner width2.5km; provisional2.125km depth retaining old aspect. Add250m planning landscape/approach band outside reservation, not approved fort-wall or courtyard geometry. GEN-37 and palace kit contracts still control architecture; no height or prop scaling.",
+  "status": "Proposed world coordinates corrected for owner2.5km palace width; illustrative map scale revision pending",
+  "plan_image_coordinate_parity_verified": false,
+  "terrain_or_route_geometry_verified": false,
+  "new_meshes": 0,
+  "image_review_notes": [
+    "R01 was an oblique panorama with standing buildings and inconsistent coordinate ticks. R02 replaces standing buildings with overhead site symbols, uses local hill contours, adds more low beaches and removes the erroneous grid. Both outputs are preserved.",
+    "B01\u2013B25 and S01\u2013S06 labels are visually present; T01\u2013T08 are defined in region inventory/legend. This label review is not automated spatial/geometry validation.",
+    "The drawing remains diagrammatic: marker positions, footprint sizes, coastline and bridge-pavilion instance counts are not proven to match layout.json pixel-for-pixel. In particular, the B01 footprint drawing does not visibly establish its printed2.2x1.87km size relative to the whole envelope. Use that value as a proposed reservation, not as a measurement from this image.",
+    "The main palace reservation does not redefine GEN-37 facade, tower placement, height, stepped wings or roof courtyards. Legacy height/footprint mismatches are recorded; palace geometry remains unresolved separately.",
+    "Old coordinate conflicts are explicitly proposed relocations for B17/B18/B25/B11. Sky coordinates are horizontal projections only; S03 is an inland lake. No altitude/access/shoreline support geometry is validated.",
+    "Route lengths are proposed polyline arithmetic, not navigation/collision/terrain-grade or hydrological results. Sea waves are a design appearance, not a tested shader/simulation.",
+    "Existing GEN-05/06 boards cover other-building vocabulary; no complete architectural kit, foliage mesh, natural-object mesh or world build is produced here."
+  ],
+  "palace_landscape_band_m_proposed": 250,
+  "scale_consistency": {
+    "palace_width_m": 2500,
+    "world_width_m": 7500,
+    "width_fraction": 0.3333333333333333,
+    "depth_m_provisional": 2125,
+    "palace_rectangle_area_km2_provisional": 5.3125,
+    "world_envelope_area_km2": 56.25,
+    "area_fraction_provisional": 0.09444444444444444,
+    "remaining_cross_map_width_m": 5000,
+    "map_image_status": "Existing PNG still labels2.2x1.87km; needs redraw for2.5km and cannot be used as metric geometry",
+    "metric_geometry_or_image_parity_verified": false
+  }
+}

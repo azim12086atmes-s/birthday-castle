@@ -1261,19 +1261,19 @@
       "review_notes": "All10 named cells have complete separated silhouettes in the first generated sheet; no new room or duplicate cake/curtain/lantern is added. Illustration scales are independent. Printed dimensions and registry dimensions are proposed human-scale values, not measured geometry. Chair rear surfaces/joinery, vessel interiors, lid seams, cup/saucer separation, tray underside and frame backing/support require model review. A09 holder shows an empty horizontal receiving feature; its actual card slot depth, grip and rear retention must be specified before modeling. No invitation artwork is newly generated. No meshes, support contact, topology, UV/PBR, mesh separation or runtime placement are verified."
     },
     {
-      "sheet_id": "WLD-MAP-001",
+      "sheet_id": "WLD-MAP-002",
       "owner": "maps-magic-travel-and-birthday",
       "family": "Maps and placements",
-      "title": "Expanded Starlight Coast terrain and location plan",
+      "title": "Starlight Coast12km forest and cottage exploration plan",
       "status": "generated-pending-source-and-user-review",
-      "file": "world-layout/WLD-MAP-001.png",
-      "sha256": "42b0df0a16451d3fdc4f41115f970b3de7524c07a58e657597b54603ec73d636",
+      "file": "world-layout/WLD-MAP-002.png",
+      "sha256": "781a0b74455d9e0c817ec5b93c3c7e1a5beedef895a62ae0f1e8ebbc30392b8e",
       "generation_attempts_in_this_pass": 2,
       "retry_reasons": [
-        "Transform rejected oblique panorama into overhead footprint map, remove repeated rock ring and erroneous grid labels"
+        "FC03 cottage label and clearing omitted; minimal local addition preserving map"
       ],
       "component_count": 0,
-      "review_notes": "R01 was an oblique panorama with standing buildings and inconsistent coordinate ticks. R02 replaces standing buildings with overhead site symbols, uses local hill contours, adds more low beaches and removes the erroneous grid. Both outputs are preserved. B01\u2013B25 and S01\u2013S06 labels are visually present; T01\u2013T08 are defined in region inventory/legend. This label review is not automated spatial/geometry validation. The drawing remains diagrammatic: marker positions, footprint sizes, coastline and bridge-pavilion instance counts are not proven to match layout.json pixel-for-pixel. In particular, the B01 footprint drawing does not visibly establish its printed2.2x1.87km size relative to the whole envelope. Use that value as a proposed reservation, not as a measurement from this image. The main palace reservation does not redefine GEN-37 facade, tower placement, height, stepped wings or roof courtyards. Legacy height/footprint mismatches are recorded; palace geometry remains unresolved separately. Old coordinate conflicts are explicitly proposed relocations for B17/B18/B25/B11. Sky coordinates are horizontal projections only; S03 is an inland lake. No altitude/access/shoreline support geometry is validated. Route lengths are proposed polyline arithmetic, not navigation/collision/terrain-grade or hydrological results. Sea waves are a design appearance, not a tested shader/simulation. Existing GEN-05/06 boards cover other-building vocabulary; no complete architectural kit, foliage mesh, natural-object mesh or world build is produced here."
+      "review_notes": "Manual visual review finds three named forest districtsF01\u2013F03, all eight cottage tagsFC01\u2013FC08, three trail labelsFT01\u2013FT03, three pond/stream nodesFD01\u2013FD03, the original25 landmark IDs and six special-site IDs. First attempt omittedFC03; a single-reference local revision adds its clearing. Both attempts and original inputs remain saved. The image is diagrammatic. Printed12km envelope and2.5km palace width are planning labels, not verified pixel scale. Core symbols, forests, shorelines, routes and cottage markers are not proven to matchJSON coordinates or dimensions. Use the indexes for proposed numeric anchors, not measurements from the drawing. B01 remains2500m wide with2125m provisional depth; no palace height, human-size prop or other-landmark dimension is scaled. GEN-37 remains palace architectural authority. This map does not establish roof/wing/tower geometry. FC01\u2013FC08 are cottage placement IDs usingB12 vocabulary, not eight new model families or completed architectural kits. Proposed12x9m/8m-high cottage dimensions are for human-scale planning. No cottage, foliage, terrain or other3D asset is produced. The enlarged mainland has outer woodland regions and meadow/stream/pond gaps. Open southern coasts and sea remain; highlands are localized. The visual sea/foam treatment is not a tested simulation; local cliff shading is artistic rather than measured topography. Bounds, proposed rectangle exclusions, cottage-clearing containment and route length arithmetic are checked separately. Ground support, shoreline contours/elevations, slopes, collisions, discovery pacing, navigation and sky-arrival access remain unverified."
     }
   ],
   "production_pass": "palace-coverage-missing-only",
@@ -1310,7 +1310,7 @@
     "side_rear_schedule": "palace-side-rear/schedule.json",
     "complete_roof_plan": "palace-roof-plan/schedule.json"
   },
-  "production_pass_status": "World layout pass: one diagrammatic top-down location plan,25 landmark IDs,6 sites,8 terrain regions, source/coordinate discrepancies documented. No new unique mesh targets, kits or game terrain built.",
+  "production_pass_status": "12km forest/cottage expansion map replaces previous selectedmap; three woodland districts/eight cottage instances. Core landmark dimensions and2500m palace width preserved; all3D/terrain/navigation pending.",
   "structural_sheet_rule": "Display source-fitted assemblies with existing canonical decor so identity and proportions can be checked. Bare host views are internal construction proposals, not replacements for the original decorated wing references.",
   "generation_paused": true,
   "pause_reason": "Requested roof/stair proposal finished. Painted attempt rejected; coordinate diagram covers33 placements and11 stair links. Source-depth registration remains a layout task.",
@@ -1471,6 +1471,23 @@
       "generation_attempts_in_this_pass": 0,
       "retirement_date": "2026-10-14",
       "reason": "Owner authorizes the audited ten-piece celebration kit now. Defer unproduced private-room furniture pack to keep palace65/global230 caps. Bed/wardrobe/private furniture needs remain outstanding; no source art removed."
+    },
+    {
+      "sheet_id": "WLD-MAP-001",
+      "owner": "maps-magic-travel-and-birthday",
+      "family": "Maps and placements",
+      "title": "Expanded Starlight Coast terrain and location plan",
+      "status": "retired-preserved-world-expansion",
+      "file": "world-layout/WLD-MAP-001.png",
+      "sha256": "42b0df0a16451d3fdc4f41115f970b3de7524c07a58e657597b54603ec73d636",
+      "generation_attempts_in_this_pass": 2,
+      "retry_reasons": [
+        "Transform rejected oblique panorama into overhead footprint map, remove repeated rock ring and erroneous grid labels"
+      ],
+      "component_count": 0,
+      "review_notes": "R01 was an oblique panorama with standing buildings and inconsistent coordinate ticks. R02 replaces standing buildings with overhead site symbols, uses local hill contours, adds more low beaches and removes the erroneous grid. Both outputs are preserved. B01\u2013B25 and S01\u2013S06 labels are visually present; T01\u2013T08 are defined in region inventory/legend. This label review is not automated spatial/geometry validation. The drawing remains diagrammatic: marker positions, footprint sizes, coastline and bridge-pavilion instance counts are not proven to match layout.json pixel-for-pixel. In particular, the B01 footprint drawing does not visibly establish its printed2.2x1.87km size relative to the whole envelope. Use that value as a proposed reservation, not as a measurement from this image. The main palace reservation does not redefine GEN-37 facade, tower placement, height, stepped wings or roof courtyards. Legacy height/footprint mismatches are recorded; palace geometry remains unresolved separately. Old coordinate conflicts are explicitly proposed relocations for B17/B18/B25/B11. Sky coordinates are horizontal projections only; S03 is an inland lake. No altitude/access/shoreline support geometry is validated. Route lengths are proposed polyline arithmetic, not navigation/collision/terrain-grade or hydrological results. Sea waves are a design appearance, not a tested shader/simulation. Existing GEN-05/06 boards cover other-building vocabulary; no complete architectural kit, foliage mesh, natural-object mesh or world build is produced here. Owner width2.5km now recorded; current PNG older2.2km label and scaling require revision.",
+      "retirement_date": "2026-10-14",
+      "reason": "Owner requests forest/cottage expansion and correct2.5km palace width; replace map selection withWLD-MAP-002. Original image and both attempts preserved."
     }
   ],
   "allocation_changes": [
@@ -1481,14 +1498,15 @@
     }
   ],
   "component_workflow": "Modular walls first; later stairs, wards/wings, towers and fountain components. Exhaustive palace section inventory later.",
-  "generation_resume_reason": "Owner authorizes move to world layout after palace reference pass. Existing7.5km map and25 landmark source boards inspected; generate one proposed true top-down layout.",
+  "generation_resume_reason": "Owner requests forest exploration and cottage clearings; generate one12km replacement planning image with single earlier map reference.",
   "allocation_notes": [
     "Latest owner crops add royal needle with attached turrets and slim star-glass onion gallery; move one unspent interior allowance to tower bodies, keeping palace cap65/world165/total230. Shared existing detail packs cover both; no extra decor sheets.",
     "Owner requests location-specific surface/pillar/stair/parapet variety. Transfer one unspent whole-layout allowance to interior repeat components, keeping65 palace and230 total. Eight packed sheets; original masters reused.",
     "Scope correction: park three map-building surface packs, preserve their files/prompts; conservatory pack owns palace slot and keeps provisional B25 alias. Retire unapproved PAL-FRONT-001 layout selection, retaining its archive, to keep65 palace. No original palace architecture changed.",
     "2026-10-14: INT-R04 bath reservation retired;64/65 palace and84/230 selected/reserved. Interiors remain partially covered; no new slots reserved by audit.",
     "2026-10-14: freed bath slot and deferred unproduced INT-R01 fund ballroom coordinated views plus structural kit; total caps unchanged.",
-    "2026-10-14: unproduced PAL-INT-PROP-001 reservation deferred/replaced with PAL-CELEBRATION-PROP-001 for ten requested celebration pieces. Private furniture coverage not claimed complete."
+    "2026-10-14: unproduced PAL-INT-PROP-001 reservation deferred/replaced with PAL-CELEBRATION-PROP-001 for ten requested celebration pieces. Private furniture coverage not claimed complete.",
+    "2026-10-14: WLD-MAP-002 replacesWLD-MAP-001 selected map slot for12km envelope; retain230 total, palace65/world165, forest8 andB12 cap2. Cottage placements reuseB12; no per-instance sheet allowance."
   ],
   "composition_previews": [
     {

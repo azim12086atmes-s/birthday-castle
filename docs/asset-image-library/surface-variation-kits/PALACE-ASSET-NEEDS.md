@@ -66,3 +66,11 @@ Continuous wall/ward host bodies; roof and floor substrates; angled/curved wing 
 ## World phase begun
 
 [Terrain/location plan and kit sequence](../world-layout/README.md) now map the other locations without changing palace architecture. Existing palace gaps remain tracked; this pass adds one world-map reference slot. Source/coordinate parity and all world geometry are unverified.
+
+## Palace/world scale correction
+
+[Owner2.5km palace-width clarification](../world-layout/PALACE-SCALE-CORRECTION.md): the7.5km envelope can contain a one-third-width palace reservation. Width corrected in world metadata; depth2.125km remains provisional. External conservatory/Mother Tree and arrival anchors adjusted beyond a proposed landscape band. Existing map PNG needs a scale redraw; physical/world-image parity remains unverified.
+
+## Forest exploration expansion
+
+[WLD-MAP-002](../world-layout/README.md) now proposes a12km envelope around the2.5km-wide palace, with3 woodlands and8 cottage clearings. [Reuse plan and restrictions](../world-layout/FOREST-EXPLORATION.md): B12 cottage family2 dedicated sheets, T05 forest8,230 total unchanged. No palace architecture, existing source files or3D models altered. Cottage/terrain kits still need source audits and missing-component references.

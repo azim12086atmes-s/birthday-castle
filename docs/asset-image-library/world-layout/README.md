@@ -1,59 +1,27 @@
-# WLD-MAP-001 — Starlight Coast world layout
+# WLD-MAP-002 — Starlight Coast forests and cottage exploration
 
-[Open the labelled top-down planning image](WLD-MAP-001.png) · [One-image gallery](index.html) · [25 location IDs/coordinates](locations.csv) · [Per-location kit plan](kit-plan.csv) · [Layout/routes/terrain JSON](layout.json)
+[Open the revised map](WLD-MAP-002.png) · [One-image gallery](index.html) · [Forest expansion plan](FOREST-EXPLORATION.md) · [Cottage clearings](forest-cottages.csv) · [25 landmark anchors](locations.csv) · [Full regions/routes/placement JSON](layout.json) · [Kit allocations](KIT-SEQUENCE.md)
 
-The plan retains the existing **7.5kmx7.5km expanded envelope**,25 B01–B25 landmark families and six S01–S06 sites. It adds8 terrain-kit region groups, primary/secondary routes, one principal curved bridge route with reused B20 pavilions, boat connections and a sky-boat/portal network. Open beaches/coves/sea replace a mountain enclosure; fjord/misty highlands stay localized. Calm Lantern Lake is separate from the southern tidal Moonwater basin. Uneven sea wave/foam appearance is a design direction, not a built water simulation.
+The proposed world envelope is now **12km×12km**, expanded from7.5km to accommodate forest exploration and cottage clearings. The mainland extends north, west and northeast. The palace remains **2.5km wide** and the other landmark sizes stay fixed. Palace depth2.125km is a provisional planning reservation; its architecture still followsGEN-37. Open sea, southern beaches, sheltered lake and localized fjord/misty hills remain distinct.
 
-B01 is a **working2.2x1.87km palace reservation**, not a new palace design. GEN-37 controls the facade; castle roof/wing/tower geometry remains unresolved. [Recorded source/coordinate conflicts](SOURCE-AUDIT.md) explain proposed B17/B18/B25/B11 relocations and preserve legacy placements unchanged.
+Three outer woodland districtsF01–F03 contain eight human-size cottage placementsFC01–FC08, looped trailsFT01–FT03 and stream/pond nodesFD01–FD03. Cottage footprints are proposed12×9m,8m high, with140m-diameter landscape clearings. Their architectural family isB12 Storybook Village, using timber, cream plaster and plum roofs; repeated cottages do not require one sheet each.
 
-The image is diagrammatic, not a measured plan. Its symbols and coastline are not proven to match JSON coordinates or sizes pixel-for-pixel; the palace's printed reservation size should not be measured from the drawing. Basic coordinate bounds/footprint-overlap checks cover only the proposed rectangular envelopes. Shore support, water levels, terrain grade, route clearance, altitude and collision remain unverified.
+This is an illustrative proposal, not measured terrain or a playable build. JSON/CSV contain proposed anchors. Drawing dimensions, coastline, terrain support, route grade, walking time and navigation remain unverified. [Source/history audit](SOURCE-AUDIT.md) records the width correction, relocations and preserved7.5km plan.
 
-[Next production sequence and caps](KIT-SEQUENCE.md): B02 Moon Water Palace source audit first, then missing architecture modules and shared regional foliage/natural/object kits. Existing GEN-05/06 illustrate the other building families; those are partial references rather than complete model kits.
+The **230 selected-sheet limit** remains: palace65, other buildings55, terrain/water/planting65, shared outdoor props/bridge25, maps/magic/travel/birthday20. WLD-MAP-002 replacesWLD-MAP-001 in the selected map slot. B12 keeps2 dedicated sheets and shared forestT05 keeps8; inspect existing references before generating missing modules and decor. No new3D model targets or meshes were created.
 
-## Label inventory
+## Review
 
-| ID | Location | Region |
-| --- | --- | --- |
-| B01 | Princess Palace | T01 |
-| B02 | Moon Palace | T02 |
-| B03 | Star Chapel | T02 |
-| B04 | Rose Keep | T01 |
-| B05 | Misty Keep | T06 |
-| B06 | Pagoda | T06 |
-| B07 | Temple Hill | T06 |
-| B08 | Colosseum | T06 |
-| B09 | Lagoon City | T03 |
-| B10 | Canyon Palace | T07 |
-| B11 | Crescent Arch | T07 |
-| B12 | Storybook Village | T05 |
-| B13 | Windmill | T05 |
-| B14 | Pillar City | T06 |
-| B15 | Jungle Temple | T04 |
-| B16 | Fjord Longhouse | T06 |
-| B17 | Glowwood Ruins | T05 |
-| B18 | Mother Tree | T05 |
-| B19 | Lantern Cove | T03 |
-| B20 | Bridge Pavilions | T02 |
-| B21 | Tidal Observatory | T03 |
-| B22 | Pearl Lighthouse | T03 |
-| B23 | Sea Pavilion | T03 |
-| B24 | Reef Shrine | T03 |
-| B25 | Conservatory | T01 |
+Manual visual review finds three named forest districtsF01–F03, all eight cottage tagsFC01–FC08, three trail labelsFT01–FT03, three pond/stream nodesFD01–FD03, the original25 landmark IDs and six special-site IDs. First attempt omittedFC03; a single-reference local revision adds its clearing. Both attempts and original inputs remain saved.
 
-## Review and limits
+The image is diagrammatic. Printed12km envelope and2.5km palace width are planning labels, not verified pixel scale. Core symbols, forests, shorelines, routes and cottage markers are not proven to matchJSON coordinates or dimensions. Use the indexes for proposed numeric anchors, not measurements from the drawing.
 
-R01 was an oblique panorama with standing buildings and inconsistent coordinate ticks. R02 replaces standing buildings with overhead site symbols, uses local hill contours, adds more low beaches and removes the erroneous grid. Both outputs are preserved.
+B01 remains2500m wide with2125m provisional depth; no palace height, human-size prop or other-landmark dimension is scaled. GEN-37 remains palace architectural authority. This map does not establish roof/wing/tower geometry.
 
-B01–B25 and S01–S06 labels are visually present; T01–T08 are defined in region inventory/legend. This label review is not automated spatial/geometry validation.
+FC01–FC08 are cottage placement IDs usingB12 vocabulary, not eight new model families or completed architectural kits. Proposed12x9m/8m-high cottage dimensions are for human-scale planning. No cottage, foliage, terrain or other3D asset is produced.
 
-The drawing remains diagrammatic: marker positions, footprint sizes, coastline and bridge-pavilion instance counts are not proven to match layout.json pixel-for-pixel. In particular, the B01 footprint drawing does not visibly establish its printed2.2x1.87km size relative to the whole envelope. Use that value as a proposed reservation, not as a measurement from this image.
+The enlarged mainland has outer woodland regions and meadow/stream/pond gaps. Open southern coasts and sea remain; highlands are localized. The visual sea/foam treatment is not a tested simulation; local cliff shading is artistic rather than measured topography.
 
-The main palace reservation does not redefine GEN-37 facade, tower placement, height, stepped wings or roof courtyards. Legacy height/footprint mismatches are recorded; palace geometry remains unresolved separately.
+Bounds, proposed rectangle exclusions, cottage-clearing containment and route length arithmetic are checked separately. Ground support, shoreline contours/elevations, slopes, collisions, discovery pacing, navigation and sky-arrival access remain unverified.
 
-Old coordinate conflicts are explicitly proposed relocations for B17/B18/B25/B11. Sky coordinates are horizontal projections only; S03 is an inland lake. No altitude/access/shoreline support geometry is validated.
-
-Route lengths are proposed polyline arithmetic, not navigation/collision/terrain-grade or hydrological results. Sea waves are a design appearance, not a tested shader/simulation.
-
-Existing GEN-05/06 boards cover other-building vocabulary; no complete architectural kit, foliage mesh, natural-object mesh or world build is produced here.
-
-One additional selected map slot: **83 selected sheets saved,86/230 selected/reserved**. Palace remains65/65;21/165 world slots selected/reserved. No new model targets or 3D assets. Original source and rejected first draft remain archived.
+**734 archive images**, including originals, crops, drafts and previews; **83 saved selected sheets**, **86/230 selected/reserved**. Palace65/65, world21/165 selected/reserved. Archive count is not the selected-sheet budget.

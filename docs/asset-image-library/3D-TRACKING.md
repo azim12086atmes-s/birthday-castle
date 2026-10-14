@@ -74,3 +74,7 @@ PAL-CELEBRATION-PROP-001-A01…A10 are new source-compatible reference targets w
 ## World layout and site IDs
 
 WLD-MAP-001 is a planning image, not a mesh-generation target. World-layout/locations.csv contains25 B IDs; layout.json adds6 S sites,8 terrain regions, proposed routes/changes and source rules. Future architectural kits should use these stable location IDs; their component/mesh IDs will be registered only with actual reference sheets. No new model IDs, game map changes or paid calls in this pass.
+
+## Forest/cottage planning IDs
+
+WLD-MAP-002 replaces the selected world map and adds F01–F03 districts, FC01–FC08 cottage placements, FT01–FT03 trails and FD01–FD03 water/discovery nodes. These are placement/route IDs, not model targets. Cottage instances reuse futureB12 modular references. No additional meshes, paid service calls or new model IDs in this pass.

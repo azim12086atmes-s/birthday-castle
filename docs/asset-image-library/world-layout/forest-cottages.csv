@@ -1,0 +1,9 @@
+id,name,forest_id,x_m,z_m,width_m,depth_m,height_m,clearing_radius_m,kit_family_id,variant,status
+FC01,Starlight Clearing,F01,-1000,-4700,12,9,8,70,B12,gable,Placement proposal; cottage modules not generated
+FC02,Fern Hollow,F01,450,-4350,12,9,8,70,B12,gable,Placement proposal; cottage modules not generated
+FC03,Birch Rest,F01,-350,-3650,12,9,8,70,B12,corner,Placement proposal; cottage modules not generated
+FC04,Moss Lantern Cottage,F02,-4450,-1500,12,9,8,70,B12,gable,Placement proposal; cottage modules not generated
+FC05,Brookside Cottage,F02,-4000,-550,12,9,8,70,B12,corner,Placement proposal; cottage modules not generated
+FC06,Coastal Orchard Cottage,F02,-4550,150,12,9,8,70,B12,porch,Placement proposal; cottage modules not generated
+FC07,Mistwood Lookout Cottage,F03,3700,-4250,12,9,8,70,B12,porch,Placement proposal; cottage modules not generated
+FC08,Moonfern Cottage,F03,4350,-3200,12,9,8,70,B12,gable,Placement proposal; cottage modules not generated

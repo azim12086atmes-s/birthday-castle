@@ -2,17 +2,17 @@
   "schema_version": 1,
   "date": "2026-10-14",
   "world_name": "Starlight Coast",
-  "map_sheet_id": "WLD-MAP-001",
+  "map_sheet_id": "WLD-MAP-002",
   "source_reference_id": "GEN-04",
   "source_reference_file": "images/illustrated-boards/GEN-04.png",
   "source_reference_sha256": "98e7df7ad2823a2b3409a157e1d8f06ddbb21579b35a813d5b1bfc829530c544",
   "legacy_placement_file": "world-layout/source/legacy-v5-placements.json",
   "legacy_placement_sha256": "8d92fca8c0d75764abf381a4030bfdb86464e7f2e9200ae462a010b95871b72b",
   "extent_m": [
-    7500,
-    7500
+    12000,
+    12000
   ],
-  "extent_basis": "Existing expanded GEN-04 and savedv5 placement proposal:2.5km\u21927.5km width/depth (3x linear,9x planning area). No second enlargement applied.",
+  "extent_basis": "Owner requests additional forest/cottage exploration2026-10-14. Expand previous7500m envelope to12000m; retain corrected2500m palace width and existing core anchor/dimension values. Extra2250m per envelope edge is space, not a uniform scaling of terrain or objects.",
   "coordinates": "X east, Z south; north is -Z; horizontal map reservation only",
   "landmarks": [
     {
@@ -21,8 +21,8 @@
       "kind": "palace",
       "x_m": 0,
       "z_m": 0,
-      "width_m": 2200,
-      "depth_m": 1870,
+      "width_m": 2500,
+      "depth_m": 2125,
       "height_m": null,
       "materials": "Rose marble, gold, indigo glass",
       "detail": "Asymmetric towering crown; eight projecting bastions; connected roof gardens with three fountains",
@@ -35,13 +35,16 @@
         "GEN-04"
       ],
       "reference_status": "Existing illustration; complete modular construction/joins not established",
-      "dimension_basis": "Working world reservation:800x680 design-grid m multiplied by2.75; approx2km palace width. Hidden footprint unresolved; GEN-37 controls architectural appearance. Map does not alter tower heights.",
+      "dimension_basis": "Owner states palace2.5km; interpreted as full horizontal width from earlier width discussion. Depth2.125km is a provisional planning reservation retaining prior800:680 aspect, not confirmed architecture. Tower height/levels and prop scale are independent.",
       "legacy_width_m": 800,
       "legacy_depth_m": 680,
       "legacy_height_m": 1100,
       "source_truth": "GEN-37 front; palace roof/wing geometry still pending parity review",
       "dedicated_sheet_cap": 65,
-      "geometry_placement_verified": false
+      "geometry_placement_verified": false,
+      "width_basis": "owner clarification2026-10-14; width interpretation",
+      "depth_basis": "provisional reservation only; inferred aspect, actual depth unresolved",
+      "height_policy": "Map width correction does not scale heights or human-size details."
     },
     {
       "id": "B02",
@@ -431,8 +434,8 @@
       "id": "B18",
       "name": "Mother Tree Sanctuary",
       "kind": "tree",
-      "x_m": -1450,
-      "z_m": 1450,
+      "x_m": -1550,
+      "z_m": 1500,
       "width_m": 280,
       "depth_m": 280,
       "height_m": 350,
@@ -612,8 +615,8 @@
       "id": "B25",
       "name": "Crystal Conservatory",
       "kind": "observatory",
-      "x_m": -1500,
-      "z_m": -1300,
+      "x_m": -1400,
+      "z_m": -1400,
       "width_m": 180,
       "depth_m": 100,
       "height_m": 140,
@@ -810,8 +813,23 @@
         "GEN-22"
       ],
       "terrain_sheet_cap": 8,
-      "design_rule": "Mixed canopy, blossom focus at Mother Tree, meadow edges, timber/stone paths and ruins; avoid one tree species everywhere.",
-      "status": "Existing vocabulary, regional module/placement audit pending"
+      "design_rule": "Mixed canopy, blossom focus at Mother Tree, meadow edges, timber/stone paths and ruins; avoid one tree species everywhere. Additional outerwoodlands use these same shared species families, with region-specific densities and understory; cottage instances reuseB12. Keep existing8-sheet allowance; audit before reallocating.",
+      "status": "Existing vocabulary, regional module/placement audit pending",
+      "forest_district_ids": [
+        "F01",
+        "F02",
+        "F03"
+      ],
+      "cottage_instance_ids": [
+        "FC01",
+        "FC02",
+        "FC03",
+        "FC04",
+        "FC05",
+        "FC06",
+        "FC07",
+        "FC08"
+      ]
     },
     {
       "id": "T06",
@@ -880,7 +898,7 @@
       "points_xz_m": [
         [
           0,
-          1100
+          1350
         ],
         [
           0,
@@ -895,7 +913,7 @@
           2550
         ]
       ],
-      "polyline_length_m": 1450.0,
+      "polyline_length_m": 1200.0,
       "status": "Proposed route, no terrain/grade/collision validation"
     },
     {
@@ -916,12 +934,12 @@
       ],
       "points_xz_m": [
         [
-          -1100,
+          -1550,
           -600
         ],
         [
-          -1500,
-          -1300
+          -1400,
+          -1400
         ],
         [
           -1700,
@@ -956,12 +974,13 @@
           1200
         ],
         [
-          -1450,
-          1450
+          -1550,
+          1500
         ]
       ],
-      "polyline_length_m": 8458.3,
-      "status": "Proposed route, no terrain/grade/collision validation"
+      "polyline_length_m": 8424.8,
+      "status": "Proposed route, no terrain/grade/collision validation",
+      "endpoint_note": "Proposed external junction beyond250m palace landscape band; internal palace connection unresolved."
     },
     {
       "id": "R03",
@@ -982,7 +1001,7 @@
       ],
       "points_xz_m": [
         [
-          1100,
+          1550,
           -600
         ],
         [
@@ -1034,8 +1053,9 @@
           1450
         ]
       ],
-      "polyline_length_m": 13022.5,
-      "status": "Proposed route, no terrain/grade/collision validation"
+      "polyline_length_m": 12859.9,
+      "status": "Proposed route, no terrain/grade/collision validation",
+      "endpoint_note": "Proposed external junction beyond250m palace landscape band; internal palace connection unresolved."
     },
     {
       "id": "BR01",
@@ -1082,10 +1102,10 @@
         ],
         [
           0,
-          1100
+          1350
         ]
       ],
-      "polyline_length_m": 3684.8,
+      "polyline_length_m": 3434.8,
       "status": "Proposed route, no terrain/grade/collision validation"
     },
     {
@@ -1116,15 +1136,15 @@
           1150
         ],
         [
-          -1450,
-          1450
+          -1550,
+          1500
         ],
         [
           -1100,
           1500
         ]
       ],
-      "polyline_length_m": 2723.2,
+      "polyline_length_m": 2809.9,
       "status": "Proposed route, no terrain/grade/collision validation"
     },
     {
@@ -1176,6 +1196,162 @@
       ],
       "polyline_length_m": 8849.6,
       "status": "Proposed route, no terrain/grade/collision validation"
+    },
+    {
+      "id": "FT01",
+      "name": "North woodland discovery loop",
+      "mode": "forest-walking-trail",
+      "location_ids": [
+        "B08",
+        "FC03",
+        "FC01",
+        "FC02"
+      ],
+      "points_xz_m": [
+        [
+          -600,
+          -2000
+        ],
+        [
+          -500,
+          -2700
+        ],
+        [
+          -1000,
+          -3200
+        ],
+        [
+          -350,
+          -3650
+        ],
+        [
+          -1350,
+          -3900
+        ],
+        [
+          -1000,
+          -4700
+        ],
+        [
+          -100,
+          -4900
+        ],
+        [
+          450,
+          -4350
+        ],
+        [
+          700,
+          -3700
+        ],
+        [
+          -350,
+          -3650
+        ]
+      ],
+      "polyline_length_m": 7556.2,
+      "proposed_path_width_m": 3,
+      "status": "Concept route only; winding refinement, grades, crossings, navigation and walking times unverified"
+    },
+    {
+      "id": "FT02",
+      "name": "West storybook cottage loop",
+      "mode": "forest-walking-trail",
+      "location_ids": [
+        "B12",
+        "B17",
+        "FC04",
+        "FC05",
+        "FC06"
+      ],
+      "points_xz_m": [
+        [
+          -2300,
+          -650
+        ],
+        [
+          -3000,
+          -650
+        ],
+        [
+          -3500,
+          -900
+        ],
+        [
+          -4450,
+          -1500
+        ],
+        [
+          -4800,
+          -800
+        ],
+        [
+          -4550,
+          150
+        ],
+        [
+          -3850,
+          200
+        ],
+        [
+          -4000,
+          -550
+        ],
+        [
+          -3500,
+          -900
+        ]
+      ],
+      "polyline_length_m": 6224.6,
+      "proposed_path_width_m": 3,
+      "status": "Concept route only; winding refinement, grades, crossings, navigation and walking times unverified"
+    },
+    {
+      "id": "FT03",
+      "name": "Northeast mistwood loop",
+      "mode": "forest-walking-trail",
+      "location_ids": [
+        "B05",
+        "FC07",
+        "FC08"
+      ],
+      "points_xz_m": [
+        [
+          2100,
+          -1700
+        ],
+        [
+          2750,
+          -2350
+        ],
+        [
+          3200,
+          -2800
+        ],
+        [
+          4350,
+          -3200
+        ],
+        [
+          4600,
+          -3800
+        ],
+        [
+          3700,
+          -4250
+        ],
+        [
+          3150,
+          -3600
+        ],
+        [
+          3200,
+          -2800
+        ]
+      ],
+      "polyline_length_m": 6082.5,
+      "proposed_path_width_m": 3,
+      "status": "Concept route only; winding refinement, grades, crossings, navigation and walking times unverified"
     }
   ],
   "sky_travel": {
@@ -1203,56 +1379,64 @@
     "sea": "Outside the irregular main coastline, with optional offshore rocks/reef patches. This polyline is proposed, not a sampled terrain boundary.",
     "mainland_shoreline_xz_m": [
       [
-        -3450,
-        -500
+        -5550,
+        700
       ],
       [
-        -3200,
-        -1300
+        -5500,
+        -1000
       ],
       [
-        -3000,
-        -2350
+        -5550,
+        -2450
       ],
       [
-        -2650,
-        -2850
-      ],
-      [
-        -2050,
-        -2950
-      ],
-      [
-        -1250,
-        -2600
-      ],
-      [
-        -500,
+        -3800,
         -2750
       ],
       [
-        450,
-        -2600
+        -2500,
+        -3200
       ],
       [
-        1200,
-        -2750
+        -2150,
+        -5400
       ],
       [
-        2400,
-        -2750
+        -900,
+        -5700
       ],
       [
-        2850,
-        -2300
+        1250,
+        -5450
       ],
       [
-        3250,
-        -1500
+        1700,
+        -3550
       ],
       [
-        3000,
-        -800
+        2550,
+        -3300
+      ],
+      [
+        2700,
+        -4900
+      ],
+      [
+        3900,
+        -5500
+      ],
+      [
+        5350,
+        -5100
+      ],
+      [
+        5600,
+        -2500
+      ],
+      [
+        3400,
+        -1800
       ],
       [
         3350,
@@ -1311,8 +1495,12 @@
         1700
       ],
       [
-        -3450,
-        900
+        -4000,
+        1250
+      ],
+      [
+        -4800,
+        1200
       ]
     ],
     "Lantern_Lake": {
@@ -1410,7 +1598,8 @@
         ]
       }
     ],
-    "wave_rule": "Crossing swell/chop packets with varied wavelength/height, broken selective whitecaps, refracted shallow-water approach and sheltered coves. Draw unequal foam arcs, not concentric uniform stripes. No simulation implemented."
+    "wave_rule": "Crossing swell/chop packets with varied wavelength/height, broken selective whitecaps, refracted shallow-water approach and sheltered coves. Draw unequal foam arcs, not concentric uniform stripes. No simulation implemented.",
+    "forest_water_rule": "FD01 stream crossing and FD02/FD03 ponds are new concept nodes; connections, bank contours and elevations unresolved. Preserve distinct calm lake, tidal southern lagoon and uneven open sea."
   },
   "placement_changes": [
     {
@@ -1460,20 +1649,357 @@
         -1300
       ],
       "reason": "Move external conservatory beyond enlarged palace footprint; retain north-west garden adjacency."
+    },
+    {
+      "id": "B25",
+      "old_xz_m": [
+        -1500,
+        -1300
+      ],
+      "proposed_xz_m": [
+        -1400,
+        -1400
+      ],
+      "reason": "Keep existing external site beyond proposed250m landscape/approach band around owner2.5km palace width; actual ground/shore support unresolved.",
+      "revision": "palace-width-2500m"
+    },
+    {
+      "id": "B18",
+      "old_xz_m": [
+        -1450,
+        1450
+      ],
+      "proposed_xz_m": [
+        -1550,
+        1500
+      ],
+      "reason": "Keep existing external site beyond proposed250m landscape/approach band around owner2.5km palace width; actual ground/shore support unresolved.",
+      "revision": "palace-width-2500m"
     }
   ],
-  "palace_reservation_rule": "B01 working reserve2200x1870m; detailed wings/roof/courtyard/height remain governed by palace source refs and unresolved geometry. Do not copy GEN-04 palace silhouette into current palace model.",
-  "status": "source-informed proposed world layout; no runtime or accepted geometric placement",
+  "palace_reservation_rule": "Owner width2.5km; provisional2.125km depth retaining old aspect. Add250m planning landscape/approach band outside reservation, not approved fort-wall or courtyard geometry. GEN-37 and palace kit contracts still control architecture; no height or prop scaling.",
+  "status": "Proposed12000m forest/cottage world layout; terrain/support/route geometry and plan-image parity unverified",
   "plan_image_coordinate_parity_verified": false,
   "terrain_or_route_geometry_verified": false,
   "new_meshes": 0,
   "image_review_notes": [
-    "R01 was an oblique panorama with standing buildings and inconsistent coordinate ticks. R02 replaces standing buildings with overhead site symbols, uses local hill contours, adds more low beaches and removes the erroneous grid. Both outputs are preserved.",
-    "B01\u2013B25 and S01\u2013S06 labels are visually present; T01\u2013T08 are defined in region inventory/legend. This label review is not automated spatial/geometry validation.",
-    "The drawing remains diagrammatic: marker positions, footprint sizes, coastline and bridge-pavilion instance counts are not proven to match layout.json pixel-for-pixel. In particular, the B01 footprint drawing does not visibly establish its printed2.2x1.87km size relative to the whole envelope. Use that value as a proposed reservation, not as a measurement from this image.",
-    "The main palace reservation does not redefine GEN-37 facade, tower placement, height, stepped wings or roof courtyards. Legacy height/footprint mismatches are recorded; palace geometry remains unresolved separately.",
-    "Old coordinate conflicts are explicitly proposed relocations for B17/B18/B25/B11. Sky coordinates are horizontal projections only; S03 is an inland lake. No altitude/access/shoreline support geometry is validated.",
-    "Route lengths are proposed polyline arithmetic, not navigation/collision/terrain-grade or hydrological results. Sea waves are a design appearance, not a tested shader/simulation.",
-    "Existing GEN-05/06 boards cover other-building vocabulary; no complete architectural kit, foliage mesh, natural-object mesh or world build is produced here."
-  ]
+    "Manual visual review finds three named forest districtsF01\u2013F03, all eight cottage tagsFC01\u2013FC08, three trail labelsFT01\u2013FT03, three pond/stream nodesFD01\u2013FD03, the original25 landmark IDs and six special-site IDs. First attempt omittedFC03; a single-reference local revision adds its clearing. Both attempts and original inputs remain saved.",
+    "The image is diagrammatic. Printed12km envelope and2.5km palace width are planning labels, not verified pixel scale. Core symbols, forests, shorelines, routes and cottage markers are not proven to matchJSON coordinates or dimensions. Use the indexes for proposed numeric anchors, not measurements from the drawing.",
+    "B01 remains2500m wide with2125m provisional depth; no palace height, human-size prop or other-landmark dimension is scaled. GEN-37 remains palace architectural authority. This map does not establish roof/wing/tower geometry.",
+    "FC01\u2013FC08 are cottage placement IDs usingB12 vocabulary, not eight new model families or completed architectural kits. Proposed12x9m/8m-high cottage dimensions are for human-scale planning. No cottage, foliage, terrain or other3D asset is produced.",
+    "The enlarged mainland has outer woodland regions and meadow/stream/pond gaps. Open southern coasts and sea remain; highlands are localized. The visual sea/foam treatment is not a tested simulation; local cliff shading is artistic rather than measured topography.",
+    "Bounds, proposed rectangle exclusions, cottage-clearing containment and route length arithmetic are checked separately. Ground support, shoreline contours/elevations, slopes, collisions, discovery pacing, navigation and sky-arrival access remain unverified."
+  ],
+  "palace_landscape_band_m_proposed": 250,
+  "scale_consistency": {
+    "palace_width_m": 2500,
+    "world_width_m": 12000,
+    "width_fraction": 0.20833333333333334,
+    "depth_m_provisional": 2125,
+    "palace_rectangle_area_km2_provisional": 5.3125,
+    "world_envelope_area_km2": 144,
+    "area_fraction_provisional": 0.03689236111111111,
+    "remaining_cross_map_width_m": 9500,
+    "map_image_status": "WLD-MAP-002 labels12km envelope and2.5km palace width; diagrammatic, pixel/coordinate parity unverified",
+    "metric_geometry_or_image_parity_verified": false
+  },
+  "previous_layout_file": "world-layout/source/layout-7500m-palace-corrected.json",
+  "previous_layout_sha256": "940d3badfa44245ce3acd41f4320239fba5b498110398daa08d95e2e9a42a3e3",
+  "forest_districts": [
+    {
+      "id": "F01",
+      "name": "North Star Woodland",
+      "polygon_xz_m": [
+        [
+          -1700,
+          -4900
+        ],
+        [
+          -1000,
+          -5200
+        ],
+        [
+          800,
+          -4900
+        ],
+        [
+          950,
+          -3600
+        ],
+        [
+          400,
+          -3000
+        ],
+        [
+          -1400,
+          -3150
+        ]
+      ],
+      "terrain_region_id": "T05",
+      "core_entry_id": "B08",
+      "design": "Mixed oak/beech-style canopy, silver birch pockets, fern floor, blossom clearings and a narrow stream; broad meadow transition toward Colosseum.",
+      "status": "Proposed exploration district, no generated foliage kit or built terrain",
+      "existing_reference_ids": [
+        "GEN-06",
+        "GEN-08",
+        "GEN-09",
+        "GEN-13",
+        "GEN-22"
+      ],
+      "cottage_family_id": "B12"
+    },
+    {
+      "id": "F02",
+      "name": "West Lantern Forest",
+      "polygon_xz_m": [
+        [
+          -5150,
+          -2000
+        ],
+        [
+          -3500,
+          -2050
+        ],
+        [
+          -3350,
+          -400
+        ],
+        [
+          -3600,
+          450
+        ],
+        [
+          -5000,
+          500
+        ]
+      ],
+      "terrain_region_id": "T05",
+      "core_entry_id": "B12",
+      "design": "Storybook woodland with mossy roots, timber footpaths and coastal meadow edges; retain open south-west beaches around observatory and lighthouse.",
+      "status": "Proposed exploration district, no generated foliage kit or built terrain",
+      "existing_reference_ids": [
+        "GEN-06",
+        "GEN-08",
+        "GEN-09",
+        "GEN-13",
+        "GEN-22"
+      ],
+      "cottage_family_id": "B12"
+    },
+    {
+      "id": "F03",
+      "name": "Northeast Mistwood",
+      "polygon_xz_m": [
+        [
+          3000,
+          -4400
+        ],
+        [
+          3850,
+          -4900
+        ],
+        [
+          4700,
+          -4400
+        ],
+        [
+          4900,
+          -2900
+        ],
+        [
+          3800,
+          -2650
+        ],
+        [
+          3000,
+          -3000
+        ]
+      ],
+      "terrain_region_id": "T05",
+      "core_entry_id": "B05",
+      "design": "Birch and conifer pockets, misty glades, uneven stones, small pond and localized ridges; no surrounding mountain ring.",
+      "status": "Proposed exploration district, no generated foliage kit or built terrain",
+      "existing_reference_ids": [
+        "GEN-06",
+        "GEN-08",
+        "GEN-09",
+        "GEN-13",
+        "GEN-22"
+      ],
+      "cottage_family_id": "B12"
+    }
+  ],
+  "forest_cottages": [
+    {
+      "id": "FC01",
+      "name": "Starlight Clearing",
+      "forest_id": "F01",
+      "x_m": -1000,
+      "z_m": -4700,
+      "width_m": 12,
+      "depth_m": 9,
+      "height_m": 8,
+      "clearing_radius_m": 70,
+      "kit_family_id": "B12",
+      "variant": "gable",
+      "source_reference_ids": [
+        "GEN-06"
+      ],
+      "dimension_basis": "Proposed human-size cottage12x9m footprint,8m high; clearing140m diameter. Village landmark reservation is not cottage size.",
+      "status": "Placement proposal; cottage modules not generated"
+    },
+    {
+      "id": "FC02",
+      "name": "Fern Hollow",
+      "forest_id": "F01",
+      "x_m": 450,
+      "z_m": -4350,
+      "width_m": 12,
+      "depth_m": 9,
+      "height_m": 8,
+      "clearing_radius_m": 70,
+      "kit_family_id": "B12",
+      "variant": "gable",
+      "source_reference_ids": [
+        "GEN-06"
+      ],
+      "dimension_basis": "Proposed human-size cottage12x9m footprint,8m high; clearing140m diameter. Village landmark reservation is not cottage size.",
+      "status": "Placement proposal; cottage modules not generated"
+    },
+    {
+      "id": "FC03",
+      "name": "Birch Rest",
+      "forest_id": "F01",
+      "x_m": -350,
+      "z_m": -3650,
+      "width_m": 12,
+      "depth_m": 9,
+      "height_m": 8,
+      "clearing_radius_m": 70,
+      "kit_family_id": "B12",
+      "variant": "corner",
+      "source_reference_ids": [
+        "GEN-06"
+      ],
+      "dimension_basis": "Proposed human-size cottage12x9m footprint,8m high; clearing140m diameter. Village landmark reservation is not cottage size.",
+      "status": "Placement proposal; cottage modules not generated"
+    },
+    {
+      "id": "FC04",
+      "name": "Moss Lantern Cottage",
+      "forest_id": "F02",
+      "x_m": -4450,
+      "z_m": -1500,
+      "width_m": 12,
+      "depth_m": 9,
+      "height_m": 8,
+      "clearing_radius_m": 70,
+      "kit_family_id": "B12",
+      "variant": "gable",
+      "source_reference_ids": [
+        "GEN-06"
+      ],
+      "dimension_basis": "Proposed human-size cottage12x9m footprint,8m high; clearing140m diameter. Village landmark reservation is not cottage size.",
+      "status": "Placement proposal; cottage modules not generated"
+    },
+    {
+      "id": "FC05",
+      "name": "Brookside Cottage",
+      "forest_id": "F02",
+      "x_m": -4000,
+      "z_m": -550,
+      "width_m": 12,
+      "depth_m": 9,
+      "height_m": 8,
+      "clearing_radius_m": 70,
+      "kit_family_id": "B12",
+      "variant": "corner",
+      "source_reference_ids": [
+        "GEN-06"
+      ],
+      "dimension_basis": "Proposed human-size cottage12x9m footprint,8m high; clearing140m diameter. Village landmark reservation is not cottage size.",
+      "status": "Placement proposal; cottage modules not generated"
+    },
+    {
+      "id": "FC06",
+      "name": "Coastal Orchard Cottage",
+      "forest_id": "F02",
+      "x_m": -4550,
+      "z_m": 150,
+      "width_m": 12,
+      "depth_m": 9,
+      "height_m": 8,
+      "clearing_radius_m": 70,
+      "kit_family_id": "B12",
+      "variant": "porch",
+      "source_reference_ids": [
+        "GEN-06"
+      ],
+      "dimension_basis": "Proposed human-size cottage12x9m footprint,8m high; clearing140m diameter. Village landmark reservation is not cottage size.",
+      "status": "Placement proposal; cottage modules not generated"
+    },
+    {
+      "id": "FC07",
+      "name": "Mistwood Lookout Cottage",
+      "forest_id": "F03",
+      "x_m": 3700,
+      "z_m": -4250,
+      "width_m": 12,
+      "depth_m": 9,
+      "height_m": 8,
+      "clearing_radius_m": 70,
+      "kit_family_id": "B12",
+      "variant": "porch",
+      "source_reference_ids": [
+        "GEN-06"
+      ],
+      "dimension_basis": "Proposed human-size cottage12x9m footprint,8m high; clearing140m diameter. Village landmark reservation is not cottage size.",
+      "status": "Placement proposal; cottage modules not generated"
+    },
+    {
+      "id": "FC08",
+      "name": "Moonfern Cottage",
+      "forest_id": "F03",
+      "x_m": 4350,
+      "z_m": -3200,
+      "width_m": 12,
+      "depth_m": 9,
+      "height_m": 8,
+      "clearing_radius_m": 70,
+      "kit_family_id": "B12",
+      "variant": "gable",
+      "source_reference_ids": [
+        "GEN-06"
+      ],
+      "dimension_basis": "Proposed human-size cottage12x9m footprint,8m high; clearing140m diameter. Village landmark reservation is not cottage size.",
+      "status": "Placement proposal; cottage modules not generated"
+    }
+  ],
+  "forest_discovery_nodes": [
+    {
+      "id": "FD01",
+      "name": "North woodland stream and footbridge",
+      "forest_id": "F01",
+      "x_m": -650,
+      "z_m": -4150,
+      "kind": "stream-crossing"
+    },
+    {
+      "id": "FD02",
+      "name": "West forest moss pond",
+      "forest_id": "F02",
+      "x_m": -4800,
+      "z_m": -650,
+      "kind": "pond"
+    },
+    {
+      "id": "FD03",
+      "name": "Mistwood moon pond",
+      "forest_id": "F03",
+      "x_m": 4050,
+      "z_m": -3650,
+      "kind": "pond"
+    }
+  ],
+  "exploration_policy": "Dense planting interrupted by clearings, meadow edges, streams/ponds, cottage destinations and looped trails. Shared benches/lanterns/signs along paths; exact discovery spacing and travel times require a walking prototype. No new quest or travel mechanics implemented."
 }

@@ -14441,7 +14441,7 @@
         "GEN-37"
       ],
       "component_ids": [],
-      "component_register": "world-layout/layout.json",
+      "component_register": "world-layout/source/layout-7500m-palace-corrected.json",
       "location_ids": [
         "B01",
         "B02",
@@ -14475,7 +14475,68 @@
         "S05",
         "S06"
       ],
-      "next_step": "Inspect B02 Moon Water Palace source panel; create only missing structural/component views. Audit foliage/natural/shared props by terrain region before new generation."
+      "next_step": "Historical plan; current world proposal isFAM-WLD-MAP-002."
+    },
+    {
+      "family_id": "FAM-WLD-MAP-002",
+      "name": "Starlight Coast forests and cottage exploration",
+      "kind": "world-location-planning-reference",
+      "reference_image_ids": [
+        "WLD-MAP-002",
+        "WLD-MAP-001",
+        "GEN-04",
+        "GEN-06",
+        "GEN-37"
+      ],
+      "component_ids": [],
+      "component_register": "world-layout/layout.json",
+      "location_ids": [
+        "B01",
+        "B02",
+        "B03",
+        "B04",
+        "B05",
+        "B06",
+        "B07",
+        "B08",
+        "B09",
+        "B10",
+        "B11",
+        "B12",
+        "B13",
+        "B14",
+        "B15",
+        "B16",
+        "B17",
+        "B18",
+        "B19",
+        "B20",
+        "B21",
+        "B22",
+        "B23",
+        "B24",
+        "B25",
+        "S01",
+        "S02",
+        "S03",
+        "S04",
+        "S05",
+        "S06",
+        "FC01",
+        "FC02",
+        "FC03",
+        "FC04",
+        "FC05",
+        "FC06",
+        "FC07",
+        "FC08"
+      ],
+      "forest_district_ids": [
+        "F01",
+        "F02",
+        "F03"
+      ],
+      "next_step": "AuditB12 cottage source and shared forest vocabulary one image at a time, thenB02 and remaining world kits. Generate only missing modules/details within saved caps."
     }
   ],
   "generation_batches": [

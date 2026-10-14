@@ -1,8 +1,8 @@
 {
   "date": "2026-10-13",
-  "distinct_image_count": 732,
+  "distinct_image_count": 734,
   "source_file_count": 969,
-  "total_bytes": 697148713,
+  "total_bytes": 703896854,
   "categories": {
     "additional-generated-studies": 33,
     "component-development-studies": 3,
@@ -44,8 +44,8 @@
     "terminal-tower-source-sections": 4,
     "vector-drawings": 130,
     "wishing-original-source-panels": 8,
-    "world-layout-superseded-drafts": 1,
-    "world-terrain-layouts": 1
+    "world-layout-superseded-drafts": 2,
+    "world-terrain-layouts": 2
   },
   "active_palace_authority": "GEN-37 original front elevation; GEN-03 and GEN-16 supporting views",
   "notes": [
@@ -14830,9 +14830,9 @@
         "GEN-06",
         "GEN-37"
       ],
-      "reference_role": "proposed-world-location-plan",
-      "design_status": "Proposed diagrammatic location/terrain layout; not measured geometry or built game",
-      "review_status": "pending-user-map-review"
+      "reference_role": "superseded-world-plan",
+      "design_status": "Historical7.5km diagram; obsolete2.2km palace label. Replaced byWLD-MAP-002; PNG unchanged.",
+      "review_status": "superseded-preserved"
     },
     {
       "id": "WLD-MAP-001-R01",
@@ -14852,6 +14852,49 @@
       ],
       "reference_role": "superseded-world-plan",
       "design_status": "Proposed diagrammatic location/terrain layout; not measured geometry or built game",
+      "review_status": "rejected-preserved"
+    },
+    {
+      "id": "WLD-MAP-002",
+      "title": "Starlight Coast \u2014 forest and cottage exploration plan",
+      "label": "WLD-MAP-002 \u2014 Starlight Coast \u2014 forest and cottage exploration plan",
+      "category": "world-terrain-layouts",
+      "file": "world-layout/WLD-MAP-002.png",
+      "sha256": "781a0b74455d9e0c817ec5b93c3c7e1a5beedef895a62ae0f1e8ebbc30392b8e",
+      "bytes": 3158999,
+      "source_aliases": [
+        "/workspace/generated_images/exec-9f4668cb-7fab-4dfa-9341-b27ab05ee263.png"
+      ],
+      "alias_ids": [],
+      "component_ids": [],
+      "related_image_ids": [
+        "WLD-MAP-001",
+        "GEN-04",
+        "GEN-06",
+        "GEN-37"
+      ],
+      "reference_role": "proposed-world-location-plan",
+      "design_status": "Proposed forest/cottage world layout; diagrammatic and not built game geometry",
+      "review_status": "pending-user-map-review"
+    },
+    {
+      "id": "WLD-MAP-002-R01",
+      "title": "Forest expansion \u2014 first draft missingFC03",
+      "label": "WLD-MAP-002-R01 \u2014 Forest expansion \u2014 first draft missingFC03",
+      "category": "world-layout-superseded-drafts",
+      "file": "world-layout/rejected-drafts/WLD-MAP-002-R01.png",
+      "sha256": "c0734d7b6cbf1d1f4bf0cfc4fbce2352b84e6c6d53ac0646bd55c73b50417a1f",
+      "bytes": 3589142,
+      "source_aliases": [
+        "/workspace/generated_images/exec-8199333a-90c3-44c0-92e1-aa8bbba84fbd.png"
+      ],
+      "alias_ids": [],
+      "component_ids": [],
+      "related_image_ids": [
+        "WLD-MAP-002"
+      ],
+      "reference_role": "superseded-world-plan",
+      "design_status": "Proposed forest/cottage world layout; diagrammatic and not built game geometry",
       "review_status": "rejected-preserved"
     }
   ],

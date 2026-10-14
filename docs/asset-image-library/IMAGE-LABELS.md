@@ -856,3 +856,10 @@ R03 uses plain tower circles and source-reviewed garden symbols. See [garden pla
 | --- | --- |
 | WLD-MAP-001 | [Starlight Coast — expanded terrain and location plan](world-layout/WLD-MAP-001.png) |
 | WLD-MAP-001-R01 | [World plan — rejected oblique first draft](world-layout/rejected-drafts/WLD-MAP-001-R01.png) |
+
+## Forest expansion map revision
+
+| ID | Reference |
+| --- | --- |
+| WLD-MAP-002 | [Starlight Coast — forest and cottage exploration plan](world-layout/WLD-MAP-002.png) |
+| WLD-MAP-002-R01 | [Forest expansion — first draft missingFC03](world-layout/rejected-drafts/WLD-MAP-002-R01.png) |

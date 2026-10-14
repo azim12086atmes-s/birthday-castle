@@ -1,5 +1,5 @@
 id,name,label_name,x_m,z_m,width_m,depth_m,terrain_region_id,source_reference_ids,dedicated_sheet_cap,geometry_placement_verified
-B01,Birthday Castle,Princess Palace,0,0,2200,1870,T01,GEN-37;GEN-04,65,False
+B01,Birthday Castle,Princess Palace,0,0,2500,2125,T01,GEN-37;GEN-04,65,False
 B02,Moon Water Palace,Moon Palace,-1100,1500,210,150,T02,GEN-05;GEN-04,3,False
 B03,Star Chapel,Star Chapel,850,1450,100,160,T02,GEN-05;GEN-04,2,False
 B04,Rose Keep,Rose Keep,-1700,-1500,180,160,T01,GEN-05;GEN-04,2,False
@@ -16,11 +16,11 @@ B14,Pillar Sky City,Pillar City,2450,150,420,420,T06,GEN-06;GEN-04,2,False
 B15,Jade Jungle Temple,Jungle Temple,2600,1250,240,220,T04,GEN-06;GEN-04,3,False
 B16,Fjord Longhouse,Fjord Longhouse,-2300,-2100,150,70,T06,GEN-06;GEN-04,2,False
 B17,Glowwood Ruin Court,Glowwood Ruins,-2700,-1200,220,180,T05,GEN-06;GEN-04,2,False
-B18,Mother Tree Sanctuary,Mother Tree,-1450,1450,280,280,T05,GEN-06;GEN-04,2,False
+B18,Mother Tree Sanctuary,Mother Tree,-1550,1500,280,280,T05,GEN-06;GEN-04,2,False
 B19,Lantern Cove Gatehouse,Lantern Cove,-2200,2600,140,65,T03,GEN-06;GEN-04,2,False
 B20,Glass Bridge Pavilions,Bridge Pavilions,-1550,2200,48,48,T02,GEN-06;GEN-04,2,False
 B21,Tidal Observatory,Tidal Observatory,-3050,1550,110,110,T03,GEN-06;GEN-04,2,False
 B22,Pearl Harbor Lighthouse,Pearl Lighthouse,-2750,2600,45,45,T03,GEN-06;GEN-04,2,False
 B23,Sea Pavilion,Sea Pavilion,1850,3100,65,65,T03,GEN-06;GEN-04,2,False
 B24,Reef Star Shrine,Reef Shrine,2900,2300,85,85,T03,GEN-06;GEN-04,2,False
-B25,Crystal Conservatory,Conservatory,-1500,-1300,180,100,T01,GEN-06;GEN-04,3,False
+B25,Crystal Conservatory,Conservatory,-1400,-1400,180,100,T01,GEN-06;GEN-04,3,False
