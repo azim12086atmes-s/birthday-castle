@@ -70,3 +70,7 @@ GEN-24-A10…A12 and GEN-25-A05…A10 index nine existing original-art designs. 
 ## Ten missing celebration props
 
 PAL-CELEBRATION-PROP-001-A01…A10 are new source-compatible reference targets with proposed human-scale dimensions, mounts/fronts and suggested filenames. The named sheet and its ten expected batch IDs are indexed. All models unregistered; no paid generation or actual geometry verification. Cup/saucer, removable lids and frame backing/support remain separable model groups.
+
+## World layout and site IDs
+
+WLD-MAP-001 is a planning image, not a mesh-generation target. World-layout/locations.csv contains25 B IDs; layout.json adds6 S sites,8 terrain regions, proposed routes/changes and source rules. Future architectural kits should use these stable location IDs; their component/mesh IDs will be registered only with actual reference sheets. No new model IDs, game map changes or paid calls in this pass.

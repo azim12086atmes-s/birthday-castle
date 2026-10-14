@@ -849,3 +849,10 @@ R03 uses plain tower circles and source-reviewed garden symbols. See [garden pla
 | SRC-INT-BALLROOM-ARRIVAL-DRESS | [Ballroom arrival view — exact source crop](interior-room-kits/INT-BALLROOM-DRESS-001/source-arrival-view.png) |
 | INT-BALLROOM-DRESS-001 | [Princess birthday ballroom — dressed placement preview](interior-room-kits/INT-BALLROOM-DRESS-001/INT-BALLROOM-DRESS-001.png) |
 | INT-BALLROOM-DRESS-001-R01 | [Birthday ballroom — first placement draft](interior-room-kits/INT-BALLROOM-DRESS-001/rejected-drafts/INT-BALLROOM-DRESS-001-R01.png) |
+
+## Expanded world terrain/location plan
+
+| ID | Reference |
+| --- | --- |
+| WLD-MAP-001 | [Starlight Coast — expanded terrain and location plan](world-layout/WLD-MAP-001.png) |
+| WLD-MAP-001-R01 | [World plan — rejected oblique first draft](world-layout/rejected-drafts/WLD-MAP-001-R01.png) |

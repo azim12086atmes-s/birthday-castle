@@ -1,5 +1,7 @@
 # Asset production plan and caps
 
+Current world work: [WLD-MAP-001 terrain/location plan](world-layout/README.md),25 landmarks,6 sites and8 terrain regions; proposed coordinates and kit sequence saved. **83 saved selected sheets;86/230 selected/reserved**. No world geometry/meshes validated.
+
 Current composition review: [dressed birthday ballroom](interior-room-kits/INT-BALLROOM-DRESS-001/README.md). Existing asset families reused; no new selected slot or model target. **82 saved selected sheets;85/230 selected/reserved** remain.
 
 Current addition: [ten missing celebration props](interior-celebration-dressing/PAL-CELEBRATION-PROP-001/README.md). **82 selected sheets saved;85/230 selected/reserved;65/65 palace.** Models and placement unverified.
@@ -22,9 +24,9 @@ The final library is capped at **230 selected sheets**, including the 45 origina
 | other-map-buildings | 55 | 3 | 52 |
 | terrain-water-and-planting | 65 | 8 | 57 |
 | shared-outdoor-props-and-bridge | 25 | 5 | 20 |
-| maps-magic-travel-and-birthday | 20 | 4 | 16 |
+| maps-magic-travel-and-birthday | 20 | 5 | 15 |
 
-The 730-file archive contains crops, previews and historical experiments; it is not the final 230-sheet selection. Selected reference slots may still require visual review.
+The 732-file archive contains crops, previews and historical experiments; it is not the final 230-sheet selection. Selected reference slots may still require visual review.
 
 ## Palace caps
 

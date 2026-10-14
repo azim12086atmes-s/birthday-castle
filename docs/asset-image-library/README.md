@@ -1,5 +1,7 @@
 # Birthday Castle image archive
 
+Current world work: [WLD-MAP-001 terrain/location plan](world-layout/README.md),25 landmarks,6 sites and8 terrain regions; proposed coordinates and kit sequence saved. **83 saved selected sheets;86/230 selected/reserved**. No world geometry/meshes validated.
+
 Current composition review: [dressed birthday ballroom](interior-room-kits/INT-BALLROOM-DRESS-001/README.md). Existing asset families reused; no new selected slot or model target. **82 saved selected sheets;85/230 selected/reserved** remain.
 
 Current addition: [ten missing celebration props](interior-celebration-dressing/PAL-CELEBRATION-PROP-001/README.md). **82 selected sheets saved;85/230 selected/reserved;65/65 palace.** Models and placement unverified.
@@ -12,7 +14,7 @@ Current: [original-palace surface/parapet variants](surface-variation-kits/index
 
 Current component work: [12 screenshot-led palace sheets](remaining-palace-kits/index.html), with32 structural sections and64 detail fittings. [Source/reuse audit and remaining issues](remaining-palace-kits/GAPS-AND-REUSE.md). Selected/reserved: **65/65 palace,85/230 total**. References are pending review; no models or verified joins.
 
-This archive contains **730 distinct image files** (658.0 MiB), including the 45 original illustrated boards, later generated concepts, vector drawings, crops, previews and build renders.
+This archive contains **732 distinct image files** (664.9 MiB), including the 45 original illustrated boards, later generated concepts, vector drawings, crops, previews and build renders.
 
 The active palace reference is **GEN-37**, with GEN-03 and GEN-16 as supporting views. Additional studies are retained for review; preservation does not mean approval. The corrected INT-C01 floor uses rose and ivory marble.
 
@@ -60,6 +62,8 @@ Use [the illustrated boards](images/illustrated-boards) to browse the original a
 | [interior-celebration-source-panels](interior-celebration-dressing/README.md) | 9 |
 | [palace-celebration-prop-kits](interior-celebration-dressing/PAL-CELEBRATION-PROP-001/README.md) | 1 |
 | [palace-interior-placement-previews](interior-room-kits/INT-BALLROOM-DRESS-001/README.md) | 1 |
+| [world-terrain-layouts](world-layout/README.md) | 1 |
+| [world-layout-superseded-drafts](world-layout/README.md) | 1 |
 
 All image bytes are unchanged. Identical copies are stored once, with every original path listed in the manifest. Different previews and cropped versions remain separate. Native Blender files, application changes and non-image documents are outside this image-only archive.
 

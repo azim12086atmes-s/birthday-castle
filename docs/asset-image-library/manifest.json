@@ -1,8 +1,8 @@
 {
   "date": "2026-10-13",
-  "distinct_image_count": 730,
+  "distinct_image_count": 732,
   "source_file_count": 969,
-  "total_bytes": 689938899,
+  "total_bytes": 697148713,
   "categories": {
     "additional-generated-studies": 33,
     "component-development-studies": 3,
@@ -43,7 +43,9 @@
     "terminal-tower-rejected-drafts": 1,
     "terminal-tower-source-sections": 4,
     "vector-drawings": 130,
-    "wishing-original-source-panels": 8
+    "wishing-original-source-panels": 8,
+    "world-layout-superseded-drafts": 1,
+    "world-terrain-layouts": 1
   },
   "active_palace_authority": "GEN-37 original front elevation; GEN-03 and GEN-16 supporting views",
   "notes": [
@@ -14807,6 +14809,49 @@
       ],
       "reference_role": "superseded-composition-preview",
       "design_status": "Preserved rejected composition draft",
+      "review_status": "rejected-preserved"
+    },
+    {
+      "id": "WLD-MAP-001",
+      "title": "Starlight Coast \u2014 expanded terrain and location plan",
+      "label": "WLD-MAP-001 \u2014 Starlight Coast \u2014 expanded terrain and location plan",
+      "category": "world-terrain-layouts",
+      "file": "world-layout/WLD-MAP-001.png",
+      "sha256": "42b0df0a16451d3fdc4f41115f970b3de7524c07a58e657597b54603ec73d636",
+      "bytes": 3478934,
+      "source_aliases": [
+        "/workspace/generated_images/exec-f0dcca10-53b1-44da-9234-3e8a27780137.png"
+      ],
+      "alias_ids": [],
+      "component_ids": [],
+      "related_image_ids": [
+        "GEN-04",
+        "GEN-05",
+        "GEN-06",
+        "GEN-37"
+      ],
+      "reference_role": "proposed-world-location-plan",
+      "design_status": "Proposed diagrammatic location/terrain layout; not measured geometry or built game",
+      "review_status": "pending-user-map-review"
+    },
+    {
+      "id": "WLD-MAP-001-R01",
+      "title": "World plan \u2014 rejected oblique first draft",
+      "label": "WLD-MAP-001-R01 \u2014 World plan \u2014 rejected oblique first draft",
+      "category": "world-layout-superseded-drafts",
+      "file": "world-layout/rejected-drafts/WLD-MAP-001-R01.png",
+      "sha256": "b07fd05e94188e7ec0fd5e0c9b2b66b8d8ab0b0c6550774ecc8d8a4a09bc8a3b",
+      "bytes": 3730880,
+      "source_aliases": [
+        "/workspace/generated_images/exec-38097b4c-c965-4817-9bba-2e94b307b9d2.png"
+      ],
+      "alias_ids": [],
+      "component_ids": [],
+      "related_image_ids": [
+        "WLD-MAP-001"
+      ],
+      "reference_role": "superseded-world-plan",
+      "design_status": "Proposed diagrammatic location/terrain layout; not measured geometry or built game",
       "review_status": "rejected-preserved"
     }
   ],

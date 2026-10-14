@@ -1259,6 +1259,21 @@
       "generation_attempts_in_this_pass": 1,
       "component_count": 10,
       "review_notes": "All10 named cells have complete separated silhouettes in the first generated sheet; no new room or duplicate cake/curtain/lantern is added. Illustration scales are independent. Printed dimensions and registry dimensions are proposed human-scale values, not measured geometry. Chair rear surfaces/joinery, vessel interiors, lid seams, cup/saucer separation, tray underside and frame backing/support require model review. A09 holder shows an empty horizontal receiving feature; its actual card slot depth, grip and rear retention must be specified before modeling. No invitation artwork is newly generated. No meshes, support contact, topology, UV/PBR, mesh separation or runtime placement are verified."
+    },
+    {
+      "sheet_id": "WLD-MAP-001",
+      "owner": "maps-magic-travel-and-birthday",
+      "family": "Maps and placements",
+      "title": "Expanded Starlight Coast terrain and location plan",
+      "status": "generated-pending-source-and-user-review",
+      "file": "world-layout/WLD-MAP-001.png",
+      "sha256": "42b0df0a16451d3fdc4f41115f970b3de7524c07a58e657597b54603ec73d636",
+      "generation_attempts_in_this_pass": 2,
+      "retry_reasons": [
+        "Transform rejected oblique panorama into overhead footprint map, remove repeated rock ring and erroneous grid labels"
+      ],
+      "component_count": 0,
+      "review_notes": "R01 was an oblique panorama with standing buildings and inconsistent coordinate ticks. R02 replaces standing buildings with overhead site symbols, uses local hill contours, adds more low beaches and removes the erroneous grid. Both outputs are preserved. B01\u2013B25 and S01\u2013S06 labels are visually present; T01\u2013T08 are defined in region inventory/legend. This label review is not automated spatial/geometry validation. The drawing remains diagrammatic: marker positions, footprint sizes, coastline and bridge-pavilion instance counts are not proven to match layout.json pixel-for-pixel. In particular, the B01 footprint drawing does not visibly establish its printed2.2x1.87km size relative to the whole envelope. Use that value as a proposed reservation, not as a measurement from this image. The main palace reservation does not redefine GEN-37 facade, tower placement, height, stepped wings or roof courtyards. Legacy height/footprint mismatches are recorded; palace geometry remains unresolved separately. Old coordinate conflicts are explicitly proposed relocations for B17/B18/B25/B11. Sky coordinates are horizontal projections only; S03 is an inland lake. No altitude/access/shoreline support geometry is validated. Route lengths are proposed polyline arithmetic, not navigation/collision/terrain-grade or hydrological results. Sea waves are a design appearance, not a tested shader/simulation. Existing GEN-05/06 boards cover other-building vocabulary; no complete architectural kit, foliage mesh, natural-object mesh or world build is produced here."
     }
   ],
   "production_pass": "palace-coverage-missing-only",
@@ -1295,7 +1310,7 @@
     "side_rear_schedule": "palace-side-rear/schedule.json",
     "complete_roof_plan": "palace-roof-plan/schedule.json"
   },
-  "production_pass_status": "Ten missing celebration prop references generated from one original source; private furniture reservation deferred, caps unchanged. No meshes, fit or room placement verified.",
+  "production_pass_status": "World layout pass: one diagrammatic top-down location plan,25 landmark IDs,6 sites,8 terrain regions, source/coordinate discrepancies documented. No new unique mesh targets, kits or game terrain built.",
   "structural_sheet_rule": "Display source-fitted assemblies with existing canonical decor so identity and proportions can be checked. Bare host views are internal construction proposals, not replacements for the original decorated wing references.",
   "generation_paused": true,
   "pause_reason": "Requested roof/stair proposal finished. Painted attempt rejected; coordinate diagram covers33 placements and11 stair links. Source-depth registration remains a layout task.",
@@ -1466,7 +1481,7 @@
     }
   ],
   "component_workflow": "Modular walls first; later stairs, wards/wings, towers and fountain components. Exhaustive palace section inventory later.",
-  "generation_resume_reason": "Owner says Ok lets add after the ten-piece missing-reference audit. Generate references only, one source image at a time; no paid models.",
+  "generation_resume_reason": "Owner authorizes move to world layout after palace reference pass. Existing7.5km map and25 landmark source boards inspected; generate one proposed true top-down layout.",
   "allocation_notes": [
     "Latest owner crops add royal needle with attached turrets and slim star-glass onion gallery; move one unspent interior allowance to tower bodies, keeping palace cap65/world165/total230. Shared existing detail packs cover both; no extra decor sheets.",
     "Owner requests location-specific surface/pillar/stair/parapet variety. Transfer one unspent whole-layout allowance to interior repeat components, keeping65 palace and230 total. Eight packed sheets; original masters reused.",

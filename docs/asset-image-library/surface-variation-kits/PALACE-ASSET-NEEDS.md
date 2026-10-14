@@ -62,3 +62,7 @@ Continuous wall/ward host bodies; roof and floor substrates; angled/curved wing 
 ## Ballroom celebration placement preview
 
 [The dressed ballroom](../interior-room-kits/INT-BALLROOM-DRESS-001/README.md) now shows birthday display, gifts, tea/seating groups, textiles, floral swags and festoons using existing source families. This is a composition preview: exact prop designs/scale, fixture parity, room clearances and physical fit are unverified. No new asset type or selected slot is added. Other interior/structural gaps remain.
+
+## World phase begun
+
+[Terrain/location plan and kit sequence](../world-layout/README.md) now map the other locations without changing palace architecture. Existing palace gaps remain tracked; this pass adds one world-map reference slot. Source/coordinate parity and all world geometry are unverified.
