@@ -25,3 +25,7 @@ The enlarged mainland has outer woodland regions and meadow/stream/pond gaps. Op
 Bounds, proposed rectangle exclusions, cottage-clearing containment and route length arithmetic are checked separately. Ground support, shoreline contours/elevations, slopes, collisions, discovery pacing, navigation and sky-arrival access remain unverified.
 
 **734 archive images**, including originals, crops, drafts and previews; **83 saved selected sheets**, **86/230 selected/reserved**. Palace65/65, world21/165 selected/reserved. Archive count is not the selected-sheet budget.
+
+## First world location kit pass
+
+[West Lantern Forest and Storybook cottage pilot](../world-location-kits/west-lantern-forest/README.md) adds fourpackedreferenceboards and32componenttargets. Trees/plants/rocks/paving/lightsalreadyshownare reused. B12dedicated2/2, twoT05forestslots,230globalcapunchanged. References/roofendgeometryandallmodels/joinsstillpendingreview.

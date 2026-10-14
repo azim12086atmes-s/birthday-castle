@@ -41,3 +41,7 @@ The maps/placements subfamily is capped at4; GEN-04 and WLD-MAP-002 currently us
 ## Cottage and forest reuse
 
 [Forest plan](FOREST-EXPLORATION.md) details three districts and eight placements. Keep the existing8-sheetT05 forest allowance. Audit canopy/understory/ground cover, soil/path/stream transitions, rocks/roots and small trail objects before generating more. ReuseB12 cottage modules for gable/corner/porch variants; human-size cottage details remain independent of the giant palace scale.
+
+## First world location kit pass
+
+[West Lantern Forest and Storybook cottage pilot](../world-location-kits/west-lantern-forest/README.md) adds fourpackedreferenceboards and32componenttargets. Trees/plants/rocks/paving/lightsalreadyshownare reused. B12dedicated2/2, twoT05forestslots,230globalcapunchanged. References/roofendgeometryandallmodels/joinsstillpendingreview.

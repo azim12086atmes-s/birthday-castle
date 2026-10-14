@@ -1,8 +1,8 @@
 {
   "date": "2026-10-13",
-  "distinct_image_count": 734,
+  "distinct_image_count": 743,
   "source_file_count": 969,
-  "total_bytes": 703896854,
+  "total_bytes": 721002049,
   "categories": {
     "additional-generated-studies": 33,
     "component-development-studies": 3,
@@ -45,6 +45,10 @@
     "vector-drawings": 130,
     "wishing-original-source-panels": 8,
     "world-layout-superseded-drafts": 2,
+    "world-location-detail-kits": 2,
+    "world-location-source-panels": 2,
+    "world-location-structural-kits": 2,
+    "world-location-superseded-drafts": 3,
     "world-terrain-layouts": 2
   },
   "active_palace_authority": "GEN-37 original front elevation; GEN-03 and GEN-16 supporting views",
@@ -14896,6 +14900,228 @@
       "reference_role": "superseded-world-plan",
       "design_status": "Proposed forest/cottage world layout; diagrammatic and not built game geometry",
       "review_status": "rejected-preserved"
+    },
+    {
+      "id": "B12-STRUCT-001",
+      "title": "Storybook cottage \u2014 joinable structure",
+      "label": "B12-STRUCT-001 \u2014 Storybook cottage \u2014 joinable structure",
+      "category": "world-location-structural-kits",
+      "file": "world-location-kits/west-lantern-forest/B12-STRUCT-001/B12-STRUCT-001.png",
+      "bytes": 2345220,
+      "sha256": "d6aa699675ea064a2c2fff01ecfc0ae313b55dcbba86d3046f3f56647848c574",
+      "source_aliases": [
+        "/workspace/generated_images/exec-4698f217-edab-4b33-8306-6e950ca8a43f.png"
+      ],
+      "alias_ids": [],
+      "component_ids": [
+        "B12-STRUCT-001-S01",
+        "B12-STRUCT-001-S02",
+        "B12-STRUCT-001-S03",
+        "B12-STRUCT-001-S04"
+      ],
+      "related_image_ids": [
+        "SRC-SURF-B12-STORYBOOK-COTTAGE",
+        "GEN-06",
+        "GEN-27"
+      ],
+      "reference_role": "modular-location-component-sheet",
+      "design_status": "Reference design; proposed dimensions/hidden geometry, not approved3D fit",
+      "review_status": "pending-user-reference-review"
+    },
+    {
+      "id": "B12-STRUCT-001-R01",
+      "title": "Storybook cottage \u2014 joinable structure \u2014 superseded first draft",
+      "label": "B12-STRUCT-001-R01 \u2014 Storybook cottage \u2014 joinable structure \u2014 superseded first draft",
+      "category": "world-location-superseded-drafts",
+      "file": "world-location-kits/west-lantern-forest/B12-STRUCT-001/rejected-drafts/B12-STRUCT-001-R01.png",
+      "bytes": 2420711,
+      "sha256": "e31a036e5cf9d0fb146ad9732ead1b2b9099b63da6062606ab1fe2801d62e32a",
+      "source_aliases": [
+        "/workspace/generated_images/exec-fcb36cc7-89e4-4783-a201-4103dfce8735.png"
+      ],
+      "alias_ids": [],
+      "component_ids": [],
+      "related_image_ids": [
+        "B12-STRUCT-001"
+      ],
+      "reference_role": "superseded-location-kit",
+      "design_status": "Reference design; proposed dimensions/hidden geometry, not approved3D fit",
+      "review_status": "rejected-preserved"
+    },
+    {
+      "id": "B12-DETAIL-001",
+      "title": "Storybook cottage \u2014 fittings and finish kit",
+      "label": "B12-DETAIL-001 \u2014 Storybook cottage \u2014 fittings and finish kit",
+      "category": "world-location-detail-kits",
+      "file": "world-location-kits/west-lantern-forest/B12-DETAIL-001/B12-DETAIL-001.png",
+      "bytes": 2140061,
+      "sha256": "daac9938457fba23c21a98af9df7c931e7d1889bce3f84b695da335c53239638",
+      "source_aliases": [
+        "/workspace/generated_images/exec-0c2b4c10-88c2-471b-a386-3277f27926cb.png"
+      ],
+      "alias_ids": [],
+      "component_ids": [
+        "B12-DETAIL-001-D01",
+        "B12-DETAIL-001-D02",
+        "B12-DETAIL-001-D03",
+        "B12-DETAIL-001-D04",
+        "B12-DETAIL-001-D05",
+        "B12-DETAIL-001-D06",
+        "B12-DETAIL-001-D07",
+        "B12-DETAIL-001-D08",
+        "B12-DETAIL-001-D09",
+        "B12-DETAIL-001-D10",
+        "B12-DETAIL-001-D11",
+        "B12-DETAIL-001-D12"
+      ],
+      "related_image_ids": [
+        "SRC-SURF-B12-STORYBOOK-COTTAGE",
+        "GEN-06",
+        "GEN-27"
+      ],
+      "reference_role": "modular-location-component-sheet",
+      "design_status": "Reference design; proposed dimensions/hidden geometry, not approved3D fit",
+      "review_status": "pending-user-reference-review"
+    },
+    {
+      "id": "F02-TRAIL-001",
+      "title": "West Lantern Forest \u2014 woodland trail sections",
+      "label": "F02-TRAIL-001 \u2014 West Lantern Forest \u2014 woodland trail sections",
+      "category": "world-location-structural-kits",
+      "file": "world-location-kits/west-lantern-forest/F02-TRAIL-001/F02-TRAIL-001.png",
+      "bytes": 2292730,
+      "sha256": "8028736716650261a5596239acc9c3a4d58b8faa93d13416832ab852b13622a1",
+      "source_aliases": [
+        "/workspace/generated_images/exec-94fb070b-5ec1-449c-a6e6-a4b9eee818e1.png"
+      ],
+      "alias_ids": [],
+      "component_ids": [
+        "F02-TRAIL-001-S01",
+        "F02-TRAIL-001-S02",
+        "F02-TRAIL-001-S03",
+        "F02-TRAIL-001-S04"
+      ],
+      "related_image_ids": [
+        "SRC-WEST-STREAMBANK",
+        "GEN-13",
+        "GEN-21",
+        "WLD-MAP-002"
+      ],
+      "reference_role": "modular-location-component-sheet",
+      "design_status": "Reference design; proposed dimensions/hidden geometry, not approved3D fit",
+      "review_status": "pending-user-reference-review"
+    },
+    {
+      "id": "F02-TRAIL-001-R01",
+      "title": "West Lantern Forest \u2014 woodland trail sections \u2014 superseded first draft",
+      "label": "F02-TRAIL-001-R01 \u2014 West Lantern Forest \u2014 woodland trail sections \u2014 superseded first draft",
+      "category": "world-location-superseded-drafts",
+      "file": "world-location-kits/west-lantern-forest/F02-TRAIL-001/rejected-drafts/F02-TRAIL-001-R01.png",
+      "bytes": 2416915,
+      "sha256": "5c069b9aa2701106a998e0f143f08c484d489cdfe1ab05e57e665c7a96a6bc5f",
+      "source_aliases": [
+        "/workspace/generated_images/exec-2d74df11-bc4f-441d-a68f-997a39eb5244.png"
+      ],
+      "alias_ids": [],
+      "component_ids": [],
+      "related_image_ids": [
+        "F02-TRAIL-001"
+      ],
+      "reference_role": "superseded-location-kit",
+      "design_status": "Reference design; proposed dimensions/hidden geometry, not approved3D fit",
+      "review_status": "rejected-preserved"
+    },
+    {
+      "id": "F02-NATURE-001",
+      "title": "West Lantern Forest \u2014 missing natural objects and wild plants",
+      "label": "F02-NATURE-001 \u2014 West Lantern Forest \u2014 missing natural objects and wild plants",
+      "category": "world-location-detail-kits",
+      "file": "world-location-kits/west-lantern-forest/F02-NATURE-001/F02-NATURE-001.png",
+      "bytes": 2442500,
+      "sha256": "77378d73b4f283dc315be7a8b3f87843f8b02d63b2633618a701c7b60eba708d",
+      "source_aliases": [
+        "/workspace/generated_images/exec-7017eae4-88a6-4aef-a079-687b06f49c21.png"
+      ],
+      "alias_ids": [],
+      "component_ids": [
+        "F02-NATURE-001-A01",
+        "F02-NATURE-001-A02",
+        "F02-NATURE-001-A03",
+        "F02-NATURE-001-A04",
+        "F02-NATURE-001-A05",
+        "F02-NATURE-001-A06",
+        "F02-NATURE-001-A07",
+        "F02-NATURE-001-A08",
+        "F02-NATURE-001-A09",
+        "F02-NATURE-001-A10",
+        "F02-NATURE-001-A11",
+        "F02-NATURE-001-A12"
+      ],
+      "related_image_ids": [
+        "GEN-13",
+        "GEN-13",
+        "GEN-21",
+        "WLD-MAP-002"
+      ],
+      "reference_role": "modular-location-component-sheet",
+      "design_status": "Reference design; proposed dimensions/hidden geometry, not approved3D fit",
+      "review_status": "pending-user-reference-review"
+    },
+    {
+      "id": "F02-NATURE-001-R01",
+      "title": "West Lantern Forest \u2014 missing natural objects and wild plants \u2014 superseded first draft",
+      "label": "F02-NATURE-001-R01 \u2014 West Lantern Forest \u2014 missing natural objects and wild plants \u2014 superseded first draft",
+      "category": "world-location-superseded-drafts",
+      "file": "world-location-kits/west-lantern-forest/F02-NATURE-001/rejected-drafts/F02-NATURE-001-R01.png",
+      "bytes": 2599111,
+      "sha256": "a4ca1ff6ae3b6ea14ffa6af49f7feac28f1fcff7696ff1f7021a409a3b3a9469",
+      "source_aliases": [
+        "/workspace/generated_images/exec-9f4e8259-06d4-4ff9-bbb1-5e8fdd7afb16.png"
+      ],
+      "alias_ids": [],
+      "component_ids": [],
+      "related_image_ids": [
+        "F02-NATURE-001"
+      ],
+      "reference_role": "superseded-location-kit",
+      "design_status": "Reference design; proposed dimensions/hidden geometry, not approved3D fit",
+      "review_status": "rejected-preserved"
+    },
+    {
+      "id": "SRC-WEST-B12-VILLAGE",
+      "title": "B12-village-original",
+      "label": "SRC-WEST-B12-VILLAGE \u2014 B12-village-original",
+      "category": "world-location-source-panels",
+      "file": "world-location-kits/west-lantern-forest/source/B12-village-original.png",
+      "bytes": 174257,
+      "sha256": "ea08935f7b8c7cd15c3afe8885e26f53a198ed2f03982820d30f0246d4717b9d",
+      "source_aliases": [],
+      "alias_ids": [],
+      "component_ids": [],
+      "related_image_ids": [
+        "GEN-06"
+      ],
+      "reference_role": "direct-original-source-panel",
+      "design_status": "Reference design; proposed dimensions/hidden geometry, not approved3D fit",
+      "review_status": "source-extraction-unchanged"
+    },
+    {
+      "id": "SRC-WEST-STREAMBANK",
+      "title": "mossy-streambank-original",
+      "label": "SRC-WEST-STREAMBANK \u2014 mossy-streambank-original",
+      "category": "world-location-source-panels",
+      "file": "world-location-kits/west-lantern-forest/source/mossy-streambank-original.png",
+      "bytes": 273690,
+      "sha256": "d0855f802ba6a043423601621d1b641781f32720c340fcd29aa7683afad391d2",
+      "source_aliases": [],
+      "alias_ids": [],
+      "component_ids": [],
+      "related_image_ids": [
+        "GEN-21"
+      ],
+      "reference_role": "direct-original-source-panel",
+      "design_status": "Reference design; proposed dimensions/hidden geometry, not approved3D fit",
+      "review_status": "source-extraction-unchanged"
     }
   ],
   "label_schema_version": 1

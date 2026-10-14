@@ -161,7 +161,7 @@
       "name": "Storybook Village",
       "dedicated_sheet_cap": 2,
       "scope": "Source-dependent structure/component views plus a packed decor sheet; reuse shared parts",
-      "status": "pending-source-audit; no new generation approved by count alone"
+      "status": "Two pilotsheetsgenerated,source/parityandmodelreviewpending; completecitykitnotclaimed"
     },
     {
       "location_id": "B13",
@@ -1274,6 +1274,77 @@
       ],
       "component_count": 0,
       "review_notes": "Manual visual review finds three named forest districtsF01\u2013F03, all eight cottage tagsFC01\u2013FC08, three trail labelsFT01\u2013FT03, three pond/stream nodesFD01\u2013FD03, the original25 landmark IDs and six special-site IDs. First attempt omittedFC03; a single-reference local revision adds its clearing. Both attempts and original inputs remain saved. The image is diagrammatic. Printed12km envelope and2.5km palace width are planning labels, not verified pixel scale. Core symbols, forests, shorelines, routes and cottage markers are not proven to matchJSON coordinates or dimensions. Use the indexes for proposed numeric anchors, not measurements from the drawing. B01 remains2500m wide with2125m provisional depth; no palace height, human-size prop or other-landmark dimension is scaled. GEN-37 remains palace architectural authority. This map does not establish roof/wing/tower geometry. FC01\u2013FC08 are cottage placement IDs usingB12 vocabulary, not eight new model families or completed architectural kits. Proposed12x9m/8m-high cottage dimensions are for human-scale planning. No cottage, foliage, terrain or other3D asset is produced. The enlarged mainland has outer woodland regions and meadow/stream/pond gaps. Open southern coasts and sea remain; highlands are localized. The visual sea/foam treatment is not a tested simulation; local cliff shading is artistic rather than measured topography. Bounds, proposed rectangle exclusions, cottage-clearing containment and route length arithmetic are checked separately. Ground support, shoreline contours/elevations, slopes, collisions, discovery pacing, navigation and sky-arrival access remain unverified."
+    },
+    {
+      "sheet_id": "B12-STRUCT-001",
+      "owner": "other-map-buildings",
+      "family": "B12",
+      "title": "Storybook cottage \u2014 joinable structure",
+      "status": "generated-pending-source-and-user-review",
+      "file": "world-location-kits/west-lantern-forest/B12-STRUCT-001/B12-STRUCT-001.png",
+      "sha256": "d6aa699675ea064a2c2fff01ecfc0ae313b55dcbba86d3046f3f56647848c574",
+      "generation_attempts_in_this_pass": 2,
+      "retry_reasons": [
+        "S01/S02 incorrectlyincludegabledroofs; replace withflat repeatablewall panels, stripblockingroofendornament"
+      ],
+      "component_count": 4,
+      "review_notes": "Allfour named hostsections arepresent. First attempt addedgabledroofstoeverywallbay; secondrevisionseparatesflatS01/S02wallbays,S03upperendwall andS04roof. S04 smallfront/backsketchesstill readassolidwoodtriangles despiteopen-endtext. Theyareambiguous, NOTapprovedendclosuregeometry. Constructtwoplaneproceduralroofsubstratefrominterfaces; removeanyendinfillbeforejoiningrepeats. Do not use the smallend sketchesasopeningmasks. S03iso/backsketchrakingdetailsarenot exactparityevidence.30cmwallthickness,storeyheight,door/windowcutsandroofpitchareproposed; squareendposts/stonefeetmayoverlapwhenrepeated. Cornersealing,floors,rooflining,chimneyflashing,backsandactualsnapfitneedmodellingreview.",
+      "location_ids": [
+        "B12"
+      ]
+    },
+    {
+      "sheet_id": "B12-DETAIL-001",
+      "owner": "other-map-buildings",
+      "family": "B12",
+      "title": "Storybook cottage \u2014 fittings and finish kit",
+      "status": "generated-pending-source-and-user-review",
+      "file": "world-location-kits/west-lantern-forest/B12-DETAIL-001/B12-DETAIL-001.png",
+      "sha256": "daac9938457fba23c21a98af9df7c931e7d1889bce3f84b695da335c53239638",
+      "generation_attempts_in_this_pass": 1,
+      "component_count": 12,
+      "review_notes": "Alltwelve labelled fittings aredistinctandfullyframed. Creamstone/carvedoak,blue-violetslate,quietgoldandcrown/leafmotifs agreewiththe reviewedcottagefamily. No newlamp/bench/flowerdesign duplicated. D04shutters are pairedviews, notseparatemeshproof; theircombinedarchedtop/hingepositionmustbefittedtoD03/S01. D01corbel/D11porchposthaveproposedbacking/bearinggeometry. D07repeattexture/overlap, D09chimneybore, D10cornerjunctionandD12signsuspensionremainunverified. D08renderusesafleur/leafcrestwithinthissourcevocabulary ratherthanexactlymatchingallsourcefinials. MainroofappearancecanbebakedorD07geometryadded; avoidduplicatecoplanartiles.",
+      "location_ids": [
+        "B12"
+      ]
+    },
+    {
+      "sheet_id": "F02-TRAIL-001",
+      "owner": "terrain-water-and-planting",
+      "family": "Forest and Mother Tree environs",
+      "title": "West Lantern Forest \u2014 woodland trail sections",
+      "status": "generated-pending-source-and-user-review",
+      "file": "world-location-kits/west-lantern-forest/F02-TRAIL-001/F02-TRAIL-001.png",
+      "sha256": "8028736716650261a5596239acc9c3a4d58b8faa93d13416832ab852b13622a1",
+      "generation_attempts_in_this_pass": 2,
+      "retry_reasons": [
+        "S03 incorrectlyhasfourpathbranches; make threeportTjunction inmainandtopviews"
+      ],
+      "component_count": 4,
+      "review_notes": "Allfour modulesarepresent. FirstS03wasfourwaycross; secondrevisionclearlydraws aclosedSouthboundaryintheTjunctiontopview. Referenceuses6mextent/3mwalkinglaneswith50cmproposedsubstratedepth, reconciledinCSV/JSON. Portcentres/widthsarecontracts, notmeasurementsfrompaintedviews. Cliff/soilfacesbelongbelowterrainratherthanraisedpedestalsinworld. Moss,gravelandwaterarenonmetricappearance. S04bluewaterisatmosphericcontext, notnewwatermesh. Edgeheights,grade,bankdrop,modularUVs,seamtexturesandcollisionclearancesneedactualgeometry. Largelandformswillusesculpting/heightfields, nottilethewhole144km\u00b2withtheseillustratedsquares.",
+      "location_ids": [
+        "F02",
+        "T05"
+      ]
+    },
+    {
+      "sheet_id": "F02-NATURE-001",
+      "owner": "terrain-water-and-planting",
+      "family": "Forest and Mother Tree environs",
+      "title": "West Lantern Forest \u2014 missing natural objects and wild plants",
+      "status": "generated-pending-source-and-user-review",
+      "file": "world-location-kits/west-lantern-forest/F02-NATURE-001/F02-NATURE-001.png",
+      "sha256": "77378d73b4f283dc315be7a8b3f87843f8b02d63b2633618a701c7b60eba708d",
+      "generation_attempts_in_this_pass": 2,
+      "retry_reasons": [
+        "Removeincorrecthumanmarkers andrestoreprintedwidthsto canonicalproposedsmallobjectdimensions"
+      ],
+      "component_count": 12,
+      "review_notes": "Alltwelve labelled groupsarepresent, withtop/side/frontinsets. The revisionremovesincorrectgreyhumanmarkersandrestoresprintedhorizontalproposaldimensions. Independentillustrationscalesarenotphysicaldimensions. Deadwood/stumps/bark/fungi,bramble,bluebell,strawberryandacornsare newsmallwoodlandgapreferences compatiblewithGEN-13naturalcolours. Theyare not exactobjects recoveredfromthatgardenboard. Existingroses,ferns,reeds,lilypads,rocksandexposedrootbankarenotregenerated. A01/A02back/hollowinterior,loggroundcontactandbarkseparationneedreview. A07includesabarkmount; choosecompleteassemblyorsplitfungusfromsupport. A08mushroomstems,A09\u2013A11rootedplantbackfaces, A12individualacornseparation/texture/topologyareunverified. Multi-view drawingsmayvary slightlyinbranch/leafcounts; notorthographicgeometryproof.",
+      "location_ids": [
+        "F02",
+        "T05"
+      ]
     }
   ],
   "production_pass": "palace-coverage-missing-only",
@@ -1310,7 +1381,7 @@
     "side_rear_schedule": "palace-side-rear/schedule.json",
     "complete_roof_plan": "palace-roof-plan/schedule.json"
   },
-  "production_pass_status": "12km forest/cottage expansion map replaces previous selectedmap; three woodland districts/eight cottage instances. Core landmark dimensions and2500m palace width preserved; all3D/terrain/navigation pending.",
+  "production_pass_status": "West LanternForest/B12pilot: fournewpackedreferenceboards,32componenttargets; existingtrees/plants/stones/lamps/pavingreused. Roofendambiguityandphysicalfitpending; no3Dgenerated.",
   "structural_sheet_rule": "Display source-fitted assemblies with existing canonical decor so identity and proportions can be checked. Bare host views are internal construction proposals, not replacements for the original decorated wing references.",
   "generation_paused": true,
   "pause_reason": "Requested roof/stair proposal finished. Painted attempt rejected; coordinate diagram covers33 placements and11 stair links. Source-depth registration remains a layout task.",
@@ -1498,7 +1569,7 @@
     }
   ],
   "component_workflow": "Modular walls first; later stairs, wards/wings, towers and fountain components. Exhaustive palace section inventory later.",
-  "generation_resume_reason": "Owner requests forest exploration and cottage clearings; generate one12km replacement planning image with single earlier map reference.",
+  "generation_resume_reason": "Owner authorizes continuingWestLanternForest/B12pilot. One-by-oneoriginalsourceaudit distinguishesreusablebotany/objectsfrommissingcottagejoinsandwoodlandtrail/scatterreferences.",
   "allocation_notes": [
     "Latest owner crops add royal needle with attached turrets and slim star-glass onion gallery; move one unspent interior allowance to tower bodies, keeping palace cap65/world165/total230. Shared existing detail packs cover both; no extra decor sheets.",
     "Owner requests location-specific surface/pillar/stair/parapet variety. Transfer one unspent whole-layout allowance to interior repeat components, keeping65 palace and230 total. Eight packed sheets; original masters reused.",
@@ -1506,7 +1577,8 @@
     "2026-10-14: INT-R04 bath reservation retired;64/65 palace and84/230 selected/reserved. Interiors remain partially covered; no new slots reserved by audit.",
     "2026-10-14: freed bath slot and deferred unproduced INT-R01 fund ballroom coordinated views plus structural kit; total caps unchanged.",
     "2026-10-14: unproduced PAL-INT-PROP-001 reservation deferred/replaced with PAL-CELEBRATION-PROP-001 for ten requested celebration pieces. Private furniture coverage not claimed complete.",
-    "2026-10-14: WLD-MAP-002 replacesWLD-MAP-001 selected map slot for12km envelope; retain230 total, palace65/world165, forest8 andB12 cap2. Cottage placements reuseB12; no per-instance sheet allowance."
+    "2026-10-14: WLD-MAP-002 replacesWLD-MAP-001 selected map slot for12km envelope; retain230 total, palace65/world165, forest8 andB12 cap2. Cottage placements reuseB12; no per-instance sheet allowance.",
+    "2026-10-14: WestLanternForestpilotusesB12dedicated2/2andtwoT05forestslotswithinexisting8 allowance. Global90/230selected/reserved, palace65/world25. No capincreaseornewslotpercottagedestination."
   ],
   "composition_previews": [
     {

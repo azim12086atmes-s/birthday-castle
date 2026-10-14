@@ -1,0 +1,133 @@
+{
+  "date": "2026-10-14",
+  "location_id": "F02",
+  "related_location_ids": [
+    "B12",
+    "FC04",
+    "FC05",
+    "FC06"
+  ],
+  "sheets": [
+    {
+      "sheet_id": "B12-STRUCT-001",
+      "name": "Storybook cottage \u2014 joinable structure",
+      "owner": "other-map-buildings",
+      "family": "B12",
+      "component_ids": [
+        "B12-STRUCT-001-S01",
+        "B12-STRUCT-001-S02",
+        "B12-STRUCT-001-S03",
+        "B12-STRUCT-001-S04"
+      ],
+      "source_reference_file": "surface-variation-kits/source-panels/B12-storybook-cottage.png"
+    },
+    {
+      "sheet_id": "B12-DETAIL-001",
+      "name": "Storybook cottage \u2014 fittings and finish kit",
+      "owner": "other-map-buildings",
+      "family": "B12",
+      "component_ids": [
+        "B12-DETAIL-001-D01",
+        "B12-DETAIL-001-D02",
+        "B12-DETAIL-001-D03",
+        "B12-DETAIL-001-D04",
+        "B12-DETAIL-001-D05",
+        "B12-DETAIL-001-D06",
+        "B12-DETAIL-001-D07",
+        "B12-DETAIL-001-D08",
+        "B12-DETAIL-001-D09",
+        "B12-DETAIL-001-D10",
+        "B12-DETAIL-001-D11",
+        "B12-DETAIL-001-D12"
+      ],
+      "source_reference_file": "surface-variation-kits/source-panels/B12-storybook-cottage.png"
+    },
+    {
+      "sheet_id": "F02-TRAIL-001",
+      "name": "West Lantern Forest \u2014 woodland trail sections",
+      "owner": "terrain-water-and-planting",
+      "family": "Forest and Mother Tree environs",
+      "component_ids": [
+        "F02-TRAIL-001-S01",
+        "F02-TRAIL-001-S02",
+        "F02-TRAIL-001-S03",
+        "F02-TRAIL-001-S04"
+      ],
+      "source_reference_file": "world-location-kits/west-lantern-forest/source/mossy-streambank-original.png"
+    },
+    {
+      "sheet_id": "F02-NATURE-001",
+      "name": "West Lantern Forest \u2014 missing natural objects and wild plants",
+      "owner": "terrain-water-and-planting",
+      "family": "Forest and Mother Tree environs",
+      "component_ids": [
+        "F02-NATURE-001-A01",
+        "F02-NATURE-001-A02",
+        "F02-NATURE-001-A03",
+        "F02-NATURE-001-A04",
+        "F02-NATURE-001-A05",
+        "F02-NATURE-001-A06",
+        "F02-NATURE-001-A07",
+        "F02-NATURE-001-A08",
+        "F02-NATURE-001-A09",
+        "F02-NATURE-001-A10",
+        "F02-NATURE-001-A11",
+        "F02-NATURE-001-A12"
+      ],
+      "source_reference_file": "images/illustrated-boards/GEN-13.png"
+    }
+  ],
+  "selected_new_sheet_cap": 4,
+  "B12_new_sheet_cap": 2,
+  "T05_new_sheet_cap_this_pass": 2,
+  "global_final_sheet_cap": 230,
+  "original_sources_reused": true,
+  "botany_existing_reuse_ids": [
+    "GEN-09",
+    "GEN-13"
+  ],
+  "models_generated": 0,
+  "room_gate_status": "Reference-kit-only pass; no Function/Form/Runtime gate crossed. Not a room-composition package.",
+  "image_rule": "One source per call;10\u201320 smallobjects or3\u20134 majorstructures per sheet. Names/IDs on sheets explicitly requested byowner.",
+  "scope_limits": "No world terrain build, playable layout, paid model generation or room composition.",
+  "status": "fourreferenceboardsproduced;pendinguserreviewandconstructionverification",
+  "component_targets": 32,
+  "generated_selected_sheets": 4,
+  "selected_or_reserved_global": 90,
+  "review_issues": {
+    "B12-STRUCT-001": {
+      "notes": [
+        "All four named sections are present. The corrected sheet separates flat wall bays S01/S02, upper gable end S03 and roof repeat S04. The first draft added an unwanted roof to each wall bay and is preserved.",
+        "S04\u2019s small front/back sketches still resemble solid wood triangles despite the open-end caption. Do not treat them as approved end closures or opening masks. Build the roof as two backed planes from the proposed interface dimensions, and remove end infill before joining repeats.",
+        "The wall thickness, storey heights, aperture sizes and roof pitch are proposed. Repeated end posts and stone feet may overlap. Floors, corner sealing, roof lining, chimney flashing and view-to-view geometry parity remain unresolved."
+      ],
+      "construction_issue_ids": [
+        "B12-STRUCT-001-S04"
+      ]
+    },
+    "B12-DETAIL-001": {
+      "notes": [
+        "All twelve named fittings are distinct and fully framed. Cream stone, carved oak, blue-violet tiles, restrained gold and crown/leaf motifs follow the reviewed cottage family. No new lamp, bench or flower design is added.",
+        "D04 is a shutter pair, not evidence of separate meshes; its combined arch and hinges must fit D03/S01. Bracket backs, porch bearings, tile overlap, chimney bore, foundation joints and sign suspension require modelling review.",
+        "D08 uses a fleur/leaf crest within the source vocabulary. Use either a baked tile material or added D07 tile geometry, avoiding duplicate surfaces. The planter is empty so existing plants can be reused."
+      ],
+      "construction_issue_ids": []
+    },
+    "F02-TRAIL-001": {
+      "notes": [
+        "All four named sections are present. The revised S03 top view shows a T junction with its south edge closed by soil; the rejected crossing remains archived.",
+        "The proposed patch extent is 6 m, walking lane width 3 m and substrate depth 0.5 m. Port centres and widths are construction intent, not measurements from the drawing. Place the soil side faces below surrounding terrain.",
+        "S04\u2019s blue water is context, not a separate water asset. Edge heights, bank slopes, textures, seams and collision clearance remain unverified. Large landforms should use sculpting or heightfields; these are local trail appearance references."
+      ],
+      "construction_issue_ids": []
+    },
+    "F02-NATURE-001": {
+      "notes": [
+        "All twelve named groups have main and smaller top/side/front views. The revision removes misleading human markers and aligns printed horizontal dimensions with the proposed component values. Each cell uses its own illustration scale.",
+        "The logs, stumps, bark, fungi, bramble, bluebells, strawberries and acorns are new small woodland references compatible with the existing ecosystem. They are not exact objects extracted from GEN-13. Existing roses, ferns, reeds, lily pads, stones and exposed-root banks are reused.",
+        "Log interiors and resting faces need review. A07 includes a bark mount: retain the assembly or separate the fungus deliberately. Mushroom stems, plant roots and back faces, and individual acorn meshes require checking. Insets are illustrative views, not identical projections of proven geometry."
+      ],
+      "construction_issue_ids": []
+    }
+  }
+}

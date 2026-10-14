@@ -1,0 +1,69 @@
+{
+  "sheet_id": "F02-NATURE-001",
+  "name": "West Lantern Forest \u2014 missing natural objects and wild plants",
+  "owner": "terrain-water-and-planting",
+  "family": "Forest and Mother Tree environs",
+  "source_reference_file": "images/illustrated-boards/GEN-13.png",
+  "source_reference_sha256": "07420c2f8a6edf1b00cd9c0aae4a78abd1959426d4ba5842e0ecf3ec215d51bf",
+  "generation_reference_path": "/workspace/birthday-castle/docs/asset-image-library/world-location-kits/west-lantern-forest/F02-NATURE-001/rejected-drafts/F02-NATURE-001-R01.png",
+  "generator": "image_gen.imagegen",
+  "prompt": "Make aminimal cleanup ofthiswoodland12-itemreferenceboard. Preserve the12objects,theircompleteform, materials, names/IDs,4-column3-rowlayout, andsmallerobjecttop/side/frontviews. REMOVE EVERYGREYHUMANSILHOUETTEorPERSON fromallcells: theymisrepresentthescaleofsmallplantsandmushrooms. DoNOTreplacepeoplewithnewpropsoranimals. Objectsareindependentlyscaledforeachcell. Correct ONLYtheprintedhorizontalwidth/lengthlabels totheseexactproposedvalues: F02-NATURE-001-A01fallenlog3.0m; A02hollowlog2.2m; A03lowcutstump0.7m; A04brokenstump0.8m; A05forkedbranch1.2m; A06barkfragment0.6m; A07bracketfungus0.3m; A08mushroomcluster0.3m; A09bramble0.9m; A10bluebells0.45m; A11strawberryclump0.4m; A12acorns0.2m. Allothertextandsmallviewsremain legible. Addsmallplainfooter \"Objects shown at independent illustration scales / dimensions proposed\". Noothergeometrychanges, no sceniclandscape, no giantnewfungi, no figure, no newasset. Retainlightivorybackgroundandclearnaturalisticstorybookplant/woodforms.",
+  "outputs": [
+    {
+      "file": "world-location-kits/west-lantern-forest/F02-NATURE-001/F02-NATURE-001.png",
+      "sha256": "77378d73b4f283dc315be7a8b3f87843f8b02d63b2633618a701c7b60eba708d",
+      "original_file": "/workspace/generated_images/exec-7017eae4-88a6-4aef-a079-687b06f49c21.png",
+      "actual_input_file": "world-location-kits/west-lantern-forest/F02-NATURE-001/rejected-drafts/F02-NATURE-001-R01.png",
+      "actual_input_sha256": "a4ca1ff6ae3b6ea14ffa6af49f7feac28f1fcff7696ff1f7021a409a3b3a9469",
+      "attempt": 2,
+      "generator": "image_gen.imagegen"
+    }
+  ],
+  "previous_attempts": [
+    {
+      "file": "world-location-kits/west-lantern-forest/F02-NATURE-001/rejected-drafts/F02-NATURE-001-R01.png",
+      "sha256": "a4ca1ff6ae3b6ea14ffa6af49f7feac28f1fcff7696ff1f7021a409a3b3a9469",
+      "original_file": "/workspace/generated_images/exec-9f4e8259-06d4-4ff9-bbb1-5e8fdd7afb16.png",
+      "actual_input_file": "images/illustrated-boards/GEN-13.png",
+      "actual_input_sha256": "07420c2f8a6edf1b00cd9c0aae4a78abd1959426d4ba5842e0ecf3ec215d51bf",
+      "attempt": 1,
+      "generator": "image_gen.imagegen",
+      "prompt": "Create one labelled modular GAME ASSET REFERENCE SHEET, plain lightivory paper, carefullyrendered cleanconcept/studio illustration, evenlighting, fulluncroppedobjects, generouswhitespace between cells. User explicitly requests names/IDs on sheets and packedparts; labels must be outsideobjectsilhouettes, no watermark. Everycell contains one distinctcomponent with readablefront/depth/attachment face, realisticproportions andstraightconstructionedges; no fusedneighbors, distortedextrusions, theatrics, scene background or extraunnamedparts. Consistentmediumdetail, no thinunreadablemicrofiligree. Allsizesareproposals, cellsindependentlyscaled. Title \"F02-NATURE-001 \u2014 WEST LANTERN FOREST \u2014 MISSING NATURAL OBJECTS AND WILD PLANTS\". Useonlysuppliedplantingboardfornaturalgreen/earth/cream/pink-violetstorybookecosystem. DoNOTredrawexistingroses,hedges,ferns,lilypads,reeds,shorelinerocksorroot-bankassembly. Thisisanewsmallwoodlandscatter/wildplantpack for gapobjects namedbelow. Twelvewellseparatedcells4x3, no largecanopytrees,landscape,scenewater,benches,lampsorbuilding. Physicalbark/stems/rootsclear, completewoodfracturesandmushroomstems, restrainednaturalcolours; no neonmagicorfacecarvings. Smallplantsrooted, logsrestingonsmallgroundcontactshadow, nobigsoilpedestals. FullIDandshortnamebeloweach. \nEXACT COMPONENT INVENTORY, noadditionalcells:\nF02-NATURE-001-A01 \u2014 Fallen woodland log: One barkcovered fallenlog, cut ends and smallbrokenbranchstubs, earthbrownwood withmodestmoss patch; flat restingcontact, no intertwinedrootbank orseacoast driftwood.\nF02-NATURE-001-A02 \u2014 Hollow woodland log: One separate hollowbark log with a darkreal openendcavity, visiblewallthickness andcomplete farend/back, restrainedmoss, no doorway sizedforhumans.\nF02-NATURE-001-A03 \u2014 Low cut stump: One lowoak stump with round cuttop showinggrowthrings, shortroots mostlyflush withfoot; minimal moss, complete silhouette.\nF02-NATURE-001-A04 \u2014 Broken woodland stump: One shortnaturallysnapped stump, jaggedsplinteredwood top, barkoutside andshortstablerootfeet; plausiblewood fracture, no carvedface or fantasydoor.\nF02-NATURE-001-A05 \u2014 Forked fallen branch: One completeY-shaped twig/branch withtaperedtips, oakbark, smallfork, threegroundcontact tips, no treecanopy attached.\nF02-NATURE-001-A06 \u2014 Loose bark fragment: One gentlycurved bark slab, fibrousbrown exterior andpalerinnerwoodside, complete backed shape, no rectangular UIlabel carvedintoobject.\nF02-NATURE-001-A07 \u2014 Bracket fungus cluster: Three restrained tan/brown fan-shaped shelf fungi joiningat one smallnaturalflatbark mount; radial growthlines, creamundersides, not glowing jewels or giantfantasyshelves.\nF02-NATURE-001-A08 \u2014 Small mushroom cluster: Three small warmochre/cream mushroomcaps on separatevisible slenderstems with tinysoilrootfoot; full uncroppedstems, plausible roundcaps, no melting intooneblob.\nF02-NATURE-001-A09 \u2014 Woodland bramble: Smalllegible thornless-for-reference bramble bush, archingthin brown canes, darkgreen serratedleaves, fewblackberries and tinycream blossoms; openreadable branching and rootedfoot, no formalrosehedge.\nF02-NATURE-001-A10 \u2014 Bluebell clump: Smallclump ofslendergreen leaves andblue-lavender droopingbellflowers on visiblecurvedstems; groundedrootfoot; no pot, no ornatepalaceflowerstand.\nF02-NATURE-001-A11 \u2014 Wild strawberry clump: Small groundedplant withdistincttrifoliate serratedleaves, a fewcreamflowers andsmallredberries, lowrunnerstems; no hugefruit or fusedleafcarpet.\nF02-NATURE-001-A12 \u2014 Acorn scatter: Three separate intactbrown acorns withtexturedcupcaps, one small emptycap nearby, completeclosed solids with tinycontactfaces; displayas onegroup requiringmeshseparation later.",
+      "rejection_reason": "Invented miniaturehumanfigures implygiantfungi/plants; printedwidths driftfromdeclaredhumanscaleproposals."
+    }
+  ],
+  "component_ids": [
+    "F02-NATURE-001-A01",
+    "F02-NATURE-001-A02",
+    "F02-NATURE-001-A03",
+    "F02-NATURE-001-A04",
+    "F02-NATURE-001-A05",
+    "F02-NATURE-001-A06",
+    "F02-NATURE-001-A07",
+    "F02-NATURE-001-A08",
+    "F02-NATURE-001-A09",
+    "F02-NATURE-001-A10",
+    "F02-NATURE-001-A11",
+    "F02-NATURE-001-A12"
+  ],
+  "new_component_targets": 12,
+  "models_generated": 0,
+  "review_status": "pending-user-reference-and-construction-review",
+  "max_attempts": 2,
+  "source_fidelity": "Source vocabulary preserved; unseen backs, joins, dimensions and woodland gapobjects proposed; not exact recovered geometry",
+  "revision_input_file": "world-location-kits/west-lantern-forest/F02-NATURE-001/rejected-drafts/F02-NATURE-001-R01.png",
+  "revision_input_sha256": "a4ca1ff6ae3b6ea14ffa6af49f7feac28f1fcff7696ff1f7021a409a3b3a9469",
+  "review_notes": [
+    "All twelve named groups have main and smaller top/side/front views. The revision removes misleading human markers and aligns printed horizontal dimensions with the proposed component values. Each cell uses its own illustration scale.",
+    "The logs, stumps, bark, fungi, bramble, bluebells, strawberries and acorns are new small woodland references compatible with the existing ecosystem. They are not exact objects extracted from GEN-13. Existing roses, ferns, reeds, lily pads, stones and exposed-root banks are reused.",
+    "Log interiors and resting faces need review. A07 includes a bark mount: retain the assembly or separate the fungus deliberately. Mushroom stems, plant roots and back faces, and individual acorn meshes require checking. Insets are illustrative views, not identical projections of proven geometry."
+  ],
+  "construction_issue_ids": [],
+  "physical_join_fit_verified": false,
+  "visual_cell_inventory_review": {
+    "expected": 12,
+    "all_named_cells_present": true,
+    "method": "manualinspection ofgeneratedsheet",
+    "view_to_view_geometry_parity_verified": false
+  }
+}

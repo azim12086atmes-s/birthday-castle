@@ -863,3 +863,17 @@ R03 uses plain tower circles and source-reviewed garden symbols. See [garden pla
 | --- | --- |
 | WLD-MAP-002 | [Starlight Coast — forest and cottage exploration plan](world-layout/WLD-MAP-002.png) |
 | WLD-MAP-002-R01 | [Forest expansion — first draft missingFC03](world-layout/rejected-drafts/WLD-MAP-002-R01.png) |
+
+## West Lantern Forest and Storybook cottage pilot
+
+| ID | Reference |
+| --- | --- |
+| B12-STRUCT-001 | [Storybook cottage — joinable structure](world-location-kits/west-lantern-forest/B12-STRUCT-001/B12-STRUCT-001.png) |
+| B12-STRUCT-001-R01 | [Storybook cottage — joinable structure — superseded first draft](world-location-kits/west-lantern-forest/B12-STRUCT-001/rejected-drafts/B12-STRUCT-001-R01.png) |
+| B12-DETAIL-001 | [Storybook cottage — fittings and finish kit](world-location-kits/west-lantern-forest/B12-DETAIL-001/B12-DETAIL-001.png) |
+| F02-TRAIL-001 | [West Lantern Forest — woodland trail sections](world-location-kits/west-lantern-forest/F02-TRAIL-001/F02-TRAIL-001.png) |
+| F02-TRAIL-001-R01 | [West Lantern Forest — woodland trail sections — superseded first draft](world-location-kits/west-lantern-forest/F02-TRAIL-001/rejected-drafts/F02-TRAIL-001-R01.png) |
+| F02-NATURE-001 | [West Lantern Forest — missing natural objects and wild plants](world-location-kits/west-lantern-forest/F02-NATURE-001/F02-NATURE-001.png) |
+| F02-NATURE-001-R01 | [West Lantern Forest — missing natural objects and wild plants — superseded first draft](world-location-kits/west-lantern-forest/F02-NATURE-001/rejected-drafts/F02-NATURE-001-R01.png) |
+| SRC-WEST-B12-VILLAGE | [B12-village-original](world-location-kits/west-lantern-forest/source/B12-village-original.png) |
+| SRC-WEST-STREAMBANK | [mossy-streambank-original](world-location-kits/west-lantern-forest/source/mossy-streambank-original.png) |

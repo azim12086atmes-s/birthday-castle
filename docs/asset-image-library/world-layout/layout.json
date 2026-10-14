@@ -305,10 +305,15 @@
         "GEN-06",
         "GEN-04"
       ],
-      "reference_status": "Existing illustration; complete modular construction/joins not established",
+      "reference_status": "Pilotmodularreferencesgenerated;roofendambiguityandcompletebuildingjoinsunverified",
       "dimension_basis": "Inherited legacy proposed dimensions; not measured or resized by map expansion",
       "dedicated_sheet_cap": 2,
-      "geometry_placement_verified": false
+      "geometry_placement_verified": false,
+      "reviewed_palette": "GEN-06/GEN-27:creamplaster,carvedbrown/goldenwood,blue-violetslate/plumtones,finegoldcrowns/leaves,warmamber/lilacglass",
+      "pilot_reference_sheet_ids": [
+        "B12-STRUCT-001",
+        "B12-DETAIL-001"
+      ]
     },
     {
       "id": "B13",
@@ -814,7 +819,7 @@
       ],
       "terrain_sheet_cap": 8,
       "design_rule": "Mixed canopy, blossom focus at Mother Tree, meadow edges, timber/stone paths and ruins; avoid one tree species everywhere. Additional outerwoodlands use these same shared species families, with region-specific densities and understory; cottage instances reuseB12. Keep existing8-sheet allowance; audit before reallocating.",
-      "status": "Existing vocabulary, regional module/placement audit pending",
+      "status": "Pilotreferencekitsgenerated; regionalterrain/botanyreuseandmodelconstructionstillpending",
       "forest_district_ids": [
         "F01",
         "F02",
@@ -829,6 +834,14 @@
         "FC06",
         "FC07",
         "FC08"
+      ],
+      "generated_reference_sheet_ids": [
+        "F02-TRAIL-001",
+        "F02-NATURE-001"
+      ],
+      "cottage_reference_sheet_ids": [
+        "B12-STRUCT-001",
+        "B12-DETAIL-001"
       ]
     },
     {

@@ -1,6 +1,8 @@
 # Birthday Castle image archive
 
-Current world work: [WLD-MAP-002 forest exploration plan](world-layout/README.md), **12km ×12km**, retaining the2.5km-wide palace,25 landmark families and6 sites. Added3 forest districts and8 cottage clearings; no built terrain/meshes. **83 saved selected sheets;86/230 selected/reserved**.
+Current location work: [West Lantern Forest / Storybook cottages](world-location-kits/west-lantern-forest/README.md): **4 sheets,32 labelled component targets**; existing botany, paving and furnishings reused. **87 saved selected sheets;90/230 selected/reserved;743 archive images**. Roof end closure and physical joins remain unverified; no3D generated.
+
+Previous world-map pass: [WLD-MAP-002 forest exploration plan](world-layout/README.md), **12km ×12km**, retaining the2.5km-wide palace,25 landmark families and6 sites. Added3 forest districts and8 cottage clearings; no built terrain/meshes. **83 saved selected sheets;86/230 selected/reserved**.
 
 Current composition review: [dressed birthday ballroom](interior-room-kits/INT-BALLROOM-DRESS-001/README.md). Existing asset families reused; no new selected slot or model target. **82 saved selected sheets;85/230 selected/reserved** remain.
 
@@ -14,7 +16,7 @@ Current: [original-palace surface/parapet variants](surface-variation-kits/index
 
 Current component work: [12 screenshot-led palace sheets](remaining-palace-kits/index.html), with32 structural sections and64 detail fittings. [Source/reuse audit and remaining issues](remaining-palace-kits/GAPS-AND-REUSE.md). Selected/reserved: **65/65 palace,85/230 total**. References are pending review; no models or verified joins.
 
-This archive contains **734 distinct image files** (671.3 MiB), including the 45 original illustrated boards, later generated concepts, vector drawings, crops, previews and build renders.
+This archive contains **743 distinct image files** (687.6 MiB), including the 45 original illustrated boards, later generated concepts, vector drawings, crops, previews and build renders.
 
 The active palace reference is **GEN-37**, with GEN-03 and GEN-16 as supporting views. Additional studies are retained for review; preservation does not mean approval. The corrected INT-C01 floor uses rose and ivory marble.
 
@@ -64,6 +66,10 @@ Use [the illustrated boards](images/illustrated-boards) to browse the original a
 | [palace-interior-placement-previews](interior-room-kits/INT-BALLROOM-DRESS-001/README.md) | 1 |
 | [world-terrain-layouts](world-layout/README.md) | 2 |
 | [world-layout-superseded-drafts](world-layout/README.md) | 2 |
+| [world-location-structural-kits](world-location-kits/west-lantern-forest/README.md) | 2 |
+| [world-location-detail-kits](world-location-kits/west-lantern-forest/README.md) | 2 |
+| [world-location-source-panels](world-location-kits/west-lantern-forest/README.md) | 2 |
+| [world-location-superseded-drafts](world-location-kits/west-lantern-forest/README.md) | 3 |
 
 All image bytes are unchanged. Identical copies are stored once, with every original path listed in the manifest. Different previews and cropped versions remain separate. Native Blender files, application changes and non-image documents are outside this image-only archive.
 

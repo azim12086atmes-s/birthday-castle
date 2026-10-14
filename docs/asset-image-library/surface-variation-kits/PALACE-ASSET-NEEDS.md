@@ -74,3 +74,7 @@ Continuous wall/ward host bodies; roof and floor substrates; angled/curved wing 
 ## Forest exploration expansion
 
 [WLD-MAP-002](../world-layout/README.md) now proposes a12km envelope around the2.5km-wide palace, with3 woodlands and8 cottage clearings. [Reuse plan and restrictions](../world-layout/FOREST-EXPLORATION.md): B12 cottage family2 dedicated sheets, T05 forest8,230 total unchanged. No palace architecture, existing source files or3D models altered. Cottage/terrain kits still need source audits and missing-component references.
+
+## First world location kit pass
+
+[West Lantern Forest and Storybook cottage pilot](../world-location-kits/west-lantern-forest/README.md) adds fourpackedreferenceboards and32componenttargets. Trees/plants/rocks/paving/lightsalreadyshownare reused. B12dedicated2/2, twoT05forestslots,230globalcapunchanged. References/roofendgeometryandallmodels/joinsstillpendingreview.

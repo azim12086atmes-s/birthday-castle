@@ -1,0 +1,76 @@
+{
+  "status": "Proposed dimensions and ports, not model-fit evidence",
+  "coordinates": "Component modelling Xwidth,Ydepth,Zup; world map usesXeast,Zsouth separately",
+  "cottage_core_m": [
+    6,
+    9,
+    8
+  ],
+  "cottage_reserved_envelope_m": [
+    12,
+    9,
+    8
+  ],
+  "cottage_storey_height_m": 2.6,
+  "cottage_roof_rise_m": 2.8,
+  "wall_bay_pitch_m": 3,
+  "roof_length_pitch_m": 3,
+  "notes": [
+    "Small forest cottage is a proposed adaptation ofsource18m specimen; no claim exactglobalrescale.6x9mcoreplusporch/wingfitswithin12x9mreservation; exactextensionconfigurationpending.",
+    "UseS01twiceper6mwallor3timesper9mwall;S02replacesonegroundentrybay;S03replacesupperendwall;S04repeats3timesalong9mroof. Floor substrate, cornerjoins, opening masks and porchlayout still requireproceduralconstruction.",
+    "D03/D05 fitproposedhost apertures; tiledroofappearance maybe bakedmaterial orD07geometry, not bothduplicatedgeometrically.",
+    "Roofendclosures,chimneyopening/flashing,corner sealing,wall endposts,UVs andcollisions unverified."
+  ],
+  "trail_patch_m": 6,
+  "trail_width_m": 3,
+  "trail_top_datum_m": 0,
+  "trail_ports": {
+    "F02-TRAIL-001-S01": {
+      "N": [
+        3,
+        0
+      ],
+      "S": [
+        3,
+        6
+      ]
+    },
+    "F02-TRAIL-001-S02": {
+      "N": [
+        3,
+        0
+      ],
+      "E": [
+        6,
+        3
+      ]
+    },
+    "F02-TRAIL-001-S03": {
+      "N": [
+        3,
+        0
+      ],
+      "W": [
+        0,
+        3
+      ],
+      "E": [
+        6,
+        3
+      ]
+    },
+    "F02-TRAIL-001-S04": {
+      "W": [
+        0,
+        3
+      ],
+      "E": [
+        6,
+        3
+      ],
+      "water-edge": "northboundary; localbankdrops outsidewalkinglane"
+    }
+  },
+  "trail_note": "Portwidth/centres matchcontract arithmetically; illustration, meshseams, slopesandblendmaterials unverified. Largeworldlandforms useheightfields/sculpting; thesearelocaltrail-edgeappearance references, not144km\u00b2 of tiledslabs.",
+  "trail_substrate_depth_m_proposed": 0.5
+}

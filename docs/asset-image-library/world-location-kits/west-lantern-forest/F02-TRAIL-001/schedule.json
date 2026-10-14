@@ -1,0 +1,61 @@
+{
+  "sheet_id": "F02-TRAIL-001",
+  "name": "West Lantern Forest \u2014 woodland trail sections",
+  "owner": "terrain-water-and-planting",
+  "family": "Forest and Mother Tree environs",
+  "source_reference_file": "world-location-kits/west-lantern-forest/source/mossy-streambank-original.png",
+  "source_reference_sha256": "d0855f802ba6a043423601621d1b641781f32720c340fcd29aa7683afad391d2",
+  "generation_reference_path": "/workspace/birthday-castle/docs/asset-image-library/world-location-kits/west-lantern-forest/F02-TRAIL-001/rejected-drafts/F02-TRAIL-001-R01.png",
+  "generator": "image_gen.imagegen",
+  "prompt": "Perform aMINIMALCONSTRUCTIONCORRECTIONtothisfour-cellwoodlandtrailkit. Preserveallcolours, title, IDs, names, dimensions and the entireS01,S02,S04cellsunchanged. FixONLYthebottomleftS03 THREEWAYTRAILJUNCTION. ItiscurrentlyafourwayCROSS, whichiswrong. InBOTHlargeisometricviewandSMALLTOPVIEWmakeitatrueTjunctionwithEXACTLYTHREEopenpathports. Initsnorth-upflatTOPVIEW: pathwayentersfromTOP/NORTHedgecentreandLEFT/WESTandRIGHT/EASTmidpoints. BOTTOM/SOUTHedgehasNOpath: fillthesouthbranchentirelywiththematchingdarkwoodlandhumusandlowmoss/gravel, continuouswiththetwobottomcornerso thewholebottomedgeisforestsoil. ItmustreadclearlyasletterT, notplus+. InlargeisometricS03viewapplythesameTarrangement: threeopenlanesonly, fourthboundarysoilclosed. Allwalkinglanes3mwide, module6x6m, sameflatsoilsubstrateandcoherentpathcentres. CorrectitsfrontnorthsketchonlyifneededforTgeometry. No trees/buildings/signs added. No otherchangesornewassets. Keepfullclear2x2sheet andfooterjoin geometryproposed.",
+  "outputs": [
+    {
+      "file": "world-location-kits/west-lantern-forest/F02-TRAIL-001/F02-TRAIL-001.png",
+      "sha256": "8028736716650261a5596239acc9c3a4d58b8faa93d13416832ab852b13622a1",
+      "original_file": "/workspace/generated_images/exec-94fb070b-5ec1-449c-a6e6-a4b9eee818e1.png",
+      "actual_input_file": "world-location-kits/west-lantern-forest/F02-TRAIL-001/rejected-drafts/F02-TRAIL-001-R01.png",
+      "actual_input_sha256": "5c069b9aa2701106a998e0f143f08c484d489cdfe1ab05e57e665c7a96a6bc5f",
+      "attempt": 2,
+      "generator": "image_gen.imagegen"
+    }
+  ],
+  "previous_attempts": [
+    {
+      "file": "world-location-kits/west-lantern-forest/F02-TRAIL-001/rejected-drafts/F02-TRAIL-001-R01.png",
+      "sha256": "5c069b9aa2701106a998e0f143f08c484d489cdfe1ab05e57e665c7a96a6bc5f",
+      "original_file": "/workspace/generated_images/exec-2d74df11-bc4f-441d-a68f-997a39eb5244.png",
+      "actual_input_file": "world-location-kits/west-lantern-forest/source/mossy-streambank-original.png",
+      "actual_input_sha256": "d0855f802ba6a043423601621d1b641781f32720c340fcd29aa7683afad391d2",
+      "attempt": 1,
+      "generator": "image_gen.imagegen",
+      "prompt": "Create one labelled modular GAME ASSET REFERENCE SHEET, plain lightivory paper, carefullyrendered cleanconcept/studio illustration, evenlighting, fulluncroppedobjects, generouswhitespace between cells. User explicitly requests names/IDs on sheets and packedparts; labels must be outsideobjectsilhouettes, no watermark. Everycell contains one distinctcomponent with readablefront/depth/attachment face, realisticproportions andstraightconstructionedges; no fusedneighbors, distortedextrusions, theatrics, scene background or extraunnamedparts. Consistentmediumdetail, no thinunreadablemicrofiligree. Allsizesareproposals, cellsindependentlyscaled. Title \"F02-TRAIL-001 \u2014 WEST LANTERN FOREST \u2014 WOODLAND TRAIL SECTIONS\". Useonlysuppliedmossystreambankimagefor earthbrownsoil, warmgreystones andgreenmoss vocabulary. DoNOTcopyitswholelushscene orbuildings. Fourlarge2x2cells, one low6x6m squareterrainpatch in each, slight top-downisometricangle, unobscuredtop. DoNOTput trees,tallplants,buildings,benches,lamps,fountains,staircasesorlargeexposedroots onto path. Tinygravel/leafspeckles andsparsemoss outsidewalkinglanesonly. Show straight,90degreebend,Tjunction,anddrytrailwithnorthpondbank. Each3mwidewalkinglane hasclean matchingedgeportsandflatlevel. Squaresare lowterrainprofileviews, not slabs ofmarble onpedestals. No watermeshpartfusedtoS04. Footer \"6 m patches / 3 m paths / join geometry proposed\". \nEXACT COMPONENT INVENTORY, noadditionalcells:\nF02-TRAIL-001-S01 \u2014 Straight woodland trail: Low6x6m soil patch,3m-wide flat compacted tanearth path crossesN/S throughmidpoints; darksoft woodland humus either side, faintleaflitter/pebbles only, no tallplants/trees, clean equalheight boundary ports.\nF02-TRAIL-001-S02 \u2014 Right angle trail bend: Same6x6m soil patch with broad smooth90degree earthtrail connectingnorthmidedge toeastmidedge,3m wide, centredbendradius3m; flat walking surface, matchingsoil/pathtexture atports, no sharp stair or trunk.\nF02-TRAIL-001-S03 \u2014 Three way trail junction: Same6x6m soil patch,3m-wide trails fromnorth,west,east midpoints meetingasroundedT. Matchinglevelports, no southopening, no tree or sign baked into patch.\nF02-TRAIL-001-S04 \u2014 Trail and pond bank: Same6x6m soil patch:3m wideW/E trail throughmidpoints; lowmoss/gravel shore atN edge, wateroutsideN boundary depictedonlyas small neutralblue swatch beyondcut, no thick waterblock fusedtoasset. Terrain lip/underside visible, shoreslope local, pathremainsdry andflat.",
+      "rejection_reason": "S03 isillustratedasfour-waycrossratherthanthree-wayT; removeonepathbranch."
+    }
+  ],
+  "component_ids": [
+    "F02-TRAIL-001-S01",
+    "F02-TRAIL-001-S02",
+    "F02-TRAIL-001-S03",
+    "F02-TRAIL-001-S04"
+  ],
+  "new_component_targets": 4,
+  "models_generated": 0,
+  "review_status": "pending-user-reference-and-construction-review",
+  "max_attempts": 2,
+  "source_fidelity": "Source vocabulary preserved; unseen backs, joins, dimensions and woodland gapobjects proposed; not exact recovered geometry",
+  "revision_input_file": "world-location-kits/west-lantern-forest/F02-TRAIL-001/rejected-drafts/F02-TRAIL-001-R01.png",
+  "revision_input_sha256": "5c069b9aa2701106a998e0f143f08c484d489cdfe1ab05e57e665c7a96a6bc5f",
+  "review_notes": [
+    "All four named sections are present. The revised S03 top view shows a T junction with its south edge closed by soil; the rejected crossing remains archived.",
+    "The proposed patch extent is 6 m, walking lane width 3 m and substrate depth 0.5 m. Port centres and widths are construction intent, not measurements from the drawing. Place the soil side faces below surrounding terrain.",
+    "S04\u2019s blue water is context, not a separate water asset. Edge heights, bank slopes, textures, seams and collision clearance remain unverified. Large landforms should use sculpting or heightfields; these are local trail appearance references."
+  ],
+  "construction_issue_ids": [],
+  "physical_join_fit_verified": false,
+  "visual_cell_inventory_review": {
+    "expected": 4,
+    "all_named_cells_present": true,
+    "method": "manualinspection ofgeneratedsheet",
+    "view_to_view_geometry_parity_verified": false
+  }
+}

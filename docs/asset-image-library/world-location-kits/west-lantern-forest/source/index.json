@@ -1,0 +1,36 @@
+{
+  "panels": [
+    {
+      "image_id": "SRC-WEST-B12-VILLAGE",
+      "name": "B12-village-original",
+      "source_id": "GEN-06",
+      "source_file": "images/illustrated-boards/GEN-06.png",
+      "source_sha256": "badad1f8f413ed3fdfb0f83f6764ee6789bb85255474eab7a6e15a120628c051",
+      "source_box_xyxy": [
+        329,
+        57,
+        653,
+        325
+      ],
+      "file": "world-location-kits/west-lantern-forest/source/B12-village-original.png",
+      "sha256": "ea08935f7b8c7cd15c3afe8885e26f53a198ed2f03982820d30f0246d4717b9d",
+      "role": "Exact source pixels; source panel not an object mask or new design"
+    },
+    {
+      "image_id": "SRC-WEST-STREAMBANK",
+      "name": "mossy-streambank-original",
+      "source_id": "GEN-21",
+      "source_file": "images/illustrated-boards/GEN-21.png",
+      "source_sha256": "d20e6fc8e6b02fa67a8fb69e20f2814a83a58a8e19981c605a9df5c4fef25559",
+      "source_box_xyxy": [
+        5,
+        524,
+        506,
+        787
+      ],
+      "file": "world-location-kits/west-lantern-forest/source/mossy-streambank-original.png",
+      "sha256": "d0855f802ba6a043423601621d1b641781f32720c340fcd29aa7683afad391d2",
+      "role": "Exact source pixels; source panel not an object mask or new design"
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "sheet_id": "B12-STRUCT-001",
+  "name": "Storybook cottage \u2014 joinable structure",
+  "owner": "other-map-buildings",
+  "family": "B12",
+  "source_reference_file": "surface-variation-kits/source-panels/B12-storybook-cottage.png",
+  "source_reference_sha256": "c535f494f165ab0082afadb8fc7fa2267e11046526734530d4e7769a0843063c",
+  "generation_reference_path": "/workspace/birthday-castle/docs/asset-image-library/world-location-kits/west-lantern-forest/B12-STRUCT-001/rejected-drafts/B12-STRUCT-001-R01.png",
+  "generator": "image_gen.imagegen",
+  "prompt": "Correct this labelled four-cell cottage structural kit, preserving its cream plaster, carvedoak, blue-violetslate andgiltpalette, IDs, names andoverallclean2x2sheetlayout. CRITICAL CONSTRUCTION CORRECTIONS:\nS01 WINDOW WALL BAY andS02 ENTRANCE WALL BAY mustbeFLAT-TOPPEDRECTANGULARWALLPANELS. REMOVE ENTIRETRIANGULARGABLE, BLUE ROOF TILES, EAVEFASCIA, CROWN AND RIDGEFINIAL fromBOTH topcells. Their postsandplasterfinishmeetonestraighthorizontalwoodtopbeam. Theyareordinary3m-wide,2.6m-high,0.3m-thickstoreywall sections, withvertical endpostcontacts andflatbottom. Retain the sourcearchedemptyopeningandcarvedbracket/timber details BELOWtheflatbeam. S01 emptyactualthroughwindow1.2x1.4m, sill0.8m. S02actualemptydoorway1.0x2.1m withthreshold. Fixbothsmallerfront/endprofile sketches toshowflatrectangulartoptoo. NOminiaturegableorroof onS01/S02. Theyrepeatunderupperstoreyorroof; thatisthepointofmodularity.\nS03 UPPER GABLE END keepsits6m-wide2.6mrectangularupperwall+2.8mtriangulargable,5.4mtotalheight, withcarvedoak/creamplasterandarchedatticopening. Itisanendwall ONLY; showwoodrafteredge/barebargeboardprofile WITHOUTblueshingledroof attachedtoit. No freestandinggablefinialpartfusedtohost.\nS04 GABLED ROOF REPEAT keeps6mspan/3mlength/2.8mriseandbluevioletscallopedtileroofappearance. REMOVE ALLridgefinials/crowns, ornateendgableframing, goldendfascia/crossbeams thatwouldblockjoiningatfront/rear. Showopenunclosedplaincutfrontandrearroofendplanes andclearthinbackedunderside. Straightcontinuousridgeat3mlength, consistenttilecourses, noarchedwall. Roofenddecor isaddedonlyatthefinalassemblyends usingdetailkit, notbakedontoeachrepeat. Updateitsfront/back sketches toreflectopenunornamentedendprofiles. Plainmodularedgesareallowed; sourcecharactersurvivesinthewood/tile/materialpalette.\nEnsure allfourfulluncroppedhostcomponentsseparatedinowncells. Shortlabelsanddimensionsremain, footer3mrepeat/6mroofspan/hiddenjoinsproposed. No assembledcottage, no surroundinggarden, no extraobjects. Onlythese4modules.",
+  "outputs": [
+    {
+      "file": "world-location-kits/west-lantern-forest/B12-STRUCT-001/B12-STRUCT-001.png",
+      "sha256": "d6aa699675ea064a2c2fff01ecfc0ae313b55dcbba86d3046f3f56647848c574",
+      "original_file": "/workspace/generated_images/exec-4698f217-edab-4b33-8306-6e950ca8a43f.png",
+      "actual_input_file": "world-location-kits/west-lantern-forest/B12-STRUCT-001/rejected-drafts/B12-STRUCT-001-R01.png",
+      "actual_input_sha256": "e31a036e5cf9d0fb146ad9732ead1b2b9099b63da6062606ab1fe2801d62e32a",
+      "attempt": 2,
+      "generator": "image_gen.imagegen"
+    }
+  ],
+  "previous_attempts": [
+    {
+      "file": "world-location-kits/west-lantern-forest/B12-STRUCT-001/rejected-drafts/B12-STRUCT-001-R01.png",
+      "sha256": "e31a036e5cf9d0fb146ad9732ead1b2b9099b63da6062606ab1fe2801d62e32a",
+      "original_file": "/workspace/generated_images/exec-fcb36cc7-89e4-4783-a201-4103dfce8735.png",
+      "actual_input_file": "surface-variation-kits/source-panels/B12-storybook-cottage.png",
+      "actual_input_sha256": "c535f494f165ab0082afadb8fc7fa2267e11046526734530d4e7769a0843063c",
+      "attempt": 1,
+      "generator": "image_gen.imagegen",
+      "prompt": "Create one labelled modular GAME ASSET REFERENCE SHEET, plain lightivory paper, carefullyrendered cleanconcept/studio illustration, evenlighting, fulluncroppedobjects, generouswhitespace between cells. User explicitly requests names/IDs on sheets and packedparts; labels must be outsideobjectsilhouettes, no watermark. Everycell contains one distinctcomponent with readablefront/depth/attachment face, realisticproportions andstraightconstructionedges; no fusedneighbors, distortedextrusions, theatrics, scene background or extraunnamedparts. Consistentmediumdetail, no thinunreadablemicrofiligree. Allsizesareproposals, cellsindependentlyscaled. Title \"B12-STRUCT-001 \u2014 STORYBOOK COTTAGE \u2014 JOINABLE STRUCTURE\". UseonlysuppliedGEN-27 cottagepanel for creamplaster, warmcarvedoak, indigo/blue-violetscallopedslateroof, restrainedgiltstars/crowns andarchedopenings. Keep cottageappearance, not palaceGothicmarble. Fourlargecells2x2; eachshowsonecompleteisometriccomponent withsmalleruncolouredconnection/endprofile ifnecessary. Noassembledwholecottage or landscape. S01andS02 aperturesareEMPTY actualholes showingbackgroundthroughreveals. S03iswallonlywithoutroof; S04roofonlywithoutwall. Clearlyshowthegabletriangle, coherentpitch, andendplanes. Subtlerimlightforbacksurfaces. Footer \"3 m repeat / 6 m roof span / hidden joins proposed\". \nEXACT COMPONENT INVENTORY, noadditionalcells:\nB12-STRUCT-001-S01 \u2014 Window wall bay: 3m-wide cream plaster/oak-frame wall, visible30cm thickness, round-topped1.2x1.4m aperture, sill0.8m above floor. Show an actual empty through opening, no flat painted false window. End posts meet at3m pitch; glass/frameD03 installed later. Warm stone plinth atfoot; restrained source timber lattice, no palace marble.\nB12-STRUCT-001-S02 \u2014 Entrance wall bay: Matching3m wall bay with actual round-headed doorway1.0m clearwidth,2.1m height, visible reveal/threshold; empty aperture, no decorative arch pasted onto a closedwall. DoorD05 attaches later; same posts/plinth asS01. Small cottage door exception to grand-hall sizing.\nB12-STRUCT-001-S03 \u2014 Upper gable end: Full6m-wide upper gable wall:2.6m rectangular wall plus2.8m steep triangular gable, maximum5.4m high measured from upper-floor base. Cream infill, source brown timber diagonals and fine gold carved brackets; small centred arched attic aperture with real depth, no fusedroof or sidewing. Roof pitch matchesS04. End-only module; not stacked atop another upper endwall.\nB12-STRUCT-001-S04 \u2014 Gabled roof repeat: Complete symmetric steep double-pitch roof shell6m span,3m length,2.8m ridgeheight aboveeaves; thin backed roof surfaces, visible underside/eave, source blue/violet scallop-tile appearance and modest gilded edge. Open front/rear end planes align at3m length; end wallS03 closes them. Straight ridge, no bent tile rows or tower spire; removablecrestD08.",
+      "rejection_reason": "S01/S02 haveinventedgabledroofs/finials instead offlat repeatablewall bays; roofrepeat also needsopenplainendinterfaces."
+    }
+  ],
+  "component_ids": [
+    "B12-STRUCT-001-S01",
+    "B12-STRUCT-001-S02",
+    "B12-STRUCT-001-S03",
+    "B12-STRUCT-001-S04"
+  ],
+  "new_component_targets": 4,
+  "models_generated": 0,
+  "review_status": "pending-user-reference-and-construction-review",
+  "max_attempts": 2,
+  "source_fidelity": "Source vocabulary preserved; unseen backs, joins, dimensions and woodland gapobjects proposed; not exact recovered geometry",
+  "revision_input_file": "world-location-kits/west-lantern-forest/B12-STRUCT-001/rejected-drafts/B12-STRUCT-001-R01.png",
+  "revision_input_sha256": "e31a036e5cf9d0fb146ad9732ead1b2b9099b63da6062606ab1fe2801d62e32a",
+  "review_notes": [
+    "All four named sections are present. The corrected sheet separates flat wall bays S01/S02, upper gable end S03 and roof repeat S04. The first draft added an unwanted roof to each wall bay and is preserved.",
+    "S04\u2019s small front/back sketches still resemble solid wood triangles despite the open-end caption. Do not treat them as approved end closures or opening masks. Build the roof as two backed planes from the proposed interface dimensions, and remove end infill before joining repeats.",
+    "The wall thickness, storey heights, aperture sizes and roof pitch are proposed. Repeated end posts and stone feet may overlap. Floors, corner sealing, roof lining, chimney flashing and view-to-view geometry parity remain unresolved."
+  ],
+  "construction_issue_ids": [
+    "B12-STRUCT-001-S04"
+  ],
+  "physical_join_fit_verified": false,
+  "visual_cell_inventory_review": {
+    "expected": 4,
+    "all_named_cells_present": true,
+    "method": "manualinspection ofgeneratedsheet",
+    "view_to_view_geometry_parity_verified": false
+  }
+}

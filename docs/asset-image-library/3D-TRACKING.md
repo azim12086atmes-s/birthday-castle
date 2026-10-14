@@ -78,3 +78,7 @@ WLD-MAP-001 is a planning image, not a mesh-generation target. World-layout/loca
 ## Forest/cottage planning IDs
 
 WLD-MAP-002 replaces the selected world map and adds F01–F03 districts, FC01–FC08 cottage placements, FT01–FT03 trails and FD01–FD03 water/discovery nodes. These are placement/route IDs, not model targets. Cottage instances reuse futureB12 modular references. No additional meshes, paid service calls or new model IDs in this pass.
+
+## West Lantern Forest / B12 pilot
+
+[32 component IDs and proposed model filenames](world-location-kits/west-lantern-forest/components.csv) are registered from fourpackedreferenceboards. All32components/fourbatchtargets are unregistered models, with finalreferencehashes saved. Twooriginalsourcepanels andthreerejecteddrafts are preserved. S04roofendviews needconstructioncorrection; nojoinsorpackedmeshseparation certified.

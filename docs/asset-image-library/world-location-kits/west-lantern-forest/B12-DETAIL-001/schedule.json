@@ -1,0 +1,55 @@
+{
+  "sheet_id": "B12-DETAIL-001",
+  "name": "Storybook cottage \u2014 fittings and finish kit",
+  "owner": "other-map-buildings",
+  "family": "B12",
+  "source_reference_file": "surface-variation-kits/source-panels/B12-storybook-cottage.png",
+  "source_reference_sha256": "c535f494f165ab0082afadb8fc7fa2267e11046526734530d4e7769a0843063c",
+  "generation_reference_path": "/workspace/birthday-castle/docs/asset-image-library/surface-variation-kits/source-panels/B12-storybook-cottage.png",
+  "generator": "image_gen.imagegen",
+  "prompt": "Create one labelled modular GAME ASSET REFERENCE SHEET, plain lightivory paper, carefullyrendered cleanconcept/studio illustration, evenlighting, fulluncroppedobjects, generouswhitespace between cells. User explicitly requests names/IDs on sheets and packedparts; labels must be outsideobjectsilhouettes, no watermark. Everycell contains one distinctcomponent with readablefront/depth/attachment face, realisticproportions andstraightconstructionedges; no fusedneighbors, distortedextrusions, theatrics, scene background or extraunnamedparts. Consistentmediumdetail, no thinunreadablemicrofiligree. Allsizesareproposals, cellsindependentlyscaled. Title \"B12-DETAIL-001 \u2014 STORYBOOK COTTAGE \u2014 FITTINGS AND FINISH KIT\". Useonlysuppliedcottagepanel for itscarvedtimberbeam, windowbox, roundheadeddoor, blue-violetscale-rooftiles, gildedcrest andcrown-sign language. Twelveisolateddetailsin4columns3rows. Samewarmoak/creamstone/blue-violet/quietgoldpalette. No giantpalacecapitals, rose-marblemonuments, newlanterns, furniture orlandscape. Emptywindowboxcavityshown. Objectsfitfullywithinowncells. D04isonepair ofseparateleaves; D07regularrepeatstraightedges. D11issolelyslenderpostandbracewithnoroof. FullIDandshortnamebeloweach. \nEXACT COMPONENT INVENTORY, noadditionalcells:\nB12-DETAIL-001-D01 \u2014 Carved beam bracket: One curved golden-brown oak corbel, source leaf-scroll carving, flat vertical backing and horizontal bearing seat; complete underside.\nB12-DETAIL-001-D02 \u2014 Gable bargeboard: One straight oak fascia length with repeating carved scalloped leaf edge and thin gilt highlights; squarecut ends, flat back; do not bendthewholeboard.\nB12-DETAIL-001-D03 \u2014 Arched window insert: Complete round-topped carved oak window frame with restrained gold leading, warm amber/softlavender glass; sill, frame depth and rear edge visible; no extra wall or flowerbed.\nB12-DETAIL-001-D04 \u2014 Shutter pair: Two separated matching narrow oak shutter leaves displayed as one pair, each0.6m wide, round top profile, bronze strap hinges, smallleafcarving; no fusedglass/windowwall. Mesh split required later.\nB12-DETAIL-001-D05 \u2014 Arched oak door: Full round-headed oak door leaf, planks, small circular blue/lilac glazed oculus, brass ring handle, source hinges; complete top andbottom, no wall surround.\nB12-DETAIL-001-D06 \u2014 Window box planter: Empty rectangular carved timber trough with supportbrackets, visible inner cavity and drainagebase; no new flower species, plants fromGEN-13 added later.\nB12-DETAIL-001-D07 \u2014 Scalloped roof tile strip: Three tidy overlapping rows of blue/violet scalloped slate shingles, coherent aligned repeats, thin restrained gilt edges, whole rectangular strip with visible thickness and back; no melting or irregular giant petals.\nB12-DETAIL-001-D08 \u2014 Roof ridge finial: One small gilded star/leaf finial on modestsocket stem with flat mount; short cottage crest, not palace tower crown.\nB12-DETAIL-001-D09 \u2014 Chimney pot: Warm cream/rosebrick short squareterracotta chimney pot with visible hollow mouth and lip, restrained sourcecreambanded shape; no smoke, no gianttower.\nB12-DETAIL-001-D10 \u2014 Foundation corner block: One L-shaped warmivory ashlar plinth corner, matchingstraight runthickness, simple bevel/drip profile, square end joins, full underside; not elaboratepalacecapital.\nB12-DETAIL-001-D11 \u2014 Porch post and brace: One slender carved oak post with small capitalblock and visible curving sidebrace, woodjoinery, flatbottom/topbearing, restrainedgilt; no surroundingwall/roof attached.\nB12-DETAIL-001-D12 \u2014 Crown sign bracket: One complete curledoak/brass wallbracket supporting a small circular indigo sign with simple goldcrown relief, as source. Flatwall plate, actual hangring and smallgapbetweenboard andarm, no lettering or extra lantern.",
+  "outputs": [
+    {
+      "file": "world-location-kits/west-lantern-forest/B12-DETAIL-001/B12-DETAIL-001.png",
+      "sha256": "daac9938457fba23c21a98af9df7c931e7d1889bce3f84b695da335c53239638",
+      "original_file": "/workspace/generated_images/exec-0c2b4c10-88c2-471b-a386-3277f27926cb.png",
+      "actual_input_file": "surface-variation-kits/source-panels/B12-storybook-cottage.png",
+      "actual_input_sha256": "c535f494f165ab0082afadb8fc7fa2267e11046526734530d4e7769a0843063c",
+      "attempt": 1,
+      "generator": "image_gen.imagegen"
+    }
+  ],
+  "previous_attempts": [],
+  "component_ids": [
+    "B12-DETAIL-001-D01",
+    "B12-DETAIL-001-D02",
+    "B12-DETAIL-001-D03",
+    "B12-DETAIL-001-D04",
+    "B12-DETAIL-001-D05",
+    "B12-DETAIL-001-D06",
+    "B12-DETAIL-001-D07",
+    "B12-DETAIL-001-D08",
+    "B12-DETAIL-001-D09",
+    "B12-DETAIL-001-D10",
+    "B12-DETAIL-001-D11",
+    "B12-DETAIL-001-D12"
+  ],
+  "new_component_targets": 12,
+  "models_generated": 0,
+  "review_status": "pending-user-reference-and-construction-review",
+  "max_attempts": 2,
+  "source_fidelity": "Source vocabulary preserved; unseen backs, joins, dimensions and woodland gapobjects proposed; not exact recovered geometry",
+  "review_notes": [
+    "All twelve named fittings are distinct and fully framed. Cream stone, carved oak, blue-violet tiles, restrained gold and crown/leaf motifs follow the reviewed cottage family. No new lamp, bench or flower design is added.",
+    "D04 is a shutter pair, not evidence of separate meshes; its combined arch and hinges must fit D03/S01. Bracket backs, porch bearings, tile overlap, chimney bore, foundation joints and sign suspension require modelling review.",
+    "D08 uses a fleur/leaf crest within the source vocabulary. Use either a baked tile material or added D07 tile geometry, avoiding duplicate surfaces. The planter is empty so existing plants can be reused."
+  ],
+  "construction_issue_ids": [],
+  "physical_join_fit_verified": false,
+  "visual_cell_inventory_review": {
+    "expected": 12,
+    "all_named_cells_present": true,
+    "method": "manualinspection ofgeneratedsheet",
+    "view_to_view_geometry_parity_verified": false
+  }
+}

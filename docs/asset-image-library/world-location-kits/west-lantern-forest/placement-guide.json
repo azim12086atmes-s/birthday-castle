@@ -1,0 +1,130 @@
+{
+  "world_layout": "world-layout/layout.json",
+  "clearing_instances": [
+    {
+      "placement_id": "FC04",
+      "name": "Moss Lantern Cottage",
+      "centre_xz_m": [
+        -4450,
+        -1500
+      ],
+      "reserved_envelope_m": [
+        12,
+        9,
+        8
+      ],
+      "proposed_core_m": [
+        6,
+        9,
+        8
+      ],
+      "clearing_radius_m": 70,
+      "front_direction": "south +worldZ",
+      "local_arrival_xz_m": [
+        -4450,
+        -1460
+      ],
+      "threshold_xz_m_proposed": [
+        -4450,
+        -1495.5
+      ],
+      "reuse_sheet_ids": [
+        "B12-STRUCT-001",
+        "B12-DETAIL-001",
+        "F02-TRAIL-001",
+        "F02-NATURE-001",
+        "GEN-09",
+        "GEN-13",
+        "GEN-20",
+        "GEN-21",
+        "GEN-22"
+      ],
+      "status": "Proposedlocalarrangementonly;noactualcottage/floors/roof/terrainorrouteplaced"
+    },
+    {
+      "placement_id": "FC05",
+      "name": "Brookside Cottage",
+      "centre_xz_m": [
+        -4000,
+        -550
+      ],
+      "reserved_envelope_m": [
+        12,
+        9,
+        8
+      ],
+      "proposed_core_m": [
+        6,
+        9,
+        8
+      ],
+      "clearing_radius_m": 70,
+      "front_direction": "south +worldZ",
+      "local_arrival_xz_m": [
+        -4000,
+        -510
+      ],
+      "threshold_xz_m_proposed": [
+        -4000,
+        -545.5
+      ],
+      "reuse_sheet_ids": [
+        "B12-STRUCT-001",
+        "B12-DETAIL-001",
+        "F02-TRAIL-001",
+        "F02-NATURE-001",
+        "GEN-09",
+        "GEN-13",
+        "GEN-20",
+        "GEN-21",
+        "GEN-22"
+      ],
+      "status": "Proposedlocalarrangementonly;noactualcottage/floors/roof/terrainorrouteplaced"
+    },
+    {
+      "placement_id": "FC06",
+      "name": "Coastal Orchard Cottage",
+      "centre_xz_m": [
+        -4550,
+        150
+      ],
+      "reserved_envelope_m": [
+        12,
+        9,
+        8
+      ],
+      "proposed_core_m": [
+        6,
+        9,
+        8
+      ],
+      "clearing_radius_m": 70,
+      "front_direction": "south +worldZ",
+      "local_arrival_xz_m": [
+        -4550,
+        190
+      ],
+      "threshold_xz_m_proposed": [
+        -4550,
+        154.5
+      ],
+      "reuse_sheet_ids": [
+        "B12-STRUCT-001",
+        "B12-DETAIL-001",
+        "F02-TRAIL-001",
+        "F02-NATURE-001",
+        "GEN-09",
+        "GEN-13",
+        "GEN-20",
+        "GEN-21",
+        "GEN-22"
+      ],
+      "status": "Proposedlocalarrangementonly;noactualcottage/floors/roof/terrainorrouteplaced"
+    }
+  ],
+  "notes": [
+    "FT02worldpolyline iscoarseclearing-centreintent,notreadycollision-freewalkway. Offsetwalkrouteoutsidecottagereservationanduseashortthresholdspur; guideshereareproposedoffsetswithoutchangingpublishedworldroutegeometry.",
+    "70m-radiusforestclearingislandscapegap,nota140m-widepavedplaza. Keepcompacthuman-sizecottageapron,flowers/bench/lampsnearentry;retaincanopy,meadow,orchardorpondedgeelsewhere.",
+    "Gable/corner/porchvariantsarenotthreeverifiedcompletecottageassemblies. Repeat/rotatewall/roofmodulesandconstructsimpleextensionhostsprocedurally;separateporchroof,silldetail,cornersealingandchimneygeometryremainpending."
+  ]
+}
