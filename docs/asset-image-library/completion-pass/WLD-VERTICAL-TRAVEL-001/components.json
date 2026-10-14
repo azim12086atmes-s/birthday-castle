@@ -1,0 +1,124 @@
+{
+  "components": [
+    {
+      "asset_id": "WLD-VERTICAL-TRAVEL-001-S01",
+      "name": "Palace vertical arrival platform",
+      "kind": "structural-section",
+      "dimensions_m_proposed": [
+        4,
+        4,
+        3
+      ],
+      "function": "Missing supporting destinations and access hosts at giant heights; mechanics and placement remain separate",
+      "construction": "One isolated palace vertical arrival platform, source ivory/gold/pink travel vocabulary, solid platform and safe clear entrance opening. Reuse existing portal/boat/lantern master objects; do not invent new vehicle or claim game mechanic. Supported/fictional floating status labelled proposed.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Docks, ramps and travel infrastructure"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "WLD-VERTICAL-TRAVEL-001-S01__palace-vertical-arrival-platform__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "WLD-VERTICAL-TRAVEL-001-S02",
+      "name": "Portal approach threshold",
+      "kind": "structural-section",
+      "dimensions_m_proposed": [
+        4,
+        4,
+        3
+      ],
+      "function": "Missing supporting destinations and access hosts at giant heights; mechanics and placement remain separate",
+      "construction": "One isolated portal approach threshold, source ivory/gold/pink travel vocabulary, solid platform and safe clear entrance opening. Reuse existing portal/boat/lantern master objects; do not invent new vehicle or claim game mechanic. Supported/fictional floating status labelled proposed.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Docks, ramps and travel infrastructure"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "WLD-VERTICAL-TRAVEL-001-S02__portal-approach-threshold__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "WLD-VERTICAL-TRAVEL-001-S03",
+      "name": "Sky destination landing",
+      "kind": "structural-section",
+      "dimensions_m_proposed": [
+        4,
+        4,
+        3
+      ],
+      "function": "Missing supporting destinations and access hosts at giant heights; mechanics and placement remain separate",
+      "construction": "One isolated sky destination landing, source ivory/gold/pink travel vocabulary, solid platform and safe clear entrance opening. Reuse existing portal/boat/lantern master objects; do not invent new vehicle or claim game mechanic. Supported/fictional floating status labelled proposed.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Docks, ramps and travel infrastructure"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "WLD-VERTICAL-TRAVEL-001-S03__sky-destination-landing__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "WLD-VERTICAL-TRAVEL-001-S04",
+      "name": "Travel route waiting alcove",
+      "kind": "structural-section",
+      "dimensions_m_proposed": [
+        4,
+        4,
+        3
+      ],
+      "function": "Missing supporting destinations and access hosts at giant heights; mechanics and placement remain separate",
+      "construction": "One isolated travel route waiting alcove, source ivory/gold/pink travel vocabulary, solid platform and safe clear entrance opening. Reuse existing portal/boat/lantern master objects; do not invent new vehicle or claim game mechanic. Supported/fictional floating status labelled proposed.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Docks, ramps and travel infrastructure"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "WLD-VERTICAL-TRAVEL-001-S04__travel-route-waiting-alcove__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    }
+  ]
+}

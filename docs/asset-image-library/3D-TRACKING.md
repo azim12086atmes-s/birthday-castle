@@ -90,3 +90,7 @@ WLD-MAP-002 replaces the selected world map and adds F01–F03 districts, FC01�
 ## Moon Water Palace
 
 [20 named component targets](world-location-kits/moon-water-palace/components.csv) from three sheets are unregistered as3D; proposed interfaces and unresolved fitting work are documented. Whole-sheet generation does not establish one separated mesh per component. Use full IDs and suggested filenames when importing externally generated parts.
+
+## Autonomous completion pass
+
+[Saved sheet gallery and gap coverage](completion-pass/README.md) · [All full component IDs/model filenames](completion-pass/components.csv). Existing originals are reused; all models remain unregistered.

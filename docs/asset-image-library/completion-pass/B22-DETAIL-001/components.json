@@ -1,0 +1,364 @@
+{
+  "components": [
+    {
+      "asset_id": "B22-DETAIL-001-D01",
+      "name": "Spiral pearl band section",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        1.5,
+        0.15,
+        1.5
+      ],
+      "function": "Need tapered shaft/base/lantern seat, balcony window band and spiral cladding/ramp decision; source pearl/lilac/gold style retained. Shared shore rocks/dock/stairs/lights reused. Sparse coastal grasses and seabirds; beam effects, internal stairs and tide access remain proposed. Missing detached construction pieces and local interior-facing patterns.",
+      "construction": "One isolated spiral pearl band section, strictly follow local source colour/material/motif instead of universal pink marble. Show real depth, flat back/host contact or one consistent repeat profile. Existing generic lanterns/flowers/benches reused; only named local fittings. No merged wall scene attached to small detail.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B22"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B22-DETAIL-001-D01__spiral-pearl-band-section__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "B22-DETAIL-001-D02",
+      "name": "Lighthouse window insert",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        1.5,
+        0.15,
+        1.5
+      ],
+      "function": "Need tapered shaft/base/lantern seat, balcony window band and spiral cladding/ramp decision; source pearl/lilac/gold style retained. Shared shore rocks/dock/stairs/lights reused. Sparse coastal grasses and seabirds; beam effects, internal stairs and tide access remain proposed. Missing detached construction pieces and local interior-facing patterns.",
+      "construction": "One isolated lighthouse window insert, strictly follow local source colour/material/motif instead of universal pink marble. Show real depth, flat back/host contact or one consistent repeat profile. Existing generic lanterns/flowers/benches reused; only named local fittings. No merged wall scene attached to small detail.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B22"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B22-DETAIL-001-D02__lighthouse-window-insert__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "B22-DETAIL-001-D03",
+      "name": "Lantern room glass panel",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        1.5,
+        0.15,
+        1.5
+      ],
+      "function": "Need tapered shaft/base/lantern seat, balcony window band and spiral cladding/ramp decision; source pearl/lilac/gold style retained. Shared shore rocks/dock/stairs/lights reused. Sparse coastal grasses and seabirds; beam effects, internal stairs and tide access remain proposed. Missing detached construction pieces and local interior-facing patterns.",
+      "construction": "One isolated lantern room glass panel, strictly follow local source colour/material/motif instead of universal pink marble. Show real depth, flat back/host contact or one consistent repeat profile. Existing generic lanterns/flowers/benches reused; only named local fittings. No merged wall scene attached to small detail.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B22"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B22-DETAIL-001-D03__lantern-room-glass-panel__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "B22-DETAIL-001-D04",
+      "name": "Lantern roof rib",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        1.5,
+        0.15,
+        1.5
+      ],
+      "function": "Need tapered shaft/base/lantern seat, balcony window band and spiral cladding/ramp decision; source pearl/lilac/gold style retained. Shared shore rocks/dock/stairs/lights reused. Sparse coastal grasses and seabirds; beam effects, internal stairs and tide access remain proposed. Missing detached construction pieces and local interior-facing patterns.",
+      "construction": "One isolated lantern roof rib, strictly follow local source colour/material/motif instead of universal pink marble. Show real depth, flat back/host contact or one consistent repeat profile. Existing generic lanterns/flowers/benches reused; only named local fittings. No merged wall scene attached to small detail.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B22"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B22-DETAIL-001-D04__lantern-roof-rib__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "B22-DETAIL-001-D05",
+      "name": "Circular gallery rail",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        1.5,
+        0.15,
+        1.5
+      ],
+      "function": "Need tapered shaft/base/lantern seat, balcony window band and spiral cladding/ramp decision; source pearl/lilac/gold style retained. Shared shore rocks/dock/stairs/lights reused. Sparse coastal grasses and seabirds; beam effects, internal stairs and tide access remain proposed. Missing detached construction pieces and local interior-facing patterns.",
+      "construction": "One isolated circular gallery rail, strictly follow local source colour/material/motif instead of universal pink marble. Show real depth, flat back/host contact or one consistent repeat profile. Existing generic lanterns/flowers/benches reused; only named local fittings. No merged wall scene attached to small detail.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B22"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B22-DETAIL-001-D05__circular-gallery-rail__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "B22-DETAIL-001-D06",
+      "name": "Beacon lens mounting frame",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        0.2,
+        0.12,
+        0.25
+      ],
+      "function": "Need tapered shaft/base/lantern seat, balcony window band and spiral cladding/ramp decision; source pearl/lilac/gold style retained. Shared shore rocks/dock/stairs/lights reused. Sparse coastal grasses and seabirds; beam effects, internal stairs and tide access remain proposed. Missing detached construction pieces and local interior-facing patterns.",
+      "construction": "One isolated beacon lens mounting frame, strictly follow local source colour/material/motif instead of universal pink marble. Show real depth, flat back/host contact or one consistent repeat profile. Existing generic lanterns/flowers/benches reused; only named local fittings. No merged wall scene attached to small detail. SMALL attachment hardware only: plate/socket/hook/joint with its own hole/root and source-compatible quiet ornament. No lantern body, full arch, whole column, complete door, garden or giant architectural scene glued to it. FRAME ONLY with open empty centre; no screen/glass/bookcase/door/landscape fused inside. Separate insert masters are reused.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B22"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B22-DETAIL-001-D06__beacon-lens-mounting-frame__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "B22-DETAIL-001-D07",
+      "name": "Light room floor radial tile",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        1.5,
+        1.5,
+        0.12
+      ],
+      "function": "Need tapered shaft/base/lantern seat, balcony window band and spiral cladding/ramp decision; source pearl/lilac/gold style retained. Shared shore rocks/dock/stairs/lights reused. Sparse coastal grasses and seabirds; beam effects, internal stairs and tide access remain proposed. Missing detached construction pieces and local interior-facing patterns.",
+      "construction": "One isolated light room floor radial tile, strictly follow local source colour/material/motif instead of universal pink marble. Show real depth, flat back/host contact or one consistent repeat profile. Existing generic lanterns/flowers/benches reused; only named local fittings. No merged wall scene attached to small detail. This is a FLAT FLOOR piece, not a hanging wall plaque or raised flower sculpture. Show top pattern and a thin edge profile; relief remains shallow enough to walk across.",
+      "attachment_face": "Broad flat underside to floor, shortest dimension vertical Z",
+      "semantic_front": "Decorated broad face up +Z",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B22"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B22-DETAIL-001-D07__light-room-floor-radial-tile__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "B22-DETAIL-001-D08",
+      "name": "Ivory wall dado",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        1.5,
+        0.15,
+        1.5
+      ],
+      "function": "Need tapered shaft/base/lantern seat, balcony window band and spiral cladding/ramp decision; source pearl/lilac/gold style retained. Shared shore rocks/dock/stairs/lights reused. Sparse coastal grasses and seabirds; beam effects, internal stairs and tide access remain proposed. Missing detached construction pieces and local interior-facing patterns.",
+      "construction": "One isolated ivory wall dado, strictly follow local source colour/material/motif instead of universal pink marble. Show real depth, flat back/host contact or one consistent repeat profile. Existing generic lanterns/flowers/benches reused; only named local fittings. No merged wall scene attached to small detail.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B22"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B22-DETAIL-001-D08__ivory-wall-dado__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "B22-DETAIL-001-D09",
+      "name": "Lighthouse door surround",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        1.5,
+        0.15,
+        1.5
+      ],
+      "function": "Need tapered shaft/base/lantern seat, balcony window band and spiral cladding/ramp decision; source pearl/lilac/gold style retained. Shared shore rocks/dock/stairs/lights reused. Sparse coastal grasses and seabirds; beam effects, internal stairs and tide access remain proposed. Missing detached construction pieces and local interior-facing patterns.",
+      "construction": "One isolated lighthouse door surround, strictly follow local source colour/material/motif instead of universal pink marble. Show real depth, flat back/host contact or one consistent repeat profile. Existing generic lanterns/flowers/benches reused; only named local fittings. No merged wall scene attached to small detail.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B22"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B22-DETAIL-001-D09__lighthouse-door-surround__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "B22-DETAIL-001-D10",
+      "name": "Coastal stair edge strip",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        1.5,
+        0.15,
+        1.5
+      ],
+      "function": "Need tapered shaft/base/lantern seat, balcony window band and spiral cladding/ramp decision; source pearl/lilac/gold style retained. Shared shore rocks/dock/stairs/lights reused. Sparse coastal grasses and seabirds; beam effects, internal stairs and tide access remain proposed. Missing detached construction pieces and local interior-facing patterns.",
+      "construction": "One isolated coastal stair edge strip, strictly follow local source colour/material/motif instead of universal pink marble. Show real depth, flat back/host contact or one consistent repeat profile. Existing generic lanterns/flowers/benches reused; only named local fittings. No merged wall scene attached to small detail.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B22"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B22-DETAIL-001-D10__coastal-stair-edge-strip__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "B22-DETAIL-001-D11",
+      "name": "Gallery drain opening trim",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        1.5,
+        0.15,
+        1.5
+      ],
+      "function": "Need tapered shaft/base/lantern seat, balcony window band and spiral cladding/ramp decision; source pearl/lilac/gold style retained. Shared shore rocks/dock/stairs/lights reused. Sparse coastal grasses and seabirds; beam effects, internal stairs and tide access remain proposed. Missing detached construction pieces and local interior-facing patterns.",
+      "construction": "One isolated gallery drain opening trim, strictly follow local source colour/material/motif instead of universal pink marble. Show real depth, flat back/host contact or one consistent repeat profile. Existing generic lanterns/flowers/benches reused; only named local fittings. No merged wall scene attached to small detail.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B22"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B22-DETAIL-001-D11__gallery-drain-opening-trim__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "B22-DETAIL-001-D12",
+      "name": "Finial root socket",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        0.2,
+        0.12,
+        0.25
+      ],
+      "function": "Need tapered shaft/base/lantern seat, balcony window band and spiral cladding/ramp decision; source pearl/lilac/gold style retained. Shared shore rocks/dock/stairs/lights reused. Sparse coastal grasses and seabirds; beam effects, internal stairs and tide access remain proposed. Missing detached construction pieces and local interior-facing patterns.",
+      "construction": "One isolated finial root socket, strictly follow local source colour/material/motif instead of universal pink marble. Show real depth, flat back/host contact or one consistent repeat profile. Existing generic lanterns/flowers/benches reused; only named local fittings. No merged wall scene attached to small detail. SMALL attachment hardware only: plate/socket/hook/joint with its own hole/root and source-compatible quiet ornament. No lantern body, full arch, whole column, complete door, garden or giant architectural scene glued to it.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B22"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B22-DETAIL-001-D12__finial-root-socket__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    }
+  ]
+}

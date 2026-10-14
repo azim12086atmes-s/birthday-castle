@@ -1,0 +1,141 @@
+{
+  "sheet_id": "B17-STRUCT-001",
+  "name": "Glowwood Ruin Court \u2014 structural sections",
+  "owner": "other-map-buildings",
+  "family": "B17",
+  "location_id": "B17",
+  "source_reference_id": "SRC-LOC-B17-GEN-06",
+  "source_reference_file": "world-layout/location-audit/source/B17-GEN-06.png",
+  "source_reference_sha256": "23df6e3a42ee973a5958aaa76a1a4ae5f0d13e651bece4c453c84e26cd8a937c",
+  "prompt": "Create ONE clean detailed GAME ASSET REFERENCE SHEET, NOT Blender or a3Dmodel. Plain light ivory studio background, soft even light, full uncropped separate objects, readable thickness, precise non-melting forms. FULL IDs and names outside silhouettes, dimensions marked PROPOSED. Each cell independent illustration scale. No environment scenery, humans, extra unlabeled objects, watermark or whole-palace redesign. Use ONLY the single supplied source image for visible style/material/form authority; infer missing backs and assembly interfaces conservatively. Source illustration motifs are inspiration, not recovered measured geometry. Visible source facts: Aged pointed-arch ruin court with broken tower/arch tops, roots and moss climbing stone, pale lilac/blue crystal clusters, star niches and a purple suspended star beneath the main arch. Open voids remain between walls; source is not a sealed chapel. Hidden layout inference: A woodland path crosses a small stone circle into the open court, passes a central wishing/crystal focus, then exits through a broken side arch into a grove. Leave roof absent and preserve framed sky/tree views. Keep vegetation at boundaries so broken edges and routes remain legible. Preserve this local design. Exactly4 large cells, large three-quarter view for each module plus small front, top and side/contact/section diagram consistent with same geometry. Real open doors/arches/windows must show empty space; no opaque filling where an opening is requested. Continuous unobstructed planar joining ends, separate shells from optional decor, no fused unrelated objects. Hollow roof/room sections show the interior underside and wall thickness. Keep source silhouette, not generic boxes. Title \"B17-STRUCT-001 \u2014 Glowwood Ruin Court \u2014 structural sections\". Footer \"Proposed construction / source-compatible references / mesh joins and views unverified\".\n\nPurpose/gap: Need broken-wall/arch foot/return variants and root-to-stone attachment views, not another intact Gothic church. Reuse existing crystal/wish-star and moss/fern families after identity check. Suspension of star is unresolved or explicitly magical; owl/moths and possible firefly effects proposed. Provide missing isolated hosts and join views.\n\nB17-STRUCT-001-S01 \u2014 Broken arch/springing. Dimensions W,D,H [8, 6, 12]m proposed. One isolated broken arch/springing matching the supplied building, its roof/arch/wall silhouette and local materials. Show front and interior/rear/underside contact, not a complete building scene. Actual open column galleries and holes stay open. Extend hidden depth only enough to form a joinable section; no palace-wide plan or added unrelated tower.\n\nB17-STRUCT-001-S02 \u2014 Broken wall return. Dimensions W,D,H [8, 6, 12]m proposed. One isolated broken wall return matching the supplied building, its roof/arch/wall silhouette and local materials. Show front and interior/rear/underside contact, not a complete building scene. Actual open column galleries and holes stay open. Extend hidden depth only enough to form a joinable section; no palace-wide plan or added unrelated tower.\n\nB17-STRUCT-001-S03 \u2014 Root/stone contact. Dimensions W,D,H [8, 6, 12]m proposed. One isolated root/stone contact matching the supplied building, its roof/arch/wall silhouette and local materials. Show front and interior/rear/underside contact, not a complete building scene. Actual open column galleries and holes stay open. Extend hidden depth only enough to form a joinable section; no palace-wide plan or added unrelated tower.\n\nB17-STRUCT-001-S04 \u2014 Wish court entry floor. Dimensions W,D,H [8, 6, 12]m proposed. One isolated wish court entry floor matching the supplied building, its roof/arch/wall silhouette and local materials. Show front and interior/rear/underside contact, not a complete building scene. Actual open column galleries and holes stay open. Extend hidden depth only enough to form a joinable section; no palace-wide plan or added unrelated tower.",
+  "parts": [
+    {
+      "asset_id": "B17-STRUCT-001-S01",
+      "name": "Broken arch/springing",
+      "kind": "structural-section",
+      "dimensions_m_proposed": [
+        8,
+        6,
+        12
+      ],
+      "function": "Need broken-wall/arch foot/return variants and root-to-stone attachment views, not another intact Gothic church. Reuse existing crystal/wish-star and moss/fern families after identity check. Suspension of star is unresolved or explicitly magical; owl/moths and possible firefly effects proposed. Provide missing isolated hosts and join views.",
+      "construction": "One isolated broken arch/springing matching the supplied building, its roof/arch/wall silhouette and local materials. Show front and interior/rear/underside contact, not a complete building scene. Actual open column galleries and holes stay open. Extend hidden depth only enough to form a joinable section; no palace-wide plan or added unrelated tower.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B17"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B17-STRUCT-001-S01__broken-arch-springing__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "B17-STRUCT-001-S02",
+      "name": "Broken wall return",
+      "kind": "structural-section",
+      "dimensions_m_proposed": [
+        8,
+        6,
+        12
+      ],
+      "function": "Need broken-wall/arch foot/return variants and root-to-stone attachment views, not another intact Gothic church. Reuse existing crystal/wish-star and moss/fern families after identity check. Suspension of star is unresolved or explicitly magical; owl/moths and possible firefly effects proposed. Provide missing isolated hosts and join views.",
+      "construction": "One isolated broken wall return matching the supplied building, its roof/arch/wall silhouette and local materials. Show front and interior/rear/underside contact, not a complete building scene. Actual open column galleries and holes stay open. Extend hidden depth only enough to form a joinable section; no palace-wide plan or added unrelated tower.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B17"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B17-STRUCT-001-S02__broken-wall-return__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "B17-STRUCT-001-S03",
+      "name": "Root/stone contact",
+      "kind": "structural-section",
+      "dimensions_m_proposed": [
+        8,
+        6,
+        12
+      ],
+      "function": "Need broken-wall/arch foot/return variants and root-to-stone attachment views, not another intact Gothic church. Reuse existing crystal/wish-star and moss/fern families after identity check. Suspension of star is unresolved or explicitly magical; owl/moths and possible firefly effects proposed. Provide missing isolated hosts and join views.",
+      "construction": "One isolated root/stone contact matching the supplied building, its roof/arch/wall silhouette and local materials. Show front and interior/rear/underside contact, not a complete building scene. Actual open column galleries and holes stay open. Extend hidden depth only enough to form a joinable section; no palace-wide plan or added unrelated tower.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B17"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B17-STRUCT-001-S03__root-stone-contact__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "B17-STRUCT-001-S04",
+      "name": "Wish court entry floor",
+      "kind": "structural-section",
+      "dimensions_m_proposed": [
+        8,
+        6,
+        12
+      ],
+      "function": "Need broken-wall/arch foot/return variants and root-to-stone attachment views, not another intact Gothic church. Reuse existing crystal/wish-star and moss/fern families after identity check. Suspension of star is unresolved or explicitly magical; owl/moths and possible firefly effects proposed. Provide missing isolated hosts and join views.",
+      "construction": "One isolated wish court entry floor matching the supplied building, its roof/arch/wall silhouette and local materials. Show front and interior/rear/underside contact, not a complete building scene. Actual open column galleries and holes stay open. Extend hidden depth only enough to form a joinable section; no palace-wide plan or added unrelated tower.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B17"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B17-STRUCT-001-S04__wish-court-entry-floor__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    }
+  ],
+  "outputs": [],
+  "previous_attempts": [],
+  "models_generated": 0,
+  "physical_join_fit_verified": false,
+  "view_geometry_parity_verified": false,
+  "review_status": "planned-after-gap-audit",
+  "gap": "Need broken-wall/arch foot/return variants and root-to-stone attachment views, not another intact Gothic church. Reuse existing crystal/wish-star and moss/fern families after identity check. Suspension of star is unresolved or explicitly magical; owl/moths and possible firefly effects proposed. Provide missing isolated hosts and join views.",
+  "mode": "structure"
+}

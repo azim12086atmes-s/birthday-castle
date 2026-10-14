@@ -1,0 +1,364 @@
+{
+  "components": [
+    {
+      "asset_id": "B23-DETAIL-001-D01",
+      "name": "Turquoise shell roof petal",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        1.5,
+        0.15,
+        1.5
+      ],
+      "function": "Need petal-roof/rib springing modules, nacre column/corner seats, shell-screen end joints and shore-platform threshold. Existing shell basin and jali motifs are source vocabulary; use shared water/dock/rocks. Coastal vines/planters/seaweed and reef fish/shorebirds proposed. Missing detached construction pieces and local interior-facing patterns.",
+      "construction": "One isolated turquoise shell roof petal, strictly follow local source colour/material/motif instead of universal pink marble. Show real depth, flat back/host contact or one consistent repeat profile. Existing generic lanterns/flowers/benches reused; only named local fittings. No merged wall scene attached to small detail.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B23"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B23-DETAIL-001-D01__turquoise-shell-roof-petal__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "B23-DETAIL-001-D02",
+      "name": "Nacre roof rib joint",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        1.5,
+        0.15,
+        1.5
+      ],
+      "function": "Need petal-roof/rib springing modules, nacre column/corner seats, shell-screen end joints and shore-platform threshold. Existing shell basin and jali motifs are source vocabulary; use shared water/dock/rocks. Coastal vines/planters/seaweed and reef fish/shorebirds proposed. Missing detached construction pieces and local interior-facing patterns.",
+      "construction": "One isolated nacre roof rib joint, strictly follow local source colour/material/motif instead of universal pink marble. Show real depth, flat back/host contact or one consistent repeat profile. Existing generic lanterns/flowers/benches reused; only named local fittings. No merged wall scene attached to small detail.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B23"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B23-DETAIL-001-D02__nacre-roof-rib-joint__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "B23-DETAIL-001-D03",
+      "name": "Sea pavilion column capital",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        1.5,
+        0.15,
+        1.5
+      ],
+      "function": "Need petal-roof/rib springing modules, nacre column/corner seats, shell-screen end joints and shore-platform threshold. Existing shell basin and jali motifs are source vocabulary; use shared water/dock/rocks. Coastal vines/planters/seaweed and reef fish/shorebirds proposed. Missing detached construction pieces and local interior-facing patterns.",
+      "construction": "One isolated sea pavilion column capital, strictly follow local source colour/material/motif instead of universal pink marble. Show real depth, flat back/host contact or one consistent repeat profile. Existing generic lanterns/flowers/benches reused; only named local fittings. No merged wall scene attached to small detail.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B23"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B23-DETAIL-001-D03__sea-pavilion-column-capital__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "B23-DETAIL-001-D04",
+      "name": "Petal floor mosaic wedge",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        1.5,
+        1.5,
+        0.12
+      ],
+      "function": "Need petal-roof/rib springing modules, nacre column/corner seats, shell-screen end joints and shore-platform threshold. Existing shell basin and jali motifs are source vocabulary; use shared water/dock/rocks. Coastal vines/planters/seaweed and reef fish/shorebirds proposed. Missing detached construction pieces and local interior-facing patterns.",
+      "construction": "One isolated petal floor mosaic wedge, strictly follow local source colour/material/motif instead of universal pink marble. Show real depth, flat back/host contact or one consistent repeat profile. Existing generic lanterns/flowers/benches reused; only named local fittings. No merged wall scene attached to small detail. This is a FLAT FLOOR piece, not a hanging wall plaque or raised flower sculpture. Show top pattern and a thin edge profile; relief remains shallow enough to walk across.",
+      "attachment_face": "Broad flat underside to floor, shortest dimension vertical Z",
+      "semantic_front": "Decorated broad face up +Z",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B23"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B23-DETAIL-001-D04__petal-floor-mosaic-wedge__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "B23-DETAIL-001-D05",
+      "name": "Scalloped floor edge",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        1.5,
+        1.5,
+        0.12
+      ],
+      "function": "Need petal-roof/rib springing modules, nacre column/corner seats, shell-screen end joints and shore-platform threshold. Existing shell basin and jali motifs are source vocabulary; use shared water/dock/rocks. Coastal vines/planters/seaweed and reef fish/shorebirds proposed. Missing detached construction pieces and local interior-facing patterns.",
+      "construction": "One isolated scalloped floor edge, strictly follow local source colour/material/motif instead of universal pink marble. Show real depth, flat back/host contact or one consistent repeat profile. Existing generic lanterns/flowers/benches reused; only named local fittings. No merged wall scene attached to small detail. This is a FLAT FLOOR piece, not a hanging wall plaque or raised flower sculpture. Show top pattern and a thin edge profile; relief remains shallow enough to walk across.",
+      "attachment_face": "Broad flat underside to floor, shortest dimension vertical Z",
+      "semantic_front": "Decorated broad face up +Z",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B23"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B23-DETAIL-001-D05__scalloped-floor-edge__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "B23-DETAIL-001-D06",
+      "name": "Glass wall insert",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        1.5,
+        0.15,
+        1.5
+      ],
+      "function": "Need petal-roof/rib springing modules, nacre column/corner seats, shell-screen end joints and shore-platform threshold. Existing shell basin and jali motifs are source vocabulary; use shared water/dock/rocks. Coastal vines/planters/seaweed and reef fish/shorebirds proposed. Missing detached construction pieces and local interior-facing patterns.",
+      "construction": "One isolated glass wall insert, strictly follow local source colour/material/motif instead of universal pink marble. Show real depth, flat back/host contact or one consistent repeat profile. Existing generic lanterns/flowers/benches reused; only named local fittings. No merged wall scene attached to small detail.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B23"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B23-DETAIL-001-D06__glass-wall-insert__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "B23-DETAIL-001-D07",
+      "name": "Curved parapet repeat",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        1.5,
+        0.15,
+        1.5
+      ],
+      "function": "Need petal-roof/rib springing modules, nacre column/corner seats, shell-screen end joints and shore-platform threshold. Existing shell basin and jali motifs are source vocabulary; use shared water/dock/rocks. Coastal vines/planters/seaweed and reef fish/shorebirds proposed. Missing detached construction pieces and local interior-facing patterns.",
+      "construction": "One isolated curved parapet repeat, strictly follow local source colour/material/motif instead of universal pink marble. Show real depth, flat back/host contact or one consistent repeat profile. Existing generic lanterns/flowers/benches reused; only named local fittings. No merged wall scene attached to small detail. One continuous rail panel with plain join ends, NO tall end posts, corner towers, flowerbeds or attached stairs. Separate posts handled by hosts.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B23"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B23-DETAIL-001-D07__curved-parapet-repeat__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "B23-DETAIL-001-D08",
+      "name": "Column foot shell collar",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        1.5,
+        0.15,
+        1.5
+      ],
+      "function": "Need petal-roof/rib springing modules, nacre column/corner seats, shell-screen end joints and shore-platform threshold. Existing shell basin and jali motifs are source vocabulary; use shared water/dock/rocks. Coastal vines/planters/seaweed and reef fish/shorebirds proposed. Missing detached construction pieces and local interior-facing patterns.",
+      "construction": "One isolated column foot shell collar, strictly follow local source colour/material/motif instead of universal pink marble. Show real depth, flat back/host contact or one consistent repeat profile. Existing generic lanterns/flowers/benches reused; only named local fittings. No merged wall scene attached to small detail.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B23"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B23-DETAIL-001-D08__column-foot-shell-collar__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "B23-DETAIL-001-D09",
+      "name": "Shell ceiling relief panel",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        1.5,
+        0.15,
+        1.5
+      ],
+      "function": "Need petal-roof/rib springing modules, nacre column/corner seats, shell-screen end joints and shore-platform threshold. Existing shell basin and jali motifs are source vocabulary; use shared water/dock/rocks. Coastal vines/planters/seaweed and reef fish/shorebirds proposed. Missing detached construction pieces and local interior-facing patterns.",
+      "construction": "One isolated shell ceiling relief panel, strictly follow local source colour/material/motif instead of universal pink marble. Show real depth, flat back/host contact or one consistent repeat profile. Existing generic lanterns/flowers/benches reused; only named local fittings. No merged wall scene attached to small detail.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B23"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B23-DETAIL-001-D09__shell-ceiling-relief-panel__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "B23-DETAIL-001-D10",
+      "name": "Sea terrace drain trim",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        1.5,
+        0.15,
+        1.5
+      ],
+      "function": "Need petal-roof/rib springing modules, nacre column/corner seats, shell-screen end joints and shore-platform threshold. Existing shell basin and jali motifs are source vocabulary; use shared water/dock/rocks. Coastal vines/planters/seaweed and reef fish/shorebirds proposed. Missing detached construction pieces and local interior-facing patterns.",
+      "construction": "One isolated sea terrace drain trim, strictly follow local source colour/material/motif instead of universal pink marble. Show real depth, flat back/host contact or one consistent repeat profile. Existing generic lanterns/flowers/benches reused; only named local fittings. No merged wall scene attached to small detail.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B23"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B23-DETAIL-001-D10__sea-terrace-drain-trim__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "B23-DETAIL-001-D11",
+      "name": "Gold lantern mount",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        0.2,
+        0.12,
+        0.25
+      ],
+      "function": "Need petal-roof/rib springing modules, nacre column/corner seats, shell-screen end joints and shore-platform threshold. Existing shell basin and jali motifs are source vocabulary; use shared water/dock/rocks. Coastal vines/planters/seaweed and reef fish/shorebirds proposed. Missing detached construction pieces and local interior-facing patterns.",
+      "construction": "One isolated gold lantern mount, strictly follow local source colour/material/motif instead of universal pink marble. Show real depth, flat back/host contact or one consistent repeat profile. Existing generic lanterns/flowers/benches reused; only named local fittings. No merged wall scene attached to small detail. SMALL attachment hardware only: plate/socket/hook/joint with its own hole/root and source-compatible quiet ornament. No lantern body, full arch, whole column, complete door, garden or giant architectural scene glued to it.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B23"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B23-DETAIL-001-D11__gold-lantern-mount__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "B23-DETAIL-001-D12",
+      "name": "Sea arch soffit strip",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        1.5,
+        0.15,
+        1.5
+      ],
+      "function": "Need petal-roof/rib springing modules, nacre column/corner seats, shell-screen end joints and shore-platform threshold. Existing shell basin and jali motifs are source vocabulary; use shared water/dock/rocks. Coastal vines/planters/seaweed and reef fish/shorebirds proposed. Missing detached construction pieces and local interior-facing patterns.",
+      "construction": "One isolated sea arch soffit strip, strictly follow local source colour/material/motif instead of universal pink marble. Show real depth, flat back/host contact or one consistent repeat profile. Existing generic lanterns/flowers/benches reused; only named local fittings. No merged wall scene attached to small detail. Arch band/surround only around a genuinely open centre. Do not include complete building wall or tower.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B23"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B23-DETAIL-001-D12__sea-arch-soffit-strip__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    }
+  ]
+}

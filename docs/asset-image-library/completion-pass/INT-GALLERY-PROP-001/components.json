@@ -1,0 +1,364 @@
+{
+  "components": [
+    {
+      "asset_id": "INT-GALLERY-PROP-001-D01",
+      "name": "Portrait wall frame",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        1,
+        0.35,
+        1
+      ],
+      "function": "Missing supporting interior components; reusable across several selected rooms",
+      "construction": "One separate portrait wall frame at appropriate human scale; precise rose/ivory/gold and restrained blue textile motifs matching source. Preserve actual construction (four stable legs for furniture, flat backs for frames, one coherent object). No existing chandelier/mirror/tea-set master duplicated. Dimensions are bounding proposals to refine by function. FRAME ONLY with open empty centre; no screen/glass/bookcase/door/landscape fused inside. Separate insert masters are reused.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Interiors and furniture"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "INT-GALLERY-PROP-001-D01__portrait-wall-frame__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "INT-GALLERY-PROP-001-D02",
+      "name": "Small album display stand",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        1,
+        0.35,
+        1
+      ],
+      "function": "Missing supporting interior components; reusable across several selected rooms",
+      "construction": "One separate small album display stand at appropriate human scale; precise rose/ivory/gold and restrained blue textile motifs matching source. Preserve actual construction (four stable legs for furniture, flat backs for frames, one coherent object). No existing chandelier/mirror/tea-set master duplicated. Dimensions are bounding proposals to refine by function.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Interiors and furniture"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "INT-GALLERY-PROP-001-D02__small-album-display-stand__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "INT-GALLERY-PROP-001-D03",
+      "name": "Memory display cabinet",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        1,
+        0.35,
+        1
+      ],
+      "function": "Missing supporting interior components; reusable across several selected rooms",
+      "construction": "One separate memory display cabinet at appropriate human scale; precise rose/ivory/gold and restrained blue textile motifs matching source. Preserve actual construction (four stable legs for furniture, flat backs for frames, one coherent object). No existing chandelier/mirror/tea-set master duplicated. Dimensions are bounding proposals to refine by function.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Interiors and furniture"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "INT-GALLERY-PROP-001-D03__memory-display-cabinet__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "INT-GALLERY-PROP-001-D04",
+      "name": "Sculpture plinth",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        1,
+        0.35,
+        1
+      ],
+      "function": "Missing supporting interior components; reusable across several selected rooms",
+      "construction": "One separate sculpture plinth at appropriate human scale; precise rose/ivory/gold and restrained blue textile motifs matching source. Preserve actual construction (four stable legs for furniture, flat backs for frames, one coherent object). No existing chandelier/mirror/tea-set master duplicated. Dimensions are bounding proposals to refine by function.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Interiors and furniture"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "INT-GALLERY-PROP-001-D04__sculpture-plinth__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "INT-GALLERY-PROP-001-D05",
+      "name": "Picture light bracket",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        1,
+        0.35,
+        1
+      ],
+      "function": "Missing supporting interior components; reusable across several selected rooms",
+      "construction": "One separate picture light bracket at appropriate human scale; precise rose/ivory/gold and restrained blue textile motifs matching source. Preserve actual construction (four stable legs for furniture, flat backs for frames, one coherent object). No existing chandelier/mirror/tea-set master duplicated. Dimensions are bounding proposals to refine by function.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Interiors and furniture"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "INT-GALLERY-PROP-001-D05__picture-light-bracket__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "INT-GALLERY-PROP-001-D06",
+      "name": "Keepsake box",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        1,
+        0.35,
+        1
+      ],
+      "function": "Missing supporting interior components; reusable across several selected rooms",
+      "construction": "One separate keepsake box at appropriate human scale; precise rose/ivory/gold and restrained blue textile motifs matching source. Preserve actual construction (four stable legs for furniture, flat backs for frames, one coherent object). No existing chandelier/mirror/tea-set master duplicated. Dimensions are bounding proposals to refine by function.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Interiors and furniture"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "INT-GALLERY-PROP-001-D06__keepsake-box__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "INT-GALLERY-PROP-001-D07",
+      "name": "Hinged album",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        0.2,
+        0.12,
+        0.25
+      ],
+      "function": "Missing supporting interior components; reusable across several selected rooms",
+      "construction": "One separate hinged album at appropriate human scale; precise rose/ivory/gold and restrained blue textile motifs matching source. Preserve actual construction (four stable legs for furniture, flat backs for frames, one coherent object). No existing chandelier/mirror/tea-set master duplicated. Dimensions are bounding proposals to refine by function. SMALL attachment hardware only: plate/socket/hook/joint with its own hole/root and source-compatible quiet ornament. No lantern body, full arch, whole column, complete door, garden or giant architectural scene glued to it.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Interiors and furniture"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "INT-GALLERY-PROP-001-D07__hinged-album__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "INT-GALLERY-PROP-001-D08",
+      "name": "Carved gallery wall plaque",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        1,
+        0.35,
+        1
+      ],
+      "function": "Missing supporting interior components; reusable across several selected rooms",
+      "construction": "One separate carved gallery wall plaque at appropriate human scale; precise rose/ivory/gold and restrained blue textile motifs matching source. Preserve actual construction (four stable legs for furniture, flat backs for frames, one coherent object). No existing chandelier/mirror/tea-set master duplicated. Dimensions are bounding proposals to refine by function.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Interiors and furniture"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "INT-GALLERY-PROP-001-D08__carved-gallery-wall-plaque__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "INT-GALLERY-PROP-001-D09",
+      "name": "Display shelf corner",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        1,
+        0.35,
+        1
+      ],
+      "function": "Missing supporting interior components; reusable across several selected rooms",
+      "construction": "One separate display shelf corner at appropriate human scale; precise rose/ivory/gold and restrained blue textile motifs matching source. Preserve actual construction (four stable legs for furniture, flat backs for frames, one coherent object). No existing chandelier/mirror/tea-set master duplicated. Dimensions are bounding proposals to refine by function.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Interiors and furniture"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "INT-GALLERY-PROP-001-D09__display-shelf-corner__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "INT-GALLERY-PROP-001-D10",
+      "name": "Freestanding easel frame",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        1,
+        0.35,
+        1
+      ],
+      "function": "Missing supporting interior components; reusable across several selected rooms",
+      "construction": "One separate freestanding easel frame at appropriate human scale; precise rose/ivory/gold and restrained blue textile motifs matching source. Preserve actual construction (four stable legs for furniture, flat backs for frames, one coherent object). No existing chandelier/mirror/tea-set master duplicated. Dimensions are bounding proposals to refine by function.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Interiors and furniture"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "INT-GALLERY-PROP-001-D10__freestanding-easel-frame__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "INT-GALLERY-PROP-001-D11",
+      "name": "Small specimen bell jar",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        1,
+        0.35,
+        1
+      ],
+      "function": "Missing supporting interior components; reusable across several selected rooms",
+      "construction": "One separate small specimen bell jar at appropriate human scale; precise rose/ivory/gold and restrained blue textile motifs matching source. Preserve actual construction (four stable legs for furniture, flat backs for frames, one coherent object). No existing chandelier/mirror/tea-set master duplicated. Dimensions are bounding proposals to refine by function.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Interiors and furniture"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "INT-GALLERY-PROP-001-D11__small-specimen-bell-jar__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "INT-GALLERY-PROP-001-D12",
+      "name": "Gallery bench arm trim",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        1,
+        0.35,
+        1
+      ],
+      "function": "Missing supporting interior components; reusable across several selected rooms",
+      "construction": "One separate gallery bench arm trim at appropriate human scale; precise rose/ivory/gold and restrained blue textile motifs matching source. Preserve actual construction (four stable legs for furniture, flat backs for frames, one coherent object). No existing chandelier/mirror/tea-set master duplicated. Dimensions are bounding proposals to refine by function.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Interiors and furniture"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "INT-GALLERY-PROP-001-D12__gallery-bench-arm-trim__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    }
+  ]
+}

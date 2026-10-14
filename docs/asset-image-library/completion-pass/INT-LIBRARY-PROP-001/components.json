@@ -1,0 +1,364 @@
+{
+  "components": [
+    {
+      "asset_id": "INT-LIBRARY-PROP-001-D01",
+      "name": "Writing desk",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        1,
+        0.35,
+        1
+      ],
+      "function": "Missing supporting interior components; reusable across several selected rooms",
+      "construction": "One separate writing desk at appropriate human scale; precise rose/ivory/gold and restrained blue textile motifs matching source. Preserve actual construction (four stable legs for furniture, flat backs for frames, one coherent object). No existing chandelier/mirror/tea-set master duplicated. Dimensions are bounding proposals to refine by function.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Interiors and furniture"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "INT-LIBRARY-PROP-001-D01__writing-desk__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "INT-LIBRARY-PROP-001-D02",
+      "name": "Reading ladder",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        1,
+        0.35,
+        1
+      ],
+      "function": "Missing supporting interior components; reusable across several selected rooms",
+      "construction": "One separate reading ladder at appropriate human scale; precise rose/ivory/gold and restrained blue textile motifs matching source. Preserve actual construction (four stable legs for furniture, flat backs for frames, one coherent object). No existing chandelier/mirror/tea-set master duplicated. Dimensions are bounding proposals to refine by function.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Interiors and furniture"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "INT-LIBRARY-PROP-001-D02__reading-ladder__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "INT-LIBRARY-PROP-001-D03",
+      "name": "Book stack",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        1,
+        0.35,
+        1
+      ],
+      "function": "Missing supporting interior components; reusable across several selected rooms",
+      "construction": "One separate book stack at appropriate human scale; precise rose/ivory/gold and restrained blue textile motifs matching source. Preserve actual construction (four stable legs for furniture, flat backs for frames, one coherent object). No existing chandelier/mirror/tea-set master duplicated. Dimensions are bounding proposals to refine by function.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Interiors and furniture"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "INT-LIBRARY-PROP-001-D03__book-stack__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "INT-LIBRARY-PROP-001-D04",
+      "name": "Open illustrated book",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        1,
+        0.35,
+        1
+      ],
+      "function": "Missing supporting interior components; reusable across several selected rooms",
+      "construction": "One separate open illustrated book at appropriate human scale; precise rose/ivory/gold and restrained blue textile motifs matching source. Preserve actual construction (four stable legs for furniture, flat backs for frames, one coherent object). No existing chandelier/mirror/tea-set master duplicated. Dimensions are bounding proposals to refine by function.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Interiors and furniture"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "INT-LIBRARY-PROP-001-D04__open-illustrated-book__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "INT-LIBRARY-PROP-001-D05",
+      "name": "Closed book spine set",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        1,
+        0.35,
+        1
+      ],
+      "function": "Missing supporting interior components; reusable across several selected rooms",
+      "construction": "One separate closed book spine set at appropriate human scale; precise rose/ivory/gold and restrained blue textile motifs matching source. Preserve actual construction (four stable legs for furniture, flat backs for frames, one coherent object). No existing chandelier/mirror/tea-set master duplicated. Dimensions are bounding proposals to refine by function.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Interiors and furniture"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "INT-LIBRARY-PROP-001-D05__closed-book-spine-set__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "INT-LIBRARY-PROP-001-D06",
+      "name": "Scroll case",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        1,
+        0.35,
+        1
+      ],
+      "function": "Missing supporting interior components; reusable across several selected rooms",
+      "construction": "One separate scroll case at appropriate human scale; precise rose/ivory/gold and restrained blue textile motifs matching source. Preserve actual construction (four stable legs for furniture, flat backs for frames, one coherent object). No existing chandelier/mirror/tea-set master duplicated. Dimensions are bounding proposals to refine by function.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Interiors and furniture"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "INT-LIBRARY-PROP-001-D06__scroll-case__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "INT-LIBRARY-PROP-001-D07",
+      "name": "Rolled scroll",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        1,
+        0.35,
+        1
+      ],
+      "function": "Missing supporting interior components; reusable across several selected rooms",
+      "construction": "One separate rolled scroll at appropriate human scale; precise rose/ivory/gold and restrained blue textile motifs matching source. Preserve actual construction (four stable legs for furniture, flat backs for frames, one coherent object). No existing chandelier/mirror/tea-set master duplicated. Dimensions are bounding proposals to refine by function.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Interiors and furniture"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "INT-LIBRARY-PROP-001-D07__rolled-scroll__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "INT-LIBRARY-PROP-001-D08",
+      "name": "Quill and ink stand",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        1,
+        0.35,
+        1
+      ],
+      "function": "Missing supporting interior components; reusable across several selected rooms",
+      "construction": "One separate quill and ink stand at appropriate human scale; precise rose/ivory/gold and restrained blue textile motifs matching source. Preserve actual construction (four stable legs for furniture, flat backs for frames, one coherent object). No existing chandelier/mirror/tea-set master duplicated. Dimensions are bounding proposals to refine by function.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Interiors and furniture"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "INT-LIBRARY-PROP-001-D08__quill-and-ink-stand__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "INT-LIBRARY-PROP-001-D09",
+      "name": "Bookmark holder",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        1,
+        0.35,
+        1
+      ],
+      "function": "Missing supporting interior components; reusable across several selected rooms",
+      "construction": "One separate bookmark holder at appropriate human scale; precise rose/ivory/gold and restrained blue textile motifs matching source. Preserve actual construction (four stable legs for furniture, flat backs for frames, one coherent object). No existing chandelier/mirror/tea-set master duplicated. Dimensions are bounding proposals to refine by function.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Interiors and furniture"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "INT-LIBRARY-PROP-001-D09__bookmark-holder__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "INT-LIBRARY-PROP-001-D10",
+      "name": "Reading cushion",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        1,
+        0.35,
+        1
+      ],
+      "function": "Missing supporting interior components; reusable across several selected rooms",
+      "construction": "One separate reading cushion at appropriate human scale; precise rose/ivory/gold and restrained blue textile motifs matching source. Preserve actual construction (four stable legs for furniture, flat backs for frames, one coherent object). No existing chandelier/mirror/tea-set master duplicated. Dimensions are bounding proposals to refine by function.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Interiors and furniture"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "INT-LIBRARY-PROP-001-D10__reading-cushion__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "INT-LIBRARY-PROP-001-D11",
+      "name": "Library shelf end bracket",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        1,
+        0.35,
+        1
+      ],
+      "function": "Missing supporting interior components; reusable across several selected rooms",
+      "construction": "One separate library shelf end bracket at appropriate human scale; precise rose/ivory/gold and restrained blue textile motifs matching source. Preserve actual construction (four stable legs for furniture, flat backs for frames, one coherent object). No existing chandelier/mirror/tea-set master duplicated. Dimensions are bounding proposals to refine by function.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Interiors and furniture"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "INT-LIBRARY-PROP-001-D11__library-shelf-end-bracket__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "INT-LIBRARY-PROP-001-D12",
+      "name": "Small catalogue cabinet",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        1,
+        0.35,
+        1
+      ],
+      "function": "Missing supporting interior components; reusable across several selected rooms",
+      "construction": "One separate small catalogue cabinet at appropriate human scale; precise rose/ivory/gold and restrained blue textile motifs matching source. Preserve actual construction (four stable legs for furniture, flat backs for frames, one coherent object). No existing chandelier/mirror/tea-set master duplicated. Dimensions are bounding proposals to refine by function.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Interiors and furniture"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "INT-LIBRARY-PROP-001-D12__small-catalogue-cabinet__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    }
+  ]
+}

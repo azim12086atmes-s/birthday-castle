@@ -1,0 +1,136 @@
+{
+  "components": [
+    {
+      "asset_id": "T03-FAUNA-002-A01",
+      "name": "Blue reef fish",
+      "kind": "fauna-reference",
+      "dimensions_m_proposed": [
+        0.08,
+        0.2,
+        0.12
+      ],
+      "function": "New distinct reef animal forms, believable fish fins/gills and fivearmed sea star, coherent anemone polyp/radialtentacles. Sea anemone is animal, not tree or flower.",
+      "construction": "One isolated blue reef fish. New distinct reef animal forms, believable fish fins/gills and fivearmed sea star, coherent anemone polyp/radialtentacles. Sea anemone is animal, not tree or flower. Coherent actual silhouette, visible root/underside/side; no unrelated architecture/scenery attached. Other existing named species/forms must not be regenerated. Local material consistent with source. Dimensions are proposals to refine by subject.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Head +Y and Zup",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Coast, open sea and reefs"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "T03-FAUNA-002-A01__blue-reef-fish__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed",
+      "rig_status": "not-created",
+      "animation_status": "not-created",
+      "anatomy_verified": false
+    },
+    {
+      "asset_id": "T03-FAUNA-002-A02",
+      "name": "Striped reef fish",
+      "kind": "fauna-reference",
+      "dimensions_m_proposed": [
+        0.1,
+        0.3,
+        0.18
+      ],
+      "function": "New distinct reef animal forms, believable fish fins/gills and fivearmed sea star, coherent anemone polyp/radialtentacles. Sea anemone is animal, not tree or flower.",
+      "construction": "One isolated striped reef fish. New distinct reef animal forms, believable fish fins/gills and fivearmed sea star, coherent anemone polyp/radialtentacles. Sea anemone is animal, not tree or flower. Coherent actual silhouette, visible root/underside/side; no unrelated architecture/scenery attached. Other existing named species/forms must not be regenerated. Local material consistent with source. Dimensions are proposals to refine by subject.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Head +Y and Zup",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Coast, open sea and reefs"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "T03-FAUNA-002-A02__striped-reef-fish__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed",
+      "rig_status": "not-created",
+      "animation_status": "not-created",
+      "anatomy_verified": false
+    },
+    {
+      "asset_id": "T03-FAUNA-002-A03",
+      "name": "Small sea star",
+      "kind": "fauna-reference",
+      "dimensions_m_proposed": [
+        0.25,
+        0.25,
+        0.04
+      ],
+      "function": "New distinct reef animal forms, believable fish fins/gills and fivearmed sea star, coherent anemone polyp/radialtentacles. Sea anemone is animal, not tree or flower.",
+      "construction": "One isolated small sea star. New distinct reef animal forms, believable fish fins/gills and fivearmed sea star, coherent anemone polyp/radialtentacles. Sea anemone is animal, not tree or flower. Coherent actual silhouette, visible root/underside/side; no unrelated architecture/scenery attached. Other existing named species/forms must not be regenerated. Local material consistent with source. Dimensions are proposals to refine by subject.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Head +Y and Zup",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Coast, open sea and reefs"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "T03-FAUNA-002-A03__small-sea-star__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed",
+      "rig_status": "not-created",
+      "animation_status": "not-created",
+      "anatomy_verified": false
+    },
+    {
+      "asset_id": "T03-FAUNA-002-A04",
+      "name": "Sea anemone",
+      "kind": "fauna-reference",
+      "dimensions_m_proposed": [
+        0.2,
+        0.2,
+        0.15
+      ],
+      "function": "New distinct reef animal forms, believable fish fins/gills and fivearmed sea star, coherent anemone polyp/radialtentacles. Sea anemone is animal, not tree or flower.",
+      "construction": "One isolated sea anemone. New distinct reef animal forms, believable fish fins/gills and fivearmed sea star, coherent anemone polyp/radialtentacles. Sea anemone is animal, not tree or flower. Coherent actual silhouette, visible root/underside/side; no unrelated architecture/scenery attached. Other existing named species/forms must not be regenerated. Local material consistent with source. Dimensions are proposals to refine by subject.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Head +Y and Zup",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Coast, open sea and reefs"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "T03-FAUNA-002-A04__sea-anemone__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed",
+      "rig_status": "not-created",
+      "animation_status": "not-created",
+      "anatomy_verified": false
+    }
+  ]
+}

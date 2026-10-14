@@ -1,0 +1,381 @@
+{
+  "sheet_id": "B12-COURT-PROP-001",
+  "name": "Cottage and village exterior small objects",
+  "owner": "shared-outdoor-props-and-bridge",
+  "family": "Garden and path furniture",
+  "location_id": null,
+  "source_reference_id": "GEN-27",
+  "source_reference_file": "images/illustrated-boards/GEN-27.png",
+  "source_reference_sha256": "24c53bf783000da360b391b29640a0c2be9c30420aaf8c7152031139f5ede92f",
+  "prompt": "Create ONE clean detailed GAME ASSET REFERENCE SHEET, NOT Blender or a3Dmodel. Plain light ivory studio background, soft even light, full uncropped separate objects, readable thickness, precise non-melting forms. FULL IDs and names outside silhouettes, dimensions marked PROPOSED. Each cell independent illustration scale. No environment scenery, humans, extra unlabeled objects, watermark or whole-palace redesign. Use ONLY the single supplied source image for visible style/material/form authority; infer missing backs and assembly interfaces conservatively. Source illustration motifs are inspiration, not recovered measured geometry. Exactly12 isolated main components in a clean4-column grid. No missing/empty slots or repeated subjects counted twice. One clear front/three-quarter view with useful small rear/top/contact inset per cell. Truly flat backs for appliques, square join ends for repeat mouldings. Screens have repeated coherent holes, no tangled tendrils. Windows separate glass from surrounds, cornices/parapets and posts separate where named. Do not include large room/scenery fragments attached to a tiny detail. Title \"B12-COURT-PROP-001 \u2014 Cottage and village exterior small objects\". Footer \"Proposed construction / source-compatible references / mesh joins and views unverified\".\n\nPurpose/gap: Missing human-scale exploration clearing/village dressing, not palace-service rooms\n\nB12-COURT-PROP-001-D01 \u2014 Small well rim and winch frame. Dimensions W,D,H [0.8, 0.5, 1]m proposed. One human-scale small well rim and winch frame in cottage cedar/cream/gold source vocabulary, whole unclipped, coherent supports and useful back view. No kitchen/service fixtures or existing large door/window masters duplicated.\n\nB12-COURT-PROP-001-D02 \u2014 Wood bucket. Dimensions W,D,H [0.8, 0.5, 1]m proposed. One human-scale wood bucket in cottage cedar/cream/gold source vocabulary, whole unclipped, coherent supports and useful back view. No kitchen/service fixtures or existing large door/window masters duplicated.\n\nB12-COURT-PROP-001-D03 \u2014 Wicker flower basket. Dimensions W,D,H [0.8, 0.5, 1]m proposed. One human-scale wicker flower basket in cottage cedar/cream/gold source vocabulary, whole unclipped, coherent supports and useful back view. No kitchen/service fixtures or existing large door/window masters duplicated.\n\nB12-COURT-PROP-001-D04 \u2014 Window box corner insert. Dimensions W,D,H [0.8, 0.5, 1]m proposed. One human-scale window box corner insert in cottage cedar/cream/gold source vocabulary, whole unclipped, coherent supports and useful back view. No kitchen/service fixtures or existing large door/window masters duplicated.\n\nB12-COURT-PROP-001-D05 \u2014 Timber porch seat. Dimensions W,D,H [0.8, 0.5, 1]m proposed. One human-scale timber porch seat in cottage cedar/cream/gold source vocabulary, whole unclipped, coherent supports and useful back view. No kitchen/service fixtures or existing large door/window masters duplicated.\n\nB12-COURT-PROP-001-D06 \u2014 Hanging wind chime. Dimensions W,D,H [0.8, 0.5, 1]m proposed. One human-scale hanging wind chime in cottage cedar/cream/gold source vocabulary, whole unclipped, coherent supports and useful back view. No kitchen/service fixtures or existing large door/window masters duplicated.\n\nB12-COURT-PROP-001-D07 \u2014 Small watering pot. Dimensions W,D,H [0.8, 0.5, 1]m proposed. One human-scale small watering pot in cottage cedar/cream/gold source vocabulary, whole unclipped, coherent supports and useful back view. No kitchen/service fixtures or existing large door/window masters duplicated.\n\nB12-COURT-PROP-001-D08 \u2014 Firewood stack rack. Dimensions W,D,H [0.8, 0.5, 1]m proposed. One human-scale firewood stack rack in cottage cedar/cream/gold source vocabulary, whole unclipped, coherent supports and useful back view. No kitchen/service fixtures or existing large door/window masters duplicated.\n\nB12-COURT-PROP-001-D09 \u2014 Decorative wooden crate. Dimensions W,D,H [0.8, 0.5, 1]m proposed. One human-scale decorative wooden crate in cottage cedar/cream/gold source vocabulary, whole unclipped, coherent supports and useful back view. No kitchen/service fixtures or existing large door/window masters duplicated.\n\nB12-COURT-PROP-001-D10 \u2014 Cottage gate latch. Dimensions W,D,H [0.8, 0.5, 1]m proposed. One human-scale cottage gate latch in cottage cedar/cream/gold source vocabulary, whole unclipped, coherent supports and useful back view. No kitchen/service fixtures or existing large door/window masters duplicated.\n\nB12-COURT-PROP-001-D11 \u2014 Garden tool wall hook. Dimensions W,D,H [0.2, 0.12, 0.25]m proposed. One human-scale garden tool wall hook in cottage cedar/cream/gold source vocabulary, whole unclipped, coherent supports and useful back view. No kitchen/service fixtures or existing large door/window masters duplicated.\n\nB12-COURT-PROP-001-D12 \u2014 Cottage doorstep mat. Dimensions W,D,H [0.8, 0.5, 1]m proposed. One human-scale cottage doorstep mat in cottage cedar/cream/gold source vocabulary, whole unclipped, coherent supports and useful back view. No kitchen/service fixtures or existing large door/window masters duplicated.\n\nCRITICAL part isolation and orientation rules:\nB12-COURT-PROP-001-D11: SMALL attachment hardware only: plate/socket/hook/joint with its own hole/root and source-compatible quiet ornament. No lantern body, full arch, whole column, complete door, garden or giant architectural scene glued to it.",
+  "parts": [
+    {
+      "asset_id": "B12-COURT-PROP-001-D01",
+      "name": "Small well rim and winch frame",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        0.8,
+        0.5,
+        1
+      ],
+      "function": "Missing human-scale exploration clearing/village dressing, not palace-service rooms",
+      "construction": "One human-scale small well rim and winch frame in cottage cedar/cream/gold source vocabulary, whole unclipped, coherent supports and useful back view. No kitchen/service fixtures or existing large door/window masters duplicated.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Garden and path furniture"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B12-COURT-PROP-001-D01__small-well-rim-and-winch-frame__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "B12-COURT-PROP-001-D02",
+      "name": "Wood bucket",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        0.8,
+        0.5,
+        1
+      ],
+      "function": "Missing human-scale exploration clearing/village dressing, not palace-service rooms",
+      "construction": "One human-scale wood bucket in cottage cedar/cream/gold source vocabulary, whole unclipped, coherent supports and useful back view. No kitchen/service fixtures or existing large door/window masters duplicated.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Garden and path furniture"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B12-COURT-PROP-001-D02__wood-bucket__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "B12-COURT-PROP-001-D03",
+      "name": "Wicker flower basket",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        0.8,
+        0.5,
+        1
+      ],
+      "function": "Missing human-scale exploration clearing/village dressing, not palace-service rooms",
+      "construction": "One human-scale wicker flower basket in cottage cedar/cream/gold source vocabulary, whole unclipped, coherent supports and useful back view. No kitchen/service fixtures or existing large door/window masters duplicated.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Garden and path furniture"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B12-COURT-PROP-001-D03__wicker-flower-basket__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "B12-COURT-PROP-001-D04",
+      "name": "Window box corner insert",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        0.8,
+        0.5,
+        1
+      ],
+      "function": "Missing human-scale exploration clearing/village dressing, not palace-service rooms",
+      "construction": "One human-scale window box corner insert in cottage cedar/cream/gold source vocabulary, whole unclipped, coherent supports and useful back view. No kitchen/service fixtures or existing large door/window masters duplicated.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Garden and path furniture"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B12-COURT-PROP-001-D04__window-box-corner-insert__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "B12-COURT-PROP-001-D05",
+      "name": "Timber porch seat",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        0.8,
+        0.5,
+        1
+      ],
+      "function": "Missing human-scale exploration clearing/village dressing, not palace-service rooms",
+      "construction": "One human-scale timber porch seat in cottage cedar/cream/gold source vocabulary, whole unclipped, coherent supports and useful back view. No kitchen/service fixtures or existing large door/window masters duplicated.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Garden and path furniture"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B12-COURT-PROP-001-D05__timber-porch-seat__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "B12-COURT-PROP-001-D06",
+      "name": "Hanging wind chime",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        0.8,
+        0.5,
+        1
+      ],
+      "function": "Missing human-scale exploration clearing/village dressing, not palace-service rooms",
+      "construction": "One human-scale hanging wind chime in cottage cedar/cream/gold source vocabulary, whole unclipped, coherent supports and useful back view. No kitchen/service fixtures or existing large door/window masters duplicated.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Garden and path furniture"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B12-COURT-PROP-001-D06__hanging-wind-chime__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "B12-COURT-PROP-001-D07",
+      "name": "Small watering pot",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        0.8,
+        0.5,
+        1
+      ],
+      "function": "Missing human-scale exploration clearing/village dressing, not palace-service rooms",
+      "construction": "One human-scale small watering pot in cottage cedar/cream/gold source vocabulary, whole unclipped, coherent supports and useful back view. No kitchen/service fixtures or existing large door/window masters duplicated.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Garden and path furniture"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B12-COURT-PROP-001-D07__small-watering-pot__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "B12-COURT-PROP-001-D08",
+      "name": "Firewood stack rack",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        0.8,
+        0.5,
+        1
+      ],
+      "function": "Missing human-scale exploration clearing/village dressing, not palace-service rooms",
+      "construction": "One human-scale firewood stack rack in cottage cedar/cream/gold source vocabulary, whole unclipped, coherent supports and useful back view. No kitchen/service fixtures or existing large door/window masters duplicated.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Garden and path furniture"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B12-COURT-PROP-001-D08__firewood-stack-rack__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "B12-COURT-PROP-001-D09",
+      "name": "Decorative wooden crate",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        0.8,
+        0.5,
+        1
+      ],
+      "function": "Missing human-scale exploration clearing/village dressing, not palace-service rooms",
+      "construction": "One human-scale decorative wooden crate in cottage cedar/cream/gold source vocabulary, whole unclipped, coherent supports and useful back view. No kitchen/service fixtures or existing large door/window masters duplicated.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Garden and path furniture"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B12-COURT-PROP-001-D09__decorative-wooden-crate__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "B12-COURT-PROP-001-D10",
+      "name": "Cottage gate latch",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        0.8,
+        0.5,
+        1
+      ],
+      "function": "Missing human-scale exploration clearing/village dressing, not palace-service rooms",
+      "construction": "One human-scale cottage gate latch in cottage cedar/cream/gold source vocabulary, whole unclipped, coherent supports and useful back view. No kitchen/service fixtures or existing large door/window masters duplicated.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Garden and path furniture"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B12-COURT-PROP-001-D10__cottage-gate-latch__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "B12-COURT-PROP-001-D11",
+      "name": "Garden tool wall hook",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        0.2,
+        0.12,
+        0.25
+      ],
+      "function": "Missing human-scale exploration clearing/village dressing, not palace-service rooms",
+      "construction": "One human-scale garden tool wall hook in cottage cedar/cream/gold source vocabulary, whole unclipped, coherent supports and useful back view. No kitchen/service fixtures or existing large door/window masters duplicated. SMALL attachment hardware only: plate/socket/hook/joint with its own hole/root and source-compatible quiet ornament. No lantern body, full arch, whole column, complete door, garden or giant architectural scene glued to it.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Garden and path furniture"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B12-COURT-PROP-001-D11__garden-tool-wall-hook__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "B12-COURT-PROP-001-D12",
+      "name": "Cottage doorstep mat",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        0.8,
+        0.5,
+        1
+      ],
+      "function": "Missing human-scale exploration clearing/village dressing, not palace-service rooms",
+      "construction": "One human-scale cottage doorstep mat in cottage cedar/cream/gold source vocabulary, whole unclipped, coherent supports and useful back view. No kitchen/service fixtures or existing large door/window masters duplicated.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Garden and path furniture"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B12-COURT-PROP-001-D12__cottage-doorstep-mat__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    }
+  ],
+  "outputs": [],
+  "previous_attempts": [],
+  "models_generated": 0,
+  "physical_join_fit_verified": false,
+  "view_geometry_parity_verified": false,
+  "review_status": "planned-after-gap-audit",
+  "gap": "Missing human-scale exploration clearing/village dressing, not palace-service rooms",
+  "mode": "detail"
+}

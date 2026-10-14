@@ -2,16 +2,16 @@
   "schema_version": 1,
   "total_final_sheet_cap": 230,
   "original_boards_included": 45,
-  "generation_scope": "Asset references only; no Blender assembly or paid 3D calls in this pass",
+  "generation_scope": "Complete in-scope missing reference components across all34locations and shared families; no3D models, excluded rooms or arbitrary new mechanics",
   "counting_rule": "Count one selected final/reference image per slot and owner. Existing 45 boards are included. Direct analysis crops, previews, renders and superseded experiments stay in the archive without consuming new design slots. Shared designs count once, with multiple reuse tags.",
   "generation_rule": "Only verified missing references. Ordinary structural sheets contain 3\u20134 assemblies; tiny-component packs contain 10\u201320 objects. Do not generate repeats to fill an allowance. A directly requested full-view assembly may use one full sheet.",
   "revision_rule": "Revisions keep a slot and are tracked separately. At most two generator attempts per new slot without a new explicit review of the rejection reason; no automatic retries.",
   "global_caps": {
-    "palace": 65,
-    "other-map-buildings": 55,
-    "terrain-water-and-planting": 65,
-    "shared-outdoor-props-and-bridge": 25,
-    "maps-magic-travel-and-birthday": 20
+    "palace": 80,
+    "other-map-buildings": 58,
+    "terrain-water-and-planting": 60,
+    "shared-outdoor-props-and-bridge": 22,
+    "maps-magic-travel-and-birthday": 10
   },
   "palace_family_caps": [
     {
@@ -26,14 +26,14 @@
     },
     {
       "family": "Base, wall bodies and stepped wings",
-      "cap": 9,
+      "cap": 10,
       "existing_ids": [
         "PAL-WALL-001"
       ]
     },
     {
       "family": "Tower bodies and roof assemblies",
-      "cap": 10,
+      "cap": 12,
       "existing_ids": [
         "GEN-17",
         "GEN-32",
@@ -42,7 +42,7 @@
     },
     {
       "family": "Glass, carvings, rails and architectural fittings",
-      "cap": 18,
+      "cap": 19,
       "existing_ids": [
         "GEN-19",
         "GEN-29",
@@ -61,7 +61,7 @@
     },
     {
       "family": "Stairs, fountains, terraces and courtyards",
-      "cap": 11,
+      "cap": 12,
       "existing_ids": [
         "GEN-11",
         "GEN-14",
@@ -74,7 +74,7 @@
     },
     {
       "family": "Interiors and furniture",
-      "cap": 12,
+      "cap": 22,
       "existing_ids": [
         "GEN-07",
         "GEN-24",
@@ -89,7 +89,7 @@
     {
       "location_id": "B02",
       "name": "Moon Water Palace",
-      "dedicated_sheet_cap": 3,
+      "dedicated_sheet_cap": 5,
       "scope": "Source-dependent structure/component views plus a packed decor sheet; reuse shared parts",
       "status": "Three source-derived sheets saved; all3D and assembly scale pending",
       "generated_reference_sheet_ids": [
@@ -164,7 +164,7 @@
     {
       "location_id": "B12",
       "name": "Storybook Village",
-      "dedicated_sheet_cap": 2,
+      "dedicated_sheet_cap": 3,
       "scope": "Source-dependent structure/component views plus a packed decor sheet; reuse shared parts",
       "status": "Two pilotsheetsgenerated,source/parityandmodelreviewpending; completecitykitnotclaimed"
     },
@@ -264,11 +264,11 @@
   "terrain_location_caps": [
     {
       "location": "Palace grounds and rose gardens",
-      "cap": 12
+      "cap": 10
     },
     {
       "location": "Lantern Lake and pond habitats",
-      "cap": 6
+      "cap": 7
     },
     {
       "location": "Coast, open sea and reefs",
@@ -284,21 +284,21 @@
     },
     {
       "location": "Fjord, highland and cliffs",
-      "cap": 7
+      "cap": 6
     },
     {
       "location": "Desert, canyon and crescent-arch terrain",
-      "cap": 7
+      "cap": 5
     },
     {
       "location": "Sky-island landscape substrates",
-      "cap": 8
+      "cap": 7
     }
   ],
   "shared_outdoor_caps": [
     {
       "location_or_family": "Porcelain bridge and associated fittings",
-      "cap": 4
+      "cap": 3
     },
     {
       "location_or_family": "Garden and path furniture",
@@ -310,7 +310,7 @@
     },
     {
       "location_or_family": "Monuments and guardian pieces",
-      "cap": 5
+      "cap": 3
     },
     {
       "location_or_family": "Docks, ramps and travel infrastructure",
@@ -324,19 +324,19 @@
   "world_feature_caps": [
     {
       "family": "Maps and placements",
-      "cap": 4
+      "cap": 2
     },
     {
       "family": "Sky and magical-place artifacts",
-      "cap": 7
+      "cap": 5
     },
     {
       "family": "Travel and wishing objects",
-      "cap": 3
+      "cap": 2
     },
     {
       "family": "Birthday celebration pieces",
-      "cap": 6
+      "cap": 1
     }
   ],
   "selected_slots": [
@@ -1452,6 +1452,1160 @@
         "B02"
       ],
       "review_notes": "Twelve labelled main groups appear in4columns by3rows. Revision removes rail end posts, removes the tiny dome under D10 and changes D08 rear view to a lotus silhouette. These improve part separation, without proving exact view parity. D01 lattice remains an intricate illustrative pattern, not a validated seamless repeat. D08 front/back petals remain approximate; reconstruct a single outline for the actual mesh. Small D10 socket insets also need parity review. D03 is a smaller cusped surround proposal, not a proven fit to the large arcade opening. D02 and D09 glazing must be resized from locked host apertures; maintain lower portal passage. D04/D05 and D06/D07 profile joins, D12 curvature, repeat motifs and attachment surfaces remain unverified."
+    },
+    {
+      "sheet_id": "PAL-DOME-INNER-001",
+      "owner": "palace",
+      "family": "Tower bodies and roof assemblies",
+      "title": "Original palace \u2014 internal dome and support sections",
+      "status": "reserved-for-verified-gap",
+      "file": "",
+      "sha256": "",
+      "generation_attempts_in_this_pass": 0
+    },
+    {
+      "sheet_id": "PAL-DOME-INNER-DETAIL-001",
+      "owner": "palace",
+      "family": "Glass, carvings, rails and architectural fittings",
+      "title": "Original palace \u2014 dome ceiling and arch fittings",
+      "status": "reserved-for-verified-gap",
+      "file": "",
+      "sha256": "",
+      "generation_attempts_in_this_pass": 0
+    },
+    {
+      "sheet_id": "PAL-ROOF-GARDEN-JOIN-001",
+      "owner": "palace",
+      "family": "Base, wall bodies and stepped wings",
+      "title": "Original palace \u2014 roof court and wing terrace joins",
+      "status": "reserved-for-verified-gap",
+      "file": "",
+      "sha256": "",
+      "generation_attempts_in_this_pass": 0
+    },
+    {
+      "sheet_id": "PAL-SKY-SUPPORT-001",
+      "owner": "palace",
+      "family": "Tower bodies and roof assemblies",
+      "title": "Original palace \u2014 delicate platform supports",
+      "status": "reserved-for-verified-gap",
+      "file": "",
+      "sha256": "",
+      "generation_attempts_in_this_pass": 0
+    },
+    {
+      "sheet_id": "PAL-TERRACE-STAIR-JOIN-001",
+      "owner": "palace",
+      "family": "Stairs, fountains, terraces and courtyards",
+      "title": "Original palace \u2014 stair landing and level connections",
+      "status": "reserved-for-verified-gap",
+      "file": "",
+      "sha256": "",
+      "generation_attempts_in_this_pass": 0
+    },
+    {
+      "sheet_id": "INT-THRONE-SHELL-001",
+      "owner": "palace",
+      "family": "Interiors and furniture",
+      "title": "Throne \u2014 interior shell sections",
+      "status": "reserved-for-verified-gap",
+      "file": "",
+      "sha256": "",
+      "generation_attempts_in_this_pass": 0
+    },
+    {
+      "sheet_id": "INT-LIBRARY-SHELL-001",
+      "owner": "palace",
+      "family": "Interiors and furniture",
+      "title": "Library \u2014 interior shell sections",
+      "status": "reserved-for-verified-gap",
+      "file": "",
+      "sha256": "",
+      "generation_attempts_in_this_pass": 0
+    },
+    {
+      "sheet_id": "INT-CONSERV-SHELL-001",
+      "owner": "palace",
+      "family": "Interiors and furniture",
+      "title": "Conserv \u2014 interior shell sections",
+      "status": "reserved-for-verified-gap",
+      "file": "",
+      "sha256": "",
+      "generation_attempts_in_this_pass": 0
+    },
+    {
+      "sheet_id": "INT-SUITE-SHELL-001",
+      "owner": "palace",
+      "family": "Interiors and furniture",
+      "title": "Suite \u2014 interior shell sections",
+      "status": "reserved-for-verified-gap",
+      "file": "",
+      "sha256": "",
+      "generation_attempts_in_this_pass": 0
+    },
+    {
+      "sheet_id": "INT-SUITE-FURN-001",
+      "owner": "palace",
+      "family": "Interiors and furniture",
+      "title": "Princess bedroom and dressing furniture",
+      "status": "reserved-for-verified-gap",
+      "file": "",
+      "sha256": "",
+      "generation_attempts_in_this_pass": 0
+    },
+    {
+      "sheet_id": "INT-DINING-FURN-001",
+      "owner": "palace",
+      "family": "Interiors and furniture",
+      "title": "Dining and tea furniture sections",
+      "status": "reserved-for-verified-gap",
+      "file": "",
+      "sha256": "",
+      "generation_attempts_in_this_pass": 0
+    },
+    {
+      "sheet_id": "INT-LIBRARY-PROP-001",
+      "owner": "palace",
+      "family": "Interiors and furniture",
+      "title": "Library Prop",
+      "status": "reserved-for-verified-gap",
+      "file": "",
+      "sha256": "",
+      "generation_attempts_in_this_pass": 0
+    },
+    {
+      "sheet_id": "INT-GALLERY-PROP-001",
+      "owner": "palace",
+      "family": "Interiors and furniture",
+      "title": "Gallery Prop",
+      "status": "reserved-for-verified-gap",
+      "file": "",
+      "sha256": "",
+      "generation_attempts_in_this_pass": 0
+    },
+    {
+      "sheet_id": "INT-ATELIER-PROP-001",
+      "owner": "palace",
+      "family": "Interiors and furniture",
+      "title": "Atelier Prop",
+      "status": "reserved-for-verified-gap",
+      "file": "",
+      "sha256": "",
+      "generation_attempts_in_this_pass": 0
+    },
+    {
+      "sheet_id": "INT-TEXTILE-JOINS-001",
+      "owner": "palace",
+      "family": "Interiors and furniture",
+      "title": "Textile Joins",
+      "status": "reserved-for-verified-gap",
+      "file": "",
+      "sha256": "",
+      "generation_attempts_in_this_pass": 0
+    },
+    {
+      "sheet_id": "B02-INNER-001",
+      "owner": "other-map-buildings",
+      "family": "B02",
+      "title": "Moon Water Palace \u2014 dome interior construction",
+      "status": "generated-pending-reference-and-model-review",
+      "file": "completion-pass/B02-INNER-001/B02-INNER-001.png",
+      "sha256": "6a9cf76baed7a028bd948bf3d85cb35ac512325728944290179fad31f4e3d999",
+      "generation_attempts_in_this_pass": 1,
+      "component_count": 4,
+      "review_notes": "Four groups visible; source-compatible pearl dome/arch vocabulary. Gallery is drawn as a complete ring rather than a fitted segment; section/plan dimensions and interfaces need construction review.",
+      "location_ids": [
+        "B02"
+      ]
+    },
+    {
+      "sheet_id": "B02-INNER-DETAIL-001",
+      "owner": "other-map-buildings",
+      "family": "B02",
+      "title": "Moon Water Palace \u2014 interior surfaces and fittings",
+      "status": "generated-pending-reference-and-model-review",
+      "file": "completion-pass/B02-INNER-DETAIL-001/B02-INNER-DETAIL-001.png",
+      "sha256": "41b1c1d84f667955c147e25443762c183e171f44f295d9fcc5f23c3f91d34b9c",
+      "generation_attempts_in_this_pass": 1,
+      "component_count": 16,
+      "review_notes": "Sixteen groups visible; source pearl/gold/blue accents. Short Dcodes resolve under full sheet header. Lattice/ceiling repeats, floor-plane orientation and some small attachment shapes remain approximate.",
+      "location_ids": [
+        "B02"
+      ]
+    },
+    {
+      "sheet_id": "B03-STRUCT-001",
+      "owner": "other-map-buildings",
+      "family": "B03",
+      "title": "Star Chapel \u2014 structural sections",
+      "status": "reserved-for-verified-gap",
+      "file": "",
+      "sha256": "",
+      "generation_attempts_in_this_pass": 0
+    },
+    {
+      "sheet_id": "B03-DETAIL-001",
+      "owner": "other-map-buildings",
+      "family": "B03",
+      "title": "Star Chapel \u2014 surface and detail kit",
+      "status": "reserved-for-verified-gap",
+      "file": "",
+      "sha256": "",
+      "generation_attempts_in_this_pass": 0
+    },
+    {
+      "sheet_id": "B04-STRUCT-001",
+      "owner": "other-map-buildings",
+      "family": "B04",
+      "title": "Rose Keep \u2014 structural sections",
+      "status": "reserved-for-verified-gap",
+      "file": "",
+      "sha256": "",
+      "generation_attempts_in_this_pass": 0
+    },
+    {
+      "sheet_id": "B04-DETAIL-001",
+      "owner": "other-map-buildings",
+      "family": "B04",
+      "title": "Rose Keep \u2014 surface and detail kit",
+      "status": "reserved-for-verified-gap",
+      "file": "",
+      "sha256": "",
+      "generation_attempts_in_this_pass": 0
+    },
+    {
+      "sheet_id": "B05-STRUCT-001",
+      "owner": "other-map-buildings",
+      "family": "B05",
+      "title": "Misty Lantern Keep \u2014 structural sections",
+      "status": "reserved-for-verified-gap",
+      "file": "",
+      "sha256": "",
+      "generation_attempts_in_this_pass": 0
+    },
+    {
+      "sheet_id": "B05-DETAIL-001",
+      "owner": "other-map-buildings",
+      "family": "B05",
+      "title": "Misty Lantern Keep \u2014 surface and detail kit",
+      "status": "reserved-for-verified-gap",
+      "file": "",
+      "sha256": "",
+      "generation_attempts_in_this_pass": 0
+    },
+    {
+      "sheet_id": "B06-STRUCT-001",
+      "owner": "other-map-buildings",
+      "family": "B06",
+      "title": "Misty Pagoda \u2014 structural sections",
+      "status": "reserved-for-verified-gap",
+      "file": "",
+      "sha256": "",
+      "generation_attempts_in_this_pass": 0
+    },
+    {
+      "sheet_id": "B06-DETAIL-001",
+      "owner": "other-map-buildings",
+      "family": "B06",
+      "title": "Misty Pagoda \u2014 surface and detail kit",
+      "status": "reserved-for-verified-gap",
+      "file": "",
+      "sha256": "",
+      "generation_attempts_in_this_pass": 0
+    },
+    {
+      "sheet_id": "B07-STRUCT-001",
+      "owner": "other-map-buildings",
+      "family": "B07",
+      "title": "Temple Hill Rotundas \u2014 structural sections",
+      "status": "reserved-for-verified-gap",
+      "file": "",
+      "sha256": "",
+      "generation_attempts_in_this_pass": 0
+    },
+    {
+      "sheet_id": "B07-DETAIL-001",
+      "owner": "other-map-buildings",
+      "family": "B07",
+      "title": "Temple Hill Rotundas \u2014 surface and detail kit",
+      "status": "reserved-for-verified-gap",
+      "file": "",
+      "sha256": "",
+      "generation_attempts_in_this_pass": 0
+    },
+    {
+      "sheet_id": "B08-STRUCT-001",
+      "owner": "other-map-buildings",
+      "family": "B08",
+      "title": "Colosseum of Wishes \u2014 structural sections",
+      "status": "reserved-for-verified-gap",
+      "file": "",
+      "sha256": "",
+      "generation_attempts_in_this_pass": 0
+    },
+    {
+      "sheet_id": "B08-DETAIL-001",
+      "owner": "other-map-buildings",
+      "family": "B08",
+      "title": "Colosseum of Wishes \u2014 surface and detail kit",
+      "status": "reserved-for-verified-gap",
+      "file": "",
+      "sha256": "",
+      "generation_attempts_in_this_pass": 0
+    },
+    {
+      "sheet_id": "B09-STRUCT-001",
+      "owner": "other-map-buildings",
+      "family": "B09",
+      "title": "Lagoon City \u2014 structural sections",
+      "status": "reserved-for-verified-gap",
+      "file": "",
+      "sha256": "",
+      "generation_attempts_in_this_pass": 0
+    },
+    {
+      "sheet_id": "B09-DETAIL-001",
+      "owner": "other-map-buildings",
+      "family": "B09",
+      "title": "Lagoon City \u2014 surface and detail kit",
+      "status": "reserved-for-verified-gap",
+      "file": "",
+      "sha256": "",
+      "generation_attempts_in_this_pass": 0
+    },
+    {
+      "sheet_id": "B10-STRUCT-001",
+      "owner": "other-map-buildings",
+      "family": "B10",
+      "title": "Canyon Moon Palace \u2014 structural sections",
+      "status": "reserved-for-verified-gap",
+      "file": "",
+      "sha256": "",
+      "generation_attempts_in_this_pass": 0
+    },
+    {
+      "sheet_id": "B10-DETAIL-001",
+      "owner": "other-map-buildings",
+      "family": "B10",
+      "title": "Canyon Moon Palace \u2014 surface and detail kit",
+      "status": "reserved-for-verified-gap",
+      "file": "",
+      "sha256": "",
+      "generation_attempts_in_this_pass": 0
+    },
+    {
+      "sheet_id": "B10-INNER-001",
+      "owner": "other-map-buildings",
+      "family": "B10",
+      "title": "Canyon Moon Palace \u2014 interior and court sections",
+      "status": "reserved-for-verified-gap",
+      "file": "",
+      "sha256": "",
+      "generation_attempts_in_this_pass": 0
+    },
+    {
+      "sheet_id": "B11-STRUCT-001",
+      "owner": "other-map-buildings",
+      "family": "B11",
+      "title": "Crescent Rock Arch \u2014 structural sections",
+      "status": "reserved-for-verified-gap",
+      "file": "",
+      "sha256": "",
+      "generation_attempts_in_this_pass": 0
+    },
+    {
+      "sheet_id": "B11-DETAIL-001",
+      "owner": "other-map-buildings",
+      "family": "B11",
+      "title": "Crescent Rock Arch \u2014 surface and detail kit",
+      "status": "reserved-for-verified-gap",
+      "file": "",
+      "sha256": "",
+      "generation_attempts_in_this_pass": 0
+    },
+    {
+      "sheet_id": "B13-STRUCT-001",
+      "owner": "other-map-buildings",
+      "family": "B13",
+      "title": "Storybook Windmill \u2014 structural sections",
+      "status": "reserved-for-verified-gap",
+      "file": "",
+      "sha256": "",
+      "generation_attempts_in_this_pass": 0
+    },
+    {
+      "sheet_id": "B13-DETAIL-001",
+      "owner": "other-map-buildings",
+      "family": "B13",
+      "title": "Storybook Windmill \u2014 surface and detail kit",
+      "status": "reserved-for-verified-gap",
+      "file": "",
+      "sha256": "",
+      "generation_attempts_in_this_pass": 0
+    },
+    {
+      "sheet_id": "B14-STRUCT-001",
+      "owner": "other-map-buildings",
+      "family": "B14",
+      "title": "Pillar Sky City \u2014 structural sections",
+      "status": "reserved-for-verified-gap",
+      "file": "",
+      "sha256": "",
+      "generation_attempts_in_this_pass": 0
+    },
+    {
+      "sheet_id": "B14-DETAIL-001",
+      "owner": "other-map-buildings",
+      "family": "B14",
+      "title": "Pillar Sky City \u2014 surface and detail kit",
+      "status": "reserved-for-verified-gap",
+      "file": "",
+      "sha256": "",
+      "generation_attempts_in_this_pass": 0
+    },
+    {
+      "sheet_id": "B15-STRUCT-001",
+      "owner": "other-map-buildings",
+      "family": "B15",
+      "title": "Jade Jungle Temple \u2014 structural sections",
+      "status": "reserved-for-verified-gap",
+      "file": "",
+      "sha256": "",
+      "generation_attempts_in_this_pass": 0
+    },
+    {
+      "sheet_id": "B15-DETAIL-001",
+      "owner": "other-map-buildings",
+      "family": "B15",
+      "title": "Jade Jungle Temple \u2014 surface and detail kit",
+      "status": "reserved-for-verified-gap",
+      "file": "",
+      "sha256": "",
+      "generation_attempts_in_this_pass": 0
+    },
+    {
+      "sheet_id": "B15-INNER-001",
+      "owner": "other-map-buildings",
+      "family": "B15",
+      "title": "Jade Jungle Temple \u2014 interior and court sections",
+      "status": "reserved-for-verified-gap",
+      "file": "",
+      "sha256": "",
+      "generation_attempts_in_this_pass": 0
+    },
+    {
+      "sheet_id": "B16-STRUCT-001",
+      "owner": "other-map-buildings",
+      "family": "B16",
+      "title": "Fjord Longhouse \u2014 structural sections",
+      "status": "reserved-for-verified-gap",
+      "file": "",
+      "sha256": "",
+      "generation_attempts_in_this_pass": 0
+    },
+    {
+      "sheet_id": "B16-DETAIL-001",
+      "owner": "other-map-buildings",
+      "family": "B16",
+      "title": "Fjord Longhouse \u2014 surface and detail kit",
+      "status": "reserved-for-verified-gap",
+      "file": "",
+      "sha256": "",
+      "generation_attempts_in_this_pass": 0
+    },
+    {
+      "sheet_id": "B17-STRUCT-001",
+      "owner": "other-map-buildings",
+      "family": "B17",
+      "title": "Glowwood Ruin Court \u2014 structural sections",
+      "status": "reserved-for-verified-gap",
+      "file": "",
+      "sha256": "",
+      "generation_attempts_in_this_pass": 0
+    },
+    {
+      "sheet_id": "B17-DETAIL-001",
+      "owner": "other-map-buildings",
+      "family": "B17",
+      "title": "Glowwood Ruin Court \u2014 surface and detail kit",
+      "status": "reserved-for-verified-gap",
+      "file": "",
+      "sha256": "",
+      "generation_attempts_in_this_pass": 0
+    },
+    {
+      "sheet_id": "B18-STRUCT-001",
+      "owner": "other-map-buildings",
+      "family": "B18",
+      "title": "Mother Tree Sanctuary \u2014 structural sections",
+      "status": "reserved-for-verified-gap",
+      "file": "",
+      "sha256": "",
+      "generation_attempts_in_this_pass": 0
+    },
+    {
+      "sheet_id": "B18-DETAIL-001",
+      "owner": "other-map-buildings",
+      "family": "B18",
+      "title": "Mother Tree Sanctuary \u2014 surface and detail kit",
+      "status": "reserved-for-verified-gap",
+      "file": "",
+      "sha256": "",
+      "generation_attempts_in_this_pass": 0
+    },
+    {
+      "sheet_id": "B19-STRUCT-001",
+      "owner": "other-map-buildings",
+      "family": "B19",
+      "title": "Lantern Cove Gatehouse \u2014 structural sections",
+      "status": "reserved-for-verified-gap",
+      "file": "",
+      "sha256": "",
+      "generation_attempts_in_this_pass": 0
+    },
+    {
+      "sheet_id": "B19-DETAIL-001",
+      "owner": "other-map-buildings",
+      "family": "B19",
+      "title": "Lantern Cove Gatehouse \u2014 surface and detail kit",
+      "status": "reserved-for-verified-gap",
+      "file": "",
+      "sha256": "",
+      "generation_attempts_in_this_pass": 0
+    },
+    {
+      "sheet_id": "B20-STRUCT-001",
+      "owner": "other-map-buildings",
+      "family": "B20",
+      "title": "Glass Bridge Pavilions \u2014 structural sections",
+      "status": "reserved-for-verified-gap",
+      "file": "",
+      "sha256": "",
+      "generation_attempts_in_this_pass": 0
+    },
+    {
+      "sheet_id": "B20-DETAIL-001",
+      "owner": "other-map-buildings",
+      "family": "B20",
+      "title": "Glass Bridge Pavilions \u2014 surface and detail kit",
+      "status": "reserved-for-verified-gap",
+      "file": "",
+      "sha256": "",
+      "generation_attempts_in_this_pass": 0
+    },
+    {
+      "sheet_id": "B21-STRUCT-001",
+      "owner": "other-map-buildings",
+      "family": "B21",
+      "title": "Tidal Observatory \u2014 structural sections",
+      "status": "reserved-for-verified-gap",
+      "file": "",
+      "sha256": "",
+      "generation_attempts_in_this_pass": 0
+    },
+    {
+      "sheet_id": "B21-DETAIL-001",
+      "owner": "other-map-buildings",
+      "family": "B21",
+      "title": "Tidal Observatory \u2014 surface and detail kit",
+      "status": "reserved-for-verified-gap",
+      "file": "",
+      "sha256": "",
+      "generation_attempts_in_this_pass": 0
+    },
+    {
+      "sheet_id": "B22-STRUCT-001",
+      "owner": "other-map-buildings",
+      "family": "B22",
+      "title": "Pearl Harbor Lighthouse \u2014 structural sections",
+      "status": "reserved-for-verified-gap",
+      "file": "",
+      "sha256": "",
+      "generation_attempts_in_this_pass": 0
+    },
+    {
+      "sheet_id": "B22-DETAIL-001",
+      "owner": "other-map-buildings",
+      "family": "B22",
+      "title": "Pearl Harbor Lighthouse \u2014 surface and detail kit",
+      "status": "reserved-for-verified-gap",
+      "file": "",
+      "sha256": "",
+      "generation_attempts_in_this_pass": 0
+    },
+    {
+      "sheet_id": "B23-STRUCT-001",
+      "owner": "other-map-buildings",
+      "family": "B23",
+      "title": "Sea Pavilion \u2014 structural sections",
+      "status": "reserved-for-verified-gap",
+      "file": "",
+      "sha256": "",
+      "generation_attempts_in_this_pass": 0
+    },
+    {
+      "sheet_id": "B23-DETAIL-001",
+      "owner": "other-map-buildings",
+      "family": "B23",
+      "title": "Sea Pavilion \u2014 surface and detail kit",
+      "status": "reserved-for-verified-gap",
+      "file": "",
+      "sha256": "",
+      "generation_attempts_in_this_pass": 0
+    },
+    {
+      "sheet_id": "B24-STRUCT-001",
+      "owner": "other-map-buildings",
+      "family": "B24",
+      "title": "Reef Star Shrine \u2014 structural sections",
+      "status": "reserved-for-verified-gap",
+      "file": "",
+      "sha256": "",
+      "generation_attempts_in_this_pass": 0
+    },
+    {
+      "sheet_id": "B24-DETAIL-001",
+      "owner": "other-map-buildings",
+      "family": "B24",
+      "title": "Reef Star Shrine \u2014 surface and detail kit",
+      "status": "reserved-for-verified-gap",
+      "file": "",
+      "sha256": "",
+      "generation_attempts_in_this_pass": 0
+    },
+    {
+      "sheet_id": "B25-STRUCT-001",
+      "owner": "other-map-buildings",
+      "family": "B25",
+      "title": "Crystal Conservatory \u2014 structural sections",
+      "status": "reserved-for-verified-gap",
+      "file": "",
+      "sha256": "",
+      "generation_attempts_in_this_pass": 0
+    },
+    {
+      "sheet_id": "B25-DETAIL-001",
+      "owner": "other-map-buildings",
+      "family": "B25",
+      "title": "Crystal Conservatory \u2014 surface and detail kit",
+      "status": "reserved-for-verified-gap",
+      "file": "",
+      "sha256": "",
+      "generation_attempts_in_this_pass": 0
+    },
+    {
+      "sheet_id": "B25-INNER-001",
+      "owner": "other-map-buildings",
+      "family": "B25",
+      "title": "Crystal Conservatory \u2014 interior and court sections",
+      "status": "reserved-for-verified-gap",
+      "file": "",
+      "sha256": "",
+      "generation_attempts_in_this_pass": 0
+    },
+    {
+      "sheet_id": "B12-CITY-001",
+      "owner": "other-map-buildings",
+      "family": "B12",
+      "title": "Storybook Village \u2014 connected street and house joins",
+      "status": "reserved-for-verified-gap",
+      "file": "",
+      "sha256": "",
+      "generation_attempts_in_this_pass": 0
+    },
+    {
+      "sheet_id": "WLD-WATER-STRUCT-001",
+      "owner": "shared-outdoor-props-and-bridge",
+      "family": "Water-garden fittings",
+      "title": "Shared rills and pool connections",
+      "status": "generated-pending-reference-and-model-review",
+      "file": "completion-pass/WLD-WATER-STRUCT-001/WLD-WATER-STRUCT-001.png",
+      "sha256": "787e9646b239ca554e5ce399b883572d202f32dc5a7c87d51a974bc19c1f8e99",
+      "generation_attempts_in_this_pass": 1,
+      "component_count": 4,
+      "review_notes": "Four groups visible including Tjunction. Ports and open channel shown; water illustration is not solid geometry. End port widths, corner radius and rim height not evaluated meshes.",
+      "location_ids": []
+    },
+    {
+      "sheet_id": "WLD-WATER-DETAIL-001",
+      "owner": "shared-outdoor-props-and-bridge",
+      "family": "Water-garden fittings",
+      "title": "Shared water edge and channel fittings",
+      "status": "generated-pending-reference-and-model-review",
+      "file": "completion-pass/WLD-WATER-DETAIL-001/WLD-WATER-DETAIL-001.png",
+      "sha256": "d2a6f358347de8e75391ee97efac3eb9e2dff79b0bdbd6a8faf01d26dbddbd92",
+      "generation_attempts_in_this_pass": 2,
+      "retry_reasons": [
+        "Correct named parts that were drawn as whole assemblies"
+      ],
+      "component_count": 12,
+      "review_notes": "Twelve groups visible; corrected D08small seam strip, D10single divider and D11graduated ruler plaque. Profiles/seams and water effects remain unverified.",
+      "location_ids": []
+    },
+    {
+      "sheet_id": "WLD-FOUNTAIN-STRUCT-001",
+      "owner": "shared-outdoor-props-and-bridge",
+      "family": "Water-garden fittings",
+      "title": "Shared small fountain construction",
+      "status": "reserved-for-verified-gap",
+      "file": "",
+      "sha256": "",
+      "generation_attempts_in_this_pass": 0
+    },
+    {
+      "sheet_id": "WLD-GARDEN-SUPPORT-001",
+      "owner": "shared-outdoor-props-and-bridge",
+      "family": "Garden and path furniture",
+      "title": "Garden and habitat supporting objects",
+      "status": "reserved-for-verified-gap",
+      "file": "",
+      "sha256": "",
+      "generation_attempts_in_this_pass": 0
+    },
+    {
+      "sheet_id": "WLD-LIGHT-MOUNTS-001",
+      "owner": "shared-outdoor-props-and-bridge",
+      "family": "Lighting and wayfinding",
+      "title": "Shared lighting attachment kit",
+      "status": "reserved-for-verified-gap",
+      "file": "",
+      "sha256": "",
+      "generation_attempts_in_this_pass": 0
+    },
+    {
+      "sheet_id": "WLD-WAYFIND-001",
+      "owner": "shared-outdoor-props-and-bridge",
+      "family": "Lighting and wayfinding",
+      "title": "Destination and exploration sign components",
+      "status": "reserved-for-verified-gap",
+      "file": "",
+      "sha256": "",
+      "generation_attempts_in_this_pass": 0
+    },
+    {
+      "sheet_id": "WLD-PORT-STRUCT-001",
+      "owner": "shared-outdoor-props-and-bridge",
+      "family": "Docks, ramps and travel infrastructure",
+      "title": "Docks and shore arrival construction",
+      "status": "reserved-for-verified-gap",
+      "file": "",
+      "sha256": "",
+      "generation_attempts_in_this_pass": 0
+    },
+    {
+      "sheet_id": "WLD-PORT-DETAIL-001",
+      "owner": "shared-outdoor-props-and-bridge",
+      "family": "Docks, ramps and travel infrastructure",
+      "title": "Dock and travel hardware",
+      "status": "reserved-for-verified-gap",
+      "file": "",
+      "sha256": "",
+      "generation_attempts_in_this_pass": 0
+    },
+    {
+      "sheet_id": "B12-COURT-PROP-001",
+      "owner": "shared-outdoor-props-and-bridge",
+      "family": "Garden and path furniture",
+      "title": "Cottage and village exterior small objects",
+      "status": "reserved-for-verified-gap",
+      "file": "",
+      "sha256": "",
+      "generation_attempts_in_this_pass": 0
+    },
+    {
+      "sheet_id": "WLD-BRIDGE-JOINS-001",
+      "owner": "shared-outdoor-props-and-bridge",
+      "family": "Porcelain bridge and associated fittings",
+      "title": "Bridge abutment and level joins",
+      "status": "reserved-for-verified-gap",
+      "file": "",
+      "sha256": "",
+      "generation_attempts_in_this_pass": 0
+    },
+    {
+      "sheet_id": "T02-BANK-001",
+      "owner": "terrain-water-and-planting",
+      "family": "Lantern Lake and pond habitats",
+      "title": "Freshwater banks and pool terrain joins",
+      "status": "reserved-for-verified-gap",
+      "file": "",
+      "sha256": "",
+      "generation_attempts_in_this_pass": 0
+    },
+    {
+      "sheet_id": "T02-FAUNA-001",
+      "owner": "terrain-water-and-planting",
+      "family": "Lantern Lake and pond habitats",
+      "title": "Freshwater pond fauna",
+      "status": "generated-pending-reference-and-model-review",
+      "file": "completion-pass/T02-FAUNA-001/T02-FAUNA-001.png",
+      "sha256": "3c6787f99501124fd46fc662466aaf8e508c1b2616ded171fcaa8bc88229145f",
+      "generation_attempts_in_this_pass": 1,
+      "component_count": 4,
+      "review_notes": "Four ordinary animal groups with main/front/back views. Fine frog/turtle toe/limb anatomy and bird wing unfolding require review, not a rig.",
+      "location_ids": []
+    },
+    {
+      "sheet_id": "T02-FAUNA-002",
+      "owner": "terrain-water-and-planting",
+      "family": "Lantern Lake and pond habitats",
+      "title": "Freshwater fish references",
+      "status": "generated-pending-reference-and-model-review",
+      "file": "completion-pass/T02-FAUNA-002/T02-FAUNA-002.png",
+      "sha256": "f68f79595b069c0d60707c9022b86b5aafb75f1346963a93438b1e8a68289250",
+      "generation_attempts_in_this_pass": 1,
+      "component_count": 4,
+      "review_notes": "Four distinct fish groups with complete side/top/front views; fin roots and exact markings differ subtly and anatomy is not validated.",
+      "location_ids": []
+    },
+    {
+      "sheet_id": "T03-ROCK-001",
+      "owner": "terrain-water-and-planting",
+      "family": "Coast, open sea and reefs",
+      "title": "Coastal rock and shore transitions",
+      "status": "reserved-for-verified-gap",
+      "file": "",
+      "sha256": "",
+      "generation_attempts_in_this_pass": 0
+    },
+    {
+      "sheet_id": "T03-FLORA-001",
+      "owner": "terrain-water-and-planting",
+      "family": "Coast, open sea and reefs",
+      "title": "Coastal plant forms",
+      "status": "reserved-for-verified-gap",
+      "file": "",
+      "sha256": "",
+      "generation_attempts_in_this_pass": 0
+    },
+    {
+      "sheet_id": "T03-FAUNA-001",
+      "owner": "terrain-water-and-planting",
+      "family": "Coast, open sea and reefs",
+      "title": "Coastal birds and shore animals",
+      "status": "reserved-for-verified-gap",
+      "file": "",
+      "sha256": "",
+      "generation_attempts_in_this_pass": 0
+    },
+    {
+      "sheet_id": "T03-FAUNA-002",
+      "owner": "terrain-water-and-planting",
+      "family": "Coast, open sea and reefs",
+      "title": "Reef fish and sea life",
+      "status": "reserved-for-verified-gap",
+      "file": "",
+      "sha256": "",
+      "generation_attempts_in_this_pass": 0
+    },
+    {
+      "sheet_id": "T03-CORAL-001",
+      "owner": "terrain-water-and-planting",
+      "family": "Coast, open sea and reefs",
+      "title": "Living coral growth forms",
+      "status": "reserved-for-verified-gap",
+      "file": "",
+      "sha256": "",
+      "generation_attempts_in_this_pass": 0
+    },
+    {
+      "sheet_id": "T03-SHORE-001",
+      "owner": "terrain-water-and-planting",
+      "family": "Coast, open sea and reefs",
+      "title": "Coastal sand and bank modules",
+      "status": "reserved-for-verified-gap",
+      "file": "",
+      "sha256": "",
+      "generation_attempts_in_this_pass": 0
+    },
+    {
+      "sheet_id": "T04-CANOPY-001",
+      "owner": "terrain-water-and-planting",
+      "family": "Jade jungle and wetlands",
+      "title": "Jade jungle canopy trees",
+      "status": "reserved-for-verified-gap",
+      "file": "",
+      "sha256": "",
+      "generation_attempts_in_this_pass": 0
+    },
+    {
+      "sheet_id": "T04-FLORA-001",
+      "owner": "terrain-water-and-planting",
+      "family": "Jade jungle and wetlands",
+      "title": "Jungle understory and vines",
+      "status": "reserved-for-verified-gap",
+      "file": "",
+      "sha256": "",
+      "generation_attempts_in_this_pass": 0
+    },
+    {
+      "sheet_id": "T04-FAUNA-001",
+      "owner": "terrain-water-and-planting",
+      "family": "Jade jungle and wetlands",
+      "title": "Jungle small wildlife",
+      "status": "reserved-for-verified-gap",
+      "file": "",
+      "sha256": "",
+      "generation_attempts_in_this_pass": 0
+    },
+    {
+      "sheet_id": "T04-GROUND-001",
+      "owner": "terrain-water-and-planting",
+      "family": "Jade jungle and wetlands",
+      "title": "Jungle roots and wet terrain joins",
+      "status": "reserved-for-verified-gap",
+      "file": "",
+      "sha256": "",
+      "generation_attempts_in_this_pass": 0
+    },
+    {
+      "sheet_id": "T05-CONIFER-001",
+      "owner": "terrain-water-and-planting",
+      "family": "Forest and Mother Tree environs",
+      "title": "Mistwood and woodland evergreen trees",
+      "status": "generated-pending-reference-and-model-review",
+      "file": "completion-pass/T05-CONIFER-001/T05-CONIFER-001.png",
+      "sha256": "dfc403126f99318a3f2c2c06679f9ce46c8c9ca522d4351c69196d953b5e9382",
+      "generation_attempts_in_this_pass": 1,
+      "component_count": 4,
+      "review_notes": "Four groups visible. Young group contains three tree forms at10/8/6m while heading says16m; use10m proposed group envelope and resolve labels before model intake. Scots pine is a taller forest form inspired by original coastal pine, not a new biology validation.",
+      "location_ids": []
+    },
+    {
+      "sheet_id": "T05-FOREST-JOIN-001",
+      "owner": "terrain-water-and-planting",
+      "family": "Forest and Mother Tree environs",
+      "title": "Forest clearing terrain connections",
+      "status": "reserved-for-verified-gap",
+      "file": "",
+      "sha256": "",
+      "generation_attempts_in_this_pass": 0
+    },
+    {
+      "sheet_id": "T06-FLORA-001",
+      "owner": "terrain-water-and-planting",
+      "family": "Fjord, highland and cliffs",
+      "title": "Fjord and highland planting",
+      "status": "reserved-for-verified-gap",
+      "file": "",
+      "sha256": "",
+      "generation_attempts_in_this_pass": 0
+    },
+    {
+      "sheet_id": "T06-ROCK-001",
+      "owner": "terrain-water-and-planting",
+      "family": "Fjord, highland and cliffs",
+      "title": "Fjord cliff and highland stone joins",
+      "status": "reserved-for-verified-gap",
+      "file": "",
+      "sha256": "",
+      "generation_attempts_in_this_pass": 0
+    },
+    {
+      "sheet_id": "T07-ROCK-001",
+      "owner": "terrain-water-and-planting",
+      "family": "Desert, canyon and crescent-arch terrain",
+      "title": "Canyon and crescent rock terrain",
+      "status": "reserved-for-verified-gap",
+      "file": "",
+      "sha256": "",
+      "generation_attempts_in_this_pass": 0
+    },
+    {
+      "sheet_id": "T07-FLORA-001",
+      "owner": "terrain-water-and-planting",
+      "family": "Desert, canyon and crescent-arch terrain",
+      "title": "Dry cliff and oasis planting",
+      "status": "reserved-for-verified-gap",
+      "file": "",
+      "sha256": "",
+      "generation_attempts_in_this_pass": 0
+    },
+    {
+      "sheet_id": "T07-FAUNA-001",
+      "owner": "terrain-water-and-planting",
+      "family": "Desert, canyon and crescent-arch terrain",
+      "title": "Dry canyon small wildlife",
+      "status": "reserved-for-verified-gap",
+      "file": "",
+      "sha256": "",
+      "generation_attempts_in_this_pass": 0
+    },
+    {
+      "sheet_id": "T08-TERRAIN-001",
+      "owner": "terrain-water-and-planting",
+      "family": "Sky-island landscape substrates",
+      "title": "Sky isle foundation and garden banks",
+      "status": "reserved-for-verified-gap",
+      "file": "",
+      "sha256": "",
+      "generation_attempts_in_this_pass": 0
+    },
+    {
+      "sheet_id": "T08-FLORA-001",
+      "owner": "terrain-water-and-planting",
+      "family": "Sky-island landscape substrates",
+      "title": "Sky and moon garden plant forms",
+      "status": "reserved-for-verified-gap",
+      "file": "",
+      "sha256": "",
+      "generation_attempts_in_this_pass": 0
+    },
+    {
+      "sheet_id": "T08-FAUNA-001",
+      "owner": "terrain-water-and-planting",
+      "family": "Sky-island landscape substrates",
+      "title": "Magical meadow creatures",
+      "status": "reserved-for-verified-gap",
+      "file": "",
+      "sha256": "",
+      "generation_attempts_in_this_pass": 0
+    },
+    {
+      "sheet_id": "T01-ORCHID-001",
+      "owner": "terrain-water-and-planting",
+      "family": "Palace grounds and rose gardens",
+      "title": "Conservatory orchid varieties",
+      "status": "generated-pending-reference-and-model-review",
+      "file": "completion-pass/T01-ORCHID-001/T01-ORCHID-001.png",
+      "sha256": "272a5a51f2fc9d986c2fbf74d9101ad82d59af9100fa5f55e90efbe990d06252",
+      "generation_attempts_in_this_pass": 1,
+      "component_count": 4,
+      "review_notes": "Four labelled orchid forms with readable roots/stems/flowers and insets; botanical validity and view parity not certified.",
+      "location_ids": []
+    },
+    {
+      "sheet_id": "T01-CITRUS-001",
+      "owner": "terrain-water-and-planting",
+      "family": "Palace grounds and rose gardens",
+      "title": "Conservatory and lagoon fruit trees",
+      "status": "generated-pending-reference-and-model-review",
+      "file": "completion-pass/T01-CITRUS-001/T01-CITRUS-001.png",
+      "sha256": "85d2023279f6bbc425b689633932e420efe192872db043e84604c85bcd1e232b",
+      "generation_attempts_in_this_pass": 1,
+      "component_count": 4,
+      "review_notes": "Four tree forms including espalier; natural shape, roots and fruit coherent. Espalier depth and crown projections are illustrative.",
+      "location_ids": []
+    },
+    {
+      "sheet_id": "T01-MEADOW-001",
+      "owner": "terrain-water-and-planting",
+      "family": "Palace grounds and rose gardens",
+      "title": "Royal and coastal meadow flower forms",
+      "status": "reserved-for-verified-gap",
+      "file": "",
+      "sha256": "",
+      "generation_attempts_in_this_pass": 0
+    },
+    {
+      "sheet_id": "T02-FLOOR-001",
+      "owner": "terrain-water-and-planting",
+      "family": "Lantern Lake and pond habitats",
+      "title": "Water court and bank paving",
+      "status": "reserved-for-verified-gap",
+      "file": "",
+      "sha256": "",
+      "generation_attempts_in_this_pass": 0
+    },
+    {
+      "sheet_id": "T03-PAVING-001",
+      "owner": "terrain-water-and-planting",
+      "family": "Coast, open sea and reefs",
+      "title": "Coastal and reef path surfaces",
+      "status": "reserved-for-verified-gap",
+      "file": "",
+      "sha256": "",
+      "generation_attempts_in_this_pass": 0
+    },
+    {
+      "sheet_id": "T04-PAVING-001",
+      "owner": "terrain-water-and-planting",
+      "family": "Jade jungle and wetlands",
+      "title": "Jade jungle and wet path surfaces",
+      "status": "reserved-for-verified-gap",
+      "file": "",
+      "sha256": "",
+      "generation_attempts_in_this_pass": 0
+    },
+    {
+      "sheet_id": "T06-PAVING-001",
+      "owner": "terrain-water-and-planting",
+      "family": "Fjord, highland and cliffs",
+      "title": "Fjord and highland floor surfaces",
+      "status": "reserved-for-verified-gap",
+      "file": "",
+      "sha256": "",
+      "generation_attempts_in_this_pass": 0
+    },
+    {
+      "sheet_id": "T07-PAVING-001",
+      "owner": "terrain-water-and-planting",
+      "family": "Desert, canyon and crescent-arch terrain",
+      "title": "Canyon and dry court surfaces",
+      "status": "reserved-for-verified-gap",
+      "file": "",
+      "sha256": "",
+      "generation_attempts_in_this_pass": 0
+    },
+    {
+      "sheet_id": "T08-PAVING-001",
+      "owner": "terrain-water-and-planting",
+      "family": "Sky-island landscape substrates",
+      "title": "Sky garden and moon path surfaces",
+      "status": "reserved-for-verified-gap",
+      "file": "",
+      "sha256": "",
+      "generation_attempts_in_this_pass": 0
+    },
+    {
+      "sheet_id": "S01-ARTIFACT-001",
+      "owner": "maps-magic-travel-and-birthday",
+      "family": "Sky and magical-place artifacts",
+      "title": "Crystal Garden \u2014 site artifact sections",
+      "status": "reserved-for-verified-gap",
+      "file": "",
+      "sha256": "",
+      "generation_attempts_in_this_pass": 0
+    },
+    {
+      "sheet_id": "S02-ARTIFACT-001",
+      "owner": "maps-magic-travel-and-birthday",
+      "family": "Sky and magical-place artifacts",
+      "title": "Aurora Isle \u2014 site artifact sections",
+      "status": "reserved-for-verified-gap",
+      "file": "",
+      "sha256": "",
+      "generation_attempts_in_this_pass": 0
+    },
+    {
+      "sheet_id": "S04-ARTIFACT-001",
+      "owner": "maps-magic-travel-and-birthday",
+      "family": "Sky and magical-place artifacts",
+      "title": "Unicorn Meadow \u2014 site artifact sections",
+      "status": "reserved-for-verified-gap",
+      "file": "",
+      "sha256": "",
+      "generation_attempts_in_this_pass": 0
+    },
+    {
+      "sheet_id": "S05-ARTIFACT-001",
+      "owner": "maps-magic-travel-and-birthday",
+      "family": "Sky and magical-place artifacts",
+      "title": "Starfall Isle \u2014 site artifact sections",
+      "status": "reserved-for-verified-gap",
+      "file": "",
+      "sha256": "",
+      "generation_attempts_in_this_pass": 0
+    },
+    {
+      "sheet_id": "WLD-VERTICAL-TRAVEL-001",
+      "owner": "shared-outdoor-props-and-bridge",
+      "family": "Docks, ramps and travel infrastructure",
+      "title": "Tall palace and sky arrival support sections",
+      "status": "reserved-for-verified-gap",
+      "file": "",
+      "sha256": "",
+      "generation_attempts_in_this_pass": 0
     }
   ],
   "production_pass": "palace-coverage-missing-only",
@@ -1488,11 +2642,118 @@
     "side_rear_schedule": "palace-side-rear/schedule.json",
     "complete_roof_plan": "palace-roof-plan/schedule.json"
   },
-  "production_pass_status": "B02 Moon Water Palace:3reference sheets,8structural and12detail targets; two corrected drafts preserved. Dedicated B02cap3/3. Reference review and physical joins pending; shared freshwater fauna next.",
+  "production_pass_status": "Completion pass: 9/115 queued missing-reference sheets saved. All geometry, UVs, anatomy, scale and runtime remain unverified.",
   "structural_sheet_rule": "Display source-fitted assemblies with existing canonical decor so identity and proportions can be checked. Bare host views are internal construction proposals, not replacements for the original decorated wing references.",
   "generation_paused": true,
   "pause_reason": "Requested roof/stair proposal finished. Painted attempt rejected; coordinate diagram covers33 placements and11 stair links. Source-depth registration remains a layout task.",
-  "generation_resume_allowlist": [],
+  "generation_resume_allowlist": [
+    "PAL-DOME-INNER-001",
+    "PAL-DOME-INNER-DETAIL-001",
+    "PAL-WING-001",
+    "PAL-ROOF-GARDEN-JOIN-001",
+    "PAL-SKY-SUPPORT-001",
+    "PAL-TERRACE-STAIR-JOIN-001",
+    "INT-THRONE-SHELL-001",
+    "INT-LIBRARY-SHELL-001",
+    "INT-CONSERV-SHELL-001",
+    "INT-SUITE-SHELL-001",
+    "INT-R02",
+    "INT-R03",
+    "INT-SUITE-FURN-001",
+    "INT-DINING-FURN-001",
+    "INT-LIBRARY-PROP-001",
+    "INT-GALLERY-PROP-001",
+    "INT-ATELIER-PROP-001",
+    "INT-TEXTILE-JOINS-001",
+    "B03-STRUCT-001",
+    "B03-DETAIL-001",
+    "B04-STRUCT-001",
+    "B04-DETAIL-001",
+    "B05-STRUCT-001",
+    "B05-DETAIL-001",
+    "B06-STRUCT-001",
+    "B06-DETAIL-001",
+    "B07-STRUCT-001",
+    "B07-DETAIL-001",
+    "B08-STRUCT-001",
+    "B08-DETAIL-001",
+    "B09-STRUCT-001",
+    "B09-DETAIL-001",
+    "B10-STRUCT-001",
+    "B10-DETAIL-001",
+    "B10-INNER-001",
+    "B11-STRUCT-001",
+    "B11-DETAIL-001",
+    "B13-STRUCT-001",
+    "B13-DETAIL-001",
+    "B14-STRUCT-001",
+    "B14-DETAIL-001",
+    "B15-STRUCT-001",
+    "B15-DETAIL-001",
+    "B15-INNER-001",
+    "B16-STRUCT-001",
+    "B16-DETAIL-001",
+    "B17-STRUCT-001",
+    "B17-DETAIL-001",
+    "B18-STRUCT-001",
+    "B18-DETAIL-001",
+    "B19-STRUCT-001",
+    "B19-DETAIL-001",
+    "B20-STRUCT-001",
+    "B20-DETAIL-001",
+    "B21-STRUCT-001",
+    "B21-DETAIL-001",
+    "B22-STRUCT-001",
+    "B22-DETAIL-001",
+    "B23-STRUCT-001",
+    "B23-DETAIL-001",
+    "B24-STRUCT-001",
+    "B24-DETAIL-001",
+    "B25-STRUCT-001",
+    "B25-DETAIL-001",
+    "B25-INNER-001",
+    "B12-CITY-001",
+    "WLD-FOUNTAIN-STRUCT-001",
+    "WLD-GARDEN-SUPPORT-001",
+    "WLD-LIGHT-MOUNTS-001",
+    "WLD-WAYFIND-001",
+    "WLD-PORT-STRUCT-001",
+    "WLD-PORT-DETAIL-001",
+    "B12-COURT-PROP-001",
+    "WLD-BRIDGE-JOINS-001",
+    "T02-BANK-001",
+    "T03-ROCK-001",
+    "T03-FLORA-001",
+    "T03-FAUNA-001",
+    "T03-FAUNA-002",
+    "T03-CORAL-001",
+    "T03-SHORE-001",
+    "T04-CANOPY-001",
+    "T04-FLORA-001",
+    "T04-FAUNA-001",
+    "T04-GROUND-001",
+    "T05-FOREST-JOIN-001",
+    "T06-FLORA-001",
+    "T06-ROCK-001",
+    "T07-ROCK-001",
+    "T07-FLORA-001",
+    "T07-FAUNA-001",
+    "T08-TERRAIN-001",
+    "T08-FLORA-001",
+    "T08-FAUNA-001",
+    "T01-MEADOW-001",
+    "T02-FLOOR-001",
+    "T03-PAVING-001",
+    "T04-PAVING-001",
+    "T06-PAVING-001",
+    "T07-PAVING-001",
+    "T08-PAVING-001",
+    "S01-ARTIFACT-001",
+    "S02-ARTIFACT-001",
+    "S04-ARTIFACT-001",
+    "S05-ARTIFACT-001",
+    "WLD-VERTICAL-TRAVEL-001"
+  ],
   "retired_slots": [
     {
       "sheet_id": "PAL-LAYER-01",
@@ -1673,10 +2934,29 @@
       "reason": "Requested whole-palace roof plan needs one layout slot. Transfer one unused wall-body allowance to layout; palace total65 and global230 unchanged. Original45 boards retained.",
       "layout_cap": 7,
       "wall_body_cap": 9
+    },
+    {
+      "date": "2026-10-14",
+      "reason": "Owner authorized completion of missing references including all site interiors, dome arches, water systems and ecology. Rebalance within230; reserved slots only cover verified missing forms.",
+      "previous_global_caps": {
+        "palace": 65,
+        "other-map-buildings": 55,
+        "terrain-water-and-planting": 65,
+        "shared-outdoor-props-and-bridge": 25,
+        "maps-magic-travel-and-birthday": 20
+      },
+      "new_global_caps": {
+        "palace": 80,
+        "other-map-buildings": 58,
+        "terrain-water-and-planting": 60,
+        "shared-outdoor-props-and-bridge": 22,
+        "maps-magic-travel-and-birthday": 10
+      },
+      "original_boards_preserved": true
     }
   ],
   "component_workflow": "Modular walls first; later stairs, wards/wings, towers and fountain components. Exhaustive palace section inventory later.",
-  "generation_resume_reason": "Ownerauthorizeslocation-wiseflora/faunawithgeneralwater/rock/natural libraries; startF02ecology withthreepackedreferenceboards.",
+  "generation_resume_reason": "Owner requested autonomous complete source-led asset reference production on2026-10-14",
   "allocation_notes": [
     "Latest owner crops add royal needle with attached turrets and slim star-glass onion gallery; move one unspent interior allowance to tower bodies, keeping palace cap65/world165/total230. Shared existing detail packs cover both; no extra decor sheets.",
     "Owner requests location-specific surface/pillar/stair/parapet variety. Transfer one unspent whole-layout allowance to interior repeat components, keeping65 palace and230 total. Eight packed sheets; original masters reused.",
@@ -1719,6 +2999,7 @@
     "images_generated": 2,
     "new_model_targets": 16,
     "status": "Location-wise flora/fauna selections;2of7plannedfaunaboardsproduced,other5remainholdswithin65. Onecanopyflora boardseparatelyproduced.",
-    "remaining_unproduced_fauna_allowance": 5
+    "remaining_unproduced_fauna_allowance": 5,
+    "completion_pass_revision": "10fauna references planned in total:2existingforest,2freshwater,3coastal,1jungle,1dry,1magical. Garden fauna reuseforest/insect forms instead of duplicating."
   }
 }

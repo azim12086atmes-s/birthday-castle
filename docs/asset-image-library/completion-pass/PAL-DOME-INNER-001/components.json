@@ -1,0 +1,124 @@
+{
+  "components": [
+    {
+      "asset_id": "PAL-DOME-INNER-001-S01",
+      "name": "Dome interior wedge",
+      "kind": "structural-section",
+      "dimensions_m_proposed": [
+        12,
+        12,
+        16
+      ],
+      "function": "Missing dome underside, arch support and transition construction; preserve original palace marble and source dome grammar",
+      "construction": "One hollow curved dome wedge with ivory underside, rose stone edges, delicate gold rib, upper lip and lateral seam faces; inside curvature follows original bulbous dome, no exterior purple roof glued onto underside.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Tower bodies and roof assemblies"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "PAL-DOME-INNER-001-S01__dome-interior-wedge__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "PAL-DOME-INNER-001-S02",
+      "name": "Supporting arch bay",
+      "kind": "structural-section",
+      "dimensions_m_proposed": [
+        12,
+        3,
+        18
+      ],
+      "function": "Missing dome underside, arch support and transition construction; preserve original palace marble and source dome grammar",
+      "construction": "One open pointed interior arch with two slender clustered piers, inner arch soffit visible, gold ribs and ivory/rose marble. Real passage, no opaque infill.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Tower bodies and roof assemblies"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "PAL-DOME-INNER-001-S02__supporting-arch-bay__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "PAL-DOME-INNER-001-S03",
+      "name": "Square to circular transition",
+      "kind": "structural-section",
+      "dimensions_m_proposed": [
+        12,
+        12,
+        8
+      ],
+      "function": "Missing dome underside, arch support and transition construction; preserve original palace marble and source dome grammar",
+      "construction": "One corner transition from square hall walls to circular dome drum, curved supporting pendentive surface and open arch below; show section and top contact. Continuous realistic thickness.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Tower bodies and roof assemblies"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "PAL-DOME-INNER-001-S03__square-to-circular-transition__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "PAL-DOME-INNER-001-S04",
+      "name": "Drum interior gallery bay",
+      "kind": "structural-section",
+      "dimensions_m_proposed": [
+        8,
+        4,
+        10
+      ],
+      "function": "Missing dome underside, arch support and transition construction; preserve original palace marble and source dome grammar",
+      "construction": "One curved interior gallery bay with slender piers, small pointed windows, source gold and rose/ivory trim, railing separate, top rim to dome. Clear hollow interior.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Tower bodies and roof assemblies"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "PAL-DOME-INNER-001-S04__drum-interior-gallery-bay__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    }
+  ]
+}

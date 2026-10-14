@@ -1,0 +1,141 @@
+{
+  "sheet_id": "B06-STRUCT-001",
+  "name": "Misty Pagoda \u2014 structural sections",
+  "owner": "other-map-buildings",
+  "family": "B06",
+  "location_id": "B06",
+  "source_reference_id": "SRC-LOC-B06-GEN-05",
+  "source_reference_file": "world-layout/location-audit/source/B06-GEN-05.png",
+  "source_reference_sha256": "2016d251c0bf741746667d1e475316a97efdb72fd37ae48f53414620f8dddb0e",
+  "prompt": "Create ONE clean detailed GAME ASSET REFERENCE SHEET, NOT Blender or a3Dmodel. Plain light ivory studio background, soft even light, full uncropped separate objects, readable thickness, precise non-melting forms. FULL IDs and names outside silhouettes, dimensions marked PROPOSED. Each cell independent illustration scale. No environment scenery, humans, extra unlabeled objects, watermark or whole-palace redesign. Use ONLY the single supplied source image for visible style/material/form authority; infer missing backs and assembly interfaces conservatively. Source illustration motifs are inspiration, not recovered measured geometry. Visible source facts: Tiered teal upturned roofs around a timber/gold lattice pagoda, hanging bells, central entrance stair, low stone base and open peripheral gallery. Small plan has radiating/lobed court extensions; isometric keeps compact vertical mass. Hidden layout inference: An entry terrace leads to one compact central hall with a loop around its lowest gallery; higher tiers remain smaller lookouts rather than becoming huge palace floors. Place small planted corner courts and a quiet pond off the main stair axis. Bamboo/maple are proposed additions, not visible confirmed species. Preserve this local design. Exactly4 large cells, large three-quarter view for each module plus small front, top and side/contact/section diagram consistent with same geometry. Real open doors/arches/windows must show empty space; no opaque filling where an opening is requested. Continuous unobstructed planar joining ends, separate shells from optional decor, no fused unrelated objects. Hollow roof/room sections show the interior underside and wall thickness. Keep source silhouette, not generic boxes. Title \"B06-STRUCT-001 \u2014 Misty Pagoda \u2014 structural sections\". Footer \"Proposed construction / source-compatible references / mesh joins and views unverified\".\n\nPurpose/gap: Source has roof tile, lattice, bell and carved bracket motifs. Audit existing parked B06 surface sheet before generating any new surfaces. Likely needs stacked column/floor corner, roof ridge/hip and stair-plinth junction geometry; koi/dragonflies remain proposed habitat fauna. Provide missing isolated hosts and join views.\n\nB06-STRUCT-001-S01 \u2014 Pagoda tier wall/post bay. Dimensions W,D,H [8, 6, 12]m proposed. One isolated pagoda tier wall/post bay matching the supplied building, its roof/arch/wall silhouette and local materials. Show front and interior/rear/underside contact, not a complete building scene. Actual open column galleries and holes stay open. Extend hidden depth only enough to form a joinable section; no palace-wide plan or added unrelated tower.\n\nB06-STRUCT-001-S02 \u2014 Stacked gallery ring. Dimensions W,D,H [8, 6, 12]m proposed. One isolated stacked gallery ring matching the supplied building, its roof/arch/wall silhouette and local materials. Show front and interior/rear/underside contact, not a complete building scene. Actual open column galleries and holes stay open. Extend hidden depth only enough to form a joinable section; no palace-wide plan or added unrelated tower.\n\nB06-STRUCT-001-S03 \u2014 Upturned roof corner. Dimensions W,D,H [8, 6, 12]m proposed. One isolated upturned roof corner matching the supplied building, its roof/arch/wall silhouette and local materials. Show front and interior/rear/underside contact, not a complete building scene. Actual open column galleries and holes stay open. Extend hidden depth only enough to form a joinable section; no palace-wide plan or added unrelated tower.\n\nB06-STRUCT-001-S04 \u2014 Entry plinth/stair. Dimensions W,D,H [8, 6, 12]m proposed. One isolated entry plinth/stair matching the supplied building, its roof/arch/wall silhouette and local materials. Show front and interior/rear/underside contact, not a complete building scene. Actual open column galleries and holes stay open. Extend hidden depth only enough to form a joinable section; no palace-wide plan or added unrelated tower.",
+  "parts": [
+    {
+      "asset_id": "B06-STRUCT-001-S01",
+      "name": "Pagoda tier wall/post bay",
+      "kind": "structural-section",
+      "dimensions_m_proposed": [
+        8,
+        6,
+        12
+      ],
+      "function": "Source has roof tile, lattice, bell and carved bracket motifs. Audit existing parked B06 surface sheet before generating any new surfaces. Likely needs stacked column/floor corner, roof ridge/hip and stair-plinth junction geometry; koi/dragonflies remain proposed habitat fauna. Provide missing isolated hosts and join views.",
+      "construction": "One isolated pagoda tier wall/post bay matching the supplied building, its roof/arch/wall silhouette and local materials. Show front and interior/rear/underside contact, not a complete building scene. Actual open column galleries and holes stay open. Extend hidden depth only enough to form a joinable section; no palace-wide plan or added unrelated tower.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B06"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B06-STRUCT-001-S01__pagoda-tier-wall-post-bay__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "B06-STRUCT-001-S02",
+      "name": "Stacked gallery ring",
+      "kind": "structural-section",
+      "dimensions_m_proposed": [
+        8,
+        6,
+        12
+      ],
+      "function": "Source has roof tile, lattice, bell and carved bracket motifs. Audit existing parked B06 surface sheet before generating any new surfaces. Likely needs stacked column/floor corner, roof ridge/hip and stair-plinth junction geometry; koi/dragonflies remain proposed habitat fauna. Provide missing isolated hosts and join views.",
+      "construction": "One isolated stacked gallery ring matching the supplied building, its roof/arch/wall silhouette and local materials. Show front and interior/rear/underside contact, not a complete building scene. Actual open column galleries and holes stay open. Extend hidden depth only enough to form a joinable section; no palace-wide plan or added unrelated tower.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B06"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B06-STRUCT-001-S02__stacked-gallery-ring__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "B06-STRUCT-001-S03",
+      "name": "Upturned roof corner",
+      "kind": "structural-section",
+      "dimensions_m_proposed": [
+        8,
+        6,
+        12
+      ],
+      "function": "Source has roof tile, lattice, bell and carved bracket motifs. Audit existing parked B06 surface sheet before generating any new surfaces. Likely needs stacked column/floor corner, roof ridge/hip and stair-plinth junction geometry; koi/dragonflies remain proposed habitat fauna. Provide missing isolated hosts and join views.",
+      "construction": "One isolated upturned roof corner matching the supplied building, its roof/arch/wall silhouette and local materials. Show front and interior/rear/underside contact, not a complete building scene. Actual open column galleries and holes stay open. Extend hidden depth only enough to form a joinable section; no palace-wide plan or added unrelated tower.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B06"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B06-STRUCT-001-S03__upturned-roof-corner__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "B06-STRUCT-001-S04",
+      "name": "Entry plinth/stair",
+      "kind": "structural-section",
+      "dimensions_m_proposed": [
+        8,
+        6,
+        12
+      ],
+      "function": "Source has roof tile, lattice, bell and carved bracket motifs. Audit existing parked B06 surface sheet before generating any new surfaces. Likely needs stacked column/floor corner, roof ridge/hip and stair-plinth junction geometry; koi/dragonflies remain proposed habitat fauna. Provide missing isolated hosts and join views.",
+      "construction": "One isolated entry plinth/stair matching the supplied building, its roof/arch/wall silhouette and local materials. Show front and interior/rear/underside contact, not a complete building scene. Actual open column galleries and holes stay open. Extend hidden depth only enough to form a joinable section; no palace-wide plan or added unrelated tower.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B06"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B06-STRUCT-001-S04__entry-plinth-stair__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    }
+  ],
+  "outputs": [],
+  "previous_attempts": [],
+  "models_generated": 0,
+  "physical_join_fit_verified": false,
+  "view_geometry_parity_verified": false,
+  "review_status": "planned-after-gap-audit",
+  "gap": "Source has roof tile, lattice, bell and carved bracket motifs. Audit existing parked B06 surface sheet before generating any new surfaces. Likely needs stacked column/floor corner, roof ridge/hip and stair-plinth junction geometry; koi/dragonflies remain proposed habitat fauna. Provide missing isolated hosts and join views.",
+  "mode": "structure"
+}

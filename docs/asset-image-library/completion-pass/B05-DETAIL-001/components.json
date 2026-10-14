@@ -1,0 +1,364 @@
+{
+  "components": [
+    {
+      "asset_id": "B05-DETAIL-001-D01",
+      "name": "Teal upturned eave",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        1.5,
+        0.15,
+        1.5
+      ],
+      "function": "Need rock-seat/platform junctions, timber post/rail/bracket modules, stepped gallery landings and roof corner/eave assemblies. Lantern, jade/teal tile and lattice motifs already shown. Ferns/moss/local conifers, quiet moths/owls proposed; water drops use shared family. Missing detached construction pieces and local interior-facing patterns.",
+      "construction": "One isolated teal upturned eave, strictly follow local source colour/material/motif instead of universal pink marble. Show real depth, flat back/host contact or one consistent repeat profile. Existing generic lanterns/flowers/benches reused; only named local fittings. No merged wall scene attached to small detail.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B05"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B05-DETAIL-001-D01__teal-upturned-eave__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "B05-DETAIL-001-D02",
+      "name": "Timber gallery lattice",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        1.5,
+        0.15,
+        1.5
+      ],
+      "function": "Need rock-seat/platform junctions, timber post/rail/bracket modules, stepped gallery landings and roof corner/eave assemblies. Lantern, jade/teal tile and lattice motifs already shown. Ferns/moss/local conifers, quiet moths/owls proposed; water drops use shared family. Missing detached construction pieces and local interior-facing patterns.",
+      "construction": "One isolated timber gallery lattice, strictly follow local source colour/material/motif instead of universal pink marble. Show real depth, flat back/host contact or one consistent repeat profile. Existing generic lanterns/flowers/benches reused; only named local fittings. No merged wall scene attached to small detail.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B05"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B05-DETAIL-001-D02__timber-gallery-lattice__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "B05-DETAIL-001-D03",
+      "name": "Rock seated column shoe",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        0.2,
+        0.12,
+        0.25
+      ],
+      "function": "Need rock-seat/platform junctions, timber post/rail/bracket modules, stepped gallery landings and roof corner/eave assemblies. Lantern, jade/teal tile and lattice motifs already shown. Ferns/moss/local conifers, quiet moths/owls proposed; water drops use shared family. Missing detached construction pieces and local interior-facing patterns.",
+      "construction": "One isolated rock seated column shoe, strictly follow local source colour/material/motif instead of universal pink marble. Show real depth, flat back/host contact or one consistent repeat profile. Existing generic lanterns/flowers/benches reused; only named local fittings. No merged wall scene attached to small detail. SMALL attachment hardware only: plate/socket/hook/joint with its own hole/root and source-compatible quiet ornament. No lantern body, full arch, whole column, complete door, garden or giant architectural scene glued to it.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B05"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B05-DETAIL-001-D03__rock-seated-column-shoe__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "B05-DETAIL-001-D04",
+      "name": "Gold bell hanger",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        0.2,
+        0.12,
+        0.25
+      ],
+      "function": "Need rock-seat/platform junctions, timber post/rail/bracket modules, stepped gallery landings and roof corner/eave assemblies. Lantern, jade/teal tile and lattice motifs already shown. Ferns/moss/local conifers, quiet moths/owls proposed; water drops use shared family. Missing detached construction pieces and local interior-facing patterns.",
+      "construction": "One isolated gold bell hanger, strictly follow local source colour/material/motif instead of universal pink marble. Show real depth, flat back/host contact or one consistent repeat profile. Existing generic lanterns/flowers/benches reused; only named local fittings. No merged wall scene attached to small detail. SMALL attachment hardware only: plate/socket/hook/joint with its own hole/root and source-compatible quiet ornament. No lantern body, full arch, whole column, complete door, garden or giant architectural scene glued to it.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B05"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B05-DETAIL-001-D04__gold-bell-hanger__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "B05-DETAIL-001-D05",
+      "name": "Gallery floor plank edge",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        1.5,
+        1.5,
+        0.12
+      ],
+      "function": "Need rock-seat/platform junctions, timber post/rail/bracket modules, stepped gallery landings and roof corner/eave assemblies. Lantern, jade/teal tile and lattice motifs already shown. Ferns/moss/local conifers, quiet moths/owls proposed; water drops use shared family. Missing detached construction pieces and local interior-facing patterns.",
+      "construction": "One isolated gallery floor plank edge, strictly follow local source colour/material/motif instead of universal pink marble. Show real depth, flat back/host contact or one consistent repeat profile. Existing generic lanterns/flowers/benches reused; only named local fittings. No merged wall scene attached to small detail. This is a FLAT FLOOR piece, not a hanging wall plaque or raised flower sculpture. Show top pattern and a thin edge profile; relief remains shallow enough to walk across. One repeat moulding/strip only, defined thickness and square end profiles. A corner is a single L return, not a complete wall/court.",
+      "attachment_face": "Broad flat underside to floor, shortest dimension vertical Z",
+      "semantic_front": "Decorated broad face up +Z",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B05"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B05-DETAIL-001-D05__gallery-floor-plank-edge__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "B05-DETAIL-001-D06",
+      "name": "Roof ridge join",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        1.5,
+        0.15,
+        1.5
+      ],
+      "function": "Need rock-seat/platform junctions, timber post/rail/bracket modules, stepped gallery landings and roof corner/eave assemblies. Lantern, jade/teal tile and lattice motifs already shown. Ferns/moss/local conifers, quiet moths/owls proposed; water drops use shared family. Missing detached construction pieces and local interior-facing patterns.",
+      "construction": "One isolated roof ridge join, strictly follow local source colour/material/motif instead of universal pink marble. Show real depth, flat back/host contact or one consistent repeat profile. Existing generic lanterns/flowers/benches reused; only named local fittings. No merged wall scene attached to small detail.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B05"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B05-DETAIL-001-D06__roof-ridge-join__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "B05-DETAIL-001-D07",
+      "name": "Timber beam carved end",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        1.5,
+        0.15,
+        1.5
+      ],
+      "function": "Need rock-seat/platform junctions, timber post/rail/bracket modules, stepped gallery landings and roof corner/eave assemblies. Lantern, jade/teal tile and lattice motifs already shown. Ferns/moss/local conifers, quiet moths/owls proposed; water drops use shared family. Missing detached construction pieces and local interior-facing patterns.",
+      "construction": "One isolated timber beam carved end, strictly follow local source colour/material/motif instead of universal pink marble. Show real depth, flat back/host contact or one consistent repeat profile. Existing generic lanterns/flowers/benches reused; only named local fittings. No merged wall scene attached to small detail.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B05"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B05-DETAIL-001-D07__timber-beam-carved-end__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "B05-DETAIL-001-D08",
+      "name": "Inner ceiling beam return",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        1.5,
+        0.15,
+        1.5
+      ],
+      "function": "Need rock-seat/platform junctions, timber post/rail/bracket modules, stepped gallery landings and roof corner/eave assemblies. Lantern, jade/teal tile and lattice motifs already shown. Ferns/moss/local conifers, quiet moths/owls proposed; water drops use shared family. Missing detached construction pieces and local interior-facing patterns.",
+      "construction": "One isolated inner ceiling beam return, strictly follow local source colour/material/motif instead of universal pink marble. Show real depth, flat back/host contact or one consistent repeat profile. Existing generic lanterns/flowers/benches reused; only named local fittings. No merged wall scene attached to small detail.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B05"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B05-DETAIL-001-D08__inner-ceiling-beam-return__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "B05-DETAIL-001-D09",
+      "name": "Lantern bracket mount",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        0.2,
+        0.12,
+        0.25
+      ],
+      "function": "Need rock-seat/platform junctions, timber post/rail/bracket modules, stepped gallery landings and roof corner/eave assemblies. Lantern, jade/teal tile and lattice motifs already shown. Ferns/moss/local conifers, quiet moths/owls proposed; water drops use shared family. Missing detached construction pieces and local interior-facing patterns.",
+      "construction": "One isolated lantern bracket mount, strictly follow local source colour/material/motif instead of universal pink marble. Show real depth, flat back/host contact or one consistent repeat profile. Existing generic lanterns/flowers/benches reused; only named local fittings. No merged wall scene attached to small detail. SMALL attachment hardware only: plate/socket/hook/joint with its own hole/root and source-compatible quiet ornament. No lantern body, full arch, whole column, complete door, garden or giant architectural scene glued to it.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B05"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B05-DETAIL-001-D09__lantern-bracket-mount__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "B05-DETAIL-001-D10",
+      "name": "Wall screen insert",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        1.5,
+        0.15,
+        1.5
+      ],
+      "function": "Need rock-seat/platform junctions, timber post/rail/bracket modules, stepped gallery landings and roof corner/eave assemblies. Lantern, jade/teal tile and lattice motifs already shown. Ferns/moss/local conifers, quiet moths/owls proposed; water drops use shared family. Missing detached construction pieces and local interior-facing patterns.",
+      "construction": "One isolated wall screen insert, strictly follow local source colour/material/motif instead of universal pink marble. Show real depth, flat back/host contact or one consistent repeat profile. Existing generic lanterns/flowers/benches reused; only named local fittings. No merged wall scene attached to small detail.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B05"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B05-DETAIL-001-D10__wall-screen-insert__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "B05-DETAIL-001-D11",
+      "name": "Stair handrail joint",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        1.5,
+        0.15,
+        1.5
+      ],
+      "function": "Need rock-seat/platform junctions, timber post/rail/bracket modules, stepped gallery landings and roof corner/eave assemblies. Lantern, jade/teal tile and lattice motifs already shown. Ferns/moss/local conifers, quiet moths/owls proposed; water drops use shared family. Missing detached construction pieces and local interior-facing patterns.",
+      "construction": "One isolated stair handrail joint, strictly follow local source colour/material/motif instead of universal pink marble. Show real depth, flat back/host contact or one consistent repeat profile. Existing generic lanterns/flowers/benches reused; only named local fittings. No merged wall scene attached to small detail.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B05"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B05-DETAIL-001-D11__stair-handrail-joint__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "B05-DETAIL-001-D12",
+      "name": "Balcony lattice corner",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        1.5,
+        0.15,
+        1.5
+      ],
+      "function": "Need rock-seat/platform junctions, timber post/rail/bracket modules, stepped gallery landings and roof corner/eave assemblies. Lantern, jade/teal tile and lattice motifs already shown. Ferns/moss/local conifers, quiet moths/owls proposed; water drops use shared family. Missing detached construction pieces and local interior-facing patterns.",
+      "construction": "One isolated balcony lattice corner, strictly follow local source colour/material/motif instead of universal pink marble. Show real depth, flat back/host contact or one consistent repeat profile. Existing generic lanterns/flowers/benches reused; only named local fittings. No merged wall scene attached to small detail.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B05"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B05-DETAIL-001-D12__balcony-lattice-corner__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    }
+  ]
+}

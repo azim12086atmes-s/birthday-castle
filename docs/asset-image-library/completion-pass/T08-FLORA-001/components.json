@@ -1,0 +1,124 @@
+{
+  "components": [
+    {
+      "asset_id": "T08-FLORA-001-A01",
+      "name": "Moon bell flowering shrub",
+      "kind": "flora-reference",
+      "dimensions_m_proposed": [
+        2,
+        2,
+        3
+      ],
+      "function": "New explicit fantasybotanical proposals basedonGEN23, gentlecream/lilac/pinkgreen, coherentlivingroot/stem/leaves, crystals onlysmallgrowth accents, no metalornament attached.",
+      "construction": "One isolated moon bell flowering shrub. New explicit fantasybotanical proposals basedonGEN23, gentlecream/lilac/pinkgreen, coherentlivingroot/stem/leaves, crystals onlysmallgrowth accents, no metalornament attached. Coherent actual silhouette, visible root/underside/side; no unrelated architecture/scenery attached. Other existing named species/forms must not be regenerated. Local material consistent with source. Dimensions are proposals to refine by subject.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Sky-island landscape substrates"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "T08-FLORA-001-A01__moon-bell-flowering-shrub__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "T08-FLORA-001-A02",
+      "name": "Star shaped meadow flower clump",
+      "kind": "flora-reference",
+      "dimensions_m_proposed": [
+        2,
+        2,
+        3
+      ],
+      "function": "New explicit fantasybotanical proposals basedonGEN23, gentlecream/lilac/pinkgreen, coherentlivingroot/stem/leaves, crystals onlysmallgrowth accents, no metalornament attached.",
+      "construction": "One isolated star shaped meadow flower clump. New explicit fantasybotanical proposals basedonGEN23, gentlecream/lilac/pinkgreen, coherentlivingroot/stem/leaves, crystals onlysmallgrowth accents, no metalornament attached. Coherent actual silhouette, visible root/underside/side; no unrelated architecture/scenery attached. Other existing named species/forms must not be regenerated. Local material consistent with source. Dimensions are proposals to refine by subject.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Sky-island landscape substrates"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "T08-FLORA-001-A02__star-shaped-meadow-flower-clump__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "T08-FLORA-001-A03",
+      "name": "Pale aurora grass",
+      "kind": "flora-reference",
+      "dimensions_m_proposed": [
+        2,
+        2,
+        3
+      ],
+      "function": "New explicit fantasybotanical proposals basedonGEN23, gentlecream/lilac/pinkgreen, coherentlivingroot/stem/leaves, crystals onlysmallgrowth accents, no metalornament attached.",
+      "construction": "One isolated pale aurora grass. New explicit fantasybotanical proposals basedonGEN23, gentlecream/lilac/pinkgreen, coherentlivingroot/stem/leaves, crystals onlysmallgrowth accents, no metalornament attached. Coherent actual silhouette, visible root/underside/side; no unrelated architecture/scenery attached. Other existing named species/forms must not be regenerated. Local material consistent with source. Dimensions are proposals to refine by subject.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Sky-island landscape substrates"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "T08-FLORA-001-A03__pale-aurora-grass__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "T08-FLORA-001-A04",
+      "name": "Crystal edged vine",
+      "kind": "flora-reference",
+      "dimensions_m_proposed": [
+        2,
+        2,
+        3
+      ],
+      "function": "New explicit fantasybotanical proposals basedonGEN23, gentlecream/lilac/pinkgreen, coherentlivingroot/stem/leaves, crystals onlysmallgrowth accents, no metalornament attached.",
+      "construction": "One isolated crystal edged vine. New explicit fantasybotanical proposals basedonGEN23, gentlecream/lilac/pinkgreen, coherentlivingroot/stem/leaves, crystals onlysmallgrowth accents, no metalornament attached. Coherent actual silhouette, visible root/underside/side; no unrelated architecture/scenery attached. Other existing named species/forms must not be regenerated. Local material consistent with source. Dimensions are proposals to refine by subject.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Sky-island landscape substrates"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "T08-FLORA-001-A04__crystal-edged-vine__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    }
+  ]
+}

@@ -1,0 +1,141 @@
+{
+  "sheet_id": "T03-SHORE-001",
+  "name": "Coastal sand and bank modules",
+  "owner": "terrain-water-and-planting",
+  "family": "Coast, open sea and reefs",
+  "location_id": null,
+  "source_reference_id": "GEN-12",
+  "source_reference_file": "images/illustrated-boards/GEN-12.png",
+  "source_reference_sha256": "db77402f0a0dea2c3ec813521e0edc7f7e1594a18c456b4cea0daded1228969f",
+  "prompt": "Create ONE clean detailed GAME ASSET REFERENCE SHEET, NOT Blender or a3Dmodel. Plain light ivory studio background, soft even light, full uncropped separate objects, readable thickness, precise non-melting forms. FULL IDs and names outside silhouettes, dimensions marked PROPOSED. Each cell independent illustration scale. No environment scenery, humans, extra unlabeled objects, watermark or whole-palace redesign. Use ONLY the single supplied source image for visible style/material/form authority; infer missing backs and assembly interfaces conservatively. Source illustration motifs are inspiration, not recovered measured geometry. Exactly4 isolated natural module groups, each with three-quarter, top and side/underside inset, clear ground/bank seams and actual depth. No landscape montage, houses or people; substrate and plants separate when specified. Water is context/rendered appearance only unless an explicitly named basin is a solid module. Title \"T03-SHORE-001 \u2014 Coastal sand and bank modules\". Footer \"Proposed construction / source-compatible references / mesh joins and views unverified\".\n\nPurpose/gap: Missing uneven sea coastline substrates. Sand/rock surface geometry only; water shown small context inset and not solid fused block.\n\nT03-SHORE-001-A01 \u2014 Low dune ridge. Dimensions W,D,H [4, 4, 2]m proposed. One isolated low dune ridge. Missing uneven sea coastline substrates. Sand/rock surface geometry only; water shown small context inset and not solid fused block. Coherent actual silhouette, visible root/underside/side; no unrelated architecture/scenery attached. Other existing named species/forms must not be regenerated. Local material consistent with source. Dimensions are proposals to refine by subject.\n\nT03-SHORE-001-A02 \u2014 Rock to sand transition. Dimensions W,D,H [4, 4, 2]m proposed. One isolated rock to sand transition. Missing uneven sea coastline substrates. Sand/rock surface geometry only; water shown small context inset and not solid fused block. Coherent actual silhouette, visible root/underside/side; no unrelated architecture/scenery attached. Other existing named species/forms must not be regenerated. Local material consistent with source. Dimensions are proposals to refine by subject.\n\nT03-SHORE-001-A03 \u2014 Shell beach substrate. Dimensions W,D,H [4, 4, 2]m proposed. One isolated shell beach substrate. Missing uneven sea coastline substrates. Sand/rock surface geometry only; water shown small context inset and not solid fused block. Coherent actual silhouette, visible root/underside/side; no unrelated architecture/scenery attached. Other existing named species/forms must not be regenerated. Local material consistent with source. Dimensions are proposals to refine by subject.\n\nT03-SHORE-001-A04 \u2014 Shallow tidal pool bank. Dimensions W,D,H [4, 4, 2]m proposed. One isolated shallow tidal pool bank. Missing uneven sea coastline substrates. Sand/rock surface geometry only; water shown small context inset and not solid fused block. Coherent actual silhouette, visible root/underside/side; no unrelated architecture/scenery attached. Other existing named species/forms must not be regenerated. Local material consistent with source. Dimensions are proposals to refine by subject.",
+  "parts": [
+    {
+      "asset_id": "T03-SHORE-001-A01",
+      "name": "Low dune ridge",
+      "kind": "natural-module",
+      "dimensions_m_proposed": [
+        4,
+        4,
+        2
+      ],
+      "function": "Missing uneven sea coastline substrates. Sand/rock surface geometry only; water shown small context inset and not solid fused block.",
+      "construction": "One isolated low dune ridge. Missing uneven sea coastline substrates. Sand/rock surface geometry only; water shown small context inset and not solid fused block. Coherent actual silhouette, visible root/underside/side; no unrelated architecture/scenery attached. Other existing named species/forms must not be regenerated. Local material consistent with source. Dimensions are proposals to refine by subject.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Coast, open sea and reefs"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "T03-SHORE-001-A01__low-dune-ridge__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "T03-SHORE-001-A02",
+      "name": "Rock to sand transition",
+      "kind": "natural-module",
+      "dimensions_m_proposed": [
+        4,
+        4,
+        2
+      ],
+      "function": "Missing uneven sea coastline substrates. Sand/rock surface geometry only; water shown small context inset and not solid fused block.",
+      "construction": "One isolated rock to sand transition. Missing uneven sea coastline substrates. Sand/rock surface geometry only; water shown small context inset and not solid fused block. Coherent actual silhouette, visible root/underside/side; no unrelated architecture/scenery attached. Other existing named species/forms must not be regenerated. Local material consistent with source. Dimensions are proposals to refine by subject.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Coast, open sea and reefs"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "T03-SHORE-001-A02__rock-to-sand-transition__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "T03-SHORE-001-A03",
+      "name": "Shell beach substrate",
+      "kind": "natural-module",
+      "dimensions_m_proposed": [
+        4,
+        4,
+        2
+      ],
+      "function": "Missing uneven sea coastline substrates. Sand/rock surface geometry only; water shown small context inset and not solid fused block.",
+      "construction": "One isolated shell beach substrate. Missing uneven sea coastline substrates. Sand/rock surface geometry only; water shown small context inset and not solid fused block. Coherent actual silhouette, visible root/underside/side; no unrelated architecture/scenery attached. Other existing named species/forms must not be regenerated. Local material consistent with source. Dimensions are proposals to refine by subject.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Coast, open sea and reefs"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "T03-SHORE-001-A03__shell-beach-substrate__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "T03-SHORE-001-A04",
+      "name": "Shallow tidal pool bank",
+      "kind": "natural-module",
+      "dimensions_m_proposed": [
+        4,
+        4,
+        2
+      ],
+      "function": "Missing uneven sea coastline substrates. Sand/rock surface geometry only; water shown small context inset and not solid fused block.",
+      "construction": "One isolated shallow tidal pool bank. Missing uneven sea coastline substrates. Sand/rock surface geometry only; water shown small context inset and not solid fused block. Coherent actual silhouette, visible root/underside/side; no unrelated architecture/scenery attached. Other existing named species/forms must not be regenerated. Local material consistent with source. Dimensions are proposals to refine by subject.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Coast, open sea and reefs"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "T03-SHORE-001-A04__shallow-tidal-pool-bank__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    }
+  ],
+  "outputs": [],
+  "previous_attempts": [],
+  "models_generated": 0,
+  "physical_join_fit_verified": false,
+  "view_geometry_parity_verified": false,
+  "review_status": "planned-after-gap-audit",
+  "gap": "Missing uneven sea coastline substrates. Sand/rock surface geometry only; water shown small context inset and not solid fused block.",
+  "mode": "nature"
+}

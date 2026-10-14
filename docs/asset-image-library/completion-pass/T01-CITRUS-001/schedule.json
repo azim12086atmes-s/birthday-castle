@@ -1,0 +1,158 @@
+{
+  "sheet_id": "T01-CITRUS-001",
+  "name": "Conservatory and lagoon fruit trees",
+  "owner": "terrain-water-and-planting",
+  "family": "Palace grounds and rose gardens",
+  "location_id": null,
+  "source_reference_id": "GEN-26",
+  "source_reference_file": "images/illustrated-boards/GEN-26.png",
+  "source_reference_sha256": "6ca64686df3226a1da314f2865d3cd2699124b9f746b44ace5fbb72aa9801321",
+  "prompt": "Create ONE clean detailed GAME ASSET REFERENCE SHEET, NOT Blender or a3Dmodel. Plain light ivory studio background, soft even light, full uncropped separate objects, readable thickness, precise non-melting forms. FULL IDs and names outside silhouettes, dimensions marked PROPOSED. Each cell independent illustration scale. No environment scenery, humans, extra unlabeled objects, watermark or whole-palace redesign. Use ONLY the single supplied source image for visible style/material/form authority; infer missing backs and assembly interfaces conservatively. Source illustration motifs are inspiration, not recovered measured geometry. Exactly4 whole plants in separate large cells. Complete root/trunk-to-crown forms; smaller coherent leaf/bark/canopy or side inset, no humans, soil pedestals, attached architecture. Distinct species silhouettes, realistic branching and restrained local natural palette. Do not turn plants into disconnected bouquets. Botanical labels are concept names, not validated specimens. Title \"T01-CITRUS-001 \u2014 Conservatory and lagoon fruit trees\". Footer \"Proposed construction / source-compatible references / mesh joins and views unverified\".\n\nPurpose/gap: Source visiblycontainscitrus, missing isolatedtree forms. Naturalgreenleaves/goldfruit/whiteflowers on actualbranches, existingurns separate.\n\nT01-CITRUS-001-A01 \u2014 Small orange tree. Dimensions W,D,H [3, 3, 4]m proposed. One isolated small orange tree. Source visiblycontainscitrus, missing isolatedtree forms. Naturalgreenleaves/goldfruit/whiteflowers on actualbranches, existingurns separate. Coherent actual silhouette, visible root/underside/side; no unrelated architecture/scenery attached. Other existing named species/forms must not be regenerated. Local material consistent with source. Dimensions are proposals to refine by subject.\n\nT01-CITRUS-001-A02 \u2014 Small lemon tree. Dimensions W,D,H [3, 3, 4]m proposed. One isolated small lemon tree. Source visiblycontainscitrus, missing isolatedtree forms. Naturalgreenleaves/goldfruit/whiteflowers on actualbranches, existingurns separate. Coherent actual silhouette, visible root/underside/side; no unrelated architecture/scenery attached. Other existing named species/forms must not be regenerated. Local material consistent with source. Dimensions are proposals to refine by subject.\n\nT01-CITRUS-001-A03 \u2014 Young espalier citrus. Dimensions W,D,H [3, 3, 4]m proposed. One isolated young espalier citrus. Source visiblycontainscitrus, missing isolatedtree forms. Naturalgreenleaves/goldfruit/whiteflowers on actualbranches, existingurns separate. Coherent actual silhouette, visible root/underside/side; no unrelated architecture/scenery attached. Other existing named species/forms must not be regenerated. Local material consistent with source. Dimensions are proposals to refine by subject.\n\nT01-CITRUS-001-A04 \u2014 Compact flowering citrus. Dimensions W,D,H [3, 3, 4]m proposed. One isolated compact flowering citrus. Source visiblycontainscitrus, missing isolatedtree forms. Naturalgreenleaves/goldfruit/whiteflowers on actualbranches, existingurns separate. Coherent actual silhouette, visible root/underside/side; no unrelated architecture/scenery attached. Other existing named species/forms must not be regenerated. Local material consistent with source. Dimensions are proposals to refine by subject.",
+  "parts": [
+    {
+      "asset_id": "T01-CITRUS-001-A01",
+      "name": "Small orange tree",
+      "kind": "flora-reference",
+      "dimensions_m_proposed": [
+        3,
+        3,
+        4
+      ],
+      "function": "Source visiblycontainscitrus, missing isolatedtree forms. Naturalgreenleaves/goldfruit/whiteflowers on actualbranches, existingurns separate.",
+      "construction": "One isolated small orange tree. Source visiblycontainscitrus, missing isolatedtree forms. Naturalgreenleaves/goldfruit/whiteflowers on actualbranches, existingurns separate. Coherent actual silhouette, visible root/underside/side; no unrelated architecture/scenery attached. Other existing named species/forms must not be regenerated. Local material consistent with source. Dimensions are proposals to refine by subject.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Palace grounds and rose gardens"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "T01-CITRUS-001-A01__small-orange-tree__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "T01-CITRUS-001-A02",
+      "name": "Small lemon tree",
+      "kind": "flora-reference",
+      "dimensions_m_proposed": [
+        3,
+        3,
+        4
+      ],
+      "function": "Source visiblycontainscitrus, missing isolatedtree forms. Naturalgreenleaves/goldfruit/whiteflowers on actualbranches, existingurns separate.",
+      "construction": "One isolated small lemon tree. Source visiblycontainscitrus, missing isolatedtree forms. Naturalgreenleaves/goldfruit/whiteflowers on actualbranches, existingurns separate. Coherent actual silhouette, visible root/underside/side; no unrelated architecture/scenery attached. Other existing named species/forms must not be regenerated. Local material consistent with source. Dimensions are proposals to refine by subject.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Palace grounds and rose gardens"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "T01-CITRUS-001-A02__small-lemon-tree__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "T01-CITRUS-001-A03",
+      "name": "Young espalier citrus",
+      "kind": "flora-reference",
+      "dimensions_m_proposed": [
+        3,
+        3,
+        4
+      ],
+      "function": "Source visiblycontainscitrus, missing isolatedtree forms. Naturalgreenleaves/goldfruit/whiteflowers on actualbranches, existingurns separate.",
+      "construction": "One isolated young espalier citrus. Source visiblycontainscitrus, missing isolatedtree forms. Naturalgreenleaves/goldfruit/whiteflowers on actualbranches, existingurns separate. Coherent actual silhouette, visible root/underside/side; no unrelated architecture/scenery attached. Other existing named species/forms must not be regenerated. Local material consistent with source. Dimensions are proposals to refine by subject.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Palace grounds and rose gardens"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "T01-CITRUS-001-A03__young-espalier-citrus__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "T01-CITRUS-001-A04",
+      "name": "Compact flowering citrus",
+      "kind": "flora-reference",
+      "dimensions_m_proposed": [
+        3,
+        3,
+        4
+      ],
+      "function": "Source visiblycontainscitrus, missing isolatedtree forms. Naturalgreenleaves/goldfruit/whiteflowers on actualbranches, existingurns separate.",
+      "construction": "One isolated compact flowering citrus. Source visiblycontainscitrus, missing isolatedtree forms. Naturalgreenleaves/goldfruit/whiteflowers on actualbranches, existingurns separate. Coherent actual silhouette, visible root/underside/side; no unrelated architecture/scenery attached. Other existing named species/forms must not be regenerated. Local material consistent with source. Dimensions are proposals to refine by subject.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Palace grounds and rose gardens"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "T01-CITRUS-001-A04__compact-flowering-citrus__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    }
+  ],
+  "outputs": [
+    {
+      "file": "completion-pass/T01-CITRUS-001/T01-CITRUS-001.png",
+      "sha256": "85d2023279f6bbc425b689633932e420efe192872db043e84604c85bcd1e232b",
+      "original_file": "/workspace/generated_images/exec-c2fd8097-c018-408d-9b4c-7d7851833fd3.png",
+      "actual_input_file": "images/illustrated-boards/GEN-26.png",
+      "actual_input_sha256": "6ca64686df3226a1da314f2865d3cd2699124b9f746b44ace5fbb72aa9801321",
+      "attempt": 1,
+      "generator": "image_gen.imagegen"
+    }
+  ],
+  "previous_attempts": [],
+  "models_generated": 0,
+  "physical_join_fit_verified": false,
+  "view_geometry_parity_verified": false,
+  "review_status": "pending-user-reference-and-model-review",
+  "gap": "Source visiblycontainscitrus, missing isolatedtree forms. Naturalgreenleaves/goldfruit/whiteflowers on actualbranches, existingurns separate.",
+  "mode": "flora",
+  "visual_review_notes": [
+    "Four tree forms including espalier; natural shape, roots and fruit coherent. Espalier depth and crown projections are illustrative."
+  ],
+  "visual_inventory_review": {
+    "expected_groups_present": true,
+    "method": "Individual manual inspection of generated sheet; exact geometry remains unverified"
+  }
+}

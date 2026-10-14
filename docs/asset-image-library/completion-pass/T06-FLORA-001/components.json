@@ -1,0 +1,184 @@
+{
+  "components": [
+    {
+      "asset_id": "T06-FLORA-001-A01",
+      "name": "Heather shrub",
+      "kind": "flora-reference",
+      "dimensions_m_proposed": [
+        1.5,
+        1.5,
+        1.2
+      ],
+      "function": "New cold/highland vegetation, ordinarygreens/pale blooms; distinct rooted lowforms, do not repeat forestcanopy or palaceblossoms.",
+      "construction": "One isolated heather shrub. New cold/highland vegetation, ordinarygreens/pale blooms; distinct rooted lowforms, do not repeat forestcanopy or palaceblossoms. Coherent actual silhouette, visible root/underside/side; no unrelated architecture/scenery attached. Other existing named species/forms must not be regenerated. Local material consistent with source. Dimensions are proposals to refine by subject.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Fjord, highland and cliffs"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "T06-FLORA-001-A01__heather-shrub__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "T06-FLORA-001-A02",
+      "name": "Alpine juniper shrub",
+      "kind": "flora-reference",
+      "dimensions_m_proposed": [
+        1.5,
+        1.5,
+        1.2
+      ],
+      "function": "New cold/highland vegetation, ordinarygreens/pale blooms; distinct rooted lowforms, do not repeat forestcanopy or palaceblossoms.",
+      "construction": "One isolated alpine juniper shrub. New cold/highland vegetation, ordinarygreens/pale blooms; distinct rooted lowforms, do not repeat forestcanopy or palaceblossoms. Coherent actual silhouette, visible root/underside/side; no unrelated architecture/scenery attached. Other existing named species/forms must not be regenerated. Local material consistent with source. Dimensions are proposals to refine by subject.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Fjord, highland and cliffs"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "T06-FLORA-001-A02__alpine-juniper-shrub__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "T06-FLORA-001-A03",
+      "name": "Lichen moss cushion",
+      "kind": "flora-reference",
+      "dimensions_m_proposed": [
+        1.5,
+        1.5,
+        1.2
+      ],
+      "function": "New cold/highland vegetation, ordinarygreens/pale blooms; distinct rooted lowforms, do not repeat forestcanopy or palaceblossoms.",
+      "construction": "One isolated lichen moss cushion. New cold/highland vegetation, ordinarygreens/pale blooms; distinct rooted lowforms, do not repeat forestcanopy or palaceblossoms. Coherent actual silhouette, visible root/underside/side; no unrelated architecture/scenery attached. Other existing named species/forms must not be regenerated. Local material consistent with source. Dimensions are proposals to refine by subject.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Fjord, highland and cliffs"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "T06-FLORA-001-A03__lichen-moss-cushion__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "T06-FLORA-001-A04",
+      "name": "Alpine flower clump",
+      "kind": "flora-reference",
+      "dimensions_m_proposed": [
+        1.5,
+        1.5,
+        1.2
+      ],
+      "function": "New cold/highland vegetation, ordinarygreens/pale blooms; distinct rooted lowforms, do not repeat forestcanopy or palaceblossoms.",
+      "construction": "One isolated alpine flower clump. New cold/highland vegetation, ordinarygreens/pale blooms; distinct rooted lowforms, do not repeat forestcanopy or palaceblossoms. Coherent actual silhouette, visible root/underside/side; no unrelated architecture/scenery attached. Other existing named species/forms must not be regenerated. Local material consistent with source. Dimensions are proposals to refine by subject.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Fjord, highland and cliffs"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "T06-FLORA-001-A04__alpine-flower-clump__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "T06-FLORA-001-A05",
+      "name": "Cold shore sedge",
+      "kind": "flora-reference",
+      "dimensions_m_proposed": [
+        1.5,
+        1.5,
+        1.2
+      ],
+      "function": "New cold/highland vegetation, ordinarygreens/pale blooms; distinct rooted lowforms, do not repeat forestcanopy or palaceblossoms.",
+      "construction": "One isolated cold shore sedge. New cold/highland vegetation, ordinarygreens/pale blooms; distinct rooted lowforms, do not repeat forestcanopy or palaceblossoms. Coherent actual silhouette, visible root/underside/side; no unrelated architecture/scenery attached. Other existing named species/forms must not be regenerated. Local material consistent with source. Dimensions are proposals to refine by subject.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Fjord, highland and cliffs"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "T06-FLORA-001-A05__cold-shore-sedge__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "T06-FLORA-001-A06",
+      "name": "Rocky slope dwarf pine",
+      "kind": "flora-reference",
+      "dimensions_m_proposed": [
+        1.5,
+        1.5,
+        1.2
+      ],
+      "function": "New cold/highland vegetation, ordinarygreens/pale blooms; distinct rooted lowforms, do not repeat forestcanopy or palaceblossoms.",
+      "construction": "One isolated rocky slope dwarf pine. New cold/highland vegetation, ordinarygreens/pale blooms; distinct rooted lowforms, do not repeat forestcanopy or palaceblossoms. Coherent actual silhouette, visible root/underside/side; no unrelated architecture/scenery attached. Other existing named species/forms must not be regenerated. Local material consistent with source. Dimensions are proposals to refine by subject.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Fjord, highland and cliffs"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "T06-FLORA-001-A06__rocky-slope-dwarf-pine__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    }
+  ]
+}

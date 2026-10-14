@@ -1,0 +1,124 @@
+{
+  "components": [
+    {
+      "asset_id": "B16-STRUCT-001-S01",
+      "name": "Cedar post/wall bay",
+      "kind": "structural-section",
+      "dimensions_m_proposed": [
+        8,
+        6,
+        12
+      ],
+      "function": "Need long wall/post bay, gable/roof ridge end, porch threshold and carved curved ridge supports. Source already contains cedar grain, amber glazing and Nordic scrolls; do not reuse B12 crown signs or Gothic capitals indiscriminately. Conifers/heather/moss; fox/hare/woodland birds proposed. Provide missing isolated hosts and join views.",
+      "construction": "One isolated cedar post/wall bay matching the supplied building, its roof/arch/wall silhouette and local materials. Show front and interior/rear/underside contact, not a complete building scene. Actual open column galleries and holes stay open. Extend hidden depth only enough to form a joinable section; no palace-wide plan or added unrelated tower.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B16"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B16-STRUCT-001-S01__cedar-post-wall-bay__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "B16-STRUCT-001-S02",
+      "name": "Deep porch/threshold",
+      "kind": "structural-section",
+      "dimensions_m_proposed": [
+        8,
+        6,
+        12
+      ],
+      "function": "Need long wall/post bay, gable/roof ridge end, porch threshold and carved curved ridge supports. Source already contains cedar grain, amber glazing and Nordic scrolls; do not reuse B12 crown signs or Gothic capitals indiscriminately. Conifers/heather/moss; fox/hare/woodland birds proposed. Provide missing isolated hosts and join views.",
+      "construction": "One isolated deep porch/threshold matching the supplied building, its roof/arch/wall silhouette and local materials. Show front and interior/rear/underside contact, not a complete building scene. Actual open column galleries and holes stay open. Extend hidden depth only enough to form a joinable section; no palace-wide plan or added unrelated tower.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B16"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B16-STRUCT-001-S02__deep-porch-threshold__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "B16-STRUCT-001-S03",
+      "name": "Long gable/roof host",
+      "kind": "structural-section",
+      "dimensions_m_proposed": [
+        8,
+        6,
+        12
+      ],
+      "function": "Need long wall/post bay, gable/roof ridge end, porch threshold and carved curved ridge supports. Source already contains cedar grain, amber glazing and Nordic scrolls; do not reuse B12 crown signs or Gothic capitals indiscriminately. Conifers/heather/moss; fox/hare/woodland birds proposed. Provide missing isolated hosts and join views.",
+      "construction": "One isolated long gable/roof host matching the supplied building, its roof/arch/wall silhouette and local materials. Show front and interior/rear/underside contact, not a complete building scene. Actual open column galleries and holes stay open. Extend hidden depth only enough to form a joinable section; no palace-wide plan or added unrelated tower.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B16"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B16-STRUCT-001-S03__long-gable-roof-host__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "B16-STRUCT-001-S04",
+      "name": "Curved ridge end seat",
+      "kind": "structural-section",
+      "dimensions_m_proposed": [
+        8,
+        6,
+        12
+      ],
+      "function": "Need long wall/post bay, gable/roof ridge end, porch threshold and carved curved ridge supports. Source already contains cedar grain, amber glazing and Nordic scrolls; do not reuse B12 crown signs or Gothic capitals indiscriminately. Conifers/heather/moss; fox/hare/woodland birds proposed. Provide missing isolated hosts and join views.",
+      "construction": "One isolated curved ridge end seat matching the supplied building, its roof/arch/wall silhouette and local materials. Show front and interior/rear/underside contact, not a complete building scene. Actual open column galleries and holes stay open. Extend hidden depth only enough to form a joinable section; no palace-wide plan or added unrelated tower.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B16"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B16-STRUCT-001-S04__curved-ridge-end-seat__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    }
+  ]
+}

@@ -31,7 +31,7 @@ for alias,canonical in aliases.items():assert canonical in assets and alias not 
 assert len(aliases)==16
 for x in wish:assert x['asset_id'] in assets and assets[x['asset_id']]['model_status']=='unregistered'
 assert len({x['category_id'] for x in load(P/'palace-needs.json')['categories']})==20
-assert b['total_final_sheet_cap']==230 and b['global_caps']['palace']==65 and sum(f['cap'] for f in b['palace_family_caps'])==65
+assert b['total_final_sheet_cap']==230 and sum(b['global_caps'].values())==230 and sum(f['cap'] for f in b['palace_family_caps'])==b['global_caps']['palace']
 assert len(b['selected_slots'])<=230
 for owner,cap in b['global_caps'].items():assert sum(x['owner']==owner for x in b['selected_slots'])<=cap
 for f in b['palace_family_caps']:assert len(f['existing_ids'])+sum(x.get('family')==f['family'] for x in b['selected_slots'])<=f['cap']
@@ -46,5 +46,5 @@ for f in P.rglob('index.html'):
  for link in re.findall(r'(?:href|src)="([^"]+)"',f.read_text()):
   if not link.startswith(('https://','#')):assert (f.parent/link).exists(),(f,link)
 assert not list(P.rglob('*.glb')) and not list(P.rglob('*.blend'))
-out={'active_sheets':7,'active_component_targets':100,'direct_source_panels':len(panels)+len(wish),'exact_source_crop_pixels_verified':True,'archive_hashes_verified':True,'archive_images':len(images),'model_targets':len(assets),'existing_wish_designs':8,'new_wish_designs_generated':0,'newly_registered_existing_wish_designs':4,'future_palace_categories':20,'parked_generated_map_studies':1,'map_studies_in_active_selection':0,'palace_selected_or_reserved':sum(x['owner']=='palace' for x in b['selected_slots']),'selected_or_reserved':len(b['selected_slots']),'palace_cap':65,'global_cap':230,'generated_models_this_pass':0,'physical_join_fit_verified':False,'seamless_UV_textures_verified':False,'review_status':'pending-user-reference-review','limits':'Provenance/contract checks do not establish image fidelity, model fit, full2km room coverage or runtime readiness.'}
+out={'active_sheets':7,'active_component_targets':100,'direct_source_panels':len(panels)+len(wish),'exact_source_crop_pixels_verified':True,'archive_hashes_verified':True,'archive_images':len(images),'model_targets':len(assets),'existing_wish_designs':8,'new_wish_designs_generated':0,'newly_registered_existing_wish_designs':4,'future_palace_categories':20,'parked_generated_map_studies':1,'map_studies_in_active_selection':0,'palace_selected_or_reserved':sum(x['owner']=='palace' for x in b['selected_slots']),'selected_or_reserved':len(b['selected_slots']),'palace_cap':b['global_caps']['palace'],'global_cap':230,'generated_models_this_pass':0,'physical_join_fit_verified':False,'seamless_UV_textures_verified':False,'review_status':'pending-user-reference-review','limits':'Provenance/contract checks do not establish image fidelity, model fit, full2km room coverage or runtime readiness.'}
 (P/'verification.json').write_text(json.dumps(out,indent=2)+'\n');print(json.dumps(out))

@@ -1,0 +1,124 @@
+{
+  "components": [
+    {
+      "asset_id": "B15-STRUCT-001-S01",
+      "name": "Setback jade wall",
+      "kind": "structural-section",
+      "dimensions_m_proposed": [
+        8,
+        6,
+        12
+      ],
+      "function": "Need beveled/setback wall hosts, terrace/step returns, portal reveal/lotus crest seat and gold band corners. Existing jade/lotus/gold patterns retained, not recoloured to palace marble. Distinct jungle canopy/palms/vines/epiphytes and birds/geckos/beetles still require audit; shared moss/rocks/water reused. Provide missing isolated hosts and join views.",
+      "construction": "One isolated setback jade wall matching the supplied building, its roof/arch/wall silhouette and local materials. Show front and interior/rear/underside contact, not a complete building scene. Actual open column galleries and holes stay open. Extend hidden depth only enough to form a joinable section; no palace-wide plan or added unrelated tower.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B15"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B15-STRUCT-001-S01__setback-jade-wall__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "B15-STRUCT-001-S02",
+      "name": "Terrace return",
+      "kind": "structural-section",
+      "dimensions_m_proposed": [
+        8,
+        6,
+        12
+      ],
+      "function": "Need beveled/setback wall hosts, terrace/step returns, portal reveal/lotus crest seat and gold band corners. Existing jade/lotus/gold patterns retained, not recoloured to palace marble. Distinct jungle canopy/palms/vines/epiphytes and birds/geckos/beetles still require audit; shared moss/rocks/water reused. Provide missing isolated hosts and join views.",
+      "construction": "One isolated terrace return matching the supplied building, its roof/arch/wall silhouette and local materials. Show front and interior/rear/underside contact, not a complete building scene. Actual open column galleries and holes stay open. Extend hidden depth only enough to form a joinable section; no palace-wide plan or added unrelated tower.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B15"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B15-STRUCT-001-S02__terrace-return__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "B15-STRUCT-001-S03",
+      "name": "Portal/lotus crest host",
+      "kind": "structural-section",
+      "dimensions_m_proposed": [
+        8,
+        6,
+        12
+      ],
+      "function": "Need beveled/setback wall hosts, terrace/step returns, portal reveal/lotus crest seat and gold band corners. Existing jade/lotus/gold patterns retained, not recoloured to palace marble. Distinct jungle canopy/palms/vines/epiphytes and birds/geckos/beetles still require audit; shared moss/rocks/water reused. Provide missing isolated hosts and join views.",
+      "construction": "One isolated portal/lotus crest host matching the supplied building, its roof/arch/wall silhouette and local materials. Show front and interior/rear/underside contact, not a complete building scene. Actual open column galleries and holes stay open. Extend hidden depth only enough to form a joinable section; no palace-wide plan or added unrelated tower.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B15"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B15-STRUCT-001-S03__portal-lotus-crest-host__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "B15-STRUCT-001-S04",
+      "name": "Central stair landing",
+      "kind": "structural-section",
+      "dimensions_m_proposed": [
+        8,
+        6,
+        12
+      ],
+      "function": "Need beveled/setback wall hosts, terrace/step returns, portal reveal/lotus crest seat and gold band corners. Existing jade/lotus/gold patterns retained, not recoloured to palace marble. Distinct jungle canopy/palms/vines/epiphytes and birds/geckos/beetles still require audit; shared moss/rocks/water reused. Provide missing isolated hosts and join views.",
+      "construction": "One isolated central stair landing matching the supplied building, its roof/arch/wall silhouette and local materials. Show front and interior/rear/underside contact, not a complete building scene. Actual open column galleries and holes stay open. Extend hidden depth only enough to form a joinable section; no palace-wide plan or added unrelated tower.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B15"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B15-STRUCT-001-S04__central-stair-landing__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    }
+  ]
+}

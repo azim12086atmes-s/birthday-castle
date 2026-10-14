@@ -1,0 +1,381 @@
+{
+  "sheet_id": "B18-DETAIL-001",
+  "name": "Mother Tree Sanctuary \u2014 surface and detail kit",
+  "owner": "other-map-buildings",
+  "family": "B18",
+  "location_id": "B18",
+  "source_reference_id": "SRC-LOC-B18-GEN-06",
+  "source_reference_file": "world-layout/location-audit/source/B18-GEN-06.png",
+  "source_reference_sha256": "16b7240464f3d2c5d4ad6bea284807aa9b70cd9015dbb96e3ad42823c71485ed",
+  "prompt": "Create ONE clean detailed GAME ASSET REFERENCE SHEET, NOT Blender or a3Dmodel. Plain light ivory studio background, soft even light, full uncropped separate objects, readable thickness, precise non-melting forms. FULL IDs and names outside silhouettes, dimensions marked PROPOSED. Each cell independent illustration scale. No environment scenery, humans, extra unlabeled objects, watermark or whole-palace redesign. Use ONLY the single supplied source image for visible style/material/form authority; infer missing backs and assembly interfaces conservatively. Source illustration motifs are inspiration, not recovered measured geometry. Visible source facts: Huge pink-blossom living tree with root-formed Gothic gateway/cloister, trunk windows and small branch/roof niches, dangling wish charms and integrated flower planting. Living wood supplies architecture; source is not a masonry castle covered by a tree. Hidden layout inference: A shaded root courtyard receives the forest path, a broad root arch leads to a quiet wish clearing, and one gentle loop follows exterior root alcoves. Higher trunk balconies can remain visual or connect through a declared route, not assumed navigable from artwork. Preserve hero canopy and rooted lower openings. Preserve this local design. Exactly12 isolated main components in a clean4-column grid. No missing/empty slots or repeated subjects counted twice. One clear front/three-quarter view with useful small rear/top/contact inset per cell. Truly flat backs for appliques, square join ends for repeat mouldings. Screens have repeated coherent holes, no tangled tendrils. Windows separate glass from surrounds, cornices/parapets and posts separate where named. Do not include large room/scenery fragments attached to a tiny detail. Title \"B18-DETAIL-001 \u2014 Mother Tree Sanctuary \u2014 surface and detail kit\". Footer \"Proposed construction / source-compatible references / mesh joins and views unverified\".\n\nPurpose/gap: Existing GEN-08/23 tree/charm vocabulary needs identity matching before reuse. Need root gateway floor/seats, trunk-window reveal and branch-balcony contact/guard geometry where unseen. Low shade planting, blossom petals and occasional deer/butterflies; no replacement by ordinary 18m forest oak. Missing detached construction pieces and local interior-facing patterns.\n\nB18-DETAIL-001-D01 \u2014 Living root arch collar. Dimensions W,D,H [1.5, 0.15, 1.5]m proposed. One isolated living root arch collar, strictly follow local source colour/material/motif instead of universal pink marble. Show real depth, flat back/host contact or one consistent repeat profile. Existing generic lanterns/flowers/benches reused; only named local fittings. No merged wall scene attached to small detail.\n\nB18-DETAIL-001-D02 \u2014 Trunk window insert. Dimensions W,D,H [1.5, 0.15, 1.5]m proposed. One isolated trunk window insert, strictly follow local source colour/material/motif instead of universal pink marble. Show real depth, flat back/host contact or one consistent repeat profile. Existing generic lanterns/flowers/benches reused; only named local fittings. No merged wall scene attached to small detail.\n\nB18-DETAIL-001-D03 \u2014 Root stair foot brace. Dimensions W,D,H [1.5, 0.15, 1.5]m proposed. One isolated root stair foot brace, strictly follow local source colour/material/motif instead of universal pink marble. Show real depth, flat back/host contact or one consistent repeat profile. Existing generic lanterns/flowers/benches reused; only named local fittings. No merged wall scene attached to small detail.\n\nB18-DETAIL-001-D04 \u2014 Tree cloister gold hinge. Dimensions W,D,H [0.2, 0.12, 0.25]m proposed. One isolated tree cloister gold hinge, strictly follow local source colour/material/motif instead of universal pink marble. Show real depth, flat back/host contact or one consistent repeat profile. Existing generic lanterns/flowers/benches reused; only named local fittings. No merged wall scene attached to small detail.\n\nB18-DETAIL-001-D05 \u2014 Mother Tree charm hanger. Dimensions W,D,H [0.2, 0.12, 0.25]m proposed. One isolated mother tree charm hanger, strictly follow local source colour/material/motif instead of universal pink marble. Show real depth, flat back/host contact or one consistent repeat profile. Existing generic lanterns/flowers/benches reused; only named local fittings. No merged wall scene attached to small detail.\n\nB18-DETAIL-001-D06 \u2014 Pink blossom crown cluster. Dimensions W,D,H [1.5, 0.15, 1.5]m proposed. One isolated pink blossom crown cluster, strictly follow local source colour/material/motif instead of universal pink marble. Show real depth, flat back/host contact or one consistent repeat profile. Existing generic lanterns/flowers/benches reused; only named local fittings. No merged wall scene attached to small detail.\n\nB18-DETAIL-001-D07 \u2014 Root walkway edge. Dimensions W,D,H [1.5, 0.15, 1.5]m proposed. One isolated root walkway edge, strictly follow local source colour/material/motif instead of universal pink marble. Show real depth, flat back/host contact or one consistent repeat profile. Existing generic lanterns/flowers/benches reused; only named local fittings. No merged wall scene attached to small detail.\n\nB18-DETAIL-001-D08 \u2014 Carved tree door. Dimensions W,D,H [1.5, 0.15, 1.5]m proposed. One isolated carved tree door, strictly follow local source colour/material/motif instead of universal pink marble. Show real depth, flat back/host contact or one consistent repeat profile. Existing generic lanterns/flowers/benches reused; only named local fittings. No merged wall scene attached to small detail.\n\nB18-DETAIL-001-D09 \u2014 Tree gallery support bracket. Dimensions W,D,H [1.5, 0.15, 1.5]m proposed. One isolated tree gallery support bracket, strictly follow local source colour/material/motif instead of universal pink marble. Show real depth, flat back/host contact or one consistent repeat profile. Existing generic lanterns/flowers/benches reused; only named local fittings. No merged wall scene attached to small detail.\n\nB18-DETAIL-001-D10 \u2014 Organic wall relief. Dimensions W,D,H [1.5, 0.15, 1.5]m proposed. One isolated organic wall relief, strictly follow local source colour/material/motif instead of universal pink marble. Show real depth, flat back/host contact or one consistent repeat profile. Existing generic lanterns/flowers/benches reused; only named local fittings. No merged wall scene attached to small detail.\n\nB18-DETAIL-001-D11 \u2014 Living roof vent trim. Dimensions W,D,H [1.5, 0.15, 1.5]m proposed. One isolated living roof vent trim, strictly follow local source colour/material/motif instead of universal pink marble. Show real depth, flat back/host contact or one consistent repeat profile. Existing generic lanterns/flowers/benches reused; only named local fittings. No merged wall scene attached to small detail.\n\nB18-DETAIL-001-D12 \u2014 Interior leaf ceiling panel. Dimensions W,D,H [1.5, 0.15, 1.5]m proposed. One isolated interior leaf ceiling panel, strictly follow local source colour/material/motif instead of universal pink marble. Show real depth, flat back/host contact or one consistent repeat profile. Existing generic lanterns/flowers/benches reused; only named local fittings. No merged wall scene attached to small detail.\n\nCRITICAL part isolation and orientation rules:\nB18-DETAIL-001-D04: SMALL attachment hardware only: plate/socket/hook/joint with its own hole/root and source-compatible quiet ornament. No lantern body, full arch, whole column, complete door, garden or giant architectural scene glued to it.\nB18-DETAIL-001-D05: SMALL attachment hardware only: plate/socket/hook/joint with its own hole/root and source-compatible quiet ornament. No lantern body, full arch, whole column, complete door, garden or giant architectural scene glued to it.",
+  "parts": [
+    {
+      "asset_id": "B18-DETAIL-001-D01",
+      "name": "Living root arch collar",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        1.5,
+        0.15,
+        1.5
+      ],
+      "function": "Existing GEN-08/23 tree/charm vocabulary needs identity matching before reuse. Need root gateway floor/seats, trunk-window reveal and branch-balcony contact/guard geometry where unseen. Low shade planting, blossom petals and occasional deer/butterflies; no replacement by ordinary 18m forest oak. Missing detached construction pieces and local interior-facing patterns.",
+      "construction": "One isolated living root arch collar, strictly follow local source colour/material/motif instead of universal pink marble. Show real depth, flat back/host contact or one consistent repeat profile. Existing generic lanterns/flowers/benches reused; only named local fittings. No merged wall scene attached to small detail.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B18"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B18-DETAIL-001-D01__living-root-arch-collar__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "B18-DETAIL-001-D02",
+      "name": "Trunk window insert",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        1.5,
+        0.15,
+        1.5
+      ],
+      "function": "Existing GEN-08/23 tree/charm vocabulary needs identity matching before reuse. Need root gateway floor/seats, trunk-window reveal and branch-balcony contact/guard geometry where unseen. Low shade planting, blossom petals and occasional deer/butterflies; no replacement by ordinary 18m forest oak. Missing detached construction pieces and local interior-facing patterns.",
+      "construction": "One isolated trunk window insert, strictly follow local source colour/material/motif instead of universal pink marble. Show real depth, flat back/host contact or one consistent repeat profile. Existing generic lanterns/flowers/benches reused; only named local fittings. No merged wall scene attached to small detail.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B18"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B18-DETAIL-001-D02__trunk-window-insert__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "B18-DETAIL-001-D03",
+      "name": "Root stair foot brace",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        1.5,
+        0.15,
+        1.5
+      ],
+      "function": "Existing GEN-08/23 tree/charm vocabulary needs identity matching before reuse. Need root gateway floor/seats, trunk-window reveal and branch-balcony contact/guard geometry where unseen. Low shade planting, blossom petals and occasional deer/butterflies; no replacement by ordinary 18m forest oak. Missing detached construction pieces and local interior-facing patterns.",
+      "construction": "One isolated root stair foot brace, strictly follow local source colour/material/motif instead of universal pink marble. Show real depth, flat back/host contact or one consistent repeat profile. Existing generic lanterns/flowers/benches reused; only named local fittings. No merged wall scene attached to small detail.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B18"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B18-DETAIL-001-D03__root-stair-foot-brace__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "B18-DETAIL-001-D04",
+      "name": "Tree cloister gold hinge",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        0.2,
+        0.12,
+        0.25
+      ],
+      "function": "Existing GEN-08/23 tree/charm vocabulary needs identity matching before reuse. Need root gateway floor/seats, trunk-window reveal and branch-balcony contact/guard geometry where unseen. Low shade planting, blossom petals and occasional deer/butterflies; no replacement by ordinary 18m forest oak. Missing detached construction pieces and local interior-facing patterns.",
+      "construction": "One isolated tree cloister gold hinge, strictly follow local source colour/material/motif instead of universal pink marble. Show real depth, flat back/host contact or one consistent repeat profile. Existing generic lanterns/flowers/benches reused; only named local fittings. No merged wall scene attached to small detail. SMALL attachment hardware only: plate/socket/hook/joint with its own hole/root and source-compatible quiet ornament. No lantern body, full arch, whole column, complete door, garden or giant architectural scene glued to it.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B18"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B18-DETAIL-001-D04__tree-cloister-gold-hinge__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "B18-DETAIL-001-D05",
+      "name": "Mother Tree charm hanger",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        0.2,
+        0.12,
+        0.25
+      ],
+      "function": "Existing GEN-08/23 tree/charm vocabulary needs identity matching before reuse. Need root gateway floor/seats, trunk-window reveal and branch-balcony contact/guard geometry where unseen. Low shade planting, blossom petals and occasional deer/butterflies; no replacement by ordinary 18m forest oak. Missing detached construction pieces and local interior-facing patterns.",
+      "construction": "One isolated mother tree charm hanger, strictly follow local source colour/material/motif instead of universal pink marble. Show real depth, flat back/host contact or one consistent repeat profile. Existing generic lanterns/flowers/benches reused; only named local fittings. No merged wall scene attached to small detail. SMALL attachment hardware only: plate/socket/hook/joint with its own hole/root and source-compatible quiet ornament. No lantern body, full arch, whole column, complete door, garden or giant architectural scene glued to it.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B18"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B18-DETAIL-001-D05__mother-tree-charm-hanger__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "B18-DETAIL-001-D06",
+      "name": "Pink blossom crown cluster",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        1.5,
+        0.15,
+        1.5
+      ],
+      "function": "Existing GEN-08/23 tree/charm vocabulary needs identity matching before reuse. Need root gateway floor/seats, trunk-window reveal and branch-balcony contact/guard geometry where unseen. Low shade planting, blossom petals and occasional deer/butterflies; no replacement by ordinary 18m forest oak. Missing detached construction pieces and local interior-facing patterns.",
+      "construction": "One isolated pink blossom crown cluster, strictly follow local source colour/material/motif instead of universal pink marble. Show real depth, flat back/host contact or one consistent repeat profile. Existing generic lanterns/flowers/benches reused; only named local fittings. No merged wall scene attached to small detail.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B18"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B18-DETAIL-001-D06__pink-blossom-crown-cluster__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "B18-DETAIL-001-D07",
+      "name": "Root walkway edge",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        1.5,
+        0.15,
+        1.5
+      ],
+      "function": "Existing GEN-08/23 tree/charm vocabulary needs identity matching before reuse. Need root gateway floor/seats, trunk-window reveal and branch-balcony contact/guard geometry where unseen. Low shade planting, blossom petals and occasional deer/butterflies; no replacement by ordinary 18m forest oak. Missing detached construction pieces and local interior-facing patterns.",
+      "construction": "One isolated root walkway edge, strictly follow local source colour/material/motif instead of universal pink marble. Show real depth, flat back/host contact or one consistent repeat profile. Existing generic lanterns/flowers/benches reused; only named local fittings. No merged wall scene attached to small detail.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B18"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B18-DETAIL-001-D07__root-walkway-edge__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "B18-DETAIL-001-D08",
+      "name": "Carved tree door",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        1.5,
+        0.15,
+        1.5
+      ],
+      "function": "Existing GEN-08/23 tree/charm vocabulary needs identity matching before reuse. Need root gateway floor/seats, trunk-window reveal and branch-balcony contact/guard geometry where unseen. Low shade planting, blossom petals and occasional deer/butterflies; no replacement by ordinary 18m forest oak. Missing detached construction pieces and local interior-facing patterns.",
+      "construction": "One isolated carved tree door, strictly follow local source colour/material/motif instead of universal pink marble. Show real depth, flat back/host contact or one consistent repeat profile. Existing generic lanterns/flowers/benches reused; only named local fittings. No merged wall scene attached to small detail.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B18"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B18-DETAIL-001-D08__carved-tree-door__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "B18-DETAIL-001-D09",
+      "name": "Tree gallery support bracket",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        1.5,
+        0.15,
+        1.5
+      ],
+      "function": "Existing GEN-08/23 tree/charm vocabulary needs identity matching before reuse. Need root gateway floor/seats, trunk-window reveal and branch-balcony contact/guard geometry where unseen. Low shade planting, blossom petals and occasional deer/butterflies; no replacement by ordinary 18m forest oak. Missing detached construction pieces and local interior-facing patterns.",
+      "construction": "One isolated tree gallery support bracket, strictly follow local source colour/material/motif instead of universal pink marble. Show real depth, flat back/host contact or one consistent repeat profile. Existing generic lanterns/flowers/benches reused; only named local fittings. No merged wall scene attached to small detail.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B18"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B18-DETAIL-001-D09__tree-gallery-support-bracket__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "B18-DETAIL-001-D10",
+      "name": "Organic wall relief",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        1.5,
+        0.15,
+        1.5
+      ],
+      "function": "Existing GEN-08/23 tree/charm vocabulary needs identity matching before reuse. Need root gateway floor/seats, trunk-window reveal and branch-balcony contact/guard geometry where unseen. Low shade planting, blossom petals and occasional deer/butterflies; no replacement by ordinary 18m forest oak. Missing detached construction pieces and local interior-facing patterns.",
+      "construction": "One isolated organic wall relief, strictly follow local source colour/material/motif instead of universal pink marble. Show real depth, flat back/host contact or one consistent repeat profile. Existing generic lanterns/flowers/benches reused; only named local fittings. No merged wall scene attached to small detail.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B18"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B18-DETAIL-001-D10__organic-wall-relief__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "B18-DETAIL-001-D11",
+      "name": "Living roof vent trim",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        1.5,
+        0.15,
+        1.5
+      ],
+      "function": "Existing GEN-08/23 tree/charm vocabulary needs identity matching before reuse. Need root gateway floor/seats, trunk-window reveal and branch-balcony contact/guard geometry where unseen. Low shade planting, blossom petals and occasional deer/butterflies; no replacement by ordinary 18m forest oak. Missing detached construction pieces and local interior-facing patterns.",
+      "construction": "One isolated living roof vent trim, strictly follow local source colour/material/motif instead of universal pink marble. Show real depth, flat back/host contact or one consistent repeat profile. Existing generic lanterns/flowers/benches reused; only named local fittings. No merged wall scene attached to small detail.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B18"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B18-DETAIL-001-D11__living-roof-vent-trim__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "B18-DETAIL-001-D12",
+      "name": "Interior leaf ceiling panel",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        1.5,
+        0.15,
+        1.5
+      ],
+      "function": "Existing GEN-08/23 tree/charm vocabulary needs identity matching before reuse. Need root gateway floor/seats, trunk-window reveal and branch-balcony contact/guard geometry where unseen. Low shade planting, blossom petals and occasional deer/butterflies; no replacement by ordinary 18m forest oak. Missing detached construction pieces and local interior-facing patterns.",
+      "construction": "One isolated interior leaf ceiling panel, strictly follow local source colour/material/motif instead of universal pink marble. Show real depth, flat back/host contact or one consistent repeat profile. Existing generic lanterns/flowers/benches reused; only named local fittings. No merged wall scene attached to small detail.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B18"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B18-DETAIL-001-D12__interior-leaf-ceiling-panel__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    }
+  ],
+  "outputs": [],
+  "previous_attempts": [],
+  "models_generated": 0,
+  "physical_join_fit_verified": false,
+  "view_geometry_parity_verified": false,
+  "review_status": "planned-after-gap-audit",
+  "gap": "Existing GEN-08/23 tree/charm vocabulary needs identity matching before reuse. Need root gateway floor/seats, trunk-window reveal and branch-balcony contact/guard geometry where unseen. Low shade planting, blossom petals and occasional deer/butterflies; no replacement by ordinary 18m forest oak. Missing detached construction pieces and local interior-facing patterns.",
+  "mode": "detail"
+}

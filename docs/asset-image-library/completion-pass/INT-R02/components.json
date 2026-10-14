@@ -1,0 +1,34 @@
+{
+  "components": [
+    {
+      "asset_id": "INT-R02-S01",
+      "name": "Princess suite room shell",
+      "kind": "structural-section",
+      "dimensions_m_proposed": [
+        24,
+        18,
+        12
+      ],
+      "function": "Reserved princess-suite room reference missing; one coherent design overview",
+      "construction": "Four views of same source-compatible princess bedroom and dressing alcove: rose/ivory marble, gold framing, blue/rose windows, a human-scale canopy bed cluster, cupboards, carpets, lamps, curtains, birthday flowers and memory display. Source furniture vocabulary, inferred room layout. Keep meaningful open circulation and stable openings across views.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Interiors and furniture"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "INT-R02-S01__princess-suite-room-shell__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    }
+  ]
+}

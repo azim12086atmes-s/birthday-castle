@@ -1,0 +1,158 @@
+{
+  "sheet_id": "B02-INNER-001",
+  "name": "Moon Water Palace \u2014 dome interior construction",
+  "owner": "other-map-buildings",
+  "family": "B02",
+  "location_id": "B02",
+  "source_reference_id": "SRC-LOC-B02-GEN-05",
+  "source_reference_file": "world-layout/location-audit/source/B02-GEN-05.png",
+  "source_reference_sha256": "67e54451047162c59d10206e29194abad9178015581c5aa52d3bdc2e701e1eb2",
+  "prompt": "Create ONE clean detailed GAME ASSET REFERENCE SHEET, NOT Blender or a3Dmodel. Plain light ivory studio background, soft even light, full uncropped separate objects, readable thickness, precise non-melting forms. FULL IDs and names outside silhouettes, dimensions marked PROPOSED. Each cell independent illustration scale. No environment scenery, humans, extra unlabeled objects, watermark or whole-palace redesign. Use ONLY the single supplied source image for visible style/material/form authority; infer missing backs and assembly interfaces conservatively. Source illustration motifs are inspiration, not recovered measured geometry. Visible source facts: Pearl onion dome on a square hall; four tall slender corner minarets and smaller flanking domes; pointed/cusped arches, gold filigree, ivory lattice screens; axial reflecting pool and lateral lotus beds. Small plan suggests central enclosed hall with side courts; isometric fronts a long water court. Hidden layout inference: Water-facing south approach ends at central stair/ghat, then shaded perimeter arcades; keep water court distinct from enclosed hall, place planted land pockets outside pool edges. Rear entrance/service geometry inferred, not a new playable kitchen/service wing. Preserve this local design. Exactly4 large cells, large three-quarter view for each module plus small front, top and side/contact/section diagram consistent with same geometry. Real open doors/arches/windows must show empty space; no opaque filling where an opening is requested. Continuous unobstructed planar joining ends, separate shells from optional decor, no fused unrelated objects. Hollow roof/room sections show the interior underside and wall thickness. Keep source silhouette, not generic boxes. Title \"B02-INNER-001 \u2014 Moon Water Palace \u2014 dome interior construction\". Footer \"Proposed construction / source-compatible references / mesh joins and views unverified\".\n\nPurpose/gap: Missing arches under pearl dome and usable interior host sections\n\nB02-INNER-001-S01 \u2014 Inner dome curved shell wedge. Dimensions W,D,H [8, 6, 10]m proposed. One isolated inner dome curved shell wedge of pearl ivory marble with delicate gold and pale amber/lilac accents, source softly cusped pointed arches. Hollow actual underside, simple square/circular joining contacts. No vivid purple roof or main-palace Gothic rose windows. Interior unseen in source: proposed construction, not recovered geometry.\n\nB02-INNER-001-S02 \u2014 Four arch supporting corner section. Dimensions W,D,H [8, 6, 10]m proposed. One isolated four arch supporting corner section of pearl ivory marble with delicate gold and pale amber/lilac accents, source softly cusped pointed arches. Hollow actual underside, simple square/circular joining contacts. No vivid purple roof or main-palace Gothic rose windows. Interior unseen in source: proposed construction, not recovered geometry.\n\nB02-INNER-001-S03 \u2014 Open interior arcade bay. Dimensions W,D,H [8, 6, 10]m proposed. One isolated open interior arcade bay of pearl ivory marble with delicate gold and pale amber/lilac accents, source softly cusped pointed arches. Hollow actual underside, simple square/circular joining contacts. No vivid purple roof or main-palace Gothic rose windows. Interior unseen in source: proposed construction, not recovered geometry.\n\nB02-INNER-001-S04 \u2014 Drum gallery and window reveal. Dimensions W,D,H [8, 6, 10]m proposed. One isolated drum gallery and window reveal of pearl ivory marble with delicate gold and pale amber/lilac accents, source softly cusped pointed arches. Hollow actual underside, simple square/circular joining contacts. No vivid purple roof or main-palace Gothic rose windows. Interior unseen in source: proposed construction, not recovered geometry.",
+  "parts": [
+    {
+      "asset_id": "B02-INNER-001-S01",
+      "name": "Inner dome curved shell wedge",
+      "kind": "structural-section",
+      "dimensions_m_proposed": [
+        8,
+        6,
+        10
+      ],
+      "function": "Missing arches under pearl dome and usable interior host sections",
+      "construction": "One isolated inner dome curved shell wedge of pearl ivory marble with delicate gold and pale amber/lilac accents, source softly cusped pointed arches. Hollow actual underside, simple square/circular joining contacts. No vivid purple roof or main-palace Gothic rose windows. Interior unseen in source: proposed construction, not recovered geometry.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B02"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B02-INNER-001-S01__inner-dome-curved-shell-wedge__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "B02-INNER-001-S02",
+      "name": "Four arch supporting corner section",
+      "kind": "structural-section",
+      "dimensions_m_proposed": [
+        8,
+        6,
+        10
+      ],
+      "function": "Missing arches under pearl dome and usable interior host sections",
+      "construction": "One isolated four arch supporting corner section of pearl ivory marble with delicate gold and pale amber/lilac accents, source softly cusped pointed arches. Hollow actual underside, simple square/circular joining contacts. No vivid purple roof or main-palace Gothic rose windows. Interior unseen in source: proposed construction, not recovered geometry.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B02"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B02-INNER-001-S02__four-arch-supporting-corner-section__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "B02-INNER-001-S03",
+      "name": "Open interior arcade bay",
+      "kind": "structural-section",
+      "dimensions_m_proposed": [
+        8,
+        6,
+        10
+      ],
+      "function": "Missing arches under pearl dome and usable interior host sections",
+      "construction": "One isolated open interior arcade bay of pearl ivory marble with delicate gold and pale amber/lilac accents, source softly cusped pointed arches. Hollow actual underside, simple square/circular joining contacts. No vivid purple roof or main-palace Gothic rose windows. Interior unseen in source: proposed construction, not recovered geometry.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B02"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B02-INNER-001-S03__open-interior-arcade-bay__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "B02-INNER-001-S04",
+      "name": "Drum gallery and window reveal",
+      "kind": "structural-section",
+      "dimensions_m_proposed": [
+        8,
+        6,
+        10
+      ],
+      "function": "Missing arches under pearl dome and usable interior host sections",
+      "construction": "One isolated drum gallery and window reveal of pearl ivory marble with delicate gold and pale amber/lilac accents, source softly cusped pointed arches. Hollow actual underside, simple square/circular joining contacts. No vivid purple roof or main-palace Gothic rose windows. Interior unseen in source: proposed construction, not recovered geometry.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B02"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B02-INNER-001-S04__drum-gallery-and-window-reveal__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    }
+  ],
+  "outputs": [
+    {
+      "file": "completion-pass/B02-INNER-001/B02-INNER-001.png",
+      "sha256": "6a9cf76baed7a028bd948bf3d85cb35ac512325728944290179fad31f4e3d999",
+      "original_file": "/workspace/generated_images/exec-abc1e07c-dd0f-4ca4-a4c8-c131e58d63fb.png",
+      "actual_input_file": "world-layout/location-audit/source/B02-GEN-05.png",
+      "actual_input_sha256": "67e54451047162c59d10206e29194abad9178015581c5aa52d3bdc2e701e1eb2",
+      "attempt": 1,
+      "generator": "image_gen.imagegen"
+    }
+  ],
+  "previous_attempts": [],
+  "models_generated": 0,
+  "physical_join_fit_verified": false,
+  "view_geometry_parity_verified": false,
+  "review_status": "pending-user-reference-and-model-review",
+  "gap": "Missing arches under pearl dome and usable interior host sections",
+  "mode": "structure",
+  "visual_review_notes": [
+    "Four groups visible; source-compatible pearl dome/arch vocabulary. Gallery is drawn as a complete ring rather than a fitted segment; section/plan dimensions and interfaces need construction review."
+  ],
+  "visual_inventory_review": {
+    "expected_groups_present": true,
+    "method": "Individual manual inspection of generated sheet; exact geometry remains unverified"
+  }
+}

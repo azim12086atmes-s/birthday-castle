@@ -1,0 +1,124 @@
+{
+  "components": [
+    {
+      "asset_id": "INT-LIBRARY-SHELL-001-S01",
+      "name": "Two level bookshelf wall host",
+      "kind": "structural-section",
+      "dimensions_m_proposed": [
+        8,
+        5,
+        12
+      ],
+      "function": "Missing construction views behind existing room snapshots; generic substrate plus source-compatible interior faces",
+      "construction": "One isolated two level bookshelf wall host, original palace rose and ivory marble, gold trim, blue/rose glass where source appropriate. Show interior face, ceiling/underside and rear wall/roof contact. Real door/window apertures open; furniture/foliage removable. Preserve local room character rather than replacing with one generic hall.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Interiors and furniture"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "INT-LIBRARY-SHELL-001-S01__two-level-bookshelf-wall-host__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "INT-LIBRARY-SHELL-001-S02",
+      "name": "Reading gallery and stair return",
+      "kind": "structural-section",
+      "dimensions_m_proposed": [
+        8,
+        5,
+        12
+      ],
+      "function": "Missing construction views behind existing room snapshots; generic substrate plus source-compatible interior faces",
+      "construction": "One isolated reading gallery and stair return, original palace rose and ivory marble, gold trim, blue/rose glass where source appropriate. Show interior face, ceiling/underside and rear wall/roof contact. Real door/window apertures open; furniture/foliage removable. Preserve local room character rather than replacing with one generic hall.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Interiors and furniture"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "INT-LIBRARY-SHELL-001-S02__reading-gallery-and-stair-return__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "INT-LIBRARY-SHELL-001-S03",
+      "name": "Window alcove and desk niche host",
+      "kind": "structural-section",
+      "dimensions_m_proposed": [
+        8,
+        5,
+        12
+      ],
+      "function": "Missing construction views behind existing room snapshots; generic substrate plus source-compatible interior faces",
+      "construction": "One isolated window alcove and desk niche host, original palace rose and ivory marble, gold trim, blue/rose glass where source appropriate. Show interior face, ceiling/underside and rear wall/roof contact. Real door/window apertures open; furniture/foliage removable. Preserve local room character rather than replacing with one generic hall.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Interiors and furniture"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "INT-LIBRARY-SHELL-001-S03__window-alcove-and-desk-niche-host__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "INT-LIBRARY-SHELL-001-S04",
+      "name": "Library vault ceiling bay",
+      "kind": "structural-section",
+      "dimensions_m_proposed": [
+        8,
+        5,
+        12
+      ],
+      "function": "Missing construction views behind existing room snapshots; generic substrate plus source-compatible interior faces",
+      "construction": "One isolated library vault ceiling bay, original palace rose and ivory marble, gold trim, blue/rose glass where source appropriate. Show interior face, ceiling/underside and rear wall/roof contact. Real door/window apertures open; furniture/foliage removable. Preserve local room character rather than replacing with one generic hall.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Interiors and furniture"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "INT-LIBRARY-SHELL-001-S04__library-vault-ceiling-bay__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    }
+  ]
+}

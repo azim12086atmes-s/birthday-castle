@@ -1,0 +1,124 @@
+{
+  "components": [
+    {
+      "asset_id": "B13-STRUCT-001-S01",
+      "name": "Tapered mill shaft",
+      "kind": "structural-section",
+      "dimensions_m_proposed": [
+        8,
+        6,
+        12
+      ],
+      "function": "Need tapered wall/window host, gallery ring, roof/pivot bearing, lattice sail/hub interfaces and garden stair landing. Existing cedar/cream/gold/ivy vocabulary reused; rotation mechanics require later geometry/animation. Meadow flora/hazel; swallows/bees/ladybirds proposed. Provide missing isolated hosts and join views.",
+      "construction": "One isolated tapered mill shaft matching the supplied building, its roof/arch/wall silhouette and local materials. Show front and interior/rear/underside contact, not a complete building scene. Actual open column galleries and holes stay open. Extend hidden depth only enough to form a joinable section; no palace-wide plan or added unrelated tower.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B13"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B13-STRUCT-001-S01__tapered-mill-shaft__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "B13-STRUCT-001-S02",
+      "name": "Round gallery/entry seat",
+      "kind": "structural-section",
+      "dimensions_m_proposed": [
+        8,
+        6,
+        12
+      ],
+      "function": "Need tapered wall/window host, gallery ring, roof/pivot bearing, lattice sail/hub interfaces and garden stair landing. Existing cedar/cream/gold/ivy vocabulary reused; rotation mechanics require later geometry/animation. Meadow flora/hazel; swallows/bees/ladybirds proposed. Provide missing isolated hosts and join views.",
+      "construction": "One isolated round gallery/entry seat matching the supplied building, its roof/arch/wall silhouette and local materials. Show front and interior/rear/underside contact, not a complete building scene. Actual open column galleries and holes stay open. Extend hidden depth only enough to form a joinable section; no palace-wide plan or added unrelated tower.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B13"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B13-STRUCT-001-S02__round-gallery-entry-seat__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "B13-STRUCT-001-S03",
+      "name": "Roof/pivot bearing",
+      "kind": "structural-section",
+      "dimensions_m_proposed": [
+        8,
+        6,
+        12
+      ],
+      "function": "Need tapered wall/window host, gallery ring, roof/pivot bearing, lattice sail/hub interfaces and garden stair landing. Existing cedar/cream/gold/ivy vocabulary reused; rotation mechanics require later geometry/animation. Meadow flora/hazel; swallows/bees/ladybirds proposed. Provide missing isolated hosts and join views.",
+      "construction": "One isolated roof/pivot bearing matching the supplied building, its roof/arch/wall silhouette and local materials. Show front and interior/rear/underside contact, not a complete building scene. Actual open column galleries and holes stay open. Extend hidden depth only enough to form a joinable section; no palace-wide plan or added unrelated tower.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B13"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B13-STRUCT-001-S03__roof-pivot-bearing__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "B13-STRUCT-001-S04",
+      "name": "Lattice sail/hub",
+      "kind": "structural-section",
+      "dimensions_m_proposed": [
+        8,
+        6,
+        12
+      ],
+      "function": "Need tapered wall/window host, gallery ring, roof/pivot bearing, lattice sail/hub interfaces and garden stair landing. Existing cedar/cream/gold/ivy vocabulary reused; rotation mechanics require later geometry/animation. Meadow flora/hazel; swallows/bees/ladybirds proposed. Provide missing isolated hosts and join views.",
+      "construction": "One isolated lattice sail/hub matching the supplied building, its roof/arch/wall silhouette and local materials. Show front and interior/rear/underside contact, not a complete building scene. Actual open column galleries and holes stay open. Extend hidden depth only enough to form a joinable section; no palace-wide plan or added unrelated tower.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B13"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B13-STRUCT-001-S04__lattice-sail-hub__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    }
+  ]
+}

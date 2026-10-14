@@ -1,0 +1,141 @@
+{
+  "sheet_id": "T02-BANK-001",
+  "name": "Freshwater banks and pool terrain joins",
+  "owner": "terrain-water-and-planting",
+  "family": "Lantern Lake and pond habitats",
+  "location_id": null,
+  "source_reference_id": "GEN-13",
+  "source_reference_file": "images/illustrated-boards/GEN-13.png",
+  "source_reference_sha256": "07420c2f8a6edf1b00cd9c0aae4a78abd1959426d4ba5842e0ecf3ec215d51bf",
+  "prompt": "Create ONE clean detailed GAME ASSET REFERENCE SHEET, NOT Blender or a3Dmodel. Plain light ivory studio background, soft even light, full uncropped separate objects, readable thickness, precise non-melting forms. FULL IDs and names outside silhouettes, dimensions marked PROPOSED. Each cell independent illustration scale. No environment scenery, humans, extra unlabeled objects, watermark or whole-palace redesign. Use ONLY the single supplied source image for visible style/material/form authority; infer missing backs and assembly interfaces conservatively. Source illustration motifs are inspiration, not recovered measured geometry. Exactly4 isolated natural module groups, each with three-quarter, top and side/underside inset, clear ground/bank seams and actual depth. No landscape montage, houses or people; substrate and plants separate when specified. Water is context/rendered appearance only unless an explicitly named basin is a solid module. Title \"T02-BANK-001 \u2014 Freshwater banks and pool terrain joins\". Footer \"Proposed construction / source-compatible references / mesh joins and views unverified\".\n\nPurpose/gap: Missing formal/natural shore junctions. Plants and rocks separate instances; preserve calm shallow pond character, no fused water slabs.\n\nT02-BANK-001-A01 \u2014 Reed bank shelf. Dimensions W,D,H [4, 4, 2]m proposed. One isolated reed bank shelf. Missing formal/natural shore junctions. Plants and rocks separate instances; preserve calm shallow pond character, no fused water slabs. Coherent actual silhouette, visible root/underside/side; no unrelated architecture/scenery attached. Other existing named species/forms must not be regenerated. Local material consistent with source. Dimensions are proposals to refine by subject.\n\nT02-BANK-001-A02 \u2014 Lotus shallow bed substrate. Dimensions W,D,H [4, 4, 2]m proposed. One isolated lotus shallow bed substrate. Missing formal/natural shore junctions. Plants and rocks separate instances; preserve calm shallow pond character, no fused water slabs. Coherent actual silhouette, visible root/underside/side; no unrelated architecture/scenery attached. Other existing named species/forms must not be regenerated. Local material consistent with source. Dimensions are proposals to refine by subject.\n\nT02-BANK-001-A03 \u2014 Willow root shoreline return. Dimensions W,D,H [4, 4, 2]m proposed. One isolated willow root shoreline return. Missing formal/natural shore junctions. Plants and rocks separate instances; preserve calm shallow pond character, no fused water slabs. Coherent actual silhouette, visible root/underside/side; no unrelated architecture/scenery attached. Other existing named species/forms must not be regenerated. Local material consistent with source. Dimensions are proposals to refine by subject.\n\nT02-BANK-001-A04 \u2014 Stone edged lake inlet. Dimensions W,D,H [4, 4, 2]m proposed. One isolated stone edged lake inlet. Missing formal/natural shore junctions. Plants and rocks separate instances; preserve calm shallow pond character, no fused water slabs. Coherent actual silhouette, visible root/underside/side; no unrelated architecture/scenery attached. Other existing named species/forms must not be regenerated. Local material consistent with source. Dimensions are proposals to refine by subject.",
+  "parts": [
+    {
+      "asset_id": "T02-BANK-001-A01",
+      "name": "Reed bank shelf",
+      "kind": "natural-module",
+      "dimensions_m_proposed": [
+        4,
+        4,
+        2
+      ],
+      "function": "Missing formal/natural shore junctions. Plants and rocks separate instances; preserve calm shallow pond character, no fused water slabs.",
+      "construction": "One isolated reed bank shelf. Missing formal/natural shore junctions. Plants and rocks separate instances; preserve calm shallow pond character, no fused water slabs. Coherent actual silhouette, visible root/underside/side; no unrelated architecture/scenery attached. Other existing named species/forms must not be regenerated. Local material consistent with source. Dimensions are proposals to refine by subject.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Lantern Lake and pond habitats"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "T02-BANK-001-A01__reed-bank-shelf__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "T02-BANK-001-A02",
+      "name": "Lotus shallow bed substrate",
+      "kind": "natural-module",
+      "dimensions_m_proposed": [
+        4,
+        4,
+        2
+      ],
+      "function": "Missing formal/natural shore junctions. Plants and rocks separate instances; preserve calm shallow pond character, no fused water slabs.",
+      "construction": "One isolated lotus shallow bed substrate. Missing formal/natural shore junctions. Plants and rocks separate instances; preserve calm shallow pond character, no fused water slabs. Coherent actual silhouette, visible root/underside/side; no unrelated architecture/scenery attached. Other existing named species/forms must not be regenerated. Local material consistent with source. Dimensions are proposals to refine by subject.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Lantern Lake and pond habitats"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "T02-BANK-001-A02__lotus-shallow-bed-substrate__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "T02-BANK-001-A03",
+      "name": "Willow root shoreline return",
+      "kind": "natural-module",
+      "dimensions_m_proposed": [
+        4,
+        4,
+        2
+      ],
+      "function": "Missing formal/natural shore junctions. Plants and rocks separate instances; preserve calm shallow pond character, no fused water slabs.",
+      "construction": "One isolated willow root shoreline return. Missing formal/natural shore junctions. Plants and rocks separate instances; preserve calm shallow pond character, no fused water slabs. Coherent actual silhouette, visible root/underside/side; no unrelated architecture/scenery attached. Other existing named species/forms must not be regenerated. Local material consistent with source. Dimensions are proposals to refine by subject.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Lantern Lake and pond habitats"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "T02-BANK-001-A03__willow-root-shoreline-return__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "T02-BANK-001-A04",
+      "name": "Stone edged lake inlet",
+      "kind": "natural-module",
+      "dimensions_m_proposed": [
+        4,
+        4,
+        2
+      ],
+      "function": "Missing formal/natural shore junctions. Plants and rocks separate instances; preserve calm shallow pond character, no fused water slabs.",
+      "construction": "One isolated stone edged lake inlet. Missing formal/natural shore junctions. Plants and rocks separate instances; preserve calm shallow pond character, no fused water slabs. Coherent actual silhouette, visible root/underside/side; no unrelated architecture/scenery attached. Other existing named species/forms must not be regenerated. Local material consistent with source. Dimensions are proposals to refine by subject.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Lantern Lake and pond habitats"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "T02-BANK-001-A04__stone-edged-lake-inlet__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    }
+  ],
+  "outputs": [],
+  "previous_attempts": [],
+  "models_generated": 0,
+  "physical_join_fit_verified": false,
+  "view_geometry_parity_verified": false,
+  "review_status": "planned-after-gap-audit",
+  "gap": "Missing formal/natural shore junctions. Plants and rocks separate instances; preserve calm shallow pond character, no fused water slabs.",
+  "mode": "nature"
+}

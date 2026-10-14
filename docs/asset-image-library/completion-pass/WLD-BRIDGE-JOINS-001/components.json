@@ -1,0 +1,124 @@
+{
+  "components": [
+    {
+      "asset_id": "WLD-BRIDGE-JOINS-001-S01",
+      "name": "Bridge to terrace abutment",
+      "kind": "structural-section",
+      "dimensions_m_proposed": [
+        8,
+        6,
+        3
+      ],
+      "function": "Missing bridge-to-building/tower/terrain interfaces beyond original span/decor kits",
+      "construction": "One porcelain/ivory/gold bridge to terrace abutment retaining source bridge deck/parapet profiles. The sheet supplies missing connection/support views; bridge master straight span and ornaments reused. Dry solid construction, no river scene, clean actual join ends.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Porcelain bridge and associated fittings"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "WLD-BRIDGE-JOINS-001-S01__bridge-to-terrace-abutment__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "WLD-BRIDGE-JOINS-001-S02",
+      "name": "Curved approach join bay",
+      "kind": "structural-section",
+      "dimensions_m_proposed": [
+        8,
+        6,
+        3
+      ],
+      "function": "Missing bridge-to-building/tower/terrain interfaces beyond original span/decor kits",
+      "construction": "One porcelain/ivory/gold curved approach join bay retaining source bridge deck/parapet profiles. The sheet supplies missing connection/support views; bridge master straight span and ornaments reused. Dry solid construction, no river scene, clean actual join ends.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Porcelain bridge and associated fittings"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "WLD-BRIDGE-JOINS-001-S02__curved-approach-join-bay__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "WLD-BRIDGE-JOINS-001-S03",
+      "name": "Tower landing bridge socket",
+      "kind": "structural-section",
+      "dimensions_m_proposed": [
+        8,
+        6,
+        3
+      ],
+      "function": "Missing bridge-to-building/tower/terrain interfaces beyond original span/decor kits",
+      "construction": "One porcelain/ivory/gold tower landing bridge socket retaining source bridge deck/parapet profiles. The sheet supplies missing connection/support views; bridge master straight span and ornaments reused. Dry solid construction, no river scene, clean actual join ends.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Porcelain bridge and associated fittings"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "WLD-BRIDGE-JOINS-001-S03__tower-landing-bridge-socket__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "WLD-BRIDGE-JOINS-001-S04",
+      "name": "Bridge ramp transition bay",
+      "kind": "structural-section",
+      "dimensions_m_proposed": [
+        8,
+        6,
+        3
+      ],
+      "function": "Missing bridge-to-building/tower/terrain interfaces beyond original span/decor kits",
+      "construction": "One porcelain/ivory/gold bridge ramp transition bay retaining source bridge deck/parapet profiles. The sheet supplies missing connection/support views; bridge master straight span and ornaments reused. Dry solid construction, no river scene, clean actual join ends.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Porcelain bridge and associated fittings"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "WLD-BRIDGE-JOINS-001-S04__bridge-ramp-transition-bay__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    }
+  ]
+}

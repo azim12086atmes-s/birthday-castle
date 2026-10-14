@@ -1,0 +1,124 @@
+{
+  "components": [
+    {
+      "asset_id": "S04-ARTIFACT-001-S01",
+      "name": "Meadow entry rose arch",
+      "kind": "structural-section",
+      "dimensions_m_proposed": [
+        4,
+        4,
+        5
+      ],
+      "function": "Missing usable sky-site artifact hosts; source does not resolve interiors/altitude",
+      "construction": "One isolated meadow entry rose arch inferred from tiny site reference, preserving its local light/colour/form. Use source garden/pavilion delicacy, real open arches/columns, no extra whole palace. Existing crystals/travel rings/lamps reused; this is a new proposed supporting host.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "S04"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "S04-ARTIFACT-001-S01__meadow-entry-rose-arch__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "S04-ARTIFACT-001-S02",
+      "name": "Unicorn meadow shade canopy",
+      "kind": "structural-section",
+      "dimensions_m_proposed": [
+        4,
+        4,
+        5
+      ],
+      "function": "Missing usable sky-site artifact hosts; source does not resolve interiors/altitude",
+      "construction": "One isolated unicorn meadow shade canopy inferred from tiny site reference, preserving its local light/colour/form. Use source garden/pavilion delicacy, real open arches/columns, no extra whole palace. Existing crystals/travel rings/lamps reused; this is a new proposed supporting host.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "S04"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "S04-ARTIFACT-001-S02__unicorn-meadow-shade-canopy__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "S04-ARTIFACT-001-S03",
+      "name": "Meadow wish display plinth",
+      "kind": "structural-section",
+      "dimensions_m_proposed": [
+        4,
+        4,
+        5
+      ],
+      "function": "Missing usable sky-site artifact hosts; source does not resolve interiors/altitude",
+      "construction": "One isolated meadow wish display plinth inferred from tiny site reference, preserving its local light/colour/form. Use source garden/pavilion delicacy, real open arches/columns, no extra whole palace. Existing crystals/travel rings/lamps reused; this is a new proposed supporting host.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "S04"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "S04-ARTIFACT-001-S03__meadow-wish-display-plinth__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "S04-ARTIFACT-001-S04",
+      "name": "Small meadow viewing platform",
+      "kind": "structural-section",
+      "dimensions_m_proposed": [
+        4,
+        4,
+        5
+      ],
+      "function": "Missing usable sky-site artifact hosts; source does not resolve interiors/altitude",
+      "construction": "One isolated small meadow viewing platform inferred from tiny site reference, preserving its local light/colour/form. Use source garden/pavilion delicacy, real open arches/columns, no extra whole palace. Existing crystals/travel rings/lamps reused; this is a new proposed supporting host.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "S04"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "S04-ARTIFACT-001-S04__small-meadow-viewing-platform__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    }
+  ]
+}

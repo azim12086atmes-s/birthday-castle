@@ -1,0 +1,124 @@
+{
+  "components": [
+    {
+      "asset_id": "T07-FLORA-001-A01",
+      "name": "Dry bunch grass",
+      "kind": "flora-reference",
+      "dimensions_m_proposed": [
+        3,
+        3,
+        5
+      ],
+      "function": "New distinct dryhabitat plants, palegreen/ochreleaves androot contact; oasis palm distinctfromcoastalwindtree/gardenpalms.",
+      "construction": "One isolated dry bunch grass. New distinct dryhabitat plants, palegreen/ochreleaves androot contact; oasis palm distinctfromcoastalwindtree/gardenpalms. Coherent actual silhouette, visible root/underside/side; no unrelated architecture/scenery attached. Other existing named species/forms must not be regenerated. Local material consistent with source. Dimensions are proposals to refine by subject.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Desert, canyon and crescent-arch terrain"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "T07-FLORA-001-A01__dry-bunch-grass__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "T07-FLORA-001-A02",
+      "name": "Low desert flowering shrub",
+      "kind": "flora-reference",
+      "dimensions_m_proposed": [
+        3,
+        3,
+        5
+      ],
+      "function": "New distinct dryhabitat plants, palegreen/ochreleaves androot contact; oasis palm distinctfromcoastalwindtree/gardenpalms.",
+      "construction": "One isolated low desert flowering shrub. New distinct dryhabitat plants, palegreen/ochreleaves androot contact; oasis palm distinctfromcoastalwindtree/gardenpalms. Coherent actual silhouette, visible root/underside/side; no unrelated architecture/scenery attached. Other existing named species/forms must not be regenerated. Local material consistent with source. Dimensions are proposals to refine by subject.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Desert, canyon and crescent-arch terrain"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "T07-FLORA-001-A02__low-desert-flowering-shrub__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "T07-FLORA-001-A03",
+      "name": "Agave rosette",
+      "kind": "flora-reference",
+      "dimensions_m_proposed": [
+        3,
+        3,
+        5
+      ],
+      "function": "New distinct dryhabitat plants, palegreen/ochreleaves androot contact; oasis palm distinctfromcoastalwindtree/gardenpalms.",
+      "construction": "One isolated agave rosette. New distinct dryhabitat plants, palegreen/ochreleaves androot contact; oasis palm distinctfromcoastalwindtree/gardenpalms. Coherent actual silhouette, visible root/underside/side; no unrelated architecture/scenery attached. Other existing named species/forms must not be regenerated. Local material consistent with source. Dimensions are proposals to refine by subject.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Desert, canyon and crescent-arch terrain"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "T07-FLORA-001-A03__agave-rosette__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "T07-FLORA-001-A04",
+      "name": "Oasis date palm",
+      "kind": "flora-reference",
+      "dimensions_m_proposed": [
+        3,
+        3,
+        5
+      ],
+      "function": "New distinct dryhabitat plants, palegreen/ochreleaves androot contact; oasis palm distinctfromcoastalwindtree/gardenpalms.",
+      "construction": "One isolated oasis date palm. New distinct dryhabitat plants, palegreen/ochreleaves androot contact; oasis palm distinctfromcoastalwindtree/gardenpalms. Coherent actual silhouette, visible root/underside/side; no unrelated architecture/scenery attached. Other existing named species/forms must not be regenerated. Local material consistent with source. Dimensions are proposals to refine by subject.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Desert, canyon and crescent-arch terrain"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "T07-FLORA-001-A04__oasis-date-palm__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    }
+  ]
+}

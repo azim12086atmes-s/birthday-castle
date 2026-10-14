@@ -1,0 +1,136 @@
+{
+  "components": [
+    {
+      "asset_id": "T08-FAUNA-001-A01",
+      "name": "Gentle white unicorn",
+      "kind": "fauna-reference",
+      "dimensions_m_proposed": [
+        0.55,
+        2.4,
+        1.8
+      ],
+      "function": "Explicit new fantasycreature concepts: unicorn ordinaryhorseanatomy fourlegs/onehorn/onetaiI, fawn normaldeeranatomy fourlegs/noantlers, insects fourwings/sixlegs/twoantennae withgentleluminousmarkings. Sameanimal pose acrossviews, no extra limbs orwearablecrowns.",
+      "construction": "One isolated gentle white unicorn. Explicit new fantasycreature concepts: unicorn ordinaryhorseanatomy fourlegs/onehorn/onetaiI, fawn normaldeeranatomy fourlegs/noantlers, insects fourwings/sixlegs/twoantennae withgentleluminousmarkings. Sameanimal pose acrossviews, no extra limbs orwearablecrowns. Coherent actual silhouette, visible root/underside/side; no unrelated architecture/scenery attached. Other existing named species/forms must not be regenerated. Local material consistent with source. Dimensions are proposals to refine by subject.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Head +Y and Zup",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Sky-island landscape substrates"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "T08-FAUNA-001-A01__gentle-white-unicorn__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed",
+      "rig_status": "not-created",
+      "animation_status": "not-created",
+      "anatomy_verified": false
+    },
+    {
+      "asset_id": "T08-FAUNA-001-A02",
+      "name": "Pale moon fawn",
+      "kind": "fauna-reference",
+      "dimensions_m_proposed": [
+        0.22,
+        0.75,
+        0.65
+      ],
+      "function": "Explicit new fantasycreature concepts: unicorn ordinaryhorseanatomy fourlegs/onehorn/onetaiI, fawn normaldeeranatomy fourlegs/noantlers, insects fourwings/sixlegs/twoantennae withgentleluminousmarkings. Sameanimal pose acrossviews, no extra limbs orwearablecrowns.",
+      "construction": "One isolated pale moon fawn. Explicit new fantasycreature concepts: unicorn ordinaryhorseanatomy fourlegs/onehorn/onetaiI, fawn normaldeeranatomy fourlegs/noantlers, insects fourwings/sixlegs/twoantennae withgentleluminousmarkings. Sameanimal pose acrossviews, no extra limbs orwearablecrowns. Coherent actual silhouette, visible root/underside/side; no unrelated architecture/scenery attached. Other existing named species/forms must not be regenerated. Local material consistent with source. Dimensions are proposals to refine by subject.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Head +Y and Zup",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Sky-island landscape substrates"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "T08-FAUNA-001-A02__pale-moon-fawn__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed",
+      "rig_status": "not-created",
+      "animation_status": "not-created",
+      "anatomy_verified": false
+    },
+    {
+      "asset_id": "T08-FAUNA-001-A03",
+      "name": "Luminous butterfly",
+      "kind": "fauna-reference",
+      "dimensions_m_proposed": [
+        0.12,
+        0.07,
+        0.02
+      ],
+      "function": "Explicit new fantasycreature concepts: unicorn ordinaryhorseanatomy fourlegs/onehorn/onetaiI, fawn normaldeeranatomy fourlegs/noantlers, insects fourwings/sixlegs/twoantennae withgentleluminousmarkings. Sameanimal pose acrossviews, no extra limbs orwearablecrowns.",
+      "construction": "One isolated luminous butterfly. Explicit new fantasycreature concepts: unicorn ordinaryhorseanatomy fourlegs/onehorn/onetaiI, fawn normaldeeranatomy fourlegs/noantlers, insects fourwings/sixlegs/twoantennae withgentleluminousmarkings. Sameanimal pose acrossviews, no extra limbs orwearablecrowns. Coherent actual silhouette, visible root/underside/side; no unrelated architecture/scenery attached. Other existing named species/forms must not be regenerated. Local material consistent with source. Dimensions are proposals to refine by subject.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Head +Y and Zup",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Sky-island landscape substrates"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "T08-FAUNA-001-A03__luminous-butterfly__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed",
+      "rig_status": "not-created",
+      "animation_status": "not-created",
+      "anatomy_verified": false
+    },
+    {
+      "asset_id": "T08-FAUNA-001-A04",
+      "name": "Small star moth",
+      "kind": "fauna-reference",
+      "dimensions_m_proposed": [
+        0.1,
+        0.05,
+        0.02
+      ],
+      "function": "Explicit new fantasycreature concepts: unicorn ordinaryhorseanatomy fourlegs/onehorn/onetaiI, fawn normaldeeranatomy fourlegs/noantlers, insects fourwings/sixlegs/twoantennae withgentleluminousmarkings. Sameanimal pose acrossviews, no extra limbs orwearablecrowns.",
+      "construction": "One isolated small star moth. Explicit new fantasycreature concepts: unicorn ordinaryhorseanatomy fourlegs/onehorn/onetaiI, fawn normaldeeranatomy fourlegs/noantlers, insects fourwings/sixlegs/twoantennae withgentleluminousmarkings. Sameanimal pose acrossviews, no extra limbs orwearablecrowns. Coherent actual silhouette, visible root/underside/side; no unrelated architecture/scenery attached. Other existing named species/forms must not be regenerated. Local material consistent with source. Dimensions are proposals to refine by subject.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Head +Y and Zup",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Sky-island landscape substrates"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "T08-FAUNA-001-A04__small-star-moth__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed",
+      "rig_status": "not-created",
+      "animation_status": "not-created",
+      "anatomy_verified": false
+    }
+  ]
+}

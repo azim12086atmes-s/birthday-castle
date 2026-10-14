@@ -1,0 +1,124 @@
+{
+  "components": [
+    {
+      "asset_id": "S05-ARTIFACT-001-S01",
+      "name": "Starfall instrument pedestal",
+      "kind": "structural-section",
+      "dimensions_m_proposed": [
+        4,
+        4,
+        5
+      ],
+      "function": "Missing usable sky-site artifact hosts; source does not resolve interiors/altitude",
+      "construction": "One isolated starfall instrument pedestal inferred from tiny site reference, preserving its local light/colour/form. Use source garden/pavilion delicacy, real open arches/columns, no extra whole palace. Existing crystals/travel rings/lamps reused; this is a new proposed supporting host.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "S05"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "S05-ARTIFACT-001-S01__starfall-instrument-pedestal__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "S05-ARTIFACT-001-S02",
+      "name": "Hanging star mobile frame",
+      "kind": "structural-section",
+      "dimensions_m_proposed": [
+        4,
+        4,
+        5
+      ],
+      "function": "Missing usable sky-site artifact hosts; source does not resolve interiors/altitude",
+      "construction": "One isolated hanging star mobile frame inferred from tiny site reference, preserving its local light/colour/form. Use source garden/pavilion delicacy, real open arches/columns, no extra whole palace. Existing crystals/travel rings/lamps reused; this is a new proposed supporting host.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "S05"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "S05-ARTIFACT-001-S02__hanging-star-mobile-frame__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "S05-ARTIFACT-001-S03",
+      "name": "Starfall garden stepping bridge",
+      "kind": "structural-section",
+      "dimensions_m_proposed": [
+        4,
+        4,
+        5
+      ],
+      "function": "Missing usable sky-site artifact hosts; source does not resolve interiors/altitude",
+      "construction": "One isolated starfall garden stepping bridge inferred from tiny site reference, preserving its local light/colour/form. Use source garden/pavilion delicacy, real open arches/columns, no extra whole palace. Existing crystals/travel rings/lamps reused; this is a new proposed supporting host.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "S05"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "S05-ARTIFACT-001-S03__starfall-garden-stepping-bridge__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "S05-ARTIFACT-001-S04",
+      "name": "Star light display niche",
+      "kind": "structural-section",
+      "dimensions_m_proposed": [
+        4,
+        4,
+        5
+      ],
+      "function": "Missing usable sky-site artifact hosts; source does not resolve interiors/altitude",
+      "construction": "One isolated star light display niche inferred from tiny site reference, preserving its local light/colour/form. Use source garden/pavilion delicacy, real open arches/columns, no extra whole palace. Existing crystals/travel rings/lamps reused; this is a new proposed supporting host.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "S05"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "S05-ARTIFACT-001-S04__star-light-display-niche__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "sheet_id": "INT-R02",
+  "name": "Princess suite \u2014 coordinated interior views",
+  "owner": "palace",
+  "family": "Interiors and furniture",
+  "location_id": null,
+  "source_reference_id": "GEN-24",
+  "source_reference_file": "images/illustrated-boards/GEN-24.png",
+  "source_reference_sha256": "deb78cfce6dab5c31d9b3519d3bc01a07e58bba453b013fcdb76bd2e8be3f349",
+  "prompt": "Create ONE clean detailed GAME ASSET REFERENCE SHEET, NOT Blender or a3Dmodel. Plain light ivory studio background, soft even light, full uncropped separate objects, readable thickness, precise non-melting forms. FULL IDs and names outside silhouettes, dimensions marked PROPOSED. Each cell independent illustration scale. No environment scenery, humans, extra unlabeled objects, watermark or whole-palace redesign. Use ONLY the single supplied source image for visible style/material/form authority; infer missing backs and assembly interfaces conservatively. Source illustration motifs are inspiration, not recovered measured geometry. One consistent furnished room viewed in four labelled directions: arrival/front, opposite/rear, side and ceiling/section. Same wall/window/door arrangement and furnishings across views. Show the ceiling structure, circulation and source-compatible celebration dressing. This is ONE room reference, not four new objects. Full room shell bounds and a small top plan proposed; warm detail at human furniture scale, adequate path clearances. Title \"INT-R02 \u2014 Princess suite \u2014 coordinated interior views\". Footer \"Proposed construction / source-compatible references / mesh joins and views unverified\".\n\nPurpose/gap: Reserved princess-suite room reference missing; one coherent design overview\n\nINT-R02-S01 \u2014 Princess suite room shell. Dimensions W,D,H [24, 18, 12]m proposed. Four views of same source-compatible princess bedroom and dressing alcove: rose/ivory marble, gold framing, blue/rose windows, a human-scale canopy bed cluster, cupboards, carpets, lamps, curtains, birthday flowers and memory display. Source furniture vocabulary, inferred room layout. Keep meaningful open circulation and stable openings across views.",
+  "parts": [
+    {
+      "asset_id": "INT-R02-S01",
+      "name": "Princess suite room shell",
+      "kind": "structural-section",
+      "dimensions_m_proposed": [
+        24,
+        18,
+        12
+      ],
+      "function": "Reserved princess-suite room reference missing; one coherent design overview",
+      "construction": "Four views of same source-compatible princess bedroom and dressing alcove: rose/ivory marble, gold framing, blue/rose windows, a human-scale canopy bed cluster, cupboards, carpets, lamps, curtains, birthday flowers and memory display. Source furniture vocabulary, inferred room layout. Keep meaningful open circulation and stable openings across views.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Interiors and furniture"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "INT-R02-S01__princess-suite-room-shell__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    }
+  ],
+  "outputs": [],
+  "previous_attempts": [],
+  "models_generated": 0,
+  "physical_join_fit_verified": false,
+  "view_geometry_parity_verified": false,
+  "review_status": "planned-after-gap-audit",
+  "gap": "Reserved princess-suite room reference missing; one coherent design overview",
+  "mode": "room"
+}

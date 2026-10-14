@@ -1,0 +1,170 @@
+{
+  "sheet_id": "T02-FAUNA-001",
+  "name": "Freshwater pond fauna",
+  "owner": "terrain-water-and-planting",
+  "family": "Lantern Lake and pond habitats",
+  "location_id": null,
+  "source_reference_id": null,
+  "source_reference_file": null,
+  "source_reference_sha256": null,
+  "prompt": "Create ONE clean detailed GAME ASSET REFERENCE SHEET, NOT Blender or a3Dmodel. Plain light ivory studio background, soft even light, full uncropped separate objects, readable thickness, precise non-melting forms. FULL IDs and names outside silhouettes, dimensions marked PROPOSED. Each cell independent illustration scale. No environment scenery, humans, extra unlabeled objects, watermark or whole-palace redesign. Use ONLY the single supplied source image for visible style/material/form authority; infer missing backs and assembly interfaces conservatively. Source illustration motifs are inspiration, not recovered measured geometry. This new habitat-form sheet has NO image input; use the explicit natural/magical form descriptions below, not invented jewelry or clothing. Exactly4 whole natural creatures in separate readable cells, main profile/three-quarter view and smaller front/back or top view of the SAME individual in the SAME restful pose. Complete feet/tails/fins/wings, believable anatomy; no fused feet, duplicated tails, extra limbs or costume. Four legs for quadrupeds, two legs/two wings for birds, six legs for insects, correct fish fin plan. No habitat/branches/water/pedestal attached. No rig or animation claimed. Title \"T02-FAUNA-001 \u2014 Freshwater pond fauna\". Footer \"Proposed construction / source-compatible references / mesh joins and views unverified\".\n\nPurpose/gap: New freshwater forms; ducks and swan twolegs/twowings and one tail, frog fourwebbed feet, turtle one domed shell/fourlegs/head/tail. Resting natural poses, useful profiles/front/rear. No royal costume.\n\nT02-FAUNA-001-A01 \u2014 Mallard duck. Dimensions W,D,H [0.3, 0.6, 0.38]m proposed. One isolated mallard duck. New freshwater forms; ducks and swan twolegs/twowings and one tail, frog fourwebbed feet, turtle one domed shell/fourlegs/head/tail. Resting natural poses, useful profiles/front/rear. No royal costume. Coherent actual silhouette, visible root/underside/side; no unrelated architecture/scenery attached. Other existing named species/forms must not be regenerated. Local material consistent with source. Dimensions are proposals to refine by subject.\n\nT02-FAUNA-001-A02 \u2014 White swan. Dimensions W,D,H [0.55, 1.4, 0.9]m proposed. One isolated white swan. New freshwater forms; ducks and swan twolegs/twowings and one tail, frog fourwebbed feet, turtle one domed shell/fourlegs/head/tail. Resting natural poses, useful profiles/front/rear. No royal costume. Coherent actual silhouette, visible root/underside/side; no unrelated architecture/scenery attached. Other existing named species/forms must not be regenerated. Local material consistent with source. Dimensions are proposals to refine by subject.\n\nT02-FAUNA-001-A03 \u2014 Pond frog. Dimensions W,D,H [0.12, 0.15, 0.1]m proposed. One isolated pond frog. New freshwater forms; ducks and swan twolegs/twowings and one tail, frog fourwebbed feet, turtle one domed shell/fourlegs/head/tail. Resting natural poses, useful profiles/front/rear. No royal costume. Coherent actual silhouette, visible root/underside/side; no unrelated architecture/scenery attached. Other existing named species/forms must not be regenerated. Local material consistent with source. Dimensions are proposals to refine by subject.\n\nT02-FAUNA-001-A04 \u2014 Freshwater turtle. Dimensions W,D,H [0.22, 0.3, 0.16]m proposed. One isolated freshwater turtle. New freshwater forms; ducks and swan twolegs/twowings and one tail, frog fourwebbed feet, turtle one domed shell/fourlegs/head/tail. Resting natural poses, useful profiles/front/rear. No royal costume. Coherent actual silhouette, visible root/underside/side; no unrelated architecture/scenery attached. Other existing named species/forms must not be regenerated. Local material consistent with source. Dimensions are proposals to refine by subject.",
+  "parts": [
+    {
+      "asset_id": "T02-FAUNA-001-A01",
+      "name": "Mallard duck",
+      "kind": "fauna-reference",
+      "dimensions_m_proposed": [
+        0.3,
+        0.6,
+        0.38
+      ],
+      "function": "New freshwater forms; ducks and swan twolegs/twowings and one tail, frog fourwebbed feet, turtle one domed shell/fourlegs/head/tail. Resting natural poses, useful profiles/front/rear. No royal costume.",
+      "construction": "One isolated mallard duck. New freshwater forms; ducks and swan twolegs/twowings and one tail, frog fourwebbed feet, turtle one domed shell/fourlegs/head/tail. Resting natural poses, useful profiles/front/rear. No royal costume. Coherent actual silhouette, visible root/underside/side; no unrelated architecture/scenery attached. Other existing named species/forms must not be regenerated. Local material consistent with source. Dimensions are proposals to refine by subject.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Head +Y and Zup",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Lantern Lake and pond habitats"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "T02-FAUNA-001-A01__mallard-duck__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed",
+      "rig_status": "not-created",
+      "animation_status": "not-created",
+      "anatomy_verified": false
+    },
+    {
+      "asset_id": "T02-FAUNA-001-A02",
+      "name": "White swan",
+      "kind": "fauna-reference",
+      "dimensions_m_proposed": [
+        0.55,
+        1.4,
+        0.9
+      ],
+      "function": "New freshwater forms; ducks and swan twolegs/twowings and one tail, frog fourwebbed feet, turtle one domed shell/fourlegs/head/tail. Resting natural poses, useful profiles/front/rear. No royal costume.",
+      "construction": "One isolated white swan. New freshwater forms; ducks and swan twolegs/twowings and one tail, frog fourwebbed feet, turtle one domed shell/fourlegs/head/tail. Resting natural poses, useful profiles/front/rear. No royal costume. Coherent actual silhouette, visible root/underside/side; no unrelated architecture/scenery attached. Other existing named species/forms must not be regenerated. Local material consistent with source. Dimensions are proposals to refine by subject.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Head +Y and Zup",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Lantern Lake and pond habitats"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "T02-FAUNA-001-A02__white-swan__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed",
+      "rig_status": "not-created",
+      "animation_status": "not-created",
+      "anatomy_verified": false
+    },
+    {
+      "asset_id": "T02-FAUNA-001-A03",
+      "name": "Pond frog",
+      "kind": "fauna-reference",
+      "dimensions_m_proposed": [
+        0.12,
+        0.15,
+        0.1
+      ],
+      "function": "New freshwater forms; ducks and swan twolegs/twowings and one tail, frog fourwebbed feet, turtle one domed shell/fourlegs/head/tail. Resting natural poses, useful profiles/front/rear. No royal costume.",
+      "construction": "One isolated pond frog. New freshwater forms; ducks and swan twolegs/twowings and one tail, frog fourwebbed feet, turtle one domed shell/fourlegs/head/tail. Resting natural poses, useful profiles/front/rear. No royal costume. Coherent actual silhouette, visible root/underside/side; no unrelated architecture/scenery attached. Other existing named species/forms must not be regenerated. Local material consistent with source. Dimensions are proposals to refine by subject.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Head +Y and Zup",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Lantern Lake and pond habitats"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "T02-FAUNA-001-A03__pond-frog__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed",
+      "rig_status": "not-created",
+      "animation_status": "not-created",
+      "anatomy_verified": false
+    },
+    {
+      "asset_id": "T02-FAUNA-001-A04",
+      "name": "Freshwater turtle",
+      "kind": "fauna-reference",
+      "dimensions_m_proposed": [
+        0.22,
+        0.3,
+        0.16
+      ],
+      "function": "New freshwater forms; ducks and swan twolegs/twowings and one tail, frog fourwebbed feet, turtle one domed shell/fourlegs/head/tail. Resting natural poses, useful profiles/front/rear. No royal costume.",
+      "construction": "One isolated freshwater turtle. New freshwater forms; ducks and swan twolegs/twowings and one tail, frog fourwebbed feet, turtle one domed shell/fourlegs/head/tail. Resting natural poses, useful profiles/front/rear. No royal costume. Coherent actual silhouette, visible root/underside/side; no unrelated architecture/scenery attached. Other existing named species/forms must not be regenerated. Local material consistent with source. Dimensions are proposals to refine by subject.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Head +Y and Zup",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Lantern Lake and pond habitats"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "T02-FAUNA-001-A04__freshwater-turtle__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed",
+      "rig_status": "not-created",
+      "animation_status": "not-created",
+      "anatomy_verified": false
+    }
+  ],
+  "outputs": [
+    {
+      "file": "completion-pass/T02-FAUNA-001/T02-FAUNA-001.png",
+      "sha256": "3c6787f99501124fd46fc662466aaf8e508c1b2616ded171fcaa8bc88229145f",
+      "original_file": "/workspace/generated_images/exec-c6855c24-b40d-49c5-89e3-49d4500c7d3c.png",
+      "actual_input_file": null,
+      "actual_input_sha256": null,
+      "attempt": 1,
+      "generator": "image_gen.imagegen"
+    }
+  ],
+  "previous_attempts": [],
+  "models_generated": 0,
+  "physical_join_fit_verified": false,
+  "view_geometry_parity_verified": false,
+  "review_status": "pending-user-reference-and-model-review",
+  "gap": "New freshwater forms; ducks and swan twolegs/twowings and one tail, frog fourwebbed feet, turtle one domed shell/fourlegs/head/tail. Resting natural poses, useful profiles/front/rear. No royal costume.",
+  "mode": "fauna",
+  "visual_review_notes": [
+    "Four ordinary animal groups with main/front/back views. Fine frog/turtle toe/limb anatomy and bird wing unfolding require review, not a rig."
+  ],
+  "visual_inventory_review": {
+    "expected_groups_present": true,
+    "method": "Individual manual inspection of generated sheet; exact geometry remains unverified"
+  }
+}

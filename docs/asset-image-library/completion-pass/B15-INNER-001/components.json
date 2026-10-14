@@ -1,0 +1,124 @@
+{
+  "components": [
+    {
+      "asset_id": "B15-INNER-001-S01",
+      "name": "Jade interior arch bay",
+      "kind": "structural-section",
+      "dimensions_m_proposed": [
+        8,
+        6,
+        10
+      ],
+      "function": "Missing interior construction and local court transitions beyond exterior sections",
+      "construction": "One isolated jade interior arch bay, source-specific materials and deliberate human path through it; show inside/underside/side with wall thickness, glass/roof supports and host contacts. Hidden architecture inferred; no wholesale main-palace interior replacement.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B15"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B15-INNER-001-S01__jade-interior-arch-bay__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "B15-INNER-001-S02",
+      "name": "Temple roof interior coffer bay",
+      "kind": "structural-section",
+      "dimensions_m_proposed": [
+        8,
+        6,
+        10
+      ],
+      "function": "Missing interior construction and local court transitions beyond exterior sections",
+      "construction": "One isolated temple roof interior coffer bay, source-specific materials and deliberate human path through it; show inside/underside/side with wall thickness, glass/roof supports and host contacts. Hidden architecture inferred; no wholesale main-palace interior replacement.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B15"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B15-INNER-001-S02__temple-roof-interior-coffer-bay__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "B15-INNER-001-S03",
+      "name": "Shrine court stair landing",
+      "kind": "structural-section",
+      "dimensions_m_proposed": [
+        8,
+        6,
+        10
+      ],
+      "function": "Missing interior construction and local court transitions beyond exterior sections",
+      "construction": "One isolated shrine court stair landing, source-specific materials and deliberate human path through it; show inside/underside/side with wall thickness, glass/roof supports and host contacts. Hidden architecture inferred; no wholesale main-palace interior replacement.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B15"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B15-INNER-001-S03__shrine-court-stair-landing__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "B15-INNER-001-S04",
+      "name": "Jungle temple gallery corner",
+      "kind": "structural-section",
+      "dimensions_m_proposed": [
+        8,
+        6,
+        10
+      ],
+      "function": "Missing interior construction and local court transitions beyond exterior sections",
+      "construction": "One isolated jungle temple gallery corner, source-specific materials and deliberate human path through it; show inside/underside/side with wall thickness, glass/roof supports and host contacts. Hidden architecture inferred; no wholesale main-palace interior replacement.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B15"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B15-INNER-001-S04__jungle-temple-gallery-corner__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    }
+  ]
+}

@@ -1,0 +1,124 @@
+{
+  "components": [
+    {
+      "asset_id": "T03-PAVING-001-A01",
+      "name": "Nacre petal paving field",
+      "kind": "natural-module",
+      "dimensions_m_proposed": [
+        2,
+        2,
+        0.2
+      ],
+      "function": "Missing local repeatable paving/edge forms. Draw actual square-cut field and border modules with top-view repeat inset, thickness and defined seams; no claim of seamless exported texture.",
+      "construction": "One isolated nacre petal paving field. Missing local repeatable paving/edge forms. Draw actual square-cut field and border modules with top-view repeat inset, thickness and defined seams; no claim of seamless exported texture. Coherent actual silhouette, visible root/underside/side; no unrelated architecture/scenery attached. Other existing named species/forms must not be regenerated. Local material consistent with source. Dimensions are proposals to refine by subject.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Coast, open sea and reefs"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "T03-PAVING-001-A01__nacre-petal-paving-field__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "T03-PAVING-001-A02",
+      "name": "Coastal shell border",
+      "kind": "natural-module",
+      "dimensions_m_proposed": [
+        2,
+        2,
+        0.2
+      ],
+      "function": "Missing local repeatable paving/edge forms. Draw actual square-cut field and border modules with top-view repeat inset, thickness and defined seams; no claim of seamless exported texture.",
+      "construction": "One isolated coastal shell border. Missing local repeatable paving/edge forms. Draw actual square-cut field and border modules with top-view repeat inset, thickness and defined seams; no claim of seamless exported texture. Coherent actual silhouette, visible root/underside/side; no unrelated architecture/scenery attached. Other existing named species/forms must not be regenerated. Local material consistent with source. Dimensions are proposals to refine by subject.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Coast, open sea and reefs"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "T03-PAVING-001-A02__coastal-shell-border__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "T03-PAVING-001-A03",
+      "name": "Pebble path field",
+      "kind": "natural-module",
+      "dimensions_m_proposed": [
+        2,
+        2,
+        0.2
+      ],
+      "function": "Missing local repeatable paving/edge forms. Draw actual square-cut field and border modules with top-view repeat inset, thickness and defined seams; no claim of seamless exported texture.",
+      "construction": "One isolated pebble path field. Missing local repeatable paving/edge forms. Draw actual square-cut field and border modules with top-view repeat inset, thickness and defined seams; no claim of seamless exported texture. Coherent actual silhouette, visible root/underside/side; no unrelated architecture/scenery attached. Other existing named species/forms must not be regenerated. Local material consistent with source. Dimensions are proposals to refine by subject.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Coast, open sea and reefs"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "T03-PAVING-001-A03__pebble-path-field__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "T03-PAVING-001-A04",
+      "name": "Tidal stair stone tread",
+      "kind": "natural-module",
+      "dimensions_m_proposed": [
+        2,
+        2,
+        0.2
+      ],
+      "function": "Missing local repeatable paving/edge forms. Draw actual square-cut field and border modules with top-view repeat inset, thickness and defined seams; no claim of seamless exported texture.",
+      "construction": "One isolated tidal stair stone tread. Missing local repeatable paving/edge forms. Draw actual square-cut field and border modules with top-view repeat inset, thickness and defined seams; no claim of seamless exported texture. Coherent actual silhouette, visible root/underside/side; no unrelated architecture/scenery attached. Other existing named species/forms must not be regenerated. Local material consistent with source. Dimensions are proposals to refine by subject.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Coast, open sea and reefs"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "T03-PAVING-001-A04__tidal-stair-stone-tread__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    }
+  ]
+}

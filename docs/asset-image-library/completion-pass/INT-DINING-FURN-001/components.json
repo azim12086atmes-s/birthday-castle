@@ -1,0 +1,124 @@
+{
+  "components": [
+    {
+      "asset_id": "INT-DINING-FURN-001-S01",
+      "name": "Oval dining table centre",
+      "kind": "structural-section",
+      "dimensions_m_proposed": [
+        2,
+        2.2,
+        0.76
+      ],
+      "function": "Missing dining-table modules and supporting furniture; existing chairs and celebration tea set reused",
+      "construction": "One isolated oval dining table centre, source pearl/rose finish and gold floral details, human size, useful rear/contact view and consistent legs. No teacups, chairs or food glued to furniture. Table leaves have matching end joints.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Interiors and furniture"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "INT-DINING-FURN-001-S01__oval-dining-table-centre__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "INT-DINING-FURN-001-S02",
+      "name": "Dining table rounded end",
+      "kind": "structural-section",
+      "dimensions_m_proposed": [
+        2,
+        1,
+        0.76
+      ],
+      "function": "Missing dining-table modules and supporting furniture; existing chairs and celebration tea set reused",
+      "construction": "One isolated dining table rounded end, source pearl/rose finish and gold floral details, human size, useful rear/contact view and consistent legs. No teacups, chairs or food glued to furniture. Table leaves have matching end joints.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Interiors and furniture"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "INT-DINING-FURN-001-S02__dining-table-rounded-end__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "INT-DINING-FURN-001-S03",
+      "name": "Tea conversation table",
+      "kind": "structural-section",
+      "dimensions_m_proposed": [
+        1,
+        0.65,
+        0.72
+      ],
+      "function": "Missing dining-table modules and supporting furniture; existing chairs and celebration tea set reused",
+      "construction": "One isolated tea conversation table, source pearl/rose finish and gold floral details, human size, useful rear/contact view and consistent legs. No teacups, chairs or food glued to furniture. Table leaves have matching end joints.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Interiors and furniture"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "INT-DINING-FURN-001-S03__tea-conversation-table__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "INT-DINING-FURN-001-S04",
+      "name": "Display sideboard",
+      "kind": "structural-section",
+      "dimensions_m_proposed": [
+        1.8,
+        0.5,
+        1.1
+      ],
+      "function": "Missing dining-table modules and supporting furniture; existing chairs and celebration tea set reused",
+      "construction": "One isolated display sideboard, source pearl/rose finish and gold floral details, human size, useful rear/contact view and consistent legs. No teacups, chairs or food glued to furniture. Table leaves have matching end joints.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Interiors and furniture"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "INT-DINING-FURN-001-S04__display-sideboard__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    }
+  ]
+}

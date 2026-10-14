@@ -1,0 +1,364 @@
+{
+  "components": [
+    {
+      "asset_id": "WLD-PORT-DETAIL-001-D01",
+      "name": "Rope cleat",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        0.6,
+        0.3,
+        0.6
+      ],
+      "function": "Missing docking and ramp attachments; does not establish live physics or travel mechanics",
+      "construction": "One rope cleat, weathered cedar/brass with restrained source motifs. Useful mounting face, separate rope from attached giant boat/pier, no existing rose bollard duplicated.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Docks, ramps and travel infrastructure"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "WLD-PORT-DETAIL-001-D01__rope-cleat__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "WLD-PORT-DETAIL-001-D02",
+      "name": "Dock plank end cap",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        0.6,
+        0.3,
+        0.6
+      ],
+      "function": "Missing docking and ramp attachments; does not establish live physics or travel mechanics",
+      "construction": "One dock plank end cap, weathered cedar/brass with restrained source motifs. Useful mounting face, separate rope from attached giant boat/pier, no existing rose bollard duplicated.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Docks, ramps and travel infrastructure"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "WLD-PORT-DETAIL-001-D02__dock-plank-end-cap__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "WLD-PORT-DETAIL-001-D03",
+      "name": "Dock corner brass shoe",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        0.2,
+        0.12,
+        0.25
+      ],
+      "function": "Missing docking and ramp attachments; does not establish live physics or travel mechanics",
+      "construction": "One dock corner brass shoe, weathered cedar/brass with restrained source motifs. Useful mounting face, separate rope from attached giant boat/pier, no existing rose bollard duplicated. SMALL attachment hardware only: plate/socket/hook/joint with its own hole/root and source-compatible quiet ornament. No lantern body, full arch, whole column, complete door, garden or giant architectural scene glued to it.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Docks, ramps and travel infrastructure"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "WLD-PORT-DETAIL-001-D03__dock-corner-brass-shoe__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "WLD-PORT-DETAIL-001-D04",
+      "name": "Ramp hinge plate",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        0.2,
+        0.12,
+        0.25
+      ],
+      "function": "Missing docking and ramp attachments; does not establish live physics or travel mechanics",
+      "construction": "One ramp hinge plate, weathered cedar/brass with restrained source motifs. Useful mounting face, separate rope from attached giant boat/pier, no existing rose bollard duplicated. SMALL attachment hardware only: plate/socket/hook/joint with its own hole/root and source-compatible quiet ornament. No lantern body, full arch, whole column, complete door, garden or giant architectural scene glued to it.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Docks, ramps and travel infrastructure"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "WLD-PORT-DETAIL-001-D04__ramp-hinge-plate__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "WLD-PORT-DETAIL-001-D05",
+      "name": "Rope railing eye",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        0.6,
+        0.3,
+        0.6
+      ],
+      "function": "Missing docking and ramp attachments; does not establish live physics or travel mechanics",
+      "construction": "One rope railing eye, weathered cedar/brass with restrained source motifs. Useful mounting face, separate rope from attached giant boat/pier, no existing rose bollard duplicated.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Docks, ramps and travel infrastructure"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "WLD-PORT-DETAIL-001-D05__rope-railing-eye__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "WLD-PORT-DETAIL-001-D06",
+      "name": "Mooring ring bracket",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        0.6,
+        0.3,
+        0.6
+      ],
+      "function": "Missing docking and ramp attachments; does not establish live physics or travel mechanics",
+      "construction": "One mooring ring bracket, weathered cedar/brass with restrained source motifs. Useful mounting face, separate rope from attached giant boat/pier, no existing rose bollard duplicated.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Docks, ramps and travel infrastructure"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "WLD-PORT-DETAIL-001-D06__mooring-ring-bracket__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "WLD-PORT-DETAIL-001-D07",
+      "name": "Floating dock guide sleeve",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        0.6,
+        0.3,
+        0.6
+      ],
+      "function": "Missing docking and ramp attachments; does not establish live physics or travel mechanics",
+      "construction": "One floating dock guide sleeve, weathered cedar/brass with restrained source motifs. Useful mounting face, separate rope from attached giant boat/pier, no existing rose bollard duplicated.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Docks, ramps and travel infrastructure"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "WLD-PORT-DETAIL-001-D07__floating-dock-guide-sleeve__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "WLD-PORT-DETAIL-001-D08",
+      "name": "Landing step edge strip",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        0.6,
+        0.3,
+        0.6
+      ],
+      "function": "Missing docking and ramp attachments; does not establish live physics or travel mechanics",
+      "construction": "One landing step edge strip, weathered cedar/brass with restrained source motifs. Useful mounting face, separate rope from attached giant boat/pier, no existing rose bollard duplicated.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Docks, ramps and travel infrastructure"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "WLD-PORT-DETAIL-001-D08__landing-step-edge-strip__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "WLD-PORT-DETAIL-001-D09",
+      "name": "Small buoy shell",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        0.6,
+        0.3,
+        0.6
+      ],
+      "function": "Missing docking and ramp attachments; does not establish live physics or travel mechanics",
+      "construction": "One small buoy shell, weathered cedar/brass with restrained source motifs. Useful mounting face, separate rope from attached giant boat/pier, no existing rose bollard duplicated.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Docks, ramps and travel infrastructure"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "WLD-PORT-DETAIL-001-D09__small-buoy-shell__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "WLD-PORT-DETAIL-001-D10",
+      "name": "Boat slip bumper",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        0.6,
+        0.3,
+        0.6
+      ],
+      "function": "Missing docking and ramp attachments; does not establish live physics or travel mechanics",
+      "construction": "One boat slip bumper, weathered cedar/brass with restrained source motifs. Useful mounting face, separate rope from attached giant boat/pier, no existing rose bollard duplicated.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Docks, ramps and travel infrastructure"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "WLD-PORT-DETAIL-001-D10__boat-slip-bumper__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "WLD-PORT-DETAIL-001-D11",
+      "name": "Coastal stair rail shoe",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        0.2,
+        0.12,
+        0.25
+      ],
+      "function": "Missing docking and ramp attachments; does not establish live physics or travel mechanics",
+      "construction": "One coastal stair rail shoe, weathered cedar/brass with restrained source motifs. Useful mounting face, separate rope from attached giant boat/pier, no existing rose bollard duplicated. SMALL attachment hardware only: plate/socket/hook/joint with its own hole/root and source-compatible quiet ornament. No lantern body, full arch, whole column, complete door, garden or giant architectural scene glued to it.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Docks, ramps and travel infrastructure"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "WLD-PORT-DETAIL-001-D11__coastal-stair-rail-shoe__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "WLD-PORT-DETAIL-001-D12",
+      "name": "Travel threshold floor plate",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        0.6,
+        0.3,
+        0.6
+      ],
+      "function": "Missing docking and ramp attachments; does not establish live physics or travel mechanics",
+      "construction": "One travel threshold floor plate, weathered cedar/brass with restrained source motifs. Useful mounting face, separate rope from attached giant boat/pier, no existing rose bollard duplicated.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Docks, ramps and travel infrastructure"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "WLD-PORT-DETAIL-001-D12__travel-threshold-floor-plate__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    }
+  ]
+}

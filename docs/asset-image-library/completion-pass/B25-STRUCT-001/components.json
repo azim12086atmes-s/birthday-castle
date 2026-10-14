@@ -1,0 +1,124 @@
+{
+  "components": [
+    {
+      "asset_id": "B25-STRUCT-001-S01",
+      "name": "Glass entry bay",
+      "kind": "structural-section",
+      "dimensions_m_proposed": [
+        8,
+        6,
+        12
+      ],
+      "function": "Need glass wall/roof rib corner/entry assemblies, pond-floor/bed edging and hanging planter supports. Audit PAL-CONSERV-SURF subtype and reported differing floor/footrail before reuse; do not assume every conservatory shares it. Orchid/vine/fern forms and butterflies need local selection; no whole greenhouse model proven. Provide missing isolated hosts and join views.",
+      "construction": "One isolated glass entry bay matching the supplied building, its roof/arch/wall silhouette and local materials. Show front and interior/rear/underside contact, not a complete building scene. Actual open column galleries and holes stay open. Extend hidden depth only enough to form a joinable section; no palace-wide plan or added unrelated tower.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B25"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B25-STRUCT-001-S01__glass-entry-bay__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "B25-STRUCT-001-S02",
+      "name": "Dome/rib corner",
+      "kind": "structural-section",
+      "dimensions_m_proposed": [
+        8,
+        6,
+        12
+      ],
+      "function": "Need glass wall/roof rib corner/entry assemblies, pond-floor/bed edging and hanging planter supports. Audit PAL-CONSERV-SURF subtype and reported differing floor/footrail before reuse; do not assume every conservatory shares it. Orchid/vine/fern forms and butterflies need local selection; no whole greenhouse model proven. Provide missing isolated hosts and join views.",
+      "construction": "One isolated dome/rib corner matching the supplied building, its roof/arch/wall silhouette and local materials. Show front and interior/rear/underside contact, not a complete building scene. Actual open column galleries and holes stay open. Extend hidden depth only enough to form a joinable section; no palace-wide plan or added unrelated tower.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B25"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B25-STRUCT-001-S02__dome-rib-corner__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "B25-STRUCT-001-S03",
+      "name": "Pond/plant-bed edge",
+      "kind": "structural-section",
+      "dimensions_m_proposed": [
+        8,
+        6,
+        12
+      ],
+      "function": "Need glass wall/roof rib corner/entry assemblies, pond-floor/bed edging and hanging planter supports. Audit PAL-CONSERV-SURF subtype and reported differing floor/footrail before reuse; do not assume every conservatory shares it. Orchid/vine/fern forms and butterflies need local selection; no whole greenhouse model proven. Provide missing isolated hosts and join views.",
+      "construction": "One isolated pond/plant-bed edge matching the supplied building, its roof/arch/wall silhouette and local materials. Show front and interior/rear/underside contact, not a complete building scene. Actual open column galleries and holes stay open. Extend hidden depth only enough to form a joinable section; no palace-wide plan or added unrelated tower.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B25"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B25-STRUCT-001-S03__pond-plant-bed-edge__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "B25-STRUCT-001-S04",
+      "name": "Hanging planter support",
+      "kind": "structural-section",
+      "dimensions_m_proposed": [
+        8,
+        6,
+        12
+      ],
+      "function": "Need glass wall/roof rib corner/entry assemblies, pond-floor/bed edging and hanging planter supports. Audit PAL-CONSERV-SURF subtype and reported differing floor/footrail before reuse; do not assume every conservatory shares it. Orchid/vine/fern forms and butterflies need local selection; no whole greenhouse model proven. Provide missing isolated hosts and join views.",
+      "construction": "One isolated hanging planter support matching the supplied building, its roof/arch/wall silhouette and local materials. Show front and interior/rear/underside contact, not a complete building scene. Actual open column galleries and holes stay open. Extend hidden depth only enough to form a joinable section; no palace-wide plan or added unrelated tower.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B25"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B25-STRUCT-001-S04__hanging-planter-support__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    }
+  ]
+}

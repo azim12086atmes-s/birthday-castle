@@ -1,0 +1,124 @@
+{
+  "components": [
+    {
+      "asset_id": "INT-THRONE-SHELL-001-S01",
+      "name": "Pointed throne wall and dais host",
+      "kind": "structural-section",
+      "dimensions_m_proposed": [
+        8,
+        5,
+        12
+      ],
+      "function": "Missing construction views behind existing room snapshots; generic substrate plus source-compatible interior faces",
+      "construction": "One isolated pointed throne wall and dais host, original palace rose and ivory marble, gold trim, blue/rose glass where source appropriate. Show interior face, ceiling/underside and rear wall/roof contact. Real door/window apertures open; furniture/foliage removable. Preserve local room character rather than replacing with one generic hall.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Interiors and furniture"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "INT-THRONE-SHELL-001-S01__pointed-throne-wall-and-dais-host__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "INT-THRONE-SHELL-001-S02",
+      "name": "Open side gallery arch bay",
+      "kind": "structural-section",
+      "dimensions_m_proposed": [
+        8,
+        5,
+        12
+      ],
+      "function": "Missing construction views behind existing room snapshots; generic substrate plus source-compatible interior faces",
+      "construction": "One isolated open side gallery arch bay, original palace rose and ivory marble, gold trim, blue/rose glass where source appropriate. Show interior face, ceiling/underside and rear wall/roof contact. Real door/window apertures open; furniture/foliage removable. Preserve local room character rather than replacing with one generic hall.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Interiors and furniture"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "INT-THRONE-SHELL-001-S02__open-side-gallery-arch-bay__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "INT-THRONE-SHELL-001-S03",
+      "name": "Vault and rib junction ceiling bay",
+      "kind": "structural-section",
+      "dimensions_m_proposed": [
+        8,
+        5,
+        12
+      ],
+      "function": "Missing construction views behind existing room snapshots; generic substrate plus source-compatible interior faces",
+      "construction": "One isolated vault and rib junction ceiling bay, original palace rose and ivory marble, gold trim, blue/rose glass where source appropriate. Show interior face, ceiling/underside and rear wall/roof contact. Real door/window apertures open; furniture/foliage removable. Preserve local room character rather than replacing with one generic hall.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Interiors and furniture"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "INT-THRONE-SHELL-001-S03__vault-and-rib-junction-ceiling-bay__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "INT-THRONE-SHELL-001-S04",
+      "name": "Marble stair and threshold host",
+      "kind": "structural-section",
+      "dimensions_m_proposed": [
+        8,
+        5,
+        12
+      ],
+      "function": "Missing construction views behind existing room snapshots; generic substrate plus source-compatible interior faces",
+      "construction": "One isolated marble stair and threshold host, original palace rose and ivory marble, gold trim, blue/rose glass where source appropriate. Show interior face, ceiling/underside and rear wall/roof contact. Real door/window apertures open; furniture/foliage removable. Preserve local room character rather than replacing with one generic hall.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Interiors and furniture"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "INT-THRONE-SHELL-001-S04__marble-stair-and-threshold-host__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    }
+  ]
+}

@@ -1,0 +1,364 @@
+{
+  "components": [
+    {
+      "asset_id": "B16-DETAIL-001-D01",
+      "name": "Cedar carved roof ridge",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        1.5,
+        0.15,
+        1.5
+      ],
+      "function": "Need long wall/post bay, gable/roof ridge end, porch threshold and carved curved ridge supports. Source already contains cedar grain, amber glazing and Nordic scrolls; do not reuse B12 crown signs or Gothic capitals indiscriminately. Conifers/heather/moss; fox/hare/woodland birds proposed. Missing detached construction pieces and local interior-facing patterns.",
+      "construction": "One isolated cedar carved roof ridge, strictly follow local source colour/material/motif instead of universal pink marble. Show real depth, flat back/host contact or one consistent repeat profile. Existing generic lanterns/flowers/benches reused; only named local fittings. No merged wall scene attached to small detail.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B16"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B16-DETAIL-001-D01__cedar-carved-roof-ridge__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "B16-DETAIL-001-D02",
+      "name": "Longhouse gable beam end",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        1.5,
+        0.15,
+        1.5
+      ],
+      "function": "Need long wall/post bay, gable/roof ridge end, porch threshold and carved curved ridge supports. Source already contains cedar grain, amber glazing and Nordic scrolls; do not reuse B12 crown signs or Gothic capitals indiscriminately. Conifers/heather/moss; fox/hare/woodland birds proposed. Missing detached construction pieces and local interior-facing patterns.",
+      "construction": "One isolated longhouse gable beam end, strictly follow local source colour/material/motif instead of universal pink marble. Show real depth, flat back/host contact or one consistent repeat profile. Existing generic lanterns/flowers/benches reused; only named local fittings. No merged wall scene attached to small detail.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B16"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B16-DETAIL-001-D02__longhouse-gable-beam-end__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "B16-DETAIL-001-D03",
+      "name": "Amber window insert",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        1.5,
+        0.15,
+        1.5
+      ],
+      "function": "Need long wall/post bay, gable/roof ridge end, porch threshold and carved curved ridge supports. Source already contains cedar grain, amber glazing and Nordic scrolls; do not reuse B12 crown signs or Gothic capitals indiscriminately. Conifers/heather/moss; fox/hare/woodland birds proposed. Missing detached construction pieces and local interior-facing patterns.",
+      "construction": "One isolated amber window insert, strictly follow local source colour/material/motif instead of universal pink marble. Show real depth, flat back/host contact or one consistent repeat profile. Existing generic lanterns/flowers/benches reused; only named local fittings. No merged wall scene attached to small detail.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B16"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B16-DETAIL-001-D03__amber-window-insert__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "B16-DETAIL-001-D04",
+      "name": "Longhouse timber door",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        1.5,
+        0.15,
+        1.5
+      ],
+      "function": "Need long wall/post bay, gable/roof ridge end, porch threshold and carved curved ridge supports. Source already contains cedar grain, amber glazing and Nordic scrolls; do not reuse B12 crown signs or Gothic capitals indiscriminately. Conifers/heather/moss; fox/hare/woodland birds proposed. Missing detached construction pieces and local interior-facing patterns.",
+      "construction": "One isolated longhouse timber door, strictly follow local source colour/material/motif instead of universal pink marble. Show real depth, flat back/host contact or one consistent repeat profile. Existing generic lanterns/flowers/benches reused; only named local fittings. No merged wall scene attached to small detail.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B16"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B16-DETAIL-001-D04__longhouse-timber-door__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "B16-DETAIL-001-D05",
+      "name": "Inner roof truss joint",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        1.5,
+        0.15,
+        1.5
+      ],
+      "function": "Need long wall/post bay, gable/roof ridge end, porch threshold and carved curved ridge supports. Source already contains cedar grain, amber glazing and Nordic scrolls; do not reuse B12 crown signs or Gothic capitals indiscriminately. Conifers/heather/moss; fox/hare/woodland birds proposed. Missing detached construction pieces and local interior-facing patterns.",
+      "construction": "One isolated inner roof truss joint, strictly follow local source colour/material/motif instead of universal pink marble. Show real depth, flat back/host contact or one consistent repeat profile. Existing generic lanterns/flowers/benches reused; only named local fittings. No merged wall scene attached to small detail.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B16"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B16-DETAIL-001-D05__inner-roof-truss-joint__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "B16-DETAIL-001-D06",
+      "name": "Carved wall plank repeat",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        1.5,
+        0.15,
+        1.5
+      ],
+      "function": "Need long wall/post bay, gable/roof ridge end, porch threshold and carved curved ridge supports. Source already contains cedar grain, amber glazing and Nordic scrolls; do not reuse B12 crown signs or Gothic capitals indiscriminately. Conifers/heather/moss; fox/hare/woodland birds proposed. Missing detached construction pieces and local interior-facing patterns.",
+      "construction": "One isolated carved wall plank repeat, strictly follow local source colour/material/motif instead of universal pink marble. Show real depth, flat back/host contact or one consistent repeat profile. Existing generic lanterns/flowers/benches reused; only named local fittings. No merged wall scene attached to small detail.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B16"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B16-DETAIL-001-D06__carved-wall-plank-repeat__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "B16-DETAIL-001-D07",
+      "name": "Timber bench end",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        1.5,
+        0.15,
+        1.5
+      ],
+      "function": "Need long wall/post bay, gable/roof ridge end, porch threshold and carved curved ridge supports. Source already contains cedar grain, amber glazing and Nordic scrolls; do not reuse B12 crown signs or Gothic capitals indiscriminately. Conifers/heather/moss; fox/hare/woodland birds proposed. Missing detached construction pieces and local interior-facing patterns.",
+      "construction": "One isolated timber bench end, strictly follow local source colour/material/motif instead of universal pink marble. Show real depth, flat back/host contact or one consistent repeat profile. Existing generic lanterns/flowers/benches reused; only named local fittings. No merged wall scene attached to small detail.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B16"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B16-DETAIL-001-D07__timber-bench-end__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "B16-DETAIL-001-D08",
+      "name": "Slate roof shingle strip",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        1.5,
+        0.15,
+        1.5
+      ],
+      "function": "Need long wall/post bay, gable/roof ridge end, porch threshold and carved curved ridge supports. Source already contains cedar grain, amber glazing and Nordic scrolls; do not reuse B12 crown signs or Gothic capitals indiscriminately. Conifers/heather/moss; fox/hare/woodland birds proposed. Missing detached construction pieces and local interior-facing patterns.",
+      "construction": "One isolated slate roof shingle strip, strictly follow local source colour/material/motif instead of universal pink marble. Show real depth, flat back/host contact or one consistent repeat profile. Existing generic lanterns/flowers/benches reused; only named local fittings. No merged wall scene attached to small detail.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B16"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B16-DETAIL-001-D08__slate-roof-shingle-strip__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "B16-DETAIL-001-D09",
+      "name": "Stone hearth lookalike display plinth",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        1.5,
+        0.15,
+        1.5
+      ],
+      "function": "Need long wall/post bay, gable/roof ridge end, porch threshold and carved curved ridge supports. Source already contains cedar grain, amber glazing and Nordic scrolls; do not reuse B12 crown signs or Gothic capitals indiscriminately. Conifers/heather/moss; fox/hare/woodland birds proposed. Missing detached construction pieces and local interior-facing patterns.",
+      "construction": "One isolated stone hearth lookalike display plinth, strictly follow local source colour/material/motif instead of universal pink marble. Show real depth, flat back/host contact or one consistent repeat profile. Existing generic lanterns/flowers/benches reused; only named local fittings. No merged wall scene attached to small detail.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B16"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B16-DETAIL-001-D09__stone-hearth-lookalike-display-plinth__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "B16-DETAIL-001-D10",
+      "name": "Nordic knot dado panel",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        1.5,
+        0.15,
+        1.5
+      ],
+      "function": "Need long wall/post bay, gable/roof ridge end, porch threshold and carved curved ridge supports. Source already contains cedar grain, amber glazing and Nordic scrolls; do not reuse B12 crown signs or Gothic capitals indiscriminately. Conifers/heather/moss; fox/hare/woodland birds proposed. Missing detached construction pieces and local interior-facing patterns.",
+      "construction": "One isolated nordic knot dado panel, strictly follow local source colour/material/motif instead of universal pink marble. Show real depth, flat back/host contact or one consistent repeat profile. Existing generic lanterns/flowers/benches reused; only named local fittings. No merged wall scene attached to small detail.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B16"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B16-DETAIL-001-D10__nordic-knot-dado-panel__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "B16-DETAIL-001-D11",
+      "name": "Longhouse wood floor edge",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        1.5,
+        1.5,
+        0.12
+      ],
+      "function": "Need long wall/post bay, gable/roof ridge end, porch threshold and carved curved ridge supports. Source already contains cedar grain, amber glazing and Nordic scrolls; do not reuse B12 crown signs or Gothic capitals indiscriminately. Conifers/heather/moss; fox/hare/woodland birds proposed. Missing detached construction pieces and local interior-facing patterns.",
+      "construction": "One isolated longhouse wood floor edge, strictly follow local source colour/material/motif instead of universal pink marble. Show real depth, flat back/host contact or one consistent repeat profile. Existing generic lanterns/flowers/benches reused; only named local fittings. No merged wall scene attached to small detail. This is a FLAT FLOOR piece, not a hanging wall plaque or raised flower sculpture. Show top pattern and a thin edge profile; relief remains shallow enough to walk across.",
+      "attachment_face": "Broad flat underside to floor, shortest dimension vertical Z",
+      "semantic_front": "Decorated broad face up +Z",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B16"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B16-DETAIL-001-D11__longhouse-wood-floor-edge__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "B16-DETAIL-001-D12",
+      "name": "Wind resistant lantern mount",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        0.2,
+        0.12,
+        0.25
+      ],
+      "function": "Need long wall/post bay, gable/roof ridge end, porch threshold and carved curved ridge supports. Source already contains cedar grain, amber glazing and Nordic scrolls; do not reuse B12 crown signs or Gothic capitals indiscriminately. Conifers/heather/moss; fox/hare/woodland birds proposed. Missing detached construction pieces and local interior-facing patterns.",
+      "construction": "One isolated wind resistant lantern mount, strictly follow local source colour/material/motif instead of universal pink marble. Show real depth, flat back/host contact or one consistent repeat profile. Existing generic lanterns/flowers/benches reused; only named local fittings. No merged wall scene attached to small detail. SMALL attachment hardware only: plate/socket/hook/joint with its own hole/root and source-compatible quiet ornament. No lantern body, full arch, whole column, complete door, garden or giant architectural scene glued to it.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B16"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B16-DETAIL-001-D12__wind-resistant-lantern-mount__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    }
+  ]
+}

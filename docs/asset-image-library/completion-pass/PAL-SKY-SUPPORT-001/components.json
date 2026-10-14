@@ -1,0 +1,124 @@
+{
+  "components": [
+    {
+      "asset_id": "PAL-SKY-SUPPORT-001-S01",
+      "name": "Slender pillar and capital support bay",
+      "kind": "structural-section",
+      "dimensions_m_proposed": [
+        8,
+        8,
+        25
+      ],
+      "function": "Missing independently supported limited platforms and pillar interconnections; preserve castle silhouette",
+      "construction": "One isolated slender pillar and capital support bay with slender ivory/rose marble columns, gold collars and realistic visible contacts. Show structural section and joining sockets; no full bridge network or extra castle towers. Supporting pillars thin relative to giant architecture, landing modest.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Tower bodies and roof assemblies"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "PAL-SKY-SUPPORT-001-S01__slender-pillar-and-capital-support-bay__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "PAL-SKY-SUPPORT-001-S02",
+      "name": "Branched platform underside bracket",
+      "kind": "structural-section",
+      "dimensions_m_proposed": [
+        8,
+        8,
+        25
+      ],
+      "function": "Missing independently supported limited platforms and pillar interconnections; preserve castle silhouette",
+      "construction": "One isolated branched platform underside bracket with slender ivory/rose marble columns, gold collars and realistic visible contacts. Show structural section and joining sockets; no full bridge network or extra castle towers. Supporting pillars thin relative to giant architecture, landing modest.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Tower bodies and roof assemblies"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "PAL-SKY-SUPPORT-001-S02__branched-platform-underside-bracket__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "PAL-SKY-SUPPORT-001-S03",
+      "name": "External tower side landing connection",
+      "kind": "structural-section",
+      "dimensions_m_proposed": [
+        8,
+        8,
+        25
+      ],
+      "function": "Missing independently supported limited platforms and pillar interconnections; preserve castle silhouette",
+      "construction": "One isolated external tower side landing connection with slender ivory/rose marble columns, gold collars and realistic visible contacts. Show structural section and joining sockets; no full bridge network or extra castle towers. Supporting pillars thin relative to giant architecture, landing modest.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Tower bodies and roof assemblies"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "PAL-SKY-SUPPORT-001-S03__external-tower-side-landing-connection__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "PAL-SKY-SUPPORT-001-S04",
+      "name": "Two level pillar cross connection",
+      "kind": "structural-section",
+      "dimensions_m_proposed": [
+        8,
+        8,
+        25
+      ],
+      "function": "Missing independently supported limited platforms and pillar interconnections; preserve castle silhouette",
+      "construction": "One isolated two level pillar cross connection with slender ivory/rose marble columns, gold collars and realistic visible contacts. Show structural section and joining sockets; no full bridge network or extra castle towers. Supporting pillars thin relative to giant architecture, landing modest.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Tower bodies and roof assemblies"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "PAL-SKY-SUPPORT-001-S04__two-level-pillar-cross-connection__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    }
+  ]
+}

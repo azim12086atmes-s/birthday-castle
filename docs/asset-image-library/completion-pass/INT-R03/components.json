@@ -1,0 +1,34 @@
+{
+  "components": [
+    {
+      "asset_id": "INT-R03-S01",
+      "name": "Dining salon room shell",
+      "kind": "structural-section",
+      "dimensions_m_proposed": [
+        24,
+        16,
+        12
+      ],
+      "function": "Reserved dining-room reference missing; one coordinated furnished overview",
+      "construction": "Four consistent views of a celebratory dining/tea salon, ivory/rose marble and gold, blue/rose windows, human-sized oval table group with warm flowers, restrained garlands, carpet and curtains. Reuse existing tea/celebration objects; no kitchen, serving workspace or performance room. Continuous stable room layout.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Interiors and furniture"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "INT-R03-S01__dining-salon-room-shell__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    }
+  ]
+}

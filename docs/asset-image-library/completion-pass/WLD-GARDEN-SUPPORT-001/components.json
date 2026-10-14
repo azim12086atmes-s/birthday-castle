@@ -1,0 +1,364 @@
+{
+  "components": [
+    {
+      "asset_id": "WLD-GARDEN-SUPPORT-001-D01",
+      "name": "Small birdbath bowl pedestal",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        1,
+        0.5,
+        1
+      ],
+      "function": "Missing planting/habitat support objects; aesthetic care props only, no service-room kit",
+      "construction": "One distinct human-scale small birdbath bowl pedestal, ivory/rose/gold where formal garden and simple cedar for habitat forms. Useful rear/contact view, stable base, no attached huge trees or flowers; generic existing benches/urns excluded.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Garden and path furniture"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "WLD-GARDEN-SUPPORT-001-D01__small-birdbath-bowl-pedestal__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "WLD-GARDEN-SUPPORT-001-D02",
+      "name": "Bird perch frame",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        1,
+        0.5,
+        1
+      ],
+      "function": "Missing planting/habitat support objects; aesthetic care props only, no service-room kit",
+      "construction": "One distinct human-scale bird perch frame, ivory/rose/gold where formal garden and simple cedar for habitat forms. Useful rear/contact view, stable base, no attached huge trees or flowers; generic existing benches/urns excluded.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Garden and path furniture"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "WLD-GARDEN-SUPPORT-001-D02__bird-perch-frame__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "WLD-GARDEN-SUPPORT-001-D03",
+      "name": "Butterfly habitat shelter",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        1,
+        0.5,
+        1
+      ],
+      "function": "Missing planting/habitat support objects; aesthetic care props only, no service-room kit",
+      "construction": "One distinct human-scale butterfly habitat shelter, ivory/rose/gold where formal garden and simple cedar for habitat forms. Useful rear/contact view, stable base, no attached huge trees or flowers; generic existing benches/urns excluded.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Garden and path furniture"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "WLD-GARDEN-SUPPORT-001-D03__butterfly-habitat-shelter__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "WLD-GARDEN-SUPPORT-001-D04",
+      "name": "Climbing rose trellis panel",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        1,
+        0.5,
+        1
+      ],
+      "function": "Missing planting/habitat support objects; aesthetic care props only, no service-room kit",
+      "construction": "One distinct human-scale climbing rose trellis panel, ivory/rose/gold where formal garden and simple cedar for habitat forms. Useful rear/contact view, stable base, no attached huge trees or flowers; generic existing benches/urns excluded.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Garden and path furniture"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "WLD-GARDEN-SUPPORT-001-D04__climbing-rose-trellis-panel__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "WLD-GARDEN-SUPPORT-001-D05",
+      "name": "Orchid hanging basket frame",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        1,
+        0.5,
+        1
+      ],
+      "function": "Missing planting/habitat support objects; aesthetic care props only, no service-room kit",
+      "construction": "One distinct human-scale orchid hanging basket frame, ivory/rose/gold where formal garden and simple cedar for habitat forms. Useful rear/contact view, stable base, no attached huge trees or flowers; generic existing benches/urns excluded. FRAME ONLY with open empty centre; no screen/glass/bookcase/door/landscape fused inside. Separate insert masters are reused.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Garden and path furniture"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "WLD-GARDEN-SUPPORT-001-D05__orchid-hanging-basket-frame__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "WLD-GARDEN-SUPPORT-001-D06",
+      "name": "Plant label stake",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        1,
+        0.5,
+        1
+      ],
+      "function": "Missing planting/habitat support objects; aesthetic care props only, no service-room kit",
+      "construction": "One distinct human-scale plant label stake, ivory/rose/gold where formal garden and simple cedar for habitat forms. Useful rear/contact view, stable base, no attached huge trees or flowers; generic existing benches/urns excluded.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Garden and path furniture"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "WLD-GARDEN-SUPPORT-001-D06__plant-label-stake__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "WLD-GARDEN-SUPPORT-001-D07",
+      "name": "Low planter corner bracket",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        1,
+        0.5,
+        1
+      ],
+      "function": "Missing planting/habitat support objects; aesthetic care props only, no service-room kit",
+      "construction": "One distinct human-scale low planter corner bracket, ivory/rose/gold where formal garden and simple cedar for habitat forms. Useful rear/contact view, stable base, no attached huge trees or flowers; generic existing benches/urns excluded.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Garden and path furniture"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "WLD-GARDEN-SUPPORT-001-D07__low-planter-corner-bracket__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "WLD-GARDEN-SUPPORT-001-D08",
+      "name": "Flower stand tier",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        1,
+        0.5,
+        1
+      ],
+      "function": "Missing planting/habitat support objects; aesthetic care props only, no service-room kit",
+      "construction": "One distinct human-scale flower stand tier, ivory/rose/gold where formal garden and simple cedar for habitat forms. Useful rear/contact view, stable base, no attached huge trees or flowers; generic existing benches/urns excluded.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Garden and path furniture"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "WLD-GARDEN-SUPPORT-001-D08__flower-stand-tier__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "WLD-GARDEN-SUPPORT-001-D09",
+      "name": "Garden pruning display tool rack",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        1,
+        0.5,
+        1
+      ],
+      "function": "Missing planting/habitat support objects; aesthetic care props only, no service-room kit",
+      "construction": "One distinct human-scale garden pruning display tool rack, ivory/rose/gold where formal garden and simple cedar for habitat forms. Useful rear/contact view, stable base, no attached huge trees or flowers; generic existing benches/urns excluded.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Garden and path furniture"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "WLD-GARDEN-SUPPORT-001-D09__garden-pruning-display-tool-rack__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "WLD-GARDEN-SUPPORT-001-D10",
+      "name": "Wall flower vase bracket",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        1,
+        0.5,
+        1
+      ],
+      "function": "Missing planting/habitat support objects; aesthetic care props only, no service-room kit",
+      "construction": "One distinct human-scale wall flower vase bracket, ivory/rose/gold where formal garden and simple cedar for habitat forms. Useful rear/contact view, stable base, no attached huge trees or flowers; generic existing benches/urns excluded.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Garden and path furniture"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "WLD-GARDEN-SUPPORT-001-D10__wall-flower-vase-bracket__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "WLD-GARDEN-SUPPORT-001-D11",
+      "name": "Small watering can",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        1,
+        0.5,
+        1
+      ],
+      "function": "Missing planting/habitat support objects; aesthetic care props only, no service-room kit",
+      "construction": "One distinct human-scale small watering can, ivory/rose/gold where formal garden and simple cedar for habitat forms. Useful rear/contact view, stable base, no attached huge trees or flowers; generic existing benches/urns excluded.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Garden and path furniture"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "WLD-GARDEN-SUPPORT-001-D11__small-watering-can__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "WLD-GARDEN-SUPPORT-001-D12",
+      "name": "Seed display box",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        1,
+        0.5,
+        1
+      ],
+      "function": "Missing planting/habitat support objects; aesthetic care props only, no service-room kit",
+      "construction": "One distinct human-scale seed display box, ivory/rose/gold where formal garden and simple cedar for habitat forms. Useful rear/contact view, stable base, no attached huge trees or flowers; generic existing benches/urns excluded.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Garden and path furniture"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "WLD-GARDEN-SUPPORT-001-D12__seed-display-box__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    }
+  ]
+}

@@ -1,0 +1,136 @@
+{
+  "components": [
+    {
+      "asset_id": "T03-FAUNA-001-A01",
+      "name": "Gull",
+      "kind": "fauna-reference",
+      "dimensions_m_proposed": [
+        0.2,
+        0.5,
+        0.38
+      ],
+      "function": "Ordinary seaside species. Birds wingsfolded/twolegs; crabs coherent crustacean body and legs, one pair claws; hermitcrab one believable shell. No scene or decorative statues.",
+      "construction": "One isolated gull. Ordinary seaside species. Birds wingsfolded/twolegs; crabs coherent crustacean body and legs, one pair claws; hermitcrab one believable shell. No scene or decorative statues. Coherent actual silhouette, visible root/underside/side; no unrelated architecture/scenery attached. Other existing named species/forms must not be regenerated. Local material consistent with source. Dimensions are proposals to refine by subject.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Head +Y and Zup",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Coast, open sea and reefs"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "T03-FAUNA-001-A01__gull__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed",
+      "rig_status": "not-created",
+      "animation_status": "not-created",
+      "anatomy_verified": false
+    },
+    {
+      "asset_id": "T03-FAUNA-001-A02",
+      "name": "Sandpiper",
+      "kind": "fauna-reference",
+      "dimensions_m_proposed": [
+        0.08,
+        0.2,
+        0.14
+      ],
+      "function": "Ordinary seaside species. Birds wingsfolded/twolegs; crabs coherent crustacean body and legs, one pair claws; hermitcrab one believable shell. No scene or decorative statues.",
+      "construction": "One isolated sandpiper. Ordinary seaside species. Birds wingsfolded/twolegs; crabs coherent crustacean body and legs, one pair claws; hermitcrab one believable shell. No scene or decorative statues. Coherent actual silhouette, visible root/underside/side; no unrelated architecture/scenery attached. Other existing named species/forms must not be regenerated. Local material consistent with source. Dimensions are proposals to refine by subject.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Head +Y and Zup",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Coast, open sea and reefs"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "T03-FAUNA-001-A02__sandpiper__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed",
+      "rig_status": "not-created",
+      "animation_status": "not-created",
+      "anatomy_verified": false
+    },
+    {
+      "asset_id": "T03-FAUNA-001-A03",
+      "name": "Shore crab",
+      "kind": "fauna-reference",
+      "dimensions_m_proposed": [
+        0.25,
+        0.2,
+        0.1
+      ],
+      "function": "Ordinary seaside species. Birds wingsfolded/twolegs; crabs coherent crustacean body and legs, one pair claws; hermitcrab one believable shell. No scene or decorative statues.",
+      "construction": "One isolated shore crab. Ordinary seaside species. Birds wingsfolded/twolegs; crabs coherent crustacean body and legs, one pair claws; hermitcrab one believable shell. No scene or decorative statues. Coherent actual silhouette, visible root/underside/side; no unrelated architecture/scenery attached. Other existing named species/forms must not be regenerated. Local material consistent with source. Dimensions are proposals to refine by subject.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Head +Y and Zup",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Coast, open sea and reefs"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "T03-FAUNA-001-A03__shore-crab__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed",
+      "rig_status": "not-created",
+      "animation_status": "not-created",
+      "anatomy_verified": false
+    },
+    {
+      "asset_id": "T03-FAUNA-001-A04",
+      "name": "Small hermit crab",
+      "kind": "fauna-reference",
+      "dimensions_m_proposed": [
+        0.08,
+        0.1,
+        0.06
+      ],
+      "function": "Ordinary seaside species. Birds wingsfolded/twolegs; crabs coherent crustacean body and legs, one pair claws; hermitcrab one believable shell. No scene or decorative statues.",
+      "construction": "One isolated small hermit crab. Ordinary seaside species. Birds wingsfolded/twolegs; crabs coherent crustacean body and legs, one pair claws; hermitcrab one believable shell. No scene or decorative statues. Coherent actual silhouette, visible root/underside/side; no unrelated architecture/scenery attached. Other existing named species/forms must not be regenerated. Local material consistent with source. Dimensions are proposals to refine by subject.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Head +Y and Zup",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Coast, open sea and reefs"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "T03-FAUNA-001-A04__small-hermit-crab__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed",
+      "rig_status": "not-created",
+      "animation_status": "not-created",
+      "anatomy_verified": false
+    }
+  ]
+}

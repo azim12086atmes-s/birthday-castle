@@ -1,0 +1,124 @@
+{
+  "components": [
+    {
+      "asset_id": "B21-STRUCT-001-S01",
+      "name": "Clock drum facade",
+      "kind": "structural-section",
+      "dimensions_m_proposed": [
+        8,
+        6,
+        12
+      ],
+      "function": "Need curved wall/clock reveal host, balcony/stair return, dome/ring supports and rock-to-deck contacts. Clock/wave/metal ring vocabulary already present; rotating or illuminated behavior is separate optional work. Salt grasses/seaweed, seabirds/crabs/tide-pool fauna proposed; tide levels not solved. Provide missing isolated hosts and join views.",
+      "construction": "One isolated clock drum facade matching the supplied building, its roof/arch/wall silhouette and local materials. Show front and interior/rear/underside contact, not a complete building scene. Actual open column galleries and holes stay open. Extend hidden depth only enough to form a joinable section; no palace-wide plan or added unrelated tower.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B21"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B21-STRUCT-001-S01__clock-drum-facade__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "B21-STRUCT-001-S02",
+      "name": "Dome/armillary support",
+      "kind": "structural-section",
+      "dimensions_m_proposed": [
+        8,
+        6,
+        12
+      ],
+      "function": "Need curved wall/clock reveal host, balcony/stair return, dome/ring supports and rock-to-deck contacts. Clock/wave/metal ring vocabulary already present; rotating or illuminated behavior is separate optional work. Salt grasses/seaweed, seabirds/crabs/tide-pool fauna proposed; tide levels not solved. Provide missing isolated hosts and join views.",
+      "construction": "One isolated dome/armillary support matching the supplied building, its roof/arch/wall silhouette and local materials. Show front and interior/rear/underside contact, not a complete building scene. Actual open column galleries and holes stay open. Extend hidden depth only enough to form a joinable section; no palace-wide plan or added unrelated tower.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B21"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B21-STRUCT-001-S02__dome-armillary-support__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "B21-STRUCT-001-S03",
+      "name": "Wave balcony return",
+      "kind": "structural-section",
+      "dimensions_m_proposed": [
+        8,
+        6,
+        12
+      ],
+      "function": "Need curved wall/clock reveal host, balcony/stair return, dome/ring supports and rock-to-deck contacts. Clock/wave/metal ring vocabulary already present; rotating or illuminated behavior is separate optional work. Salt grasses/seaweed, seabirds/crabs/tide-pool fauna proposed; tide levels not solved. Provide missing isolated hosts and join views.",
+      "construction": "One isolated wave balcony return matching the supplied building, its roof/arch/wall silhouette and local materials. Show front and interior/rear/underside contact, not a complete building scene. Actual open column galleries and holes stay open. Extend hidden depth only enough to form a joinable section; no palace-wide plan or added unrelated tower.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B21"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B21-STRUCT-001-S03__wave-balcony-return__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "B21-STRUCT-001-S04",
+      "name": "Rock/stair entry",
+      "kind": "structural-section",
+      "dimensions_m_proposed": [
+        8,
+        6,
+        12
+      ],
+      "function": "Need curved wall/clock reveal host, balcony/stair return, dome/ring supports and rock-to-deck contacts. Clock/wave/metal ring vocabulary already present; rotating or illuminated behavior is separate optional work. Salt grasses/seaweed, seabirds/crabs/tide-pool fauna proposed; tide levels not solved. Provide missing isolated hosts and join views.",
+      "construction": "One isolated rock/stair entry matching the supplied building, its roof/arch/wall silhouette and local materials. Show front and interior/rear/underside contact, not a complete building scene. Actual open column galleries and holes stay open. Extend hidden depth only enough to form a joinable section; no palace-wide plan or added unrelated tower.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B21"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B21-STRUCT-001-S04__rock-stair-entry__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    }
+  ]
+}

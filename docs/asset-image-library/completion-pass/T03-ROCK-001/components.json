@@ -1,0 +1,124 @@
+{
+  "components": [
+    {
+      "asset_id": "T03-ROCK-001-A01",
+      "name": "Sea arch rock footing",
+      "kind": "natural-module",
+      "dimensions_m_proposed": [
+        4,
+        4,
+        2
+      ],
+      "function": "Missing isolated shore modules and rock contacts; irregular worn salt-rock forms with stable bases and no water mesh glued to them.",
+      "construction": "One isolated sea arch rock footing. Missing isolated shore modules and rock contacts; irregular worn salt-rock forms with stable bases and no water mesh glued to them. Coherent actual silhouette, visible root/underside/side; no unrelated architecture/scenery attached. Other existing named species/forms must not be regenerated. Local material consistent with source. Dimensions are proposals to refine by subject.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Coast, open sea and reefs"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "T03-ROCK-001-A01__sea-arch-rock-footing__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "T03-ROCK-001-A02",
+      "name": "Tidal platform rock shelf",
+      "kind": "natural-module",
+      "dimensions_m_proposed": [
+        4,
+        4,
+        2
+      ],
+      "function": "Missing isolated shore modules and rock contacts; irregular worn salt-rock forms with stable bases and no water mesh glued to them.",
+      "construction": "One isolated tidal platform rock shelf. Missing isolated shore modules and rock contacts; irregular worn salt-rock forms with stable bases and no water mesh glued to them. Coherent actual silhouette, visible root/underside/side; no unrelated architecture/scenery attached. Other existing named species/forms must not be regenerated. Local material consistent with source. Dimensions are proposals to refine by subject.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Coast, open sea and reefs"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "T03-ROCK-001-A02__tidal-platform-rock-shelf__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "T03-ROCK-001-A03",
+      "name": "Pebble cove bank return",
+      "kind": "natural-module",
+      "dimensions_m_proposed": [
+        4,
+        4,
+        2
+      ],
+      "function": "Missing isolated shore modules and rock contacts; irregular worn salt-rock forms with stable bases and no water mesh glued to them.",
+      "construction": "One isolated pebble cove bank return. Missing isolated shore modules and rock contacts; irregular worn salt-rock forms with stable bases and no water mesh glued to them. Coherent actual silhouette, visible root/underside/side; no unrelated architecture/scenery attached. Other existing named species/forms must not be regenerated. Local material consistent with source. Dimensions are proposals to refine by subject.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Coast, open sea and reefs"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "T03-ROCK-001-A03__pebble-cove-bank-return__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "T03-ROCK-001-A04",
+      "name": "Reef stone ledge",
+      "kind": "natural-module",
+      "dimensions_m_proposed": [
+        4,
+        4,
+        2
+      ],
+      "function": "Missing isolated shore modules and rock contacts; irregular worn salt-rock forms with stable bases and no water mesh glued to them.",
+      "construction": "One isolated reef stone ledge. Missing isolated shore modules and rock contacts; irregular worn salt-rock forms with stable bases and no water mesh glued to them. Coherent actual silhouette, visible root/underside/side; no unrelated architecture/scenery attached. Other existing named species/forms must not be regenerated. Local material consistent with source. Dimensions are proposals to refine by subject.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Coast, open sea and reefs"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "T03-ROCK-001-A04__reef-stone-ledge__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    }
+  ]
+}

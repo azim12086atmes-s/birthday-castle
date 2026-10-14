@@ -1,0 +1,124 @@
+{
+  "components": [
+    {
+      "asset_id": "PAL-TERRACE-STAIR-JOIN-001-S01",
+      "name": "Straight wing stair landing pair",
+      "kind": "structural-section",
+      "dimensions_m_proposed": [
+        10,
+        8,
+        6
+      ],
+      "function": "Missing connections between original stepped wings/roof courts; do not change front fountain/stair layout",
+      "construction": "One isolated straight wing stair landing pair with ivory/rose steps, true flight/landing depth, simple source gold edge profiles, parapet decor removable. Equal proposed risers, clear passage and underside, planar joining faces. No cascade or new main entrance layout.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Stairs, fountains, terraces and courtyards"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "PAL-TERRACE-STAIR-JOIN-001-S01__straight-wing-stair-landing-pair__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "PAL-TERRACE-STAIR-JOIN-001-S02",
+      "name": "Quarter turn stair landing",
+      "kind": "structural-section",
+      "dimensions_m_proposed": [
+        10,
+        8,
+        6
+      ],
+      "function": "Missing connections between original stepped wings/roof courts; do not change front fountain/stair layout",
+      "construction": "One isolated quarter turn stair landing with ivory/rose steps, true flight/landing depth, simple source gold edge profiles, parapet decor removable. Equal proposed risers, clear passage and underside, planar joining faces. No cascade or new main entrance layout.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Stairs, fountains, terraces and courtyards"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "PAL-TERRACE-STAIR-JOIN-001-S02__quarter-turn-stair-landing__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "PAL-TERRACE-STAIR-JOIN-001-S03",
+      "name": "Split terrace stair return",
+      "kind": "structural-section",
+      "dimensions_m_proposed": [
+        10,
+        8,
+        6
+      ],
+      "function": "Missing connections between original stepped wings/roof courts; do not change front fountain/stair layout",
+      "construction": "One isolated split terrace stair return with ivory/rose steps, true flight/landing depth, simple source gold edge profiles, parapet decor removable. Equal proposed risers, clear passage and underside, planar joining faces. No cascade or new main entrance layout.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Stairs, fountains, terraces and courtyards"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "PAL-TERRACE-STAIR-JOIN-001-S03__split-terrace-stair-return__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "PAL-TERRACE-STAIR-JOIN-001-S04",
+      "name": "Stair to curved terrace threshold",
+      "kind": "structural-section",
+      "dimensions_m_proposed": [
+        10,
+        8,
+        6
+      ],
+      "function": "Missing connections between original stepped wings/roof courts; do not change front fountain/stair layout",
+      "construction": "One isolated stair to curved terrace threshold with ivory/rose steps, true flight/landing depth, simple source gold edge profiles, parapet decor removable. Equal proposed risers, clear passage and underside, planar joining faces. No cascade or new main entrance layout.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Stairs, fountains, terraces and courtyards"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "PAL-TERRACE-STAIR-JOIN-001-S04__stair-to-curved-terrace-threshold__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    }
+  ]
+}

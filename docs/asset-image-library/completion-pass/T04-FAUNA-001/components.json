@@ -1,0 +1,136 @@
+{
+  "components": [
+    {
+      "asset_id": "T04-FAUNA-001-A01",
+      "name": "Small toucan",
+      "kind": "fauna-reference",
+      "dimensions_m_proposed": [
+        0.2,
+        0.45,
+        0.35
+      ],
+      "function": "New distinct tropical forms. Bird twowings/twolegs and coherent bigbeak, gecko fourlegs/fivetoes/onetail, frog fourlegs, beetle sixlegs/twoantennae. No jewelry or fused branch/pedestal.",
+      "construction": "One isolated small toucan. New distinct tropical forms. Bird twowings/twolegs and coherent bigbeak, gecko fourlegs/fivetoes/onetail, frog fourlegs, beetle sixlegs/twoantennae. No jewelry or fused branch/pedestal. Coherent actual silhouette, visible root/underside/side; no unrelated architecture/scenery attached. Other existing named species/forms must not be regenerated. Local material consistent with source. Dimensions are proposals to refine by subject.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Head +Y and Zup",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Jade jungle and wetlands"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "T04-FAUNA-001-A01__small-toucan__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed",
+      "rig_status": "not-created",
+      "animation_status": "not-created",
+      "anatomy_verified": false
+    },
+    {
+      "asset_id": "T04-FAUNA-001-A02",
+      "name": "Jungle gecko",
+      "kind": "fauna-reference",
+      "dimensions_m_proposed": [
+        0.06,
+        0.22,
+        0.06
+      ],
+      "function": "New distinct tropical forms. Bird twowings/twolegs and coherent bigbeak, gecko fourlegs/fivetoes/onetail, frog fourlegs, beetle sixlegs/twoantennae. No jewelry or fused branch/pedestal.",
+      "construction": "One isolated jungle gecko. New distinct tropical forms. Bird twowings/twolegs and coherent bigbeak, gecko fourlegs/fivetoes/onetail, frog fourlegs, beetle sixlegs/twoantennae. No jewelry or fused branch/pedestal. Coherent actual silhouette, visible root/underside/side; no unrelated architecture/scenery attached. Other existing named species/forms must not be regenerated. Local material consistent with source. Dimensions are proposals to refine by subject.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Head +Y and Zup",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Jade jungle and wetlands"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "T04-FAUNA-001-A02__jungle-gecko__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed",
+      "rig_status": "not-created",
+      "animation_status": "not-created",
+      "anatomy_verified": false
+    },
+    {
+      "asset_id": "T04-FAUNA-001-A03",
+      "name": "Green tree frog",
+      "kind": "fauna-reference",
+      "dimensions_m_proposed": [
+        0.06,
+        0.08,
+        0.06
+      ],
+      "function": "New distinct tropical forms. Bird twowings/twolegs and coherent bigbeak, gecko fourlegs/fivetoes/onetail, frog fourlegs, beetle sixlegs/twoantennae. No jewelry or fused branch/pedestal.",
+      "construction": "One isolated green tree frog. New distinct tropical forms. Bird twowings/twolegs and coherent bigbeak, gecko fourlegs/fivetoes/onetail, frog fourlegs, beetle sixlegs/twoantennae. No jewelry or fused branch/pedestal. Coherent actual silhouette, visible root/underside/side; no unrelated architecture/scenery attached. Other existing named species/forms must not be regenerated. Local material consistent with source. Dimensions are proposals to refine by subject.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Head +Y and Zup",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Jade jungle and wetlands"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "T04-FAUNA-001-A03__green-tree-frog__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed",
+      "rig_status": "not-created",
+      "animation_status": "not-created",
+      "anatomy_verified": false
+    },
+    {
+      "asset_id": "T04-FAUNA-001-A04",
+      "name": "Large leaf beetle",
+      "kind": "fauna-reference",
+      "dimensions_m_proposed": [
+        0.05,
+        0.07,
+        0.025
+      ],
+      "function": "New distinct tropical forms. Bird twowings/twolegs and coherent bigbeak, gecko fourlegs/fivetoes/onetail, frog fourlegs, beetle sixlegs/twoantennae. No jewelry or fused branch/pedestal.",
+      "construction": "One isolated large leaf beetle. New distinct tropical forms. Bird twowings/twolegs and coherent bigbeak, gecko fourlegs/fivetoes/onetail, frog fourlegs, beetle sixlegs/twoantennae. No jewelry or fused branch/pedestal. Coherent actual silhouette, visible root/underside/side; no unrelated architecture/scenery attached. Other existing named species/forms must not be regenerated. Local material consistent with source. Dimensions are proposals to refine by subject.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Head +Y and Zup",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Jade jungle and wetlands"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "T04-FAUNA-001-A04__large-leaf-beetle__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed",
+      "rig_status": "not-created",
+      "animation_status": "not-created",
+      "anatomy_verified": false
+    }
+  ]
+}

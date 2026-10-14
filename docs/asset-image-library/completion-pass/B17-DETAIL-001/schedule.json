@@ -1,0 +1,381 @@
+{
+  "sheet_id": "B17-DETAIL-001",
+  "name": "Glowwood Ruin Court \u2014 surface and detail kit",
+  "owner": "other-map-buildings",
+  "family": "B17",
+  "location_id": "B17",
+  "source_reference_id": "SRC-LOC-B17-GEN-06",
+  "source_reference_file": "world-layout/location-audit/source/B17-GEN-06.png",
+  "source_reference_sha256": "23df6e3a42ee973a5958aaa76a1a4ae5f0d13e651bece4c453c84e26cd8a937c",
+  "prompt": "Create ONE clean detailed GAME ASSET REFERENCE SHEET, NOT Blender or a3Dmodel. Plain light ivory studio background, soft even light, full uncropped separate objects, readable thickness, precise non-melting forms. FULL IDs and names outside silhouettes, dimensions marked PROPOSED. Each cell independent illustration scale. No environment scenery, humans, extra unlabeled objects, watermark or whole-palace redesign. Use ONLY the single supplied source image for visible style/material/form authority; infer missing backs and assembly interfaces conservatively. Source illustration motifs are inspiration, not recovered measured geometry. Visible source facts: Aged pointed-arch ruin court with broken tower/arch tops, roots and moss climbing stone, pale lilac/blue crystal clusters, star niches and a purple suspended star beneath the main arch. Open voids remain between walls; source is not a sealed chapel. Hidden layout inference: A woodland path crosses a small stone circle into the open court, passes a central wishing/crystal focus, then exits through a broken side arch into a grove. Leave roof absent and preserve framed sky/tree views. Keep vegetation at boundaries so broken edges and routes remain legible. Preserve this local design. Exactly12 isolated main components in a clean4-column grid. No missing/empty slots or repeated subjects counted twice. One clear front/three-quarter view with useful small rear/top/contact inset per cell. Truly flat backs for appliques, square join ends for repeat mouldings. Screens have repeated coherent holes, no tangled tendrils. Windows separate glass from surrounds, cornices/parapets and posts separate where named. Do not include large room/scenery fragments attached to a tiny detail. Title \"B17-DETAIL-001 \u2014 Glowwood Ruin Court \u2014 surface and detail kit\". Footer \"Proposed construction / source-compatible references / mesh joins and views unverified\".\n\nPurpose/gap: Need broken-wall/arch foot/return variants and root-to-stone attachment views, not another intact Gothic church. Reuse existing crystal/wish-star and moss/fern families after identity check. Suspension of star is unresolved or explicitly magical; owl/moths and possible firefly effects proposed. Missing detached construction pieces and local interior-facing patterns.\n\nB17-DETAIL-001-D01 \u2014 Broken arch edge stone. Dimensions W,D,H [1.5, 0.15, 1.5]m proposed. One isolated broken arch edge stone, strictly follow local source colour/material/motif instead of universal pink marble. Show real depth, flat back/host contact or one consistent repeat profile. Existing generic lanterns/flowers/benches reused; only named local fittings. No merged wall scene attached to small detail.\n\nB17-DETAIL-001-D02 \u2014 Ruined pointed window surround. Dimensions W,D,H [1.5, 0.15, 1.5]m proposed. One isolated ruined pointed window surround, strictly follow local source colour/material/motif instead of universal pink marble. Show real depth, flat back/host contact or one consistent repeat profile. Existing generic lanterns/flowers/benches reused; only named local fittings. No merged wall scene attached to small detail.\n\nB17-DETAIL-001-D03 \u2014 Root embraced column cap. Dimensions W,D,H [1.5, 0.15, 1.5]m proposed. One isolated root embraced column cap, strictly follow local source colour/material/motif instead of universal pink marble. Show real depth, flat back/host contact or one consistent repeat profile. Existing generic lanterns/flowers/benches reused; only named local fittings. No merged wall scene attached to small detail.\n\nB17-DETAIL-001-D04 \u2014 Missing wall course end. Dimensions W,D,H [1.5, 0.15, 1.5]m proposed. One isolated missing wall course end, strictly follow local source colour/material/motif instead of universal pink marble. Show real depth, flat back/host contact or one consistent repeat profile. Existing generic lanterns/flowers/benches reused; only named local fittings. No merged wall scene attached to small detail.\n\nB17-DETAIL-001-D05 \u2014 Moon crystal setting. Dimensions W,D,H [1.5, 0.15, 1.5]m proposed. One isolated moon crystal setting, strictly follow local source colour/material/motif instead of universal pink marble. Show real depth, flat back/host contact or one consistent repeat profile. Existing generic lanterns/flowers/benches reused; only named local fittings. No merged wall scene attached to small detail.\n\nB17-DETAIL-001-D06 \u2014 Hanging purple wish star mount. Dimensions W,D,H [0.2, 0.12, 0.25]m proposed. One isolated hanging purple wish star mount, strictly follow local source colour/material/motif instead of universal pink marble. Show real depth, flat back/host contact or one consistent repeat profile. Existing generic lanterns/flowers/benches reused; only named local fittings. No merged wall scene attached to small detail.\n\nB17-DETAIL-001-D07 \u2014 Moss floor tile edge. Dimensions W,D,H [1.5, 1.5, 0.12]m proposed. One isolated moss floor tile edge, strictly follow local source colour/material/motif instead of universal pink marble. Show real depth, flat back/host contact or one consistent repeat profile. Existing generic lanterns/flowers/benches reused; only named local fittings. No merged wall scene attached to small detail.\n\nB17-DETAIL-001-D08 \u2014 Ruined court parapet fragment. Dimensions W,D,H [1.5, 0.15, 1.5]m proposed. One isolated ruined court parapet fragment, strictly follow local source colour/material/motif instead of universal pink marble. Show real depth, flat back/host contact or one consistent repeat profile. Existing generic lanterns/flowers/benches reused; only named local fittings. No merged wall scene attached to small detail.\n\nB17-DETAIL-001-D09 \u2014 Root trellis arch joint. Dimensions W,D,H [1.5, 0.15, 1.5]m proposed. One isolated root trellis arch joint, strictly follow local source colour/material/motif instead of universal pink marble. Show real depth, flat back/host contact or one consistent repeat profile. Existing generic lanterns/flowers/benches reused; only named local fittings. No merged wall scene attached to small detail.\n\nB17-DETAIL-001-D10 \u2014 Open court niche relief. Dimensions W,D,H [1.5, 0.15, 1.5]m proposed. One isolated open court niche relief, strictly follow local source colour/material/motif instead of universal pink marble. Show real depth, flat back/host contact or one consistent repeat profile. Existing generic lanterns/flowers/benches reused; only named local fittings. No merged wall scene attached to small detail.\n\nB17-DETAIL-001-D11 \u2014 Stone threshold fragment. Dimensions W,D,H [1.5, 0.15, 1.5]m proposed. One isolated stone threshold fragment, strictly follow local source colour/material/motif instead of universal pink marble. Show real depth, flat back/host contact or one consistent repeat profile. Existing generic lanterns/flowers/benches reused; only named local fittings. No merged wall scene attached to small detail.\n\nB17-DETAIL-001-D12 \u2014 Small lantern seat. Dimensions W,D,H [1.5, 0.15, 1.5]m proposed. One isolated small lantern seat, strictly follow local source colour/material/motif instead of universal pink marble. Show real depth, flat back/host contact or one consistent repeat profile. Existing generic lanterns/flowers/benches reused; only named local fittings. No merged wall scene attached to small detail.\n\nCRITICAL part isolation and orientation rules:\nB17-DETAIL-001-D06: SMALL attachment hardware only: plate/socket/hook/joint with its own hole/root and source-compatible quiet ornament. No lantern body, full arch, whole column, complete door, garden or giant architectural scene glued to it.\nB17-DETAIL-001-D07: This is a FLAT FLOOR piece, not a hanging wall plaque or raised flower sculpture. Show top pattern and a thin edge profile; relief remains shallow enough to walk across.",
+  "parts": [
+    {
+      "asset_id": "B17-DETAIL-001-D01",
+      "name": "Broken arch edge stone",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        1.5,
+        0.15,
+        1.5
+      ],
+      "function": "Need broken-wall/arch foot/return variants and root-to-stone attachment views, not another intact Gothic church. Reuse existing crystal/wish-star and moss/fern families after identity check. Suspension of star is unresolved or explicitly magical; owl/moths and possible firefly effects proposed. Missing detached construction pieces and local interior-facing patterns.",
+      "construction": "One isolated broken arch edge stone, strictly follow local source colour/material/motif instead of universal pink marble. Show real depth, flat back/host contact or one consistent repeat profile. Existing generic lanterns/flowers/benches reused; only named local fittings. No merged wall scene attached to small detail.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B17"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B17-DETAIL-001-D01__broken-arch-edge-stone__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "B17-DETAIL-001-D02",
+      "name": "Ruined pointed window surround",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        1.5,
+        0.15,
+        1.5
+      ],
+      "function": "Need broken-wall/arch foot/return variants and root-to-stone attachment views, not another intact Gothic church. Reuse existing crystal/wish-star and moss/fern families after identity check. Suspension of star is unresolved or explicitly magical; owl/moths and possible firefly effects proposed. Missing detached construction pieces and local interior-facing patterns.",
+      "construction": "One isolated ruined pointed window surround, strictly follow local source colour/material/motif instead of universal pink marble. Show real depth, flat back/host contact or one consistent repeat profile. Existing generic lanterns/flowers/benches reused; only named local fittings. No merged wall scene attached to small detail.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B17"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B17-DETAIL-001-D02__ruined-pointed-window-surround__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "B17-DETAIL-001-D03",
+      "name": "Root embraced column cap",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        1.5,
+        0.15,
+        1.5
+      ],
+      "function": "Need broken-wall/arch foot/return variants and root-to-stone attachment views, not another intact Gothic church. Reuse existing crystal/wish-star and moss/fern families after identity check. Suspension of star is unresolved or explicitly magical; owl/moths and possible firefly effects proposed. Missing detached construction pieces and local interior-facing patterns.",
+      "construction": "One isolated root embraced column cap, strictly follow local source colour/material/motif instead of universal pink marble. Show real depth, flat back/host contact or one consistent repeat profile. Existing generic lanterns/flowers/benches reused; only named local fittings. No merged wall scene attached to small detail.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B17"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B17-DETAIL-001-D03__root-embraced-column-cap__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "B17-DETAIL-001-D04",
+      "name": "Missing wall course end",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        1.5,
+        0.15,
+        1.5
+      ],
+      "function": "Need broken-wall/arch foot/return variants and root-to-stone attachment views, not another intact Gothic church. Reuse existing crystal/wish-star and moss/fern families after identity check. Suspension of star is unresolved or explicitly magical; owl/moths and possible firefly effects proposed. Missing detached construction pieces and local interior-facing patterns.",
+      "construction": "One isolated missing wall course end, strictly follow local source colour/material/motif instead of universal pink marble. Show real depth, flat back/host contact or one consistent repeat profile. Existing generic lanterns/flowers/benches reused; only named local fittings. No merged wall scene attached to small detail.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B17"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B17-DETAIL-001-D04__missing-wall-course-end__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "B17-DETAIL-001-D05",
+      "name": "Moon crystal setting",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        1.5,
+        0.15,
+        1.5
+      ],
+      "function": "Need broken-wall/arch foot/return variants and root-to-stone attachment views, not another intact Gothic church. Reuse existing crystal/wish-star and moss/fern families after identity check. Suspension of star is unresolved or explicitly magical; owl/moths and possible firefly effects proposed. Missing detached construction pieces and local interior-facing patterns.",
+      "construction": "One isolated moon crystal setting, strictly follow local source colour/material/motif instead of universal pink marble. Show real depth, flat back/host contact or one consistent repeat profile. Existing generic lanterns/flowers/benches reused; only named local fittings. No merged wall scene attached to small detail.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B17"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B17-DETAIL-001-D05__moon-crystal-setting__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "B17-DETAIL-001-D06",
+      "name": "Hanging purple wish star mount",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        0.2,
+        0.12,
+        0.25
+      ],
+      "function": "Need broken-wall/arch foot/return variants and root-to-stone attachment views, not another intact Gothic church. Reuse existing crystal/wish-star and moss/fern families after identity check. Suspension of star is unresolved or explicitly magical; owl/moths and possible firefly effects proposed. Missing detached construction pieces and local interior-facing patterns.",
+      "construction": "One isolated hanging purple wish star mount, strictly follow local source colour/material/motif instead of universal pink marble. Show real depth, flat back/host contact or one consistent repeat profile. Existing generic lanterns/flowers/benches reused; only named local fittings. No merged wall scene attached to small detail. SMALL attachment hardware only: plate/socket/hook/joint with its own hole/root and source-compatible quiet ornament. No lantern body, full arch, whole column, complete door, garden or giant architectural scene glued to it.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B17"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B17-DETAIL-001-D06__hanging-purple-wish-star-mount__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "B17-DETAIL-001-D07",
+      "name": "Moss floor tile edge",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        1.5,
+        1.5,
+        0.12
+      ],
+      "function": "Need broken-wall/arch foot/return variants and root-to-stone attachment views, not another intact Gothic church. Reuse existing crystal/wish-star and moss/fern families after identity check. Suspension of star is unresolved or explicitly magical; owl/moths and possible firefly effects proposed. Missing detached construction pieces and local interior-facing patterns.",
+      "construction": "One isolated moss floor tile edge, strictly follow local source colour/material/motif instead of universal pink marble. Show real depth, flat back/host contact or one consistent repeat profile. Existing generic lanterns/flowers/benches reused; only named local fittings. No merged wall scene attached to small detail. This is a FLAT FLOOR piece, not a hanging wall plaque or raised flower sculpture. Show top pattern and a thin edge profile; relief remains shallow enough to walk across.",
+      "attachment_face": "Broad flat underside to floor, shortest dimension vertical Z",
+      "semantic_front": "Decorated broad face up +Z",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B17"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B17-DETAIL-001-D07__moss-floor-tile-edge__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "B17-DETAIL-001-D08",
+      "name": "Ruined court parapet fragment",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        1.5,
+        0.15,
+        1.5
+      ],
+      "function": "Need broken-wall/arch foot/return variants and root-to-stone attachment views, not another intact Gothic church. Reuse existing crystal/wish-star and moss/fern families after identity check. Suspension of star is unresolved or explicitly magical; owl/moths and possible firefly effects proposed. Missing detached construction pieces and local interior-facing patterns.",
+      "construction": "One isolated ruined court parapet fragment, strictly follow local source colour/material/motif instead of universal pink marble. Show real depth, flat back/host contact or one consistent repeat profile. Existing generic lanterns/flowers/benches reused; only named local fittings. No merged wall scene attached to small detail.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B17"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B17-DETAIL-001-D08__ruined-court-parapet-fragment__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "B17-DETAIL-001-D09",
+      "name": "Root trellis arch joint",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        1.5,
+        0.15,
+        1.5
+      ],
+      "function": "Need broken-wall/arch foot/return variants and root-to-stone attachment views, not another intact Gothic church. Reuse existing crystal/wish-star and moss/fern families after identity check. Suspension of star is unresolved or explicitly magical; owl/moths and possible firefly effects proposed. Missing detached construction pieces and local interior-facing patterns.",
+      "construction": "One isolated root trellis arch joint, strictly follow local source colour/material/motif instead of universal pink marble. Show real depth, flat back/host contact or one consistent repeat profile. Existing generic lanterns/flowers/benches reused; only named local fittings. No merged wall scene attached to small detail.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B17"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B17-DETAIL-001-D09__root-trellis-arch-joint__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "B17-DETAIL-001-D10",
+      "name": "Open court niche relief",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        1.5,
+        0.15,
+        1.5
+      ],
+      "function": "Need broken-wall/arch foot/return variants and root-to-stone attachment views, not another intact Gothic church. Reuse existing crystal/wish-star and moss/fern families after identity check. Suspension of star is unresolved or explicitly magical; owl/moths and possible firefly effects proposed. Missing detached construction pieces and local interior-facing patterns.",
+      "construction": "One isolated open court niche relief, strictly follow local source colour/material/motif instead of universal pink marble. Show real depth, flat back/host contact or one consistent repeat profile. Existing generic lanterns/flowers/benches reused; only named local fittings. No merged wall scene attached to small detail.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B17"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B17-DETAIL-001-D10__open-court-niche-relief__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "B17-DETAIL-001-D11",
+      "name": "Stone threshold fragment",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        1.5,
+        0.15,
+        1.5
+      ],
+      "function": "Need broken-wall/arch foot/return variants and root-to-stone attachment views, not another intact Gothic church. Reuse existing crystal/wish-star and moss/fern families after identity check. Suspension of star is unresolved or explicitly magical; owl/moths and possible firefly effects proposed. Missing detached construction pieces and local interior-facing patterns.",
+      "construction": "One isolated stone threshold fragment, strictly follow local source colour/material/motif instead of universal pink marble. Show real depth, flat back/host contact or one consistent repeat profile. Existing generic lanterns/flowers/benches reused; only named local fittings. No merged wall scene attached to small detail.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B17"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B17-DETAIL-001-D11__stone-threshold-fragment__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "B17-DETAIL-001-D12",
+      "name": "Small lantern seat",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        1.5,
+        0.15,
+        1.5
+      ],
+      "function": "Need broken-wall/arch foot/return variants and root-to-stone attachment views, not another intact Gothic church. Reuse existing crystal/wish-star and moss/fern families after identity check. Suspension of star is unresolved or explicitly magical; owl/moths and possible firefly effects proposed. Missing detached construction pieces and local interior-facing patterns.",
+      "construction": "One isolated small lantern seat, strictly follow local source colour/material/motif instead of universal pink marble. Show real depth, flat back/host contact or one consistent repeat profile. Existing generic lanterns/flowers/benches reused; only named local fittings. No merged wall scene attached to small detail.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B17"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B17-DETAIL-001-D12__small-lantern-seat__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    }
+  ],
+  "outputs": [],
+  "previous_attempts": [],
+  "models_generated": 0,
+  "physical_join_fit_verified": false,
+  "view_geometry_parity_verified": false,
+  "review_status": "planned-after-gap-audit",
+  "gap": "Need broken-wall/arch foot/return variants and root-to-stone attachment views, not another intact Gothic church. Reuse existing crystal/wish-star and moss/fern families after identity check. Suspension of star is unresolved or explicitly magical; owl/moths and possible firefly effects proposed. Missing detached construction pieces and local interior-facing patterns.",
+  "mode": "detail"
+}

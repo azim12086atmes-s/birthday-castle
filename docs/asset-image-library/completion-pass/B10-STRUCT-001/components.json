@@ -1,0 +1,124 @@
+{
+  "components": [
+    {
+      "asset_id": "B10-STRUCT-001-S01",
+      "name": "Cliff-embedded wall",
+      "kind": "structural-section",
+      "dimensions_m_proposed": [
+        8,
+        6,
+        12
+      ],
+      "function": "Need cliff-embedded wall/round-tower hosts, moon-screen support/reveal, terrace/stair cutback and ghat/water-outlet junctions. Existing turquoise scale tiles, banners and moon lattice should be extracted. Dry shrubs/lizards plus palms/flowers near water; shared cliff/water families. Provide missing isolated hosts and join views.",
+      "construction": "One isolated cliff-embedded wall matching the supplied building, its roof/arch/wall silhouette and local materials. Show front and interior/rear/underside contact, not a complete building scene. Actual open column galleries and holes stay open. Extend hidden depth only enough to form a joinable section; no palace-wide plan or added unrelated tower.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B10"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B10-STRUCT-001-S01__cliff-embedded-wall__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "B10-STRUCT-001-S02",
+      "name": "Round dome-tower host",
+      "kind": "structural-section",
+      "dimensions_m_proposed": [
+        8,
+        6,
+        12
+      ],
+      "function": "Need cliff-embedded wall/round-tower hosts, moon-screen support/reveal, terrace/stair cutback and ghat/water-outlet junctions. Existing turquoise scale tiles, banners and moon lattice should be extracted. Dry shrubs/lizards plus palms/flowers near water; shared cliff/water families. Provide missing isolated hosts and join views.",
+      "construction": "One isolated round dome-tower host matching the supplied building, its roof/arch/wall silhouette and local materials. Show front and interior/rear/underside contact, not a complete building scene. Actual open column galleries and holes stay open. Extend hidden depth only enough to form a joinable section; no palace-wide plan or added unrelated tower.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B10"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B10-STRUCT-001-S02__round-dome-tower-host__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "B10-STRUCT-001-S03",
+      "name": "Moon-screen entry support",
+      "kind": "structural-section",
+      "dimensions_m_proposed": [
+        8,
+        6,
+        12
+      ],
+      "function": "Need cliff-embedded wall/round-tower hosts, moon-screen support/reveal, terrace/stair cutback and ghat/water-outlet junctions. Existing turquoise scale tiles, banners and moon lattice should be extracted. Dry shrubs/lizards plus palms/flowers near water; shared cliff/water families. Provide missing isolated hosts and join views.",
+      "construction": "One isolated moon-screen entry support matching the supplied building, its roof/arch/wall silhouette and local materials. Show front and interior/rear/underside contact, not a complete building scene. Actual open column galleries and holes stay open. Extend hidden depth only enough to form a joinable section; no palace-wide plan or added unrelated tower.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B10"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B10-STRUCT-001-S03__moon-screen-entry-support__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "B10-STRUCT-001-S04",
+      "name": "Terrace/ghat return",
+      "kind": "structural-section",
+      "dimensions_m_proposed": [
+        8,
+        6,
+        12
+      ],
+      "function": "Need cliff-embedded wall/round-tower hosts, moon-screen support/reveal, terrace/stair cutback and ghat/water-outlet junctions. Existing turquoise scale tiles, banners and moon lattice should be extracted. Dry shrubs/lizards plus palms/flowers near water; shared cliff/water families. Provide missing isolated hosts and join views.",
+      "construction": "One isolated terrace/ghat return matching the supplied building, its roof/arch/wall silhouette and local materials. Show front and interior/rear/underside contact, not a complete building scene. Actual open column galleries and holes stay open. Extend hidden depth only enough to form a joinable section; no palace-wide plan or added unrelated tower.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B10"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B10-STRUCT-001-S04__terrace-ghat-return__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    }
+  ]
+}

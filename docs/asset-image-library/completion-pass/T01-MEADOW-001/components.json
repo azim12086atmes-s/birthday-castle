@@ -1,0 +1,184 @@
+{
+  "components": [
+    {
+      "asset_id": "T01-MEADOW-001-A01",
+      "name": "Lavender shrub",
+      "kind": "flora-reference",
+      "dimensions_m_proposed": [
+        0.7,
+        0.7,
+        1
+      ],
+      "function": "Missing distinctflower forms beyond existinggenericflowerdrifts/bluebells/roses; wholecoherentplants, readableleaf/flowerinsets, naturalroot foot.",
+      "construction": "One isolated lavender shrub. Missing distinctflower forms beyond existinggenericflowerdrifts/bluebells/roses; wholecoherentplants, readableleaf/flowerinsets, naturalroot foot. Coherent actual silhouette, visible root/underside/side; no unrelated architecture/scenery attached. Other existing named species/forms must not be regenerated. Local material consistent with source. Dimensions are proposals to refine by subject.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Palace grounds and rose gardens"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "T01-MEADOW-001-A01__lavender-shrub__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "T01-MEADOW-001-A02",
+      "name": "White clover clump",
+      "kind": "flora-reference",
+      "dimensions_m_proposed": [
+        0.7,
+        0.7,
+        1
+      ],
+      "function": "Missing distinctflower forms beyond existinggenericflowerdrifts/bluebells/roses; wholecoherentplants, readableleaf/flowerinsets, naturalroot foot.",
+      "construction": "One isolated white clover clump. Missing distinctflower forms beyond existinggenericflowerdrifts/bluebells/roses; wholecoherentplants, readableleaf/flowerinsets, naturalroot foot. Coherent actual silhouette, visible root/underside/side; no unrelated architecture/scenery attached. Other existing named species/forms must not be regenerated. Local material consistent with source. Dimensions are proposals to refine by subject.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Palace grounds and rose gardens"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "T01-MEADOW-001-A02__white-clover-clump__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "T01-MEADOW-001-A03",
+      "name": "Daisy flower clump",
+      "kind": "flora-reference",
+      "dimensions_m_proposed": [
+        0.7,
+        0.7,
+        1
+      ],
+      "function": "Missing distinctflower forms beyond existinggenericflowerdrifts/bluebells/roses; wholecoherentplants, readableleaf/flowerinsets, naturalroot foot.",
+      "construction": "One isolated daisy flower clump. Missing distinctflower forms beyond existinggenericflowerdrifts/bluebells/roses; wholecoherentplants, readableleaf/flowerinsets, naturalroot foot. Coherent actual silhouette, visible root/underside/side; no unrelated architecture/scenery attached. Other existing named species/forms must not be regenerated. Local material consistent with source. Dimensions are proposals to refine by subject.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Palace grounds and rose gardens"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "T01-MEADOW-001-A03__daisy-flower-clump__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "T01-MEADOW-001-A04",
+      "name": "Pink foxglove plant",
+      "kind": "flora-reference",
+      "dimensions_m_proposed": [
+        0.7,
+        0.7,
+        1
+      ],
+      "function": "Missing distinctflower forms beyond existinggenericflowerdrifts/bluebells/roses; wholecoherentplants, readableleaf/flowerinsets, naturalroot foot.",
+      "construction": "One isolated pink foxglove plant. Missing distinctflower forms beyond existinggenericflowerdrifts/bluebells/roses; wholecoherentplants, readableleaf/flowerinsets, naturalroot foot. Coherent actual silhouette, visible root/underside/side; no unrelated architecture/scenery attached. Other existing named species/forms must not be regenerated. Local material consistent with source. Dimensions are proposals to refine by subject.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Palace grounds and rose gardens"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "T01-MEADOW-001-A04__pink-foxglove-plant__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "T01-MEADOW-001-A05",
+      "name": "Yellow yarrow clump",
+      "kind": "flora-reference",
+      "dimensions_m_proposed": [
+        0.7,
+        0.7,
+        1
+      ],
+      "function": "Missing distinctflower forms beyond existinggenericflowerdrifts/bluebells/roses; wholecoherentplants, readableleaf/flowerinsets, naturalroot foot.",
+      "construction": "One isolated yellow yarrow clump. Missing distinctflower forms beyond existinggenericflowerdrifts/bluebells/roses; wholecoherentplants, readableleaf/flowerinsets, naturalroot foot. Coherent actual silhouette, visible root/underside/side; no unrelated architecture/scenery attached. Other existing named species/forms must not be regenerated. Local material consistent with source. Dimensions are proposals to refine by subject.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Palace grounds and rose gardens"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "T01-MEADOW-001-A05__yellow-yarrow-clump__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "T01-MEADOW-001-A06",
+      "name": "Purple iris plant",
+      "kind": "flora-reference",
+      "dimensions_m_proposed": [
+        0.7,
+        0.7,
+        1
+      ],
+      "function": "Missing distinctflower forms beyond existinggenericflowerdrifts/bluebells/roses; wholecoherentplants, readableleaf/flowerinsets, naturalroot foot.",
+      "construction": "One isolated purple iris plant. Missing distinctflower forms beyond existinggenericflowerdrifts/bluebells/roses; wholecoherentplants, readableleaf/flowerinsets, naturalroot foot. Coherent actual silhouette, visible root/underside/side; no unrelated architecture/scenery attached. Other existing named species/forms must not be regenerated. Local material consistent with source. Dimensions are proposals to refine by subject.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Palace grounds and rose gardens"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "T01-MEADOW-001-A06__purple-iris-plant__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    }
+  ]
+}

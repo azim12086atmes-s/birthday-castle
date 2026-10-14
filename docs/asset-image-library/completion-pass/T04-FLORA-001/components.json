@@ -1,0 +1,244 @@
+{
+  "components": [
+    {
+      "asset_id": "T04-FLORA-001-A01",
+      "name": "Monstera leaf plant",
+      "kind": "flora-reference",
+      "dimensions_m_proposed": [
+        2,
+        2,
+        3
+      ],
+      "function": "New local understory/epiphyte forms, not existing bluebells/rosebushes. Natural leaf attachment and species silhouettes, roots/hangers readable.",
+      "construction": "One isolated monstera leaf plant. New local understory/epiphyte forms, not existing bluebells/rosebushes. Natural leaf attachment and species silhouettes, roots/hangers readable. Coherent actual silhouette, visible root/underside/side; no unrelated architecture/scenery attached. Other existing named species/forms must not be regenerated. Local material consistent with source. Dimensions are proposals to refine by subject.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Jade jungle and wetlands"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "T04-FLORA-001-A01__monstera-leaf-plant__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "T04-FLORA-001-A02",
+      "name": "Philodendron clump",
+      "kind": "flora-reference",
+      "dimensions_m_proposed": [
+        2,
+        2,
+        3
+      ],
+      "function": "New local understory/epiphyte forms, not existing bluebells/rosebushes. Natural leaf attachment and species silhouettes, roots/hangers readable.",
+      "construction": "One isolated philodendron clump. New local understory/epiphyte forms, not existing bluebells/rosebushes. Natural leaf attachment and species silhouettes, roots/hangers readable. Coherent actual silhouette, visible root/underside/side; no unrelated architecture/scenery attached. Other existing named species/forms must not be regenerated. Local material consistent with source. Dimensions are proposals to refine by subject.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Jade jungle and wetlands"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "T04-FLORA-001-A02__philodendron-clump__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "T04-FLORA-001-A03",
+      "name": "Bromeliad rosette",
+      "kind": "flora-reference",
+      "dimensions_m_proposed": [
+        2,
+        2,
+        3
+      ],
+      "function": "New local understory/epiphyte forms, not existing bluebells/rosebushes. Natural leaf attachment and species silhouettes, roots/hangers readable.",
+      "construction": "One isolated bromeliad rosette. New local understory/epiphyte forms, not existing bluebells/rosebushes. Natural leaf attachment and species silhouettes, roots/hangers readable. Coherent actual silhouette, visible root/underside/side; no unrelated architecture/scenery attached. Other existing named species/forms must not be regenerated. Local material consistent with source. Dimensions are proposals to refine by subject.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Jade jungle and wetlands"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "T04-FLORA-001-A03__bromeliad-rosette__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "T04-FLORA-001-A04",
+      "name": "Bird nest fern",
+      "kind": "flora-reference",
+      "dimensions_m_proposed": [
+        2,
+        2,
+        3
+      ],
+      "function": "New local understory/epiphyte forms, not existing bluebells/rosebushes. Natural leaf attachment and species silhouettes, roots/hangers readable.",
+      "construction": "One isolated bird nest fern. New local understory/epiphyte forms, not existing bluebells/rosebushes. Natural leaf attachment and species silhouettes, roots/hangers readable. Coherent actual silhouette, visible root/underside/side; no unrelated architecture/scenery attached. Other existing named species/forms must not be regenerated. Local material consistent with source. Dimensions are proposals to refine by subject.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Jade jungle and wetlands"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "T04-FLORA-001-A04__bird-nest-fern__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "T04-FLORA-001-A05",
+      "name": "Climbing liana bend",
+      "kind": "flora-reference",
+      "dimensions_m_proposed": [
+        2,
+        2,
+        3
+      ],
+      "function": "New local understory/epiphyte forms, not existing bluebells/rosebushes. Natural leaf attachment and species silhouettes, roots/hangers readable.",
+      "construction": "One isolated climbing liana bend. New local understory/epiphyte forms, not existing bluebells/rosebushes. Natural leaf attachment and species silhouettes, roots/hangers readable. Coherent actual silhouette, visible root/underside/side; no unrelated architecture/scenery attached. Other existing named species/forms must not be regenerated. Local material consistent with source. Dimensions are proposals to refine by subject.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Jade jungle and wetlands"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "T04-FLORA-001-A05__climbing-liana-bend__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "T04-FLORA-001-A06",
+      "name": "Hanging jungle vine",
+      "kind": "flora-reference",
+      "dimensions_m_proposed": [
+        2,
+        2,
+        3
+      ],
+      "function": "New local understory/epiphyte forms, not existing bluebells/rosebushes. Natural leaf attachment and species silhouettes, roots/hangers readable.",
+      "construction": "One isolated hanging jungle vine. New local understory/epiphyte forms, not existing bluebells/rosebushes. Natural leaf attachment and species silhouettes, roots/hangers readable. Coherent actual silhouette, visible root/underside/side; no unrelated architecture/scenery attached. Other existing named species/forms must not be regenerated. Local material consistent with source. Dimensions are proposals to refine by subject.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Jade jungle and wetlands"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "T04-FLORA-001-A06__hanging-jungle-vine__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "T04-FLORA-001-A07",
+      "name": "Ginger flower clump",
+      "kind": "flora-reference",
+      "dimensions_m_proposed": [
+        2,
+        2,
+        3
+      ],
+      "function": "New local understory/epiphyte forms, not existing bluebells/rosebushes. Natural leaf attachment and species silhouettes, roots/hangers readable.",
+      "construction": "One isolated ginger flower clump. New local understory/epiphyte forms, not existing bluebells/rosebushes. Natural leaf attachment and species silhouettes, roots/hangers readable. Coherent actual silhouette, visible root/underside/side; no unrelated architecture/scenery attached. Other existing named species/forms must not be regenerated. Local material consistent with source. Dimensions are proposals to refine by subject.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Jade jungle and wetlands"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "T04-FLORA-001-A07__ginger-flower-clump__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "T04-FLORA-001-A08",
+      "name": "Jungle epiphyte branch cluster",
+      "kind": "flora-reference",
+      "dimensions_m_proposed": [
+        2,
+        2,
+        3
+      ],
+      "function": "New local understory/epiphyte forms, not existing bluebells/rosebushes. Natural leaf attachment and species silhouettes, roots/hangers readable.",
+      "construction": "One isolated jungle epiphyte branch cluster. New local understory/epiphyte forms, not existing bluebells/rosebushes. Natural leaf attachment and species silhouettes, roots/hangers readable. Coherent actual silhouette, visible root/underside/side; no unrelated architecture/scenery attached. Other existing named species/forms must not be regenerated. Local material consistent with source. Dimensions are proposals to refine by subject.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Jade jungle and wetlands"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "T04-FLORA-001-A08__jungle-epiphyte-branch-cluster__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    }
+  ]
+}

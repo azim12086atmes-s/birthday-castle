@@ -1,0 +1,184 @@
+{
+  "components": [
+    {
+      "asset_id": "T03-FLORA-001-A01",
+      "name": "Sea oats grass",
+      "kind": "flora-reference",
+      "dimensions_m_proposed": [
+        1,
+        1,
+        1.5
+      ],
+      "function": "Distinct missing coastal plants, not ordinary reeds or palace roses. Natural green/tan coastal leaves and root/holdfast forms, no metal.",
+      "construction": "One isolated sea oats grass. Distinct missing coastal plants, not ordinary reeds or palace roses. Natural green/tan coastal leaves and root/holdfast forms, no metal. Coherent actual silhouette, visible root/underside/side; no unrelated architecture/scenery attached. Other existing named species/forms must not be regenerated. Local material consistent with source. Dimensions are proposals to refine by subject.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Coast, open sea and reefs"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "T03-FLORA-001-A01__sea-oats-grass__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "T03-FLORA-001-A02",
+      "name": "Dune marram grass",
+      "kind": "flora-reference",
+      "dimensions_m_proposed": [
+        1,
+        1,
+        1.5
+      ],
+      "function": "Distinct missing coastal plants, not ordinary reeds or palace roses. Natural green/tan coastal leaves and root/holdfast forms, no metal.",
+      "construction": "One isolated dune marram grass. Distinct missing coastal plants, not ordinary reeds or palace roses. Natural green/tan coastal leaves and root/holdfast forms, no metal. Coherent actual silhouette, visible root/underside/side; no unrelated architecture/scenery attached. Other existing named species/forms must not be regenerated. Local material consistent with source. Dimensions are proposals to refine by subject.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Coast, open sea and reefs"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "T03-FLORA-001-A02__dune-marram-grass__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "T03-FLORA-001-A03",
+      "name": "Salt flowering shrub",
+      "kind": "flora-reference",
+      "dimensions_m_proposed": [
+        1,
+        1,
+        1.5
+      ],
+      "function": "Distinct missing coastal plants, not ordinary reeds or palace roses. Natural green/tan coastal leaves and root/holdfast forms, no metal.",
+      "construction": "One isolated salt flowering shrub. Distinct missing coastal plants, not ordinary reeds or palace roses. Natural green/tan coastal leaves and root/holdfast forms, no metal. Coherent actual silhouette, visible root/underside/side; no unrelated architecture/scenery attached. Other existing named species/forms must not be regenerated. Local material consistent with source. Dimensions are proposals to refine by subject.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Coast, open sea and reefs"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "T03-FLORA-001-A03__salt-flowering-shrub__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "T03-FLORA-001-A04",
+      "name": "Beach morning glory",
+      "kind": "flora-reference",
+      "dimensions_m_proposed": [
+        1,
+        1,
+        1.5
+      ],
+      "function": "Distinct missing coastal plants, not ordinary reeds or palace roses. Natural green/tan coastal leaves and root/holdfast forms, no metal.",
+      "construction": "One isolated beach morning glory. Distinct missing coastal plants, not ordinary reeds or palace roses. Natural green/tan coastal leaves and root/holdfast forms, no metal. Coherent actual silhouette, visible root/underside/side; no unrelated architecture/scenery attached. Other existing named species/forms must not be regenerated. Local material consistent with source. Dimensions are proposals to refine by subject.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Coast, open sea and reefs"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "T03-FLORA-001-A04__beach-morning-glory__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "T03-FLORA-001-A05",
+      "name": "Seagrass tuft",
+      "kind": "flora-reference",
+      "dimensions_m_proposed": [
+        1,
+        1,
+        1.5
+      ],
+      "function": "Distinct missing coastal plants, not ordinary reeds or palace roses. Natural green/tan coastal leaves and root/holdfast forms, no metal.",
+      "construction": "One isolated seagrass tuft. Distinct missing coastal plants, not ordinary reeds or palace roses. Natural green/tan coastal leaves and root/holdfast forms, no metal. Coherent actual silhouette, visible root/underside/side; no unrelated architecture/scenery attached. Other existing named species/forms must not be regenerated. Local material consistent with source. Dimensions are proposals to refine by subject.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Coast, open sea and reefs"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "T03-FLORA-001-A05__seagrass-tuft__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "T03-FLORA-001-A06",
+      "name": "Broad kelp frond",
+      "kind": "flora-reference",
+      "dimensions_m_proposed": [
+        1,
+        1,
+        1.5
+      ],
+      "function": "Distinct missing coastal plants, not ordinary reeds or palace roses. Natural green/tan coastal leaves and root/holdfast forms, no metal.",
+      "construction": "One isolated broad kelp frond. Distinct missing coastal plants, not ordinary reeds or palace roses. Natural green/tan coastal leaves and root/holdfast forms, no metal. Coherent actual silhouette, visible root/underside/side; no unrelated architecture/scenery attached. Other existing named species/forms must not be regenerated. Local material consistent with source. Dimensions are proposals to refine by subject.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Coast, open sea and reefs"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "T03-FLORA-001-A06__broad-kelp-frond__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    }
+  ]
+}

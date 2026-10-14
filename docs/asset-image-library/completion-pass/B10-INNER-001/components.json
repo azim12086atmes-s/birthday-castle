@@ -1,0 +1,124 @@
+{
+  "components": [
+    {
+      "asset_id": "B10-INNER-001-S01",
+      "name": "Inner dome and moon screen hall",
+      "kind": "structural-section",
+      "dimensions_m_proposed": [
+        8,
+        6,
+        10
+      ],
+      "function": "Missing interior construction and local court transitions beyond exterior sections",
+      "construction": "One isolated inner dome and moon screen hall, source-specific materials and deliberate human path through it; show inside/underside/side with wall thickness, glass/roof supports and host contacts. Hidden architecture inferred; no wholesale main-palace interior replacement.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B10"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B10-INNER-001-S01__inner-dome-and-moon-screen-hall__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "B10-INNER-001-S02",
+      "name": "Shaded water court arcade",
+      "kind": "structural-section",
+      "dimensions_m_proposed": [
+        8,
+        6,
+        10
+      ],
+      "function": "Missing interior construction and local court transitions beyond exterior sections",
+      "construction": "One isolated shaded water court arcade, source-specific materials and deliberate human path through it; show inside/underside/side with wall thickness, glass/roof supports and host contacts. Hidden architecture inferred; no wholesale main-palace interior replacement.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B10"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B10-INNER-001-S02__shaded-water-court-arcade__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "B10-INNER-001-S03",
+      "name": "Apricot stair gallery corner",
+      "kind": "structural-section",
+      "dimensions_m_proposed": [
+        8,
+        6,
+        10
+      ],
+      "function": "Missing interior construction and local court transitions beyond exterior sections",
+      "construction": "One isolated apricot stair gallery corner, source-specific materials and deliberate human path through it; show inside/underside/side with wall thickness, glass/roof supports and host contacts. Hidden architecture inferred; no wholesale main-palace interior replacement.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B10"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B10-INNER-001-S03__apricot-stair-gallery-corner__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "B10-INNER-001-S04",
+      "name": "Pool to inner terrace threshold",
+      "kind": "structural-section",
+      "dimensions_m_proposed": [
+        8,
+        6,
+        10
+      ],
+      "function": "Missing interior construction and local court transitions beyond exterior sections",
+      "construction": "One isolated pool to inner terrace threshold, source-specific materials and deliberate human path through it; show inside/underside/side with wall thickness, glass/roof supports and host contacts. Hidden architecture inferred; no wholesale main-palace interior replacement.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B10"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B10-INNER-001-S04__pool-to-inner-terrace-threshold__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    }
+  ]
+}

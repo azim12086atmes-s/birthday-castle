@@ -1,0 +1,364 @@
+{
+  "components": [
+    {
+      "asset_id": "B14-DETAIL-001-D01",
+      "name": "Rope bridge deck plank",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        1.5,
+        0.15,
+        1.5
+      ],
+      "function": "Need rock-to-platform footings, open arcade/corner hosts, platform edge/rail segments, rope-bridge anchor/deck details and stair-ascent joins. Do not repurpose porcelain bridge deck as rope bridge. Hanging vines and sparse canopy pockets; roosting birds/butterflies proposed. Elevation/access/collision unresolved. Missing detached construction pieces and local interior-facing patterns.",
+      "construction": "One isolated rope bridge deck plank, strictly follow local source colour/material/motif instead of universal pink marble. Show real depth, flat back/host contact or one consistent repeat profile. Existing generic lanterns/flowers/benches reused; only named local fittings. No merged wall scene attached to small detail.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B14"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B14-DETAIL-001-D01__rope-bridge-deck-plank__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "B14-DETAIL-001-D02",
+      "name": "Rope handrail knot sleeve",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        1.5,
+        0.15,
+        1.5
+      ],
+      "function": "Need rock-to-platform footings, open arcade/corner hosts, platform edge/rail segments, rope-bridge anchor/deck details and stair-ascent joins. Do not repurpose porcelain bridge deck as rope bridge. Hanging vines and sparse canopy pockets; roosting birds/butterflies proposed. Elevation/access/collision unresolved. Missing detached construction pieces and local interior-facing patterns.",
+      "construction": "One isolated rope handrail knot sleeve, strictly follow local source colour/material/motif instead of universal pink marble. Show real depth, flat back/host contact or one consistent repeat profile. Existing generic lanterns/flowers/benches reused; only named local fittings. No merged wall scene attached to small detail.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B14"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B14-DETAIL-001-D02__rope-handrail-knot-sleeve__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "B14-DETAIL-001-D03",
+      "name": "Rock pillar gallery column shoe",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        0.2,
+        0.12,
+        0.25
+      ],
+      "function": "Need rock-to-platform footings, open arcade/corner hosts, platform edge/rail segments, rope-bridge anchor/deck details and stair-ascent joins. Do not repurpose porcelain bridge deck as rope bridge. Hanging vines and sparse canopy pockets; roosting birds/butterflies proposed. Elevation/access/collision unresolved. Missing detached construction pieces and local interior-facing patterns.",
+      "construction": "One isolated rock pillar gallery column shoe, strictly follow local source colour/material/motif instead of universal pink marble. Show real depth, flat back/host contact or one consistent repeat profile. Existing generic lanterns/flowers/benches reused; only named local fittings. No merged wall scene attached to small detail. SMALL attachment hardware only: plate/socket/hook/joint with its own hole/root and source-compatible quiet ornament. No lantern body, full arch, whole column, complete door, garden or giant architectural scene glued to it.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B14"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B14-DETAIL-001-D03__rock-pillar-gallery-column-shoe__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "B14-DETAIL-001-D04",
+      "name": "Hanging vine trellis bracket",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        1.5,
+        0.15,
+        1.5
+      ],
+      "function": "Need rock-to-platform footings, open arcade/corner hosts, platform edge/rail segments, rope-bridge anchor/deck details and stair-ascent joins. Do not repurpose porcelain bridge deck as rope bridge. Hanging vines and sparse canopy pockets; roosting birds/butterflies proposed. Elevation/access/collision unresolved. Missing detached construction pieces and local interior-facing patterns.",
+      "construction": "One isolated hanging vine trellis bracket, strictly follow local source colour/material/motif instead of universal pink marble. Show real depth, flat back/host contact or one consistent repeat profile. Existing generic lanterns/flowers/benches reused; only named local fittings. No merged wall scene attached to small detail.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B14"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B14-DETAIL-001-D04__hanging-vine-trellis-bracket__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "B14-DETAIL-001-D05",
+      "name": "Pavilion open arch cap",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        1.5,
+        0.15,
+        1.5
+      ],
+      "function": "Need rock-to-platform footings, open arcade/corner hosts, platform edge/rail segments, rope-bridge anchor/deck details and stair-ascent joins. Do not repurpose porcelain bridge deck as rope bridge. Hanging vines and sparse canopy pockets; roosting birds/butterflies proposed. Elevation/access/collision unresolved. Missing detached construction pieces and local interior-facing patterns.",
+      "construction": "One isolated pavilion open arch cap, strictly follow local source colour/material/motif instead of universal pink marble. Show real depth, flat back/host contact or one consistent repeat profile. Existing generic lanterns/flowers/benches reused; only named local fittings. No merged wall scene attached to small detail.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B14"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B14-DETAIL-001-D05__pavilion-open-arch-cap__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "B14-DETAIL-001-D06",
+      "name": "Gallery eave corner",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        1.5,
+        0.15,
+        1.5
+      ],
+      "function": "Need rock-to-platform footings, open arcade/corner hosts, platform edge/rail segments, rope-bridge anchor/deck details and stair-ascent joins. Do not repurpose porcelain bridge deck as rope bridge. Hanging vines and sparse canopy pockets; roosting birds/butterflies proposed. Elevation/access/collision unresolved. Missing detached construction pieces and local interior-facing patterns.",
+      "construction": "One isolated gallery eave corner, strictly follow local source colour/material/motif instead of universal pink marble. Show real depth, flat back/host contact or one consistent repeat profile. Existing generic lanterns/flowers/benches reused; only named local fittings. No merged wall scene attached to small detail.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B14"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B14-DETAIL-001-D06__gallery-eave-corner__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "B14-DETAIL-001-D07",
+      "name": "Sandstone floor border",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        1.5,
+        1.5,
+        0.12
+      ],
+      "function": "Need rock-to-platform footings, open arcade/corner hosts, platform edge/rail segments, rope-bridge anchor/deck details and stair-ascent joins. Do not repurpose porcelain bridge deck as rope bridge. Hanging vines and sparse canopy pockets; roosting birds/butterflies proposed. Elevation/access/collision unresolved. Missing detached construction pieces and local interior-facing patterns.",
+      "construction": "One isolated sandstone floor border, strictly follow local source colour/material/motif instead of universal pink marble. Show real depth, flat back/host contact or one consistent repeat profile. Existing generic lanterns/flowers/benches reused; only named local fittings. No merged wall scene attached to small detail. This is a FLAT FLOOR piece, not a hanging wall plaque or raised flower sculpture. Show top pattern and a thin edge profile; relief remains shallow enough to walk across.",
+      "attachment_face": "Broad flat underside to floor, shortest dimension vertical Z",
+      "semantic_front": "Decorated broad face up +Z",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B14"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B14-DETAIL-001-D07__sandstone-floor-border__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "B14-DETAIL-001-D08",
+      "name": "Pillar dwelling shutter",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        1.5,
+        0.15,
+        1.5
+      ],
+      "function": "Need rock-to-platform footings, open arcade/corner hosts, platform edge/rail segments, rope-bridge anchor/deck details and stair-ascent joins. Do not repurpose porcelain bridge deck as rope bridge. Hanging vines and sparse canopy pockets; roosting birds/butterflies proposed. Elevation/access/collision unresolved. Missing detached construction pieces and local interior-facing patterns.",
+      "construction": "One isolated pillar dwelling shutter, strictly follow local source colour/material/motif instead of universal pink marble. Show real depth, flat back/host contact or one consistent repeat profile. Existing generic lanterns/flowers/benches reused; only named local fittings. No merged wall scene attached to small detail.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B14"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B14-DETAIL-001-D08__pillar-dwelling-shutter__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "B14-DETAIL-001-D09",
+      "name": "Rope bridge end anchor",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        0.2,
+        0.12,
+        0.25
+      ],
+      "function": "Need rock-to-platform footings, open arcade/corner hosts, platform edge/rail segments, rope-bridge anchor/deck details and stair-ascent joins. Do not repurpose porcelain bridge deck as rope bridge. Hanging vines and sparse canopy pockets; roosting birds/butterflies proposed. Elevation/access/collision unresolved. Missing detached construction pieces and local interior-facing patterns.",
+      "construction": "One isolated rope bridge end anchor, strictly follow local source colour/material/motif instead of universal pink marble. Show real depth, flat back/host contact or one consistent repeat profile. Existing generic lanterns/flowers/benches reused; only named local fittings. No merged wall scene attached to small detail. SMALL attachment hardware only: plate/socket/hook/joint with its own hole/root and source-compatible quiet ornament. No lantern body, full arch, whole column, complete door, garden or giant architectural scene glued to it.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B14"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B14-DETAIL-001-D09__rope-bridge-end-anchor__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "B14-DETAIL-001-D10",
+      "name": "Stair carved end return",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        1.5,
+        0.15,
+        1.5
+      ],
+      "function": "Need rock-to-platform footings, open arcade/corner hosts, platform edge/rail segments, rope-bridge anchor/deck details and stair-ascent joins. Do not repurpose porcelain bridge deck as rope bridge. Hanging vines and sparse canopy pockets; roosting birds/butterflies proposed. Elevation/access/collision unresolved. Missing detached construction pieces and local interior-facing patterns.",
+      "construction": "One isolated stair carved end return, strictly follow local source colour/material/motif instead of universal pink marble. Show real depth, flat back/host contact or one consistent repeat profile. Existing generic lanterns/flowers/benches reused; only named local fittings. No merged wall scene attached to small detail.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B14"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B14-DETAIL-001-D10__stair-carved-end-return__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "B14-DETAIL-001-D11",
+      "name": "Rock niche window reveal",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        1.5,
+        0.15,
+        1.5
+      ],
+      "function": "Need rock-to-platform footings, open arcade/corner hosts, platform edge/rail segments, rope-bridge anchor/deck details and stair-ascent joins. Do not repurpose porcelain bridge deck as rope bridge. Hanging vines and sparse canopy pockets; roosting birds/butterflies proposed. Elevation/access/collision unresolved. Missing detached construction pieces and local interior-facing patterns.",
+      "construction": "One isolated rock niche window reveal, strictly follow local source colour/material/motif instead of universal pink marble. Show real depth, flat back/host contact or one consistent repeat profile. Existing generic lanterns/flowers/benches reused; only named local fittings. No merged wall scene attached to small detail.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B14"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B14-DETAIL-001-D11__rock-niche-window-reveal__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "B14-DETAIL-001-D12",
+      "name": "Waterfall channel lip",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        1.5,
+        0.15,
+        1.5
+      ],
+      "function": "Need rock-to-platform footings, open arcade/corner hosts, platform edge/rail segments, rope-bridge anchor/deck details and stair-ascent joins. Do not repurpose porcelain bridge deck as rope bridge. Hanging vines and sparse canopy pockets; roosting birds/butterflies proposed. Elevation/access/collision unresolved. Missing detached construction pieces and local interior-facing patterns.",
+      "construction": "One isolated waterfall channel lip, strictly follow local source colour/material/motif instead of universal pink marble. Show real depth, flat back/host contact or one consistent repeat profile. Existing generic lanterns/flowers/benches reused; only named local fittings. No merged wall scene attached to small detail.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B14"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B14-DETAIL-001-D12__waterfall-channel-lip__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    }
+  ]
+}

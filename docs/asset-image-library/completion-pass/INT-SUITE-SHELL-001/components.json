@@ -1,0 +1,124 @@
+{
+  "components": [
+    {
+      "asset_id": "INT-SUITE-SHELL-001-S01",
+      "name": "Canopy bed wall niche host",
+      "kind": "structural-section",
+      "dimensions_m_proposed": [
+        8,
+        5,
+        12
+      ],
+      "function": "Missing construction views behind existing room snapshots; generic substrate plus source-compatible interior faces",
+      "construction": "One isolated canopy bed wall niche host, original palace rose and ivory marble, gold trim, blue/rose glass where source appropriate. Show interior face, ceiling/underside and rear wall/roof contact. Real door/window apertures open; furniture/foliage removable. Preserve local room character rather than replacing with one generic hall.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Interiors and furniture"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "INT-SUITE-SHELL-001-S01__canopy-bed-wall-niche-host__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "INT-SUITE-SHELL-001-S02",
+      "name": "Balcony window and inner reveal bay",
+      "kind": "structural-section",
+      "dimensions_m_proposed": [
+        8,
+        5,
+        12
+      ],
+      "function": "Missing construction views behind existing room snapshots; generic substrate plus source-compatible interior faces",
+      "construction": "One isolated balcony window and inner reveal bay, original palace rose and ivory marble, gold trim, blue/rose glass where source appropriate. Show interior face, ceiling/underside and rear wall/roof contact. Real door/window apertures open; furniture/foliage removable. Preserve local room character rather than replacing with one generic hall.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Interiors and furniture"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "INT-SUITE-SHELL-001-S02__balcony-window-and-inner-reveal-bay__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "INT-SUITE-SHELL-001-S03",
+      "name": "Dressing alcove partition host",
+      "kind": "structural-section",
+      "dimensions_m_proposed": [
+        8,
+        5,
+        12
+      ],
+      "function": "Missing construction views behind existing room snapshots; generic substrate plus source-compatible interior faces",
+      "construction": "One isolated dressing alcove partition host, original palace rose and ivory marble, gold trim, blue/rose glass where source appropriate. Show interior face, ceiling/underside and rear wall/roof contact. Real door/window apertures open; furniture/foliage removable. Preserve local room character rather than replacing with one generic hall.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Interiors and furniture"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "INT-SUITE-SHELL-001-S03__dressing-alcove-partition-host__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "INT-SUITE-SHELL-001-S04",
+      "name": "Quiet suite ceiling and cornice bay",
+      "kind": "structural-section",
+      "dimensions_m_proposed": [
+        8,
+        5,
+        12
+      ],
+      "function": "Missing construction views behind existing room snapshots; generic substrate plus source-compatible interior faces",
+      "construction": "One isolated quiet suite ceiling and cornice bay, original palace rose and ivory marble, gold trim, blue/rose glass where source appropriate. Show interior face, ceiling/underside and rear wall/roof contact. Real door/window apertures open; furniture/foliage removable. Preserve local room character rather than replacing with one generic hall.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Interiors and furniture"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "INT-SUITE-SHELL-001-S04__quiet-suite-ceiling-and-cornice-bay__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    }
+  ]
+}

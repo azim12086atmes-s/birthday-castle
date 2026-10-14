@@ -1,0 +1,364 @@
+{
+  "components": [
+    {
+      "asset_id": "B04-DETAIL-001-D01",
+      "name": "Burgundy cone roof strip",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        1.5,
+        0.15,
+        1.5
+      ],
+      "function": "Need irregular stone/fort-wall returns, cylindrical tower-wall window bands, cone roof seats, stair-to-terrace corners and climbing-rose attachment layout. Source roofs, rose relief, pink masonry and banners already supply detail vocabulary. Pollinators/robins inhabit planted ledges. Missing detached construction pieces and local interior-facing patterns.",
+      "construction": "One isolated burgundy cone roof strip, strictly follow local source colour/material/motif instead of universal pink marble. Show real depth, flat back/host contact or one consistent repeat profile. Existing generic lanterns/flowers/benches reused; only named local fittings. No merged wall scene attached to small detail. One repeat moulding/strip only, defined thickness and square end profiles. A corner is a single L return, not a complete wall/court.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B04"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B04-DETAIL-001-D01__burgundy-cone-roof-strip__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "B04-DETAIL-001-D02",
+      "name": "Round turret cornice",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        1.5,
+        0.15,
+        1.5
+      ],
+      "function": "Need irregular stone/fort-wall returns, cylindrical tower-wall window bands, cone roof seats, stair-to-terrace corners and climbing-rose attachment layout. Source roofs, rose relief, pink masonry and banners already supply detail vocabulary. Pollinators/robins inhabit planted ledges. Missing detached construction pieces and local interior-facing patterns.",
+      "construction": "One isolated round turret cornice, strictly follow local source colour/material/motif instead of universal pink marble. Show real depth, flat back/host contact or one consistent repeat profile. Existing generic lanterns/flowers/benches reused; only named local fittings. No merged wall scene attached to small detail. One repeat moulding/strip only, defined thickness and square end profiles. A corner is a single L return, not a complete wall/court.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B04"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B04-DETAIL-001-D02__round-turret-cornice__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "B04-DETAIL-001-D03",
+      "name": "Rose keep window insert",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        1.5,
+        0.15,
+        1.5
+      ],
+      "function": "Need irregular stone/fort-wall returns, cylindrical tower-wall window bands, cone roof seats, stair-to-terrace corners and climbing-rose attachment layout. Source roofs, rose relief, pink masonry and banners already supply detail vocabulary. Pollinators/robins inhabit planted ledges. Missing detached construction pieces and local interior-facing patterns.",
+      "construction": "One isolated rose keep window insert, strictly follow local source colour/material/motif instead of universal pink marble. Show real depth, flat back/host contact or one consistent repeat profile. Existing generic lanterns/flowers/benches reused; only named local fittings. No merged wall scene attached to small detail.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B04"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B04-DETAIL-001-D03__rose-keep-window-insert__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "B04-DETAIL-001-D04",
+      "name": "Turret wall flower relief",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        1.5,
+        0.15,
+        1.5
+      ],
+      "function": "Need irregular stone/fort-wall returns, cylindrical tower-wall window bands, cone roof seats, stair-to-terrace corners and climbing-rose attachment layout. Source roofs, rose relief, pink masonry and banners already supply detail vocabulary. Pollinators/robins inhabit planted ledges. Missing detached construction pieces and local interior-facing patterns.",
+      "construction": "One isolated turret wall flower relief, strictly follow local source colour/material/motif instead of universal pink marble. Show real depth, flat back/host contact or one consistent repeat profile. Existing generic lanterns/flowers/benches reused; only named local fittings. No merged wall scene attached to small detail.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B04"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B04-DETAIL-001-D04__turret-wall-flower-relief__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "B04-DETAIL-001-D05",
+      "name": "Castle parapet repeat",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        1.5,
+        0.15,
+        1.5
+      ],
+      "function": "Need irregular stone/fort-wall returns, cylindrical tower-wall window bands, cone roof seats, stair-to-terrace corners and climbing-rose attachment layout. Source roofs, rose relief, pink masonry and banners already supply detail vocabulary. Pollinators/robins inhabit planted ledges. Missing detached construction pieces and local interior-facing patterns.",
+      "construction": "One isolated castle parapet repeat, strictly follow local source colour/material/motif instead of universal pink marble. Show real depth, flat back/host contact or one consistent repeat profile. Existing generic lanterns/flowers/benches reused; only named local fittings. No merged wall scene attached to small detail. One continuous rail panel with plain join ends, NO tall end posts, corner towers, flowerbeds or attached stairs. Separate posts handled by hosts.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B04"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B04-DETAIL-001-D05__castle-parapet-repeat__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "B04-DETAIL-001-D06",
+      "name": "Parapet corner cap",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        1.5,
+        0.15,
+        1.5
+      ],
+      "function": "Need irregular stone/fort-wall returns, cylindrical tower-wall window bands, cone roof seats, stair-to-terrace corners and climbing-rose attachment layout. Source roofs, rose relief, pink masonry and banners already supply detail vocabulary. Pollinators/robins inhabit planted ledges. Missing detached construction pieces and local interior-facing patterns.",
+      "construction": "One isolated parapet corner cap, strictly follow local source colour/material/motif instead of universal pink marble. Show real depth, flat back/host contact or one consistent repeat profile. Existing generic lanterns/flowers/benches reused; only named local fittings. No merged wall scene attached to small detail.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B04"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B04-DETAIL-001-D06__parapet-corner-cap__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "B04-DETAIL-001-D07",
+      "name": "Keep arch surround",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        1.5,
+        0.15,
+        1.5
+      ],
+      "function": "Need irregular stone/fort-wall returns, cylindrical tower-wall window bands, cone roof seats, stair-to-terrace corners and climbing-rose attachment layout. Source roofs, rose relief, pink masonry and banners already supply detail vocabulary. Pollinators/robins inhabit planted ledges. Missing detached construction pieces and local interior-facing patterns.",
+      "construction": "One isolated keep arch surround, strictly follow local source colour/material/motif instead of universal pink marble. Show real depth, flat back/host contact or one consistent repeat profile. Existing generic lanterns/flowers/benches reused; only named local fittings. No merged wall scene attached to small detail. Arch band/surround only around a genuinely open centre. Do not include complete building wall or tower.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B04"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B04-DETAIL-001-D07__keep-arch-surround__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "B04-DETAIL-001-D08",
+      "name": "Rounded stair rail return",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        1.5,
+        0.15,
+        1.5
+      ],
+      "function": "Need irregular stone/fort-wall returns, cylindrical tower-wall window bands, cone roof seats, stair-to-terrace corners and climbing-rose attachment layout. Source roofs, rose relief, pink masonry and banners already supply detail vocabulary. Pollinators/robins inhabit planted ledges. Missing detached construction pieces and local interior-facing patterns.",
+      "construction": "One isolated rounded stair rail return, strictly follow local source colour/material/motif instead of universal pink marble. Show real depth, flat back/host contact or one consistent repeat profile. Existing generic lanterns/flowers/benches reused; only named local fittings. No merged wall scene attached to small detail.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B04"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B04-DETAIL-001-D08__rounded-stair-rail-return__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "B04-DETAIL-001-D09",
+      "name": "Inner keep floor tile",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        1.5,
+        1.5,
+        0.12
+      ],
+      "function": "Need irregular stone/fort-wall returns, cylindrical tower-wall window bands, cone roof seats, stair-to-terrace corners and climbing-rose attachment layout. Source roofs, rose relief, pink masonry and banners already supply detail vocabulary. Pollinators/robins inhabit planted ledges. Missing detached construction pieces and local interior-facing patterns.",
+      "construction": "One isolated inner keep floor tile, strictly follow local source colour/material/motif instead of universal pink marble. Show real depth, flat back/host contact or one consistent repeat profile. Existing generic lanterns/flowers/benches reused; only named local fittings. No merged wall scene attached to small detail. This is a FLAT FLOOR piece, not a hanging wall plaque or raised flower sculpture. Show top pattern and a thin edge profile; relief remains shallow enough to walk across.",
+      "attachment_face": "Broad flat underside to floor, shortest dimension vertical Z",
+      "semantic_front": "Decorated broad face up +Z",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B04"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B04-DETAIL-001-D09__inner-keep-floor-tile__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "B04-DETAIL-001-D10",
+      "name": "Ivory wall dado",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        1.5,
+        0.15,
+        1.5
+      ],
+      "function": "Need irregular stone/fort-wall returns, cylindrical tower-wall window bands, cone roof seats, stair-to-terrace corners and climbing-rose attachment layout. Source roofs, rose relief, pink masonry and banners already supply detail vocabulary. Pollinators/robins inhabit planted ledges. Missing detached construction pieces and local interior-facing patterns.",
+      "construction": "One isolated ivory wall dado, strictly follow local source colour/material/motif instead of universal pink marble. Show real depth, flat back/host contact or one consistent repeat profile. Existing generic lanterns/flowers/benches reused; only named local fittings. No merged wall scene attached to small detail.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B04"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B04-DETAIL-001-D10__ivory-wall-dado__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "B04-DETAIL-001-D11",
+      "name": "Keep ceiling beam bracket",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        1.5,
+        0.15,
+        1.5
+      ],
+      "function": "Need irregular stone/fort-wall returns, cylindrical tower-wall window bands, cone roof seats, stair-to-terrace corners and climbing-rose attachment layout. Source roofs, rose relief, pink masonry and banners already supply detail vocabulary. Pollinators/robins inhabit planted ledges. Missing detached construction pieces and local interior-facing patterns.",
+      "construction": "One isolated keep ceiling beam bracket, strictly follow local source colour/material/motif instead of universal pink marble. Show real depth, flat back/host contact or one consistent repeat profile. Existing generic lanterns/flowers/benches reused; only named local fittings. No merged wall scene attached to small detail.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B04"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B04-DETAIL-001-D11__keep-ceiling-beam-bracket__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "B04-DETAIL-001-D12",
+      "name": "Rose climbing trellis hook",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        0.2,
+        0.12,
+        0.25
+      ],
+      "function": "Need irregular stone/fort-wall returns, cylindrical tower-wall window bands, cone roof seats, stair-to-terrace corners and climbing-rose attachment layout. Source roofs, rose relief, pink masonry and banners already supply detail vocabulary. Pollinators/robins inhabit planted ledges. Missing detached construction pieces and local interior-facing patterns.",
+      "construction": "One isolated rose climbing trellis hook, strictly follow local source colour/material/motif instead of universal pink marble. Show real depth, flat back/host contact or one consistent repeat profile. Existing generic lanterns/flowers/benches reused; only named local fittings. No merged wall scene attached to small detail. SMALL attachment hardware only: plate/socket/hook/joint with its own hole/root and source-compatible quiet ornament. No lantern body, full arch, whole column, complete door, garden or giant architectural scene glued to it.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B04"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B04-DETAIL-001-D12__rose-climbing-trellis-hook__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    }
+  ]
+}

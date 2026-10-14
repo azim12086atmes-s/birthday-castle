@@ -1,6 +1,8 @@
 # Asset production plan and caps
 
-Current building work: [Moon Water Palace — 3 sheets and 20 labelled components](world-location-kits/moon-water-palace/README.md). B02 dedicated cap **3/3**; physical joins and common assembly scale pending. **93 selected sheets saved; 96/230 selected or reserved; 812 archive images**. Shared freshwater fauna is next; no 3D models generated.
+Current completion work: [coverage queue and saved sheets](completion-pass/README.md), **9/115 jobs saved**. **102 selected sheets saved;208/230 allocated;822 archive images**. Allocation:80palace,58other buildings,60nature/ecology,22outdoor/shared,10maps/magic. Geometry, view parity, UVs, anatomy and runtime remain unbuilt/unverified.
+
+Previous B02 exterior pass: [Moon Water Palace — 3 sheets and 20 labelled components](world-location-kits/moon-water-palace/README.md). B02 dedicated cap **3/3**; physical joins and common assembly scale pending. **93 selected sheets saved; 96/230 selected or reserved; 812 archive images**. Shared freshwater fauna is next; no 3D models generated.
 
 Previous location/ecology pass: [34 location briefs and zoom audit](world-layout/location-audit/README.md), with local flora/fauna selections and a shared natural-kit catalog. [3 new forest ecology sheets](world-location-kits/west-lantern-forest/ecology/README.md) add20 labelled targets. **90 saved selected sheets;93/230 selected or reserved;807 archive images**. No3D/rig/navigation verified.
 
@@ -26,11 +28,11 @@ The final library is capped at **230 selected sheets**, including the 45 origina
 
 | Scope | Cap | Currently selected/reserved | Remaining |
 | --- | ---: | ---: | ---: |
-| palace | 65 | 65 | 0 |
-| other-map-buildings | 55 | 8 | 47 |
-| terrain-water-and-planting | 65 | 13 | 52 |
-| shared-outdoor-props-and-bridge | 25 | 5 | 20 |
-| maps-magic-travel-and-birthday | 20 | 5 | 15 |
+| palace | 80 | 80 | 0 |
+| other-map-buildings | 58 | 58 | 0 |
+| terrain-water-and-planting | 60 | 45 | 15 |
+| shared-outdoor-props-and-bridge | 22 | 16 | 6 |
+| maps-magic-travel-and-birthday | 10 | 9 | 1 |
 
 The 812-file archive contains crops, previews and historical experiments; it is not the final 230-sheet selection. Selected reference slots may still require visual review.
 

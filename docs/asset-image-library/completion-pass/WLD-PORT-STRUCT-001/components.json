@@ -1,0 +1,124 @@
+{
+  "components": [
+    {
+      "asset_id": "WLD-PORT-STRUCT-001-S01",
+      "name": "Cedar dock repeat bay",
+      "kind": "structural-section",
+      "dimensions_m_proposed": [
+        6,
+        4,
+        2
+      ],
+      "function": "Missing repeatable dock/shore/arrival joins; existing boats and bollard styles reused",
+      "construction": "One solid cedar dock repeat bay, cedar/brass/stone source vocabulary, open water shown only small context inset, plank/shore join contacts clear. Use landing/ramp modules rather than new travel vehicles.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Docks, ramps and travel infrastructure"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "WLD-PORT-STRUCT-001-S01__cedar-dock-repeat-bay__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "WLD-PORT-STRUCT-001-S02",
+      "name": "Dock ninety degree end landing",
+      "kind": "structural-section",
+      "dimensions_m_proposed": [
+        6,
+        4,
+        2
+      ],
+      "function": "Missing repeatable dock/shore/arrival joins; existing boats and bollard styles reused",
+      "construction": "One solid dock ninety degree end landing, cedar/brass/stone source vocabulary, open water shown only small context inset, plank/shore join contacts clear. Use landing/ramp modules rather than new travel vehicles.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Docks, ramps and travel infrastructure"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "WLD-PORT-STRUCT-001-S02__dock-ninety-degree-end-landing__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "WLD-PORT-STRUCT-001-S03",
+      "name": "Shore stair dock connector",
+      "kind": "structural-section",
+      "dimensions_m_proposed": [
+        6,
+        4,
+        2
+      ],
+      "function": "Missing repeatable dock/shore/arrival joins; existing boats and bollard styles reused",
+      "construction": "One solid shore stair dock connector, cedar/brass/stone source vocabulary, open water shown only small context inset, plank/shore join contacts clear. Use landing/ramp modules rather than new travel vehicles.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Docks, ramps and travel infrastructure"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "WLD-PORT-STRUCT-001-S03__shore-stair-dock-connector__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "WLD-PORT-STRUCT-001-S04",
+      "name": "Small boat landing ramp",
+      "kind": "structural-section",
+      "dimensions_m_proposed": [
+        6,
+        4,
+        2
+      ],
+      "function": "Missing repeatable dock/shore/arrival joins; existing boats and bollard styles reused",
+      "construction": "One solid small boat landing ramp, cedar/brass/stone source vocabulary, open water shown only small context inset, plank/shore join contacts clear. Use landing/ramp modules rather than new travel vehicles.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Docks, ramps and travel infrastructure"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "WLD-PORT-STRUCT-001-S04__small-boat-landing-ramp__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    }
+  ]
+}

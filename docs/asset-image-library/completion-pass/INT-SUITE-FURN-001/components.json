@@ -1,0 +1,124 @@
+{
+  "components": [
+    {
+      "asset_id": "INT-SUITE-FURN-001-S01",
+      "name": "Canopy bed frame",
+      "kind": "structural-section",
+      "dimensions_m_proposed": [
+        2.2,
+        2.7,
+        2.8
+      ],
+      "function": "Missing large bedroom/dressing furniture; existing mirrors, lamps, chairs and fabric masters reused",
+      "construction": "One freestanding canopy bed frame with gold carved floral trim, rose upholstery or pearl wood/marble where appropriate, coherent legs/handles and useful rear view; no curtains/cloth fused to adjacent items.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Interiors and furniture"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "INT-SUITE-FURN-001-S01__canopy-bed-frame__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "INT-SUITE-FURN-001-S02",
+      "name": "Paired bedside cabinet",
+      "kind": "structural-section",
+      "dimensions_m_proposed": [
+        0.65,
+        0.45,
+        0.75
+      ],
+      "function": "Missing large bedroom/dressing furniture; existing mirrors, lamps, chairs and fabric masters reused",
+      "construction": "One freestanding paired bedside cabinet with gold carved floral trim, rose upholstery or pearl wood/marble where appropriate, coherent legs/handles and useful rear view; no curtains/cloth fused to adjacent items.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Interiors and furniture"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "INT-SUITE-FURN-001-S02__paired-bedside-cabinet__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "INT-SUITE-FURN-001-S03",
+      "name": "Wardrobe",
+      "kind": "structural-section",
+      "dimensions_m_proposed": [
+        1.6,
+        0.65,
+        2.4
+      ],
+      "function": "Missing large bedroom/dressing furniture; existing mirrors, lamps, chairs and fabric masters reused",
+      "construction": "One freestanding wardrobe with gold carved floral trim, rose upholstery or pearl wood/marble where appropriate, coherent legs/handles and useful rear view; no curtains/cloth fused to adjacent items.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Interiors and furniture"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "INT-SUITE-FURN-001-S03__wardrobe__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "INT-SUITE-FURN-001-S04",
+      "name": "Dressing table",
+      "kind": "structural-section",
+      "dimensions_m_proposed": [
+        1.4,
+        0.5,
+        0.8
+      ],
+      "function": "Missing large bedroom/dressing furniture; existing mirrors, lamps, chairs and fabric masters reused",
+      "construction": "One freestanding dressing table with gold carved floral trim, rose upholstery or pearl wood/marble where appropriate, coherent legs/handles and useful rear view; no curtains/cloth fused to adjacent items.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Interiors and furniture"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "INT-SUITE-FURN-001-S04__dressing-table__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    }
+  ]
+}

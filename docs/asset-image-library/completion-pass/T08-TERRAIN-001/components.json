@@ -1,0 +1,124 @@
+{
+  "components": [
+    {
+      "asset_id": "T08-TERRAIN-001-A01",
+      "name": "Floating rock underside wedge",
+      "kind": "natural-module",
+      "dimensions_m_proposed": [
+        4,
+        4,
+        2
+      ],
+      "function": "Missing isolated sky foundation/support substrates; stable fictional floating form, roots/rocks coherent, cloud effects separate, no copiedwholebuilding.",
+      "construction": "One isolated floating rock underside wedge. Missing isolated sky foundation/support substrates; stable fictional floating form, roots/rocks coherent, cloud effects separate, no copiedwholebuilding. Coherent actual silhouette, visible root/underside/side; no unrelated architecture/scenery attached. Other existing named species/forms must not be regenerated. Local material consistent with source. Dimensions are proposals to refine by subject.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Sky-island landscape substrates"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "T08-TERRAIN-001-A01__floating-rock-underside-wedge__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "T08-TERRAIN-001-A02",
+      "name": "Sky garden soil edge",
+      "kind": "natural-module",
+      "dimensions_m_proposed": [
+        4,
+        4,
+        2
+      ],
+      "function": "Missing isolated sky foundation/support substrates; stable fictional floating form, roots/rocks coherent, cloud effects separate, no copiedwholebuilding.",
+      "construction": "One isolated sky garden soil edge. Missing isolated sky foundation/support substrates; stable fictional floating form, roots/rocks coherent, cloud effects separate, no copiedwholebuilding. Coherent actual silhouette, visible root/underside/side; no unrelated architecture/scenery attached. Other existing named species/forms must not be regenerated. Local material consistent with source. Dimensions are proposals to refine by subject.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Sky-island landscape substrates"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "T08-TERRAIN-001-A02__sky-garden-soil-edge__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "T08-TERRAIN-001-A03",
+      "name": "Crystal isle path ledge",
+      "kind": "natural-module",
+      "dimensions_m_proposed": [
+        4,
+        4,
+        2
+      ],
+      "function": "Missing isolated sky foundation/support substrates; stable fictional floating form, roots/rocks coherent, cloud effects separate, no copiedwholebuilding.",
+      "construction": "One isolated crystal isle path ledge. Missing isolated sky foundation/support substrates; stable fictional floating form, roots/rocks coherent, cloud effects separate, no copiedwholebuilding. Coherent actual silhouette, visible root/underside/side; no unrelated architecture/scenery attached. Other existing named species/forms must not be regenerated. Local material consistent with source. Dimensions are proposals to refine by subject.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Sky-island landscape substrates"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "T08-TERRAIN-001-A03__crystal-isle-path-ledge__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "T08-TERRAIN-001-A04",
+      "name": "Cloud court arrival plinth",
+      "kind": "natural-module",
+      "dimensions_m_proposed": [
+        4,
+        4,
+        2
+      ],
+      "function": "Missing isolated sky foundation/support substrates; stable fictional floating form, roots/rocks coherent, cloud effects separate, no copiedwholebuilding.",
+      "construction": "One isolated cloud court arrival plinth. Missing isolated sky foundation/support substrates; stable fictional floating form, roots/rocks coherent, cloud effects separate, no copiedwholebuilding. Coherent actual silhouette, visible root/underside/side; no unrelated architecture/scenery attached. Other existing named species/forms must not be regenerated. Local material consistent with source. Dimensions are proposals to refine by subject.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Sky-island landscape substrates"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "T08-TERRAIN-001-A04__cloud-court-arrival-plinth__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    }
+  ]
+}

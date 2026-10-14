@@ -1,0 +1,124 @@
+{
+  "components": [
+    {
+      "asset_id": "T04-CANOPY-001-A01",
+      "name": "Tall jungle broadleaf tree",
+      "kind": "flora-reference",
+      "dimensions_m_proposed": [
+        10,
+        10,
+        18
+      ],
+      "function": "Distinct jungle canopy forms; complete coherent trunks/root flares, broad natural green leaves. Aerialroots from actual branches, not disconnected tentacles.",
+      "construction": "One isolated tall jungle broadleaf tree. Distinct jungle canopy forms; complete coherent trunks/root flares, broad natural green leaves. Aerialroots from actual branches, not disconnected tentacles. Coherent actual silhouette, visible root/underside/side; no unrelated architecture/scenery attached. Other existing named species/forms must not be regenerated. Local material consistent with source. Dimensions are proposals to refine by subject.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Jade jungle and wetlands"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "T04-CANOPY-001-A01__tall-jungle-broadleaf-tree__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "T04-CANOPY-001-A02",
+      "name": "Royal jungle palm",
+      "kind": "flora-reference",
+      "dimensions_m_proposed": [
+        10,
+        10,
+        18
+      ],
+      "function": "Distinct jungle canopy forms; complete coherent trunks/root flares, broad natural green leaves. Aerialroots from actual branches, not disconnected tentacles.",
+      "construction": "One isolated royal jungle palm. Distinct jungle canopy forms; complete coherent trunks/root flares, broad natural green leaves. Aerialroots from actual branches, not disconnected tentacles. Coherent actual silhouette, visible root/underside/side; no unrelated architecture/scenery attached. Other existing named species/forms must not be regenerated. Local material consistent with source. Dimensions are proposals to refine by subject.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Jade jungle and wetlands"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "T04-CANOPY-001-A02__royal-jungle-palm__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "T04-CANOPY-001-A03",
+      "name": "Banyan aerial root tree",
+      "kind": "flora-reference",
+      "dimensions_m_proposed": [
+        10,
+        10,
+        18
+      ],
+      "function": "Distinct jungle canopy forms; complete coherent trunks/root flares, broad natural green leaves. Aerialroots from actual branches, not disconnected tentacles.",
+      "construction": "One isolated banyan aerial root tree. Distinct jungle canopy forms; complete coherent trunks/root flares, broad natural green leaves. Aerialroots from actual branches, not disconnected tentacles. Coherent actual silhouette, visible root/underside/side; no unrelated architecture/scenery attached. Other existing named species/forms must not be regenerated. Local material consistent with source. Dimensions are proposals to refine by subject.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Jade jungle and wetlands"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "T04-CANOPY-001-A03__banyan-aerial-root-tree__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "T04-CANOPY-001-A04",
+      "name": "Tree fern",
+      "kind": "flora-reference",
+      "dimensions_m_proposed": [
+        10,
+        10,
+        18
+      ],
+      "function": "Distinct jungle canopy forms; complete coherent trunks/root flares, broad natural green leaves. Aerialroots from actual branches, not disconnected tentacles.",
+      "construction": "One isolated tree fern. Distinct jungle canopy forms; complete coherent trunks/root flares, broad natural green leaves. Aerialroots from actual branches, not disconnected tentacles. Coherent actual silhouette, visible root/underside/side; no unrelated architecture/scenery attached. Other existing named species/forms must not be regenerated. Local material consistent with source. Dimensions are proposals to refine by subject.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Jade jungle and wetlands"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "T04-CANOPY-001-A04__tree-fern__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    }
+  ]
+}

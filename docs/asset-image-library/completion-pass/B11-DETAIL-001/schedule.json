@@ -1,0 +1,381 @@
+{
+  "sheet_id": "B11-DETAIL-001",
+  "name": "Crescent Rock Arch \u2014 surface and detail kit",
+  "owner": "other-map-buildings",
+  "family": "B11",
+  "location_id": "B11",
+  "source_reference_id": "SRC-LOC-B11-GEN-06",
+  "source_reference_file": "world-layout/location-audit/source/B11-GEN-06.png",
+  "source_reference_sha256": "e16cabaa0b6dc2abd72312a6866839f1970aff5ec111e5677094ec579254ab3f",
+  "prompt": "Create ONE clean detailed GAME ASSET REFERENCE SHEET, NOT Blender or a3Dmodel. Plain light ivory studio background, soft even light, full uncropped separate objects, readable thickness, precise non-melting forms. FULL IDs and names outside silhouettes, dimensions marked PROPOSED. Each cell independent illustration scale. No environment scenery, humans, extra unlabeled objects, watermark or whole-palace redesign. Use ONLY the single supplied source image for visible style/material/form authority; infer missing backs and assembly interfaces conservatively. Source illustration motifs are inspiration, not recovered measured geometry. Visible source facts: Asymmetric apricot crescent rock arch with turquoise/opal fracture veins, pearl-like accents and sparse hanging gold star lanterns above the tide. Front and tiny isometric do not fully resolve the far foot/overhang geometry. Hidden layout inference: Use a shoreline approach to one small viewing ledge, an optional low tidal pass beneath the arch when geometry allows, and a return beach path. Keep its open crescent silhouette as hero; no castle wall or formal palace courtyard added. Put lights only at established attachment crevices. Preserve this local design. Exactly12 isolated main components in a clean4-column grid. No missing/empty slots or repeated subjects counted twice. One clear front/three-quarter view with useful small rear/top/contact inset per cell. Truly flat backs for appliques, square join ends for repeat mouldings. Screens have repeated coherent holes, no tangled tendrils. Windows separate glass from surrounds, cornices/parapets and posts separate where named. Do not include large room/scenery fragments attached to a tiny detail. Title \"B11-DETAIL-001 \u2014 Crescent Rock Arch \u2014 surface and detail kit\". Footer \"Proposed construction / source-compatible references / mesh joins and views unverified\".\n\nPurpose/gap: Need source-shaped arch footing/curve/crown sections and their hidden contact faces; use shared shoreline rocks, sand and waves. Opal veins/pearls/star pendants exist in image, so add isolated attachment views only where unclear. Salt plants/seabirds/crabs proposed; tide/navigation unverified. Missing detached construction pieces and local interior-facing patterns.\n\nB11-DETAIL-001-D01 \u2014 Rock arch star socket. Dimensions W,D,H [0.2, 0.12, 0.25]m proposed. One isolated rock arch star socket, strictly follow local source colour/material/motif instead of universal pink marble. Show real depth, flat back/host contact or one consistent repeat profile. Existing generic lanterns/flowers/benches reused; only named local fittings. No merged wall scene attached to small detail.\n\nB11-DETAIL-001-D02 \u2014 Suspended star ornament. Dimensions W,D,H [1.5, 0.15, 1.5]m proposed. One isolated suspended star ornament, strictly follow local source colour/material/motif instead of universal pink marble. Show real depth, flat back/host contact or one consistent repeat profile. Existing generic lanterns/flowers/benches reused; only named local fittings. No merged wall scene attached to small detail.\n\nB11-DETAIL-001-D03 \u2014 Rock seat fastening plate. Dimensions W,D,H [0.2, 0.12, 0.25]m proposed. One isolated rock seat fastening plate, strictly follow local source colour/material/motif instead of universal pink marble. Show real depth, flat back/host contact or one consistent repeat profile. Existing generic lanterns/flowers/benches reused; only named local fittings. No merged wall scene attached to small detail.\n\nB11-DETAIL-001-D04 \u2014 Crescent ledge edge tile. Dimensions W,D,H [1.5, 0.15, 1.5]m proposed. One isolated crescent ledge edge tile, strictly follow local source colour/material/motif instead of universal pink marble. Show real depth, flat back/host contact or one consistent repeat profile. Existing generic lanterns/flowers/benches reused; only named local fittings. No merged wall scene attached to small detail.\n\nB11-DETAIL-001-D05 \u2014 Gold pendant hanger. Dimensions W,D,H [0.2, 0.12, 0.25]m proposed. One isolated gold pendant hanger, strictly follow local source colour/material/motif instead of universal pink marble. Show real depth, flat back/host contact or one consistent repeat profile. Existing generic lanterns/flowers/benches reused; only named local fittings. No merged wall scene attached to small detail.\n\nB11-DETAIL-001-D06 \u2014 Tidal step edge strip. Dimensions W,D,H [1.5, 0.15, 1.5]m proposed. One isolated tidal step edge strip, strictly follow local source colour/material/motif instead of universal pink marble. Show real depth, flat back/host contact or one consistent repeat profile. Existing generic lanterns/flowers/benches reused; only named local fittings. No merged wall scene attached to small detail.\n\nB11-DETAIL-001-D07 \u2014 Arch carved nacre panel. Dimensions W,D,H [1.5, 0.15, 1.5]m proposed. One isolated arch carved nacre panel, strictly follow local source colour/material/motif instead of universal pink marble. Show real depth, flat back/host contact or one consistent repeat profile. Existing generic lanterns/flowers/benches reused; only named local fittings. No merged wall scene attached to small detail.\n\nB11-DETAIL-001-D08 \u2014 Rock lookout rail shoe. Dimensions W,D,H [0.2, 0.12, 0.25]m proposed. One isolated rock lookout rail shoe, strictly follow local source colour/material/motif instead of universal pink marble. Show real depth, flat back/host contact or one consistent repeat profile. Existing generic lanterns/flowers/benches reused; only named local fittings. No merged wall scene attached to small detail.\n\nB11-DETAIL-001-D09 \u2014 Stone path border unit. Dimensions W,D,H [1.5, 0.15, 1.5]m proposed. One isolated stone path border unit, strictly follow local source colour/material/motif instead of universal pink marble. Show real depth, flat back/host contact or one consistent repeat profile. Existing generic lanterns/flowers/benches reused; only named local fittings. No merged wall scene attached to small detail.\n\nB11-DETAIL-001-D10 \u2014 Cave opening reveal trim. Dimensions W,D,H [1.5, 0.15, 1.5]m proposed. One isolated cave opening reveal trim, strictly follow local source colour/material/motif instead of universal pink marble. Show real depth, flat back/host contact or one consistent repeat profile. Existing generic lanterns/flowers/benches reused; only named local fittings. No merged wall scene attached to small detail.\n\nB11-DETAIL-001-D11 \u2014 Tide pool rim stone. Dimensions W,D,H [1.5, 0.15, 1.5]m proposed. One isolated tide pool rim stone, strictly follow local source colour/material/motif instead of universal pink marble. Show real depth, flat back/host contact or one consistent repeat profile. Existing generic lanterns/flowers/benches reused; only named local fittings. No merged wall scene attached to small detail.\n\nB11-DETAIL-001-D12 \u2014 Small lookout lantern mount. Dimensions W,D,H [0.2, 0.12, 0.25]m proposed. One isolated small lookout lantern mount, strictly follow local source colour/material/motif instead of universal pink marble. Show real depth, flat back/host contact or one consistent repeat profile. Existing generic lanterns/flowers/benches reused; only named local fittings. No merged wall scene attached to small detail.\n\nCRITICAL part isolation and orientation rules:\nB11-DETAIL-001-D01: SMALL attachment hardware only: plate/socket/hook/joint with its own hole/root and source-compatible quiet ornament. No lantern body, full arch, whole column, complete door, garden or giant architectural scene glued to it.\nB11-DETAIL-001-D03: SMALL attachment hardware only: plate/socket/hook/joint with its own hole/root and source-compatible quiet ornament. No lantern body, full arch, whole column, complete door, garden or giant architectural scene glued to it.\nB11-DETAIL-001-D05: SMALL attachment hardware only: plate/socket/hook/joint with its own hole/root and source-compatible quiet ornament. No lantern body, full arch, whole column, complete door, garden or giant architectural scene glued to it.\nB11-DETAIL-001-D08: SMALL attachment hardware only: plate/socket/hook/joint with its own hole/root and source-compatible quiet ornament. No lantern body, full arch, whole column, complete door, garden or giant architectural scene glued to it.\nB11-DETAIL-001-D12: SMALL attachment hardware only: plate/socket/hook/joint with its own hole/root and source-compatible quiet ornament. No lantern body, full arch, whole column, complete door, garden or giant architectural scene glued to it.",
+  "parts": [
+    {
+      "asset_id": "B11-DETAIL-001-D01",
+      "name": "Rock arch star socket",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        0.2,
+        0.12,
+        0.25
+      ],
+      "function": "Need source-shaped arch footing/curve/crown sections and their hidden contact faces; use shared shoreline rocks, sand and waves. Opal veins/pearls/star pendants exist in image, so add isolated attachment views only where unclear. Salt plants/seabirds/crabs proposed; tide/navigation unverified. Missing detached construction pieces and local interior-facing patterns.",
+      "construction": "One isolated rock arch star socket, strictly follow local source colour/material/motif instead of universal pink marble. Show real depth, flat back/host contact or one consistent repeat profile. Existing generic lanterns/flowers/benches reused; only named local fittings. No merged wall scene attached to small detail. SMALL attachment hardware only: plate/socket/hook/joint with its own hole/root and source-compatible quiet ornament. No lantern body, full arch, whole column, complete door, garden or giant architectural scene glued to it.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B11"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B11-DETAIL-001-D01__rock-arch-star-socket__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "B11-DETAIL-001-D02",
+      "name": "Suspended star ornament",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        1.5,
+        0.15,
+        1.5
+      ],
+      "function": "Need source-shaped arch footing/curve/crown sections and their hidden contact faces; use shared shoreline rocks, sand and waves. Opal veins/pearls/star pendants exist in image, so add isolated attachment views only where unclear. Salt plants/seabirds/crabs proposed; tide/navigation unverified. Missing detached construction pieces and local interior-facing patterns.",
+      "construction": "One isolated suspended star ornament, strictly follow local source colour/material/motif instead of universal pink marble. Show real depth, flat back/host contact or one consistent repeat profile. Existing generic lanterns/flowers/benches reused; only named local fittings. No merged wall scene attached to small detail.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B11"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B11-DETAIL-001-D02__suspended-star-ornament__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "B11-DETAIL-001-D03",
+      "name": "Rock seat fastening plate",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        0.2,
+        0.12,
+        0.25
+      ],
+      "function": "Need source-shaped arch footing/curve/crown sections and their hidden contact faces; use shared shoreline rocks, sand and waves. Opal veins/pearls/star pendants exist in image, so add isolated attachment views only where unclear. Salt plants/seabirds/crabs proposed; tide/navigation unverified. Missing detached construction pieces and local interior-facing patterns.",
+      "construction": "One isolated rock seat fastening plate, strictly follow local source colour/material/motif instead of universal pink marble. Show real depth, flat back/host contact or one consistent repeat profile. Existing generic lanterns/flowers/benches reused; only named local fittings. No merged wall scene attached to small detail. SMALL attachment hardware only: plate/socket/hook/joint with its own hole/root and source-compatible quiet ornament. No lantern body, full arch, whole column, complete door, garden or giant architectural scene glued to it.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B11"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B11-DETAIL-001-D03__rock-seat-fastening-plate__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "B11-DETAIL-001-D04",
+      "name": "Crescent ledge edge tile",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        1.5,
+        0.15,
+        1.5
+      ],
+      "function": "Need source-shaped arch footing/curve/crown sections and their hidden contact faces; use shared shoreline rocks, sand and waves. Opal veins/pearls/star pendants exist in image, so add isolated attachment views only where unclear. Salt plants/seabirds/crabs proposed; tide/navigation unverified. Missing detached construction pieces and local interior-facing patterns.",
+      "construction": "One isolated crescent ledge edge tile, strictly follow local source colour/material/motif instead of universal pink marble. Show real depth, flat back/host contact or one consistent repeat profile. Existing generic lanterns/flowers/benches reused; only named local fittings. No merged wall scene attached to small detail.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B11"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B11-DETAIL-001-D04__crescent-ledge-edge-tile__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "B11-DETAIL-001-D05",
+      "name": "Gold pendant hanger",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        0.2,
+        0.12,
+        0.25
+      ],
+      "function": "Need source-shaped arch footing/curve/crown sections and their hidden contact faces; use shared shoreline rocks, sand and waves. Opal veins/pearls/star pendants exist in image, so add isolated attachment views only where unclear. Salt plants/seabirds/crabs proposed; tide/navigation unverified. Missing detached construction pieces and local interior-facing patterns.",
+      "construction": "One isolated gold pendant hanger, strictly follow local source colour/material/motif instead of universal pink marble. Show real depth, flat back/host contact or one consistent repeat profile. Existing generic lanterns/flowers/benches reused; only named local fittings. No merged wall scene attached to small detail. SMALL attachment hardware only: plate/socket/hook/joint with its own hole/root and source-compatible quiet ornament. No lantern body, full arch, whole column, complete door, garden or giant architectural scene glued to it.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B11"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B11-DETAIL-001-D05__gold-pendant-hanger__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "B11-DETAIL-001-D06",
+      "name": "Tidal step edge strip",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        1.5,
+        0.15,
+        1.5
+      ],
+      "function": "Need source-shaped arch footing/curve/crown sections and their hidden contact faces; use shared shoreline rocks, sand and waves. Opal veins/pearls/star pendants exist in image, so add isolated attachment views only where unclear. Salt plants/seabirds/crabs proposed; tide/navigation unverified. Missing detached construction pieces and local interior-facing patterns.",
+      "construction": "One isolated tidal step edge strip, strictly follow local source colour/material/motif instead of universal pink marble. Show real depth, flat back/host contact or one consistent repeat profile. Existing generic lanterns/flowers/benches reused; only named local fittings. No merged wall scene attached to small detail.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B11"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B11-DETAIL-001-D06__tidal-step-edge-strip__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "B11-DETAIL-001-D07",
+      "name": "Arch carved nacre panel",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        1.5,
+        0.15,
+        1.5
+      ],
+      "function": "Need source-shaped arch footing/curve/crown sections and their hidden contact faces; use shared shoreline rocks, sand and waves. Opal veins/pearls/star pendants exist in image, so add isolated attachment views only where unclear. Salt plants/seabirds/crabs proposed; tide/navigation unverified. Missing detached construction pieces and local interior-facing patterns.",
+      "construction": "One isolated arch carved nacre panel, strictly follow local source colour/material/motif instead of universal pink marble. Show real depth, flat back/host contact or one consistent repeat profile. Existing generic lanterns/flowers/benches reused; only named local fittings. No merged wall scene attached to small detail.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B11"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B11-DETAIL-001-D07__arch-carved-nacre-panel__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "B11-DETAIL-001-D08",
+      "name": "Rock lookout rail shoe",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        0.2,
+        0.12,
+        0.25
+      ],
+      "function": "Need source-shaped arch footing/curve/crown sections and their hidden contact faces; use shared shoreline rocks, sand and waves. Opal veins/pearls/star pendants exist in image, so add isolated attachment views only where unclear. Salt plants/seabirds/crabs proposed; tide/navigation unverified. Missing detached construction pieces and local interior-facing patterns.",
+      "construction": "One isolated rock lookout rail shoe, strictly follow local source colour/material/motif instead of universal pink marble. Show real depth, flat back/host contact or one consistent repeat profile. Existing generic lanterns/flowers/benches reused; only named local fittings. No merged wall scene attached to small detail. SMALL attachment hardware only: plate/socket/hook/joint with its own hole/root and source-compatible quiet ornament. No lantern body, full arch, whole column, complete door, garden or giant architectural scene glued to it.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B11"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B11-DETAIL-001-D08__rock-lookout-rail-shoe__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "B11-DETAIL-001-D09",
+      "name": "Stone path border unit",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        1.5,
+        0.15,
+        1.5
+      ],
+      "function": "Need source-shaped arch footing/curve/crown sections and their hidden contact faces; use shared shoreline rocks, sand and waves. Opal veins/pearls/star pendants exist in image, so add isolated attachment views only where unclear. Salt plants/seabirds/crabs proposed; tide/navigation unverified. Missing detached construction pieces and local interior-facing patterns.",
+      "construction": "One isolated stone path border unit, strictly follow local source colour/material/motif instead of universal pink marble. Show real depth, flat back/host contact or one consistent repeat profile. Existing generic lanterns/flowers/benches reused; only named local fittings. No merged wall scene attached to small detail.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B11"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B11-DETAIL-001-D09__stone-path-border-unit__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "B11-DETAIL-001-D10",
+      "name": "Cave opening reveal trim",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        1.5,
+        0.15,
+        1.5
+      ],
+      "function": "Need source-shaped arch footing/curve/crown sections and their hidden contact faces; use shared shoreline rocks, sand and waves. Opal veins/pearls/star pendants exist in image, so add isolated attachment views only where unclear. Salt plants/seabirds/crabs proposed; tide/navigation unverified. Missing detached construction pieces and local interior-facing patterns.",
+      "construction": "One isolated cave opening reveal trim, strictly follow local source colour/material/motif instead of universal pink marble. Show real depth, flat back/host contact or one consistent repeat profile. Existing generic lanterns/flowers/benches reused; only named local fittings. No merged wall scene attached to small detail.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B11"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B11-DETAIL-001-D10__cave-opening-reveal-trim__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "B11-DETAIL-001-D11",
+      "name": "Tide pool rim stone",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        1.5,
+        0.15,
+        1.5
+      ],
+      "function": "Need source-shaped arch footing/curve/crown sections and their hidden contact faces; use shared shoreline rocks, sand and waves. Opal veins/pearls/star pendants exist in image, so add isolated attachment views only where unclear. Salt plants/seabirds/crabs proposed; tide/navigation unverified. Missing detached construction pieces and local interior-facing patterns.",
+      "construction": "One isolated tide pool rim stone, strictly follow local source colour/material/motif instead of universal pink marble. Show real depth, flat back/host contact or one consistent repeat profile. Existing generic lanterns/flowers/benches reused; only named local fittings. No merged wall scene attached to small detail.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B11"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B11-DETAIL-001-D11__tide-pool-rim-stone__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "B11-DETAIL-001-D12",
+      "name": "Small lookout lantern mount",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        0.2,
+        0.12,
+        0.25
+      ],
+      "function": "Need source-shaped arch footing/curve/crown sections and their hidden contact faces; use shared shoreline rocks, sand and waves. Opal veins/pearls/star pendants exist in image, so add isolated attachment views only where unclear. Salt plants/seabirds/crabs proposed; tide/navigation unverified. Missing detached construction pieces and local interior-facing patterns.",
+      "construction": "One isolated small lookout lantern mount, strictly follow local source colour/material/motif instead of universal pink marble. Show real depth, flat back/host contact or one consistent repeat profile. Existing generic lanterns/flowers/benches reused; only named local fittings. No merged wall scene attached to small detail. SMALL attachment hardware only: plate/socket/hook/joint with its own hole/root and source-compatible quiet ornament. No lantern body, full arch, whole column, complete door, garden or giant architectural scene glued to it.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B11"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B11-DETAIL-001-D12__small-lookout-lantern-mount__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    }
+  ],
+  "outputs": [],
+  "previous_attempts": [],
+  "models_generated": 0,
+  "physical_join_fit_verified": false,
+  "view_geometry_parity_verified": false,
+  "review_status": "planned-after-gap-audit",
+  "gap": "Need source-shaped arch footing/curve/crown sections and their hidden contact faces; use shared shoreline rocks, sand and waves. Opal veins/pearls/star pendants exist in image, so add isolated attachment views only where unclear. Salt plants/seabirds/crabs proposed; tide/navigation unverified. Missing detached construction pieces and local interior-facing patterns.",
+  "mode": "detail"
+}

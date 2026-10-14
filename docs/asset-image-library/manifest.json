@@ -1,10 +1,12 @@
 {
   "date": "2026-10-13",
-  "distinct_image_count": 812,
+  "distinct_image_count": 822,
   "source_file_count": 969,
-  "total_bytes": 753940349,
+  "total_bytes": 778820334,
   "categories": {
     "additional-generated-studies": 33,
+    "completion-reference-kits": 9,
+    "completion-superseded-drafts": 1,
     "component-development-studies": 3,
     "illustrated-boards": 45,
     "interior-celebration-source-panels": 9,
@@ -16432,6 +16434,267 @@
       "reference_role": "superseded-building-reference",
       "design_status": "GEN-05-derived component proposal; unseen backs and dimensions inferred; no geometry approval",
       "review_status": "rejected-preserved"
+    },
+    {
+      "id": "B02-INNER-001",
+      "title": "Moon Water Palace \u2014 dome interior construction",
+      "label": "B02-INNER-001 \u2014 Moon Water Palace \u2014 dome interior construction",
+      "category": "completion-reference-kits",
+      "file": "completion-pass/B02-INNER-001/B02-INNER-001.png",
+      "sha256": "6a9cf76baed7a028bd948bf3d85cb35ac512325728944290179fad31f4e3d999",
+      "bytes": 2701707,
+      "source_aliases": [
+        "/workspace/generated_images/exec-abc1e07c-dd0f-4ca4-a4c8-c131e58d63fb.png"
+      ],
+      "alias_ids": [],
+      "component_ids": [
+        "B02-INNER-001-S01",
+        "B02-INNER-001-S02",
+        "B02-INNER-001-S03",
+        "B02-INNER-001-S04"
+      ],
+      "related_image_ids": [
+        "SRC-LOC-B02-GEN-05"
+      ],
+      "reference_role": "source-compatible-missing-component-reference",
+      "design_status": "Visible source forms guide design; hidden geometry and metrics proposed; no model or layout approval",
+      "review_status": "pending-user-reference-and-model-review"
+    },
+    {
+      "id": "B02-INNER-DETAIL-001",
+      "title": "Moon Water Palace \u2014 interior surfaces and fittings",
+      "label": "B02-INNER-DETAIL-001 \u2014 Moon Water Palace \u2014 interior surfaces and fittings",
+      "category": "completion-reference-kits",
+      "file": "completion-pass/B02-INNER-DETAIL-001/B02-INNER-DETAIL-001.png",
+      "sha256": "41b1c1d84f667955c147e25443762c183e171f44f295d9fcc5f23c3f91d34b9c",
+      "bytes": 2559623,
+      "source_aliases": [
+        "/workspace/generated_images/exec-c0027a69-c141-4063-8306-0278e8d68ee4.png"
+      ],
+      "alias_ids": [],
+      "component_ids": [
+        "B02-INNER-DETAIL-001-D01",
+        "B02-INNER-DETAIL-001-D02",
+        "B02-INNER-DETAIL-001-D03",
+        "B02-INNER-DETAIL-001-D04",
+        "B02-INNER-DETAIL-001-D05",
+        "B02-INNER-DETAIL-001-D06",
+        "B02-INNER-DETAIL-001-D07",
+        "B02-INNER-DETAIL-001-D08",
+        "B02-INNER-DETAIL-001-D09",
+        "B02-INNER-DETAIL-001-D10",
+        "B02-INNER-DETAIL-001-D11",
+        "B02-INNER-DETAIL-001-D12",
+        "B02-INNER-DETAIL-001-D13",
+        "B02-INNER-DETAIL-001-D14",
+        "B02-INNER-DETAIL-001-D15",
+        "B02-INNER-DETAIL-001-D16"
+      ],
+      "related_image_ids": [
+        "SRC-LOC-B02-GEN-05"
+      ],
+      "reference_role": "source-compatible-missing-component-reference",
+      "design_status": "Visible source forms guide design; hidden geometry and metrics proposed; no model or layout approval",
+      "review_status": "pending-user-reference-and-model-review"
+    },
+    {
+      "id": "WLD-WATER-STRUCT-001",
+      "title": "Shared rills and pool connections",
+      "label": "WLD-WATER-STRUCT-001 \u2014 Shared rills and pool connections",
+      "category": "completion-reference-kits",
+      "file": "completion-pass/WLD-WATER-STRUCT-001/WLD-WATER-STRUCT-001.png",
+      "sha256": "787e9646b239ca554e5ce399b883572d202f32dc5a7c87d51a974bc19c1f8e99",
+      "bytes": 2513278,
+      "source_aliases": [
+        "/workspace/generated_images/exec-7839cf34-4fbb-4896-9e3f-79380df0df59.png"
+      ],
+      "alias_ids": [],
+      "component_ids": [
+        "WLD-WATER-STRUCT-001-S01",
+        "WLD-WATER-STRUCT-001-S02",
+        "WLD-WATER-STRUCT-001-S03",
+        "WLD-WATER-STRUCT-001-S04"
+      ],
+      "related_image_ids": [
+        "GEN-22"
+      ],
+      "reference_role": "source-compatible-missing-component-reference",
+      "design_status": "Visible source forms guide design; hidden geometry and metrics proposed; no model or layout approval",
+      "review_status": "pending-user-reference-and-model-review"
+    },
+    {
+      "id": "WLD-WATER-DETAIL-001",
+      "title": "Shared water edge and channel fittings",
+      "label": "WLD-WATER-DETAIL-001 \u2014 Shared water edge and channel fittings",
+      "category": "completion-reference-kits",
+      "file": "completion-pass/WLD-WATER-DETAIL-001/WLD-WATER-DETAIL-001.png",
+      "sha256": "d2a6f358347de8e75391ee97efac3eb9e2dff79b0bdbd6a8faf01d26dbddbd92",
+      "bytes": 2277673,
+      "source_aliases": [
+        "/workspace/generated_images/exec-b44c5d0e-d96d-4d94-954b-cac1f63d9be8.png"
+      ],
+      "alias_ids": [],
+      "component_ids": [
+        "WLD-WATER-DETAIL-001-D01",
+        "WLD-WATER-DETAIL-001-D02",
+        "WLD-WATER-DETAIL-001-D03",
+        "WLD-WATER-DETAIL-001-D04",
+        "WLD-WATER-DETAIL-001-D05",
+        "WLD-WATER-DETAIL-001-D06",
+        "WLD-WATER-DETAIL-001-D07",
+        "WLD-WATER-DETAIL-001-D08",
+        "WLD-WATER-DETAIL-001-D09",
+        "WLD-WATER-DETAIL-001-D10",
+        "WLD-WATER-DETAIL-001-D11",
+        "WLD-WATER-DETAIL-001-D12"
+      ],
+      "related_image_ids": [
+        "GEN-22"
+      ],
+      "reference_role": "source-compatible-missing-component-reference",
+      "design_status": "Visible source forms guide design; hidden geometry and metrics proposed; no model or layout approval",
+      "review_status": "pending-user-reference-and-model-review"
+    },
+    {
+      "id": "WLD-WATER-DETAIL-001-R01",
+      "title": "Shared water edge and channel fittings \u2014 superseded draft",
+      "label": "WLD-WATER-DETAIL-001-R01 \u2014 superseded draft",
+      "category": "completion-superseded-drafts",
+      "file": "completion-pass/WLD-WATER-DETAIL-001/WLD-WATER-DETAIL-001-R01.png",
+      "sha256": "0e6c6f5fd338bcecaed307979bc437e6e12569167106fc73ae2539fab6e90dc2",
+      "bytes": 2465162,
+      "source_aliases": [
+        "/workspace/generated_images/exec-b3fa71f7-d680-40f0-aa15-2988e0994cf4.png"
+      ],
+      "alias_ids": [],
+      "component_ids": [],
+      "related_image_ids": [
+        "WLD-WATER-DETAIL-001"
+      ],
+      "reference_role": "superseded-construction-reference",
+      "design_status": "D08seal became a whole channel block, D10divider became a junction structure, D11marker has no graduated marks. Need isolated actual named small parts.",
+      "review_status": "rejected-preserved"
+    },
+    {
+      "id": "T02-FAUNA-001",
+      "title": "Freshwater pond fauna",
+      "label": "T02-FAUNA-001 \u2014 Freshwater pond fauna",
+      "category": "completion-reference-kits",
+      "file": "completion-pass/T02-FAUNA-001/T02-FAUNA-001.png",
+      "sha256": "3c6787f99501124fd46fc662466aaf8e508c1b2616ded171fcaa8bc88229145f",
+      "bytes": 1958323,
+      "source_aliases": [
+        "/workspace/generated_images/exec-c6855c24-b40d-49c5-89e3-49d4500c7d3c.png"
+      ],
+      "alias_ids": [],
+      "component_ids": [
+        "T02-FAUNA-001-A01",
+        "T02-FAUNA-001-A02",
+        "T02-FAUNA-001-A03",
+        "T02-FAUNA-001-A04"
+      ],
+      "related_image_ids": [],
+      "reference_role": "source-compatible-missing-component-reference",
+      "design_status": "Visible source forms guide design; hidden geometry and metrics proposed; no model or layout approval",
+      "review_status": "pending-user-reference-and-model-review"
+    },
+    {
+      "id": "T02-FAUNA-002",
+      "title": "Freshwater fish references",
+      "label": "T02-FAUNA-002 \u2014 Freshwater fish references",
+      "category": "completion-reference-kits",
+      "file": "completion-pass/T02-FAUNA-002/T02-FAUNA-002.png",
+      "sha256": "f68f79595b069c0d60707c9022b86b5aafb75f1346963a93438b1e8a68289250",
+      "bytes": 2212168,
+      "source_aliases": [
+        "/workspace/generated_images/exec-70d64294-8222-46e6-a77d-e0c447553ec5.png"
+      ],
+      "alias_ids": [],
+      "component_ids": [
+        "T02-FAUNA-002-A01",
+        "T02-FAUNA-002-A02",
+        "T02-FAUNA-002-A03",
+        "T02-FAUNA-002-A04"
+      ],
+      "related_image_ids": [],
+      "reference_role": "source-compatible-missing-component-reference",
+      "design_status": "Visible source forms guide design; hidden geometry and metrics proposed; no model or layout approval",
+      "review_status": "pending-user-reference-and-model-review"
+    },
+    {
+      "id": "T05-CONIFER-001",
+      "title": "Mistwood and woodland evergreen trees",
+      "label": "T05-CONIFER-001 \u2014 Mistwood and woodland evergreen trees",
+      "category": "completion-reference-kits",
+      "file": "completion-pass/T05-CONIFER-001/T05-CONIFER-001.png",
+      "sha256": "dfc403126f99318a3f2c2c06679f9ce46c8c9ca522d4351c69196d953b5e9382",
+      "bytes": 2791590,
+      "source_aliases": [
+        "/workspace/generated_images/exec-5e2c89d2-df34-4ead-8dde-4b34efb7436a.png"
+      ],
+      "alias_ids": [],
+      "component_ids": [
+        "T05-CONIFER-001-A01",
+        "T05-CONIFER-001-A02",
+        "T05-CONIFER-001-A03",
+        "T05-CONIFER-001-A04"
+      ],
+      "related_image_ids": [
+        "GEN-09"
+      ],
+      "reference_role": "source-compatible-missing-component-reference",
+      "design_status": "Visible source forms guide design; hidden geometry and metrics proposed; no model or layout approval",
+      "review_status": "pending-user-reference-and-model-review"
+    },
+    {
+      "id": "T01-ORCHID-001",
+      "title": "Conservatory orchid varieties",
+      "label": "T01-ORCHID-001 \u2014 Conservatory orchid varieties",
+      "category": "completion-reference-kits",
+      "file": "completion-pass/T01-ORCHID-001/T01-ORCHID-001.png",
+      "sha256": "272a5a51f2fc9d986c2fbf74d9101ad82d59af9100fa5f55e90efbe990d06252",
+      "bytes": 2556833,
+      "source_aliases": [
+        "/workspace/generated_images/exec-19003d61-147e-4388-9acc-fb05cd8fa0a4.png"
+      ],
+      "alias_ids": [],
+      "component_ids": [
+        "T01-ORCHID-001-A01",
+        "T01-ORCHID-001-A02",
+        "T01-ORCHID-001-A03",
+        "T01-ORCHID-001-A04"
+      ],
+      "related_image_ids": [
+        "SRC-LOC-B25-GEN-06"
+      ],
+      "reference_role": "source-compatible-missing-component-reference",
+      "design_status": "Visible source forms guide design; hidden geometry and metrics proposed; no model or layout approval",
+      "review_status": "pending-user-reference-and-model-review"
+    },
+    {
+      "id": "T01-CITRUS-001",
+      "title": "Conservatory and lagoon fruit trees",
+      "label": "T01-CITRUS-001 \u2014 Conservatory and lagoon fruit trees",
+      "category": "completion-reference-kits",
+      "file": "completion-pass/T01-CITRUS-001/T01-CITRUS-001.png",
+      "sha256": "85d2023279f6bbc425b689633932e420efe192872db043e84604c85bcd1e232b",
+      "bytes": 2843628,
+      "source_aliases": [
+        "/workspace/generated_images/exec-c2fd8097-c018-408d-9b4c-7d7851833fd3.png"
+      ],
+      "alias_ids": [],
+      "component_ids": [
+        "T01-CITRUS-001-A01",
+        "T01-CITRUS-001-A02",
+        "T01-CITRUS-001-A03",
+        "T01-CITRUS-001-A04"
+      ],
+      "related_image_ids": [
+        "GEN-26"
+      ],
+      "reference_role": "source-compatible-missing-component-reference",
+      "design_status": "Visible source forms guide design; hidden geometry and metrics proposed; no model or layout approval",
+      "review_status": "pending-user-reference-and-model-review"
     }
   ],
   "label_schema_version": 1

@@ -1,0 +1,153 @@
+{
+  "sheet_id": "T03-CORAL-001",
+  "name": "Living coral growth forms",
+  "owner": "terrain-water-and-planting",
+  "family": "Coast, open sea and reefs",
+  "location_id": null,
+  "source_reference_id": null,
+  "source_reference_file": null,
+  "source_reference_sha256": null,
+  "prompt": "Create ONE clean detailed GAME ASSET REFERENCE SHEET, NOT Blender or a3Dmodel. Plain light ivory studio background, soft even light, full uncropped separate objects, readable thickness, precise non-melting forms. FULL IDs and names outside silhouettes, dimensions marked PROPOSED. Each cell independent illustration scale. No environment scenery, humans, extra unlabeled objects, watermark or whole-palace redesign. Use ONLY the single supplied source image for visible style/material/form authority; infer missing backs and assembly interfaces conservatively. Source illustration motifs are inspiration, not recovered measured geometry. This new habitat-form sheet has NO image input; use the explicit natural/magical form descriptions below, not invented jewelry or clothing. Exactly4 whole natural creatures in separate readable cells, main profile/three-quarter view and smaller front/back or top view of the SAME individual in the SAME restful pose. Complete feet/tails/fins/wings, believable anatomy; no fused feet, duplicated tails, extra limbs or costume. Four legs for quadrupeds, two legs/two wings for birds, six legs for insects, correct fish fin plan. No habitat/branches/water/pedestal attached. No rig or animation claimed. Title \"T03-CORAL-001 \u2014 Living coral growth forms\". Footer \"Proposed construction / source-compatible references / mesh joins and views unverified\".\n\nPurpose/gap: Living coral animals, separate unmounted colony forms with visible base, realistic continuous branches/plate/fan. Gentle rose/cream/turquoise accents, not palace stone carvings. Taxonomy and biology unverified.\n\nT03-CORAL-001-A01 \u2014 Branching coral colony. Dimensions W,D,H [1.5, 1.5, 1.2]m proposed. One isolated branching coral colony. Living coral animals, separate unmounted colony forms with visible base, realistic continuous branches/plate/fan. Gentle rose/cream/turquoise accents, not palace stone carvings. Taxonomy and biology unverified. Coherent actual silhouette, visible root/underside/side; no unrelated architecture/scenery attached. Other existing named species/forms must not be regenerated. Local material consistent with source. Dimensions are proposals to refine by subject.\n\nT03-CORAL-001-A02 \u2014 Rounded brain coral. Dimensions W,D,H [1.5, 1.5, 1.2]m proposed. One isolated rounded brain coral. Living coral animals, separate unmounted colony forms with visible base, realistic continuous branches/plate/fan. Gentle rose/cream/turquoise accents, not palace stone carvings. Taxonomy and biology unverified. Coherent actual silhouette, visible root/underside/side; no unrelated architecture/scenery attached. Other existing named species/forms must not be regenerated. Local material consistent with source. Dimensions are proposals to refine by subject.\n\nT03-CORAL-001-A03 \u2014 Plate coral colony. Dimensions W,D,H [1.5, 1.5, 1.2]m proposed. One isolated plate coral colony. Living coral animals, separate unmounted colony forms with visible base, realistic continuous branches/plate/fan. Gentle rose/cream/turquoise accents, not palace stone carvings. Taxonomy and biology unverified. Coherent actual silhouette, visible root/underside/side; no unrelated architecture/scenery attached. Other existing named species/forms must not be regenerated. Local material consistent with source. Dimensions are proposals to refine by subject.\n\nT03-CORAL-001-A04 \u2014 Soft fan coral. Dimensions W,D,H [1.5, 1.5, 1.2]m proposed. One isolated soft fan coral. Living coral animals, separate unmounted colony forms with visible base, realistic continuous branches/plate/fan. Gentle rose/cream/turquoise accents, not palace stone carvings. Taxonomy and biology unverified. Coherent actual silhouette, visible root/underside/side; no unrelated architecture/scenery attached. Other existing named species/forms must not be regenerated. Local material consistent with source. Dimensions are proposals to refine by subject.",
+  "parts": [
+    {
+      "asset_id": "T03-CORAL-001-A01",
+      "name": "Branching coral colony",
+      "kind": "fauna-reference",
+      "dimensions_m_proposed": [
+        1.5,
+        1.5,
+        1.2
+      ],
+      "function": "Living coral animals, separate unmounted colony forms with visible base, realistic continuous branches/plate/fan. Gentle rose/cream/turquoise accents, not palace stone carvings. Taxonomy and biology unverified.",
+      "construction": "One isolated branching coral colony. Living coral animals, separate unmounted colony forms with visible base, realistic continuous branches/plate/fan. Gentle rose/cream/turquoise accents, not palace stone carvings. Taxonomy and biology unverified. Coherent actual silhouette, visible root/underside/side; no unrelated architecture/scenery attached. Other existing named species/forms must not be regenerated. Local material consistent with source. Dimensions are proposals to refine by subject.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Head +Y and Zup",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Coast, open sea and reefs"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "T03-CORAL-001-A01__branching-coral-colony__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed",
+      "rig_status": "not-created",
+      "animation_status": "not-created",
+      "anatomy_verified": false
+    },
+    {
+      "asset_id": "T03-CORAL-001-A02",
+      "name": "Rounded brain coral",
+      "kind": "fauna-reference",
+      "dimensions_m_proposed": [
+        1.5,
+        1.5,
+        1.2
+      ],
+      "function": "Living coral animals, separate unmounted colony forms with visible base, realistic continuous branches/plate/fan. Gentle rose/cream/turquoise accents, not palace stone carvings. Taxonomy and biology unverified.",
+      "construction": "One isolated rounded brain coral. Living coral animals, separate unmounted colony forms with visible base, realistic continuous branches/plate/fan. Gentle rose/cream/turquoise accents, not palace stone carvings. Taxonomy and biology unverified. Coherent actual silhouette, visible root/underside/side; no unrelated architecture/scenery attached. Other existing named species/forms must not be regenerated. Local material consistent with source. Dimensions are proposals to refine by subject.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Head +Y and Zup",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Coast, open sea and reefs"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "T03-CORAL-001-A02__rounded-brain-coral__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed",
+      "rig_status": "not-created",
+      "animation_status": "not-created",
+      "anatomy_verified": false
+    },
+    {
+      "asset_id": "T03-CORAL-001-A03",
+      "name": "Plate coral colony",
+      "kind": "fauna-reference",
+      "dimensions_m_proposed": [
+        1.5,
+        1.5,
+        1.2
+      ],
+      "function": "Living coral animals, separate unmounted colony forms with visible base, realistic continuous branches/plate/fan. Gentle rose/cream/turquoise accents, not palace stone carvings. Taxonomy and biology unverified.",
+      "construction": "One isolated plate coral colony. Living coral animals, separate unmounted colony forms with visible base, realistic continuous branches/plate/fan. Gentle rose/cream/turquoise accents, not palace stone carvings. Taxonomy and biology unverified. Coherent actual silhouette, visible root/underside/side; no unrelated architecture/scenery attached. Other existing named species/forms must not be regenerated. Local material consistent with source. Dimensions are proposals to refine by subject.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Head +Y and Zup",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Coast, open sea and reefs"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "T03-CORAL-001-A03__plate-coral-colony__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed",
+      "rig_status": "not-created",
+      "animation_status": "not-created",
+      "anatomy_verified": false
+    },
+    {
+      "asset_id": "T03-CORAL-001-A04",
+      "name": "Soft fan coral",
+      "kind": "fauna-reference",
+      "dimensions_m_proposed": [
+        1.5,
+        1.5,
+        1.2
+      ],
+      "function": "Living coral animals, separate unmounted colony forms with visible base, realistic continuous branches/plate/fan. Gentle rose/cream/turquoise accents, not palace stone carvings. Taxonomy and biology unverified.",
+      "construction": "One isolated soft fan coral. Living coral animals, separate unmounted colony forms with visible base, realistic continuous branches/plate/fan. Gentle rose/cream/turquoise accents, not palace stone carvings. Taxonomy and biology unverified. Coherent actual silhouette, visible root/underside/side; no unrelated architecture/scenery attached. Other existing named species/forms must not be regenerated. Local material consistent with source. Dimensions are proposals to refine by subject.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Head +Y and Zup",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Coast, open sea and reefs"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "T03-CORAL-001-A04__soft-fan-coral__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed",
+      "rig_status": "not-created",
+      "animation_status": "not-created",
+      "anatomy_verified": false
+    }
+  ],
+  "outputs": [],
+  "previous_attempts": [],
+  "models_generated": 0,
+  "physical_join_fit_verified": false,
+  "view_geometry_parity_verified": false,
+  "review_status": "planned-after-gap-audit",
+  "gap": "Living coral animals, separate unmounted colony forms with visible base, realistic continuous branches/plate/fan. Gentle rose/cream/turquoise accents, not palace stone carvings. Taxonomy and biology unverified.",
+  "mode": "fauna"
+}

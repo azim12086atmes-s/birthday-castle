@@ -1,0 +1,124 @@
+{
+  "components": [
+    {
+      "asset_id": "B22-STRUCT-001-S01",
+      "name": "Tapered shaft/window band",
+      "kind": "structural-section",
+      "dimensions_m_proposed": [
+        8,
+        6,
+        12
+      ],
+      "function": "Need tapered shaft/base/lantern seat, balcony window band and spiral cladding/ramp decision; source pearl/lilac/gold style retained. Shared shore rocks/dock/stairs/lights reused. Sparse coastal grasses and seabirds; beam effects, internal stairs and tide access remain proposed. Provide missing isolated hosts and join views.",
+      "construction": "One isolated tapered shaft/window band matching the supplied building, its roof/arch/wall silhouette and local materials. Show front and interior/rear/underside contact, not a complete building scene. Actual open column galleries and holes stay open. Extend hidden depth only enough to form a joinable section; no palace-wide plan or added unrelated tower.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B22"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B22-STRUCT-001-S01__tapered-shaft-window-band__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "B22-STRUCT-001-S02",
+      "name": "Lantern crown/gallery seat",
+      "kind": "structural-section",
+      "dimensions_m_proposed": [
+        8,
+        6,
+        12
+      ],
+      "function": "Need tapered shaft/base/lantern seat, balcony window band and spiral cladding/ramp decision; source pearl/lilac/gold style retained. Shared shore rocks/dock/stairs/lights reused. Sparse coastal grasses and seabirds; beam effects, internal stairs and tide access remain proposed. Provide missing isolated hosts and join views.",
+      "construction": "One isolated lantern crown/gallery seat matching the supplied building, its roof/arch/wall silhouette and local materials. Show front and interior/rear/underside contact, not a complete building scene. Actual open column galleries and holes stay open. Extend hidden depth only enough to form a joinable section; no palace-wide plan or added unrelated tower.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B22"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B22-STRUCT-001-S02__lantern-crown-gallery-seat__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "B22-STRUCT-001-S03",
+      "name": "Spiral band or ramp decision",
+      "kind": "structural-section",
+      "dimensions_m_proposed": [
+        8,
+        6,
+        12
+      ],
+      "function": "Need tapered shaft/base/lantern seat, balcony window band and spiral cladding/ramp decision; source pearl/lilac/gold style retained. Shared shore rocks/dock/stairs/lights reused. Sparse coastal grasses and seabirds; beam effects, internal stairs and tide access remain proposed. Provide missing isolated hosts and join views.",
+      "construction": "One isolated spiral band or ramp decision matching the supplied building, its roof/arch/wall silhouette and local materials. Show front and interior/rear/underside contact, not a complete building scene. Actual open column galleries and holes stay open. Extend hidden depth only enough to form a joinable section; no palace-wide plan or added unrelated tower.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B22"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B22-STRUCT-001-S03__spiral-band-or-ramp-decision__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "B22-STRUCT-001-S04",
+      "name": "Rock entry threshold",
+      "kind": "structural-section",
+      "dimensions_m_proposed": [
+        8,
+        6,
+        12
+      ],
+      "function": "Need tapered shaft/base/lantern seat, balcony window band and spiral cladding/ramp decision; source pearl/lilac/gold style retained. Shared shore rocks/dock/stairs/lights reused. Sparse coastal grasses and seabirds; beam effects, internal stairs and tide access remain proposed. Provide missing isolated hosts and join views.",
+      "construction": "One isolated rock entry threshold matching the supplied building, its roof/arch/wall silhouette and local materials. Show front and interior/rear/underside contact, not a complete building scene. Actual open column galleries and holes stay open. Extend hidden depth only enough to form a joinable section; no palace-wide plan or added unrelated tower.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B22"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B22-STRUCT-001-S04__rock-entry-threshold__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    }
+  ]
+}

@@ -1,0 +1,364 @@
+{
+  "components": [
+    {
+      "asset_id": "B24-DETAIL-001-D01",
+      "name": "Coral carved arch cap",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        1.5,
+        0.15,
+        1.5
+      ],
+      "function": "Need star-plan wall/canopy wedges, shell capital/column seats, radial stair and dry-path/reef joins. Reuse source gold finials/tidal-rock vocabulary. Seagrass/seaweed are flora; actual living coral/polyps, fish and crustaceans are fauna, separate from coral-shaped stone carving. Tidal support unverified. Missing detached construction pieces and local interior-facing patterns.",
+      "construction": "One isolated coral carved arch cap, strictly follow local source colour/material/motif instead of universal pink marble. Show real depth, flat back/host contact or one consistent repeat profile. Existing generic lanterns/flowers/benches reused; only named local fittings. No merged wall scene attached to small detail.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B24"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B24-DETAIL-001-D01__coral-carved-arch-cap__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "B24-DETAIL-001-D02",
+      "name": "Shell pillar capital",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        1.5,
+        0.15,
+        1.5
+      ],
+      "function": "Need star-plan wall/canopy wedges, shell capital/column seats, radial stair and dry-path/reef joins. Reuse source gold finials/tidal-rock vocabulary. Seagrass/seaweed are flora; actual living coral/polyps, fish and crustaceans are fauna, separate from coral-shaped stone carving. Tidal support unverified. Missing detached construction pieces and local interior-facing patterns.",
+      "construction": "One isolated shell pillar capital, strictly follow local source colour/material/motif instead of universal pink marble. Show real depth, flat back/host contact or one consistent repeat profile. Existing generic lanterns/flowers/benches reused; only named local fittings. No merged wall scene attached to small detail.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B24"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B24-DETAIL-001-D02__shell-pillar-capital__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "B24-DETAIL-001-D03",
+      "name": "Star shrine floor wedge",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        1.5,
+        1.5,
+        0.12
+      ],
+      "function": "Need star-plan wall/canopy wedges, shell capital/column seats, radial stair and dry-path/reef joins. Reuse source gold finials/tidal-rock vocabulary. Seagrass/seaweed are flora; actual living coral/polyps, fish and crustaceans are fauna, separate from coral-shaped stone carving. Tidal support unverified. Missing detached construction pieces and local interior-facing patterns.",
+      "construction": "One isolated star shrine floor wedge, strictly follow local source colour/material/motif instead of universal pink marble. Show real depth, flat back/host contact or one consistent repeat profile. Existing generic lanterns/flowers/benches reused; only named local fittings. No merged wall scene attached to small detail. This is a FLAT FLOOR piece, not a hanging wall plaque or raised flower sculpture. Show top pattern and a thin edge profile; relief remains shallow enough to walk across.",
+      "attachment_face": "Broad flat underside to floor, shortest dimension vertical Z",
+      "semantic_front": "Decorated broad face up +Z",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B24"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B24-DETAIL-001-D03__star-shrine-floor-wedge__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "B24-DETAIL-001-D04",
+      "name": "Coral stone wall relief",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        1.5,
+        0.15,
+        1.5
+      ],
+      "function": "Need star-plan wall/canopy wedges, shell capital/column seats, radial stair and dry-path/reef joins. Reuse source gold finials/tidal-rock vocabulary. Seagrass/seaweed are flora; actual living coral/polyps, fish and crustaceans are fauna, separate from coral-shaped stone carving. Tidal support unverified. Missing detached construction pieces and local interior-facing patterns.",
+      "construction": "One isolated coral stone wall relief, strictly follow local source colour/material/motif instead of universal pink marble. Show real depth, flat back/host contact or one consistent repeat profile. Existing generic lanterns/flowers/benches reused; only named local fittings. No merged wall scene attached to small detail.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B24"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B24-DETAIL-001-D04__coral-stone-wall-relief__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "B24-DETAIL-001-D05",
+      "name": "Shrine pearl window insert",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        1.5,
+        0.15,
+        1.5
+      ],
+      "function": "Need star-plan wall/canopy wedges, shell capital/column seats, radial stair and dry-path/reef joins. Reuse source gold finials/tidal-rock vocabulary. Seagrass/seaweed are flora; actual living coral/polyps, fish and crustaceans are fauna, separate from coral-shaped stone carving. Tidal support unverified. Missing detached construction pieces and local interior-facing patterns.",
+      "construction": "One isolated shrine pearl window insert, strictly follow local source colour/material/motif instead of universal pink marble. Show real depth, flat back/host contact or one consistent repeat profile. Existing generic lanterns/flowers/benches reused; only named local fittings. No merged wall scene attached to small detail.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B24"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B24-DETAIL-001-D05__shrine-pearl-window-insert__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "B24-DETAIL-001-D06",
+      "name": "Tide pool rim piece",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        1.5,
+        0.15,
+        1.5
+      ],
+      "function": "Need star-plan wall/canopy wedges, shell capital/column seats, radial stair and dry-path/reef joins. Reuse source gold finials/tidal-rock vocabulary. Seagrass/seaweed are flora; actual living coral/polyps, fish and crustaceans are fauna, separate from coral-shaped stone carving. Tidal support unverified. Missing detached construction pieces and local interior-facing patterns.",
+      "construction": "One isolated tide pool rim piece, strictly follow local source colour/material/motif instead of universal pink marble. Show real depth, flat back/host contact or one consistent repeat profile. Existing generic lanterns/flowers/benches reused; only named local fittings. No merged wall scene attached to small detail.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B24"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B24-DETAIL-001-D06__tide-pool-rim-piece__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "B24-DETAIL-001-D07",
+      "name": "Low shell parapet repeat",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        1.5,
+        0.15,
+        1.5
+      ],
+      "function": "Need star-plan wall/canopy wedges, shell capital/column seats, radial stair and dry-path/reef joins. Reuse source gold finials/tidal-rock vocabulary. Seagrass/seaweed are flora; actual living coral/polyps, fish and crustaceans are fauna, separate from coral-shaped stone carving. Tidal support unverified. Missing detached construction pieces and local interior-facing patterns.",
+      "construction": "One isolated low shell parapet repeat, strictly follow local source colour/material/motif instead of universal pink marble. Show real depth, flat back/host contact or one consistent repeat profile. Existing generic lanterns/flowers/benches reused; only named local fittings. No merged wall scene attached to small detail. One continuous rail panel with plain join ends, NO tall end posts, corner towers, flowerbeds or attached stairs. Separate posts handled by hosts.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B24"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B24-DETAIL-001-D07__low-shell-parapet-repeat__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "B24-DETAIL-001-D08",
+      "name": "Shrine stair edge",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        1.5,
+        0.15,
+        1.5
+      ],
+      "function": "Need star-plan wall/canopy wedges, shell capital/column seats, radial stair and dry-path/reef joins. Reuse source gold finials/tidal-rock vocabulary. Seagrass/seaweed are flora; actual living coral/polyps, fish and crustaceans are fauna, separate from coral-shaped stone carving. Tidal support unverified. Missing detached construction pieces and local interior-facing patterns.",
+      "construction": "One isolated shrine stair edge, strictly follow local source colour/material/motif instead of universal pink marble. Show real depth, flat back/host contact or one consistent repeat profile. Existing generic lanterns/flowers/benches reused; only named local fittings. No merged wall scene attached to small detail.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B24"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B24-DETAIL-001-D08__shrine-stair-edge__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "B24-DETAIL-001-D09",
+      "name": "Roof star finial socket",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        0.2,
+        0.12,
+        0.25
+      ],
+      "function": "Need star-plan wall/canopy wedges, shell capital/column seats, radial stair and dry-path/reef joins. Reuse source gold finials/tidal-rock vocabulary. Seagrass/seaweed are flora; actual living coral/polyps, fish and crustaceans are fauna, separate from coral-shaped stone carving. Tidal support unverified. Missing detached construction pieces and local interior-facing patterns.",
+      "construction": "One isolated roof star finial socket, strictly follow local source colour/material/motif instead of universal pink marble. Show real depth, flat back/host contact or one consistent repeat profile. Existing generic lanterns/flowers/benches reused; only named local fittings. No merged wall scene attached to small detail. SMALL attachment hardware only: plate/socket/hook/joint with its own hole/root and source-compatible quiet ornament. No lantern body, full arch, whole column, complete door, garden or giant architectural scene glued to it.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B24"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B24-DETAIL-001-D09__roof-star-finial-socket__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "B24-DETAIL-001-D10",
+      "name": "Coral niche shelf",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        1.5,
+        0.15,
+        1.5
+      ],
+      "function": "Need star-plan wall/canopy wedges, shell capital/column seats, radial stair and dry-path/reef joins. Reuse source gold finials/tidal-rock vocabulary. Seagrass/seaweed are flora; actual living coral/polyps, fish and crustaceans are fauna, separate from coral-shaped stone carving. Tidal support unverified. Missing detached construction pieces and local interior-facing patterns.",
+      "construction": "One isolated coral niche shelf, strictly follow local source colour/material/motif instead of universal pink marble. Show real depth, flat back/host contact or one consistent repeat profile. Existing generic lanterns/flowers/benches reused; only named local fittings. No merged wall scene attached to small detail.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B24"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B24-DETAIL-001-D10__coral-niche-shelf__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "B24-DETAIL-001-D11",
+      "name": "Shell ceiling boss",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        1.5,
+        0.15,
+        1.5
+      ],
+      "function": "Need star-plan wall/canopy wedges, shell capital/column seats, radial stair and dry-path/reef joins. Reuse source gold finials/tidal-rock vocabulary. Seagrass/seaweed are flora; actual living coral/polyps, fish and crustaceans are fauna, separate from coral-shaped stone carving. Tidal support unverified. Missing detached construction pieces and local interior-facing patterns.",
+      "construction": "One isolated shell ceiling boss, strictly follow local source colour/material/motif instead of universal pink marble. Show real depth, flat back/host contact or one consistent repeat profile. Existing generic lanterns/flowers/benches reused; only named local fittings. No merged wall scene attached to small detail.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B24"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B24-DETAIL-001-D11__shell-ceiling-boss__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "B24-DETAIL-001-D12",
+      "name": "Shoreline foot rail join",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        1.5,
+        0.15,
+        1.5
+      ],
+      "function": "Need star-plan wall/canopy wedges, shell capital/column seats, radial stair and dry-path/reef joins. Reuse source gold finials/tidal-rock vocabulary. Seagrass/seaweed are flora; actual living coral/polyps, fish and crustaceans are fauna, separate from coral-shaped stone carving. Tidal support unverified. Missing detached construction pieces and local interior-facing patterns.",
+      "construction": "One isolated shoreline foot rail join, strictly follow local source colour/material/motif instead of universal pink marble. Show real depth, flat back/host contact or one consistent repeat profile. Existing generic lanterns/flowers/benches reused; only named local fittings. No merged wall scene attached to small detail.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B24"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B24-DETAIL-001-D12__shoreline-foot-rail-join__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    }
+  ]
+}

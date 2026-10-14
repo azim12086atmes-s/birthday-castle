@@ -1,0 +1,124 @@
+{
+  "components": [
+    {
+      "asset_id": "WLD-FOUNTAIN-STRUCT-001-S01",
+      "name": "Small lotus fountain basin",
+      "kind": "structural-section",
+      "dimensions_m_proposed": [
+        3,
+        3,
+        2
+      ],
+      "function": "Fountain heroes exist; missing reusable basins, seats, wall hosts and cascade joins",
+      "construction": "One detached small lotus fountain basin in source rose/ivory marble and gold, real concave basin/cavity and solid base contacts, fountain jets/water separate illustrative marks. Clearly visible underside/support and rim join, not a complete garden scene.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Water-garden fittings"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "WLD-FOUNTAIN-STRUCT-001-S01__small-lotus-fountain-basin__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "WLD-FOUNTAIN-STRUCT-001-S02",
+      "name": "Fountain central stem and bowl seat",
+      "kind": "structural-section",
+      "dimensions_m_proposed": [
+        3,
+        3,
+        2
+      ],
+      "function": "Fountain heroes exist; missing reusable basins, seats, wall hosts and cascade joins",
+      "construction": "One detached fountain central stem and bowl seat in source rose/ivory marble and gold, real concave basin/cavity and solid base contacts, fountain jets/water separate illustrative marks. Clearly visible underside/support and rim join, not a complete garden scene.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Water-garden fittings"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "WLD-FOUNTAIN-STRUCT-001-S02__fountain-central-stem-and-bowl-seat__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "WLD-FOUNTAIN-STRUCT-001-S03",
+      "name": "Pool edge fountain cascade section",
+      "kind": "structural-section",
+      "dimensions_m_proposed": [
+        3,
+        3,
+        2
+      ],
+      "function": "Fountain heroes exist; missing reusable basins, seats, wall hosts and cascade joins",
+      "construction": "One detached pool edge fountain cascade section in source rose/ivory marble and gold, real concave basin/cavity and solid base contacts, fountain jets/water separate illustrative marks. Clearly visible underside/support and rim join, not a complete garden scene.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Water-garden fittings"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "WLD-FOUNTAIN-STRUCT-001-S03__pool-edge-fountain-cascade-section__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "WLD-FOUNTAIN-STRUCT-001-S04",
+      "name": "Wall niche and basin fountain host",
+      "kind": "structural-section",
+      "dimensions_m_proposed": [
+        3,
+        3,
+        2
+      ],
+      "function": "Fountain heroes exist; missing reusable basins, seats, wall hosts and cascade joins",
+      "construction": "One detached wall niche and basin fountain host in source rose/ivory marble and gold, real concave basin/cavity and solid base contacts, fountain jets/water separate illustrative marks. Clearly visible underside/support and rim join, not a complete garden scene.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Water-garden fittings"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "WLD-FOUNTAIN-STRUCT-001-S04__wall-niche-and-basin-fountain-host__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    }
+  ]
+}

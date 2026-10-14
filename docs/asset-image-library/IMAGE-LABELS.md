@@ -956,3 +956,7 @@ R03 uses plain tower circles and source-reviewed garden symbols. See [garden pla
 | B02-ROOF-001-R01 | [Moon Water Palace — dome and minaret sections — superseded construction draft](world-location-kits/moon-water-palace/B02-ROOF-001/B02-ROOF-001-R01.png) |
 | B02-DETAIL-001 | [Moon Water Palace — architectural detail kit](world-location-kits/moon-water-palace/B02-DETAIL-001/B02-DETAIL-001.png) |
 | B02-DETAIL-001-R01 | [Moon Water Palace — architectural detail kit — superseded construction draft](world-location-kits/moon-water-palace/B02-DETAIL-001/B02-DETAIL-001-R01.png) |
+
+## Autonomous completion pass
+
+[Saved sheet gallery and gap coverage](completion-pass/README.md) · [All full component IDs/model filenames](completion-pass/components.csv). Existing originals are reused; all models remain unregistered.

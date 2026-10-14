@@ -1,0 +1,412 @@
+{
+  "sheet_id": "WLD-WATER-DETAIL-001",
+  "name": "Shared water edge and channel fittings",
+  "owner": "shared-outdoor-props-and-bridge",
+  "family": "Water-garden fittings",
+  "location_id": null,
+  "source_reference_id": "GEN-22",
+  "source_reference_file": "images/illustrated-boards/GEN-22.png",
+  "source_reference_sha256": "1cf6b019bce335c3fe9db2bd0696f6c85ca8ec791ea8872109466c0727b9aa5e",
+  "prompt": "Edit ONLY D08,D10,D11 in this supplied twelve-cell water-detail sheet. Keep all nine other cells, names, colours, objects and insets unchanged. D08 CHANNEL FLOOR JOIN SEAL: replace whole decorated water-filled block with ONE narrow flat gold/brass seam-cover strip, eighty centimetres long, eight centimetres wide, two centimetres thick, small quiet leaf engraving, NO canal, star sculpture, water, walls, posts or fountain. Show top/bottom/side of same narrow strip. Print proposed0.8x0.08x0.02m. D10 FLOW DIVIDER STONE: replace whole cross channel and tower with ONE low ivory wedge stone with a blunt triangular nose, small gold rim, underside planar for seating inside a rill, thirty centimetres wide, forty centimetres long, fifteen centimetres tall. NO canal, water, railings, finial or surrounding architecture. Show matchingtop/back/side. Print proposed0.3x0.4x0.15m. D11 WATER LEVEL MARKER PLAQUE: one narrow vertical ivory/brass ruler plaque twenty centimetres wide, two centimetres thick, forty centimetres tall with clear engraved evenlyspaced horizontal tickmarks down the front and one small lotus at top, flat back. No ornamental scene or water. Print proposed0.2x0.02x0.4m. Keep title WLD-WATER-DETAIL-001 and D08/D10/D11 names. Full separated tiny fitting silhouettes. Do not change other nine cells.",
+  "parts": [
+    {
+      "asset_id": "WLD-WATER-DETAIL-001-D01",
+      "name": "Straight pool coping",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        0.8,
+        0.15,
+        0.4
+      ],
+      "function": "Missing detached water-edge fittings and connections; use source designs before adding new forms",
+      "construction": "One isolated straight pool coping with source gold/ivory/rose finish; dry structural part, water optional context inset only, clear roots/contacts and ports. No whole fountain or new channel scene.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Water-garden fittings"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "WLD-WATER-DETAIL-001-D01__straight-pool-coping__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "WLD-WATER-DETAIL-001-D02",
+      "name": "Pool coping inner corner",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        0.8,
+        0.15,
+        0.4
+      ],
+      "function": "Missing detached water-edge fittings and connections; use source designs before adding new forms",
+      "construction": "One isolated pool coping inner corner with source gold/ivory/rose finish; dry structural part, water optional context inset only, clear roots/contacts and ports. No whole fountain or new channel scene.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Water-garden fittings"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "WLD-WATER-DETAIL-001-D02__pool-coping-inner-corner__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "WLD-WATER-DETAIL-001-D03",
+      "name": "Pool coping outer corner",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        0.8,
+        0.15,
+        0.4
+      ],
+      "function": "Missing detached water-edge fittings and connections; use source designs before adding new forms",
+      "construction": "One isolated pool coping outer corner with source gold/ivory/rose finish; dry structural part, water optional context inset only, clear roots/contacts and ports. No whole fountain or new channel scene.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Water-garden fittings"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "WLD-WATER-DETAIL-001-D03__pool-coping-outer-corner__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "WLD-WATER-DETAIL-001-D04",
+      "name": "Scalloped spillway lip",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        0.8,
+        0.15,
+        0.4
+      ],
+      "function": "Missing detached water-edge fittings and connections; use source designs before adding new forms",
+      "construction": "One isolated scalloped spillway lip with source gold/ivory/rose finish; dry structural part, water optional context inset only, clear roots/contacts and ports. No whole fountain or new channel scene.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Water-garden fittings"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "WLD-WATER-DETAIL-001-D04__scalloped-spillway-lip__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "WLD-WATER-DETAIL-001-D05",
+      "name": "Drain grate frame",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        0.8,
+        0.15,
+        0.4
+      ],
+      "function": "Missing detached water-edge fittings and connections; use source designs before adding new forms",
+      "construction": "One isolated drain grate frame with source gold/ivory/rose finish; dry structural part, water optional context inset only, clear roots/contacts and ports. No whole fountain or new channel scene.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Water-garden fittings"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "WLD-WATER-DETAIL-001-D05__drain-grate-frame__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "WLD-WATER-DETAIL-001-D06",
+      "name": "Removable bronze drain mesh",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        0.8,
+        0.15,
+        0.4
+      ],
+      "function": "Missing detached water-edge fittings and connections; use source designs before adding new forms",
+      "construction": "One isolated removable bronze drain mesh with source gold/ivory/rose finish; dry structural part, water optional context inset only, clear roots/contacts and ports. No whole fountain or new channel scene.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Water-garden fittings"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "WLD-WATER-DETAIL-001-D06__removable-bronze-drain-mesh__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "WLD-WATER-DETAIL-001-D07",
+      "name": "Channel wall end cap",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        0.8,
+        0.15,
+        0.4
+      ],
+      "function": "Missing detached water-edge fittings and connections; use source designs before adding new forms",
+      "construction": "One isolated channel wall end cap with source gold/ivory/rose finish; dry structural part, water optional context inset only, clear roots/contacts and ports. No whole fountain or new channel scene.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Water-garden fittings"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "WLD-WATER-DETAIL-001-D07__channel-wall-end-cap__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "WLD-WATER-DETAIL-001-D08",
+      "name": "Channel floor join seal",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        0.8,
+        0.08,
+        0.02
+      ],
+      "function": "Missing detached water-edge fittings and connections; use source designs before adding new forms",
+      "construction": "One isolated channel floor join seal with source gold/ivory/rose finish; dry structural part, water optional context inset only, clear roots/contacts and ports. No whole fountain or new channel scene.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Water-garden fittings"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "WLD-WATER-DETAIL-001-D08__channel-floor-join-seal__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "WLD-WATER-DETAIL-001-D09",
+      "name": "Overflow mouth surround",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        0.8,
+        0.15,
+        0.4
+      ],
+      "function": "Missing detached water-edge fittings and connections; use source designs before adding new forms",
+      "construction": "One isolated overflow mouth surround with source gold/ivory/rose finish; dry structural part, water optional context inset only, clear roots/contacts and ports. No whole fountain or new channel scene.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Water-garden fittings"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "WLD-WATER-DETAIL-001-D09__overflow-mouth-surround__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "WLD-WATER-DETAIL-001-D10",
+      "name": "Flow divider stone",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        0.3,
+        0.4,
+        0.15
+      ],
+      "function": "Missing detached water-edge fittings and connections; use source designs before adding new forms",
+      "construction": "One isolated flow divider stone with source gold/ivory/rose finish; dry structural part, water optional context inset only, clear roots/contacts and ports. No whole fountain or new channel scene.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Water-garden fittings"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "WLD-WATER-DETAIL-001-D10__flow-divider-stone__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "WLD-WATER-DETAIL-001-D11",
+      "name": "Water level marker plaque",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        0.2,
+        0.02,
+        0.4
+      ],
+      "function": "Missing detached water-edge fittings and connections; use source designs before adding new forms",
+      "construction": "One isolated water level marker plaque with source gold/ivory/rose finish; dry structural part, water optional context inset only, clear roots/contacts and ports. No whole fountain or new channel scene.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Water-garden fittings"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "WLD-WATER-DETAIL-001-D11__water-level-marker-plaque__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "WLD-WATER-DETAIL-001-D12",
+      "name": "Basin wall small spout collar",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        0.8,
+        0.15,
+        0.4
+      ],
+      "function": "Missing detached water-edge fittings and connections; use source designs before adding new forms",
+      "construction": "One isolated basin wall small spout collar with source gold/ivory/rose finish; dry structural part, water optional context inset only, clear roots/contacts and ports. No whole fountain or new channel scene.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Water-garden fittings"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "WLD-WATER-DETAIL-001-D12__basin-wall-small-spout-collar__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    }
+  ],
+  "outputs": [
+    {
+      "file": "completion-pass/WLD-WATER-DETAIL-001/WLD-WATER-DETAIL-001.png",
+      "sha256": "d2a6f358347de8e75391ee97efac3eb9e2dff79b0bdbd6a8faf01d26dbddbd92",
+      "original_file": "/workspace/generated_images/exec-b44c5d0e-d96d-4d94-954b-cac1f63d9be8.png",
+      "actual_input_file": "completion-pass/WLD-WATER-DETAIL-001/WLD-WATER-DETAIL-001-R01.png",
+      "actual_input_sha256": "0e6c6f5fd338bcecaed307979bc437e6e12569167106fc73ae2539fab6e90dc2",
+      "attempt": 2,
+      "generator": "image_gen.imagegen"
+    }
+  ],
+  "previous_attempts": [
+    {
+      "file": "completion-pass/WLD-WATER-DETAIL-001/WLD-WATER-DETAIL-001-R01.png",
+      "sha256": "0e6c6f5fd338bcecaed307979bc437e6e12569167106fc73ae2539fab6e90dc2",
+      "original_file": "/workspace/generated_images/exec-b3fa71f7-d680-40f0-aa15-2988e0994cf4.png",
+      "actual_input_file": "images/illustrated-boards/GEN-22.png",
+      "actual_input_sha256": "1cf6b019bce335c3fe9db2bd0696f6c85ca8ec791ea8872109466c0727b9aa5e",
+      "attempt": 1,
+      "generator": "image_gen.imagegen",
+      "rejection_reason": "D08seal became a whole channel block, D10divider became a junction structure, D11marker has no graduated marks. Need isolated actual named small parts."
+    }
+  ],
+  "models_generated": 0,
+  "physical_join_fit_verified": false,
+  "view_geometry_parity_verified": false,
+  "review_status": "pending-user-reference-and-model-review",
+  "gap": "Missing detached water-edge fittings and connections; use source designs before adding new forms",
+  "mode": "detail",
+  "revision_input_file": "completion-pass/WLD-WATER-DETAIL-001/WLD-WATER-DETAIL-001-R01.png",
+  "revision_input_sha256": "0e6c6f5fd338bcecaed307979bc437e6e12569167106fc73ae2539fab6e90dc2",
+  "original_prompt": "Create ONE clean detailed GAME ASSET REFERENCE SHEET, NOT Blender or a3Dmodel. Plain light ivory studio background, soft even light, full uncropped separate objects, readable thickness, precise non-melting forms. FULL IDs and names outside silhouettes, dimensions marked PROPOSED. Each cell independent illustration scale. No environment scenery, humans, extra unlabeled objects, watermark or whole-palace redesign. Use ONLY the single supplied source image for visible style/material/form authority; infer missing backs and assembly interfaces conservatively. Source illustration motifs are inspiration, not recovered measured geometry. Exactly12 isolated main components in a clean4-column grid. No missing/empty slots or repeated subjects counted twice. One clear front/three-quarter view with useful small rear/top/contact inset per cell. Truly flat backs for appliques, square join ends for repeat mouldings. Screens have repeated coherent holes, no tangled tendrils. Windows separate glass from surrounds, cornices/parapets and posts separate where named. Do not include large room/scenery fragments attached to a tiny detail. Title \"WLD-WATER-DETAIL-001 \u2014 Shared water edge and channel fittings\". Footer \"Proposed construction / source-compatible references / mesh joins and views unverified\".\n\nPurpose/gap: Missing detached water-edge fittings and connections; use source designs before adding new forms\n\nWLD-WATER-DETAIL-001-D01 \u2014 Straight pool coping. Dimensions W,D,H [0.8, 0.15, 0.4]m proposed. One isolated straight pool coping with source gold/ivory/rose finish; dry structural part, water optional context inset only, clear roots/contacts and ports. No whole fountain or new channel scene.\n\nWLD-WATER-DETAIL-001-D02 \u2014 Pool coping inner corner. Dimensions W,D,H [0.8, 0.15, 0.4]m proposed. One isolated pool coping inner corner with source gold/ivory/rose finish; dry structural part, water optional context inset only, clear roots/contacts and ports. No whole fountain or new channel scene.\n\nWLD-WATER-DETAIL-001-D03 \u2014 Pool coping outer corner. Dimensions W,D,H [0.8, 0.15, 0.4]m proposed. One isolated pool coping outer corner with source gold/ivory/rose finish; dry structural part, water optional context inset only, clear roots/contacts and ports. No whole fountain or new channel scene.\n\nWLD-WATER-DETAIL-001-D04 \u2014 Scalloped spillway lip. Dimensions W,D,H [0.8, 0.15, 0.4]m proposed. One isolated scalloped spillway lip with source gold/ivory/rose finish; dry structural part, water optional context inset only, clear roots/contacts and ports. No whole fountain or new channel scene.\n\nWLD-WATER-DETAIL-001-D05 \u2014 Drain grate frame. Dimensions W,D,H [0.8, 0.15, 0.4]m proposed. One isolated drain grate frame with source gold/ivory/rose finish; dry structural part, water optional context inset only, clear roots/contacts and ports. No whole fountain or new channel scene.\n\nWLD-WATER-DETAIL-001-D06 \u2014 Removable bronze drain mesh. Dimensions W,D,H [0.8, 0.15, 0.4]m proposed. One isolated removable bronze drain mesh with source gold/ivory/rose finish; dry structural part, water optional context inset only, clear roots/contacts and ports. No whole fountain or new channel scene.\n\nWLD-WATER-DETAIL-001-D07 \u2014 Channel wall end cap. Dimensions W,D,H [0.8, 0.15, 0.4]m proposed. One isolated channel wall end cap with source gold/ivory/rose finish; dry structural part, water optional context inset only, clear roots/contacts and ports. No whole fountain or new channel scene.\n\nWLD-WATER-DETAIL-001-D08 \u2014 Channel floor join seal. Dimensions W,D,H [0.8, 0.15, 0.4]m proposed. One isolated channel floor join seal with source gold/ivory/rose finish; dry structural part, water optional context inset only, clear roots/contacts and ports. No whole fountain or new channel scene.\n\nWLD-WATER-DETAIL-001-D09 \u2014 Overflow mouth surround. Dimensions W,D,H [0.8, 0.15, 0.4]m proposed. One isolated overflow mouth surround with source gold/ivory/rose finish; dry structural part, water optional context inset only, clear roots/contacts and ports. No whole fountain or new channel scene.\n\nWLD-WATER-DETAIL-001-D10 \u2014 Flow divider stone. Dimensions W,D,H [0.8, 0.15, 0.4]m proposed. One isolated flow divider stone with source gold/ivory/rose finish; dry structural part, water optional context inset only, clear roots/contacts and ports. No whole fountain or new channel scene.\n\nWLD-WATER-DETAIL-001-D11 \u2014 Water level marker plaque. Dimensions W,D,H [0.8, 0.15, 0.4]m proposed. One isolated water level marker plaque with source gold/ivory/rose finish; dry structural part, water optional context inset only, clear roots/contacts and ports. No whole fountain or new channel scene.\n\nWLD-WATER-DETAIL-001-D12 \u2014 Basin wall small spout collar. Dimensions W,D,H [0.8, 0.15, 0.4]m proposed. One isolated basin wall small spout collar with source gold/ivory/rose finish; dry structural part, water optional context inset only, clear roots/contacts and ports. No whole fountain or new channel scene.",
+  "visual_review_notes": [
+    "Twelve groups visible; corrected D08small seam strip, D10single divider and D11graduated ruler plaque. Profiles/seams and water effects remain unverified."
+  ],
+  "visual_inventory_review": {
+    "expected_groups_present": true,
+    "method": "Individual manual inspection of generated sheet; exact geometry remains unverified"
+  }
+}

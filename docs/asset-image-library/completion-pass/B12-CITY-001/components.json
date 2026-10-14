@@ -1,0 +1,124 @@
+{
+  "components": [
+    {
+      "asset_id": "B12-CITY-001-S01",
+      "name": "Two house street arch connector",
+      "kind": "structural-section",
+      "dimensions_m_proposed": [
+        6,
+        9,
+        8
+      ],
+      "function": "Existing cottage kits cover forest adaptation, not original attached-village street buildings",
+      "construction": "One source village two house street arch connector, cream walls, timber and blue/slate roofs, attached houses with actual open passages rather than isolated forest cottages. Show rear and roof/street contacts; roof corners/door placement follow original village. No huge palace turrets.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B12"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B12-CITY-001-S01__two-house-street-arch-connector__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "B12-CITY-001-S02",
+      "name": "Attached house and dormer corner",
+      "kind": "structural-section",
+      "dimensions_m_proposed": [
+        6,
+        9,
+        8
+      ],
+      "function": "Existing cottage kits cover forest adaptation, not original attached-village street buildings",
+      "construction": "One source village attached house and dormer corner, cream walls, timber and blue/slate roofs, attached houses with actual open passages rather than isolated forest cottages. Show rear and roof/street contacts; roof corners/door placement follow original village. No huge palace turrets.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B12"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B12-CITY-001-S02__attached-house-and-dormer-corner__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "B12-CITY-001-S03",
+      "name": "Narrow lane stair and house return",
+      "kind": "structural-section",
+      "dimensions_m_proposed": [
+        6,
+        9,
+        8
+      ],
+      "function": "Existing cottage kits cover forest adaptation, not original attached-village street buildings",
+      "construction": "One source village narrow lane stair and house return, cream walls, timber and blue/slate roofs, attached houses with actual open passages rather than isolated forest cottages. Show rear and roof/street contacts; roof corners/door placement follow original village. No huge palace turrets.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B12"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B12-CITY-001-S03__narrow-lane-stair-and-house-return__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "B12-CITY-001-S04",
+      "name": "Village court wall and gate bay",
+      "kind": "structural-section",
+      "dimensions_m_proposed": [
+        6,
+        9,
+        8
+      ],
+      "function": "Existing cottage kits cover forest adaptation, not original attached-village street buildings",
+      "construction": "One source village village court wall and gate bay, cream walls, timber and blue/slate roofs, attached houses with actual open passages rather than isolated forest cottages. Show rear and roof/street contacts; roof corners/door placement follow original village. No huge palace turrets.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B12"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B12-CITY-001-S04__village-court-wall-and-gate-bay__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    }
+  ]
+}

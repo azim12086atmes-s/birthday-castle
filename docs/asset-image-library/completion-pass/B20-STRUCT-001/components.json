@@ -1,0 +1,124 @@
+{
+  "components": [
+    {
+      "asset_id": "B20-STRUCT-001-S01",
+      "name": "Radial column bay",
+      "kind": "structural-section",
+      "dimensions_m_proposed": [
+        8,
+        6,
+        12
+      ],
+      "function": "Need radial floor/column/ring-beam hosts, glass dome segment interfaces and bridge/pavilion entry transition. Existing dome rib, marble rail, garland and fountain motifs already shown; maintain open bays. Planter flowers/nearby lilies, butterflies/dragonflies and optional pond fish; passage clearances unverified. Provide missing isolated hosts and join views.",
+      "construction": "One isolated radial column bay matching the supplied building, its roof/arch/wall silhouette and local materials. Show front and interior/rear/underside contact, not a complete building scene. Actual open column galleries and holes stay open. Extend hidden depth only enough to form a joinable section; no palace-wide plan or added unrelated tower.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B20"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B20-STRUCT-001-S01__radial-column-bay__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "B20-STRUCT-001-S02",
+      "name": "Glass dome ring seat",
+      "kind": "structural-section",
+      "dimensions_m_proposed": [
+        8,
+        6,
+        12
+      ],
+      "function": "Need radial floor/column/ring-beam hosts, glass dome segment interfaces and bridge/pavilion entry transition. Existing dome rib, marble rail, garland and fountain motifs already shown; maintain open bays. Planter flowers/nearby lilies, butterflies/dragonflies and optional pond fish; passage clearances unverified. Provide missing isolated hosts and join views.",
+      "construction": "One isolated glass dome ring seat matching the supplied building, its roof/arch/wall silhouette and local materials. Show front and interior/rear/underside contact, not a complete building scene. Actual open column galleries and holes stay open. Extend hidden depth only enough to form a joinable section; no palace-wide plan or added unrelated tower.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B20"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B20-STRUCT-001-S02__glass-dome-ring-seat__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "B20-STRUCT-001-S03",
+      "name": "Floor/pond wedge",
+      "kind": "structural-section",
+      "dimensions_m_proposed": [
+        8,
+        6,
+        12
+      ],
+      "function": "Need radial floor/column/ring-beam hosts, glass dome segment interfaces and bridge/pavilion entry transition. Existing dome rib, marble rail, garland and fountain motifs already shown; maintain open bays. Planter flowers/nearby lilies, butterflies/dragonflies and optional pond fish; passage clearances unverified. Provide missing isolated hosts and join views.",
+      "construction": "One isolated floor/pond wedge matching the supplied building, its roof/arch/wall silhouette and local materials. Show front and interior/rear/underside contact, not a complete building scene. Actual open column galleries and holes stay open. Extend hidden depth only enough to form a joinable section; no palace-wide plan or added unrelated tower.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B20"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B20-STRUCT-001-S03__floor-pond-wedge__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "B20-STRUCT-001-S04",
+      "name": "Bridge-pavilion entry",
+      "kind": "structural-section",
+      "dimensions_m_proposed": [
+        8,
+        6,
+        12
+      ],
+      "function": "Need radial floor/column/ring-beam hosts, glass dome segment interfaces and bridge/pavilion entry transition. Existing dome rib, marble rail, garland and fountain motifs already shown; maintain open bays. Planter flowers/nearby lilies, butterflies/dragonflies and optional pond fish; passage clearances unverified. Provide missing isolated hosts and join views.",
+      "construction": "One isolated bridge-pavilion entry matching the supplied building, its roof/arch/wall silhouette and local materials. Show front and interior/rear/underside contact, not a complete building scene. Actual open column galleries and holes stay open. Extend hidden depth only enough to form a joinable section; no palace-wide plan or added unrelated tower.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B20"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B20-STRUCT-001-S04__bridge-pavilion-entry__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    }
+  ]
+}

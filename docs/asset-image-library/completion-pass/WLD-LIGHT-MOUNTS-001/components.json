@@ -1,0 +1,364 @@
+{
+  "components": [
+    {
+      "asset_id": "WLD-LIGHT-MOUNTS-001-D01",
+      "name": "Wall lantern elbow bracket",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        0.6,
+        0.2,
+        0.6
+      ],
+      "function": "Missing lamp mount variants and contacts, not new lantern master designs",
+      "construction": "One wall lantern elbow bracket as precise gold/brass/ivory hardware matching source lighting; explicitly show wall/root attachment and one coherent part. Existing lantern/chandelier bodies reused, no duplicate whole lamp.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Lighting and wayfinding"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "WLD-LIGHT-MOUNTS-001-D01__wall-lantern-elbow-bracket__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "WLD-LIGHT-MOUNTS-001-D02",
+      "name": "Corner lantern bracket",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        0.6,
+        0.2,
+        0.6
+      ],
+      "function": "Missing lamp mount variants and contacts, not new lantern master designs",
+      "construction": "One corner lantern bracket as precise gold/brass/ivory hardware matching source lighting; explicitly show wall/root attachment and one coherent part. Existing lantern/chandelier bodies reused, no duplicate whole lamp.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Lighting and wayfinding"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "WLD-LIGHT-MOUNTS-001-D02__corner-lantern-bracket__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "WLD-LIGHT-MOUNTS-001-D03",
+      "name": "Ceiling chain plate",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        0.2,
+        0.12,
+        0.25
+      ],
+      "function": "Missing lamp mount variants and contacts, not new lantern master designs",
+      "construction": "One ceiling chain plate as precise gold/brass/ivory hardware matching source lighting; explicitly show wall/root attachment and one coherent part. Existing lantern/chandelier bodies reused, no duplicate whole lamp. SMALL attachment hardware only: plate/socket/hook/joint with its own hole/root and source-compatible quiet ornament. No lantern body, full arch, whole column, complete door, garden or giant architectural scene glued to it.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Lighting and wayfinding"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "WLD-LIGHT-MOUNTS-001-D03__ceiling-chain-plate__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "WLD-LIGHT-MOUNTS-001-D04",
+      "name": "Chain link repeat",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        0.2,
+        0.12,
+        0.25
+      ],
+      "function": "Missing lamp mount variants and contacts, not new lantern master designs",
+      "construction": "One chain link repeat as precise gold/brass/ivory hardware matching source lighting; explicitly show wall/root attachment and one coherent part. Existing lantern/chandelier bodies reused, no duplicate whole lamp. SMALL attachment hardware only: plate/socket/hook/joint with its own hole/root and source-compatible quiet ornament. No lantern body, full arch, whole column, complete door, garden or giant architectural scene glued to it.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Lighting and wayfinding"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "WLD-LIGHT-MOUNTS-001-D04__chain-link-repeat__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "WLD-LIGHT-MOUNTS-001-D05",
+      "name": "Lantern hook shoe",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        0.2,
+        0.12,
+        0.25
+      ],
+      "function": "Missing lamp mount variants and contacts, not new lantern master designs",
+      "construction": "One lantern hook shoe as precise gold/brass/ivory hardware matching source lighting; explicitly show wall/root attachment and one coherent part. Existing lantern/chandelier bodies reused, no duplicate whole lamp. SMALL attachment hardware only: plate/socket/hook/joint with its own hole/root and source-compatible quiet ornament. No lantern body, full arch, whole column, complete door, garden or giant architectural scene glued to it.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Lighting and wayfinding"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "WLD-LIGHT-MOUNTS-001-D05__lantern-hook-shoe__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "WLD-LIGHT-MOUNTS-001-D06",
+      "name": "Floor lantern foot socket",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        0.2,
+        0.12,
+        0.25
+      ],
+      "function": "Missing lamp mount variants and contacts, not new lantern master designs",
+      "construction": "One floor lantern foot socket as precise gold/brass/ivory hardware matching source lighting; explicitly show wall/root attachment and one coherent part. Existing lantern/chandelier bodies reused, no duplicate whole lamp. SMALL attachment hardware only: plate/socket/hook/joint with its own hole/root and source-compatible quiet ornament. No lantern body, full arch, whole column, complete door, garden or giant architectural scene glued to it.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Lighting and wayfinding"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "WLD-LIGHT-MOUNTS-001-D06__floor-lantern-foot-socket__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "WLD-LIGHT-MOUNTS-001-D07",
+      "name": "Tree safe hanging clamp",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        0.2,
+        0.12,
+        0.25
+      ],
+      "function": "Missing lamp mount variants and contacts, not new lantern master designs",
+      "construction": "One tree safe hanging clamp as precise gold/brass/ivory hardware matching source lighting; explicitly show wall/root attachment and one coherent part. Existing lantern/chandelier bodies reused, no duplicate whole lamp. SMALL attachment hardware only: plate/socket/hook/joint with its own hole/root and source-compatible quiet ornament. No lantern body, full arch, whole column, complete door, garden or giant architectural scene glued to it.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Lighting and wayfinding"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "WLD-LIGHT-MOUNTS-001-D07__tree-safe-hanging-clamp__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "WLD-LIGHT-MOUNTS-001-D08",
+      "name": "Parapet lamp mounting cap",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        0.2,
+        0.12,
+        0.25
+      ],
+      "function": "Missing lamp mount variants and contacts, not new lantern master designs",
+      "construction": "One parapet lamp mounting cap as precise gold/brass/ivory hardware matching source lighting; explicitly show wall/root attachment and one coherent part. Existing lantern/chandelier bodies reused, no duplicate whole lamp. SMALL attachment hardware only: plate/socket/hook/joint with its own hole/root and source-compatible quiet ornament. No lantern body, full arch, whole column, complete door, garden or giant architectural scene glued to it.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Lighting and wayfinding"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "WLD-LIGHT-MOUNTS-001-D08__parapet-lamp-mounting-cap__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "WLD-LIGHT-MOUNTS-001-D09",
+      "name": "Crystal pendant cage",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        0.6,
+        0.2,
+        0.6
+      ],
+      "function": "Missing lamp mount variants and contacts, not new lantern master designs",
+      "construction": "One crystal pendant cage as precise gold/brass/ivory hardware matching source lighting; explicitly show wall/root attachment and one coherent part. Existing lantern/chandelier bodies reused, no duplicate whole lamp.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Lighting and wayfinding"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "WLD-LIGHT-MOUNTS-001-D09__crystal-pendant-cage__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "WLD-LIGHT-MOUNTS-001-D10",
+      "name": "Small light baffle crown",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        0.6,
+        0.2,
+        0.6
+      ],
+      "function": "Missing lamp mount variants and contacts, not new lantern master designs",
+      "construction": "One small light baffle crown as precise gold/brass/ivory hardware matching source lighting; explicitly show wall/root attachment and one coherent part. Existing lantern/chandelier bodies reused, no duplicate whole lamp.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Lighting and wayfinding"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "WLD-LIGHT-MOUNTS-001-D10__small-light-baffle-crown__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "WLD-LIGHT-MOUNTS-001-D11",
+      "name": "Candle cup and tray",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        0.6,
+        0.2,
+        0.6
+      ],
+      "function": "Missing lamp mount variants and contacts, not new lantern master designs",
+      "construction": "One candle cup and tray as precise gold/brass/ivory hardware matching source lighting; explicitly show wall/root attachment and one coherent part. Existing lantern/chandelier bodies reused, no duplicate whole lamp.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Lighting and wayfinding"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "WLD-LIGHT-MOUNTS-001-D11__candle-cup-and-tray__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "WLD-LIGHT-MOUNTS-001-D12",
+      "name": "Lamp service-free decorative collar",
+      "kind": "architectural-detail",
+      "dimensions_m_proposed": [
+        0.6,
+        0.2,
+        0.6
+      ],
+      "function": "Missing lamp mount variants and contacts, not new lantern master designs",
+      "construction": "One lamp service-free decorative collar as precise gold/brass/ivory hardware matching source lighting; explicitly show wall/root attachment and one coherent part. Existing lantern/chandelier bodies reused, no duplicate whole lamp.",
+      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Lighting and wayfinding"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "WLD-LIGHT-MOUNTS-001-D12__lamp-service-free-decorative-collar__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    }
+  ]
+}

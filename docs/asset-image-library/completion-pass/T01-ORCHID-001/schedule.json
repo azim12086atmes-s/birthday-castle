@@ -1,0 +1,158 @@
+{
+  "sheet_id": "T01-ORCHID-001",
+  "name": "Conservatory orchid varieties",
+  "owner": "terrain-water-and-planting",
+  "family": "Palace grounds and rose gardens",
+  "location_id": null,
+  "source_reference_id": "SRC-LOC-B25-GEN-06",
+  "source_reference_file": "world-layout/location-audit/source/B25-GEN-06.png",
+  "source_reference_sha256": "9df7e6c8e6a01b9031ac24aedccfab55f86f09c922acd2c4e197497460719efe",
+  "prompt": "Create ONE clean detailed GAME ASSET REFERENCE SHEET, NOT Blender or a3Dmodel. Plain light ivory studio background, soft even light, full uncropped separate objects, readable thickness, precise non-melting forms. FULL IDs and names outside silhouettes, dimensions marked PROPOSED. Each cell independent illustration scale. No environment scenery, humans, extra unlabeled objects, watermark or whole-palace redesign. Use ONLY the single supplied source image for visible style/material/form authority; infer missing backs and assembly interfaces conservatively. Source illustration motifs are inspiration, not recovered measured geometry. Exactly4 whole plants in separate large cells. Complete root/trunk-to-crown forms; smaller coherent leaf/bark/canopy or side inset, no humans, soil pedestals, attached architecture. Distinct species silhouettes, realistic branching and restrained local natural palette. Do not turn plants into disconnected bouquets. Botanical labels are concept names, not validated specimens. Title \"T01-ORCHID-001 \u2014 Conservatory orchid varieties\". Footer \"Proposed construction / source-compatible references / mesh joins and views unverified\".\n\nPurpose/gap: Missing readable orchid construction/species-like variety, sourceglasshouse palette cream/pink/lilac; coherentstem/flowerroots. No entire conservatory attached.\n\nT01-ORCHID-001-A01 \u2014 Moth orchid plant. Dimensions W,D,H [0.6, 0.6, 1.2]m proposed. One isolated moth orchid plant. Missing readable orchid construction/species-like variety, sourceglasshouse palette cream/pink/lilac; coherentstem/flowerroots. No entire conservatory attached. Coherent actual silhouette, visible root/underside/side; no unrelated architecture/scenery attached. Other existing named species/forms must not be regenerated. Local material consistent with source. Dimensions are proposals to refine by subject.\n\nT01-ORCHID-001-A02 \u2014 Dendrobium orchid spray. Dimensions W,D,H [0.6, 0.6, 1.2]m proposed. One isolated dendrobium orchid spray. Missing readable orchid construction/species-like variety, sourceglasshouse palette cream/pink/lilac; coherentstem/flowerroots. No entire conservatory attached. Coherent actual silhouette, visible root/underside/side; no unrelated architecture/scenery attached. Other existing named species/forms must not be regenerated. Local material consistent with source. Dimensions are proposals to refine by subject.\n\nT01-ORCHID-001-A03 \u2014 Cattleya orchid cluster. Dimensions W,D,H [0.6, 0.6, 1.2]m proposed. One isolated cattleya orchid cluster. Missing readable orchid construction/species-like variety, sourceglasshouse palette cream/pink/lilac; coherentstem/flowerroots. No entire conservatory attached. Coherent actual silhouette, visible root/underside/side; no unrelated architecture/scenery attached. Other existing named species/forms must not be regenerated. Local material consistent with source. Dimensions are proposals to refine by subject.\n\nT01-ORCHID-001-A04 \u2014 Paphiopedilum orchid rosette. Dimensions W,D,H [0.6, 0.6, 1.2]m proposed. One isolated paphiopedilum orchid rosette. Missing readable orchid construction/species-like variety, sourceglasshouse palette cream/pink/lilac; coherentstem/flowerroots. No entire conservatory attached. Coherent actual silhouette, visible root/underside/side; no unrelated architecture/scenery attached. Other existing named species/forms must not be regenerated. Local material consistent with source. Dimensions are proposals to refine by subject.",
+  "parts": [
+    {
+      "asset_id": "T01-ORCHID-001-A01",
+      "name": "Moth orchid plant",
+      "kind": "flora-reference",
+      "dimensions_m_proposed": [
+        0.6,
+        0.6,
+        1.2
+      ],
+      "function": "Missing readable orchid construction/species-like variety, sourceglasshouse palette cream/pink/lilac; coherentstem/flowerroots. No entire conservatory attached.",
+      "construction": "One isolated moth orchid plant. Missing readable orchid construction/species-like variety, sourceglasshouse palette cream/pink/lilac; coherentstem/flowerroots. No entire conservatory attached. Coherent actual silhouette, visible root/underside/side; no unrelated architecture/scenery attached. Other existing named species/forms must not be regenerated. Local material consistent with source. Dimensions are proposals to refine by subject.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Palace grounds and rose gardens"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "T01-ORCHID-001-A01__moth-orchid-plant__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "T01-ORCHID-001-A02",
+      "name": "Dendrobium orchid spray",
+      "kind": "flora-reference",
+      "dimensions_m_proposed": [
+        0.6,
+        0.6,
+        1.2
+      ],
+      "function": "Missing readable orchid construction/species-like variety, sourceglasshouse palette cream/pink/lilac; coherentstem/flowerroots. No entire conservatory attached.",
+      "construction": "One isolated dendrobium orchid spray. Missing readable orchid construction/species-like variety, sourceglasshouse palette cream/pink/lilac; coherentstem/flowerroots. No entire conservatory attached. Coherent actual silhouette, visible root/underside/side; no unrelated architecture/scenery attached. Other existing named species/forms must not be regenerated. Local material consistent with source. Dimensions are proposals to refine by subject.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Palace grounds and rose gardens"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "T01-ORCHID-001-A02__dendrobium-orchid-spray__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "T01-ORCHID-001-A03",
+      "name": "Cattleya orchid cluster",
+      "kind": "flora-reference",
+      "dimensions_m_proposed": [
+        0.6,
+        0.6,
+        1.2
+      ],
+      "function": "Missing readable orchid construction/species-like variety, sourceglasshouse palette cream/pink/lilac; coherentstem/flowerroots. No entire conservatory attached.",
+      "construction": "One isolated cattleya orchid cluster. Missing readable orchid construction/species-like variety, sourceglasshouse palette cream/pink/lilac; coherentstem/flowerroots. No entire conservatory attached. Coherent actual silhouette, visible root/underside/side; no unrelated architecture/scenery attached. Other existing named species/forms must not be regenerated. Local material consistent with source. Dimensions are proposals to refine by subject.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Palace grounds and rose gardens"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "T01-ORCHID-001-A03__cattleya-orchid-cluster__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "T01-ORCHID-001-A04",
+      "name": "Paphiopedilum orchid rosette",
+      "kind": "flora-reference",
+      "dimensions_m_proposed": [
+        0.6,
+        0.6,
+        1.2
+      ],
+      "function": "Missing readable orchid construction/species-like variety, sourceglasshouse palette cream/pink/lilac; coherentstem/flowerroots. No entire conservatory attached.",
+      "construction": "One isolated paphiopedilum orchid rosette. Missing readable orchid construction/species-like variety, sourceglasshouse palette cream/pink/lilac; coherentstem/flowerroots. No entire conservatory attached. Coherent actual silhouette, visible root/underside/side; no unrelated architecture/scenery attached. Other existing named species/forms must not be regenerated. Local material consistent with source. Dimensions are proposals to refine by subject.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Palace grounds and rose gardens"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "T01-ORCHID-001-A04__paphiopedilum-orchid-rosette__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    }
+  ],
+  "outputs": [
+    {
+      "file": "completion-pass/T01-ORCHID-001/T01-ORCHID-001.png",
+      "sha256": "272a5a51f2fc9d986c2fbf74d9101ad82d59af9100fa5f55e90efbe990d06252",
+      "original_file": "/workspace/generated_images/exec-19003d61-147e-4388-9acc-fb05cd8fa0a4.png",
+      "actual_input_file": "world-layout/location-audit/source/B25-GEN-06.png",
+      "actual_input_sha256": "9df7e6c8e6a01b9031ac24aedccfab55f86f09c922acd2c4e197497460719efe",
+      "attempt": 1,
+      "generator": "image_gen.imagegen"
+    }
+  ],
+  "previous_attempts": [],
+  "models_generated": 0,
+  "physical_join_fit_verified": false,
+  "view_geometry_parity_verified": false,
+  "review_status": "pending-user-reference-and-model-review",
+  "gap": "Missing readable orchid construction/species-like variety, sourceglasshouse palette cream/pink/lilac; coherentstem/flowerroots. No entire conservatory attached.",
+  "mode": "flora",
+  "visual_review_notes": [
+    "Four labelled orchid forms with readable roots/stems/flowers and insets; botanical validity and view parity not certified."
+  ],
+  "visual_inventory_review": {
+    "expected_groups_present": true,
+    "method": "Individual manual inspection of generated sheet; exact geometry remains unverified"
+  }
+}

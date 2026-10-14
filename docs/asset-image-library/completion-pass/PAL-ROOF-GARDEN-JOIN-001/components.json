@@ -1,0 +1,124 @@
+{
+  "components": [
+    {
+      "asset_id": "PAL-ROOF-GARDEN-JOIN-001-S01",
+      "name": "Chamfered terrace corner platform",
+      "kind": "structural-section",
+      "dimensions_m_proposed": [
+        12,
+        10,
+        2
+      ],
+      "function": "Missing roof garden substrate and court/wing interface sections; use terrace images as component inspiration",
+      "construction": "One isolated chamfered terrace corner platform as ivory/rose marble roof-terrace substrate, source curved/angled edges, visibly supported underside, square connection at rear to wing; no generic garden scene, trees/railings/fountains separate. Keep source courtyard scale and parapet heights human-compatible.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Base, wall bodies and stepped wings"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "PAL-ROOF-GARDEN-JOIN-001-S01__chamfered-terrace-corner-platform__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "PAL-ROOF-GARDEN-JOIN-001-S02",
+      "name": "Rounded wing garden extrusion",
+      "kind": "structural-section",
+      "dimensions_m_proposed": [
+        12,
+        10,
+        2
+      ],
+      "function": "Missing roof garden substrate and court/wing interface sections; use terrace images as component inspiration",
+      "construction": "One isolated rounded wing garden extrusion as ivory/rose marble roof-terrace substrate, source curved/angled edges, visibly supported underside, square connection at rear to wing; no generic garden scene, trees/railings/fountains separate. Keep source courtyard scale and parapet heights human-compatible.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Base, wall bodies and stepped wings"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "PAL-ROOF-GARDEN-JOIN-001-S02__rounded-wing-garden-extrusion__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "PAL-ROOF-GARDEN-JOIN-001-S03",
+      "name": "Recessed courtyard floor and drain seat",
+      "kind": "structural-section",
+      "dimensions_m_proposed": [
+        12,
+        10,
+        2
+      ],
+      "function": "Missing roof garden substrate and court/wing interface sections; use terrace images as component inspiration",
+      "construction": "One isolated recessed courtyard floor and drain seat as ivory/rose marble roof-terrace substrate, source curved/angled edges, visibly supported underside, square connection at rear to wing; no generic garden scene, trees/railings/fountains separate. Keep source courtyard scale and parapet heights human-compatible.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Base, wall bodies and stepped wings"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "PAL-ROOF-GARDEN-JOIN-001-S03__recessed-courtyard-floor-and-drain-seat__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "PAL-ROOF-GARDEN-JOIN-001-S04",
+      "name": "Roof stair arrival landing",
+      "kind": "structural-section",
+      "dimensions_m_proposed": [
+        12,
+        10,
+        2
+      ],
+      "function": "Missing roof garden substrate and court/wing interface sections; use terrace images as component inspiration",
+      "construction": "One isolated roof stair arrival landing as ivory/rose marble roof-terrace substrate, source curved/angled edges, visibly supported underside, square connection at rear to wing; no generic garden scene, trees/railings/fountains separate. Keep source courtyard scale and parapet heights human-compatible.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Base, wall bodies and stepped wings"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "PAL-ROOF-GARDEN-JOIN-001-S04__roof-stair-arrival-landing__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    }
+  ]
+}

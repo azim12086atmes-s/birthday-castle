@@ -1,0 +1,124 @@
+{
+  "components": [
+    {
+      "asset_id": "INT-CONSERV-SHELL-001-S01",
+      "name": "Glass roof rib bay",
+      "kind": "structural-section",
+      "dimensions_m_proposed": [
+        8,
+        5,
+        12
+      ],
+      "function": "Missing construction views behind existing room snapshots; generic substrate plus source-compatible interior faces",
+      "construction": "One isolated glass roof rib bay, original palace rose and ivory marble, gold trim, blue/rose glass where source appropriate. Show interior face, ceiling/underside and rear wall/roof contact. Real door/window apertures open; furniture/foliage removable. Preserve local room character rather than replacing with one generic hall.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Interiors and furniture"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "INT-CONSERV-SHELL-001-S01__glass-roof-rib-bay__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "INT-CONSERV-SHELL-001-S02",
+      "name": "Open arcade planter court host",
+      "kind": "structural-section",
+      "dimensions_m_proposed": [
+        8,
+        5,
+        12
+      ],
+      "function": "Missing construction views behind existing room snapshots; generic substrate plus source-compatible interior faces",
+      "construction": "One isolated open arcade planter court host, original palace rose and ivory marble, gold trim, blue/rose glass where source appropriate. Show interior face, ceiling/underside and rear wall/roof contact. Real door/window apertures open; furniture/foliage removable. Preserve local room character rather than replacing with one generic hall.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Interiors and furniture"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "INT-CONSERV-SHELL-001-S02__open-arcade-planter-court-host__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "INT-CONSERV-SHELL-001-S03",
+      "name": "Pool edge and tiled walking bay",
+      "kind": "structural-section",
+      "dimensions_m_proposed": [
+        8,
+        5,
+        12
+      ],
+      "function": "Missing construction views behind existing room snapshots; generic substrate plus source-compatible interior faces",
+      "construction": "One isolated pool edge and tiled walking bay, original palace rose and ivory marble, gold trim, blue/rose glass where source appropriate. Show interior face, ceiling/underside and rear wall/roof contact. Real door/window apertures open; furniture/foliage removable. Preserve local room character rather than replacing with one generic hall.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Interiors and furniture"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "INT-CONSERV-SHELL-001-S03__pool-edge-and-tiled-walking-bay__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "INT-CONSERV-SHELL-001-S04",
+      "name": "Glass wall and foot rail corner",
+      "kind": "structural-section",
+      "dimensions_m_proposed": [
+        8,
+        5,
+        12
+      ],
+      "function": "Missing construction views behind existing room snapshots; generic substrate plus source-compatible interior faces",
+      "construction": "One isolated glass wall and foot rail corner, original palace rose and ivory marble, gold trim, blue/rose glass where source appropriate. Show interior face, ceiling/underside and rear wall/roof contact. Real door/window apertures open; furniture/foliage removable. Preserve local room character rather than replacing with one generic hall.",
+      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
+      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Interiors and furniture"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "INT-CONSERV-SHELL-001-S04__glass-wall-and-foot-rail-corner__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    }
+  ]
+}
