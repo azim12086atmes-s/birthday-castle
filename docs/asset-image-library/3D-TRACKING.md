@@ -82,3 +82,7 @@ WLD-MAP-002 replaces the selected world map and adds F01â€“F03 districts, FC01â€
 ## West Lantern Forest / B12 pilot
 
 [32 component IDs and proposed model filenames](world-location-kits/west-lantern-forest/components.csv) are registered from fourpackedreferenceboards. All32components/fourbatchtargets are unregistered models, with finalreferencehashes saved. Twooriginalsourcepanels andthreerejecteddrafts are preserved. S04roofendviews needconstructioncorrection; nojoinsorpackedmeshseparation certified.
+
+## Ecology and location audit
+
+[20flora/fauna component IDs and proposed model filenames](world-location-kits/west-lantern-forest/ecology/components.csv) are indexed from threeboards. Allmodels/rigs/animations remainunbuilt. [34written locationbriefs](world-layout/location-audit/README.md) and60exactsourcecrops map futurework, notadditionalmesh targets. Sharedgeneralwater/rock/nature refs arecatalogued separately.

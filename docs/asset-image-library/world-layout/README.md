@@ -33,3 +33,7 @@ Bounds, proposed rectangle exclusions, cottage-clearing containment and route le
 ## Flora and fauna tracking
 
 [Shared habitat plan](FLORA-FAUNA-PLAN.md) adds flora/fauna to every location audit. Flora is partly covered; dedicated fauna kits are pending. Six fauna sheets have a provisional hold within the existing world allocation, with no increase to230 and no new images or model targets in this update.
+
+## Source-led location and ecology audit
+
+[34locationbriefs and zoomed sources](location-audit/README.md) now separate visible features, imagined layout and missing-kit work. Location-specific flora/fauna selections share generalwater/rock/nature references. Threeforest ecology sheets add20targets; all3D/anatomy/rigging/route geometryremainunverified. No palace facade changes.

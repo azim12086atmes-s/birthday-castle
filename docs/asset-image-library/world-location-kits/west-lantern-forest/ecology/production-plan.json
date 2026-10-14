@@ -1,0 +1,74 @@
+{
+  "date": "2026-10-14",
+  "location_id": "F02",
+  "sheets": [
+    {
+      "sheet_id": "F02-FLORA-001",
+      "name": "West Lantern Forest \u2014 woodland canopy flora",
+      "owner": "terrain-water-and-planting",
+      "family": "Forest and Mother Tree environs",
+      "component_ids": [
+        "F02-FLORA-001-A01",
+        "F02-FLORA-001-A02",
+        "F02-FLORA-001-A03",
+        "F02-FLORA-001-A04"
+      ]
+    },
+    {
+      "sheet_id": "F02-FAUNA-001",
+      "name": "West Lantern Forest \u2014 woodland mammals",
+      "owner": "terrain-water-and-planting",
+      "family": "Forest and Mother Tree environs",
+      "component_ids": [
+        "F02-FAUNA-001-A01",
+        "F02-FAUNA-001-A02",
+        "F02-FAUNA-001-A03",
+        "F02-FAUNA-001-A04"
+      ]
+    },
+    {
+      "sheet_id": "F02-FAUNA-002",
+      "name": "West Lantern Forest \u2014 birds and insects",
+      "owner": "terrain-water-and-planting",
+      "family": "Forest and Mother Tree environs",
+      "component_ids": [
+        "F02-FAUNA-002-A01",
+        "F02-FAUNA-002-A02",
+        "F02-FAUNA-002-A03",
+        "F02-FAUNA-002-A04",
+        "F02-FAUNA-002-A05",
+        "F02-FAUNA-002-A06",
+        "F02-FAUNA-002-A07",
+        "F02-FAUNA-002-A08",
+        "F02-FAUNA-002-A09",
+        "F02-FAUNA-002-A10",
+        "F02-FAUNA-002-A11",
+        "F02-FAUNA-002-A12"
+      ]
+    }
+  ],
+  "selected_new_sheet_cap": 3,
+  "new_component_targets": 20,
+  "models_generated": 0,
+  "workflow": "Location-specific flora/fauna selection; shared natural/basekits. Oneinputimageperflora call;faunacallsbrandnewwithnoimageinput. No completebiomeoranimalriggenerated.",
+  "status": "three-reference-sheets-produced-pending-review",
+  "generated_selected_sheets": 3,
+  "component_targets": 20,
+  "review_notes": {
+    "F02-FLORA-001": [
+      "Four named canopy forms are present with root feet, proposed heights and leaf/bark insets. Oak, birch, beech and multi-stem hazel are newly proposed woodland forms; GEN-09 supplies the rendering vocabulary, not these exact species models.",
+      "Small canopy-outline insets are front silhouettes, not verified overhead crown plans. Leaf/nut interpretation, branch count, bark texture, backs and root contact need modelling review; they are not botanically validated specimens or seamless texture maps.",
+      "Use local species mixtures, saplings and density changes rather than duplicate identical trees everywhere. Canopy/leaf geometry, alpha materials, wind, LOD and runtime performance remain unbuilt."
+    ],
+    "F02-FAUNA-001": [
+      "All four labelled mammals have a large profile/three-quarter view plus front/rear views. Doe has no antlers; fox/hare/squirrel have coherent ordinary woodland forms and single tails. Printed dimensions match the proposed values.",
+      "These are imaginative naturalistic references without a supplied animal image. View-to-view shape/pose parity, exact limb/toe anatomy, skeletal joints, fur, topology, UVs and support are not proven by the illustrations.",
+      "The artwork is not a rig, locomotion cycle or completed character. Body proportions and pose must be locked on model intake before animal movement/behavior is claimed."
+    ],
+    "F02-FAUNA-002": [
+      "All twelve named groups are present. The revision repacks six birds and six insects into four columns and three rows without the first draft\u2019s blank cells.",
+      "Birds are shown at rest with folded wings and smaller back views; flight forms remain missing. Insect wing/leg roots, fine legs, antennae and undersides are not fully resolved. Species markings are inspired illustrations rather than validated anatomy or identical mesh projections.",
+      "Each cell uses an independent illustration scale. Count main species IDs once despite smaller duplicate views. Mask labels/insets deliberately before model intake; mesh splitting, translucency, rigging, flight and behavior remain unverified."
+    ]
+  }
+}

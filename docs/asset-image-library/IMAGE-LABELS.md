@@ -877,3 +877,72 @@ R03 uses plain tower circles and source-reviewed garden symbols. See [garden pla
 | F02-NATURE-001-R01 | [West Lantern Forest — missing natural objects and wild plants — superseded first draft](world-location-kits/west-lantern-forest/F02-NATURE-001/rejected-drafts/F02-NATURE-001-R01.png) |
 | SRC-WEST-B12-VILLAGE | [B12-village-original](world-location-kits/west-lantern-forest/source/B12-village-original.png) |
 | SRC-WEST-STREAMBANK | [mossy-streambank-original](world-location-kits/west-lantern-forest/source/mossy-streambank-original.png) |
+
+## Location zoom audit and first ecology references
+
+| ID | Reference |
+| --- | --- |
+| F02-FLORA-001 | [West Lantern Forest — woodland canopy flora](world-location-kits/west-lantern-forest/ecology/F02-FLORA-001/F02-FLORA-001.png) |
+| F02-FAUNA-001 | [West Lantern Forest — woodland mammals](world-location-kits/west-lantern-forest/ecology/F02-FAUNA-001/F02-FAUNA-001.png) |
+| F02-FAUNA-002 | [West Lantern Forest — birds and insects](world-location-kits/west-lantern-forest/ecology/F02-FAUNA-002/F02-FAUNA-002.png) |
+| F02-FAUNA-002-R01 | [West Lantern Forest — birds and insects — superseded layout draft](world-location-kits/west-lantern-forest/ecology/F02-FAUNA-002/rejected-drafts/F02-FAUNA-002-R01.png) |
+| SRC-LOC-B02-GEN-05 | [B02 — architectural-study-panel from GEN-05](world-layout/location-audit/source/B02-GEN-05.png) |
+| SRC-LOC-B03-GEN-05 | [B03 — architectural-study-panel from GEN-05](world-layout/location-audit/source/B03-GEN-05.png) |
+| SRC-LOC-B04-GEN-05 | [B04 — architectural-study-panel from GEN-05](world-layout/location-audit/source/B04-GEN-05.png) |
+| SRC-LOC-B05-GEN-05 | [B05 — architectural-study-panel from GEN-05](world-layout/location-audit/source/B05-GEN-05.png) |
+| SRC-LOC-B06-GEN-05 | [B06 — architectural-study-panel from GEN-05](world-layout/location-audit/source/B06-GEN-05.png) |
+| SRC-LOC-B07-GEN-05 | [B07 — architectural-study-panel from GEN-05](world-layout/location-audit/source/B07-GEN-05.png) |
+| SRC-LOC-B08-GEN-05 | [B08 — architectural-study-panel from GEN-05](world-layout/location-audit/source/B08-GEN-05.png) |
+| SRC-LOC-B09-GEN-05 | [B09 — architectural-study-panel from GEN-05](world-layout/location-audit/source/B09-GEN-05.png) |
+| SRC-LOC-B10-GEN-05 | [B10 — architectural-study-panel from GEN-05](world-layout/location-audit/source/B10-GEN-05.png) |
+| SRC-LOC-B11-GEN-06 | [B11 — architectural-study-panel from GEN-06](world-layout/location-audit/source/B11-GEN-06.png) |
+| SRC-LOC-B12-GEN-06 | [B12 — architectural-study-panel from GEN-06](world-layout/location-audit/source/B12-GEN-06.png) |
+| SRC-LOC-B13-GEN-06 | [B13 — architectural-study-panel from GEN-06](world-layout/location-audit/source/B13-GEN-06.png) |
+| SRC-LOC-B14-GEN-06 | [B14 — architectural-study-panel from GEN-06](world-layout/location-audit/source/B14-GEN-06.png) |
+| SRC-LOC-B15-GEN-06 | [B15 — architectural-study-panel from GEN-06](world-layout/location-audit/source/B15-GEN-06.png) |
+| SRC-LOC-B16-GEN-06 | [B16 — architectural-study-panel from GEN-06](world-layout/location-audit/source/B16-GEN-06.png) |
+| SRC-LOC-B17-GEN-06 | [B17 — architectural-study-panel from GEN-06](world-layout/location-audit/source/B17-GEN-06.png) |
+| SRC-LOC-B18-GEN-06 | [B18 — architectural-study-panel from GEN-06](world-layout/location-audit/source/B18-GEN-06.png) |
+| SRC-LOC-B19-GEN-06 | [B19 — architectural-study-panel from GEN-06](world-layout/location-audit/source/B19-GEN-06.png) |
+| SRC-LOC-B20-GEN-06 | [B20 — architectural-study-panel from GEN-06](world-layout/location-audit/source/B20-GEN-06.png) |
+| SRC-LOC-B21-GEN-06 | [B21 — architectural-study-panel from GEN-06](world-layout/location-audit/source/B21-GEN-06.png) |
+| SRC-LOC-B22-GEN-06 | [B22 — architectural-study-panel from GEN-06](world-layout/location-audit/source/B22-GEN-06.png) |
+| SRC-LOC-B23-GEN-06 | [B23 — architectural-study-panel from GEN-06](world-layout/location-audit/source/B23-GEN-06.png) |
+| SRC-LOC-B24-GEN-06 | [B24 — architectural-study-panel from GEN-06](world-layout/location-audit/source/B24-GEN-06.png) |
+| SRC-LOC-B25-GEN-06 | [B25 — architectural-study-panel from GEN-06](world-layout/location-audit/source/B25-GEN-06.png) |
+| SRC-LOC-B01-GEN-37 | [B01 — palace-authoritative-front from GEN-37](world-layout/location-audit/source/B01-GEN-37.png) |
+| SRC-LOC-B02-GEN-04 | [B02 — historical-map-context-only from GEN-04](world-layout/location-audit/source/B02-GEN-04.png) |
+| SRC-LOC-B03-GEN-04 | [B03 — historical-map-context-only from GEN-04](world-layout/location-audit/source/B03-GEN-04.png) |
+| SRC-LOC-B04-GEN-04 | [B04 — historical-map-context-only from GEN-04](world-layout/location-audit/source/B04-GEN-04.png) |
+| SRC-LOC-B05-GEN-04 | [B05 — historical-map-context-only from GEN-04](world-layout/location-audit/source/B05-GEN-04.png) |
+| SRC-LOC-B06-GEN-04 | [B06 — historical-map-context-only from GEN-04](world-layout/location-audit/source/B06-GEN-04.png) |
+| SRC-LOC-B07-GEN-04 | [B07 — historical-map-context-only from GEN-04](world-layout/location-audit/source/B07-GEN-04.png) |
+| SRC-LOC-B08-GEN-04 | [B08 — historical-map-context-only from GEN-04](world-layout/location-audit/source/B08-GEN-04.png) |
+| SRC-LOC-B09-GEN-04 | [B09 — historical-map-context-only from GEN-04](world-layout/location-audit/source/B09-GEN-04.png) |
+| SRC-LOC-B10-GEN-04 | [B10 — historical-map-context-only from GEN-04](world-layout/location-audit/source/B10-GEN-04.png) |
+| SRC-LOC-B11-GEN-04 | [B11 — historical-map-context-only from GEN-04](world-layout/location-audit/source/B11-GEN-04.png) |
+| SRC-LOC-B12-GEN-04 | [B12 — historical-map-context-only from GEN-04](world-layout/location-audit/source/B12-GEN-04.png) |
+| SRC-LOC-B13-GEN-04 | [B13 — historical-map-context-only from GEN-04](world-layout/location-audit/source/B13-GEN-04.png) |
+| SRC-LOC-B14-GEN-04 | [B14 — historical-map-context-only from GEN-04](world-layout/location-audit/source/B14-GEN-04.png) |
+| SRC-LOC-B15-GEN-04 | [B15 — historical-map-context-only from GEN-04](world-layout/location-audit/source/B15-GEN-04.png) |
+| SRC-LOC-B16-GEN-04 | [B16 — historical-map-context-only from GEN-04](world-layout/location-audit/source/B16-GEN-04.png) |
+| SRC-LOC-B17-GEN-04 | [B17 — historical-map-context-only from GEN-04](world-layout/location-audit/source/B17-GEN-04.png) |
+| SRC-LOC-B18-GEN-04 | [B18 — historical-map-context-only from GEN-04](world-layout/location-audit/source/B18-GEN-04.png) |
+| SRC-LOC-B19-GEN-04 | [B19 — historical-map-context-only from GEN-04](world-layout/location-audit/source/B19-GEN-04.png) |
+| SRC-LOC-B20-GEN-04 | [B20 — historical-map-context-only from GEN-04](world-layout/location-audit/source/B20-GEN-04.png) |
+| SRC-LOC-B21-GEN-04 | [B21 — historical-map-context-only from GEN-04](world-layout/location-audit/source/B21-GEN-04.png) |
+| SRC-LOC-B22-GEN-04 | [B22 — historical-map-context-only from GEN-04](world-layout/location-audit/source/B22-GEN-04.png) |
+| SRC-LOC-B23-GEN-04 | [B23 — historical-map-context-only from GEN-04](world-layout/location-audit/source/B23-GEN-04.png) |
+| SRC-LOC-B24-GEN-04 | [B24 — historical-map-context-only from GEN-04](world-layout/location-audit/source/B24-GEN-04.png) |
+| SRC-LOC-B25-GEN-04 | [B25 — historical-map-context-only from GEN-04](world-layout/location-audit/source/B25-GEN-04.png) |
+| SRC-LOC-S01-GEN-04 | [S01 — historical-sky-map-context from GEN-04](world-layout/location-audit/source/S01-GEN-04.png) |
+| SRC-LOC-S02-GEN-04 | [S02 — historical-sky-map-context from GEN-04](world-layout/location-audit/source/S02-GEN-04.png) |
+| SRC-LOC-S04-GEN-04 | [S04 — historical-sky-map-context from GEN-04](world-layout/location-audit/source/S04-GEN-04.png) |
+| SRC-LOC-S05-GEN-04 | [S05 — historical-sky-map-context from GEN-04](world-layout/location-audit/source/S05-GEN-04.png) |
+| SRC-LOC-F01-WLD-MAP-002 | [F01 — current-diagrammatic-placement-proposal from WLD-MAP-002](world-layout/location-audit/source/F01-WLD-MAP-002.png) |
+| SRC-LOC-F02-WLD-MAP-002 | [F02 — current-diagrammatic-placement-proposal from WLD-MAP-002](world-layout/location-audit/source/F02-WLD-MAP-002.png) |
+| SRC-LOC-F03-WLD-MAP-002 | [F03 — current-diagrammatic-placement-proposal from WLD-MAP-002](world-layout/location-audit/source/F03-WLD-MAP-002.png) |
+| SRC-LOC-S03-WLD-MAP-002 | [S03 — current-diagrammatic-placement-proposal from WLD-MAP-002](world-layout/location-audit/source/S03-WLD-MAP-002.png) |
+| SRC-LOC-S06-WLD-MAP-002 | [S06 — current-diagrammatic-placement-proposal from WLD-MAP-002](world-layout/location-audit/source/S06-WLD-MAP-002.png) |
+| SRC-LOC-B01-GEN-37-CENTRE | [B01 — palace-front-detail from GEN-37](world-layout/location-audit/source/B01-GEN-37-centre-detail.png) |
+| SRC-LOC-B01-GEN-37-EAST | [B01 — palace-front-detail from GEN-37](world-layout/location-audit/source/B01-GEN-37-east-detail.png) |

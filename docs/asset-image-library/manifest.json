@@ -1,8 +1,8 @@
 {
   "date": "2026-10-13",
-  "distinct_image_count": 743,
+  "distinct_image_count": 807,
   "source_file_count": 969,
-  "total_bytes": 721002049,
+  "total_bytes": 742884109,
   "categories": {
     "additional-generated-studies": 33,
     "component-development-studies": 3,
@@ -12,6 +12,7 @@
     "interior-room-reference-kits": 2,
     "interior-room-source-panels": 2,
     "interior-room-superseded-drafts": 3,
+    "location-audit-source-panels": 60,
     "missing-component-packs": 1,
     "modular-component-packs": 2,
     "original-bridge-source-crops": 10,
@@ -44,6 +45,8 @@
     "terminal-tower-source-sections": 4,
     "vector-drawings": 130,
     "wishing-original-source-panels": 8,
+    "world-ecology-reference-kits": 3,
+    "world-ecology-superseded-drafts": 1,
     "world-layout-superseded-drafts": 2,
     "world-location-detail-kits": 2,
     "world-location-source-panels": 2,
@@ -15122,6 +15125,1185 @@
       "reference_role": "direct-original-source-panel",
       "design_status": "Reference design; proposed dimensions/hidden geometry, not approved3D fit",
       "review_status": "source-extraction-unchanged"
+    },
+    {
+      "id": "F02-FLORA-001",
+      "title": "West Lantern Forest \u2014 woodland canopy flora",
+      "label": "F02-FLORA-001 \u2014 West Lantern Forest \u2014 woodland canopy flora",
+      "category": "world-ecology-reference-kits",
+      "file": "world-location-kits/west-lantern-forest/ecology/F02-FLORA-001/F02-FLORA-001.png",
+      "sha256": "764234b04a6efc01987e47facadc348057fb25307d1a25307359a0227482cc74",
+      "bytes": 2891787,
+      "source_aliases": [
+        "/workspace/generated_images/exec-87b0b7ad-dd25-499b-9bc5-80bc43a3da06.png"
+      ],
+      "alias_ids": [],
+      "component_ids": [
+        "F02-FLORA-001-A01",
+        "F02-FLORA-001-A02",
+        "F02-FLORA-001-A03",
+        "F02-FLORA-001-A04"
+      ],
+      "related_image_ids": [
+        "GEN-09"
+      ],
+      "reference_role": "location-flora-or-fauna-reference",
+      "design_status": "Proposed reference; no measured geometry, rig or playable layout approval",
+      "review_status": "pending-user-reference-review"
+    },
+    {
+      "id": "F02-FAUNA-001",
+      "title": "West Lantern Forest \u2014 woodland mammals",
+      "label": "F02-FAUNA-001 \u2014 West Lantern Forest \u2014 woodland mammals",
+      "category": "world-ecology-reference-kits",
+      "file": "world-location-kits/west-lantern-forest/ecology/F02-FAUNA-001/F02-FAUNA-001.png",
+      "sha256": "da380f1e2c7a5e2c3afdea53278c6c705b4951c78c9d2aca86790b73d146e469",
+      "bytes": 2175325,
+      "source_aliases": [
+        "/workspace/generated_images/exec-c400bff1-cbba-4f41-a2f5-5ade65f81df8.png"
+      ],
+      "alias_ids": [],
+      "component_ids": [
+        "F02-FAUNA-001-A01",
+        "F02-FAUNA-001-A02",
+        "F02-FAUNA-001-A03",
+        "F02-FAUNA-001-A04"
+      ],
+      "related_image_ids": [],
+      "reference_role": "location-flora-or-fauna-reference",
+      "design_status": "Proposed reference; no measured geometry, rig or playable layout approval",
+      "review_status": "pending-user-reference-review"
+    },
+    {
+      "id": "F02-FAUNA-002",
+      "title": "West Lantern Forest \u2014 birds and insects",
+      "label": "F02-FAUNA-002 \u2014 West Lantern Forest \u2014 birds and insects",
+      "category": "world-ecology-reference-kits",
+      "file": "world-location-kits/west-lantern-forest/ecology/F02-FAUNA-002/F02-FAUNA-002.png",
+      "sha256": "71022ad5ff20ea772bef5ad79e5b2f9d637fbce219e4b9cb6ab714eaeaba276b",
+      "bytes": 2189690,
+      "source_aliases": [
+        "/workspace/generated_images/exec-5e23822c-e879-4599-ad93-2f47c788202c.png"
+      ],
+      "alias_ids": [],
+      "component_ids": [
+        "F02-FAUNA-002-A01",
+        "F02-FAUNA-002-A02",
+        "F02-FAUNA-002-A03",
+        "F02-FAUNA-002-A04",
+        "F02-FAUNA-002-A05",
+        "F02-FAUNA-002-A06",
+        "F02-FAUNA-002-A07",
+        "F02-FAUNA-002-A08",
+        "F02-FAUNA-002-A09",
+        "F02-FAUNA-002-A10",
+        "F02-FAUNA-002-A11",
+        "F02-FAUNA-002-A12"
+      ],
+      "related_image_ids": [],
+      "reference_role": "location-flora-or-fauna-reference",
+      "design_status": "Proposed reference; no measured geometry, rig or playable layout approval",
+      "review_status": "pending-user-reference-review"
+    },
+    {
+      "id": "F02-FAUNA-002-R01",
+      "title": "West Lantern Forest \u2014 birds and insects \u2014 superseded layout draft",
+      "label": "F02-FAUNA-002-R01 \u2014 West Lantern Forest \u2014 birds and insects \u2014 superseded layout draft",
+      "category": "world-ecology-superseded-drafts",
+      "file": "world-location-kits/west-lantern-forest/ecology/F02-FAUNA-002/rejected-drafts/F02-FAUNA-002-R01.png",
+      "sha256": "91fe6f16a1b7c5f732246d268b3a9c51775bec209361205c1da24807e3dd44ff",
+      "bytes": 2221118,
+      "source_aliases": [
+        "/workspace/generated_images/exec-b0d7b874-36e4-40b7-a98f-9f0d71b0a916.png"
+      ],
+      "alias_ids": [],
+      "component_ids": [],
+      "related_image_ids": [
+        "F02-FAUNA-002"
+      ],
+      "reference_role": "superseded-ecology-reference",
+      "design_status": "Proposed reference; no measured geometry, rig or playable layout approval",
+      "review_status": "rejected-preserved"
+    },
+    {
+      "id": "SRC-LOC-B02-GEN-05",
+      "title": "B02 \u2014 architectural-study-panel from GEN-05",
+      "label": "SRC-LOC-B02-GEN-05 \u2014 B02 \u2014 architectural-study-panel from GEN-05",
+      "category": "location-audit-source-panels",
+      "file": "world-layout/location-audit/source/B02-GEN-05.png",
+      "sha256": "67e54451047162c59d10206e29194abad9178015581c5aa52d3bdc2e701e1eb2",
+      "bytes": 329144,
+      "source_aliases": [],
+      "alias_ids": [],
+      "component_ids": [],
+      "related_image_ids": [
+        "GEN-05"
+      ],
+      "reference_role": "direct-original-source-panel",
+      "design_status": "Proposed reference; no measured geometry, rig or playable layout approval",
+      "review_status": "source-crop-preserved; individually-viewed-in-this-pass"
+    },
+    {
+      "id": "SRC-LOC-B03-GEN-05",
+      "title": "B03 \u2014 architectural-study-panel from GEN-05",
+      "label": "SRC-LOC-B03-GEN-05 \u2014 B03 \u2014 architectural-study-panel from GEN-05",
+      "category": "location-audit-source-panels",
+      "file": "world-layout/location-audit/source/B03-GEN-05.png",
+      "sha256": "de3fa8bfced7c49249ba55f34dff93fa2a591f501000b6befe2784d060aa1255",
+      "bytes": 295338,
+      "source_aliases": [],
+      "alias_ids": [],
+      "component_ids": [],
+      "related_image_ids": [
+        "GEN-05"
+      ],
+      "reference_role": "direct-original-source-panel",
+      "design_status": "Proposed reference; no measured geometry, rig or playable layout approval",
+      "review_status": "source-crop-preserved; individually-viewed-in-this-pass"
+    },
+    {
+      "id": "SRC-LOC-B04-GEN-05",
+      "title": "B04 \u2014 architectural-study-panel from GEN-05",
+      "label": "SRC-LOC-B04-GEN-05 \u2014 B04 \u2014 architectural-study-panel from GEN-05",
+      "category": "location-audit-source-panels",
+      "file": "world-layout/location-audit/source/B04-GEN-05.png",
+      "sha256": "fd03496e85237c4a29c3e202cdc3f99fce0163a2fe908ae40c0ae24dacceb9df",
+      "bytes": 331289,
+      "source_aliases": [],
+      "alias_ids": [],
+      "component_ids": [],
+      "related_image_ids": [
+        "GEN-05"
+      ],
+      "reference_role": "direct-original-source-panel",
+      "design_status": "Proposed reference; no measured geometry, rig or playable layout approval",
+      "review_status": "source-crop-preserved; individually-viewed-in-this-pass"
+    },
+    {
+      "id": "SRC-LOC-B05-GEN-05",
+      "title": "B05 \u2014 architectural-study-panel from GEN-05",
+      "label": "SRC-LOC-B05-GEN-05 \u2014 B05 \u2014 architectural-study-panel from GEN-05",
+      "category": "location-audit-source-panels",
+      "file": "world-layout/location-audit/source/B05-GEN-05.png",
+      "sha256": "e5f4525b2fc8ee4b6b976a71493c1ae9d5030f10d2a5360fe95f53dd6030d309",
+      "bytes": 337350,
+      "source_aliases": [],
+      "alias_ids": [],
+      "component_ids": [],
+      "related_image_ids": [
+        "GEN-05"
+      ],
+      "reference_role": "direct-original-source-panel",
+      "design_status": "Proposed reference; no measured geometry, rig or playable layout approval",
+      "review_status": "source-crop-preserved; individually-viewed-in-this-pass"
+    },
+    {
+      "id": "SRC-LOC-B06-GEN-05",
+      "title": "B06 \u2014 architectural-study-panel from GEN-05",
+      "label": "SRC-LOC-B06-GEN-05 \u2014 B06 \u2014 architectural-study-panel from GEN-05",
+      "category": "location-audit-source-panels",
+      "file": "world-layout/location-audit/source/B06-GEN-05.png",
+      "sha256": "2016d251c0bf741746667d1e475316a97efdb72fd37ae48f53414620f8dddb0e",
+      "bytes": 324185,
+      "source_aliases": [],
+      "alias_ids": [],
+      "component_ids": [],
+      "related_image_ids": [
+        "GEN-05"
+      ],
+      "reference_role": "direct-original-source-panel",
+      "design_status": "Proposed reference; no measured geometry, rig or playable layout approval",
+      "review_status": "source-crop-preserved; individually-viewed-in-this-pass"
+    },
+    {
+      "id": "SRC-LOC-B07-GEN-05",
+      "title": "B07 \u2014 architectural-study-panel from GEN-05",
+      "label": "SRC-LOC-B07-GEN-05 \u2014 B07 \u2014 architectural-study-panel from GEN-05",
+      "category": "location-audit-source-panels",
+      "file": "world-layout/location-audit/source/B07-GEN-05.png",
+      "sha256": "28e5d714b65a8f8f989dbbde203fe8f8970f87e4bbdc01df556853a29ce2a111",
+      "bytes": 328386,
+      "source_aliases": [],
+      "alias_ids": [],
+      "component_ids": [],
+      "related_image_ids": [
+        "GEN-05"
+      ],
+      "reference_role": "direct-original-source-panel",
+      "design_status": "Proposed reference; no measured geometry, rig or playable layout approval",
+      "review_status": "source-crop-preserved; individually-viewed-in-this-pass"
+    },
+    {
+      "id": "SRC-LOC-B08-GEN-05",
+      "title": "B08 \u2014 architectural-study-panel from GEN-05",
+      "label": "SRC-LOC-B08-GEN-05 \u2014 B08 \u2014 architectural-study-panel from GEN-05",
+      "category": "location-audit-source-panels",
+      "file": "world-layout/location-audit/source/B08-GEN-05.png",
+      "sha256": "375d3e663d70b112ea76330fe42812d0d0ce2a14e1d530023c9a06ce3873819f",
+      "bytes": 347986,
+      "source_aliases": [],
+      "alias_ids": [],
+      "component_ids": [],
+      "related_image_ids": [
+        "GEN-05"
+      ],
+      "reference_role": "direct-original-source-panel",
+      "design_status": "Proposed reference; no measured geometry, rig or playable layout approval",
+      "review_status": "source-crop-preserved; individually-viewed-in-this-pass"
+    },
+    {
+      "id": "SRC-LOC-B09-GEN-05",
+      "title": "B09 \u2014 architectural-study-panel from GEN-05",
+      "label": "SRC-LOC-B09-GEN-05 \u2014 B09 \u2014 architectural-study-panel from GEN-05",
+      "category": "location-audit-source-panels",
+      "file": "world-layout/location-audit/source/B09-GEN-05.png",
+      "sha256": "91d7d49a1a8eb3bfddbdf571fe6d97a56c9d4cde50197af2be0e5b9973fd51f3",
+      "bytes": 330313,
+      "source_aliases": [],
+      "alias_ids": [],
+      "component_ids": [],
+      "related_image_ids": [
+        "GEN-05"
+      ],
+      "reference_role": "direct-original-source-panel",
+      "design_status": "Proposed reference; no measured geometry, rig or playable layout approval",
+      "review_status": "source-crop-preserved; individually-viewed-in-this-pass"
+    },
+    {
+      "id": "SRC-LOC-B10-GEN-05",
+      "title": "B10 \u2014 architectural-study-panel from GEN-05",
+      "label": "SRC-LOC-B10-GEN-05 \u2014 B10 \u2014 architectural-study-panel from GEN-05",
+      "category": "location-audit-source-panels",
+      "file": "world-layout/location-audit/source/B10-GEN-05.png",
+      "sha256": "bcbd4627b0b51042ca06bfc050eee9f95bf610e3876d1165bc88acdf13d5dbb8",
+      "bytes": 324053,
+      "source_aliases": [],
+      "alias_ids": [],
+      "component_ids": [],
+      "related_image_ids": [
+        "GEN-05"
+      ],
+      "reference_role": "direct-original-source-panel",
+      "design_status": "Proposed reference; no measured geometry, rig or playable layout approval",
+      "review_status": "source-crop-preserved; individually-viewed-in-this-pass"
+    },
+    {
+      "id": "SRC-LOC-B11-GEN-06",
+      "title": "B11 \u2014 architectural-study-panel from GEN-06",
+      "label": "SRC-LOC-B11-GEN-06 \u2014 B11 \u2014 architectural-study-panel from GEN-06",
+      "category": "location-audit-source-panels",
+      "file": "world-layout/location-audit/source/B11-GEN-06.png",
+      "sha256": "e16cabaa0b6dc2abd72312a6866839f1970aff5ec111e5677094ec579254ab3f",
+      "bytes": 163943,
+      "source_aliases": [],
+      "alias_ids": [],
+      "component_ids": [],
+      "related_image_ids": [
+        "GEN-06"
+      ],
+      "reference_role": "direct-original-source-panel",
+      "design_status": "Proposed reference; no measured geometry, rig or playable layout approval",
+      "review_status": "source-crop-preserved; individually-viewed-in-this-pass"
+    },
+    {
+      "id": "SRC-LOC-B12-GEN-06",
+      "title": "B12 \u2014 architectural-study-panel from GEN-06",
+      "label": "SRC-LOC-B12-GEN-06 \u2014 B12 \u2014 architectural-study-panel from GEN-06",
+      "category": "location-audit-source-panels",
+      "file": "world-layout/location-audit/source/B12-GEN-06.png",
+      "sha256": "a02a4aa2a99c340e6d8c7d3f09a7c8fc05fdcc7e17e0f59bfe25ee8de676cd73",
+      "bytes": 171290,
+      "source_aliases": [],
+      "alias_ids": [],
+      "component_ids": [],
+      "related_image_ids": [
+        "GEN-06"
+      ],
+      "reference_role": "direct-original-source-panel",
+      "design_status": "Proposed reference; no measured geometry, rig or playable layout approval",
+      "review_status": "source-crop-preserved; individually-viewed-in-this-pass"
+    },
+    {
+      "id": "SRC-LOC-B13-GEN-06",
+      "title": "B13 \u2014 architectural-study-panel from GEN-06",
+      "label": "SRC-LOC-B13-GEN-06 \u2014 B13 \u2014 architectural-study-panel from GEN-06",
+      "category": "location-audit-source-panels",
+      "file": "world-layout/location-audit/source/B13-GEN-06.png",
+      "sha256": "93c2df65de3cc9a355ab954d70677f5651b174edbf6b89b574f0b0c1e5c3d0b3",
+      "bytes": 160148,
+      "source_aliases": [],
+      "alias_ids": [],
+      "component_ids": [],
+      "related_image_ids": [
+        "GEN-06"
+      ],
+      "reference_role": "direct-original-source-panel",
+      "design_status": "Proposed reference; no measured geometry, rig or playable layout approval",
+      "review_status": "source-crop-preserved; individually-viewed-in-this-pass"
+    },
+    {
+      "id": "SRC-LOC-B14-GEN-06",
+      "title": "B14 \u2014 architectural-study-panel from GEN-06",
+      "label": "SRC-LOC-B14-GEN-06 \u2014 B14 \u2014 architectural-study-panel from GEN-06",
+      "category": "location-audit-source-panels",
+      "file": "world-layout/location-audit/source/B14-GEN-06.png",
+      "sha256": "67833afcc6b09181c94edb1e44a13af919f3ce3c7cbffce2f15f89dd6142caf3",
+      "bytes": 163253,
+      "source_aliases": [],
+      "alias_ids": [],
+      "component_ids": [],
+      "related_image_ids": [
+        "GEN-06"
+      ],
+      "reference_role": "direct-original-source-panel",
+      "design_status": "Proposed reference; no measured geometry, rig or playable layout approval",
+      "review_status": "source-crop-preserved; individually-viewed-in-this-pass"
+    },
+    {
+      "id": "SRC-LOC-B15-GEN-06",
+      "title": "B15 \u2014 architectural-study-panel from GEN-06",
+      "label": "SRC-LOC-B15-GEN-06 \u2014 B15 \u2014 architectural-study-panel from GEN-06",
+      "category": "location-audit-source-panels",
+      "file": "world-layout/location-audit/source/B15-GEN-06.png",
+      "sha256": "766ca9b6dc96c36526e65f8a2c09382093839f5bda9db3f43083f839f8e4d1a9",
+      "bytes": 177279,
+      "source_aliases": [],
+      "alias_ids": [],
+      "component_ids": [],
+      "related_image_ids": [
+        "GEN-06"
+      ],
+      "reference_role": "direct-original-source-panel",
+      "design_status": "Proposed reference; no measured geometry, rig or playable layout approval",
+      "review_status": "source-crop-preserved; individually-viewed-in-this-pass"
+    },
+    {
+      "id": "SRC-LOC-B16-GEN-06",
+      "title": "B16 \u2014 architectural-study-panel from GEN-06",
+      "label": "SRC-LOC-B16-GEN-06 \u2014 B16 \u2014 architectural-study-panel from GEN-06",
+      "category": "location-audit-source-panels",
+      "file": "world-layout/location-audit/source/B16-GEN-06.png",
+      "sha256": "348284face74bfa6830c6cbbe655f8fe8cbb1ef3e79db6c621e42537e3a3dc86",
+      "bytes": 176130,
+      "source_aliases": [],
+      "alias_ids": [],
+      "component_ids": [],
+      "related_image_ids": [
+        "GEN-06"
+      ],
+      "reference_role": "direct-original-source-panel",
+      "design_status": "Proposed reference; no measured geometry, rig or playable layout approval",
+      "review_status": "source-crop-preserved; individually-viewed-in-this-pass"
+    },
+    {
+      "id": "SRC-LOC-B17-GEN-06",
+      "title": "B17 \u2014 architectural-study-panel from GEN-06",
+      "label": "SRC-LOC-B17-GEN-06 \u2014 B17 \u2014 architectural-study-panel from GEN-06",
+      "category": "location-audit-source-panels",
+      "file": "world-layout/location-audit/source/B17-GEN-06.png",
+      "sha256": "23df6e3a42ee973a5958aaa76a1a4ae5f0d13e651bece4c453c84e26cd8a937c",
+      "bytes": 183175,
+      "source_aliases": [],
+      "alias_ids": [],
+      "component_ids": [],
+      "related_image_ids": [
+        "GEN-06"
+      ],
+      "reference_role": "direct-original-source-panel",
+      "design_status": "Proposed reference; no measured geometry, rig or playable layout approval",
+      "review_status": "source-crop-preserved; individually-viewed-in-this-pass"
+    },
+    {
+      "id": "SRC-LOC-B18-GEN-06",
+      "title": "B18 \u2014 architectural-study-panel from GEN-06",
+      "label": "SRC-LOC-B18-GEN-06 \u2014 B18 \u2014 architectural-study-panel from GEN-06",
+      "category": "location-audit-source-panels",
+      "file": "world-layout/location-audit/source/B18-GEN-06.png",
+      "sha256": "16b7240464f3d2c5d4ad6bea284807aa9b70cd9015dbb96e3ad42823c71485ed",
+      "bytes": 186165,
+      "source_aliases": [],
+      "alias_ids": [],
+      "component_ids": [],
+      "related_image_ids": [
+        "GEN-06"
+      ],
+      "reference_role": "direct-original-source-panel",
+      "design_status": "Proposed reference; no measured geometry, rig or playable layout approval",
+      "review_status": "source-crop-preserved; individually-viewed-in-this-pass"
+    },
+    {
+      "id": "SRC-LOC-B19-GEN-06",
+      "title": "B19 \u2014 architectural-study-panel from GEN-06",
+      "label": "SRC-LOC-B19-GEN-06 \u2014 B19 \u2014 architectural-study-panel from GEN-06",
+      "category": "location-audit-source-panels",
+      "file": "world-layout/location-audit/source/B19-GEN-06.png",
+      "sha256": "560e0c38fca6657f11f5ca29d467e0516d297a21618fcde109b327131f5573d7",
+      "bytes": 173761,
+      "source_aliases": [],
+      "alias_ids": [],
+      "component_ids": [],
+      "related_image_ids": [
+        "GEN-06"
+      ],
+      "reference_role": "direct-original-source-panel",
+      "design_status": "Proposed reference; no measured geometry, rig or playable layout approval",
+      "review_status": "source-crop-preserved; individually-viewed-in-this-pass"
+    },
+    {
+      "id": "SRC-LOC-B20-GEN-06",
+      "title": "B20 \u2014 architectural-study-panel from GEN-06",
+      "label": "SRC-LOC-B20-GEN-06 \u2014 B20 \u2014 architectural-study-panel from GEN-06",
+      "category": "location-audit-source-panels",
+      "file": "world-layout/location-audit/source/B20-GEN-06.png",
+      "sha256": "66217be49b6f2aa65035cce6f6b383a6f91dabc5b2629fed143f6bbd47935713",
+      "bytes": 180890,
+      "source_aliases": [],
+      "alias_ids": [],
+      "component_ids": [],
+      "related_image_ids": [
+        "GEN-06"
+      ],
+      "reference_role": "direct-original-source-panel",
+      "design_status": "Proposed reference; no measured geometry, rig or playable layout approval",
+      "review_status": "source-crop-preserved; individually-viewed-in-this-pass"
+    },
+    {
+      "id": "SRC-LOC-B21-GEN-06",
+      "title": "B21 \u2014 architectural-study-panel from GEN-06",
+      "label": "SRC-LOC-B21-GEN-06 \u2014 B21 \u2014 architectural-study-panel from GEN-06",
+      "category": "location-audit-source-panels",
+      "file": "world-layout/location-audit/source/B21-GEN-06.png",
+      "sha256": "7b99d6c01b4bc6cac1a1f9a94fc020e4087202017943803729b7f1381f4f1f4a",
+      "bytes": 176396,
+      "source_aliases": [],
+      "alias_ids": [],
+      "component_ids": [],
+      "related_image_ids": [
+        "GEN-06"
+      ],
+      "reference_role": "direct-original-source-panel",
+      "design_status": "Proposed reference; no measured geometry, rig or playable layout approval",
+      "review_status": "source-crop-preserved; individually-viewed-in-this-pass"
+    },
+    {
+      "id": "SRC-LOC-B22-GEN-06",
+      "title": "B22 \u2014 architectural-study-panel from GEN-06",
+      "label": "SRC-LOC-B22-GEN-06 \u2014 B22 \u2014 architectural-study-panel from GEN-06",
+      "category": "location-audit-source-panels",
+      "file": "world-layout/location-audit/source/B22-GEN-06.png",
+      "sha256": "1a263deeade20346a4ad5c086737f8253647b5d4ea5b975d8f45ee7cacd7a437",
+      "bytes": 154674,
+      "source_aliases": [],
+      "alias_ids": [],
+      "component_ids": [],
+      "related_image_ids": [
+        "GEN-06"
+      ],
+      "reference_role": "direct-original-source-panel",
+      "design_status": "Proposed reference; no measured geometry, rig or playable layout approval",
+      "review_status": "source-crop-preserved; individually-viewed-in-this-pass"
+    },
+    {
+      "id": "SRC-LOC-B23-GEN-06",
+      "title": "B23 \u2014 architectural-study-panel from GEN-06",
+      "label": "SRC-LOC-B23-GEN-06 \u2014 B23 \u2014 architectural-study-panel from GEN-06",
+      "category": "location-audit-source-panels",
+      "file": "world-layout/location-audit/source/B23-GEN-06.png",
+      "sha256": "28e6bbf47fdec118215e820a54589fa622fb1fc46ede5d142f340eb35b34b3e8",
+      "bytes": 161269,
+      "source_aliases": [],
+      "alias_ids": [],
+      "component_ids": [],
+      "related_image_ids": [
+        "GEN-06"
+      ],
+      "reference_role": "direct-original-source-panel",
+      "design_status": "Proposed reference; no measured geometry, rig or playable layout approval",
+      "review_status": "source-crop-preserved; individually-viewed-in-this-pass"
+    },
+    {
+      "id": "SRC-LOC-B24-GEN-06",
+      "title": "B24 \u2014 architectural-study-panel from GEN-06",
+      "label": "SRC-LOC-B24-GEN-06 \u2014 B24 \u2014 architectural-study-panel from GEN-06",
+      "category": "location-audit-source-panels",
+      "file": "world-layout/location-audit/source/B24-GEN-06.png",
+      "sha256": "a787c843c1d8a098c795b1fe2f7ab95213d13aac215da109d3dfdad585c3a5d9",
+      "bytes": 161329,
+      "source_aliases": [],
+      "alias_ids": [],
+      "component_ids": [],
+      "related_image_ids": [
+        "GEN-06"
+      ],
+      "reference_role": "direct-original-source-panel",
+      "design_status": "Proposed reference; no measured geometry, rig or playable layout approval",
+      "review_status": "source-crop-preserved; individually-viewed-in-this-pass"
+    },
+    {
+      "id": "SRC-LOC-B25-GEN-06",
+      "title": "B25 \u2014 architectural-study-panel from GEN-06",
+      "label": "SRC-LOC-B25-GEN-06 \u2014 B25 \u2014 architectural-study-panel from GEN-06",
+      "category": "location-audit-source-panels",
+      "file": "world-layout/location-audit/source/B25-GEN-06.png",
+      "sha256": "9df7e6c8e6a01b9031ac24aedccfab55f86f09c922acd2c4e197497460719efe",
+      "bytes": 170221,
+      "source_aliases": [],
+      "alias_ids": [],
+      "component_ids": [],
+      "related_image_ids": [
+        "GEN-06"
+      ],
+      "reference_role": "direct-original-source-panel",
+      "design_status": "Proposed reference; no measured geometry, rig or playable layout approval",
+      "review_status": "source-crop-preserved; individually-viewed-in-this-pass"
+    },
+    {
+      "id": "SRC-LOC-B01-GEN-37",
+      "title": "B01 \u2014 palace-authoritative-front from GEN-37",
+      "label": "SRC-LOC-B01-GEN-37 \u2014 B01 \u2014 palace-authoritative-front from GEN-37",
+      "category": "location-audit-source-panels",
+      "file": "world-layout/location-audit/source/B01-GEN-37.png",
+      "sha256": "80d436f814c76422bdfd089b395d9f533240f15ee2c1434fc1dae4175a93b638",
+      "bytes": 2886683,
+      "source_aliases": [],
+      "alias_ids": [],
+      "component_ids": [],
+      "related_image_ids": [
+        "GEN-37"
+      ],
+      "reference_role": "direct-original-source-panel",
+      "design_status": "Proposed reference; no measured geometry, rig or playable layout approval",
+      "review_status": "source-crop-preserved; Primarysource reviewedviaindexedcentre/eastdetailandearlierwholefront;notameasuredroofplan"
+    },
+    {
+      "id": "SRC-LOC-B02-GEN-04",
+      "title": "B02 \u2014 historical-map-context-only from GEN-04",
+      "label": "SRC-LOC-B02-GEN-04 \u2014 B02 \u2014 historical-map-context-only from GEN-04",
+      "category": "location-audit-source-panels",
+      "file": "world-layout/location-audit/source/B02-GEN-04.png",
+      "sha256": "3752e0e518f3743e743729fe922c4296f2dcc176f91155d58ebc1d940fdd77cf",
+      "bytes": 49873,
+      "source_aliases": [],
+      "alias_ids": [],
+      "component_ids": [],
+      "related_image_ids": [
+        "GEN-04"
+      ],
+      "reference_role": "direct-original-source-panel",
+      "design_status": "Proposed reference; no measured geometry, rig or playable layout approval",
+      "review_status": "source-crop-preserved; WholeGEN-04mapreviewed;additionalcropindexedforfuturecomparison,noteachviewedindividually"
+    },
+    {
+      "id": "SRC-LOC-B03-GEN-04",
+      "title": "B03 \u2014 historical-map-context-only from GEN-04",
+      "label": "SRC-LOC-B03-GEN-04 \u2014 B03 \u2014 historical-map-context-only from GEN-04",
+      "category": "location-audit-source-panels",
+      "file": "world-layout/location-audit/source/B03-GEN-04.png",
+      "sha256": "13592d8f1b9fa5152bf90bc544eb0e9dbc254c028dbb5f7455e86cf336e69c3e",
+      "bytes": 40355,
+      "source_aliases": [],
+      "alias_ids": [],
+      "component_ids": [],
+      "related_image_ids": [
+        "GEN-04"
+      ],
+      "reference_role": "direct-original-source-panel",
+      "design_status": "Proposed reference; no measured geometry, rig or playable layout approval",
+      "review_status": "source-crop-preserved; WholeGEN-04mapreviewed;additionalcropindexedforfuturecomparison,noteachviewedindividually"
+    },
+    {
+      "id": "SRC-LOC-B04-GEN-04",
+      "title": "B04 \u2014 historical-map-context-only from GEN-04",
+      "label": "SRC-LOC-B04-GEN-04 \u2014 B04 \u2014 historical-map-context-only from GEN-04",
+      "category": "location-audit-source-panels",
+      "file": "world-layout/location-audit/source/B04-GEN-04.png",
+      "sha256": "f634abd5a27cad6088d5fdc8b4aab15efafe9b6b3aa40642e7b42ec263d717ad",
+      "bytes": 27552,
+      "source_aliases": [],
+      "alias_ids": [],
+      "component_ids": [],
+      "related_image_ids": [
+        "GEN-04"
+      ],
+      "reference_role": "direct-original-source-panel",
+      "design_status": "Proposed reference; no measured geometry, rig or playable layout approval",
+      "review_status": "source-crop-preserved; WholeGEN-04mapreviewed;additionalcropindexedforfuturecomparison,noteachviewedindividually"
+    },
+    {
+      "id": "SRC-LOC-B05-GEN-04",
+      "title": "B05 \u2014 historical-map-context-only from GEN-04",
+      "label": "SRC-LOC-B05-GEN-04 \u2014 B05 \u2014 historical-map-context-only from GEN-04",
+      "category": "location-audit-source-panels",
+      "file": "world-layout/location-audit/source/B05-GEN-04.png",
+      "sha256": "b8db380a564ea44e36cb33034146ae3f1eadca9881f39b48461f5b2bbf4a5a16",
+      "bytes": 48763,
+      "source_aliases": [],
+      "alias_ids": [],
+      "component_ids": [],
+      "related_image_ids": [
+        "GEN-04"
+      ],
+      "reference_role": "direct-original-source-panel",
+      "design_status": "Proposed reference; no measured geometry, rig or playable layout approval",
+      "review_status": "source-crop-preserved; WholeGEN-04mapreviewed;additionalcropindexedforfuturecomparison,noteachviewedindividually"
+    },
+    {
+      "id": "SRC-LOC-B06-GEN-04",
+      "title": "B06 \u2014 historical-map-context-only from GEN-04",
+      "label": "SRC-LOC-B06-GEN-04 \u2014 B06 \u2014 historical-map-context-only from GEN-04",
+      "category": "location-audit-source-panels",
+      "file": "world-layout/location-audit/source/B06-GEN-04.png",
+      "sha256": "aa866976b4bd25049e296d33aa738123fb126b92893e72bc9d683359d37cfa50",
+      "bytes": 17564,
+      "source_aliases": [],
+      "alias_ids": [],
+      "component_ids": [],
+      "related_image_ids": [
+        "GEN-04"
+      ],
+      "reference_role": "direct-original-source-panel",
+      "design_status": "Proposed reference; no measured geometry, rig or playable layout approval",
+      "review_status": "source-crop-preserved; WholeGEN-04mapreviewed;additionalcropindexedforfuturecomparison,noteachviewedindividually"
+    },
+    {
+      "id": "SRC-LOC-B07-GEN-04",
+      "title": "B07 \u2014 historical-map-context-only from GEN-04",
+      "label": "SRC-LOC-B07-GEN-04 \u2014 B07 \u2014 historical-map-context-only from GEN-04",
+      "category": "location-audit-source-panels",
+      "file": "world-layout/location-audit/source/B07-GEN-04.png",
+      "sha256": "8a67316428808e2b8fb828aa1d30a8c4ccda6b0c2566b838776fc34da379f9a9",
+      "bytes": 33035,
+      "source_aliases": [],
+      "alias_ids": [],
+      "component_ids": [],
+      "related_image_ids": [
+        "GEN-04"
+      ],
+      "reference_role": "direct-original-source-panel",
+      "design_status": "Proposed reference; no measured geometry, rig or playable layout approval",
+      "review_status": "source-crop-preserved; WholeGEN-04mapreviewed;additionalcropindexedforfuturecomparison,noteachviewedindividually"
+    },
+    {
+      "id": "SRC-LOC-B08-GEN-04",
+      "title": "B08 \u2014 historical-map-context-only from GEN-04",
+      "label": "SRC-LOC-B08-GEN-04 \u2014 B08 \u2014 historical-map-context-only from GEN-04",
+      "category": "location-audit-source-panels",
+      "file": "world-layout/location-audit/source/B08-GEN-04.png",
+      "sha256": "e7bc889a7a5756abab4c3eee891ed17de1ced3fc9d82b0cf2adb17921320aa30",
+      "bytes": 31452,
+      "source_aliases": [],
+      "alias_ids": [],
+      "component_ids": [],
+      "related_image_ids": [
+        "GEN-04"
+      ],
+      "reference_role": "direct-original-source-panel",
+      "design_status": "Proposed reference; no measured geometry, rig or playable layout approval",
+      "review_status": "source-crop-preserved; WholeGEN-04mapreviewed;additionalcropindexedforfuturecomparison,noteachviewedindividually"
+    },
+    {
+      "id": "SRC-LOC-B09-GEN-04",
+      "title": "B09 \u2014 historical-map-context-only from GEN-04",
+      "label": "SRC-LOC-B09-GEN-04 \u2014 B09 \u2014 historical-map-context-only from GEN-04",
+      "category": "location-audit-source-panels",
+      "file": "world-layout/location-audit/source/B09-GEN-04.png",
+      "sha256": "a2432157c5773961d03a5fcc1d4f012d1e4905518d14e7d849fb363ba66fbf18",
+      "bytes": 84274,
+      "source_aliases": [],
+      "alias_ids": [],
+      "component_ids": [],
+      "related_image_ids": [
+        "GEN-04"
+      ],
+      "reference_role": "direct-original-source-panel",
+      "design_status": "Proposed reference; no measured geometry, rig or playable layout approval",
+      "review_status": "source-crop-preserved; WholeGEN-04mapreviewed;additionalcropindexedforfuturecomparison,noteachviewedindividually"
+    },
+    {
+      "id": "SRC-LOC-B10-GEN-04",
+      "title": "B10 \u2014 historical-map-context-only from GEN-04",
+      "label": "SRC-LOC-B10-GEN-04 \u2014 B10 \u2014 historical-map-context-only from GEN-04",
+      "category": "location-audit-source-panels",
+      "file": "world-layout/location-audit/source/B10-GEN-04.png",
+      "sha256": "fce0d6ae6aaeb8400242afc8d13d2908154d4f42beee36911ccc1de00cc11ef1",
+      "bytes": 93770,
+      "source_aliases": [],
+      "alias_ids": [],
+      "component_ids": [],
+      "related_image_ids": [
+        "GEN-04"
+      ],
+      "reference_role": "direct-original-source-panel",
+      "design_status": "Proposed reference; no measured geometry, rig or playable layout approval",
+      "review_status": "source-crop-preserved; WholeGEN-04mapreviewed;additionalcropindexedforfuturecomparison,noteachviewedindividually"
+    },
+    {
+      "id": "SRC-LOC-B11-GEN-04",
+      "title": "B11 \u2014 historical-map-context-only from GEN-04",
+      "label": "SRC-LOC-B11-GEN-04 \u2014 B11 \u2014 historical-map-context-only from GEN-04",
+      "category": "location-audit-source-panels",
+      "file": "world-layout/location-audit/source/B11-GEN-04.png",
+      "sha256": "b88c84d52abd49c32fa28edf8ef9df35102140efe63b014955b393edb6a0fcbe",
+      "bytes": 48681,
+      "source_aliases": [],
+      "alias_ids": [],
+      "component_ids": [],
+      "related_image_ids": [
+        "GEN-04"
+      ],
+      "reference_role": "direct-original-source-panel",
+      "design_status": "Proposed reference; no measured geometry, rig or playable layout approval",
+      "review_status": "source-crop-preserved; WholeGEN-04mapreviewed;additionalcropindexedforfuturecomparison,noteachviewedindividually"
+    },
+    {
+      "id": "SRC-LOC-B12-GEN-04",
+      "title": "B12 \u2014 historical-map-context-only from GEN-04",
+      "label": "SRC-LOC-B12-GEN-04 \u2014 B12 \u2014 historical-map-context-only from GEN-04",
+      "category": "location-audit-source-panels",
+      "file": "world-layout/location-audit/source/B12-GEN-04.png",
+      "sha256": "716c66c31ecc38e8083926af34cbabee29cb5022859589c10bf3afbc3b107722",
+      "bytes": 41975,
+      "source_aliases": [],
+      "alias_ids": [],
+      "component_ids": [],
+      "related_image_ids": [
+        "GEN-04"
+      ],
+      "reference_role": "direct-original-source-panel",
+      "design_status": "Proposed reference; no measured geometry, rig or playable layout approval",
+      "review_status": "source-crop-preserved; WholeGEN-04mapreviewed;additionalcropindexedforfuturecomparison,noteachviewedindividually"
+    },
+    {
+      "id": "SRC-LOC-B13-GEN-04",
+      "title": "B13 \u2014 historical-map-context-only from GEN-04",
+      "label": "SRC-LOC-B13-GEN-04 \u2014 B13 \u2014 historical-map-context-only from GEN-04",
+      "category": "location-audit-source-panels",
+      "file": "world-layout/location-audit/source/B13-GEN-04.png",
+      "sha256": "790369acd3d5062ccf99c4dc2a69082e9192b7480f9a42ebcf930bf8161bd266",
+      "bytes": 40109,
+      "source_aliases": [],
+      "alias_ids": [],
+      "component_ids": [],
+      "related_image_ids": [
+        "GEN-04"
+      ],
+      "reference_role": "direct-original-source-panel",
+      "design_status": "Proposed reference; no measured geometry, rig or playable layout approval",
+      "review_status": "source-crop-preserved; WholeGEN-04mapreviewed;additionalcropindexedforfuturecomparison,noteachviewedindividually"
+    },
+    {
+      "id": "SRC-LOC-B14-GEN-04",
+      "title": "B14 \u2014 historical-map-context-only from GEN-04",
+      "label": "SRC-LOC-B14-GEN-04 \u2014 B14 \u2014 historical-map-context-only from GEN-04",
+      "category": "location-audit-source-panels",
+      "file": "world-layout/location-audit/source/B14-GEN-04.png",
+      "sha256": "a921e40895aa3bd85ff467333e20d7485f44127018128342854979c10d6dd770",
+      "bytes": 103405,
+      "source_aliases": [],
+      "alias_ids": [],
+      "component_ids": [],
+      "related_image_ids": [
+        "GEN-04"
+      ],
+      "reference_role": "direct-original-source-panel",
+      "design_status": "Proposed reference; no measured geometry, rig or playable layout approval",
+      "review_status": "source-crop-preserved; WholeGEN-04mapreviewed;additionalcropindexedforfuturecomparison,noteachviewedindividually"
+    },
+    {
+      "id": "SRC-LOC-B15-GEN-04",
+      "title": "B15 \u2014 historical-map-context-only from GEN-04",
+      "label": "SRC-LOC-B15-GEN-04 \u2014 B15 \u2014 historical-map-context-only from GEN-04",
+      "category": "location-audit-source-panels",
+      "file": "world-layout/location-audit/source/B15-GEN-04.png",
+      "sha256": "dfadde16e355ae55f54b6825babaaa2cc470faa8f3bbbfd1652b724aed8def33",
+      "bytes": 108443,
+      "source_aliases": [],
+      "alias_ids": [],
+      "component_ids": [],
+      "related_image_ids": [
+        "GEN-04"
+      ],
+      "reference_role": "direct-original-source-panel",
+      "design_status": "Proposed reference; no measured geometry, rig or playable layout approval",
+      "review_status": "source-crop-preserved; WholeGEN-04mapreviewed;additionalcropindexedforfuturecomparison,noteachviewedindividually"
+    },
+    {
+      "id": "SRC-LOC-B16-GEN-04",
+      "title": "B16 \u2014 historical-map-context-only from GEN-04",
+      "label": "SRC-LOC-B16-GEN-04 \u2014 B16 \u2014 historical-map-context-only from GEN-04",
+      "category": "location-audit-source-panels",
+      "file": "world-layout/location-audit/source/B16-GEN-04.png",
+      "sha256": "5e980d23baf09c0894e9546a27f25d11d2df2360711b6f5ecce8b41fa6ef3908",
+      "bytes": 62822,
+      "source_aliases": [],
+      "alias_ids": [],
+      "component_ids": [],
+      "related_image_ids": [
+        "GEN-04"
+      ],
+      "reference_role": "direct-original-source-panel",
+      "design_status": "Proposed reference; no measured geometry, rig or playable layout approval",
+      "review_status": "source-crop-preserved; WholeGEN-04mapreviewed;additionalcropindexedforfuturecomparison,noteachviewedindividually"
+    },
+    {
+      "id": "SRC-LOC-B17-GEN-04",
+      "title": "B17 \u2014 historical-map-context-only from GEN-04",
+      "label": "SRC-LOC-B17-GEN-04 \u2014 B17 \u2014 historical-map-context-only from GEN-04",
+      "category": "location-audit-source-panels",
+      "file": "world-layout/location-audit/source/B17-GEN-04.png",
+      "sha256": "da40452ed4b016d8fc8e5f5be3c90b1bf7834a72ae54418ed40792aec54d038d",
+      "bytes": 47550,
+      "source_aliases": [],
+      "alias_ids": [],
+      "component_ids": [],
+      "related_image_ids": [
+        "GEN-04"
+      ],
+      "reference_role": "direct-original-source-panel",
+      "design_status": "Proposed reference; no measured geometry, rig or playable layout approval",
+      "review_status": "source-crop-preserved; WholeGEN-04mapreviewed;additionalcropindexedforfuturecomparison,noteachviewedindividually"
+    },
+    {
+      "id": "SRC-LOC-B18-GEN-04",
+      "title": "B18 \u2014 historical-map-context-only from GEN-04",
+      "label": "SRC-LOC-B18-GEN-04 \u2014 B18 \u2014 historical-map-context-only from GEN-04",
+      "category": "location-audit-source-panels",
+      "file": "world-layout/location-audit/source/B18-GEN-04.png",
+      "sha256": "b9eb2c87fdadb7d6a464c659ccac569fd272845b92bd6fd12661aa30dee526d1",
+      "bytes": 68039,
+      "source_aliases": [],
+      "alias_ids": [],
+      "component_ids": [],
+      "related_image_ids": [
+        "GEN-04"
+      ],
+      "reference_role": "direct-original-source-panel",
+      "design_status": "Proposed reference; no measured geometry, rig or playable layout approval",
+      "review_status": "source-crop-preserved; WholeGEN-04mapreviewed;additionalcropindexedforfuturecomparison,noteachviewedindividually"
+    },
+    {
+      "id": "SRC-LOC-B19-GEN-04",
+      "title": "B19 \u2014 historical-map-context-only from GEN-04",
+      "label": "SRC-LOC-B19-GEN-04 \u2014 B19 \u2014 historical-map-context-only from GEN-04",
+      "category": "location-audit-source-panels",
+      "file": "world-layout/location-audit/source/B19-GEN-04.png",
+      "sha256": "cb217a67062f2f6981c5fba0a8c574fd7e15ce6265170159d7dda62c87535772",
+      "bytes": 60940,
+      "source_aliases": [],
+      "alias_ids": [],
+      "component_ids": [],
+      "related_image_ids": [
+        "GEN-04"
+      ],
+      "reference_role": "direct-original-source-panel",
+      "design_status": "Proposed reference; no measured geometry, rig or playable layout approval",
+      "review_status": "source-crop-preserved; WholeGEN-04mapreviewed;additionalcropindexedforfuturecomparison,noteachviewedindividually"
+    },
+    {
+      "id": "SRC-LOC-B20-GEN-04",
+      "title": "B20 \u2014 historical-map-context-only from GEN-04",
+      "label": "SRC-LOC-B20-GEN-04 \u2014 B20 \u2014 historical-map-context-only from GEN-04",
+      "category": "location-audit-source-panels",
+      "file": "world-layout/location-audit/source/B20-GEN-04.png",
+      "sha256": "8cfe6860c2d15a76087f403dcf1359b8e1677386b53703b54b1963e8c9f7fab4",
+      "bytes": 72795,
+      "source_aliases": [],
+      "alias_ids": [],
+      "component_ids": [],
+      "related_image_ids": [
+        "GEN-04"
+      ],
+      "reference_role": "direct-original-source-panel",
+      "design_status": "Proposed reference; no measured geometry, rig or playable layout approval",
+      "review_status": "source-crop-preserved; WholeGEN-04mapreviewed;additionalcropindexedforfuturecomparison,noteachviewedindividually"
+    },
+    {
+      "id": "SRC-LOC-B21-GEN-04",
+      "title": "B21 \u2014 historical-map-context-only from GEN-04",
+      "label": "SRC-LOC-B21-GEN-04 \u2014 B21 \u2014 historical-map-context-only from GEN-04",
+      "category": "location-audit-source-panels",
+      "file": "world-layout/location-audit/source/B21-GEN-04.png",
+      "sha256": "68f5201daef37681a560d027c479cbf25b982c510554f5db1129cf41319078a9",
+      "bytes": 39943,
+      "source_aliases": [],
+      "alias_ids": [],
+      "component_ids": [],
+      "related_image_ids": [
+        "GEN-04"
+      ],
+      "reference_role": "direct-original-source-panel",
+      "design_status": "Proposed reference; no measured geometry, rig or playable layout approval",
+      "review_status": "source-crop-preserved; WholeGEN-04mapreviewed;additionalcropindexedforfuturecomparison,noteachviewedindividually"
+    },
+    {
+      "id": "SRC-LOC-B22-GEN-04",
+      "title": "B22 \u2014 historical-map-context-only from GEN-04",
+      "label": "SRC-LOC-B22-GEN-04 \u2014 B22 \u2014 historical-map-context-only from GEN-04",
+      "category": "location-audit-source-panels",
+      "file": "world-layout/location-audit/source/B22-GEN-04.png",
+      "sha256": "ede911b264caa8c4948d0d8744140de154fcb3a431a0cecec4a3fd2175ef615d",
+      "bytes": 33703,
+      "source_aliases": [],
+      "alias_ids": [],
+      "component_ids": [],
+      "related_image_ids": [
+        "GEN-04"
+      ],
+      "reference_role": "direct-original-source-panel",
+      "design_status": "Proposed reference; no measured geometry, rig or playable layout approval",
+      "review_status": "source-crop-preserved; WholeGEN-04mapreviewed;additionalcropindexedforfuturecomparison,noteachviewedindividually"
+    },
+    {
+      "id": "SRC-LOC-B23-GEN-04",
+      "title": "B23 \u2014 historical-map-context-only from GEN-04",
+      "label": "SRC-LOC-B23-GEN-04 \u2014 B23 \u2014 historical-map-context-only from GEN-04",
+      "category": "location-audit-source-panels",
+      "file": "world-layout/location-audit/source/B23-GEN-04.png",
+      "sha256": "26c2ae5965b8f7c1a04e110f1a9a27c1a41e8a719097697397021b0e9d4b1156",
+      "bytes": 56056,
+      "source_aliases": [],
+      "alias_ids": [],
+      "component_ids": [],
+      "related_image_ids": [
+        "GEN-04"
+      ],
+      "reference_role": "direct-original-source-panel",
+      "design_status": "Proposed reference; no measured geometry, rig or playable layout approval",
+      "review_status": "source-crop-preserved; WholeGEN-04mapreviewed;additionalcropindexedforfuturecomparison,noteachviewedindividually"
+    },
+    {
+      "id": "SRC-LOC-B24-GEN-04",
+      "title": "B24 \u2014 historical-map-context-only from GEN-04",
+      "label": "SRC-LOC-B24-GEN-04 \u2014 B24 \u2014 historical-map-context-only from GEN-04",
+      "category": "location-audit-source-panels",
+      "file": "world-layout/location-audit/source/B24-GEN-04.png",
+      "sha256": "24621cec42f4bfaacbefa75bef93932538d27fe0e4b92469dc42cb8f3f3b9817",
+      "bytes": 69945,
+      "source_aliases": [],
+      "alias_ids": [],
+      "component_ids": [],
+      "related_image_ids": [
+        "GEN-04"
+      ],
+      "reference_role": "direct-original-source-panel",
+      "design_status": "Proposed reference; no measured geometry, rig or playable layout approval",
+      "review_status": "source-crop-preserved; WholeGEN-04mapreviewed;additionalcropindexedforfuturecomparison,noteachviewedindividually"
+    },
+    {
+      "id": "SRC-LOC-B25-GEN-04",
+      "title": "B25 \u2014 historical-map-context-only from GEN-04",
+      "label": "SRC-LOC-B25-GEN-04 \u2014 B25 \u2014 historical-map-context-only from GEN-04",
+      "category": "location-audit-source-panels",
+      "file": "world-layout/location-audit/source/B25-GEN-04.png",
+      "sha256": "04f45a23b42fccc431bca76fc88c38819b6ce7e940698f71b536097caade00bd",
+      "bytes": 19514,
+      "source_aliases": [],
+      "alias_ids": [],
+      "component_ids": [],
+      "related_image_ids": [
+        "GEN-04"
+      ],
+      "reference_role": "direct-original-source-panel",
+      "design_status": "Proposed reference; no measured geometry, rig or playable layout approval",
+      "review_status": "source-crop-preserved; WholeGEN-04mapreviewed;additionalcropindexedforfuturecomparison,noteachviewedindividually"
+    },
+    {
+      "id": "SRC-LOC-S01-GEN-04",
+      "title": "S01 \u2014 historical-sky-map-context from GEN-04",
+      "label": "SRC-LOC-S01-GEN-04 \u2014 S01 \u2014 historical-sky-map-context from GEN-04",
+      "category": "location-audit-source-panels",
+      "file": "world-layout/location-audit/source/S01-GEN-04.png",
+      "sha256": "3fc686e3ffd6a59665f29a6b2d4dd1d8c94ae05957d57d257e3ab762fbf1091c",
+      "bytes": 81915,
+      "source_aliases": [],
+      "alias_ids": [],
+      "component_ids": [],
+      "related_image_ids": [
+        "GEN-04"
+      ],
+      "reference_role": "direct-original-source-panel",
+      "design_status": "Proposed reference; no measured geometry, rig or playable layout approval",
+      "review_status": "source-crop-preserved; individually-viewed-in-this-pass"
+    },
+    {
+      "id": "SRC-LOC-S02-GEN-04",
+      "title": "S02 \u2014 historical-sky-map-context from GEN-04",
+      "label": "SRC-LOC-S02-GEN-04 \u2014 S02 \u2014 historical-sky-map-context from GEN-04",
+      "category": "location-audit-source-panels",
+      "file": "world-layout/location-audit/source/S02-GEN-04.png",
+      "sha256": "1051d2f110e80e9b61865d215353c29c03538f4bbb06496bb0c837cd3a186ee8",
+      "bytes": 71548,
+      "source_aliases": [],
+      "alias_ids": [],
+      "component_ids": [],
+      "related_image_ids": [
+        "GEN-04"
+      ],
+      "reference_role": "direct-original-source-panel",
+      "design_status": "Proposed reference; no measured geometry, rig or playable layout approval",
+      "review_status": "source-crop-preserved; individually-viewed-in-this-pass"
+    },
+    {
+      "id": "SRC-LOC-S04-GEN-04",
+      "title": "S04 \u2014 historical-sky-map-context from GEN-04",
+      "label": "SRC-LOC-S04-GEN-04 \u2014 S04 \u2014 historical-sky-map-context from GEN-04",
+      "category": "location-audit-source-panels",
+      "file": "world-layout/location-audit/source/S04-GEN-04.png",
+      "sha256": "a61398495422334d323b3e2d39b58ed06f67a8aa320a6d86595ececea98f2929",
+      "bytes": 62566,
+      "source_aliases": [],
+      "alias_ids": [],
+      "component_ids": [],
+      "related_image_ids": [
+        "GEN-04"
+      ],
+      "reference_role": "direct-original-source-panel",
+      "design_status": "Proposed reference; no measured geometry, rig or playable layout approval",
+      "review_status": "source-crop-preserved; individually-viewed-in-this-pass"
+    },
+    {
+      "id": "SRC-LOC-S05-GEN-04",
+      "title": "S05 \u2014 historical-sky-map-context from GEN-04",
+      "label": "SRC-LOC-S05-GEN-04 \u2014 S05 \u2014 historical-sky-map-context from GEN-04",
+      "category": "location-audit-source-panels",
+      "file": "world-layout/location-audit/source/S05-GEN-04.png",
+      "sha256": "7f0eafdd0aa9017abb33a2e69abac78ede9cae651bb27f2394bcd2e9fa8aebdd",
+      "bytes": 47850,
+      "source_aliases": [],
+      "alias_ids": [],
+      "component_ids": [],
+      "related_image_ids": [
+        "GEN-04"
+      ],
+      "reference_role": "direct-original-source-panel",
+      "design_status": "Proposed reference; no measured geometry, rig or playable layout approval",
+      "review_status": "source-crop-preserved; individually-viewed-in-this-pass"
+    },
+    {
+      "id": "SRC-LOC-F01-WLD-MAP-002",
+      "title": "F01 \u2014 current-diagrammatic-placement-proposal from WLD-MAP-002",
+      "label": "SRC-LOC-F01-WLD-MAP-002 \u2014 F01 \u2014 current-diagrammatic-placement-proposal from WLD-MAP-002",
+      "category": "location-audit-source-panels",
+      "file": "world-layout/location-audit/source/F01-WLD-MAP-002.png",
+      "sha256": "ffcb3342b19b673a3a3b9792b69d170afe5af3f29cabe6876b449202621b21c3",
+      "bytes": 224839,
+      "source_aliases": [],
+      "alias_ids": [],
+      "component_ids": [],
+      "related_image_ids": [
+        "WLD-MAP-002"
+      ],
+      "reference_role": "direct-original-source-panel",
+      "design_status": "Proposed reference; no measured geometry, rig or playable layout approval",
+      "review_status": "source-crop-preserved; individually-viewed-in-this-pass"
+    },
+    {
+      "id": "SRC-LOC-F02-WLD-MAP-002",
+      "title": "F02 \u2014 current-diagrammatic-placement-proposal from WLD-MAP-002",
+      "label": "SRC-LOC-F02-WLD-MAP-002 \u2014 F02 \u2014 current-diagrammatic-placement-proposal from WLD-MAP-002",
+      "category": "location-audit-source-panels",
+      "file": "world-layout/location-audit/source/F02-WLD-MAP-002.png",
+      "sha256": "49f57143fb2be4fd556a03cafb9426f10f46e5043adc26d32fc951cfc8ee69b6",
+      "bytes": 212043,
+      "source_aliases": [],
+      "alias_ids": [],
+      "component_ids": [],
+      "related_image_ids": [
+        "WLD-MAP-002"
+      ],
+      "reference_role": "direct-original-source-panel",
+      "design_status": "Proposed reference; no measured geometry, rig or playable layout approval",
+      "review_status": "source-crop-preserved; individually-viewed-in-this-pass"
+    },
+    {
+      "id": "SRC-LOC-F03-WLD-MAP-002",
+      "title": "F03 \u2014 current-diagrammatic-placement-proposal from WLD-MAP-002",
+      "label": "SRC-LOC-F03-WLD-MAP-002 \u2014 F03 \u2014 current-diagrammatic-placement-proposal from WLD-MAP-002",
+      "category": "location-audit-source-panels",
+      "file": "world-layout/location-audit/source/F03-WLD-MAP-002.png",
+      "sha256": "393917978759687cc625bf8459587de56ee6339999a707983f51fc447899ce74",
+      "bytes": 185382,
+      "source_aliases": [],
+      "alias_ids": [],
+      "component_ids": [],
+      "related_image_ids": [
+        "WLD-MAP-002"
+      ],
+      "reference_role": "direct-original-source-panel",
+      "design_status": "Proposed reference; no measured geometry, rig or playable layout approval",
+      "review_status": "source-crop-preserved; individually-viewed-in-this-pass"
+    },
+    {
+      "id": "SRC-LOC-S03-WLD-MAP-002",
+      "title": "S03 \u2014 current-diagrammatic-placement-proposal from WLD-MAP-002",
+      "label": "SRC-LOC-S03-WLD-MAP-002 \u2014 S03 \u2014 current-diagrammatic-placement-proposal from WLD-MAP-002",
+      "category": "location-audit-source-panels",
+      "file": "world-layout/location-audit/source/S03-WLD-MAP-002.png",
+      "sha256": "b134850f2e91e2b64b042c34b2665591bb11801329441b7dbe7ee9b3496e786e",
+      "bytes": 78495,
+      "source_aliases": [],
+      "alias_ids": [],
+      "component_ids": [],
+      "related_image_ids": [
+        "WLD-MAP-002"
+      ],
+      "reference_role": "direct-original-source-panel",
+      "design_status": "Proposed reference; no measured geometry, rig or playable layout approval",
+      "review_status": "source-crop-preserved; individually-viewed-in-this-pass"
+    },
+    {
+      "id": "SRC-LOC-S06-WLD-MAP-002",
+      "title": "S06 \u2014 current-diagrammatic-placement-proposal from WLD-MAP-002",
+      "label": "SRC-LOC-S06-WLD-MAP-002 \u2014 S06 \u2014 current-diagrammatic-placement-proposal from WLD-MAP-002",
+      "category": "location-audit-source-panels",
+      "file": "world-layout/location-audit/source/S06-WLD-MAP-002.png",
+      "sha256": "4b832cbc61e161758f5567431ad3f611206c3a971c24209571a8813df3eff8d6",
+      "bytes": 37395,
+      "source_aliases": [],
+      "alias_ids": [],
+      "component_ids": [],
+      "related_image_ids": [
+        "WLD-MAP-002"
+      ],
+      "reference_role": "direct-original-source-panel",
+      "design_status": "Proposed reference; no measured geometry, rig or playable layout approval",
+      "review_status": "source-crop-preserved; individually-viewed-in-this-pass"
+    },
+    {
+      "id": "SRC-LOC-B01-GEN-37-CENTRE",
+      "title": "B01 \u2014 palace-front-detail from GEN-37",
+      "label": "SRC-LOC-B01-GEN-37-CENTRE \u2014 B01 \u2014 palace-front-detail from GEN-37",
+      "category": "location-audit-source-panels",
+      "file": "world-layout/location-audit/source/B01-GEN-37-centre-detail.png",
+      "sha256": "5bc6d64fc1e5aa28d27775db9b45a593f4f4ebbbc3b41179e743beae2e7319dc",
+      "bytes": 713649,
+      "source_aliases": [],
+      "alias_ids": [],
+      "component_ids": [],
+      "related_image_ids": [
+        "GEN-37"
+      ],
+      "reference_role": "direct-original-source-panel",
+      "design_status": "Proposed reference; no measured geometry, rig or playable layout approval",
+      "review_status": "source-crop-preserved; individually-viewed-in-this-pass"
+    },
+    {
+      "id": "SRC-LOC-B01-GEN-37-EAST",
+      "title": "B01 \u2014 palace-front-detail from GEN-37",
+      "label": "SRC-LOC-B01-GEN-37-EAST \u2014 B01 \u2014 palace-front-detail from GEN-37",
+      "category": "location-audit-source-panels",
+      "file": "world-layout/location-audit/source/B01-GEN-37-east-detail.png",
+      "sha256": "5933ab75c6fec03e9e432f9144e5ddf0fe3ade20290a4f111bea3722c5030f33",
+      "bytes": 993250,
+      "source_aliases": [],
+      "alias_ids": [],
+      "component_ids": [],
+      "related_image_ids": [
+        "GEN-37"
+      ],
+      "reference_role": "direct-original-source-panel",
+      "design_status": "Proposed reference; no measured geometry, rig or playable layout approval",
+      "review_status": "source-crop-preserved; individually-viewed-in-this-pass"
     }
   ],
   "label_schema_version": 1

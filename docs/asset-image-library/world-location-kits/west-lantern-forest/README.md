@@ -30,3 +30,7 @@ B12 uses **2/2 dedicated sheets**. Two new sheets use the shared T05 forest allo
 **87 selected sheets saved; 90/230 selected or reserved; 743 archive images.** All new models remain unbuilt. Source pixels, rejected drafts and exact prompts are preserved. No paid model call, Blender build or playable terrain is produced.
 
 Next: audit **B02 Moon Water Palace** from its original GEN-05 panel, then produce only missing architecture and water-garden components. Reuse these cottage and forest families at other exploration clearings.
+
+## Source-led location and ecology audit
+
+[34locationbriefs and zoomed sources](../../world-layout/location-audit/README.md) now separate visible features, imagined layout and missing-kit work. Location-specific flora/fauna selections share generalwater/rock/nature references. Threeforest ecology sheets add20targets; all3D/anatomy/rigging/route geometryremainunverified. No palace facade changes.

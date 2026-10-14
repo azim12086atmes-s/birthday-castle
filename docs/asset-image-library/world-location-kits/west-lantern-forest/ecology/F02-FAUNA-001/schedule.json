@@ -1,0 +1,46 @@
+{
+  "sheet_id": "F02-FAUNA-001",
+  "name": "West Lantern Forest \u2014 woodland mammals",
+  "owner": "terrain-water-and-planting",
+  "family": "Forest and Mother Tree environs",
+  "source_reference_file": null,
+  "source_reference_sha256": null,
+  "generation_reference_path": null,
+  "generator": "image_gen.imagegen",
+  "prompt": "Create ONE carefully labelled game ecology ASSET REFERENCE SHEET on plain lightivory paper. Clean detailedconcept/studio illustration, soft evenlight, fulluncroppedsubjects withback surfaces/depth readable, generousseparationbetween cells. No environment, no palace, no cottage, no groundlandscape, no humans or scale silhouettes, no clothes/crowns, no extraunnamedanimals/plants, no dramaticperspective, no watermark. LabelsandfullIDs outside silhouettes. Eachcell independentillustrationscale; printedvalues are proposed, not measured. Anatomical/forms consistency moreimportant thanornamentalflourish. Title \"F02-FAUNA-001 \u2014 WEST LANTERN FOREST \u2014 WOODLAND MAMMALS\". Brandnewfaunaboard withNOimageinput. Fourlarge2x2cells, ONEanimalpercell. Eachshowslargecalmthree-quarterprofile plus smallFRONTandREARviews oftheSAMEanimal andSAMErestingpose. Allfourleggedsubjects havebelievableanatomy andcompletefeet/tails. Preserveexactcoat/limb/tailproportions acrossviews. No antlers fordoe. No petcostumes,goldarmour,saddles,gardens,branches,pedestals,humanmarkers or extraspecies. Shortdimensionlabelscanuseoveralllength/height specifiedbelow; otherwiseIDs/namesonly. Footer \"Ambient wildlife / dimensions proposed / rigging pending\". \nEXACT SUBJECT INVENTORY:\nF02-FAUNA-001-A01 \u2014 Woodland doe: Gentle adult roe-doe-inspired woodland deer, tan-brown shortfur, creamrump/throat, slendernatural neck, twoears, shorttail andfourlegsendinginclovenhooves. No antlers, horns, wings orjewelry. Relaxedstandingpose withheadlevel. Main left-side three-quarterview plus smallerfrontandrearviews of SAMEanimal/pose. Proposedheight1.05m,length1.3m; no humanmarker.\nF02-FAUNA-001-A02 \u2014 Red fox: One ordinary redfox withrustcoat, creamybreast/underside, darklowerlegs, pointedblack-backed ears, slendercaninemuzzle, singlebushytailwithwhite tip. Fourpawedlegs, calmstandingpose mouthclosed. Samepose/profilefrontrearviews. Proposedoveralllengthincludingtail1.25m,height0.45m; nohybriddeerbody.\nF02-FAUNA-001-A03 \u2014 Woodland hare: One browngrey woodlandhare, longuprightears withdarktips, largehindlegs, smallerforelegs, littlecottontail andnaturalrabbitlikehead. Quietcrouchedrestingpose, visiblefeet, nohumanarms. SAMEcrouch inmainprofile/front/rearviews. Proposedoveralllength0.6m,heightincludingears0.48m.\nF02-FAUNA-001-A04 \u2014 Red squirrel: One smallredsquirrel withrussetfur, paleunderside, modestear tufts andONEfullbushytail risingbehindbody. Calmforagingstance onfourfeet, frontpaws touchgroundratherthanholdingfood; nobigbranch/pedestal. SAMEpose inprofile/front/rearviews. Proposedlengthincludingtail0.55m,heightincludingtail0.45m.",
+  "outputs": [
+    {
+      "file": "world-location-kits/west-lantern-forest/ecology/F02-FAUNA-001/F02-FAUNA-001.png",
+      "sha256": "da380f1e2c7a5e2c3afdea53278c6c705b4951c78c9d2aca86790b73d146e469",
+      "original_file": "/workspace/generated_images/exec-c400bff1-cbba-4f41-a2f5-5ade65f81df8.png",
+      "actual_input_file": null,
+      "actual_input_sha256": null,
+      "attempt": 1,
+      "generator": "image_gen.imagegen"
+    }
+  ],
+  "previous_attempts": [],
+  "component_ids": [
+    "F02-FAUNA-001-A01",
+    "F02-FAUNA-001-A02",
+    "F02-FAUNA-001-A03",
+    "F02-FAUNA-001-A04"
+  ],
+  "new_component_targets": 4,
+  "models_generated": 0,
+  "review_status": "pending-user-reference-and-model-review",
+  "source_fidelity": "Newwoodland species references;GEN-09 suppliesbotanicalvisualgrammar, fauna conceivedwithout imageinput. No measuredspeciesgeometry or anatomicalrigclaimed.",
+  "max_attempts": 2,
+  "review_notes": [
+    "All four labelled mammals have a large profile/three-quarter view plus front/rear views. Doe has no antlers; fox/hare/squirrel have coherent ordinary woodland forms and single tails. Printed dimensions match the proposed values.",
+    "These are imaginative naturalistic references without a supplied animal image. View-to-view shape/pose parity, exact limb/toe anatomy, skeletal joints, fur, topology, UVs and support are not proven by the illustrations.",
+    "The artwork is not a rig, locomotion cycle or completed character. Body proportions and pose must be locked on model intake before animal movement/behavior is claimed."
+  ],
+  "anatomy_or_rig_verified": false,
+  "view_geometry_parity_verified": false,
+  "visual_inventory_review": {
+    "all_expected_groups_present": true,
+    "logical_species_count": 4,
+    "method": "Manual inspection of generated sheet"
+  }
+}

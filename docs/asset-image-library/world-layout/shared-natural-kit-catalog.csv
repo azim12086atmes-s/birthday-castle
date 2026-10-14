@@ -1,0 +1,7 @@
+family,existing_reference_ids,reuse_rule,remaining_work
+Lake and pond water,GEN-10;GEN-13,Shared calm-water surface/effect family; local shoreline and planting selections,"Bank junctions, material animation and water levels need construction review"
+Open sea and uneven waves,GEN-12,Shared sea/swell/foam appearance with regional coves and reef masks,"Shader/simulation and foam transition work, not new static-water mesh for each location"
+"River, stream and cascade",GEN-21;GEN-22,Shared flow/riffle/spillway vocabulary; match local slope/stone materials,"Gradients, banks, splashes and junctions not validated"
+"Rocks, cliffs and shore formations",GEN-21,Shared geometry families with habitat-specific material/scale variations,"Unseen backs, ground joins and model variants pending"
+"Soil, paths and bank joins",GEN-22;F02-TRAIL-001,General route/ground families; earth forest path versus formal cobble remain distinct,"Terrain heightfield integration, seamless materials and module ports need models"
+"Deadwood, roots and small scatter",GEN-13;GEN-21;F02-NATURE-001,"Reuse logs, stumps, roots and bark where the habitat fits; flora/fauna selected separately",Mesh backs and part separation pending

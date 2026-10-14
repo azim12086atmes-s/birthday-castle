@@ -1,0 +1,68 @@
+{
+  "sheet_id": "F02-FAUNA-002",
+  "name": "West Lantern Forest \u2014 birds and insects",
+  "owner": "terrain-water-and-planting",
+  "family": "Forest and Mother Tree environs",
+  "source_reference_file": null,
+  "source_reference_sha256": null,
+  "generation_reference_path": "/workspace/birthday-castle/docs/asset-image-library/world-location-kits/west-lantern-forest/ecology/F02-FAUNA-002/rejected-drafts/F02-FAUNA-002-R01.png",
+  "generator": "image_gen.imagegen",
+  "prompt": "Repack this supplied bird-and-insect reference board into an EXACT4-column3-rowgrid with12equal cells andNOemptycells. Preserve the same12subjects, theircolours, speciesnames, fullIDs andanatomicalforms. Keepmainandlimitedsmallrearviews forbirdsifspace; insectoneclearfullview. No newanimals orhumans. Onlylayout/spacingchanges, notredesignedcreatures.\nRow1: A01Robin, A02Bluetit, A03Blackbird, A04Tawnyowl.\nRow2: A05Woodpigeon, A06Swallow, A07Whitebutterfly, A08Paintedladybutterfly.\nRow3: A09Woodlandmoth, A10Bumblebee, A11Ladybird, A12Bluedragonfly.\nEachIDmuststillbeprintedexactlyasF02-FAUNA-002-A01throughA12beneathitsownfulluncroppedsubject. Preserveallfeet,wingtips,antennaeandtails. DoNOTfilltheemptycellswithextraobjects. DO NOTmake16cellsor4rows. Resizeviewsnaturallywithin12cellswithoutstretchingbodies. Keepplainivorybackground, titleF02-FAUNA-002\u2014WESTLANTERNFOREST\u2014BIRDSANDINSECTS, footerIndependentillustrationscales/riggingandflightformspending. Noplant/branch/pedestalattachedtosubjects.",
+  "outputs": [
+    {
+      "file": "world-location-kits/west-lantern-forest/ecology/F02-FAUNA-002/F02-FAUNA-002.png",
+      "sha256": "71022ad5ff20ea772bef5ad79e5b2f9d637fbce219e4b9cb6ab714eaeaba276b",
+      "original_file": "/workspace/generated_images/exec-5e23822c-e879-4599-ad93-2f47c788202c.png",
+      "actual_input_file": "world-location-kits/west-lantern-forest/ecology/F02-FAUNA-002/rejected-drafts/F02-FAUNA-002-R01.png",
+      "actual_input_sha256": "91fe6f16a1b7c5f732246d268b3a9c51775bec209361205c1da24807e3dd44ff",
+      "attempt": 2,
+      "generator": "image_gen.imagegen"
+    }
+  ],
+  "previous_attempts": [
+    {
+      "file": "world-location-kits/west-lantern-forest/ecology/F02-FAUNA-002/rejected-drafts/F02-FAUNA-002-R01.png",
+      "sha256": "91fe6f16a1b7c5f732246d268b3a9c51775bec209361205c1da24807e3dd44ff",
+      "original_file": "/workspace/generated_images/exec-b0d7b874-36e4-40b7-a98f-9f0d71b0a916.png",
+      "actual_input_file": null,
+      "actual_input_sha256": null,
+      "attempt": 1,
+      "generator": "image_gen.imagegen",
+      "prompt": "Create ONE carefully labelled game ecology ASSET REFERENCE SHEET on plain lightivory paper. Clean detailedconcept/studio illustration, soft evenlight, fulluncroppedsubjects withback surfaces/depth readable, generousseparationbetween cells. No environment, no palace, no cottage, no groundlandscape, no humans or scale silhouettes, no clothes/crowns, no extraunnamedanimals/plants, no dramaticperspective, no watermark. LabelsandfullIDs outside silhouettes. Eachcell independentillustrationscale; printedvalues are proposed, not measured. Anatomical/forms consistency moreimportant thanornamentalflourish. Title \"F02-FAUNA-002 \u2014 WEST LANTERN FOREST \u2014 BIRDS AND INSECTS\". Brandnewfaunaboard withNOimageinput. Twelvewellseparatedcells4columns3rows, onefullsubjectmainthreequartervieweach, smallrear/sidebodyprofileifspaceallowsWITHOUTaddingdifferentposes/extraindividuals. Sixbirdforms first, sixinsectforms last. Naturalstorybookbeauty, no mutantbodyhybrids. Birdswingsfolded,allfeetvisible andonecoherenttail; allinsectappendagesfullyframed. NOhumanmarkers,pedestals,flowers,logsorbranches attachedtosubjects. DoNOTaddnumericrulersordimensionlabels; fullassetIDandshortnamebeneatheach. Footer \"Independent illustration scales / rigging and flight forms pending\". \nEXACT SUBJECT INVENTORY:\nF02-FAUNA-002-A01 \u2014 Robin: Small European-robin-inspired bird, brownhead/back, warmorange-red face/breast, palebelly, shortbeak andtwoslimlegs. Wingsfolded onbody, onetail; standingneutralpose without branch.\nF02-FAUNA-002-A02 \u2014 Blue tit: Smallbluetit-inspired songbird, bluecap/wings, yellowbelly, whitecheeks anddarkeye stripe, shortbeak. Twofeet,wingsfolded,onetail, samebody proportions, no multicolourparrotcrest.\nF02-FAUNA-002-A03 \u2014 Blackbird: Male blackbird-inspiredbird withsoftblackfeathers, yellow-orangebeak, smallgoldeneye ring, twodarkfeet andonecoherenttail. Standingneutralwithfoldedwings; noscene.\nF02-FAUNA-002-A04 \u2014 Tawny owl: Quiet tawnyowl-inspired bird withroundedhead, browncream mottledfeathers, darkeyes, smallhookedbeak andtwofeatheredfeet. No horns orantlers. Wingsfolded, onetail, uprightperchedstance butNO branch/stump attached.\nF02-FAUNA-002-A05 \u2014 Wood pigeon: Gentle woodpigeon-inspiredbird, softgreyhead/body, pale-neckpatch, mutedpinkbreast, coherentwingfeathers andtworedfeet. Singlebeak/onetail, wingsfolded.\nF02-FAUNA-002-A06 \u2014 Swallow: Smallbarn-swallow-inspiredbird atrest, darkblue-black upperbody, creamunderside andrustthroat, oneforkedtail withTWOslenderstreamers. Twofeet,wingsfolded; nofalseextra tails orspread-wing flightpose.\nF02-FAUNA-002-A07 \u2014 White butterfly: One smallwhitebutterfly withfoursoftwhitewings, restraineddarktips, slenderbody, twoantennaeandsixfinelegs. Wingsopenedforclearreadabletop-threequarterview, no metal/jewels.\nF02-FAUNA-002-A08 \u2014 Painted lady butterfly: One warmorange-black painted-lady-inspiredbutterfly, fourwingswithcoherentbilateralpattern andsmallwhitewingtipspots, slenderbody,twoantennae,sixfinelegs. Sameopen-wingview asA07.\nF02-FAUNA-002-A09 \u2014 Woodland moth: One quietwarmbrown woodlandmoth, furrybody, featheryantennae andtwo fore/twohindwings withsubtlemottledpattern. Fourwingsareopened/readable, sixfinelegs; nonluminous ordinaryform.\nF02-FAUNA-002-A10 \u2014 Bumblebee: One smallbumblebee withroundedfuzzyblack-and-yellow body, pale-tailaccent, twoantennae,sixlegsandFOURtranslucentwings, naturalinsectbody segmentation. Clearthreequarterview; no giantwaspstinger or cartooneyes.\nF02-FAUNA-002-A11 \u2014 Ladybird: One smallred seven-spot-ladybird-inspired beetle withclosedpairedelytra, restrainedblackspotpattern, blackheadwithcreammarks,twoantennaeandsixshortlegs. Closedwings, domedfullbody.\nF02-FAUNA-002-A12 \u2014 Blue dragonfly: One slenderturquoise/bronze dragonfly, longsegmentedabdomen, largepairedcompoundeyes,SIXlegs andFOURthintransparentwings attachedaroundthorax; oneabdomen/tailonly. Slighttop-threequarterspreadwingview showinguncroppedwingtips.",
+      "rejection_reason": "All12subjects presentbutgridhasblankcells/fourrows;repack intoexact4columns3rowsforconsistentassetindexing."
+    }
+  ],
+  "component_ids": [
+    "F02-FAUNA-002-A01",
+    "F02-FAUNA-002-A02",
+    "F02-FAUNA-002-A03",
+    "F02-FAUNA-002-A04",
+    "F02-FAUNA-002-A05",
+    "F02-FAUNA-002-A06",
+    "F02-FAUNA-002-A07",
+    "F02-FAUNA-002-A08",
+    "F02-FAUNA-002-A09",
+    "F02-FAUNA-002-A10",
+    "F02-FAUNA-002-A11",
+    "F02-FAUNA-002-A12"
+  ],
+  "new_component_targets": 12,
+  "models_generated": 0,
+  "review_status": "pending-user-reference-and-model-review",
+  "source_fidelity": "Newwoodland species references;GEN-09 suppliesbotanicalvisualgrammar, fauna conceivedwithout imageinput. No measuredspeciesgeometry or anatomicalrigclaimed.",
+  "max_attempts": 2,
+  "revision_input_file": "world-location-kits/west-lantern-forest/ecology/F02-FAUNA-002/rejected-drafts/F02-FAUNA-002-R01.png",
+  "revision_input_sha256": "91fe6f16a1b7c5f732246d268b3a9c51775bec209361205c1da24807e3dd44ff",
+  "review_notes": [
+    "All twelve named groups are present. The revision repacks six birds and six insects into four columns and three rows without the first draft\u2019s blank cells.",
+    "Birds are shown at rest with folded wings and smaller back views; flight forms remain missing. Insect wing/leg roots, fine legs, antennae and undersides are not fully resolved. Species markings are inspired illustrations rather than validated anatomy or identical mesh projections.",
+    "Each cell uses an independent illustration scale. Count main species IDs once despite smaller duplicate views. Mask labels/insets deliberately before model intake; mesh splitting, translucency, rigging, flight and behavior remain unverified."
+  ],
+  "anatomy_or_rig_verified": false,
+  "view_geometry_parity_verified": false,
+  "visual_inventory_review": {
+    "all_expected_groups_present": true,
+    "logical_species_count": 12,
+    "method": "Manual inspection of generated sheet"
+  }
+}

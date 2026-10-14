@@ -1345,6 +1345,57 @@
         "F02",
         "T05"
       ]
+    },
+    {
+      "sheet_id": "F02-FLORA-001",
+      "owner": "terrain-water-and-planting",
+      "family": "Forest and Mother Tree environs",
+      "title": "West Lantern Forest \u2014 woodland canopy flora",
+      "status": "generated-pending-source-and-user-review",
+      "file": "world-location-kits/west-lantern-forest/ecology/F02-FLORA-001/F02-FLORA-001.png",
+      "sha256": "764234b04a6efc01987e47facadc348057fb25307d1a25307359a0227482cc74",
+      "generation_attempts_in_this_pass": 1,
+      "component_count": 4,
+      "location_ids": [
+        "F02",
+        "T05"
+      ],
+      "review_notes": "Four named canopy forms are present with root feet, proposed heights and leaf/bark insets. Oak, birch, beech and multi-stem hazel are newly proposed woodland forms; GEN-09 supplies the rendering vocabulary, not these exact species models. Small canopy-outline insets are front silhouettes, not verified overhead crown plans. Leaf/nut interpretation, branch count, bark texture, backs and root contact need modelling review; they are not botanically validated specimens or seamless texture maps. Use local species mixtures, saplings and density changes rather than duplicate identical trees everywhere. Canopy/leaf geometry, alpha materials, wind, LOD and runtime performance remain unbuilt."
+    },
+    {
+      "sheet_id": "F02-FAUNA-001",
+      "owner": "terrain-water-and-planting",
+      "family": "Forest and Mother Tree environs",
+      "title": "West Lantern Forest \u2014 woodland mammals",
+      "status": "generated-pending-source-and-user-review",
+      "file": "world-location-kits/west-lantern-forest/ecology/F02-FAUNA-001/F02-FAUNA-001.png",
+      "sha256": "da380f1e2c7a5e2c3afdea53278c6c705b4951c78c9d2aca86790b73d146e469",
+      "generation_attempts_in_this_pass": 1,
+      "component_count": 4,
+      "location_ids": [
+        "F02",
+        "T05"
+      ],
+      "review_notes": "All four labelled mammals have a large profile/three-quarter view plus front/rear views. Doe has no antlers; fox/hare/squirrel have coherent ordinary woodland forms and single tails. Printed dimensions match the proposed values. These are imaginative naturalistic references without a supplied animal image. View-to-view shape/pose parity, exact limb/toe anatomy, skeletal joints, fur, topology, UVs and support are not proven by the illustrations. The artwork is not a rig, locomotion cycle or completed character. Body proportions and pose must be locked on model intake before animal movement/behavior is claimed."
+    },
+    {
+      "sheet_id": "F02-FAUNA-002",
+      "owner": "terrain-water-and-planting",
+      "family": "Forest and Mother Tree environs",
+      "title": "West Lantern Forest \u2014 birds and insects",
+      "status": "generated-pending-source-and-user-review",
+      "file": "world-location-kits/west-lantern-forest/ecology/F02-FAUNA-002/F02-FAUNA-002.png",
+      "sha256": "71022ad5ff20ea772bef5ad79e5b2f9d637fbce219e4b9cb6ab714eaeaba276b",
+      "generation_attempts_in_this_pass": 2,
+      "retry_reasons": [
+        "Repackall12subjectsinto4x3grid;removeemptycellsforreliableindexing"
+      ],
+      "component_count": 12,
+      "location_ids": [
+        "F02",
+        "T05"
+      ],
+      "review_notes": "All twelve named groups are present. The revision repacks six birds and six insects into four columns and three rows without the first draft\u2019s blank cells. Birds are shown at rest with folded wings and smaller back views; flight forms remain missing. Insect wing/leg roots, fine legs, antennae and undersides are not fully resolved. Species markings are inspired illustrations rather than validated anatomy or identical mesh projections. Each cell uses an independent illustration scale. Count main species IDs once despite smaller duplicate views. Mask labels/insets deliberately before model intake; mesh splitting, translucency, rigging, flight and behavior remain unverified."
     }
   ],
   "production_pass": "palace-coverage-missing-only",
@@ -1381,7 +1432,7 @@
     "side_rear_schedule": "palace-side-rear/schedule.json",
     "complete_roof_plan": "palace-roof-plan/schedule.json"
   },
-  "production_pass_status": "West LanternForest/B12pilot: fournewpackedreferenceboards,32componenttargets; existingtrees/plants/stones/lamps/pavingreused. Roofendambiguityandphysicalfitpending; no3Dgenerated.",
+  "production_pass_status": "34-location sourceaudit/imaginedbriefs saved; 3F02ecologyboards add4canopy+4mammal+12bird/insectrefs. Generallibraries reused; fullother-locationkitsandall3Dremainpending.",
   "structural_sheet_rule": "Display source-fitted assemblies with existing canonical decor so identity and proportions can be checked. Bare host views are internal construction proposals, not replacements for the original decorated wing references.",
   "generation_paused": true,
   "pause_reason": "Requested roof/stair proposal finished. Painted attempt rejected; coordinate diagram covers33 placements and11 stair links. Source-depth registration remains a layout task.",
@@ -1569,7 +1620,7 @@
     }
   ],
   "component_workflow": "Modular walls first; later stairs, wards/wings, towers and fountain components. Exhaustive palace section inventory later.",
-  "generation_resume_reason": "Owner authorizes continuingWestLanternForest/B12pilot. One-by-oneoriginalsourceaudit distinguishesreusablebotany/objectsfrommissingcottagejoinsandwoodlandtrail/scatterreferences.",
+  "generation_resume_reason": "Ownerauthorizeslocation-wiseflora/faunawithgeneralwater/rock/natural libraries; startF02ecology withthreepackedreferenceboards.",
   "allocation_notes": [
     "Latest owner crops add royal needle with attached turrets and slim star-glass onion gallery; move one unspent interior allowance to tower bodies, keeping palace cap65/world165/total230. Shared existing detail packs cover both; no extra decor sheets.",
     "Owner requests location-specific surface/pillar/stair/parapet variety. Transfer one unspent whole-layout allowance to interior repeat components, keeping65 palace and230 total. Eight packed sheets; original masters reused.",
@@ -1579,7 +1630,8 @@
     "2026-10-14: unproduced PAL-INT-PROP-001 reservation deferred/replaced with PAL-CELEBRATION-PROP-001 for ten requested celebration pieces. Private furniture coverage not claimed complete.",
     "2026-10-14: WLD-MAP-002 replacesWLD-MAP-001 selected map slot for12km envelope; retain230 total, palace65/world165, forest8 andB12 cap2. Cottage placements reuseB12; no per-instance sheet allowance.",
     "2026-10-14: WestLanternForestpilotusesB12dedicated2/2andtwoT05forestslotswithinexisting8 allowance. Global90/230selected/reserved, palace65/world25. No capincreaseornewslotpercottagedestination.",
-    "2026-10-14: Owner reminds us to include flora/fauna. Hold6 unallocated terrain/world sheets for sharedfauna within65 cap and existingregional caps. Selected90/saved87/global230 unchanged. No images/models generated."
+    "2026-10-14: Owner reminds us to include flora/fauna. Hold6 unallocated terrain/world sheets for sharedfauna within65 cap and existingregional caps. Selected90/saved87/global230 unchanged. No images/models generated.",
+    "2026-10-14: Owner choosesflora/fauna perlocationandgeneralwater/rockkits. F02gets1flora+2faunaboards. Increaseprovisionalfaunahold6\u21927within65byaddingforestbirds/insects;capsunchanged. ExistingT05dedicated2plusnew3=5/8. Eachlocationhasitsownpalette; repeatedspeciescountonce."
   ],
   "composition_previews": [
     {
@@ -1597,19 +1649,20 @@
     "date": "2026-10-14",
     "scope": "Flora and fauna included in each location audit",
     "owner": "terrain-water-and-planting",
-    "fauna_sheet_allowance": 6,
+    "fauna_sheet_allowance": 7,
     "source_of_allowance": "Within current65 owner cap and regional caps; from unallocated future allowance, no selected slot created",
     "by_region": {
       "T01": 1,
       "T02": 1,
       "T03": 1,
       "T04": 1,
-      "T05": 1,
+      "T05": 2,
       "T08": 1
     },
     "floral_rule": "Existing plant references reused; audit canopy/understory/ground/aquatic forms per habitat",
-    "images_generated": 0,
-    "new_model_targets": 0,
-    "status": "Provisional source-audit-dependent planning hold; no automatic generation"
+    "images_generated": 2,
+    "new_model_targets": 16,
+    "status": "Location-wise flora/fauna selections;2of7plannedfaunaboardsproduced,other5remainholdswithin65. Onecanopyflora boardseparatelyproduced.",
+    "remaining_unproduced_fauna_allowance": 5
   }
 }

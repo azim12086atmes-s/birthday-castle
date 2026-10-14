@@ -49,3 +49,7 @@ The maps/placements subfamily is capped at4; GEN-04 and WLD-MAP-002 currently us
 ## Flora and fauna requirement
 
 Every location now includes a flora and fauna audit. [Shared ecology plan](FLORA-FAUNA-PLAN.md) and [habitat matrix](flora-fauna-matrix.csv) distinguish existing plant references from habitat gaps and proposed wildlife. Six fauna sheets are held within existing terrain/regional allowances; no slots or images are added now. B02 aquatic plants and wildlife belong in its next audit.
+
+## Source-led location and ecology audit
+
+[34locationbriefs and zoomed sources](location-audit/README.md) now separate visible features, imagined layout and missing-kit work. Location-specific flora/fauna selections share generalwater/rock/nature references. Threeforest ecology sheets add20targets; all3D/anatomy/rigging/route geometryremainunverified. No palace facade changes.

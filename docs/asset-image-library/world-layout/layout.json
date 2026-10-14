@@ -883,7 +883,10 @@
       ],
       "generated_reference_sheet_ids": [
         "F02-TRAIL-001",
-        "F02-NATURE-001"
+        "F02-NATURE-001",
+        "F02-FLORA-001",
+        "F02-FAUNA-001",
+        "F02-FAUNA-002"
       ],
       "cottage_reference_sheet_ids": [
         "B12-STRUCT-001",
@@ -894,13 +897,14 @@
           "GEN-08",
           "GEN-09",
           "GEN-13",
-          "F02-NATURE-001"
+          "F02-NATURE-001",
+          "F02-FLORA-001"
         ],
         "flora_remaining_audit": "Existing tree/fern/moss references and new bramble/bluebell/strawberry forms; audit woodland canopy, saplings, understory and ground cover",
         "fauna_candidates": "Deer, fox, hare, squirrel; small birds/insects share other families",
         "fauna_shared_family": "Woodland visitors",
-        "fauna_provisional_sheet_allowance_within_region": 1,
-        "fauna_reference_status": "No dedicated fauna kit indexed; source audit and species design pending"
+        "fauna_provisional_sheet_allowance_within_region": 2,
+        "fauna_reference_status": "F02-FAUNA-001/002 nowprovideordinarymammal/bird/insectreferences;wholehabitat/fauna coverage andmodels incomplete"
       }
     },
     {
@@ -2106,5 +2110,8 @@
       "kind": "pond"
     }
   ],
-  "exploration_policy": "Dense planting interrupted by clearings, meadow edges, streams/ponds, cottage destinations and looped trails. Shared benches/lanterns/signs along paths; exact discovery spacing and travel times require a walking prototype. No new quest or travel mechanics implemented."
+  "exploration_policy": "Dense planting interrupted by clearings, meadow edges, streams/ponds, cottage destinations and looped trails. Shared benches/lanterns/signs along paths; exact discovery spacing and travel times require a walking prototype. No new quest or travel mechanics implemented.",
+  "location_design_brief_index": "world-layout/location-audit/design-briefs.json",
+  "location_ecology_index": "world-layout/location-ecology.csv",
+  "shared_natural_kit_catalog": "world-layout/shared-natural-kit-catalog.csv"
 }

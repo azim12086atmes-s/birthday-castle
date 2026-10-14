@@ -1,0 +1,46 @@
+{
+  "sheet_id": "F02-FLORA-001",
+  "name": "West Lantern Forest \u2014 woodland canopy flora",
+  "owner": "terrain-water-and-planting",
+  "family": "Forest and Mother Tree environs",
+  "source_reference_file": "images/illustrated-boards/GEN-09.png",
+  "source_reference_sha256": "5e0048ce4b277c2a6c319edf6b0e2a57a388d605dd17e9ac455cc6924bb60cd4",
+  "generation_reference_path": "/workspace/birthday-castle/docs/asset-image-library/images/illustrated-boards/GEN-09.png",
+  "generator": "image_gen.imagegen",
+  "prompt": "Create ONE carefully labelled game ecology ASSET REFERENCE SHEET on plain lightivory paper. Clean detailedconcept/studio illustration, soft evenlight, fulluncroppedsubjects withback surfaces/depth readable, generousseparationbetween cells. No environment, no palace, no cottage, no groundlandscape, no humans or scale silhouettes, no clothes/crowns, no extraunnamedanimals/plants, no dramaticperspective, no watermark. LabelsandfullIDs outside silhouettes. Eachcell independentillustrationscale; printedvalues are proposed, not measured. Anatomical/forms consistency moreimportant thanornamentalflourish. Title \"F02-FLORA-001 \u2014 WEST LANTERN FOREST \u2014 WOODLAND CANOPY FLORA\". UseONLY suppliedGEN-09 foritsbotanicalrendering/detailgrammar andnaturalpalette. DoNOTcopyitsfiveexistinggarden/coastaltrees. ThisnewboardaddsFOUR ordinarywoodland forms namedbelow.2x2largecells, onefulltreepercell, smallerflatcanopyoutline andleaf/barkdetailinsets forspeciesconstruction. No tinyhumanmarkers, soilpedestals, rosesorformalflowerbeds gluedtoroots. MainheightlabelsONLY18m,16m,20m,6mrespectively. Correctdistinctleaf/barkforms, coherenttrunkbranching androotfoot. Footer \"Ordinary woodland forms / proposed sizes / reusable across locations\". \nEXACT SUBJECT INVENTORY:\nF02-FLORA-001-A01 \u2014 Woodland oak: One ordinary green woodland oak,18m proposedheight, wide rounded irregular crown, sturdy grey-brown fissured bark, spreading boughs and visible rootflare. Leaf-detail inset shows rounded lobes and a small acorn cluster. No gold leaves or blossom canopy. Whole tree fromrootfoot toallouterbranches, no garden surround.\nF02-FLORA-001-A02 \u2014 Silver birch: One16m proposedheight silverbirch, slenderwhite papery bark withdarkhorizontal marks anddarkbasalpatches, thin ascending/droopingtwigs, airy narrow crown. Smalltriangular pointed serratedleaf and bark insets. Show acomplete rooted single tree, notanavenue line or giantwhitepalacehero.\nF02-FLORA-001-A03 \u2014 Woodland beech: One20m proposedheight Europeanbeech form, smooth silver-grey stouttrunk, dense rounded/oval green crown andupright sweepingbranches. Leaf inset has oval undulatingsmooth-to-finelytoothededges withclearparallel veins; smallbeech nut cupule detail ifspace. Entiretree unclipped, restrainednaturalgreen.\nF02-FLORA-001-A04 \u2014 Hazel multi stem: One6m proposedheight hazel tree/shrub, several coherent stems fromone rootedbase, low roundedbushy crown. Grey-brown smoothyoungbark. Leaf-detail shows broad round/heart-base pointed serratedleaves; smallcluster ofnuts insidegreenhusk. Natural shrub architecture, not a bouquet of disconnected trees.",
+  "outputs": [
+    {
+      "file": "world-location-kits/west-lantern-forest/ecology/F02-FLORA-001/F02-FLORA-001.png",
+      "sha256": "764234b04a6efc01987e47facadc348057fb25307d1a25307359a0227482cc74",
+      "original_file": "/workspace/generated_images/exec-87b0b7ad-dd25-499b-9bc5-80bc43a3da06.png",
+      "actual_input_file": "images/illustrated-boards/GEN-09.png",
+      "actual_input_sha256": "5e0048ce4b277c2a6c319edf6b0e2a57a388d605dd17e9ac455cc6924bb60cd4",
+      "attempt": 1,
+      "generator": "image_gen.imagegen"
+    }
+  ],
+  "previous_attempts": [],
+  "component_ids": [
+    "F02-FLORA-001-A01",
+    "F02-FLORA-001-A02",
+    "F02-FLORA-001-A03",
+    "F02-FLORA-001-A04"
+  ],
+  "new_component_targets": 4,
+  "models_generated": 0,
+  "review_status": "pending-user-reference-and-model-review",
+  "source_fidelity": "Newwoodland species references;GEN-09 suppliesbotanicalvisualgrammar, fauna conceivedwithout imageinput. No measuredspeciesgeometry or anatomicalrigclaimed.",
+  "max_attempts": 2,
+  "review_notes": [
+    "Four named canopy forms are present with root feet, proposed heights and leaf/bark insets. Oak, birch, beech and multi-stem hazel are newly proposed woodland forms; GEN-09 supplies the rendering vocabulary, not these exact species models.",
+    "Small canopy-outline insets are front silhouettes, not verified overhead crown plans. Leaf/nut interpretation, branch count, bark texture, backs and root contact need modelling review; they are not botanically validated specimens or seamless texture maps.",
+    "Use local species mixtures, saplings and density changes rather than duplicate identical trees everywhere. Canopy/leaf geometry, alpha materials, wind, LOD and runtime performance remain unbuilt."
+  ],
+  "anatomy_or_rig_verified": false,
+  "view_geometry_parity_verified": false,
+  "visual_inventory_review": {
+    "all_expected_groups_present": true,
+    "logical_species_count": 4,
+    "method": "Manual inspection of generated sheet"
+  }
+}

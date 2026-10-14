@@ -1,6 +1,8 @@
 # Asset production plan and caps
 
-Current location work: [West Lantern Forest / Storybook cottages](world-location-kits/west-lantern-forest/README.md): **4 sheets,32 labelled component targets**; existing botany, paving and furnishings reused. **87 saved selected sheets;90/230 selected/reserved;743 archive images**. Roof end closure and physical joins remain unverified; no3D generated.
+Current source/design work: [34 location briefs and zoom audit](world-layout/location-audit/README.md), with local flora/fauna selections and a shared natural-kit catalog. [3 new forest ecology sheets](world-location-kits/west-lantern-forest/ecology/README.md) add20 labelled targets. **90 saved selected sheets;93/230 selected or reserved;807 archive images**. No3D/rig/navigation verified.
+
+Previous cottage/forest-kit pass: [West Lantern Forest / Storybook cottages](world-location-kits/west-lantern-forest/README.md): **4 sheets,32 labelled component targets**; existing botany, paving and furnishings reused. **87 saved selected sheets;90/230 selected/reserved;743 archive images**. Roof end closure and physical joins remain unverified; no3D generated.
 
 Previous world-map pass: [WLD-MAP-002 forest exploration plan](world-layout/README.md), **12km ×12km**, retaining the2.5km-wide palace,25 landmark families and6 sites. Added3 forest districts and8 cottage clearings; no built terrain/meshes. **83 saved selected sheets;86/230 selected/reserved**.
 
@@ -24,11 +26,11 @@ The final library is capped at **230 selected sheets**, including the 45 origina
 | --- | ---: | ---: | ---: |
 | palace | 65 | 65 | 0 |
 | other-map-buildings | 55 | 5 | 50 |
-| terrain-water-and-planting | 65 | 10 | 55 |
+| terrain-water-and-planting | 65 | 13 | 52 |
 | shared-outdoor-props-and-bridge | 25 | 5 | 20 |
 | maps-magic-travel-and-birthday | 20 | 5 | 15 |
 
-The 743-file archive contains crops, previews and historical experiments; it is not the final 230-sheet selection. Selected reference slots may still require visual review.
+The 807-file archive contains crops, previews and historical experiments; it is not the final 230-sheet selection. Selected reference slots may still require visual review.
 
 ## Palace caps
 
