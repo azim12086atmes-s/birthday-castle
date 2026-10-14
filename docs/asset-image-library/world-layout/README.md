@@ -29,3 +29,7 @@ Bounds, proposed rectangle exclusions, cottage-clearing containment and route le
 ## First world location kit pass
 
 [West Lantern Forest and Storybook cottage pilot](../world-location-kits/west-lantern-forest/README.md) adds fourpackedreferenceboards and32componenttargets. Trees/plants/rocks/paving/lightsalreadyshownare reused. B12dedicated2/2, twoT05forestslots,230globalcapunchanged. References/roofendgeometryandallmodels/joinsstillpendingreview.
+
+## Flora and fauna tracking
+
+[Shared habitat plan](FLORA-FAUNA-PLAN.md) adds flora/fauna to every location audit. Flora is partly covered; dedicated fauna kits are pending. Six fauna sheets have a provisional hold within the existing world allocation, with no increase to230 and no new images or model targets in this update.

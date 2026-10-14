@@ -135,3 +135,7 @@ Current screenshot pass: [all remaining component families](remaining-palace-kit
 ## Current screenshot pass
 
 [Remaining screenshot component kits](remaining-palace-kits/index.html) cover seven families on12 sheets;32 structural targets and64 details. Distortion corrections and direct source cuts are preserved. [Review gaps/reuse](remaining-palace-kits/GAPS-AND-REUSE.md). **62 palace /79 total selected or reserved**; caps65/230 unchanged. No models or verified joints. Earlier pass notes above are historical, not current queue or acceptance status.
+
+## Flora and fauna tracking
+
+[Shared habitat plan](world-layout/FLORA-FAUNA-PLAN.md) adds flora/fauna to every location audit. Flora is partly covered; dedicated fauna kits are pending. Six fauna sheets have a provisional hold within the existing world allocation, with no increase to230 and no new images or model targets in this update.

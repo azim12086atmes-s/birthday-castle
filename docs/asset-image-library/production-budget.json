@@ -1578,7 +1578,8 @@
     "2026-10-14: freed bath slot and deferred unproduced INT-R01 fund ballroom coordinated views plus structural kit; total caps unchanged.",
     "2026-10-14: unproduced PAL-INT-PROP-001 reservation deferred/replaced with PAL-CELEBRATION-PROP-001 for ten requested celebration pieces. Private furniture coverage not claimed complete.",
     "2026-10-14: WLD-MAP-002 replacesWLD-MAP-001 selected map slot for12km envelope; retain230 total, palace65/world165, forest8 andB12 cap2. Cottage placements reuseB12; no per-instance sheet allowance.",
-    "2026-10-14: WestLanternForestpilotusesB12dedicated2/2andtwoT05forestslotswithinexisting8 allowance. Global90/230selected/reserved, palace65/world25. No capincreaseornewslotpercottagedestination."
+    "2026-10-14: WestLanternForestpilotusesB12dedicated2/2andtwoT05forestslotswithinexisting8 allowance. Global90/230selected/reserved, palace65/world25. No capincreaseornewslotpercottagedestination.",
+    "2026-10-14: Owner reminds us to include flora/fauna. Hold6 unallocated terrain/world sheets for sharedfauna within65 cap and existingregional caps. Selected90/saved87/global230 unchanged. No images/models generated."
   ],
   "composition_previews": [
     {
@@ -1591,5 +1592,24 @@
       "generation_attempts": 2,
       "reason": "Owner requests a dressed view to assess existing ballroom/celebration asset placement; previews excluded under saved counting rule."
     }
-  ]
+  ],
+  "ecology_planning_hold": {
+    "date": "2026-10-14",
+    "scope": "Flora and fauna included in each location audit",
+    "owner": "terrain-water-and-planting",
+    "fauna_sheet_allowance": 6,
+    "source_of_allowance": "Within current65 owner cap and regional caps; from unallocated future allowance, no selected slot created",
+    "by_region": {
+      "T01": 1,
+      "T02": 1,
+      "T03": 1,
+      "T04": 1,
+      "T05": 1,
+      "T08": 1
+    },
+    "floral_rule": "Existing plant references reused; audit canopy/understory/ground/aquatic forms per habitat",
+    "images_generated": 0,
+    "new_model_targets": 0,
+    "status": "Provisional source-audit-dependent planning hold; no automatic generation"
+  }
 }

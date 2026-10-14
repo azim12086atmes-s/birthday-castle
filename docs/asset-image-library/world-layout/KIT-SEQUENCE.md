@@ -1,6 +1,6 @@
 # World kit production sequence and caps
 
-This pass delivers the expanded12km world proposal with three forest districts, eight cottage clearings, and an allocation/source matrix. No new architecture, foliage, terrain or object kit is generated yet. [Per-location matrix](kit-plan.csv) · [25 location anchors](locations.csv) · [Regions/routes/coast](layout.json)
+This pass delivers the expanded12km world proposal with three forest districts, eight cottage clearings, and an allocation/source matrix. The West Lantern Forest/B12 pilot now has four reference sheets; other location kits remain pending. [Per-location matrix](kit-plan.csv) · [25 location anchors](locations.csv) · [Regions/routes/coast](layout.json)
 
 1. For the new exploration areas, audit **B12 Storybook Village** and sharedT05 forest references first. B12 retains2 sheets for packed shell/decor modules reused acrossFC01–FC08; no per-cottage sheets. Then continue with **B02 Moon Water Palace**, which connects the palace approach, southern basin and bridge. Inspect its original GEN-05 panel; separate structure, windows/domes/columns, paving/rails and decor already shown. Generate only missing3–4-section assemblies and10–20-item detail packs.
 2. Continue to B03 Star Chapel and western village/harbor routes, then other districts. Keep each building's source palette and profile; do not recolour every location to palace rose.
@@ -36,7 +36,7 @@ Other-building allocation is **three existing composite boards plus52 dedicated 
 
 These65 terrain slots include existing boards and palace-ground landscape. Regional foliage/natural objects use packed shared families, not a new image for every tree or shoreline instance. Placement quantity and world streaming/LOD/navigation remain implementation tasks.
 
-The maps/placements subfamily is capped at4; GEN-04 and WLD-MAP-002 currently use2; WLD-MAP-001 is retired/preserved. World-selected slots total21/165, leaving144 unallocated world slots; palace65/65 remains. No new paid model service or runtime changes are authorized or performed by this planning pass.
+The maps/placements subfamily is capped at4; GEN-04 and WLD-MAP-002 currently use2; WLD-MAP-001 is retired/preserved. World-selected slots total25/165, leaving140 unallocated world slots; palace65/65 remains. No new paid model service or runtime changes are authorized or performed by this planning pass.
 
 ## Cottage and forest reuse
 
@@ -45,3 +45,7 @@ The maps/placements subfamily is capped at4; GEN-04 and WLD-MAP-002 currently us
 ## First world location kit pass
 
 [West Lantern Forest and Storybook cottage pilot](../world-location-kits/west-lantern-forest/README.md) adds fourpackedreferenceboards and32componenttargets. Trees/plants/rocks/paving/lightsalreadyshownare reused. B12dedicated2/2, twoT05forestslots,230globalcapunchanged. References/roofendgeometryandallmodels/joinsstillpendingreview.
+
+## Flora and fauna requirement
+
+Every location now includes a flora and fauna audit. [Shared ecology plan](FLORA-FAUNA-PLAN.md) and [habitat matrix](flora-fauna-matrix.csv) distinguish existing plant references from habitat gaps and proposed wildlife. Six fauna sheets are held within existing terrain/regional allowances; no slots or images are added now. B02 aquatic plants and wildlife belong in its next audit.

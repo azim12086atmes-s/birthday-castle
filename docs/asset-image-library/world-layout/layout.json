@@ -744,7 +744,20 @@
       ],
       "terrain_sheet_cap": 12,
       "design_rule": "Rose/ivory stone, cherry blossoms, hedges, rose beds, garden rills; ground-facing palace outline is reservation only.",
-      "status": "Existing vocabulary, regional module/placement audit pending"
+      "status": "Existing vocabulary, regional module/placement audit pending",
+      "ecology_audit": {
+        "flora_reference_candidates": [
+          "GEN-08",
+          "GEN-09",
+          "GEN-13",
+          "GEN-35"
+        ],
+        "flora_remaining_audit": "Ornamental canopy, hedges, shrubs, beds, climbers, planters; audit exact existing forms before variants",
+        "fauna_candidates": "Small songbirds, butterflies, bees",
+        "fauna_shared_family": "Garden visitors",
+        "fauna_provisional_sheet_allowance_within_region": 1,
+        "fauna_reference_status": "No dedicated fauna kit indexed; source audit and species design pending"
+      }
     },
     {
       "id": "T02",
@@ -763,7 +776,18 @@
       ],
       "terrain_sheet_cap": 6,
       "design_rule": "Separate calm Lantern Lake from larger tidal/lagoon basin; lilies, reeds, small ponds and wet/dry banks.",
-      "status": "Existing vocabulary, regional module/placement audit pending"
+      "status": "Existing vocabulary, regional module/placement audit pending",
+      "ecology_audit": {
+        "flora_reference_candidates": [
+          "GEN-09",
+          "GEN-13"
+        ],
+        "flora_remaining_audit": "Willow, reeds, rushes, lotus, lily pads and bank plants; submerged vegetation remains to audit",
+        "fauna_candidates": "Pond fish, frogs, dragonflies, ducks",
+        "fauna_shared_family": "Freshwater visitors",
+        "fauna_provisional_sheet_allowance_within_region": 1,
+        "fauna_reference_status": "No dedicated fauna kit indexed; source audit and species design pending"
+      }
     },
     {
       "id": "T03",
@@ -784,7 +808,18 @@
       ],
       "terrain_sheet_cap": 10,
       "design_rule": "Open sea, irregular beaches/headlands, dunes, coves, reefs and variable wave packets; no enclosing mountain ring.",
-      "status": "Existing vocabulary, regional module/placement audit pending"
+      "status": "Existing vocabulary, regional module/placement audit pending",
+      "ecology_audit": {
+        "flora_reference_candidates": [
+          "GEN-09",
+          "GEN-21"
+        ],
+        "flora_remaining_audit": "Coastal pine and dune grass exist; audit salt-tolerant shrubs, seaweed, seagrass and reef living forms",
+        "fauna_candidates": "Seabirds, crabs, small reef fish",
+        "fauna_shared_family": "Coastal visitors",
+        "fauna_provisional_sheet_allowance_within_region": 1,
+        "fauna_reference_status": "No dedicated fauna kit indexed; source audit and species design pending"
+      }
     },
     {
       "id": "T04",
@@ -799,7 +834,18 @@
       ],
       "terrain_sheet_cap": 7,
       "design_rule": "Jade/verdigris stone, fern/large-leaf understory, roots, palms, shallow wetland pockets and broken moss ledges.",
-      "status": "Existing vocabulary, regional module/placement audit pending"
+      "status": "Existing vocabulary, regional module/placement audit pending",
+      "ecology_audit": {
+        "flora_reference_candidates": [
+          "GEN-13",
+          "GEN-21"
+        ],
+        "flora_remaining_audit": "Audit broadleaf canopy, palms, vines, epiphytes and wetland plants separately; garden fern studies do not prove a complete jungle kit",
+        "fauna_candidates": "Colourful birds, small geckos, beetles",
+        "fauna_shared_family": "Jungle visitors",
+        "fauna_provisional_sheet_allowance_within_region": 1,
+        "fauna_reference_status": "No dedicated fauna kit indexed; source audit and species design pending"
+      }
     },
     {
       "id": "T05",
@@ -842,7 +888,20 @@
       "cottage_reference_sheet_ids": [
         "B12-STRUCT-001",
         "B12-DETAIL-001"
-      ]
+      ],
+      "ecology_audit": {
+        "flora_reference_candidates": [
+          "GEN-08",
+          "GEN-09",
+          "GEN-13",
+          "F02-NATURE-001"
+        ],
+        "flora_remaining_audit": "Existing tree/fern/moss references and new bramble/bluebell/strawberry forms; audit woodland canopy, saplings, understory and ground cover",
+        "fauna_candidates": "Deer, fox, hare, squirrel; small birds/insects share other families",
+        "fauna_shared_family": "Woodland visitors",
+        "fauna_provisional_sheet_allowance_within_region": 1,
+        "fauna_reference_status": "No dedicated fauna kit indexed; source audit and species design pending"
+      }
     },
     {
       "id": "T06",
@@ -862,7 +921,18 @@
       ],
       "terrain_sheet_cap": 7,
       "design_rule": "Localized north-west fjord and north-east misty ridges, valleys and pillar outcrops; many low coastal approaches remain open.",
-      "status": "Existing vocabulary, regional module/placement audit pending"
+      "status": "Existing vocabulary, regional module/placement audit pending",
+      "ecology_audit": {
+        "flora_reference_candidates": [
+          "GEN-09",
+          "GEN-21"
+        ],
+        "flora_remaining_audit": "Audit conifers, heather, low shrubs and alpine meadow vegetation; do not automatically label coastal pine as every conifer",
+        "fauna_candidates": "Reuse appropriate woodland birds and mammals after habitat review",
+        "fauna_shared_family": "Reuse woodland and garden visitors",
+        "fauna_provisional_sheet_allowance_within_region": 0,
+        "fauna_reference_status": "No dedicated fauna kit indexed; source audit and species design pending"
+      }
     },
     {
       "id": "T07",
@@ -878,7 +948,17 @@
       ],
       "terrain_sheet_cap": 7,
       "design_rule": "Apricot/rose sandstone, uneven eroded arch, gullies and dry terraces; a local south-east patch, not a border wall.",
-      "status": "Existing vocabulary, regional module/placement audit pending"
+      "status": "Existing vocabulary, regional module/placement audit pending",
+      "ecology_audit": {
+        "flora_reference_candidates": [
+          "GEN-21"
+        ],
+        "flora_remaining_audit": "Audit dry grasses, shrubs and exposed-soil plants; source terrain does not establish every dry-land species",
+        "fauna_candidates": "Small lizards and insects adapted from shared families after source review",
+        "fauna_shared_family": "Reuse jungle/insect families where suitable",
+        "fauna_provisional_sheet_allowance_within_region": 0,
+        "fauna_reference_status": "No dedicated fauna kit indexed; source audit and species design pending"
+      }
     },
     {
       "id": "T08",
@@ -896,7 +976,19 @@
       ],
       "terrain_sheet_cap": 8,
       "design_rule": "Floating terrain shells/edges and garden/meadow surfaces; horizontal projections separate from ground/sea routes.",
-      "status": "Existing vocabulary, regional module/placement audit pending"
+      "status": "Existing vocabulary, regional module/placement audit pending",
+      "ecology_audit": {
+        "flora_reference_candidates": [
+          "GEN-08",
+          "GEN-13",
+          "GEN-23"
+        ],
+        "flora_remaining_audit": "Audit blossom/garden references and magical accents; distinguish living vegetation from crystal terrain",
+        "fauna_candidates": "Luminous moth/firefly variants; one optional distinctive magical creature if source references support it",
+        "fauna_shared_family": "Magical visitors",
+        "fauna_provisional_sheet_allowance_within_region": 1,
+        "fauna_reference_status": "No dedicated fauna kit indexed; source audit and species design pending"
+      }
     }
   ],
   "routes": [
