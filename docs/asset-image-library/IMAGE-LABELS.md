@@ -946,3 +946,13 @@ R03 uses plain tower circles and source-reviewed garden symbols. See [garden pla
 | SRC-LOC-S06-WLD-MAP-002 | [S06 — current-diagrammatic-placement-proposal from WLD-MAP-002](world-layout/location-audit/source/S06-WLD-MAP-002.png) |
 | SRC-LOC-B01-GEN-37-CENTRE | [B01 — palace-front-detail from GEN-37](world-layout/location-audit/source/B01-GEN-37-centre-detail.png) |
 | SRC-LOC-B01-GEN-37-EAST | [B01 — palace-front-detail from GEN-37](world-layout/location-audit/source/B01-GEN-37-east-detail.png) |
+
+## Moon Water Palace source-derived modules
+
+| ID | Image |
+| --- | --- |
+| B02-STRUCT-001 | [Moon Water Palace — arcade, portal, corner and ghat sections](world-location-kits/moon-water-palace/B02-STRUCT-001/B02-STRUCT-001.png) |
+| B02-ROOF-001 | [Moon Water Palace — dome and minaret sections](world-location-kits/moon-water-palace/B02-ROOF-001/B02-ROOF-001.png) |
+| B02-ROOF-001-R01 | [Moon Water Palace — dome and minaret sections — superseded construction draft](world-location-kits/moon-water-palace/B02-ROOF-001/B02-ROOF-001-R01.png) |
+| B02-DETAIL-001 | [Moon Water Palace — architectural detail kit](world-location-kits/moon-water-palace/B02-DETAIL-001/B02-DETAIL-001.png) |
+| B02-DETAIL-001-R01 | [Moon Water Palace — architectural detail kit — superseded construction draft](world-location-kits/moon-water-palace/B02-DETAIL-001/B02-DETAIL-001-R01.png) |

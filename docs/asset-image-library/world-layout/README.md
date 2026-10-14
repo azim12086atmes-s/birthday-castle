@@ -28,7 +28,7 @@ Bounds, proposed rectangle exclusions, cottage-clearing containment and route le
 
 ## First world location kit pass
 
-[West Lantern Forest and Storybook cottage pilot](../world-location-kits/west-lantern-forest/README.md) adds fourpackedreferenceboards and32componenttargets. Trees/plants/rocks/paving/lightsalreadyshownare reused. B12dedicated2/2, twoT05forestslots,230globalcapunchanged. References/roofendgeometryandallmodels/joinsstillpendingreview.
+[West Lantern Forest and Storybook cottage pilot](../world-location-kits/west-lantern-forest/README.md) adds fourpackedreferenceboards and32componenttargets. Trees/plants/rocks/paving/lightsalreadyshownare reused. B12dedicated2/2, twoT05forestslots,230globalcapunchanged. References/roofendgeometryandall models/joinsstillpendingreview.
 
 ## Flora and fauna tracking
 
@@ -37,3 +37,7 @@ Bounds, proposed rectangle exclusions, cottage-clearing containment and route le
 ## Source-led location and ecology audit
 
 [34locationbriefs and zoomed sources](location-audit/README.md) now separate visible features, imagined layout and missing-kit work. Location-specific flora/fauna selections share generalwater/rock/nature references. Threeforest ecology sheets add20targets; all3D/anatomy/rigging/route geometryremainunverified. No palace facade changes.
+
+## Moon Water Palace component pass
+
+[Three B02 sheets, 20 labelled targets](../world-location-kits/moon-water-palace/README.md) are saved. B02 building cap 3/3; shared botany/props reused. Next: shared T02 freshwater fauna, then B03source-specific architecture. No map coordinates, dimensions or terrain geometry changed in this pass. All 3D and physical joins remain unverified.

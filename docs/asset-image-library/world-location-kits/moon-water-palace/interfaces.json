@@ -1,0 +1,43 @@
+{
+  "status": "Proposed contracts; no evaluated mesh or seamless texture proof",
+  "axes": "Local Xwidth,Ydepth,Zheight; front is+Y. World map uses X/Zplan, so transform explicitly on model placement.",
+  "matching_nominal_interfaces": [
+    {
+      "a": "B02-ROOF-001-S01",
+      "b": "B02-ROOF-001-S02",
+      "type": "circular rim",
+      "diameter_m": 18
+    },
+    {
+      "a": "B02-ROOF-001-S03",
+      "b": "B02-ROOF-001-S03",
+      "type": "repeat shaft rim",
+      "diameter_m": 2.8
+    },
+    {
+      "a": "B02-ROOF-001-S03",
+      "b": "B02-ROOF-001-S04",
+      "type": "crown foot",
+      "diameter_m": 2.8
+    },
+    {
+      "a": "B02-STRUCT-001-S01",
+      "b": "B02-STRUCT-001-S03",
+      "type": "covered arcade end",
+      "nominal_depth_m": 3,
+      "nominal_height_m": 10
+    }
+  ],
+  "construction_rules": [
+    "Share or deliberately remove one end pier between adjacent arcade instances; do not fuse double columns automatically.",
+    "Model plain hall substrate and actual portal/window cutters procedurally; detail drawings do not seal or cut openings.",
+    "Use host aperture measurements to fit D02,D03,D09; reference dimensions are not a guarantee of interchangeable inserts.",
+    "Use one seat detail across dome/drum; avoid overlapped decorative fringes.",
+    "Use square end cuts for D04/D05cornice and D06/D07parapets, deduplicate end posts.",
+    "D12arc strip radius2.1m is nominal: arcangle2/2.1radians, not an integer full-ring repeat. Trim/resample pattern into a locked ring; do not assume count repeats closes circle.",
+    "Keep ghat vertical floor rise1.2m separate from total parapet-height bounds.",
+    "Roof backs, internal tower stairs, structural engineering and watertightness remain proposals."
+  ],
+  "physical_join_fit_verified": false,
+  "uv_texture_seams_verified": false
+}

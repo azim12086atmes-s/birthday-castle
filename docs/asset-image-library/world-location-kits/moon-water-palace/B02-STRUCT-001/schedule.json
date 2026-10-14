@@ -1,0 +1,164 @@
+{
+  "sheet_id": "B02-STRUCT-001",
+  "name": "Moon Water Palace \u2014 arcade, portal, corner and ghat sections",
+  "prompt": "Create ONE clean labelled modular game architecture reference sheet on plain light ivory paper, crisp detailed studio illustration, soft even lighting, no landscape or complete building scene, no people, no perspective distortion. Use ONLY the single supplied B02 source panel as visible architectural authority. Retain its pearl/ivory marble, restrained blush veins, gold filigree, pale amber/lilac and sky glazing, WHITE PEARL onion roofs and slender minarets. No purple roof, no giant main-palace rose Gothic windows. Isolate full uncropped components with space between cells. Show real depth and matching unobstructed joining faces. Names and FULL IDs below each item, dimensions described as PROPOSED. Dimensions below are width x depth x height, not existing measured geometry. Each cell independent drawing scale. Do not add plants, water, lights, furnishings or ornament props not requested. Four LARGE 2x2 cells. Each has large three-quarter view plus small front elevation and top/side diagram. Exactly FOUR main modules; same-height arcade parts share identical end profiles. Put dashed join lines outside object. Tiny diagrams only inside their own cell. Title B02-STRUCT-001. Footer \"Joinable host sections / inferred backs / proposed dimensions\".\n\nB02-STRUCT-001-S01 \u2014 Open water arcade bay: proposed [6, 3, 10]m. One repeatable six-metre wide arcade, ivory marble with shallow warm blush veins, slender piers and a single pointed softly cusped open arch, gold edge moulding, simple flat cornice. Walk-through arch truly OPEN, no blue glass blocking it. Flat level walkway three metres deep, planar joining ends at x +/-3. Clear rear opening. Source grammar is Moon Palace, not elaborate rose Gothic main palace. Separate trims mount later. Attachment: Flat underside to platform; vertical end planes join S01 repeats.\n\nB02-STRUCT-001-S02 \u2014 Central portal wall: proposed [12, 3, 18]m. One rectangular ivory entrance facade host, twelve metres wide and eighteen tall, deep pointed central opening six metres wide and twelve high; lower four metres clear door passage, upper region prepared for amber/lilac glass insert later. Flat rear wall contact, rectangular side joins, small side pointed recesses, narrow flanking pilasters, gold arch edges. NO attached dome, minarets, stairs, pool or complete palace. Simple source cusped arch rather than main palace five-gate front. Attachment: Underside to raised hall platform; rear plane to procedural hall shell.\n\nB02-STRUCT-001-S03 \u2014 Arcade courtyard corner: proposed [6, 6, 10]m. A genuine L-shaped ninety-degree arcade corner, outer footprint six by six metres, same ten metre height, three-metre-deep covered walk on each arm. One open source-style pointed arch on each outward face, corner pier carries both arch springings; flat cornice wraps corner. Two open planar ends mate with S01. Readable top plan, hollow inner walk, not solid opaque corner room. Attachment: Underside to court platform; two end planes to S01.\n\nB02-STRUCT-001-S04 \u2014 Ghat stair and pool edge: proposed [12, 6, 1.2]m. One broad water-court stair module twelve metres wide and six metres deep: eight low ivory risers of 0.15m, tread0.45m, rising total1.2m; remaining2.4m depth a broad upper landing. Low rectangular end cheeks and gold rim on the parapet cap; no ornate attached shrubs. Clearly show stairs, upper landing and underside/support. Pool water excluded from model; reflect-pool straight banks use separate procedural repeats. Attachment: Bottom and rear earth contact; upper landing at platform height1.2m.",
+  "source_reference_id": "SRC-LOC-B02-GEN-05",
+  "source_reference_file": "world-layout/location-audit/source/B02-GEN-05.png",
+  "source_reference_sha256": "67e54451047162c59d10206e29194abad9178015581c5aa52d3bdc2e701e1eb2",
+  "outputs": [
+    {
+      "file": "world-location-kits/moon-water-palace/B02-STRUCT-001/B02-STRUCT-001.png",
+      "sha256": "9b0215d11d52b1ada02e4f26b28691a050ce9cfa0e60d4a297d8704b9938ee29",
+      "original_file": "/workspace/generated_images/exec-ff9df2da-718f-407c-837a-4c054d1e5dc9.png",
+      "actual_input_file": "world-layout/location-audit/source/B02-GEN-05.png",
+      "actual_input_sha256": "67e54451047162c59d10206e29194abad9178015581c5aa52d3bdc2e701e1eb2",
+      "attempt": 1,
+      "generator": "image_gen.imagegen"
+    }
+  ],
+  "previous_attempts": [],
+  "models_generated": 0,
+  "physical_join_fit_verified": false,
+  "view_geometry_parity_verified": false,
+  "review_status": "pending-user-reference-and-model-review",
+  "parts": [
+    {
+      "asset_id": "B02-STRUCT-001-S01",
+      "name": "Open water arcade bay",
+      "dimensions_m_proposed": [
+        6,
+        3,
+        10
+      ],
+      "construction": "One repeatable six-metre wide arcade, ivory marble with shallow warm blush veins, slender piers and a single pointed softly cusped open arch, gold edge moulding, simple flat cornice. Walk-through arch truly OPEN, no blue glass blocking it. Flat level walkway three metres deep, planar joining ends at x +/-3. Clear rear opening. Source grammar is Moon Palace, not elaborate rose Gothic main palace. Separate trims mount later.",
+      "attachment_face": "Flat underside to platform; vertical end planes join S01 repeats",
+      "semantic_front": "Facade outwards, +Y; vertical +Z; rear contact opposite front",
+      "function": "Reusable Moon Water Palace structure",
+      "kind": "building-module",
+      "target_polycount_proposed": 6000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B02"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B02-STRUCT-001-S01__open-water-arcade-bay__v001.glb",
+      "design_basis": "GEN-05 visible motif; isolated construction and metric dimensions proposed"
+    },
+    {
+      "asset_id": "B02-STRUCT-001-S02",
+      "name": "Central portal wall",
+      "dimensions_m_proposed": [
+        12,
+        3,
+        18
+      ],
+      "construction": "One rectangular ivory entrance facade host, twelve metres wide and eighteen tall, deep pointed central opening six metres wide and twelve high; lower four metres clear door passage, upper region prepared for amber/lilac glass insert later. Flat rear wall contact, rectangular side joins, small side pointed recesses, narrow flanking pilasters, gold arch edges. NO attached dome, minarets, stairs, pool or complete palace. Simple source cusped arch rather than main palace five-gate front.",
+      "attachment_face": "Underside to raised hall platform; rear plane to procedural hall shell",
+      "semantic_front": "Facade outwards, +Y; vertical +Z; rear contact opposite front",
+      "function": "Reusable Moon Water Palace structure",
+      "kind": "building-module",
+      "target_polycount_proposed": 6000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B02"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B02-STRUCT-001-S02__central-portal-wall__v001.glb",
+      "design_basis": "GEN-05 visible motif; isolated construction and metric dimensions proposed"
+    },
+    {
+      "asset_id": "B02-STRUCT-001-S03",
+      "name": "Arcade courtyard corner",
+      "dimensions_m_proposed": [
+        6,
+        6,
+        10
+      ],
+      "construction": "A genuine L-shaped ninety-degree arcade corner, outer footprint six by six metres, same ten metre height, three-metre-deep covered walk on each arm. One open source-style pointed arch on each outward face, corner pier carries both arch springings; flat cornice wraps corner. Two open planar ends mate with S01. Readable top plan, hollow inner walk, not solid opaque corner room.",
+      "attachment_face": "Underside to court platform; two end planes to S01",
+      "semantic_front": "Facade outwards, +Y; vertical +Z; rear contact opposite front",
+      "function": "Reusable Moon Water Palace structure",
+      "kind": "building-module",
+      "target_polycount_proposed": 6000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B02"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B02-STRUCT-001-S03__arcade-courtyard-corner__v001.glb",
+      "design_basis": "GEN-05 visible motif; isolated construction and metric dimensions proposed"
+    },
+    {
+      "asset_id": "B02-STRUCT-001-S04",
+      "name": "Ghat stair and pool edge",
+      "dimensions_m_proposed": [
+        12,
+        6,
+        1.2
+      ],
+      "construction": "One broad water-court stair module twelve metres wide and six metres deep: eight low ivory risers of 0.15m, tread0.45m, rising total1.2m; remaining2.4m depth a broad upper landing. Low rectangular end cheeks and gold rim on the parapet cap; no ornate attached shrubs. Clearly show stairs, upper landing and underside/support. Pool water excluded from model; reflect-pool straight banks use separate procedural repeats.",
+      "attachment_face": "Bottom and rear earth contact; upper landing at platform height1.2m",
+      "semantic_front": "Facade outwards, +Y; vertical +Z; rear contact opposite front",
+      "function": "Reusable Moon Water Palace structure",
+      "kind": "building-module",
+      "target_polycount_proposed": 4000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B02"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B02-STRUCT-001-S04__ghat-stair-and-pool-edge__v001.glb",
+      "design_basis": "GEN-05 visible motif; isolated construction and metric dimensions proposed",
+      "height_dimension_meaning": "1.2m floor rise excludes parapet/cheek ornaments; overall bound not resolved",
+      "stairs_proposed": {
+        "risers": 8,
+        "rise_m": 0.15,
+        "tread_m": 0.45,
+        "upper_landing_depth_m": 2.4,
+        "verified_in_image_or_mesh": false
+      }
+    }
+  ],
+  "review_notes": [
+    "Four labelled groups and their main/front/plan/side views are present. Arcade and corner arches visibly open; portal lower passage remains clear. Pearl/ivory hosts, gold mouldings and pale blue/amber accents derive from GEN-05, with extra resolved ornament proposed.",
+    "All metrics and hidden depth are working proposals. The depicted stairs do not prove eight identical risers;1.2m is the stair floor rise, excluding raised cheek/parapet ornament. Cornices, pier caps and inset elevations are not identical measured projections.",
+    "A repeated arcade must share one boundary pier, avoiding doubled columns or overlapping floors. Model the shell and cut openings first; retain trims as removable groups. Arcade roof/depth closure, exact L-corner footprint, stairs and hall rear joins require model review."
+  ],
+  "manual_inventory_review": {
+    "expected_main_groups": 4,
+    "all_main_groups_and_labels_present": true,
+    "method": "Individual visual inspection of generated images"
+  }
+}

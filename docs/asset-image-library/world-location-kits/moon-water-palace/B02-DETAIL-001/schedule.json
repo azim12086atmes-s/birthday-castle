@@ -1,0 +1,410 @@
+{
+  "sheet_id": "B02-DETAIL-001",
+  "name": "Moon Water Palace \u2014 architectural detail kit",
+  "prompt": "Edit ONLY THREE specified cells of this supplied 12-cell architectural sheet. Keep all other nine cells, layout, full IDs, names, sizes, cream marble, amber/lilac glazing and gold rendering identical. D06 COURTYARD PARAPET PANEL: remove both tall end posts, finials and thick vertical end plinths entirely. Draw only ONE rectangular pierced rail panel three metres long, thin horizontal top cap and bottom foot band, plain narrow unadorned vertical end edges square cut for continuous repeats and connection to separate D07 post. Update D06 side/top insets to match, no posts. D10 SMALL PAVILION PINNACLE: REMOVE the miniature ivory onion dome from under it. This asset is only the slim gold pointed rod with stacked beads and a lotus cup root on a tiny compact ivory attachment socket; proposed height2m, width0.45m. Update bottom/top insets to correspond, NO architectural roof under rod. D08 LOTUS SPANDREL APPLIQUE: front and side preserve current single lotus relief; REPLACE rectangular BACK VIEW with a flat ivory backside having exactly same lotus petal silhouette outline as front, not a rectangular plaque. Label Back View. Do NOT alter the other nine cells or add any objects. Keep complete B02-DETAIL-001-D06/D08/D10 names and proposed sizes legible.",
+  "source_reference_id": "SRC-LOC-B02-GEN-05",
+  "source_reference_file": "world-layout/location-audit/source/B02-GEN-05.png",
+  "source_reference_sha256": "67e54451047162c59d10206e29194abad9178015581c5aa52d3bdc2e701e1eb2",
+  "outputs": [
+    {
+      "file": "world-location-kits/moon-water-palace/B02-DETAIL-001/B02-DETAIL-001.png",
+      "sha256": "c1ae8c9580a619dbf430745fa27f6e08015daeb90b6a639baaef5c9797abde92",
+      "original_file": "/workspace/generated_images/exec-5ca139d4-113a-44cb-9cb9-07428583c9f6.png",
+      "actual_input_file": "world-location-kits/moon-water-palace/B02-DETAIL-001/B02-DETAIL-001-R01.png",
+      "actual_input_sha256": "6aba283096d02fc6d49ea99188024ce4770f7fa5e2ed563f4eed33f4172eb509",
+      "attempt": 2,
+      "generator": "image_gen.imagegen"
+    }
+  ],
+  "previous_attempts": [
+    {
+      "file": "world-location-kits/moon-water-palace/B02-DETAIL-001/B02-DETAIL-001-R01.png",
+      "sha256": "6aba283096d02fc6d49ea99188024ce4770f7fa5e2ed563f4eed33f4172eb509",
+      "original_file": "/workspace/generated_images/exec-5ad81e4c-111e-4a7a-93d6-783c98a0722a.png",
+      "actual_input_file": "world-layout/location-audit/source/B02-GEN-05.png",
+      "actual_input_sha256": "67e54451047162c59d10206e29194abad9178015581c5aa52d3bdc2e701e1eb2",
+      "attempt": 1,
+      "generator": "image_gen.imagegen",
+      "rejection_reason": "D06 has integrated end posts despite separate D07; D10 includes unrequested miniature dome; D08 rear outline is rectangular rather than matching lotus. Correct these three cells only."
+    }
+  ],
+  "models_generated": 0,
+  "physical_join_fit_verified": false,
+  "view_geometry_parity_verified": false,
+  "review_status": "pending-user-reference-and-model-review",
+  "parts": [
+    {
+      "asset_id": "B02-DETAIL-001-D01",
+      "name": "Ivory geometric jali insert",
+      "dimensions_m_proposed": [
+        1.8,
+        0.12,
+        2.4
+      ],
+      "construction": "Rectangular ivory geometric pierced lattice insert, fine repeating eight-point/petal geometry inspired by source bottom ivory lattice swatch. Actual open holes, planar back mounting rim. No solid glowing glass in lattice.",
+      "attachment_face": "Flat rear or root socket to named host; contact and end profiles require model review",
+      "semantic_front": "Facade outwards, +Y; vertical +Z; rear contact opposite front",
+      "function": "Source-compatible removable architectural detail",
+      "kind": "architectural-detail",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B02"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B02-DETAIL-001-D01__ivory-geometric-jali-insert__v001.glb",
+      "design_basis": "GEN-05 visible motif; isolated construction and metric dimensions proposed"
+    },
+    {
+      "asset_id": "B02-DETAIL-001-D02",
+      "name": "Amber lilac portal glazing",
+      "dimensions_m_proposed": [
+        3,
+        0.08,
+        7
+      ],
+      "construction": "Tall pointed glass insert for the upper part of portal: warm amber and faint lilac panes, gold branching fine lattice, pointed top. Do not use the main palace vivid blue stained star window. Glass only, thin perimeter frame; lower door stays open.",
+      "attachment_face": "Flat rear or root socket to named host; contact and end profiles require model review",
+      "semantic_front": "Facade outwards, +Y; vertical +Z; rear contact opposite front",
+      "function": "Source-compatible removable architectural detail",
+      "kind": "architectural-detail",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B02"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B02-DETAIL-001-D02__amber-lilac-portal-glazing__v001.glb",
+      "design_basis": "GEN-05 visible motif; isolated construction and metric dimensions proposed"
+    },
+    {
+      "asset_id": "B02-DETAIL-001-D03",
+      "name": "Cusped arch surround",
+      "dimensions_m_proposed": [
+        4,
+        0.25,
+        5.5
+      ],
+      "construction": "Single ivory-and-gold softly cusped pointed arch surround, arch band only with clear open centre, straight lower jamb mounts. Source arch proportions, no blocked inset backing.",
+      "attachment_face": "Flat rear or root socket to named host; contact and end profiles require model review",
+      "semantic_front": "Facade outwards, +Y; vertical +Z; rear contact opposite front",
+      "function": "Source-compatible removable architectural detail",
+      "kind": "architectural-detail",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B02"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B02-DETAIL-001-D03__cusped-arch-surround__v001.glb",
+      "design_basis": "GEN-05 visible motif; isolated construction and metric dimensions proposed"
+    },
+    {
+      "asset_id": "B02-DETAIL-001-D04",
+      "name": "Straight cornice trim",
+      "dimensions_m_proposed": [
+        3,
+        0.35,
+        0.45
+      ],
+      "construction": "Repeatable straight ivory layered cornice with two thin gold edge bands, subtle petal underside, planar end faces. NOT bent or disconnected pieces.",
+      "attachment_face": "Flat rear or root socket to named host; contact and end profiles require model review",
+      "semantic_front": "Facade outwards, +Y; vertical +Z; rear contact opposite front",
+      "function": "Source-compatible removable architectural detail",
+      "kind": "architectural-detail",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B02"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B02-DETAIL-001-D04__straight-cornice-trim__v001.glb",
+      "design_basis": "GEN-05 visible motif; isolated construction and metric dimensions proposed"
+    },
+    {
+      "asset_id": "B02-DETAIL-001-D05",
+      "name": "Cornice corner return",
+      "dimensions_m_proposed": [
+        1.2,
+        1.2,
+        0.45
+      ],
+      "construction": "True ninety-degree L cornice return, same0.35m projection and0.45m height as D04, ends cut square for joining; clear top inset of the L.",
+      "attachment_face": "Flat rear or root socket to named host; contact and end profiles require model review",
+      "semantic_front": "Facade outwards, +Y; vertical +Z; rear contact opposite front",
+      "function": "Source-compatible removable architectural detail",
+      "kind": "architectural-detail",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B02"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B02-DETAIL-001-D05__cornice-corner-return__v001.glb",
+      "design_basis": "GEN-05 visible motif; isolated construction and metric dimensions proposed"
+    },
+    {
+      "asset_id": "B02-DETAIL-001-D06",
+      "name": "Courtyard parapet panel",
+      "dimensions_m_proposed": [
+        3,
+        0.25,
+        1.1
+      ],
+      "construction": "Straight pierced ivory parapet with gentle petal/diamond pattern, thin gold cap and bottom border, flat unobstructed end joins, no glued flowerbed.",
+      "attachment_face": "Flat rear or root socket to named host; contact and end profiles require model review",
+      "semantic_front": "Facade outwards, +Y; vertical +Z; rear contact opposite front",
+      "function": "Source-compatible removable architectural detail",
+      "kind": "architectural-detail",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B02"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B02-DETAIL-001-D06__courtyard-parapet-panel__v001.glb",
+      "design_basis": "GEN-05 visible motif; isolated construction and metric dimensions proposed"
+    },
+    {
+      "asset_id": "B02-DETAIL-001-D07",
+      "name": "Parapet corner post",
+      "dimensions_m_proposed": [
+        0.45,
+        0.45,
+        1.1
+      ],
+      "construction": "One square ivory parapet corner post with gold cap; two perpendicular flat rail attachment faces matching D06 top level. No giant finial or attached rails.",
+      "attachment_face": "Flat rear or root socket to named host; contact and end profiles require model review",
+      "semantic_front": "Facade outwards, +Y; vertical +Z; rear contact opposite front",
+      "function": "Source-compatible removable architectural detail",
+      "kind": "architectural-detail",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B02"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B02-DETAIL-001-D07__parapet-corner-post__v001.glb",
+      "design_basis": "GEN-05 visible motif; isolated construction and metric dimensions proposed"
+    },
+    {
+      "asset_id": "B02-DETAIL-001-D08",
+      "name": "Lotus spandrel applique",
+      "dimensions_m_proposed": [
+        0.8,
+        0.08,
+        0.8
+      ],
+      "construction": "Flat backed gold-on-ivory stylised lotus blossom relief from arch/panel grammar, single symmetric fan of petals, shallow true relief, no fragmented gold tendrils.",
+      "attachment_face": "Flat rear or root socket to named host; contact and end profiles require model review",
+      "semantic_front": "Facade outwards, +Y; vertical +Z; rear contact opposite front",
+      "function": "Source-compatible removable architectural detail",
+      "kind": "architectural-detail",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B02"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B02-DETAIL-001-D08__lotus-spandrel-applique__v001.glb",
+      "design_basis": "GEN-05 visible motif; isolated construction and metric dimensions proposed"
+    },
+    {
+      "asset_id": "B02-DETAIL-001-D09",
+      "name": "Drum arch window insert",
+      "dimensions_m_proposed": [
+        1.5,
+        0.08,
+        3
+      ],
+      "construction": "Small narrow pointed drum window insert, pearl stone perimeter and pale sky/amber translucent panes with delicate gold cross divisions, clean curved perimeter if needed at modelling; no huge Gothic rosette.",
+      "attachment_face": "Flat rear or root socket to named host; contact and end profiles require model review",
+      "semantic_front": "Facade outwards, +Y; vertical +Z; rear contact opposite front",
+      "function": "Source-compatible removable architectural detail",
+      "kind": "architectural-detail",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B02"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B02-DETAIL-001-D09__drum-arch-window-insert__v001.glb",
+      "design_basis": "GEN-05 visible motif; isolated construction and metric dimensions proposed"
+    },
+    {
+      "asset_id": "B02-DETAIL-001-D10",
+      "name": "Small pavilion pinnacle",
+      "dimensions_m_proposed": [
+        0.45,
+        0.45,
+        2
+      ],
+      "construction": "One slender gold pointed roof pinnacle on lotus cup, compact ivory base socket, no crescent; reuse for tiny peripheral domes, rather than multiplying new tower designs.",
+      "attachment_face": "Flat rear or root socket to named host; contact and end profiles require model review",
+      "semantic_front": "Facade outwards, +Y; vertical +Z; rear contact opposite front",
+      "function": "Source-compatible removable architectural detail",
+      "kind": "architectural-detail",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B02"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B02-DETAIL-001-D10__small-pavilion-pinnacle__v001.glb",
+      "design_basis": "GEN-05 visible motif; isolated construction and metric dimensions proposed"
+    },
+    {
+      "asset_id": "B02-DETAIL-001-D11",
+      "name": "Central crescent finial",
+      "dimensions_m_proposed": [
+        1,
+        0.25,
+        3
+      ],
+      "construction": "One source central-dome crescent finial, thin gold upright rod, small stacked bead/lotus collar and single open crescent at top, crescent oriented sideways as reference. Flat socket root. No Christian cross or giant starburst.",
+      "attachment_face": "Flat rear or root socket to named host; contact and end profiles require model review",
+      "semantic_front": "Facade outwards, +Y; vertical +Z; rear contact opposite front",
+      "function": "Source-compatible removable architectural detail",
+      "kind": "architectural-detail",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B02"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B02-DETAIL-001-D11__central-crescent-finial__v001.glb",
+      "design_basis": "GEN-05 visible motif; isolated construction and metric dimensions proposed"
+    },
+    {
+      "asset_id": "B02-DETAIL-001-D12",
+      "name": "Minaret balcony frieze",
+      "dimensions_m_proposed": [
+        2,
+        0.2,
+        0.6
+      ],
+      "construction": "One short curved ivory balcony fascia strip, fine gold mouldings and evenly repeated small scallop brackets, proposed2m arc length on2.1m radius; top end joins readable. No complete balcony ring, shaft or rail attached.",
+      "attachment_face": "Flat rear or root socket to named host; contact and end profiles require model review",
+      "semantic_front": "Facade outwards, +Y; vertical +Z; rear contact opposite front",
+      "function": "Source-compatible removable architectural detail",
+      "kind": "architectural-detail",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B02"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B02-DETAIL-001-D12__minaret-balcony-frieze__v001.glb",
+      "design_basis": "GEN-05 visible motif; isolated construction and metric dimensions proposed"
+    }
+  ],
+  "revision_input_file": "world-location-kits/moon-water-palace/B02-DETAIL-001/B02-DETAIL-001-R01.png",
+  "revision_input_sha256": "6aba283096d02fc6d49ea99188024ce4770f7fa5e2ed563f4eed33f4172eb509",
+  "original_prompt": "Create ONE clean labelled modular game architecture reference sheet on plain light ivory paper, crisp detailed studio illustration, soft even lighting, no landscape or complete building scene, no people, no perspective distortion. Use ONLY the single supplied B02 source panel as visible architectural authority. Retain its pearl/ivory marble, restrained blush veins, gold filigree, pale amber/lilac and sky glazing, WHITE PEARL onion roofs and slender minarets. No purple roof, no giant main-palace rose Gothic windows. Isolate full uncropped components with space between cells. Show real depth and matching unobstructed joining faces. Names and FULL IDs below each item, dimensions described as PROPOSED. Dimensions below are width x depth x height, not existing measured geometry. Each cell independent drawing scale. Do not add plants, water, lights, furnishings or ornament props not requested. Exactly TWELVE main objects in FOUR columns by THREE rows. Each small component entirely isolated, legible depth and useful small rear/top contact inset where helpful. IDs full B02-DETAIL-001-D01 through D12 in numeric order. No empty cells, no duplicated objects counted as extra assets. Clean precise gold linework, no melty tendrils; patterned lattices consistent. Title B02-DETAIL-001. Footer \"Removable details / flat backs and join faces / proposed dimensions\".\n\nB02-DETAIL-001-D01 \u2014 Ivory geometric jali insert: proposed [1.8, 0.12, 2.4]m. Rectangular ivory geometric pierced lattice insert, fine repeating eight-point/petal geometry inspired by source bottom ivory lattice swatch. Actual open holes, planar back mounting rim. No solid glowing glass in lattice. Attachment: Flat rear or root socket to named host; contact and end profiles require model review.\n\nB02-DETAIL-001-D02 \u2014 Amber lilac portal glazing: proposed [3, 0.08, 7]m. Tall pointed glass insert for the upper part of portal: warm amber and faint lilac panes, gold branching fine lattice, pointed top. Do not use the main palace vivid blue stained star window. Glass only, thin perimeter frame; lower door stays open. Attachment: Flat rear or root socket to named host; contact and end profiles require model review.\n\nB02-DETAIL-001-D03 \u2014 Cusped arch surround: proposed [4, 0.25, 5.5]m. Single ivory-and-gold softly cusped pointed arch surround, arch band only with clear open centre, straight lower jamb mounts. Source arch proportions, no blocked inset backing. Attachment: Flat rear or root socket to named host; contact and end profiles require model review.\n\nB02-DETAIL-001-D04 \u2014 Straight cornice trim: proposed [3, 0.35, 0.45]m. Repeatable straight ivory layered cornice with two thin gold edge bands, subtle petal underside, planar end faces. NOT bent or disconnected pieces. Attachment: Flat rear or root socket to named host; contact and end profiles require model review.\n\nB02-DETAIL-001-D05 \u2014 Cornice corner return: proposed [1.2, 1.2, 0.45]m. True ninety-degree L cornice return, same0.35m projection and0.45m height as D04, ends cut square for joining; clear top inset of the L. Attachment: Flat rear or root socket to named host; contact and end profiles require model review.\n\nB02-DETAIL-001-D06 \u2014 Courtyard parapet panel: proposed [3, 0.25, 1.1]m. Straight pierced ivory parapet with gentle petal/diamond pattern, thin gold cap and bottom border, flat unobstructed end joins, no glued flowerbed. Attachment: Flat rear or root socket to named host; contact and end profiles require model review.\n\nB02-DETAIL-001-D07 \u2014 Parapet corner post: proposed [0.45, 0.45, 1.1]m. One square ivory parapet corner post with gold cap; two perpendicular flat rail attachment faces matching D06 top level. No giant finial or attached rails. Attachment: Flat rear or root socket to named host; contact and end profiles require model review.\n\nB02-DETAIL-001-D08 \u2014 Lotus spandrel applique: proposed [0.8, 0.08, 0.8]m. Flat backed gold-on-ivory stylised lotus blossom relief from arch/panel grammar, single symmetric fan of petals, shallow true relief, no fragmented gold tendrils. Attachment: Flat rear or root socket to named host; contact and end profiles require model review.\n\nB02-DETAIL-001-D09 \u2014 Drum arch window insert: proposed [1.5, 0.08, 3]m. Small narrow pointed drum window insert, pearl stone perimeter and pale sky/amber translucent panes with delicate gold cross divisions, clean curved perimeter if needed at modelling; no huge Gothic rosette. Attachment: Flat rear or root socket to named host; contact and end profiles require model review.\n\nB02-DETAIL-001-D10 \u2014 Small pavilion pinnacle: proposed [0.45, 0.45, 2]m. One slender gold pointed roof pinnacle on lotus cup, compact ivory base socket, no crescent; reuse for tiny peripheral domes, rather than multiplying new tower designs. Attachment: Flat rear or root socket to named host; contact and end profiles require model review.\n\nB02-DETAIL-001-D11 \u2014 Central crescent finial: proposed [1, 0.25, 3]m. One source central-dome crescent finial, thin gold upright rod, small stacked bead/lotus collar and single open crescent at top, crescent oriented sideways as reference. Flat socket root. No Christian cross or giant starburst. Attachment: Flat rear or root socket to named host; contact and end profiles require model review.\n\nB02-DETAIL-001-D12 \u2014 Minaret balcony frieze: proposed [2, 0.2, 0.6]m. One short curved ivory balcony fascia strip, fine gold mouldings and evenly repeated small scallop brackets, proposed2m arc length on2.1m radius; top end joins readable. No complete balcony ring, shaft or rail attached. Attachment: Flat rear or root socket to named host; contact and end profiles require model review.",
+  "review_notes": [
+    "Twelve labelled main groups appear in4columns by3rows. Revision removes rail end posts, removes the tiny dome under D10 and changes D08 rear view to a lotus silhouette. These improve part separation, without proving exact view parity.",
+    "D01 lattice remains an intricate illustrative pattern, not a validated seamless repeat. D08 front/back petals remain approximate; reconstruct a single outline for the actual mesh. Small D10 socket insets also need parity review.",
+    "D03 is a smaller cusped surround proposal, not a proven fit to the large arcade opening. D02 and D09 glazing must be resized from locked host apertures; maintain lower portal passage. D04/D05 and D06/D07 profile joins, D12 curvature, repeat motifs and attachment surfaces remain unverified."
+  ],
+  "manual_inventory_review": {
+    "expected_main_groups": 12,
+    "all_main_groups_and_labels_present": true,
+    "method": "Individual visual inspection of generated images"
+  }
+}

@@ -1,0 +1,170 @@
+{
+  "sheet_id": "B02-ROOF-001",
+  "name": "Moon Water Palace \u2014 dome and minaret sections",
+  "prompt": "Edit ONLY the upper-right B02-ROOF-001-S02 DOME DRUM RING cell in this supplied sheet. Preserve all other three cells, their exact forms, labels and dimensions unchanged. Make drum ring a truly hollow UNCAPPED open-ended cylinder, no ceiling disk across interior. All pointed arch windows must be visibly OPEN holes through its thin marble wall, with paper-coloured light or inner wall showing beyond, no blue/lilac panes or opaque infill. Keep original pearl marble, gold trim, eighteen metre diameter, eight metre height and scalloped crown. Revise all S02 small views consistently; underside shows open annular wall with open centre, not a top plate. Keep label B02-ROOF-001-S02, show open aperture in section or underside inset. Do not add new objects, duplicate cells or change other modules. These are host apertures that separate D09 window inserts will later occupy.",
+  "source_reference_id": "SRC-LOC-B02-GEN-05",
+  "source_reference_file": "world-layout/location-audit/source/B02-GEN-05.png",
+  "source_reference_sha256": "67e54451047162c59d10206e29194abad9178015581c5aa52d3bdc2e701e1eb2",
+  "outputs": [
+    {
+      "file": "world-location-kits/moon-water-palace/B02-ROOF-001/B02-ROOF-001.png",
+      "sha256": "d103c400a7961f13fa18c44f627e58a7871d0ba13d56278b1da5f9c64a7f9753",
+      "original_file": "/workspace/generated_images/exec-64a4b384-3615-427f-b26f-c458bf1093c5.png",
+      "actual_input_file": "world-location-kits/moon-water-palace/B02-ROOF-001/B02-ROOF-001-R01.png",
+      "actual_input_sha256": "293ec9f5224b79e715332c6a599e87ab68f512b7d5728f12765bb7d10a23b236",
+      "attempt": 2,
+      "generator": "image_gen.imagegen"
+    }
+  ],
+  "previous_attempts": [
+    {
+      "file": "world-location-kits/moon-water-palace/B02-ROOF-001/B02-ROOF-001-R01.png",
+      "sha256": "293ec9f5224b79e715332c6a599e87ab68f512b7d5728f12765bb7d10a23b236",
+      "original_file": "/workspace/generated_images/exec-549038e3-8147-4180-96bd-71de5829c026.png",
+      "actual_input_file": "world-layout/location-audit/source/B02-GEN-05.png",
+      "actual_input_sha256": "67e54451047162c59d10206e29194abad9178015581c5aa52d3bdc2e701e1eb2",
+      "attempt": 1,
+      "generator": "image_gen.imagegen",
+      "rejection_reason": "Drum window apertures appear filled with glass/stone and underside suggests a capped ring; need open host apertures and uncapped drum so D09 remains separate."
+    }
+  ],
+  "models_generated": 0,
+  "physical_join_fit_verified": false,
+  "view_geometry_parity_verified": false,
+  "review_status": "pending-user-reference-and-model-review",
+  "parts": [
+    {
+      "asset_id": "B02-ROOF-001-S01",
+      "name": "Pearl onion dome shell",
+      "dimensions_m_proposed": [
+        18,
+        18,
+        18
+      ],
+      "construction": "One complete pearl ivory onion dome with full eighteen metre basal rim and eighteen metre rise, smooth lobed bulbous silhouette like reference central dome, restrained blush/cream marble veining, longitudinal fine gold ribs rising to small gold tip socket. Hollow underside and flat circular base lip visible in underside inset. No purple dome, no enclosed hall attached, no crescent finial attached: detail D11 installs separately. Main dome form can be uniformly scaled for smaller pavilions after review.",
+      "attachment_face": "Circular base lip to S02 drum; top socket for C-D11",
+      "semantic_front": "Facade outwards, +Y; vertical +Z; rear contact opposite front",
+      "function": "Reusable Moon Water Palace structure",
+      "kind": "building-module",
+      "target_polycount_proposed": 10000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B02"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B02-ROOF-001-S01__pearl-onion-dome-shell__v001.glb",
+      "design_basis": "GEN-05 visible motif; isolated construction and metric dimensions proposed"
+    },
+    {
+      "asset_id": "B02-ROOF-001-S02",
+      "name": "Dome drum ring",
+      "dimensions_m_proposed": [
+        18,
+        18,
+        8
+      ],
+      "construction": "One full round ivory drum eighteen metres diameter eight metres high, repeated small pointed arched window apertures around perimeter, delicate source gold banding and scalloped lotus-inspired upper crown edge. Hollow circular interior, genuinely open window apertures ready for separate C-D09 inserts. Same18m upper lip as dome shell. No roof on drum. Do not attach solid support base filling the hollow centre.",
+      "attachment_face": "Circular underside to procedural hall roof; upper rim to B-S01",
+      "semantic_front": "Facade outwards, +Y; vertical +Z; rear contact opposite front",
+      "function": "Reusable Moon Water Palace structure",
+      "kind": "building-module",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B02"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B02-ROOF-001-S02__dome-drum-ring__v001.glb",
+      "design_basis": "GEN-05 visible motif; isolated construction and metric dimensions proposed"
+    },
+    {
+      "asset_id": "B02-ROOF-001-S03",
+      "name": "Repeat minaret shaft",
+      "dimensions_m_proposed": [
+        2.8,
+        2.8,
+        12
+      ],
+      "construction": "One tall slim twelve-metre axial repeat shaft, round-to-eight-faceted pearl stone cylinder diameter2.8m, restrained recessed pointed vertical panels, slim gold collars only at upper and lower joining rims. Flat matching circular upper/lower interfaces; NOT a whole tower and NOT a stepped fat main-palace Gothic tower. These segments repeat to build tall corner minarets. Narrow window/recess stripe, no balcony ring glued midspan. Hollow section inset; topology and spiral stair interior unresolved.",
+      "attachment_face": "Matching lower/upper circular rims dia2.8; repeat vertically",
+      "semantic_front": "Facade outwards, +Y; vertical +Z; rear contact opposite front",
+      "function": "Reusable Moon Water Palace structure",
+      "kind": "building-module",
+      "target_polycount_proposed": 5000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B02"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B02-ROOF-001-S03__repeat-minaret-shaft__v001.glb",
+      "design_basis": "GEN-05 visible motif; isolated construction and metric dimensions proposed"
+    },
+    {
+      "asset_id": "B02-ROOF-001-S04",
+      "name": "Open minaret crown",
+      "dimensions_m_proposed": [
+        4.2,
+        4.2,
+        9
+      ],
+      "construction": "One nine-metre tall slender crown top module on2.8m shaft interface: small circular projecting balcony maxdiameter4.2m, delicate open arched column lantern with clearly visible open air between slender columns, miniature PEARL onion dome and restrained gold tapering finial. No opaque wall across open lantern. Same Moon Palace minaret silhouette. Show underside central2.8m interface and section of balcony bracket attachment.",
+      "attachment_face": "Circular lower2.8m contact to B-S03; balcony brackets supported by shaft",
+      "semantic_front": "Facade outwards, +Y; vertical +Z; rear contact opposite front",
+      "function": "Reusable Moon Water Palace structure",
+      "kind": "building-module",
+      "target_polycount_proposed": 7000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "B02"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "B02-ROOF-001-S04__open-minaret-crown__v001.glb",
+      "design_basis": "GEN-05 visible motif; isolated construction and metric dimensions proposed"
+    }
+  ],
+  "revision_input_file": "world-location-kits/moon-water-palace/B02-ROOF-001/B02-ROOF-001-R01.png",
+  "revision_input_sha256": "293ec9f5224b79e715332c6a599e87ab68f512b7d5728f12765bb7d10a23b236",
+  "original_prompt": "Create ONE clean labelled modular game architecture reference sheet on plain light ivory paper, crisp detailed studio illustration, soft even lighting, no landscape or complete building scene, no people, no perspective distortion. Use ONLY the single supplied B02 source panel as visible architectural authority. Retain its pearl/ivory marble, restrained blush veins, gold filigree, pale amber/lilac and sky glazing, WHITE PEARL onion roofs and slender minarets. No purple roof, no giant main-palace rose Gothic windows. Isolate full uncropped components with space between cells. Show real depth and matching unobstructed joining faces. Names and FULL IDs below each item, dimensions described as PROPOSED. Dimensions below are width x depth x height, not existing measured geometry. Each cell independent drawing scale. Do not add plants, water, lights, furnishings or ornament props not requested. Four LARGE 2x2 cells. Each has large three-quarter view, small side/front elevation and underside or sectional detail. Exactly FOUR main modules; dome rim and drum both18m; repeat shaft mating faces both2.8m. Hollow/underside diagrams show only that component. Title B02-ROOF-001. Footer \"Roof and tower sections / source-inspired profiles / joins pending\".\n\nB02-ROOF-001-S01 \u2014 Pearl onion dome shell: proposed [18, 18, 18]m. One complete pearl ivory onion dome with full eighteen metre basal rim and eighteen metre rise, smooth lobed bulbous silhouette like reference central dome, restrained blush/cream marble veining, longitudinal fine gold ribs rising to small gold tip socket. Hollow underside and flat circular base lip visible in underside inset. No purple dome, no enclosed hall attached, no crescent finial attached: detail D11 installs separately. Main dome form can be uniformly scaled for smaller pavilions after review. Attachment: Circular base lip to S02 drum; top socket for C-D11.\n\nB02-ROOF-001-S02 \u2014 Dome drum ring: proposed [18, 18, 8]m. One full round ivory drum eighteen metres diameter eight metres high, repeated small pointed arched window apertures around perimeter, delicate source gold banding and scalloped lotus-inspired upper crown edge. Hollow circular interior, genuinely open window apertures ready for separate C-D09 inserts. Same18m upper lip as dome shell. No roof on drum. Do not attach solid support base filling the hollow centre. Attachment: Circular underside to procedural hall roof; upper rim to B-S01.\n\nB02-ROOF-001-S03 \u2014 Repeat minaret shaft: proposed [2.8, 2.8, 12]m. One tall slim twelve-metre axial repeat shaft, round-to-eight-faceted pearl stone cylinder diameter2.8m, restrained recessed pointed vertical panels, slim gold collars only at upper and lower joining rims. Flat matching circular upper/lower interfaces; NOT a whole tower and NOT a stepped fat main-palace Gothic tower. These segments repeat to build tall corner minarets. Narrow window/recess stripe, no balcony ring glued midspan. Hollow section inset; topology and spiral stair interior unresolved. Attachment: Matching lower/upper circular rims dia2.8; repeat vertically.\n\nB02-ROOF-001-S04 \u2014 Open minaret crown: proposed [4.2, 4.2, 9]m. One nine-metre tall slender crown top module on2.8m shaft interface: small circular projecting balcony maxdiameter4.2m, delicate open arched column lantern with clearly visible open air between slender columns, miniature PEARL onion dome and restrained gold tapering finial. No opaque wall across open lantern. Same Moon Palace minaret silhouette. Show underside central2.8m interface and section of balcony bracket attachment. Attachment: Circular lower2.8m contact to B-S03; balcony brackets supported by shaft.",
+  "review_notes": [
+    "Four labelled roof/tower sections are present: pearl onion shell, drum ring, repeat shaft and open crown. Main dome has a hollow underside and tip socket; crown shows open column-supported lantern. Revision removes opaque drum window infill and apparent cap.",
+    "Eighteen-metre dome/drum interfaces and2.8m shaft/crown interfaces match numerically. They are proposed nominal dimensions, not evaluated mesh diameters. Crown brackets, dome wall thickness, lantern interior and circular seam profiles are not verified.",
+    "Small front/side/underside/section insets are explanatory drawings, not true projections of one model. Drum window sizes differ visually from the standalone D09 proposal; reconcile aperture and insert together. Main roof fringe and drum crown need one shared seat detail so stacked decorative rims do not collide."
+  ],
+  "manual_inventory_review": {
+    "expected_main_groups": 4,
+    "all_main_groups_and_labels_present": true,
+    "method": "Individual visual inspection of generated images"
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "location_id": "B02",
+  "dedicated_cap": 3,
+  "sheets": [
+    {
+      "sheet_id": "B02-STRUCT-001",
+      "name": "Moon Water Palace \u2014 arcade, portal, corner and ghat sections",
+      "components": 4
+    },
+    {
+      "sheet_id": "B02-ROOF-001",
+      "name": "Moon Water Palace \u2014 dome and minaret sections",
+      "components": 4
+    },
+    {
+      "sheet_id": "B02-DETAIL-001",
+      "name": "Moon Water Palace \u2014 architectural detail kit",
+      "components": 12
+    }
+  ],
+  "status": "three-sheets-generated-pending-reference-review",
+  "only_one_reference_image_per_call": true,
+  "source_reference_file": "world-layout/location-audit/source/B02-GEN-05.png",
+  "source_reference_sha256": "67e54451047162c59d10206e29194abad9178015581c5aa52d3bdc2e701e1eb2",
+  "structural_sections": 8,
+  "detail_parts": 12,
+  "metrics_proposed": true,
+  "build_or_paid_model_generation_authorized": false,
+  "generated_selected_sheets": 3,
+  "component_targets": 20,
+  "generated_models": 0,
+  "review_notes": {
+    "B02-STRUCT-001": [
+      "Four labelled groups and their main/front/plan/side views are present. Arcade and corner arches visibly open; portal lower passage remains clear. Pearl/ivory hosts, gold mouldings and pale blue/amber accents derive from GEN-05, with extra resolved ornament proposed.",
+      "All metrics and hidden depth are working proposals. The depicted stairs do not prove eight identical risers;1.2m is the stair floor rise, excluding raised cheek/parapet ornament. Cornices, pier caps and inset elevations are not identical measured projections.",
+      "A repeated arcade must share one boundary pier, avoiding doubled columns or overlapping floors. Model the shell and cut openings first; retain trims as removable groups. Arcade roof/depth closure, exact L-corner footprint, stairs and hall rear joins require model review."
+    ],
+    "B02-ROOF-001": [
+      "Four labelled roof/tower sections are present: pearl onion shell, drum ring, repeat shaft and open crown. Main dome has a hollow underside and tip socket; crown shows open column-supported lantern. Revision removes opaque drum window infill and apparent cap.",
+      "Eighteen-metre dome/drum interfaces and2.8m shaft/crown interfaces match numerically. They are proposed nominal dimensions, not evaluated mesh diameters. Crown brackets, dome wall thickness, lantern interior and circular seam profiles are not verified.",
+      "Small front/side/underside/section insets are explanatory drawings, not true projections of one model. Drum window sizes differ visually from the standalone D09 proposal; reconcile aperture and insert together. Main roof fringe and drum crown need one shared seat detail so stacked decorative rims do not collide."
+    ],
+    "B02-DETAIL-001": [
+      "Twelve labelled main groups appear in4columns by3rows. Revision removes rail end posts, removes the tiny dome under D10 and changes D08 rear view to a lotus silhouette. These improve part separation, without proving exact view parity.",
+      "D01 lattice remains an intricate illustrative pattern, not a validated seamless repeat. D08 front/back petals remain approximate; reconstruct a single outline for the actual mesh. Small D10 socket insets also need parity review.",
+      "D03 is a smaller cusped surround proposal, not a proven fit to the large arcade opening. D02 and D09 glazing must be resized from locked host apertures; maintain lower portal passage. D04/D05 and D06/D07 profile joins, D12 curvature, repeat motifs and attachment surfaces remain unverified."
+    ]
+  }
+}

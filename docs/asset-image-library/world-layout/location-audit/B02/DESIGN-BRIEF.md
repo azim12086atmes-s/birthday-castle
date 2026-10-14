@@ -36,3 +36,7 @@ Source already supplies dome, arch, lattice and lotus motifs; missing repeat arc
 Dedicated building allowance: **3 sheets**, including existing selection where applicable. This is not a request to generate that many images automatically.
 
 Generate only the missing forms after checking originals and indexed component families. Structure sheets use 3–4 major sections; small-detail sheets use 10–20 readable items only when that many distinct parts are useful. Anatomy and large living forms can use fewer subjects with views. No complete model, route, UV or rig is certified by the source images.
+
+## Produced component references
+
+[Three sheets and 20 IDs](../../../world-location-kits/moon-water-palace/README.md) now cover eight isolated structures and twelve details. B02 building allowance 3/3; all models, aperture/trim fits and overall assembly scale remain pending. Existing plant/furnishing references are reused. Fish/ducks await the shared T02 freshwater kit. Two superseded drafts retained.

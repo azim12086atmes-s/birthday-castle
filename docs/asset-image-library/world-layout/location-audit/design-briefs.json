@@ -47,7 +47,14 @@
       "dedicated_building_sheet_cap": 3,
       "terrain_region_id": "T02",
       "measured_layout_or_source_back_geometry_verified": false,
-      "generation_rule": "Useexistingoriginalsandregisteredrefsfirst; newimageonlyfor a specific missingformorconstructionview. Reserve withinlocal/globalcaps. Hiddenbacks/layoutchoiceslabelledproposed."
+      "generation_rule": "Useexistingoriginalsandregisteredrefsfirst; newimageonlyfor a specific missingformorconstructionview. Reserve withinlocal/globalcaps. Hiddenbacks/layoutchoiceslabelledproposed.",
+      "generated_reference_sheet_ids": [
+        "B02-STRUCT-001",
+        "B02-ROOF-001",
+        "B02-DETAIL-001"
+      ],
+      "component_reference_index": "world-location-kits/moon-water-palace/components.csv",
+      "generated_reference_status": "3source-derived sheets /20targets; source geometry, common assembly scale and all3D pending"
     },
     {
       "location_id": "B03",

@@ -86,3 +86,7 @@ WLD-MAP-002 replaces the selected world map and adds F01â€“F03 districts, FC01â€
 ## Ecology and location audit
 
 [20flora/fauna component IDs and proposed model filenames](world-location-kits/west-lantern-forest/ecology/components.csv) are indexed from threeboards. Allmodels/rigs/animations remainunbuilt. [34written locationbriefs](world-layout/location-audit/README.md) and60exactsourcecrops map futurework, notadditionalmesh targets. Sharedgeneralwater/rock/nature refs arecatalogued separately.
+
+## Moon Water Palace
+
+[20 named component targets](world-location-kits/moon-water-palace/components.csv) from three sheets are unregistered as3D; proposed interfaces and unresolved fitting work are documented. Whole-sheet generation does not establish one separated mesh per component. Use full IDs and suggested filenames when importing externally generated parts.

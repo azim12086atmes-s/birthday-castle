@@ -1,8 +1,8 @@
 {
   "date": "2026-10-13",
-  "distinct_image_count": 807,
+  "distinct_image_count": 812,
   "source_file_count": 969,
-  "total_bytes": 742884109,
+  "total_bytes": 753940349,
   "categories": {
     "additional-generated-studies": 33,
     "component-development-studies": 3,
@@ -45,6 +45,8 @@
     "terminal-tower-source-sections": 4,
     "vector-drawings": 130,
     "wishing-original-source-panels": 8,
+    "world-building-reference-kits": 3,
+    "world-building-superseded-drafts": 2,
     "world-ecology-reference-kits": 3,
     "world-ecology-superseded-drafts": 1,
     "world-layout-superseded-drafts": 2,
@@ -16304,6 +16306,132 @@
       "reference_role": "direct-original-source-panel",
       "design_status": "Proposed reference; no measured geometry, rig or playable layout approval",
       "review_status": "source-crop-preserved; individually-viewed-in-this-pass"
+    },
+    {
+      "id": "B02-STRUCT-001",
+      "title": "Moon Water Palace \u2014 arcade, portal, corner and ghat sections",
+      "label": "B02-STRUCT-001 \u2014 Moon Water Palace \u2014 arcade, portal, corner and ghat sections",
+      "category": "world-building-reference-kits",
+      "file": "world-location-kits/moon-water-palace/B02-STRUCT-001/B02-STRUCT-001.png",
+      "sha256": "9b0215d11d52b1ada02e4f26b28691a050ce9cfa0e60d4a297d8704b9938ee29",
+      "bytes": 2176387,
+      "source_aliases": [
+        "/workspace/generated_images/exec-ff9df2da-718f-407c-837a-4c054d1e5dc9.png"
+      ],
+      "alias_ids": [],
+      "component_ids": [
+        "B02-STRUCT-001-S01",
+        "B02-STRUCT-001-S02",
+        "B02-STRUCT-001-S03",
+        "B02-STRUCT-001-S04"
+      ],
+      "related_image_ids": [
+        "SRC-LOC-B02-GEN-05",
+        "GEN-05"
+      ],
+      "reference_role": "building-component-reference",
+      "design_status": "GEN-05-derived component proposal; unseen backs and dimensions inferred; no geometry approval",
+      "review_status": "pending-user-reference-review"
+    },
+    {
+      "id": "B02-ROOF-001",
+      "title": "Moon Water Palace \u2014 dome and minaret sections",
+      "label": "B02-ROOF-001 \u2014 Moon Water Palace \u2014 dome and minaret sections",
+      "category": "world-building-reference-kits",
+      "file": "world-location-kits/moon-water-palace/B02-ROOF-001/B02-ROOF-001.png",
+      "sha256": "d103c400a7961f13fa18c44f627e58a7871d0ba13d56278b1da5f9c64a7f9753",
+      "bytes": 2305295,
+      "source_aliases": [
+        "/workspace/generated_images/exec-64a4b384-3615-427f-b26f-c458bf1093c5.png"
+      ],
+      "alias_ids": [],
+      "component_ids": [
+        "B02-ROOF-001-S01",
+        "B02-ROOF-001-S02",
+        "B02-ROOF-001-S03",
+        "B02-ROOF-001-S04"
+      ],
+      "related_image_ids": [
+        "SRC-LOC-B02-GEN-05",
+        "GEN-05"
+      ],
+      "reference_role": "building-component-reference",
+      "design_status": "GEN-05-derived component proposal; unseen backs and dimensions inferred; no geometry approval",
+      "review_status": "pending-user-reference-review"
+    },
+    {
+      "id": "B02-ROOF-001-R01",
+      "title": "Moon Water Palace \u2014 dome and minaret sections \u2014 superseded construction draft",
+      "label": "B02-ROOF-001-R01 \u2014 Moon Water Palace \u2014 dome and minaret sections \u2014 superseded construction draft",
+      "category": "world-building-superseded-drafts",
+      "file": "world-location-kits/moon-water-palace/B02-ROOF-001/B02-ROOF-001-R01.png",
+      "sha256": "293ec9f5224b79e715332c6a599e87ab68f512b7d5728f12765bb7d10a23b236",
+      "bytes": 2450294,
+      "source_aliases": [
+        "/workspace/generated_images/exec-549038e3-8147-4180-96bd-71de5829c026.png"
+      ],
+      "alias_ids": [],
+      "component_ids": [],
+      "related_image_ids": [
+        "B02-ROOF-001"
+      ],
+      "reference_role": "superseded-building-reference",
+      "design_status": "GEN-05-derived component proposal; unseen backs and dimensions inferred; no geometry approval",
+      "review_status": "rejected-preserved"
+    },
+    {
+      "id": "B02-DETAIL-001",
+      "title": "Moon Water Palace \u2014 architectural detail kit",
+      "label": "B02-DETAIL-001 \u2014 Moon Water Palace \u2014 architectural detail kit",
+      "category": "world-building-reference-kits",
+      "file": "world-location-kits/moon-water-palace/B02-DETAIL-001/B02-DETAIL-001.png",
+      "sha256": "c1ae8c9580a619dbf430745fa27f6e08015daeb90b6a639baaef5c9797abde92",
+      "bytes": 1978394,
+      "source_aliases": [
+        "/workspace/generated_images/exec-5ca139d4-113a-44cb-9cb9-07428583c9f6.png"
+      ],
+      "alias_ids": [],
+      "component_ids": [
+        "B02-DETAIL-001-D01",
+        "B02-DETAIL-001-D02",
+        "B02-DETAIL-001-D03",
+        "B02-DETAIL-001-D04",
+        "B02-DETAIL-001-D05",
+        "B02-DETAIL-001-D06",
+        "B02-DETAIL-001-D07",
+        "B02-DETAIL-001-D08",
+        "B02-DETAIL-001-D09",
+        "B02-DETAIL-001-D10",
+        "B02-DETAIL-001-D11",
+        "B02-DETAIL-001-D12"
+      ],
+      "related_image_ids": [
+        "SRC-LOC-B02-GEN-05",
+        "GEN-05"
+      ],
+      "reference_role": "building-component-reference",
+      "design_status": "GEN-05-derived component proposal; unseen backs and dimensions inferred; no geometry approval",
+      "review_status": "pending-user-reference-review"
+    },
+    {
+      "id": "B02-DETAIL-001-R01",
+      "title": "Moon Water Palace \u2014 architectural detail kit \u2014 superseded construction draft",
+      "label": "B02-DETAIL-001-R01 \u2014 Moon Water Palace \u2014 architectural detail kit \u2014 superseded construction draft",
+      "category": "world-building-superseded-drafts",
+      "file": "world-location-kits/moon-water-palace/B02-DETAIL-001/B02-DETAIL-001-R01.png",
+      "sha256": "6aba283096d02fc6d49ea99188024ce4770f7fa5e2ed563f4eed33f4172eb509",
+      "bytes": 2145870,
+      "source_aliases": [
+        "/workspace/generated_images/exec-5ad81e4c-111e-4a7a-93d6-783c98a0722a.png"
+      ],
+      "alias_ids": [],
+      "component_ids": [],
+      "related_image_ids": [
+        "B02-DETAIL-001"
+      ],
+      "reference_role": "superseded-building-reference",
+      "design_status": "GEN-05-derived component proposal; unseen backs and dimensions inferred; no geometry approval",
+      "review_status": "rejected-preserved"
     }
   ],
   "label_schema_version": 1
