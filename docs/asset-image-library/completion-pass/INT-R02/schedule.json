@@ -7,7 +7,7 @@
   "source_reference_id": "GEN-24",
   "source_reference_file": "images/illustrated-boards/GEN-24.png",
   "source_reference_sha256": "deb78cfce6dab5c31d9b3519d3bc01a07e58bba453b013fcdb76bd2e8be3f349",
-  "prompt": "Create ONE clean detailed GAME ASSET REFERENCE SHEET, NOT Blender or a3Dmodel. Plain light ivory studio background, soft even light, full uncropped separate objects, readable thickness, precise non-melting forms. FULL IDs and names outside silhouettes, dimensions marked PROPOSED. Each cell independent illustration scale. No environment scenery, humans, extra unlabeled objects, watermark or whole-palace redesign. Use ONLY the single supplied source image for visible style/material/form authority; infer missing backs and assembly interfaces conservatively. Source illustration motifs are inspiration, not recovered measured geometry. One consistent furnished room viewed in four labelled directions: arrival/front, opposite/rear, side and ceiling/section. Same wall/window/door arrangement and furnishings across views. Show the ceiling structure, circulation and source-compatible celebration dressing. This is ONE room reference, not four new objects. Full room shell bounds and a small top plan proposed; warm detail at human furniture scale, adequate path clearances. Title \"INT-R02 \u2014 Princess suite \u2014 coordinated interior views\". Footer \"Proposed construction / source-compatible references / mesh joins and views unverified\".\n\nPurpose/gap: Reserved princess-suite room reference missing; one coherent design overview\n\nINT-R02-S01 \u2014 Princess suite room shell. Dimensions W,D,H [24, 18, 12]m proposed. Four views of same source-compatible princess bedroom and dressing alcove: rose/ivory marble, gold framing, blue/rose windows, a human-scale canopy bed cluster, cupboards, carpets, lamps, curtains, birthday flowers and memory display. Source furniture vocabulary, inferred room layout. Keep meaningful open circulation and stable openings across views.",
+  "prompt": "Create ONE richly detailed architectural REFERENCE SHEET titled INT-R02 \u2014 PRINCESS SUITE / COORDINATED INTERIOR VIEWS. Four large views in a 2x2 grid and one small top plan in the lower margin. Only ONE room and ONE bed across all views, not four different room designs. Use the supplied GEN-24 furniture sheet as the material, gold carving and textile style authority. No bedroom is depicted in that source: this ROOM LAYOUT IS PROPOSED. Preserve ivory and rose-veined marble, gilt floral/star tracery, cobalt and blush glass, dusty pink textiles, indigo valances. Furniture remains HUMAN scale: bed mattress 2.0 x 2.2m, table 0.75m high, chairs 0.48m seat height. No human figures.\n\nFIXED PROPOSED PLAN, SAME IN EVERY VIEW: 24m east-west by 18m north-south, ceiling apex 12m. North is top of small plan. Exactly one pink canopy bed on the north wall, headboard north, foot toward south, centre x0,y6.5. Two bedside cabinets. Dressing cupboards and moon mirror form a west/northwest alcove. Exactly THREE tall pointed window bays on EAST wall at y=-5,0,+5; gold mullions, cobalt/rose glass. SOUTH wall has exactly one central double entry door. Southwest corner has the source chaise, one reading chair and tea table. Southeast corner has a memory display console with closed gift boxes and a few framed keepsakes. Repeat none of these as extra furniture in other corners. One chandelier over the centre. Three shallow pointed ceiling bays run north-south with indigo star infill, ivory ribs and gold bosses. Lower cornice at 4.5m; tall clerestory above. Doors and cupboards are reachable by a clear connected aisle at least1.8m wide. No bath, kitchen, music or service facilities.\n\nVIEW A: from just inside SOUTH entry looking NORTH, bed clearly visible, east windows on right, west dressing left. VIEW B: from NORTH near bed foot looking SOUTH, double entry centred, east windows on left, reading and memory zones at far corners. VIEW C: from WEST looking EAST, exactly three east windows across opposite wall, north bed at left, south entry to right. VIEW D: high corner CUTAWAY looking down into the same room, one half of ceiling lifted and underside shown above the room; reveal ceiling ribs, all four walls and circulation. Small top plan labelled N/E/S/W must preserve the fixed counts and positions. Do not mirror the room, add extra doors or multiply beds between views.\n\nMake it feel inhabited and celebratory through REUSABLE dressing, not empty vast floors: layered pink/indigo rugs near each seating/bed zone, rose garlands over door and bed cornice, gilt sconces, bows on two cabinet handles, small floral urns, lanterns, star pennants and neatly grouped gifts/memory objects. Keep eye-level carved wall panels and curtain tiebacks readable. Full height architecture remains visible, furniture is not enlarged to fill it. Neutral ivory sheet background, crisp labels outside art. Label the single room asset INT-R02-S01; view letters are views, not new asset IDs. Footer: Concept reference / proposed layout / view consistency and geometry require review.",
   "parts": [
     {
       "asset_id": "INT-R02-S01",
@@ -40,12 +40,86 @@
       "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
     }
   ],
-  "outputs": [],
+  "outputs": [
+    {
+      "file": "completion-pass/INT-R02/INT-R02.png",
+      "sha256": "9450d3e2c22ff804f7264c0e6481f45be73ee26e9edbf1dbc123a33222d66eb3",
+      "original_file": "/workspace/generated_images/exec-5a00a4bc-3d29-4346-9d06-cb10f666e89e.png",
+      "actual_input_file": "images/illustrated-boards/GEN-24.png",
+      "actual_input_sha256": "deb78cfce6dab5c31d9b3519d3bc01a07e58bba453b013fcdb76bd2e8be3f349",
+      "attempt": 1,
+      "generator": "image_gen.imagegen"
+    }
+  ],
   "previous_attempts": [],
   "models_generated": 0,
   "physical_join_fit_verified": false,
   "view_geometry_parity_verified": false,
-  "review_status": "planned-after-gap-audit",
+  "review_status": "reference-with-opposite-view-furniture-placement-discrepancy",
   "gap": "Reserved princess-suite room reference missing; one coherent design overview",
-  "mode": "room"
+  "mode": "room",
+  "source_interpretation": "GEN-24 depicts furniture, not a measured suite; room arrangement below is an explicit new proposal.",
+  "proposed_layout": {
+    "units": "metres; concept coordinates, not recovered source measurements",
+    "bounds": {
+      "x": [
+        -12,
+        12
+      ],
+      "y": [
+        -9,
+        9
+      ],
+      "z": [
+        0,
+        12
+      ]
+    },
+    "north_bed_centre": [
+      0,
+      6.5
+    ],
+    "south_entry_centre": [
+      0,
+      -9
+    ],
+    "east_window_centres": [
+      [
+        12,
+        -5
+      ],
+      [
+        12,
+        0
+      ],
+      [
+        12,
+        5
+      ]
+    ],
+    "west_dressing_zone": [
+      -10,
+      4
+    ],
+    "southwest_reading_zone": [
+      -7,
+      -5
+    ],
+    "southeast_memory_display_zone": [
+      7,
+      -5
+    ],
+    "main_clear_aisle_width": 1.8,
+    "fixed_counts": {
+      "bed": 1,
+      "east_window_bays": 3,
+      "entry_door": 1,
+      "chandelier": 1
+    }
+  },
+  "visual_review_notes": [
+    "All four requested room views, one bed per view, three east window bays, south entry, dressing alcove and ceiling section are present. Materials follow GEN-24 furniture vocabulary; room layout itself is new.",
+    "Plan, arrival view and cutaway place reading southwest and memory display southeast. Opposite view B appears to swap these two corner furniture groups. View B is atmosphere reference only; saved proposed_layout and the top plan control these corner positions.",
+    "Printed fixed-layout labels are generator output, not a verified geometric guarantee. Actual furniture dimensions, room openings and ceiling bay correspondence must be enforced in the model."
+  ]
 }

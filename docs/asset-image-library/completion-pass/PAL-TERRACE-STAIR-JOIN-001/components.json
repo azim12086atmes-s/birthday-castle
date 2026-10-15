@@ -28,7 +28,17 @@
       "model_sha256": "",
       "review_status": "pending-reference-review",
       "suggested_model_filename": "PAL-TERRACE-STAIR-JOIN-001-S01__straight-wing-stair-landing-pair__v001.glb",
-      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed",
+      "component_family": "Original palace \u2014 stair landing and level connections",
+      "parent_asset_family": "PAL-TERRACE-STAIR-JOIN-001",
+      "reference_image_id": "PAL-TERRACE-STAIR-JOIN-001",
+      "reference_file": "completion-pass/PAL-TERRACE-STAIR-JOIN-001/PAL-TERRACE-STAIR-JOIN-001.png",
+      "reference_sha256": "c7d49cd3e13d33be4feeaeb2ad74a74c3bdec035a0154fc62110a10ca0f121fa",
+      "source_reference_id": "GEN-16",
+      "source_reference_file": "images/illustrated-boards/GEN-16.png",
+      "source_reference_sha256": "7bd2e64078fb526204113287b3fe012821f10e3c1f02b9005d8b56bd58e56f4f",
+      "notes": " Source backs, dimensions, repeat patterns, inter-view parity and physical attachment remain unverified. Whole-sheet generation does not prove individual meshes are separable.",
+      "geometry_review_status": "unverified"
     },
     {
       "asset_id": "PAL-TERRACE-STAIR-JOIN-001-S02",
@@ -58,7 +68,17 @@
       "model_sha256": "",
       "review_status": "pending-reference-review",
       "suggested_model_filename": "PAL-TERRACE-STAIR-JOIN-001-S02__quarter-turn-stair-landing__v001.glb",
-      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed",
+      "component_family": "Original palace \u2014 stair landing and level connections",
+      "parent_asset_family": "PAL-TERRACE-STAIR-JOIN-001",
+      "reference_image_id": "PAL-TERRACE-STAIR-JOIN-001",
+      "reference_file": "completion-pass/PAL-TERRACE-STAIR-JOIN-001/PAL-TERRACE-STAIR-JOIN-001.png",
+      "reference_sha256": "c7d49cd3e13d33be4feeaeb2ad74a74c3bdec035a0154fc62110a10ca0f121fa",
+      "source_reference_id": "GEN-16",
+      "source_reference_file": "images/illustrated-boards/GEN-16.png",
+      "source_reference_sha256": "7bd2e64078fb526204113287b3fe012821f10e3c1f02b9005d8b56bd58e56f4f",
+      "notes": " Source backs, dimensions, repeat patterns, inter-view parity and physical attachment remain unverified. Whole-sheet generation does not prove individual meshes are separable.",
+      "geometry_review_status": "unverified"
     },
     {
       "asset_id": "PAL-TERRACE-STAIR-JOIN-001-S03",
@@ -88,7 +108,17 @@
       "model_sha256": "",
       "review_status": "pending-reference-review",
       "suggested_model_filename": "PAL-TERRACE-STAIR-JOIN-001-S03__split-terrace-stair-return__v001.glb",
-      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed",
+      "component_family": "Original palace \u2014 stair landing and level connections",
+      "parent_asset_family": "PAL-TERRACE-STAIR-JOIN-001",
+      "reference_image_id": "PAL-TERRACE-STAIR-JOIN-001",
+      "reference_file": "completion-pass/PAL-TERRACE-STAIR-JOIN-001/PAL-TERRACE-STAIR-JOIN-001.png",
+      "reference_sha256": "c7d49cd3e13d33be4feeaeb2ad74a74c3bdec035a0154fc62110a10ca0f121fa",
+      "source_reference_id": "GEN-16",
+      "source_reference_file": "images/illustrated-boards/GEN-16.png",
+      "source_reference_sha256": "7bd2e64078fb526204113287b3fe012821f10e3c1f02b9005d8b56bd58e56f4f",
+      "notes": " Source backs, dimensions, repeat patterns, inter-view parity and physical attachment remain unverified. Whole-sheet generation does not prove individual meshes are separable.",
+      "geometry_review_status": "unverified"
     },
     {
       "asset_id": "PAL-TERRACE-STAIR-JOIN-001-S04",
@@ -118,7 +148,17 @@
       "model_sha256": "",
       "review_status": "pending-reference-review",
       "suggested_model_filename": "PAL-TERRACE-STAIR-JOIN-001-S04__stair-to-curved-terrace-threshold__v001.glb",
-      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed",
+      "component_family": "Original palace \u2014 stair landing and level connections",
+      "parent_asset_family": "PAL-TERRACE-STAIR-JOIN-001",
+      "reference_image_id": "PAL-TERRACE-STAIR-JOIN-001",
+      "reference_file": "completion-pass/PAL-TERRACE-STAIR-JOIN-001/PAL-TERRACE-STAIR-JOIN-001.png",
+      "reference_sha256": "c7d49cd3e13d33be4feeaeb2ad74a74c3bdec035a0154fc62110a10ca0f121fa",
+      "source_reference_id": "GEN-16",
+      "source_reference_file": "images/illustrated-boards/GEN-16.png",
+      "source_reference_sha256": "7bd2e64078fb526204113287b3fe012821f10e3c1f02b9005d8b56bd58e56f4f",
+      "notes": " Source backs, dimensions, repeat patterns, inter-view parity and physical attachment remain unverified. Whole-sheet generation does not prove individual meshes are separable.",
+      "geometry_review_status": "unverified"
     }
   ]
 }

@@ -130,12 +130,22 @@
       "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
     }
   ],
-  "outputs": [],
+  "outputs": [
+    {
+      "file": "completion-pass/PAL-SKY-SUPPORT-001/PAL-SKY-SUPPORT-001.png",
+      "sha256": "4d70f66b1db87c9a6a3fffd886b2a7678216c1681cb11591b3695336644fc2cd",
+      "original_file": "/workspace/generated_images/exec-c11827a6-5359-4768-8b4a-c08d143d0406.png",
+      "actual_input_file": "images/illustrated-boards/GEN-36.png",
+      "actual_input_sha256": "7fb524bc99c2cf1cba0b509241f7776492f70d0a22fb06278ec119d889262dbb",
+      "attempt": 1,
+      "generator": "image_gen.imagegen"
+    }
+  ],
   "previous_attempts": [],
   "models_generated": 0,
   "physical_join_fit_verified": false,
   "view_geometry_parity_verified": false,
-  "review_status": "planned-after-gap-audit",
+  "review_status": "generated-pending-visual-and-model-review",
   "gap": "Missing independently supported limited platforms and pillar interconnections; preserve castle silhouette",
   "mode": "structure"
 }

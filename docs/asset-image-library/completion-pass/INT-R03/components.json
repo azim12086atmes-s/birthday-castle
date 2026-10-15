@@ -28,7 +28,17 @@
       "model_sha256": "",
       "review_status": "pending-reference-review",
       "suggested_model_filename": "INT-R03-S01__dining-salon-room-shell__v001.glb",
-      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed",
+      "component_family": "Dining salon \u2014 coordinated interior views",
+      "parent_asset_family": "INT-R03",
+      "reference_image_id": "INT-R03",
+      "reference_file": "completion-pass/INT-R03/INT-R03.png",
+      "reference_sha256": "090a74711034af1d671c2c6b8521dacebe5d7017a5f8584ac6c62805ecfb78b4",
+      "source_reference_id": "GEN-26",
+      "source_reference_file": "images/illustrated-boards/GEN-26.png",
+      "source_reference_sha256": "6ca64686df3226a1da314f2865d3cd2699124b9f746b44ace5fbb72aa9801321",
+      "notes": "Four room views, a north-up plan and ceiling/detail studies are present. Blue/rose stained glass, rose/ivory marble and gold trim remain source-compatible. Dining salon itself is a proposed new room. Views A/B retain opposite-side window placement and west tea alcove placement more clearly than the suite reverse view. Exact eight-chair count and every floral pedestal position are not independently verified. Cutaway changes bay proportions and appears to have more seating than the declared plan. The saved proposed layout controls table dimensions and seating count; do not derive exact mesh coordinates from perspective images. Source backs, dimensions, repeat patterns, inter-view parity and physical attachment remain unverified. Whole-sheet generation does not prove individual meshes are separable.",
+      "geometry_review_status": "unverified"
     }
   ]
 }

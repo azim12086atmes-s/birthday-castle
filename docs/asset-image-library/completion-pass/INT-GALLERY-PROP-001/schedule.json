@@ -7,16 +7,16 @@
   "source_reference_id": "GEN-24",
   "source_reference_file": "images/illustrated-boards/GEN-24.png",
   "source_reference_sha256": "deb78cfce6dab5c31d9b3519d3bc01a07e58bba453b013fcdb76bd2e8be3f349",
-  "prompt": "Create ONE clean detailed GAME ASSET REFERENCE SHEET, NOT Blender or a3Dmodel. Plain light ivory studio background, soft even light, full uncropped separate objects, readable thickness, precise non-melting forms. FULL IDs and names outside silhouettes, dimensions marked PROPOSED. Each cell independent illustration scale. No environment scenery, humans, extra unlabeled objects, watermark or whole-palace redesign. Use ONLY the single supplied source image for visible style/material/form authority; infer missing backs and assembly interfaces conservatively. Source illustration motifs are inspiration, not recovered measured geometry. Exactly12 isolated main components in a clean4-column grid. No missing/empty slots or repeated subjects counted twice. One clear front/three-quarter view with useful small rear/top/contact inset per cell. Truly flat backs for appliques, square join ends for repeat mouldings. Screens have repeated coherent holes, no tangled tendrils. Windows separate glass from surrounds, cornices/parapets and posts separate where named. Do not include large room/scenery fragments attached to a tiny detail. Title \"INT-GALLERY-PROP-001 \u2014 Gallery Prop\". Footer \"Proposed construction / source-compatible references / mesh joins and views unverified\".\n\nPurpose/gap: Missing supporting interior components; reusable across several selected rooms\n\nINT-GALLERY-PROP-001-D01 \u2014 Portrait wall frame. Dimensions W,D,H [1, 0.35, 1]m proposed. One separate portrait wall frame at appropriate human scale; precise rose/ivory/gold and restrained blue textile motifs matching source. Preserve actual construction (four stable legs for furniture, flat backs for frames, one coherent object). No existing chandelier/mirror/tea-set master duplicated. Dimensions are bounding proposals to refine by function.\n\nINT-GALLERY-PROP-001-D02 \u2014 Small album display stand. Dimensions W,D,H [1, 0.35, 1]m proposed. One separate small album display stand at appropriate human scale; precise rose/ivory/gold and restrained blue textile motifs matching source. Preserve actual construction (four stable legs for furniture, flat backs for frames, one coherent object). No existing chandelier/mirror/tea-set master duplicated. Dimensions are bounding proposals to refine by function.\n\nINT-GALLERY-PROP-001-D03 \u2014 Memory display cabinet. Dimensions W,D,H [1, 0.35, 1]m proposed. One separate memory display cabinet at appropriate human scale; precise rose/ivory/gold and restrained blue textile motifs matching source. Preserve actual construction (four stable legs for furniture, flat backs for frames, one coherent object). No existing chandelier/mirror/tea-set master duplicated. Dimensions are bounding proposals to refine by function.\n\nINT-GALLERY-PROP-001-D04 \u2014 Sculpture plinth. Dimensions W,D,H [1, 0.35, 1]m proposed. One separate sculpture plinth at appropriate human scale; precise rose/ivory/gold and restrained blue textile motifs matching source. Preserve actual construction (four stable legs for furniture, flat backs for frames, one coherent object). No existing chandelier/mirror/tea-set master duplicated. Dimensions are bounding proposals to refine by function.\n\nINT-GALLERY-PROP-001-D05 \u2014 Picture light bracket. Dimensions W,D,H [1, 0.35, 1]m proposed. One separate picture light bracket at appropriate human scale; precise rose/ivory/gold and restrained blue textile motifs matching source. Preserve actual construction (four stable legs for furniture, flat backs for frames, one coherent object). No existing chandelier/mirror/tea-set master duplicated. Dimensions are bounding proposals to refine by function.\n\nINT-GALLERY-PROP-001-D06 \u2014 Keepsake box. Dimensions W,D,H [1, 0.35, 1]m proposed. One separate keepsake box at appropriate human scale; precise rose/ivory/gold and restrained blue textile motifs matching source. Preserve actual construction (four stable legs for furniture, flat backs for frames, one coherent object). No existing chandelier/mirror/tea-set master duplicated. Dimensions are bounding proposals to refine by function.\n\nINT-GALLERY-PROP-001-D07 \u2014 Hinged album. Dimensions W,D,H [0.2, 0.12, 0.25]m proposed. One separate hinged album at appropriate human scale; precise rose/ivory/gold and restrained blue textile motifs matching source. Preserve actual construction (four stable legs for furniture, flat backs for frames, one coherent object). No existing chandelier/mirror/tea-set master duplicated. Dimensions are bounding proposals to refine by function.\n\nINT-GALLERY-PROP-001-D08 \u2014 Carved gallery wall plaque. Dimensions W,D,H [1, 0.35, 1]m proposed. One separate carved gallery wall plaque at appropriate human scale; precise rose/ivory/gold and restrained blue textile motifs matching source. Preserve actual construction (four stable legs for furniture, flat backs for frames, one coherent object). No existing chandelier/mirror/tea-set master duplicated. Dimensions are bounding proposals to refine by function.\n\nINT-GALLERY-PROP-001-D09 \u2014 Display shelf corner. Dimensions W,D,H [1, 0.35, 1]m proposed. One separate display shelf corner at appropriate human scale; precise rose/ivory/gold and restrained blue textile motifs matching source. Preserve actual construction (four stable legs for furniture, flat backs for frames, one coherent object). No existing chandelier/mirror/tea-set master duplicated. Dimensions are bounding proposals to refine by function.\n\nINT-GALLERY-PROP-001-D10 \u2014 Freestanding easel frame. Dimensions W,D,H [1, 0.35, 1]m proposed. One separate freestanding easel frame at appropriate human scale; precise rose/ivory/gold and restrained blue textile motifs matching source. Preserve actual construction (four stable legs for furniture, flat backs for frames, one coherent object). No existing chandelier/mirror/tea-set master duplicated. Dimensions are bounding proposals to refine by function.\n\nINT-GALLERY-PROP-001-D11 \u2014 Small specimen bell jar. Dimensions W,D,H [1, 0.35, 1]m proposed. One separate small specimen bell jar at appropriate human scale; precise rose/ivory/gold and restrained blue textile motifs matching source. Preserve actual construction (four stable legs for furniture, flat backs for frames, one coherent object). No existing chandelier/mirror/tea-set master duplicated. Dimensions are bounding proposals to refine by function.\n\nINT-GALLERY-PROP-001-D12 \u2014 Gallery bench arm trim. Dimensions W,D,H [1, 0.35, 1]m proposed. One separate gallery bench arm trim at appropriate human scale; precise rose/ivory/gold and restrained blue textile motifs matching source. Preserve actual construction (four stable legs for furniture, flat backs for frames, one coherent object). No existing chandelier/mirror/tea-set master duplicated. Dimensions are bounding proposals to refine by function.\n\nCRITICAL part isolation and orientation rules:\nINT-GALLERY-PROP-001-D01: FRAME ONLY with open empty centre; no screen/glass/bookcase/door/landscape fused inside. Separate insert masters are reused.\nINT-GALLERY-PROP-001-D07: SMALL attachment hardware only: plate/socket/hook/joint with its own hole/root and source-compatible quiet ornament. No lantern body, full arch, whole column, complete door, garden or giant architectural scene glued to it.",
+  "prompt": "Create ONE clean detailed GAME ASSET REFERENCE SHEET, NOT Blender or a3Dmodel. Plain light ivory studio background, soft even light, full uncropped separate objects, readable thickness, precise non-melting forms. FULL IDs and names outside silhouettes, dimensions marked PROPOSED. Each cell independent illustration scale. No environment scenery, humans, extra unlabeled objects, watermark or whole-palace redesign. Use ONLY the single supplied source image for visible style/material/form authority; infer missing backs and assembly interfaces conservatively. Source illustration motifs are inspiration, not recovered measured geometry. Exactly12 isolated main components in a clean4-column grid. No missing/empty slots or repeated subjects counted twice. One clear front/three-quarter view with useful small rear/top/contact inset per cell. Truly flat backs for appliques, square join ends for repeat mouldings. Screens have repeated coherent holes, no tangled tendrils. Windows separate glass from surrounds, cornices/parapets and posts separate where named. Do not include large room/scenery fragments attached to a tiny detail. Title \"INT-GALLERY-PROP-001 \u2014 Gallery Prop\". Footer \"Proposed construction / source-compatible references / mesh joins and views unverified\".\n\nPurpose/gap: Missing supporting interior components; reusable across several selected rooms\n\nINT-GALLERY-PROP-001-D01 \u2014 Portrait wall frame. Dimensions W,D,H [1.2, 0.1, 1.6]m proposed. One separate portrait wall frame at appropriate human scale; precise rose/ivory/gold and restrained blue textile motifs matching source. Preserve actual construction (four stable legs for furniture, flat backs for frames, one coherent object). No existing chandelier/mirror/tea-set master duplicated. Dimensions are bounding proposals to refine by function.\n\nINT-GALLERY-PROP-001-D02 \u2014 Small album display stand. Dimensions W,D,H [0.5, 0.4, 0.8]m proposed. One separate small album display stand at appropriate human scale; precise rose/ivory/gold and restrained blue textile motifs matching source. Preserve actual construction (four stable legs for furniture, flat backs for frames, one coherent object). No existing chandelier/mirror/tea-set master duplicated. Dimensions are bounding proposals to refine by function.\n\nINT-GALLERY-PROP-001-D03 \u2014 Memory display cabinet. Dimensions W,D,H [1.3, 0.5, 1.6]m proposed. One separate memory display cabinet at appropriate human scale; precise rose/ivory/gold and restrained blue textile motifs matching source. Preserve actual construction (four stable legs for furniture, flat backs for frames, one coherent object). No existing chandelier/mirror/tea-set master duplicated. Dimensions are bounding proposals to refine by function.\n\nINT-GALLERY-PROP-001-D04 \u2014 Sculpture plinth. Dimensions W,D,H [0.6, 0.6, 1.1]m proposed. One separate sculpture plinth at appropriate human scale; precise rose/ivory/gold and restrained blue textile motifs matching source. Preserve actual construction (four stable legs for furniture, flat backs for frames, one coherent object). No existing chandelier/mirror/tea-set master duplicated. Dimensions are bounding proposals to refine by function.\n\nINT-GALLERY-PROP-001-D05 \u2014 Picture light bracket. Dimensions W,D,H [0.4, 0.25, 0.2]m proposed. One separate picture light bracket at appropriate human scale; precise rose/ivory/gold and restrained blue textile motifs matching source. Preserve actual construction (four stable legs for furniture, flat backs for frames, one coherent object). No existing chandelier/mirror/tea-set master duplicated. Dimensions are bounding proposals to refine by function.\n\nINT-GALLERY-PROP-001-D06 \u2014 Keepsake box. Dimensions W,D,H [0.3, 0.2, 0.15]m proposed. One separate keepsake box at appropriate human scale; precise rose/ivory/gold and restrained blue textile motifs matching source. Preserve actual construction (four stable legs for furniture, flat backs for frames, one coherent object). No existing chandelier/mirror/tea-set master duplicated. Dimensions are bounding proposals to refine by function.\n\nINT-GALLERY-PROP-001-D07 \u2014 Hinged album. Dimensions W,D,H [0.35, 0.25, 0.05]m proposed. One separate hinged album at appropriate human scale; precise rose/ivory/gold and restrained blue textile motifs matching source. Preserve actual construction (four stable legs for furniture, flat backs for frames, one coherent object). No existing chandelier/mirror/tea-set master duplicated. Dimensions are bounding proposals to refine by function.\n\nINT-GALLERY-PROP-001-D08 \u2014 Carved gallery wall plaque. Dimensions W,D,H [0.6, 0.08, 0.4]m proposed. One separate carved gallery wall plaque at appropriate human scale; precise rose/ivory/gold and restrained blue textile motifs matching source. Preserve actual construction (four stable legs for furniture, flat backs for frames, one coherent object). No existing chandelier/mirror/tea-set master duplicated. Dimensions are bounding proposals to refine by function.\n\nINT-GALLERY-PROP-001-D09 \u2014 Display shelf corner. Dimensions W,D,H [0.6, 0.6, 0.15]m proposed. One separate display shelf corner at appropriate human scale; precise rose/ivory/gold and restrained blue textile motifs matching source. Preserve actual construction (four stable legs for furniture, flat backs for frames, one coherent object). No existing chandelier/mirror/tea-set master duplicated. Dimensions are bounding proposals to refine by function.\n\nINT-GALLERY-PROP-001-D10 \u2014 Freestanding easel frame. Dimensions W,D,H [0.65, 0.65, 1.6]m proposed. One separate freestanding easel frame at appropriate human scale; precise rose/ivory/gold and restrained blue textile motifs matching source. Preserve actual construction (four stable legs for furniture, flat backs for frames, one coherent object). No existing chandelier/mirror/tea-set master duplicated. Dimensions are bounding proposals to refine by function.\n\nINT-GALLERY-PROP-001-D11 \u2014 Small specimen bell jar. Dimensions W,D,H [0.25, 0.25, 0.5]m proposed. One separate small specimen bell jar at appropriate human scale; precise rose/ivory/gold and restrained blue textile motifs matching source. Preserve actual construction (four stable legs for furniture, flat backs for frames, one coherent object). No existing chandelier/mirror/tea-set master duplicated. Dimensions are bounding proposals to refine by function.\n\nINT-GALLERY-PROP-001-D12 \u2014 Gallery bench arm trim. Dimensions W,D,H [0.12, 0.45, 0.25]m proposed. One separate gallery bench arm trim at appropriate human scale; precise rose/ivory/gold and restrained blue textile motifs matching source. Preserve actual construction (four stable legs for furniture, flat backs for frames, one coherent object). No existing chandelier/mirror/tea-set master duplicated. Dimensions are bounding proposals to refine by function.\n\nCRITICAL part isolation and orientation rules:\nINT-GALLERY-PROP-001-D01: FRAME ONLY with open empty centre; no screen/glass/bookcase/door/landscape fused inside. Separate insert masters are reused.\nINT-GALLERY-PROP-001-D07: SMALL attachment hardware only: plate/socket/hook/joint with its own hole/root and source-compatible quiet ornament. No lantern body, full arch, whole column, complete door, garden or giant architectural scene glued to it.\nINT-GALLERY-PROP-001-D07: Broad thin horizontal object, underside supports on floor/table/bed, not a vertical wall plaque. No thick raised flower sculpt replacing usable surface.",
   "parts": [
     {
       "asset_id": "INT-GALLERY-PROP-001-D01",
       "name": "Portrait wall frame",
       "kind": "architectural-detail",
       "dimensions_m_proposed": [
-        1,
-        0.35,
-        1
+        1.2,
+        0.1,
+        1.6
       ],
       "function": "Missing supporting interior components; reusable across several selected rooms",
       "construction": "One separate portrait wall frame at appropriate human scale; precise rose/ivory/gold and restrained blue textile motifs matching source. Preserve actual construction (four stable legs for furniture, flat backs for frames, one coherent object). No existing chandelier/mirror/tea-set master duplicated. Dimensions are bounding proposals to refine by function. FRAME ONLY with open empty centre; no screen/glass/bookcase/door/landscape fused inside. Separate insert masters are reused.",
@@ -44,9 +44,9 @@
       "name": "Small album display stand",
       "kind": "architectural-detail",
       "dimensions_m_proposed": [
-        1,
-        0.35,
-        1
+        0.5,
+        0.4,
+        0.8
       ],
       "function": "Missing supporting interior components; reusable across several selected rooms",
       "construction": "One separate small album display stand at appropriate human scale; precise rose/ivory/gold and restrained blue textile motifs matching source. Preserve actual construction (four stable legs for furniture, flat backs for frames, one coherent object). No existing chandelier/mirror/tea-set master duplicated. Dimensions are bounding proposals to refine by function.",
@@ -74,9 +74,9 @@
       "name": "Memory display cabinet",
       "kind": "architectural-detail",
       "dimensions_m_proposed": [
-        1,
-        0.35,
-        1
+        1.3,
+        0.5,
+        1.6
       ],
       "function": "Missing supporting interior components; reusable across several selected rooms",
       "construction": "One separate memory display cabinet at appropriate human scale; precise rose/ivory/gold and restrained blue textile motifs matching source. Preserve actual construction (four stable legs for furniture, flat backs for frames, one coherent object). No existing chandelier/mirror/tea-set master duplicated. Dimensions are bounding proposals to refine by function.",
@@ -104,9 +104,9 @@
       "name": "Sculpture plinth",
       "kind": "architectural-detail",
       "dimensions_m_proposed": [
-        1,
-        0.35,
-        1
+        0.6,
+        0.6,
+        1.1
       ],
       "function": "Missing supporting interior components; reusable across several selected rooms",
       "construction": "One separate sculpture plinth at appropriate human scale; precise rose/ivory/gold and restrained blue textile motifs matching source. Preserve actual construction (four stable legs for furniture, flat backs for frames, one coherent object). No existing chandelier/mirror/tea-set master duplicated. Dimensions are bounding proposals to refine by function.",
@@ -134,9 +134,9 @@
       "name": "Picture light bracket",
       "kind": "architectural-detail",
       "dimensions_m_proposed": [
-        1,
-        0.35,
-        1
+        0.4,
+        0.25,
+        0.2
       ],
       "function": "Missing supporting interior components; reusable across several selected rooms",
       "construction": "One separate picture light bracket at appropriate human scale; precise rose/ivory/gold and restrained blue textile motifs matching source. Preserve actual construction (four stable legs for furniture, flat backs for frames, one coherent object). No existing chandelier/mirror/tea-set master duplicated. Dimensions are bounding proposals to refine by function.",
@@ -164,9 +164,9 @@
       "name": "Keepsake box",
       "kind": "architectural-detail",
       "dimensions_m_proposed": [
-        1,
-        0.35,
-        1
+        0.3,
+        0.2,
+        0.15
       ],
       "function": "Missing supporting interior components; reusable across several selected rooms",
       "construction": "One separate keepsake box at appropriate human scale; precise rose/ivory/gold and restrained blue textile motifs matching source. Preserve actual construction (four stable legs for furniture, flat backs for frames, one coherent object). No existing chandelier/mirror/tea-set master duplicated. Dimensions are bounding proposals to refine by function.",
@@ -194,14 +194,14 @@
       "name": "Hinged album",
       "kind": "architectural-detail",
       "dimensions_m_proposed": [
-        0.2,
-        0.12,
-        0.25
+        0.35,
+        0.25,
+        0.05
       ],
       "function": "Missing supporting interior components; reusable across several selected rooms",
       "construction": "One separate hinged album at appropriate human scale; precise rose/ivory/gold and restrained blue textile motifs matching source. Preserve actual construction (four stable legs for furniture, flat backs for frames, one coherent object). No existing chandelier/mirror/tea-set master duplicated. Dimensions are bounding proposals to refine by function. SMALL attachment hardware only: plate/socket/hook/joint with its own hole/root and source-compatible quiet ornament. No lantern body, full arch, whole column, complete door, garden or giant architectural scene glued to it.",
-      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
-      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "attachment_face": "Broad flat underside to floor/table/bed; shortest thickness normal Z",
+      "semantic_front": "Decorated broad face upwards+Z",
       "target_polycount_proposed": 2500,
       "reuse_class": "reusable",
       "applies_to": [
@@ -224,9 +224,9 @@
       "name": "Carved gallery wall plaque",
       "kind": "architectural-detail",
       "dimensions_m_proposed": [
-        1,
-        0.35,
-        1
+        0.6,
+        0.08,
+        0.4
       ],
       "function": "Missing supporting interior components; reusable across several selected rooms",
       "construction": "One separate carved gallery wall plaque at appropriate human scale; precise rose/ivory/gold and restrained blue textile motifs matching source. Preserve actual construction (four stable legs for furniture, flat backs for frames, one coherent object). No existing chandelier/mirror/tea-set master duplicated. Dimensions are bounding proposals to refine by function.",
@@ -254,9 +254,9 @@
       "name": "Display shelf corner",
       "kind": "architectural-detail",
       "dimensions_m_proposed": [
-        1,
-        0.35,
-        1
+        0.6,
+        0.6,
+        0.15
       ],
       "function": "Missing supporting interior components; reusable across several selected rooms",
       "construction": "One separate display shelf corner at appropriate human scale; precise rose/ivory/gold and restrained blue textile motifs matching source. Preserve actual construction (four stable legs for furniture, flat backs for frames, one coherent object). No existing chandelier/mirror/tea-set master duplicated. Dimensions are bounding proposals to refine by function.",
@@ -284,9 +284,9 @@
       "name": "Freestanding easel frame",
       "kind": "architectural-detail",
       "dimensions_m_proposed": [
-        1,
-        0.35,
-        1
+        0.65,
+        0.65,
+        1.6
       ],
       "function": "Missing supporting interior components; reusable across several selected rooms",
       "construction": "One separate freestanding easel frame at appropriate human scale; precise rose/ivory/gold and restrained blue textile motifs matching source. Preserve actual construction (four stable legs for furniture, flat backs for frames, one coherent object). No existing chandelier/mirror/tea-set master duplicated. Dimensions are bounding proposals to refine by function.",
@@ -314,9 +314,9 @@
       "name": "Small specimen bell jar",
       "kind": "architectural-detail",
       "dimensions_m_proposed": [
-        1,
-        0.35,
-        1
+        0.25,
+        0.25,
+        0.5
       ],
       "function": "Missing supporting interior components; reusable across several selected rooms",
       "construction": "One separate small specimen bell jar at appropriate human scale; precise rose/ivory/gold and restrained blue textile motifs matching source. Preserve actual construction (four stable legs for furniture, flat backs for frames, one coherent object). No existing chandelier/mirror/tea-set master duplicated. Dimensions are bounding proposals to refine by function.",
@@ -344,9 +344,9 @@
       "name": "Gallery bench arm trim",
       "kind": "architectural-detail",
       "dimensions_m_proposed": [
-        1,
-        0.35,
-        1
+        0.12,
+        0.45,
+        0.25
       ],
       "function": "Missing supporting interior components; reusable across several selected rooms",
       "construction": "One separate gallery bench arm trim at appropriate human scale; precise rose/ivory/gold and restrained blue textile motifs matching source. Preserve actual construction (four stable legs for furniture, flat backs for frames, one coherent object). No existing chandelier/mirror/tea-set master duplicated. Dimensions are bounding proposals to refine by function.",

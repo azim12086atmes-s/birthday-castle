@@ -490,12 +490,22 @@
       "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
     }
   ],
-  "outputs": [],
+  "outputs": [
+    {
+      "file": "completion-pass/PAL-DOME-INNER-DETAIL-001/PAL-DOME-INNER-DETAIL-001.png",
+      "sha256": "309f90ac7e3c80d286759d29d3ec4e6eaca297008f8b6932f2c73109baae0581",
+      "original_file": "/workspace/generated_images/exec-c4c3530d-1666-48f3-bb06-9cbb52c2ba17.png",
+      "actual_input_file": "world-layout/location-audit/source/B01-GEN-37.png",
+      "actual_input_sha256": "80d436f814c76422bdfd089b395d9f533240f15ee2c1434fc1dae4175a93b638",
+      "attempt": 1,
+      "generator": "image_gen.imagegen"
+    }
+  ],
   "previous_attempts": [],
   "models_generated": 0,
   "physical_join_fit_verified": false,
   "view_geometry_parity_verified": false,
-  "review_status": "planned-after-gap-audit",
+  "review_status": "generated-pending-visual-and-model-review",
   "gap": "Missing removable dome/arch interior components, not another whole-room snapshot",
   "mode": "detail"
 }

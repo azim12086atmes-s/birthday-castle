@@ -7,7 +7,7 @@
   "source_reference_id": "GEN-24",
   "source_reference_file": "images/illustrated-boards/GEN-24.png",
   "source_reference_sha256": "deb78cfce6dab5c31d9b3519d3bc01a07e58bba453b013fcdb76bd2e8be3f349",
-  "prompt": "Create ONE clean detailed GAME ASSET REFERENCE SHEET, NOT Blender or a3Dmodel. Plain light ivory studio background, soft even light, full uncropped separate objects, readable thickness, precise non-melting forms. FULL IDs and names outside silhouettes, dimensions marked PROPOSED. Each cell independent illustration scale. No environment scenery, humans, extra unlabeled objects, watermark or whole-palace redesign. Use ONLY the single supplied source image for visible style/material/form authority; infer missing backs and assembly interfaces conservatively. Source illustration motifs are inspiration, not recovered measured geometry. Exactly4 large cells, large three-quarter view for each module plus small front, top and side/contact/section diagram consistent with same geometry. Real open doors/arches/windows must show empty space; no opaque filling where an opening is requested. Continuous unobstructed planar joining ends, separate shells from optional decor, no fused unrelated objects. Hollow roof/room sections show the interior underside and wall thickness. Keep source silhouette, not generic boxes. Title \"INT-SUITE-FURN-001 \u2014 Princess bedroom and dressing furniture\". Footer \"Proposed construction / source-compatible references / mesh joins and views unverified\".\n\nPurpose/gap: Missing large bedroom/dressing furniture; existing mirrors, lamps, chairs and fabric masters reused\n\nINT-SUITE-FURN-001-S01 \u2014 Canopy bed frame. Dimensions W,D,H [2.2, 2.7, 2.8]m proposed. One freestanding canopy bed frame with gold carved floral trim, rose upholstery or pearl wood/marble where appropriate, coherent legs/handles and useful rear view; no curtains/cloth fused to adjacent items.\n\nINT-SUITE-FURN-001-S02 \u2014 Paired bedside cabinet. Dimensions W,D,H [0.65, 0.45, 0.75]m proposed. One freestanding paired bedside cabinet with gold carved floral trim, rose upholstery or pearl wood/marble where appropriate, coherent legs/handles and useful rear view; no curtains/cloth fused to adjacent items.\n\nINT-SUITE-FURN-001-S03 \u2014 Wardrobe. Dimensions W,D,H [1.6, 0.65, 2.4]m proposed. One freestanding wardrobe with gold carved floral trim, rose upholstery or pearl wood/marble where appropriate, coherent legs/handles and useful rear view; no curtains/cloth fused to adjacent items.\n\nINT-SUITE-FURN-001-S04 \u2014 Dressing table. Dimensions W,D,H [1.4, 0.5, 0.8]m proposed. One freestanding dressing table with gold carved floral trim, rose upholstery or pearl wood/marble where appropriate, coherent legs/handles and useful rear view; no curtains/cloth fused to adjacent items.",
+  "prompt": "Create ONE detailed modular FURNITURE REFERENCE SHEET, title INT-SUITE-FURN-001 \u2014 PRINCESS SUITE FURNITURE. Exactly FOUR separate spacious cells, one named furniture object per cell, light ivory studio background. Use ONLY supplied GEN-24 to match ivory and rose marble, gold lotus/rose/star details, indigo and blush insets. These are missing furniture types, not a new architectural style. Human proportions. No whole room, scenery, people, floating objects or unlabeled extras. Each cell has one LARGE three-quarter illustration plus small FRONT, SIDE, REAR and underside/contact diagram of the EXACT same object. Reveal simple construction/back thickness. Dimensions W,D,H are PROPOSED, not recovered. Keep fine carving crisp but do not thicken gold trim into bulky columns. Full component ID and name beside each cell. Isolate frame/base from textile, mirror and other existing accessories. No furniture merged into a wall. Footer: Source-compatible proposed furniture; hinges, views and mesh separation require modeling review.\n\nINT-SUITE-FURN-001-S01 \u2014 Canopy bed frame. W,D,H [2.2, 2.7, 2.8] m proposed. ONE open four-post bed FRAME only. Exactly four slender ivory carved posts, rose lower rails, gilded lotus feet, pointed indigo/gold headboard with rose shell crest, open canopy rim. Two planar side rails join headboard and footboard, visible bed-slat support at mattress seat. No mattress, curtains, flowers, bedside furniture or bedding; those are reusable dressing inserts. Show real empty space within canopy and under frame.\n\nINT-SUITE-FURN-001-S02 \u2014 Reversible bedside cabinet. W,D,H [0.65, 0.45, 0.75] m proposed. ONE bedside cabinet, not a pair: rose-veined ivory marble top, shallow drawer, two-door lower storage, gilded fine floral apron, four short legs. Display two doors closed in main view and small OPEN state inset showing box interior. Drawer cannot intersect door cavity. Plain rear mounting side. Duplicate this asset for left/right bed sides; do not create two different cabinets.\n\nINT-SUITE-FURN-001-S03 \u2014 Wardrobe. W,D,H [1.6, 0.65, 2.4] m proposed. ONE freestanding two-door wardrobe, ivory carved timber and gold rose/star strips, shallow rose-marble plinth, indigo/blush inset door panels. Both doors closed in main view; small cutaway inset shows simple shelf and hanging rail. Keep door thickness, opening direction and rear enclosure clear. No gowns, loose hangers, flowers, giant crown or attached room architecture.\n\nINT-SUITE-FURN-001-S04 \u2014 Dressing table. W,D,H [1.4, 0.5, 0.8] m proposed. ONE dressing table BASE only, rose-veined ivory marble top, fine gilded floral apron and four slender lotus-foot legs, one shallow central drawer. Open leg space and modest human scale. NO mirror, seat, cosmetics or chandelier; reuse the existing GEN-24 moon mirror separately. Flat back edge can sit against wall. Show underside support rails and actual flat rear.",
   "parts": [
     {
       "asset_id": "INT-SUITE-FURN-001-S01",
@@ -19,9 +19,9 @@
         2.8
       ],
       "function": "Missing large bedroom/dressing furniture; existing mirrors, lamps, chairs and fabric masters reused",
-      "construction": "One freestanding canopy bed frame with gold carved floral trim, rose upholstery or pearl wood/marble where appropriate, coherent legs/handles and useful rear view; no curtains/cloth fused to adjacent items.",
-      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
-      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "construction": "ONE open four-post bed FRAME only. Exactly four slender ivory carved posts, rose lower rails, gilded lotus feet, pointed indigo/gold headboard with rose shell crest, open canopy rim. Two planar side rails join headboard and footboard, visible bed-slat support at mattress seat. No mattress, curtains, flowers, bedside furniture or bedding; those are reusable dressing inserts. Show real empty space within canopy and under frame.",
+      "attachment_face": "Floor contacts at feet/plinth; detachable insert seats declared in view; no room-wall geometry",
+      "semantic_front": "Main access face +Y; Z up; same geometry in every view",
       "target_polycount_proposed": 8000,
       "reuse_class": "reusable",
       "applies_to": [
@@ -41,7 +41,7 @@
     },
     {
       "asset_id": "INT-SUITE-FURN-001-S02",
-      "name": "Paired bedside cabinet",
+      "name": "Reversible bedside cabinet",
       "kind": "structural-section",
       "dimensions_m_proposed": [
         0.65,
@@ -49,9 +49,9 @@
         0.75
       ],
       "function": "Missing large bedroom/dressing furniture; existing mirrors, lamps, chairs and fabric masters reused",
-      "construction": "One freestanding paired bedside cabinet with gold carved floral trim, rose upholstery or pearl wood/marble where appropriate, coherent legs/handles and useful rear view; no curtains/cloth fused to adjacent items.",
-      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
-      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "construction": "ONE bedside cabinet, not a pair: rose-veined ivory marble top, shallow drawer, two-door lower storage, gilded fine floral apron, four short legs. Display two doors closed in main view and small OPEN state inset showing box interior. Drawer cannot intersect door cavity. Plain rear mounting side. Duplicate this asset for left/right bed sides; do not create two different cabinets.",
+      "attachment_face": "Floor contacts at feet/plinth; detachable insert seats declared in view; no room-wall geometry",
+      "semantic_front": "Main access face +Y; Z up; same geometry in every view",
       "target_polycount_proposed": 8000,
       "reuse_class": "reusable",
       "applies_to": [
@@ -79,9 +79,9 @@
         2.4
       ],
       "function": "Missing large bedroom/dressing furniture; existing mirrors, lamps, chairs and fabric masters reused",
-      "construction": "One freestanding wardrobe with gold carved floral trim, rose upholstery or pearl wood/marble where appropriate, coherent legs/handles and useful rear view; no curtains/cloth fused to adjacent items.",
-      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
-      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "construction": "ONE freestanding two-door wardrobe, ivory carved timber and gold rose/star strips, shallow rose-marble plinth, indigo/blush inset door panels. Both doors closed in main view; small cutaway inset shows simple shelf and hanging rail. Keep door thickness, opening direction and rear enclosure clear. No gowns, loose hangers, flowers, giant crown or attached room architecture.",
+      "attachment_face": "Floor contacts at feet/plinth; detachable insert seats declared in view; no room-wall geometry",
+      "semantic_front": "Main access face +Y; Z up; same geometry in every view",
       "target_polycount_proposed": 8000,
       "reuse_class": "reusable",
       "applies_to": [
@@ -109,9 +109,9 @@
         0.8
       ],
       "function": "Missing large bedroom/dressing furniture; existing mirrors, lamps, chairs and fabric masters reused",
-      "construction": "One freestanding dressing table with gold carved floral trim, rose upholstery or pearl wood/marble where appropriate, coherent legs/handles and useful rear view; no curtains/cloth fused to adjacent items.",
-      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
-      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "construction": "ONE dressing table BASE only, rose-veined ivory marble top, fine gilded floral apron and four slender lotus-foot legs, one shallow central drawer. Open leg space and modest human scale. NO mirror, seat, cosmetics or chandelier; reuse the existing GEN-24 moon mirror separately. Flat back edge can sit against wall. Show underside support rails and actual flat rear.",
+      "attachment_face": "Floor contacts at feet/plinth; detachable insert seats declared in view; no room-wall geometry",
+      "semantic_front": "Main access face +Y; Z up; same geometry in every view",
       "target_polycount_proposed": 8000,
       "reuse_class": "reusable",
       "applies_to": [
@@ -130,12 +130,28 @@
       "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
     }
   ],
-  "outputs": [],
+  "outputs": [
+    {
+      "file": "completion-pass/INT-SUITE-FURN-001/INT-SUITE-FURN-001.png",
+      "sha256": "5ca62205be9b18b5b70af37de9f22e269be5e502b8e1fe0d17adae9a06184015",
+      "original_file": "/workspace/generated_images/exec-20d6e783-869f-468d-93e9-d666260e0a2a.png",
+      "actual_input_file": "images/illustrated-boards/GEN-24.png",
+      "actual_input_sha256": "deb78cfce6dab5c31d9b3519d3bc01a07e58bba453b013fcdb76bd2e8be3f349",
+      "attempt": 1,
+      "generator": "image_gen.imagegen"
+    }
+  ],
   "previous_attempts": [],
   "models_generated": 0,
   "physical_join_fit_verified": false,
   "view_geometry_parity_verified": false,
-  "review_status": "planned-after-gap-audit",
+  "review_status": "visual-reviewed-reference-pending-mesh-and-hardware-review",
   "gap": "Missing large bedroom/dressing furniture; existing mirrors, lamps, chairs and fabric masters reused",
-  "mode": "structure"
+  "mode": "structure",
+  "source_interpretation": "GEN-24 supplies existing furniture ornament; bed, cabinet and wardrobe types are missing source-compatible additions. Reuse existing GEN-24 moon mirror, textile and chair assets rather than duplicate them.",
+  "visual_review_notes": [
+    "All four isolated furniture types and front/side/rear/underside views are present. Bed has an open canopy and visible slat seat without mattress or curtains. Cabinet/wardrobe show closed and open states. Dressing table omits the existing moon mirror to avoid duplicate generation.",
+    "Only S01\u2013S04 labels are printed under the full sheet title; full component IDs resolve by concatenating INT-SUITE-FURN-001 and the suffix.",
+    "Open-state shelf/hinge construction, leg counts across the smallest underside views and actual material implementation remain unverified. These illustrations are furniture references, not four proven separable meshes."
+  ]
 }

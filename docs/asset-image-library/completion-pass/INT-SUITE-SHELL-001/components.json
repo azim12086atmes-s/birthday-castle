@@ -5,14 +5,14 @@
       "name": "Canopy bed wall niche host",
       "kind": "structural-section",
       "dimensions_m_proposed": [
-        8,
-        5,
-        12
+        4.8,
+        1.2,
+        6
       ],
       "function": "Missing construction views behind existing room snapshots; generic substrate plus source-compatible interior faces",
-      "construction": "One isolated canopy bed wall niche host, original palace rose and ivory marble, gold trim, blue/rose glass where source appropriate. Show interior face, ceiling/underside and rear wall/roof contact. Real door/window apertures open; furniture/foliage removable. Preserve local room character rather than replacing with one generic hall.",
-      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
-      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "construction": "A bed-head WALL NICHE HOST only: solid rose-marble back wall with shallow pointed recess, ivory clustered side pilasters, gold star/rose tracery cornice. Empty bed recess, no bed, canopy fabric, chandelier, plant or floor. Show flat rear mounting face, top horizontal seam and square lateral repeat ends.",
+      "attachment_face": "Declared flat end or rear contact; ceiling uses square perimeter rim, wall modules use ground/back seats",
+      "semantic_front": "Front is inhabited interior face; ceiling primary face is underside. Z is up.",
       "target_polycount_proposed": 8000,
       "reuse_class": "reusable",
       "applies_to": [
@@ -28,21 +28,31 @@
       "model_sha256": "",
       "review_status": "pending-reference-review",
       "suggested_model_filename": "INT-SUITE-SHELL-001-S01__canopy-bed-wall-niche-host__v001.glb",
-      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed",
+      "component_family": "Suite \u2014 interior shell sections",
+      "parent_asset_family": "INT-SUITE-SHELL-001",
+      "reference_image_id": "INT-SUITE-SHELL-001",
+      "reference_file": "completion-pass/INT-SUITE-SHELL-001/INT-SUITE-SHELL-001.png",
+      "reference_sha256": "6f65dd45d8346a12d5c8501b4738ad0d3394438431f662fc379d935cee348635",
+      "source_reference_id": "GEN-26",
+      "source_reference_file": "images/illustrated-boards/GEN-26.png",
+      "source_reference_sha256": "6ca64686df3226a1da314f2865d3cd2699124b9f746b44ace5fbb72aa9801321",
+      "notes": "Four intended isolated hosts are present; source-compatible rose/ivory marble, indigo inserts and gold molding retained. Ceiling primary view shows underside, and wall bays do not include furniture. S02 and S03 doorways are visibly open in perspective and front/rear views, but small top diagrams appear to run a solid band across openings. These top diagrams must not be used as cut geometry. Decorative projection and seam cornices are not proven to terminate at compatible flat ends. S04 top is closed while underside has ribs; internal thickness and fixings require sectional design. Source backs, dimensions, repeat patterns, inter-view parity and physical attachment remain unverified. Whole-sheet generation does not prove individual meshes are separable.",
+      "geometry_review_status": "unverified"
     },
     {
       "asset_id": "INT-SUITE-SHELL-001-S02",
       "name": "Balcony window and inner reveal bay",
       "kind": "structural-section",
       "dimensions_m_proposed": [
-        8,
-        5,
-        12
+        4.8,
+        1.2,
+        6
       ],
       "function": "Missing construction views behind existing room snapshots; generic substrate plus source-compatible interior faces",
-      "construction": "One isolated balcony window and inner reveal bay, original palace rose and ivory marble, gold trim, blue/rose glass where source appropriate. Show interior face, ceiling/underside and rear wall/roof contact. Real door/window apertures open; furniture/foliage removable. Preserve local room character rather than replacing with one generic hall.",
-      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
-      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "construction": "A BALCONY DOOR AND INNER REVEAL WALL BAY only: one tall real open pointed doorway, flanked by narrow cobalt/rose glazed lancets in rose-marble wall. Ivory clustered jambs, gold profiles. Door clear height 3.2 m, width 1.8 m proposed. No whole balcony, floor, roof or plants. Show sill depth, hollow opening, rear mounting face and flat lateral end contacts.",
+      "attachment_face": "Declared flat end or rear contact; ceiling uses square perimeter rim, wall modules use ground/back seats",
+      "semantic_front": "Front is inhabited interior face; ceiling primary face is underside. Z is up.",
       "target_polycount_proposed": 8000,
       "reuse_class": "reusable",
       "applies_to": [
@@ -58,21 +68,31 @@
       "model_sha256": "",
       "review_status": "pending-reference-review",
       "suggested_model_filename": "INT-SUITE-SHELL-001-S02__balcony-window-and-inner-reveal-bay__v001.glb",
-      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed",
+      "component_family": "Suite \u2014 interior shell sections",
+      "parent_asset_family": "INT-SUITE-SHELL-001",
+      "reference_image_id": "INT-SUITE-SHELL-001",
+      "reference_file": "completion-pass/INT-SUITE-SHELL-001/INT-SUITE-SHELL-001.png",
+      "reference_sha256": "6f65dd45d8346a12d5c8501b4738ad0d3394438431f662fc379d935cee348635",
+      "source_reference_id": "GEN-26",
+      "source_reference_file": "images/illustrated-boards/GEN-26.png",
+      "source_reference_sha256": "6ca64686df3226a1da314f2865d3cd2699124b9f746b44ace5fbb72aa9801321",
+      "notes": "Four intended isolated hosts are present; source-compatible rose/ivory marble, indigo inserts and gold molding retained. Ceiling primary view shows underside, and wall bays do not include furniture. S02 and S03 doorways are visibly open in perspective and front/rear views, but small top diagrams appear to run a solid band across openings. These top diagrams must not be used as cut geometry. Decorative projection and seam cornices are not proven to terminate at compatible flat ends. S04 top is closed while underside has ribs; internal thickness and fixings require sectional design. Source backs, dimensions, repeat patterns, inter-view parity and physical attachment remain unverified. Whole-sheet generation does not prove individual meshes are separable.",
+      "geometry_review_status": "unverified"
     },
     {
       "asset_id": "INT-SUITE-SHELL-001-S03",
       "name": "Dressing alcove partition host",
       "kind": "structural-section",
       "dimensions_m_proposed": [
-        8,
-        5,
-        12
+        4.8,
+        0.35,
+        4.5
       ],
       "function": "Missing construction views behind existing room snapshots; generic substrate plus source-compatible interior faces",
-      "construction": "One isolated dressing alcove partition host, original palace rose and ivory marble, gold trim, blue/rose glass where source appropriate. Show interior face, ceiling/underside and rear wall/roof contact. Real door/window apertures open; furniture/foliage removable. Preserve local room character rather than replacing with one generic hall.",
-      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
-      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "construction": "A DRESSING ALCOVE PARTITION only: one two-sided rose-marble screen wall, ivory pilasters, pointed walk-through arch on its right, shallow empty mirror recess on its left. Gold floral molding. No mirror insert, curtains or furniture. Show true rear face, flat lateral joins and foot contact.",
+      "attachment_face": "Declared flat end or rear contact; ceiling uses square perimeter rim, wall modules use ground/back seats",
+      "semantic_front": "Front is inhabited interior face; ceiling primary face is underside. Z is up.",
       "target_polycount_proposed": 8000,
       "reuse_class": "reusable",
       "applies_to": [
@@ -88,21 +108,31 @@
       "model_sha256": "",
       "review_status": "pending-reference-review",
       "suggested_model_filename": "INT-SUITE-SHELL-001-S03__dressing-alcove-partition-host__v001.glb",
-      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed",
+      "component_family": "Suite \u2014 interior shell sections",
+      "parent_asset_family": "INT-SUITE-SHELL-001",
+      "reference_image_id": "INT-SUITE-SHELL-001",
+      "reference_file": "completion-pass/INT-SUITE-SHELL-001/INT-SUITE-SHELL-001.png",
+      "reference_sha256": "6f65dd45d8346a12d5c8501b4738ad0d3394438431f662fc379d935cee348635",
+      "source_reference_id": "GEN-26",
+      "source_reference_file": "images/illustrated-boards/GEN-26.png",
+      "source_reference_sha256": "6ca64686df3226a1da314f2865d3cd2699124b9f746b44ace5fbb72aa9801321",
+      "notes": "Four intended isolated hosts are present; source-compatible rose/ivory marble, indigo inserts and gold molding retained. Ceiling primary view shows underside, and wall bays do not include furniture. S02 and S03 doorways are visibly open in perspective and front/rear views, but small top diagrams appear to run a solid band across openings. These top diagrams must not be used as cut geometry. Decorative projection and seam cornices are not proven to terminate at compatible flat ends. S04 top is closed while underside has ribs; internal thickness and fixings require sectional design. Source backs, dimensions, repeat patterns, inter-view parity and physical attachment remain unverified. Whole-sheet generation does not prove individual meshes are separable.",
+      "geometry_review_status": "unverified"
     },
     {
       "asset_id": "INT-SUITE-SHELL-001-S04",
       "name": "Quiet suite ceiling and cornice bay",
       "kind": "structural-section",
       "dimensions_m_proposed": [
-        8,
-        5,
-        12
+        4.8,
+        4.8,
+        1.2
       ],
       "function": "Missing construction views behind existing room snapshots; generic substrate plus source-compatible interior faces",
-      "construction": "One isolated quiet suite ceiling and cornice bay, original palace rose and ivory marble, gold trim, blue/rose glass where source appropriate. Show interior face, ceiling/underside and rear wall/roof contact. Real door/window apertures open; furniture/foliage removable. Preserve local room character rather than replacing with one generic hall.",
-      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
-      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "construction": "A CEILING BAY only, viewed from BELOW as the main image: shallow ivory pointed cross ribs, indigo triangular star panels, gold rib boss, rose perimeter cornice. Detachable square tile with four planar rim contacts. No floor, wall columns or hanging light. Show underside, top support rim and edge section. This is not a complete dome or room.",
+      "attachment_face": "Declared flat end or rear contact; ceiling uses square perimeter rim, wall modules use ground/back seats",
+      "semantic_front": "Front is inhabited interior face; ceiling primary face is underside. Z is up.",
       "target_polycount_proposed": 8000,
       "reuse_class": "reusable",
       "applies_to": [
@@ -118,7 +148,17 @@
       "model_sha256": "",
       "review_status": "pending-reference-review",
       "suggested_model_filename": "INT-SUITE-SHELL-001-S04__quiet-suite-ceiling-and-cornice-bay__v001.glb",
-      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed",
+      "component_family": "Suite \u2014 interior shell sections",
+      "parent_asset_family": "INT-SUITE-SHELL-001",
+      "reference_image_id": "INT-SUITE-SHELL-001",
+      "reference_file": "completion-pass/INT-SUITE-SHELL-001/INT-SUITE-SHELL-001.png",
+      "reference_sha256": "6f65dd45d8346a12d5c8501b4738ad0d3394438431f662fc379d935cee348635",
+      "source_reference_id": "GEN-26",
+      "source_reference_file": "images/illustrated-boards/GEN-26.png",
+      "source_reference_sha256": "6ca64686df3226a1da314f2865d3cd2699124b9f746b44ace5fbb72aa9801321",
+      "notes": "Four intended isolated hosts are present; source-compatible rose/ivory marble, indigo inserts and gold molding retained. Ceiling primary view shows underside, and wall bays do not include furniture. S02 and S03 doorways are visibly open in perspective and front/rear views, but small top diagrams appear to run a solid band across openings. These top diagrams must not be used as cut geometry. Decorative projection and seam cornices are not proven to terminate at compatible flat ends. S04 top is closed while underside has ribs; internal thickness and fixings require sectional design. Source backs, dimensions, repeat patterns, inter-view parity and physical attachment remain unverified. Whole-sheet generation does not prove individual meshes are separable.",
+      "geometry_review_status": "unverified"
     }
   ]
 }

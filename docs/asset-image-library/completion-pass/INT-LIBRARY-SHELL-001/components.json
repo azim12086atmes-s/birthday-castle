@@ -28,7 +28,17 @@
       "model_sha256": "",
       "review_status": "pending-reference-review",
       "suggested_model_filename": "INT-LIBRARY-SHELL-001-S01__two-level-bookshelf-wall-host__v001.glb",
-      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed",
+      "component_family": "Library \u2014 interior shell sections",
+      "parent_asset_family": "INT-LIBRARY-SHELL-001",
+      "reference_image_id": "INT-LIBRARY-SHELL-001",
+      "reference_file": "completion-pass/INT-LIBRARY-SHELL-001/INT-LIBRARY-SHELL-001.png",
+      "reference_sha256": "06facb9319883c0a5a98cdcb7f4d6518626702bf76df4385262a754f1912c9bb",
+      "source_reference_id": "GEN-26",
+      "source_reference_file": "images/illustrated-boards/GEN-26.png",
+      "source_reference_sha256": "6ca64686df3226a1da314f2865d3cd2699124b9f746b44ace5fbb72aa9801321",
+      "notes": " Source backs, dimensions, repeat patterns, inter-view parity and physical attachment remain unverified. Whole-sheet generation does not prove individual meshes are separable.",
+      "geometry_review_status": "unverified"
     },
     {
       "asset_id": "INT-LIBRARY-SHELL-001-S02",
@@ -58,7 +68,17 @@
       "model_sha256": "",
       "review_status": "pending-reference-review",
       "suggested_model_filename": "INT-LIBRARY-SHELL-001-S02__reading-gallery-and-stair-return__v001.glb",
-      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed",
+      "component_family": "Library \u2014 interior shell sections",
+      "parent_asset_family": "INT-LIBRARY-SHELL-001",
+      "reference_image_id": "INT-LIBRARY-SHELL-001",
+      "reference_file": "completion-pass/INT-LIBRARY-SHELL-001/INT-LIBRARY-SHELL-001.png",
+      "reference_sha256": "06facb9319883c0a5a98cdcb7f4d6518626702bf76df4385262a754f1912c9bb",
+      "source_reference_id": "GEN-26",
+      "source_reference_file": "images/illustrated-boards/GEN-26.png",
+      "source_reference_sha256": "6ca64686df3226a1da314f2865d3cd2699124b9f746b44ace5fbb72aa9801321",
+      "notes": " Source backs, dimensions, repeat patterns, inter-view parity and physical attachment remain unverified. Whole-sheet generation does not prove individual meshes are separable.",
+      "geometry_review_status": "unverified"
     },
     {
       "asset_id": "INT-LIBRARY-SHELL-001-S03",
@@ -88,7 +108,17 @@
       "model_sha256": "",
       "review_status": "pending-reference-review",
       "suggested_model_filename": "INT-LIBRARY-SHELL-001-S03__window-alcove-and-desk-niche-host__v001.glb",
-      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed",
+      "component_family": "Library \u2014 interior shell sections",
+      "parent_asset_family": "INT-LIBRARY-SHELL-001",
+      "reference_image_id": "INT-LIBRARY-SHELL-001",
+      "reference_file": "completion-pass/INT-LIBRARY-SHELL-001/INT-LIBRARY-SHELL-001.png",
+      "reference_sha256": "06facb9319883c0a5a98cdcb7f4d6518626702bf76df4385262a754f1912c9bb",
+      "source_reference_id": "GEN-26",
+      "source_reference_file": "images/illustrated-boards/GEN-26.png",
+      "source_reference_sha256": "6ca64686df3226a1da314f2865d3cd2699124b9f746b44ace5fbb72aa9801321",
+      "notes": " Source backs, dimensions, repeat patterns, inter-view parity and physical attachment remain unverified. Whole-sheet generation does not prove individual meshes are separable.",
+      "geometry_review_status": "unverified"
     },
     {
       "asset_id": "INT-LIBRARY-SHELL-001-S04",
@@ -118,7 +148,17 @@
       "model_sha256": "",
       "review_status": "pending-reference-review",
       "suggested_model_filename": "INT-LIBRARY-SHELL-001-S04__library-vault-ceiling-bay__v001.glb",
-      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed",
+      "component_family": "Library \u2014 interior shell sections",
+      "parent_asset_family": "INT-LIBRARY-SHELL-001",
+      "reference_image_id": "INT-LIBRARY-SHELL-001",
+      "reference_file": "completion-pass/INT-LIBRARY-SHELL-001/INT-LIBRARY-SHELL-001.png",
+      "reference_sha256": "06facb9319883c0a5a98cdcb7f4d6518626702bf76df4385262a754f1912c9bb",
+      "source_reference_id": "GEN-26",
+      "source_reference_file": "images/illustrated-boards/GEN-26.png",
+      "source_reference_sha256": "6ca64686df3226a1da314f2865d3cd2699124b9f746b44ace5fbb72aa9801321",
+      "notes": " Source backs, dimensions, repeat patterns, inter-view parity and physical attachment remain unverified. Whole-sheet generation does not prove individual meshes are separable.",
+      "geometry_review_status": "unverified"
     }
   ]
 }

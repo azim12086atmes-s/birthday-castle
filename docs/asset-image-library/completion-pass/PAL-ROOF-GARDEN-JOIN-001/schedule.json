@@ -130,12 +130,22 @@
       "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
     }
   ],
-  "outputs": [],
+  "outputs": [
+    {
+      "file": "completion-pass/PAL-ROOF-GARDEN-JOIN-001/PAL-ROOF-GARDEN-JOIN-001.png",
+      "sha256": "9a22e3c118d380c061c3d4dd7726c42a634da1b60979042ae8b5fb73ffba75a6",
+      "original_file": "/workspace/generated_images/exec-d964d028-998e-4d51-aaad-5aec377f791d.png",
+      "actual_input_file": "images/illustrated-boards/GEN-16.png",
+      "actual_input_sha256": "7bd2e64078fb526204113287b3fe012821f10e3c1f02b9005d8b56bd58e56f4f",
+      "attempt": 1,
+      "generator": "image_gen.imagegen"
+    }
+  ],
   "previous_attempts": [],
   "models_generated": 0,
   "physical_join_fit_verified": false,
   "view_geometry_parity_verified": false,
-  "review_status": "planned-after-gap-audit",
+  "review_status": "generated-pending-visual-and-model-review",
   "gap": "Missing roof garden substrate and court/wing interface sections; use terrace images as component inspiration",
   "mode": "structure"
 }

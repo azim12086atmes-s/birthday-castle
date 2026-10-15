@@ -5,9 +5,9 @@
       "name": "Straight curtain track",
       "kind": "architectural-detail",
       "dimensions_m_proposed": [
-        1,
-        0.35,
-        1
+        3,
+        0.08,
+        0.08
       ],
       "function": "Missing supporting interior components; reusable across several selected rooms",
       "construction": "One separate straight curtain track at appropriate human scale; precise rose/ivory/gold and restrained blue textile motifs matching source. Preserve actual construction (four stable legs for furniture, flat backs for frames, one coherent object). No existing chandelier/mirror/tea-set master duplicated. Dimensions are bounding proposals to refine by function.",
@@ -35,9 +35,9 @@
       "name": "Curtain track corner",
       "kind": "architectural-detail",
       "dimensions_m_proposed": [
-        1,
-        0.35,
-        1
+        0.4,
+        0.4,
+        0.08
       ],
       "function": "Missing supporting interior components; reusable across several selected rooms",
       "construction": "One separate curtain track corner at appropriate human scale; precise rose/ivory/gold and restrained blue textile motifs matching source. Preserve actual construction (four stable legs for furniture, flat backs for frames, one coherent object). No existing chandelier/mirror/tea-set master duplicated. Dimensions are bounding proposals to refine by function.",
@@ -65,9 +65,9 @@
       "name": "Curtain mounting bracket",
       "kind": "architectural-detail",
       "dimensions_m_proposed": [
-        0.2,
-        0.12,
-        0.25
+        0.08,
+        0.15,
+        0.15
       ],
       "function": "Missing supporting interior components; reusable across several selected rooms",
       "construction": "One separate curtain mounting bracket at appropriate human scale; precise rose/ivory/gold and restrained blue textile motifs matching source. Preserve actual construction (four stable legs for furniture, flat backs for frames, one coherent object). No existing chandelier/mirror/tea-set master duplicated. Dimensions are bounding proposals to refine by function. SMALL attachment hardware only: plate/socket/hook/joint with its own hole/root and source-compatible quiet ornament. No lantern body, full arch, whole column, complete door, garden or giant architectural scene glued to it.",
@@ -95,9 +95,9 @@
       "name": "Curtain ring set",
       "kind": "architectural-detail",
       "dimensions_m_proposed": [
-        1,
-        0.35,
-        1
+        0.08,
+        0.03,
+        0.08
       ],
       "function": "Missing supporting interior components; reusable across several selected rooms",
       "construction": "One separate curtain ring set at appropriate human scale; precise rose/ivory/gold and restrained blue textile motifs matching source. Preserve actual construction (four stable legs for furniture, flat backs for frames, one coherent object). No existing chandelier/mirror/tea-set master duplicated. Dimensions are bounding proposals to refine by function.",
@@ -125,9 +125,9 @@
       "name": "Floral tieback",
       "kind": "architectural-detail",
       "dimensions_m_proposed": [
-        1,
-        0.35,
-        1
+        0.15,
+        0.15,
+        0.35
       ],
       "function": "Missing supporting interior components; reusable across several selected rooms",
       "construction": "One separate floral tieback at appropriate human scale; precise rose/ivory/gold and restrained blue textile motifs matching source. Preserve actual construction (four stable legs for furniture, flat backs for frames, one coherent object). No existing chandelier/mirror/tea-set master duplicated. Dimensions are bounding proposals to refine by function.",
@@ -155,9 +155,9 @@
       "name": "Curtain tassel",
       "kind": "architectural-detail",
       "dimensions_m_proposed": [
-        1,
-        0.35,
-        1
+        0.08,
+        0.08,
+        0.25
       ],
       "function": "Missing supporting interior components; reusable across several selected rooms",
       "construction": "One separate curtain tassel at appropriate human scale; precise rose/ivory/gold and restrained blue textile motifs matching source. Preserve actual construction (four stable legs for furniture, flat backs for frames, one coherent object). No existing chandelier/mirror/tea-set master duplicated. Dimensions are bounding proposals to refine by function.",
@@ -185,9 +185,9 @@
       "name": "Canopy corner cap",
       "kind": "architectural-detail",
       "dimensions_m_proposed": [
-        1,
-        0.35,
-        1
+        0.12,
+        0.12,
+        0.15
       ],
       "function": "Missing supporting interior components; reusable across several selected rooms",
       "construction": "One separate canopy corner cap at appropriate human scale; precise rose/ivory/gold and restrained blue textile motifs matching source. Preserve actual construction (four stable legs for furniture, flat backs for frames, one coherent object). No existing chandelier/mirror/tea-set master duplicated. Dimensions are bounding proposals to refine by function.",
@@ -215,9 +215,9 @@
       "name": "Translucent privacy curtain",
       "kind": "architectural-detail",
       "dimensions_m_proposed": [
-        1,
-        0.35,
-        1
+        2,
+        0.03,
+        2.6
       ],
       "function": "Missing supporting interior components; reusable across several selected rooms",
       "construction": "One separate translucent privacy curtain at appropriate human scale; precise rose/ivory/gold and restrained blue textile motifs matching source. Preserve actual construction (four stable legs for furniture, flat backs for frames, one coherent object). No existing chandelier/mirror/tea-set master duplicated. Dimensions are bounding proposals to refine by function.",
@@ -245,14 +245,14 @@
       "name": "Rose bed throw",
       "kind": "architectural-detail",
       "dimensions_m_proposed": [
-        1,
-        0.35,
-        1
+        1.8,
+        2,
+        0.03
       ],
       "function": "Missing supporting interior components; reusable across several selected rooms",
       "construction": "One separate rose bed throw at appropriate human scale; precise rose/ivory/gold and restrained blue textile motifs matching source. Preserve actual construction (four stable legs for furniture, flat backs for frames, one coherent object). No existing chandelier/mirror/tea-set master duplicated. Dimensions are bounding proposals to refine by function.",
-      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
-      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "attachment_face": "Broad flat underside to floor/table/bed; shortest thickness normal Z",
+      "semantic_front": "Decorated broad face upwards+Z",
       "target_polycount_proposed": 2500,
       "reuse_class": "reusable",
       "applies_to": [
@@ -275,14 +275,14 @@
       "name": "Square embroidered cushion",
       "kind": "architectural-detail",
       "dimensions_m_proposed": [
-        1,
-        0.35,
-        1
+        0.5,
+        0.5,
+        0.15
       ],
       "function": "Missing supporting interior components; reusable across several selected rooms",
       "construction": "One separate square embroidered cushion at appropriate human scale; precise rose/ivory/gold and restrained blue textile motifs matching source. Preserve actual construction (four stable legs for furniture, flat backs for frames, one coherent object). No existing chandelier/mirror/tea-set master duplicated. Dimensions are bounding proposals to refine by function.",
-      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
-      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "attachment_face": "Broad flat underside to floor/table/bed; shortest thickness normal Z",
+      "semantic_front": "Decorated broad face upwards+Z",
       "target_polycount_proposed": 2500,
       "reuse_class": "reusable",
       "applies_to": [
@@ -305,14 +305,14 @@
       "name": "Round embroidered cushion",
       "kind": "architectural-detail",
       "dimensions_m_proposed": [
-        1,
-        0.35,
-        1
+        0.45,
+        0.45,
+        0.15
       ],
       "function": "Missing supporting interior components; reusable across several selected rooms",
       "construction": "One separate round embroidered cushion at appropriate human scale; precise rose/ivory/gold and restrained blue textile motifs matching source. Preserve actual construction (four stable legs for furniture, flat backs for frames, one coherent object). No existing chandelier/mirror/tea-set master duplicated. Dimensions are bounding proposals to refine by function.",
-      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
-      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "attachment_face": "Broad flat underside to floor/table/bed; shortest thickness normal Z",
+      "semantic_front": "Decorated broad face upwards+Z",
       "target_polycount_proposed": 2500,
       "reuse_class": "reusable",
       "applies_to": [
@@ -336,13 +336,13 @@
       "kind": "architectural-detail",
       "dimensions_m_proposed": [
         1,
-        0.35,
-        1
+        0.8,
+        0.015
       ],
       "function": "Missing supporting interior components; reusable across several selected rooms",
       "construction": "One separate stair runner repeat section at appropriate human scale; precise rose/ivory/gold and restrained blue textile motifs matching source. Preserve actual construction (four stable legs for furniture, flat backs for frames, one coherent object). No existing chandelier/mirror/tea-set master duplicated. Dimensions are bounding proposals to refine by function.",
-      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
-      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "attachment_face": "Broad flat underside to floor/table/bed; shortest thickness normal Z",
+      "semantic_front": "Decorated broad face upwards+Z",
       "target_polycount_proposed": 2500,
       "reuse_class": "reusable",
       "applies_to": [
@@ -366,13 +366,13 @@
       "kind": "architectural-detail",
       "dimensions_m_proposed": [
         1,
-        0.35,
-        1
+        1,
+        0.015
       ],
       "function": "Missing supporting interior components; reusable across several selected rooms",
       "construction": "One separate stair runner landing return at appropriate human scale; precise rose/ivory/gold and restrained blue textile motifs matching source. Preserve actual construction (four stable legs for furniture, flat backs for frames, one coherent object). No existing chandelier/mirror/tea-set master duplicated. Dimensions are bounding proposals to refine by function.",
-      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
-      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "attachment_face": "Broad flat underside to floor/table/bed; shortest thickness normal Z",
+      "semantic_front": "Decorated broad face upwards+Z",
       "target_polycount_proposed": 2500,
       "reuse_class": "reusable",
       "applies_to": [
@@ -396,8 +396,8 @@
       "kind": "architectural-detail",
       "dimensions_m_proposed": [
         1,
-        0.35,
-        1
+        0.03,
+        0.03
       ],
       "function": "Missing supporting interior components; reusable across several selected rooms",
       "construction": "One separate runner retaining rod at appropriate human scale; precise rose/ivory/gold and restrained blue textile motifs matching source. Preserve actual construction (four stable legs for furniture, flat backs for frames, one coherent object). No existing chandelier/mirror/tea-set master duplicated. Dimensions are bounding proposals to refine by function.",
@@ -425,14 +425,14 @@
       "name": "Table runner end",
       "kind": "architectural-detail",
       "dimensions_m_proposed": [
-        1,
-        0.35,
-        1
+        0.4,
+        0.6,
+        0.015
       ],
       "function": "Missing supporting interior components; reusable across several selected rooms",
       "construction": "One separate table runner end at appropriate human scale; precise rose/ivory/gold and restrained blue textile motifs matching source. Preserve actual construction (four stable legs for furniture, flat backs for frames, one coherent object). No existing chandelier/mirror/tea-set master duplicated. Dimensions are bounding proposals to refine by function.",
-      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
-      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "attachment_face": "Broad flat underside to floor/table/bed; shortest thickness normal Z",
+      "semantic_front": "Decorated broad face upwards+Z",
       "target_polycount_proposed": 2500,
       "reuse_class": "reusable",
       "applies_to": [
@@ -456,8 +456,8 @@
       "kind": "architectural-detail",
       "dimensions_m_proposed": [
         1,
-        0.35,
-        1
+        0.02,
+        0.12
       ],
       "function": "Missing supporting interior components; reusable across several selected rooms",
       "construction": "One separate small decorative tapestry border at appropriate human scale; precise rose/ivory/gold and restrained blue textile motifs matching source. Preserve actual construction (four stable legs for furniture, flat backs for frames, one coherent object). No existing chandelier/mirror/tea-set master duplicated. Dimensions are bounding proposals to refine by function.",

@@ -130,12 +130,22 @@
       "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
     }
   ],
-  "outputs": [],
+  "outputs": [
+    {
+      "file": "completion-pass/INT-THRONE-SHELL-001/INT-THRONE-SHELL-001.png",
+      "sha256": "cec7f288999118807a5318331c6cba508dfe8a49b14547100d32d27911b03395",
+      "original_file": "/workspace/generated_images/exec-706a951f-7c0c-44bf-8f8e-dd99335dcf26.png",
+      "actual_input_file": "images/illustrated-boards/GEN-26.png",
+      "actual_input_sha256": "6ca64686df3226a1da314f2865d3cd2699124b9f746b44ace5fbb72aa9801321",
+      "attempt": 1,
+      "generator": "image_gen.imagegen"
+    }
+  ],
   "previous_attempts": [],
   "models_generated": 0,
   "physical_join_fit_verified": false,
   "view_geometry_parity_verified": false,
-  "review_status": "planned-after-gap-audit",
+  "review_status": "generated-pending-visual-and-model-review",
   "gap": "Missing construction views behind existing room snapshots; generic substrate plus source-compatible interior faces",
   "mode": "structure"
 }

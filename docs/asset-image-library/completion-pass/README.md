@@ -8,24 +8,24 @@ Main palace keeps GEN-37’s front, continuous angled/curved stepped wings, rose
 
 The coverage checks ask whether each form already exists, whether its construction/contact view is missing, whether interior ceiling/arch/wall/floor parts are present, whether water inlet/bend/junction/outlet parts are covered, and whether ecology fits each site. Reuse original plants, lighting, furnishings and hero wishes before new drawings. Each room snapshot is distinct from joinable structural shells and isolated details. Smaller views are not new model targets. Full IDs are in metadata; shorter D/A/S labels resolve under the sheet title.
 
-Progress: **9/115 queued sheets saved;56 component targets indexed so far**. Library: **102 selected sheets saved;208/230 selected or reserved;822 archive images**.230is a ceiling, not a target to pad.
+Progress: **23/115 queued sheets saved;118 component targets indexed so far**. Library: **116 selected sheets saved;208/230 selected or reserved;836 archive images**.230is a ceiling, not a target to pad.
 
 | Sheet | Gap covered | Parts | Status |
 | --- | --- | ---: | --- |
-| [PAL-DOME-INNER-001](PAL-DOME-INNER-001/schedule.json) | Original palace — internal dome and support sections | 4 | Queued; not generated |
-| [PAL-DOME-INNER-DETAIL-001](PAL-DOME-INNER-DETAIL-001/schedule.json) | Original palace — dome ceiling and arch fittings | 16 | Queued; not generated |
-| [PAL-WING-001](PAL-WING-001/schedule.json) | Original palace — source-compatible angled wing modules | 4 | Queued; not generated |
-| [PAL-ROOF-GARDEN-JOIN-001](PAL-ROOF-GARDEN-JOIN-001/schedule.json) | Original palace — roof court and wing terrace joins | 4 | Queued; not generated |
-| [PAL-SKY-SUPPORT-001](PAL-SKY-SUPPORT-001/schedule.json) | Original palace — delicate platform supports | 4 | Queued; not generated |
-| [PAL-TERRACE-STAIR-JOIN-001](PAL-TERRACE-STAIR-JOIN-001/schedule.json) | Original palace — stair landing and level connections | 4 | Queued; not generated |
-| [INT-THRONE-SHELL-001](INT-THRONE-SHELL-001/schedule.json) | Throne — interior shell sections | 4 | Queued; not generated |
-| [INT-LIBRARY-SHELL-001](INT-LIBRARY-SHELL-001/schedule.json) | Library — interior shell sections | 4 | Queued; not generated |
-| [INT-CONSERV-SHELL-001](INT-CONSERV-SHELL-001/schedule.json) | Conserv — interior shell sections | 4 | Queued; not generated |
-| [INT-SUITE-SHELL-001](INT-SUITE-SHELL-001/schedule.json) | Suite — interior shell sections | 4 | Queued; not generated |
-| [INT-R02](INT-R02/schedule.json) | Princess suite — coordinated interior views | 1 | Queued; not generated |
-| [INT-R03](INT-R03/schedule.json) | Dining salon — coordinated interior views | 1 | Queued; not generated |
-| [INT-SUITE-FURN-001](INT-SUITE-FURN-001/schedule.json) | Princess bedroom and dressing furniture | 4 | Queued; not generated |
-| [INT-DINING-FURN-001](INT-DINING-FURN-001/schedule.json) | Dining and tea furniture sections | 4 | Queued; not generated |
+| [PAL-DOME-INNER-001](PAL-DOME-INNER-001/schedule.json) | Original palace — internal dome and support sections | 4 | Saved reference; fit/model pending |
+| [PAL-DOME-INNER-DETAIL-001](PAL-DOME-INNER-DETAIL-001/schedule.json) | Original palace — dome ceiling and arch fittings | 16 | Saved reference; fit/model pending |
+| [PAL-WING-001](PAL-WING-001/schedule.json) | Original palace — source-compatible angled wing modules | 4 | Saved reference; fit/model pending |
+| [PAL-ROOF-GARDEN-JOIN-001](PAL-ROOF-GARDEN-JOIN-001/schedule.json) | Original palace — roof court and wing terrace joins | 4 | Saved reference; fit/model pending |
+| [PAL-SKY-SUPPORT-001](PAL-SKY-SUPPORT-001/schedule.json) | Original palace — delicate platform supports | 4 | Saved reference; fit/model pending |
+| [PAL-TERRACE-STAIR-JOIN-001](PAL-TERRACE-STAIR-JOIN-001/schedule.json) | Original palace — stair landing and level connections | 4 | Saved reference; fit/model pending |
+| [INT-THRONE-SHELL-001](INT-THRONE-SHELL-001/schedule.json) | Throne — interior shell sections | 4 | Saved reference; fit/model pending |
+| [INT-LIBRARY-SHELL-001](INT-LIBRARY-SHELL-001/schedule.json) | Library — interior shell sections | 4 | Saved reference; fit/model pending |
+| [INT-CONSERV-SHELL-001](INT-CONSERV-SHELL-001/schedule.json) | Conserv — interior shell sections | 4 | Saved reference; fit/model pending |
+| [INT-SUITE-SHELL-001](INT-SUITE-SHELL-001/schedule.json) | Suite — interior shell sections | 4 | Saved reference; fit/model pending |
+| [INT-R02](INT-R02/schedule.json) | Princess suite — coordinated interior views | 1 | Saved reference; fit/model pending |
+| [INT-R03](INT-R03/schedule.json) | Dining salon — coordinated interior views | 1 | Saved reference; fit/model pending |
+| [INT-SUITE-FURN-001](INT-SUITE-FURN-001/schedule.json) | Princess bedroom and dressing furniture | 4 | Saved reference; fit/model pending |
+| [INT-DINING-FURN-001](INT-DINING-FURN-001/schedule.json) | Dining and tea furniture sections | 4 | Saved reference; fit/model pending |
 | [INT-LIBRARY-PROP-001](INT-LIBRARY-PROP-001/schedule.json) | Library Prop | 12 | Queued; not generated |
 | [INT-GALLERY-PROP-001](INT-GALLERY-PROP-001/schedule.json) | Gallery Prop | 12 | Queued; not generated |
 | [INT-ATELIER-PROP-001](INT-ATELIER-PROP-001/schedule.json) | Atelier Prop | 12 | Queued; not generated |

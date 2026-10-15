@@ -28,7 +28,17 @@
       "model_sha256": "",
       "review_status": "pending-reference-review",
       "suggested_model_filename": "PAL-ROOF-GARDEN-JOIN-001-S01__chamfered-terrace-corner-platform__v001.glb",
-      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed",
+      "component_family": "Original palace \u2014 roof court and wing terrace joins",
+      "parent_asset_family": "PAL-ROOF-GARDEN-JOIN-001",
+      "reference_image_id": "PAL-ROOF-GARDEN-JOIN-001",
+      "reference_file": "completion-pass/PAL-ROOF-GARDEN-JOIN-001/PAL-ROOF-GARDEN-JOIN-001.png",
+      "reference_sha256": "9a22e3c118d380c061c3d4dd7726c42a634da1b60979042ae8b5fb73ffba75a6",
+      "source_reference_id": "GEN-16",
+      "source_reference_file": "images/illustrated-boards/GEN-16.png",
+      "source_reference_sha256": "7bd2e64078fb526204113287b3fe012821f10e3c1f02b9005d8b56bd58e56f4f",
+      "notes": " Source backs, dimensions, repeat patterns, inter-view parity and physical attachment remain unverified. Whole-sheet generation does not prove individual meshes are separable.",
+      "geometry_review_status": "unverified"
     },
     {
       "asset_id": "PAL-ROOF-GARDEN-JOIN-001-S02",
@@ -58,7 +68,17 @@
       "model_sha256": "",
       "review_status": "pending-reference-review",
       "suggested_model_filename": "PAL-ROOF-GARDEN-JOIN-001-S02__rounded-wing-garden-extrusion__v001.glb",
-      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed",
+      "component_family": "Original palace \u2014 roof court and wing terrace joins",
+      "parent_asset_family": "PAL-ROOF-GARDEN-JOIN-001",
+      "reference_image_id": "PAL-ROOF-GARDEN-JOIN-001",
+      "reference_file": "completion-pass/PAL-ROOF-GARDEN-JOIN-001/PAL-ROOF-GARDEN-JOIN-001.png",
+      "reference_sha256": "9a22e3c118d380c061c3d4dd7726c42a634da1b60979042ae8b5fb73ffba75a6",
+      "source_reference_id": "GEN-16",
+      "source_reference_file": "images/illustrated-boards/GEN-16.png",
+      "source_reference_sha256": "7bd2e64078fb526204113287b3fe012821f10e3c1f02b9005d8b56bd58e56f4f",
+      "notes": " Source backs, dimensions, repeat patterns, inter-view parity and physical attachment remain unverified. Whole-sheet generation does not prove individual meshes are separable.",
+      "geometry_review_status": "unverified"
     },
     {
       "asset_id": "PAL-ROOF-GARDEN-JOIN-001-S03",
@@ -88,7 +108,17 @@
       "model_sha256": "",
       "review_status": "pending-reference-review",
       "suggested_model_filename": "PAL-ROOF-GARDEN-JOIN-001-S03__recessed-courtyard-floor-and-drain-seat__v001.glb",
-      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed",
+      "component_family": "Original palace \u2014 roof court and wing terrace joins",
+      "parent_asset_family": "PAL-ROOF-GARDEN-JOIN-001",
+      "reference_image_id": "PAL-ROOF-GARDEN-JOIN-001",
+      "reference_file": "completion-pass/PAL-ROOF-GARDEN-JOIN-001/PAL-ROOF-GARDEN-JOIN-001.png",
+      "reference_sha256": "9a22e3c118d380c061c3d4dd7726c42a634da1b60979042ae8b5fb73ffba75a6",
+      "source_reference_id": "GEN-16",
+      "source_reference_file": "images/illustrated-boards/GEN-16.png",
+      "source_reference_sha256": "7bd2e64078fb526204113287b3fe012821f10e3c1f02b9005d8b56bd58e56f4f",
+      "notes": " Source backs, dimensions, repeat patterns, inter-view parity and physical attachment remain unverified. Whole-sheet generation does not prove individual meshes are separable.",
+      "geometry_review_status": "unverified"
     },
     {
       "asset_id": "PAL-ROOF-GARDEN-JOIN-001-S04",
@@ -118,7 +148,17 @@
       "model_sha256": "",
       "review_status": "pending-reference-review",
       "suggested_model_filename": "PAL-ROOF-GARDEN-JOIN-001-S04__roof-stair-arrival-landing__v001.glb",
-      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed",
+      "component_family": "Original palace \u2014 roof court and wing terrace joins",
+      "parent_asset_family": "PAL-ROOF-GARDEN-JOIN-001",
+      "reference_image_id": "PAL-ROOF-GARDEN-JOIN-001",
+      "reference_file": "completion-pass/PAL-ROOF-GARDEN-JOIN-001/PAL-ROOF-GARDEN-JOIN-001.png",
+      "reference_sha256": "9a22e3c118d380c061c3d4dd7726c42a634da1b60979042ae8b5fb73ffba75a6",
+      "source_reference_id": "GEN-16",
+      "source_reference_file": "images/illustrated-boards/GEN-16.png",
+      "source_reference_sha256": "7bd2e64078fb526204113287b3fe012821f10e3c1f02b9005d8b56bd58e56f4f",
+      "notes": " Source backs, dimensions, repeat patterns, inter-view parity and physical attachment remain unverified. Whole-sheet generation does not prove individual meshes are separable.",
+      "geometry_review_status": "unverified"
     }
   ]
 }

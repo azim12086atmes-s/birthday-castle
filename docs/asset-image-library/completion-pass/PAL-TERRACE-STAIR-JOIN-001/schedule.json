@@ -130,12 +130,22 @@
       "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
     }
   ],
-  "outputs": [],
+  "outputs": [
+    {
+      "file": "completion-pass/PAL-TERRACE-STAIR-JOIN-001/PAL-TERRACE-STAIR-JOIN-001.png",
+      "sha256": "c7d49cd3e13d33be4feeaeb2ad74a74c3bdec035a0154fc62110a10ca0f121fa",
+      "original_file": "/workspace/generated_images/exec-279dd156-9d92-4bd7-907b-8534388c62f4.png",
+      "actual_input_file": "images/illustrated-boards/GEN-16.png",
+      "actual_input_sha256": "7bd2e64078fb526204113287b3fe012821f10e3c1f02b9005d8b56bd58e56f4f",
+      "attempt": 1,
+      "generator": "image_gen.imagegen"
+    }
+  ],
   "previous_attempts": [],
   "models_generated": 0,
   "physical_join_fit_verified": false,
   "view_geometry_parity_verified": false,
-  "review_status": "planned-after-gap-audit",
+  "review_status": "generated-pending-visual-and-model-review",
   "gap": "Missing connections between original stepped wings/roof courts; do not change front fountain/stair layout",
   "mode": "structure"
 }

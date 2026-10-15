@@ -1,6 +1,6 @@
 # Asset production plan and caps
 
-Current completion work: [coverage queue and saved sheets](completion-pass/README.md), **9/115 jobs saved**. **102 selected sheets saved;208/230 allocated;822 archive images**. Allocation:80palace,58other buildings,60nature/ecology,22outdoor/shared,10maps/magic. Geometry, view parity, UVs, anatomy and runtime remain unbuilt/unverified.
+Current completion work: [coverage queue and saved sheets](completion-pass/README.md), **23/115 jobs saved**. **116 selected sheets saved;208/230 allocated;836 archive images**. Allocation:80palace,58other buildings,60nature/ecology,22outdoor/shared,10maps/magic. Geometry, view parity, UVs, anatomy and runtime remain unbuilt/unverified.
 
 Previous B02 exterior pass: [Moon Water Palace — 3 sheets and 20 labelled components](world-location-kits/moon-water-palace/README.md). B02 dedicated cap **3/3**; physical joins and common assembly scale pending. **93 selected sheets saved; 96/230 selected or reserved; 812 archive images**. Shared freshwater fauna is next; no 3D models generated.
 

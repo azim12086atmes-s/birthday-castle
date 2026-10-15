@@ -5,8 +5,8 @@
       "name": "Embroidery stand",
       "kind": "architectural-detail",
       "dimensions_m_proposed": [
-        1,
-        0.35,
+        0.6,
+        0.5,
         1
       ],
       "function": "Missing supporting interior components; reusable across several selected rooms",
@@ -35,9 +35,9 @@
       "name": "Small floor loom",
       "kind": "architectural-detail",
       "dimensions_m_proposed": [
-        1,
-        0.35,
-        1
+        1.2,
+        0.75,
+        1.6
       ],
       "function": "Missing supporting interior components; reusable across several selected rooms",
       "construction": "One separate small floor loom at appropriate human scale; precise rose/ivory/gold and restrained blue textile motifs matching source. Preserve actual construction (four stable legs for furniture, flat backs for frames, one coherent object). No existing chandelier/mirror/tea-set master duplicated. Dimensions are bounding proposals to refine by function.",
@@ -65,9 +65,9 @@
       "name": "Canvas easel",
       "kind": "architectural-detail",
       "dimensions_m_proposed": [
-        1,
-        0.35,
-        1
+        0.7,
+        0.7,
+        1.75
       ],
       "function": "Missing supporting interior components; reusable across several selected rooms",
       "construction": "One separate canvas easel at appropriate human scale; precise rose/ivory/gold and restrained blue textile motifs matching source. Preserve actual construction (four stable legs for furniture, flat backs for frames, one coherent object). No existing chandelier/mirror/tea-set master duplicated. Dimensions are bounding proposals to refine by function.",
@@ -95,14 +95,14 @@
       "name": "Paint palette",
       "kind": "architectural-detail",
       "dimensions_m_proposed": [
-        1,
-        0.35,
-        1
+        0.3,
+        0.2,
+        0.025
       ],
       "function": "Missing supporting interior components; reusable across several selected rooms",
       "construction": "One separate paint palette at appropriate human scale; precise rose/ivory/gold and restrained blue textile motifs matching source. Preserve actual construction (four stable legs for furniture, flat backs for frames, one coherent object). No existing chandelier/mirror/tea-set master duplicated. Dimensions are bounding proposals to refine by function.",
-      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
-      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "attachment_face": "Broad flat underside to floor/table/bed; shortest thickness normal Z",
+      "semantic_front": "Decorated broad face upwards+Z",
       "target_polycount_proposed": 2500,
       "reuse_class": "reusable",
       "applies_to": [
@@ -125,9 +125,9 @@
       "name": "Brush pot",
       "kind": "architectural-detail",
       "dimensions_m_proposed": [
-        1,
-        0.35,
-        1
+        0.12,
+        0.12,
+        0.25
       ],
       "function": "Missing supporting interior components; reusable across several selected rooms",
       "construction": "One separate brush pot at appropriate human scale; precise rose/ivory/gold and restrained blue textile motifs matching source. Preserve actual construction (four stable legs for furniture, flat backs for frames, one coherent object). No existing chandelier/mirror/tea-set master duplicated. Dimensions are bounding proposals to refine by function.",
@@ -155,9 +155,9 @@
       "name": "Thread spool set",
       "kind": "architectural-detail",
       "dimensions_m_proposed": [
-        1,
-        0.35,
-        1
+        0.3,
+        0.2,
+        0.2
       ],
       "function": "Missing supporting interior components; reusable across several selected rooms",
       "construction": "One separate thread spool set at appropriate human scale; precise rose/ivory/gold and restrained blue textile motifs matching source. Preserve actual construction (four stable legs for furniture, flat backs for frames, one coherent object). No existing chandelier/mirror/tea-set master duplicated. Dimensions are bounding proposals to refine by function.",
@@ -185,9 +185,9 @@
       "name": "Fabric roll",
       "kind": "architectural-detail",
       "dimensions_m_proposed": [
+        0.2,
         1,
-        0.35,
-        1
+        0.2
       ],
       "function": "Missing supporting interior components; reusable across several selected rooms",
       "construction": "One separate fabric roll at appropriate human scale; precise rose/ivory/gold and restrained blue textile motifs matching source. Preserve actual construction (four stable legs for furniture, flat backs for frames, one coherent object). No existing chandelier/mirror/tea-set master duplicated. Dimensions are bounding proposals to refine by function.",
@@ -215,14 +215,14 @@
       "name": "Pattern folio",
       "kind": "architectural-detail",
       "dimensions_m_proposed": [
-        1,
         0.35,
-        1
+        0.25,
+        0.05
       ],
       "function": "Missing supporting interior components; reusable across several selected rooms",
       "construction": "One separate pattern folio at appropriate human scale; precise rose/ivory/gold and restrained blue textile motifs matching source. Preserve actual construction (four stable legs for furniture, flat backs for frames, one coherent object). No existing chandelier/mirror/tea-set master duplicated. Dimensions are bounding proposals to refine by function.",
-      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
-      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "attachment_face": "Broad flat underside to floor/table/bed; shortest thickness normal Z",
+      "semantic_front": "Decorated broad face upwards+Z",
       "target_polycount_proposed": 2500,
       "reuse_class": "reusable",
       "applies_to": [
@@ -245,14 +245,14 @@
       "name": "Scissor case",
       "kind": "architectural-detail",
       "dimensions_m_proposed": [
-        1,
-        0.35,
-        1
+        0.12,
+        0.25,
+        0.05
       ],
       "function": "Missing supporting interior components; reusable across several selected rooms",
       "construction": "One separate scissor case at appropriate human scale; precise rose/ivory/gold and restrained blue textile motifs matching source. Preserve actual construction (four stable legs for furniture, flat backs for frames, one coherent object). No existing chandelier/mirror/tea-set master duplicated. Dimensions are bounding proposals to refine by function.",
-      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
-      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "attachment_face": "Broad flat underside to floor/table/bed; shortest thickness normal Z",
+      "semantic_front": "Decorated broad face upwards+Z",
       "target_polycount_proposed": 2500,
       "reuse_class": "reusable",
       "applies_to": [
@@ -275,9 +275,9 @@
       "name": "Needlework basket",
       "kind": "architectural-detail",
       "dimensions_m_proposed": [
-        1,
-        0.35,
-        1
+        0.4,
+        0.3,
+        0.25
       ],
       "function": "Missing supporting interior components; reusable across several selected rooms",
       "construction": "One separate needlework basket at appropriate human scale; precise rose/ivory/gold and restrained blue textile motifs matching source. Preserve actual construction (four stable legs for furniture, flat backs for frames, one coherent object). No existing chandelier/mirror/tea-set master duplicated. Dimensions are bounding proposals to refine by function.",
@@ -305,9 +305,9 @@
       "name": "Dress display torso stand",
       "kind": "architectural-detail",
       "dimensions_m_proposed": [
-        1,
-        0.35,
-        1
+        0.45,
+        0.4,
+        1.7
       ],
       "function": "Missing supporting interior components; reusable across several selected rooms",
       "construction": "One separate dress display torso stand at appropriate human scale; precise rose/ivory/gold and restrained blue textile motifs matching source. Preserve actual construction (four stable legs for furniture, flat backs for frames, one coherent object). No existing chandelier/mirror/tea-set master duplicated. Dimensions are bounding proposals to refine by function.",
@@ -335,9 +335,9 @@
       "name": "Craft stool",
       "kind": "architectural-detail",
       "dimensions_m_proposed": [
-        1,
-        0.35,
-        1
+        0.45,
+        0.45,
+        0.5
       ],
       "function": "Missing supporting interior components; reusable across several selected rooms",
       "construction": "One separate craft stool at appropriate human scale; precise rose/ivory/gold and restrained blue textile motifs matching source. Preserve actual construction (four stable legs for furniture, flat backs for frames, one coherent object). No existing chandelier/mirror/tea-set master duplicated. Dimensions are bounding proposals to refine by function.",

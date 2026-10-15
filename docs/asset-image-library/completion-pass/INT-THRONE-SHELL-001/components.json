@@ -28,7 +28,17 @@
       "model_sha256": "",
       "review_status": "pending-reference-review",
       "suggested_model_filename": "INT-THRONE-SHELL-001-S01__pointed-throne-wall-and-dais-host__v001.glb",
-      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed",
+      "component_family": "Throne \u2014 interior shell sections",
+      "parent_asset_family": "INT-THRONE-SHELL-001",
+      "reference_image_id": "INT-THRONE-SHELL-001",
+      "reference_file": "completion-pass/INT-THRONE-SHELL-001/INT-THRONE-SHELL-001.png",
+      "reference_sha256": "cec7f288999118807a5318331c6cba508dfe8a49b14547100d32d27911b03395",
+      "source_reference_id": "GEN-26",
+      "source_reference_file": "images/illustrated-boards/GEN-26.png",
+      "source_reference_sha256": "6ca64686df3226a1da314f2865d3cd2699124b9f746b44ace5fbb72aa9801321",
+      "notes": " Source backs, dimensions, repeat patterns, inter-view parity and physical attachment remain unverified. Whole-sheet generation does not prove individual meshes are separable.",
+      "geometry_review_status": "unverified"
     },
     {
       "asset_id": "INT-THRONE-SHELL-001-S02",
@@ -58,7 +68,17 @@
       "model_sha256": "",
       "review_status": "pending-reference-review",
       "suggested_model_filename": "INT-THRONE-SHELL-001-S02__open-side-gallery-arch-bay__v001.glb",
-      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed",
+      "component_family": "Throne \u2014 interior shell sections",
+      "parent_asset_family": "INT-THRONE-SHELL-001",
+      "reference_image_id": "INT-THRONE-SHELL-001",
+      "reference_file": "completion-pass/INT-THRONE-SHELL-001/INT-THRONE-SHELL-001.png",
+      "reference_sha256": "cec7f288999118807a5318331c6cba508dfe8a49b14547100d32d27911b03395",
+      "source_reference_id": "GEN-26",
+      "source_reference_file": "images/illustrated-boards/GEN-26.png",
+      "source_reference_sha256": "6ca64686df3226a1da314f2865d3cd2699124b9f746b44ace5fbb72aa9801321",
+      "notes": " Source backs, dimensions, repeat patterns, inter-view parity and physical attachment remain unverified. Whole-sheet generation does not prove individual meshes are separable.",
+      "geometry_review_status": "unverified"
     },
     {
       "asset_id": "INT-THRONE-SHELL-001-S03",
@@ -88,7 +108,17 @@
       "model_sha256": "",
       "review_status": "pending-reference-review",
       "suggested_model_filename": "INT-THRONE-SHELL-001-S03__vault-and-rib-junction-ceiling-bay__v001.glb",
-      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed",
+      "component_family": "Throne \u2014 interior shell sections",
+      "parent_asset_family": "INT-THRONE-SHELL-001",
+      "reference_image_id": "INT-THRONE-SHELL-001",
+      "reference_file": "completion-pass/INT-THRONE-SHELL-001/INT-THRONE-SHELL-001.png",
+      "reference_sha256": "cec7f288999118807a5318331c6cba508dfe8a49b14547100d32d27911b03395",
+      "source_reference_id": "GEN-26",
+      "source_reference_file": "images/illustrated-boards/GEN-26.png",
+      "source_reference_sha256": "6ca64686df3226a1da314f2865d3cd2699124b9f746b44ace5fbb72aa9801321",
+      "notes": " Source backs, dimensions, repeat patterns, inter-view parity and physical attachment remain unverified. Whole-sheet generation does not prove individual meshes are separable.",
+      "geometry_review_status": "unverified"
     },
     {
       "asset_id": "INT-THRONE-SHELL-001-S04",
@@ -118,7 +148,17 @@
       "model_sha256": "",
       "review_status": "pending-reference-review",
       "suggested_model_filename": "INT-THRONE-SHELL-001-S04__marble-stair-and-threshold-host__v001.glb",
-      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed",
+      "component_family": "Throne \u2014 interior shell sections",
+      "parent_asset_family": "INT-THRONE-SHELL-001",
+      "reference_image_id": "INT-THRONE-SHELL-001",
+      "reference_file": "completion-pass/INT-THRONE-SHELL-001/INT-THRONE-SHELL-001.png",
+      "reference_sha256": "cec7f288999118807a5318331c6cba508dfe8a49b14547100d32d27911b03395",
+      "source_reference_id": "GEN-26",
+      "source_reference_file": "images/illustrated-boards/GEN-26.png",
+      "source_reference_sha256": "6ca64686df3226a1da314f2865d3cd2699124b9f746b44ace5fbb72aa9801321",
+      "notes": " Source backs, dimensions, repeat patterns, inter-view parity and physical attachment remain unverified. Whole-sheet generation does not prove individual meshes are separable.",
+      "geometry_review_status": "unverified"
     }
   ]
 }

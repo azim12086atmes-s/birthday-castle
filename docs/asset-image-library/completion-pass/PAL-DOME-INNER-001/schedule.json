@@ -130,12 +130,31 @@
       "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
     }
   ],
-  "outputs": [],
+  "outputs": [
+    {
+      "file": "completion-pass/PAL-DOME-INNER-001/PAL-DOME-INNER-001.png",
+      "sha256": "4294eac5bde467148dbef868f0012d6306eb67b81b4a9219269744974fa19286",
+      "original_file": "/workspace/generated_images/exec-6a35c85e-6bdd-43f9-ba70-a9829404655a.png",
+      "actual_input_file": "world-layout/location-audit/source/B01-GEN-37.png",
+      "actual_input_sha256": "80d436f814c76422bdfd089b395d9f533240f15ee2c1434fc1dae4175a93b638",
+      "attempt": 2,
+      "generator": "image_gen.imagegen"
+    }
+  ],
   "previous_attempts": [],
   "models_generated": 0,
   "physical_join_fit_verified": false,
   "view_geometry_parity_verified": false,
-  "review_status": "planned-after-gap-audit",
+  "review_status": "generated-pending-visual-and-model-review",
   "gap": "Missing dome underside, arch support and transition construction; preserve original palace marble and source dome grammar",
-  "mode": "structure"
+  "mode": "structure",
+  "unsaved_attempts": [
+    {
+      "attempt": 1,
+      "reason": "Image returned/rendered but output_hint provided no saved path and local file was not created; raw returned payload was not retained by first orchestration cell.",
+      "saved_file": null,
+      "source_reference_file": "world-layout/location-audit/source/B01-GEN-37.png",
+      "source_reference_sha256": "80d436f814c76422bdfd089b395d9f533240f15ee2c1434fc1dae4175a93b638"
+    }
+  ]
 }

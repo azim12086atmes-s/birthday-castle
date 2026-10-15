@@ -28,7 +28,17 @@
       "model_sha256": "",
       "review_status": "pending-reference-review",
       "suggested_model_filename": "INT-R02-S01__princess-suite-room-shell__v001.glb",
-      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed",
+      "component_family": "Princess suite \u2014 coordinated interior views",
+      "parent_asset_family": "INT-R02",
+      "reference_image_id": "INT-R02",
+      "reference_file": "completion-pass/INT-R02/INT-R02.png",
+      "reference_sha256": "9450d3e2c22ff804f7264c0e6481f45be73ee26e9edbf1dbc123a33222d66eb3",
+      "source_reference_id": "GEN-24",
+      "source_reference_file": "images/illustrated-boards/GEN-24.png",
+      "source_reference_sha256": "deb78cfce6dab5c31d9b3519d3bc01a07e58bba453b013fcdb76bd2e8be3f349",
+      "notes": "All four requested room views, one bed per view, three east window bays, south entry, dressing alcove and ceiling section are present. Materials follow GEN-24 furniture vocabulary; room layout itself is new. Plan, arrival view and cutaway place reading southwest and memory display southeast. Opposite view B appears to swap these two corner furniture groups. View B is atmosphere reference only; saved proposed_layout and the top plan control these corner positions. Printed fixed-layout labels are generator output, not a verified geometric guarantee. Actual furniture dimensions, room openings and ceiling bay correspondence must be enforced in the model. Source backs, dimensions, repeat patterns, inter-view parity and physical attachment remain unverified. Whole-sheet generation does not prove individual meshes are separable.",
+      "geometry_review_status": "unverified"
     }
   ]
 }

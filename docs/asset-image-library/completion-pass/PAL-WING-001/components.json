@@ -7,7 +7,7 @@
       "dimensions_m_proposed": [
         60,
         35,
-        70
+        100
       ],
       "function": "Reserved wing reference was unproduced; provide source-matched continuous/chamfered wing segments without redesigning tower placement",
       "construction": "Deep joinable wing portion preserving original tall pointed glazed facade, clustered pilasters, rose/ivory marble and gold bands; rear depth extended conservatively with planar joins, flat roof terrace. Windows proportional to source; do not replace with isolated generic square blocks.",
@@ -28,7 +28,17 @@
       "model_sha256": "",
       "review_status": "pending-reference-review",
       "suggested_model_filename": "PAL-WING-001-S01__continuous-tall-window-wing-bay__v001.glb",
-      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed",
+      "component_family": "Original palace \u2014 source-compatible angled wing modules",
+      "parent_asset_family": "PAL-WING-001",
+      "reference_image_id": "PAL-WING-001",
+      "reference_file": "completion-pass/PAL-WING-001/PAL-WING-001.png",
+      "reference_sha256": "e323bc6a297e274e836fc74a62481fe9350184ca41770e44dacd966729a2bfc7",
+      "source_reference_id": "SRC-LOC-B01-GEN-37",
+      "source_reference_file": "world-layout/location-audit/source/B01-GEN-37.png",
+      "source_reference_sha256": "80d436f814c76422bdfd089b395d9f533240f15ee2c1434fc1dae4175a93b638",
+      "notes": " Source backs, dimensions, repeat patterns, inter-view parity and physical attachment remain unverified. Whole-sheet generation does not prove individual meshes are separable.",
+      "geometry_review_status": "unverified"
     },
     {
       "asset_id": "PAL-WING-001-S02",
@@ -58,7 +68,17 @@
       "model_sha256": "",
       "review_status": "pending-reference-review",
       "suggested_model_filename": "PAL-WING-001-S02__angled-protruding-wing-bay__v001.glb",
-      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed",
+      "component_family": "Original palace \u2014 source-compatible angled wing modules",
+      "parent_asset_family": "PAL-WING-001",
+      "reference_image_id": "PAL-WING-001",
+      "reference_file": "completion-pass/PAL-WING-001/PAL-WING-001.png",
+      "reference_sha256": "e323bc6a297e274e836fc74a62481fe9350184ca41770e44dacd966729a2bfc7",
+      "source_reference_id": "SRC-LOC-B01-GEN-37",
+      "source_reference_file": "world-layout/location-audit/source/B01-GEN-37.png",
+      "source_reference_sha256": "80d436f814c76422bdfd089b395d9f533240f15ee2c1434fc1dae4175a93b638",
+      "notes": " Source backs, dimensions, repeat patterns, inter-view parity and physical attachment remain unverified. Whole-sheet generation does not prove individual meshes are separable.",
+      "geometry_review_status": "unverified"
     },
     {
       "asset_id": "PAL-WING-001-S03",
@@ -88,7 +108,17 @@
       "model_sha256": "",
       "review_status": "pending-reference-review",
       "suggested_model_filename": "PAL-WING-001-S03__rounded-pavilion-wing-attachment__v001.glb",
-      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed",
+      "component_family": "Original palace \u2014 source-compatible angled wing modules",
+      "parent_asset_family": "PAL-WING-001",
+      "reference_image_id": "PAL-WING-001",
+      "reference_file": "completion-pass/PAL-WING-001/PAL-WING-001.png",
+      "reference_sha256": "e323bc6a297e274e836fc74a62481fe9350184ca41770e44dacd966729a2bfc7",
+      "source_reference_id": "SRC-LOC-B01-GEN-37",
+      "source_reference_file": "world-layout/location-audit/source/B01-GEN-37.png",
+      "source_reference_sha256": "80d436f814c76422bdfd089b395d9f533240f15ee2c1434fc1dae4175a93b638",
+      "notes": " Source backs, dimensions, repeat patterns, inter-view parity and physical attachment remain unverified. Whole-sheet generation does not prove individual meshes are separable.",
+      "geometry_review_status": "unverified"
     },
     {
       "asset_id": "PAL-WING-001-S04",
@@ -118,7 +148,17 @@
       "model_sha256": "",
       "review_status": "pending-reference-review",
       "suggested_model_filename": "PAL-WING-001-S04__rear-wing-and-terrace-connector__v001.glb",
-      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed",
+      "component_family": "Original palace \u2014 source-compatible angled wing modules",
+      "parent_asset_family": "PAL-WING-001",
+      "reference_image_id": "PAL-WING-001",
+      "reference_file": "completion-pass/PAL-WING-001/PAL-WING-001.png",
+      "reference_sha256": "e323bc6a297e274e836fc74a62481fe9350184ca41770e44dacd966729a2bfc7",
+      "source_reference_id": "SRC-LOC-B01-GEN-37",
+      "source_reference_file": "world-layout/location-audit/source/B01-GEN-37.png",
+      "source_reference_sha256": "80d436f814c76422bdfd089b395d9f533240f15ee2c1434fc1dae4175a93b638",
+      "notes": " Source backs, dimensions, repeat patterns, inter-view parity and physical attachment remain unverified. Whole-sheet generation does not prove individual meshes are separable.",
+      "geometry_review_status": "unverified"
     }
   ]
 }

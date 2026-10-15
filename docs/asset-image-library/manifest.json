@@ -1,11 +1,11 @@
 {
   "date": "2026-10-13",
-  "distinct_image_count": 822,
+  "distinct_image_count": 836,
   "source_file_count": 969,
-  "total_bytes": 778820334,
+  "total_bytes": 816902423,
   "categories": {
     "additional-generated-studies": 33,
-    "completion-reference-kits": 9,
+    "completion-reference-kits": 23,
     "completion-superseded-drafts": 1,
     "component-development-studies": 3,
     "illustrated-boards": 45,
@@ -16695,6 +16695,362 @@
       "reference_role": "source-compatible-missing-component-reference",
       "design_status": "Visible source forms guide design; hidden geometry and metrics proposed; no model or layout approval",
       "review_status": "pending-user-reference-and-model-review"
+    },
+    {
+      "id": "PAL-DOME-INNER-001",
+      "title": "Original palace \u2014 internal dome and support sections",
+      "label": "PAL-DOME-INNER-001 \u2014 Original palace \u2014 internal dome and support sections",
+      "category": "completion-reference-kits",
+      "file": "completion-pass/PAL-DOME-INNER-001/PAL-DOME-INNER-001.png",
+      "sha256": "4294eac5bde467148dbef868f0012d6306eb67b81b4a9219269744974fa19286",
+      "bytes": 2551817,
+      "source_aliases": [
+        "/workspace/generated_images/exec-6a35c85e-6bdd-43f9-ba70-a9829404655a.png"
+      ],
+      "alias_ids": [],
+      "component_ids": [
+        "PAL-DOME-INNER-001-S01",
+        "PAL-DOME-INNER-001-S02",
+        "PAL-DOME-INNER-001-S03",
+        "PAL-DOME-INNER-001-S04"
+      ],
+      "related_image_ids": [
+        "SRC-LOC-B01-GEN-37"
+      ],
+      "reference_role": "source-compatible-missing-component-reference",
+      "design_status": "Visible source forms guide design; hidden geometry and metrics proposed; no model or layout approval",
+      "review_status": "generated-pending-visual-and-model-review"
+    },
+    {
+      "id": "PAL-DOME-INNER-DETAIL-001",
+      "title": "Original palace \u2014 dome ceiling and arch fittings",
+      "label": "PAL-DOME-INNER-DETAIL-001 \u2014 Original palace \u2014 dome ceiling and arch fittings",
+      "category": "completion-reference-kits",
+      "file": "completion-pass/PAL-DOME-INNER-DETAIL-001/PAL-DOME-INNER-DETAIL-001.png",
+      "sha256": "309f90ac7e3c80d286759d29d3ec4e6eaca297008f8b6932f2c73109baae0581",
+      "bytes": 2258346,
+      "source_aliases": [
+        "/workspace/generated_images/exec-c4c3530d-1666-48f3-bb06-9cbb52c2ba17.png"
+      ],
+      "alias_ids": [],
+      "component_ids": [
+        "PAL-DOME-INNER-DETAIL-001-D01",
+        "PAL-DOME-INNER-DETAIL-001-D02",
+        "PAL-DOME-INNER-DETAIL-001-D03",
+        "PAL-DOME-INNER-DETAIL-001-D04",
+        "PAL-DOME-INNER-DETAIL-001-D05",
+        "PAL-DOME-INNER-DETAIL-001-D06",
+        "PAL-DOME-INNER-DETAIL-001-D07",
+        "PAL-DOME-INNER-DETAIL-001-D08",
+        "PAL-DOME-INNER-DETAIL-001-D09",
+        "PAL-DOME-INNER-DETAIL-001-D10",
+        "PAL-DOME-INNER-DETAIL-001-D11",
+        "PAL-DOME-INNER-DETAIL-001-D12",
+        "PAL-DOME-INNER-DETAIL-001-D13",
+        "PAL-DOME-INNER-DETAIL-001-D14",
+        "PAL-DOME-INNER-DETAIL-001-D15",
+        "PAL-DOME-INNER-DETAIL-001-D16"
+      ],
+      "related_image_ids": [
+        "SRC-LOC-B01-GEN-37"
+      ],
+      "reference_role": "source-compatible-missing-component-reference",
+      "design_status": "Visible source forms guide design; hidden geometry and metrics proposed; no model or layout approval",
+      "review_status": "generated-pending-visual-and-model-review"
+    },
+    {
+      "id": "PAL-WING-001",
+      "title": "Original palace \u2014 source-compatible angled wing modules",
+      "label": "PAL-WING-001 \u2014 Original palace \u2014 source-compatible angled wing modules",
+      "category": "completion-reference-kits",
+      "file": "completion-pass/PAL-WING-001/PAL-WING-001.png",
+      "sha256": "e323bc6a297e274e836fc74a62481fe9350184ca41770e44dacd966729a2bfc7",
+      "bytes": 2721736,
+      "source_aliases": [
+        "/workspace/generated_images/exec-6cb7f5b9-711e-48dc-81f0-7302a11c088f.png"
+      ],
+      "alias_ids": [],
+      "component_ids": [
+        "PAL-WING-001-S01",
+        "PAL-WING-001-S02",
+        "PAL-WING-001-S03",
+        "PAL-WING-001-S04"
+      ],
+      "related_image_ids": [
+        "SRC-LOC-B01-GEN-37"
+      ],
+      "reference_role": "source-compatible-missing-component-reference",
+      "design_status": "Visible source forms guide design; hidden geometry and metrics proposed; no model or layout approval",
+      "review_status": "generated-pending-visual-and-model-review"
+    },
+    {
+      "id": "PAL-ROOF-GARDEN-JOIN-001",
+      "title": "Original palace \u2014 roof court and wing terrace joins",
+      "label": "PAL-ROOF-GARDEN-JOIN-001 \u2014 Original palace \u2014 roof court and wing terrace joins",
+      "category": "completion-reference-kits",
+      "file": "completion-pass/PAL-ROOF-GARDEN-JOIN-001/PAL-ROOF-GARDEN-JOIN-001.png",
+      "sha256": "9a22e3c118d380c061c3d4dd7726c42a634da1b60979042ae8b5fb73ffba75a6",
+      "bytes": 2751848,
+      "source_aliases": [
+        "/workspace/generated_images/exec-d964d028-998e-4d51-aaad-5aec377f791d.png"
+      ],
+      "alias_ids": [],
+      "component_ids": [
+        "PAL-ROOF-GARDEN-JOIN-001-S01",
+        "PAL-ROOF-GARDEN-JOIN-001-S02",
+        "PAL-ROOF-GARDEN-JOIN-001-S03",
+        "PAL-ROOF-GARDEN-JOIN-001-S04"
+      ],
+      "related_image_ids": [
+        "GEN-16"
+      ],
+      "reference_role": "source-compatible-missing-component-reference",
+      "design_status": "Visible source forms guide design; hidden geometry and metrics proposed; no model or layout approval",
+      "review_status": "generated-pending-visual-and-model-review"
+    },
+    {
+      "id": "PAL-SKY-SUPPORT-001",
+      "title": "Original palace \u2014 delicate platform supports",
+      "label": "PAL-SKY-SUPPORT-001 \u2014 Original palace \u2014 delicate platform supports",
+      "category": "completion-reference-kits",
+      "file": "completion-pass/PAL-SKY-SUPPORT-001/PAL-SKY-SUPPORT-001.png",
+      "sha256": "4d70f66b1db87c9a6a3fffd886b2a7678216c1681cb11591b3695336644fc2cd",
+      "bytes": 2341799,
+      "source_aliases": [
+        "/workspace/generated_images/exec-c11827a6-5359-4768-8b4a-c08d143d0406.png"
+      ],
+      "alias_ids": [],
+      "component_ids": [
+        "PAL-SKY-SUPPORT-001-S01",
+        "PAL-SKY-SUPPORT-001-S02",
+        "PAL-SKY-SUPPORT-001-S03",
+        "PAL-SKY-SUPPORT-001-S04"
+      ],
+      "related_image_ids": [
+        "GEN-36"
+      ],
+      "reference_role": "source-compatible-missing-component-reference",
+      "design_status": "Visible source forms guide design; hidden geometry and metrics proposed; no model or layout approval",
+      "review_status": "generated-pending-visual-and-model-review"
+    },
+    {
+      "id": "PAL-TERRACE-STAIR-JOIN-001",
+      "title": "Original palace \u2014 stair landing and level connections",
+      "label": "PAL-TERRACE-STAIR-JOIN-001 \u2014 Original palace \u2014 stair landing and level connections",
+      "category": "completion-reference-kits",
+      "file": "completion-pass/PAL-TERRACE-STAIR-JOIN-001/PAL-TERRACE-STAIR-JOIN-001.png",
+      "sha256": "c7d49cd3e13d33be4feeaeb2ad74a74c3bdec035a0154fc62110a10ca0f121fa",
+      "bytes": 2617082,
+      "source_aliases": [
+        "/workspace/generated_images/exec-279dd156-9d92-4bd7-907b-8534388c62f4.png"
+      ],
+      "alias_ids": [],
+      "component_ids": [
+        "PAL-TERRACE-STAIR-JOIN-001-S01",
+        "PAL-TERRACE-STAIR-JOIN-001-S02",
+        "PAL-TERRACE-STAIR-JOIN-001-S03",
+        "PAL-TERRACE-STAIR-JOIN-001-S04"
+      ],
+      "related_image_ids": [
+        "GEN-16"
+      ],
+      "reference_role": "source-compatible-missing-component-reference",
+      "design_status": "Visible source forms guide design; hidden geometry and metrics proposed; no model or layout approval",
+      "review_status": "generated-pending-visual-and-model-review"
+    },
+    {
+      "id": "INT-THRONE-SHELL-001",
+      "title": "Throne \u2014 interior shell sections",
+      "label": "INT-THRONE-SHELL-001 \u2014 Throne \u2014 interior shell sections",
+      "category": "completion-reference-kits",
+      "file": "completion-pass/INT-THRONE-SHELL-001/INT-THRONE-SHELL-001.png",
+      "sha256": "cec7f288999118807a5318331c6cba508dfe8a49b14547100d32d27911b03395",
+      "bytes": 2717648,
+      "source_aliases": [
+        "/workspace/generated_images/exec-706a951f-7c0c-44bf-8f8e-dd99335dcf26.png"
+      ],
+      "alias_ids": [],
+      "component_ids": [
+        "INT-THRONE-SHELL-001-S01",
+        "INT-THRONE-SHELL-001-S02",
+        "INT-THRONE-SHELL-001-S03",
+        "INT-THRONE-SHELL-001-S04"
+      ],
+      "related_image_ids": [
+        "GEN-26"
+      ],
+      "reference_role": "source-compatible-missing-component-reference",
+      "design_status": "Visible source forms guide design; hidden geometry and metrics proposed; no model or layout approval",
+      "review_status": "generated-pending-visual-and-model-review"
+    },
+    {
+      "id": "INT-LIBRARY-SHELL-001",
+      "title": "Library \u2014 interior shell sections",
+      "label": "INT-LIBRARY-SHELL-001 \u2014 Library \u2014 interior shell sections",
+      "category": "completion-reference-kits",
+      "file": "completion-pass/INT-LIBRARY-SHELL-001/INT-LIBRARY-SHELL-001.png",
+      "sha256": "06facb9319883c0a5a98cdcb7f4d6518626702bf76df4385262a754f1912c9bb",
+      "bytes": 2818422,
+      "source_aliases": [
+        "/workspace/generated_images/exec-710755fb-628f-45bd-bf79-e889baa91bc6.png"
+      ],
+      "alias_ids": [],
+      "component_ids": [
+        "INT-LIBRARY-SHELL-001-S01",
+        "INT-LIBRARY-SHELL-001-S02",
+        "INT-LIBRARY-SHELL-001-S03",
+        "INT-LIBRARY-SHELL-001-S04"
+      ],
+      "related_image_ids": [
+        "GEN-26"
+      ],
+      "reference_role": "source-compatible-missing-component-reference",
+      "design_status": "Visible source forms guide design; hidden geometry and metrics proposed; no model or layout approval",
+      "review_status": "generated-pending-visual-and-model-review"
+    },
+    {
+      "id": "INT-CONSERV-SHELL-001",
+      "title": "Conserv \u2014 interior shell sections",
+      "label": "INT-CONSERV-SHELL-001 \u2014 Conserv \u2014 interior shell sections",
+      "category": "completion-reference-kits",
+      "file": "completion-pass/INT-CONSERV-SHELL-001/INT-CONSERV-SHELL-001.png",
+      "sha256": "254a174e48e79f69dee7112c477f5db5eb188e019d26fe5e2ba48a6b20d3d0a3",
+      "bytes": 2984062,
+      "source_aliases": [
+        "/workspace/generated_images/exec-fe2a3bcc-e0d8-43ee-9bd8-60ed0e192b6d.png"
+      ],
+      "alias_ids": [],
+      "component_ids": [
+        "INT-CONSERV-SHELL-001-S01",
+        "INT-CONSERV-SHELL-001-S02",
+        "INT-CONSERV-SHELL-001-S03",
+        "INT-CONSERV-SHELL-001-S04"
+      ],
+      "related_image_ids": [
+        "GEN-26"
+      ],
+      "reference_role": "source-compatible-missing-component-reference",
+      "design_status": "Visible source forms guide design; hidden geometry and metrics proposed; no model or layout approval",
+      "review_status": "visual-review-with-scope-and-view-parity-limitations"
+    },
+    {
+      "id": "INT-SUITE-SHELL-001",
+      "title": "Suite \u2014 interior shell sections",
+      "label": "INT-SUITE-SHELL-001 \u2014 Suite \u2014 interior shell sections",
+      "category": "completion-reference-kits",
+      "file": "completion-pass/INT-SUITE-SHELL-001/INT-SUITE-SHELL-001.png",
+      "sha256": "6f65dd45d8346a12d5c8501b4738ad0d3394438431f662fc379d935cee348635",
+      "bytes": 2376354,
+      "source_aliases": [
+        "/workspace/generated_images/exec-1b958c94-ab83-4407-866d-003d6db0f2a6.png"
+      ],
+      "alias_ids": [],
+      "component_ids": [
+        "INT-SUITE-SHELL-001-S01",
+        "INT-SUITE-SHELL-001-S02",
+        "INT-SUITE-SHELL-001-S03",
+        "INT-SUITE-SHELL-001-S04"
+      ],
+      "related_image_ids": [
+        "GEN-26"
+      ],
+      "reference_role": "source-compatible-missing-component-reference",
+      "design_status": "Visible source forms guide design; hidden geometry and metrics proposed; no model or layout approval",
+      "review_status": "visual-review-with-top-diagram-and-join-limitations"
+    },
+    {
+      "id": "INT-R02",
+      "title": "Princess suite \u2014 coordinated interior views",
+      "label": "INT-R02 \u2014 Princess suite \u2014 coordinated interior views",
+      "category": "completion-reference-kits",
+      "file": "completion-pass/INT-R02/INT-R02.png",
+      "sha256": "9450d3e2c22ff804f7264c0e6481f45be73ee26e9edbf1dbc123a33222d66eb3",
+      "bytes": 3535221,
+      "source_aliases": [
+        "/workspace/generated_images/exec-5a00a4bc-3d29-4346-9d06-cb10f666e89e.png"
+      ],
+      "alias_ids": [],
+      "component_ids": [
+        "INT-R02-S01"
+      ],
+      "related_image_ids": [
+        "GEN-24"
+      ],
+      "reference_role": "proposed-room-multiview-reference",
+      "design_status": "Visible source forms guide design; hidden geometry and metrics proposed; no model or layout approval",
+      "review_status": "reference-with-opposite-view-furniture-placement-discrepancy"
+    },
+    {
+      "id": "INT-R03",
+      "title": "Dining salon \u2014 coordinated interior views",
+      "label": "INT-R03 \u2014 Dining salon \u2014 coordinated interior views",
+      "category": "completion-reference-kits",
+      "file": "completion-pass/INT-R03/INT-R03.png",
+      "sha256": "090a74711034af1d671c2c6b8521dacebe5d7017a5f8584ac6c62805ecfb78b4",
+      "bytes": 3686838,
+      "source_aliases": [
+        "/workspace/generated_images/exec-c3d9b983-96ed-4dfc-b924-a6e001b7929c.png"
+      ],
+      "alias_ids": [],
+      "component_ids": [
+        "INT-R03-S01"
+      ],
+      "related_image_ids": [
+        "GEN-26"
+      ],
+      "reference_role": "proposed-room-multiview-reference",
+      "design_status": "Visible source forms guide design; hidden geometry and metrics proposed; no model or layout approval",
+      "review_status": "reference-with-seat-count-and-proportion-review-pending"
+    },
+    {
+      "id": "INT-SUITE-FURN-001",
+      "title": "Princess bedroom and dressing furniture",
+      "label": "INT-SUITE-FURN-001 \u2014 Princess bedroom and dressing furniture",
+      "category": "completion-reference-kits",
+      "file": "completion-pass/INT-SUITE-FURN-001/INT-SUITE-FURN-001.png",
+      "sha256": "5ca62205be9b18b5b70af37de9f22e269be5e502b8e1fe0d17adae9a06184015",
+      "bytes": 2473441,
+      "source_aliases": [
+        "/workspace/generated_images/exec-20d6e783-869f-468d-93e9-d666260e0a2a.png"
+      ],
+      "alias_ids": [],
+      "component_ids": [
+        "INT-SUITE-FURN-001-S01",
+        "INT-SUITE-FURN-001-S02",
+        "INT-SUITE-FURN-001-S03",
+        "INT-SUITE-FURN-001-S04"
+      ],
+      "related_image_ids": [
+        "GEN-24"
+      ],
+      "reference_role": "source-compatible-missing-component-reference",
+      "design_status": "Visible source forms guide design; hidden geometry and metrics proposed; no model or layout approval",
+      "review_status": "visual-reviewed-reference-pending-mesh-and-hardware-review"
+    },
+    {
+      "id": "INT-DINING-FURN-001",
+      "title": "Dining and tea furniture sections",
+      "label": "INT-DINING-FURN-001 \u2014 Dining and tea furniture sections",
+      "category": "completion-reference-kits",
+      "file": "completion-pass/INT-DINING-FURN-001/INT-DINING-FURN-001.png",
+      "sha256": "85c257f5af9835d2b6dd7190c9ba505264e6ef92e8d718a1c240b935be01aa53",
+      "bytes": 2247475,
+      "source_aliases": [
+        "/workspace/generated_images/exec-43e2f051-3df2-4caa-9e75-a65eec220e33.png"
+      ],
+      "alias_ids": [],
+      "component_ids": [
+        "INT-DINING-FURN-001-S01",
+        "INT-DINING-FURN-001-S02",
+        "INT-DINING-FURN-001-S03",
+        "INT-DINING-FURN-001-S04"
+      ],
+      "related_image_ids": [
+        "GEN-24"
+      ],
+      "reference_role": "source-compatible-missing-component-reference",
+      "design_status": "Visible source forms guide design; hidden geometry and metrics proposed; no model or layout approval",
+      "review_status": "reference-with-end-apron-and-underside-leg-discrepancies"
     }
   ],
   "label_schema_version": 1

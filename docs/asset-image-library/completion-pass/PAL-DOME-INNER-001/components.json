@@ -28,7 +28,17 @@
       "model_sha256": "",
       "review_status": "pending-reference-review",
       "suggested_model_filename": "PAL-DOME-INNER-001-S01__dome-interior-wedge__v001.glb",
-      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed",
+      "component_family": "Original palace \u2014 internal dome and support sections",
+      "parent_asset_family": "PAL-DOME-INNER-001",
+      "reference_image_id": "PAL-DOME-INNER-001",
+      "reference_file": "completion-pass/PAL-DOME-INNER-001/PAL-DOME-INNER-001.png",
+      "reference_sha256": "4294eac5bde467148dbef868f0012d6306eb67b81b4a9219269744974fa19286",
+      "source_reference_id": "SRC-LOC-B01-GEN-37",
+      "source_reference_file": "world-layout/location-audit/source/B01-GEN-37.png",
+      "source_reference_sha256": "80d436f814c76422bdfd089b395d9f533240f15ee2c1434fc1dae4175a93b638",
+      "notes": " Source backs, dimensions, repeat patterns, inter-view parity and physical attachment remain unverified. Whole-sheet generation does not prove individual meshes are separable.",
+      "geometry_review_status": "unverified"
     },
     {
       "asset_id": "PAL-DOME-INNER-001-S02",
@@ -58,7 +68,17 @@
       "model_sha256": "",
       "review_status": "pending-reference-review",
       "suggested_model_filename": "PAL-DOME-INNER-001-S02__supporting-arch-bay__v001.glb",
-      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed",
+      "component_family": "Original palace \u2014 internal dome and support sections",
+      "parent_asset_family": "PAL-DOME-INNER-001",
+      "reference_image_id": "PAL-DOME-INNER-001",
+      "reference_file": "completion-pass/PAL-DOME-INNER-001/PAL-DOME-INNER-001.png",
+      "reference_sha256": "4294eac5bde467148dbef868f0012d6306eb67b81b4a9219269744974fa19286",
+      "source_reference_id": "SRC-LOC-B01-GEN-37",
+      "source_reference_file": "world-layout/location-audit/source/B01-GEN-37.png",
+      "source_reference_sha256": "80d436f814c76422bdfd089b395d9f533240f15ee2c1434fc1dae4175a93b638",
+      "notes": " Source backs, dimensions, repeat patterns, inter-view parity and physical attachment remain unverified. Whole-sheet generation does not prove individual meshes are separable.",
+      "geometry_review_status": "unverified"
     },
     {
       "asset_id": "PAL-DOME-INNER-001-S03",
@@ -88,7 +108,17 @@
       "model_sha256": "",
       "review_status": "pending-reference-review",
       "suggested_model_filename": "PAL-DOME-INNER-001-S03__square-to-circular-transition__v001.glb",
-      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed",
+      "component_family": "Original palace \u2014 internal dome and support sections",
+      "parent_asset_family": "PAL-DOME-INNER-001",
+      "reference_image_id": "PAL-DOME-INNER-001",
+      "reference_file": "completion-pass/PAL-DOME-INNER-001/PAL-DOME-INNER-001.png",
+      "reference_sha256": "4294eac5bde467148dbef868f0012d6306eb67b81b4a9219269744974fa19286",
+      "source_reference_id": "SRC-LOC-B01-GEN-37",
+      "source_reference_file": "world-layout/location-audit/source/B01-GEN-37.png",
+      "source_reference_sha256": "80d436f814c76422bdfd089b395d9f533240f15ee2c1434fc1dae4175a93b638",
+      "notes": " Source backs, dimensions, repeat patterns, inter-view parity and physical attachment remain unverified. Whole-sheet generation does not prove individual meshes are separable.",
+      "geometry_review_status": "unverified"
     },
     {
       "asset_id": "PAL-DOME-INNER-001-S04",
@@ -118,7 +148,17 @@
       "model_sha256": "",
       "review_status": "pending-reference-review",
       "suggested_model_filename": "PAL-DOME-INNER-001-S04__drum-interior-gallery-bay__v001.glb",
-      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed",
+      "component_family": "Original palace \u2014 internal dome and support sections",
+      "parent_asset_family": "PAL-DOME-INNER-001",
+      "reference_image_id": "PAL-DOME-INNER-001",
+      "reference_file": "completion-pass/PAL-DOME-INNER-001/PAL-DOME-INNER-001.png",
+      "reference_sha256": "4294eac5bde467148dbef868f0012d6306eb67b81b4a9219269744974fa19286",
+      "source_reference_id": "SRC-LOC-B01-GEN-37",
+      "source_reference_file": "world-layout/location-audit/source/B01-GEN-37.png",
+      "source_reference_sha256": "80d436f814c76422bdfd089b395d9f533240f15ee2c1434fc1dae4175a93b638",
+      "notes": " Source backs, dimensions, repeat patterns, inter-view parity and physical attachment remain unverified. Whole-sheet generation does not prove individual meshes are separable.",
+      "geometry_review_status": "unverified"
     }
   ]
 }

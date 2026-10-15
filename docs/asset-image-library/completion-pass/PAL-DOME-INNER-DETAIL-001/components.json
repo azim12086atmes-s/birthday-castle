@@ -28,7 +28,17 @@
       "model_sha256": "",
       "review_status": "pending-reference-review",
       "suggested_model_filename": "PAL-DOME-INNER-DETAIL-001-D01__curved-gold-rib-section__v001.glb",
-      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed",
+      "component_family": "Original palace \u2014 dome ceiling and arch fittings",
+      "parent_asset_family": "PAL-DOME-INNER-DETAIL-001",
+      "reference_image_id": "PAL-DOME-INNER-DETAIL-001",
+      "reference_file": "completion-pass/PAL-DOME-INNER-DETAIL-001/PAL-DOME-INNER-DETAIL-001.png",
+      "reference_sha256": "309f90ac7e3c80d286759d29d3ec4e6eaca297008f8b6932f2c73109baae0581",
+      "source_reference_id": "SRC-LOC-B01-GEN-37",
+      "source_reference_file": "world-layout/location-audit/source/B01-GEN-37.png",
+      "source_reference_sha256": "80d436f814c76422bdfd089b395d9f533240f15ee2c1434fc1dae4175a93b638",
+      "notes": " Source backs, dimensions, repeat patterns, inter-view parity and physical attachment remain unverified. Whole-sheet generation does not prove individual meshes are separable.",
+      "geometry_review_status": "unverified"
     },
     {
       "asset_id": "PAL-DOME-INNER-DETAIL-001-D02",
@@ -58,7 +68,17 @@
       "model_sha256": "",
       "review_status": "pending-reference-review",
       "suggested_model_filename": "PAL-DOME-INNER-DETAIL-001-D02__rib-junction-boss__v001.glb",
-      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed",
+      "component_family": "Original palace \u2014 dome ceiling and arch fittings",
+      "parent_asset_family": "PAL-DOME-INNER-DETAIL-001",
+      "reference_image_id": "PAL-DOME-INNER-DETAIL-001",
+      "reference_file": "completion-pass/PAL-DOME-INNER-DETAIL-001/PAL-DOME-INNER-DETAIL-001.png",
+      "reference_sha256": "309f90ac7e3c80d286759d29d3ec4e6eaca297008f8b6932f2c73109baae0581",
+      "source_reference_id": "SRC-LOC-B01-GEN-37",
+      "source_reference_file": "world-layout/location-audit/source/B01-GEN-37.png",
+      "source_reference_sha256": "80d436f814c76422bdfd089b395d9f533240f15ee2c1434fc1dae4175a93b638",
+      "notes": " Source backs, dimensions, repeat patterns, inter-view parity and physical attachment remain unverified. Whole-sheet generation does not prove individual meshes are separable.",
+      "geometry_review_status": "unverified"
     },
     {
       "asset_id": "PAL-DOME-INNER-DETAIL-001-D03",
@@ -88,7 +108,17 @@
       "model_sha256": "",
       "review_status": "pending-reference-review",
       "suggested_model_filename": "PAL-DOME-INNER-DETAIL-001-D03__dome-apex-rosette__v001.glb",
-      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed",
+      "component_family": "Original palace \u2014 dome ceiling and arch fittings",
+      "parent_asset_family": "PAL-DOME-INNER-DETAIL-001",
+      "reference_image_id": "PAL-DOME-INNER-DETAIL-001",
+      "reference_file": "completion-pass/PAL-DOME-INNER-DETAIL-001/PAL-DOME-INNER-DETAIL-001.png",
+      "reference_sha256": "309f90ac7e3c80d286759d29d3ec4e6eaca297008f8b6932f2c73109baae0581",
+      "source_reference_id": "SRC-LOC-B01-GEN-37",
+      "source_reference_file": "world-layout/location-audit/source/B01-GEN-37.png",
+      "source_reference_sha256": "80d436f814c76422bdfd089b395d9f533240f15ee2c1434fc1dae4175a93b638",
+      "notes": " Source backs, dimensions, repeat patterns, inter-view parity and physical attachment remain unverified. Whole-sheet generation does not prove individual meshes are separable.",
+      "geometry_review_status": "unverified"
     },
     {
       "asset_id": "PAL-DOME-INNER-DETAIL-001-D04",
@@ -118,7 +148,17 @@
       "model_sha256": "",
       "review_status": "pending-reference-review",
       "suggested_model_filename": "PAL-DOME-INNER-DETAIL-001-D04__ivory-ceiling-petal-panel__v001.glb",
-      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed",
+      "component_family": "Original palace \u2014 dome ceiling and arch fittings",
+      "parent_asset_family": "PAL-DOME-INNER-DETAIL-001",
+      "reference_image_id": "PAL-DOME-INNER-DETAIL-001",
+      "reference_file": "completion-pass/PAL-DOME-INNER-DETAIL-001/PAL-DOME-INNER-DETAIL-001.png",
+      "reference_sha256": "309f90ac7e3c80d286759d29d3ec4e6eaca297008f8b6932f2c73109baae0581",
+      "source_reference_id": "SRC-LOC-B01-GEN-37",
+      "source_reference_file": "world-layout/location-audit/source/B01-GEN-37.png",
+      "source_reference_sha256": "80d436f814c76422bdfd089b395d9f533240f15ee2c1434fc1dae4175a93b638",
+      "notes": " Source backs, dimensions, repeat patterns, inter-view parity and physical attachment remain unverified. Whole-sheet generation does not prove individual meshes are separable.",
+      "geometry_review_status": "unverified"
     },
     {
       "asset_id": "PAL-DOME-INNER-DETAIL-001-D05",
@@ -148,7 +188,17 @@
       "model_sha256": "",
       "review_status": "pending-reference-review",
       "suggested_model_filename": "PAL-DOME-INNER-DETAIL-001-D05__rose-ceiling-border-panel__v001.glb",
-      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed",
+      "component_family": "Original palace \u2014 dome ceiling and arch fittings",
+      "parent_asset_family": "PAL-DOME-INNER-DETAIL-001",
+      "reference_image_id": "PAL-DOME-INNER-DETAIL-001",
+      "reference_file": "completion-pass/PAL-DOME-INNER-DETAIL-001/PAL-DOME-INNER-DETAIL-001.png",
+      "reference_sha256": "309f90ac7e3c80d286759d29d3ec4e6eaca297008f8b6932f2c73109baae0581",
+      "source_reference_id": "SRC-LOC-B01-GEN-37",
+      "source_reference_file": "world-layout/location-audit/source/B01-GEN-37.png",
+      "source_reference_sha256": "80d436f814c76422bdfd089b395d9f533240f15ee2c1434fc1dae4175a93b638",
+      "notes": " Source backs, dimensions, repeat patterns, inter-view parity and physical attachment remain unverified. Whole-sheet generation does not prove individual meshes are separable.",
+      "geometry_review_status": "unverified"
     },
     {
       "asset_id": "PAL-DOME-INNER-DETAIL-001-D06",
@@ -178,7 +228,17 @@
       "model_sha256": "",
       "review_status": "pending-reference-review",
       "suggested_model_filename": "PAL-DOME-INNER-DETAIL-001-D06__arch-soffit-coffer__v001.glb",
-      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed",
+      "component_family": "Original palace \u2014 dome ceiling and arch fittings",
+      "parent_asset_family": "PAL-DOME-INNER-DETAIL-001",
+      "reference_image_id": "PAL-DOME-INNER-DETAIL-001",
+      "reference_file": "completion-pass/PAL-DOME-INNER-DETAIL-001/PAL-DOME-INNER-DETAIL-001.png",
+      "reference_sha256": "309f90ac7e3c80d286759d29d3ec4e6eaca297008f8b6932f2c73109baae0581",
+      "source_reference_id": "SRC-LOC-B01-GEN-37",
+      "source_reference_file": "world-layout/location-audit/source/B01-GEN-37.png",
+      "source_reference_sha256": "80d436f814c76422bdfd089b395d9f533240f15ee2c1434fc1dae4175a93b638",
+      "notes": " Source backs, dimensions, repeat patterns, inter-view parity and physical attachment remain unverified. Whole-sheet generation does not prove individual meshes are separable.",
+      "geometry_review_status": "unverified"
     },
     {
       "asset_id": "PAL-DOME-INNER-DETAIL-001-D07",
@@ -208,7 +268,17 @@
       "model_sha256": "",
       "review_status": "pending-reference-review",
       "suggested_model_filename": "PAL-DOME-INNER-DETAIL-001-D07__inner-archivolt-strip__v001.glb",
-      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed",
+      "component_family": "Original palace \u2014 dome ceiling and arch fittings",
+      "parent_asset_family": "PAL-DOME-INNER-DETAIL-001",
+      "reference_image_id": "PAL-DOME-INNER-DETAIL-001",
+      "reference_file": "completion-pass/PAL-DOME-INNER-DETAIL-001/PAL-DOME-INNER-DETAIL-001.png",
+      "reference_sha256": "309f90ac7e3c80d286759d29d3ec4e6eaca297008f8b6932f2c73109baae0581",
+      "source_reference_id": "SRC-LOC-B01-GEN-37",
+      "source_reference_file": "world-layout/location-audit/source/B01-GEN-37.png",
+      "source_reference_sha256": "80d436f814c76422bdfd089b395d9f533240f15ee2c1434fc1dae4175a93b638",
+      "notes": " Source backs, dimensions, repeat patterns, inter-view parity and physical attachment remain unverified. Whole-sheet generation does not prove individual meshes are separable.",
+      "geometry_review_status": "unverified"
     },
     {
       "asset_id": "PAL-DOME-INNER-DETAIL-001-D08",
@@ -238,7 +308,17 @@
       "model_sha256": "",
       "review_status": "pending-reference-review",
       "suggested_model_filename": "PAL-DOME-INNER-DETAIL-001-D08__arch-springing-collar__v001.glb",
-      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed",
+      "component_family": "Original palace \u2014 dome ceiling and arch fittings",
+      "parent_asset_family": "PAL-DOME-INNER-DETAIL-001",
+      "reference_image_id": "PAL-DOME-INNER-DETAIL-001",
+      "reference_file": "completion-pass/PAL-DOME-INNER-DETAIL-001/PAL-DOME-INNER-DETAIL-001.png",
+      "reference_sha256": "309f90ac7e3c80d286759d29d3ec4e6eaca297008f8b6932f2c73109baae0581",
+      "source_reference_id": "SRC-LOC-B01-GEN-37",
+      "source_reference_file": "world-layout/location-audit/source/B01-GEN-37.png",
+      "source_reference_sha256": "80d436f814c76422bdfd089b395d9f533240f15ee2c1434fc1dae4175a93b638",
+      "notes": " Source backs, dimensions, repeat patterns, inter-view parity and physical attachment remain unverified. Whole-sheet generation does not prove individual meshes are separable.",
+      "geometry_review_status": "unverified"
     },
     {
       "asset_id": "PAL-DOME-INNER-DETAIL-001-D09",
@@ -268,7 +348,17 @@
       "model_sha256": "",
       "review_status": "pending-reference-review",
       "suggested_model_filename": "PAL-DOME-INNER-DETAIL-001-D09__pendentive-floral-relief__v001.glb",
-      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed",
+      "component_family": "Original palace \u2014 dome ceiling and arch fittings",
+      "parent_asset_family": "PAL-DOME-INNER-DETAIL-001",
+      "reference_image_id": "PAL-DOME-INNER-DETAIL-001",
+      "reference_file": "completion-pass/PAL-DOME-INNER-DETAIL-001/PAL-DOME-INNER-DETAIL-001.png",
+      "reference_sha256": "309f90ac7e3c80d286759d29d3ec4e6eaca297008f8b6932f2c73109baae0581",
+      "source_reference_id": "SRC-LOC-B01-GEN-37",
+      "source_reference_file": "world-layout/location-audit/source/B01-GEN-37.png",
+      "source_reference_sha256": "80d436f814c76422bdfd089b395d9f533240f15ee2c1434fc1dae4175a93b638",
+      "notes": " Source backs, dimensions, repeat patterns, inter-view parity and physical attachment remain unverified. Whole-sheet generation does not prove individual meshes are separable.",
+      "geometry_review_status": "unverified"
     },
     {
       "asset_id": "PAL-DOME-INNER-DETAIL-001-D10",
@@ -298,7 +388,17 @@
       "model_sha256": "",
       "review_status": "pending-reference-review",
       "suggested_model_filename": "PAL-DOME-INNER-DETAIL-001-D10__drum-window-inner-reveal__v001.glb",
-      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed",
+      "component_family": "Original palace \u2014 dome ceiling and arch fittings",
+      "parent_asset_family": "PAL-DOME-INNER-DETAIL-001",
+      "reference_image_id": "PAL-DOME-INNER-DETAIL-001",
+      "reference_file": "completion-pass/PAL-DOME-INNER-DETAIL-001/PAL-DOME-INNER-DETAIL-001.png",
+      "reference_sha256": "309f90ac7e3c80d286759d29d3ec4e6eaca297008f8b6932f2c73109baae0581",
+      "source_reference_id": "SRC-LOC-B01-GEN-37",
+      "source_reference_file": "world-layout/location-audit/source/B01-GEN-37.png",
+      "source_reference_sha256": "80d436f814c76422bdfd089b395d9f533240f15ee2c1434fc1dae4175a93b638",
+      "notes": " Source backs, dimensions, repeat patterns, inter-view parity and physical attachment remain unverified. Whole-sheet generation does not prove individual meshes are separable.",
+      "geometry_review_status": "unverified"
     },
     {
       "asset_id": "PAL-DOME-INNER-DETAIL-001-D11",
@@ -328,7 +428,17 @@
       "model_sha256": "",
       "review_status": "pending-reference-review",
       "suggested_model_filename": "PAL-DOME-INNER-DETAIL-001-D11__gallery-ceiling-cornice__v001.glb",
-      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed",
+      "component_family": "Original palace \u2014 dome ceiling and arch fittings",
+      "parent_asset_family": "PAL-DOME-INNER-DETAIL-001",
+      "reference_image_id": "PAL-DOME-INNER-DETAIL-001",
+      "reference_file": "completion-pass/PAL-DOME-INNER-DETAIL-001/PAL-DOME-INNER-DETAIL-001.png",
+      "reference_sha256": "309f90ac7e3c80d286759d29d3ec4e6eaca297008f8b6932f2c73109baae0581",
+      "source_reference_id": "SRC-LOC-B01-GEN-37",
+      "source_reference_file": "world-layout/location-audit/source/B01-GEN-37.png",
+      "source_reference_sha256": "80d436f814c76422bdfd089b395d9f533240f15ee2c1434fc1dae4175a93b638",
+      "notes": " Source backs, dimensions, repeat patterns, inter-view parity and physical attachment remain unverified. Whole-sheet generation does not prove individual meshes are separable.",
+      "geometry_review_status": "unverified"
     },
     {
       "asset_id": "PAL-DOME-INNER-DETAIL-001-D12",
@@ -358,7 +468,17 @@
       "model_sha256": "",
       "review_status": "pending-reference-review",
       "suggested_model_filename": "PAL-DOME-INNER-DETAIL-001-D12__curved-ceiling-cornice-return__v001.glb",
-      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed",
+      "component_family": "Original palace \u2014 dome ceiling and arch fittings",
+      "parent_asset_family": "PAL-DOME-INNER-DETAIL-001",
+      "reference_image_id": "PAL-DOME-INNER-DETAIL-001",
+      "reference_file": "completion-pass/PAL-DOME-INNER-DETAIL-001/PAL-DOME-INNER-DETAIL-001.png",
+      "reference_sha256": "309f90ac7e3c80d286759d29d3ec4e6eaca297008f8b6932f2c73109baae0581",
+      "source_reference_id": "SRC-LOC-B01-GEN-37",
+      "source_reference_file": "world-layout/location-audit/source/B01-GEN-37.png",
+      "source_reference_sha256": "80d436f814c76422bdfd089b395d9f533240f15ee2c1434fc1dae4175a93b638",
+      "notes": " Source backs, dimensions, repeat patterns, inter-view parity and physical attachment remain unverified. Whole-sheet generation does not prove individual meshes are separable.",
+      "geometry_review_status": "unverified"
     },
     {
       "asset_id": "PAL-DOME-INNER-DETAIL-001-D13",
@@ -388,7 +508,17 @@
       "model_sha256": "",
       "review_status": "pending-reference-review",
       "suggested_model_filename": "PAL-DOME-INNER-DETAIL-001-D13__lantern-suspension-socket__v001.glb",
-      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed",
+      "component_family": "Original palace \u2014 dome ceiling and arch fittings",
+      "parent_asset_family": "PAL-DOME-INNER-DETAIL-001",
+      "reference_image_id": "PAL-DOME-INNER-DETAIL-001",
+      "reference_file": "completion-pass/PAL-DOME-INNER-DETAIL-001/PAL-DOME-INNER-DETAIL-001.png",
+      "reference_sha256": "309f90ac7e3c80d286759d29d3ec4e6eaca297008f8b6932f2c73109baae0581",
+      "source_reference_id": "SRC-LOC-B01-GEN-37",
+      "source_reference_file": "world-layout/location-audit/source/B01-GEN-37.png",
+      "source_reference_sha256": "80d436f814c76422bdfd089b395d9f533240f15ee2c1434fc1dae4175a93b638",
+      "notes": " Source backs, dimensions, repeat patterns, inter-view parity and physical attachment remain unverified. Whole-sheet generation does not prove individual meshes are separable.",
+      "geometry_review_status": "unverified"
     },
     {
       "asset_id": "PAL-DOME-INNER-DETAIL-001-D14",
@@ -418,7 +548,17 @@
       "model_sha256": "",
       "review_status": "pending-reference-review",
       "suggested_model_filename": "PAL-DOME-INNER-DETAIL-001-D14__small-pierced-vent-cover__v001.glb",
-      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed",
+      "component_family": "Original palace \u2014 dome ceiling and arch fittings",
+      "parent_asset_family": "PAL-DOME-INNER-DETAIL-001",
+      "reference_image_id": "PAL-DOME-INNER-DETAIL-001",
+      "reference_file": "completion-pass/PAL-DOME-INNER-DETAIL-001/PAL-DOME-INNER-DETAIL-001.png",
+      "reference_sha256": "309f90ac7e3c80d286759d29d3ec4e6eaca297008f8b6932f2c73109baae0581",
+      "source_reference_id": "SRC-LOC-B01-GEN-37",
+      "source_reference_file": "world-layout/location-audit/source/B01-GEN-37.png",
+      "source_reference_sha256": "80d436f814c76422bdfd089b395d9f533240f15ee2c1434fc1dae4175a93b638",
+      "notes": " Source backs, dimensions, repeat patterns, inter-view parity and physical attachment remain unverified. Whole-sheet generation does not prove individual meshes are separable.",
+      "geometry_review_status": "unverified"
     },
     {
       "asset_id": "PAL-DOME-INNER-DETAIL-001-D15",
@@ -448,7 +588,17 @@
       "model_sha256": "",
       "review_status": "pending-reference-review",
       "suggested_model_filename": "PAL-DOME-INNER-DETAIL-001-D15__circular-oculus-rim-segment__v001.glb",
-      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed",
+      "component_family": "Original palace \u2014 dome ceiling and arch fittings",
+      "parent_asset_family": "PAL-DOME-INNER-DETAIL-001",
+      "reference_image_id": "PAL-DOME-INNER-DETAIL-001",
+      "reference_file": "completion-pass/PAL-DOME-INNER-DETAIL-001/PAL-DOME-INNER-DETAIL-001.png",
+      "reference_sha256": "309f90ac7e3c80d286759d29d3ec4e6eaca297008f8b6932f2c73109baae0581",
+      "source_reference_id": "SRC-LOC-B01-GEN-37",
+      "source_reference_file": "world-layout/location-audit/source/B01-GEN-37.png",
+      "source_reference_sha256": "80d436f814c76422bdfd089b395d9f533240f15ee2c1434fc1dae4175a93b638",
+      "notes": " Source backs, dimensions, repeat patterns, inter-view parity and physical attachment remain unverified. Whole-sheet generation does not prove individual meshes are separable.",
+      "geometry_review_status": "unverified"
     },
     {
       "asset_id": "PAL-DOME-INNER-DETAIL-001-D16",
@@ -478,7 +628,17 @@
       "model_sha256": "",
       "review_status": "pending-reference-review",
       "suggested_model_filename": "PAL-DOME-INNER-DETAIL-001-D16__gallery-rail-attachment-shoe__v001.glb",
-      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed",
+      "component_family": "Original palace \u2014 dome ceiling and arch fittings",
+      "parent_asset_family": "PAL-DOME-INNER-DETAIL-001",
+      "reference_image_id": "PAL-DOME-INNER-DETAIL-001",
+      "reference_file": "completion-pass/PAL-DOME-INNER-DETAIL-001/PAL-DOME-INNER-DETAIL-001.png",
+      "reference_sha256": "309f90ac7e3c80d286759d29d3ec4e6eaca297008f8b6932f2c73109baae0581",
+      "source_reference_id": "SRC-LOC-B01-GEN-37",
+      "source_reference_file": "world-layout/location-audit/source/B01-GEN-37.png",
+      "source_reference_sha256": "80d436f814c76422bdfd089b395d9f533240f15ee2c1434fc1dae4175a93b638",
+      "notes": " Source backs, dimensions, repeat patterns, inter-view parity and physical attachment remain unverified. Whole-sheet generation does not prove individual meshes are separable.",
+      "geometry_review_status": "unverified"
     }
   ]
 }

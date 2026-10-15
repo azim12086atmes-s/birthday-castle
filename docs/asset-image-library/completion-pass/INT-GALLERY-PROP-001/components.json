@@ -5,9 +5,9 @@
       "name": "Portrait wall frame",
       "kind": "architectural-detail",
       "dimensions_m_proposed": [
-        1,
-        0.35,
-        1
+        1.2,
+        0.1,
+        1.6
       ],
       "function": "Missing supporting interior components; reusable across several selected rooms",
       "construction": "One separate portrait wall frame at appropriate human scale; precise rose/ivory/gold and restrained blue textile motifs matching source. Preserve actual construction (four stable legs for furniture, flat backs for frames, one coherent object). No existing chandelier/mirror/tea-set master duplicated. Dimensions are bounding proposals to refine by function. FRAME ONLY with open empty centre; no screen/glass/bookcase/door/landscape fused inside. Separate insert masters are reused.",
@@ -35,9 +35,9 @@
       "name": "Small album display stand",
       "kind": "architectural-detail",
       "dimensions_m_proposed": [
-        1,
-        0.35,
-        1
+        0.5,
+        0.4,
+        0.8
       ],
       "function": "Missing supporting interior components; reusable across several selected rooms",
       "construction": "One separate small album display stand at appropriate human scale; precise rose/ivory/gold and restrained blue textile motifs matching source. Preserve actual construction (four stable legs for furniture, flat backs for frames, one coherent object). No existing chandelier/mirror/tea-set master duplicated. Dimensions are bounding proposals to refine by function.",
@@ -65,9 +65,9 @@
       "name": "Memory display cabinet",
       "kind": "architectural-detail",
       "dimensions_m_proposed": [
-        1,
-        0.35,
-        1
+        1.3,
+        0.5,
+        1.6
       ],
       "function": "Missing supporting interior components; reusable across several selected rooms",
       "construction": "One separate memory display cabinet at appropriate human scale; precise rose/ivory/gold and restrained blue textile motifs matching source. Preserve actual construction (four stable legs for furniture, flat backs for frames, one coherent object). No existing chandelier/mirror/tea-set master duplicated. Dimensions are bounding proposals to refine by function.",
@@ -95,9 +95,9 @@
       "name": "Sculpture plinth",
       "kind": "architectural-detail",
       "dimensions_m_proposed": [
-        1,
-        0.35,
-        1
+        0.6,
+        0.6,
+        1.1
       ],
       "function": "Missing supporting interior components; reusable across several selected rooms",
       "construction": "One separate sculpture plinth at appropriate human scale; precise rose/ivory/gold and restrained blue textile motifs matching source. Preserve actual construction (four stable legs for furniture, flat backs for frames, one coherent object). No existing chandelier/mirror/tea-set master duplicated. Dimensions are bounding proposals to refine by function.",
@@ -125,9 +125,9 @@
       "name": "Picture light bracket",
       "kind": "architectural-detail",
       "dimensions_m_proposed": [
-        1,
-        0.35,
-        1
+        0.4,
+        0.25,
+        0.2
       ],
       "function": "Missing supporting interior components; reusable across several selected rooms",
       "construction": "One separate picture light bracket at appropriate human scale; precise rose/ivory/gold and restrained blue textile motifs matching source. Preserve actual construction (four stable legs for furniture, flat backs for frames, one coherent object). No existing chandelier/mirror/tea-set master duplicated. Dimensions are bounding proposals to refine by function.",
@@ -155,9 +155,9 @@
       "name": "Keepsake box",
       "kind": "architectural-detail",
       "dimensions_m_proposed": [
-        1,
-        0.35,
-        1
+        0.3,
+        0.2,
+        0.15
       ],
       "function": "Missing supporting interior components; reusable across several selected rooms",
       "construction": "One separate keepsake box at appropriate human scale; precise rose/ivory/gold and restrained blue textile motifs matching source. Preserve actual construction (four stable legs for furniture, flat backs for frames, one coherent object). No existing chandelier/mirror/tea-set master duplicated. Dimensions are bounding proposals to refine by function.",
@@ -185,14 +185,14 @@
       "name": "Hinged album",
       "kind": "architectural-detail",
       "dimensions_m_proposed": [
-        0.2,
-        0.12,
-        0.25
+        0.35,
+        0.25,
+        0.05
       ],
       "function": "Missing supporting interior components; reusable across several selected rooms",
       "construction": "One separate hinged album at appropriate human scale; precise rose/ivory/gold and restrained blue textile motifs matching source. Preserve actual construction (four stable legs for furniture, flat backs for frames, one coherent object). No existing chandelier/mirror/tea-set master duplicated. Dimensions are bounding proposals to refine by function. SMALL attachment hardware only: plate/socket/hook/joint with its own hole/root and source-compatible quiet ornament. No lantern body, full arch, whole column, complete door, garden or giant architectural scene glued to it.",
-      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
-      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "attachment_face": "Broad flat underside to floor/table/bed; shortest thickness normal Z",
+      "semantic_front": "Decorated broad face upwards+Z",
       "target_polycount_proposed": 2500,
       "reuse_class": "reusable",
       "applies_to": [
@@ -215,9 +215,9 @@
       "name": "Carved gallery wall plaque",
       "kind": "architectural-detail",
       "dimensions_m_proposed": [
-        1,
-        0.35,
-        1
+        0.6,
+        0.08,
+        0.4
       ],
       "function": "Missing supporting interior components; reusable across several selected rooms",
       "construction": "One separate carved gallery wall plaque at appropriate human scale; precise rose/ivory/gold and restrained blue textile motifs matching source. Preserve actual construction (four stable legs for furniture, flat backs for frames, one coherent object). No existing chandelier/mirror/tea-set master duplicated. Dimensions are bounding proposals to refine by function.",
@@ -245,9 +245,9 @@
       "name": "Display shelf corner",
       "kind": "architectural-detail",
       "dimensions_m_proposed": [
-        1,
-        0.35,
-        1
+        0.6,
+        0.6,
+        0.15
       ],
       "function": "Missing supporting interior components; reusable across several selected rooms",
       "construction": "One separate display shelf corner at appropriate human scale; precise rose/ivory/gold and restrained blue textile motifs matching source. Preserve actual construction (four stable legs for furniture, flat backs for frames, one coherent object). No existing chandelier/mirror/tea-set master duplicated. Dimensions are bounding proposals to refine by function.",
@@ -275,9 +275,9 @@
       "name": "Freestanding easel frame",
       "kind": "architectural-detail",
       "dimensions_m_proposed": [
-        1,
-        0.35,
-        1
+        0.65,
+        0.65,
+        1.6
       ],
       "function": "Missing supporting interior components; reusable across several selected rooms",
       "construction": "One separate freestanding easel frame at appropriate human scale; precise rose/ivory/gold and restrained blue textile motifs matching source. Preserve actual construction (four stable legs for furniture, flat backs for frames, one coherent object). No existing chandelier/mirror/tea-set master duplicated. Dimensions are bounding proposals to refine by function.",
@@ -305,9 +305,9 @@
       "name": "Small specimen bell jar",
       "kind": "architectural-detail",
       "dimensions_m_proposed": [
-        1,
-        0.35,
-        1
+        0.25,
+        0.25,
+        0.5
       ],
       "function": "Missing supporting interior components; reusable across several selected rooms",
       "construction": "One separate small specimen bell jar at appropriate human scale; precise rose/ivory/gold and restrained blue textile motifs matching source. Preserve actual construction (four stable legs for furniture, flat backs for frames, one coherent object). No existing chandelier/mirror/tea-set master duplicated. Dimensions are bounding proposals to refine by function.",
@@ -335,9 +335,9 @@
       "name": "Gallery bench arm trim",
       "kind": "architectural-detail",
       "dimensions_m_proposed": [
-        1,
-        0.35,
-        1
+        0.12,
+        0.45,
+        0.25
       ],
       "function": "Missing supporting interior components; reusable across several selected rooms",
       "construction": "One separate gallery bench arm trim at appropriate human scale; precise rose/ivory/gold and restrained blue textile motifs matching source. Preserve actual construction (four stable legs for furniture, flat backs for frames, one coherent object). No existing chandelier/mirror/tea-set master duplicated. Dimensions are bounding proposals to refine by function.",

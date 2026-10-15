@@ -804,17 +804,37 @@
       "owner": "palace",
       "family": "Base, wall bodies and stepped wings",
       "title": "Original palace \u2014 continuous wing bodies",
-      "status": "rejected-variants; source-trace-required",
-      "file": "",
-      "sha256": "",
-      "generation_attempts_in_this_pass": 2,
+      "status": "generated-pending-reference-and-model-review",
+      "file": "completion-pass/PAL-WING-001/PAL-WING-001.png",
+      "sha256": "e323bc6a297e274e836fc74a62481fe9350184ca41770e44dacd966729a2bfc7",
+      "generation_attempts_in_this_pass": 1,
       "retry_reasons": [
         "Rejected bare colonnade draft: source wings have solid glazed great-window walls, tier hierarchy and installed ornate decor."
       ],
       "rejected_outputs": [
         "/workspace/generated_images/exec-388e8ba9-814e-42b3-9554-9d19f34eb899.png",
         "/workspace/generated_images/exec-407fcca2-8f8d-4354-839b-a5c4d785042f.png"
-      ]
+      ],
+      "prior_pass_attempt_history": [
+        {
+          "pass": "earlier-wing-source-comparison",
+          "attempts": 2,
+          "retry_reasons": [
+            "Rejected bare colonnade draft: source wings have solid glazed great-window walls, tier hierarchy and installed ornate decor."
+          ],
+          "rejected_outputs": [
+            "/workspace/generated_images/exec-388e8ba9-814e-42b3-9554-9d19f34eb899.png",
+            "/workspace/generated_images/exec-407fcca2-8f8d-4354-839b-a5c4d785042f.png"
+          ],
+          "reviewed_again": "2026-10-14",
+          "review_result": "First attempt is bare open colonnade, unlike source glazed solid facade; second improves source-facing decor but omits decomposition/back/contact views and includes combined tiers/towers. Preserve both and generate only construction-view gap after this explicit new review."
+        }
+      ],
+      "active_attempt_pass": "completion-2026-10-14",
+      "source_trace_resolution": "B01GEN37east front: continuous rose wall between tall glazed pointed bays, ivory clustered piers, rose scrollspandrels, goldhorizontal cornices, curved/chamfered corners, roofterraces. Emptyarcades only where truly open; do not replace glazed wings with opencolonnades.",
+      "component_count": 4,
+      "review_notes": "",
+      "location_ids": []
     },
     {
       "sheet_id": "PAL-BASE-001",
@@ -861,20 +881,26 @@
       "owner": "palace",
       "family": "Interiors and furniture",
       "title": "Princess bedroom and dressing suite",
-      "status": "paused-for-wing-source-comparison",
-      "file": "",
-      "sha256": "",
-      "generation_attempts_in_this_pass": 0
+      "status": "generated-pending-reference-and-model-review",
+      "file": "completion-pass/INT-R02/INT-R02.png",
+      "sha256": "9450d3e2c22ff804f7264c0e6481f45be73ee26e9edbf1dbc123a33222d66eb3",
+      "generation_attempts_in_this_pass": 1,
+      "component_count": 1,
+      "review_notes": "All four requested room views, one bed per view, three east window bays, south entry, dressing alcove and ceiling section are present. Materials follow GEN-24 furniture vocabulary; room layout itself is new. Plan, arrival view and cutaway place reading southwest and memory display southeast. Opposite view B appears to swap these two corner furniture groups. View B is atmosphere reference only; saved proposed_layout and the top plan control these corner positions. Printed fixed-layout labels are generator output, not a verified geometric guarantee. Actual furniture dimensions, room openings and ceiling bay correspondence must be enforced in the model.",
+      "location_ids": []
     },
     {
       "sheet_id": "INT-R03",
       "owner": "palace",
       "family": "Interiors and furniture",
       "title": "Royal dining room and service connection",
-      "status": "paused-for-wing-source-comparison",
-      "file": "",
-      "sha256": "",
-      "generation_attempts_in_this_pass": 0
+      "status": "generated-pending-reference-and-model-review",
+      "file": "completion-pass/INT-R03/INT-R03.png",
+      "sha256": "090a74711034af1d671c2c6b8521dacebe5d7017a5f8584ac6c62805ecfb78b4",
+      "generation_attempts_in_this_pass": 1,
+      "component_count": 1,
+      "review_notes": "Four room views, a north-up plan and ceiling/detail studies are present. Blue/rose stained glass, rose/ivory marble and gold trim remain source-compatible. Dining salon itself is a proposed new room. Views A/B retain opposite-side window placement and west tea alcove placement more clearly than the suite reverse view. Exact eight-chair count and every floral pedestal position are not independently verified. Cutaway changes bay proportions and appears to have more seating than the declared plan. The saved proposed layout controls table dimensions and seating count; do not derive exact mesh coordinates from perspective images.",
+      "location_ids": []
     },
     {
       "sheet_id": "PAL-ENTRY-001",
@@ -1458,110 +1484,146 @@
       "owner": "palace",
       "family": "Tower bodies and roof assemblies",
       "title": "Original palace \u2014 internal dome and support sections",
-      "status": "reserved-for-verified-gap",
-      "file": "",
-      "sha256": "",
-      "generation_attempts_in_this_pass": 0
+      "status": "generated-pending-reference-and-model-review",
+      "file": "completion-pass/PAL-DOME-INNER-001/PAL-DOME-INNER-001.png",
+      "sha256": "4294eac5bde467148dbef868f0012d6306eb67b81b4a9219269744974fa19286",
+      "generation_attempts_in_this_pass": 2,
+      "retry_reasons": [
+        "Prior generated image did not persist; fix capture and save reference"
+      ],
+      "component_count": 4,
+      "review_notes": "",
+      "location_ids": []
     },
     {
       "sheet_id": "PAL-DOME-INNER-DETAIL-001",
       "owner": "palace",
       "family": "Glass, carvings, rails and architectural fittings",
       "title": "Original palace \u2014 dome ceiling and arch fittings",
-      "status": "reserved-for-verified-gap",
-      "file": "",
-      "sha256": "",
-      "generation_attempts_in_this_pass": 0
+      "status": "generated-pending-reference-and-model-review",
+      "file": "completion-pass/PAL-DOME-INNER-DETAIL-001/PAL-DOME-INNER-DETAIL-001.png",
+      "sha256": "309f90ac7e3c80d286759d29d3ec4e6eaca297008f8b6932f2c73109baae0581",
+      "generation_attempts_in_this_pass": 1,
+      "component_count": 16,
+      "review_notes": "",
+      "location_ids": []
     },
     {
       "sheet_id": "PAL-ROOF-GARDEN-JOIN-001",
       "owner": "palace",
       "family": "Base, wall bodies and stepped wings",
       "title": "Original palace \u2014 roof court and wing terrace joins",
-      "status": "reserved-for-verified-gap",
-      "file": "",
-      "sha256": "",
-      "generation_attempts_in_this_pass": 0
+      "status": "generated-pending-reference-and-model-review",
+      "file": "completion-pass/PAL-ROOF-GARDEN-JOIN-001/PAL-ROOF-GARDEN-JOIN-001.png",
+      "sha256": "9a22e3c118d380c061c3d4dd7726c42a634da1b60979042ae8b5fb73ffba75a6",
+      "generation_attempts_in_this_pass": 1,
+      "component_count": 4,
+      "review_notes": "",
+      "location_ids": []
     },
     {
       "sheet_id": "PAL-SKY-SUPPORT-001",
       "owner": "palace",
       "family": "Tower bodies and roof assemblies",
       "title": "Original palace \u2014 delicate platform supports",
-      "status": "reserved-for-verified-gap",
-      "file": "",
-      "sha256": "",
-      "generation_attempts_in_this_pass": 0
+      "status": "generated-pending-reference-and-model-review",
+      "file": "completion-pass/PAL-SKY-SUPPORT-001/PAL-SKY-SUPPORT-001.png",
+      "sha256": "4d70f66b1db87c9a6a3fffd886b2a7678216c1681cb11591b3695336644fc2cd",
+      "generation_attempts_in_this_pass": 1,
+      "component_count": 4,
+      "review_notes": "",
+      "location_ids": []
     },
     {
       "sheet_id": "PAL-TERRACE-STAIR-JOIN-001",
       "owner": "palace",
       "family": "Stairs, fountains, terraces and courtyards",
       "title": "Original palace \u2014 stair landing and level connections",
-      "status": "reserved-for-verified-gap",
-      "file": "",
-      "sha256": "",
-      "generation_attempts_in_this_pass": 0
+      "status": "generated-pending-reference-and-model-review",
+      "file": "completion-pass/PAL-TERRACE-STAIR-JOIN-001/PAL-TERRACE-STAIR-JOIN-001.png",
+      "sha256": "c7d49cd3e13d33be4feeaeb2ad74a74c3bdec035a0154fc62110a10ca0f121fa",
+      "generation_attempts_in_this_pass": 1,
+      "component_count": 4,
+      "review_notes": "",
+      "location_ids": []
     },
     {
       "sheet_id": "INT-THRONE-SHELL-001",
       "owner": "palace",
       "family": "Interiors and furniture",
       "title": "Throne \u2014 interior shell sections",
-      "status": "reserved-for-verified-gap",
-      "file": "",
-      "sha256": "",
-      "generation_attempts_in_this_pass": 0
+      "status": "generated-pending-reference-and-model-review",
+      "file": "completion-pass/INT-THRONE-SHELL-001/INT-THRONE-SHELL-001.png",
+      "sha256": "cec7f288999118807a5318331c6cba508dfe8a49b14547100d32d27911b03395",
+      "generation_attempts_in_this_pass": 1,
+      "component_count": 4,
+      "review_notes": "",
+      "location_ids": []
     },
     {
       "sheet_id": "INT-LIBRARY-SHELL-001",
       "owner": "palace",
       "family": "Interiors and furniture",
       "title": "Library \u2014 interior shell sections",
-      "status": "reserved-for-verified-gap",
-      "file": "",
-      "sha256": "",
-      "generation_attempts_in_this_pass": 0
+      "status": "generated-pending-reference-and-model-review",
+      "file": "completion-pass/INT-LIBRARY-SHELL-001/INT-LIBRARY-SHELL-001.png",
+      "sha256": "06facb9319883c0a5a98cdcb7f4d6518626702bf76df4385262a754f1912c9bb",
+      "generation_attempts_in_this_pass": 1,
+      "component_count": 4,
+      "review_notes": "",
+      "location_ids": []
     },
     {
       "sheet_id": "INT-CONSERV-SHELL-001",
       "owner": "palace",
       "family": "Interiors and furniture",
       "title": "Conserv \u2014 interior shell sections",
-      "status": "reserved-for-verified-gap",
-      "file": "",
-      "sha256": "",
-      "generation_attempts_in_this_pass": 0
+      "status": "generated-pending-reference-and-model-review",
+      "file": "completion-pass/INT-CONSERV-SHELL-001/INT-CONSERV-SHELL-001.png",
+      "sha256": "254a174e48e79f69dee7112c477f5db5eb188e019d26fe5e2ba48a6b20d3d0a3",
+      "generation_attempts_in_this_pass": 1,
+      "component_count": 4,
+      "review_notes": "Recovered the already-generated local PNG after interrupted recorder; no replacement generation used. All four IDs are present and retain ivory/rose marble, gold ribs and indigo glass. S03 includes a complete surrounding bay, not an isolated pool-edge strip. S04 includes floor/roof context around the glazed rail; separate the rail during modeling. Views differ in ceiling infill, source geometry and exact physical joins are not verified. The small contact sections are illustrative; printed tolerance is not an approved modeling tolerance. GEN-26 supports blue glass. Owner-requested green stained foot rail is a separate variant, not established by this source.",
+      "location_ids": []
     },
     {
       "sheet_id": "INT-SUITE-SHELL-001",
       "owner": "palace",
       "family": "Interiors and furniture",
       "title": "Suite \u2014 interior shell sections",
-      "status": "reserved-for-verified-gap",
-      "file": "",
-      "sha256": "",
-      "generation_attempts_in_this_pass": 0
+      "status": "generated-pending-reference-and-model-review",
+      "file": "completion-pass/INT-SUITE-SHELL-001/INT-SUITE-SHELL-001.png",
+      "sha256": "6f65dd45d8346a12d5c8501b4738ad0d3394438431f662fc379d935cee348635",
+      "generation_attempts_in_this_pass": 1,
+      "component_count": 4,
+      "review_notes": "Four intended isolated hosts are present; source-compatible rose/ivory marble, indigo inserts and gold molding retained. Ceiling primary view shows underside, and wall bays do not include furniture. S02 and S03 doorways are visibly open in perspective and front/rear views, but small top diagrams appear to run a solid band across openings. These top diagrams must not be used as cut geometry. Decorative projection and seam cornices are not proven to terminate at compatible flat ends. S04 top is closed while underside has ribs; internal thickness and fixings require sectional design.",
+      "location_ids": []
     },
     {
       "sheet_id": "INT-SUITE-FURN-001",
       "owner": "palace",
       "family": "Interiors and furniture",
       "title": "Princess bedroom and dressing furniture",
-      "status": "reserved-for-verified-gap",
-      "file": "",
-      "sha256": "",
-      "generation_attempts_in_this_pass": 0
+      "status": "generated-pending-reference-and-model-review",
+      "file": "completion-pass/INT-SUITE-FURN-001/INT-SUITE-FURN-001.png",
+      "sha256": "5ca62205be9b18b5b70af37de9f22e269be5e502b8e1fe0d17adae9a06184015",
+      "generation_attempts_in_this_pass": 1,
+      "component_count": 4,
+      "review_notes": "All four isolated furniture types and front/side/rear/underside views are present. Bed has an open canopy and visible slat seat without mattress or curtains. Cabinet/wardrobe show closed and open states. Dressing table omits the existing moon mirror to avoid duplicate generation. Only S01\u2013S04 labels are printed under the full sheet title; full component IDs resolve by concatenating INT-SUITE-FURN-001 and the suffix. Open-state shelf/hinge construction, leg counts across the smallest underside views and actual material implementation remain unverified. These illustrations are furniture references, not four proven separable meshes.",
+      "location_ids": []
     },
     {
       "sheet_id": "INT-DINING-FURN-001",
       "owner": "palace",
       "family": "Interiors and furniture",
       "title": "Dining and tea furniture sections",
-      "status": "reserved-for-verified-gap",
-      "file": "",
-      "sha256": "",
-      "generation_attempts_in_this_pass": 0
+      "status": "generated-pending-reference-and-model-review",
+      "file": "completion-pass/INT-DINING-FURN-001/INT-DINING-FURN-001.png",
+      "sha256": "85c257f5af9835d2b6dd7190c9ba505264e6ef92e8d718a1c240b935be01aa53",
+      "generation_attempts_in_this_pass": 1,
+      "component_count": 4,
+      "review_notes": "All four intended furniture types are present. S01 has a rectangular central top with exposed straight cut edges; S02 has a semicircular end with a straight diameter. Assembly guide shows centre plus two copies of the end. Human-scale dimensions and palette follow the proposed contract. S02 main and contact views show two legs, but its small underside view appears to add extra corner legs. The two-leg declaration and main view control the intended end module; underside image is not reliable topology. S01 front view draws a decorated apron across a cut end even though the main view leaves a plain joining face. Remove any transverse apron or cap from both centre cut ends during modeling. Exact seam profiles, rim alignment and material continuity require fit testing. Only short S01\u2013S04 suffixes are printed under the full sheet ID; full component IDs are indexed in metadata.",
+      "location_ids": []
     },
     {
       "sheet_id": "INT-LIBRARY-PROP-001",
@@ -2642,25 +2704,11 @@
     "side_rear_schedule": "palace-side-rear/schedule.json",
     "complete_roof_plan": "palace-roof-plan/schedule.json"
   },
-  "production_pass_status": "Completion pass: 9/115 queued missing-reference sheets saved. All geometry, UVs, anatomy, scale and runtime remain unverified.",
+  "production_pass_status": "Completion pass: 23/115 queued missing-reference sheets saved. All geometry, UVs, anatomy, scale and runtime remain unverified.",
   "structural_sheet_rule": "Display source-fitted assemblies with existing canonical decor so identity and proportions can be checked. Bare host views are internal construction proposals, not replacements for the original decorated wing references.",
   "generation_paused": true,
   "pause_reason": "Requested roof/stair proposal finished. Painted attempt rejected; coordinate diagram covers33 placements and11 stair links. Source-depth registration remains a layout task.",
   "generation_resume_allowlist": [
-    "PAL-DOME-INNER-001",
-    "PAL-DOME-INNER-DETAIL-001",
-    "PAL-WING-001",
-    "PAL-ROOF-GARDEN-JOIN-001",
-    "PAL-SKY-SUPPORT-001",
-    "PAL-TERRACE-STAIR-JOIN-001",
-    "INT-THRONE-SHELL-001",
-    "INT-LIBRARY-SHELL-001",
-    "INT-CONSERV-SHELL-001",
-    "INT-SUITE-SHELL-001",
-    "INT-R02",
-    "INT-R03",
-    "INT-SUITE-FURN-001",
-    "INT-DINING-FURN-001",
     "INT-LIBRARY-PROP-001",
     "INT-GALLERY-PROP-001",
     "INT-ATELIER-PROP-001",
