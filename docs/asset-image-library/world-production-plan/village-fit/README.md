@@ -1,5 +1,7 @@
 # Storybook Village — arrival lane and structural fit
 
+**Roof construction follow-up:** [Chimney, roof and valley variant](roof-fit/index.html) · [Decisions and evidence](roof-fit/README.md). The original fitting baseline below remains unchanged; D09 is mounted in the separate variant.
+
 15 October 2026 · [Open the separate review](index.html) · [Street preview](review/arrival-source-slots.png) · [Actual lower plan](plans/lower-plan.png) · [Roof projection](plans/roof-plan.png) · [Ceiling projection](plans/ceiling-plan.png)
 
 This is the first **B12 Function prototype**: a short arrival lane, eight attached/return house shells, a covered street connection, a small court and two testable ground rooms. The saved detail sheet now has **26 fitting specimens covering 11 of its 12 types**, plus an isolated chimney-pot specimen. It is not a completed village, final art assembly or a change to the main game. No new illustrated asset sheets, paid generation or registered asset models were added.
@@ -32,7 +34,7 @@ The lane is 6 m wide and narrows to a 4.8 m clear arch at the covered connection
 | Public ground room and return | **35.07 m** |
 | Source cottage doorway and return | **35.40 m** |
 
-House ground rooms have approximately 2.45 m clear height beneath a 2.6 m storey. Upper storeys are **non-playable shells**; no invisible stairs or access is implied. Furnishings, lane dressing, garden placement and interactions remain to add after host review.
+The intended ground-room clearance is 2.45 m beneath a 2.6 m storey. The current slab drawing places its underside at 2.30 m, while the movement limit remains 2.45 m; reconcile that datum before furnishing the playable room. Upper storeys are **non-playable shells**; no invisible stairs or access is implied. Furnishings, lane dressing, garden placement and interactions remain to add after host review.
 
 ## Inspecting the hosts
 

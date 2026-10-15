@@ -1,0 +1,36 @@
+{
+  "status": "pass",
+  "checks": [
+    "Saved D09 dimensions retained; pot underside touches crown seat; nine vertical probes pass through the real continuous 0.21 m pot/shaft bore into the loft",
+    "RF01 actually cuts both roof repeats and their seam backer; 50 mm shaft clearance remains open without hidden roof or backing infill",
+    "Inclined shaft bearing matches its support collar; two upslope rafters meet the roof underside and seat into existing eave/ridge support geometry",
+    "Every cut roof repeat is a closed thin shell after welding; thin repeat end bands do not become solid gable infill",
+    "RF03 cuts real front/rear wall and gable corners; shared party-wall caps stop below the valley instead of damming its outlet",
+    "Valley has 96 mm continuous fall and >70 mm soffit clearance over its wall cap; downpipe inlet has no raised lip, bore is open and the real sump cavity is not covered by ground",
+    "1799 vertical roof coverage probes hit geometry outside the declared open vent bore; this is geometric coverage, not waterproofing evidence",
+    "Source map, houses, windows, doors and route definitions unchanged; all three fitting-model returns pass and avoid the proposed sump/downpipe envelope"
+  ],
+  "rain_probes": 1799,
+  "walks": {
+    "arrival": 188.0468572529138,
+    "publicRoom": 35.07106781186547,
+    "cottageRoom": 35.403124237432905
+  },
+  "openings": [
+    "RF01",
+    "RF02",
+    "RF03-FRONT",
+    "RF03-REAR"
+  ],
+  "report_sha256": "0fac4eafd02380b846e0ca9d69d2c6a6655c0001d2e69531b68b91a8091d1672",
+  "limits": [
+    "D09 uses the saved 0.35 × 0.35 × 0.6 m pot; the shaft, framing, flashing and drainage pieces are proposed hidden construction.",
+    "The lightweight clad shaft is a passive loft vent in this prototype. No fireplace, heating, smoke or fire-safe flue specification is implied.",
+    "Only the two north-row roof assemblies are revised here. The baseline village page remains a separate earlier fixture.",
+    "Roof repeats retain 6 m span, 3 m length and 2.8 m rise. RF01 crosses a repeat seam; both hosts and the backing straps are cut.",
+    "The valley is a sloped open channel with party-wall cap and end-wall scupper notches, rather than a flat solid trim bar.",
+    "A hollow downpipe ends at an actual open inspection sump. The onward site drain remains unresolved; this is not a complete stormwater network.",
+    "The source open pot admits rain. Its rain cowl/condensate arrangement, fire specification, weather seals and fabrication tolerances remain unresolved.",
+    "Flow markers are a deterministic geometric trace, not a fluid simulation, waterproofing test, discharge-capacity calculation or structural approval."
+  ]
+}

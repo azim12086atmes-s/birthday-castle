@@ -1,0 +1,97 @@
+{
+  "status": "pass",
+  "review_sha256": "0fac4eafd02380b846e0ca9d69d2c6a6655c0001d2e69531b68b91a8091d1672",
+  "browser": "Chromium / Playwright / software WebGL2",
+  "viewports": [
+    "1440\u00d7960",
+    "390\u00d7844"
+  ],
+  "checks": [
+    "Assembly, chimney, valley, support, actual roof and underside projections render",
+    "Section/clay/source-slot controls and seven real-part isolations work; the complete support frame fits the viewport",
+    "Runoff trace reaches the actual sump endpoint and labels onward drain unresolved; changing view cancels a running trace",
+    "Layer controls preserve opening dimensions and drainage endpoints",
+    "Observed geometry/draw-call budgets and mobile horizontal layout pass"
+  ],
+  "trace": {
+    "status": "pass",
+    "end": [
+      24,
+      -0.12,
+      -5.615
+    ],
+    "onward_connection": "unresolved-site-drain"
+  },
+  "performance_observations": [
+    {
+      "mode": "assembly",
+      "isolated": false,
+      "selected": "H-N-18-ROOF-0",
+      "run": null,
+      "triangles": 3500,
+      "draw_calls": 76
+    },
+    {
+      "mode": "chimney",
+      "isolated": false,
+      "selected": "H-N-18-ROOF-0",
+      "run": null,
+      "triangles": 1504,
+      "draw_calls": 40
+    },
+    {
+      "mode": "valley",
+      "isolated": false,
+      "selected": "H-N-18-ROOF-0",
+      "run": null,
+      "triangles": 2320,
+      "draw_calls": 56
+    },
+    {
+      "mode": "support",
+      "isolated": false,
+      "selected": "H-N-18-ROOF-0",
+      "run": null,
+      "triangles": 164,
+      "draw_calls": 7
+    },
+    {
+      "mode": "plan",
+      "isolated": false,
+      "selected": "H-N-18-ROOF-0",
+      "run": null,
+      "triangles": 3500,
+      "draw_calls": 76
+    },
+    {
+      "mode": "underside",
+      "isolated": false,
+      "selected": "H-N-18-ROOF-0",
+      "run": null,
+      "triangles": 1276,
+      "draw_calls": 34
+    }
+  ],
+  "captures": [
+    "review/assembly-clay.png",
+    "review/assembly-source-slots.png",
+    "review/chimney.png",
+    "review/valley.png",
+    "review/support.png",
+    "review/plan.png",
+    "review/underside.png",
+    "review/chimney-section.png",
+    "review/part-MOUNTED-D09.png",
+    "review/part-VENT-SHAFT-P01.png",
+    "review/part-VENT-FLASHING-APRON.png",
+    "review/part-H-N-18-ROOF-0.png",
+    "review/part-VALLEY-DRAIN-P01.png",
+    "review/part-DOWNPIPE-P01.png",
+    "review/part-SUMP-WALLS.png",
+    "review/runoff-complete.png",
+    "review/construction-only.png",
+    "review/mobile.png"
+  ],
+  "page_errors": [],
+  "limits": "Function geometry inspection only; trace is not fluid simulation or waterproofing/structure approval; no main-game integration"
+}

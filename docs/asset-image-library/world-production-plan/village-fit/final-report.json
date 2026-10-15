@@ -49,16 +49,20 @@
       "A bottom-intersecting door aperture must be an outer-profile notch; a touching interior polygon hole produced visible infill.",
       "Full-size 3 m wall / roof ports can remain fixed while different bay functions provide the village rhythm.",
       "The saved D02 stock length does not divide the actual gable slope; a named short terminal is required rather than scaling decoration.",
-      "A circular door guard over-blocked safe interaction outside the leaf; checking the actual swept leaf area preserves the doorway interaction."
+      "A circular door guard over-blocked safe interaction outside the leaf; checking the actual swept leaf area preserves the doorway interaction.",
+      "A flat valley bar above a continuous party-wall cap is a dam; a sloped channel also needs lowered wall caps and open end-wall scuppers.",
+      "The first support view cropped its actual framing; the revised camera frames the evaluated support meshes and hides unrelated weather pieces."
     ],
     "corrections": [
       "Door notches and internal window holes are distinct mesh operations; ray tests verify every actual aperture.",
       "Shared party walls authored once; roof repeats contain no triangular end infill.",
       "Use two 1.8 m bargeboards and a proposed 0.504 m terminal per slope.",
-      "Use two-degree swept-leaf samples with a 2 mm conservatism margin; retain the close-on-player guard and test the stopped exterior interaction."
+      "Use two-degree swept-leaf samples with a 2 mm conservatism margin; retain the close-on-player guard and test the stopped exterior interaction.",
+      "Add the proposed 1% channel with real roof slots, party-wall cap and front/rear notches; retain the onward drain as explicitly unresolved.",
+      "Verify support-view mesh projections fit within the viewport after changing the camera."
     ],
     "remainingRisks": [
-      "D09 shaft/flue and flashing absent; chimney remains unmounted.",
+      "D09 remains isolated in the earlier fitting baseline; the separate roof-fit variant now mounts it on a proposed loft-vent shaft. Onward site drainage and open-pot rain/condensate detail remain unresolved.",
       "Nominal door/window installation allowance, hinges, weather seals, ridge/valley drainage, supports, final source carving and textures require review.",
       "Function fitting prototypes and local interactions are not accepted asset models or integrated game behavior."
     ]
@@ -70,6 +74,9 @@
     "scope": "Functional engineering evidence; not formal Form or Runtime acceptance",
     "fitting_manifest": "fitting-review.json",
     "fitting_geometry": "details-verification.json",
-    "fitting_browser": "details-browser-verification.json"
+    "fitting_browser": "details-browser-verification.json",
+    "roof_join_variant": "roof-fit/review-data.json",
+    "roof_join_geometry": "roof-fit/geometry-verification.json",
+    "roof_join_browser": "roof-fit/browser-verification.json"
   }
 }

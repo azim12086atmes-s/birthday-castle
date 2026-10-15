@@ -21,8 +21,8 @@
       "name": "Shared kit and technical contracts",
       "deliverables": "Units, pivots, seam profiles, opening standards, glass/material IDs, UV scale, collision, LOD/instancing and loading groups.",
       "exit_evidence": "One floor/wall/opening/rail/path/water-edge example physically fits and survives actual player/camera tests.",
-      "status": "village-fittings-function-fixture-tested-pending-review",
-      "evidence": "village-fit/README.md; fitting-review.json; details-verification.json and details-browser-verification.json. 26 procedural fit specimens cover 11 saved B12 detail types, with an isolated hollow chimney pot pending shaft/flue. Door, shutter pivots, mounting faces, complete return routes and rendering-only cutaways tested. Final carving, art/Form acceptance and roof weather joins unresolved."
+      "status": "village-roof-and-fittings-function-fixtures-tested-pending-review",
+      "evidence": "village-fit/README.md; fitting-review.json; details-verification.json and details-browser-verification.json. 26 procedural fit specimens cover 11 saved B12 detail types, with an isolated hollow chimney pot pending shaft/flue. Door, shutter pivots, mounting faces, complete return routes and rendering-only cutaways tested. Final carving, art/Form acceptance and roof weather joins unresolved. Roof follow-up: village-fit/roof-fit/README.md; real shaft/roof apertures, framing contacts, valley wall/scupper clearance, downpipe/sump bore and browser inspection. Onward site drain, rain management and final structure remain unresolved."
     },
     {
       "id": "P3",
@@ -137,6 +137,6 @@
       "exit_evidence": "Each island has a working arrival and return, explorable focal route and bounded content; no flight system is assumed."
     }
   ],
-  "current_next_deliverable": "Resolve the saved B12 chimney shaft/flue and roof weather joins, then furnish one usable ground cottage room from existing references; retain tested openings, fitted components and circulation.",
+  "current_next_deliverable": "Reconcile the cottage ceiling drawing with its intended 2.45 m clear height, audit saved shared furnishings for cottage style, then furnish one usable ground room with human-scale furniture, lighting, interaction and a tested return route. Carry roof weather/detail and onward site drainage gaps into their construction backlog.",
   "local_first_rule": "Resolve world geography at coarse level, but only require sample-local elevations, water, boundaries and access for the first prototype; refine distant-region unknowns in their own wave."
 }

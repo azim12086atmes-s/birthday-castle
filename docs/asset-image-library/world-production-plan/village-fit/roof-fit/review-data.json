@@ -1,0 +1,1030 @@
+{
+  "id": "B12-ROOF-JOINS-FIT-001",
+  "status": "Proposed Function roof/vent/drainage variant; no new illustrated art, model registration or final approval",
+  "units": "metres",
+  "origin": {
+    "x": -2470,
+    "z": -650,
+    "y": 44.05
+  },
+  "purpose": "Geometry, attachment and downward drainage review; not construction certification or final art",
+  "source_layout_sha256": "0a4849d55bc9f9614a231b1e172fc6ff801831a401ab246df6477e99ea39f773",
+  "saved_reference": {
+    "file": "world-location-kits/west-lantern-forest/B12-DETAIL-001/B12-DETAIL-001.png",
+    "sha256": "daac9938457fba23c21a98af9df7c931e7d1889bce3f84b695da335c53239638",
+    "asset_id": "B12-DETAIL-001-D09"
+  },
+  "pot": {
+    "id": "MOUNTED-D09",
+    "part": "D09",
+    "asset_id": "B12-DETAIL-001-D09",
+    "position": [
+      19.95,
+      8.1,
+      -12
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "support": "Shaft crown seat at Y 8.1 m; matching 0.21 m continuous bore",
+    "status": "Mounted Function specimen; final art and structure pending"
+  },
+  "shaft": {
+    "id": "VENT-SHAFT-P01",
+    "x": 19.95,
+    "z": -12,
+    "outer": 0.55,
+    "bore": 0.21,
+    "top": 8.1,
+    "base_formula": "Y = original roof surface(X) − 0.15 m",
+    "role": "Passive loft air outlet; no combustion system"
+  },
+  "openings": [
+    {
+      "id": "RF01",
+      "kind": "roof_vent",
+      "host_ids": [
+        "H-N-18-ROOF-0",
+        "H-N-18-ROOF-1"
+      ],
+      "xmin": 19.625,
+      "xmax": 20.275,
+      "zmin": -12.325,
+      "zmax": -11.675,
+      "clearance_m": 0.05,
+      "destination": "Unoccupied loft air to exterior; no hearth or combustion system",
+      "construction": "Proposed exact parametric rectangular roof subtraction; not an approved Blender Boolean"
+    },
+    {
+      "id": "RF02",
+      "kind": "open_valley",
+      "xmin": 23.84,
+      "xmax": 24.16,
+      "zmin": -16,
+      "zmax": -5,
+      "destination": "Front downpipe and at-grade inspection sump"
+    },
+    {
+      "id": "RF03-FRONT",
+      "x": 24,
+      "z": -6,
+      "width": 0.7,
+      "base": 4.9,
+      "height": 0.7
+    },
+    {
+      "id": "RF03-REAR",
+      "x": 24,
+      "z": -15,
+      "width": 0.7,
+      "base": 4.9,
+      "height": 0.7
+    }
+  ],
+  "roofRepeats": [
+    {
+      "id": "H-N-18-ROOF-0",
+      "family": "B12-STRUCT-001-S04",
+      "x": 18,
+      "z": -15,
+      "length": 3,
+      "span": 6,
+      "eave": 5.2,
+      "rise": 2.8,
+      "thickness": 0.15,
+      "open_ends": true,
+      "cuts": [
+        {
+          "id": "RF01",
+          "kind": "roof_vent",
+          "host_ids": [
+            "H-N-18-ROOF-0",
+            "H-N-18-ROOF-1"
+          ],
+          "xmin": 19.625,
+          "xmax": 20.275,
+          "zmin": -12.325,
+          "zmax": -11.675,
+          "clearance_m": 0.05,
+          "destination": "Unoccupied loft air to exterior; no hearth or combustion system",
+          "construction": "Proposed exact parametric rectangular roof subtraction; not an approved Blender Boolean"
+        },
+        {
+          "id": "RF02",
+          "kind": "open_valley",
+          "xmin": 23.84,
+          "xmax": 24.16,
+          "zmin": -16,
+          "zmax": -5,
+          "destination": "Front downpipe and at-grade inspection sump"
+        }
+      ]
+    },
+    {
+      "id": "H-N-18-ROOF-1",
+      "family": "B12-STRUCT-001-S04",
+      "x": 18,
+      "z": -12,
+      "length": 3,
+      "span": 6,
+      "eave": 5.2,
+      "rise": 2.8,
+      "thickness": 0.15,
+      "open_ends": true,
+      "cuts": [
+        {
+          "id": "RF01",
+          "kind": "roof_vent",
+          "host_ids": [
+            "H-N-18-ROOF-0",
+            "H-N-18-ROOF-1"
+          ],
+          "xmin": 19.625,
+          "xmax": 20.275,
+          "zmin": -12.325,
+          "zmax": -11.675,
+          "clearance_m": 0.05,
+          "destination": "Unoccupied loft air to exterior; no hearth or combustion system",
+          "construction": "Proposed exact parametric rectangular roof subtraction; not an approved Blender Boolean"
+        },
+        {
+          "id": "RF02",
+          "kind": "open_valley",
+          "xmin": 23.84,
+          "xmax": 24.16,
+          "zmin": -16,
+          "zmax": -5,
+          "destination": "Front downpipe and at-grade inspection sump"
+        }
+      ]
+    },
+    {
+      "id": "H-N-18-ROOF-2",
+      "family": "B12-STRUCT-001-S04",
+      "x": 18,
+      "z": -9,
+      "length": 3,
+      "span": 6,
+      "eave": 5.2,
+      "rise": 2.8,
+      "thickness": 0.15,
+      "open_ends": true,
+      "cuts": [
+        {
+          "id": "RF01",
+          "kind": "roof_vent",
+          "host_ids": [
+            "H-N-18-ROOF-0",
+            "H-N-18-ROOF-1"
+          ],
+          "xmin": 19.625,
+          "xmax": 20.275,
+          "zmin": -12.325,
+          "zmax": -11.675,
+          "clearance_m": 0.05,
+          "destination": "Unoccupied loft air to exterior; no hearth or combustion system",
+          "construction": "Proposed exact parametric rectangular roof subtraction; not an approved Blender Boolean"
+        },
+        {
+          "id": "RF02",
+          "kind": "open_valley",
+          "xmin": 23.84,
+          "xmax": 24.16,
+          "zmin": -16,
+          "zmax": -5,
+          "destination": "Front downpipe and at-grade inspection sump"
+        }
+      ]
+    },
+    {
+      "id": "H-N-24-ROOF-0",
+      "family": "B12-STRUCT-001-S04",
+      "x": 24,
+      "z": -15,
+      "length": 3,
+      "span": 6,
+      "eave": 5.2,
+      "rise": 2.8,
+      "thickness": 0.15,
+      "open_ends": true,
+      "cuts": [
+        {
+          "id": "RF01",
+          "kind": "roof_vent",
+          "host_ids": [
+            "H-N-18-ROOF-0",
+            "H-N-18-ROOF-1"
+          ],
+          "xmin": 19.625,
+          "xmax": 20.275,
+          "zmin": -12.325,
+          "zmax": -11.675,
+          "clearance_m": 0.05,
+          "destination": "Unoccupied loft air to exterior; no hearth or combustion system",
+          "construction": "Proposed exact parametric rectangular roof subtraction; not an approved Blender Boolean"
+        },
+        {
+          "id": "RF02",
+          "kind": "open_valley",
+          "xmin": 23.84,
+          "xmax": 24.16,
+          "zmin": -16,
+          "zmax": -5,
+          "destination": "Front downpipe and at-grade inspection sump"
+        }
+      ]
+    },
+    {
+      "id": "H-N-24-ROOF-1",
+      "family": "B12-STRUCT-001-S04",
+      "x": 24,
+      "z": -12,
+      "length": 3,
+      "span": 6,
+      "eave": 5.2,
+      "rise": 2.8,
+      "thickness": 0.15,
+      "open_ends": true,
+      "cuts": [
+        {
+          "id": "RF01",
+          "kind": "roof_vent",
+          "host_ids": [
+            "H-N-18-ROOF-0",
+            "H-N-18-ROOF-1"
+          ],
+          "xmin": 19.625,
+          "xmax": 20.275,
+          "zmin": -12.325,
+          "zmax": -11.675,
+          "clearance_m": 0.05,
+          "destination": "Unoccupied loft air to exterior; no hearth or combustion system",
+          "construction": "Proposed exact parametric rectangular roof subtraction; not an approved Blender Boolean"
+        },
+        {
+          "id": "RF02",
+          "kind": "open_valley",
+          "xmin": 23.84,
+          "xmax": 24.16,
+          "zmin": -16,
+          "zmax": -5,
+          "destination": "Front downpipe and at-grade inspection sump"
+        }
+      ]
+    },
+    {
+      "id": "H-N-24-ROOF-2",
+      "family": "B12-STRUCT-001-S04",
+      "x": 24,
+      "z": -9,
+      "length": 3,
+      "span": 6,
+      "eave": 5.2,
+      "rise": 2.8,
+      "thickness": 0.15,
+      "open_ends": true,
+      "cuts": [
+        {
+          "id": "RF01",
+          "kind": "roof_vent",
+          "host_ids": [
+            "H-N-18-ROOF-0",
+            "H-N-18-ROOF-1"
+          ],
+          "xmin": 19.625,
+          "xmax": 20.275,
+          "zmin": -12.325,
+          "zmax": -11.675,
+          "clearance_m": 0.05,
+          "destination": "Unoccupied loft air to exterior; no hearth or combustion system",
+          "construction": "Proposed exact parametric rectangular roof subtraction; not an approved Blender Boolean"
+        },
+        {
+          "id": "RF02",
+          "kind": "open_valley",
+          "xmin": 23.84,
+          "xmax": 24.16,
+          "zmin": -16,
+          "zmax": -5,
+          "destination": "Front downpipe and at-grade inspection sump"
+        }
+      ]
+    }
+  ],
+  "walls": [
+    {
+      "id": "H-N-18-ENTRY",
+      "axis": "x",
+      "at": -6,
+      "start": 18,
+      "end": 21,
+      "base": 0,
+      "height": 2.6,
+      "depth": 0.3,
+      "opening_ids": [
+        "H-N-18-ENTRY-door"
+      ]
+    },
+    {
+      "id": "H-N-18-WIN",
+      "axis": "x",
+      "at": -6,
+      "start": 21,
+      "end": 24,
+      "base": 0,
+      "height": 2.6,
+      "depth": 0.3,
+      "opening_ids": [
+        "H-N-18-WIN-window"
+      ]
+    },
+    {
+      "id": "H-N-18-UPPER-GABLE-RF-1",
+      "axis": "x",
+      "at": -6,
+      "start": 18,
+      "end": 23.65,
+      "base": 2.6,
+      "height": 2.6,
+      "depth": 0.3,
+      "opening_ids": [
+        "H-N-18-UPPER-GABLE-window"
+      ],
+      "variant": "Source wall retained"
+    },
+    {
+      "id": "H-N-18-UPPER-GABLE-RF-2",
+      "axis": "x",
+      "at": -6,
+      "start": 23.65,
+      "end": 24,
+      "base": 2.6,
+      "height": 2.3000000000000003,
+      "depth": 0.3,
+      "opening_ids": [],
+      "variant": "Front/rear scupper notch"
+    },
+    {
+      "id": "H-N-18-BACK-0-0",
+      "axis": "x",
+      "at": -15,
+      "start": 18,
+      "end": 21,
+      "base": 0,
+      "height": 2.6,
+      "depth": 0.3,
+      "opening_ids": [
+        "H-N-18-BACK-0-0-window"
+      ]
+    },
+    {
+      "id": "H-N-18-BACK-0-1",
+      "axis": "x",
+      "at": -15,
+      "start": 21,
+      "end": 24,
+      "base": 0,
+      "height": 2.6,
+      "depth": 0.3,
+      "opening_ids": [
+        "H-N-18-BACK-0-1-window"
+      ]
+    },
+    {
+      "id": "H-N-18-BACK-UPPER-GABLE-RF-1",
+      "axis": "x",
+      "at": -15,
+      "start": 18,
+      "end": 23.65,
+      "base": 2.6,
+      "height": 2.6,
+      "depth": 0.3,
+      "opening_ids": [
+        "H-N-18-BACK-UPPER-GABLE-window"
+      ],
+      "variant": "Source wall retained"
+    },
+    {
+      "id": "H-N-18-BACK-UPPER-GABLE-RF-2",
+      "axis": "x",
+      "at": -15,
+      "start": 23.65,
+      "end": 24,
+      "base": 2.6,
+      "height": 2.3000000000000003,
+      "depth": 0.3,
+      "opening_ids": [],
+      "variant": "Front/rear scupper notch"
+    },
+    {
+      "id": "H-N-18-SIDE-18-0-0",
+      "axis": "z",
+      "at": 18,
+      "start": -15,
+      "end": -12,
+      "base": 0,
+      "height": 2.6,
+      "depth": 0.3,
+      "opening_ids": []
+    },
+    {
+      "id": "H-N-18-SIDE-18-0-1",
+      "axis": "z",
+      "at": 18,
+      "start": -12,
+      "end": -9,
+      "base": 0,
+      "height": 2.6,
+      "depth": 0.3,
+      "opening_ids": []
+    },
+    {
+      "id": "H-N-18-SIDE-18-0-2",
+      "axis": "z",
+      "at": 18,
+      "start": -9,
+      "end": -6,
+      "base": 0,
+      "height": 2.6,
+      "depth": 0.3,
+      "opening_ids": []
+    },
+    {
+      "id": "H-N-18-SIDE-18-2.6-0",
+      "axis": "z",
+      "at": 18,
+      "start": -15,
+      "end": -12,
+      "base": 2.6,
+      "height": 2.6,
+      "depth": 0.3,
+      "opening_ids": []
+    },
+    {
+      "id": "H-N-18-SIDE-18-2.6-1",
+      "axis": "z",
+      "at": 18,
+      "start": -12,
+      "end": -9,
+      "base": 2.6,
+      "height": 2.6,
+      "depth": 0.3,
+      "opening_ids": []
+    },
+    {
+      "id": "H-N-18-SIDE-18-2.6-2",
+      "axis": "z",
+      "at": 18,
+      "start": -9,
+      "end": -6,
+      "base": 2.6,
+      "height": 2.6,
+      "depth": 0.3,
+      "opening_ids": []
+    },
+    {
+      "id": "H-N-18-SIDE-24-0-0",
+      "axis": "z",
+      "at": 24,
+      "start": -15,
+      "end": -12,
+      "base": 0,
+      "height": 2.6,
+      "depth": 0.3,
+      "opening_ids": []
+    },
+    {
+      "id": "H-N-18-SIDE-24-0-1",
+      "axis": "z",
+      "at": 24,
+      "start": -12,
+      "end": -9,
+      "base": 0,
+      "height": 2.6,
+      "depth": 0.3,
+      "opening_ids": []
+    },
+    {
+      "id": "H-N-18-SIDE-24-0-2",
+      "axis": "z",
+      "at": 24,
+      "start": -9,
+      "end": -6,
+      "base": 0,
+      "height": 2.6,
+      "depth": 0.3,
+      "opening_ids": []
+    },
+    {
+      "id": "H-N-18-SIDE-24-2.6-0",
+      "axis": "z",
+      "at": 24,
+      "start": -15,
+      "end": -12,
+      "base": 2.6,
+      "height": 2.3000000000000003,
+      "depth": 0.3,
+      "opening_ids": [],
+      "variant": "Party-wall cap lowered beneath channel; ground room unchanged"
+    },
+    {
+      "id": "H-N-18-SIDE-24-2.6-1",
+      "axis": "z",
+      "at": 24,
+      "start": -12,
+      "end": -9,
+      "base": 2.6,
+      "height": 2.3000000000000003,
+      "depth": 0.3,
+      "opening_ids": [],
+      "variant": "Party-wall cap lowered beneath channel; ground room unchanged"
+    },
+    {
+      "id": "H-N-18-SIDE-24-2.6-2",
+      "axis": "z",
+      "at": 24,
+      "start": -9,
+      "end": -6,
+      "base": 2.6,
+      "height": 2.3000000000000003,
+      "depth": 0.3,
+      "opening_ids": [],
+      "variant": "Party-wall cap lowered beneath channel; ground room unchanged"
+    },
+    {
+      "id": "H-N-24-ENTRY",
+      "axis": "x",
+      "at": -6,
+      "start": 24,
+      "end": 27,
+      "base": 0,
+      "height": 2.6,
+      "depth": 0.3,
+      "opening_ids": [
+        "H-N-24-ENTRY-door"
+      ]
+    },
+    {
+      "id": "H-N-24-WIN",
+      "axis": "x",
+      "at": -6,
+      "start": 27,
+      "end": 30,
+      "base": 0,
+      "height": 2.6,
+      "depth": 0.3,
+      "opening_ids": [
+        "H-N-24-WIN-window"
+      ]
+    },
+    {
+      "id": "H-N-24-UPPER-GABLE-RF-1",
+      "axis": "x",
+      "at": -6,
+      "start": 24,
+      "end": 24.35,
+      "base": 2.6,
+      "height": 2.3000000000000003,
+      "depth": 0.3,
+      "opening_ids": [],
+      "variant": "Front/rear scupper notch"
+    },
+    {
+      "id": "H-N-24-UPPER-GABLE-RF-2",
+      "axis": "x",
+      "at": -6,
+      "start": 24.35,
+      "end": 30,
+      "base": 2.6,
+      "height": 2.6,
+      "depth": 0.3,
+      "opening_ids": [
+        "H-N-24-UPPER-GABLE-window"
+      ],
+      "variant": "Source wall retained"
+    },
+    {
+      "id": "H-N-24-BACK-0-0",
+      "axis": "x",
+      "at": -15,
+      "start": 24,
+      "end": 27,
+      "base": 0,
+      "height": 2.6,
+      "depth": 0.3,
+      "opening_ids": [
+        "H-N-24-BACK-0-0-window"
+      ]
+    },
+    {
+      "id": "H-N-24-BACK-0-1",
+      "axis": "x",
+      "at": -15,
+      "start": 27,
+      "end": 30,
+      "base": 0,
+      "height": 2.6,
+      "depth": 0.3,
+      "opening_ids": [
+        "H-N-24-BACK-0-1-window"
+      ]
+    },
+    {
+      "id": "H-N-24-BACK-UPPER-GABLE-RF-1",
+      "axis": "x",
+      "at": -15,
+      "start": 24,
+      "end": 24.35,
+      "base": 2.6,
+      "height": 2.3000000000000003,
+      "depth": 0.3,
+      "opening_ids": [],
+      "variant": "Front/rear scupper notch"
+    },
+    {
+      "id": "H-N-24-BACK-UPPER-GABLE-RF-2",
+      "axis": "x",
+      "at": -15,
+      "start": 24.35,
+      "end": 30,
+      "base": 2.6,
+      "height": 2.6,
+      "depth": 0.3,
+      "opening_ids": [
+        "H-N-24-BACK-UPPER-GABLE-window"
+      ],
+      "variant": "Source wall retained"
+    },
+    {
+      "id": "H-N-24-SIDE-30-0-0",
+      "axis": "z",
+      "at": 30,
+      "start": -15,
+      "end": -12,
+      "base": 0,
+      "height": 2.6,
+      "depth": 0.3,
+      "opening_ids": []
+    },
+    {
+      "id": "H-N-24-SIDE-30-0-1",
+      "axis": "z",
+      "at": 30,
+      "start": -12,
+      "end": -9,
+      "base": 0,
+      "height": 2.6,
+      "depth": 0.3,
+      "opening_ids": []
+    },
+    {
+      "id": "H-N-24-SIDE-30-0-2",
+      "axis": "z",
+      "at": 30,
+      "start": -9,
+      "end": -6,
+      "base": 0,
+      "height": 2.6,
+      "depth": 0.3,
+      "opening_ids": []
+    },
+    {
+      "id": "H-N-24-SIDE-30-2.6-0",
+      "axis": "z",
+      "at": 30,
+      "start": -15,
+      "end": -12,
+      "base": 2.6,
+      "height": 2.6,
+      "depth": 0.3,
+      "opening_ids": []
+    },
+    {
+      "id": "H-N-24-SIDE-30-2.6-1",
+      "axis": "z",
+      "at": 30,
+      "start": -12,
+      "end": -9,
+      "base": 2.6,
+      "height": 2.6,
+      "depth": 0.3,
+      "opening_ids": []
+    },
+    {
+      "id": "H-N-24-SIDE-30-2.6-2",
+      "axis": "z",
+      "at": 30,
+      "start": -9,
+      "end": -6,
+      "base": 2.6,
+      "height": 2.6,
+      "depth": 0.3,
+      "opening_ids": []
+    }
+  ],
+  "gables": [
+    {
+      "id": "H-N-18-GABLE--15",
+      "family": "B12-STRUCT-001-S03 / triangular end only",
+      "x": 18,
+      "z": -15,
+      "span": 6,
+      "base": 5.2,
+      "rise": 2.8,
+      "depth": 0.3,
+      "clip_min": 18,
+      "clip_max": 23.65
+    },
+    {
+      "id": "H-N-18-GABLE--6",
+      "family": "B12-STRUCT-001-S03 / triangular end only",
+      "x": 18,
+      "z": -6,
+      "span": 6,
+      "base": 5.2,
+      "rise": 2.8,
+      "depth": 0.3,
+      "clip_min": 18,
+      "clip_max": 23.65
+    },
+    {
+      "id": "H-N-24-GABLE--15",
+      "family": "B12-STRUCT-001-S03 / triangular end only",
+      "x": 24,
+      "z": -15,
+      "span": 6,
+      "base": 5.2,
+      "rise": 2.8,
+      "depth": 0.3,
+      "clip_min": 24.35,
+      "clip_max": 30
+    },
+    {
+      "id": "H-N-24-GABLE--6",
+      "family": "B12-STRUCT-001-S03 / triangular end only",
+      "x": 24,
+      "z": -6,
+      "span": 6,
+      "base": 5.2,
+      "rise": 2.8,
+      "depth": 0.3,
+      "clip_min": 24.35,
+      "clip_max": 30
+    }
+  ],
+  "rafters": [
+    {
+      "id": "VENT-RAFTER-0",
+      "xmin": 18,
+      "xmax": 21,
+      "zmin": -12.54,
+      "zmax": -12.36
+    },
+    {
+      "id": "VENT-RAFTER-1",
+      "xmin": 18,
+      "xmax": 21,
+      "zmin": -11.64,
+      "zmax": -11.46
+    }
+  ],
+  "valley": {
+    "id": "VALLEY-DRAIN-P01",
+    "x": 24,
+    "slot_half": 0.16,
+    "wing_half": 0.32,
+    "rear": -15.25,
+    "front": -5.65,
+    "rear_y": 5.08,
+    "grade": 0.01,
+    "wall_cap_y": 4.9,
+    "scupper_half": 0.35,
+    "thickness": 0.012,
+    "front_floor_y": 4.984,
+    "fall_m": 0.09600000000000009,
+    "surface_formula": "Linear V cross-section, 1% longitudinal fall"
+  },
+  "pipe": {
+    "id": "DOWNPIPE-P01",
+    "x": 24,
+    "z": -5.615,
+    "outer": 0.14,
+    "bore": 0.1,
+    "bottom": 0.22,
+    "top": 4.954
+  },
+  "runoff_trace": [
+    [
+      23.45,
+      5.713333333333334,
+      -13.5
+    ],
+    [
+      23.84,
+      5.349333333333334,
+      -13.5
+    ],
+    [
+      23.842,
+      5.272919791666668,
+      -13.5
+    ],
+    [
+      24,
+      5.0625,
+      -13.5
+    ],
+    [
+      24,
+      4.984,
+      -5.65
+    ],
+    [
+      24,
+      4.964,
+      -5.615
+    ],
+    [
+      24,
+      0.22,
+      -5.615
+    ],
+    [
+      24,
+      -0.12,
+      -5.615
+    ]
+  ],
+  "routes_preserved": {
+    "arrival": [
+      [
+        -2,
+        0
+      ],
+      [
+        14,
+        0
+      ],
+      [
+        38,
+        0
+      ],
+      [
+        45,
+        0
+      ],
+      [
+        58,
+        0
+      ],
+      [
+        80,
+        0
+      ],
+      [
+        88,
+        8
+      ],
+      [
+        78,
+        12
+      ],
+      [
+        66,
+        8
+      ],
+      [
+        58,
+        0
+      ],
+      [
+        38,
+        0
+      ],
+      [
+        14,
+        0
+      ],
+      [
+        -2,
+        0
+      ]
+    ],
+    "publicRoom": [
+      [
+        14,
+        0
+      ],
+      [
+        19.5,
+        0
+      ],
+      [
+        19.5,
+        8.5
+      ],
+      [
+        22,
+        11
+      ],
+      [
+        19.5,
+        8.5
+      ],
+      [
+        19.5,
+        0
+      ],
+      [
+        14,
+        0
+      ]
+    ],
+    "cottageRoom": [
+      [
+        14,
+        0
+      ],
+      [
+        19.5,
+        0
+      ],
+      [
+        19.5,
+        -9
+      ],
+      [
+        22,
+        -11
+      ],
+      [
+        19.5,
+        -9
+      ],
+      [
+        19.5,
+        0
+      ],
+      [
+        14,
+        0
+      ]
+    ]
+  },
+  "exceptions": [
+    "D09 uses the saved 0.35 × 0.35 × 0.6 m pot; the shaft, framing, flashing and drainage pieces are proposed hidden construction.",
+    "The lightweight clad shaft is a passive loft vent in this prototype. No fireplace, heating, smoke or fire-safe flue specification is implied.",
+    "Only the two north-row roof assemblies are revised here. The baseline village page remains a separate earlier fixture.",
+    "Roof repeats retain 6 m span, 3 m length and 2.8 m rise. RF01 crosses a repeat seam; both hosts and the backing straps are cut.",
+    "The valley is a sloped open channel with party-wall cap and end-wall scupper notches, rather than a flat solid trim bar.",
+    "A hollow downpipe ends at an actual open inspection sump. The onward site drain remains unresolved; this is not a complete stormwater network.",
+    "The source open pot admits rain. Its rain cowl/condensate arrangement, fire specification, weather seals and fabrication tolerances remain unresolved.",
+    "Flow markers are a deterministic geometric trace, not a fluid simulation, waterproofing test, discharge-capacity calculation or structural approval."
+  ],
+  "source_files": [
+    {
+      "file": "model.mjs",
+      "sha256": "69144b3a3e043389414c21bde7efbe8eb547437e99dbda39f752b3b537c641fb"
+    },
+    {
+      "file": "geometry.mjs",
+      "sha256": "bf538c878983d7ad54920c2189145d8180297f8372035ce5487633ea41d220a6"
+    },
+    {
+      "file": "viewer.mjs",
+      "sha256": "734ffab52519587a111a3ff4f598bf43f6fed4df9b4d9a02d50e1d8dbfff6ece"
+    },
+    {
+      "file": "../model.mjs",
+      "sha256": "cfd757f64fbf4644a807489b3e27711d4c1757fbb52db3c7835b5afbee179272"
+    },
+    {
+      "file": "../geometry.mjs",
+      "sha256": "54da250f4dd720170c8edd749759ff7aa3ee361d46b8fbafc29d96ce7666ed53"
+    },
+    {
+      "file": "../details-model.mjs",
+      "sha256": "dc10bebf91a44e3c284ac87d04e76af4b6f134cb0c9977580f2abf4ec24f7b9b"
+    },
+    {
+      "file": "../details-geometry.mjs",
+      "sha256": "5451d47f78cc657018f43ddc32a32a5fd54431e935ed23ddc6241c0e9f73eea4"
+    }
+  ],
+  "approval_package": {
+    "brief": "../room-brief.json",
+    "review_record": "../milestone-reviews.json",
+    "final_report": "../final-report.json",
+    "function": false,
+    "form": false,
+    "runtime": false
+  },
+  "budgets": {
+    "triangles": 75000,
+    "draw_calls": 120,
+    "paid_credits": 0
+  },
+  "next": "Furnish one usable ground cottage room from saved reference IDs, with route and interaction tests."
+}

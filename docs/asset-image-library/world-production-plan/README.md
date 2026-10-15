@@ -12,6 +12,8 @@
 
 **Village host update:** [B12 arrival lane and modular fixture](village-fit/index.html) · [Source decisions and checks](village-fit/README.md). Saved wall/roof dimensions now have actual openings, roof joins and three browser movement checks. The saved detail sheet adds **26 fitting specimens / 11 mounted types**, opening door/shutter controls and an isolated chimney pot pending its flue. [Fitting preview](village-fit/review/fittings-source-slots.png) · [Fit manifest](village-fit/fitting-review.json). These are Function prototypes; final carving, models and art acceptance remain pending.
 
+**Roof construction update:** [Inspect the chimney / roof / valley variant](village-fit/roof-fit/index.html) · [Evidence](village-fit/roof-fit/README.md). Saved D09 now has a proposed shaft and real roof opening, with framing, flashing and a sloped valley to an inspection sump. Onward site drainage and final weather/structural details remain unresolved.
+
 ## Outcome and present state
 
 Build a connected, explorable princess-castle world through small tested sections. Geography and route logic come first, shared kit contracts second, playable samples third, then regional destinations. New pictures are generated only for a demonstrated missing design or construction view. A 230-sheet ceiling is not a requirement to fill every slot before building.
