@@ -1,0 +1,101 @@
+{
+  "materials": [
+    {
+      "material_id": "GLASS-PAL-01",
+      "name": "Emerald leaf",
+      "base_colour_srgb_hex_proposed": "#168A61",
+      "geometry_variant": false,
+      "applies_to": "Existing pane geometry in new rail frames or existing windows; shape unchanged",
+      "runtime_status": "concept palette; no shader or PBR texture generated"
+    },
+    {
+      "material_id": "GLASS-PAL-02",
+      "name": "Seafoam mint",
+      "base_colour_srgb_hex_proposed": "#A6E4C7",
+      "geometry_variant": false,
+      "applies_to": "Existing pane geometry in new rail frames or existing windows; shape unchanged",
+      "runtime_status": "concept palette; no shader or PBR texture generated"
+    },
+    {
+      "material_id": "GLASS-PAL-03",
+      "name": "Lagoon aqua",
+      "base_colour_srgb_hex_proposed": "#53C9D2",
+      "geometry_variant": false,
+      "applies_to": "Existing pane geometry in new rail frames or existing windows; shape unchanged",
+      "runtime_status": "concept palette; no shader or PBR texture generated"
+    },
+    {
+      "material_id": "GLASS-PAL-04",
+      "name": "Peacock teal",
+      "base_colour_srgb_hex_proposed": "#187B89",
+      "geometry_variant": false,
+      "applies_to": "Existing pane geometry in new rail frames or existing windows; shape unchanged",
+      "runtime_status": "concept palette; no shader or PBR texture generated"
+    },
+    {
+      "material_id": "GLASS-PAL-05",
+      "name": "Honey amber",
+      "base_colour_srgb_hex_proposed": "#D8A33D",
+      "geometry_variant": false,
+      "applies_to": "Existing pane geometry in new rail frames or existing windows; shape unchanged",
+      "runtime_status": "concept palette; no shader or PBR texture generated"
+    },
+    {
+      "material_id": "GLASS-PAL-06",
+      "name": "Champagne clear",
+      "base_colour_srgb_hex_proposed": "#EBDAB7",
+      "geometry_variant": false,
+      "applies_to": "Existing pane geometry in new rail frames or existing windows; shape unchanged",
+      "runtime_status": "concept palette; no shader or PBR texture generated"
+    },
+    {
+      "material_id": "GLASS-PAL-07",
+      "name": "Pearl opal",
+      "base_colour_srgb_hex_proposed": "#E7E2E4",
+      "geometry_variant": false,
+      "applies_to": "Existing pane geometry in new rail frames or existing windows; shape unchanged",
+      "runtime_status": "concept palette; no shader or PBR texture generated"
+    },
+    {
+      "material_id": "GLASS-PAL-08",
+      "name": "Rose quartz",
+      "base_colour_srgb_hex_proposed": "#D994B1",
+      "geometry_variant": false,
+      "applies_to": "Existing pane geometry in new rail frames or existing windows; shape unchanged",
+      "runtime_status": "concept palette; no shader or PBR texture generated"
+    },
+    {
+      "material_id": "GLASS-PAL-09",
+      "name": "Peach sunset",
+      "base_colour_srgb_hex_proposed": "#ECB08F",
+      "geometry_variant": false,
+      "applies_to": "Existing pane geometry in new rail frames or existing windows; shape unchanged",
+      "runtime_status": "concept palette; no shader or PBR texture generated"
+    },
+    {
+      "material_id": "GLASS-PAL-10",
+      "name": "Amethyst",
+      "base_colour_srgb_hex_proposed": "#9563BE",
+      "geometry_variant": false,
+      "applies_to": "Existing pane geometry in new rail frames or existing windows; shape unchanged",
+      "runtime_status": "concept palette; no shader or PBR texture generated"
+    },
+    {
+      "material_id": "GLASS-PAL-11",
+      "name": "Lavender frost",
+      "base_colour_srgb_hex_proposed": "#C2ACDF",
+      "geometry_variant": false,
+      "applies_to": "Existing pane geometry in new rail frames or existing windows; shape unchanged",
+      "runtime_status": "concept palette; no shader or PBR texture generated"
+    },
+    {
+      "material_id": "GLASS-PAL-12",
+      "name": "Sapphire blue",
+      "base_colour_srgb_hex_proposed": "#3868BB",
+      "geometry_variant": false,
+      "applies_to": "Existing pane geometry in new rail frames or existing windows; shape unchanged",
+      "runtime_status": "concept palette; no shader or PBR texture generated"
+    }
+  ],
+  "rendered_colours_are_not_calibrated": true
+}

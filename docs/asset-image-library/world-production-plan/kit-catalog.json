@@ -1,0 +1,117 @@
+{
+  "status": "proposed coverage taxonomy; not generated asset counts",
+  "kits": [
+    {
+      "kit_id": "K01",
+      "name": "Landform and terrain",
+      "coverage": "Heightfield/terrain substrate, slopes, saddles, terraces, clearing pads, banks, shore connections",
+      "acceptance": "Continuous ground, named elevation seams, clear walk zones and simplified collision",
+      "reuse_scope": "Shared world plus regional variants"
+    },
+    {
+      "kit_id": "K02",
+      "name": "Geology and natural landmarks",
+      "coverage": "Rock families, boulders, strata, cliff corners, overhangs, caves only if used, hero arch/pillar contacts",
+      "acceptance": "Hero silhouette first; ordinary rocks reused at several scales with correct texel density",
+      "reuse_scope": "Shared rocks; local hero geology"
+    },
+    {
+      "kit_id": "K03",
+      "name": "Water systems",
+      "coverage": "Ocean, sheltered lagoon, calm lake/pond, stream, cascade, wet/dry edges and water inlets/outlets",
+      "acceptance": "Separate water types, levels and shoreline transitions; water visuals do not provide collision or swimming",
+      "reuse_scope": "Shared shaders/meshes; local basin shape"
+    },
+    {
+      "kit_id": "K04",
+      "name": "Ground materials and paving",
+      "coverage": "Soil, leaf litter, grass, moss, mud, sand, gravel, stone, cobble and region paving trims",
+      "acceptance": "Repeatable texture scale, blends, edges, drainage and convincing path transitions",
+      "reuse_scope": "Shared material library; local surface recipes"
+    },
+    {
+      "kit_id": "K05",
+      "name": "Flora and foliage",
+      "coverage": "Canopy, saplings, shrubs, grass/fern clumps, flowers, vines, aquatic plants, fungi and deadwood",
+      "acceptance": "Species silhouettes, placement clusters, wind/LOD policy and no growth blocking the path",
+      "reuse_scope": "Regional habitat palettes; shared species"
+    },
+    {
+      "kit_id": "K06",
+      "name": "Fauna",
+      "coverage": "Mammals, birds, insects, fish, reef life and selected magical animals",
+      "acceptance": "Reference anatomy review, rig/animation, idle/move states, spawn limits and habitat fit; not every species at every site",
+      "reuse_scope": "Shared species/rigs with habitat selection"
+    },
+    {
+      "kit_id": "K07",
+      "name": "House kit",
+      "coverage": "Solid/window/door walls, inside/outside corners, floors, gables, roof pitches, dormers, chimney, porch, threshold and small interior divisions",
+      "acceptance": "Human dimensions, real apertures, roof/wall returns and two reusable cottage interior templates",
+      "reuse_scope": "Shared B12 house family plus local material variants"
+    },
+    {
+      "kit_id": "K08",
+      "name": "Landmark building kit",
+      "coverage": "Site-specific walls, gates, arches, columns, buttresses, towers, dome/chapel roofs and wing junctions",
+      "acceptance": "Source silhouette and local grammar, practical back/roof returns and selected accessible core",
+      "reuse_scope": "Source-specific structural families"
+    },
+    {
+      "kit_id": "K09",
+      "name": "Circulation and infrastructure",
+      "coverage": "Paths, steps, ramps, landings, bridges, bearing seats, parapets, fences, gates and vertical-travel arrivals",
+      "acceptance": "A-to-B continuity and endpoint clearances; navigation/collision distinct from visual dressing",
+      "reuse_scope": "Shared dimension contracts with local finish"
+    },
+    {
+      "kit_id": "K10",
+      "name": "Settlement and outdoor furnishings",
+      "coverage": "Courts, street/quay edges, drains, benches, wells, signs, baskets, wood racks, window boxes and lamps",
+      "acceptance": "Small functional groups at entries/rest points, not clutter over every metre",
+      "reuse_scope": "Shared prop sets; local timber/stone style"
+    },
+    {
+      "kit_id": "K11",
+      "name": "Interior room architecture",
+      "coverage": "Floor/wall/ceiling shells, door/window reveals, upper galleries, stairs, alcoves, vault/dome undersides and room connections",
+      "acceptance": "Coordinated plan and ceiling views, actual openings and contact profiles; selected rooms only",
+      "reuse_scope": "Hero/local room templates; excludes non-play service areas"
+    },
+    {
+      "kit_id": "K12",
+      "name": "Furniture and personal items",
+      "coverage": "Beds/bedding, tables, chairs, storage, desks, books, albums, craft/personal objects and existing celebration items",
+      "acceptance": "Human scale, attachment/front axes, useful moving states and reusable instances",
+      "reuse_scope": "Shared families; separate rustic versus royal styling"
+    },
+    {
+      "kit_id": "K13",
+      "name": "Decor, trim and glass",
+      "coverage": "Cornices, base/capital collars, applique, carvings, tile/panel motifs, railing infill, glass palettes and curtains",
+      "acceptance": "Precise repeats, plain join ends, glass/material separation; colours are materials, not unique meshes",
+      "reuse_scope": "Shared motif/profile families; local design/colour constraints"
+    },
+    {
+      "kit_id": "K14",
+      "name": "Interactions and readable elements",
+      "coverage": "Doors, inspectable/usable items, existing wish lanterns, prompts, signs, route markers and persistence where needed",
+      "acceptance": "One clear action with correct prompt/range/input/save behavior; new mechanics explicitly specified before implementation",
+      "reuse_scope": "Shared behavior components plus authored local content"
+    },
+    {
+      "kit_id": "K15",
+      "name": "Ambience and effects",
+      "coverage": "Wind, day/night lighting, local mist, water foam/ripples, small magical glows, birds/wind/water sound and weather accents",
+      "acceptance": "Regional atmosphere with explicit distance/density budgets; no automatic moving lights on every object",
+      "reuse_scope": "Shared effects with local settings; no music-room scope"
+    },
+    {
+      "kit_id": "K16",
+      "name": "Runtime and packaging",
+      "coverage": "Pivots/units, named parts, LODs, simplified collision, material/texture slots, instancing, streaming groups and asset manifests",
+      "acceptance": "Stable IDs, accepted mesh versions, spawn/loading boundaries, measured frame/memory budgets and regression checks",
+      "reuse_scope": "One shared technical contract for all kits"
+    }
+  ]
+}

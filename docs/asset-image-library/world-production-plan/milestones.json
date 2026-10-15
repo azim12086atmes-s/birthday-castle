@@ -1,0 +1,140 @@
+{
+  "status": "proposed sequencing; no calendar promise or implicit approval",
+  "phases": [
+    {
+      "id": "P0",
+      "name": "Inventory and scope",
+      "deliverables": "Saved source IDs,34place matrix,16kit catalog, exclusions and current budget; distinguish references, models and runtime.",
+      "exit_evidence": "This plan provides the initial audit; source facts are preserved.",
+      "status": "initial-audit-complete"
+    },
+    {
+      "id": "P1",
+      "name": "Geography and route blockout",
+      "deliverables": "Elevation/shore/water layers, site pads, crossing locations, regional transitions and travel graph.",
+      "exit_evidence": "All G01\u2013G08 decisions resolved enough for first routes; concept polylines are not marked playable.",
+      "status": "planned"
+    },
+    {
+      "id": "P2",
+      "name": "Shared kit and technical contracts",
+      "deliverables": "Units, pivots, seam profiles, opening standards, glass/material IDs, UV scale, collision, LOD/instancing and loading groups.",
+      "exit_evidence": "One floor/wall/opening/rail/path/water-edge example physically fits and survives actual player/camera tests.",
+      "status": "planned"
+    },
+    {
+      "id": "P3",
+      "name": "Two playable samples",
+      "deliverables": "B01bedroom/balcony and F02one cottage/clearing/pond-edge loop; human furniture and one reusable interaction test.",
+      "exit_evidence": "Both load in real browser with correct collision, route, openings, return and measured performance. Reference approval before paid generation; no paid work is authorised by this planning document.",
+      "status": "planned"
+    },
+    {
+      "id": "P4",
+      "name": "Regional route production",
+      "deliverables": "Execute W2\u2013W6; for each place terrain/arrival first, structure second, selected interior/circulation third, ecology/decor fourth, behavior/effects last.",
+      "exit_evidence": "Complete the stated D2/D3/D4coverage; every place has evidence rather than a saved image count.",
+      "status": "planned"
+    },
+    {
+      "id": "P5",
+      "name": "World integration",
+      "deliverables": "Connect routes, palace spine, bridges, land/sea/sky arrivals, state persistence and streaming transitions.",
+      "exit_evidence": "No orphan destination, underwater landing, inaccessible entrance, broken return or forced huge empty walk.",
+      "status": "planned"
+    },
+    {
+      "id": "P6",
+      "name": "Polish and performance",
+      "deliverables": "Refine repeated materials/joins, foliage density, wildlife behavior, shadows, weather/waves and light/ambience.",
+      "exit_evidence": "Review final production camera and device measurements; runtime/deployment approval is separate from reference archive publication.",
+      "status": "planned"
+    }
+  ],
+  "regional_waves": [
+    {
+      "id": "W1",
+      "name": "Two playable samples",
+      "locations": [
+        "B01",
+        "F02"
+      ],
+      "dependencies": "Shared player/camera/collision conventions, material scale and provisional geography",
+      "exit_evidence": "One bedroom-to-balcony route and one forest-cottage route loaded in the real browser; reference images alone cannot pass."
+    },
+    {
+      "id": "W2",
+      "name": "Royal grounds and west woodland loop",
+      "locations": [
+        "B04",
+        "B12",
+        "B13",
+        "B18",
+        "B25",
+        "S03",
+        "F01",
+        "S06"
+      ],
+      "dependencies": "W1 validated plus path/water/vegetation starter kits",
+      "exit_evidence": "Village, palace garden edge, lake and woodland destinations connected; no long empty mandatory walks."
+    },
+    {
+      "id": "W3",
+      "name": "Lake, lagoon, harbour and open coast",
+      "locations": [
+        "B02",
+        "B03",
+        "B09",
+        "B19",
+        "B20",
+        "B21",
+        "B22",
+        "B23",
+        "B24"
+      ],
+      "dependencies": "Water levels, shoreline, bridge/jetty interfaces and measured glass/water budget plus a shared step/landing and vertical-access prototype",
+      "exit_evidence": "Dry routes, landings, selected interiors and tidal viewpoints usable; ocean visuals remain distinct from calm lake water."
+    },
+    {
+      "id": "W4",
+      "name": "Misty forest and local highlands",
+      "locations": [
+        "F03",
+        "B05",
+        "B06",
+        "B07",
+        "B08",
+        "B14",
+        "B16",
+        "B17"
+      ],
+      "dependencies": "W1 terrain conventions, W2 forest base and working vertical-route prototype",
+      "exit_evidence": "Ridge/forest loops and selected upper decks have safe physical access or clearly specified travel; local timber/stone styles retained."
+    },
+    {
+      "id": "W5",
+      "name": "Jungle and canyon landmarks",
+      "locations": [
+        "B10",
+        "B11",
+        "B15"
+      ],
+      "dependencies": "W3 wet/dry edge tests and W4 slopes/vertical circulation",
+      "exit_evidence": "Dense jungle and dry canyon each have a readable, performant route and source-specific landmark kit."
+    },
+    {
+      "id": "W6",
+      "name": "Sky destinations",
+      "locations": [
+        "S01",
+        "S02",
+        "S04",
+        "S05"
+      ],
+      "dependencies": "Tested arrival/return travel, containment, streaming and fall/reset behavior",
+      "exit_evidence": "Each island has a working arrival and return, explorable focal route and bounded content; no flight system is assumed."
+    }
+  ],
+  "current_next_deliverable": "P1 simplified geography/route blockout with water/elevation/open issues; no new art generation in this planning update",
+  "local_first_rule": "Resolve world geography at coarse level, but only require sample-local elevations, water, boundaries and access for the first prototype; refine distant-region unknowns in their own wave."
+}

@@ -1,11 +1,11 @@
 {
   "date": "2026-10-13",
-  "distinct_image_count": 845,
+  "distinct_image_count": 848,
   "source_file_count": 969,
-  "total_bytes": 841107104,
+  "total_bytes": 848933058,
   "categories": {
     "additional-generated-studies": 33,
-    "completion-reference-kits": 30,
+    "completion-reference-kits": 33,
     "completion-superseded-drafts": 3,
     "component-development-studies": 3,
     "illustrated-boards": 45,
@@ -17316,6 +17316,89 @@
       "reference_role": "source-compatible-missing-component-reference",
       "design_status": "Visible source forms guide design; hidden geometry and metrics proposed; no model or layout approval",
       "review_status": "visual-reviewed-atelier-props-pending-mechanical-and-mesh-review"
+    },
+    {
+      "id": "WLD-GLAZED-RAIL-002",
+      "title": "Glazed parapet designs and twelve-colour glass palette",
+      "label": "WLD-GLAZED-RAIL-002 \u2014 Glazed parapet designs and twelve-colour glass palette",
+      "category": "completion-reference-kits",
+      "file": "completion-pass/WLD-GLAZED-RAIL-002/WLD-GLAZED-RAIL-002.png",
+      "sha256": "178de9737cb6878cd4c0e71701a051429a29bae959d9a69f9fac8d4d670e5352",
+      "bytes": 2827104,
+      "source_aliases": [
+        "/workspace/generated_images/exec-990e10e8-df0a-43a1-8ccc-fbb0792f1f15.png"
+      ],
+      "alias_ids": [],
+      "component_ids": [
+        "WLD-GLAZED-RAIL-002-S01",
+        "WLD-GLAZED-RAIL-002-S02",
+        "WLD-GLAZED-RAIL-002-S03",
+        "WLD-GLAZED-RAIL-002-S04"
+      ],
+      "related_image_ids": [
+        "GEN-39"
+      ],
+      "reference_role": "source-compatible-missing-component-reference",
+      "design_status": "Visible source forms guide design; hidden geometry and metrics proposed; no model or layout approval",
+      "review_status": "reference-reviewed-pending-join-and-glass-material-review"
+    },
+    {
+      "id": "B12-COURT-PROP-001",
+      "title": "Cottage and village exterior small objects",
+      "label": "B12-COURT-PROP-001 \u2014 Cottage and village exterior small objects",
+      "category": "completion-reference-kits",
+      "file": "completion-pass/B12-COURT-PROP-001/B12-COURT-PROP-001.png",
+      "sha256": "5d5d671aea52e637d49417f40aa61ca1464faf65d15f471c607eda5a7f2f026e",
+      "bytes": 2371946,
+      "source_aliases": [
+        "/workspace/generated_images/exec-664d99fc-6176-44d9-b20e-fddac9f98d1e.png"
+      ],
+      "alias_ids": [],
+      "component_ids": [
+        "B12-COURT-PROP-001-D01",
+        "B12-COURT-PROP-001-D02",
+        "B12-COURT-PROP-001-D03",
+        "B12-COURT-PROP-001-D04",
+        "B12-COURT-PROP-001-D05",
+        "B12-COURT-PROP-001-D06",
+        "B12-COURT-PROP-001-D07",
+        "B12-COURT-PROP-001-D08",
+        "B12-COURT-PROP-001-D09",
+        "B12-COURT-PROP-001-D10",
+        "B12-COURT-PROP-001-D11",
+        "B12-COURT-PROP-001-D12"
+      ],
+      "related_image_ids": [
+        "GEN-27"
+      ],
+      "reference_role": "source-compatible-missing-component-reference",
+      "design_status": "Visible source forms guide design; hidden geometry and metrics proposed; no model or layout approval",
+      "review_status": "reference-reviewed-pending-mesh-and-moving-part-review"
+    },
+    {
+      "id": "T05-FOREST-JOIN-001",
+      "title": "Forest clearing terrain connections",
+      "label": "T05-FOREST-JOIN-001 \u2014 Forest clearing terrain connections",
+      "category": "completion-reference-kits",
+      "file": "completion-pass/T05-FOREST-JOIN-001/T05-FOREST-JOIN-001.png",
+      "sha256": "0b165ad19614ddfc255c0f8d5c4dac60420f96d6eaaac8e794e3b7d5b2fba4a1",
+      "bytes": 2626904,
+      "source_aliases": [
+        "/workspace/generated_images/exec-395d5ea7-07ef-449a-a7f7-2868f436f96c.png"
+      ],
+      "alias_ids": [],
+      "component_ids": [
+        "T05-FOREST-JOIN-001-A01",
+        "T05-FOREST-JOIN-001-A02",
+        "T05-FOREST-JOIN-001-A03",
+        "T05-FOREST-JOIN-001-A04"
+      ],
+      "related_image_ids": [
+        "GEN-21"
+      ],
+      "reference_role": "source-compatible-missing-component-reference",
+      "design_status": "Visible source forms guide design; hidden geometry and metrics proposed; no model or layout approval",
+      "review_status": "reference-reviewed-pending-terrain-and-player-tests"
     }
   ],
   "label_schema_version": 1

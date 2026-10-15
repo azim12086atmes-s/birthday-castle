@@ -1,0 +1,53 @@
+{
+  "status": "audit candidates; no new sheet reservations or generation approval by count alone",
+  "candidates": [
+    {
+      "name": "Rustic cottage interiors",
+      "kit_scope": "House/interior/item",
+      "gap": "Royal bedroom props should not be recoloured blindly into woodland homes; audit two reusable small-room layouts and simple wood furniture.",
+      "next_action": "Use procedural bases/existing compatible props first; at most a consolidated reference candidate if source/fit audit proves it necessary."
+    },
+    {
+      "name": "Temple/keep/lighthouse hidden interiors",
+      "kit_scope": "Building/interior",
+      "gap": "Tiny map views do not establish depths, floor layouts or access.",
+      "next_action": "Scope only the selected room/deck in the location matrix; do not invent complete unseen buildings."
+    },
+    {
+      "name": "Timber brook crossing",
+      "kit_scope": "Infrastructure",
+      "gap": "Bank references exist, but landing dimensions do not prove a complete bridge or actual span.",
+      "next_action": "Measure crossing in P1/P3; simple plank/support geometry can be procedural."
+    },
+    {
+      "name": "Terrain height and edge fit",
+      "kit_scope": "Terrain",
+      "gap": "Saved scenic tiles and caption dimensions are not connected landscape geometry.",
+      "next_action": "Fit continuous substrate and collision before adding root/rock dressing."
+    },
+    {
+      "name": "Fauna animation and nocturnal forms",
+      "kit_scope": "Nature/behavior",
+      "gap": "Reference animals do not imply rigs or flight/swim behavior; some firefly/night forms remain unconfirmed.",
+      "next_action": "Reuse species and shared behavior budgets; only add missing silhouettes after an audit."
+    },
+    {
+      "name": "Glass and trim compatibility",
+      "kit_scope": "Materials/architecture",
+      "gap": "Colour swatches are not PBR shaders; model profiles and pane grooves are not proven to match.",
+      "next_action": "Use four geometry variants and12material variants; test true fit/transparency and sorting."
+    },
+    {
+      "name": "Freshwater scale and sea motion",
+      "kit_scope": "Geography/water",
+      "gap": "Lake-size ambiguity and water levels unresolved; wave pictures are not simulation.",
+      "next_action": "Resolve water shape/levels before grading banks; implement uneven ocean/sheltered water separately."
+    },
+    {
+      "name": "Travel and readable interactions",
+      "kit_scope": "Gameplay",
+      "gap": "Existing art and route names do not establish functioning endpoints or new quest mechanics.",
+      "next_action": "Use existing systems where possible; specify new interactions explicitly with input/prompt/state acceptance criteria."
+    }
+  ]
+}

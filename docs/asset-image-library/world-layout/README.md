@@ -1,5 +1,7 @@
 # WLD-MAP-002 — Starlight Coast forests and cottage exploration
 
+**Structured planning update — 15 October 2026:** [World sequence, kit families and depth for all34places](../world-production-plan/README.md). Image generation is paused for this planning pass; geography/route decisions precede the next playable samples. This is proposed scope, not a claim of built or approved runtime geometry.
+
 [Open the revised map](WLD-MAP-002.png) · [One-image gallery](index.html) · [Forest expansion plan](FOREST-EXPLORATION.md) · [Cottage clearings](forest-cottages.csv) · [25 landmark anchors](locations.csv) · [Full regions/routes/placement JSON](layout.json) · [Kit allocations](KIT-SEQUENCE.md)
 
 The proposed world envelope is now **12km×12km**, expanded from7.5km to accommodate forest exploration and cottage clearings. The mainland extends north, west and northeast. The palace remains **2.5km wide** and the other landmark sizes stay fixed. Palace depth2.125km is a provisional planning reservation; its architecture still followsGEN-37. Open sea, southern beaches, sheltered lake and localized fjord/misty hills remain distinct.

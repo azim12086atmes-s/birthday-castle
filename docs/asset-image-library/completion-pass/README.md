@@ -8,10 +8,13 @@ Main palace keeps GEN-37’s front, continuous angled/curved stepped wings, rose
 
 The coverage checks ask whether each form already exists, whether its construction/contact view is missing, whether interior ceiling/arch/wall/floor parts are present, whether water inlet/bend/junction/outlet parts are covered, and whether ecology fits each site. Reuse original plants, lighting, furnishings and hero wishes before new drawings. Each room snapshot is distinct from joinable structural shells and isolated details. Smaller views are not new model targets. Full IDs are in metadata; shorter D/A/S labels resolve under the sheet title.
 
-Progress: **30/118 queued sheets saved;196 component targets indexed so far**. Library: **123 selected sheets saved;211/230 selected or reserved;845 archive images**.230is a ceiling, not a target to pad.
+Progress: **33/119 queued sheets saved;216 component targets indexed so far**. Library: **126 selected sheets saved;212/230 selected or reserved;848 archive images**.230is a ceiling, not a target to pad.
 
 | Sheet | Gap covered | Parts | Status |
 | --- | --- | ---: | --- |
+| [WLD-GLAZED-RAIL-002](WLD-GLAZED-RAIL-002/schedule.json) | Glazed parapet designs and twelve-colour glass palette | 4 | Saved reference; fit/model pending |
+| [B12-COURT-PROP-001](B12-COURT-PROP-001/schedule.json) | Cottage and village exterior small objects | 12 | Saved reference; fit/model pending |
+| [T05-FOREST-JOIN-001](T05-FOREST-JOIN-001/schedule.json) | Forest clearing terrain connections | 4 | Saved reference; fit/model pending |
 | [PAL-DOME-INNER-001](PAL-DOME-INNER-001/schedule.json) | Original palace — internal dome and support sections | 4 | Saved reference; fit/model pending |
 | [PAL-DOME-INNER-DETAIL-001](PAL-DOME-INNER-DETAIL-001/schedule.json) | Original palace — dome ceiling and arch fittings | 16 | Saved reference; fit/model pending |
 | [PAL-WING-001](PAL-WING-001/schedule.json) | Original palace — source-compatible angled wing modules | 4 | Saved reference; fit/model pending |
@@ -91,7 +94,6 @@ Progress: **30/118 queued sheets saved;196 component targets indexed so far**. L
 | [WLD-WAYFIND-001](WLD-WAYFIND-001/schedule.json) | Destination and exploration sign components | 12 | Queued; not generated |
 | [WLD-PORT-STRUCT-001](WLD-PORT-STRUCT-001/schedule.json) | Docks and shore arrival construction | 4 | Queued; not generated |
 | [WLD-PORT-DETAIL-001](WLD-PORT-DETAIL-001/schedule.json) | Dock and travel hardware | 12 | Queued; not generated |
-| [B12-COURT-PROP-001](B12-COURT-PROP-001/schedule.json) | Cottage and village exterior small objects | 12 | Queued; not generated |
 | [WLD-BRIDGE-JOINS-001](WLD-BRIDGE-JOINS-001/schedule.json) | Bridge abutment and level joins | 4 | Queued; not generated |
 | [T02-BANK-001](T02-BANK-001/schedule.json) | Freshwater banks and pool terrain joins | 4 | Queued; not generated |
 | [T02-FAUNA-001](T02-FAUNA-001/schedule.json) | Freshwater pond fauna | 4 | Saved reference; fit/model pending |
@@ -107,7 +109,6 @@ Progress: **30/118 queued sheets saved;196 component targets indexed so far**. L
 | [T04-FAUNA-001](T04-FAUNA-001/schedule.json) | Jungle small wildlife | 4 | Queued; not generated |
 | [T04-GROUND-001](T04-GROUND-001/schedule.json) | Jungle roots and wet terrain joins | 4 | Queued; not generated |
 | [T05-CONIFER-001](T05-CONIFER-001/schedule.json) | Mistwood and woodland evergreen trees | 4 | Saved reference; fit/model pending |
-| [T05-FOREST-JOIN-001](T05-FOREST-JOIN-001/schedule.json) | Forest clearing terrain connections | 4 | Queued; not generated |
 | [T06-FLORA-001](T06-FLORA-001/schedule.json) | Fjord and highland planting | 6 | Queued; not generated |
 | [T06-ROCK-001](T06-ROCK-001/schedule.json) | Fjord cliff and highland stone joins | 4 | Queued; not generated |
 | [T07-ROCK-001](T07-ROCK-001/schedule.json) | Canyon and crescent rock terrain | 4 | Queued; not generated |

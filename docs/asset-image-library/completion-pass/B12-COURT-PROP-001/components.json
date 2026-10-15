@@ -5,15 +5,15 @@
       "name": "Small well rim and winch frame",
       "kind": "architectural-detail",
       "dimensions_m_proposed": [
-        0.8,
-        0.5,
-        1
+        1.4,
+        1.4,
+        2.2
       ],
       "function": "Missing human-scale exploration clearing/village dressing, not palace-service rooms",
-      "construction": "One human-scale small well rim and winch frame in cottage cedar/cream/gold source vocabulary, whole unclipped, coherent supports and useful back view. No kitchen/service fixtures or existing large door/window masters duplicated.",
-      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
-      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
-      "target_polycount_proposed": 2500,
+      "construction": "One low circular stone WELL RIM with real hollow central opening, two slender TIMBER posts and a coherent horizontal winch roller/handle. No water or bucket included; no full cottage. Simple flat ground footprint and empty shaft mouth.",
+      "attachment_face": "Underside to ground/table, or flat rear mount for wall/bolt/window box",
+      "semantic_front": "Access/decorated face shown; Z up; mat broad face upwards",
+      "target_polycount_proposed": 3500,
       "reuse_class": "reusable",
       "applies_to": [
         "Garden and path furniture"
@@ -28,22 +28,32 @@
       "model_sha256": "",
       "review_status": "pending-reference-review",
       "suggested_model_filename": "B12-COURT-PROP-001-D01__small-well-rim-and-winch-frame__v001.glb",
-      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed",
+      "component_family": "Cottage and village exterior small objects",
+      "parent_asset_family": "B12-COURT-PROP-001",
+      "reference_image_id": "B12-COURT-PROP-001",
+      "reference_file": "completion-pass/B12-COURT-PROP-001/B12-COURT-PROP-001.png",
+      "reference_sha256": "5d5d671aea52e637d49417f40aa61ca1464faf65d15f471c607eda5a7f2f026e",
+      "source_reference_id": "GEN-27",
+      "source_reference_file": "images/illustrated-boards/GEN-27.png",
+      "source_reference_sha256": "24c53bf783000da360b391b29640a0c2be9c30420aaf8c7152031139f5ede92f",
+      "notes": "All twelve named cottage props are visible with contact/open/rear views. Warm timber, cream paint, slate-blue accents and small brass fittings remain distinct from the marble palace. Well adds a small blue-shingled canopy not required by the prompt; retain as proposed optional cottage detail. Wind-chime suspension and well winch/bolt movement need mechanical review. Containers are empty and planting is reused separately. Dimensions now reflect actual small-object functions rather than the prior placeholder uniform bounds. Source backs, dimensions, repeat patterns, inter-view parity and physical attachment remain unverified. Whole-sheet generation does not prove individual meshes are separable.",
+      "geometry_review_status": "unverified"
     },
     {
       "asset_id": "B12-COURT-PROP-001-D02",
       "name": "Wood bucket",
       "kind": "architectural-detail",
       "dimensions_m_proposed": [
-        0.8,
-        0.5,
-        1
+        0.3,
+        0.3,
+        0.35
       ],
       "function": "Missing human-scale exploration clearing/village dressing, not palace-service rooms",
-      "construction": "One human-scale wood bucket in cottage cedar/cream/gold source vocabulary, whole unclipped, coherent supports and useful back view. No kitchen/service fixtures or existing large door/window masters duplicated.",
-      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
-      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
-      "target_polycount_proposed": 2500,
+      "construction": "One small staved WOOD BUCKET, open hollow mouth, visible metal hoops and one raised curved handle. Empty interior and stable base.",
+      "attachment_face": "Underside to ground/table, or flat rear mount for wall/bolt/window box",
+      "semantic_front": "Access/decorated face shown; Z up; mat broad face upwards",
+      "target_polycount_proposed": 3500,
       "reuse_class": "reusable",
       "applies_to": [
         "Garden and path furniture"
@@ -58,22 +68,32 @@
       "model_sha256": "",
       "review_status": "pending-reference-review",
       "suggested_model_filename": "B12-COURT-PROP-001-D02__wood-bucket__v001.glb",
-      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed",
+      "component_family": "Cottage and village exterior small objects",
+      "parent_asset_family": "B12-COURT-PROP-001",
+      "reference_image_id": "B12-COURT-PROP-001",
+      "reference_file": "completion-pass/B12-COURT-PROP-001/B12-COURT-PROP-001.png",
+      "reference_sha256": "5d5d671aea52e637d49417f40aa61ca1464faf65d15f471c607eda5a7f2f026e",
+      "source_reference_id": "GEN-27",
+      "source_reference_file": "images/illustrated-boards/GEN-27.png",
+      "source_reference_sha256": "24c53bf783000da360b391b29640a0c2be9c30420aaf8c7152031139f5ede92f",
+      "notes": "All twelve named cottage props are visible with contact/open/rear views. Warm timber, cream paint, slate-blue accents and small brass fittings remain distinct from the marble palace. Well adds a small blue-shingled canopy not required by the prompt; retain as proposed optional cottage detail. Wind-chime suspension and well winch/bolt movement need mechanical review. Containers are empty and planting is reused separately. Dimensions now reflect actual small-object functions rather than the prior placeholder uniform bounds. Source backs, dimensions, repeat patterns, inter-view parity and physical attachment remain unverified. Whole-sheet generation does not prove individual meshes are separable.",
+      "geometry_review_status": "unverified"
     },
     {
       "asset_id": "B12-COURT-PROP-001-D03",
       "name": "Wicker flower basket",
       "kind": "architectural-detail",
       "dimensions_m_proposed": [
-        0.8,
-        0.5,
-        1
+        0.45,
+        0.35,
+        0.3
       ],
       "function": "Missing human-scale exploration clearing/village dressing, not palace-service rooms",
-      "construction": "One human-scale wicker flower basket in cottage cedar/cream/gold source vocabulary, whole unclipped, coherent supports and useful back view. No kitchen/service fixtures or existing large door/window masters duplicated.",
-      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
-      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
-      "target_polycount_proposed": 2500,
+      "construction": "One shallow WICKER flower BASKET with coherent woven body, simple handle and empty interior. Reuse existing flowers as removable dressing.",
+      "attachment_face": "Underside to ground/table, or flat rear mount for wall/bolt/window box",
+      "semantic_front": "Access/decorated face shown; Z up; mat broad face upwards",
+      "target_polycount_proposed": 3500,
       "reuse_class": "reusable",
       "applies_to": [
         "Garden and path furniture"
@@ -88,7 +108,17 @@
       "model_sha256": "",
       "review_status": "pending-reference-review",
       "suggested_model_filename": "B12-COURT-PROP-001-D03__wicker-flower-basket__v001.glb",
-      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed",
+      "component_family": "Cottage and village exterior small objects",
+      "parent_asset_family": "B12-COURT-PROP-001",
+      "reference_image_id": "B12-COURT-PROP-001",
+      "reference_file": "completion-pass/B12-COURT-PROP-001/B12-COURT-PROP-001.png",
+      "reference_sha256": "5d5d671aea52e637d49417f40aa61ca1464faf65d15f471c607eda5a7f2f026e",
+      "source_reference_id": "GEN-27",
+      "source_reference_file": "images/illustrated-boards/GEN-27.png",
+      "source_reference_sha256": "24c53bf783000da360b391b29640a0c2be9c30420aaf8c7152031139f5ede92f",
+      "notes": "All twelve named cottage props are visible with contact/open/rear views. Warm timber, cream paint, slate-blue accents and small brass fittings remain distinct from the marble palace. Well adds a small blue-shingled canopy not required by the prompt; retain as proposed optional cottage detail. Wind-chime suspension and well winch/bolt movement need mechanical review. Containers are empty and planting is reused separately. Dimensions now reflect actual small-object functions rather than the prior placeholder uniform bounds. Source backs, dimensions, repeat patterns, inter-view parity and physical attachment remain unverified. Whole-sheet generation does not prove individual meshes are separable.",
+      "geometry_review_status": "unverified"
     },
     {
       "asset_id": "B12-COURT-PROP-001-D04",
@@ -96,14 +126,14 @@
       "kind": "architectural-detail",
       "dimensions_m_proposed": [
         0.8,
-        0.5,
-        1
+        0.35,
+        0.3
       ],
       "function": "Missing human-scale exploration clearing/village dressing, not palace-service rooms",
-      "construction": "One human-scale window box corner insert in cottage cedar/cream/gold source vocabulary, whole unclipped, coherent supports and useful back view. No kitchen/service fixtures or existing large door/window masters duplicated.",
-      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
-      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
-      "target_polycount_proposed": 2500,
+      "construction": "One90-degree timber WINDOW BOX corner with L-shaped footprint, hollow soil seat and rear wall fixing brackets. Empty planting volume; no flower or cottage wall attached.",
+      "attachment_face": "Underside to ground/table, or flat rear mount for wall/bolt/window box",
+      "semantic_front": "Access/decorated face shown; Z up; mat broad face upwards",
+      "target_polycount_proposed": 3500,
       "reuse_class": "reusable",
       "applies_to": [
         "Garden and path furniture"
@@ -118,22 +148,32 @@
       "model_sha256": "",
       "review_status": "pending-reference-review",
       "suggested_model_filename": "B12-COURT-PROP-001-D04__window-box-corner-insert__v001.glb",
-      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed",
+      "component_family": "Cottage and village exterior small objects",
+      "parent_asset_family": "B12-COURT-PROP-001",
+      "reference_image_id": "B12-COURT-PROP-001",
+      "reference_file": "completion-pass/B12-COURT-PROP-001/B12-COURT-PROP-001.png",
+      "reference_sha256": "5d5d671aea52e637d49417f40aa61ca1464faf65d15f471c607eda5a7f2f026e",
+      "source_reference_id": "GEN-27",
+      "source_reference_file": "images/illustrated-boards/GEN-27.png",
+      "source_reference_sha256": "24c53bf783000da360b391b29640a0c2be9c30420aaf8c7152031139f5ede92f",
+      "notes": "All twelve named cottage props are visible with contact/open/rear views. Warm timber, cream paint, slate-blue accents and small brass fittings remain distinct from the marble palace. Well adds a small blue-shingled canopy not required by the prompt; retain as proposed optional cottage detail. Wind-chime suspension and well winch/bolt movement need mechanical review. Containers are empty and planting is reused separately. Dimensions now reflect actual small-object functions rather than the prior placeholder uniform bounds. Source backs, dimensions, repeat patterns, inter-view parity and physical attachment remain unverified. Whole-sheet generation does not prove individual meshes are separable.",
+      "geometry_review_status": "unverified"
     },
     {
       "asset_id": "B12-COURT-PROP-001-D05",
       "name": "Timber porch seat",
       "kind": "architectural-detail",
       "dimensions_m_proposed": [
-        0.8,
-        0.5,
-        1
+        1.4,
+        0.55,
+        0.85
       ],
       "function": "Missing human-scale exploration clearing/village dressing, not palace-service rooms",
-      "construction": "One human-scale timber porch seat in cottage cedar/cream/gold source vocabulary, whole unclipped, coherent supports and useful back view. No kitchen/service fixtures or existing large door/window masters duplicated.",
-      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
-      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
-      "target_polycount_proposed": 2500,
+      "construction": "One simple TIMBER PORCH BENCH with back slats, two stable side supports and ivory-painted trim, restrained blossom carving. Seat height0.45m. No cushions, flowerpots or wall.",
+      "attachment_face": "Underside to ground/table, or flat rear mount for wall/bolt/window box",
+      "semantic_front": "Access/decorated face shown; Z up; mat broad face upwards",
+      "target_polycount_proposed": 3500,
       "reuse_class": "reusable",
       "applies_to": [
         "Garden and path furniture"
@@ -148,22 +188,32 @@
       "model_sha256": "",
       "review_status": "pending-reference-review",
       "suggested_model_filename": "B12-COURT-PROP-001-D05__timber-porch-seat__v001.glb",
-      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed",
+      "component_family": "Cottage and village exterior small objects",
+      "parent_asset_family": "B12-COURT-PROP-001",
+      "reference_image_id": "B12-COURT-PROP-001",
+      "reference_file": "completion-pass/B12-COURT-PROP-001/B12-COURT-PROP-001.png",
+      "reference_sha256": "5d5d671aea52e637d49417f40aa61ca1464faf65d15f471c607eda5a7f2f026e",
+      "source_reference_id": "GEN-27",
+      "source_reference_file": "images/illustrated-boards/GEN-27.png",
+      "source_reference_sha256": "24c53bf783000da360b391b29640a0c2be9c30420aaf8c7152031139f5ede92f",
+      "notes": "All twelve named cottage props are visible with contact/open/rear views. Warm timber, cream paint, slate-blue accents and small brass fittings remain distinct from the marble palace. Well adds a small blue-shingled canopy not required by the prompt; retain as proposed optional cottage detail. Wind-chime suspension and well winch/bolt movement need mechanical review. Containers are empty and planting is reused separately. Dimensions now reflect actual small-object functions rather than the prior placeholder uniform bounds. Source backs, dimensions, repeat patterns, inter-view parity and physical attachment remain unverified. Whole-sheet generation does not prove individual meshes are separable.",
+      "geometry_review_status": "unverified"
     },
     {
       "asset_id": "B12-COURT-PROP-001-D06",
       "name": "Hanging wind chime",
       "kind": "architectural-detail",
       "dimensions_m_proposed": [
-        0.8,
-        0.5,
-        1
+        0.15,
+        0.15,
+        0.45
       ],
       "function": "Missing human-scale exploration clearing/village dressing, not palace-service rooms",
-      "construction": "One human-scale hanging wind chime in cottage cedar/cream/gold source vocabulary, whole unclipped, coherent supports and useful back view. No kitchen/service fixtures or existing large door/window masters duplicated.",
-      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
-      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
-      "target_polycount_proposed": 2500,
+      "construction": "One small hanging WIND CHIME, wooden crossbar, five brass tubes with consistent hanging strings and central clapper. Single top suspension loop; not a lamp or oversized tower bell.",
+      "attachment_face": "Underside to ground/table, or flat rear mount for wall/bolt/window box",
+      "semantic_front": "Access/decorated face shown; Z up; mat broad face upwards",
+      "target_polycount_proposed": 3500,
       "reuse_class": "reusable",
       "applies_to": [
         "Garden and path furniture"
@@ -178,22 +228,32 @@
       "model_sha256": "",
       "review_status": "pending-reference-review",
       "suggested_model_filename": "B12-COURT-PROP-001-D06__hanging-wind-chime__v001.glb",
-      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed",
+      "component_family": "Cottage and village exterior small objects",
+      "parent_asset_family": "B12-COURT-PROP-001",
+      "reference_image_id": "B12-COURT-PROP-001",
+      "reference_file": "completion-pass/B12-COURT-PROP-001/B12-COURT-PROP-001.png",
+      "reference_sha256": "5d5d671aea52e637d49417f40aa61ca1464faf65d15f471c607eda5a7f2f026e",
+      "source_reference_id": "GEN-27",
+      "source_reference_file": "images/illustrated-boards/GEN-27.png",
+      "source_reference_sha256": "24c53bf783000da360b391b29640a0c2be9c30420aaf8c7152031139f5ede92f",
+      "notes": "All twelve named cottage props are visible with contact/open/rear views. Warm timber, cream paint, slate-blue accents and small brass fittings remain distinct from the marble palace. Well adds a small blue-shingled canopy not required by the prompt; retain as proposed optional cottage detail. Wind-chime suspension and well winch/bolt movement need mechanical review. Containers are empty and planting is reused separately. Dimensions now reflect actual small-object functions rather than the prior placeholder uniform bounds. Source backs, dimensions, repeat patterns, inter-view parity and physical attachment remain unverified. Whole-sheet generation does not prove individual meshes are separable.",
+      "geometry_review_status": "unverified"
     },
     {
       "asset_id": "B12-COURT-PROP-001-D07",
       "name": "Small watering pot",
       "kind": "architectural-detail",
       "dimensions_m_proposed": [
-        0.8,
-        0.5,
-        1
+        0.4,
+        0.2,
+        0.3
       ],
       "function": "Missing human-scale exploration clearing/village dressing, not palace-service rooms",
-      "construction": "One human-scale small watering pot in cottage cedar/cream/gold source vocabulary, whole unclipped, coherent supports and useful back view. No kitchen/service fixtures or existing large door/window masters duplicated.",
-      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
-      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
-      "target_polycount_proposed": 2500,
+      "construction": "One small WATERING CAN with oval metal reservoir, open fill neck, handle and one spout; dull warm brass with a tiny painted bluebell, not gold palace stone.",
+      "attachment_face": "Underside to ground/table, or flat rear mount for wall/bolt/window box",
+      "semantic_front": "Access/decorated face shown; Z up; mat broad face upwards",
+      "target_polycount_proposed": 3500,
       "reuse_class": "reusable",
       "applies_to": [
         "Garden and path furniture"
@@ -208,22 +268,32 @@
       "model_sha256": "",
       "review_status": "pending-reference-review",
       "suggested_model_filename": "B12-COURT-PROP-001-D07__small-watering-pot__v001.glb",
-      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed",
+      "component_family": "Cottage and village exterior small objects",
+      "parent_asset_family": "B12-COURT-PROP-001",
+      "reference_image_id": "B12-COURT-PROP-001",
+      "reference_file": "completion-pass/B12-COURT-PROP-001/B12-COURT-PROP-001.png",
+      "reference_sha256": "5d5d671aea52e637d49417f40aa61ca1464faf65d15f471c607eda5a7f2f026e",
+      "source_reference_id": "GEN-27",
+      "source_reference_file": "images/illustrated-boards/GEN-27.png",
+      "source_reference_sha256": "24c53bf783000da360b391b29640a0c2be9c30420aaf8c7152031139f5ede92f",
+      "notes": "All twelve named cottage props are visible with contact/open/rear views. Warm timber, cream paint, slate-blue accents and small brass fittings remain distinct from the marble palace. Well adds a small blue-shingled canopy not required by the prompt; retain as proposed optional cottage detail. Wind-chime suspension and well winch/bolt movement need mechanical review. Containers are empty and planting is reused separately. Dimensions now reflect actual small-object functions rather than the prior placeholder uniform bounds. Source backs, dimensions, repeat patterns, inter-view parity and physical attachment remain unverified. Whole-sheet generation does not prove individual meshes are separable.",
+      "geometry_review_status": "unverified"
     },
     {
       "asset_id": "B12-COURT-PROP-001-D08",
       "name": "Firewood stack rack",
       "kind": "architectural-detail",
       "dimensions_m_proposed": [
-        0.8,
-        0.5,
-        1
+        1.2,
+        0.4,
+        0.9
       ],
       "function": "Missing human-scale exploration clearing/village dressing, not palace-service rooms",
-      "construction": "One human-scale firewood stack rack in cottage cedar/cream/gold source vocabulary, whole unclipped, coherent supports and useful back view. No kitchen/service fixtures or existing large door/window masters duplicated.",
-      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
-      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
-      "target_polycount_proposed": 2500,
+      "construction": "One freestanding timber FIREWOOD RACK with short horizontal log stack. Four stable feet, braced end uprights and visible bark cut ends. No cottage or scenery.",
+      "attachment_face": "Underside to ground/table, or flat rear mount for wall/bolt/window box",
+      "semantic_front": "Access/decorated face shown; Z up; mat broad face upwards",
+      "target_polycount_proposed": 3500,
       "reuse_class": "reusable",
       "applies_to": [
         "Garden and path furniture"
@@ -238,22 +308,32 @@
       "model_sha256": "",
       "review_status": "pending-reference-review",
       "suggested_model_filename": "B12-COURT-PROP-001-D08__firewood-stack-rack__v001.glb",
-      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed",
+      "component_family": "Cottage and village exterior small objects",
+      "parent_asset_family": "B12-COURT-PROP-001",
+      "reference_image_id": "B12-COURT-PROP-001",
+      "reference_file": "completion-pass/B12-COURT-PROP-001/B12-COURT-PROP-001.png",
+      "reference_sha256": "5d5d671aea52e637d49417f40aa61ca1464faf65d15f471c607eda5a7f2f026e",
+      "source_reference_id": "GEN-27",
+      "source_reference_file": "images/illustrated-boards/GEN-27.png",
+      "source_reference_sha256": "24c53bf783000da360b391b29640a0c2be9c30420aaf8c7152031139f5ede92f",
+      "notes": "All twelve named cottage props are visible with contact/open/rear views. Warm timber, cream paint, slate-blue accents and small brass fittings remain distinct from the marble palace. Well adds a small blue-shingled canopy not required by the prompt; retain as proposed optional cottage detail. Wind-chime suspension and well winch/bolt movement need mechanical review. Containers are empty and planting is reused separately. Dimensions now reflect actual small-object functions rather than the prior placeholder uniform bounds. Source backs, dimensions, repeat patterns, inter-view parity and physical attachment remain unverified. Whole-sheet generation does not prove individual meshes are separable.",
+      "geometry_review_status": "unverified"
     },
     {
       "asset_id": "B12-COURT-PROP-001-D09",
       "name": "Decorative wooden crate",
       "kind": "architectural-detail",
       "dimensions_m_proposed": [
-        0.8,
         0.5,
-        1
+        0.4,
+        0.35
       ],
       "function": "Missing human-scale exploration clearing/village dressing, not palace-service rooms",
-      "construction": "One human-scale decorative wooden crate in cottage cedar/cream/gold source vocabulary, whole unclipped, coherent supports and useful back view. No kitchen/service fixtures or existing large door/window masters duplicated.",
-      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
-      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
-      "target_polycount_proposed": 2500,
+      "construction": "One wooden CRATE with coherent planks, open top and corner joints; tiny painted star stamp, not a treasure chest or palace cabinet.",
+      "attachment_face": "Underside to ground/table, or flat rear mount for wall/bolt/window box",
+      "semantic_front": "Access/decorated face shown; Z up; mat broad face upwards",
+      "target_polycount_proposed": 3500,
       "reuse_class": "reusable",
       "applies_to": [
         "Garden and path furniture"
@@ -268,22 +348,32 @@
       "model_sha256": "",
       "review_status": "pending-reference-review",
       "suggested_model_filename": "B12-COURT-PROP-001-D09__decorative-wooden-crate__v001.glb",
-      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed",
+      "component_family": "Cottage and village exterior small objects",
+      "parent_asset_family": "B12-COURT-PROP-001",
+      "reference_image_id": "B12-COURT-PROP-001",
+      "reference_file": "completion-pass/B12-COURT-PROP-001/B12-COURT-PROP-001.png",
+      "reference_sha256": "5d5d671aea52e637d49417f40aa61ca1464faf65d15f471c607eda5a7f2f026e",
+      "source_reference_id": "GEN-27",
+      "source_reference_file": "images/illustrated-boards/GEN-27.png",
+      "source_reference_sha256": "24c53bf783000da360b391b29640a0c2be9c30420aaf8c7152031139f5ede92f",
+      "notes": "All twelve named cottage props are visible with contact/open/rear views. Warm timber, cream paint, slate-blue accents and small brass fittings remain distinct from the marble palace. Well adds a small blue-shingled canopy not required by the prompt; retain as proposed optional cottage detail. Wind-chime suspension and well winch/bolt movement need mechanical review. Containers are empty and planting is reused separately. Dimensions now reflect actual small-object functions rather than the prior placeholder uniform bounds. Source backs, dimensions, repeat patterns, inter-view parity and physical attachment remain unverified. Whole-sheet generation does not prove individual meshes are separable.",
+      "geometry_review_status": "unverified"
     },
     {
       "asset_id": "B12-COURT-PROP-001-D10",
       "name": "Cottage gate latch",
       "kind": "architectural-detail",
       "dimensions_m_proposed": [
-        0.8,
-        0.5,
-        1
+        0.18,
+        0.06,
+        0.08
       ],
       "function": "Missing human-scale exploration clearing/village dressing, not palace-service rooms",
-      "construction": "One human-scale cottage gate latch in cottage cedar/cream/gold source vocabulary, whole unclipped, coherent supports and useful back view. No kitchen/service fixtures or existing large door/window masters duplicated.",
-      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
-      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
-      "target_polycount_proposed": 2500,
+      "construction": "One tiny GATE LATCH only: brass back plate, coherent horizontal sliding bolt and separate-looking keeper, two screw seats. No gate, door or wall attached.",
+      "attachment_face": "Underside to ground/table, or flat rear mount for wall/bolt/window box",
+      "semantic_front": "Access/decorated face shown; Z up; mat broad face upwards",
+      "target_polycount_proposed": 3500,
       "reuse_class": "reusable",
       "applies_to": [
         "Garden and path furniture"
@@ -298,22 +388,32 @@
       "model_sha256": "",
       "review_status": "pending-reference-review",
       "suggested_model_filename": "B12-COURT-PROP-001-D10__cottage-gate-latch__v001.glb",
-      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed",
+      "component_family": "Cottage and village exterior small objects",
+      "parent_asset_family": "B12-COURT-PROP-001",
+      "reference_image_id": "B12-COURT-PROP-001",
+      "reference_file": "completion-pass/B12-COURT-PROP-001/B12-COURT-PROP-001.png",
+      "reference_sha256": "5d5d671aea52e637d49417f40aa61ca1464faf65d15f471c607eda5a7f2f026e",
+      "source_reference_id": "GEN-27",
+      "source_reference_file": "images/illustrated-boards/GEN-27.png",
+      "source_reference_sha256": "24c53bf783000da360b391b29640a0c2be9c30420aaf8c7152031139f5ede92f",
+      "notes": "All twelve named cottage props are visible with contact/open/rear views. Warm timber, cream paint, slate-blue accents and small brass fittings remain distinct from the marble palace. Well adds a small blue-shingled canopy not required by the prompt; retain as proposed optional cottage detail. Wind-chime suspension and well winch/bolt movement need mechanical review. Containers are empty and planting is reused separately. Dimensions now reflect actual small-object functions rather than the prior placeholder uniform bounds. Source backs, dimensions, repeat patterns, inter-view parity and physical attachment remain unverified. Whole-sheet generation does not prove individual meshes are separable.",
+      "geometry_review_status": "unverified"
     },
     {
       "asset_id": "B12-COURT-PROP-001-D11",
       "name": "Garden tool wall hook",
       "kind": "architectural-detail",
       "dimensions_m_proposed": [
-        0.2,
         0.12,
-        0.25
+        0.06,
+        0.15
       ],
       "function": "Missing human-scale exploration clearing/village dressing, not palace-service rooms",
-      "construction": "One human-scale garden tool wall hook in cottage cedar/cream/gold source vocabulary, whole unclipped, coherent supports and useful back view. No kitchen/service fixtures or existing large door/window masters duplicated. SMALL attachment hardware only: plate/socket/hook/joint with its own hole/root and source-compatible quiet ornament. No lantern body, full arch, whole column, complete door, garden or giant architectural scene glued to it.",
-      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
-      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
-      "target_polycount_proposed": 2500,
+      "construction": "One tiny timber/brass GARDEN TOOL HOOK with flat back plate, two screw holes and projecting rounded hook. No tool, giant bracket or full wall.",
+      "attachment_face": "Underside to ground/table, or flat rear mount for wall/bolt/window box",
+      "semantic_front": "Access/decorated face shown; Z up; mat broad face upwards",
+      "target_polycount_proposed": 3500,
       "reuse_class": "reusable",
       "applies_to": [
         "Garden and path furniture"
@@ -328,7 +428,17 @@
       "model_sha256": "",
       "review_status": "pending-reference-review",
       "suggested_model_filename": "B12-COURT-PROP-001-D11__garden-tool-wall-hook__v001.glb",
-      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed",
+      "component_family": "Cottage and village exterior small objects",
+      "parent_asset_family": "B12-COURT-PROP-001",
+      "reference_image_id": "B12-COURT-PROP-001",
+      "reference_file": "completion-pass/B12-COURT-PROP-001/B12-COURT-PROP-001.png",
+      "reference_sha256": "5d5d671aea52e637d49417f40aa61ca1464faf65d15f471c607eda5a7f2f026e",
+      "source_reference_id": "GEN-27",
+      "source_reference_file": "images/illustrated-boards/GEN-27.png",
+      "source_reference_sha256": "24c53bf783000da360b391b29640a0c2be9c30420aaf8c7152031139f5ede92f",
+      "notes": "All twelve named cottage props are visible with contact/open/rear views. Warm timber, cream paint, slate-blue accents and small brass fittings remain distinct from the marble palace. Well adds a small blue-shingled canopy not required by the prompt; retain as proposed optional cottage detail. Wind-chime suspension and well winch/bolt movement need mechanical review. Containers are empty and planting is reused separately. Dimensions now reflect actual small-object functions rather than the prior placeholder uniform bounds. Source backs, dimensions, repeat patterns, inter-view parity and physical attachment remain unverified. Whole-sheet generation does not prove individual meshes are separable.",
+      "geometry_review_status": "unverified"
     },
     {
       "asset_id": "B12-COURT-PROP-001-D12",
@@ -337,13 +447,13 @@
       "dimensions_m_proposed": [
         0.8,
         0.5,
-        1
+        0.02
       ],
       "function": "Missing human-scale exploration clearing/village dressing, not palace-service rooms",
-      "construction": "One human-scale cottage doorstep mat in cottage cedar/cream/gold source vocabulary, whole unclipped, coherent supports and useful back view. No kitchen/service fixtures or existing large door/window masters duplicated.",
-      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
-      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
-      "target_polycount_proposed": 2500,
+      "construction": "One thin woven DOORSTEP MAT with simple fern/bluebell border, flat underside and real thin edge. Not a floor slab, bed or thick cushion.",
+      "attachment_face": "Underside to ground/table, or flat rear mount for wall/bolt/window box",
+      "semantic_front": "Access/decorated face shown; Z up; mat broad face upwards",
+      "target_polycount_proposed": 3500,
       "reuse_class": "reusable",
       "applies_to": [
         "Garden and path furniture"
@@ -358,7 +468,17 @@
       "model_sha256": "",
       "review_status": "pending-reference-review",
       "suggested_model_filename": "B12-COURT-PROP-001-D12__cottage-doorstep-mat__v001.glb",
-      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed",
+      "component_family": "Cottage and village exterior small objects",
+      "parent_asset_family": "B12-COURT-PROP-001",
+      "reference_image_id": "B12-COURT-PROP-001",
+      "reference_file": "completion-pass/B12-COURT-PROP-001/B12-COURT-PROP-001.png",
+      "reference_sha256": "5d5d671aea52e637d49417f40aa61ca1464faf65d15f471c607eda5a7f2f026e",
+      "source_reference_id": "GEN-27",
+      "source_reference_file": "images/illustrated-boards/GEN-27.png",
+      "source_reference_sha256": "24c53bf783000da360b391b29640a0c2be9c30420aaf8c7152031139f5ede92f",
+      "notes": "All twelve named cottage props are visible with contact/open/rear views. Warm timber, cream paint, slate-blue accents and small brass fittings remain distinct from the marble palace. Well adds a small blue-shingled canopy not required by the prompt; retain as proposed optional cottage detail. Wind-chime suspension and well winch/bolt movement need mechanical review. Containers are empty and planting is reused separately. Dimensions now reflect actual small-object functions rather than the prior placeholder uniform bounds. Source backs, dimensions, repeat patterns, inter-view parity and physical attachment remain unverified. Whole-sheet generation does not prove individual meshes are separable.",
+      "geometry_review_status": "unverified"
     }
   ]
 }

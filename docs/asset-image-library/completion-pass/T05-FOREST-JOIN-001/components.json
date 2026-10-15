@@ -5,14 +5,14 @@
       "name": "Rooted trail slope transition",
       "kind": "natural-module",
       "dimensions_m_proposed": [
-        4,
-        4,
-        2
+        8,
+        12,
+        1.8
       ],
       "function": "Missing clearing/stream/heightfield joins; reuse existing trail/log/stump/fern forms rather than create a duplicate nature pack.",
-      "construction": "One isolated rooted trail slope transition. Missing clearing/stream/heightfield joins; reuse existing trail/log/stump/fern forms rather than create a duplicate nature pack. Coherent actual silhouette, visible root/underside/side; no unrelated architecture/scenery attached. Other existing named species/forms must not be regenerated. Local material consistent with source. Dimensions are proposals to refine by subject.",
-      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
-      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "construction": "One rooted EARTH TRAIL SLOPE tile,8m wide12m long, with1.2m rise over12m run (10percent proposed). Soil substrate0.6m thick at low end. Clear3m-wide walking strip along long Y axis, no large roots across the walking strip. Fine roots/moss confined to shoulders. Show low/high end seam elevations and side section; slope is a proposal requiring walk test.",
+      "attachment_face": "Substrate underside to terrain; plain tile edges, elevations reconciled in terrain mesh",
+      "semantic_front": "Z up; top is ground surface, side section exposes terrain depth",
       "target_polycount_proposed": 8000,
       "reuse_class": "reusable",
       "applies_to": [
@@ -28,21 +28,31 @@
       "model_sha256": "",
       "review_status": "pending-reference-review",
       "suggested_model_filename": "T05-FOREST-JOIN-001-A01__rooted-trail-slope-transition__v001.glb",
-      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed",
+      "component_family": "Forest clearing terrain connections",
+      "parent_asset_family": "T05-FOREST-JOIN-001",
+      "reference_image_id": "T05-FOREST-JOIN-001",
+      "reference_file": "completion-pass/T05-FOREST-JOIN-001/T05-FOREST-JOIN-001.png",
+      "reference_sha256": "0b165ad19614ddfc255c0f8d5c4dac60420f96d6eaaac8e794e3b7d5b2fba4a1",
+      "source_reference_id": "GEN-21",
+      "source_reference_file": "images/illustrated-boards/GEN-21.png",
+      "source_reference_sha256": "d20e6fc8e6b02fa67a8fb69e20f2814a83a58a8e19981c605a9df5c4fef25559",
+      "notes": "Four requested substrates and their top/side sections are present. Slope explicitly labels1.2m rise over12m and3m-clear walking strip; clearing, bank and lower pond shelf are distinct. A03 labels a2.5m bridge-landing seat; treat this as a proposed local interface width, not a verified river span. A separate bridge and actual water crossing geometry still need design and player testing. Some shoulder plants/roots are illustrated as dressing. Instance existing vegetation separately and keep simplified walk collision clear. Tile heights, edge matching and normals are not verified by the image. Source backs, dimensions, repeat patterns, inter-view parity and physical attachment remain unverified. Whole-sheet generation does not prove individual meshes are separable.",
+      "geometry_review_status": "unverified"
     },
     {
       "asset_id": "T05-FOREST-JOIN-001-A02",
       "name": "Cottage clearing edge substrate",
       "kind": "natural-module",
       "dimensions_m_proposed": [
-        4,
-        4,
-        2
+        8,
+        8,
+        0.6
       ],
       "function": "Missing clearing/stream/heightfield joins; reuse existing trail/log/stump/fern forms rather than create a duplicate nature pack.",
-      "construction": "One isolated cottage clearing edge substrate. Missing clearing/stream/heightfield joins; reuse existing trail/log/stump/fern forms rather than create a duplicate nature pack. Coherent actual silhouette, visible root/underside/side; no unrelated architecture/scenery attached. Other existing named species/forms must not be regenerated. Local material consistent with source. Dimensions are proposals to refine by subject.",
-      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
-      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "construction": "One flat COTTAGE CLEARING EDGE substrate,8x8m with0.6m soil thickness. A clear3m trail expands into an open6m-wide approach apron. Low grass/soil transition at shoulders only. No cottage, fence, tree, furniture or flowerbed merged in; leave marked flat host seat for separate objects.",
+      "attachment_face": "Substrate underside to terrain; plain tile edges, elevations reconciled in terrain mesh",
+      "semantic_front": "Z up; top is ground surface, side section exposes terrain depth",
       "target_polycount_proposed": 8000,
       "reuse_class": "reusable",
       "applies_to": [
@@ -58,21 +68,31 @@
       "model_sha256": "",
       "review_status": "pending-reference-review",
       "suggested_model_filename": "T05-FOREST-JOIN-001-A02__cottage-clearing-edge-substrate__v001.glb",
-      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed",
+      "component_family": "Forest clearing terrain connections",
+      "parent_asset_family": "T05-FOREST-JOIN-001",
+      "reference_image_id": "T05-FOREST-JOIN-001",
+      "reference_file": "completion-pass/T05-FOREST-JOIN-001/T05-FOREST-JOIN-001.png",
+      "reference_sha256": "0b165ad19614ddfc255c0f8d5c4dac60420f96d6eaaac8e794e3b7d5b2fba4a1",
+      "source_reference_id": "GEN-21",
+      "source_reference_file": "images/illustrated-boards/GEN-21.png",
+      "source_reference_sha256": "d20e6fc8e6b02fa67a8fb69e20f2814a83a58a8e19981c605a9df5c4fef25559",
+      "notes": "Four requested substrates and their top/side sections are present. Slope explicitly labels1.2m rise over12m and3m-clear walking strip; clearing, bank and lower pond shelf are distinct. A03 labels a2.5m bridge-landing seat; treat this as a proposed local interface width, not a verified river span. A separate bridge and actual water crossing geometry still need design and player testing. Some shoulder plants/roots are illustrated as dressing. Instance existing vegetation separately and keep simplified walk collision clear. Tile heights, edge matching and normals are not verified by the image. Source backs, dimensions, repeat patterns, inter-view parity and physical attachment remain unverified. Whole-sheet generation does not prove individual meshes are separable.",
+      "geometry_review_status": "unverified"
     },
     {
       "asset_id": "T05-FOREST-JOIN-001-A03",
       "name": "Forest stream crossing bank",
       "kind": "natural-module",
       "dimensions_m_proposed": [
-        4,
-        4,
-        2
+        8,
+        6,
+        1.2
       ],
       "function": "Missing clearing/stream/heightfield joins; reuse existing trail/log/stump/fern forms rather than create a duplicate nature pack.",
-      "construction": "One isolated forest stream crossing bank. Missing clearing/stream/heightfield joins; reuse existing trail/log/stump/fern forms rather than create a duplicate nature pack. Coherent actual silhouette, visible root/underside/side; no unrelated architecture/scenery attached. Other existing named species/forms must not be regenerated. Local material consistent with source. Dimensions are proposals to refine by subject.",
-      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
-      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "construction": "One STREAM CROSSING APPROACH BANK,8x6m ground tile with3m-wide dry trail ending at a flat timber-bridge bearing seat on stream-facing edge. Show gravel/soil bank stepped down toward water and a2.5m-clear-span bridge landing interface in small section. NO bridge, tree or water mesh attached. Reuse this bank on opposite side by rotating/mirroring during modeling, not by generating a second asset.",
+      "attachment_face": "Substrate underside to terrain; plain tile edges, elevations reconciled in terrain mesh",
+      "semantic_front": "Z up; top is ground surface, side section exposes terrain depth",
       "target_polycount_proposed": 8000,
       "reuse_class": "reusable",
       "applies_to": [
@@ -88,21 +108,31 @@
       "model_sha256": "",
       "review_status": "pending-reference-review",
       "suggested_model_filename": "T05-FOREST-JOIN-001-A03__forest-stream-crossing-bank__v001.glb",
-      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed",
+      "component_family": "Forest clearing terrain connections",
+      "parent_asset_family": "T05-FOREST-JOIN-001",
+      "reference_image_id": "T05-FOREST-JOIN-001",
+      "reference_file": "completion-pass/T05-FOREST-JOIN-001/T05-FOREST-JOIN-001.png",
+      "reference_sha256": "0b165ad19614ddfc255c0f8d5c4dac60420f96d6eaaac8e794e3b7d5b2fba4a1",
+      "source_reference_id": "GEN-21",
+      "source_reference_file": "images/illustrated-boards/GEN-21.png",
+      "source_reference_sha256": "d20e6fc8e6b02fa67a8fb69e20f2814a83a58a8e19981c605a9df5c4fef25559",
+      "notes": "Four requested substrates and their top/side sections are present. Slope explicitly labels1.2m rise over12m and3m-clear walking strip; clearing, bank and lower pond shelf are distinct. A03 labels a2.5m bridge-landing seat; treat this as a proposed local interface width, not a verified river span. A separate bridge and actual water crossing geometry still need design and player testing. Some shoulder plants/roots are illustrated as dressing. Instance existing vegetation separately and keep simplified walk collision clear. Tile heights, edge matching and normals are not verified by the image. Source backs, dimensions, repeat patterns, inter-view parity and physical attachment remain unverified. Whole-sheet generation does not prove individual meshes are separable.",
+      "geometry_review_status": "unverified"
     },
     {
       "asset_id": "T05-FOREST-JOIN-001-A04",
       "name": "Misty pond shore ledge",
       "kind": "natural-module",
       "dimensions_m_proposed": [
-        4,
-        4,
-        2
+        8,
+        6,
+        1.2
       ],
       "function": "Missing clearing/stream/heightfield joins; reuse existing trail/log/stump/fern forms rather than create a duplicate nature pack.",
-      "construction": "One isolated misty pond shore ledge. Missing clearing/stream/heightfield joins; reuse existing trail/log/stump/fern forms rather than create a duplicate nature pack. Coherent actual silhouette, visible root/underside/side; no unrelated architecture/scenery attached. Other existing named species/forms must not be regenerated. Local material consistent with source. Dimensions are proposals to refine by subject.",
-      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
-      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "construction": "One shallow MISTY POND SHORE tile,8x6m with dry walkable top strip3m wide, gently curved soil edge and a lower planting shelf. Wet edge recedes0.6m below path, root tips/moss only outside walking strip. No full pond, water shader, tree or wildlife; show dry-path versus wet-shelf heights in section.",
+      "attachment_face": "Substrate underside to terrain; plain tile edges, elevations reconciled in terrain mesh",
+      "semantic_front": "Z up; top is ground surface, side section exposes terrain depth",
       "target_polycount_proposed": 8000,
       "reuse_class": "reusable",
       "applies_to": [
@@ -118,7 +148,17 @@
       "model_sha256": "",
       "review_status": "pending-reference-review",
       "suggested_model_filename": "T05-FOREST-JOIN-001-A04__misty-pond-shore-ledge__v001.glb",
-      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed",
+      "component_family": "Forest clearing terrain connections",
+      "parent_asset_family": "T05-FOREST-JOIN-001",
+      "reference_image_id": "T05-FOREST-JOIN-001",
+      "reference_file": "completion-pass/T05-FOREST-JOIN-001/T05-FOREST-JOIN-001.png",
+      "reference_sha256": "0b165ad19614ddfc255c0f8d5c4dac60420f96d6eaaac8e794e3b7d5b2fba4a1",
+      "source_reference_id": "GEN-21",
+      "source_reference_file": "images/illustrated-boards/GEN-21.png",
+      "source_reference_sha256": "d20e6fc8e6b02fa67a8fb69e20f2814a83a58a8e19981c605a9df5c4fef25559",
+      "notes": "Four requested substrates and their top/side sections are present. Slope explicitly labels1.2m rise over12m and3m-clear walking strip; clearing, bank and lower pond shelf are distinct. A03 labels a2.5m bridge-landing seat; treat this as a proposed local interface width, not a verified river span. A separate bridge and actual water crossing geometry still need design and player testing. Some shoulder plants/roots are illustrated as dressing. Instance existing vegetation separately and keep simplified walk collision clear. Tile heights, edge matching and normals are not verified by the image. Source backs, dimensions, repeat patterns, inter-view parity and physical attachment remain unverified. Whole-sheet generation does not prove individual meshes are separable.",
+      "geometry_review_status": "unverified"
     }
   ]
 }

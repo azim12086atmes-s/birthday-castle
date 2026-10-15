@@ -1,6 +1,8 @@
 # Asset production plan and caps
 
-Current completion work: [coverage queue and saved sheets](completion-pass/README.md), **30/118 jobs saved**. **123 selected sheets saved;211/230 allocated;845 archive images**. Allocation:83palace,58other buildings,57nature/ecology,22outdoor/shared,10maps/magic. Geometry, view parity, UVs, anatomy and runtime remain unbuilt/unverified.
+**Structured planning update — 15 October 2026:** [World sequence, kit families and depth for all34places](world-production-plan/README.md). Image generation is paused for this planning pass; geography/route decisions precede the next playable samples. This is proposed scope, not a claim of built or approved runtime geometry.
+
+Current completion work: [coverage queue and saved sheets](completion-pass/README.md), **33/119 jobs saved**. **126 selected sheets saved;212/230 allocated;848 archive images**. Allocation:83palace,58other buildings,57nature/ecology,22outdoor/shared,10maps/magic. Geometry, view parity, UVs, anatomy and runtime remain unbuilt/unverified.
 
 Previous B02 exterior pass: [Moon Water Palace — 3 sheets and 20 labelled components](world-location-kits/moon-water-palace/README.md). B02 dedicated cap **3/3**; physical joins and common assembly scale pending. **93 selected sheets saved; 96/230 selected or reserved; 812 archive images**. Shared freshwater fauna is next; no 3D models generated.
 
@@ -31,7 +33,7 @@ The final library is capped at **230 selected sheets**, including the 45 origina
 | palace | 83 | 83 | 0 |
 | other-map-buildings | 58 | 58 | 0 |
 | terrain-water-and-planting | 57 | 45 | 12 |
-| shared-outdoor-props-and-bridge | 22 | 16 | 6 |
+| shared-outdoor-props-and-bridge | 22 | 17 | 5 |
 | maps-magic-travel-and-birthday | 10 | 9 | 1 |
 
 The 812-file archive contains crops, previews and historical experiments; it is not the final 230-sheet selection. Selected reference slots may still require visual review.

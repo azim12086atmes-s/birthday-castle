@@ -1,5 +1,7 @@
 # Forest exploration expansion
 
+**15 October 2026 update:** [Current forest references and playable-route sequence](../completion-pass/RAILS-FORESTS-PLAYABLE-PLAN.md) includes saved cottage exterior objects and forest terrain joins, alongside existing cottage/trail/flora/fauna references. Earlier allowance/status entries below are historical; the current budget is in production-budget.json. No forest route or 3D assets are claimed playable yet.
+
 Expand the planning envelope from **7.5 km × 7.5 km to 12 km × 12 km**. This adds2250m per edge and changes the envelope area from56.25 to144km², including sea. The mainland expands north, west and northeast; the coast remains open southward. This is an additional owner-requested exploration expansion after the earlier3× map proposal.
 
 The palace remains **2.5km wide**;2.125km depth is a provisional reservation. It occupies aboutone-fifth of world width and a provisional3.69% of envelope area. Human-size cottages, plants, furniture and existing landmark sizes are not enlarged. The old corrected7.5km layout is preserved under[source](source/layout-7500m-palace-corrected.json).

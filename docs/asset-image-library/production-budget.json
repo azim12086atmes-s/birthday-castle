@@ -91,173 +91,225 @@
       "name": "Moon Water Palace",
       "dedicated_sheet_cap": 5,
       "scope": "Source-dependent structure/component views plus a packed decor sheet; reuse shared parts",
-      "status": "Three source-derived sheets saved; all3D and assembly scale pending",
+      "status": "Source brief audited; 5/5 dedicated reference sheets saved; all physical geometry/runtime pending",
       "generated_reference_sheet_ids": [
         "B02-STRUCT-001",
         "B02-ROOF-001",
-        "B02-DETAIL-001"
-      ]
+        "B02-DETAIL-001",
+        "B02-INNER-001",
+        "B02-INNER-DETAIL-001"
+      ],
+      "source_brief": "world-layout/location-audit/B02/DESIGN-BRIEF.md"
     },
     {
       "location_id": "B03",
       "name": "Star Chapel",
       "dedicated_sheet_cap": 2,
       "scope": "Source-dependent structure/component views plus a packed decor sheet; reuse shared parts",
-      "status": "pending-source-audit; no new generation approved by count alone"
+      "status": "Source brief audited; 0/2 dedicated reference sheets saved; all physical geometry/runtime pending",
+      "generated_reference_sheet_ids": [],
+      "source_brief": "world-layout/location-audit/B03/DESIGN-BRIEF.md"
     },
     {
       "location_id": "B04",
       "name": "Rose Keep",
       "dedicated_sheet_cap": 2,
       "scope": "Source-dependent structure/component views plus a packed decor sheet; reuse shared parts",
-      "status": "pending-source-audit; no new generation approved by count alone"
+      "status": "Source brief audited; 0/2 dedicated reference sheets saved; all physical geometry/runtime pending",
+      "generated_reference_sheet_ids": [],
+      "source_brief": "world-layout/location-audit/B04/DESIGN-BRIEF.md"
     },
     {
       "location_id": "B05",
       "name": "Misty Lantern Palace",
       "dedicated_sheet_cap": 2,
       "scope": "Source-dependent structure/component views plus a packed decor sheet; reuse shared parts",
-      "status": "pending-source-audit; no new generation approved by count alone"
+      "status": "Source brief audited; 0/2 dedicated reference sheets saved; all physical geometry/runtime pending",
+      "generated_reference_sheet_ids": [],
+      "source_brief": "world-layout/location-audit/B05/DESIGN-BRIEF.md"
     },
     {
       "location_id": "B06",
       "name": "Misty Pagoda",
       "dedicated_sheet_cap": 2,
       "scope": "Source-dependent structure/component views plus a packed decor sheet; reuse shared parts",
-      "status": "pending-source-audit; no new generation approved by count alone"
+      "status": "Source brief audited; 0/2 dedicated reference sheets saved; all physical geometry/runtime pending",
+      "generated_reference_sheet_ids": [],
+      "source_brief": "world-layout/location-audit/B06/DESIGN-BRIEF.md"
     },
     {
       "location_id": "B07",
       "name": "Temple Hill",
       "dedicated_sheet_cap": 2,
       "scope": "Source-dependent structure/component views plus a packed decor sheet; reuse shared parts",
-      "status": "pending-source-audit; no new generation approved by count alone"
+      "status": "Source brief audited; 0/2 dedicated reference sheets saved; all physical geometry/runtime pending",
+      "generated_reference_sheet_ids": [],
+      "source_brief": "world-layout/location-audit/B07/DESIGN-BRIEF.md"
     },
     {
       "location_id": "B08",
       "name": "Colosseum",
       "dedicated_sheet_cap": 2,
       "scope": "Source-dependent structure/component views plus a packed decor sheet; reuse shared parts",
-      "status": "pending-source-audit; no new generation approved by count alone"
+      "status": "Source brief audited; 0/2 dedicated reference sheets saved; all physical geometry/runtime pending",
+      "generated_reference_sheet_ids": [],
+      "source_brief": "world-layout/location-audit/B08/DESIGN-BRIEF.md"
     },
     {
       "location_id": "B09",
       "name": "Lagoon Housing",
       "dedicated_sheet_cap": 2,
       "scope": "Source-dependent structure/component views plus a packed decor sheet; reuse shared parts",
-      "status": "pending-source-audit; no new generation approved by count alone"
+      "status": "Source brief audited; 0/2 dedicated reference sheets saved; all physical geometry/runtime pending",
+      "generated_reference_sheet_ids": [],
+      "source_brief": "world-layout/location-audit/B09/DESIGN-BRIEF.md"
     },
     {
       "location_id": "B10",
       "name": "Canyon Palace",
       "dedicated_sheet_cap": 3,
       "scope": "Source-dependent structure/component views plus a packed decor sheet; reuse shared parts",
-      "status": "pending-source-audit; no new generation approved by count alone"
+      "status": "Source brief audited; 0/3 dedicated reference sheets saved; all physical geometry/runtime pending",
+      "generated_reference_sheet_ids": [],
+      "source_brief": "world-layout/location-audit/B10/DESIGN-BRIEF.md"
     },
     {
       "location_id": "B11",
       "name": "Crescent Rock Arch",
       "dedicated_sheet_cap": 2,
       "scope": "Source-dependent structure/component views plus a packed decor sheet; reuse shared parts",
-      "status": "pending-source-audit; no new generation approved by count alone"
+      "status": "Source brief audited; 0/2 dedicated reference sheets saved; all physical geometry/runtime pending",
+      "generated_reference_sheet_ids": [],
+      "source_brief": "world-layout/location-audit/B11/DESIGN-BRIEF.md"
     },
     {
       "location_id": "B12",
       "name": "Storybook Village",
       "dedicated_sheet_cap": 3,
       "scope": "Source-dependent structure/component views plus a packed decor sheet; reuse shared parts",
-      "status": "Two pilotsheetsgenerated,source/parityandmodelreviewpending; completecitykitnotclaimed"
+      "status": "Source brief audited; 2/3 dedicated reference sheets saved; all physical geometry/runtime pending",
+      "generated_reference_sheet_ids": [
+        "B12-STRUCT-001",
+        "B12-DETAIL-001"
+      ],
+      "source_brief": "world-layout/location-audit/B12/DESIGN-BRIEF.md"
     },
     {
       "location_id": "B13",
       "name": "Windmill",
       "dedicated_sheet_cap": 2,
       "scope": "Source-dependent structure/component views plus a packed decor sheet; reuse shared parts",
-      "status": "pending-source-audit; no new generation approved by count alone"
+      "status": "Source brief audited; 0/2 dedicated reference sheets saved; all physical geometry/runtime pending",
+      "generated_reference_sheet_ids": [],
+      "source_brief": "world-layout/location-audit/B13/DESIGN-BRIEF.md"
     },
     {
       "location_id": "B14",
       "name": "Pillar Sky City",
       "dedicated_sheet_cap": 2,
       "scope": "Source-dependent structure/component views plus a packed decor sheet; reuse shared parts",
-      "status": "pending-source-audit; no new generation approved by count alone"
+      "status": "Source brief audited; 0/2 dedicated reference sheets saved; all physical geometry/runtime pending",
+      "generated_reference_sheet_ids": [],
+      "source_brief": "world-layout/location-audit/B14/DESIGN-BRIEF.md"
     },
     {
       "location_id": "B15",
       "name": "Jade Jungle Temple",
       "dedicated_sheet_cap": 3,
       "scope": "Source-dependent structure/component views plus a packed decor sheet; reuse shared parts",
-      "status": "pending-source-audit; no new generation approved by count alone"
+      "status": "Source brief audited; 0/3 dedicated reference sheets saved; all physical geometry/runtime pending",
+      "generated_reference_sheet_ids": [],
+      "source_brief": "world-layout/location-audit/B15/DESIGN-BRIEF.md"
     },
     {
       "location_id": "B16",
       "name": "Fjord Longhouse",
       "dedicated_sheet_cap": 2,
       "scope": "Source-dependent structure/component views plus a packed decor sheet; reuse shared parts",
-      "status": "pending-source-audit; no new generation approved by count alone"
+      "status": "Source brief audited; 0/2 dedicated reference sheets saved; all physical geometry/runtime pending",
+      "generated_reference_sheet_ids": [],
+      "source_brief": "world-layout/location-audit/B16/DESIGN-BRIEF.md"
     },
     {
       "location_id": "B17",
       "name": "Glowwood Ruin Court",
       "dedicated_sheet_cap": 2,
       "scope": "Source-dependent structure/component views plus a packed decor sheet; reuse shared parts",
-      "status": "pending-source-audit; no new generation approved by count alone"
+      "status": "Source brief audited; 0/2 dedicated reference sheets saved; all physical geometry/runtime pending",
+      "generated_reference_sheet_ids": [],
+      "source_brief": "world-layout/location-audit/B17/DESIGN-BRIEF.md"
     },
     {
       "location_id": "B18",
       "name": "Mother Tree",
       "dedicated_sheet_cap": 2,
       "scope": "Source-dependent structure/component views plus a packed decor sheet; reuse shared parts",
-      "status": "pending-source-audit; no new generation approved by count alone"
+      "status": "Source brief audited; 0/2 dedicated reference sheets saved; all physical geometry/runtime pending",
+      "generated_reference_sheet_ids": [],
+      "source_brief": "world-layout/location-audit/B18/DESIGN-BRIEF.md"
     },
     {
       "location_id": "B19",
       "name": "Lantern Cove Gatehouse",
       "dedicated_sheet_cap": 2,
       "scope": "Source-dependent structure/component views plus a packed decor sheet; reuse shared parts",
-      "status": "pending-source-audit; no new generation approved by count alone"
+      "status": "Source brief audited; 0/2 dedicated reference sheets saved; all physical geometry/runtime pending",
+      "generated_reference_sheet_ids": [],
+      "source_brief": "world-layout/location-audit/B19/DESIGN-BRIEF.md"
     },
     {
       "location_id": "B20",
       "name": "Glass Bridge Pavilion",
       "dedicated_sheet_cap": 2,
       "scope": "Source-dependent structure/component views plus a packed decor sheet; reuse shared parts",
-      "status": "pending-source-audit; no new generation approved by count alone"
+      "status": "Source brief audited; 0/2 dedicated reference sheets saved; all physical geometry/runtime pending",
+      "generated_reference_sheet_ids": [],
+      "source_brief": "world-layout/location-audit/B20/DESIGN-BRIEF.md"
     },
     {
       "location_id": "B21",
       "name": "Tidal Observatory",
       "dedicated_sheet_cap": 2,
       "scope": "Source-dependent structure/component views plus a packed decor sheet; reuse shared parts",
-      "status": "pending-source-audit; no new generation approved by count alone"
+      "status": "Source brief audited; 0/2 dedicated reference sheets saved; all physical geometry/runtime pending",
+      "generated_reference_sheet_ids": [],
+      "source_brief": "world-layout/location-audit/B21/DESIGN-BRIEF.md"
     },
     {
       "location_id": "B22",
       "name": "Pearl Lighthouse",
       "dedicated_sheet_cap": 2,
       "scope": "Source-dependent structure/component views plus a packed decor sheet; reuse shared parts",
-      "status": "pending-source-audit; no new generation approved by count alone"
+      "status": "Source brief audited; 0/2 dedicated reference sheets saved; all physical geometry/runtime pending",
+      "generated_reference_sheet_ids": [],
+      "source_brief": "world-layout/location-audit/B22/DESIGN-BRIEF.md"
     },
     {
       "location_id": "B23",
       "name": "Sea Pavilion",
       "dedicated_sheet_cap": 2,
       "scope": "Source-dependent structure/component views plus a packed decor sheet; reuse shared parts",
-      "status": "pending-source-audit; no new generation approved by count alone"
+      "status": "Source brief audited; 0/2 dedicated reference sheets saved; all physical geometry/runtime pending",
+      "generated_reference_sheet_ids": [],
+      "source_brief": "world-layout/location-audit/B23/DESIGN-BRIEF.md"
     },
     {
       "location_id": "B24",
       "name": "Reef Star Shrine",
       "dedicated_sheet_cap": 2,
       "scope": "Source-dependent structure/component views plus a packed decor sheet; reuse shared parts",
-      "status": "pending-source-audit; no new generation approved by count alone"
+      "status": "Source brief audited; 0/2 dedicated reference sheets saved; all physical geometry/runtime pending",
+      "generated_reference_sheet_ids": [],
+      "source_brief": "world-layout/location-audit/B24/DESIGN-BRIEF.md"
     },
     {
       "location_id": "B25",
       "name": "Crystal Conservatory",
       "dedicated_sheet_cap": 3,
       "scope": "Source-dependent structure/component views plus a packed decor sheet; reuse shared parts",
-      "status": "pending-source-audit; no new generation approved by count alone"
+      "status": "Source brief audited; 0/3 dedicated reference sheets saved; all physical geometry/runtime pending",
+      "generated_reference_sheet_ids": [],
+      "source_brief": "world-layout/location-audit/B25/DESIGN-BRIEF.md"
     }
   ],
   "shared_landmark_original_board_pool": 3,
@@ -2287,10 +2339,13 @@
       "owner": "shared-outdoor-props-and-bridge",
       "family": "Garden and path furniture",
       "title": "Cottage and village exterior small objects",
-      "status": "reserved-for-verified-gap",
-      "file": "",
-      "sha256": "",
-      "generation_attempts_in_this_pass": 0
+      "status": "generated-pending-reference-and-model-review",
+      "file": "completion-pass/B12-COURT-PROP-001/B12-COURT-PROP-001.png",
+      "sha256": "5d5d671aea52e637d49417f40aa61ca1464faf65d15f471c607eda5a7f2f026e",
+      "generation_attempts_in_this_pass": 1,
+      "component_count": 12,
+      "review_notes": "All twelve named cottage props are visible with contact/open/rear views. Warm timber, cream paint, slate-blue accents and small brass fittings remain distinct from the marble palace. Well adds a small blue-shingled canopy not required by the prompt; retain as proposed optional cottage detail. Wind-chime suspension and well winch/bolt movement need mechanical review. Containers are empty and planting is reused separately. Dimensions now reflect actual small-object functions rather than the prior placeholder uniform bounds.",
+      "location_ids": []
     },
     {
       "sheet_id": "WLD-BRIDGE-JOINS-001",
@@ -2456,10 +2511,13 @@
       "owner": "terrain-water-and-planting",
       "family": "Forest and Mother Tree environs",
       "title": "Forest clearing terrain connections",
-      "status": "reserved-for-verified-gap",
-      "file": "",
-      "sha256": "",
-      "generation_attempts_in_this_pass": 0
+      "status": "generated-pending-reference-and-model-review",
+      "file": "completion-pass/T05-FOREST-JOIN-001/T05-FOREST-JOIN-001.png",
+      "sha256": "0b165ad19614ddfc255c0f8d5c4dac60420f96d6eaaac8e794e3b7d5b2fba4a1",
+      "generation_attempts_in_this_pass": 1,
+      "component_count": 4,
+      "review_notes": "Four requested substrates and their top/side sections are present. Slope explicitly labels1.2m rise over12m and3m-clear walking strip; clearing, bank and lower pond shelf are distinct. A03 labels a2.5m bridge-landing seat; treat this as a proposed local interface width, not a verified river span. A separate bridge and actual water crossing geometry still need design and player testing. Some shoulder plants/roots are illustrated as dressing. Instance existing vegetation separately and keep simplified walk collision clear. Tile heights, edge matching and normals are not verified by the image.",
+      "location_ids": []
     },
     {
       "sheet_id": "T06-FLORA-001",
@@ -2725,6 +2783,19 @@
       "component_count": 4,
       "review_notes": "All four intended components are present. Floor top view is a90-degree radius9m quarter disc; threshold is explicitly8x4m; open portal labels8m clear and9.2m overall width. Curved railing shows22.5-degree/radius8.8m data and an empty planting trough. Floor and neck views include ornamental end blocks/aprons at some joining edges. Keep radial sector seams and both neck end planes flat in the model; remove projecting end ornaments that obstruct joins. Rail radius, equal curve repetition, floral drainage and contact hardware are concept references. Decorative supports shown below modules are not a structural support calculation. The18m circle is assembled from four floor copies. Connect neck through an intentional trimmed floor interface: its rectangular end does not mate to a circular boundary automatically. A modeled trim/overlap detail remains required.",
       "location_ids": []
+    },
+    {
+      "sheet_id": "WLD-GLAZED-RAIL-002",
+      "owner": "shared-outdoor-props-and-bridge",
+      "family": "Garden and path furniture",
+      "title": "Glazed parapet designs and twelve-colour glass palette",
+      "status": "generated-pending-reference-and-model-review",
+      "file": "completion-pass/WLD-GLAZED-RAIL-002/WLD-GLAZED-RAIL-002.png",
+      "sha256": "178de9737cb6878cd4c0e71701a051429a29bae959d9a69f9fac8d4d670e5352",
+      "generation_attempts_in_this_pass": 1,
+      "component_count": 4,
+      "review_notes": "Four distinct glazed railing patterns and all twelve labelled colour samples appear. Marble/gold vocabulary remains consistent with GEN-39; green, aqua, purple and amber glass provide new palette variation. Swatches are faceted material illustrations, not gem meshes or measured PBR transmission samples. Material IDs are kept separately from the four structural asset IDs. End posts and glass-seat sketches do not prove cross-compatibility with existing corner/stair rails. Some small front/contact views change ornament proportions; establish actual matching profiles before instancing.",
+      "location_ids": []
     }
   ],
   "production_pass": "palace-coverage-missing-only",
@@ -2761,7 +2832,7 @@
     "side_rear_schedule": "palace-side-rear/schedule.json",
     "complete_roof_plan": "palace-roof-plan/schedule.json"
   },
-  "production_pass_status": "Completion pass: 30/118 queued missing-reference sheets saved. All geometry, UVs, anatomy, scale and runtime remain unverified.",
+  "production_pass_status": "Completion pass: 33/119 queued missing-reference sheets saved. All geometry, UVs, anatomy, scale and runtime remain unverified.",
   "structural_sheet_rule": "Display source-fitted assemblies with existing canonical decor so identity and proportions can be checked. Bare host views are internal construction proposals, not replacements for the original decorated wing references.",
   "generation_paused": true,
   "pause_reason": "Requested roof/stair proposal finished. Painted attempt rejected; coordinate diagram covers33 placements and11 stair links. Source-depth registration remains a layout task.",
@@ -2820,7 +2891,6 @@
     "WLD-WAYFIND-001",
     "WLD-PORT-STRUCT-001",
     "WLD-PORT-DETAIL-001",
-    "B12-COURT-PROP-001",
     "WLD-BRIDGE-JOINS-001",
     "T02-BANK-001",
     "T03-ROCK-001",
@@ -2833,7 +2903,6 @@
     "T04-FLORA-001",
     "T04-FAUNA-001",
     "T04-GROUND-001",
-    "T05-FOREST-JOIN-001",
     "T06-FLORA-001",
     "T06-ROCK-001",
     "T07-ROCK-001",
@@ -3121,5 +3190,7 @@
     "status": "Location-wise flora/fauna selections;2of7plannedfaunaboardsproduced,other5remainholdswithin65. Onecanopyflora boardseparatelyproduced.",
     "remaining_unproduced_fauna_allowance": 5,
     "completion_pass_revision": "10fauna references planned in total:2existingforest,2freshwater,3coastal,1jungle,1dry,1magical. Garden fauna reuseforest/insect forms instead of duplicating."
-  }
+  },
+  "world_production_plan": "world-production-plan/README.md",
+  "current_work_mode": "Planning first: no further image generation during the world-sequence/depth planning pass. Existing references and queue preserved."
 }

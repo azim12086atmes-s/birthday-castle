@@ -1,6 +1,45 @@
 {
   "sheets": [
     {
+      "sheet_id": "WLD-GLAZED-RAIL-002",
+      "name": "Glazed parapet designs and twelve-colour glass palette",
+      "owner": "shared-outdoor-props-and-bridge",
+      "family": "Garden and path furniture",
+      "location_id": null,
+      "source_reference_file": "images/illustrated-boards/GEN-39.png",
+      "component_count": 4,
+      "mode": "structure",
+      "status": "generated-pending-review",
+      "gap": "New rail tracery designs and glass colour variation without multiplying meshes per colour",
+      "output_file": "completion-pass/WLD-GLAZED-RAIL-002/WLD-GLAZED-RAIL-002.png"
+    },
+    {
+      "sheet_id": "B12-COURT-PROP-001",
+      "name": "Cottage and village exterior small objects",
+      "owner": "shared-outdoor-props-and-bridge",
+      "family": "Garden and path furniture",
+      "location_id": null,
+      "source_reference_file": "images/illustrated-boards/GEN-27.png",
+      "component_count": 12,
+      "mode": "detail",
+      "status": "generated-pending-review",
+      "gap": "Missing human-scale exploration clearing/village dressing, not palace-service rooms",
+      "output_file": "completion-pass/B12-COURT-PROP-001/B12-COURT-PROP-001.png"
+    },
+    {
+      "sheet_id": "T05-FOREST-JOIN-001",
+      "name": "Forest clearing terrain connections",
+      "owner": "terrain-water-and-planting",
+      "family": "Forest and Mother Tree environs",
+      "location_id": null,
+      "source_reference_file": "images/illustrated-boards/GEN-21.png",
+      "component_count": 4,
+      "mode": "nature",
+      "status": "generated-pending-review",
+      "gap": "Missing clearing/stream/heightfield joins; reuse existing trail/log/stump/fern forms rather than create a duplicate nature pack.",
+      "output_file": "completion-pass/T05-FOREST-JOIN-001/T05-FOREST-JOIN-001.png"
+    },
+    {
       "sheet_id": "PAL-DOME-INNER-001",
       "name": "Original palace \u2014 internal dome and support sections",
       "owner": "palace",
@@ -974,18 +1013,6 @@
       "gap": "Missing docking and ramp attachments; does not establish live physics or travel mechanics"
     },
     {
-      "sheet_id": "B12-COURT-PROP-001",
-      "name": "Cottage and village exterior small objects",
-      "owner": "shared-outdoor-props-and-bridge",
-      "family": "Garden and path furniture",
-      "location_id": null,
-      "source_reference_file": "images/illustrated-boards/GEN-27.png",
-      "component_count": 12,
-      "mode": "detail",
-      "status": "queued",
-      "gap": "Missing human-scale exploration clearing/village dressing, not palace-service rooms"
-    },
-    {
       "sheet_id": "WLD-BRIDGE-JOINS-001",
       "name": "Bridge abutment and level joins",
       "owner": "shared-outdoor-props-and-bridge",
@@ -1167,18 +1194,6 @@
       "status": "generated-pending-review",
       "gap": "Distinct ordinary evergreen forms absent from new oak/birch/beech/hazel kit. Spruce conical needles, fir tiered boughs, pine raised irregular umbrella crown; saplings one coherent tree each, not duplicate adultgarden trees.",
       "output_file": "completion-pass/T05-CONIFER-001/T05-CONIFER-001.png"
-    },
-    {
-      "sheet_id": "T05-FOREST-JOIN-001",
-      "name": "Forest clearing terrain connections",
-      "owner": "terrain-water-and-planting",
-      "family": "Forest and Mother Tree environs",
-      "location_id": null,
-      "source_reference_file": "images/illustrated-boards/GEN-21.png",
-      "component_count": 4,
-      "mode": "nature",
-      "status": "queued",
-      "gap": "Missing clearing/stream/heightfield joins; reuse existing trail/log/stump/fern forms rather than create a duplicate nature pack."
     },
     {
       "sheet_id": "T06-FLORA-001",
@@ -1449,8 +1464,8 @@
   ],
   "status": "source-audited-completion-in-progress",
   "source_inputs_at_once": 1,
-  "new_sheets_queued": 118,
-  "selected_or_reserved": 211,
+  "new_sheets_queued": 119,
+  "selected_or_reserved": 212,
   "target_cap": 230,
   "final_count_is_ceiling_not_fill_target": true,
   "generation_attempt_limit": 2,
@@ -1471,7 +1486,7 @@
     "Does the kit preserve source palette, silhouette and motif?",
     "What remains unresolved for modelling rather than another illustration?"
   ],
-  "generated_sheets": 30,
-  "remaining_sheets": 88,
+  "generated_sheets": 33,
+  "remaining_sheets": 86,
   "interaction_policy": "Use filenames and metadata for inventory. Inspect at most one source image at a time. Generate, save, index and review one sheet before starting the next; do not stream large image loops. Keep originals and superseded files."
 }

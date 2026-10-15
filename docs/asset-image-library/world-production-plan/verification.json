@@ -1,0 +1,22 @@
+{
+  "date": "2026-10-15",
+  "status": "proposed plan; coherence and provenance validated, runtime untested",
+  "locations_covered": 34,
+  "kit_families": 16,
+  "phases": 7,
+  "regional_waves": 6,
+  "new_reference_sheets_before_planning_request": 3,
+  "new_images_generated_after_planning_request": 0,
+  "glass_material_variants": 12,
+  "saved_selected_sheets": 126,
+  "allocated_sheets": 212,
+  "global_ceiling": 230,
+  "unallocated_slots": 18,
+  "remaining_queued_sheets": 86,
+  "reference_linked_model_targets": 700,
+  "accepted_reference_linked_models": 0,
+  "original_45_and_world_layout_unchanged": true,
+  "source_and_output_hashes_verified": true,
+  "new_slots_reserved_by_plan": 0,
+  "playable_route_or_geometry_verified": false
+}

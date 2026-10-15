@@ -1,0 +1,262 @@
+{
+  "sheet_id": "WLD-GLAZED-RAIL-002",
+  "name": "Glazed parapet designs and twelve-colour glass palette",
+  "owner": "shared-outdoor-props-and-bridge",
+  "family": "Garden and path furniture",
+  "location_id": null,
+  "source_reference_id": "GEN-39",
+  "source_reference_file": "images/illustrated-boards/GEN-39.png",
+  "source_reference_sha256": "bbe9f03266ab8b443d0a00780f2b62ee2741e3089f0cad8ab9347cc0cfe4d1d4",
+  "prompt": "Create ONE detailed GAME ARCHITECTURE REFERENCE SHEET titled WLD-GLAZED-RAIL-002 \u2014 DELICATE GLAZED PARAPETS & GLASS PALETTE. Main area: exactly FOUR spacious structural cells in2x2 grid, each showing ONE isolated straight rail module in large three-quarter view plus small FRONT, END/CONTACT and glass-seat section. Lower margin: TWELVE small translucent GLASS COLOUR SAMPLES in two rows, clearly labeled as MATERIAL VARIANTS, NOT12new mesh objects. Use supplied GEN-39 for original ivory/rose marble, muted gilt slender profiles and human-height proportions. These four NEW designs differ from its existing star/flower/quatrefoil rails and previous petal lace/crescent/cherry ribbon kits. Full component IDs and names beside cells, proposed W2.4m D0.18m H1.1m for all. Keep whole objects uncropped, clean pale ivory background, even studio lighting. No room, balcony, human, foliage, huge finials or unlabeled spare objects. True visible space and thin transparent glass behind structural tracery. Distinguish marble, gold and coloured glass without opaque painted backing. Small rear/contact inset shows flat end post seat and glass groove. Common sill/handrail elevation, no arbitrary slopes or curved modules in this sheet. Preserve source material language; don't render chunky plastic rails. Glass colours are changeable materials, not different mesh shapes. Label secondary palette GLASS-PAL-01 through12 with names. Footer: Proposed references; glass shader, collision and physical joins unverified.\n\nWLD-GLAZED-RAIL-002-S01 \u2014 Lily-stem glazed rail. Two slender ivory lily stems rise symmetrically from low rose-marble sill, curling gold leaves brace the stems. Three emerald/mint glass lobes sit behind the stems; no flower planters or repeated star medallions. One straight repeat with small end posts. Removable thin glass behind the structural tracery. Both post backs/ends have plain mounting seats. No floor slab, stairs or attached wall.\n\nWLD-GLAZED-RAIL-002-S02 \u2014 Diamond-bevel glazed rail. A fine ivory diamond lattice with small gold joints, delicate rectangular frame and aqua/clear bevelled glass. Large coherent repeated diamonds, not quatrefoils or a generic star wheel. One straight repeat with small end posts. Removable thin glass behind the structural tracery. Both post backs/ends have plain mounting seats. No floor slab, stairs or attached wall.\n\nWLD-GLAZED-RAIL-002-S03 \u2014 Fan-shell glazed rail. Three graceful scalloped fan arcs, ivory lower spandrels and very thin gold radial ribs. Lilac/amethyst glass in the fan panels, indigo only as a small accent. Not onion domes or full arches. One straight repeat with small end posts. Removable thin glass behind the structural tracery. Both post backs/ends have plain mounting seats. No floor slab, stairs or attached wall.\n\nWLD-GLAZED-RAIL-002-S04 \u2014 Ripple-ribbon glazed rail. Low interwoven ivory horizontal ribbons tracing soft water ripples, thin gilt edges and clear honey/peach glass between. Gold round terminal buttons, no crescents, roses or star-wheel copies. One straight repeat with small end posts. Removable thin glass behind the structural tracery. Both post backs/ends have plain mounting seats. No floor slab, stairs or attached wall.\n\nGLASS PALETTE: GLASS-PAL-01 Emerald leaf; GLASS-PAL-02 Seafoam mint; GLASS-PAL-03 Lagoon aqua; GLASS-PAL-04 Peacock teal; GLASS-PAL-05 Honey amber; GLASS-PAL-06 Champagne clear; GLASS-PAL-07 Pearl opal; GLASS-PAL-08 Rose quartz; GLASS-PAL-09 Peach sunset; GLASS-PAL-10 Amethyst; GLASS-PAL-11 Lavender frost; GLASS-PAL-12 Sapphire blue",
+  "parts": [
+    {
+      "asset_id": "WLD-GLAZED-RAIL-002-S01",
+      "name": "Lily-stem glazed rail",
+      "kind": "structural-section",
+      "dimensions_m_proposed": [
+        2.4,
+        0.18,
+        1.1
+      ],
+      "function": "Human-height glazed barrier variation for palace/garden terraces; use separate simple collision rail in game.",
+      "construction": "Two slender ivory lily stems rise symmetrically from low rose-marble sill, curling gold leaves brace the stems. Three emerald/mint glass lobes sit behind the stems; no flower planters or repeated star medallions. One straight repeat with small end posts. Removable thin glass behind the structural tracery. Both post backs/ends have plain mounting seats. No floor slab, stairs or attached wall.",
+      "attachment_face": "Underside of sill/end posts to terrace edge; flat post-side seats join next repeat",
+      "semantic_front": "Decorated outward face +Y; Z up",
+      "target_polycount_proposed": 4500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Interiors and furniture"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "WLD-GLAZED-RAIL-002-S01__glazed-rail__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed",
+      "parent_asset_family": "WLD-GLAZED-RAIL-002",
+      "reference_image_id": "WLD-GLAZED-RAIL-002"
+    },
+    {
+      "asset_id": "WLD-GLAZED-RAIL-002-S02",
+      "name": "Diamond-bevel glazed rail",
+      "kind": "structural-section",
+      "dimensions_m_proposed": [
+        2.4,
+        0.18,
+        1.1
+      ],
+      "function": "Human-height glazed barrier variation for palace/garden terraces; use separate simple collision rail in game.",
+      "construction": "A fine ivory diamond lattice with small gold joints, delicate rectangular frame and aqua/clear bevelled glass. Large coherent repeated diamonds, not quatrefoils or a generic star wheel. One straight repeat with small end posts. Removable thin glass behind the structural tracery. Both post backs/ends have plain mounting seats. No floor slab, stairs or attached wall.",
+      "attachment_face": "Underside of sill/end posts to terrace edge; flat post-side seats join next repeat",
+      "semantic_front": "Decorated outward face +Y; Z up",
+      "target_polycount_proposed": 4500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Interiors and furniture"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "WLD-GLAZED-RAIL-002-S02__glazed-rail__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed",
+      "parent_asset_family": "WLD-GLAZED-RAIL-002",
+      "reference_image_id": "WLD-GLAZED-RAIL-002"
+    },
+    {
+      "asset_id": "WLD-GLAZED-RAIL-002-S03",
+      "name": "Fan-shell glazed rail",
+      "kind": "structural-section",
+      "dimensions_m_proposed": [
+        2.4,
+        0.18,
+        1.1
+      ],
+      "function": "Human-height glazed barrier variation for palace/garden terraces; use separate simple collision rail in game.",
+      "construction": "Three graceful scalloped fan arcs, ivory lower spandrels and very thin gold radial ribs. Lilac/amethyst glass in the fan panels, indigo only as a small accent. Not onion domes or full arches. One straight repeat with small end posts. Removable thin glass behind the structural tracery. Both post backs/ends have plain mounting seats. No floor slab, stairs or attached wall.",
+      "attachment_face": "Underside of sill/end posts to terrace edge; flat post-side seats join next repeat",
+      "semantic_front": "Decorated outward face +Y; Z up",
+      "target_polycount_proposed": 4500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Interiors and furniture"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "WLD-GLAZED-RAIL-002-S03__glazed-rail__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed",
+      "parent_asset_family": "WLD-GLAZED-RAIL-002",
+      "reference_image_id": "WLD-GLAZED-RAIL-002"
+    },
+    {
+      "asset_id": "WLD-GLAZED-RAIL-002-S04",
+      "name": "Ripple-ribbon glazed rail",
+      "kind": "structural-section",
+      "dimensions_m_proposed": [
+        2.4,
+        0.18,
+        1.1
+      ],
+      "function": "Human-height glazed barrier variation for palace/garden terraces; use separate simple collision rail in game.",
+      "construction": "Low interwoven ivory horizontal ribbons tracing soft water ripples, thin gilt edges and clear honey/peach glass between. Gold round terminal buttons, no crescents, roses or star-wheel copies. One straight repeat with small end posts. Removable thin glass behind the structural tracery. Both post backs/ends have plain mounting seats. No floor slab, stairs or attached wall.",
+      "attachment_face": "Underside of sill/end posts to terrace edge; flat post-side seats join next repeat",
+      "semantic_front": "Decorated outward face +Y; Z up",
+      "target_polycount_proposed": 4500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Interiors and furniture"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "WLD-GLAZED-RAIL-002-S04__glazed-rail__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed",
+      "parent_asset_family": "WLD-GLAZED-RAIL-002",
+      "reference_image_id": "WLD-GLAZED-RAIL-002"
+    }
+  ],
+  "outputs": [
+    {
+      "file": "completion-pass/WLD-GLAZED-RAIL-002/WLD-GLAZED-RAIL-002.png",
+      "sha256": "178de9737cb6878cd4c0e71701a051429a29bae959d9a69f9fac8d4d670e5352",
+      "original_file": "/workspace/generated_images/exec-990e10e8-df0a-43a1-8ccc-fbb0792f1f15.png",
+      "actual_input_file": "images/illustrated-boards/GEN-39.png",
+      "actual_input_sha256": "bbe9f03266ab8b443d0a00780f2b62ee2741e3089f0cad8ab9347cc0cfe4d1d4",
+      "attempt": 1,
+      "generator": "image_gen.imagegen"
+    }
+  ],
+  "previous_attempts": [],
+  "models_generated": 0,
+  "physical_join_fit_verified": false,
+  "view_geometry_parity_verified": false,
+  "review_status": "reference-reviewed-pending-join-and-glass-material-review",
+  "gap": "New rail tracery designs and glass colour variation without multiplying meshes per colour",
+  "mode": "structure",
+  "material_palette": [
+    {
+      "material_id": "GLASS-PAL-01",
+      "name": "Emerald leaf",
+      "base_colour_srgb_hex_proposed": "#168A61",
+      "geometry_variant": false,
+      "applies_to": "Existing pane geometry in new rail frames or existing windows; shape unchanged",
+      "runtime_status": "concept palette; no shader or PBR texture generated"
+    },
+    {
+      "material_id": "GLASS-PAL-02",
+      "name": "Seafoam mint",
+      "base_colour_srgb_hex_proposed": "#A6E4C7",
+      "geometry_variant": false,
+      "applies_to": "Existing pane geometry in new rail frames or existing windows; shape unchanged",
+      "runtime_status": "concept palette; no shader or PBR texture generated"
+    },
+    {
+      "material_id": "GLASS-PAL-03",
+      "name": "Lagoon aqua",
+      "base_colour_srgb_hex_proposed": "#53C9D2",
+      "geometry_variant": false,
+      "applies_to": "Existing pane geometry in new rail frames or existing windows; shape unchanged",
+      "runtime_status": "concept palette; no shader or PBR texture generated"
+    },
+    {
+      "material_id": "GLASS-PAL-04",
+      "name": "Peacock teal",
+      "base_colour_srgb_hex_proposed": "#187B89",
+      "geometry_variant": false,
+      "applies_to": "Existing pane geometry in new rail frames or existing windows; shape unchanged",
+      "runtime_status": "concept palette; no shader or PBR texture generated"
+    },
+    {
+      "material_id": "GLASS-PAL-05",
+      "name": "Honey amber",
+      "base_colour_srgb_hex_proposed": "#D8A33D",
+      "geometry_variant": false,
+      "applies_to": "Existing pane geometry in new rail frames or existing windows; shape unchanged",
+      "runtime_status": "concept palette; no shader or PBR texture generated"
+    },
+    {
+      "material_id": "GLASS-PAL-06",
+      "name": "Champagne clear",
+      "base_colour_srgb_hex_proposed": "#EBDAB7",
+      "geometry_variant": false,
+      "applies_to": "Existing pane geometry in new rail frames or existing windows; shape unchanged",
+      "runtime_status": "concept palette; no shader or PBR texture generated"
+    },
+    {
+      "material_id": "GLASS-PAL-07",
+      "name": "Pearl opal",
+      "base_colour_srgb_hex_proposed": "#E7E2E4",
+      "geometry_variant": false,
+      "applies_to": "Existing pane geometry in new rail frames or existing windows; shape unchanged",
+      "runtime_status": "concept palette; no shader or PBR texture generated"
+    },
+    {
+      "material_id": "GLASS-PAL-08",
+      "name": "Rose quartz",
+      "base_colour_srgb_hex_proposed": "#D994B1",
+      "geometry_variant": false,
+      "applies_to": "Existing pane geometry in new rail frames or existing windows; shape unchanged",
+      "runtime_status": "concept palette; no shader or PBR texture generated"
+    },
+    {
+      "material_id": "GLASS-PAL-09",
+      "name": "Peach sunset",
+      "base_colour_srgb_hex_proposed": "#ECB08F",
+      "geometry_variant": false,
+      "applies_to": "Existing pane geometry in new rail frames or existing windows; shape unchanged",
+      "runtime_status": "concept palette; no shader or PBR texture generated"
+    },
+    {
+      "material_id": "GLASS-PAL-10",
+      "name": "Amethyst",
+      "base_colour_srgb_hex_proposed": "#9563BE",
+      "geometry_variant": false,
+      "applies_to": "Existing pane geometry in new rail frames or existing windows; shape unchanged",
+      "runtime_status": "concept palette; no shader or PBR texture generated"
+    },
+    {
+      "material_id": "GLASS-PAL-11",
+      "name": "Lavender frost",
+      "base_colour_srgb_hex_proposed": "#C2ACDF",
+      "geometry_variant": false,
+      "applies_to": "Existing pane geometry in new rail frames or existing windows; shape unchanged",
+      "runtime_status": "concept palette; no shader or PBR texture generated"
+    },
+    {
+      "material_id": "GLASS-PAL-12",
+      "name": "Sapphire blue",
+      "base_colour_srgb_hex_proposed": "#3868BB",
+      "geometry_variant": false,
+      "applies_to": "Existing pane geometry in new rail frames or existing windows; shape unchanged",
+      "runtime_status": "concept palette; no shader or PBR texture generated"
+    }
+  ],
+  "visual_review_notes": [
+    "Four distinct glazed railing patterns and all twelve labelled colour samples appear. Marble/gold vocabulary remains consistent with GEN-39; green, aqua, purple and amber glass provide new palette variation.",
+    "Swatches are faceted material illustrations, not gem meshes or measured PBR transmission samples. Material IDs are kept separately from the four structural asset IDs.",
+    "End posts and glass-seat sketches do not prove cross-compatibility with existing corner/stair rails. Some small front/contact views change ornament proportions; establish actual matching profiles before instancing."
+  ]
+}

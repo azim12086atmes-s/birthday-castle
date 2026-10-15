@@ -1,0 +1,32 @@
+{
+  "status": "proposed scope for review",
+  "profiles": {
+    "D0": {
+      "name": "Distant background",
+      "coverage": "Silhouette/low-detail shell, distant material and visibility bounds only. Unnamed filler, not the default for a named destination."
+    },
+    "D2": {
+      "name": "Explorable outdoor place",
+      "coverage": "Approach, walk-around exterior/open pavilion or court, focal view, exit/return route, local plants/props/ambience and simplified collision. No automatic furnished sealed interior."
+    },
+    "D3": {
+      "name": "Explorable place plus selected interior/deck",
+      "coverage": "D2 plus one useful room or upper/deck route, furnished focal zones and a reusable interaction/access pattern. Forests use the shared cottage interior family; not bespoke rooms for every building."
+    },
+    "D4": {
+      "name": "Hero hub",
+      "coverage": "D3 plus authored connected multi-zone routes and full hero hierarchy. Palace prototype first, then ten selected zones; no complete simulation of all enormous wings."
+    }
+  },
+  "common_exclusions": [
+    "baths and spas",
+    "kitchens and bakeries",
+    "staff/service rooms",
+    "music/performance spaces"
+  ],
+  "detail_bands_proposed": {
+    "near_path": "roughly0\u201320m: readable surfaces, hero plants/props, usable collision",
+    "middle": "roughly20\u2013150m: clustered instanced canopy/buildings with reduced detail",
+    "distant": "beyond roughly150m: LOD/impostors/skyline; distances must be tuned to actual production camera"
+  }
+}

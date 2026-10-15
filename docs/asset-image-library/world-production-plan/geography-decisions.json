@@ -1,0 +1,62 @@
+{
+  "status": "decisions required before detailed regional construction",
+  "layout_sha256_preserved": "0a4849d55bc9f9614a231b1e172fc6ff801831a401ab246df6477e99ea39f773",
+  "decisions": [
+    {
+      "id": "G01",
+      "topic": "World scale and coordinate contract",
+      "existing_basis": "Keep12km square envelope, X east/Z south,2.5km palace width and provisional2.125km depth; do not uniformly scale humans, furniture or all source structures.",
+      "next_evidence": "Confirm footprint interfaces/approach band; palace height and invisible depth remain source-led unresolved decisions.",
+      "resolved": false
+    },
+    {
+      "id": "G02",
+      "topic": "Land/sea and elevation",
+      "existing_basis": "Keep irregular coast with open horizons; use local ridges/fjord/canyon outcrops, no mountain ring.",
+      "next_evidence": "Produce a simplified elevation/blockout and check gradients, land coverage, building pads and coastal continuity.",
+      "resolved": false
+    },
+    {
+      "id": "G03",
+      "topic": "Hydrology",
+      "existing_basis": "Separate calm Lantern Lake, ponds, streams, sheltered lagoon and open sea. Sea datum0 is a proposal, not an existing solved elevation.",
+      "next_evidence": "Choose water levels, downhill river profiles, beds/banks and spill/outlet logic before detailed water assets. Resolve whether650x700m Lantern Lake reservation is a cove or full lake versus the older3.6x1.3km art.",
+      "resolved": false
+    },
+    {
+      "id": "G04",
+      "topic": "Regional transitions",
+      "existing_basis": "Use eight terrain families with overlap zones rather than hard biome walls.",
+      "next_evidence": "Specify forest-to-meadow, lake-to-forest, dune-to-rock, jungle-to-cliff and canyon-to-coast transitions and their material blends.",
+      "resolved": false
+    },
+    {
+      "id": "G05",
+      "topic": "Travel and routes",
+      "existing_basis": "Existing polylines and bridge paths are concept routes, not walking/navigable geometry.",
+      "next_evidence": "Connect route nodes to actual gate/door/landing ports; test grades, crossings, dead ends and return loops. At proposed4m/s, crossing2.5km takes10.4min and12km50min, so test shortcuts/travel early.",
+      "resolved": false
+    },
+    {
+      "id": "G06",
+      "topic": "Palace and site interfaces",
+      "existing_basis": "GEN-37 controls palace front architecture; garden/isometric references inspire components and do not override it.",
+      "next_evidence": "Resolve palace outside-band joins, water basins and site setbacks without redrawing the whole castle as an unapproved replacement.",
+      "resolved": false
+    },
+    {
+      "id": "G07",
+      "topic": "Sky and vertical layers",
+      "existing_basis": "Sky XZ projections do not define altitude or ground-level collisions.",
+      "next_evidence": "Specify arrival height, support/landing containment, view layers and return/fall behavior; no automatic flying mechanic or2000m tower policy.",
+      "resolved": false
+    },
+    {
+      "id": "G08",
+      "topic": "View and discovery structure",
+      "existing_basis": "Every named destination needs a readable approach, focal moment and return, with quieter space between dense groups.",
+      "next_evidence": "Use walk tests for discovery spacing and optional path lengths; do not add unique props merely to cover all12km.",
+      "resolved": false
+    }
+  ]
+}
