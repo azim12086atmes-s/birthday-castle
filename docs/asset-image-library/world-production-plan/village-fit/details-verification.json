@@ -1,0 +1,37 @@
+{
+  "status": "pass",
+  "source_sheet_sha256": "daac9938457fba23c21a98af9df7c931e7d1889bce3f84b695da335c53239638",
+  "instances": 26,
+  "mounted_types": 11,
+  "unmounted": [
+    {
+      "part": "D09",
+      "asset_id": "B12-DETAIL-001-D09",
+      "name": "Chimney pot",
+      "reason": "Hollow pot has no shaft or scheduled roof/flue penetration. Inspect separately; do not place on an uncut roof."
+    }
+  ],
+  "checks": [
+    "11 fitting types mounted; hollow D09 explicitly withheld pending shaft and roof/flue opening",
+    "Evaluated meshes: window extents/reveals and opposite-facing mounts, wall backs, floor/post bearings, ridge socket and both tile-slope contacts pass",
+    "Each gable slope uses 2 × 1.8 m stock and one exact short terminal; no scaling or duplicate roof end closure",
+    "Actual bargeboard backs meet the terminal gable face; both L-shaped foundation corners meet each of their two exterior wall faces",
+    "Shutters are two hinged half-arch leaves; planter has cavity/drain gaps; isolated chimney has a through-bore",
+    "All three complete free-XZ returns pass with open door and fittings; closed door, porch posts, both planters and narrow-door headroom block movement; swing guard rejects closing on player",
+    "Canonical geography, source components, source model, wide entry and primary arrival remain unchanged"
+  ],
+  "walks": {
+    "arrival": 188.0468572529149,
+    "publicRoom": 35.07106781186552,
+    "cottageRoom": 35.40312423743302
+  },
+  "exceptions": [
+    "D02 retains 1.8 m stock lengths plus a proposed short terminal; no stretch.",
+    "D09 remains unmounted until a chimney shaft and weathered flue opening exist.",
+    "Porch bearing rails and shallow canopy are proposed support geometry, not a new accepted design.",
+    "D04 leaves are split from the shared round arch; independent full-round leaves in the sheet would not close together.",
+    "Only three sample windows and one source doorway are fitted; public entry is not a stretched D05.",
+    "Clay fitting envelopes establish joins and pivots; final carving, texture, seals, fasteners and drainage remain pending."
+  ],
+  "limits": "Function fit specimens only, not final art/carving, Blender Form acceptance or production performance"
+}

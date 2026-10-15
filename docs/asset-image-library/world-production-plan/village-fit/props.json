@@ -1,7 +1,7 @@
 {
   "schema": "game-room.props.v1",
   "roomId": "b12-village-fit",
-  "status": "No paid or new artistic assets in this fixture",
+  "status": "Existing reference fittings represented by procedural fit specimens only; no paid or new artistic assets",
   "creditBudget": {
     "maximumCredits": 0
   },
@@ -20,5 +20,6 @@
       "sha256": "daac9938457fba23c21a98af9df7c931e7d1889bce3f84b695da335c53239638"
     }
   ],
-  "proceduralHosts": "room-layout.json"
+  "proceduralHosts": "room-layout.json",
+  "proceduralFitSpecimens": "fitting-review.json"
 }

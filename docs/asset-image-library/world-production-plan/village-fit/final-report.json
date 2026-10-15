@@ -47,20 +47,29 @@
   "postmortem": {
     "observations": [
       "A bottom-intersecting door aperture must be an outer-profile notch; a touching interior polygon hole produced visible infill.",
-      "Full-size 3 m wall / roof ports can remain fixed while different bay functions provide the village rhythm."
+      "Full-size 3 m wall / roof ports can remain fixed while different bay functions provide the village rhythm.",
+      "The saved D02 stock length does not divide the actual gable slope; a named short terminal is required rather than scaling decoration.",
+      "A circular door guard over-blocked safe interaction outside the leaf; checking the actual swept leaf area preserves the doorway interaction."
     ],
     "corrections": [
       "Door notches and internal window holes are distinct mesh operations; ray tests verify every actual aperture.",
-      "Shared party walls authored once; roof repeats contain no triangular end infill."
+      "Shared party walls authored once; roof repeats contain no triangular end infill.",
+      "Use two 1.8 m bargeboards and a proposed 0.504 m terminal per slope.",
+      "Use two-degree swept-leaf samples with a 2 mm conservatism margin; retain the close-on-player guard and test the stopped exterior interaction."
     ],
     "remainingRisks": [
-      "Source roof backs, flashings, final door usability, art fidelity, approved Boolean assets, roof drainage and final supports remain unresolved."
+      "D09 shaft/flue and flashing absent; chimney remains unmounted.",
+      "Nominal door/window installation allowance, hinges, weather seals, ridge/valley drainage, supports, final source carving and textures require review.",
+      "Function fitting prototypes and local interactions are not accepted asset models or integrated game behavior."
     ]
   },
   "proposedLessons": [],
   "prototypeEvidence": {
     "geometry": "geometry-verification.json",
     "browser": "browser-verification.json",
-    "scope": "Functional engineering evidence; not formal Form or Runtime acceptance"
+    "scope": "Functional engineering evidence; not formal Form or Runtime acceptance",
+    "fitting_manifest": "fitting-review.json",
+    "fitting_geometry": "details-verification.json",
+    "fitting_browser": "details-browser-verification.json"
   }
 }

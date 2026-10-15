@@ -1,0 +1,85 @@
+{
+  "status": "pass",
+  "fitting_review_sha256": "4f30f7f62f940359ea25948bbe22e4146764fb8756faaa7dcde1e711f06b2cfd",
+  "browser": "Chromium / Playwright / software WebGL2",
+  "viewports": [
+    "1440\u00d7960",
+    "390\u00d7844"
+  ],
+  "checks": [
+    "All 12 saved types isolate; D09 is visibly identified as unmounted",
+    "Door toggle blocks the actual cottage route; hiding fittings cannot bypass collision",
+    "Opening the door restores all three complete free-XZ return routes",
+    "Both shutter states preserve glazing collision",
+    "Actual fitted lower/roof projections, source slot preview and 390 px controls render"
+  ],
+  "blocked_door": {
+    "status": "blocked",
+    "position": {
+      "x": 19.49999999999997,
+      "z": -5.32894736842105
+    }
+  },
+  "walks": {
+    "arrival": {
+      "status": "pass",
+      "name": "arrival",
+      "distance_m": 188.0468572529122,
+      "return_position": {
+        "x": -2,
+        "z": 0
+      }
+    },
+    "publicRoom": {
+      "status": "pass",
+      "name": "publicRoom",
+      "distance_m": 35.0710678118654,
+      "return_position": {
+        "x": 14.000000000000002,
+        "z": -2.407412430484045e-35
+      }
+    },
+    "cottageRoom": {
+      "status": "pass",
+      "name": "cottageRoom",
+      "distance_m": 35.40312423743286,
+      "return_position": {
+        "x": 14.000000000000002,
+        "z": 0
+      }
+    }
+  },
+  "performance_observation": {
+    "mode": "orbit",
+    "position": {
+      "x": -2,
+      "z": 0
+    },
+    "run": null,
+    "progress_m": null,
+    "triangles": 40540,
+    "draw_calls": 71
+  },
+  "captures": [
+    "review/fittings-source-slots.png",
+    "review/fit-D01.png",
+    "review/fit-D02.png",
+    "review/fit-D03.png",
+    "review/fit-D04.png",
+    "review/fit-D05.png",
+    "review/fit-D06.png",
+    "review/fit-D07.png",
+    "review/fit-D08.png",
+    "review/fit-D09.png",
+    "review/fit-D10.png",
+    "review/fit-D11.png",
+    "review/fit-D12.png",
+    "review/fittings-door-closed.png",
+    "review/fittings-open-return.png",
+    "review/fittings-lower-plan.png",
+    "review/fittings-roof-plan.png",
+    "review/fittings-mobile.png"
+  ],
+  "page_errors": [],
+  "limits": "Procedural Function fitting specimens; not accepted decorative models, carving fidelity or production performance"
+}

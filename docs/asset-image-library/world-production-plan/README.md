@@ -8,9 +8,9 @@
 
 **Regional terrain and biomes:** [Updated map and FC05 habitat pass](blockout/BIOMES-AND-TERRAIN.md) adds physical landforms, six transition profiles, six local ground zones and a complete local browser traversal. Four transition sections still need grading/crossing work; final flora/fauna models remain pending.
 
-**West arrival connection:** [Inspect the stair/ramp alternatives](blockout/west.html) · [Route evidence](blockout/WEST-CONNECTION.md). The FC05 loop now has a proposed connection to a village-boundary gate; the internal village streets remain to define.
+**West arrival connection:** [Inspect the stair/ramp alternatives](blockout/west.html) · [Route evidence](blockout/WEST-CONNECTION.md). The FC05 loop now has a proposed connection to a village-boundary gate; the first internal lane and court now have a separate prototype, with the rest of the village still unresolved.
 
-**Village host update:** [B12 arrival lane and modular fixture](village-fit/index.html) · [Source decisions and checks](village-fit/README.md). Saved wall/roof dimensions now have actual openings, roof joins and three browser movement checks. This is a Function prototype, not final art.
+**Village host update:** [B12 arrival lane and modular fixture](village-fit/index.html) · [Source decisions and checks](village-fit/README.md). Saved wall/roof dimensions now have actual openings, roof joins and three browser movement checks. The saved detail sheet adds **26 fitting specimens / 11 mounted types**, opening door/shutter controls and an isolated chimney pot pending its flue. [Fitting preview](village-fit/review/fittings-source-slots.png) · [Fit manifest](village-fit/fitting-review.json). These are Function prototypes; final carving, models and art acceptance remain pending.
 
 ## Outcome and present state
 

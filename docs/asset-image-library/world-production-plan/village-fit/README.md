@@ -2,7 +2,7 @@
 
 15 October 2026 · [Open the separate review](index.html) · [Street preview](review/arrival-source-slots.png) · [Actual lower plan](plans/lower-plan.png) · [Roof projection](plans/roof-plan.png) · [Ceiling projection](plans/ceiling-plan.png)
 
-This is the first **B12 Function prototype**: a short arrival lane, eight attached/return house shells, a covered street connection, a small court and two testable ground rooms. It is not a completed village, final art assembly or a change to the main game. No new illustrated asset sheets, paid generation or registered asset models were added.
+This is the first **B12 Function prototype**: a short arrival lane, eight attached/return house shells, a covered street connection, a small court and two testable ground rooms. The saved detail sheet now has **26 fitting specimens covering 11 of its 12 types**, plus an isolated chimney-pot specimen. It is not a completed village, final art assembly or a change to the main game. No new illustrated asset sheets, paid generation or registered asset models were added.
 
 ## Source decisions
 
@@ -42,11 +42,38 @@ House ground rooms have approximately 2.45 m clear height beneath a 2.6 m storey
 
 Monochrome is the engineering default. The material selector previews cream plaster, oak, slate and glass slots. Roof cutaway, palette and plan changes never change collision. WASD/arrows move freely; Shift runs; drag to look. Route checks use the same movement solver as keyboard input. Switching view cancels a running check.
 
-## Evidence
+## Saved fittings and interactions
+
+[Fitting preview](review/fittings-source-slots.png) · [Named fit manifest](fitting-review.json) · [Geometry checks](details-verification.json) · [Browser checks](details-browser-verification.json)
+
+Only **B12-DETAIL-001** was opened for this pass. The source image and component registry remain unchanged. The added geometry represents measurable fitting envelopes, cavities and pivots; its simple marks do not reproduce the source's leaf carving or final materials. The existing 126-sheet illustrated library count is unchanged. Review screenshots are engineering evidence, not extra asset-design sheets.
+
+| Saved type | Fit demonstrated | Construction decision or gap |
+| --- | --- | --- |
+| D01 beam bracket | Two backs on the cottage wall, seats at Y 2.4 m | Proposed porch bearing rails rest above the seats |
+| D02 bargeboard | Both front gable slopes | Each slope is 4.104 m: two 1.8 m stock pieces plus a **0.504 m** proposed short terminal; no stretching |
+| D03 window insert | Ground/upper north cottage and opposite-facing south window | Complete 1.2 × 1.4 m insert fits inside the 0.3 m reveal; replaces duplicate preview glass at these three openings |
+| D04 shutters | Three separately hinged pairs | Split one continuous round arch into half-leaves; 170° open pose. Independent full-round leaves shown in the reference would not close together |
+| D05 oak door | Source 1 × 2.1 m cottage opening | Open 110° inward, close to block passage; swing guard protects the player. Wide public entry remains separate |
+| D06 window box | Three empty troughs | Actual cavity, separated drain slats and rear supports. Existing plants can be added later |
+| D07 tile strip | One patch on each roof slope | Normal aligns with the slope, underside meets the backing; no second decorative tile layer |
+| D08 finial | One ridge socket at Y 8 m | Cottage-sized crest retained |
+| D09 chimney pot | **Isolated only** | Through-bore present; mounting withheld until shaft, roof/flue opening and flashing exist |
+| D10 foundation corner | Front/rear west exterior corners | L sections meet the exterior faces and floor; final straight plinth runs remain pending |
+| D11 porch post | Two 2.4 m posts with foot/capital/brace | Proposed beam and canopy sit on their bearings; not final structural engineering |
+| D12 crown sign | Wall plate, projecting arm, ring and disc | 0.65 m source side-profile width projects outward; plate/fixture thickness follows the wall. Lowest point is 2.1 m above the lane |
+
+Use **Cottage fittings**, the named fitting selector and **Isolate fitting** to inspect each specimen. **Close/Open cottage door** and the shutter toggle change geometry and the movement state. Hiding fittings never removes their colliders. Fittings also appear in the actual lower/roof projections. Door hardware projects beyond the nominal 0.1 m leaf thickness; shutter dimensions describe the closed pair, not its larger open footprint.
+
+The three complete return checks remain **188.05 m**, **35.07 m** and **35.40 m**. A closed cottage door rejects its branch route; reopening it restores passage. Window glazing, planter boxes, porch posts, low canopy headroom and L-shaped corner blocks retain collision. Formal approvals remain pending.
+
+Nominal door/window dimensions have **zero installation allowance**: rebates, hinge barrels, seals and fabrication tolerances still need construction review. The existing valley hosts are proposed drainage geometry; this pass does not resolve watertight valley/ridge intersections or rain performance. The next construction pass is chimney/flue and roof/weather joins, followed by one furnished usable ground room using saved references.
+
+## Host evidence
 
 [Geometry verification](geometry-verification.json) independently checks source immutability, the shared west-gate interface, full returns, closed-window/party-wall collision, headroom and module dimensions. Rays pass all **49 actual mesh apertures**, while **121 solid-wall probes** hit substrate. Surrounds meet their declared front/back mounting faces. Roof-only rays reject unwanted end infill.
 
-[Browser verification](browser-verification.json) records all three animated routes, keyboard input, host inspection, projections, material/cutaway invariance and 390 px layout. The observed full street view is about **37,060 triangles / 30 draw calls**, below the prototype's 75,000 / 120 limits. These are software-WebGL inspection counts, not production-device performance or accepted model budgets.
+[Browser verification](browser-verification.json) records all three animated routes, keyboard input, host inspection, projections, material/cutaway invariance and 390 px layout. The prototype limits are **75,000 triangles / 120 draw calls**; the host and fitting browser reports record the observed counts for their actual views. These are software-WebGL inspection counts, not production-device performance or accepted model budgets.
 
 [Opening masks](review/opening-masks.png) and [traced contours](cutters/provenance.json) are reproducible binary evidence. Every mask occupies a **6 × 6 m frame at 40 px/m**; the source window includes its 0.8 m sill. Upper instances translate that template vertically. The frame size is not an aperture size. `openings.json` records each instance's dimensions, wall, destination, facing and mask transform. The exact parametric geometry remains authoritative; raster contours are not approved final Boolean cutters.
 
@@ -61,8 +88,10 @@ node docs/asset-image-library/world-production-plan/village-fit/build-review.mjs
 node docs/asset-image-library/world-production-plan/village-fit/test-model.mjs
 python docs/asset-image-library/world-production-plan/village-fit/test-browser.py
 python docs/asset-image-library/world-production-plan/village-fit/build-masks.py
+node docs/asset-image-library/world-production-plan/village-fit/test-details.mjs
+python docs/asset-image-library/world-production-plan/village-fit/test-details-browser.py
 ```
 
 Python Playwright, Chromium and Pillow are used in the cloud environment. Optional mask tracing used the 3D-room skill's `trace_opening_mask.py`; its hash is recorded in `cutters/provenance.json`. OpenCV was installed only in a temporary tooling directory for that diagnostic, not added as an application dependency. Traces have pixel-resolution limits; they do not replace the exact opening parameters.
 
-Next fit the saved B12 door, window, porch and roof-trim fittings to these sockets, with roof-corner/valley checks before decorative assembly. Keep circulation clear and retain the source/library distinction. Final arch engineering, drainage, roof/party-wall weather seals, supports, textures, decoration, populated interiors, interactions and the remaining regional route conflicts are unresolved.
+Keep circulation clear and retain the source/library distinction. Final arch engineering, drainage, roof/party-wall weather seals, final supports, carving/textures, populated interiors, production interactions and the remaining regional route conflicts are unresolved. The door/shutter controls are local prototype interactions, not integrated game behavior.

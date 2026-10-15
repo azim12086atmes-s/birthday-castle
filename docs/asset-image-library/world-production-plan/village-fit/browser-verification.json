@@ -17,9 +17,9 @@
     "arrival": {
       "status": "pass",
       "name": "arrival",
-      "distance_m": 188.04685725291222,
+      "distance_m": 188.0468572529123,
       "return_position": {
-        "x": -2,
+        "x": -1.9999999999999996,
         "z": 0
       }
     },
@@ -28,17 +28,17 @@
       "name": "publicRoom",
       "distance_m": 35.07106781186546,
       "return_position": {
-        "x": 14,
+        "x": 14.000000000000004,
         "z": 0
       }
     },
     "cottageRoom": {
       "status": "pass",
       "name": "cottageRoom",
-      "distance_m": 35.403124237432856,
+      "distance_m": 35.40312423743285,
       "return_position": {
-        "x": 14,
-        "z": 0
+        "x": 13.999999999999996,
+        "z": 1.5407439555097887e-33
       }
     }
   },
@@ -51,8 +51,8 @@
       },
       "run": null,
       "progress_m": null,
-      "triangles": 37060,
-      "draw_calls": 30
+      "triangles": 41584,
+      "draw_calls": 87
     }
   ],
   "page_errors": [],
