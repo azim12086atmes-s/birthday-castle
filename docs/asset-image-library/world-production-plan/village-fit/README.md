@@ -4,7 +4,7 @@
 
 15 October 2026 · [Open the separate review](index.html) · [Street preview](review/arrival-source-slots.png) · [Actual lower plan](plans/lower-plan.png) · [Roof projection](plans/roof-plan.png) · [Ceiling projection](plans/ceiling-plan.png)
 
-This is the first **B12 Function prototype**: a short arrival lane, eight attached/return house shells, a covered street connection, a small court and two testable ground rooms. The saved detail sheet now has **26 fitting specimens covering 11 of its 12 types**, plus an isolated chimney-pot specimen. It is not a completed village, final art assembly or a change to the main game. No new illustrated asset sheets, paid generation or registered asset models were added.
+This is the first **B12 Function prototype**: a short arrival lane, eight attached/return house shells, a covered street connection, a small court and two testable ground rooms. The saved detail sheet now has **32 fitting specimens covering 11 of its 12 types**, plus an isolated chimney-pot specimen. It is not a completed village, final art assembly or a change to the main game. No new illustrated asset sheets, paid generation or registered asset models were added.
 
 ## Source decisions
 
@@ -34,7 +34,7 @@ The lane is 6 m wide and narrows to a 4.8 m clear arch at the covered connection
 | Public ground room and return | **35.07 m** |
 | Source cottage doorway and return | **35.40 m** |
 
-The intended ground-room clearance is 2.45 m beneath a 2.6 m storey. The current slab drawing places its underside at 2.30 m, while the movement limit remains 2.45 m; reconcile that datum before furnishing the playable room. Upper storeys are **non-playable shells**; no invisible stairs or access is implied. Furnishings, lane dressing, garden placement and interactions remain to add after host review.
+Ground rooms now have 2.45 m clear height beneath a 2.6 m storey. The 0.15 m slab spans Y 2.45–2.60; an upward ray against the rendered ceiling independently checks the datum. Floor and ceiling IDs are distinct. Upper storeys are **non-playable shells**; no invisible stairs or access is implied. One cottage sitting room now has furniture, lighting and a chime interaction; [room decisions and evidence](ROOM.md). Wider lane/garden dressing and final art remain pending.
 
 ## Inspecting the hosts
 
@@ -54,10 +54,10 @@ Only **B12-DETAIL-001** was opened for this pass. The source image and component
 | --- | --- | --- |
 | D01 beam bracket | Two backs on the cottage wall, seats at Y 2.4 m | Proposed porch bearing rails rest above the seats |
 | D02 bargeboard | Both front gable slopes | Each slope is 4.104 m: two 1.8 m stock pieces plus a **0.504 m** proposed short terminal; no stretching |
-| D03 window insert | Ground/upper north cottage and opposite-facing south window | Complete 1.2 × 1.4 m insert fits inside the 0.3 m reveal; replaces duplicate preview glass at these three openings |
-| D04 shutters | Three separately hinged pairs | Split one continuous round arch into half-leaves; 170° open pose. Independent full-round leaves shown in the reference would not close together |
+| D03 window insert | Ground/upper north cottage, two rear windows and opposite-facing south window | Complete 1.2 × 1.4 m insert fits inside the 0.3 m reveal; replaces duplicate preview glass at these five openings |
+| D04 shutters | Five separately hinged pairs | Split one continuous round arch into half-leaves; 170° open pose. Independent full-round leaves shown in the reference would not close together |
 | D05 oak door | Source 1 × 2.1 m cottage opening | Open 110° inward, close to block passage; swing guard protects the player. Wide public entry remains separate |
-| D06 window box | Three empty troughs | Actual cavity, separated drain slats and rear supports. Existing plants can be added later |
+| D06 window box | Five empty troughs | Actual cavity, separated drain slats and rear supports. Existing plants can be added later |
 | D07 tile strip | One patch on each roof slope | Normal aligns with the slope, underside meets the backing; no second decorative tile layer |
 | D08 finial | One ridge socket at Y 8 m | Cottage-sized crest retained |
 | D09 chimney pot | **Isolated only** | Through-bore present; mounting withheld until shaft, roof/flue opening and flashing exist |
@@ -69,7 +69,7 @@ Use **Cottage fittings**, the named fitting selector and **Isolate fitting** to 
 
 The three complete return checks remain **188.05 m**, **35.07 m** and **35.40 m**. A closed cottage door rejects its branch route; reopening it restores passage. Window glazing, planter boxes, porch posts, low canopy headroom and L-shaped corner blocks retain collision. Formal approvals remain pending.
 
-Nominal door/window dimensions have **zero installation allowance**: rebates, hinge barrels, seals and fabrication tolerances still need construction review. The existing valley hosts are proposed drainage geometry; this pass does not resolve watertight valley/ridge intersections or rain performance. The next construction pass is chimney/flue and roof/weather joins, followed by one furnished usable ground room using saved references.
+Nominal door/window dimensions have **zero installation allowance**: rebates, hinge barrels, seals and fabrication tolerances still need construction review. The existing valley hosts are proposed drainage geometry; this pass does not resolve watertight valley/ridge intersections or rain performance. The separate roof variant covers the proposed chimney/flue and roof/weather joins; one usable ground sitting-room Function prototype is now tested. Final weather engineering and decorative model production remain pending.
 
 ## Host evidence
 
@@ -92,6 +92,7 @@ python docs/asset-image-library/world-production-plan/village-fit/test-browser.p
 python docs/asset-image-library/world-production-plan/village-fit/build-masks.py
 node docs/asset-image-library/world-production-plan/village-fit/test-details.mjs
 python docs/asset-image-library/world-production-plan/village-fit/test-details-browser.py
+node docs/asset-image-library/world-production-plan/village-fit/test-room.mjs
 ```
 
 Python Playwright, Chromium and Pillow are used in the cloud environment. Optional mask tracing used the 3D-room skill's `trace_opening_mask.py`; its hash is recorded in `cutters/provenance.json`. OpenCV was installed only in a temporary tooling directory for that diagnostic, not added as an application dependency. Traces have pixel-resolution limits; they do not replace the exact opening parameters.

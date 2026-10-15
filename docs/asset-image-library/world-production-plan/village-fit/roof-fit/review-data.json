@@ -998,7 +998,7 @@
     },
     {
       "file": "../model.mjs",
-      "sha256": "cfd757f64fbf4644a807489b3e27711d4c1757fbb52db3c7835b5afbee179272"
+      "sha256": "aa663cb2551867089c5822f1f5c4240427c0de4e82b975b4d1bc8a924877e862"
     },
     {
       "file": "../geometry.mjs",
@@ -1006,7 +1006,7 @@
     },
     {
       "file": "../details-model.mjs",
-      "sha256": "dc10bebf91a44e3c284ac87d04e76af4b6f134cb0c9977580f2abf4ec24f7b9b"
+      "sha256": "002624f0b2be49f59595730baa00a25ec60d732316f98682dac9ea8a207e65f9"
     },
     {
       "file": "../details-geometry.mjs",

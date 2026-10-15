@@ -1,7 +1,7 @@
 {
   "status": "pass",
   "source_sheet_sha256": "daac9938457fba23c21a98af9df7c931e7d1889bce3f84b695da335c53239638",
-  "instances": 26,
+  "instances": 32,
   "mounted_types": 11,
   "unmounted": [
     {
@@ -30,7 +30,7 @@
     "D09 remains unmounted until a chimney shaft and weathered flue opening exist.",
     "Porch bearing rails and shallow canopy are proposed support geometry, not a new accepted design.",
     "D04 leaves are split from the shared round arch; independent full-round leaves in the sheet would not close together.",
-    "Only three sample windows and one source doorway are fitted; public entry is not a stretched D05.",
+    "Only five sample windows and one source doorway are fitted; public entry is not a stretched D05.",
     "Clay fitting envelopes establish joins and pivots; final carving, texture, seals, fasteners and drainage remain pending."
   ],
   "limits": "Function fit specimens only, not final art/carving, Blender Form acceptance or production performance"

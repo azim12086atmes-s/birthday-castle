@@ -37,9 +37,9 @@ Use **Assembly**, **Chimney**, **Valley outlet** and **Support frame** for fixed
 
 The onward site drain remains unresolved. The source open pot admits rain, so its rain/condensate arrangement still needs a design. Installation allowances, weather seals, drainage capacity and structural/fire specifications have not been validated. Coverage probes show where geometry exists; they do not prove waterproofing. Formal Function, Form and Runtime approvals remain pending in the parent review package.
 
-Before furnishing, reconcile the parent fixture's ceiling datum: its movement model allows 2.45 m, while its current 0.15 m slab is drawn with its top at 2.45 m and underside at 2.30 m. Preserve the intended **2.45 m clear room height** when building the furnished sample. This roof bench has no ceiling slab and does not change that earlier room.
+The parent furnished-room update has corrected the ceiling slab to Y 2.45–2.60, preserving **2.45 m clear room height**. This roof bench has no ceiling slab; its roof/vent geometry is unchanged.
 
-Next audit the saved shared furnishings against the cottage palette, then make **one usable furnished ground room** with human-scale furniture, lighting, door interaction and a complete return route. Keep these local construction gaps recorded while advancing the playable sample.
+The parent [furnished sitting room](../ROOM.md) now tests compatible human-scale furniture, lighting, door/chime interaction and a complete return route. Next apply those contracts to the FC05 cottage/clearing sample. Keep these local construction gaps recorded while advancing the playable sample.
 
 ## Rebuild
 

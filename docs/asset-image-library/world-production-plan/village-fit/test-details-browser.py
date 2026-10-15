@@ -12,11 +12,20 @@ with sync_playwright() as p:
  page.goto('http://127.0.0.1:8765/docs/asset-image-library/world-production-plan/village-fit/',wait_until='networkidle')
  page.wait_for_function('villageReview?.ready',timeout=60000)
  assert not page.locator('#error').is_visible()
- assert page.evaluate('villageReview.details.instances.length')==26
+ assert page.evaluate('villageReview.details.instances.length')==32
  def capture(name,canvas=False):
   path='review/'+name+'.png';page.locator('#scene').screenshot(path=str(ROOT/path)) if canvas else page.screenshot(path=str(ROOT/path),full_page=True);captures.append(path)
  page.select_option('#palette','source');page.click('#fittings-view');capture('fittings-source-slots')
  perf=page.evaluate('villageReview.state');assert perf['triangles']<75000 and perf['draw_calls']<120,perf
+ # Actual ceiling geometry, furnished view and keyboard chime interaction.
+ page.click('#room-view');assert abs(page.evaluate('villageReview.measureCeiling(21,-10)')-2.45)<.00001
+ assert page.evaluate('villageReview.room.clearHeight')==2.45
+ capture('room-source-slots');page.locator('#room-view').blur();before=page.evaluate('villageReview.room.rings')
+ page.keyboard.press('KeyE');page.wait_for_function('(n)=>villageReview.room.rings===n+1',arg=before)
+ assert 'Chime rung' in page.locator('#room-status').inner_text()
+ page.locator('#room-toggle').uncheck();assert page.evaluate('!villageReview.model.canStand(20.4,-12.6)')
+ page.locator('#room-toggle').check();page.click('#walk');page.click('#ring-chime');assert 'closer' in page.locator('#room-status').inner_text()
+ page.click('#fittings-view')
  # Opposed window mounts, all fittings, open/closed pivots, hollow specimens and terminal trim.
  representatives={}
  for item in page.evaluate('villageReview.details.instances'):
@@ -43,7 +52,7 @@ with sync_playwright() as p:
   assert page.evaluate('!villageReview.model.canStand(22.5,-6)')
  page.click('#fittings-view');capture('fittings-open-return')
  # Full free-movement returns are replayed in the final fitted page, rather than assuming old evidence.
- for route in ['arrival','publicRoom','cottageRoom']:
+ for route in ['arrival','publicRoom','cottageRoom','furnishedRoom']:
   page.select_option('#route',route);page.click('#run')
   page.wait_for_function("villageReview.state.run?.status!=='running'",timeout=150000)
   result=page.evaluate('villageReview.state.run');assert result['status']=='pass',result;walks[route]=result
@@ -54,5 +63,6 @@ with sync_playwright() as p:
  assert page.locator('#door-toggle').is_visible();capture('fittings-mobile')
  assert not errors,errors
  b.close()
-r={'status':'pass','fitting_review_sha256':hashlib.sha256((ROOT/'fitting-review.json').read_bytes()).hexdigest(),'browser':'Chromium / Playwright / software WebGL2','viewports':['1440×960','390×844'],'checks':['All 12 saved types isolate; D09 is visibly identified as unmounted','Door toggle blocks the actual cottage route; hiding fittings cannot bypass collision','Opening the door restores all three complete free-XZ return routes','Both shutter states preserve glazing collision','Actual fitted lower/roof projections, source slot preview and 390 px controls render'],'blocked_door':blocked,'walks':walks,'performance_observation':perf,'captures':captures,'page_errors':errors,'limits':'Procedural Function fitting specimens; not accepted decorative models, carving fidelity or production performance'}
+r={'status':'pass','fitting_review_sha256':hashlib.sha256((ROOT/'fitting-review.json').read_bytes()).hexdigest(),'room_review_sha256':hashlib.sha256((ROOT/'room-review.json').read_bytes()).hexdigest(),'browser':'Chromium / Playwright / software WebGL2','viewports':['1440×960','390×844'],'checks':['All 12 saved types isolate; D09 is visibly identified as unmounted','Door toggle blocks the actual cottage route; hiding fittings cannot bypass collision','Opening the door restores all four complete free-XZ return routes, including furnished-room visits','Both shutter states preserve glazing collision; furniture collision survives hiding',
+ 'Actual ceiling ray measures 2.45 m; keyboard chime succeeds in reach and rejects distant use','Actual fitted lower/roof projections, source slot preview and 390 px controls render'],'blocked_door':blocked,'walks':walks,'performance_observation':perf,'captures':captures,'page_errors':errors,'limits':'Procedural Function fitting specimens; not accepted decorative models, carving fidelity or production performance'}
 (ROOT/'details-browser-verification.json').write_text(json.dumps(r,indent=2)+'\n');print(json.dumps(r,indent=2))

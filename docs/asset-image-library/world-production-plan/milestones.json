@@ -22,14 +22,15 @@
       "deliverables": "Units, pivots, seam profiles, opening standards, glass/material IDs, UV scale, collision, LOD/instancing and loading groups.",
       "exit_evidence": "One floor/wall/opening/rail/path/water-edge example physically fits and survives actual player/camera tests.",
       "status": "village-roof-and-fittings-function-fixtures-tested-pending-review",
-      "evidence": "village-fit/README.md; fitting-review.json; details-verification.json and details-browser-verification.json. 26 procedural fit specimens cover 11 saved B12 detail types, with an isolated hollow chimney pot pending shaft/flue. Door, shutter pivots, mounting faces, complete return routes and rendering-only cutaways tested. Final carving, art/Form acceptance and roof weather joins unresolved. Roof follow-up: village-fit/roof-fit/README.md; real shaft/roof apertures, framing contacts, valley wall/scupper clearance, downpipe/sump bore and browser inspection. Onward site drain, rain management and final structure remain unresolved."
+      "evidence": "village-fit/README.md; fitting-review.json; details-verification.json and details-browser-verification.json. 32 procedural fit specimens cover 11 saved B12 detail types, with an isolated hollow chimney pot pending shaft/flue. Door, shutter pivots, mounting faces, complete return routes and rendering-only cutaways tested. Final carving, art/Form acceptance and roof weather joins unresolved. Roof follow-up: village-fit/roof-fit/README.md; real shaft/roof apertures, framing contacts, valley wall/scupper clearance, downpipe/sump bore and browser inspection. Onward site drain, rain management and final structure remain unresolved."
     },
     {
       "id": "P3",
       "name": "Two playable samples",
       "deliverables": "B01bedroom/balcony and F02one cottage/clearing/pond-edge loop; human furniture and one reusable interaction test.",
       "exit_evidence": "Both load in real browser with correct collision, route, openings, return and measured performance. Reference approval before paid generation; no paid work is authorised by this planning document.",
-      "status": "planned"
+      "status": "village-furnished-room-function-prototype-tested; forest-and-palace-furnishing-pending",
+      "evidence": "village-fit/ROOM.md, room-review.json, room-verification.json and details-browser-verification.json. Village sitting-room specimen uses six saved cottage designs, proposed table/lamp fixtures, corrected 2.45 m ceiling, proximity chime and four complete route returns. B12 is distinct from FC05/F02 and B01; no complete-location or final-art approval is implied."
     },
     {
       "id": "P4",
@@ -137,6 +138,6 @@
       "exit_evidence": "Each island has a working arrival and return, explorable focal route and bounded content; no flight system is assumed."
     }
   ],
-  "current_next_deliverable": "Reconcile the cottage ceiling drawing with its intended 2.45 m clear height, audit saved shared furnishings for cottage style, then furnish one usable ground room with human-scale furniture, lighting, interaction and a tested return route. Carry roof weather/detail and onward site drainage gaps into their construction backlog.",
+  "current_next_deliverable": "Apply the tested cottage room/door/furniture contracts to the actual FC05 forest cottage and clearing, preserving its 12 \u00d7 9 m footprint and 70 m clearing; add a small source-led vegetation starter kit and interaction/return evidence. Then furnish the palace bedroom/balcony at its accepted dimensions.",
   "local_first_rule": "Resolve world geography at coarse level, but only require sample-local elevations, water, boundaries and access for the first prototype; refine distant-region unknowns in their own wave."
 }

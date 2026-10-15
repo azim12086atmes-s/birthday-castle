@@ -1,0 +1,318 @@
+{
+  "id": "B12-COTTAGE-ROOM-FUNCTION-001",
+  "status": "Furnished sitting-room Function specimen; formal approvals pending",
+  "house": {
+    "id": "H-N-18",
+    "xmin": 18,
+    "xmax": 24,
+    "zmin": -15,
+    "zmax": -6,
+    "front": -6,
+    "side": -1,
+    "public": false
+  },
+  "ceiling": {
+    "id": "H-N-18-CEILING",
+    "xmin": 18,
+    "xmax": 24,
+    "zmin": -15,
+    "zmax": -6,
+    "front": -6,
+    "side": -1,
+    "public": false,
+    "y": 2.6,
+    "underside_y": 2.45,
+    "thickness": 0.15,
+    "ceiling": true
+  },
+  "clear_height": 2.45,
+  "items": [
+    {
+      "id": "ROOM-BENCH",
+      "kind": "bench",
+      "reference_id": "B12-COURT-PROP-001-D05",
+      "position": [
+        18.425,
+        0,
+        -12.6
+      ],
+      "rotation": 1.5707963267948966,
+      "dimensions": [
+        1.4,
+        0.55,
+        0.85
+      ],
+      "attachment": "Feet on floor; back towards west wall",
+      "front": "East, toward conversation table",
+      "solid": true
+    },
+    {
+      "id": "ROOM-TABLE-P01",
+      "kind": "table",
+      "reference_id": null,
+      "position": [
+        20.4,
+        0,
+        -12.6
+      ],
+      "rotation": 0,
+      "dimensions": [
+        1,
+        0.65,
+        0.72
+      ],
+      "attachment": "Four feet on floor",
+      "front": "North/south edges accessible",
+      "solid": true,
+      "proposal": "New plain cottage table fit specimen; indoor table design is a verified reference gap"
+    },
+    {
+      "id": "ROOM-CRATE",
+      "kind": "crate",
+      "reference_id": "B12-COURT-PROP-001-D09",
+      "position": [
+        23.45,
+        0,
+        -14.4
+      ],
+      "rotation": 0,
+      "dimensions": [
+        0.5,
+        0.4,
+        0.35
+      ],
+      "attachment": "Underside on floor",
+      "front": "Open top upward",
+      "solid": true
+    },
+    {
+      "id": "ROOM-BASKET",
+      "kind": "basket",
+      "reference_id": "B12-COURT-PROP-001-D03",
+      "position": [
+        23.4,
+        0,
+        -7.1
+      ],
+      "rotation": 0,
+      "dimensions": [
+        0.45,
+        0.35,
+        0.3
+      ],
+      "attachment": "Underside on floor",
+      "front": "Open top upward",
+      "solid": true
+    },
+    {
+      "id": "ROOM-MAT",
+      "kind": "mat",
+      "reference_id": "B12-COURT-PROP-001-D12",
+      "position": [
+        19.5,
+        0,
+        -6.9
+      ],
+      "rotation": 0,
+      "dimensions": [
+        0.8,
+        0.5,
+        0.02
+      ],
+      "attachment": "Broad underside flat on floor",
+      "front": "Pattern upward",
+      "walkable": true
+    },
+    {
+      "id": "ROOM-WATERING-POT",
+      "kind": "watering-pot",
+      "reference_id": "B12-COURT-PROP-001-D07",
+      "position": [
+        20.4,
+        0.72,
+        -12.6
+      ],
+      "rotation": 0,
+      "dimensions": [
+        0.4,
+        0.2,
+        0.3
+      ],
+      "attachment": "Base on table top Y=0.72",
+      "front": "Spout east"
+    },
+    {
+      "id": "ROOM-CHIME",
+      "kind": "chime",
+      "reference_id": "B12-COURT-PROP-001-D06",
+      "position": [
+        21,
+        1.9,
+        -7.5
+      ],
+      "rotation": 0,
+      "dimensions": [
+        0.15,
+        0.15,
+        0.45
+      ],
+      "attachment": "Visible 0.10 m hanger to ceiling underside Y=2.45",
+      "front": "Suspended body downward",
+      "interaction": "Ring with E within 1.8 m"
+    },
+    {
+      "id": "ROOM-LAMP-P01-0",
+      "kind": "lamp",
+      "reference_id": null,
+      "position": [
+        18.15,
+        1.95,
+        -10.1
+      ],
+      "rotation": 1.5707963267948966,
+      "dimensions": [
+        0.18,
+        0.18,
+        0.3
+      ],
+      "attachment": "Flat rear plate on interior wall face",
+      "front": "Into room",
+      "proposal": "Functional test lamp, final cottage fixture design pending"
+    },
+    {
+      "id": "ROOM-LAMP-P01-1",
+      "kind": "lamp",
+      "reference_id": null,
+      "position": [
+        23.85,
+        1.95,
+        -13.5
+      ],
+      "rotation": -1.5707963267948966,
+      "dimensions": [
+        0.18,
+        0.18,
+        0.3
+      ],
+      "attachment": "Flat rear plate on interior wall face",
+      "front": "Into room",
+      "proposal": "Functional test lamp, final cottage fixture design pending"
+    }
+  ],
+  "lights": [
+    {
+      "id": "COTTAGE-LIGHT-W",
+      "position": [
+        18.255,
+        2.095,
+        -10.1
+      ],
+      "colour": "#ffdbab",
+      "intensity": 0.12,
+      "distance": 5.5,
+      "fixture": "ROOM-LAMP-P01-0"
+    },
+    {
+      "id": "COTTAGE-LIGHT-E",
+      "position": [
+        23.745,
+        2.095,
+        -13.5
+      ],
+      "colour": "#ffe2b9",
+      "intensity": 0.12,
+      "distance": 5.5,
+      "fixture": "ROOM-LAMP-P01-1"
+    }
+  ],
+  "route": [
+    [
+      14,
+      0
+    ],
+    [
+      19.5,
+      0
+    ],
+    [
+      19.5,
+      -9
+    ],
+    [
+      21,
+      -8.8
+    ],
+    [
+      19.25,
+      -10.8
+    ],
+    [
+      19.25,
+      -12.6
+    ],
+    [
+      19.25,
+      -10.8
+    ],
+    [
+      22,
+      -11
+    ],
+    [
+      22,
+      -13.7
+    ],
+    [
+      22,
+      -11
+    ],
+    [
+      19.5,
+      -9
+    ],
+    [
+      19.5,
+      0
+    ],
+    [
+      14,
+      0
+    ]
+  ],
+  "reference": {
+    "file": "completion-pass/B12-COURT-PROP-001/B12-COURT-PROP-001.png",
+    "sha256": "5d5d671aea52e637d49417f40aa61ca1464faf65d15f471c607eda5a7f2f026e"
+  },
+  "interaction": {
+    "kind": "wind-chime",
+    "reach_m": 1.8,
+    "cooldown_ms": 800,
+    "input": "E or button",
+    "audio": "User-triggered Web Audio tones; no external files or requests"
+  },
+  "exceptions": [
+    "This is a village sitting-room prototype, not FC05 or the palace bedroom and not a finished location.",
+    "Six saved cottage object designs are reused; the table and two lamp instances are explicitly proposed Function fixtures, not accepted new assets.",
+    "The saved palace canopy bed is 2.8 m tall and is excluded from this 2.45 m room; cottage sleeping furniture remains a design gap.",
+    "The 20 mm mat is a walkable step; collision and camera use its raised surface. Furniture and glass remain colliders when hidden.",
+    "The chime is suspended with its lowest point at 1.90 m, outside the 1.75 m player head envelope. All source carvings, textiles and final materials remain pending."
+  ],
+  "source_files": [
+    {
+      "file": "room-model.mjs",
+      "sha256": "c5ec618f9992ef28e57639c18c1b389ceaafa3fcd4bce7a6a4b1fe8739e2e402"
+    },
+    {
+      "file": "room-geometry.mjs",
+      "sha256": "d863ac975ba9f89c70b2f144dcdfa4e097ad0fd7d9cdc78b288623d86d7a204e"
+    },
+    {
+      "file": "viewer.mjs",
+      "sha256": "22a355d01c2ccda02a7d99d018694ee81921cd9c5f84b4eb21b29da81825edd5"
+    },
+    {
+      "file": "model.mjs",
+      "sha256": "aa663cb2551867089c5822f1f5c4240427c0de4e82b975b4d1bc8a924877e862"
+    }
+  ]
+}

@@ -1446,7 +1446,7 @@
   ],
   "floors": [
     {
-      "id": "H-N-18",
+      "id": "H-N-18-FLOOR",
       "xmin": 18,
       "xmax": 24,
       "zmin": -15,
@@ -1458,7 +1458,7 @@
       "thickness": 0.15
     },
     {
-      "id": "H-N-18",
+      "id": "H-N-18-CEILING",
       "xmin": 18,
       "xmax": 24,
       "zmin": -15,
@@ -1466,12 +1466,13 @@
       "front": -6,
       "side": -1,
       "public": false,
-      "y": 2.45,
+      "y": 2.6,
+      "underside_y": 2.45,
       "thickness": 0.15,
       "ceiling": true
     },
     {
-      "id": "H-N-24",
+      "id": "H-N-24-FLOOR",
       "xmin": 24,
       "xmax": 30,
       "zmin": -15,
@@ -1483,7 +1484,7 @@
       "thickness": 0.15
     },
     {
-      "id": "H-N-24",
+      "id": "H-N-24-CEILING",
       "xmin": 24,
       "xmax": 30,
       "zmin": -15,
@@ -1491,12 +1492,13 @@
       "front": -6,
       "side": -1,
       "public": false,
-      "y": 2.45,
+      "y": 2.6,
+      "underside_y": 2.45,
       "thickness": 0.15,
       "ceiling": true
     },
     {
-      "id": "H-N-30",
+      "id": "H-N-30-FLOOR",
       "xmin": 30,
       "xmax": 36,
       "zmin": -15,
@@ -1508,7 +1510,7 @@
       "thickness": 0.15
     },
     {
-      "id": "H-N-30",
+      "id": "H-N-30-CEILING",
       "xmin": 30,
       "xmax": 36,
       "zmin": -15,
@@ -1516,12 +1518,13 @@
       "front": -6,
       "side": -1,
       "public": false,
-      "y": 2.45,
+      "y": 2.6,
+      "underside_y": 2.45,
       "thickness": 0.15,
       "ceiling": true
     },
     {
-      "id": "H-N-42",
+      "id": "H-N-42-FLOOR",
       "xmin": 42,
       "xmax": 48,
       "zmin": -15,
@@ -1533,7 +1536,7 @@
       "thickness": 0.15
     },
     {
-      "id": "H-N-42",
+      "id": "H-N-42-CEILING",
       "xmin": 42,
       "xmax": 48,
       "zmin": -15,
@@ -1541,24 +1544,13 @@
       "front": -6,
       "side": -1,
       "public": false,
-      "y": 2.45,
+      "y": 2.6,
+      "underside_y": 2.45,
       "thickness": 0.15,
       "ceiling": true
     },
     {
-      "id": "H-S-18",
-      "xmin": 18,
-      "xmax": 24,
-      "zmin": 6,
-      "zmax": 15,
-      "front": 6,
-      "side": 1,
-      "public": true,
-      "y": 0,
-      "thickness": 0.15
-    },
-    {
-      "id": "H-S-18",
+      "id": "H-S-18-FLOOR",
       "xmin": 18,
       "xmax": 24,
       "zmin": 6,
@@ -1566,12 +1558,25 @@
       "front": 6,
       "side": 1,
       "public": true,
-      "y": 2.45,
+      "y": 0,
+      "thickness": 0.15
+    },
+    {
+      "id": "H-S-18-CEILING",
+      "xmin": 18,
+      "xmax": 24,
+      "zmin": 6,
+      "zmax": 15,
+      "front": 6,
+      "side": 1,
+      "public": true,
+      "y": 2.6,
+      "underside_y": 2.45,
       "thickness": 0.15,
       "ceiling": true
     },
     {
-      "id": "H-S-24",
+      "id": "H-S-24-FLOOR",
       "xmin": 24,
       "xmax": 30,
       "zmin": 6,
@@ -1583,7 +1588,7 @@
       "thickness": 0.15
     },
     {
-      "id": "H-S-24",
+      "id": "H-S-24-CEILING",
       "xmin": 24,
       "xmax": 30,
       "zmin": 6,
@@ -1591,12 +1596,13 @@
       "front": 6,
       "side": 1,
       "public": false,
-      "y": 2.45,
+      "y": 2.6,
+      "underside_y": 2.45,
       "thickness": 0.15,
       "ceiling": true
     },
     {
-      "id": "H-S-30",
+      "id": "H-S-30-FLOOR",
       "xmin": 30,
       "xmax": 36,
       "zmin": 6,
@@ -1608,7 +1614,7 @@
       "thickness": 0.15
     },
     {
-      "id": "H-S-30",
+      "id": "H-S-30-CEILING",
       "xmin": 30,
       "xmax": 36,
       "zmin": 6,
@@ -1616,12 +1622,13 @@
       "front": 6,
       "side": 1,
       "public": false,
-      "y": 2.45,
+      "y": 2.6,
+      "underside_y": 2.45,
       "thickness": 0.15,
       "ceiling": true
     },
     {
-      "id": "H-S-42",
+      "id": "H-S-42-FLOOR",
       "xmin": 42,
       "xmax": 48,
       "zmin": 6,
@@ -1633,7 +1640,7 @@
       "thickness": 0.15
     },
     {
-      "id": "H-S-42",
+      "id": "H-S-42-CEILING",
       "xmin": 42,
       "xmax": 48,
       "zmin": 6,
@@ -1641,7 +1648,8 @@
       "front": 6,
       "side": 1,
       "public": false,
-      "y": 2.45,
+      "y": 2.6,
+      "underside_y": 2.45,
       "thickness": 0.15,
       "ceiling": true
     }
@@ -3452,6 +3460,60 @@
         14,
         0
       ]
+    ],
+    "furnishedRoom": [
+      [
+        14,
+        0
+      ],
+      [
+        19.5,
+        0
+      ],
+      [
+        19.5,
+        -9
+      ],
+      [
+        21,
+        -8.8
+      ],
+      [
+        19.25,
+        -10.8
+      ],
+      [
+        19.25,
+        -12.6
+      ],
+      [
+        19.25,
+        -10.8
+      ],
+      [
+        22,
+        -11
+      ],
+      [
+        22,
+        -13.7
+      ],
+      [
+        22,
+        -11
+      ],
+      [
+        19.5,
+        -9
+      ],
+      [
+        19.5,
+        0
+      ],
+      [
+        14,
+        0
+      ]
     ]
   },
   "fittingPlacements": [
@@ -3862,6 +3924,282 @@
         "wall_id": "H-S-18-WIN",
         "axis": "x",
         "at": 6,
+        "depth": 0.3,
+        "centre": 22.5,
+        "base": 0,
+        "threshold": 0,
+        "face_sign": -1
+      }
+    },
+    {
+      "id": "H-N-18-BACK-0-0-window-D03",
+      "part": "D03",
+      "asset_id": "B12-DETAIL-001-D03",
+      "name": "Arched window insert",
+      "host": "H-N-18-BACK-0-0",
+      "position": [
+        19.5,
+        0.8,
+        -15.15
+      ],
+      "rotation": [
+        0,
+        3.141592653589793,
+        0
+      ],
+      "dimensions": [
+        1.2,
+        0.12,
+        1.4
+      ],
+      "attachment_face": "perimeter withinwall reveal",
+      "semantic_front": "glass outward",
+      "status": "Procedural fit specimen; carving and final model pending",
+      "opening_id": "H-N-18-BACK-0-0-window",
+      "layer": "lower",
+      "support": "wall face / reveal",
+      "opening": {
+        "kind": "window",
+        "width": 1.2,
+        "sill": 0.8,
+        "height": 1.4,
+        "arch_rise": 0.6,
+        "traversable": false,
+        "destination": "H-N-18 room / exterior",
+        "id": "H-N-18-BACK-0-0-window",
+        "wall_id": "H-N-18-BACK-0-0",
+        "axis": "x",
+        "at": -15,
+        "depth": 0.3,
+        "centre": 19.5,
+        "base": 0,
+        "threshold": 0,
+        "face_sign": -1
+      }
+    },
+    {
+      "id": "H-N-18-BACK-0-0-window-D04",
+      "part": "D04",
+      "asset_id": "B12-DETAIL-001-D04",
+      "name": "Shutter pair",
+      "host": "H-N-18-BACK-0-0",
+      "position": [
+        19.5,
+        0.8,
+        -15.15
+      ],
+      "rotation": [
+        0,
+        3.141592653589793,
+        0
+      ],
+      "dimensions": [
+        1.2,
+        0.08,
+        1.4
+      ],
+      "attachment_face": "hinges towindow jambs",
+      "semantic_front": "carved faces outward",
+      "status": "Procedural fit specimen; carving and final model pending",
+      "opening_id": "H-N-18-BACK-0-0-window",
+      "layer": "lower",
+      "support": "wall face / reveal",
+      "opening": {
+        "kind": "window",
+        "width": 1.2,
+        "sill": 0.8,
+        "height": 1.4,
+        "arch_rise": 0.6,
+        "traversable": false,
+        "destination": "H-N-18 room / exterior",
+        "id": "H-N-18-BACK-0-0-window",
+        "wall_id": "H-N-18-BACK-0-0",
+        "axis": "x",
+        "at": -15,
+        "depth": 0.3,
+        "centre": 19.5,
+        "base": 0,
+        "threshold": 0,
+        "face_sign": -1
+      }
+    },
+    {
+      "id": "H-N-18-BACK-0-0-window-D06",
+      "part": "D06",
+      "asset_id": "B12-DETAIL-001-D06",
+      "name": "Window box planter",
+      "host": "H-N-18-BACK-0-0",
+      "position": [
+        19.5,
+        0.8,
+        -15.15
+      ],
+      "rotation": [
+        0,
+        3.141592653589793,
+        0
+      ],
+      "dimensions": [
+        1.3,
+        0.35,
+        0.35
+      ],
+      "attachment_face": "rear brackets towall",
+      "semantic_front": "carved trough face outward",
+      "status": "Procedural fit specimen; carving and final model pending",
+      "opening_id": "H-N-18-BACK-0-0-window",
+      "layer": "lower",
+      "support": "wall face / reveal",
+      "opening": {
+        "kind": "window",
+        "width": 1.2,
+        "sill": 0.8,
+        "height": 1.4,
+        "arch_rise": 0.6,
+        "traversable": false,
+        "destination": "H-N-18 room / exterior",
+        "id": "H-N-18-BACK-0-0-window",
+        "wall_id": "H-N-18-BACK-0-0",
+        "axis": "x",
+        "at": -15,
+        "depth": 0.3,
+        "centre": 19.5,
+        "base": 0,
+        "threshold": 0,
+        "face_sign": -1
+      }
+    },
+    {
+      "id": "H-N-18-BACK-0-1-window-D03",
+      "part": "D03",
+      "asset_id": "B12-DETAIL-001-D03",
+      "name": "Arched window insert",
+      "host": "H-N-18-BACK-0-1",
+      "position": [
+        22.5,
+        0.8,
+        -15.15
+      ],
+      "rotation": [
+        0,
+        3.141592653589793,
+        0
+      ],
+      "dimensions": [
+        1.2,
+        0.12,
+        1.4
+      ],
+      "attachment_face": "perimeter withinwall reveal",
+      "semantic_front": "glass outward",
+      "status": "Procedural fit specimen; carving and final model pending",
+      "opening_id": "H-N-18-BACK-0-1-window",
+      "layer": "lower",
+      "support": "wall face / reveal",
+      "opening": {
+        "kind": "window",
+        "width": 1.2,
+        "sill": 0.8,
+        "height": 1.4,
+        "arch_rise": 0.6,
+        "traversable": false,
+        "destination": "H-N-18 room / exterior",
+        "id": "H-N-18-BACK-0-1-window",
+        "wall_id": "H-N-18-BACK-0-1",
+        "axis": "x",
+        "at": -15,
+        "depth": 0.3,
+        "centre": 22.5,
+        "base": 0,
+        "threshold": 0,
+        "face_sign": -1
+      }
+    },
+    {
+      "id": "H-N-18-BACK-0-1-window-D04",
+      "part": "D04",
+      "asset_id": "B12-DETAIL-001-D04",
+      "name": "Shutter pair",
+      "host": "H-N-18-BACK-0-1",
+      "position": [
+        22.5,
+        0.8,
+        -15.15
+      ],
+      "rotation": [
+        0,
+        3.141592653589793,
+        0
+      ],
+      "dimensions": [
+        1.2,
+        0.08,
+        1.4
+      ],
+      "attachment_face": "hinges towindow jambs",
+      "semantic_front": "carved faces outward",
+      "status": "Procedural fit specimen; carving and final model pending",
+      "opening_id": "H-N-18-BACK-0-1-window",
+      "layer": "lower",
+      "support": "wall face / reveal",
+      "opening": {
+        "kind": "window",
+        "width": 1.2,
+        "sill": 0.8,
+        "height": 1.4,
+        "arch_rise": 0.6,
+        "traversable": false,
+        "destination": "H-N-18 room / exterior",
+        "id": "H-N-18-BACK-0-1-window",
+        "wall_id": "H-N-18-BACK-0-1",
+        "axis": "x",
+        "at": -15,
+        "depth": 0.3,
+        "centre": 22.5,
+        "base": 0,
+        "threshold": 0,
+        "face_sign": -1
+      }
+    },
+    {
+      "id": "H-N-18-BACK-0-1-window-D06",
+      "part": "D06",
+      "asset_id": "B12-DETAIL-001-D06",
+      "name": "Window box planter",
+      "host": "H-N-18-BACK-0-1",
+      "position": [
+        22.5,
+        0.8,
+        -15.15
+      ],
+      "rotation": [
+        0,
+        3.141592653589793,
+        0
+      ],
+      "dimensions": [
+        1.3,
+        0.35,
+        0.35
+      ],
+      "attachment_face": "rear brackets towall",
+      "semantic_front": "carved trough face outward",
+      "status": "Procedural fit specimen; carving and final model pending",
+      "opening_id": "H-N-18-BACK-0-1-window",
+      "layer": "lower",
+      "support": "wall face / reveal",
+      "opening": {
+        "kind": "window",
+        "width": 1.2,
+        "sill": 0.8,
+        "height": 1.4,
+        "arch_rise": 0.6,
+        "traversable": false,
+        "destination": "H-N-18 room / exterior",
+        "id": "H-N-18-BACK-0-1-window",
+        "wall_id": "H-N-18-BACK-0-1",
+        "axis": "x",
+        "at": -15,
         "depth": 0.3,
         "centre": 22.5,
         "base": 0,
@@ -4375,5 +4713,204 @@
     "rail_top_y": 2.5,
     "canopy_bottom_y": 2.5,
     "status": "Proposed Function support; final structure and weathering pending"
-  }
+  },
+  "roomFurnishings": [
+    {
+      "id": "ROOM-BENCH",
+      "kind": "bench",
+      "reference_id": "B12-COURT-PROP-001-D05",
+      "position": [
+        18.425,
+        0,
+        -12.6
+      ],
+      "rotation": 1.5707963267948966,
+      "dimensions": [
+        1.4,
+        0.55,
+        0.85
+      ],
+      "attachment": "Feet on floor; back towards west wall",
+      "front": "East, toward conversation table",
+      "solid": true
+    },
+    {
+      "id": "ROOM-TABLE-P01",
+      "kind": "table",
+      "reference_id": null,
+      "position": [
+        20.4,
+        0,
+        -12.6
+      ],
+      "rotation": 0,
+      "dimensions": [
+        1,
+        0.65,
+        0.72
+      ],
+      "attachment": "Four feet on floor",
+      "front": "North/south edges accessible",
+      "solid": true,
+      "proposal": "New plain cottage table fit specimen; indoor table design is a verified reference gap"
+    },
+    {
+      "id": "ROOM-CRATE",
+      "kind": "crate",
+      "reference_id": "B12-COURT-PROP-001-D09",
+      "position": [
+        23.45,
+        0,
+        -14.4
+      ],
+      "rotation": 0,
+      "dimensions": [
+        0.5,
+        0.4,
+        0.35
+      ],
+      "attachment": "Underside on floor",
+      "front": "Open top upward",
+      "solid": true
+    },
+    {
+      "id": "ROOM-BASKET",
+      "kind": "basket",
+      "reference_id": "B12-COURT-PROP-001-D03",
+      "position": [
+        23.4,
+        0,
+        -7.1
+      ],
+      "rotation": 0,
+      "dimensions": [
+        0.45,
+        0.35,
+        0.3
+      ],
+      "attachment": "Underside on floor",
+      "front": "Open top upward",
+      "solid": true
+    },
+    {
+      "id": "ROOM-MAT",
+      "kind": "mat",
+      "reference_id": "B12-COURT-PROP-001-D12",
+      "position": [
+        19.5,
+        0,
+        -6.9
+      ],
+      "rotation": 0,
+      "dimensions": [
+        0.8,
+        0.5,
+        0.02
+      ],
+      "attachment": "Broad underside flat on floor",
+      "front": "Pattern upward",
+      "walkable": true
+    },
+    {
+      "id": "ROOM-WATERING-POT",
+      "kind": "watering-pot",
+      "reference_id": "B12-COURT-PROP-001-D07",
+      "position": [
+        20.4,
+        0.72,
+        -12.6
+      ],
+      "rotation": 0,
+      "dimensions": [
+        0.4,
+        0.2,
+        0.3
+      ],
+      "attachment": "Base on table top Y=0.72",
+      "front": "Spout east"
+    },
+    {
+      "id": "ROOM-CHIME",
+      "kind": "chime",
+      "reference_id": "B12-COURT-PROP-001-D06",
+      "position": [
+        21,
+        1.9,
+        -7.5
+      ],
+      "rotation": 0,
+      "dimensions": [
+        0.15,
+        0.15,
+        0.45
+      ],
+      "attachment": "Visible 0.10 m hanger to ceiling underside Y=2.45",
+      "front": "Suspended body downward",
+      "interaction": "Ring with E within 1.8 m"
+    },
+    {
+      "id": "ROOM-LAMP-P01-0",
+      "kind": "lamp",
+      "reference_id": null,
+      "position": [
+        18.15,
+        1.95,
+        -10.1
+      ],
+      "rotation": 1.5707963267948966,
+      "dimensions": [
+        0.18,
+        0.18,
+        0.3
+      ],
+      "attachment": "Flat rear plate on interior wall face",
+      "front": "Into room",
+      "proposal": "Functional test lamp, final cottage fixture design pending"
+    },
+    {
+      "id": "ROOM-LAMP-P01-1",
+      "kind": "lamp",
+      "reference_id": null,
+      "position": [
+        23.85,
+        1.95,
+        -13.5
+      ],
+      "rotation": -1.5707963267948966,
+      "dimensions": [
+        0.18,
+        0.18,
+        0.3
+      ],
+      "attachment": "Flat rear plate on interior wall face",
+      "front": "Into room",
+      "proposal": "Functional test lamp, final cottage fixture design pending"
+    }
+  ],
+  "fixtureLights": [
+    {
+      "id": "COTTAGE-LIGHT-W",
+      "position": [
+        18.255,
+        2.095,
+        -10.1
+      ],
+      "colour": "#ffdbab",
+      "intensity": 0.12,
+      "distance": 5.5,
+      "fixture": "ROOM-LAMP-P01-0"
+    },
+    {
+      "id": "COTTAGE-LIGHT-E",
+      "position": [
+        23.745,
+        2.095,
+        -13.5
+      ],
+      "colour": "#ffe2b9",
+      "intensity": 0.12,
+      "distance": 5.5,
+      "fixture": "ROOM-LAMP-P01-1"
+    }
+  ]
 }

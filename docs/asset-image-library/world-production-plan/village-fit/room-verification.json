@@ -1,0 +1,53 @@
+{
+  "status": "pass",
+  "checks": [
+    "All eight drawn ceiling slabs now span Y 2.45–2.60, matching the 2.45 m collision clearance",
+    "Evaluated floor/table contacts, both opposed lamp backs and the visible chime-to-ceiling hanger meet their supports; furniture stays within the unchanged room",
+    "Crate/basket retain real cavities and source window apertures stay open",
+    "All four complete free-movement returns pass; bench approach remains clear, long movement cannot tunnel through furniture, and the 20 mm mat raises the usable floor/headroom",
+    "Chime requires a clear reachable position and respects cooldown; all canonical geography, source houses, door/window positions and source route definitions are immutable"
+  ],
+  "walks": {
+    "arrival": 188.0468572529138,
+    "publicRoom": 35.07106781186547,
+    "cottageRoom": 35.403124237432905,
+    "furnishedRoom": 48.12963630273474
+  },
+  "source_design_ids": [
+    "B12-COURT-PROP-001-D05",
+    "B12-COURT-PROP-001-D09",
+    "B12-COURT-PROP-001-D03",
+    "B12-COURT-PROP-001-D12",
+    "B12-COURT-PROP-001-D07",
+    "B12-COURT-PROP-001-D06"
+  ],
+  "new_proposed_types": [
+    "COTTAGE-TEA-TABLE-P01",
+    "COTTAGE-WALL-LAMP-P01"
+  ],
+  "room_source_hashes": [
+    {
+      "file": "room-model.mjs",
+      "sha256": "c5ec618f9992ef28e57639c18c1b389ceaafa3fcd4bce7a6a4b1fe8739e2e402"
+    },
+    {
+      "file": "room-geometry.mjs",
+      "sha256": "d863ac975ba9f89c70b2f144dcdfa4e097ad0fd7d9cdc78b288623d86d7a204e"
+    },
+    {
+      "file": "viewer.mjs",
+      "sha256": "22a355d01c2ccda02a7d99d018694ee81921cd9c5f84b4eb21b29da81825edd5"
+    },
+    {
+      "file": "model.mjs",
+      "sha256": "aa663cb2551867089c5822f1f5c4240427c0de4e82b975b4d1bc8a924877e862"
+    }
+  ],
+  "limits": [
+    "This is a village sitting-room prototype, not FC05 or the palace bedroom and not a finished location.",
+    "Six saved cottage object designs are reused; the table and two lamp instances are explicitly proposed Function fixtures, not accepted new assets.",
+    "The saved palace canopy bed is 2.8 m tall and is excluded from this 2.45 m room; cottage sleeping furniture remains a design gap.",
+    "The 20 mm mat is a walkable step; collision and camera use its raised surface. Furniture and glass remain colliders when hidden.",
+    "The chime is suspended with its lowest point at 1.90 m, outside the 1.75 m player head envelope. All source carvings, textiles and final materials remain pending."
+  ]
+}

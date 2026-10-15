@@ -10,7 +10,7 @@ export function createVillage(source,geo){
  // Two attached rows, with one separated return at the source-inspired covered passage.
  for(const side of[-1,1])for(const x of[18,24,30,42]){
   const id=`H-${side<0?'N':'S'}-${x}`,zfront=side*6,zback=side*15,zmin=Math.min(zfront,zback),zmax=Math.max(zfront,zback),h={id,xmin:x,xmax:x+6,zmin,zmax,front:zfront,side,public:side===1&&x===18};houses.push(h);
-  floors.push({id:`${id}-FLOOR`,...h,y:0,thickness:.15});
+  floors.push({...h,id:`${id}-FLOOR`,y:0,thickness:.15});
   facade(`${id}-ENTRY`,zfront,x,0,h.public?'wide':'door',`${id} ground room`);
   facade(`${id}-WIN`,zfront,x+3,0,'window',`${id} ground room / lane`);
   if(x!==42)wall(`${id}-UPPER-GABLE`, 'x',zfront,x,x+6,2.6,2.6,[{kind:'window',centre:x+3,width:1.2,sill:3.4,height:1.4,arch_rise:.6,traversable:false,destination:`${id} non-playable upper shell / lane`}]);
@@ -18,7 +18,7 @@ export function createVillage(source,geo){
   wall(`${id}-BACK-UPPER-GABLE`,'x',zback,x,x+6,2.6,2.6,[{kind:'window',centre:x+3,width:1.2,sill:3.4,height:1.4,arch_rise:.6,traversable:false,destination:`${id} upper shell / exterior`}]);
   // Shared party walls are authored once, with the solid wall variant at every storey.
   for(const xx of[x,x+6])for(const base of[0,2.6])for(let part=0;part<3;part++){const start=zmin+part*3,end=start+3;if(!walls.some(w=>w.axis==='z'&&w.at===xx&&w.start===start&&w.end===end&&w.base===base))wall(`${id}-SIDE-${xx}-${base}-${part}`,'z',xx,start,end,base,2.6);}
-  floors.push({id:`${id}-CEILING`,...h,y:2.45,thickness:.15,ceiling:true});
+  floors.push({...h,id:`${id}-CEILING`,y:2.6,underside_y:2.45,thickness:.15,ceiling:true});
   for(let i=0;i<3;i++)roofs.push({id:`${id}-ROOF-${i}`,family:'B12-STRUCT-001-S04',x,z:zmin+i*3,length:3,span:6,eave:5.2,rise:2.8,thickness:.15,open_ends:true});
   for(const zz of[zmin,zmax].filter(zz=>x!==42||Math.abs(zz)!==6))gables.push({id:`${id}-GABLE-${zz}`,family:'B12-STRUCT-001-S03 / triangular end only',x,z:zz,span:6,base:5.2,rise:2.8,depth:.3});
  }

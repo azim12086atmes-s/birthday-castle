@@ -5,7 +5,13 @@
       "name": "Rustic cottage interiors",
       "kit_scope": "House/interior/item",
       "gap": "Royal bedroom props should not be recoloured blindly into woodland homes; audit two reusable small-room layouts and simple wood furniture.",
-      "next_action": "Use procedural bases/existing compatible props first; at most a consolidated reference candidate if source/fit audit proves it necessary."
+      "next_action": "Use tested room contracts in FC05; consolidate only proven missing cottage designs into a future sheet, without regenerating existing six prop designs.",
+      "current_evidence": "village-fit/ROOM.md: six compatible cottage props fitted as Function specimens; 2.45 m clearance and chime interaction tested.",
+      "remaining_reference_gaps": [
+        "Cottage indoor table and wall-lamp design; current P01 fixtures are functional proposals",
+        "Compact cottage sleeping furniture; the 2.8 m palace canopy bed exceeds the room height",
+        "Soft furnishings, local wall/floor finish and storage detail after source/style audit"
+      ]
     },
     {
       "name": "Temple/keep/lighthouse hidden interiors",

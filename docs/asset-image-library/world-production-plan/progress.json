@@ -1,0 +1,121 @@
+{
+  "date": "2026-10-15",
+  "scope": "Reference-driven redesign only; legacy main-game content excluded",
+  "overall_game_percentage": null,
+  "overall_reason": "No agreed weighted work breakdown for the complete game; image counts and local prototype passes do not measure final game completion.",
+  "metrics": {
+    "reference_sheets": {
+      "saved": 126,
+      "paused_proposals_in_saved_count": 1,
+      "active_or_pending_reference_count": 125,
+      "inventory_anomalies": [
+        {
+          "sheet_id": "PAL-BASE-001",
+          "file": "images/palace-structure-drafts/DRAFT-PAL-BASE-001-R01.png",
+          "status": "paused-proposal; source correspondence not established"
+        }
+      ],
+      "cap": 230,
+      "percent_of_allowance": 54.8,
+      "allocated_slots": 212,
+      "reserved_missing": 86,
+      "unallocated": 18,
+      "counting_rule": "Count one selected final/reference image per slot and owner. Existing 45 boards are included. Direct analysis crops, previews, renders and superseded experiments stay in the archive without consuming new design slots. Shared designs count once, with multiple reuse tags."
+    },
+    "mapped_location_anchors": {
+      "mapped": 34,
+      "total": 34,
+      "percent": 100,
+      "basis": "Proposed anchor placement, not complete terrain/route/building production"
+    },
+    "focused_location_prototypes": {
+      "locations": 3,
+      "total": 34,
+      "percent": 8.8,
+      "evidence": [
+        {
+          "location": "B01",
+          "scope": "Bedroom/balcony geometry and movement",
+          "evidence": "blockout/browser-verification.json"
+        },
+        {
+          "location": "F02",
+          "scope": "FC05 clearing habitat/loop and west connection; cottage interior not yet built there",
+          "evidence": "blockout/west-browser-verification.json"
+        },
+        {
+          "location": "B12",
+          "scope": "Village lane, source fittings, roof variant and furnished sitting room",
+          "evidence": "village-fit/details-browser-verification.json"
+        }
+      ],
+      "basis": "At least one tested local geometry/movement fixture; no completed-location claim"
+    },
+    "registered_asset_models": {
+      "registered": 0,
+      "reference_targets": 700,
+      "percent": 0,
+      "basis": "Versioned accepted models in the redesign register; procedural Function specimens are excluded"
+    },
+    "finished_integrated_redesign_locations": {
+      "completed": 0,
+      "total": 34,
+      "percent": 0,
+      "basis": "No location has completed final art, dressing, gameplay, integration and performance review; formal fixture gates remain pending"
+    }
+  },
+  "next_sequence": [
+    {
+      "step": 1,
+      "deliverable": "Furnished village sitting-room Function prototype",
+      "status": "implemented; see current room and browser reports",
+      "evidence": "village-fit/room-review.json"
+    },
+    {
+      "step": 2,
+      "deliverable": "Apply tested room/door/furniture contracts to FC05 and add actual starter vegetation to its clearing",
+      "status": "next; keep the 12 × 9 m cottage reservation and 70 m clearing"
+    },
+    {
+      "step": 3,
+      "deliverable": "Bring the palace bedroom/balcony sample to matching furnishing, lighting and interaction coverage",
+      "status": "pending; retain accepted palace/human dimensions"
+    },
+    {
+      "step": 4,
+      "deliverable": "Expand west woodland/village/royal-ground locations, then water/coast, highlands, jungle/canyon and sky waves",
+      "status": "pending; terrain and access before architecture, ecology/dressing and interactions"
+    },
+    {
+      "step": 5,
+      "deliverable": "Integrate routes, travel/returns, loading and world interactions; finish art and device performance",
+      "status": "pending"
+    }
+  ],
+  "remaining_build_groups": [
+    "Location-specific terrain, water edges, grading and unresolved crossing approaches",
+    "Palace and other building/house kits, selected interiors, stairs, bridges and access",
+    "Reusable furniture, surfaces, fixtures, railings and decoration with final source fidelity",
+    "Region-specific flora, fauna, natural objects, distribution and behavior",
+    "Interaction loops, signs, travel, entrances/returns and save/loading behavior",
+    "Final model registration, materials, LOD/collision/streaming, lighting and measured device performance"
+  ],
+  "generation_this_pass": {
+    "new_illustrated_sheets": 0,
+    "paid_jobs": 0
+  },
+  "source_hashes": [
+    {
+      "file": "../production-budget.json",
+      "sha256": "b6e2a8c6fda8a47a29bf279cbe2a2f78321a0130c31184d21c18317720962db4"
+    },
+    {
+      "file": "../asset-register.json",
+      "sha256": "8cd813603d91a86e9578647b1870ee3f9dc97ceaaf407da43ba802ca9e9be1c8"
+    },
+    {
+      "file": "location-coverage.json",
+      "sha256": "d95ddbfe0e2b25dd6861b67eb41a69a6b35208e1280864c7d4c8b4c86b987041"
+    }
+  ]
+}

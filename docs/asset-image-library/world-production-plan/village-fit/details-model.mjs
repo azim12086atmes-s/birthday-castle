@@ -7,7 +7,7 @@ export function createDetails(base, components) {
    dimensions:source.dimensions_m_proposed,attachment_face:source.attachment_face,
    semantic_front:source.semantic_front,status:'Procedural fit specimen; carving and final model pending',...extra});
  };
- const windows=['H-N-18-WIN-window','H-N-18-UPPER-GABLE-window','H-S-18-WIN-window'];
+ const windows=['H-N-18-WIN-window','H-N-18-UPPER-GABLE-window','H-S-18-WIN-window','H-N-18-BACK-0-0-window','H-N-18-BACK-0-1-window'];
  for(const id of windows){const o=base.openings.find(o=>o.id===id),rot=o.face_sign<0?Math.PI:0;
   for(const p of ['D03','D04','D06'])add(p,`${id}-${p}`,o.wall_id,[o.centre,o.sill,o.at+o.face_sign*.15],[0,rot,0],{opening_id:id,layer:o.base?'upper':'lower',support:'wall face / reveal',opening:o});
  }
@@ -69,6 +69,6 @@ export function createDetails(base, components) {
    'D09 remains unmounted until a chimney shaft and weathered flue opening exist.',
    'Porch bearing rails and shallow canopy are proposed support geometry, not a new accepted design.',
    'D04 leaves are split from the shared round arch; independent full-round leaves in the sheet would not close together.',
-   'Only three sample windows and one source doorway are fitted; public entry is not a stretched D05.',
+   'Only five sample windows and one source doorway are fitted; public entry is not a stretched D05.',
    'Clay fitting envelopes establish joins and pivots; final carving, texture, seals, fasteners and drainage remain pending.']};
 }

@@ -1,6 +1,6 @@
 # Structured world production plan
 
-15 October 2026 · Proposal for scope and sequence · [34-place matrix](location-coverage.csv) · [Full location coverage](location-coverage.json) · [Kit catalog](kit-catalog.json) · [Geography decisions](geography-decisions.json) · [Milestones](milestones.json) · [Gap backlog](gap-backlog.json)
+15 October 2026 · [Measured progress](progress.json) · Proposal for scope and sequence · [34-place matrix](location-coverage.csv) · [Full location coverage](location-coverage.json) · [Kit catalog](kit-catalog.json) · [Geography decisions](geography-decisions.json) · [Milestones](milestones.json) · [Gap backlog](gap-backlog.json)
 
 **First geography blockout:** [Open the separate review page](blockout/index.html) · [Evidence and limitations](blockout/README.md). It preserves all source placements and adds proposed terrain, hydrology, route profiles and local movement tests. Regional crossings, ports, heights and final travel remain under review.
 
@@ -10,15 +10,17 @@
 
 **West arrival connection:** [Inspect the stair/ramp alternatives](blockout/west.html) · [Route evidence](blockout/WEST-CONNECTION.md). The FC05 loop now has a proposed connection to a village-boundary gate; the first internal lane and court now have a separate prototype, with the rest of the village still unresolved.
 
-**Village host update:** [B12 arrival lane and modular fixture](village-fit/index.html) · [Source decisions and checks](village-fit/README.md). Saved wall/roof dimensions now have actual openings, roof joins and three browser movement checks. The saved detail sheet adds **26 fitting specimens / 11 mounted types**, opening door/shutter controls and an isolated chimney pot pending its flue. [Fitting preview](village-fit/review/fittings-source-slots.png) · [Fit manifest](village-fit/fitting-review.json). These are Function prototypes; final carving, models and art acceptance remain pending.
+**Village host update:** [B12 arrival lane and modular fixture](village-fit/index.html) · [Source decisions and checks](village-fit/README.md). Saved wall/roof dimensions now have actual openings, roof joins and three browser movement checks. The saved detail sheet adds **32 fitting specimens / 11 mounted types**, opening door/shutter controls and an isolated chimney pot pending its flue. [Fitting preview](village-fit/review/fittings-source-slots.png) · [Fit manifest](village-fit/fitting-review.json). These are Function prototypes; final carving, models and art acceptance remain pending.
 
 **Roof construction update:** [Inspect the chimney / roof / valley variant](village-fit/roof-fit/index.html) · [Evidence](village-fit/roof-fit/README.md). Saved D09 now has a proposed shaft and real roof opening, with framing, flashing and a sloped valley to an inspection sump. Onward site drainage and final weather/structural details remain unresolved.
+
+**Playable room update:** [Furnished cottage sitting-room prototype](village-fit/ROOM.md) now has 2.45 m of measured ceiling clearance, compatible saved furniture, mounted lights, an E-key wind chime and a 48.13 m entrance/bench/return route. Final reference fidelity and integration remain pending.
 
 ## Outcome and present state
 
 Build a connected, explorable princess-castle world through small tested sections. Geography and route logic come first, shared kit contracts second, playable samples third, then regional destinations. New pictures are generated only for a demonstrated missing design or construction view. A 230-sheet ceiling is not a requirement to fill every slot before building.
 
-The current reference library has **126 selected sheets saved, 212 selected/reserved, 86 queued and 18 unallocated**. It contains 700 logical model targets, all currently marked unregistered. This says nothing about the old game's procedural objects; it means this reference-driven redesign has no registered accepted model versions or validated world routes. The three rail/forest sheets saved immediately before planning are indexed in [their coverage report](../completion-pass/RAILS-FORESTS-PLAYABLE-PLAN.md).
+The current reference library has **126 selected sheets saved, 212 selected/reserved, 86 queued and 18 unallocated**. One of the 126 saved budget slots resolves to a paused base-design proposal; 125 are active or pending references. It contains 700 logical model targets, all currently marked unregistered. This says nothing about the old game's procedural objects; it means this reference-driven redesign has no registered accepted model versions or validated world routes. The three rail/forest sheets saved immediately before planning are indexed in [their coverage report](../completion-pass/RAILS-FORESTS-PLAYABLE-PLAN.md).
 
 This update pauses further image generation and proposes a production route. It does not change the existing map coordinates, castle silhouette, site dimensions or runtime. Source visibility, imagined layout and approved/built geometry remain separate.
 
@@ -209,4 +211,4 @@ For the first samples, test a real controller and camera with continuous ground,
 
 At a proposed 4 m/s walking speed, the palace width alone is about 10.4 minutes and a world-width crossing about 50 minutes. Prioritise short authored loops, visible goals and a tested travel graph over dense decoration along every kilometre. Keep empty relief areas intentional. Portal/sky-boat appearance does not prove a working endpoint or flight mechanic.
 
-The immediate next work is P1: resolve the simplified geography and route blockout, then P2 contracts and the two P3 samples. No further image generation is needed just to complete this plan. No paid model service, Blender composition, runtime export or deployment is performed/approved by it. Future paid/image-to-3D and final composition/runtime gates use their required per-asset/layout review; publishing this reference archive is not deploying a game.
+The current next deliverable is recorded in milestones.json: apply the tested cottage room contracts to FC05 and its clearing, add starter vegetation and local interaction/return evidence, then furnish the palace bedroom/balcony. Regional geography conflicts remain recorded for their production waves. No further image generation is needed just to complete this plan. No paid model service, Blender composition, runtime export or deployment is performed/approved by it. Future paid/image-to-3D and final composition/runtime gates use their required per-asset/layout review; publishing this reference archive is not deploying a game.
