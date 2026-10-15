@@ -1,0 +1,178 @@
+{
+  "batch_id": "B04-FIRST-BATCH-001",
+  "status": "proposed handoff; isolated reference views and model fit pending",
+  "purpose": "Eight reusable meshes for a Rose Keep entrance, stair, terrace and turret assembly test; not a complete keep.",
+  "location_id": "B04",
+  "source": {
+    "file": "../../world-layout/location-audit/source/B04-GEN-05.png",
+    "sha256": "fd03496e85237c4a29c3e202cdc3f99fce0163a2fe908ae40c0ae24dacceb9df",
+    "pixel_dimensions": [415, 372],
+    "authority": "Visible silhouette, materials and ornament vocabulary only. Dimensions, rear faces and join construction below are proposals. Small source cannot resolve exact carvings.",
+    "reference_policy": "Use this single source at a time. Region boxes are lookup aids in original pixels, not new generated images or precise object masks."
+  },
+  "preservation": {
+    "world_layout_sha256": "0a4849d55bc9f9614a231b1e172fc6ff801831a401ab246df6477e99ea39f773",
+    "anchor_xz_m": [-1700, -1500],
+    "reservation_width_depth_m": [180, 160],
+    "pad_height_m": 78,
+    "note": "Do not replace the world anchor, reservation or pad. Legacy 360 m building height is not a surveyed height or a multiplier for doors, steps and people. The first assembly tests a local bay, not the full tower silhouette."
+  },
+  "reference_budget": {
+    "dedicated_B04_sheet_cap": 2,
+    "existing_source_images_used": 1,
+    "new_images_generated_this_handoff": 0,
+    "reserved_missing_sheets": ["B04-STRUCT-001", "B04-DETAIL-001"],
+    "policy": "Use the existing two reservations: four structural sections on one sheet; the existing twelve decor entries on one sheet only after source audit. Eight mesh targets do not mean eight new sheets. Do not add to the 230-image allowance."
+  },
+  "export_contract": {
+    "preferred_format": "GLB; optional editable BLEND alongside it",
+    "units": "metres; apply scale before export",
+    "axes": "Exported GLB: X right, Y up, front -Z. Blender: Z up; use normal glTF axis conversion. All coordinates below describe exported GLB.",
+    "dimensions_order": "width X, depth Z, height Y; bounding-box sizes, not positions",
+    "origin": "Declared assembly datum per asset; never automatically recenter after setting the pivot.",
+    "filename_policy": "Preserve the exact asset ID and v001 filename below. Separate mesh objects may share a GLB, but IDs and pivots must survive. Supply one asset GLB per list row for easiest import.",
+    "materials": ["B04_BLUSH_STONE", "B04_PALE_STONE_TRIM", "B04_BURGUNDY_SHINGLE", "B04_MUTED_GOLD", "B04_SUBTLE_GLASS"],
+    "textures": "Reuse materials; 2K PBR atlas is a starting limit, not an achieved device budget. No baked scenery, lettering, large shadows or plants in structural textures.",
+    "collision": "Provide simple separate UCX_<asset_id>_<number> hulls or let the runtime make substrate collision. Never one convex hull across a doorway, hollow turret or stair route. Tiny ornaments do not each need a collider.",
+    "seam_tolerance_m": 0.001,
+    "generation_readiness": "Existing source is a style reference, not an approved isolated generation input. Resolve construction views first. No paid generation is authorised by this handoff."
+  },
+  "assets": [
+    {
+      "order": 1,
+      "asset_id": "B04-STRUCT-001-S02",
+      "name": "Rose keep wall return / entrance host",
+      "filename": "B04-STRUCT-001-S02__rose-keep-wall-return__v001.glb",
+      "dimensions_m_proposed": [8, 4, 6],
+      "origin": "Main wall midpoint at walking floor: [0,0,0]. Main wall X=-4..4, Z=0..0.6; right return X=3.4..4, Z=0..4; Y=0..6.",
+      "construction": "Blush masonry with pale trim, one real pointed-arch doorway, plus a short right-hand return. This orthogonal test return is inferred; angled and cliff-conforming variants follow the source audit. Keep all ornament detachable.",
+      "opening": {"clear_width_m": 2.4, "spring_height_m": 3.2, "apex_height_m": 3.8, "wall_thickness_m": 0.6, "centre_x_m": -0.5, "threshold_m": 0},
+      "ports": [{"name": "entrance", "position_xyz_m": [-0.5, 0, 0], "outward_xyz": [0, 0, -1]}, {"name": "wall_left", "position_xyz_m": [-4, 0, 0.3], "outward_xyz": [-1, 0, 0]}],
+      "source_region_xyxy": [82, 201, 168, 280],
+      "source_region_note": "Lower portal and adjacent pink wall; rear and return depth are not visible measurements.",
+      "target_triangles_proposed": 8000,
+      "reject_if": ["Door is a painted recess or blocked by a single collision hull", "Wrong opening profile or narrower than 2.4 m", "Palace-scale door, fused roses or a complete building instead of one host"]
+    },
+    {
+      "order": 2,
+      "asset_id": "B04-STRUCT-001-S04",
+      "name": "Stair flight with turn landing",
+      "filename": "B04-STRUCT-001-S04__stair-terrace-corner__v001.glb",
+      "dimensions_m_proposed": [2.8, 5.8, 1.75],
+      "origin": "Lower approach at first riser [0,0,0]. Ascend -Z. Flight ends Z=-3; landing continues to Z=-5.8. Lowest underside Y=-0.25, top walking floor Y=1.5.",
+      "construction": "Ten planar steps, each 0.15 m rise and 0.30 m going, then a 2.8 m square landing. Source pale stone and low rounded return vocabulary; guards separate. Clear width 2.4 m after edge guards. This reuses K09 dimensions, not its final palace ornament.",
+      "stairs": {"risers": 10, "rise_m": 0.15, "going_m": 0.3, "run_m": 3, "clear_width_m": 2.4, "landing_side_m": 2.8},
+      "ports": [{"name": "lower", "position_xyz_m": [0, 0, 0], "outward_xyz": [0, 0, 1]}, {"name": "upper_straight", "position_xyz_m": [0, 1.5, -5.8], "outward_xyz": [0, 0, -1]}, {"name": "upper_turn_right", "position_xyz_m": [1.4, 1.5, -4.4], "outward_xyz": [1, 0, 0]}],
+      "source_region_xyxy": [112, 267, 219, 329],
+      "source_region_note": "Winding exterior stairs and landing. Exact number and height of steps are proposed, not counted from this thumbnail.",
+      "target_triangles_proposed": 5000,
+      "reject_if": ["Melted, sloped or uneven treads", "Rail blocks either selected landing exit", "Step rises exceed 0.20 m or clear width falls below 2.4 m"]
+    },
+    {
+      "order": 3,
+      "asset_id": "B04-STRUCT-001-S03",
+      "name": "Cliff terrace bay",
+      "filename": "B04-STRUCT-001-S03__cliff-terrace-bay__v001.glb",
+      "dimensions_m_proposed": [8, 6, 1.5],
+      "origin": "Centre of top walking surface [0,0,0]; X=-4..4, Z=-3..3; all substrate below Y=0, bottom Y=-1.5.",
+      "construction": "Level stone deck with pale edge cornice and downward cliff-facing fascia, no surrounding garden scene. Simple joining ends. A separate rock/support host must meet its underside; the fascia is not an unsupported 8 m cantilever design. Keep a 2.4 m clear entry corridor.",
+      "ports": [{"name": "south_arrival", "position_xyz_m": [0, 0, 3], "outward_xyz": [0, 0, 1]}, {"name": "north_gate", "position_xyz_m": [0, 0, -3], "outward_xyz": [0, 0, -1]}, {"name": "east_repeat", "position_xyz_m": [4, 0, 0], "outward_xyz": [1, 0, 0]}, {"name": "west_repeat", "position_xyz_m": [-4, 0, 0], "outward_xyz": [-1, 0, 0]}],
+      "source_region_xyxy": [92, 273, 276, 326],
+      "source_region_note": "Raised entrance terrace and stone edge over the rock shoulder. Deck depth and hidden supports need engineering views.",
+      "target_triangles_proposed": 5000,
+      "reject_if": ["Walking top is buckled or a painted garden is fused to it", "Fascia blocks the stair socket", "Decor projects across the 2.4 m route"]
+    },
+    {
+      "order": 4,
+      "asset_id": "B04-STRUCT-001-S01",
+      "name": "Round turret / window band",
+      "filename": "B04-STRUCT-001-S01__round-turret-window-host__v001.glb",
+      "dimensions_m_proposed": [12, 12, 12],
+      "origin": "Centre of lower ring [0,0,0]; bottom Y=0, upper ring Y=12; external radius 6 m, wall thickness 0.6 m.",
+      "construction": "Hollow cylindrical blush-stone band with four identical arched openings at cardinal directions, 1.8 m wide, 6 m apex height, sill 1.2 m above band base. Front source window vocabulary; fourfold repetition and hidden back are proposed for the first fit test. Open ring ends; no cone roof, glazing, floor, vines or unrelated tower attached.",
+      "window": {"clear_width_m": 1.8, "spring_height_above_sill_m": 4.8, "apex_height_above_sill_m": 6, "sill_m": 1.2, "repeats": 4},
+      "ports": [{"name": "ring_bottom", "position_xyz_m": [0, 0, 0], "outward_xyz": [0, -1, 0]}, {"name": "ring_top", "position_xyz_m": [0, 12, 0], "outward_xyz": [0, 1, 0]}],
+      "source_region_xyxy": [92, 69, 142, 205],
+      "source_region_note": "Left round turret body. This 12 m test band is not a recovered diameter or the whole tall turret.",
+      "target_triangles_proposed": 10000,
+      "reject_if": ["Flattened or distorted cylinder", "Windows do not cut through the shell", "Interior filled or top and bottom ring sizes differ"]
+    },
+    {
+      "order": 5,
+      "asset_id": "B04-DETAIL-001-D03",
+      "name": "Rose keep window insert",
+      "filename": "B04-DETAIL-001-D03__rose-keep-window-insert__v001.glb",
+      "dimensions_m_proposed": [1.78, 0.12, 5.98],
+      "origin": "Bottom centre of insert [0,0,0], outward -Z. Match S01's 4.8 m spring / 6 m apex profile with 0.01 m edge clearance; register as a sill-relative insert, not an independent wall.",
+      "construction": "Separate frame, simple subtle glazing and restrained trim. Pale stone, muted gold and quiet glass from Rose Keep, not giant blue-and-pink palace star panes. Back face and thickness visible. Opening cut in S01 remains behind the insert.",
+      "joins_to": ["B04-STRUCT-001-S01"],
+      "source_region_xyxy": [98, 81, 135, 128],
+      "source_region_note": "Upper left turret windows; fine tracery cannot be recovered exactly at this resolution.",
+      "target_triangles_proposed": 2000,
+      "reject_if": ["Opaque painted masonry replaces the glazing", "Frame changes the host arch profile", "Entire turret included"]
+    },
+    {
+      "order": 6,
+      "asset_id": "B04-DETAIL-001-D05",
+      "name": "Castle parapet repeat",
+      "filename": "B04-DETAIL-001-D05__castle-parapet-repeat__v001.glb",
+      "dimensions_m_proposed": [1, 0.12, 1.1],
+      "origin": "Centre of lower mounting edge [0,0,0]; repeat X=-0.5..0.5, depth Z=-0.06..0.06, top Y=1.1.",
+      "construction": "One restrained stone guard repeat; planar end profiles, separate simple continuous barrier collider. Preserve Rose Keep terrace-edge vocabulary. A 1.1 m test guard height is proposed for drops, not an assertion that every low garden edge in the source is a guard. Use short infill at ends; do not stretch decorated repeats. Slope and corner return D08/D06 remain a later matching pass.",
+      "joins_to": ["B04-STRUCT-001-S03"],
+      "source_region_xyxy": [152, 292, 238, 324],
+      "source_region_note": "Stone terrace edge around stair return; exact baluster detail is unresolved.",
+      "target_triangles_proposed": 1500,
+      "reject_if": ["Repeat ends differ", "Visible geometry is treated as verified collision", "Guard crosses an entrance or is scaled to absorb remainder"]
+    },
+    {
+      "order": 7,
+      "asset_id": "B04-DETAIL-001-D01",
+      "name": "Burgundy cone roof strip / quadrant",
+      "filename": "B04-DETAIL-001-D01__burgundy-cone-roof-strip__v001.glb",
+      "dimensions_m_proposed": [6.2, 6.2, 12],
+      "origin": "Centre of cone's base circle [0,0,0]. One 90-degree sector occupies X=0..6.2, Z=0..6.2; base Y=0, tip Y=12. Pivot lies at a bounding-box corner by design.",
+      "construction": "One hollow conical quarter-shell with burgundy shingle pattern, 0.12 m nominal shell thickness and matching radial seam edges. Four copies rotated by 90 degrees give a 12.4 m diameter cap over S01's 12 m diameter, with 0.2 m overhang per side. Conical roof, not an onion dome. Finial and eave cornice are separate later fittings.",
+      "joins_to": ["B04-STRUCT-001-S01"],
+      "source_region_xyxy": [91, 4, 143, 84],
+      "source_region_note": "Left tower conical shingle roof. The quadrant split and underside construction are inferred.",
+      "target_triangles_proposed": 4000,
+      "reject_if": ["Purple onion dome substituted", "Radial joins fail to close after four rotations", "Base diameter mismatches the 12.4 m cap or a solid cone fills the interior"]
+    },
+    {
+      "order": 8,
+      "asset_id": "B04-DETAIL-001-D07",
+      "name": "Keep arch surround",
+      "filename": "B04-DETAIL-001-D07__keep-arch-surround__v001.glb",
+      "dimensions_m_proposed": [3.2, 0.2, 4.3],
+      "origin": "Threshold centre [0,0,0], flat mounting back at Z=0, trim projects to Z=-0.2. Fits S02 opening at X=-0.5, Y=0.",
+      "construction": "Pale stone arch band with restrained rose-compatible carving. Inner void must match S02: 2.4 m clear, 3.2 m spring, 3.8 m apex. Outer height 4.3 m includes trim above apex. No masonry filling, gate leaf or complete wall attached.",
+      "joins_to": ["B04-STRUCT-001-S02"],
+      "source_region_xyxy": [93, 222, 136, 276],
+      "source_region_note": "Lower pointed entrance surround; detailed carving is unresolved and must be conservatively inferred.",
+      "target_triangles_proposed": 2500,
+      "reject_if": ["Trim narrows or blocks the aperture", "Flat back is missing", "Heavy palace ornament replaces the source's restrained stone portal"]
+    }
+  ],
+  "assembly_proposal": {
+    "coordinate_space": "Local fit test, not world placement or a surveyed reconstruction",
+    "placements": [
+      {"asset_id": "B04-STRUCT-001-S04", "position_xyz_m": [0, 0, 0], "yaw_degrees": 0},
+      {"asset_id": "B04-STRUCT-001-S03", "position_xyz_m": [0, 1.5, -8.8], "yaw_degrees": 0},
+      {"asset_id": "B04-STRUCT-001-S02", "position_xyz_m": [0.5, 1.5, -11.8], "yaw_degrees": 0},
+      {"asset_id": "B04-DETAIL-001-D07", "position_xyz_m": [0, 1.5, -11.8], "yaw_degrees": 0},
+      {"asset_id": "B04-STRUCT-001-S01", "position_xyz_m": [16, 0, -9], "yaw_degrees": 0}
+    ],
+    "turret_roof": "Four D01 copies at [16,12,-9], yaw 0/90/180/270 degrees. D03 inserts use S01's four actual window attachment frames, not just cardinal point positions.",
+    "walk_test": "Lower approach -> ten stairs -> landing -> terrace -> true doorway -> supported court stub -> reverse. Court stub, cliff support, side guards and stair guard returns must be supplied by the Function prototype; these eight meshes alone do not complete a safe playable route.",
+    "must_not_claim": "No assembled geometry, browser traversal, guard collision, terrain support, approved images or accepted final models are delivered by a list."
+  },
+  "deferred": [
+    "D02 round turret cornice and D04 flower relief: isolate source motif before new design",
+    "D06 parapet corner cap and D08 rounded stair rail return: needed for guarded assembly; procedural collision guards can test circulation meanwhile",
+    "D09 inner floor, D10 dado and D11 ceiling bracket: exterior D2 scope does not require a sealed room",
+    "D12 trellis hook and roses/ivy/hazel/meadow plants: reuse indexed ecology families after supports and route work",
+    "Rock foundation and cliff return: inspect source-specific rock ledge against terrain before final dressing",
+    "B25 conservatory: separate glass/gold kit, not a recolour of Rose Keep; inspect its single source next"
+  ]
+}

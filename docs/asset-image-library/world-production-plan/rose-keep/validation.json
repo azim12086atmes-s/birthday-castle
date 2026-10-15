@@ -1,0 +1,20 @@
+{
+  "batch_id": "B04-FIRST-BATCH-001",
+  "handoff_sha256": "1628271d4b1dbbe832573a06e31a6cc0b7200aed2c6d83ba0f4ab7a06fe747f4",
+  "canonical_layout_unchanged": true,
+  "source_hash_matches": true,
+  "source_images_inspected": 1,
+  "new_images_generated": 0,
+  "existing_component_ids_verified": 8,
+  "missing_reserved_sheet_images": [
+    "B04-STRUCT-001",
+    "B04-DETAIL-001"
+  ],
+  "k09_dimensions_match": true,
+  "proposed_join_datums_checked": 3,
+  "proposed_join_datums_match": true,
+  "total_unique_triangle_target_proposed": 38000,
+  "geometry_or_browser_checks_run": false,
+  "accepted_models_added": 0,
+  "limitation": "Metadata integrity only; reference approval, actual mesh joins, terrain supports, collision and movement remain pending."
+}

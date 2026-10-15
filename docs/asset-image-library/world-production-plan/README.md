@@ -20,6 +20,8 @@
 
 **Palace bedroom update:** [Dressed bedroom and west balcony review](bedroom-fit/index.html) · [Sources and evidence](bedroom-fit/README.md). The accepted room, 18 m apex, 2.8 m canopy and 18 m balcony now have 45 component instances, lighting, a keepsake interaction and two complete local return checks. Final art and placement in the palace remain pending.
 
+**Rose Keep model handoff:** [First batch: four sections and four fittings](rose-keep/README.md) · [Labelled dimensions, filenames and joins](rose-keep/asset-handoff.json). Uses the saved B04 source and existing component IDs. The two dedicated construction/detail sheets are still missing; proposed fit dimensions replace generic placeholders in this separate handoff only. No new images or accepted models are counted.
+
 ## Outcome and present state
 
 Build a connected, explorable princess-castle world through small tested sections. Geography and route logic come first, shared kit contracts second, playable samples third, then regional destinations. New pictures are generated only for a demonstrated missing design or construction view. A 230-sheet ceiling is not a requirement to fill every slot before building.

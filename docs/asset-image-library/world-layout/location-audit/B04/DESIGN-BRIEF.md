@@ -2,6 +2,8 @@
 
 [Primary source](../source/B04-GEN-05.png) · [All locations](../README.md) · [Ecology selections](../../location-ecology.csv)
 
+[First 3D batch handoff](../../../world-production-plan/rose-keep/README.md): four structural sections and four matching fittings, with proposed dimensions, filenames and join datums. Construction sheets and actual models remain pending.
+
 ## What the image shows
 
 Rose-pink keep on an irregular rock ledge, cylindrical turrets with burgundy conical roofs, arched windows/portal, stepped exterior terraces and dense rose climbers. Miniature plan has projecting round tower seats; isometric extends castle along raised rock shoulders.
