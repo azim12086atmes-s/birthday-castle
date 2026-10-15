@@ -1,0 +1,156 @@
+{
+  "id": "FC05-FOREST-FIT-001",
+  "status": "Function prototype; formal approvals pending",
+  "origin_world_m": {
+    "x": -4000,
+    "y": 49.15,
+    "z": -550
+  },
+  "reservation_m": [
+    12,
+    9
+  ],
+  "ridge_m": 8,
+  "clear_ceiling_m": 2.45,
+  "arrival": {
+    "aperture_m": [
+      2.4,
+      2.25
+    ],
+    "through_clearance_m": [
+      2.4,
+      2.1
+    ],
+    "threshold_step_m": 0.15,
+    "canonical_coarse_door_m": [
+      2.4,
+      2.6
+    ],
+    "discrepancy": "The canonical 2.6 m coarse doorway conflicts with the 2.45 m ceiling. This fixture proposes a 2.25 m arched aperture with fixed fanlight and 2.10 m through clearance; canonical proposal is unchanged."
+  },
+  "clearing_radius_m": 70,
+  "loop_length_m": 370.13234708295556,
+  "named_pond_distance_m": 806.2257748298549,
+  "route_checks": {
+    "room": {
+      "status": "pass",
+      "travelled_m": 38.44000000000003,
+      "length_m": 38.440000000000005,
+      "position": {
+        "x": 0,
+        "z": 7
+      }
+    },
+    "clearing": {
+      "status": "pass",
+      "travelled_m": 468.32779165588363,
+      "length_m": 468.3277916558844,
+      "position": {
+        "x": 0,
+        "z": 7
+      }
+    }
+  },
+  "vegetation_instances": 94,
+  "audited_tree_instances": 24,
+  "source_family_fit_instances": 62,
+  "unresolved_identity_instances": [
+    "FC05-SAPLING-1",
+    "FC05-SAPLING-2",
+    "FC05-SAPLING-3",
+    "FC05-SAPLING-4",
+    "FC05-SAPLING-5",
+    "FC05-SAPLING-6",
+    "FC05-SAPLING-7",
+    "FC05-SAPLING-8",
+    "FC05-SAPLING-9",
+    "FC05-SAPLING-10",
+    "FC05-ROCK-1",
+    "FC05-ROCK-2",
+    "FC05-ROCK-3",
+    "FC05-ROCK-4",
+    "FC05-ROCK-5",
+    "FC05-ROCK-6",
+    "FC05-ROCK-7",
+    "FC05-ROCK-8",
+    "FC05-ROCK-9",
+    "FC05-ROCK-10",
+    "FC05-REED-1",
+    "FC05-REED-2",
+    "FC05-REED-3",
+    "FC05-REED-4",
+    "FC05-REED-5",
+    "FC05-REED-6",
+    "FC05-REED-7",
+    "FC05-REED-8",
+    "FC05-REED-9",
+    "FC05-REED-10",
+    "FC05-REED-11",
+    "FC05-REED-12"
+  ],
+  "new_image_sheets": 0,
+  "paid_jobs": 0,
+  "limits": [
+    "Separate Function fixture; no accepted decorative models, Blender composition or main-game integration.",
+    "The canonical 2.6 m coarse doorway conflicts with the 2.45 m ceiling. This fixture proposes a 2.25 m arched aperture with fixed fanlight and 2.10 m through clearance; canonical proposal is unchanged.",
+    "Two adjacent saved 6 m roof spans preserve the 12 × 9 m reservation and 8 m ridge. Twin-gable arrangement is proposed, not recovered FC05 architecture.",
+    "The centre roof valley is a backed inspection host only. Roof drainage/weatherproofing, loft access and final framing remain unresolved.",
+    "94 existing placement envelopes are retained. Oak/birch and four nature families receive simplified fit geometry; sapling, rock and reed identity remains unresolved. Not final leaf/bark art, wind, fauna behavior or production ecology.",
+    "Compact sleeping furniture remains a reference gap. This is a sitting room, not a finished overnight cottage.",
+    "FD02 is a later 806 m destination; the small local test pond is separate. Regional village travel remains on its existing review page."
+  ],
+  "sources": [
+    {
+      "file": "../../world-layout/layout.json",
+      "sha256": "0a4849d55bc9f9614a231b1e172fc6ff801831a401ab246df6477e99ea39f773"
+    },
+    {
+      "file": "../blockout/source.json",
+      "sha256": "1daaaa4799fac22ce7858b7027c3209ea890f53467d721889c83f86cc7976aa6"
+    },
+    {
+      "file": "../blockout/proposal.json",
+      "sha256": "5e55a5fc5535e16fc430dbddde45921b04125c9f1422a1f799e1e0d70c7a6a33"
+    },
+    {
+      "file": "../blockout/habitats.mjs",
+      "sha256": "4ea035e50abd9944578275da46a4b6153f725c4c07c1e722b645d46cea905b1b"
+    },
+    {
+      "file": "../../world-location-kits/west-lantern-forest/B12-STRUCT-001/B12-STRUCT-001.png",
+      "sha256": "d6aa699675ea064a2c2fff01ecfc0ae313b55dcbba86d3046f3f56647848c574"
+    },
+    {
+      "file": "../../world-location-kits/west-lantern-forest/ecology/F02-FLORA-001/F02-FLORA-001.png",
+      "sha256": "764234b04a6efc01987e47facadc348057fb25307d1a25307359a0227482cc74"
+    },
+    {
+      "file": "../../world-location-kits/west-lantern-forest/F02-NATURE-001/F02-NATURE-001.png",
+      "sha256": "77378d73b4f283dc315be7a8b3f87843f8b02d63b2633618a701c7b60eba708d"
+    },
+    {
+      "file": "../../completion-pass/B12-COURT-PROP-001/B12-COURT-PROP-001.png",
+      "sha256": "5d5d671aea52e637d49417f40aa61ca1464faf65d15f471c607eda5a7f2f026e"
+    },
+    {
+      "file": "model.mjs",
+      "sha256": "18aed3481414570c2229c322ca91e424c22fb7a2871e2ce69a07e6826c239b03"
+    },
+    {
+      "file": "geometry.mjs",
+      "sha256": "ffdbda200f6d0ce748c257baefe3074832866c8f5d4d9f4da368a656549e8868"
+    },
+    {
+      "file": "viewer.mjs",
+      "sha256": "ddb44f23709a113e4b279063204a934f77300cd599723673679a570fabcb5554"
+    },
+    {
+      "file": "../village-fit/room-model.mjs",
+      "sha256": "eccc79af3b586bab437b536b1860fac5bc7875953be23af2c349ab771dd8d83d"
+    },
+    {
+      "file": "../village-fit/room-geometry.mjs",
+      "sha256": "63702dee628c4d4cb3a88f0a500fe16206dc23abacf8a9a6480f5907f5359784"
+    }
+  ]
+}

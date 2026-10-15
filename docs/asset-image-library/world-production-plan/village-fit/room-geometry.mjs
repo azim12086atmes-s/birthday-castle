@@ -40,7 +40,7 @@ export function buildCottageRoom(room,material){
   object.position.fromArray(item.position);object.rotation.y=item.rotation;
  }
  // Thin markings on the existing floor surface; no duplicate structural floor or collision plane.
- const lines=[];for(let x=18.25;x<23.85;x+=.28)lines.push(x,.003,-14.85,x,.003,-6.15);
+ const lines=[],h=room.house;for(let x=h.xmin+.25;x<h.xmax-.15;x+=.28)lines.push(x,.003,h.zmin+.15,x,.003,h.zmax-.15);
  const g=new THREE.BufferGeometry();g.setAttribute('position',new THREE.Float32BufferAttribute(lines,3));groups.floor.add(new THREE.LineSegments(g,new THREE.LineBasicMaterial({color:'#76614a'})));
  root.updateMatrixWorld(true);return{root,groups,objects};
 }

@@ -204,7 +204,7 @@
       "id": "COTTAGE-LIGHT-W",
       "position": [
         18.255,
-        2.095,
+        2.0949999999999998,
         -10.1
       ],
       "colour": "#ffdbab",
@@ -216,7 +216,7 @@
       "id": "COTTAGE-LIGHT-E",
       "position": [
         23.745,
-        2.095,
+        2.0949999999999998,
         -13.5
       ],
       "colour": "#ffe2b9",
@@ -300,11 +300,11 @@
   "source_files": [
     {
       "file": "room-model.mjs",
-      "sha256": "c5ec618f9992ef28e57639c18c1b389ceaafa3fcd4bce7a6a4b1fe8739e2e402"
+      "sha256": "eccc79af3b586bab437b536b1860fac5bc7875953be23af2c349ab771dd8d83d"
     },
     {
       "file": "room-geometry.mjs",
-      "sha256": "d863ac975ba9f89c70b2f144dcdfa4e097ad0fd7d9cdc78b288623d86d7a204e"
+      "sha256": "63702dee628c4d4cb3a88f0a500fe16206dc23abacf8a9a6480f5907f5359784"
     },
     {
       "file": "viewer.mjs",

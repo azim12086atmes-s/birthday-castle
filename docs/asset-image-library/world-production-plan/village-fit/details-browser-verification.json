@@ -1,7 +1,7 @@
 {
   "status": "pass",
   "fitting_review_sha256": "45388155026f0a16c9147c9bab9517d1a9514f62e9a82196a5ff3bd5a55f7050",
-  "room_review_sha256": "9302111479b44d501dc96341fa8484ef178d3a034d593bda8a9cde78ff8cf330",
+  "room_review_sha256": "3b445c9eed1c5965eed9800b680271e91c2d787cc27d06a3dec251a4a56ecc79",
   "browser": "Chromium / Playwright / software WebGL2",
   "viewports": [
     "1440\u00d7960",
@@ -18,7 +18,7 @@
   "blocked_door": {
     "status": "blocked",
     "position": {
-      "x": 19.500000000000025,
+      "x": 19.5,
       "z": -5.32894736842105
     }
   },
@@ -26,37 +26,37 @@
     "arrival": {
       "status": "pass",
       "name": "arrival",
-      "distance_m": 188.04685725291233,
+      "distance_m": 188.04685725291216,
       "return_position": {
-        "x": -1.9999999999999998,
-        "z": 1.1591269220898192e-69
+        "x": -2,
+        "z": 0
       }
     },
     "publicRoom": {
       "status": "pass",
       "name": "publicRoom",
-      "distance_m": 35.07106781186552,
+      "distance_m": 35.07106781186544,
       "return_position": {
-        "x": 13.999999999999998,
+        "x": 14.000000000000004,
         "z": 0
       }
     },
     "cottageRoom": {
       "status": "pass",
       "name": "cottageRoom",
-      "distance_m": 35.403124237432834,
+      "distance_m": 35.403124237432856,
       "return_position": {
-        "x": 14.000000000000009,
-        "z": -1.232595164407831e-32
+        "x": 14.000000000000002,
+        "z": -9.62964972193618e-34
       }
     },
     "furnishedRoom": {
       "status": "pass",
       "name": "furnishedRoom",
-      "distance_m": 48.12963630273476,
+      "distance_m": 48.12963630273464,
       "return_position": {
-        "x": 13.999999999999995,
-        "z": 5.3926038442842604e-33
+        "x": 13.999999999999991,
+        "z": 3.851859888774472e-34
       }
     }
   },

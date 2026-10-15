@@ -40,8 +40,8 @@
         },
         {
           "location": "F02",
-          "scope": "FC05 clearing habitat/loop and west connection; cottage interior not yet built there",
-          "evidence": "blockout/west-browser-verification.json"
+          "scope": "FC05 cottage sitting room, 94 natural-object specimens, clearing loop and west connection",
+          "evidence": "forest-fit/browser-verification.json"
         },
         {
           "location": "B12",
@@ -74,7 +74,8 @@
     {
       "step": 2,
       "deliverable": "Apply tested room/door/furniture contracts to FC05 and add actual starter vegetation to its clearing",
-      "status": "next; keep the 12 × 9 m cottage reservation and 70 m clearing"
+      "status": "implemented Function prototype; 12 × 9 m reservation, 70 m clearing and both full returns preserved",
+      "evidence": "forest-fit/browser-verification.json"
     },
     {
       "step": 3,

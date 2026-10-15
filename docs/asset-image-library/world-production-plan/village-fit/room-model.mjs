@@ -1,6 +1,6 @@
 // A usable sitting-room Function specimen; source art/model registration remains separate.
-export function createCottageRoom(base,details){
- const inheritedCanStand=details.canStand,house=base.houses.find(h=>h.id==='H-N-18');
+export function createCottageRoom(base,details,options={}){
+ const inheritedCanStand=details.canStand,house=base.houses.find(h=>h.id===(options.house_id||'H-N-18'));
  const items=[
   {id:'ROOM-BENCH',kind:'bench',reference_id:'B12-COURT-PROP-001-D05',position:[18.425,0,-12.6],rotation:Math.PI/2,dimensions:[1.4,.55,.85],attachment:'Feet on floor; back towards west wall',front:'East, toward conversation table',solid:true},
   {id:'ROOM-TABLE-P01',kind:'table',reference_id:null,position:[20.4,0,-12.6],rotation:0,dimensions:[1,.65,.72],attachment:'Four feet on floor',front:'North/south edges accessible',solid:true,proposal:'New plain cottage table fit specimen; indoor table design is a verified reference gap'},
@@ -11,6 +11,7 @@ export function createCottageRoom(base,details){
   {id:'ROOM-CHIME',kind:'chime',reference_id:'B12-COURT-PROP-001-D06',position:[21,1.9,-7.5],rotation:0,dimensions:[.15,.15,.45],attachment:'Visible 0.10 m hanger to ceiling underside Y=2.45',front:'Suspended body downward',interaction:'Ring with E within 1.8 m'},
   ...[18.15,23.85].map((x,i)=>({id:'ROOM-LAMP-P01-'+i,kind:'lamp',reference_id:null,position:[x,1.95,i?-13.5:-10.1],rotation:i?-Math.PI/2:Math.PI/2,dimensions:[.18,.18,.3],attachment:'Flat rear plate on interior wall face',front:'Into room',proposal:'Functional test lamp, final cottage fixture design pending'}))
  ];
+ for(const item of items)if(options.placements?.[item.id])Object.assign(item,options.placements[item.id]);
  const ceiling=base.floors.find(f=>f.id===house.id+'-CEILING'),clearHeight=ceiling.y-ceiling.thickness;
  let rings=0,lastRingAt=-Infinity;
  const mat=items.find(i=>i.kind==='mat');
@@ -26,10 +27,10 @@ export function createCottageRoom(base,details){
   if(!canStand(player.x,player.z))return{ok:false,reason:'Interaction position is obstructed.'};
   if(now-lastRingAt<800)return{ok:false,reason:'The chime is still ringing.'};rings++;lastRingAt=now;return{ok:true,kind:'wind-chime',rings,tones_hz:[523.25,659.25,783.99],source_id:chime.reference_id};
  }
- const route=[[14,0],[19.5,0],[19.5,-9],[21,-8.8],[19.25,-10.8],[19.25,-12.6],[19.25,-10.8],[22,-11],[22,-13.7],[22,-11],[19.5,-9],[19.5,0],[14,0]];
- return {id:'B12-COTTAGE-ROOM-FUNCTION-001',house,items,ceiling,clearHeight,canStand,move,surface,interact,route,get rings(){return rings;},
-  lights:[{id:'COTTAGE-LIGHT-W',position:[18.255,2.095,-10.1],colour:'#ffdbab',intensity:.12,distance:5.5,fixture:'ROOM-LAMP-P01-0'},{id:'COTTAGE-LIGHT-E',position:[23.745,2.095,-13.5],colour:'#ffe2b9',intensity:.12,distance:5.5,fixture:'ROOM-LAMP-P01-1'}],
-  exceptions:['This is a village sitting-room prototype, not FC05 or the palace bedroom and not a finished location.',
+ const route=options.route||[[14,0],[19.5,0],[19.5,-9],[21,-8.8],[19.25,-10.8],[19.25,-12.6],[19.25,-10.8],[22,-11],[22,-13.7],[22,-11],[19.5,-9],[19.5,0],[14,0]];
+ return {id:options.id||'B12-COTTAGE-ROOM-FUNCTION-001',house,items,ceiling,clearHeight,canStand,move,surface,interact,route,get rings(){return rings;},
+  lights:items.filter(i=>i.kind==='lamp').map((i,n)=>({id:n?'COTTAGE-LIGHT-E':'COTTAGE-LIGHT-W',position:[i.position[0]+Math.sin(i.rotation)*.105,i.position[1]+.145,i.position[2]+Math.cos(i.rotation)*.105],colour:n?'#ffe2b9':'#ffdbab',intensity:.12,distance:5.5,fixture:i.id})),
+  exceptions:options.exceptions||['This is a village sitting-room prototype, not FC05 or the palace bedroom and not a finished location.',
    'Six saved cottage object designs are reused; the table and two lamp instances are explicitly proposed Function fixtures, not accepted new assets.',
    'The saved palace canopy bed is 2.8 m tall and is excluded from this 2.45 m room; cottage sleeping furniture remains a design gap.',
    'The 20 mm mat is a walkable step; collision and camera use its raised surface. Furniture and glass remain colliders when hidden.',

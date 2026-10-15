@@ -1,0 +1,82 @@
+{
+  "schema": "game-room.room-brief.v1",
+  "roomId": "fc05-forest-fit",
+  "family": "custom",
+  "purpose": "Source-family cottage and vegetation Function fixture on the existing FC05 clearing, with indoor and full clearing returns.",
+  "runtimeSurface": "Separate static forest-fit/index.html; main game unchanged",
+  "boundsMeters": [
+    150,
+    25,
+    150
+  ],
+  "hero": {
+    "id": "FC05",
+    "role": "Human-scale forest cottage entry and sitting room",
+    "reservedBoundsMeters": [
+      12,
+      8,
+      9
+    ]
+  },
+  "symmetry": {
+    "mode": "bilateral shell",
+    "order": 2,
+    "appliesTo": [
+      "Cottage perimeter and twin-gable roof"
+    ],
+    "exceptions": [
+      "Room contents, source canopy scatter and window use are intentionally asymmetric."
+    ]
+  },
+  "circulation": {
+    "description": "2.4 m entrance joins room, existing apron, 370 m loop and return",
+    "minimumClearanceMeters": 2.4
+  },
+  "productionCamera": {
+    "viewport": [
+      1440,
+      960
+    ],
+    "location": [
+      13.63,
+      12.87,
+      17.93
+    ],
+    "target": [
+      0,
+      2,
+      0
+    ],
+    "verticalFovDegrees": 58
+  },
+  "customContract": {
+    "playerRadius": 0.45,
+    "playerHeight": 1.75,
+    "eyeHeight": 1.6,
+    "movement": "Free X/Z, <=40 mm sweeps, <=200 mm step; furniture/walls/closed glazing/vegetation/door leaves remain colliders when hidden",
+    "input": "WASD/arrows, Shift, drag, E chime; two door hinge transforms share the collision manifest",
+    "readiness": "Local source records and procedural geometry loaded; not final runtime"
+  },
+  "performanceBudget": {
+    "maxSceneTriangles": 100000,
+    "maxDrawCalls": 100,
+    "scope": "Software-WebGL prototype observation; final device/LOD budget pending"
+  },
+  "creditBudget": {
+    "maximumCredits": 0,
+    "approvalRequired": true
+  },
+  "environment": {
+    "type": "none",
+    "identity": "",
+    "source": "",
+    "assignmentKey": ""
+  },
+  "artifacts": {
+    "floorPlan": "plans/lower-plan.png",
+    "reflectedCeilingPlan": "plans/ceiling-plan.png",
+    "planMetadata": "room-layout.json",
+    "visualTarget": "../../world-location-kits/west-lantern-forest/B12-STRUCT-001/B12-STRUCT-001.png"
+  },
+  "status": "Function engineering fixture; not formal Function/Form/Runtime approval"
+}

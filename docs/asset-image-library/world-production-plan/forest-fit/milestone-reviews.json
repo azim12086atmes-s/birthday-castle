@@ -1,0 +1,37 @@
+{
+  "schema": "game-room.milestone-reviews.v1",
+  "roomId": "fc05-forest-fit",
+  "function": {
+    "status": "pending",
+    "approvedBy": "",
+    "approvedAt": "",
+    "evidence": [
+      "geometry-verification.json",
+      "browser-verification.json"
+    ],
+    "strangestElement": "Wide fanlight entrance differs from the coarse 2.6 m door; final weather/framing/sleeping furniture are unresolved.",
+    "notes": "Automated evidence never infers approval; no paid jobs, final composition, export or deployment."
+  },
+  "form": {
+    "status": "pending",
+    "approvedBy": "",
+    "approvedAt": "",
+    "evidence": [
+      "geometry-verification.json",
+      "browser-verification.json"
+    ],
+    "strangestElement": "Wide fanlight entrance differs from the coarse 2.6 m door; final weather/framing/sleeping furniture are unresolved.",
+    "notes": "Automated evidence never infers approval; no paid jobs, final composition, export or deployment."
+  },
+  "runtime": {
+    "status": "pending",
+    "approvedBy": "",
+    "approvedAt": "",
+    "evidence": [
+      "geometry-verification.json",
+      "browser-verification.json"
+    ],
+    "strangestElement": "Wide fanlight entrance differs from the coarse 2.6 m door; final weather/framing/sleeping furniture are unresolved.",
+    "notes": "Automated evidence never infers approval; no paid jobs, final composition, export or deployment."
+  }
+}

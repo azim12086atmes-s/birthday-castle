@@ -98,3 +98,5 @@ node docs/asset-image-library/world-production-plan/village-fit/test-room.mjs
 Python Playwright, Chromium and Pillow are used in the cloud environment. Optional mask tracing used the 3D-room skill's `trace_opening_mask.py`; its hash is recorded in `cutters/provenance.json`. OpenCV was installed only in a temporary tooling directory for that diagnostic, not added as an application dependency. Traces have pixel-resolution limits; they do not replace the exact opening parameters.
 
 Keep circulation clear and retain the source/library distinction. Final arch engineering, drainage, roof/party-wall weather seals, final supports, carving/textures, populated interiors, production interactions and the remaining regional route conflicts are unresolved. The door/shutter controls are local prototype interactions, not integrated game behavior.
+
+The reusable sitting-room recipe now accepts an explicit house ID, placements and route. The existing village defaults are preserved; [FC05](../forest-fit/README.md) supplies its own transforms and retains every source furniture dimension. Floor markings derive from each house bounds rather than fixed village coordinates.

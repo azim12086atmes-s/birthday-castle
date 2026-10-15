@@ -1,0 +1,73 @@
+{
+  "status": "pass",
+  "review_data_sha256": "063a350a4ecccd4f5cbb790e9505388dc4998dccba9f221eb86daa26830ae2e2",
+  "browser": "Chromium / Playwright / software WebGL2",
+  "viewports": [
+    "1440\u00d7960",
+    "1024\u00d7768 full route",
+    "390\u00d7844"
+  ],
+  "checks": [
+    "Source-family and clay views render; real ceiling underside is visible and measures 2.45 m",
+    "Keyboard walking and E-key proximity chime work; distant interaction rejects",
+    "Closed doors block the actual route; reopening restores passage; hinge geometry and collision agree",
+    "Furniture and all habitat blocker collision survive visibility toggles",
+    "Both complete room and clearing routes return to the same apron at full measured length",
+    "Actual-mesh lower and reflected-ceiling projections separate furnishings and pendant; named birch selection and mobile layout work"
+  ],
+  "blocked_door": {
+    "name": "room",
+    "status": "blocked",
+    "travelled_m": 2.2058823529411775,
+    "length_m": 38.440000000000005,
+    "position": {
+      "x": 0,
+      "z": 4.720588235294116
+    }
+  },
+  "walks": {
+    "room": {
+      "name": "room",
+      "status": "pass",
+      "travelled_m": 38.44000000000001,
+      "length_m": 38.440000000000005,
+      "position": {
+        "x": 0,
+        "z": 7
+      }
+    },
+    "clearing": {
+      "name": "clearing",
+      "status": "pass",
+      "travelled_m": 468.3277916558832,
+      "length_m": 468.3277916558844,
+      "position": {
+        "x": 0,
+        "z": 7
+      }
+    }
+  },
+  "performance_observation": {
+    "mode": "arrival",
+    "position": {
+      "x": 0,
+      "z": 7
+    },
+    "run": null,
+    "triangles": 89822,
+    "draw_calls": 45
+  },
+  "captures": [
+    "review/arrival.png",
+    "review/sitting-room.png",
+    "review/clearing-return.png",
+    "review/clearing.png",
+    "review/birch-fit.png",
+    "plans/lower-plan.png",
+    "plans/ceiling-plan.png",
+    "review/clay.png",
+    "review/mobile.png"
+  ],
+  "page_errors": [],
+  "limits": "Procedural Function specimens only; no final foliage/carving fidelity, registered models, production performance or main-game integration"
+}

@@ -1,0 +1,80 @@
+{
+  "id": "FC05-REVIEW-INDEX-001",
+  "coordinate_origin": "See ../review-data.json",
+  "paths_relative_to": "forest-fit/",
+  "new_asset_sheet_count": 0,
+  "images": [
+    {
+      "id": "FC05-REVIEW-ARRIVAL",
+      "file": "review/arrival.png",
+      "description": "Proposed cottage exterior and clearing arrival",
+      "bytes": 276150,
+      "sha256": "05abe50dbbf44f9324abb51de35db8e94f4b68ce12f54c387720722ec0ada106",
+      "status": "Engineering review capture; not a new illustrated asset sheet or accepted model reference"
+    },
+    {
+      "id": "FC05-REVIEW-ROOM",
+      "file": "review/sitting-room.png",
+      "description": "Human-scale ground sitting room and ceiling",
+      "bytes": 134938,
+      "sha256": "2a5f112848c632287c9139cf01d2fbb368ae32ce8ff58e1ab0ec89e1e2fceb8e",
+      "status": "Engineering review capture; not a new illustrated asset sheet or accepted model reference"
+    },
+    {
+      "id": "FC05-REVIEW-CLEARING",
+      "file": "review/clearing.png",
+      "description": "Existing loop, water, cottage and natural-object placements",
+      "bytes": 260308,
+      "sha256": "c8b98aef064d4ca8a6d269d6b56adffcf342ae55e4139845caba6acbb3b89916",
+      "status": "Engineering review capture; not a new illustrated asset sheet or accepted model reference"
+    },
+    {
+      "id": "FC05-REVIEW-RETURN",
+      "file": "review/clearing-return.png",
+      "description": "Completed full clearing return to apron",
+      "bytes": 98530,
+      "sha256": "a6c95bc019ac35367010bae76e14e13a3eb6bf465440be065fa6cd1db992a65f",
+      "status": "Engineering review capture; not a new illustrated asset sheet or accepted model reference"
+    },
+    {
+      "id": "FC05-REVIEW-BIRCH",
+      "file": "review/birch-fit.png",
+      "description": "Selected source-family birch fit specimen",
+      "bytes": 134216,
+      "sha256": "fef49ba6f56acc1344780c4cf80d766fbf8c5285fc031094a1b2892cb8cbdffa",
+      "status": "Engineering review capture; not a new illustrated asset sheet or accepted model reference"
+    },
+    {
+      "id": "FC05-PLAN-LOWER",
+      "file": "plans/lower-plan.png",
+      "description": "Actual-mesh grayscale floor projection",
+      "bytes": 10279,
+      "sha256": "7dd4d37cb4f03514722dc77ca1b308d47fecd0b70b9cadc9bfff1a0f4bb563b5",
+      "status": "Engineering review capture; not a new illustrated asset sheet or accepted model reference"
+    },
+    {
+      "id": "FC05-PLAN-CEILING",
+      "file": "plans/ceiling-plan.png",
+      "description": "Actual-mesh reflected-ceiling projection",
+      "bytes": 7526,
+      "sha256": "6beb0c35703114b74dc619a57be3751feebefd061c1ad76bc5d460053e69126e",
+      "status": "Engineering review capture; not a new illustrated asset sheet or accepted model reference"
+    },
+    {
+      "id": "FC05-REVIEW-CLAY",
+      "file": "review/clay.png",
+      "description": "Geometry inspection without source material slots",
+      "bytes": 88457,
+      "sha256": "26961c0a6eac4ad0ce19fd1126a6ee09ea3d8326a9bf10ffb640b312e8919518",
+      "status": "Engineering review capture; not a new illustrated asset sheet or accepted model reference"
+    },
+    {
+      "id": "FC05-REVIEW-MOBILE",
+      "file": "review/mobile.png",
+      "description": "390 px review controls and layout",
+      "bytes": 154196,
+      "sha256": "60004d4d1aed4f1ea2cf055c93f5a11f92fcd055c48c19be6cc13c2cd0f8279f",
+      "status": "Engineering review capture; not a new illustrated asset sheet or accepted model reference"
+    }
+  ]
+}

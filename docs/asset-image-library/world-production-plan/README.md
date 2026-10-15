@@ -16,6 +16,8 @@
 
 **Playable room update:** [Furnished cottage sitting-room prototype](village-fit/ROOM.md) now has 2.45 m of measured ceiling clearance, compatible saved furniture, mounted lights, an E-key wind chime and a 48.13 m entrance/bench/return route. Final reference fidelity and integration remain pending.
 
+**FC05 forest sample:** [Cottage and clearing review](forest-fit/index.html) · [Source reuse and evidence](forest-fit/README.md). A 12 × 9 m cottage sitting room, 24 source-family tree specimens and the existing 94 natural placements now share tested indoor and clearing returns. Simplified fit geometry is separate from final art.
+
 ## Outcome and present state
 
 Build a connected, explorable princess-castle world through small tested sections. Geography and route logic come first, shared kit contracts second, playable samples third, then regional destinations. New pictures are generated only for a demonstrated missing design or construction view. A 230-sheet ceiling is not a requirement to fill every slot before building.
@@ -211,4 +213,4 @@ For the first samples, test a real controller and camera with continuous ground,
 
 At a proposed 4 m/s walking speed, the palace width alone is about 10.4 minutes and a world-width crossing about 50 minutes. Prioritise short authored loops, visible goals and a tested travel graph over dense decoration along every kilometre. Keep empty relief areas intentional. Portal/sky-boat appearance does not prove a working endpoint or flight mechanic.
 
-The current next deliverable is recorded in milestones.json: apply the tested cottage room contracts to FC05 and its clearing, add starter vegetation and local interaction/return evidence, then furnish the palace bedroom/balcony. Regional geography conflicts remain recorded for their production waves. No further image generation is needed just to complete this plan. No paid model service, Blender composition, runtime export or deployment is performed/approved by it. Future paid/image-to-3D and final composition/runtime gates use their required per-asset/layout review; publishing this reference archive is not deploying a game.
+The current next deliverable is recorded in milestones.json: furnish and light the accepted palace bedroom/balcony, following the now-tested FC05 cottage/clearing fixture. Regional geography conflicts remain recorded for their production waves. No further image generation is needed just to complete this plan. No paid model service, Blender composition, runtime export or deployment is performed/approved by it. Future paid/image-to-3D and final composition/runtime gates use their required per-asset/layout review; publishing this reference archive is not deploying a game.

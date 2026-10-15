@@ -1,0 +1,20 @@
+{
+  "roomId": "fc05-forest-fit",
+  "functionApproved": false,
+  "formApproved": false,
+  "runtimeApproved": false,
+  "evidence": [
+    "review-data.json",
+    "geometry-verification.json",
+    "browser-verification.json"
+  ],
+  "limits": [
+    "Separate Function fixture; no accepted decorative models, Blender composition or main-game integration.",
+    "The canonical 2.6 m coarse doorway conflicts with the 2.45 m ceiling. This fixture proposes a 2.25 m arched aperture with fixed fanlight and 2.10 m through clearance; canonical proposal is unchanged.",
+    "Two adjacent saved 6 m roof spans preserve the 12 × 9 m reservation and 8 m ridge. Twin-gable arrangement is proposed, not recovered FC05 architecture.",
+    "The centre roof valley is a backed inspection host only. Roof drainage/weatherproofing, loft access and final framing remain unresolved.",
+    "94 existing placement envelopes are retained. Oak/birch and four nature families receive simplified fit geometry; sapling, rock and reed identity remains unresolved. Not final leaf/bark art, wind, fauna behavior or production ecology.",
+    "Compact sleeping furniture remains a reference gap. This is a sitting room, not a finished overnight cottage.",
+    "FD02 is a later 806 m destination; the small local test pond is separate. Regional village travel remains on its existing review page."
+  ]
+}

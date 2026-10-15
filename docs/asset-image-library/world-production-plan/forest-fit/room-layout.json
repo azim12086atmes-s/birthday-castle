@@ -1,0 +1,2279 @@
+{
+  "roomId": "fc05-forest-fit",
+  "coordinates": "X east / Y up / Z south; floor origin world in review-data.json",
+  "house": {
+    "id": "FC05",
+    "xmin": -6,
+    "xmax": 6,
+    "zmin": -4.5,
+    "zmax": 4.5
+  },
+  "walls": [
+    {
+      "id": "FC05-N--6",
+      "axis": "x",
+      "at": -4.35,
+      "start": -6,
+      "end": -3,
+      "base": 0,
+      "height": 2.6,
+      "depth": 0.3,
+      "opening_ids": [
+        "FC05-N--6-OPEN"
+      ]
+    },
+    {
+      "id": "FC05-N--3",
+      "axis": "x",
+      "at": -4.35,
+      "start": -3,
+      "end": 0,
+      "base": 0,
+      "height": 2.6,
+      "depth": 0.3,
+      "opening_ids": [
+        "FC05-N--3-OPEN"
+      ]
+    },
+    {
+      "id": "FC05-N-0",
+      "axis": "x",
+      "at": -4.35,
+      "start": 0,
+      "end": 3,
+      "base": 0,
+      "height": 2.6,
+      "depth": 0.3,
+      "opening_ids": [
+        "FC05-N-0-OPEN"
+      ]
+    },
+    {
+      "id": "FC05-N-3",
+      "axis": "x",
+      "at": -4.35,
+      "start": 3,
+      "end": 6,
+      "base": 0,
+      "height": 2.6,
+      "depth": 0.3,
+      "opening_ids": [
+        "FC05-N-3-OPEN"
+      ]
+    },
+    {
+      "id": "FC05-S--6",
+      "axis": "x",
+      "at": 4.35,
+      "start": -6,
+      "end": -3,
+      "base": 0,
+      "height": 2.6,
+      "depth": 0.3,
+      "opening_ids": [
+        "FC05-S--6-OPEN"
+      ]
+    },
+    {
+      "id": "FC05-S--3",
+      "axis": "x",
+      "at": 4.35,
+      "start": -3,
+      "end": 3,
+      "base": 0,
+      "height": 2.6,
+      "depth": 0.3,
+      "opening_ids": [
+        "FC05-S--3-OPEN"
+      ]
+    },
+    {
+      "id": "FC05-S-3",
+      "axis": "x",
+      "at": 4.35,
+      "start": 3,
+      "end": 6,
+      "base": 0,
+      "height": 2.6,
+      "depth": 0.3,
+      "opening_ids": [
+        "FC05-S-3-OPEN"
+      ]
+    },
+    {
+      "id": "FC05-SIDE--6--4.5",
+      "axis": "z",
+      "at": -5.85,
+      "start": -4.5,
+      "end": -1.5,
+      "base": 0,
+      "height": 2.6,
+      "depth": 0.3,
+      "opening_ids": []
+    },
+    {
+      "id": "FC05-SIDE--6--1.5",
+      "axis": "z",
+      "at": -5.85,
+      "start": -1.5,
+      "end": 1.5,
+      "base": 0,
+      "height": 2.6,
+      "depth": 0.3,
+      "opening_ids": [
+        "FC05-SIDE--6--1.5-OPEN"
+      ]
+    },
+    {
+      "id": "FC05-SIDE--6-1.5",
+      "axis": "z",
+      "at": -5.85,
+      "start": 1.5,
+      "end": 4.5,
+      "base": 0,
+      "height": 2.6,
+      "depth": 0.3,
+      "opening_ids": []
+    },
+    {
+      "id": "FC05-SIDE-6--4.5",
+      "axis": "z",
+      "at": 5.85,
+      "start": -4.5,
+      "end": -1.5,
+      "base": 0,
+      "height": 2.6,
+      "depth": 0.3,
+      "opening_ids": []
+    },
+    {
+      "id": "FC05-SIDE-6--1.5",
+      "axis": "z",
+      "at": 5.85,
+      "start": -1.5,
+      "end": 1.5,
+      "base": 0,
+      "height": 2.6,
+      "depth": 0.3,
+      "opening_ids": [
+        "FC05-SIDE-6--1.5-OPEN"
+      ]
+    },
+    {
+      "id": "FC05-SIDE-6-1.5",
+      "axis": "z",
+      "at": 5.85,
+      "start": 1.5,
+      "end": 4.5,
+      "base": 0,
+      "height": 2.6,
+      "depth": 0.3,
+      "opening_ids": []
+    },
+    {
+      "id": "FC05-UPPER--4.5--6",
+      "axis": "x",
+      "at": -4.35,
+      "start": -6,
+      "end": 0,
+      "base": 2.6,
+      "height": 2.6,
+      "depth": 0.3,
+      "opening_ids": [
+        "FC05-UPPER--4.5--6-OPEN"
+      ]
+    },
+    {
+      "id": "FC05-UPPER--4.5-0",
+      "axis": "x",
+      "at": -4.35,
+      "start": 0,
+      "end": 6,
+      "base": 2.6,
+      "height": 2.6,
+      "depth": 0.3,
+      "opening_ids": [
+        "FC05-UPPER--4.5-0-OPEN"
+      ]
+    },
+    {
+      "id": "FC05-UPPER-4.5--6",
+      "axis": "x",
+      "at": 4.35,
+      "start": -6,
+      "end": 0,
+      "base": 2.6,
+      "height": 2.6,
+      "depth": 0.3,
+      "opening_ids": [
+        "FC05-UPPER-4.5--6-OPEN"
+      ]
+    },
+    {
+      "id": "FC05-UPPER-4.5-0",
+      "axis": "x",
+      "at": 4.35,
+      "start": 0,
+      "end": 6,
+      "base": 2.6,
+      "height": 2.6,
+      "depth": 0.3,
+      "opening_ids": [
+        "FC05-UPPER-4.5-0-OPEN"
+      ]
+    },
+    {
+      "id": "UPPER-SIDE--6",
+      "axis": "z",
+      "at": -5.85,
+      "start": -4.5,
+      "end": 4.5,
+      "base": 2.6,
+      "height": 2.6,
+      "depth": 0.3,
+      "opening_ids": []
+    },
+    {
+      "id": "UPPER-SIDE-6",
+      "axis": "z",
+      "at": 5.85,
+      "start": -4.5,
+      "end": 4.5,
+      "base": 2.6,
+      "height": 2.6,
+      "depth": 0.3,
+      "opening_ids": []
+    }
+  ],
+  "floors": [
+    {
+      "id": "FC05-FLOOR",
+      "xmin": -6,
+      "xmax": 6,
+      "zmin": -4.5,
+      "zmax": 4.5,
+      "y": 0,
+      "thickness": 0.15
+    },
+    {
+      "id": "FC05-CEILING",
+      "xmin": -6,
+      "xmax": 6,
+      "zmin": -4.5,
+      "zmax": 4.5,
+      "y": 2.6,
+      "underside_y": 2.45,
+      "thickness": 0.15,
+      "ceiling": true
+    }
+  ],
+  "roofs": [
+    {
+      "id": "ROOF--6-0",
+      "x": -6,
+      "z": -4.5,
+      "length": 3,
+      "span": 6,
+      "eave": 5.2,
+      "rise": 2.8,
+      "thickness": 0.15,
+      "reference_id": "B12-STRUCT-001-S04"
+    },
+    {
+      "id": "ROOF--6-1",
+      "x": -6,
+      "z": -1.5,
+      "length": 3,
+      "span": 6,
+      "eave": 5.2,
+      "rise": 2.8,
+      "thickness": 0.15,
+      "reference_id": "B12-STRUCT-001-S04"
+    },
+    {
+      "id": "ROOF--6-2",
+      "x": -6,
+      "z": 1.5,
+      "length": 3,
+      "span": 6,
+      "eave": 5.2,
+      "rise": 2.8,
+      "thickness": 0.15,
+      "reference_id": "B12-STRUCT-001-S04"
+    },
+    {
+      "id": "ROOF-0-0",
+      "x": 0,
+      "z": -4.5,
+      "length": 3,
+      "span": 6,
+      "eave": 5.2,
+      "rise": 2.8,
+      "thickness": 0.15,
+      "reference_id": "B12-STRUCT-001-S04"
+    },
+    {
+      "id": "ROOF-0-1",
+      "x": 0,
+      "z": -1.5,
+      "length": 3,
+      "span": 6,
+      "eave": 5.2,
+      "rise": 2.8,
+      "thickness": 0.15,
+      "reference_id": "B12-STRUCT-001-S04"
+    },
+    {
+      "id": "ROOF-0-2",
+      "x": 0,
+      "z": 1.5,
+      "length": 3,
+      "span": 6,
+      "eave": 5.2,
+      "rise": 2.8,
+      "thickness": 0.15,
+      "reference_id": "B12-STRUCT-001-S04"
+    }
+  ],
+  "gables": [
+    {
+      "id": "GABLE--4.5--6",
+      "x": -6,
+      "z": -4.35,
+      "base": 5.05,
+      "rise": 2.8,
+      "span": 6,
+      "depth": 0.3
+    },
+    {
+      "id": "GABLE--4.5-0",
+      "x": 0,
+      "z": -4.35,
+      "base": 5.05,
+      "rise": 2.8,
+      "span": 6,
+      "depth": 0.3
+    },
+    {
+      "id": "GABLE-4.5--6",
+      "x": -6,
+      "z": 4.35,
+      "base": 5.05,
+      "rise": 2.8,
+      "span": 6,
+      "depth": 0.3
+    },
+    {
+      "id": "GABLE-4.5-0",
+      "x": 0,
+      "z": 4.35,
+      "base": 5.05,
+      "rise": 2.8,
+      "span": 6,
+      "depth": 0.3
+    }
+  ],
+  "door_leaves": [
+    {
+      "id": "ENTRY-LEAF--1",
+      "hinge": [
+        -1.2,
+        4.2
+      ],
+      "angle": -1.9198621771937625,
+      "sign": -1,
+      "width": 1.2,
+      "depth": 0.08,
+      "height": 2.1
+    },
+    {
+      "id": "ENTRY-LEAF-1",
+      "hinge": [
+        1.2,
+        4.2
+      ],
+      "angle": 1.9198621771937625,
+      "sign": 1,
+      "width": 1.2,
+      "depth": 0.08,
+      "height": 2.1
+    }
+  ],
+  "furnishings": [
+    {
+      "id": "ROOM-BENCH",
+      "kind": "bench",
+      "reference_id": "B12-COURT-PROP-001-D05",
+      "position": [
+        -5.425,
+        0,
+        -1.8
+      ],
+      "rotation": 1.5707963267948966,
+      "dimensions": [
+        1.4,
+        0.55,
+        0.85
+      ],
+      "attachment": "Feet on floor; back towards west wall",
+      "front": "East, toward conversation table",
+      "solid": true
+    },
+    {
+      "id": "ROOM-TABLE-P01",
+      "kind": "table",
+      "reference_id": null,
+      "position": [
+        -3.6,
+        0,
+        -1.8
+      ],
+      "rotation": 0,
+      "dimensions": [
+        1,
+        0.65,
+        0.72
+      ],
+      "attachment": "Four feet on floor",
+      "front": "North/south edges accessible",
+      "solid": true,
+      "proposal": "New plain cottage table fit specimen; indoor table design is a verified reference gap"
+    },
+    {
+      "id": "ROOM-CRATE",
+      "kind": "crate",
+      "reference_id": "B12-COURT-PROP-001-D09",
+      "position": [
+        5.45,
+        0,
+        -3.9
+      ],
+      "rotation": 0,
+      "dimensions": [
+        0.5,
+        0.4,
+        0.35
+      ],
+      "attachment": "Underside on floor",
+      "front": "Open top upward",
+      "solid": true
+    },
+    {
+      "id": "ROOM-BASKET",
+      "kind": "basket",
+      "reference_id": "B12-COURT-PROP-001-D03",
+      "position": [
+        5.4,
+        0,
+        2.7
+      ],
+      "rotation": 0,
+      "dimensions": [
+        0.45,
+        0.35,
+        0.3
+      ],
+      "attachment": "Underside on floor",
+      "front": "Open top upward",
+      "solid": true
+    },
+    {
+      "id": "ROOM-MAT",
+      "kind": "mat",
+      "reference_id": "B12-COURT-PROP-001-D12",
+      "position": [
+        0,
+        0,
+        3.6
+      ],
+      "rotation": 0,
+      "dimensions": [
+        0.8,
+        0.5,
+        0.02
+      ],
+      "attachment": "Broad underside flat on floor",
+      "front": "Pattern upward",
+      "walkable": true
+    },
+    {
+      "id": "ROOM-WATERING-POT",
+      "kind": "watering-pot",
+      "reference_id": "B12-COURT-PROP-001-D07",
+      "position": [
+        -3.6,
+        0.72,
+        -1.8
+      ],
+      "rotation": 0,
+      "dimensions": [
+        0.4,
+        0.2,
+        0.3
+      ],
+      "attachment": "Base on table top Y=0.72",
+      "front": "Spout east"
+    },
+    {
+      "id": "ROOM-CHIME",
+      "kind": "chime",
+      "reference_id": "B12-COURT-PROP-001-D06",
+      "position": [
+        0,
+        1.9,
+        2
+      ],
+      "rotation": 0,
+      "dimensions": [
+        0.15,
+        0.15,
+        0.45
+      ],
+      "attachment": "Visible 0.10 m hanger to ceiling underside Y=2.45",
+      "front": "Suspended body downward",
+      "interaction": "Ring with E within 1.8 m"
+    },
+    {
+      "id": "ROOM-LAMP-P01-0",
+      "kind": "lamp",
+      "reference_id": null,
+      "position": [
+        -5.7,
+        1.95,
+        1.6
+      ],
+      "rotation": 1.5707963267948966,
+      "dimensions": [
+        0.18,
+        0.18,
+        0.3
+      ],
+      "attachment": "Flat rear plate on interior wall face",
+      "front": "Into room",
+      "proposal": "Functional test lamp, final cottage fixture design pending"
+    },
+    {
+      "id": "ROOM-LAMP-P01-1",
+      "kind": "lamp",
+      "reference_id": null,
+      "position": [
+        5.7,
+        1.95,
+        -1.8
+      ],
+      "rotation": -1.5707963267948966,
+      "dimensions": [
+        0.18,
+        0.18,
+        0.3
+      ],
+      "attachment": "Flat rear plate on interior wall face",
+      "front": "Into room",
+      "proposal": "Functional test lamp, final cottage fixture design pending"
+    }
+  ],
+  "lights": [
+    {
+      "id": "COTTAGE-LIGHT-W",
+      "position": [
+        -5.595,
+        2.0949999999999998,
+        1.6
+      ],
+      "colour": "#ffdbab",
+      "intensity": 0.12,
+      "distance": 5.5,
+      "fixture": "ROOM-LAMP-P01-0"
+    },
+    {
+      "id": "COTTAGE-LIGHT-E",
+      "position": [
+        5.595,
+        2.0949999999999998,
+        -1.8
+      ],
+      "colour": "#ffe2b9",
+      "intensity": 0.12,
+      "distance": 5.5,
+      "fixture": "ROOM-LAMP-P01-1"
+    }
+  ],
+  "routes": {
+    "room": [
+      [
+        0,
+        7
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        -4.62,
+        0
+      ],
+      [
+        -4.62,
+        -1.8
+      ],
+      [
+        -4.62,
+        0
+      ],
+      [
+        3,
+        0
+      ],
+      [
+        3,
+        -2.8
+      ],
+      [
+        3,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        7
+      ]
+    ],
+    "clearing": [
+      [
+        0,
+        7
+      ],
+      [
+        0,
+        10
+      ],
+      [
+        -45,
+        20
+      ],
+      [
+        -55,
+        -35
+      ],
+      [
+        -10,
+        -60
+      ],
+      [
+        50,
+        -45
+      ],
+      [
+        60,
+        10
+      ],
+      [
+        45,
+        45
+      ],
+      [
+        -15,
+        55
+      ],
+      [
+        -45,
+        20
+      ],
+      [
+        0,
+        10
+      ],
+      [
+        0,
+        7
+      ]
+    ]
+  },
+  "vegetation": [
+    {
+      "id": "FC05-BROADLEAF-1",
+      "kind": "broadleaf",
+      "x": 43.93331459257752,
+      "z": -26.478273710235953,
+      "y": -0.1287622247016742,
+      "radius": 0.3,
+      "height": 13.232213774928823,
+      "crown_radius": 3.5079349137842657,
+      "crown_base_m": 3.9696641324786466,
+      "block": true,
+      "zone": "H04",
+      "reference": "GEN-09 (canopy family audit pending)",
+      "status": "Procedural source-family fit variant; final art pending",
+      "reference_id": "F02-FLORA-001-A01"
+    },
+    {
+      "id": "FC05-BROADLEAF-2",
+      "kind": "broadleaf",
+      "x": 12.625480727292597,
+      "z": 61.35711290873587,
+      "y": -0.9160026171109266,
+      "radius": 0.3,
+      "height": 16.693354634800926,
+      "crown_radius": 3.64507292509079,
+      "crown_base_m": 5.008006390440277,
+      "block": true,
+      "zone": "H06",
+      "reference": "GEN-09 (canopy family audit pending)",
+      "status": "Procedural source-family fit variant; final art pending",
+      "reference_id": "F02-FLORA-001-A01"
+    },
+    {
+      "id": "FC05-BROADLEAF-3",
+      "kind": "broadleaf",
+      "x": -66.55912371817976,
+      "z": -12.357486970722675,
+      "y": -0.5285630392153777,
+      "radius": 0.3,
+      "height": 16.180341929895803,
+      "crown_radius": 4.352735909353942,
+      "crown_base_m": 4.854102578968741,
+      "block": true,
+      "zone": "H06",
+      "reference": "GEN-09 (canopy family audit pending)",
+      "status": "Procedural source-family fit variant; final art pending",
+      "reference_id": "F02-FLORA-001-A01"
+    },
+    {
+      "id": "FC05-BROADLEAF-4",
+      "kind": "broadleaf",
+      "x": 23.228385807015,
+      "z": 41.93493784405291,
+      "y": -0.7536413906982986,
+      "radius": 0.3,
+      "height": 15.409442441770807,
+      "crown_radius": 3.9410039566457273,
+      "crown_base_m": 4.622832732531242,
+      "block": true,
+      "zone": "H04",
+      "reference": "GEN-09 (canopy family audit pending)",
+      "status": "Procedural source-family fit variant; final art pending",
+      "reference_id": "F02-FLORA-001-A01"
+    },
+    {
+      "id": "FC05-BROADLEAF-5",
+      "kind": "broadleaf",
+      "x": 4.1430890979245305,
+      "z": 48.43023902736604,
+      "y": -0.8336070930047583,
+      "radius": 0.3,
+      "height": 13.666662237839773,
+      "crown_radius": 3.5996984316036107,
+      "crown_base_m": 4.099998671351932,
+      "block": true,
+      "zone": "H02",
+      "reference": "GEN-09 (canopy family audit pending)",
+      "status": "Procedural source-family fit variant; final art pending",
+      "reference_id": "F02-FLORA-001-A01"
+    },
+    {
+      "id": "FC05-BROADLEAF-6",
+      "kind": "broadleaf",
+      "x": 34.59383219946176,
+      "z": 51.59132528118789,
+      "y": -0.8268488907736042,
+      "radius": 0.3,
+      "height": 16.777256624074653,
+      "crown_radius": 4.193507763184607,
+      "crown_base_m": 5.0331769872223955,
+      "block": true,
+      "zone": "H06",
+      "reference": "GEN-09 (canopy family audit pending)",
+      "status": "Procedural source-family fit variant; final art pending",
+      "reference_id": "F02-FLORA-001-A01"
+    },
+    {
+      "id": "FC05-BROADLEAF-7",
+      "kind": "broadleaf",
+      "x": 49.50497564394027,
+      "z": -17.366754123941064,
+      "y": -0.34462617186844824,
+      "radius": 0.3,
+      "height": 13.665762971388176,
+      "crown_radius": 3.081281135044992,
+      "crown_base_m": 4.0997288914164525,
+      "block": true,
+      "zone": "H04",
+      "reference": "GEN-09 (canopy family audit pending)",
+      "status": "Procedural source-family fit variant; final art pending",
+      "reference_id": "F02-FLORA-001-A01"
+    },
+    {
+      "id": "FC05-BROADLEAF-8",
+      "kind": "broadleaf",
+      "x": -48.81940727587789,
+      "z": -50.8463644515723,
+      "y": -0.24368997666297787,
+      "radius": 0.3,
+      "height": 15.509312957758084,
+      "crown_radius": 3.0927785988897085,
+      "crown_base_m": 4.652793887327425,
+      "block": true,
+      "zone": "H06",
+      "reference": "GEN-09 (canopy family audit pending)",
+      "status": "Procedural source-family fit variant; final art pending",
+      "reference_id": "F02-FLORA-001-A01"
+    },
+    {
+      "id": "FC05-BROADLEAF-9",
+      "kind": "broadleaf",
+      "x": -51.03597977664322,
+      "z": -31.188200851902366,
+      "y": -0.4389274820924385,
+      "radius": 0.3,
+      "height": 15.679517979035154,
+      "crown_radius": 3.2364301390945913,
+      "crown_base_m": 4.703855393710546,
+      "block": true,
+      "zone": "H02",
+      "reference": "GEN-09 (canopy family audit pending)",
+      "status": "Procedural source-family fit variant; final art pending",
+      "reference_id": "F02-FLORA-001-A01"
+    },
+    {
+      "id": "FC05-BROADLEAF-10",
+      "kind": "broadleaf",
+      "x": 7.258039931766689,
+      "z": 61.96694014593959,
+      "y": -0.9210589278485131,
+      "radius": 0.3,
+      "height": 14.289140581851825,
+      "crown_radius": 3.8140570965595546,
+      "crown_base_m": 4.286742174555547,
+      "block": true,
+      "zone": "H06",
+      "reference": "GEN-09 (canopy family audit pending)",
+      "status": "Procedural source-family fit variant; final art pending",
+      "reference_id": "F02-FLORA-001-A01"
+    },
+    {
+      "id": "FC05-BROADLEAF-11",
+      "kind": "broadleaf",
+      "x": 46.31970483344048,
+      "z": -40.26260128244758,
+      "y": -0.2467870180281082,
+      "radius": 0.3,
+      "height": 16.880351790925488,
+      "crown_radius": 4.048636431340128,
+      "crown_base_m": 5.064105537277646,
+      "block": true,
+      "zone": "H06",
+      "reference": "GEN-09 (canopy family audit pending)",
+      "status": "Procedural source-family fit variant; final art pending",
+      "reference_id": "F02-FLORA-001-A01"
+    },
+    {
+      "id": "FC05-BROADLEAF-12",
+      "kind": "broadleaf",
+      "x": 38.63715888466686,
+      "z": 49.942016303539276,
+      "y": -0.8116605490791216,
+      "radius": 0.3,
+      "height": 14.776327318279073,
+      "crown_radius": 3.6747435345314443,
+      "crown_base_m": 4.432898195483721,
+      "block": true,
+      "zone": "H02",
+      "reference": "GEN-09 (canopy family audit pending)",
+      "status": "Procedural source-family fit variant; final art pending",
+      "reference_id": "F02-FLORA-001-A01"
+    },
+    {
+      "id": "FC05-BROADLEAF-13",
+      "kind": "broadleaf",
+      "x": -48.76888856757432,
+      "z": 38.806574549525976,
+      "y": -0.44089056787193215,
+      "radius": 0.3,
+      "height": 12.591127354418859,
+      "crown_radius": 3.683187096286565,
+      "crown_base_m": 3.7773382063256573,
+      "block": true,
+      "zone": "H06",
+      "reference": "GEN-09 (canopy family audit pending)",
+      "status": "Procedural source-family fit variant; final art pending",
+      "reference_id": "F02-FLORA-001-A01"
+    },
+    {
+      "id": "FC05-BROADLEAF-14",
+      "kind": "broadleaf",
+      "x": -56.805844330228865,
+      "z": 25.015741996467113,
+      "y": -0.6221192738785533,
+      "radius": 0.3,
+      "height": 14.535578057868406,
+      "crown_radius": 4.189191716443748,
+      "crown_base_m": 4.3606734173605215,
+      "block": true,
+      "zone": "H06",
+      "reference": "GEN-09 (canopy family audit pending)",
+      "status": "Procedural source-family fit variant; final art pending",
+      "reference_id": "F02-FLORA-001-A01"
+    },
+    {
+      "id": "FC05-BROADLEAF-15",
+      "kind": "broadleaf",
+      "x": -51.14737981464714,
+      "z": 40.66354067064822,
+      "y": -0.5983476695708134,
+      "radius": 0.3,
+      "height": 14.253011675784364,
+      "crown_radius": 3.1231929533183576,
+      "crown_base_m": 4.275903502735309,
+      "block": true,
+      "zone": "H06",
+      "reference": "GEN-09 (canopy family audit pending)",
+      "status": "Procedural source-family fit variant; final art pending",
+      "reference_id": "F02-FLORA-001-A01"
+    },
+    {
+      "id": "FC05-BIRCH-1",
+      "kind": "birch",
+      "x": -61.88825990539044,
+      "z": -2.769503826275468,
+      "y": -0.6072873604881153,
+      "radius": 0.2,
+      "height": 14.096181608038023,
+      "crown_radius": 2.716862683836371,
+      "crown_base_m": 4.228854482411407,
+      "block": true,
+      "zone": "H06",
+      "reference": "GEN-09 (canopy family audit pending)",
+      "status": "Procedural source-family fit variant; final art pending",
+      "reference_id": "F02-FLORA-001-A02"
+    },
+    {
+      "id": "FC05-BIRCH-2",
+      "kind": "birch",
+      "x": -12.246280587278306,
+      "z": -67.14502322487533,
+      "y": -0.14105031138618784,
+      "radius": 0.2,
+      "height": 11.902361806714907,
+      "crown_radius": 3.093999159149826,
+      "crown_base_m": 3.570708542014472,
+      "block": true,
+      "zone": "H06",
+      "reference": "GEN-09 (canopy family audit pending)",
+      "status": "Procedural source-family fit variant; final art pending",
+      "reference_id": "F02-FLORA-001-A02"
+    },
+    {
+      "id": "FC05-BIRCH-3",
+      "kind": "birch",
+      "x": 49.37817750964314,
+      "z": 43.96875494159758,
+      "y": -0.763693247786243,
+      "radius": 0.2,
+      "height": 13.388167103985325,
+      "crown_radius": 2.205238186568022,
+      "crown_base_m": 4.016450131195597,
+      "block": true,
+      "zone": "H02",
+      "reference": "GEN-09 (canopy family audit pending)",
+      "status": "Procedural source-family fit variant; final art pending",
+      "reference_id": "F02-FLORA-001-A02"
+    },
+    {
+      "id": "FC05-BIRCH-4",
+      "kind": "birch",
+      "x": -53.673151466064155,
+      "z": 30.605465760454535,
+      "y": -0.4620293783228675,
+      "radius": 0.2,
+      "height": 11.640872742282227,
+      "crown_radius": 3.0787036937661467,
+      "crown_base_m": 3.492261822684668,
+      "block": true,
+      "zone": "H06",
+      "reference": "GEN-09 (canopy family audit pending)",
+      "status": "Procedural source-family fit variant; final art pending",
+      "reference_id": "F02-FLORA-001-A02"
+    },
+    {
+      "id": "FC05-BIRCH-5",
+      "kind": "birch",
+      "x": 22.65267593320459,
+      "z": 58.45723357051611,
+      "y": -0.8904340812015263,
+      "radius": 0.2,
+      "height": 14.634231411619112,
+      "crown_radius": 2.239737729961053,
+      "crown_base_m": 4.390269423485734,
+      "block": true,
+      "zone": "H06",
+      "reference": "GEN-09 (canopy family audit pending)",
+      "status": "Procedural source-family fit variant; final art pending",
+      "reference_id": "F02-FLORA-001-A02"
+    },
+    {
+      "id": "FC05-BIRCH-6",
+      "kind": "birch",
+      "x": -61.067284983582795,
+      "z": -9.487781953066587,
+      "y": -0.5680789887422577,
+      "radius": 0.2,
+      "height": 10.45693171559833,
+      "crown_radius": 2.2799643113743517,
+      "crown_base_m": 3.137079514679499,
+      "block": true,
+      "zone": "H06",
+      "reference": "GEN-09 (canopy family audit pending)",
+      "status": "Procedural source-family fit variant; final art pending",
+      "reference_id": "F02-FLORA-001-A02"
+    },
+    {
+      "id": "FC05-BIRCH-7",
+      "kind": "birch",
+      "x": -68.77864500973374,
+      "z": -1.0353108495473862,
+      "y": -0.5894360398401588,
+      "radius": 0.2,
+      "height": 12.223488333402202,
+      "crown_radius": 2.7577293094713244,
+      "crown_base_m": 3.6670465000206605,
+      "block": true,
+      "zone": "H06",
+      "reference": "GEN-09 (canopy family audit pending)",
+      "status": "Procedural source-family fit variant; final art pending",
+      "reference_id": "F02-FLORA-001-A02"
+    },
+    {
+      "id": "FC05-BIRCH-8",
+      "kind": "birch",
+      "x": -55.79638846684247,
+      "z": 9.536745231598616,
+      "y": -0.6927765924312368,
+      "radius": 0.2,
+      "height": 12.639505102997646,
+      "crown_radius": 2.8141432636883112,
+      "crown_base_m": 3.7918515308992937,
+      "block": true,
+      "zone": "H06",
+      "reference": "GEN-09 (canopy family audit pending)",
+      "status": "Procedural source-family fit variant; final art pending",
+      "reference_id": "F02-FLORA-001-A02"
+    },
+    {
+      "id": "FC05-BIRCH-9",
+      "kind": "birch",
+      "x": -50.018583782948554,
+      "z": 9.878203757107258,
+      "y": -0.7150384559526941,
+      "radius": 0.2,
+      "height": 11.43422554130666,
+      "crown_radius": 2.280906999716535,
+      "crown_base_m": 3.430267662391998,
+      "block": true,
+      "zone": "H02",
+      "reference": "GEN-09 (canopy family audit pending)",
+      "status": "Procedural source-family fit variant; final art pending",
+      "reference_id": "F02-FLORA-001-A02"
+    },
+    {
+      "id": "FC05-SAPLING-1",
+      "kind": "sapling",
+      "x": -43.146035955287516,
+      "z": -2.4489587545394897,
+      "y": -0.6533563424829296,
+      "radius": 0.14,
+      "height": 3.8926280323648825,
+      "crown_radius": 0.8412464307621121,
+      "crown_base_m": 1.8,
+      "block": true,
+      "zone": "H03",
+      "reference": "GEN-09",
+      "status": "Explicit unaccepted placement specimen; exact source design unresolved",
+      "reference_id": null
+    },
+    {
+      "id": "FC05-SAPLING-2",
+      "kind": "sapling",
+      "x": 38.35702284704894,
+      "z": -43.49599966779351,
+      "y": -0.23328649754819963,
+      "radius": 0.14,
+      "height": 3.4021694521652535,
+      "crown_radius": 0.9563912874087692,
+      "crown_base_m": 1.8,
+      "block": true,
+      "zone": "H06",
+      "reference": "GEN-09",
+      "status": "Explicit unaccepted placement specimen; exact source design unresolved",
+      "reference_id": null
+    },
+    {
+      "id": "FC05-SAPLING-3",
+      "kind": "sapling",
+      "x": 0.7354447012767196,
+      "z": 39.14090882986784,
+      "y": -0.782875538061603,
+      "radius": 0.14,
+      "height": 2.760566628188826,
+      "crown_radius": 0.9722367906942964,
+      "crown_base_m": 1.8,
+      "block": true,
+      "zone": "H04",
+      "reference": "GEN-09",
+      "status": "Explicit unaccepted placement specimen; exact source design unresolved",
+      "reference_id": null
+    },
+    {
+      "id": "FC05-SAPLING-4",
+      "kind": "sapling",
+      "x": 32.7085837116465,
+      "z": -31.647855415940285,
+      "y": 0.12541934233804852,
+      "radius": 0.14,
+      "height": 3.5340710520977154,
+      "crown_radius": 0.9592253090813756,
+      "crown_base_m": 1.8,
+      "block": true,
+      "zone": "H04",
+      "reference": "GEN-09",
+      "status": "Explicit unaccepted placement specimen; exact source design unresolved",
+      "reference_id": null
+    },
+    {
+      "id": "FC05-SAPLING-5",
+      "kind": "sapling",
+      "x": 35.70905304979533,
+      "z": -35.422773230820894,
+      "y": -0.12616090920405298,
+      "radius": 0.14,
+      "height": 3.90825875767041,
+      "crown_radius": 0.9033902129158378,
+      "crown_base_m": 1.8,
+      "block": true,
+      "zone": "H04",
+      "reference": "GEN-09",
+      "status": "Explicit unaccepted placement specimen; exact source design unresolved",
+      "reference_id": null
+    },
+    {
+      "id": "FC05-SAPLING-6",
+      "kind": "sapling",
+      "x": -3.9966766024008393,
+      "z": -15.072095058858395,
+      "y": -0.47723920944969933,
+      "radius": 0.14,
+      "height": 3.400232177809812,
+      "crown_radius": 1.0519655564799906,
+      "crown_base_m": 1.8,
+      "block": true,
+      "zone": "H03",
+      "reference": "GEN-09",
+      "status": "Explicit unaccepted placement specimen; exact source design unresolved",
+      "reference_id": null
+    },
+    {
+      "id": "FC05-SAPLING-7",
+      "kind": "sapling",
+      "x": 56.81446585338563,
+      "z": -28.17587709054351,
+      "y": -0.31111246584371344,
+      "radius": 0.14,
+      "height": 3.477521920693107,
+      "crown_radius": 0.7077716408297419,
+      "crown_base_m": 1.8,
+      "block": true,
+      "zone": "H02",
+      "reference": "GEN-09",
+      "status": "Explicit unaccepted placement specimen; exact source design unresolved",
+      "reference_id": null
+    },
+    {
+      "id": "FC05-SAPLING-8",
+      "kind": "sapling",
+      "x": -5.292239622212946,
+      "z": 47.89235219359398,
+      "y": -0.8465536101961106,
+      "radius": 0.14,
+      "height": 2.720548838027753,
+      "crown_radius": 0.9423253612592817,
+      "crown_base_m": 1.8,
+      "block": true,
+      "zone": "H04",
+      "reference": "GEN-09",
+      "status": "Explicit unaccepted placement specimen; exact source design unresolved",
+      "reference_id": null
+    },
+    {
+      "id": "FC05-SAPLING-9",
+      "kind": "sapling",
+      "x": 54.250979968346655,
+      "z": 45.48132841475308,
+      "y": -0.7442082852497975,
+      "radius": 0.14,
+      "height": 3.0488830328686163,
+      "crown_radius": 0.9358366914093494,
+      "crown_base_m": 1.8,
+      "block": true,
+      "zone": "H06",
+      "reference": "GEN-09",
+      "status": "Explicit unaccepted placement specimen; exact source design unresolved",
+      "reference_id": null
+    },
+    {
+      "id": "FC05-SAPLING-10",
+      "kind": "sapling",
+      "x": -12.881632219068706,
+      "z": -65.81992913968861,
+      "y": -0.150664594883402,
+      "radius": 0.14,
+      "height": 2.558910100138746,
+      "crown_radius": 1.0169427748769522,
+      "crown_base_m": 1.8,
+      "block": true,
+      "zone": "H06",
+      "reference": "GEN-09",
+      "status": "Explicit unaccepted placement specimen; exact source design unresolved",
+      "reference_id": null
+    },
+    {
+      "id": "FC05-SHRUB-1",
+      "kind": "shrub",
+      "x": -58.63554548006505,
+      "z": 1.7093109246343374,
+      "y": -0.6454248383362042,
+      "radius": 0.45,
+      "height": 0.758177878218703,
+      "crown_radius": 0.45,
+      "crown_base_m": 3,
+      "block": true,
+      "zone": "H06",
+      "reference": "F02-NATURE-001-A09",
+      "status": "Procedural source-family fit variant; final art pending",
+      "reference_id": "F02-NATURE-001-A09"
+    },
+    {
+      "id": "FC05-SHRUB-2",
+      "kind": "shrub",
+      "x": -42.33953636139631,
+      "z": -23.712436999194324,
+      "y": -0.3894144995972155,
+      "radius": 0.45,
+      "height": 0.7689716405700893,
+      "crown_radius": 0.45,
+      "crown_base_m": 3,
+      "block": true,
+      "zone": "H03",
+      "reference": "F02-NATURE-001-A09",
+      "status": "Procedural source-family fit variant; final art pending",
+      "reference_id": "F02-NATURE-001-A09"
+    },
+    {
+      "id": "FC05-SHRUB-3",
+      "kind": "shrub",
+      "x": -27.60785084683448,
+      "z": -44.88131096586585,
+      "y": -0.3272118140501945,
+      "radius": 0.45,
+      "height": 0.8976729821646586,
+      "crown_radius": 0.45,
+      "crown_base_m": 3,
+      "block": true,
+      "zone": "H03",
+      "reference": "F02-NATURE-001-A09",
+      "status": "Procedural source-family fit variant; final art pending",
+      "reference_id": "F02-NATURE-001-A09"
+    },
+    {
+      "id": "FC05-SHRUB-4",
+      "kind": "shrub",
+      "x": -4.482038915157318,
+      "z": 27.22426396328956,
+      "y": -0.7320810929516028,
+      "radius": 0.45,
+      "height": 0.7950493087526411,
+      "crown_radius": 0.45,
+      "crown_base_m": 3,
+      "block": true,
+      "zone": "H04",
+      "reference": "F02-NATURE-001-A09",
+      "status": "Procedural source-family fit variant; final art pending",
+      "reference_id": "F02-NATURE-001-A09"
+    },
+    {
+      "id": "FC05-SHRUB-5",
+      "kind": "shrub",
+      "x": -59.393626055680215,
+      "z": -22.360814912244678,
+      "y": -0.48631887784657124,
+      "radius": 0.45,
+      "height": 0.7877308116992936,
+      "crown_radius": 0.45,
+      "crown_base_m": 3,
+      "block": true,
+      "zone": "H06",
+      "reference": "F02-NATURE-001-A09",
+      "status": "Procedural source-family fit variant; final art pending",
+      "reference_id": "F02-NATURE-001-A09"
+    },
+    {
+      "id": "FC05-SHRUB-6",
+      "kind": "shrub",
+      "x": 44.26704998128116,
+      "z": -35.580391776748,
+      "y": -0.2527513653653415,
+      "radius": 0.45,
+      "height": 0.8816299815662205,
+      "crown_radius": 0.45,
+      "crown_base_m": 3,
+      "block": true,
+      "zone": "H06",
+      "reference": "F02-NATURE-001-A09",
+      "status": "Procedural source-family fit variant; final art pending",
+      "reference_id": "F02-NATURE-001-A09"
+    },
+    {
+      "id": "FC05-SHRUB-7",
+      "kind": "shrub",
+      "x": 30.747222364880145,
+      "z": 33.35641832090914,
+      "y": -0.6741409092171011,
+      "radius": 0.45,
+      "height": 0.8041181303327903,
+      "crown_radius": 0.45,
+      "crown_base_m": 3,
+      "block": true,
+      "zone": "H04",
+      "reference": "F02-NATURE-001-A09",
+      "status": "Procedural source-family fit variant; final art pending",
+      "reference_id": "F02-NATURE-001-A09"
+    },
+    {
+      "id": "FC05-SHRUB-8",
+      "kind": "shrub",
+      "x": -54.297331208363175,
+      "z": 7.819915483705699,
+      "y": -0.69221782394321,
+      "radius": 0.45,
+      "height": 0.7025786387734115,
+      "crown_radius": 0.45,
+      "crown_base_m": 3,
+      "block": true,
+      "zone": "H03",
+      "reference": "F02-NATURE-001-A09",
+      "status": "Procedural source-family fit variant; final art pending",
+      "reference_id": "F02-NATURE-001-A09"
+    },
+    {
+      "id": "FC05-SHRUB-9",
+      "kind": "shrub",
+      "x": -32.88847116287798,
+      "z": -9.412873266264796,
+      "y": -0.38509789549095075,
+      "radius": 0.45,
+      "height": 0.8146628288319334,
+      "crown_radius": 0.45,
+      "crown_base_m": 3,
+      "block": true,
+      "zone": "H03",
+      "reference": "F02-NATURE-001-A09",
+      "status": "Procedural source-family fit variant; final art pending",
+      "reference_id": "F02-NATURE-001-A09"
+    },
+    {
+      "id": "FC05-SHRUB-10",
+      "kind": "shrub",
+      "x": -62.541795931756496,
+      "z": -29.8237907839939,
+      "y": -0.4236793245764616,
+      "radius": 0.45,
+      "height": 0.8522031187545509,
+      "crown_radius": 0.45,
+      "crown_base_m": 3,
+      "block": true,
+      "zone": "H06",
+      "reference": "F02-NATURE-001-A09",
+      "status": "Procedural source-family fit variant; final art pending",
+      "reference_id": "F02-NATURE-001-A09"
+    },
+    {
+      "id": "FC05-SHRUB-11",
+      "kind": "shrub",
+      "x": -38.70285507757217,
+      "z": 3.201520387083292,
+      "y": -0.6919637294792338,
+      "radius": 0.45,
+      "height": 0.6295110557461158,
+      "crown_radius": 0.45,
+      "crown_base_m": 3,
+      "block": true,
+      "zone": "H03",
+      "reference": "F02-NATURE-001-A09",
+      "status": "Procedural source-family fit variant; final art pending",
+      "reference_id": "F02-NATURE-001-A09"
+    },
+    {
+      "id": "FC05-SHRUB-12",
+      "kind": "shrub",
+      "x": 51.746891075745225,
+      "z": 6.917371018789709,
+      "y": -0.48767143342449515,
+      "radius": 0.45,
+      "height": 0.7715240724384784,
+      "crown_radius": 0.45,
+      "crown_base_m": 3,
+      "block": true,
+      "zone": "H04",
+      "reference": "F02-NATURE-001-A09",
+      "status": "Procedural source-family fit variant; final art pending",
+      "reference_id": "F02-NATURE-001-A09"
+    },
+    {
+      "id": "FC05-SHRUB-13",
+      "kind": "shrub",
+      "x": 27.859681244008243,
+      "z": -11.027800980955362,
+      "y": 0.2888024845800672,
+      "radius": 0.45,
+      "height": 0.6270464817294851,
+      "crown_radius": 0.45,
+      "crown_base_m": 3,
+      "block": true,
+      "zone": "H04",
+      "reference": "F02-NATURE-001-A09",
+      "status": "Procedural source-family fit variant; final art pending",
+      "reference_id": "F02-NATURE-001-A09"
+    },
+    {
+      "id": "FC05-SHRUB-14",
+      "kind": "shrub",
+      "x": -15.950123919174075,
+      "z": -26.967047029174864,
+      "y": -0.16009331769313206,
+      "radius": 0.45,
+      "height": 0.8980570262297989,
+      "crown_radius": 0.45,
+      "crown_base_m": 3,
+      "block": true,
+      "zone": "H03",
+      "reference": "F02-NATURE-001-A09",
+      "status": "Procedural source-family fit variant; final art pending",
+      "reference_id": "F02-NATURE-001-A09"
+    },
+    {
+      "id": "FC05-SHRUB-15",
+      "kind": "shrub",
+      "x": 43.12258892226964,
+      "z": -39.62464292533696,
+      "y": -0.2450705300431153,
+      "radius": 0.45,
+      "height": 0.8877518993569538,
+      "crown_radius": 0.45,
+      "crown_base_m": 3,
+      "block": true,
+      "zone": "H06",
+      "reference": "F02-NATURE-001-A09",
+      "status": "Procedural source-family fit variant; final art pending",
+      "reference_id": "F02-NATURE-001-A09"
+    },
+    {
+      "id": "FC05-SHRUB-16",
+      "kind": "shrub",
+      "x": 23.845511842519045,
+      "z": -56.35081478860229,
+      "y": -0.1961059831387999,
+      "radius": 0.45,
+      "height": 0.8208503956440836,
+      "crown_radius": 0.45,
+      "crown_base_m": 3,
+      "block": true,
+      "zone": "H06",
+      "reference": "F02-NATURE-001-A09",
+      "status": "Procedural source-family fit variant; final art pending",
+      "reference_id": "F02-NATURE-001-A09"
+    },
+    {
+      "id": "FC05-ROCK-1",
+      "kind": "rock",
+      "x": -34.70606526825577,
+      "z": -40.241127237677574,
+      "y": -0.37117216021775334,
+      "radius": 0.8,
+      "height": 0.6036711046705023,
+      "crown_radius": 0.8,
+      "crown_base_m": 3,
+      "block": true,
+      "zone": "H03",
+      "reference": "GEN-09 (rock family audit pending)",
+      "status": "Explicit unaccepted placement specimen; exact source design unresolved",
+      "reference_id": null
+    },
+    {
+      "id": "FC05-ROCK-2",
+      "kind": "rock",
+      "x": -27.85015025176108,
+      "z": -18.298296411521733,
+      "y": 0.18201766226135163,
+      "radius": 0.8,
+      "height": 0.9560756399296225,
+      "crown_radius": 0.8,
+      "crown_base_m": 3,
+      "block": true,
+      "zone": "H03",
+      "reference": "GEN-09 (rock family audit pending)",
+      "status": "Explicit unaccepted placement specimen; exact source design unresolved",
+      "reference_id": null
+    },
+    {
+      "id": "FC05-ROCK-3",
+      "kind": "rock",
+      "x": -45.350014814175665,
+      "z": -20.359049551188946,
+      "y": -0.5209225514408615,
+      "radius": 0.8,
+      "height": 0.7804766170913354,
+      "crown_radius": 0.8,
+      "crown_base_m": 3,
+      "block": true,
+      "zone": "H03",
+      "reference": "GEN-09 (rock family audit pending)",
+      "status": "Explicit unaccepted placement specimen; exact source design unresolved",
+      "reference_id": null
+    },
+    {
+      "id": "FC05-ROCK-4",
+      "kind": "rock",
+      "x": -42.97363042831421,
+      "z": -29.139173510484397,
+      "y": -0.36222785244922306,
+      "radius": 0.8,
+      "height": 0.8013098857831211,
+      "crown_radius": 0.8,
+      "crown_base_m": 3,
+      "block": true,
+      "zone": "H03",
+      "reference": "GEN-09 (rock family audit pending)",
+      "status": "Explicit unaccepted placement specimen; exact source design unresolved",
+      "reference_id": null
+    },
+    {
+      "id": "FC05-ROCK-5",
+      "kind": "rock",
+      "x": 39.60007252637297,
+      "z": -16.228522835299373,
+      "y": 0.43582090738906487,
+      "radius": 0.8,
+      "height": 0.6053854475496337,
+      "crown_radius": 0.8,
+      "crown_base_m": 3,
+      "block": true,
+      "zone": "H04",
+      "reference": "GEN-09 (rock family audit pending)",
+      "status": "Explicit unaccepted placement specimen; exact source design unresolved",
+      "reference_id": null
+    },
+    {
+      "id": "FC05-ROCK-6",
+      "kind": "rock",
+      "x": 45.46602699905634,
+      "z": -8.35987954866141,
+      "y": -0.29170964386968024,
+      "radius": 0.8,
+      "height": 0.572718902816996,
+      "crown_radius": 0.8,
+      "crown_base_m": 3,
+      "block": true,
+      "zone": "H04",
+      "reference": "GEN-09 (rock family audit pending)",
+      "status": "Explicit unaccepted placement specimen; exact source design unresolved",
+      "reference_id": null
+    },
+    {
+      "id": "FC05-ROCK-7",
+      "kind": "rock",
+      "x": 56.16547958459705,
+      "z": -42.0449323952198,
+      "y": -0.2484730732710716,
+      "radius": 0.8,
+      "height": 0.4097718147793785,
+      "crown_radius": 0.8,
+      "crown_base_m": 3,
+      "block": true,
+      "zone": "H06",
+      "reference": "GEN-09 (rock family audit pending)",
+      "status": "Explicit unaccepted placement specimen; exact source design unresolved",
+      "reference_id": null
+    },
+    {
+      "id": "FC05-ROCK-8",
+      "kind": "rock",
+      "x": 9.048645189031959,
+      "z": -30.817210380919278,
+      "y": -0.2794781221478715,
+      "radius": 0.8,
+      "height": 0.829701082687825,
+      "crown_radius": 0.8,
+      "crown_base_m": 3,
+      "block": true,
+      "zone": "H04",
+      "reference": "GEN-09 (rock family audit pending)",
+      "status": "Explicit unaccepted placement specimen; exact source design unresolved",
+      "reference_id": null
+    },
+    {
+      "id": "FC05-ROCK-9",
+      "kind": "rock",
+      "x": -37.89274560753256,
+      "z": -29.332861937582493,
+      "y": -0.08885947977719155,
+      "radius": 0.8,
+      "height": 0.905164308496751,
+      "crown_radius": 0.8,
+      "crown_base_m": 3,
+      "block": true,
+      "zone": "H03",
+      "reference": "GEN-09 (rock family audit pending)",
+      "status": "Explicit unaccepted placement specimen; exact source design unresolved",
+      "reference_id": null
+    },
+    {
+      "id": "FC05-ROCK-10",
+      "kind": "rock",
+      "x": 47.169627053663135,
+      "z": -23.47898517269641,
+      "y": -0.28911881809144546,
+      "radius": 0.8,
+      "height": 0.5262746685184538,
+      "crown_radius": 0.8,
+      "crown_base_m": 3,
+      "block": true,
+      "zone": "H04",
+      "reference": "GEN-09 (rock family audit pending)",
+      "status": "Explicit unaccepted placement specimen; exact source design unresolved",
+      "reference_id": null
+    },
+    {
+      "id": "FC05-BLUEBELL-1",
+      "kind": "bluebell",
+      "x": -11.534838457591832,
+      "z": 26.065893154591322,
+      "y": -0.7599489102795118,
+      "radius": 0.225,
+      "height": 0.3362707096268423,
+      "crown_radius": 0.225,
+      "crown_base_m": 3,
+      "block": false,
+      "zone": "H04",
+      "reference": "F02-NATURE-001-A10",
+      "status": "Procedural source-family fit variant; final art pending",
+      "reference_id": "F02-NATURE-001-A10"
+    },
+    {
+      "id": "FC05-BLUEBELL-2",
+      "kind": "bluebell",
+      "x": -34.20497211627662,
+      "z": 61.83767085429281,
+      "y": -0.9023454373783437,
+      "radius": 0.225,
+      "height": 0.3772802763618529,
+      "crown_radius": 0.225,
+      "crown_base_m": 3,
+      "block": false,
+      "zone": "H06",
+      "reference": "F02-NATURE-001-A10",
+      "status": "Procedural source-family fit variant; final art pending",
+      "reference_id": "F02-NATURE-001-A10"
+    },
+    {
+      "id": "FC05-BLUEBELL-3",
+      "kind": "bluebell",
+      "x": 11.593315158970654,
+      "z": -64.0354981739074,
+      "y": -0.16740189644180248,
+      "radius": 0.225,
+      "height": 0.4451267067692243,
+      "crown_radius": 0.225,
+      "crown_base_m": 3,
+      "block": false,
+      "zone": "H06",
+      "reference": "F02-NATURE-001-A10",
+      "status": "Procedural source-family fit variant; final art pending",
+      "reference_id": "F02-NATURE-001-A10"
+    },
+    {
+      "id": "FC05-BLUEBELL-4",
+      "kind": "bluebell",
+      "x": -54.137776996940374,
+      "z": 9.793684021569788,
+      "y": -0.7015135979585025,
+      "radius": 0.225,
+      "height": 0.35887019962538036,
+      "crown_radius": 0.225,
+      "crown_base_m": 3,
+      "block": false,
+      "zone": "H06",
+      "reference": "F02-NATURE-001-A10",
+      "status": "Procedural source-family fit variant; final art pending",
+      "reference_id": "F02-NATURE-001-A10"
+    },
+    {
+      "id": "FC05-BLUEBELL-5",
+      "kind": "bluebell",
+      "x": -12.724977317266166,
+      "z": 10.180493732914329,
+      "y": -0.6638159252672224,
+      "radius": 0.225,
+      "height": 0.35290745937963947,
+      "crown_radius": 0.225,
+      "crown_base_m": 3,
+      "block": false,
+      "zone": "H02",
+      "reference": "F02-NATURE-001-A10",
+      "status": "Procedural source-family fit variant; final art pending",
+      "reference_id": "F02-NATURE-001-A10"
+    },
+    {
+      "id": "FC05-BLUEBELL-6",
+      "kind": "bluebell",
+      "x": -42.386025972664356,
+      "z": 13.167367060668766,
+      "y": -0.7416799844842501,
+      "radius": 0.225,
+      "height": 0.40147090272512287,
+      "crown_radius": 0.225,
+      "crown_base_m": 3,
+      "block": false,
+      "zone": "H02",
+      "reference": "F02-NATURE-001-A10",
+      "status": "Procedural source-family fit variant; final art pending",
+      "reference_id": "F02-NATURE-001-A10"
+    },
+    {
+      "id": "FC05-BLUEBELL-7",
+      "kind": "bluebell",
+      "x": -12.21304899547249,
+      "z": -52.329672649502754,
+      "y": -0.2505963256991208,
+      "radius": 0.225,
+      "height": 0.4443027885281481,
+      "crown_radius": 0.225,
+      "crown_base_m": 3,
+      "block": false,
+      "zone": "H03",
+      "reference": "F02-NATURE-001-A10",
+      "status": "Procedural source-family fit variant; final art pending",
+      "reference_id": "F02-NATURE-001-A10"
+    },
+    {
+      "id": "FC05-BLUEBELL-8",
+      "kind": "bluebell",
+      "x": -37.81398915685713,
+      "z": 22.7481985790655,
+      "y": -0.7874296718089866,
+      "radius": 0.225,
+      "height": 0.39459571628831325,
+      "crown_radius": 0.225,
+      "crown_base_m": 3,
+      "block": false,
+      "zone": "H02",
+      "reference": "F02-NATURE-001-A10",
+      "status": "Procedural source-family fit variant; final art pending",
+      "reference_id": "F02-NATURE-001-A10"
+    },
+    {
+      "id": "FC05-BLUEBELL-9",
+      "kind": "bluebell",
+      "x": -51.2726661330089,
+      "z": -41.54553043656051,
+      "y": -0.3547304402222409,
+      "radius": 0.225,
+      "height": 0.3953567146207206,
+      "crown_radius": 0.225,
+      "crown_base_m": 3,
+      "block": false,
+      "zone": "H02",
+      "reference": "F02-NATURE-001-A10",
+      "status": "Procedural source-family fit variant; final art pending",
+      "reference_id": "F02-NATURE-001-A10"
+    },
+    {
+      "id": "FC05-BLUEBELL-10",
+      "kind": "bluebell",
+      "x": 37.387263951823115,
+      "z": -31.421075430698693,
+      "y": 0.057379467282757446,
+      "radius": 0.225,
+      "height": 0.44728739191778005,
+      "crown_radius": 0.225,
+      "crown_base_m": 3,
+      "block": false,
+      "zone": "H04",
+      "reference": "F02-NATURE-001-A10",
+      "status": "Procedural source-family fit variant; final art pending",
+      "reference_id": "F02-NATURE-001-A10"
+    },
+    {
+      "id": "FC05-STRAWBERRY-1",
+      "kind": "strawberry",
+      "x": 52.67932950053364,
+      "z": 33.98639195598662,
+      "y": -0.6858161165859826,
+      "radius": 0.2,
+      "height": 0.25941434445558115,
+      "crown_radius": 0.2,
+      "crown_base_m": 3,
+      "block": false,
+      "zone": "H02",
+      "reference": "F02-NATURE-001-A11",
+      "status": "Procedural source-family fit variant; final art pending",
+      "reference_id": "F02-NATURE-001-A11"
+    },
+    {
+      "id": "FC05-STRAWBERRY-2",
+      "kind": "strawberry",
+      "x": 5.129690757021308,
+      "z": -68.44315290916711,
+      "y": -0.14275975373560357,
+      "radius": 0.2,
+      "height": 0.1970929122995585,
+      "crown_radius": 0.2,
+      "crown_base_m": 3,
+      "block": false,
+      "zone": "H06",
+      "reference": "F02-NATURE-001-A11",
+      "status": "Procedural source-family fit variant; final art pending",
+      "reference_id": "F02-NATURE-001-A11"
+    },
+    {
+      "id": "FC05-STRAWBERRY-3",
+      "kind": "strawberry",
+      "x": -9.094755998812616,
+      "z": 64.32059262879193,
+      "y": -0.9343347506010318,
+      "radius": 0.2,
+      "height": 0.16874459580285475,
+      "crown_radius": 0.2,
+      "crown_base_m": 3,
+      "block": false,
+      "zone": "H06",
+      "reference": "F02-NATURE-001-A11",
+      "status": "Procedural source-family fit variant; final art pending",
+      "reference_id": "F02-NATURE-001-A11"
+    },
+    {
+      "id": "FC05-STRAWBERRY-4",
+      "kind": "strawberry",
+      "x": -18.034775452688336,
+      "z": 58.43913014512509,
+      "y": -0.9093205533509376,
+      "radius": 0.2,
+      "height": 0.2530224970076233,
+      "crown_radius": 0.2,
+      "crown_base_m": 3,
+      "block": false,
+      "zone": "H06",
+      "reference": "F02-NATURE-001-A11",
+      "status": "Procedural source-family fit variant; final art pending",
+      "reference_id": "F02-NATURE-001-A11"
+    },
+    {
+      "id": "FC05-STRAWBERRY-5",
+      "kind": "strawberry",
+      "x": -44.190415549091995,
+      "z": -18.3923361543566,
+      "y": -0.5254097447417934,
+      "radius": 0.2,
+      "height": 0.25683448476484044,
+      "crown_radius": 0.2,
+      "crown_base_m": 3,
+      "block": false,
+      "zone": "H03",
+      "reference": "F02-NATURE-001-A11",
+      "status": "Procedural source-family fit variant; final art pending",
+      "reference_id": "F02-NATURE-001-A11"
+    },
+    {
+      "id": "FC05-STRAWBERRY-6",
+      "kind": "strawberry",
+      "x": -13.5690201446414,
+      "z": -20.206743027083576,
+      "y": -0.35102726184524613,
+      "radius": 0.2,
+      "height": 0.20797752847429363,
+      "crown_radius": 0.2,
+      "crown_base_m": 3,
+      "block": false,
+      "zone": "H03",
+      "reference": "F02-NATURE-001-A11",
+      "status": "Procedural source-family fit variant; final art pending",
+      "reference_id": "F02-NATURE-001-A11"
+    },
+    {
+      "id": "FC05-STRAWBERRY-7",
+      "kind": "strawberry",
+      "x": -51.983679817058146,
+      "z": 18.402027487754822,
+      "y": -0.7381375520830176,
+      "radius": 0.2,
+      "height": 0.297700254956726,
+      "crown_radius": 0.2,
+      "crown_base_m": 3,
+      "block": false,
+      "zone": "H06",
+      "reference": "F02-NATURE-001-A11",
+      "status": "Procedural source-family fit variant; final art pending",
+      "reference_id": "F02-NATURE-001-A11"
+    },
+    {
+      "id": "FC05-STRAWBERRY-8",
+      "kind": "strawberry",
+      "x": -21.194095769897103,
+      "z": -29.211871777661145,
+      "y": 0.13177668996175385,
+      "radius": 0.2,
+      "height": 0.1844772908370942,
+      "crown_radius": 0.2,
+      "crown_base_m": 3,
+      "block": false,
+      "zone": "H03",
+      "reference": "F02-NATURE-001-A11",
+      "status": "Procedural source-family fit variant; final art pending",
+      "reference_id": "F02-NATURE-001-A11"
+    },
+    {
+      "id": "FC05-DEADWOOD-1",
+      "kind": "deadwood",
+      "x": 61.614939947612584,
+      "z": -19.034183965995908,
+      "y": -0.3680141259353391,
+      "radius": 1.5,
+      "height": 0.4228394823498093,
+      "crown_radius": 1.5,
+      "crown_base_m": 3,
+      "block": true,
+      "zone": "H06",
+      "reference": "F02-NATURE-001-A01",
+      "status": "Procedural source-family fit variant; final art pending",
+      "reference_id": "F02-NATURE-001-A01"
+    },
+    {
+      "id": "FC05-DEADWOOD-2",
+      "kind": "deadwood",
+      "x": 22.250229781493545,
+      "z": -63.223443259485066,
+      "y": -0.17157216704090672,
+      "radius": 1.5,
+      "height": 0.4798121662344783,
+      "crown_radius": 1.5,
+      "crown_base_m": 3,
+      "block": true,
+      "zone": "H06",
+      "reference": "F02-NATURE-001-A01",
+      "status": "Procedural source-family fit variant; final art pending",
+      "reference_id": "F02-NATURE-001-A01"
+    },
+    {
+      "id": "FC05-DEADWOOD-3",
+      "kind": "deadwood",
+      "x": -10.763512053526938,
+      "z": -21.851380728185177,
+      "y": -0.3861049952199096,
+      "radius": 1.5,
+      "height": 0.42879600046435373,
+      "crown_radius": 1.5,
+      "crown_base_m": 3,
+      "block": true,
+      "zone": "H03",
+      "reference": "F02-NATURE-001-A01",
+      "status": "Procedural source-family fit variant; final art pending",
+      "reference_id": "F02-NATURE-001-A01"
+    },
+    {
+      "id": "FC05-DEADWOOD-4",
+      "kind": "deadwood",
+      "x": -25.122417332604527,
+      "z": 21.338962647132576,
+      "y": -0.7662935303418124,
+      "radius": 1.5,
+      "height": 0.43555328701622786,
+      "crown_radius": 1.5,
+      "crown_base_m": 3,
+      "block": true,
+      "zone": "H04",
+      "reference": "F02-NATURE-001-A01",
+      "status": "Procedural source-family fit variant; final art pending",
+      "reference_id": "F02-NATURE-001-A01"
+    },
+    {
+      "id": "FC05-REED-1",
+      "kind": "reed",
+      "x": 47.3,
+      "z": 22,
+      "y": -1.1910339536950474,
+      "radius": 0.4,
+      "height": 1.1,
+      "crown_radius": 0.4,
+      "block": false,
+      "zone": "H05",
+      "reference": "GEN-09",
+      "status": "Explicit unaccepted placement specimen; exact source design unresolved",
+      "reference_id": null
+    },
+    {
+      "id": "FC05-REED-2",
+      "kind": "reed",
+      "x": 45.652112466548594,
+      "z": 26.15,
+      "y": -1.1892590758285593,
+      "radius": 0.4,
+      "height": 1.1,
+      "crown_radius": 0.4,
+      "block": false,
+      "zone": "H05",
+      "reference": "GEN-09",
+      "status": "Explicit unaccepted placement specimen; exact source design unresolved",
+      "reference_id": null
+    },
+    {
+      "id": "FC05-REED-3",
+      "kind": "reed",
+      "x": 41.150000000000006,
+      "z": 29.18801085141084,
+      "y": -1.1847336722212702,
+      "radius": 0.4,
+      "height": 1.1,
+      "crown_radius": 0.4,
+      "block": false,
+      "zone": "H05",
+      "reference": "GEN-09",
+      "status": "Explicit unaccepted placement specimen; exact source design unresolved",
+      "reference_id": null
+    },
+    {
+      "id": "FC05-REED-4",
+      "kind": "reed",
+      "x": 35,
+      "z": 30.3,
+      "y": -1.1822799320736266,
+      "radius": 0.4,
+      "height": 1.1,
+      "crown_radius": 0.4,
+      "block": false,
+      "zone": "H05",
+      "reference": "GEN-09",
+      "status": "Explicit unaccepted placement specimen; exact source design unresolved",
+      "reference_id": null
+    },
+    {
+      "id": "FC05-REED-5",
+      "kind": "reed",
+      "x": 28.85,
+      "z": 29.18801085141084,
+      "y": -1.1849340745352919,
+      "radius": 0.4,
+      "height": 1.1,
+      "crown_radius": 0.4,
+      "block": false,
+      "zone": "H05",
+      "reference": "GEN-09",
+      "status": "Explicit unaccepted placement specimen; exact source design unresolved",
+      "reference_id": null
+    },
+    {
+      "id": "FC05-REED-6",
+      "kind": "reed",
+      "x": 24.347887533451406,
+      "z": 26.15,
+      "y": -1.1895046897741963,
+      "radius": 0.4,
+      "height": 1.1,
+      "crown_radius": 0.4,
+      "block": false,
+      "zone": "H05",
+      "reference": "GEN-09",
+      "status": "Explicit unaccepted placement specimen; exact source design unresolved",
+      "reference_id": null
+    },
+    {
+      "id": "FC05-REED-7",
+      "kind": "reed",
+      "x": 22.7,
+      "z": 22,
+      "y": -1.1912734314786775,
+      "radius": 0.4,
+      "height": 1.1,
+      "crown_radius": 0.4,
+      "block": false,
+      "zone": "H05",
+      "reference": "GEN-09",
+      "status": "Explicit unaccepted placement specimen; exact source design unresolved",
+      "reference_id": null
+    },
+    {
+      "id": "FC05-REED-8",
+      "kind": "reed",
+      "x": 24.347887533451406,
+      "z": 17.849999999999998,
+      "y": -1.3190170227481701,
+      "radius": 0.4,
+      "height": 1.1,
+      "crown_radius": 0.4,
+      "block": false,
+      "zone": "H05",
+      "reference": "GEN-09",
+      "status": "Explicit unaccepted placement specimen; exact source design unresolved",
+      "reference_id": null
+    },
+    {
+      "id": "FC05-REED-9",
+      "kind": "reed",
+      "x": 28.849999999999994,
+      "z": 14.81198914858916,
+      "y": -1.1820438928217527,
+      "radius": 0.4,
+      "height": 1.1,
+      "crown_radius": 0.4,
+      "block": false,
+      "zone": "H05",
+      "reference": "GEN-09",
+      "status": "Explicit unaccepted placement specimen; exact source design unresolved",
+      "reference_id": null
+    },
+    {
+      "id": "FC05-REED-10",
+      "kind": "reed",
+      "x": 35,
+      "z": 13.7,
+      "y": -1.1782787875308927,
+      "radius": 0.4,
+      "height": 1.1,
+      "crown_radius": 0.4,
+      "block": false,
+      "zone": "H05",
+      "reference": "GEN-09",
+      "status": "Explicit unaccepted placement specimen; exact source design unresolved",
+      "reference_id": null
+    },
+    {
+      "id": "FC05-REED-11",
+      "kind": "reed",
+      "x": 41.150000000000006,
+      "z": 14.81198914858916,
+      "y": -1.1817936168761918,
+      "radius": 0.4,
+      "height": 1.1,
+      "crown_radius": 0.4,
+      "block": false,
+      "zone": "H05",
+      "reference": "GEN-09",
+      "status": "Explicit unaccepted placement specimen; exact source design unresolved",
+      "reference_id": null
+    },
+    {
+      "id": "FC05-REED-12",
+      "kind": "reed",
+      "x": 45.652112466548594,
+      "z": 17.849999999999994,
+      "y": -1.1881144330384785,
+      "radius": 0.4,
+      "height": 1.1,
+      "crown_radius": 0.4,
+      "block": false,
+      "zone": "H05",
+      "reference": "GEN-09",
+      "status": "Explicit unaccepted placement specimen; exact source design unresolved",
+      "reference_id": null
+    }
+  ],
+  "water": {
+    "centre": [
+      35,
+      22
+    ],
+    "radii": [
+      12,
+      8
+    ],
+    "level_relative_m": -0.7,
+    "status": "Small proposed test pond; does not move or replace FD02"
+  },
+  "rill": {
+    "points": [
+      [
+        -5,
+        -70
+      ],
+      [
+        -5,
+        -62
+      ],
+      [
+        0,
+        -50
+      ],
+      [
+        5,
+        -30
+      ],
+      [
+        12,
+        0
+      ],
+      [
+        23,
+        18
+      ],
+      [
+        35,
+        22
+      ]
+    ],
+    "levels": [
+      0.15,
+      0.1,
+      0,
+      -0.15,
+      -0.3,
+      -0.5,
+      -0.7
+    ],
+    "width_m": 1.1
+  },
+  "bridge": {
+    "centre": [
+      -3.488372093,
+      -58.372093023
+    ],
+    "direction": [
+      0.9701425,
+      0.2425356
+    ],
+    "length_m": 5,
+    "width_m": 3,
+    "deck_relative_m": 0.48,
+    "ramp_length_m": 2
+  },
+  "apron": {
+    "port": [
+      0,
+      7
+    ],
+    "connects_to": "Existing west route and clearing spur"
+  },
+  "symmetry": {
+    "mode": "bilateral shell / asymmetric furnishings and ecology",
+    "axis": "X=0",
+    "exceptions": [
+      "Source scatter, rear window rhythm and sitting-room use determine asymmetric dressing."
+    ]
+  }
+}
