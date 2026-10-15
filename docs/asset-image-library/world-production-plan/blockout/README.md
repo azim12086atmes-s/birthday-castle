@@ -6,6 +6,8 @@ This is a proposed terrain and route review. It runs independently of the existi
 
 **Regional terrain update:** [Biome and FC05 habitat evidence](BIOMES-AND-TERRAIN.md) adds physical landform proposals, six transition sections, six local ground zones and 94 placement envelopes. The complete forest loop and return are now tested in the browser.
 
+**Access update:** [Separate crossing review](access.html) and [feasibility findings](ACCESS-REVIEW.md) profile all 14 wet candidates and four steep transitions. The west alternative includes a complete browser out-and-return test. Rejected alignments are retained as failures, not promoted to navigation.
+
 ## Run and verify
 
 Serve the **repository root**, rather than opening the HTML through `file://`:

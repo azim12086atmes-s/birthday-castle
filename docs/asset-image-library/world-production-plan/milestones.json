@@ -13,8 +13,8 @@
       "name": "Geography and route blockout",
       "deliverables": "Elevation/shore/water layers, site pads, crossing locations, regional transitions and travel graph.",
       "exit_evidence": "All G01\u2013G08 decisions resolved enough for first routes; concept polylines are not marked playable.",
-      "status": "regional-terrain-and-FC05-habitat-pass-tested-pending-geography-review",
-      "evidence": "blockout/BIOMES-AND-TERRAIN.md; biome-verification.json and biome-browser-verification.json. Four transition grade reviews, 14 regional crossing candidates and final access remain unresolved."
+      "status": "regional-access-feasibility-and-west-connector-tested-pending-review",
+      "evidence": "blockout/ACCESS-REVIEW.md; access-verification.json and access-browser-verification.json. All 14 crossings and four flagged transitions profiled. Separate west connector tested; unsuitable alignments remain rejected. Full-world access remains unresolved."
     },
     {
       "id": "P2",
@@ -137,6 +137,6 @@
       "exit_evidence": "Each island has a working arrival and return, explorable focal route and bounded content; no flight system is assumed."
     }
   ],
-  "current_next_deliverable": "Resolve flagged regional transition grades and a selected crossing, then extend terrain/habitat placement along west woodland and lake approaches using existing references.",
+  "current_next_deliverable": "Compare a shorter west stair connection against the 1 km ramp option, connect its dry landings to village/forest entrances, and revise high-lift/footprint-conflicting regional crossings before dressing.",
   "local_first_rule": "Resolve world geography at coarse level, but only require sample-local elevations, water, boundaries and access for the first prototype; refine distant-region unknowns in their own wave."
 }

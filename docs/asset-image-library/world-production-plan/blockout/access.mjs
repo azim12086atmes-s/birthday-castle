@@ -1,0 +1,31 @@
+import {distance,length,resample,nearLine,mix} from './geography.mjs';
+export const contract={max_grade:.08,deck_width_m:3.2,clear_width_m:2.8,guard_height_m:1.1,slab_m:.4,water_headroom_m:4.5,water_sampling_margin_m:.25,body_radius_m:.45,eye_height_m:1.6};
+export function chain(points){let s=0;return points.map((p,i)=>({p,s:i?(s+=distance(points[i-1],p)):0}));}
+export function at(nodes,s){let i=1;while(i<nodes.length-1&&nodes[i].s<s)i++;const a=nodes[i-1],b=nodes[i],t=(s-a.s)/(b.s-a.s);return [mix(a.p[0],b.p[0],t),mix(a.p[1],b.p[1],t)];}
+function sample(geo,nodes,start,end){const n=Math.ceil((end-start)/2),rows=[];for(let i=0;i<=n;i++){
+ const s=start+(end-start)*i/n,p=at(nodes,s),a=at(nodes,s-.1),b=at(nodes,s+.1),d=distance(a,b),normal=[-(b[1]-a[1])/d,(b[0]-a[0])/d];
+ const across=[-1.6,-.8,0,.8,1.6].map(v=>{const q=[p[0]+v*normal[0],p[1]+v*normal[1]];return {ground:geo.height(...q),water:geo.waterAt(...q)};});
+ const ground=geo.height(...p),wet=across.filter(q=>q.water).map(q=>q.water),level=wet.length?Math.max(...wet.map(w=>w.level)):null;
+ rows.push({s,x:p[0],z:p[1],normal,ground,edge_ground:Math.max(...across.map(q=>q.ground)),water_level:level,water_ids:[...new Set(wet.map(w=>w.id))],y:Math.max(...across.map(q=>q.ground+.05),level===null?-Infinity:level+contract.slab_m+contract.water_headroom_m+contract.water_sampling_margin_m)});
+ }for(let i=1;i<rows.length;i++)rows[i].y=Math.max(rows[i].y,rows[i-1].y-contract.max_grade*(rows[i].s-rows[i-1].s));
+ for(let i=rows.length-2;i>=0;i--)rows[i].y=Math.max(rows[i].y,rows[i+1].y-contract.max_grade*(rows[i+1].s-rows[i].s));return rows;
+}
+export function createAccessPlans(geo,source,review,ecology){const requests=[];
+ for(const c of review.crossing_candidates){const r=source.routes.find(r=>r.id===c.route_id),nodes=chain(r.points_xz_m),dense=chain(resample(r.points_xz_m,2));let nearest=dense.reduce((a,b)=>distance(b.p,c.point)<distance(a.p,c.point)?b:a),lo=nearest.s,hi=nearest.s;
+ while(lo>0&&geo.waterAt(...at(nodes,lo)))lo-=2;while(hi<nodes.at(-1).s&&geo.waterAt(...at(nodes,hi)))hi+=2;
+ requests.push({id:c.id,kind:'crossing',name:`${c.id} · ${c.water}`,nodes,start:lo,end:hi,source_route:c.route_id,source_point:c.point});}
+ for(const t of ecology.transition_sections.filter(t=>t.requires_grade_review))requests.push({id:t.id,kind:'transition',name:t.name,nodes:chain(t.points),start:0,end:length(t.points),source_route:null,source_point:t.points[0]});
+ // Alternate west connector keeps the source crossing, but bends the east approach
+ // outside B12's reservation. The saved FT02 corridor is not overwritten.
+ const west=[[-3250,-650],[-3000,-650],[-2800,-650],[-2700,-600],[-2630,-460],[-2500,-460]];
+ const pilot=requests.find(r=>r.id==='FT02-C1');pilot.nodes=chain(west);pilot.start=0;pilot.end=length(west);pilot.alignment='West pilot: bent east-bank approach avoids B12; village entrance remains separate';
+ const transition=requests.find(r=>r.id==='TR02');transition.nodes=chain([[-3700,-500],...west]);transition.start=0;transition.end=transition.nodes.at(-1).s;transition.alignment='Alternate TR02: woodland approach joins the bent west crossing; original transition band retained in geography view';
+ return requests.map(r=>{let rows,margin=80;for(;margin<=2000;margin+=40){rows=sample(geo,r.nodes,r.start-margin,r.end+margin);if([rows[0],rows.at(-1)].every(p=>p.water_level===null&&p.y-p.edge_ground<.051))break;}
+ const wet=rows.filter(p=>p.water_level!==null),grade=Math.max(...rows.slice(1).map((p,i)=>Math.abs(p.y-rows[i].y)/(p.s-rows[i].s))),maxLift=Math.max(...rows.map(p=>p.y-p.ground));
+ const protected_sites=[...source.landmarks,...source.forest_cottages].filter(p=>rows.some(q=>Math.abs(q.x-p.x_m)<p.width_m/2+contract.deck_width_m/2+2&&Math.abs(q.z-p.z_m)<p.depth_m/2+contract.deck_width_m/2+2)).map(p=>p.id);
+ const ties=[rows[0],rows.at(-1)].map(p=>({point:[p.x,p.z],deck_y:p.y,ground_y:p.ground,edge_ground_y:p.edge_ground,landing_grading_m:p.y-p.ground,dry:p.water_level===null,tied:p.water_level===null&&p.y-p.edge_ground<.051}));
+ return {id:r.id,name:r.name,kind:r.kind,source_route:r.source_route,source_point:r.source_point,original_interval_m:[r.start,r.end],length_m:rows.at(-1).s-rows[0].s,approach_extension_m:(r.start-rows[0].s),max_grade:grade,max_lift_m:maxLift,wet_length_m:wet.length*2,min_soffit_clearance_m:wet.length?Math.min(...wet.map(p=>p.y-contract.slab_m-p.water_level)):null,protected_sites,ties,alignment:r.alignment||'Source-aligned feasibility profile; not a selected construction solution',profiles:rows,status:protected_sites.length?'Rejected alignment: footprint conflict':!ties.every(t=>t.tied)?'Rejected profile: approach tie unresolved':maxLift>25?'Alternative needed: excessive deck elevation':'Profile fits proposed limits; structural and entrance design pending',structure:wet.length>150?'Long elevated crossing; pier-free navigation openings and support spans unresolved':'Raised path / short crossing; supports and bank landings unresolved',limits:['Dry endpoints require the reported small landing grading; no building entrance is inferred.','8% is a gameplay ramp proposal, not an accessibility or structural certification.','4.5 m soffit clearance is provisional; final boat height and supports are not defined.','Only this connector is profiled; intervening source-route grades and route-to-route junctions remain unresolved.']};});
+}
+export function profileAt(plan,s,lateral=0){const ps=plan.profiles;let i=1;while(i<ps.length-1&&ps[i].s<s)i++;const a=ps[i-1],b=ps[i],t=(s-a.s)/(b.s-a.s),nx=mix(a.normal[0],b.normal[0],t),nz=mix(a.normal[1],b.normal[1],t);return {x:mix(a.x,b.x,t)+nx*lateral,z:mix(a.z,b.z,t)+nz*lateral,y:mix(a.y,b.y,t)};}
+// This confined review walker cannot leave the clear deck or skip its ends.
+export function moveAccess(plan,state,ds,dl){const n=Math.max(1,Math.ceil(Math.hypot(ds,dl)/.1));let travelled=0;for(let i=0;i<n;i++){const s=state.s+ds/n,l=state.l+dl/n;if(s<plan.profiles[0].s||s>plan.profiles.at(-1).s||Math.abs(l)>contract.clear_width_m/2-contract.body_radius_m)continue;const a=profileAt(plan,state.s,state.l),b=profileAt(plan,s,l);if(Math.abs(b.y-a.y)>.2)continue;travelled+=Math.hypot(s-state.s,l-state.l);state.s=s;state.l=l;}return travelled;}

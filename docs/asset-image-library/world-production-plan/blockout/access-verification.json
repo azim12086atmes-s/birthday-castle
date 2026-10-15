@@ -1,0 +1,23 @@
+{
+  "status": "pass",
+  "checks": [
+    "Canonical map SHA unchanged; all 14 crossings and four flagged transitions have separate feasibility profiles",
+    "Every profile checked at ≤2 m chainage and five transverse samples: ≤8% grade, ground clearance and ≥4.5 m provisional water headroom (18501 wet samples)",
+    "West floor interpolation independently sampled every 0.5 m at centre and both deck edges",
+    "West alternate avoids every protected pad; swept 0.1 m body checks traverse 2016.7 m out-and-return; deck guards and endpoint caps block escape",
+    "15 unsuitable profiles remain visibly rejected or alternative-needed; source corridors are not marked playable"
+  ],
+  "pilot": {
+    "id": "FT02-C1",
+    "length_m": 1008.3281572999748,
+    "return_distance_m": 2016.6563145996652,
+    "max_grade": 0.08000000000000228,
+    "max_lift_m": 20.568787589134452,
+    "min_soffit_clearance_m": 4.75,
+    "landing_adjustments_m": [
+      0.05024009401741125,
+      0.05956514245774258
+    ]
+  },
+  "not_certified": "Between-station extrema, support engineering, final boat dimensions, deck joints, regional junctions, building entrances and complete world navigation remain pending"
+}

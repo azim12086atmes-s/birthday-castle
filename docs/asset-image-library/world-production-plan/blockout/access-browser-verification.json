@@ -1,0 +1,25 @@
+{
+  "status": "pass",
+  "report_sha256": "936a67996255356a76b222346edaf30857ad4232ab87c5d3b56d28f29c8a2ac1",
+  "browser": "Chromium / Playwright / software WebGL2",
+  "viewports": [
+    "1280\u00d7900",
+    "1024\u00d7768 replay",
+    "390\u00d7844"
+  ],
+  "checks": [
+    "All 18 connectors selectable; rejected footprint alignment visible",
+    "Overhead, whole-world overview, profile and terrain render",
+    "Real keyboard forward movement and swept lateral containment",
+    "Full west connector traversed out and back on animation frames",
+    "Mobile layout fits without horizontal overflow"
+  ],
+  "west_walk": {
+    "status": "pass",
+    "distance_m": 2016.656314599921,
+    "expected_m": 2016.6563145999496,
+    "returned": true
+  },
+  "page_errors": [],
+  "limits": "Confined connector exercise; not an integrated entrance, support simulation or complete-world navigation"
+}
