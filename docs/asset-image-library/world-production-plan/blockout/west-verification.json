@@ -1,0 +1,37 @@
+{
+  "status": "pass",
+  "source_sha256": "0a4849d55bc9f9614a231b1e172fc6ff801831a401ab246df6477e99ea39f773",
+  "checks": [
+    "Canonical map preserved; 345 whole 150 mm risers / 300 mm treads, 33 unchanged 2.8 m landings; terminal 9/6-riser hosts explicitly identified",
+    "Flat arrival/turn ports eliminate unintended apron lips; the input geography and prior ramp evidence are not mutated",
+    "Stair toes, flight/landing sockets and deck independently sampled every 25 mm: no ground intersection, ≤150 mm step, ≥4.5 m soffit headroom over water",
+    "Both matched-arrival routes traversed out and back using actual X/Z movement, 60 mm swept substeps, existing habitat blockers and no position jumps",
+    "Village gate passes the human body, blocks side-post and oversized-headroom probes; swept movement cannot cross stair guard envelopes",
+    "All other reserved buildings/cottages avoided; B12 overlap limited to the declared four-metre gate arrival apron"
+  ],
+  "routes": {
+    "stairs": {
+      "one_way_m": 1680.7360223434748,
+      "return_distance_m": 3361.4720446874876,
+      "max_sampled_surface_grade": 1.5000000226136625
+    },
+    "ramp": {
+      "one_way_m": 1968.7453781457955,
+      "return_distance_m": 3937.490756291806,
+      "max_sampled_surface_grade": 0.20302824397717245
+    }
+  },
+  "shortening_m": 288.00935580232067,
+  "steps": {
+    "risers": 345,
+    "rest_landings": 33,
+    "max_step_m": 0.15000000000000568,
+    "min_floor_above_ground_m": 0.2878658042870583,
+    "min_soffit_headroom_m": 4.83329846154011
+  },
+  "limits": [
+    "Proposed B12 west gate is a reservation-boundary port; individual village doors/streets remain unresolved.",
+    "Confined route surface and bank landing geometry; supports, final architecture and full-world navigation remain pending.",
+    "Terminal flights use explicit partial-riser hosts; full K09 flights keep their 10 risers and are never stretched."
+  ]
+}

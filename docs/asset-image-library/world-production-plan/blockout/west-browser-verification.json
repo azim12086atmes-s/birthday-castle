@@ -1,0 +1,46 @@
+{
+  "status": "pass",
+  "report_sha256": "7a4c53fd25e4fcfeabfed3fc01b49f0ea496dd475edb3890c7826c2be933be25",
+  "browser": "Chromium / Playwright / software WebGL2",
+  "viewports": [
+    "1280\u00d7900",
+    "1024\u00d7768 replay",
+    "390\u00d7844"
+  ],
+  "checks": [
+    "Matched-arrival alternatives, profiles, overhead and terrain views load",
+    "Instanced treads, rest landings, gate and FC05 context render",
+    "Real keyboard movement uses the same swept X/Z solver as replay",
+    "Entire stair crossing and both approaches traversed and reversed",
+    "Entire FC05 apron \u2192 cottage loop \u2192 regional path \u2192 proposed village gate \u2192 FC05 traversed on animation frames",
+    "Changing view cancels a check; mobile layout has no horizontal overflow"
+  ],
+  "crossing_walk": {
+    "status": "pass",
+    "kind": "crossing",
+    "distance_m": 555.7999999999993,
+    "expected_m": 555.8000000000002,
+    "returned": true,
+    "return_position": {
+      "x": -2941.500000000001,
+      "z": -650
+    }
+  },
+  "full_walk": {
+    "status": "pass",
+    "kind": "full",
+    "distance_m": 3361.472044686939,
+    "expected_m": 3361.4720446869496,
+    "returned": true,
+    "return_position": {
+      "x": -4000,
+      "z": -543.0000000000001
+    }
+  },
+  "page_errors": [],
+  "limits": "Engineering route with proposed gate; not an integrated village interior, final bridge/support design or production GPU benchmark",
+  "supplemental_checks": [
+    "Fresh render after guard posts moved outside the declared clear width; flight/gate/crossing screenshots refreshed",
+    "Fresh-browser X/Z sweep crosses the optional ramp turn landing in both axes without a barrier"
+  ]
+}

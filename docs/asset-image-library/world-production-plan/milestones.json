@@ -13,8 +13,8 @@
       "name": "Geography and route blockout",
       "deliverables": "Elevation/shore/water layers, site pads, crossing locations, regional transitions and travel graph.",
       "exit_evidence": "All G01\u2013G08 decisions resolved enough for first routes; concept polylines are not marked playable.",
-      "status": "regional-access-feasibility-and-west-connector-tested-pending-review",
-      "evidence": "blockout/ACCESS-REVIEW.md; access-verification.json and access-browser-verification.json. All 14 crossings and four flagged transitions profiled. Separate west connector tested; unsuitable alignments remain rejected. Full-world access remains unresolved."
+      "status": "west-village-forest-connection-tested-pending-review",
+      "evidence": "blockout/WEST-CONNECTION.md; west-verification.json and west-browser-verification.json. Matched-arrival stair/ramp alternatives, existing FC05 loop and proposed B12 gate connected; complete stair route return tested. Internal village streets, support engineering and remaining regional conflicts unresolved."
     },
     {
       "id": "P2",
@@ -137,6 +137,6 @@
       "exit_evidence": "Each island has a working arrival and return, explorable focal route and bounded content; no flight system is assumed."
     }
   ],
-  "current_next_deliverable": "Compare a shorter west stair connection against the 1 km ramp option, connect its dry landings to village/forest entrances, and revise high-lift/footprint-conflicting regional crossings before dressing.",
+  "current_next_deliverable": "Define B12 internal arrival lane and prototype its first reusable village/cottage wall, opening and roof hosts using saved references; keep the tested west route clear. Revise remaining regional terrain/crossing conflicts in their production waves.",
   "local_first_rule": "Resolve world geography at coarse level, but only require sample-local elevations, water, boundaries and access for the first prototype; refine distant-region unknowns in their own wave."
 }

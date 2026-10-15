@@ -8,6 +8,8 @@ This is a proposed terrain and route review. It runs independently of the existi
 
 **Access update:** [Separate crossing review](access.html) and [feasibility findings](ACCESS-REVIEW.md) profile all 14 wet candidates and four steep transitions. The west alternative includes a complete browser out-and-return test. Rejected alignments are retained as failures, not promoted to navigation.
 
+**West route update:** [Stair/ramp comparison](west.html) connects FC05’s existing loop to a proposed B12 west gate. [Measurements and limits](WEST-CONNECTION.md) include whole-riser flights, landings, both arrival ports and complete return tests.
+
 ## Run and verify
 
 Serve the **repository root**, rather than opening the HTML through `file://`:

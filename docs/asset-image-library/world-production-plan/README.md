@@ -8,6 +8,8 @@
 
 **Regional terrain and biomes:** [Updated map and FC05 habitat pass](blockout/BIOMES-AND-TERRAIN.md) adds physical landforms, six transition profiles, six local ground zones and a complete local browser traversal. Four transition sections still need grading/crossing work; final flora/fauna models remain pending.
 
+**West arrival connection:** [Inspect the stair/ramp alternatives](blockout/west.html) · [Route evidence](blockout/WEST-CONNECTION.md). The FC05 loop now has a proposed connection to a village-boundary gate; the internal village streets remain to define.
+
 ## Outcome and present state
 
 Build a connected, explorable princess-castle world through small tested sections. Geography and route logic come first, shared kit contracts second, playable samples third, then regional destinations. New pictures are generated only for a demonstrated missing design or construction view. A 230-sheet ceiling is not a requirement to fill every slot before building.
