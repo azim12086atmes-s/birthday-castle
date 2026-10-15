@@ -7,7 +7,7 @@
   "source_reference_id": "GEN-24",
   "source_reference_file": "images/illustrated-boards/GEN-24.png",
   "source_reference_sha256": "deb78cfce6dab5c31d9b3519d3bc01a07e58bba453b013fcdb76bd2e8be3f349",
-  "prompt": "Create ONE clean detailed GAME ASSET REFERENCE SHEET, NOT Blender or a3Dmodel. Plain light ivory studio background, soft even light, full uncropped separate objects, readable thickness, precise non-melting forms. FULL IDs and names outside silhouettes, dimensions marked PROPOSED. Each cell independent illustration scale. No environment scenery, humans, extra unlabeled objects, watermark or whole-palace redesign. Use ONLY the single supplied source image for visible style/material/form authority; infer missing backs and assembly interfaces conservatively. Source illustration motifs are inspiration, not recovered measured geometry. Exactly12 isolated main components in a clean4-column grid. No missing/empty slots or repeated subjects counted twice. One clear front/three-quarter view with useful small rear/top/contact inset per cell. Truly flat backs for appliques, square join ends for repeat mouldings. Screens have repeated coherent holes, no tangled tendrils. Windows separate glass from surrounds, cornices/parapets and posts separate where named. Do not include large room/scenery fragments attached to a tiny detail. Title \"INT-GALLERY-PROP-001 \u2014 Gallery Prop\". Footer \"Proposed construction / source-compatible references / mesh joins and views unverified\".\n\nPurpose/gap: Missing supporting interior components; reusable across several selected rooms\n\nINT-GALLERY-PROP-001-D01 \u2014 Portrait wall frame. Dimensions W,D,H [1.2, 0.1, 1.6]m proposed. One separate portrait wall frame at appropriate human scale; precise rose/ivory/gold and restrained blue textile motifs matching source. Preserve actual construction (four stable legs for furniture, flat backs for frames, one coherent object). No existing chandelier/mirror/tea-set master duplicated. Dimensions are bounding proposals to refine by function.\n\nINT-GALLERY-PROP-001-D02 \u2014 Small album display stand. Dimensions W,D,H [0.5, 0.4, 0.8]m proposed. One separate small album display stand at appropriate human scale; precise rose/ivory/gold and restrained blue textile motifs matching source. Preserve actual construction (four stable legs for furniture, flat backs for frames, one coherent object). No existing chandelier/mirror/tea-set master duplicated. Dimensions are bounding proposals to refine by function.\n\nINT-GALLERY-PROP-001-D03 \u2014 Memory display cabinet. Dimensions W,D,H [1.3, 0.5, 1.6]m proposed. One separate memory display cabinet at appropriate human scale; precise rose/ivory/gold and restrained blue textile motifs matching source. Preserve actual construction (four stable legs for furniture, flat backs for frames, one coherent object). No existing chandelier/mirror/tea-set master duplicated. Dimensions are bounding proposals to refine by function.\n\nINT-GALLERY-PROP-001-D04 \u2014 Sculpture plinth. Dimensions W,D,H [0.6, 0.6, 1.1]m proposed. One separate sculpture plinth at appropriate human scale; precise rose/ivory/gold and restrained blue textile motifs matching source. Preserve actual construction (four stable legs for furniture, flat backs for frames, one coherent object). No existing chandelier/mirror/tea-set master duplicated. Dimensions are bounding proposals to refine by function.\n\nINT-GALLERY-PROP-001-D05 \u2014 Picture light bracket. Dimensions W,D,H [0.4, 0.25, 0.2]m proposed. One separate picture light bracket at appropriate human scale; precise rose/ivory/gold and restrained blue textile motifs matching source. Preserve actual construction (four stable legs for furniture, flat backs for frames, one coherent object). No existing chandelier/mirror/tea-set master duplicated. Dimensions are bounding proposals to refine by function.\n\nINT-GALLERY-PROP-001-D06 \u2014 Keepsake box. Dimensions W,D,H [0.3, 0.2, 0.15]m proposed. One separate keepsake box at appropriate human scale; precise rose/ivory/gold and restrained blue textile motifs matching source. Preserve actual construction (four stable legs for furniture, flat backs for frames, one coherent object). No existing chandelier/mirror/tea-set master duplicated. Dimensions are bounding proposals to refine by function.\n\nINT-GALLERY-PROP-001-D07 \u2014 Hinged album. Dimensions W,D,H [0.35, 0.25, 0.05]m proposed. One separate hinged album at appropriate human scale; precise rose/ivory/gold and restrained blue textile motifs matching source. Preserve actual construction (four stable legs for furniture, flat backs for frames, one coherent object). No existing chandelier/mirror/tea-set master duplicated. Dimensions are bounding proposals to refine by function.\n\nINT-GALLERY-PROP-001-D08 \u2014 Carved gallery wall plaque. Dimensions W,D,H [0.6, 0.08, 0.4]m proposed. One separate carved gallery wall plaque at appropriate human scale; precise rose/ivory/gold and restrained blue textile motifs matching source. Preserve actual construction (four stable legs for furniture, flat backs for frames, one coherent object). No existing chandelier/mirror/tea-set master duplicated. Dimensions are bounding proposals to refine by function.\n\nINT-GALLERY-PROP-001-D09 \u2014 Display shelf corner. Dimensions W,D,H [0.6, 0.6, 0.15]m proposed. One separate display shelf corner at appropriate human scale; precise rose/ivory/gold and restrained blue textile motifs matching source. Preserve actual construction (four stable legs for furniture, flat backs for frames, one coherent object). No existing chandelier/mirror/tea-set master duplicated. Dimensions are bounding proposals to refine by function.\n\nINT-GALLERY-PROP-001-D10 \u2014 Freestanding easel frame. Dimensions W,D,H [0.65, 0.65, 1.6]m proposed. One separate freestanding easel frame at appropriate human scale; precise rose/ivory/gold and restrained blue textile motifs matching source. Preserve actual construction (four stable legs for furniture, flat backs for frames, one coherent object). No existing chandelier/mirror/tea-set master duplicated. Dimensions are bounding proposals to refine by function.\n\nINT-GALLERY-PROP-001-D11 \u2014 Small specimen bell jar. Dimensions W,D,H [0.25, 0.25, 0.5]m proposed. One separate small specimen bell jar at appropriate human scale; precise rose/ivory/gold and restrained blue textile motifs matching source. Preserve actual construction (four stable legs for furniture, flat backs for frames, one coherent object). No existing chandelier/mirror/tea-set master duplicated. Dimensions are bounding proposals to refine by function.\n\nINT-GALLERY-PROP-001-D12 \u2014 Gallery bench arm trim. Dimensions W,D,H [0.12, 0.45, 0.25]m proposed. One separate gallery bench arm trim at appropriate human scale; precise rose/ivory/gold and restrained blue textile motifs matching source. Preserve actual construction (four stable legs for furniture, flat backs for frames, one coherent object). No existing chandelier/mirror/tea-set master duplicated. Dimensions are bounding proposals to refine by function.\n\nCRITICAL part isolation and orientation rules:\nINT-GALLERY-PROP-001-D01: FRAME ONLY with open empty centre; no screen/glass/bookcase/door/landscape fused inside. Separate insert masters are reused.\nINT-GALLERY-PROP-001-D07: SMALL attachment hardware only: plate/socket/hook/joint with its own hole/root and source-compatible quiet ornament. No lantern body, full arch, whole column, complete door, garden or giant architectural scene glued to it.\nINT-GALLERY-PROP-001-D07: Broad thin horizontal object, underside supports on floor/table/bed, not a vertical wall plaque. No thick raised flower sculpt replacing usable surface.",
+  "prompt": "Create ONE detailed source-compatible reusable GAME ROOM DECOR REFERENCE SHEET. Title INT-GALLERY-PROP-001 \u2014 GALLERY & MEMORY DISPLAY DECOR. Exactly TWELVE clean isolated main prop cells in4x3 grid. One main three-quarter or broad-face illustration plus one small useful REAR, UNDERSIDE or OPEN/contact view of SAME object per cell. Short D01\u2013D12 suffix and readable NAME beside each item; full sheet ID in header. Dimensions W,D,H in metres marked PROPOSED, objects may have independent illustration scales. Plain ivory studio background, even light, no humans, rooms, scenery, unlabeled extras or merged objects. Match supplied GEN-24 furniture vocabulary: ivory and rose-veined marble, slender muted gold rose/star/lotus detail, restrained indigo and blush accents. Preserve physical structure and show clear contacts, openings and true back thickness. No generic Gothic arch attached to tiny accessories. Complete tabletop/furniture objects stay human sized, small hardware remains tiny. Empty frames and glass displays must have real clear negative space. These are new source-compatible types, not recovered measured geometry.\n\nINT-GALLERY-PROP-001-D01 \u2014 Portrait wall frame. Proposed W,D,H [1.2, 0.1, 1.6]m. One empty portrait WALL FRAME, ivory/gold rose-star carving, completely EMPTY central aperture with backing removed. Show rear hanging eyelets and frame thickness; no portrait, mirror, glass painting or wall.\n\nINT-GALLERY-PROP-001-D02 \u2014 Small album display stand. Proposed W,D,H [0.5, 0.4, 0.8]m. One small tabletop album DISPLAY STAND, tilted flat book-rest tray, simple support triangle and two low front retaining tabs. Not a complete easel, book or lectern with giant columns.\n\nINT-GALLERY-PROP-001-D03 \u2014 Memory display cabinet. Proposed W,D,H [1.3, 0.5, 1.6]m. One glazed memory DISPLAY CABINET, ivory/gold frame with clear glass door and two visible empty shelves. Show rear enclosure and clear door hinge side. No framed artwork or gifts inside.\n\nINT-GALLERY-PROP-001-D04 \u2014 Sculpture plinth. Proposed W,D,H [0.6, 0.6, 1.1]m. One plain small sculpture PLINTH, rose/ivory marble rectangular shaft on low foot, fine gold edge bands, level empty top. No sculpture, room or column capital.\n\nINT-GALLERY-PROP-001-D05 \u2014 Picture light bracket. Proposed W,D,H [0.4, 0.25, 0.2]m. One compact PICTURE LIGHT bracket: narrow gold horizontal light hood on two thin arms connected to a small flat wall plate. Show rear screw seats; no picture frame or full room attached.\n\nINT-GALLERY-PROP-001-D06 \u2014 Keepsake box. Proposed W,D,H [0.3, 0.2, 0.15]m. One shallow rectangular keepsake ARCHIVE BOX, ivory/blush timber with small label slot and flat hinged lid. Larger flat footprint, no jeweled crown or lotus feet; distinct from the new personal jewel casket. Small open view shows empty box.\n\nINT-GALLERY-PROP-001-D07 \u2014 Hinged album. Proposed W,D,H [0.35, 0.25, 0.05]m. One hinged MEMORY ALBUM open slightly to show thick cover, page block and hinge spine, blank inset picture mounts only. No specific family portraits or photographs.\n\nINT-GALLERY-PROP-001-D08 \u2014 Carved gallery wall plaque. Proposed W,D,H [0.6, 0.08, 0.4]m. One carved gallery WALL PLAQUE, shallow rose-marble oval with fine gold star/rose border and empty indigo centre for future inscription. Flat rear with two fixing holes, no wall chunk.\n\nINT-GALLERY-PROP-001-D09 \u2014 Display shelf corner. Proposed W,D,H [0.6, 0.6, 0.15]m. One90-degree DISPLAY SHELF corner with two flat wall contact edges and visible thickness, ivory/rose top and gold edge molding. No whole cabinet or standing legs.\n\nINT-GALLERY-PROP-001-D10 \u2014 Freestanding easel frame. Proposed W,D,H [0.65, 0.65, 1.6]m. One freestanding DISPLAY EASEL FRAME: empty ornate rectangular portrait frame on two front legs plus ONE rear prop leg. Show front and rear support, no canvas, painting or working-easel adjustment rack. Distinct from atelier H-frame easel.\n\nINT-GALLERY-PROP-001-D11 \u2014 Small specimen bell jar. Proposed W,D,H [0.25, 0.25, 0.5]m. One clear SPECIMEN BELL JAR with removable dome, small gold top knob and low rose-marble round base. EMPTY inside, glass visibly transparent, not a crystal lantern or animal habitat.\n\nINT-GALLERY-PROP-001-D12 \u2014 Gallery bench arm trim. Proposed W,D,H [0.12, 0.45, 0.25]m. One separate BENCH ARM TRIM applique, curved gold rose-scroll profile with flat inner mounting face and two pegs. No bench, seat cushion or human arm included.\nFooter: Proposed reference objects; anatomy-free props only; view parity, moving parts and mesh separation require model review.",
   "parts": [
     {
       "asset_id": "INT-GALLERY-PROP-001-D01",
@@ -19,7 +19,7 @@
         1.6
       ],
       "function": "Missing supporting interior components; reusable across several selected rooms",
-      "construction": "One separate portrait wall frame at appropriate human scale; precise rose/ivory/gold and restrained blue textile motifs matching source. Preserve actual construction (four stable legs for furniture, flat backs for frames, one coherent object). No existing chandelier/mirror/tea-set master duplicated. Dimensions are bounding proposals to refine by function. FRAME ONLY with open empty centre; no screen/glass/bookcase/door/landscape fused inside. Separate insert masters are reused.",
+      "construction": "One empty portrait WALL FRAME, ivory/gold rose-star carving, completely EMPTY central aperture with backing removed. Show rear hanging eyelets and frame thickness; no portrait, mirror, glass painting or wall.",
       "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
       "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
       "target_polycount_proposed": 2500,
@@ -49,7 +49,7 @@
         0.8
       ],
       "function": "Missing supporting interior components; reusable across several selected rooms",
-      "construction": "One separate small album display stand at appropriate human scale; precise rose/ivory/gold and restrained blue textile motifs matching source. Preserve actual construction (four stable legs for furniture, flat backs for frames, one coherent object). No existing chandelier/mirror/tea-set master duplicated. Dimensions are bounding proposals to refine by function.",
+      "construction": "One small tabletop album DISPLAY STAND, tilted flat book-rest tray, simple support triangle and two low front retaining tabs. Not a complete easel, book or lectern with giant columns.",
       "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
       "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
       "target_polycount_proposed": 2500,
@@ -79,10 +79,10 @@
         1.6
       ],
       "function": "Missing supporting interior components; reusable across several selected rooms",
-      "construction": "One separate memory display cabinet at appropriate human scale; precise rose/ivory/gold and restrained blue textile motifs matching source. Preserve actual construction (four stable legs for furniture, flat backs for frames, one coherent object). No existing chandelier/mirror/tea-set master duplicated. Dimensions are bounding proposals to refine by function.",
+      "construction": "One glazed memory DISPLAY CABINET, ivory/gold frame with clear glass door and two visible empty shelves. Show rear enclosure and clear door hinge side. No framed artwork or gifts inside.",
       "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
       "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
-      "target_polycount_proposed": 2500,
+      "target_polycount_proposed": 4000,
       "reuse_class": "reusable",
       "applies_to": [
         "Interiors and furniture"
@@ -109,7 +109,7 @@
         1.1
       ],
       "function": "Missing supporting interior components; reusable across several selected rooms",
-      "construction": "One separate sculpture plinth at appropriate human scale; precise rose/ivory/gold and restrained blue textile motifs matching source. Preserve actual construction (four stable legs for furniture, flat backs for frames, one coherent object). No existing chandelier/mirror/tea-set master duplicated. Dimensions are bounding proposals to refine by function.",
+      "construction": "One plain small sculpture PLINTH, rose/ivory marble rectangular shaft on low foot, fine gold edge bands, level empty top. No sculpture, room or column capital.",
       "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
       "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
       "target_polycount_proposed": 2500,
@@ -139,7 +139,7 @@
         0.2
       ],
       "function": "Missing supporting interior components; reusable across several selected rooms",
-      "construction": "One separate picture light bracket at appropriate human scale; precise rose/ivory/gold and restrained blue textile motifs matching source. Preserve actual construction (four stable legs for furniture, flat backs for frames, one coherent object). No existing chandelier/mirror/tea-set master duplicated. Dimensions are bounding proposals to refine by function.",
+      "construction": "One compact PICTURE LIGHT bracket: narrow gold horizontal light hood on two thin arms connected to a small flat wall plate. Show rear screw seats; no picture frame or full room attached.",
       "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
       "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
       "target_polycount_proposed": 2500,
@@ -169,7 +169,7 @@
         0.15
       ],
       "function": "Missing supporting interior components; reusable across several selected rooms",
-      "construction": "One separate keepsake box at appropriate human scale; precise rose/ivory/gold and restrained blue textile motifs matching source. Preserve actual construction (four stable legs for furniture, flat backs for frames, one coherent object). No existing chandelier/mirror/tea-set master duplicated. Dimensions are bounding proposals to refine by function.",
+      "construction": "One shallow rectangular keepsake ARCHIVE BOX, ivory/blush timber with small label slot and flat hinged lid. Larger flat footprint, no jeweled crown or lotus feet; distinct from the new personal jewel casket. Small open view shows empty box.",
       "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
       "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
       "target_polycount_proposed": 2500,
@@ -199,7 +199,7 @@
         0.05
       ],
       "function": "Missing supporting interior components; reusable across several selected rooms",
-      "construction": "One separate hinged album at appropriate human scale; precise rose/ivory/gold and restrained blue textile motifs matching source. Preserve actual construction (four stable legs for furniture, flat backs for frames, one coherent object). No existing chandelier/mirror/tea-set master duplicated. Dimensions are bounding proposals to refine by function. SMALL attachment hardware only: plate/socket/hook/joint with its own hole/root and source-compatible quiet ornament. No lantern body, full arch, whole column, complete door, garden or giant architectural scene glued to it.",
+      "construction": "One hinged MEMORY ALBUM open slightly to show thick cover, page block and hinge spine, blank inset picture mounts only. No specific family portraits or photographs.",
       "attachment_face": "Broad flat underside to floor/table/bed; shortest thickness normal Z",
       "semantic_front": "Decorated broad face upwards+Z",
       "target_polycount_proposed": 2500,
@@ -229,7 +229,7 @@
         0.4
       ],
       "function": "Missing supporting interior components; reusable across several selected rooms",
-      "construction": "One separate carved gallery wall plaque at appropriate human scale; precise rose/ivory/gold and restrained blue textile motifs matching source. Preserve actual construction (four stable legs for furniture, flat backs for frames, one coherent object). No existing chandelier/mirror/tea-set master duplicated. Dimensions are bounding proposals to refine by function.",
+      "construction": "One carved gallery WALL PLAQUE, shallow rose-marble oval with fine gold star/rose border and empty indigo centre for future inscription. Flat rear with two fixing holes, no wall chunk.",
       "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
       "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
       "target_polycount_proposed": 2500,
@@ -259,7 +259,7 @@
         0.15
       ],
       "function": "Missing supporting interior components; reusable across several selected rooms",
-      "construction": "One separate display shelf corner at appropriate human scale; precise rose/ivory/gold and restrained blue textile motifs matching source. Preserve actual construction (four stable legs for furniture, flat backs for frames, one coherent object). No existing chandelier/mirror/tea-set master duplicated. Dimensions are bounding proposals to refine by function.",
+      "construction": "One90-degree DISPLAY SHELF corner with two flat wall contact edges and visible thickness, ivory/rose top and gold edge molding. No whole cabinet or standing legs.",
       "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
       "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
       "target_polycount_proposed": 2500,
@@ -289,10 +289,10 @@
         1.6
       ],
       "function": "Missing supporting interior components; reusable across several selected rooms",
-      "construction": "One separate freestanding easel frame at appropriate human scale; precise rose/ivory/gold and restrained blue textile motifs matching source. Preserve actual construction (four stable legs for furniture, flat backs for frames, one coherent object). No existing chandelier/mirror/tea-set master duplicated. Dimensions are bounding proposals to refine by function.",
+      "construction": "One freestanding DISPLAY EASEL FRAME: empty ornate rectangular portrait frame on two front legs plus ONE rear prop leg. Show front and rear support, no canvas, painting or working-easel adjustment rack. Distinct from atelier H-frame easel.",
       "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
       "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
-      "target_polycount_proposed": 2500,
+      "target_polycount_proposed": 4000,
       "reuse_class": "reusable",
       "applies_to": [
         "Interiors and furniture"
@@ -319,7 +319,7 @@
         0.5
       ],
       "function": "Missing supporting interior components; reusable across several selected rooms",
-      "construction": "One separate small specimen bell jar at appropriate human scale; precise rose/ivory/gold and restrained blue textile motifs matching source. Preserve actual construction (four stable legs for furniture, flat backs for frames, one coherent object). No existing chandelier/mirror/tea-set master duplicated. Dimensions are bounding proposals to refine by function.",
+      "construction": "One clear SPECIMEN BELL JAR with removable dome, small gold top knob and low rose-marble round base. EMPTY inside, glass visibly transparent, not a crystal lantern or animal habitat.",
       "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
       "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
       "target_polycount_proposed": 2500,
@@ -349,7 +349,7 @@
         0.25
       ],
       "function": "Missing supporting interior components; reusable across several selected rooms",
-      "construction": "One separate gallery bench arm trim at appropriate human scale; precise rose/ivory/gold and restrained blue textile motifs matching source. Preserve actual construction (four stable legs for furniture, flat backs for frames, one coherent object). No existing chandelier/mirror/tea-set master duplicated. Dimensions are bounding proposals to refine by function.",
+      "construction": "One separate BENCH ARM TRIM applique, curved gold rose-scroll profile with flat inner mounting face and two pegs. No bench, seat cushion or human arm included.",
       "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
       "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
       "target_polycount_proposed": 2500,
@@ -370,12 +370,27 @@
       "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
     }
   ],
-  "outputs": [],
+  "outputs": [
+    {
+      "file": "completion-pass/INT-GALLERY-PROP-001/INT-GALLERY-PROP-001.png",
+      "sha256": "189cdebfeac95fd8f5142d592428b1e3ff872fc7e0946910f9233dd45ebd9ebb",
+      "original_file": "/workspace/generated_images/exec-ebb32fd1-9eeb-4455-8f54-b808a6d037c5.png",
+      "actual_input_file": "images/illustrated-boards/GEN-24.png",
+      "actual_input_sha256": "deb78cfce6dab5c31d9b3519d3bc01a07e58bba453b013fcdb76bd2e8be3f349",
+      "attempt": 1,
+      "generator": "image_gen.imagegen"
+    }
+  ],
   "previous_attempts": [],
   "models_generated": 0,
   "physical_join_fit_verified": false,
   "view_geometry_parity_verified": false,
-  "review_status": "planned-after-gap-audit",
+  "review_status": "visual-reviewed-gallery-props-pending-frame-back-and-contact-review",
   "gap": "Missing supporting interior components; reusable across several selected rooms",
-  "mode": "detail"
+  "mode": "detail",
+  "visual_review_notes": [
+    "Twelve gallery/display props are present, with clear glass cabinet and empty bell jar, empty frame fronts, open archive box, album views and rear mounting pegs for bench-arm trim. Palette follows the original palace.",
+    "D01 and D10 rear views add a solid backing panel although their front apertures are empty. Treat backing as optional/removable and keep intended empty frame openings clear; image does not prove exact front/back correspondence.",
+    "Picture-light arms, glass thickness, shelf wall contacts and easel stability require actual modeling review. Display-easel frame is a different form from the atelier working easel, not a duplicate painting mesh."
+  ]
 }

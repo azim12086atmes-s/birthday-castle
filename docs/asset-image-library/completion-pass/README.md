@@ -8,7 +8,7 @@ Main palace keeps GEN-37’s front, continuous angled/curved stepped wings, rose
 
 The coverage checks ask whether each form already exists, whether its construction/contact view is missing, whether interior ceiling/arch/wall/floor parts are present, whether water inlet/bend/junction/outlet parts are covered, and whether ecology fits each site. Reuse original plants, lighting, furnishings and hero wishes before new drawings. Each room snapshot is distinct from joinable structural shells and isolated details. Smaller views are not new model targets. Full IDs are in metadata; shorter D/A/S labels resolve under the sheet title.
 
-Progress: **23/115 queued sheets saved;118 component targets indexed so far**. Library: **116 selected sheets saved;208/230 selected or reserved;836 archive images**.230is a ceiling, not a target to pad.
+Progress: **30/118 queued sheets saved;196 component targets indexed so far**. Library: **123 selected sheets saved;211/230 selected or reserved;845 archive images**.230is a ceiling, not a target to pad.
 
 | Sheet | Gap covered | Parts | Status |
 | --- | --- | ---: | --- |
@@ -24,12 +24,15 @@ Progress: **23/115 queued sheets saved;118 component targets indexed so far**. L
 | [INT-SUITE-SHELL-001](INT-SUITE-SHELL-001/schedule.json) | Suite — interior shell sections | 4 | Saved reference; fit/model pending |
 | [INT-R02](INT-R02/schedule.json) | Princess suite — coordinated interior views | 1 | Saved reference; fit/model pending |
 | [INT-R03](INT-R03/schedule.json) | Dining salon — coordinated interior views | 1 | Saved reference; fit/model pending |
+| [INT-BED-DRESS-001](INT-BED-DRESS-001/schedule.json) | Finished canopy bed and bedding inserts | 10 | Saved reference; fit/model pending |
+| [INT-BALCONY-JOIN-001](INT-BALCONY-JOIN-001/schedule.json) | Circular bedroom flower balcony structural kit | 4 | Saved reference; fit/model pending |
+| [INT-BEDROOM-PROP-001](INT-BEDROOM-PROP-001/schedule.json) | Princess room personal decor | 12 | Saved reference; fit/model pending |
+| [INT-TEXTILE-JOINS-001](INT-TEXTILE-JOINS-001/schedule.json) | Textile Joins | 16 | Saved reference; fit/model pending |
 | [INT-SUITE-FURN-001](INT-SUITE-FURN-001/schedule.json) | Princess bedroom and dressing furniture | 4 | Saved reference; fit/model pending |
 | [INT-DINING-FURN-001](INT-DINING-FURN-001/schedule.json) | Dining and tea furniture sections | 4 | Saved reference; fit/model pending |
-| [INT-LIBRARY-PROP-001](INT-LIBRARY-PROP-001/schedule.json) | Library Prop | 12 | Queued; not generated |
-| [INT-GALLERY-PROP-001](INT-GALLERY-PROP-001/schedule.json) | Gallery Prop | 12 | Queued; not generated |
-| [INT-ATELIER-PROP-001](INT-ATELIER-PROP-001/schedule.json) | Atelier Prop | 12 | Queued; not generated |
-| [INT-TEXTILE-JOINS-001](INT-TEXTILE-JOINS-001/schedule.json) | Textile Joins | 16 | Queued; not generated |
+| [INT-LIBRARY-PROP-001](INT-LIBRARY-PROP-001/schedule.json) | Library Prop | 12 | Saved reference; fit/model pending |
+| [INT-GALLERY-PROP-001](INT-GALLERY-PROP-001/schedule.json) | Gallery Prop | 12 | Saved reference; fit/model pending |
+| [INT-ATELIER-PROP-001](INT-ATELIER-PROP-001/schedule.json) | Atelier Prop | 12 | Saved reference; fit/model pending |
 | [B02-INNER-001](B02-INNER-001/schedule.json) | Moon Water Palace — dome interior construction | 4 | Saved reference; fit/model pending |
 | [B02-INNER-DETAIL-001](B02-INNER-DETAIL-001/schedule.json) | Moon Water Palace — interior surfaces and fittings | 16 | Saved reference; fit/model pending |
 | [B03-STRUCT-001](B03-STRUCT-001/schedule.json) | Star Chapel — structural sections | 4 | Queued; not generated |

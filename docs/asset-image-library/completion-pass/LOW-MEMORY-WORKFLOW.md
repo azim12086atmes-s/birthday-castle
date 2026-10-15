@@ -11,8 +11,10 @@ Keep all originals, named outputs and superseded drafts. Reducing loaded referen
 
 ## Current review handoff
 
-The conservatory sheet was recovered from its existing local PNG without regeneration. Its pool-edge and railing cells include surrounding bay context. The suite shell sheet isolates four hosts, but tiny top diagrams need opening corrections. Bedroom view B swaps two furniture corner groups; the saved plan and cutaway control their intended positions. Dining seating counts need model review. The table-end underside has extra legs, and the centre-module front diagram shows an apron at a joining edge: follow the explicit proposed join contract and correct these when modeling.
+The owner's2026-10-15 request adds a west circular flower balcony to the bedroom, raises bedroom/dining apex heights to18m, and adds finished bedding plus personal and shared room decor. Prior room sheets are preserved as R01 drafts. See [bedroom changes and component map](BEDROOM-UPDATE.md).
 
-Next missing references are library props, gallery props, atelier props and textile joining details, followed by the source-specific map building kits and shared ecology/terrain queue. Reuse the existing celebration chair, mirrors, lights, textiles and foliage where they already fit.
+Inspect the notes for known image contradictions: a rail crosses the approach in one bedroom view; bedroom data prints an8x8m neck instead of8x4m and a4m bed canopy instead of the existing2.8m. The dedicated balcony and bedding sheets show the intended dimensions. Table cut-end aprons, frame back panels, textile pattern joins and support/hardware fit still need model review. Named prototype dimensions and saved layout proposals control these corrections; the images are not measured orthographic drawings.
+
+The selected palace slots have references saved, including bedding, personal items, textiles, library, gallery and atelier props. This is not proof of full palace asset completeness or fitted geometry. Remaining queued generation now starts with source-specific map building kits, followed by shared terrain/ecology. Keep the global230-sheet ceiling;211slots are allocated after this update, leaving19unallocated.
 
 No Blender, Meshy, paid model generation or runtime modifications are part of this reference pass.

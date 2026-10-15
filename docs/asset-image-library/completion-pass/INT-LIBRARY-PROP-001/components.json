@@ -10,10 +10,10 @@
         0.76
       ],
       "function": "Missing supporting interior components; reusable across several selected rooms",
-      "construction": "One separate writing desk at appropriate human scale; precise rose/ivory/gold and restrained blue textile motifs matching source. Preserve actual construction (four stable legs for furniture, flat backs for frames, one coherent object). No existing chandelier/mirror/tea-set master duplicated. Dimensions are bounding proposals to refine by function.",
+      "construction": "One writing desk with empty ivory/rose marble top, one shallow drawer, gold floral apron and four slender legs. No mirror, books, chair or whole room; show rear and underside contacts.",
       "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
       "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
-      "target_polycount_proposed": 2500,
+      "target_polycount_proposed": 4000,
       "reuse_class": "reusable",
       "applies_to": [
         "Interiors and furniture"
@@ -28,7 +28,17 @@
       "model_sha256": "",
       "review_status": "pending-reference-review",
       "suggested_model_filename": "INT-LIBRARY-PROP-001-D01__writing-desk__v001.glb",
-      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed",
+      "component_family": "Library Prop",
+      "parent_asset_family": "INT-LIBRARY-PROP-001",
+      "reference_image_id": "INT-LIBRARY-PROP-001",
+      "reference_file": "completion-pass/INT-LIBRARY-PROP-001/INT-LIBRARY-PROP-001.png",
+      "reference_sha256": "1a06167d52d6abd82dc48331c1fdcc4052abdbac75b398486769f099c00965be",
+      "source_reference_id": "GEN-24",
+      "source_reference_file": "images/illustrated-boards/GEN-24.png",
+      "source_reference_sha256": "deb78cfce6dab5c31d9b3519d3bc01a07e58bba453b013fcdb76bd2e8be3f349",
+      "notes": "Twelve library props are present, with open scroll case, book page/cover views, ladder side profile, wedge-cushion side and catalogue cabinet rear. Wedge support is distinct from the existing square/round accent cushions. Fine book counts, ladder hook fit, drawer travel and bracket fasteners remain illustrative. The upright book set is one reference grouping, not proof of individually separable meshes. Original palace ivory/rose marble, gold star/rose ornament and indigo/blush accents remain consistent. Full IDs resolve under the header plus D01\u2013D12. Source backs, dimensions, repeat patterns, inter-view parity and physical attachment remain unverified. Whole-sheet generation does not prove individual meshes are separable.",
+      "geometry_review_status": "unverified"
     },
     {
       "asset_id": "INT-LIBRARY-PROP-001-D02",
@@ -40,10 +50,10 @@
         2.6
       ],
       "function": "Missing supporting interior components; reusable across several selected rooms",
-      "construction": "One separate reading ladder at appropriate human scale; precise rose/ivory/gold and restrained blue textile motifs matching source. Preserve actual construction (four stable legs for furniture, flat backs for frames, one coherent object). No existing chandelier/mirror/tea-set master duplicated. Dimensions are bounding proposals to refine by function.",
+      "construction": "One straight portable library ladder, exactly two slender side rails, evenly spaced horizontal rungs and two open hooks at top. Front and side show same rung count. No bookcase attached. Dimensions describe upright object before leaning.",
       "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
       "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
-      "target_polycount_proposed": 2500,
+      "target_polycount_proposed": 4000,
       "reuse_class": "reusable",
       "applies_to": [
         "Interiors and furniture"
@@ -58,7 +68,17 @@
       "model_sha256": "",
       "review_status": "pending-reference-review",
       "suggested_model_filename": "INT-LIBRARY-PROP-001-D02__reading-ladder__v001.glb",
-      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed",
+      "component_family": "Library Prop",
+      "parent_asset_family": "INT-LIBRARY-PROP-001",
+      "reference_image_id": "INT-LIBRARY-PROP-001",
+      "reference_file": "completion-pass/INT-LIBRARY-PROP-001/INT-LIBRARY-PROP-001.png",
+      "reference_sha256": "1a06167d52d6abd82dc48331c1fdcc4052abdbac75b398486769f099c00965be",
+      "source_reference_id": "GEN-24",
+      "source_reference_file": "images/illustrated-boards/GEN-24.png",
+      "source_reference_sha256": "deb78cfce6dab5c31d9b3519d3bc01a07e58bba453b013fcdb76bd2e8be3f349",
+      "notes": "Twelve library props are present, with open scroll case, book page/cover views, ladder side profile, wedge-cushion side and catalogue cabinet rear. Wedge support is distinct from the existing square/round accent cushions. Fine book counts, ladder hook fit, drawer travel and bracket fasteners remain illustrative. The upright book set is one reference grouping, not proof of individually separable meshes. Original palace ivory/rose marble, gold star/rose ornament and indigo/blush accents remain consistent. Full IDs resolve under the header plus D01\u2013D12. Source backs, dimensions, repeat patterns, inter-view parity and physical attachment remain unverified. Whole-sheet generation does not prove individual meshes are separable.",
+      "geometry_review_status": "unverified"
     },
     {
       "asset_id": "INT-LIBRARY-PROP-001-D03",
@@ -70,7 +90,7 @@
         0.3
       ],
       "function": "Missing supporting interior components; reusable across several selected rooms",
-      "construction": "One separate book stack at appropriate human scale; precise rose/ivory/gold and restrained blue textile motifs matching source. Preserve actual construction (four stable legs for furniture, flat backs for frames, one coherent object). No existing chandelier/mirror/tea-set master duplicated. Dimensions are bounding proposals to refine by function.",
+      "construction": "Three CLOSED illustrated volumes stacked horizontally with distinct covers and page blocks, one coherent stack; no melting shared pages. This is a small prop grouping, not a wall of books.",
       "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
       "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
       "target_polycount_proposed": 2500,
@@ -88,7 +108,17 @@
       "model_sha256": "",
       "review_status": "pending-reference-review",
       "suggested_model_filename": "INT-LIBRARY-PROP-001-D03__book-stack__v001.glb",
-      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed",
+      "component_family": "Library Prop",
+      "parent_asset_family": "INT-LIBRARY-PROP-001",
+      "reference_image_id": "INT-LIBRARY-PROP-001",
+      "reference_file": "completion-pass/INT-LIBRARY-PROP-001/INT-LIBRARY-PROP-001.png",
+      "reference_sha256": "1a06167d52d6abd82dc48331c1fdcc4052abdbac75b398486769f099c00965be",
+      "source_reference_id": "GEN-24",
+      "source_reference_file": "images/illustrated-boards/GEN-24.png",
+      "source_reference_sha256": "deb78cfce6dab5c31d9b3519d3bc01a07e58bba453b013fcdb76bd2e8be3f349",
+      "notes": "Twelve library props are present, with open scroll case, book page/cover views, ladder side profile, wedge-cushion side and catalogue cabinet rear. Wedge support is distinct from the existing square/round accent cushions. Fine book counts, ladder hook fit, drawer travel and bracket fasteners remain illustrative. The upright book set is one reference grouping, not proof of individually separable meshes. Original palace ivory/rose marble, gold star/rose ornament and indigo/blush accents remain consistent. Full IDs resolve under the header plus D01\u2013D12. Source backs, dimensions, repeat patterns, inter-view parity and physical attachment remain unverified. Whole-sheet generation does not prove individual meshes are separable.",
+      "geometry_review_status": "unverified"
     },
     {
       "asset_id": "INT-LIBRARY-PROP-001-D04",
@@ -100,7 +130,7 @@
         0.05
       ],
       "function": "Missing supporting interior components; reusable across several selected rooms",
-      "construction": "One separate open illustrated book at appropriate human scale; precise rose/ivory/gold and restrained blue textile motifs matching source. Preserve actual construction (four stable legs for furniture, flat backs for frames, one coherent object). No existing chandelier/mirror/tea-set master duplicated. Dimensions are bounding proposals to refine by function.",
+      "construction": "One OPEN illustrated storybook with two page blocks, visible central spine gutter and floral/star page borders. No text-heavy paragraphs, characters or bookstand attached. Show cover underside.",
       "attachment_face": "Broad flat underside to floor/table/bed; shortest thickness normal Z",
       "semantic_front": "Decorated broad face upwards+Z",
       "target_polycount_proposed": 2500,
@@ -118,7 +148,17 @@
       "model_sha256": "",
       "review_status": "pending-reference-review",
       "suggested_model_filename": "INT-LIBRARY-PROP-001-D04__open-illustrated-book__v001.glb",
-      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed",
+      "component_family": "Library Prop",
+      "parent_asset_family": "INT-LIBRARY-PROP-001",
+      "reference_image_id": "INT-LIBRARY-PROP-001",
+      "reference_file": "completion-pass/INT-LIBRARY-PROP-001/INT-LIBRARY-PROP-001.png",
+      "reference_sha256": "1a06167d52d6abd82dc48331c1fdcc4052abdbac75b398486769f099c00965be",
+      "source_reference_id": "GEN-24",
+      "source_reference_file": "images/illustrated-boards/GEN-24.png",
+      "source_reference_sha256": "deb78cfce6dab5c31d9b3519d3bc01a07e58bba453b013fcdb76bd2e8be3f349",
+      "notes": "Twelve library props are present, with open scroll case, book page/cover views, ladder side profile, wedge-cushion side and catalogue cabinet rear. Wedge support is distinct from the existing square/round accent cushions. Fine book counts, ladder hook fit, drawer travel and bracket fasteners remain illustrative. The upright book set is one reference grouping, not proof of individually separable meshes. Original palace ivory/rose marble, gold star/rose ornament and indigo/blush accents remain consistent. Full IDs resolve under the header plus D01\u2013D12. Source backs, dimensions, repeat patterns, inter-view parity and physical attachment remain unverified. Whole-sheet generation does not prove individual meshes are separable.",
+      "geometry_review_status": "unverified"
     },
     {
       "asset_id": "INT-LIBRARY-PROP-001-D05",
@@ -130,7 +170,7 @@
         0.3
       ],
       "function": "Missing supporting interior components; reusable across several selected rooms",
-      "construction": "One separate closed book spine set at appropriate human scale; precise rose/ivory/gold and restrained blue textile motifs matching source. Preserve actual construction (four stable legs for furniture, flat backs for frames, one coherent object). No existing chandelier/mirror/tea-set master duplicated. Dimensions are bounding proposals to refine by function.",
+      "construction": "Five complete CLOSED volumes standing upright, coherent spines and page blocks with restrained gold titles/motifs. No floating spine-only facade, shelf or wall attached.",
       "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
       "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
       "target_polycount_proposed": 2500,
@@ -148,7 +188,17 @@
       "model_sha256": "",
       "review_status": "pending-reference-review",
       "suggested_model_filename": "INT-LIBRARY-PROP-001-D05__closed-book-spine-set__v001.glb",
-      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed",
+      "component_family": "Library Prop",
+      "parent_asset_family": "INT-LIBRARY-PROP-001",
+      "reference_image_id": "INT-LIBRARY-PROP-001",
+      "reference_file": "completion-pass/INT-LIBRARY-PROP-001/INT-LIBRARY-PROP-001.png",
+      "reference_sha256": "1a06167d52d6abd82dc48331c1fdcc4052abdbac75b398486769f099c00965be",
+      "source_reference_id": "GEN-24",
+      "source_reference_file": "images/illustrated-boards/GEN-24.png",
+      "source_reference_sha256": "deb78cfce6dab5c31d9b3519d3bc01a07e58bba453b013fcdb76bd2e8be3f349",
+      "notes": "Twelve library props are present, with open scroll case, book page/cover views, ladder side profile, wedge-cushion side and catalogue cabinet rear. Wedge support is distinct from the existing square/round accent cushions. Fine book counts, ladder hook fit, drawer travel and bracket fasteners remain illustrative. The upright book set is one reference grouping, not proof of individually separable meshes. Original palace ivory/rose marble, gold star/rose ornament and indigo/blush accents remain consistent. Full IDs resolve under the header plus D01\u2013D12. Source backs, dimensions, repeat patterns, inter-view parity and physical attachment remain unverified. Whole-sheet generation does not prove individual meshes are separable.",
+      "geometry_review_status": "unverified"
     },
     {
       "asset_id": "INT-LIBRARY-PROP-001-D06",
@@ -160,7 +210,7 @@
         0.5
       ],
       "function": "Missing supporting interior components; reusable across several selected rooms",
-      "construction": "One separate scroll case at appropriate human scale; precise rose/ivory/gold and restrained blue textile motifs matching source. Preserve actual construction (four stable legs for furniture, flat backs for frames, one coherent object). No existing chandelier/mirror/tea-set master duplicated. Dimensions are bounding proposals to refine by function.",
+      "construction": "One cylindrical scroll case with removable-looking end cap, indigo enamel body and fine gold rose bands. Show capped main view and tiny open circular mouth inset.",
       "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
       "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
       "target_polycount_proposed": 2500,
@@ -178,7 +228,17 @@
       "model_sha256": "",
       "review_status": "pending-reference-review",
       "suggested_model_filename": "INT-LIBRARY-PROP-001-D06__scroll-case__v001.glb",
-      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed",
+      "component_family": "Library Prop",
+      "parent_asset_family": "INT-LIBRARY-PROP-001",
+      "reference_image_id": "INT-LIBRARY-PROP-001",
+      "reference_file": "completion-pass/INT-LIBRARY-PROP-001/INT-LIBRARY-PROP-001.png",
+      "reference_sha256": "1a06167d52d6abd82dc48331c1fdcc4052abdbac75b398486769f099c00965be",
+      "source_reference_id": "GEN-24",
+      "source_reference_file": "images/illustrated-boards/GEN-24.png",
+      "source_reference_sha256": "deb78cfce6dab5c31d9b3519d3bc01a07e58bba453b013fcdb76bd2e8be3f349",
+      "notes": "Twelve library props are present, with open scroll case, book page/cover views, ladder side profile, wedge-cushion side and catalogue cabinet rear. Wedge support is distinct from the existing square/round accent cushions. Fine book counts, ladder hook fit, drawer travel and bracket fasteners remain illustrative. The upright book set is one reference grouping, not proof of individually separable meshes. Original palace ivory/rose marble, gold star/rose ornament and indigo/blush accents remain consistent. Full IDs resolve under the header plus D01\u2013D12. Source backs, dimensions, repeat patterns, inter-view parity and physical attachment remain unverified. Whole-sheet generation does not prove individual meshes are separable.",
+      "geometry_review_status": "unverified"
     },
     {
       "asset_id": "INT-LIBRARY-PROP-001-D07",
@@ -190,7 +250,7 @@
         0.08
       ],
       "function": "Missing supporting interior components; reusable across several selected rooms",
-      "construction": "One separate rolled scroll at appropriate human scale; precise rose/ivory/gold and restrained blue textile motifs matching source. Preserve actual construction (four stable legs for furniture, flat backs for frames, one coherent object). No existing chandelier/mirror/tea-set master duplicated. Dimensions are bounding proposals to refine by function.",
+      "construction": "One rolled parchment scroll with short blush ribbon tie; exposed paper spiral at end. Not a long banner or a second scroll case.",
       "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
       "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
       "target_polycount_proposed": 2500,
@@ -208,7 +268,17 @@
       "model_sha256": "",
       "review_status": "pending-reference-review",
       "suggested_model_filename": "INT-LIBRARY-PROP-001-D07__rolled-scroll__v001.glb",
-      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed",
+      "component_family": "Library Prop",
+      "parent_asset_family": "INT-LIBRARY-PROP-001",
+      "reference_image_id": "INT-LIBRARY-PROP-001",
+      "reference_file": "completion-pass/INT-LIBRARY-PROP-001/INT-LIBRARY-PROP-001.png",
+      "reference_sha256": "1a06167d52d6abd82dc48331c1fdcc4052abdbac75b398486769f099c00965be",
+      "source_reference_id": "GEN-24",
+      "source_reference_file": "images/illustrated-boards/GEN-24.png",
+      "source_reference_sha256": "deb78cfce6dab5c31d9b3519d3bc01a07e58bba453b013fcdb76bd2e8be3f349",
+      "notes": "Twelve library props are present, with open scroll case, book page/cover views, ladder side profile, wedge-cushion side and catalogue cabinet rear. Wedge support is distinct from the existing square/round accent cushions. Fine book counts, ladder hook fit, drawer travel and bracket fasteners remain illustrative. The upright book set is one reference grouping, not proof of individually separable meshes. Original palace ivory/rose marble, gold star/rose ornament and indigo/blush accents remain consistent. Full IDs resolve under the header plus D01\u2013D12. Source backs, dimensions, repeat patterns, inter-view parity and physical attachment remain unverified. Whole-sheet generation does not prove individual meshes are separable.",
+      "geometry_review_status": "unverified"
     },
     {
       "asset_id": "INT-LIBRARY-PROP-001-D08",
@@ -220,7 +290,7 @@
         0.35
       ],
       "function": "Missing supporting interior components; reusable across several selected rooms",
-      "construction": "One separate quill and ink stand at appropriate human scale; precise rose/ivory/gold and restrained blue textile motifs matching source. Preserve actual construction (four stable legs for furniture, flat backs for frames, one coherent object). No existing chandelier/mirror/tea-set master duplicated. Dimensions are bounding proposals to refine by function.",
+      "construction": "One small flat ivory/gold ink stand with ONE lidded ink bottle and ONE gold quill holder, feather quill inserted. Clear stable base and separated silhouettes; no writing desk attached.",
       "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
       "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
       "target_polycount_proposed": 2500,
@@ -238,7 +308,17 @@
       "model_sha256": "",
       "review_status": "pending-reference-review",
       "suggested_model_filename": "INT-LIBRARY-PROP-001-D08__quill-and-ink-stand__v001.glb",
-      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed",
+      "component_family": "Library Prop",
+      "parent_asset_family": "INT-LIBRARY-PROP-001",
+      "reference_image_id": "INT-LIBRARY-PROP-001",
+      "reference_file": "completion-pass/INT-LIBRARY-PROP-001/INT-LIBRARY-PROP-001.png",
+      "reference_sha256": "1a06167d52d6abd82dc48331c1fdcc4052abdbac75b398486769f099c00965be",
+      "source_reference_id": "GEN-24",
+      "source_reference_file": "images/illustrated-boards/GEN-24.png",
+      "source_reference_sha256": "deb78cfce6dab5c31d9b3519d3bc01a07e58bba453b013fcdb76bd2e8be3f349",
+      "notes": "Twelve library props are present, with open scroll case, book page/cover views, ladder side profile, wedge-cushion side and catalogue cabinet rear. Wedge support is distinct from the existing square/round accent cushions. Fine book counts, ladder hook fit, drawer travel and bracket fasteners remain illustrative. The upright book set is one reference grouping, not proof of individually separable meshes. Original palace ivory/rose marble, gold star/rose ornament and indigo/blush accents remain consistent. Full IDs resolve under the header plus D01\u2013D12. Source backs, dimensions, repeat patterns, inter-view parity and physical attachment remain unverified. Whole-sheet generation does not prove individual meshes are separable.",
+      "geometry_review_status": "unverified"
     },
     {
       "asset_id": "INT-LIBRARY-PROP-001-D09",
@@ -250,7 +330,7 @@
         0.15
       ],
       "function": "Missing supporting interior components; reusable across several selected rooms",
-      "construction": "One separate bookmark holder at appropriate human scale; precise rose/ivory/gold and restrained blue textile motifs matching source. Preserve actual construction (four stable legs for furniture, flat backs for frames, one coherent object). No existing chandelier/mirror/tea-set master duplicated. Dimensions are bounding proposals to refine by function.",
+      "construction": "One tiny desk bookmark holder: shallow open sleeve on low stable foot, three narrow gold/blush bookmarks seated inside. Not a lamp, flower urn or cabinet.",
       "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
       "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
       "target_polycount_proposed": 2500,
@@ -268,11 +348,21 @@
       "model_sha256": "",
       "review_status": "pending-reference-review",
       "suggested_model_filename": "INT-LIBRARY-PROP-001-D09__bookmark-holder__v001.glb",
-      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed",
+      "component_family": "Library Prop",
+      "parent_asset_family": "INT-LIBRARY-PROP-001",
+      "reference_image_id": "INT-LIBRARY-PROP-001",
+      "reference_file": "completion-pass/INT-LIBRARY-PROP-001/INT-LIBRARY-PROP-001.png",
+      "reference_sha256": "1a06167d52d6abd82dc48331c1fdcc4052abdbac75b398486769f099c00965be",
+      "source_reference_id": "GEN-24",
+      "source_reference_file": "images/illustrated-boards/GEN-24.png",
+      "source_reference_sha256": "deb78cfce6dab5c31d9b3519d3bc01a07e58bba453b013fcdb76bd2e8be3f349",
+      "notes": "Twelve library props are present, with open scroll case, book page/cover views, ladder side profile, wedge-cushion side and catalogue cabinet rear. Wedge support is distinct from the existing square/round accent cushions. Fine book counts, ladder hook fit, drawer travel and bracket fasteners remain illustrative. The upright book set is one reference grouping, not proof of individually separable meshes. Original palace ivory/rose marble, gold star/rose ornament and indigo/blush accents remain consistent. Full IDs resolve under the header plus D01\u2013D12. Source backs, dimensions, repeat patterns, inter-view parity and physical attachment remain unverified. Whole-sheet generation does not prove individual meshes are separable.",
+      "geometry_review_status": "unverified"
     },
     {
       "asset_id": "INT-LIBRARY-PROP-001-D10",
-      "name": "Reading cushion",
+      "name": "Reading wedge cushion",
       "kind": "architectural-detail",
       "dimensions_m_proposed": [
         0.6,
@@ -280,7 +370,7 @@
         0.2
       ],
       "function": "Missing supporting interior components; reusable across several selected rooms",
-      "construction": "One separate reading cushion at appropriate human scale; precise rose/ivory/gold and restrained blue textile motifs matching source. Preserve actual construction (four stable legs for furniture, flat backs for frames, one coherent object). No existing chandelier/mirror/tea-set master duplicated. Dimensions are bounding proposals to refine by function.",
+      "construction": "One TRIANGULAR reading WEDGE cushion, indigo/blush textile, sloping broad book-support face and flat base. Show side triangle and rear fabric handle. No book or chair; distinct from square accent cushions.",
       "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
       "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
       "target_polycount_proposed": 2500,
@@ -298,7 +388,17 @@
       "model_sha256": "",
       "review_status": "pending-reference-review",
       "suggested_model_filename": "INT-LIBRARY-PROP-001-D10__reading-cushion__v001.glb",
-      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed",
+      "component_family": "Library Prop",
+      "parent_asset_family": "INT-LIBRARY-PROP-001",
+      "reference_image_id": "INT-LIBRARY-PROP-001",
+      "reference_file": "completion-pass/INT-LIBRARY-PROP-001/INT-LIBRARY-PROP-001.png",
+      "reference_sha256": "1a06167d52d6abd82dc48331c1fdcc4052abdbac75b398486769f099c00965be",
+      "source_reference_id": "GEN-24",
+      "source_reference_file": "images/illustrated-boards/GEN-24.png",
+      "source_reference_sha256": "deb78cfce6dab5c31d9b3519d3bc01a07e58bba453b013fcdb76bd2e8be3f349",
+      "notes": "Twelve library props are present, with open scroll case, book page/cover views, ladder side profile, wedge-cushion side and catalogue cabinet rear. Wedge support is distinct from the existing square/round accent cushions. Fine book counts, ladder hook fit, drawer travel and bracket fasteners remain illustrative. The upright book set is one reference grouping, not proof of individually separable meshes. Original palace ivory/rose marble, gold star/rose ornament and indigo/blush accents remain consistent. Full IDs resolve under the header plus D01\u2013D12. Source backs, dimensions, repeat patterns, inter-view parity and physical attachment remain unverified. Whole-sheet generation does not prove individual meshes are separable.",
+      "geometry_review_status": "unverified"
     },
     {
       "asset_id": "INT-LIBRARY-PROP-001-D11",
@@ -310,7 +410,7 @@
         0.3
       ],
       "function": "Missing supporting interior components; reusable across several selected rooms",
-      "construction": "One separate library shelf end bracket at appropriate human scale; precise rose/ivory/gold and restrained blue textile motifs matching source. Preserve actual construction (four stable legs for furniture, flat backs for frames, one coherent object). No existing chandelier/mirror/tea-set master duplicated. Dimensions are bounding proposals to refine by function.",
+      "construction": "One SMALL shelf end bracket, gold floral L-shaped corbel, two planar perpendicular fixing surfaces and visible screw seats. No bookshelf, wall or giant column capital.",
       "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
       "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
       "target_polycount_proposed": 2500,
@@ -328,7 +428,17 @@
       "model_sha256": "",
       "review_status": "pending-reference-review",
       "suggested_model_filename": "INT-LIBRARY-PROP-001-D11__library-shelf-end-bracket__v001.glb",
-      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed",
+      "component_family": "Library Prop",
+      "parent_asset_family": "INT-LIBRARY-PROP-001",
+      "reference_image_id": "INT-LIBRARY-PROP-001",
+      "reference_file": "completion-pass/INT-LIBRARY-PROP-001/INT-LIBRARY-PROP-001.png",
+      "reference_sha256": "1a06167d52d6abd82dc48331c1fdcc4052abdbac75b398486769f099c00965be",
+      "source_reference_id": "GEN-24",
+      "source_reference_file": "images/illustrated-boards/GEN-24.png",
+      "source_reference_sha256": "deb78cfce6dab5c31d9b3519d3bc01a07e58bba453b013fcdb76bd2e8be3f349",
+      "notes": "Twelve library props are present, with open scroll case, book page/cover views, ladder side profile, wedge-cushion side and catalogue cabinet rear. Wedge support is distinct from the existing square/round accent cushions. Fine book counts, ladder hook fit, drawer travel and bracket fasteners remain illustrative. The upright book set is one reference grouping, not proof of individually separable meshes. Original palace ivory/rose marble, gold star/rose ornament and indigo/blush accents remain consistent. Full IDs resolve under the header plus D01\u2013D12. Source backs, dimensions, repeat patterns, inter-view parity and physical attachment remain unverified. Whole-sheet generation does not prove individual meshes are separable.",
+      "geometry_review_status": "unverified"
     },
     {
       "asset_id": "INT-LIBRARY-PROP-001-D12",
@@ -340,10 +450,10 @@
         1.1
       ],
       "function": "Missing supporting interior components; reusable across several selected rooms",
-      "construction": "One separate small catalogue cabinet at appropriate human scale; precise rose/ivory/gold and restrained blue textile motifs matching source. Preserve actual construction (four stable legs for furniture, flat backs for frames, one coherent object). No existing chandelier/mirror/tea-set master duplicated. Dimensions are bounding proposals to refine by function.",
+      "construction": "One low catalogue cabinet with12 small coherent drawers in4columns by3rows, ivory body, fine gold pulls and rose-marble top. Plain back, correct shallow drawer depth. No books or desk added.",
       "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
       "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
-      "target_polycount_proposed": 2500,
+      "target_polycount_proposed": 4000,
       "reuse_class": "reusable",
       "applies_to": [
         "Interiors and furniture"
@@ -358,7 +468,17 @@
       "model_sha256": "",
       "review_status": "pending-reference-review",
       "suggested_model_filename": "INT-LIBRARY-PROP-001-D12__small-catalogue-cabinet__v001.glb",
-      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed",
+      "component_family": "Library Prop",
+      "parent_asset_family": "INT-LIBRARY-PROP-001",
+      "reference_image_id": "INT-LIBRARY-PROP-001",
+      "reference_file": "completion-pass/INT-LIBRARY-PROP-001/INT-LIBRARY-PROP-001.png",
+      "reference_sha256": "1a06167d52d6abd82dc48331c1fdcc4052abdbac75b398486769f099c00965be",
+      "source_reference_id": "GEN-24",
+      "source_reference_file": "images/illustrated-boards/GEN-24.png",
+      "source_reference_sha256": "deb78cfce6dab5c31d9b3519d3bc01a07e58bba453b013fcdb76bd2e8be3f349",
+      "notes": "Twelve library props are present, with open scroll case, book page/cover views, ladder side profile, wedge-cushion side and catalogue cabinet rear. Wedge support is distinct from the existing square/round accent cushions. Fine book counts, ladder hook fit, drawer travel and bracket fasteners remain illustrative. The upright book set is one reference grouping, not proof of individually separable meshes. Original palace ivory/rose marble, gold star/rose ornament and indigo/blush accents remain consistent. Full IDs resolve under the header plus D01\u2013D12. Source backs, dimensions, repeat patterns, inter-view parity and physical attachment remain unverified. Whole-sheet generation does not prove individual meshes are separable.",
+      "geometry_review_status": "unverified"
     }
   ]
 }

@@ -157,6 +157,58 @@
       "output_file": "completion-pass/INT-R03/INT-R03.png"
     },
     {
+      "sheet_id": "INT-BED-DRESS-001",
+      "name": "Finished canopy bed and bedding inserts",
+      "owner": "palace",
+      "family": "Interiors and furniture",
+      "location_id": null,
+      "source_reference_file": "completion-pass/INT-SUITE-FURN-001/INT-SUITE-FURN-001.png",
+      "component_count": 10,
+      "mode": "detail",
+      "status": "generated-pending-review",
+      "gap": "Missing complete bedding and canopy insert set; existing frame, throw and accent-cushion masters reused.",
+      "output_file": "completion-pass/INT-BED-DRESS-001/INT-BED-DRESS-001.png"
+    },
+    {
+      "sheet_id": "INT-BALCONY-JOIN-001",
+      "name": "Circular bedroom flower balcony structural kit",
+      "owner": "palace",
+      "family": "Interiors and furniture",
+      "location_id": null,
+      "source_reference_file": "images/illustrated-boards/GEN-24.png",
+      "component_count": 4,
+      "mode": "structure",
+      "status": "generated-pending-review",
+      "gap": "Missing circular balcony floor/threshold and matching curved rail/large open portal; flowers and supports reused.",
+      "output_file": "completion-pass/INT-BALCONY-JOIN-001/INT-BALCONY-JOIN-001.png"
+    },
+    {
+      "sheet_id": "INT-BEDROOM-PROP-001",
+      "name": "Princess room personal decor",
+      "owner": "palace",
+      "family": "Interiors and furniture",
+      "location_id": null,
+      "source_reference_file": "images/illustrated-boards/GEN-24.png",
+      "component_count": 12,
+      "mode": "detail",
+      "status": "generated-pending-review",
+      "gap": "Missing small personal bedroom dressing; reuse existing trays, lamps, flowers, frames and gifts.",
+      "output_file": "completion-pass/INT-BEDROOM-PROP-001/INT-BEDROOM-PROP-001.png"
+    },
+    {
+      "sheet_id": "INT-TEXTILE-JOINS-001",
+      "name": "Textile Joins",
+      "owner": "palace",
+      "family": "Interiors and furniture",
+      "location_id": null,
+      "source_reference_file": "images/illustrated-boards/GEN-24.png",
+      "component_count": 16,
+      "mode": "detail",
+      "status": "generated-pending-review",
+      "gap": "Missing supporting interior components; reusable across several selected rooms",
+      "output_file": "completion-pass/INT-TEXTILE-JOINS-001/INT-TEXTILE-JOINS-001.png"
+    },
+    {
       "sheet_id": "INT-SUITE-FURN-001",
       "name": "Princess bedroom and dressing furniture",
       "owner": "palace",
@@ -191,8 +243,9 @@
       "source_reference_file": "images/illustrated-boards/GEN-24.png",
       "component_count": 12,
       "mode": "detail",
-      "status": "queued",
-      "gap": "Missing supporting interior components; reusable across several selected rooms"
+      "status": "generated-pending-review",
+      "gap": "Missing supporting interior components; reusable across several selected rooms",
+      "output_file": "completion-pass/INT-LIBRARY-PROP-001/INT-LIBRARY-PROP-001.png"
     },
     {
       "sheet_id": "INT-GALLERY-PROP-001",
@@ -203,8 +256,9 @@
       "source_reference_file": "images/illustrated-boards/GEN-24.png",
       "component_count": 12,
       "mode": "detail",
-      "status": "queued",
-      "gap": "Missing supporting interior components; reusable across several selected rooms"
+      "status": "generated-pending-review",
+      "gap": "Missing supporting interior components; reusable across several selected rooms",
+      "output_file": "completion-pass/INT-GALLERY-PROP-001/INT-GALLERY-PROP-001.png"
     },
     {
       "sheet_id": "INT-ATELIER-PROP-001",
@@ -215,20 +269,9 @@
       "source_reference_file": "images/illustrated-boards/GEN-24.png",
       "component_count": 12,
       "mode": "detail",
-      "status": "queued",
-      "gap": "Missing supporting interior components; reusable across several selected rooms"
-    },
-    {
-      "sheet_id": "INT-TEXTILE-JOINS-001",
-      "name": "Textile Joins",
-      "owner": "palace",
-      "family": "Interiors and furniture",
-      "location_id": null,
-      "source_reference_file": "images/illustrated-boards/GEN-24.png",
-      "component_count": 16,
-      "mode": "detail",
-      "status": "queued",
-      "gap": "Missing supporting interior components; reusable across several selected rooms"
+      "status": "generated-pending-review",
+      "gap": "Missing supporting interior components; reusable across several selected rooms",
+      "output_file": "completion-pass/INT-ATELIER-PROP-001/INT-ATELIER-PROP-001.png"
     },
     {
       "sheet_id": "B02-INNER-001",
@@ -1406,8 +1449,8 @@
   ],
   "status": "source-audited-completion-in-progress",
   "source_inputs_at_once": 1,
-  "new_sheets_queued": 115,
-  "selected_or_reserved": 208,
+  "new_sheets_queued": 118,
+  "selected_or_reserved": 211,
   "target_cap": 230,
   "final_count_is_ceiling_not_fill_target": true,
   "generation_attempt_limit": 2,
@@ -1428,7 +1471,7 @@
     "Does the kit preserve source palette, silhouette and motif?",
     "What remains unresolved for modelling rather than another illustration?"
   ],
-  "generated_sheets": 23,
-  "remaining_sheets": 92,
+  "generated_sheets": 30,
+  "remaining_sheets": 88,
   "interaction_policy": "Use filenames and metadata for inventory. Inspect at most one source image at a time. Generate, save, index and review one sheet before starting the next; do not stream large image loops. Keep originals and superseded files."
 }

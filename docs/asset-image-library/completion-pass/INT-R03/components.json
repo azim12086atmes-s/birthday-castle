@@ -7,7 +7,7 @@
       "dimensions_m_proposed": [
         24,
         16,
-        12
+        18
       ],
       "function": "Reserved dining-room reference missing; one coordinated furnished overview",
       "construction": "Four consistent views of a celebratory dining/tea salon, ivory/rose marble and gold, blue/rose windows, human-sized oval table group with warm flowers, restrained garlands, carpet and curtains. Reuse existing tea/celebration objects; no kitchen, serving workspace or performance room. Continuous stable room layout.",
@@ -33,11 +33,11 @@
       "parent_asset_family": "INT-R03",
       "reference_image_id": "INT-R03",
       "reference_file": "completion-pass/INT-R03/INT-R03.png",
-      "reference_sha256": "090a74711034af1d671c2c6b8521dacebe5d7017a5f8584ac6c62805ecfb78b4",
+      "reference_sha256": "1694cc26281bdf1f18d9a209b297592d390b998a0c87cab806ff6ec6479f2f7a",
       "source_reference_id": "GEN-26",
       "source_reference_file": "images/illustrated-boards/GEN-26.png",
       "source_reference_sha256": "6ca64686df3226a1da314f2865d3cd2699124b9f746b44ace5fbb72aa9801321",
-      "notes": "Four room views, a north-up plan and ceiling/detail studies are present. Blue/rose stained glass, rose/ivory marble and gold trim remain source-compatible. Dining salon itself is a proposed new room. Views A/B retain opposite-side window placement and west tea alcove placement more clearly than the suite reverse view. Exact eight-chair count and every floral pedestal position are not independently verified. Cutaway changes bay proportions and appears to have more seating than the declared plan. The saved proposed layout controls table dimensions and seating count; do not derive exact mesh coordinates from perspective images. Source backs, dimensions, repeat patterns, inter-view parity and physical attachment remain unverified. Whole-sheet generation does not prove individual meshes are separable.",
+      "notes": "Higher pointed vaults and explicit18m apex section are present. Table/chair dimensions remain human-scale, east glass bays and west tea alcove remain in place. Section includes a human silhouette for scale despite no figure being requested; it is not a new character or asset. Exact seat count, bay dimensions and physical view correspondence remain unverified. Existing marble, gilded ornament, indigo ceiling fields and rose/blue glass remain source-compatible; no bedroom balcony was added to dining room. Source backs, dimensions, repeat patterns, inter-view parity and physical attachment remain unverified. Whole-sheet generation does not prove individual meshes are separable.",
       "geometry_review_status": "unverified"
     }
   ]

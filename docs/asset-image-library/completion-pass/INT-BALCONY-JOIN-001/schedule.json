@@ -1,0 +1,173 @@
+{
+  "sheet_id": "INT-BALCONY-JOIN-001",
+  "name": "Circular bedroom flower balcony structural kit",
+  "owner": "palace",
+  "family": "Interiors and furniture",
+  "location_id": null,
+  "source_reference_id": "GEN-24",
+  "source_reference_file": "images/illustrated-boards/GEN-24.png",
+  "source_reference_sha256": "deb78cfce6dab5c31d9b3519d3bc01a07e58bba453b013fcdb76bd2e8be3f349",
+  "prompt": "Create ONE detailed source-compatible GAME ASSET REFERENCE SHEET, not a mesh or whole new room. Title INT-BALCONY-JOIN-001 \u2014 Circular bedroom flower balcony structural kit. Pale ivory background, soft even light, crisp isolated non-melting forms. Full sheet ID, numbered suffix and names printed clearly, dimensions W,D,H marked PROPOSED. Same original rose/ivory marble, fine gold rose/star/lotus ornament, indigo and blush textiles. Use only single supplied reference for visible style; unseen construction is proposed. No people, scenery or unlabeled extra objects. Exactly FOUR large cells: one component in three-quarter view plus matching front, TOP and back/contact/section views. Keep apertures truly open, joining ends plain. Exactly FOUR isolated structural components,2x2 layout. GEN-24 is style vocabulary, not a balcony geometry source. All circular dimensions and supports are new owner-requested proposals. Tiny assembly outline may show4floor sectors making18m circle and one neck, but no new decorated room. Keep architectural delicateness and human-height railing; do not turn balcony into another palace. Existing rose flower garlands, planters, urns, lights and long support-column families are reused later, not regenerated here. Circle has OPEN SKY, no dome or roof. Empty negative spaces in rail and portal must be real visible gaps. Show deliberate cut planes and practical floor thickness; engineering is not verified.\n\nINT-BALCONY-JOIN-001-S01 \u2014 Quarter-disc balcony floor. W,D,H [9, 9, 0.6]m proposed. ONE90-degree QUARTER DISC floor sector with radius9m. Two STRAIGHT radial joining edges meet at a true90-degree inner corner; outer boundary is a QUARTER CIRCLE. Top is rose/ivory marble, gold star border follows outer curve only. FOUR identical rotated copies form a full18m diameter circle. Show top silhouette unambiguously, underside with sockets for existing support columns/corbels. No flowers, railing or room attached.\n\nINT-BALCONY-JOIN-001-S02 \u2014 Level threshold neck. W,D,H [8, 4, 0.6]m proposed. One8m-wide by4m-long flat rectangular floor neck, SAME0.6m thickness and same walking height as circular floor. Both ends plain; side edges plain for separate rail attachment. This connects bedroom west opening to circular balcony. No stairs, raised lip, curtain or door.\n\nINT-BALCONY-JOIN-001-S03 \u2014 Curved flower-rail host. W,D,H [3.49, 0.48, 1.1]m proposed. ONE curved ivory/gold open parapet module with centreline radius8.8m spanning22.5degrees, chord about3.43m. Repeat16copies around circle, omit copies across doorway/neck opening. Human height1.1m. Rose/ivory fine balusters, gold top rail, integral EMPTY shallow outer planter-trough seat only. No growing flowers, tree, floor or giant tower. Show curved top footprint, end connector profile and drainage in empty trough. Dimensions are nominal bounding proposal; arc controls the curve.\n\nINT-BALCONY-JOIN-001-S04 \u2014 Open bedroom-to-balcony portal. W,D,H [9.2, 1, 12]m proposed. ONE broad OPEN pointed arch wall-surround only,9.2m overall wide and12m tall, with8m clear width between jambs. Slender ivory clustered jambs, rose-veined marble spandrel corners, fine gold rose/star arch profiles. Central walk-through space completely empty, no glass, solid wall, door, curtain, bed or floor. Rear and top contact faces for bedroom upper wall are plain. No balcony added to this individual object.\nFooter: Proposed reference components; shape consistency, fit and mesh separation require modeling review.",
+  "parts": [
+    {
+      "asset_id": "INT-BALCONY-JOIN-001-S01",
+      "name": "Quarter-disc balcony floor",
+      "kind": "structural-section",
+      "dimensions_m_proposed": [
+        9,
+        9,
+        0.6
+      ],
+      "function": "Missing circular balcony floor/threshold and matching curved rail/large open portal; flowers and supports reused.",
+      "construction": "ONE90-degree QUARTER DISC floor sector with radius9m. Two STRAIGHT radial joining edges meet at a true90-degree inner corner; outer boundary is a QUARTER CIRCLE. Top is rose/ivory marble, gold star border follows outer curve only. FOUR identical rotated copies form a full18m diameter circle. Show top silhouette unambiguously, underside with sockets for existing support columns/corbels. No flowers, railing or room attached.",
+      "attachment_face": "See isolated back/underside contact; host and dimensions proposed",
+      "semantic_front": "Z up; broad fabric faces presented unfolded; main access face shown",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Interiors and furniture"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "INT-BALCONY-JOIN-001-S01__quarter-disc-balcony-floor__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "INT-BALCONY-JOIN-001-S02",
+      "name": "Level threshold neck",
+      "kind": "structural-section",
+      "dimensions_m_proposed": [
+        8,
+        4,
+        0.6
+      ],
+      "function": "Missing circular balcony floor/threshold and matching curved rail/large open portal; flowers and supports reused.",
+      "construction": "One8m-wide by4m-long flat rectangular floor neck, SAME0.6m thickness and same walking height as circular floor. Both ends plain; side edges plain for separate rail attachment. This connects bedroom west opening to circular balcony. No stairs, raised lip, curtain or door.",
+      "attachment_face": "See isolated back/underside contact; host and dimensions proposed",
+      "semantic_front": "Z up; broad fabric faces presented unfolded; main access face shown",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Interiors and furniture"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "INT-BALCONY-JOIN-001-S02__level-threshold-neck__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "INT-BALCONY-JOIN-001-S03",
+      "name": "Curved flower-rail host",
+      "kind": "structural-section",
+      "dimensions_m_proposed": [
+        3.49,
+        0.48,
+        1.1
+      ],
+      "function": "Missing circular balcony floor/threshold and matching curved rail/large open portal; flowers and supports reused.",
+      "construction": "ONE curved ivory/gold open parapet module with centreline radius8.8m spanning22.5degrees, chord about3.43m. Repeat16copies around circle, omit copies across doorway/neck opening. Human height1.1m. Rose/ivory fine balusters, gold top rail, integral EMPTY shallow outer planter-trough seat only. No growing flowers, tree, floor or giant tower. Show curved top footprint, end connector profile and drainage in empty trough. Dimensions are nominal bounding proposal; arc controls the curve.",
+      "attachment_face": "See isolated back/underside contact; host and dimensions proposed",
+      "semantic_front": "Z up; broad fabric faces presented unfolded; main access face shown",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Interiors and furniture"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "INT-BALCONY-JOIN-001-S03__curved-flower-rail-host__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "INT-BALCONY-JOIN-001-S04",
+      "name": "Open bedroom-to-balcony portal",
+      "kind": "structural-section",
+      "dimensions_m_proposed": [
+        9.2,
+        1,
+        12
+      ],
+      "function": "Missing circular balcony floor/threshold and matching curved rail/large open portal; flowers and supports reused.",
+      "construction": "ONE broad OPEN pointed arch wall-surround only,9.2m overall wide and12m tall, with8m clear width between jambs. Slender ivory clustered jambs, rose-veined marble spandrel corners, fine gold rose/star arch profiles. Central walk-through space completely empty, no glass, solid wall, door, curtain, bed or floor. Rear and top contact faces for bedroom upper wall are plain. No balcony added to this individual object.",
+      "attachment_face": "See isolated back/underside contact; host and dimensions proposed",
+      "semantic_front": "Z up; broad fabric faces presented unfolded; main access face shown",
+      "target_polycount_proposed": 8000,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Interiors and furniture"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "INT-BALCONY-JOIN-001-S04__open-bedroom-to-balcony-portal__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    }
+  ],
+  "outputs": [
+    {
+      "file": "completion-pass/INT-BALCONY-JOIN-001/INT-BALCONY-JOIN-001.png",
+      "sha256": "2650a69d0aa43668ed328fcf8efd4714c77d29da95940ad432dac0dd397ad15f",
+      "original_file": "/workspace/generated_images/exec-3ef39da5-9e17-4278-8cc4-a7eaebd8c995.png",
+      "actual_input_file": "images/illustrated-boards/GEN-24.png",
+      "actual_input_sha256": "deb78cfce6dab5c31d9b3519d3bc01a07e58bba453b013fcdb76bd2e8be3f349",
+      "attempt": 1,
+      "generator": "image_gen.imagegen"
+    }
+  ],
+  "previous_attempts": [],
+  "models_generated": 0,
+  "physical_join_fit_verified": false,
+  "view_geometry_parity_verified": false,
+  "review_status": "visual-reviewed-balcony-reference-pending-seam-and-support-design",
+  "gap": "Missing circular balcony floor/threshold and matching curved rail/large open portal; flowers and supports reused.",
+  "mode": "structure",
+  "visual_review_notes": [
+    "All four intended components are present. Floor top view is a90-degree radius9m quarter disc; threshold is explicitly8x4m; open portal labels8m clear and9.2m overall width. Curved railing shows22.5-degree/radius8.8m data and an empty planting trough.",
+    "Floor and neck views include ornamental end blocks/aprons at some joining edges. Keep radial sector seams and both neck end planes flat in the model; remove projecting end ornaments that obstruct joins.",
+    "Rail radius, equal curve repetition, floral drainage and contact hardware are concept references. Decorative supports shown below modules are not a structural support calculation.",
+    "The18m circle is assembled from four floor copies. Connect neck through an intentional trimmed floor interface: its rectangular end does not mate to a circular boundary automatically. A modeled trim/overlap detail remains required."
+  ],
+  "proposed_join_contract": {
+    "floor_sector_radius_m": 9,
+    "floor_sector_angle_deg": 90,
+    "floor_copies": 4,
+    "assembled_diameter_m": 18,
+    "floor_thickness_m": 0.6,
+    "neck_width_m": 8,
+    "neck_length_m": 4,
+    "rail_radius_m": 8.8,
+    "rail_angle_deg": 22.5,
+    "rail_height_m": 1.1,
+    "portal_clear_width_m": 8,
+    "portal_overall_width_m": 9.2,
+    "portal_height_m": 12,
+    "curve_to_rectangular_neck_fit": "unverified; trim balcony attachment edge in actual mesh"
+  }
+}

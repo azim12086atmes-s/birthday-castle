@@ -1,12 +1,12 @@
 {
   "date": "2026-10-13",
-  "distinct_image_count": 836,
+  "distinct_image_count": 845,
   "source_file_count": 969,
-  "total_bytes": 816902423,
+  "total_bytes": 841107104,
   "categories": {
     "additional-generated-studies": 33,
-    "completion-reference-kits": 23,
-    "completion-superseded-drafts": 1,
+    "completion-reference-kits": 30,
+    "completion-superseded-drafts": 3,
     "component-development-studies": 3,
     "illustrated-boards": 45,
     "interior-celebration-source-panels": 9,
@@ -16964,10 +16964,10 @@
       "label": "INT-R02 \u2014 Princess suite \u2014 coordinated interior views",
       "category": "completion-reference-kits",
       "file": "completion-pass/INT-R02/INT-R02.png",
-      "sha256": "9450d3e2c22ff804f7264c0e6481f45be73ee26e9edbf1dbc123a33222d66eb3",
-      "bytes": 3535221,
+      "sha256": "0e1934ceabd37741ad69e63cf85eb31d7f55f021ab0fd41f070a829f90c6f44e",
+      "bytes": 3565266,
       "source_aliases": [
-        "/workspace/generated_images/exec-5a00a4bc-3d29-4346-9d06-cb10f666e89e.png"
+        "/workspace/generated_images/exec-17231cb1-f156-4658-978e-e62693025227.png"
       ],
       "alias_ids": [],
       "component_ids": [
@@ -16978,7 +16978,7 @@
       ],
       "reference_role": "proposed-room-multiview-reference",
       "design_status": "Visible source forms guide design; hidden geometry and metrics proposed; no model or layout approval",
-      "review_status": "reference-with-opposite-view-furniture-placement-discrepancy"
+      "review_status": "requested-revision-with-rail-and-printed-dimension-corrections"
     },
     {
       "id": "INT-R03",
@@ -16986,10 +16986,10 @@
       "label": "INT-R03 \u2014 Dining salon \u2014 coordinated interior views",
       "category": "completion-reference-kits",
       "file": "completion-pass/INT-R03/INT-R03.png",
-      "sha256": "090a74711034af1d671c2c6b8521dacebe5d7017a5f8584ac6c62805ecfb78b4",
-      "bytes": 3686838,
+      "sha256": "1694cc26281bdf1f18d9a209b297592d390b998a0c87cab806ff6ec6479f2f7a",
+      "bytes": 3488318,
       "source_aliases": [
-        "/workspace/generated_images/exec-c3d9b983-96ed-4dfc-b924-a6e001b7929c.png"
+        "/workspace/generated_images/exec-5ebc8520-aa00-4498-b88a-5e40285b5a1c.png"
       ],
       "alias_ids": [],
       "component_ids": [
@@ -17000,7 +17000,7 @@
       ],
       "reference_role": "proposed-room-multiview-reference",
       "design_status": "Visible source forms guide design; hidden geometry and metrics proposed; no model or layout approval",
-      "review_status": "reference-with-seat-count-and-proportion-review-pending"
+      "review_status": "ceiling-revision-reference-pending-geometry-review"
     },
     {
       "id": "INT-SUITE-FURN-001",
@@ -17051,6 +17051,271 @@
       "reference_role": "source-compatible-missing-component-reference",
       "design_status": "Visible source forms guide design; hidden geometry and metrics proposed; no model or layout approval",
       "review_status": "reference-with-end-apron-and-underside-leg-discrepancies"
+    },
+    {
+      "id": "INT-R02-R01",
+      "title": "Princess suite \u2014 coordinated interior views \u2014 superseded draft",
+      "label": "INT-R02-R01 \u2014 superseded draft",
+      "category": "completion-superseded-drafts",
+      "file": "completion-pass/INT-R02/INT-R02-R01.png",
+      "sha256": "9450d3e2c22ff804f7264c0e6481f45be73ee26e9edbf1dbc123a33222d66eb3",
+      "bytes": 3535221,
+      "source_aliases": [
+        "/workspace/generated_images/exec-5a00a4bc-3d29-4346-9d06-cb10f666e89e.png"
+      ],
+      "alias_ids": [],
+      "component_ids": [],
+      "related_image_ids": [
+        "INT-R02"
+      ],
+      "reference_role": "superseded-construction-reference",
+      "design_status": "Owner requested ceiling increase from12m to18m and an open west circular flower balcony with additional bedroom dressing",
+      "review_status": "rejected-preserved"
+    },
+    {
+      "id": "INT-R03-R01",
+      "title": "Dining salon \u2014 coordinated interior views \u2014 superseded draft",
+      "label": "INT-R03-R01 \u2014 superseded draft",
+      "category": "completion-superseded-drafts",
+      "file": "completion-pass/INT-R03/INT-R03-R01.png",
+      "sha256": "090a74711034af1d671c2c6b8521dacebe5d7017a5f8584ac6c62805ecfb78b4",
+      "bytes": 3686838,
+      "source_aliases": [
+        "/workspace/generated_images/exec-c3d9b983-96ed-4dfc-b924-a6e001b7929c.png"
+      ],
+      "alias_ids": [],
+      "component_ids": [],
+      "related_image_ids": [
+        "INT-R03"
+      ],
+      "reference_role": "superseded-construction-reference",
+      "design_status": "Owner requested ceiling increase from12m to18m",
+      "review_status": "rejected-preserved"
+    },
+    {
+      "id": "INT-BED-DRESS-001",
+      "title": "Finished canopy bed and bedding inserts",
+      "label": "INT-BED-DRESS-001 \u2014 Finished canopy bed and bedding inserts",
+      "category": "completion-reference-kits",
+      "file": "completion-pass/INT-BED-DRESS-001/INT-BED-DRESS-001.png",
+      "sha256": "f71e88a950b3ec0e53e250f85f57cca735400269f65162d50cf7820ac5d33633",
+      "bytes": 2414906,
+      "source_aliases": [
+        "/workspace/generated_images/exec-0ba1ecd4-abf9-4067-a858-94b2fa84603d.png"
+      ],
+      "alias_ids": [],
+      "component_ids": [
+        "INT-BED-DRESS-001-A01",
+        "INT-BED-DRESS-001-A02",
+        "INT-BED-DRESS-001-A03",
+        "INT-BED-DRESS-001-A04",
+        "INT-BED-DRESS-001-A05",
+        "INT-BED-DRESS-001-A06",
+        "INT-BED-DRESS-001-A07",
+        "INT-BED-DRESS-001-A08",
+        "INT-BED-DRESS-001-A09",
+        "INT-BED-DRESS-001-A10"
+      ],
+      "related_image_ids": [
+        "INT-SUITE-FURN-001"
+      ],
+      "reference_role": "source-compatible-missing-component-reference",
+      "design_status": "Visible source forms guide design; hidden geometry and metrics proposed; no model or layout approval",
+      "review_status": "visual-reviewed-bed-dressing-reference-pending-fit"
+    },
+    {
+      "id": "INT-BALCONY-JOIN-001",
+      "title": "Circular bedroom flower balcony structural kit",
+      "label": "INT-BALCONY-JOIN-001 \u2014 Circular bedroom flower balcony structural kit",
+      "category": "completion-reference-kits",
+      "file": "completion-pass/INT-BALCONY-JOIN-001/INT-BALCONY-JOIN-001.png",
+      "sha256": "2650a69d0aa43668ed328fcf8efd4714c77d29da95940ad432dac0dd397ad15f",
+      "bytes": 2449015,
+      "source_aliases": [
+        "/workspace/generated_images/exec-3ef39da5-9e17-4278-8cc4-a7eaebd8c995.png"
+      ],
+      "alias_ids": [],
+      "component_ids": [
+        "INT-BALCONY-JOIN-001-S01",
+        "INT-BALCONY-JOIN-001-S02",
+        "INT-BALCONY-JOIN-001-S03",
+        "INT-BALCONY-JOIN-001-S04"
+      ],
+      "related_image_ids": [
+        "GEN-24"
+      ],
+      "reference_role": "source-compatible-missing-component-reference",
+      "design_status": "Visible source forms guide design; hidden geometry and metrics proposed; no model or layout approval",
+      "review_status": "visual-reviewed-balcony-reference-pending-seam-and-support-design"
+    },
+    {
+      "id": "INT-BEDROOM-PROP-001",
+      "title": "Princess room personal decor",
+      "label": "INT-BEDROOM-PROP-001 \u2014 Princess room personal decor",
+      "category": "completion-reference-kits",
+      "file": "completion-pass/INT-BEDROOM-PROP-001/INT-BEDROOM-PROP-001.png",
+      "sha256": "b856f2dd02c5e1362f80a1c94f754b94c0733105297f97ce6f36a246580d9527",
+      "bytes": 2556665,
+      "source_aliases": [
+        "/workspace/generated_images/exec-9a47f8cd-5c1c-4f59-8a43-1ac19d6430b7.png"
+      ],
+      "alias_ids": [],
+      "component_ids": [
+        "INT-BEDROOM-PROP-001-A01",
+        "INT-BEDROOM-PROP-001-A02",
+        "INT-BEDROOM-PROP-001-A03",
+        "INT-BEDROOM-PROP-001-A04",
+        "INT-BEDROOM-PROP-001-A05",
+        "INT-BEDROOM-PROP-001-A06",
+        "INT-BEDROOM-PROP-001-A07",
+        "INT-BEDROOM-PROP-001-A08",
+        "INT-BEDROOM-PROP-001-A09",
+        "INT-BEDROOM-PROP-001-A10",
+        "INT-BEDROOM-PROP-001-A11",
+        "INT-BEDROOM-PROP-001-A12"
+      ],
+      "related_image_ids": [
+        "GEN-24"
+      ],
+      "reference_role": "source-compatible-missing-component-reference",
+      "design_status": "Visible source forms guide design; hidden geometry and metrics proposed; no model or layout approval",
+      "review_status": "visual-reviewed-personal-decor-reference-pending-model-review"
+    },
+    {
+      "id": "INT-TEXTILE-JOINS-001",
+      "title": "Textile Joins",
+      "label": "INT-TEXTILE-JOINS-001 \u2014 Textile Joins",
+      "category": "completion-reference-kits",
+      "file": "completion-pass/INT-TEXTILE-JOINS-001/INT-TEXTILE-JOINS-001.png",
+      "sha256": "0d3d371306fe0c98c74e5b59f0a9603e13f65419399b446c0319389efeb09e5b",
+      "bytes": 2587417,
+      "source_aliases": [
+        "/workspace/generated_images/exec-5a2bdd8e-869d-46fe-bb32-5a661b70ded5.png"
+      ],
+      "alias_ids": [],
+      "component_ids": [
+        "INT-TEXTILE-JOINS-001-D01",
+        "INT-TEXTILE-JOINS-001-D02",
+        "INT-TEXTILE-JOINS-001-D03",
+        "INT-TEXTILE-JOINS-001-D04",
+        "INT-TEXTILE-JOINS-001-D05",
+        "INT-TEXTILE-JOINS-001-D06",
+        "INT-TEXTILE-JOINS-001-D07",
+        "INT-TEXTILE-JOINS-001-D08",
+        "INT-TEXTILE-JOINS-001-D09",
+        "INT-TEXTILE-JOINS-001-D10",
+        "INT-TEXTILE-JOINS-001-D11",
+        "INT-TEXTILE-JOINS-001-D12",
+        "INT-TEXTILE-JOINS-001-D13",
+        "INT-TEXTILE-JOINS-001-D14",
+        "INT-TEXTILE-JOINS-001-D15",
+        "INT-TEXTILE-JOINS-001-D16"
+      ],
+      "related_image_ids": [
+        "GEN-24"
+      ],
+      "reference_role": "source-compatible-missing-component-reference",
+      "design_status": "Visible source forms guide design; hidden geometry and metrics proposed; no model or layout approval",
+      "review_status": "visual-reviewed-textiles-pending-repeat-and-hardware-fit"
+    },
+    {
+      "id": "INT-LIBRARY-PROP-001",
+      "title": "Library Prop",
+      "label": "INT-LIBRARY-PROP-001 \u2014 Library Prop",
+      "category": "completion-reference-kits",
+      "file": "completion-pass/INT-LIBRARY-PROP-001/INT-LIBRARY-PROP-001.png",
+      "sha256": "1a06167d52d6abd82dc48331c1fdcc4052abdbac75b398486769f099c00965be",
+      "bytes": 2400901,
+      "source_aliases": [
+        "/workspace/generated_images/exec-88767a54-76e1-4fe4-b90d-e816c0dc6e12.png"
+      ],
+      "alias_ids": [],
+      "component_ids": [
+        "INT-LIBRARY-PROP-001-D01",
+        "INT-LIBRARY-PROP-001-D02",
+        "INT-LIBRARY-PROP-001-D03",
+        "INT-LIBRARY-PROP-001-D04",
+        "INT-LIBRARY-PROP-001-D05",
+        "INT-LIBRARY-PROP-001-D06",
+        "INT-LIBRARY-PROP-001-D07",
+        "INT-LIBRARY-PROP-001-D08",
+        "INT-LIBRARY-PROP-001-D09",
+        "INT-LIBRARY-PROP-001-D10",
+        "INT-LIBRARY-PROP-001-D11",
+        "INT-LIBRARY-PROP-001-D12"
+      ],
+      "related_image_ids": [
+        "GEN-24"
+      ],
+      "reference_role": "source-compatible-missing-component-reference",
+      "design_status": "Visible source forms guide design; hidden geometry and metrics proposed; no model or layout approval",
+      "review_status": "visual-reviewed-library-props-pending-fit-and-mesh-separation"
+    },
+    {
+      "id": "INT-GALLERY-PROP-001",
+      "title": "Gallery Prop",
+      "label": "INT-GALLERY-PROP-001 \u2014 Gallery Prop",
+      "category": "completion-reference-kits",
+      "file": "completion-pass/INT-GALLERY-PROP-001/INT-GALLERY-PROP-001.png",
+      "sha256": "189cdebfeac95fd8f5142d592428b1e3ff872fc7e0946910f9233dd45ebd9ebb",
+      "bytes": 2350704,
+      "source_aliases": [
+        "/workspace/generated_images/exec-ebb32fd1-9eeb-4455-8f54-b808a6d037c5.png"
+      ],
+      "alias_ids": [],
+      "component_ids": [
+        "INT-GALLERY-PROP-001-D01",
+        "INT-GALLERY-PROP-001-D02",
+        "INT-GALLERY-PROP-001-D03",
+        "INT-GALLERY-PROP-001-D04",
+        "INT-GALLERY-PROP-001-D05",
+        "INT-GALLERY-PROP-001-D06",
+        "INT-GALLERY-PROP-001-D07",
+        "INT-GALLERY-PROP-001-D08",
+        "INT-GALLERY-PROP-001-D09",
+        "INT-GALLERY-PROP-001-D10",
+        "INT-GALLERY-PROP-001-D11",
+        "INT-GALLERY-PROP-001-D12"
+      ],
+      "related_image_ids": [
+        "GEN-24"
+      ],
+      "reference_role": "source-compatible-missing-component-reference",
+      "design_status": "Visible source forms guide design; hidden geometry and metrics proposed; no model or layout approval",
+      "review_status": "visual-reviewed-gallery-props-pending-frame-back-and-contact-review"
+    },
+    {
+      "id": "INT-ATELIER-PROP-001",
+      "title": "Atelier Prop",
+      "label": "INT-ATELIER-PROP-001 \u2014 Atelier Prop",
+      "category": "completion-reference-kits",
+      "file": "completion-pass/INT-ATELIER-PROP-001/INT-ATELIER-PROP-001.png",
+      "sha256": "58044c44041d3869eee3ad5549f81fa629f284f6852cef44b32039376ab86bd4",
+      "bytes": 2391489,
+      "source_aliases": [
+        "/workspace/generated_images/exec-0f9a249d-a0d0-48fa-bce7-7f5f8dfab491.png"
+      ],
+      "alias_ids": [],
+      "component_ids": [
+        "INT-ATELIER-PROP-001-D01",
+        "INT-ATELIER-PROP-001-D02",
+        "INT-ATELIER-PROP-001-D03",
+        "INT-ATELIER-PROP-001-D04",
+        "INT-ATELIER-PROP-001-D05",
+        "INT-ATELIER-PROP-001-D06",
+        "INT-ATELIER-PROP-001-D07",
+        "INT-ATELIER-PROP-001-D08",
+        "INT-ATELIER-PROP-001-D09",
+        "INT-ATELIER-PROP-001-D10",
+        "INT-ATELIER-PROP-001-D11",
+        "INT-ATELIER-PROP-001-D12"
+      ],
+      "related_image_ids": [
+        "GEN-24"
+      ],
+      "reference_role": "source-compatible-missing-component-reference",
+      "design_status": "Visible source forms guide design; hidden geometry and metrics proposed; no model or layout approval",
+      "review_status": "visual-reviewed-atelier-props-pending-mechanical-and-mesh-review"
     }
   ],
   "label_schema_version": 1

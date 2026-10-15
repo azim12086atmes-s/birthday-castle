@@ -10,7 +10,7 @@
         1
       ],
       "function": "Missing supporting interior components; reusable across several selected rooms",
-      "construction": "One separate embroidery stand at appropriate human scale; precise rose/ivory/gold and restrained blue textile motifs matching source. Preserve actual construction (four stable legs for furniture, flat backs for frames, one coherent object). No existing chandelier/mirror/tea-set master duplicated. Dimensions are bounding proposals to refine by function.",
+      "construction": "One floor EMBROIDERY STAND, adjustable oval hoop with taut plain blush fabric, slender pole and three stable low feet. Clear hoop tilt joint; no seated person or chair.",
       "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
       "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
       "target_polycount_proposed": 2500,
@@ -28,7 +28,17 @@
       "model_sha256": "",
       "review_status": "pending-reference-review",
       "suggested_model_filename": "INT-ATELIER-PROP-001-D01__embroidery-stand__v001.glb",
-      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed",
+      "component_family": "Atelier Prop",
+      "parent_asset_family": "INT-ATELIER-PROP-001",
+      "reference_image_id": "INT-ATELIER-PROP-001",
+      "reference_file": "completion-pass/INT-ATELIER-PROP-001/INT-ATELIER-PROP-001.png",
+      "reference_sha256": "58044c44041d3869eee3ad5549f81fa629f284f6852cef44b32039376ab86bd4",
+      "source_reference_id": "GEN-24",
+      "source_reference_file": "images/illustrated-boards/GEN-24.png",
+      "source_reference_sha256": "deb78cfce6dab5c31d9b3519d3bc01a07e58bba453b013fcdb76bd2e8be3f349",
+      "notes": "Twelve requested craft props appear with separate back/underside or open-state views. Easel has working ledge and support, loom has visible warp/heddle elements, scissors sit in a distinct case and stool underside shows bracing. Source ivory/rose, blush/indigo and gold motifs remain consistent. Fabric roll and five-spool set are coherent reference groupings; motion, weaving paths, scissor hinges and support stability remain unverified. Dress form is a headless, armless non-character display prop. No living character or anatomy reference was generated. Source backs, dimensions, repeat patterns, inter-view parity and physical attachment remain unverified. Whole-sheet generation does not prove individual meshes are separable.",
+      "geometry_review_status": "unverified"
     },
     {
       "asset_id": "INT-ATELIER-PROP-001-D02",
@@ -40,10 +50,10 @@
         1.6
       ],
       "function": "Missing supporting interior components; reusable across several selected rooms",
-      "construction": "One separate small floor loom at appropriate human scale; precise rose/ivory/gold and restrained blue textile motifs matching source. Preserve actual construction (four stable legs for furniture, flat backs for frames, one coherent object). No existing chandelier/mirror/tea-set master duplicated. Dimensions are bounding proposals to refine by function.",
+      "construction": "One small complete FLOOR LOOM, two parallel uprights and coherent top/bottom beams, straight warp threads passing through a visible heddle frame, small woven blush/indigo swatch. No human, room or impossible tangled yarn.",
       "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
       "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
-      "target_polycount_proposed": 2500,
+      "target_polycount_proposed": 4000,
       "reuse_class": "reusable",
       "applies_to": [
         "Interiors and furniture"
@@ -58,7 +68,17 @@
       "model_sha256": "",
       "review_status": "pending-reference-review",
       "suggested_model_filename": "INT-ATELIER-PROP-001-D02__small-floor-loom__v001.glb",
-      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed",
+      "component_family": "Atelier Prop",
+      "parent_asset_family": "INT-ATELIER-PROP-001",
+      "reference_image_id": "INT-ATELIER-PROP-001",
+      "reference_file": "completion-pass/INT-ATELIER-PROP-001/INT-ATELIER-PROP-001.png",
+      "reference_sha256": "58044c44041d3869eee3ad5549f81fa629f284f6852cef44b32039376ab86bd4",
+      "source_reference_id": "GEN-24",
+      "source_reference_file": "images/illustrated-boards/GEN-24.png",
+      "source_reference_sha256": "deb78cfce6dab5c31d9b3519d3bc01a07e58bba453b013fcdb76bd2e8be3f349",
+      "notes": "Twelve requested craft props appear with separate back/underside or open-state views. Easel has working ledge and support, loom has visible warp/heddle elements, scissors sit in a distinct case and stool underside shows bracing. Source ivory/rose, blush/indigo and gold motifs remain consistent. Fabric roll and five-spool set are coherent reference groupings; motion, weaving paths, scissor hinges and support stability remain unverified. Dress form is a headless, armless non-character display prop. No living character or anatomy reference was generated. Source backs, dimensions, repeat patterns, inter-view parity and physical attachment remain unverified. Whole-sheet generation does not prove individual meshes are separable.",
+      "geometry_review_status": "unverified"
     },
     {
       "asset_id": "INT-ATELIER-PROP-001-D03",
@@ -70,10 +90,10 @@
         1.75
       ],
       "function": "Missing supporting interior components; reusable across several selected rooms",
-      "construction": "One separate canvas easel at appropriate human scale; precise rose/ivory/gold and restrained blue textile motifs matching source. Preserve actual construction (four stable legs for furniture, flat backs for frames, one coherent object). No existing chandelier/mirror/tea-set master duplicated. Dimensions are bounding proposals to refine by function.",
+      "construction": "One working H-FRAME CANVAS EASEL, two parallel front uprights, rear support and adjustable lower canvas ledge. One plain small blank canvas may show seating interface. Not an ornate gallery display picture frame. Front/side show same geometry.",
       "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
       "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
-      "target_polycount_proposed": 2500,
+      "target_polycount_proposed": 4000,
       "reuse_class": "reusable",
       "applies_to": [
         "Interiors and furniture"
@@ -88,7 +108,17 @@
       "model_sha256": "",
       "review_status": "pending-reference-review",
       "suggested_model_filename": "INT-ATELIER-PROP-001-D03__canvas-easel__v001.glb",
-      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed",
+      "component_family": "Atelier Prop",
+      "parent_asset_family": "INT-ATELIER-PROP-001",
+      "reference_image_id": "INT-ATELIER-PROP-001",
+      "reference_file": "completion-pass/INT-ATELIER-PROP-001/INT-ATELIER-PROP-001.png",
+      "reference_sha256": "58044c44041d3869eee3ad5549f81fa629f284f6852cef44b32039376ab86bd4",
+      "source_reference_id": "GEN-24",
+      "source_reference_file": "images/illustrated-boards/GEN-24.png",
+      "source_reference_sha256": "deb78cfce6dab5c31d9b3519d3bc01a07e58bba453b013fcdb76bd2e8be3f349",
+      "notes": "Twelve requested craft props appear with separate back/underside or open-state views. Easel has working ledge and support, loom has visible warp/heddle elements, scissors sit in a distinct case and stool underside shows bracing. Source ivory/rose, blush/indigo and gold motifs remain consistent. Fabric roll and five-spool set are coherent reference groupings; motion, weaving paths, scissor hinges and support stability remain unverified. Dress form is a headless, armless non-character display prop. No living character or anatomy reference was generated. Source backs, dimensions, repeat patterns, inter-view parity and physical attachment remain unverified. Whole-sheet generation does not prove individual meshes are separable.",
+      "geometry_review_status": "unverified"
     },
     {
       "asset_id": "INT-ATELIER-PROP-001-D04",
@@ -100,7 +130,7 @@
         0.025
       ],
       "function": "Missing supporting interior components; reusable across several selected rooms",
-      "construction": "One separate paint palette at appropriate human scale; precise rose/ivory/gold and restrained blue textile motifs matching source. Preserve actual construction (four stable legs for furniture, flat backs for frames, one coherent object). No existing chandelier/mirror/tea-set master duplicated. Dimensions are bounding proposals to refine by function.",
+      "construction": "One flat oval PAINT PALETTE with thumb hole and several tiny separate colour dabs, ivory wooden base and thin gold edge. Broad face up, no hand or easel attached.",
       "attachment_face": "Broad flat underside to floor/table/bed; shortest thickness normal Z",
       "semantic_front": "Decorated broad face upwards+Z",
       "target_polycount_proposed": 2500,
@@ -118,7 +148,17 @@
       "model_sha256": "",
       "review_status": "pending-reference-review",
       "suggested_model_filename": "INT-ATELIER-PROP-001-D04__paint-palette__v001.glb",
-      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed",
+      "component_family": "Atelier Prop",
+      "parent_asset_family": "INT-ATELIER-PROP-001",
+      "reference_image_id": "INT-ATELIER-PROP-001",
+      "reference_file": "completion-pass/INT-ATELIER-PROP-001/INT-ATELIER-PROP-001.png",
+      "reference_sha256": "58044c44041d3869eee3ad5549f81fa629f284f6852cef44b32039376ab86bd4",
+      "source_reference_id": "GEN-24",
+      "source_reference_file": "images/illustrated-boards/GEN-24.png",
+      "source_reference_sha256": "deb78cfce6dab5c31d9b3519d3bc01a07e58bba453b013fcdb76bd2e8be3f349",
+      "notes": "Twelve requested craft props appear with separate back/underside or open-state views. Easel has working ledge and support, loom has visible warp/heddle elements, scissors sit in a distinct case and stool underside shows bracing. Source ivory/rose, blush/indigo and gold motifs remain consistent. Fabric roll and five-spool set are coherent reference groupings; motion, weaving paths, scissor hinges and support stability remain unverified. Dress form is a headless, armless non-character display prop. No living character or anatomy reference was generated. Source backs, dimensions, repeat patterns, inter-view parity and physical attachment remain unverified. Whole-sheet generation does not prove individual meshes are separable.",
+      "geometry_review_status": "unverified"
     },
     {
       "asset_id": "INT-ATELIER-PROP-001-D05",
@@ -130,7 +170,7 @@
         0.25
       ],
       "function": "Missing supporting interior components; reusable across several selected rooms",
-      "construction": "One separate brush pot at appropriate human scale; precise rose/ivory/gold and restrained blue textile motifs matching source. Preserve actual construction (four stable legs for furniture, flat backs for frames, one coherent object). No existing chandelier/mirror/tea-set master duplicated. Dimensions are bounding proposals to refine by function.",
+      "construction": "One small cylindrical BRUSH POT, ivory/blush ceramic with gold star rim and hollow opening; four fine brush handles rise separately, no flowers or giant vase.",
       "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
       "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
       "target_polycount_proposed": 2500,
@@ -148,7 +188,17 @@
       "model_sha256": "",
       "review_status": "pending-reference-review",
       "suggested_model_filename": "INT-ATELIER-PROP-001-D05__brush-pot__v001.glb",
-      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed",
+      "component_family": "Atelier Prop",
+      "parent_asset_family": "INT-ATELIER-PROP-001",
+      "reference_image_id": "INT-ATELIER-PROP-001",
+      "reference_file": "completion-pass/INT-ATELIER-PROP-001/INT-ATELIER-PROP-001.png",
+      "reference_sha256": "58044c44041d3869eee3ad5549f81fa629f284f6852cef44b32039376ab86bd4",
+      "source_reference_id": "GEN-24",
+      "source_reference_file": "images/illustrated-boards/GEN-24.png",
+      "source_reference_sha256": "deb78cfce6dab5c31d9b3519d3bc01a07e58bba453b013fcdb76bd2e8be3f349",
+      "notes": "Twelve requested craft props appear with separate back/underside or open-state views. Easel has working ledge and support, loom has visible warp/heddle elements, scissors sit in a distinct case and stool underside shows bracing. Source ivory/rose, blush/indigo and gold motifs remain consistent. Fabric roll and five-spool set are coherent reference groupings; motion, weaving paths, scissor hinges and support stability remain unverified. Dress form is a headless, armless non-character display prop. No living character or anatomy reference was generated. Source backs, dimensions, repeat patterns, inter-view parity and physical attachment remain unverified. Whole-sheet generation does not prove individual meshes are separable.",
+      "geometry_review_status": "unverified"
     },
     {
       "asset_id": "INT-ATELIER-PROP-001-D06",
@@ -160,7 +210,7 @@
         0.2
       ],
       "function": "Missing supporting interior components; reusable across several selected rooms",
-      "construction": "One separate thread spool set at appropriate human scale; precise rose/ivory/gold and restrained blue textile motifs matching source. Preserve actual construction (four stable legs for furniture, flat backs for frames, one coherent object). No existing chandelier/mirror/tea-set master duplicated. Dimensions are bounding proposals to refine by function.",
+      "construction": "Five separate small THREAD SPOOLS grouped on a low plain tray, visible circular flanges and coherent wound yarn in blush/ivory/indigo. No loom, furniture or floating threads.",
       "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
       "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
       "target_polycount_proposed": 2500,
@@ -178,7 +228,17 @@
       "model_sha256": "",
       "review_status": "pending-reference-review",
       "suggested_model_filename": "INT-ATELIER-PROP-001-D06__thread-spool-set__v001.glb",
-      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed",
+      "component_family": "Atelier Prop",
+      "parent_asset_family": "INT-ATELIER-PROP-001",
+      "reference_image_id": "INT-ATELIER-PROP-001",
+      "reference_file": "completion-pass/INT-ATELIER-PROP-001/INT-ATELIER-PROP-001.png",
+      "reference_sha256": "58044c44041d3869eee3ad5549f81fa629f284f6852cef44b32039376ab86bd4",
+      "source_reference_id": "GEN-24",
+      "source_reference_file": "images/illustrated-boards/GEN-24.png",
+      "source_reference_sha256": "deb78cfce6dab5c31d9b3519d3bc01a07e58bba453b013fcdb76bd2e8be3f349",
+      "notes": "Twelve requested craft props appear with separate back/underside or open-state views. Easel has working ledge and support, loom has visible warp/heddle elements, scissors sit in a distinct case and stool underside shows bracing. Source ivory/rose, blush/indigo and gold motifs remain consistent. Fabric roll and five-spool set are coherent reference groupings; motion, weaving paths, scissor hinges and support stability remain unverified. Dress form is a headless, armless non-character display prop. No living character or anatomy reference was generated. Source backs, dimensions, repeat patterns, inter-view parity and physical attachment remain unverified. Whole-sheet generation does not prove individual meshes are separable.",
+      "geometry_review_status": "unverified"
     },
     {
       "asset_id": "INT-ATELIER-PROP-001-D07",
@@ -190,7 +250,7 @@
         0.2
       ],
       "function": "Missing supporting interior components; reusable across several selected rooms",
-      "construction": "One separate fabric roll at appropriate human scale; precise rose/ivory/gold and restrained blue textile motifs matching source. Preserve actual construction (four stable legs for furniture, flat backs for frames, one coherent object). No existing chandelier/mirror/tea-set master duplicated. Dimensions are bounding proposals to refine by function.",
+      "construction": "One horizontal FABRIC ROLL, open end spiral and short loose tail, ivory/blush cloth with indigo/gold floral border. Long axis1m; no bed, rug frame or architecture.",
       "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
       "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
       "target_polycount_proposed": 2500,
@@ -208,7 +268,17 @@
       "model_sha256": "",
       "review_status": "pending-reference-review",
       "suggested_model_filename": "INT-ATELIER-PROP-001-D07__fabric-roll__v001.glb",
-      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed",
+      "component_family": "Atelier Prop",
+      "parent_asset_family": "INT-ATELIER-PROP-001",
+      "reference_image_id": "INT-ATELIER-PROP-001",
+      "reference_file": "completion-pass/INT-ATELIER-PROP-001/INT-ATELIER-PROP-001.png",
+      "reference_sha256": "58044c44041d3869eee3ad5549f81fa629f284f6852cef44b32039376ab86bd4",
+      "source_reference_id": "GEN-24",
+      "source_reference_file": "images/illustrated-boards/GEN-24.png",
+      "source_reference_sha256": "deb78cfce6dab5c31d9b3519d3bc01a07e58bba453b013fcdb76bd2e8be3f349",
+      "notes": "Twelve requested craft props appear with separate back/underside or open-state views. Easel has working ledge and support, loom has visible warp/heddle elements, scissors sit in a distinct case and stool underside shows bracing. Source ivory/rose, blush/indigo and gold motifs remain consistent. Fabric roll and five-spool set are coherent reference groupings; motion, weaving paths, scissor hinges and support stability remain unverified. Dress form is a headless, armless non-character display prop. No living character or anatomy reference was generated. Source backs, dimensions, repeat patterns, inter-view parity and physical attachment remain unverified. Whole-sheet generation does not prove individual meshes are separable.",
+      "geometry_review_status": "unverified"
     },
     {
       "asset_id": "INT-ATELIER-PROP-001-D08",
@@ -220,7 +290,7 @@
         0.05
       ],
       "function": "Missing supporting interior components; reusable across several selected rooms",
-      "construction": "One separate pattern folio at appropriate human scale; precise rose/ivory/gold and restrained blue textile motifs matching source. Preserve actual construction (four stable legs for furniture, flat backs for frames, one coherent object). No existing chandelier/mirror/tea-set master duplicated. Dimensions are bounding proposals to refine by function.",
+      "construction": "One closed PATTERN FOLIO with slim ivory cover, blush binding ribbon and small gold star clasp. Tiny open-state inset shows plain folded pattern sheets, not a library book stack.",
       "attachment_face": "Broad flat underside to floor/table/bed; shortest thickness normal Z",
       "semantic_front": "Decorated broad face upwards+Z",
       "target_polycount_proposed": 2500,
@@ -238,7 +308,17 @@
       "model_sha256": "",
       "review_status": "pending-reference-review",
       "suggested_model_filename": "INT-ATELIER-PROP-001-D08__pattern-folio__v001.glb",
-      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed",
+      "component_family": "Atelier Prop",
+      "parent_asset_family": "INT-ATELIER-PROP-001",
+      "reference_image_id": "INT-ATELIER-PROP-001",
+      "reference_file": "completion-pass/INT-ATELIER-PROP-001/INT-ATELIER-PROP-001.png",
+      "reference_sha256": "58044c44041d3869eee3ad5549f81fa629f284f6852cef44b32039376ab86bd4",
+      "source_reference_id": "GEN-24",
+      "source_reference_file": "images/illustrated-boards/GEN-24.png",
+      "source_reference_sha256": "deb78cfce6dab5c31d9b3519d3bc01a07e58bba453b013fcdb76bd2e8be3f349",
+      "notes": "Twelve requested craft props appear with separate back/underside or open-state views. Easel has working ledge and support, loom has visible warp/heddle elements, scissors sit in a distinct case and stool underside shows bracing. Source ivory/rose, blush/indigo and gold motifs remain consistent. Fabric roll and five-spool set are coherent reference groupings; motion, weaving paths, scissor hinges and support stability remain unverified. Dress form is a headless, armless non-character display prop. No living character or anatomy reference was generated. Source backs, dimensions, repeat patterns, inter-view parity and physical attachment remain unverified. Whole-sheet generation does not prove individual meshes are separable.",
+      "geometry_review_status": "unverified"
     },
     {
       "asset_id": "INT-ATELIER-PROP-001-D09",
@@ -250,7 +330,7 @@
         0.05
       ],
       "function": "Missing supporting interior components; reusable across several selected rooms",
-      "construction": "One separate scissor case at appropriate human scale; precise rose/ivory/gold and restrained blue textile motifs matching source. Preserve actual construction (four stable legs for furniture, flat backs for frames, one coherent object). No existing chandelier/mirror/tea-set master duplicated. Dimensions are bounding proposals to refine by function.",
+      "construction": "One flat SCISSOR CASE, blush leather with fine gold border and hinged/open flap exposing TWO distinct scissor handle loops. No giant knife, human hand or impossible fused scissors.",
       "attachment_face": "Broad flat underside to floor/table/bed; shortest thickness normal Z",
       "semantic_front": "Decorated broad face upwards+Z",
       "target_polycount_proposed": 2500,
@@ -268,7 +348,17 @@
       "model_sha256": "",
       "review_status": "pending-reference-review",
       "suggested_model_filename": "INT-ATELIER-PROP-001-D09__scissor-case__v001.glb",
-      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed",
+      "component_family": "Atelier Prop",
+      "parent_asset_family": "INT-ATELIER-PROP-001",
+      "reference_image_id": "INT-ATELIER-PROP-001",
+      "reference_file": "completion-pass/INT-ATELIER-PROP-001/INT-ATELIER-PROP-001.png",
+      "reference_sha256": "58044c44041d3869eee3ad5549f81fa629f284f6852cef44b32039376ab86bd4",
+      "source_reference_id": "GEN-24",
+      "source_reference_file": "images/illustrated-boards/GEN-24.png",
+      "source_reference_sha256": "deb78cfce6dab5c31d9b3519d3bc01a07e58bba453b013fcdb76bd2e8be3f349",
+      "notes": "Twelve requested craft props appear with separate back/underside or open-state views. Easel has working ledge and support, loom has visible warp/heddle elements, scissors sit in a distinct case and stool underside shows bracing. Source ivory/rose, blush/indigo and gold motifs remain consistent. Fabric roll and five-spool set are coherent reference groupings; motion, weaving paths, scissor hinges and support stability remain unverified. Dress form is a headless, armless non-character display prop. No living character or anatomy reference was generated. Source backs, dimensions, repeat patterns, inter-view parity and physical attachment remain unverified. Whole-sheet generation does not prove individual meshes are separable.",
+      "geometry_review_status": "unverified"
     },
     {
       "asset_id": "INT-ATELIER-PROP-001-D10",
@@ -280,7 +370,7 @@
         0.25
       ],
       "function": "Missing supporting interior components; reusable across several selected rooms",
-      "construction": "One separate needlework basket at appropriate human scale; precise rose/ivory/gold and restrained blue textile motifs matching source. Preserve actual construction (four stable legs for furniture, flat backs for frames, one coherent object). No existing chandelier/mirror/tea-set master duplicated. Dimensions are bounding proposals to refine by function.",
+      "construction": "One small NEEDLEWORK BASKET with open woven ivory body and blush lining, two yarn balls and folded cloth. Coherent weave, flat base, no hanging garland or whole chair.",
       "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
       "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
       "target_polycount_proposed": 2500,
@@ -298,7 +388,17 @@
       "model_sha256": "",
       "review_status": "pending-reference-review",
       "suggested_model_filename": "INT-ATELIER-PROP-001-D10__needlework-basket__v001.glb",
-      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed",
+      "component_family": "Atelier Prop",
+      "parent_asset_family": "INT-ATELIER-PROP-001",
+      "reference_image_id": "INT-ATELIER-PROP-001",
+      "reference_file": "completion-pass/INT-ATELIER-PROP-001/INT-ATELIER-PROP-001.png",
+      "reference_sha256": "58044c44041d3869eee3ad5549f81fa629f284f6852cef44b32039376ab86bd4",
+      "source_reference_id": "GEN-24",
+      "source_reference_file": "images/illustrated-boards/GEN-24.png",
+      "source_reference_sha256": "deb78cfce6dab5c31d9b3519d3bc01a07e58bba453b013fcdb76bd2e8be3f349",
+      "notes": "Twelve requested craft props appear with separate back/underside or open-state views. Easel has working ledge and support, loom has visible warp/heddle elements, scissors sit in a distinct case and stool underside shows bracing. Source ivory/rose, blush/indigo and gold motifs remain consistent. Fabric roll and five-spool set are coherent reference groupings; motion, weaving paths, scissor hinges and support stability remain unverified. Dress form is a headless, armless non-character display prop. No living character or anatomy reference was generated. Source backs, dimensions, repeat patterns, inter-view parity and physical attachment remain unverified. Whole-sheet generation does not prove individual meshes are separable.",
+      "geometry_review_status": "unverified"
     },
     {
       "asset_id": "INT-ATELIER-PROP-001-D11",
@@ -310,7 +410,7 @@
         1.7
       ],
       "function": "Missing supporting interior components; reusable across several selected rooms",
-      "construction": "One separate dress display torso stand at appropriate human scale; precise rose/ivory/gold and restrained blue textile motifs matching source. Preserve actual construction (four stable legs for furniture, flat backs for frames, one coherent object). No existing chandelier/mirror/tea-set master duplicated. Dimensions are bounding proposals to refine by function.",
+      "construction": "One human-sized fabric-covered DRESSMAKER TORSO on a narrow pole and stable three-foot base. Headless, armless mannequin, no human face, clothes, armor or display room. Clear wooden adjustment knob.",
       "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
       "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
       "target_polycount_proposed": 2500,
@@ -328,7 +428,17 @@
       "model_sha256": "",
       "review_status": "pending-reference-review",
       "suggested_model_filename": "INT-ATELIER-PROP-001-D11__dress-display-torso-stand__v001.glb",
-      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed",
+      "component_family": "Atelier Prop",
+      "parent_asset_family": "INT-ATELIER-PROP-001",
+      "reference_image_id": "INT-ATELIER-PROP-001",
+      "reference_file": "completion-pass/INT-ATELIER-PROP-001/INT-ATELIER-PROP-001.png",
+      "reference_sha256": "58044c44041d3869eee3ad5549f81fa629f284f6852cef44b32039376ab86bd4",
+      "source_reference_id": "GEN-24",
+      "source_reference_file": "images/illustrated-boards/GEN-24.png",
+      "source_reference_sha256": "deb78cfce6dab5c31d9b3519d3bc01a07e58bba453b013fcdb76bd2e8be3f349",
+      "notes": "Twelve requested craft props appear with separate back/underside or open-state views. Easel has working ledge and support, loom has visible warp/heddle elements, scissors sit in a distinct case and stool underside shows bracing. Source ivory/rose, blush/indigo and gold motifs remain consistent. Fabric roll and five-spool set are coherent reference groupings; motion, weaving paths, scissor hinges and support stability remain unverified. Dress form is a headless, armless non-character display prop. No living character or anatomy reference was generated. Source backs, dimensions, repeat patterns, inter-view parity and physical attachment remain unverified. Whole-sheet generation does not prove individual meshes are separable.",
+      "geometry_review_status": "unverified"
     },
     {
       "asset_id": "INT-ATELIER-PROP-001-D12",
@@ -340,7 +450,7 @@
         0.5
       ],
       "function": "Missing supporting interior components; reusable across several selected rooms",
-      "construction": "One separate craft stool at appropriate human scale; precise rose/ivory/gold and restrained blue textile motifs matching source. Preserve actual construction (four stable legs for furniture, flat backs for frames, one coherent object). No existing chandelier/mirror/tea-set master duplicated. Dimensions are bounding proposals to refine by function.",
+      "construction": "One low CRAFT STOOL with round blush padded seat, ivory ring below, four slender gold/ivory legs and low bracing. No desk, wheels, flowers or chair back.",
       "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
       "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
       "target_polycount_proposed": 2500,
@@ -358,7 +468,17 @@
       "model_sha256": "",
       "review_status": "pending-reference-review",
       "suggested_model_filename": "INT-ATELIER-PROP-001-D12__craft-stool__v001.glb",
-      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed",
+      "component_family": "Atelier Prop",
+      "parent_asset_family": "INT-ATELIER-PROP-001",
+      "reference_image_id": "INT-ATELIER-PROP-001",
+      "reference_file": "completion-pass/INT-ATELIER-PROP-001/INT-ATELIER-PROP-001.png",
+      "reference_sha256": "58044c44041d3869eee3ad5549f81fa629f284f6852cef44b32039376ab86bd4",
+      "source_reference_id": "GEN-24",
+      "source_reference_file": "images/illustrated-boards/GEN-24.png",
+      "source_reference_sha256": "deb78cfce6dab5c31d9b3519d3bc01a07e58bba453b013fcdb76bd2e8be3f349",
+      "notes": "Twelve requested craft props appear with separate back/underside or open-state views. Easel has working ledge and support, loom has visible warp/heddle elements, scissors sit in a distinct case and stool underside shows bracing. Source ivory/rose, blush/indigo and gold motifs remain consistent. Fabric roll and five-spool set are coherent reference groupings; motion, weaving paths, scissor hinges and support stability remain unverified. Dress form is a headless, armless non-character display prop. No living character or anatomy reference was generated. Source backs, dimensions, repeat patterns, inter-view parity and physical attachment remain unverified. Whole-sheet generation does not prove individual meshes are separable.",
+      "geometry_review_status": "unverified"
     }
   ]
 }

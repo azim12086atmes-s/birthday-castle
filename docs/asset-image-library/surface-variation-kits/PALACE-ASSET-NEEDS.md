@@ -1,20 +1,22 @@
 # Palace asset needs and confidence
 
+**Current update —15 October2026:** [Bedroom, balcony, bedding and room-decor references](../completion-pass/BEDROOM-UPDATE.md) are saved. Both bedroom/dining ceiling apexes are18m proposed. The83selected palace slots have reference images; the overall library has123saved sheets and211/230selected or reserved. This is reference coverage, not verified complete palace construction. Known image discrepancies and remaining view/fit work are recorded beside each sheet. Earlier progress entries below are historical snapshots; current counts and new references supersede their old missing/reservation statements.
+
 We have useful visible architecture/decor vocabulary, not a proven complete2km palace. Structural continuity, back/roof returns, full room furnishing, model joints and playable navigation remain unresolved. This checklist preserves20 candidate families, of which16 remain in scope and4 are excluded by the owner. Categories are not approvals or automatic new-image requests.
 
-**Interior architecture coverage is partial.** [The interior audit](INTERIOR-COVERAGE-AUDIT.md) distinguishes existing room scenes/plans/sections and motif studies from missing coordinated room views, dome interiors and room-specific construction kits.
+**Interior geometry and view consistency remain partial.** [The interior audit](INTERIOR-COVERAGE-AUDIT.md) distinguishes existing room scenes/plans/sections and motif studies from missing coordinated room views, dome interiors and room-specific construction kits.
 
 | Family | Objects/support still needed | Current evidence/status | Optional magical idea |
 | --- | --- | --- | --- |
-| Royal bedrooms | Beds, headboards, bedside cabinets, chests and bedding | missing supporting furniture references — GEN-24; PAL-INT-PROP-001 reservation | Canopy fabric with a quiet constellation glow |
-| Dressing and jewellery rooms | Wardrobes, dressing tables, stools, jewellery stands and storage boxes | incomplete furniture kit — GEN-24 mirror/console | Small jewel cases and a rose-trimmed dressing mirror |
-| Dining and tea salons | Dining tables, chairs, tea sets, dishes and serving cabinets | missing dedicated kit — GEN-24 side table only | Teacups, blossom place settings and an intimate tea pavilion |
-| Curtains and hanging textiles | Curtain panels, tiebacks, canopies, tassels, tapestries and banners | curtain master and celebration swags/festoons now indexed; extra variants/joints still incomplete — GEN-24-A10; GEN-25-A06/A07; GEN-35 | Layered translucent rose curtains and embroidered star hangings |
-| Carpets and soft furnishings | Area rugs, stair runners, cushions, bed throws and tablecloths | embroidered rug master indexed; runners/cushions/throws remain incomplete — GEN-24-A11; INT-C01 is hard-floor vocabulary only | Different woven motifs for quiet suites and grand halls |
-| Portrait and memory galleries | Frames, display plinths, picture lights, albums and keepsake cabinets | new optional experience/supporting-prop kit — GEN-24 mirror/console partly reusable | A gallery of illustrated memories revealed through light |
-| Enchanted library and archives | Books, writing desks, reading chairs, ladders, scroll cases and shelf props | hero/reference room exists; supporting kit incomplete — GEN-26 library; GEN-24 bookcase/lectern | A hidden rotating shelf and softly moving story pages |
+| Royal bedrooms | Beds, headboards, bedside cabinets, chests and bedding | frame/cabinets/wardrobe/table and ten bedding inserts now saved — INT-SUITE-FURN-001; INT-BED-DRESS-001; revised INT-R02; actual fit pending | Canopy fabric with a quiet constellation glow |
+| Dressing and jewellery rooms | Wardrobes, dressing tables, stools, jewellery stands and storage boxes | wardrobe/table and twelve personal accessories saved — INT-SUITE-FURN-001; INT-BEDROOM-PROP-001; existing mirror reused | Small jewel cases and a rose-trimmed dressing mirror |
+| Dining and tea salons | Dining tables, chairs, tea sets, dishes and serving cabinets | modular table/tea table/sideboard and18m-vault salon views saved — INT-DINING-FURN-001; INT-R03; existing chair/tea set reused | Teacups, blossom place settings and an intimate tea pavilion |
+| Curtains and hanging textiles | Curtain panels, tiebacks, canopies, tassels, tapestries and banners | existing masters plus sixteen textile/mounting details and ten bed inserts saved — INT-TEXTILE-JOINS-001; INT-BED-DRESS-001; repeat/fit review pending | Layered translucent rose curtains and embroidered star hangings |
+| Carpets and soft furnishings | Area rugs, stair runners, cushions, bed throws and tablecloths | rug master reused; runner, cushion and throw references saved — INT-TEXTILE-JOINS-001; repeat texture continuity unverified | Different woven motifs for quiet suites and grand halls |
+| Portrait and memory galleries | Frames, display plinths, picture lights, albums and keepsake cabinets | twelve display/frame/album/plinth/light references saved — INT-GALLERY-PROP-001; view/backing contacts pending review | A gallery of illustrated memories revealed through light |
+| Enchanted library and archives | Books, writing desks, reading chairs, ladders, scroll cases and shelf props | twelve supporting props and structural shells saved — INT-LIBRARY-PROP-001; INT-LIBRARY-SHELL-001; multi-view/fit review still needed | A hidden rotating shelf and softly moving story pages |
 | Celestial observatory | Telescopes, star charts, instrument desks, globes and viewing seats | armillary exists; rest optional/missing — GEN-28 armillary | A star chart that aligns with the palace night sky |
-| Art and craft workshops | Easels, looms, embroidery stands, quills, paints and fabric rolls | new optional activity/furnishing kit — No dedicated selected kit | An atelier for gowns, mosaics and painted wishes |
+| Art and craft workshops | Easels, looms, embroidery stands, quills, paints and fabric rolls | twelve craft-room references saved — INT-ATELIER-PROP-001; mechanical fit unverified | An atelier for gowns, mosaics and painted wishes |
 | Conservatory planting and care | Planters, trellises, orchids, citrus, potting tables and hanging baskets | some foliage/planters exist; care-kit incomplete — GEN-09/13/35/36; PAL-CONSERV-SURF-001 | A fragrant moon-bloom collection with its own small paths |
 | Aviaries and butterfly gardens | Perches, bird baths, habitat shelters and butterfly-friendly planting | new optional kit; creatures require separate audit — GEN-09/13 garden vocabulary | A small butterfly court beside the conservatory |
 | Water and memory gardens | Pool benches, small rills, wall spouts, basin joins and water-side ornaments | fountain heroes exist; surrounding support kit incomplete — GEN-11/14/34/43 | Pools that reflect a different constellation after a wish |
@@ -33,7 +35,7 @@ Tile/cornice/parapet repeats here have declared matching rules. Their illustrate
 
 ## Budget
 
-65/65 palace slots are selected/reserved, including unproduced room/furniture reservations;85/230 total. Do not generate a separate image for each remaining category automatically. Consolidate these categories into10–20-part prop sheets, reuse original references and replace unproduced or superseded selections when warranted. Files remain preserved when a selection is retired.
+83/83 palace slots currently have saved references;211/230 total slots are selected or reserved, with123saved overall. Three previously unallocated nature slots were reassigned for the requested bed, personal decor and balcony kits; planned landscape references were retained. Do not generate a separate image for each remaining category automatically. Consolidate these categories into10–20-part prop sheets, reuse original references and replace unproduced or superseded selections when warranted. Files remain preserved when a selection is retired.
 
 ## Structural core still to prove
 
@@ -57,7 +59,7 @@ Continuous wall/ward host bodies; roof and floor substrates; angled/curved wing 
 
 ## Celebration props generated
 
-[One ten-item labelled sheet](../interior-celebration-dressing/PAL-CELEBRATION-PROP-001/README.md) now covers the audited chair, tea/serving/place-setting pieces and optional birthday memory display. Source-compatible new shapes remain pending review; backs, mounts and actual fit unverified. Existing decor remains reused. Private furniture pack is deferred to keep65 palace slots; beds/wardrobes remain missing. No models or dressed-room placement view generated.
+[One ten-item labelled sheet](../interior-celebration-dressing/PAL-CELEBRATION-PROP-001/README.md) now covers the audited chair, tea/serving/place-setting pieces and optional birthday memory display. Source-compatible new shapes remain pending review; backs, mounts and actual fit unverified. Existing decor remains reused. At that earlier checkpoint the private furniture pack was deferred. It is now superseded by INT-SUITE-FURN-001 and INT-BED-DRESS-001; see the current update above. No models or dressed-room placement view generated.
 
 ## Ballroom celebration placement preview
 

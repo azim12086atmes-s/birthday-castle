@@ -170,5 +170,14 @@
     "room": "original ballroom",
     "view_parity_verified": false,
     "models_generated": 0
+  },
+  "follow_up_2026_10_15": {
+    "summary": "Owner-requested18m suite/dining vaults, west circular balcony, finished bedding and personal/shared room decor saved; prior room sheets archived. Earlier gap claims are historical, see current linked update.",
+    "reference_update": "../completion-pass/BEDROOM-UPDATE.md",
+    "current_selected_palace_references_saved": 83,
+    "current_library_saved": 123,
+    "current_library_selected_or_reserved": 211,
+    "global_ceiling": 230,
+    "geometry_and_view_parity_verified": false
   }
 }

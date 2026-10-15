@@ -1,5 +1,7 @@
 # Palace interiors: partial references, not complete construction sheets
 
+**15 October2026 follow-up:** [Saved bedroom, balcony and room-decor update](../completion-pass/BEDROOM-UPDATE.md) now includes18m bedroom/dining vault proposals, finished bed/bedding, circular balcony modules, personal items, textiles and library/gallery/atelier props. Dome/interior host references are also saved in the completion gallery.83palace slots have references;211/230library slots are allocated. The audit below preserves the14October findings and earlier counts; its “missing” labels are historical, not a fresh inventory. Opposed ceiling views, exact room geometry, pattern seams and physical fit still need review.
+
 Reviewed 14 October 2026, one original image at a time. No images or models were generated during this audit.
 
 The previous “reuse existing interiors” wording was too broad. **Existing motifs and partial plans can be reused; complete interior design coverage has not been established.**

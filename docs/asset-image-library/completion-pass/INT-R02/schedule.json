@@ -7,7 +7,7 @@
   "source_reference_id": "GEN-24",
   "source_reference_file": "images/illustrated-boards/GEN-24.png",
   "source_reference_sha256": "deb78cfce6dab5c31d9b3519d3bc01a07e58bba453b013fcdb76bd2e8be3f349",
-  "prompt": "Create ONE richly detailed architectural REFERENCE SHEET titled INT-R02 \u2014 PRINCESS SUITE / COORDINATED INTERIOR VIEWS. Four large views in a 2x2 grid and one small top plan in the lower margin. Only ONE room and ONE bed across all views, not four different room designs. Use the supplied GEN-24 furniture sheet as the material, gold carving and textile style authority. No bedroom is depicted in that source: this ROOM LAYOUT IS PROPOSED. Preserve ivory and rose-veined marble, gilt floral/star tracery, cobalt and blush glass, dusty pink textiles, indigo valances. Furniture remains HUMAN scale: bed mattress 2.0 x 2.2m, table 0.75m high, chairs 0.48m seat height. No human figures.\n\nFIXED PROPOSED PLAN, SAME IN EVERY VIEW: 24m east-west by 18m north-south, ceiling apex 12m. North is top of small plan. Exactly one pink canopy bed on the north wall, headboard north, foot toward south, centre x0,y6.5. Two bedside cabinets. Dressing cupboards and moon mirror form a west/northwest alcove. Exactly THREE tall pointed window bays on EAST wall at y=-5,0,+5; gold mullions, cobalt/rose glass. SOUTH wall has exactly one central double entry door. Southwest corner has the source chaise, one reading chair and tea table. Southeast corner has a memory display console with closed gift boxes and a few framed keepsakes. Repeat none of these as extra furniture in other corners. One chandelier over the centre. Three shallow pointed ceiling bays run north-south with indigo star infill, ivory ribs and gold bosses. Lower cornice at 4.5m; tall clerestory above. Doors and cupboards are reachable by a clear connected aisle at least1.8m wide. No bath, kitchen, music or service facilities.\n\nVIEW A: from just inside SOUTH entry looking NORTH, bed clearly visible, east windows on right, west dressing left. VIEW B: from NORTH near bed foot looking SOUTH, double entry centred, east windows on left, reading and memory zones at far corners. VIEW C: from WEST looking EAST, exactly three east windows across opposite wall, north bed at left, south entry to right. VIEW D: high corner CUTAWAY looking down into the same room, one half of ceiling lifted and underside shown above the room; reveal ceiling ribs, all four walls and circulation. Small top plan labelled N/E/S/W must preserve the fixed counts and positions. Do not mirror the room, add extra doors or multiply beds between views.\n\nMake it feel inhabited and celebratory through REUSABLE dressing, not empty vast floors: layered pink/indigo rugs near each seating/bed zone, rose garlands over door and bed cornice, gilt sconces, bows on two cabinet handles, small floral urns, lanterns, star pennants and neatly grouped gifts/memory objects. Keep eye-level carved wall panels and curtain tiebacks readable. Full height architecture remains visible, furniture is not enlarged to fill it. Neutral ivory sheet background, crisp labels outside art. Label the single room asset INT-R02-S01; view letters are views, not new asset IDs. Footer: Concept reference / proposed layout / view consistency and geometry require review.",
+  "prompt": "Revise the supplied INT-R02 bedroom reference board. Preserve the recognizable single-room design, bed style and ivory/rose-veined marble, indigo/gold star ribs, pink textiles, blue/rose glass. Requested changes: MUCH HIGHER ceiling apex18m instead of12m, and a large OPEN CIRCULAR FLOWER BALCONY on the LEFT WHEN FACING THE HEADBOARD. This means WEST, not the east window wall. Treat this as a careful architectural revision, not another palace or hotel room.\nKeep the room24m east-west by18m north-south, NORTH bed centred x0,y6.5 with headboard on north wall, SOUTH central entrance, THREE EAST window bays. Replace the WEST wall's middle section with ONE broad open pointed arch8m wide and12m tall, no glazing, doors or solid wall across it. Draw curtains tied completely back at its sides. Through it show a short8m-wide threshold neck leading to a fully ROUND open-air balcony18m in diameter. Plan coordinates: balcony centre x=-23,y=1,radius9; neck fromx=-16tox=-12, y=-3to5; room west edge x=-12. This leaves a large circular platform projecting west, NOT a semicircular bay window, rectangle, roof terrace on east or indoor conservatory. Balcony floor is level with bedroom. Ivory/gold perimeter rail1.1m high with flower troughs outside edge, pink/cream climbing roses, small cypress urns, two human-scale seats and a small off-centre fountain. No rail across the bedroom connection. No balcony roof. Long slender supports/corbels below may be indicated in cutaway only, not extra towers.\nKeep one2.0x2.2m mattress on existing four-post ivory/gold canopy frame. Complete it with ivory fitted sheet, blush duvet, indigo/gold embroidered foot runner, TWO sleeping pillows, small accent cushions, four tied-back translucent canopy drapes. Do not enlarge furniture to match ceiling. Put dressing cupboards on northwest bed-wall return, reading chaise and one chair southwest, keepsake console southeast; do not block balcony access. Curtains, rugs, sconces, small florals, hanging star charms and tasteful birthday ribbon dressing fill human-height zones without hiding architecture. Source wardrobe, moon mirror and bed remain recognizable. Lower cornice4.5m, intermediate clerestory9m, apex18m, three pointed star-panel ceiling bays; single chandelier hangs down to human-readable room scale.\nONE SHEET: title INT-R02 \u2014 PRINCESS SUITE / HIGH VAULT & CIRCULAR FLOWER BALCONY. Four coordinated views plus north-up top plan and ceiling section. A South entry looking NORTH: bed ahead, open flower balcony LEFT, three windows RIGHT. B North near bed looking SOUTH: balcony RIGHT, east windows LEFT, reading southwest on RIGHT and memory southeast on LEFT. C From WEST BALCONY looking EAST through open arch: see bedroom then three east windows opposite, bed at LEFT and south door RIGHT. D HIGH CORNER CUTAWAY showing the ENTIRE circular west balcony joined to room, bed, 18m ceiling ribs and supports below balcony. Top plan must explicitly draw full west circle, neck and wall opening; bed at north, door at south. Do not swap furniture across cameras. Label INT-R02-S01 as the only room assembly. All dimensions PROPOSED; this is a reference, not measured geometry. Preserve visible carved details and add readable flower trough/rail close-up. Footer: Proposed revision; reference view parity, structural support and exact fit require modeling review.",
   "parts": [
     {
       "asset_id": "INT-R02-S01",
@@ -16,10 +16,10 @@
       "dimensions_m_proposed": [
         24,
         18,
-        12
+        18
       ],
       "function": "Reserved princess-suite room reference missing; one coherent design overview",
-      "construction": "Four views of same source-compatible princess bedroom and dressing alcove: rose/ivory marble, gold framing, blue/rose windows, a human-scale canopy bed cluster, cupboards, carpets, lamps, curtains, birthday flowers and memory display. Source furniture vocabulary, inferred room layout. Keep meaningful open circulation and stable openings across views.",
+      "construction": "One princess suite with18m apex, north bed, south entry, three east window bays and an8m-wide open west arch leading to an18m circular flower balcony. Human-scale bedding and dense reusable room dressing; coordinates and supports proposed.",
       "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
       "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
       "target_polycount_proposed": 8000,
@@ -43,19 +43,30 @@
   "outputs": [
     {
       "file": "completion-pass/INT-R02/INT-R02.png",
+      "sha256": "0e1934ceabd37741ad69e63cf85eb31d7f55f021ab0fd41f070a829f90c6f44e",
+      "original_file": "/workspace/generated_images/exec-17231cb1-f156-4658-978e-e62693025227.png",
+      "actual_input_file": "completion-pass/INT-R02/INT-R02-R01.png",
+      "actual_input_sha256": "9450d3e2c22ff804f7264c0e6481f45be73ee26e9edbf1dbc123a33222d66eb3",
+      "attempt": 2,
+      "generator": "image_gen.imagegen"
+    }
+  ],
+  "previous_attempts": [
+    {
+      "file": "completion-pass/INT-R02/INT-R02-R01.png",
       "sha256": "9450d3e2c22ff804f7264c0e6481f45be73ee26e9edbf1dbc123a33222d66eb3",
       "original_file": "/workspace/generated_images/exec-5a00a4bc-3d29-4346-9d06-cb10f666e89e.png",
       "actual_input_file": "images/illustrated-boards/GEN-24.png",
       "actual_input_sha256": "deb78cfce6dab5c31d9b3519d3bc01a07e58bba453b013fcdb76bd2e8be3f349",
       "attempt": 1,
-      "generator": "image_gen.imagegen"
+      "generator": "image_gen.imagegen",
+      "rejection_reason": "Owner requested ceiling increase from12m to18m and an open west circular flower balcony with additional bedroom dressing"
     }
   ],
-  "previous_attempts": [],
   "models_generated": 0,
   "physical_join_fit_verified": false,
   "view_geometry_parity_verified": false,
-  "review_status": "reference-with-opposite-view-furniture-placement-discrepancy",
+  "review_status": "requested-revision-with-rail-and-printed-dimension-corrections",
   "gap": "Reserved princess-suite room reference missing; one coherent design overview",
   "mode": "room",
   "source_interpretation": "GEN-24 depicts furniture, not a measured suite; room arrangement below is an explicit new proposal.",
@@ -72,7 +83,7 @@
       ],
       "z": [
         0,
-        12
+        18
       ]
     },
     "north_bed_centre": [
@@ -98,8 +109,8 @@
       ]
     ],
     "west_dressing_zone": [
-      -10,
-      4
+      -9,
+      7
     ],
     "southwest_reading_zone": [
       -7,
@@ -115,11 +126,164 @@
       "east_window_bays": 3,
       "entry_door": 1,
       "chandelier": 1
+    },
+    "west_balcony": {
+      "direction_rule": "Left when facing the north headboard = WEST",
+      "circular_floor_centre": [
+        -23,
+        1
+      ],
+      "diameter_m": 18,
+      "neck_bounds_xy": [
+        -16,
+        -12,
+        -3,
+        5
+      ],
+      "wall_opening_centre": [
+        -12,
+        1
+      ],
+      "opening_width_m": 8,
+      "opening_height_m": 12,
+      "outer_rail_height_m": 1.1,
+      "roof": "open sky",
+      "support": "existing pillar/bracket family; engineering not verified"
+    },
+    "assembly_bounds_excluding_supports": {
+      "x": [
+        -32,
+        12
+      ],
+      "y": [
+        -9,
+        10
+      ],
+      "z": [
+        0,
+        18
+      ],
+      "note": "Room shell alone24x18m; west circle plus neck expands combined floor footprint. Balcony underside supports not included."
     }
   },
   "visual_review_notes": [
-    "All four requested room views, one bed per view, three east window bays, south entry, dressing alcove and ceiling section are present. Materials follow GEN-24 furniture vocabulary; room layout itself is new.",
-    "Plan, arrival view and cutaway place reading southwest and memory display southeast. Opposite view B appears to swap these two corner furniture groups. View B is atmosphere reference only; saved proposed_layout and the top plan control these corner positions.",
-    "Printed fixed-layout labels are generator output, not a verified geometric guarantee. Actual furniture dimensions, room openings and ceiling bay correspondence must be enforced in the model."
-  ]
+    "Requested west open arch, circular flower balcony and18m apex appear in the main views, plan and cutaway. East window wall and north bed remain recognizable; balcony is open to sky with outer flower rail.",
+    "View C adds a foreground rail across part of the bedroom approach. Do not build a rail across the open doorway or threshold neck; the uninterrupted connection in saved proposed_layout controls.",
+    "Printed room-data text misstates neck as8x8m; intended neck is8m wide by4m long, as saved coordinates x=-16to-12,y=-3to5.",
+    "Printed canopy frame height near4.0m contradicts the existing2.8m bedframe reference. Reuse INT-SUITE-FURN-001-S01 unchanged at2.8m. Furniture stays human-scale.",
+    "No measured correspondence of views or engineering approval of balcony supports is implied. The top plan and declared coordinate layout control position; perspective ornament is illustrative."
+  ],
+  "revision_history": [
+    {
+      "date": "2026-10-15",
+      "prompt": "Create ONE richly detailed architectural REFERENCE SHEET titled INT-R02 \u2014 PRINCESS SUITE / COORDINATED INTERIOR VIEWS. Four large views in a 2x2 grid and one small top plan in the lower margin. Only ONE room and ONE bed across all views, not four different room designs. Use the supplied GEN-24 furniture sheet as the material, gold carving and textile style authority. No bedroom is depicted in that source: this ROOM LAYOUT IS PROPOSED. Preserve ivory and rose-veined marble, gilt floral/star tracery, cobalt and blush glass, dusty pink textiles, indigo valances. Furniture remains HUMAN scale: bed mattress 2.0 x 2.2m, table 0.75m high, chairs 0.48m seat height. No human figures.\n\nFIXED PROPOSED PLAN, SAME IN EVERY VIEW: 24m east-west by 18m north-south, ceiling apex 12m. North is top of small plan. Exactly one pink canopy bed on the north wall, headboard north, foot toward south, centre x0,y6.5. Two bedside cabinets. Dressing cupboards and moon mirror form a west/northwest alcove. Exactly THREE tall pointed window bays on EAST wall at y=-5,0,+5; gold mullions, cobalt/rose glass. SOUTH wall has exactly one central double entry door. Southwest corner has the source chaise, one reading chair and tea table. Southeast corner has a memory display console with closed gift boxes and a few framed keepsakes. Repeat none of these as extra furniture in other corners. One chandelier over the centre. Three shallow pointed ceiling bays run north-south with indigo star infill, ivory ribs and gold bosses. Lower cornice at 4.5m; tall clerestory above. Doors and cupboards are reachable by a clear connected aisle at least1.8m wide. No bath, kitchen, music or service facilities.\n\nVIEW A: from just inside SOUTH entry looking NORTH, bed clearly visible, east windows on right, west dressing left. VIEW B: from NORTH near bed foot looking SOUTH, double entry centred, east windows on left, reading and memory zones at far corners. VIEW C: from WEST looking EAST, exactly three east windows across opposite wall, north bed at left, south entry to right. VIEW D: high corner CUTAWAY looking down into the same room, one half of ceiling lifted and underside shown above the room; reveal ceiling ribs, all four walls and circulation. Small top plan labelled N/E/S/W must preserve the fixed counts and positions. Do not mirror the room, add extra doors or multiply beds between views.\n\nMake it feel inhabited and celebratory through REUSABLE dressing, not empty vast floors: layered pink/indigo rugs near each seating/bed zone, rose garlands over door and bed cornice, gilt sconces, bows on two cabinet handles, small floral urns, lanterns, star pennants and neatly grouped gifts/memory objects. Keep eye-level carved wall panels and curtain tiebacks readable. Full height architecture remains visible, furniture is not enlarged to fill it. Neutral ivory sheet background, crisp labels outside art. Label the single room asset INT-R02-S01; view letters are views, not new asset IDs. Footer: Concept reference / proposed layout / view consistency and geometry require review.",
+      "proposed_layout": {
+        "units": "metres; concept coordinates, not recovered source measurements",
+        "bounds": {
+          "x": [
+            -12,
+            12
+          ],
+          "y": [
+            -9,
+            9
+          ],
+          "z": [
+            0,
+            18
+          ]
+        },
+        "north_bed_centre": [
+          0,
+          6.5
+        ],
+        "south_entry_centre": [
+          0,
+          -9
+        ],
+        "east_window_centres": [
+          [
+            12,
+            -5
+          ],
+          [
+            12,
+            0
+          ],
+          [
+            12,
+            5
+          ]
+        ],
+        "west_dressing_zone": [
+          -9,
+          7
+        ],
+        "southwest_reading_zone": [
+          -7,
+          -5
+        ],
+        "southeast_memory_display_zone": [
+          7,
+          -5
+        ],
+        "main_clear_aisle_width": 1.8,
+        "fixed_counts": {
+          "bed": 1,
+          "east_window_bays": 3,
+          "entry_door": 1,
+          "chandelier": 1
+        },
+        "west_balcony": {
+          "direction_rule": "Left when facing the north headboard = WEST",
+          "circular_floor_centre": [
+            -23,
+            1
+          ],
+          "diameter_m": 18,
+          "neck_bounds_xy": [
+            -16,
+            -12,
+            -3,
+            5
+          ],
+          "wall_opening_centre": [
+            -12,
+            1
+          ],
+          "opening_width_m": 8,
+          "opening_height_m": 12,
+          "outer_rail_height_m": 1.1,
+          "roof": "open sky",
+          "support": "existing pillar/bracket family; engineering not verified"
+        }
+      },
+      "visual_review_notes": [
+        "All four requested room views, one bed per view, three east window bays, south entry, dressing alcove and ceiling section are present. Materials follow GEN-24 furniture vocabulary; room layout itself is new.",
+        "Plan, arrival view and cutaway place reading southwest and memory display southeast. Opposite view B appears to swap these two corner furniture groups. View B is atmosphere reference only; saved proposed_layout and the top plan control these corner positions.",
+        "Printed fixed-layout labels are generator output, not a verified geometric guarantee. Actual furniture dimensions, room openings and ceiling bay correspondence must be enforced in the model."
+      ],
+      "superseded_file": "completion-pass/INT-R02/INT-R02-R01.png"
+    }
+  ],
+  "revision_input_file": "completion-pass/INT-R02/INT-R02-R01.png",
+  "revision_input_sha256": "9450d3e2c22ff804f7264c0e6481f45be73ee26e9edbf1dbc123a33222d66eb3",
+  "revision_reason": "Owner requested ceiling increase from12m to18m and an open west circular flower balcony with additional bedroom dressing",
+  "reuse_map": {
+    "frame": "INT-SUITE-FURN-001-S01",
+    "bedside_cabinet": "INT-SUITE-FURN-001-S02",
+    "wardrobe": "INT-SUITE-FURN-001-S03",
+    "dressing_table": "INT-SUITE-FURN-001-S04",
+    "bedding": "INT-BED-DRESS-001-A01..A10",
+    "accent_textiles": "INT-TEXTILE-JOINS-001-D05..D11",
+    "personal_dressing": "INT-BEDROOM-PROP-001-A01..A12",
+    "balcony": "INT-BALCONY-JOIN-001-S01..S04",
+    "flowers": "Reuse existing rose, planter and floral kits; not regenerated as new species",
+    "mirror": "GEN-24-A03",
+    "chaise": "GEN-24-A05",
+    "side_table": "GEN-24-A06",
+    "chandelier": "GEN-24-A07",
+    "curtain_master": "GEN-24-A10",
+    "rug": "GEN-24-A11"
+  }
 }

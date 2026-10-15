@@ -10,7 +10,7 @@
         0.08
       ],
       "function": "Missing supporting interior components; reusable across several selected rooms",
-      "construction": "One separate straight curtain track at appropriate human scale; precise rose/ivory/gold and restrained blue textile motifs matching source. Preserve actual construction (four stable legs for furniture, flat backs for frames, one coherent object). No existing chandelier/mirror/tea-set master duplicated. Dimensions are bounding proposals to refine by function.",
+      "construction": "One straight fine GOLD CURTAIN RAIL3m long with slender circular track profile and square repeat ends. Show end cross section and concealed slider groove. No curtains or wall attached. Match D02 bore/profile.",
       "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
       "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
       "target_polycount_proposed": 2500,
@@ -28,7 +28,17 @@
       "model_sha256": "",
       "review_status": "pending-reference-review",
       "suggested_model_filename": "INT-TEXTILE-JOINS-001-D01__straight-curtain-track__v001.glb",
-      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed",
+      "component_family": "Textile Joins",
+      "parent_asset_family": "INT-TEXTILE-JOINS-001",
+      "reference_image_id": "INT-TEXTILE-JOINS-001",
+      "reference_file": "completion-pass/INT-TEXTILE-JOINS-001/INT-TEXTILE-JOINS-001.png",
+      "reference_sha256": "0d3d371306fe0c98c74e5b59f0a9603e13f65419399b446c0319389efeb09e5b",
+      "source_reference_id": "GEN-24",
+      "source_reference_file": "images/illustrated-boards/GEN-24.png",
+      "source_reference_sha256": "deb78cfce6dab5c31d9b3519d3bc01a07e58bba453b013fcdb76bd2e8be3f349",
+      "notes": "All16 requested textile/hardware types appear separately, including reverse/contact views and curtain-track sections. Pink/ivory cloth, indigo star/rose panels and gold mounts match the existing room vocabulary. D01/D02 main views include ornament caps on joining ends. Remove caps at repeat joints, retaining them only at exposed ends. Tube, cradle, ring and internal slider dimensions need a shared modeled fit contract. D12 runner repeat has visible end borders/motif phases that are not proven seamless; D13 shows a framed corner pattern rather than a verified incoming/outgoing path. Adjust boundary motifs and corner cuts before creating repeat textures. D15 fringe and textile backing are present; D16 is illustrated thin embroidery, not a verified UV strip. Repeatability, cloth flexibility and mounting integrity remain unverified. Source backs, dimensions, repeat patterns, inter-view parity and physical attachment remain unverified. Whole-sheet generation does not prove individual meshes are separable.",
+      "geometry_review_status": "unverified"
     },
     {
       "asset_id": "INT-TEXTILE-JOINS-001-D02",
@@ -40,7 +50,7 @@
         0.08
       ],
       "function": "Missing supporting interior components; reusable across several selected rooms",
-      "construction": "One separate curtain track corner at appropriate human scale; precise rose/ivory/gold and restrained blue textile motifs matching source. Preserve actual construction (four stable legs for furniture, flat backs for frames, one coherent object). No existing chandelier/mirror/tea-set master duplicated. Dimensions are bounding proposals to refine by function.",
+      "construction": "One90-degree GOLD CURTAIN RAIL CORNER with two straight exposed socket ends, same profile and slider groove as D01. Top view must show a clean right-angle turn, not tangled ornament.",
       "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
       "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
       "target_polycount_proposed": 2500,
@@ -58,7 +68,17 @@
       "model_sha256": "",
       "review_status": "pending-reference-review",
       "suggested_model_filename": "INT-TEXTILE-JOINS-001-D02__curtain-track-corner__v001.glb",
-      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed",
+      "component_family": "Textile Joins",
+      "parent_asset_family": "INT-TEXTILE-JOINS-001",
+      "reference_image_id": "INT-TEXTILE-JOINS-001",
+      "reference_file": "completion-pass/INT-TEXTILE-JOINS-001/INT-TEXTILE-JOINS-001.png",
+      "reference_sha256": "0d3d371306fe0c98c74e5b59f0a9603e13f65419399b446c0319389efeb09e5b",
+      "source_reference_id": "GEN-24",
+      "source_reference_file": "images/illustrated-boards/GEN-24.png",
+      "source_reference_sha256": "deb78cfce6dab5c31d9b3519d3bc01a07e58bba453b013fcdb76bd2e8be3f349",
+      "notes": "All16 requested textile/hardware types appear separately, including reverse/contact views and curtain-track sections. Pink/ivory cloth, indigo star/rose panels and gold mounts match the existing room vocabulary. D01/D02 main views include ornament caps on joining ends. Remove caps at repeat joints, retaining them only at exposed ends. Tube, cradle, ring and internal slider dimensions need a shared modeled fit contract. D12 runner repeat has visible end borders/motif phases that are not proven seamless; D13 shows a framed corner pattern rather than a verified incoming/outgoing path. Adjust boundary motifs and corner cuts before creating repeat textures. D15 fringe and textile backing are present; D16 is illustrated thin embroidery, not a verified UV strip. Repeatability, cloth flexibility and mounting integrity remain unverified. Source backs, dimensions, repeat patterns, inter-view parity and physical attachment remain unverified. Whole-sheet generation does not prove individual meshes are separable.",
+      "geometry_review_status": "unverified"
     },
     {
       "asset_id": "INT-TEXTILE-JOINS-001-D03",
@@ -70,7 +90,7 @@
         0.15
       ],
       "function": "Missing supporting interior components; reusable across several selected rooms",
-      "construction": "One separate curtain mounting bracket at appropriate human scale; precise rose/ivory/gold and restrained blue textile motifs matching source. Preserve actual construction (four stable legs for furniture, flat backs for frames, one coherent object). No existing chandelier/mirror/tea-set master duplicated. Dimensions are bounding proposals to refine by function. SMALL attachment hardware only: plate/socket/hook/joint with its own hole/root and source-compatible quiet ornament. No lantern body, full arch, whole column, complete door, garden or giant architectural scene glued to it.",
+      "construction": "One tiny wall CURTAIN BRACKET, flat rear rose plate with two screw holes and projecting arm ending in an open circular rail cradle. No rail length, wall, arch or lamp attached. Show flat back.",
       "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
       "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
       "target_polycount_proposed": 2500,
@@ -88,11 +108,21 @@
       "model_sha256": "",
       "review_status": "pending-reference-review",
       "suggested_model_filename": "INT-TEXTILE-JOINS-001-D03__curtain-mounting-bracket__v001.glb",
-      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed",
+      "component_family": "Textile Joins",
+      "parent_asset_family": "INT-TEXTILE-JOINS-001",
+      "reference_image_id": "INT-TEXTILE-JOINS-001",
+      "reference_file": "completion-pass/INT-TEXTILE-JOINS-001/INT-TEXTILE-JOINS-001.png",
+      "reference_sha256": "0d3d371306fe0c98c74e5b59f0a9603e13f65419399b446c0319389efeb09e5b",
+      "source_reference_id": "GEN-24",
+      "source_reference_file": "images/illustrated-boards/GEN-24.png",
+      "source_reference_sha256": "deb78cfce6dab5c31d9b3519d3bc01a07e58bba453b013fcdb76bd2e8be3f349",
+      "notes": "All16 requested textile/hardware types appear separately, including reverse/contact views and curtain-track sections. Pink/ivory cloth, indigo star/rose panels and gold mounts match the existing room vocabulary. D01/D02 main views include ornament caps on joining ends. Remove caps at repeat joints, retaining them only at exposed ends. Tube, cradle, ring and internal slider dimensions need a shared modeled fit contract. D12 runner repeat has visible end borders/motif phases that are not proven seamless; D13 shows a framed corner pattern rather than a verified incoming/outgoing path. Adjust boundary motifs and corner cuts before creating repeat textures. D15 fringe and textile backing are present; D16 is illustrated thin embroidery, not a verified UV strip. Repeatability, cloth flexibility and mounting integrity remain unverified. Source backs, dimensions, repeat patterns, inter-view parity and physical attachment remain unverified. Whole-sheet generation does not prove individual meshes are separable.",
+      "geometry_review_status": "unverified"
     },
     {
       "asset_id": "INT-TEXTILE-JOINS-001-D04",
-      "name": "Curtain ring set",
+      "name": "Curtain ring",
       "kind": "architectural-detail",
       "dimensions_m_proposed": [
         0.08,
@@ -100,7 +130,7 @@
         0.08
       ],
       "function": "Missing supporting interior components; reusable across several selected rooms",
-      "construction": "One separate curtain ring set at appropriate human scale; precise rose/ivory/gold and restrained blue textile motifs matching source. Preserve actual construction (four stable legs for furniture, flat backs for frames, one coherent object). No existing chandelier/mirror/tea-set master duplicated. Dimensions are bounding proposals to refine by function.",
+      "construction": "ONE gold curtain RING with small fabric eyelet at bottom, main diameter0.08m; separate rear view of same ring, not a fused cluster. Reuse duplicates along rail.",
       "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
       "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
       "target_polycount_proposed": 2500,
@@ -118,7 +148,17 @@
       "model_sha256": "",
       "review_status": "pending-reference-review",
       "suggested_model_filename": "INT-TEXTILE-JOINS-001-D04__curtain-ring-set__v001.glb",
-      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed",
+      "component_family": "Textile Joins",
+      "parent_asset_family": "INT-TEXTILE-JOINS-001",
+      "reference_image_id": "INT-TEXTILE-JOINS-001",
+      "reference_file": "completion-pass/INT-TEXTILE-JOINS-001/INT-TEXTILE-JOINS-001.png",
+      "reference_sha256": "0d3d371306fe0c98c74e5b59f0a9603e13f65419399b446c0319389efeb09e5b",
+      "source_reference_id": "GEN-24",
+      "source_reference_file": "images/illustrated-boards/GEN-24.png",
+      "source_reference_sha256": "deb78cfce6dab5c31d9b3519d3bc01a07e58bba453b013fcdb76bd2e8be3f349",
+      "notes": "All16 requested textile/hardware types appear separately, including reverse/contact views and curtain-track sections. Pink/ivory cloth, indigo star/rose panels and gold mounts match the existing room vocabulary. D01/D02 main views include ornament caps on joining ends. Remove caps at repeat joints, retaining them only at exposed ends. Tube, cradle, ring and internal slider dimensions need a shared modeled fit contract. D12 runner repeat has visible end borders/motif phases that are not proven seamless; D13 shows a framed corner pattern rather than a verified incoming/outgoing path. Adjust boundary motifs and corner cuts before creating repeat textures. D15 fringe and textile backing are present; D16 is illustrated thin embroidery, not a verified UV strip. Repeatability, cloth flexibility and mounting integrity remain unverified. Source backs, dimensions, repeat patterns, inter-view parity and physical attachment remain unverified. Whole-sheet generation does not prove individual meshes are separable.",
+      "geometry_review_status": "unverified"
     },
     {
       "asset_id": "INT-TEXTILE-JOINS-001-D05",
@@ -130,7 +170,7 @@
         0.35
       ],
       "function": "Missing supporting interior components; reusable across several selected rooms",
-      "construction": "One separate floral tieback at appropriate human scale; precise rose/ivory/gold and restrained blue textile motifs matching source. Preserve actual construction (four stable legs for furniture, flat backs for frames, one coherent object). No existing chandelier/mirror/tea-set master duplicated. Dimensions are bounding proposals to refine by function.",
+      "construction": "One removable FLORAL TIEBACK, short blush rope loop with small gold rose hook plate. Main view shows whole loop, rear inset shows simple wall hook contact. Not a full curtain.",
       "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
       "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
       "target_polycount_proposed": 2500,
@@ -148,7 +188,17 @@
       "model_sha256": "",
       "review_status": "pending-reference-review",
       "suggested_model_filename": "INT-TEXTILE-JOINS-001-D05__floral-tieback__v001.glb",
-      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed",
+      "component_family": "Textile Joins",
+      "parent_asset_family": "INT-TEXTILE-JOINS-001",
+      "reference_image_id": "INT-TEXTILE-JOINS-001",
+      "reference_file": "completion-pass/INT-TEXTILE-JOINS-001/INT-TEXTILE-JOINS-001.png",
+      "reference_sha256": "0d3d371306fe0c98c74e5b59f0a9603e13f65419399b446c0319389efeb09e5b",
+      "source_reference_id": "GEN-24",
+      "source_reference_file": "images/illustrated-boards/GEN-24.png",
+      "source_reference_sha256": "deb78cfce6dab5c31d9b3519d3bc01a07e58bba453b013fcdb76bd2e8be3f349",
+      "notes": "All16 requested textile/hardware types appear separately, including reverse/contact views and curtain-track sections. Pink/ivory cloth, indigo star/rose panels and gold mounts match the existing room vocabulary. D01/D02 main views include ornament caps on joining ends. Remove caps at repeat joints, retaining them only at exposed ends. Tube, cradle, ring and internal slider dimensions need a shared modeled fit contract. D12 runner repeat has visible end borders/motif phases that are not proven seamless; D13 shows a framed corner pattern rather than a verified incoming/outgoing path. Adjust boundary motifs and corner cuts before creating repeat textures. D15 fringe and textile backing are present; D16 is illustrated thin embroidery, not a verified UV strip. Repeatability, cloth flexibility and mounting integrity remain unverified. Source backs, dimensions, repeat patterns, inter-view parity and physical attachment remain unverified. Whole-sheet generation does not prove individual meshes are separable.",
+      "geometry_review_status": "unverified"
     },
     {
       "asset_id": "INT-TEXTILE-JOINS-001-D06",
@@ -160,7 +210,7 @@
         0.25
       ],
       "function": "Missing supporting interior components; reusable across several selected rooms",
-      "construction": "One separate curtain tassel at appropriate human scale; precise rose/ivory/gold and restrained blue textile motifs matching source. Preserve actual construction (four stable legs for furniture, flat backs for frames, one coherent object). No existing chandelier/mirror/tea-set master duplicated. Dimensions are bounding proposals to refine by function.",
+      "construction": "One hanging CURTAIN TASSEL, blush braided loop, small gilt collar and straight soft silk fringe. Tiny accessory with clear attachment eye, no furniture or post.",
       "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
       "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
       "target_polycount_proposed": 2500,
@@ -178,7 +228,17 @@
       "model_sha256": "",
       "review_status": "pending-reference-review",
       "suggested_model_filename": "INT-TEXTILE-JOINS-001-D06__curtain-tassel__v001.glb",
-      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed",
+      "component_family": "Textile Joins",
+      "parent_asset_family": "INT-TEXTILE-JOINS-001",
+      "reference_image_id": "INT-TEXTILE-JOINS-001",
+      "reference_file": "completion-pass/INT-TEXTILE-JOINS-001/INT-TEXTILE-JOINS-001.png",
+      "reference_sha256": "0d3d371306fe0c98c74e5b59f0a9603e13f65419399b446c0319389efeb09e5b",
+      "source_reference_id": "GEN-24",
+      "source_reference_file": "images/illustrated-boards/GEN-24.png",
+      "source_reference_sha256": "deb78cfce6dab5c31d9b3519d3bc01a07e58bba453b013fcdb76bd2e8be3f349",
+      "notes": "All16 requested textile/hardware types appear separately, including reverse/contact views and curtain-track sections. Pink/ivory cloth, indigo star/rose panels and gold mounts match the existing room vocabulary. D01/D02 main views include ornament caps on joining ends. Remove caps at repeat joints, retaining them only at exposed ends. Tube, cradle, ring and internal slider dimensions need a shared modeled fit contract. D12 runner repeat has visible end borders/motif phases that are not proven seamless; D13 shows a framed corner pattern rather than a verified incoming/outgoing path. Adjust boundary motifs and corner cuts before creating repeat textures. D15 fringe and textile backing are present; D16 is illustrated thin embroidery, not a verified UV strip. Repeatability, cloth flexibility and mounting integrity remain unverified. Source backs, dimensions, repeat patterns, inter-view parity and physical attachment remain unverified. Whole-sheet generation does not prove individual meshes are separable.",
+      "geometry_review_status": "unverified"
     },
     {
       "asset_id": "INT-TEXTILE-JOINS-001-D07",
@@ -190,7 +250,7 @@
         0.15
       ],
       "function": "Missing supporting interior components; reusable across several selected rooms",
-      "construction": "One separate canopy corner cap at appropriate human scale; precise rose/ivory/gold and restrained blue textile motifs matching source. Preserve actual construction (four stable legs for furniture, flat backs for frames, one coherent object). No existing chandelier/mirror/tea-set master duplicated. Dimensions are bounding proposals to refine by function.",
+      "construction": "One small CANOPY CORNER CAP, gold rose/star applique with an L-shaped underside seat and plain mounting back, for fabric valance at a right-angle corner. Not a whole canopy post or existing bed finial.",
       "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
       "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
       "target_polycount_proposed": 2500,
@@ -208,7 +268,17 @@
       "model_sha256": "",
       "review_status": "pending-reference-review",
       "suggested_model_filename": "INT-TEXTILE-JOINS-001-D07__canopy-corner-cap__v001.glb",
-      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed",
+      "component_family": "Textile Joins",
+      "parent_asset_family": "INT-TEXTILE-JOINS-001",
+      "reference_image_id": "INT-TEXTILE-JOINS-001",
+      "reference_file": "completion-pass/INT-TEXTILE-JOINS-001/INT-TEXTILE-JOINS-001.png",
+      "reference_sha256": "0d3d371306fe0c98c74e5b59f0a9603e13f65419399b446c0319389efeb09e5b",
+      "source_reference_id": "GEN-24",
+      "source_reference_file": "images/illustrated-boards/GEN-24.png",
+      "source_reference_sha256": "deb78cfce6dab5c31d9b3519d3bc01a07e58bba453b013fcdb76bd2e8be3f349",
+      "notes": "All16 requested textile/hardware types appear separately, including reverse/contact views and curtain-track sections. Pink/ivory cloth, indigo star/rose panels and gold mounts match the existing room vocabulary. D01/D02 main views include ornament caps on joining ends. Remove caps at repeat joints, retaining them only at exposed ends. Tube, cradle, ring and internal slider dimensions need a shared modeled fit contract. D12 runner repeat has visible end borders/motif phases that are not proven seamless; D13 shows a framed corner pattern rather than a verified incoming/outgoing path. Adjust boundary motifs and corner cuts before creating repeat textures. D15 fringe and textile backing are present; D16 is illustrated thin embroidery, not a verified UV strip. Repeatability, cloth flexibility and mounting integrity remain unverified. Source backs, dimensions, repeat patterns, inter-view parity and physical attachment remain unverified. Whole-sheet generation does not prove individual meshes are separable.",
+      "geometry_review_status": "unverified"
     },
     {
       "asset_id": "INT-TEXTILE-JOINS-001-D08",
@@ -220,7 +290,7 @@
         2.6
       ],
       "function": "Missing supporting interior components; reusable across several selected rooms",
-      "construction": "One separate translucent privacy curtain at appropriate human scale; precise rose/ivory/gold and restrained blue textile motifs matching source. Preserve actual construction (four stable legs for furniture, flat backs for frames, one coherent object). No existing chandelier/mirror/tea-set master duplicated. Dimensions are bounding proposals to refine by function.",
+      "construction": "One WIDE TRANSLUCENT PRIVACY CURTAIN panel2m wide2.6m tall, ivory/blush sheer with header loops, low embroidered hem, gentle vertical folds, no rod or wall. Distinct from narrow0.9m bed canopy drape.",
       "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
       "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
       "target_polycount_proposed": 2500,
@@ -238,7 +308,17 @@
       "model_sha256": "",
       "review_status": "pending-reference-review",
       "suggested_model_filename": "INT-TEXTILE-JOINS-001-D08__translucent-privacy-curtain__v001.glb",
-      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed",
+      "component_family": "Textile Joins",
+      "parent_asset_family": "INT-TEXTILE-JOINS-001",
+      "reference_image_id": "INT-TEXTILE-JOINS-001",
+      "reference_file": "completion-pass/INT-TEXTILE-JOINS-001/INT-TEXTILE-JOINS-001.png",
+      "reference_sha256": "0d3d371306fe0c98c74e5b59f0a9603e13f65419399b446c0319389efeb09e5b",
+      "source_reference_id": "GEN-24",
+      "source_reference_file": "images/illustrated-boards/GEN-24.png",
+      "source_reference_sha256": "deb78cfce6dab5c31d9b3519d3bc01a07e58bba453b013fcdb76bd2e8be3f349",
+      "notes": "All16 requested textile/hardware types appear separately, including reverse/contact views and curtain-track sections. Pink/ivory cloth, indigo star/rose panels and gold mounts match the existing room vocabulary. D01/D02 main views include ornament caps on joining ends. Remove caps at repeat joints, retaining them only at exposed ends. Tube, cradle, ring and internal slider dimensions need a shared modeled fit contract. D12 runner repeat has visible end borders/motif phases that are not proven seamless; D13 shows a framed corner pattern rather than a verified incoming/outgoing path. Adjust boundary motifs and corner cuts before creating repeat textures. D15 fringe and textile backing are present; D16 is illustrated thin embroidery, not a verified UV strip. Repeatability, cloth flexibility and mounting integrity remain unverified. Source backs, dimensions, repeat patterns, inter-view parity and physical attachment remain unverified. Whole-sheet generation does not prove individual meshes are separable.",
+      "geometry_review_status": "unverified"
     },
     {
       "asset_id": "INT-TEXTILE-JOINS-001-D09",
@@ -250,7 +330,7 @@
         0.03
       ],
       "function": "Missing supporting interior components; reusable across several selected rooms",
-      "construction": "One separate rose bed throw at appropriate human scale; precise rose/ivory/gold and restrained blue textile motifs matching source. Preserve actual construction (four stable legs for furniture, flat backs for frames, one coherent object). No existing chandelier/mirror/tea-set master duplicated. Dimensions are bounding proposals to refine by function.",
+      "construction": "One loose ROSE BED THROW1.8x2m, soft blush silk with indigo/gold rose-star border. Main view broad face visible, small reverse inset. This is a thin loose throw, not mattress, duvet or narrow foot runner.",
       "attachment_face": "Broad flat underside to floor/table/bed; shortest thickness normal Z",
       "semantic_front": "Decorated broad face upwards+Z",
       "target_polycount_proposed": 2500,
@@ -268,7 +348,17 @@
       "model_sha256": "",
       "review_status": "pending-reference-review",
       "suggested_model_filename": "INT-TEXTILE-JOINS-001-D09__rose-bed-throw__v001.glb",
-      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed",
+      "component_family": "Textile Joins",
+      "parent_asset_family": "INT-TEXTILE-JOINS-001",
+      "reference_image_id": "INT-TEXTILE-JOINS-001",
+      "reference_file": "completion-pass/INT-TEXTILE-JOINS-001/INT-TEXTILE-JOINS-001.png",
+      "reference_sha256": "0d3d371306fe0c98c74e5b59f0a9603e13f65419399b446c0319389efeb09e5b",
+      "source_reference_id": "GEN-24",
+      "source_reference_file": "images/illustrated-boards/GEN-24.png",
+      "source_reference_sha256": "deb78cfce6dab5c31d9b3519d3bc01a07e58bba453b013fcdb76bd2e8be3f349",
+      "notes": "All16 requested textile/hardware types appear separately, including reverse/contact views and curtain-track sections. Pink/ivory cloth, indigo star/rose panels and gold mounts match the existing room vocabulary. D01/D02 main views include ornament caps on joining ends. Remove caps at repeat joints, retaining them only at exposed ends. Tube, cradle, ring and internal slider dimensions need a shared modeled fit contract. D12 runner repeat has visible end borders/motif phases that are not proven seamless; D13 shows a framed corner pattern rather than a verified incoming/outgoing path. Adjust boundary motifs and corner cuts before creating repeat textures. D15 fringe and textile backing are present; D16 is illustrated thin embroidery, not a verified UV strip. Repeatability, cloth flexibility and mounting integrity remain unverified. Source backs, dimensions, repeat patterns, inter-view parity and physical attachment remain unverified. Whole-sheet generation does not prove individual meshes are separable.",
+      "geometry_review_status": "unverified"
     },
     {
       "asset_id": "INT-TEXTILE-JOINS-001-D10",
@@ -280,7 +370,7 @@
         0.15
       ],
       "function": "Missing supporting interior components; reusable across several selected rooms",
-      "construction": "One separate square embroidered cushion at appropriate human scale; precise rose/ivory/gold and restrained blue textile motifs matching source. Preserve actual construction (four stable legs for furniture, flat backs for frames, one coherent object). No existing chandelier/mirror/tea-set master duplicated. Dimensions are bounding proposals to refine by function.",
+      "construction": "One SQUARE ACCENT CUSHION0.5x0.5x0.15m, blush velvet with gold embroidered star and ivory piping. Show rear closure. Not a sleeping pillow pair.",
       "attachment_face": "Broad flat underside to floor/table/bed; shortest thickness normal Z",
       "semantic_front": "Decorated broad face upwards+Z",
       "target_polycount_proposed": 2500,
@@ -298,7 +388,17 @@
       "model_sha256": "",
       "review_status": "pending-reference-review",
       "suggested_model_filename": "INT-TEXTILE-JOINS-001-D10__square-embroidered-cushion__v001.glb",
-      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed",
+      "component_family": "Textile Joins",
+      "parent_asset_family": "INT-TEXTILE-JOINS-001",
+      "reference_image_id": "INT-TEXTILE-JOINS-001",
+      "reference_file": "completion-pass/INT-TEXTILE-JOINS-001/INT-TEXTILE-JOINS-001.png",
+      "reference_sha256": "0d3d371306fe0c98c74e5b59f0a9603e13f65419399b446c0319389efeb09e5b",
+      "source_reference_id": "GEN-24",
+      "source_reference_file": "images/illustrated-boards/GEN-24.png",
+      "source_reference_sha256": "deb78cfce6dab5c31d9b3519d3bc01a07e58bba453b013fcdb76bd2e8be3f349",
+      "notes": "All16 requested textile/hardware types appear separately, including reverse/contact views and curtain-track sections. Pink/ivory cloth, indigo star/rose panels and gold mounts match the existing room vocabulary. D01/D02 main views include ornament caps on joining ends. Remove caps at repeat joints, retaining them only at exposed ends. Tube, cradle, ring and internal slider dimensions need a shared modeled fit contract. D12 runner repeat has visible end borders/motif phases that are not proven seamless; D13 shows a framed corner pattern rather than a verified incoming/outgoing path. Adjust boundary motifs and corner cuts before creating repeat textures. D15 fringe and textile backing are present; D16 is illustrated thin embroidery, not a verified UV strip. Repeatability, cloth flexibility and mounting integrity remain unverified. Source backs, dimensions, repeat patterns, inter-view parity and physical attachment remain unverified. Whole-sheet generation does not prove individual meshes are separable.",
+      "geometry_review_status": "unverified"
     },
     {
       "asset_id": "INT-TEXTILE-JOINS-001-D11",
@@ -310,7 +410,7 @@
         0.15
       ],
       "function": "Missing supporting interior components; reusable across several selected rooms",
-      "construction": "One separate round embroidered cushion at appropriate human scale; precise rose/ivory/gold and restrained blue textile motifs matching source. Preserve actual construction (four stable legs for furniture, flat backs for frames, one coherent object). No existing chandelier/mirror/tea-set master duplicated. Dimensions are bounding proposals to refine by function.",
+      "construction": "One ROUND ACCENT CUSHION0.45m diameter0.15m thick, indigo velvet with blush/gold radial embroidery and clear circular silhouette. Show reverse side.",
       "attachment_face": "Broad flat underside to floor/table/bed; shortest thickness normal Z",
       "semantic_front": "Decorated broad face upwards+Z",
       "target_polycount_proposed": 2500,
@@ -328,7 +428,17 @@
       "model_sha256": "",
       "review_status": "pending-reference-review",
       "suggested_model_filename": "INT-TEXTILE-JOINS-001-D11__round-embroidered-cushion__v001.glb",
-      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed",
+      "component_family": "Textile Joins",
+      "parent_asset_family": "INT-TEXTILE-JOINS-001",
+      "reference_image_id": "INT-TEXTILE-JOINS-001",
+      "reference_file": "completion-pass/INT-TEXTILE-JOINS-001/INT-TEXTILE-JOINS-001.png",
+      "reference_sha256": "0d3d371306fe0c98c74e5b59f0a9603e13f65419399b446c0319389efeb09e5b",
+      "source_reference_id": "GEN-24",
+      "source_reference_file": "images/illustrated-boards/GEN-24.png",
+      "source_reference_sha256": "deb78cfce6dab5c31d9b3519d3bc01a07e58bba453b013fcdb76bd2e8be3f349",
+      "notes": "All16 requested textile/hardware types appear separately, including reverse/contact views and curtain-track sections. Pink/ivory cloth, indigo star/rose panels and gold mounts match the existing room vocabulary. D01/D02 main views include ornament caps on joining ends. Remove caps at repeat joints, retaining them only at exposed ends. Tube, cradle, ring and internal slider dimensions need a shared modeled fit contract. D12 runner repeat has visible end borders/motif phases that are not proven seamless; D13 shows a framed corner pattern rather than a verified incoming/outgoing path. Adjust boundary motifs and corner cuts before creating repeat textures. D15 fringe and textile backing are present; D16 is illustrated thin embroidery, not a verified UV strip. Repeatability, cloth flexibility and mounting integrity remain unverified. Source backs, dimensions, repeat patterns, inter-view parity and physical attachment remain unverified. Whole-sheet generation does not prove individual meshes are separable.",
+      "geometry_review_status": "unverified"
     },
     {
       "asset_id": "INT-TEXTILE-JOINS-001-D12",
@@ -340,7 +450,7 @@
         0.015
       ],
       "function": "Missing supporting interior components; reusable across several selected rooms",
-      "construction": "One separate stair runner repeat section at appropriate human scale; precise rose/ivory/gold and restrained blue textile motifs matching source. Preserve actual construction (four stable legs for furniture, flat backs for frames, one coherent object). No existing chandelier/mirror/tea-set master duplicated. Dimensions are bounding proposals to refine by function.",
+      "construction": "One FLAT STAIR RUNNER REPEAT TILE1m wide0.8m long, indigo centre with rose/gold borders only along long sides. Both short joining edges plain and same pattern phase, no tassels/end caps. Show top and thin side; do not paint it onto a staircase.",
       "attachment_face": "Broad flat underside to floor/table/bed; shortest thickness normal Z",
       "semantic_front": "Decorated broad face upwards+Z",
       "target_polycount_proposed": 2500,
@@ -358,7 +468,17 @@
       "model_sha256": "",
       "review_status": "pending-reference-review",
       "suggested_model_filename": "INT-TEXTILE-JOINS-001-D12__stair-runner-repeat-section__v001.glb",
-      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed",
+      "component_family": "Textile Joins",
+      "parent_asset_family": "INT-TEXTILE-JOINS-001",
+      "reference_image_id": "INT-TEXTILE-JOINS-001",
+      "reference_file": "completion-pass/INT-TEXTILE-JOINS-001/INT-TEXTILE-JOINS-001.png",
+      "reference_sha256": "0d3d371306fe0c98c74e5b59f0a9603e13f65419399b446c0319389efeb09e5b",
+      "source_reference_id": "GEN-24",
+      "source_reference_file": "images/illustrated-boards/GEN-24.png",
+      "source_reference_sha256": "deb78cfce6dab5c31d9b3519d3bc01a07e58bba453b013fcdb76bd2e8be3f349",
+      "notes": "All16 requested textile/hardware types appear separately, including reverse/contact views and curtain-track sections. Pink/ivory cloth, indigo star/rose panels and gold mounts match the existing room vocabulary. D01/D02 main views include ornament caps on joining ends. Remove caps at repeat joints, retaining them only at exposed ends. Tube, cradle, ring and internal slider dimensions need a shared modeled fit contract. D12 runner repeat has visible end borders/motif phases that are not proven seamless; D13 shows a framed corner pattern rather than a verified incoming/outgoing path. Adjust boundary motifs and corner cuts before creating repeat textures. D15 fringe and textile backing are present; D16 is illustrated thin embroidery, not a verified UV strip. Repeatability, cloth flexibility and mounting integrity remain unverified. Source backs, dimensions, repeat patterns, inter-view parity and physical attachment remain unverified. Whole-sheet generation does not prove individual meshes are separable.",
+      "geometry_review_status": "unverified"
     },
     {
       "asset_id": "INT-TEXTILE-JOINS-001-D13",
@@ -370,7 +490,7 @@
         0.015
       ],
       "function": "Missing supporting interior components; reusable across several selected rooms",
-      "construction": "One separate stair runner landing return at appropriate human scale; precise rose/ivory/gold and restrained blue textile motifs matching source. Preserve actual construction (four stable legs for furniture, flat backs for frames, one coherent object). No existing chandelier/mirror/tea-set master duplicated. Dimensions are bounding proposals to refine by function.",
+      "construction": "One square STAIR RUNNER LANDING TURN1x1m, textile top with matching indigo/rose/gold border turning90degrees around two OUTER edges. Two adjacent continuation edges remain plain for incoming/outgoing runner strips. Top plus reverse inset; no stairs or complete rug.",
       "attachment_face": "Broad flat underside to floor/table/bed; shortest thickness normal Z",
       "semantic_front": "Decorated broad face upwards+Z",
       "target_polycount_proposed": 2500,
@@ -388,7 +508,17 @@
       "model_sha256": "",
       "review_status": "pending-reference-review",
       "suggested_model_filename": "INT-TEXTILE-JOINS-001-D13__stair-runner-landing-return__v001.glb",
-      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed",
+      "component_family": "Textile Joins",
+      "parent_asset_family": "INT-TEXTILE-JOINS-001",
+      "reference_image_id": "INT-TEXTILE-JOINS-001",
+      "reference_file": "completion-pass/INT-TEXTILE-JOINS-001/INT-TEXTILE-JOINS-001.png",
+      "reference_sha256": "0d3d371306fe0c98c74e5b59f0a9603e13f65419399b446c0319389efeb09e5b",
+      "source_reference_id": "GEN-24",
+      "source_reference_file": "images/illustrated-boards/GEN-24.png",
+      "source_reference_sha256": "deb78cfce6dab5c31d9b3519d3bc01a07e58bba453b013fcdb76bd2e8be3f349",
+      "notes": "All16 requested textile/hardware types appear separately, including reverse/contact views and curtain-track sections. Pink/ivory cloth, indigo star/rose panels and gold mounts match the existing room vocabulary. D01/D02 main views include ornament caps on joining ends. Remove caps at repeat joints, retaining them only at exposed ends. Tube, cradle, ring and internal slider dimensions need a shared modeled fit contract. D12 runner repeat has visible end borders/motif phases that are not proven seamless; D13 shows a framed corner pattern rather than a verified incoming/outgoing path. Adjust boundary motifs and corner cuts before creating repeat textures. D15 fringe and textile backing are present; D16 is illustrated thin embroidery, not a verified UV strip. Repeatability, cloth flexibility and mounting integrity remain unverified. Source backs, dimensions, repeat patterns, inter-view parity and physical attachment remain unverified. Whole-sheet generation does not prove individual meshes are separable.",
+      "geometry_review_status": "unverified"
     },
     {
       "asset_id": "INT-TEXTILE-JOINS-001-D14",
@@ -400,7 +530,7 @@
         0.03
       ],
       "function": "Missing supporting interior components; reusable across several selected rooms",
-      "construction": "One separate runner retaining rod at appropriate human scale; precise rose/ivory/gold and restrained blue textile motifs matching source. Preserve actual construction (four stable legs for furniture, flat backs for frames, one coherent object). No existing chandelier/mirror/tea-set master duplicated. Dimensions are bounding proposals to refine by function.",
+      "construction": "One straight tiny STAIR RUNNER RETAINING ROD1m long with two small matching end sockets. Gold hardware only, no runner or stair attached. Show socket back contact.",
       "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
       "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
       "target_polycount_proposed": 2500,
@@ -418,7 +548,17 @@
       "model_sha256": "",
       "review_status": "pending-reference-review",
       "suggested_model_filename": "INT-TEXTILE-JOINS-001-D14__runner-retaining-rod__v001.glb",
-      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed",
+      "component_family": "Textile Joins",
+      "parent_asset_family": "INT-TEXTILE-JOINS-001",
+      "reference_image_id": "INT-TEXTILE-JOINS-001",
+      "reference_file": "completion-pass/INT-TEXTILE-JOINS-001/INT-TEXTILE-JOINS-001.png",
+      "reference_sha256": "0d3d371306fe0c98c74e5b59f0a9603e13f65419399b446c0319389efeb09e5b",
+      "source_reference_id": "GEN-24",
+      "source_reference_file": "images/illustrated-boards/GEN-24.png",
+      "source_reference_sha256": "deb78cfce6dab5c31d9b3519d3bc01a07e58bba453b013fcdb76bd2e8be3f349",
+      "notes": "All16 requested textile/hardware types appear separately, including reverse/contact views and curtain-track sections. Pink/ivory cloth, indigo star/rose panels and gold mounts match the existing room vocabulary. D01/D02 main views include ornament caps on joining ends. Remove caps at repeat joints, retaining them only at exposed ends. Tube, cradle, ring and internal slider dimensions need a shared modeled fit contract. D12 runner repeat has visible end borders/motif phases that are not proven seamless; D13 shows a framed corner pattern rather than a verified incoming/outgoing path. Adjust boundary motifs and corner cuts before creating repeat textures. D15 fringe and textile backing are present; D16 is illustrated thin embroidery, not a verified UV strip. Repeatability, cloth flexibility and mounting integrity remain unverified. Source backs, dimensions, repeat patterns, inter-view parity and physical attachment remain unverified. Whole-sheet generation does not prove individual meshes are separable.",
+      "geometry_review_status": "unverified"
     },
     {
       "asset_id": "INT-TEXTILE-JOINS-001-D15",
@@ -430,7 +570,7 @@
         0.015
       ],
       "function": "Missing supporting interior components; reusable across several selected rooms",
-      "construction": "One separate table runner end at appropriate human scale; precise rose/ivory/gold and restrained blue textile motifs matching source. Preserve actual construction (four stable legs for furniture, flat backs for frames, one coherent object). No existing chandelier/mirror/tea-set master duplicated. Dimensions are bounding proposals to refine by function.",
+      "construction": "One TABLE RUNNER END textile panel0.4x0.6m, indigo/blush with gold star border and fringe at ONE outer short end. Opposite short edge plain for length repeat; main flat face and reverse inset. No table or place setting.",
       "attachment_face": "Broad flat underside to floor/table/bed; shortest thickness normal Z",
       "semantic_front": "Decorated broad face upwards+Z",
       "target_polycount_proposed": 2500,
@@ -448,7 +588,17 @@
       "model_sha256": "",
       "review_status": "pending-reference-review",
       "suggested_model_filename": "INT-TEXTILE-JOINS-001-D15__table-runner-end__v001.glb",
-      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed",
+      "component_family": "Textile Joins",
+      "parent_asset_family": "INT-TEXTILE-JOINS-001",
+      "reference_image_id": "INT-TEXTILE-JOINS-001",
+      "reference_file": "completion-pass/INT-TEXTILE-JOINS-001/INT-TEXTILE-JOINS-001.png",
+      "reference_sha256": "0d3d371306fe0c98c74e5b59f0a9603e13f65419399b446c0319389efeb09e5b",
+      "source_reference_id": "GEN-24",
+      "source_reference_file": "images/illustrated-boards/GEN-24.png",
+      "source_reference_sha256": "deb78cfce6dab5c31d9b3519d3bc01a07e58bba453b013fcdb76bd2e8be3f349",
+      "notes": "All16 requested textile/hardware types appear separately, including reverse/contact views and curtain-track sections. Pink/ivory cloth, indigo star/rose panels and gold mounts match the existing room vocabulary. D01/D02 main views include ornament caps on joining ends. Remove caps at repeat joints, retaining them only at exposed ends. Tube, cradle, ring and internal slider dimensions need a shared modeled fit contract. D12 runner repeat has visible end borders/motif phases that are not proven seamless; D13 shows a framed corner pattern rather than a verified incoming/outgoing path. Adjust boundary motifs and corner cuts before creating repeat textures. D15 fringe and textile backing are present; D16 is illustrated thin embroidery, not a verified UV strip. Repeatability, cloth flexibility and mounting integrity remain unverified. Source backs, dimensions, repeat patterns, inter-view parity and physical attachment remain unverified. Whole-sheet generation does not prove individual meshes are separable.",
+      "geometry_review_status": "unverified"
     },
     {
       "asset_id": "INT-TEXTILE-JOINS-001-D16",
@@ -460,7 +610,7 @@
         0.12
       ],
       "function": "Missing supporting interior components; reusable across several selected rooms",
-      "construction": "One separate small decorative tapestry border at appropriate human scale; precise rose/ivory/gold and restrained blue textile motifs matching source. Preserve actual construction (four stable legs for furniture, flat backs for frames, one coherent object). No existing chandelier/mirror/tea-set master duplicated. Dimensions are bounding proposals to refine by function.",
+      "construction": "One straight thin TAPESTRY BORDER strip1m long0.12m tall, embroidered blush/indigo/gold rose-star repeat, two plain joining ends. This is fabric, not a stone cornice. Show reverse stitch backing and narrow edge.",
       "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
       "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
       "target_polycount_proposed": 2500,
@@ -478,7 +628,17 @@
       "model_sha256": "",
       "review_status": "pending-reference-review",
       "suggested_model_filename": "INT-TEXTILE-JOINS-001-D16__small-decorative-tapestry-border__v001.glb",
-      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed",
+      "component_family": "Textile Joins",
+      "parent_asset_family": "INT-TEXTILE-JOINS-001",
+      "reference_image_id": "INT-TEXTILE-JOINS-001",
+      "reference_file": "completion-pass/INT-TEXTILE-JOINS-001/INT-TEXTILE-JOINS-001.png",
+      "reference_sha256": "0d3d371306fe0c98c74e5b59f0a9603e13f65419399b446c0319389efeb09e5b",
+      "source_reference_id": "GEN-24",
+      "source_reference_file": "images/illustrated-boards/GEN-24.png",
+      "source_reference_sha256": "deb78cfce6dab5c31d9b3519d3bc01a07e58bba453b013fcdb76bd2e8be3f349",
+      "notes": "All16 requested textile/hardware types appear separately, including reverse/contact views and curtain-track sections. Pink/ivory cloth, indigo star/rose panels and gold mounts match the existing room vocabulary. D01/D02 main views include ornament caps on joining ends. Remove caps at repeat joints, retaining them only at exposed ends. Tube, cradle, ring and internal slider dimensions need a shared modeled fit contract. D12 runner repeat has visible end borders/motif phases that are not proven seamless; D13 shows a framed corner pattern rather than a verified incoming/outgoing path. Adjust boundary motifs and corner cuts before creating repeat textures. D15 fringe and textile backing are present; D16 is illustrated thin embroidery, not a verified UV strip. Repeatability, cloth flexibility and mounting integrity remain unverified. Source backs, dimensions, repeat patterns, inter-view parity and physical attachment remain unverified. Whole-sheet generation does not prove individual meshes are separable.",
+      "geometry_review_status": "unverified"
     }
   ]
 }

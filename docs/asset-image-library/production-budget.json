@@ -7,9 +7,9 @@
   "generation_rule": "Only verified missing references. Ordinary structural sheets contain 3\u20134 assemblies; tiny-component packs contain 10\u201320 objects. Do not generate repeats to fill an allowance. A directly requested full-view assembly may use one full sheet.",
   "revision_rule": "Revisions keep a slot and are tracked separately. At most two generator attempts per new slot without a new explicit review of the rejection reason; no automatic retries.",
   "global_caps": {
-    "palace": 80,
+    "palace": 83,
     "other-map-buildings": 58,
-    "terrain-water-and-planting": 60,
+    "terrain-water-and-planting": 57,
     "shared-outdoor-props-and-bridge": 22,
     "maps-magic-travel-and-birthday": 10
   },
@@ -74,7 +74,7 @@
     },
     {
       "family": "Interiors and furniture",
-      "cap": 22,
+      "cap": 25,
       "existing_ids": [
         "GEN-07",
         "GEN-24",
@@ -264,7 +264,7 @@
   "terrain_location_caps": [
     {
       "location": "Palace grounds and rose gardens",
-      "cap": 10
+      "cap": 9
     },
     {
       "location": "Lantern Lake and pond habitats",
@@ -272,7 +272,7 @@
     },
     {
       "location": "Coast, open sea and reefs",
-      "cap": 10
+      "cap": 9
     },
     {
       "location": "Jade jungle and wetlands",
@@ -292,7 +292,7 @@
     },
     {
       "location": "Sky-island landscape substrates",
-      "cap": 7
+      "cap": 6
     }
   ],
   "shared_outdoor_caps": [
@@ -883,11 +883,14 @@
       "title": "Princess bedroom and dressing suite",
       "status": "generated-pending-reference-and-model-review",
       "file": "completion-pass/INT-R02/INT-R02.png",
-      "sha256": "9450d3e2c22ff804f7264c0e6481f45be73ee26e9edbf1dbc123a33222d66eb3",
-      "generation_attempts_in_this_pass": 1,
+      "sha256": "0e1934ceabd37741ad69e63cf85eb31d7f55f021ab0fd41f070a829f90c6f44e",
+      "generation_attempts_in_this_pass": 2,
       "component_count": 1,
-      "review_notes": "All four requested room views, one bed per view, three east window bays, south entry, dressing alcove and ceiling section are present. Materials follow GEN-24 furniture vocabulary; room layout itself is new. Plan, arrival view and cutaway place reading southwest and memory display southeast. Opposite view B appears to swap these two corner furniture groups. View B is atmosphere reference only; saved proposed_layout and the top plan control these corner positions. Printed fixed-layout labels are generator output, not a verified geometric guarantee. Actual furniture dimensions, room openings and ceiling bay correspondence must be enforced in the model.",
-      "location_ids": []
+      "review_notes": "Requested west open arch, circular flower balcony and18m apex appear in the main views, plan and cutaway. East window wall and north bed remain recognizable; balcony is open to sky with outer flower rail. View C adds a foreground rail across part of the bedroom approach. Do not build a rail across the open doorway or threshold neck; the uninterrupted connection in saved proposed_layout controls. Printed room-data text misstates neck as8x8m; intended neck is8m wide by4m long, as saved coordinates x=-16to-12,y=-3to5. Printed canopy frame height near4.0m contradicts the existing2.8m bedframe reference. Reuse INT-SUITE-FURN-001-S01 unchanged at2.8m. Furniture stays human-scale. No measured correspondence of views or engineering approval of balcony supports is implied. The top plan and declared coordinate layout control position; perspective ornament is illustrative.",
+      "location_ids": [],
+      "retry_reasons": [
+        "Owner requested ceiling increase from12m to18m and an open west circular flower balcony with additional bedroom dressing"
+      ]
     },
     {
       "sheet_id": "INT-R03",
@@ -896,11 +899,14 @@
       "title": "Royal dining room and service connection",
       "status": "generated-pending-reference-and-model-review",
       "file": "completion-pass/INT-R03/INT-R03.png",
-      "sha256": "090a74711034af1d671c2c6b8521dacebe5d7017a5f8584ac6c62805ecfb78b4",
-      "generation_attempts_in_this_pass": 1,
+      "sha256": "1694cc26281bdf1f18d9a209b297592d390b998a0c87cab806ff6ec6479f2f7a",
+      "generation_attempts_in_this_pass": 2,
       "component_count": 1,
-      "review_notes": "Four room views, a north-up plan and ceiling/detail studies are present. Blue/rose stained glass, rose/ivory marble and gold trim remain source-compatible. Dining salon itself is a proposed new room. Views A/B retain opposite-side window placement and west tea alcove placement more clearly than the suite reverse view. Exact eight-chair count and every floral pedestal position are not independently verified. Cutaway changes bay proportions and appears to have more seating than the declared plan. The saved proposed layout controls table dimensions and seating count; do not derive exact mesh coordinates from perspective images.",
-      "location_ids": []
+      "review_notes": "Higher pointed vaults and explicit18m apex section are present. Table/chair dimensions remain human-scale, east glass bays and west tea alcove remain in place. Section includes a human silhouette for scale despite no figure being requested; it is not a new character or asset. Exact seat count, bay dimensions and physical view correspondence remain unverified. Existing marble, gilded ornament, indigo ceiling fields and rose/blue glass remain source-compatible; no bedroom balcony was added to dining room.",
+      "location_ids": [],
+      "retry_reasons": [
+        "Owner requested ceiling increase from12m to18m"
+      ]
     },
     {
       "sheet_id": "PAL-ENTRY-001",
@@ -1630,40 +1636,52 @@
       "owner": "palace",
       "family": "Interiors and furniture",
       "title": "Library Prop",
-      "status": "reserved-for-verified-gap",
-      "file": "",
-      "sha256": "",
-      "generation_attempts_in_this_pass": 0
+      "status": "generated-pending-reference-and-model-review",
+      "file": "completion-pass/INT-LIBRARY-PROP-001/INT-LIBRARY-PROP-001.png",
+      "sha256": "1a06167d52d6abd82dc48331c1fdcc4052abdbac75b398486769f099c00965be",
+      "generation_attempts_in_this_pass": 1,
+      "component_count": 12,
+      "review_notes": "Twelve library props are present, with open scroll case, book page/cover views, ladder side profile, wedge-cushion side and catalogue cabinet rear. Wedge support is distinct from the existing square/round accent cushions. Fine book counts, ladder hook fit, drawer travel and bracket fasteners remain illustrative. The upright book set is one reference grouping, not proof of individually separable meshes. Original palace ivory/rose marble, gold star/rose ornament and indigo/blush accents remain consistent. Full IDs resolve under the header plus D01\u2013D12.",
+      "location_ids": []
     },
     {
       "sheet_id": "INT-GALLERY-PROP-001",
       "owner": "palace",
       "family": "Interiors and furniture",
       "title": "Gallery Prop",
-      "status": "reserved-for-verified-gap",
-      "file": "",
-      "sha256": "",
-      "generation_attempts_in_this_pass": 0
+      "status": "generated-pending-reference-and-model-review",
+      "file": "completion-pass/INT-GALLERY-PROP-001/INT-GALLERY-PROP-001.png",
+      "sha256": "189cdebfeac95fd8f5142d592428b1e3ff872fc7e0946910f9233dd45ebd9ebb",
+      "generation_attempts_in_this_pass": 1,
+      "component_count": 12,
+      "review_notes": "Twelve gallery/display props are present, with clear glass cabinet and empty bell jar, empty frame fronts, open archive box, album views and rear mounting pegs for bench-arm trim. Palette follows the original palace. D01 and D10 rear views add a solid backing panel although their front apertures are empty. Treat backing as optional/removable and keep intended empty frame openings clear; image does not prove exact front/back correspondence. Picture-light arms, glass thickness, shelf wall contacts and easel stability require actual modeling review. Display-easel frame is a different form from the atelier working easel, not a duplicate painting mesh.",
+      "location_ids": []
     },
     {
       "sheet_id": "INT-ATELIER-PROP-001",
       "owner": "palace",
       "family": "Interiors and furniture",
       "title": "Atelier Prop",
-      "status": "reserved-for-verified-gap",
-      "file": "",
-      "sha256": "",
-      "generation_attempts_in_this_pass": 0
+      "status": "generated-pending-reference-and-model-review",
+      "file": "completion-pass/INT-ATELIER-PROP-001/INT-ATELIER-PROP-001.png",
+      "sha256": "58044c44041d3869eee3ad5549f81fa629f284f6852cef44b32039376ab86bd4",
+      "generation_attempts_in_this_pass": 1,
+      "component_count": 12,
+      "review_notes": "Twelve requested craft props appear with separate back/underside or open-state views. Easel has working ledge and support, loom has visible warp/heddle elements, scissors sit in a distinct case and stool underside shows bracing. Source ivory/rose, blush/indigo and gold motifs remain consistent. Fabric roll and five-spool set are coherent reference groupings; motion, weaving paths, scissor hinges and support stability remain unverified. Dress form is a headless, armless non-character display prop. No living character or anatomy reference was generated.",
+      "location_ids": []
     },
     {
       "sheet_id": "INT-TEXTILE-JOINS-001",
       "owner": "palace",
       "family": "Interiors and furniture",
       "title": "Textile Joins",
-      "status": "reserved-for-verified-gap",
-      "file": "",
-      "sha256": "",
-      "generation_attempts_in_this_pass": 0
+      "status": "generated-pending-reference-and-model-review",
+      "file": "completion-pass/INT-TEXTILE-JOINS-001/INT-TEXTILE-JOINS-001.png",
+      "sha256": "0d3d371306fe0c98c74e5b59f0a9603e13f65419399b446c0319389efeb09e5b",
+      "generation_attempts_in_this_pass": 1,
+      "component_count": 16,
+      "review_notes": "All16 requested textile/hardware types appear separately, including reverse/contact views and curtain-track sections. Pink/ivory cloth, indigo star/rose panels and gold mounts match the existing room vocabulary. D01/D02 main views include ornament caps on joining ends. Remove caps at repeat joints, retaining them only at exposed ends. Tube, cradle, ring and internal slider dimensions need a shared modeled fit contract. D12 runner repeat has visible end borders/motif phases that are not proven seamless; D13 shows a framed corner pattern rather than a verified incoming/outgoing path. Adjust boundary motifs and corner cuts before creating repeat textures. D15 fringe and textile backing are present; D16 is illustrated thin embroidery, not a verified UV strip. Repeatability, cloth flexibility and mounting integrity remain unverified.",
+      "location_ids": []
     },
     {
       "sheet_id": "B02-INNER-001",
@@ -2668,6 +2686,45 @@
       "file": "",
       "sha256": "",
       "generation_attempts_in_this_pass": 0
+    },
+    {
+      "sheet_id": "INT-BED-DRESS-001",
+      "owner": "palace",
+      "family": "Interiors and furniture",
+      "title": "Finished canopy bed and bedding inserts",
+      "status": "generated-pending-reference-and-model-review",
+      "file": "completion-pass/INT-BED-DRESS-001/INT-BED-DRESS-001.png",
+      "sha256": "f71e88a950b3ec0e53e250f85f57cca735400269f65162d50cf7820ac5d33633",
+      "generation_attempts_in_this_pass": 1,
+      "component_count": 10,
+      "review_notes": "Ten intended isolated inserts are present, plus a finished-bed assembly guide using the existing frame. Guide explicitly retains2.8m frame height and2.2x2.7m footprint; duvet, pillows and sheer canopy layers are visible. Fitted-sheet underside is shown hollow, pillow front/back and fabric reverse faces are present. Full IDs resolve from sheet title plus A01\u2013A10. Assembly guide is a styling reference for existing frame ID, not a new frame model target. Fabric thickness, dynamic draping, exact corner joins and bed slat fit remain unverified.",
+      "location_ids": []
+    },
+    {
+      "sheet_id": "INT-BEDROOM-PROP-001",
+      "owner": "palace",
+      "family": "Interiors and furniture",
+      "title": "Princess room personal decor",
+      "status": "generated-pending-reference-and-model-review",
+      "file": "completion-pass/INT-BEDROOM-PROP-001/INT-BEDROOM-PROP-001.png",
+      "sha256": "b856f2dd02c5e1362f80a1c94f754b94c0733105297f97ce6f36a246580d9527",
+      "generation_attempts_in_this_pass": 1,
+      "component_count": 12,
+      "review_notes": "Twelve requested isolated accessories are present with front/back, underside or open-state references. Source rose/ivory/gold and blue/blush accents retained. Drawer pull shows two rear pegs; comb teeth and brush bristles are distinct. Full asset IDs resolve under sheet title using A01\u2013A12 suffixes. Items are separate concepts, not a generated combined mesh. Small hinges, perfume pump construction, fabric strap flexibility and lace hole topology need modeling review.",
+      "location_ids": []
+    },
+    {
+      "sheet_id": "INT-BALCONY-JOIN-001",
+      "owner": "palace",
+      "family": "Interiors and furniture",
+      "title": "Circular bedroom flower balcony structural kit",
+      "status": "generated-pending-reference-and-model-review",
+      "file": "completion-pass/INT-BALCONY-JOIN-001/INT-BALCONY-JOIN-001.png",
+      "sha256": "2650a69d0aa43668ed328fcf8efd4714c77d29da95940ad432dac0dd397ad15f",
+      "generation_attempts_in_this_pass": 1,
+      "component_count": 4,
+      "review_notes": "All four intended components are present. Floor top view is a90-degree radius9m quarter disc; threshold is explicitly8x4m; open portal labels8m clear and9.2m overall width. Curved railing shows22.5-degree/radius8.8m data and an empty planting trough. Floor and neck views include ornamental end blocks/aprons at some joining edges. Keep radial sector seams and both neck end planes flat in the model; remove projecting end ornaments that obstruct joins. Rail radius, equal curve repetition, floral drainage and contact hardware are concept references. Decorative supports shown below modules are not a structural support calculation. The18m circle is assembled from four floor copies. Connect neck through an intentional trimmed floor interface: its rectangular end does not mate to a circular boundary automatically. A modeled trim/overlap detail remains required.",
+      "location_ids": []
     }
   ],
   "production_pass": "palace-coverage-missing-only",
@@ -2704,15 +2761,11 @@
     "side_rear_schedule": "palace-side-rear/schedule.json",
     "complete_roof_plan": "palace-roof-plan/schedule.json"
   },
-  "production_pass_status": "Completion pass: 23/115 queued missing-reference sheets saved. All geometry, UVs, anatomy, scale and runtime remain unverified.",
+  "production_pass_status": "Completion pass: 30/118 queued missing-reference sheets saved. All geometry, UVs, anatomy, scale and runtime remain unverified.",
   "structural_sheet_rule": "Display source-fitted assemblies with existing canonical decor so identity and proportions can be checked. Bare host views are internal construction proposals, not replacements for the original decorated wing references.",
   "generation_paused": true,
   "pause_reason": "Requested roof/stair proposal finished. Painted attempt rejected; coordinate diagram covers33 placements and11 stair links. Source-depth registration remains a layout task.",
   "generation_resume_allowlist": [
-    "INT-LIBRARY-PROP-001",
-    "INT-GALLERY-PROP-001",
-    "INT-ATELIER-PROP-001",
-    "INT-TEXTILE-JOINS-001",
     "B03-STRUCT-001",
     "B03-DETAIL-001",
     "B04-STRUCT-001",
@@ -2997,6 +3050,25 @@
         "palace": 80,
         "other-map-buildings": 58,
         "terrain-water-and-planting": 60,
+        "shared-outdoor-props-and-bridge": 22,
+        "maps-magic-travel-and-birthday": 10
+      },
+      "original_boards_preserved": true
+    },
+    {
+      "date": "2026-10-15",
+      "reason": "Owner requested finished bed, additional room decor, higher ceilings and a large circular flower balcony to the left of the bedroom bed. Three unallocated nature slots reassigned; existing landscape reservations unchanged. Revisions reuse existing room slots.",
+      "previous_global_caps": {
+        "palace": 80,
+        "other-map-buildings": 58,
+        "terrain-water-and-planting": 60,
+        "shared-outdoor-props-and-bridge": 22,
+        "maps-magic-travel-and-birthday": 10
+      },
+      "new_global_caps": {
+        "palace": 83,
+        "other-map-buildings": 58,
+        "terrain-water-and-planting": 57,
         "shared-outdoor-props-and-bridge": 22,
         "maps-magic-travel-and-birthday": 10
       },

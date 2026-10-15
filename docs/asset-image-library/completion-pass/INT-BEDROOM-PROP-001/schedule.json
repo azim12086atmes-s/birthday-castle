@@ -1,0 +1,395 @@
+{
+  "sheet_id": "INT-BEDROOM-PROP-001",
+  "name": "Princess room personal decor",
+  "owner": "palace",
+  "family": "Interiors and furniture",
+  "location_id": null,
+  "source_reference_id": "GEN-24",
+  "source_reference_file": "images/illustrated-boards/GEN-24.png",
+  "source_reference_sha256": "deb78cfce6dab5c31d9b3519d3bc01a07e58bba453b013fcdb76bd2e8be3f349",
+  "prompt": "Create ONE detailed source-compatible GAME ASSET REFERENCE SHEET, not a mesh or whole new room. Title INT-BEDROOM-PROP-001 \u2014 Princess room personal decor. Pale ivory background, soft even light, crisp isolated non-melting forms. Full sheet ID, numbered suffix and names printed clearly, dimensions W,D,H marked PROPOSED. Same original rose/ivory marble, fine gold rose/star/lotus ornament, indigo and blush textiles. Use only single supplied reference for visible style; unseen construction is proposed. No people, scenery or unlabeled extra objects. Exactly12 separate object cells with readable shape, one three-quarter or unfolded primary view and a small rear/underside/contact view. Do not fuse objects together. TWELVE separate readable cells in4x3 grid. These are tiny desktop/vanity accessories, not new furniture. Gold/ivory/blush/cobalt accents match source. Keep hooks, teeth, hinges and contact faces clear. Do not invent full room, vases, duplicate serving trays, picture-frame masters, gift packs, lamps or wall mirrors.\n\nINT-BEDROOM-PROP-001-A01 \u2014 Rose jewel casket. W,D,H [0.28, 0.18, 0.16]m proposed. One small ivory casket, rose enamel inset, gold lotus feet, hinged lid; main view closed and small open interior inset. Not a gift box.\n\nINT-BEDROOM-PROP-001-A02 \u2014 Star perfume bottle. W,D,H [0.08, 0.06, 0.16]m proposed. One small cobalt crystal perfume bottle with gold star stopper and delicate blush enamel label, flat stable base.\n\nINT-BEDROOM-PROP-001-A03 \u2014 Pearl scent atomizer. W,D,H [0.12, 0.08, 0.14]m proposed. One ivory/blush pear-shaped scent bottle with thin gold neck and separate-looking soft pump bulb, not a lantern.\n\nINT-BEDROOM-PROP-001-A04 \u2014 Small handheld mirror. W,D,H [0.12, 0.025, 0.27]m proposed. One small oval hand mirror with ivory/gold rose handle, reflective centre and carved back shown. This is NOT the existing full-size moon wall mirror.\n\nINT-BEDROOM-PROP-001-A05 \u2014 Princess hairbrush. W,D,H [0.08, 0.035, 0.23]m proposed. One handheld ivory hairbrush with gold rose-inlaid back and clearly visible short bristles underneath, human sized.\n\nINT-BEDROOM-PROP-001-A06 \u2014 Gold comb. W,D,H [0.13, 0.005, 0.045]m proposed. One fine gold comb with aligned visible teeth, blush rose crest on upper spine, no melted teeth.\n\nINT-BEDROOM-PROP-001-A07 \u2014 Ring display stand. W,D,H [0.07, 0.07, 0.09]m proposed. One tiny ivory conical ring stand on rose-marble round foot, restrained gold rim; no jewelry needed to define shape.\n\nINT-BEDROOM-PROP-001-A08 \u2014 Petal trinket dish. W,D,H [0.15, 0.15, 0.035]m proposed. One small shallow ivory lotus-petal trinket bowl with rose glaze interior and gold rim. Underside has stable flat foot.\n\nINT-BEDROOM-PROP-001-A09 \u2014 Keepsake locket. W,D,H [0.035, 0.008, 0.045]m proposed. One tiny gold oval locket, rose enamel star on outside; show open hinged state with empty inset, short attachment eye only, no long tangled chain.\n\nINT-BEDROOM-PROP-001-A10 \u2014 Silk eye mask. W,D,H [0.2, 0.02, 0.09]m proposed. One blush silk sleep mask with gold star embroidery and clear elastic strap loop behind. Soft fabric, not a mask sculpture.\n\nINT-BEDROOM-PROP-001-A11 \u2014 Lace tabletop doily. W,D,H [0.32, 0.32, 0.003]m proposed. One thin ivory star/rose lace doily, circular silhouette with readable repeating lace holes, laid flat; no tray underneath.\n\nINT-BEDROOM-PROP-001-A12 \u2014 Rose drawer pull. W,D,H [0.1, 0.035, 0.035]m proposed. One small gold rose drawer handle with TWO short rear mounting pegs, shown from front and back. Not a complete drawer, cabinet or generic lantern bracket.\nFooter: Proposed reference components; shape consistency, fit and mesh separation require modeling review.",
+  "parts": [
+    {
+      "asset_id": "INT-BEDROOM-PROP-001-A01",
+      "name": "Rose jewel casket",
+      "kind": "soft-furnishing",
+      "dimensions_m_proposed": [
+        0.28,
+        0.18,
+        0.16
+      ],
+      "function": "Missing small personal bedroom dressing; reuse existing trays, lamps, flowers, frames and gifts.",
+      "construction": "One small ivory casket, rose enamel inset, gold lotus feet, hinged lid; main view closed and small open interior inset. Not a gift box.",
+      "attachment_face": "See isolated back/underside contact; host and dimensions proposed",
+      "semantic_front": "Z up; broad fabric faces presented unfolded; main access face shown",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Interiors and furniture"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "INT-BEDROOM-PROP-001-A01__rose-jewel-casket__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "INT-BEDROOM-PROP-001-A02",
+      "name": "Star perfume bottle",
+      "kind": "soft-furnishing",
+      "dimensions_m_proposed": [
+        0.08,
+        0.06,
+        0.16
+      ],
+      "function": "Missing small personal bedroom dressing; reuse existing trays, lamps, flowers, frames and gifts.",
+      "construction": "One small cobalt crystal perfume bottle with gold star stopper and delicate blush enamel label, flat stable base.",
+      "attachment_face": "See isolated back/underside contact; host and dimensions proposed",
+      "semantic_front": "Z up; broad fabric faces presented unfolded; main access face shown",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Interiors and furniture"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "INT-BEDROOM-PROP-001-A02__star-perfume-bottle__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "INT-BEDROOM-PROP-001-A03",
+      "name": "Pearl scent atomizer",
+      "kind": "soft-furnishing",
+      "dimensions_m_proposed": [
+        0.12,
+        0.08,
+        0.14
+      ],
+      "function": "Missing small personal bedroom dressing; reuse existing trays, lamps, flowers, frames and gifts.",
+      "construction": "One ivory/blush pear-shaped scent bottle with thin gold neck and separate-looking soft pump bulb, not a lantern.",
+      "attachment_face": "See isolated back/underside contact; host and dimensions proposed",
+      "semantic_front": "Z up; broad fabric faces presented unfolded; main access face shown",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Interiors and furniture"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "INT-BEDROOM-PROP-001-A03__pearl-scent-atomizer__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "INT-BEDROOM-PROP-001-A04",
+      "name": "Small handheld mirror",
+      "kind": "soft-furnishing",
+      "dimensions_m_proposed": [
+        0.12,
+        0.025,
+        0.27
+      ],
+      "function": "Missing small personal bedroom dressing; reuse existing trays, lamps, flowers, frames and gifts.",
+      "construction": "One small oval hand mirror with ivory/gold rose handle, reflective centre and carved back shown. This is NOT the existing full-size moon wall mirror.",
+      "attachment_face": "See isolated back/underside contact; host and dimensions proposed",
+      "semantic_front": "Z up; broad fabric faces presented unfolded; main access face shown",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Interiors and furniture"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "INT-BEDROOM-PROP-001-A04__small-handheld-mirror__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "INT-BEDROOM-PROP-001-A05",
+      "name": "Princess hairbrush",
+      "kind": "soft-furnishing",
+      "dimensions_m_proposed": [
+        0.08,
+        0.035,
+        0.23
+      ],
+      "function": "Missing small personal bedroom dressing; reuse existing trays, lamps, flowers, frames and gifts.",
+      "construction": "One handheld ivory hairbrush with gold rose-inlaid back and clearly visible short bristles underneath, human sized.",
+      "attachment_face": "See isolated back/underside contact; host and dimensions proposed",
+      "semantic_front": "Z up; broad fabric faces presented unfolded; main access face shown",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Interiors and furniture"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "INT-BEDROOM-PROP-001-A05__princess-hairbrush__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "INT-BEDROOM-PROP-001-A06",
+      "name": "Gold comb",
+      "kind": "soft-furnishing",
+      "dimensions_m_proposed": [
+        0.13,
+        0.005,
+        0.045
+      ],
+      "function": "Missing small personal bedroom dressing; reuse existing trays, lamps, flowers, frames and gifts.",
+      "construction": "One fine gold comb with aligned visible teeth, blush rose crest on upper spine, no melted teeth.",
+      "attachment_face": "See isolated back/underside contact; host and dimensions proposed",
+      "semantic_front": "Z up; broad fabric faces presented unfolded; main access face shown",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Interiors and furniture"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "INT-BEDROOM-PROP-001-A06__gold-comb__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "INT-BEDROOM-PROP-001-A07",
+      "name": "Ring display stand",
+      "kind": "soft-furnishing",
+      "dimensions_m_proposed": [
+        0.07,
+        0.07,
+        0.09
+      ],
+      "function": "Missing small personal bedroom dressing; reuse existing trays, lamps, flowers, frames and gifts.",
+      "construction": "One tiny ivory conical ring stand on rose-marble round foot, restrained gold rim; no jewelry needed to define shape.",
+      "attachment_face": "See isolated back/underside contact; host and dimensions proposed",
+      "semantic_front": "Z up; broad fabric faces presented unfolded; main access face shown",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Interiors and furniture"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "INT-BEDROOM-PROP-001-A07__ring-display-stand__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "INT-BEDROOM-PROP-001-A08",
+      "name": "Petal trinket dish",
+      "kind": "soft-furnishing",
+      "dimensions_m_proposed": [
+        0.15,
+        0.15,
+        0.035
+      ],
+      "function": "Missing small personal bedroom dressing; reuse existing trays, lamps, flowers, frames and gifts.",
+      "construction": "One small shallow ivory lotus-petal trinket bowl with rose glaze interior and gold rim. Underside has stable flat foot.",
+      "attachment_face": "See isolated back/underside contact; host and dimensions proposed",
+      "semantic_front": "Z up; broad fabric faces presented unfolded; main access face shown",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Interiors and furniture"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "INT-BEDROOM-PROP-001-A08__petal-trinket-dish__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "INT-BEDROOM-PROP-001-A09",
+      "name": "Keepsake locket",
+      "kind": "soft-furnishing",
+      "dimensions_m_proposed": [
+        0.035,
+        0.008,
+        0.045
+      ],
+      "function": "Missing small personal bedroom dressing; reuse existing trays, lamps, flowers, frames and gifts.",
+      "construction": "One tiny gold oval locket, rose enamel star on outside; show open hinged state with empty inset, short attachment eye only, no long tangled chain.",
+      "attachment_face": "See isolated back/underside contact; host and dimensions proposed",
+      "semantic_front": "Z up; broad fabric faces presented unfolded; main access face shown",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Interiors and furniture"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "INT-BEDROOM-PROP-001-A09__keepsake-locket__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "INT-BEDROOM-PROP-001-A10",
+      "name": "Silk eye mask",
+      "kind": "soft-furnishing",
+      "dimensions_m_proposed": [
+        0.2,
+        0.02,
+        0.09
+      ],
+      "function": "Missing small personal bedroom dressing; reuse existing trays, lamps, flowers, frames and gifts.",
+      "construction": "One blush silk sleep mask with gold star embroidery and clear elastic strap loop behind. Soft fabric, not a mask sculpture.",
+      "attachment_face": "See isolated back/underside contact; host and dimensions proposed",
+      "semantic_front": "Z up; broad fabric faces presented unfolded; main access face shown",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Interiors and furniture"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "INT-BEDROOM-PROP-001-A10__silk-eye-mask__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "INT-BEDROOM-PROP-001-A11",
+      "name": "Lace tabletop doily",
+      "kind": "soft-furnishing",
+      "dimensions_m_proposed": [
+        0.32,
+        0.32,
+        0.003
+      ],
+      "function": "Missing small personal bedroom dressing; reuse existing trays, lamps, flowers, frames and gifts.",
+      "construction": "One thin ivory star/rose lace doily, circular silhouette with readable repeating lace holes, laid flat; no tray underneath.",
+      "attachment_face": "See isolated back/underside contact; host and dimensions proposed",
+      "semantic_front": "Z up; broad fabric faces presented unfolded; main access face shown",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Interiors and furniture"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "INT-BEDROOM-PROP-001-A11__lace-tabletop-doily__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    },
+    {
+      "asset_id": "INT-BEDROOM-PROP-001-A12",
+      "name": "Rose drawer pull",
+      "kind": "soft-furnishing",
+      "dimensions_m_proposed": [
+        0.1,
+        0.035,
+        0.035
+      ],
+      "function": "Missing small personal bedroom dressing; reuse existing trays, lamps, flowers, frames and gifts.",
+      "construction": "One small gold rose drawer handle with TWO short rear mounting pegs, shown from front and back. Not a complete drawer, cabinet or generic lantern bracket.",
+      "attachment_face": "See isolated back/underside contact; host and dimensions proposed",
+      "semantic_front": "Z up; broad fabric faces presented unfolded; main access face shown",
+      "target_polycount_proposed": 2500,
+      "reuse_class": "reusable",
+      "applies_to": [
+        "Interiors and furniture"
+      ],
+      "model_status": "unregistered",
+      "model_file": "",
+      "model_version": "",
+      "model_batch_id": "",
+      "mesh_name": "",
+      "generator": "",
+      "generator_job_id": "",
+      "model_sha256": "",
+      "review_status": "pending-reference-review",
+      "suggested_model_filename": "INT-BEDROOM-PROP-001-A12__rose-drawer-pull__v001.glb",
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+    }
+  ],
+  "outputs": [
+    {
+      "file": "completion-pass/INT-BEDROOM-PROP-001/INT-BEDROOM-PROP-001.png",
+      "sha256": "b856f2dd02c5e1362f80a1c94f754b94c0733105297f97ce6f36a246580d9527",
+      "original_file": "/workspace/generated_images/exec-9a47f8cd-5c1c-4f59-8a43-1ac19d6430b7.png",
+      "actual_input_file": "images/illustrated-boards/GEN-24.png",
+      "actual_input_sha256": "deb78cfce6dab5c31d9b3519d3bc01a07e58bba453b013fcdb76bd2e8be3f349",
+      "attempt": 1,
+      "generator": "image_gen.imagegen"
+    }
+  ],
+  "previous_attempts": [],
+  "models_generated": 0,
+  "physical_join_fit_verified": false,
+  "view_geometry_parity_verified": false,
+  "review_status": "visual-reviewed-personal-decor-reference-pending-model-review",
+  "gap": "Missing small personal bedroom dressing; reuse existing trays, lamps, flowers, frames and gifts.",
+  "mode": "detail",
+  "visual_review_notes": [
+    "Twelve requested isolated accessories are present with front/back, underside or open-state references. Source rose/ivory/gold and blue/blush accents retained. Drawer pull shows two rear pegs; comb teeth and brush bristles are distinct.",
+    "Full asset IDs resolve under sheet title using A01\u2013A12 suffixes. Items are separate concepts, not a generated combined mesh. Small hinges, perfume pump construction, fabric strap flexibility and lace hole topology need modeling review."
+  ]
+}

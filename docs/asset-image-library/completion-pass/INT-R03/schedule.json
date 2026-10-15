@@ -7,7 +7,7 @@
   "source_reference_id": "GEN-26",
   "source_reference_file": "images/illustrated-boards/GEN-26.png",
   "source_reference_sha256": "6ca64686df3226a1da314f2865d3cd2699124b9f746b44ace5fbb72aa9801321",
-  "prompt": "Create ONE finely detailed interior reference board, INT-R03 \u2014 CELEBRATION DINING SALON / COORDINATED VIEWS. Four views of ONE room, plus one small north-up PLAN. GEN-26 is the sole supplied source: preserve its ivory/rose-veined marble, gold floral/star tracery, indigo-star ceiling panels, pointed glazed bays, warm garden flowers. That source does not show a dining salon, so label this room PROPOSED. Do not reproduce its throne, library shelving or conservatory pool. No kitchen or service room. Furnish at HUMAN scale, with clear circulation, not an oversized ceremonial table.\nFIXED PROPOSED PLAN: room 24m E-W by16m N-S, apex12m. Exactly ONE oval table centred at x0,y0, long axis north-south, size2m wide x4.2m long x0.76m high. Table is modular: straight centre2.2m long plus two rounded end modules1m long each. Exactly8 dining chairs: three on each long side and one at each end. Seat height0.48m. Exactly THREE tall pointed window bays on EAST wall at y=-5,0,+5; blue and rose glass. Exactly ONE double entrance centred on SOUTH wall. NORTH wall has a shallow central pointed apse and one fixed glass feature bay, no extra doorway. WEST wall has one tea conversation alcove centred y1 with one small table and two armchairs. One display sideboard stands on west wall toward southwest. A pair of floral pedestals stands at northeast. No other dining tables or duplicate alcoves. One chandelier above the oval table. Three shallow pointed ceiling bays have indigo star fields, ivory ribs and gilt bosses. Lower wall dado and carved cornice4.5m, clerestory above. Maintain connected circulation1.8m around the dining group and to every doorway.\nA: SOUTH ENTRY LOOKING NORTH: central table toward north apse, east windows on right, west tea alcove on left. B: NORTH APSE LOOKING SOUTH: entry behind table; east windows must appear on LEFT and west tea alcove and southwest sideboard on RIGHT. DO NOT SWAP corner furniture when reversing camera. C: WEST LOOKING EAST: three east window bays opposite, north apse at LEFT edge, south entry at RIGHT edge. D: HIGH CORNER CUTAWAY: same plan, remove near wall and lift half ceiling to show decorated underside; all8 chairs remain around one table. Small PLAN labelled N/E/S/W is the placement authority. Four view letters are not four assets; room ID INT-R03-S01.\nWarm, dense but tidy celebration dressing: pink/cream floral centrepiece, eight coherent place settings, source-style crystal lamps, rose garlands over entry, paired gold wall sconces, indigo/blush curtains, rose carpet under dining group, matching small tea-zone rug, a closed gift grouping on sideboard and modest star ribbons. No beds, throne, musicians, food kitchen, giant cake or fountains. Let ornate marble wall panels, arch soffits, gold cornices and ceiling remain readable. Furniture does not merge into wall carving. Neutral ivory board, crisp labels outside views. Include a ceiling underside detail and table section showing human height. Footer: Proposed room layout; image view parity, dimensions and joins require model review.",
+  "prompt": "Revise ONLY the ceiling height of supplied INT-R03 celebration dining salon reference sheet from12m to18m apex. Preserve its24m E-W by16m N-S room, south double entrance, north stained-glass apse, three EAST window bays, WEST tea alcove and southwest sideboard. Keep one central2x4.2m oval table, exactly8 human-sized dining chairs, existing floral dressing, ivory/rose marble and gold details, blue/rose glass. Do NOT add bedroom, balcony, kitchen, throne, different furniture or a second table. Raise side arch springing and clerestory, add an intermediate gold cornice at9m, then slender ivory ribs and indigo/gold star vaults to18m. Lower human-height dado/cornice stays4.5m. Chandelier can hang lower on a fine chain; do not scale furniture upward. Four coordinated view positions as supplied, same north-up plan; show18m height unambiguously in ceiling SECTION with human table/chair dimension inset. Keep theme, names and room ID INT-R03-S01. Title INT-R03 \u2014 CELEBRATION DINING SALON / HIGH VAULT REVISION. Full component details remain crisp; correct perspective mismatches conservatively. Footer: Proposed18m apex; images do not establish measured view parity or join fit.",
   "parts": [
     {
       "asset_id": "INT-R03-S01",
@@ -16,7 +16,7 @@
       "dimensions_m_proposed": [
         24,
         16,
-        12
+        18
       ],
       "function": "Reserved dining-room reference missing; one coordinated furnished overview",
       "construction": "Four consistent views of a celebratory dining/tea salon, ivory/rose marble and gold, blue/rose windows, human-sized oval table group with warm flowers, restrained garlands, carpet and curtains. Reuse existing tea/celebration objects; no kitchen, serving workspace or performance room. Continuous stable room layout.",
@@ -43,19 +43,30 @@
   "outputs": [
     {
       "file": "completion-pass/INT-R03/INT-R03.png",
+      "sha256": "1694cc26281bdf1f18d9a209b297592d390b998a0c87cab806ff6ec6479f2f7a",
+      "original_file": "/workspace/generated_images/exec-5ebc8520-aa00-4498-b88a-5e40285b5a1c.png",
+      "actual_input_file": "completion-pass/INT-R03/INT-R03-R01.png",
+      "actual_input_sha256": "090a74711034af1d671c2c6b8521dacebe5d7017a5f8584ac6c62805ecfb78b4",
+      "attempt": 2,
+      "generator": "image_gen.imagegen"
+    }
+  ],
+  "previous_attempts": [
+    {
+      "file": "completion-pass/INT-R03/INT-R03-R01.png",
       "sha256": "090a74711034af1d671c2c6b8521dacebe5d7017a5f8584ac6c62805ecfb78b4",
       "original_file": "/workspace/generated_images/exec-c3d9b983-96ed-4dfc-b924-a6e001b7929c.png",
       "actual_input_file": "images/illustrated-boards/GEN-26.png",
       "actual_input_sha256": "6ca64686df3226a1da314f2865d3cd2699124b9f746b44ace5fbb72aa9801321",
       "attempt": 1,
-      "generator": "image_gen.imagegen"
+      "generator": "image_gen.imagegen",
+      "rejection_reason": "Owner requested ceiling increase from12m to18m"
     }
   ],
-  "previous_attempts": [],
   "models_generated": 0,
   "physical_join_fit_verified": false,
   "view_geometry_parity_verified": false,
-  "review_status": "reference-with-seat-count-and-proportion-review-pending",
+  "review_status": "ceiling-revision-reference-pending-geometry-review",
   "gap": "Reserved dining-room reference missing; one coordinated furnished overview",
   "mode": "room",
   "source_interpretation": "GEN-26 provides palace material and architectural vocabulary; dining room geometry and furniture arrangement are proposed, not extracted.",
@@ -72,7 +83,7 @@
       ],
       "z": [
         0,
-        12
+        18
       ]
     },
     "north_feature": "shallow apse, fixed central stained-glass bay",
@@ -124,8 +135,87 @@
     "clear_aisle_minimum": 1.8
   },
   "visual_review_notes": [
-    "Four room views, a north-up plan and ceiling/detail studies are present. Blue/rose stained glass, rose/ivory marble and gold trim remain source-compatible. Dining salon itself is a proposed new room.",
-    "Views A/B retain opposite-side window placement and west tea alcove placement more clearly than the suite reverse view. Exact eight-chair count and every floral pedestal position are not independently verified.",
-    "Cutaway changes bay proportions and appears to have more seating than the declared plan. The saved proposed layout controls table dimensions and seating count; do not derive exact mesh coordinates from perspective images."
-  ]
+    "Higher pointed vaults and explicit18m apex section are present. Table/chair dimensions remain human-scale, east glass bays and west tea alcove remain in place.",
+    "Section includes a human silhouette for scale despite no figure being requested; it is not a new character or asset. Exact seat count, bay dimensions and physical view correspondence remain unverified.",
+    "Existing marble, gilded ornament, indigo ceiling fields and rose/blue glass remain source-compatible; no bedroom balcony was added to dining room."
+  ],
+  "revision_history": [
+    {
+      "date": "2026-10-15",
+      "prompt": "Create ONE finely detailed interior reference board, INT-R03 \u2014 CELEBRATION DINING SALON / COORDINATED VIEWS. Four views of ONE room, plus one small north-up PLAN. GEN-26 is the sole supplied source: preserve its ivory/rose-veined marble, gold floral/star tracery, indigo-star ceiling panels, pointed glazed bays, warm garden flowers. That source does not show a dining salon, so label this room PROPOSED. Do not reproduce its throne, library shelving or conservatory pool. No kitchen or service room. Furnish at HUMAN scale, with clear circulation, not an oversized ceremonial table.\nFIXED PROPOSED PLAN: room 24m E-W by16m N-S, apex12m. Exactly ONE oval table centred at x0,y0, long axis north-south, size2m wide x4.2m long x0.76m high. Table is modular: straight centre2.2m long plus two rounded end modules1m long each. Exactly8 dining chairs: three on each long side and one at each end. Seat height0.48m. Exactly THREE tall pointed window bays on EAST wall at y=-5,0,+5; blue and rose glass. Exactly ONE double entrance centred on SOUTH wall. NORTH wall has a shallow central pointed apse and one fixed glass feature bay, no extra doorway. WEST wall has one tea conversation alcove centred y1 with one small table and two armchairs. One display sideboard stands on west wall toward southwest. A pair of floral pedestals stands at northeast. No other dining tables or duplicate alcoves. One chandelier above the oval table. Three shallow pointed ceiling bays have indigo star fields, ivory ribs and gilt bosses. Lower wall dado and carved cornice4.5m, clerestory above. Maintain connected circulation1.8m around the dining group and to every doorway.\nA: SOUTH ENTRY LOOKING NORTH: central table toward north apse, east windows on right, west tea alcove on left. B: NORTH APSE LOOKING SOUTH: entry behind table; east windows must appear on LEFT and west tea alcove and southwest sideboard on RIGHT. DO NOT SWAP corner furniture when reversing camera. C: WEST LOOKING EAST: three east window bays opposite, north apse at LEFT edge, south entry at RIGHT edge. D: HIGH CORNER CUTAWAY: same plan, remove near wall and lift half ceiling to show decorated underside; all8 chairs remain around one table. Small PLAN labelled N/E/S/W is the placement authority. Four view letters are not four assets; room ID INT-R03-S01.\nWarm, dense but tidy celebration dressing: pink/cream floral centrepiece, eight coherent place settings, source-style crystal lamps, rose garlands over entry, paired gold wall sconces, indigo/blush curtains, rose carpet under dining group, matching small tea-zone rug, a closed gift grouping on sideboard and modest star ribbons. No beds, throne, musicians, food kitchen, giant cake or fountains. Let ornate marble wall panels, arch soffits, gold cornices and ceiling remain readable. Furniture does not merge into wall carving. Neutral ivory board, crisp labels outside views. Include a ceiling underside detail and table section showing human height. Footer: Proposed room layout; image view parity, dimensions and joins require model review.",
+      "proposed_layout": {
+        "units": "metres; concept only",
+        "bounds": {
+          "x": [
+            -12,
+            12
+          ],
+          "y": [
+            -8,
+            8
+          ],
+          "z": [
+            0,
+            18
+          ]
+        },
+        "north_feature": "shallow apse, fixed central stained-glass bay",
+        "south_entry_centre": [
+          0,
+          -8
+        ],
+        "east_window_centres": [
+          [
+            12,
+            -5
+          ],
+          [
+            12,
+            0
+          ],
+          [
+            12,
+            5
+          ]
+        ],
+        "central_table": {
+          "centre": [
+            0,
+            0
+          ],
+          "size": [
+            2,
+            4.2,
+            0.76
+          ],
+          "orientation": "long axis north-south",
+          "chairs": 8
+        },
+        "west_tea_zone": [
+          -8,
+          1
+        ],
+        "west_display_sideboard": [
+          -10,
+          -4
+        ],
+        "northeast_flower_pedestals": [
+          [
+            8,
+            6
+          ]
+        ],
+        "clear_aisle_minimum": 1.8
+      },
+      "visual_review_notes": [
+        "Four room views, a north-up plan and ceiling/detail studies are present. Blue/rose stained glass, rose/ivory marble and gold trim remain source-compatible. Dining salon itself is a proposed new room.",
+        "Views A/B retain opposite-side window placement and west tea alcove placement more clearly than the suite reverse view. Exact eight-chair count and every floral pedestal position are not independently verified.",
+        "Cutaway changes bay proportions and appears to have more seating than the declared plan. The saved proposed layout controls table dimensions and seating count; do not derive exact mesh coordinates from perspective images."
+      ],
+      "superseded_file": "completion-pass/INT-R03/INT-R03-R01.png"
+    }
+  ],
+  "revision_input_file": "completion-pass/INT-R03/INT-R03-R01.png",
+  "revision_input_sha256": "090a74711034af1d671c2c6b8521dacebe5d7017a5f8584ac6c62805ecfb78b4",
+  "revision_reason": "Owner requested ceiling increase from12m to18m"
 }
