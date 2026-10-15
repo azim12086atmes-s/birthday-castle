@@ -1,0 +1,92 @@
+{
+  "schema": "game-room.room-brief.v1",
+  "roomId": "b12-village-fit",
+  "family": "custom",
+  "purpose": "Function engineering fixture: connect the proposed west gate to a covered village lane, a court and two testable ground rooms using saved B12 module dimensions.",
+  "runtimeSurface": "Separate static Three.js review: world-production-plan/village-fit/index.html",
+  "boundsMeters": [
+    106,
+    8.15,
+    44
+  ],
+  "hero": {
+    "id": "LANE-ARCH-42",
+    "role": "Actual covered street passage connecting the two attached rows",
+    "reservedBoundsMeters": [
+      6,
+      8,
+      12
+    ]
+  },
+  "symmetry": {
+    "mode": "none",
+    "order": 1,
+    "appliesTo": [
+      "shared module dimensions and roof ports"
+    ],
+    "exceptions": [
+      "Public entry widened on south row; source secondary cottage door retained on north row.",
+      "Lane arch occupies the east pair; court is a proposed continuation."
+    ]
+  },
+  "circulation": {
+    "description": "West interface to six-metre lane, 4.8-metre covered arch, arrival court and return; branch into two ground rooms.",
+    "minimumClearanceMeters": 2.4,
+    "secondaryException": "The 1.0 m cottage opening preserves the source; close-fit optional test, not the primary arrival."
+  },
+  "productionCamera": {
+    "viewport": [
+      1440,
+      960
+    ],
+    "location": [
+      -14.886883917714854,
+      22.051037099874247,
+      13.563307706127736
+    ],
+    "target": [
+      20,
+      3,
+      0
+    ],
+    "verticalFovDegrees": 55
+  },
+  "performanceBudget": {
+    "maxSceneTriangles": 75000,
+    "maxDrawCalls": 120,
+    "maxVLowBytes": 0,
+    "maxHighTextureBytes": 0,
+    "scope": "Prototype inspection only; no exported tiers or textures"
+  },
+  "creditBudget": {
+    "maximumCredits": 0,
+    "approvalRequired": true
+  },
+  "environment": {
+    "type": "none",
+    "identity": "",
+    "source": "",
+    "assignmentKey": ""
+  },
+  "artifacts": {
+    "floorPlan": "plans/lower-plan.png",
+    "reflectedCeilingPlan": "plans/ceiling-plan.png",
+    "planMetadata": "room-layout.json",
+    "wallElevations": [
+      "elevations/source-door.png",
+      "elevations/window-bay.png",
+      "elevations/wide-entry.png",
+      "elevations/lane-arch.png"
+    ],
+    "visualTarget": "../../world-location-kits/west-lantern-forest/source/B12-village-original.png",
+    "openingContactSheet": "review/opening-masks.png"
+  },
+  "customContract": {
+    "playerRadius": 0.45,
+    "playerHeight": 1.75,
+    "eyeHeight": 1.6,
+    "movement": "Free X/Z; swept <=0.06 m; walls, glazing, ceilings and boundary remain colliders when visual layers change",
+    "readiness": "Local manifests and generated module geometry loaded; this is not the production game"
+  },
+  "status": "Function prototype only; review evidence is not approval"
+}

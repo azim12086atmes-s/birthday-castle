@@ -1,0 +1,80 @@
+{
+  "schema": "game-room.opening-cutter.v1",
+  "id": "LANE-ARCH-42-door",
+  "kind": "door",
+  "widthMeters": 6.0,
+  "heightMeters": 6.0,
+  "sillMeters": 0.0,
+  "depthMeters": 0.3,
+  "source": "lane-arch.png",
+  "sourceSha256": "6b5debedddd88553c73ff70b752274c035abf246064e1ae59a0b93e2a199baa9",
+  "imageSize": [
+    241,
+    241
+  ],
+  "whitePixelRatio": 0.52146141,
+  "contours": [
+    {
+      "role": "outer",
+      "points": [
+        [
+          0.1125,
+          0.5708333
+        ],
+        [
+          0.1,
+          0.55
+        ],
+        [
+          0.1,
+          0.0
+        ],
+        [
+          0.9,
+          0.0
+        ],
+        [
+          0.9,
+          0.55
+        ],
+        [
+          0.8541667,
+          0.6041667
+        ],
+        [
+          0.7666667,
+          0.6458333
+        ],
+        [
+          0.6708333,
+          0.6708333
+        ],
+        [
+          0.4416667,
+          0.6833333
+        ],
+        [
+          0.3291667,
+          0.6708333
+        ],
+        [
+          0.2333333,
+          0.6458333
+        ],
+        [
+          0.1583333,
+          0.6125
+        ]
+      ]
+    }
+  ],
+  "maskFrameMeters": [
+    6,
+    6
+  ],
+  "openingDimensionsMeters": [
+    4.8,
+    4.1
+  ],
+  "authority": "Raster evidence only. Exact dimensions and geometry remain in openings.json and model.mjs; not an approved Boolean cutter."
+}

@@ -21,8 +21,8 @@
       "name": "Shared kit and technical contracts",
       "deliverables": "Units, pivots, seam profiles, opening standards, glass/material IDs, UV scale, collision, LOD/instancing and loading groups.",
       "exit_evidence": "One floor/wall/opening/rail/path/water-edge example physically fits and survives actual player/camera tests.",
-      "status": "first-circulation-fit-fixture-tested-pending-kit-review",
-      "evidence": "kit-fit/README.md; copied flights, turning landing, real opening, guard collision and browser return test. Other kit contracts and final approvals remain pending."
+      "status": "village-wall-opening-roof-function-fixture-tested-pending-review",
+      "evidence": "village-fit/README.md; geometry-verification.json and browser-verification.json. 3 m wall bays, gable/roof repeats, actual apertures, shared party walls and west-gate interface tested. Final art/Form acceptance unresolved."
     },
     {
       "id": "P3",
@@ -137,6 +137,6 @@
       "exit_evidence": "Each island has a working arrival and return, explorable focal route and bounded content; no flight system is assumed."
     }
   ],
-  "current_next_deliverable": "Define B12 internal arrival lane and prototype its first reusable village/cottage wall, opening and roof hosts using saved references; keep the tested west route clear. Revise remaining regional terrain/crossing conflicts in their production waves.",
+  "current_next_deliverable": "Fit existing B12 door/window/porch/roof-trim references to the tested host sockets; verify roof corners, valleys and mounting faces before decoration or paid/final model work.",
   "local_first_rule": "Resolve world geography at coarse level, but only require sample-local elevations, water, boundaries and access for the first prototype; refine distant-region unknowns in their own wave."
 }

@@ -1,0 +1,26 @@
+{
+  "status": "pass",
+  "checks": [
+    "Canonical layout immutable; B12 west-gate position/datum and 340 × 280 m reservation preserved",
+    "Arrival/court loop, enlarged public entry and 1 m source cottage door all traverse and return with free X/Z swept movement",
+    "Windows/party walls block long sweeps; narrow-door headroom, room ceiling and lane-arch oversize probes reject",
+    "All 49 surrounds meet the declared exterior/arrival wall face; rear fittings and opposed lane arches retain their intended front",
+    "49 opening rays pass the actual extruded wall meshes; 121 independent solid-wall probes hit their substrate",
+    "6 × 3 m roof repeats retain open ends; terminal gables only, 1 mm skin overlap, shared party walls authored once"
+  ],
+  "routes": {
+    "arrival": {
+      "return_distance_m": 188.0468572529134
+    },
+    "publicRoom": {
+      "return_distance_m": 35.07106781186548
+    },
+    "cottageRoom": {
+      "return_distance_m": 35.403124237432856
+    }
+  },
+  "openings": 49,
+  "houses": 8,
+  "roof_repeats": 28,
+  "limits": "Function prototype only; not final art fidelity, formal Boolean/Form approval, paid asset generation or full village navigation"
+}

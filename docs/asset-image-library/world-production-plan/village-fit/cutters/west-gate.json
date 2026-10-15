@@ -1,0 +1,72 @@
+{
+  "schema": "game-room.opening-cutter.v1",
+  "id": "WEST-GATE-door",
+  "kind": "door",
+  "widthMeters": 6.0,
+  "heightMeters": 6.0,
+  "sillMeters": 0.0,
+  "depthMeters": 0.3,
+  "source": "west-gate.png",
+  "sourceSha256": "82260fd313355b11bffc8a556f96dbfec319177468e3e29678c043e708a13d59",
+  "imageSize": [
+    241,
+    241
+  ],
+  "whitePixelRatio": 0.24653501,
+  "contours": [
+    {
+      "role": "outer",
+      "points": [
+        [
+          0.35,
+          0.6
+        ],
+        [
+          0.3041667,
+          0.5583333
+        ],
+        [
+          0.3,
+          0.5416667
+        ],
+        [
+          0.3,
+          0.0
+        ],
+        [
+          0.7,
+          0.0
+        ],
+        [
+          0.6958333,
+          0.5583333
+        ],
+        [
+          0.6625,
+          0.5916667
+        ],
+        [
+          0.625,
+          0.6125
+        ],
+        [
+          0.5375,
+          0.6333333
+        ],
+        [
+          0.4333333,
+          0.6291667
+        ]
+      ]
+    }
+  ],
+  "maskFrameMeters": [
+    6,
+    6
+  ],
+  "openingDimensionsMeters": [
+    2.4,
+    3.8
+  ],
+  "authority": "Raster evidence only. Exact dimensions and geometry remain in openings.json and model.mjs; not an approved Boolean cutter."
+}

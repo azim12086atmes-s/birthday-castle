@@ -1,0 +1,37 @@
+{
+  "schema": "game-room.milestone-reviews.v1",
+  "roomId": "b12-village-fit",
+  "function": {
+    "status": "pending",
+    "approvedBy": "",
+    "approvedAt": "",
+    "evidence": [
+      "geometry-verification.json",
+      "browser-verification.json"
+    ],
+    "strangestElement": "Source doorway is only 1 m wide; retained as a secondary close-fit test.",
+    "notes": "No human gate approval inferred. This deliverable is an engineering Function fixture; final composition, paid generation, export and deployment are outside scope."
+  },
+  "form": {
+    "status": "pending",
+    "approvedBy": "",
+    "approvedAt": "",
+    "evidence": [
+      "geometry-verification.json",
+      "browser-verification.json"
+    ],
+    "strangestElement": "Source doorway is only 1 m wide; retained as a secondary close-fit test.",
+    "notes": "No human gate approval inferred. This deliverable is an engineering Function fixture; final composition, paid generation, export and deployment are outside scope."
+  },
+  "runtime": {
+    "status": "pending",
+    "approvedBy": "",
+    "approvedAt": "",
+    "evidence": [
+      "geometry-verification.json",
+      "browser-verification.json"
+    ],
+    "strangestElement": "Source doorway is only 1 m wide; retained as a secondary close-fit test.",
+    "notes": "No human gate approval inferred. This deliverable is an engineering Function fixture; final composition, paid generation, export and deployment are outside scope."
+  }
+}

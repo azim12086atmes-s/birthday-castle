@@ -1,0 +1,24 @@
+{
+  "schema": "game-room.props.v1",
+  "roomId": "b12-village-fit",
+  "status": "No paid or new artistic assets in this fixture",
+  "creditBudget": {
+    "maximumCredits": 0
+  },
+  "assets": [],
+  "existingReferences": [
+    {
+      "file": "world-location-kits/west-lantern-forest/source/B12-village-original.png",
+      "sha256": "ea08935f7b8c7cd15c3afe8885e26f53a198ed2f03982820d30f0246d4717b9d"
+    },
+    {
+      "file": "world-location-kits/west-lantern-forest/B12-STRUCT-001/B12-STRUCT-001.png",
+      "sha256": "d6aa699675ea064a2c2fff01ecfc0ae313b55dcbba86d3046f3f56647848c574"
+    },
+    {
+      "file": "world-location-kits/west-lantern-forest/B12-DETAIL-001/B12-DETAIL-001.png",
+      "sha256": "daac9938457fba23c21a98af9df7c931e7d1889bce3f84b695da335c53239638"
+    }
+  ],
+  "proceduralHosts": "room-layout.json"
+}

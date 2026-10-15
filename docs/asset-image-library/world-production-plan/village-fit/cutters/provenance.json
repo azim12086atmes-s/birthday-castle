@@ -1,0 +1,6 @@
+{
+  "generator": "build-3d-game-rooms/scripts/trace_opening_mask.py",
+  "script_sha256": "3b6ae690d0497ddf41d4dedc113201a1189c560734c14873b00614c7f88f1677",
+  "masks": 5,
+  "scope": "Function evidence; six-metre frames at 40 px/m, not accepted final cuts"
+}

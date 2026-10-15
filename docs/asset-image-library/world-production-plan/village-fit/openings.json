@@ -1,0 +1,1785 @@
+{
+  "schema": "game-room.opening-schedule.v1",
+  "roomId": "b12-village-fit",
+  "primaryArrival": {
+    "openingId": "WEST-GATE-door",
+    "exception": ""
+  },
+  "openings": [
+    {
+      "kind": "door",
+      "width": 1,
+      "sill": 0,
+      "height": 2.1,
+      "arch_rise": 0.5,
+      "traversable": true,
+      "destination": "H-N-18 ground room",
+      "exception": "Secondary cottage doorway follows the 1 m source; human fit is narrow. Not the primary village arrival.",
+      "id": "H-N-18-ENTRY-door",
+      "wall_id": "H-N-18-ENTRY",
+      "axis": "x",
+      "at": -6,
+      "depth": 0.3,
+      "centre": 19.5,
+      "base": 0,
+      "threshold": 0,
+      "face_sign": 1,
+      "dimensionsMeters": [
+        1,
+        2.1,
+        0.3
+      ],
+      "construction": "Exact parametric wall profile subtraction / extruded hole; not a Blender Boolean Form approval",
+      "maskEvidence": {
+        "file": "masks/source-door.png",
+        "frameMetres": [
+          6,
+          6
+        ],
+        "translationMetres": [
+          19.5,
+          0
+        ],
+        "status": "Raster evidence only; exact geometry is parametric, no final Boolean approval"
+      }
+    },
+    {
+      "kind": "window",
+      "width": 1.2,
+      "sill": 0.8,
+      "height": 1.4,
+      "arch_rise": 0.6,
+      "traversable": false,
+      "destination": "H-N-18 ground room / lane",
+      "id": "H-N-18-WIN-window",
+      "wall_id": "H-N-18-WIN",
+      "axis": "x",
+      "at": -6,
+      "depth": 0.3,
+      "centre": 22.5,
+      "base": 0,
+      "threshold": 0,
+      "face_sign": 1,
+      "dimensionsMeters": [
+        1.2,
+        1.4,
+        0.3
+      ],
+      "construction": "Exact parametric wall profile subtraction / extruded hole; not a Blender Boolean Form approval",
+      "maskEvidence": {
+        "file": "masks/window-bay.png",
+        "frameMetres": [
+          6,
+          6
+        ],
+        "translationMetres": [
+          22.5,
+          0
+        ],
+        "status": "Raster evidence only; exact geometry is parametric, no final Boolean approval"
+      }
+    },
+    {
+      "kind": "window",
+      "centre": 21,
+      "width": 1.2,
+      "sill": 3.4,
+      "height": 1.4,
+      "arch_rise": 0.6,
+      "traversable": false,
+      "destination": "H-N-18 non-playable upper shell / lane",
+      "id": "H-N-18-UPPER-GABLE-window",
+      "wall_id": "H-N-18-UPPER-GABLE",
+      "axis": "x",
+      "at": -6,
+      "depth": 0.3,
+      "base": 2.6,
+      "threshold": 0,
+      "face_sign": 1,
+      "dimensionsMeters": [
+        1.2,
+        1.4,
+        0.3
+      ],
+      "construction": "Exact parametric wall profile subtraction / extruded hole; not a Blender Boolean Form approval",
+      "maskEvidence": {
+        "file": "masks/window-bay.png",
+        "frameMetres": [
+          6,
+          6
+        ],
+        "translationMetres": [
+          21,
+          2.5999999999999996
+        ],
+        "status": "Raster evidence only; exact geometry is parametric, no final Boolean approval"
+      }
+    },
+    {
+      "kind": "window",
+      "width": 1.2,
+      "sill": 0.8,
+      "height": 1.4,
+      "arch_rise": 0.6,
+      "traversable": false,
+      "destination": "H-N-18 room / exterior",
+      "id": "H-N-18-BACK-0-0-window",
+      "wall_id": "H-N-18-BACK-0-0",
+      "axis": "x",
+      "at": -15,
+      "depth": 0.3,
+      "centre": 19.5,
+      "base": 0,
+      "threshold": 0,
+      "face_sign": -1,
+      "dimensionsMeters": [
+        1.2,
+        1.4,
+        0.3
+      ],
+      "construction": "Exact parametric wall profile subtraction / extruded hole; not a Blender Boolean Form approval",
+      "maskEvidence": {
+        "file": "masks/window-bay.png",
+        "frameMetres": [
+          6,
+          6
+        ],
+        "translationMetres": [
+          19.5,
+          0
+        ],
+        "status": "Raster evidence only; exact geometry is parametric, no final Boolean approval"
+      }
+    },
+    {
+      "kind": "window",
+      "width": 1.2,
+      "sill": 0.8,
+      "height": 1.4,
+      "arch_rise": 0.6,
+      "traversable": false,
+      "destination": "H-N-18 room / exterior",
+      "id": "H-N-18-BACK-0-1-window",
+      "wall_id": "H-N-18-BACK-0-1",
+      "axis": "x",
+      "at": -15,
+      "depth": 0.3,
+      "centre": 22.5,
+      "base": 0,
+      "threshold": 0,
+      "face_sign": -1,
+      "dimensionsMeters": [
+        1.2,
+        1.4,
+        0.3
+      ],
+      "construction": "Exact parametric wall profile subtraction / extruded hole; not a Blender Boolean Form approval",
+      "maskEvidence": {
+        "file": "masks/window-bay.png",
+        "frameMetres": [
+          6,
+          6
+        ],
+        "translationMetres": [
+          22.5,
+          0
+        ],
+        "status": "Raster evidence only; exact geometry is parametric, no final Boolean approval"
+      }
+    },
+    {
+      "kind": "window",
+      "centre": 21,
+      "width": 1.2,
+      "sill": 3.4,
+      "height": 1.4,
+      "arch_rise": 0.6,
+      "traversable": false,
+      "destination": "H-N-18 upper shell / exterior",
+      "id": "H-N-18-BACK-UPPER-GABLE-window",
+      "wall_id": "H-N-18-BACK-UPPER-GABLE",
+      "axis": "x",
+      "at": -15,
+      "depth": 0.3,
+      "base": 2.6,
+      "threshold": 0,
+      "face_sign": -1,
+      "dimensionsMeters": [
+        1.2,
+        1.4,
+        0.3
+      ],
+      "construction": "Exact parametric wall profile subtraction / extruded hole; not a Blender Boolean Form approval",
+      "maskEvidence": {
+        "file": "masks/window-bay.png",
+        "frameMetres": [
+          6,
+          6
+        ],
+        "translationMetres": [
+          21,
+          2.5999999999999996
+        ],
+        "status": "Raster evidence only; exact geometry is parametric, no final Boolean approval"
+      }
+    },
+    {
+      "kind": "door",
+      "width": 1,
+      "sill": 0,
+      "height": 2.1,
+      "arch_rise": 0.5,
+      "traversable": true,
+      "destination": "H-N-24 ground room",
+      "exception": "Secondary cottage doorway follows the 1 m source; human fit is narrow. Not the primary village arrival.",
+      "id": "H-N-24-ENTRY-door",
+      "wall_id": "H-N-24-ENTRY",
+      "axis": "x",
+      "at": -6,
+      "depth": 0.3,
+      "centre": 25.5,
+      "base": 0,
+      "threshold": 0,
+      "face_sign": 1,
+      "dimensionsMeters": [
+        1,
+        2.1,
+        0.3
+      ],
+      "construction": "Exact parametric wall profile subtraction / extruded hole; not a Blender Boolean Form approval",
+      "maskEvidence": {
+        "file": "masks/source-door.png",
+        "frameMetres": [
+          6,
+          6
+        ],
+        "translationMetres": [
+          25.5,
+          0
+        ],
+        "status": "Raster evidence only; exact geometry is parametric, no final Boolean approval"
+      }
+    },
+    {
+      "kind": "window",
+      "width": 1.2,
+      "sill": 0.8,
+      "height": 1.4,
+      "arch_rise": 0.6,
+      "traversable": false,
+      "destination": "H-N-24 ground room / lane",
+      "id": "H-N-24-WIN-window",
+      "wall_id": "H-N-24-WIN",
+      "axis": "x",
+      "at": -6,
+      "depth": 0.3,
+      "centre": 28.5,
+      "base": 0,
+      "threshold": 0,
+      "face_sign": 1,
+      "dimensionsMeters": [
+        1.2,
+        1.4,
+        0.3
+      ],
+      "construction": "Exact parametric wall profile subtraction / extruded hole; not a Blender Boolean Form approval",
+      "maskEvidence": {
+        "file": "masks/window-bay.png",
+        "frameMetres": [
+          6,
+          6
+        ],
+        "translationMetres": [
+          28.5,
+          0
+        ],
+        "status": "Raster evidence only; exact geometry is parametric, no final Boolean approval"
+      }
+    },
+    {
+      "kind": "window",
+      "centre": 27,
+      "width": 1.2,
+      "sill": 3.4,
+      "height": 1.4,
+      "arch_rise": 0.6,
+      "traversable": false,
+      "destination": "H-N-24 non-playable upper shell / lane",
+      "id": "H-N-24-UPPER-GABLE-window",
+      "wall_id": "H-N-24-UPPER-GABLE",
+      "axis": "x",
+      "at": -6,
+      "depth": 0.3,
+      "base": 2.6,
+      "threshold": 0,
+      "face_sign": 1,
+      "dimensionsMeters": [
+        1.2,
+        1.4,
+        0.3
+      ],
+      "construction": "Exact parametric wall profile subtraction / extruded hole; not a Blender Boolean Form approval",
+      "maskEvidence": {
+        "file": "masks/window-bay.png",
+        "frameMetres": [
+          6,
+          6
+        ],
+        "translationMetres": [
+          27,
+          2.5999999999999996
+        ],
+        "status": "Raster evidence only; exact geometry is parametric, no final Boolean approval"
+      }
+    },
+    {
+      "kind": "window",
+      "width": 1.2,
+      "sill": 0.8,
+      "height": 1.4,
+      "arch_rise": 0.6,
+      "traversable": false,
+      "destination": "H-N-24 room / exterior",
+      "id": "H-N-24-BACK-0-0-window",
+      "wall_id": "H-N-24-BACK-0-0",
+      "axis": "x",
+      "at": -15,
+      "depth": 0.3,
+      "centre": 25.5,
+      "base": 0,
+      "threshold": 0,
+      "face_sign": -1,
+      "dimensionsMeters": [
+        1.2,
+        1.4,
+        0.3
+      ],
+      "construction": "Exact parametric wall profile subtraction / extruded hole; not a Blender Boolean Form approval",
+      "maskEvidence": {
+        "file": "masks/window-bay.png",
+        "frameMetres": [
+          6,
+          6
+        ],
+        "translationMetres": [
+          25.5,
+          0
+        ],
+        "status": "Raster evidence only; exact geometry is parametric, no final Boolean approval"
+      }
+    },
+    {
+      "kind": "window",
+      "width": 1.2,
+      "sill": 0.8,
+      "height": 1.4,
+      "arch_rise": 0.6,
+      "traversable": false,
+      "destination": "H-N-24 room / exterior",
+      "id": "H-N-24-BACK-0-1-window",
+      "wall_id": "H-N-24-BACK-0-1",
+      "axis": "x",
+      "at": -15,
+      "depth": 0.3,
+      "centre": 28.5,
+      "base": 0,
+      "threshold": 0,
+      "face_sign": -1,
+      "dimensionsMeters": [
+        1.2,
+        1.4,
+        0.3
+      ],
+      "construction": "Exact parametric wall profile subtraction / extruded hole; not a Blender Boolean Form approval",
+      "maskEvidence": {
+        "file": "masks/window-bay.png",
+        "frameMetres": [
+          6,
+          6
+        ],
+        "translationMetres": [
+          28.5,
+          0
+        ],
+        "status": "Raster evidence only; exact geometry is parametric, no final Boolean approval"
+      }
+    },
+    {
+      "kind": "window",
+      "centre": 27,
+      "width": 1.2,
+      "sill": 3.4,
+      "height": 1.4,
+      "arch_rise": 0.6,
+      "traversable": false,
+      "destination": "H-N-24 upper shell / exterior",
+      "id": "H-N-24-BACK-UPPER-GABLE-window",
+      "wall_id": "H-N-24-BACK-UPPER-GABLE",
+      "axis": "x",
+      "at": -15,
+      "depth": 0.3,
+      "base": 2.6,
+      "threshold": 0,
+      "face_sign": -1,
+      "dimensionsMeters": [
+        1.2,
+        1.4,
+        0.3
+      ],
+      "construction": "Exact parametric wall profile subtraction / extruded hole; not a Blender Boolean Form approval",
+      "maskEvidence": {
+        "file": "masks/window-bay.png",
+        "frameMetres": [
+          6,
+          6
+        ],
+        "translationMetres": [
+          27,
+          2.5999999999999996
+        ],
+        "status": "Raster evidence only; exact geometry is parametric, no final Boolean approval"
+      }
+    },
+    {
+      "kind": "door",
+      "width": 1,
+      "sill": 0,
+      "height": 2.1,
+      "arch_rise": 0.5,
+      "traversable": true,
+      "destination": "H-N-30 ground room",
+      "exception": "Secondary cottage doorway follows the 1 m source; human fit is narrow. Not the primary village arrival.",
+      "id": "H-N-30-ENTRY-door",
+      "wall_id": "H-N-30-ENTRY",
+      "axis": "x",
+      "at": -6,
+      "depth": 0.3,
+      "centre": 31.5,
+      "base": 0,
+      "threshold": 0,
+      "face_sign": 1,
+      "dimensionsMeters": [
+        1,
+        2.1,
+        0.3
+      ],
+      "construction": "Exact parametric wall profile subtraction / extruded hole; not a Blender Boolean Form approval",
+      "maskEvidence": {
+        "file": "masks/source-door.png",
+        "frameMetres": [
+          6,
+          6
+        ],
+        "translationMetres": [
+          31.5,
+          0
+        ],
+        "status": "Raster evidence only; exact geometry is parametric, no final Boolean approval"
+      }
+    },
+    {
+      "kind": "window",
+      "width": 1.2,
+      "sill": 0.8,
+      "height": 1.4,
+      "arch_rise": 0.6,
+      "traversable": false,
+      "destination": "H-N-30 ground room / lane",
+      "id": "H-N-30-WIN-window",
+      "wall_id": "H-N-30-WIN",
+      "axis": "x",
+      "at": -6,
+      "depth": 0.3,
+      "centre": 34.5,
+      "base": 0,
+      "threshold": 0,
+      "face_sign": 1,
+      "dimensionsMeters": [
+        1.2,
+        1.4,
+        0.3
+      ],
+      "construction": "Exact parametric wall profile subtraction / extruded hole; not a Blender Boolean Form approval",
+      "maskEvidence": {
+        "file": "masks/window-bay.png",
+        "frameMetres": [
+          6,
+          6
+        ],
+        "translationMetres": [
+          34.5,
+          0
+        ],
+        "status": "Raster evidence only; exact geometry is parametric, no final Boolean approval"
+      }
+    },
+    {
+      "kind": "window",
+      "centre": 33,
+      "width": 1.2,
+      "sill": 3.4,
+      "height": 1.4,
+      "arch_rise": 0.6,
+      "traversable": false,
+      "destination": "H-N-30 non-playable upper shell / lane",
+      "id": "H-N-30-UPPER-GABLE-window",
+      "wall_id": "H-N-30-UPPER-GABLE",
+      "axis": "x",
+      "at": -6,
+      "depth": 0.3,
+      "base": 2.6,
+      "threshold": 0,
+      "face_sign": 1,
+      "dimensionsMeters": [
+        1.2,
+        1.4,
+        0.3
+      ],
+      "construction": "Exact parametric wall profile subtraction / extruded hole; not a Blender Boolean Form approval",
+      "maskEvidence": {
+        "file": "masks/window-bay.png",
+        "frameMetres": [
+          6,
+          6
+        ],
+        "translationMetres": [
+          33,
+          2.5999999999999996
+        ],
+        "status": "Raster evidence only; exact geometry is parametric, no final Boolean approval"
+      }
+    },
+    {
+      "kind": "window",
+      "width": 1.2,
+      "sill": 0.8,
+      "height": 1.4,
+      "arch_rise": 0.6,
+      "traversable": false,
+      "destination": "H-N-30 room / exterior",
+      "id": "H-N-30-BACK-0-0-window",
+      "wall_id": "H-N-30-BACK-0-0",
+      "axis": "x",
+      "at": -15,
+      "depth": 0.3,
+      "centre": 31.5,
+      "base": 0,
+      "threshold": 0,
+      "face_sign": -1,
+      "dimensionsMeters": [
+        1.2,
+        1.4,
+        0.3
+      ],
+      "construction": "Exact parametric wall profile subtraction / extruded hole; not a Blender Boolean Form approval",
+      "maskEvidence": {
+        "file": "masks/window-bay.png",
+        "frameMetres": [
+          6,
+          6
+        ],
+        "translationMetres": [
+          31.5,
+          0
+        ],
+        "status": "Raster evidence only; exact geometry is parametric, no final Boolean approval"
+      }
+    },
+    {
+      "kind": "window",
+      "width": 1.2,
+      "sill": 0.8,
+      "height": 1.4,
+      "arch_rise": 0.6,
+      "traversable": false,
+      "destination": "H-N-30 room / exterior",
+      "id": "H-N-30-BACK-0-1-window",
+      "wall_id": "H-N-30-BACK-0-1",
+      "axis": "x",
+      "at": -15,
+      "depth": 0.3,
+      "centre": 34.5,
+      "base": 0,
+      "threshold": 0,
+      "face_sign": -1,
+      "dimensionsMeters": [
+        1.2,
+        1.4,
+        0.3
+      ],
+      "construction": "Exact parametric wall profile subtraction / extruded hole; not a Blender Boolean Form approval",
+      "maskEvidence": {
+        "file": "masks/window-bay.png",
+        "frameMetres": [
+          6,
+          6
+        ],
+        "translationMetres": [
+          34.5,
+          0
+        ],
+        "status": "Raster evidence only; exact geometry is parametric, no final Boolean approval"
+      }
+    },
+    {
+      "kind": "window",
+      "centre": 33,
+      "width": 1.2,
+      "sill": 3.4,
+      "height": 1.4,
+      "arch_rise": 0.6,
+      "traversable": false,
+      "destination": "H-N-30 upper shell / exterior",
+      "id": "H-N-30-BACK-UPPER-GABLE-window",
+      "wall_id": "H-N-30-BACK-UPPER-GABLE",
+      "axis": "x",
+      "at": -15,
+      "depth": 0.3,
+      "base": 2.6,
+      "threshold": 0,
+      "face_sign": -1,
+      "dimensionsMeters": [
+        1.2,
+        1.4,
+        0.3
+      ],
+      "construction": "Exact parametric wall profile subtraction / extruded hole; not a Blender Boolean Form approval",
+      "maskEvidence": {
+        "file": "masks/window-bay.png",
+        "frameMetres": [
+          6,
+          6
+        ],
+        "translationMetres": [
+          33,
+          2.5999999999999996
+        ],
+        "status": "Raster evidence only; exact geometry is parametric, no final Boolean approval"
+      }
+    },
+    {
+      "kind": "door",
+      "width": 1,
+      "sill": 0,
+      "height": 2.1,
+      "arch_rise": 0.5,
+      "traversable": true,
+      "destination": "H-N-42 ground room",
+      "exception": "Secondary cottage doorway follows the 1 m source; human fit is narrow. Not the primary village arrival.",
+      "id": "H-N-42-ENTRY-door",
+      "wall_id": "H-N-42-ENTRY",
+      "axis": "x",
+      "at": -6,
+      "depth": 0.3,
+      "centre": 43.5,
+      "base": 0,
+      "threshold": 0,
+      "face_sign": 1,
+      "dimensionsMeters": [
+        1,
+        2.1,
+        0.3
+      ],
+      "construction": "Exact parametric wall profile subtraction / extruded hole; not a Blender Boolean Form approval",
+      "maskEvidence": {
+        "file": "masks/source-door.png",
+        "frameMetres": [
+          6,
+          6
+        ],
+        "translationMetres": [
+          43.5,
+          0
+        ],
+        "status": "Raster evidence only; exact geometry is parametric, no final Boolean approval"
+      }
+    },
+    {
+      "kind": "window",
+      "width": 1.2,
+      "sill": 0.8,
+      "height": 1.4,
+      "arch_rise": 0.6,
+      "traversable": false,
+      "destination": "H-N-42 ground room / lane",
+      "id": "H-N-42-WIN-window",
+      "wall_id": "H-N-42-WIN",
+      "axis": "x",
+      "at": -6,
+      "depth": 0.3,
+      "centre": 46.5,
+      "base": 0,
+      "threshold": 0,
+      "face_sign": 1,
+      "dimensionsMeters": [
+        1.2,
+        1.4,
+        0.3
+      ],
+      "construction": "Exact parametric wall profile subtraction / extruded hole; not a Blender Boolean Form approval",
+      "maskEvidence": {
+        "file": "masks/window-bay.png",
+        "frameMetres": [
+          6,
+          6
+        ],
+        "translationMetres": [
+          46.5,
+          0
+        ],
+        "status": "Raster evidence only; exact geometry is parametric, no final Boolean approval"
+      }
+    },
+    {
+      "kind": "window",
+      "width": 1.2,
+      "sill": 0.8,
+      "height": 1.4,
+      "arch_rise": 0.6,
+      "traversable": false,
+      "destination": "H-N-42 room / exterior",
+      "id": "H-N-42-BACK-0-0-window",
+      "wall_id": "H-N-42-BACK-0-0",
+      "axis": "x",
+      "at": -15,
+      "depth": 0.3,
+      "centre": 43.5,
+      "base": 0,
+      "threshold": 0,
+      "face_sign": -1,
+      "dimensionsMeters": [
+        1.2,
+        1.4,
+        0.3
+      ],
+      "construction": "Exact parametric wall profile subtraction / extruded hole; not a Blender Boolean Form approval",
+      "maskEvidence": {
+        "file": "masks/window-bay.png",
+        "frameMetres": [
+          6,
+          6
+        ],
+        "translationMetres": [
+          43.5,
+          0
+        ],
+        "status": "Raster evidence only; exact geometry is parametric, no final Boolean approval"
+      }
+    },
+    {
+      "kind": "window",
+      "width": 1.2,
+      "sill": 0.8,
+      "height": 1.4,
+      "arch_rise": 0.6,
+      "traversable": false,
+      "destination": "H-N-42 room / exterior",
+      "id": "H-N-42-BACK-0-1-window",
+      "wall_id": "H-N-42-BACK-0-1",
+      "axis": "x",
+      "at": -15,
+      "depth": 0.3,
+      "centre": 46.5,
+      "base": 0,
+      "threshold": 0,
+      "face_sign": -1,
+      "dimensionsMeters": [
+        1.2,
+        1.4,
+        0.3
+      ],
+      "construction": "Exact parametric wall profile subtraction / extruded hole; not a Blender Boolean Form approval",
+      "maskEvidence": {
+        "file": "masks/window-bay.png",
+        "frameMetres": [
+          6,
+          6
+        ],
+        "translationMetres": [
+          46.5,
+          0
+        ],
+        "status": "Raster evidence only; exact geometry is parametric, no final Boolean approval"
+      }
+    },
+    {
+      "kind": "window",
+      "centre": 45,
+      "width": 1.2,
+      "sill": 3.4,
+      "height": 1.4,
+      "arch_rise": 0.6,
+      "traversable": false,
+      "destination": "H-N-42 upper shell / exterior",
+      "id": "H-N-42-BACK-UPPER-GABLE-window",
+      "wall_id": "H-N-42-BACK-UPPER-GABLE",
+      "axis": "x",
+      "at": -15,
+      "depth": 0.3,
+      "base": 2.6,
+      "threshold": 0,
+      "face_sign": -1,
+      "dimensionsMeters": [
+        1.2,
+        1.4,
+        0.3
+      ],
+      "construction": "Exact parametric wall profile subtraction / extruded hole; not a Blender Boolean Form approval",
+      "maskEvidence": {
+        "file": "masks/window-bay.png",
+        "frameMetres": [
+          6,
+          6
+        ],
+        "translationMetres": [
+          45,
+          2.5999999999999996
+        ],
+        "status": "Raster evidence only; exact geometry is parametric, no final Boolean approval"
+      }
+    },
+    {
+      "kind": "door",
+      "width": 2.4,
+      "sill": 0,
+      "height": 2.25,
+      "arch_rise": 0.15,
+      "traversable": true,
+      "destination": "H-S-18 ground room",
+      "exception": "Proposed public entry adaptation; 3 m wall bay and 2.6 m storey unchanged.",
+      "id": "H-S-18-ENTRY-door",
+      "wall_id": "H-S-18-ENTRY",
+      "axis": "x",
+      "at": 6,
+      "depth": 0.3,
+      "centre": 19.5,
+      "base": 0,
+      "threshold": 0,
+      "face_sign": -1,
+      "dimensionsMeters": [
+        2.4,
+        2.25,
+        0.3
+      ],
+      "construction": "Exact parametric wall profile subtraction / extruded hole; not a Blender Boolean Form approval",
+      "maskEvidence": {
+        "file": "masks/wide-entry.png",
+        "frameMetres": [
+          6,
+          6
+        ],
+        "translationMetres": [
+          19.5,
+          0
+        ],
+        "status": "Raster evidence only; exact geometry is parametric, no final Boolean approval"
+      }
+    },
+    {
+      "kind": "window",
+      "width": 1.2,
+      "sill": 0.8,
+      "height": 1.4,
+      "arch_rise": 0.6,
+      "traversable": false,
+      "destination": "H-S-18 ground room / lane",
+      "id": "H-S-18-WIN-window",
+      "wall_id": "H-S-18-WIN",
+      "axis": "x",
+      "at": 6,
+      "depth": 0.3,
+      "centre": 22.5,
+      "base": 0,
+      "threshold": 0,
+      "face_sign": -1,
+      "dimensionsMeters": [
+        1.2,
+        1.4,
+        0.3
+      ],
+      "construction": "Exact parametric wall profile subtraction / extruded hole; not a Blender Boolean Form approval",
+      "maskEvidence": {
+        "file": "masks/window-bay.png",
+        "frameMetres": [
+          6,
+          6
+        ],
+        "translationMetres": [
+          22.5,
+          0
+        ],
+        "status": "Raster evidence only; exact geometry is parametric, no final Boolean approval"
+      }
+    },
+    {
+      "kind": "window",
+      "centre": 21,
+      "width": 1.2,
+      "sill": 3.4,
+      "height": 1.4,
+      "arch_rise": 0.6,
+      "traversable": false,
+      "destination": "H-S-18 non-playable upper shell / lane",
+      "id": "H-S-18-UPPER-GABLE-window",
+      "wall_id": "H-S-18-UPPER-GABLE",
+      "axis": "x",
+      "at": 6,
+      "depth": 0.3,
+      "base": 2.6,
+      "threshold": 0,
+      "face_sign": -1,
+      "dimensionsMeters": [
+        1.2,
+        1.4,
+        0.3
+      ],
+      "construction": "Exact parametric wall profile subtraction / extruded hole; not a Blender Boolean Form approval",
+      "maskEvidence": {
+        "file": "masks/window-bay.png",
+        "frameMetres": [
+          6,
+          6
+        ],
+        "translationMetres": [
+          21,
+          2.5999999999999996
+        ],
+        "status": "Raster evidence only; exact geometry is parametric, no final Boolean approval"
+      }
+    },
+    {
+      "kind": "window",
+      "width": 1.2,
+      "sill": 0.8,
+      "height": 1.4,
+      "arch_rise": 0.6,
+      "traversable": false,
+      "destination": "H-S-18 room / exterior",
+      "id": "H-S-18-BACK-0-0-window",
+      "wall_id": "H-S-18-BACK-0-0",
+      "axis": "x",
+      "at": 15,
+      "depth": 0.3,
+      "centre": 19.5,
+      "base": 0,
+      "threshold": 0,
+      "face_sign": 1,
+      "dimensionsMeters": [
+        1.2,
+        1.4,
+        0.3
+      ],
+      "construction": "Exact parametric wall profile subtraction / extruded hole; not a Blender Boolean Form approval",
+      "maskEvidence": {
+        "file": "masks/window-bay.png",
+        "frameMetres": [
+          6,
+          6
+        ],
+        "translationMetres": [
+          19.5,
+          0
+        ],
+        "status": "Raster evidence only; exact geometry is parametric, no final Boolean approval"
+      }
+    },
+    {
+      "kind": "window",
+      "width": 1.2,
+      "sill": 0.8,
+      "height": 1.4,
+      "arch_rise": 0.6,
+      "traversable": false,
+      "destination": "H-S-18 room / exterior",
+      "id": "H-S-18-BACK-0-1-window",
+      "wall_id": "H-S-18-BACK-0-1",
+      "axis": "x",
+      "at": 15,
+      "depth": 0.3,
+      "centre": 22.5,
+      "base": 0,
+      "threshold": 0,
+      "face_sign": 1,
+      "dimensionsMeters": [
+        1.2,
+        1.4,
+        0.3
+      ],
+      "construction": "Exact parametric wall profile subtraction / extruded hole; not a Blender Boolean Form approval",
+      "maskEvidence": {
+        "file": "masks/window-bay.png",
+        "frameMetres": [
+          6,
+          6
+        ],
+        "translationMetres": [
+          22.5,
+          0
+        ],
+        "status": "Raster evidence only; exact geometry is parametric, no final Boolean approval"
+      }
+    },
+    {
+      "kind": "window",
+      "centre": 21,
+      "width": 1.2,
+      "sill": 3.4,
+      "height": 1.4,
+      "arch_rise": 0.6,
+      "traversable": false,
+      "destination": "H-S-18 upper shell / exterior",
+      "id": "H-S-18-BACK-UPPER-GABLE-window",
+      "wall_id": "H-S-18-BACK-UPPER-GABLE",
+      "axis": "x",
+      "at": 15,
+      "depth": 0.3,
+      "base": 2.6,
+      "threshold": 0,
+      "face_sign": 1,
+      "dimensionsMeters": [
+        1.2,
+        1.4,
+        0.3
+      ],
+      "construction": "Exact parametric wall profile subtraction / extruded hole; not a Blender Boolean Form approval",
+      "maskEvidence": {
+        "file": "masks/window-bay.png",
+        "frameMetres": [
+          6,
+          6
+        ],
+        "translationMetres": [
+          21,
+          2.5999999999999996
+        ],
+        "status": "Raster evidence only; exact geometry is parametric, no final Boolean approval"
+      }
+    },
+    {
+      "kind": "door",
+      "width": 1,
+      "sill": 0,
+      "height": 2.1,
+      "arch_rise": 0.5,
+      "traversable": true,
+      "destination": "H-S-24 ground room",
+      "exception": "Secondary cottage doorway follows the 1 m source; human fit is narrow. Not the primary village arrival.",
+      "id": "H-S-24-ENTRY-door",
+      "wall_id": "H-S-24-ENTRY",
+      "axis": "x",
+      "at": 6,
+      "depth": 0.3,
+      "centre": 25.5,
+      "base": 0,
+      "threshold": 0,
+      "face_sign": -1,
+      "dimensionsMeters": [
+        1,
+        2.1,
+        0.3
+      ],
+      "construction": "Exact parametric wall profile subtraction / extruded hole; not a Blender Boolean Form approval",
+      "maskEvidence": {
+        "file": "masks/source-door.png",
+        "frameMetres": [
+          6,
+          6
+        ],
+        "translationMetres": [
+          25.5,
+          0
+        ],
+        "status": "Raster evidence only; exact geometry is parametric, no final Boolean approval"
+      }
+    },
+    {
+      "kind": "window",
+      "width": 1.2,
+      "sill": 0.8,
+      "height": 1.4,
+      "arch_rise": 0.6,
+      "traversable": false,
+      "destination": "H-S-24 ground room / lane",
+      "id": "H-S-24-WIN-window",
+      "wall_id": "H-S-24-WIN",
+      "axis": "x",
+      "at": 6,
+      "depth": 0.3,
+      "centre": 28.5,
+      "base": 0,
+      "threshold": 0,
+      "face_sign": -1,
+      "dimensionsMeters": [
+        1.2,
+        1.4,
+        0.3
+      ],
+      "construction": "Exact parametric wall profile subtraction / extruded hole; not a Blender Boolean Form approval",
+      "maskEvidence": {
+        "file": "masks/window-bay.png",
+        "frameMetres": [
+          6,
+          6
+        ],
+        "translationMetres": [
+          28.5,
+          0
+        ],
+        "status": "Raster evidence only; exact geometry is parametric, no final Boolean approval"
+      }
+    },
+    {
+      "kind": "window",
+      "centre": 27,
+      "width": 1.2,
+      "sill": 3.4,
+      "height": 1.4,
+      "arch_rise": 0.6,
+      "traversable": false,
+      "destination": "H-S-24 non-playable upper shell / lane",
+      "id": "H-S-24-UPPER-GABLE-window",
+      "wall_id": "H-S-24-UPPER-GABLE",
+      "axis": "x",
+      "at": 6,
+      "depth": 0.3,
+      "base": 2.6,
+      "threshold": 0,
+      "face_sign": -1,
+      "dimensionsMeters": [
+        1.2,
+        1.4,
+        0.3
+      ],
+      "construction": "Exact parametric wall profile subtraction / extruded hole; not a Blender Boolean Form approval",
+      "maskEvidence": {
+        "file": "masks/window-bay.png",
+        "frameMetres": [
+          6,
+          6
+        ],
+        "translationMetres": [
+          27,
+          2.5999999999999996
+        ],
+        "status": "Raster evidence only; exact geometry is parametric, no final Boolean approval"
+      }
+    },
+    {
+      "kind": "window",
+      "width": 1.2,
+      "sill": 0.8,
+      "height": 1.4,
+      "arch_rise": 0.6,
+      "traversable": false,
+      "destination": "H-S-24 room / exterior",
+      "id": "H-S-24-BACK-0-0-window",
+      "wall_id": "H-S-24-BACK-0-0",
+      "axis": "x",
+      "at": 15,
+      "depth": 0.3,
+      "centre": 25.5,
+      "base": 0,
+      "threshold": 0,
+      "face_sign": 1,
+      "dimensionsMeters": [
+        1.2,
+        1.4,
+        0.3
+      ],
+      "construction": "Exact parametric wall profile subtraction / extruded hole; not a Blender Boolean Form approval",
+      "maskEvidence": {
+        "file": "masks/window-bay.png",
+        "frameMetres": [
+          6,
+          6
+        ],
+        "translationMetres": [
+          25.5,
+          0
+        ],
+        "status": "Raster evidence only; exact geometry is parametric, no final Boolean approval"
+      }
+    },
+    {
+      "kind": "window",
+      "width": 1.2,
+      "sill": 0.8,
+      "height": 1.4,
+      "arch_rise": 0.6,
+      "traversable": false,
+      "destination": "H-S-24 room / exterior",
+      "id": "H-S-24-BACK-0-1-window",
+      "wall_id": "H-S-24-BACK-0-1",
+      "axis": "x",
+      "at": 15,
+      "depth": 0.3,
+      "centre": 28.5,
+      "base": 0,
+      "threshold": 0,
+      "face_sign": 1,
+      "dimensionsMeters": [
+        1.2,
+        1.4,
+        0.3
+      ],
+      "construction": "Exact parametric wall profile subtraction / extruded hole; not a Blender Boolean Form approval",
+      "maskEvidence": {
+        "file": "masks/window-bay.png",
+        "frameMetres": [
+          6,
+          6
+        ],
+        "translationMetres": [
+          28.5,
+          0
+        ],
+        "status": "Raster evidence only; exact geometry is parametric, no final Boolean approval"
+      }
+    },
+    {
+      "kind": "window",
+      "centre": 27,
+      "width": 1.2,
+      "sill": 3.4,
+      "height": 1.4,
+      "arch_rise": 0.6,
+      "traversable": false,
+      "destination": "H-S-24 upper shell / exterior",
+      "id": "H-S-24-BACK-UPPER-GABLE-window",
+      "wall_id": "H-S-24-BACK-UPPER-GABLE",
+      "axis": "x",
+      "at": 15,
+      "depth": 0.3,
+      "base": 2.6,
+      "threshold": 0,
+      "face_sign": 1,
+      "dimensionsMeters": [
+        1.2,
+        1.4,
+        0.3
+      ],
+      "construction": "Exact parametric wall profile subtraction / extruded hole; not a Blender Boolean Form approval",
+      "maskEvidence": {
+        "file": "masks/window-bay.png",
+        "frameMetres": [
+          6,
+          6
+        ],
+        "translationMetres": [
+          27,
+          2.5999999999999996
+        ],
+        "status": "Raster evidence only; exact geometry is parametric, no final Boolean approval"
+      }
+    },
+    {
+      "kind": "door",
+      "width": 1,
+      "sill": 0,
+      "height": 2.1,
+      "arch_rise": 0.5,
+      "traversable": true,
+      "destination": "H-S-30 ground room",
+      "exception": "Secondary cottage doorway follows the 1 m source; human fit is narrow. Not the primary village arrival.",
+      "id": "H-S-30-ENTRY-door",
+      "wall_id": "H-S-30-ENTRY",
+      "axis": "x",
+      "at": 6,
+      "depth": 0.3,
+      "centre": 31.5,
+      "base": 0,
+      "threshold": 0,
+      "face_sign": -1,
+      "dimensionsMeters": [
+        1,
+        2.1,
+        0.3
+      ],
+      "construction": "Exact parametric wall profile subtraction / extruded hole; not a Blender Boolean Form approval",
+      "maskEvidence": {
+        "file": "masks/source-door.png",
+        "frameMetres": [
+          6,
+          6
+        ],
+        "translationMetres": [
+          31.5,
+          0
+        ],
+        "status": "Raster evidence only; exact geometry is parametric, no final Boolean approval"
+      }
+    },
+    {
+      "kind": "window",
+      "width": 1.2,
+      "sill": 0.8,
+      "height": 1.4,
+      "arch_rise": 0.6,
+      "traversable": false,
+      "destination": "H-S-30 ground room / lane",
+      "id": "H-S-30-WIN-window",
+      "wall_id": "H-S-30-WIN",
+      "axis": "x",
+      "at": 6,
+      "depth": 0.3,
+      "centre": 34.5,
+      "base": 0,
+      "threshold": 0,
+      "face_sign": -1,
+      "dimensionsMeters": [
+        1.2,
+        1.4,
+        0.3
+      ],
+      "construction": "Exact parametric wall profile subtraction / extruded hole; not a Blender Boolean Form approval",
+      "maskEvidence": {
+        "file": "masks/window-bay.png",
+        "frameMetres": [
+          6,
+          6
+        ],
+        "translationMetres": [
+          34.5,
+          0
+        ],
+        "status": "Raster evidence only; exact geometry is parametric, no final Boolean approval"
+      }
+    },
+    {
+      "kind": "window",
+      "centre": 33,
+      "width": 1.2,
+      "sill": 3.4,
+      "height": 1.4,
+      "arch_rise": 0.6,
+      "traversable": false,
+      "destination": "H-S-30 non-playable upper shell / lane",
+      "id": "H-S-30-UPPER-GABLE-window",
+      "wall_id": "H-S-30-UPPER-GABLE",
+      "axis": "x",
+      "at": 6,
+      "depth": 0.3,
+      "base": 2.6,
+      "threshold": 0,
+      "face_sign": -1,
+      "dimensionsMeters": [
+        1.2,
+        1.4,
+        0.3
+      ],
+      "construction": "Exact parametric wall profile subtraction / extruded hole; not a Blender Boolean Form approval",
+      "maskEvidence": {
+        "file": "masks/window-bay.png",
+        "frameMetres": [
+          6,
+          6
+        ],
+        "translationMetres": [
+          33,
+          2.5999999999999996
+        ],
+        "status": "Raster evidence only; exact geometry is parametric, no final Boolean approval"
+      }
+    },
+    {
+      "kind": "window",
+      "width": 1.2,
+      "sill": 0.8,
+      "height": 1.4,
+      "arch_rise": 0.6,
+      "traversable": false,
+      "destination": "H-S-30 room / exterior",
+      "id": "H-S-30-BACK-0-0-window",
+      "wall_id": "H-S-30-BACK-0-0",
+      "axis": "x",
+      "at": 15,
+      "depth": 0.3,
+      "centre": 31.5,
+      "base": 0,
+      "threshold": 0,
+      "face_sign": 1,
+      "dimensionsMeters": [
+        1.2,
+        1.4,
+        0.3
+      ],
+      "construction": "Exact parametric wall profile subtraction / extruded hole; not a Blender Boolean Form approval",
+      "maskEvidence": {
+        "file": "masks/window-bay.png",
+        "frameMetres": [
+          6,
+          6
+        ],
+        "translationMetres": [
+          31.5,
+          0
+        ],
+        "status": "Raster evidence only; exact geometry is parametric, no final Boolean approval"
+      }
+    },
+    {
+      "kind": "window",
+      "width": 1.2,
+      "sill": 0.8,
+      "height": 1.4,
+      "arch_rise": 0.6,
+      "traversable": false,
+      "destination": "H-S-30 room / exterior",
+      "id": "H-S-30-BACK-0-1-window",
+      "wall_id": "H-S-30-BACK-0-1",
+      "axis": "x",
+      "at": 15,
+      "depth": 0.3,
+      "centre": 34.5,
+      "base": 0,
+      "threshold": 0,
+      "face_sign": 1,
+      "dimensionsMeters": [
+        1.2,
+        1.4,
+        0.3
+      ],
+      "construction": "Exact parametric wall profile subtraction / extruded hole; not a Blender Boolean Form approval",
+      "maskEvidence": {
+        "file": "masks/window-bay.png",
+        "frameMetres": [
+          6,
+          6
+        ],
+        "translationMetres": [
+          34.5,
+          0
+        ],
+        "status": "Raster evidence only; exact geometry is parametric, no final Boolean approval"
+      }
+    },
+    {
+      "kind": "window",
+      "centre": 33,
+      "width": 1.2,
+      "sill": 3.4,
+      "height": 1.4,
+      "arch_rise": 0.6,
+      "traversable": false,
+      "destination": "H-S-30 upper shell / exterior",
+      "id": "H-S-30-BACK-UPPER-GABLE-window",
+      "wall_id": "H-S-30-BACK-UPPER-GABLE",
+      "axis": "x",
+      "at": 15,
+      "depth": 0.3,
+      "base": 2.6,
+      "threshold": 0,
+      "face_sign": 1,
+      "dimensionsMeters": [
+        1.2,
+        1.4,
+        0.3
+      ],
+      "construction": "Exact parametric wall profile subtraction / extruded hole; not a Blender Boolean Form approval",
+      "maskEvidence": {
+        "file": "masks/window-bay.png",
+        "frameMetres": [
+          6,
+          6
+        ],
+        "translationMetres": [
+          33,
+          2.5999999999999996
+        ],
+        "status": "Raster evidence only; exact geometry is parametric, no final Boolean approval"
+      }
+    },
+    {
+      "kind": "door",
+      "width": 1,
+      "sill": 0,
+      "height": 2.1,
+      "arch_rise": 0.5,
+      "traversable": true,
+      "destination": "H-S-42 ground room",
+      "exception": "Secondary cottage doorway follows the 1 m source; human fit is narrow. Not the primary village arrival.",
+      "id": "H-S-42-ENTRY-door",
+      "wall_id": "H-S-42-ENTRY",
+      "axis": "x",
+      "at": 6,
+      "depth": 0.3,
+      "centre": 43.5,
+      "base": 0,
+      "threshold": 0,
+      "face_sign": -1,
+      "dimensionsMeters": [
+        1,
+        2.1,
+        0.3
+      ],
+      "construction": "Exact parametric wall profile subtraction / extruded hole; not a Blender Boolean Form approval",
+      "maskEvidence": {
+        "file": "masks/source-door.png",
+        "frameMetres": [
+          6,
+          6
+        ],
+        "translationMetres": [
+          43.5,
+          0
+        ],
+        "status": "Raster evidence only; exact geometry is parametric, no final Boolean approval"
+      }
+    },
+    {
+      "kind": "window",
+      "width": 1.2,
+      "sill": 0.8,
+      "height": 1.4,
+      "arch_rise": 0.6,
+      "traversable": false,
+      "destination": "H-S-42 ground room / lane",
+      "id": "H-S-42-WIN-window",
+      "wall_id": "H-S-42-WIN",
+      "axis": "x",
+      "at": 6,
+      "depth": 0.3,
+      "centre": 46.5,
+      "base": 0,
+      "threshold": 0,
+      "face_sign": -1,
+      "dimensionsMeters": [
+        1.2,
+        1.4,
+        0.3
+      ],
+      "construction": "Exact parametric wall profile subtraction / extruded hole; not a Blender Boolean Form approval",
+      "maskEvidence": {
+        "file": "masks/window-bay.png",
+        "frameMetres": [
+          6,
+          6
+        ],
+        "translationMetres": [
+          46.5,
+          0
+        ],
+        "status": "Raster evidence only; exact geometry is parametric, no final Boolean approval"
+      }
+    },
+    {
+      "kind": "window",
+      "width": 1.2,
+      "sill": 0.8,
+      "height": 1.4,
+      "arch_rise": 0.6,
+      "traversable": false,
+      "destination": "H-S-42 room / exterior",
+      "id": "H-S-42-BACK-0-0-window",
+      "wall_id": "H-S-42-BACK-0-0",
+      "axis": "x",
+      "at": 15,
+      "depth": 0.3,
+      "centre": 43.5,
+      "base": 0,
+      "threshold": 0,
+      "face_sign": 1,
+      "dimensionsMeters": [
+        1.2,
+        1.4,
+        0.3
+      ],
+      "construction": "Exact parametric wall profile subtraction / extruded hole; not a Blender Boolean Form approval",
+      "maskEvidence": {
+        "file": "masks/window-bay.png",
+        "frameMetres": [
+          6,
+          6
+        ],
+        "translationMetres": [
+          43.5,
+          0
+        ],
+        "status": "Raster evidence only; exact geometry is parametric, no final Boolean approval"
+      }
+    },
+    {
+      "kind": "window",
+      "width": 1.2,
+      "sill": 0.8,
+      "height": 1.4,
+      "arch_rise": 0.6,
+      "traversable": false,
+      "destination": "H-S-42 room / exterior",
+      "id": "H-S-42-BACK-0-1-window",
+      "wall_id": "H-S-42-BACK-0-1",
+      "axis": "x",
+      "at": 15,
+      "depth": 0.3,
+      "centre": 46.5,
+      "base": 0,
+      "threshold": 0,
+      "face_sign": 1,
+      "dimensionsMeters": [
+        1.2,
+        1.4,
+        0.3
+      ],
+      "construction": "Exact parametric wall profile subtraction / extruded hole; not a Blender Boolean Form approval",
+      "maskEvidence": {
+        "file": "masks/window-bay.png",
+        "frameMetres": [
+          6,
+          6
+        ],
+        "translationMetres": [
+          46.5,
+          0
+        ],
+        "status": "Raster evidence only; exact geometry is parametric, no final Boolean approval"
+      }
+    },
+    {
+      "kind": "window",
+      "centre": 45,
+      "width": 1.2,
+      "sill": 3.4,
+      "height": 1.4,
+      "arch_rise": 0.6,
+      "traversable": false,
+      "destination": "H-S-42 upper shell / exterior",
+      "id": "H-S-42-BACK-UPPER-GABLE-window",
+      "wall_id": "H-S-42-BACK-UPPER-GABLE",
+      "axis": "x",
+      "at": 15,
+      "depth": 0.3,
+      "base": 2.6,
+      "threshold": 0,
+      "face_sign": 1,
+      "dimensionsMeters": [
+        1.2,
+        1.4,
+        0.3
+      ],
+      "construction": "Exact parametric wall profile subtraction / extruded hole; not a Blender Boolean Form approval",
+      "maskEvidence": {
+        "file": "masks/window-bay.png",
+        "frameMetres": [
+          6,
+          6
+        ],
+        "translationMetres": [
+          45,
+          2.5999999999999996
+        ],
+        "status": "Raster evidence only; exact geometry is parametric, no final Boolean approval"
+      }
+    },
+    {
+      "kind": "door",
+      "centre": 0,
+      "width": 4.8,
+      "sill": 0,
+      "height": 4.1,
+      "arch_rise": 0.9,
+      "traversable": true,
+      "destination": "Covered lane to arrival court",
+      "exception": "Proposed village connector geometry; 4.8 m lane aperture.",
+      "id": "LANE-ARCH-42-door",
+      "wall_id": "LANE-ARCH-42",
+      "axis": "z",
+      "at": 42,
+      "depth": 0.3,
+      "base": 0,
+      "threshold": 0,
+      "face_sign": -1,
+      "dimensionsMeters": [
+        4.8,
+        4.1,
+        0.3
+      ],
+      "construction": "Exact parametric wall profile subtraction / extruded hole; not a Blender Boolean Form approval",
+      "maskEvidence": {
+        "file": "masks/lane-arch.png",
+        "frameMetres": [
+          6,
+          6
+        ],
+        "translationMetres": [
+          0,
+          0
+        ],
+        "status": "Raster evidence only; exact geometry is parametric, no final Boolean approval"
+      }
+    },
+    {
+      "kind": "door",
+      "centre": 0,
+      "width": 4.8,
+      "sill": 0,
+      "height": 4.1,
+      "arch_rise": 0.9,
+      "traversable": true,
+      "destination": "Arrival court and return lane",
+      "exception": "Proposed village connector geometry; 4.8 m lane aperture.",
+      "id": "LANE-ARCH-48-door",
+      "wall_id": "LANE-ARCH-48",
+      "axis": "z",
+      "at": 48,
+      "depth": 0.3,
+      "base": 0,
+      "threshold": 0,
+      "face_sign": 1,
+      "dimensionsMeters": [
+        4.8,
+        4.1,
+        0.3
+      ],
+      "construction": "Exact parametric wall profile subtraction / extruded hole; not a Blender Boolean Form approval",
+      "maskEvidence": {
+        "file": "masks/lane-arch.png",
+        "frameMetres": [
+          6,
+          6
+        ],
+        "translationMetres": [
+          0,
+          0
+        ],
+        "status": "Raster evidence only; exact geometry is parametric, no final Boolean approval"
+      }
+    },
+    {
+      "kind": "door",
+      "centre": 0,
+      "width": 2.4,
+      "sill": 0,
+      "height": 3.8,
+      "arch_rise": 0.6,
+      "traversable": true,
+      "destination": "Village arrival lane",
+      "exception": "Primary arrival inherited from the west route; 2.4 m full width, spring 3.2 m.",
+      "id": "WEST-GATE-door",
+      "wall_id": "WEST-GATE",
+      "axis": "z",
+      "at": 0,
+      "depth": 0.3,
+      "base": 0,
+      "threshold": 0,
+      "face_sign": -1,
+      "dimensionsMeters": [
+        2.4,
+        3.8,
+        0.3
+      ],
+      "construction": "Exact parametric wall profile subtraction / extruded hole; not a Blender Boolean Form approval",
+      "maskEvidence": {
+        "file": "masks/west-gate.png",
+        "frameMetres": [
+          6,
+          6
+        ],
+        "translationMetres": [
+          0,
+          0
+        ],
+        "status": "Raster evidence only; exact geometry is parametric, no final Boolean approval"
+      }
+    }
+  ]
+}

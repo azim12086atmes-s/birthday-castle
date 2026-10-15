@@ -1,0 +1,66 @@
+{
+  "schema": "game-room.room-final-report.v1",
+  "roomId": "b12-village-fit",
+  "gates": {
+    "function": false,
+    "form": false,
+    "runtime": false
+  },
+  "formChecks": {
+    "floorPlanParity": false,
+    "primaryArrival": false,
+    "symmetry": false,
+    "shell": false,
+    "manifold": false,
+    "booleans": false,
+    "collisions": false,
+    "support": false,
+    "attachmentOrientation": false,
+    "ceilingAttachmentOrientation": false,
+    "seatingOrientation": false,
+    "focalDistribution": false,
+    "heroClearance": false,
+    "colonnades": false,
+    "screenClearance": false,
+    "scale": false,
+    "camera": false,
+    "ceilingCoverage": false,
+    "environmentCoverage": false,
+    "provenance": false
+  },
+  "reviewRenders": {
+    "corners": [],
+    "ceiling": [
+      "plans/ceiling-plan.png"
+    ],
+    "environment": {}
+  },
+  "runtimeChecks": {
+    "vlow": false,
+    "textureTiers": false,
+    "lightmap": false,
+    "lightingManifest": false,
+    "performance": false,
+    "browserCapture": "review/arrival-source-slots.png",
+    "errors": []
+  },
+  "postmortem": {
+    "observations": [
+      "A bottom-intersecting door aperture must be an outer-profile notch; a touching interior polygon hole produced visible infill.",
+      "Full-size 3 m wall / roof ports can remain fixed while different bay functions provide the village rhythm."
+    ],
+    "corrections": [
+      "Door notches and internal window holes are distinct mesh operations; ray tests verify every actual aperture.",
+      "Shared party walls authored once; roof repeats contain no triangular end infill."
+    ],
+    "remainingRisks": [
+      "Source roof backs, flashings, final door usability, art fidelity, approved Boolean assets, roof drainage and final supports remain unresolved."
+    ]
+  },
+  "proposedLessons": [],
+  "prototypeEvidence": {
+    "geometry": "geometry-verification.json",
+    "browser": "browser-verification.json",
+    "scope": "Functional engineering evidence; not formal Form or Runtime acceptance"
+  }
+}

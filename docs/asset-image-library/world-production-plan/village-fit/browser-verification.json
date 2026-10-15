@@ -1,0 +1,60 @@
+{
+  "status": "pass",
+  "report_sha256": "cc95b8eaed2ff2a79a69a0125610bfee0bffdbb07a1dbc604aaa4b45e4f18012",
+  "browser": "Chromium / Playwright / software WebGL2",
+  "viewports": [
+    "1440\u00d7960",
+    "390\u00d7844"
+  ],
+  "checks": [
+    "Actual wall-section, roof and ceiling projections load",
+    "Source material slots, host selection, real openings and roof joins render",
+    "Three complete animated routes and real keyboard movement pass",
+    "Glazing collision survives palette/roof changes; view switching cancels checks",
+    "Measured prototype triangle/draw-call limits pass; mobile layout fits"
+  ],
+  "walks": {
+    "arrival": {
+      "status": "pass",
+      "name": "arrival",
+      "distance_m": 188.04685725291222,
+      "return_position": {
+        "x": -2,
+        "z": 0
+      }
+    },
+    "publicRoom": {
+      "status": "pass",
+      "name": "publicRoom",
+      "distance_m": 35.07106781186546,
+      "return_position": {
+        "x": 14,
+        "z": 0
+      }
+    },
+    "cottageRoom": {
+      "status": "pass",
+      "name": "cottageRoom",
+      "distance_m": 35.403124237432856,
+      "return_position": {
+        "x": 14,
+        "z": 0
+      }
+    }
+  },
+  "performance_observations": [
+    {
+      "mode": "orbit",
+      "position": {
+        "x": -2,
+        "z": 0
+      },
+      "run": null,
+      "progress_m": null,
+      "triangles": 37060,
+      "draw_calls": 30
+    }
+  ],
+  "page_errors": [],
+  "limits": "Separate Function fixture, software-rendered inspection only; not formal art/Form approval or production-game performance"
+}

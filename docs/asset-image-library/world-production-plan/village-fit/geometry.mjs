@@ -1,0 +1,15 @@
+import * as THREE from '../../../../vendor/three.module.min.js';
+import {archPolygon} from './model.mjs';
+const shapeFrom=ps=>{const s=new THREE.Shape();ps.forEach(([x,y],i)=>i?s.lineTo(x,y):s.moveTo(x,y));s.closePath();return s;};
+export function wallGeometry(w,openings){const os=w.opening_ids.map(id=>openings.find(o=>o.id===id)),bottom=os.filter(o=>o.sill<=w.base+1e-8).sort((a,b)=>a.centre-b.centre),outline=[[w.start,w.base]];
+ for(const o of bottom){outline.push([o.centre-o.width/2,w.base]);for(let i=0;i<=32;i++){const a=Math.PI-i/32*Math.PI;outline.push([o.centre+o.width/2*Math.cos(a),o.sill+o.height-o.arch_rise+o.arch_rise*Math.sin(a)]);}outline.push([o.centre+o.width/2,w.base]);}
+ outline.push([w.end,w.base],[w.end,w.base+w.height],[w.start,w.base+w.height]);const s=shapeFrom(outline);
+ for(const o of os.filter(o=>o.sill>w.base+1e-8)){const ps=archPolygon(o),hole=new THREE.Path();ps.forEach(([x,y],i)=>i?hole.lineTo(x,y):hole.moveTo(x,y));hole.closePath();s.holes.push(hole);}
+ const g=new THREE.ExtrudeGeometry(s,{depth:w.depth,bevelEnabled:false,curveSegments:24});const p=g.attributes.position;
+ for(let i=0;i<p.count;i++){const u=p.getX(i),y=p.getY(i),d=p.getZ(i)-w.depth/2;if(w.axis==='x')p.setXYZ(i,u,y,w.at+d);else p.setXYZ(i,w.at+d,y,u);}if(w.axis==='z')g.setIndex(Array.from({length:p.count},(_,i)=>i%3===1?i+1:i%3===2?i-1:i));g.computeVertexNormals();return g;
+}
+export function roofGeometry(r){const ps=[[r.x,r.eave],[r.x+r.span/2,r.eave+r.rise],[r.x+r.span,r.eave],[r.x+r.span,r.eave-r.thickness],[r.x+r.span/2,r.eave+r.rise-r.thickness],[r.x,r.eave-r.thickness]],s=shapeFrom(ps),g=new THREE.ExtrudeGeometry(s,{depth:r.length+.002,bevelEnabled:false});g.translate(0,0,r.z-.001);return g;}
+export function gableGeometry(r){const s=shapeFrom([[r.x,r.base],[r.x+r.span,r.base],[r.x+r.span/2,r.base+r.rise]]),g=new THREE.ExtrudeGeometry(s,{depth:r.depth,bevelEnabled:false});g.translate(0,0,r.z-r.depth/2);return g;}
+export function openingGeometry(o,depth=.025){const s=shapeFrom(archPolygon(o)),g=new THREE.ExtrudeGeometry(s,{depth,bevelEnabled:false}),p=g.attributes.position;for(let i=0;i<p.count;i++){const u=p.getX(i),y=p.getY(i),d=p.getZ(i)-depth/2;if(o.axis==='x')p.setXYZ(i,u,y,o.at+d);else p.setXYZ(i,o.at+d,y,u);}g.computeVertexNormals();return g;}
+export function frameGeometry(o,offset=.08){const outer={...o,width:o.width+offset*2,sill:o.sill-offset,height:o.height+offset*2,arch_rise:o.arch_rise+offset},s=shapeFrom(archPolygon(outer)),hole=new THREE.Path();archPolygon(o).forEach(([x,y],i)=>i?hole.lineTo(x,y):hole.moveTo(x,y));hole.closePath();s.holes.push(hole);const g=new THREE.ExtrudeGeometry(s,{depth:.08,bevelEnabled:false}),p=g.attributes.position;for(let i=0;i<p.count;i++){const u=p.getX(i),y=p.getY(i),d=p.getZ(i);if(o.axis==='x')p.setXYZ(i,u,y,o.at+o.face_sign*(.15+d));else p.setXYZ(i,o.at+o.face_sign*(.15+d),y,u);}if(o.axis==='x'&&o.face_sign<0||o.axis==='z'&&o.face_sign>0)g.setIndex(Array.from({length:p.count},(_,i)=>i%3===1?i+1:i%3===2?i-1:i));g.computeVertexNormals();return g;}
+export {THREE};

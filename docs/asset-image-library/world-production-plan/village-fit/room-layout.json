@@ -1,0 +1,3457 @@
+{
+  "schema": "game-room.room-layout.v1",
+  "roomId": "b12-village-fit",
+  "status": "Engineering fixture only",
+  "bounds": {
+    "xmin": -4,
+    "xmax": 102,
+    "zmin": -22,
+    "zmax": 22
+  },
+  "origin": {
+    "x": -2470,
+    "z": -650,
+    "y": 44.05
+  },
+  "walls": [
+    {
+      "id": "H-N-18-ENTRY",
+      "axis": "x",
+      "at": -6,
+      "start": 18,
+      "end": 21,
+      "base": 0,
+      "height": 2.6,
+      "depth": 0.3,
+      "opening_ids": [
+        "H-N-18-ENTRY-door"
+      ]
+    },
+    {
+      "id": "H-N-18-WIN",
+      "axis": "x",
+      "at": -6,
+      "start": 21,
+      "end": 24,
+      "base": 0,
+      "height": 2.6,
+      "depth": 0.3,
+      "opening_ids": [
+        "H-N-18-WIN-window"
+      ]
+    },
+    {
+      "id": "H-N-18-UPPER-GABLE",
+      "axis": "x",
+      "at": -6,
+      "start": 18,
+      "end": 24,
+      "base": 2.6,
+      "height": 2.6,
+      "depth": 0.3,
+      "opening_ids": [
+        "H-N-18-UPPER-GABLE-window"
+      ]
+    },
+    {
+      "id": "H-N-18-BACK-0-0",
+      "axis": "x",
+      "at": -15,
+      "start": 18,
+      "end": 21,
+      "base": 0,
+      "height": 2.6,
+      "depth": 0.3,
+      "opening_ids": [
+        "H-N-18-BACK-0-0-window"
+      ]
+    },
+    {
+      "id": "H-N-18-BACK-0-1",
+      "axis": "x",
+      "at": -15,
+      "start": 21,
+      "end": 24,
+      "base": 0,
+      "height": 2.6,
+      "depth": 0.3,
+      "opening_ids": [
+        "H-N-18-BACK-0-1-window"
+      ]
+    },
+    {
+      "id": "H-N-18-BACK-UPPER-GABLE",
+      "axis": "x",
+      "at": -15,
+      "start": 18,
+      "end": 24,
+      "base": 2.6,
+      "height": 2.6,
+      "depth": 0.3,
+      "opening_ids": [
+        "H-N-18-BACK-UPPER-GABLE-window"
+      ]
+    },
+    {
+      "id": "H-N-18-SIDE-18-0-0",
+      "axis": "z",
+      "at": 18,
+      "start": -15,
+      "end": -12,
+      "base": 0,
+      "height": 2.6,
+      "depth": 0.3,
+      "opening_ids": []
+    },
+    {
+      "id": "H-N-18-SIDE-18-0-1",
+      "axis": "z",
+      "at": 18,
+      "start": -12,
+      "end": -9,
+      "base": 0,
+      "height": 2.6,
+      "depth": 0.3,
+      "opening_ids": []
+    },
+    {
+      "id": "H-N-18-SIDE-18-0-2",
+      "axis": "z",
+      "at": 18,
+      "start": -9,
+      "end": -6,
+      "base": 0,
+      "height": 2.6,
+      "depth": 0.3,
+      "opening_ids": []
+    },
+    {
+      "id": "H-N-18-SIDE-18-2.6-0",
+      "axis": "z",
+      "at": 18,
+      "start": -15,
+      "end": -12,
+      "base": 2.6,
+      "height": 2.6,
+      "depth": 0.3,
+      "opening_ids": []
+    },
+    {
+      "id": "H-N-18-SIDE-18-2.6-1",
+      "axis": "z",
+      "at": 18,
+      "start": -12,
+      "end": -9,
+      "base": 2.6,
+      "height": 2.6,
+      "depth": 0.3,
+      "opening_ids": []
+    },
+    {
+      "id": "H-N-18-SIDE-18-2.6-2",
+      "axis": "z",
+      "at": 18,
+      "start": -9,
+      "end": -6,
+      "base": 2.6,
+      "height": 2.6,
+      "depth": 0.3,
+      "opening_ids": []
+    },
+    {
+      "id": "H-N-18-SIDE-24-0-0",
+      "axis": "z",
+      "at": 24,
+      "start": -15,
+      "end": -12,
+      "base": 0,
+      "height": 2.6,
+      "depth": 0.3,
+      "opening_ids": []
+    },
+    {
+      "id": "H-N-18-SIDE-24-0-1",
+      "axis": "z",
+      "at": 24,
+      "start": -12,
+      "end": -9,
+      "base": 0,
+      "height": 2.6,
+      "depth": 0.3,
+      "opening_ids": []
+    },
+    {
+      "id": "H-N-18-SIDE-24-0-2",
+      "axis": "z",
+      "at": 24,
+      "start": -9,
+      "end": -6,
+      "base": 0,
+      "height": 2.6,
+      "depth": 0.3,
+      "opening_ids": []
+    },
+    {
+      "id": "H-N-18-SIDE-24-2.6-0",
+      "axis": "z",
+      "at": 24,
+      "start": -15,
+      "end": -12,
+      "base": 2.6,
+      "height": 2.6,
+      "depth": 0.3,
+      "opening_ids": []
+    },
+    {
+      "id": "H-N-18-SIDE-24-2.6-1",
+      "axis": "z",
+      "at": 24,
+      "start": -12,
+      "end": -9,
+      "base": 2.6,
+      "height": 2.6,
+      "depth": 0.3,
+      "opening_ids": []
+    },
+    {
+      "id": "H-N-18-SIDE-24-2.6-2",
+      "axis": "z",
+      "at": 24,
+      "start": -9,
+      "end": -6,
+      "base": 2.6,
+      "height": 2.6,
+      "depth": 0.3,
+      "opening_ids": []
+    },
+    {
+      "id": "H-N-24-ENTRY",
+      "axis": "x",
+      "at": -6,
+      "start": 24,
+      "end": 27,
+      "base": 0,
+      "height": 2.6,
+      "depth": 0.3,
+      "opening_ids": [
+        "H-N-24-ENTRY-door"
+      ]
+    },
+    {
+      "id": "H-N-24-WIN",
+      "axis": "x",
+      "at": -6,
+      "start": 27,
+      "end": 30,
+      "base": 0,
+      "height": 2.6,
+      "depth": 0.3,
+      "opening_ids": [
+        "H-N-24-WIN-window"
+      ]
+    },
+    {
+      "id": "H-N-24-UPPER-GABLE",
+      "axis": "x",
+      "at": -6,
+      "start": 24,
+      "end": 30,
+      "base": 2.6,
+      "height": 2.6,
+      "depth": 0.3,
+      "opening_ids": [
+        "H-N-24-UPPER-GABLE-window"
+      ]
+    },
+    {
+      "id": "H-N-24-BACK-0-0",
+      "axis": "x",
+      "at": -15,
+      "start": 24,
+      "end": 27,
+      "base": 0,
+      "height": 2.6,
+      "depth": 0.3,
+      "opening_ids": [
+        "H-N-24-BACK-0-0-window"
+      ]
+    },
+    {
+      "id": "H-N-24-BACK-0-1",
+      "axis": "x",
+      "at": -15,
+      "start": 27,
+      "end": 30,
+      "base": 0,
+      "height": 2.6,
+      "depth": 0.3,
+      "opening_ids": [
+        "H-N-24-BACK-0-1-window"
+      ]
+    },
+    {
+      "id": "H-N-24-BACK-UPPER-GABLE",
+      "axis": "x",
+      "at": -15,
+      "start": 24,
+      "end": 30,
+      "base": 2.6,
+      "height": 2.6,
+      "depth": 0.3,
+      "opening_ids": [
+        "H-N-24-BACK-UPPER-GABLE-window"
+      ]
+    },
+    {
+      "id": "H-N-24-SIDE-30-0-0",
+      "axis": "z",
+      "at": 30,
+      "start": -15,
+      "end": -12,
+      "base": 0,
+      "height": 2.6,
+      "depth": 0.3,
+      "opening_ids": []
+    },
+    {
+      "id": "H-N-24-SIDE-30-0-1",
+      "axis": "z",
+      "at": 30,
+      "start": -12,
+      "end": -9,
+      "base": 0,
+      "height": 2.6,
+      "depth": 0.3,
+      "opening_ids": []
+    },
+    {
+      "id": "H-N-24-SIDE-30-0-2",
+      "axis": "z",
+      "at": 30,
+      "start": -9,
+      "end": -6,
+      "base": 0,
+      "height": 2.6,
+      "depth": 0.3,
+      "opening_ids": []
+    },
+    {
+      "id": "H-N-24-SIDE-30-2.6-0",
+      "axis": "z",
+      "at": 30,
+      "start": -15,
+      "end": -12,
+      "base": 2.6,
+      "height": 2.6,
+      "depth": 0.3,
+      "opening_ids": []
+    },
+    {
+      "id": "H-N-24-SIDE-30-2.6-1",
+      "axis": "z",
+      "at": 30,
+      "start": -12,
+      "end": -9,
+      "base": 2.6,
+      "height": 2.6,
+      "depth": 0.3,
+      "opening_ids": []
+    },
+    {
+      "id": "H-N-24-SIDE-30-2.6-2",
+      "axis": "z",
+      "at": 30,
+      "start": -9,
+      "end": -6,
+      "base": 2.6,
+      "height": 2.6,
+      "depth": 0.3,
+      "opening_ids": []
+    },
+    {
+      "id": "H-N-30-ENTRY",
+      "axis": "x",
+      "at": -6,
+      "start": 30,
+      "end": 33,
+      "base": 0,
+      "height": 2.6,
+      "depth": 0.3,
+      "opening_ids": [
+        "H-N-30-ENTRY-door"
+      ]
+    },
+    {
+      "id": "H-N-30-WIN",
+      "axis": "x",
+      "at": -6,
+      "start": 33,
+      "end": 36,
+      "base": 0,
+      "height": 2.6,
+      "depth": 0.3,
+      "opening_ids": [
+        "H-N-30-WIN-window"
+      ]
+    },
+    {
+      "id": "H-N-30-UPPER-GABLE",
+      "axis": "x",
+      "at": -6,
+      "start": 30,
+      "end": 36,
+      "base": 2.6,
+      "height": 2.6,
+      "depth": 0.3,
+      "opening_ids": [
+        "H-N-30-UPPER-GABLE-window"
+      ]
+    },
+    {
+      "id": "H-N-30-BACK-0-0",
+      "axis": "x",
+      "at": -15,
+      "start": 30,
+      "end": 33,
+      "base": 0,
+      "height": 2.6,
+      "depth": 0.3,
+      "opening_ids": [
+        "H-N-30-BACK-0-0-window"
+      ]
+    },
+    {
+      "id": "H-N-30-BACK-0-1",
+      "axis": "x",
+      "at": -15,
+      "start": 33,
+      "end": 36,
+      "base": 0,
+      "height": 2.6,
+      "depth": 0.3,
+      "opening_ids": [
+        "H-N-30-BACK-0-1-window"
+      ]
+    },
+    {
+      "id": "H-N-30-BACK-UPPER-GABLE",
+      "axis": "x",
+      "at": -15,
+      "start": 30,
+      "end": 36,
+      "base": 2.6,
+      "height": 2.6,
+      "depth": 0.3,
+      "opening_ids": [
+        "H-N-30-BACK-UPPER-GABLE-window"
+      ]
+    },
+    {
+      "id": "H-N-30-SIDE-36-0-0",
+      "axis": "z",
+      "at": 36,
+      "start": -15,
+      "end": -12,
+      "base": 0,
+      "height": 2.6,
+      "depth": 0.3,
+      "opening_ids": []
+    },
+    {
+      "id": "H-N-30-SIDE-36-0-1",
+      "axis": "z",
+      "at": 36,
+      "start": -12,
+      "end": -9,
+      "base": 0,
+      "height": 2.6,
+      "depth": 0.3,
+      "opening_ids": []
+    },
+    {
+      "id": "H-N-30-SIDE-36-0-2",
+      "axis": "z",
+      "at": 36,
+      "start": -9,
+      "end": -6,
+      "base": 0,
+      "height": 2.6,
+      "depth": 0.3,
+      "opening_ids": []
+    },
+    {
+      "id": "H-N-30-SIDE-36-2.6-0",
+      "axis": "z",
+      "at": 36,
+      "start": -15,
+      "end": -12,
+      "base": 2.6,
+      "height": 2.6,
+      "depth": 0.3,
+      "opening_ids": []
+    },
+    {
+      "id": "H-N-30-SIDE-36-2.6-1",
+      "axis": "z",
+      "at": 36,
+      "start": -12,
+      "end": -9,
+      "base": 2.6,
+      "height": 2.6,
+      "depth": 0.3,
+      "opening_ids": []
+    },
+    {
+      "id": "H-N-30-SIDE-36-2.6-2",
+      "axis": "z",
+      "at": 36,
+      "start": -9,
+      "end": -6,
+      "base": 2.6,
+      "height": 2.6,
+      "depth": 0.3,
+      "opening_ids": []
+    },
+    {
+      "id": "H-N-42-ENTRY",
+      "axis": "x",
+      "at": -6,
+      "start": 42,
+      "end": 45,
+      "base": 0,
+      "height": 2.6,
+      "depth": 0.3,
+      "opening_ids": [
+        "H-N-42-ENTRY-door"
+      ]
+    },
+    {
+      "id": "H-N-42-WIN",
+      "axis": "x",
+      "at": -6,
+      "start": 45,
+      "end": 48,
+      "base": 0,
+      "height": 2.6,
+      "depth": 0.3,
+      "opening_ids": [
+        "H-N-42-WIN-window"
+      ]
+    },
+    {
+      "id": "H-N-42-BACK-0-0",
+      "axis": "x",
+      "at": -15,
+      "start": 42,
+      "end": 45,
+      "base": 0,
+      "height": 2.6,
+      "depth": 0.3,
+      "opening_ids": [
+        "H-N-42-BACK-0-0-window"
+      ]
+    },
+    {
+      "id": "H-N-42-BACK-0-1",
+      "axis": "x",
+      "at": -15,
+      "start": 45,
+      "end": 48,
+      "base": 0,
+      "height": 2.6,
+      "depth": 0.3,
+      "opening_ids": [
+        "H-N-42-BACK-0-1-window"
+      ]
+    },
+    {
+      "id": "H-N-42-BACK-UPPER-GABLE",
+      "axis": "x",
+      "at": -15,
+      "start": 42,
+      "end": 48,
+      "base": 2.6,
+      "height": 2.6,
+      "depth": 0.3,
+      "opening_ids": [
+        "H-N-42-BACK-UPPER-GABLE-window"
+      ]
+    },
+    {
+      "id": "H-N-42-SIDE-42-0-0",
+      "axis": "z",
+      "at": 42,
+      "start": -15,
+      "end": -12,
+      "base": 0,
+      "height": 2.6,
+      "depth": 0.3,
+      "opening_ids": []
+    },
+    {
+      "id": "H-N-42-SIDE-42-0-1",
+      "axis": "z",
+      "at": 42,
+      "start": -12,
+      "end": -9,
+      "base": 0,
+      "height": 2.6,
+      "depth": 0.3,
+      "opening_ids": []
+    },
+    {
+      "id": "H-N-42-SIDE-42-0-2",
+      "axis": "z",
+      "at": 42,
+      "start": -9,
+      "end": -6,
+      "base": 0,
+      "height": 2.6,
+      "depth": 0.3,
+      "opening_ids": []
+    },
+    {
+      "id": "H-N-42-SIDE-42-2.6-0",
+      "axis": "z",
+      "at": 42,
+      "start": -15,
+      "end": -12,
+      "base": 2.6,
+      "height": 2.6,
+      "depth": 0.3,
+      "opening_ids": []
+    },
+    {
+      "id": "H-N-42-SIDE-42-2.6-1",
+      "axis": "z",
+      "at": 42,
+      "start": -12,
+      "end": -9,
+      "base": 2.6,
+      "height": 2.6,
+      "depth": 0.3,
+      "opening_ids": []
+    },
+    {
+      "id": "H-N-42-SIDE-42-2.6-2",
+      "axis": "z",
+      "at": 42,
+      "start": -9,
+      "end": -6,
+      "base": 2.6,
+      "height": 2.6,
+      "depth": 0.3,
+      "opening_ids": []
+    },
+    {
+      "id": "H-N-42-SIDE-48-0-0",
+      "axis": "z",
+      "at": 48,
+      "start": -15,
+      "end": -12,
+      "base": 0,
+      "height": 2.6,
+      "depth": 0.3,
+      "opening_ids": []
+    },
+    {
+      "id": "H-N-42-SIDE-48-0-1",
+      "axis": "z",
+      "at": 48,
+      "start": -12,
+      "end": -9,
+      "base": 0,
+      "height": 2.6,
+      "depth": 0.3,
+      "opening_ids": []
+    },
+    {
+      "id": "H-N-42-SIDE-48-0-2",
+      "axis": "z",
+      "at": 48,
+      "start": -9,
+      "end": -6,
+      "base": 0,
+      "height": 2.6,
+      "depth": 0.3,
+      "opening_ids": []
+    },
+    {
+      "id": "H-N-42-SIDE-48-2.6-0",
+      "axis": "z",
+      "at": 48,
+      "start": -15,
+      "end": -12,
+      "base": 2.6,
+      "height": 2.6,
+      "depth": 0.3,
+      "opening_ids": []
+    },
+    {
+      "id": "H-N-42-SIDE-48-2.6-1",
+      "axis": "z",
+      "at": 48,
+      "start": -12,
+      "end": -9,
+      "base": 2.6,
+      "height": 2.6,
+      "depth": 0.3,
+      "opening_ids": []
+    },
+    {
+      "id": "H-N-42-SIDE-48-2.6-2",
+      "axis": "z",
+      "at": 48,
+      "start": -9,
+      "end": -6,
+      "base": 2.6,
+      "height": 2.6,
+      "depth": 0.3,
+      "opening_ids": []
+    },
+    {
+      "id": "H-S-18-ENTRY",
+      "axis": "x",
+      "at": 6,
+      "start": 18,
+      "end": 21,
+      "base": 0,
+      "height": 2.6,
+      "depth": 0.3,
+      "opening_ids": [
+        "H-S-18-ENTRY-door"
+      ]
+    },
+    {
+      "id": "H-S-18-WIN",
+      "axis": "x",
+      "at": 6,
+      "start": 21,
+      "end": 24,
+      "base": 0,
+      "height": 2.6,
+      "depth": 0.3,
+      "opening_ids": [
+        "H-S-18-WIN-window"
+      ]
+    },
+    {
+      "id": "H-S-18-UPPER-GABLE",
+      "axis": "x",
+      "at": 6,
+      "start": 18,
+      "end": 24,
+      "base": 2.6,
+      "height": 2.6,
+      "depth": 0.3,
+      "opening_ids": [
+        "H-S-18-UPPER-GABLE-window"
+      ]
+    },
+    {
+      "id": "H-S-18-BACK-0-0",
+      "axis": "x",
+      "at": 15,
+      "start": 18,
+      "end": 21,
+      "base": 0,
+      "height": 2.6,
+      "depth": 0.3,
+      "opening_ids": [
+        "H-S-18-BACK-0-0-window"
+      ]
+    },
+    {
+      "id": "H-S-18-BACK-0-1",
+      "axis": "x",
+      "at": 15,
+      "start": 21,
+      "end": 24,
+      "base": 0,
+      "height": 2.6,
+      "depth": 0.3,
+      "opening_ids": [
+        "H-S-18-BACK-0-1-window"
+      ]
+    },
+    {
+      "id": "H-S-18-BACK-UPPER-GABLE",
+      "axis": "x",
+      "at": 15,
+      "start": 18,
+      "end": 24,
+      "base": 2.6,
+      "height": 2.6,
+      "depth": 0.3,
+      "opening_ids": [
+        "H-S-18-BACK-UPPER-GABLE-window"
+      ]
+    },
+    {
+      "id": "H-S-18-SIDE-18-0-0",
+      "axis": "z",
+      "at": 18,
+      "start": 6,
+      "end": 9,
+      "base": 0,
+      "height": 2.6,
+      "depth": 0.3,
+      "opening_ids": []
+    },
+    {
+      "id": "H-S-18-SIDE-18-0-1",
+      "axis": "z",
+      "at": 18,
+      "start": 9,
+      "end": 12,
+      "base": 0,
+      "height": 2.6,
+      "depth": 0.3,
+      "opening_ids": []
+    },
+    {
+      "id": "H-S-18-SIDE-18-0-2",
+      "axis": "z",
+      "at": 18,
+      "start": 12,
+      "end": 15,
+      "base": 0,
+      "height": 2.6,
+      "depth": 0.3,
+      "opening_ids": []
+    },
+    {
+      "id": "H-S-18-SIDE-18-2.6-0",
+      "axis": "z",
+      "at": 18,
+      "start": 6,
+      "end": 9,
+      "base": 2.6,
+      "height": 2.6,
+      "depth": 0.3,
+      "opening_ids": []
+    },
+    {
+      "id": "H-S-18-SIDE-18-2.6-1",
+      "axis": "z",
+      "at": 18,
+      "start": 9,
+      "end": 12,
+      "base": 2.6,
+      "height": 2.6,
+      "depth": 0.3,
+      "opening_ids": []
+    },
+    {
+      "id": "H-S-18-SIDE-18-2.6-2",
+      "axis": "z",
+      "at": 18,
+      "start": 12,
+      "end": 15,
+      "base": 2.6,
+      "height": 2.6,
+      "depth": 0.3,
+      "opening_ids": []
+    },
+    {
+      "id": "H-S-18-SIDE-24-0-0",
+      "axis": "z",
+      "at": 24,
+      "start": 6,
+      "end": 9,
+      "base": 0,
+      "height": 2.6,
+      "depth": 0.3,
+      "opening_ids": []
+    },
+    {
+      "id": "H-S-18-SIDE-24-0-1",
+      "axis": "z",
+      "at": 24,
+      "start": 9,
+      "end": 12,
+      "base": 0,
+      "height": 2.6,
+      "depth": 0.3,
+      "opening_ids": []
+    },
+    {
+      "id": "H-S-18-SIDE-24-0-2",
+      "axis": "z",
+      "at": 24,
+      "start": 12,
+      "end": 15,
+      "base": 0,
+      "height": 2.6,
+      "depth": 0.3,
+      "opening_ids": []
+    },
+    {
+      "id": "H-S-18-SIDE-24-2.6-0",
+      "axis": "z",
+      "at": 24,
+      "start": 6,
+      "end": 9,
+      "base": 2.6,
+      "height": 2.6,
+      "depth": 0.3,
+      "opening_ids": []
+    },
+    {
+      "id": "H-S-18-SIDE-24-2.6-1",
+      "axis": "z",
+      "at": 24,
+      "start": 9,
+      "end": 12,
+      "base": 2.6,
+      "height": 2.6,
+      "depth": 0.3,
+      "opening_ids": []
+    },
+    {
+      "id": "H-S-18-SIDE-24-2.6-2",
+      "axis": "z",
+      "at": 24,
+      "start": 12,
+      "end": 15,
+      "base": 2.6,
+      "height": 2.6,
+      "depth": 0.3,
+      "opening_ids": []
+    },
+    {
+      "id": "H-S-24-ENTRY",
+      "axis": "x",
+      "at": 6,
+      "start": 24,
+      "end": 27,
+      "base": 0,
+      "height": 2.6,
+      "depth": 0.3,
+      "opening_ids": [
+        "H-S-24-ENTRY-door"
+      ]
+    },
+    {
+      "id": "H-S-24-WIN",
+      "axis": "x",
+      "at": 6,
+      "start": 27,
+      "end": 30,
+      "base": 0,
+      "height": 2.6,
+      "depth": 0.3,
+      "opening_ids": [
+        "H-S-24-WIN-window"
+      ]
+    },
+    {
+      "id": "H-S-24-UPPER-GABLE",
+      "axis": "x",
+      "at": 6,
+      "start": 24,
+      "end": 30,
+      "base": 2.6,
+      "height": 2.6,
+      "depth": 0.3,
+      "opening_ids": [
+        "H-S-24-UPPER-GABLE-window"
+      ]
+    },
+    {
+      "id": "H-S-24-BACK-0-0",
+      "axis": "x",
+      "at": 15,
+      "start": 24,
+      "end": 27,
+      "base": 0,
+      "height": 2.6,
+      "depth": 0.3,
+      "opening_ids": [
+        "H-S-24-BACK-0-0-window"
+      ]
+    },
+    {
+      "id": "H-S-24-BACK-0-1",
+      "axis": "x",
+      "at": 15,
+      "start": 27,
+      "end": 30,
+      "base": 0,
+      "height": 2.6,
+      "depth": 0.3,
+      "opening_ids": [
+        "H-S-24-BACK-0-1-window"
+      ]
+    },
+    {
+      "id": "H-S-24-BACK-UPPER-GABLE",
+      "axis": "x",
+      "at": 15,
+      "start": 24,
+      "end": 30,
+      "base": 2.6,
+      "height": 2.6,
+      "depth": 0.3,
+      "opening_ids": [
+        "H-S-24-BACK-UPPER-GABLE-window"
+      ]
+    },
+    {
+      "id": "H-S-24-SIDE-30-0-0",
+      "axis": "z",
+      "at": 30,
+      "start": 6,
+      "end": 9,
+      "base": 0,
+      "height": 2.6,
+      "depth": 0.3,
+      "opening_ids": []
+    },
+    {
+      "id": "H-S-24-SIDE-30-0-1",
+      "axis": "z",
+      "at": 30,
+      "start": 9,
+      "end": 12,
+      "base": 0,
+      "height": 2.6,
+      "depth": 0.3,
+      "opening_ids": []
+    },
+    {
+      "id": "H-S-24-SIDE-30-0-2",
+      "axis": "z",
+      "at": 30,
+      "start": 12,
+      "end": 15,
+      "base": 0,
+      "height": 2.6,
+      "depth": 0.3,
+      "opening_ids": []
+    },
+    {
+      "id": "H-S-24-SIDE-30-2.6-0",
+      "axis": "z",
+      "at": 30,
+      "start": 6,
+      "end": 9,
+      "base": 2.6,
+      "height": 2.6,
+      "depth": 0.3,
+      "opening_ids": []
+    },
+    {
+      "id": "H-S-24-SIDE-30-2.6-1",
+      "axis": "z",
+      "at": 30,
+      "start": 9,
+      "end": 12,
+      "base": 2.6,
+      "height": 2.6,
+      "depth": 0.3,
+      "opening_ids": []
+    },
+    {
+      "id": "H-S-24-SIDE-30-2.6-2",
+      "axis": "z",
+      "at": 30,
+      "start": 12,
+      "end": 15,
+      "base": 2.6,
+      "height": 2.6,
+      "depth": 0.3,
+      "opening_ids": []
+    },
+    {
+      "id": "H-S-30-ENTRY",
+      "axis": "x",
+      "at": 6,
+      "start": 30,
+      "end": 33,
+      "base": 0,
+      "height": 2.6,
+      "depth": 0.3,
+      "opening_ids": [
+        "H-S-30-ENTRY-door"
+      ]
+    },
+    {
+      "id": "H-S-30-WIN",
+      "axis": "x",
+      "at": 6,
+      "start": 33,
+      "end": 36,
+      "base": 0,
+      "height": 2.6,
+      "depth": 0.3,
+      "opening_ids": [
+        "H-S-30-WIN-window"
+      ]
+    },
+    {
+      "id": "H-S-30-UPPER-GABLE",
+      "axis": "x",
+      "at": 6,
+      "start": 30,
+      "end": 36,
+      "base": 2.6,
+      "height": 2.6,
+      "depth": 0.3,
+      "opening_ids": [
+        "H-S-30-UPPER-GABLE-window"
+      ]
+    },
+    {
+      "id": "H-S-30-BACK-0-0",
+      "axis": "x",
+      "at": 15,
+      "start": 30,
+      "end": 33,
+      "base": 0,
+      "height": 2.6,
+      "depth": 0.3,
+      "opening_ids": [
+        "H-S-30-BACK-0-0-window"
+      ]
+    },
+    {
+      "id": "H-S-30-BACK-0-1",
+      "axis": "x",
+      "at": 15,
+      "start": 33,
+      "end": 36,
+      "base": 0,
+      "height": 2.6,
+      "depth": 0.3,
+      "opening_ids": [
+        "H-S-30-BACK-0-1-window"
+      ]
+    },
+    {
+      "id": "H-S-30-BACK-UPPER-GABLE",
+      "axis": "x",
+      "at": 15,
+      "start": 30,
+      "end": 36,
+      "base": 2.6,
+      "height": 2.6,
+      "depth": 0.3,
+      "opening_ids": [
+        "H-S-30-BACK-UPPER-GABLE-window"
+      ]
+    },
+    {
+      "id": "H-S-30-SIDE-36-0-0",
+      "axis": "z",
+      "at": 36,
+      "start": 6,
+      "end": 9,
+      "base": 0,
+      "height": 2.6,
+      "depth": 0.3,
+      "opening_ids": []
+    },
+    {
+      "id": "H-S-30-SIDE-36-0-1",
+      "axis": "z",
+      "at": 36,
+      "start": 9,
+      "end": 12,
+      "base": 0,
+      "height": 2.6,
+      "depth": 0.3,
+      "opening_ids": []
+    },
+    {
+      "id": "H-S-30-SIDE-36-0-2",
+      "axis": "z",
+      "at": 36,
+      "start": 12,
+      "end": 15,
+      "base": 0,
+      "height": 2.6,
+      "depth": 0.3,
+      "opening_ids": []
+    },
+    {
+      "id": "H-S-30-SIDE-36-2.6-0",
+      "axis": "z",
+      "at": 36,
+      "start": 6,
+      "end": 9,
+      "base": 2.6,
+      "height": 2.6,
+      "depth": 0.3,
+      "opening_ids": []
+    },
+    {
+      "id": "H-S-30-SIDE-36-2.6-1",
+      "axis": "z",
+      "at": 36,
+      "start": 9,
+      "end": 12,
+      "base": 2.6,
+      "height": 2.6,
+      "depth": 0.3,
+      "opening_ids": []
+    },
+    {
+      "id": "H-S-30-SIDE-36-2.6-2",
+      "axis": "z",
+      "at": 36,
+      "start": 12,
+      "end": 15,
+      "base": 2.6,
+      "height": 2.6,
+      "depth": 0.3,
+      "opening_ids": []
+    },
+    {
+      "id": "H-S-42-ENTRY",
+      "axis": "x",
+      "at": 6,
+      "start": 42,
+      "end": 45,
+      "base": 0,
+      "height": 2.6,
+      "depth": 0.3,
+      "opening_ids": [
+        "H-S-42-ENTRY-door"
+      ]
+    },
+    {
+      "id": "H-S-42-WIN",
+      "axis": "x",
+      "at": 6,
+      "start": 45,
+      "end": 48,
+      "base": 0,
+      "height": 2.6,
+      "depth": 0.3,
+      "opening_ids": [
+        "H-S-42-WIN-window"
+      ]
+    },
+    {
+      "id": "H-S-42-BACK-0-0",
+      "axis": "x",
+      "at": 15,
+      "start": 42,
+      "end": 45,
+      "base": 0,
+      "height": 2.6,
+      "depth": 0.3,
+      "opening_ids": [
+        "H-S-42-BACK-0-0-window"
+      ]
+    },
+    {
+      "id": "H-S-42-BACK-0-1",
+      "axis": "x",
+      "at": 15,
+      "start": 45,
+      "end": 48,
+      "base": 0,
+      "height": 2.6,
+      "depth": 0.3,
+      "opening_ids": [
+        "H-S-42-BACK-0-1-window"
+      ]
+    },
+    {
+      "id": "H-S-42-BACK-UPPER-GABLE",
+      "axis": "x",
+      "at": 15,
+      "start": 42,
+      "end": 48,
+      "base": 2.6,
+      "height": 2.6,
+      "depth": 0.3,
+      "opening_ids": [
+        "H-S-42-BACK-UPPER-GABLE-window"
+      ]
+    },
+    {
+      "id": "H-S-42-SIDE-42-0-0",
+      "axis": "z",
+      "at": 42,
+      "start": 6,
+      "end": 9,
+      "base": 0,
+      "height": 2.6,
+      "depth": 0.3,
+      "opening_ids": []
+    },
+    {
+      "id": "H-S-42-SIDE-42-0-1",
+      "axis": "z",
+      "at": 42,
+      "start": 9,
+      "end": 12,
+      "base": 0,
+      "height": 2.6,
+      "depth": 0.3,
+      "opening_ids": []
+    },
+    {
+      "id": "H-S-42-SIDE-42-0-2",
+      "axis": "z",
+      "at": 42,
+      "start": 12,
+      "end": 15,
+      "base": 0,
+      "height": 2.6,
+      "depth": 0.3,
+      "opening_ids": []
+    },
+    {
+      "id": "H-S-42-SIDE-42-2.6-0",
+      "axis": "z",
+      "at": 42,
+      "start": 6,
+      "end": 9,
+      "base": 2.6,
+      "height": 2.6,
+      "depth": 0.3,
+      "opening_ids": []
+    },
+    {
+      "id": "H-S-42-SIDE-42-2.6-1",
+      "axis": "z",
+      "at": 42,
+      "start": 9,
+      "end": 12,
+      "base": 2.6,
+      "height": 2.6,
+      "depth": 0.3,
+      "opening_ids": []
+    },
+    {
+      "id": "H-S-42-SIDE-42-2.6-2",
+      "axis": "z",
+      "at": 42,
+      "start": 12,
+      "end": 15,
+      "base": 2.6,
+      "height": 2.6,
+      "depth": 0.3,
+      "opening_ids": []
+    },
+    {
+      "id": "H-S-42-SIDE-48-0-0",
+      "axis": "z",
+      "at": 48,
+      "start": 6,
+      "end": 9,
+      "base": 0,
+      "height": 2.6,
+      "depth": 0.3,
+      "opening_ids": []
+    },
+    {
+      "id": "H-S-42-SIDE-48-0-1",
+      "axis": "z",
+      "at": 48,
+      "start": 9,
+      "end": 12,
+      "base": 0,
+      "height": 2.6,
+      "depth": 0.3,
+      "opening_ids": []
+    },
+    {
+      "id": "H-S-42-SIDE-48-0-2",
+      "axis": "z",
+      "at": 48,
+      "start": 12,
+      "end": 15,
+      "base": 0,
+      "height": 2.6,
+      "depth": 0.3,
+      "opening_ids": []
+    },
+    {
+      "id": "H-S-42-SIDE-48-2.6-0",
+      "axis": "z",
+      "at": 48,
+      "start": 6,
+      "end": 9,
+      "base": 2.6,
+      "height": 2.6,
+      "depth": 0.3,
+      "opening_ids": []
+    },
+    {
+      "id": "H-S-42-SIDE-48-2.6-1",
+      "axis": "z",
+      "at": 48,
+      "start": 9,
+      "end": 12,
+      "base": 2.6,
+      "height": 2.6,
+      "depth": 0.3,
+      "opening_ids": []
+    },
+    {
+      "id": "H-S-42-SIDE-48-2.6-2",
+      "axis": "z",
+      "at": 48,
+      "start": 12,
+      "end": 15,
+      "base": 2.6,
+      "height": 2.6,
+      "depth": 0.3,
+      "opening_ids": []
+    },
+    {
+      "id": "LANE-ARCH-42",
+      "axis": "z",
+      "at": 42,
+      "start": -6,
+      "end": 6,
+      "base": 0,
+      "height": 5.2,
+      "depth": 0.3,
+      "opening_ids": [
+        "LANE-ARCH-42-door"
+      ]
+    },
+    {
+      "id": "LANE-ARCH-48",
+      "axis": "z",
+      "at": 48,
+      "start": -6,
+      "end": 6,
+      "base": 0,
+      "height": 5.2,
+      "depth": 0.3,
+      "opening_ids": [
+        "LANE-ARCH-48-door"
+      ]
+    },
+    {
+      "id": "WEST-GATE",
+      "axis": "z",
+      "at": 0,
+      "start": -2,
+      "end": 2,
+      "base": 0,
+      "height": 4.2,
+      "depth": 0.3,
+      "opening_ids": [
+        "WEST-GATE-door"
+      ]
+    }
+  ],
+  "floors": [
+    {
+      "id": "H-N-18",
+      "xmin": 18,
+      "xmax": 24,
+      "zmin": -15,
+      "zmax": -6,
+      "front": -6,
+      "side": -1,
+      "public": false,
+      "y": 0,
+      "thickness": 0.15
+    },
+    {
+      "id": "H-N-18",
+      "xmin": 18,
+      "xmax": 24,
+      "zmin": -15,
+      "zmax": -6,
+      "front": -6,
+      "side": -1,
+      "public": false,
+      "y": 2.45,
+      "thickness": 0.15,
+      "ceiling": true
+    },
+    {
+      "id": "H-N-24",
+      "xmin": 24,
+      "xmax": 30,
+      "zmin": -15,
+      "zmax": -6,
+      "front": -6,
+      "side": -1,
+      "public": false,
+      "y": 0,
+      "thickness": 0.15
+    },
+    {
+      "id": "H-N-24",
+      "xmin": 24,
+      "xmax": 30,
+      "zmin": -15,
+      "zmax": -6,
+      "front": -6,
+      "side": -1,
+      "public": false,
+      "y": 2.45,
+      "thickness": 0.15,
+      "ceiling": true
+    },
+    {
+      "id": "H-N-30",
+      "xmin": 30,
+      "xmax": 36,
+      "zmin": -15,
+      "zmax": -6,
+      "front": -6,
+      "side": -1,
+      "public": false,
+      "y": 0,
+      "thickness": 0.15
+    },
+    {
+      "id": "H-N-30",
+      "xmin": 30,
+      "xmax": 36,
+      "zmin": -15,
+      "zmax": -6,
+      "front": -6,
+      "side": -1,
+      "public": false,
+      "y": 2.45,
+      "thickness": 0.15,
+      "ceiling": true
+    },
+    {
+      "id": "H-N-42",
+      "xmin": 42,
+      "xmax": 48,
+      "zmin": -15,
+      "zmax": -6,
+      "front": -6,
+      "side": -1,
+      "public": false,
+      "y": 0,
+      "thickness": 0.15
+    },
+    {
+      "id": "H-N-42",
+      "xmin": 42,
+      "xmax": 48,
+      "zmin": -15,
+      "zmax": -6,
+      "front": -6,
+      "side": -1,
+      "public": false,
+      "y": 2.45,
+      "thickness": 0.15,
+      "ceiling": true
+    },
+    {
+      "id": "H-S-18",
+      "xmin": 18,
+      "xmax": 24,
+      "zmin": 6,
+      "zmax": 15,
+      "front": 6,
+      "side": 1,
+      "public": true,
+      "y": 0,
+      "thickness": 0.15
+    },
+    {
+      "id": "H-S-18",
+      "xmin": 18,
+      "xmax": 24,
+      "zmin": 6,
+      "zmax": 15,
+      "front": 6,
+      "side": 1,
+      "public": true,
+      "y": 2.45,
+      "thickness": 0.15,
+      "ceiling": true
+    },
+    {
+      "id": "H-S-24",
+      "xmin": 24,
+      "xmax": 30,
+      "zmin": 6,
+      "zmax": 15,
+      "front": 6,
+      "side": 1,
+      "public": false,
+      "y": 0,
+      "thickness": 0.15
+    },
+    {
+      "id": "H-S-24",
+      "xmin": 24,
+      "xmax": 30,
+      "zmin": 6,
+      "zmax": 15,
+      "front": 6,
+      "side": 1,
+      "public": false,
+      "y": 2.45,
+      "thickness": 0.15,
+      "ceiling": true
+    },
+    {
+      "id": "H-S-30",
+      "xmin": 30,
+      "xmax": 36,
+      "zmin": 6,
+      "zmax": 15,
+      "front": 6,
+      "side": 1,
+      "public": false,
+      "y": 0,
+      "thickness": 0.15
+    },
+    {
+      "id": "H-S-30",
+      "xmin": 30,
+      "xmax": 36,
+      "zmin": 6,
+      "zmax": 15,
+      "front": 6,
+      "side": 1,
+      "public": false,
+      "y": 2.45,
+      "thickness": 0.15,
+      "ceiling": true
+    },
+    {
+      "id": "H-S-42",
+      "xmin": 42,
+      "xmax": 48,
+      "zmin": 6,
+      "zmax": 15,
+      "front": 6,
+      "side": 1,
+      "public": false,
+      "y": 0,
+      "thickness": 0.15
+    },
+    {
+      "id": "H-S-42",
+      "xmin": 42,
+      "xmax": 48,
+      "zmin": 6,
+      "zmax": 15,
+      "front": 6,
+      "side": 1,
+      "public": false,
+      "y": 2.45,
+      "thickness": 0.15,
+      "ceiling": true
+    }
+  ],
+  "roofRepeats": [
+    {
+      "id": "H-N-18-ROOF-0",
+      "family": "B12-STRUCT-001-S04",
+      "x": 18,
+      "z": -15,
+      "length": 3,
+      "span": 6,
+      "eave": 5.2,
+      "rise": 2.8,
+      "thickness": 0.15,
+      "open_ends": true
+    },
+    {
+      "id": "H-N-18-ROOF-1",
+      "family": "B12-STRUCT-001-S04",
+      "x": 18,
+      "z": -12,
+      "length": 3,
+      "span": 6,
+      "eave": 5.2,
+      "rise": 2.8,
+      "thickness": 0.15,
+      "open_ends": true
+    },
+    {
+      "id": "H-N-18-ROOF-2",
+      "family": "B12-STRUCT-001-S04",
+      "x": 18,
+      "z": -9,
+      "length": 3,
+      "span": 6,
+      "eave": 5.2,
+      "rise": 2.8,
+      "thickness": 0.15,
+      "open_ends": true
+    },
+    {
+      "id": "H-N-24-ROOF-0",
+      "family": "B12-STRUCT-001-S04",
+      "x": 24,
+      "z": -15,
+      "length": 3,
+      "span": 6,
+      "eave": 5.2,
+      "rise": 2.8,
+      "thickness": 0.15,
+      "open_ends": true
+    },
+    {
+      "id": "H-N-24-ROOF-1",
+      "family": "B12-STRUCT-001-S04",
+      "x": 24,
+      "z": -12,
+      "length": 3,
+      "span": 6,
+      "eave": 5.2,
+      "rise": 2.8,
+      "thickness": 0.15,
+      "open_ends": true
+    },
+    {
+      "id": "H-N-24-ROOF-2",
+      "family": "B12-STRUCT-001-S04",
+      "x": 24,
+      "z": -9,
+      "length": 3,
+      "span": 6,
+      "eave": 5.2,
+      "rise": 2.8,
+      "thickness": 0.15,
+      "open_ends": true
+    },
+    {
+      "id": "H-N-30-ROOF-0",
+      "family": "B12-STRUCT-001-S04",
+      "x": 30,
+      "z": -15,
+      "length": 3,
+      "span": 6,
+      "eave": 5.2,
+      "rise": 2.8,
+      "thickness": 0.15,
+      "open_ends": true
+    },
+    {
+      "id": "H-N-30-ROOF-1",
+      "family": "B12-STRUCT-001-S04",
+      "x": 30,
+      "z": -12,
+      "length": 3,
+      "span": 6,
+      "eave": 5.2,
+      "rise": 2.8,
+      "thickness": 0.15,
+      "open_ends": true
+    },
+    {
+      "id": "H-N-30-ROOF-2",
+      "family": "B12-STRUCT-001-S04",
+      "x": 30,
+      "z": -9,
+      "length": 3,
+      "span": 6,
+      "eave": 5.2,
+      "rise": 2.8,
+      "thickness": 0.15,
+      "open_ends": true
+    },
+    {
+      "id": "H-N-42-ROOF-0",
+      "family": "B12-STRUCT-001-S04",
+      "x": 42,
+      "z": -15,
+      "length": 3,
+      "span": 6,
+      "eave": 5.2,
+      "rise": 2.8,
+      "thickness": 0.15,
+      "open_ends": true
+    },
+    {
+      "id": "H-N-42-ROOF-1",
+      "family": "B12-STRUCT-001-S04",
+      "x": 42,
+      "z": -12,
+      "length": 3,
+      "span": 6,
+      "eave": 5.2,
+      "rise": 2.8,
+      "thickness": 0.15,
+      "open_ends": true
+    },
+    {
+      "id": "H-N-42-ROOF-2",
+      "family": "B12-STRUCT-001-S04",
+      "x": 42,
+      "z": -9,
+      "length": 3,
+      "span": 6,
+      "eave": 5.2,
+      "rise": 2.8,
+      "thickness": 0.15,
+      "open_ends": true
+    },
+    {
+      "id": "H-S-18-ROOF-0",
+      "family": "B12-STRUCT-001-S04",
+      "x": 18,
+      "z": 6,
+      "length": 3,
+      "span": 6,
+      "eave": 5.2,
+      "rise": 2.8,
+      "thickness": 0.15,
+      "open_ends": true
+    },
+    {
+      "id": "H-S-18-ROOF-1",
+      "family": "B12-STRUCT-001-S04",
+      "x": 18,
+      "z": 9,
+      "length": 3,
+      "span": 6,
+      "eave": 5.2,
+      "rise": 2.8,
+      "thickness": 0.15,
+      "open_ends": true
+    },
+    {
+      "id": "H-S-18-ROOF-2",
+      "family": "B12-STRUCT-001-S04",
+      "x": 18,
+      "z": 12,
+      "length": 3,
+      "span": 6,
+      "eave": 5.2,
+      "rise": 2.8,
+      "thickness": 0.15,
+      "open_ends": true
+    },
+    {
+      "id": "H-S-24-ROOF-0",
+      "family": "B12-STRUCT-001-S04",
+      "x": 24,
+      "z": 6,
+      "length": 3,
+      "span": 6,
+      "eave": 5.2,
+      "rise": 2.8,
+      "thickness": 0.15,
+      "open_ends": true
+    },
+    {
+      "id": "H-S-24-ROOF-1",
+      "family": "B12-STRUCT-001-S04",
+      "x": 24,
+      "z": 9,
+      "length": 3,
+      "span": 6,
+      "eave": 5.2,
+      "rise": 2.8,
+      "thickness": 0.15,
+      "open_ends": true
+    },
+    {
+      "id": "H-S-24-ROOF-2",
+      "family": "B12-STRUCT-001-S04",
+      "x": 24,
+      "z": 12,
+      "length": 3,
+      "span": 6,
+      "eave": 5.2,
+      "rise": 2.8,
+      "thickness": 0.15,
+      "open_ends": true
+    },
+    {
+      "id": "H-S-30-ROOF-0",
+      "family": "B12-STRUCT-001-S04",
+      "x": 30,
+      "z": 6,
+      "length": 3,
+      "span": 6,
+      "eave": 5.2,
+      "rise": 2.8,
+      "thickness": 0.15,
+      "open_ends": true
+    },
+    {
+      "id": "H-S-30-ROOF-1",
+      "family": "B12-STRUCT-001-S04",
+      "x": 30,
+      "z": 9,
+      "length": 3,
+      "span": 6,
+      "eave": 5.2,
+      "rise": 2.8,
+      "thickness": 0.15,
+      "open_ends": true
+    },
+    {
+      "id": "H-S-30-ROOF-2",
+      "family": "B12-STRUCT-001-S04",
+      "x": 30,
+      "z": 12,
+      "length": 3,
+      "span": 6,
+      "eave": 5.2,
+      "rise": 2.8,
+      "thickness": 0.15,
+      "open_ends": true
+    },
+    {
+      "id": "H-S-42-ROOF-0",
+      "family": "B12-STRUCT-001-S04",
+      "x": 42,
+      "z": 6,
+      "length": 3,
+      "span": 6,
+      "eave": 5.2,
+      "rise": 2.8,
+      "thickness": 0.15,
+      "open_ends": true
+    },
+    {
+      "id": "H-S-42-ROOF-1",
+      "family": "B12-STRUCT-001-S04",
+      "x": 42,
+      "z": 9,
+      "length": 3,
+      "span": 6,
+      "eave": 5.2,
+      "rise": 2.8,
+      "thickness": 0.15,
+      "open_ends": true
+    },
+    {
+      "id": "H-S-42-ROOF-2",
+      "family": "B12-STRUCT-001-S04",
+      "x": 42,
+      "z": 12,
+      "length": 3,
+      "span": 6,
+      "eave": 5.2,
+      "rise": 2.8,
+      "thickness": 0.15,
+      "open_ends": true
+    },
+    {
+      "id": "ARCH-ROOF-0",
+      "family": "B12-STRUCT-001-S04",
+      "x": 42,
+      "z": -6,
+      "length": 3,
+      "span": 6,
+      "eave": 5.2,
+      "rise": 2.8,
+      "thickness": 0.15,
+      "open_ends": true
+    },
+    {
+      "id": "ARCH-ROOF-1",
+      "family": "B12-STRUCT-001-S04",
+      "x": 42,
+      "z": -3,
+      "length": 3,
+      "span": 6,
+      "eave": 5.2,
+      "rise": 2.8,
+      "thickness": 0.15,
+      "open_ends": true
+    },
+    {
+      "id": "ARCH-ROOF-2",
+      "family": "B12-STRUCT-001-S04",
+      "x": 42,
+      "z": 0,
+      "length": 3,
+      "span": 6,
+      "eave": 5.2,
+      "rise": 2.8,
+      "thickness": 0.15,
+      "open_ends": true
+    },
+    {
+      "id": "ARCH-ROOF-3",
+      "family": "B12-STRUCT-001-S04",
+      "x": 42,
+      "z": 3,
+      "length": 3,
+      "span": 6,
+      "eave": 5.2,
+      "rise": 2.8,
+      "thickness": 0.15,
+      "open_ends": true
+    }
+  ],
+  "terminalGables": [
+    {
+      "id": "H-N-18-GABLE--15",
+      "family": "B12-STRUCT-001-S03 / triangular end only",
+      "x": 18,
+      "z": -15,
+      "span": 6,
+      "base": 5.2,
+      "rise": 2.8,
+      "depth": 0.3
+    },
+    {
+      "id": "H-N-18-GABLE--6",
+      "family": "B12-STRUCT-001-S03 / triangular end only",
+      "x": 18,
+      "z": -6,
+      "span": 6,
+      "base": 5.2,
+      "rise": 2.8,
+      "depth": 0.3
+    },
+    {
+      "id": "H-N-24-GABLE--15",
+      "family": "B12-STRUCT-001-S03 / triangular end only",
+      "x": 24,
+      "z": -15,
+      "span": 6,
+      "base": 5.2,
+      "rise": 2.8,
+      "depth": 0.3
+    },
+    {
+      "id": "H-N-24-GABLE--6",
+      "family": "B12-STRUCT-001-S03 / triangular end only",
+      "x": 24,
+      "z": -6,
+      "span": 6,
+      "base": 5.2,
+      "rise": 2.8,
+      "depth": 0.3
+    },
+    {
+      "id": "H-N-30-GABLE--15",
+      "family": "B12-STRUCT-001-S03 / triangular end only",
+      "x": 30,
+      "z": -15,
+      "span": 6,
+      "base": 5.2,
+      "rise": 2.8,
+      "depth": 0.3
+    },
+    {
+      "id": "H-N-30-GABLE--6",
+      "family": "B12-STRUCT-001-S03 / triangular end only",
+      "x": 30,
+      "z": -6,
+      "span": 6,
+      "base": 5.2,
+      "rise": 2.8,
+      "depth": 0.3
+    },
+    {
+      "id": "H-N-42-GABLE--15",
+      "family": "B12-STRUCT-001-S03 / triangular end only",
+      "x": 42,
+      "z": -15,
+      "span": 6,
+      "base": 5.2,
+      "rise": 2.8,
+      "depth": 0.3
+    },
+    {
+      "id": "H-S-18-GABLE-6",
+      "family": "B12-STRUCT-001-S03 / triangular end only",
+      "x": 18,
+      "z": 6,
+      "span": 6,
+      "base": 5.2,
+      "rise": 2.8,
+      "depth": 0.3
+    },
+    {
+      "id": "H-S-18-GABLE-15",
+      "family": "B12-STRUCT-001-S03 / triangular end only",
+      "x": 18,
+      "z": 15,
+      "span": 6,
+      "base": 5.2,
+      "rise": 2.8,
+      "depth": 0.3
+    },
+    {
+      "id": "H-S-24-GABLE-6",
+      "family": "B12-STRUCT-001-S03 / triangular end only",
+      "x": 24,
+      "z": 6,
+      "span": 6,
+      "base": 5.2,
+      "rise": 2.8,
+      "depth": 0.3
+    },
+    {
+      "id": "H-S-24-GABLE-15",
+      "family": "B12-STRUCT-001-S03 / triangular end only",
+      "x": 24,
+      "z": 15,
+      "span": 6,
+      "base": 5.2,
+      "rise": 2.8,
+      "depth": 0.3
+    },
+    {
+      "id": "H-S-30-GABLE-6",
+      "family": "B12-STRUCT-001-S03 / triangular end only",
+      "x": 30,
+      "z": 6,
+      "span": 6,
+      "base": 5.2,
+      "rise": 2.8,
+      "depth": 0.3
+    },
+    {
+      "id": "H-S-30-GABLE-15",
+      "family": "B12-STRUCT-001-S03 / triangular end only",
+      "x": 30,
+      "z": 15,
+      "span": 6,
+      "base": 5.2,
+      "rise": 2.8,
+      "depth": 0.3
+    },
+    {
+      "id": "H-S-42-GABLE-15",
+      "family": "B12-STRUCT-001-S03 / triangular end only",
+      "x": 42,
+      "z": 15,
+      "span": 6,
+      "base": 5.2,
+      "rise": 2.8,
+      "depth": 0.3
+    }
+  ],
+  "placements": [
+    {
+      "id": "H-N-18-ENTRY",
+      "family": "B12-STRUCT-001-S02",
+      "axis": "x",
+      "at": -6,
+      "start": 18,
+      "end": 21,
+      "base": 0,
+      "height": 2.6
+    },
+    {
+      "id": "H-N-18-WIN",
+      "family": "B12-STRUCT-001-S01",
+      "axis": "x",
+      "at": -6,
+      "start": 21,
+      "end": 24,
+      "base": 0,
+      "height": 2.6
+    },
+    {
+      "id": "H-N-18-UPPER-GABLE",
+      "family": "B12-STRUCT-001-S03 / rectangular upper part",
+      "axis": "x",
+      "at": -6,
+      "start": 18,
+      "end": 24,
+      "base": 2.6,
+      "height": 2.6
+    },
+    {
+      "id": "H-N-18-BACK-0-0",
+      "family": "B12-STRUCT-001-S01",
+      "axis": "x",
+      "at": -15,
+      "start": 18,
+      "end": 21,
+      "base": 0,
+      "height": 2.6
+    },
+    {
+      "id": "H-N-18-BACK-0-1",
+      "family": "B12-STRUCT-001-S01",
+      "axis": "x",
+      "at": -15,
+      "start": 21,
+      "end": 24,
+      "base": 0,
+      "height": 2.6
+    },
+    {
+      "id": "H-N-18-BACK-UPPER-GABLE",
+      "family": "B12-STRUCT-001-S03 / rectangular upper part",
+      "axis": "x",
+      "at": -15,
+      "start": 18,
+      "end": 24,
+      "base": 2.6,
+      "height": 2.6
+    },
+    {
+      "id": "H-N-18-SIDE-18-0-0",
+      "family": "B12-WALL-BLANK-P01",
+      "axis": "z",
+      "at": 18,
+      "start": -15,
+      "end": -12,
+      "base": 0,
+      "height": 2.6
+    },
+    {
+      "id": "H-N-18-SIDE-18-0-1",
+      "family": "B12-WALL-BLANK-P01",
+      "axis": "z",
+      "at": 18,
+      "start": -12,
+      "end": -9,
+      "base": 0,
+      "height": 2.6
+    },
+    {
+      "id": "H-N-18-SIDE-18-0-2",
+      "family": "B12-WALL-BLANK-P01",
+      "axis": "z",
+      "at": 18,
+      "start": -9,
+      "end": -6,
+      "base": 0,
+      "height": 2.6
+    },
+    {
+      "id": "H-N-18-SIDE-18-2.6-0",
+      "family": "B12-WALL-BLANK-P01",
+      "axis": "z",
+      "at": 18,
+      "start": -15,
+      "end": -12,
+      "base": 2.6,
+      "height": 2.6
+    },
+    {
+      "id": "H-N-18-SIDE-18-2.6-1",
+      "family": "B12-WALL-BLANK-P01",
+      "axis": "z",
+      "at": 18,
+      "start": -12,
+      "end": -9,
+      "base": 2.6,
+      "height": 2.6
+    },
+    {
+      "id": "H-N-18-SIDE-18-2.6-2",
+      "family": "B12-WALL-BLANK-P01",
+      "axis": "z",
+      "at": 18,
+      "start": -9,
+      "end": -6,
+      "base": 2.6,
+      "height": 2.6
+    },
+    {
+      "id": "H-N-18-SIDE-24-0-0",
+      "family": "B12-WALL-BLANK-P01",
+      "axis": "z",
+      "at": 24,
+      "start": -15,
+      "end": -12,
+      "base": 0,
+      "height": 2.6
+    },
+    {
+      "id": "H-N-18-SIDE-24-0-1",
+      "family": "B12-WALL-BLANK-P01",
+      "axis": "z",
+      "at": 24,
+      "start": -12,
+      "end": -9,
+      "base": 0,
+      "height": 2.6
+    },
+    {
+      "id": "H-N-18-SIDE-24-0-2",
+      "family": "B12-WALL-BLANK-P01",
+      "axis": "z",
+      "at": 24,
+      "start": -9,
+      "end": -6,
+      "base": 0,
+      "height": 2.6
+    },
+    {
+      "id": "H-N-18-SIDE-24-2.6-0",
+      "family": "B12-WALL-BLANK-P01",
+      "axis": "z",
+      "at": 24,
+      "start": -15,
+      "end": -12,
+      "base": 2.6,
+      "height": 2.6
+    },
+    {
+      "id": "H-N-18-SIDE-24-2.6-1",
+      "family": "B12-WALL-BLANK-P01",
+      "axis": "z",
+      "at": 24,
+      "start": -12,
+      "end": -9,
+      "base": 2.6,
+      "height": 2.6
+    },
+    {
+      "id": "H-N-18-SIDE-24-2.6-2",
+      "family": "B12-WALL-BLANK-P01",
+      "axis": "z",
+      "at": 24,
+      "start": -9,
+      "end": -6,
+      "base": 2.6,
+      "height": 2.6
+    },
+    {
+      "id": "H-N-24-ENTRY",
+      "family": "B12-STRUCT-001-S02",
+      "axis": "x",
+      "at": -6,
+      "start": 24,
+      "end": 27,
+      "base": 0,
+      "height": 2.6
+    },
+    {
+      "id": "H-N-24-WIN",
+      "family": "B12-STRUCT-001-S01",
+      "axis": "x",
+      "at": -6,
+      "start": 27,
+      "end": 30,
+      "base": 0,
+      "height": 2.6
+    },
+    {
+      "id": "H-N-24-UPPER-GABLE",
+      "family": "B12-STRUCT-001-S03 / rectangular upper part",
+      "axis": "x",
+      "at": -6,
+      "start": 24,
+      "end": 30,
+      "base": 2.6,
+      "height": 2.6
+    },
+    {
+      "id": "H-N-24-BACK-0-0",
+      "family": "B12-STRUCT-001-S01",
+      "axis": "x",
+      "at": -15,
+      "start": 24,
+      "end": 27,
+      "base": 0,
+      "height": 2.6
+    },
+    {
+      "id": "H-N-24-BACK-0-1",
+      "family": "B12-STRUCT-001-S01",
+      "axis": "x",
+      "at": -15,
+      "start": 27,
+      "end": 30,
+      "base": 0,
+      "height": 2.6
+    },
+    {
+      "id": "H-N-24-BACK-UPPER-GABLE",
+      "family": "B12-STRUCT-001-S03 / rectangular upper part",
+      "axis": "x",
+      "at": -15,
+      "start": 24,
+      "end": 30,
+      "base": 2.6,
+      "height": 2.6
+    },
+    {
+      "id": "H-N-24-SIDE-30-0-0",
+      "family": "B12-WALL-BLANK-P01",
+      "axis": "z",
+      "at": 30,
+      "start": -15,
+      "end": -12,
+      "base": 0,
+      "height": 2.6
+    },
+    {
+      "id": "H-N-24-SIDE-30-0-1",
+      "family": "B12-WALL-BLANK-P01",
+      "axis": "z",
+      "at": 30,
+      "start": -12,
+      "end": -9,
+      "base": 0,
+      "height": 2.6
+    },
+    {
+      "id": "H-N-24-SIDE-30-0-2",
+      "family": "B12-WALL-BLANK-P01",
+      "axis": "z",
+      "at": 30,
+      "start": -9,
+      "end": -6,
+      "base": 0,
+      "height": 2.6
+    },
+    {
+      "id": "H-N-24-SIDE-30-2.6-0",
+      "family": "B12-WALL-BLANK-P01",
+      "axis": "z",
+      "at": 30,
+      "start": -15,
+      "end": -12,
+      "base": 2.6,
+      "height": 2.6
+    },
+    {
+      "id": "H-N-24-SIDE-30-2.6-1",
+      "family": "B12-WALL-BLANK-P01",
+      "axis": "z",
+      "at": 30,
+      "start": -12,
+      "end": -9,
+      "base": 2.6,
+      "height": 2.6
+    },
+    {
+      "id": "H-N-24-SIDE-30-2.6-2",
+      "family": "B12-WALL-BLANK-P01",
+      "axis": "z",
+      "at": 30,
+      "start": -9,
+      "end": -6,
+      "base": 2.6,
+      "height": 2.6
+    },
+    {
+      "id": "H-N-30-ENTRY",
+      "family": "B12-STRUCT-001-S02",
+      "axis": "x",
+      "at": -6,
+      "start": 30,
+      "end": 33,
+      "base": 0,
+      "height": 2.6
+    },
+    {
+      "id": "H-N-30-WIN",
+      "family": "B12-STRUCT-001-S01",
+      "axis": "x",
+      "at": -6,
+      "start": 33,
+      "end": 36,
+      "base": 0,
+      "height": 2.6
+    },
+    {
+      "id": "H-N-30-UPPER-GABLE",
+      "family": "B12-STRUCT-001-S03 / rectangular upper part",
+      "axis": "x",
+      "at": -6,
+      "start": 30,
+      "end": 36,
+      "base": 2.6,
+      "height": 2.6
+    },
+    {
+      "id": "H-N-30-BACK-0-0",
+      "family": "B12-STRUCT-001-S01",
+      "axis": "x",
+      "at": -15,
+      "start": 30,
+      "end": 33,
+      "base": 0,
+      "height": 2.6
+    },
+    {
+      "id": "H-N-30-BACK-0-1",
+      "family": "B12-STRUCT-001-S01",
+      "axis": "x",
+      "at": -15,
+      "start": 33,
+      "end": 36,
+      "base": 0,
+      "height": 2.6
+    },
+    {
+      "id": "H-N-30-BACK-UPPER-GABLE",
+      "family": "B12-STRUCT-001-S03 / rectangular upper part",
+      "axis": "x",
+      "at": -15,
+      "start": 30,
+      "end": 36,
+      "base": 2.6,
+      "height": 2.6
+    },
+    {
+      "id": "H-N-30-SIDE-36-0-0",
+      "family": "B12-WALL-BLANK-P01",
+      "axis": "z",
+      "at": 36,
+      "start": -15,
+      "end": -12,
+      "base": 0,
+      "height": 2.6
+    },
+    {
+      "id": "H-N-30-SIDE-36-0-1",
+      "family": "B12-WALL-BLANK-P01",
+      "axis": "z",
+      "at": 36,
+      "start": -12,
+      "end": -9,
+      "base": 0,
+      "height": 2.6
+    },
+    {
+      "id": "H-N-30-SIDE-36-0-2",
+      "family": "B12-WALL-BLANK-P01",
+      "axis": "z",
+      "at": 36,
+      "start": -9,
+      "end": -6,
+      "base": 0,
+      "height": 2.6
+    },
+    {
+      "id": "H-N-30-SIDE-36-2.6-0",
+      "family": "B12-WALL-BLANK-P01",
+      "axis": "z",
+      "at": 36,
+      "start": -15,
+      "end": -12,
+      "base": 2.6,
+      "height": 2.6
+    },
+    {
+      "id": "H-N-30-SIDE-36-2.6-1",
+      "family": "B12-WALL-BLANK-P01",
+      "axis": "z",
+      "at": 36,
+      "start": -12,
+      "end": -9,
+      "base": 2.6,
+      "height": 2.6
+    },
+    {
+      "id": "H-N-30-SIDE-36-2.6-2",
+      "family": "B12-WALL-BLANK-P01",
+      "axis": "z",
+      "at": 36,
+      "start": -9,
+      "end": -6,
+      "base": 2.6,
+      "height": 2.6
+    },
+    {
+      "id": "H-N-42-ENTRY",
+      "family": "B12-STRUCT-001-S02",
+      "axis": "x",
+      "at": -6,
+      "start": 42,
+      "end": 45,
+      "base": 0,
+      "height": 2.6
+    },
+    {
+      "id": "H-N-42-WIN",
+      "family": "B12-STRUCT-001-S01",
+      "axis": "x",
+      "at": -6,
+      "start": 45,
+      "end": 48,
+      "base": 0,
+      "height": 2.6
+    },
+    {
+      "id": "H-N-42-BACK-0-0",
+      "family": "B12-STRUCT-001-S01",
+      "axis": "x",
+      "at": -15,
+      "start": 42,
+      "end": 45,
+      "base": 0,
+      "height": 2.6
+    },
+    {
+      "id": "H-N-42-BACK-0-1",
+      "family": "B12-STRUCT-001-S01",
+      "axis": "x",
+      "at": -15,
+      "start": 45,
+      "end": 48,
+      "base": 0,
+      "height": 2.6
+    },
+    {
+      "id": "H-N-42-BACK-UPPER-GABLE",
+      "family": "B12-STRUCT-001-S03 / rectangular upper part",
+      "axis": "x",
+      "at": -15,
+      "start": 42,
+      "end": 48,
+      "base": 2.6,
+      "height": 2.6
+    },
+    {
+      "id": "H-N-42-SIDE-42-0-0",
+      "family": "B12-WALL-BLANK-P01",
+      "axis": "z",
+      "at": 42,
+      "start": -15,
+      "end": -12,
+      "base": 0,
+      "height": 2.6
+    },
+    {
+      "id": "H-N-42-SIDE-42-0-1",
+      "family": "B12-WALL-BLANK-P01",
+      "axis": "z",
+      "at": 42,
+      "start": -12,
+      "end": -9,
+      "base": 0,
+      "height": 2.6
+    },
+    {
+      "id": "H-N-42-SIDE-42-0-2",
+      "family": "B12-WALL-BLANK-P01",
+      "axis": "z",
+      "at": 42,
+      "start": -9,
+      "end": -6,
+      "base": 0,
+      "height": 2.6
+    },
+    {
+      "id": "H-N-42-SIDE-42-2.6-0",
+      "family": "B12-WALL-BLANK-P01",
+      "axis": "z",
+      "at": 42,
+      "start": -15,
+      "end": -12,
+      "base": 2.6,
+      "height": 2.6
+    },
+    {
+      "id": "H-N-42-SIDE-42-2.6-1",
+      "family": "B12-WALL-BLANK-P01",
+      "axis": "z",
+      "at": 42,
+      "start": -12,
+      "end": -9,
+      "base": 2.6,
+      "height": 2.6
+    },
+    {
+      "id": "H-N-42-SIDE-42-2.6-2",
+      "family": "B12-WALL-BLANK-P01",
+      "axis": "z",
+      "at": 42,
+      "start": -9,
+      "end": -6,
+      "base": 2.6,
+      "height": 2.6
+    },
+    {
+      "id": "H-N-42-SIDE-48-0-0",
+      "family": "B12-WALL-BLANK-P01",
+      "axis": "z",
+      "at": 48,
+      "start": -15,
+      "end": -12,
+      "base": 0,
+      "height": 2.6
+    },
+    {
+      "id": "H-N-42-SIDE-48-0-1",
+      "family": "B12-WALL-BLANK-P01",
+      "axis": "z",
+      "at": 48,
+      "start": -12,
+      "end": -9,
+      "base": 0,
+      "height": 2.6
+    },
+    {
+      "id": "H-N-42-SIDE-48-0-2",
+      "family": "B12-WALL-BLANK-P01",
+      "axis": "z",
+      "at": 48,
+      "start": -9,
+      "end": -6,
+      "base": 0,
+      "height": 2.6
+    },
+    {
+      "id": "H-N-42-SIDE-48-2.6-0",
+      "family": "B12-WALL-BLANK-P01",
+      "axis": "z",
+      "at": 48,
+      "start": -15,
+      "end": -12,
+      "base": 2.6,
+      "height": 2.6
+    },
+    {
+      "id": "H-N-42-SIDE-48-2.6-1",
+      "family": "B12-WALL-BLANK-P01",
+      "axis": "z",
+      "at": 48,
+      "start": -12,
+      "end": -9,
+      "base": 2.6,
+      "height": 2.6
+    },
+    {
+      "id": "H-N-42-SIDE-48-2.6-2",
+      "family": "B12-WALL-BLANK-P01",
+      "axis": "z",
+      "at": 48,
+      "start": -9,
+      "end": -6,
+      "base": 2.6,
+      "height": 2.6
+    },
+    {
+      "id": "H-S-18-ENTRY",
+      "family": "B12-WIDE-ENTRY-P01",
+      "axis": "x",
+      "at": 6,
+      "start": 18,
+      "end": 21,
+      "base": 0,
+      "height": 2.6
+    },
+    {
+      "id": "H-S-18-WIN",
+      "family": "B12-STRUCT-001-S01",
+      "axis": "x",
+      "at": 6,
+      "start": 21,
+      "end": 24,
+      "base": 0,
+      "height": 2.6
+    },
+    {
+      "id": "H-S-18-UPPER-GABLE",
+      "family": "B12-STRUCT-001-S03 / rectangular upper part",
+      "axis": "x",
+      "at": 6,
+      "start": 18,
+      "end": 24,
+      "base": 2.6,
+      "height": 2.6
+    },
+    {
+      "id": "H-S-18-BACK-0-0",
+      "family": "B12-STRUCT-001-S01",
+      "axis": "x",
+      "at": 15,
+      "start": 18,
+      "end": 21,
+      "base": 0,
+      "height": 2.6
+    },
+    {
+      "id": "H-S-18-BACK-0-1",
+      "family": "B12-STRUCT-001-S01",
+      "axis": "x",
+      "at": 15,
+      "start": 21,
+      "end": 24,
+      "base": 0,
+      "height": 2.6
+    },
+    {
+      "id": "H-S-18-BACK-UPPER-GABLE",
+      "family": "B12-STRUCT-001-S03 / rectangular upper part",
+      "axis": "x",
+      "at": 15,
+      "start": 18,
+      "end": 24,
+      "base": 2.6,
+      "height": 2.6
+    },
+    {
+      "id": "H-S-18-SIDE-18-0-0",
+      "family": "B12-WALL-BLANK-P01",
+      "axis": "z",
+      "at": 18,
+      "start": 6,
+      "end": 9,
+      "base": 0,
+      "height": 2.6
+    },
+    {
+      "id": "H-S-18-SIDE-18-0-1",
+      "family": "B12-WALL-BLANK-P01",
+      "axis": "z",
+      "at": 18,
+      "start": 9,
+      "end": 12,
+      "base": 0,
+      "height": 2.6
+    },
+    {
+      "id": "H-S-18-SIDE-18-0-2",
+      "family": "B12-WALL-BLANK-P01",
+      "axis": "z",
+      "at": 18,
+      "start": 12,
+      "end": 15,
+      "base": 0,
+      "height": 2.6
+    },
+    {
+      "id": "H-S-18-SIDE-18-2.6-0",
+      "family": "B12-WALL-BLANK-P01",
+      "axis": "z",
+      "at": 18,
+      "start": 6,
+      "end": 9,
+      "base": 2.6,
+      "height": 2.6
+    },
+    {
+      "id": "H-S-18-SIDE-18-2.6-1",
+      "family": "B12-WALL-BLANK-P01",
+      "axis": "z",
+      "at": 18,
+      "start": 9,
+      "end": 12,
+      "base": 2.6,
+      "height": 2.6
+    },
+    {
+      "id": "H-S-18-SIDE-18-2.6-2",
+      "family": "B12-WALL-BLANK-P01",
+      "axis": "z",
+      "at": 18,
+      "start": 12,
+      "end": 15,
+      "base": 2.6,
+      "height": 2.6
+    },
+    {
+      "id": "H-S-18-SIDE-24-0-0",
+      "family": "B12-WALL-BLANK-P01",
+      "axis": "z",
+      "at": 24,
+      "start": 6,
+      "end": 9,
+      "base": 0,
+      "height": 2.6
+    },
+    {
+      "id": "H-S-18-SIDE-24-0-1",
+      "family": "B12-WALL-BLANK-P01",
+      "axis": "z",
+      "at": 24,
+      "start": 9,
+      "end": 12,
+      "base": 0,
+      "height": 2.6
+    },
+    {
+      "id": "H-S-18-SIDE-24-0-2",
+      "family": "B12-WALL-BLANK-P01",
+      "axis": "z",
+      "at": 24,
+      "start": 12,
+      "end": 15,
+      "base": 0,
+      "height": 2.6
+    },
+    {
+      "id": "H-S-18-SIDE-24-2.6-0",
+      "family": "B12-WALL-BLANK-P01",
+      "axis": "z",
+      "at": 24,
+      "start": 6,
+      "end": 9,
+      "base": 2.6,
+      "height": 2.6
+    },
+    {
+      "id": "H-S-18-SIDE-24-2.6-1",
+      "family": "B12-WALL-BLANK-P01",
+      "axis": "z",
+      "at": 24,
+      "start": 9,
+      "end": 12,
+      "base": 2.6,
+      "height": 2.6
+    },
+    {
+      "id": "H-S-18-SIDE-24-2.6-2",
+      "family": "B12-WALL-BLANK-P01",
+      "axis": "z",
+      "at": 24,
+      "start": 12,
+      "end": 15,
+      "base": 2.6,
+      "height": 2.6
+    },
+    {
+      "id": "H-S-24-ENTRY",
+      "family": "B12-STRUCT-001-S02",
+      "axis": "x",
+      "at": 6,
+      "start": 24,
+      "end": 27,
+      "base": 0,
+      "height": 2.6
+    },
+    {
+      "id": "H-S-24-WIN",
+      "family": "B12-STRUCT-001-S01",
+      "axis": "x",
+      "at": 6,
+      "start": 27,
+      "end": 30,
+      "base": 0,
+      "height": 2.6
+    },
+    {
+      "id": "H-S-24-UPPER-GABLE",
+      "family": "B12-STRUCT-001-S03 / rectangular upper part",
+      "axis": "x",
+      "at": 6,
+      "start": 24,
+      "end": 30,
+      "base": 2.6,
+      "height": 2.6
+    },
+    {
+      "id": "H-S-24-BACK-0-0",
+      "family": "B12-STRUCT-001-S01",
+      "axis": "x",
+      "at": 15,
+      "start": 24,
+      "end": 27,
+      "base": 0,
+      "height": 2.6
+    },
+    {
+      "id": "H-S-24-BACK-0-1",
+      "family": "B12-STRUCT-001-S01",
+      "axis": "x",
+      "at": 15,
+      "start": 27,
+      "end": 30,
+      "base": 0,
+      "height": 2.6
+    },
+    {
+      "id": "H-S-24-BACK-UPPER-GABLE",
+      "family": "B12-STRUCT-001-S03 / rectangular upper part",
+      "axis": "x",
+      "at": 15,
+      "start": 24,
+      "end": 30,
+      "base": 2.6,
+      "height": 2.6
+    },
+    {
+      "id": "H-S-24-SIDE-30-0-0",
+      "family": "B12-WALL-BLANK-P01",
+      "axis": "z",
+      "at": 30,
+      "start": 6,
+      "end": 9,
+      "base": 0,
+      "height": 2.6
+    },
+    {
+      "id": "H-S-24-SIDE-30-0-1",
+      "family": "B12-WALL-BLANK-P01",
+      "axis": "z",
+      "at": 30,
+      "start": 9,
+      "end": 12,
+      "base": 0,
+      "height": 2.6
+    },
+    {
+      "id": "H-S-24-SIDE-30-0-2",
+      "family": "B12-WALL-BLANK-P01",
+      "axis": "z",
+      "at": 30,
+      "start": 12,
+      "end": 15,
+      "base": 0,
+      "height": 2.6
+    },
+    {
+      "id": "H-S-24-SIDE-30-2.6-0",
+      "family": "B12-WALL-BLANK-P01",
+      "axis": "z",
+      "at": 30,
+      "start": 6,
+      "end": 9,
+      "base": 2.6,
+      "height": 2.6
+    },
+    {
+      "id": "H-S-24-SIDE-30-2.6-1",
+      "family": "B12-WALL-BLANK-P01",
+      "axis": "z",
+      "at": 30,
+      "start": 9,
+      "end": 12,
+      "base": 2.6,
+      "height": 2.6
+    },
+    {
+      "id": "H-S-24-SIDE-30-2.6-2",
+      "family": "B12-WALL-BLANK-P01",
+      "axis": "z",
+      "at": 30,
+      "start": 12,
+      "end": 15,
+      "base": 2.6,
+      "height": 2.6
+    },
+    {
+      "id": "H-S-30-ENTRY",
+      "family": "B12-STRUCT-001-S02",
+      "axis": "x",
+      "at": 6,
+      "start": 30,
+      "end": 33,
+      "base": 0,
+      "height": 2.6
+    },
+    {
+      "id": "H-S-30-WIN",
+      "family": "B12-STRUCT-001-S01",
+      "axis": "x",
+      "at": 6,
+      "start": 33,
+      "end": 36,
+      "base": 0,
+      "height": 2.6
+    },
+    {
+      "id": "H-S-30-UPPER-GABLE",
+      "family": "B12-STRUCT-001-S03 / rectangular upper part",
+      "axis": "x",
+      "at": 6,
+      "start": 30,
+      "end": 36,
+      "base": 2.6,
+      "height": 2.6
+    },
+    {
+      "id": "H-S-30-BACK-0-0",
+      "family": "B12-STRUCT-001-S01",
+      "axis": "x",
+      "at": 15,
+      "start": 30,
+      "end": 33,
+      "base": 0,
+      "height": 2.6
+    },
+    {
+      "id": "H-S-30-BACK-0-1",
+      "family": "B12-STRUCT-001-S01",
+      "axis": "x",
+      "at": 15,
+      "start": 33,
+      "end": 36,
+      "base": 0,
+      "height": 2.6
+    },
+    {
+      "id": "H-S-30-BACK-UPPER-GABLE",
+      "family": "B12-STRUCT-001-S03 / rectangular upper part",
+      "axis": "x",
+      "at": 15,
+      "start": 30,
+      "end": 36,
+      "base": 2.6,
+      "height": 2.6
+    },
+    {
+      "id": "H-S-30-SIDE-36-0-0",
+      "family": "B12-WALL-BLANK-P01",
+      "axis": "z",
+      "at": 36,
+      "start": 6,
+      "end": 9,
+      "base": 0,
+      "height": 2.6
+    },
+    {
+      "id": "H-S-30-SIDE-36-0-1",
+      "family": "B12-WALL-BLANK-P01",
+      "axis": "z",
+      "at": 36,
+      "start": 9,
+      "end": 12,
+      "base": 0,
+      "height": 2.6
+    },
+    {
+      "id": "H-S-30-SIDE-36-0-2",
+      "family": "B12-WALL-BLANK-P01",
+      "axis": "z",
+      "at": 36,
+      "start": 12,
+      "end": 15,
+      "base": 0,
+      "height": 2.6
+    },
+    {
+      "id": "H-S-30-SIDE-36-2.6-0",
+      "family": "B12-WALL-BLANK-P01",
+      "axis": "z",
+      "at": 36,
+      "start": 6,
+      "end": 9,
+      "base": 2.6,
+      "height": 2.6
+    },
+    {
+      "id": "H-S-30-SIDE-36-2.6-1",
+      "family": "B12-WALL-BLANK-P01",
+      "axis": "z",
+      "at": 36,
+      "start": 9,
+      "end": 12,
+      "base": 2.6,
+      "height": 2.6
+    },
+    {
+      "id": "H-S-30-SIDE-36-2.6-2",
+      "family": "B12-WALL-BLANK-P01",
+      "axis": "z",
+      "at": 36,
+      "start": 12,
+      "end": 15,
+      "base": 2.6,
+      "height": 2.6
+    },
+    {
+      "id": "H-S-42-ENTRY",
+      "family": "B12-STRUCT-001-S02",
+      "axis": "x",
+      "at": 6,
+      "start": 42,
+      "end": 45,
+      "base": 0,
+      "height": 2.6
+    },
+    {
+      "id": "H-S-42-WIN",
+      "family": "B12-STRUCT-001-S01",
+      "axis": "x",
+      "at": 6,
+      "start": 45,
+      "end": 48,
+      "base": 0,
+      "height": 2.6
+    },
+    {
+      "id": "H-S-42-BACK-0-0",
+      "family": "B12-STRUCT-001-S01",
+      "axis": "x",
+      "at": 15,
+      "start": 42,
+      "end": 45,
+      "base": 0,
+      "height": 2.6
+    },
+    {
+      "id": "H-S-42-BACK-0-1",
+      "family": "B12-STRUCT-001-S01",
+      "axis": "x",
+      "at": 15,
+      "start": 45,
+      "end": 48,
+      "base": 0,
+      "height": 2.6
+    },
+    {
+      "id": "H-S-42-BACK-UPPER-GABLE",
+      "family": "B12-STRUCT-001-S03 / rectangular upper part",
+      "axis": "x",
+      "at": 15,
+      "start": 42,
+      "end": 48,
+      "base": 2.6,
+      "height": 2.6
+    },
+    {
+      "id": "H-S-42-SIDE-42-0-0",
+      "family": "B12-WALL-BLANK-P01",
+      "axis": "z",
+      "at": 42,
+      "start": 6,
+      "end": 9,
+      "base": 0,
+      "height": 2.6
+    },
+    {
+      "id": "H-S-42-SIDE-42-0-1",
+      "family": "B12-WALL-BLANK-P01",
+      "axis": "z",
+      "at": 42,
+      "start": 9,
+      "end": 12,
+      "base": 0,
+      "height": 2.6
+    },
+    {
+      "id": "H-S-42-SIDE-42-0-2",
+      "family": "B12-WALL-BLANK-P01",
+      "axis": "z",
+      "at": 42,
+      "start": 12,
+      "end": 15,
+      "base": 0,
+      "height": 2.6
+    },
+    {
+      "id": "H-S-42-SIDE-42-2.6-0",
+      "family": "B12-WALL-BLANK-P01",
+      "axis": "z",
+      "at": 42,
+      "start": 6,
+      "end": 9,
+      "base": 2.6,
+      "height": 2.6
+    },
+    {
+      "id": "H-S-42-SIDE-42-2.6-1",
+      "family": "B12-WALL-BLANK-P01",
+      "axis": "z",
+      "at": 42,
+      "start": 9,
+      "end": 12,
+      "base": 2.6,
+      "height": 2.6
+    },
+    {
+      "id": "H-S-42-SIDE-42-2.6-2",
+      "family": "B12-WALL-BLANK-P01",
+      "axis": "z",
+      "at": 42,
+      "start": 12,
+      "end": 15,
+      "base": 2.6,
+      "height": 2.6
+    },
+    {
+      "id": "H-S-42-SIDE-48-0-0",
+      "family": "B12-WALL-BLANK-P01",
+      "axis": "z",
+      "at": 48,
+      "start": 6,
+      "end": 9,
+      "base": 0,
+      "height": 2.6
+    },
+    {
+      "id": "H-S-42-SIDE-48-0-1",
+      "family": "B12-WALL-BLANK-P01",
+      "axis": "z",
+      "at": 48,
+      "start": 9,
+      "end": 12,
+      "base": 0,
+      "height": 2.6
+    },
+    {
+      "id": "H-S-42-SIDE-48-0-2",
+      "family": "B12-WALL-BLANK-P01",
+      "axis": "z",
+      "at": 48,
+      "start": 12,
+      "end": 15,
+      "base": 0,
+      "height": 2.6
+    },
+    {
+      "id": "H-S-42-SIDE-48-2.6-0",
+      "family": "B12-WALL-BLANK-P01",
+      "axis": "z",
+      "at": 48,
+      "start": 6,
+      "end": 9,
+      "base": 2.6,
+      "height": 2.6
+    },
+    {
+      "id": "H-S-42-SIDE-48-2.6-1",
+      "family": "B12-WALL-BLANK-P01",
+      "axis": "z",
+      "at": 48,
+      "start": 9,
+      "end": 12,
+      "base": 2.6,
+      "height": 2.6
+    },
+    {
+      "id": "H-S-42-SIDE-48-2.6-2",
+      "family": "B12-WALL-BLANK-P01",
+      "axis": "z",
+      "at": 48,
+      "start": 12,
+      "end": 15,
+      "base": 2.6,
+      "height": 2.6
+    },
+    {
+      "id": "LANE-ARCH-42",
+      "family": "B12-LANE-ARCH-WALL-P01",
+      "axis": "z",
+      "at": 42,
+      "start": -6,
+      "end": 6,
+      "base": 0,
+      "height": 5.2
+    },
+    {
+      "id": "LANE-ARCH-48",
+      "family": "B12-LANE-ARCH-WALL-P01",
+      "axis": "z",
+      "at": 48,
+      "start": -6,
+      "end": 6,
+      "base": 0,
+      "height": 5.2
+    },
+    {
+      "id": "WEST-GATE",
+      "family": "B12-WEST-GATE-PORT-P01",
+      "axis": "z",
+      "at": 0,
+      "start": -2,
+      "end": 2,
+      "base": 0,
+      "height": 4.2
+    }
+  ],
+  "routes": {
+    "arrival": [
+      [
+        -2,
+        0
+      ],
+      [
+        14,
+        0
+      ],
+      [
+        38,
+        0
+      ],
+      [
+        45,
+        0
+      ],
+      [
+        58,
+        0
+      ],
+      [
+        80,
+        0
+      ],
+      [
+        88,
+        8
+      ],
+      [
+        78,
+        12
+      ],
+      [
+        66,
+        8
+      ],
+      [
+        58,
+        0
+      ],
+      [
+        38,
+        0
+      ],
+      [
+        14,
+        0
+      ],
+      [
+        -2,
+        0
+      ]
+    ],
+    "publicRoom": [
+      [
+        14,
+        0
+      ],
+      [
+        19.5,
+        0
+      ],
+      [
+        19.5,
+        8.5
+      ],
+      [
+        22,
+        11
+      ],
+      [
+        19.5,
+        8.5
+      ],
+      [
+        19.5,
+        0
+      ],
+      [
+        14,
+        0
+      ]
+    ],
+    "cottageRoom": [
+      [
+        14,
+        0
+      ],
+      [
+        19.5,
+        0
+      ],
+      [
+        19.5,
+        -9
+      ],
+      [
+        22,
+        -11
+      ],
+      [
+        19.5,
+        -9
+      ],
+      [
+        19.5,
+        0
+      ],
+      [
+        14,
+        0
+      ]
+    ]
+  }
+}

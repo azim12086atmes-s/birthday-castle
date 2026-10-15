@@ -1,0 +1,88 @@
+{
+  "schema": "game-room.opening-cutter.v1",
+  "id": "H-N-18-WIN-window",
+  "kind": "window",
+  "widthMeters": 6.0,
+  "heightMeters": 6.0,
+  "sillMeters": 0.0,
+  "depthMeters": 0.3,
+  "source": "window-bay.png",
+  "sourceSha256": "190a1d93732e2cc080ffab78b4cb2d6ca8ffdb31b108b72be02c27611108dbfc",
+  "imageSize": [
+    241,
+    241
+  ],
+  "whitePixelRatio": 0.04364594,
+  "contours": [
+    {
+      "role": "outer",
+      "points": [
+        [
+          0.4375,
+          0.3458333
+        ],
+        [
+          0.4125,
+          0.3166667
+        ],
+        [
+          0.4041667,
+          0.3
+        ],
+        [
+          0.4041667,
+          0.2916667
+        ],
+        [
+          0.4,
+          0.2875
+        ],
+        [
+          0.4,
+          0.1333333
+        ],
+        [
+          0.6,
+          0.1333333
+        ],
+        [
+          0.6,
+          0.2875
+        ],
+        [
+          0.5791667,
+          0.3291667
+        ],
+        [
+          0.55,
+          0.3541667
+        ],
+        [
+          0.5333333,
+          0.3625
+        ],
+        [
+          0.525,
+          0.3625
+        ],
+        [
+          0.5208333,
+          0.3666667
+        ],
+        [
+          0.4791667,
+          0.3666667
+        ]
+      ]
+    }
+  ],
+  "maskFrameMeters": [
+    6,
+    6
+  ],
+  "openingDimensionsMeters": [
+    1.2,
+    1.4
+  ],
+  "authority": "Raster evidence only. Exact dimensions and geometry remain in openings.json and model.mjs; not an approved Boolean cutter."
+}

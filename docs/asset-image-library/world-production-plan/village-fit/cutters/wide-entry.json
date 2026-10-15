@@ -1,0 +1,64 @@
+{
+  "schema": "game-room.opening-cutter.v1",
+  "id": "H-S-18-ENTRY-door",
+  "kind": "door",
+  "widthMeters": 6.0,
+  "heightMeters": 6.0,
+  "sillMeters": 0.0,
+  "depthMeters": 0.3,
+  "source": "wide-entry.png",
+  "sourceSha256": "37eaafce3540861ac45456c8e57435eaad5f551a918225f9a613878c3822790c",
+  "imageSize": [
+    241,
+    241
+  ],
+  "whitePixelRatio": 0.14977359,
+  "contours": [
+    {
+      "role": "outer",
+      "points": [
+        [
+          0.3,
+          0.3541667
+        ],
+        [
+          0.3,
+          0.0
+        ],
+        [
+          0.7,
+          0.0
+        ],
+        [
+          0.7,
+          0.3541667
+        ],
+        [
+          0.6625,
+          0.3666667
+        ],
+        [
+          0.575,
+          0.375
+        ],
+        [
+          0.425,
+          0.375
+        ],
+        [
+          0.3375,
+          0.3666667
+        ]
+      ]
+    }
+  ],
+  "maskFrameMeters": [
+    6,
+    6
+  ],
+  "openingDimensionsMeters": [
+    2.4,
+    2.25
+  ],
+  "authority": "Raster evidence only. Exact dimensions and geometry remain in openings.json and model.mjs; not an approved Boolean cutter."
+}
