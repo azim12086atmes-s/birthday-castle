@@ -1,0 +1,144 @@
+{
+  "status": "pass",
+  "checks": [
+    "Every evaluated mesh vertex and normal is finite, including pointed-frame endpoints",
+    "The complete geometry, before camera culling, stays within 160000 triangles and 160 mesh draws",
+    "Canonical world and accepted room/bed/neck/circular balcony dimensions stay unchanged; exactly one bed remains at the north anchor",
+    "All six mesh apertures are real holes; bed alcove has a deep back/side/top enclosure and the west connection has no infill",
+    "Structural ceiling underside/top measure 18/18.25 m; actual chandelier chain meets the apex, and furniture/textile/table/wall fixture contacts match supports",
+    "Fitted sheet has an open underside; reachable casket reveals a real cavity and separate locket, with proximity/cooldown and correct hinge pose",
+    "Four source-size quarter discs and level neck have continuous ray-tested seams; trimmed arc and neck rails contain the outer edge without crossing the passage",
+    "Every indoor/balcony return has drawn floor support, including the full south entrance apron",
+    "Both complete room/balcony returns pass swept movement; furniture/glass/edge collisions, rug steps and canonical source immutability remain intact"
+  ],
+  "routes": {
+    "bedroom": {
+      "status": "pass",
+      "length_m": 53.11857372198866,
+      "travelled_m": 53.11857372198884,
+      "position": {
+        "x": 0,
+        "z": 12.000000000000002
+      }
+    },
+    "balcony": {
+      "status": "pass",
+      "length_m": 76.22724874931723,
+      "travelled_m": 76.22724874931721,
+      "position": {
+        "x": -5e-324,
+        "z": 12.000000000000002
+      }
+    }
+  },
+  "source_unchanged": true,
+  "component_instances": 45,
+  "complete_geometry_budget": {
+    "triangles": 142020,
+    "mesh_draws": 135
+  },
+  "apertures": 6,
+  "source_hashes": [
+    {
+      "file": "../../world-layout/layout.json",
+      "sha256": "0a4849d55bc9f9614a231b1e172fc6ff801831a401ab246df6477e99ea39f773"
+    },
+    {
+      "file": "../blockout/source.json",
+      "sha256": "1daaaa4799fac22ce7858b7027c3209ea890f53467d721889c83f86cc7976aa6"
+    },
+    {
+      "file": "../blockout/proposal.json",
+      "sha256": "5e55a5fc5535e16fc430dbddde45921b04125c9f1422a1f799e1e0d70c7a6a33"
+    },
+    {
+      "file": "../blockout/geography.mjs",
+      "sha256": "2f2092ca774529793b3397db97ad48ea3ea4286cd83acee43426da5bb285c952"
+    },
+    {
+      "file": "../../completion-pass/INT-R02/INT-R02.png",
+      "sha256": "0e1934ceabd37741ad69e63cf85eb31d7f55f021ab0fd41f070a829f90c6f44e"
+    },
+    {
+      "file": "../../completion-pass/INT-R02/schedule.json",
+      "sha256": "c71ba1901df5b58b7521ced245127ce2c7c4667651a69b4cfc0b2bffca781430"
+    },
+    {
+      "file": "../../completion-pass/INT-SUITE-FURN-001/INT-SUITE-FURN-001.png",
+      "sha256": "5ca62205be9b18b5b70af37de9f22e269be5e502b8e1fe0d17adae9a06184015"
+    },
+    {
+      "file": "../../completion-pass/INT-SUITE-FURN-001/components.json",
+      "sha256": "956be967b85d942983f6355077944b13d369112da89c295a6cfdc75cdda92962"
+    },
+    {
+      "file": "../../completion-pass/INT-SUITE-SHELL-001/INT-SUITE-SHELL-001.png",
+      "sha256": "6f65dd45d8346a12d5c8501b4738ad0d3394438431f662fc379d935cee348635"
+    },
+    {
+      "file": "../../completion-pass/INT-SUITE-SHELL-001/components.json",
+      "sha256": "97ce296ef42ec9d798931b855d48a70a43d3b5964d4ff3c8315b24c18c12a5ea"
+    },
+    {
+      "file": "../../completion-pass/INT-BED-DRESS-001/INT-BED-DRESS-001.png",
+      "sha256": "f71e88a950b3ec0e53e250f85f57cca735400269f65162d50cf7820ac5d33633"
+    },
+    {
+      "file": "../../completion-pass/INT-BED-DRESS-001/components.json",
+      "sha256": "dc4a30cf9aa9ed65aa13f44f09f5b64851d8ed7124c745e20f2169a75ba39aef"
+    },
+    {
+      "file": "../../completion-pass/INT-BALCONY-JOIN-001/INT-BALCONY-JOIN-001.png",
+      "sha256": "2650a69d0aa43668ed328fcf8efd4714c77d29da95940ad432dac0dd397ad15f"
+    },
+    {
+      "file": "../../completion-pass/INT-BALCONY-JOIN-001/components.json",
+      "sha256": "12f63d8ba3f97c96d7404c876dac417a1fe18ea39b4721bacf7e4d9c0b3361b1"
+    },
+    {
+      "file": "../../completion-pass/INT-BEDROOM-PROP-001/INT-BEDROOM-PROP-001.png",
+      "sha256": "b856f2dd02c5e1362f80a1c94f754b94c0733105297f97ce6f36a246580d9527"
+    },
+    {
+      "file": "../../completion-pass/INT-BEDROOM-PROP-001/components.json",
+      "sha256": "57e3f4071ab36ca457f979ff8c1f59294a12fc109d92d2f2c5011b334528bddd"
+    },
+    {
+      "file": "../../images/illustrated-boards/GEN-24.png",
+      "sha256": "deb78cfce6dab5c31d9b3519d3bc01a07e58bba453b013fcdb76bd2e8be3f349"
+    },
+    {
+      "file": "../../images/illustrated-boards/GEN-25.png",
+      "sha256": "9ef8a873ba4469a122f8d6b195f958834babb94bd9481ba41986a78adf6c19c7"
+    },
+    {
+      "file": "model.mjs",
+      "sha256": "45ebedf01d105cd9af47f748d277aa150476eb3533bda644dce0974f1a519d4c"
+    },
+    {
+      "file": "geometry.mjs",
+      "sha256": "cdd9a17edaee895a36468bf3e76b2dfc19916e42c43e02ffd70fcae6efc555be"
+    },
+    {
+      "file": "viewer.mjs",
+      "sha256": "a9c2067fa08cd0683afac3504b30c3fb961f38a493a0cd0a192b1ff852e6b190"
+    },
+    {
+      "file": "index.html",
+      "sha256": "0f167070499e2bca58622c28d4c8597c275665738a5b556bd05acbb15fbc8906"
+    },
+    {
+      "file": "style.css",
+      "sha256": "71869ded35f732877c3c0133342895ea18e84c923fb8ae48c1b8983071565d72"
+    }
+  ],
+  "limits": [
+    "Separate Function fixture using procedural source-family specimens; final art, registered models and game integration remain pending.",
+    "The room remains 24×18 m with 18 m apex, 8×12 m open west arch, 8×4 m neck and 18 m round balcony; wall springline 12.6 m is proposed so the arch fits below the vault.",
+    "Three east windows preserve their source centres; 3×9 m apertures, vault profile and structural wall thickness are proposed construction geometry, not recovered source measurements.",
+    "The bed frame stays 2.2×2.7×2.8 m. Flat textile sizes are preserved in metadata; gathered/draped shapes are proposed, not cloth simulation or certified join fit.",
+    "Balcony rail is trimmed at the actual neck intersection and continues along both neck edges. Supports below the balcony, drainage, structural loading and final rail engineering remain unresolved.",
+    "Tall privacy curtains use a proposed plain fabric extension. Human-scale furniture, trim motifs and bedside objects are not enlarged to fill the room.",
+    "Legacy GEN-24 furniture, chandelier and room decor lack measured dimensions; the existing sample reservations or explicit new fit dimensions control their specimens. Source detail fidelity remains to build."
+  ]
+}

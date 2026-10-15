@@ -1,0 +1,2389 @@
+{
+  "schema": "game-room.props.v1",
+  "roomId": "b01-bedroom-fit",
+  "creditBudget": {
+    "maximumCredits": 0,
+    "consumedCredits": 0
+  },
+  "rail_planters": [
+    {
+      "id": "RAIL-FLOWER-5",
+      "reference_id": "INT-R02-S01",
+      "rail_anchor": [
+        -15.791689553093796,
+        1.06,
+        4.04779758914944
+      ],
+      "pot_base": [
+        -15.668820625021532,
+        0.42,
+        4.133839593509943
+      ],
+      "plate_top_y": 0.42,
+      "role": "Proposed pot and bracket on existing flower-rail vocabulary; final hardware/drainage pending"
+    },
+    {
+      "id": "RAIL-FLOWER-10",
+      "reference_id": "INT-R02-S01",
+      "rail_anchor": [
+        -16.560890808303057,
+        1.06,
+        4.998155784689485
+      ],
+      "pot_base": [
+        -16.45113326526277,
+        0.42,
+        5.100397076473964
+      ],
+      "plate_top_y": 0.42,
+      "role": "Proposed pot and bracket on existing flower-rail vocabulary; final hardware/drainage pending"
+    },
+    {
+      "id": "RAIL-FLOWER-15",
+      "reference_id": "INT-R02-S01",
+      "rail_anchor": [
+        -17.454388429193123,
+        1.06,
+        5.832729491625797
+      ],
+      "pot_base": [
+        -17.359860959236187,
+        0.42,
+        5.949196471596691
+      ],
+      "plate_top_y": 0.42,
+      "role": "Proposed pot and bracket on existing flower-rail vocabulary; final hardware/drainage pending"
+    },
+    {
+      "id": "RAIL-FLOWER-20",
+      "reference_id": "INT-R02-S01",
+      "rail_anchor": [
+        -18.454934920230883,
+        1.06,
+        6.535408643243136
+      ],
+      "pot_base": [
+        -18.377462220007548,
+        0.42,
+        6.663853108752963
+      ],
+      "plate_top_y": 0.42,
+      "role": "Proposed pot and bracket on existing flower-rail vocabulary; final hardware/drainage pending"
+    },
+    {
+      "id": "RAIL-FLOWER-25",
+      "reference_id": "INT-R02-S01",
+      "rail_anchor": [
+        -19.543216384287348,
+        1.06,
+        7.092629179329828
+      ],
+      "pot_base": [
+        -19.484293936292246,
+        0.42,
+        7.230571722159314
+      ],
+      "plate_top_y": 0.42,
+      "role": "Proposed pot and bracket on existing flower-rail vocabulary; final hardware/drainage pending"
+    },
+    {
+      "id": "RAIL-FLOWER-30",
+      "reference_id": "INT-R02-S01",
+      "rail_anchor": [
+        -20.698225345515645,
+        1.06,
+        7.493634877952633
+      ],
+      "pot_base": [
+        -20.658990550268754,
+        0.42,
+        7.638412745190462
+      ],
+      "plate_top_y": 0.42,
+      "role": "Proposed pot and bracket on existing flower-rail vocabulary; final hardware/drainage pending"
+    },
+    {
+      "id": "RAIL-FLOWER-35",
+      "reference_id": "INT-R02-S01",
+      "rail_anchor": [
+        -21.897666263968325,
+        1.06,
+        7.730684986552113
+      ],
+      "pot_base": [
+        -21.878876484376878,
+        0.42,
+        7.87950348064107
+      ],
+      "plate_top_y": 0.42,
+      "role": "Proposed pot and bracket on existing flower-rail vocabulary; final hardware/drainage pending"
+    },
+    {
+      "id": "RAIL-FLOWER-40",
+      "reference_id": "INT-R02-S01",
+      "rail_anchor": [
+        -23.118385914164328,
+        1.06,
+        7.799203644383251
+      ],
+      "pot_base": [
+        -23.120403855883037,
+        0.42,
+        7.9491900701397835
+      ],
+      "plate_top_y": 0.42,
+      "role": "Proposed pot and bracket on existing flower-rail vocabulary; final hardware/drainage pending"
+    },
+    {
+      "id": "RAIL-FLOWER-45",
+      "reference_id": "INT-R02-S01",
+      "rail_anchor": [
+        -24.33682031985828,
+        1.06,
+        7.697868211947915
+      ],
+      "pot_base": [
+        -24.359607029855866,
+        0.42,
+        7.846127329197027
+      ],
+      "plate_top_y": 0.42,
+      "role": "Proposed pot and bracket on existing flower-rail vocabulary; final hardware/drainage pending"
+    },
+    {
+      "id": "RAIL-FLOWER-50",
+      "reference_id": "INT-R02-S01",
+      "rail_anchor": [
+        -25.529449617674743,
+        1.06,
+        7.4286348023653925
+      ],
+      "pot_base": [
+        -25.572565236157835,
+        0.42,
+        7.572304713769348
+      ],
+      "plate_top_y": 0.42,
+      "role": "Proposed pot and bracket on existing flower-rail vocabulary; final hardware/drainage pending"
+    },
+    {
+      "id": "RAIL-FLOWER-55",
+      "reference_id": "INT-R02-S01",
+      "rail_anchor": [
+        -26.673252069216407,
+        1.06,
+        6.99670052184008
+      ],
+      "pot_base": [
+        -26.73586432039623,
+        0.42,
+        7.133007917098718
+      ],
+      "plate_top_y": 0.42,
+      "role": "Proposed pot and bracket on existing flower-rail vocabulary; final hardware/drainage pending"
+    },
+    {
+      "id": "RAIL-FLOWER-60",
+      "reference_id": "INT-R02-S01",
+      "rail_anchor": [
+        -27.746148457692406,
+        1.06,
+        6.410403148111713
+      ],
+      "pot_base": [
+        -27.82704871549398,
+        0.42,
+        6.5367168381363445
+      ],
+      "plate_top_y": 0.42,
+      "role": "Proposed pot and bracket on existing flower-rail vocabulary; final hardware/drainage pending"
+    },
+    {
+      "id": "RAIL-FLOWER-65",
+      "reference_id": "INT-R02-S01",
+      "rail_anchor": [
+        -28.727428290724152,
+        1.06,
+        5.681060183429921
+      ],
+      "pot_base": [
+        -28.82505490931604,
+        0.42,
+        5.794941891102021
+      ],
+      "plate_top_y": 0.42,
+      "role": "Proposed pot and bracket on existing flower-rail vocabulary; final hardware/drainage pending"
+    },
+    {
+      "id": "RAIL-FLOWER-70",
+      "reference_id": "INT-R02-S01",
+      "rail_anchor": [
+        -29.59814958218737,
+        1.06,
+        4.822750388869562
+      ],
+      "pot_base": [
+        -29.710618040974655,
+        0.42,
+        4.922001815952567
+      ],
+      "plate_top_y": 0.42,
+      "role": "Proposed pot and bracket on existing flower-rail vocabulary; final hardware/drainage pending"
+    },
+    {
+      "id": "RAIL-FLOWER-75",
+      "reference_id": "INT-R02-S01",
+      "rail_anchor": [
+        -30.341504495962546,
+        1.06,
+        3.8520420171059655
+      ],
+      "pot_base": [
+        -30.466643777143727,
+        0.42,
+        3.934747278761181
+      ],
+      "plate_top_y": 0.42,
+      "role": "Proposed pot and bracket on existing flower-rail vocabulary; final hardware/drainage pending"
+    },
+    {
+      "id": "RAIL-FLOWER-80",
+      "reference_id": "INT-R02-S01",
+      "rail_anchor": [
+        -30.943143793445,
+        1.06,
+        2.7876729896674304
+      ],
+      "pot_base": [
+        -31.078538289924175,
+        0.42,
+        2.8522355974458526
+      ],
+      "plate_top_y": 0.42,
+      "role": "Proposed pot and bracket on existing flower-rail vocabulary; final hardware/drainage pending"
+    },
+    {
+      "id": "RAIL-FLOWER-85",
+      "reference_id": "INT-R02-S01",
+      "rail_anchor": [
+        -31.39145382189154,
+        1.06,
+        1.6501891923147416
+      ],
+      "pot_base": [
+        -31.534489966582875,
+        0.42,
+        1.6953628717291973
+      ],
+      "plate_top_y": 0.42,
+      "role": "Proposed pot and bracket on existing flower-rail vocabulary; final hardware/drainage pending"
+    },
+    {
+      "id": "RAIL-FLOWER-90",
+      "reference_id": "INT-R02-S01",
+      "rail_anchor": [
+        -31.67778069680119,
+        1.06,
+        0.4615478706579077
+      ],
+      "pot_base": [
+        -31.82569741322394,
+        0.42,
+        0.4864606184532129
+      ],
+      "plate_top_y": 0.42,
+      "role": "Proposed pot and bracket on existing flower-rail vocabulary; final hardware/drainage pending"
+    },
+    {
+      "id": "RAIL-FLOWER-95",
+      "reference_id": "INT-R02-S01",
+      "rail_anchor": [
+        -31.796597350859432,
+        1.06,
+        -0.7553062181974597
+      ],
+      "pot_base": [
+        -31.946539351158172,
+        0.42,
+        -0.7511353014621891
+      ],
+      "plate_top_y": 0.42,
+      "role": "Proposed pot and bracket on existing flower-rail vocabulary; final hardware/drainage pending"
+    },
+    {
+      "id": "RAIL-FLOWER-100",
+      "reference_id": "INT-R02-S01",
+      "rail_anchor": [
+        -31.74561022484214,
+        1.06,
+        -1.9768837162818538
+      ],
+      "pot_base": [
+        -31.894683126401947,
+        0.42,
+        -1.9935351432639308
+      ],
+      "plate_top_y": 0.42,
+      "role": "Proposed pot and bracket on existing flower-rail vocabulary; final hardware/drainage pending"
+    },
+    {
+      "id": "RAIL-FLOWER-105",
+      "reference_id": "INT-R02-S01",
+      "rail_anchor": [
+        -31.525803540987475,
+        1.06,
+        -3.1796040880135577
+      ],
+      "pot_base": [
+        -31.671129737708853,
+        0.42,
+        -3.2167564304228797
+      ],
+      "plate_top_y": 0.42,
+      "role": "Proposed pot and bracket on existing flower-rail vocabulary; final hardware/drainage pending"
+    },
+    {
+      "id": "RAIL-FLOWER-110",
+      "reference_id": "INT-R02-S01",
+      "rail_anchor": [
+        -31.141420304211515,
+        1.06,
+        -4.340250803483545
+      ],
+      "pot_base": [
+        -31.280194513942394,
+        0.42,
+        -4.397186896724741
+      ],
+      "plate_top_y": 0.42,
+      "role": "Proposed pot and bracket on existing flower-rail vocabulary; final hardware/drainage pending"
+    },
+    {
+      "id": "RAIL-FLOWER-115",
+      "reference_id": "INT-R02-S01",
+      "rail_anchor": [
+        -30.599880397907675,
+        1.06,
+        -5.436419495212176
+      ],
+      "pot_base": [
+        -30.729423813781104,
+        0.42,
+        -5.512040282062384
+      ],
+      "plate_top_y": 0.42,
+      "role": "Proposed pot and bracket on existing flower-rail vocabulary; final hardware/drainage pending"
+    },
+    {
+      "id": "RAIL-FLOWER-120",
+      "reference_id": "INT-R02-S01",
+      "rail_anchor": [
+        -29.911637355355296,
+        1.06,
+        -6.446950437451884
+      ],
+      "pot_base": [
+        -30.02944935573067,
+        0.42,
+        -6.539796183544814
+      ],
+      "plate_top_y": 0.42,
+      "role": "Proposed pot and bracket on existing flower-rail vocabulary; final hardware/drainage pending"
+    },
+    {
+      "id": "RAIL-FLOWER-125",
+      "reference_id": "INT-R02-S01",
+      "rail_anchor": [
+        -29.089976571528677,
+        1.06,
+        -7.35233699973733
+      ],
+      "pot_base": [
+        -29.19378299036155,
+        0.42,
+        -7.460615471323761
+      ],
+      "plate_top_y": 0.42,
+      "role": "Proposed pot and bracket on existing flower-rail vocabulary; final hardware/drainage pending"
+    },
+    {
+      "id": "RAIL-FLOWER-130",
+      "reference_id": "INT-R02-S01",
+      "rail_anchor": [
+        -28.15075885049428,
+        1.06,
+        -8.13510219016202
+      ],
+      "pot_base": [
+        -28.23855587635498,
+        0.42,
+        -8.256723250221599
+      ],
+      "plate_top_y": 0.42,
+      "role": "Proposed pot and bracket on existing flower-rail vocabulary; final hardware/drainage pending"
+    },
+    {
+      "id": "RAIL-FLOWER-135",
+      "reference_id": "INT-R02-S01",
+      "rail_anchor": [
+        -27.11211423878995,
+        1.06,
+        -8.780136019835448
+      ],
+      "pot_base": [
+        -27.18220709513296,
+        0.42,
+        -8.912751974719006
+      ],
+      "plate_top_y": 0.42,
+      "role": "Proposed pot and bracket on existing flower-rail vocabulary; final hardware/drainage pending"
+    },
+    {
+      "id": "RAIL-FLOWER-140",
+      "reference_id": "INT-R02-S01",
+      "rail_anchor": [
+        -25.99409205482686,
+        1.06,
+        -9.274987176257294
+      ],
+      "pot_base": [
+        -26.04512771485232,
+        0.42,
+        -9.416038094034407
+      ],
+      "plate_top_y": 0.42,
+      "role": "Proposed pot and bracket on existing flower-rail vocabulary; final hardware/drainage pending"
+    },
+    {
+      "id": "RAIL-FLOWER-145",
+      "reference_id": "INT-R02-S01",
+      "rail_anchor": [
+        -24.8182738699187,
+        1.06,
+        -9.610103375335914
+      ],
+      "pot_base": [
+        -24.849267174519586,
+        0.42,
+        -9.756866501051867
+      ],
+      "plate_top_y": 0.42,
+      "role": "Proposed pot and bracket on existing flower-rail vocabulary; final hardware/drainage pending"
+    },
+    {
+      "id": "RAIL-FLOWER-150",
+      "reference_id": "INT-R02-S01",
+      "rail_anchor": [
+        -23.607356911699668,
+        1.06,
+        -9.779015752452587
+      ],
+      "pot_base": [
+        -23.617709586330914,
+        0.42,
+        -9.928658066414847
+      ],
+      "plate_top_y": 0.42,
+      "role": "Proposed pot and bracket on existing flower-rail vocabulary; final hardware/drainage pending"
+    },
+    {
+      "id": "RAIL-FLOWER-155",
+      "reference_id": "INT-R02-S01",
+      "rail_anchor": [
+        -22.38471593164036,
+        1.06,
+        -9.778463733206557
+      ],
+      "pot_base": [
+        -22.374228135020594,
+        0.42,
+        -9.928096637749851
+      ],
+      "plate_top_y": 0.42,
+      "role": "Proposed pot and bracket on existing flower-rail vocabulary; final hardware/drainage pending"
+    },
+    {
+      "id": "RAIL-FLOWER-160",
+      "reference_id": "INT-R02-S01",
+      "rail_anchor": [
+        -21.173951994085165,
+        1.06,
+        -9.60845797341745
+      ],
+      "pot_base": [
+        -21.142826175802526,
+        0.42,
+        -9.755193052509792
+      ],
+      "plate_top_y": 0.42,
+      "role": "Proposed pot and bracket on existing flower-rail vocabulary; final hardware/drainage pending"
+    },
+    {
+      "id": "RAIL-FLOWER-165",
+      "reference_id": "INT-R02-S01",
+      "rail_anchor": [
+        -19.99843689669354,
+        1.06,
+        -9.272280153432265
+      ],
+      "pot_base": [
+        -19.947273889250816,
+        0.42,
+        -9.41328492877486
+      ],
+      "plate_top_y": 0.42,
+      "role": "Proposed pot and bracket on existing flower-rail vocabulary; final hardware/drainage pending"
+    },
+    {
+      "id": "RAIL-FLOWER-170",
+      "reference_id": "INT-R02-S01",
+      "rail_anchor": [
+        -18.88086201649589,
+        1.06,
+        -8.776419630707547
+      ],
+      "pot_base": [
+        -18.810649437231614,
+        0.42,
+        -8.908972238049152
+      ],
+      "plate_top_y": 0.42,
+      "role": "Proposed pot and bracket on existing flower-rail vocabulary; final hardware/drainage pending"
+    },
+    {
+      "id": "RAIL-FLOWER-175",
+      "reference_id": "INT-R02-S01",
+      "rail_anchor": [
+        -17.84280029034562,
+        1.06,
+        -8.130448173483963
+      ],
+      "pot_base": [
+        -17.754893477112876,
+        0.42,
+        -8.251989903713802
+      ],
+      "plate_top_y": 0.42,
+      "role": "Proposed pot and bracket on existing flower-rail vocabulary; final hardware/drainage pending"
+    },
+    {
+      "id": "RAIL-FLOWER-180",
+      "reference_id": "INT-R02-S01",
+      "rail_anchor": [
+        -16.90428978501123,
+        1.06,
+        -7.3468351936127645
+      ],
+      "pot_base": [
+        -16.800385633619374,
+        0.42,
+        -7.455019884412982
+      ],
+      "plate_top_y": 0.42,
+      "role": "Proposed pot and bracket on existing flower-rail vocabulary; final hardware/drainage pending"
+    },
+    {
+      "id": "RAIL-FLOWER-185",
+      "reference_id": "INT-R02-S01",
+      "rail_anchor": [
+        -16.083446895399756,
+        1.06,
+        -6.440707045159182
+      ],
+      "pot_base": [
+        -15.96555110384407,
+        0.42,
+        -6.533446369792577
+      ],
+      "plate_top_y": 0.42,
+      "role": "Proposed pot and bracket on existing flower-rail vocabulary; final hardware/drainage pending"
+    }
+  ],
+  "assets": [
+    {
+      "id": "BED-FRAME",
+      "kind": "bed",
+      "reference_id": "INT-SUITE-FURN-001-S01",
+      "position": [
+        0,
+        0,
+        -6.5
+      ],
+      "dimensions": [
+        2.2,
+        2.7,
+        2.8
+      ],
+      "rotation": 0,
+      "layer": "floor",
+      "attachment": "Underside on floor",
+      "solid": true,
+      "front": "South; headboard north",
+      "dimensionsMeters": [
+        2.2,
+        2.7,
+        2.8
+      ],
+      "attachmentFace": "Underside on floor",
+      "semanticFront": "South; headboard north",
+      "reuseClass": "Reusable source-family Function specimen",
+      "imageApproval": {
+        "status": "pending"
+      },
+      "polygonTarget": 3000,
+      "rejectionCriteria": [
+        "Human dimensions changed without an explicit proposal",
+        "Support or true aperture contact lost",
+        "Entry, balcony or return blocked",
+        "Source palette or component identity replaced"
+      ],
+      "sourceReference": "INT-SUITE-FURN-001-S01",
+      "imagePrompt": "Reuse saved reference; no new image requested"
+    },
+    {
+      "id": "MATTRESS",
+      "kind": "mattress",
+      "reference_id": "INT-BED-DRESS-001-A01",
+      "position": [
+        0,
+        0.48,
+        -6.5
+      ],
+      "dimensions": [
+        2,
+        2.2,
+        0.28
+      ],
+      "rotation": 0,
+      "layer": "floor",
+      "attachment": "Underside on slat deck Y=0.48",
+      "dimensionsMeters": [
+        2,
+        2.2,
+        0.28
+      ],
+      "attachmentFace": "Underside on slat deck Y=0.48",
+      "semanticFront": "As indexed in layout",
+      "reuseClass": "Reusable source-family Function specimen",
+      "imageApproval": {
+        "status": "pending"
+      },
+      "polygonTarget": 3000,
+      "rejectionCriteria": [
+        "Human dimensions changed without an explicit proposal",
+        "Support or true aperture contact lost",
+        "Entry, balcony or return blocked",
+        "Source palette or component identity replaced"
+      ],
+      "sourceReference": "INT-BED-DRESS-001-A01",
+      "imagePrompt": "Reuse saved reference; no new image requested"
+    },
+    {
+      "id": "FITTED-SHEET",
+      "kind": "sheet",
+      "reference_id": "INT-BED-DRESS-001-A02",
+      "position": [
+        0,
+        0.48,
+        -6.5
+      ],
+      "dimensions": [
+        2,
+        2.2,
+        0.29
+      ],
+      "rotation": 0,
+      "layer": "floor",
+      "attachment": "Thin hollow shell around mattress; no duplicate solid mattress",
+      "dimensionsMeters": [
+        2,
+        2.2,
+        0.29
+      ],
+      "attachmentFace": "Thin hollow shell around mattress; no duplicate solid mattress",
+      "semanticFront": "As indexed in layout",
+      "reuseClass": "Reusable source-family Function specimen",
+      "imageApproval": {
+        "status": "pending"
+      },
+      "polygonTarget": 3000,
+      "rejectionCriteria": [
+        "Human dimensions changed without an explicit proposal",
+        "Support or true aperture contact lost",
+        "Entry, balcony or return blocked",
+        "Source palette or component identity replaced"
+      ],
+      "sourceReference": "INT-BED-DRESS-001-A02",
+      "imagePrompt": "Reuse saved reference; no new image requested"
+    },
+    {
+      "id": "BLUSH-DUVET",
+      "kind": "duvet",
+      "reference_id": "INT-BED-DRESS-001-A03",
+      "position": [
+        0,
+        0.77,
+        -6.35
+      ],
+      "dimensions": [
+        2.4,
+        2.5,
+        0.08
+      ],
+      "rotation": 0,
+      "layer": "floor",
+      "attachment": "Centre on sheet; posed side folds hang over mattress",
+      "posed": true,
+      "dimensionsMeters": [
+        2.4,
+        2.5,
+        0.08
+      ],
+      "attachmentFace": "Centre on sheet; posed side folds hang over mattress",
+      "semanticFront": "As indexed in layout",
+      "reuseClass": "Reusable source-family Function specimen",
+      "imageApproval": {
+        "status": "pending"
+      },
+      "polygonTarget": 3000,
+      "rejectionCriteria": [
+        "Human dimensions changed without an explicit proposal",
+        "Support or true aperture contact lost",
+        "Entry, balcony or return blocked",
+        "Source palette or component identity replaced"
+      ],
+      "sourceReference": "INT-BED-DRESS-001-A03",
+      "imagePrompt": "Reuse saved reference; no new image requested"
+    },
+    {
+      "id": "PILLOW--0.48",
+      "kind": "pillow",
+      "reference_id": "INT-BED-DRESS-001-A04",
+      "position": [
+        -0.48,
+        0.77,
+        -7.23
+      ],
+      "dimensions": [
+        0.7,
+        0.45,
+        0.16
+      ],
+      "rotation": 0,
+      "layer": "floor",
+      "attachment": "Underside on fitted-sheet top",
+      "dimensionsMeters": [
+        0.7,
+        0.45,
+        0.16
+      ],
+      "attachmentFace": "Underside on fitted-sheet top",
+      "semanticFront": "As indexed in layout",
+      "reuseClass": "Reusable source-family Function specimen",
+      "imageApproval": {
+        "status": "pending"
+      },
+      "polygonTarget": 3000,
+      "rejectionCriteria": [
+        "Human dimensions changed without an explicit proposal",
+        "Support or true aperture contact lost",
+        "Entry, balcony or return blocked",
+        "Source palette or component identity replaced"
+      ],
+      "sourceReference": "INT-BED-DRESS-001-A04",
+      "imagePrompt": "Reuse saved reference; no new image requested"
+    },
+    {
+      "id": "PILLOW-0.48",
+      "kind": "pillow",
+      "reference_id": "INT-BED-DRESS-001-A04",
+      "position": [
+        0.48,
+        0.77,
+        -7.23
+      ],
+      "dimensions": [
+        0.7,
+        0.45,
+        0.16
+      ],
+      "rotation": 0,
+      "layer": "floor",
+      "attachment": "Underside on fitted-sheet top",
+      "dimensionsMeters": [
+        0.7,
+        0.45,
+        0.16
+      ],
+      "attachmentFace": "Underside on fitted-sheet top",
+      "semanticFront": "As indexed in layout",
+      "reuseClass": "Reusable source-family Function specimen",
+      "imageApproval": {
+        "status": "pending"
+      },
+      "polygonTarget": 3000,
+      "rejectionCriteria": [
+        "Human dimensions changed without an explicit proposal",
+        "Support or true aperture contact lost",
+        "Entry, balcony or return blocked",
+        "Source palette or component identity replaced"
+      ],
+      "sourceReference": "INT-BED-DRESS-001-A04",
+      "imagePrompt": "Reuse saved reference; no new image requested"
+    },
+    {
+      "id": "CANOPY-CURTAIN--1.05--7.8",
+      "kind": "canopy-curtain",
+      "reference_id": "INT-BED-DRESS-001-A05",
+      "position": [
+        -1.05,
+        0.15,
+        -7.8
+      ],
+      "dimensions": [
+        0.9,
+        0.03,
+        2.3
+      ],
+      "rotation": 0,
+      "layer": "floor",
+      "attachment": "Visible header rings meet frame; gathered fabric near each post",
+      "posed": true,
+      "dimensionsMeters": [
+        0.9,
+        0.03,
+        2.3
+      ],
+      "attachmentFace": "Visible header rings meet frame; gathered fabric near each post",
+      "semanticFront": "As indexed in layout",
+      "reuseClass": "Reusable source-family Function specimen",
+      "imageApproval": {
+        "status": "pending"
+      },
+      "polygonTarget": 3000,
+      "rejectionCriteria": [
+        "Human dimensions changed without an explicit proposal",
+        "Support or true aperture contact lost",
+        "Entry, balcony or return blocked",
+        "Source palette or component identity replaced"
+      ],
+      "sourceReference": "INT-BED-DRESS-001-A05",
+      "imagePrompt": "Reuse saved reference; no new image requested"
+    },
+    {
+      "id": "CANOPY-CURTAIN--1.05--5.2",
+      "kind": "canopy-curtain",
+      "reference_id": "INT-BED-DRESS-001-A05",
+      "position": [
+        -1.05,
+        0.15,
+        -5.2
+      ],
+      "dimensions": [
+        0.9,
+        0.03,
+        2.3
+      ],
+      "rotation": 0,
+      "layer": "floor",
+      "attachment": "Visible header rings meet frame; gathered fabric near each post",
+      "posed": true,
+      "dimensionsMeters": [
+        0.9,
+        0.03,
+        2.3
+      ],
+      "attachmentFace": "Visible header rings meet frame; gathered fabric near each post",
+      "semanticFront": "As indexed in layout",
+      "reuseClass": "Reusable source-family Function specimen",
+      "imageApproval": {
+        "status": "pending"
+      },
+      "polygonTarget": 3000,
+      "rejectionCriteria": [
+        "Human dimensions changed without an explicit proposal",
+        "Support or true aperture contact lost",
+        "Entry, balcony or return blocked",
+        "Source palette or component identity replaced"
+      ],
+      "sourceReference": "INT-BED-DRESS-001-A05",
+      "imagePrompt": "Reuse saved reference; no new image requested"
+    },
+    {
+      "id": "CANOPY-CURTAIN-1.05--7.8",
+      "kind": "canopy-curtain",
+      "reference_id": "INT-BED-DRESS-001-A05",
+      "position": [
+        1.05,
+        0.15,
+        -7.8
+      ],
+      "dimensions": [
+        0.9,
+        0.03,
+        2.3
+      ],
+      "rotation": 0,
+      "layer": "floor",
+      "attachment": "Visible header rings meet frame; gathered fabric near each post",
+      "posed": true,
+      "dimensionsMeters": [
+        0.9,
+        0.03,
+        2.3
+      ],
+      "attachmentFace": "Visible header rings meet frame; gathered fabric near each post",
+      "semanticFront": "As indexed in layout",
+      "reuseClass": "Reusable source-family Function specimen",
+      "imageApproval": {
+        "status": "pending"
+      },
+      "polygonTarget": 3000,
+      "rejectionCriteria": [
+        "Human dimensions changed without an explicit proposal",
+        "Support or true aperture contact lost",
+        "Entry, balcony or return blocked",
+        "Source palette or component identity replaced"
+      ],
+      "sourceReference": "INT-BED-DRESS-001-A05",
+      "imagePrompt": "Reuse saved reference; no new image requested"
+    },
+    {
+      "id": "CANOPY-CURTAIN-1.05--5.2",
+      "kind": "canopy-curtain",
+      "reference_id": "INT-BED-DRESS-001-A05",
+      "position": [
+        1.05,
+        0.15,
+        -5.2
+      ],
+      "dimensions": [
+        0.9,
+        0.03,
+        2.3
+      ],
+      "rotation": 0,
+      "layer": "floor",
+      "attachment": "Visible header rings meet frame; gathered fabric near each post",
+      "posed": true,
+      "dimensionsMeters": [
+        0.9,
+        0.03,
+        2.3
+      ],
+      "attachmentFace": "Visible header rings meet frame; gathered fabric near each post",
+      "semanticFront": "As indexed in layout",
+      "reuseClass": "Reusable source-family Function specimen",
+      "imageApproval": {
+        "status": "pending"
+      },
+      "polygonTarget": 3000,
+      "rejectionCriteria": [
+        "Human dimensions changed without an explicit proposal",
+        "Support or true aperture contact lost",
+        "Entry, balcony or return blocked",
+        "Source palette or component identity replaced"
+      ],
+      "sourceReference": "INT-BED-DRESS-001-A05",
+      "imagePrompt": "Reuse saved reference; no new image requested"
+    },
+    {
+      "id": "VALANCE--7.8",
+      "kind": "valance",
+      "reference_id": "INT-BED-DRESS-001-A06",
+      "position": [
+        0,
+        2.45,
+        -7.8
+      ],
+      "dimensions": [
+        2.2,
+        0.06,
+        0.32
+      ],
+      "rotation": 0,
+      "layer": "floor",
+      "attachment": "Header on canopy beam",
+      "dimensionsMeters": [
+        2.2,
+        0.06,
+        0.32
+      ],
+      "attachmentFace": "Header on canopy beam",
+      "semanticFront": "As indexed in layout",
+      "reuseClass": "Reusable source-family Function specimen",
+      "imageApproval": {
+        "status": "pending"
+      },
+      "polygonTarget": 3000,
+      "rejectionCriteria": [
+        "Human dimensions changed without an explicit proposal",
+        "Support or true aperture contact lost",
+        "Entry, balcony or return blocked",
+        "Source palette or component identity replaced"
+      ],
+      "sourceReference": "INT-BED-DRESS-001-A06",
+      "imagePrompt": "Reuse saved reference; no new image requested"
+    },
+    {
+      "id": "VALANCE--5.2",
+      "kind": "valance",
+      "reference_id": "INT-BED-DRESS-001-A06",
+      "position": [
+        0,
+        2.45,
+        -5.2
+      ],
+      "dimensions": [
+        2.2,
+        0.06,
+        0.32
+      ],
+      "rotation": 0,
+      "layer": "floor",
+      "attachment": "Header on canopy beam",
+      "dimensionsMeters": [
+        2.2,
+        0.06,
+        0.32
+      ],
+      "attachmentFace": "Header on canopy beam",
+      "semanticFront": "As indexed in layout",
+      "reuseClass": "Reusable source-family Function specimen",
+      "imageApproval": {
+        "status": "pending"
+      },
+      "polygonTarget": 3000,
+      "rejectionCriteria": [
+        "Human dimensions changed without an explicit proposal",
+        "Support or true aperture contact lost",
+        "Entry, balcony or return blocked",
+        "Source palette or component identity replaced"
+      ],
+      "sourceReference": "INT-BED-DRESS-001-A06",
+      "imagePrompt": "Reuse saved reference; no new image requested"
+    },
+    {
+      "id": "SIDE-VALANCE--1.05",
+      "kind": "valance",
+      "reference_id": "INT-BED-DRESS-001-A07",
+      "position": [
+        -1.05,
+        2.45,
+        -6.5
+      ],
+      "dimensions": [
+        2.7,
+        0.06,
+        0.32
+      ],
+      "rotation": 1.5707963267948966,
+      "layer": "floor",
+      "attachment": "Header on side canopy beam",
+      "dimensionsMeters": [
+        2.7,
+        0.06,
+        0.32
+      ],
+      "attachmentFace": "Header on side canopy beam",
+      "semanticFront": "As indexed in layout",
+      "reuseClass": "Reusable source-family Function specimen",
+      "imageApproval": {
+        "status": "pending"
+      },
+      "polygonTarget": 3000,
+      "rejectionCriteria": [
+        "Human dimensions changed without an explicit proposal",
+        "Support or true aperture contact lost",
+        "Entry, balcony or return blocked",
+        "Source palette or component identity replaced"
+      ],
+      "sourceReference": "INT-BED-DRESS-001-A07",
+      "imagePrompt": "Reuse saved reference; no new image requested"
+    },
+    {
+      "id": "SIDE-VALANCE-1.05",
+      "kind": "valance",
+      "reference_id": "INT-BED-DRESS-001-A07",
+      "position": [
+        1.05,
+        2.45,
+        -6.5
+      ],
+      "dimensions": [
+        2.7,
+        0.06,
+        0.32
+      ],
+      "rotation": 1.5707963267948966,
+      "layer": "floor",
+      "attachment": "Header on side canopy beam",
+      "dimensionsMeters": [
+        2.7,
+        0.06,
+        0.32
+      ],
+      "attachmentFace": "Header on side canopy beam",
+      "semanticFront": "As indexed in layout",
+      "reuseClass": "Reusable source-family Function specimen",
+      "imageApproval": {
+        "status": "pending"
+      },
+      "polygonTarget": 3000,
+      "rejectionCriteria": [
+        "Human dimensions changed without an explicit proposal",
+        "Support or true aperture contact lost",
+        "Entry, balcony or return blocked",
+        "Source palette or component identity replaced"
+      ],
+      "sourceReference": "INT-BED-DRESS-001-A07",
+      "imagePrompt": "Reuse saved reference; no new image requested"
+    },
+    {
+      "id": "SIDE-SKIRT--1.08",
+      "kind": "skirt",
+      "reference_id": "INT-BED-DRESS-001-A08",
+      "position": [
+        -1.08,
+        0.08,
+        -6.5
+      ],
+      "dimensions": [
+        2.7,
+        0.02,
+        0.4
+      ],
+      "rotation": 1.5707963267948966,
+      "layer": "floor",
+      "attachment": "Header on frame side rail",
+      "dimensionsMeters": [
+        2.7,
+        0.02,
+        0.4
+      ],
+      "attachmentFace": "Header on frame side rail",
+      "semanticFront": "As indexed in layout",
+      "reuseClass": "Reusable source-family Function specimen",
+      "imageApproval": {
+        "status": "pending"
+      },
+      "polygonTarget": 3000,
+      "rejectionCriteria": [
+        "Human dimensions changed without an explicit proposal",
+        "Support or true aperture contact lost",
+        "Entry, balcony or return blocked",
+        "Source palette or component identity replaced"
+      ],
+      "sourceReference": "INT-BED-DRESS-001-A08",
+      "imagePrompt": "Reuse saved reference; no new image requested"
+    },
+    {
+      "id": "SIDE-SKIRT-1.08",
+      "kind": "skirt",
+      "reference_id": "INT-BED-DRESS-001-A08",
+      "position": [
+        1.08,
+        0.08,
+        -6.5
+      ],
+      "dimensions": [
+        2.7,
+        0.02,
+        0.4
+      ],
+      "rotation": 1.5707963267948966,
+      "layer": "floor",
+      "attachment": "Header on frame side rail",
+      "dimensionsMeters": [
+        2.7,
+        0.02,
+        0.4
+      ],
+      "attachmentFace": "Header on frame side rail",
+      "semanticFront": "As indexed in layout",
+      "reuseClass": "Reusable source-family Function specimen",
+      "imageApproval": {
+        "status": "pending"
+      },
+      "polygonTarget": 3000,
+      "rejectionCriteria": [
+        "Human dimensions changed without an explicit proposal",
+        "Support or true aperture contact lost",
+        "Entry, balcony or return blocked",
+        "Source palette or component identity replaced"
+      ],
+      "sourceReference": "INT-BED-DRESS-001-A08",
+      "imagePrompt": "Reuse saved reference; no new image requested"
+    },
+    {
+      "id": "FOOT-SKIRT",
+      "kind": "skirt",
+      "reference_id": "INT-BED-DRESS-001-A09",
+      "position": [
+        0,
+        0.08,
+        -5.17
+      ],
+      "dimensions": [
+        2.2,
+        0.02,
+        0.4
+      ],
+      "rotation": 0,
+      "layer": "floor",
+      "attachment": "Header on foot rail",
+      "dimensionsMeters": [
+        2.2,
+        0.02,
+        0.4
+      ],
+      "attachmentFace": "Header on foot rail",
+      "semanticFront": "As indexed in layout",
+      "reuseClass": "Reusable source-family Function specimen",
+      "imageApproval": {
+        "status": "pending"
+      },
+      "polygonTarget": 3000,
+      "rejectionCriteria": [
+        "Human dimensions changed without an explicit proposal",
+        "Support or true aperture contact lost",
+        "Entry, balcony or return blocked",
+        "Source palette or component identity replaced"
+      ],
+      "sourceReference": "INT-BED-DRESS-001-A09",
+      "imagePrompt": "Reuse saved reference; no new image requested"
+    },
+    {
+      "id": "FOOT-RUNNER",
+      "kind": "runner",
+      "reference_id": "INT-BED-DRESS-001-A10",
+      "position": [
+        0,
+        0.85,
+        -5.65
+      ],
+      "dimensions": [
+        2.3,
+        0.55,
+        0.015
+      ],
+      "rotation": 0,
+      "layer": "floor",
+      "attachment": "Broad centre rests on duvet; posed overhangs",
+      "posed": true,
+      "dimensionsMeters": [
+        2.3,
+        0.55,
+        0.015
+      ],
+      "attachmentFace": "Broad centre rests on duvet; posed overhangs",
+      "semanticFront": "As indexed in layout",
+      "reuseClass": "Reusable source-family Function specimen",
+      "imageApproval": {
+        "status": "pending"
+      },
+      "polygonTarget": 3000,
+      "rejectionCriteria": [
+        "Human dimensions changed without an explicit proposal",
+        "Support or true aperture contact lost",
+        "Entry, balcony or return blocked",
+        "Source palette or component identity replaced"
+      ],
+      "sourceReference": "INT-BED-DRESS-001-A10",
+      "imagePrompt": "Reuse saved reference; no new image requested"
+    },
+    {
+      "id": "BEDSIDE--1.8",
+      "kind": "cabinet",
+      "reference_id": "INT-SUITE-FURN-001-S02",
+      "position": [
+        -1.8,
+        0,
+        -7.05
+      ],
+      "dimensions": [
+        0.65,
+        0.45,
+        0.75
+      ],
+      "rotation": 0,
+      "layer": "floor",
+      "attachment": "Underside on floor",
+      "solid": true,
+      "front": "South",
+      "dimensionsMeters": [
+        0.65,
+        0.45,
+        0.75
+      ],
+      "attachmentFace": "Underside on floor",
+      "semanticFront": "South",
+      "reuseClass": "Reusable source-family Function specimen",
+      "imageApproval": {
+        "status": "pending"
+      },
+      "polygonTarget": 3000,
+      "rejectionCriteria": [
+        "Human dimensions changed without an explicit proposal",
+        "Support or true aperture contact lost",
+        "Entry, balcony or return blocked",
+        "Source palette or component identity replaced"
+      ],
+      "sourceReference": "INT-SUITE-FURN-001-S02",
+      "imagePrompt": "Reuse saved reference; no new image requested"
+    },
+    {
+      "id": "BEDSIDE-1.8",
+      "kind": "cabinet",
+      "reference_id": "INT-SUITE-FURN-001-S02",
+      "position": [
+        1.8,
+        0,
+        -7.05
+      ],
+      "dimensions": [
+        0.65,
+        0.45,
+        0.75
+      ],
+      "rotation": 0,
+      "layer": "floor",
+      "attachment": "Underside on floor",
+      "solid": true,
+      "front": "South",
+      "dimensionsMeters": [
+        0.65,
+        0.45,
+        0.75
+      ],
+      "attachmentFace": "Underside on floor",
+      "semanticFront": "South",
+      "reuseClass": "Reusable source-family Function specimen",
+      "imageApproval": {
+        "status": "pending"
+      },
+      "polygonTarget": 3000,
+      "rejectionCriteria": [
+        "Human dimensions changed without an explicit proposal",
+        "Support or true aperture contact lost",
+        "Entry, balcony or return blocked",
+        "Source palette or component identity replaced"
+      ],
+      "sourceReference": "INT-SUITE-FURN-001-S02",
+      "imagePrompt": "Reuse saved reference; no new image requested"
+    },
+    {
+      "id": "WARDROBE-NW",
+      "kind": "wardrobe",
+      "reference_id": "INT-SUITE-FURN-001-S03",
+      "position": [
+        -9,
+        0,
+        -8.1
+      ],
+      "dimensions": [
+        1.6,
+        0.65,
+        2.4
+      ],
+      "rotation": 0,
+      "layer": "floor",
+      "attachment": "Underside on floor",
+      "solid": true,
+      "front": "South",
+      "dimensionsMeters": [
+        1.6,
+        0.65,
+        2.4
+      ],
+      "attachmentFace": "Underside on floor",
+      "semanticFront": "South",
+      "reuseClass": "Reusable source-family Function specimen",
+      "imageApproval": {
+        "status": "pending"
+      },
+      "polygonTarget": 3000,
+      "rejectionCriteria": [
+        "Human dimensions changed without an explicit proposal",
+        "Support or true aperture contact lost",
+        "Entry, balcony or return blocked",
+        "Source palette or component identity replaced"
+      ],
+      "sourceReference": "INT-SUITE-FURN-001-S03",
+      "imagePrompt": "Reuse saved reference; no new image requested"
+    },
+    {
+      "id": "DRESSING-TABLE",
+      "kind": "dressing-table",
+      "reference_id": "INT-SUITE-FURN-001-S04",
+      "position": [
+        -10.75,
+        0,
+        -6.6
+      ],
+      "dimensions": [
+        1.4,
+        0.5,
+        0.8
+      ],
+      "rotation": 1.5707963267948966,
+      "layer": "floor",
+      "attachment": "Underside on floor",
+      "solid": true,
+      "front": "East",
+      "dimensionsMeters": [
+        1.4,
+        0.5,
+        0.8
+      ],
+      "attachmentFace": "Underside on floor",
+      "semanticFront": "East",
+      "reuseClass": "Reusable source-family Function specimen",
+      "imageApproval": {
+        "status": "pending"
+      },
+      "polygonTarget": 3000,
+      "rejectionCriteria": [
+        "Human dimensions changed without an explicit proposal",
+        "Support or true aperture contact lost",
+        "Entry, balcony or return blocked",
+        "Source palette or component identity replaced"
+      ],
+      "sourceReference": "INT-SUITE-FURN-001-S04",
+      "imagePrompt": "Reuse saved reference; no new image requested"
+    },
+    {
+      "id": "MOON-MIRROR",
+      "kind": "mirror",
+      "reference_id": "GEN-24-A03",
+      "position": [
+        -11.96,
+        1.05,
+        -6.6
+      ],
+      "dimensions": [
+        0.9,
+        0.08,
+        1.2
+      ],
+      "rotation": 1.5707963267948966,
+      "layer": "floor",
+      "attachment": "Rear plate against west inner wall",
+      "front": "East",
+      "proposed_dimensions": true,
+      "dimensionsMeters": [
+        0.9,
+        0.08,
+        1.2
+      ],
+      "attachmentFace": "Rear plate against west inner wall",
+      "semanticFront": "East",
+      "reuseClass": "Reusable source-family Function specimen",
+      "imageApproval": {
+        "status": "pending"
+      },
+      "polygonTarget": 3000,
+      "rejectionCriteria": [
+        "Human dimensions changed without an explicit proposal",
+        "Support or true aperture contact lost",
+        "Entry, balcony or return blocked",
+        "Source palette or component identity replaced"
+      ],
+      "sourceReference": "GEN-24-A03",
+      "imagePrompt": "Reuse saved reference; no new image requested"
+    },
+    {
+      "id": "CHAIR-W1",
+      "kind": "chair",
+      "reference_id": "INT-R02-S01",
+      "position": [
+        -27,
+        0,
+        -4
+      ],
+      "dimensions": [
+        0.85,
+        0.9,
+        1.1
+      ],
+      "rotation": -0.3217505543966422,
+      "layer": "floor",
+      "attachment": "Underside on floor",
+      "solid": true,
+      "source_placement": "Unchanged existing blockout furnishing reservation",
+      "front": "Toward balcony table",
+      "proposed_dimensions": true,
+      "dimensionsMeters": [
+        0.85,
+        0.9,
+        1.1
+      ],
+      "attachmentFace": "Underside on floor",
+      "semanticFront": "Toward balcony table",
+      "reuseClass": "Reusable source-family Function specimen",
+      "imageApproval": {
+        "status": "pending"
+      },
+      "polygonTarget": 3000,
+      "rejectionCriteria": [
+        "Human dimensions changed without an explicit proposal",
+        "Support or true aperture contact lost",
+        "Entry, balcony or return blocked",
+        "Source palette or component identity replaced"
+      ],
+      "sourceReference": "INT-R02-S01",
+      "imagePrompt": "Reuse saved reference; no new image requested"
+    },
+    {
+      "id": "CHAIR-W2",
+      "kind": "chair",
+      "reference_id": "INT-R02-S01",
+      "position": [
+        -27,
+        0,
+        2
+      ],
+      "dimensions": [
+        0.85,
+        0.9,
+        1.1
+      ],
+      "rotation": -2.819842099193151,
+      "layer": "floor",
+      "attachment": "Underside on floor",
+      "solid": true,
+      "source_placement": "Unchanged existing blockout furnishing reservation",
+      "front": "Toward balcony table",
+      "proposed_dimensions": true,
+      "dimensionsMeters": [
+        0.85,
+        0.9,
+        1.1
+      ],
+      "attachmentFace": "Underside on floor",
+      "semanticFront": "Toward balcony table",
+      "reuseClass": "Reusable source-family Function specimen",
+      "imageApproval": {
+        "status": "pending"
+      },
+      "polygonTarget": 3000,
+      "rejectionCriteria": [
+        "Human dimensions changed without an explicit proposal",
+        "Support or true aperture contact lost",
+        "Entry, balcony or return blocked",
+        "Source palette or component identity replaced"
+      ],
+      "sourceReference": "INT-R02-S01",
+      "imagePrompt": "Reuse saved reference; no new image requested"
+    },
+    {
+      "id": "TABLE-W",
+      "kind": "table",
+      "reference_id": "GEN-24-A06",
+      "position": [
+        -28,
+        0,
+        -1
+      ],
+      "dimensions": [
+        0.7,
+        0.7,
+        0.65
+      ],
+      "rotation": 0,
+      "layer": "floor",
+      "attachment": "Underside on floor",
+      "solid": true,
+      "source_placement": "Unchanged existing blockout furnishing reservation",
+      "front": "Source-family fit",
+      "proposed_dimensions": true,
+      "dimensionsMeters": [
+        0.7,
+        0.7,
+        0.65
+      ],
+      "attachmentFace": "Underside on floor",
+      "semanticFront": "Source-family fit",
+      "reuseClass": "Reusable source-family Function specimen",
+      "imageApproval": {
+        "status": "pending"
+      },
+      "polygonTarget": 3000,
+      "rejectionCriteria": [
+        "Human dimensions changed without an explicit proposal",
+        "Support or true aperture contact lost",
+        "Entry, balcony or return blocked",
+        "Source palette or component identity replaced"
+      ],
+      "sourceReference": "GEN-24-A06",
+      "imagePrompt": "Reuse saved reference; no new image requested"
+    },
+    {
+      "id": "FOUNTAIN-W",
+      "kind": "fountain",
+      "reference_id": "INT-R02-S01",
+      "position": [
+        -23,
+        0,
+        4
+      ],
+      "dimensions": [
+        1.2,
+        1.2,
+        1.1
+      ],
+      "rotation": 0,
+      "layer": "floor",
+      "attachment": "Underside on floor",
+      "solid": true,
+      "source_placement": "Unchanged existing blockout furnishing reservation",
+      "front": "Source-family fit",
+      "proposed_dimensions": true,
+      "dimensionsMeters": [
+        1.2,
+        1.2,
+        1.1
+      ],
+      "attachmentFace": "Underside on floor",
+      "semanticFront": "Source-family fit",
+      "reuseClass": "Reusable source-family Function specimen",
+      "imageApproval": {
+        "status": "pending"
+      },
+      "polygonTarget": 3000,
+      "rejectionCriteria": [
+        "Human dimensions changed without an explicit proposal",
+        "Support or true aperture contact lost",
+        "Entry, balcony or return blocked",
+        "Source palette or component identity replaced"
+      ],
+      "sourceReference": "INT-R02-S01",
+      "imagePrompt": "Reuse saved reference; no new image requested"
+    },
+    {
+      "id": "CHAISE-SW",
+      "kind": "chaise",
+      "reference_id": "GEN-24-A05",
+      "position": [
+        -8,
+        0.012,
+        5
+      ],
+      "dimensions": [
+        2.1,
+        0.85,
+        0.8
+      ],
+      "rotation": 0,
+      "layer": "floor",
+      "attachment": "Feet on reading-rug top Y=0.012; original X/Z reservation and furniture dimensions retained",
+      "solid": true,
+      "source_placement": "Unchanged existing blockout furnishing reservation",
+      "front": "North toward room",
+      "proposed_dimensions": true,
+      "dimensionsMeters": [
+        2.1,
+        0.85,
+        0.8
+      ],
+      "attachmentFace": "Feet on reading-rug top Y=0.012; original X/Z reservation and furniture dimensions retained",
+      "semanticFront": "North toward room",
+      "reuseClass": "Reusable source-family Function specimen",
+      "imageApproval": {
+        "status": "pending"
+      },
+      "polygonTarget": 3000,
+      "rejectionCriteria": [
+        "Human dimensions changed without an explicit proposal",
+        "Support or true aperture contact lost",
+        "Entry, balcony or return blocked",
+        "Source palette or component identity replaced"
+      ],
+      "sourceReference": "GEN-24-A05",
+      "imagePrompt": "Reuse saved reference; no new image requested"
+    },
+    {
+      "id": "CONSOLE-SE",
+      "kind": "console",
+      "reference_id": "GEN-24-A04",
+      "position": [
+        8,
+        0,
+        6
+      ],
+      "dimensions": [
+        1.4,
+        0.45,
+        0.85
+      ],
+      "rotation": 0,
+      "layer": "floor",
+      "attachment": "Underside on floor",
+      "solid": true,
+      "source_placement": "Unchanged existing blockout furnishing reservation",
+      "front": "Source-family fit",
+      "proposed_dimensions": true,
+      "dimensionsMeters": [
+        1.4,
+        0.45,
+        0.85
+      ],
+      "attachmentFace": "Underside on floor",
+      "semanticFront": "Source-family fit",
+      "reuseClass": "Reusable source-family Function specimen",
+      "imageApproval": {
+        "status": "pending"
+      },
+      "polygonTarget": 3000,
+      "rejectionCriteria": [
+        "Human dimensions changed without an explicit proposal",
+        "Support or true aperture contact lost",
+        "Entry, balcony or return blocked",
+        "Source palette or component identity replaced"
+      ],
+      "sourceReference": "GEN-24-A04",
+      "imagePrompt": "Reuse saved reference; no new image requested"
+    },
+    {
+      "id": "KEEPSAKE-CASKET",
+      "kind": "casket",
+      "reference_id": "INT-BEDROOM-PROP-001-A01",
+      "position": [
+        8,
+        0.85,
+        6
+      ],
+      "dimensions": [
+        0.28,
+        0.18,
+        0.16
+      ],
+      "rotation": 0,
+      "layer": "floor",
+      "attachment": "Base on console top Y=0.85",
+      "interaction": "E opens/closes within 1.8 m",
+      "dimensionsMeters": [
+        0.28,
+        0.18,
+        0.16
+      ],
+      "attachmentFace": "Base on console top Y=0.85",
+      "semanticFront": "As indexed in layout",
+      "reuseClass": "Reusable source-family Function specimen",
+      "imageApproval": {
+        "status": "pending"
+      },
+      "polygonTarget": 3000,
+      "rejectionCriteria": [
+        "Human dimensions changed without an explicit proposal",
+        "Support or true aperture contact lost",
+        "Entry, balcony or return blocked",
+        "Source palette or component identity replaced"
+      ],
+      "sourceReference": "INT-BEDROOM-PROP-001-A01",
+      "imagePrompt": "Reuse saved reference; no new image requested"
+    },
+    {
+      "id": "KEEPSAKE-LOCKET",
+      "kind": "locket",
+      "reference_id": "INT-BEDROOM-PROP-001-A09",
+      "position": [
+        8,
+        0.875,
+        6
+      ],
+      "dimensions": [
+        0.035,
+        0.045,
+        0.008
+      ],
+      "rotation": 0,
+      "layer": "floor",
+      "attachment": "Broad face flat on casket interior base; source vertical oval rotated onto support",
+      "source_dimensions": [
+        0.035,
+        0.008,
+        0.045
+      ],
+      "dimensionsMeters": [
+        0.035,
+        0.045,
+        0.008
+      ],
+      "attachmentFace": "Broad face flat on casket interior base; source vertical oval rotated onto support",
+      "semanticFront": "As indexed in layout",
+      "reuseClass": "Reusable source-family Function specimen",
+      "imageApproval": {
+        "status": "pending"
+      },
+      "polygonTarget": 3000,
+      "rejectionCriteria": [
+        "Human dimensions changed without an explicit proposal",
+        "Support or true aperture contact lost",
+        "Entry, balcony or return blocked",
+        "Source palette or component identity replaced"
+      ],
+      "sourceReference": "INT-BEDROOM-PROP-001-A09",
+      "imagePrompt": "Reuse saved reference; no new image requested"
+    },
+    {
+      "id": "GIFT-4.2",
+      "kind": "gift",
+      "reference_id": "GEN-25-A03",
+      "position": [
+        4.2,
+        0,
+        -7.7
+      ],
+      "dimensions": [
+        0.35,
+        0.35,
+        0.35
+      ],
+      "rotation": 0,
+      "layer": "floor",
+      "attachment": "Underside on floor; modest birthday dressing",
+      "solid": true,
+      "proposed_dimensions": true,
+      "dimensionsMeters": [
+        0.35,
+        0.35,
+        0.35
+      ],
+      "attachmentFace": "Underside on floor; modest birthday dressing",
+      "semanticFront": "As indexed in layout",
+      "reuseClass": "Reusable source-family Function specimen",
+      "imageApproval": {
+        "status": "pending"
+      },
+      "polygonTarget": 3000,
+      "rejectionCriteria": [
+        "Human dimensions changed without an explicit proposal",
+        "Support or true aperture contact lost",
+        "Entry, balcony or return blocked",
+        "Source palette or component identity replaced"
+      ],
+      "sourceReference": "GEN-25-A03",
+      "imagePrompt": "Reuse saved reference; no new image requested"
+    },
+    {
+      "id": "GIFT-4.7",
+      "kind": "gift",
+      "reference_id": "GEN-25-A03",
+      "position": [
+        4.7,
+        0,
+        -7.7
+      ],
+      "dimensions": [
+        0.28,
+        0.28,
+        0.28
+      ],
+      "rotation": 0,
+      "layer": "floor",
+      "attachment": "Underside on floor; modest birthday dressing",
+      "solid": true,
+      "proposed_dimensions": true,
+      "dimensionsMeters": [
+        0.28,
+        0.28,
+        0.28
+      ],
+      "attachmentFace": "Underside on floor; modest birthday dressing",
+      "semanticFront": "As indexed in layout",
+      "reuseClass": "Reusable source-family Function specimen",
+      "imageApproval": {
+        "status": "pending"
+      },
+      "polygonTarget": 3000,
+      "rejectionCriteria": [
+        "Human dimensions changed without an explicit proposal",
+        "Support or true aperture contact lost",
+        "Entry, balcony or return blocked",
+        "Source palette or component identity replaced"
+      ],
+      "sourceReference": "GEN-25-A03",
+      "imagePrompt": "Reuse saved reference; no new image requested"
+    },
+    {
+      "id": "PERFUME",
+      "kind": "bottle",
+      "reference_id": "INT-BEDROOM-PROP-001-A02",
+      "position": [
+        -10.75,
+        0.8,
+        -6.6
+      ],
+      "dimensions": [
+        0.08,
+        0.06,
+        0.16
+      ],
+      "rotation": 0,
+      "layer": "floor",
+      "attachment": "Base on dressing table Y=0.80",
+      "dimensionsMeters": [
+        0.08,
+        0.06,
+        0.16
+      ],
+      "attachmentFace": "Base on dressing table Y=0.80",
+      "semanticFront": "As indexed in layout",
+      "reuseClass": "Reusable source-family Function specimen",
+      "imageApproval": {
+        "status": "pending"
+      },
+      "polygonTarget": 3000,
+      "rejectionCriteria": [
+        "Human dimensions changed without an explicit proposal",
+        "Support or true aperture contact lost",
+        "Entry, balcony or return blocked",
+        "Source palette or component identity replaced"
+      ],
+      "sourceReference": "INT-BEDROOM-PROP-001-A02",
+      "imagePrompt": "Reuse saved reference; no new image requested"
+    },
+    {
+      "id": "BED-RUG",
+      "kind": "rug",
+      "reference_id": "GEN-24-A11",
+      "position": [
+        0,
+        0,
+        -3.5
+      ],
+      "dimensions": [
+        3.6,
+        2.4,
+        0.012
+      ],
+      "rotation": 0,
+      "layer": "floor",
+      "attachment": "Underside on floor",
+      "walkable": true,
+      "proposed_dimensions": true,
+      "dimensionsMeters": [
+        3.6,
+        2.4,
+        0.012
+      ],
+      "attachmentFace": "Underside on floor",
+      "semanticFront": "As indexed in layout",
+      "reuseClass": "Reusable source-family Function specimen",
+      "imageApproval": {
+        "status": "pending"
+      },
+      "polygonTarget": 3000,
+      "rejectionCriteria": [
+        "Human dimensions changed without an explicit proposal",
+        "Support or true aperture contact lost",
+        "Entry, balcony or return blocked",
+        "Source palette or component identity replaced"
+      ],
+      "sourceReference": "GEN-24-A11",
+      "imagePrompt": "Reuse saved reference; no new image requested"
+    },
+    {
+      "id": "READING-RUG",
+      "kind": "rug",
+      "reference_id": "GEN-24-A11",
+      "position": [
+        -8,
+        0,
+        5
+      ],
+      "dimensions": [
+        3,
+        2,
+        0.012
+      ],
+      "rotation": 0,
+      "layer": "floor",
+      "attachment": "Underside on floor",
+      "walkable": true,
+      "proposed_dimensions": true,
+      "dimensionsMeters": [
+        3,
+        2,
+        0.012
+      ],
+      "attachmentFace": "Underside on floor",
+      "semanticFront": "As indexed in layout",
+      "reuseClass": "Reusable source-family Function specimen",
+      "imageApproval": {
+        "status": "pending"
+      },
+      "polygonTarget": 3000,
+      "rejectionCriteria": [
+        "Human dimensions changed without an explicit proposal",
+        "Support or true aperture contact lost",
+        "Entry, balcony or return blocked",
+        "Source palette or component identity replaced"
+      ],
+      "sourceReference": "GEN-24-A11",
+      "imagePrompt": "Reuse saved reference; no new image requested"
+    },
+    {
+      "id": "PORTAL-CURTAIN--5.7",
+      "kind": "privacy-curtain",
+      "reference_id": "GEN-24-A10",
+      "position": [
+        -11.89,
+        0.15,
+        -5.7
+      ],
+      "dimensions": [
+        0.55,
+        0.5,
+        12.1
+      ],
+      "rotation": 0,
+      "layer": "floor",
+      "attachment": "Proposed plain extended body; source hem/tieback motif kept human-sized; header meets Y=12.25 rail",
+      "solid": true,
+      "posed": true,
+      "dimensionsMeters": [
+        0.55,
+        0.5,
+        12.1
+      ],
+      "attachmentFace": "Proposed plain extended body; source hem/tieback motif kept human-sized; header meets Y=12.25 rail",
+      "semanticFront": "As indexed in layout",
+      "reuseClass": "Reusable source-family Function specimen",
+      "imageApproval": {
+        "status": "pending"
+      },
+      "polygonTarget": 3000,
+      "rejectionCriteria": [
+        "Human dimensions changed without an explicit proposal",
+        "Support or true aperture contact lost",
+        "Entry, balcony or return blocked",
+        "Source palette or component identity replaced"
+      ],
+      "sourceReference": "GEN-24-A10",
+      "imagePrompt": "Reuse saved reference; no new image requested"
+    },
+    {
+      "id": "PORTAL-CURTAIN-3.7",
+      "kind": "privacy-curtain",
+      "reference_id": "GEN-24-A10",
+      "position": [
+        -11.89,
+        0.15,
+        3.7
+      ],
+      "dimensions": [
+        0.55,
+        0.5,
+        12.1
+      ],
+      "rotation": 0,
+      "layer": "floor",
+      "attachment": "Proposed plain extended body; source hem/tieback motif kept human-sized; header meets Y=12.25 rail",
+      "solid": true,
+      "posed": true,
+      "dimensionsMeters": [
+        0.55,
+        0.5,
+        12.1
+      ],
+      "attachmentFace": "Proposed plain extended body; source hem/tieback motif kept human-sized; header meets Y=12.25 rail",
+      "semanticFront": "As indexed in layout",
+      "reuseClass": "Reusable source-family Function specimen",
+      "imageApproval": {
+        "status": "pending"
+      },
+      "polygonTarget": 3000,
+      "rejectionCriteria": [
+        "Human dimensions changed without an explicit proposal",
+        "Support or true aperture contact lost",
+        "Entry, balcony or return blocked",
+        "Source palette or component identity replaced"
+      ],
+      "sourceReference": "GEN-24-A10",
+      "imagePrompt": "Reuse saved reference; no new image requested"
+    },
+    {
+      "id": "ROSE-URN--17.8--6.2",
+      "kind": "rose-urn",
+      "reference_id": "INT-R02-S01",
+      "position": [
+        -17.8,
+        0,
+        -6.2
+      ],
+      "dimensions": [
+        0.65,
+        0.65,
+        1.25
+      ],
+      "rotation": 0,
+      "layer": "floor",
+      "attachment": "Underside on floor",
+      "solid": true,
+      "proposed_dimensions": true,
+      "front": "Planting upward",
+      "dimensionsMeters": [
+        0.65,
+        0.65,
+        1.25
+      ],
+      "attachmentFace": "Underside on floor",
+      "semanticFront": "Planting upward",
+      "reuseClass": "Reusable source-family Function specimen",
+      "imageApproval": {
+        "status": "pending"
+      },
+      "polygonTarget": 3000,
+      "rejectionCriteria": [
+        "Human dimensions changed without an explicit proposal",
+        "Support or true aperture contact lost",
+        "Entry, balcony or return blocked",
+        "Source palette or component identity replaced"
+      ],
+      "sourceReference": "INT-R02-S01",
+      "imagePrompt": "Reuse saved reference; no new image requested"
+    },
+    {
+      "id": "ROSE-URN--17.8-4.2",
+      "kind": "rose-urn",
+      "reference_id": "INT-R02-S01",
+      "position": [
+        -17.8,
+        0,
+        4.2
+      ],
+      "dimensions": [
+        0.65,
+        0.65,
+        1.25
+      ],
+      "rotation": 0,
+      "layer": "floor",
+      "attachment": "Underside on floor",
+      "solid": true,
+      "proposed_dimensions": true,
+      "front": "Planting upward",
+      "dimensionsMeters": [
+        0.65,
+        0.65,
+        1.25
+      ],
+      "attachmentFace": "Underside on floor",
+      "semanticFront": "Planting upward",
+      "reuseClass": "Reusable source-family Function specimen",
+      "imageApproval": {
+        "status": "pending"
+      },
+      "polygonTarget": 3000,
+      "rejectionCriteria": [
+        "Human dimensions changed without an explicit proposal",
+        "Support or true aperture contact lost",
+        "Entry, balcony or return blocked",
+        "Source palette or component identity replaced"
+      ],
+      "sourceReference": "INT-R02-S01",
+      "imagePrompt": "Reuse saved reference; no new image requested"
+    },
+    {
+      "id": "ROSE-URN--29--5.5",
+      "kind": "rose-urn",
+      "reference_id": "INT-R02-S01",
+      "position": [
+        -29,
+        0,
+        -5.5
+      ],
+      "dimensions": [
+        0.65,
+        0.65,
+        1.25
+      ],
+      "rotation": 0,
+      "layer": "floor",
+      "attachment": "Underside on floor",
+      "solid": true,
+      "proposed_dimensions": true,
+      "front": "Planting upward",
+      "dimensionsMeters": [
+        0.65,
+        0.65,
+        1.25
+      ],
+      "attachmentFace": "Underside on floor",
+      "semanticFront": "Planting upward",
+      "reuseClass": "Reusable source-family Function specimen",
+      "imageApproval": {
+        "status": "pending"
+      },
+      "polygonTarget": 3000,
+      "rejectionCriteria": [
+        "Human dimensions changed without an explicit proposal",
+        "Support or true aperture contact lost",
+        "Entry, balcony or return blocked",
+        "Source palette or component identity replaced"
+      ],
+      "sourceReference": "INT-R02-S01",
+      "imagePrompt": "Reuse saved reference; no new image requested"
+    },
+    {
+      "id": "ROSE-URN--29-3.5",
+      "kind": "rose-urn",
+      "reference_id": "INT-R02-S01",
+      "position": [
+        -29,
+        0,
+        3.5
+      ],
+      "dimensions": [
+        0.65,
+        0.65,
+        1.25
+      ],
+      "rotation": 0,
+      "layer": "floor",
+      "attachment": "Underside on floor",
+      "solid": true,
+      "proposed_dimensions": true,
+      "front": "Planting upward",
+      "dimensionsMeters": [
+        0.65,
+        0.65,
+        1.25
+      ],
+      "attachmentFace": "Underside on floor",
+      "semanticFront": "Planting upward",
+      "reuseClass": "Reusable source-family Function specimen",
+      "imageApproval": {
+        "status": "pending"
+      },
+      "polygonTarget": 3000,
+      "rejectionCriteria": [
+        "Human dimensions changed without an explicit proposal",
+        "Support or true aperture contact lost",
+        "Entry, balcony or return blocked",
+        "Source palette or component identity replaced"
+      ],
+      "sourceReference": "INT-R02-S01",
+      "imagePrompt": "Reuse saved reference; no new image requested"
+    },
+    {
+      "id": "CENTRAL-CHANDELIER",
+      "kind": "chandelier",
+      "reference_id": "GEN-24-A07",
+      "position": [
+        0,
+        4.8,
+        0
+      ],
+      "dimensions": [
+        2.4,
+        2.4,
+        2.4
+      ],
+      "rotation": 0,
+      "layer": "ceiling",
+      "attachment": "Visible chain from body top Y=7.2 to vault underside Y=18",
+      "proposed_dimensions": true,
+      "dimensionsMeters": [
+        2.4,
+        2.4,
+        2.4
+      ],
+      "attachmentFace": "Visible chain from body top Y=7.2 to vault underside Y=18",
+      "semanticFront": "As indexed in layout",
+      "reuseClass": "Reusable source-family Function specimen",
+      "imageApproval": {
+        "status": "pending"
+      },
+      "polygonTarget": 3000,
+      "rejectionCriteria": [
+        "Human dimensions changed without an explicit proposal",
+        "Support or true aperture contact lost",
+        "Entry, balcony or return blocked",
+        "Source palette or component identity replaced"
+      ],
+      "sourceReference": "GEN-24-A07",
+      "imagePrompt": "Reuse saved reference; no new image requested"
+    },
+    {
+      "id": "NORTH-SCONCE--4",
+      "kind": "sconce",
+      "reference_id": "INT-R02-S01",
+      "position": [
+        -4,
+        2.05,
+        -9
+      ],
+      "dimensions": [
+        0.3,
+        0.3,
+        0.65
+      ],
+      "rotation": 0,
+      "layer": "floor",
+      "attachment": "Rear face meets north inner wall",
+      "proposed_dimensions": true,
+      "dimensionsMeters": [
+        0.3,
+        0.3,
+        0.65
+      ],
+      "attachmentFace": "Rear face meets north inner wall",
+      "semanticFront": "As indexed in layout",
+      "reuseClass": "Reusable source-family Function specimen",
+      "imageApproval": {
+        "status": "pending"
+      },
+      "polygonTarget": 3000,
+      "rejectionCriteria": [
+        "Human dimensions changed without an explicit proposal",
+        "Support or true aperture contact lost",
+        "Entry, balcony or return blocked",
+        "Source palette or component identity replaced"
+      ],
+      "sourceReference": "INT-R02-S01",
+      "imagePrompt": "Reuse saved reference; no new image requested"
+    },
+    {
+      "id": "NORTH-SCONCE-4",
+      "kind": "sconce",
+      "reference_id": "INT-R02-S01",
+      "position": [
+        4,
+        2.05,
+        -9
+      ],
+      "dimensions": [
+        0.3,
+        0.3,
+        0.65
+      ],
+      "rotation": 0,
+      "layer": "floor",
+      "attachment": "Rear face meets north inner wall",
+      "proposed_dimensions": true,
+      "dimensionsMeters": [
+        0.3,
+        0.3,
+        0.65
+      ],
+      "attachmentFace": "Rear face meets north inner wall",
+      "semanticFront": "As indexed in layout",
+      "reuseClass": "Reusable source-family Function specimen",
+      "imageApproval": {
+        "status": "pending"
+      },
+      "polygonTarget": 3000,
+      "rejectionCriteria": [
+        "Human dimensions changed without an explicit proposal",
+        "Support or true aperture contact lost",
+        "Entry, balcony or return blocked",
+        "Source palette or component identity replaced"
+      ],
+      "sourceReference": "INT-R02-S01",
+      "imagePrompt": "Reuse saved reference; no new image requested"
+    }
+  ]
+}

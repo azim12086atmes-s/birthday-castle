@@ -1,0 +1,86 @@
+{
+  "schema": "game-room.room-brief.v1",
+  "roomId": "b01-bedroom-fit",
+  "family": "custom",
+  "purpose": "Test the accepted princess bedroom and west circular balcony with dressed human-scale bed, reused furniture, lighting and a keepsake interaction.",
+  "runtimeSurface": "Separate static bedroom-fit/index.html; main game unchanged",
+  "boundsMeters": [
+    44.4,
+    18.25,
+    19.4
+  ],
+  "hero": {
+    "id": "BED-FRAME",
+    "role": "Single dressed four-post bed on its preserved north anchor",
+    "reservedBoundsMeters": [
+      2.2,
+      2.7,
+      2.8
+    ]
+  },
+  "symmetry": {
+    "mode": "bilateral bed assembly / asymmetric room",
+    "order": 2,
+    "appliesTo": [
+      "Bed posts, pillows, bedside cabinets"
+    ],
+    "exceptions": [
+      "West balcony, east glass, dressing/reading/memory zones follow source positions."
+    ]
+  },
+  "circulation": {
+    "description": "South 2.4 m entry, room visits, 8 m west opening, level neck, circular balcony and return",
+    "minimumClearanceMeters": 2.4
+  },
+  "productionCamera": {
+    "viewport": [
+      1440,
+      960
+    ],
+    "location": [
+      3.6,
+      2.3,
+      -1.9
+    ],
+    "target": [
+      0,
+      1.4,
+      -6.5
+    ],
+    "verticalFovDegrees": 58
+  },
+  "performanceBudget": {
+    "maxSceneTriangles": 160000,
+    "maxDrawCalls": 160,
+    "maxVLowBytes": 0,
+    "maxHighTextureBytes": 0,
+    "scope": "Software-WebGL Function prototype; final production device/LOD budget pending"
+  },
+  "creditBudget": {
+    "maximumCredits": 0,
+    "approvalRequired": true
+  },
+  "environment": {
+    "type": "none",
+    "identity": "",
+    "source": "",
+    "assignmentKey": ""
+  },
+  "artifacts": {
+    "floorPlan": "plans/lower-plan.png",
+    "reflectedCeilingPlan": "plans/ceiling-plan.png",
+    "planMetadata": "room-layout.json",
+    "wallElevations": [],
+    "visualTarget": "../../completion-pass/INT-R02/INT-R02.png",
+    "openingContactSheet": ""
+  },
+  "customContract": {
+    "playerRadius": 0.45,
+    "playerHeight": 1.75,
+    "eyeHeight": 1.6,
+    "maxStep": 0.2,
+    "sweep": 0.04,
+    "input": "WASD/arrows, Shift, drag, E nearby keepsake interaction",
+    "readiness": "Local source manifests and procedural geometry loaded; no final model/export claim"
+  }
+}

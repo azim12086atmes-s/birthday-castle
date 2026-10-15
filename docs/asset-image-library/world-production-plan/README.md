@@ -1,6 +1,6 @@
 # Structured world production plan
 
-15 October 2026 · [Measured progress](progress.json) · Proposal for scope and sequence · [34-place matrix](location-coverage.csv) · [Full location coverage](location-coverage.json) · [Kit catalog](kit-catalog.json) · [Geography decisions](geography-decisions.json) · [Milestones](milestones.json) · [Gap backlog](gap-backlog.json)
+16 October 2026 · [Measured progress](progress.json) · Proposal for scope and sequence · [34-place matrix](location-coverage.csv) · [Full location coverage](location-coverage.json) · [Kit catalog](kit-catalog.json) · [Geography decisions](geography-decisions.json) · [Milestones](milestones.json) · [Gap backlog](gap-backlog.json)
 
 **First geography blockout:** [Open the separate review page](blockout/index.html) · [Evidence and limitations](blockout/README.md). It preserves all source placements and adds proposed terrain, hydrology, route profiles and local movement tests. Regional crossings, ports, heights and final travel remain under review.
 
@@ -17,6 +17,8 @@
 **Playable room update:** [Furnished cottage sitting-room prototype](village-fit/ROOM.md) now has 2.45 m of measured ceiling clearance, compatible saved furniture, mounted lights, an E-key wind chime and a 48.13 m entrance/bench/return route. Final reference fidelity and integration remain pending.
 
 **FC05 forest sample:** [Cottage and clearing review](forest-fit/index.html) · [Source reuse and evidence](forest-fit/README.md). A 12 × 9 m cottage sitting room, 24 source-family tree specimens and the existing 94 natural placements now share tested indoor and clearing returns. Simplified fit geometry is separate from final art.
+
+**Palace bedroom update:** [Dressed bedroom and west balcony review](bedroom-fit/index.html) · [Sources and evidence](bedroom-fit/README.md). The accepted room, 18 m apex, 2.8 m canopy and 18 m balcony now have 45 component instances, lighting, a keepsake interaction and two complete local return checks. Final art and placement in the palace remain pending.
 
 ## Outcome and present state
 
@@ -213,4 +215,4 @@ For the first samples, test a real controller and camera with continuous ground,
 
 At a proposed 4 m/s walking speed, the palace width alone is about 10.4 minutes and a world-width crossing about 50 minutes. Prioritise short authored loops, visible goals and a tested travel graph over dense decoration along every kilometre. Keep empty relief areas intentional. Portal/sky-boat appearance does not prove a working endpoint or flight mechanic.
 
-The current next deliverable is recorded in milestones.json: furnish and light the accepted palace bedroom/balcony, following the now-tested FC05 cottage/clearing fixture. Regional geography conflicts remain recorded for their production waves. No further image generation is needed just to complete this plan. No paid model service, Blender composition, runtime export or deployment is performed/approved by it. Future paid/image-to-3D and final composition/runtime gates use their required per-asset/layout review; publishing this reference archive is not deploying a game.
+The current next deliverable is recorded in milestones.json: begin the W2 royal-ground route sample at the existing Rose Keep B04 / Crystal Conservatory B25 anchors, after the tested bedroom/balcony and FC05 fixtures. Regional geography conflicts remain recorded for their production waves. No further image generation is needed just to complete this plan. No paid model service, Blender composition, runtime export or deployment is performed/approved by it. Future paid/image-to-3D and final composition/runtime gates use their required per-asset/layout review; publishing this reference archive is not deploying a game.

@@ -1,0 +1,5 @@
+import fs from 'node:fs';import crypto from 'node:crypto';
+const root=new URL('./',import.meta.url),browser=JSON.parse(fs.readFileSync(new URL('browser-verification.json',root))),hash=b=>crypto.createHash('sha256').update(b).digest('hex');
+if(browser.review_data_sha256!==hash(fs.readFileSync(new URL('review-data.json',root))))throw Error('Browser evidence is stale for the current source manifest');
+const images=browser.captures.map(file=>{const bytes=fs.readFileSync(new URL(file,root)),name=file.split('/').pop().replace('.png','');return{id:'B01-BEDROOM-REVIEW-'+name.toUpperCase(),file,description:name.replaceAll('-',' '),bytes:bytes.length,sha256:hash(bytes),status:'Engineering review capture; not a new illustrated sheet or accepted model reference'};});
+fs.writeFileSync(new URL('review/index.json',root),JSON.stringify({id:'B01-BEDROOM-REVIEW-INDEX-001',paths_relative_to:'bedroom-fit/',source_manifest:'review-data.json',new_illustrated_sheets:0,images},null,2)+'\n');console.log(`Indexed ${images.length} saved bedroom review captures; source manifest matches browser evidence.`);

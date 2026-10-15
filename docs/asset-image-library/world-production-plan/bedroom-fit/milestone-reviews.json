@@ -1,0 +1,37 @@
+{
+  "schema": "game-room.milestone-reviews.v1",
+  "roomId": "b01-bedroom-fit",
+  "function": {
+    "status": "pending",
+    "approvedBy": "",
+    "approvedAt": "",
+    "evidence": [
+      "geometry-verification.json",
+      "browser-verification.json"
+    ],
+    "strangestElement": "An 18 m room surrounds a 2.8 m bed. Preserve the deliberate scale contrast; do not enlarge the furniture.",
+    "notes": "Function engineering evidence only; final fidelity, support engineering and formal approval remain pending."
+  },
+  "form": {
+    "status": "pending",
+    "approvedBy": "",
+    "approvedAt": "",
+    "evidence": [
+      "geometry-verification.json",
+      "browser-verification.json"
+    ],
+    "strangestElement": "An 18 m room surrounds a 2.8 m bed. Preserve the deliberate scale contrast; do not enlarge the furniture.",
+    "notes": "Function engineering evidence only; final fidelity, support engineering and formal approval remain pending."
+  },
+  "runtime": {
+    "status": "pending",
+    "approvedBy": "",
+    "approvedAt": "",
+    "evidence": [
+      "geometry-verification.json",
+      "browser-verification.json"
+    ],
+    "strangestElement": "An 18 m room surrounds a 2.8 m bed. Preserve the deliberate scale contrast; do not enlarge the furniture.",
+    "notes": "Function engineering evidence only; final fidelity, support engineering and formal approval remain pending."
+  }
+}

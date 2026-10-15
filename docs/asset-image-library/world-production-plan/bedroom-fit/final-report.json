@@ -1,0 +1,68 @@
+{
+  "schema": "game-room.room-final-report.v1",
+  "roomId": "b01-bedroom-fit",
+  "gates": {
+    "function": false,
+    "form": false,
+    "runtime": false
+  },
+  "formChecks": {
+    "floorPlanParity": false,
+    "primaryArrival": false,
+    "symmetry": false,
+    "shell": false,
+    "manifold": false,
+    "booleans": false,
+    "collisions": false,
+    "support": false,
+    "attachmentOrientation": false,
+    "ceilingAttachmentOrientation": false,
+    "seatingOrientation": false,
+    "focalDistribution": false,
+    "heroClearance": false,
+    "colonnades": false,
+    "screenClearance": false,
+    "scale": false,
+    "camera": false,
+    "ceilingCoverage": false,
+    "environmentCoverage": false,
+    "provenance": false
+  },
+  "reviewRenders": {
+    "corners": [
+      "review/corner-nw.png",
+      "review/corner-ne.png",
+      "review/corner-sw.png",
+      "review/corner-se.png"
+    ],
+    "ceiling": [
+      "review/ceiling-up.png",
+      "review/ceiling-a.png",
+      "review/ceiling-b.png"
+    ],
+    "environment": {}
+  },
+  "runtimeChecks": {
+    "vlow": false,
+    "textureTiers": false,
+    "lightmap": false,
+    "lightingManifest": false,
+    "performance": false,
+    "browserCapture": "",
+    "errors": []
+  },
+  "postmortem": {
+    "observations": [],
+    "corrections": [],
+    "remainingRisks": [
+      "Separate Function fixture using procedural source-family specimens; final art, registered models and game integration remain pending.",
+      "The room remains 24×18 m with 18 m apex, 8×12 m open west arch, 8×4 m neck and 18 m round balcony; wall springline 12.6 m is proposed so the arch fits below the vault.",
+      "Three east windows preserve their source centres; 3×9 m apertures, vault profile and structural wall thickness are proposed construction geometry, not recovered source measurements.",
+      "The bed frame stays 2.2×2.7×2.8 m. Flat textile sizes are preserved in metadata; gathered/draped shapes are proposed, not cloth simulation or certified join fit.",
+      "Balcony rail is trimmed at the actual neck intersection and continues along both neck edges. Supports below the balcony, drainage, structural loading and final rail engineering remain unresolved.",
+      "Tall privacy curtains use a proposed plain fabric extension. Human-scale furniture, trim motifs and bedside objects are not enlarged to fill the room.",
+      "Legacy GEN-24 furniture, chandelier and room decor lack measured dimensions; the existing sample reservations or explicit new fit dimensions control their specimens. Source detail fidelity remains to build."
+    ]
+  },
+  "proposedLessons": []
+}

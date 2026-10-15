@@ -138,6 +138,7 @@
       "exit_evidence": "Each island has a working arrival and return, explorable focal route and bounded content; no flight system is assumed."
     }
   ],
-  "current_next_deliverable": "Furnish, light and test the accepted palace bedroom/west-balcony sample, retaining room and balcony dimensions and human-scale furnishings. FC05 now has a separate tested cottage/clearing Function fixture; exact cottage sleeping furniture, final vegetation art, roof/weather details and integration remain pending.",
-  "local_first_rule": "Resolve world geography at coarse level, but only require sample-local elevations, water, boundaries and access for the first prototype; refine distant-region unknowns in their own wave."
+  "current_next_deliverable": "Start the W2 royal-ground route sample using the existing Rose Keep B04 and Crystal Conservatory B25 anchors: terrain, arrival and full return first, then source-kit architecture, planting and interactions. Bedroom/balcony and FC05 now have separate furnishing/interaction Function evidence; final art, engineering and game integration remain pending.",
+  "local_first_rule": "Resolve world geography at coarse level, but only require sample-local elevations, water, boundaries and access for the first prototype; refine distant-region unknowns in their own wave.",
+  "date": "2026-10-16"
 }

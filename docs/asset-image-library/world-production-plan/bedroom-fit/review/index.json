@@ -1,0 +1,144 @@
+{
+  "id": "B01-BEDROOM-REVIEW-INDEX-001",
+  "paths_relative_to": "bedroom-fit/",
+  "source_manifest": "review-data.json",
+  "new_illustrated_sheets": 0,
+  "images": [
+    {
+      "id": "B01-BEDROOM-REVIEW-DRESSED-BED",
+      "file": "review/dressed-bed.png",
+      "description": "dressed bed",
+      "bytes": 229762,
+      "sha256": "f62a5c58f4afcdb83c4ea365ca58e0fc842efd37430837c7fce525c6fc131b6c",
+      "status": "Engineering review capture; not a new illustrated sheet or accepted model reference"
+    },
+    {
+      "id": "B01-BEDROOM-REVIEW-ENTRY",
+      "file": "review/entry.png",
+      "description": "entry",
+      "bytes": 203357,
+      "sha256": "6c17ed397035e8f743c3828bb91d6be312d3777cf64513b4582dbe6a77e06a91",
+      "status": "Engineering review capture; not a new illustrated sheet or accepted model reference"
+    },
+    {
+      "id": "B01-BEDROOM-REVIEW-BALCONY",
+      "file": "review/balcony.png",
+      "description": "balcony",
+      "bytes": 226074,
+      "sha256": "4a1aa4bfc1cc3c6531af025507c6f4d510827d47a791f37c275f2b7cbe2bb244",
+      "status": "Engineering review capture; not a new illustrated sheet or accepted model reference"
+    },
+    {
+      "id": "B01-BEDROOM-REVIEW-CUTAWAY",
+      "file": "review/cutaway.png",
+      "description": "cutaway",
+      "bytes": 136273,
+      "sha256": "85216c2bb104152fd4793805734efd5ebec8d62baaf5dd207daac0d16c5d30ab",
+      "status": "Engineering review capture; not a new illustrated sheet or accepted model reference"
+    },
+    {
+      "id": "B01-BEDROOM-REVIEW-CEILING-UP",
+      "file": "review/ceiling-up.png",
+      "description": "ceiling up",
+      "bytes": 101541,
+      "sha256": "11f64120202367c9dfac8c145e99fdaf42a5e98ad17924be7b7399159f04d0eb",
+      "status": "Engineering review capture; not a new illustrated sheet or accepted model reference"
+    },
+    {
+      "id": "B01-BEDROOM-REVIEW-CEILING-A",
+      "file": "review/ceiling-a.png",
+      "description": "ceiling a",
+      "bytes": 142195,
+      "sha256": "5e1520793e8a112dded42378162a0db6dcd7afd8ad09c56164b1d71df2adb28d",
+      "status": "Engineering review capture; not a new illustrated sheet or accepted model reference"
+    },
+    {
+      "id": "B01-BEDROOM-REVIEW-CEILING-B",
+      "file": "review/ceiling-b.png",
+      "description": "ceiling b",
+      "bytes": 145253,
+      "sha256": "e96189f5d52a2de19676aa2094644898e509fae83ac1d73befd7a8cc491aaa2a",
+      "status": "Engineering review capture; not a new illustrated sheet or accepted model reference"
+    },
+    {
+      "id": "B01-BEDROOM-REVIEW-CORNER-NW",
+      "file": "review/corner-nw.png",
+      "description": "corner nw",
+      "bytes": 134832,
+      "sha256": "19fb2a245490cd64227705295b6ccfd91b8a2e4261721e6f8d75254bee8967df",
+      "status": "Engineering review capture; not a new illustrated sheet or accepted model reference"
+    },
+    {
+      "id": "B01-BEDROOM-REVIEW-CORNER-NE",
+      "file": "review/corner-ne.png",
+      "description": "corner ne",
+      "bytes": 172838,
+      "sha256": "4c84727a09c7efee08806a02a49d6c6076499f9f2ca92ed7c2c2d842fa920f2c",
+      "status": "Engineering review capture; not a new illustrated sheet or accepted model reference"
+    },
+    {
+      "id": "B01-BEDROOM-REVIEW-CORNER-SW",
+      "file": "review/corner-sw.png",
+      "description": "corner sw",
+      "bytes": 154410,
+      "sha256": "c3e9be9d9d574f7837ae15e608eb93bcbee6d050d7a6cd1f64b83de216a53ee8",
+      "status": "Engineering review capture; not a new illustrated sheet or accepted model reference"
+    },
+    {
+      "id": "B01-BEDROOM-REVIEW-CORNER-SE",
+      "file": "review/corner-se.png",
+      "description": "corner se",
+      "bytes": 155219,
+      "sha256": "a57ef166d9ff2fba14c11d2b05d04e86d26d5780c5aec9b52289a2f53937fc14",
+      "status": "Engineering review capture; not a new illustrated sheet or accepted model reference"
+    },
+    {
+      "id": "B01-BEDROOM-REVIEW-LOWER-PLAN",
+      "file": "plans/lower-plan.png",
+      "description": "lower plan",
+      "bytes": 46039,
+      "sha256": "783c0524af651f70caf4188a8182dd4864333821343dea4f83f31c58e66b706b",
+      "status": "Engineering review capture; not a new illustrated sheet or accepted model reference"
+    },
+    {
+      "id": "B01-BEDROOM-REVIEW-CEILING-PLAN",
+      "file": "plans/ceiling-plan.png",
+      "description": "ceiling plan",
+      "bytes": 33780,
+      "sha256": "cc1813442089d9fbaaae12288c6ac8381c41fef9d2394531b726d485995628b5",
+      "status": "Engineering review capture; not a new illustrated sheet or accepted model reference"
+    },
+    {
+      "id": "B01-BEDROOM-REVIEW-KEEPSAKE-OPEN",
+      "file": "review/keepsake-open.png",
+      "description": "keepsake open",
+      "bytes": 204014,
+      "sha256": "4292ff9d0da8488ddae8b02c962192b646051f5f39c6bff9c4e6a78d26219411",
+      "status": "Engineering review capture; not a new illustrated sheet or accepted model reference"
+    },
+    {
+      "id": "B01-BEDROOM-REVIEW-BALCONY-RETURN",
+      "file": "review/balcony-return.png",
+      "description": "balcony return",
+      "bytes": 83453,
+      "sha256": "13f64e0f507a4d355e938f7a7acbb82ecf9be52719dd9ba3278487c6d0b2ee84",
+      "status": "Engineering review capture; not a new illustrated sheet or accepted model reference"
+    },
+    {
+      "id": "B01-BEDROOM-REVIEW-CLAY",
+      "file": "review/clay.png",
+      "description": "clay",
+      "bytes": 92493,
+      "sha256": "05f4f89092c03ca49467263a0a6d867abe42a2625f0bc97ebe15ecf0ff255f65",
+      "status": "Engineering review capture; not a new illustrated sheet or accepted model reference"
+    },
+    {
+      "id": "B01-BEDROOM-REVIEW-MOBILE",
+      "file": "review/mobile.png",
+      "description": "mobile",
+      "bytes": 148459,
+      "sha256": "f46fa7e5e49acfa1b72b900f73f236f54e70404d0a3dd494dc1185a5d4380c52",
+      "status": "Engineering review capture; not a new illustrated sheet or accepted model reference"
+    }
+  ]
+}

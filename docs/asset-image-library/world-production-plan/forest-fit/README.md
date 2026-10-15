@@ -52,4 +52,4 @@ Node tests check canonical hashes, reservation and roof dimensions, 13 mesh aper
 
 The brief, props, layout, opening schedule, milestone reviews and final report form a custom Function evidence package. Formal Function, Form and Runtime approvals remain pending. Final source fidelity, Blender Booleans/composition, paid generation, runtime export and deployment are separate steps.
 
-Next: furnish and light the accepted **palace bedroom and west balcony** sample, preserving its room, raised ceiling, balcony connection and human-scale furnishing dimensions; then continue the regional production waves.
+The [palace bedroom and west balcony](../bedroom-fit/README.md) now have their own furnished Function fixture and local returns. Next: the W2 royal-ground route sample, then the regional production waves.

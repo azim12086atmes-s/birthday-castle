@@ -1,5 +1,5 @@
 {
-  "date": "2026-10-15",
+  "date": "2026-10-16",
   "scope": "Reference-driven redesign only; legacy main-game content excluded",
   "overall_game_percentage": null,
   "overall_reason": "No agreed weighted work breakdown for the complete game; image counts and local prototype passes do not measure final game completion.",
@@ -35,8 +35,8 @@
       "evidence": [
         {
           "location": "B01",
-          "scope": "Bedroom/balcony geometry and movement",
-          "evidence": "blockout/browser-verification.json"
+          "scope": "Bedroom/balcony, dressed human-scale bed, furnishing/light/keepsake interaction and tested returns",
+          "evidence": "bedroom-fit/browser-verification.json"
         },
         {
           "location": "F02",
@@ -80,12 +80,13 @@
     {
       "step": 3,
       "deliverable": "Bring the palace bedroom/balcony sample to matching furnishing, lighting and interaction coverage",
-      "status": "pending; retain accepted palace/human dimensions"
+      "status": "implemented Function prototype; accepted room, canopy and balcony dimensions preserved",
+      "evidence": "bedroom-fit/browser-verification.json"
     },
     {
       "step": 4,
       "deliverable": "Expand west woodland/village/royal-ground locations, then water/coast, highlands, jungle/canyon and sky waves",
-      "status": "pending; terrain and access before architecture, ecology/dressing and interactions"
+      "status": "next: W2 Rose Keep B04 / Crystal Conservatory B25 terrain, arrival and return; architecture and ecology follow"
     },
     {
       "step": 5,

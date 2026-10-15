@@ -1,0 +1,132 @@
+{
+  "status": "pass",
+  "review_data_sha256": "2f2d57d89774347472ccb0b7a98e1690bd4729721ea3840f419a0aca0195c482",
+  "browser": "Chromium / Playwright / software WebGL2",
+  "viewports": [
+    "1440\u00d7960",
+    "1024\u00d7768 return checks",
+    "390\u00d7844"
+  ],
+  "checks": [
+    "One dressed human-scale bed and saved asymmetrical room layout render without page/console errors",
+    "Actual substrate apex measures 18 m; centre-up, two opposed ceiling obliques and four 120-degree corners are saved",
+    "Grayscale lower/reflected-ceiling projections use actual meshes with separated pendant layer",
+    "Nearby E-key casket opens actual hinge; distant use rejects; named component selection displays source ID",
+    "Furniture/plant/ceiling visibility toggles preserve movement/collision contracts",
+    "Keyboard input and both complete bedroom/balcony returns pass; outer balcony edge blocks and level west passage stays open",
+    "Source/clay and 390 px review controls fit the viewport"
+  ],
+  "walks": {
+    "bedroom": {
+      "name": "bedroom",
+      "status": "pass",
+      "length_m": 53.11857372198866,
+      "travelled_m": 53.118573721988746,
+      "position": {
+        "x": 0,
+        "z": 12
+      }
+    },
+    "balcony": {
+      "name": "balcony",
+      "status": "pass",
+      "length_m": 76.22724874931723,
+      "travelled_m": 76.22724874931718,
+      "position": {
+        "x": 0,
+        "z": 12
+      }
+    }
+  },
+  "performance_observations": {
+    "review/dressed-bed.png": {
+      "triangles": 125756,
+      "draw_calls": 84
+    },
+    "review/entry.png": {
+      "triangles": 84728,
+      "draw_calls": 84
+    },
+    "review/balcony.png": {
+      "triangles": 136108,
+      "draw_calls": 112
+    },
+    "review/cutaway.png": {
+      "triangles": 94236,
+      "draw_calls": 126
+    },
+    "review/ceiling-up.png": {
+      "triangles": 62056,
+      "draw_calls": 18
+    },
+    "review/ceiling-a.png": {
+      "triangles": 60820,
+      "draw_calls": 18
+    },
+    "review/ceiling-b.png": {
+      "triangles": 60844,
+      "draw_calls": 20
+    },
+    "review/corner-nw.png": {
+      "triangles": 105992,
+      "draw_calls": 97
+    },
+    "review/corner-ne.png": {
+      "triangles": 142020,
+      "draw_calls": 135
+    },
+    "review/corner-sw.png": {
+      "triangles": 106412,
+      "draw_calls": 101
+    },
+    "review/corner-se.png": {
+      "triangles": 142020,
+      "draw_calls": 135
+    },
+    "plans/lower-plan.png": {
+      "triangles": 81272,
+      "draw_calls": 107
+    },
+    "plans/ceiling-plan.png": {
+      "triangles": 28416,
+      "draw_calls": 8
+    },
+    "review/keepsake-open.png": {
+      "triangles": 84528,
+      "draw_calls": 99
+    },
+    "review/balcony-return.png": {
+      "triangles": 24976,
+      "draw_calls": 5
+    },
+    "review/clay.png": {
+      "triangles": 125756,
+      "draw_calls": 84
+    },
+    "review/mobile.png": {
+      "triangles": 78424,
+      "draw_calls": 64
+    }
+  },
+  "captures": [
+    "review/dressed-bed.png",
+    "review/entry.png",
+    "review/balcony.png",
+    "review/cutaway.png",
+    "review/ceiling-up.png",
+    "review/ceiling-a.png",
+    "review/ceiling-b.png",
+    "review/corner-nw.png",
+    "review/corner-ne.png",
+    "review/corner-sw.png",
+    "review/corner-se.png",
+    "plans/lower-plan.png",
+    "plans/ceiling-plan.png",
+    "review/keepsake-open.png",
+    "review/balcony-return.png",
+    "review/clay.png",
+    "review/mobile.png"
+  ],
+  "page_errors": [],
+  "limits": "Procedural Function geometry only; source ornament, cloth, glass, final models, structural approval, game integration and production device performance remain pending"
+}

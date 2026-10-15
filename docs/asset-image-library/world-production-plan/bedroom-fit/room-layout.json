@@ -1,0 +1,4544 @@
+{
+  "schema": "game-room.room-layout.v1",
+  "roomId": "b01-bedroom-fit",
+  "units": "metres; X east / Y up / Z south; palace-wing placement/altitude unresolved",
+  "room": {
+    "width_m": 24,
+    "depth_m": 18,
+    "apex_m": 18
+  },
+  "source_room": {
+    "source": "../../completion-pass/INT-R02/schedule.json",
+    "coordinate_conversion": "Source x east, y north, z up -> preview x=x, y=z, z=-y",
+    "room": {
+      "width_m": 24,
+      "depth_m": 18,
+      "apex_m": 18
+    },
+    "balcony": {
+      "centre": [
+        -23,
+        -1
+      ],
+      "radius_m": 9,
+      "rail_radius_m": 8.8,
+      "rail_height_m": 1.1
+    },
+    "neck": {
+      "xmin": -16,
+      "xmax": -12,
+      "zmin": -5,
+      "zmax": 3
+    },
+    "west_opening": {
+      "x": -12,
+      "zmin": -5,
+      "zmax": 3,
+      "height_m": 12
+    },
+    "entry": {
+      "z": 9,
+      "width_m": 2.4,
+      "height_m": 3.2,
+      "apron_depth_m": 4
+    },
+    "bed": {
+      "centre": [
+        0,
+        -6.5
+      ],
+      "width_m": 2.2,
+      "depth_m": 2.7,
+      "height_m": 2.8
+    },
+    "status": "Dimensional room sample; placement within palace wings and supports below balcony remain unresolved",
+    "furnishings": [
+      {
+        "id": "CHAIR-W1",
+        "name": "Balcony seat",
+        "centre": [
+          -27,
+          -4
+        ],
+        "width_m": 0.85,
+        "depth_m": 0.9,
+        "height_m": 1.1
+      },
+      {
+        "id": "CHAIR-W2",
+        "name": "Balcony seat",
+        "centre": [
+          -27,
+          2
+        ],
+        "width_m": 0.85,
+        "depth_m": 0.9,
+        "height_m": 1.1
+      },
+      {
+        "id": "TABLE-W",
+        "name": "Balcony table",
+        "centre": [
+          -28,
+          -1
+        ],
+        "width_m": 0.7,
+        "depth_m": 0.7,
+        "height_m": 0.65
+      },
+      {
+        "id": "FOUNTAIN-W",
+        "name": "Small balcony fountain",
+        "centre": [
+          -23,
+          4
+        ],
+        "width_m": 1.2,
+        "depth_m": 1.2,
+        "height_m": 1.1
+      },
+      {
+        "id": "CHAISE-SW",
+        "name": "Reading chaise",
+        "centre": [
+          -8,
+          5
+        ],
+        "width_m": 2.1,
+        "depth_m": 0.85,
+        "height_m": 0.8
+      },
+      {
+        "id": "CONSOLE-SE",
+        "name": "Keepsake console",
+        "centre": [
+          8,
+          6
+        ],
+        "width_m": 1.4,
+        "depth_m": 0.45,
+        "height_m": 0.85
+      }
+    ]
+  },
+  "entrance_apron": {
+    "centre": [
+      0,
+      0,
+      11
+    ],
+    "width": 3.2,
+    "depth": 4,
+    "thickness": 0.6,
+    "port": [
+      0,
+      12
+    ]
+  },
+  "walls": [
+    {
+      "id": "W-N",
+      "axis": "x",
+      "at": -9.2,
+      "start": -12.4,
+      "end": 12.4,
+      "depth": 0.4,
+      "vault_end": true
+    },
+    {
+      "id": "W-S",
+      "axis": "x",
+      "at": 9.2,
+      "start": -12.4,
+      "end": 12.4,
+      "depth": 0.4,
+      "vault_end": true
+    },
+    {
+      "id": "W-E",
+      "axis": "z",
+      "at": 12.2,
+      "start": -9.2,
+      "end": 9.2,
+      "depth": 0.4,
+      "height": 12.6
+    },
+    {
+      "id": "W-W",
+      "axis": "z",
+      "at": -12.2,
+      "start": -9.2,
+      "end": 9.2,
+      "depth": 0.4,
+      "height": 12.6
+    },
+    {
+      "id": "NICHE-FRONT",
+      "axis": "x",
+      "at": -7.9,
+      "start": -2.4,
+      "end": 2.4,
+      "depth": 0.2,
+      "height": 6
+    },
+    {
+      "id": "NICHE-SIDE--2.3",
+      "axis": "z",
+      "at": -2.3,
+      "start": -9,
+      "end": -7.8,
+      "depth": 0.2,
+      "height": 6
+    },
+    {
+      "id": "NICHE-SIDE-2.3",
+      "axis": "z",
+      "at": 2.3,
+      "start": -9,
+      "end": -7.8,
+      "depth": 0.2,
+      "height": 6
+    }
+  ],
+  "openings": [
+    {
+      "id": "N-BED-ALCOVE",
+      "wall_id": "NICHE-FRONT",
+      "axis": "x",
+      "at": -7.9,
+      "centre": 0,
+      "width": 3.8,
+      "sill": 0.15,
+      "height": 5,
+      "rise": 2,
+      "kind": "deep_alcove",
+      "traversable": false,
+      "destination": "Backed bed-head recess; not a doorway",
+      "face_sign": 1,
+      "usable_depth_m": 1.2,
+      "back_wall_id": "W-N",
+      "reference_id": "INT-SUITE-SHELL-001-S01"
+    },
+    {
+      "id": "S-ENTRY",
+      "wall_id": "W-S",
+      "axis": "x",
+      "at": 9.2,
+      "centre": 0,
+      "width": 2.4,
+      "sill": 0,
+      "height": 3.2,
+      "rise": 0.8,
+      "kind": "door",
+      "traversable": true,
+      "destination": "South entrance apron / bedroom",
+      "face_sign": -1
+    },
+    {
+      "id": "W-BALCONY",
+      "wall_id": "W-W",
+      "axis": "z",
+      "at": -12.2,
+      "centre": -1,
+      "width": 8,
+      "sill": 0,
+      "height": 12,
+      "rise": 4,
+      "kind": "door",
+      "traversable": true,
+      "destination": "Open west threshold neck and circular flower balcony",
+      "face_sign": 1
+    },
+    {
+      "id": "E-WINDOW--5",
+      "wall_id": "W-E",
+      "axis": "z",
+      "at": 12.2,
+      "centre": -5,
+      "width": 3,
+      "sill": 1,
+      "height": 9,
+      "rise": 2.5,
+      "kind": "window",
+      "traversable": false,
+      "destination": "Exterior view / coloured glazing",
+      "face_sign": -1,
+      "proposed_dimensions": true
+    },
+    {
+      "id": "E-WINDOW-0",
+      "wall_id": "W-E",
+      "axis": "z",
+      "at": 12.2,
+      "centre": 0,
+      "width": 3,
+      "sill": 1,
+      "height": 9,
+      "rise": 2.5,
+      "kind": "window",
+      "traversable": false,
+      "destination": "Exterior view / coloured glazing",
+      "face_sign": -1,
+      "proposed_dimensions": true
+    },
+    {
+      "id": "E-WINDOW-5",
+      "wall_id": "W-E",
+      "axis": "z",
+      "at": 12.2,
+      "centre": 5,
+      "width": 3,
+      "sill": 1,
+      "height": 9,
+      "rise": 2.5,
+      "kind": "window",
+      "traversable": false,
+      "destination": "Exterior view / coloured glazing",
+      "face_sign": -1,
+      "proposed_dimensions": true
+    }
+  ],
+  "items": [
+    {
+      "id": "BED-FRAME",
+      "kind": "bed",
+      "reference_id": "INT-SUITE-FURN-001-S01",
+      "position": [
+        0,
+        0,
+        -6.5
+      ],
+      "dimensions": [
+        2.2,
+        2.7,
+        2.8
+      ],
+      "rotation": 0,
+      "layer": "floor",
+      "attachment": "Underside on floor",
+      "solid": true,
+      "front": "South; headboard north"
+    },
+    {
+      "id": "MATTRESS",
+      "kind": "mattress",
+      "reference_id": "INT-BED-DRESS-001-A01",
+      "position": [
+        0,
+        0.48,
+        -6.5
+      ],
+      "dimensions": [
+        2,
+        2.2,
+        0.28
+      ],
+      "rotation": 0,
+      "layer": "floor",
+      "attachment": "Underside on slat deck Y=0.48"
+    },
+    {
+      "id": "FITTED-SHEET",
+      "kind": "sheet",
+      "reference_id": "INT-BED-DRESS-001-A02",
+      "position": [
+        0,
+        0.48,
+        -6.5
+      ],
+      "dimensions": [
+        2,
+        2.2,
+        0.29
+      ],
+      "rotation": 0,
+      "layer": "floor",
+      "attachment": "Thin hollow shell around mattress; no duplicate solid mattress"
+    },
+    {
+      "id": "BLUSH-DUVET",
+      "kind": "duvet",
+      "reference_id": "INT-BED-DRESS-001-A03",
+      "position": [
+        0,
+        0.77,
+        -6.35
+      ],
+      "dimensions": [
+        2.4,
+        2.5,
+        0.08
+      ],
+      "rotation": 0,
+      "layer": "floor",
+      "attachment": "Centre on sheet; posed side folds hang over mattress",
+      "posed": true
+    },
+    {
+      "id": "PILLOW--0.48",
+      "kind": "pillow",
+      "reference_id": "INT-BED-DRESS-001-A04",
+      "position": [
+        -0.48,
+        0.77,
+        -7.23
+      ],
+      "dimensions": [
+        0.7,
+        0.45,
+        0.16
+      ],
+      "rotation": 0,
+      "layer": "floor",
+      "attachment": "Underside on fitted-sheet top"
+    },
+    {
+      "id": "PILLOW-0.48",
+      "kind": "pillow",
+      "reference_id": "INT-BED-DRESS-001-A04",
+      "position": [
+        0.48,
+        0.77,
+        -7.23
+      ],
+      "dimensions": [
+        0.7,
+        0.45,
+        0.16
+      ],
+      "rotation": 0,
+      "layer": "floor",
+      "attachment": "Underside on fitted-sheet top"
+    },
+    {
+      "id": "CANOPY-CURTAIN--1.05--7.8",
+      "kind": "canopy-curtain",
+      "reference_id": "INT-BED-DRESS-001-A05",
+      "position": [
+        -1.05,
+        0.15,
+        -7.8
+      ],
+      "dimensions": [
+        0.9,
+        0.03,
+        2.3
+      ],
+      "rotation": 0,
+      "layer": "floor",
+      "attachment": "Visible header rings meet frame; gathered fabric near each post",
+      "posed": true
+    },
+    {
+      "id": "CANOPY-CURTAIN--1.05--5.2",
+      "kind": "canopy-curtain",
+      "reference_id": "INT-BED-DRESS-001-A05",
+      "position": [
+        -1.05,
+        0.15,
+        -5.2
+      ],
+      "dimensions": [
+        0.9,
+        0.03,
+        2.3
+      ],
+      "rotation": 0,
+      "layer": "floor",
+      "attachment": "Visible header rings meet frame; gathered fabric near each post",
+      "posed": true
+    },
+    {
+      "id": "CANOPY-CURTAIN-1.05--7.8",
+      "kind": "canopy-curtain",
+      "reference_id": "INT-BED-DRESS-001-A05",
+      "position": [
+        1.05,
+        0.15,
+        -7.8
+      ],
+      "dimensions": [
+        0.9,
+        0.03,
+        2.3
+      ],
+      "rotation": 0,
+      "layer": "floor",
+      "attachment": "Visible header rings meet frame; gathered fabric near each post",
+      "posed": true
+    },
+    {
+      "id": "CANOPY-CURTAIN-1.05--5.2",
+      "kind": "canopy-curtain",
+      "reference_id": "INT-BED-DRESS-001-A05",
+      "position": [
+        1.05,
+        0.15,
+        -5.2
+      ],
+      "dimensions": [
+        0.9,
+        0.03,
+        2.3
+      ],
+      "rotation": 0,
+      "layer": "floor",
+      "attachment": "Visible header rings meet frame; gathered fabric near each post",
+      "posed": true
+    },
+    {
+      "id": "VALANCE--7.8",
+      "kind": "valance",
+      "reference_id": "INT-BED-DRESS-001-A06",
+      "position": [
+        0,
+        2.45,
+        -7.8
+      ],
+      "dimensions": [
+        2.2,
+        0.06,
+        0.32
+      ],
+      "rotation": 0,
+      "layer": "floor",
+      "attachment": "Header on canopy beam"
+    },
+    {
+      "id": "VALANCE--5.2",
+      "kind": "valance",
+      "reference_id": "INT-BED-DRESS-001-A06",
+      "position": [
+        0,
+        2.45,
+        -5.2
+      ],
+      "dimensions": [
+        2.2,
+        0.06,
+        0.32
+      ],
+      "rotation": 0,
+      "layer": "floor",
+      "attachment": "Header on canopy beam"
+    },
+    {
+      "id": "SIDE-VALANCE--1.05",
+      "kind": "valance",
+      "reference_id": "INT-BED-DRESS-001-A07",
+      "position": [
+        -1.05,
+        2.45,
+        -6.5
+      ],
+      "dimensions": [
+        2.7,
+        0.06,
+        0.32
+      ],
+      "rotation": 1.5707963267948966,
+      "layer": "floor",
+      "attachment": "Header on side canopy beam"
+    },
+    {
+      "id": "SIDE-VALANCE-1.05",
+      "kind": "valance",
+      "reference_id": "INT-BED-DRESS-001-A07",
+      "position": [
+        1.05,
+        2.45,
+        -6.5
+      ],
+      "dimensions": [
+        2.7,
+        0.06,
+        0.32
+      ],
+      "rotation": 1.5707963267948966,
+      "layer": "floor",
+      "attachment": "Header on side canopy beam"
+    },
+    {
+      "id": "SIDE-SKIRT--1.08",
+      "kind": "skirt",
+      "reference_id": "INT-BED-DRESS-001-A08",
+      "position": [
+        -1.08,
+        0.08,
+        -6.5
+      ],
+      "dimensions": [
+        2.7,
+        0.02,
+        0.4
+      ],
+      "rotation": 1.5707963267948966,
+      "layer": "floor",
+      "attachment": "Header on frame side rail"
+    },
+    {
+      "id": "SIDE-SKIRT-1.08",
+      "kind": "skirt",
+      "reference_id": "INT-BED-DRESS-001-A08",
+      "position": [
+        1.08,
+        0.08,
+        -6.5
+      ],
+      "dimensions": [
+        2.7,
+        0.02,
+        0.4
+      ],
+      "rotation": 1.5707963267948966,
+      "layer": "floor",
+      "attachment": "Header on frame side rail"
+    },
+    {
+      "id": "FOOT-SKIRT",
+      "kind": "skirt",
+      "reference_id": "INT-BED-DRESS-001-A09",
+      "position": [
+        0,
+        0.08,
+        -5.17
+      ],
+      "dimensions": [
+        2.2,
+        0.02,
+        0.4
+      ],
+      "rotation": 0,
+      "layer": "floor",
+      "attachment": "Header on foot rail"
+    },
+    {
+      "id": "FOOT-RUNNER",
+      "kind": "runner",
+      "reference_id": "INT-BED-DRESS-001-A10",
+      "position": [
+        0,
+        0.85,
+        -5.65
+      ],
+      "dimensions": [
+        2.3,
+        0.55,
+        0.015
+      ],
+      "rotation": 0,
+      "layer": "floor",
+      "attachment": "Broad centre rests on duvet; posed overhangs",
+      "posed": true
+    },
+    {
+      "id": "BEDSIDE--1.8",
+      "kind": "cabinet",
+      "reference_id": "INT-SUITE-FURN-001-S02",
+      "position": [
+        -1.8,
+        0,
+        -7.05
+      ],
+      "dimensions": [
+        0.65,
+        0.45,
+        0.75
+      ],
+      "rotation": 0,
+      "layer": "floor",
+      "attachment": "Underside on floor",
+      "solid": true,
+      "front": "South"
+    },
+    {
+      "id": "BEDSIDE-1.8",
+      "kind": "cabinet",
+      "reference_id": "INT-SUITE-FURN-001-S02",
+      "position": [
+        1.8,
+        0,
+        -7.05
+      ],
+      "dimensions": [
+        0.65,
+        0.45,
+        0.75
+      ],
+      "rotation": 0,
+      "layer": "floor",
+      "attachment": "Underside on floor",
+      "solid": true,
+      "front": "South"
+    },
+    {
+      "id": "WARDROBE-NW",
+      "kind": "wardrobe",
+      "reference_id": "INT-SUITE-FURN-001-S03",
+      "position": [
+        -9,
+        0,
+        -8.1
+      ],
+      "dimensions": [
+        1.6,
+        0.65,
+        2.4
+      ],
+      "rotation": 0,
+      "layer": "floor",
+      "attachment": "Underside on floor",
+      "solid": true,
+      "front": "South"
+    },
+    {
+      "id": "DRESSING-TABLE",
+      "kind": "dressing-table",
+      "reference_id": "INT-SUITE-FURN-001-S04",
+      "position": [
+        -10.75,
+        0,
+        -6.6
+      ],
+      "dimensions": [
+        1.4,
+        0.5,
+        0.8
+      ],
+      "rotation": 1.5707963267948966,
+      "layer": "floor",
+      "attachment": "Underside on floor",
+      "solid": true,
+      "front": "East"
+    },
+    {
+      "id": "MOON-MIRROR",
+      "kind": "mirror",
+      "reference_id": "GEN-24-A03",
+      "position": [
+        -11.96,
+        1.05,
+        -6.6
+      ],
+      "dimensions": [
+        0.9,
+        0.08,
+        1.2
+      ],
+      "rotation": 1.5707963267948966,
+      "layer": "floor",
+      "attachment": "Rear plate against west inner wall",
+      "front": "East",
+      "proposed_dimensions": true
+    },
+    {
+      "id": "CHAIR-W1",
+      "kind": "chair",
+      "reference_id": "INT-R02-S01",
+      "position": [
+        -27,
+        0,
+        -4
+      ],
+      "dimensions": [
+        0.85,
+        0.9,
+        1.1
+      ],
+      "rotation": -0.3217505543966422,
+      "layer": "floor",
+      "attachment": "Underside on floor",
+      "solid": true,
+      "source_placement": "Unchanged existing blockout furnishing reservation",
+      "front": "Toward balcony table",
+      "proposed_dimensions": true
+    },
+    {
+      "id": "CHAIR-W2",
+      "kind": "chair",
+      "reference_id": "INT-R02-S01",
+      "position": [
+        -27,
+        0,
+        2
+      ],
+      "dimensions": [
+        0.85,
+        0.9,
+        1.1
+      ],
+      "rotation": -2.819842099193151,
+      "layer": "floor",
+      "attachment": "Underside on floor",
+      "solid": true,
+      "source_placement": "Unchanged existing blockout furnishing reservation",
+      "front": "Toward balcony table",
+      "proposed_dimensions": true
+    },
+    {
+      "id": "TABLE-W",
+      "kind": "table",
+      "reference_id": "GEN-24-A06",
+      "position": [
+        -28,
+        0,
+        -1
+      ],
+      "dimensions": [
+        0.7,
+        0.7,
+        0.65
+      ],
+      "rotation": 0,
+      "layer": "floor",
+      "attachment": "Underside on floor",
+      "solid": true,
+      "source_placement": "Unchanged existing blockout furnishing reservation",
+      "front": "Source-family fit",
+      "proposed_dimensions": true
+    },
+    {
+      "id": "FOUNTAIN-W",
+      "kind": "fountain",
+      "reference_id": "INT-R02-S01",
+      "position": [
+        -23,
+        0,
+        4
+      ],
+      "dimensions": [
+        1.2,
+        1.2,
+        1.1
+      ],
+      "rotation": 0,
+      "layer": "floor",
+      "attachment": "Underside on floor",
+      "solid": true,
+      "source_placement": "Unchanged existing blockout furnishing reservation",
+      "front": "Source-family fit",
+      "proposed_dimensions": true
+    },
+    {
+      "id": "CHAISE-SW",
+      "kind": "chaise",
+      "reference_id": "GEN-24-A05",
+      "position": [
+        -8,
+        0.012,
+        5
+      ],
+      "dimensions": [
+        2.1,
+        0.85,
+        0.8
+      ],
+      "rotation": 0,
+      "layer": "floor",
+      "attachment": "Feet on reading-rug top Y=0.012; original X/Z reservation and furniture dimensions retained",
+      "solid": true,
+      "source_placement": "Unchanged existing blockout furnishing reservation",
+      "front": "North toward room",
+      "proposed_dimensions": true
+    },
+    {
+      "id": "CONSOLE-SE",
+      "kind": "console",
+      "reference_id": "GEN-24-A04",
+      "position": [
+        8,
+        0,
+        6
+      ],
+      "dimensions": [
+        1.4,
+        0.45,
+        0.85
+      ],
+      "rotation": 0,
+      "layer": "floor",
+      "attachment": "Underside on floor",
+      "solid": true,
+      "source_placement": "Unchanged existing blockout furnishing reservation",
+      "front": "Source-family fit",
+      "proposed_dimensions": true
+    },
+    {
+      "id": "KEEPSAKE-CASKET",
+      "kind": "casket",
+      "reference_id": "INT-BEDROOM-PROP-001-A01",
+      "position": [
+        8,
+        0.85,
+        6
+      ],
+      "dimensions": [
+        0.28,
+        0.18,
+        0.16
+      ],
+      "rotation": 0,
+      "layer": "floor",
+      "attachment": "Base on console top Y=0.85",
+      "interaction": "E opens/closes within 1.8 m"
+    },
+    {
+      "id": "KEEPSAKE-LOCKET",
+      "kind": "locket",
+      "reference_id": "INT-BEDROOM-PROP-001-A09",
+      "position": [
+        8,
+        0.875,
+        6
+      ],
+      "dimensions": [
+        0.035,
+        0.045,
+        0.008
+      ],
+      "rotation": 0,
+      "layer": "floor",
+      "attachment": "Broad face flat on casket interior base; source vertical oval rotated onto support",
+      "source_dimensions": [
+        0.035,
+        0.008,
+        0.045
+      ]
+    },
+    {
+      "id": "GIFT-4.2",
+      "kind": "gift",
+      "reference_id": "GEN-25-A03",
+      "position": [
+        4.2,
+        0,
+        -7.7
+      ],
+      "dimensions": [
+        0.35,
+        0.35,
+        0.35
+      ],
+      "rotation": 0,
+      "layer": "floor",
+      "attachment": "Underside on floor; modest birthday dressing",
+      "solid": true,
+      "proposed_dimensions": true
+    },
+    {
+      "id": "GIFT-4.7",
+      "kind": "gift",
+      "reference_id": "GEN-25-A03",
+      "position": [
+        4.7,
+        0,
+        -7.7
+      ],
+      "dimensions": [
+        0.28,
+        0.28,
+        0.28
+      ],
+      "rotation": 0,
+      "layer": "floor",
+      "attachment": "Underside on floor; modest birthday dressing",
+      "solid": true,
+      "proposed_dimensions": true
+    },
+    {
+      "id": "PERFUME",
+      "kind": "bottle",
+      "reference_id": "INT-BEDROOM-PROP-001-A02",
+      "position": [
+        -10.75,
+        0.8,
+        -6.6
+      ],
+      "dimensions": [
+        0.08,
+        0.06,
+        0.16
+      ],
+      "rotation": 0,
+      "layer": "floor",
+      "attachment": "Base on dressing table Y=0.80"
+    },
+    {
+      "id": "BED-RUG",
+      "kind": "rug",
+      "reference_id": "GEN-24-A11",
+      "position": [
+        0,
+        0,
+        -3.5
+      ],
+      "dimensions": [
+        3.6,
+        2.4,
+        0.012
+      ],
+      "rotation": 0,
+      "layer": "floor",
+      "attachment": "Underside on floor",
+      "walkable": true,
+      "proposed_dimensions": true
+    },
+    {
+      "id": "READING-RUG",
+      "kind": "rug",
+      "reference_id": "GEN-24-A11",
+      "position": [
+        -8,
+        0,
+        5
+      ],
+      "dimensions": [
+        3,
+        2,
+        0.012
+      ],
+      "rotation": 0,
+      "layer": "floor",
+      "attachment": "Underside on floor",
+      "walkable": true,
+      "proposed_dimensions": true
+    },
+    {
+      "id": "PORTAL-CURTAIN--5.7",
+      "kind": "privacy-curtain",
+      "reference_id": "GEN-24-A10",
+      "position": [
+        -11.89,
+        0.15,
+        -5.7
+      ],
+      "dimensions": [
+        0.55,
+        0.5,
+        12.1
+      ],
+      "rotation": 0,
+      "layer": "floor",
+      "attachment": "Proposed plain extended body; source hem/tieback motif kept human-sized; header meets Y=12.25 rail",
+      "solid": true,
+      "posed": true
+    },
+    {
+      "id": "PORTAL-CURTAIN-3.7",
+      "kind": "privacy-curtain",
+      "reference_id": "GEN-24-A10",
+      "position": [
+        -11.89,
+        0.15,
+        3.7
+      ],
+      "dimensions": [
+        0.55,
+        0.5,
+        12.1
+      ],
+      "rotation": 0,
+      "layer": "floor",
+      "attachment": "Proposed plain extended body; source hem/tieback motif kept human-sized; header meets Y=12.25 rail",
+      "solid": true,
+      "posed": true
+    },
+    {
+      "id": "ROSE-URN--17.8--6.2",
+      "kind": "rose-urn",
+      "reference_id": "INT-R02-S01",
+      "position": [
+        -17.8,
+        0,
+        -6.2
+      ],
+      "dimensions": [
+        0.65,
+        0.65,
+        1.25
+      ],
+      "rotation": 0,
+      "layer": "floor",
+      "attachment": "Underside on floor",
+      "solid": true,
+      "proposed_dimensions": true,
+      "front": "Planting upward"
+    },
+    {
+      "id": "ROSE-URN--17.8-4.2",
+      "kind": "rose-urn",
+      "reference_id": "INT-R02-S01",
+      "position": [
+        -17.8,
+        0,
+        4.2
+      ],
+      "dimensions": [
+        0.65,
+        0.65,
+        1.25
+      ],
+      "rotation": 0,
+      "layer": "floor",
+      "attachment": "Underside on floor",
+      "solid": true,
+      "proposed_dimensions": true,
+      "front": "Planting upward"
+    },
+    {
+      "id": "ROSE-URN--29--5.5",
+      "kind": "rose-urn",
+      "reference_id": "INT-R02-S01",
+      "position": [
+        -29,
+        0,
+        -5.5
+      ],
+      "dimensions": [
+        0.65,
+        0.65,
+        1.25
+      ],
+      "rotation": 0,
+      "layer": "floor",
+      "attachment": "Underside on floor",
+      "solid": true,
+      "proposed_dimensions": true,
+      "front": "Planting upward"
+    },
+    {
+      "id": "ROSE-URN--29-3.5",
+      "kind": "rose-urn",
+      "reference_id": "INT-R02-S01",
+      "position": [
+        -29,
+        0,
+        3.5
+      ],
+      "dimensions": [
+        0.65,
+        0.65,
+        1.25
+      ],
+      "rotation": 0,
+      "layer": "floor",
+      "attachment": "Underside on floor",
+      "solid": true,
+      "proposed_dimensions": true,
+      "front": "Planting upward"
+    },
+    {
+      "id": "CENTRAL-CHANDELIER",
+      "kind": "chandelier",
+      "reference_id": "GEN-24-A07",
+      "position": [
+        0,
+        4.8,
+        0
+      ],
+      "dimensions": [
+        2.4,
+        2.4,
+        2.4
+      ],
+      "rotation": 0,
+      "layer": "ceiling",
+      "attachment": "Visible chain from body top Y=7.2 to vault underside Y=18",
+      "proposed_dimensions": true
+    },
+    {
+      "id": "NORTH-SCONCE--4",
+      "kind": "sconce",
+      "reference_id": "INT-R02-S01",
+      "position": [
+        -4,
+        2.05,
+        -9
+      ],
+      "dimensions": [
+        0.3,
+        0.3,
+        0.65
+      ],
+      "rotation": 0,
+      "layer": "floor",
+      "attachment": "Rear face meets north inner wall",
+      "proposed_dimensions": true
+    },
+    {
+      "id": "NORTH-SCONCE-4",
+      "kind": "sconce",
+      "reference_id": "INT-R02-S01",
+      "position": [
+        4,
+        2.05,
+        -9
+      ],
+      "dimensions": [
+        0.3,
+        0.3,
+        0.65
+      ],
+      "rotation": 0,
+      "layer": "floor",
+      "attachment": "Rear face meets north inner wall",
+      "proposed_dimensions": true
+    }
+  ],
+  "rails": [
+    {
+      "id": "ARC-1",
+      "a": [
+        -15.161632823093829,
+        3
+      ],
+      "b": [
+        -15.275888089065205,
+        3.2164078535354292
+      ],
+      "kind": "curve",
+      "radius": 8.8
+    },
+    {
+      "id": "ARC-2",
+      "a": [
+        -15.275888089065205,
+        3.2164078535354292
+      ],
+      "b": [
+        -15.396116637480988,
+        3.4295550351256034
+      ],
+      "kind": "curve",
+      "radius": 8.8
+    },
+    {
+      "id": "ARC-3",
+      "a": [
+        -15.396116637480988,
+        3.4295550351256034
+      ],
+      "b": [
+        -15.522225492075968,
+        3.639276711799103
+      ],
+      "kind": "curve",
+      "radius": 8.8
+    },
+    {
+      "id": "ARC-4",
+      "a": [
+        -15.522225492075968,
+        3.639276711799103
+      ],
+      "b": [
+        -15.65411712917157,
+        3.8454106996279975
+      ],
+      "kind": "curve",
+      "radius": 8.8
+    },
+    {
+      "id": "ARC-5",
+      "a": [
+        -15.65411712917157,
+        3.8454106996279975
+      ],
+      "b": [
+        -15.791689553093796,
+        4.04779758914944
+      ],
+      "kind": "curve",
+      "radius": 8.8
+    },
+    {
+      "id": "ARC-6",
+      "a": [
+        -15.791689553093796,
+        4.04779758914944
+      ],
+      "b": [
+        -15.934836375049457,
+        4.246280868641683
+      ],
+      "kind": "curve",
+      "radius": 8.8
+    },
+    {
+      "id": "ARC-7",
+      "a": [
+        -15.934836375049457,
+        4.246280868641683
+      ],
+      "b": [
+        -16.08344689539976,
+        4.440707045159183
+      ],
+      "kind": "curve",
+      "radius": 8.8
+    },
+    {
+      "id": "ARC-8",
+      "a": [
+        -16.08344689539976,
+        4.440707045159183
+      ],
+      "b": [
+        -16.237406189267574,
+        4.630925763233208
+      ],
+      "kind": "curve",
+      "radius": 8.8
+    },
+    {
+      "id": "ARC-9",
+      "a": [
+        -16.237406189267574,
+        4.630925763233208
+      ],
+      "b": [
+        -16.396595195412228,
+        4.816789921146125
+      ],
+      "kind": "curve",
+      "radius": 8.8
+    },
+    {
+      "id": "ARC-10",
+      "a": [
+        -16.396595195412228,
+        4.816789921146125
+      ],
+      "b": [
+        -16.560890808303057,
+        4.998155784689485
+      ],
+      "kind": "curve",
+      "radius": 8.8
+    },
+    {
+      "id": "ARC-11",
+      "a": [
+        -16.560890808303057,
+        4.998155784689485
+      ],
+      "b": [
+        -16.73016597332051,
+        5.174883098317898
+      ],
+      "kind": "curve",
+      "radius": 8.8
+    },
+    {
+      "id": "ARC-12",
+      "a": [
+        -16.73016597332051,
+        5.174883098317898
+      ],
+      "b": [
+        -16.90428978501123,
+        5.346835193612766
+      ],
+      "kind": "curve",
+      "radius": 8.8
+    },
+    {
+      "id": "ARC-13",
+      "a": [
+        -16.90428978501123,
+        5.346835193612766
+      ],
+      "b": [
+        -17.083127588321087,
+        5.513879094971979
+      ],
+      "kind": "curve",
+      "radius": 8.8
+    },
+    {
+      "id": "ARC-14",
+      "a": [
+        -17.083127588321087,
+        5.513879094971979
+      ],
+      "b": [
+        -17.266541082727862,
+        5.675885622443858
+      ],
+      "kind": "curve",
+      "radius": 8.8
+    },
+    {
+      "id": "ARC-15",
+      "a": [
+        -17.266541082727862,
+        5.675885622443858
+      ],
+      "b": [
+        -17.454388429193123,
+        5.832729491625797
+      ],
+      "kind": "curve",
+      "radius": 8.8
+    },
+    {
+      "id": "ARC-16",
+      "a": [
+        -17.454388429193123,
+        5.832729491625797
+      ],
+      "b": [
+        -17.64652435985051,
+        5.984289410550368
+      ],
+      "kind": "curve",
+      "radius": 8.8
+    },
+    {
+      "id": "ARC-17",
+      "a": [
+        -17.64652435985051,
+        5.984289410550368
+      ],
+      "b": [
+        -17.84280029034562,
+        6.130448173483964
+      ],
+      "kind": "curve",
+      "radius": 8.8
+    },
+    {
+      "id": "ARC-18",
+      "a": [
+        -17.84280029034562,
+        6.130448173483964
+      ],
+      "b": [
+        -18.043064434740685,
+        6.27109275156543
+      ],
+      "kind": "curve",
+      "radius": 8.8
+    },
+    {
+      "id": "ARC-19",
+      "a": [
+        -18.043064434740685,
+        6.27109275156543
+      ],
+      "b": [
+        -18.247161922895067,
+        6.406114380214599
+      ],
+      "kind": "curve",
+      "radius": 8.8
+    },
+    {
+      "id": "ARC-20",
+      "a": [
+        -18.247161922895067,
+        6.406114380214599
+      ],
+      "b": [
+        -18.454934920230883,
+        6.535408643243136
+      ],
+      "kind": "curve",
+      "radius": 8.8
+    },
+    {
+      "id": "ARC-21",
+      "a": [
+        -18.454934920230883,
+        6.535408643243136
+      ],
+      "b": [
+        -18.66622274979113,
+        6.658875553602634
+      ],
+      "kind": "curve",
+      "radius": 8.8
+    },
+    {
+      "id": "ARC-22",
+      "a": [
+        -18.66622274979113,
+        6.658875553602634
+      ],
+      "b": [
+        -18.88086201649589,
+        6.7764196307075455
+      ],
+      "kind": "curve",
+      "radius": 8.8
+    },
+    {
+      "id": "ARC-23",
+      "a": [
+        -18.88086201649589,
+        6.7764196307075455
+      ],
+      "b": [
+        -19.09868673350052,
+        6.887949974273111
+      ],
+      "kind": "curve",
+      "radius": 8.8
+    },
+    {
+      "id": "ARC-24",
+      "a": [
+        -19.09868673350052,
+        6.887949974273111
+      ],
+      "b": [
+        -19.319528450558185,
+        6.993380334611221
+      ],
+      "kind": "curve",
+      "radius": 8.8
+    },
+    {
+      "id": "ARC-25",
+      "a": [
+        -19.319528450558185,
+        6.993380334611221
+      ],
+      "b": [
+        -19.543216384287348,
+        7.092629179329828
+      ],
+      "kind": "curve",
+      "radius": 8.8
+    },
+    {
+      "id": "ARC-26",
+      "a": [
+        -19.543216384287348,
+        7.092629179329828
+      ],
+      "b": [
+        -19.76957755024359,
+        7.18561975638435
+      ],
+      "kind": "curve",
+      "radius": 8.8
+    },
+    {
+      "id": "ARC-27",
+      "a": [
+        -19.76957755024359,
+        7.18561975638435
+      ],
+      "b": [
+        -19.99843689669354,
+        7.2722801534322645
+      ],
+      "kind": "curve",
+      "radius": 8.8
+    },
+    {
+      "id": "ARC-28",
+      "a": [
+        -19.99843689669354,
+        7.2722801534322645
+      ],
+      "b": [
+        -20.229617439987546,
+        7.352543353445036
+      ],
+      "kind": "curve",
+      "radius": 8.8
+    },
+    {
+      "id": "ARC-29",
+      "a": [
+        -20.229617439987546,
+        7.352543353445036
+      ],
+      "b": [
+        -20.462940401426295,
+        7.426347286534364
+      ],
+      "kind": "curve",
+      "radius": 8.8
+    },
+    {
+      "id": "ARC-30",
+      "a": [
+        -20.462940401426295,
+        7.426347286534364
+      ],
+      "b": [
+        -20.698225345515645,
+        7.493634877952633
+      ],
+      "kind": "curve",
+      "radius": 8.8
+    },
+    {
+      "id": "ARC-31",
+      "a": [
+        -20.698225345515645,
+        7.493634877952633
+      ],
+      "b": [
+        -20.93529031950269,
+        7.554354092230501
+      ],
+      "kind": "curve",
+      "radius": 8.8
+    },
+    {
+      "id": "ARC-32",
+      "a": [
+        -20.93529031950269,
+        7.554354092230501
+      ],
+      "b": [
+        -21.173951994085165,
+        7.608457973417449
+      ],
+      "kind": "curve",
+      "radius": 8.8
+    },
+    {
+      "id": "ARC-33",
+      "a": [
+        -21.173951994085165,
+        7.608457973417449
+      ],
+      "b": [
+        -21.414025805185354,
+        7.655904681394201
+      ],
+      "kind": "curve",
+      "radius": 8.8
+    },
+    {
+      "id": "ARC-34",
+      "a": [
+        -21.414025805185354,
+        7.655904681394201
+      ],
+      "b": [
+        -21.655326096678944,
+        7.696657524228911
+      ],
+      "kind": "curve",
+      "radius": 8.8
+    },
+    {
+      "id": "ARC-35",
+      "a": [
+        -21.655326096678944,
+        7.696657524228911
+      ],
+      "b": [
+        -21.897666263968325,
+        7.730684986552113
+      ],
+      "kind": "curve",
+      "radius": 8.8
+    },
+    {
+      "id": "ARC-36",
+      "a": [
+        -21.897666263968325,
+        7.730684986552113
+      ],
+      "b": [
+        -22.140858898289416,
+        7.757960753928481
+      ],
+      "kind": "curve",
+      "radius": 8.8
+    },
+    {
+      "id": "ARC-37",
+      "a": [
+        -22.140858898289416,
+        7.757960753928481
+      ],
+      "b": [
+        -22.38471593164036,
+        7.778463733206557
+      ],
+      "kind": "curve",
+      "radius": 8.8
+    },
+    {
+      "id": "ARC-38",
+      "a": [
+        -22.38471593164036,
+        7.778463733206557
+      ],
+      "b": [
+        -22.629048782220035,
+        7.792178068830703
+      ],
+      "kind": "curve",
+      "radius": 8.8
+    },
+    {
+      "id": "ARC-39",
+      "a": [
+        -22.629048782220035,
+        7.792178068830703
+      ],
+      "b": [
+        -22.873668500263886,
+        7.799093155102657
+      ],
+      "kind": "curve",
+      "radius": 8.8
+    },
+    {
+      "id": "ARC-40",
+      "a": [
+        -22.873668500263886,
+        7.799093155102657
+      ],
+      "b": [
+        -23.118385914164328,
+        7.799203644383251
+      ],
+      "kind": "curve",
+      "radius": 8.8
+    },
+    {
+      "id": "ARC-41",
+      "a": [
+        -23.118385914164328,
+        7.799203644383251
+      ],
+      "b": [
+        -23.363011776762704,
+        7.792509451227879
+      ],
+      "kind": "curve",
+      "radius": 8.8
+    },
+    {
+      "id": "ARC-42",
+      "a": [
+        -23.363011776762704,
+        7.792509451227879
+      ],
+      "b": [
+        -23.607356911699664,
+        7.779015752452587
+      ],
+      "kind": "curve",
+      "radius": 8.8
+    },
+    {
+      "id": "ARC-43",
+      "a": [
+        -23.607356911699664,
+        7.779015752452587
+      ],
+      "b": [
+        -23.85123235971081,
+        7.758732983130676
+      ],
+      "kind": "curve",
+      "radius": 8.8
+    },
+    {
+      "id": "ARC-44",
+      "a": [
+        -23.85123235971081,
+        7.758732983130676
+      ],
+      "b": [
+        -24.094449524754406,
+        7.731676828522964
+      ],
+      "kind": "curve",
+      "radius": 8.8
+    },
+    {
+      "id": "ARC-45",
+      "a": [
+        -24.094449524754406,
+        7.731676828522964
+      ],
+      "b": [
+        -24.33682031985828,
+        7.697868211947915
+      ],
+      "kind": "curve",
+      "radius": 8.8
+    },
+    {
+      "id": "ARC-46",
+      "a": [
+        -24.33682031985828,
+        7.697868211947915
+      ],
+      "b": [
+        -24.578157312572955,
+        7.65733327860101
+      ],
+      "kind": "curve",
+      "radius": 8.8
+    },
+    {
+      "id": "ARC-47",
+      "a": [
+        -24.578157312572955,
+        7.65733327860101
+      ],
+      "b": [
+        -24.818273869918695,
+        7.610103375335914
+      ],
+      "kind": "curve",
+      "radius": 8.8
+    },
+    {
+      "id": "ARC-48",
+      "a": [
+        -24.818273869918695,
+        7.610103375335914
+      ],
+      "b": [
+        -25.056984302714255,
+        7.5562150264230254
+      ],
+      "kind": "curve",
+      "radius": 8.8
+    },
+    {
+      "id": "ARC-49",
+      "a": [
+        -25.056984302714255,
+        7.5562150264230254
+      ],
+      "b": [
+        -25.294104009175772,
+        7.495709905304185
+      ],
+      "kind": "curve",
+      "radius": 8.8
+    },
+    {
+      "id": "ARC-50",
+      "a": [
+        -25.294104009175772,
+        7.495709905304185
+      ],
+      "b": [
+        -25.529449617674743,
+        7.4286348023653925
+      ],
+      "kind": "curve",
+      "radius": 8.8
+    },
+    {
+      "id": "ARC-51",
+      "a": [
+        -25.529449617674743,
+        7.4286348023653925
+      ],
+      "b": [
+        -25.762839128544698,
+        7.35504158875241
+      ],
+      "kind": "curve",
+      "radius": 8.8
+    },
+    {
+      "id": "ARC-52",
+      "a": [
+        -25.762839128544698,
+        7.35504158875241
+      ],
+      "b": [
+        -25.994092054826858,
+        7.274987176257296
+      ],
+      "kind": "curve",
+      "radius": 8.8
+    },
+    {
+      "id": "ARC-53",
+      "a": [
+        -25.994092054826858,
+        7.274987176257296
+      ],
+      "b": [
+        -26.223029561846037,
+        7.188533473306839
+      ],
+      "kind": "curve",
+      "radius": 8.8
+    },
+    {
+      "id": "ARC-54",
+      "a": [
+        -26.223029561846037,
+        7.188533473306839
+      ],
+      "b": [
+        -26.4494746055087,
+        7.09574733708696
+      ],
+      "kind": "curve",
+      "radius": 8.8
+    },
+    {
+      "id": "ARC-55",
+      "a": [
+        -26.4494746055087,
+        7.09574733708696
+      ],
+      "b": [
+        -26.673252069216407,
+        6.99670052184008
+      ],
+      "kind": "curve",
+      "radius": 8.8
+    },
+    {
+      "id": "ARC-56",
+      "a": [
+        -26.673252069216407,
+        6.99670052184008
+      ],
+      "b": [
+        -26.89418889928856,
+        6.891469623375468
+      ],
+      "kind": "curve",
+      "radius": 8.8
+    },
+    {
+      "id": "ARC-57",
+      "a": [
+        -26.89418889928856,
+        6.891469623375468
+      ],
+      "b": [
+        -27.11211423878995,
+        6.780136019835449
+      ],
+      "kind": "curve",
+      "radius": 8.8
+    },
+    {
+      "id": "ARC-58",
+      "a": [
+        -27.11211423878995,
+        6.780136019835449
+      ],
+      "b": [
+        -27.326859559659393,
+        6.662785808763293
+      ],
+      "kind": "curve",
+      "radius": 8.8
+    },
+    {
+      "id": "ARC-59",
+      "a": [
+        -27.326859559659393,
+        6.662785808763293
+      ],
+      "b": [
+        -27.538258793037468,
+        6.53950974052147
+      ],
+      "kind": "curve",
+      "radius": 8.8
+    },
+    {
+      "id": "ARC-60",
+      "a": [
+        -27.538258793037468,
+        6.53950974052147
+      ],
+      "b": [
+        -27.746148457692406,
+        6.410403148111713
+      ],
+      "kind": "curve",
+      "radius": 8.8
+    },
+    {
+      "id": "ARC-61",
+      "a": [
+        -27.746148457692406,
+        6.410403148111713
+      ],
+      "b": [
+        -27.950367786444943,
+        6.275565873451234
+      ],
+      "kind": "curve",
+      "radius": 8.8
+    },
+    {
+      "id": "ARC-62",
+      "a": [
+        -27.950367786444943,
+        6.275565873451234
+      ],
+      "b": [
+        -28.150758850494285,
+        6.135102190162015
+      ],
+      "kind": "curve",
+      "radius": 8.8
+    },
+    {
+      "id": "ARC-63",
+      "a": [
+        -28.150758850494285,
+        6.135102190162015
+      ],
+      "b": [
+        -28.347166681549105,
+        5.989120722932976
+      ],
+      "kind": "curve",
+      "radius": 8.8
+    },
+    {
+      "id": "ARC-64",
+      "a": [
+        -28.347166681549105,
+        5.989120722932976
+      ],
+      "b": [
+        -28.539439391669045,
+        5.8377343635172965
+      ],
+      "kind": "curve",
+      "radius": 8.8
+    },
+    {
+      "id": "ARC-65",
+      "a": [
+        -28.539439391669045,
+        5.8377343635172965
+      ],
+      "b": [
+        -28.727428290724152,
+        5.681060183429921
+      ],
+      "kind": "curve",
+      "radius": 8.8
+    },
+    {
+      "id": "ARC-66",
+      "a": [
+        -28.727428290724152,
+        5.681060183429921
+      ],
+      "b": [
+        -28.910988001381277,
+        5.519219343412721
+      ],
+      "kind": "curve",
+      "radius": 8.8
+    },
+    {
+      "id": "ARC-67",
+      "a": [
+        -28.910988001381277,
+        5.519219343412721
+      ],
+      "b": [
+        -29.089976571528677,
+        5.352336999737329
+      ],
+      "kind": "curve",
+      "radius": 8.8
+    },
+    {
+      "id": "ARC-68",
+      "a": [
+        -29.089976571528677,
+        5.352336999737329
+      ],
+      "b": [
+        -29.26425558405171,
+        5.18054220741813
+      ],
+      "kind": "curve",
+      "radius": 8.8
+    },
+    {
+      "id": "ARC-69",
+      "a": [
+        -29.26425558405171,
+        5.18054220741813
+      ],
+      "b": [
+        -29.433690263874887,
+        5.003967820410223
+      ],
+      "kind": "curve",
+      "radius": 8.8
+    },
+    {
+      "id": "ARC-70",
+      "a": [
+        -29.433690263874887,
+        5.003967820410223
+      ],
+      "b": [
+        -29.59814958218737,
+        4.822750388869562
+      ],
+      "kind": "curve",
+      "radius": 8.8
+    },
+    {
+      "id": "ARC-71",
+      "a": [
+        -29.59814958218737,
+        4.822750388869562
+      ],
+      "b": [
+        -29.75750635777141,
+        4.63703005355471
+      ],
+      "kind": "curve",
+      "radius": 8.8
+    },
+    {
+      "id": "ARC-72",
+      "a": [
+        -29.75750635777141,
+        4.63703005355471
+      ],
+      "b": [
+        -29.911637355355296,
+        4.4469504374518865
+      ],
+      "kind": "curve",
+      "radius": 8.8
+    },
+    {
+      "id": "ARC-73",
+      "a": [
+        -29.911637355355296,
+        4.4469504374518865
+      ],
+      "b": [
+        -30.060423380914834,
+        4.252658534707082
+      ],
+      "kind": "curve",
+      "radius": 8.8
+    },
+    {
+      "id": "ARC-74",
+      "a": [
+        -30.060423380914834,
+        4.252658534707082
+      ],
+      "b": [
+        -30.20374937384958,
+        4.05430459695118
+      ],
+      "kind": "curve",
+      "radius": 8.8
+    },
+    {
+      "id": "ARC-75",
+      "a": [
+        -30.20374937384958,
+        4.05430459695118
+      ],
+      "b": [
+        -30.341504495962546,
+        3.8520420171059655
+      ],
+      "kind": "curve",
+      "radius": 8.8
+    },
+    {
+      "id": "ARC-76",
+      "a": [
+        -30.341504495962546,
+        3.8520420171059655
+      ],
+      "b": [
+        -30.473582217174684,
+        3.6460272107608596
+      ],
+      "kind": "curve",
+      "radius": 8.8
+    },
+    {
+      "id": "ARC-77",
+      "a": [
+        -30.473582217174684,
+        3.6460272107608596
+      ],
+      "b": [
+        -30.599880397907675,
+        3.436419495212178
+      ],
+      "kind": "curve",
+      "radius": 8.8
+    },
+    {
+      "id": "ARC-78",
+      "a": [
+        -30.599880397907675,
+        3.436419495212178
+      ],
+      "b": [
+        -30.720301368071496,
+        3.2233809662583637
+      ],
+      "kind": "curve",
+      "radius": 8.8
+    },
+    {
+      "id": "ARC-79",
+      "a": [
+        -30.720301368071496,
+        3.2233809662583637
+      ],
+      "b": [
+        -30.83475200259554,
+        3.007076372846564
+      ],
+      "kind": "curve",
+      "radius": 8.8
+    },
+    {
+      "id": "ARC-80",
+      "a": [
+        -30.83475200259554,
+        3.007076372846564
+      ],
+      "b": [
+        -30.943143793445,
+        2.7876729896674304
+      ],
+      "kind": "curve",
+      "radius": 8.8
+    },
+    {
+      "id": "ARC-81",
+      "a": [
+        -30.943143793445,
+        2.7876729896674304
+      ],
+      "b": [
+        -31.04539291806669,
+        2.565340487796695
+      ],
+      "kind": "curve",
+      "radius": 8.8
+    },
+    {
+      "id": "ARC-82",
+      "a": [
+        -31.04539291806669,
+        2.565340487796695
+      ],
+      "b": [
+        -31.141420304211515,
+        2.3402508034835465
+      ],
+      "kind": "curve",
+      "radius": 8.8
+    },
+    {
+      "id": "ARC-83",
+      "a": [
+        -31.141420304211515,
+        2.3402508034835465
+      ],
+      "b": [
+        -31.231151691083358,
+        2.1125780051872716
+      ],
+      "kind": "curve",
+      "radius": 8.8
+    },
+    {
+      "id": "ARC-84",
+      "a": [
+        -31.231151691083358,
+        2.1125780051872716
+      ],
+      "b": [
+        -31.31451768676712,
+        1.882498158965019
+      ],
+      "kind": "curve",
+      "radius": 8.8
+    },
+    {
+      "id": "ARC-85",
+      "a": [
+        -31.31451768676712,
+        1.882498158965019
+      ],
+      "b": [
+        -31.39145382189154,
+        1.6501891923147416
+      ],
+      "kind": "curve",
+      "radius": 8.8
+    },
+    {
+      "id": "ARC-86",
+      "a": [
+        -31.39145382189154,
+        1.6501891923147416
+      ],
+      "b": [
+        -31.461900599485237,
+        1.4158307565786563
+      ],
+      "kind": "curve",
+      "radius": 8.8
+    },
+    {
+      "id": "ARC-87",
+      "a": [
+        -31.461900599485237,
+        1.4158307565786563
+      ],
+      "b": [
+        -31.525803540987475,
+        1.1796040880135599
+      ],
+      "kind": "curve",
+      "radius": 8.8
+    },
+    {
+      "id": "ARC-88",
+      "a": [
+        -31.525803540987475,
+        1.1796040880135599
+      ],
+      "b": [
+        -31.583113228378032,
+        0.941691867635545
+      ],
+      "kind": "curve",
+      "radius": 8.8
+    },
+    {
+      "id": "ARC-89",
+      "a": [
+        -31.583113228378032,
+        0.941691867635545
+      ],
+      "b": [
+        -31.633785342393605,
+        0.7022780799473807
+      ],
+      "kind": "curve",
+      "radius": 8.8
+    },
+    {
+      "id": "ARC-90",
+      "a": [
+        -31.633785342393605,
+        0.7022780799473807
+      ],
+      "b": [
+        -31.67778069680119,
+        0.4615478706579077
+      ],
+      "kind": "curve",
+      "radius": 8.8
+    },
+    {
+      "id": "ARC-91",
+      "a": [
+        -31.67778069680119,
+        0.4615478706579077
+      ],
+      "b": [
+        -31.715065268701956,
+        0.21968740350343996
+      ],
+      "kind": "curve",
+      "radius": 8.8
+    },
+    {
+      "id": "ARC-92",
+      "a": [
+        -31.715065268701956,
+        0.21968740350343996
+      ],
+      "b": [
+        -31.74561022484214,
+        -0.023116283718143893
+      ],
+      "kind": "curve",
+      "radius": 8.8
+    },
+    {
+      "id": "ARC-93",
+      "a": [
+        -31.74561022484214,
+        -0.023116283718143893
+      ],
+      "b": [
+        -31.769391943910662,
+        -0.26667542378918774
+      ],
+      "kind": "curve",
+      "radius": 8.8
+    },
+    {
+      "id": "ARC-94",
+      "a": [
+        -31.769391943910662,
+        -0.26667542378918774
+      ],
+      "b": [
+        -31.786392034806177,
+        -0.5108016652781864
+      ],
+      "kind": "curve",
+      "radius": 8.8
+    },
+    {
+      "id": "ARC-95",
+      "a": [
+        -31.786392034806177,
+        -0.5108016652781864
+      ],
+      "b": [
+        -31.796597350859432,
+        -0.7553062181974597
+      ],
+      "kind": "curve",
+      "radius": 8.8
+    },
+    {
+      "id": "ARC-96",
+      "a": [
+        -31.796597350859432,
+        -0.7553062181974597
+      ],
+      "b": [
+        -31.8,
+        -0.9999999999999989
+      ],
+      "kind": "curve",
+      "radius": 8.8
+    },
+    {
+      "id": "ARC-97",
+      "a": [
+        -31.8,
+        -0.9999999999999989
+      ],
+      "b": [
+        -31.796597350859432,
+        -1.244693781802538
+      ],
+      "kind": "curve",
+      "radius": 8.8
+    },
+    {
+      "id": "ARC-98",
+      "a": [
+        -31.796597350859432,
+        -1.244693781802538
+      ],
+      "b": [
+        -31.786392034806177,
+        -1.4891983347218116
+      ],
+      "kind": "curve",
+      "radius": 8.8
+    },
+    {
+      "id": "ARC-99",
+      "a": [
+        -31.786392034806177,
+        -1.4891983347218116
+      ],
+      "b": [
+        -31.769391943910662,
+        -1.7333245762108103
+      ],
+      "kind": "curve",
+      "radius": 8.8
+    },
+    {
+      "id": "ARC-100",
+      "a": [
+        -31.769391943910662,
+        -1.7333245762108103
+      ],
+      "b": [
+        -31.74561022484214,
+        -1.9768837162818538
+      ],
+      "kind": "curve",
+      "radius": 8.8
+    },
+    {
+      "id": "ARC-101",
+      "a": [
+        -31.74561022484214,
+        -1.9768837162818538
+      ],
+      "b": [
+        -31.715065268701956,
+        -2.2196874035034377
+      ],
+      "kind": "curve",
+      "radius": 8.8
+    },
+    {
+      "id": "ARC-102",
+      "a": [
+        -31.715065268701956,
+        -2.2196874035034377
+      ],
+      "b": [
+        -31.67778069680119,
+        -2.4615478706579093
+      ],
+      "kind": "curve",
+      "radius": 8.8
+    },
+    {
+      "id": "ARC-103",
+      "a": [
+        -31.67778069680119,
+        -2.4615478706579093
+      ],
+      "b": [
+        -31.633785342393608,
+        -2.7022780799473747
+      ],
+      "kind": "curve",
+      "radius": 8.8
+    },
+    {
+      "id": "ARC-104",
+      "a": [
+        -31.633785342393608,
+        -2.7022780799473747
+      ],
+      "b": [
+        -31.583113228378032,
+        -2.941691867635543
+      ],
+      "kind": "curve",
+      "radius": 8.8
+    },
+    {
+      "id": "ARC-105",
+      "a": [
+        -31.583113228378032,
+        -2.941691867635543
+      ],
+      "b": [
+        -31.525803540987475,
+        -3.1796040880135577
+      ],
+      "kind": "curve",
+      "radius": 8.8
+    },
+    {
+      "id": "ARC-106",
+      "a": [
+        -31.525803540987475,
+        -3.1796040880135577
+      ],
+      "b": [
+        -31.461900599485237,
+        -3.415830756578654
+      ],
+      "kind": "curve",
+      "radius": 8.8
+    },
+    {
+      "id": "ARC-107",
+      "a": [
+        -31.461900599485237,
+        -3.415830756578654
+      ],
+      "b": [
+        -31.391453821891538,
+        -3.6501891923147434
+      ],
+      "kind": "curve",
+      "radius": 8.8
+    },
+    {
+      "id": "ARC-108",
+      "a": [
+        -31.391453821891538,
+        -3.6501891923147434
+      ],
+      "b": [
+        -31.314517686767125,
+        -3.882498158965013
+      ],
+      "kind": "curve",
+      "radius": 8.8
+    },
+    {
+      "id": "ARC-109",
+      "a": [
+        -31.314517686767125,
+        -3.882498158965013
+      ],
+      "b": [
+        -31.23115169108336,
+        -4.11257800518727
+      ],
+      "kind": "curve",
+      "radius": 8.8
+    },
+    {
+      "id": "ARC-110",
+      "a": [
+        -31.23115169108336,
+        -4.11257800518727
+      ],
+      "b": [
+        -31.141420304211515,
+        -4.340250803483545
+      ],
+      "kind": "curve",
+      "radius": 8.8
+    },
+    {
+      "id": "ARC-111",
+      "a": [
+        -31.141420304211515,
+        -4.340250803483545
+      ],
+      "b": [
+        -31.04539291806669,
+        -4.565340487796696
+      ],
+      "kind": "curve",
+      "radius": 8.8
+    },
+    {
+      "id": "ARC-112",
+      "a": [
+        -31.04539291806669,
+        -4.565340487796696
+      ],
+      "b": [
+        -30.943143793444996,
+        -4.787672989667431
+      ],
+      "kind": "curve",
+      "radius": 8.8
+    },
+    {
+      "id": "ARC-113",
+      "a": [
+        -30.943143793444996,
+        -4.787672989667431
+      ],
+      "b": [
+        -30.834752002595543,
+        -5.007076372846559
+      ],
+      "kind": "curve",
+      "radius": 8.8
+    },
+    {
+      "id": "ARC-114",
+      "a": [
+        -30.834752002595543,
+        -5.007076372846559
+      ],
+      "b": [
+        -30.720301368071496,
+        -5.223380966258362
+      ],
+      "kind": "curve",
+      "radius": 8.8
+    },
+    {
+      "id": "ARC-115",
+      "a": [
+        -30.720301368071496,
+        -5.223380966258362
+      ],
+      "b": [
+        -30.599880397907675,
+        -5.436419495212176
+      ],
+      "kind": "curve",
+      "radius": 8.8
+    },
+    {
+      "id": "ARC-116",
+      "a": [
+        -30.599880397907675,
+        -5.436419495212176
+      ],
+      "b": [
+        -30.473582217174684,
+        -5.646027210760862
+      ],
+      "kind": "curve",
+      "radius": 8.8
+    },
+    {
+      "id": "ARC-117",
+      "a": [
+        -30.473582217174684,
+        -5.646027210760862
+      ],
+      "b": [
+        -30.34150449596255,
+        -5.85204201710596
+      ],
+      "kind": "curve",
+      "radius": 8.8
+    },
+    {
+      "id": "ARC-118",
+      "a": [
+        -30.34150449596255,
+        -5.85204201710596
+      ],
+      "b": [
+        -30.20374937384958,
+        -6.0543045969511775
+      ],
+      "kind": "curve",
+      "radius": 8.8
+    },
+    {
+      "id": "ARC-119",
+      "a": [
+        -30.20374937384958,
+        -6.0543045969511775
+      ],
+      "b": [
+        -30.060423380914834,
+        -6.252658534707081
+      ],
+      "kind": "curve",
+      "radius": 8.8
+    },
+    {
+      "id": "ARC-120",
+      "a": [
+        -30.060423380914834,
+        -6.252658534707081
+      ],
+      "b": [
+        -29.911637355355296,
+        -6.446950437451884
+      ],
+      "kind": "curve",
+      "radius": 8.8
+    },
+    {
+      "id": "ARC-121",
+      "a": [
+        -29.911637355355296,
+        -6.446950437451884
+      ],
+      "b": [
+        -29.757506357771405,
+        -6.637030053554711
+      ],
+      "kind": "curve",
+      "radius": 8.8
+    },
+    {
+      "id": "ARC-122",
+      "a": [
+        -29.757506357771405,
+        -6.637030053554711
+      ],
+      "b": [
+        -29.598149582187375,
+        -6.822750388869557
+      ],
+      "kind": "curve",
+      "radius": 8.8
+    },
+    {
+      "id": "ARC-123",
+      "a": [
+        -29.598149582187375,
+        -6.822750388869557
+      ],
+      "b": [
+        -29.43369026387489,
+        -7.003967820410222
+      ],
+      "kind": "curve",
+      "radius": 8.8
+    },
+    {
+      "id": "ARC-124",
+      "a": [
+        -29.43369026387489,
+        -7.003967820410222
+      ],
+      "b": [
+        -29.26425558405171,
+        -7.180542207418131
+      ],
+      "kind": "curve",
+      "radius": 8.8
+    },
+    {
+      "id": "ARC-125",
+      "a": [
+        -29.26425558405171,
+        -7.180542207418131
+      ],
+      "b": [
+        -29.089976571528677,
+        -7.35233699973733
+      ],
+      "kind": "curve",
+      "radius": 8.8
+    },
+    {
+      "id": "ARC-126",
+      "a": [
+        -29.089976571528677,
+        -7.35233699973733
+      ],
+      "b": [
+        -28.910988001381277,
+        -7.51921934341272
+      ],
+      "kind": "curve",
+      "radius": 8.8
+    },
+    {
+      "id": "ARC-127",
+      "a": [
+        -28.910988001381277,
+        -7.51921934341272
+      ],
+      "b": [
+        -28.72742829072415,
+        -7.6810601834299215
+      ],
+      "kind": "curve",
+      "radius": 8.8
+    },
+    {
+      "id": "ARC-128",
+      "a": [
+        -28.72742829072415,
+        -7.6810601834299215
+      ],
+      "b": [
+        -28.539439391669045,
+        -7.837734363517296
+      ],
+      "kind": "curve",
+      "radius": 8.8
+    },
+    {
+      "id": "ARC-129",
+      "a": [
+        -28.539439391669045,
+        -7.837734363517296
+      ],
+      "b": [
+        -28.347166681549098,
+        -7.989120722932979
+      ],
+      "kind": "curve",
+      "radius": 8.8
+    },
+    {
+      "id": "ARC-130",
+      "a": [
+        -28.347166681549098,
+        -7.989120722932979
+      ],
+      "b": [
+        -28.15075885049428,
+        -8.13510219016202
+      ],
+      "kind": "curve",
+      "radius": 8.8
+    },
+    {
+      "id": "ARC-131",
+      "a": [
+        -28.15075885049428,
+        -8.13510219016202
+      ],
+      "b": [
+        -27.95036778644494,
+        -8.275565873451235
+      ],
+      "kind": "curve",
+      "radius": 8.8
+    },
+    {
+      "id": "ARC-132",
+      "a": [
+        -27.95036778644494,
+        -8.275565873451235
+      ],
+      "b": [
+        -27.746148457692406,
+        -8.410403148111715
+      ],
+      "kind": "curve",
+      "radius": 8.8
+    },
+    {
+      "id": "ARC-133",
+      "a": [
+        -27.746148457692406,
+        -8.410403148111715
+      ],
+      "b": [
+        -27.53825879303747,
+        -8.539509740521469
+      ],
+      "kind": "curve",
+      "radius": 8.8
+    },
+    {
+      "id": "ARC-134",
+      "a": [
+        -27.53825879303747,
+        -8.539509740521469
+      ],
+      "b": [
+        -27.32685955965939,
+        -8.662785808763298
+      ],
+      "kind": "curve",
+      "radius": 8.8
+    },
+    {
+      "id": "ARC-135",
+      "a": [
+        -27.32685955965939,
+        -8.662785808763298
+      ],
+      "b": [
+        -27.11211423878995,
+        -8.780136019835448
+      ],
+      "kind": "curve",
+      "radius": 8.8
+    },
+    {
+      "id": "ARC-136",
+      "a": [
+        -27.11211423878995,
+        -8.780136019835448
+      ],
+      "b": [
+        -26.894188899288558,
+        -8.891469623375471
+      ],
+      "kind": "curve",
+      "radius": 8.8
+    },
+    {
+      "id": "ARC-137",
+      "a": [
+        -26.894188899288558,
+        -8.891469623375471
+      ],
+      "b": [
+        -26.673252069216403,
+        -8.99670052184008
+      ],
+      "kind": "curve",
+      "radius": 8.8
+    },
+    {
+      "id": "ARC-138",
+      "a": [
+        -26.673252069216403,
+        -8.99670052184008
+      ],
+      "b": [
+        -26.4494746055087,
+        -9.095747337086959
+      ],
+      "kind": "curve",
+      "radius": 8.8
+    },
+    {
+      "id": "ARC-139",
+      "a": [
+        -26.4494746055087,
+        -9.095747337086959
+      ],
+      "b": [
+        -26.22302956184603,
+        -9.18853347330684
+      ],
+      "kind": "curve",
+      "radius": 8.8
+    },
+    {
+      "id": "ARC-140",
+      "a": [
+        -26.22302956184603,
+        -9.18853347330684
+      ],
+      "b": [
+        -25.99409205482686,
+        -9.274987176257294
+      ],
+      "kind": "curve",
+      "radius": 8.8
+    },
+    {
+      "id": "ARC-141",
+      "a": [
+        -25.99409205482686,
+        -9.274987176257294
+      ],
+      "b": [
+        -25.762839128544694,
+        -9.355041588752412
+      ],
+      "kind": "curve",
+      "radius": 8.8
+    },
+    {
+      "id": "ARC-142",
+      "a": [
+        -25.762839128544694,
+        -9.355041588752412
+      ],
+      "b": [
+        -25.529449617674743,
+        -9.428634802365393
+      ],
+      "kind": "curve",
+      "radius": 8.8
+    },
+    {
+      "id": "ARC-143",
+      "a": [
+        -25.529449617674743,
+        -9.428634802365393
+      ],
+      "b": [
+        -25.294104009175772,
+        -9.495709905304187
+      ],
+      "kind": "curve",
+      "radius": 8.8
+    },
+    {
+      "id": "ARC-144",
+      "a": [
+        -25.294104009175772,
+        -9.495709905304187
+      ],
+      "b": [
+        -25.056984302714255,
+        -9.556215026423025
+      ],
+      "kind": "curve",
+      "radius": 8.8
+    },
+    {
+      "id": "ARC-145",
+      "a": [
+        -25.056984302714255,
+        -9.556215026423025
+      ],
+      "b": [
+        -24.8182738699187,
+        -9.610103375335914
+      ],
+      "kind": "curve",
+      "radius": 8.8
+    },
+    {
+      "id": "ARC-146",
+      "a": [
+        -24.8182738699187,
+        -9.610103375335914
+      ],
+      "b": [
+        -24.578157312572955,
+        -9.65733327860101
+      ],
+      "kind": "curve",
+      "radius": 8.8
+    },
+    {
+      "id": "ARC-147",
+      "a": [
+        -24.578157312572955,
+        -9.65733327860101
+      ],
+      "b": [
+        -24.336820319858276,
+        -9.697868211947915
+      ],
+      "kind": "curve",
+      "radius": 8.8
+    },
+    {
+      "id": "ARC-148",
+      "a": [
+        -24.336820319858276,
+        -9.697868211947915
+      ],
+      "b": [
+        -24.094449524754406,
+        -9.731676828522964
+      ],
+      "kind": "curve",
+      "radius": 8.8
+    },
+    {
+      "id": "ARC-149",
+      "a": [
+        -24.094449524754406,
+        -9.731676828522964
+      ],
+      "b": [
+        -23.85123235971081,
+        -9.758732983130676
+      ],
+      "kind": "curve",
+      "radius": 8.8
+    },
+    {
+      "id": "ARC-150",
+      "a": [
+        -23.85123235971081,
+        -9.758732983130676
+      ],
+      "b": [
+        -23.607356911699668,
+        -9.779015752452587
+      ],
+      "kind": "curve",
+      "radius": 8.8
+    },
+    {
+      "id": "ARC-151",
+      "a": [
+        -23.607356911699668,
+        -9.779015752452587
+      ],
+      "b": [
+        -23.363011776762704,
+        -9.792509451227879
+      ],
+      "kind": "curve",
+      "radius": 8.8
+    },
+    {
+      "id": "ARC-152",
+      "a": [
+        -23.363011776762704,
+        -9.792509451227879
+      ],
+      "b": [
+        -23.11838591416432,
+        -9.799203644383251
+      ],
+      "kind": "curve",
+      "radius": 8.8
+    },
+    {
+      "id": "ARC-153",
+      "a": [
+        -23.11838591416432,
+        -9.799203644383251
+      ],
+      "b": [
+        -22.873668500263882,
+        -9.799093155102657
+      ],
+      "kind": "curve",
+      "radius": 8.8
+    },
+    {
+      "id": "ARC-154",
+      "a": [
+        -22.873668500263882,
+        -9.799093155102657
+      ],
+      "b": [
+        -22.629048782220035,
+        -9.792178068830703
+      ],
+      "kind": "curve",
+      "radius": 8.8
+    },
+    {
+      "id": "ARC-155",
+      "a": [
+        -22.629048782220035,
+        -9.792178068830703
+      ],
+      "b": [
+        -22.38471593164036,
+        -9.778463733206557
+      ],
+      "kind": "curve",
+      "radius": 8.8
+    },
+    {
+      "id": "ARC-156",
+      "a": [
+        -22.38471593164036,
+        -9.778463733206557
+      ],
+      "b": [
+        -22.140858898289416,
+        -9.757960753928481
+      ],
+      "kind": "curve",
+      "radius": 8.8
+    },
+    {
+      "id": "ARC-157",
+      "a": [
+        -22.140858898289416,
+        -9.757960753928481
+      ],
+      "b": [
+        -21.89766626396832,
+        -9.730684986552113
+      ],
+      "kind": "curve",
+      "radius": 8.8
+    },
+    {
+      "id": "ARC-158",
+      "a": [
+        -21.89766626396832,
+        -9.730684986552113
+      ],
+      "b": [
+        -21.65532609667895,
+        -9.696657524228911
+      ],
+      "kind": "curve",
+      "radius": 8.8
+    },
+    {
+      "id": "ARC-159",
+      "a": [
+        -21.65532609667895,
+        -9.696657524228911
+      ],
+      "b": [
+        -21.414025805185354,
+        -9.655904681394201
+      ],
+      "kind": "curve",
+      "radius": 8.8
+    },
+    {
+      "id": "ARC-160",
+      "a": [
+        -21.414025805185354,
+        -9.655904681394201
+      ],
+      "b": [
+        -21.173951994085165,
+        -9.60845797341745
+      ],
+      "kind": "curve",
+      "radius": 8.8
+    },
+    {
+      "id": "ARC-161",
+      "a": [
+        -21.173951994085165,
+        -9.60845797341745
+      ],
+      "b": [
+        -20.935290319502695,
+        -9.554354092230502
+      ],
+      "kind": "curve",
+      "radius": 8.8
+    },
+    {
+      "id": "ARC-162",
+      "a": [
+        -20.935290319502695,
+        -9.554354092230502
+      ],
+      "b": [
+        -20.69822534551564,
+        -9.493634877952632
+      ],
+      "kind": "curve",
+      "radius": 8.8
+    },
+    {
+      "id": "ARC-163",
+      "a": [
+        -20.69822534551564,
+        -9.493634877952632
+      ],
+      "b": [
+        -20.462940401426298,
+        -9.426347286534364
+      ],
+      "kind": "curve",
+      "radius": 8.8
+    },
+    {
+      "id": "ARC-164",
+      "a": [
+        -20.462940401426298,
+        -9.426347286534364
+      ],
+      "b": [
+        -20.229617439987546,
+        -9.352543353445036
+      ],
+      "kind": "curve",
+      "radius": 8.8
+    },
+    {
+      "id": "ARC-165",
+      "a": [
+        -20.229617439987546,
+        -9.352543353445036
+      ],
+      "b": [
+        -19.99843689669354,
+        -9.272280153432265
+      ],
+      "kind": "curve",
+      "radius": 8.8
+    },
+    {
+      "id": "ARC-166",
+      "a": [
+        -19.99843689669354,
+        -9.272280153432265
+      ],
+      "b": [
+        -19.76957755024359,
+        -9.185619756384352
+      ],
+      "kind": "curve",
+      "radius": 8.8
+    },
+    {
+      "id": "ARC-167",
+      "a": [
+        -19.76957755024359,
+        -9.185619756384352
+      ],
+      "b": [
+        -19.54321638428735,
+        -9.09262917932983
+      ],
+      "kind": "curve",
+      "radius": 8.8
+    },
+    {
+      "id": "ARC-168",
+      "a": [
+        -19.54321638428735,
+        -9.09262917932983
+      ],
+      "b": [
+        -19.319528450558188,
+        -8.993380334611222
+      ],
+      "kind": "curve",
+      "radius": 8.8
+    },
+    {
+      "id": "ARC-169",
+      "a": [
+        -19.319528450558188,
+        -8.993380334611222
+      ],
+      "b": [
+        -19.098686733500518,
+        -8.887949974273111
+      ],
+      "kind": "curve",
+      "radius": 8.8
+    },
+    {
+      "id": "ARC-170",
+      "a": [
+        -19.098686733500518,
+        -8.887949974273111
+      ],
+      "b": [
+        -18.88086201649589,
+        -8.776419630707547
+      ],
+      "kind": "curve",
+      "radius": 8.8
+    },
+    {
+      "id": "ARC-171",
+      "a": [
+        -18.88086201649589,
+        -8.776419630707547
+      ],
+      "b": [
+        -18.66622274979113,
+        -8.658875553602634
+      ],
+      "kind": "curve",
+      "radius": 8.8
+    },
+    {
+      "id": "ARC-172",
+      "a": [
+        -18.66622274979113,
+        -8.658875553602634
+      ],
+      "b": [
+        -18.454934920230883,
+        -8.535408643243137
+      ],
+      "kind": "curve",
+      "radius": 8.8
+    },
+    {
+      "id": "ARC-173",
+      "a": [
+        -18.454934920230883,
+        -8.535408643243137
+      ],
+      "b": [
+        -18.24716192289507,
+        -8.406114380214603
+      ],
+      "kind": "curve",
+      "radius": 8.8
+    },
+    {
+      "id": "ARC-174",
+      "a": [
+        -18.24716192289507,
+        -8.406114380214603
+      ],
+      "b": [
+        -18.043064434740685,
+        -8.27109275156543
+      ],
+      "kind": "curve",
+      "radius": 8.8
+    },
+    {
+      "id": "ARC-175",
+      "a": [
+        -18.043064434740685,
+        -8.27109275156543
+      ],
+      "b": [
+        -17.84280029034562,
+        -8.130448173483963
+      ],
+      "kind": "curve",
+      "radius": 8.8
+    },
+    {
+      "id": "ARC-176",
+      "a": [
+        -17.84280029034562,
+        -8.130448173483963
+      ],
+      "b": [
+        -17.64652435985051,
+        -7.984289410550368
+      ],
+      "kind": "curve",
+      "radius": 8.8
+    },
+    {
+      "id": "ARC-177",
+      "a": [
+        -17.64652435985051,
+        -7.984289410550368
+      ],
+      "b": [
+        -17.454388429193127,
+        -7.8327294916257975
+      ],
+      "kind": "curve",
+      "radius": 8.8
+    },
+    {
+      "id": "ARC-178",
+      "a": [
+        -17.454388429193127,
+        -7.8327294916257975
+      ],
+      "b": [
+        -17.266541082727866,
+        -7.675885622443862
+      ],
+      "kind": "curve",
+      "radius": 8.8
+    },
+    {
+      "id": "ARC-179",
+      "a": [
+        -17.266541082727866,
+        -7.675885622443862
+      ],
+      "b": [
+        -17.083127588321084,
+        -7.513879094971978
+      ],
+      "kind": "curve",
+      "radius": 8.8
+    },
+    {
+      "id": "ARC-180",
+      "a": [
+        -17.083127588321084,
+        -7.513879094971978
+      ],
+      "b": [
+        -16.90428978501123,
+        -7.3468351936127645
+      ],
+      "kind": "curve",
+      "radius": 8.8
+    },
+    {
+      "id": "ARC-181",
+      "a": [
+        -16.90428978501123,
+        -7.3468351936127645
+      ],
+      "b": [
+        -16.73016597332051,
+        -7.174883098317898
+      ],
+      "kind": "curve",
+      "radius": 8.8
+    },
+    {
+      "id": "ARC-182",
+      "a": [
+        -16.73016597332051,
+        -7.174883098317898
+      ],
+      "b": [
+        -16.560890808303057,
+        -6.998155784689487
+      ],
+      "kind": "curve",
+      "radius": 8.8
+    },
+    {
+      "id": "ARC-183",
+      "a": [
+        -16.560890808303057,
+        -6.998155784689487
+      ],
+      "b": [
+        -16.39659519541223,
+        -6.816789921146128
+      ],
+      "kind": "curve",
+      "radius": 8.8
+    },
+    {
+      "id": "ARC-184",
+      "a": [
+        -16.39659519541223,
+        -6.816789921146128
+      ],
+      "b": [
+        -16.23740618926757,
+        -6.630925763233205
+      ],
+      "kind": "curve",
+      "radius": 8.8
+    },
+    {
+      "id": "ARC-185",
+      "a": [
+        -16.23740618926757,
+        -6.630925763233205
+      ],
+      "b": [
+        -16.083446895399756,
+        -6.440707045159182
+      ],
+      "kind": "curve",
+      "radius": 8.8
+    },
+    {
+      "id": "ARC-186",
+      "a": [
+        -16.083446895399756,
+        -6.440707045159182
+      ],
+      "b": [
+        -15.934836375049457,
+        -6.246280868641683
+      ],
+      "kind": "curve",
+      "radius": 8.8
+    },
+    {
+      "id": "ARC-187",
+      "a": [
+        -15.934836375049457,
+        -6.246280868641683
+      ],
+      "b": [
+        -15.791689553093796,
+        -6.047797589149441
+      ],
+      "kind": "curve",
+      "radius": 8.8
+    },
+    {
+      "id": "ARC-188",
+      "a": [
+        -15.791689553093796,
+        -6.047797589149441
+      ],
+      "b": [
+        -15.654117129171572,
+        -5.845410699628
+      ],
+      "kind": "curve",
+      "radius": 8.8
+    },
+    {
+      "id": "ARC-189",
+      "a": [
+        -15.654117129171572,
+        -5.845410699628
+      ],
+      "b": [
+        -15.522225492075965,
+        -5.6392767117991
+      ],
+      "kind": "curve",
+      "radius": 8.8
+    },
+    {
+      "id": "ARC-190",
+      "a": [
+        -15.522225492075965,
+        -5.6392767117991
+      ],
+      "b": [
+        -15.396116637480992,
+        -5.429555035125609
+      ],
+      "kind": "curve",
+      "radius": 8.8
+    },
+    {
+      "id": "ARC-191",
+      "a": [
+        -15.396116637480992,
+        -5.429555035125609
+      ],
+      "b": [
+        -15.275888089065205,
+        -5.216407853535428
+      ],
+      "kind": "curve",
+      "radius": 8.8
+    },
+    {
+      "id": "ARC-192",
+      "a": [
+        -15.275888089065205,
+        -5.216407853535428
+      ],
+      "b": [
+        -15.161632823093829,
+        -5.000000000000001
+      ],
+      "kind": "curve",
+      "radius": 8.8
+    },
+    {
+      "id": "NECK--5",
+      "a": [
+        -15.161632823093829,
+        -5
+      ],
+      "b": [
+        -12,
+        -5
+      ],
+      "kind": "straight"
+    },
+    {
+      "id": "NECK-3",
+      "a": [
+        -15.161632823093829,
+        3
+      ],
+      "b": [
+        -12,
+        3
+      ],
+      "kind": "straight"
+    }
+  ],
+  "rail_planters": [
+    {
+      "id": "RAIL-FLOWER-5",
+      "reference_id": "INT-R02-S01",
+      "rail_anchor": [
+        -15.791689553093796,
+        1.06,
+        4.04779758914944
+      ],
+      "pot_base": [
+        -15.668820625021532,
+        0.42,
+        4.133839593509943
+      ],
+      "plate_top_y": 0.42,
+      "role": "Proposed pot and bracket on existing flower-rail vocabulary; final hardware/drainage pending"
+    },
+    {
+      "id": "RAIL-FLOWER-10",
+      "reference_id": "INT-R02-S01",
+      "rail_anchor": [
+        -16.560890808303057,
+        1.06,
+        4.998155784689485
+      ],
+      "pot_base": [
+        -16.45113326526277,
+        0.42,
+        5.100397076473964
+      ],
+      "plate_top_y": 0.42,
+      "role": "Proposed pot and bracket on existing flower-rail vocabulary; final hardware/drainage pending"
+    },
+    {
+      "id": "RAIL-FLOWER-15",
+      "reference_id": "INT-R02-S01",
+      "rail_anchor": [
+        -17.454388429193123,
+        1.06,
+        5.832729491625797
+      ],
+      "pot_base": [
+        -17.359860959236187,
+        0.42,
+        5.949196471596691
+      ],
+      "plate_top_y": 0.42,
+      "role": "Proposed pot and bracket on existing flower-rail vocabulary; final hardware/drainage pending"
+    },
+    {
+      "id": "RAIL-FLOWER-20",
+      "reference_id": "INT-R02-S01",
+      "rail_anchor": [
+        -18.454934920230883,
+        1.06,
+        6.535408643243136
+      ],
+      "pot_base": [
+        -18.377462220007548,
+        0.42,
+        6.663853108752963
+      ],
+      "plate_top_y": 0.42,
+      "role": "Proposed pot and bracket on existing flower-rail vocabulary; final hardware/drainage pending"
+    },
+    {
+      "id": "RAIL-FLOWER-25",
+      "reference_id": "INT-R02-S01",
+      "rail_anchor": [
+        -19.543216384287348,
+        1.06,
+        7.092629179329828
+      ],
+      "pot_base": [
+        -19.484293936292246,
+        0.42,
+        7.230571722159314
+      ],
+      "plate_top_y": 0.42,
+      "role": "Proposed pot and bracket on existing flower-rail vocabulary; final hardware/drainage pending"
+    },
+    {
+      "id": "RAIL-FLOWER-30",
+      "reference_id": "INT-R02-S01",
+      "rail_anchor": [
+        -20.698225345515645,
+        1.06,
+        7.493634877952633
+      ],
+      "pot_base": [
+        -20.658990550268754,
+        0.42,
+        7.638412745190462
+      ],
+      "plate_top_y": 0.42,
+      "role": "Proposed pot and bracket on existing flower-rail vocabulary; final hardware/drainage pending"
+    },
+    {
+      "id": "RAIL-FLOWER-35",
+      "reference_id": "INT-R02-S01",
+      "rail_anchor": [
+        -21.897666263968325,
+        1.06,
+        7.730684986552113
+      ],
+      "pot_base": [
+        -21.878876484376878,
+        0.42,
+        7.87950348064107
+      ],
+      "plate_top_y": 0.42,
+      "role": "Proposed pot and bracket on existing flower-rail vocabulary; final hardware/drainage pending"
+    },
+    {
+      "id": "RAIL-FLOWER-40",
+      "reference_id": "INT-R02-S01",
+      "rail_anchor": [
+        -23.118385914164328,
+        1.06,
+        7.799203644383251
+      ],
+      "pot_base": [
+        -23.120403855883037,
+        0.42,
+        7.9491900701397835
+      ],
+      "plate_top_y": 0.42,
+      "role": "Proposed pot and bracket on existing flower-rail vocabulary; final hardware/drainage pending"
+    },
+    {
+      "id": "RAIL-FLOWER-45",
+      "reference_id": "INT-R02-S01",
+      "rail_anchor": [
+        -24.33682031985828,
+        1.06,
+        7.697868211947915
+      ],
+      "pot_base": [
+        -24.359607029855866,
+        0.42,
+        7.846127329197027
+      ],
+      "plate_top_y": 0.42,
+      "role": "Proposed pot and bracket on existing flower-rail vocabulary; final hardware/drainage pending"
+    },
+    {
+      "id": "RAIL-FLOWER-50",
+      "reference_id": "INT-R02-S01",
+      "rail_anchor": [
+        -25.529449617674743,
+        1.06,
+        7.4286348023653925
+      ],
+      "pot_base": [
+        -25.572565236157835,
+        0.42,
+        7.572304713769348
+      ],
+      "plate_top_y": 0.42,
+      "role": "Proposed pot and bracket on existing flower-rail vocabulary; final hardware/drainage pending"
+    },
+    {
+      "id": "RAIL-FLOWER-55",
+      "reference_id": "INT-R02-S01",
+      "rail_anchor": [
+        -26.673252069216407,
+        1.06,
+        6.99670052184008
+      ],
+      "pot_base": [
+        -26.73586432039623,
+        0.42,
+        7.133007917098718
+      ],
+      "plate_top_y": 0.42,
+      "role": "Proposed pot and bracket on existing flower-rail vocabulary; final hardware/drainage pending"
+    },
+    {
+      "id": "RAIL-FLOWER-60",
+      "reference_id": "INT-R02-S01",
+      "rail_anchor": [
+        -27.746148457692406,
+        1.06,
+        6.410403148111713
+      ],
+      "pot_base": [
+        -27.82704871549398,
+        0.42,
+        6.5367168381363445
+      ],
+      "plate_top_y": 0.42,
+      "role": "Proposed pot and bracket on existing flower-rail vocabulary; final hardware/drainage pending"
+    },
+    {
+      "id": "RAIL-FLOWER-65",
+      "reference_id": "INT-R02-S01",
+      "rail_anchor": [
+        -28.727428290724152,
+        1.06,
+        5.681060183429921
+      ],
+      "pot_base": [
+        -28.82505490931604,
+        0.42,
+        5.794941891102021
+      ],
+      "plate_top_y": 0.42,
+      "role": "Proposed pot and bracket on existing flower-rail vocabulary; final hardware/drainage pending"
+    },
+    {
+      "id": "RAIL-FLOWER-70",
+      "reference_id": "INT-R02-S01",
+      "rail_anchor": [
+        -29.59814958218737,
+        1.06,
+        4.822750388869562
+      ],
+      "pot_base": [
+        -29.710618040974655,
+        0.42,
+        4.922001815952567
+      ],
+      "plate_top_y": 0.42,
+      "role": "Proposed pot and bracket on existing flower-rail vocabulary; final hardware/drainage pending"
+    },
+    {
+      "id": "RAIL-FLOWER-75",
+      "reference_id": "INT-R02-S01",
+      "rail_anchor": [
+        -30.341504495962546,
+        1.06,
+        3.8520420171059655
+      ],
+      "pot_base": [
+        -30.466643777143727,
+        0.42,
+        3.934747278761181
+      ],
+      "plate_top_y": 0.42,
+      "role": "Proposed pot and bracket on existing flower-rail vocabulary; final hardware/drainage pending"
+    },
+    {
+      "id": "RAIL-FLOWER-80",
+      "reference_id": "INT-R02-S01",
+      "rail_anchor": [
+        -30.943143793445,
+        1.06,
+        2.7876729896674304
+      ],
+      "pot_base": [
+        -31.078538289924175,
+        0.42,
+        2.8522355974458526
+      ],
+      "plate_top_y": 0.42,
+      "role": "Proposed pot and bracket on existing flower-rail vocabulary; final hardware/drainage pending"
+    },
+    {
+      "id": "RAIL-FLOWER-85",
+      "reference_id": "INT-R02-S01",
+      "rail_anchor": [
+        -31.39145382189154,
+        1.06,
+        1.6501891923147416
+      ],
+      "pot_base": [
+        -31.534489966582875,
+        0.42,
+        1.6953628717291973
+      ],
+      "plate_top_y": 0.42,
+      "role": "Proposed pot and bracket on existing flower-rail vocabulary; final hardware/drainage pending"
+    },
+    {
+      "id": "RAIL-FLOWER-90",
+      "reference_id": "INT-R02-S01",
+      "rail_anchor": [
+        -31.67778069680119,
+        1.06,
+        0.4615478706579077
+      ],
+      "pot_base": [
+        -31.82569741322394,
+        0.42,
+        0.4864606184532129
+      ],
+      "plate_top_y": 0.42,
+      "role": "Proposed pot and bracket on existing flower-rail vocabulary; final hardware/drainage pending"
+    },
+    {
+      "id": "RAIL-FLOWER-95",
+      "reference_id": "INT-R02-S01",
+      "rail_anchor": [
+        -31.796597350859432,
+        1.06,
+        -0.7553062181974597
+      ],
+      "pot_base": [
+        -31.946539351158172,
+        0.42,
+        -0.7511353014621891
+      ],
+      "plate_top_y": 0.42,
+      "role": "Proposed pot and bracket on existing flower-rail vocabulary; final hardware/drainage pending"
+    },
+    {
+      "id": "RAIL-FLOWER-100",
+      "reference_id": "INT-R02-S01",
+      "rail_anchor": [
+        -31.74561022484214,
+        1.06,
+        -1.9768837162818538
+      ],
+      "pot_base": [
+        -31.894683126401947,
+        0.42,
+        -1.9935351432639308
+      ],
+      "plate_top_y": 0.42,
+      "role": "Proposed pot and bracket on existing flower-rail vocabulary; final hardware/drainage pending"
+    },
+    {
+      "id": "RAIL-FLOWER-105",
+      "reference_id": "INT-R02-S01",
+      "rail_anchor": [
+        -31.525803540987475,
+        1.06,
+        -3.1796040880135577
+      ],
+      "pot_base": [
+        -31.671129737708853,
+        0.42,
+        -3.2167564304228797
+      ],
+      "plate_top_y": 0.42,
+      "role": "Proposed pot and bracket on existing flower-rail vocabulary; final hardware/drainage pending"
+    },
+    {
+      "id": "RAIL-FLOWER-110",
+      "reference_id": "INT-R02-S01",
+      "rail_anchor": [
+        -31.141420304211515,
+        1.06,
+        -4.340250803483545
+      ],
+      "pot_base": [
+        -31.280194513942394,
+        0.42,
+        -4.397186896724741
+      ],
+      "plate_top_y": 0.42,
+      "role": "Proposed pot and bracket on existing flower-rail vocabulary; final hardware/drainage pending"
+    },
+    {
+      "id": "RAIL-FLOWER-115",
+      "reference_id": "INT-R02-S01",
+      "rail_anchor": [
+        -30.599880397907675,
+        1.06,
+        -5.436419495212176
+      ],
+      "pot_base": [
+        -30.729423813781104,
+        0.42,
+        -5.512040282062384
+      ],
+      "plate_top_y": 0.42,
+      "role": "Proposed pot and bracket on existing flower-rail vocabulary; final hardware/drainage pending"
+    },
+    {
+      "id": "RAIL-FLOWER-120",
+      "reference_id": "INT-R02-S01",
+      "rail_anchor": [
+        -29.911637355355296,
+        1.06,
+        -6.446950437451884
+      ],
+      "pot_base": [
+        -30.02944935573067,
+        0.42,
+        -6.539796183544814
+      ],
+      "plate_top_y": 0.42,
+      "role": "Proposed pot and bracket on existing flower-rail vocabulary; final hardware/drainage pending"
+    },
+    {
+      "id": "RAIL-FLOWER-125",
+      "reference_id": "INT-R02-S01",
+      "rail_anchor": [
+        -29.089976571528677,
+        1.06,
+        -7.35233699973733
+      ],
+      "pot_base": [
+        -29.19378299036155,
+        0.42,
+        -7.460615471323761
+      ],
+      "plate_top_y": 0.42,
+      "role": "Proposed pot and bracket on existing flower-rail vocabulary; final hardware/drainage pending"
+    },
+    {
+      "id": "RAIL-FLOWER-130",
+      "reference_id": "INT-R02-S01",
+      "rail_anchor": [
+        -28.15075885049428,
+        1.06,
+        -8.13510219016202
+      ],
+      "pot_base": [
+        -28.23855587635498,
+        0.42,
+        -8.256723250221599
+      ],
+      "plate_top_y": 0.42,
+      "role": "Proposed pot and bracket on existing flower-rail vocabulary; final hardware/drainage pending"
+    },
+    {
+      "id": "RAIL-FLOWER-135",
+      "reference_id": "INT-R02-S01",
+      "rail_anchor": [
+        -27.11211423878995,
+        1.06,
+        -8.780136019835448
+      ],
+      "pot_base": [
+        -27.18220709513296,
+        0.42,
+        -8.912751974719006
+      ],
+      "plate_top_y": 0.42,
+      "role": "Proposed pot and bracket on existing flower-rail vocabulary; final hardware/drainage pending"
+    },
+    {
+      "id": "RAIL-FLOWER-140",
+      "reference_id": "INT-R02-S01",
+      "rail_anchor": [
+        -25.99409205482686,
+        1.06,
+        -9.274987176257294
+      ],
+      "pot_base": [
+        -26.04512771485232,
+        0.42,
+        -9.416038094034407
+      ],
+      "plate_top_y": 0.42,
+      "role": "Proposed pot and bracket on existing flower-rail vocabulary; final hardware/drainage pending"
+    },
+    {
+      "id": "RAIL-FLOWER-145",
+      "reference_id": "INT-R02-S01",
+      "rail_anchor": [
+        -24.8182738699187,
+        1.06,
+        -9.610103375335914
+      ],
+      "pot_base": [
+        -24.849267174519586,
+        0.42,
+        -9.756866501051867
+      ],
+      "plate_top_y": 0.42,
+      "role": "Proposed pot and bracket on existing flower-rail vocabulary; final hardware/drainage pending"
+    },
+    {
+      "id": "RAIL-FLOWER-150",
+      "reference_id": "INT-R02-S01",
+      "rail_anchor": [
+        -23.607356911699668,
+        1.06,
+        -9.779015752452587
+      ],
+      "pot_base": [
+        -23.617709586330914,
+        0.42,
+        -9.928658066414847
+      ],
+      "plate_top_y": 0.42,
+      "role": "Proposed pot and bracket on existing flower-rail vocabulary; final hardware/drainage pending"
+    },
+    {
+      "id": "RAIL-FLOWER-155",
+      "reference_id": "INT-R02-S01",
+      "rail_anchor": [
+        -22.38471593164036,
+        1.06,
+        -9.778463733206557
+      ],
+      "pot_base": [
+        -22.374228135020594,
+        0.42,
+        -9.928096637749851
+      ],
+      "plate_top_y": 0.42,
+      "role": "Proposed pot and bracket on existing flower-rail vocabulary; final hardware/drainage pending"
+    },
+    {
+      "id": "RAIL-FLOWER-160",
+      "reference_id": "INT-R02-S01",
+      "rail_anchor": [
+        -21.173951994085165,
+        1.06,
+        -9.60845797341745
+      ],
+      "pot_base": [
+        -21.142826175802526,
+        0.42,
+        -9.755193052509792
+      ],
+      "plate_top_y": 0.42,
+      "role": "Proposed pot and bracket on existing flower-rail vocabulary; final hardware/drainage pending"
+    },
+    {
+      "id": "RAIL-FLOWER-165",
+      "reference_id": "INT-R02-S01",
+      "rail_anchor": [
+        -19.99843689669354,
+        1.06,
+        -9.272280153432265
+      ],
+      "pot_base": [
+        -19.947273889250816,
+        0.42,
+        -9.41328492877486
+      ],
+      "plate_top_y": 0.42,
+      "role": "Proposed pot and bracket on existing flower-rail vocabulary; final hardware/drainage pending"
+    },
+    {
+      "id": "RAIL-FLOWER-170",
+      "reference_id": "INT-R02-S01",
+      "rail_anchor": [
+        -18.88086201649589,
+        1.06,
+        -8.776419630707547
+      ],
+      "pot_base": [
+        -18.810649437231614,
+        0.42,
+        -8.908972238049152
+      ],
+      "plate_top_y": 0.42,
+      "role": "Proposed pot and bracket on existing flower-rail vocabulary; final hardware/drainage pending"
+    },
+    {
+      "id": "RAIL-FLOWER-175",
+      "reference_id": "INT-R02-S01",
+      "rail_anchor": [
+        -17.84280029034562,
+        1.06,
+        -8.130448173483963
+      ],
+      "pot_base": [
+        -17.754893477112876,
+        0.42,
+        -8.251989903713802
+      ],
+      "plate_top_y": 0.42,
+      "role": "Proposed pot and bracket on existing flower-rail vocabulary; final hardware/drainage pending"
+    },
+    {
+      "id": "RAIL-FLOWER-180",
+      "reference_id": "INT-R02-S01",
+      "rail_anchor": [
+        -16.90428978501123,
+        1.06,
+        -7.3468351936127645
+      ],
+      "pot_base": [
+        -16.800385633619374,
+        0.42,
+        -7.455019884412982
+      ],
+      "plate_top_y": 0.42,
+      "role": "Proposed pot and bracket on existing flower-rail vocabulary; final hardware/drainage pending"
+    },
+    {
+      "id": "RAIL-FLOWER-185",
+      "reference_id": "INT-R02-S01",
+      "rail_anchor": [
+        -16.083446895399756,
+        1.06,
+        -6.440707045159182
+      ],
+      "pot_base": [
+        -15.96555110384407,
+        0.42,
+        -6.533446369792577
+      ],
+      "plate_top_y": 0.42,
+      "role": "Proposed pot and bracket on existing flower-rail vocabulary; final hardware/drainage pending"
+    }
+  ],
+  "balcony_floor_sectors": [
+    {
+      "reference_id": "INT-BALCONY-JOIN-001-S01",
+      "radius_m": 9,
+      "thickness_m": 0.6,
+      "position": [
+        -23,
+        0,
+        -1
+      ],
+      "rotation_y": 0
+    },
+    {
+      "reference_id": "INT-BALCONY-JOIN-001-S01",
+      "radius_m": 9,
+      "thickness_m": 0.6,
+      "position": [
+        -23,
+        0,
+        -1
+      ],
+      "rotation_y": -1.5707963267948966
+    },
+    {
+      "reference_id": "INT-BALCONY-JOIN-001-S01",
+      "radius_m": 9,
+      "thickness_m": 0.6,
+      "position": [
+        -23,
+        0,
+        -1
+      ],
+      "rotation_y": -3.141592653589793
+    },
+    {
+      "reference_id": "INT-BALCONY-JOIN-001-S01",
+      "radius_m": 9,
+      "thickness_m": 0.6,
+      "position": [
+        -23,
+        0,
+        -1
+      ],
+      "rotation_y": -4.71238898038469
+    }
+  ],
+  "neck": {
+    "reference_id": "INT-BALCONY-JOIN-001-S02",
+    "position": [
+      -14,
+      0,
+      -1
+    ],
+    "dimensions": [
+      4,
+      8,
+      0.6
+    ]
+  },
+  "bed_niche": {
+    "reference_id": "INT-SUITE-SHELL-001-S01",
+    "width": 4.8,
+    "depth": 1.2,
+    "height": 6,
+    "opening": "N-BED-ALCOVE",
+    "back": "W-N"
+  },
+  "routes": {
+    "bedroom": [
+      [
+        0,
+        12
+      ],
+      [
+        0,
+        5
+      ],
+      [
+        4,
+        5
+      ],
+      [
+        4,
+        -3
+      ],
+      [
+        2.7,
+        -6.5
+      ],
+      [
+        2.7,
+        -4
+      ],
+      [
+        4,
+        -3
+      ],
+      [
+        4,
+        3
+      ],
+      [
+        8,
+        4.8
+      ],
+      [
+        4,
+        3
+      ],
+      [
+        0,
+        5
+      ],
+      [
+        0,
+        12
+      ]
+    ],
+    "balcony": [
+      [
+        0,
+        12
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        -8,
+        2
+      ],
+      [
+        -10,
+        -1
+      ],
+      [
+        -16,
+        -1
+      ],
+      [
+        -23,
+        -1
+      ],
+      [
+        -25.5,
+        -1
+      ],
+      [
+        -25.5,
+        -2.3
+      ],
+      [
+        -23,
+        -1
+      ],
+      [
+        -20,
+        0
+      ],
+      [
+        -18,
+        -1
+      ],
+      [
+        -16,
+        -1
+      ],
+      [
+        -10,
+        -1
+      ],
+      [
+        -8,
+        2
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        12
+      ]
+    ]
+  },
+  "lights": [
+    {
+      "id": "CENTRAL-LIGHT",
+      "fixture": "CENTRAL-CHANDELIER",
+      "position": [
+        0,
+        5.7,
+        0
+      ],
+      "colour": "#ffe2b0",
+      "intensity": 0.4,
+      "distance": 18
+    },
+    {
+      "id": "NORTH-LIGHT--4",
+      "fixture": "NORTH-SCONCE--4",
+      "position": [
+        -4,
+        2.4,
+        -8.7
+      ],
+      "colour": "#ffd6ad",
+      "intensity": 0.18,
+      "distance": 8
+    },
+    {
+      "id": "NORTH-LIGHT-4",
+      "fixture": "NORTH-SCONCE-4",
+      "position": [
+        4,
+        2.4,
+        -8.7
+      ],
+      "colour": "#ffd6ad",
+      "intensity": 0.18,
+      "distance": 8
+    }
+  ],
+  "review_environment_lights": {
+    "hemisphere": 1.4,
+    "ambient": 0.65,
+    "directional": 1.7,
+    "status": "Inspection lighting only; no final bake or production illumination claim"
+  },
+  "plan_projection": {
+    "lower": "Top-down actual meshes; suspended chandelier and ceiling hidden",
+    "ceiling": "Looking upward at actual vault and pendant; reflected handedness, north at top"
+  },
+  "symmetry": {
+    "mode": "Bilateral bed assembly; room layout follows fixed asymmetric west balcony / east windows",
+    "order": 2,
+    "exceptions": [
+      "Dressing northwest, reading southwest and keepsake console southeast preserve source roles."
+    ]
+  }
+}
