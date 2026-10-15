@@ -4,6 +4,8 @@
 
 This is a proposed terrain and route review. It runs independently of the existing game and does not replace the palace architecture, move a saved location, generate art, register models or change the 230-sheet budget. GEN-37 remains the palace-front authority. Neither the main game nor multiplayer loads on this page.
 
+**Regional terrain update:** [Biome and FC05 habitat evidence](BIOMES-AND-TERRAIN.md) adds physical landform proposals, six transition sections, six local ground zones and 94 placement envelopes. The complete forest loop and return are now tested in the browser.
+
 ## Run and verify
 
 Serve the **repository root**, rather than opening the HTML through `file://`:
@@ -84,7 +86,7 @@ The source is [INT-R02's saved schedule](../../completion-pass/INT-R02/schedule.
 
 [Geometry verification](geometry-verification.json) covers unchanged source fields, footprint/pad clearance, continuous proposed boat water, descending river outlets, finite terrain, blended regions, local loop slopes, openings, collisions and return paths. [Browser verification](browser-verification.json) records real Chromium checks at 1440 × 960 and 390 × 844, all three areas, 2D/3D views, selection/layers, keyboard movement and resets, with no page errors or failed requests.
 
-The world display uses a coarse **50 m terrain mesh**, whereas the local forest uses **1.5 m terrain cells** and analytical collision. Narrow channels are checked using the analytical model and appear in overhead/route evidence; some banks need a denser final terrain mesh. River/channel and shoreline design still needs visual review. Heights are proposed, the old larger-lake illustration conflicts with the current cove reservation, and no final ocean waves, detailed buildings, foliage, wildlife, furniture art or gameplay interactions were added.
+The world display uses a coarse **50 m terrain mesh**, whereas the local forest uses **0.75 m terrain cells** and analytical collision. Narrow channels are checked using the analytical model and appear in overhead/route evidence; some banks need a denser final terrain mesh. River/channel and shoreline design still needs visual review. Heights are proposed, the old larger-lake illustration conflicts with the current cove reservation, and no final ocean waves, detailed buildings, foliage, wildlife, furniture art or gameplay interactions were added.
 
 This is a reviewable **P1 blockout**, with preliminary local movement checks. It does not approve P2 shared kit contracts, P3 finished playable rooms or global route completion.
 

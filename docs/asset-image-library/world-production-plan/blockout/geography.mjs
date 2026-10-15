@@ -1,3 +1,5 @@
+import {createBiomes} from './biomes.mjs';
+import {createForestHabitats} from './habitats.mjs';
 // Pure geometry shared by the browser and audit. World X east, Z south, Y up.
 export const clamp=(x,a,b)=>Math.max(a,Math.min(b,x));
 export const mix=(a,b,t)=>a+(b-a)*t;
@@ -17,11 +19,12 @@ export function createGeography(source,proposal){
  const lake=irregularEllipse(...lakeInfo.centre_xz_m,...lakeInfo.approx_size_m.map(v=>v/2));
  const lagoon=irregularEllipse(...lagoonInfo.centre_xz_m,...lagoonInfo.approx_size_m.map(v=>v/2));
  const lakes=[{id:'S03',name:'Lantern Lake reserved cove',points:lake,level:proposal.lake_level_m}];
- const regionCentres=source.terrain_regions.filter(r=>r.id!=='T08').map(r=>{const sites=source.landmarks.filter(s=>r.location_ids.includes(s.id));return{id:r.id,name:r.name,x:sites.reduce((a,s)=>a+s.x_m/sites.length,0),z:sites.reduce((a,s)=>a+s.z_m/sites.length,0)};});
- function regionMix(x,z){const weights=regionCentres.map(r=>({...r,weight:Math.exp(-((x-r.x)**2+(z-r.z)**2)/(2*1100**2))})),sum=weights.reduce((a,r)=>a+r.weight,0);return weights.map(r=>({...r,weight:r.weight/sum})).sort((a,b)=>b.weight-a.weight);}
+ const biomes=createBiomes(source,{inside,smooth,nearLine,distance});
+ const regionMix=biomes.weights;
+ let habitats=null;
  function raw(x,z){const p=[x,z],d=nearLine(p,shoreClosed).d;if(!inside(p,shore))return -8-0.025*Math.min(d,400);
   const hill=(cx,cz,rx,rz,h)=>h*Math.exp(-(((x-cx)/rx)**2+((z-cz)/rz)**2)*2);
-  return (8+34*smooth(0,700,d)+7*Math.sin(x/700)*Math.cos(z/900)+hill(-2300,-2300,1500,1100,140)+hill(2550,-2050,1300,1200,170)+hill(2200,1950,1100,900,95))*smooth(0,90,d);
+  return (8+34*smooth(0,700,d)+7*Math.sin(x/700)*Math.cos(z/900)+hill(-2300,-2300,1500,1100,140)+hill(2550,-2050,1300,1200,170)+hill(2200,1950,1100,900,95)+biomes.relief(x,z))*smooth(0,90,d);
  }
  const pads=[...source.landmarks,...source.forest_cottages].filter(s=>s.id!=='B11').map(s=>({...s,level:proposal.pad_levels_m[s.id]??Math.max(14,Math.round(raw(s.x_m,s.z_m)))}));
  function padAt(x,z){return pads.find(s=>Math.abs(x-s.x_m)<=s.width_m/2+2&&Math.abs(z-s.z_m)<=s.depth_m/2+2);}
@@ -42,12 +45,12 @@ export function createGeography(source,proposal){
   return y;
  }
  const navigable=(x,z,radius=4)=>[[0,0],...Array.from({length:8},(_,i)=>[radius*Math.cos(i*Math.PI/4),radius*Math.sin(i*Math.PI/4)])].every(([dx,dz])=>!!saltAt(x+dx,z+dz));
- const cottage=source.forest_cottages.find(c=>c.id===proposal.forest_sample.source_cottage),f=proposal.forest_sample,datum=raw(cottage.x_m,cottage.z_m);
- function forestBase(x,z){let y=-0.006*z+0.12*Math.sin(x*0.04)*Math.cos(z*0.025);const d=Math.hypot(Math.max(0,Math.abs(x)-8),Math.max(0,Math.abs(z)-7));return mix(0.4,y,smooth(0,6,d));}
+ const cottage=source.forest_cottages.find(c=>c.id===proposal.forest_sample.source_cottage),f=proposal.forest_sample,datum=pads.find(p=>p.id===cottage.id).level-.4;
+ function forestBase(x,z){let y=-0.006*z+0.12*Math.sin(x*0.04)*Math.cos(z*0.025);const d=Math.hypot(Math.max(0,Math.abs(x)-8),Math.max(0,Math.abs(z)-7));return mix(0.4,y,smooth(0,6,d))+(habitats?.relief(x,z)||0);}
  function forestWater(x,z){const p=f.pond,rr=Math.hypot((x-p.centre[0])/p.radii[0],(z-p.centre[1])/p.radii[1]);if(rr<1)return {kind:'pond',level:datum+p.level_relative_m};const n=nearLine([x,z],f.rill.points,f.rill.levels);if(n.d<f.rill.width_m/2)return {kind:'rill',level:datum+n.level};return null;}
  function bridgeContains(x,z,margin=0){const v=f.bridge,dx=x-v.centre[0],dz=z-v.centre[1],along=dx*v.direction[0]+dz*v.direction[1],across=-dx*v.direction[1]+dz*v.direction[0];return Math.abs(along)<=v.length_m/2-margin&&Math.abs(across)<=v.width_m/2-margin;}
  function forestHeight(x,z){let y=forestBase(x,z);const p=f.pond,r=Math.hypot((x-p.centre[0])/p.radii[0],(z-p.centre[1])/p.radii[1]);if(r<1)y=p.level_relative_m-1.2;else if(r<1.35)y=mix(p.level_relative_m+0.05,y,smooth(1,1.35,r));
-  const n=nearLine([x,z],f.rill.points,f.rill.levels);if(n.d<2.5)y=mix(n.level-0.25,y,smooth(0.5,2.5,n.d));return datum+y;
+  const n=nearLine([x,z],f.rill.points,f.rill.levels);if(n.d<2.5)y=mix(n.level-0.25,y,smooth(0.5,2.5,n.d));const local=datum+y,edge=smooth(70,75,Math.hypot(x,z));return edge?mix(local,height(cottage.x_m+x,cottage.z_m+z),edge):local;
  }
  function forestFloor(x,z){const b=f.bridge,dx=x-b.centre[0],dz=z-b.centre[1],along=Math.abs(dx*b.direction[0]+dz*b.direction[1]),across=Math.abs(-dx*b.direction[1]+dz*b.direction[0]);if(across<=b.width_m/2&&along>b.length_m/2&&along<b.length_m/2+b.ramp_length_m){const t=(along-b.length_m/2)/b.ramp_length_m;return mix(datum+b.deck_relative_m,forestHeight(x,z),smooth(0,1,t));}if(bridgeContains(x,z))return datum+f.bridge.deck_relative_m;if(Math.abs(x)<6&&Math.abs(z)<4.5)return datum+f.cottage.floor_relative_m;return forestHeight(x,z);}
  const bedroom=proposal.bedroom_sample,neck=bedroom.neck,b=bedroom.balcony;
@@ -60,6 +63,7 @@ export function createGeography(source,proposal){
    if(walls.some(([a,b,c,d])=>segment([x,z],[a,b],[c,d]).d<r))return false;
    for(const bed of [bedroom.bed,...bedroom.furnishings])if(Math.hypot(Math.max(0,Math.abs(x-bed.centre[0])-bed.width_m/2),Math.max(0,Math.abs(z-bed.centre[1])-bed.depth_m/2))<r)return false;return true;
   }
+  if(habitats?.blocked(x,z,r))return false;
   if(mode!=='forest'||Math.abs(x)>74-r||Math.abs(z)>74-r||cottageWalls(x,z,r))return false;
   for(const [dx,dz] of [[0,0],[r,0],[-r,0],[0,r],[0,-r]])if(forestWater(x+dx,z+dz)&&!bridgeContains(x+dx,z+dz))return false;
   const h=forestFloor(x,z);for(const [dx,dz] of [[r,0],[-r,0],[0,r],[0,-r]])if(Math.abs(forestFloor(x+dx,z+dz)-h)>0.55)return false;return true;
@@ -69,5 +73,9 @@ export function createGeography(source,proposal){
    if(i)maxGrade=Math.max(maxGrade,Math.abs(p.y-positions[i-1].y)/distance(ps[i],ps[i-1]));}
   const legCount=Math.max(1,Math.ceil(length(route.points_xz_m)/500));return {id:route.id,name:route.name,mode:route.mode,points:route.points_xz_m,length_m:length(route.points_xz_m),max_ground_grade:maxGrade,wet_samples:wetSamples,sample_count:positions.length,crossings,profiles:positions,local_leg_count_proposed:legCount,status:'Regional corridor, not validated navigation; use local legs and reviewed transfers'};
  }
- return {source,proposal,shore,lake,lagoon,lakes,pads,padAt,raw,regionMix,height,waterAt,saltAt,navigable,forest:{origin:cottage,datum,base:forestBase,height:forestHeight,floor:forestFloor,water:forestWater,bridgeContains},bedroom:{walls,surface:roomSurface},canWalk,routeReport};
+ const api={source,proposal,shore,lake,lagoon,lakes,pads,padAt,raw,regionMix,biomes,height,waterAt,saltAt,navigable,forest:{origin:cottage,datum,base:forestBase,height:forestHeight,floor:forestFloor,water:forestWater,bridgeContains},bedroom:{walls,surface:roomSurface},canWalk,routeReport};
+ habitats=createForestHabitats(api,proposal,{nearLine,distance,smooth});
+ // Placement heights are evaluated after micro-relief is available.
+ for(const o of habitats.objects)o.y=forestHeight(o.x,o.z);
+ api.habitats=habitats;return api;
 }

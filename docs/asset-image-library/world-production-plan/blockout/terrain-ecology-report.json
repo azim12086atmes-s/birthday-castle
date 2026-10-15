@@ -1,0 +1,3731 @@
+{
+  "location_assignments": [
+    {
+      "id": "B01",
+      "name": "Birthday Castle",
+      "region": "T01",
+      "basis": "Source region assignment"
+    },
+    {
+      "id": "B02",
+      "name": "Moon Water Palace",
+      "region": "T02",
+      "basis": "Source region assignment"
+    },
+    {
+      "id": "B03",
+      "name": "Star Chapel",
+      "region": "T02",
+      "basis": "Source region assignment"
+    },
+    {
+      "id": "B04",
+      "name": "Rose Keep",
+      "region": "T01",
+      "basis": "Source region assignment"
+    },
+    {
+      "id": "B05",
+      "name": "Misty Lantern Keep",
+      "region": "T06",
+      "basis": "Source region assignment"
+    },
+    {
+      "id": "B06",
+      "name": "Misty Pagoda",
+      "region": "T06",
+      "basis": "Source region assignment"
+    },
+    {
+      "id": "B07",
+      "name": "Temple Hill Rotundas",
+      "region": "T06",
+      "basis": "Source region assignment"
+    },
+    {
+      "id": "B08",
+      "name": "Colosseum of Wishes",
+      "region": "T06",
+      "basis": "Source region assignment"
+    },
+    {
+      "id": "B09",
+      "name": "Lagoon City",
+      "region": "T03",
+      "basis": "Source region assignment"
+    },
+    {
+      "id": "B10",
+      "name": "Canyon Moon Palace",
+      "region": "T07",
+      "basis": "Source region assignment"
+    },
+    {
+      "id": "B11",
+      "name": "Crescent Rock Arch",
+      "region": "T07",
+      "basis": "Source region assignment"
+    },
+    {
+      "id": "B12",
+      "name": "Storybook Village",
+      "region": "T05",
+      "basis": "Source region assignment"
+    },
+    {
+      "id": "B13",
+      "name": "Storybook Windmill",
+      "region": "T05",
+      "basis": "Source region assignment"
+    },
+    {
+      "id": "B14",
+      "name": "Pillar Sky City",
+      "region": "T06",
+      "basis": "Source region assignment"
+    },
+    {
+      "id": "B15",
+      "name": "Jade Jungle Temple",
+      "region": "T04",
+      "basis": "Source region assignment"
+    },
+    {
+      "id": "B16",
+      "name": "Fjord Longhouse",
+      "region": "T06",
+      "basis": "Source region assignment"
+    },
+    {
+      "id": "B17",
+      "name": "Glowwood Ruin Court",
+      "region": "T05",
+      "basis": "Source region assignment"
+    },
+    {
+      "id": "B18",
+      "name": "Mother Tree Sanctuary",
+      "region": "T05",
+      "basis": "Source region assignment"
+    },
+    {
+      "id": "B19",
+      "name": "Lantern Cove Gatehouse",
+      "region": "T03",
+      "basis": "Source region assignment"
+    },
+    {
+      "id": "B20",
+      "name": "Glass Bridge Pavilions",
+      "region": "T02",
+      "basis": "Source region assignment"
+    },
+    {
+      "id": "B21",
+      "name": "Tidal Observatory",
+      "region": "T03",
+      "basis": "Source region assignment"
+    },
+    {
+      "id": "B22",
+      "name": "Pearl Harbor Lighthouse",
+      "region": "T03",
+      "basis": "Source region assignment"
+    },
+    {
+      "id": "B23",
+      "name": "Sea Pavilion",
+      "region": "T03",
+      "basis": "Source region assignment"
+    },
+    {
+      "id": "B24",
+      "name": "Reef Star Shrine",
+      "region": "T03",
+      "basis": "Source region assignment"
+    },
+    {
+      "id": "B25",
+      "name": "Crystal Conservatory",
+      "region": "T01",
+      "basis": "Source region assignment"
+    },
+    {
+      "id": "F01",
+      "name": "North Star Woodland",
+      "region": "T05",
+      "basis": "Source district assignment"
+    },
+    {
+      "id": "F02",
+      "name": "West Lantern Forest",
+      "region": "T05",
+      "basis": "Source district assignment"
+    },
+    {
+      "id": "F03",
+      "name": "Northeast Mistwood",
+      "region": "T05",
+      "basis": "Source district assignment"
+    },
+    {
+      "id": "S01",
+      "name": "Crystal Garden",
+      "region": "T08",
+      "basis": "Separate sky projection; altitude unresolved"
+    },
+    {
+      "id": "S02",
+      "name": "Aurora Isle",
+      "region": "T08",
+      "basis": "Separate sky projection; altitude unresolved"
+    },
+    {
+      "id": "S03",
+      "name": "Lantern Lake",
+      "region": "T02",
+      "basis": "Freshwater cove recipe"
+    },
+    {
+      "id": "S04",
+      "name": "Unicorn Meadow",
+      "region": "T08",
+      "basis": "Separate sky projection; altitude unresolved"
+    },
+    {
+      "id": "S05",
+      "name": "Starfall Isle",
+      "region": "T08",
+      "basis": "Separate sky projection; altitude unresolved"
+    },
+    {
+      "id": "S06",
+      "name": "Coastal Meadow",
+      "region": "T03",
+      "basis": "Proposed coastal meadow recipe"
+    }
+  ],
+  "status": "Proposed biome/terrain pass with FC05 placement envelopes; no final ecology assets",
+  "source_sha256": "0a4849d55bc9f9614a231b1e172fc6ff801831a401ab246df6477e99ea39f773",
+  "world_m": [
+    12000,
+    12000
+  ],
+  "land_area_estimate_km2": 61.6699999999963,
+  "dominant_ground_area_estimate_km2": {
+    "T01": 8.089999999999872,
+    "T02": 2.2799999999999954,
+    "T03": 16.18999999999973,
+    "T04": 1.1800000000000008,
+    "T05": 21.450000000000554,
+    "T06": 11.199999999999806,
+    "T07": 1.280000000000001
+  },
+  "area_method": "100 m centre samples excluding water; dominant class only, not exact ecological boundaries",
+  "proposed_sampled_ground_range_m": [
+    0,
+    213.52505732745587
+  ],
+  "regions": [
+    {
+      "id": "T01",
+      "name": "Royal terraces and rose gardens",
+      "color": "#c5bb9d",
+      "focus": [
+        -400,
+        -350
+      ],
+      "radius": 1800,
+      "landform": "Gentle garden shoulders outside the palace pad; drainage swales and terraced approaches remain to engineer.",
+      "ground": [
+        "garden loam",
+        "short meadow",
+        "ivory/rose paving hosts"
+      ],
+      "rocks": [
+        "dressed retaining stone"
+      ],
+      "flora": [
+        "cherry blossom",
+        "rose beds",
+        "cypress accents",
+        "clipped hedge"
+      ],
+      "fauna": [
+        "songbirds",
+        "butterflies",
+        "bees"
+      ],
+      "source_ids": [
+        "GEN-08",
+        "GEN-13",
+        "GEN-35"
+      ],
+      "status": "Proposed landform recipe; palace-front architecture remains GEN-37."
+    },
+    {
+      "id": "T02",
+      "name": "Freshwater banks and sheltered lagoon",
+      "color": "#9fb5a0",
+      "focus": [
+        -1100,
+        1600
+      ],
+      "radius": 1100,
+      "landform": "Low basin margins and gentle wet-to-dry banks; fresh lake and tidal lagoon retain separate levels.",
+      "ground": [
+        "silt",
+        "damp meadow",
+        "gravel bank"
+      ],
+      "rocks": [
+        "rounded bank stone"
+      ],
+      "flora": [
+        "willow",
+        "reeds",
+        "rushes",
+        "lily/lotus patches"
+      ],
+      "fauna": [
+        "pond fish",
+        "frogs",
+        "dragonflies",
+        "waterbirds"
+      ],
+      "source_ids": [
+        "GEN-09",
+        "GEN-10",
+        "GEN-11",
+        "GEN-13"
+      ],
+      "status": "Larger historical lake extent and engineered raised shores remain unresolved."
+    },
+    {
+      "id": "T03",
+      "name": "Open coast, dunes and reef margins",
+      "color": "#d5c59f",
+      "focus": [
+        0,
+        2800
+      ],
+      "radius": 1000,
+      "landform": "An irregular open coast, low dune packets, headlands and sheltered mouths; no enclosing mountain ring.",
+      "ground": [
+        "dry sand",
+        "wet sand",
+        "shell/gravel",
+        "salt meadow"
+      ],
+      "rocks": [
+        "headland stone",
+        "reef limestone"
+      ],
+      "flora": [
+        "dune grass",
+        "salt-tolerant shrubs",
+        "coastal pine",
+        "seaweed/seagrass"
+      ],
+      "fauna": [
+        "seabirds",
+        "crabs",
+        "reef fish"
+      ],
+      "source_ids": [
+        "GEN-09",
+        "GEN-21",
+        "GEN-28"
+      ],
+      "status": "Wave/reef geometry and detailed shoreline contacts follow route review."
+    },
+    {
+      "id": "T04",
+      "name": "Jade jungle and wetland pockets",
+      "color": "#729b76",
+      "focus": [
+        2600,
+        1250
+      ],
+      "radius": 700,
+      "landform": "Humid hummocks, shallow swales and low wetland pockets near the temple; keep the river outlet clear.",
+      "ground": [
+        "damp leaf litter",
+        "mud",
+        "rooted soil",
+        "moss"
+      ],
+      "rocks": [
+        "mossy jade/verdigris stone"
+      ],
+      "flora": [
+        "broadleaf canopy",
+        "palms",
+        "ferns",
+        "vines",
+        "epiphytes"
+      ],
+      "fauna": [
+        "colourful birds",
+        "small geckos",
+        "beetles"
+      ],
+      "source_ids": [
+        "GEN-09",
+        "GEN-13",
+        "GEN-21"
+      ],
+      "status": "Species/rigs and wetland water-level decisions require regional review."
+    },
+    {
+      "id": "T05",
+      "name": "Three woodland districts and meadow edges",
+      "color": "#89a77e",
+      "focus": [
+        -3900,
+        -650
+      ],
+      "radius": 1000,
+      "landform": "Soft woodland ridges, mossy hollows and open clearings, using the saved forest polygons.",
+      "ground": [
+        "leaf litter",
+        "moss",
+        "compacted trail",
+        "sunny meadow"
+      ],
+      "rocks": [
+        "mossy rounded boulder",
+        "uneven stepping stone"
+      ],
+      "flora": [
+        "oak/beech-style canopy",
+        "birch pockets",
+        "conifer pockets",
+        "fern",
+        "bramble",
+        "bluebell"
+      ],
+      "fauna": [
+        "deer",
+        "fox",
+        "hare",
+        "squirrel",
+        "woodland birds",
+        "insects"
+      ],
+      "source_ids": [
+        "F02-NATURE-001",
+        "F02-FLORA-001",
+        "F02-FAUNA-001",
+        "F02-FAUNA-002"
+      ],
+      "status": "FC05 receives placement/clearance prototypes; other districts have recipes only."
+    },
+    {
+      "id": "T06",
+      "name": "Local fjord highlands and misty ridges",
+      "color": "#aaa99b",
+      "focus": [
+        2050,
+        -1900
+      ],
+      "radius": 1100,
+      "landform": "Localized northwest and northeast ridge fingers with open saddles and shallow approach valleys.",
+      "ground": [
+        "rocky soil",
+        "heather meadow",
+        "scree",
+        "damp glade"
+      ],
+      "rocks": [
+        "fjord outcrop",
+        "misty ridge stone"
+      ],
+      "flora": [
+        "conifer pockets",
+        "birch",
+        "heather",
+        "low shrubs"
+      ],
+      "fauna": [
+        "habitat-appropriate woodland birds and mammals"
+      ],
+      "source_ids": [
+        "GEN-09",
+        "GEN-21"
+      ],
+      "status": "Vertical access, cliff contacts and regional grading are still proposals."
+    },
+    {
+      "id": "T07",
+      "name": "Canyon, gullies and crescent arch coast",
+      "color": "#c5a58e",
+      "focus": [
+        2200,
+        2150
+      ],
+      "radius": 850,
+      "landform": "A localized eroded gully with broad shoulders and dry ledges; the natural arch remains a tidal exception.",
+      "ground": [
+        "sandstone grit",
+        "exposed soil",
+        "dry grass"
+      ],
+      "rocks": [
+        "apricot/rose sandstone",
+        "strata",
+        "eroded arch contacts"
+      ],
+      "flora": [
+        "dry grasses",
+        "sparse shrubs"
+      ],
+      "fauna": [
+        "small lizards",
+        "dry-land insects"
+      ],
+      "source_ids": [
+        "GEN-05",
+        "GEN-06",
+        "GEN-21"
+      ],
+      "status": "Hero arch contacts and safe ledge routes require separate geometry."
+    },
+    {
+      "id": "T08",
+      "name": "Sky-island substrates",
+      "color": "#b1a5bc",
+      "focus": null,
+      "radius": null,
+      "landform": "Separate elevated island shells, meadow/garden surfaces and contained edges.",
+      "ground": [
+        "island meadow",
+        "crystal/stone substrate"
+      ],
+      "rocks": [
+        "floating-island shell"
+      ],
+      "flora": [
+        "selected garden/blossom families"
+      ],
+      "fauna": [
+        "luminous insects; optional magical species subject to review"
+      ],
+      "source_ids": [
+        "GEN-22",
+        "GEN-23"
+      ],
+      "status": "XZ projections retained; no altitude, terrain shell or arrival/return implementation."
+    }
+  ],
+  "forest_districts": [
+    {
+      "id": "F01",
+      "name": "North Star Woodland",
+      "canopy": "Mixed broadleaf with birch pockets",
+      "floor": "Fern/leaf litter with blossom glades",
+      "relief": "Low broad ridge and meadow saddle",
+      "reference_ids": [
+        "GEN-08",
+        "GEN-09",
+        "GEN-13"
+      ]
+    },
+    {
+      "id": "F02",
+      "name": "West Lantern Forest",
+      "canopy": "Mossy broadleaf and birch openings",
+      "floor": "Moss, bramble, bluebell, compacted timber/earth trails",
+      "relief": "Low woodland shoulder; open coastal meadow edge",
+      "reference_ids": [
+        "F02-NATURE-001",
+        "F02-FLORA-001"
+      ]
+    },
+    {
+      "id": "F03",
+      "name": "Northeast Mistwood",
+      "canopy": "Birch and conifer pockets",
+      "floor": "Damp glades, fern and uneven stone",
+      "relief": "Localized ridge fingers with shallow mist hollows",
+      "reference_ids": [
+        "GEN-09",
+        "GEN-21"
+      ]
+    }
+  ],
+  "transition_sections": [
+    {
+      "id": "TR01",
+      "name": "North woodland → colosseum meadow",
+      "points": [
+        [
+          -200,
+          -3500
+        ],
+        [
+          -500,
+          -2400
+        ]
+      ],
+      "width_m": 350,
+      "length_m": 1140.1754250991378,
+      "max_sampled_ground_grade": 0.022382965638509916,
+      "requires_grade_review": false,
+      "profile": [
+        {
+          "x": -200,
+          "z": -3500,
+          "height_m": 53.47193593481075,
+          "dominant": "T05",
+          "water": null
+        },
+        {
+          "x": -206.52173913043478,
+          "z": -3476.086956521739,
+          "height_m": 52.91714229650928,
+          "dominant": "T05",
+          "water": null
+        },
+        {
+          "x": -213.04347826086956,
+          "z": -3452.1739130434785,
+          "height_m": 52.38795570492687,
+          "dominant": "T05",
+          "water": null
+        },
+        {
+          "x": -219.56521739130434,
+          "z": -3428.2608695652175,
+          "height_m": 51.88662955514136,
+          "dominant": "T05",
+          "water": null
+        },
+        {
+          "x": -226.08695652173913,
+          "z": -3404.3478260869565,
+          "height_m": 51.415075640223826,
+          "dominant": "T05",
+          "water": null
+        },
+        {
+          "x": -232.6086956521739,
+          "z": -3380.4347826086955,
+          "height_m": 50.97486926184435,
+          "dominant": "T05",
+          "water": null
+        },
+        {
+          "x": -239.1304347826087,
+          "z": -3356.521739130435,
+          "height_m": 50.567258462638755,
+          "dominant": "T05",
+          "water": null
+        },
+        {
+          "x": -245.6521739130435,
+          "z": -3332.608695652174,
+          "height_m": 50.19317686354436,
+          "dominant": "T05",
+          "water": null
+        },
+        {
+          "x": -252.17391304347825,
+          "z": -3308.695652173913,
+          "height_m": 49.85325955605679,
+          "dominant": "T05",
+          "water": null
+        },
+        {
+          "x": -258.69565217391306,
+          "z": -3284.782608695652,
+          "height_m": 49.5478614813663,
+          "dominant": "T05",
+          "water": null
+        },
+        {
+          "x": -265.2173913043478,
+          "z": -3260.8695652173915,
+          "height_m": 49.27707772491591,
+          "dominant": "T05",
+          "water": null
+        },
+        {
+          "x": -271.7391304347826,
+          "z": -3236.9565217391305,
+          "height_m": 49.0407651650557,
+          "dominant": "T05",
+          "water": null
+        },
+        {
+          "x": -278.2608695652174,
+          "z": -3213.0434782608695,
+          "height_m": 48.83856493682712,
+          "dominant": "T05",
+          "water": null
+        },
+        {
+          "x": -284.7826086956522,
+          "z": -3189.130434782609,
+          "height_m": 48.66992520495675,
+          "dominant": "T05",
+          "water": null
+        },
+        {
+          "x": -291.304347826087,
+          "z": -3165.217391304348,
+          "height_m": 48.534123782163086,
+          "dominant": "T05",
+          "water": null
+        },
+        {
+          "x": -297.82608695652175,
+          "z": -3141.304347826087,
+          "height_m": 48.43029017808448,
+          "dominant": "T05",
+          "water": null
+        },
+        {
+          "x": -304.3478260869565,
+          "z": -3117.391304347826,
+          "height_m": 48.35742671868284,
+          "dominant": "T05",
+          "water": null
+        },
+        {
+          "x": -310.8695652173913,
+          "z": -3093.478260869565,
+          "height_m": 48.31442843405247,
+          "dominant": "T05",
+          "water": null
+        },
+        {
+          "x": -317.3913043478261,
+          "z": -3069.5652173913045,
+          "height_m": 48.30010147242264,
+          "dominant": "T05",
+          "water": null
+        },
+        {
+          "x": -323.9130434782609,
+          "z": -3045.6521739130435,
+          "height_m": 48.313179858156936,
+          "dominant": "T05",
+          "water": null
+        },
+        {
+          "x": -330.4347826086956,
+          "z": -3021.7391304347825,
+          "height_m": 48.35234047024371,
+          "dominant": "T05",
+          "water": null
+        },
+        {
+          "x": -336.95652173913044,
+          "z": -2997.826086956522,
+          "height_m": 48.416216173834286,
+          "dominant": "T05",
+          "water": null
+        },
+        {
+          "x": -343.47826086956525,
+          "z": -2973.913043478261,
+          "height_m": 48.503407089711885,
+          "dominant": "T05",
+          "water": null
+        },
+        {
+          "x": -350,
+          "z": -2950,
+          "height_m": 48.612490034256226,
+          "dominant": "T05",
+          "water": null
+        },
+        {
+          "x": -356.52173913043475,
+          "z": -2926.086956521739,
+          "height_m": 48.742026204808724,
+          "dominant": "T05",
+          "water": null
+        },
+        {
+          "x": -363.04347826086956,
+          "z": -2902.173913043478,
+          "height_m": 48.8905672218447,
+          "dominant": "T05",
+          "water": null
+        },
+        {
+          "x": -369.5652173913044,
+          "z": -2878.2608695652175,
+          "height_m": 49.05665966971763,
+          "dominant": "T05",
+          "water": null
+        },
+        {
+          "x": -376.0869565217391,
+          "z": -2854.3478260869565,
+          "height_m": 49.238848301833045,
+          "dominant": "T05",
+          "water": null
+        },
+        {
+          "x": -382.60869565217394,
+          "z": -2830.4347826086955,
+          "height_m": 49.43567809397244,
+          "dominant": "T05",
+          "water": null
+        },
+        {
+          "x": -389.13043478260875,
+          "z": -2806.521739130435,
+          "height_m": 49.64569534129888,
+          "dominant": "T06",
+          "water": null
+        },
+        {
+          "x": -395.6521739130435,
+          "z": -2782.608695652174,
+          "height_m": 49.867448000633665,
+          "dominant": "T06",
+          "water": null
+        },
+        {
+          "x": -402.17391304347825,
+          "z": -2758.695652173913,
+          "height_m": 50.09948548029509,
+          "dominant": "T06",
+          "water": null
+        },
+        {
+          "x": -408.695652173913,
+          "z": -2734.782608695652,
+          "height_m": 50.340358075606346,
+          "dominant": "T06",
+          "water": null
+        },
+        {
+          "x": -415.2173913043478,
+          "z": -2710.8695652173915,
+          "height_m": 50.58861623964086,
+          "dominant": "T06",
+          "water": null
+        },
+        {
+          "x": -421.7391304347826,
+          "z": -2686.9565217391305,
+          "height_m": 50.84280986644583,
+          "dominant": "T06",
+          "water": null
+        },
+        {
+          "x": -428.2608695652174,
+          "z": -2663.0434782608695,
+          "height_m": 51.10148774845236,
+          "dominant": "T06",
+          "water": null
+        },
+        {
+          "x": -434.7826086956522,
+          "z": -2639.1304347826085,
+          "height_m": 51.363197351637666,
+          "dominant": "T06",
+          "water": null
+        },
+        {
+          "x": -441.304347826087,
+          "z": -2615.217391304348,
+          "height_m": 51.626485031833674,
+          "dominant": "T06",
+          "water": null
+        },
+        {
+          "x": -447.82608695652175,
+          "z": -2591.304347826087,
+          "height_m": 51.889896793942015,
+          "dominant": "T06",
+          "water": null
+        },
+        {
+          "x": -454.3478260869565,
+          "z": -2567.391304347826,
+          "height_m": 52.151979673260776,
+          "dominant": "T06",
+          "water": null
+        },
+        {
+          "x": -460.8695652173913,
+          "z": -2543.478260869565,
+          "height_m": 52.41128379515749,
+          "dominant": "T06",
+          "water": null
+        },
+        {
+          "x": -467.39130434782606,
+          "z": -2519.5652173913045,
+          "height_m": 52.666365146407976,
+          "dominant": "T06",
+          "water": null
+        },
+        {
+          "x": -473.9130434782609,
+          "z": -2495.6521739130435,
+          "height_m": 52.91578906909126,
+          "dominant": "T06",
+          "water": null
+        },
+        {
+          "x": -480.4347826086957,
+          "z": -2471.7391304347825,
+          "height_m": 53.158134466374044,
+          "dominant": "T06",
+          "water": null
+        },
+        {
+          "x": -486.95652173913044,
+          "z": -2447.826086956522,
+          "height_m": 53.39199868917946,
+          "dominant": "T06",
+          "water": null
+        },
+        {
+          "x": -493.47826086956525,
+          "z": -2423.913043478261,
+          "height_m": 53.61600305391497,
+          "dominant": "T06",
+          "water": null
+        },
+        {
+          "x": -500,
+          "z": -2400,
+          "height_m": 53.828798924390625,
+          "dominant": "T06",
+          "water": null
+        }
+      ],
+      "status": "Gentle sampled section; entrances and complete access still pending"
+    },
+    {
+      "id": "TR02",
+      "name": "West forest → storybook meadow",
+      "points": [
+        [
+          -3700,
+          -500
+        ],
+        [
+          -2800,
+          -650
+        ]
+      ],
+      "width_m": 300,
+      "length_m": 912.4143795447328,
+      "max_sampled_ground_grade": 0.47003779829478803,
+      "requires_grade_review": true,
+      "profile": [
+        {
+          "x": -3700,
+          "z": -500,
+          "height_m": 48.8056793721447,
+          "dominant": "T05",
+          "water": null
+        },
+        {
+          "x": -3675.675675675676,
+          "z": -504.05405405405406,
+          "height_m": 48.80697596073157,
+          "dominant": "T05",
+          "water": null
+        },
+        {
+          "x": -3651.3513513513512,
+          "z": -508.1081081081081,
+          "height_m": 48.803994636823944,
+          "dominant": "T05",
+          "water": null
+        },
+        {
+          "x": -3627.027027027027,
+          "z": -512.1621621621622,
+          "height_m": 48.79717539948307,
+          "dominant": "T05",
+          "water": null
+        },
+        {
+          "x": -3602.7027027027025,
+          "z": -516.2162162162163,
+          "height_m": 48.7869171515794,
+          "dominant": "T05",
+          "water": null
+        },
+        {
+          "x": -3578.3783783783783,
+          "z": -520.2702702702703,
+          "height_m": 48.77357608453095,
+          "dominant": "T05",
+          "water": null
+        },
+        {
+          "x": -3554.054054054054,
+          "z": -524.3243243243244,
+          "height_m": 48.757464911659454,
+          "dominant": "T05",
+          "water": null
+        },
+        {
+          "x": -3529.7297297297296,
+          "z": -528.3783783783783,
+          "height_m": 48.73885290057866,
+          "dominant": "T05",
+          "water": null
+        },
+        {
+          "x": -3505.4054054054054,
+          "z": -532.4324324324324,
+          "height_m": 48.71796664183168,
+          "dominant": "T05",
+          "water": null
+        },
+        {
+          "x": -3481.0810810810813,
+          "z": -536.4864864864865,
+          "height_m": 48.69499148022409,
+          "dominant": "T05",
+          "water": null
+        },
+        {
+          "x": -3456.7567567567567,
+          "z": -540.5405405405405,
+          "height_m": 48.67007352706167,
+          "dominant": "T05",
+          "water": null
+        },
+        {
+          "x": -3432.4324324324325,
+          "z": -544.5945945945946,
+          "height_m": 48.64332216582174,
+          "dominant": "T05",
+          "water": null
+        },
+        {
+          "x": -3408.108108108108,
+          "z": -548.6486486486486,
+          "height_m": 48.6148129606119,
+          "dominant": "T05",
+          "water": null
+        },
+        {
+          "x": -3383.7837837837837,
+          "z": -552.7027027027027,
+          "height_m": 48.58459087598182,
+          "dominant": "T05",
+          "water": null
+        },
+        {
+          "x": -3359.4594594594596,
+          "z": -556.7567567567568,
+          "height_m": 48.55267371807365,
+          "dominant": "T05",
+          "water": null
+        },
+        {
+          "x": -3335.135135135135,
+          "z": -560.8108108108108,
+          "height_m": 48.51905571049748,
+          "dominant": "T05",
+          "water": null
+        },
+        {
+          "x": -3310.810810810811,
+          "z": -564.8648648648649,
+          "height_m": 48.48371112343788,
+          "dominant": "T05",
+          "water": null
+        },
+        {
+          "x": -3286.4864864864867,
+          "z": -568.918918918919,
+          "height_m": 48.44659788104638,
+          "dominant": "T05",
+          "water": null
+        },
+        {
+          "x": -3262.162162162162,
+          "z": -572.972972972973,
+          "height_m": 48.40766107985048,
+          "dominant": "T05",
+          "water": null
+        },
+        {
+          "x": -3237.837837837838,
+          "z": -577.027027027027,
+          "height_m": 48.36683635940687,
+          "dominant": "T05",
+          "water": null
+        },
+        {
+          "x": -3213.5135135135133,
+          "z": -581.081081081081,
+          "height_m": 48.32405307544624,
+          "dominant": "T05",
+          "water": null
+        },
+        {
+          "x": -3189.189189189189,
+          "z": -585.1351351351351,
+          "height_m": 48.27923723501565,
+          "dominant": "T05",
+          "water": null
+        },
+        {
+          "x": -3164.864864864865,
+          "z": -589.1891891891892,
+          "height_m": 48.2323141623613,
+          "dominant": "T05",
+          "water": null
+        },
+        {
+          "x": -3140.5405405405404,
+          "z": -593.2432432432432,
+          "height_m": 48.18321087327736,
+          "dominant": "T05",
+          "water": null
+        },
+        {
+          "x": -3116.2162162162163,
+          "z": -597.2972972972973,
+          "height_m": 48.13185814417552,
+          "dominant": "T05",
+          "water": null
+        },
+        {
+          "x": -3091.8918918918916,
+          "z": -601.3513513513514,
+          "height_m": 48.07819227003909,
+          "dominant": "T05",
+          "water": null
+        },
+        {
+          "x": -3067.5675675675675,
+          "z": -605.4054054054054,
+          "height_m": 48.02215651258798,
+          "dominant": "T05",
+          "water": null
+        },
+        {
+          "x": -3043.2432432432433,
+          "z": -609.4594594594595,
+          "height_m": 47.96370224630157,
+          "dominant": "T05",
+          "water": null
+        },
+        {
+          "x": -3018.9189189189187,
+          "z": -613.5135135135135,
+          "height_m": 47.902789815368195,
+          "dominant": "T05",
+          "water": null
+        },
+        {
+          "x": -2994.5945945945946,
+          "z": -617.5675675675676,
+          "height_m": 47.83938911912615,
+          "dominant": "T05",
+          "water": null
+        },
+        {
+          "x": -2970.27027027027,
+          "z": -621.6216216216217,
+          "height_m": 47.77347994713251,
+          "dominant": "T05",
+          "water": null
+        },
+        {
+          "x": -2945.945945945946,
+          "z": -625.6756756756756,
+          "height_m": 47.70505208767178,
+          "dominant": "T05",
+          "water": null
+        },
+        {
+          "x": -2921.6216216216217,
+          "z": -629.7297297297298,
+          "height_m": 47.63410523534355,
+          "dominant": "T05",
+          "water": null
+        },
+        {
+          "x": -2897.2972972972975,
+          "z": -633.7837837837837,
+          "height_m": 47.560648724411045,
+          "dominant": "T05",
+          "water": null
+        },
+        {
+          "x": -2872.972972972973,
+          "z": -637.8378378378378,
+          "height_m": 48.764618944248284,
+          "dominant": "T05",
+          "water": null
+        },
+        {
+          "x": -2848.6486486486488,
+          "z": -641.8918918918919,
+          "height_m": 60.35567964948365,
+          "dominant": "T05",
+          "water": null
+        },
+        {
+          "x": -2824.324324324324,
+          "z": -645.9459459459459,
+          "height_m": 69.77361711946665,
+          "dominant": "T05",
+          "water": null
+        },
+        {
+          "x": -2800,
+          "z": -650,
+          "height_m": 65.85846153846154,
+          "dominant": "T05",
+          "water": "WV01"
+        }
+      ],
+      "status": "Grade/crossing intervention required; not an approved walking route"
+    },
+    {
+      "id": "TR03",
+      "name": "Lake bank → wooded approach",
+      "points": [
+        [
+          -2250,
+          500
+        ],
+        [
+          -2600,
+          50
+        ]
+      ],
+      "width_m": 220,
+      "length_m": 570.087712549569,
+      "max_sampled_ground_grade": 0.006153882707798347,
+      "requires_grade_review": false,
+      "profile": [
+        {
+          "x": -2250,
+          "z": 500,
+          "height_m": 42.43227249801268,
+          "dominant": "T02",
+          "water": null
+        },
+        {
+          "x": -2265.217391304348,
+          "z": 480.4347826086956,
+          "height_m": 42.568607164103945,
+          "dominant": "T02",
+          "water": null
+        },
+        {
+          "x": -2280.4347826086955,
+          "z": 460.8695652173913,
+          "height_m": 42.70776809548907,
+          "dominant": "T02",
+          "water": null
+        },
+        {
+          "x": -2295.6521739130435,
+          "z": 441.30434782608694,
+          "height_m": 42.84949455151513,
+          "dominant": "T02",
+          "water": null
+        },
+        {
+          "x": -2310.8695652173915,
+          "z": 421.7391304347826,
+          "height_m": 42.993521309974426,
+          "dominant": "T02",
+          "water": null
+        },
+        {
+          "x": -2326.086956521739,
+          "z": 402.17391304347825,
+          "height_m": 43.1395792216059,
+          "dominant": "T02",
+          "water": null
+        },
+        {
+          "x": -2341.304347826087,
+          "z": 382.60869565217394,
+          "height_m": 43.287395778722406,
+          "dominant": "T02",
+          "water": null
+        },
+        {
+          "x": -2356.521739130435,
+          "z": 363.04347826086956,
+          "height_m": 43.436695697580795,
+          "dominant": "T02",
+          "water": null
+        },
+        {
+          "x": -2371.7391304347825,
+          "z": 343.47826086956525,
+          "height_m": 43.587201514137696,
+          "dominant": "T02",
+          "water": null
+        },
+        {
+          "x": -2386.9565217391305,
+          "z": 323.9130434782609,
+          "height_m": 43.738634192861845,
+          "dominant": "T02",
+          "water": null
+        },
+        {
+          "x": -2402.173913043478,
+          "z": 304.3478260869565,
+          "height_m": 43.89071374830571,
+          "dominant": "T02",
+          "water": null
+        },
+        {
+          "x": -2417.391304347826,
+          "z": 284.78260869565213,
+          "height_m": 44.04315987917339,
+          "dominant": "T02",
+          "water": null
+        },
+        {
+          "x": -2432.608695652174,
+          "z": 265.21739130434787,
+          "height_m": 44.195692614659784,
+          "dominant": "T05",
+          "water": null
+        },
+        {
+          "x": -2447.8260869565215,
+          "z": 245.6521739130435,
+          "height_m": 44.34803297287793,
+          "dominant": "T05",
+          "water": null
+        },
+        {
+          "x": -2463.0434782608695,
+          "z": 226.08695652173913,
+          "height_m": 44.499903631237515,
+          "dominant": "T05",
+          "water": null
+        },
+        {
+          "x": -2478.2608695652175,
+          "z": 206.52173913043475,
+          "height_m": 44.65102960868976,
+          "dominant": "T05",
+          "water": null
+        },
+        {
+          "x": -2493.478260869565,
+          "z": 186.95652173913044,
+          "height_m": 44.801138959811134,
+          "dominant": "T05",
+          "water": null
+        },
+        {
+          "x": -2508.695652173913,
+          "z": 167.39130434782612,
+          "height_m": 44.949963480764126,
+          "dominant": "T05",
+          "water": null
+        },
+        {
+          "x": -2523.913043478261,
+          "z": 147.82608695652175,
+          "height_m": 45.097239427247,
+          "dominant": "T05",
+          "water": null
+        },
+        {
+          "x": -2539.1304347826085,
+          "z": 128.26086956521738,
+          "height_m": 45.24270824462827,
+          "dominant": "T05",
+          "water": null
+        },
+        {
+          "x": -2554.3478260869565,
+          "z": 108.69565217391306,
+          "height_m": 45.38611731055737,
+          "dominant": "T05",
+          "water": null
+        },
+        {
+          "x": -2569.5652173913045,
+          "z": 89.13043478260875,
+          "height_m": 45.527220690450626,
+          "dominant": "T05",
+          "water": null
+        },
+        {
+          "x": -2584.782608695652,
+          "z": 69.56521739130432,
+          "height_m": 45.66577990637394,
+          "dominant": "T05",
+          "water": null
+        },
+        {
+          "x": -2600,
+          "z": 50,
+          "height_m": 45.801564719980284,
+          "dominant": "T05",
+          "water": null
+        }
+      ],
+      "status": "Gentle sampled section; entrances and complete access still pending"
+    },
+    {
+      "id": "TR04",
+      "name": "Jungle → canyon shoulder",
+      "points": [
+        [
+          2500,
+          1500
+        ],
+        [
+          2250,
+          2050
+        ]
+      ],
+      "width_m": 300,
+      "length_m": 604.1522986797286,
+      "max_sampled_ground_grade": 2.741888277111938,
+      "requires_grade_review": true,
+      "profile": [
+        {
+          "x": 2500,
+          "z": 1500,
+          "height_m": 91.80025039294196,
+          "dominant": "T04",
+          "water": null
+        },
+        {
+          "x": 2490,
+          "z": 1522,
+          "height_m": 95.5154247988431,
+          "dominant": "T04",
+          "water": null
+        },
+        {
+          "x": 2480,
+          "z": 1544,
+          "height_m": 99.28891564119465,
+          "dominant": "T04",
+          "water": null
+        },
+        {
+          "x": 2470,
+          "z": 1566,
+          "height_m": 103.07973680106363,
+          "dominant": "T04",
+          "water": null
+        },
+        {
+          "x": 2460,
+          "z": 1588,
+          "height_m": 106.84509004809335,
+          "dominant": "T04",
+          "water": null
+        },
+        {
+          "x": 2450,
+          "z": 1610,
+          "height_m": 110.54635285916241,
+          "dominant": "T04",
+          "water": null
+        },
+        {
+          "x": 2440,
+          "z": 1632,
+          "height_m": 114.15043453238835,
+          "dominant": "T04",
+          "water": null
+        },
+        {
+          "x": 2430,
+          "z": 1654,
+          "height_m": 117.63038686498662,
+          "dominant": "T04",
+          "water": null
+        },
+        {
+          "x": 2420,
+          "z": 1676,
+          "height_m": 120.9653234539564,
+          "dominant": "T04",
+          "water": null
+        },
+        {
+          "x": 2410,
+          "z": 1698,
+          "height_m": 124.13976268404144,
+          "dominant": "T04",
+          "water": null
+        },
+        {
+          "x": 2400,
+          "z": 1720,
+          "height_m": 127.14255046314959,
+          "dominant": "T04",
+          "water": null
+        },
+        {
+          "x": 2390,
+          "z": 1742,
+          "height_m": 129.9655318067933,
+          "dominant": "T04",
+          "water": null
+        },
+        {
+          "x": 2380,
+          "z": 1764,
+          "height_m": 129.49174042879457,
+          "dominant": "T04",
+          "water": null
+        },
+        {
+          "x": 2370,
+          "z": 1786,
+          "height_m": 84.1045233828321,
+          "dominant": "T04",
+          "water": null
+        },
+        {
+          "x": 2360,
+          "z": 1808,
+          "height_m": 26.514751506405787,
+          "dominant": "T04",
+          "water": null
+        },
+        {
+          "x": 2350,
+          "z": 1830,
+          "height_m": 8.39400047427081,
+          "dominant": "T04",
+          "water": "WV02"
+        },
+        {
+          "x": 2340,
+          "z": 1852,
+          "height_m": 8.274484230495613,
+          "dominant": "T04",
+          "water": "WV02"
+        },
+        {
+          "x": 2330,
+          "z": 1874,
+          "height_m": 46.23947684648887,
+          "dominant": "T04",
+          "water": null
+        },
+        {
+          "x": 2320,
+          "z": 1896,
+          "height_m": 112.50020106009599,
+          "dominant": "T07",
+          "water": null
+        },
+        {
+          "x": 2310,
+          "z": 1918,
+          "height_m": 144.91447262949842,
+          "dominant": "T07",
+          "water": null
+        },
+        {
+          "x": 2300,
+          "z": 1940,
+          "height_m": 145.48841700827862,
+          "dominant": "T07",
+          "water": null
+        },
+        {
+          "x": 2290,
+          "z": 1962,
+          "height_m": 145.60161750019492,
+          "dominant": "T07",
+          "water": null
+        },
+        {
+          "x": 2280,
+          "z": 1984,
+          "height_m": 145.15441912601722,
+          "dominant": "T07",
+          "water": null
+        },
+        {
+          "x": 2270,
+          "z": 2006,
+          "height_m": 144.0320949829979,
+          "dominant": "T07",
+          "water": null
+        },
+        {
+          "x": 2260,
+          "z": 2028,
+          "height_m": 142.11610908659154,
+          "dominant": "T07",
+          "water": null
+        },
+        {
+          "x": 2250,
+          "z": 2050,
+          "height_m": 139.30440820443417,
+          "dominant": "T07",
+          "water": null
+        }
+      ],
+      "status": "Grade/crossing intervention required; not an approved walking route"
+    },
+    {
+      "id": "TR05",
+      "name": "Coastal dune → rocky headland",
+      "points": [
+        [
+          -2850,
+          2300
+        ],
+        [
+          -3100,
+          1600
+        ]
+      ],
+      "width_m": 250,
+      "length_m": 743.3034373659253,
+      "max_sampled_ground_grade": 0.4630097366163006,
+      "requires_grade_review": true,
+      "profile": [
+        {
+          "x": -2850,
+          "z": 2300,
+          "height_m": 13.361710482597763,
+          "dominant": "T03",
+          "water": null
+        },
+        {
+          "x": -2858.3333333333335,
+          "z": 2276.6666666666665,
+          "height_m": 13.330814959011485,
+          "dominant": "T03",
+          "water": null
+        },
+        {
+          "x": -2866.6666666666665,
+          "z": 2253.3333333333335,
+          "height_m": 13.29409912531701,
+          "dominant": "T03",
+          "water": null
+        },
+        {
+          "x": -2875,
+          "z": 2230,
+          "height_m": 8.978283999891538,
+          "dominant": "T03",
+          "water": null
+        },
+        {
+          "x": -2883.3333333333335,
+          "z": 2206.6666666666665,
+          "height_m": 2.9376674124827056,
+          "dominant": "T03",
+          "water": null
+        },
+        {
+          "x": -2891.6666666666665,
+          "z": 2183.3333333333335,
+          "height_m": -2,
+          "dominant": "T03",
+          "water": "WV01"
+        },
+        {
+          "x": -2900,
+          "z": 2160,
+          "height_m": 2.2795827164498013,
+          "dominant": "T03",
+          "water": null
+        },
+        {
+          "x": -2908.3333333333335,
+          "z": 2136.6666666666665,
+          "height_m": 7.590664321214831,
+          "dominant": "T03",
+          "water": null
+        },
+        {
+          "x": -2916.6666666666665,
+          "z": 2113.3333333333335,
+          "height_m": 13.024814165581057,
+          "dominant": "T03",
+          "water": null
+        },
+        {
+          "x": -2925,
+          "z": 2090,
+          "height_m": 13.405047584319075,
+          "dominant": "T03",
+          "water": null
+        },
+        {
+          "x": -2933.3333333333335,
+          "z": 2066.6666666666665,
+          "height_m": 13.469477246692678,
+          "dominant": "T03",
+          "water": null
+        },
+        {
+          "x": -2941.6666666666665,
+          "z": 2043.3333333333335,
+          "height_m": 13.544721758436902,
+          "dominant": "T03",
+          "water": null
+        },
+        {
+          "x": -2950,
+          "z": 2020,
+          "height_m": 13.627867475873638,
+          "dominant": "T03",
+          "water": null
+        },
+        {
+          "x": -2958.3333333333335,
+          "z": 1996.6666666666665,
+          "height_m": 13.714768366113287,
+          "dominant": "T03",
+          "water": null
+        },
+        {
+          "x": -2966.6666666666665,
+          "z": 1973.3333333333333,
+          "height_m": 13.800048222518186,
+          "dominant": "T03",
+          "water": null
+        },
+        {
+          "x": -2975,
+          "z": 1950,
+          "height_m": 13.877248458598924,
+          "dominant": "T03",
+          "water": null
+        },
+        {
+          "x": -2983.3333333333335,
+          "z": 1926.6666666666667,
+          "height_m": 13.939157192349851,
+          "dominant": "T03",
+          "water": null
+        },
+        {
+          "x": -2991.6666666666665,
+          "z": 1903.3333333333335,
+          "height_m": 13.97833304229897,
+          "dominant": "T03",
+          "water": null
+        },
+        {
+          "x": -3000,
+          "z": 1880,
+          "height_m": 13.98780176215516,
+          "dominant": "T03",
+          "water": null
+        },
+        {
+          "x": -3008.3333333333335,
+          "z": 1856.6666666666667,
+          "height_m": 13.961860433194241,
+          "dominant": "T03",
+          "water": null
+        },
+        {
+          "x": -3016.6666666666665,
+          "z": 1833.3333333333335,
+          "height_m": 13.896882105599344,
+          "dominant": "T03",
+          "water": null
+        },
+        {
+          "x": -3025,
+          "z": 1810,
+          "height_m": 13.79198628639751,
+          "dominant": "T03",
+          "water": null
+        },
+        {
+          "x": -3033.3333333333335,
+          "z": 1786.6666666666667,
+          "height_m": 12.971367098050044,
+          "dominant": "T03",
+          "water": null
+        },
+        {
+          "x": -3041.6666666666665,
+          "z": 1763.3333333333333,
+          "height_m": 7.414796616221287,
+          "dominant": "T03",
+          "water": null
+        },
+        {
+          "x": -3050,
+          "z": 1740,
+          "height_m": 2.3736728618245504,
+          "dominant": "T03",
+          "water": null
+        },
+        {
+          "x": -3058.3333333333335,
+          "z": 1716.6666666666665,
+          "height_m": -4,
+          "dominant": "T03",
+          "water": "C01"
+        },
+        {
+          "x": -3066.6666666666665,
+          "z": 1693.3333333333333,
+          "height_m": -4,
+          "dominant": "T03",
+          "water": "C01"
+        },
+        {
+          "x": -3075,
+          "z": 1670,
+          "height_m": -4,
+          "dominant": "T03",
+          "water": "C01"
+        },
+        {
+          "x": -3083.3333333333335,
+          "z": 1646.6666666666665,
+          "height_m": -4,
+          "dominant": "T03",
+          "water": "C01"
+        },
+        {
+          "x": -3091.6666666666665,
+          "z": 1623.3333333333335,
+          "height_m": 7.471890958692752,
+          "dominant": "T03",
+          "water": null
+        },
+        {
+          "x": -3100,
+          "z": 1600,
+          "height_m": 8,
+          "dominant": "T03",
+          "water": null
+        }
+      ],
+      "status": "Grade/crossing intervention required; not an approved walking route"
+    },
+    {
+      "id": "TR06",
+      "name": "Northeast mistwood → keep saddle",
+      "points": [
+        [
+          3450,
+          -2900
+        ],
+        [
+          2450,
+          -2100
+        ]
+      ],
+      "width_m": 350,
+      "length_m": 1280.6248474865697,
+      "max_sampled_ground_grade": 1.3452203123715436,
+      "requires_grade_review": true,
+      "profile": [
+        {
+          "x": 3450,
+          "z": -2900,
+          "height_m": 75.499497926977,
+          "dominant": "T05",
+          "water": null
+        },
+        {
+          "x": 3430.769230769231,
+          "z": -2884.6153846153848,
+          "height_m": 76.34981351192648,
+          "dominant": "T05",
+          "water": null
+        },
+        {
+          "x": 3411.5384615384614,
+          "z": -2869.230769230769,
+          "height_m": 77.30553759346192,
+          "dominant": "T05",
+          "water": null
+        },
+        {
+          "x": 3392.3076923076924,
+          "z": -2853.846153846154,
+          "height_m": 78.37223950961692,
+          "dominant": "T05",
+          "water": null
+        },
+        {
+          "x": 3373.076923076923,
+          "z": -2838.4615384615386,
+          "height_m": 79.55568976037544,
+          "dominant": "T05",
+          "water": null
+        },
+        {
+          "x": 3353.846153846154,
+          "z": -2823.076923076923,
+          "height_m": 80.86181050839504,
+          "dominant": "T05",
+          "water": null
+        },
+        {
+          "x": 3334.6153846153848,
+          "z": -2807.6923076923076,
+          "height_m": 82.29660406675609,
+          "dominant": "T05",
+          "water": null
+        },
+        {
+          "x": 3315.3846153846152,
+          "z": -2792.3076923076924,
+          "height_m": 83.86605913572193,
+          "dominant": "T05",
+          "water": null
+        },
+        {
+          "x": 3296.153846153846,
+          "z": -2776.923076923077,
+          "height_m": 85.57603546612772,
+          "dominant": "T05",
+          "water": null
+        },
+        {
+          "x": 3276.923076923077,
+          "z": -2761.5384615384614,
+          "height_m": 87.43212859410039,
+          "dominant": "T05",
+          "water": null
+        },
+        {
+          "x": 3257.6923076923076,
+          "z": -2746.153846153846,
+          "height_m": 89.43951726665395,
+          "dominant": "T05",
+          "water": null
+        },
+        {
+          "x": 3238.4615384615386,
+          "z": -2730.769230769231,
+          "height_m": 91.60279711269433,
+          "dominant": "T05",
+          "water": null
+        },
+        {
+          "x": 3219.230769230769,
+          "z": -2715.3846153846152,
+          "height_m": 93.92580496014708,
+          "dominant": "T05",
+          "water": null
+        },
+        {
+          "x": 3200,
+          "z": -2700,
+          "height_m": 96.41143890985819,
+          "dominant": "T05",
+          "water": null
+        },
+        {
+          "x": 3180.769230769231,
+          "z": -2684.6153846153848,
+          "height_m": 99.06147980766389,
+          "dominant": "T05",
+          "water": null
+        },
+        {
+          "x": 3161.5384615384614,
+          "z": -2669.230769230769,
+          "height_m": 101.8764200719469,
+          "dominant": "T05",
+          "water": null
+        },
+        {
+          "x": 3142.3076923076924,
+          "z": -2653.846153846154,
+          "height_m": 104.85530590932872,
+          "dominant": "T05",
+          "water": null
+        },
+        {
+          "x": 3123.076923076923,
+          "z": -2638.4615384615386,
+          "height_m": 107.99559877197386,
+          "dominant": "T05",
+          "water": null
+        },
+        {
+          "x": 3103.846153846154,
+          "z": -2623.076923076923,
+          "height_m": 111.29306147556333,
+          "dominant": "T05",
+          "water": null
+        },
+        {
+          "x": 3084.6153846153848,
+          "z": -2607.6923076923076,
+          "height_m": 114.74167372029925,
+          "dominant": "T05",
+          "water": null
+        },
+        {
+          "x": 3065.3846153846152,
+          "z": -2592.3076923076924,
+          "height_m": 118.33358086460623,
+          "dominant": "T06",
+          "water": null
+        },
+        {
+          "x": 3046.153846153846,
+          "z": -2576.923076923077,
+          "height_m": 122.0590787308783,
+          "dominant": "T06",
+          "water": null
+        },
+        {
+          "x": 3026.923076923077,
+          "z": -2561.5384615384614,
+          "height_m": 125.90663602310669,
+          "dominant": "T06",
+          "water": null
+        },
+        {
+          "x": 3007.6923076923076,
+          "z": -2546.153846153846,
+          "height_m": 129.86295466323753,
+          "dominant": "T06",
+          "water": null
+        },
+        {
+          "x": 2988.4615384615386,
+          "z": -2530.769230769231,
+          "height_m": 133.91306706647686,
+          "dominant": "T06",
+          "water": null
+        },
+        {
+          "x": 2969.230769230769,
+          "z": -2515.3846153846152,
+          "height_m": 138.0404681358712,
+          "dominant": "T06",
+          "water": null
+        },
+        {
+          "x": 2950,
+          "z": -2500,
+          "height_m": 142.22727862078324,
+          "dominant": "T06",
+          "water": null
+        },
+        {
+          "x": 2930.7692307692305,
+          "z": -2484.6153846153848,
+          "height_m": 146.45443550350208,
+          "dominant": "T06",
+          "water": null
+        },
+        {
+          "x": 2911.5384615384614,
+          "z": -2469.230769230769,
+          "height_m": 150.70190429513178,
+          "dominant": "T06",
+          "water": null
+        },
+        {
+          "x": 2892.3076923076924,
+          "z": -2453.846153846154,
+          "height_m": 154.94890756665683,
+          "dominant": "T06",
+          "water": null
+        },
+        {
+          "x": 2873.076923076923,
+          "z": -2438.4615384615386,
+          "height_m": 159.17416373131672,
+          "dominant": "T06",
+          "water": null
+        },
+        {
+          "x": 2853.846153846154,
+          "z": -2423.076923076923,
+          "height_m": 163.35613003429194,
+          "dominant": "T06",
+          "water": null
+        },
+        {
+          "x": 2834.6153846153848,
+          "z": -2407.6923076923076,
+          "height_m": 167.4732438861143,
+          "dominant": "T06",
+          "water": null
+        },
+        {
+          "x": 2815.3846153846152,
+          "z": -2392.3076923076924,
+          "height_m": 171.50415707592822,
+          "dominant": "T06",
+          "water": null
+        },
+        {
+          "x": 2796.153846153846,
+          "z": -2376.923076923077,
+          "height_m": 175.4279579881915,
+          "dominant": "T06",
+          "water": null
+        },
+        {
+          "x": 2776.923076923077,
+          "z": -2361.5384615384614,
+          "height_m": 179.22437768210776,
+          "dominant": "T06",
+          "water": null
+        },
+        {
+          "x": 2757.6923076923076,
+          "z": -2346.153846153846,
+          "height_m": 182.87397653232094,
+          "dominant": "T06",
+          "water": null
+        },
+        {
+          "x": 2738.4615384615386,
+          "z": -2330.7692307692305,
+          "height_m": 186.35830902519618,
+          "dominant": "T06",
+          "water": null
+        },
+        {
+          "x": 2719.2307692307695,
+          "z": -2315.3846153846152,
+          "height_m": 189.66006521095278,
+          "dominant": "T06",
+          "water": null
+        },
+        {
+          "x": 2700,
+          "z": -2300,
+          "height_m": 192.76318818482957,
+          "dominant": "T06",
+          "water": null
+        },
+        {
+          "x": 2680.7692307692305,
+          "z": -2284.6153846153848,
+          "height_m": 195.65296777261926,
+          "dominant": "T06",
+          "water": null
+        },
+        {
+          "x": 2661.5384615384614,
+          "z": -2269.2307692307695,
+          "height_m": 198.31611129675395,
+          "dominant": "T06",
+          "water": null
+        },
+        {
+          "x": 2642.3076923076924,
+          "z": -2253.846153846154,
+          "height_m": 200.74079287639188,
+          "dominant": "T06",
+          "water": null
+        },
+        {
+          "x": 2623.076923076923,
+          "z": -2238.4615384615386,
+          "height_m": 202.91668315518854,
+          "dominant": "T06",
+          "water": null
+        },
+        {
+          "x": 2603.846153846154,
+          "z": -2223.076923076923,
+          "height_m": 204.83496164888055,
+          "dominant": "T06",
+          "water": null
+        },
+        {
+          "x": 2584.6153846153848,
+          "z": -2207.6923076923076,
+          "height_m": 206.48831406479604,
+          "dominant": "T06",
+          "water": null
+        },
+        {
+          "x": 2565.3846153846152,
+          "z": -2192.3076923076924,
+          "height_m": 207.87091697729988,
+          "dominant": "T06",
+          "water": null
+        },
+        {
+          "x": 2546.153846153846,
+          "z": -2176.923076923077,
+          "height_m": 208.97841216296948,
+          "dominant": "T06",
+          "water": null
+        },
+        {
+          "x": 2526.923076923077,
+          "z": -2161.5384615384614,
+          "height_m": 209.80787272704708,
+          "dominant": "T06",
+          "water": null
+        },
+        {
+          "x": 2507.6923076923076,
+          "z": -2146.153846153846,
+          "height_m": 210.35776291088627,
+          "dominant": "T06",
+          "water": null
+        },
+        {
+          "x": 2488.4615384615386,
+          "z": -2130.7692307692305,
+          "height_m": 210.62789318199876,
+          "dominant": "T06",
+          "water": null
+        },
+        {
+          "x": 2469.2307692307695,
+          "z": -2115.3846153846152,
+          "height_m": 194.60897169681732,
+          "dominant": "T06",
+          "water": null
+        },
+        {
+          "x": 2450,
+          "z": -2100,
+          "height_m": 161.47969174745862,
+          "dominant": "T06",
+          "water": null
+        }
+      ],
+      "status": "Grade/crossing intervention required; not an approved walking route"
+    }
+  ],
+  "FC05": {
+    "habitat_zones": [
+      {
+        "id": "H01",
+        "name": "Cottage yard",
+        "rule": "Firm compacted soil around the cottage; keep entrance and sightline clear."
+      },
+      {
+        "id": "H02",
+        "name": "Trail and short verge",
+        "rule": "3 m trail corridor plus a short verge; no blocking trunk, rock or shrub in the walking envelope."
+      },
+      {
+        "id": "H03",
+        "name": "Shaded moss hollow",
+        "rule": "Moss/fern ground with sparse bramble outside the trail; fallen timber and rounded stones."
+      },
+      {
+        "id": "H04",
+        "name": "Sunny clearing meadow",
+        "rule": "Short grass, small flowers and low shrubs; retain discovery views across the clearing."
+      },
+      {
+        "id": "H05",
+        "name": "Pond and rill margin",
+        "rule": "Wet soil, reeds/rushes and dragonfly/frog observation points; no animal behavior implied."
+      },
+      {
+        "id": "H06",
+        "name": "Outer canopy belt",
+        "rule": "Broadleaf canopy with birch pockets, varied spacing and crown bases above 2.6 m."
+      }
+    ],
+    "placement_seed": 5052026,
+    "counts": {
+      "broadleaf": 15,
+      "birch": 9,
+      "sapling": 10,
+      "shrub": 16,
+      "rock": 10,
+      "bluebell": 10,
+      "strawberry": 8,
+      "deadwood": 4,
+      "reed": 12
+    },
+    "placement_envelopes": [
+      {
+        "id": "FC05-BROADLEAF-1",
+        "kind": "broadleaf",
+        "x": 43.93331459257752,
+        "z": -26.478273710235953,
+        "y": 49.021237775298324,
+        "radius": 0.3,
+        "height": 13.232213774928823,
+        "crown_radius": 3.5079349137842657,
+        "crown_base_m": 3.9696641324786466,
+        "block": true,
+        "zone": "H04",
+        "reference": "GEN-09 (canopy family audit pending)",
+        "status": "Placement envelope; reference-to-model identity and final shape pending"
+      },
+      {
+        "id": "FC05-BROADLEAF-2",
+        "kind": "broadleaf",
+        "x": 12.625480727292597,
+        "z": 61.35711290873587,
+        "y": 48.23399738288907,
+        "radius": 0.3,
+        "height": 16.693354634800926,
+        "crown_radius": 3.64507292509079,
+        "crown_base_m": 5.008006390440277,
+        "block": true,
+        "zone": "H06",
+        "reference": "GEN-09 (canopy family audit pending)",
+        "status": "Placement envelope; reference-to-model identity and final shape pending"
+      },
+      {
+        "id": "FC05-BROADLEAF-3",
+        "kind": "broadleaf",
+        "x": -66.55912371817976,
+        "z": -12.357486970722675,
+        "y": 48.62143696078462,
+        "radius": 0.3,
+        "height": 16.180341929895803,
+        "crown_radius": 4.352735909353942,
+        "crown_base_m": 4.854102578968741,
+        "block": true,
+        "zone": "H06",
+        "reference": "GEN-09 (canopy family audit pending)",
+        "status": "Placement envelope; reference-to-model identity and final shape pending"
+      },
+      {
+        "id": "FC05-BROADLEAF-4",
+        "kind": "broadleaf",
+        "x": 23.228385807015,
+        "z": 41.93493784405291,
+        "y": 48.3963586093017,
+        "radius": 0.3,
+        "height": 15.409442441770807,
+        "crown_radius": 3.9410039566457273,
+        "crown_base_m": 4.622832732531242,
+        "block": true,
+        "zone": "H04",
+        "reference": "GEN-09 (canopy family audit pending)",
+        "status": "Placement envelope; reference-to-model identity and final shape pending"
+      },
+      {
+        "id": "FC05-BROADLEAF-5",
+        "kind": "broadleaf",
+        "x": 4.1430890979245305,
+        "z": 48.43023902736604,
+        "y": 48.31639290699524,
+        "radius": 0.3,
+        "height": 13.666662237839773,
+        "crown_radius": 3.5996984316036107,
+        "crown_base_m": 4.099998671351932,
+        "block": true,
+        "zone": "H02",
+        "reference": "GEN-09 (canopy family audit pending)",
+        "status": "Placement envelope; reference-to-model identity and final shape pending"
+      },
+      {
+        "id": "FC05-BROADLEAF-6",
+        "kind": "broadleaf",
+        "x": 34.59383219946176,
+        "z": 51.59132528118789,
+        "y": 48.323151109226394,
+        "radius": 0.3,
+        "height": 16.777256624074653,
+        "crown_radius": 4.193507763184607,
+        "crown_base_m": 5.0331769872223955,
+        "block": true,
+        "zone": "H06",
+        "reference": "GEN-09 (canopy family audit pending)",
+        "status": "Placement envelope; reference-to-model identity and final shape pending"
+      },
+      {
+        "id": "FC05-BROADLEAF-7",
+        "kind": "broadleaf",
+        "x": 49.50497564394027,
+        "z": -17.366754123941064,
+        "y": 48.80537382813155,
+        "radius": 0.3,
+        "height": 13.665762971388176,
+        "crown_radius": 3.081281135044992,
+        "crown_base_m": 4.0997288914164525,
+        "block": true,
+        "zone": "H04",
+        "reference": "GEN-09 (canopy family audit pending)",
+        "status": "Placement envelope; reference-to-model identity and final shape pending"
+      },
+      {
+        "id": "FC05-BROADLEAF-8",
+        "kind": "broadleaf",
+        "x": -48.81940727587789,
+        "z": -50.8463644515723,
+        "y": 48.90631002333702,
+        "radius": 0.3,
+        "height": 15.509312957758084,
+        "crown_radius": 3.0927785988897085,
+        "crown_base_m": 4.652793887327425,
+        "block": true,
+        "zone": "H06",
+        "reference": "GEN-09 (canopy family audit pending)",
+        "status": "Placement envelope; reference-to-model identity and final shape pending"
+      },
+      {
+        "id": "FC05-BROADLEAF-9",
+        "kind": "broadleaf",
+        "x": -51.03597977664322,
+        "z": -31.188200851902366,
+        "y": 48.71107251790756,
+        "radius": 0.3,
+        "height": 15.679517979035154,
+        "crown_radius": 3.2364301390945913,
+        "crown_base_m": 4.703855393710546,
+        "block": true,
+        "zone": "H02",
+        "reference": "GEN-09 (canopy family audit pending)",
+        "status": "Placement envelope; reference-to-model identity and final shape pending"
+      },
+      {
+        "id": "FC05-BROADLEAF-10",
+        "kind": "broadleaf",
+        "x": 7.258039931766689,
+        "z": 61.96694014593959,
+        "y": 48.228941072151486,
+        "radius": 0.3,
+        "height": 14.289140581851825,
+        "crown_radius": 3.8140570965595546,
+        "crown_base_m": 4.286742174555547,
+        "block": true,
+        "zone": "H06",
+        "reference": "GEN-09 (canopy family audit pending)",
+        "status": "Placement envelope; reference-to-model identity and final shape pending"
+      },
+      {
+        "id": "FC05-BROADLEAF-11",
+        "kind": "broadleaf",
+        "x": 46.31970483344048,
+        "z": -40.26260128244758,
+        "y": 48.90321298197189,
+        "radius": 0.3,
+        "height": 16.880351790925488,
+        "crown_radius": 4.048636431340128,
+        "crown_base_m": 5.064105537277646,
+        "block": true,
+        "zone": "H06",
+        "reference": "GEN-09 (canopy family audit pending)",
+        "status": "Placement envelope; reference-to-model identity and final shape pending"
+      },
+      {
+        "id": "FC05-BROADLEAF-12",
+        "kind": "broadleaf",
+        "x": 38.63715888466686,
+        "z": 49.942016303539276,
+        "y": 48.33833945092088,
+        "radius": 0.3,
+        "height": 14.776327318279073,
+        "crown_radius": 3.6747435345314443,
+        "crown_base_m": 4.432898195483721,
+        "block": true,
+        "zone": "H02",
+        "reference": "GEN-09 (canopy family audit pending)",
+        "status": "Placement envelope; reference-to-model identity and final shape pending"
+      },
+      {
+        "id": "FC05-BROADLEAF-13",
+        "kind": "broadleaf",
+        "x": -48.76888856757432,
+        "z": 38.806574549525976,
+        "y": 48.709109432128066,
+        "radius": 0.3,
+        "height": 12.591127354418859,
+        "crown_radius": 3.683187096286565,
+        "crown_base_m": 3.7773382063256573,
+        "block": true,
+        "zone": "H06",
+        "reference": "GEN-09 (canopy family audit pending)",
+        "status": "Placement envelope; reference-to-model identity and final shape pending"
+      },
+      {
+        "id": "FC05-BROADLEAF-14",
+        "kind": "broadleaf",
+        "x": -56.805844330228865,
+        "z": 25.015741996467113,
+        "y": 48.527880726121445,
+        "radius": 0.3,
+        "height": 14.535578057868406,
+        "crown_radius": 4.189191716443748,
+        "crown_base_m": 4.3606734173605215,
+        "block": true,
+        "zone": "H06",
+        "reference": "GEN-09 (canopy family audit pending)",
+        "status": "Placement envelope; reference-to-model identity and final shape pending"
+      },
+      {
+        "id": "FC05-BROADLEAF-15",
+        "kind": "broadleaf",
+        "x": -51.14737981464714,
+        "z": 40.66354067064822,
+        "y": 48.551652330429185,
+        "radius": 0.3,
+        "height": 14.253011675784364,
+        "crown_radius": 3.1231929533183576,
+        "crown_base_m": 4.275903502735309,
+        "block": true,
+        "zone": "H06",
+        "reference": "GEN-09 (canopy family audit pending)",
+        "status": "Placement envelope; reference-to-model identity and final shape pending"
+      },
+      {
+        "id": "FC05-BIRCH-1",
+        "kind": "birch",
+        "x": -61.88825990539044,
+        "z": -2.769503826275468,
+        "y": 48.54271263951188,
+        "radius": 0.2,
+        "height": 14.096181608038023,
+        "crown_radius": 2.716862683836371,
+        "crown_base_m": 4.228854482411407,
+        "block": true,
+        "zone": "H06",
+        "reference": "GEN-09 (canopy family audit pending)",
+        "status": "Placement envelope; reference-to-model identity and final shape pending"
+      },
+      {
+        "id": "FC05-BIRCH-2",
+        "kind": "birch",
+        "x": -12.246280587278306,
+        "z": -67.14502322487533,
+        "y": 49.00894968861381,
+        "radius": 0.2,
+        "height": 11.902361806714907,
+        "crown_radius": 3.093999159149826,
+        "crown_base_m": 3.570708542014472,
+        "block": true,
+        "zone": "H06",
+        "reference": "GEN-09 (canopy family audit pending)",
+        "status": "Placement envelope; reference-to-model identity and final shape pending"
+      },
+      {
+        "id": "FC05-BIRCH-3",
+        "kind": "birch",
+        "x": 49.37817750964314,
+        "z": 43.96875494159758,
+        "y": 48.386306752213756,
+        "radius": 0.2,
+        "height": 13.388167103985325,
+        "crown_radius": 2.205238186568022,
+        "crown_base_m": 4.016450131195597,
+        "block": true,
+        "zone": "H02",
+        "reference": "GEN-09 (canopy family audit pending)",
+        "status": "Placement envelope; reference-to-model identity and final shape pending"
+      },
+      {
+        "id": "FC05-BIRCH-4",
+        "kind": "birch",
+        "x": -53.673151466064155,
+        "z": 30.605465760454535,
+        "y": 48.68797062167713,
+        "radius": 0.2,
+        "height": 11.640872742282227,
+        "crown_radius": 3.0787036937661467,
+        "crown_base_m": 3.492261822684668,
+        "block": true,
+        "zone": "H06",
+        "reference": "GEN-09 (canopy family audit pending)",
+        "status": "Placement envelope; reference-to-model identity and final shape pending"
+      },
+      {
+        "id": "FC05-BIRCH-5",
+        "kind": "birch",
+        "x": 22.65267593320459,
+        "z": 58.45723357051611,
+        "y": 48.25956591879847,
+        "radius": 0.2,
+        "height": 14.634231411619112,
+        "crown_radius": 2.239737729961053,
+        "crown_base_m": 4.390269423485734,
+        "block": true,
+        "zone": "H06",
+        "reference": "GEN-09 (canopy family audit pending)",
+        "status": "Placement envelope; reference-to-model identity and final shape pending"
+      },
+      {
+        "id": "FC05-BIRCH-6",
+        "kind": "birch",
+        "x": -61.067284983582795,
+        "z": -9.487781953066587,
+        "y": 48.58192101125774,
+        "radius": 0.2,
+        "height": 10.45693171559833,
+        "crown_radius": 2.2799643113743517,
+        "crown_base_m": 3.137079514679499,
+        "block": true,
+        "zone": "H06",
+        "reference": "GEN-09 (canopy family audit pending)",
+        "status": "Placement envelope; reference-to-model identity and final shape pending"
+      },
+      {
+        "id": "FC05-BIRCH-7",
+        "kind": "birch",
+        "x": -68.77864500973374,
+        "z": -1.0353108495473862,
+        "y": 48.56056396015984,
+        "radius": 0.2,
+        "height": 12.223488333402202,
+        "crown_radius": 2.7577293094713244,
+        "crown_base_m": 3.6670465000206605,
+        "block": true,
+        "zone": "H06",
+        "reference": "GEN-09 (canopy family audit pending)",
+        "status": "Placement envelope; reference-to-model identity and final shape pending"
+      },
+      {
+        "id": "FC05-BIRCH-8",
+        "kind": "birch",
+        "x": -55.79638846684247,
+        "z": 9.536745231598616,
+        "y": 48.45722340756876,
+        "radius": 0.2,
+        "height": 12.639505102997646,
+        "crown_radius": 2.8141432636883112,
+        "crown_base_m": 3.7918515308992937,
+        "block": true,
+        "zone": "H06",
+        "reference": "GEN-09 (canopy family audit pending)",
+        "status": "Placement envelope; reference-to-model identity and final shape pending"
+      },
+      {
+        "id": "FC05-BIRCH-9",
+        "kind": "birch",
+        "x": -50.018583782948554,
+        "z": 9.878203757107258,
+        "y": 48.434961544047304,
+        "radius": 0.2,
+        "height": 11.43422554130666,
+        "crown_radius": 2.280906999716535,
+        "crown_base_m": 3.430267662391998,
+        "block": true,
+        "zone": "H02",
+        "reference": "GEN-09 (canopy family audit pending)",
+        "status": "Placement envelope; reference-to-model identity and final shape pending"
+      },
+      {
+        "id": "FC05-SAPLING-1",
+        "kind": "sapling",
+        "x": -43.146035955287516,
+        "z": -2.4489587545394897,
+        "y": 48.49664365751707,
+        "radius": 0.14,
+        "height": 3.8926280323648825,
+        "crown_radius": 0.8412464307621121,
+        "crown_base_m": 1.8,
+        "block": true,
+        "zone": "H03",
+        "reference": "GEN-09",
+        "status": "Placement envelope; reference-to-model identity and final shape pending"
+      },
+      {
+        "id": "FC05-SAPLING-2",
+        "kind": "sapling",
+        "x": 38.35702284704894,
+        "z": -43.49599966779351,
+        "y": 48.9167135024518,
+        "radius": 0.14,
+        "height": 3.4021694521652535,
+        "crown_radius": 0.9563912874087692,
+        "crown_base_m": 1.8,
+        "block": true,
+        "zone": "H06",
+        "reference": "GEN-09",
+        "status": "Placement envelope; reference-to-model identity and final shape pending"
+      },
+      {
+        "id": "FC05-SAPLING-3",
+        "kind": "sapling",
+        "x": 0.7354447012767196,
+        "z": 39.14090882986784,
+        "y": 48.367124461938396,
+        "radius": 0.14,
+        "height": 2.760566628188826,
+        "crown_radius": 0.9722367906942964,
+        "crown_base_m": 1.8,
+        "block": true,
+        "zone": "H04",
+        "reference": "GEN-09",
+        "status": "Placement envelope; reference-to-model identity and final shape pending"
+      },
+      {
+        "id": "FC05-SAPLING-4",
+        "kind": "sapling",
+        "x": 32.7085837116465,
+        "z": -31.647855415940285,
+        "y": 49.27541934233805,
+        "radius": 0.14,
+        "height": 3.5340710520977154,
+        "crown_radius": 0.9592253090813756,
+        "crown_base_m": 1.8,
+        "block": true,
+        "zone": "H04",
+        "reference": "GEN-09",
+        "status": "Placement envelope; reference-to-model identity and final shape pending"
+      },
+      {
+        "id": "FC05-SAPLING-5",
+        "kind": "sapling",
+        "x": 35.70905304979533,
+        "z": -35.422773230820894,
+        "y": 49.023839090795946,
+        "radius": 0.14,
+        "height": 3.90825875767041,
+        "crown_radius": 0.9033902129158378,
+        "crown_base_m": 1.8,
+        "block": true,
+        "zone": "H04",
+        "reference": "GEN-09",
+        "status": "Placement envelope; reference-to-model identity and final shape pending"
+      },
+      {
+        "id": "FC05-SAPLING-6",
+        "kind": "sapling",
+        "x": -3.9966766024008393,
+        "z": -15.072095058858395,
+        "y": 48.6727607905503,
+        "radius": 0.14,
+        "height": 3.400232177809812,
+        "crown_radius": 1.0519655564799906,
+        "crown_base_m": 1.8,
+        "block": true,
+        "zone": "H03",
+        "reference": "GEN-09",
+        "status": "Placement envelope; reference-to-model identity and final shape pending"
+      },
+      {
+        "id": "FC05-SAPLING-7",
+        "kind": "sapling",
+        "x": 56.81446585338563,
+        "z": -28.17587709054351,
+        "y": 48.838887534156285,
+        "radius": 0.14,
+        "height": 3.477521920693107,
+        "crown_radius": 0.7077716408297419,
+        "crown_base_m": 1.8,
+        "block": true,
+        "zone": "H02",
+        "reference": "GEN-09",
+        "status": "Placement envelope; reference-to-model identity and final shape pending"
+      },
+      {
+        "id": "FC05-SAPLING-8",
+        "kind": "sapling",
+        "x": -5.292239622212946,
+        "z": 47.89235219359398,
+        "y": 48.30344638980389,
+        "radius": 0.14,
+        "height": 2.720548838027753,
+        "crown_radius": 0.9423253612592817,
+        "crown_base_m": 1.8,
+        "block": true,
+        "zone": "H04",
+        "reference": "GEN-09",
+        "status": "Placement envelope; reference-to-model identity and final shape pending"
+      },
+      {
+        "id": "FC05-SAPLING-9",
+        "kind": "sapling",
+        "x": 54.250979968346655,
+        "z": 45.48132841475308,
+        "y": 48.4057917147502,
+        "radius": 0.14,
+        "height": 3.0488830328686163,
+        "crown_radius": 0.9358366914093494,
+        "crown_base_m": 1.8,
+        "block": true,
+        "zone": "H06",
+        "reference": "GEN-09",
+        "status": "Placement envelope; reference-to-model identity and final shape pending"
+      },
+      {
+        "id": "FC05-SAPLING-10",
+        "kind": "sapling",
+        "x": -12.881632219068706,
+        "z": -65.81992913968861,
+        "y": 48.9993354051166,
+        "radius": 0.14,
+        "height": 2.558910100138746,
+        "crown_radius": 1.0169427748769522,
+        "crown_base_m": 1.8,
+        "block": true,
+        "zone": "H06",
+        "reference": "GEN-09",
+        "status": "Placement envelope; reference-to-model identity and final shape pending"
+      },
+      {
+        "id": "FC05-SHRUB-1",
+        "kind": "shrub",
+        "x": -58.63554548006505,
+        "z": 1.7093109246343374,
+        "y": 48.504575161663794,
+        "radius": 0.45,
+        "height": 0.758177878218703,
+        "crown_radius": 0.45,
+        "crown_base_m": 3,
+        "block": true,
+        "zone": "H06",
+        "reference": "F02-NATURE-001-A09",
+        "status": "Placement envelope; reference-to-model identity and final shape pending"
+      },
+      {
+        "id": "FC05-SHRUB-2",
+        "kind": "shrub",
+        "x": -42.33953636139631,
+        "z": -23.712436999194324,
+        "y": 48.76058550040278,
+        "radius": 0.45,
+        "height": 0.7689716405700893,
+        "crown_radius": 0.45,
+        "crown_base_m": 3,
+        "block": true,
+        "zone": "H03",
+        "reference": "F02-NATURE-001-A09",
+        "status": "Placement envelope; reference-to-model identity and final shape pending"
+      },
+      {
+        "id": "FC05-SHRUB-3",
+        "kind": "shrub",
+        "x": -27.60785084683448,
+        "z": -44.88131096586585,
+        "y": 48.822788185949804,
+        "radius": 0.45,
+        "height": 0.8976729821646586,
+        "crown_radius": 0.45,
+        "crown_base_m": 3,
+        "block": true,
+        "zone": "H03",
+        "reference": "F02-NATURE-001-A09",
+        "status": "Placement envelope; reference-to-model identity and final shape pending"
+      },
+      {
+        "id": "FC05-SHRUB-4",
+        "kind": "shrub",
+        "x": -4.482038915157318,
+        "z": 27.22426396328956,
+        "y": 48.417918907048396,
+        "radius": 0.45,
+        "height": 0.7950493087526411,
+        "crown_radius": 0.45,
+        "crown_base_m": 3,
+        "block": true,
+        "zone": "H04",
+        "reference": "F02-NATURE-001-A09",
+        "status": "Placement envelope; reference-to-model identity and final shape pending"
+      },
+      {
+        "id": "FC05-SHRUB-5",
+        "kind": "shrub",
+        "x": -59.393626055680215,
+        "z": -22.360814912244678,
+        "y": 48.66368112215343,
+        "radius": 0.45,
+        "height": 0.7877308116992936,
+        "crown_radius": 0.45,
+        "crown_base_m": 3,
+        "block": true,
+        "zone": "H06",
+        "reference": "F02-NATURE-001-A09",
+        "status": "Placement envelope; reference-to-model identity and final shape pending"
+      },
+      {
+        "id": "FC05-SHRUB-6",
+        "kind": "shrub",
+        "x": 44.26704998128116,
+        "z": -35.580391776748,
+        "y": 48.89724863463466,
+        "radius": 0.45,
+        "height": 0.8816299815662205,
+        "crown_radius": 0.45,
+        "crown_base_m": 3,
+        "block": true,
+        "zone": "H06",
+        "reference": "F02-NATURE-001-A09",
+        "status": "Placement envelope; reference-to-model identity and final shape pending"
+      },
+      {
+        "id": "FC05-SHRUB-7",
+        "kind": "shrub",
+        "x": 30.747222364880145,
+        "z": 33.35641832090914,
+        "y": 48.4758590907829,
+        "radius": 0.45,
+        "height": 0.8041181303327903,
+        "crown_radius": 0.45,
+        "crown_base_m": 3,
+        "block": true,
+        "zone": "H04",
+        "reference": "F02-NATURE-001-A09",
+        "status": "Placement envelope; reference-to-model identity and final shape pending"
+      },
+      {
+        "id": "FC05-SHRUB-8",
+        "kind": "shrub",
+        "x": -54.297331208363175,
+        "z": 7.819915483705699,
+        "y": 48.45778217605679,
+        "radius": 0.45,
+        "height": 0.7025786387734115,
+        "crown_radius": 0.45,
+        "crown_base_m": 3,
+        "block": true,
+        "zone": "H03",
+        "reference": "F02-NATURE-001-A09",
+        "status": "Placement envelope; reference-to-model identity and final shape pending"
+      },
+      {
+        "id": "FC05-SHRUB-9",
+        "kind": "shrub",
+        "x": -32.88847116287798,
+        "z": -9.412873266264796,
+        "y": 48.76490210450905,
+        "radius": 0.45,
+        "height": 0.8146628288319334,
+        "crown_radius": 0.45,
+        "crown_base_m": 3,
+        "block": true,
+        "zone": "H03",
+        "reference": "F02-NATURE-001-A09",
+        "status": "Placement envelope; reference-to-model identity and final shape pending"
+      },
+      {
+        "id": "FC05-SHRUB-10",
+        "kind": "shrub",
+        "x": -62.541795931756496,
+        "z": -29.8237907839939,
+        "y": 48.72632067542354,
+        "radius": 0.45,
+        "height": 0.8522031187545509,
+        "crown_radius": 0.45,
+        "crown_base_m": 3,
+        "block": true,
+        "zone": "H06",
+        "reference": "F02-NATURE-001-A09",
+        "status": "Placement envelope; reference-to-model identity and final shape pending"
+      },
+      {
+        "id": "FC05-SHRUB-11",
+        "kind": "shrub",
+        "x": -38.70285507757217,
+        "z": 3.201520387083292,
+        "y": 48.458036270520765,
+        "radius": 0.45,
+        "height": 0.6295110557461158,
+        "crown_radius": 0.45,
+        "crown_base_m": 3,
+        "block": true,
+        "zone": "H03",
+        "reference": "F02-NATURE-001-A09",
+        "status": "Placement envelope; reference-to-model identity and final shape pending"
+      },
+      {
+        "id": "FC05-SHRUB-12",
+        "kind": "shrub",
+        "x": 51.746891075745225,
+        "z": 6.917371018789709,
+        "y": 48.6623285665755,
+        "radius": 0.45,
+        "height": 0.7715240724384784,
+        "crown_radius": 0.45,
+        "crown_base_m": 3,
+        "block": true,
+        "zone": "H04",
+        "reference": "F02-NATURE-001-A09",
+        "status": "Placement envelope; reference-to-model identity and final shape pending"
+      },
+      {
+        "id": "FC05-SHRUB-13",
+        "kind": "shrub",
+        "x": 27.859681244008243,
+        "z": -11.027800980955362,
+        "y": 49.438802484580066,
+        "radius": 0.45,
+        "height": 0.6270464817294851,
+        "crown_radius": 0.45,
+        "crown_base_m": 3,
+        "block": true,
+        "zone": "H04",
+        "reference": "F02-NATURE-001-A09",
+        "status": "Placement envelope; reference-to-model identity and final shape pending"
+      },
+      {
+        "id": "FC05-SHRUB-14",
+        "kind": "shrub",
+        "x": -15.950123919174075,
+        "z": -26.967047029174864,
+        "y": 48.98990668230687,
+        "radius": 0.45,
+        "height": 0.8980570262297989,
+        "crown_radius": 0.45,
+        "crown_base_m": 3,
+        "block": true,
+        "zone": "H03",
+        "reference": "F02-NATURE-001-A09",
+        "status": "Placement envelope; reference-to-model identity and final shape pending"
+      },
+      {
+        "id": "FC05-SHRUB-15",
+        "kind": "shrub",
+        "x": 43.12258892226964,
+        "z": -39.62464292533696,
+        "y": 48.90492946995688,
+        "radius": 0.45,
+        "height": 0.8877518993569538,
+        "crown_radius": 0.45,
+        "crown_base_m": 3,
+        "block": true,
+        "zone": "H06",
+        "reference": "F02-NATURE-001-A09",
+        "status": "Placement envelope; reference-to-model identity and final shape pending"
+      },
+      {
+        "id": "FC05-SHRUB-16",
+        "kind": "shrub",
+        "x": 23.845511842519045,
+        "z": -56.35081478860229,
+        "y": 48.9538940168612,
+        "radius": 0.45,
+        "height": 0.8208503956440836,
+        "crown_radius": 0.45,
+        "crown_base_m": 3,
+        "block": true,
+        "zone": "H06",
+        "reference": "F02-NATURE-001-A09",
+        "status": "Placement envelope; reference-to-model identity and final shape pending"
+      },
+      {
+        "id": "FC05-ROCK-1",
+        "kind": "rock",
+        "x": -34.70606526825577,
+        "z": -40.241127237677574,
+        "y": 48.778827839782245,
+        "radius": 0.8,
+        "height": 0.6036711046705023,
+        "crown_radius": 0.8,
+        "crown_base_m": 3,
+        "block": true,
+        "zone": "H03",
+        "reference": "GEN-09 (rock family audit pending)",
+        "status": "Placement envelope; reference-to-model identity and final shape pending"
+      },
+      {
+        "id": "FC05-ROCK-2",
+        "kind": "rock",
+        "x": -27.85015025176108,
+        "z": -18.298296411521733,
+        "y": 49.33201766226135,
+        "radius": 0.8,
+        "height": 0.9560756399296225,
+        "crown_radius": 0.8,
+        "crown_base_m": 3,
+        "block": true,
+        "zone": "H03",
+        "reference": "GEN-09 (rock family audit pending)",
+        "status": "Placement envelope; reference-to-model identity and final shape pending"
+      },
+      {
+        "id": "FC05-ROCK-3",
+        "kind": "rock",
+        "x": -45.350014814175665,
+        "z": -20.359049551188946,
+        "y": 48.62907744855914,
+        "radius": 0.8,
+        "height": 0.7804766170913354,
+        "crown_radius": 0.8,
+        "crown_base_m": 3,
+        "block": true,
+        "zone": "H03",
+        "reference": "GEN-09 (rock family audit pending)",
+        "status": "Placement envelope; reference-to-model identity and final shape pending"
+      },
+      {
+        "id": "FC05-ROCK-4",
+        "kind": "rock",
+        "x": -42.97363042831421,
+        "z": -29.139173510484397,
+        "y": 48.787772147550776,
+        "radius": 0.8,
+        "height": 0.8013098857831211,
+        "crown_radius": 0.8,
+        "crown_base_m": 3,
+        "block": true,
+        "zone": "H03",
+        "reference": "GEN-09 (rock family audit pending)",
+        "status": "Placement envelope; reference-to-model identity and final shape pending"
+      },
+      {
+        "id": "FC05-ROCK-5",
+        "kind": "rock",
+        "x": 39.60007252637297,
+        "z": -16.228522835299373,
+        "y": 49.58582090738906,
+        "radius": 0.8,
+        "height": 0.6053854475496337,
+        "crown_radius": 0.8,
+        "crown_base_m": 3,
+        "block": true,
+        "zone": "H04",
+        "reference": "GEN-09 (rock family audit pending)",
+        "status": "Placement envelope; reference-to-model identity and final shape pending"
+      },
+      {
+        "id": "FC05-ROCK-6",
+        "kind": "rock",
+        "x": 45.46602699905634,
+        "z": -8.35987954866141,
+        "y": 48.85829035613032,
+        "radius": 0.8,
+        "height": 0.572718902816996,
+        "crown_radius": 0.8,
+        "crown_base_m": 3,
+        "block": true,
+        "zone": "H04",
+        "reference": "GEN-09 (rock family audit pending)",
+        "status": "Placement envelope; reference-to-model identity and final shape pending"
+      },
+      {
+        "id": "FC05-ROCK-7",
+        "kind": "rock",
+        "x": 56.16547958459705,
+        "z": -42.0449323952198,
+        "y": 48.90152692672893,
+        "radius": 0.8,
+        "height": 0.4097718147793785,
+        "crown_radius": 0.8,
+        "crown_base_m": 3,
+        "block": true,
+        "zone": "H06",
+        "reference": "GEN-09 (rock family audit pending)",
+        "status": "Placement envelope; reference-to-model identity and final shape pending"
+      },
+      {
+        "id": "FC05-ROCK-8",
+        "kind": "rock",
+        "x": 9.048645189031959,
+        "z": -30.817210380919278,
+        "y": 48.87052187785213,
+        "radius": 0.8,
+        "height": 0.829701082687825,
+        "crown_radius": 0.8,
+        "crown_base_m": 3,
+        "block": true,
+        "zone": "H04",
+        "reference": "GEN-09 (rock family audit pending)",
+        "status": "Placement envelope; reference-to-model identity and final shape pending"
+      },
+      {
+        "id": "FC05-ROCK-9",
+        "kind": "rock",
+        "x": -37.89274560753256,
+        "z": -29.332861937582493,
+        "y": 49.06114052022281,
+        "radius": 0.8,
+        "height": 0.905164308496751,
+        "crown_radius": 0.8,
+        "crown_base_m": 3,
+        "block": true,
+        "zone": "H03",
+        "reference": "GEN-09 (rock family audit pending)",
+        "status": "Placement envelope; reference-to-model identity and final shape pending"
+      },
+      {
+        "id": "FC05-ROCK-10",
+        "kind": "rock",
+        "x": 47.169627053663135,
+        "z": -23.47898517269641,
+        "y": 48.86088118190855,
+        "radius": 0.8,
+        "height": 0.5262746685184538,
+        "crown_radius": 0.8,
+        "crown_base_m": 3,
+        "block": true,
+        "zone": "H04",
+        "reference": "GEN-09 (rock family audit pending)",
+        "status": "Placement envelope; reference-to-model identity and final shape pending"
+      },
+      {
+        "id": "FC05-BLUEBELL-1",
+        "kind": "bluebell",
+        "x": -11.534838457591832,
+        "z": 26.065893154591322,
+        "y": 48.39005108972049,
+        "radius": 0.225,
+        "height": 0.3362707096268423,
+        "crown_radius": 0.225,
+        "crown_base_m": 3,
+        "block": false,
+        "zone": "H04",
+        "reference": "F02-NATURE-001-A10",
+        "status": "Placement envelope; reference-to-model identity and final shape pending"
+      },
+      {
+        "id": "FC05-BLUEBELL-2",
+        "kind": "bluebell",
+        "x": -34.20497211627662,
+        "z": 61.83767085429281,
+        "y": 48.247654562621655,
+        "radius": 0.225,
+        "height": 0.3772802763618529,
+        "crown_radius": 0.225,
+        "crown_base_m": 3,
+        "block": false,
+        "zone": "H06",
+        "reference": "F02-NATURE-001-A10",
+        "status": "Placement envelope; reference-to-model identity and final shape pending"
+      },
+      {
+        "id": "FC05-BLUEBELL-3",
+        "kind": "bluebell",
+        "x": 11.593315158970654,
+        "z": -64.0354981739074,
+        "y": 48.982598103558196,
+        "radius": 0.225,
+        "height": 0.4451267067692243,
+        "crown_radius": 0.225,
+        "crown_base_m": 3,
+        "block": false,
+        "zone": "H06",
+        "reference": "F02-NATURE-001-A10",
+        "status": "Placement envelope; reference-to-model identity and final shape pending"
+      },
+      {
+        "id": "FC05-BLUEBELL-4",
+        "kind": "bluebell",
+        "x": -54.137776996940374,
+        "z": 9.793684021569788,
+        "y": 48.448486402041496,
+        "radius": 0.225,
+        "height": 0.35887019962538036,
+        "crown_radius": 0.225,
+        "crown_base_m": 3,
+        "block": false,
+        "zone": "H06",
+        "reference": "F02-NATURE-001-A10",
+        "status": "Placement envelope; reference-to-model identity and final shape pending"
+      },
+      {
+        "id": "FC05-BLUEBELL-5",
+        "kind": "bluebell",
+        "x": -12.724977317266166,
+        "z": 10.180493732914329,
+        "y": 48.486184074732776,
+        "radius": 0.225,
+        "height": 0.35290745937963947,
+        "crown_radius": 0.225,
+        "crown_base_m": 3,
+        "block": false,
+        "zone": "H02",
+        "reference": "F02-NATURE-001-A10",
+        "status": "Placement envelope; reference-to-model identity and final shape pending"
+      },
+      {
+        "id": "FC05-BLUEBELL-6",
+        "kind": "bluebell",
+        "x": -42.386025972664356,
+        "z": 13.167367060668766,
+        "y": 48.40832001551575,
+        "radius": 0.225,
+        "height": 0.40147090272512287,
+        "crown_radius": 0.225,
+        "crown_base_m": 3,
+        "block": false,
+        "zone": "H02",
+        "reference": "F02-NATURE-001-A10",
+        "status": "Placement envelope; reference-to-model identity and final shape pending"
+      },
+      {
+        "id": "FC05-BLUEBELL-7",
+        "kind": "bluebell",
+        "x": -12.21304899547249,
+        "z": -52.329672649502754,
+        "y": 48.89940367430088,
+        "radius": 0.225,
+        "height": 0.4443027885281481,
+        "crown_radius": 0.225,
+        "crown_base_m": 3,
+        "block": false,
+        "zone": "H03",
+        "reference": "F02-NATURE-001-A10",
+        "status": "Placement envelope; reference-to-model identity and final shape pending"
+      },
+      {
+        "id": "FC05-BLUEBELL-8",
+        "kind": "bluebell",
+        "x": -37.81398915685713,
+        "z": 22.7481985790655,
+        "y": 48.36257032819101,
+        "radius": 0.225,
+        "height": 0.39459571628831325,
+        "crown_radius": 0.225,
+        "crown_base_m": 3,
+        "block": false,
+        "zone": "H02",
+        "reference": "F02-NATURE-001-A10",
+        "status": "Placement envelope; reference-to-model identity and final shape pending"
+      },
+      {
+        "id": "FC05-BLUEBELL-9",
+        "kind": "bluebell",
+        "x": -51.2726661330089,
+        "z": -41.54553043656051,
+        "y": 48.79526955977776,
+        "radius": 0.225,
+        "height": 0.3953567146207206,
+        "crown_radius": 0.225,
+        "crown_base_m": 3,
+        "block": false,
+        "zone": "H02",
+        "reference": "F02-NATURE-001-A10",
+        "status": "Placement envelope; reference-to-model identity and final shape pending"
+      },
+      {
+        "id": "FC05-BLUEBELL-10",
+        "kind": "bluebell",
+        "x": 37.387263951823115,
+        "z": -31.421075430698693,
+        "y": 49.207379467282756,
+        "radius": 0.225,
+        "height": 0.44728739191778005,
+        "crown_radius": 0.225,
+        "crown_base_m": 3,
+        "block": false,
+        "zone": "H04",
+        "reference": "F02-NATURE-001-A10",
+        "status": "Placement envelope; reference-to-model identity and final shape pending"
+      },
+      {
+        "id": "FC05-STRAWBERRY-1",
+        "kind": "strawberry",
+        "x": 52.67932950053364,
+        "z": 33.98639195598662,
+        "y": 48.464183883414016,
+        "radius": 0.2,
+        "height": 0.25941434445558115,
+        "crown_radius": 0.2,
+        "crown_base_m": 3,
+        "block": false,
+        "zone": "H02",
+        "reference": "F02-NATURE-001-A11",
+        "status": "Placement envelope; reference-to-model identity and final shape pending"
+      },
+      {
+        "id": "FC05-STRAWBERRY-2",
+        "kind": "strawberry",
+        "x": 5.129690757021308,
+        "z": -68.44315290916711,
+        "y": 49.007240246264395,
+        "radius": 0.2,
+        "height": 0.1970929122995585,
+        "crown_radius": 0.2,
+        "crown_base_m": 3,
+        "block": false,
+        "zone": "H06",
+        "reference": "F02-NATURE-001-A11",
+        "status": "Placement envelope; reference-to-model identity and final shape pending"
+      },
+      {
+        "id": "FC05-STRAWBERRY-3",
+        "kind": "strawberry",
+        "x": -9.094755998812616,
+        "z": 64.32059262879193,
+        "y": 48.21566524939897,
+        "radius": 0.2,
+        "height": 0.16874459580285475,
+        "crown_radius": 0.2,
+        "crown_base_m": 3,
+        "block": false,
+        "zone": "H06",
+        "reference": "F02-NATURE-001-A11",
+        "status": "Placement envelope; reference-to-model identity and final shape pending"
+      },
+      {
+        "id": "FC05-STRAWBERRY-4",
+        "kind": "strawberry",
+        "x": -18.034775452688336,
+        "z": 58.43913014512509,
+        "y": 48.24067944664906,
+        "radius": 0.2,
+        "height": 0.2530224970076233,
+        "crown_radius": 0.2,
+        "crown_base_m": 3,
+        "block": false,
+        "zone": "H06",
+        "reference": "F02-NATURE-001-A11",
+        "status": "Placement envelope; reference-to-model identity and final shape pending"
+      },
+      {
+        "id": "FC05-STRAWBERRY-5",
+        "kind": "strawberry",
+        "x": -44.190415549091995,
+        "z": -18.3923361543566,
+        "y": 48.624590255258205,
+        "radius": 0.2,
+        "height": 0.25683448476484044,
+        "crown_radius": 0.2,
+        "crown_base_m": 3,
+        "block": false,
+        "zone": "H03",
+        "reference": "F02-NATURE-001-A11",
+        "status": "Placement envelope; reference-to-model identity and final shape pending"
+      },
+      {
+        "id": "FC05-STRAWBERRY-6",
+        "kind": "strawberry",
+        "x": -13.5690201446414,
+        "z": -20.206743027083576,
+        "y": 48.79897273815475,
+        "radius": 0.2,
+        "height": 0.20797752847429363,
+        "crown_radius": 0.2,
+        "crown_base_m": 3,
+        "block": false,
+        "zone": "H03",
+        "reference": "F02-NATURE-001-A11",
+        "status": "Placement envelope; reference-to-model identity and final shape pending"
+      },
+      {
+        "id": "FC05-STRAWBERRY-7",
+        "kind": "strawberry",
+        "x": -51.983679817058146,
+        "z": 18.402027487754822,
+        "y": 48.41186244791698,
+        "radius": 0.2,
+        "height": 0.297700254956726,
+        "crown_radius": 0.2,
+        "crown_base_m": 3,
+        "block": false,
+        "zone": "H06",
+        "reference": "F02-NATURE-001-A11",
+        "status": "Placement envelope; reference-to-model identity and final shape pending"
+      },
+      {
+        "id": "FC05-STRAWBERRY-8",
+        "kind": "strawberry",
+        "x": -21.194095769897103,
+        "z": -29.211871777661145,
+        "y": 49.28177668996175,
+        "radius": 0.2,
+        "height": 0.1844772908370942,
+        "crown_radius": 0.2,
+        "crown_base_m": 3,
+        "block": false,
+        "zone": "H03",
+        "reference": "F02-NATURE-001-A11",
+        "status": "Placement envelope; reference-to-model identity and final shape pending"
+      },
+      {
+        "id": "FC05-DEADWOOD-1",
+        "kind": "deadwood",
+        "x": 61.614939947612584,
+        "z": -19.034183965995908,
+        "y": 48.78198587406466,
+        "radius": 1.5,
+        "height": 0.4228394823498093,
+        "crown_radius": 1.5,
+        "crown_base_m": 3,
+        "block": true,
+        "zone": "H06",
+        "reference": "F02-NATURE-001-A01",
+        "status": "Placement envelope; reference-to-model identity and final shape pending"
+      },
+      {
+        "id": "FC05-DEADWOOD-2",
+        "kind": "deadwood",
+        "x": 22.250229781493545,
+        "z": -63.223443259485066,
+        "y": 48.97842783295909,
+        "radius": 1.5,
+        "height": 0.4798121662344783,
+        "crown_radius": 1.5,
+        "crown_base_m": 3,
+        "block": true,
+        "zone": "H06",
+        "reference": "F02-NATURE-001-A01",
+        "status": "Placement envelope; reference-to-model identity and final shape pending"
+      },
+      {
+        "id": "FC05-DEADWOOD-3",
+        "kind": "deadwood",
+        "x": -10.763512053526938,
+        "z": -21.851380728185177,
+        "y": 48.76389500478009,
+        "radius": 1.5,
+        "height": 0.42879600046435373,
+        "crown_radius": 1.5,
+        "crown_base_m": 3,
+        "block": true,
+        "zone": "H03",
+        "reference": "F02-NATURE-001-A01",
+        "status": "Placement envelope; reference-to-model identity and final shape pending"
+      },
+      {
+        "id": "FC05-DEADWOOD-4",
+        "kind": "deadwood",
+        "x": -25.122417332604527,
+        "z": 21.338962647132576,
+        "y": 48.383706469658186,
+        "radius": 1.5,
+        "height": 0.43555328701622786,
+        "crown_radius": 1.5,
+        "crown_base_m": 3,
+        "block": true,
+        "zone": "H04",
+        "reference": "F02-NATURE-001-A01",
+        "status": "Placement envelope; reference-to-model identity and final shape pending"
+      },
+      {
+        "id": "FC05-REED-1",
+        "kind": "reed",
+        "x": 47.3,
+        "z": 22,
+        "y": 47.95896604630495,
+        "radius": 0.4,
+        "height": 1.1,
+        "crown_radius": 0.4,
+        "block": false,
+        "zone": "H05",
+        "reference": "GEN-09",
+        "status": "Wet-bank placement envelope; not a final reed model"
+      },
+      {
+        "id": "FC05-REED-2",
+        "kind": "reed",
+        "x": 45.652112466548594,
+        "z": 26.15,
+        "y": 47.96074092417144,
+        "radius": 0.4,
+        "height": 1.1,
+        "crown_radius": 0.4,
+        "block": false,
+        "zone": "H05",
+        "reference": "GEN-09",
+        "status": "Wet-bank placement envelope; not a final reed model"
+      },
+      {
+        "id": "FC05-REED-3",
+        "kind": "reed",
+        "x": 41.150000000000006,
+        "z": 29.18801085141084,
+        "y": 47.96526632777873,
+        "radius": 0.4,
+        "height": 1.1,
+        "crown_radius": 0.4,
+        "block": false,
+        "zone": "H05",
+        "reference": "GEN-09",
+        "status": "Wet-bank placement envelope; not a final reed model"
+      },
+      {
+        "id": "FC05-REED-4",
+        "kind": "reed",
+        "x": 35,
+        "z": 30.3,
+        "y": 47.96772006792637,
+        "radius": 0.4,
+        "height": 1.1,
+        "crown_radius": 0.4,
+        "block": false,
+        "zone": "H05",
+        "reference": "GEN-09",
+        "status": "Wet-bank placement envelope; not a final reed model"
+      },
+      {
+        "id": "FC05-REED-5",
+        "kind": "reed",
+        "x": 28.85,
+        "z": 29.18801085141084,
+        "y": 47.96506592546471,
+        "radius": 0.4,
+        "height": 1.1,
+        "crown_radius": 0.4,
+        "block": false,
+        "zone": "H05",
+        "reference": "GEN-09",
+        "status": "Wet-bank placement envelope; not a final reed model"
+      },
+      {
+        "id": "FC05-REED-6",
+        "kind": "reed",
+        "x": 24.347887533451406,
+        "z": 26.15,
+        "y": 47.9604953102258,
+        "radius": 0.4,
+        "height": 1.1,
+        "crown_radius": 0.4,
+        "block": false,
+        "zone": "H05",
+        "reference": "GEN-09",
+        "status": "Wet-bank placement envelope; not a final reed model"
+      },
+      {
+        "id": "FC05-REED-7",
+        "kind": "reed",
+        "x": 22.7,
+        "z": 22,
+        "y": 47.95872656852132,
+        "radius": 0.4,
+        "height": 1.1,
+        "crown_radius": 0.4,
+        "block": false,
+        "zone": "H05",
+        "reference": "GEN-09",
+        "status": "Wet-bank placement envelope; not a final reed model"
+      },
+      {
+        "id": "FC05-REED-8",
+        "kind": "reed",
+        "x": 24.347887533451406,
+        "z": 17.849999999999998,
+        "y": 47.83098297725183,
+        "radius": 0.4,
+        "height": 1.1,
+        "crown_radius": 0.4,
+        "block": false,
+        "zone": "H05",
+        "reference": "GEN-09",
+        "status": "Wet-bank placement envelope; not a final reed model"
+      },
+      {
+        "id": "FC05-REED-9",
+        "kind": "reed",
+        "x": 28.849999999999994,
+        "z": 14.81198914858916,
+        "y": 47.967956107178246,
+        "radius": 0.4,
+        "height": 1.1,
+        "crown_radius": 0.4,
+        "block": false,
+        "zone": "H05",
+        "reference": "GEN-09",
+        "status": "Wet-bank placement envelope; not a final reed model"
+      },
+      {
+        "id": "FC05-REED-10",
+        "kind": "reed",
+        "x": 35,
+        "z": 13.7,
+        "y": 47.971721212469106,
+        "radius": 0.4,
+        "height": 1.1,
+        "crown_radius": 0.4,
+        "block": false,
+        "zone": "H05",
+        "reference": "GEN-09",
+        "status": "Wet-bank placement envelope; not a final reed model"
+      },
+      {
+        "id": "FC05-REED-11",
+        "kind": "reed",
+        "x": 41.150000000000006,
+        "z": 14.81198914858916,
+        "y": 47.96820638312381,
+        "radius": 0.4,
+        "height": 1.1,
+        "crown_radius": 0.4,
+        "block": false,
+        "zone": "H05",
+        "reference": "GEN-09",
+        "status": "Wet-bank placement envelope; not a final reed model"
+      },
+      {
+        "id": "FC05-REED-12",
+        "kind": "reed",
+        "x": 45.652112466548594,
+        "z": 17.849999999999994,
+        "y": 47.96188556696152,
+        "radius": 0.4,
+        "height": 1.1,
+        "crown_radius": 0.4,
+        "block": false,
+        "zone": "H05",
+        "reference": "GEN-09",
+        "status": "Wet-bank placement envelope; not a final reed model"
+      }
+    ],
+    "fauna_observations": [
+      {
+        "id": "OBS-01",
+        "name": "Pond-edge observation",
+        "point": [
+          26.35135135135135,
+          48.108108108108105
+        ],
+        "proposed_visitors": [
+          "frog",
+          "dragonfly"
+        ],
+        "reference": "F02-FAUNA-002",
+        "focus_point": [
+          22,
+          22
+        ],
+        "status": "Proposed observation point on the existing loop; no fauna model or encounter behavior"
+      },
+      {
+        "id": "OBS-02",
+        "name": "Shaded woodland observation",
+        "point": [
+          -51.72,
+          -16.96
+        ],
+        "proposed_visitors": [
+          "woodland bird",
+          "squirrel"
+        ],
+        "reference": "F02-FAUNA-001 / F02-FAUNA-002",
+        "focus_point": [
+          -35,
+          -20
+        ],
+        "status": "Proposed observation point on the existing loop; no fauna model or encounter behavior"
+      },
+      {
+        "id": "OBS-03",
+        "name": "Sunny verge observation",
+        "point": [
+          32.11764705882353,
+          -49.470588235294116
+        ],
+        "proposed_visitors": [
+          "butterfly",
+          "bee"
+        ],
+        "reference": "F02-FAUNA-002",
+        "focus_point": [
+          26,
+          -25
+        ],
+        "status": "Proposed observation point on the existing loop; no fauna model or encounter behavior"
+      }
+    ],
+    "loop_m": 370.13234708295556,
+    "named_pond_distance_m": 806.2257748298549,
+    "loop_terrain_rule": "Micro-relief is zero within 5 m of the retained loop and entrance spur; model envelopes respect the clear corridor"
+  },
+  "unresolved": [
+    "14 regional crossing candidates",
+    "Final entrances, docks, sky altitude/returns and full-world navigation",
+    "Historical larger lake extent versus reserved cove",
+    "Final flora models, fauna models/rigs/behavior, terrain textures, waves and regional dressing"
+  ],
+  "new_reference_images": 0,
+  "new_registered_models": 0
+}

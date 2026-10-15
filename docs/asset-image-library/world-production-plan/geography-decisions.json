@@ -66,5 +66,16 @@
     "geometry_evidence": "blockout/geometry-verification.json",
     "browser_evidence": "blockout/browser-verification.json",
     "limits": "Proposed heights and channels; 14 crossing candidates, final entrances/returns and sky travel remain unresolved; source placements unchanged"
+  },
+  "regional_terrain_pass": {
+    "status": "implemented-for-review",
+    "evidence": "blockout/BIOMES-AND-TERRAIN.md",
+    "recipes": 8,
+    "transition_sections": 6,
+    "transition_grade_reviews": 4,
+    "FC05_placement_envelopes": 94,
+    "complete_local_browser_run_m": 468.3277916558844,
+    "source_layout_unchanged": true,
+    "limits": "Proposed terrain and habitat envelopes; final regional navigation and flora/fauna models remain pending"
   }
 }

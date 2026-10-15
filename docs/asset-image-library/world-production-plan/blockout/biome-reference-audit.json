@@ -1,0 +1,99 @@
+{
+  "status": "Reuse-first audit; only one saved forest board visually opened this pass",
+  "existing_sheets": [
+    {
+      "sheet_id": "F02-TRAIL-001",
+      "schedule": "world-location-kits/west-lantern-forest/F02-TRAIL-001/schedule.json",
+      "schedule_sha256": "a3ec04fa7848c3c2dd306189670fca4eb5904026798822d8c4a0a57879847018",
+      "component_ids": [
+        "F02-TRAIL-001-S01",
+        "F02-TRAIL-001-S02",
+        "F02-TRAIL-001-S03",
+        "F02-TRAIL-001-S04"
+      ],
+      "review_status": "pending-user-reference-and-construction-review",
+      "visually_opened_this_pass": false
+    },
+    {
+      "sheet_id": "F02-NATURE-001",
+      "schedule": "world-location-kits/west-lantern-forest/F02-NATURE-001/schedule.json",
+      "schedule_sha256": "b3f3483af3d7849a445cb601e49f50cea749f2667a0d8de9e30e5ea55aa75099",
+      "component_ids": [
+        "F02-NATURE-001-A01",
+        "F02-NATURE-001-A02",
+        "F02-NATURE-001-A03",
+        "F02-NATURE-001-A04",
+        "F02-NATURE-001-A05",
+        "F02-NATURE-001-A06",
+        "F02-NATURE-001-A07",
+        "F02-NATURE-001-A08",
+        "F02-NATURE-001-A09",
+        "F02-NATURE-001-A10",
+        "F02-NATURE-001-A11",
+        "F02-NATURE-001-A12"
+      ],
+      "review_status": "pending-user-reference-and-construction-review",
+      "visually_opened_this_pass": true
+    },
+    {
+      "sheet_id": "F02-FLORA-001",
+      "schedule": "world-location-kits/west-lantern-forest/ecology/F02-FLORA-001/schedule.json",
+      "schedule_sha256": "167e837baa5d05d7b45619542e79bfea2524c9191bc21321a608bce6346b0fff",
+      "component_ids": [
+        "F02-FLORA-001-A01",
+        "F02-FLORA-001-A02",
+        "F02-FLORA-001-A03",
+        "F02-FLORA-001-A04"
+      ],
+      "review_status": "pending-user-reference-and-model-review",
+      "visually_opened_this_pass": false
+    },
+    {
+      "sheet_id": "F02-FAUNA-001",
+      "schedule": "world-location-kits/west-lantern-forest/ecology/F02-FAUNA-001/schedule.json",
+      "schedule_sha256": "63155b7abd0bcc9a7f9f7bb0d86b22147a1c02f4ea06017c6a75f1ac7ef99788",
+      "component_ids": [
+        "F02-FAUNA-001-A01",
+        "F02-FAUNA-001-A02",
+        "F02-FAUNA-001-A03",
+        "F02-FAUNA-001-A04"
+      ],
+      "review_status": "pending-user-reference-and-model-review",
+      "visually_opened_this_pass": false
+    },
+    {
+      "sheet_id": "F02-FAUNA-002",
+      "schedule": "world-location-kits/west-lantern-forest/ecology/F02-FAUNA-002/schedule.json",
+      "schedule_sha256": "948ab06cb92c49cc30c9f48d7f8b09e517c630531bfaee623aad748a86ec6dca",
+      "component_ids": [
+        "F02-FAUNA-002-A01",
+        "F02-FAUNA-002-A02",
+        "F02-FAUNA-002-A03",
+        "F02-FAUNA-002-A04",
+        "F02-FAUNA-002-A05",
+        "F02-FAUNA-002-A06",
+        "F02-FAUNA-002-A07",
+        "F02-FAUNA-002-A08",
+        "F02-FAUNA-002-A09",
+        "F02-FAUNA-002-A10",
+        "F02-FAUNA-002-A11",
+        "F02-FAUNA-002-A12"
+      ],
+      "review_status": "pending-user-reference-and-model-review",
+      "visually_opened_this_pass": false
+    }
+  ],
+  "used_exact_source_parts": {
+    "F02-NATURE-001-A01": "Fallen woodland log envelope",
+    "F02-NATURE-001-A09": "Bramble envelope",
+    "F02-NATURE-001-A10": "Bluebell clump envelope",
+    "F02-NATURE-001-A11": "Wild strawberry clump envelope"
+  },
+  "pending_model_identity": [
+    "GEN-09 canopy and rock families",
+    "Reed/rush family",
+    "Animal models, rigs and behavior"
+  ],
+  "new_art_images": 0,
+  "new_registered_models": 0
+}

@@ -513,7 +513,7 @@
       "door_width_m": 2.4,
       "door_height_m": 2.6
     },
-    "global_datum": "Derived from coarse base terrain, provisional. Sample has local high-resolution ground, not a complete forest model."
+    "global_datum": "World FC05 pad minus 0.4 m, so yard ground meets the pad and the cottage threshold is one 150 mm riser higher. Local terrain blends back to the coarse world from radius 70 to 75 m; square tile edges match the world heightfield."
   },
   "bedroom_sample": {
     "source": "../../completion-pass/INT-R02/schedule.json",

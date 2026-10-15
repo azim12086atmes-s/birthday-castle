@@ -1,0 +1,15 @@
+{
+  "status": "pass",
+  "checks": [
+    "Seven ground regions and separate sky recipe respect source anchor region assignments",
+    "Regional terrain adds distinct ridges, saddle and gully while retaining finite heights and source dimensions",
+    "FC05 micro-relief retains the loop, aligns a 150 mm threshold and matches world terrain at tile edges",
+    "Seeded placement envelopes keep water, entrance and walk envelope clear with actual blocker collision"
+  ],
+  "regions": 8,
+  "ground_regions": 7,
+  "transitions": 6,
+  "placement_envelopes": 94,
+  "fauna_observation_markers": 3,
+  "limits": "Proposed biome/terrain and placement geometry; no accepted flora meshes, fauna simulation, final navigation or ecological certification"
+}

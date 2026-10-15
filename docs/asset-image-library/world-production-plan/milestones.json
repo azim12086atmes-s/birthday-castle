@@ -13,8 +13,8 @@
       "name": "Geography and route blockout",
       "deliverables": "Elevation/shore/water layers, site pads, crossing locations, regional transitions and travel graph.",
       "exit_evidence": "All G01\u2013G08 decisions resolved enough for first routes; concept polylines are not marked playable.",
-      "status": "first-blockout-implemented-pending-geography-review",
-      "evidence": "blockout/README.md; geometry-verification.json and browser-verification.json; 14 crossing candidates and final regional access remain unresolved"
+      "status": "regional-terrain-and-FC05-habitat-pass-tested-pending-geography-review",
+      "evidence": "blockout/BIOMES-AND-TERRAIN.md; biome-verification.json and biome-browser-verification.json. Four transition grade reviews, 14 regional crossing candidates and final access remain unresolved."
     },
     {
       "id": "P2",
@@ -137,6 +137,6 @@
       "exit_evidence": "Each island has a working arrival and return, explorable focal route and bounded content; no flight system is assumed."
     }
   ],
-  "current_next_deliverable": "Review K09 proposed circulation dimensions; extend the shared floor/wall/door interfaces into the cottage and bedroom samples while keeping P1 open crossings visible.",
+  "current_next_deliverable": "Resolve flagged regional transition grades and a selected crossing, then extend terrain/habitat placement along west woodland and lake approaches using existing references.",
   "local_first_rule": "Resolve world geography at coarse level, but only require sample-local elevations, water, boundaries and access for the first prototype; refine distant-region unknowns in their own wave."
 }

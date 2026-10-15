@@ -1,0 +1,28 @@
+{
+  "status": "pass",
+  "browser": "Chromium / Playwright / software WebGL2",
+  "viewports": {
+    "static_layers": "1440\u00d7960",
+    "full_loop": "1024\u00d7768",
+    "mobile_controls": "390\u00d7844"
+  },
+  "checks": [
+    "All eight recipes, elevation/slope/water-edge displays and world vertical inspection scale work",
+    "Six FC05 ground zones and 94 placement envelopes inspect correctly; hidden crowns retain visible blocker collision",
+    "Entire 370 m loop plus entrance/return spur passes using the same swept solver as manual walking",
+    "390 px biome/habitat controls fit without horizontal overflow"
+  ],
+  "complete_forest_run": {
+    "status": "pass",
+    "distance_m": 468.32779165588533,
+    "expected_m": 468.3277916558844,
+    "return_position": {
+      "x": 0,
+      "z": 7
+    },
+    "speed_mps": 12
+  },
+  "page_errors": [],
+  "failed_requests": [],
+  "limits": "Terrain and placement proposals; complete local loop checked, regional navigation and final flora/fauna models remain pending"
+}
