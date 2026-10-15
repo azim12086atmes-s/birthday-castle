@@ -1,0 +1,23 @@
+{
+  "schema": "game-room.opening-schedule.v1",
+  "roomId": "K09-FIT-001",
+  "primaryArrival": {
+    "openingId": "ARCH-01",
+    "exception": "Fixture starts on an open lower apron; the arch is the tested elevated passage, not an integrated world entrance"
+  },
+  "openings": [
+    {
+      "id": "ARCH-01",
+      "type": "door",
+      "wall": "ARCH-WALL",
+      "widthMeters": 2.4,
+      "heightMeters": 3.2,
+      "apexMeters": 3.8,
+      "depthMeters": 0.3,
+      "floorMeters": 3,
+      "thresholdMeters": 0,
+      "destination": "Upper platform beyond wall, connected return through the same passage",
+      "representation": "Real through-aperture in an extruded closed profile; no door leaf; not a final Blender Boolean export"
+    }
+  ]
+}

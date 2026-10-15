@@ -4,6 +4,8 @@
 
 **First geography blockout:** [Open the separate review page](blockout/index.html) · [Evidence and limitations](blockout/README.md). It preserves all source placements and adds proposed terrain, hydrology, route profiles and local movement tests. Regional crossings, ports, heights and final travel remain under review.
 
+**Shared circulation fixture:** [Open the K09 fit test](kit-fit/index.html) · [Contracts and checks](kit-fit/README.md). Two copied flights, an open arch and independent parapet collision now have local engineering evidence; final kit acceptance remains pending.
+
 ## Outcome and present state
 
 Build a connected, explorable princess-castle world through small tested sections. Geography and route logic come first, shared kit contracts second, playable samples third, then regional destinations. New pictures are generated only for a demonstrated missing design or construction view. A 230-sheet ceiling is not a requirement to fill every slot before building.

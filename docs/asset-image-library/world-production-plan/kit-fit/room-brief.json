@@ -1,0 +1,76 @@
+{
+  "schema": "game-room.room-brief.v1",
+  "roomId": "K09-FIT-001",
+  "family": "custom",
+  "purpose": "Engineering evidence for reusable human-scale stairs, landing, floor, opening and guard interfaces",
+  "runtimeSurface": "Separate static Three.js review page; not the multiplayer game or final room composition",
+  "boundsMeters": [
+    10.4,
+    7.45,
+    10.4
+  ],
+  "hero": {
+    "id": "FLIGHT-A",
+    "role": "Reusable circulation module, with one rotated copy",
+    "reservedBoundsMeters": [
+      2.8,
+      1.75,
+      3
+    ]
+  },
+  "symmetry": {
+    "mode": "none",
+    "order": 1,
+    "appliesTo": [
+      "fixture layout"
+    ],
+    "exceptions": [
+      "Intentional L-shaped route proves 90-degree reuse; each flight has bilateral side guards"
+    ]
+  },
+  "circulation": {
+    "description": "Lower apron -> ten risers -> turning landing -> rotated ten-riser flight -> real arch -> upper floor -> reverse to start",
+    "minimumClearanceMeters": 2.4
+  },
+  "productionCamera": {
+    "viewport": [
+      1440,
+      960
+    ],
+    "location": [
+      14.417173995808312,
+      17.258499235937247,
+      12.311119122130547
+    ],
+    "target": [
+      2.7,
+      1.6,
+      -1.6
+    ],
+    "verticalFovDegrees": 48
+  },
+  "performanceBudget": {
+    "maxSceneTriangles": 12000,
+    "maxVLowBytes": 0,
+    "maxHighTextureBytes": 0
+  },
+  "creditBudget": {
+    "maximumCredits": 0,
+    "approvalRequired": true
+  },
+  "environment": {
+    "type": "none",
+    "identity": "",
+    "source": "",
+    "assignmentKey": ""
+  },
+  "artifacts": {
+    "floorPlan": "review/overhead.png",
+    "reflectedCeilingPlan": "",
+    "planMetadata": "contract.json",
+    "wallElevations": [],
+    "visualTarget": "review/assembly.png",
+    "openingContactSheet": ""
+  },
+  "scope": "Pre-gate dimensional fixture; no final room, paid assets or export. Unfilled final-room artifacts remain pending."
+}

@@ -1,0 +1,17 @@
+{
+  "status": "pass",
+  "checks": [
+    "Copied flights and turning sockets meet exactly in metre/Y-up space",
+    "Every actual tread, both turns, arch passage, descent and complete return survive swept movement",
+    "Guards, platform edges and wall cannot be bypassed by running or long frame displacements",
+    "Decorative material variants cannot change the physical host or collision",
+    "Sources exist and prototype contracts do not overwrite reference dimensions or approvals"
+  ],
+  "fixture_modules": 27,
+  "guard_segments": 21,
+  "maximum_tread_change_m": 0.15000000000000036,
+  "maximum_floor_m": 3,
+  "return_distance_m": 29.399999999999533,
+  "source_schedules": 4,
+  "limits": "Proposed dimensional fixture and analytical movement checks; not final decorative-model acceptance, accessibility certification or whole-game navigation"
+}

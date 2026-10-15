@@ -1,0 +1,39 @@
+{
+  "schema": "game-room.room-final-report.v1",
+  "roomId": "K09-FIT-001",
+  "gates": {
+    "function": false,
+    "form": false,
+    "runtime": false
+  },
+  "status": "Engineering fixture implemented and tested; all final production gates remain unapproved",
+  "evidence": [
+    "geometry-verification.json",
+    "browser-verification.json",
+    "review/assembly.png",
+    "review/overhead.png",
+    "review/material-slots.png",
+    "review/walk-return.png"
+  ],
+  "runtimeChecks": {
+    "browserCapture": "review/walk-return.png",
+    "errors": [],
+    "performance": "Prototype triangle/draw-call budget checked in software WebGL; production performance not measured"
+  },
+  "postmortem": {
+    "observations": [
+      "Copied stair modules can share a 90-degree landing without a blocking cross-rail",
+      "Material variants can share protected collision"
+    ],
+    "corrections": [
+      "Restored outward wall winding after reflecting extrusion coordinates",
+      "Made the desktop layout use actual header height to stabilize WebGL review capture"
+    ],
+    "remainingRisks": [
+      "Final source-compatible decoration and kit approval",
+      "Full-world integration, accessibility and regional crossing engineering",
+      "Final model/export/UV/collision tiers and production GPU budget"
+    ]
+  },
+  "proposedLessons": []
+}

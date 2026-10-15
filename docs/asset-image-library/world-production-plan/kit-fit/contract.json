@@ -1,0 +1,138 @@
+{
+  "id": "K09-FIT-001",
+  "status": "Proposed shared dimensional contract; engineering test only; no final form or runtime acceptance",
+  "units": "metres",
+  "axes": "X east, Y up, Z south; module forward is local -Z; positive yaw turns the forward axis east",
+  "player": {
+    "radius_m": 0.45,
+    "height_m": 1.75,
+    "eye_height_m": 1.6,
+    "walk_mps": 6,
+    "run_mps": 12,
+    "max_step_m": 0.2
+  },
+  "flight": {
+    "id": "K09-FLIGHT-10",
+    "width_m": 2.8,
+    "clear_width_m": 2.4,
+    "risers": 10,
+    "rise_m": 0.15,
+    "going_m": 0.3,
+    "total_rise_m": 1.5,
+    "run_m": 3,
+    "pivot": "bottom centre at the first riser, floor datum",
+    "in_port": [
+      0,
+      0,
+      0
+    ],
+    "out_port": [
+      0,
+      1.5,
+      -3
+    ],
+    "reject_if": "Step >0.20 m, clear width <2.4 m, tread mismatch or port gap >0.001 m"
+  },
+  "landing": {
+    "id": "K09-LANDING-TURN",
+    "size_m": [
+      2.8,
+      0.25,
+      2.8
+    ],
+    "pivot": "centre at top walking surface",
+    "reject_if": "Flight socket is separated or a guard crosses either arrival"
+  },
+  "floor": {
+    "id": "K09-FLOOR-4",
+    "size_m": [
+      4,
+      0.25,
+      4
+    ],
+    "pivot": "centre at top walking surface"
+  },
+  "opening": {
+    "id": "K11-OPEN-240",
+    "clear_width_m": 2.4,
+    "clear_height_m": 3.2,
+    "apex_m": 3.8,
+    "wall_height_m": 4.2,
+    "wall_width_m": 4,
+    "wall_thickness_m": 0.3,
+    "centre_xz": [
+      6.4,
+      -4.4
+    ],
+    "floor_m": 3,
+    "destination": "Upper test platform, with a reverse route through the same open passage",
+    "construction": "Extruded closed wall profile surrounding a real through-aperture; no decorative model, solid wall infill or final Blender export",
+    "reject_if": "Opening blocked, aperture <2.4 m clear, headroom <2.05 m or floor discontinuity"
+  },
+  "parapet": {
+    "id": "K13-GUARD-REPEAT",
+    "height_above_nosing_m": 1.1,
+    "thickness_m": 0.12,
+    "edge_offset_m": 0.14,
+    "repeat_m": 1,
+    "pivot": "centre of lower mounting edge",
+    "support": "Deck edge or stair stringer; substrate collider stays opaque to navigation when decorative/glass variants change",
+    "reject_if": "Collider gap, unprotected drop or a barrier crossing a module socket",
+    "end_infill_policy": "Keep each full repeat at exactly 1 m; use an explicit short end-infill host for the remainder. Never scale a decorated repeat to fit."
+  },
+  "tolerances": {
+    "seam_gap_m": 0.001,
+    "support_inset_m": [
+      0,
+      0.005
+    ]
+  },
+  "material_slots": [
+    "SUBSTRATE_IVORY",
+    "SUBSTRATE_ROSE",
+    "TRIM_GOLD",
+    "GLASS_BLUE",
+    "GLASS_ROSE",
+    "GLASS_GREEN",
+    "COLLISION_ONLY"
+  ],
+  "rendering": {
+    "default": "monochrome engineering view",
+    "palette_mode": "simple rose/ivory/gold and glass-slot preview; no marble or carving fidelity claimed",
+    "final_lods": "unresolved; benchmark accepted models before choosing distance bands",
+    "prototype_triangle_budget": 12000,
+    "prototype_draw_call_budget": 160
+  },
+  "sources": [
+    {
+      "sheet_id": "PAL-STAIR-001",
+      "schedule": "../../remaining-palace-kits/lower-wing/schedule.json",
+      "use": "existing stepped flight and structural/decor separation",
+      "schedule_sha256": "aebf49a8b384f8bd0d6bfdee8fc02ccaf1df64adef996e5bc0686bf2fbeee545"
+    },
+    {
+      "sheet_id": "PAL-STAIR-VAR-001",
+      "schedule": "../../surface-variation-kits/PAL-STAIR-VAR-001/schedule.json",
+      "use": "variant vocabulary; not a source for measured risers",
+      "schedule_sha256": "132e77094cce2f3c48bcc021bf330718283a1838c188f978e33be73b9761f8d7"
+    },
+    {
+      "sheet_id": "WLD-PARAPET-JOINS-001",
+      "schedule": "../../surface-variation-kits/WLD-PARAPET-JOINS-001/schedule.json",
+      "use": "existing slopes, returns, end stops and rail profiles",
+      "schedule_sha256": "365e1733d54b231f119c65a5c37274aa78b494842cc0fb62648a597605fee845"
+    },
+    {
+      "sheet_id": "WLD-PARAPET-NEW-001",
+      "schedule": "../../surface-variation-kits/WLD-PARAPET-NEW-001/schedule.json",
+      "use": "existing material/shape variants; 0.45 m garden edging is not treated as a drop guard",
+      "schedule_sha256": "eb575bd960bd9d157fb7d311d80eb2b1a646347748a3a64757406563d07c3d58"
+    }
+  ],
+  "scope_limits": [
+    "No new art sheets or paid mesh generation",
+    "No changes to geography, castle silhouette, bedroom, cottage placements or reference registry",
+    "No final room assembly, GLB export, game integration or deployment",
+    "User review still required for final kit shape and any paid/final asset work"
+  ]
+}

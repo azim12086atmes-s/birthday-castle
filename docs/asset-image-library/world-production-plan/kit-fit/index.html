@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Starlight Coast · shared circulation test</title>
+  <link rel="icon" href="data:,"><link rel="stylesheet" href="style.css">
+  <script type="importmap">{"imports":{"three":"../../../../vendor/three.module.min.js"}}</script>
+</head>
+<body>
+<header><div><span class="eyebrow">STARLIGHT COAST / K09 FIT TEST</span><h1>One route. Reusable joins.</h1></div><a href="../blockout/">← Geography review</a></header>
+<main>
+<section class="workspace">
+  <nav aria-label="Preview controls">
+    <button data-view="orbit" class="active">Assembly</button><button data-view="plan">Overhead</button><button data-view="walk">Walk</button>
+    <button id="run">Run return test</button><button id="reset">Reset</button>
+  </nav>
+  <div id="viewport"><canvas id="scene" aria-label="Interactive modular circulation fixture"></canvas><div id="help">Drag to orbit · wheel to zoom</div><div id="crosshair" hidden>+</div><div id="error" hidden role="alert"></div></div>
+  <div class="caption"><strong id="position" role="status">Loading shared contract…</strong><span>Dimensional fixture, not palace architecture or finished decorative assets.</span></div>
+  <div class="touch" hidden id="touch" aria-label="Walking controls"><button data-key="KeyW" aria-label="Move forward">↑</button><button data-key="KeyA" aria-label="Move left">←</button><button data-key="KeyS" aria-label="Move backward">↓</button><button data-key="KeyD" aria-label="Move right">→</button></div>
+</section>
+<aside>
+  <div class="facts"><div><b>0.15 m</b><span>riser</span></div><div><b>2.4 m</b><span>clear route</span></div><div><b>3.0 m</b><span>total climb</span></div></div>
+  <label for="part">Inspect an assembled module</label><select id="part"><option value="">Whole fixture</option></select><div class="panel" id="detail"><h2>Joined circulation</h2><p>Two copies of the same stair flight turn through a landing and reach a real open arch. Raised edges have continuous collision even when glass colours change.</p></div>
+  <fieldset><legend>Inspection layers</legend><label><input id="palette" type="checkbox"> Rose / ivory material slots</label><label><input id="glass" type="checkbox" checked> Show guard infill</label><label><input id="route" type="checkbox" checked> Show route and return</label><label><input id="seams" type="checkbox" checked> Show module boundaries</label></fieldset>
+  <label for="glass-color">Glass material slot</label><select id="glass-color" disabled><option value="blue">Blue</option><option value="rose">Rose</option><option value="green">Green</option></select>
+  <div class="panel"><h2>Movement evidence</h2><p id="result" role="status">Run the return test to climb both flights, pass through the arch and return to the arrival.</p><p>WASD or arrows move, Shift runs; drag to look. Reset returns you to the lower apron. The automatic test uses the same swept movement and collision as keyboard walking.</p></div>
+  <details><summary>Scope and pending decisions</summary><p>Dimensions are proposed technical contracts. Existing stair and parapet references inform later dressing; no decorative geometry is accepted here.</p><p>This test does not finalize the palace stairs, world bridges, local style variants, accessibility, balcony supports or full-game navigation.</p></details>
+  <a href="README.md">Contract, source references and verification →</a>
+</aside>
+</main><script type="module" src="viewer.mjs"></script>
+</body></html>

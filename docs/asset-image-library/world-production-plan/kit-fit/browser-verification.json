@@ -1,0 +1,50 @@
+{
+  "status": "pass",
+  "browser": "Chromium / Playwright / software WebGL2",
+  "viewports": [
+    "1440\u00d7960",
+    "390\u00d7844"
+  ],
+  "checks": [
+    "Real arch raycasts, outward winding, rendered geometry and triangle/draw-call budgets pass",
+    "Same-mesh overhead, module selection and material variants work; hidden glass retains collision",
+    "Real keyboard movement and the shared swept solver climb 20 risers, pass the arch and return 29.4 m",
+    "390 px mobile layout and on-screen movement controls work without horizontal overflow"
+  ],
+  "geometry": {
+    "actual_arch_passage_clear": true,
+    "actual_wall_side_solid": true,
+    "front_face_distance_m": 1.25,
+    "front_face_normal_x": -1,
+    "triangles": 5358,
+    "draw_calls": 48,
+    "budget": {
+      "default": "monochrome engineering view",
+      "palette_mode": "simple rose/ivory/gold and glass-slot preview; no marble or carving fidelity claimed",
+      "final_lods": "unresolved; benchmark accepted models before choosing distance bands",
+      "prototype_triangle_budget": 12000,
+      "prototype_draw_call_budget": 160
+    }
+  },
+  "return_test": {
+    "view": "walk",
+    "position": {
+      "x": 0,
+      "z": 3
+    },
+    "floor_y": 0,
+    "selected": null,
+    "auto": false,
+    "max_y": 3,
+    "visited": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "walked_m": 29.400000000000016
+  },
+  "page_errors": [],
+  "failed_requests": [],
+  "limits": "Separate proposed fixture; software rendering is not production GPU performance, accepted decorative meshes or game integration"
+}

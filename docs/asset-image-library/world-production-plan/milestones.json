@@ -21,7 +21,8 @@
       "name": "Shared kit and technical contracts",
       "deliverables": "Units, pivots, seam profiles, opening standards, glass/material IDs, UV scale, collision, LOD/instancing and loading groups.",
       "exit_evidence": "One floor/wall/opening/rail/path/water-edge example physically fits and survives actual player/camera tests.",
-      "status": "planned"
+      "status": "first-circulation-fit-fixture-tested-pending-kit-review",
+      "evidence": "kit-fit/README.md; copied flights, turning landing, real opening, guard collision and browser return test. Other kit contracts and final approvals remain pending."
     },
     {
       "id": "P3",
@@ -136,6 +137,6 @@
       "exit_evidence": "Each island has a working arrival and return, explorable focal route and bounded content; no flight system is assumed."
     }
   ],
-  "current_next_deliverable": "Review the first P1 geography page and open connections; next build a shared step/landing and kit fit test before detailed regional dressing. P2/P3 remain unapproved final builds.",
+  "current_next_deliverable": "Review K09 proposed circulation dimensions; extend the shared floor/wall/door interfaces into the cottage and bedroom samples while keeping P1 open crossings visible.",
   "local_first_rule": "Resolve world geography at coarse level, but only require sample-local elevations, water, boundaries and access for the first prototype; refine distant-region unknowns in their own wave."
 }
