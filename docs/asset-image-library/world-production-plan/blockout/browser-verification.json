@@ -1,0 +1,18 @@
+{
+  "status": "pass",
+  "browser": "Chromium / Playwright / software WebGL2",
+  "viewports": [
+    "1440\u00d7960",
+    "390\u00d7844"
+  ],
+  "checks": [
+    "World overhead loads with 34 anchors, eight cottages and 15 source/proposed routes",
+    "Selectable site footprint, route profile, local legs, all layers and WebGL2 terrain work",
+    "forest: overhead, terrain, real keyboard movement, collision and entrance reset pass",
+    "bedroom: overhead, terrain, real keyboard movement, collision and entrance reset pass",
+    "390 px mobile layout fits without horizontal overflow; cross-area selection stays consistent"
+  ],
+  "page_errors": [],
+  "failed_requests": [],
+  "limits": "Software-rendered inspection and local keyboard/collision tests; not production GPU performance, mobile touch walking or full-world game navigation"
+}

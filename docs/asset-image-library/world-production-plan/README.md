@@ -2,6 +2,8 @@
 
 15 October 2026 · Proposal for scope and sequence · [34-place matrix](location-coverage.csv) · [Full location coverage](location-coverage.json) · [Kit catalog](kit-catalog.json) · [Geography decisions](geography-decisions.json) · [Milestones](milestones.json) · [Gap backlog](gap-backlog.json)
 
+**First geography blockout:** [Open the separate review page](blockout/index.html) · [Evidence and limitations](blockout/README.md). It preserves all source placements and adds proposed terrain, hydrology, route profiles and local movement tests. Regional crossings, ports, heights and final travel remain under review.
+
 ## Outcome and present state
 
 Build a connected, explorable princess-castle world through small tested sections. Geography and route logic come first, shared kit contracts second, playable samples third, then regional destinations. New pictures are generated only for a demonstrated missing design or construction view. A 230-sheet ceiling is not a requirement to fill every slot before building.

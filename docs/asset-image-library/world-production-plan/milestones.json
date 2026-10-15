@@ -13,7 +13,8 @@
       "name": "Geography and route blockout",
       "deliverables": "Elevation/shore/water layers, site pads, crossing locations, regional transitions and travel graph.",
       "exit_evidence": "All G01\u2013G08 decisions resolved enough for first routes; concept polylines are not marked playable.",
-      "status": "planned"
+      "status": "first-blockout-implemented-pending-geography-review",
+      "evidence": "blockout/README.md; geometry-verification.json and browser-verification.json; 14 crossing candidates and final regional access remain unresolved"
     },
     {
       "id": "P2",
@@ -135,6 +136,6 @@
       "exit_evidence": "Each island has a working arrival and return, explorable focal route and bounded content; no flight system is assumed."
     }
   ],
-  "current_next_deliverable": "P1 simplified geography/route blockout with water/elevation/open issues; no new art generation in this planning update",
+  "current_next_deliverable": "Review the first P1 geography page and open connections; next build a shared step/landing and kit fit test before detailed regional dressing. P2/P3 remain unapproved final builds.",
   "local_first_rule": "Resolve world geography at coarse level, but only require sample-local elevations, water, boundaries and access for the first prototype; refine distant-region unknowns in their own wave."
 }

@@ -1,0 +1,17 @@
+{
+  "status": "pass",
+  "checks": [
+    "Canonical layout hash, all source geometry, 34 anchors and eight cottage placements preserved",
+    "River outlets reach sea, descend monotonically and avoid every building pad",
+    "All six boat legs have continuous saltwater, four-metre hull margin and submerged bed",
+    "FC05 loop, entrance and return are connected, contained and traversable",
+    "Bedroom source dimensions, west opening, human bed and balcony return path",
+    "Finite ground, dry reservations, normalized smooth region blends and honest crossing reports"
+  ],
+  "locations": 34,
+  "cottages": 8,
+  "forest_loop_m": 370.13234708295556,
+  "boat_legs": 6,
+  "crossing_candidates_pending": 14,
+  "limits": "Analytical proposed geometry and local collision checks; not full-world navigation, accepted art or final game integration"
+}

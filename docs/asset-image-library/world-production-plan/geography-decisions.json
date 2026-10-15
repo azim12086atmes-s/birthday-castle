@@ -58,5 +58,13 @@
       "next_evidence": "Use walk tests for discovery spacing and optional path lengths; do not add unique props merely to cover all12km.",
       "resolved": false
     }
-  ]
+  ],
+  "first_blockout": {
+    "status": "implemented-for-review",
+    "page": "blockout/index.html",
+    "proposal": "blockout/proposal.json",
+    "geometry_evidence": "blockout/geometry-verification.json",
+    "browser_evidence": "blockout/browser-verification.json",
+    "limits": "Proposed heights and channels; 14 crossing candidates, final entrances/returns and sky travel remain unresolved; source placements unchanged"
+  }
 }

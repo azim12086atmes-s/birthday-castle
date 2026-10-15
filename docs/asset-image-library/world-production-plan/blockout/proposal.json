@@ -1,0 +1,669 @@
+{
+  "version": 1,
+  "date": "2026-10-15",
+  "status": "Engineering blockout proposal; not an approved landscape or final game build",
+  "sea_level_m": 0,
+  "lake_level_m": 36,
+  "lake_scope": "650 x 700 m reserved cove for this blockout; the larger lake in older art remains unresolved",
+  "river_proposals": [
+    {
+      "id": "WV01",
+      "name": "Fjord\u2013Lantern drainage and sea outlet",
+      "width_m": 32,
+      "points": [
+        [
+          -2700,
+          -2350
+        ],
+        [
+          -2700,
+          -1650
+        ],
+        [
+          -3000,
+          -1200
+        ],
+        [
+          -2700,
+          -350
+        ],
+        [
+          -2250,
+          -350
+        ],
+        [
+          -1950,
+          275
+        ],
+        [
+          -1950,
+          1010
+        ],
+        [
+          -1900,
+          1400
+        ],
+        [
+          -2300,
+          1800
+        ],
+        [
+          -3000,
+          2250
+        ],
+        [
+          -3400,
+          2350
+        ]
+      ],
+      "levels": [
+        125,
+        90,
+        75,
+        64,
+        55,
+        36,
+        36,
+        0,
+        0,
+        0,
+        0
+      ],
+      "notes": "Descending reach from lake to tidal level, then sea-level lower channel; not navigable between lake and lagoon. No lock mechanic."
+    },
+    {
+      "id": "WV02",
+      "name": "Misty\u2013jungle drainage, avoiding keep foundations",
+      "width_m": 30,
+      "points": [
+        [
+          2250,
+          -2500
+        ],
+        [
+          2500,
+          -1900
+        ],
+        [
+          2620,
+          -1550
+        ],
+        [
+          2550,
+          -1150
+        ],
+        [
+          2100,
+          -850
+        ],
+        [
+          1850,
+          -300
+        ],
+        [
+          1750,
+          400
+        ],
+        [
+          1900,
+          1200
+        ],
+        [
+          2250,
+          1700
+        ],
+        [
+          2780,
+          2450
+        ],
+        [
+          3250,
+          2550
+        ],
+        [
+          3500,
+          2450
+        ]
+      ],
+      "levels": [
+        170,
+        140,
+        120,
+        100,
+        82,
+        64,
+        45,
+        28,
+        12,
+        3,
+        0,
+        0
+      ]
+    }
+  ],
+  "canals": [
+    {
+      "id": "C01",
+      "name": "West harbour\u2013lagoon connection",
+      "width_m": 90,
+      "points": [
+        [
+          -3500,
+          1700
+        ],
+        [
+          -3150,
+          1700
+        ],
+        [
+          -2750,
+          1650
+        ],
+        [
+          -2450,
+          1500
+        ],
+        [
+          -2200,
+          1550
+        ],
+        [
+          -1900,
+          1800
+        ],
+        [
+          -1600,
+          2050
+        ],
+        [
+          -1250,
+          2150
+        ],
+        [
+          -700,
+          2350
+        ],
+        [
+          0,
+          2400
+        ]
+      ]
+    },
+    {
+      "id": "C02",
+      "name": "Lagoon mouth to open sea",
+      "width_m": 180,
+      "points": [
+        [
+          0,
+          2400
+        ],
+        [
+          0,
+          2800
+        ],
+        [
+          300,
+          3250
+        ]
+      ]
+    },
+    {
+      "id": "C03",
+      "name": "Gatehouse dock channel",
+      "width_m": 65,
+      "points": [
+        [
+          -2200,
+          2680
+        ],
+        [
+          -2200,
+          3020
+        ]
+      ]
+    },
+    {
+      "id": "C04",
+      "name": "Lighthouse dock channel",
+      "width_m": 65,
+      "points": [
+        [
+          -2800,
+          2680
+        ],
+        [
+          -2860,
+          2820
+        ]
+      ]
+    },
+    {
+      "id": "C05",
+      "name": "Sea pavilion landing",
+      "width_m": 65,
+      "points": [
+        [
+          1850,
+          3170
+        ],
+        [
+          1850,
+          3470
+        ]
+      ]
+    },
+    {
+      "id": "C06",
+      "name": "Reef shrine landing",
+      "width_m": 65,
+      "points": [
+        [
+          2980,
+          2300
+        ],
+        [
+          3400,
+          2300
+        ]
+      ]
+    },
+    {
+      "id": "C07",
+      "name": "Observatory dock connection",
+      "width_m": 65,
+      "points": [
+        [
+          -3150,
+          1550
+        ],
+        [
+          -3150,
+          1700
+        ]
+      ]
+    },
+    {
+      "id": "C08",
+      "name": "Village quay connection",
+      "width_m": 65,
+      "points": [
+        [
+          -2200,
+          1450
+        ],
+        [
+          -2200,
+          1550
+        ]
+      ]
+    },
+    {
+      "id": "C09",
+      "name": "Bridge pavilion dock connection",
+      "width_m": 65,
+      "points": [
+        [
+          -1490,
+          2200
+        ],
+        [
+          -1425,
+          2100
+        ]
+      ]
+    }
+  ],
+  "boat_ports": [
+    {
+      "id": "PORT-B22",
+      "site": "B22",
+      "point": [
+        -2800,
+        2680
+      ]
+    },
+    {
+      "id": "PORT-B19",
+      "site": "B19",
+      "point": [
+        -2200,
+        2680
+      ]
+    },
+    {
+      "id": "PORT-B21",
+      "site": "B21",
+      "point": [
+        -3150,
+        1550
+      ]
+    },
+    {
+      "id": "PORT-B09",
+      "site": "B09",
+      "point": [
+        -2200,
+        1450
+      ]
+    },
+    {
+      "id": "PORT-B20",
+      "site": "B20",
+      "point": [
+        -1490,
+        2200
+      ]
+    },
+    {
+      "id": "PORT-B23",
+      "site": "B23",
+      "point": [
+        1850,
+        3170
+      ]
+    },
+    {
+      "id": "PORT-B24",
+      "site": "B24",
+      "point": [
+        2980,
+        2300
+      ]
+    }
+  ],
+  "pad_levels_m": {
+    "B01": 70,
+    "B02": 8,
+    "B03": 8,
+    "B09": 4,
+    "B19": 8,
+    "B20": 6,
+    "B21": 8,
+    "B22": 10,
+    "B23": 5,
+    "B24": 4
+  },
+  "forest_sample": {
+    "id": "SAMPLE-FC05",
+    "source_cottage": "FC05",
+    "extent_m": 150,
+    "clearing_radius_m": 70,
+    "loop": [
+      [
+        -45,
+        20
+      ],
+      [
+        -55,
+        -35
+      ],
+      [
+        -10,
+        -60
+      ],
+      [
+        50,
+        -45
+      ],
+      [
+        60,
+        10
+      ],
+      [
+        45,
+        45
+      ],
+      [
+        -15,
+        55
+      ],
+      [
+        -45,
+        20
+      ]
+    ],
+    "entry_spur": [
+      [
+        0,
+        6
+      ],
+      [
+        0,
+        10
+      ],
+      [
+        -45,
+        20
+      ]
+    ],
+    "pond": {
+      "centre": [
+        35,
+        22
+      ],
+      "radii": [
+        12,
+        8
+      ],
+      "level_relative_m": -0.7,
+      "status": "Small proposed test pond; does not move or replace FD02"
+    },
+    "rill": {
+      "points": [
+        [
+          -5,
+          -70
+        ],
+        [
+          -5,
+          -62
+        ],
+        [
+          0,
+          -50
+        ],
+        [
+          5,
+          -30
+        ],
+        [
+          12,
+          0
+        ],
+        [
+          23,
+          18
+        ],
+        [
+          35,
+          22
+        ]
+      ],
+      "levels": [
+        0.15,
+        0.1,
+        0,
+        -0.15,
+        -0.3,
+        -0.5,
+        -0.7
+      ],
+      "width_m": 1.1
+    },
+    "bridge": {
+      "centre": [
+        -3.488372093,
+        -58.372093023
+      ],
+      "direction": [
+        0.9701425,
+        0.2425356
+      ],
+      "length_m": 5,
+      "width_m": 3,
+      "deck_relative_m": 0.48,
+      "ramp_length_m": 2
+    },
+    "cottage": {
+      "width_m": 12,
+      "depth_m": 9,
+      "height_m": 8,
+      "floor_relative_m": 0.55,
+      "door_width_m": 2.4,
+      "door_height_m": 2.6
+    },
+    "global_datum": "Derived from coarse base terrain, provisional. Sample has local high-resolution ground, not a complete forest model."
+  },
+  "bedroom_sample": {
+    "source": "../../completion-pass/INT-R02/schedule.json",
+    "coordinate_conversion": "Source x east, y north, z up -> preview x=x, y=z, z=-y",
+    "room": {
+      "width_m": 24,
+      "depth_m": 18,
+      "apex_m": 18
+    },
+    "balcony": {
+      "centre": [
+        -23,
+        -1
+      ],
+      "radius_m": 9,
+      "rail_radius_m": 8.8,
+      "rail_height_m": 1.1
+    },
+    "neck": {
+      "xmin": -16,
+      "xmax": -12,
+      "zmin": -5,
+      "zmax": 3
+    },
+    "west_opening": {
+      "x": -12,
+      "zmin": -5,
+      "zmax": 3,
+      "height_m": 12
+    },
+    "entry": {
+      "z": 9,
+      "width_m": 2.4,
+      "height_m": 3.2,
+      "apron_depth_m": 4
+    },
+    "bed": {
+      "centre": [
+        0,
+        -6.5
+      ],
+      "width_m": 2.2,
+      "depth_m": 2.7,
+      "height_m": 2.8
+    },
+    "status": "Dimensional room sample; placement within palace wings and supports below balcony remain unresolved",
+    "furnishings": [
+      {
+        "id": "CHAIR-W1",
+        "name": "Balcony seat",
+        "centre": [
+          -27,
+          -4
+        ],
+        "width_m": 0.85,
+        "depth_m": 0.9,
+        "height_m": 1.1
+      },
+      {
+        "id": "CHAIR-W2",
+        "name": "Balcony seat",
+        "centre": [
+          -27,
+          2
+        ],
+        "width_m": 0.85,
+        "depth_m": 0.9,
+        "height_m": 1.1
+      },
+      {
+        "id": "TABLE-W",
+        "name": "Balcony table",
+        "centre": [
+          -28,
+          -1
+        ],
+        "width_m": 0.7,
+        "depth_m": 0.7,
+        "height_m": 0.65
+      },
+      {
+        "id": "FOUNTAIN-W",
+        "name": "Small balcony fountain",
+        "centre": [
+          -23,
+          4
+        ],
+        "width_m": 1.2,
+        "depth_m": 1.2,
+        "height_m": 1.1
+      },
+      {
+        "id": "CHAISE-SW",
+        "name": "Reading chaise",
+        "centre": [
+          -8,
+          5
+        ],
+        "width_m": 2.1,
+        "depth_m": 0.85,
+        "height_m": 0.8
+      },
+      {
+        "id": "CONSOLE-SE",
+        "name": "Keepsake console",
+        "centre": [
+          8,
+          6
+        ],
+        "width_m": 1.4,
+        "depth_m": 0.45,
+        "height_m": 0.85
+      }
+    ]
+  },
+  "open_decisions": [
+    {
+      "id": "D-LAKE",
+      "severity": "review",
+      "text": "Larger historical lake versus 650 x 700 m reserved cove: review full lake scope before regional shoreline work."
+    },
+    {
+      "id": "D-HEIGHTS",
+      "severity": "review",
+      "text": "All elevation, pad and water heights here are proposed; they are not recovered source measurements."
+    },
+    {
+      "id": "D-CANALS",
+      "severity": "review",
+      "text": "New tidal channels make a continuous boat corridor; review their visual/geographic fit before final grading."
+    },
+    {
+      "id": "D-ACCESS",
+      "severity": "review",
+      "text": "Wet walking crossings, major grades and some building entrances still require bridge/landing/step design."
+    },
+    {
+      "id": "D-SKY",
+      "severity": "review",
+      "text": "Sky anchors are horizontal projections only; altitude, arrival and fall handling are not decided."
+    },
+    {
+      "id": "D-PALACE",
+      "severity": "review",
+      "text": "Bedroom is a local dimensional test; its final wing/floor placement and balcony structural supports are not solved."
+    },
+    {
+      "id": "D-TRAVEL",
+      "severity": "review",
+      "text": "Long regional routes remain optional corridors. Short local loops and proposed transfers do not implement a fast-travel system."
+    }
+  ]
+}
