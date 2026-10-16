@@ -11,7 +11,7 @@ The 20 km map, reshaped into a crescent of sea mountains with the white waterfal
 | `fill_plan.json` | What goes where, with natural sizes. Edit it and re-run `build_fill.py` to move things. |
 | `crescent.py`, `prep.py`, `build_fill.py` | Terrain reshape, layout copies, and the Blender scene plus renders |
 | `ren/fill-*.jpg`, `ren/fill-contact.jpg` | Preview renders |
-| `crescent-world-filled.blend` | The whole scene in Blender (about 700 MB) |
+| `crescent-world-filled.blend` | The whole Blender scene (about 700 MB); kept in the study thread's scratch area because project storage is full |
 
 ## For the web game
 
