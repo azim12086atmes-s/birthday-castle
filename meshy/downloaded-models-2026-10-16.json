@@ -934,6 +934,106 @@
           "storage": "git"
         }
       ]
+    },
+    {
+      "sourceArchive": "Meshy_AI_The_Arcane_Gateway_1016063724_texture_fbx.zip",
+      "sourceBytes": 105336352,
+      "sourceGitBlob": "c49a4ee577f625c5df2dec2779c3b7c1ccd9eaad",
+      "folder": "meshy/Meshy_AI_The_Arcane_Gateway_1016063724",
+      "files": [
+        {
+          "path": "meshy/Meshy_AI_The_Arcane_Gateway_1016063724/Meshy_AI_The_Arcane_Gateway_1016063724_texture.fbx",
+          "bytes": 85597372,
+          "sha256": "9dadf3e20a023eb1d48fac895880982823b863f4d7beb992119b19bbc602372f",
+          "gitBlob": "3f8649ef78f5747bf22eec965fd6ce6e3cb6eef9",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_The_Arcane_Gateway_1016063724/Meshy_AI_The_Arcane_Gateway_1016063724_texture.png",
+          "bytes": 9428975,
+          "sha256": "377d069809574bb51ec61b65454c16151ad341a8c6517b06f92abe5d0c5de5a9",
+          "gitBlob": "df96fc52347853517407a6245e7800f89540b28d",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_The_Arcane_Gateway_1016063724/Meshy_AI_The_Arcane_Gateway_1016063724_texture_emission.png",
+          "bytes": 283082,
+          "sha256": "29433ff01cd6bd185955f027d27c7b600b889d34234ed27c32859e9a1fe31078",
+          "gitBlob": "bb944aa423b589e38c88867a2c14e993ff00c2a9",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_The_Arcane_Gateway_1016063724/Meshy_AI_The_Arcane_Gateway_1016063724_texture_metallic.png",
+          "bytes": 17247,
+          "sha256": "9ffe66b99cd8e961b278199ed87028f82b97c1faab8138a5cdd144aa086adb19",
+          "gitBlob": "49d520c323df31a93dfc166f6f77cd1ebf50ccb4",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_The_Arcane_Gateway_1016063724/Meshy_AI_The_Arcane_Gateway_1016063724_texture_normal.png",
+          "bytes": 8409859,
+          "sha256": "5fc42dcc39bb7f1d5dc79c30387a7e7328b59770c97da1a21b065c883fcf79f4",
+          "gitBlob": "f331f58c4c141134a4a2bb1997db405ef1c313db",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_The_Arcane_Gateway_1016063724/Meshy_AI_The_Arcane_Gateway_1016063724_texture_roughness.png",
+          "bytes": 1598057,
+          "sha256": "3fcc30c7ebd7c4205bf81790222f72ad44f33568440fde3087d574376b7bd2ba",
+          "gitBlob": "71d06ab3d6e8b723f3e3f668bdcf6460f9526cd7",
+          "storage": "git"
+        }
+      ]
+    },
+    {
+      "sourceArchive": "Meshy_AI_Enchanted_Garden_Gate_1016062236_texture_fbx.zip",
+      "sourceBytes": 107136248,
+      "sourceGitBlob": "c93173f48398fba44dac8c50ccf4f7fe95852677",
+      "folder": "meshy/Meshy_AI_Enchanted_Garden_Gate_1016062236",
+      "files": [
+        {
+          "path": "meshy/Meshy_AI_Enchanted_Garden_Gate_1016062236/Meshy_AI_Enchanted_Garden_Gate_1016062236_texture.fbx",
+          "bytes": 54120124,
+          "sha256": "e90d715eed948e87353ce8105e2e3cb97e98d76e6aed4d7330a126bac3977e89",
+          "gitBlob": "1fc1acb82f30b7a1f42ec97adf544090bcec545b",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_Enchanted_Garden_Gate_1016062236/Meshy_AI_Enchanted_Garden_Gate_1016062236_texture.png",
+          "bytes": 21180229,
+          "sha256": "7ca6b55a059aff9de083a3401c2d551a972a4c2afd25f4f480b84ef01815daa9",
+          "gitBlob": "7d9159d9fe285b67c802ec3a402a0b31373a600d",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_Enchanted_Garden_Gate_1016062236/Meshy_AI_Enchanted_Garden_Gate_1016062236_texture_emission.png",
+          "bytes": 969983,
+          "sha256": "38a8c3ee86d1169770c51a2ee69990635617ddd4f64e4741f821c3ed234e65b6",
+          "gitBlob": "c1623f60751549d1502b10693af4bfe82248b050",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_Enchanted_Garden_Gate_1016062236/Meshy_AI_Enchanted_Garden_Gate_1016062236_texture_metallic.png",
+          "bytes": 31558,
+          "sha256": "d00ae9d2e523b91f3e58ebf6191d23ab569224c8147477ab3242158e720fa225",
+          "gitBlob": "e0ac4c983c3208c2a0a7d0d98728fa85637aa219",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_Enchanted_Garden_Gate_1016062236/Meshy_AI_Enchanted_Garden_Gate_1016062236_texture_normal.png",
+          "bytes": 29987386,
+          "sha256": "946e9c743b0e79bedfd8403293fd538746154f474ac820df1c6dec2ea9cf2687",
+          "gitBlob": "c07a2b085ec4ef209f480d1fe81013f616fdb782",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_Enchanted_Garden_Gate_1016062236/Meshy_AI_Enchanted_Garden_Gate_1016062236_texture_roughness.png",
+          "bytes": 845136,
+          "sha256": "9ad133b646c2b2763669df9816b98e9a5d8e0be504161c9a70e51c9e54e41aa6",
+          "gitBlob": "8624d259f3e56a77542229c49a9c1ce5990faec4",
+          "storage": "git"
+        }
+      ]
     }
   ]
 }
