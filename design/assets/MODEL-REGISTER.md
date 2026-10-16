@@ -31,6 +31,28 @@ Every Meshy model on GitHub `main/meshy/` (163 entries, 153 distinct models). Wh
 
 Also built from these: the [open-world terrain](../open-world/open-world-terrain-20km.blend) (no Meshy model placed yet, stand-in trees), and close-up shots in `assets/closeups/`.
 
+## Batch 1 opened (Oct 16): 16 models with close-ups
+Files: `assets/meshy-github/` in the project files. Close-ups: `assets/closeups/` and the close-up page. Sharpness is texture pixels per metre at the size shown (above about 30 holds up close).
+
+| Model | What it is | Use for | Shown at | Triangles | Texture | Sharpness |
+|---|---|---|---|---|---|---|
+| [Pin_tree](https://github.com/azim12086atmes-s/birthday-castle/tree/main/meshy/Meshy_AI_Pin_tree__1015143921) | Fern-like conifer | Fjord taiga, forest edges | 18 m | 165k | 2048 | 56 |
+| [A_towering_ancient_oa](https://github.com/azim12086atmes-s/birthday-castle/tree/main/meshy/Meshy_AI_A_towering_ancient_oa_1016001515) | Ancient oak, hollow trunk | Temperate forest hero tree, Mother Tree area | 25 m | 89k | 2048 | 23 |
+| [Tree](https://github.com/azim12086atmes-s/birthday-castle/tree/main/meshy/Meshy_AI_Tree_1015182042) | Broadleaf tree, dense crown | Temperate forest (7.7M tris: needs a lighter copy for scatter) | 15 m | 7.7M | 2048 | 43 |
+| [Enchanted_Wisteria_Tr](https://github.com/azim12086atmes-s/birthday-castle/tree/main/meshy/Meshy_AI_Enchanted_Wisteria_Tr_1015133748) | Wisteria tree, purple hanging blossom | Blossom groves, palace gardens | 12 m | 4.2M | 2048 | 47 |
+| [A_majestic_forest_fer](https://github.com/azim12086atmes-s/birthday-castle/tree/main/meshy/Meshy_AI_A_majestic_forest_fer_1016090100) | Fern plant | Forest floor, glowwood | 3 m | 1.8M | 2048 | 302 |
+| [A_sprawling_forest_bu](https://github.com/azim12086atmes-s/birthday-castle/tree/main/meshy/Meshy_AI_A_sprawling_forest_bu_1016091300) | Lilac blossom shrub | Blossom groves, meadows | 4 m | 4.4M | 2048 | 140 |
+| [Meadow_Rocks](https://github.com/azim12086atmes-s/birthday-castle/tree/main/meshy/Meshy_AI_Meadow_Rocks_1016084404) | Rock cluster with purple flowers | Meadows, path edges | 4 m | 98k | 2048 | 257 |
+| [Rock_Formation_Collec](https://github.com/azim12086atmes-s/birthday-castle/tree/main/meshy/Meshy_AI_Rock_Formation_Collec_1016084240) | Boulder set (about 40 stones) | Scree, river beds, coast | 10 m | 2k | 2048 | 140 |
+| [Rock_Formations_Colle](https://github.com/azim12086atmes-s/birthday-castle/tree/main/meshy/Meshy_AI_Rock_Formations_Colle_1016100656) | Mossy boulder set | Forest floor, coast | 10 m | 2k | 2048 | 149 |
+| [Windmill_Haven](https://github.com/azim12086atmes-s/birthday-castle/tree/main/meshy/Meshy_AI_Windmill_Haven_1016084954) | Stone windmill | B13 Windmill (drawn 55 m; model reads well at about 20 m) | 20 m | 410k | 2048 | 48 |
+| [Majestic_Pagoda_Palac](https://github.com/azim12086atmes-s/birthday-castle/tree/main/meshy/Meshy_AI_Majestic_Pagoda_Palac_1016070716) | Tiered pagoda palace on a walled base | B06 Pagoda | 85 m | 6.3M | 2048 | 4 |
+| [Pantheon](https://github.com/azim12086atmes-s/birthday-castle/tree/main/meshy/Meshy_AI_Pantheon_1016090601) | Domed temple with portico | B07 Temple Rotundas | 60 m | 4k | 8192 | 38 |
+| [Ancient_Stone_Amphith](https://github.com/azim12086atmes-s/birthday-castle/tree/main/meshy/Meshy_AI_Ancient_Stone_Amphith_1016090619) | Small stone amphitheatre (5k tris) | B08 Colosseum is drawn 280 m; this model only holds up to about 40 m | 190 m | 5k | 2048 | 5 |
+| [Basalt_Arch](https://github.com/azim12086atmes-s/birthday-castle/tree/main/meshy/Meshy_AI_Basalt_Arch_1016102153) | Dark basalt arch | B11 Crescent Arch, east coast | 70 m | 1.4M | 2048 | 18 |
+| [Isle_of_the_Stone_Spi](https://github.com/azim12086atmes-s/birthday-castle/tree/main/meshy/Meshy_AI_Isle_of_the_Stone_Spi_1016100712) | Green crystal spires on white rock | Sky isles, crystal caves | 150 m | 890k | 2048 | 8 |
+| [Devils_Tower](https://github.com/azim12086atmes-s/birthday-castle/tree/main/meshy/Meshy_AI_Devils_Tower_1016100705) | Tall stump-like butte on a rock base | Karst pillars, canyon buttes | 150 m | 519k | 2048 | 6 |
+
 ## New, not used yet (130)
 "Could fit" is a guess from the model's name only; none of these have been opened yet.
 
