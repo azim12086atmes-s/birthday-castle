@@ -1,0 +1,12 @@
+{
+ "size": 4033,
+ "world_m": 20691,
+ "metres_per_quad": 5.132,
+ "height_min_m": -250.0,
+ "height_max_m": 1550.0,
+ "unreal": {
+  "scale_xy_cm": 513.2,
+  "scale_z": 351.56,
+  "location_z_cm": 65000.0
+ }
+}
