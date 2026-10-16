@@ -1929,6 +1929,99 @@
           "storage": "git"
         }
       ]
+    },
+    {
+      "sourceArchive": "Meshy_AI_Urban_Debris_1016090050_texture_fbx.zip",
+      "sourceBytes": 117003871,
+      "sourceGitBlob": "860cf46d93095a245c47bf9585d3bb05dd7ffc19",
+      "folder": "meshy/Meshy_AI_Urban_Debris_1016090050",
+      "files": [
+        {
+          "path": "meshy/Meshy_AI_Urban_Debris_1016090050/Meshy_AI_Urban_Debris_1016090050_texture.fbx",
+          "bytes": 103091596,
+          "sha256": "14f1e498a824245f326d1f93b220cd1176c80a233975f9fa391f9195241bc80b",
+          "gitBlob": "80bef4fced7620204d338239c0a35f598b60ddc1",
+          "storage": "git-lfs"
+        },
+        {
+          "path": "meshy/Meshy_AI_Urban_Debris_1016090050/Meshy_AI_Urban_Debris_1016090050_texture.png",
+          "bytes": 4431220,
+          "sha256": "383ceec73df2b88eedf70fe78f440a12ba84e1286268ed4b8a59d0d15ac61b12",
+          "gitBlob": "7b7e7dcf08bf0b8c0357c9ce574dfa6b8ed6ae83",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_Urban_Debris_1016090050/Meshy_AI_Urban_Debris_1016090050_texture_metallic.png",
+          "bytes": 650642,
+          "sha256": "9a19ddc19a10075f6e964210f83caded89e1e4ef1d932ab76ef8aa3803cd0780",
+          "gitBlob": "ac22fa0bd3890abfeac53f447caec5d0f3865572",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_Urban_Debris_1016090050/Meshy_AI_Urban_Debris_1016090050_texture_normal.png",
+          "bytes": 7262692,
+          "sha256": "fde3b3f1d1637a890df9a67a6e1781915853624d4c7c5897150b1514c685469b",
+          "gitBlob": "52979004c6ac8896d57a9898964c338d2d8a433c",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_Urban_Debris_1016090050/Meshy_AI_Urban_Debris_1016090050_texture_roughness.png",
+          "bytes": 1566377,
+          "sha256": "8fdd0e2d635c5361257e398efd24ec141637dc5368647f7cdffc01a591c524df",
+          "gitBlob": "c2b44e77f49ea050de77456604a40574c7152e65",
+          "storage": "git"
+        }
+      ]
+    },
+    {
+      "sourceArchive": "Meshy_AI_Kalliope_House_Comple_1016090421_image-to-3d-texture_fbx (1).zip",
+      "sourceBytes": 121519175,
+      "sourceGitBlob": "fd202ed753b73e119e7c4549408446fa1ca6e14d",
+      "folder": "meshy/Meshy_AI_Kalliope_House_Comple_1016090421_image-to-3d-texture_fbx",
+      "files": [
+        {
+          "path": "meshy/Meshy_AI_Kalliope_House_Comple_1016090421_image-to-3d-texture_fbx/Meshy_AI_Kalliope_House_Comple_1016090421_image-to-3d-texture.fbx",
+          "bytes": 58207740,
+          "sha256": "dc44165585ff1da82a4425c7d05fbd44fcd1c15ecd28197e6b1d8375c9ce4fd1",
+          "gitBlob": "53b03c487856cd1703910bac8a3c6b298fac510b",
+          "storage": "git-lfs"
+        },
+        {
+          "path": "meshy/Meshy_AI_Kalliope_House_Comple_1016090421_image-to-3d-texture_fbx/Meshy_AI_Kalliope_House_Comple_1016090421_image-to-3d-texture.png",
+          "bytes": 30871254,
+          "sha256": "58c83baa62847749b015172f8c484b13967116c7cacd7b22dbec39b4552e32ff",
+          "gitBlob": "de5f3e0eb6e3e2b42de52c3b4cf95246c4a5c565",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_Kalliope_House_Comple_1016090421_image-to-3d-texture_fbx/Meshy_AI_Kalliope_House_Comple_1016090421_image-to-3d-texture_emission.png",
+          "bytes": 17023,
+          "sha256": "250f109602c7235528bad59992e0e347ac283f98b21404f217e31cc2b40b4f69",
+          "gitBlob": "b346bd16d255f85d51bc6e75ef9a5ccd894c8108",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_Kalliope_House_Comple_1016090421_image-to-3d-texture_fbx/Meshy_AI_Kalliope_House_Comple_1016090421_image-to-3d-texture_metallic.png",
+          "bytes": 4145,
+          "sha256": "e7e746011b4aa5eb384e36b062d5d0689172afe30d3a2e0a40cd35696ea12d0b",
+          "gitBlob": "600c4d073e93d6f2930d24721edc0b36292cb654",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_Kalliope_House_Comple_1016090421_image-to-3d-texture_fbx/Meshy_AI_Kalliope_House_Comple_1016090421_image-to-3d-texture_normal.png",
+          "bytes": 31051677,
+          "sha256": "94ab579da998e2ee5661c664cb3c0b7d86c40c6483aba01fb73060981a2c1486",
+          "gitBlob": "d2f9161ad58062eccbc0e09cf50575ae7342a4c3",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_Kalliope_House_Comple_1016090421_image-to-3d-texture_fbx/Meshy_AI_Kalliope_House_Comple_1016090421_image-to-3d-texture_roughness.png",
+          "bytes": 1365216,
+          "sha256": "532426bc31e169c436142eb25f594df4d92447a03ddda6adc7106249d4bd501d",
+          "gitBlob": "81d0e50a50c08699974f97a0e82097a61ad7eff6",
+          "storage": "git"
+        }
+      ]
     }
   ]
 }
