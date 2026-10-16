@@ -2573,6 +2573,49 @@
           "storage": "git"
         }
       ]
+    },
+    {
+      "sourceArchive": "Meshy_AI_Golden_Rose_Teacup_1016064856_texture_fbx.zip",
+      "sourceBytes": 171783287,
+      "sourceGitBlob": "fc77aa97a4808f1ed31afb2fd7613d378947e994",
+      "folder": "meshy/Meshy_AI_Golden_Rose_Teacup_1016064856",
+      "files": [
+        {
+          "path": "meshy/Meshy_AI_Golden_Rose_Teacup_1016064856/Meshy_AI_Golden_Rose_Teacup_1016064856_texture.fbx",
+          "bytes": 79162188,
+          "sha256": "d5de55cbfa09b5ad541554e1d2e17d65854dc44fdc1fb5b12241478032ddda1e",
+          "gitBlob": "d110f785321f7250ccd34113969c093b816b8ca8",
+          "storage": "git-lfs"
+        },
+        {
+          "path": "meshy/Meshy_AI_Golden_Rose_Teacup_1016064856/Meshy_AI_Golden_Rose_Teacup_1016064856_texture.png",
+          "bytes": 59084596,
+          "sha256": "6eeaf772c20f21304618963a6956c23e38d862a5bdb3105a89c3a88b51d79db2",
+          "gitBlob": "261b469fc30823bef65ccc087519a14449b01dea",
+          "storage": "git-lfs"
+        },
+        {
+          "path": "meshy/Meshy_AI_Golden_Rose_Teacup_1016064856/Meshy_AI_Golden_Rose_Teacup_1016064856_texture_metallic.png",
+          "bytes": 6358727,
+          "sha256": "76ac33cc36ef50e4f6edde7a150a3053e140c927565c0e284ffacd87ef99e35f",
+          "gitBlob": "d0b49ffe7e3c8968ee9390ee19905f05eff3c479",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_Golden_Rose_Teacup_1016064856/Meshy_AI_Golden_Rose_Teacup_1016064856_texture_normal.png",
+          "bytes": 21493106,
+          "sha256": "49eb11afc7ac4d6f42a79247c0a22dc9bbad09e5ff82213d5853c1819225b56c",
+          "gitBlob": "a5ce5ff72ac97673c4732597e0d17ccc669fd1bc",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_Golden_Rose_Teacup_1016064856/Meshy_AI_Golden_Rose_Teacup_1016064856_texture_roughness.png",
+          "bytes": 5683206,
+          "sha256": "88d85523863a8b37b6e25da50466d282a69cf2769565950d1dba8a7c68debbac",
+          "gitBlob": "8a1d96bb0d7d2f448f68b2e1a44ca50e1d698ebb",
+          "storage": "git"
+        }
+      ]
     }
   ]
 }
