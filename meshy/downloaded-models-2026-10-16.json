@@ -2523,6 +2523,56 @@
           "storage": "git"
         }
       ]
+    },
+    {
+      "sourceArchive": "Meshy_AI_Emberkeep_Turret_1016064647_texture_fbx.zip",
+      "sourceBytes": 165077831,
+      "sourceGitBlob": "632290a511a59f1ef98b20f72de653581b97980b",
+      "folder": "meshy/Meshy_AI_Emberkeep_Turret_1016064647",
+      "files": [
+        {
+          "path": "meshy/Meshy_AI_Emberkeep_Turret_1016064647/Meshy_AI_Emberkeep_Turret_1016064647_texture.fbx",
+          "bytes": 99326876,
+          "sha256": "b187661d50ae09ed9ceb991b31b7a014fdd153aa5cc2baed284c9c6405fdd84e",
+          "gitBlob": "36b40ba52208ea8c72604d3c42749d022c7ce21e",
+          "storage": "git-lfs"
+        },
+        {
+          "path": "meshy/Meshy_AI_Emberkeep_Turret_1016064647/Meshy_AI_Emberkeep_Turret_1016064647_texture.png",
+          "bytes": 31839599,
+          "sha256": "da7b3eb305148ab748f359a68f968f65b3aad37cc1262cf6183bc776f273ee39",
+          "gitBlob": "c93519e9853dd39d45e855f388438aa405ced5ff",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_Emberkeep_Turret_1016064647/Meshy_AI_Emberkeep_Turret_1016064647_texture_emission.png",
+          "bytes": 214469,
+          "sha256": "b8d330b3b2f25a88ac392aa1ccfaec51c4a36ac1ebe3389f3a66529077b260f3",
+          "gitBlob": "3a28c79dcc31575620df9dac17658532cb2417f3",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_Emberkeep_Turret_1016064647/Meshy_AI_Emberkeep_Turret_1016064647_texture_metallic.png",
+          "bytes": 15954,
+          "sha256": "b9c9a19b3aecb9b79c3dfd29d184e30f29bfafe4c82c75807cb1f00d10686327",
+          "gitBlob": "b75f8007a4be8bd32d9a774ced23e8fd13e52b4d",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_Emberkeep_Turret_1016064647/Meshy_AI_Emberkeep_Turret_1016064647_texture_normal.png",
+          "bytes": 32345395,
+          "sha256": "c131640d09db8473fd67e7fca678af11ba97650060684ccb1b2600072dbfd5ea",
+          "gitBlob": "1486e0426547cf42b9eb2b2c881b8fcef602f011",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_Emberkeep_Turret_1016064647/Meshy_AI_Emberkeep_Turret_1016064647_texture_roughness.png",
+          "bytes": 1333826,
+          "sha256": "05b65b13006b16cde56948b02d4ef2c7aa9ca1ee5aa02e0883700d49b1f87e70",
+          "gitBlob": "dfb3df589f93561507e3de6ae41b2a35529df6cb",
+          "storage": "git"
+        }
+      ]
     }
   ]
 }
