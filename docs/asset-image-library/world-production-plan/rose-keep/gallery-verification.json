@@ -1,0 +1,29 @@
+{
+  "scope": "Rose Keep reference-gallery smoke check; no game or geometry checks",
+  "checks": [
+    {
+      "sheet_id": "B04-STRUCT-001",
+      "decoded_dimensions": [
+        1536,
+        1024
+      ],
+      "open_details": 1,
+      "loaded_image_elements": 1
+    },
+    {
+      "sheet_id": "B04-DETAIL-001",
+      "decoded_dimensions": [
+        1536,
+        1024
+      ],
+      "open_details": 1,
+      "loaded_image_elements": 1
+    }
+  ],
+  "closed_image_elements_have_no_src": true,
+  "page_errors": [],
+  "selected_image_hashes": {
+    "B04-STRUCT-001": "2147e46e261192e9770c64a38ac20f365b92a71d0b42c1b4532bf0050f514aac",
+    "B04-DETAIL-001": "9e1233a5c25660c81b9fb635cc9b90323e06f9a82ccc7cca501fd38453ccce20"
+  }
+}

@@ -13,13 +13,17 @@ assert.equal(hash(await readFile(new URL('../../world-layout/layout.json', dir))
 const kit = await read('../kit-fit/contract.json');
 const ids = new Set();
 const sheets = {};
-for (const id of batch.reference_budget.reserved_missing_sheets) {
+for (const id of batch.reference_budget.dedicated_sheet_ids) {
   const folder = `../../completion-pass/${id}/`;
   const schedule = await read(`${folder}schedule.json`);
   const catalog = await read(`${folder}components.json`);
   const files = await readdir(new URL(folder, dir));
   sheets[id] = { catalog, schedule, images: files.filter(x => /\.(png|jpe?g|webp)$/i.test(x)) };
-  assert.equal(sheets[id].images.length, 0, `${id} now has artwork; update missing-reference status`);
+  assert.equal(schedule.outputs.length, 1, `${id} must have one selected output`);
+  const output = schedule.outputs[0];
+  assert.equal(hash(await readFile(new URL(`../../${output.file}`, dir))), output.sha256, `${id} reference hash mismatch`);
+  assert.equal(schedule.physical_join_fit_verified, false);
+  assert.equal(schedule.view_geometry_parity_verified, false);
 }
 for (const a of batch.assets) {
   assert(!ids.has(a.asset_id), 'Duplicate asset ID');
@@ -29,6 +33,7 @@ for (const a of batch.assets) {
   const sheet = a.asset_id.replace(/-[SD]\d+$/, '');
   assert(sheets[sheet].catalog.components.some(c => c.asset_id === a.asset_id), `Unregistered slot: ${a.asset_id}`);
   assert(sheets[sheet].schedule.parts.some(c => c.asset_id === a.asset_id), `Unscheduled slot: ${a.asset_id}`);
+  assert.deepEqual(sheets[sheet].catalog.components.find(c => c.asset_id === a.asset_id).dimensions_m_proposed, a.dimensions_m_proposed, `Schedule/handoff dimension mismatch: ${a.asset_id}`);
   const [x0,y0,x1,y1] = a.source_region_xyxy;
   assert(x0 >= 0 && y0 >= 0 && x1 <= batch.source.pixel_dimensions[0] && y1 <= batch.source.pixel_dimensions[1] && x1 > x0 && y1 > y0);
 }
@@ -72,7 +77,7 @@ ${a.construction}
 `).join('\n');
 const md = `# Rose Keep — first 3D asset batch
 
-[World production plan](../README.md) · [Rose Keep brief](../../world-layout/location-audit/B04/DESIGN-BRIEF.md) · [Machine-readable handoff](asset-handoff.json) · [Validation record](validation.json)
+[World production plan](../README.md) · [Rose Keep brief](../../world-layout/location-audit/B04/DESIGN-BRIEF.md) · [Machine-readable handoff](asset-handoff.json) · [Validation record](validation.json) · [One-image gallery browser check](gallery-verification.json)
 
 Prepare **eight reusable meshes**, in the order below: four structural sections, then four matching fittings. These let us inspect one entrance/stair/terrace assembly and a separate turret specimen before requesting the rest of the keep. This is a preparation list, not a delivered model pack.
 
@@ -95,11 +100,13 @@ ${fittings.map(row).join('\n')}
 
 Start with the **wall/entrance host and stair**. Test their openings and steps before spending effort on the turret, roof and surface ornament. D01 is a roof quadrant: four instances make one roof. D03 is an insert: its host needs an actual cutout.
 
-## Reference gaps and image limit
+## Saved references and image limit
 
-**B04-STRUCT-001 and B04-DETAIL-001 are reserved schedules, not finished reference images.** Their directories currently contain schedules and component records only. The existing structural records repeat the generic 8 × 6 × 12 m placeholder for all four parts. This handoff proposes separate fit dimensions above; it does not silently overwrite those older schedules or certify their dimensions.
+The two existing reserved sheets are now saved: [B04-STRUCT-001 — four structural sections](../../completion-pass/B04-STRUCT-001/README.md) and [B04-DETAIL-001 — twelve fittings](../../completion-pass/B04-DETAIL-001/README.md). Open either separately to keep only one image in view. Both R01 drafts and the exact generation/correction prompts are preserved. User reference approval remains pending.
 
-Before high-fidelity image-to-3D work, make the missing isolated construction views within those **same two reserved sheets**: one four-section structural sheet, and one decor sheet containing the existing twelve detail slots. The four fittings prioritised here are a subset of that decor sheet. Do not commission eight new reference sheets or invent a different keep. No new images, reference slots or accepted models are added by this list.
+The old generic structural dimensions have been replaced with this handoff's proposed fit dimensions in the B04 schedules and component records. This corrects planning placeholders; it does not certify the generated pixels as accurate measurements. The four fittings prioritised here are a subset of the twelve-part decor sheet. This pass uses **two existing slots**, adds no new reservations, and adds no accepted models.
+
+Known limits: the structural sheet's small stair plan and turret plan are schematic rather than verified projections. The wall's host arch trim must not be blindly doubled with the separate D07 surround. D09 must use flush stone inlay even where painted rose shading suggests relief. Cornice closure, roof-quadrant joins, rail corners and all scale/contact details need geometry checks before production use.
 
 ## Join and export rules
 
@@ -127,7 +134,7 @@ Reuse the tested [K09 stair/landing dimensions](../kit-fit/contract.json) and in
 
 ${batch.deferred.map(x=>`- ${x}`).join('\n')}
 
-After these eight parts fit, finish source-specific cornices, rail returns, ledge supports and climbing-rose attachments. Then inspect **B25 Crystal Conservatory** separately, using its glass/gold dome source rather than recolouring this keep. Regional route and entrance evidence still comes before dense planting and final dressing. Bath/spa, kitchen/service and music rooms remain outside the agreed playable scope.
+Next build the source-compatible Function specimen for these eight priority parts, using the dimension contract to resolve illustration discrepancies. Test source-specific cornices, rail returns, ledge supports and climbing-rose attachments as they are needed. Inspect **B25 Crystal Conservatory** separately, using its glass/gold dome source rather than recolouring this keep. Regional route and entrance evidence still comes before dense planting and final dressing. Bath/spa, kitchen/service and music rooms remain outside the agreed playable scope.
 
 Rebuild/check this handoff from the repository root with \`node docs/asset-image-library/world-production-plan/rose-keep/build-handoff.mjs\`. Validation checks source hashes, registered IDs, source-region bounds, shared stair dimensions and proposed join coordinates. It does not approve artwork or model topology.
 `;
@@ -138,9 +145,10 @@ await writeFile(new URL('validation.json', dir), JSON.stringify({
   canonical_layout_unchanged: true,
   source_hash_matches: true,
   source_images_inspected: 1,
-  new_images_generated: 0,
+  selected_reference_sheets_saved: Object.keys(sheets).length,
+  generated_attempts_preserved: Object.values(sheets).reduce((n,s)=>n+s.schedule.outputs.length+s.schedule.previous_attempts.length,0),
   existing_component_ids_verified: ids.size,
-  missing_reserved_sheet_images: Object.keys(sheets),
+  missing_reserved_sheet_images: [],
   k09_dimensions_match: true,
   proposed_join_datums_checked: 3,
   proposed_join_datums_match: true,

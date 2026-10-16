@@ -1,0 +1,11 @@
+Edit this supplied Rose Keep fittings sheet, retaining title, all twelve IDs/names, all labels, ivory background, blush/cream stone and restrained gold style. Preserve D01, D03, D04, D07, D08, D10, D11, D12. Make only these four construction corrections:
+
+D09 FLOOR TILE: replace the visibly raised sculpted central rose with an absolutely FLUSH rose-and-leaf colour inlay lying IN the stone. Broad perfectly flat square walkable top with no projecting petals, raised centre or embossed flowers. Pattern can keep its colours but is thin stone mosaic/marquetry, no cast relief or shadow from raised petals. Keep the 1.5 m square tile and 0.12 m thin side edge.
+
+D02 CURVED TURRET CORNICE: remove the tall end posts and caps. It is one continuous curved moulding strip with identical clean planar radial cut ends, no pillars or end-specific embellishments. Retain the shallow rose frieze and stepped section. Twelve of these 30-degree pieces must be able to form a smooth 6 m radius ring with no doubled posts at seams. Keep existing numeric caption.
+
+D05 PARAPET REPEAT: redraw the ONE 1 m long by 1.1 m tall object at its correct physically upright proportion, slightly TALLER than its length rather than a stretched long fence. One narrow arched opening with slim side uprights and matching cut-end profiles, same pale stone and restrained rose motif. It is a single short repeat, not three long arches compressed into a 1 m caption. Keep its stated dimensions and show depth 0.12 m without huge feet.
+
+D06 CORNER CONNECTOR: one narrow/slender L-shaped corner component, two short perpendicular ends meeting at 90 degrees, footprint 0.35 by 0.35 m, height 1.1 m. Visually much taller than its small footprint, NOT a wide square tower, cage or two full railing bays. No large finial. Match D05's top moulding and cut-end section. Leave the open space outside its L profile empty. Keep its ID and caption.
+
+Keep the whole 4-column by 3-row sheet readable, no new assets, no scenery and no cropped objects. The footer remains proposed fittings, with physical joins and topology unverified.

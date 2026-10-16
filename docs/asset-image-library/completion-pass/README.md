@@ -8,7 +8,7 @@ Main palace keeps GEN-37’s front, continuous angled/curved stepped wings, rose
 
 The coverage checks ask whether each form already exists, whether its construction/contact view is missing, whether interior ceiling/arch/wall/floor parts are present, whether water inlet/bend/junction/outlet parts are covered, and whether ecology fits each site. Reuse original plants, lighting, furnishings and hero wishes before new drawings. Each room snapshot is distinct from joinable structural shells and isolated details. Smaller views are not new model targets. Full IDs are in metadata; shorter D/A/S labels resolve under the sheet title.
 
-Progress: **33/119 queued sheets saved;216 component targets indexed so far**. Library: **126 selected sheets saved;212/230 selected or reserved;848 archive images**.230is a ceiling, not a target to pad.
+Progress: **35/119 queued sheets saved;232 component targets indexed so far**. Library: **128 selected sheets saved;212/230 selected or reserved;852 archive images**.230is a ceiling, not a target to pad.
 
 | Sheet | Gap covered | Parts | Status |
 | --- | --- | ---: | --- |
@@ -40,8 +40,8 @@ Progress: **33/119 queued sheets saved;216 component targets indexed so far**. L
 | [B02-INNER-DETAIL-001](B02-INNER-DETAIL-001/schedule.json) | Moon Water Palace — interior surfaces and fittings | 16 | Saved reference; fit/model pending |
 | [B03-STRUCT-001](B03-STRUCT-001/schedule.json) | Star Chapel — structural sections | 4 | Queued; not generated |
 | [B03-DETAIL-001](B03-DETAIL-001/schedule.json) | Star Chapel — surface and detail kit | 12 | Queued; not generated |
-| [B04-STRUCT-001](B04-STRUCT-001/schedule.json) | Rose Keep — structural sections | 4 | Queued; not generated |
-| [B04-DETAIL-001](B04-DETAIL-001/schedule.json) | Rose Keep — surface and detail kit | 12 | Queued; not generated |
+| [B04-STRUCT-001](B04-STRUCT-001/schedule.json) | Rose Keep — structural sections | 4 | Saved reference; fit/model pending |
+| [B04-DETAIL-001](B04-DETAIL-001/schedule.json) | Rose Keep — surface and detail kit | 12 | Saved reference; fit/model pending |
 | [B05-STRUCT-001](B05-STRUCT-001/schedule.json) | Misty Lantern Keep — structural sections | 4 | Queued; not generated |
 | [B05-DETAIL-001](B05-DETAIL-001/schedule.json) | Misty Lantern Keep — surface and detail kit | 12 | Queued; not generated |
 | [B06-STRUCT-001](B06-STRUCT-001/schedule.json) | Misty Pagoda — structural sections | 4 | Queued; not generated |

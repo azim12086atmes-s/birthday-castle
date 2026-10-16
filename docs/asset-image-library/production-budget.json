@@ -115,8 +115,11 @@
       "name": "Rose Keep",
       "dedicated_sheet_cap": 2,
       "scope": "Source-dependent structure/component views plus a packed decor sheet; reuse shared parts",
-      "status": "Source brief audited; 0/2 dedicated reference sheets saved; all physical geometry/runtime pending",
-      "generated_reference_sheet_ids": [],
+      "status": "Source brief audited; 2/2 dedicated reference sheets saved pending user review; physical geometry/runtime pending",
+      "generated_reference_sheet_ids": [
+        "B04-STRUCT-001",
+        "B04-DETAIL-001"
+      ],
       "source_brief": "world-layout/location-audit/B04/DESIGN-BRIEF.md"
     },
     {
@@ -1790,20 +1793,26 @@
       "owner": "other-map-buildings",
       "family": "B04",
       "title": "Rose Keep \u2014 structural sections",
-      "status": "reserved-for-verified-gap",
-      "file": "",
-      "sha256": "",
-      "generation_attempts_in_this_pass": 0
+      "status": "generated-pending-review",
+      "file": "completion-pass/B04-STRUCT-001/B04-STRUCT-001-R02.png",
+      "sha256": "2147e46e261192e9770c64a38ac20f365b92a71d0b42c1b4532bf0050f514aac",
+      "generation_attempts_in_this_pass": 2,
+      "retry_reasons": [
+        "R01 main staircase illustrates more than ten treads despite the ten-riser contract; correct the stair drawing and matching plan/section."
+      ]
     },
     {
       "sheet_id": "B04-DETAIL-001",
       "owner": "other-map-buildings",
       "family": "B04",
       "title": "Rose Keep \u2014 surface and detail kit",
-      "status": "reserved-for-verified-gap",
-      "file": "",
-      "sha256": "",
-      "generation_attempts_in_this_pass": 0
+      "status": "generated-pending-review",
+      "file": "completion-pass/B04-DETAIL-001/B04-DETAIL-001-R02.png",
+      "sha256": "9e1233a5c25660c81b9fb635cc9b90323e06f9a82ccc7cca501fd38453ccce20",
+      "generation_attempts_in_this_pass": 2,
+      "retry_reasons": [
+        "R01 D09 depicts raised rose relief instead of flush walkable inlay; D02 has end posts breaking the ring repeat, and D05/D06 proportions need to match stated dimensions."
+      ]
     },
     {
       "sheet_id": "B05-STRUCT-001",
@@ -2832,7 +2841,7 @@
     "side_rear_schedule": "palace-side-rear/schedule.json",
     "complete_roof_plan": "palace-roof-plan/schedule.json"
   },
-  "production_pass_status": "Completion pass: 33/119 queued missing-reference sheets saved. All geometry, UVs, anatomy, scale and runtime remain unverified.",
+  "production_pass_status": "Completion pass: 35/119 queued missing-reference sheets saved. All geometry, UVs, anatomy, scale and runtime remain unverified.",
   "structural_sheet_rule": "Display source-fitted assemblies with existing canonical decor so identity and proportions can be checked. Bare host views are internal construction proposals, not replacements for the original decorated wing references.",
   "generation_paused": true,
   "pause_reason": "Requested roof/stair proposal finished. Painted attempt rejected; coordinate diagram covers33 placements and11 stair links. Source-depth registration remains a layout task.",
@@ -3192,5 +3201,5 @@
     "completion_pass_revision": "10fauna references planned in total:2existingforest,2freshwater,3coastal,1jungle,1dry,1magical. Garden fauna reuseforest/insect forms instead of duplicating."
   },
   "world_production_plan": "world-production-plan/README.md",
-  "current_work_mode": "Planning first: no further image generation during the world-sequence/depth planning pass. Existing references and queue preserved."
+  "current_work_mode": "Scoped Rose Keep missing-reference pass resumed by owner on 2026-10-16: B04 two reserved sheets saved; exact fit and regional terrain/arrival work remain pending. Other planning holds remain in effect."
 }

@@ -1,6 +1,6 @@
 # Rose Keep — first 3D asset batch
 
-[World production plan](../README.md) · [Rose Keep brief](../../world-layout/location-audit/B04/DESIGN-BRIEF.md) · [Machine-readable handoff](asset-handoff.json) · [Validation record](validation.json)
+[World production plan](../README.md) · [Rose Keep brief](../../world-layout/location-audit/B04/DESIGN-BRIEF.md) · [Machine-readable handoff](asset-handoff.json) · [Validation record](validation.json) · [One-image gallery browser check](gallery-verification.json)
 
 Prepare **eight reusable meshes**, in the order below: four structural sections, then four matching fittings. These let us inspect one entrance/stair/terrace assembly and a separate turret specimen before requesting the rest of the keep. This is a preparation list, not a delivered model pack.
 
@@ -29,11 +29,13 @@ All sizes are **proposed metres, W × D × H**. They define a local test kit; th
 
 Start with the **wall/entrance host and stair**. Test their openings and steps before spending effort on the turret, roof and surface ornament. D01 is a roof quadrant: four instances make one roof. D03 is an insert: its host needs an actual cutout.
 
-## Reference gaps and image limit
+## Saved references and image limit
 
-**B04-STRUCT-001 and B04-DETAIL-001 are reserved schedules, not finished reference images.** Their directories currently contain schedules and component records only. The existing structural records repeat the generic 8 × 6 × 12 m placeholder for all four parts. This handoff proposes separate fit dimensions above; it does not silently overwrite those older schedules or certify their dimensions.
+The two existing reserved sheets are now saved: [B04-STRUCT-001 — four structural sections](../../completion-pass/B04-STRUCT-001/README.md) and [B04-DETAIL-001 — twelve fittings](../../completion-pass/B04-DETAIL-001/README.md). Open either separately to keep only one image in view. Both R01 drafts and the exact generation/correction prompts are preserved. User reference approval remains pending.
 
-Before high-fidelity image-to-3D work, make the missing isolated construction views within those **same two reserved sheets**: one four-section structural sheet, and one decor sheet containing the existing twelve detail slots. The four fittings prioritised here are a subset of that decor sheet. Do not commission eight new reference sheets or invent a different keep. No new images, reference slots or accepted models are added by this list.
+The old generic structural dimensions have been replaced with this handoff's proposed fit dimensions in the B04 schedules and component records. This corrects planning placeholders; it does not certify the generated pixels as accurate measurements. The four fittings prioritised here are a subset of the twelve-part decor sheet. This pass uses **two existing slots**, adds no new reservations, and adds no accepted models.
+
+Known limits: the structural sheet's small stair plan and turret plan are schematic rather than verified projections. The wall's host arch trim must not be blindly doubled with the separate D07 surround. D09 must use flush stone inlay even where painted rose shading suggests relief. Cornice closure, roof-quadrant joins, rail corners and all scale/contact details need geometry checks before production use.
 
 ## Join and export rules
 
@@ -154,13 +156,13 @@ Pale stone arch band with restrained rose-compatible carving. Inner void must ma
 
 Reuse the tested [K09 stair/landing dimensions](../kit-fit/contract.json) and independent barrier conventions, while keeping Rose Keep's local appearance. Shared foliage/rock/prop families are reuse candidates, not certified style matches or available final models.
 
-- D02 round turret cornice and D04 flower relief: isolate source motif before new design
+- D02 round turret cornice and D04 flower relief: reference now saved; geometry and repeat contacts still need checking
 - D06 parapet corner cap and D08 rounded stair rail return: needed for guarded assembly; procedural collision guards can test circulation meanwhile
 - D09 inner floor, D10 dado and D11 ceiling bracket: exterior D2 scope does not require a sealed room
 - D12 trellis hook and roses/ivy/hazel/meadow plants: reuse indexed ecology families after supports and route work
 - Rock foundation and cliff return: inspect source-specific rock ledge against terrain before final dressing
 - B25 conservatory: separate glass/gold kit, not a recolour of Rose Keep; inspect its single source next
 
-After these eight parts fit, finish source-specific cornices, rail returns, ledge supports and climbing-rose attachments. Then inspect **B25 Crystal Conservatory** separately, using its glass/gold dome source rather than recolouring this keep. Regional route and entrance evidence still comes before dense planting and final dressing. Bath/spa, kitchen/service and music rooms remain outside the agreed playable scope.
+Next build the source-compatible Function specimen for these eight priority parts, using the dimension contract to resolve illustration discrepancies. Test source-specific cornices, rail returns, ledge supports and climbing-rose attachments as they are needed. Inspect **B25 Crystal Conservatory** separately, using its glass/gold dome source rather than recolouring this keep. Regional route and entrance evidence still comes before dense planting and final dressing. Bath/spa, kitchen/service and music rooms remain outside the agreed playable scope.
 
 Rebuild/check this handoff from the repository root with `node docs/asset-image-library/world-production-plan/rose-keep/build-handoff.mjs`. Validation checks source hashes, registered IDs, source-region bounds, shared stair dimensions and proposed join coordinates. It does not approve artwork or model topology.

@@ -5,15 +5,15 @@
       "name": "Round turret/window host",
       "kind": "structural-section",
       "dimensions_m_proposed": [
-        8,
-        6,
+        12,
+        12,
         12
       ],
       "function": "Need irregular stone/fort-wall returns, cylindrical tower-wall window bands, cone roof seats, stair-to-terrace corners and climbing-rose attachment layout. Source roofs, rose relief, pink masonry and banners already supply detail vocabulary. Pollinators/robins inhabit planted ledges. Provide missing isolated hosts and join views.",
-      "construction": "One isolated round turret/window host matching the supplied building, its roof/arch/wall silhouette and local materials. Show front and interior/rear/underside contact, not a complete building scene. Actual open column galleries and holes stay open. Extend hidden depth only enough to form a joinable section; no palace-wide plan or added unrelated tower.",
-      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
-      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
-      "target_polycount_proposed": 8000,
+      "construction": "Hollow cylindrical blush-stone band with four identical arched openings at cardinal directions, 1.8 m wide, 6 m apex height, sill 1.2 m above band base. Front source window vocabulary; fourfold repetition and hidden back are proposed for the first fit test. Open ring ends; no cone roof, glazing, floor, vines or unrelated tower attached.",
+      "attachment_face": "Centre of lower ring [0,0,0]; bottom Y=0, upper ring Y=12; external radius 6 m, wall thickness 0.6 m.",
+      "semantic_front": "Exported GLB Y-up, front -Z; floor tile broad decorated face +Y; see handoff for assembly origins.",
+      "target_polycount_proposed": 10000,
       "reuse_class": "reusable",
       "applies_to": [
         "B04"
@@ -26,9 +26,13 @@
       "generator": "",
       "generator_job_id": "",
       "model_sha256": "",
-      "review_status": "pending-reference-review",
+      "review_status": "pending-user-reference-and-model-review",
       "suggested_model_filename": "B04-STRUCT-001-S01__round-turret-window-host__v001.glb",
-      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed",
+      "fit_contract_file": "world-production-plan/rose-keep/asset-handoff.json",
+      "dimension_basis": "W X depth Z height Y in metres; proposed local fit dimensions, not measured from generated pixels.",
+      "geometry_review_status": "unverified",
+      "notes": "Four isolated structural groups visible; blush masonry, pale trim, round hollow turret and actual illustrated portal retained. R01 main stair had too many repeated treads. R02 adds a ten-labelled-step perspective; the small plan still has ambiguous tread divisions. Use the K09/handoff contract, not traced pixels, for exact steps. Turret small plan is a window-level schematic, not a verified top-ring projection: the windows terminate below the top ring. All inter-view parity remains unverified. S02 visible arch trim is host dressing; D07 is an optional replacement/additional surround and must not be blindly doubled over it. Actual aperture sizes, wall thickness, terrain supports, colliders and mesh joins require the Function prototype. No model or final layout approval."
     },
     {
       "asset_id": "B04-STRUCT-001-S02",
@@ -36,13 +40,13 @@
       "kind": "structural-section",
       "dimensions_m_proposed": [
         8,
-        6,
-        12
+        4,
+        6
       ],
       "function": "Need irregular stone/fort-wall returns, cylindrical tower-wall window bands, cone roof seats, stair-to-terrace corners and climbing-rose attachment layout. Source roofs, rose relief, pink masonry and banners already supply detail vocabulary. Pollinators/robins inhabit planted ledges. Provide missing isolated hosts and join views.",
-      "construction": "One isolated rose keep wall return matching the supplied building, its roof/arch/wall silhouette and local materials. Show front and interior/rear/underside contact, not a complete building scene. Actual open column galleries and holes stay open. Extend hidden depth only enough to form a joinable section; no palace-wide plan or added unrelated tower.",
-      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
-      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "construction": "Blush masonry with pale trim, one real pointed-arch doorway, plus a short right-hand return. This orthogonal test return is inferred; angled and cliff-conforming variants follow the source audit. Keep all ornament detachable.",
+      "attachment_face": "Main wall midpoint at walking floor: [0,0,0]. Main wall X=-4..4, Z=0..0.6; right return X=3.4..4, Z=0..4; Y=0..6.",
+      "semantic_front": "Exported GLB Y-up, front -Z; floor tile broad decorated face +Y; see handoff for assembly origins.",
       "target_polycount_proposed": 8000,
       "reuse_class": "reusable",
       "applies_to": [
@@ -56,9 +60,13 @@
       "generator": "",
       "generator_job_id": "",
       "model_sha256": "",
-      "review_status": "pending-reference-review",
+      "review_status": "pending-user-reference-and-model-review",
       "suggested_model_filename": "B04-STRUCT-001-S02__rose-keep-wall-return__v001.glb",
-      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed",
+      "fit_contract_file": "world-production-plan/rose-keep/asset-handoff.json",
+      "dimension_basis": "W X depth Z height Y in metres; proposed local fit dimensions, not measured from generated pixels.",
+      "geometry_review_status": "unverified",
+      "notes": "Four isolated structural groups visible; blush masonry, pale trim, round hollow turret and actual illustrated portal retained. R01 main stair had too many repeated treads. R02 adds a ten-labelled-step perspective; the small plan still has ambiguous tread divisions. Use the K09/handoff contract, not traced pixels, for exact steps. Turret small plan is a window-level schematic, not a verified top-ring projection: the windows terminate below the top ring. All inter-view parity remains unverified. S02 visible arch trim is host dressing; D07 is an optional replacement/additional surround and must not be blindly doubled over it. Actual aperture sizes, wall thickness, terrain supports, colliders and mesh joins require the Function prototype. No model or final layout approval."
     },
     {
       "asset_id": "B04-STRUCT-001-S03",
@@ -67,13 +75,13 @@
       "dimensions_m_proposed": [
         8,
         6,
-        12
+        1.5
       ],
       "function": "Need irregular stone/fort-wall returns, cylindrical tower-wall window bands, cone roof seats, stair-to-terrace corners and climbing-rose attachment layout. Source roofs, rose relief, pink masonry and banners already supply detail vocabulary. Pollinators/robins inhabit planted ledges. Provide missing isolated hosts and join views.",
-      "construction": "One isolated cliff terrace bay matching the supplied building, its roof/arch/wall silhouette and local materials. Show front and interior/rear/underside contact, not a complete building scene. Actual open column galleries and holes stay open. Extend hidden depth only enough to form a joinable section; no palace-wide plan or added unrelated tower.",
-      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
-      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
-      "target_polycount_proposed": 8000,
+      "construction": "Level stone deck with pale edge cornice and downward cliff-facing fascia, no surrounding garden scene. Simple joining ends. A separate rock/support host must meet its underside; the fascia is not an unsupported 8 m cantilever design. Keep a 2.4 m clear entry corridor.",
+      "attachment_face": "Centre of top walking surface [0,0,0]; X=-4..4, Z=-3..3; all substrate below Y=0, bottom Y=-1.5.",
+      "semantic_front": "Exported GLB Y-up, front -Z; floor tile broad decorated face +Y; see handoff for assembly origins.",
+      "target_polycount_proposed": 5000,
       "reuse_class": "reusable",
       "applies_to": [
         "B04"
@@ -86,24 +94,28 @@
       "generator": "",
       "generator_job_id": "",
       "model_sha256": "",
-      "review_status": "pending-reference-review",
+      "review_status": "pending-user-reference-and-model-review",
       "suggested_model_filename": "B04-STRUCT-001-S03__cliff-terrace-bay__v001.glb",
-      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed",
+      "fit_contract_file": "world-production-plan/rose-keep/asset-handoff.json",
+      "dimension_basis": "W X depth Z height Y in metres; proposed local fit dimensions, not measured from generated pixels.",
+      "geometry_review_status": "unverified",
+      "notes": "Four isolated structural groups visible; blush masonry, pale trim, round hollow turret and actual illustrated portal retained. R01 main stair had too many repeated treads. R02 adds a ten-labelled-step perspective; the small plan still has ambiguous tread divisions. Use the K09/handoff contract, not traced pixels, for exact steps. Turret small plan is a window-level schematic, not a verified top-ring projection: the windows terminate below the top ring. All inter-view parity remains unverified. S02 visible arch trim is host dressing; D07 is an optional replacement/additional surround and must not be blindly doubled over it. Actual aperture sizes, wall thickness, terrain supports, colliders and mesh joins require the Function prototype. No model or final layout approval."
     },
     {
       "asset_id": "B04-STRUCT-001-S04",
       "name": "Stair/terrace corner",
       "kind": "structural-section",
       "dimensions_m_proposed": [
-        8,
-        6,
-        12
+        2.8,
+        5.8,
+        1.75
       ],
       "function": "Need irregular stone/fort-wall returns, cylindrical tower-wall window bands, cone roof seats, stair-to-terrace corners and climbing-rose attachment layout. Source roofs, rose relief, pink masonry and banners already supply detail vocabulary. Pollinators/robins inhabit planted ledges. Provide missing isolated hosts and join views.",
-      "construction": "One isolated stair/terrace corner matching the supplied building, its roof/arch/wall silhouette and local materials. Show front and interior/rear/underside contact, not a complete building scene. Actual open column galleries and holes stay open. Extend hidden depth only enough to form a joinable section; no palace-wide plan or added unrelated tower.",
-      "attachment_face": "Underside/root to ground or declared host; keep true openings clear",
-      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
-      "target_polycount_proposed": 8000,
+      "construction": "Ten planar steps, each 0.15 m rise and 0.30 m going, then a 2.8 m square landing. Source pale stone and low rounded return vocabulary; guards separate. Clear width 2.4 m after edge guards. This reuses K09 dimensions, not its final palace ornament.",
+      "attachment_face": "Lower approach at first riser [0,0,0]. Ascend -Z. Flight ends Z=-3; landing continues to Z=-5.8. Lowest underside Y=-0.25, top walking floor Y=1.5.",
+      "semantic_front": "Exported GLB Y-up, front -Z; floor tile broad decorated face +Y; see handoff for assembly origins.",
+      "target_polycount_proposed": 5000,
       "reuse_class": "reusable",
       "applies_to": [
         "B04"
@@ -116,9 +128,13 @@
       "generator": "",
       "generator_job_id": "",
       "model_sha256": "",
-      "review_status": "pending-reference-review",
+      "review_status": "pending-user-reference-and-model-review",
       "suggested_model_filename": "B04-STRUCT-001-S04__stair-terrace-corner__v001.glb",
-      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed",
+      "fit_contract_file": "world-production-plan/rose-keep/asset-handoff.json",
+      "dimension_basis": "W X depth Z height Y in metres; proposed local fit dimensions, not measured from generated pixels.",
+      "geometry_review_status": "unverified",
+      "notes": "Four isolated structural groups visible; blush masonry, pale trim, round hollow turret and actual illustrated portal retained. R01 main stair had too many repeated treads. R02 adds a ten-labelled-step perspective; the small plan still has ambiguous tread divisions. Use the K09/handoff contract, not traced pixels, for exact steps. Turret small plan is a window-level schematic, not a verified top-ring projection: the windows terminate below the top ring. All inter-view parity remains unverified. S02 visible arch trim is host dressing; D07 is an optional replacement/additional surround and must not be blindly doubled over it. Actual aperture sizes, wall thickness, terrain supports, colliders and mesh joins require the Function prototype. No model or final layout approval."
     }
   ]
 }

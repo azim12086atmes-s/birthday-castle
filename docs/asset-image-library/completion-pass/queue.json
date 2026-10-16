@@ -371,8 +371,9 @@
       "source_reference_file": "world-layout/location-audit/source/B04-GEN-05.png",
       "component_count": 4,
       "mode": "structure",
-      "status": "queued",
-      "gap": "Need irregular stone/fort-wall returns, cylindrical tower-wall window bands, cone roof seats, stair-to-terrace corners and climbing-rose attachment layout. Source roofs, rose relief, pink masonry and banners already supply detail vocabulary. Pollinators/robins inhabit planted ledges. Provide missing isolated hosts and join views."
+      "status": "generated-pending-review",
+      "gap": "Need irregular stone/fort-wall returns, cylindrical tower-wall window bands, cone roof seats, stair-to-terrace corners and climbing-rose attachment layout. Source roofs, rose relief, pink masonry and banners already supply detail vocabulary. Pollinators/robins inhabit planted ledges. Provide missing isolated hosts and join views.",
+      "output_file": "completion-pass/B04-STRUCT-001/B04-STRUCT-001-R02.png"
     },
     {
       "sheet_id": "B04-DETAIL-001",
@@ -383,8 +384,9 @@
       "source_reference_file": "world-layout/location-audit/source/B04-GEN-05.png",
       "component_count": 12,
       "mode": "detail",
-      "status": "queued",
-      "gap": "Need irregular stone/fort-wall returns, cylindrical tower-wall window bands, cone roof seats, stair-to-terrace corners and climbing-rose attachment layout. Source roofs, rose relief, pink masonry and banners already supply detail vocabulary. Pollinators/robins inhabit planted ledges. Missing detached construction pieces and local interior-facing patterns."
+      "status": "generated-pending-review",
+      "gap": "Need irregular stone/fort-wall returns, cylindrical tower-wall window bands, cone roof seats, stair-to-terrace corners and climbing-rose attachment layout. Source roofs, rose relief, pink masonry and banners already supply detail vocabulary. Pollinators/robins inhabit planted ledges. Missing detached construction pieces and local interior-facing patterns.",
+      "output_file": "completion-pass/B04-DETAIL-001/B04-DETAIL-001-R02.png"
     },
     {
       "sheet_id": "B05-STRUCT-001",
@@ -1486,7 +1488,7 @@
     "Does the kit preserve source palette, silhouette and motif?",
     "What remains unresolved for modelling rather than another illustration?"
   ],
-  "generated_sheets": 33,
-  "remaining_sheets": 86,
+  "generated_sheets": 35,
+  "remaining_sheets": 84,
   "interaction_policy": "Use filenames and metadata for inventory. Inspect at most one source image at a time. Generate, save, index and review one sheet before starting the next; do not stream large image loops. Keep originals and superseded files."
 }

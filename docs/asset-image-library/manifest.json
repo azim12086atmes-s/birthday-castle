@@ -1,12 +1,12 @@
 {
   "date": "2026-10-13",
-  "distinct_image_count": 848,
-  "source_file_count": 969,
-  "total_bytes": 848933058,
+  "distinct_image_count": 852,
+  "source_file_count": 973,
+  "total_bytes": 857637564,
   "categories": {
     "additional-generated-studies": 33,
-    "completion-reference-kits": 33,
-    "completion-superseded-drafts": 3,
+    "completion-reference-kits": 35,
+    "completion-superseded-drafts": 5,
     "component-development-studies": 3,
     "illustrated-boards": 45,
     "interior-celebration-source-panels": 9,
@@ -17399,6 +17399,104 @@
       "reference_role": "source-compatible-missing-component-reference",
       "design_status": "Visible source forms guide design; hidden geometry and metrics proposed; no model or layout approval",
       "review_status": "reference-reviewed-pending-terrain-and-player-tests"
+    },
+    {
+      "id": "B04-STRUCT-001",
+      "title": "Rose Keep \u2014 structural sections",
+      "label": "B04-STRUCT-001 \u2014 Rose Keep \u2014 structural sections",
+      "category": "completion-reference-kits",
+      "file": "completion-pass/B04-STRUCT-001/B04-STRUCT-001-R02.png",
+      "sha256": "2147e46e261192e9770c64a38ac20f365b92a71d0b42c1b4532bf0050f514aac",
+      "bytes": 2094359,
+      "source_aliases": [
+        "/workspace/generated_images/exec-c60fbb7b-99d0-49ee-bbb2-8622f4c97bf5.png"
+      ],
+      "alias_ids": [],
+      "component_ids": [
+        "B04-STRUCT-001-S01",
+        "B04-STRUCT-001-S02",
+        "B04-STRUCT-001-S03",
+        "B04-STRUCT-001-S04"
+      ],
+      "related_image_ids": [
+        "SRC-LOC-B04-GEN-05"
+      ],
+      "reference_role": "source-compatible-missing-component-reference",
+      "design_status": "Source-compatible design reference; exact geometry and user acceptance pending",
+      "review_status": "pending-user-reference-and-model-review"
+    },
+    {
+      "id": "B04-STRUCT-001-R01",
+      "title": "Rose Keep \u2014 structural sections \u2014 superseded draft",
+      "label": "B04-STRUCT-001-R01 \u2014 Rose Keep \u2014 structural sections",
+      "category": "completion-superseded-drafts",
+      "file": "completion-pass/B04-STRUCT-001/B04-STRUCT-001-R01.png",
+      "sha256": "484de6013d90f39341d095b195a0410d575e8e499224d02ef1f313ecf304a5fb",
+      "bytes": 2188246,
+      "source_aliases": [
+        "/workspace/generated_images/exec-5c370056-46b8-42d0-a5e6-bf5f5be1fd9e.png"
+      ],
+      "alias_ids": [],
+      "component_ids": [],
+      "related_image_ids": [
+        "B04-STRUCT-001"
+      ],
+      "reference_role": "superseded-construction-reference",
+      "design_status": "Superseded by R02; preserved for provenance",
+      "review_status": "rejected-preserved"
+    },
+    {
+      "id": "B04-DETAIL-001",
+      "title": "Rose Keep \u2014 surface and detail kit",
+      "label": "B04-DETAIL-001 \u2014 Rose Keep \u2014 surface and detail kit",
+      "category": "completion-reference-kits",
+      "file": "completion-pass/B04-DETAIL-001/B04-DETAIL-001-R02.png",
+      "sha256": "9e1233a5c25660c81b9fb635cc9b90323e06f9a82ccc7cca501fd38453ccce20",
+      "bytes": 2157885,
+      "source_aliases": [
+        "/workspace/generated_images/exec-566323ec-dfd8-45da-bbcb-1092e64fd936.png"
+      ],
+      "alias_ids": [],
+      "component_ids": [
+        "B04-DETAIL-001-D01",
+        "B04-DETAIL-001-D02",
+        "B04-DETAIL-001-D03",
+        "B04-DETAIL-001-D04",
+        "B04-DETAIL-001-D05",
+        "B04-DETAIL-001-D06",
+        "B04-DETAIL-001-D07",
+        "B04-DETAIL-001-D08",
+        "B04-DETAIL-001-D09",
+        "B04-DETAIL-001-D10",
+        "B04-DETAIL-001-D11",
+        "B04-DETAIL-001-D12"
+      ],
+      "related_image_ids": [
+        "SRC-LOC-B04-GEN-05"
+      ],
+      "reference_role": "source-compatible-missing-component-reference",
+      "design_status": "Source-compatible design reference; exact geometry and user acceptance pending",
+      "review_status": "pending-user-reference-and-model-review"
+    },
+    {
+      "id": "B04-DETAIL-001-R01",
+      "title": "Rose Keep \u2014 surface and detail kit \u2014 superseded draft",
+      "label": "B04-DETAIL-001-R01 \u2014 Rose Keep \u2014 surface and detail kit",
+      "category": "completion-superseded-drafts",
+      "file": "completion-pass/B04-DETAIL-001/B04-DETAIL-001-R01.png",
+      "sha256": "b1298ae031b3512a606f2ca9b16fb0fcb215448138740e6d5f20615c7a938ffe",
+      "bytes": 2264016,
+      "source_aliases": [
+        "/workspace/generated_images/exec-6ef9396a-d357-49b3-be01-5384690b27b9.png"
+      ],
+      "alias_ids": [],
+      "component_ids": [],
+      "related_image_ids": [
+        "B04-DETAIL-001"
+      ],
+      "reference_role": "superseded-construction-reference",
+      "design_status": "Superseded by R02; preserved for provenance",
+      "review_status": "rejected-preserved"
     }
   ],
   "label_schema_version": 1

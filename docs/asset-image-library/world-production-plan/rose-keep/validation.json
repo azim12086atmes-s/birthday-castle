@@ -1,15 +1,13 @@
 {
   "batch_id": "B04-FIRST-BATCH-001",
-  "handoff_sha256": "1628271d4b1dbbe832573a06e31a6cc0b7200aed2c6d83ba0f4ab7a06fe747f4",
+  "handoff_sha256": "a4db295c7e1e25fd15a871776e3c057dc1848b28d586b813742f18b3366bcf16",
   "canonical_layout_unchanged": true,
   "source_hash_matches": true,
   "source_images_inspected": 1,
-  "new_images_generated": 0,
+  "selected_reference_sheets_saved": 2,
+  "generated_attempts_preserved": 4,
   "existing_component_ids_verified": 8,
-  "missing_reserved_sheet_images": [
-    "B04-STRUCT-001",
-    "B04-DETAIL-001"
-  ],
+  "missing_reserved_sheet_images": [],
   "k09_dimensions_match": true,
   "proposed_join_datums_checked": 3,
   "proposed_join_datums_match": true,

@@ -2,7 +2,7 @@
 
 [Primary source](../source/B04-GEN-05.png) · [All locations](../README.md) · [Ecology selections](../../location-ecology.csv)
 
-[First 3D batch handoff](../../../world-production-plan/rose-keep/README.md): four structural sections and four matching fittings, with proposed dimensions, filenames and join datums. Construction sheets and actual models remain pending.
+[First 3D batch handoff](../../../world-production-plan/rose-keep/README.md): four structural sections and four priority fittings, with proposed dimensions, filenames and join datums. [Structural sheet](../../../completion-pass/B04-STRUCT-001/README.md) and [twelve-part fitting sheet](../../../completion-pass/B04-DETAIL-001/README.md) are saved; exact geometry and actual models remain pending.
 
 ## What the image shows
 

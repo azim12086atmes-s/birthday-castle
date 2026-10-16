@@ -20,7 +20,7 @@
 
 **Palace bedroom update:** [Dressed bedroom and west balcony review](bedroom-fit/index.html) · [Sources and evidence](bedroom-fit/README.md). The accepted room, 18 m apex, 2.8 m canopy and 18 m balcony now have 45 component instances, lighting, a keepsake interaction and two complete local return checks. Final art and placement in the palace remain pending.
 
-**Rose Keep model handoff:** [First batch: four sections and four fittings](rose-keep/README.md) · [Labelled dimensions, filenames and joins](rose-keep/asset-handoff.json). Uses the saved B04 source and existing component IDs. The two dedicated construction/detail sheets are still missing; proposed fit dimensions replace generic placeholders in this separate handoff only. No new images or accepted models are counted.
+**Rose Keep model handoff:** [First batch: four sections and four fittings](rose-keep/README.md) · [Labelled dimensions, filenames and joins](rose-keep/asset-handoff.json). The two reserved sheets are now saved: four structural sections and twelve fittings. Proposed dimensions are synced to the B04 schedules; small-view parity, exact joins, flush floor inlay and accepted models remain pending. The reference library has 128 selected sheets saved; allocated slots remain 212/230.
 
 ## Outcome and present state
 
@@ -202,7 +202,7 @@ Fauna needs anatomy/rig/animation and behavior review. More static species pictu
 | Reference allocation | Cap | Selected/reserved | Saved |
 | --- | ---: | ---: | ---: |
 | palace | 83 | 83 | 83 |
-| other-map-buildings | 58 | 58 | 10 |
+| other-map-buildings | 58 | 58 | 12 |
 | terrain-water-and-planting | 57 | 45 | 19 |
 | shared-outdoor-props-and-bridge | 22 | 17 | 9 |
 | maps-magic-travel-and-birthday | 10 | 9 | 5 |

@@ -5,15 +5,15 @@
       "name": "Burgundy cone roof strip",
       "kind": "architectural-detail",
       "dimensions_m_proposed": [
-        1.5,
-        0.15,
-        1.5
+        6.2,
+        6.2,
+        12
       ],
       "function": "Need irregular stone/fort-wall returns, cylindrical tower-wall window bands, cone roof seats, stair-to-terrace corners and climbing-rose attachment layout. Source roofs, rose relief, pink masonry and banners already supply detail vocabulary. Pollinators/robins inhabit planted ledges. Missing detached construction pieces and local interior-facing patterns.",
-      "construction": "One isolated burgundy cone roof strip, strictly follow local source colour/material/motif instead of universal pink marble. Show real depth, flat back/host contact or one consistent repeat profile. Existing generic lanterns/flowers/benches reused; only named local fittings. No merged wall scene attached to small detail. One repeat moulding/strip only, defined thickness and square end profiles. A corner is a single L return, not a complete wall/court.",
-      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
-      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
-      "target_polycount_proposed": 2500,
+      "construction": "One hollow conical quarter-shell with burgundy shingle pattern, 0.12 m nominal shell thickness and matching radial seam edges. Four copies rotated by 90 degrees give a 12.4 m diameter cap over S01's 12 m diameter, with 0.2 m overhang per side. Conical roof, not an onion dome. Finial and eave cornice are separate later fittings.",
+      "attachment_face": "Centre of cone's base circle [0,0,0]. One 90-degree sector occupies X=0..6.2, Z=0..6.2; base Y=0, tip Y=12. Pivot lies at a bounding-box corner by design.",
+      "semantic_front": "Exported GLB Y-up, front -Z; floor tile broad decorated face +Y; see handoff for assembly origins.",
+      "target_polycount_proposed": 4000,
       "reuse_class": "reusable",
       "applies_to": [
         "B04"
@@ -26,23 +26,27 @@
       "generator": "",
       "generator_job_id": "",
       "model_sha256": "",
-      "review_status": "pending-reference-review",
+      "review_status": "pending-user-reference-and-model-review",
       "suggested_model_filename": "B04-DETAIL-001-D01__burgundy-cone-roof-strip__v001.glb",
-      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed",
+      "fit_contract_file": "world-production-plan/rose-keep/asset-handoff.json",
+      "dimension_basis": "W X depth Z height Y in metres; proposed local fit dimensions, not measured from generated pixels.",
+      "geometry_review_status": "unverified",
+      "notes": "All twelve named fittings visible. Short D01-D12 IDs resolve under the full B04-DETAIL-001 title. R02 removes D02 seam posts, reduces D05 to one guard bay and simplifies the D06 corner. Arc ends, corner profiles and exact fit remain unverified. D09 rose must be FLUSH stone inlay. Painted shading still makes relief ambiguous; do not extrude the petals or accept this as a verified walking surface. D01 is one proposed roof quadrant, not a complete roof. Its four-copy closure and hollow underside require geometry checks. D05/D06/D08 guard proportions and physical connections are illustrative. Keep independent continuous collision barriers. D09-D11 are inferred local interior options, not an added playable room."
     },
     {
       "asset_id": "B04-DETAIL-001-D02",
       "name": "Round turret cornice",
       "kind": "architectural-detail",
       "dimensions_m_proposed": [
-        1.5,
-        0.15,
-        1.5
+        3.3,
+        0.57,
+        0.45
       ],
       "function": "Need irregular stone/fort-wall returns, cylindrical tower-wall window bands, cone roof seats, stair-to-terrace corners and climbing-rose attachment layout. Source roofs, rose relief, pink masonry and banners already supply detail vocabulary. Pollinators/robins inhabit planted ledges. Missing detached construction pieces and local interior-facing patterns.",
-      "construction": "One isolated round turret cornice, strictly follow local source colour/material/motif instead of universal pink marble. Show real depth, flat back/host contact or one consistent repeat profile. Existing generic lanterns/flowers/benches reused; only named local fittings. No merged wall scene attached to small detail. One repeat moulding/strip only, defined thickness and square end profiles. A corner is a single L return, not a complete wall/court.",
+      "construction": "30-degree curved cornice segment, inner mounting radius 6 m, nominal radial depth 0.35 m and height 0.45 m. Envelope dimensions approximate. Identical radial cut ends; no posts at repeated seams. Exact sector/contact to be built analytically.",
       "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
-      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "semantic_front": "Exported GLB Y-up, front -Z; floor tile broad decorated face +Y; see handoff for assembly origins.",
       "target_polycount_proposed": 2500,
       "reuse_class": "reusable",
       "applies_to": [
@@ -56,24 +60,27 @@
       "generator": "",
       "generator_job_id": "",
       "model_sha256": "",
-      "review_status": "pending-reference-review",
+      "review_status": "pending-user-reference-and-model-review",
       "suggested_model_filename": "B04-DETAIL-001-D02__round-turret-cornice__v001.glb",
-      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed",
+      "dimension_basis": "W X depth Z height Y in metres; proposed local fit dimensions, not measured from generated pixels.",
+      "geometry_review_status": "unverified",
+      "notes": "All twelve named fittings visible. Short D01-D12 IDs resolve under the full B04-DETAIL-001 title. R02 removes D02 seam posts, reduces D05 to one guard bay and simplifies the D06 corner. Arc ends, corner profiles and exact fit remain unverified. D09 rose must be FLUSH stone inlay. Painted shading still makes relief ambiguous; do not extrude the petals or accept this as a verified walking surface. D01 is one proposed roof quadrant, not a complete roof. Its four-copy closure and hollow underside require geometry checks. D05/D06/D08 guard proportions and physical connections are illustrative. Keep independent continuous collision barriers. D09-D11 are inferred local interior options, not an added playable room."
     },
     {
       "asset_id": "B04-DETAIL-001-D03",
       "name": "Rose keep window insert",
       "kind": "architectural-detail",
       "dimensions_m_proposed": [
-        1.5,
-        0.15,
-        1.5
+        1.78,
+        0.12,
+        5.98
       ],
       "function": "Need irregular stone/fort-wall returns, cylindrical tower-wall window bands, cone roof seats, stair-to-terrace corners and climbing-rose attachment layout. Source roofs, rose relief, pink masonry and banners already supply detail vocabulary. Pollinators/robins inhabit planted ledges. Missing detached construction pieces and local interior-facing patterns.",
-      "construction": "One isolated rose keep window insert, strictly follow local source colour/material/motif instead of universal pink marble. Show real depth, flat back/host contact or one consistent repeat profile. Existing generic lanterns/flowers/benches reused; only named local fittings. No merged wall scene attached to small detail.",
-      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
-      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
-      "target_polycount_proposed": 2500,
+      "construction": "Separate frame, simple subtle glazing and restrained trim. Pale stone, muted gold and quiet glass from Rose Keep, not giant blue-and-pink palace star panes. Back face and thickness visible. Opening cut in S01 remains behind the insert.",
+      "attachment_face": "Bottom centre of insert [0,0,0], outward -Z. Match S01's 4.8 m spring / 6 m apex profile with 0.01 m edge clearance; register as a sill-relative insert, not an independent wall.",
+      "semantic_front": "Exported GLB Y-up, front -Z; floor tile broad decorated face +Y; see handoff for assembly origins.",
+      "target_polycount_proposed": 2000,
       "reuse_class": "reusable",
       "applies_to": [
         "B04"
@@ -86,23 +93,27 @@
       "generator": "",
       "generator_job_id": "",
       "model_sha256": "",
-      "review_status": "pending-reference-review",
+      "review_status": "pending-user-reference-and-model-review",
       "suggested_model_filename": "B04-DETAIL-001-D03__rose-keep-window-insert__v001.glb",
-      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed",
+      "fit_contract_file": "world-production-plan/rose-keep/asset-handoff.json",
+      "dimension_basis": "W X depth Z height Y in metres; proposed local fit dimensions, not measured from generated pixels.",
+      "geometry_review_status": "unverified",
+      "notes": "All twelve named fittings visible. Short D01-D12 IDs resolve under the full B04-DETAIL-001 title. R02 removes D02 seam posts, reduces D05 to one guard bay and simplifies the D06 corner. Arc ends, corner profiles and exact fit remain unverified. D09 rose must be FLUSH stone inlay. Painted shading still makes relief ambiguous; do not extrude the petals or accept this as a verified walking surface. D01 is one proposed roof quadrant, not a complete roof. Its four-copy closure and hollow underside require geometry checks. D05/D06/D08 guard proportions and physical connections are illustrative. Keep independent continuous collision barriers. D09-D11 are inferred local interior options, not an added playable room."
     },
     {
       "asset_id": "B04-DETAIL-001-D04",
       "name": "Turret wall flower relief",
       "kind": "architectural-detail",
       "dimensions_m_proposed": [
-        1.5,
-        0.15,
-        1.5
+        0.45,
+        0.04,
+        0.45
       ],
       "function": "Need irregular stone/fort-wall returns, cylindrical tower-wall window bands, cone roof seats, stair-to-terrace corners and climbing-rose attachment layout. Source roofs, rose relief, pink masonry and banners already supply detail vocabulary. Pollinators/robins inhabit planted ledges. Missing detached construction pieces and local interior-facing patterns.",
       "construction": "One isolated turret wall flower relief, strictly follow local source colour/material/motif instead of universal pink marble. Show real depth, flat back/host contact or one consistent repeat profile. Existing generic lanterns/flowers/benches reused; only named local fittings. No merged wall scene attached to small detail.",
       "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
-      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "semantic_front": "Exported GLB Y-up, front -Z; floor tile broad decorated face +Y; see handoff for assembly origins.",
       "target_polycount_proposed": 2500,
       "reuse_class": "reusable",
       "applies_to": [
@@ -116,24 +127,27 @@
       "generator": "",
       "generator_job_id": "",
       "model_sha256": "",
-      "review_status": "pending-reference-review",
+      "review_status": "pending-user-reference-and-model-review",
       "suggested_model_filename": "B04-DETAIL-001-D04__turret-wall-flower-relief__v001.glb",
-      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed",
+      "dimension_basis": "W X depth Z height Y in metres; proposed local fit dimensions, not measured from generated pixels.",
+      "geometry_review_status": "unverified",
+      "notes": "All twelve named fittings visible. Short D01-D12 IDs resolve under the full B04-DETAIL-001 title. R02 removes D02 seam posts, reduces D05 to one guard bay and simplifies the D06 corner. Arc ends, corner profiles and exact fit remain unverified. D09 rose must be FLUSH stone inlay. Painted shading still makes relief ambiguous; do not extrude the petals or accept this as a verified walking surface. D01 is one proposed roof quadrant, not a complete roof. Its four-copy closure and hollow underside require geometry checks. D05/D06/D08 guard proportions and physical connections are illustrative. Keep independent continuous collision barriers. D09-D11 are inferred local interior options, not an added playable room."
     },
     {
       "asset_id": "B04-DETAIL-001-D05",
       "name": "Castle parapet repeat",
       "kind": "architectural-detail",
       "dimensions_m_proposed": [
-        1.5,
-        0.15,
-        1.5
+        1,
+        0.12,
+        1.1
       ],
       "function": "Need irregular stone/fort-wall returns, cylindrical tower-wall window bands, cone roof seats, stair-to-terrace corners and climbing-rose attachment layout. Source roofs, rose relief, pink masonry and banners already supply detail vocabulary. Pollinators/robins inhabit planted ledges. Missing detached construction pieces and local interior-facing patterns.",
-      "construction": "One isolated castle parapet repeat, strictly follow local source colour/material/motif instead of universal pink marble. Show real depth, flat back/host contact or one consistent repeat profile. Existing generic lanterns/flowers/benches reused; only named local fittings. No merged wall scene attached to small detail. One continuous rail panel with plain join ends, NO tall end posts, corner towers, flowerbeds or attached stairs. Separate posts handled by hosts.",
-      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
-      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
-      "target_polycount_proposed": 2500,
+      "construction": "One restrained stone guard repeat; planar end profiles, separate simple continuous barrier collider. Preserve Rose Keep terrace-edge vocabulary. A 1.1 m test guard height is proposed for drops, not an assertion that every low garden edge in the source is a guard. Use short infill at ends; do not stretch decorated repeats. Slope and corner return D08/D06 remain a later matching pass.",
+      "attachment_face": "Centre of lower mounting edge [0,0,0]; repeat X=-0.5..0.5, depth Z=-0.06..0.06, top Y=1.1.",
+      "semantic_front": "Exported GLB Y-up, front -Z; floor tile broad decorated face +Y; see handoff for assembly origins.",
+      "target_polycount_proposed": 1500,
       "reuse_class": "reusable",
       "applies_to": [
         "B04"
@@ -146,23 +160,27 @@
       "generator": "",
       "generator_job_id": "",
       "model_sha256": "",
-      "review_status": "pending-reference-review",
+      "review_status": "pending-user-reference-and-model-review",
       "suggested_model_filename": "B04-DETAIL-001-D05__castle-parapet-repeat__v001.glb",
-      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed",
+      "fit_contract_file": "world-production-plan/rose-keep/asset-handoff.json",
+      "dimension_basis": "W X depth Z height Y in metres; proposed local fit dimensions, not measured from generated pixels.",
+      "geometry_review_status": "unverified",
+      "notes": "All twelve named fittings visible. Short D01-D12 IDs resolve under the full B04-DETAIL-001 title. R02 removes D02 seam posts, reduces D05 to one guard bay and simplifies the D06 corner. Arc ends, corner profiles and exact fit remain unverified. D09 rose must be FLUSH stone inlay. Painted shading still makes relief ambiguous; do not extrude the petals or accept this as a verified walking surface. D01 is one proposed roof quadrant, not a complete roof. Its four-copy closure and hollow underside require geometry checks. D05/D06/D08 guard proportions and physical connections are illustrative. Keep independent continuous collision barriers. D09-D11 are inferred local interior options, not an added playable room."
     },
     {
       "asset_id": "B04-DETAIL-001-D06",
       "name": "Parapet corner cap",
       "kind": "architectural-detail",
       "dimensions_m_proposed": [
-        1.5,
-        0.15,
-        1.5
+        0.35,
+        0.35,
+        1.1
       ],
       "function": "Need irregular stone/fort-wall returns, cylindrical tower-wall window bands, cone roof seats, stair-to-terrace corners and climbing-rose attachment layout. Source roofs, rose relief, pink masonry and banners already supply detail vocabulary. Pollinators/robins inhabit planted ledges. Missing detached construction pieces and local interior-facing patterns.",
       "construction": "One isolated parapet corner cap, strictly follow local source colour/material/motif instead of universal pink marble. Show real depth, flat back/host contact or one consistent repeat profile. Existing generic lanterns/flowers/benches reused; only named local fittings. No merged wall scene attached to small detail.",
       "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
-      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "semantic_front": "Exported GLB Y-up, front -Z; floor tile broad decorated face +Y; see handoff for assembly origins.",
       "target_polycount_proposed": 2500,
       "reuse_class": "reusable",
       "applies_to": [
@@ -176,23 +194,26 @@
       "generator": "",
       "generator_job_id": "",
       "model_sha256": "",
-      "review_status": "pending-reference-review",
+      "review_status": "pending-user-reference-and-model-review",
       "suggested_model_filename": "B04-DETAIL-001-D06__parapet-corner-cap__v001.glb",
-      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed",
+      "dimension_basis": "W X depth Z height Y in metres; proposed local fit dimensions, not measured from generated pixels.",
+      "geometry_review_status": "unverified",
+      "notes": "All twelve named fittings visible. Short D01-D12 IDs resolve under the full B04-DETAIL-001 title. R02 removes D02 seam posts, reduces D05 to one guard bay and simplifies the D06 corner. Arc ends, corner profiles and exact fit remain unverified. D09 rose must be FLUSH stone inlay. Painted shading still makes relief ambiguous; do not extrude the petals or accept this as a verified walking surface. D01 is one proposed roof quadrant, not a complete roof. Its four-copy closure and hollow underside require geometry checks. D05/D06/D08 guard proportions and physical connections are illustrative. Keep independent continuous collision barriers. D09-D11 are inferred local interior options, not an added playable room."
     },
     {
       "asset_id": "B04-DETAIL-001-D07",
       "name": "Keep arch surround",
       "kind": "architectural-detail",
       "dimensions_m_proposed": [
-        1.5,
-        0.15,
-        1.5
+        3.2,
+        0.2,
+        4.3
       ],
       "function": "Need irregular stone/fort-wall returns, cylindrical tower-wall window bands, cone roof seats, stair-to-terrace corners and climbing-rose attachment layout. Source roofs, rose relief, pink masonry and banners already supply detail vocabulary. Pollinators/robins inhabit planted ledges. Missing detached construction pieces and local interior-facing patterns.",
-      "construction": "One isolated keep arch surround, strictly follow local source colour/material/motif instead of universal pink marble. Show real depth, flat back/host contact or one consistent repeat profile. Existing generic lanterns/flowers/benches reused; only named local fittings. No merged wall scene attached to small detail. Arch band/surround only around a genuinely open centre. Do not include complete building wall or tower.",
-      "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
-      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "construction": "Pale stone arch band with restrained rose-compatible carving. Inner void must match S02: 2.4 m clear, 3.2 m spring, 3.8 m apex. Outer height 4.3 m includes trim above apex. No masonry filling, gate leaf or complete wall attached.",
+      "attachment_face": "Threshold centre [0,0,0], flat mounting back at Z=0, trim projects to Z=-0.2. Fits S02 opening at X=-0.5, Y=0.",
+      "semantic_front": "Exported GLB Y-up, front -Z; floor tile broad decorated face +Y; see handoff for assembly origins.",
       "target_polycount_proposed": 2500,
       "reuse_class": "reusable",
       "applies_to": [
@@ -206,23 +227,27 @@
       "generator": "",
       "generator_job_id": "",
       "model_sha256": "",
-      "review_status": "pending-reference-review",
+      "review_status": "pending-user-reference-and-model-review",
       "suggested_model_filename": "B04-DETAIL-001-D07__keep-arch-surround__v001.glb",
-      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed",
+      "fit_contract_file": "world-production-plan/rose-keep/asset-handoff.json",
+      "dimension_basis": "W X depth Z height Y in metres; proposed local fit dimensions, not measured from generated pixels.",
+      "geometry_review_status": "unverified",
+      "notes": "All twelve named fittings visible. Short D01-D12 IDs resolve under the full B04-DETAIL-001 title. R02 removes D02 seam posts, reduces D05 to one guard bay and simplifies the D06 corner. Arc ends, corner profiles and exact fit remain unverified. D09 rose must be FLUSH stone inlay. Painted shading still makes relief ambiguous; do not extrude the petals or accept this as a verified walking surface. D01 is one proposed roof quadrant, not a complete roof. Its four-copy closure and hollow underside require geometry checks. D05/D06/D08 guard proportions and physical connections are illustrative. Keep independent continuous collision barriers. D09-D11 are inferred local interior options, not an added playable room."
     },
     {
       "asset_id": "B04-DETAIL-001-D08",
       "name": "Rounded stair rail return",
       "kind": "architectural-detail",
       "dimensions_m_proposed": [
-        1.5,
-        0.15,
-        1.5
+        1,
+        0.12,
+        1.1
       ],
       "function": "Need irregular stone/fort-wall returns, cylindrical tower-wall window bands, cone roof seats, stair-to-terrace corners and climbing-rose attachment layout. Source roofs, rose relief, pink masonry and banners already supply detail vocabulary. Pollinators/robins inhabit planted ledges. Missing detached construction pieces and local interior-facing patterns.",
       "construction": "One isolated rounded stair rail return, strictly follow local source colour/material/motif instead of universal pink marble. Show real depth, flat back/host contact or one consistent repeat profile. Existing generic lanterns/flowers/benches reused; only named local fittings. No merged wall scene attached to small detail.",
       "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
-      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "semantic_front": "Exported GLB Y-up, front -Z; floor tile broad decorated face +Y; see handoff for assembly origins.",
       "target_polycount_proposed": 2500,
       "reuse_class": "reusable",
       "applies_to": [
@@ -236,9 +261,12 @@
       "generator": "",
       "generator_job_id": "",
       "model_sha256": "",
-      "review_status": "pending-reference-review",
+      "review_status": "pending-user-reference-and-model-review",
       "suggested_model_filename": "B04-DETAIL-001-D08__rounded-stair-rail-return__v001.glb",
-      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed",
+      "dimension_basis": "W X depth Z height Y in metres; proposed local fit dimensions, not measured from generated pixels.",
+      "geometry_review_status": "unverified",
+      "notes": "All twelve named fittings visible. Short D01-D12 IDs resolve under the full B04-DETAIL-001 title. R02 removes D02 seam posts, reduces D05 to one guard bay and simplifies the D06 corner. Arc ends, corner profiles and exact fit remain unverified. D09 rose must be FLUSH stone inlay. Painted shading still makes relief ambiguous; do not extrude the petals or accept this as a verified walking surface. D01 is one proposed roof quadrant, not a complete roof. Its four-copy closure and hollow underside require geometry checks. D05/D06/D08 guard proportions and physical connections are illustrative. Keep independent continuous collision barriers. D09-D11 are inferred local interior options, not an added playable room."
     },
     {
       "asset_id": "B04-DETAIL-001-D09",
@@ -250,9 +278,9 @@
         0.12
       ],
       "function": "Need irregular stone/fort-wall returns, cylindrical tower-wall window bands, cone roof seats, stair-to-terrace corners and climbing-rose attachment layout. Source roofs, rose relief, pink masonry and banners already supply detail vocabulary. Pollinators/robins inhabit planted ledges. Missing detached construction pieces and local interior-facing patterns.",
-      "construction": "One isolated inner keep floor tile, strictly follow local source colour/material/motif instead of universal pink marble. Show real depth, flat back/host contact or one consistent repeat profile. Existing generic lanterns/flowers/benches reused; only named local fittings. No merged wall scene attached to small detail. This is a FLAT FLOOR piece, not a hanging wall plaque or raised flower sculpture. Show top pattern and a thin edge profile; relief remains shallow enough to walk across.",
+      "construction": "Flat square 1.5 m stone tile, 0.12 m thick, rose motif as flush colour inlay; zero raised flower relief on walking face. Repeat-edge continuity unverified.",
       "attachment_face": "Broad flat underside to floor, shortest dimension vertical Z",
-      "semantic_front": "Decorated broad face up +Z",
+      "semantic_front": "Exported GLB Y-up, front -Z; floor tile broad decorated face +Y; see handoff for assembly origins.",
       "target_polycount_proposed": 2500,
       "reuse_class": "reusable",
       "applies_to": [
@@ -266,23 +294,26 @@
       "generator": "",
       "generator_job_id": "",
       "model_sha256": "",
-      "review_status": "pending-reference-review",
+      "review_status": "pending-user-reference-and-model-review",
       "suggested_model_filename": "B04-DETAIL-001-D09__inner-keep-floor-tile__v001.glb",
-      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed",
+      "dimension_basis": "W X depth Z height Y in metres; proposed local fit dimensions, not measured from generated pixels.",
+      "geometry_review_status": "unverified",
+      "notes": "All twelve named fittings visible. Short D01-D12 IDs resolve under the full B04-DETAIL-001 title. R02 removes D02 seam posts, reduces D05 to one guard bay and simplifies the D06 corner. Arc ends, corner profiles and exact fit remain unverified. D09 rose must be FLUSH stone inlay. Painted shading still makes relief ambiguous; do not extrude the petals or accept this as a verified walking surface. D01 is one proposed roof quadrant, not a complete roof. Its four-copy closure and hollow underside require geometry checks. D05/D06/D08 guard proportions and physical connections are illustrative. Keep independent continuous collision barriers. D09-D11 are inferred local interior options, not an added playable room."
     },
     {
       "asset_id": "B04-DETAIL-001-D10",
       "name": "Ivory wall dado",
       "kind": "architectural-detail",
       "dimensions_m_proposed": [
-        1.5,
-        0.15,
-        1.5
+        1,
+        0.08,
+        0.65
       ],
       "function": "Need irregular stone/fort-wall returns, cylindrical tower-wall window bands, cone roof seats, stair-to-terrace corners and climbing-rose attachment layout. Source roofs, rose relief, pink masonry and banners already supply detail vocabulary. Pollinators/robins inhabit planted ledges. Missing detached construction pieces and local interior-facing patterns.",
       "construction": "One isolated ivory wall dado, strictly follow local source colour/material/motif instead of universal pink marble. Show real depth, flat back/host contact or one consistent repeat profile. Existing generic lanterns/flowers/benches reused; only named local fittings. No merged wall scene attached to small detail.",
       "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
-      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "semantic_front": "Exported GLB Y-up, front -Z; floor tile broad decorated face +Y; see handoff for assembly origins.",
       "target_polycount_proposed": 2500,
       "reuse_class": "reusable",
       "applies_to": [
@@ -296,23 +327,26 @@
       "generator": "",
       "generator_job_id": "",
       "model_sha256": "",
-      "review_status": "pending-reference-review",
+      "review_status": "pending-user-reference-and-model-review",
       "suggested_model_filename": "B04-DETAIL-001-D10__ivory-wall-dado__v001.glb",
-      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed",
+      "dimension_basis": "W X depth Z height Y in metres; proposed local fit dimensions, not measured from generated pixels.",
+      "geometry_review_status": "unverified",
+      "notes": "All twelve named fittings visible. Short D01-D12 IDs resolve under the full B04-DETAIL-001 title. R02 removes D02 seam posts, reduces D05 to one guard bay and simplifies the D06 corner. Arc ends, corner profiles and exact fit remain unverified. D09 rose must be FLUSH stone inlay. Painted shading still makes relief ambiguous; do not extrude the petals or accept this as a verified walking surface. D01 is one proposed roof quadrant, not a complete roof. Its four-copy closure and hollow underside require geometry checks. D05/D06/D08 guard proportions and physical connections are illustrative. Keep independent continuous collision barriers. D09-D11 are inferred local interior options, not an added playable room."
     },
     {
       "asset_id": "B04-DETAIL-001-D11",
       "name": "Keep ceiling beam bracket",
       "kind": "architectural-detail",
       "dimensions_m_proposed": [
-        1.5,
-        0.15,
-        1.5
+        0.3,
+        0.5,
+        0.6
       ],
       "function": "Need irregular stone/fort-wall returns, cylindrical tower-wall window bands, cone roof seats, stair-to-terrace corners and climbing-rose attachment layout. Source roofs, rose relief, pink masonry and banners already supply detail vocabulary. Pollinators/robins inhabit planted ledges. Missing detached construction pieces and local interior-facing patterns.",
       "construction": "One isolated keep ceiling beam bracket, strictly follow local source colour/material/motif instead of universal pink marble. Show real depth, flat back/host contact or one consistent repeat profile. Existing generic lanterns/flowers/benches reused; only named local fittings. No merged wall scene attached to small detail.",
       "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
-      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "semantic_front": "Exported GLB Y-up, front -Z; floor tile broad decorated face +Y; see handoff for assembly origins.",
       "target_polycount_proposed": 2500,
       "reuse_class": "reusable",
       "applies_to": [
@@ -326,9 +360,12 @@
       "generator": "",
       "generator_job_id": "",
       "model_sha256": "",
-      "review_status": "pending-reference-review",
+      "review_status": "pending-user-reference-and-model-review",
       "suggested_model_filename": "B04-DETAIL-001-D11__keep-ceiling-beam-bracket__v001.glb",
-      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed",
+      "dimension_basis": "W X depth Z height Y in metres; proposed local fit dimensions, not measured from generated pixels.",
+      "geometry_review_status": "unverified",
+      "notes": "All twelve named fittings visible. Short D01-D12 IDs resolve under the full B04-DETAIL-001 title. R02 removes D02 seam posts, reduces D05 to one guard bay and simplifies the D06 corner. Arc ends, corner profiles and exact fit remain unverified. D09 rose must be FLUSH stone inlay. Painted shading still makes relief ambiguous; do not extrude the petals or accept this as a verified walking surface. D01 is one proposed roof quadrant, not a complete roof. Its four-copy closure and hollow underside require geometry checks. D05/D06/D08 guard proportions and physical connections are illustrative. Keep independent continuous collision barriers. D09-D11 are inferred local interior options, not an added playable room."
     },
     {
       "asset_id": "B04-DETAIL-001-D12",
@@ -342,7 +379,7 @@
       "function": "Need irregular stone/fort-wall returns, cylindrical tower-wall window bands, cone roof seats, stair-to-terrace corners and climbing-rose attachment layout. Source roofs, rose relief, pink masonry and banners already supply detail vocabulary. Pollinators/robins inhabit planted ledges. Missing detached construction pieces and local interior-facing patterns.",
       "construction": "One isolated rose climbing trellis hook, strictly follow local source colour/material/motif instead of universal pink marble. Show real depth, flat back/host contact or one consistent repeat profile. Existing generic lanterns/flowers/benches reused; only named local fittings. No merged wall scene attached to small detail. SMALL attachment hardware only: plate/socket/hook/joint with its own hole/root and source-compatible quiet ornament. No lantern body, full arch, whole column, complete door, garden or giant architectural scene glued to it.",
       "attachment_face": "Flat rear against host, or underside/root socket to support; show chosen contact view",
-      "semantic_front": "Main visible face +Y and Zup; sides are actual thickness, not flattened painting",
+      "semantic_front": "Exported GLB Y-up, front -Z; floor tile broad decorated face +Y; see handoff for assembly origins.",
       "target_polycount_proposed": 2500,
       "reuse_class": "reusable",
       "applies_to": [
@@ -356,9 +393,12 @@
       "generator": "",
       "generator_job_id": "",
       "model_sha256": "",
-      "review_status": "pending-reference-review",
+      "review_status": "pending-user-reference-and-model-review",
       "suggested_model_filename": "B04-DETAIL-001-D12__rose-climbing-trellis-hook__v001.glb",
-      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed"
+      "design_basis": "Visible source vocabulary with missing construction views or new habitat forms; metrics and hidden surfaces proposed",
+      "dimension_basis": "W X depth Z height Y in metres; proposed local fit dimensions, not measured from generated pixels.",
+      "geometry_review_status": "unverified",
+      "notes": "All twelve named fittings visible. Short D01-D12 IDs resolve under the full B04-DETAIL-001 title. R02 removes D02 seam posts, reduces D05 to one guard bay and simplifies the D06 corner. Arc ends, corner profiles and exact fit remain unverified. D09 rose must be FLUSH stone inlay. Painted shading still makes relief ambiguous; do not extrude the petals or accept this as a verified walking surface. D01 is one proposed roof quadrant, not a complete roof. Its four-copy closure and hollow underside require geometry checks. D05/D06/D08 guard proportions and physical connections are illustrative. Keep independent continuous collision barriers. D09-D11 are inferred local interior options, not an added playable room."
     }
   ]
 }

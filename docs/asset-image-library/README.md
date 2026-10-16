@@ -2,7 +2,7 @@
 
 **Structured planning update — 15 October 2026:** [World sequence, kit families and depth for all34places](world-production-plan/README.md). Image generation is paused for this planning pass; geography/route decisions precede the next playable samples. This is proposed scope, not a claim of built or approved runtime geometry.
 
-Current completion work: [coverage queue and saved sheets](completion-pass/README.md), **33/119 jobs saved**. **126 selected sheets saved;212/230 allocated;848 archive images**. Allocation:83palace,58other buildings,57nature/ecology,22outdoor/shared,10maps/magic. Geometry, view parity, UVs, anatomy and runtime remain unbuilt/unverified.
+Current completion work: [coverage queue and saved sheets](completion-pass/README.md), **35/119 jobs saved**. **128 selected sheets saved;212/230 allocated;852 archive images**. Allocation:83palace,58other buildings,57nature/ecology,22outdoor/shared,10maps/magic. Geometry, view parity, UVs, anatomy and runtime remain unbuilt/unverified.
 
 Previous B02 exterior pass: [Moon Water Palace — 3 sheets and 20 labelled components](world-location-kits/moon-water-palace/README.md). B02 dedicated cap **3/3**; physical joins and common assembly scale pending. **93 selected sheets saved; 96/230 selected or reserved; 812 archive images**. Shared freshwater fauna is next; no 3D models generated.
 

@@ -5,9 +5,9 @@
   "overall_reason": "No agreed weighted work breakdown for the complete game; image counts and local prototype passes do not measure final game completion.",
   "metrics": {
     "reference_sheets": {
-      "saved": 126,
+      "saved": 128,
       "paused_proposals_in_saved_count": 1,
-      "active_or_pending_reference_count": 125,
+      "active_or_pending_reference_count": 127,
       "inventory_anomalies": [
         {
           "sheet_id": "PAL-BASE-001",
@@ -16,9 +16,9 @@
         }
       ],
       "cap": 230,
-      "percent_of_allowance": 54.8,
+      "percent_of_allowance": 55.7,
       "allocated_slots": 212,
-      "reserved_missing": 86,
+      "reserved_missing": 84,
       "unallocated": 18,
       "counting_rule": "Count one selected final/reference image per slot and owner. Existing 45 boards are included. Direct analysis crops, previews, renders and superseded experiments stay in the archive without consuming new design slots. Shared designs count once, with multiple reuse tags."
     },
@@ -53,7 +53,7 @@
     },
     "registered_asset_models": {
       "registered": 0,
-      "reference_targets": 700,
+      "reference_targets": 716,
       "percent": 0,
       "basis": "Versioned accepted models in the redesign register; procedural Function specimens are excluded"
     },
@@ -103,17 +103,25 @@
     "Final model registration, materials, LOD/collision/streaming, lighting and measured device performance"
   ],
   "generation_this_pass": {
-    "new_illustrated_sheets": 0,
-    "paid_jobs": 0
+    "scope": "Rose Keep B04 missing-reference sheets",
+    "new_illustrated_sheets": 2,
+    "preserved_superseded_drafts": 2,
+    "new_asset_targets_added": 16,
+    "paid_model_jobs": 0,
+    "user_reference_approval": "pending",
+    "evidence": [
+      "../completion-pass/B04-STRUCT-001/schedule.json",
+      "../completion-pass/B04-DETAIL-001/schedule.json"
+    ]
   },
   "source_hashes": [
     {
       "file": "../production-budget.json",
-      "sha256": "b6e2a8c6fda8a47a29bf279cbe2a2f78321a0130c31184d21c18317720962db4"
+      "sha256": "ef6fb7851e2df748a8fa553c75255a040473ab4416709e99423b0b8314e4d45d"
     },
     {
       "file": "../asset-register.json",
-      "sha256": "8cd813603d91a86e9578647b1870ee3f9dc97ceaaf407da43ba802ca9e9be1c8"
+      "sha256": "41d916dc4dd8a70e59ccea47232b0ae6bb8d4d769d2cfa859529990fd823b1ce"
     },
     {
       "file": "location-coverage.json",
