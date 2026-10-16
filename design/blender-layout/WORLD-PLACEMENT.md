@@ -28,3 +28,10 @@ Not from the sheets: three English cottage clearings and one extra stone circle 
 ## Not covered (no Meshy model fits, stays a grey placeholder box)
 B04 Rose Keep, B05 Misty Keep, B06 Pagoda, B07 rotundas, B08 Colosseum, B11 Crescent Arch, B13 Windmill, B14 Pillar Sky City, B15 Jungle Temple, B16 Longhouse, B19 Cove Gatehouse, B20 Bridge Pavilion, B22 Lighthouse, B23 Sea Pavilion, B24 Reef Shrine, B02 Moon Water Palace, and the palace B01 (our own builds from the B01 and B02 sheets).
 Earlier today's first populated try put cathedrals on B04 to B08; the sheets show those are a pink keep, a lantern keep, a pagoda, rotundas and a colosseum, so they were removed.
+
+## Second pass (Oct 16, later): recolours and village layouts
+Renders: `world3-*.jpg`, contact sheet `world3-contact.jpg`.
+- **Recoloured (material nodes, original textures untouched):** Gothic_Cathedral navy-violet (grey-blue now, roofs not separated), Copper_Cloud_Bonsai rose, Celestial_Armillary rose-gold, Yuki nacre pink, Arch_Bridge white marble, Iron_Fence gold-white, Medieval_Cottage rose roofs (the whole model shifts, walls pick up a tint), Mediterranean_Villa less yellow. Ember trees have three looks: gold (temple hill), pink (Mother Tree), green (avenue). Limit: a hue shift moves the whole texture, so single parts (a roof only) are not separated yet.
+- **Storybook Village (B12):** 165 cottages along a curved main street, six cross lanes and a canal, instead of a scatter.
+- **Lagoon City (B09):** 25 white pads, 4 villas each (100), five canals between. The pads sit on the terrain; the lagoon in the terrain is shallower than on your map, so the city stands on ground more than on water.
+- **Memory note for whoever opens the file:** the villas, cottages and trees are instances of one mesh each. Trees with a different colour use their own mesh copy, because Cycles duplicates geometry for every object that overrides a material. The renders use decimated copies (150k to 350k triangles per model) so the cloud machine can draw them; the saved .blend holds the exact meshes.
