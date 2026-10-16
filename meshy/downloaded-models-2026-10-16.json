@@ -3249,6 +3249,116 @@
           "storage": "git"
         }
       ]
+    },
+    {
+      "sourceArchive": "Meshy_AI_museum_building_1016102603_texture_fbx.zip",
+      "sourceBytes": 5232652,
+      "sourceGitBlob": "433faf52905c20bd56ed460f03d22887820bbdb8",
+      "folder": "meshy/Meshy_AI_museum_building_1016102603",
+      "files": [
+        {
+          "path": "meshy/Meshy_AI_museum_building_1016102603/Meshy_AI_museum_building_1016102603_texture.fbx",
+          "bytes": 1603548,
+          "sha256": "c1394d1c6eb92858aa914f8b23afd88889f92c241e2098c3609177d29646d5c0",
+          "gitBlob": "fd2a3df731fc20a11a114312d9b46346442c4b7d",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_museum_building_1016102603/Meshy_AI_museum_building_1016102603_texture.png",
+          "bytes": 3628550,
+          "sha256": "8a409d1bc342600aeec1522be5fab1f72361a91f99b8938c950e06db16578662",
+          "gitBlob": "78a8b2ea7709340ef52147045062d10b1e1c5b5b",
+          "storage": "git"
+        }
+      ]
+    },
+    {
+      "sourceArchive": "Meshy_AI_kleine_Dorfkirche_1016102635_texture_fbx.zip",
+      "sourceBytes": 8118640,
+      "sourceGitBlob": "d668daaba073cf0f3b4938cbba047dacecc718b9",
+      "folder": "meshy/Meshy_AI_kleine_Dorfkirche_1016102635",
+      "files": [
+        {
+          "path": "meshy/Meshy_AI_kleine_Dorfkirche_1016102635/Meshy_AI_kleine_Dorfkirche_1016102635_texture.fbx",
+          "bytes": 3965404,
+          "sha256": "b14d9326b0bfb19e63619d8e8ad73af96339eaf075cce8e57e3d87cf9ede2779",
+          "gitBlob": "625544927b49675d422a0b7bd3c0eafca2a3e66a",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_kleine_Dorfkirche_1016102635/Meshy_AI_kleine_Dorfkirche_1016102635_texture.png",
+          "bytes": 4152666,
+          "sha256": "b2e89690bc3efaf1590a30fb5dd1cca0aed581a2d97d0f5af76a0ef5ce8f3baa",
+          "gitBlob": "1b284c089aaf9097a5460502da88e8b94f7705b7",
+          "storage": "git"
+        }
+      ]
+    },
+    {
+      "sourceArchive": "Meshy_AI_kleine_Dorfkirche_1016102512_texture_fbx.zip",
+      "sourceBytes": 11164618,
+      "sourceGitBlob": "19920fb8475dbce9a72d3a2891af673ff4c49cf6",
+      "folder": "meshy/Meshy_AI_kleine_Dorfkirche_1016102512",
+      "files": [
+        {
+          "path": "meshy/Meshy_AI_kleine_Dorfkirche_1016102512/Meshy_AI_kleine_Dorfkirche_1016102512_texture.fbx",
+          "bytes": 6274332,
+          "sha256": "77f0a97ffd260da7cbb053964bcc5e0f465b406fa8f64246358950a575d6e84b",
+          "gitBlob": "1c40f5fe38579a148f7379abbdc7e734b6c3b6e2",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_kleine_Dorfkirche_1016102512/Meshy_AI_kleine_Dorfkirche_1016102512_texture.png",
+          "bytes": 4889716,
+          "sha256": "ea5d0772bd9a45872152b76d65ffdcef84393d98ecce2a26ab661a13d5d2b867",
+          "gitBlob": "e400b73e2325ef99b6f4c33a05ed22c0f9cd7968",
+          "storage": "git"
+        }
+      ]
+    },
+    {
+      "sourceArchive": "Meshy_AI_Old_Town_Clock_Tower_1016102324_texture_fbx.zip",
+      "sourceBytes": 20271769,
+      "sourceGitBlob": "06cb1e949c4b094b745c65571c543d614ee85b4f",
+      "folder": "meshy/Meshy_AI_Old_Town_Clock_Tower_1016102324",
+      "files": [
+        {
+          "path": "meshy/Meshy_AI_Old_Town_Clock_Tower_1016102324/Meshy_AI_Old_Town_Clock_Tower_1016102324_texture.fbx",
+          "bytes": 15062652,
+          "sha256": "049aff7a074fe115668b046644c5522da12a97b959c7a53a757bb43fc5df7beb",
+          "gitBlob": "b20c367eee88b1f5f5a104023a0e72dbe5e1cdaa",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_Old_Town_Clock_Tower_1016102324/Meshy_AI_Old_Town_Clock_Tower_1016102324_texture.png",
+          "bytes": 5208523,
+          "sha256": "a4a690aed9a8bed25926f2cd6807e4215f77ed39358104e19f7d33a953dfed6e",
+          "gitBlob": "74bff834bada3d17b8b7cf2580a5d0648569fde7",
+          "storage": "git"
+        }
+      ]
+    },
+    {
+      "sourceArchive": "Meshy_AI_A_parisian_building_1016102608_texture_fbx.zip",
+      "sourceBytes": 60973389,
+      "sourceGitBlob": "80c1b53c09753dcf6e6cbcde0986ca1c66b7b41f",
+      "folder": "meshy/Meshy_AI_A_parisian_building_1016102608",
+      "files": [
+        {
+          "path": "meshy/Meshy_AI_A_parisian_building_1016102608/Meshy_AI_A_parisian_building_1016102608_texture.fbx",
+          "bytes": 56171564,
+          "sha256": "71b1f712653849ee2909cd406cf334588aea100ee0c40c40ae203728dcdb0b84",
+          "gitBlob": "00c9eda7c13ff5811670ee762a5d7b4cfa3c93a4",
+          "storage": "git-lfs"
+        },
+        {
+          "path": "meshy/Meshy_AI_A_parisian_building_1016102608/Meshy_AI_A_parisian_building_1016102608_texture.png",
+          "bytes": 4801239,
+          "sha256": "c45848fd388a327a25b24bfdb89e240f9aac71a8ea200ac667ea5bf6ae0c0d57",
+          "gitBlob": "be32fa8d4219af91a0dc4cd82df92280bb3060a9",
+          "storage": "git"
+        }
+      ]
     }
   ]
 }
