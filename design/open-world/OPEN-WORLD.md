@@ -82,4 +82,4 @@ Our 21 Meshy models cover the built places well and the wild land poorly. **Bigg
 | Reef, sea | none | coral clusters, shells, small boats, eyeless sea creatures |
 | Palace grounds | urns, iron fence, armillary, Yuki, garden gate, bonsai, garden island | palace itself (our own build) |
 
-Count: 6 biomes are well covered, 6 partly, 10 have nothing yet. A shopping list of about 40 models (12 trees and plants first) would cover every biome.
+Count: 4 biome groups are well covered, 7 partly, 7 have nothing yet (no trees or ground plants at all). A shopping list of about 40 models (12 trees and plants first) would cover every biome.
