@@ -2480,6 +2480,49 @@
           "storage": "git"
         }
       ]
+    },
+    {
+      "sourceArchive": "Meshy_AI_Rocky_Terrain_1016071100_texture_fbx.zip",
+      "sourceBytes": 164579957,
+      "sourceGitBlob": "e8dbaddaf5c98d8f4775d44fd8d8b800304c28a2",
+      "folder": "meshy/Meshy_AI_Rocky_Terrain_1016071100",
+      "files": [
+        {
+          "path": "meshy/Meshy_AI_Rocky_Terrain_1016071100/Meshy_AI_Rocky_Terrain_1016071100_texture.fbx",
+          "bytes": 150418076,
+          "sha256": "62d15ce7ab4687da0835f84b737893d40a00ee53389852127ee774794487983b",
+          "gitBlob": "c33257df709fae832c987862f9d371219f64943a",
+          "storage": "git-lfs"
+        },
+        {
+          "path": "meshy/Meshy_AI_Rocky_Terrain_1016071100/Meshy_AI_Rocky_Terrain_1016071100_texture.png",
+          "bytes": 5676954,
+          "sha256": "e0e13c86ce67d066a873910a77bf6c76647993492697283fe84a7c982ee49180",
+          "gitBlob": "9d6ec680384cd7f9836144384833426bfff915a4",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_Rocky_Terrain_1016071100/Meshy_AI_Rocky_Terrain_1016071100_texture_metallic.png",
+          "bytes": 102879,
+          "sha256": "ddc28767f380fa129930d41f016b61b974fa0c76f50d7f7ce8f9b1d3c5260edf",
+          "gitBlob": "9f41088f4a3668109645422fee7c4f42e1cd1ec8",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_Rocky_Terrain_1016071100/Meshy_AI_Rocky_Terrain_1016071100_texture_normal.png",
+          "bytes": 7384449,
+          "sha256": "c64e540bfe9940f3c40603a50ef53ae4aaaba4463c7a54c75822e6e787f7cd08",
+          "gitBlob": "4ca8e984a6e81bdf3acc607177a8364e20096ae8",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_Rocky_Terrain_1016071100/Meshy_AI_Rocky_Terrain_1016071100_texture_roughness.png",
+          "bytes": 996235,
+          "sha256": "1eb21cd30cb39360884b8171429b8166acb0a060bf88a06754dad0b318b628c2",
+          "gitBlob": "41c3d8b07c414481133744e50ba9d7f23996a478",
+          "storage": "git"
+        }
+      ]
     }
   ]
 }
