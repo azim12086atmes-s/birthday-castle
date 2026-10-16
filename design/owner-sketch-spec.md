@@ -1,5 +1,8 @@
 # Owner sketches v5: the one buildable plan
 
+> **Owner decisions, 2026-10-16.** (1) The game moves to **Unreal Engine 5**, streamed to browsers over WebRTC (Pixel Streaming). So the web triangle and draw-call budgets in §8 and in detail-pipeline.md **no longer limit the art**: Nanite takes heavy meshes, and the Meshy models import as they are. Sizes, shapes and layout below stay valid. Unreal counts in centimetres, so multiply metres by 100 on import. (2) The **20 km map (S = 2.75) stays**. The 12 km map on the image-library branch (`design/image-library-2026-10-13`) is a reference only. B-codes are the same in both.
+
+
 On 2026-10-11 the owner drew 16 concept sheets and asked for them to be built exactly. The sheets don't all agree, so this page merges them into one plan. **Where two sheets differ, the rule is: the latest revision wins, a labelled number beats a measured drawing, and the world plan decides where things go.** Every default chosen is marked *(default)*.
 
 The sheets are in [owner-sketches/](owner-sketches/), numbered 01 to 16. This page supersedes world-layout.md §2 (map) and §5 (castle v4) wherever they conflict. Anything this page leaves out stays as it is in world-layout.md.
