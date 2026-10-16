@@ -10,6 +10,7 @@
 // it. The sketches are drawn at x1; the palace takes its labelled heights, which are
 // 2.75 times its drawn proportions, so every drawn size and position is multiplied by S.
 // Human-scale things (paths, rails, lamps, benches, trees and plants) do not scale.
+import { crescentH, crescentRGB } from './crescent.js';
 export const S = 2.75;
 export const H_SCALE = S;
 const WS = S;
@@ -153,9 +154,10 @@ export const BRANCHES = [
 // --- the districts (sheet 04 table), with the ground each one stands on -----------------
 // pad: flattened ground { r, y, e (blend width) }
 export const SITES = Object.fromEntries(Object.entries(SITES1).map(([k, s]) => [k, {
-  name: s.name, x: s.x * S, z: s.z * S, pad: { r: s.pad.r * S, y: s.pad.y * S, e: s.pad.e * S },
+  // each district's flat ground sits at the crescent's own height there
+  name: s.name, x: s.x * S, z: s.z * S, pad: { r: s.pad.r * S, y: k === 'B20' ? s.pad.y * S : Math.max(crescentH(s.x * S, s.z * S), 3), e: s.pad.e * S },
 }]));
-const EXTRA_PADS = EXTRA_PADS1.map((p) => ({ x: p.x * S, z: p.z * S, r: p.r * S, y: p.y * S, e: p.e * S }));
+const EXTRA_PADS = EXTRA_PADS1.map((p) => ({ x: p.x * S, z: p.z * S, r: p.r * S, y: Math.max(crescentH(p.x * S, p.z * S), 3), e: p.e * S }));
 
 // --- floating islands, reached by sky portals ------------------------------------------
 export const ISLANDS = [
@@ -319,7 +321,10 @@ function natural1(x, z) {
 
 // world ground: the drawn land scaled by S, then the district pads, the spawn shore and the palace plateau
 export function terrainRaw(x, z) {
-  let h = natural1(x / S, z / S) * S;
+  // the crescent world's ground, with Lantern Lake carved for the causeway
+  let h = crescentH(x, z);
+  const ld = lake1(x / S, z / S);
+  if (ld < 170) h = lerp((-0.8 - 11 * smooth(0, -280, ld)) * S, Math.max(h, 1.4 * S), smooth(-10, 170, ld));
   // flat ground under each district
   for (const p of PAD_LIST) {
     const q = Math.hypot(x - p.x, z - p.z);
@@ -378,6 +383,16 @@ export function groundHSL(isl, x, z, h) {
   let H = (ISLE_HUE[isl.id] ?? 0.28) - big * 0.05 + (small - 0.5) * 0.025;
   let Sat = 0.6 + big * 0.14, L = 0.33 + big * 0.12 + (small - 0.5) * 0.05;
   if (!isl.main) return [H, Sat, L];
+  const rgb = crescentRGB(x, z);
+  if (rgb) {
+    // the painted crescent colour, a little brighter and more saturated for the storybook look
+    const [r, g, b] = rgb, mx = Math.max(r, g, b), mn = Math.min(r, g, b), l = (mx + mn) / 2, d = mx - mn;
+    let hh = 0;
+    if (d > 1e-5) hh = mx === r ? ((g - b) / d + (g < b ? 6 : 0)) / 6 : mx === g ? ((b - r) / d + 2) / 6 : ((r - g) / d + 4) / 6;
+    const ss = d < 1e-5 ? 0 : d / (1 - Math.abs(2 * l - 1));
+    const sand = smooth(1.5 * S, 0.5 * S, h);
+    return [lerp(hh + (small - 0.5) * 0.02, 0.11, sand * 0.5), Math.min(1, ss * 1.2 + 0.05), Math.min(0.92, l * 1.08 + (big - 0.5) * 0.06 + (small - 0.5) * 0.04)];
+  }
   const e = 6, s = Math.hypot(mainTerrain(x + e, z) - mainTerrain(x - e, z), mainTerrain(x, z + e) - mainTerrain(x, z - e)) / (2 * e);
   const f = forestAt(x, z, h);
   H = lerp(H, 0.33, f * 0.6); L = lerp(L, 0.2 + big * 0.06, f * 0.8); Sat = lerp(Sat, 0.55, f * 0.5);

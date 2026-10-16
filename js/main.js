@@ -11,6 +11,7 @@ import { createMeadow } from './world/meadow.js';
 import { createCreatures } from './world/creatures.js';
 import { createEffects } from './world/effects.js';
 import { createAtmosphere } from './world/atmosphere.js';
+import { createWorldFill } from './world/fill.js';
 import { SPAWN, MAIN, groundAt } from './world/layout.js';
 import { MEADOW_TIME } from './world/materials.js';
 const SPAWN_Y = groundAt(SPAWN.x, SPAWN.z) ?? MAIN.y;
@@ -23,7 +24,7 @@ import { Net } from './net.js';
 import { Voice } from './voice.js';
 import { loadProfile, openLobby } from './lobby.js';
 import { createClock } from './game/clock.js';
-import { preparePlaces, createPlaceVisuals } from './game/places.js';
+import { preparePlaces, createPlaceVisuals, setSpotObstacles } from './game/places.js';
 import { createShips } from './game/ship.js';
 import { createCombat } from './game/combat.js';
 import { createMew } from './game/mew.js';
@@ -136,6 +137,8 @@ const places = preparePlaces(DATA);
 const placeVisuals = createPlaceVisuals(scene, places);
 const gameClock = createClock(DATA);
 const ships = createShips(scene);
+const worldFill = createWorldFill(scene, quality);
+setSpotObstacles(worldFill.footprints);
 
 // --------------------------------------------------------------------- UI --
 const ui = {
@@ -428,6 +431,7 @@ function frame() {
   effects.update(t, dt, camera, governor.ratio);
   celebration.update(t, dt);
   lanterns.update(t, dt);
+  worldFill.update(dt, camera);
 
   if ((celebrationChecked -= dt) <= 0) {
     celebrationChecked = 1;

@@ -76,8 +76,19 @@ AI Mew following you, `?quality=low` for weak machines.
 
 ## Waiting on the owner and the study thread
 
-- All 32 places now take their positions from the schema (B26-B32 came with the crescent
-  world fill). The crescent terrain and its placed landmarks are not loaded in the game yet.
+- All 32 places take their positions from the schema.
+
+## The crescent world (`js/world/crescent.js`, `js/world/fill.js`)
+
+The ground is the study thread's crescent terrain (`data/world/crescent-h.bin`, 1024 x 1024,
+about 20 m a cell, and its painted colour map), with Lantern Lake, the palace terraces, the
+causeway and the district pads laid on top. The 1,521 placed models of the world fill
+(`data/world/placements.json`) draw as one InstancedMesh per model. Each model has a near
+copy (about a quarter of the layout triangles, 1024 px texture, `data/world/near/`) and a
+far copy (about 4%, 256 px, `data/world/far/`); copies load as you come within range
+(landmarks 450 m / 7 km, buildings 300 m / 3.5 km, props 140 m / 1.2 km, shorter on Low).
+They are made from the layout GLBs with a position-welded simplify; the script is in the
+thread's notes. Players can walk through the placed models for now.
 - Her name, the friends list, the quiz questions about her, and the reveal line are in
   `js/config.js`.
 - The real arrival (docks, waterfall gate, aerial reveal) and the finale's floating

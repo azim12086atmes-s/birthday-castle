@@ -7,6 +7,10 @@ import { glowTexture, sparkleTexture, textTexture } from '../world/textures.js';
 import { groundAt, COLLIDERS, PLAZA, PAL } from '../world/layout.js';
 
 
+// landmarks placed by the world fill: games keep clear of them too
+let obstacles = [];
+export function setSpotObstacles(list) { obstacles = list; }
+
 // A flat, open patch near the place where a game can be played: the pads are
 // flattened ground, but a building usually stands in the middle of each.
 function findSpot(x, z) {
@@ -20,6 +24,7 @@ function findSpot(x, z) {
       const cr = c.r !== undefined ? c.r : Math.hypot(c.maxX - c.minX, c.maxZ - c.minZ) / 2;
       if (Math.hypot(px - cx, pz - cz) < cr + 22) return null;
     }
+    for (const o of obstacles) if (Math.hypot(px - o.x, pz - o.z) < o.r + 18) return null;
     return h;
   };
   for (let r = 0; r <= 420; r += 30) {
