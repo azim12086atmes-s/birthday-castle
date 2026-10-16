@@ -3177,6 +3177,78 @@
           "storage": "git"
         }
       ]
+    },
+    {
+      "sourceArchive": "Meshy_AI_Arc_en_R\u00eave_arch__1016100452_texture_fbx.zip",
+      "sourceBytes": 30417136,
+      "sourceGitBlob": "f4ec955ca319c5d60d465014cd37c6af6eb9aa8d",
+      "folder": "meshy/Meshy_AI_Arc_en_R\u00eave_arch__1016100452",
+      "files": [
+        {
+          "path": "meshy/Meshy_AI_Arc_en_R\u00eave_arch__1016100452/Meshy_AI_Arc_en_Re\u0302ve_arch__1016100452_texture.fbx",
+          "bytes": 25076380,
+          "sha256": "05f5ba553a9e39f54f4a3001f773bdb4f27616d4fddf3d5276408b53ec7d9772",
+          "gitBlob": "d4c098f0473d35c224c6d302ae69deb5785c9ad3",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_Arc_en_R\u00eave_arch__1016100452/Meshy_AI_Arc_en_Re\u0302ve_arch__1016100452_texture.png",
+          "bytes": 5340170,
+          "sha256": "25c51eaef45936e4f7226e0f588f6193db27046079c8af9127120c40997cb84f",
+          "gitBlob": "8af819dc4301006c684731b168dc9376a41d5907",
+          "storage": "git"
+        }
+      ]
+    },
+    {
+      "sourceArchive": "Meshy_AI_Desert_Fortress_1016100109_texture_fbx.zip",
+      "sourceBytes": 92862926,
+      "sourceGitBlob": "9b42d4d18d4aa890059b357f071a7dffc2640fc8",
+      "folder": "meshy/Meshy_AI_Desert_Fortress_1016100109",
+      "files": [
+        {
+          "path": "meshy/Meshy_AI_Desert_Fortress_1016100109/Meshy_AI_Desert_Fortress_1016100109_texture.fbx",
+          "bytes": 74783852,
+          "sha256": "0e3ca3883c5a4e0f041d4159859a811711cf7f3a0972e766be2e3e72e4219a7c",
+          "gitBlob": "7861d2f80ae5e6b2b45befcb1546539522eea2c9",
+          "storage": "git-lfs"
+        },
+        {
+          "path": "meshy/Meshy_AI_Desert_Fortress_1016100109/Meshy_AI_Desert_Fortress_1016100109_texture.png",
+          "bytes": 8706394,
+          "sha256": "a2ffb3b4827b3589c8447878ccdb3f5758e0e7975d293e3516f240e91d76c293",
+          "gitBlob": "19b19e93e2b54a69e7e63f28e1a3a41a3bc254ff",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_Desert_Fortress_1016100109/Meshy_AI_Desert_Fortress_1016100109_texture_emission.png",
+          "bytes": 107844,
+          "sha256": "b00a68272717312e1923737ef38bd4fa17a51050ef6a570701c63a34a7e6d4f4",
+          "gitBlob": "630dac89825cb078dfdb08129e83742a7ab74ece",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_Desert_Fortress_1016100109/Meshy_AI_Desert_Fortress_1016100109_texture_metallic.png",
+          "bytes": 13977,
+          "sha256": "87ebe2d69b45cb3e535b07f2f6a417e6ab8a6004305f9f4571e023425ac9adca",
+          "gitBlob": "da2ed6eb9ef445f7f6ae7713971f99b34c48783c",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_Desert_Fortress_1016100109/Meshy_AI_Desert_Fortress_1016100109_texture_normal.png",
+          "bytes": 7852439,
+          "sha256": "20e22b8f0557b6673913bf940f2125e21fff54d86fb03fab3b20e7c67f64e8c8",
+          "gitBlob": "62463245de72d084442d3d1c6b2dfa5e007c5029",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_Desert_Fortress_1016100109/Meshy_AI_Desert_Fortress_1016100109_texture_roughness.png",
+          "bytes": 1396732,
+          "sha256": "f871d4049d88a99c667886ab4390033432ff76a97a088a4bf1e5155e2bb68f81",
+          "gitBlob": "ebcd46daf474e0ea2a8193fd644a5d953b2af3de",
+          "storage": "git"
+        }
+      ]
     }
   ]
 }
