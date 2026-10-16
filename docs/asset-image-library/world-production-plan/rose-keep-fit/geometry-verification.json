@@ -1,0 +1,69 @@
+{
+  "status": "pass",
+  "checks": [
+    "All mesh positions/normals are finite; complete fixture below 20000 triangles and 100 mesh draws",
+    "Ten actual 0.15 m risers and 0.30 m treads match K09; landing, terrace and wall sizes match the handoff",
+    "Wall and both separate arch specimens have a real through-aperture; side wall/lintel remain solid, and oversized bodies cannot pass",
+    "Return wall has physical footing coverage beyond the terrace; deck underside meets the separate base",
+    "Both full returns pass the swept controller; every route sample has matching drawn floor support, with exact-riser probes displaced 10 micrometres into the upper tread",
+    "Inactive side outlet, wall returns and raised edges block large-delta movement; hiding guard art leaves containment intact",
+    "Canonical input objects and the world-layout hash remain unchanged"
+  ],
+  "routes": {
+    "entrance": {
+      "status": "pass",
+      "length_m": 36.199999999999626,
+      "max_step_m": 0.15000000000000013,
+      "max_floor_m": 1.5,
+      "visited": [
+        "LOWER-APRON",
+        "B04-STRUCT-001-S04",
+        "TOP-LANDING",
+        "TERRACE",
+        "COURT-STUB"
+      ],
+      "end": {
+        "x": 0,
+        "z": 2.5
+      }
+    },
+    "terrace": {
+      "status": "pass",
+      "length_m": 40.74950975679602,
+      "max_step_m": 0.15000000000000013,
+      "max_floor_m": 1.5,
+      "visited": [
+        "LOWER-APRON",
+        "B04-STRUCT-001-S04",
+        "TOP-LANDING",
+        "TERRACE",
+        "COURT-STUB"
+      ],
+      "end": {
+        "x": 0,
+        "z": 2.5
+      }
+    }
+  },
+  "floor_ray_probes": 773,
+  "complete_geometry": {
+    "triangles": 2316,
+    "mesh_draws": 68
+  },
+  "opening": {
+    "width_m": 2.4,
+    "depth_m": 0.5999999999999996,
+    "spring_m": 3.2,
+    "apex_m": 3.8
+  },
+  "world_layout_unchanged": true,
+  "scope": [
+    "Separate local Function specimen: no complete keep, final asset import, world placement, export or deployment.",
+    "S04/S03/S02 dimensions and named ports come from the first-batch handoff. Source image proportions do not override the measured contract.",
+    "The aligned door shifts the return 0.5 m outside the 8 m terrace. A named additional footing supports it without enlarging the reserved world footprint.",
+    "The return/court footing and approach are engineering placeholders, not final cliff or drainage design. Load-bearing engineering remains unresolved.",
+    "Only the straight landing outlet is active; the side outlet is visibly guarded until another supported route joins it.",
+    "D05 rail and D07 arch are simple fit specimens, not accepted carvings. No turret, roof or hidden indoor floor plan is inferred here.",
+    "Actual world B04/B25 arrival, grading, bridges and regional return remain unresolved. This fixture does not validate the 78 m pad or global R02 route."
+  ]
+}

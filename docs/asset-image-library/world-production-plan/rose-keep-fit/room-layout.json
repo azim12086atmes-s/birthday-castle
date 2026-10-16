@@ -1,0 +1,122 @@
+{
+  "schema": "game-room.layout.v1",
+  "roomId": "b04-entry-fit",
+  "units": "meters",
+  "surfaces": [
+    {
+      "id": "LOWER-APRON",
+      "asset_id": "PROCEDURAL-APPROACH",
+      "xmin": -2,
+      "xmax": 2,
+      "zmin": 0,
+      "zmax": 4,
+      "y": 0,
+      "bottom": -0.25
+    },
+    {
+      "id": "TOP-LANDING",
+      "asset_id": "B04-STRUCT-001-S04",
+      "xmin": -1.4,
+      "xmax": 1.4,
+      "zmin": -5.8,
+      "zmax": -3,
+      "y": 1.5,
+      "bottom": -0.25
+    },
+    {
+      "id": "TERRACE",
+      "asset_id": "B04-STRUCT-001-S03",
+      "xmin": -4,
+      "xmax": 4,
+      "zmin": -11.8,
+      "zmax": -5.800000000000001,
+      "y": 1.5,
+      "bottom": 0
+    },
+    {
+      "id": "COURT-STUB",
+      "asset_id": "PROCEDURAL-DESTINATION",
+      "xmin": -3.5,
+      "xmax": 4.5,
+      "zmin": -15.8,
+      "zmax": -11.200000000000001,
+      "y": 1.5,
+      "bottom": -0.25
+    }
+  ],
+  "instances": [
+    {
+      "asset_id": "B04-STRUCT-001-S04",
+      "position_xyz_m": [
+        0,
+        0,
+        0
+      ],
+      "yaw_degrees": 0
+    },
+    {
+      "asset_id": "B04-STRUCT-001-S03",
+      "position_xyz_m": [
+        0,
+        1.5,
+        -8.8
+      ],
+      "yaw_degrees": 0
+    },
+    {
+      "asset_id": "B04-STRUCT-001-S02",
+      "position_xyz_m": [
+        0.5,
+        1.5,
+        -11.8
+      ],
+      "yaw_degrees": 0
+    },
+    {
+      "asset_id": "PROCEDURAL-RETURN-FOOTING",
+      "bounds": {
+        "id": "RETURN-FOOTING",
+        "xmin": 3.8,
+        "xmax": 4.6,
+        "zmin": -11.9,
+        "zmax": -7.700000000000001,
+        "bottom": -0.25,
+        "y": 1.5
+      }
+    },
+    {
+      "asset_id": "D07-COURT",
+      "position_xyz_m": [
+        0,
+        1.5,
+        -12
+      ]
+    },
+    {
+      "asset_id": "D07-ARRIVAL",
+      "position_xyz_m": [
+        0,
+        1.5,
+        -11.200000000000001
+      ]
+    }
+  ],
+  "productionCamera": {
+    "location": [
+      8,
+      10,
+      14
+    ],
+    "target": [
+      0,
+      2,
+      -6
+    ],
+    "verticalFovDegrees": 55,
+    "viewport": [
+      1440,
+      960
+    ]
+  },
+  "constructionStatus": "Procedural Function specimens, not accepted final models"
+}

@@ -1,0 +1,91 @@
+{
+  "schema": "game-room.room-brief.v1",
+  "roomId": "b04-entry-fit",
+  "family": "custom",
+  "purpose": "Inspect actual stair, landing, terrace, doorway, supported return and complete local returns before final modelling.",
+  "runtimeSurface": "Separate rose-keep-fit/index.html; no integration/deployment",
+  "boundsMeters": [
+    9.2,
+    7.85,
+    20
+  ],
+  "hero": {
+    "id": "ENTRANCE-WALL",
+    "role": "True passage through the S02 wall host",
+    "reservedBoundsMeters": [
+      8,
+      4,
+      6
+    ]
+  },
+  "symmetry": {
+    "mode": "bilateral stair / asymmetric return",
+    "order": 2,
+    "appliesTo": [
+      "Stair treads and edge guards",
+      "Centred clear route"
+    ],
+    "exceptions": [
+      "Right-hand wall return and its extra footing follow the declared S02 host.",
+      "Court stub and terrace visit are proposed local test geometry."
+    ]
+  },
+  "circulation": {
+    "description": "Ground apron, ten risers, landing, terrace, open gate, supported court stub, reverse. Right landing outlet is inactive and guarded.",
+    "minimumClearanceMeters": 2.4
+  },
+  "player": {
+    "radius_m": 0.45,
+    "height_m": 1.75,
+    "eye_height_m": 1.6,
+    "walk_mps": 6,
+    "run_mps": 12,
+    "max_step_m": 0.2
+  },
+  "productionCamera": {
+    "location": [
+      8,
+      10,
+      14
+    ],
+    "target": [
+      0,
+      2,
+      -6
+    ],
+    "verticalFovDegrees": 55,
+    "viewport": [
+      1440,
+      960
+    ]
+  },
+  "performanceBudget": {
+    "maxSceneTriangles": 20000,
+    "maxDrawCalls": 100,
+    "maxVLowBytes": 0,
+    "maxHighTextureBytes": 0,
+    "scope": "Geometry-only Function fixture; actual device performance and final art budgets pending"
+  },
+  "creditBudget": {
+    "maximumCredits": 0,
+    "approvalRequired": true
+  },
+  "environment": {
+    "type": "none",
+    "identity": "",
+    "note": "Open-air engineering background, no HDRI or final sky assignment"
+  },
+  "scopeExceptions": [
+    "Open-air exterior route: no roof, sealed room or reflected ceiling is claimed.",
+    "No final prop import, paid Meshy work, model export or deployment."
+  ],
+  "limits": [
+    "Separate local Function specimen: no complete keep, final asset import, world placement, export or deployment.",
+    "S04/S03/S02 dimensions and named ports come from the first-batch handoff. Source image proportions do not override the measured contract.",
+    "The aligned door shifts the return 0.5 m outside the 8 m terrace. A named additional footing supports it without enlarging the reserved world footprint.",
+    "The return/court footing and approach are engineering placeholders, not final cliff or drainage design. Load-bearing engineering remains unresolved.",
+    "Only the straight landing outlet is active; the side outlet is visibly guarded until another supported route joins it.",
+    "D05 rail and D07 arch are simple fit specimens, not accepted carvings. No turret, roof or hidden indoor floor plan is inferred here.",
+    "Actual world B04/B25 arrival, grading, bridges and regional return remain unresolved. This fixture does not validate the 78 m pad or global R02 route."
+  ]
+}

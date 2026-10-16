@@ -1,0 +1,24 @@
+{
+  "schema": "game-room.opening-schedule.v1",
+  "roomId": "b04-entry-fit",
+  "primaryArrival": {
+    "openingId": "B04-ENTRY-DOOR",
+    "exception": ""
+  },
+  "openings": [
+    {
+      "id": "B04-ENTRY-DOOR",
+      "kind": "door",
+      "wallId": "ENTRANCE-WALL",
+      "destination": "Supported court stub and return route",
+      "clearWidthMeters": 2.4,
+      "springHeightMeters": 3.2,
+      "apexHeightMeters": 3.8,
+      "thresholdMeters": 1.5,
+      "depthMeters": 0.6,
+      "geometryMethod": "Extruded closed substrate polygon with a real arch-shaped notch; this Function prototype is not an evaluated Blender Boolean.",
+      "mask": "masks/entrance.png",
+      "maskStatus": "technical evidence; user approval pending"
+    }
+  ]
+}

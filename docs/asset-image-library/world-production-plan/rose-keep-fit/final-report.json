@@ -1,0 +1,82 @@
+{
+  "schema": "game-room.room-final-report.v1",
+  "roomId": "b04-entry-fit",
+  "gates": {
+    "function": false,
+    "form": false,
+    "runtime": false
+  },
+  "formChecks": {
+    "floorPlanParity": false,
+    "primaryArrival": false,
+    "symmetry": false,
+    "shell": false,
+    "manifold": false,
+    "booleans": false,
+    "collisions": false,
+    "support": false,
+    "attachmentOrientation": false,
+    "ceilingAttachmentOrientation": false,
+    "seatingOrientation": false,
+    "focalDistribution": false,
+    "heroClearance": false,
+    "colonnades": false,
+    "screenClearance": false,
+    "scale": false,
+    "camera": false,
+    "ceilingCoverage": false,
+    "environmentCoverage": false,
+    "provenance": false
+  },
+  "reviewRenders": {
+    "corners": [],
+    "ceiling": [],
+    "environment": {},
+    "production": "review/assembly-palette.png",
+    "overhead": "review/overhead.png",
+    "opening": "review/entrance.png"
+  },
+  "runtimeChecks": {
+    "vlow": false,
+    "textureTiers": false,
+    "lightmap": false,
+    "lightingManifest": false,
+    "performance": false,
+    "browserCapture": "review/assembly-palette.png",
+    "errors": []
+  },
+  "postmortem": {
+    "observations": [
+      "Aligning the entrance shifts the return 0.5 m beyond the terrace.",
+      "A direct diagonal from the landing toward the side terrace crosses an unsupported corner.",
+      "Float32 mesh vertices and Float64 step classification can select opposite sides of an exact riser by less than one micrometre."
+    ],
+    "corrections": [
+      "Added a named footing, keeping the source module dimensions and canonical world layout unchanged.",
+      "Guarded the unused side outlet and changed the terrace route to reach the broad deck before moving sideways.",
+      "Check adjacent seam bounds to one micrometre and probe ten micrometres into the declared upper tread at exact risers.",
+      "Default browser camera now consumes the same camera contract as the evidence package."
+    ],
+    "remainingRisks": [
+      "Separate local Function specimen: no complete keep, final asset import, world placement, export or deployment.",
+      "S04/S03/S02 dimensions and named ports come from the first-batch handoff. Source image proportions do not override the measured contract.",
+      "The aligned door shifts the return 0.5 m outside the 8 m terrace. A named additional footing supports it without enlarging the reserved world footprint.",
+      "The return/court footing and approach are engineering placeholders, not final cliff or drainage design. Load-bearing engineering remains unresolved.",
+      "Only the straight landing outlet is active; the side outlet is visibly guarded until another supported route joins it.",
+      "D05 rail and D07 arch are simple fit specimens, not accepted carvings. No turret, roof or hidden indoor floor plan is inferred here.",
+      "Actual world B04/B25 arrival, grading, bridges and regional return remain unresolved. This fixture does not validate the 78 m pad or global R02 route."
+    ]
+  },
+  "proposedLessons": [],
+  "functionEvidence": {
+    "geometry": "geometry-verification.json",
+    "browser": "browser-verification.json",
+    "sources": "review-data.json",
+    "openingMask": "masks/opening-contact.png",
+    "status": "machine checks pass; human approval pending"
+  },
+  "scopeExceptions": [
+    "Open-air route: no ceiling geometry, ceiling view or sealed indoor shell claimed.",
+    "No final imported models, evaluated Blender Booleans, deployment or final-runtime performance evidence."
+  ]
+}

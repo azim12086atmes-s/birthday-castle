@@ -1,0 +1,133 @@
+{
+  "schema": "game-room.prop-manifest.v1",
+  "roomId": "b04-entry-fit",
+  "generation": {
+    "provider": "none",
+    "apiModel": "",
+    "pricingSource": "",
+    "pricingVerifiedAt": "",
+    "hardCreditCeiling": 0,
+    "maxChargedAttemptsPerAsset": 2,
+    "note": "Procedural Function specimens only; no paid generation requested."
+  },
+  "creditBudget": {
+    "maximumCredits": 0
+  },
+  "assets": [
+    {
+      "id": "B04-STRUCT-001-S02",
+      "function": "Rose keep wall return / entrance host",
+      "dimensionsMeters": [
+        8,
+        4,
+        6
+      ],
+      "attachmentFace": "Main wall midpoint at walking floor: [0,0,0]. Main wall X=-4..4, Z=0..0.6; right return X=3.4..4, Z=0..4; Y=0..6.",
+      "semanticFront": "Exported GLB front -Z, Y up; use host port transforms for arrival/court instance",
+      "reuseClass": "reusable",
+      "imagePromptFile": "../../completion-pass/B04-STRUCT-001/prompt-R02.txt",
+      "targetPolycount": 8000,
+      "rejectionCriteria": [
+        "Door is a painted recess or blocked by a single collision hull",
+        "Wrong opening profile or narrower than 2.4 m",
+        "Palace-scale door, fused roses or a complete building instead of one host"
+      ],
+      "imageApproval": {
+        "approved": false
+      },
+      "modelStatus": "procedural Function specimen only"
+    },
+    {
+      "id": "B04-STRUCT-001-S04",
+      "function": "Stair flight with turn landing",
+      "dimensionsMeters": [
+        2.8,
+        5.8,
+        1.75
+      ],
+      "attachmentFace": "Lower approach at first riser [0,0,0]. Ascend -Z. Flight ends Z=-3; landing continues to Z=-5.8. Lowest underside Y=-0.25, top walking floor Y=1.5.",
+      "semanticFront": "Exported GLB front -Z, Y up; use host port transforms for arrival/court instance",
+      "reuseClass": "reusable",
+      "imagePromptFile": "../../completion-pass/B04-STRUCT-001/prompt-R02.txt",
+      "targetPolycount": 5000,
+      "rejectionCriteria": [
+        "Melted, sloped or uneven treads",
+        "Rail blocks either selected landing exit",
+        "Step rises exceed 0.20 m or clear width falls below 2.4 m"
+      ],
+      "imageApproval": {
+        "approved": false
+      },
+      "modelStatus": "procedural Function specimen only"
+    },
+    {
+      "id": "B04-STRUCT-001-S03",
+      "function": "Cliff terrace bay",
+      "dimensionsMeters": [
+        8,
+        6,
+        1.5
+      ],
+      "attachmentFace": "Centre of top walking surface [0,0,0]; X=-4..4, Z=-3..3; all substrate below Y=0, bottom Y=-1.5.",
+      "semanticFront": "Exported GLB front -Z, Y up; use host port transforms for arrival/court instance",
+      "reuseClass": "reusable",
+      "imagePromptFile": "../../completion-pass/B04-STRUCT-001/prompt-R02.txt",
+      "targetPolycount": 5000,
+      "rejectionCriteria": [
+        "Walking top is buckled or a painted garden is fused to it",
+        "Fascia blocks the stair socket",
+        "Decor projects across the 2.4 m route"
+      ],
+      "imageApproval": {
+        "approved": false
+      },
+      "modelStatus": "procedural Function specimen only"
+    },
+    {
+      "id": "B04-DETAIL-001-D05",
+      "function": "Castle parapet repeat",
+      "dimensionsMeters": [
+        1,
+        0.12,
+        1.1
+      ],
+      "attachmentFace": "Centre of lower mounting edge [0,0,0]; repeat X=-0.5..0.5, depth Z=-0.06..0.06, top Y=1.1.",
+      "semanticFront": "Exported GLB front -Z, Y up; use host port transforms for arrival/court instance",
+      "reuseClass": "reusable",
+      "imagePromptFile": "../../completion-pass/B04-DETAIL-001/prompt-R02.txt",
+      "targetPolycount": 1500,
+      "rejectionCriteria": [
+        "Repeat ends differ",
+        "Visible geometry is treated as verified collision",
+        "Guard crosses an entrance or is scaled to absorb remainder"
+      ],
+      "imageApproval": {
+        "approved": false
+      },
+      "modelStatus": "procedural Function specimen only"
+    },
+    {
+      "id": "B04-DETAIL-001-D07",
+      "function": "Keep arch surround",
+      "dimensionsMeters": [
+        3.2,
+        0.2,
+        4.3
+      ],
+      "attachmentFace": "Threshold centre [0,0,0], flat mounting back at Z=0, trim projects to Z=-0.2. Fits S02 opening at X=-0.5, Y=0.",
+      "semanticFront": "Exported GLB front -Z, Y up; use host port transforms for arrival/court instance",
+      "reuseClass": "reusable",
+      "imagePromptFile": "../../completion-pass/B04-DETAIL-001/prompt-R02.txt",
+      "targetPolycount": 2500,
+      "rejectionCriteria": [
+        "Trim narrows or blocks the aperture",
+        "Flat back is missing",
+        "Heavy palace ornament replaces the source's restrained stone portal"
+      ],
+      "imageApproval": {
+        "approved": false
+      },
+      "modelStatus": "procedural Function specimen only"
+    }
+  ]
+}

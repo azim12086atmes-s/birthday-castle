@@ -4,6 +4,8 @@
 
 [First 3D batch handoff](../../../world-production-plan/rose-keep/README.md): four structural sections and four priority fittings, with proposed dimensions, filenames and join datums. [Structural sheet](../../../completion-pass/B04-STRUCT-001/README.md) and [twelve-part fitting sheet](../../../completion-pass/B04-DETAIL-001/README.md) are saved; exact geometry and actual models remain pending.
 
+[Local entrance fit review](../../../world-production-plan/rose-keep-fit/README.md) now tests the stair/terrace/door chain, offset-return support and two complete browser returns. Full keep art, turret/roof fit and the approach from the world pad remain pending.
+
 ## What the image shows
 
 Rose-pink keep on an irregular rock ledge, cylindrical turrets with burgundy conical roofs, arched windows/portal, stepped exterior terraces and dense rose climbers. Miniature plan has projecting round tower seats; isometric extends castle along raised rock shoulders.

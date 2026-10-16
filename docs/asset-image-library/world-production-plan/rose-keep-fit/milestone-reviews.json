@@ -1,0 +1,34 @@
+{
+  "schema": "game-room.milestone-reviews.v1",
+  "roomId": "b04-entry-fit",
+  "function": {
+    "status": "pending",
+    "approvedBy": "",
+    "approvedAt": "",
+    "evidence": [
+      "review-data.json",
+      "geometry-verification.json",
+      "browser-verification.json",
+      "review/overhead.png",
+      "masks/entrance.png"
+    ],
+    "strangestElement": "Side landing port suggests a branch that does not exist; it is inactive and guarded.",
+    "notes": "Machine geometry and live-browser checks pass. Human Function approval remains pending; no paid/final/export/deployment gate crossed."
+  },
+  "form": {
+    "status": "pending",
+    "approvedBy": "",
+    "approvedAt": "",
+    "evidence": [],
+    "strangestElement": "",
+    "notes": ""
+  },
+  "runtime": {
+    "status": "pending",
+    "approvedBy": "",
+    "approvedAt": "",
+    "evidence": [],
+    "strangestElement": "",
+    "notes": ""
+  }
+}

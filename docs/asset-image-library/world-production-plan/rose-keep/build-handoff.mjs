@@ -121,7 +121,7 @@ Known limits: the structural sheet's small stair plan and turret plan are schema
 
 The JSON includes example placements. The stair climbs **1.5 m** over ten 0.15 m risers and joins the terrace; the terrace joins a **2.4 m clear** doorway. The three declared join datums match numerically within 1 mm. The turret stands separately so its ring, window and four roof-quadrant joins can be inspected without inventing the final building plan.
 
-These are metadata checks. The next Function prototype must supply the supported inner court stub, rock/substrate contacts, continuous guards and stair returns, then test a real player from approach through the doorway and back. No browser traversal, terrain grading, mesh fit or finished building is established by the list.
+Those port comparisons are metadata checks. A separate [entrance Function specimen](../rose-keep-fit/index.html), with [geometry/browser evidence and captures](../rose-keep-fit/README.md), now supplies the local court stub, return footing and guard hosts and tests two complete returns. It covers the entrance chain only; detailed source carvings, turret/roof fit, regional terrain and final model acceptance remain pending. The list itself is not a completed keep.
 
 The existing world anchor **(-1700, -1500)**, **180 × 160 m** reservation and **78 m** pad stay unchanged. The inherited 360 m building-height entry is not used to multiply furniture, risers or door widths. Full tower height and placement need the source-led assembly review.
 

@@ -29,10 +29,15 @@
       "basis": "Proposed anchor placement, not complete terrain/route/building production"
     },
     "focused_location_prototypes": {
-      "locations": 3,
+      "locations": 4,
       "total": 34,
-      "percent": 8.8,
+      "percent": 11.8,
       "evidence": [
+        {
+          "location": "B04",
+          "scope": "Local entrance/stair/terrace Function fixture and two complete returns; full keep and world approach pending",
+          "evidence": "rose-keep-fit/browser-verification.json"
+        },
         {
           "location": "B01",
           "scope": "Bedroom/balcony, dressed human-scale bed, furnishing/light/keepsake interaction and tested returns",
@@ -86,7 +91,7 @@
     {
       "step": 4,
       "deliverable": "Expand west woodland/village/royal-ground locations, then water/coast, highlands, jungle/canyon and sky waves",
-      "status": "next: W2 Rose Keep B04 / Crystal Conservatory B25 terrain, arrival and return; architecture and ecology follow"
+      "status": "next: connect existing B04/B25 pads and regional arrival/return; B04 entrance chain has local Function evidence, full landmark architecture and ecology follow"
     },
     {
       "step": 5,
@@ -103,15 +108,14 @@
     "Final model registration, materials, LOD/collision/streaming, lighting and measured device performance"
   ],
   "generation_this_pass": {
-    "scope": "Rose Keep B04 missing-reference sheets",
-    "new_illustrated_sheets": 2,
-    "preserved_superseded_drafts": 2,
-    "new_asset_targets_added": 16,
+    "scope": "Rose Keep B04 entrance Function specimen",
+    "new_illustrated_sheets": 0,
+    "new_asset_targets_added": 0,
     "paid_model_jobs": 0,
-    "user_reference_approval": "pending",
+    "formal_approval": "pending",
     "evidence": [
-      "../completion-pass/B04-STRUCT-001/schedule.json",
-      "../completion-pass/B04-DETAIL-001/schedule.json"
+      "rose-keep-fit/geometry-verification.json",
+      "rose-keep-fit/browser-verification.json"
     ]
   },
   "source_hashes": [

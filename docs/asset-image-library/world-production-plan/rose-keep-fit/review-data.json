@@ -1,0 +1,141 @@
+{
+  "id": "B04-ENTRY-FIT-001",
+  "status": "Function specimen; human approval and final production pending",
+  "sources": [
+    {
+      "file": "model.mjs",
+      "sha256": "aa9755421c347ae1830357cbf8020abf85feaca75b330f3565071d199d5e99a6"
+    },
+    {
+      "file": "geometry.mjs",
+      "sha256": "e71b0734702e58fcf9aa76a8d8267c100c79c961e97732267aff873fc4861ec7"
+    },
+    {
+      "file": "viewer.mjs",
+      "sha256": "164b0e8beb687baba2220fe591f2f483fd0b22b07addec968d4a922041dff954"
+    },
+    {
+      "file": "index.html",
+      "sha256": "1d7ce13a79e292ccf9220b9e2b959aa80ec2ac426e34d5b5d791e5e37a67c4ee"
+    },
+    {
+      "file": "../rose-keep/asset-handoff.json",
+      "sha256": "a4db295c7e1e25fd15a871776e3c057dc1848b28d586b813742f18b3366bcf16"
+    },
+    {
+      "file": "../kit-fit/contract.json",
+      "sha256": "db217fc32ce5c69d9b653282bb3341b2a1c5e0203224b9ccf5a678dc7e26c614"
+    },
+    {
+      "file": "../../completion-pass/B04-STRUCT-001/schedule.json",
+      "sha256": "5f3e4ba4906decf994829da9167b06be7d10439c592fbfb7dca1012eb9c46bbd"
+    },
+    {
+      "file": "../../completion-pass/B04-DETAIL-001/schedule.json",
+      "sha256": "db8bf75b959af69a15e69f6c3fabb7c23fa9bd343dc7c139c78ace4262f90d14"
+    },
+    {
+      "file": "../../world-layout/layout.json",
+      "sha256": "0a4849d55bc9f9614a231b1e172fc6ff801831a401ab246df6477e99ea39f773"
+    }
+  ],
+  "routes": {
+    "entrance": {
+      "status": "pass",
+      "length_m": 36.199999999999626,
+      "max_step_m": 0.15000000000000013,
+      "max_floor_m": 1.5,
+      "visited": [
+        "LOWER-APRON",
+        "B04-STRUCT-001-S04",
+        "TOP-LANDING",
+        "TERRACE",
+        "COURT-STUB"
+      ],
+      "end": {
+        "x": 0,
+        "z": 2.5
+      }
+    },
+    "terrace": {
+      "status": "pass",
+      "length_m": 40.74950975679602,
+      "max_step_m": 0.15000000000000013,
+      "max_floor_m": 1.5,
+      "visited": [
+        "LOWER-APRON",
+        "B04-STRUCT-001-S04",
+        "TOP-LANDING",
+        "TERRACE",
+        "COURT-STUB"
+      ],
+      "end": {
+        "x": 0,
+        "z": 2.5
+      }
+    }
+  },
+  "stairs": {
+    "id": "B04-STRUCT-001-S04",
+    "x": 0,
+    "y": 0,
+    "z": 0,
+    "width": 2.8,
+    "risers": 10,
+    "rise_m": 0.15,
+    "going_m": 0.3,
+    "run_m": 3,
+    "clear_width_m": 2.4,
+    "landing_side_m": 2.8
+  },
+  "opening": {
+    "id": "B04-ENTRY-DOOR",
+    "kind": "door",
+    "asset_id": "B04-STRUCT-001-S02",
+    "x": 0,
+    "y": 1.5,
+    "zmin": -11.8,
+    "zmax": -11.200000000000001,
+    "width": 2.4,
+    "spring": 3.2,
+    "apex": 3.8
+  },
+  "guard_segments": 20,
+  "additional_footing": {
+    "id": "RETURN-FOOTING",
+    "xmin": 3.8,
+    "xmax": 4.6,
+    "zmin": -11.9,
+    "zmax": -7.700000000000001,
+    "bottom": -0.25,
+    "y": 1.5
+  },
+  "scope": [
+    "Separate local Function specimen: no complete keep, final asset import, world placement, export or deployment.",
+    "S04/S03/S02 dimensions and named ports come from the first-batch handoff. Source image proportions do not override the measured contract.",
+    "The aligned door shifts the return 0.5 m outside the 8 m terrace. A named additional footing supports it without enlarging the reserved world footprint.",
+    "The return/court footing and approach are engineering placeholders, not final cliff or drainage design. Load-bearing engineering remains unresolved.",
+    "Only the straight landing outlet is active; the side outlet is visibly guarded until another supported route joins it.",
+    "D05 rail and D07 arch are simple fit specimens, not accepted carvings. No turret, roof or hidden indoor floor plan is inferred here.",
+    "Actual world B04/B25 arrival, grading, bridges and regional return remain unresolved. This fixture does not validate the 78 m pad or global R02 route."
+  ],
+  "camera": {
+    "location": [
+      8,
+      10,
+      14
+    ],
+    "target": [
+      0,
+      2,
+      -6
+    ],
+    "verticalFovDegrees": 55,
+    "viewport": [
+      1440,
+      960
+    ]
+  },
+  "new_reference_images": 0,
+  "new_accepted_models": 0
+}

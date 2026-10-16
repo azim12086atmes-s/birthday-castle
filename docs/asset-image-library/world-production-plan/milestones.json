@@ -138,7 +138,14 @@
       "exit_evidence": "Each island has a working arrival and return, explorable focal route and bounded content; no flight system is assumed."
     }
   ],
-  "current_next_deliverable": "Start the W2 royal-ground route sample using the existing Rose Keep B04 and Crystal Conservatory B25 anchors: terrain, arrival and full return first, then source-kit architecture, planting and interactions. Bedroom/balcony and FC05 now have separate furnishing/interaction Function evidence; final art, engineering and game integration remain pending.",
+  "current_next_deliverable": "Connect the W2 royal-ground approaches using the existing B04 Rose Keep / B25 Crystal Conservatory anchors and 78 m / 60 m pads: regional terrain grade, entry ports and full return first. The separate B04 entrance/stair/terrace Function fixture has two complete local browser returns; full keep art, turret/roof fit, regional access and integration remain pending.",
   "local_first_rule": "Resolve world geography at coarse level, but only require sample-local elevations, water, boundaries and access for the first prototype; refine distant-region unknowns in their own wave.",
-  "date": "2026-10-16"
+  "date": "2026-10-16",
+  "latest_local_evidence": {
+    "location_id": "B04",
+    "scope": "Entrance chain only; not a finished landmark or regional route",
+    "page": "rose-keep-fit/index.html",
+    "geometry": "rose-keep-fit/geometry-verification.json",
+    "browser": "rose-keep-fit/browser-verification.json"
+  }
 }

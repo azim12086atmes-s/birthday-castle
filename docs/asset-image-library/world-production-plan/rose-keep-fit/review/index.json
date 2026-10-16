@@ -1,0 +1,72 @@
+{
+  "id": "B04-ENTRY-FIT-001",
+  "scope": "Technical screenshots of the local Function specimen; not selected reference-image slots",
+  "captures": [
+    {
+      "file": "review/assembly-clay.png",
+      "sha256": "fb0a3d289777fe56b56e5cfea9848b5929661661fc94855e1b47250e18acb7ab"
+    },
+    {
+      "file": "review/assembly-palette.png",
+      "sha256": "de05f6b0618b9c979660839cb690b7c2b07abd4cf4179d0b4e48f74af933acdf"
+    },
+    {
+      "file": "review/overhead.png",
+      "sha256": "53e628a58eb4786101edf10b5e0806239d2ec312678a5d3d1dbf012d2f8d32cc"
+    },
+    {
+      "file": "review/returned-apron.png",
+      "sha256": "a350803e19e7ecbeaf1345e301ccc3d62a895dc67820841b9190e8f74fa5e14f"
+    },
+    {
+      "file": "review/entrance.png",
+      "sha256": "46968d73aaae73c0a3fe303566a420ee48cadad7cf35421eda5947b539874e74"
+    },
+    {
+      "file": "review/mobile.png",
+      "sha256": "f2fa6d9089da412ead6e1dd476a92d2afcd35611c622ae1ffce93bc88efda912"
+    }
+  ],
+  "opening_mask": {
+    "file": "../masks/opening-contact.png",
+    "sha256": "e9ee07020e2b1d2371dbd143dec74916fed57f36b3fd748eb36616b97fda44dc"
+  },
+  "sources": [
+    {
+      "file": "model.mjs",
+      "sha256": "aa9755421c347ae1830357cbf8020abf85feaca75b330f3565071d199d5e99a6"
+    },
+    {
+      "file": "geometry.mjs",
+      "sha256": "e71b0734702e58fcf9aa76a8d8267c100c79c961e97732267aff873fc4861ec7"
+    },
+    {
+      "file": "viewer.mjs",
+      "sha256": "164b0e8beb687baba2220fe591f2f483fd0b22b07addec968d4a922041dff954"
+    },
+    {
+      "file": "index.html",
+      "sha256": "1d7ce13a79e292ccf9220b9e2b959aa80ec2ac426e34d5b5d791e5e37a67c4ee"
+    },
+    {
+      "file": "../rose-keep/asset-handoff.json",
+      "sha256": "a4db295c7e1e25fd15a871776e3c057dc1848b28d586b813742f18b3366bcf16"
+    },
+    {
+      "file": "../kit-fit/contract.json",
+      "sha256": "db217fc32ce5c69d9b653282bb3341b2a1c5e0203224b9ccf5a678dc7e26c614"
+    },
+    {
+      "file": "../../completion-pass/B04-STRUCT-001/schedule.json",
+      "sha256": "5f3e4ba4906decf994829da9167b06be7d10439c592fbfb7dca1012eb9c46bbd"
+    },
+    {
+      "file": "../../completion-pass/B04-DETAIL-001/schedule.json",
+      "sha256": "db8bf75b959af69a15e69f6c3fabb7c23fa9bd343dc7c139c78ace4262f90d14"
+    },
+    {
+      "file": "../../world-layout/layout.json",
+      "sha256": "0a4849d55bc9f9614a231b1e172fc6ff801831a401ab246df6477e99ea39f773"
+    }
+  ]
+}
