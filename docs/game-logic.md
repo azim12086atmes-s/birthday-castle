@@ -76,8 +76,8 @@ AI Mew following you, `?quality=low` for weak machines.
 
 ## Waiting on the owner and the study thread
 
-- B26-B32 have no map position in the schema yet. They stand at provisional spots in
-  `js/game/places.js` (`PROVISIONAL`) until the crescent terrain gives them real ones.
+- All 32 places now take their positions from the schema (B26-B32 came with the crescent
+  world fill). The crescent terrain and its placed landmarks are not loaded in the game yet.
 - Her name, the friends list, the quiz questions about her, and the reveal line are in
   `js/config.js`.
 - The real arrival (docks, waterfall gate, aerial reveal) and the finale's floating

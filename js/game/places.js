@@ -6,12 +6,6 @@ import { glowBasic, toon } from '../world/materials.js';
 import { glowTexture, sparkleTexture, textTexture } from '../world/textures.js';
 import { groundAt, COLLIDERS, PLAZA, PAL } from '../world/layout.js';
 
-// B26-B32 have no map position in the schema yet (they wait on the crescent
-// terrain). Until they do, they stand here; see docs/game-logic.md.
-const PROVISIONAL = {
-  B26: { x: 4400, z: -6000 }, B27: { x: 8000, z: -1500 }, B28: { x: -8200, z: -4500 },
-  B29: { x: -4000, z: -5200 }, B30: { x: 2000, z: -5800 }, B31: { x: 3500, z: 1800 }, B32: { x: -3000, z: 1000 },
-};
 
 // A flat, open patch near the place where a game can be played: the pads are
 // flattened ground, but a building usually stands in the middle of each.
@@ -44,8 +38,8 @@ export function preparePlaces(data) {
   const chars = Object.fromEntries(data.characters.map((c) => [c.id, c]));
   const creatures = Object.fromEntries(data.creatures.map((c) => [c.id, c]));
   const list = data.places.map((p) => {
-    const at = p.at || PROVISIONAL[p.id] || { x: 0, z: 0 };
-    return { ...p, at, provisional: !p.at, headChar: chars[p.head], bossCreature: creatures[p.boss], spot: null };
+    const at = p.at || { x: 0, z: 0 };
+    return { ...p, at, headChar: chars[p.head], bossCreature: creatures[p.boss], spot: null };
   });
   const byId = Object.fromEntries(list.map((p) => [p.id, p]));
   const grandPath = list.filter((p) => p.schedule === 'night').sort((a, b) => a.order - b.order);
