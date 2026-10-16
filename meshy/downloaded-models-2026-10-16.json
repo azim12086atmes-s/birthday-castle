@@ -805,6 +805,135 @@
           "storage": "git"
         }
       ]
+    },
+    {
+      "sourceArchive": "Meshy_AI_Rocky_Cliffside_1016084816_texture_fbx.zip",
+      "sourceBytes": 76119673,
+      "sourceGitBlob": "5c3560c6ac86873f3d98eaaa6f686b6e3e5fffc9",
+      "folder": "meshy/Meshy_AI_Rocky_Cliffside_1016084816",
+      "files": [
+        {
+          "path": "meshy/Meshy_AI_Rocky_Cliffside_1016084816/Meshy_AI_Rocky_Cliffside_1016084816_texture.fbx",
+          "bytes": 64873484,
+          "sha256": "e9b72d454c9743955f15a40547e38fcfa5b5fc5e8d52596a401958afa2c10baf",
+          "gitBlob": "2d507a029099d72adb2581d18ada8daa1d1a011d",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_Rocky_Cliffside_1016084816/Meshy_AI_Rocky_Cliffside_1016084816_texture.png",
+          "bytes": 5214295,
+          "sha256": "165db67e416a62dbd27dac2387f3b24e432f91c62d8d659c625af495bc878d81",
+          "gitBlob": "5a622e1066370f9945434c80b1c065a5a2d6fae2",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_Rocky_Cliffside_1016084816/Meshy_AI_Rocky_Cliffside_1016084816_texture_metallic.png",
+          "bytes": 7712,
+          "sha256": "7f7efbcad398b7a7aedbd815f699f8189d3a3077b4637022518b5a8715ed2552",
+          "gitBlob": "dabae550428fe222decfcdcd8c83ad832ab22747",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_Rocky_Cliffside_1016084816/Meshy_AI_Rocky_Cliffside_1016084816_texture_normal.png",
+          "bytes": 5737611,
+          "sha256": "45c92a3c8dd9c340a9c1490a97325ef2681a558f73e9ebdd8f7fc543dee1466e",
+          "gitBlob": "7a7fe01e87358695e40947675459a704fa9741fe",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_Rocky_Cliffside_1016084816/Meshy_AI_Rocky_Cliffside_1016084816_texture_roughness.png",
+          "bytes": 285167,
+          "sha256": "e1a564c3d57176717e4e81d4a2bbb1520bb25f3a6386e3e2b673b7e84daae492",
+          "gitBlob": "523c62d04a2b22557389dcfb8dc501619ca83b1e",
+          "storage": "git"
+        }
+      ]
+    },
+    {
+      "sourceArchive": "Meshy_AI_Desert_Dwelling_1016084916_texture_fbx.zip",
+      "sourceBytes": 85171959,
+      "sourceGitBlob": "20ce9c4ed2ce0d805f0fcf6684913cf69fb3f871",
+      "folder": "meshy/Meshy_AI_Desert_Dwelling_1016084916",
+      "files": [
+        {
+          "path": "meshy/Meshy_AI_Desert_Dwelling_1016084916/Meshy_AI_Desert_Dwelling_1016084916_texture.fbx",
+          "bytes": 73146716,
+          "sha256": "4f902a32f08485dcdbdc043e61cdca2bcc495b4298b569704efc3f15cf9bbea3",
+          "gitBlob": "c5abbc3b4ef1cc27b222e36bc5ff63b6d766714d",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_Desert_Dwelling_1016084916/Meshy_AI_Desert_Dwelling_1016084916_texture.png",
+          "bytes": 4377313,
+          "sha256": "612d17436a2e1db1671dee6158701c27a6a9042c197b11d58bc682ccae38ac10",
+          "gitBlob": "4d20862dc2bf7d97a3f9f236b62686f74245d643",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_Desert_Dwelling_1016084916/Meshy_AI_Desert_Dwelling_1016084916_texture_metallic.png",
+          "bytes": 568799,
+          "sha256": "c847256e4cfff2f722755f970725cd60c7d83cfff6b1438888c59a8171a9da02",
+          "gitBlob": "9baa7461a5955fca81727dab9a9175a5538d7dcf",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_Desert_Dwelling_1016084916/Meshy_AI_Desert_Dwelling_1016084916_texture_normal.png",
+          "bytes": 5704600,
+          "sha256": "021c06a890c8ae54f8a606f7ebba3d9ca756b9eb54ea99631c590334c9a92830",
+          "gitBlob": "e8ef4ef1b2e5147e82bac1d8544f94235c8c90b7",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_Desert_Dwelling_1016084916/Meshy_AI_Desert_Dwelling_1016084916_texture_roughness.png",
+          "bytes": 1373127,
+          "sha256": "661b1b074430662fbf863a5687609ccf2fb5a745ce01b6e105bba417af8bb297",
+          "gitBlob": "ca1fa1d7a6f5108662cdb3e2e1d577abb0229fc6",
+          "storage": "git"
+        }
+      ]
+    },
+    {
+      "sourceArchive": "Meshy_AI_Desert_Rock_Formation_1016084807_texture_fbx.zip",
+      "sourceBytes": 91395346,
+      "sourceGitBlob": "7169651c46159f3fac4531f14ae7d091f4e9214d",
+      "folder": "meshy/Meshy_AI_Desert_Rock_Formation_1016084807",
+      "files": [
+        {
+          "path": "meshy/Meshy_AI_Desert_Rock_Formation_1016084807/Meshy_AI_Desert_Rock_Formation_1016084807_texture.fbx",
+          "bytes": 76946364,
+          "sha256": "b87c45618d097ba21ccf67712d2dc8d1d6a0c1b3ee734cc1d2567d36e3e58135",
+          "gitBlob": "6107c9ba89585f85e392cea8c36d0cbefa3083a7",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_Desert_Rock_Formation_1016084807/Meshy_AI_Desert_Rock_Formation_1016084807_texture.png",
+          "bytes": 5219959,
+          "sha256": "88bc9df16c7c05281122fc85ca7c4af7aba9f446b25da6c465286f3e114e4244",
+          "gitBlob": "6d65a1d7aa9d8707f99367c334c3555ad7daa0ab",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_Desert_Rock_Formation_1016084807/Meshy_AI_Desert_Rock_Formation_1016084807_texture_metallic.png",
+          "bytes": 575199,
+          "sha256": "4fb0404093c8bfb37c0d3917b9b4f3e473384545d1d8c792453f0e3e1c8d0302",
+          "gitBlob": "64f8ea795283a9e54c956f37e6b014855f20899e",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_Desert_Rock_Formation_1016084807/Meshy_AI_Desert_Rock_Formation_1016084807_texture_normal.png",
+          "bytes": 7419883,
+          "sha256": "e84e25bb59038f93cd51613bc01b8c0a0bd88dc7d1f1d641a27e809283bb61f9",
+          "gitBlob": "9377dac276cd80d73d120f527f2806a4b7d4d414",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_Desert_Rock_Formation_1016084807/Meshy_AI_Desert_Rock_Formation_1016084807_texture_roughness.png",
+          "bytes": 1232417,
+          "sha256": "7d86b51ad74b70071891ec0a2909e90ca4c2cfd36397717483a94aa0542b43ba",
+          "gitBlob": "8448465a9d5a02298fff8ab91d26ad9cac67d5ef",
+          "storage": "git"
+        }
+      ]
     }
   ]
 }
