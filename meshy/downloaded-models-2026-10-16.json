@@ -3359,6 +3359,50 @@
           "storage": "git"
         }
       ]
+    },
+    {
+      "sourceArchive": "Meshy_AI_Enchanted_Spiral_Towe_1016102721_texture_fbx.zip",
+      "sourceBytes": 21771941,
+      "sourceGitBlob": "78e8be63b00faf037ea53e1d12069f88d1fe5dcc",
+      "folder": "meshy/Meshy_AI_Enchanted_Spiral_Towe_1016102721",
+      "files": [
+        {
+          "path": "meshy/Meshy_AI_Enchanted_Spiral_Towe_1016102721/Meshy_AI_Enchanted_Spiral_Towe_1016102721_texture.fbx",
+          "bytes": 18333164,
+          "sha256": "16e48c86dccc729f5d7ca2c938d90273094ba98ccdb56ee899ae1209f15d7d6b",
+          "gitBlob": "bc3d3b68ca49dea2911f752ce7ea1a413eb66da7",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_Enchanted_Spiral_Towe_1016102721/Meshy_AI_Enchanted_Spiral_Towe_1016102721_texture.png",
+          "bytes": 3438175,
+          "sha256": "71e3fda4ca3de230d6d34286fce9633be24c065638429f5d5105a99273965624",
+          "gitBlob": "a2188f01a57b6db5b751e83a87dd6f35426d8e4a",
+          "storage": "git"
+        }
+      ]
+    },
+    {
+      "sourceArchive": "Meshy_AI_Enchanted_Spiral_Towe_1016102349_texture_fbx.zip",
+      "sourceBytes": 23424187,
+      "sourceGitBlob": "d98124338f0f7546835dcf85489ba9583d63d0f1",
+      "folder": "meshy/Meshy_AI_Enchanted_Spiral_Towe_1016102349",
+      "files": [
+        {
+          "path": "meshy/Meshy_AI_Enchanted_Spiral_Towe_1016102349/Meshy_AI_Enchanted_Spiral_Towe_1016102349_texture.fbx",
+          "bytes": 19188556,
+          "sha256": "08cb1e0d5e0df56b4619c00991515b3997ef7821a190d4f3026684aae97d3369",
+          "gitBlob": "d9319c383dff5fb89c452712416fa1d2fc38044c",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_Enchanted_Spiral_Towe_1016102349/Meshy_AI_Enchanted_Spiral_Towe_1016102349_texture.png",
+          "bytes": 4235029,
+          "sha256": "6e874e595e770742e94b58993138ef50f2230237b2a6e22e2976d77c43a43839",
+          "gitBlob": "9cc152eb5a29137971c3d146e16ff200ddde1760",
+          "storage": "git"
+        }
+      ]
     }
   ]
 }
