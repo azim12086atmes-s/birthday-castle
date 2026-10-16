@@ -1,0 +1,290 @@
+[
+ {
+  "id": "B01",
+  "name": "Princess Palace",
+  "look": "Rose marble, purple domes, courtiers",
+  "head": "Palace Steward",
+  "creatures": "Cloud koi",
+  "game": "Wardrobe runway",
+  "challenge": "Final boss: the Hush, for the last shard"
+ },
+ {
+  "id": "B02",
+  "name": "Moon Water Palace",
+  "look": "Glass dome on a lake islet, tide-folk",
+  "head": "Lady of Tides",
+  "creatures": "Bubble turtles",
+  "game": "Lily-pad hop race",
+  "challenge": "Reflect moonlight into the dome together"
+ },
+ {
+  "id": "B03",
+  "name": "Star Chapel",
+  "look": "Pink gothic spires, bell ringers",
+  "head": "Bell Warden",
+  "creatures": "Crystal hummingbirds",
+  "game": "Harmony bells",
+  "challenge": "Align star beams to relight the rose window"
+ },
+ {
+  "id": "B04",
+  "name": "Rose Keep",
+  "look": "Pink keep on a crag, knights",
+  "head": "Knight of Roses",
+  "creatures": "Winged unicorns",
+  "game": "Light-lance jousting",
+  "challenge": "Boss: the Thorn Golem"
+ },
+ {
+  "id": "B05",
+  "name": "Misty Keep",
+  "look": "Mountain keep in fog, sages",
+  "head": "Mist Sage",
+  "creatures": "Moss deer",
+  "game": "Hide-and-seek in the fog",
+  "challenge": "Escort a lantern through the mist"
+ },
+ {
+  "id": "B06",
+  "name": "Pagoda",
+  "look": "Tiered pagoda, lantern makers",
+  "head": "Lantern Master",
+  "creatures": "Paper cranes",
+  "game": "Paint and release sky lanterns",
+  "challenge": "Defend the tiers from shadow waves"
+ },
+ {
+  "id": "B07",
+  "name": "Temple Rotundas",
+  "look": "Domed rotundas, echo keepers",
+  "head": "Keeper of Echoes",
+  "creatures": "Star moths",
+  "game": "Echo memory game",
+  "challenge": "The heart quiz: questions about her"
+ },
+ {
+  "id": "B08",
+  "name": "Colosseum",
+  "look": "Grand arena, champions",
+  "head": "Arena Champion",
+  "creatures": "Griffins",
+  "game": "The Birthday Tournament",
+  "challenge": "Boss: the Shadow Champion"
+ },
+ {
+  "id": "B09",
+  "name": "Lagoon City",
+  "look": "White canal city, gondoliers",
+  "head": "Canal Mayor",
+  "creatures": "Glow rays",
+  "game": "Gondola race",
+  "challenge": "Deliver invitations to 100 villas"
+ },
+ {
+  "id": "B10",
+  "name": "Canyon Palace",
+  "look": "Red canyon, waterfalls, sun-folk",
+  "head": "Sun Queen",
+  "creatures": "Sand foxes",
+  "game": "Canyon zipline race",
+  "challenge": "Redirect the waterfalls"
+ },
+ {
+  "id": "B11",
+  "name": "Crescent Arch",
+  "look": "Giant sea arch, cliff divers",
+  "head": "Arch Guardian (stone giant)",
+  "creatures": "Sea eagles",
+  "game": "Cliff-dive ring scoring",
+  "challenge": "Boss: purify the stone giant"
+ },
+ {
+  "id": "B12",
+  "name": "Storybook Village",
+  "look": "Half-timber cottages, bakers",
+  "head": "Baker of Stories",
+  "creatures": "Bunny-cats",
+  "game": "Cake ingredient scramble",
+  "challenge": "Bake one giant cake layer together"
+ },
+ {
+  "id": "B13",
+  "name": "Windmill",
+  "look": "Hills of windmills, millers",
+  "head": "Miller of Winds",
+  "creatures": "Butterflies",
+  "game": "Kite battle",
+  "challenge": "Turn the great sails in time together"
+ },
+ {
+  "id": "B14",
+  "name": "Pillar Sky City",
+  "look": "White spires on stone pillars",
+  "head": "Sky Architect",
+  "creatures": "Young dragons",
+  "game": "Flying ship ring race",
+  "challenge": "Build a rope bridge as a team"
+ },
+ {
+  "id": "B15",
+  "name": "Jungle Temple",
+  "look": "Vine-covered temple, guardians",
+  "head": "Vine Oracle",
+  "creatures": "Glow frogs",
+  "game": "Vine swing race",
+  "challenge": "Four-person puzzle doors"
+ },
+ {
+  "id": "B16",
+  "name": "Fjord Longhouse",
+  "look": "Nordic longhouses, rowers",
+  "head": "Fjord Chieftess",
+  "creatures": "Sea whales",
+  "game": "Longboat rowing in rhythm",
+  "challenge": "Boss: the Ice Serpent"
+ },
+ {
+  "id": "B17",
+  "name": "Glowwood Ruin",
+  "look": "Ruins in glowing forest, spirits",
+  "head": "Forest Spirit",
+  "creatures": "Lantern moths",
+  "game": "Firefly catching",
+  "challenge": "Defend the ruin at nightfall"
+ },
+ {
+  "id": "B18",
+  "name": "Mother Tree",
+  "look": "Giant pink-blossom tree",
+  "head": "The Mother Tree",
+  "creatures": "Star foxes",
+  "game": "Blossom climb",
+  "challenge": "Carry water spirits to heal the roots"
+ },
+ {
+  "id": "B19",
+  "name": "Lantern Cove",
+  "look": "Harbour of piers and boats",
+  "head": "Harbour Master",
+  "creatures": "Otters",
+  "game": "Fishing for stars",
+  "challenge": "Ship battle against a shadow ship"
+ },
+ {
+  "id": "B20",
+  "name": "Bridge Pavilions",
+  "look": "Pavilions at the bridge foot",
+  "head": "Bridge Keeper",
+  "creatures": "Doves of light",
+  "game": "Rippling-step dance",
+  "challenge": "Photo hunt for set moments"
+ },
+ {
+  "id": "B21",
+  "name": "Tidal Observatory",
+  "look": "White domed observatory",
+  "head": "Star Astronomer",
+  "creatures": "Glass jellyfish",
+  "game": "Draw constellations together",
+  "challenge": "Telescope puzzle that shows where shards fell"
+ },
+ {
+  "id": "B22",
+  "name": "Lighthouse",
+  "look": "Rock-islet lighthouse",
+  "head": "Light Keeper",
+  "creatures": "Seals",
+  "game": "Lighthouse-beam tag",
+  "challenge": "Guide ships through a storm"
+ },
+ {
+  "id": "B23",
+  "name": "Sea Pavilion",
+  "look": "Piers over the reef, pearl divers",
+  "head": "Pearl Diver",
+  "creatures": "Seahorses (mounts)",
+  "game": "Seahorse race",
+  "challenge": "Gather pearls underwater"
+ },
+ {
+  "id": "B24",
+  "name": "Reef Shrine",
+  "look": "Coral shrine in the shallows",
+  "head": "Coral Priestess",
+  "creatures": "Sea turtles",
+  "game": "Reef treasure dive",
+  "challenge": "Boss: the Leviathan rising from the sea"
+ },
+ {
+  "id": "B25",
+  "name": "Crystal Conservatory",
+  "look": "Glass dome of flowers",
+  "head": "Gardener of Glass",
+  "creatures": "Crystal butterflies",
+  "game": "Make a bouquet for her",
+  "challenge": "Grow the glass garden with light beams"
+ },
+ {
+  "id": "B26",
+  "name": "Dragon Roost",
+  "look": "Snowy crag of dragon nests",
+  "head": "Elder Dragon",
+  "creatures": "Dragons",
+  "game": "Dragon-back race",
+  "challenge": "Boss: the corrupted Storm Dragon"
+ },
+ {
+  "id": "B27",
+  "name": "Sunsand Oasis",
+  "look": "Desert dunes, oasis bazaar",
+  "head": "Oasis Keeper",
+  "creatures": "Fennec foxes",
+  "game": "Sand-surfing race",
+  "challenge": "Find the true oasis in the mirage maze"
+ },
+ {
+  "id": "B28",
+  "name": "Frostbloom Sanctuary",
+  "look": "Snow peaks, ice gardens",
+  "head": "Snow Weaver",
+  "creatures": "Ice moths",
+  "game": "Snowball battle",
+  "challenge": "Carve an ice sculpture together"
+ },
+ {
+  "id": "B29",
+  "name": "Crystal Caverns",
+  "look": "Glowing caves under the karst",
+  "head": "Crystal Miner",
+  "creatures": "Cave glow-worms",
+  "game": "Minecart race",
+  "challenge": "Echo-chime puzzle"
+ },
+ {
+  "id": "B30",
+  "name": "Sky Isles",
+  "look": "Floating islands with waterfalls",
+  "head": "Cloud Shepherd",
+  "creatures": "Sky whales",
+  "game": "Cloud-surf gauntlet",
+  "challenge": "Guide lost baby whales home"
+ },
+ {
+  "id": "B31",
+  "name": "Butterfly Meadows",
+  "look": "Flower meadows, hummingbirds",
+  "head": "Meadow Queen",
+  "creatures": "Hummingbirds",
+  "game": "Pet race",
+  "challenge": "Paint the flower field"
+ },
+ {
+  "id": "B32",
+  "name": "Starfall Fairground",
+  "look": "Fairground by the palace",
+  "head": "Ringmaster",
+  "creatures": "Balloon creatures",
+  "game": "Carnival games",
+  "challenge": "Win the fairground finals"
+ }
+]

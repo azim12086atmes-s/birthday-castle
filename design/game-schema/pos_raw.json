@@ -1,0 +1,127 @@
+{
+ "B01": {
+  "x": "0",
+  "z": "0",
+  "where": "Raised centre, terraces down to the lake"
+ },
+ "B02": {
+  "x": "−630",
+  "z": "1320",
+  "where": "Islet in Lantern Lake, west of the causeway, glass dome"
+ },
+ "B03": {
+  "x": "750",
+  "z": "1410",
+  "where": "Islet in the lake, east, gothic pink spires"
+ },
+ "B04": {
+  "x": "−960",
+  "z": "−540",
+  "where": "Pink keep on a crag, NW of the palace"
+ },
+ "B05": {
+  "x": "1020",
+  "z": "−900",
+  "where": "Misty mountain crag, NE"
+ },
+ "B06": {
+  "x": "1050",
+  "z": "−420",
+  "where": "Tiered pagoda, east hills"
+ },
+ "B07": {
+  "x": "−30",
+  "z": "−1260",
+  "where": "Due north on the palace axis, domed rotundas and a terrace"
+ },
+ "B08": {
+  "x": "−1020",
+  "z": "−1140",
+  "where": "North-west plateau"
+ },
+ "B09": {
+  "x": "−2460",
+  "z": "1200",
+  "where": "West lagoon, canals and white blocks"
+ },
+ "B10": {
+  "x": "1560",
+  "z": "1560",
+  "where": "Red canyon with waterfalls, SE of the lake"
+ },
+ "B11": {
+  "x": "2640",
+  "z": "1920",
+  "where": "Natural rock arch on the east coast"
+ },
+ "B12": {
+  "x": "−2400",
+  "z": "780",
+  "where": "West, half-timber village by canals"
+ },
+ "B13": {
+  "x": "−2190",
+  "z": "240",
+  "where": "West hills"
+ },
+ "B14": {
+  "x": "2220",
+  "z": "240",
+  "where": "East, white spires on pillars with waterfalls and mist"
+ },
+ "B15": {
+  "x": "1860",
+  "z": "2580",
+  "where": "SE jungle peninsula"
+ },
+ "B16": {
+  "x": "−2280",
+  "z": "−1020",
+  "where": "NW fjord inlet"
+ },
+ "B17": {
+  "x": "−2040",
+  "z": "−300",
+  "where": "West forest"
+ },
+ "B18": {
+  "x": "−1320",
+  "z": "1800",
+  "where": "SW shore, giant pink-blossom tree"
+ },
+ "B19": {
+  "x": "−1650",
+  "z": "2280",
+  "where": "SW harbour with piers and boats"
+ },
+ "B20": {
+  "x": "−60",
+  "z": "2340",
+  "where": "South end of the causeway (**spawn**)"
+ },
+ "B21": {
+  "x": "−2580",
+  "z": "2760",
+  "where": "SW headland, white domed observatory"
+ },
+ "B22": {
+  "x": "−1920",
+  "z": "3180",
+  "where": "Rock islet off the south coast"
+ },
+ "B23": {
+  "x": "1620",
+  "z": "3480",
+  "where": "SE shore, piers out into the reef"
+ },
+ "B24": {
+  "x": "2940",
+  "z": "3120",
+  "where": "SE reef, coral shallows"
+ },
+ "B25": {
+  "x": "−420",
+  "z": "−540",
+  "where": "Just NW of the palace, a glass dome"
+ }
+}
