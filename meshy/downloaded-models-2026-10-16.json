@@ -2351,6 +2351,49 @@
           "storage": "git"
         }
       ]
+    },
+    {
+      "sourceArchive": "Meshy_AI_Enchanted_Thatch_Cott_1016064146_texture_fbx.zip",
+      "sourceBytes": 161502815,
+      "sourceGitBlob": "5e9857bb595eb694f03a9bc945ae004c5c7323e6",
+      "folder": "meshy/Meshy_AI_Enchanted_Thatch_Cott_1016064146",
+      "files": [
+        {
+          "path": "meshy/Meshy_AI_Enchanted_Thatch_Cott_1016064146/Meshy_AI_Enchanted_Thatch_Cott_1016064146_texture.fbx",
+          "bytes": 151605468,
+          "sha256": "f4f72d1c55237137a04a077c2f1e857d8e4d8b2647600e1c43f14272ba74e893",
+          "gitBlob": "83f7681c52a01a869fb4fea896d32cec954dd4f5",
+          "storage": "git-lfs"
+        },
+        {
+          "path": "meshy/Meshy_AI_Enchanted_Thatch_Cott_1016064146/Meshy_AI_Enchanted_Thatch_Cott_1016064146_texture.png",
+          "bytes": 8396560,
+          "sha256": "2621dc25cb6bee35e43711364c74f598ebd9a7ecd91d119d5192dce471da16c2",
+          "gitBlob": "9f4155c7f04dcea108db3aa8c88c13b25db0f39c",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_Enchanted_Thatch_Cott_1016064146/Meshy_AI_Enchanted_Thatch_Cott_1016064146_texture_metallic.png",
+          "bytes": 409561,
+          "sha256": "14dfd2595d383dcf17b43be754c4d18a562701cc6e32013d49e98d7f78c93f82",
+          "gitBlob": "49b18dc45fa276c99082431ca434c65c4a95ebc7",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_Enchanted_Thatch_Cott_1016064146/Meshy_AI_Enchanted_Thatch_Cott_1016064146_texture_normal.png",
+          "bytes": 16912,
+          "sha256": "2bd222fce3db08d20bcf3f592601fcebd3d186ecdf01bd96fcb9a99ae8839007",
+          "gitBlob": "140c051449a2dc02baccd003668028873b3747a8",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_Enchanted_Thatch_Cott_1016064146/Meshy_AI_Enchanted_Thatch_Cott_1016064146_texture_roughness.png",
+          "bytes": 1072790,
+          "sha256": "601a7074926e229fd9539d710b7a755f46e311cf519dfe46678346b2f0d0b1ad",
+          "gitBlob": "cf1e36cba1afe0b9a1f19aeba43c59f8225368a3",
+          "storage": "git"
+        }
+      ]
     }
   ]
 }
