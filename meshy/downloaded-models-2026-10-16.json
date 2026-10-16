@@ -3403,6 +3403,71 @@
           "storage": "git"
         }
       ]
+    },
+    {
+      "sourceArchive": "Meshy_AI_Dark_oriental_gateway_1016102548_texture_fbx.zip",
+      "sourceBytes": 34348347,
+      "sourceGitBlob": "6c283d68c3fe20acaa3fcb724802fde9e3861a3f",
+      "folder": "meshy/Meshy_AI_Dark_oriental_gateway_1016102548",
+      "files": [
+        {
+          "path": "meshy/Meshy_AI_Dark_oriental_gateway_1016102548/Meshy_AI_Dark_oriental_gateway_1016102548_texture.fbx",
+          "bytes": 29547212,
+          "sha256": "1c01bca184b427184c638335b70db892fafcf32d8911be5bc4b449601f0fac44",
+          "gitBlob": "52a03bc0ffb9ae3a75137ad648e8a1864b285340",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_Dark_oriental_gateway_1016102548/Meshy_AI_Dark_oriental_gateway_1016102548_texture.png",
+          "bytes": 4800533,
+          "sha256": "ab1317a94e8f4fdef650734fce7e08ca86301c58c181a765793eb23d5a5c5077",
+          "gitBlob": "0cbf8568239456009237dab75b173c3418e4f817",
+          "storage": "git"
+        }
+      ]
+    },
+    {
+      "sourceArchive": "Meshy_AI_Ancient_Gateway_Ruins_1016102421_texture_fbx.zip",
+      "sourceBytes": 63884885,
+      "sourceGitBlob": "7e350057593149b9175b21d9df7e51f4e5cefed7",
+      "folder": "meshy/Meshy_AI_Ancient_Gateway_Ruins_1016102421",
+      "files": [
+        {
+          "path": "meshy/Meshy_AI_Ancient_Gateway_Ruins_1016102421/Meshy_AI_Ancient_Gateway_Ruins_1016102421_texture.fbx",
+          "bytes": 52553100,
+          "sha256": "dfc1b9659aa3db4177a2303cf65e4b203f00b15ddf307bea0da4b2d6f0846fc7",
+          "gitBlob": "55449364ef154744f48961755b0ec2b064f68a29",
+          "storage": "git-lfs"
+        },
+        {
+          "path": "meshy/Meshy_AI_Ancient_Gateway_Ruins_1016102421/Meshy_AI_Ancient_Gateway_Ruins_1016102421_texture.png",
+          "bytes": 4371415,
+          "sha256": "289446d4f2330084aa19f596f1a1d24c20b935db954c455d932415c08e817065",
+          "gitBlob": "7081b0bc658768a744704e95056b480eef6024c3",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_Ancient_Gateway_Ruins_1016102421/Meshy_AI_Ancient_Gateway_Ruins_1016102421_texture_metallic.png",
+          "bytes": 208148,
+          "sha256": "911dd913d7f20e66d0013c5d1887080e8b49986f844bfc31d393fba584652f8e",
+          "gitBlob": "ad5fe0e0ea53a2871a596119b235a2ad2a270d19",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_Ancient_Gateway_Ruins_1016102421/Meshy_AI_Ancient_Gateway_Ruins_1016102421_texture_normal.png",
+          "bytes": 5539784,
+          "sha256": "439415cae92624fb333563c4b70e632d67345d37d673c850a18b82ba4cba4e07",
+          "gitBlob": "70270026c94b048df122d32feac6696238397f99",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_Ancient_Gateway_Ruins_1016102421/Meshy_AI_Ancient_Gateway_Ruins_1016102421_texture_roughness.png",
+          "bytes": 1210914,
+          "sha256": "cf8ef8f1d4a2a6210d1c857b60ccabf3176bfd9406a0006aac475c8d205c8952",
+          "gitBlob": "7df85b049ddf21f5e89007cbfa969adbf5bfdfcc",
+          "storage": "git"
+        }
+      ]
     }
   ]
 }
