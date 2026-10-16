@@ -1843,6 +1843,92 @@
           "storage": "git"
         }
       ]
+    },
+    {
+      "sourceArchive": "Meshy_AI_Colorful_Courtyard_Vi_1016090158_texture_fbx.zip",
+      "sourceBytes": 112282944,
+      "sourceGitBlob": "63c9499275e19f114870d468e634214a86138bd4",
+      "folder": "meshy/Meshy_AI_Colorful_Courtyard_Vi_1016090158",
+      "files": [
+        {
+          "path": "meshy/Meshy_AI_Colorful_Courtyard_Vi_1016090158/Meshy_AI_Colorful_Courtyard_Vi_1016090158_texture.fbx",
+          "bytes": 99570764,
+          "sha256": "3dd17455f56e0219f52c538f127606f56f035d91399a34ab72cd3bbde8025e0d",
+          "gitBlob": "c944804820ee7deba8dd3bfec4ef7796c36a4b3b",
+          "storage": "git-lfs"
+        },
+        {
+          "path": "meshy/Meshy_AI_Colorful_Courtyard_Vi_1016090158/Meshy_AI_Colorful_Courtyard_Vi_1016090158_texture.png",
+          "bytes": 6370160,
+          "sha256": "e18bac8289ed23affb7e6c27b2f6cdc9d629e8aa871e1cc5358bc1af0da66eb0",
+          "gitBlob": "2b2b10daa741a71b350a864fb09f823796643e8d",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_Colorful_Courtyard_Vi_1016090158/Meshy_AI_Colorful_Courtyard_Vi_1016090158_texture_metallic.png",
+          "bytes": 430132,
+          "sha256": "39164fb89392c284a72062e0ca868189ec6755fe7b853fbcbf28e2aada468e31",
+          "gitBlob": "8a48469d3a0b985c52430a0660cdb9fc67547929",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_Colorful_Courtyard_Vi_1016090158/Meshy_AI_Colorful_Courtyard_Vi_1016090158_texture_normal.png",
+          "bytes": 4478352,
+          "sha256": "b1bb9fef85b2e3e55745e3cdbfbb588b0b96037a58bdd5f98a115801768f406f",
+          "gitBlob": "4657dae30781807d3a4e558cddabbfdea56e5e1d",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_Colorful_Courtyard_Vi_1016090158/Meshy_AI_Colorful_Courtyard_Vi_1016090158_texture_roughness.png",
+          "bytes": 1432012,
+          "sha256": "64370816bbb2de55adb348c105b486604d98e7400e416672766cbdc32213daae",
+          "gitBlob": "cfd9fd74f6459eaea095e3c58e86dd25d0e0dc0d",
+          "storage": "git"
+        }
+      ]
+    },
+    {
+      "sourceArchive": "Meshy_AI_Whimsical_Hobbit_Dwel_1016090727_texture_fbx.zip",
+      "sourceBytes": 113676172,
+      "sourceGitBlob": "2483f9fad9c111408d6543d65d03b28b04b01a39",
+      "folder": "meshy/Meshy_AI_Whimsical_Hobbit_Dwel_1016090727",
+      "files": [
+        {
+          "path": "meshy/Meshy_AI_Whimsical_Hobbit_Dwel_1016090727/Meshy_AI_Whimsical_Hobbit_Dwel_1016090727_texture.fbx",
+          "bytes": 100098828,
+          "sha256": "7736661f67cba0f11d73e99d7dbc30f90128b82e8a62666f27ed049cfd0e0c40",
+          "gitBlob": "91c317cafe5d6349966098ea15ebcbb4a5c6774d",
+          "storage": "git-lfs"
+        },
+        {
+          "path": "meshy/Meshy_AI_Whimsical_Hobbit_Dwel_1016090727/Meshy_AI_Whimsical_Hobbit_Dwel_1016090727_texture.png",
+          "bytes": 5131416,
+          "sha256": "ae8b6bc83449ddc73ab8d060f8431ee2a7e525e9fd685c30bdd29235fea99d78",
+          "gitBlob": "714b219cf0a408d5565ae125665a38bc25e7b605",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_Whimsical_Hobbit_Dwel_1016090727/Meshy_AI_Whimsical_Hobbit_Dwel_1016090727_texture_metallic.png",
+          "bytes": 537616,
+          "sha256": "409ba38ae7a2c54f54b34e1d4680e36ffe23e16e23c0f4103d1302eaf5c9ad62",
+          "gitBlob": "a026356a6c7a5c0d4653f41fac4d966044d50f48",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_Whimsical_Hobbit_Dwel_1016090727/Meshy_AI_Whimsical_Hobbit_Dwel_1016090727_texture_normal.png",
+          "bytes": 6503554,
+          "sha256": "71176c294c9f9bdff36d8eb9969a0f7775e4d83fb9c279f8f7e57c5de7e1b678",
+          "gitBlob": "24a570c5c8e3dcc5b10ccc9c5e74592fe16f520d",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_Whimsical_Hobbit_Dwel_1016090727/Meshy_AI_Whimsical_Hobbit_Dwel_1016090727_texture_roughness.png",
+          "bytes": 1403234,
+          "sha256": "a1842fdd1402d20d793e19ac59c66d7492a068499a38cc29a594a0e955879288",
+          "gitBlob": "dd6c51b4252194fabddcbb7ff569a5fe3f69d1b4",
+          "storage": "git"
+        }
+      ]
     }
   ]
 }
