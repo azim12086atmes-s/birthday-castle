@@ -3468,6 +3468,92 @@
           "storage": "git"
         }
       ]
+    },
+    {
+      "sourceArchive": "Meshy_AI_Verdant_Palace_1016102521_texture_fbx.zip",
+      "sourceBytes": 39401332,
+      "sourceGitBlob": "d43362a3803b2aec6a5c83e4b492d474396e18c5",
+      "folder": "meshy/Meshy_AI_Verdant_Palace_1016102521",
+      "files": [
+        {
+          "path": "meshy/Meshy_AI_Verdant_Palace_1016102521/Meshy_AI_Verdant_Palace_1016102521_texture.fbx",
+          "bytes": 26329084,
+          "sha256": "697b68ca2af8df8544e51d838d50a38625eadc6677ab5573c5497c7b02c52ff0",
+          "gitBlob": "fee2720797f57bc039356ced4c347559dbfbe18a",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_Verdant_Palace_1016102521/Meshy_AI_Verdant_Palace_1016102521_texture.png",
+          "bytes": 4259952,
+          "sha256": "ea25bc5350ab7c6a48c716a143c19322c69a466d2aeb4846cda677ea9fb0d015",
+          "gitBlob": "4256e507bb1a9b8e0f01548f974ecf5d5d9b0478",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_Verdant_Palace_1016102521/Meshy_AI_Verdant_Palace_1016102521_texture_metallic.png",
+          "bytes": 1003773,
+          "sha256": "608e697529a6c5dbfb9090e6c54a47b8b3424463305cb058599f3cf92beddbdd",
+          "gitBlob": "215465e53caf3c03509b0b527531ccb11f5606a4",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_Verdant_Palace_1016102521/Meshy_AI_Verdant_Palace_1016102521_texture_normal.png",
+          "bytes": 6244156,
+          "sha256": "003db33aea563fdfcc1dc9d272b2fd6a420b9a7f849a34782415a92d12f9a63a",
+          "gitBlob": "63293b1792735c262a7da43244b0deac9bbc2d82",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_Verdant_Palace_1016102521/Meshy_AI_Verdant_Palace_1016102521_texture_roughness.png",
+          "bytes": 1562983,
+          "sha256": "009acca97b3d2d1a118725e10a4ae0112faecfe2d837ef6f199fe5f9fd9bfc8d",
+          "gitBlob": "11d74139fb3a8998b3fdb70bb4f4a0cb653c8bc1",
+          "storage": "git"
+        }
+      ]
+    },
+    {
+      "sourceArchive": "Meshy_AI_Church_1016102335_texture_fbx.zip",
+      "sourceBytes": 76993403,
+      "sourceGitBlob": "6d38f1ce0550531fb2507e521a051055d6afdc79",
+      "folder": "meshy/Meshy_AI_Church_1016102335",
+      "files": [
+        {
+          "path": "meshy/Meshy_AI_Church_1016102335/Meshy_AI_Church_1016102335_texture.fbx",
+          "bytes": 66642668,
+          "sha256": "ce60fe3bfb491fb5a7f791a0442c52295e575427c89d732449531813bf74d940",
+          "gitBlob": "2280a1a016532fe09eca781b2859555322910a6c",
+          "storage": "git-lfs"
+        },
+        {
+          "path": "meshy/Meshy_AI_Church_1016102335/Meshy_AI_Church_1016102335_texture.png",
+          "bytes": 3397010,
+          "sha256": "7883df3bc04f01efe02aeabda3a49278ce4596681892e727e59dd42209184fb3",
+          "gitBlob": "dc48996730c6af12281465b7ef4f2473fcca7cb3",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_Church_1016102335/Meshy_AI_Church_1016102335_texture_metallic.png",
+          "bytes": 530224,
+          "sha256": "4120c7244d0fc4ac553499745ccf81afa32877841f52b247226883da167fd83c",
+          "gitBlob": "32d9b7f051453af2f1cea6bb862cbcbdcda0d352",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_Church_1016102335/Meshy_AI_Church_1016102335_texture_normal.png",
+          "bytes": 5397710,
+          "sha256": "c64a47297642d9fc13f78ca4b8bb3a9b74fcf76030acf20528e92319d51dc105",
+          "gitBlob": "99623fde1983aa84ea681d0731dce625e2173412",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_Church_1016102335/Meshy_AI_Church_1016102335_texture_roughness.png",
+          "bytes": 1024567,
+          "sha256": "af73ac5498f06f4f087ddae9451e9ce7147104610e40ba24609ae7b90e7e3bec",
+          "gitBlob": "a2ddf251d0fbaa8beab0cf7495c7b4ad787c6a70",
+          "storage": "git"
+        }
+      ]
     }
   ]
 }
