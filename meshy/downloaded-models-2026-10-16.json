@@ -2301,6 +2301,56 @@
           "storage": "git"
         }
       ]
+    },
+    {
+      "sourceArchive": "Meshy_AI_An_english_country_co_1016064115_texture_fbx.zip",
+      "sourceBytes": 157298326,
+      "sourceGitBlob": "a54d222fd10bcde6e515d4ef9d3c2bebe27af4ad",
+      "folder": "meshy/Meshy_AI_An_english_country_co_1016064115",
+      "files": [
+        {
+          "path": "meshy/Meshy_AI_An_english_country_co_1016064115/Meshy_AI_An_english_country_co_1016064115_texture.fbx",
+          "bytes": 86341228,
+          "sha256": "0a2d9b3567a90402e298ce5340948923db7d63569b5bbcd07f9a9698d494ce79",
+          "gitBlob": "15de259e99449f935568986628b770a9201d1717",
+          "storage": "git-lfs"
+        },
+        {
+          "path": "meshy/Meshy_AI_An_english_country_co_1016064115/Meshy_AI_An_english_country_co_1016064115_texture.png",
+          "bytes": 36292523,
+          "sha256": "5378af041d2f25548ebddabe773f0b59dbe6e0e6670996e86c9ed3c401bb9f22",
+          "gitBlob": "bf832dd0a982136a98726c3a83fca46ab26a2dfb",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_An_english_country_co_1016064115/Meshy_AI_An_english_country_co_1016064115_texture_emission.png",
+          "bytes": 38714,
+          "sha256": "ebbf5ff21158aff91d1703fa75bcfa5639f1364041287f4ffd8a9719e3b1c236",
+          "gitBlob": "7b64bddff4634ca0dc661a9ff9bc5e9af1b51dde",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_An_english_country_co_1016064115/Meshy_AI_An_english_country_co_1016064115_texture_metallic.png",
+          "bytes": 18259,
+          "sha256": "5d1cd1414017142d663705a82567ab6fabfa27a408eb302b3d00d66be71820d7",
+          "gitBlob": "1ae0bf147d9144ea7322bedfab213ef7287b9af5",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_An_english_country_co_1016064115/Meshy_AI_An_english_country_co_1016064115_texture_normal.png",
+          "bytes": 33088165,
+          "sha256": "9db50fce11d6317cda862093407d8fbcc76e3b5d60f106d0a68026274d4a63e9",
+          "gitBlob": "9d244712400cfe6045b44c30ede4e1758a95c5cc",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_An_english_country_co_1016064115/Meshy_AI_An_english_country_co_1016064115_texture_roughness.png",
+          "bytes": 1517605,
+          "sha256": "f6a27137a6ca4e596eb00cb913466234acdf47a9c49c5dc02e3fe6289caace83",
+          "gitBlob": "f3e43df20adc5172e38890b98a55f2d5cee2d51f",
+          "storage": "git"
+        }
+      ]
     }
   ]
 }
