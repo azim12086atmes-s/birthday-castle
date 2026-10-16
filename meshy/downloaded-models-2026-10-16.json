@@ -2940,6 +2940,135 @@
           "storage": "git"
         }
       ]
+    },
+    {
+      "sourceArchive": "Meshy_AI_a_large_rainbow_cryst_1016100600_texture_fbx.zip",
+      "sourceBytes": 27064716,
+      "sourceGitBlob": "3600bc380c6256727c063058293308a9f6d44d27",
+      "folder": "meshy/Meshy_AI_a_large_rainbow_cryst_1016100600",
+      "files": [
+        {
+          "path": "meshy/Meshy_AI_a_large_rainbow_cryst_1016100600/Meshy_AI_a_large_rainbow_cryst_1016100600_texture.fbx",
+          "bytes": 15484812,
+          "sha256": "5c79ca1699c395a8ef35a933a8267ed5e5666489d92a8f0e77846f761b2d1ceb",
+          "gitBlob": "9c9d78b811b541f4d6a7d695fa345895780ef1f4",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_a_large_rainbow_cryst_1016100600/Meshy_AI_a_large_rainbow_cryst_1016100600_texture.png",
+          "bytes": 4518802,
+          "sha256": "b1cfd0bf2bd683a256fefa879299357f317751befe4eb653a0e62e4ec44fe433",
+          "gitBlob": "47073c05fc40929abda1d77063adc72278313bf6",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_a_large_rainbow_cryst_1016100600/Meshy_AI_a_large_rainbow_cryst_1016100600_texture_metallic.png",
+          "bytes": 573870,
+          "sha256": "ebfc4819eb80efef8c6d67cf745e7310a70f0d351f0ee2c1f269924e481d17fa",
+          "gitBlob": "b2ed77048404ff8621a298212c7b5bf140365a41",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_a_large_rainbow_cryst_1016100600/Meshy_AI_a_large_rainbow_cryst_1016100600_texture_normal.png",
+          "bytes": 5195182,
+          "sha256": "e21e1421b5c7997ffabb09adda1eb070187357bcdeb21dd77a397415b32529c6",
+          "gitBlob": "6b20ba6f22ec90087c692afb3a73a6f76869042f",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_a_large_rainbow_cryst_1016100600/Meshy_AI_a_large_rainbow_cryst_1016100600_texture_roughness.png",
+          "bytes": 1290526,
+          "sha256": "fd825112f2b0d4da67b3c6619c69177f7189ded51dab1502fbef4a7641f90a61",
+          "gitBlob": "b5a8ae4dc665d3eea9ac55d660bd5738c2da6747",
+          "storage": "git"
+        }
+      ]
+    },
+    {
+      "sourceArchive": "Meshy_AI_Elephant_Rock_Formati_1016100426_texture_fbx.zip",
+      "sourceBytes": 68337087,
+      "sourceGitBlob": "02c356fad1b25d0fdc5322a2ec4edc9a0c60a2eb",
+      "folder": "meshy/Meshy_AI_Elephant_Rock_Formati_1016100426",
+      "files": [
+        {
+          "path": "meshy/Meshy_AI_Elephant_Rock_Formati_1016100426/Meshy_AI_Elephant_Rock_Formati_1016100426_texture.fbx",
+          "bytes": 57454108,
+          "sha256": "e8872bb7013f2396dc9af93f2e866c8203e963c0902feb1e2ba33aaa1b815ada",
+          "gitBlob": "244fc7b2c80376f82c4ffca846ceabdf34476152",
+          "storage": "git-lfs"
+        },
+        {
+          "path": "meshy/Meshy_AI_Elephant_Rock_Formati_1016100426/Meshy_AI_Elephant_Rock_Formati_1016100426_texture.png",
+          "bytes": 4554545,
+          "sha256": "ad566f82e776ba54356e0b3b8564244118bc3ad122eb6a2b186722bbaca014ca",
+          "gitBlob": "cfc9e8892c112ce411afeaa2932f3aff95d36783",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_Elephant_Rock_Formati_1016100426/Meshy_AI_Elephant_Rock_Formati_1016100426_texture_metallic.png",
+          "bytes": 12196,
+          "sha256": "c2892f1584f2e716b7c02f8f20474359740c3bf022494df2bb8f4fb5965a235f",
+          "gitBlob": "2777bf2f1a6edf45a6af917d2be76e241393904b",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_Elephant_Rock_Formati_1016100426/Meshy_AI_Elephant_Rock_Formati_1016100426_texture_normal.png",
+          "bytes": 5873316,
+          "sha256": "b64e380a0bf892c15c9a9886ed92d0b1f2e5e4e50e7c3b4201dd662758011c10",
+          "gitBlob": "d0fc1616980032295c91843115db3c95d57c334d",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_Elephant_Rock_Formati_1016100426/Meshy_AI_Elephant_Rock_Formati_1016100426_texture_roughness.png",
+          "bytes": 441398,
+          "sha256": "85538678cb2145e9542d9157253d535a4f8ecb1d3b4283381fafa15ff5555c20",
+          "gitBlob": "371057789500e09495ba71b3b5badf16b905ccdf",
+          "storage": "git"
+        }
+      ]
+    },
+    {
+      "sourceArchive": "Meshy_AI_Elven_tower_base_Circ_1016095944_texture_fbx.zip",
+      "sourceBytes": 77421971,
+      "sourceGitBlob": "7688638694a08eb3a0f92908665a11f8626a448b",
+      "folder": "meshy/Meshy_AI_Elven_tower_base_Circ_1016095944",
+      "files": [
+        {
+          "path": "meshy/Meshy_AI_Elven_tower_base_Circ_1016095944/Meshy_AI_Elven_tower_base_Circ_1016095944_texture.fbx",
+          "bytes": 65348268,
+          "sha256": "1679bfbf30494a696944bf1c7657fb7001d8f4d6f31ce83427d57e61978625c8",
+          "gitBlob": "9b47ae998d0748d546d1f6458d93c7bcc4e678e0",
+          "storage": "git-lfs"
+        },
+        {
+          "path": "meshy/Meshy_AI_Elven_tower_base_Circ_1016095944/Meshy_AI_Elven_tower_base_Circ_1016095944_texture.png",
+          "bytes": 4623124,
+          "sha256": "96ef6b0b78af5b755347d91fe531b0cace71b2cc974dbcfebd5a69457467c012",
+          "gitBlob": "d7fd9d61b4b1997a18724217695e7c46b9ba9661",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_Elven_tower_base_Circ_1016095944/Meshy_AI_Elven_tower_base_Circ_1016095944_texture_metallic.png",
+          "bytes": 796218,
+          "sha256": "d1c17915171752c3cd3df1a3d7c084b2011e165cd769d74b3677ff3da6f58799",
+          "gitBlob": "c0c42fe23220f53bd553945b5b12bd75b58015a1",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_Elven_tower_base_Circ_1016095944/Meshy_AI_Elven_tower_base_Circ_1016095944_texture_normal.png",
+          "bytes": 5547013,
+          "sha256": "2c011c1afce1cc36bafbeca73a0dec2e1897aa11559abe70c3b9007842c7bcbe",
+          "gitBlob": "1f22097c953fe09d78615b5bd8b1e07c70eb52e2",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_Elven_tower_base_Circ_1016095944/Meshy_AI_Elven_tower_base_Circ_1016095944_texture_roughness.png",
+          "bytes": 1105824,
+          "sha256": "00ba34fb1a0a0365a021287306702ed3a07150f802f6328a764e842d7e1639f1",
+          "gitBlob": "5e4ef9d83649c0fc6434a68cd59fe75ad8390735",
+          "storage": "git"
+        }
+      ]
     }
   ]
 }
