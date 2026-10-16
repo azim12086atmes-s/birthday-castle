@@ -2394,6 +2394,49 @@
           "storage": "git"
         }
       ]
+    },
+    {
+      "sourceArchive": "Meshy_AI_Pantheon_1016090601_texture_fbx.zip",
+      "sourceBytes": 162981862,
+      "sourceGitBlob": "a8de92ba372ae587b05fdff277c23b3c13f5ac28",
+      "folder": "meshy/Meshy_AI_Pantheon_1016090601",
+      "files": [
+        {
+          "path": "meshy/Meshy_AI_Pantheon_1016090601/Meshy_AI_Pantheon_1016090601_texture.fbx",
+          "bytes": 56202732,
+          "sha256": "32f96e38a84a332097b942b304171be5e78371fdd1688a6cdaeb2d9a75643532",
+          "gitBlob": "4ce78e608ba2ded03ddae6d164bf702570c6062a",
+          "storage": "git-lfs"
+        },
+        {
+          "path": "meshy/Meshy_AI_Pantheon_1016090601/Meshy_AI_Pantheon_1016090601_texture.png",
+          "bytes": 74717341,
+          "sha256": "a0f2f0268bbe88145d7e7ecb1ad1ea65ed0bb7f762cd1f0f4963855066625b9d",
+          "gitBlob": "fe9dda499de0aacb2875d0774f5cab09febbc13f",
+          "storage": "git-lfs"
+        },
+        {
+          "path": "meshy/Meshy_AI_Pantheon_1016090601/Meshy_AI_Pantheon_1016090601_texture_metallic.png",
+          "bytes": 2223988,
+          "sha256": "ad953337159ceaadfc60766a7d2b56e657f42a83efabd53f14fa08e2f67200ef",
+          "gitBlob": "3a02a453059fe7286de53d58f7c3cafddc9f3e6a",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_Pantheon_1016090601/Meshy_AI_Pantheon_1016090601_texture_normal.png",
+          "bytes": 24989696,
+          "sha256": "961fcef17d65cfbea87d7f2320619dff8f43d9a3db4238a0f9dfce1b948c9728",
+          "gitBlob": "bee1462e47a99518160e3e23aa3891a8e476d735",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_Pantheon_1016090601/Meshy_AI_Pantheon_1016090601_texture_roughness.png",
+          "bytes": 4846841,
+          "sha256": "cc7ec2600565c8300ab5692080e6c32d3dbc4b946c1bcd91f5638782020effba",
+          "gitBlob": "02b53bd944a0727a253aa39c885243f951039a04",
+          "storage": "git"
+        }
+      ]
     }
   ]
 }
