@@ -2022,6 +2022,99 @@
           "storage": "git"
         }
       ]
+    },
+    {
+      "sourceArchive": "Meshy_AI_Desert_Oasis_Palace_1016070702_texture_fbx.zip",
+      "sourceBytes": 121746081,
+      "sourceGitBlob": "dca50cbab315d25d55f48dfd55b644c9dd5f4e03",
+      "folder": "meshy/Meshy_AI_Desert_Oasis_Palace_1016070702",
+      "files": [
+        {
+          "path": "meshy/Meshy_AI_Desert_Oasis_Palace_1016070702/Meshy_AI_Desert_Oasis_Palace_1016070702_texture.fbx",
+          "bytes": 108930188,
+          "sha256": "3dcc9b35b37f8fb917668e5235fd1fcf6427047c62c552251ff19acfb32866d4",
+          "gitBlob": "726bd6299e1920d232e72f8eccec24ac6c6f4ef6",
+          "storage": "git-lfs"
+        },
+        {
+          "path": "meshy/Meshy_AI_Desert_Oasis_Palace_1016070702/Meshy_AI_Desert_Oasis_Palace_1016070702_texture.png",
+          "bytes": 4623523,
+          "sha256": "39d864b7c656a324a62fb830dd10a9ec685d69046d0548bf7165316b727abbb5",
+          "gitBlob": "9d322979f6c3c066c4d8e3b50c56439b5e6ea0aa",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_Desert_Oasis_Palace_1016070702/Meshy_AI_Desert_Oasis_Palace_1016070702_texture_metallic.png",
+          "bytes": 804515,
+          "sha256": "79ad04430d58cfede83ec70c2b76291b1ef66a8d94bb69330641285868aabc8b",
+          "gitBlob": "bee5e1651d08206001d832531d86c51d0e77867a",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_Desert_Oasis_Palace_1016070702/Meshy_AI_Desert_Oasis_Palace_1016070702_texture_normal.png",
+          "bytes": 5762120,
+          "sha256": "ce615fef2a4a1466aeb7150a033080aa0d8686deb8b2caf3670bf7a18ba7fddf",
+          "gitBlob": "47732a24b650dd269424c8ee096bf53d269bc13d",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_Desert_Oasis_Palace_1016070702/Meshy_AI_Desert_Oasis_Palace_1016070702_texture_roughness.png",
+          "bytes": 1624251,
+          "sha256": "a7414a7c73b6f6f5bfbd919ebe108336d8401452994a58ae1dd1b19524183d54",
+          "gitBlob": "2c0f179084724cc06644d9323c96ed1889ee084e",
+          "storage": "git"
+        }
+      ]
+    },
+    {
+      "sourceArchive": "Meshy_AI_Infernal_Peak_1015165746_texture_fbx.zip",
+      "sourceBytes": 128293883,
+      "sourceGitBlob": "5cfe5df3b9a89c7174ad3bf52da580fe8db1d20a",
+      "folder": "meshy/Meshy_AI_Infernal_Peak_1015165746",
+      "files": [
+        {
+          "path": "meshy/Meshy_AI_Infernal_Peak_1015165746/Meshy_AI_Infernal_Peak_1015165746_texture.fbx",
+          "bytes": 59044796,
+          "sha256": "a2edc82282518ce0313aa3e7f7006d48d1a3b5d371039c7fe0dc4afadf5e3742",
+          "gitBlob": "3e5b7d8c907932c84bcdc0558a43c3ec7203a46c",
+          "storage": "git-lfs"
+        },
+        {
+          "path": "meshy/Meshy_AI_Infernal_Peak_1015165746/Meshy_AI_Infernal_Peak_1015165746_texture.png",
+          "bytes": 32006405,
+          "sha256": "04e0ec03d55a6c3a2da62c17412dcc9460dec5066d05586459e3de4f6790cbc3",
+          "gitBlob": "f84d7b2accc17767869b3bcc2f5fdadee490f3ba",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_Infernal_Peak_1015165746/Meshy_AI_Infernal_Peak_1015165746_texture_emission.png",
+          "bytes": 1046206,
+          "sha256": "690a6b52873e1dccde6e3de30fd40f5b04d0beada3f3316ed02881fb80a317fe",
+          "gitBlob": "406652cd013885f57b62555889305842bb3b33eb",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_Infernal_Peak_1015165746/Meshy_AI_Infernal_Peak_1015165746_texture_metallic.png",
+          "bytes": 18875,
+          "sha256": "9388b76bbf66dcaa6a778293169d3d82e042bea867a0108db168a0ddb30cda61",
+          "gitBlob": "ccf871442dc4079b5d9cc32e7da42104989a6e05",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_Infernal_Peak_1015165746/Meshy_AI_Infernal_Peak_1015165746_texture_normal.png",
+          "bytes": 34487136,
+          "sha256": "48e9f73a6e5f4d53dc6d973b58b7c40a6da2bc72d3cc148a299ed7dcb29b3b0c",
+          "gitBlob": "d3c658aac117808ef35b14b8874808b5bcc4e88a",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_Infernal_Peak_1015165746/Meshy_AI_Infernal_Peak_1015165746_texture_roughness.png",
+          "bytes": 1688825,
+          "sha256": "60f87b70107636ec1ea37197dad0a0156969d5860a22d22a1dfb8d1dc446f388",
+          "gitBlob": "3abec37bf165d5cc999a729373eb2392b47444d5",
+          "storage": "git"
+        }
+      ]
     }
   ]
 }
