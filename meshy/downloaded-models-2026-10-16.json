@@ -395,6 +395,114 @@
           "storage": "git"
         }
       ]
+    },
+    {
+      "sourceArchive": "Meshy_AI_Rock_1016084637_texture_fbx.zip",
+      "sourceBytes": 58168135,
+      "sourceGitBlob": "abc274800898158a5551eb56b7282879c1f88fbe",
+      "folder": "meshy/Meshy_AI_Rock_1016084637",
+      "files": [
+        {
+          "path": "meshy/Meshy_AI_Rock_1016084637/Meshy_AI_Rock_1016084637_texture.fbx",
+          "bytes": 53518172,
+          "sha256": "7ca50511a527ec68f1fd03bae7e927d9964b9d12bb3603961e4fb6a80b8992bc",
+          "gitBlob": "65e4847e542649feef3a677324e62057dad7cea1",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_Rock_1016084637/Meshy_AI_Rock_1016084637_texture.png",
+          "bytes": 4649497,
+          "sha256": "4c2a08a5052d0785146b7106d6e1d939b4d5472cf3db2fb364409a18a81cff93",
+          "gitBlob": "0f54d007c937934d9c1adbfc7eb6236ca99720e5",
+          "storage": "git"
+        }
+      ]
+    },
+    {
+      "sourceArchive": "Meshy_AI_Bases_Pedestals_Minis_1016084637_texture_fbx.zip",
+      "sourceBytes": 62154365,
+      "sourceGitBlob": "b9cce403cab0b38b9e710caceabf6c86fcdb14be",
+      "folder": "meshy/Meshy_AI_Bases_Pedestals_Minis_1016084637",
+      "files": [
+        {
+          "path": "meshy/Meshy_AI_Bases_Pedestals_Minis_1016084637/Meshy_AI_Bases_Pedestals_Minis_1016084637_texture.fbx",
+          "bytes": 49343708,
+          "sha256": "96b9c1d79d6934e8c3a200c1e3681f5f2f17aca0d711e04cca1dc6630253225f",
+          "gitBlob": "7a4b17dd010a9a9c9bed808df554eb208d7a6e80",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_Bases_Pedestals_Minis_1016084637/Meshy_AI_Bases_Pedestals_Minis_1016084637_texture.png",
+          "bytes": 4922166,
+          "sha256": "83b95281a6840e1f9988b6c2a9075120dc45938984be0816ef05a2b188be5560",
+          "gitBlob": "a121e86367309721c12b1407bb4d9ad73bf84c7b",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_Bases_Pedestals_Minis_1016084637/Meshy_AI_Bases_Pedestals_Minis_1016084637_texture_metallic.png",
+          "bytes": 628544,
+          "sha256": "3d4cc6ee8374d7a5fdbff7a1bfe03af61910b2f869b2d93201765bc8786bd472",
+          "gitBlob": "b73efe7762c417f3162c34d73578e4d7de7fc067",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_Bases_Pedestals_Minis_1016084637/Meshy_AI_Bases_Pedestals_Minis_1016084637_texture_normal.png",
+          "bytes": 5511873,
+          "sha256": "c38b4a4eca67da06e6c946f4068d5333a367b1e955b3624c450ac458c54bd6d0",
+          "gitBlob": "011df578c8dd783ce49da8c8fc280cbe903f29ae",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_Bases_Pedestals_Minis_1016084637/Meshy_AI_Bases_Pedestals_Minis_1016084637_texture_roughness.png",
+          "bytes": 1746550,
+          "sha256": "ce400208012c0de401a1cf9ce317de914b7d5993eea26cf1f02cdec6db4e0e1b",
+          "gitBlob": "c3bb7115ff8fa496a5f2b8299e1e584a656a75ef",
+          "storage": "git"
+        }
+      ]
+    },
+    {
+      "sourceArchive": "Meshy_AI_Mesa_View_1016084352_texture_fbx.zip",
+      "sourceBytes": 81699758,
+      "sourceGitBlob": "1fe299f1802b4db547809611d0ad0394b538229c",
+      "folder": "meshy/Meshy_AI_Mesa_View_1016084352",
+      "files": [
+        {
+          "path": "meshy/Meshy_AI_Mesa_View_1016084352/Meshy_AI_Mesa_View_1016084352_texture.fbx",
+          "bytes": 68835420,
+          "sha256": "8e5aceff8712ad24a2f668a189cc4ab9f1b8bbf49a0bc12b8c1b6603b1a4f9cd",
+          "gitBlob": "da77fd49d860c5ea8c989529e1abed164ca5c8f8",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_Mesa_View_1016084352/Meshy_AI_Mesa_View_1016084352_texture.png",
+          "bytes": 5486164,
+          "sha256": "5cc56bf57bd0af6ed95b54329c0cbc21fb06ab3ba33302798ec620a9db95fe30",
+          "gitBlob": "af900f9bb949940f55a634bfd8a2057ef521270d",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_Mesa_View_1016084352/Meshy_AI_Mesa_View_1016084352_texture_metallic.png",
+          "bytes": 31003,
+          "sha256": "9221b5f9a4ede089092243ebe1dc0e09a36beadb2b1cf8581afb8008f0b8a266",
+          "gitBlob": "9141108fec40697b5f7735b5a76fc553bf8a49f2",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_Mesa_View_1016084352/Meshy_AI_Mesa_View_1016084352_texture_normal.png",
+          "bytes": 6556821,
+          "sha256": "399a4a4dba9490e114217e899a2b54e9d7a942392ff4b504c9ab56f076855b13",
+          "gitBlob": "b334331079643372528ab01c3b6f64f706f549e0",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_Mesa_View_1016084352/Meshy_AI_Mesa_View_1016084352_texture_roughness.png",
+          "bytes": 789066,
+          "sha256": "9c4ab102b090938394058b78e3b86e0108995d9f7b13d8c96b0d8ccd158a501a",
+          "gitBlob": "df61cbfa0aacd35f13c6882e80c37db6e9c36b6e",
+          "storage": "git"
+        }
+      ]
     }
   ]
 }
