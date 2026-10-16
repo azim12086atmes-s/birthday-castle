@@ -2251,6 +2251,56 @@
           "storage": "git"
         }
       ]
+    },
+    {
+      "sourceArchive": "Meshy_AI_Crystal_Blossom_Mirro_1016065020_texture_fbx.zip",
+      "sourceBytes": 155094365,
+      "sourceGitBlob": "77f1b3921be4606ea8cc0992f47d79f8d4a606dd",
+      "folder": "meshy/Meshy_AI_Crystal_Blossom_Mirro_1016065020",
+      "files": [
+        {
+          "path": "meshy/Meshy_AI_Crystal_Blossom_Mirro_1016065020/Meshy_AI_Crystal_Blossom_Mirro_1016065020_texture.fbx",
+          "bytes": 82798988,
+          "sha256": "0f0b65ed2e857c8a569df91ecfe2fd8d77c25a300bc7dca4b5dca7434f06c179",
+          "gitBlob": "5f641a3a2d1237e539696cf9e6099570a9b6c6c3",
+          "storage": "git-lfs"
+        },
+        {
+          "path": "meshy/Meshy_AI_Crystal_Blossom_Mirro_1016065020/Meshy_AI_Crystal_Blossom_Mirro_1016065020_texture.png",
+          "bytes": 32991944,
+          "sha256": "6ae338f25c82102d2d6616614f2eb19ba74c872756efd50c837e75cd66dceb02",
+          "gitBlob": "624cdc0b1b9b209d4299e582e8ddd55964947989",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_Crystal_Blossom_Mirro_1016065020/Meshy_AI_Crystal_Blossom_Mirro_1016065020_texture_emission.png",
+          "bytes": 3942159,
+          "sha256": "4010677ffd604f89b7ab84eb656230146710dfd6b3c37e04b6bc7482d0903bfb",
+          "gitBlob": "af4bf63d6f7dbb2f9acd6c76c8efbbe728d0982f",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_Crystal_Blossom_Mirro_1016065020/Meshy_AI_Crystal_Blossom_Mirro_1016065020_texture_metallic.png",
+          "bytes": 1783959,
+          "sha256": "8cc668e7a5a2951a4d27d1e34e2b8ac7967a9725a239e77c22c23ba86affa97f",
+          "gitBlob": "20e0fe3fa77fb6d0fd059ac26e067608c5fc6141",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_Crystal_Blossom_Mirro_1016065020/Meshy_AI_Crystal_Blossom_Mirro_1016065020_texture_normal.png",
+          "bytes": 31981461,
+          "sha256": "a6fd2876e5cdb76d8e0b185896118e9ae4c695fcb725ab764c8098152d6384d0",
+          "gitBlob": "0fb635749847cc220d940171aaed3a1ae7459ec0",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_Crystal_Blossom_Mirro_1016065020/Meshy_AI_Crystal_Blossom_Mirro_1016065020_texture_roughness.png",
+          "bytes": 1594022,
+          "sha256": "05048203fd4c60cf95a6968824d429b8a6786581e167be7c8591fdd9fd8023c5",
+          "gitBlob": "bcaca11f9e2d41971ad1aba488228423295b9087",
+          "storage": "git"
+        }
+      ]
     }
   ]
 }
