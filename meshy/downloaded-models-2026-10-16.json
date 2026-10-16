@@ -2854,6 +2854,92 @@
           "storage": "git"
         }
       ]
+    },
+    {
+      "sourceArchive": "Meshy_AI_Rock_Formations_Colle_1016100656_texture_fbx.zip",
+      "sourceBytes": 19454765,
+      "sourceGitBlob": "99f6b2172c8af478cb3a2d3215858c1c38537b04",
+      "folder": "meshy/Meshy_AI_Rock_Formations_Colle_1016100656",
+      "files": [
+        {
+          "path": "meshy/Meshy_AI_Rock_Formations_Colle_1016100656/Meshy_AI_Rock_Formations_Colle_1016100656_texture.fbx",
+          "bytes": 9356844,
+          "sha256": "0ba3d28275e4f3df1c8a7065485a4fd8bed4acc5c46e56dd7cddb3ba8793981b",
+          "gitBlob": "093aa55ebf76240ddbb597f6e47eed970a561b88",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_Rock_Formations_Colle_1016100656/Meshy_AI_Rock_Formations_Colle_1016100656_texture.png",
+          "bytes": 3895805,
+          "sha256": "0f150c04ce20638b7086c438b266785c36a67ee2cd4f55066bf3eab006eef1b5",
+          "gitBlob": "a90bf88ec857b42c7ba17edf47a93b7d2f604ed1",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_Rock_Formations_Colle_1016100656/Meshy_AI_Rock_Formations_Colle_1016100656_texture_metallic.png",
+          "bytes": 309275,
+          "sha256": "a8ea99d30ee12ec8f7c831413a6e131c7c18cfa5d5640f3c4992ee359e8bbd76",
+          "gitBlob": "de5c569e13ecc4c8676b85db66842017d27e6020",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_Rock_Formations_Colle_1016100656/Meshy_AI_Rock_Formations_Colle_1016100656_texture_normal.png",
+          "bytes": 4616882,
+          "sha256": "26a30cb7142f1c1f7a13a27bb41ea16d8769a1705dbdcf5c187c67bf9ecf3b00",
+          "gitBlob": "ac7653d105cc6520a8765ee16c8ba1ee7702f086",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_Rock_Formations_Colle_1016100656/Meshy_AI_Rock_Formations_Colle_1016100656_texture_roughness.png",
+          "bytes": 1274435,
+          "sha256": "aaf425819e43889987c05302081ded878db3e42441e36d90390b86d2a786ded1",
+          "gitBlob": "344858e154906720ac30bff9b50fce477dbdfa73",
+          "storage": "git"
+        }
+      ]
+    },
+    {
+      "sourceArchive": "Meshy_AI_a_large_rainbow_cryst_1016100444_texture_fbx.zip",
+      "sourceBytes": 26837185,
+      "sourceGitBlob": "e0cfc04801c45257cb3adf706e91adc9ee854d5f",
+      "folder": "meshy/Meshy_AI_a_large_rainbow_cryst_1016100444",
+      "files": [
+        {
+          "path": "meshy/Meshy_AI_a_large_rainbow_cryst_1016100444/Meshy_AI_a_large_rainbow_cryst_1016100444_texture.fbx",
+          "bytes": 15499100,
+          "sha256": "717fb9934dda2a4880fed85e08663214d6ba9a847f67e5a80ace0e582b761131",
+          "gitBlob": "be8ddccf0fa5d7e240ba394faa8483e4f0a87a5a",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_a_large_rainbow_cryst_1016100444/Meshy_AI_a_large_rainbow_cryst_1016100444_texture.png",
+          "bytes": 4271387,
+          "sha256": "042b20fd4f073eb0d82a273a1c96751a843f561a403841171663dda02a6abcf3",
+          "gitBlob": "05a2fa72d43a06cad0d56dacc137f6b4bd6b8c7b",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_a_large_rainbow_cryst_1016100444/Meshy_AI_a_large_rainbow_cryst_1016100444_texture_metallic.png",
+          "bytes": 312356,
+          "sha256": "dfdf832870f865c902a3dd3f169b5f8273a2cce4ed01cb75adb6915124aebc64",
+          "gitBlob": "628d383e140c6e1a26c39f16431153702f7bf38c",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_a_large_rainbow_cryst_1016100444/Meshy_AI_a_large_rainbow_cryst_1016100444_texture_normal.png",
+          "bytes": 5438938,
+          "sha256": "0b6531226e09c511d1cc0d4dad2d33d821ee9ff38e52ddda561bead9ecf50418",
+          "gitBlob": "b9e87d76b312488dce2f4bb0fd1ba9f9a137c00f",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_a_large_rainbow_cryst_1016100444/Meshy_AI_a_large_rainbow_cryst_1016100444_texture_roughness.png",
+          "bytes": 1313880,
+          "sha256": "54677f2ca21ad369385d8352973c0501ee36b296acfdb380fbef40f8c78a0c06",
+          "gitBlob": "3fcdeced0bb1ebc49d889ec3b9aa3a1e49448bbd",
+          "storage": "git"
+        }
+      ]
     }
   ]
 }
