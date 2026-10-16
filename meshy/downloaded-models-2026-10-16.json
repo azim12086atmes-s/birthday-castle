@@ -1757,6 +1757,92 @@
           "storage": "git"
         }
       ]
+    },
+    {
+      "sourceArchive": "Meshy_AI_A_majestic_forest_fer_1016090100_texture_fbx (1).zip",
+      "sourceBytes": 99242747,
+      "sourceGitBlob": "a984cbb1bba415c2481e7fe870b678b35ce69636",
+      "folder": "meshy/Meshy_AI_A_majestic_forest_fer_1016090100",
+      "files": [
+        {
+          "path": "meshy/Meshy_AI_A_majestic_forest_fer_1016090100/Meshy_AI_A_majestic_forest_fer_1016090100_texture.fbx",
+          "bytes": 85396812,
+          "sha256": "f5466f26210ef5567c5b693aa0b3764678bb455f892b2bbe3b187698d6314ff7",
+          "gitBlob": "0f5c26b02140ffa527cdf23ce2ef68e1e647f66e",
+          "storage": "git-lfs"
+        },
+        {
+          "path": "meshy/Meshy_AI_A_majestic_forest_fer_1016090100/Meshy_AI_A_majestic_forest_fer_1016090100_texture.png",
+          "bytes": 5392763,
+          "sha256": "e608fe119ccc276118afc9dc537f6a900de715c80e27014d6c15b4ec107e38a5",
+          "gitBlob": "fd5e2ad1e3ee0437cc01e5529628fcc04992b5a4",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_A_majestic_forest_fer_1016090100/Meshy_AI_A_majestic_forest_fer_1016090100_texture_metallic.png",
+          "bytes": 462059,
+          "sha256": "63bf594c1a388b813f15e0d0568dc099ca043b42f6ad13baf17ce68d2f622433",
+          "gitBlob": "9a31d534e17514a9a109ac1e3c259f9f5a717076",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_A_majestic_forest_fer_1016090100/Meshy_AI_A_majestic_forest_fer_1016090100_texture_normal.png",
+          "bytes": 6805881,
+          "sha256": "20683504f62af823740cdfca8274852dbfd16a6ef37e01bc6010703674b87fb9",
+          "gitBlob": "299570c2b881633742379240592a6fb551042902",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_A_majestic_forest_fer_1016090100/Meshy_AI_A_majestic_forest_fer_1016090100_texture_roughness.png",
+          "bytes": 1183708,
+          "sha256": "4a02da53964b59342a5cf8985f6377fb524f619ad2a98f7dccf70e3a52da076c",
+          "gitBlob": "6e83be3f94ad67071ea3823200f737f8df1d99aa",
+          "storage": "git"
+        }
+      ]
+    },
+    {
+      "sourceArchive": "Meshy_AI_Ancient_mystical_worl_1016090234_texture_fbx.zip",
+      "sourceBytes": 103918507,
+      "sourceGitBlob": "58475b84ac84bb2d5d522e6341c38cd4f0578ffd",
+      "folder": "meshy/Meshy_AI_Ancient_mystical_worl_1016090234",
+      "files": [
+        {
+          "path": "meshy/Meshy_AI_Ancient_mystical_worl_1016090234/Meshy_AI_Ancient_mystical_worl_1016090234_texture.fbx",
+          "bytes": 53936860,
+          "sha256": "d5d76604bb1f8f9de4dbb683c905a8c9f0c2adbb132ac731e4ddd3f663b11cb7",
+          "gitBlob": "c817b65b3b8250ddf8eb8f6d9858f4b74806d73f",
+          "storage": "git-lfs"
+        },
+        {
+          "path": "meshy/Meshy_AI_Ancient_mystical_worl_1016090234/Meshy_AI_Ancient_mystical_worl_1016090234_texture.png",
+          "bytes": 17738131,
+          "sha256": "96c31f1d221c2d34687924ebf6c312642125095d272efe655caafda810b06956",
+          "gitBlob": "8463b8201ee72cf8535bf69d8225d65b130c4522",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_Ancient_mystical_worl_1016090234/Meshy_AI_Ancient_mystical_worl_1016090234_texture_metallic.png",
+          "bytes": 905473,
+          "sha256": "0dad42724c8ed4c68953a78f23d73a2dd0fd0ba9e6b29c4121b0fe0680acdc93",
+          "gitBlob": "47b3f97702f70e92edff2a0e8d881a8f918b67bd",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_Ancient_mystical_worl_1016090234/Meshy_AI_Ancient_mystical_worl_1016090234_texture_normal.png",
+          "bytes": 30530834,
+          "sha256": "ce9ccfab42c67cf021ba4ad3747d6b9c98c0d4192a59eb27951e42aea4e387c2",
+          "gitBlob": "d99d511b3477fdcf95404058749eeaf1642c986d",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_Ancient_mystical_worl_1016090234/Meshy_AI_Ancient_mystical_worl_1016090234_texture_roughness.png",
+          "bytes": 867559,
+          "sha256": "105ad72a83ffd116acae7195c8b3155a4960e710d44193b7465cfcfa13c598e8",
+          "gitBlob": "d0d20da032bcc4595b4cde59c5aa53106bdd2da2",
+          "storage": "git"
+        }
+      ]
     }
   ]
 }
