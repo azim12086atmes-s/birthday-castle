@@ -2659,6 +2659,49 @@
           "storage": "git"
         }
       ]
+    },
+    {
+      "sourceArchive": "Meshy_AI_Casa_Encantadora_1016064528_texture_fbx.zip",
+      "sourceBytes": 175887148,
+      "sourceGitBlob": "d304eaaae1651efbb77f53783feff41b6f484553",
+      "folder": "meshy/Meshy_AI_Casa_Encantadora_1016064528",
+      "files": [
+        {
+          "path": "meshy/Meshy_AI_Casa_Encantadora_1016064528/Meshy_AI_Casa_Encantadora_1016064528_texture.fbx",
+          "bytes": 163021148,
+          "sha256": "5e377df873485fcce186c995d3e17bb835063f23c8b830cb71c19217f52d7995",
+          "gitBlob": "6770109abd74e0af6345caa4255285d083e18b5c",
+          "storage": "git-lfs"
+        },
+        {
+          "path": "meshy/Meshy_AI_Casa_Encantadora_1016064528/Meshy_AI_Casa_Encantadora_1016064528_texture.png",
+          "bytes": 4114078,
+          "sha256": "144f7e981493a1160a11d2f2379da049631b02da3c939676507d45c80ec1061d",
+          "gitBlob": "71e9db09c32cc9f556c4163995c91efed90c8baf",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_Casa_Encantadora_1016064528/Meshy_AI_Casa_Encantadora_1016064528_texture_metallic.png",
+          "bytes": 684981,
+          "sha256": "4eaccb6b03470a3eb5b4fe0198b918d8ba7d4fc6bb1aa724b42e6faa525e31ac",
+          "gitBlob": "41e559a96ffe2e0ee063c2d9792c1dedc527f884",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_Casa_Encantadora_1016064528/Meshy_AI_Casa_Encantadora_1016064528_texture_normal.png",
+          "bytes": 6677442,
+          "sha256": "19cd02ca8c7c54f6708f8c6e7ef3ba9d1f539259935d886ecbe45920fdd9b9fb",
+          "gitBlob": "e57db9d5eee5556c5be67b1912db6920267023dd",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_Casa_Encantadora_1016064528/Meshy_AI_Casa_Encantadora_1016064528_texture_roughness.png",
+          "bytes": 1388075,
+          "sha256": "e346e1a083e62c57a722560b1096d47394860c290c9bb54590ec908906347c14",
+          "gitBlob": "cc02f485773533f37f1b0200e483aa00be6601e3",
+          "storage": "git"
+        }
+      ]
     }
   ]
 }
