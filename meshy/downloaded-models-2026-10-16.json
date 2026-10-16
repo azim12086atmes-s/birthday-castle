@@ -3069,6 +3069,114 @@
           "storage": "git"
         }
       ]
+    },
+    {
+      "sourceArchive": "Meshy_AI_Devils_Tower_1016100705_texture_fbx.zip",
+      "sourceBytes": 28728622,
+      "sourceGitBlob": "1c08799195246494503b353d481c958aacd10910",
+      "folder": "meshy/Meshy_AI_Devils_Tower_1016100705",
+      "files": [
+        {
+          "path": "meshy/Meshy_AI_Devils_Tower_1016100705/Meshy_AI_Devils_Tower_1016100705_texture.fbx",
+          "bytes": 23423372,
+          "sha256": "adc48c1f8ed02cd4b71f892216986419ad69b7b0af86d455bd5ca5a1b6fd3a3f",
+          "gitBlob": "a3b6ac7ecfec4c784ecedb49473e3d4b32d8827c",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_Devils_Tower_1016100705/Meshy_AI_Devils_Tower_1016100705_texture.png",
+          "bytes": 5304720,
+          "sha256": "7e9e75a6c74795e39c9d7da2207b8757a0aa1665f022d76181b812f7307ea830",
+          "gitBlob": "1409ad921a217616e32bcf648273b191d0a80b71",
+          "storage": "git"
+        }
+      ]
+    },
+    {
+      "sourceArchive": "Meshy_AI_Miniature_Japanese_Sh_1016093555_texture_fbx.zip",
+      "sourceBytes": 90452420,
+      "sourceGitBlob": "a443c78b98c626ac512a7ab2db011be6f6f30f66",
+      "folder": "meshy/Meshy_AI_Miniature_Japanese_Sh_1016093555",
+      "files": [
+        {
+          "path": "meshy/Meshy_AI_Miniature_Japanese_Sh_1016093555/Meshy_AI_Miniature_Japanese_Sh_1016093555_texture.fbx",
+          "bytes": 78790572,
+          "sha256": "57af4d1f15ce5b99ad602fff82bad20f9d8c652bcd06855d8f452f6f8e9b08dd",
+          "gitBlob": "65d2c97f572adba4a6d5da7a3964582e19555dcd",
+          "storage": "git-lfs"
+        },
+        {
+          "path": "meshy/Meshy_AI_Miniature_Japanese_Sh_1016093555/Meshy_AI_Miniature_Japanese_Sh_1016093555_texture.png",
+          "bytes": 5729807,
+          "sha256": "08a2a29c41163e7a2f29c35dde6539a32acc81b406cda4470544d09b78206db0",
+          "gitBlob": "6c1d67ccd047fdca4a90828eb724883f6b69f45a",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_Miniature_Japanese_Sh_1016093555/Meshy_AI_Miniature_Japanese_Sh_1016093555_texture_metallic.png",
+          "bytes": 941308,
+          "sha256": "fa4a5daf2b8060e6b1c70e57f96e5319b4f931fd74d0e2401217dcd9e4ae87c4",
+          "gitBlob": "07be7b0f6037ce1d446a05dd5365c46401408581",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_Miniature_Japanese_Sh_1016093555/Meshy_AI_Miniature_Japanese_Sh_1016093555_texture_normal.png",
+          "bytes": 4248424,
+          "sha256": "0140f28d7470d5443451e5c3003440e14843061862c396a5e4e6b212a2224216",
+          "gitBlob": "e3b2f7cbd6687ac9b20950a5538080e413ba59ed",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_Miniature_Japanese_Sh_1016093555/Meshy_AI_Miniature_Japanese_Sh_1016093555_texture_roughness.png",
+          "bytes": 740785,
+          "sha256": "c370ccdba2d23873f36c7a6eaa65a23920b02960d1d9ba517d3ef132bc8e244d",
+          "gitBlob": "577b49685e996e4296ba481334b88803d76c455e",
+          "storage": "git"
+        }
+      ]
+    },
+    {
+      "sourceArchive": "Meshy_AI_A_sprawling_sandstone_1016100001_texture_fbx.zip",
+      "sourceBytes": 128497119,
+      "sourceGitBlob": "28a311ab8c1606c8aa6dfdaf54b228424e547f64",
+      "folder": "meshy/Meshy_AI_A_sprawling_sandstone_1016100001",
+      "files": [
+        {
+          "path": "meshy/Meshy_AI_A_sprawling_sandstone_1016100001/Meshy_AI_A_sprawling_sandstone_1016100001_texture.fbx",
+          "bytes": 117833260,
+          "sha256": "83c54648ae3268992bf5265d0ddc6d743717fda8d2cc325324db93836cf3fd15",
+          "gitBlob": "c7106695771bddd9636d97687a5bf4ca017d6947",
+          "storage": "git-lfs"
+        },
+        {
+          "path": "meshy/Meshy_AI_A_sprawling_sandstone_1016100001/Meshy_AI_A_sprawling_sandstone_1016100001_texture.png",
+          "bytes": 4213709,
+          "sha256": "65df3537f870b2bf5a99f7fa3a942a6b35062a5bcad417bb6a8b3de1ba393596",
+          "gitBlob": "7e9535d1c7ef9d31f0fbf9a1f74c24b99c532e9e",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_A_sprawling_sandstone_1016100001/Meshy_AI_A_sprawling_sandstone_1016100001_texture_metallic.png",
+          "bytes": 9523,
+          "sha256": "6353e1e70ae8845ff0bb73a55663257001402ec1aa70db110cb0cbf14fa2ce85",
+          "gitBlob": "a928c9b117a69bd88c824eefeff91237ad6d3383",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_A_sprawling_sandstone_1016100001/Meshy_AI_A_sprawling_sandstone_1016100001_texture_normal.png",
+          "bytes": 5960936,
+          "sha256": "7d1d17b224d2ba80d0bedca09ace42946b904069cd28940d750ba0502c7ecbd6",
+          "gitBlob": "10bf8ba959bd6f8ea5ff530451c347fb8de20639",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_A_sprawling_sandstone_1016100001/Meshy_AI_A_sprawling_sandstone_1016100001_texture_roughness.png",
+          "bytes": 478167,
+          "sha256": "6817c88365df0c89448fb30a4efe17a5864827b9df482e6810e1391e0ac467b9",
+          "gitBlob": "1140b0cd8a15c7ca52b76c31b55d4308d2ff52f6",
+          "storage": "git"
+        }
+      ]
     }
   ]
 }
