@@ -1134,6 +1134,99 @@
           "storage": "git"
         }
       ]
+    },
+    {
+      "sourceArchive": "Meshy_AI_Floating_Stone_Island_1016084851_texture_fbx.zip",
+      "sourceBytes": 111218606,
+      "sourceGitBlob": "ebac2e86377a03f2aaaf03f6b00926e35a691afc",
+      "folder": "meshy/Meshy_AI_Floating_Stone_Island_1016084851",
+      "files": [
+        {
+          "path": "meshy/Meshy_AI_Floating_Stone_Island_1016084851/Meshy_AI_Floating_Stone_Island_1016084851_texture.fbx",
+          "bytes": 42134908,
+          "sha256": "7b11c8122b70d856bfa035484c6dc6f3fea28e1c211d3faf566d4fa76b9c6cae",
+          "gitBlob": "67cedc6b6a6d5ef06ff98e29602f6c15cdb6f5e7",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_Floating_Stone_Island_1016084851/Meshy_AI_Floating_Stone_Island_1016084851_texture.png",
+          "bytes": 34702430,
+          "sha256": "9a7472cbb004df9d7a701c364b9a91d457e83bb688a2a127517953fdfb1bdc75",
+          "gitBlob": "af736a1283354bee14fe00d3c87fcbcbf5c3db27",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_Floating_Stone_Island_1016084851/Meshy_AI_Floating_Stone_Island_1016084851_texture_emission.png",
+          "bytes": 239330,
+          "sha256": "db47a342658c7166475018c84d15ff9bf5b2f3c8166b8bf169212f18c6f384f5",
+          "gitBlob": "2732159802e5a76b79db767433208bebc28b716b",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_Floating_Stone_Island_1016084851/Meshy_AI_Floating_Stone_Island_1016084851_texture_metallic.png",
+          "bytes": 19601,
+          "sha256": "0b00b78236b754917368431403a216806ef3d7867a3f6cc6191fafcfd0747025",
+          "gitBlob": "b8681130c8891fef834794cb3de4e45ffd5fda21",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_Floating_Stone_Island_1016084851/Meshy_AI_Floating_Stone_Island_1016084851_texture_normal.png",
+          "bytes": 32730015,
+          "sha256": "0375384c9d8279e25bca22badfe76b8e8d96db546de889c0c297c54f484d39d6",
+          "gitBlob": "6d37afb06e226bdcf1e77106942b3f1c7433f3ba",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_Floating_Stone_Island_1016084851/Meshy_AI_Floating_Stone_Island_1016084851_texture_roughness.png",
+          "bytes": 1390490,
+          "sha256": "ec6298efd8f84de292960b7b2be2bc814a64a6b5da910096616bf3ca9ebe19ee",
+          "gitBlob": "392ddfea196a5fe2eb6d87777e9e5dcbde4e56af",
+          "storage": "git"
+        }
+      ]
+    },
+    {
+      "sourceArchive": "Meshy_AI_A_modular_medieval_ho_1016065704_texture_fbx.zip",
+      "sourceBytes": 115361116,
+      "sourceGitBlob": "8e3c3aee2dde0eadc2fb32fec48ee49a7d32a18a",
+      "folder": "meshy/Meshy_AI_A_modular_medieval_ho_1016065704",
+      "files": [
+        {
+          "path": "meshy/Meshy_AI_A_modular_medieval_ho_1016065704/Meshy_AI_A_modular_medieval_ho_1016065704_texture.fbx",
+          "bytes": 100572428,
+          "sha256": "1e78227ec72e6ebae7b86b66a9ab6153b9b6c1bdf26b9adba35fe728655d649b",
+          "gitBlob": "a5aadaa9a398123698f3803eabf20db0dd5d3d9b",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_A_modular_medieval_ho_1016065704/Meshy_AI_A_modular_medieval_ho_1016065704_texture.png",
+          "bytes": 6690537,
+          "sha256": "976b082d467c152cad4a3907fffbb48ad3586b6c3871b93f01d5f359bb811ecb",
+          "gitBlob": "ee263dea8b29e46eb9afcd852b029cf6434dd890",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_A_modular_medieval_ho_1016065704/Meshy_AI_A_modular_medieval_ho_1016065704_texture_metallic.png",
+          "bytes": 489758,
+          "sha256": "74e8771e759bdcb4e9e0269033f38f6010cd04eac1e92894015c8ddd7e6cc348",
+          "gitBlob": "8a792d1f034169e71f4624e091da52d36cb8b2f7",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_A_modular_medieval_ho_1016065704/Meshy_AI_A_modular_medieval_ho_1016065704_texture_normal.png",
+          "bytes": 5926852,
+          "sha256": "645311961166c532c6248f35f5c8137b19f649c28cd8a90bb8b8d547ffc09bb8",
+          "gitBlob": "bde44ccb17123f580db537f89b074424e88e65b6",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_A_modular_medieval_ho_1016065704/Meshy_AI_A_modular_medieval_ho_1016065704_texture_roughness.png",
+          "bytes": 1680017,
+          "sha256": "4f975fa0f994b8204b15da38ed1aa054358a2361da2628c1fa93779232c61a9a",
+          "gitBlob": "c6c6a06a1187e8ff28edc0c5e8f2355546f75313",
+          "storage": "git"
+        }
+      ]
     }
   ]
 }
