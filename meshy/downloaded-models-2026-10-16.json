@@ -2702,6 +2702,28 @@
           "storage": "git"
         }
       ]
+    },
+    {
+      "sourceArchive": "Meshy_AI_Cathedral_Render_1016063636_texture_fbx.zip",
+      "sourceBytes": 189685439,
+      "sourceGitBlob": "63d5b5749ebf90e1a95447dcd127826869586e31",
+      "folder": "meshy/Meshy_AI_Cathedral_Render_1016063636",
+      "files": [
+        {
+          "path": "meshy/Meshy_AI_Cathedral_Render_1016063636/Meshy_AI_Cathedral_Render_1016063636_texture.fbx",
+          "bytes": 185988716,
+          "sha256": "e53e997762708e4cdd703bb298703505abca63bdc95f3e778b446b14b6a48e63",
+          "gitBlob": "56a95f983ce2715b49121ef2c25d832e6bce1e1f",
+          "storage": "git-lfs"
+        },
+        {
+          "path": "meshy/Meshy_AI_Cathedral_Render_1016063636/Meshy_AI_Cathedral_Render_1016063636_texture.png",
+          "bytes": 3696161,
+          "sha256": "debd9253b06a4c4eccd6330f0e4dca4a30476289a78c95bf4e61fcc3c560fc0b",
+          "gitBlob": "a542509ab34211cdb26d0f6509c25271b3b74c1a",
+          "storage": "git"
+        }
+      ]
     }
   ]
 }
