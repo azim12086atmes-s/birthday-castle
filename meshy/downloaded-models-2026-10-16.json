@@ -1034,6 +1034,106 @@
           "storage": "git"
         }
       ]
+    },
+    {
+      "sourceArchive": "Meshy_AI_Ember_Tree_1016061713_texture_fbx.zip",
+      "sourceBytes": 107857496,
+      "sourceGitBlob": "c0880de727d2a9f0b0c65f433d9fc59c0e669f25",
+      "folder": "meshy/Meshy_AI_Ember_Tree_1016061713",
+      "files": [
+        {
+          "path": "meshy/Meshy_AI_Ember_Tree_1016061713/Meshy_AI_Ember_Tree_1016061713_texture.fbx",
+          "bytes": 84565548,
+          "sha256": "fad2e30337a06031a726f64f1de6ea5c53165029ea527ff26541d36aaa603a30",
+          "gitBlob": "c8d346e2d78d4f3c8d96cf4c33f484974a752601",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_Ember_Tree_1016061713/Meshy_AI_Ember_Tree_1016061713_texture.png",
+          "bytes": 8985662,
+          "sha256": "d1a99672014617cf5ae503938798e702e300071e12da72d1f79d9c5e99170090",
+          "gitBlob": "e933e76f07777d9c70d70bbef13e102a7f9be04c",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_Ember_Tree_1016061713/Meshy_AI_Ember_Tree_1016061713_texture_emission.png",
+          "bytes": 4441210,
+          "sha256": "70cb0152e143d36e197deffa28023b9cb8ce7dd3817d1266f45d4acb88bdc562",
+          "gitBlob": "d6b4ad2584e04520b5f7ad38900e678dd3d29b6e",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_Ember_Tree_1016061713/Meshy_AI_Ember_Tree_1016061713_texture_metallic.png",
+          "bytes": 48543,
+          "sha256": "b6cd78902b5adef865cdf9b88b8a6e03fad6562e03da530a08c7cf04b086fe4f",
+          "gitBlob": "fadf75df37e34956aaebcac297e87b06c7db6b54",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_Ember_Tree_1016061713/Meshy_AI_Ember_Tree_1016061713_texture_normal.png",
+          "bytes": 8172567,
+          "sha256": "15d4f7c618ec1f83256a3452df63dea111a7a7fb26ad0bae26c460a185a368ea",
+          "gitBlob": "605cbebbd31508fc53e26d8607a5770f0b5a115c",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_Ember_Tree_1016061713/Meshy_AI_Ember_Tree_1016061713_texture_roughness.png",
+          "bytes": 1642398,
+          "sha256": "09648ac80ec324f1f8028ef719738962c31412dfe41b7bd47c67e027208589c6",
+          "gitBlob": "4ce6824af4832ad88e5ef3d88575f318ef4fd524",
+          "storage": "git"
+        }
+      ]
+    },
+    {
+      "sourceArchive": "Meshy_AI_Magenta_Bonsai_Tree_1016064843_texture_fbx.zip",
+      "sourceBytes": 110748910,
+      "sourceGitBlob": "135fab3c4c69a95212e5a501505835757681b595",
+      "folder": "meshy/Meshy_AI_Magenta_Bonsai_Tree_1016064843",
+      "files": [
+        {
+          "path": "meshy/Meshy_AI_Magenta_Bonsai_Tree_1016064843/Meshy_AI_Magenta_Bonsai_Tree_1016064843_texture.fbx",
+          "bytes": 87907628,
+          "sha256": "924c5312fd4dc522c8f478c552a72cfa58a42c05c86c94db174a0817c562d39e",
+          "gitBlob": "4e89ca1875106507c6f04fa2b5c276d18173fd15",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_Magenta_Bonsai_Tree_1016064843/Meshy_AI_Magenta_Bonsai_Tree_1016064843_texture.png",
+          "bytes": 9281617,
+          "sha256": "cb1eb1d63c3977e238d28e941f2a7d9d1318f5a49376fa21efdb2d9c33a21a48",
+          "gitBlob": "07b9348d4b79699b9da96f5819d28930c98ba1b5",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_Magenta_Bonsai_Tree_1016064843/Meshy_AI_Magenta_Bonsai_Tree_1016064843_texture_emission.png",
+          "bytes": 3588981,
+          "sha256": "0534748e73fc28413a1f1cc73ac4ddd72c862e164ba5b7362618399f6e392d4e",
+          "gitBlob": "3eb32b2983063af98dc8651b1378c36f4c867b6c",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_Magenta_Bonsai_Tree_1016064843/Meshy_AI_Magenta_Bonsai_Tree_1016064843_texture_metallic.png",
+          "bytes": 21881,
+          "sha256": "139aa6062d2e5b94b859086c0a1e87d04a747866d63e344f9cd8ee1b2c024636",
+          "gitBlob": "03b9c90c2a283226d976ffb0b289794d2c8de566",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_Magenta_Bonsai_Tree_1016064843/Meshy_AI_Magenta_Bonsai_Tree_1016064843_texture_normal.png",
+          "bytes": 8258487,
+          "sha256": "d406d3c7421684d1b6eff6548b4b6cc40ee2fb85b6f2cdebc532c7c55b718d92",
+          "gitBlob": "47c798a2aee9247bad65cc36c8ab7e1aad22f663",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_Magenta_Bonsai_Tree_1016064843/Meshy_AI_Magenta_Bonsai_Tree_1016064843_texture_roughness.png",
+          "bytes": 1688532,
+          "sha256": "e4a607c65f6dbdedda4d91c63c4eb0df45a27203a4f735d965f230aca51a9bd9",
+          "gitBlob": "5316632f0a8f4f84d5b7c20860abe956d4f00909",
+          "storage": "git"
+        }
+      ]
     }
   ]
 }
