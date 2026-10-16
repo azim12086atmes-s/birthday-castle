@@ -1621,6 +1621,142 @@
           "storage": "git"
         }
       ]
+    },
+    {
+      "sourceArchive": "Meshy_AI_1000054986_jpg_1016091255_texture_fbx.zip",
+      "sourceBytes": 70020487,
+      "sourceGitBlob": "cc0f42ed83398d1e218592227757d9fc252f6e91",
+      "folder": "meshy/Meshy_AI_1000054986_jpg_1016091255",
+      "files": [
+        {
+          "path": "meshy/Meshy_AI_1000054986_jpg_1016091255/Meshy_AI_1000054986_jpg_1016091255_texture.fbx",
+          "bytes": 55323708,
+          "sha256": "753d671a1672999e882a8f4ec9194a055a633b73c2187f2fdff5d8af68d80ad8",
+          "gitBlob": "b04fa53f310c95345414af43f50522c8dde811a3",
+          "storage": "git-lfs"
+        },
+        {
+          "path": "meshy/Meshy_AI_1000054986_jpg_1016091255/Meshy_AI_1000054986_jpg_1016091255_texture.png",
+          "bytes": 5025865,
+          "sha256": "2e1b09a6110a601b200e272ab151b39e4dfe63b6e1a695b71620f99c4a8c2366",
+          "gitBlob": "077b7908fb9a2a7536bc93a75f0bac817915be1c",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_1000054986_jpg_1016091255/Meshy_AI_1000054986_jpg_1016091255_texture_metallic.png",
+          "bytes": 1454258,
+          "sha256": "e9a988ce3d12849ddf2164ba99329b0df3b08eec8d76cc3f133312f521a59214",
+          "gitBlob": "8ca7d1220c224d6b640f51864b60d96a4b3d0e65",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_1000054986_jpg_1016091255/Meshy_AI_1000054986_jpg_1016091255_texture_normal.png",
+          "bytes": 7107159,
+          "sha256": "979108848a6b4e91445379cc65d6f33d36e3c565b2101860cd0999707a7bf16e",
+          "gitBlob": "eb0ace2a9035e87d251c5bccaa59c816339c4cb7",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_1000054986_jpg_1016091255/Meshy_AI_1000054986_jpg_1016091255_texture_roughness.png",
+          "bytes": 1108113,
+          "sha256": "2eeb349b9c02cc71ecdb9d6c1c17f486df62baa5fedd07e344db8e8a60df3ead",
+          "gitBlob": "58201b7c3d176b436c48dd2df979983618f12dc7",
+          "storage": "git"
+        }
+      ]
+    },
+    {
+      "sourceArchive": "Meshy_AI_Ember_Tiled_Turret_Ho_1016085925_texture_fbx.zip",
+      "sourceBytes": 85952445,
+      "sourceGitBlob": "357f10b5d01b5921bce0987e922178a7db030a29",
+      "folder": "meshy/Meshy_AI_Ember_Tiled_Turret_Ho_1016085925",
+      "files": [
+        {
+          "path": "meshy/Meshy_AI_Ember_Tiled_Turret_Ho_1016085925/Meshy_AI_Ember_Tiled_Turret_Ho_1016085925_texture.fbx",
+          "bytes": 68428012,
+          "sha256": "97fe3d9ca232dbb132dbeb8b3500e33d756ad93e1b0f631873baf442bb71650a",
+          "gitBlob": "9bf53d3b38287ac112810eda3145d9347e9066a7",
+          "storage": "git-lfs"
+        },
+        {
+          "path": "meshy/Meshy_AI_Ember_Tiled_Turret_Ho_1016085925/Meshy_AI_Ember_Tiled_Turret_Ho_1016085925_texture.png",
+          "bytes": 8502729,
+          "sha256": "1240e7d56427a6677a608991a3830a25112b0631fe3979c30238485b3ff2ca0a",
+          "gitBlob": "e3435d97578c0d22c020a0e6b4ec2d35ab96c87e",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_Ember_Tiled_Turret_Ho_1016085925/Meshy_AI_Ember_Tiled_Turret_Ho_1016085925_texture_emission.png",
+          "bytes": 32424,
+          "sha256": "01546b90f23bb0115d2ef0b66f72098fc337d4aecf1fc2f73cc1932cedeea739",
+          "gitBlob": "a2879e59be158fe7911446a974f12aac48965a6d",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_Ember_Tiled_Turret_Ho_1016085925/Meshy_AI_Ember_Tiled_Turret_Ho_1016085925_texture_metallic.png",
+          "bytes": 208370,
+          "sha256": "766151c9900ebf0e5cc0e94815a0ce4eea99d0315c100b081114fb9f47a031aa",
+          "gitBlob": "ac194092d765810b416de7b77a97a6297a6f2080",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_Ember_Tiled_Turret_Ho_1016085925/Meshy_AI_Ember_Tiled_Turret_Ho_1016085925_texture_normal.png",
+          "bytes": 7709216,
+          "sha256": "0f5bb285c375254e63ca9685eb754dcf9ee834cf289453a9aac68295619c1af0",
+          "gitBlob": "5153d494f0d2f7be207ccf2658eb8912671859f0",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_Ember_Tiled_Turret_Ho_1016085925/Meshy_AI_Ember_Tiled_Turret_Ho_1016085925_texture_roughness.png",
+          "bytes": 1069862,
+          "sha256": "7c3831ab32e7ed42e707fbc4b2f01b663e40281323905ad7a08196ff7cda045c",
+          "gitBlob": "62d01d66ef9a20cac66802c9112b1f65eb43ae4a",
+          "storage": "git"
+        }
+      ]
+    },
+    {
+      "sourceArchive": "Meshy_AI_High_detail_fantasy__1016090651_texture_fbx.zip",
+      "sourceBytes": 89745013,
+      "sourceGitBlob": "898d41d766f8412df239b99c5afe0b94ad06d397",
+      "folder": "meshy/Meshy_AI_High_detail_fantasy__1016090651",
+      "files": [
+        {
+          "path": "meshy/Meshy_AI_High_detail_fantasy__1016090651/Meshy_AI_High_detail_fantasy__1016090651_texture.fbx",
+          "bytes": 75204524,
+          "sha256": "4c2dbfdd72761ce69d386362eef5867e01e0d13161ce6ce20775ceeb055dda59",
+          "gitBlob": "d67b3cb021fd2af4c34a2be879de4fe9163e1a3f",
+          "storage": "git-lfs"
+        },
+        {
+          "path": "meshy/Meshy_AI_High_detail_fantasy__1016090651/Meshy_AI_High_detail_fantasy__1016090651_texture.png",
+          "bytes": 5339142,
+          "sha256": "24b1c32bc55fe3320afff85f87fec6f0ab4b0e21ed3e979b99ff11010a66265c",
+          "gitBlob": "6ec48b898b867ec9d31933da1f5d03bb51fe8657",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_High_detail_fantasy__1016090651/Meshy_AI_High_detail_fantasy__1016090651_texture_metallic.png",
+          "bytes": 819746,
+          "sha256": "52c1b6d27a34eede3b3b45fb083ffc3fc0eda480c6bce50a7f523149513265a6",
+          "gitBlob": "d6611bfa8fe40d47787bc8e4852feec8bfdaa32c",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_High_detail_fantasy__1016090651/Meshy_AI_High_detail_fantasy__1016090651_texture_normal.png",
+          "bytes": 6810805,
+          "sha256": "69a56627dc8c1a18eab52a29fb642bd859c381d1c7b5187228d7eae4df0dce5b",
+          "gitBlob": "e52ef7d9fed22064fe2e18191dbb0114252a1444",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_High_detail_fantasy__1016090651/Meshy_AI_High_detail_fantasy__1016090651_texture_roughness.png",
+          "bytes": 1569292,
+          "sha256": "ecddeccc4357a7a42a5ebd8fdeb7b4297a98168025c61396060f4ff1fdca9da3",
+          "gitBlob": "53bb44c858ce434940b3aaed57831171276e5a5f",
+          "storage": "git"
+        }
+      ]
     }
   ]
 }
