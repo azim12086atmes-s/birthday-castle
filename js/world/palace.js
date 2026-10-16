@@ -154,16 +154,12 @@ const drumTex = () => pair((g, glow) => {
 }, 128, 256);
 // purple dome with a gold rib on each tile edge and a gold neck ring at the foot
 function domeTex() {
+  // plain dark pink (owner, 12 Oct): a deep rose bulb, darker at the gore edges, a soft sheen
   const [c, g] = cv(64, 256);
-  const lg = g.createLinearGradient(0, 0, 64, 0); lg.addColorStop(0, '#1c0634'); lg.addColorStop(0.35, '#4e1e86'); lg.addColorStop(0.5, '#7040b0'); lg.addColorStop(0.65, '#4e1e86'); lg.addColorStop(1, '#1c0634');
+  const lg = g.createLinearGradient(0, 0, 64, 0); lg.addColorStop(0, '#6a1638'); lg.addColorStop(0.35, '#a02a5a'); lg.addColorStop(0.5, '#b8386a'); lg.addColorStop(0.65, '#a02a5a'); lg.addColorStop(1, '#6a1638');
   g.fillStyle = lg; g.fillRect(0, 0, 64, 256);
-  const vg = g.createLinearGradient(0, 0, 0, 256); vg.addColorStop(0, 'rgba(255,255,255,0.1)'); vg.addColorStop(0.5, 'rgba(255,255,255,0)'); vg.addColorStop(1, 'rgba(20,0,40,0.25)');
+  const vg = g.createLinearGradient(0, 0, 0, 256); vg.addColorStop(0, 'rgba(255,220,235,0.12)'); vg.addColorStop(0.55, 'rgba(255,255,255,0)'); vg.addColorStop(1, 'rgba(40,0,20,0.28)');
   g.fillStyle = vg; g.fillRect(0, 0, 64, 256);
-  g.fillStyle = 'rgba(255,240,255,0.22)'; g.fillRect(24, 0, 3, 256);                       // a glossy streak down each gore
-  g.fillStyle = '#c9963a'; g.fillRect(0, 0, 4, 256); g.fillRect(60, 0, 4, 256);
-  g.fillStyle = '#ffe08a'; g.fillRect(0, 0, 2, 256); g.fillRect(62, 0, 2, 256);           // slim bright gold ribs
-  g.fillStyle = '#e2b44c'; g.fillRect(0, 230, 64, 26); g.fillStyle = '#ffe08a'; g.fillRect(0, 232, 64, 2);
-  for (let x = 4; x < 64; x += 12) { g.fillStyle = '#e2b44c'; g.beginPath(); g.moveTo(x, 230); g.lineTo(x + 6, 214); g.lineTo(x + 12, 230); g.fill(); }   // gold petal crest at the foot
   return tex(c);
 }
 // roof garden (64 m tile): square beds framed by 3 m paths with gold star inlays
@@ -253,15 +249,15 @@ function drawDoor(g, glow, W, Hh, head = 0) {
   // fractured glass: a jittered grid split into shards, cobalt to violet, rose light at the foot
   const nx = 26, ny = 46, pts = [];
   for (let j = 0; j <= ny; j++) for (let i = 0; i <= nx; i++) pts.push([i * W / nx + (i % nx ? (R2() - 0.5) * 7 : 0), j * Hh / ny + (j % ny ? (R2() - 0.5) * 7 : 0)]);
-  const blues = ['#131c66', '#1a2680', '#1f3196', '#2440ae', '#2c4cc0', '#3a3aa8', '#1c3aa0', '#3560d0'];
-  const roses = ['#b8a4e8', '#d4b0e6', '#e8c0e6', '#c6b8f0', '#f0d0ea', '#9c90e0'];
+  const blues = ['#0c0f4a', '#12185e', '#161e70', '#1a2482', '#202c94', '#24247e', '#141e6c', '#28349e'];   // indigo, dark blue (owner, 12 Oct)
+  const roses = ['#5a4ab8', '#6a54c0', '#7a60c8', '#4a44a8', '#8a6ad0', '#3c3a9c'];
   for (let j = 0; j < ny; j++) for (let i = 0; i < nx; i++) {
     const A = pts[j * (nx + 1) + i], B = pts[j * (nx + 1) + i + 1], C = pts[(j + 1) * (nx + 1) + i], D = pts[(j + 1) * (nx + 1) + i + 1];
-    const foot = Math.max(0, (j / ny - 0.58) / 0.42);
+    const foot = Math.max(0, (j / ny - 0.72) / 0.28) * 0.6;
     for (const tri of (R2() < 0.5 ? [[A, B, D], [A, D, C]] : [[A, B, C], [B, D, C]])) {
       const useRose = R2() < foot * 1.1, pal = useRose ? roses : blues, col = pal[Math.floor(R2() * pal.length)];
       g.beginPath(); g.moveTo(...tri[0]); g.lineTo(...tri[1]); g.lineTo(...tri[2]); g.closePath();
-      g.fillStyle = glow ? (useRose ? '#a080c0' : '#101850') : col; g.fill();
+      g.fillStyle = glow ? (useRose ? '#4a3c90' : '#080c38') : col; g.fill();
       if (!glow) { g.strokeStyle = 'rgba(12,16,60,0.55)'; g.lineWidth = 0.8; g.stroke(); }
     }
   }
@@ -280,16 +276,16 @@ function drawDoor(g, glow, W, Hh, head = 0) {
   // the light from the centre: a warm rose-white bloom at the foot of the tree, spreading up and
   // out through the glass and fading toward the edges
   {
-    const cx = X(0), cy = Y(26), r = 62 * kx;
+    const cx = X(0), cy = Y(22), r = 38 * kx;
     g.save(); g.globalCompositeOperation = 'lighter';
     const rg = g.createRadialGradient(cx, cy, 0, cx, cy, r);
-    rg.addColorStop(0, glow ? 'rgba(255,240,250,1)' : 'rgba(255,236,246,0.7)'); rg.addColorStop(0.18, glow ? 'rgba(255,200,236,0.7)' : 'rgba(255,200,236,0.42)');
-    rg.addColorStop(0.45, glow ? 'rgba(170,140,255,0.45)' : 'rgba(150,130,255,0.28)'); rg.addColorStop(1, 'rgba(60,60,200,0)');
+    rg.addColorStop(0, glow ? 'rgba(255,240,250,0.8)' : 'rgba(255,236,246,0.5)'); rg.addColorStop(0.18, glow ? 'rgba(220,190,255,0.4)' : 'rgba(220,200,255,0.25)');
+    rg.addColorStop(0.45, glow ? 'rgba(90,90,220,0.2)' : 'rgba(80,80,200,0.12)'); rg.addColorStop(1, 'rgba(30,30,140,0)');
     g.fillStyle = rg; g.fillRect(0, 0, W, Hh);
     for (let i = 0; i < 26; i++) {                                         // rays fanning up from the bloom
       const a = -Math.PI / 2 + (i / 25 - 0.5) * 2.6, len = (0.55 + R2() * 0.45) * r;
       const lg = g.createLinearGradient(cx, cy, cx + Math.cos(a) * len, cy + Math.sin(a) * len);
-      lg.addColorStop(0, 'rgba(255,230,250,0.35)'); lg.addColorStop(1, 'rgba(255,230,250,0)');
+      lg.addColorStop(0, 'rgba(230,220,255,0.18)'); lg.addColorStop(1, 'rgba(230,220,255,0)');
       g.strokeStyle = lg; g.lineWidth = 2 + R2() * 3; g.beginPath(); g.moveTo(cx, cy); g.lineTo(cx + Math.cos(a) * len, cy + Math.sin(a) * len); g.stroke();
     }
     g.restore();
@@ -476,6 +472,43 @@ function carveTex() {
   g.fillStyle = '#fbf1ec'; g.fillRect(0, 4, 256, 2); g.fillRect(0, 58, 256, 2);
   return tex(c);
 }
+// gold brocade (owner, 12 Oct): an embroidered band of gold arabesques, fleurons and seed pearls,
+// with small rose and cobalt jewels; 8 m x 2 m a tile
+function brocadeTex() {
+  const [c, g] = cv(256, 64);
+  const lg = g.createLinearGradient(0, 0, 0, 64); lg.addColorStop(0, '#a87a28'); lg.addColorStop(0.5, '#d9a842'); lg.addColorStop(1, '#a87a28');
+  g.fillStyle = lg; g.fillRect(0, 0, 256, 64);
+  g.strokeStyle = '#ffe9a8'; g.lineWidth = 2.4; g.lineCap = 'round';
+  for (let x = 0; x < 256; x += 32) {
+    g.beginPath(); g.moveTo(x, 32); g.bezierCurveTo(x + 8, 12, x + 24, 12, x + 32, 32); g.bezierCurveTo(x + 24, 52, x + 8, 52, x, 32); g.stroke();   // linked ogee cartouches
+    g.beginPath(); g.arc(x + 16, 32, 5, 0, Math.PI * 2); g.fillStyle = (x / 32) % 2 ? '#d0406e' : '#2a3ab0'; g.fill(); g.strokeStyle = '#fff2c0'; g.lineWidth = 1.6; g.stroke(); g.strokeStyle = '#ffe9a8'; g.lineWidth = 2.4;
+    for (const [dx, dy] of [[16, 15], [16, 49]]) { g.beginPath(); g.moveTo(x + dx, dy - 5); g.lineTo(x + dx + 3, dy); g.lineTo(x + dx, dy + 5); g.lineTo(x + dx - 3, dy); g.closePath(); g.fillStyle = '#fff2c0'; g.fill(); }
+  }
+  g.fillStyle = '#fff6dc'; for (let x = 2; x < 256; x += 6) { g.beginPath(); g.arc(x, 4, 1.6, 0, Math.PI * 2); g.arc(x, 60, 1.6, 0, Math.PI * 2); g.fill(); }   // seed pearls
+  g.fillStyle = '#8a5e1a'; g.fillRect(0, 0, 256, 1.5); g.fillRect(0, 62.5, 256, 1.5);
+  return tex(c);
+}
+// rose petal relief for the spandrels (owner, 12 Oct): full carved roses in pink, scattered petals
+// and gold tendrils on blush marble; 10 m a tile
+function petalTex() {
+  const [c, g] = cv(256, 256);
+  marble(g, 256, 256, '#f6dcdc', 'rgba(200,130,150,0.18)');
+  const P = rng(41);
+  g.strokeStyle = '#e2b44c'; g.lineWidth = 1.6;
+  for (let i = 0; i < 9; i++) { const x = P() * 256, y = P() * 256; g.beginPath(); g.moveTo(x, y); g.bezierCurveTo(x + 30, y - 20, x + 40, y + 30, x + 70, y + 8); g.stroke(); }
+  for (let i = 0; i < 70; i++) { const x = P() * 256, y = P() * 256, a = P() * 6.3; g.save(); g.translate(x, y); g.rotate(a); g.fillStyle = ['#e89aaa', '#f4b4c2', '#d97f94'][i % 3]; g.beginPath(); g.ellipse(0, 0, 5, 2.6, 0, 0, Math.PI * 2); g.fill(); g.restore(); }
+  for (const [x, y, r] of [[64, 64, 26], [192, 64, 20], [128, 160, 30], [36, 200, 18], [220, 200, 24]]) for (const ox of [-256, 0, 256]) for (const oy of [-256, 0, 256]) carvedRose(g, x + ox, y + oy, r);
+  return tex(c);
+}
+// the gable medallion: a cobalt quatrefoil with a gold eight-point star, gold rim
+function medallionTex() {
+  const [c, g] = cv(256, 256);
+  const rg = g.createRadialGradient(128, 128, 0, 128, 128, 128); rg.addColorStop(0, '#3a52d8'); rg.addColorStop(0.7, '#1c2a96'); rg.addColorStop(1, '#121c6a');
+  g.fillStyle = rg; g.fillRect(0, 0, 256, 256);
+  g.strokeStyle = 'rgba(226,180,76,0.5)'; g.lineWidth = 2; for (let i = 0; i < 16; i++) { const a = (i / 16) * Math.PI * 2; g.beginPath(); g.moveTo(128, 128); g.lineTo(128 + Math.cos(a) * 128, 128 + Math.sin(a) * 128); g.stroke(); }
+  star8(g, 128, 128, 92, '#e8b84a'); star8(g, 128, 128, 80, '#ffd86a'); star8(g, 128, 128, 26, '#fff2c0');
+  return tex(c);
+}
 function ashlarTex() {
   const [c, g] = cv(256, 256);
   marble(g, 256, 256, '#f8ebe6', 'rgba(200,140,150,0.22)');
@@ -622,7 +655,7 @@ export function createPalace(scene, preset, { makePortal } = {}) {
     lancet: tile(lancetT, '#b0a8ff', { side: THREE.DoubleSide }),
     lancetDark: tile(lancetT, '#3a46c8', { side: THREE.DoubleSide }),
     starwin: tile(starWin, '#8a90ff', { side: THREE.DoubleSide }),     // the small arched windows: dark cobalt
-    gate: tile(gateTex(), '#ffc890', { side: THREE.DoubleSide }),
+    gate: tile(gateTex(), '#9a9cff', { side: THREE.DoubleSide }),
     dome: glossy(toon('#ffffff', { map: dome, vertexColors: true, emissive: '#2a1040', emissiveIntensity: 0.4 }), 1),
     gold: glossy(toon('#ffffff', { vertexColors: true, emissive: '#6a4a10', emissiveIntensity: 0.55 }), 0.7),
     garden: nightGrade(new THREE.MeshLambertMaterial({ map: garden, vertexColors: true, emissive: '#10202a', emissiveIntensity: 0.4 }), 'roof-garden'),
@@ -631,6 +664,9 @@ export function createPalace(scene, preset, { makePortal } = {}) {
     rose: new THREE.MeshBasicMaterial({ map: roseWindowTexture(), toneMapped: false }),
     rose12: toon('#ffffff', { map: rose12Tex(), emissive: '#8a7cff', emissiveIntensity: 0.5, vertexColors: true }),
     crystal: am.crystal,
+    brocade: glossy(toon('#ffffff', { map: brocadeTex(), vertexColors: true, emissive: '#5a3a10', emissiveIntensity: 0.5 }), 0.6),
+    petal: toon('#ffffff', { map: petalTex(), vertexColors: true, emissive: '#2a1838', emissiveIntensity: 0.3 }),
+    medallion: toon('#ffffff', { map: medallionTex(), vertexColors: true, emissive: '#3040c0', emissiveIntensity: 0.45 }),
     carve: toon('#ffffff', { map: carveTex(), vertexColors: true, emissive: '#2a1838', emissiveIntensity: 0.3 }),
     band: toon('#ffffff', { map: archBandTex(), vertexColors: true, emissive: '#2a2050', emissiveIntensity: 0.35 }),
     ashlar: toon('#ffffff', { map: ashlarTex(), vertexColors: true, emissive: '#2a1838', emissiveIntensity: 0.3 }),
@@ -645,7 +681,7 @@ export function createPalace(scene, preset, { makePortal } = {}) {
   };
   // drawn-metre lists (inside the scaled body)
   const water = [], falls = [], sprays = [], fountains = [], foam = [];
-  const spirelets = [], cypress = [], blossoms = [], clumps = [], hanging = [], oranges = [];
+  const spirelets = [], cypress = [], blossoms = [], clumps = [], hanging = [], oranges = [], halosD = [];
   const solids = [];                                                  // colliders in drawn metres
   const taken = [];                                                   // [x, z, r] kept clear of trees and turrets
   const clear = (x, z, r) => taken.every(([tx, tz, tr]) => Math.hypot(x - tx, z - tz) > tr + r);
@@ -956,21 +992,18 @@ export function createPalace(scene, preset, { makePortal } = {}) {
   // A001: flowing glass in a deep rose-gold reveal, stepped white and rose orders, a gold hood
   // mould, a central mullion with gilded transoms, jamb colonnettes with gold capitals, a sill
   const greatWindow = (x, y, z, w, h) => {
+    const hs = h - w * 0.866, kq = w / 35;
     kit.add('lancet', archPanel(w, h).translate(x, y, z - 1.2), '#ffffff');
     kit.add('ivory', archFrameGeometry(w, h, 0.9, 2.4).translate(x, y, z - 1.4), '#e0a888');                // the rose-gold reveal
     kit.add('ivory', archFrameGeometry(w + 1.8, h + 1.4, 1.4, 1.6).translate(x, y - 0.2, z), PEARL);       // first order
     kit.add('ivory', archFrameGeometry(w + 4.6, h + 3.4, 1.3, 1.2).translate(x, y - 0.4, z + 0.4), ROSE);  // second order
     kit.add('gold', new THREE.TubeGeometry(pointedArchPath(w + 7.4, h + 5), 40, 0.55, 5, false).translate(x, y - 0.6, z + 1.4), GOLD);   // hood mould
     kit.add('gold', new THREE.TubeGeometry(pointedArchPath(w - 0.3, h - 0.2), 40, 0.32, 4, false).translate(x, y, z - 0.7), GOLD);      // gold trim
-    const hs = h - w * 0.866, kq = w / 35;
     for (const sd of [-1, 1]) kit.add('ivory', box(1.6 * kq, 37 * kq, 1.2, x + sd * 5.6 * kq, y, z - 0.8), PEARL);   // stone mullions between the three lights
     kit.add('ivory', new THREE.TorusGeometry(11.4 * kq, 0.9 * kq, 5, 28).translate(x, y + 52 * (h / 69), z - 0.7), PEARL);   // the rose's stone ring
     kit.add('gold', new THREE.TorusGeometry(10.4 * kq, 0.35, 4, 28).translate(x, y + 52 * (h / 69), z - 0.3), GOLD);
     // (no gable over these in the owner's hi-res elevation: the arch rises into carved rose spandrels)
-    for (const sd of [-1, 1]) {                                                                         // a carved rose in each spandrel
-      kit.add('rose12', new THREE.CircleGeometry(3.4, 16).translate(x + sd * (w / 2 + 2.4), y + h - 4, z + 0.3), '#ffd8e0');
-      kit.add('gold', new THREE.TorusGeometry(3.7, 0.3, 4, 16).translate(x + sd * (w / 2 + 2.4), y + h - 4, z + 0.5), GOLD);
-    }
+    kit.add('petal', scaleUV(new THREE.PlaneGeometry(w + 9.6, 136.4 - y - hs).translate(x, (136.4 + y + hs) / 2, z - 1.3), (w + 9.6) / 10, (136.4 - y - hs) / 10), '#ffffff');   // rose petal relief in the spandrels (owner, 12 Oct)
     kit.add('gold', finialGeo(1.4).translate(x, y + h + 5.6, z + 1.4), GOLD);                           // a gold fleuron at the apex
     for (const sd of [-1, 1]) {
       kit.add('ivory', cyl(0.8, 0.8, hs, 8, x + sd * (w / 2 + 2.6), y, z + 0.8), PEARL);                  // colonnette
@@ -1034,41 +1067,60 @@ export function createPalace(scene, preset, { makePortal } = {}) {
     const hw = ORD[4].w / 2 + 1.8, hh = ORD[4].h + 2.2;
     // the gable rises as a tall pointed arch, its sides swelling out before they meet (owner's hi-res elevation)
     const sh = new THREE.Shape(); sh.moveTo(-PW, SILL - 2); sh.lineTo(PW, SILL - 2); sh.lineTo(PW, GB);
-    sh.quadraticCurveTo(PW * 0.96, GB + (GA - GB) * 0.62, 0, GA); sh.quadraticCurveTo(-PW * 0.96, GB + (GA - GB) * 0.62, -PW, GB); sh.lineTo(-PW, SILL - 2);
+    const GH2 = GA - GB;                                                                                 // an ogee: swelling out, then drawn in to a fine point
+    sh.bezierCurveTo(PW * 0.98, GB + GH2 * 0.55, PW * 0.12, GA - GH2 * 0.25, 0, GA); sh.bezierCurveTo(-PW * 0.12, GA - GH2 * 0.25, -PW * 0.98, GB + GH2 * 0.55, -PW, GB); sh.lineTo(-PW, SILL - 2);
     sh.holes.push(new THREE.Path(pointedArchShape(hw * 2, hh).getPoints(24).map((p) => new THREE.Vector2(p.x, p.y + SILL - 0.4))));
     const slab = new THREE.ExtrudeGeometry(sh, { depth: 3, bevelEnabled: false, curveSegments: 16 });
     const p = slab.attributes.position, uv = slab.attributes.uv;
     for (let i = 0; i < p.count; i++) uv.setXY(i, (p.getX(i) + PW) / (PW * 2), (p.getY(i) - GB) / (GA - GB));
     kit.add('gable', slab.translate(0, 0, PF - 3), '#ffffff');
+    {                                                                                                   // rose petal relief filling the tympanum (owner, 12 Oct: "still detailing required")
+      const ins = new THREE.Shape(), IW = PW - 7, y0 = GB - 3, y1 = GA - 10;
+      ins.moveTo(-IW, y0); ins.lineTo(IW, y0);
+      ins.bezierCurveTo(IW * 0.98, y0 + (y1 - y0) * 0.55, IW * 0.12, y1 - (y1 - y0) * 0.25, 0, y1); ins.bezierCurveTo(-IW * 0.12, y1 - (y1 - y0) * 0.25, -IW * 0.98, y0 + (y1 - y0) * 0.55, -IW, y0);
+      const pg = new THREE.ShapeGeometry(ins, 20), pp = pg.attributes.position, pu = pg.attributes.uv;
+      for (let i = 0; i < pp.count; i++) pu.setXY(i, pp.getX(i) / 10, pp.getY(i) / 10);
+      kit.add('petal', pg.translate(0, 0, PF + 0.08), '#ffffff');
+    }
     kit.add('band', archRibbon(hw * 2, hh, 3.6, 4.5).translate(0, SILL - 0.4, PF + 0.06), '#ffffff');                                      // the carved band of curved gold strokes
     kit.add('gold', new THREE.TubeGeometry(pointedArchPath(hw * 2 - 0.2, hh - 0.2), 48, 0.6, 6, false).translate(0, SILL - 0.4, PF + 0.3), GOLD);   // inner gold edge
     kit.add('gold', new THREE.TubeGeometry(pointedArchPath(hw * 2 + 7.4, hh + 4.6), 48, 0.85, 6, false).translate(0, SILL - 0.6, PF + 0.4), GOLD);   // hood mould
     for (const sd of [-1, 1]) kit.add('gold', box(6.5, 1.4, 4, sd * 42.5, GB - 1.4, PF - 1.6), GOLD);                                              // string course at the gable foot
-    const rake = (sd, inset, z) => new THREE.QuadraticBezierCurve3(new THREE.Vector3(sd * (PW - inset), GB - 1, z), new THREE.Vector3(sd * (PW * 0.96 - inset), GB + (GA - GB) * 0.62 - inset * 0.4, z), new THREE.Vector3(0, GA - inset * 1.6, z));
+    const rake = (sd, inset, z) => new THREE.CubicBezierCurve3(new THREE.Vector3(sd * (PW - inset), GB - 1, z), new THREE.Vector3(sd * (PW * 0.98 - inset), GB + GH2 * 0.55 - inset * 0.3, z), new THREE.Vector3(sd * Math.max(0, PW * 0.12 - inset * 0.6), GA - GH2 * 0.25 - inset * 1.2, z), new THREE.Vector3(0, GA - inset * 1.6, z));
     for (const sd of [-1, 1]) {
-      kit.add('gold', new THREE.TubeGeometry(rake(sd, 0, PF + 0.4), 24, 1.4, 6, false), GOLD);                 // gold raking moulding
-      kit.add('ivory', new THREE.TubeGeometry(rake(sd, 3.4, PF + 0.4), 20, 0.8, 5, false), PEARL);            // inner ivory moulding
-      kit.add('gold', new THREE.TubeGeometry(rake(sd, 5.4, PF + 0.3), 20, 0.32, 4, false), GOLD);            // inner gold line
-      const c = rake(sd, -1.2, PF + 0.2);
-      for (let t = 0.06; t < 0.95; t += 0.075) { const q = c.getPoint(t); spirelets.push([q.x, q.y + 0.6, q.z, 0.42, 0]); }   // crockets up the rakes
+      kit.add('gold', new THREE.TubeGeometry(rake(sd, -1.6, PF + 0.3), 32, 0.45, 5, false), GOLD);             // outer gold edge
+      kit.add('gold', new THREE.TubeGeometry(rake(sd, 0, PF + 0.4), 32, 1.4, 6, false), GOLD);                 // gold raking moulding
+      kit.add('ivory', new THREE.TubeGeometry(rake(sd, 3.2, PF + 0.6), 32, 1.7, 6, false), PEARL);            // the thick ivory moulding
+      kit.add('gold', new THREE.TubeGeometry(rake(sd, 5.6, PF + 0.5), 32, 0.4, 4, false), GOLD);             // inner gold edge
+      const c = rake(sd, -2.8, PF + 0.2);
+      for (let t = 0.05; t < 0.95; t += 0.06) {                                                          // gold leaf crockets up the rakes
+        const q = c.getPoint(t), tg = c.getTangent(t), a = Math.atan2(tg.y, tg.x);
+        kit.add('gold', new THREE.OctahedronGeometry(1.5, 0).scale(1.7, 0.8, 0.7).rotateZ(a + sd * 0.5).translate(q.x, q.y, q.z + 0.4), GOLD);
+        kit.add('gold', new THREE.SphereGeometry(0.55, 5, 3).translate(q.x - tg.y * sd * 1.2, q.y + Math.abs(tg.x) * 1.2, q.z + 0.4), GOLD);
+      }
     }
     for (const sd of [-1, 1]) for (const [t, r] of [[0.32, 2.2], [0.62, 1.8]]) {                        // carved gold scrolls in the tympanum
       const q = rake(sd, 9, PF + 0.3).getPoint(t);
       kit.add('gold', new THREE.TorusGeometry(r, 0.3, 4, 14, Math.PI * 1.5).rotateZ(sd > 0 ? 0 : Math.PI).translate(q.x, q.y, PF + 0.3), GOLD);
     }
-    kit.add('gold', ring(2.6, 1.6, GA - 1, 12), GOLD);                                                    // the gable finial
-    kit.add('gold', needle(1.8, 14, 8).translate(0, GA + 0.6, PF - 0.6), GOLD);
-    kit.add('gold', finialGeo(3.4).translate(0, GA + 13, PF - 0.6), GOLD);
+    kit.add('gold', ring(2.8, 1.6, GA - 1, 12), GOLD);                                                    // the tall crocketed gold finial
+    kit.add('gold', needle(2.4, 22, 8).translate(0, GA + 0.6, PF - 0.6), GOLD);
+    for (const [dy, r] of [[5, 2.4], [10, 1.8], [15, 1.2]]) for (const sd of [-1, 1]) kit.add('gold', new THREE.OctahedronGeometry(0.8, 0).scale(1.6, 0.8, 0.7).rotateZ(sd * 0.5).translate(sd * r, GA + dy, PF - 0.6), GOLD);
+    kit.add('gold', finialGeo(4).translate(0, GA + 20, PF - 0.6), GOLD);
     for (const sd of [-1, 1]) {                                                                           // P02-5C: crystal pendants off the star's arms
-      kit.add('gold', box(0.25, 2.4, 0.25, sd * 1.9, GA + 15.2, PF - 0.6), GOLD);
-      kit.add('crystal', new THREE.OctahedronGeometry(0.7, 0).scale(0.7, 1.5, 0.7).translate(sd * 1.9, GA + 14.4, PF - 0.6), '#b8c8ff');
+      kit.add('gold', box(0.25, 2.4, 0.25, sd * 2.2, GA + 22.4, PF - 0.6), GOLD);
+      kit.add('crystal', new THREE.OctahedronGeometry(0.7, 0).scale(0.7, 1.5, 0.7).translate(sd * 2.2, GA + 21.6, PF - 0.6), '#b8c8ff');
     }
     kit.add('ivory', lotusGeo().scale(4.2, 4.6, 3).translate(0, SILL - 0.6 + hh + 4.6 - 1.4, PF + 1.2), '#fbe8e2');   // A003 lotus keystone
     kit.add('gold', lathe([[0, -0.2], [0.55, -0.12], [0.75, 0.08], [0, 0.12]], 12).scale(4.2, 4.6, 3).translate(0, SILL - 0.6 + hh + 4.6 - 1.4, PF + 1.2), GOLD);
     {                                                                                                   // P01-02 twelve-petal rose in the tympanum
-      const ry = GB + 17, rr = 7.4;
-      kit.add('rose12', new THREE.CircleGeometry(rr, 32).translate(0, ry, PF + 0.15), '#ffffff');
-      kit.add('gold', new THREE.TorusGeometry(rr + 0.3, 0.45, 6, 32).translate(0, ry, PF + 0.3), GOLD);
+      let ry = GB + 23, rr = 9.6;                                                                        // the cobalt medallion with its gold star, in a lobed ivory frame
+      kit.add('medallion', new THREE.CircleGeometry(rr, 40).translate(0, ry, PF + 0.15), '#ffffff');
+      kit.add('gold', new THREE.TorusGeometry(rr + 0.2, 0.45, 6, 40).translate(0, ry, PF + 0.4), GOLD);
+      kit.add('ivory', new THREE.TorusGeometry(rr + 1.3, 0.9, 6, 40).translate(0, ry, PF + 0.4), PEARL);
+      for (let i = 0; i < 8; i++) { const a = (i / 8) * Math.PI * 2; kit.add('ivory', new THREE.TorusGeometry(2.4, 0.7, 4, 14).translate(Math.cos(a) * (rr + 3.6), ry + Math.sin(a) * (rr + 3.6), PF + 0.3), PEARL); kit.add('gold', new THREE.SphereGeometry(0.6, 5, 3).translate(Math.cos(a) * (rr + 3.6), ry + Math.sin(a) * (rr + 3.6), PF + 0.6), GOLD); }
+      kit.add('gold', new THREE.TorusGeometry(rr + 6.4, 0.35, 4, 48).translate(0, ry, PF + 0.3), GOLD);
+      rr += 4.6;
       for (const [dx, dy] of [[0, 1], [0, -1], [1, 0], [-1, 0]]) kit.add('gold', new THREE.OctahedronGeometry(0.9, 0).scale(dx ? 1.3 : 0.7, dy ? 1.3 : 0.7, 0.4).translate(dx * (rr + 1.4), ry + dy * (rr + 1.4), PF + 0.3), GOLD);
     }
     for (const sd of [-1, 1]) kit.add('gold', lathe([[0, 0], [0.9, 0.6], [0.5, 2.6], [0, 3.6]], 6).translate(sd * 2.6, GA + 3, PF - 0.6), GOLD);
@@ -1132,7 +1184,7 @@ export function createPalace(scene, preset, { makePortal } = {}) {
   }
   // the light from the door spilling out over the jambs and the landing, fading as it spreads
   {
-    const spill = new THREE.Mesh(new THREE.PlaneGeometry(1, 1), additive('#ffd8f0', { map: glowTexture(), opacity: 0.3, depthWrite: false }));
+    const spill = new THREE.Mesh(new THREE.PlaneGeometry(1, 1), additive('#c8c0ff', { map: glowTexture(), opacity: 0.12, depthWrite: false }));
     spill.scale.set(GW * 1.9, GH * 1.25, 1); spill.position.set(0, SILL + 26, GZ + 2.2); spill.name = 'gate-light'; body.add(spill);
     const pool = new THREE.Mesh(new THREE.PlaneGeometry(1, 1).rotateX(-Math.PI / 2), additive('#ffd0ec', { map: glowTexture(), opacity: 0.5, depthWrite: false }));
     pool.scale.set(GW * 1.6, 1, 30); pool.position.set(0, SILL + 0.5, GZ + 12); body.add(pool);
@@ -1149,40 +1201,68 @@ export function createPalace(scene, preset, { makePortal } = {}) {
     return { pivot, s: sd };
   });
 
-  // ---- the cascade court: a three-basin water stair between twin flights, down to the upper terrace ----
+  // ---- the cascade court: a three-basin water stair between curved sideways stairs (owner, 12 Oct):
+  // from the gate landing each flight sweeps outward and down to the upper terrace between carved
+  // balustrades with gold-urned newels and lamps; planted rose slopes fill the ground in between ----
   const flightLen = Math.hypot(CZ1 - CZ0, SILL), flightA = Math.atan2(SILL, CZ1 - CZ0);
-  for (const [fx, fhw] of CASCADE.flights) {
-    kit.add('steps', flight(fx / S, fhw / S, CZ0, SILL, CZ1, 0, 0.45 / S), '#ffffff');
-    const runner = flight(fx / S, fhw / S * 0.22, CZ0, SILL + 0.06, CZ1, 0.06, 1e9);
-    kit.add('ivory', runner, '#f4c6d0');                                                     // the rose runner
-    for (let k = 0; k < 4; k++) {                                                              // the foot fans out in curved steps
-      const rr = fhw / S + 3 + (3 - k) * 2.6;
-      kit.add('steps', scaleUV(new THREE.CylinderGeometry(rr, rr, 0.9, 20, 1, false, -Math.PI / 2, Math.PI).translate(fx / S, k * 0.9 + 0.45, CZ1), rr / 2, 1), '#ffffff');
-      kit.add('gold', new THREE.TorusGeometry(rr, 0.12, 3, 20, Math.PI).rotateX(Math.PI / 2).rotateY(Math.PI / 2 * 0).translate(fx / S, k * 0.9 + 0.9, CZ1), GOLD);
-    }
-    for (let t = 1 / 8; t < 0.99; t += 1 / 8) {                                               // half-landings: a moulded nosing with a gold edge every few steps
-      const y = SILL * (1 - t), z = CZ0 + (CZ1 - CZ0) * t;
-      kit.add('ivory', box(fhw / S * 2, 0.9, 2.4, fx / S, y - 0.4, z), PEARL);
-      kit.add('gold', box(fhw / S * 2, 0.25, 0.4, fx / S, y + 0.4, z + 1.1), GOLD);
-    }
-    for (const sd of [-1, 1]) kit.add('gold', flight(fx / S + sd * fhw / S * 0.36, 0.35, CZ0, SILL + 0.1, CZ1, 0.1, 1e9), GOLD);
-  }
-  for (const sd of [-1, 1]) for (const rx of [sd * (CW + 0.5), sd * 95.5]) for (let t = 0; t <= 1.001; t += 0.25) {   // newel pedestals with urns
-    const y = SILL * (1 - t), z = CZ0 + (CZ1 - CZ0) * t;
-    kit.add('ivory', box(3, 4.5, 3, rx, y, z), PEARL);
-    kit.add('gold', lathe([[0, 0], [1.6, 1], [1, 2.6], [1.9, 4], [0, 5.2]], 10).translate(rx, y + 4.5, z), GOLD);
-    clumps.push([rx, y + 9, z, 3, t * 9]);
-  }
+  const rampY = (z) => SILL * (1 - THREE.MathUtils.clamp((z - CZ0) / (CZ1 - CZ0), 0, 1));
+  const SHW = 13, NSEG = 44;
+  const baluster = lathe([[0.5, 0], [0.3, 0.6], [0.62, 1.6], [0.25, 2.6], [0.45, 3.1], [0, 3.15]], 6);
   for (const sd of [-1, 1]) {
+    const c = new THREE.QuadraticBezierCurve3(new THREE.Vector3(sd * 42, 0, CZ0 + 2), new THREE.Vector3(sd * 104, 0, CZ0 + 14), new THREE.Vector3(sd * 106, 0, CZ1 + 2));
+    const pts = c.getSpacedPoints(NSEG);
+    for (let i = 0; i < NSEG; i++) {
+      const a = pts[i], b = pts[i + 1], L = a.distanceTo(b), yaw = Math.atan2(b.x - a.x, b.z - a.z);
+      const ya = rampY(a.z), yb = rampY(b.z), mx = (a.x + b.x) / 2, mz = (a.z + b.z) / 2, tilt = -Math.atan2(yb - ya, L);
+      const n = Math.max(1, Math.round((ya - yb) / 0.16)), tread = new THREE.BoxGeometry(SHW * 2, 0.8, Math.hypot(L, ya - yb) + 0.3);
+      const uv = tread.attributes.uv; for (let j = 0; j < uv.count; j++) uv.setXY(j, uv.getX(j), uv.getY(j) * n);
+      kit.add('steps', tread.rotateX(tilt).rotateY(yaw).translate(mx, (ya + yb) / 2 - 0.4, mz), '#ffffff');
+      kit.add('ivory', new THREE.BoxGeometry(SHW * 0.44, 0.1, Math.hypot(L, ya - yb) + 0.3).rotateX(tilt).rotateY(yaw).translate(mx, (ya + yb) / 2 + 0.04, mz), '#f4c6d0');   // the rose runner
+      const h = Math.max(0.2, Math.min(ya, yb) - 0.6);
+      kit.add('ivory', new THREE.BoxGeometry(SHW * 2 + 2.4, h, L + 0.2).rotateY(yaw).translate(mx, h / 2, mz), ROSE);                  // the carved stringer under the flight
+      if (i % 4 === 2) kit.add('gold', new THREE.BoxGeometry(SHW * 2, 0.25, 0.4).rotateY(yaw).translate(mx, (ya + yb) / 2 + 0.1, mz), GOLD);
+    }
+    for (const side of [-1, 1]) {                                                              // carved balustrades on both edges
+      const rail = [];
+      for (let i = 0; i <= NSEG; i++) {
+        const t = i / NSEG, p = c.getPointAt(t), tg = c.getTangentAt(t), o = side * (SHW + 0.6);
+        const q = new THREE.Vector3(p.x + tg.z * o, rampY(p.z), p.z - tg.x * o);
+        rail.push(q);
+        kit.add('ivory', baluster.clone().translate(q.x, q.y + 0.6, q.z), PEARL);
+        if (i % 11 === 0) {                                                                  // newels with gold urns and lamps
+          kit.add('ivory', box(2.8, 5, 2.8, q.x, q.y, q.z), PEARL);
+          kit.add('gold', box(3.2, 0.5, 3.2, q.x, q.y + 4.6, q.z), GOLD);
+          kit.add('gold', lathe([[0, 0], [1.6, 1], [1, 2.6], [1.9, 4], [0, 5.2]], 10).translate(q.x, q.y + 5.1, q.z), GOLD);
+          clumps.push([q.x, q.y + 9.6, q.z, 2.4, t * 9]);
+        }
+        if (i % 4 === 0) lamps.push([wx(q.x), wy(q.y), wz(q.z), 1, 0]);
+      }
+      const at = (dy) => new THREE.CatmullRomCurve3(rail.map((q) => new THREE.Vector3(q.x, q.y + dy, q.z)));
+      kit.add('ivory', new THREE.TubeGeometry(at(0.5), NSEG * 2, 0.6, 5, false), PEARL);
+      kit.add('ivory', new THREE.TubeGeometry(at(3.9), NSEG * 2, 0.62, 6, false), PEARL);
+      kit.add('gold', new THREE.TubeGeometry(at(4.55), NSEG * 2, 0.2, 4, false), GOLD);
+    }
+    // the planted slope between the water stair and the flight, over the podium wedge
     const xa = sd > 0 ? CW : -CHW, xb = sd > 0 ? CHW : -CW;
     const wedge = new THREE.Shape([new THREE.Vector2(CZ0, 0), new THREE.Vector2(CZ1, 0), new THREE.Vector2(CZ0, SILL)]);
     kit.add('podium', scaleUV(new THREE.ExtrudeGeometry(wedge, { depth: xb - xa, bevelEnabled: false }).rotateY(-Math.PI / 2).translate(xb, 0, 0), 0.04, 0.02), ROSE);
-    for (const rx of [sd * (CW + 0.5), sd * 95.5]) {
-      const rail = new THREE.PlaneGeometry(flightLen, 1.2).rotateZ(-flightA).rotateY(-Math.PI / 2);
-      kit.add('jali', scaleUV(rail, flightLen / 1.2, 1).translate(rx, SILL / 2 + 0.7, (CZ0 + CZ1) / 2), IVORY);
-      for (let t = 0; t <= 1.001; t += 1 / 12) lamps.push([wx(rx), wy(SILL * (1 - t)), wz(CZ0 + (CZ1 - CZ0) * t), 1, 0]);
+    kit.add('garden', scaleUV(new THREE.PlaneGeometry(CHW - CW, flightLen).rotateX(flightA - Math.PI / 2).translate((xa + xb) / 2, SILL / 2 + 0.2, (CZ0 + CZ1) / 2), (CHW - CW) / 10, flightLen / 10), '#ffffff');
+    const rx = sd * (CW + 0.5);                                                               // the cascade's own balustrade
+    const railG = new THREE.PlaneGeometry(flightLen, 1.2).rotateZ(-flightA).rotateY(-Math.PI / 2);
+    kit.add('jali', scaleUV(railG, flightLen / 1.2, 1).translate(rx, SILL / 2 + 0.7, (CZ0 + CZ1) / 2), IVORY);
+    for (let t = 0; t <= 1.001; t += 1 / 12) lamps.push([wx(rx), wy(SILL * (1 - t)), wz(CZ0 + (CZ1 - CZ0) * t), 1, 0]);
+    for (let t = 0; t <= 1.001; t += 0.25) {
+      const y = SILL * (1 - t), z = CZ0 + (CZ1 - CZ0) * t;
+      kit.add('ivory', box(3, 4.5, 3, rx, y, z), PEARL);
+      kit.add('gold', lathe([[0, 0], [1.6, 1], [1, 2.6], [1.9, 4], [0, 5.2]], 10).translate(rx, y + 4.5, z), GOLD);
+      clumps.push([rx, y + 9, z, 3, t * 9]);
     }
-    for (let t = 0.06; t < 0.97; t += 0.075) cypress.push([sd * 103, SILL * (1 - t), CZ0 + (CZ1 - CZ0) * t, 9 + R() * 3, 0]);   // planted margin
+    for (let k = 0; k < 26; k++) {                                                            // roses and cypress on the slope, clear of the flight
+      const t = 0.04 + R() * 0.92, p = c.getPointAt(t), room = Math.abs(p.x) - SHW - 3 - CW - 4;
+      if (room < 3) continue;
+      const x = sd * (CW + 4 + R() * room), z = p.z + (R() - 0.5) * 6;
+      if (k % 4 === 0) cypress.push([x, rampY(z), z, 8 + R() * 3, 0]); else clumps.push([x, rampY(z) + 0.4, z, 2.6 + R(), R() * 9]);
+    }
   }
   {
     const basins = [[CZ0, 270, SILL * 2 / 3], [270, 305, SILL / 3], [305, CZ1, 1]];
@@ -1203,59 +1283,134 @@ export function createPalace(scene, preset, { makePortal } = {}) {
     }
   }
 
-  // ---- the corner towers (owner's hi-res elevation, read part by part): a marble plinth with a small
-  // arched light; an octagonal shaft with a great star window on each main face and rose-violet
-  // lights on the diagonals, colonnettes at the angles; a corbelled gallery with a jali balustrade
-  // and corner pinnacles; crystal lanterns on gold scroll brackets; an arcaded drum; a glossy
-  // purple onion dome with a gold crest, and a gold cross ----
+  // ---- the corner towers, copied part by part from the owner's hi-res elevation (right tower x 415-488,
+  // y -6 to 201): a stepped marble plinth with pilasters, gold-framed panels and a small blue arched light;
+  // a gold brocade cornice; an octagonal shaft on moulded bases with gold spikes at the angles; on each
+  // main face a great star window in a thick gold frame standing on a gold fleur; on the diagonals a tall
+  // rose-violet light over a small blue window; gold-capped colonnettes; a brocade frieze, corbels and a
+  // jali gallery with pinnacles; an arcaded drum of dark blue lights with gold crockets; a plain dark pink
+  // onion dome on a gold crest; a gold knob and a gold cross; crystal lanterns on gold scroll brackets ----
+  const band4 = (k, key, w, h, y, col) => k.add(key, scaleUV(new THREE.CylinderGeometry(w * Math.SQRT1_2, w * Math.SQRT1_2, h, 4, 1, true).rotateY(Math.PI / 4).translate(0, y + h / 2, 0), Math.max(1, Math.round(w / 2)), 1), col);
+  const lantern = (k, lx, ly, lz, s, hang) => {                    // a hexagonal crystal lantern, s = the glass height
+    const yb = hang ? ly - 1.05 * s - s : ly + 0.45 * s, yt = yb + s;
+    k.add('crystal', cyl(0.46 * s, 0.38 * s, s, 6, lx, yb, lz), '#a8bcff');
+    for (let i = 0; i < 6; i++) { const a = (i / 6) * Math.PI * 2; k.add('gold', cyl(0.035 * s, 0.035 * s, s, 4, lx + Math.cos(a) * 0.43 * s, yb, lz + Math.sin(a) * 0.43 * s), GOLD); }
+    k.add('gold', cyl(0.52 * s, 0.5 * s, 0.09 * s, 6, lx, yt, lz), GOLD);
+    k.add('gold', new THREE.ConeGeometry(0.5 * s, 0.42 * s, 6).translate(lx, yt + 0.3 * s, lz), GOLD);
+    k.add('gold', new THREE.SphereGeometry(0.1 * s, 6, 4).translate(lx, yt + 0.56 * s, lz), GOLD);
+    k.add('gold', cyl(0.42 * s, 0.4 * s, 0.08 * s, 6, lx, yb - 0.08 * s, lz), GOLD);
+    k.add('gold', new THREE.ConeGeometry(0.36 * s, 0.34 * s, 6).rotateX(Math.PI).translate(lx, yb - 0.25 * s, lz), GOLD);
+    k.add('gold', new THREE.SphereGeometry(0.09 * s, 6, 4).translate(lx, yb - 0.46 * s, lz), GOLD);
+    k.add('gold', new THREE.ConeGeometry(0.06 * s, 0.3 * s, 4).rotateX(Math.PI).translate(lx, yb - 0.66 * s, lz), GOLD);
+    if (hang) k.add('gold', cyl(0.03 * s, 0.03 * s, 0.4 * s, 4, lx, yt + 0.62 * s, lz), GOLD);
+    else { k.add('gold', new THREE.ConeGeometry(0.05 * s, 0.4 * s, 4).translate(lx, yt + 0.8 * s, lz), GOLD); k.add('gold', cyl(0.2 * s, 0.3 * s, 0.4 * s, 6, lx, ly, lz), GOLD); }
+    const p = k.world(lx, 0, lz); halosD.push([p.x, yb + s / 2, p.z, 1.2 * s]);
+  };
   for (const [x, z] of CORNERS) {
-    const r = 31, ap = r * 0.924, fw = r * 0.765;
+    const r = 33, ap = r * 0.924, fw = r * 0.765, out = Math.sign(x);
     kit.frame(x, 0, z);
-    kit.add('ashlar', wallBox(66, 30, 66, 0, -6, 0, 12, 12), '#fff6f2', '#f2c8cc');                    // the plinth
-    kit.add('ivory', box(70, 2.4, 70, 0, 24, 0), PEARL); kit.add('gold', box(70.6, 0.6, 70.6, 0, 26.2, 0), GOLD);
-    kit.add('ivory', box(68, 2, 68, 0, -6, 0), ROSE);
-    kit.add('ivory', oct(r + 2.4, 4, 26.4), ROSE);                                                        // the base mouldings
-    kit.add('ivory', oct(r, 104, 30), PEARL, '#f4cdd2');                                                 // the shaft
-    for (const y of [30.4, 64, 130]) kit.add('gold', ring(r + 0.7, 1, y, 8).rotateY(Math.PI / 8), GOLD);
+    // the plinth: a base step, a body with pilasters and framed panels, a cornice and a brocade band
+    kit.add('ashlar', wallBox(78, 6, 78, 0, -6, 0, 12, 12), '#fbe8e8', '#f0c4ca');
+    kit.add('ivory', box(79, 1, 79, 0, 0, 0), PEARL); kit.add('gold', box(79.4, 0.4, 79.4, 0, 1, 0), GOLD);
+    kit.add('ashlar', wallBox(72, 14, 72, 0, 1, 0, 12, 12), '#fff6f2', '#f4cdd2');
+    for (let f = 0; f < 4; f++) {
+      const a = f * Math.PI / 2;
+      kit.frame(x + Math.sin(a) * 36, 0, z + Math.cos(a) * 36, a);
+      for (const u of [-34, -12, 12, 34]) { kit.add('ivory', box(4, 13, 1.4, u, 1.4, 0.7), PEARL); kit.add('gold', box(4.8, 0.8, 1.8, u, 13.6, 0.9), GOLD); }
+      for (const u of [-23, 23]) {                                          // gold-framed rose-marble panels
+        kit.add('ivory', box(15, 9, 0.5, u, 3.4, 0.25), '#f6d2d8');
+        for (const [w, h, du, y] of [[15.6, 0.5, 0, 3.1], [15.6, 0.5, 0, 12.4], [0.5, 9.8, -7.6, 3.1], [0.5, 9.8, 7.6, 3.1]]) kit.add('gold', box(w, h, 0.9, u + du, y, 0.5), GOLD);
+        kit.add('gold', new THREE.OctahedronGeometry(1.6, 0).scale(1, 1.4, 0.4).translate(u, 7.9, 0.7), GOLD);
+      }
+      if (f === 0 || (f === 1 && out > 0) || (f === 3 && out < 0)) lancet(kit, 0, 1.8, 9, 12);            // the plinth's small blue arched light
+      kit.frame(x, 0, z);
+    }
+    kit.add('ivory', box(76, 2.4, 76, 0, 15, 0), PEARL); kit.add('gold', box(76.4, 0.4, 76.4, 0, 17.2, 0), GOLD);
+    band4(kit, 'brocade', 75, 3, 17.6, '#ffffff');                                                       // gold brocade
+    kit.add('ivory', box(74, 1.2, 74, 0, 20.6, 0), PEARL);
+    // the shaft's base mouldings, with gold spikes at the angles
+    kit.add('ivory', ring(r + 4, 3, 21.8, 8).rotateY(Math.PI / 8), ROSE);
+    kit.add('ivory', ring(r + 2.4, 3.2, 24.8, 8).rotateY(Math.PI / 8), PEARL);
+    kit.add('gold', ring(r + 2.6, 0.6, 28, 8).rotateY(Math.PI / 8), GOLD);
+    kit.add('ivory', ring(r + 1.2, 1.4, 28.6, 8).rotateY(Math.PI / 8), PEARL);
+    kit.add('ivory', oct(r, 82, 30), PEARL, '#f6d6da');                                                 // the shaft
+    kit.add('gold', ring(r + 0.6, 0.8, 30, 8).rotateY(Math.PI / 8), GOLD);
     for (let i = 0; i < 8; i++) {
-      const a = (i / 8) * Math.PI * 2, ca = a + Math.PI / 8;
-      const cxx = Math.sin(ca) * (r + 0.6), czz = Math.cos(ca) * (r + 0.6);
-      kit.add('ivory', cyl(1.1, 1.1, 100, 6, cxx, 30, czz), PEARL);                                         // angle colonnettes
-      for (const y of [56, 96]) kit.add('gold', ring(1.5, 0.8, y, 6).translate(cxx, 0, czz), GOLD);
+      const a = (i / 8) * Math.PI * 2, ca = a + Math.PI / 8, cxx = Math.sin(ca) * (r + 0.8), czz = Math.cos(ca) * (r + 0.8);
+      kit.add('ivory', cyl(1.3, 1.3, 76, 6, cxx, 31, czz), PEARL);                                         // angle colonnettes
+      kit.add('gold', cyl(1.9, 2.3, 1.6, 6, cxx, 30.4, czz), GOLD);
+      kit.add('gold', cyl(2.6, 1.4, 3.4, 6, cxx, 107, czz), GOLD);                                         // gold capitals
+      kit.add('gold', new THREE.OctahedronGeometry(1.4, 0).scale(1, 1.6, 1).translate(cxx * 1.02, 105.4, czz * 1.02), GOLD);
+      const sx = Math.sin(ca) * (r + 2.6), sz = Math.cos(ca) * (r + 2.6);                                  // gold spikes on the base
+      kit.add('gold', new THREE.ConeGeometry(1.1, 7, 6).translate(sx, 33.5, sz), GOLD);
+      kit.add('gold', new THREE.SphereGeometry(1.1, 6, 4).translate(sx, 30.6, sz), GOLD);
       kit.frame(x + Math.sin(a) * ap, 0, z + Math.cos(a) * ap, a);
-      if (i % 2 === 0) {                                                                                  // a great star window
-        kit.add('starwin', archPanel(fw * 0.62, 74).translate(0, 38, 0.2), '#ffffff');
-        kit.add('gold', new THREE.TubeGeometry(pointedArchPath(fw * 0.62 + 0.6, 74.4), 24, 0.55, 5, false).translate(0, 38, 0.5), GOLD);
-        kit.add('ivory', new THREE.TubeGeometry(pointedArchPath(fw * 0.62 + 3, 76), 24, 0.9, 5, false).translate(0, 37.6, 0.5), PEARL);
-        kit.add('gold', box(fw * 0.7, 1.2, 1.6, 0, 36.6, 0.8), GOLD);
-      } else {                                                                                            // rose-violet lights on the diagonals
-        kit.add('lancet', archPanel(fw * 0.42, 64).translate(0, 42, 0.2), '#ffc0e0');
-        kit.add('gold', new THREE.TubeGeometry(pointedArchPath(fw * 0.42 + 0.6, 64.4), 20, 0.4, 4, false).translate(0, 42, 0.45), GOLD);
+      if (i % 2 === 0) {                                                                                  // the great star window
+        const ww = fw * 0.8, wy0 = 44, wh = 66;
+        kit.add('starwin', archPanel(ww, wh).translate(0, wy0, 0.2), '#ffffff');
+        kit.add('gold', new THREE.TubeGeometry(pointedArchPath(ww + 1.6, wh + 0.8), 32, 0.9, 6, false).translate(0, wy0 - 0.2, 0.7), GOLD);     // the thick gold frame
+        kit.add('ivory', new THREE.TubeGeometry(pointedArchPath(ww + 4.2, wh + 2.2), 32, 0.8, 5, false).translate(0, wy0 - 0.6, 0.6), PEARL);
+        kit.add('gold', new THREE.TubeGeometry(pointedArchPath(ww + 6, wh + 3.4), 32, 0.35, 4, false).translate(0, wy0 - 0.8, 0.9), GOLD);
+        kit.add('gold', box(ww + 3, 1.2, 1.8, 0, wy0 - 1.4, 0.9), GOLD);
+        // the gold fleur at its foot
+        kit.add('gold', box(15, 1, 1.4, 0, 37.6, 0.7), GOLD);
+        kit.add('gold', new THREE.OctahedronGeometry(2.6, 0).scale(1, 1.8, 0.45).translate(0, 43, 1.2), GOLD);
+        for (const sd of [-1, 1]) {
+          kit.add('gold', new THREE.TorusGeometry(2.4, 0.45, 4, 10, Math.PI * 1.3).rotateZ(sd > 0 ? -0.3 : Math.PI + 0.3).translate(sd * 4.2, 41.2, 1), GOLD);
+          kit.add('gold', new THREE.OctahedronGeometry(1.1, 0).scale(1, 1.5, 0.5).translate(sd * 7.4, 40, 1), GOLD);
+        }
+        kit.add('gold', new THREE.ConeGeometry(0.9, 3.4, 6).translate(0, 49.4, 1), GOLD);
+      } else {                                                                                            // the diagonals
+        kit.add('lancet', archPanel(fw * 0.44, 50).translate(0, 58, 0.2), '#ffc4e4');
+        kit.add('gold', new THREE.TubeGeometry(pointedArchPath(fw * 0.44 + 0.8, 50.4), 24, 0.55, 5, false).translate(0, 57.8, 0.5), GOLD);
+        lancet(kit, 0, 38, fw * 0.32, 16);
       }
       kit.frame(x, 0, z);
     }
-    for (let i = 0; i < 16; i++) { const a = (i / 16) * Math.PI * 2; kit.add('ivory', box(1.6, 4, 3.4, 0, 126, 0).translate(0, 0, r + 1.2).rotateY(a), PEARL); }   // corbels
-    kit.add('ivory', ring(r + 4.4, 1.6, 130, 24), PEARL);                                                 // the gallery
-    kit.add('jali', scaleUV(new THREE.CylinderGeometry(r + 4, r + 4, 3.2, 24, 1, true).translate(0, 133.2, 0), 24, 1), IVORY);
-    kit.add('gold', ring(r + 4.3, 0.5, 134.8, 24), GOLD);
-    for (let i = 0; i < 8; i++) { const a = (i / 8) * Math.PI * 2 + Math.PI / 8, p = kit.world(Math.sin(a) * (r + 3.6), 0, Math.cos(a) * (r + 3.6)); spirelets.push([p.x, 131.6, p.z, 0.75, 0]); }
-    kit.add('drum', scaleUV(new THREE.CylinderGeometry(24, 25, 18, 16, 1, true).translate(0, 140, 0), 8, 1), IVORY);
-    kit.add('ivory', ring(26.4, 2, 148, 24), PEARL); kit.add('gold', ring(26, 1.4, 150, 24), GOLD);
-    kit.add('dome', onion(27, 34).translate(0, 151, 0), '#ffffff');
-    for (let i = 0; i < 16; i++) { const a = (i / 16) * Math.PI * 2; kit.add('gold', new THREE.ConeGeometry(1.3, 3.4, 4).translate(Math.sin(a) * 26.4, 153.4, Math.cos(a) * 26.4), GOLD); }   // gold crest
-    kit.add('gold', ring(3.4, 1.4, 184, 12), GOLD);
-    kit.add('gold', needle(1.8, 10, 8).translate(0, 185, 0), GOLD);
-    kit.add('gold', finialGeo(4.4).translate(0, 194, 0), GOLD);
-    for (const sd of [-1, 1]) {                                                                           // crystal lanterns on gold scroll brackets
-      kit.add('gold', box(12, 1, 1, sd * (r + 6), 118, 0), GOLD);
-      kit.add('gold', new THREE.TorusGeometry(3, 0.45, 4, 12, Math.PI).rotateZ(sd > 0 ? -Math.PI / 2 : Math.PI / 2).translate(sd * (r + 3), 115, 0), GOLD);
-      kit.add('gold', box(9, 0.8, 0.8, sd * (r + 4.5), 104, 0), GOLD);
-      for (const [dx, y, sc] of [[r + 12, 116, 3.4], [r + 9, 101, 2.8], [r + 4, 112, 2.4]]) { const p = kit.world(sd * dx, 0, 2); hanging.push([p.x, y, p.z, sc, 0]); }
+    // the brocade frieze, corbels and the jali gallery
+    kit.add('brocade', scaleUV(new THREE.CylinderGeometry(r + 1.4, r + 1.4, 3.6, 8, 1, true).rotateY(Math.PI / 8).translate(0, 113.8, 0), 26, 1), '#ffffff');
+    kit.add('ivory', ring(r + 1.8, 0.8, 111.4, 8).rotateY(Math.PI / 8), PEARL); kit.add('gold', ring(r + 1.9, 0.4, 115.6, 8).rotateY(Math.PI / 8), GOLD);
+    for (let i = 0; i < 16; i++) { const a = (i / 16) * Math.PI * 2; kit.add('ivory', box(1.8, 4.4, 3.8, 0, 116, 0).translate(0, 0, r + 1.6).rotateY(a), PEARL); kit.add('gold', box(1.9, 0.5, 0.5, 0, 116.8, 0).translate(0, 0, r + 3.4).rotateY(a), GOLD); }
+    kit.add('ivory', ring(r + 5, 1.8, 120.4, 24), PEARL); kit.add('gold', ring(r + 5.1, 0.4, 122.2, 24), GOLD);
+    kit.add('jali', scaleUV(new THREE.CylinderGeometry(r + 4.6, r + 4.6, 5.2, 24, 1, true).translate(0, 125.2, 0), 26, 1), IVORY);
+    kit.add('gold', ring(r + 4.9, 0.7, 127.8, 24), GOLD);
+    for (let i = 0; i < 8; i++) { const a = (i / 8) * Math.PI * 2 + Math.PI / 8, p = kit.world(Math.sin(a) * (r + 4.4), 0, Math.cos(a) * (r + 4.4)); spirelets.push([p.x, 122.6, p.z, 0.8, 0]); }
+    // the drum: dark blue arched lights between pilasters, gold crockets at its head
+    kit.add('ivory', oct(25, 18.6, 128.5), PEARL, '#f6dade');
+    for (let i = 0; i < 8; i++) {
+      const a = (i / 8) * Math.PI * 2, ca = a + Math.PI / 8;
+      kit.add('ivory', cyl(1, 1, 17, 6, Math.sin(ca) * 25.4, 129, Math.cos(ca) * 25.4), PEARL);
+      kit.add('gold', new THREE.ConeGeometry(0.9, 4, 4).translate(Math.sin(ca) * 26.4, 148.6, Math.cos(ca) * 26.4), GOLD);
+      kit.frame(x + Math.sin(a) * 23.1, 0, z + Math.cos(a) * 23.1, a);
+      lancet(kit, 0, 131, 8, 12.6);
+      kit.frame(x, 0, z);
     }
-    kit.frame(x, 0, z + 33.1); lancet(kit, 0, -1, 8, 19);                                               // the plinth's arched light
+    kit.add('ivory', ring(27.4, 2.4, 146.4, 24), PEARL); kit.add('gold', ring(27.8, 1.4, 148.8, 24), GOLD);
+    for (let i = 0; i < 24; i++) { const a = (i / 24) * Math.PI * 2; kit.add('gold', new THREE.ConeGeometry(1, 2.8, 4).translate(Math.sin(a) * 27.2, 151.4, Math.cos(a) * 27.2), GOLD); kit.add('gold', new THREE.SphereGeometry(0.55, 5, 3).translate(Math.sin(a + 0.13) * 27.6, 150.6, Math.cos(a + 0.13) * 27.6), GOLD); }   // the gold crest
+    kit.add('dome', onion(26.5, 26).translate(0, 150.2, 0), '#ffffff');                                    // plain dark pink, as asked
+    // the gold knob and the gold cross
+    kit.add('gold', new THREE.SphereGeometry(3.2, 10, 6).translate(0, 178.6, 0), GOLD);
+    kit.add('gold', ring(2, 1, 181.2, 8), GOLD);
+    for (let i = 0; i < 4; i++) { const a = (i / 4) * Math.PI * 2 + Math.PI / 4; kit.add('gold', new THREE.ConeGeometry(0.7, 3, 4).rotateZ(-0.6).rotateY(a).translate(Math.cos(a) * 2.6, 176.6, -Math.sin(a) * 2.6), GOLD); }
+    kit.add('gold', box(1.5, 19, 1.5, 0, 182, 0), GOLD);
+    kit.add('gold', box(12.4, 1.5, 1.5, 0, 192.4, 0), GOLD);
+    for (const [dx, dy] of [[-6.6, 193.15], [6.6, 193.15], [0, 201.6]]) { kit.add('gold', new THREE.SphereGeometry(1.1, 6, 4).translate(dx, dy, 0), GOLD); kit.add('gold', new THREE.OctahedronGeometry(1, 0).translate(dx + Math.sign(dx) * 1.4, dy + (dx ? 0 : 1.4), 0), GOLD); }
+    kit.add('gold', new THREE.OctahedronGeometry(1.6, 0).scale(1, 1, 0.7).translate(0, 193.15, 0), GOLD);
+    // crystal lanterns on gold scroll brackets: the outer side carries two, the inner side one,
+    // and a standing lantern on each side of the gallery
+    for (const sd of [-1, 1]) {
+      const outer = sd === out, L = outer ? 24 : 18;
+      kit.add('gold', box(L, 1.3, 1.3, sd * (ap + L / 2), 119, 0), GOLD);
+      kit.add('gold', new THREE.TorusGeometry(2.8, 0.5, 4, 12, Math.PI * 1.4).rotateZ(sd > 0 ? -Math.PI / 2 : Math.PI * 0.1).translate(sd * (ap + L - 1), 122.4, 0), GOLD);
+      kit.add('gold', box(Math.hypot(13, 10), 1, 1, 0, -0.5, 0).rotateZ(sd * Math.atan2(10, 13)).translate(sd * (ap + 6.5), 113.6, 0), GOLD);   // the brace
+      kit.add('gold', new THREE.TorusGeometry(3, 0.45, 4, 10, Math.PI).rotateZ(sd > 0 ? Math.PI / 2 : -Math.PI / 2).translate(sd * (ap + 0.6), 112.6, 0), GOLD);
+      lantern(kit, sd * 33.5, 128.4, 0, 12, false);
+      if (outer) { lantern(kit, sd * 37.5, 119, 0, 10.5, true); lantern(kit, sd * 50.5, 119, 0, 12.5, true); }
+      else lantern(kit, sd * 47, 119, 0, 12, true);
+    }
     kit.frame();
-    solids.push({ minX: x - 33, maxX: x + 33, minZ: z - 33, maxZ: z + 33, y0: -10, y1: 24 });
-    solids.push({ x, z, r: r + 5, y0: 20, y1: 200 });
+    solids.push({ minX: x - 40, maxX: x + 40, minZ: z - 40, maxZ: z + 40, y0: -10, y1: 21 });
+    solids.push({ x, z, r: r + 5, y0: 20, y1: 205 });
   }
 
   // the tall purple-domed towers standing against the lancet front
@@ -1276,12 +1431,14 @@ export function createPalace(scene, preset, { makePortal } = {}) {
       }
       for (let i = 0; i < 8; i++) { const a = (i / 8) * Math.PI * 2 + Math.PI / 8; kit.add('ivory', cyl(0.8, 0.8, hh - 2, 6, Math.sin(a) * (r + 0.4), y0 + 1, Math.cos(a) * (r + 0.4)), PEARL); }
       for (let i = 0; i < 12; i++) { const a = (i / 12) * Math.PI * 2; kit.add('ivory', box(1.2, 2.6, 2.4, 0, y1 - 2.6, 0).translate(0, 0, r + 0.8).rotateY(a), PEARL); }   // corbels
+      kit.add('brocade', scaleUV(new THREE.CylinderGeometry(r + 0.6, r + 0.6, 2.6, 16, 1, true).translate(0, y1 - 4.2, 0), Math.round(r * 0.8), 1), '#ffffff');   // gold brocade band (owner, 12 Oct)
       kit.add('ivory', ring(r + 3, 1.2, y1, 16), PEARL);
       kit.add('jali', scaleUV(new THREE.CylinderGeometry(r + 2.8, r + 2.8, 2.6, 16, 1, true).translate(0, y1 + 2.5, 0), 12, 1), IVORY);
       kit.add('gold', ring(r + 3, 0.4, y1 + 3.8, 16), GOLD);
     }
     for (const y of [52, yb - 2]) kit.add('gold', ring(r + 1.2, 1.4, y, 8).rotateY(Math.PI / 8), GOLD);
     kit.add('ivory', ring(r + 3, 3, yb - 3, 8).rotateY(Math.PI / 8), PEARL);
+    kit.add('brocade', scaleUV(new THREE.CylinderGeometry(r + 3.1, r + 3.1, 2, 8, 1, true).rotateY(Math.PI / 8).translate(0, yb - 1.5, 0), Math.round(r * 0.8), 1), '#ffffff');
     kit.add('drum', scaleUV(new THREE.CylinderGeometry(r * 0.86, r * 0.9, 10, 16, 1, true).translate(0, yb + 5, 0), 6, 0.5), IVORY);
     kit.add('dome', onion(r * 1.05, dh).translate(0, yb + 10, 0), '#ffffff');
     kit.add('gold', needle(r * 0.09, 16, 6).translate(0, yb + 10 + dh - 2, 0), GOLD);
@@ -1557,6 +1714,7 @@ export function createPalace(scene, preset, { makePortal } = {}) {
   for (const [x, y, z, s] of lamps) glows.push([x, y + 5.3 * s, z, 2.2 * s]);
   for (const [x, y, z, s] of courtOut.hanging) glows.push([x, y - 1.15 * s, z, 2.4 * s]);
   for (const [x, y, z, s] of hanging) glows.push([wx(x), wy(y - 1.15 * s), wz(z), 2.4 * s * S]);
+  for (const [x, y, z, s] of halosD) glows.push([wx(x), wy(y), wz(z), s * S]);
   const halos = haloPoints(glows, [1, 0.85, 0.7]);
   group.add(halos);
   group.traverse((o) => { if (o.isMesh) { o.castShadow = false; o.receiveShadow = o.material !== mats.glass; } });

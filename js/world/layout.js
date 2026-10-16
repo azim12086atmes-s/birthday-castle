@@ -133,7 +133,7 @@ export function palaceRoofY(x, z) {
 export const GATE = { w: 54 * S, h: 93 * S, sill: 52 * S, z: 205 * S };
 export const CASTLE = { x: 0, z: GATE.z, y: PAL.y + GATE.sill, base: PAL.y };   // z: gate face, y: gate sill
 // The cascade court cuts the podium: a water stair between twin flights, from the gate landing down to the upper terrace.
-export const CASCADE = { z0: 235 * S, z1: 340 * S, hw: 110 * S, water: 30 * S, flights: [[-62.5 * S, 32.5 * S], [62.5 * S, 32.5 * S]] };
+export const CASCADE = { z0: 235 * S, z1: 340 * S, hw: 110 * S, water: 30 * S, flights: [[-72.5 * S, 42.5 * S], [72.5 * S, 42.5 * S]] };
 // G04 terrace gardens from the palace down to the lake (sheet 15): upper, middle, lower
 export const TERRACES = TERRACES1.map((t) => ({ ...t, y: t.y * S, z0: t.z0 * S, z1: t.z1 * S, hw: t.hw * S }));
 // flights of the grand stair between the terraces: [z top, z bottom, y top, y bottom, half width, x]
