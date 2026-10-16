@@ -2437,6 +2437,49 @@
           "storage": "git"
         }
       ]
+    },
+    {
+      "sourceArchive": "Meshy_AI_Herbal_Harvest_1016091424_texture_fbx.zip",
+      "sourceBytes": 163647641,
+      "sourceGitBlob": "9d7a8c184442dee90fb159ab2422889cdd8338de",
+      "folder": "meshy/Meshy_AI_Herbal_Harvest_1016091424",
+      "files": [
+        {
+          "path": "meshy/Meshy_AI_Herbal_Harvest_1016091424/Meshy_AI_Herbal_Harvest_1016091424_texture.fbx",
+          "bytes": 148619756,
+          "sha256": "babe753c411d07013baf05654d10f50715935d3c84881ce32e665cecdb8e7d50",
+          "gitBlob": "66e2764547e0170b5c89bfa738254ecf73f41c52",
+          "storage": "git-lfs"
+        },
+        {
+          "path": "meshy/Meshy_AI_Herbal_Harvest_1016091424/Meshy_AI_Herbal_Harvest_1016091424_texture.png",
+          "bytes": 5167042,
+          "sha256": "91fd23062c0355893e167b76dd30d5e859d05e82bf15b1da641b8883325538af",
+          "gitBlob": "e8b291fdc48274915a95209db9d7572be17e5880",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_Herbal_Harvest_1016091424/Meshy_AI_Herbal_Harvest_1016091424_texture_metallic.png",
+          "bytes": 715353,
+          "sha256": "8dc99bd50f11f0aba387775ffd93d9439baff640b0905fc9c2c31ba5a732ef3a",
+          "gitBlob": "44f2f2e367b633b479c80ada012f3d72e32d762c",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_Herbal_Harvest_1016091424/Meshy_AI_Herbal_Harvest_1016091424_texture_normal.png",
+          "bytes": 7554501,
+          "sha256": "c6c346269a7d57231544180a8425d47656c9324578ccd1b4c4fb2a11a545da47",
+          "gitBlob": "cd882cb094a3931e7fcc3500e69c1a150bda2be5",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_Herbal_Harvest_1016091424/Meshy_AI_Herbal_Harvest_1016091424_texture_roughness.png",
+          "bytes": 1589605,
+          "sha256": "29a5541f783095fcb4859b3aabcb64133a4f11642e57796051bede2438846636",
+          "gitBlob": "6e05b72096c631e38f73a5fe1004a4c1b2632990",
+          "storage": "git"
+        }
+      ]
     }
   ]
 }
