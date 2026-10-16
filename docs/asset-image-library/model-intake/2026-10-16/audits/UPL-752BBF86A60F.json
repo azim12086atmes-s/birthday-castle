@@ -1,0 +1,185 @@
+{
+  "candidate_id": "UPL-752BBF86A60F",
+  "source_name": "Meshy_AI_Golden_Fleur_de_lis_1016063557_texture_fbx.zip",
+  "source_zip_sha256": "752bbf86a60fc74f80ec2f3fbc084a254fbe7152d2a567fe0de79f258e882dd1",
+  "fbx_sha256": "00bc099827553cf594af82db580e46593e7dcd84e8a25f026b9d32d1dd2d3c2a",
+  "mesh_objects": [
+    {
+      "name": "Mesh_0",
+      "vertices": 63079,
+      "faces": 126131,
+      "triangles": 126131,
+      "uv_layers": 1,
+      "material_slots": 1,
+      "boundary_edges": 55,
+      "non_manifold_edges": 87,
+      "origin_world": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    }
+  ],
+  "total_triangles": 126131,
+  "mesh_object_count": 1,
+  "source_bounds_blender_units": {
+    "min": [
+      -0.5908920168876648,
+      -0.15676012635231018,
+      -0.950524091720581
+    ],
+    "max": [
+      0.5889859795570374,
+      0.1593301147222519,
+      0.9489841461181641
+    ],
+    "size_xyz": [
+      1.1798779964447021,
+      0.3160902261734009,
+      1.8995082378387451
+    ]
+  },
+  "scale_status": "Imported dimensions only; physical metre scale, origin, front and placement are NOT approved. Objects were not transformed for preview.",
+  "materials": [
+    "Material.001"
+  ],
+  "images": [
+    {
+      "name": "Image_0",
+      "filepath_basename": "Image_0.jpg",
+      "resolution": [
+        2048,
+        2048
+      ],
+      "available": true
+    },
+    {
+      "name": "Image_2",
+      "filepath_basename": "Image_2.jpg",
+      "resolution": [
+        2048,
+        2048
+      ],
+      "available": true
+    },
+    {
+      "name": "Image_3",
+      "filepath_basename": "Image_3.jpg",
+      "resolution": [
+        2048,
+        2048
+      ],
+      "available": true
+    },
+    {
+      "name": "texture_0_metallic.png",
+      "filepath_basename": "texture_0_metallic.png",
+      "resolution": [
+        2048,
+        2048
+      ],
+      "available": true
+    },
+    {
+      "name": "texture_0_roughness.png",
+      "filepath_basename": "texture_0_roughness.png",
+      "resolution": [
+        2048,
+        2048
+      ],
+      "available": true
+    }
+  ],
+  "armatures": 0,
+  "actions": 0,
+  "review_status": "intake-candidate; no runtime or design approval",
+  "previews": [
+    "front-assumed.png",
+    "right.png",
+    "back.png",
+    "left.png"
+  ],
+  "geometry_fingerprint": "fc8c26e5ccbb6d3b758220bd3b321ff28b96f64d7ba8274433024d84e165f1ec",
+  "material_texture_links": [
+    {
+      "name": "Material.001",
+      "texture_nodes": [
+        {
+          "image": "Image_0",
+          "file": "Image_0.jpg",
+          "links": [
+            {
+              "from": "Color",
+              "to_type": "BSDF_PRINCIPLED",
+              "to_socket": "Base Color"
+            }
+          ]
+        },
+        {
+          "image": "Image_2",
+          "file": "Image_2.jpg",
+          "links": [
+            {
+              "from": "Color",
+              "to_type": "NORMAL_MAP",
+              "to_socket": "Color"
+            }
+          ]
+        },
+        {
+          "image": "texture_0_roughness.png",
+          "file": "texture_0_roughness.png",
+          "links": [
+            {
+              "from": "Color",
+              "to_type": "BSDF_PRINCIPLED",
+              "to_socket": "Roughness"
+            }
+          ]
+        },
+        {
+          "image": "texture_0_metallic.png",
+          "file": "texture_0_metallic.png",
+          "links": [
+            {
+              "from": "Color",
+              "to_type": "BSDF_PRINCIPLED",
+              "to_socket": "Metallic"
+            }
+          ]
+        },
+        {
+          "image": "Image_3",
+          "file": "Image_3.jpg",
+          "links": [
+            {
+              "from": "Color",
+              "to_type": "BSDF_PRINCIPLED",
+              "to_socket": "Emission Color"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "display_name": "Gold fleur-de-lis relief",
+  "category": "Gold architectural ornament",
+  "proposed_reuse": "Small heraldic panel/finial overlay candidate.",
+  "visual_findings": [
+    "Gold three-lobed fleur-de-lis with shallow relief and flat rear.",
+    "126k triangles is heavy for an emblem; use a simpler mesh and baked detail.",
+    "Set its actual decorative size from the host, not the normalized import."
+  ],
+  "visual_review_method": "Manual inspection of one small four-angle rendered preview per asset; no batch source-image loading.",
+  "preview_file": "previews/UPL-752BBF86A60F.png",
+  "preview_sha256": "728cf7a0abbabc9decee3efc68fc69bb6fd431a5c6881bbc68909b8cb62f1dfd",
+  "approval": "Candidate only; final design, metre-scale fit, topology repair and runtime acceptance pending.",
+  "source_alias_names": [
+    "Meshy_AI_Golden_Fleur_de_lis_1016063557_texture_fbx.zip"
+  ]
+}

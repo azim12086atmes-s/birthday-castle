@@ -1,0 +1,105 @@
+{
+  "candidate_id": "UPL-432F90D7091E",
+  "source_name": "Meshy_AI_rocky_terrain_with_te_1016071134_texture_fbx.zip",
+  "source_zip_sha256": "432f90d7091e4245be665eb862f669d4eaca437ece282064f000a809393d6f8a",
+  "fbx_sha256": "39ebe821574b3b0023fe412f1ed3f1f44351d0bcf448c9ba55229531645ddd4d",
+  "mesh_objects": [
+    {
+      "name": "Mesh_0",
+      "vertices": 277483,
+      "faces": 556829,
+      "triangles": 556829,
+      "uv_layers": 1,
+      "material_slots": 1,
+      "boundary_edges": 19,
+      "non_manifold_edges": 19,
+      "origin_world": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    }
+  ],
+  "total_triangles": 556829,
+  "mesh_object_count": 1,
+  "source_bounds_blender_units": {
+    "min": [
+      -0.9839789867401123,
+      -0.8078749775886536,
+      -0.443865031003952
+    ],
+    "max": [
+      0.9961370229721069,
+      0.8198000192642212,
+      0.43769803643226624
+    ],
+    "size_xyz": [
+      1.9801160097122192,
+      1.6276750564575195,
+      0.8815630674362183
+    ]
+  },
+  "scale_status": "Imported dimensions only; physical metre scale, origin, front and placement are NOT approved. Objects were not transformed for preview.",
+  "materials": [
+    "Material.001"
+  ],
+  "images": [
+    {
+      "name": "Image_0",
+      "filepath_basename": "Image_0.jpg",
+      "resolution": [
+        2048,
+        2048
+      ],
+      "available": true
+    }
+  ],
+  "armatures": 0,
+  "actions": 0,
+  "review_status": "intake-candidate; no runtime or design approval",
+  "previews": [
+    "front-assumed.png",
+    "right.png",
+    "back.png",
+    "left.png"
+  ],
+  "geometry_fingerprint": "01b35ce8fb742fae12726f56ea79006da322d6f13b77f0d2959a726ae5af6f04",
+  "material_texture_links": [
+    {
+      "name": "Material.001",
+      "texture_nodes": [
+        {
+          "image": "Image_0",
+          "file": "Image_0.jpg",
+          "links": [
+            {
+              "from": "Color",
+              "to_type": "BSDF_PRINCIPLED",
+              "to_socket": "Base Color"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "display_name": "Mossy stepped rock terrace",
+  "category": "Garden and terrain",
+  "proposed_reuse": "Possible Rose Keep cliff-ledge substrate; source/footprint fit pending.",
+  "visual_findings": [
+    "Complete irregular moss-covered rock outcrop with stepped upper shelves.",
+    "556k triangles requires terrain LOD/collision simplification before gameplay use.",
+    "Do not assume its painted steps satisfy the stair contract or that every shelf is walkable."
+  ],
+  "visual_review_method": "Manual inspection of one small four-angle rendered preview per asset; no batch source-image loading.",
+  "preview_file": "previews/UPL-432F90D7091E.png",
+  "preview_sha256": "c3680213cfaf559780b10ea0c714e8486fd72c7ebb89af46312d5d271a5d60af",
+  "approval": "Candidate only; final design, metre-scale fit, topology repair and runtime acceptance pending.",
+  "source_alias_names": [
+    "Meshy_AI_rocky_terrain_with_te_1016071134_texture_fbx.zip"
+  ]
+}

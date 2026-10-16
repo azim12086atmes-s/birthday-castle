@@ -1,0 +1,105 @@
+{
+  "candidate_id": "UPL-98253A473847",
+  "source_name": "Meshy_AI__Object_Ornate_1016070022_texture_fbx.zip",
+  "source_zip_sha256": "98253a4738471963bdce1e63669e956aed5f9b9e0bf85da7af366ad57a1a2be5",
+  "fbx_sha256": "153e0e2d956424a160dd7641b9e2c8f1f85dbdc56aa4c49685046428edbf9b19",
+  "mesh_objects": [
+    {
+      "name": "Mesh_0",
+      "vertices": 4874,
+      "faces": 10000,
+      "triangles": 10000,
+      "uv_layers": 1,
+      "material_slots": 1,
+      "boundary_edges": 0,
+      "non_manifold_edges": 0,
+      "origin_world": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    }
+  ],
+  "total_triangles": 10000,
+  "mesh_object_count": 1,
+  "source_bounds_blender_units": {
+    "min": [
+      -0.6659460067749023,
+      -0.17872104048728943,
+      -0.994733989238739
+    ],
+    "max": [
+      0.6636049747467041,
+      0.18113504350185394,
+      0.9941070079803467
+    ],
+    "size_xyz": [
+      1.3295509815216064,
+      0.3598560690879822,
+      1.9888410568237305
+    ]
+  },
+  "scale_status": "Imported dimensions only; physical metre scale, origin, front and placement are NOT approved. Objects were not transformed for preview.",
+  "materials": [
+    "Material.001"
+  ],
+  "images": [
+    {
+      "name": "Image_0",
+      "filepath_basename": "Image_0.jpg",
+      "resolution": [
+        2048,
+        2048
+      ],
+      "available": true
+    }
+  ],
+  "armatures": 0,
+  "actions": 0,
+  "review_status": "intake-candidate; no runtime or design approval",
+  "previews": [
+    "front-assumed.png",
+    "right.png",
+    "back.png",
+    "left.png"
+  ],
+  "geometry_fingerprint": "59581a5e430370276873aba5ff0e0ff7384cb70403fdb4103ee5180be3f6e99e",
+  "material_texture_links": [
+    {
+      "name": "Material.001",
+      "texture_nodes": [
+        {
+          "image": "Image_0",
+          "file": "Image_0.jpg",
+          "links": [
+            {
+              "from": "Color",
+              "to_type": "BSDF_PRINCIPLED",
+              "to_socket": "Base Color"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "display_name": "Rose single door with bird decor",
+  "category": "Doors and wall panels",
+  "proposed_reuse": "Palace/garden doorway decoration candidate.",
+  "visual_findings": [
+    "Closed arched pink single door, flowers, pale/gold trim and small suspended bird-like decorations.",
+    "The bird/decor and door are part of one imported mesh object; they are not animated fauna.",
+    "Separate leaf/frame and supply true host opening/collision if this becomes an interactive door."
+  ],
+  "visual_review_method": "Manual inspection of one small four-angle rendered preview per asset; no batch source-image loading.",
+  "preview_file": "previews/UPL-98253A473847.png",
+  "preview_sha256": "e7f203d29cab9450b659b92fb4067b976e670d07bf862c214c5e42e318c9f169",
+  "approval": "Candidate only; final design, metre-scale fit, topology repair and runtime acceptance pending.",
+  "source_alias_names": [
+    "Meshy_AI__Object_Ornate_1016070022_texture_fbx.zip"
+  ]
+}

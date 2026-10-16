@@ -1,0 +1,165 @@
+{
+  "candidate_id": "UPL-74F4D19C5CE3",
+  "source_name": "Meshy_AI_stone_henge_1016064128_texture_fbx.zip",
+  "source_zip_sha256": "74f4d19c5ce3ebf32d4157a8f177c623f512ba3bef8dc03205ee8e48a6ebe634",
+  "fbx_sha256": "80da73373dc3ec02b82658222cb00d4d4d2574e14123b917c10768655ecb4539",
+  "mesh_objects": [
+    {
+      "name": "Mesh_0",
+      "vertices": 223840,
+      "faces": 447406,
+      "triangles": 447406,
+      "uv_layers": 1,
+      "material_slots": 1,
+      "boundary_edges": 119,
+      "non_manifold_edges": 197,
+      "origin_world": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    }
+  ],
+  "total_triangles": 447406,
+  "mesh_object_count": 1,
+  "source_bounds_blender_units": {
+    "min": [
+      -0.9514899849891663,
+      -0.9074199795722961,
+      -0.2807590365409851
+    ],
+    "max": [
+      0.9453009963035583,
+      0.9320909976959229,
+      0.26465702056884766
+    ],
+    "size_xyz": [
+      1.8967909812927246,
+      1.8395109176635742,
+      0.5454160571098328
+    ]
+  },
+  "scale_status": "Imported dimensions only; physical metre scale, origin, front and placement are NOT approved. Objects were not transformed for preview.",
+  "materials": [
+    "Material.001"
+  ],
+  "images": [
+    {
+      "name": "Image_0",
+      "filepath_basename": "Image_0.jpg",
+      "resolution": [
+        2048,
+        2048
+      ],
+      "available": true
+    },
+    {
+      "name": "Image_2",
+      "filepath_basename": "Image_2.jpg",
+      "resolution": [
+        2048,
+        2048
+      ],
+      "available": true
+    },
+    {
+      "name": "texture_0_metallic.png",
+      "filepath_basename": "texture_0_metallic.png",
+      "resolution": [
+        2048,
+        2048
+      ],
+      "available": true
+    },
+    {
+      "name": "texture_0_roughness.png",
+      "filepath_basename": "texture_0_roughness.png",
+      "resolution": [
+        2048,
+        2048
+      ],
+      "available": true
+    }
+  ],
+  "armatures": 0,
+  "actions": 0,
+  "review_status": "intake-candidate; no runtime or design approval",
+  "previews": [
+    "front-assumed.png",
+    "right.png",
+    "back.png",
+    "left.png"
+  ],
+  "geometry_fingerprint": "e3a775279e30efc8c2e00a608d50c17bfaa910d3ba04e109aba486a20c4021c2",
+  "material_texture_links": [
+    {
+      "name": "Material.001",
+      "texture_nodes": [
+        {
+          "image": "Image_0",
+          "file": "Image_0.jpg",
+          "links": [
+            {
+              "from": "Color",
+              "to_type": "BSDF_PRINCIPLED",
+              "to_socket": "Base Color"
+            }
+          ]
+        },
+        {
+          "image": "Image_2",
+          "file": "Image_2.jpg",
+          "links": [
+            {
+              "from": "Color",
+              "to_type": "NORMAL_MAP",
+              "to_socket": "Color"
+            }
+          ]
+        },
+        {
+          "image": "texture_0_roughness.png",
+          "file": "texture_0_roughness.png",
+          "links": [
+            {
+              "from": "Color",
+              "to_type": "BSDF_PRINCIPLED",
+              "to_socket": "Roughness"
+            }
+          ]
+        },
+        {
+          "image": "texture_0_metallic.png",
+          "file": "texture_0_metallic.png",
+          "links": [
+            {
+              "from": "Color",
+              "to_type": "BSDF_PRINCIPLED",
+              "to_socket": "Metallic"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "display_name": "Mossy standing-stone circle",
+  "category": "Garden and terrain",
+  "proposed_reuse": "Forest/ruin-court point-of-interest candidate; no new map anchor assigned.",
+  "visual_findings": [
+    "Complete mossy stone circle with standing stones and lintels, visibly open centre.",
+    "447k triangles needs optimization and compound/simple stone collision, not one hull filling the centre.",
+    "Actual walkable gaps and landmark scale remain to measure."
+  ],
+  "visual_review_method": "Manual inspection of one small four-angle rendered preview per asset; no batch source-image loading.",
+  "preview_file": "previews/UPL-74F4D19C5CE3.png",
+  "preview_sha256": "ff3688fa1f0c8353e3bae0d6cbe980c0e6b9f4033797f47028de8b12da23ee46",
+  "approval": "Candidate only; final design, metre-scale fit, topology repair and runtime acceptance pending.",
+  "source_alias_names": [
+    "Meshy_AI_stone_henge_1016064128_texture_fbx.zip"
+  ]
+}

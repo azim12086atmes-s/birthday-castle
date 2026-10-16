@@ -4,6 +4,8 @@
 
 Current completion work: [coverage queue and saved sheets](completion-pass/README.md), **35/119 jobs saved**. **128 selected sheets saved;212/230 allocated;852 archive images**. Allocation:83palace,58other buildings,57nature/ecology,22outdoor/shared,10maps/magic. Geometry, view parity, UVs, anatomy and runtime remain unbuilt/unverified.
 
+**Uploaded model intake:** [Fourteen inspected Meshy packages and labelled previews](model-intake/2026-10-16/README.md) · [One-asset gallery](model-intake/2026-10-16/index.html). Of 58 attachments, 17 archives downloaded, three are exact duplicates, and 41 exceed the 32 MiB transfer limit. The fourteen candidates include one shared-geometry texture-variant pair. These are inspected uploads, not accepted runtime models; concept-sheet counts are unchanged.
+
 Previous B02 exterior pass: [Moon Water Palace — 3 sheets and 20 labelled components](world-location-kits/moon-water-palace/README.md). B02 dedicated cap **3/3**; physical joins and common assembly scale pending. **93 selected sheets saved; 96/230 selected or reserved; 812 archive images**. Shared freshwater fauna is next; no 3D models generated.
 
 Previous location/ecology pass: [34 location briefs and zoom audit](world-layout/location-audit/README.md), with local flora/fauna selections and a shared natural-kit catalog. [3 new forest ecology sheets](world-location-kits/west-lantern-forest/ecology/README.md) add20 labelled targets. **90 saved selected sheets;93/230 selected or reserved;807 archive images**. No3D/rig/navigation verified.

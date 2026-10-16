@@ -1,0 +1,2305 @@
+{
+  "summary": {
+    "uploaded_files": 58,
+    "downloaded_archives": 17,
+    "exact_duplicate_archives": 3,
+    "distinct_downloaded_packages": 14,
+    "distinct_geometry_fingerprints": 13,
+    "geometry_variants": [
+      [
+        "UPL-5B3AAB3E5537",
+        "UPL-6F2ACB9A029D"
+      ]
+    ],
+    "blocked_by_32_MiB_transfer_limit": 41,
+    "validated_zip_crc_count": 14,
+    "imported_fbx_packages": 14,
+    "previewed_candidates": 14,
+    "raw_total_triangles_across_unique_packages": 1992185,
+    "candidates_above_100k_triangles": 7,
+    "new_selected_reference_sheets": 0,
+    "accepted_runtime_models": 0
+  },
+  "assets": [
+    {
+      "candidate_id": "UPL-48B60C2BFC69",
+      "source_name": "Meshy_AI_An_extravagant_fairy_1016070342_texture_fbx.zip",
+      "source_zip_sha256": "48b60c2bfc6998ebf045a21fa927a4ad6c2f376bd845a6a4ce65e1e3367bec46",
+      "fbx_sha256": "4ad75e6b7a93ddf2f9d599fa83615ba1290cb24e47b193968edb1e523ab2b3b3",
+      "mesh_objects": [
+        {
+          "name": "Mesh_0",
+          "vertices": 4468,
+          "faces": 9994,
+          "triangles": 9994,
+          "uv_layers": 1,
+          "material_slots": 1,
+          "boundary_edges": 4,
+          "non_manifold_edges": 4,
+          "origin_world": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        }
+      ],
+      "total_triangles": 9994,
+      "mesh_object_count": 1,
+      "source_bounds_blender_units": {
+        "min": [
+          -0.5132550001144409,
+          -0.511461079120636,
+          -1.0004700422286987
+        ],
+        "max": [
+          0.5260030031204224,
+          0.5239430665969849,
+          1.000920057296753
+        ],
+        "size_xyz": [
+          1.0392580032348633,
+          1.0354042053222656,
+          2.001389980316162
+        ]
+      },
+      "scale_status": "Imported dimensions only; physical metre scale, origin, front and placement are NOT approved. Objects were not transformed for preview.",
+      "materials": [
+        "Material.001"
+      ],
+      "images": [
+        {
+          "name": "Image_0",
+          "filepath_basename": "Image_0.jpg",
+          "resolution": [
+            2048,
+            2048
+          ],
+          "available": true
+        }
+      ],
+      "armatures": 0,
+      "actions": 0,
+      "review_status": "intake-candidate; no runtime or design approval",
+      "previews": [
+        "front-assumed.png",
+        "right.png",
+        "back.png",
+        "left.png"
+      ],
+      "geometry_fingerprint": "f71b47ecdfc7d979829ef1bb03111f2a0361b8eb886258540d86c65b73ef97cd",
+      "material_texture_links": [
+        {
+          "name": "Material.001",
+          "texture_nodes": [
+            {
+              "image": "Image_0",
+              "file": "Image_0.jpg",
+              "links": [
+                {
+                  "from": "Color",
+                  "to_type": "BSDF_PRINCIPLED",
+                  "to_socket": "Base Color"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "display_name": "Pink domed canopy bed",
+      "category": "Palace furniture",
+      "proposed_reuse": "Bedroom candidate; compare against the accepted bed footprint and canopy height before placement.",
+      "visual_findings": [
+        "Full pink/gold bed with drapes and a crowned domed canopy; open sides visible in all four views.",
+        "Frame, drapes and bedding are one named mesh object. Separate parts if cloth or bedding needs independent editing.",
+        "The imported roughly two-unit height is not a confirmed human-size bed contract."
+      ],
+      "visual_review_method": "Manual inspection of one small four-angle rendered preview per asset; no batch source-image loading.",
+      "preview_file": "previews/UPL-48B60C2BFC69.png",
+      "preview_sha256": "e78bb4d9f96c41d9f4929c65bf5f13bd646d72583c7929fbc569a117f401d476",
+      "approval": "Candidate only; final design, metre-scale fit, topology repair and runtime acceptance pending.",
+      "source_alias_names": [
+        "Meshy_AI_An_extravagant_fairy_1016070342_texture_fbx.zip"
+      ]
+    },
+    {
+      "candidate_id": "UPL-76DA8BB7D7CD",
+      "source_name": "Meshy_AI__Object_Ornate_1016070030_texture_fbx.zip",
+      "source_zip_sha256": "76da8bb7d7cdbd578acf8d042506935d412237c7f2c1dc01c73958ae4b8608f9",
+      "fbx_sha256": "7f67e922893c7f8a60b29d5fdb1da36fc3fe88510dd59a92d80a79b8e2518ff8",
+      "mesh_objects": [
+        {
+          "name": "Mesh_0",
+          "vertices": 4672,
+          "faces": 9992,
+          "triangles": 9992,
+          "uv_layers": 1,
+          "material_slots": 1,
+          "boundary_edges": 20,
+          "non_manifold_edges": 20,
+          "origin_world": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        }
+      ],
+      "total_triangles": 9992,
+      "mesh_object_count": 1,
+      "source_bounds_blender_units": {
+        "min": [
+          -0.9915419816970825,
+          -0.3978930413722992,
+          -1.000540018081665
+        ],
+        "max": [
+          0.9859910011291504,
+          0.3935460150241852,
+          1.0005600452423096
+        ],
+        "size_xyz": [
+          1.977532982826233,
+          0.7914390563964844,
+          2.0011000633239746
+        ]
+      },
+      "scale_status": "Imported dimensions only; physical metre scale, origin, front and placement are NOT approved. Objects were not transformed for preview.",
+      "materials": [
+        "Material.001"
+      ],
+      "images": [
+        {
+          "name": "Image_0",
+          "filepath_basename": "Image_0.jpg",
+          "resolution": [
+            2048,
+            2048
+          ],
+          "available": true
+        }
+      ],
+      "armatures": 0,
+      "actions": 0,
+      "review_status": "intake-candidate; no runtime or design approval",
+      "previews": [
+        "front-assumed.png",
+        "right.png",
+        "back.png",
+        "left.png"
+      ],
+      "geometry_fingerprint": "b3b58acdba7f576e20e85b535a1574671391bee358faf62777d458fe64abda35",
+      "material_texture_links": [
+        {
+          "name": "Material.001",
+          "texture_nodes": [
+            {
+              "image": "Image_0",
+              "file": "Image_0.jpg",
+              "links": [
+                {
+                  "from": "Color",
+                  "to_type": "BSDF_PRINCIPLED",
+                  "to_socket": "Base Color"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "display_name": "Rose arched double door",
+      "category": "Doors and wall panels",
+      "proposed_reuse": "Palace/rose-garden door candidate, subject to source matching.",
+      "visual_findings": [
+        "Closed double-leaf rose-pink door in a thick decorative host with cream/gold trim.",
+        "Leaves and frame are not separate named objects; no opening animation was imported.",
+        "Provide a genuinely cut wall opening and separate leaf collision before using it as a passable entrance."
+      ],
+      "visual_review_method": "Manual inspection of one small four-angle rendered preview per asset; no batch source-image loading.",
+      "preview_file": "previews/UPL-76DA8BB7D7CD.png",
+      "preview_sha256": "6b3631853494ed777e7de51cbc533cf004703d9fbd8ecd7aa941d7ea285711cb",
+      "approval": "Candidate only; final design, metre-scale fit, topology repair and runtime acceptance pending.",
+      "source_alias_names": [
+        "Meshy_AI__Object_Ornate_1016070030_texture_fbx.zip"
+      ]
+    },
+    {
+      "candidate_id": "UPL-AD0FE58DF9FC",
+      "source_name": "Meshy_AI_Object_decorative_wa_1016070038_texture_fbx.zip",
+      "source_zip_sha256": "ad0fe58df9fc26381a88c9bac8a21892d3edc9e30a164613aa63d1567497c96c",
+      "fbx_sha256": "7ac3d88e1be15016716a28527ad7f19265bc14968b6895d7755abef43bb0272f",
+      "mesh_objects": [
+        {
+          "name": "Mesh_0",
+          "vertices": 4962,
+          "faces": 9992,
+          "triangles": 9992,
+          "uv_layers": 1,
+          "material_slots": 1,
+          "boundary_edges": 16,
+          "non_manifold_edges": 24,
+          "origin_world": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        }
+      ],
+      "total_triangles": 9992,
+      "mesh_object_count": 1,
+      "source_bounds_blender_units": {
+        "min": [
+          -0.4554930031299591,
+          -0.1599060446023941,
+          -1.0084420442581177
+        ],
+        "max": [
+          0.4488210082054138,
+          0.7116320729255676,
+          1.0017240047454834
+        ],
+        "size_xyz": [
+          0.9043140411376953,
+          0.8715381026268005,
+          2.0101661682128906
+        ]
+      },
+      "scale_status": "Imported dimensions only; physical metre scale, origin, front and placement are NOT approved. Objects were not transformed for preview.",
+      "materials": [
+        "Material.001"
+      ],
+      "images": [
+        {
+          "name": "Image_0",
+          "filepath_basename": "Image_0.jpg",
+          "resolution": [
+            2048,
+            2048
+          ],
+          "available": true
+        }
+      ],
+      "armatures": 0,
+      "actions": 0,
+      "review_status": "intake-candidate; no runtime or design approval",
+      "previews": [
+        "front-assumed.png",
+        "right.png",
+        "back.png",
+        "left.png"
+      ],
+      "geometry_fingerprint": "8ee2dc11b33a4c492114a7345c3c9a0d29bdeac50231cf9ef048eacae4a018e8",
+      "material_texture_links": [
+        {
+          "name": "Material.001",
+          "texture_nodes": [
+            {
+              "image": "Image_0",
+              "file": "Image_0.jpg",
+              "links": [
+                {
+                  "from": "Color",
+                  "to_type": "BSDF_PRINCIPLED",
+                  "to_socket": "Base Color"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "display_name": "Floral arched window panel",
+      "category": "Doors and wall panels",
+      "proposed_reuse": "Palace or garden wall-insert candidate.",
+      "visual_findings": [
+        "Tall cream/lavender floral window and decorated surround, with a different-looking rear.",
+        "Small detached decorations need checking against the host.",
+        "Glazing transmission, host aperture and mounting depth need review; a painted pane is not a passage."
+      ],
+      "visual_review_method": "Manual inspection of one small four-angle rendered preview per asset; no batch source-image loading.",
+      "preview_file": "previews/UPL-AD0FE58DF9FC.png",
+      "preview_sha256": "3f3335f8a009d5ef5215ee7209b8cd479c98d060423ece6133c1fdc804ff79c3",
+      "approval": "Candidate only; final design, metre-scale fit, topology repair and runtime acceptance pending.",
+      "source_alias_names": [
+        "Meshy_AI_Object_decorative_wa_1016070038_texture_fbx.zip"
+      ]
+    },
+    {
+      "candidate_id": "UPL-98253A473847",
+      "source_name": "Meshy_AI__Object_Ornate_1016070022_texture_fbx.zip",
+      "source_zip_sha256": "98253a4738471963bdce1e63669e956aed5f9b9e0bf85da7af366ad57a1a2be5",
+      "fbx_sha256": "153e0e2d956424a160dd7641b9e2c8f1f85dbdc56aa4c49685046428edbf9b19",
+      "mesh_objects": [
+        {
+          "name": "Mesh_0",
+          "vertices": 4874,
+          "faces": 10000,
+          "triangles": 10000,
+          "uv_layers": 1,
+          "material_slots": 1,
+          "boundary_edges": 0,
+          "non_manifold_edges": 0,
+          "origin_world": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        }
+      ],
+      "total_triangles": 10000,
+      "mesh_object_count": 1,
+      "source_bounds_blender_units": {
+        "min": [
+          -0.6659460067749023,
+          -0.17872104048728943,
+          -0.994733989238739
+        ],
+        "max": [
+          0.6636049747467041,
+          0.18113504350185394,
+          0.9941070079803467
+        ],
+        "size_xyz": [
+          1.3295509815216064,
+          0.3598560690879822,
+          1.9888410568237305
+        ]
+      },
+      "scale_status": "Imported dimensions only; physical metre scale, origin, front and placement are NOT approved. Objects were not transformed for preview.",
+      "materials": [
+        "Material.001"
+      ],
+      "images": [
+        {
+          "name": "Image_0",
+          "filepath_basename": "Image_0.jpg",
+          "resolution": [
+            2048,
+            2048
+          ],
+          "available": true
+        }
+      ],
+      "armatures": 0,
+      "actions": 0,
+      "review_status": "intake-candidate; no runtime or design approval",
+      "previews": [
+        "front-assumed.png",
+        "right.png",
+        "back.png",
+        "left.png"
+      ],
+      "geometry_fingerprint": "59581a5e430370276873aba5ff0e0ff7384cb70403fdb4103ee5180be3f6e99e",
+      "material_texture_links": [
+        {
+          "name": "Material.001",
+          "texture_nodes": [
+            {
+              "image": "Image_0",
+              "file": "Image_0.jpg",
+              "links": [
+                {
+                  "from": "Color",
+                  "to_type": "BSDF_PRINCIPLED",
+                  "to_socket": "Base Color"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "display_name": "Rose single door with bird decor",
+      "category": "Doors and wall panels",
+      "proposed_reuse": "Palace/garden doorway decoration candidate.",
+      "visual_findings": [
+        "Closed arched pink single door, flowers, pale/gold trim and small suspended bird-like decorations.",
+        "The bird/decor and door are part of one imported mesh object; they are not animated fauna.",
+        "Separate leaf/frame and supply true host opening/collision if this becomes an interactive door."
+      ],
+      "visual_review_method": "Manual inspection of one small four-angle rendered preview per asset; no batch source-image loading.",
+      "preview_file": "previews/UPL-98253A473847.png",
+      "preview_sha256": "e7f203d29cab9450b659b92fb4067b976e670d07bf862c214c5e42e318c9f169",
+      "approval": "Candidate only; final design, metre-scale fit, topology repair and runtime acceptance pending.",
+      "source_alias_names": [
+        "Meshy_AI__Object_Ornate_1016070022_texture_fbx.zip"
+      ]
+    },
+    {
+      "candidate_id": "UPL-5B3AAB3E5537",
+      "source_name": "Meshy_AI__Object_Charmi_1016065951_texture_fbx.zip",
+      "source_zip_sha256": "5b3aab3e5537192da676b2774402010230681c03e642a24fe3bf713c34386b57",
+      "fbx_sha256": "48b8e15fd9a471bb56b6848fa41b1dfb9f15ace4e70f01c06bd5c91ff2d86d83",
+      "mesh_objects": [
+        {
+          "name": "Mesh_0",
+          "vertices": 3971,
+          "faces": 9993,
+          "triangles": 9993,
+          "uv_layers": 1,
+          "material_slots": 1,
+          "boundary_edges": 63,
+          "non_manifold_edges": 63,
+          "origin_world": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        }
+      ],
+      "total_triangles": 9993,
+      "mesh_object_count": 1,
+      "source_bounds_blender_units": {
+        "min": [
+          -0.964057981967926,
+          -0.47663602232933044,
+          -0.9217659831047058
+        ],
+        "max": [
+          0.9634119868278503,
+          0.5317620635032654,
+          0.886152982711792
+        ],
+        "size_xyz": [
+          1.9274699687957764,
+          1.0083980560302734,
+          1.8079190254211426
+        ]
+      },
+      "scale_status": "Imported dimensions only; physical metre scale, origin, front and placement are NOT approved. Objects were not transformed for preview.",
+      "materials": [
+        "Material.001"
+      ],
+      "images": [
+        {
+          "name": "Image_0",
+          "filepath_basename": "Image_0.jpg",
+          "resolution": [
+            2048,
+            2048
+          ],
+          "available": true
+        }
+      ],
+      "armatures": 0,
+      "actions": 0,
+      "review_status": "intake-candidate; no runtime or design approval",
+      "previews": [
+        "front-assumed.png",
+        "right.png",
+        "back.png",
+        "left.png"
+      ],
+      "geometry_fingerprint": "cfc30ddac87a91d5e3b0925d6663a688a8a0465f9889311a048c318f3174d15a",
+      "material_texture_links": [
+        {
+          "name": "Material.001",
+          "texture_nodes": [
+            {
+              "image": "Image_0",
+              "file": "Image_0.jpg",
+              "links": [
+                {
+                  "from": "Color",
+                  "to_type": "BSDF_PRINCIPLED",
+                  "to_socket": "Base Color"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "display_name": "Green stained-glass garden panel",
+      "category": "Doors and wall panels",
+      "proposed_reuse": "Conservatory/garden screen candidate; exact B25 style match pending.",
+      "visual_findings": [
+        "Arched green floral glazing-like panel with plants and a base/ledge cluster.",
+        "Identical measured geometry fingerprint to the blue panel; textures differ. UV data was not fingerprinted.",
+        "Pane transparency and separable planting need material/object review."
+      ],
+      "visual_review_method": "Manual inspection of one small four-angle rendered preview per asset; no batch source-image loading.",
+      "preview_file": "previews/UPL-5B3AAB3E5537.png",
+      "preview_sha256": "a193bd734b507d69b501ce59baa1a06292f3d9e2d0ca3d1c472bb857766fe2e6",
+      "approval": "Candidate only; final design, metre-scale fit, topology repair and runtime acceptance pending.",
+      "source_alias_names": [
+        "Meshy_AI__Object_Charmi_1016065951_texture_fbx.zip"
+      ]
+    },
+    {
+      "candidate_id": "UPL-6F2ACB9A029D",
+      "source_name": "Meshy_AI__Object_Charmi_1016065945_texture_fbx.zip",
+      "source_zip_sha256": "6f2acb9a029de62a4d95a26029a338f286c91ec13765abe7cb035a7a64cefae5",
+      "fbx_sha256": "035504b86bec7d2245391331abb52618cddf0e116f1ff1c4cf96c55742d1baf8",
+      "mesh_objects": [
+        {
+          "name": "Mesh_0",
+          "vertices": 3971,
+          "faces": 9993,
+          "triangles": 9993,
+          "uv_layers": 1,
+          "material_slots": 1,
+          "boundary_edges": 63,
+          "non_manifold_edges": 63,
+          "origin_world": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        }
+      ],
+      "total_triangles": 9993,
+      "mesh_object_count": 1,
+      "source_bounds_blender_units": {
+        "min": [
+          -0.964057981967926,
+          -0.47663602232933044,
+          -0.9217659831047058
+        ],
+        "max": [
+          0.9634119868278503,
+          0.5317620635032654,
+          0.886152982711792
+        ],
+        "size_xyz": [
+          1.9274699687957764,
+          1.0083980560302734,
+          1.8079190254211426
+        ]
+      },
+      "scale_status": "Imported dimensions only; physical metre scale, origin, front and placement are NOT approved. Objects were not transformed for preview.",
+      "materials": [
+        "Material.001"
+      ],
+      "images": [
+        {
+          "name": "Image_0",
+          "filepath_basename": "Image_0.jpg",
+          "resolution": [
+            2048,
+            2048
+          ],
+          "available": true
+        }
+      ],
+      "armatures": 0,
+      "actions": 0,
+      "review_status": "intake-candidate; no runtime or design approval",
+      "previews": [
+        "front-assumed.png",
+        "right.png",
+        "back.png",
+        "left.png"
+      ],
+      "geometry_fingerprint": "cfc30ddac87a91d5e3b0925d6663a688a8a0465f9889311a048c318f3174d15a",
+      "material_texture_links": [
+        {
+          "name": "Material.001",
+          "texture_nodes": [
+            {
+              "image": "Image_0",
+              "file": "Image_0.jpg",
+              "links": [
+                {
+                  "from": "Color",
+                  "to_type": "BSDF_PRINCIPLED",
+                  "to_socket": "Base Color"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "display_name": "Blue rose garden door panel",
+      "category": "Doors and wall panels",
+      "proposed_reuse": "Garden/door colour variant candidate.",
+      "visual_findings": [
+        "Blue arched rose-decorated panel and planted base, visually reading as a closed door.",
+        "Identical measured geometry fingerprint to the green panel; keep both texture variants. UV data was not fingerprinted.",
+        "Do not infer door motion or glass transmission from the texture."
+      ],
+      "visual_review_method": "Manual inspection of one small four-angle rendered preview per asset; no batch source-image loading.",
+      "preview_file": "previews/UPL-6F2ACB9A029D.png",
+      "preview_sha256": "82e1be74cd59e9811b74d2ac245248ec436533cffe879c85170b65766fb45388",
+      "approval": "Candidate only; final design, metre-scale fit, topology repair and runtime acceptance pending.",
+      "source_alias_names": [
+        "Meshy_AI__Object_Charmi_1016065945_texture_fbx.zip"
+      ]
+    },
+    {
+      "candidate_id": "UPL-AEB4347F477B",
+      "source_name": "Meshy_AI_Stone_Lantern_1016065234_texture_fbx.zip",
+      "source_zip_sha256": "aeb4347f477bacf7325669b6195875ff7737acba93575202d0166bd1b1edf1e3",
+      "fbx_sha256": "3ba94833dc212049a26e2b60a460545c28dfc14d6546df000fbb753e38034cf1",
+      "mesh_objects": [
+        {
+          "name": "Mesh_0",
+          "vertices": 105734,
+          "faces": 212061,
+          "triangles": 212061,
+          "uv_layers": 1,
+          "material_slots": 1,
+          "boundary_edges": 20,
+          "non_manifold_edges": 38,
+          "origin_world": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        }
+      ],
+      "total_triangles": 212061,
+      "mesh_object_count": 1,
+      "source_bounds_blender_units": {
+        "min": [
+          -0.5782279968261719,
+          -0.5735060572624207,
+          -1.0011199712753296
+        ],
+        "max": [
+          0.5753430128097534,
+          0.5742440819740295,
+          0.9939299821853638
+        ],
+        "size_xyz": [
+          1.1535710096359253,
+          1.1477501392364502,
+          1.9950499534606934
+        ]
+      },
+      "scale_status": "Imported dimensions only; physical metre scale, origin, front and placement are NOT approved. Objects were not transformed for preview.",
+      "materials": [
+        "Material.001"
+      ],
+      "images": [
+        {
+          "name": "Image_0",
+          "filepath_basename": "Image_0.jpg",
+          "resolution": [
+            2048,
+            2048
+          ],
+          "available": true
+        }
+      ],
+      "armatures": 0,
+      "actions": 0,
+      "review_status": "intake-candidate; no runtime or design approval",
+      "previews": [
+        "front-assumed.png",
+        "right.png",
+        "back.png",
+        "left.png"
+      ],
+      "geometry_fingerprint": "4cb57ab58ddd1f05308e1c5504da7855d4296770766d86eb6f42817aec5da4cd",
+      "material_texture_links": [
+        {
+          "name": "Material.001",
+          "texture_nodes": [
+            {
+              "image": "Image_0",
+              "file": "Image_0.jpg",
+              "links": [
+                {
+                  "from": "Color",
+                  "to_type": "BSDF_PRINCIPLED",
+                  "to_socket": "Base Color"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "display_name": "Stone garden lantern",
+      "category": "Garden and terrain",
+      "proposed_reuse": "Pagoda/temple/garden candidate; preserve the local stone/brass grammar.",
+      "visual_findings": [
+        "Square stone roof and base, open lattice lantern body, tassel-like details.",
+        "212k triangles is too expensive for unrestricted repeated use; prepare lower-detail variants and simple base collision.",
+        "No working light, emission/fixture interaction or runtime effect has been established."
+      ],
+      "visual_review_method": "Manual inspection of one small four-angle rendered preview per asset; no batch source-image loading.",
+      "preview_file": "previews/UPL-AEB4347F477B.png",
+      "preview_sha256": "d097b9f644609214ffed9c49fc3b5916771b4bdef25fff1595947231afe1ea03",
+      "approval": "Candidate only; final design, metre-scale fit, topology repair and runtime acceptance pending.",
+      "source_alias_names": [
+        "Meshy_AI_Stone_Lantern_1016065234_texture_fbx.zip"
+      ]
+    },
+    {
+      "candidate_id": "UPL-EC5831420311",
+      "source_name": "Meshy_AI_Path_to_the_Heavens_P_1016065217_texture_fbx.zip",
+      "source_zip_sha256": "ec5831420311c599bb01ac90a6ded3ba7368bba46279abe4fea309ab8ee5c7ba",
+      "fbx_sha256": "f0cdc25dc48861ffa07474616b7857d971d5e0c52630e40477d1558618a200bf",
+      "mesh_objects": [
+        {
+          "name": "Mesh_0",
+          "vertices": 54019,
+          "faces": 108504,
+          "triangles": 108504,
+          "uv_layers": 1,
+          "material_slots": 1,
+          "boundary_edges": 0,
+          "non_manifold_edges": 3,
+          "origin_world": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        }
+      ],
+      "total_triangles": 108504,
+      "mesh_object_count": 1,
+      "source_bounds_blender_units": {
+        "min": [
+          -1.0003999471664429,
+          -0.2187340408563614,
+          -0.9738550186157227
+        ],
+        "max": [
+          1.000830054283142,
+          0.2189900428056717,
+          0.9365800023078918
+        ],
+        "size_xyz": [
+          2.001230001449585,
+          0.4377240836620331,
+          1.9104349613189697
+        ]
+      },
+      "scale_status": "Imported dimensions only; physical metre scale, origin, front and placement are NOT approved. Objects were not transformed for preview.",
+      "materials": [
+        "Material.001"
+      ],
+      "images": [
+        {
+          "name": "Image_0",
+          "filepath_basename": "Image_0.jpg",
+          "resolution": [
+            2048,
+            2048
+          ],
+          "available": true
+        }
+      ],
+      "armatures": 0,
+      "actions": 0,
+      "review_status": "intake-candidate; no runtime or design approval",
+      "previews": [
+        "front-assumed.png",
+        "right.png",
+        "back.png",
+        "left.png"
+      ],
+      "geometry_fingerprint": "b370e13253bfc6e76e50134317f994576d35f31b83f1a98950f12109132bc52c",
+      "material_texture_links": [
+        {
+          "name": "Material.001",
+          "texture_nodes": [
+            {
+              "image": "Image_0",
+              "file": "Image_0.jpg",
+              "links": [
+                {
+                  "from": "Color",
+                  "to_type": "BSDF_PRINCIPLED",
+                  "to_socket": "Base Color"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "display_name": "Mountain-painted folding screen",
+      "category": "Furniture and buildings",
+      "proposed_reuse": "Selected interior/gallery decoration candidate.",
+      "visual_findings": [
+        "Four folded pale/gold panels with mountain imagery; the filename does not describe a path or portal mesh.",
+        "108k triangles is heavy for a screen; use a simpler panel substrate and preserve the artwork.",
+        "One mesh object, no working hinges or folding animation."
+      ],
+      "visual_review_method": "Manual inspection of one small four-angle rendered preview per asset; no batch source-image loading.",
+      "preview_file": "previews/UPL-EC5831420311.png",
+      "preview_sha256": "4abac602f8f8834f27091d56fe71cae26cc0fe3900cf95935c4b75f354c66c10",
+      "approval": "Candidate only; final design, metre-scale fit, topology repair and runtime acceptance pending.",
+      "source_alias_names": [
+        "Meshy_AI_Path_to_the_Heavens_P_1016065217_texture_fbx.zip"
+      ]
+    },
+    {
+      "candidate_id": "UPL-74F4D19C5CE3",
+      "source_name": "Meshy_AI_stone_henge_1016064128_texture_fbx.zip",
+      "source_zip_sha256": "74f4d19c5ce3ebf32d4157a8f177c623f512ba3bef8dc03205ee8e48a6ebe634",
+      "fbx_sha256": "80da73373dc3ec02b82658222cb00d4d4d2574e14123b917c10768655ecb4539",
+      "mesh_objects": [
+        {
+          "name": "Mesh_0",
+          "vertices": 223840,
+          "faces": 447406,
+          "triangles": 447406,
+          "uv_layers": 1,
+          "material_slots": 1,
+          "boundary_edges": 119,
+          "non_manifold_edges": 197,
+          "origin_world": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        }
+      ],
+      "total_triangles": 447406,
+      "mesh_object_count": 1,
+      "source_bounds_blender_units": {
+        "min": [
+          -0.9514899849891663,
+          -0.9074199795722961,
+          -0.2807590365409851
+        ],
+        "max": [
+          0.9453009963035583,
+          0.9320909976959229,
+          0.26465702056884766
+        ],
+        "size_xyz": [
+          1.8967909812927246,
+          1.8395109176635742,
+          0.5454160571098328
+        ]
+      },
+      "scale_status": "Imported dimensions only; physical metre scale, origin, front and placement are NOT approved. Objects were not transformed for preview.",
+      "materials": [
+        "Material.001"
+      ],
+      "images": [
+        {
+          "name": "Image_0",
+          "filepath_basename": "Image_0.jpg",
+          "resolution": [
+            2048,
+            2048
+          ],
+          "available": true
+        },
+        {
+          "name": "Image_2",
+          "filepath_basename": "Image_2.jpg",
+          "resolution": [
+            2048,
+            2048
+          ],
+          "available": true
+        },
+        {
+          "name": "texture_0_metallic.png",
+          "filepath_basename": "texture_0_metallic.png",
+          "resolution": [
+            2048,
+            2048
+          ],
+          "available": true
+        },
+        {
+          "name": "texture_0_roughness.png",
+          "filepath_basename": "texture_0_roughness.png",
+          "resolution": [
+            2048,
+            2048
+          ],
+          "available": true
+        }
+      ],
+      "armatures": 0,
+      "actions": 0,
+      "review_status": "intake-candidate; no runtime or design approval",
+      "previews": [
+        "front-assumed.png",
+        "right.png",
+        "back.png",
+        "left.png"
+      ],
+      "geometry_fingerprint": "e3a775279e30efc8c2e00a608d50c17bfaa910d3ba04e109aba486a20c4021c2",
+      "material_texture_links": [
+        {
+          "name": "Material.001",
+          "texture_nodes": [
+            {
+              "image": "Image_0",
+              "file": "Image_0.jpg",
+              "links": [
+                {
+                  "from": "Color",
+                  "to_type": "BSDF_PRINCIPLED",
+                  "to_socket": "Base Color"
+                }
+              ]
+            },
+            {
+              "image": "Image_2",
+              "file": "Image_2.jpg",
+              "links": [
+                {
+                  "from": "Color",
+                  "to_type": "NORMAL_MAP",
+                  "to_socket": "Color"
+                }
+              ]
+            },
+            {
+              "image": "texture_0_roughness.png",
+              "file": "texture_0_roughness.png",
+              "links": [
+                {
+                  "from": "Color",
+                  "to_type": "BSDF_PRINCIPLED",
+                  "to_socket": "Roughness"
+                }
+              ]
+            },
+            {
+              "image": "texture_0_metallic.png",
+              "file": "texture_0_metallic.png",
+              "links": [
+                {
+                  "from": "Color",
+                  "to_type": "BSDF_PRINCIPLED",
+                  "to_socket": "Metallic"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "display_name": "Mossy standing-stone circle",
+      "category": "Garden and terrain",
+      "proposed_reuse": "Forest/ruin-court point-of-interest candidate; no new map anchor assigned.",
+      "visual_findings": [
+        "Complete mossy stone circle with standing stones and lintels, visibly open centre.",
+        "447k triangles needs optimization and compound/simple stone collision, not one hull filling the centre.",
+        "Actual walkable gaps and landmark scale remain to measure."
+      ],
+      "visual_review_method": "Manual inspection of one small four-angle rendered preview per asset; no batch source-image loading.",
+      "preview_file": "previews/UPL-74F4D19C5CE3.png",
+      "preview_sha256": "ff3688fa1f0c8353e3bae0d6cbe980c0e6b9f4033797f47028de8b12da23ee46",
+      "approval": "Candidate only; final design, metre-scale fit, topology repair and runtime acceptance pending.",
+      "source_alias_names": [
+        "Meshy_AI_stone_henge_1016064128_texture_fbx.zip"
+      ]
+    },
+    {
+      "candidate_id": "UPL-777518144B3A",
+      "source_name": "Meshy_AI_Gilded_Baroque_Flouri_1016063604_texture_fbx (1).zip",
+      "source_zip_sha256": "777518144b3a504c3f6bfe34b2907458c97a2c6bdf8d69f31ae3db799f1410ef",
+      "fbx_sha256": "51e8237d074c234f5b89b5f5c1aec0e185e31b3eda7bb027eb571db693879829",
+      "mesh_objects": [
+        {
+          "name": "Mesh_0",
+          "vertices": 104156,
+          "faces": 208304,
+          "triangles": 208304,
+          "uv_layers": 1,
+          "material_slots": 1,
+          "boundary_edges": 0,
+          "non_manifold_edges": 0,
+          "origin_world": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        }
+      ],
+      "total_triangles": 208304,
+      "mesh_object_count": 1,
+      "source_bounds_blender_units": {
+        "min": [
+          -0.950626015663147,
+          -0.08290201425552368,
+          -0.35262298583984375
+        ],
+        "max": [
+          0.9486150145530701,
+          0.0846560150384903,
+          0.35023900866508484
+        ],
+        "size_xyz": [
+          1.8992409706115723,
+          0.16755802929401398,
+          0.702862024307251
+        ]
+      },
+      "scale_status": "Imported dimensions only; physical metre scale, origin, front and placement are NOT approved. Objects were not transformed for preview.",
+      "materials": [
+        "Material.001"
+      ],
+      "images": [
+        {
+          "name": "Image_0",
+          "filepath_basename": "Image_0.jpg",
+          "resolution": [
+            2048,
+            2048
+          ],
+          "available": true
+        },
+        {
+          "name": "Image_2",
+          "filepath_basename": "Image_2.jpg",
+          "resolution": [
+            2048,
+            2048
+          ],
+          "available": true
+        },
+        {
+          "name": "Image_3",
+          "filepath_basename": "Image_3.jpg",
+          "resolution": [
+            2048,
+            2048
+          ],
+          "available": true
+        },
+        {
+          "name": "texture_0_metallic.png",
+          "filepath_basename": "texture_0_metallic.png",
+          "resolution": [
+            2048,
+            2048
+          ],
+          "available": true
+        },
+        {
+          "name": "texture_0_roughness.png",
+          "filepath_basename": "texture_0_roughness.png",
+          "resolution": [
+            2048,
+            2048
+          ],
+          "available": true
+        }
+      ],
+      "armatures": 0,
+      "actions": 0,
+      "review_status": "intake-candidate; no runtime or design approval",
+      "previews": [
+        "front-assumed.png",
+        "right.png",
+        "back.png",
+        "left.png"
+      ],
+      "geometry_fingerprint": "e4d16c6a54de975af70efe0eee2f0191f35ca8e253d7db7cfe187b9eae9f4673",
+      "material_texture_links": [
+        {
+          "name": "Material.001",
+          "texture_nodes": [
+            {
+              "image": "Image_0",
+              "file": "Image_0.jpg",
+              "links": [
+                {
+                  "from": "Color",
+                  "to_type": "BSDF_PRINCIPLED",
+                  "to_socket": "Base Color"
+                }
+              ]
+            },
+            {
+              "image": "Image_2",
+              "file": "Image_2.jpg",
+              "links": [
+                {
+                  "from": "Color",
+                  "to_type": "NORMAL_MAP",
+                  "to_socket": "Color"
+                }
+              ]
+            },
+            {
+              "image": "texture_0_roughness.png",
+              "file": "texture_0_roughness.png",
+              "links": [
+                {
+                  "from": "Color",
+                  "to_type": "BSDF_PRINCIPLED",
+                  "to_socket": "Roughness"
+                }
+              ]
+            },
+            {
+              "image": "texture_0_metallic.png",
+              "file": "texture_0_metallic.png",
+              "links": [
+                {
+                  "from": "Color",
+                  "to_type": "BSDF_PRINCIPLED",
+                  "to_socket": "Metallic"
+                }
+              ]
+            },
+            {
+              "image": "Image_3",
+              "file": "Image_3.jpg",
+              "links": [
+                {
+                  "from": "Color",
+                  "to_type": "BSDF_PRINCIPLED",
+                  "to_socket": "Emission Color"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "display_name": "Horizontal gold foliate flourish",
+      "category": "Gold architectural ornament",
+      "proposed_reuse": "Wall/furniture/cornice overlay candidate.",
+      "visual_findings": [
+        "Shallow gold scrolling leaf ornament with relatively flat rear mounting face.",
+        "208k triangles is excessive for a small repeated overlay; bake/retopologize and add LODs.",
+        "Mount against a host; no independent detailed collision needed."
+      ],
+      "visual_review_method": "Manual inspection of one small four-angle rendered preview per asset; no batch source-image loading.",
+      "preview_file": "previews/UPL-777518144B3A.png",
+      "preview_sha256": "349e40d75a5f82b36e1ba6b06c1860e88358052579948488a80557e72d2ac1e5",
+      "approval": "Candidate only; final design, metre-scale fit, topology repair and runtime acceptance pending.",
+      "source_alias_names": [
+        "Meshy_AI_Gilded_Baroque_Flouri_1016063604_texture_fbx (1).zip",
+        "Meshy_AI_Gilded_Baroque_Flouri_1016063604_texture_fbx.zip"
+      ]
+    },
+    {
+      "candidate_id": "UPL-761E04C7346A",
+      "source_name": "Meshy_AI_Gothic_Cathedral_1016063629_texture_fbx (1).zip",
+      "source_zip_sha256": "761e04c7346a8b0668d842e9892d8e31df755889939e266865ef3c7aed711698",
+      "fbx_sha256": "a90cbcd154ae093734c21191f6b0a0be6a36f20191aed1fc8f9bcd4fcfb5cec9",
+      "mesh_objects": [
+        {
+          "name": "Mesh1.0",
+          "vertices": 14509,
+          "faces": 29669,
+          "triangles": 29669,
+          "uv_layers": 1,
+          "material_slots": 1,
+          "boundary_edges": 201,
+          "non_manifold_edges": 384,
+          "origin_world": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        }
+      ],
+      "total_triangles": 29669,
+      "mesh_object_count": 1,
+      "source_bounds_blender_units": {
+        "min": [
+          -0.5057830214500427,
+          -0.7995240688323975,
+          -1.004183053970337
+        ],
+        "max": [
+          0.48584800958633423,
+          0.8728820085525513,
+          0.9832561016082764
+        ],
+        "size_xyz": [
+          0.991631031036377,
+          1.6724060773849487,
+          1.9874391555786133
+        ]
+      },
+      "scale_status": "Imported dimensions only; physical metre scale, origin, front and placement are NOT approved. Objects were not transformed for preview.",
+      "materials": [
+        "Material.001"
+      ],
+      "images": [
+        {
+          "name": "Baked_BaseColor",
+          "filepath_basename": "Baked_BaseColor.png",
+          "resolution": [
+            2048,
+            2048
+          ],
+          "available": true
+        },
+        {
+          "name": "Baked_BaseColor.001",
+          "filepath_basename": "Baked_BaseColor.png",
+          "resolution": [
+            2048,
+            2048
+          ],
+          "available": true
+        },
+        {
+          "name": "texture_0_metallic.png",
+          "filepath_basename": "texture_0_metallic.png",
+          "resolution": [
+            2048,
+            2048
+          ],
+          "available": true
+        },
+        {
+          "name": "texture_0_roughness.png",
+          "filepath_basename": "texture_0_roughness.png",
+          "resolution": [
+            2048,
+            2048
+          ],
+          "available": true
+        }
+      ],
+      "armatures": 0,
+      "actions": 0,
+      "review_status": "intake-candidate; no runtime or design approval",
+      "previews": [
+        "front-assumed.png",
+        "right.png",
+        "back.png",
+        "left.png"
+      ],
+      "geometry_fingerprint": "568019b10a3eca4fc9d0539046184a8f4049453c4f31c8d0aafd9676ed6ef211",
+      "material_texture_links": [
+        {
+          "name": "Material.001",
+          "texture_nodes": [
+            {
+              "image": "Baked_BaseColor",
+              "file": "Baked_BaseColor.png",
+              "links": [
+                {
+                  "from": "Color",
+                  "to_type": "BSDF_PRINCIPLED",
+                  "to_socket": "Base Color"
+                }
+              ]
+            },
+            {
+              "image": "texture_0_roughness.png",
+              "file": "texture_0_roughness.png",
+              "links": [
+                {
+                  "from": "Color",
+                  "to_type": "BSDF_PRINCIPLED",
+                  "to_socket": "Roughness"
+                }
+              ]
+            },
+            {
+              "image": "texture_0_metallic.png",
+              "file": "texture_0_metallic.png",
+              "links": [
+                {
+                  "from": "Color",
+                  "to_type": "BSDF_PRINCIPLED",
+                  "to_socket": "Metallic"
+                }
+              ]
+            },
+            {
+              "image": "Baked_BaseColor.001",
+              "file": "Baked_BaseColor.png",
+              "links": [
+                {
+                  "from": "Alpha",
+                  "to_type": "BSDF_PRINCIPLED",
+                  "to_socket": "Alpha"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "display_name": "Twin-spire Gothic cathedral shell",
+      "category": "Furniture and buildings",
+      "proposed_reuse": "Distant architecture/silhouette candidate only; does not automatically replace Star Chapel.",
+      "visual_findings": [
+        "Whole grey stone cathedral shell with twin front spires, nave and rear apse.",
+        "The supplied whole shell is not a modular kit or a verified enterable interior.",
+        "Metric scale, doorway cuts, palette and source consistency need review before placement."
+      ],
+      "visual_review_method": "Manual inspection of one small four-angle rendered preview per asset; no batch source-image loading.",
+      "preview_file": "previews/UPL-761E04C7346A.png",
+      "preview_sha256": "4a2ea48d9aeadaa5bc516f11c26d27a156208d48dc456246c4e8db86cd25f163",
+      "approval": "Candidate only; final design, metre-scale fit, topology repair and runtime acceptance pending.",
+      "source_alias_names": [
+        "Meshy_AI_Gothic_Cathedral_1016063629_texture_fbx (1).zip",
+        "Meshy_AI_Gothic_Cathedral_1016063629_texture_fbx.zip"
+      ]
+    },
+    {
+      "candidate_id": "UPL-C4FF909D561B",
+      "source_name": "Meshy_AI_Baroque_Flourish_1016063642_texture_fbx (1).zip",
+      "source_zip_sha256": "c4ff909d561b95a6312a0c75b94ac9e60412e6d3e408ea2795c09f79d1b002a1",
+      "fbx_sha256": "5be8bc69fd6d94a47a94dfcd5684ce0cf72f34dd78a88c740e30ffc1edbeb653",
+      "mesh_objects": [
+        {
+          "name": "Mesh_0",
+          "vertices": 121639,
+          "faces": 243317,
+          "triangles": 243317,
+          "uv_layers": 1,
+          "material_slots": 1,
+          "boundary_edges": 91,
+          "non_manifold_edges": 195,
+          "origin_world": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        }
+      ],
+      "total_triangles": 243317,
+      "mesh_object_count": 1,
+      "source_bounds_blender_units": {
+        "min": [
+          -0.4278469979763031,
+          -0.06262504309415817,
+          -0.9678149819374084
+        ],
+        "max": [
+          0.4316129982471466,
+          0.060017041862010956,
+          0.951839029788971
+        ],
+        "size_xyz": [
+          0.8594599962234497,
+          0.12264208495616913,
+          1.9196540117263794
+        ]
+      },
+      "scale_status": "Imported dimensions only; physical metre scale, origin, front and placement are NOT approved. Objects were not transformed for preview.",
+      "materials": [
+        "Material.001"
+      ],
+      "images": [
+        {
+          "name": "Image_0",
+          "filepath_basename": "Image_0.jpg",
+          "resolution": [
+            2048,
+            2048
+          ],
+          "available": true
+        },
+        {
+          "name": "Image_2",
+          "filepath_basename": "Image_2.jpg",
+          "resolution": [
+            2048,
+            2048
+          ],
+          "available": true
+        },
+        {
+          "name": "texture_0_metallic.png",
+          "filepath_basename": "texture_0_metallic.png",
+          "resolution": [
+            2048,
+            2048
+          ],
+          "available": true
+        },
+        {
+          "name": "texture_0_roughness.png",
+          "filepath_basename": "texture_0_roughness.png",
+          "resolution": [
+            2048,
+            2048
+          ],
+          "available": true
+        }
+      ],
+      "armatures": 0,
+      "actions": 0,
+      "review_status": "intake-candidate; no runtime or design approval",
+      "previews": [
+        "front-assumed.png",
+        "right.png",
+        "back.png",
+        "left.png"
+      ],
+      "geometry_fingerprint": "3b1b9f21358731d9bb11dd12d2724d96eb0f2604f7df26361c3a078695617542",
+      "material_texture_links": [
+        {
+          "name": "Material.001",
+          "texture_nodes": [
+            {
+              "image": "Image_0",
+              "file": "Image_0.jpg",
+              "links": [
+                {
+                  "from": "Color",
+                  "to_type": "BSDF_PRINCIPLED",
+                  "to_socket": "Base Color"
+                }
+              ]
+            },
+            {
+              "image": "Image_2",
+              "file": "Image_2.jpg",
+              "links": [
+                {
+                  "from": "Color",
+                  "to_type": "NORMAL_MAP",
+                  "to_socket": "Color"
+                }
+              ]
+            },
+            {
+              "image": "texture_0_roughness.png",
+              "file": "texture_0_roughness.png",
+              "links": [
+                {
+                  "from": "Color",
+                  "to_type": "BSDF_PRINCIPLED",
+                  "to_socket": "Roughness"
+                }
+              ]
+            },
+            {
+              "image": "texture_0_metallic.png",
+              "file": "texture_0_metallic.png",
+              "links": [
+                {
+                  "from": "Color",
+                  "to_type": "BSDF_PRINCIPLED",
+                  "to_socket": "Metallic"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "display_name": "Vertical gold foliate flourish",
+      "category": "Gold architectural ornament",
+      "proposed_reuse": "Wall/panel/corner overlay candidate.",
+      "visual_findings": [
+        "Tall shallow gold scrolling leaf ornament with flat-looking back.",
+        "243k triangles needs reduction before repeated use.",
+        "Check attachment depth; preserve source-supported local motif rather than applying it everywhere."
+      ],
+      "visual_review_method": "Manual inspection of one small four-angle rendered preview per asset; no batch source-image loading.",
+      "preview_file": "previews/UPL-C4FF909D561B.png",
+      "preview_sha256": "7296dade1ce589edf5f798fd6294ae31311d54187bbb23d06036f87c1fdc7436",
+      "approval": "Candidate only; final design, metre-scale fit, topology repair and runtime acceptance pending.",
+      "source_alias_names": [
+        "Meshy_AI_Baroque_Flourish_1016063642_texture_fbx (1).zip",
+        "Meshy_AI_Baroque_Flourish_1016063642_texture_fbx.zip"
+      ]
+    },
+    {
+      "candidate_id": "UPL-752BBF86A60F",
+      "source_name": "Meshy_AI_Golden_Fleur_de_lis_1016063557_texture_fbx.zip",
+      "source_zip_sha256": "752bbf86a60fc74f80ec2f3fbc084a254fbe7152d2a567fe0de79f258e882dd1",
+      "fbx_sha256": "00bc099827553cf594af82db580e46593e7dcd84e8a25f026b9d32d1dd2d3c2a",
+      "mesh_objects": [
+        {
+          "name": "Mesh_0",
+          "vertices": 63079,
+          "faces": 126131,
+          "triangles": 126131,
+          "uv_layers": 1,
+          "material_slots": 1,
+          "boundary_edges": 55,
+          "non_manifold_edges": 87,
+          "origin_world": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        }
+      ],
+      "total_triangles": 126131,
+      "mesh_object_count": 1,
+      "source_bounds_blender_units": {
+        "min": [
+          -0.5908920168876648,
+          -0.15676012635231018,
+          -0.950524091720581
+        ],
+        "max": [
+          0.5889859795570374,
+          0.1593301147222519,
+          0.9489841461181641
+        ],
+        "size_xyz": [
+          1.1798779964447021,
+          0.3160902261734009,
+          1.8995082378387451
+        ]
+      },
+      "scale_status": "Imported dimensions only; physical metre scale, origin, front and placement are NOT approved. Objects were not transformed for preview.",
+      "materials": [
+        "Material.001"
+      ],
+      "images": [
+        {
+          "name": "Image_0",
+          "filepath_basename": "Image_0.jpg",
+          "resolution": [
+            2048,
+            2048
+          ],
+          "available": true
+        },
+        {
+          "name": "Image_2",
+          "filepath_basename": "Image_2.jpg",
+          "resolution": [
+            2048,
+            2048
+          ],
+          "available": true
+        },
+        {
+          "name": "Image_3",
+          "filepath_basename": "Image_3.jpg",
+          "resolution": [
+            2048,
+            2048
+          ],
+          "available": true
+        },
+        {
+          "name": "texture_0_metallic.png",
+          "filepath_basename": "texture_0_metallic.png",
+          "resolution": [
+            2048,
+            2048
+          ],
+          "available": true
+        },
+        {
+          "name": "texture_0_roughness.png",
+          "filepath_basename": "texture_0_roughness.png",
+          "resolution": [
+            2048,
+            2048
+          ],
+          "available": true
+        }
+      ],
+      "armatures": 0,
+      "actions": 0,
+      "review_status": "intake-candidate; no runtime or design approval",
+      "previews": [
+        "front-assumed.png",
+        "right.png",
+        "back.png",
+        "left.png"
+      ],
+      "geometry_fingerprint": "fc8c26e5ccbb6d3b758220bd3b321ff28b96f64d7ba8274433024d84e165f1ec",
+      "material_texture_links": [
+        {
+          "name": "Material.001",
+          "texture_nodes": [
+            {
+              "image": "Image_0",
+              "file": "Image_0.jpg",
+              "links": [
+                {
+                  "from": "Color",
+                  "to_type": "BSDF_PRINCIPLED",
+                  "to_socket": "Base Color"
+                }
+              ]
+            },
+            {
+              "image": "Image_2",
+              "file": "Image_2.jpg",
+              "links": [
+                {
+                  "from": "Color",
+                  "to_type": "NORMAL_MAP",
+                  "to_socket": "Color"
+                }
+              ]
+            },
+            {
+              "image": "texture_0_roughness.png",
+              "file": "texture_0_roughness.png",
+              "links": [
+                {
+                  "from": "Color",
+                  "to_type": "BSDF_PRINCIPLED",
+                  "to_socket": "Roughness"
+                }
+              ]
+            },
+            {
+              "image": "texture_0_metallic.png",
+              "file": "texture_0_metallic.png",
+              "links": [
+                {
+                  "from": "Color",
+                  "to_type": "BSDF_PRINCIPLED",
+                  "to_socket": "Metallic"
+                }
+              ]
+            },
+            {
+              "image": "Image_3",
+              "file": "Image_3.jpg",
+              "links": [
+                {
+                  "from": "Color",
+                  "to_type": "BSDF_PRINCIPLED",
+                  "to_socket": "Emission Color"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "display_name": "Gold fleur-de-lis relief",
+      "category": "Gold architectural ornament",
+      "proposed_reuse": "Small heraldic panel/finial overlay candidate.",
+      "visual_findings": [
+        "Gold three-lobed fleur-de-lis with shallow relief and flat rear.",
+        "126k triangles is heavy for an emblem; use a simpler mesh and baked detail.",
+        "Set its actual decorative size from the host, not the normalized import."
+      ],
+      "visual_review_method": "Manual inspection of one small four-angle rendered preview per asset; no batch source-image loading.",
+      "preview_file": "previews/UPL-752BBF86A60F.png",
+      "preview_sha256": "728cf7a0abbabc9decee3efc68fc69bb6fd431a5c6881bbc68909b8cb62f1dfd",
+      "approval": "Candidate only; final design, metre-scale fit, topology repair and runtime acceptance pending.",
+      "source_alias_names": [
+        "Meshy_AI_Golden_Fleur_de_lis_1016063557_texture_fbx.zip"
+      ]
+    },
+    {
+      "candidate_id": "UPL-432F90D7091E",
+      "source_name": "Meshy_AI_rocky_terrain_with_te_1016071134_texture_fbx.zip",
+      "source_zip_sha256": "432f90d7091e4245be665eb862f669d4eaca437ece282064f000a809393d6f8a",
+      "fbx_sha256": "39ebe821574b3b0023fe412f1ed3f1f44351d0bcf448c9ba55229531645ddd4d",
+      "mesh_objects": [
+        {
+          "name": "Mesh_0",
+          "vertices": 277483,
+          "faces": 556829,
+          "triangles": 556829,
+          "uv_layers": 1,
+          "material_slots": 1,
+          "boundary_edges": 19,
+          "non_manifold_edges": 19,
+          "origin_world": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        }
+      ],
+      "total_triangles": 556829,
+      "mesh_object_count": 1,
+      "source_bounds_blender_units": {
+        "min": [
+          -0.9839789867401123,
+          -0.8078749775886536,
+          -0.443865031003952
+        ],
+        "max": [
+          0.9961370229721069,
+          0.8198000192642212,
+          0.43769803643226624
+        ],
+        "size_xyz": [
+          1.9801160097122192,
+          1.6276750564575195,
+          0.8815630674362183
+        ]
+      },
+      "scale_status": "Imported dimensions only; physical metre scale, origin, front and placement are NOT approved. Objects were not transformed for preview.",
+      "materials": [
+        "Material.001"
+      ],
+      "images": [
+        {
+          "name": "Image_0",
+          "filepath_basename": "Image_0.jpg",
+          "resolution": [
+            2048,
+            2048
+          ],
+          "available": true
+        }
+      ],
+      "armatures": 0,
+      "actions": 0,
+      "review_status": "intake-candidate; no runtime or design approval",
+      "previews": [
+        "front-assumed.png",
+        "right.png",
+        "back.png",
+        "left.png"
+      ],
+      "geometry_fingerprint": "01b35ce8fb742fae12726f56ea79006da322d6f13b77f0d2959a726ae5af6f04",
+      "material_texture_links": [
+        {
+          "name": "Material.001",
+          "texture_nodes": [
+            {
+              "image": "Image_0",
+              "file": "Image_0.jpg",
+              "links": [
+                {
+                  "from": "Color",
+                  "to_type": "BSDF_PRINCIPLED",
+                  "to_socket": "Base Color"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "display_name": "Mossy stepped rock terrace",
+      "category": "Garden and terrain",
+      "proposed_reuse": "Possible Rose Keep cliff-ledge substrate; source/footprint fit pending.",
+      "visual_findings": [
+        "Complete irregular moss-covered rock outcrop with stepped upper shelves.",
+        "556k triangles requires terrain LOD/collision simplification before gameplay use.",
+        "Do not assume its painted steps satisfy the stair contract or that every shelf is walkable."
+      ],
+      "visual_review_method": "Manual inspection of one small four-angle rendered preview per asset; no batch source-image loading.",
+      "preview_file": "previews/UPL-432F90D7091E.png",
+      "preview_sha256": "c3680213cfaf559780b10ea0c714e8486fd72c7ebb89af46312d5d271a5d60af",
+      "approval": "Candidate only; final design, metre-scale fit, topology repair and runtime acceptance pending.",
+      "source_alias_names": [
+        "Meshy_AI_rocky_terrain_with_te_1016071134_texture_fbx.zip"
+      ]
+    }
+  ],
+  "uploads": [
+    {
+      "filename": "Meshy_AI_Royal_Carriage_1016070936_texture_fbx.zip",
+      "status": "blocked-transfer-limit",
+      "candidate_id": null,
+      "zip_sha256": null,
+      "downloaded_bytes": null,
+      "note": "file exceeds the executor transfer limit of 32 MiB"
+    },
+    {
+      "filename": "Unconfirmed 198147.crdownload",
+      "status": "blocked-transfer-limit",
+      "candidate_id": null,
+      "zip_sha256": null,
+      "downloaded_bytes": null,
+      "note": "file exceeds the executor transfer limit of 32 MiB"
+    },
+    {
+      "filename": "Meshy_AI_Golden_Rose_Teacup_1016064856_texture_fbx.zip",
+      "status": "blocked-transfer-limit",
+      "candidate_id": null,
+      "zip_sha256": null,
+      "downloaded_bytes": null,
+      "note": "file exceeds the executor transfer limit of 32 MiB"
+    },
+    {
+      "filename": "Meshy_AI_High_detail_wall_dec_1016065830_texture_fbx.zip",
+      "status": "blocked-transfer-limit",
+      "candidate_id": null,
+      "zip_sha256": null,
+      "downloaded_bytes": null,
+      "note": "file exceeds the executor transfer limit of 32 MiB"
+    },
+    {
+      "filename": "Meshy_AI_Create_a_whimsical_3D_1016070851_texture_fbx.zip",
+      "status": "blocked-transfer-limit",
+      "candidate_id": null,
+      "zip_sha256": null,
+      "downloaded_bytes": null,
+      "note": "file exceeds the executor transfer limit of 32 MiB"
+    },
+    {
+      "filename": "Meshy_AI_An_extravagant_fairy_1016070342_texture_fbx.zip",
+      "status": "downloaded",
+      "candidate_id": "UPL-48B60C2BFC69",
+      "zip_sha256": "48b60c2bfc6998ebf045a21fa927a4ad6c2f376bd845a6a4ce65e1e3367bec46",
+      "downloaded_bytes": 7734338,
+      "note": ""
+    },
+    {
+      "filename": "Meshy_AI_A_very_detailed_and_e_1016065906_texture_fbx.zip",
+      "status": "blocked-transfer-limit",
+      "candidate_id": null,
+      "zip_sha256": null,
+      "downloaded_bytes": null,
+      "note": "file exceeds the executor transfer limit of 32 MiB"
+    },
+    {
+      "filename": "Meshy_AI_For_Diana_This_beauti_1016065910_texture_fbx.zip",
+      "status": "blocked-transfer-limit",
+      "candidate_id": null,
+      "zip_sha256": null,
+      "downloaded_bytes": null,
+      "note": "file exceeds the executor transfer limit of 32 MiB"
+    },
+    {
+      "filename": "Meshy_AI_A_modular_medieval_ho_1016065704_texture_fbx.zip",
+      "status": "blocked-transfer-limit",
+      "candidate_id": null,
+      "zip_sha256": null,
+      "downloaded_bytes": null,
+      "note": "file exceeds the executor transfer limit of 32 MiB"
+    },
+    {
+      "filename": "Meshy_AI_Design_a_regal_prince_1016065928_texture_fbx.zip",
+      "status": "blocked-transfer-limit",
+      "candidate_id": null,
+      "zip_sha256": null,
+      "downloaded_bytes": null,
+      "note": "file exceeds the executor transfer limit of 32 MiB"
+    },
+    {
+      "filename": "Meshy_AI__Object_Ornate_1016070030_texture_fbx.zip",
+      "status": "downloaded",
+      "candidate_id": "UPL-76DA8BB7D7CD",
+      "zip_sha256": "76da8bb7d7cdbd578acf8d042506935d412237c7f2c1dc01c73958ae4b8608f9",
+      "downloaded_bytes": 7054367,
+      "note": ""
+    },
+    {
+      "filename": "Meshy_AI_Object_decorative_wa_1016070038_texture_fbx.zip",
+      "status": "downloaded",
+      "candidate_id": "UPL-AD0FE58DF9FC",
+      "zip_sha256": "ad0fe58df9fc26381a88c9bac8a21892d3edc9e30a164613aa63d1567497c96c",
+      "downloaded_bytes": 4115918,
+      "note": ""
+    },
+    {
+      "filename": "Meshy_AI_Verdant_Ring_of_Stone_1016064743_texture_fbx.zip",
+      "status": "blocked-transfer-limit",
+      "candidate_id": null,
+      "zip_sha256": null,
+      "downloaded_bytes": null,
+      "note": "file exceeds the executor transfer limit of 32 MiB"
+    },
+    {
+      "filename": "Meshy_AI_Crystal_Blossom_Mirro_1016065020_texture_fbx.zip",
+      "status": "blocked-transfer-limit",
+      "candidate_id": null,
+      "zip_sha256": null,
+      "downloaded_bytes": null,
+      "note": "file exceeds the executor transfer limit of 32 MiB"
+    },
+    {
+      "filename": "Meshy_AI__Object_Ornate_1016070022_texture_fbx.zip",
+      "status": "downloaded",
+      "candidate_id": "UPL-98253A473847",
+      "zip_sha256": "98253a4738471963bdce1e63669e956aed5f9b9e0bf85da7af366ad57a1a2be5",
+      "downloaded_bytes": 7408982,
+      "note": ""
+    },
+    {
+      "filename": "Meshy_AI_Luminous_Paper_Flower_1016064832_texture_fbx.zip",
+      "status": "blocked-transfer-limit",
+      "candidate_id": null,
+      "zip_sha256": null,
+      "downloaded_bytes": null,
+      "note": "file exceeds the executor transfer limit of 32 MiB"
+    },
+    {
+      "filename": "Meshy_AI_Enchanted_Forest_Thro_1016065037_texture_fbx.zip",
+      "status": "blocked-transfer-limit",
+      "candidate_id": null,
+      "zip_sha256": null,
+      "downloaded_bytes": null,
+      "note": "file exceeds the executor transfer limit of 32 MiB"
+    },
+    {
+      "filename": "Meshy_AI_Emberkeep_Turret_1016064647_texture_fbx.zip",
+      "status": "blocked-transfer-limit",
+      "candidate_id": null,
+      "zip_sha256": null,
+      "downloaded_bytes": null,
+      "note": "file exceeds the executor transfer limit of 32 MiB"
+    },
+    {
+      "filename": "Meshy_AI__Object_Charmi_1016065951_texture_fbx.zip",
+      "status": "downloaded",
+      "candidate_id": "UPL-5B3AAB3E5537",
+      "zip_sha256": "5b3aab3e5537192da676b2774402010230681c03e642a24fe3bf713c34386b57",
+      "downloaded_bytes": 8544283,
+      "note": ""
+    },
+    {
+      "filename": "Meshy_AI__Object_Charmi_1016065945_texture_fbx.zip",
+      "status": "downloaded",
+      "candidate_id": "UPL-6F2ACB9A029D",
+      "zip_sha256": "6f2acb9a029de62a4d95a26029a338f286c91ec13765abe7cb035a7a64cefae5",
+      "downloaded_bytes": 7939527,
+      "note": ""
+    },
+    {
+      "filename": "Meshy_AI_Enchanted_Lantern_Tre_1016065228_texture_fbx.zip",
+      "status": "blocked-transfer-limit",
+      "candidate_id": null,
+      "zip_sha256": null,
+      "downloaded_bytes": null,
+      "note": "file exceeds the executor transfer limit of 32 MiB"
+    },
+    {
+      "filename": "Meshy_AI_Verdant_Cascade_Fount_1016064122_texture_fbx.zip",
+      "status": "blocked-transfer-limit",
+      "candidate_id": null,
+      "zip_sha256": null,
+      "downloaded_bytes": null,
+      "note": "file exceeds the executor transfer limit of 32 MiB"
+    },
+    {
+      "filename": "Meshy_AI_Magenta_Bonsai_Tree_1016064843_texture_fbx.zip",
+      "status": "blocked-transfer-limit",
+      "candidate_id": null,
+      "zip_sha256": null,
+      "downloaded_bytes": null,
+      "note": "file exceeds the executor transfer limit of 32 MiB"
+    },
+    {
+      "filename": "Meshy_AI_White_Lotus_1016065159_texture_fbx.zip",
+      "status": "blocked-transfer-limit",
+      "candidate_id": null,
+      "zip_sha256": null,
+      "downloaded_bytes": null,
+      "note": "file exceeds the executor transfer limit of 32 MiB"
+    },
+    {
+      "filename": "Meshy_AI_Casa_Encantadora_1016064528_texture_fbx.zip",
+      "status": "blocked-transfer-limit",
+      "candidate_id": null,
+      "zip_sha256": null,
+      "downloaded_bytes": null,
+      "note": "file exceeds the executor transfer limit of 32 MiB"
+    },
+    {
+      "filename": "Meshy_AI_Celestial_Armillary_1016053624_texture_fbx.zip",
+      "status": "blocked-transfer-limit",
+      "candidate_id": null,
+      "zip_sha256": null,
+      "downloaded_bytes": null,
+      "note": "file exceeds the executor transfer limit of 32 MiB"
+    },
+    {
+      "filename": "Meshy_AI_An_english_country_co_1016064115_texture_fbx.zip",
+      "status": "blocked-transfer-limit",
+      "candidate_id": null,
+      "zip_sha256": null,
+      "downloaded_bytes": null,
+      "note": "file exceeds the executor transfer limit of 32 MiB"
+    },
+    {
+      "filename": "Meshy_AI_Yuki_1016065151_texture_fbx.zip",
+      "status": "blocked-transfer-limit",
+      "candidate_id": null,
+      "zip_sha256": null,
+      "downloaded_bytes": null,
+      "note": "file exceeds the executor transfer limit of 32 MiB"
+    },
+    {
+      "filename": "Meshy_AI_Gothic_Iron_Fence_1016065031_texture_fbx.zip",
+      "status": "blocked-transfer-limit",
+      "candidate_id": null,
+      "zip_sha256": null,
+      "downloaded_bytes": null,
+      "note": "file exceeds the executor transfer limit of 32 MiB"
+    },
+    {
+      "filename": "Meshy_AI_Stone_Lantern_1016065234_texture_fbx.zip",
+      "status": "downloaded",
+      "candidate_id": "UPL-AEB4347F477B",
+      "zip_sha256": "aeb4347f477bacf7325669b6195875ff7737acba93575202d0166bd1b1edf1e3",
+      "downloaded_bytes": 17520142,
+      "note": ""
+    },
+    {
+      "filename": "Meshy_AI_Copper_Cloud_Bonsai_1016064823_texture_fbx.zip",
+      "status": "blocked-transfer-limit",
+      "candidate_id": null,
+      "zip_sha256": null,
+      "downloaded_bytes": null,
+      "note": "file exceeds the executor transfer limit of 32 MiB"
+    },
+    {
+      "filename": "Meshy_AI_Path_to_the_Heavens_P_1016065217_texture_fbx.zip",
+      "status": "downloaded",
+      "candidate_id": "UPL-EC5831420311",
+      "zip_sha256": "ec5831420311c599bb01ac90a6ded3ba7368bba46279abe4fea309ab8ee5c7ba",
+      "downloaded_bytes": 11777813,
+      "note": ""
+    },
+    {
+      "filename": "Meshy_AI_Enchanted_Thatch_Cott_1016064146_texture_fbx.zip",
+      "status": "blocked-transfer-limit",
+      "candidate_id": null,
+      "zip_sha256": null,
+      "downloaded_bytes": null,
+      "note": "file exceeds the executor transfer limit of 32 MiB"
+    },
+    {
+      "filename": "Meshy_AI_Stone_Portal_1015064937_texture_fbx.zip",
+      "status": "blocked-transfer-limit",
+      "candidate_id": null,
+      "zip_sha256": null,
+      "downloaded_bytes": null,
+      "note": "file exceeds the executor transfer limit of 32 MiB"
+    },
+    {
+      "filename": "Meshy_AI_Medieval_Cottage_1016064205_texture_fbx.zip",
+      "status": "blocked-transfer-limit",
+      "candidate_id": null,
+      "zip_sha256": null,
+      "downloaded_bytes": null,
+      "note": "file exceeds the executor transfer limit of 32 MiB"
+    },
+    {
+      "filename": "Meshy_AI_Mediterranean_Villa_1016064215_texture_fbx.zip",
+      "status": "blocked-transfer-limit",
+      "candidate_id": null,
+      "zip_sha256": null,
+      "downloaded_bytes": null,
+      "note": "file exceeds the executor transfer limit of 32 MiB"
+    },
+    {
+      "filename": "Meshy_AI_Stone_Serenity_Bridge_1016064055_texture_fbx.zip",
+      "status": "blocked-transfer-limit",
+      "candidate_id": null,
+      "zip_sha256": null,
+      "downloaded_bytes": null,
+      "note": "file exceeds the executor transfer limit of 32 MiB"
+    },
+    {
+      "filename": "Meshy_AI_Koi_Pond_with_Stone_B_1016063804_texture_fbx.zip",
+      "status": "blocked-transfer-limit",
+      "candidate_id": null,
+      "zip_sha256": null,
+      "downloaded_bytes": null,
+      "note": "file exceeds the executor transfer limit of 32 MiB"
+    },
+    {
+      "filename": "Meshy_AI_stone_henge_1016064128_texture_fbx.zip",
+      "status": "downloaded",
+      "candidate_id": "UPL-74F4D19C5CE3",
+      "zip_sha256": "74f4d19c5ce3ebf32d4157a8f177c623f512ba3bef8dc03205ee8e48a6ebe634",
+      "downloaded_bytes": 32651456,
+      "note": ""
+    },
+    {
+      "filename": "Meshy_AI_Vintage_Stone_Villa_1016063859_texture_fbx.zip",
+      "status": "blocked-transfer-limit",
+      "candidate_id": null,
+      "zip_sha256": null,
+      "downloaded_bytes": null,
+      "note": "file exceeds the executor transfer limit of 32 MiB"
+    },
+    {
+      "filename": "Meshy_AI_Cathedral_Render_1016063636_texture_fbx.zip",
+      "status": "blocked-transfer-limit",
+      "candidate_id": null,
+      "zip_sha256": null,
+      "downloaded_bytes": null,
+      "note": "file exceeds the executor transfer limit of 32 MiB"
+    },
+    {
+      "filename": "Meshy_AI_Ancient_Stone_Arch_Br_1016064107_texture_fbx.zip",
+      "status": "blocked-transfer-limit",
+      "candidate_id": null,
+      "zip_sha256": null,
+      "downloaded_bytes": null,
+      "note": "file exceeds the executor transfer limit of 32 MiB"
+    },
+    {
+      "filename": "Meshy_AI_Mosswood_Teardrop_Hou_1016064039_texture_fbx.zip",
+      "status": "blocked-transfer-limit",
+      "candidate_id": null,
+      "zip_sha256": null,
+      "downloaded_bytes": null,
+      "note": "file exceeds the executor transfer limit of 32 MiB"
+    },
+    {
+      "filename": "Meshy_AI_Gilded_Baroque_Flouri_1016063604_texture_fbx (1).zip",
+      "status": "downloaded",
+      "candidate_id": "UPL-777518144B3A",
+      "zip_sha256": "777518144b3a504c3f6bfe34b2907458c97a2c6bdf8d69f31ae3db799f1410ef",
+      "downloaded_bytes": 30871049,
+      "note": ""
+    },
+    {
+      "filename": "Meshy_AI_Leafspire_Cathedral_1016063813_texture_fbx.zip",
+      "status": "blocked-transfer-limit",
+      "candidate_id": null,
+      "zip_sha256": null,
+      "downloaded_bytes": null,
+      "note": "file exceeds the executor transfer limit of 32 MiB"
+    },
+    {
+      "filename": "Meshy_AI_Gothic_Cathedral_1016063629_texture_fbx (1).zip",
+      "status": "downloaded",
+      "candidate_id": "UPL-761E04C7346A",
+      "zip_sha256": "761e04c7346a8b0668d842e9892d8e31df755889939e266865ef3c7aed711698",
+      "downloaded_bytes": 33382283,
+      "note": ""
+    },
+    {
+      "filename": "Meshy_AI_Baroque_Flourish_1016063642_texture_fbx (1).zip",
+      "status": "downloaded",
+      "candidate_id": "UPL-C4FF909D561B",
+      "zip_sha256": "c4ff909d561b95a6312a0c75b94ac9e60412e6d3e408ea2795c09f79d1b002a1",
+      "downloaded_bytes": 27476648,
+      "note": ""
+    },
+    {
+      "filename": "Meshy_AI_Baroque_Flourish_1016063642_texture_fbx.zip",
+      "status": "exact-archive-duplicate",
+      "candidate_id": "UPL-C4FF909D561B",
+      "zip_sha256": "c4ff909d561b95a6312a0c75b94ac9e60412e6d3e408ea2795c09f79d1b002a1",
+      "downloaded_bytes": 27476648,
+      "note": ""
+    },
+    {
+      "filename": "Meshy_AI_Gothic_Cathedral_1016063629_texture_fbx.zip",
+      "status": "exact-archive-duplicate",
+      "candidate_id": "UPL-761E04C7346A",
+      "zip_sha256": "761e04c7346a8b0668d842e9892d8e31df755889939e266865ef3c7aed711698",
+      "downloaded_bytes": 33382283,
+      "note": ""
+    },
+    {
+      "filename": "Meshy_AI_The_Arcane_Gateway_1016063724_texture_fbx.zip",
+      "status": "blocked-transfer-limit",
+      "candidate_id": null,
+      "zip_sha256": null,
+      "downloaded_bytes": null,
+      "note": "file exceeds the executor transfer limit of 32 MiB"
+    },
+    {
+      "filename": "Meshy_AI_Classical_Sculpture_C_1016063618_texture_fbx.zip",
+      "status": "blocked-transfer-limit",
+      "candidate_id": null,
+      "zip_sha256": null,
+      "downloaded_bytes": null,
+      "note": "file exceeds the executor transfer limit of 32 MiB"
+    },
+    {
+      "filename": "Meshy_AI_Gilded_Baroque_Flouri_1016063604_texture_fbx.zip",
+      "status": "exact-archive-duplicate",
+      "candidate_id": "UPL-777518144B3A",
+      "zip_sha256": "777518144b3a504c3f6bfe34b2907458c97a2c6bdf8d69f31ae3db799f1410ef",
+      "downloaded_bytes": 30871049,
+      "note": ""
+    },
+    {
+      "filename": "Meshy_AI_Golden_Fleur_de_lis_1016063557_texture_fbx.zip",
+      "status": "downloaded",
+      "candidate_id": "UPL-752BBF86A60F",
+      "zip_sha256": "752bbf86a60fc74f80ec2f3fbc084a254fbe7152d2a567fe0de79f258e882dd1",
+      "downloaded_bytes": 30817728,
+      "note": ""
+    },
+    {
+      "filename": "Meshy_AI_Lantern_Gate_to_the_S_1016062118_texture_fbx.zip",
+      "status": "blocked-transfer-limit",
+      "candidate_id": null,
+      "zip_sha256": null,
+      "downloaded_bytes": null,
+      "note": "file exceeds the executor transfer limit of 32 MiB"
+    },
+    {
+      "filename": "Meshy_AI_Enchanted_Garden_Gate_1016062236_texture_fbx.zip",
+      "status": "blocked-transfer-limit",
+      "candidate_id": null,
+      "zip_sha256": null,
+      "downloaded_bytes": null,
+      "note": "file exceeds the executor transfer limit of 32 MiB"
+    },
+    {
+      "filename": "Meshy_AI_Enchanted_Garden_with_1016062214_texture_fbx.zip",
+      "status": "blocked-transfer-limit",
+      "candidate_id": null,
+      "zip_sha256": null,
+      "downloaded_bytes": null,
+      "note": "file exceeds the executor transfer limit of 32 MiB"
+    },
+    {
+      "filename": "Meshy_AI_rocky_terrain_with_te_1016071134_texture_fbx.zip",
+      "status": "downloaded",
+      "candidate_id": "UPL-432F90D7091E",
+      "zip_sha256": "432f90d7091e4245be665eb862f669d4eaca437ece282064f000a809393d6f8a",
+      "downloaded_bytes": 29424333,
+      "note": ""
+    },
+    {
+      "filename": "Meshy_AI_Ember_Tree_1016061713_texture_fbx.zip",
+      "status": "blocked-transfer-limit",
+      "candidate_id": null,
+      "zip_sha256": null,
+      "downloaded_bytes": null,
+      "note": "file exceeds the executor transfer limit of 32 MiB"
+    }
+  ],
+  "scope": "Inspection only. Uploaded originals are retained in the cloud workspace; no final model export, integration, approval or paid generation. Reference-sheet budget unchanged."
+}

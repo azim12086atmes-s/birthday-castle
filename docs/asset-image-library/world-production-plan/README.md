@@ -24,6 +24,8 @@
 
 **Rose Keep entrance fit:** [Inspect the separate assembly](rose-keep-fit/index.html) · [Checks and captures](rose-keep-fit/README.md). The ten-riser stair, terrace and actual 2.4 m doorway now have 36.20 m and 40.75 m complete browser returns. An added footing supports the offset wall return; the unused landing outlet remains guarded. This is local Function evidence; the world-pad approach and full keep remain pending.
 
+**User-supplied model candidates:** [Meshy intake and fourteen labelled previews](../model-intake/2026-10-16/README.md) records the bed, doors/windows, ornaments, lantern, screen, cathedral, stone circle and rock ledge that could be imported. Three exact archive duplicates are identified; 41 larger attachments remain blocked by the transfer limit. These are inspected candidates with raw bounds/topology/material reports, not accepted runtime models. Use this inventory before generating replacements; metric fit, optimization, collision and style matching still apply.
+
 ## Outcome and present state
 
 Build a connected, explorable princess-castle world through small tested sections. Geography and route logic come first, shared kit contracts second, playable samples third, then regional destinations. New pictures are generated only for a demonstrated missing design or construction view. A 230-sheet ceiling is not a requirement to fill every slot before building.

@@ -1,0 +1,166 @@
+{
+  "candidate_id": "UPL-761E04C7346A",
+  "source_name": "Meshy_AI_Gothic_Cathedral_1016063629_texture_fbx (1).zip",
+  "source_zip_sha256": "761e04c7346a8b0668d842e9892d8e31df755889939e266865ef3c7aed711698",
+  "fbx_sha256": "a90cbcd154ae093734c21191f6b0a0be6a36f20191aed1fc8f9bcd4fcfb5cec9",
+  "mesh_objects": [
+    {
+      "name": "Mesh1.0",
+      "vertices": 14509,
+      "faces": 29669,
+      "triangles": 29669,
+      "uv_layers": 1,
+      "material_slots": 1,
+      "boundary_edges": 201,
+      "non_manifold_edges": 384,
+      "origin_world": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    }
+  ],
+  "total_triangles": 29669,
+  "mesh_object_count": 1,
+  "source_bounds_blender_units": {
+    "min": [
+      -0.5057830214500427,
+      -0.7995240688323975,
+      -1.004183053970337
+    ],
+    "max": [
+      0.48584800958633423,
+      0.8728820085525513,
+      0.9832561016082764
+    ],
+    "size_xyz": [
+      0.991631031036377,
+      1.6724060773849487,
+      1.9874391555786133
+    ]
+  },
+  "scale_status": "Imported dimensions only; physical metre scale, origin, front and placement are NOT approved. Objects were not transformed for preview.",
+  "materials": [
+    "Material.001"
+  ],
+  "images": [
+    {
+      "name": "Baked_BaseColor",
+      "filepath_basename": "Baked_BaseColor.png",
+      "resolution": [
+        2048,
+        2048
+      ],
+      "available": true
+    },
+    {
+      "name": "Baked_BaseColor.001",
+      "filepath_basename": "Baked_BaseColor.png",
+      "resolution": [
+        2048,
+        2048
+      ],
+      "available": true
+    },
+    {
+      "name": "texture_0_metallic.png",
+      "filepath_basename": "texture_0_metallic.png",
+      "resolution": [
+        2048,
+        2048
+      ],
+      "available": true
+    },
+    {
+      "name": "texture_0_roughness.png",
+      "filepath_basename": "texture_0_roughness.png",
+      "resolution": [
+        2048,
+        2048
+      ],
+      "available": true
+    }
+  ],
+  "armatures": 0,
+  "actions": 0,
+  "review_status": "intake-candidate; no runtime or design approval",
+  "previews": [
+    "front-assumed.png",
+    "right.png",
+    "back.png",
+    "left.png"
+  ],
+  "geometry_fingerprint": "568019b10a3eca4fc9d0539046184a8f4049453c4f31c8d0aafd9676ed6ef211",
+  "material_texture_links": [
+    {
+      "name": "Material.001",
+      "texture_nodes": [
+        {
+          "image": "Baked_BaseColor",
+          "file": "Baked_BaseColor.png",
+          "links": [
+            {
+              "from": "Color",
+              "to_type": "BSDF_PRINCIPLED",
+              "to_socket": "Base Color"
+            }
+          ]
+        },
+        {
+          "image": "texture_0_roughness.png",
+          "file": "texture_0_roughness.png",
+          "links": [
+            {
+              "from": "Color",
+              "to_type": "BSDF_PRINCIPLED",
+              "to_socket": "Roughness"
+            }
+          ]
+        },
+        {
+          "image": "texture_0_metallic.png",
+          "file": "texture_0_metallic.png",
+          "links": [
+            {
+              "from": "Color",
+              "to_type": "BSDF_PRINCIPLED",
+              "to_socket": "Metallic"
+            }
+          ]
+        },
+        {
+          "image": "Baked_BaseColor.001",
+          "file": "Baked_BaseColor.png",
+          "links": [
+            {
+              "from": "Alpha",
+              "to_type": "BSDF_PRINCIPLED",
+              "to_socket": "Alpha"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "display_name": "Twin-spire Gothic cathedral shell",
+  "category": "Furniture and buildings",
+  "proposed_reuse": "Distant architecture/silhouette candidate only; does not automatically replace Star Chapel.",
+  "visual_findings": [
+    "Whole grey stone cathedral shell with twin front spires, nave and rear apse.",
+    "The supplied whole shell is not a modular kit or a verified enterable interior.",
+    "Metric scale, doorway cuts, palette and source consistency need review before placement."
+  ],
+  "visual_review_method": "Manual inspection of one small four-angle rendered preview per asset; no batch source-image loading.",
+  "preview_file": "previews/UPL-761E04C7346A.png",
+  "preview_sha256": "4a2ea48d9aeadaa5bc516f11c26d27a156208d48dc456246c4e8db86cd25f163",
+  "approval": "Candidate only; final design, metre-scale fit, topology repair and runtime acceptance pending.",
+  "source_alias_names": [
+    "Meshy_AI_Gothic_Cathedral_1016063629_texture_fbx (1).zip",
+    "Meshy_AI_Gothic_Cathedral_1016063629_texture_fbx.zip"
+  ]
+}
