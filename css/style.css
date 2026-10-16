@@ -102,3 +102,46 @@ button.round.muted { opacity: 0.6; }
   #countdown { top: auto; bottom: 12px; font-size: 14px; }
   .two { grid-template-columns: 1fr; }
 }
+
+/* ---- the quest (js/game) ---- */
+#quest { position: absolute; top: 112px; right: 12px; width: min(280px, calc(100vw - 24px)); padding: 8px 14px; font-size: 15px; }
+#quest .act { font-family: 'Cinzel Decorative', Georgia, serif; color: var(--gold); font-size: 14px; }
+#quest .shards { color: var(--ink); }
+#quest .next { display: flex; gap: 8px; align-items: center; color: var(--cyan); }
+#quest .arrow { display: inline-block; color: var(--gold); text-shadow: 0 0 8px var(--gold); transition: transform 0.15s linear; }
+#quest .sky { color: var(--muted); font-style: italic; font-size: 14px; }
+#activity { position: absolute; top: 56px; left: 50%; transform: translateX(-50%); width: min(460px, calc(100vw - 24px)); padding: 8px 16px; text-align: center; font-size: 15px; }
+#activity .title { font-family: 'Cinzel Decorative', Georgia, serif; color: var(--gold); }
+#activity .hint { color: var(--muted); font-style: italic; }
+#activity .prog { color: var(--ink); font-size: 17px; }
+#activity .row { display: flex; gap: 10px; align-items: center; justify-content: center; }
+#activity .light { width: 160px; height: 8px; border-radius: 4px; background: rgba(255, 255, 255, 0.15); overflow: hidden; }
+#activity .light i { display: block; height: 100%; background: linear-gradient(90deg, #7ff3ff, #ffd47a); }
+#activity.dimmed .light i { background: #5a5566; }
+#activity .timer { color: var(--cyan); }
+#map .panel { width: min(520px, calc(100vw - 32px)); max-height: calc(100vh - 60px); overflow-y: auto; }
+#map .list { list-style: none; padding: 0; margin: 8px 0; }
+#map li { display: flex; gap: 8px; align-items: center; padding: 4px 0; border-bottom: 1px solid rgba(255, 212, 122, 0.12); font-size: 15px; }
+#map li .st { width: 22px; text-align: center; color: var(--muted); }
+#map li.night .st { color: var(--gold); }
+#map li.done .st { color: #9dffcf; }
+#map li .nm { flex: 1; }
+#map li .km { color: var(--muted); font-size: 13px; }
+#map li button, #map .close, #quiz .a button { cursor: pointer; border: 1px solid var(--line); background: rgba(10, 6, 30, 0.55); border-radius: 8px; padding: 3px 12px; }
+#map .close { display: block; margin: 8px auto 0; }
+#quiz .q { font-size: 20px; text-align: center; }
+#quiz .a { display: grid; gap: 8px; }
+#quiz .a button { padding: 8px 12px; font-size: 17px; }
+#quiz .a button.right { border-color: #9dffcf; background: rgba(60, 160, 120, 0.4); }
+#quiz .a button.wrong { border-color: #ff6a8a; background: rgba(160, 40, 80, 0.4); }
+#quiz .who { color: var(--muted); font-style: italic; text-align: center; }
+#title-card { position: fixed; left: 0; right: 0; top: 24vh; z-index: 8; text-align: center; pointer-events: none; }
+#title-card .t { font-family: 'Cinzel Decorative', Georgia, serif; font-size: clamp(30px, 5vw, 58px); color: var(--gold); text-shadow: 0 0 22px rgba(255, 190, 90, 0.7); }
+#title-card .s { font-style: italic; color: var(--ink); font-size: clamp(16px, 2vw, 22px); text-shadow: 0 0 10px #000; }
+#title-card.show { animation: card 4.2s forwards; }
+@keyframes card { 0% { opacity: 0; transform: translateY(12px); } 15%, 75% { opacity: 1; transform: none; } 100% { opacity: 0; } }
+canvas#c { transition: filter 2s; }
+.splash { position: fixed; inset: 0; z-index: 9; pointer-events: none; }
+.splash i { position: absolute; font-style: normal; font-size: 34px; text-shadow: 0 0 12px currentColor; animation: splash 1.5s ease-out forwards; }
+@keyframes splash { from { opacity: 1; transform: translate(0, 0) scale(0.4); } to { opacity: 0; transform: translate(var(--dx), var(--dy)) scale(1.4) rotate(140deg); } }
+@media (max-width: 600px) { #quest { top: auto; bottom: 40px; right: 8px; font-size: 13px; width: 210px; } }

@@ -22,6 +22,25 @@ export const CONFIG = {
   // Change this to something only you know before sharing the game.
   honoreeKey: 'xCOM5xrDuiCU',
 
+  // You join as her Mew with the link  ...?mew=<mewKey>  (keep it secret; she
+  // must not find out until the reveal). Change it before sharing the game.
+  mewKey: 'mEw7Tq2Lrv',
+
+  // What she reads when the Mew turns back into you at midnight.
+  revealLine: 'Your little Mew… was me, all along. Happy birthday ♥',
+
+  // The heart quiz (the Temple Rotundas and the Bridge Pavilions). Replace these
+  // with questions about her and about each other; `right` is the index of the
+  // correct answer, counting from 0.
+  quiz: [
+    { q: 'Which companion never leaves the birthday girl\'s side?', a: ['A dragon', 'A Mew', 'A unicorn', 'A koi'], right: 1 },
+    { q: 'What cracked the Great Birthday Lantern?', a: ['A storm', 'The Hush', 'A dragon', 'Fireworks'], right: 1 },
+    { q: 'How many star shards fell across the land?', a: ['14', '20', '32', '39'], right: 2 },
+    { q: 'When does the celebration begin?', a: ['At sunset', 'At midnight', 'At dawn', 'At noon'], right: 1 },
+    { q: 'Where does the Grand Path end?', a: ['The Lighthouse', 'The Princess Palace', 'The Colosseum', 'Lagoon City'], right: 1 },
+    { q: 'What has no eyes in this world?', a: ['Every creature', 'Only dragons', 'Only fish', 'Nothing'], right: 0 },
+  ],
+
   // Players with the same room name meet each other. ?room=xyz overrides it.
   roomId: 'castle-of-starlight-2026',
 

@@ -22,6 +22,15 @@ import { createCelebration, playWelcome } from './celebration.js';
 import { Net } from './net.js';
 import { Voice } from './voice.js';
 import { loadProfile, openLobby } from './lobby.js';
+import { createClock } from './game/clock.js';
+import { preparePlaces, createPlaceVisuals } from './game/places.js';
+import { createShips } from './game/ship.js';
+import { createCombat } from './game/combat.js';
+import { createMew } from './game/mew.js';
+import { createQuest } from './game/quest.js';
+
+// the game schema: places, cast, creatures, templates, story and clock (design/game-schema)
+const DATA = await fetch('data/game-data.json').then((r) => r.json());
 
 const $ = (id) => document.getElementById(id);
 const params = new URLSearchParams(location.search);
@@ -62,6 +71,7 @@ const LIGHT = {
   dusk: { sky: new THREE.Color('#fff4ec'), ground: new THREE.Color('#8f8296'), hemi: 1.7, key: new THREE.Color('#fff1dc'), keyI: 3.0, warm: new THREE.Color('#ffd6e6'), warmI: 0.35 },   // bright watercolour day, as the sheets are drawn
   night: { sky: new THREE.Color('#9fb0ff'), ground: new THREE.Color('#3a2a6a'), hemi: 1.15, key: new THREE.Color('#c4ceff'), keyI: 1.3, warm: new THREE.Color('#ffb7d9'), warmI: 0.5 },
 };
+LIGHT.golden = { sky: new THREE.Color('#ffd2b0'), ground: new THREE.Color('#8a5a6a'), hemi: 1.45, key: new THREE.Color('#ffb070'), keyI: 2.6, warm: new THREE.Color('#ff9ac0'), warmI: 0.7 };
 const forcedMood = params.get('night') === '1' ? 1 : params.get('dusk') === '1' ? 0 : null;
 const keyDir = new THREE.Vector3();
 function applyMood(n) {
@@ -73,6 +83,14 @@ function applyMood(n) {
   warm.color.copy(a.warm).lerp(b.warm, n); warm.intensity = a.warmI + (b.warmI - a.warmI) * n;
   keyDir.copy(SUN_DIR).lerp(MOON_DIR, n).normalize();
   scene.fog.color.copy(FOG_COLOR);
+}
+// golden hour on top of the day/night blend (the game clock's sun near the horizon)
+function applyGolden(gw) {
+  if (gw <= 0.001) return;
+  const G = LIGHT.golden;
+  hemi.color.lerp(G.sky, gw); hemi.groundColor.lerp(G.ground, gw); hemi.intensity += (G.hemi - hemi.intensity) * gw;
+  key.color.lerp(G.key, gw); key.intensity += (G.keyI - key.intensity) * gw;
+  warm.color.lerp(G.warm, gw); warm.intensity += (G.warmI - warm.intensity) * gw;
 }
 let mood = forcedMood ?? (isCelebration() ? 1 : 0);
 
@@ -114,6 +132,10 @@ const effects = createEffects(scene, quality);
 const atmosphere = createAtmosphere(scene, quality);
 const celebration = createCelebration(scene, effects, sky, castle);
 const lanterns = createWishLanterns(scene);
+const places = preparePlaces(DATA);
+const placeVisuals = createPlaceVisuals(scene, places);
+const gameClock = createClock(DATA);
+const ships = createShips(scene);
 
 // --------------------------------------------------------------------- UI --
 const ui = {
@@ -159,6 +181,7 @@ let game = null;
 const profile = loadProfile();
 
 function startGame(p) {
+  let quest = null;
   const controller = new Controller(camera, canvas);
   const me = new Avatar(p, p.gender);
   scene.add(me.root);
@@ -184,6 +207,7 @@ function startGame(p) {
   const raycaster = new THREE.Raycaster();
   controller.onStep = (x, z) => approach.step(x, controller.pos.y, z, 1);
   controller.onTap = (nx, ny) => {
+    if (quest && quest.onTap(nx, ny)) return;
     raycaster.setFromCamera({ x: nx, y: ny }, camera);
     const hit = approach.tapMesh && raycaster.intersectObject(approach.tapMesh, false)[0];
     if (hit) { approach.step(hit.point.x, hit.point.y, hit.point.z, 2.2); net.sendEvent({ k: 'tap', x: +hit.point.x.toFixed(2), z: +hit.point.z.toFixed(2) }); }
@@ -192,8 +216,8 @@ function startGame(p) {
 
   function renderRoster() {
     const ol = $('players'); ol.innerHTML = '';
-    const rows = [[p.name, hunt.score, true, p.honoree]];
-    for (const [id, r] of remotes) { void id; rows.push([r.profile.name, r.score || 0, false, r.profile.honoree]); }
+    const rows = [[quest ? quest.nameOf(net.id || 'me') : p.name, hunt.score, true, p.honoree]];
+    for (const [id, r] of remotes) rows.push([quest ? quest.nameOf(id) : r.profile.name, r.score || 0, false, r.profile.honoree]);
     rows.sort((a, b) => b[1] - a[1]);
     for (const [n, s, mine, hon] of rows) {
       const li = document.createElement('li');
@@ -210,6 +234,7 @@ function startGame(p) {
     const avatar = new Avatar(prof, p.gender);
     avatar.root.position.set(SPAWN.x, SPAWN_Y, SPAWN.z);
     scene.add(avatar.root);
+    avatar.root.visible = !prof.mew;
     const boat = makeLotusBoat(); boat.visible = false; scene.add(boat);
     remotes.set(id, { avatar, profile: prof, target: avatar.root.position.clone(), facing: Math.PI, speed: 0, score: 0, boat, stepAcc: 0, last: avatar.root.position.clone() });
     voice.addPeer(id);
@@ -222,7 +247,7 @@ function startGame(p) {
   });
   net.on('join', (id, prof, fromRoster) => {
     addRemote(id, prof);
-    if (!fromRoster) ui.toast(`${prof.name} has arrived ✦`);
+    if (!fromRoster && !prof.mew) ui.toast(`${prof.name} has arrived ✦`);
     if (prof.honoree && !fromRoster && !p.honoree && game && !game.cutscene) {
       const st = net.players.get(id)?.state;
       const target = st ? new THREE.Vector3(st[0], st[1], st[2]) : new THREE.Vector3(SPAWN.x, SPAWN_Y, SPAWN.z);
@@ -245,7 +270,7 @@ function startGame(p) {
     for (const [id, s] of list) {
       const r = remotes.get(id);
       if (!r || !s) continue;
-      r.target.set(s[0], s[1], s[2]); r.facing = s[3]; r.speed = s[4]; r.boat.visible = !!s[5];
+      r.target.set(s[0], s[1], s[2]); r.facing = s[3]; r.speed = s[4]; r.boat.visible = !!s[5]; r.camYaw = s[7]; r.camPitch = s[8];
       if ((s[6] || 0) !== r.score) { r.score = s[6] || 0; changed = true; }
     }
     if (changed) renderRoster();
@@ -305,6 +330,7 @@ function startGame(p) {
   $('wish-text').onkeydown = (e) => { if (e.key === 'Enter') $('wish-send').click(); if (e.key === 'Escape') closeWish(); };
 
   addEventListener('keydown', (e) => {
+    if (quest && quest.onKey(e)) return;
     if (/INPUT|TEXTAREA/.test(document.activeElement?.tagName) || controller.locked) return;
     if (e.code === 'KeyT') { me.twirl(); net.sendEvent({ k: 'twirl' }); }
     if (e.code === 'KeyE' && game.nearShrine) { wish.classList.remove('hidden'); controller.locked = true; $('wish-text').focus(); }
@@ -314,7 +340,55 @@ function startGame(p) {
   ui.toast(`Welcome to the Castle of Starlight, ${p.name} ✦`);
   renderRoster();
 
-  game = { controller, me, travel, remotes, voice, voicePositions, net, hunt, cutscene: null, nearShrine: false, sendAcc: 0 };
+  // ---- the quest, the Mew, weapons and the sky ship (js/game) ----
+  const combat = createCombat(scene, camera, DATA);
+  combat.onDimmed = () => ui.toast('Your light went out… it comes back in a moment ✦');
+  const mew = createMew(scene, DATA, {
+    send: (e) => quest && quest.mewSend(e),
+    herView: () => quest && quest.herView(),
+    nextPlace: () => quest && quest.nextPlace(),
+    blobHit: (to) => quest && quest.blobHit(to),
+  });
+  quest = createQuest({
+    data: DATA, places, visuals: placeVisuals, ships, combat, mew, clock: gameClock, net, controller, camera, profile: p, ui, remotes, scene,
+    celebrating: () => celebration.active,
+    onReveal: () => playReveal(),
+  });
+  if (p.mew) {
+    mew.pos.copy(controller.pos).y += 1.6;
+    controller.firstPerson = false; controller.camDist = 2.6;          // the owner watches the Mew from just behind it
+    micBtn.classList.add('hidden');                                      // the Mew only speaks in mews
+    me.root.visible = false;
+    ui.toast('You are the Mew ✦ WASD fly, Space/C up and down, 1-5 tease, X mew. She must not know it is you!');
+  }
+  function playReveal() {
+    // the Mew spins up in a column of light, and the owner stands there instead
+    let t = 0;
+    const startY = mew.pos.y;
+    const owner = p.mew ? null : [...remotes.values()].find((r) => r.profile.mew);
+    const reveal = {
+      update(dt) {
+        t += dt;
+        if (t < 3) { mew.pos.y = startY + t * t * 0.6; mew.mesh.rotation.y += dt * (4 + t * 8); if (Math.random() < dt * 20) combat.burst(mew.pos.clone(), '#ffd0ec', 3); }
+        else if (!reveal.done) {
+          reveal.done = true;
+          mew.hidden = true;
+          combat.burst(mew.pos.clone(), '#ffffff', p.mew ? 3 : 10);
+          if (p.mew) {
+            const gy = groundAt(controller.pos.x, controller.pos.z, controller.pos.y + 2) ?? controller.pos.y;
+            controller.teleport(controller.pos.x, gy + 0.3, controller.pos.z);
+            controller.firstPerson = true; me.root.visible = true;
+          } else if (owner) owner.avatar.root.visible = true;
+          if (p.honoree) ui.toast(CONFIG.revealLine || 'Your little Mew… was me, all along. Happy birthday ♥');
+          renderRoster();
+        }
+      },
+    };
+    game.reveal = reveal;
+  }
+  if (quest.revealed) { mew.hidden = true; for (const r of remotes.values()) if (r.profile.mew) r.avatar.root.visible = true; }
+
+  game = { controller, me, travel, remotes, voice, voicePositions, net, hunt, cutscene: null, nearShrine: false, sendAcc: 0, quest, mew, combat, reveal: null };
 
   if (p.honoree) {
     game.cutscene = playWelcome({ camera, castle, celebration, controller, target: controller.pos.clone(), ui, onDone: () => { game.cutscene = null; } });
@@ -331,11 +405,13 @@ function frame() {
   const dt = Math.min(clock.getDelta(), 0.05);
   t += dt;
 
-  const wantMood = forcedMood ?? (celebration.active ? 1 : 0);
+  const sky0 = gameClock.update(Date.now(), celebration.active);
+  const wantMood = forcedMood ?? (celebration.active ? 1 : sky0.night);
   mood += (wantMood - mood) * Math.min(1, dt * 0.25);
   if (Math.abs(wantMood - mood) < 0.001) mood = wantMood;
   sky.update(t, camera);
   applyMood(mood);
+  if (forcedMood === null && !celebration.active) applyGolden(sky0.golden);
   // shadows cover the area around the player (or the camera), snapped to whole metres to avoid shimmer
   const focus = game ? game.controller.pos : camera.position;
   key.target.position.set(Math.round(focus.x), Math.round(focus.y), Math.round(focus.z));
@@ -355,15 +431,29 @@ function frame() {
 
   if ((celebrationChecked -= dt) <= 0) {
     celebrationChecked = 1;
-    const on = isCelebration();
+    const on = isCelebration() || !!(game && game.quest.finale);
     if (on !== celebration.active && !(game && game.cutscene)) celebration.setActive(on);
   }
 
   if (game) {
     const g = game;
     g.travel.update(dt, t);
-    g.controller.update(dt);
-    if (g.cutscene) g.cutscene.update(dt);
+    const flyingMew = g.me.profile?.mew && !g.quest.revealed;
+    if (!flyingMew) g.controller.update(dt);
+    g.quest.update(dt, t);
+    if (g.reveal) g.reveal.update(dt);
+    // the Mew: steered by the owner on their screen, followed everywhere else
+    const ownerRemote = [...g.remotes.values()].find((r) => r.profile.mew);
+    g.mew.update(dt, t, {
+      view: g.quest.herView(),
+      owner: flyingMew,
+      controller: g.controller,
+      busy: g.quest.busy,
+      remotePos: !flyingMew && ownerRemote && !g.quest.revealed ? ownerRemote.avatar.root.position.clone().add(new THREE.Vector3(0, 1.6, 0)) : null,
+    });
+    if (flyingMew && !g.quest.riding) g.controller.pos.copy(g.mew.pos).y -= 1.6;
+    if (g.quest.cutscene) { /* the quest's cutscene drives the camera */ }
+    else if (g.cutscene) g.cutscene.update(dt);
     else g.controller.updateCamera(dt, null);
     g.me.root.position.copy(g.controller.pos);
     g.me.root.rotation.y = g.controller.facing;
@@ -389,11 +479,11 @@ function frame() {
     if (g.sendAcc > 0.09) {
       g.sendAcc = 0;
       const c = g.controller;
-      g.net.setState([+c.pos.x.toFixed(2), +c.pos.y.toFixed(2), +c.pos.z.toFixed(2), +c.facing.toFixed(2), +c.speed.toFixed(1), g.travel.riding ? 1 : 0, g.hunt.score]);
+      g.net.setState([+c.pos.x.toFixed(2), +c.pos.y.toFixed(2), +c.pos.z.toFixed(2), +c.facing.toFixed(2), +c.speed.toFixed(1), g.travel.riding ? 1 : 0, g.hunt.score, +c.camYaw.toFixed(2), +c.camPitch.toFixed(2)]);
     }
 
     g.nearShrine = shrineDist.copy(islands.shrine).sub(g.controller.pos).length() < 9;
-    ui.prompt(g.nearShrine && !g.controller.locked ? 'Press E to release a wish lantern 🏮' : '');
+    ui.prompt(g.quest.prompt() || (g.nearShrine && !g.controller.locked ? 'Press E to release a wish lantern 🏮' : ''));
   } else {
     // attract mode: a slow orbit around the castle behind the entrance screen
     const a = t * 0.05;
@@ -440,4 +530,4 @@ openLobby(profile, {
 if (params.get('cutscene') === '1') {
   window.__previewWelcome = () => game && (game.cutscene = playWelcome({ camera, castle, celebration, controller: game.controller, target: game.controller.pos.clone(), ui, onDone: () => { game.cutscene = null; } }));
 }
-window.__castle = { scene, camera, renderer, get game() { return game; } };
+window.__castle = { scene, camera, renderer, places, get game() { return game; } };

@@ -1,0 +1,2799 @@
+{
+ "meta": {
+  "title": "Birthday Quest",
+  "version": "0.1.0",
+  "celebrationAt": "2026-10-23T00:00:00",
+  "timezone": "local",
+  "honoreeName": "Princess",
+  "docs": [
+   "https://claude.ai/code/artifact/c6b5a6dd-a5a1-46cb-b938-935cfdb0e0d4",
+   "https://claude.ai/code/artifact/3148a84a-3994-4423-af7c-4bdd4b823097"
+  ]
+ },
+ "rules": [
+  {
+   "id": "no_eyes",
+   "text": "Creatures have no eyes (the Mew is waiting on the owner).",
+   "appliesTo": [
+    "creatures"
+   ]
+  },
+  {
+   "id": "faceless_statues",
+   "text": "Statues and sculptures are faceless or veiled.",
+   "appliesTo": [
+    "statues",
+    "models"
+   ]
+  },
+  {
+   "id": "stars_not_crosses",
+   "text": "Cross shapes become stars (finials, windows, decorations).",
+   "appliesTo": [
+    "symbols",
+    "models"
+   ]
+  },
+  {
+   "id": "modest_outfits",
+   "text": "Every outfit is modest; hijab-friendly headwear exists.",
+   "appliesTo": [
+    "outfits"
+   ]
+  },
+  {
+   "id": "female_only_dresses",
+   "text": "Women's party dresses are visible only to female accounts.",
+   "appliesTo": [
+    "outfits"
+   ]
+  },
+  {
+   "id": "no_gore",
+   "text": "Combat is magical: enemies shatter into light and petals, no blood.",
+   "appliesTo": [
+    "combat"
+   ]
+  },
+  {
+   "id": "natural_size",
+   "text": "Meshy models keep their natural size; only the palace is enlarged (x2.75).",
+   "appliesTo": [
+    "models"
+   ]
+  },
+  {
+   "id": "mew_secret",
+   "text": "Only the owner is the Mew; it is not in the pet menu and its voice is hidden until the reveal.",
+   "appliesTo": [
+    "voice",
+    "characters"
+   ]
+  },
+  {
+   "id": "original_creatures",
+   "text": "Creatures are original designs inspired by Pokemon, cartoons and myth, not copies.",
+   "appliesTo": [
+    "creatures"
+   ]
+  }
+ ],
+ "world": {
+  "sizeKm": 20,
+  "scaleS": 2.75,
+  "shape": "A crescent ring of towering mountains rising from the ocean, the mainland cradled inside, the palace at the centre, open to the sea on one side.",
+  "heightmap": "art-references/open-world/ (to be reshaped into the crescent)",
+  "biomeMap": "art-references/web-pack/maps/biome-1024.png",
+  "arrival": [
+   {
+    "id": "docks",
+    "name": "Horizon Docks",
+    "what": "Players appear on a floating dock at sea facing the mountain wall"
+   },
+   {
+    "id": "gate",
+    "name": "White waterfall gate",
+    "what": "A giant white marble gate carved into the cliff, veiled by a waterfall, parts for them"
+   },
+   {
+    "id": "ride_through",
+    "name": "Ride through the falls",
+    "what": "Each friend sits in their own ride, first person, droplets on screen",
+    "cutscene": "arrival"
+   },
+   {
+    "id": "aerial",
+    "name": "Aerial reveal",
+    "what": "Camera rises over the whole valley",
+    "cutscene": "arrival"
+   },
+   {
+    "id": "bridge",
+    "name": "Great marble bridge",
+    "what": "The rides cross the long white bridge over the lake"
+   },
+   {
+    "id": "doors",
+    "name": "Palace doors",
+    "what": "Players walk to the giant doors, which slowly open"
+   }
+  ]
+ },
+ "places": [
+  {
+   "id": "B01",
+   "name": "Princess Palace",
+   "biome": "palace_grounds",
+   "at": {
+    "x": 0,
+    "z": 0
+   },
+   "setting": "Raised centre, terraces down to the lake",
+   "look": "Rose marble, purple domes",
+   "people": "courtiers",
+   "head": "palace_steward",
+   "creatures": [
+    "cloud_koi"
+   ],
+   "game": {
+    "name": "Wardrobe runway",
+    "template": "party_game"
+   },
+   "challenge": {
+    "name": "the Hush, for the last shard",
+    "template": "boss_purification"
+   },
+   "shard": 1,
+   "schedule": "night",
+   "status": "designed",
+   "boss": "the_hush",
+   "order": 14
+  },
+  {
+   "id": "B02",
+   "name": "Moon Water Palace",
+   "biome": "lakes_rivers",
+   "at": {
+    "x": -1732,
+    "z": 3630
+   },
+   "setting": "Islet in Lantern Lake, west of the causeway, glass dome",
+   "look": "Glass dome on a lake islet",
+   "people": "tide-folk",
+   "head": "lady_of_tides",
+   "creatures": [
+    "bubble_turtles"
+   ],
+   "game": {
+    "name": "Lily-pad hop race",
+    "template": "race"
+   },
+   "challenge": {
+    "name": "Reflect moonlight into the dome together",
+    "template": "harmony_puzzle"
+   },
+   "shard": 2,
+   "schedule": "night",
+   "status": "designed",
+   "order": 3
+  },
+  {
+   "id": "B03",
+   "name": "Star Chapel",
+   "biome": "lakes_rivers",
+   "at": {
+    "x": 2062,
+    "z": 3878
+   },
+   "setting": "Islet in the lake, east, gothic pink spires",
+   "look": "Pink gothic spires",
+   "people": "bell ringers",
+   "head": "bell_warden",
+   "creatures": [
+    "crystal_hummingbirds"
+   ],
+   "game": {
+    "name": "Harmony bells",
+    "template": "harmony_puzzle"
+   },
+   "challenge": {
+    "name": "Align star beams to relight the rose window",
+    "template": "harmony_puzzle"
+   },
+   "shard": 3,
+   "schedule": "week_before",
+   "status": "designed"
+  },
+  {
+   "id": "B04",
+   "name": "Rose Keep",
+   "biome": "blossom_groves",
+   "at": {
+    "x": -2640,
+    "z": -1485
+   },
+   "setting": "Pink keep on a crag, NW of the palace",
+   "look": "Pink keep on a crag",
+   "people": "knights",
+   "head": "knight_of_roses",
+   "creatures": [
+    "winged_unicorns"
+   ],
+   "game": {
+    "name": "Light-lance jousting",
+    "template": "party_game"
+   },
+   "challenge": {
+    "name": "the Thorn Golem",
+    "template": "boss_purification"
+   },
+   "shard": 4,
+   "schedule": "night",
+   "status": "designed",
+   "boss": "thorn_golem",
+   "order": 7
+  },
+  {
+   "id": "B05",
+   "name": "Misty Keep",
+   "biome": "misty_moor",
+   "at": {
+    "x": 2805,
+    "z": -2475
+   },
+   "setting": "Misty mountain crag, NE",
+   "look": "Mountain keep in fog",
+   "people": "sages",
+   "head": "mist_sage",
+   "creatures": [
+    "moss_deer"
+   ],
+   "game": {
+    "name": "Hide-and-seek in the fog",
+    "template": "party_game"
+   },
+   "challenge": {
+    "name": "Escort a lantern through the mist",
+    "template": "escort"
+   },
+   "shard": 5,
+   "schedule": "week_before",
+   "status": "designed"
+  },
+  {
+   "id": "B06",
+   "name": "Pagoda",
+   "biome": "blossom_groves",
+   "at": {
+    "x": 2888,
+    "z": -1155
+   },
+   "setting": "Tiered pagoda, east hills",
+   "look": "Tiered pagoda",
+   "people": "lantern makers",
+   "head": "lantern_master",
+   "creatures": [
+    "paper_cranes"
+   ],
+   "game": {
+    "name": "Paint and release sky lanterns",
+    "template": "gather_build"
+   },
+   "challenge": {
+    "name": "Defend the tiers from shadow waves",
+    "template": "arena_defence"
+   },
+   "shard": 6,
+   "schedule": "night",
+   "status": "designed",
+   "order": 4
+  },
+  {
+   "id": "B07",
+   "name": "Temple Rotundas",
+   "biome": "palace_grounds",
+   "at": {
+    "x": -82,
+    "z": -3465
+   },
+   "setting": "Due north on the palace axis, domed rotundas and a terrace",
+   "look": "Domed rotundas",
+   "people": "echo keepers",
+   "head": "keeper_of_echoes",
+   "creatures": [
+    "star_moths"
+   ],
+   "game": {
+    "name": "Echo memory game",
+    "template": "heart_quiz"
+   },
+   "challenge": {
+    "name": "The heart quiz: questions about her",
+    "template": "heart_quiz"
+   },
+   "shard": 7,
+   "schedule": "night",
+   "status": "designed",
+   "order": 8
+  },
+  {
+   "id": "B08",
+   "name": "Colosseum",
+   "biome": "grassland_farms",
+   "at": {
+    "x": -2805,
+    "z": -3135
+   },
+   "setting": "North-west plateau",
+   "look": "Grand arena",
+   "people": "champions",
+   "head": "arena_champion",
+   "creatures": [
+    "griffins"
+   ],
+   "game": {
+    "name": "The Birthday Tournament",
+    "template": "race"
+   },
+   "challenge": {
+    "name": "the Shadow Champion",
+    "template": "boss_purification"
+   },
+   "shard": 8,
+   "schedule": "night",
+   "status": "designed",
+   "boss": "shadow_champion",
+   "order": 10
+  },
+  {
+   "id": "B09",
+   "name": "Lagoon City",
+   "biome": "lagoon_wetland",
+   "at": {
+    "x": -6765,
+    "z": 3300
+   },
+   "setting": "West lagoon, canals and white blocks",
+   "look": "White canal city",
+   "people": "gondoliers",
+   "head": "canal_mayor",
+   "creatures": [
+    "glow_rays"
+   ],
+   "game": {
+    "name": "Gondola race",
+    "template": "race"
+   },
+   "challenge": {
+    "name": "Deliver invitations to 100 villas",
+    "template": "gather_build"
+   },
+   "shard": 9,
+   "schedule": "week_before",
+   "status": "designed"
+  },
+  {
+   "id": "B10",
+   "name": "Canyon Palace",
+   "biome": "red_canyon",
+   "at": {
+    "x": 4290,
+    "z": 4290
+   },
+   "setting": "Red canyon with waterfalls, SE of the lake",
+   "look": "Red canyon, waterfalls",
+   "people": "sun-folk",
+   "head": "sun_queen",
+   "creatures": [
+    "sand_foxes"
+   ],
+   "game": {
+    "name": "Canyon zipline race",
+    "template": "race"
+   },
+   "challenge": {
+    "name": "Redirect the waterfalls",
+    "template": "harmony_puzzle"
+   },
+   "shard": 10,
+   "schedule": "week_before",
+   "status": "designed"
+  },
+  {
+   "id": "B11",
+   "name": "Crescent Arch",
+   "biome": "sea_cliffs",
+   "at": {
+    "x": 7260,
+    "z": 5280
+   },
+   "setting": "Natural rock arch on the east coast",
+   "look": "Giant sea arch",
+   "people": "cliff divers",
+   "head": "arch_guardian",
+   "creatures": [
+    "sea_eagles"
+   ],
+   "game": {
+    "name": "Cliff-dive ring scoring",
+    "template": "party_game"
+   },
+   "challenge": {
+    "name": "purify the stone giant",
+    "template": "boss_purification"
+   },
+   "shard": 11,
+   "schedule": "week_before",
+   "status": "designed",
+   "boss": "stone_giant"
+  },
+  {
+   "id": "B12",
+   "name": "Storybook Village",
+   "biome": "grassland_farms",
+   "at": {
+    "x": -6600,
+    "z": 2145
+   },
+   "setting": "West, half-timber village by canals",
+   "look": "Half-timber cottages",
+   "people": "bakers",
+   "head": "baker_of_stories",
+   "creatures": [
+    "bunny_cats"
+   ],
+   "game": {
+    "name": "Cake ingredient scramble",
+    "template": "party_game"
+   },
+   "challenge": {
+    "name": "Bake one giant cake layer together",
+    "template": "gather_build"
+   },
+   "shard": 12,
+   "schedule": "night",
+   "status": "designed",
+   "order": 5
+  },
+  {
+   "id": "B13",
+   "name": "Windmill",
+   "biome": "grassland_farms",
+   "at": {
+    "x": -6022,
+    "z": 660
+   },
+   "setting": "West hills",
+   "look": "Hills of windmills",
+   "people": "millers",
+   "head": "miller_of_winds",
+   "creatures": [
+    "butterflies"
+   ],
+   "game": {
+    "name": "Kite battle",
+    "template": "party_game"
+   },
+   "challenge": {
+    "name": "Turn the great sails in time together",
+    "template": "harmony_puzzle"
+   },
+   "shard": 13,
+   "schedule": "week_before",
+   "status": "designed"
+  },
+  {
+   "id": "B14",
+   "name": "Pillar Sky City",
+   "biome": "karst_pillars",
+   "at": {
+    "x": 6105,
+    "z": 660
+   },
+   "setting": "East, white spires on pillars with waterfalls and mist",
+   "look": "White spires on stone pillars",
+   "head": "sky_architect",
+   "creatures": [
+    "young_dragons"
+   ],
+   "game": {
+    "name": "Flying ship ring race",
+    "template": "race"
+   },
+   "challenge": {
+    "name": "Build a rope bridge as a team",
+    "template": "gather_build"
+   },
+   "shard": 14,
+   "schedule": "week_before",
+   "status": "designed"
+  },
+  {
+   "id": "B15",
+   "name": "Jungle Temple",
+   "biome": "jungle",
+   "at": {
+    "x": 5115,
+    "z": 7095
+   },
+   "setting": "SE jungle peninsula",
+   "look": "Vine-covered temple",
+   "people": "guardians",
+   "head": "vine_oracle",
+   "creatures": [
+    "glow_frogs"
+   ],
+   "game": {
+    "name": "Vine swing race",
+    "template": "race"
+   },
+   "challenge": {
+    "name": "Four-person puzzle doors",
+    "template": "harmony_puzzle"
+   },
+   "shard": 15,
+   "schedule": "week_before",
+   "status": "designed"
+  },
+  {
+   "id": "B16",
+   "name": "Fjord Longhouse",
+   "biome": "fjord_taiga",
+   "at": {
+    "x": -6270,
+    "z": -2805
+   },
+   "setting": "NW fjord inlet",
+   "look": "Nordic longhouses",
+   "people": "rowers",
+   "head": "fjord_chieftess",
+   "creatures": [
+    "sea_whales"
+   ],
+   "game": {
+    "name": "Longboat rowing in rhythm",
+    "template": "race"
+   },
+   "challenge": {
+    "name": "the Ice Serpent",
+    "template": "boss_purification"
+   },
+   "shard": 16,
+   "schedule": "week_before",
+   "status": "designed",
+   "boss": "ice_serpent"
+  },
+  {
+   "id": "B17",
+   "name": "Glowwood Ruin",
+   "biome": "glowwood",
+   "at": {
+    "x": -5610,
+    "z": -825
+   },
+   "setting": "West forest",
+   "look": "Ruins in glowing forest",
+   "people": "spirits",
+   "head": "forest_spirit",
+   "creatures": [
+    "lantern_moths"
+   ],
+   "game": {
+    "name": "Firefly catching",
+    "template": "party_game"
+   },
+   "challenge": {
+    "name": "Defend the ruin at nightfall",
+    "template": "arena_defence"
+   },
+   "shard": 17,
+   "schedule": "week_before",
+   "status": "designed"
+  },
+  {
+   "id": "B18",
+   "name": "Mother Tree",
+   "biome": "blossom_groves",
+   "at": {
+    "x": -3630,
+    "z": 4950
+   },
+   "setting": "SW shore, giant pink-blossom tree",
+   "look": "Giant pink-blossom tree",
+   "head": "the_mother_tree",
+   "creatures": [
+    "star_foxes"
+   ],
+   "game": {
+    "name": "Blossom climb",
+    "template": "race"
+   },
+   "challenge": {
+    "name": "Carry water spirits to heal the roots",
+    "template": "escort"
+   },
+   "shard": 18,
+   "schedule": "night",
+   "status": "designed",
+   "order": 6
+  },
+  {
+   "id": "B19",
+   "name": "Lantern Cove",
+   "biome": "sandy_beach",
+   "at": {
+    "x": -4538,
+    "z": 6270
+   },
+   "setting": "SW harbour with piers and boats",
+   "look": "Harbour of piers and boats",
+   "head": "harbour_master",
+   "creatures": [
+    "otters"
+   ],
+   "game": {
+    "name": "Fishing for stars",
+    "template": "party_game"
+   },
+   "challenge": {
+    "name": "Ship battle against a shadow ship",
+    "template": "arena_defence"
+   },
+   "shard": 19,
+   "schedule": "week_before",
+   "status": "designed"
+  },
+  {
+   "id": "B20",
+   "name": "Bridge Pavilions",
+   "biome": "lakes_rivers",
+   "at": {
+    "x": -165,
+    "z": 6435
+   },
+   "setting": "South end of the causeway (**spawn**)",
+   "look": "Pavilions at the bridge foot",
+   "head": "bridge_keeper",
+   "creatures": [
+    "doves_of_light"
+   ],
+   "game": {
+    "name": "Rippling-step dance",
+    "template": "party_game"
+   },
+   "challenge": {
+    "name": "Photo hunt for set moments",
+    "template": "heart_quiz"
+   },
+   "shard": 20,
+   "schedule": "night",
+   "status": "designed",
+   "order": 1
+  },
+  {
+   "id": "B21",
+   "name": "Tidal Observatory",
+   "biome": "sea_cliffs",
+   "at": {
+    "x": -7095,
+    "z": 7590
+   },
+   "setting": "SW headland, white domed observatory",
+   "look": "White domed observatory",
+   "head": "star_astronomer",
+   "creatures": [
+    "glass_jellyfish"
+   ],
+   "game": {
+    "name": "Draw constellations together",
+    "template": "gather_build"
+   },
+   "challenge": {
+    "name": "Telescope puzzle that shows where shards fell",
+    "template": "harmony_puzzle"
+   },
+   "shard": 21,
+   "schedule": "night",
+   "status": "designed",
+   "order": 2
+  },
+  {
+   "id": "B22",
+   "name": "Lighthouse",
+   "biome": "sea_cliffs",
+   "at": {
+    "x": -5280,
+    "z": 8745
+   },
+   "setting": "Rock islet off the south coast",
+   "look": "Rock-islet lighthouse",
+   "head": "light_keeper",
+   "creatures": [
+    "seals"
+   ],
+   "game": {
+    "name": "Lighthouse-beam tag",
+    "template": "party_game"
+   },
+   "challenge": {
+    "name": "Guide ships through a storm",
+    "template": "escort"
+   },
+   "shard": 22,
+   "schedule": "week_before",
+   "status": "designed"
+  },
+  {
+   "id": "B23",
+   "name": "Sea Pavilion",
+   "biome": "coral_reef",
+   "at": {
+    "x": 4455,
+    "z": 9570
+   },
+   "setting": "SE shore, piers out into the reef",
+   "look": "Piers over the reef",
+   "people": "pearl divers",
+   "head": "pearl_diver",
+   "creatures": [
+    "seahorses"
+   ],
+   "game": {
+    "name": "Seahorse race",
+    "template": "race"
+   },
+   "challenge": {
+    "name": "Gather pearls underwater",
+    "template": "gather_build"
+   },
+   "shard": 23,
+   "schedule": "week_before",
+   "status": "designed"
+  },
+  {
+   "id": "B24",
+   "name": "Reef Shrine",
+   "biome": "coral_reef",
+   "at": {
+    "x": 8085,
+    "z": 8580
+   },
+   "setting": "SE reef, coral shallows",
+   "look": "Coral shrine in the shallows",
+   "head": "coral_priestess",
+   "creatures": [
+    "sea_turtles"
+   ],
+   "game": {
+    "name": "Reef treasure dive",
+    "template": "race"
+   },
+   "challenge": {
+    "name": "the Leviathan rising from the sea",
+    "template": "boss_purification"
+   },
+   "shard": 24,
+   "schedule": "week_before",
+   "status": "designed",
+   "boss": "leviathan"
+  },
+  {
+   "id": "B25",
+   "name": "Crystal Conservatory",
+   "biome": "flower_meadow",
+   "at": {
+    "x": -1155,
+    "z": -1485
+   },
+   "setting": "Just NW of the palace, a glass dome",
+   "look": "Glass dome of flowers",
+   "head": "gardener_of_glass",
+   "creatures": [
+    "crystal_butterflies"
+   ],
+   "game": {
+    "name": "Make a bouquet for her",
+    "template": "gather_build"
+   },
+   "challenge": {
+    "name": "Grow the glass garden with light beams",
+    "template": "harmony_puzzle"
+   },
+   "shard": 25,
+   "schedule": "night",
+   "status": "designed",
+   "order": 12
+  },
+  {
+   "id": "B26",
+   "name": "Dragon Roost",
+   "biome": "snow_glacier",
+   "look": "Snowy crag of dragon nests",
+   "head": "elder_dragon",
+   "creatures": [
+    "dragons"
+   ],
+   "game": {
+    "name": "Dragon-back race",
+    "template": "race"
+   },
+   "challenge": {
+    "name": "the corrupted Storm Dragon",
+    "template": "boss_purification"
+   },
+   "shard": 26,
+   "schedule": "night",
+   "status": "designed",
+   "boss": "storm_dragon",
+   "order": 11
+  },
+  {
+   "id": "B27",
+   "name": "Sunsand Oasis",
+   "biome": "dunes",
+   "look": "Desert dunes",
+   "people": "oasis bazaar",
+   "head": "oasis_keeper",
+   "creatures": [
+    "fennec_foxes"
+   ],
+   "game": {
+    "name": "Sand-surfing race",
+    "template": "race"
+   },
+   "challenge": {
+    "name": "Find the true oasis in the mirage maze",
+    "template": "harmony_puzzle"
+   },
+   "shard": 27,
+   "schedule": "week_before",
+   "status": "designed"
+  },
+  {
+   "id": "B28",
+   "name": "Frostbloom Sanctuary",
+   "biome": "snow_glacier",
+   "look": "Snow peaks",
+   "people": "ice gardens",
+   "head": "snow_weaver",
+   "creatures": [
+    "ice_moths"
+   ],
+   "game": {
+    "name": "Snowball battle",
+    "template": "party_game"
+   },
+   "challenge": {
+    "name": "Carve an ice sculpture together",
+    "template": "gather_build"
+   },
+   "shard": 28,
+   "schedule": "week_before",
+   "status": "designed"
+  },
+  {
+   "id": "B29",
+   "name": "Crystal Caverns",
+   "biome": "bare_rock",
+   "look": "Glowing caves under the karst",
+   "head": "crystal_miner",
+   "creatures": [
+    "cave_glow_worms"
+   ],
+   "game": {
+    "name": "Minecart race",
+    "template": "race"
+   },
+   "challenge": {
+    "name": "Echo-chime puzzle",
+    "template": "harmony_puzzle"
+   },
+   "shard": 29,
+   "schedule": "week_before",
+   "status": "designed"
+  },
+  {
+   "id": "B30",
+   "name": "Sky Isles",
+   "biome": "sky",
+   "look": "Floating islands with waterfalls",
+   "head": "cloud_shepherd",
+   "creatures": [
+    "sky_whales"
+   ],
+   "game": {
+    "name": "Cloud-surf gauntlet",
+    "template": "race"
+   },
+   "challenge": {
+    "name": "Guide lost baby whales home",
+    "template": "escort"
+   },
+   "shard": 30,
+   "schedule": "night",
+   "status": "designed",
+   "order": 9
+  },
+  {
+   "id": "B31",
+   "name": "Butterfly Meadows",
+   "biome": "flower_meadow",
+   "look": "Flower meadows",
+   "people": "hummingbirds",
+   "head": "meadow_queen",
+   "creatures": [
+    "hummingbirds"
+   ],
+   "game": {
+    "name": "Pet race",
+    "template": "race"
+   },
+   "challenge": {
+    "name": "Paint the flower field",
+    "template": "harmony_puzzle"
+   },
+   "shard": 31,
+   "schedule": "week_before",
+   "status": "designed"
+  },
+  {
+   "id": "B32",
+   "name": "Starfall Fairground",
+   "biome": "palace_grounds",
+   "look": "Fairground by the palace",
+   "head": "ringmaster",
+   "creatures": [
+    "balloon_creatures"
+   ],
+   "game": {
+    "name": "Carnival games",
+    "template": "party_game"
+   },
+   "challenge": {
+    "name": "Win the fairground finals",
+    "template": "party_game"
+   },
+   "shard": 32,
+   "schedule": "night",
+   "status": "designed",
+   "order": 13
+  }
+ ],
+ "characters": [
+  {
+   "id": "palace_steward",
+   "name": "Palace Steward",
+   "role": "head",
+   "place": "B01",
+   "face": "soft_features",
+   "lines": [
+    "Thank you for bringing back the light."
+   ],
+   "status": "designed"
+  },
+  {
+   "id": "lady_of_tides",
+   "name": "Lady of Tides",
+   "role": "head",
+   "place": "B02",
+   "face": "soft_features",
+   "lines": [
+    "Thank you for bringing back the light."
+   ],
+   "status": "designed"
+  },
+  {
+   "id": "bell_warden",
+   "name": "Bell Warden",
+   "role": "head",
+   "place": "B03",
+   "face": "soft_features",
+   "lines": [
+    "Thank you for bringing back the light."
+   ],
+   "status": "designed"
+  },
+  {
+   "id": "knight_of_roses",
+   "name": "Knight of Roses",
+   "role": "head",
+   "place": "B04",
+   "face": "soft_features",
+   "lines": [
+    "Thank you for bringing back the light."
+   ],
+   "status": "designed"
+  },
+  {
+   "id": "mist_sage",
+   "name": "Mist Sage",
+   "role": "head",
+   "place": "B05",
+   "face": "soft_features",
+   "lines": [
+    "Thank you for bringing back the light."
+   ],
+   "status": "designed"
+  },
+  {
+   "id": "lantern_master",
+   "name": "Lantern Master",
+   "role": "head",
+   "place": "B06",
+   "face": "soft_features",
+   "lines": [
+    "Thank you for bringing back the light."
+   ],
+   "status": "designed"
+  },
+  {
+   "id": "keeper_of_echoes",
+   "name": "Keeper of Echoes",
+   "role": "head",
+   "place": "B07",
+   "face": "soft_features",
+   "lines": [
+    "Thank you for bringing back the light."
+   ],
+   "status": "designed"
+  },
+  {
+   "id": "arena_champion",
+   "name": "Arena Champion",
+   "role": "head",
+   "place": "B08",
+   "face": "soft_features",
+   "lines": [
+    "Thank you for bringing back the light."
+   ],
+   "status": "designed"
+  },
+  {
+   "id": "canal_mayor",
+   "name": "Canal Mayor",
+   "role": "head",
+   "place": "B09",
+   "face": "soft_features",
+   "lines": [
+    "Thank you for bringing back the light."
+   ],
+   "status": "designed"
+  },
+  {
+   "id": "sun_queen",
+   "name": "Sun Queen",
+   "role": "head",
+   "place": "B10",
+   "face": "soft_features",
+   "lines": [
+    "Thank you for bringing back the light."
+   ],
+   "status": "designed"
+  },
+  {
+   "id": "arch_guardian",
+   "name": "Arch Guardian",
+   "role": "head",
+   "place": "B11",
+   "face": "soft_features",
+   "lines": [
+    "Thank you for bringing back the light."
+   ],
+   "status": "designed"
+  },
+  {
+   "id": "baker_of_stories",
+   "name": "Baker of Stories",
+   "role": "head",
+   "place": "B12",
+   "face": "soft_features",
+   "lines": [
+    "Thank you for bringing back the light."
+   ],
+   "status": "designed"
+  },
+  {
+   "id": "miller_of_winds",
+   "name": "Miller of Winds",
+   "role": "head",
+   "place": "B13",
+   "face": "soft_features",
+   "lines": [
+    "Thank you for bringing back the light."
+   ],
+   "status": "designed"
+  },
+  {
+   "id": "sky_architect",
+   "name": "Sky Architect",
+   "role": "head",
+   "place": "B14",
+   "face": "soft_features",
+   "lines": [
+    "Thank you for bringing back the light."
+   ],
+   "status": "designed"
+  },
+  {
+   "id": "vine_oracle",
+   "name": "Vine Oracle",
+   "role": "head",
+   "place": "B15",
+   "face": "soft_features",
+   "lines": [
+    "Thank you for bringing back the light."
+   ],
+   "status": "designed"
+  },
+  {
+   "id": "fjord_chieftess",
+   "name": "Fjord Chieftess",
+   "role": "head",
+   "place": "B16",
+   "face": "soft_features",
+   "lines": [
+    "Thank you for bringing back the light."
+   ],
+   "status": "designed"
+  },
+  {
+   "id": "forest_spirit",
+   "name": "Forest Spirit",
+   "role": "head",
+   "place": "B17",
+   "face": "soft_features",
+   "lines": [
+    "Thank you for bringing back the light."
+   ],
+   "status": "designed"
+  },
+  {
+   "id": "the_mother_tree",
+   "name": "The Mother Tree",
+   "role": "head",
+   "place": "B18",
+   "face": "soft_features",
+   "lines": [
+    "Thank you for bringing back the light."
+   ],
+   "status": "designed"
+  },
+  {
+   "id": "harbour_master",
+   "name": "Harbour Master",
+   "role": "head",
+   "place": "B19",
+   "face": "soft_features",
+   "lines": [
+    "Thank you for bringing back the light."
+   ],
+   "status": "designed"
+  },
+  {
+   "id": "bridge_keeper",
+   "name": "Bridge Keeper",
+   "role": "head",
+   "place": "B20",
+   "face": "soft_features",
+   "lines": [
+    "Thank you for bringing back the light."
+   ],
+   "status": "designed"
+  },
+  {
+   "id": "star_astronomer",
+   "name": "Star Astronomer",
+   "role": "head",
+   "place": "B21",
+   "face": "soft_features",
+   "lines": [
+    "Thank you for bringing back the light."
+   ],
+   "status": "designed"
+  },
+  {
+   "id": "light_keeper",
+   "name": "Light Keeper",
+   "role": "head",
+   "place": "B22",
+   "face": "soft_features",
+   "lines": [
+    "Thank you for bringing back the light."
+   ],
+   "status": "designed"
+  },
+  {
+   "id": "pearl_diver",
+   "name": "Pearl Diver",
+   "role": "head",
+   "place": "B23",
+   "face": "soft_features",
+   "lines": [
+    "Thank you for bringing back the light."
+   ],
+   "status": "designed"
+  },
+  {
+   "id": "coral_priestess",
+   "name": "Coral Priestess",
+   "role": "head",
+   "place": "B24",
+   "face": "soft_features",
+   "lines": [
+    "Thank you for bringing back the light."
+   ],
+   "status": "designed"
+  },
+  {
+   "id": "gardener_of_glass",
+   "name": "Gardener of Glass",
+   "role": "head",
+   "place": "B25",
+   "face": "soft_features",
+   "lines": [
+    "Thank you for bringing back the light."
+   ],
+   "status": "designed"
+  },
+  {
+   "id": "elder_dragon",
+   "name": "Elder Dragon",
+   "role": "head",
+   "place": "B26",
+   "face": "soft_features",
+   "lines": [
+    "Thank you for bringing back the light."
+   ],
+   "status": "designed"
+  },
+  {
+   "id": "oasis_keeper",
+   "name": "Oasis Keeper",
+   "role": "head",
+   "place": "B27",
+   "face": "soft_features",
+   "lines": [
+    "Thank you for bringing back the light."
+   ],
+   "status": "designed"
+  },
+  {
+   "id": "snow_weaver",
+   "name": "Snow Weaver",
+   "role": "head",
+   "place": "B28",
+   "face": "soft_features",
+   "lines": [
+    "Thank you for bringing back the light."
+   ],
+   "status": "designed"
+  },
+  {
+   "id": "crystal_miner",
+   "name": "Crystal Miner",
+   "role": "head",
+   "place": "B29",
+   "face": "soft_features",
+   "lines": [
+    "Thank you for bringing back the light."
+   ],
+   "status": "designed"
+  },
+  {
+   "id": "cloud_shepherd",
+   "name": "Cloud Shepherd",
+   "role": "head",
+   "place": "B30",
+   "face": "soft_features",
+   "lines": [
+    "Thank you for bringing back the light."
+   ],
+   "status": "designed"
+  },
+  {
+   "id": "meadow_queen",
+   "name": "Meadow Queen",
+   "role": "head",
+   "place": "B31",
+   "face": "soft_features",
+   "lines": [
+    "Thank you for bringing back the light."
+   ],
+   "status": "designed"
+  },
+  {
+   "id": "ringmaster",
+   "name": "Ringmaster",
+   "role": "head",
+   "place": "B32",
+   "face": "soft_features",
+   "lines": [
+    "Thank you for bringing back the light."
+   ],
+   "status": "designed"
+  },
+  {
+   "id": "the_hush",
+   "name": "The Hush",
+   "role": "villain",
+   "face": "none",
+   "look": "A jealous shadow of fog and grey glass",
+   "lines": [
+    "Bring the light home before midnight, or the birthday will never come."
+   ]
+  },
+  {
+   "id": "honoree",
+   "name": "Princess",
+   "role": "honoree",
+   "gender": "female"
+  },
+  {
+   "id": "mew",
+   "name": "The Mew",
+   "role": "mew",
+   "gender": "none",
+   "look": "Small pink celestial cat-like spirit with a long tail; original design"
+  }
+ ],
+ "creatures": [
+  {
+   "id": "cloud_koi",
+   "name": "Cloud koi",
+   "kind": "friend",
+   "eyes": false,
+   "moves": "swim",
+   "places": [
+    "B01"
+   ],
+   "render": "skinned_mesh",
+   "status": "idea"
+  },
+  {
+   "id": "bubble_turtles",
+   "name": "Bubble turtles",
+   "kind": "friend",
+   "eyes": false,
+   "moves": "swim",
+   "places": [
+    "B02"
+   ],
+   "render": "skinned_mesh",
+   "status": "idea"
+  },
+  {
+   "id": "crystal_hummingbirds",
+   "name": "Crystal hummingbirds",
+   "kind": "friend",
+   "eyes": false,
+   "moves": "fly",
+   "places": [
+    "B03"
+   ],
+   "render": "skinned_mesh",
+   "status": "idea"
+  },
+  {
+   "id": "winged_unicorns",
+   "name": "Winged unicorns",
+   "kind": "mount",
+   "eyes": false,
+   "moves": "fly",
+   "places": [
+    "B04"
+   ],
+   "render": "skinned_mesh",
+   "status": "idea"
+  },
+  {
+   "id": "moss_deer",
+   "name": "Moss deer",
+   "kind": "friend",
+   "eyes": false,
+   "moves": "walk",
+   "places": [
+    "B05"
+   ],
+   "render": "skinned_mesh",
+   "status": "idea"
+  },
+  {
+   "id": "paper_cranes",
+   "name": "Paper cranes",
+   "kind": "ambient",
+   "eyes": false,
+   "moves": "fly",
+   "places": [
+    "B06"
+   ],
+   "render": "instanced",
+   "status": "idea"
+  },
+  {
+   "id": "star_moths",
+   "name": "Star moths",
+   "kind": "swarm",
+   "eyes": false,
+   "moves": "fly",
+   "places": [
+    "B07"
+   ],
+   "render": "instanced",
+   "status": "idea"
+  },
+  {
+   "id": "griffins",
+   "name": "Griffins",
+   "kind": "mount",
+   "eyes": false,
+   "moves": "fly",
+   "places": [
+    "B08"
+   ],
+   "render": "skinned_mesh",
+   "status": "idea"
+  },
+  {
+   "id": "glow_rays",
+   "name": "Glow rays",
+   "kind": "friend",
+   "eyes": false,
+   "moves": "swim",
+   "places": [
+    "B09"
+   ],
+   "render": "skinned_mesh",
+   "status": "idea"
+  },
+  {
+   "id": "sand_foxes",
+   "name": "Sand foxes",
+   "kind": "friend",
+   "eyes": false,
+   "moves": "walk",
+   "places": [
+    "B10"
+   ],
+   "render": "skinned_mesh",
+   "status": "idea"
+  },
+  {
+   "id": "sea_eagles",
+   "name": "Sea eagles",
+   "kind": "friend",
+   "eyes": false,
+   "moves": "fly",
+   "places": [
+    "B11"
+   ],
+   "render": "skinned_mesh",
+   "status": "idea"
+  },
+  {
+   "id": "bunny_cats",
+   "name": "Bunny-cats",
+   "kind": "friend",
+   "eyes": false,
+   "moves": "hop",
+   "places": [
+    "B12"
+   ],
+   "render": "skinned_mesh",
+   "status": "idea"
+  },
+  {
+   "id": "butterflies",
+   "name": "Butterflies",
+   "kind": "swarm",
+   "eyes": false,
+   "moves": "fly",
+   "places": [
+    "B13"
+   ],
+   "render": "instanced",
+   "status": "idea"
+  },
+  {
+   "id": "young_dragons",
+   "name": "Young dragons",
+   "kind": "friend",
+   "eyes": false,
+   "moves": "fly",
+   "places": [
+    "B14"
+   ],
+   "render": "skinned_mesh",
+   "status": "idea"
+  },
+  {
+   "id": "glow_frogs",
+   "name": "Glow frogs",
+   "kind": "friend",
+   "eyes": false,
+   "moves": "hop",
+   "places": [
+    "B15"
+   ],
+   "render": "skinned_mesh",
+   "status": "idea"
+  },
+  {
+   "id": "sea_whales",
+   "name": "Sea whales",
+   "kind": "giant",
+   "eyes": false,
+   "moves": "swim",
+   "places": [
+    "B16"
+   ],
+   "render": "skinned_mesh",
+   "status": "idea"
+  },
+  {
+   "id": "lantern_moths",
+   "name": "Lantern moths",
+   "kind": "swarm",
+   "eyes": false,
+   "moves": "fly",
+   "places": [
+    "B17"
+   ],
+   "render": "instanced",
+   "status": "idea"
+  },
+  {
+   "id": "star_foxes",
+   "name": "Star foxes",
+   "kind": "friend",
+   "eyes": false,
+   "moves": "walk",
+   "places": [
+    "B18"
+   ],
+   "render": "skinned_mesh",
+   "status": "idea"
+  },
+  {
+   "id": "otters",
+   "name": "Otters",
+   "kind": "friend",
+   "eyes": false,
+   "moves": "swim",
+   "places": [
+    "B19"
+   ],
+   "render": "skinned_mesh",
+   "status": "idea"
+  },
+  {
+   "id": "doves_of_light",
+   "name": "Doves of light",
+   "kind": "ambient",
+   "eyes": false,
+   "moves": "fly",
+   "places": [
+    "B20"
+   ],
+   "render": "instanced",
+   "status": "idea"
+  },
+  {
+   "id": "glass_jellyfish",
+   "name": "Glass jellyfish",
+   "kind": "swarm",
+   "eyes": false,
+   "moves": "float",
+   "places": [
+    "B21"
+   ],
+   "render": "instanced",
+   "status": "idea",
+   "look": "Glowing clusters drifting through the air at night"
+  },
+  {
+   "id": "seals",
+   "name": "Seals",
+   "kind": "friend",
+   "eyes": false,
+   "moves": "swim",
+   "places": [
+    "B22"
+   ],
+   "render": "skinned_mesh",
+   "status": "idea"
+  },
+  {
+   "id": "seahorses",
+   "name": "Seahorses (mounts)",
+   "kind": "mount",
+   "eyes": false,
+   "moves": "swim",
+   "places": [
+    "B23"
+   ],
+   "render": "skinned_mesh",
+   "status": "idea"
+  },
+  {
+   "id": "sea_turtles",
+   "name": "Sea turtles",
+   "kind": "friend",
+   "eyes": false,
+   "moves": "swim",
+   "places": [
+    "B24"
+   ],
+   "render": "skinned_mesh",
+   "status": "idea"
+  },
+  {
+   "id": "crystal_butterflies",
+   "name": "Crystal butterflies",
+   "kind": "swarm",
+   "eyes": false,
+   "moves": "fly",
+   "places": [
+    "B25"
+   ],
+   "render": "instanced",
+   "status": "idea"
+  },
+  {
+   "id": "dragons",
+   "name": "Dragons",
+   "kind": "mount",
+   "eyes": false,
+   "moves": "fly",
+   "places": [
+    "B26"
+   ],
+   "render": "skinned_mesh",
+   "status": "idea"
+  },
+  {
+   "id": "fennec_foxes",
+   "name": "Fennec foxes",
+   "kind": "friend",
+   "eyes": false,
+   "moves": "walk",
+   "places": [
+    "B27"
+   ],
+   "render": "skinned_mesh",
+   "status": "idea"
+  },
+  {
+   "id": "ice_moths",
+   "name": "Ice moths",
+   "kind": "swarm",
+   "eyes": false,
+   "moves": "fly",
+   "places": [
+    "B28"
+   ],
+   "render": "instanced",
+   "status": "idea"
+  },
+  {
+   "id": "cave_glow_worms",
+   "name": "Cave glow-worms",
+   "kind": "swarm",
+   "eyes": false,
+   "moves": "fly",
+   "places": [
+    "B29"
+   ],
+   "render": "instanced",
+   "status": "idea"
+  },
+  {
+   "id": "sky_whales",
+   "name": "Sky whales",
+   "kind": "giant",
+   "eyes": false,
+   "moves": "fly",
+   "places": [
+    "B30"
+   ],
+   "render": "skinned_mesh",
+   "status": "idea",
+   "look": "Slow pods over the valley, aurora trailing from fins"
+  },
+  {
+   "id": "hummingbirds",
+   "name": "Hummingbirds",
+   "kind": "swarm",
+   "eyes": false,
+   "moves": "fly",
+   "places": [
+    "B31"
+   ],
+   "render": "instanced",
+   "status": "idea"
+  },
+  {
+   "id": "balloon_creatures",
+   "name": "Balloon creatures",
+   "kind": "friend",
+   "eyes": false,
+   "moves": "fly",
+   "places": [
+    "B32"
+   ],
+   "render": "skinned_mesh",
+   "status": "idea"
+  },
+  {
+   "id": "the_hush",
+   "name": "The Hush",
+   "kind": "boss",
+   "eyes": false,
+   "size": "giant",
+   "moves": "float",
+   "places": [
+    "B01"
+   ],
+   "behaviour": "Purify, never kill: weak spots glow, it shatters into light and returns to its true colours.",
+   "render": "skinned_mesh",
+   "status": "idea"
+  },
+  {
+   "id": "thorn_golem",
+   "name": "Thorn Golem",
+   "kind": "boss",
+   "eyes": false,
+   "size": "giant",
+   "moves": "walk",
+   "places": [
+    "B04"
+   ],
+   "behaviour": "Purify, never kill: weak spots glow, it shatters into light and returns to its true colours.",
+   "render": "skinned_mesh",
+   "status": "idea"
+  },
+  {
+   "id": "shadow_champion",
+   "name": "Shadow Champion",
+   "kind": "boss",
+   "eyes": false,
+   "size": "large",
+   "moves": "walk",
+   "places": [
+    "B08"
+   ],
+   "behaviour": "Purify, never kill: weak spots glow, it shatters into light and returns to its true colours.",
+   "render": "skinned_mesh",
+   "status": "idea"
+  },
+  {
+   "id": "stone_giant",
+   "name": "Arch Guardian, corrupted",
+   "kind": "boss",
+   "eyes": false,
+   "size": "colossal",
+   "moves": "walk",
+   "places": [
+    "B11"
+   ],
+   "behaviour": "Purify, never kill: weak spots glow, it shatters into light and returns to its true colours.",
+   "render": "skinned_mesh",
+   "status": "idea"
+  },
+  {
+   "id": "ice_serpent",
+   "name": "Ice Serpent",
+   "kind": "boss",
+   "eyes": false,
+   "size": "colossal",
+   "moves": "swim",
+   "places": [
+    "B16"
+   ],
+   "behaviour": "Purify, never kill: weak spots glow, it shatters into light and returns to its true colours.",
+   "render": "skinned_mesh",
+   "status": "idea"
+  },
+  {
+   "id": "leviathan",
+   "name": "Leviathan",
+   "kind": "boss",
+   "eyes": false,
+   "size": "colossal",
+   "moves": "swim",
+   "places": [
+    "B24"
+   ],
+   "behaviour": "Purify, never kill: weak spots glow, it shatters into light and returns to its true colours.",
+   "render": "skinned_mesh",
+   "status": "idea"
+  },
+  {
+   "id": "storm_dragon",
+   "name": "Storm Dragon, corrupted",
+   "kind": "boss",
+   "eyes": false,
+   "size": "colossal",
+   "moves": "fly",
+   "places": [
+    "B26"
+   ],
+   "behaviour": "Purify, never kill: weak spots glow, it shatters into light and returns to its true colours.",
+   "render": "skinned_mesh",
+   "status": "idea"
+  },
+  {
+   "id": "shadow_glass",
+   "name": "Shadow-glass creatures",
+   "kind": "enemy",
+   "eyes": false,
+   "size": "medium",
+   "moves": "walk",
+   "look": "Smoky dark glass; shatter into light and petals",
+   "render": "instanced",
+   "status": "idea"
+  },
+  {
+   "id": "sea_giant",
+   "name": "Giant creatures rising from the sea",
+   "kind": "giant",
+   "eyes": false,
+   "moves": "swim",
+   "look": "Rise at dusk and at the finale",
+   "render": "skinned_mesh",
+   "status": "idea"
+  },
+  {
+   "id": "lantern_fish",
+   "name": "Lantern koi",
+   "kind": "swarm",
+   "eyes": false,
+   "moves": "swim",
+   "look": "Glowing lake at night",
+   "render": "particles",
+   "status": "idea"
+  }
+ ],
+ "pets": [
+  {
+   "id": "star_fox_pet",
+   "creature": "star_foxes",
+   "power": "find_hidden",
+   "follow": "trots at heel, sniffs out secrets",
+   "tease": "hides behind her and pops out"
+  },
+  {
+   "id": "bunny_cat_pet",
+   "creature": "bunny_cats",
+   "power": "heal",
+   "follow": "hops at heel",
+   "tease": "steals her hat"
+  },
+  {
+   "id": "baby_dragon_pet",
+   "creature": "young_dragons",
+   "power": "carry_light",
+   "follow": "flies over the shoulder",
+   "tease": "sneezes sparkles"
+  },
+  {
+   "id": "cloud_koi_pet",
+   "creature": "cloud_koi",
+   "power": "speed",
+   "follow": "swims through the air beside her",
+   "tease": "blows bubbles in her face"
+  },
+  {
+   "id": "glow_frog_pet",
+   "creature": "glow_frogs",
+   "power": "scout",
+   "follow": "hops ahead and back",
+   "tease": "croaks a tune"
+  },
+  {
+   "id": "fennec_pet",
+   "creature": "fennec_foxes",
+   "power": "find_hidden",
+   "follow": "trots ahead",
+   "tease": "digs up flowers"
+  },
+  {
+   "id": "mini_griffin_pet",
+   "creature": "griffins",
+   "power": "shield",
+   "follow": "perches on the shoulder",
+   "tease": "ruffles her hair"
+  },
+  {
+   "id": "crystal_hummingbird_pet",
+   "creature": "crystal_hummingbirds",
+   "power": "fetch",
+   "follow": "orbits her head",
+   "tease": "hovers in front of her nose"
+  }
+ ],
+ "rides": [
+  {
+   "id": "her_carriage",
+   "name": "Rose-gold carriage",
+   "kind": "arrival",
+   "seats": 2,
+   "drawnBy": "winged unicorns",
+   "honoreeOnly": true
+  },
+  {
+   "id": "swan_boat",
+   "name": "Swan boat",
+   "kind": "arrival",
+   "seats": 2
+  },
+  {
+   "id": "petal_carriage",
+   "name": "Petal carriage",
+   "kind": "arrival",
+   "seats": 2
+  },
+  {
+   "id": "cloud_chariot",
+   "name": "Cloud chariot",
+   "kind": "arrival",
+   "seats": 2
+  },
+  {
+   "id": "glass_sleigh",
+   "name": "Glass sleigh",
+   "kind": "arrival",
+   "seats": 2
+  },
+  {
+   "id": "lantern_gondola",
+   "name": "Lantern gondola",
+   "kind": "arrival",
+   "seats": 2
+  },
+  {
+   "id": "winged_carriage",
+   "name": "Winged carriage",
+   "kind": "arrival",
+   "seats": 2
+  },
+  {
+   "id": "flying_ship",
+   "name": "The flying ship",
+   "kind": "group",
+   "seats": 16,
+   "look": "Open deck everyone stands on; carries the group between places"
+  }
+ ],
+ "mew": {
+  "controlledBy": "owner",
+  "eyes": "closed_smiling",
+  "voice": "mew_sounds_only",
+  "view": {
+   "offsetDeg": [
+    30,
+    50
+   ],
+   "distanceM": [
+    1,
+    2
+   ],
+   "lagS": 0.6,
+   "leashM": 6,
+   "keepCentreClearDuring": [
+    "combat",
+    "race",
+    "cutscene",
+    "puzzle"
+   ]
+  },
+  "actions": [
+   {
+    "id": "upside_down",
+    "name": "Float upside down",
+    "by": "mew",
+    "what": "At the top of her view, tail wagging"
+   },
+   {
+    "id": "magic_blob",
+    "name": "Throw a magic blob",
+    "by": "mew",
+    "what": "Bursts into petals and sparkles on her screen, harmless"
+   },
+   {
+    "id": "circle",
+    "name": "Happy circle",
+    "by": "mew",
+    "what": "When she does well, or laughs on voice"
+   },
+   {
+    "id": "bubble_nap",
+    "name": "Bubble nap",
+    "by": "mew",
+    "what": "Curls up in a bubble; she can carry it"
+   },
+   {
+    "id": "point_way",
+    "name": "Point the way",
+    "by": "mew",
+    "what": "Flies ahead to the next place and looks back"
+   },
+   {
+    "id": "boop",
+    "name": "Boop its nose",
+    "by": "honoree"
+   },
+   {
+    "id": "berry",
+    "name": "Toss a glowing berry",
+    "by": "honoree"
+   },
+   {
+    "id": "tickle",
+    "name": "Tickle",
+    "by": "honoree",
+    "what": "It spins"
+   }
+  ],
+  "reveal": {
+   "cutscene": "finale",
+   "becomes": "the owner's character"
+  }
+ },
+ "players": [],
+ "templates": [
+  {
+   "id": "harmony_puzzle",
+   "name": "Harmony puzzle",
+   "how": "Pressure pads, mirrors, bells or beams that need several players at once",
+   "why": "Nobody can do it alone; people have to talk",
+   "players": {
+    "min": 2,
+    "max": 8
+   },
+   "win": "every node lit at the same time",
+   "status": "designed",
+   "params": {
+    "type": "object",
+    "properties": {
+     "nodes": {
+      "type": "integer"
+     },
+     "kind": {
+      "enum": [
+       "pads",
+       "mirrors",
+       "bells",
+       "beams"
+      ]
+     },
+     "timeLimitS": {
+      "type": "number"
+     }
+    }
+   }
+  },
+  {
+   "id": "race",
+   "name": "Race",
+   "how": "On foot, on creatures, in vehicles or on the flying ship through rings",
+   "why": "Quick fun with a winner, easy to join",
+   "players": {
+    "min": 1,
+    "max": 12
+   },
+   "win": "first across the line; everyone who finishes gets the shard",
+   "status": "designed",
+   "params": {
+    "type": "object",
+    "properties": {
+     "vehicle": {
+      "type": "string"
+     },
+     "rings": {
+      "type": "integer"
+     },
+     "laps": {
+      "type": "integer"
+     }
+    }
+   }
+  },
+  {
+   "id": "arena_defence",
+   "name": "Arena defence",
+   "how": "Waves of shadow-glass creatures; melee and ranged",
+   "why": "Back-to-back teamwork, revive each other",
+   "players": {
+    "min": 1,
+    "max": 12
+   },
+   "win": "survive all waves",
+   "status": "designed",
+   "params": {
+    "type": "object",
+    "properties": {
+     "waves": {
+      "type": "integer"
+     },
+     "enemy": {
+      "type": "string"
+     }
+    }
+   }
+  },
+  {
+   "id": "boss_purification",
+   "name": "Boss purification",
+   "how": "A big corrupted creature with weak spots and warning zones",
+   "why": "The big shared win of each act",
+   "players": {
+    "min": 2,
+    "max": 12
+   },
+   "win": "purify all weak spots",
+   "status": "designed",
+   "params": {
+    "type": "object",
+    "properties": {
+     "boss": {
+      "type": "string"
+     },
+     "weakSpots": {
+      "type": "integer"
+     },
+     "phases": {
+      "type": "integer"
+     }
+    }
+   }
+  },
+  {
+   "id": "party_game",
+   "name": "Party game",
+   "how": "Targets, bubble tag, hide-and-seek, snowball fights, kite battles",
+   "why": "Laughter, no pressure",
+   "players": {
+    "min": 2,
+    "max": 12
+   },
+   "win": "highest score after the timer",
+   "status": "designed"
+  },
+  {
+   "id": "escort",
+   "name": "Escort",
+   "how": "Carry or guide something fragile together (a lantern, spirits, baby whales)",
+   "why": "Everyone protects the same thing",
+   "players": {
+    "min": 1,
+    "max": 12
+   },
+   "win": "the escorted thing arrives with light left",
+   "status": "designed"
+  },
+  {
+   "id": "gather_build",
+   "name": "Team gather and build",
+   "how": "Collect pieces and build something together (a cake layer, a bridge, an ice sculpture)",
+   "why": "Shared creation; each person adds a part",
+   "players": {
+    "min": 2,
+    "max": 12
+   },
+   "win": "every slot filled",
+   "status": "designed"
+  },
+  {
+   "id": "heart_quiz",
+   "name": "Heart quiz and memory",
+   "how": "Questions about her and about each other, echo and photo memory games",
+   "why": "Friends learn about each other; deeply personal",
+   "players": {
+    "min": 2,
+    "max": 12
+   },
+   "win": "answer a set number right as a team",
+   "status": "designed"
+  }
+ ],
+ "weapons": [
+  {
+   "id": "starlight_sword",
+   "name": "Starlight sword",
+   "class": "melee",
+   "vfx": "ribbon trail"
+  },
+  {
+   "id": "rapier",
+   "name": "Starlight rapier",
+   "class": "melee",
+   "vfx": "ribbon trail"
+  },
+  {
+   "id": "petal_scythe",
+   "name": "Petal scythe",
+   "class": "melee",
+   "vfx": "petal arc"
+  },
+  {
+   "id": "light_hammer",
+   "name": "Hammer of light",
+   "class": "melee",
+   "vfx": "shock ring"
+  },
+  {
+   "id": "moon_bow",
+   "name": "Bow of moonlight",
+   "class": "ranged",
+   "vfx": "silver arrows"
+  },
+  {
+   "id": "crystal_staff",
+   "name": "Crystal staff",
+   "class": "ranged",
+   "vfx": "prism bolts"
+  },
+  {
+   "id": "glitter_blaster",
+   "name": "Glitter blaster",
+   "class": "ranged",
+   "vfx": "glitter bolts, homing star shards, bubbles or confetti"
+  },
+  {
+   "id": "crystal_spikes",
+   "name": "Crystal spikes",
+   "class": "ground_magic",
+   "vfx": "spikes erupt in a line"
+  },
+  {
+   "id": "luminous_roots",
+   "name": "Luminous roots",
+   "class": "ground_magic",
+   "vfx": "roots burst up in a ring"
+  },
+  {
+   "id": "lotus_pillars",
+   "name": "Lotus pillars",
+   "class": "ground_magic",
+   "vfx": "pillars rise and trap"
+  },
+  {
+   "id": "duo_burst",
+   "name": "Team burst",
+   "class": "team",
+   "vfx": "two friends on one enemy trigger a combined burst"
+  }
+ ],
+ "outfits": [
+  {
+   "id": "party_gown_rose",
+   "name": "Rose party gown",
+   "slot": "gown",
+   "audience": "female_only",
+   "wearer": "female",
+   "modest": true
+  },
+  {
+   "id": "starlight_gown",
+   "name": "Starlight gown",
+   "slot": "gown",
+   "audience": "female_only",
+   "wearer": "female",
+   "modest": true
+  },
+  {
+   "id": "silk_hijab",
+   "name": "Silk hijab",
+   "slot": "hijab",
+   "audience": "all",
+   "wearer": "female",
+   "modest": true
+  },
+  {
+   "id": "flower_crown",
+   "name": "Flower crown",
+   "slot": "headwear",
+   "audience": "all",
+   "wearer": "any",
+   "modest": true
+  },
+  {
+   "id": "royal_coat",
+   "name": "Royal coat",
+   "slot": "coat",
+   "audience": "all",
+   "wearer": "male",
+   "modest": true
+  },
+  {
+   "id": "star_cape",
+   "name": "Star cape",
+   "slot": "cape",
+   "audience": "all",
+   "wearer": "any",
+   "modest": true
+  },
+  {
+   "id": "knight_armour",
+   "name": "Knight armour set",
+   "slot": "armour",
+   "audience": "all",
+   "wearer": "any",
+   "modest": true
+  }
+ ],
+ "story": {
+  "villain": "the_hush",
+  "macguffin": "The Great Birthday Lantern, cracked into 32 star shards",
+  "acts": [
+   {
+    "id": "act1",
+    "name": "The ladies arrive",
+    "summary": "Female friends ride in through the waterfall gate, cross the bridge, explore the palace and dress up.",
+    "skyPhase": "morning",
+    "cutscenes": [
+     "arrival"
+    ]
+   },
+   {
+    "id": "act2",
+    "name": "Her surprise",
+    "summary": "She opens her link, rides in with the full aerial reveal, is welcomed with confetti, and the Mew bonds with her.",
+    "skyPhase": "morning",
+    "cutscenes": [
+     "arrival",
+     "mew_bond"
+    ]
+   },
+   {
+    "id": "act3",
+    "name": "The Hush falls",
+    "summary": "The men arrive by flying ship; the Hush cracks the lantern into 32 shards and greys the land.",
+    "skyPhase": "noon",
+    "cutscenes": [
+     "ship_docks",
+     "the_hush"
+    ]
+   },
+   {
+    "id": "act4",
+    "name": "The 32 places",
+    "summary": "Free each head, befriend creatures, play the game, beat the challenge, win the shard; saved people go to the palace.",
+    "skyPhase": "afternoon",
+    "cutscenes": [
+     "enter_place",
+     "head_freed",
+     "boss_entrance",
+     "tournament"
+    ]
+   },
+   {
+    "id": "act5",
+    "name": "Midnight",
+    "summary": "Final boss, then the roof opens, the floating theatre forms, the cake, and the Mew becomes the owner.",
+    "skyPhase": "night",
+    "cutscenes": [
+     "return_palace",
+     "finale"
+    ]
+   }
+  ]
+ },
+ "clock": {
+  "mode": "real_time_to_midnight",
+  "cycleMinutes": 30,
+  "phases": [
+   {
+    "id": "morning",
+    "name": "Morning",
+    "sunElevDeg": 25,
+    "minutes": 3
+   },
+   {
+    "id": "noon",
+    "name": "Day",
+    "sunElevDeg": 60,
+    "minutes": 10
+   },
+   {
+    "id": "afternoon",
+    "name": "Golden hour",
+    "sunElevDeg": 12,
+    "minutes": 4
+   },
+   {
+    "id": "dusk",
+    "name": "Dusk",
+    "sunElevDeg": -4,
+    "minutes": 3
+   },
+   {
+    "id": "night",
+    "name": "Night",
+    "sunElevDeg": -30,
+    "minutes": 10
+   }
+  ],
+  "timeline": [
+   {
+    "at": "20:30",
+    "phase": "morning",
+    "event": "The ladies arrive, ride in, explore the palace and wardrobe",
+    "cutscene": "arrival"
+   },
+   {
+    "at": "20:45",
+    "phase": "morning",
+    "event": "She arrives: her ride, the aerial reveal, the welcome, the Mew bonds",
+    "cutscene": "mew_bond"
+   },
+   {
+    "at": "21:00",
+    "phase": "noon",
+    "event": "The men arrive by flying ship",
+    "cutscene": "ship_docks"
+   },
+   {
+    "at": "21:10",
+    "phase": "noon",
+    "event": "The Hush cracks the lantern; the quest begins",
+    "cutscene": "the_hush"
+   },
+   {
+    "at": "21:10",
+    "until": "23:30",
+    "phase": "afternoon",
+    "event": "The Grand Path, the tournament, the bosses"
+   },
+   {
+    "at": "23:30",
+    "until": "23:50",
+    "phase": "night",
+    "event": "Final boss at the palace; everyone they saved gathers",
+    "cutscene": "return_palace"
+   },
+   {
+    "at": "00:00",
+    "phase": "night",
+    "event": "The roof opens, the floating theatre, the cake, the reveal",
+    "cutscene": "finale"
+   }
+  ]
+ },
+ "cutscenes": [
+  {
+   "id": "arrival",
+   "name": "Arrival ride and aerial reveal",
+   "trigger": "player joins",
+   "audience": "joiner",
+   "seconds": 60,
+   "skippable": true,
+   "shots": [
+    "docks",
+    "gate opens",
+    "ride through falls",
+    "aerial sweep",
+    "bridge",
+    "doors"
+   ]
+  },
+  {
+   "id": "mew_bond",
+   "name": "The Mew bonds with her",
+   "trigger": "honoree reaches the doors",
+   "audience": "all",
+   "seconds": 25
+  },
+  {
+   "id": "ship_docks",
+   "name": "Flying ship docks with the men",
+   "trigger": "men join",
+   "audience": "all",
+   "seconds": 20
+  },
+  {
+   "id": "the_hush",
+   "name": "The Hush",
+   "trigger": "21:10 or host start",
+   "audience": "all",
+   "seconds": 45,
+   "shots": [
+    "sky darkens",
+    "lantern cracks",
+    "32 shards streak out",
+    "colour drains"
+   ]
+  },
+  {
+   "id": "enter_place",
+   "name": "Entering a place",
+   "trigger": "group arrives at a place",
+   "audience": "all",
+   "seconds": 8,
+   "reusable": true,
+   "skippable": true
+  },
+  {
+   "id": "head_freed",
+   "name": "A head is freed",
+   "trigger": "challenge won",
+   "audience": "all",
+   "seconds": 10,
+   "reusable": true
+  },
+  {
+   "id": "boss_entrance",
+   "name": "Boss entrance",
+   "trigger": "boss challenge starts",
+   "audience": "all",
+   "seconds": 12,
+   "reusable": true
+  },
+  {
+   "id": "tournament",
+   "name": "Tournament entrance",
+   "trigger": "arrive at B08",
+   "audience": "all",
+   "seconds": 20
+  },
+  {
+   "id": "return_palace",
+   "name": "Return to the palace",
+   "trigger": "last shard before the final boss",
+   "audience": "all",
+   "seconds": 30
+  },
+  {
+   "id": "finale",
+   "name": "Midnight finale and reveal",
+   "trigger": "celebrationAt",
+   "audience": "all",
+   "seconds": 300,
+   "skippable": false,
+   "music": "choir_theme",
+   "shots": [
+    "roof opens",
+    "floor rises",
+    "pavilions and waterfalls form the theatre",
+    "jellyfish and dragons",
+    "cake cut by ribbons of light",
+    "slices float to guests",
+    "the Mew glows gold and becomes the owner"
+   ]
+  }
+ ],
+ "captures": [
+  {
+   "id": "aerial_reveal",
+   "when": "the aerial reveal"
+  },
+  {
+   "id": "head_freed",
+   "when": "each head freed"
+  },
+  {
+   "id": "race_finish",
+   "when": "every race finish"
+  },
+  {
+   "id": "boss_down",
+   "when": "boss purified"
+  },
+  {
+   "id": "ship_group",
+   "when": "group on the flying ship deck"
+  },
+  {
+   "id": "mew_nap",
+   "when": "the Mew asleep in its bubble"
+  },
+  {
+   "id": "finale",
+   "when": "the whole midnight finale"
+  }
+ ],
+ "music": [
+  {
+   "id": "choir_theme",
+   "name": "Choir theme",
+   "use": "finale"
+  },
+  {
+   "id": "palace_theme",
+   "name": "Palace theme",
+   "use": "palace and wardrobe"
+  },
+  {
+   "id": "adventure_theme",
+   "name": "Adventure theme",
+   "use": "travel"
+  },
+  {
+   "id": "battle_theme",
+   "name": "Battle theme",
+   "use": "bosses and arena"
+  },
+  {
+   "id": "tournament_fanfare",
+   "name": "Tournament fanfare",
+   "use": "B08"
+  }
+ ],
+ "sky": {
+  "layers": [
+   {
+    "id": "aurora_drapes",
+    "what": "Sky drapes / aurora curtains",
+    "render": "long wavy additive strips",
+    "phases": [
+     "dusk",
+     "night"
+    ],
+    "texture": "web-pack/fx/aurora.png"
+   },
+   {
+    "id": "ribbons",
+    "what": "Magical streams and ribbons flowing through the air",
+    "render": "scrolling additive ribbon meshes",
+    "texture": "web-pack/fx/ribbon.png"
+   },
+   {
+    "id": "floating_stones",
+    "what": "Mountain-size floating stones",
+    "render": "few large meshes with image-card far LOD"
+   },
+   {
+    "id": "lanterns",
+    "what": "Floating lanterns",
+    "render": "instanced cards",
+    "phases": [
+     "dusk",
+     "night"
+    ],
+    "texture": "web-pack/fx/lantern.png"
+   },
+   {
+    "id": "stardust",
+    "what": "Air particles, fireflies, stardust",
+    "render": "GPU points",
+    "texture": "web-pack/fx/glow.png"
+   },
+   {
+    "id": "rainbow",
+    "what": "Rainbows",
+    "render": "one shader arc",
+    "phases": [
+     "noon",
+     "afternoon"
+    ]
+   }
+  ]
+ },
+ "assets": [
+  {
+   "id": "tree_pine",
+   "source": "web_pack",
+   "kind": "tree",
+   "near": "web-pack/trees/pine.glb",
+   "card": "web-pack/trees/pine-impostor.webp",
+   "biomes": [
+    "fjord_taiga"
+   ]
+  },
+  {
+   "id": "tree_ancient_oak",
+   "source": "web_pack",
+   "kind": "tree",
+   "near": "web-pack/trees/ancient_oak.glb",
+   "card": "web-pack/trees/ancient_oak-impostor.webp",
+   "biomes": [
+    "temperate_forest"
+   ]
+  },
+  {
+   "id": "tree_ember",
+   "source": "web_pack",
+   "kind": "tree",
+   "near": "web-pack/trees/ember.glb",
+   "card": "web-pack/trees/ember-impostor.webp",
+   "biomes": [
+    "blossom_groves"
+   ]
+  },
+  {
+   "id": "tree_bonsai",
+   "source": "web_pack",
+   "kind": "tree",
+   "near": "web-pack/trees/bonsai.glb",
+   "card": "web-pack/trees/bonsai-impostor.webp",
+   "biomes": [
+    "blossom_groves"
+   ]
+  },
+  {
+   "id": "tree_wisteria",
+   "source": "web_pack",
+   "kind": "tree",
+   "near": "web-pack/trees/wisteria.glb",
+   "card": "web-pack/trees/wisteria-impostor.webp",
+   "biomes": [
+    "blossom_groves"
+   ]
+  },
+  {
+   "id": "tree_fern",
+   "source": "web_pack",
+   "kind": "plant",
+   "near": "web-pack/trees/fern.glb",
+   "card": "web-pack/trees/fern-impostor.webp",
+   "biomes": [
+    "temperate_forest"
+   ]
+  },
+  {
+   "id": "tree_tree",
+   "source": "web_pack",
+   "kind": "tree",
+   "card": "web-pack/trees/tree-impostor.webp",
+   "biomes": [
+    "temperate_forest"
+   ],
+   "notes": "image card only"
+  },
+  {
+   "id": "tree_bush",
+   "source": "web_pack",
+   "kind": "plant",
+   "card": "web-pack/trees/bush-impostor.webp",
+   "biomes": [
+    "flower_meadow"
+   ],
+   "notes": "image card only"
+  }
+ ],
+ "quality": [
+  {
+   "id": "low",
+   "maxTris": 600000,
+   "maxDrawCalls": 250,
+   "shadows": "none",
+   "nearRadiusM": 60,
+   "particles": 3000,
+   "bloom": false,
+   "pixelRatio": 0.75
+  },
+  {
+   "id": "medium",
+   "maxTris": 1500000,
+   "maxDrawCalls": 500,
+   "shadows": "sun_1024",
+   "nearRadiusM": 120,
+   "particles": 12000,
+   "bloom": true,
+   "pixelRatio": 1
+  },
+  {
+   "id": "high",
+   "maxTris": 4000000,
+   "maxDrawCalls": 900,
+   "shadows": "sun_2048",
+   "nearRadiusM": 200,
+   "particles": 40000,
+   "bloom": true,
+   "pixelRatio": 1.5
+  }
+ ],
+ "net": {
+  "messages": [
+   "join",
+   "state",
+   "emote",
+   "capture",
+   "activity_start",
+   "activity_result",
+   "shard",
+   "cutscene",
+   "mew_action"
+  ]
+ }
+}
