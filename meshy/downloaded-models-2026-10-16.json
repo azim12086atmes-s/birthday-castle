@@ -589,6 +589,222 @@
           "storage": "git"
         }
       ]
+    },
+    {
+      "sourceArchive": "Meshy_AI_Windmill_Haven_1016084954_texture_fbx.zip",
+      "sourceBytes": 23105444,
+      "sourceGitBlob": "36c83ea007a10c826f126168831887f19d2451f6",
+      "folder": "meshy/Meshy_AI_Windmill_Haven_1016084954",
+      "files": [
+        {
+          "path": "meshy/Meshy_AI_Windmill_Haven_1016084954/Meshy_AI_Windmill_Haven_1016084954_texture.fbx",
+          "bytes": 18604252,
+          "sha256": "ee593812a836c6de48d819c5c219240ff1c2521290d02d0d486457e1611f61a0",
+          "gitBlob": "68a8c2b2b7413ad315511c99e194119ec9d8438d",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_Windmill_Haven_1016084954/Meshy_AI_Windmill_Haven_1016084954_texture.png",
+          "bytes": 4500646,
+          "sha256": "638b2b378f1ee364ab01682ad630ce10bc6c6a64f2a1086dca0cc73983e962fe",
+          "gitBlob": "a80ce37762285a8807abbf87063e9bc88574ca3d",
+          "storage": "git"
+        }
+      ]
+    },
+    {
+      "sourceArchive": "Meshy_AI_Ring_Village_Diorama_1016084950_texture_fbx.zip",
+      "sourceBytes": 35361007,
+      "sourceGitBlob": "2c5ff79ebff12eec5ee21cf90a39785adcc1bb32",
+      "folder": "meshy/Meshy_AI_Ring_Village_Diorama_1016084950",
+      "files": [
+        {
+          "path": "meshy/Meshy_AI_Ring_Village_Diorama_1016084950/Meshy_AI_Ring_Village_Diorama_1016084950_texture.fbx",
+          "bytes": 29996780,
+          "sha256": "ff85ed858a0bad753283149a4af4e1cb0e16e41163892f7265440a1873175fb3",
+          "gitBlob": "c1919b5f8108ce109983dc274764bf7055793b25",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_Ring_Village_Diorama_1016084950/Meshy_AI_Ring_Village_Diorama_1016084950_texture.png",
+          "bytes": 5363633,
+          "sha256": "667b68a3ad9696e172811eb346e6c4fdc7506a9fdb9b8fdfcf01d49473c9b42c",
+          "gitBlob": "667fd91ebd8e4e17c3dc80794784d543883ce597",
+          "storage": "git"
+        }
+      ]
+    },
+    {
+      "sourceArchive": "Meshy_AI_A_towering_ancient_oa_1016001515_texture_fbx.zip",
+      "sourceBytes": 35539323,
+      "sourceGitBlob": "150efaa3afb3e2990ebafbd763330fc799cb32eb",
+      "folder": "meshy/Meshy_AI_A_towering_ancient_oa_1016001515",
+      "files": [
+        {
+          "path": "meshy/Meshy_AI_A_towering_ancient_oa_1016001515/Meshy_AI_A_towering_ancient_oa_1016001515_texture.fbx",
+          "bytes": 20056108,
+          "sha256": "2a10be74f844733accf814431b1e0bc93beaa389d2037a73ed807587924d705d",
+          "gitBlob": "76b576b2aeab7cb333b69f49ec961b1deaf47c44",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_A_towering_ancient_oa_1016001515/Meshy_AI_A_towering_ancient_oa_1016001515_texture.png",
+          "bytes": 4546344,
+          "sha256": "e5941598875ba04a37a245cfdd6c163d498da2c9965f764a27f6df0d2b14081b",
+          "gitBlob": "70851675a7332676882cd449b16bd642ae687a00",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_A_towering_ancient_oa_1016001515/Meshy_AI_A_towering_ancient_oa_1016001515_texture_metallic.png",
+          "bytes": 1132781,
+          "sha256": "b055259f9d3bc778457e451c7aba0c328c9167358de8e4a65ffd8d5a5c7f0b84",
+          "gitBlob": "0e343388debbe0512ca42e1e5ab533754b10c51d",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_A_towering_ancient_oa_1016001515/Meshy_AI_A_towering_ancient_oa_1016001515_texture_normal.png",
+          "bytes": 8020008,
+          "sha256": "a0c42fd76adc6c158f527f4c92a5fed3afc78e244982097e5ce5d27f5b218d8e",
+          "gitBlob": "9da32766bd6d7ed638d6c514224cbccad7fde032",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_A_towering_ancient_oa_1016001515/Meshy_AI_A_towering_ancient_oa_1016001515_texture_roughness.png",
+          "bytes": 1782558,
+          "sha256": "5f1e6edb4e456c73c2a5348849dabd728ac2f1a573fa85e7f2800b3c1bb76c1a",
+          "gitBlob": "b05b39e14cc056af0f459b035d564e720f2d2eac",
+          "storage": "git"
+        }
+      ]
+    },
+    {
+      "sourceArchive": "Meshy_AI_Prismatic_Peaks_1016014201_texture_fbx.zip",
+      "sourceBytes": 51165112,
+      "sourceGitBlob": "6be09a08afbdc399c866d112c1ed7da43e41fae5",
+      "folder": "meshy/Meshy_AI_Prismatic_Peaks_1016014201",
+      "files": [
+        {
+          "path": "meshy/Meshy_AI_Prismatic_Peaks_1016014201/Meshy_AI_Prismatic_Peaks_1016014201_texture.fbx",
+          "bytes": 39880284,
+          "sha256": "cbe550eb79c45f541a94f3f631092b6a128fa43339de2f7211af965ed5b38f89",
+          "gitBlob": "5a20acd05848062725caf745b4f6a230bddcaa14",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_Prismatic_Peaks_1016014201/Meshy_AI_Prismatic_Peaks_1016014201_texture.png",
+          "bytes": 4656559,
+          "sha256": "4567e4bb98cc353fa214c0a4d97f981fc6945c58072869143bb8bfd09dcec48a",
+          "gitBlob": "39d4f2e7e92d4e13555fbce7762ed597699f9bc5",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_Prismatic_Peaks_1016014201/Meshy_AI_Prismatic_Peaks_1016014201_texture_metallic.png",
+          "bytes": 114710,
+          "sha256": "8695ffb647cf0611f7032acd4c69d37a4fe2e0d06ec2c9942b372fc55e54b4cd",
+          "gitBlob": "40af1ccbf32d287750017935c6033591e49bc06d",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_Prismatic_Peaks_1016014201/Meshy_AI_Prismatic_Peaks_1016014201_texture_normal.png",
+          "bytes": 5583957,
+          "sha256": "3dbc7be5f8614055f440cacaf62a4ce4bff7e67fd79093a0e201caa3de38ca12",
+          "gitBlob": "290fc1d4df2a407f4b2ef64cf5cb64798aa0f4be",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_Prismatic_Peaks_1016014201/Meshy_AI_Prismatic_Peaks_1016014201_texture_roughness.png",
+          "bytes": 928198,
+          "sha256": "23c6087d06758f5600e2293df6194a94b8defa2ddd79dd445932bc11960fd4a2",
+          "gitBlob": "1eef9801c2193b43dc848a2b45db23df3943073e",
+          "storage": "git"
+        }
+      ]
+    },
+    {
+      "sourceArchive": "Meshy_AI_Desert_Ruins_1016084951_texture_fbx.zip",
+      "sourceBytes": 55679746,
+      "sourceGitBlob": "dcbf71457ff2cf3b12be12ec789b02a8fd52014f",
+      "folder": "meshy/Meshy_AI_Desert_Ruins_1016084951",
+      "files": [
+        {
+          "path": "meshy/Meshy_AI_Desert_Ruins_1016084951/Meshy_AI_Desert_Ruins_1016084951_texture.fbx",
+          "bytes": 43640828,
+          "sha256": "a6dcf957da273edd18cd3207a4a3255b9fd7b260bc8878063d4d60a86561e967",
+          "gitBlob": "bdd59f48a0fa0f5fa02c5b94e13b14adcf80fb12",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_Desert_Ruins_1016084951/Meshy_AI_Desert_Ruins_1016084951_texture.png",
+          "bytes": 4838885,
+          "sha256": "042559e174b639bcb930391d68fe653f810c7172e5b0d8c62640356d9ebdc6a8",
+          "gitBlob": "3f9972e995dda9ff6b67acf377786a4eb88b844b",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_Desert_Ruins_1016084951/Meshy_AI_Desert_Ruins_1016084951_texture_metallic.png",
+          "bytes": 208279,
+          "sha256": "9e6a44a699c7c2e261fa91ff700f08fd7af5a5d387862229e25ed18c019be625",
+          "gitBlob": "8a35efb02bb5919235d8aa51845de1c729cf8325",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_Desert_Ruins_1016084951/Meshy_AI_Desert_Ruins_1016084951_texture_normal.png",
+          "bytes": 5693604,
+          "sha256": "82a42a96c5efed06ceb7f599129d0688a7318fb9823822a75b69790bbceee3fb",
+          "gitBlob": "39e942fddad65360673c894d6f02aecaebf452cc",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_Desert_Ruins_1016084951/Meshy_AI_Desert_Ruins_1016084951_texture_roughness.png",
+          "bytes": 1296806,
+          "sha256": "89a09314c35a7fa3c692e4194b78cd9c8008d11f0e5c33154a29e179a791a64a",
+          "gitBlob": "482761f52e64e93ec0536057a6c1288f33d3ec06",
+          "storage": "git"
+        }
+      ]
+    },
+    {
+      "sourceArchive": "Meshy_AI_Mountain_Range_1016084807_texture_fbx.zip",
+      "sourceBytes": 60523853,
+      "sourceGitBlob": "fd67b8d5e443f1b7a6ee3b7b02c737caab591fb6",
+      "folder": "meshy/Meshy_AI_Mountain_Range_1016084807",
+      "files": [
+        {
+          "path": "meshy/Meshy_AI_Mountain_Range_1016084807/Meshy_AI_Mountain_Range_1016084807_texture.fbx",
+          "bytes": 46893980,
+          "sha256": "428c8cde0c392e4182b22b44e912731a8f95c8c731db4a024fabc302b9bafd4e",
+          "gitBlob": "3f091ba30b75e981d4c65db10ebe9a069301c356",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_Mountain_Range_1016084807/Meshy_AI_Mountain_Range_1016084807_texture.png",
+          "bytes": 4645701,
+          "sha256": "71ced7497216edbd8add6c81e9f9a4ca8ac09dd3c4b34971335d67e7fc3f5b5e",
+          "gitBlob": "717899f3412688e09184f5a85c3c4af522d5c3c4",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_Mountain_Range_1016084807/Meshy_AI_Mountain_Range_1016084807_texture_metallic.png",
+          "bytes": 778374,
+          "sha256": "44ae41d5ec4ae46292fdfb1ac0a43ed227ab848336f3a66ba46b0b8925357c8c",
+          "gitBlob": "d62e6a0d5bcfa73fa70149780e44343b1863a4c9",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_Mountain_Range_1016084807/Meshy_AI_Mountain_Range_1016084807_texture_normal.png",
+          "bytes": 6589639,
+          "sha256": "ad992351103e53997f28ffbbeb3fa8b94f9a500424524551b15264a99cd714ce",
+          "gitBlob": "466c7f30ec92e9b1d8ce72b38dac9b9331b144eb",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_Mountain_Range_1016084807/Meshy_AI_Mountain_Range_1016084807_texture_roughness.png",
+          "bytes": 1614775,
+          "sha256": "0f59a5b7c25779fe49e08af58b854bd1595ff02a7be2f51c8d13b2e8494233d0",
+          "gitBlob": "4670338b457565457fa6d59f2e5000d24a3a177c",
+          "storage": "git"
+        }
+      ]
     }
   ]
 }
