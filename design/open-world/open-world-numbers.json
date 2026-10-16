@@ -1,0 +1,175 @@
+{
+ "world_km": 20.69,
+ "map_km2": 428.1,
+ "land_km2": 208.5,
+ "walkable_km2": 169.2,
+ "biomes": {
+  "Deep ocean": {
+   "km2": 137.42,
+   "pct_land": 0.0
+  },
+  "Shallow sea": {
+   "km2": 75.46,
+   "pct_land": 0.0
+  },
+  "Coral reef shallows": {
+   "km2": 5.76,
+   "pct_land": 0.0
+  },
+  "Lakes and rivers": {
+   "km2": 12.64,
+   "pct_land": 6.1
+  },
+  "Lagoon and wetland": {
+   "km2": 2.55,
+   "pct_land": 1.0
+  },
+  "Sandy beach": {
+   "km2": 3.66,
+   "pct_land": 1.8
+  },
+  "Dunes": {
+   "km2": 3.84,
+   "pct_land": 1.8
+  },
+  "Sea cliffs and stacks": {
+   "km2": 8.82,
+   "pct_land": 4.0
+  },
+  "Flower meadow": {
+   "km2": 12.67,
+   "pct_land": 6.1
+  },
+  "Rolling grassland and farms": {
+   "km2": 33.35,
+   "pct_land": 16.0
+  },
+  "Temperate forest": {
+   "km2": 54.66,
+   "pct_land": 26.2
+  },
+  "Blossom groves": {
+   "km2": 12.07,
+   "pct_land": 5.8
+  },
+  "Glowwood forest": {
+   "km2": 6.25,
+   "pct_land": 3.0
+  },
+  "Jungle": {
+   "km2": 4.34,
+   "pct_land": 2.1
+  },
+  "Red sandstone canyon": {
+   "km2": 10.98,
+   "pct_land": 5.3
+  },
+  "Karst pillar forest": {
+   "km2": 9.07,
+   "pct_land": 4.3
+  },
+  "Fjord pine taiga": {
+   "km2": 17.2,
+   "pct_land": 8.2
+  },
+  "Misty highland moor": {
+   "km2": 2.71,
+   "pct_land": 1.3
+  },
+  "Alpine meadow": {
+   "km2": 0.82,
+   "pct_land": 0.4
+  },
+  "Bare rock and scree": {
+   "km2": 6.08,
+   "pct_land": 2.9
+  },
+  "Snow and glacier": {
+   "km2": 0.63,
+   "pct_land": 0.3
+  },
+  "Palace grounds and terraces": {
+   "km2": 7.16,
+   "pct_land": 3.4
+  }
+ },
+ "geology_land_km2": {
+  "Granite": 24.6,
+  "Gneiss and schist": 8.2,
+  "Slate": 4.7,
+  "Red sandstone": 11.8,
+  "Limestone (karst)": 10.6,
+  "Rose marble": 13.9,
+  "Basalt": 8.2,
+  "Coral limestone": 7.9,
+  "Alluvium and clay": 48.4,
+  "Shale under soil": 70.3
+ },
+ "peaks": {
+  "highest_m": 1517,
+  "over_1000m": 3,
+  "over_700m": 4,
+  "over_400m": 11,
+  "summits_250m_plus": 19,
+  "top10_m": [
+   1517,
+   1517,
+   1512,
+   749,
+   632,
+   572,
+   572,
+   531,
+   521,
+   488
+  ],
+  "summits_prominent_250m_plus": 19
+ },
+ "hills_40_250m": 46,
+ "water": {
+  "lantern_lake_km2": 11.03,
+  "tarns": 5,
+  "tarns_km2": 0.67,
+  "river_km": 19.6,
+  "stream_km": 60.8,
+  "waterfalls": 36,
+  "coast_km": 209.7,
+  "lagoon_km2": 0.99,
+  "reef_km2": 5.76
+ },
+ "features": {
+  "karst_pillars": 150,
+  "sea_stacks": 45,
+  "cliffs_km2": 13.18,
+  "canyon_gorges_km2": 0.98,
+  "fjord_km": 7.2,
+  "beaches_km2": 3.66,
+  "landmarks": 25,
+  "sky_isles": 4
+ },
+ "pads_m": {
+  "B02": 8.0,
+  "B03": 8.0,
+  "B04": 211.4,
+  "B05": 1228.9,
+  "B06": 606.6,
+  "B07": 310.1,
+  "B08": 185.6,
+  "B09": 1.5,
+  "B10": 108.6,
+  "B11": 79.1,
+  "B12": 172.8,
+  "B13": 288.9,
+  "B15": 117.1,
+  "B16": 47.8,
+  "B17": 213.5,
+  "B18": 107.2,
+  "B19": 9.1,
+  "B20": 6.0,
+  "B21": 6.3,
+  "B22": 6.0,
+  "B23": 14.0,
+  "B24": 6.0,
+  "B25": 213.7
+ }
+}
