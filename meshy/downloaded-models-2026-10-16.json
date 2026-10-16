@@ -2115,6 +2115,92 @@
           "storage": "git"
         }
       ]
+    },
+    {
+      "sourceArchive": "Meshy_AI_Stone_Portal_1015064937_texture_fbx.zip",
+      "sourceBytes": 130758305,
+      "sourceGitBlob": "d6f493ef8e78d24aaf783553ad4657512d33ff14",
+      "folder": "meshy/Meshy_AI_Stone_Portal_1015064937",
+      "files": [
+        {
+          "path": "meshy/Meshy_AI_Stone_Portal_1015064937/Meshy_AI_Stone_Portal_1015064937_texture.fbx",
+          "bytes": 116728620,
+          "sha256": "0a50aa8b4a22bf1efcf7d35db8e407501e3930f3778d37bc24da939804f0661c",
+          "gitBlob": "0d21eb7a143d90a60dfe783039d147cb5202c0ca",
+          "storage": "git-lfs"
+        },
+        {
+          "path": "meshy/Meshy_AI_Stone_Portal_1015064937/Meshy_AI_Stone_Portal_1015064937_texture.png",
+          "bytes": 7058485,
+          "sha256": "07a1fdb53039da30c349c087ee517269a293308e348b2e415ef4e1017b17b846",
+          "gitBlob": "b34d440697b3bcbae10e25725bfdcb60c4e5a588",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_Stone_Portal_1015064937/Meshy_AI_Stone_Portal_1015064937_texture_metallic.png",
+          "bytes": 199038,
+          "sha256": "0d4a0b0a7e070230eaf39065970cf7b267c72dce69fadd6d5cbe7aa2e4d5a60f",
+          "gitBlob": "a7ef2eecb55eed92673b90864c5de7e6b43904c5",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_Stone_Portal_1015064937/Meshy_AI_Stone_Portal_1015064937_texture_normal.png",
+          "bytes": 5256269,
+          "sha256": "c7d0a7adea2a3f998d6f99cd5e604a720061be08a2be23f75d365ec4aa23b3eb",
+          "gitBlob": "9d2602fc5c033806ed7400b938026340c751ee11",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_Stone_Portal_1015064937/Meshy_AI_Stone_Portal_1015064937_texture_roughness.png",
+          "bytes": 1514549,
+          "sha256": "1710af24fe633959c5ac8da7be2554e930041589c44c5378bbcfdc89b06e62d0",
+          "gitBlob": "e6dc5afdb2e6ba0d1606a3271c9fcccb614bd5be",
+          "storage": "git"
+        }
+      ]
+    },
+    {
+      "sourceArchive": "Meshy_AI_a_stylized_stump_base_1016084807_texture_fbx.zip",
+      "sourceBytes": 135545591,
+      "sourceGitBlob": "88bc3fe7d9683723b5e1e92142cc6657f5363a94",
+      "folder": "meshy/Meshy_AI_a_stylized_stump_base_1016084807",
+      "files": [
+        {
+          "path": "meshy/Meshy_AI_a_stylized_stump_base_1016084807/Meshy_AI_a_stylized_stump_base_1016084807_texture.fbx",
+          "bytes": 120431628,
+          "sha256": "6fb8bdf7d18fa8459e63b1b5c877f7374d3a663b0640c58bfb94f749a8a0e028",
+          "gitBlob": "a1f53d5e21d75694e0f953a570f2b1b2e598c8fc",
+          "storage": "git-lfs"
+        },
+        {
+          "path": "meshy/Meshy_AI_a_stylized_stump_base_1016084807/Meshy_AI_a_stylized_stump_base_1016084807_texture.png",
+          "bytes": 5368021,
+          "sha256": "b8c19df78f3e5ddd1a10c1f6c15be1aac451695aaf1f476a8391c2ee896bac9a",
+          "gitBlob": "26c319b2c18a248dea7efcb91258e2140d6470fa",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_a_stylized_stump_base_1016084807/Meshy_AI_a_stylized_stump_base_1016084807_texture_metallic.png",
+          "bytes": 791863,
+          "sha256": "62b4d588a995b2e05d072286e35b2d5ede143b823d009a2710c2a43a70faa286",
+          "gitBlob": "31969c6b397c67b9311cb34aa55ff861b100415b",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_a_stylized_stump_base_1016084807/Meshy_AI_a_stylized_stump_base_1016084807_texture_normal.png",
+          "bytes": 7317138,
+          "sha256": "d60e3aa9cc11b149da7dbe97b097d4673a10f240d5eb1e099ac52ffed8649539",
+          "gitBlob": "56298c815348d79a7b104cbf75daa175badcd9d5",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_a_stylized_stump_base_1016084807/Meshy_AI_a_stylized_stump_base_1016084807_texture_roughness.png",
+          "bytes": 1635417,
+          "sha256": "eb12050fa5224c34d8fcc59035efb3088a88b87c7f08af959b76284c82e2b489",
+          "gitBlob": "37ffc9a32a49fbb64351f7fa310477cbf49495eb",
+          "storage": "git"
+        }
+      ]
     }
   ]
 }
