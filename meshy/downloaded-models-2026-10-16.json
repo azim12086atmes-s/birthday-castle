@@ -2201,6 +2201,56 @@
           "storage": "git"
         }
       ]
+    },
+    {
+      "sourceArchive": "Meshy_AI_Luminous_Paper_Flower_1016064832_texture_fbx.zip",
+      "sourceBytes": 146787787,
+      "sourceGitBlob": "336d3df413f2b37590bb43675d14b1e043a99267",
+      "folder": "meshy/Meshy_AI_Luminous_Paper_Flower_1016064832",
+      "files": [
+        {
+          "path": "meshy/Meshy_AI_Luminous_Paper_Flower_1016064832/Meshy_AI_Luminous_Paper_Flower_1016064832_texture.fbx",
+          "bytes": 131771964,
+          "sha256": "7e25afa8d4bd454d5bdb4dcd50a8af5e0ccf74db81bb98ef794f880726b98ed3",
+          "gitBlob": "068ae66d3c9c84875c62483733058ec332c3c11f",
+          "storage": "git-lfs"
+        },
+        {
+          "path": "meshy/Meshy_AI_Luminous_Paper_Flower_1016064832/Meshy_AI_Luminous_Paper_Flower_1016064832_texture.png",
+          "bytes": 6849082,
+          "sha256": "8e92f8e852b34f05cf9e0d006a4d7e754455e8f8eb3fe5c328d231f2f094a152",
+          "gitBlob": "aea68998305b0820eb811af69de7bc39b1b3fa46",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_Luminous_Paper_Flower_1016064832/Meshy_AI_Luminous_Paper_Flower_1016064832_texture_emission.png",
+          "bytes": 461539,
+          "sha256": "c5fe2ce6c7de1af0e025064f82e9d006f0799070ad30ec62ad737312bf2267e4",
+          "gitBlob": "bba8c33bdad2291e1f4135ca5e7bcfef5c6f8482",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_Luminous_Paper_Flower_1016064832/Meshy_AI_Luminous_Paper_Flower_1016064832_texture_metallic.png",
+          "bytes": 551953,
+          "sha256": "c928d3d4321ac162573e56e5cc33e35427fe83c6981c42caf599d6ea731d3786",
+          "gitBlob": "914ef9ee43e6614c6b8408057444d1ff5110e0b0",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_Luminous_Paper_Flower_1016064832/Meshy_AI_Luminous_Paper_Flower_1016064832_texture_normal.png",
+          "bytes": 6386738,
+          "sha256": "2afa6fbbcbc8aa90df30464149405a6dfcfaa261ac8d5866c8b1fa1403816330",
+          "gitBlob": "d2ef05170dbe799419fe6f32ab7b1153c3fc88d6",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_Luminous_Paper_Flower_1016064832/Meshy_AI_Luminous_Paper_Flower_1016064832_texture_roughness.png",
+          "bytes": 764679,
+          "sha256": "baaa60080b7e1fbc9078f2e96d1b88f972f3c8f1169e34ca6d89179dceeb6eb1",
+          "gitBlob": "e2e3b87198c998fda6fae1e711cc5139d9a49acb",
+          "storage": "git"
+        }
+      ]
     }
   ]
 }
