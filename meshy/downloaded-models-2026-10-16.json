@@ -1227,6 +1227,106 @@
           "storage": "git"
         }
       ]
+    },
+    {
+      "sourceArchive": "Meshy_AI_Enchanted_Garden_with_1016062214_texture_fbx.zip",
+      "sourceBytes": 118250460,
+      "sourceGitBlob": "9994e052ea76fa0d3e092228de036c163cfa8eb6",
+      "folder": "meshy/Meshy_AI_Enchanted_Garden_with_1016062214",
+      "files": [
+        {
+          "path": "meshy/Meshy_AI_Enchanted_Garden_with_1016062214/Meshy_AI_Enchanted_Garden_with_1016062214_texture.fbx",
+          "bytes": 98112108,
+          "sha256": "8a4e2a7a0b352df236465b1f94832e8c98d6b76e48f45d0363673cc7547f529d",
+          "gitBlob": "d4820679002c945ba7d29e0f278fa681efc50297",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_Enchanted_Garden_with_1016062214/Meshy_AI_Enchanted_Garden_with_1016062214_texture.png",
+          "bytes": 9860378,
+          "sha256": "ed7d59168e42e37f772c1f9f06c93a4d058945b924d65b06b85816c9a105d998",
+          "gitBlob": "c85a520f495056668e75d5fd625e7193013b3340",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_Enchanted_Garden_with_1016062214/Meshy_AI_Enchanted_Garden_with_1016062214_texture_emission.png",
+          "bytes": 114234,
+          "sha256": "694630b943d422248a38ed88e79bf1d544397c304269e2eb6658fe29b9bf0d7f",
+          "gitBlob": "868cac49c96c9c62ba5c78e3a6cb0134dc7cf2f7",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_Enchanted_Garden_with_1016062214/Meshy_AI_Enchanted_Garden_with_1016062214_texture_metallic.png",
+          "bytes": 31544,
+          "sha256": "63dd946e95494be923ef377ac5a0ac425f7381e2a22f09ee4c01c415f38e3374",
+          "gitBlob": "1efa5c5e7c5e3c102920dcbc7e0fc3f71e87447c",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_Enchanted_Garden_with_1016062214/Meshy_AI_Enchanted_Garden_with_1016062214_texture_normal.png",
+          "bytes": 8354542,
+          "sha256": "204f78148becb213e7461bfe1b462b9374061f28f0945f016328172b48d706e2",
+          "gitBlob": "705ec17490f1771dee6e5f6f7c564e1ea8623e3e",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_Enchanted_Garden_with_1016062214/Meshy_AI_Enchanted_Garden_with_1016062214_texture_roughness.png",
+          "bytes": 1775822,
+          "sha256": "1b46f28b6954330f9aa4718434dd9a8250f53ea7fcfc79b74b939abe398b0bc1",
+          "gitBlob": "a239a6152f3f2d5af204ccac364286814815f6bd",
+          "storage": "git"
+        }
+      ]
+    },
+    {
+      "sourceArchive": "Meshy_AI_Enchanted_Forest_Thro_1016065037_texture_fbx.zip",
+      "sourceBytes": 121739531,
+      "sourceGitBlob": "cb9201ed75fc2a1c333725f1ec4ff61b94ffc6cc",
+      "folder": "meshy/Meshy_AI_Enchanted_Forest_Thro_1016065037",
+      "files": [
+        {
+          "path": "meshy/Meshy_AI_Enchanted_Forest_Thro_1016065037/Meshy_AI_Enchanted_Forest_Thro_1016065037_texture.fbx",
+          "bytes": 56418732,
+          "sha256": "8ecb03da7066b73232e77fe4604bf305e064ed3a056dbbde79e77c7dd04377e7",
+          "gitBlob": "602e36666b861661ab5762907844b4e40d4539b8",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_Enchanted_Forest_Thro_1016065037/Meshy_AI_Enchanted_Forest_Thro_1016065037_texture.png",
+          "bytes": 29942027,
+          "sha256": "d886c3b10e6f995485e7b8c1acd0cbf4e54826835279e231997f9eccd9f7886f",
+          "gitBlob": "4e50121e335e491bae5cd38250f3d0822b4a7a70",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_Enchanted_Forest_Thro_1016065037/Meshy_AI_Enchanted_Forest_Thro_1016065037_texture_emission.png",
+          "bytes": 889071,
+          "sha256": "7d86dd4b01cfb31fc4393dfe4e91d4a3957091592e013a5f6e43262eff2eb76b",
+          "gitBlob": "34b450155275cd226365e60a599c61b8ff5ade14",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_Enchanted_Forest_Thro_1016065037/Meshy_AI_Enchanted_Forest_Thro_1016065037_texture_metallic.png",
+          "bytes": 16076,
+          "sha256": "df2add1310e78bd51f73ef118198125c1ae622507d6ce41861e22a430f6ef0da",
+          "gitBlob": "a4d575a3ee8fe90628a3628eb66048827b533444",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_Enchanted_Forest_Thro_1016065037/Meshy_AI_Enchanted_Forest_Thro_1016065037_texture_normal.png",
+          "bytes": 33196712,
+          "sha256": "4101f20c666cf4647e9c616efc6416ec1ebdf2e38191a5db1082543f134a54cd",
+          "gitBlob": "e137fbfe741724a122efc932b9e71af9f17a9824",
+          "storage": "git"
+        },
+        {
+          "path": "meshy/Meshy_AI_Enchanted_Forest_Thro_1016065037/Meshy_AI_Enchanted_Forest_Thro_1016065037_texture_roughness.png",
+          "bytes": 1275081,
+          "sha256": "e321fe7c781cb0afddcda083a0783c302f62ed74f4befeda2e213c0b069a7f53",
+          "gitBlob": "da288fedc4876cb5a34c652c062255a1ebade8b1",
+          "storage": "git"
+        }
+      ]
     }
   ]
 }
