@@ -1,7 +1,7 @@
 """Builds game-data.json from the story doc tables (places_raw.json, pos_raw.json) plus the design decisions below."""
 import json, re, os
 H = os.path.dirname(os.path.abspath(__file__))
-P = json.load(open(f'{H}/places_raw.json')); POS = json.load(open(f'{H}/pos_raw.json'))
+P = json.load(open(f'{H}/places_raw.json')); POS = json.load(open(f'{H}/pos_raw.json')); NEWPOS = json.load(open(f'{H}/pos_new.json'))
 S = 2.75
 def slug(s): return re.sub(r'[^a-z0-9]+', '_', re.sub(r'\(.*?\)', '', s.lower())).strip('_')
 
@@ -51,6 +51,8 @@ for p in P:
     if pid in POS:
         x = float(POS[pid]['x'].replace('−', '-')); z = float(POS[pid]['z'].replace('−', '-'))
         pl['at'] = dict(x=round(x * S), z=round(z * S)); pl['setting'] = POS[pid]['where']
+    if pid in NEWPOS:
+        pl['at'] = dict(x=round(NEWPOS[pid][0] * S), z=round(NEWPOS[pid][1] * S)); pl['setting'] = 'Chosen on the crescent map (fill thread, Oct 16)' + (', floating about 380 m up' if pid == 'B30' else '')
     look, _, people = p['look'].rpartition(', ')
     pl.update(look=look or p['look'], people=people if look else '', head=head, creatures=[cre],
               game=dict(name=p['game'], template=g), challenge=dict(name=re.sub(r'^Boss: |^Final boss: ', '', p['challenge']), template=c),
@@ -201,6 +203,13 @@ for n, sp in [('tree', 'temperate_forest'), ('bush', 'flower_meadow')]:
     data['assets'].append(dict(id=f'tree_{n}', source='web_pack', kind='tree' if n == 'tree' else 'plant', card=f'web-pack/trees/{n}-impostor.webp', biomes=[sp], notes='image card only'))
 extra = f'{H}/assets_survey.json'
 if os.path.exists(extra): data['assets'] += json.load(open(extra))
+place_assets = {}
+for a in data['assets']:
+    for pid in a.get('places', []): place_assets.setdefault(pid, []).append(a['id'])
+for pl in data['places']:
+    if pl['id'] in place_assets: pl['assets'] = place_assets[pl['id']]
+data['world']['arrival'][1]['at'] = dict(x=-710, z=11158); data['world']['arrival'][0]['at'] = dict(x=-710, z=12158)
+data['world']['heightmap'] = 'art-references/world-fill/terrain/ (crescent version, Oct 16)'
 json.dump(data, open(f'{H}/game-data.json', 'w'), indent=1, ensure_ascii=False)
 import jsonschema
 jsonschema.validate(data, json.load(open(f'{H}/game.schema.json')))

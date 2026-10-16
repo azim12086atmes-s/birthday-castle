@@ -82,18 +82,26 @@
   "sizeKm": 20,
   "scaleS": 2.75,
   "shape": "A crescent ring of towering mountains rising from the ocean, the mainland cradled inside, the palace at the centre, open to the sea on one side.",
-  "heightmap": "art-references/open-world/ (to be reshaped into the crescent)",
+  "heightmap": "art-references/world-fill/terrain/ (crescent version, Oct 16)",
   "biomeMap": "art-references/web-pack/maps/biome-1024.png",
   "arrival": [
    {
     "id": "docks",
     "name": "Horizon Docks",
-    "what": "Players appear on a floating dock at sea facing the mountain wall"
+    "what": "Players appear on a floating dock at sea facing the mountain wall",
+    "at": {
+     "x": -710,
+     "z": 12158
+    }
    },
    {
     "id": "gate",
     "name": "White waterfall gate",
-    "what": "A giant white marble gate carved into the cliff, veiled by a waterfall, parts for them"
+    "what": "A giant white marble gate carved into the cliff, veiled by a waterfall, parts for them",
+    "at": {
+     "x": -710,
+     "z": 11158
+    }
    },
    {
     "id": "ride_through",
@@ -147,7 +155,12 @@
    "schedule": "night",
    "status": "designed",
    "boss": "the_hush",
-   "order": 14
+   "order": 14,
+   "assets": [
+    "m_marble_pavilion",
+    "m_royal_portal_gate",
+    "m_verdant_cascade_fount"
+   ]
   },
   {
    "id": "B02",
@@ -175,7 +188,12 @@
    "shard": 2,
    "schedule": "night",
    "status": "designed",
-   "order": 3
+   "order": 3,
+   "assets": [
+    "m_a_colossal_floating_c",
+    "m_domed_palace_model",
+    "m_white_lotus"
+   ]
   },
   {
    "id": "B03",
@@ -202,7 +220,10 @@
    },
    "shard": 3,
    "schedule": "week_before",
-   "status": "designed"
+   "status": "designed",
+   "assets": [
+    "m_gothic_cathedral"
+   ]
   },
   {
    "id": "B04",
@@ -231,7 +252,11 @@
    "schedule": "night",
    "status": "designed",
    "boss": "thorn_golem",
-   "order": 7
+   "order": 7,
+   "assets": [
+    "m_copper_cloud_bonsai",
+    "m_please_provide_an_ima"
+   ]
   },
   {
    "id": "B05",
@@ -258,7 +283,12 @@
    },
    "shard": 5,
    "schedule": "week_before",
-   "status": "designed"
+   "status": "designed",
+   "assets": [
+    "m_elven_tower_base_circ",
+    "m_emberkeep_turret",
+    "m_ghotisches_schloss"
+   ]
   },
   {
    "id": "B06",
@@ -286,7 +316,16 @@
    "shard": 6,
    "schedule": "night",
    "status": "designed",
-   "order": 4
+   "order": 4,
+   "assets": [
+    "m_a_3d_image_a_a_tradit",
+    "m_dark_oriental_gateway",
+    "m_majestic_pagoda_palac",
+    "m_ornate_watchtower",
+    "m_shrine",
+    "m_stone_lantern",
+    "m_japanese_building"
+   ]
   },
   {
    "id": "B07",
@@ -314,7 +353,11 @@
    "shard": 7,
    "schedule": "night",
    "status": "designed",
-   "order": 8
+   "order": 8,
+   "assets": [
+    "m_marble_pavilion",
+    "m_pantheon"
+   ]
   },
   {
    "id": "B08",
@@ -343,7 +386,10 @@
    "schedule": "night",
    "status": "designed",
    "boss": "shadow_champion",
-   "order": 10
+   "order": 10,
+   "assets": [
+    "m_ancient_stone_amphith"
+   ]
   },
   {
    "id": "B09",
@@ -370,7 +416,14 @@
    },
    "shard": 9,
    "schedule": "week_before",
-   "status": "designed"
+   "status": "designed",
+   "assets": [
+    "m_a_parisian_building",
+    "m_colorful_courtyard_vi",
+    "m_kalliope_house_comple",
+    "m_mediterranean_villa",
+    "m_museum_building"
+   ]
   },
   {
    "id": "B10",
@@ -397,7 +450,17 @@
    },
    "shard": 10,
    "schedule": "week_before",
-   "status": "designed"
+   "status": "designed",
+   "assets": [
+    "m_a_sandstone_stair_fli",
+    "m_a_sprawling_sandstone",
+    "m_a_very_large_ancient",
+    "m_desert_mushroom_rock",
+    "m_desert_sandstone_arch",
+    "m_ornate_sandstone_gate",
+    "m_stone_fortress",
+    "m_vintage_stone_villa"
+   ]
   },
   {
    "id": "B11",
@@ -425,7 +488,12 @@
    "shard": 11,
    "schedule": "week_before",
    "status": "designed",
-   "boss": "stone_giant"
+   "boss": "stone_giant",
+   "assets": [
+    "m_basalt_arch",
+    "m_cliff_formations",
+    "m_rocky_archway"
+   ]
   },
   {
    "id": "B12",
@@ -453,7 +521,17 @@
    "shard": 12,
    "schedule": "night",
    "status": "designed",
-   "order": 5
+   "order": 5,
+   "assets": [
+    "m_a_modular_medieval_ho",
+    "m_ember_tiled_turret_ho",
+    "m_enchanted_thatch_cott",
+    "m_herbal_harvest",
+    "m_medieval_cottage",
+    "m_old_town_clock_tower",
+    "m_timbered_market_house",
+    "m_whimsical_hobbit_dwel"
+   ]
   },
   {
    "id": "B13",
@@ -480,7 +558,11 @@
    },
    "shard": 13,
    "schedule": "week_before",
-   "status": "designed"
+   "status": "designed",
+   "assets": [
+    "m_olive_grove_cottage",
+    "m_windmill_haven"
+   ]
   },
   {
    "id": "B14",
@@ -506,7 +588,13 @@
    },
    "shard": 14,
    "schedule": "week_before",
-   "status": "designed"
+   "status": "designed",
+   "assets": [
+    "m_elven_tower_base_circ",
+    "m_enchanted_spiral_towe",
+    "m_isle_of_the_stone_spi",
+    "m_ring_village_diorama"
+   ]
   },
   {
    "id": "B15",
@@ -533,7 +621,14 @@
    },
    "shard": 15,
    "schedule": "week_before",
-   "status": "designed"
+   "status": "designed",
+   "assets": [
+    "m_a_large_arch_made_fr",
+    "m_ancient_gateway_ruins",
+    "m_ancient_stone_structu",
+    "m_ancient_stone_temples",
+    "m_verdant_palace"
+   ]
   },
   {
    "id": "B16",
@@ -561,7 +656,11 @@
    "shard": 16,
    "schedule": "week_before",
    "status": "designed",
-   "boss": "ice_serpent"
+   "boss": "ice_serpent",
+   "assets": [
+    "m_enchanted_thatch_cott",
+    "m_pine_trees_on_a_rocky"
+   ]
   },
   {
    "id": "B17",
@@ -588,7 +687,17 @@
    },
    "shard": 17,
    "schedule": "week_before",
-   "status": "designed"
+   "status": "designed",
+   "assets": [
+    "m_ancient_archway",
+    "m_cementery_pillar_vari",
+    "m_enchanted_lantern_tre",
+    "m_england_mystic_ston",
+    "m_high_detail_fantasy",
+    "m_luminous_paper_flower",
+    "m_verdant_ring_of_stone",
+    "m_a_stylized_stump_base"
+   ]
   },
   {
    "id": "B18",
@@ -615,7 +724,12 @@
    "shard": 18,
    "schedule": "night",
    "status": "designed",
-   "order": 6
+   "order": 6,
+   "assets": [
+    "m_enchanted_forest_thro",
+    "m_lantern_tree_palace",
+    "m_metaphor_the_tree_of"
+   ]
   },
   {
    "id": "B19",
@@ -641,7 +755,11 @@
    },
    "shard": 19,
    "schedule": "week_before",
-   "status": "designed"
+   "status": "designed",
+   "assets": [
+    "m_kalliope_house_comple",
+    "m_stone_lantern"
+   ]
   },
   {
    "id": "B20",
@@ -668,7 +786,11 @@
    "shard": 20,
    "schedule": "night",
    "status": "designed",
-   "order": 1
+   "order": 1,
+   "assets": [
+    "m_floral_wreath_of_spri",
+    "m_marble_pavilion"
+   ]
   },
   {
    "id": "B21",
@@ -695,7 +817,11 @@
    "shard": 21,
    "schedule": "night",
    "status": "designed",
-   "order": 2
+   "order": 2,
+   "assets": [
+    "m_ancient_stone_relic",
+    "m_celestial_armillary"
+   ]
   },
   {
    "id": "B22",
@@ -721,7 +847,10 @@
    },
    "shard": 22,
    "schedule": "week_before",
-   "status": "designed"
+   "status": "designed",
+   "assets": [
+    "m_untitled"
+   ]
   },
   {
    "id": "B23",
@@ -748,7 +877,10 @@
    },
    "shard": 23,
    "schedule": "week_before",
-   "status": "designed"
+   "status": "designed",
+   "assets": [
+    "m_marble_pavilion"
+   ]
   },
   {
    "id": "B24",
@@ -775,7 +907,10 @@
    "shard": 24,
    "schedule": "week_before",
    "status": "designed",
-   "boss": "leviathan"
+   "boss": "leviathan",
+   "assets": [
+    "m_ancient_stone_circle"
+   ]
   },
   {
    "id": "B25",
@@ -802,12 +937,22 @@
    "shard": 25,
    "schedule": "night",
    "status": "designed",
-   "order": 12
+   "order": 12,
+   "assets": [
+    "m_a_garden_of_cryst",
+    "m_crystal_peaks_pbr",
+    "m_leafspire_cathedral"
+   ]
   },
   {
    "id": "B26",
    "name": "Dragon Roost",
    "biome": "snow_glacier",
+   "at": {
+    "x": 4983,
+    "z": -2060
+   },
+   "setting": "Chosen on the crescent map (fill thread, Oct 16)",
    "look": "Snowy crag of dragon nests",
    "head": "elder_dragon",
    "creatures": [
@@ -825,12 +970,22 @@
    "schedule": "night",
    "status": "designed",
    "boss": "storm_dragon",
-   "order": 11
+   "order": 11,
+   "assets": [
+    "m_infernal_peak",
+    "m_sentinel_peak",
+    "m_volcanic_monolith"
+   ]
   },
   {
    "id": "B27",
    "name": "Sunsand Oasis",
    "biome": "dunes",
+   "at": {
+    "x": -2189,
+    "z": 6468
+   },
+   "setting": "Chosen on the crescent map (fill thread, Oct 16)",
    "look": "Desert dunes",
    "people": "oasis bazaar",
    "head": "oasis_keeper",
@@ -847,12 +1002,25 @@
    },
    "shard": 27,
    "schedule": "week_before",
-   "status": "designed"
+   "status": "designed",
+   "assets": [
+    "m_a_majestic_tiered_str",
+    "m_desert_adobe_courtyar",
+    "m_desert_dwelling",
+    "m_desert_fortress",
+    "m_desert_oasis_palace",
+    "m_desert_ruins"
+   ]
   },
   {
    "id": "B28",
    "name": "Frostbloom Sanctuary",
    "biome": "snow_glacier",
+   "at": {
+    "x": 2043,
+    "z": -4010
+   },
+   "setting": "Chosen on the crescent map (fill thread, Oct 16)",
    "look": "Snow peaks",
    "people": "ice gardens",
    "head": "snow_weaver",
@@ -869,12 +1037,22 @@
    },
    "shard": 28,
    "schedule": "week_before",
-   "status": "designed"
+   "status": "designed",
+   "assets": [
+    "m_elven_tower_base_circ",
+    "m_prismatic_peaks",
+    "m_artistic_abstract_cry"
+   ]
   },
   {
    "id": "B29",
    "name": "Crystal Caverns",
    "biome": "bare_rock",
+   "at": {
+    "x": 7367,
+    "z": 1204
+   },
+   "setting": "Chosen on the crescent map (fill thread, Oct 16)",
    "look": "Glowing caves under the karst",
    "head": "crystal_miner",
    "creatures": [
@@ -890,12 +1068,23 @@
    },
    "shard": 29,
    "schedule": "week_before",
-   "status": "designed"
+   "status": "designed",
+   "assets": [
+    "m_cave_entrance",
+    "m_cave_structures_1",
+    "m_crystal_peaks_pbr",
+    "m_a_large_rainbow_cryst"
+   ]
   },
   {
    "id": "B30",
    "name": "Sky Isles",
    "biome": "sky",
+   "at": {
+    "x": -5500,
+    "z": 4125
+   },
+   "setting": "Chosen on the crescent map (fill thread, Oct 16), floating about 380 m up",
    "look": "Floating islands with waterfalls",
    "head": "cloud_shepherd",
    "creatures": [
@@ -912,12 +1101,21 @@
    "shard": 30,
    "schedule": "night",
    "status": "designed",
-   "order": 9
+   "order": 9,
+   "assets": [
+    "m_floating_stone_island",
+    "m_mossy_monolith"
+   ]
   },
   {
    "id": "B31",
    "name": "Butterfly Meadows",
    "biome": "flower_meadow",
+   "at": {
+    "x": -8212,
+    "z": 932
+   },
+   "setting": "Chosen on the crescent map (fill thread, Oct 16)",
    "look": "Flower meadows",
    "people": "hummingbirds",
    "head": "meadow_queen",
@@ -934,12 +1132,24 @@
    },
    "shard": 31,
    "schedule": "week_before",
-   "status": "designed"
+   "status": "designed",
+   "assets": [
+    "m_1000054986_jpg",
+    "m_floral_wreath_of_spri",
+    "m_for_diana_this_beauti",
+    "m_stone_bridge",
+    "m_whispering_willow_of"
+   ]
   },
   {
    "id": "B32",
    "name": "Starfall Fairground",
    "biome": "palace_grounds",
+   "at": {
+    "x": -1826,
+    "z": 608
+   },
+   "setting": "Chosen on the crescent map (fill thread, Oct 16)",
    "look": "Fairground by the palace",
    "head": "ringmaster",
    "creatures": [
@@ -956,7 +1166,13 @@
    "shard": 32,
    "schedule": "night",
    "status": "designed",
-   "order": 13
+   "order": 13,
+   "assets": [
+    "m_bases_pedestals_minis",
+    "m_luminous_paper_flower",
+    "m_marble_pavilion",
+    "m_royal_carriage"
+   ]
   }
  ],
  "characters": [
@@ -2749,6 +2965,1829 @@
     "flower_meadow"
    ],
    "notes": "image card only"
+  },
+  {
+   "id": "m_1000054986_jpg",
+   "source": "meshy_github",
+   "kind": "building",
+   "path": "meshy/Meshy_AI_1000054986_jpg_1016091255",
+   "near": "art-references/world-fill/glb/1000054986_jpg.glb",
+   "sizeM": 5,
+   "places": [
+    "B31"
+   ],
+   "tris": 1118937
+  },
+  {
+   "id": "m_a_3d_image_a_a_tradit",
+   "source": "meshy_github",
+   "kind": "building",
+   "path": "meshy/Meshy_AI_A_3D_image_a_a_tradit_1016093610",
+   "near": "art-references/world-fill/glb/A_3D_image_a_a_tradit.glb",
+   "sizeM": 10,
+   "places": [
+    "B06"
+   ],
+   "tris": 4414561
+  },
+  {
+   "id": "m_a_big_menhir_with_anc",
+   "source": "meshy_github",
+   "kind": "building",
+   "path": "meshy/Meshy_AI_A_big_menhir_with_anc_1016193427",
+   "near": "art-references/world-fill/glb/A_big_menhir_with_anc.glb",
+   "sizeM": 9,
+   "places": [],
+   "tris": 6792,
+   "notes": "wild relic/rock scatter"
+  },
+  {
+   "id": "m_a_colossal_floating_c",
+   "source": "meshy_github",
+   "kind": "building",
+   "path": "meshy/Meshy_AI_A_colossal_floating_c_1016193637",
+   "near": "art-references/world-fill/glb/A_colossal_floating_c.glb",
+   "sizeM": 45,
+   "places": [
+    "B02"
+   ],
+   "tris": 1923304,
+   "notes": "giant floating lotus: finale theatre centrepiece"
+  },
+  {
+   "id": "m_a_garden_of_cryst",
+   "source": "meshy_github",
+   "kind": "rock",
+   "path": "meshy/Meshy_AI_A_garden_of_cryst_1016200539",
+   "near": "art-references/world-fill/glb/A_garden_of_cryst.glb",
+   "sizeM": 10,
+   "places": [
+    "B25"
+   ],
+   "tris": 183711
+  },
+  {
+   "id": "m_a_large_arch_made_fr",
+   "source": "meshy_github",
+   "kind": "building",
+   "path": "meshy/Meshy_AI_A_large_arch_made_fr_1016091236",
+   "near": "art-references/world-fill/glb/A_large_arch_made_fr.glb",
+   "sizeM": 12,
+   "places": [
+    "B15"
+   ],
+   "tris": 631105
+  },
+  {
+   "id": "m_a_majestic_tiered_str",
+   "source": "meshy_github",
+   "kind": "building",
+   "path": "meshy/Meshy_AI_A_majestic_tiered_str_1016100012",
+   "near": "art-references/world-fill/glb/A_majestic_tiered_str.glb",
+   "sizeM": 40,
+   "places": [
+    "B27"
+   ],
+   "tris": 727680
+  },
+  {
+   "id": "m_a_modular_medieval_ho",
+   "source": "meshy_github",
+   "kind": "building",
+   "path": "meshy/Meshy_AI_A_modular_medieval_ho_1016065704",
+   "near": "art-references/world-fill/glb/A_modular_medieval_ho.glb",
+   "sizeM": 18,
+   "places": [
+    "B12"
+   ],
+   "tris": 2364327
+  },
+  {
+   "id": "m_a_parisian_building",
+   "source": "meshy_github",
+   "kind": "building",
+   "path": "meshy/Meshy_AI_A_parisian_building_1016102608",
+   "near": "art-references/world-fill/glb/A_parisian_building.glb",
+   "sizeM": 25,
+   "places": [
+    "B09"
+   ],
+   "tris": 1156243
+  },
+  {
+   "id": "m_a_sandstone_stair_fli",
+   "source": "meshy_github",
+   "kind": "rock",
+   "path": "meshy/Meshy_AI_A_sandstone_stair_fli_1016100020_stylize_fbx",
+   "near": "art-references/world-fill/glb/A_sandstone_stair_fli.glb",
+   "sizeM": 16,
+   "places": [
+    "B10"
+   ],
+   "tris": 421989
+  },
+  {
+   "id": "m_a_sprawling_sandstone",
+   "source": "meshy_github",
+   "kind": "rock",
+   "path": "meshy/Meshy_AI_A_sprawling_sandstone_1016100031",
+   "near": "art-references/world-fill/glb/A_sprawling_sandstone.glb",
+   "sizeM": 50,
+   "places": [
+    "B10"
+   ],
+   "tris": 1545188
+  },
+  {
+   "id": "m_a_very_detailed_and_e",
+   "source": "meshy_github",
+   "kind": "prop",
+   "path": "meshy/Meshy_AI_A_very_detailed_and_e_1016065906",
+   "tris": 859384,
+   "notes": "palace interior: rose in a golden egg, gift piece"
+  },
+  {
+   "id": "m_a_very_large_ancient",
+   "source": "meshy_github",
+   "kind": "building",
+   "path": "meshy/Meshy_AI_A_very_large_ancient__1016100120",
+   "near": "art-references/world-fill/glb/A_very_large_ancient.glb",
+   "sizeM": 120,
+   "places": [
+    "B10"
+   ],
+   "tris": 3486871
+  },
+  {
+   "id": "m_abandoned_chapel_ha",
+   "source": "meshy_github",
+   "kind": "building",
+   "path": "meshy/Meshy_AI_Abandoned_Chapel_Ha_1016004419",
+   "tris": 1263476,
+   "fix": [
+    "cross to star"
+   ]
+  },
+  {
+   "id": "m_an_extravagant_fairy",
+   "source": "meshy_github",
+   "kind": "prop",
+   "path": "meshy/Meshy_AI_An_extravagant_fairy_1016070342",
+   "tris": 9994,
+   "notes": "palace interior: canopy bed, her chamber"
+  },
+  {
+   "id": "m_ancient_archway",
+   "source": "meshy_github",
+   "kind": "building",
+   "path": "meshy/Meshy_AI_Ancient_Archway_1016194541",
+   "near": "art-references/world-fill/glb/Ancient_Archway.glb",
+   "sizeM": 12,
+   "places": [
+    "B17"
+   ],
+   "tris": 780139,
+   "notes": "wild relic/rock scatter"
+  },
+  {
+   "id": "m_ancient_citadel",
+   "source": "meshy_github",
+   "kind": "building",
+   "path": "meshy/Meshy_AI_Ancient_Citadel_1016194142",
+   "tris": 6713785
+  },
+  {
+   "id": "m_ancient_gateway_ruins",
+   "source": "meshy_github",
+   "kind": "building",
+   "path": "meshy/Meshy_AI_Ancient_Gateway_Ruins_1016102421",
+   "near": "art-references/world-fill/glb/Ancient_Gateway_Ruins.glb",
+   "sizeM": 25,
+   "places": [
+    "B15"
+   ],
+   "tris": 1160704,
+   "notes": "wild relic/rock scatter"
+  },
+  {
+   "id": "m_ancient_obelisk",
+   "source": "meshy_github",
+   "kind": "building",
+   "path": "meshy/Meshy_AI_Ancient_Obelisk_1016193831",
+   "near": "art-references/world-fill/glb/Ancient_Obelisk.glb",
+   "sizeM": 14,
+   "places": [],
+   "tris": 113707,
+   "notes": "wild relic/rock scatter"
+  },
+  {
+   "id": "m_ancient_stone_amphith",
+   "source": "meshy_project",
+   "kind": "rock",
+   "near": "art-references/world-fill/glb/Ancient_Stone_Amphith.glb",
+   "sizeM": 190,
+   "places": [
+    "B08"
+   ]
+  },
+  {
+   "id": "m_ancient_stone_circle",
+   "source": "meshy_github",
+   "kind": "rock",
+   "path": "meshy/Meshy_AI_Ancient_Stone_Circle_1016193749",
+   "near": "art-references/world-fill/glb/Ancient_Stone_Circle.glb",
+   "sizeM": 45,
+   "places": [
+    "B24"
+   ],
+   "tris": 1357624,
+   "notes": "wild relic/rock scatter"
+  },
+  {
+   "id": "m_ancient_stone_relic",
+   "source": "meshy_github",
+   "kind": "rock",
+   "path": "meshy/Meshy_AI_Ancient_Stone_Relic_1016090341",
+   "near": "art-references/world-fill/glb/Ancient_Stone_Relic.glb",
+   "sizeM": 8,
+   "places": [
+    "B21"
+   ],
+   "tris": 573807,
+   "notes": "wild relic/rock scatter"
+  },
+  {
+   "id": "m_ancient_stone_structu",
+   "source": "meshy_github",
+   "kind": "rock",
+   "path": "meshy/Meshy_AI_Ancient_Stone_Structu_1016194632",
+   "near": "art-references/world-fill/glb/Ancient_Stone_Structu.glb",
+   "sizeM": 70,
+   "places": [
+    "B15"
+   ],
+   "tris": 2755035
+  },
+  {
+   "id": "m_ancient_stone_temples",
+   "source": "meshy_github",
+   "kind": "rock",
+   "path": "meshy/Meshy_AI_Ancient_Stone_Temples_1016194615",
+   "near": "art-references/world-fill/glb/Ancient_Stone_Temples.glb",
+   "sizeM": 90,
+   "places": [
+    "B15"
+   ],
+   "tris": 1224219,
+   "notes": "wild relic/rock scatter"
+  },
+  {
+   "id": "m_ancient_mystical_worl",
+   "source": "meshy_github",
+   "kind": "building",
+   "path": "meshy/Meshy_AI_Ancient_mystical_worl_1016090234",
+   "tris": 122236
+  },
+  {
+   "id": "m_aurora_whisperwood",
+   "source": "meshy_github",
+   "kind": "building",
+   "path": "meshy/Meshy_AI_Aurora_Whisperwood_1016162823",
+   "tris": 4517862
+  },
+  {
+   "id": "m_baroque_flourish",
+   "source": "meshy_github",
+   "kind": "prop",
+   "path": "meshy/Meshy_AI_Baroque_Flourish_1016063642",
+   "tris": 243317,
+   "notes": "palace interior: wall ornament"
+  },
+  {
+   "id": "m_basalt_arch",
+   "source": "meshy_project",
+   "kind": "building",
+   "near": "art-references/world-fill/glb/Basalt_Arch.glb",
+   "sizeM": 200,
+   "places": [
+    "B11"
+   ]
+  },
+  {
+   "id": "m_bases_pedestals_minis",
+   "source": "meshy_github",
+   "kind": "building",
+   "path": "meshy/Meshy_AI_Bases_Pedestals_Minis_1016084637",
+   "near": "art-references/world-fill/glb/Bases_Pedestals_Minis.glb",
+   "sizeM": 12,
+   "places": [
+    "B32"
+   ],
+   "tris": 1023863
+  },
+  {
+   "id": "m_blossom_pagoda",
+   "source": "meshy_github",
+   "kind": "building",
+   "path": "meshy/Meshy_AI_Blossom_Pagoda_1016194432",
+   "tris": 1322425
+  },
+  {
+   "id": "m_bookshelf_haven",
+   "source": "meshy_github",
+   "kind": "prop",
+   "path": "meshy/Meshy_AI_Bookshelf_Haven_1016134309",
+   "tris": 1090603,
+   "notes": "palace interior: library"
+  },
+  {
+   "id": "m_bridge_of_vines",
+   "source": "meshy_github",
+   "kind": "building",
+   "path": "meshy/Meshy_AI_Bridge_of_Vines_1016134235",
+   "tris": 736539
+  },
+  {
+   "id": "m_casa_encantadora",
+   "source": "meshy_github",
+   "kind": "building",
+   "path": "meshy/Meshy_AI_Casa_Encantadora_1016064528",
+   "tris": 3555597,
+   "fix": [
+    "cross to star"
+   ]
+  },
+  {
+   "id": "m_cave_entrance",
+   "source": "meshy_github",
+   "kind": "rock",
+   "path": "meshy/Meshy_AI_Cave_Entrance_1016100544",
+   "near": "art-references/world-fill/glb/Cave_Entrance.glb",
+   "sizeM": 60,
+   "places": [
+    "B29"
+   ],
+   "tris": 2486853
+  },
+  {
+   "id": "m_cave_formations_colle",
+   "source": "meshy_github",
+   "kind": "rock",
+   "path": "meshy/Meshy_AI_Cave_Formations_Colle_1016195557",
+   "tris": 892844
+  },
+  {
+   "id": "m_cave_structures_1",
+   "source": "meshy_github",
+   "kind": "rock",
+   "path": "meshy/Meshy_AI_Cave_Structures_1_1016100702",
+   "near": "art-references/world-fill/glb/Cave_Structures_1.glb",
+   "sizeM": 30,
+   "places": [
+    "B29"
+   ],
+   "tris": 1115728
+  },
+  {
+   "id": "m_celestial_armillary",
+   "source": "meshy_project",
+   "kind": "building",
+   "near": "art-references/world-fill/glb/Celestial_Armillary.glb",
+   "sizeM": 54,
+   "places": [
+    "B21"
+   ]
+  },
+  {
+   "id": "m_celestial_gothic_wall",
+   "source": "meshy_github",
+   "kind": "prop",
+   "path": "meshy/Meshy_AI_Celestial_Gothic_Wall_1016180531",
+   "tris": 2132688,
+   "notes": "palace interior: palace wall panel"
+  },
+  {
+   "id": "m_cementery_pillar_vari",
+   "source": "meshy_github",
+   "kind": "building",
+   "path": "meshy/Meshy_AI_Cementery_Pillar_Vari_1016111156",
+   "near": "art-references/world-fill/glb/Cementery_Pillar_Vari.glb",
+   "sizeM": 8,
+   "places": [
+    "B17"
+   ],
+   "tris": 2982,
+   "notes": "wild relic/rock scatter"
+  },
+  {
+   "id": "m_church",
+   "source": "meshy_github",
+   "kind": "building",
+   "path": "meshy/Meshy_AI_Church_1016102335",
+   "tris": 1391824,
+   "fix": [
+    "cross to star"
+   ]
+  },
+  {
+   "id": "m_cliff_formations",
+   "source": "meshy_github",
+   "kind": "rock",
+   "path": "meshy/Meshy_AI_Cliff_Formations_1016200600",
+   "near": "art-references/world-fill/glb/Cliff_Formations.glb",
+   "sizeM": 60,
+   "places": [
+    "B11"
+   ],
+   "tris": 1492664
+  },
+  {
+   "id": "m_colorful_courtyard_vi",
+   "source": "meshy_github",
+   "kind": "building",
+   "path": "meshy/Meshy_AI_Colorful_Courtyard_Vi_1016090158",
+   "near": "art-references/world-fill/glb/Colorful_Courtyard_Vi.glb",
+   "sizeM": 40,
+   "places": [
+    "B09"
+   ],
+   "tris": 2219433
+  },
+  {
+   "id": "m_copper_cloud_bonsai",
+   "source": "meshy_project",
+   "kind": "building",
+   "near": "art-references/world-fill/glb/Copper_Cloud_Bonsai.glb",
+   "sizeM": 22,
+   "places": [
+    "B04"
+   ]
+  },
+  {
+   "id": "m_create_a_whimsical_3d",
+   "source": "meshy_github",
+   "kind": "prop",
+   "path": "meshy/Meshy_AI_Create_a_whimsical_3D_1016070851",
+   "tris": 716618,
+   "notes": "palace interior: castle bed"
+  },
+  {
+   "id": "m_crystal_blossom_mirro",
+   "source": "meshy_github",
+   "kind": "rock",
+   "path": "meshy/Meshy_AI_Crystal_Blossom_Mirro_1016065020",
+   "tris": 1123027,
+   "notes": "palace interior: wardrobe mirror"
+  },
+  {
+   "id": "m_crystal_peaks_pbr",
+   "source": "meshy_github",
+   "kind": "rock",
+   "path": "meshy/Meshy_AI_Crystal_Peaks_PBR__1016102059",
+   "near": "art-references/world-fill/glb/Crystal_Peaks_PBR.glb",
+   "sizeM": 30,
+   "places": [
+    "B25",
+    "B29"
+   ],
+   "tris": 1350023
+  },
+  {
+   "id": "m_dark_oriental_gateway",
+   "source": "meshy_github",
+   "kind": "building",
+   "path": "meshy/Meshy_AI_Dark_oriental_gateway_1016102548",
+   "near": "art-references/world-fill/glb/Dark_oriental_gateway.glb",
+   "sizeM": 32,
+   "places": [
+    "B06"
+   ],
+   "tris": 653011
+  },
+  {
+   "id": "m_desert_adobe_courtyar",
+   "source": "meshy_github",
+   "kind": "building",
+   "path": "meshy/Meshy_AI_Desert_Adobe_Courtyar_1016090133",
+   "near": "art-references/world-fill/glb/Desert_Adobe_Courtyar.glb",
+   "sizeM": 20,
+   "places": [
+    "B27"
+   ],
+   "tris": 1017400
+  },
+  {
+   "id": "m_desert_colossus",
+   "source": "meshy_github",
+   "kind": "creature",
+   "path": "meshy/Meshy_AI_Desert_Colossus_1016194205",
+   "tris": 754376,
+   "notes": "not used: sand worm with a toothed mouth; too scary as is"
+  },
+  {
+   "id": "m_desert_dwelling",
+   "source": "meshy_github",
+   "kind": "building",
+   "path": "meshy/Meshy_AI_Desert_Dwelling_1016084916",
+   "near": "art-references/world-fill/glb/Desert_Dwelling.glb",
+   "sizeM": 10,
+   "places": [
+    "B27"
+   ],
+   "tris": 1696536
+  },
+  {
+   "id": "m_desert_fortress",
+   "source": "meshy_github",
+   "kind": "building",
+   "path": "meshy/Meshy_AI_Desert_Fortress_1016100109",
+   "near": "art-references/world-fill/glb/Desert_Fortress.glb",
+   "sizeM": 90,
+   "places": [
+    "B27"
+   ],
+   "tris": 1634428
+  },
+  {
+   "id": "m_desert_monolith",
+   "source": "meshy_github",
+   "kind": "rock",
+   "path": "meshy/Meshy_AI_Desert_Monolith_1016095716",
+   "near": "art-references/world-fill/glb/Desert_Monolith.glb",
+   "sizeM": 40,
+   "places": [],
+   "tris": 1109983,
+   "notes": "wild relic/rock scatter"
+  },
+  {
+   "id": "m_desert_mushroom_rock",
+   "source": "meshy_github",
+   "kind": "tree",
+   "path": "meshy/Meshy_AI_Desert_Mushroom_Rock_1015130328",
+   "near": "art-references/world-fill/glb/Desert_Mushroom_Rock.glb",
+   "sizeM": 35,
+   "places": [
+    "B10"
+   ],
+   "tris": 10302
+  },
+  {
+   "id": "m_desert_oasis_palace",
+   "source": "meshy_github",
+   "kind": "building",
+   "path": "meshy/Meshy_AI_Desert_Oasis_Palace_1016070702",
+   "near": "art-references/world-fill/glb/Desert_Oasis_Palace.glb",
+   "sizeM": 60,
+   "places": [
+    "B27"
+   ],
+   "tris": 2431471
+  },
+  {
+   "id": "m_desert_rock_formation",
+   "source": "meshy_github",
+   "kind": "rock",
+   "path": "meshy/Meshy_AI_Desert_Rock_Formation_1016084807",
+   "near": "art-references/world-fill/glb/Desert_Rock_Formation.glb",
+   "sizeM": 30,
+   "places": [],
+   "tris": 1764127,
+   "notes": "wild relic/rock scatter"
+  },
+  {
+   "id": "m_desert_ruins",
+   "source": "meshy_github",
+   "kind": "building",
+   "path": "meshy/Meshy_AI_Desert_Ruins_1016084951",
+   "near": "art-references/world-fill/glb/Desert_Ruins.glb",
+   "sizeM": 20,
+   "places": [
+    "B27"
+   ],
+   "tris": 888712,
+   "notes": "wild relic/rock scatter"
+  },
+  {
+   "id": "m_desert_sandstone_arch",
+   "source": "meshy_github",
+   "kind": "rock",
+   "path": "meshy/Meshy_AI_Desert_Sandstone_Arch_1016095754",
+   "near": "art-references/world-fill/glb/Desert_Sandstone_Arch.glb",
+   "sizeM": 45,
+   "places": [
+    "B10"
+   ],
+   "tris": 676932
+  },
+  {
+   "id": "m_design_a_regal_prince",
+   "source": "meshy_github",
+   "kind": "prop",
+   "path": "meshy/Meshy_AI_Design_a_regal_prince_1016065928",
+   "tris": 810588,
+   "notes": "palace interior: vanity, wardrobe room"
+  },
+  {
+   "id": "m_domed_palace_model",
+   "source": "meshy_github",
+   "kind": "building",
+   "path": "meshy/Meshy_AI_Domed_Palace_Model_1016070653_generate.fbx",
+   "near": "art-references/world-fill/glb/Domed_Palace_Model.glb",
+   "sizeM": 130,
+   "places": [
+    "B02"
+   ],
+   "tris": 1992392
+  },
+  {
+   "id": "m_elemental_cube_creatu",
+   "source": "meshy_github",
+   "kind": "creature",
+   "path": "meshy/Meshy_AI_Elemental_Cube_Creatu_1016134147",
+   "tris": 1927290,
+   "fix": [
+    "remove eyes"
+   ]
+  },
+  {
+   "id": "m_elephant_rock_formati",
+   "source": "meshy_github",
+   "kind": "rock",
+   "path": "meshy/Meshy_AI_Elephant_Rock_Formati_1016100426",
+   "near": "art-references/world-fill/glb/Elephant_Rock_Formati.glb",
+   "sizeM": 35,
+   "places": [],
+   "tris": 1318033,
+   "notes": "wild relic/rock scatter"
+  },
+  {
+   "id": "m_elven_tower_base_circ",
+   "source": "meshy_github",
+   "kind": "building",
+   "path": "meshy/Meshy_AI_Elven_tower_base_Circ_1016095944",
+   "near": "art-references/world-fill/glb/Elven_tower_base_Circ.glb",
+   "sizeM": 30,
+   "places": [
+    "B05",
+    "B14",
+    "B28"
+   ],
+   "tris": 1339052
+  },
+  {
+   "id": "m_ember_tiled_turret_ho",
+   "source": "meshy_github",
+   "kind": "building",
+   "path": "meshy/Meshy_AI_Ember_Tiled_Turret_Ho_1016085925",
+   "near": "art-references/world-fill/glb/Ember_Tiled_Turret_Ho.glb",
+   "sizeM": 16,
+   "places": [
+    "B12"
+   ],
+   "tris": 1550951
+  },
+  {
+   "id": "m_emberkeep_turret",
+   "source": "meshy_github",
+   "kind": "building",
+   "path": "meshy/Meshy_AI_Emberkeep_Turret_1016064647",
+   "near": "art-references/world-fill/glb/Emberkeep_Turret.glb",
+   "sizeM": 45,
+   "places": [
+    "B05"
+   ],
+   "tris": 1757089
+  },
+  {
+   "id": "m_enchanted_forest_mosa",
+   "source": "meshy_github",
+   "kind": "terrain",
+   "path": "meshy/Meshy_AI_Enchanted_Forest_Mosa_1016201544",
+   "tris": 804122
+  },
+  {
+   "id": "m_enchanted_forest_thro",
+   "source": "meshy_github",
+   "kind": "building",
+   "path": "meshy/Meshy_AI_Enchanted_Forest_Thro_1016065037",
+   "near": "art-references/world-fill/glb/Enchanted_Forest_Thro.glb",
+   "sizeM": 6,
+   "places": [
+    "B18"
+   ],
+   "tris": 95149
+  },
+  {
+   "id": "m_enchanted_lantern_tre",
+   "source": "meshy_github",
+   "kind": "building",
+   "path": "meshy/Meshy_AI_Enchanted_Lantern_Tre_1016065228",
+   "near": "art-references/world-fill/glb/Enchanted_Lantern_Tre.glb",
+   "sizeM": 6,
+   "places": [
+    "B17"
+   ],
+   "tris": 1153326
+  },
+  {
+   "id": "m_enchanted_spiral_towe",
+   "source": "meshy_github",
+   "kind": "building",
+   "path": "meshy/Meshy_AI_Enchanted_Spiral_Towe_1016102721",
+   "near": "art-references/world-fill/glb/Enchanted_Spiral_Towe.glb",
+   "sizeM": 40,
+   "places": [
+    "B14"
+   ],
+   "tris": 396779
+  },
+  {
+   "id": "m_enchanted_thatch_cott",
+   "source": "meshy_github",
+   "kind": "building",
+   "path": "meshy/Meshy_AI_Enchanted_Thatch_Cott_1016064146",
+   "near": "art-references/world-fill/glb/Enchanted_Thatch_Cott.glb",
+   "sizeM": 12,
+   "places": [
+    "B12",
+    "B16"
+   ],
+   "tris": 3649171
+  },
+  {
+   "id": "m_england_mystic_ston",
+   "source": "meshy_github",
+   "kind": "building",
+   "path": "meshy/Meshy_AI__England_Mystic_Ston_1016193730",
+   "near": "art-references/world-fill/glb/England_Mystic_Ston.glb",
+   "sizeM": 60,
+   "places": [
+    "B17"
+   ],
+   "tris": 418900
+  },
+  {
+   "id": "m_erosion_pathway",
+   "source": "meshy_github",
+   "kind": "terrain",
+   "path": "meshy/Meshy_AI_Erosion_Pathway_1016084336",
+   "tris": 1730758
+  },
+  {
+   "id": "m_ethereal_spiral",
+   "source": "meshy_github",
+   "kind": "building",
+   "path": "meshy/Meshy_AI_Ethereal_Spiral_1016091226",
+   "tris": 152917
+  },
+  {
+   "id": "m_fallen_pillar",
+   "source": "meshy_github",
+   "kind": "building",
+   "path": "meshy/Meshy_AI_Fallen_Pillar_1016193912",
+   "near": "art-references/world-fill/glb/Fallen_Pillar.glb",
+   "sizeM": 10,
+   "places": [],
+   "tris": 4254,
+   "notes": "wild relic/rock scatter"
+  },
+  {
+   "id": "m_fantasy_terrain_bases",
+   "source": "meshy_github",
+   "kind": "tree",
+   "path": "meshy/Meshy_AI_Fantasy_Terrain_Bases_1016071141",
+   "tris": 1519494
+  },
+  {
+   "id": "m_floating_stone_island",
+   "source": "meshy_github",
+   "kind": "rock",
+   "path": "meshy/Meshy_AI_Floating_Stone_Island_1016084851",
+   "near": "art-references/world-fill/glb/Floating_Stone_Island.glb",
+   "sizeM": 70,
+   "places": [
+    "B30"
+   ],
+   "tris": 122416
+  },
+  {
+   "id": "m_floral_wreath_of_spri",
+   "source": "meshy_github",
+   "kind": "building",
+   "path": "meshy/Meshy_AI_Floral_Wreath_of_Spri_1016134903",
+   "near": "art-references/world-fill/glb/Floral_Wreath_of_Spri.glb",
+   "sizeM": 7,
+   "places": [
+    "B20",
+    "B31"
+   ],
+   "tris": 1551432
+  },
+  {
+   "id": "m_for_diana_this_beauti",
+   "source": "meshy_github",
+   "kind": "building",
+   "path": "meshy/Meshy_AI_For_Diana_This_beauti_1016065910",
+   "near": "art-references/world-fill/glb/For_Diana_This_beauti.glb",
+   "sizeM": 4,
+   "places": [
+    "B31"
+   ],
+   "tris": 2599142,
+   "notes": "rose swing: a gift spot"
+  },
+  {
+   "id": "m_genkis_khan_army_rook",
+   "source": "meshy_github",
+   "kind": "building",
+   "path": "meshy/Meshy_AI_Genkis_Khan_army_Rook_1016193642",
+   "tris": 1944758,
+   "notes": "not used: chess-piece tower, off style"
+  },
+  {
+   "id": "m_ghotisches_schloss",
+   "source": "meshy_github",
+   "kind": "building",
+   "path": "meshy/Meshy_AI_Ghotisches_Schloss_1016194532",
+   "near": "art-references/world-fill/glb/Ghotisches_Schloss.glb",
+   "sizeM": 95,
+   "places": [
+    "B05"
+   ],
+   "tris": 1732545
+  },
+  {
+   "id": "m_gilded_baroque_flouri",
+   "source": "meshy_github",
+   "kind": "prop",
+   "path": "meshy/Meshy_AI_Gilded_Baroque_Flouri_1016063604",
+   "tris": 208304,
+   "notes": "palace interior: wall ornament"
+  },
+  {
+   "id": "m_gilded_gothic_wall_ca",
+   "source": "meshy_github",
+   "kind": "prop",
+   "path": "meshy/Meshy_AI_Gilded_Gothic_Wall_Ca_1016192558",
+   "tris": 1957878,
+   "notes": "palace interior: palace wall panel"
+  },
+  {
+   "id": "m_golden_fleur_de_lis",
+   "source": "meshy_github",
+   "kind": "prop",
+   "path": "meshy/Meshy_AI_Golden_Fleur_de_lis_1016063557",
+   "tris": 126131,
+   "notes": "palace interior: wall ornament"
+  },
+  {
+   "id": "m_golden_rose_teacup",
+   "source": "meshy_github",
+   "kind": "prop",
+   "path": "meshy/Meshy_AI_Golden_Rose_Teacup_1016064856",
+   "tris": 808544,
+   "notes": "palace interior: tea table"
+  },
+  {
+   "id": "m_gothic_cathedral",
+   "source": "meshy_project",
+   "kind": "building",
+   "near": "art-references/world-fill/glb/Gothic_Cathedral.glb",
+   "sizeM": 160,
+   "places": [
+    "B03"
+   ],
+   "fix": [
+    "cross to star"
+   ]
+  },
+  {
+   "id": "m_herbal_harvest",
+   "source": "meshy_github",
+   "kind": "building",
+   "path": "meshy/Meshy_AI_Herbal_Harvest_1016091424",
+   "near": "art-references/world-fill/glb/Herbal_Harvest.glb",
+   "sizeM": 3,
+   "places": [
+    "B12"
+   ],
+   "tris": 3229443
+  },
+  {
+   "id": "m_high_detail_fantasy",
+   "source": "meshy_github",
+   "kind": "tree",
+   "path": "meshy/Meshy_AI_High_detail_fantasy__1016090651",
+   "near": "art-references/world-fill/glb/High_detail_fantasy.glb",
+   "sizeM": 22,
+   "places": [
+    "B17"
+   ],
+   "tris": 1668676
+  },
+  {
+   "id": "m_high_detail_wall_dec",
+   "source": "meshy_github",
+   "kind": "prop",
+   "path": "meshy/Meshy_AI_High_detail_wall_dec_1016065830",
+   "tris": 608365,
+   "notes": "palace interior: rose wall ornament"
+  },
+  {
+   "id": "m_infernal_peak",
+   "source": "meshy_github",
+   "kind": "rock",
+   "path": "meshy/Meshy_AI_Infernal_Peak_1015165746",
+   "near": "art-references/world-fill/glb/Infernal_Peak.glb",
+   "sizeM": 150,
+   "places": [
+    "B26"
+   ],
+   "tris": 660974
+  },
+  {
+   "id": "m_isle_of_the_stone_spi",
+   "source": "meshy_project",
+   "kind": "rock",
+   "near": "art-references/world-fill/glb/Isle_of_the_Stone_Spi.glb",
+   "sizeM": 220,
+   "places": [
+    "B14"
+   ]
+  },
+  {
+   "id": "m_kalliope_house_comple",
+   "source": "meshy_github",
+   "kind": "building",
+   "path": "meshy/Meshy_AI_Kalliope_House_Comple_1016090421_image-to-3d-texture_fbx",
+   "near": "art-references/world-fill/glb/Kalliope_House_Comple.glb",
+   "sizeM": 12,
+   "places": [
+    "B09",
+    "B19"
+   ],
+   "tris": 682124
+  },
+  {
+   "id": "m_karlskirche_vienna",
+   "source": "meshy_github",
+   "kind": "building",
+   "path": "meshy/Meshy_AI_Karlskirche_Vienna_1016194447",
+   "tris": 2101990,
+   "notes": "not used: real church, crosses",
+   "fix": [
+    "cross to star"
+   ]
+  },
+  {
+   "id": "m_lantern_tree_palace",
+   "source": "meshy_github",
+   "kind": "tree",
+   "path": "meshy/Meshy_AI_Lantern_Tree_Palace_1016070708",
+   "near": "art-references/world-fill/glb/Lantern_Tree_Palace.glb",
+   "sizeM": 120,
+   "places": [
+    "B18"
+   ],
+   "tris": 7719272
+  },
+  {
+   "id": "m_leafspire_cathedral",
+   "source": "meshy_project",
+   "kind": "building",
+   "near": "art-references/world-fill/glb/Leafspire_Cathedral.glb",
+   "sizeM": 100,
+   "places": [
+    "B25"
+   ]
+  },
+  {
+   "id": "m_luminous_paper_flower",
+   "source": "meshy_github",
+   "kind": "building",
+   "path": "meshy/Meshy_AI_Luminous_Paper_Flower_1016064832",
+   "near": "art-references/world-fill/glb/Luminous_Paper_Flower.glb",
+   "sizeM": 4,
+   "places": [
+    "B17",
+    "B32"
+   ],
+   "tris": 3177521
+  },
+  {
+   "id": "m_majestic_castle",
+   "source": "meshy_github",
+   "kind": "building",
+   "path": "meshy/Meshy_AI_Majestic_Castle_1016102747",
+   "tris": 6530634
+  },
+  {
+   "id": "m_majestic_pagoda_palac",
+   "source": "meshy_project",
+   "kind": "building",
+   "near": "art-references/world-fill/glb/Majestic_Pagoda_Palac.glb",
+   "sizeM": 90,
+   "places": [
+    "B06"
+   ]
+  },
+  {
+   "id": "m_majestic_rock_formati",
+   "source": "meshy_github",
+   "kind": "rock",
+   "path": "meshy/Meshy_AI_Majestic_Rock_Formati_1016100751",
+   "near": "art-references/world-fill/glb/Majestic_Rock_Formati.glb",
+   "sizeM": 45,
+   "places": [],
+   "tris": 52980,
+   "notes": "wild relic/rock scatter"
+  },
+  {
+   "id": "m_make_a_terrain",
+   "source": "meshy_github",
+   "kind": "terrain",
+   "path": "meshy/Meshy_AI_Make_a_terrain_1016071105",
+   "tris": 20148
+  },
+  {
+   "id": "m_marble_pavilion",
+   "source": "meshy_github",
+   "kind": "building",
+   "path": "meshy/Meshy_AI_Marble_Pavilion_1016102532",
+   "near": "art-references/world-fill/glb/Marble_Pavilion.glb",
+   "sizeM": 26,
+   "places": [
+    "B01",
+    "B07",
+    "B20",
+    "B23",
+    "B32"
+   ],
+   "tris": 4459455,
+   "notes": "floating theatre pavilions at the finale"
+  },
+  {
+   "id": "m_meadow_rocks",
+   "source": "meshy_project",
+   "kind": "rock",
+   "near": "art-references/world-fill/glb/Meadow_Rocks.glb",
+   "sizeM": 6,
+   "places": [],
+   "notes": "wild relic/rock scatter"
+  },
+  {
+   "id": "m_medieval_cottage",
+   "source": "meshy_project",
+   "kind": "building",
+   "near": "art-references/world-fill/glb/Medieval_Cottage.glb",
+   "sizeM": 12,
+   "places": [
+    "B12"
+   ]
+  },
+  {
+   "id": "m_mediterranean_villa",
+   "source": "meshy_project",
+   "kind": "building",
+   "near": "art-references/world-fill/glb/Mediterranean_Villa.glb",
+   "sizeM": 18,
+   "places": [
+    "B09"
+   ]
+  },
+  {
+   "id": "m_mesa_cliff_wall",
+   "source": "meshy_github",
+   "kind": "rock",
+   "path": "meshy/Meshy_AI_Mesa_Cliff_Wall_1015130343_image-to-3d-texture_fbx",
+   "tris": 405342
+  },
+  {
+   "id": "m_mesa_view",
+   "source": "meshy_github",
+   "kind": "rock",
+   "path": "meshy/Meshy_AI_Mesa_View_1016084352",
+   "tris": 1590226
+  },
+  {
+   "id": "m_metaphor_the_tree_of",
+   "source": "meshy_github",
+   "kind": "tree",
+   "path": "meshy/Meshy_AI_Metaphor_The_Tree_of_1016085934",
+   "near": "art-references/world-fill/glb/Metaphor_The_Tree_of.glb",
+   "sizeM": 35,
+   "places": [
+    "B18"
+   ],
+   "tris": 5120755
+  },
+  {
+   "id": "m_miniature_japanese_sh",
+   "source": "meshy_github",
+   "kind": "building",
+   "path": "meshy/Meshy_AI_Miniature_Japanese_Sh_1016093555",
+   "tris": 1757524
+  },
+  {
+   "id": "m_mossy_monolith",
+   "source": "meshy_github",
+   "kind": "rock",
+   "path": "meshy/Meshy_AI_Mossy_Monolith_1016124758",
+   "near": "art-references/world-fill/glb/Mossy_Monolith.glb",
+   "sizeM": 50,
+   "places": [
+    "B30"
+   ],
+   "tris": 8784,
+   "notes": "wild relic/rock scatter"
+  },
+  {
+   "id": "m_mossy_timber_ruins",
+   "source": "meshy_github",
+   "kind": "building",
+   "path": "meshy/Meshy_AI_Mossy_Timber_Ruins_1016084543",
+   "near": "art-references/world-fill/glb/Mossy_Timber_Ruins.glb",
+   "sizeM": 15,
+   "places": [],
+   "tris": 2175967,
+   "notes": "wild relic/rock scatter"
+  },
+  {
+   "id": "m_mountain",
+   "source": "meshy_github",
+   "kind": "terrain",
+   "path": "meshy/Meshy_AI_Mountain_1016084256",
+   "tris": 43776
+  },
+  {
+   "id": "m_mountain_range",
+   "source": "meshy_github",
+   "kind": "terrain",
+   "path": "meshy/Meshy_AI_Mountain_Range_1016084807",
+   "tris": 942604
+  },
+  {
+   "id": "m_nature_relics_pack",
+   "source": "meshy_github",
+   "kind": "building",
+   "path": "meshy/Meshy_AI_Nature_Relics_Pack_1016132550",
+   "tris": 779056
+  },
+  {
+   "id": "m_object_charmi",
+   "source": "meshy_github",
+   "kind": "prop",
+   "path": "meshy/Meshy_AI__Object_Charmi_1016065951",
+   "tris": 9993,
+   "notes": "palace interior: stained-glass arch"
+  },
+  {
+   "id": "m_object_ornate",
+   "source": "meshy_github",
+   "kind": "prop",
+   "path": "meshy/Meshy_AI__Object_Ornate_1016070030",
+   "tris": 9992,
+   "notes": "palace interior: pink palace door"
+  },
+  {
+   "id": "m_object_decorative_wa",
+   "source": "meshy_github",
+   "kind": "prop",
+   "path": "meshy/Meshy_AI_Object_decorative_wa_1016070038",
+   "tris": 9992,
+   "notes": "palace interior: tall window"
+  },
+  {
+   "id": "m_old_town_clock_tower",
+   "source": "meshy_github",
+   "kind": "building",
+   "path": "meshy/Meshy_AI_Old_Town_Clock_Tower_1016102324",
+   "near": "art-references/world-fill/glb/Old_Town_Clock_Tower.glb",
+   "sizeM": 35,
+   "places": [
+    "B12"
+   ],
+   "tris": 277492
+  },
+  {
+   "id": "m_olive_grove_cottage",
+   "source": "meshy_github",
+   "kind": "building",
+   "path": "meshy/Meshy_AI_Olive_Grove_Cottage_1016090223",
+   "near": "art-references/world-fill/glb/Olive_Grove_Cottage.glb",
+   "sizeM": 22,
+   "places": [
+    "B13"
+   ],
+   "tris": 2783086
+  },
+  {
+   "id": "m_ornate_sandstone_gate",
+   "source": "meshy_github",
+   "kind": "rock",
+   "path": "meshy/Meshy_AI_Ornate_Sandstone_Gate_1016100116",
+   "near": "art-references/world-fill/glb/Ornate_Sandstone_Gate.glb",
+   "sizeM": 25,
+   "places": [
+    "B10"
+   ],
+   "tris": 958627
+  },
+  {
+   "id": "m_ornate_watchtower",
+   "source": "meshy_github",
+   "kind": "building",
+   "path": "meshy/Meshy_AI_Ornate_Watchtower_1016194034",
+   "near": "art-references/world-fill/glb/Ornate_Watchtower.glb",
+   "sizeM": 30,
+   "places": [
+    "B06"
+   ],
+   "tris": 1378533
+  },
+  {
+   "id": "m_pantheon",
+   "source": "meshy_project",
+   "kind": "building",
+   "near": "art-references/world-fill/glb/Pantheon.glb",
+   "sizeM": 60,
+   "places": [
+    "B07"
+   ]
+  },
+  {
+   "id": "m_path_to_the_heavens_p",
+   "source": "meshy_github",
+   "kind": "prop",
+   "path": "meshy/Meshy_AI_Path_to_the_Heavens_P_1016065217",
+   "tris": 108504,
+   "notes": "palace interior: folding screen"
+  },
+  {
+   "id": "m_pine_trees_on_a_rocky",
+   "source": "meshy_github",
+   "kind": "tree",
+   "path": "meshy/Meshy_AI_Pine_Trees_on_a_Rocky_1016133300",
+   "near": "art-references/world-fill/glb/Pine_Trees_on_a_Rocky.glb",
+   "sizeM": 28,
+   "places": [
+    "B16"
+   ],
+   "tris": 9620761
+  },
+  {
+   "id": "m_please_provide_an_ima",
+   "source": "meshy_github",
+   "kind": "building",
+   "path": "meshy/Meshy_AI_Please_provide_an_ima_1016194507",
+   "near": "art-references/world-fill/glb/Please_provide_an_ima.glb",
+   "sizeM": 130,
+   "places": [
+    "B04"
+   ],
+   "tris": 756850
+  },
+  {
+   "id": "m_prismatic_peaks",
+   "source": "meshy_github",
+   "kind": "rock",
+   "path": "meshy/Meshy_AI_Prismatic_Peaks_1016014201",
+   "near": "art-references/world-fill/glb/Prismatic_Peaks.glb",
+   "sizeM": 30,
+   "places": [
+    "B28"
+   ],
+   "tris": 845370
+  },
+  {
+   "id": "m_realistic_zocalo_mexi",
+   "source": "meshy_github",
+   "kind": "building",
+   "path": "meshy/Meshy_AI_Realistic_Zocalo_Mexi_1016194834",
+   "tris": 1215548,
+   "notes": "not used: real cathedral, crosses",
+   "fix": [
+    "cross to star"
+   ]
+  },
+  {
+   "id": "m_ring_village_diorama",
+   "source": "meshy_github",
+   "kind": "building",
+   "path": "meshy/Meshy_AI_Ring_Village_Diorama_1016084950",
+   "near": "art-references/world-fill/glb/Ring_Village_Diorama.glb",
+   "sizeM": 60,
+   "places": [
+    "B14"
+   ],
+   "tris": 621332
+  },
+  {
+   "id": "m_riverbank_terrain_mod",
+   "source": "meshy_github",
+   "kind": "terrain",
+   "path": "meshy/Meshy_AI_Riverbank_Terrain_Mod_1016071157",
+   "tris": 6497531
+  },
+  {
+   "id": "m_rock",
+   "source": "meshy_github",
+   "kind": "rock",
+   "path": "meshy/Meshy_AI_Rock_1016084637",
+   "tris": 1422514
+  },
+  {
+   "id": "m_rock_formation_collec",
+   "source": "meshy_project",
+   "kind": "rock",
+   "near": "art-references/world-fill/glb/Rock_Formation_Collec.glb",
+   "sizeM": 20,
+   "places": [],
+   "notes": "wild relic/rock scatter"
+  },
+  {
+   "id": "m_rocky_archway",
+   "source": "meshy_github",
+   "kind": "rock",
+   "path": "meshy/Meshy_AI_Rocky_Archway_1016193852",
+   "near": "art-references/world-fill/glb/Rocky_Archway.glb",
+   "sizeM": 40,
+   "places": [
+    "B11"
+   ],
+   "tris": 1358189
+  },
+  {
+   "id": "m_rocky_cliffside",
+   "source": "meshy_github",
+   "kind": "rock",
+   "path": "meshy/Meshy_AI_Rocky_Cliffside_1016084816",
+   "tris": 1537429
+  },
+  {
+   "id": "m_rocky_terrain",
+   "source": "meshy_github",
+   "kind": "rock",
+   "path": "meshy/Meshy_AI_Rocky_Terrain_1016071100",
+   "tris": 3505531
+  },
+  {
+   "id": "m_romania_a_semi_real",
+   "source": "meshy_github",
+   "kind": "building",
+   "path": "meshy/Meshy_AI__Romania_A_semi_real_1016194752",
+   "tris": 97815
+  },
+  {
+   "id": "m_royal_carriage",
+   "source": "meshy_github",
+   "kind": "vehicle",
+   "path": "meshy/Meshy_AI_Royal_Carriage_1016070936",
+   "near": "art-references/world-fill/glb/Royal_Carriage.glb",
+   "sizeM": 5,
+   "places": [
+    "B32"
+   ],
+   "tris": 1340854,
+   "notes": "her arrival carriage (rides.her_carriage)"
+  },
+  {
+   "id": "m_royal_portal_gate",
+   "source": "meshy_github",
+   "kind": "building",
+   "path": "meshy/Meshy_AI_Royal_Portal_Gate_1016165217",
+   "near": "art-references/world-fill/glb/Royal_Portal_Gate.glb",
+   "sizeM": 70,
+   "places": [
+    "B01"
+   ],
+   "tris": 4545720
+  },
+  {
+   "id": "m_rubble_pile",
+   "source": "meshy_github",
+   "kind": "rock",
+   "path": "meshy/Meshy_AI_Rubble_Pile_1016084258",
+   "near": "art-references/world-fill/glb/Rubble_Pile.glb",
+   "sizeM": 8,
+   "places": [],
+   "tris": 2960,
+   "notes": "wild relic/rock scatter"
+  },
+  {
+   "id": "m_sentinel_peak",
+   "source": "meshy_github",
+   "kind": "rock",
+   "path": "meshy/Meshy_AI_Sentinel_Peak_1016084238",
+   "near": "art-references/world-fill/glb/Sentinel_Peak.glb",
+   "sizeM": 200,
+   "places": [
+    "B26"
+   ],
+   "tris": 832839
+  },
+  {
+   "id": "m_shrine",
+   "source": "meshy_github",
+   "kind": "building",
+   "path": "meshy/Meshy_AI_Shrine_1016093601",
+   "near": "art-references/world-fill/glb/Shrine.glb",
+   "sizeM": 12,
+   "places": [
+    "B06"
+   ],
+   "tris": 1008863
+  },
+  {
+   "id": "m_skyscraper_sentinel",
+   "source": "meshy_github",
+   "kind": "building",
+   "path": "meshy/Meshy_AI_Skyscraper_Sentinel_1016194056",
+   "tris": 269382,
+   "notes": "not used: modern tower"
+  },
+  {
+   "id": "m_stone",
+   "source": "meshy_github",
+   "kind": "rock",
+   "path": "meshy/Meshy_AI_Stone_1015170300",
+   "near": "art-references/world-fill/glb/Stone.glb",
+   "sizeM": 12,
+   "places": [],
+   "tris": 603837,
+   "notes": "wild relic/rock scatter"
+  },
+  {
+   "id": "m_stone_bridge",
+   "source": "meshy_github",
+   "kind": "rock",
+   "path": "meshy/Meshy_AI_Stone_Bridge_1016111118",
+   "near": "art-references/world-fill/glb/Stone_Bridge.glb",
+   "sizeM": 14,
+   "places": [
+    "B31"
+   ],
+   "tris": 544567
+  },
+  {
+   "id": "m_stone_face",
+   "source": "meshy_github",
+   "kind": "rock",
+   "path": "meshy/Meshy_AI_Stone_Face_1016090612",
+   "tris": 9216,
+   "fix": [
+    "veil face"
+   ]
+  },
+  {
+   "id": "m_stone_fortress",
+   "source": "meshy_github",
+   "kind": "rock",
+   "path": "meshy/Meshy_AI_Stone_Fortress_1016122800",
+   "near": "art-references/world-fill/glb/Stone_Fortress.glb",
+   "sizeM": 70,
+   "places": [
+    "B10"
+   ],
+   "tris": 1547884
+  },
+  {
+   "id": "m_stone_lantern",
+   "source": "meshy_github",
+   "kind": "rock",
+   "path": "meshy/Meshy_AI_Stone_Lantern_1016065234",
+   "near": "art-references/world-fill/glb/Stone_Lantern.glb",
+   "sizeM": 3,
+   "places": [
+    "B06",
+    "B19"
+   ],
+   "tris": 212061,
+   "notes": "wild relic/rock scatter"
+  },
+  {
+   "id": "m_subject_a_commemorat",
+   "source": "meshy_github",
+   "kind": "building",
+   "path": "meshy/Meshy_AI_Subject_A_commemorat_1016111127",
+   "near": "art-references/world-fill/glb/Subject_A_commemorat.glb",
+   "sizeM": 140,
+   "places": [],
+   "tris": 414576,
+   "notes": "the white waterfall gate; arrival"
+  },
+  {
+   "id": "m_terrain_mesh",
+   "source": "meshy_github",
+   "kind": "terrain",
+   "path": "meshy/Meshy_AI_Terrain_mesh_1016071826",
+   "tris": 792533
+  },
+  {
+   "id": "m_timbered_market_house",
+   "source": "meshy_github",
+   "kind": "building",
+   "path": "meshy/Meshy_AI_Timbered_Market_House_1016132201",
+   "near": "art-references/world-fill/glb/Timbered_Market_House.glb",
+   "sizeM": 14,
+   "places": [
+    "B12"
+   ],
+   "tris": 1906817
+  },
+  {
+   "id": "m_urban_debris",
+   "source": "meshy_github",
+   "kind": "building",
+   "path": "meshy/Meshy_AI_Urban_Debris_1016090050",
+   "tris": 2201653,
+   "notes": "not used: city rubble"
+  },
+  {
+   "id": "m_vatican_cityscape_mod",
+   "source": "meshy_github",
+   "kind": "building",
+   "path": "meshy/Meshy_AI_Vatican_Cityscape_Mod_1016194927",
+   "tris": 1728031,
+   "notes": "not used: real place, crosses",
+   "fix": [
+    "cross to star"
+   ]
+  },
+  {
+   "id": "m_verdant_cascade_fount",
+   "source": "meshy_github",
+   "kind": "building",
+   "path": "meshy/Meshy_AI_Verdant_Cascade_Fount_1016064122",
+   "near": "art-references/world-fill/glb/Verdant_Cascade_Fount.glb",
+   "sizeM": 24,
+   "places": [
+    "B01"
+   ],
+   "tris": 2919582
+  },
+  {
+   "id": "m_verdant_palace",
+   "source": "meshy_github",
+   "kind": "building",
+   "path": "meshy/Meshy_AI_Verdant_Palace_1016102521",
+   "near": "art-references/world-fill/glb/Verdant_Palace.glb",
+   "sizeM": 60,
+   "places": [
+    "B15"
+   ],
+   "tris": 299509
+  },
+  {
+   "id": "m_verdant_ring_of_stone",
+   "source": "meshy_github",
+   "kind": "rock",
+   "path": "meshy/Meshy_AI_Verdant_Ring_of_Stone_1016064743",
+   "near": "art-references/world-fill/glb/Verdant_Ring_of_Stone.glb",
+   "sizeM": 20,
+   "places": [
+    "B17"
+   ],
+   "tris": 3147484,
+   "notes": "wild relic/rock scatter"
+  },
+  {
+   "id": "m_vintage_stone_villa",
+   "source": "meshy_project",
+   "kind": "rock",
+   "near": "art-references/world-fill/glb/Vintage_Stone_Villa.glb",
+   "sizeM": 25,
+   "places": [
+    "B10"
+   ]
+  },
+  {
+   "id": "m_volcanic_monolith",
+   "source": "meshy_github",
+   "kind": "rock",
+   "path": "meshy/Meshy_AI_Volcanic_Monolith_1016193930",
+   "near": "art-references/world-fill/glb/Volcanic_Monolith.glb",
+   "sizeM": 60,
+   "places": [
+    "B26"
+   ],
+   "tris": 755622,
+   "notes": "wild relic/rock scatter"
+  },
+  {
+   "id": "m_whimsical_hobbit_dwel",
+   "source": "meshy_github",
+   "kind": "building",
+   "path": "meshy/Meshy_AI_Whimsical_Hobbit_Dwel_1016090727",
+   "near": "art-references/world-fill/glb/Whimsical_Hobbit_Dwel.glb",
+   "sizeM": 9,
+   "places": [
+    "B12"
+   ],
+   "tris": 2178306
+  },
+  {
+   "id": "m_whiskerlynx",
+   "source": "meshy_github",
+   "kind": "creature",
+   "path": "meshy/Meshy_AI_Whiskerlynx_1016090526",
+   "tris": 479816,
+   "notes": "pet candidate once the eyes are removed",
+   "fix": [
+    "remove eyes"
+   ]
+  },
+  {
+   "id": "m_whispering_willow_of",
+   "source": "meshy_github",
+   "kind": "tree",
+   "path": "meshy/Meshy_AI_Whispering_Willow_of__1016031710",
+   "near": "art-references/world-fill/glb/Whispering_Willow_of.glb",
+   "sizeM": 16,
+   "places": [
+    "B31"
+   ],
+   "tris": 3280173
+  },
+  {
+   "id": "m_white_house_ruin_x",
+   "source": "meshy_github",
+   "kind": "building",
+   "path": "meshy/Meshy_AI_White_House_Ruin_X_1016102622",
+   "tris": 3179377,
+   "notes": "not used: real building"
+  },
+  {
+   "id": "m_white_lotus",
+   "source": "meshy_github",
+   "kind": "building",
+   "path": "meshy/Meshy_AI_White_Lotus_1016065159",
+   "near": "art-references/world-fill/glb/White_Lotus.glb",
+   "sizeM": 9,
+   "places": [
+    "B02"
+   ],
+   "tris": 1118635
+  },
+  {
+   "id": "m_windmill_haven",
+   "source": "meshy_project",
+   "kind": "building",
+   "near": "art-references/world-fill/glb/Windmill_Haven.glb",
+   "sizeM": 30,
+   "places": [
+    "B13"
+   ]
+  },
+  {
+   "id": "m_wyrdwood_creations_wo",
+   "source": "meshy_github",
+   "kind": "building",
+   "path": "meshy/Meshy_AI_Wyrdwood_Creations_Wo_1016071506",
+   "tris": 3890224
+  },
+  {
+   "id": "m_a_large_mountain_val",
+   "source": "meshy_github",
+   "kind": "terrain",
+   "path": "meshy/Meshy_AI_a_large_mountain_val_1016071814",
+   "tris": 1130469,
+   "notes": "reference for the crescent caldera shape"
+  },
+  {
+   "id": "m_a_large_rainbow_cryst",
+   "source": "meshy_github",
+   "kind": "rock",
+   "path": "meshy/Meshy_AI_a_large_rainbow_cryst_1016100600",
+   "near": "art-references/world-fill/glb/a_large_rainbow_cryst.glb",
+   "sizeM": 8,
+   "places": [
+    "B29"
+   ],
+   "tris": 93210
+  },
+  {
+   "id": "m_a_stylized_stump_base",
+   "source": "meshy_github",
+   "kind": "building",
+   "path": "meshy/Meshy_AI_a_stylized_stump_base_1016084807",
+   "near": "art-references/world-fill/glb/a_stylized_stump_base.glb",
+   "sizeM": 5,
+   "places": [
+    "B17"
+   ],
+   "tris": 2593500
+  },
+  {
+   "id": "m_artistic_abstract_cry",
+   "source": "meshy_github",
+   "kind": "building",
+   "path": "meshy/Meshy_AI_artistic_abstract_cry_1016200512",
+   "near": "art-references/world-fill/glb/artistic_abstract_cry.glb",
+   "sizeM": 8,
+   "places": [
+    "B28"
+   ],
+   "tris": 99516
+  },
+  {
+   "id": "m_black_and_white_sketc",
+   "source": "meshy_github",
+   "kind": "building",
+   "path": "meshy/Meshy_AI_black_and_white_sketc_1016194937",
+   "tris": 9982,
+   "notes": "not used: modern skyscraper"
+  },
+  {
+   "id": "m_japanese_building",
+   "source": "meshy_github",
+   "kind": "building",
+   "path": "meshy/Meshy_AI_japanese_building_1016111123",
+   "near": "art-references/world-fill/glb/japanese_building.glb",
+   "sizeM": 16,
+   "places": [
+    "B06"
+   ],
+   "tris": 788210
+  },
+  {
+   "id": "m_kleine_dorfkirche",
+   "source": "meshy_github",
+   "kind": "building",
+   "path": "meshy/Meshy_AI_kleine_Dorfkirche_1016102635",
+   "tris": 28438,
+   "fix": [
+    "cross to star"
+   ]
+  },
+  {
+   "id": "m_large_stylized_limest",
+   "source": "meshy_github",
+   "kind": "building",
+   "path": "meshy/Meshy_AI_large_stylized_limest_1016200604",
+   "tris": 732204
+  },
+  {
+   "id": "m_leaning_tower_of_pisa",
+   "source": "meshy_github",
+   "kind": "building",
+   "path": "meshy/Meshy_AI_leaning_tower_of_pisa_1016195245",
+   "tris": 1084167
+  },
+  {
+   "id": "m_low_poly_beautiful_mo",
+   "source": "meshy_github",
+   "kind": "building",
+   "path": "meshy/Meshy_AI_low_poly_beautiful_mo_1016003151",
+   "tris": 326686
+  },
+  {
+   "id": "m_museum_building",
+   "source": "meshy_github",
+   "kind": "building",
+   "path": "meshy/Meshy_AI_museum_building_1016102603",
+   "near": "art-references/world-fill/glb/museum_building.glb",
+   "sizeM": 30,
+   "places": [
+    "B09"
+   ],
+   "tris": 9999
+  },
+  {
+   "id": "m_rocky_terrain_with_te",
+   "source": "meshy_github",
+   "kind": "rock",
+   "path": "meshy/Meshy_AI_rocky_terrain_with_te_1016071134",
+   "tris": 556829
+  },
+  {
+   "id": "m_tokyo_skytree_pod_sli",
+   "source": "meshy_github",
+   "kind": "tree",
+   "path": "meshy/Meshy_AI_tokyo_skytree_pod_sli_1016194305",
+   "tris": 2174622,
+   "notes": "not used: modern tower"
+  },
+  {
+   "id": "m_untitled",
+   "source": "meshy_github",
+   "kind": "building",
+   "path": "meshy/Meshy_AI__1016100131",
+   "near": "art-references/world-fill/glb/untitled.glb",
+   "sizeM": 48,
+   "places": [
+    "B22"
+   ],
+   "tris": 174006,
+   "notes": "golden sun tower used as the lighthouse"
+  },
+  {
+   "id": "m_wood_chair",
+   "source": "meshy_github",
+   "kind": "prop",
+   "path": "meshy/Meshy_AI_wood_chair_1016134232",
+   "tris": 957887,
+   "notes": "palace interior: forest-spirit throne"
   }
  ],
  "quality": [
