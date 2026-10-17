@@ -1,0 +1,133 @@
+{
+ "views": "strip of 8 frames of 256 px; frame k is seen from direction (x, z) = (sin 45k, cos 45k) in the model frame; pick k = round(atan2(dx, dz) / 45 deg) mod 8, dx dz = camera minus model rotated by -rotY",
+ "units": "frame, height and radius are in GLB units: multiply by the placement scale. The card is a square of side frame; its centre sits base_from_centre * frame above the model base.",
+ "elevation_deg": 8,
+ "cards": {
+  "SeaPillar_Basalt": {
+   "frame": 123.33301,
+   "base_from_centre": 0.48,
+   "height": 118.58943,
+   "radius": 18.41689,
+   "elevation_deg": 8
+  },
+  "SeaPillar_Column": {
+   "frame": 126.88,
+   "base_from_centre": 0.48,
+   "height": 122.0,
+   "radius": 16.97056,
+   "elevation_deg": 8
+  },
+  "SeaPillar_CrystalSpire": {
+   "frame": 119.85937,
+   "base_from_centre": 0.48,
+   "height": 115.2494,
+   "radius": 12.23017,
+   "elevation_deg": 8
+  },
+  "SeaPillar_TwinArch": {
+   "frame": 115.024,
+   "base_from_centre": 0.48,
+   "height": 110.6,
+   "radius": 20.59951,
+   "elevation_deg": 8
+  },
+  "Viaduct_palace_east": {
+   "frame": 467.92166,
+   "base_from_centre": 0.48,
+   "height": 134.4,
+   "radius": 224.96234,
+   "elevation_deg": 8
+  },
+  "Viaduct_palace_north": {
+   "frame": 496.85721,
+   "base_from_centre": 0.48,
+   "height": 134.4,
+   "radius": 238.87366,
+   "elevation_deg": 8
+  },
+  "Viaduct_palace_northeast": {
+   "frame": 500.2803,
+   "base_from_centre": 0.48,
+   "height": 134.4,
+   "radius": 240.51937,
+   "elevation_deg": 8
+  },
+  "Viaduct_palace_west_n": {
+   "frame": 730.75337,
+   "base_from_centre": 0.48,
+   "height": 134.4,
+   "radius": 351.32374,
+   "elevation_deg": 8
+  },
+  "Viaduct_road_B01_B25": {
+   "frame": 314.21626,
+   "base_from_centre": 0.48,
+   "height": 134.4,
+   "radius": 151.06551,
+   "elevation_deg": 8
+  },
+  "Viaduct_road_B01_B32": {
+   "frame": 338.85795,
+   "base_from_centre": 0.48,
+   "height": 134.4,
+   "radius": 162.91247,
+   "elevation_deg": 8
+  },
+  "Viaduct_road_B02_B32": {
+   "frame": 243.94494,
+   "base_from_centre": 0.48,
+   "height": 134.4,
+   "radius": 117.28122,
+   "elevation_deg": 8
+  },
+  "Viaduct_road_B04_B25": {
+   "frame": 553.58481,
+   "base_from_centre": 0.48,
+   "height": 134.4,
+   "radius": 266.14654,
+   "elevation_deg": 8
+  },
+  "Viaduct_road_B04_B25_2": {
+   "frame": 413.63927,
+   "base_from_centre": 0.48,
+   "height": 134.4,
+   "radius": 198.86503,
+   "elevation_deg": 8
+  },
+  "Viaduct_road_B07_B25": {
+   "frame": 169.59429,
+   "base_from_centre": 0.48,
+   "height": 134.4,
+   "radius": 81.53571,
+   "elevation_deg": 8
+  },
+  "Viaduct_road_B07_B25_2": {
+   "frame": 310.48972,
+   "base_from_centre": 0.48,
+   "height": 134.4,
+   "radius": 149.27391,
+   "elevation_deg": 8
+  },
+  "Viaduct_trail_road_A_big_menhir_with_anc": {
+   "frame": 572.22937,
+   "base_from_centre": 0.48,
+   "height": 134.4,
+   "radius": 275.11027,
+   "elevation_deg": 8
+  },
+  "Viaduct_trail_road_Ancient_Archway": {
+   "frame": 246.63524,
+   "base_from_centre": 0.48,
+   "height": 134.4,
+   "radius": 118.57464,
+   "elevation_deg": 8
+  },
+  "Viaduct_trail_road_Ancient_Obelisk": {
+   "frame": 653.26033,
+   "base_from_centre": 0.48,
+   "height": 134.4,
+   "radius": 314.06747,
+   "elevation_deg": 8
+  }
+ }
+}
