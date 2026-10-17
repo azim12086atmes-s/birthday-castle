@@ -1,7 +1,12 @@
-// Proximity voice: every player's microphone is streamed peer-to-peer and
-// played through a 3D panner placed at their avatar, so voices get quieter
-// with distance and come from the right direction.
+// Proximity voice: microphones are streamed peer-to-peer and played through a
+// 3D panner placed at the speaker's avatar, so voices get quieter with distance
+// and come from the right direction. With up to 16 players a call is only held
+// with players nearby (opened within CALL_M, hung up beyond HANG_M), so nobody
+// uploads fifteen copies of their voice. Of each pair, the player with the
+// lower id places the call; the answer carries the other voice back.
 import { CONFIG } from './config.js';
+
+const CALL_M = 60, HANG_M = 90;
 
 export class Voice {
   constructor() {
@@ -10,6 +15,7 @@ export class Voice {
     this.peer = null;
     this.remotes = new Map(); // id -> { call, panner, el }
     this.known = new Set();
+    this.calling = new Map(); // id -> when we last placed a call
     this.onChange = null;
   }
 
@@ -30,13 +36,9 @@ export class Voice {
       call.answer(this.local || undefined);
       this.hook(call);
     });
-    if (this.local) for (const id of this.known) this.callPeer(id);
   }
 
-  addPeer(id) {
-    this.known.add(id);
-    if (this.local && this.peer) this.callPeer(id);
-  }
+  addPeer(id) { this.known.add(id); }
 
   removePeer(id) {
     this.known.delete(id);
@@ -47,8 +49,15 @@ export class Voice {
   async enableMic() {
     this.unlock();
     this.local = await navigator.mediaDevices.getUserMedia({ audio: { echoCancellation: true, noiseSuppression: true, autoGainControl: true } });
-    if (this.peer) for (const id of this.known) this.callPeer(id);
+    // hang up so the calls are placed again carrying this voice
+    for (const [id, r] of this.remotes) { r.call.close(); this.drop(id); }
     this.onChange && this.onChange();
+  }
+
+  // a silent stream for placing a call before the microphone is on
+  silence() {
+    if (!this._silent && this.ctx) this._silent = this.ctx.createMediaStreamDestination().stream;
+    return this._silent;
   }
 
   setMuted(muted) {
@@ -60,10 +69,12 @@ export class Voice {
   get muted() { return !this.local || !this.local.getAudioTracks().some((t) => t.enabled); }
 
   callPeer(id) {
-    if (!this.peer || !this.local || this.peer.destroyed) return;
+    const stream = this.local || this.silence();
+    if (!this.peer || !stream || this.peer.destroyed) return;
     const old = this.remotes.get(id);
     if (old) { old.call.close(); this.drop(id); }
-    const call = this.peer.call(id, this.local);
+    const call = this.peer.call(id, stream);
+    this.calling.set(id, performance.now());
     if (call) this.hook(call);
   }
 
@@ -115,6 +126,18 @@ export class Voice {
       L.upX.value = 0; L.upY.value = 1; L.upZ.value = 0;
     } else {
       L.setPosition(p.x, p.y, p.z); L.setOrientation(f.x, f.y, f.z, 0, 1, 0);
+    }
+    // open calls with players who came near, hang up on those who went far
+    const now = performance.now();
+    if (this.peer && !this.peer.destroyed && now - (this._ranged || 0) > 1000) {
+      this._ranged = now;
+      for (const id of this.known) {
+        const q = positions.get(id);
+        if (!q) continue;
+        const d = q.distanceTo(p), r = this.remotes.get(id);
+        if (r && d > HANG_M) { r.call.close(); this.drop(id); }
+        else if (!r && d < CALL_M && this.peer.id < id && now - (this.calling.get(id) || 0) > 5000) this.callPeer(id);
+      }
     }
     for (const [id, r] of this.remotes) {
       const q = positions.get(id);

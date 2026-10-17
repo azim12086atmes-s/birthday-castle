@@ -1,0 +1,6145 @@
+{
+ "meta": {
+  "title": "Birthday Quest",
+  "version": "0.1.0",
+  "celebrationAt": "2026-10-23T00:00:00",
+  "timezone": "local",
+  "honoreeName": "Princess",
+  "docs": [
+   "https://claude.ai/code/artifact/c6b5a6dd-a5a1-46cb-b938-935cfdb0e0d4",
+   "https://claude.ai/code/artifact/3148a84a-3994-4423-af7c-4bdd4b823097"
+  ]
+ },
+ "rules": [
+  {
+   "id": "no_eyes",
+   "text": "Creatures have no eyes (the Mew is waiting on the owner).",
+   "appliesTo": [
+    "creatures"
+   ]
+  },
+  {
+   "id": "faceless_statues",
+   "text": "Statues and sculptures are faceless or veiled.",
+   "appliesTo": [
+    "statues",
+    "models"
+   ]
+  },
+  {
+   "id": "stars_not_crosses",
+   "text": "Cross shapes become stars (finials, windows, decorations).",
+   "appliesTo": [
+    "symbols",
+    "models"
+   ]
+  },
+  {
+   "id": "modest_outfits",
+   "text": "Every outfit is modest; hijab-friendly headwear exists.",
+   "appliesTo": [
+    "outfits"
+   ]
+  },
+  {
+   "id": "female_only_dresses",
+   "text": "Women's party dresses are visible only to female accounts.",
+   "appliesTo": [
+    "outfits"
+   ]
+  },
+  {
+   "id": "no_gore",
+   "text": "Combat is magical: enemies shatter into light and petals, no blood.",
+   "appliesTo": [
+    "combat"
+   ]
+  },
+  {
+   "id": "natural_size",
+   "text": "Meshy models keep their natural size; only the palace is enlarged (x2.75).",
+   "appliesTo": [
+    "models"
+   ]
+  },
+  {
+   "id": "mew_secret",
+   "text": "Only the owner is the Mew; it is not in the pet menu and its voice is hidden until the reveal.",
+   "appliesTo": [
+    "voice",
+    "characters"
+   ]
+  },
+  {
+   "id": "original_creatures",
+   "text": "Creatures are original designs inspired by Pokemon, cartoons and myth, not copies.",
+   "appliesTo": [
+    "creatures"
+   ]
+  }
+ ],
+ "world": {
+  "sizeKm": 20,
+  "scaleS": 2.75,
+  "shape": "A crescent ring of towering mountains rising from the ocean, the mainland cradled inside, the palace at the centre, open to the sea on one side.",
+  "heightmap": "art-references/world-fill/terrain/ (crescent version, Oct 16)",
+  "biomeMap": "art-references/web-pack/maps/biome-1024.png",
+  "arrival": [
+   {
+    "id": "docks",
+    "name": "Horizon Docks",
+    "what": "Players appear on a floating dock at sea facing the mountain wall",
+    "at": {
+     "x": -710,
+     "z": 12158
+    }
+   },
+   {
+    "id": "gate",
+    "name": "White waterfall gate",
+    "what": "A giant white marble gate carved into the cliff, veiled by a waterfall, parts for them",
+    "at": {
+     "x": -710,
+     "z": 11158
+    }
+   },
+   {
+    "id": "ride_through",
+    "name": "Ride through the falls",
+    "what": "Each friend sits in their own ride, first person, droplets on screen",
+    "cutscene": "arrival"
+   },
+   {
+    "id": "aerial",
+    "name": "Aerial reveal",
+    "what": "Camera rises over the whole valley",
+    "cutscene": "arrival"
+   },
+   {
+    "id": "bridge",
+    "name": "Great marble bridge",
+    "what": "The rides cross the long white bridge over the lake"
+   },
+   {
+    "id": "doors",
+    "name": "Palace doors",
+    "what": "Players walk to the giant doors, which slowly open"
+   }
+  ]
+ },
+ "places": [
+  {
+   "id": "B01",
+   "name": "Princess Palace",
+   "biome": "palace_grounds",
+   "at": {
+    "x": 0,
+    "z": 0
+   },
+   "setting": "Raised centre, terraces down to the lake",
+   "look": "Rose marble, purple domes",
+   "people": "courtiers",
+   "head": "palace_steward",
+   "creatures": [
+    "cloud_koi"
+   ],
+   "game": {
+    "name": "Wardrobe runway",
+    "template": "party_game"
+   },
+   "challenge": {
+    "name": "the Hush, for the last shard",
+    "template": "boss_purification"
+   },
+   "shard": 1,
+   "schedule": "night",
+   "status": "designed",
+   "boss": "the_hush",
+   "order": 14,
+   "assets": [
+    "m_marble_pavilion",
+    "m_royal_portal_gate",
+    "m_verdant_cascade_fount"
+   ],
+   "scene": {
+    "local": "Head Courtier",
+    "greet": "Welcome home, {her}. The whole palace has been waiting for you.",
+    "sequence": [
+     "return_palace",
+     "boss_entrance",
+     "head_freed",
+     "finale"
+    ]
+   }
+  },
+  {
+   "id": "B02",
+   "name": "Moon Water Palace",
+   "biome": "lakes_rivers",
+   "at": {
+    "x": -1732,
+    "z": 3630
+   },
+   "setting": "Islet in Lantern Lake, west of the causeway, glass dome",
+   "look": "Glass dome on a lake islet",
+   "people": "tide-folk",
+   "head": "lady_of_tides",
+   "creatures": [
+    "bubble_turtles"
+   ],
+   "game": {
+    "name": "Lily-pad hop race",
+    "template": "race"
+   },
+   "challenge": {
+    "name": "Reflect moonlight into the dome together",
+    "template": "harmony_puzzle"
+   },
+   "shard": 2,
+   "schedule": "night",
+   "status": "designed",
+   "order": 3,
+   "assets": [
+    "m_a_colossal_floating_c",
+    "m_domed_palace_model",
+    "m_white_lotus"
+   ],
+   "scene": {
+    "local": "A tide-child",
+    "greet": "The water stopped singing when the Hush came. Can you hear how quiet it is?",
+    "sequence": [
+     "travel",
+     "enter_place",
+     "meet_people",
+     "frozen_head",
+     "befriend",
+     "head_freed",
+     "shard",
+     "farewell"
+    ]
+   }
+  },
+  {
+   "id": "B03",
+   "name": "Star Chapel",
+   "biome": "lakes_rivers",
+   "at": {
+    "x": 2062,
+    "z": 3878
+   },
+   "setting": "Islet in the lake, east, gothic pink spires",
+   "look": "Pink gothic spires",
+   "people": "bell ringers",
+   "head": "bell_warden",
+   "creatures": [
+    "crystal_hummingbirds"
+   ],
+   "game": {
+    "name": "Harmony bells",
+    "template": "harmony_puzzle"
+   },
+   "challenge": {
+    "name": "Align star beams to relight the rose window",
+    "template": "harmony_puzzle"
+   },
+   "shard": 3,
+   "schedule": "week_before",
+   "status": "designed",
+   "assets": [
+    "m_gothic_cathedral"
+   ],
+   "scene": {
+    "local": "The youngest bell ringer",
+    "greet": "Our bells only ring in grey now. Will you help us find the tune?",
+    "sequence": [
+     "travel",
+     "enter_place",
+     "meet_people",
+     "frozen_head",
+     "befriend",
+     "head_freed",
+     "shard",
+     "farewell"
+    ]
+   }
+  },
+  {
+   "id": "B04",
+   "name": "Rose Keep",
+   "biome": "blossom_groves",
+   "at": {
+    "x": -2640,
+    "z": -1485
+   },
+   "setting": "Pink keep on a crag, NW of the palace",
+   "look": "Pink keep on a crag",
+   "people": "knights",
+   "head": "knight_of_roses",
+   "creatures": [
+    "winged_unicorns"
+   ],
+   "game": {
+    "name": "Light-lance jousting",
+    "template": "party_game"
+   },
+   "challenge": {
+    "name": "the Thorn Golem",
+    "template": "boss_purification"
+   },
+   "shard": 4,
+   "schedule": "night",
+   "status": "designed",
+   "boss": "thorn_golem",
+   "order": 7,
+   "assets": [
+    "m_copper_cloud_bonsai",
+    "m_please_provide_an_ima"
+   ],
+   "scene": {
+    "local": "A squire",
+    "greet": "The Knight of Roses stood against the Thorn Golem alone. Now look at him.",
+    "sequence": [
+     "travel",
+     "enter_place",
+     "meet_people",
+     "frozen_head",
+     "befriend",
+     "boss_entrance",
+     "head_freed",
+     "shard",
+     "farewell"
+    ]
+   }
+  },
+  {
+   "id": "B05",
+   "name": "Misty Keep",
+   "biome": "misty_moor",
+   "at": {
+    "x": 2805,
+    "z": -2475
+   },
+   "setting": "Misty mountain crag, NE",
+   "look": "Mountain keep in fog",
+   "people": "sages",
+   "head": "mist_sage",
+   "creatures": [
+    "moss_deer"
+   ],
+   "game": {
+    "name": "Hide-and-seek in the fog",
+    "template": "party_game"
+   },
+   "challenge": {
+    "name": "Escort a lantern through the mist",
+    "template": "escort"
+   },
+   "shard": 5,
+   "schedule": "week_before",
+   "status": "designed",
+   "assets": [
+    "m_elven_tower_base_circ",
+    "m_emberkeep_turret",
+    "m_ghotisches_schloss"
+   ],
+   "scene": {
+    "local": "A young sage",
+    "greet": "Stay close to the lanterns. The mist forgets anyone who wanders.",
+    "sequence": [
+     "travel",
+     "enter_place",
+     "meet_people",
+     "frozen_head",
+     "befriend",
+     "head_freed",
+     "shard",
+     "farewell"
+    ]
+   }
+  },
+  {
+   "id": "B06",
+   "name": "Pagoda",
+   "biome": "blossom_groves",
+   "at": {
+    "x": 2888,
+    "z": -1155
+   },
+   "setting": "Tiered pagoda, east hills",
+   "look": "Tiered pagoda",
+   "people": "lantern makers",
+   "head": "lantern_master",
+   "creatures": [
+    "paper_cranes"
+   ],
+   "game": {
+    "name": "Paint and release sky lanterns",
+    "template": "gather_build"
+   },
+   "challenge": {
+    "name": "Defend the tiers from shadow waves",
+    "template": "arena_defence"
+   },
+   "shard": 6,
+   "schedule": "night",
+   "status": "designed",
+   "order": 4,
+   "assets": [
+    "m_a_3d_image_a_a_tradit",
+    "m_dark_oriental_gateway",
+    "m_majestic_pagoda_palac",
+    "m_ornate_watchtower",
+    "m_shrine",
+    "m_stone_lantern",
+    "m_japanese_building"
+   ],
+   "scene": {
+    "local": "A lantern maker",
+    "greet": "We made a thousand lanterns for tonight, and every one went grey.",
+    "sequence": [
+     "travel",
+     "enter_place",
+     "meet_people",
+     "frozen_head",
+     "befriend",
+     "head_freed",
+     "shard",
+     "farewell"
+    ]
+   }
+  },
+  {
+   "id": "B07",
+   "name": "Temple Rotundas",
+   "biome": "palace_grounds",
+   "at": {
+    "x": -82,
+    "z": -3465
+   },
+   "setting": "Due north on the palace axis, domed rotundas and a terrace",
+   "look": "Domed rotundas",
+   "people": "echo keepers",
+   "head": "keeper_of_echoes",
+   "creatures": [
+    "star_moths"
+   ],
+   "game": {
+    "name": "Echo memory game",
+    "template": "heart_quiz"
+   },
+   "challenge": {
+    "name": "The heart quiz: questions about her",
+    "template": "heart_quiz"
+   },
+   "shard": 7,
+   "schedule": "night",
+   "status": "designed",
+   "order": 8,
+   "assets": [
+    "m_marble_pavilion",
+    "m_pantheon"
+   ],
+   "scene": {
+    "local": "An echo keeper",
+    "greet": "These halls keep every kind word ever spoken here. The Hush is erasing them.",
+    "sequence": [
+     "travel",
+     "enter_place",
+     "meet_people",
+     "frozen_head",
+     "befriend",
+     "head_freed",
+     "shard",
+     "farewell"
+    ]
+   }
+  },
+  {
+   "id": "B08",
+   "name": "Colosseum",
+   "biome": "grassland_farms",
+   "at": {
+    "x": -2805,
+    "z": -3135
+   },
+   "setting": "North-west plateau",
+   "look": "Grand arena",
+   "people": "champions",
+   "head": "arena_champion",
+   "creatures": [
+    "griffins"
+   ],
+   "game": {
+    "name": "The Birthday Tournament",
+    "template": "race"
+   },
+   "challenge": {
+    "name": "the Shadow Champion",
+    "template": "boss_purification"
+   },
+   "shard": 8,
+   "schedule": "night",
+   "status": "designed",
+   "boss": "shadow_champion",
+   "order": 10,
+   "assets": [
+    "m_ancient_stone_amphith"
+   ],
+   "scene": {
+    "local": "The herald",
+    "greet": "Champions of every land have come to compete in your honour, {her}!",
+    "sequence": [
+     "travel",
+     "tournament",
+     "enter_place",
+     "meet_people",
+     "frozen_head",
+     "befriend",
+     "boss_entrance",
+     "head_freed",
+     "shard",
+     "farewell"
+    ]
+   }
+  },
+  {
+   "id": "B09",
+   "name": "Lagoon City",
+   "biome": "lagoon_wetland",
+   "at": {
+    "x": -6765,
+    "z": 3300
+   },
+   "setting": "West lagoon, canals and white blocks",
+   "look": "White canal city",
+   "people": "gondoliers",
+   "head": "canal_mayor",
+   "creatures": [
+    "glow_rays"
+   ],
+   "game": {
+    "name": "Gondola race",
+    "template": "race"
+   },
+   "challenge": {
+    "name": "Deliver invitations to 100 villas",
+    "template": "gather_build"
+   },
+   "shard": 9,
+   "schedule": "week_before",
+   "status": "designed",
+   "assets": [
+    "m_a_parisian_building",
+    "m_colorful_courtyard_vi",
+    "m_kalliope_house_comple",
+    "m_mediterranean_villa",
+    "m_museum_building"
+   ],
+   "scene": {
+    "local": "A gondolier",
+    "greet": "A hundred invitations, and no one to carry them. Hop in.",
+    "sequence": [
+     "travel",
+     "enter_place",
+     "meet_people",
+     "frozen_head",
+     "befriend",
+     "head_freed",
+     "shard",
+     "farewell"
+    ]
+   }
+  },
+  {
+   "id": "B10",
+   "name": "Canyon Palace",
+   "biome": "red_canyon",
+   "at": {
+    "x": 4290,
+    "z": 4290
+   },
+   "setting": "Red canyon with waterfalls, SE of the lake",
+   "look": "Red canyon, waterfalls",
+   "people": "sun-folk",
+   "head": "sun_queen",
+   "creatures": [
+    "sand_foxes"
+   ],
+   "game": {
+    "name": "Canyon zipline race",
+    "template": "race"
+   },
+   "challenge": {
+    "name": "Redirect the waterfalls",
+    "template": "harmony_puzzle"
+   },
+   "shard": 10,
+   "schedule": "week_before",
+   "status": "designed",
+   "assets": [
+    "m_a_sandstone_stair_fli",
+    "m_a_sprawling_sandstone",
+    "m_a_very_large_ancient",
+    "m_desert_mushroom_rock",
+    "m_desert_sandstone_arch",
+    "m_ornate_sandstone_gate",
+    "m_stone_fortress",
+    "m_vintage_stone_villa"
+   ],
+   "scene": {
+    "local": "A sun-child",
+    "greet": "The waterfalls turned to dust. The canyon is so thirsty.",
+    "sequence": [
+     "travel",
+     "enter_place",
+     "meet_people",
+     "frozen_head",
+     "befriend",
+     "head_freed",
+     "shard",
+     "farewell"
+    ]
+   }
+  },
+  {
+   "id": "B11",
+   "name": "Crescent Arch",
+   "biome": "sea_cliffs",
+   "at": {
+    "x": 7260,
+    "z": 5280
+   },
+   "setting": "Natural rock arch on the east coast",
+   "look": "Giant sea arch",
+   "people": "cliff divers",
+   "head": "arch_guardian",
+   "creatures": [
+    "sea_eagles"
+   ],
+   "game": {
+    "name": "Cliff-dive ring scoring",
+    "template": "party_game"
+   },
+   "challenge": {
+    "name": "purify the stone giant",
+    "template": "boss_purification"
+   },
+   "shard": 11,
+   "schedule": "week_before",
+   "status": "designed",
+   "boss": "stone_giant",
+   "assets": [
+    "m_basalt_arch",
+    "m_cliff_formations",
+    "m_rocky_archway"
+   ],
+   "scene": {
+    "local": "A cliff diver",
+    "greet": "Dare to jump? The sea is waiting below.",
+    "sequence": [
+     "travel",
+     "enter_place",
+     "meet_people",
+     "frozen_head",
+     "befriend",
+     "boss_entrance",
+     "head_freed",
+     "shard",
+     "farewell"
+    ]
+   }
+  },
+  {
+   "id": "B12",
+   "name": "Storybook Village",
+   "biome": "grassland_farms",
+   "at": {
+    "x": -6600,
+    "z": 2145
+   },
+   "setting": "West, half-timber village by canals",
+   "look": "Half-timber cottages",
+   "people": "bakers",
+   "head": "baker_of_stories",
+   "creatures": [
+    "bunny_cats"
+   ],
+   "game": {
+    "name": "Cake ingredient scramble",
+    "template": "party_game"
+   },
+   "challenge": {
+    "name": "Bake one giant cake layer together",
+    "template": "gather_build"
+   },
+   "shard": 12,
+   "schedule": "night",
+   "status": "designed",
+   "order": 5,
+   "assets": [
+    "m_a_modular_medieval_ho",
+    "m_ember_tiled_turret_ho",
+    "m_enchanted_thatch_cott",
+    "m_herbal_harvest",
+    "m_medieval_cottage",
+    "m_old_town_clock_tower",
+    "m_timbered_market_house",
+    "m_whimsical_hobbit_dwel"
+   ],
+   "scene": {
+    "local": "A baker",
+    "greet": "Flour everywhere and no cake! We need every hand.",
+    "sequence": [
+     "travel",
+     "enter_place",
+     "meet_people",
+     "frozen_head",
+     "befriend",
+     "head_freed",
+     "shard",
+     "farewell"
+    ]
+   }
+  },
+  {
+   "id": "B13",
+   "name": "Windmill",
+   "biome": "grassland_farms",
+   "at": {
+    "x": -6022,
+    "z": 660
+   },
+   "setting": "West hills",
+   "look": "Hills of windmills",
+   "people": "millers",
+   "head": "miller_of_winds",
+   "creatures": [
+    "butterflies"
+   ],
+   "game": {
+    "name": "Kite battle",
+    "template": "party_game"
+   },
+   "challenge": {
+    "name": "Turn the great sails in time together",
+    "template": "harmony_puzzle"
+   },
+   "shard": 13,
+   "schedule": "week_before",
+   "status": "designed",
+   "assets": [
+    "m_olive_grove_cottage",
+    "m_windmill_haven"
+   ],
+   "scene": {
+    "local": "A miller",
+    "greet": "The wind still blows, but the sails refuse to turn.",
+    "sequence": [
+     "travel",
+     "enter_place",
+     "meet_people",
+     "frozen_head",
+     "befriend",
+     "head_freed",
+     "shard",
+     "farewell"
+    ]
+   }
+  },
+  {
+   "id": "B14",
+   "name": "Pillar Sky City",
+   "biome": "karst_pillars",
+   "at": {
+    "x": 6105,
+    "z": 660
+   },
+   "setting": "East, white spires on pillars with waterfalls and mist",
+   "look": "White spires on stone pillars",
+   "head": "sky_architect",
+   "creatures": [
+    "young_dragons"
+   ],
+   "game": {
+    "name": "Flying ship ring race",
+    "template": "race"
+   },
+   "challenge": {
+    "name": "Build a rope bridge as a team",
+    "template": "gather_build"
+   },
+   "shard": 14,
+   "schedule": "week_before",
+   "status": "designed",
+   "assets": [
+    "m_elven_tower_base_circ",
+    "m_enchanted_spiral_towe",
+    "m_isle_of_the_stone_spi",
+    "m_ring_village_diorama"
+   ],
+   "scene": {
+    "local": "A sky builder",
+    "greet": "Our city hangs between the pillars, and the bridges are breaking.",
+    "sequence": [
+     "travel",
+     "enter_place",
+     "meet_people",
+     "frozen_head",
+     "befriend",
+     "head_freed",
+     "shard",
+     "farewell"
+    ]
+   }
+  },
+  {
+   "id": "B15",
+   "name": "Jungle Temple",
+   "biome": "jungle",
+   "at": {
+    "x": 5115,
+    "z": 7095
+   },
+   "setting": "SE jungle peninsula",
+   "look": "Vine-covered temple",
+   "people": "guardians",
+   "head": "vine_oracle",
+   "creatures": [
+    "glow_frogs"
+   ],
+   "game": {
+    "name": "Vine swing race",
+    "template": "race"
+   },
+   "challenge": {
+    "name": "Four-person puzzle doors",
+    "template": "harmony_puzzle"
+   },
+   "shard": 15,
+   "schedule": "week_before",
+   "status": "designed",
+   "assets": [
+    "m_a_large_arch_made_fr",
+    "m_ancient_gateway_ruins",
+    "m_ancient_stone_structu",
+    "m_ancient_stone_temples",
+    "m_verdant_palace"
+   ],
+   "scene": {
+    "local": "A temple guardian",
+    "greet": "Four doors, four hands. The jungle only opens for friends.",
+    "sequence": [
+     "travel",
+     "enter_place",
+     "meet_people",
+     "frozen_head",
+     "befriend",
+     "head_freed",
+     "shard",
+     "farewell"
+    ]
+   }
+  },
+  {
+   "id": "B16",
+   "name": "Fjord Longhouse",
+   "biome": "fjord_taiga",
+   "at": {
+    "x": -6270,
+    "z": -2805
+   },
+   "setting": "NW fjord inlet",
+   "look": "Nordic longhouses",
+   "people": "rowers",
+   "head": "fjord_chieftess",
+   "creatures": [
+    "sea_whales"
+   ],
+   "game": {
+    "name": "Longboat rowing in rhythm",
+    "template": "race"
+   },
+   "challenge": {
+    "name": "the Ice Serpent",
+    "template": "boss_purification"
+   },
+   "shard": 16,
+   "schedule": "week_before",
+   "status": "designed",
+   "boss": "ice_serpent",
+   "assets": [
+    "m_enchanted_thatch_cott",
+    "m_pine_trees_on_a_rocky"
+   ],
+   "scene": {
+    "local": "A rower",
+    "greet": "Row with us! The Ice Serpent froze the fjord solid.",
+    "sequence": [
+     "travel",
+     "enter_place",
+     "meet_people",
+     "frozen_head",
+     "befriend",
+     "boss_entrance",
+     "head_freed",
+     "shard",
+     "farewell"
+    ]
+   }
+  },
+  {
+   "id": "B17",
+   "name": "Glowwood Ruin",
+   "biome": "glowwood",
+   "at": {
+    "x": -5610,
+    "z": -825
+   },
+   "setting": "West forest",
+   "look": "Ruins in glowing forest",
+   "people": "spirits",
+   "head": "forest_spirit",
+   "creatures": [
+    "lantern_moths"
+   ],
+   "game": {
+    "name": "Firefly catching",
+    "template": "party_game"
+   },
+   "challenge": {
+    "name": "Defend the ruin at nightfall",
+    "template": "arena_defence"
+   },
+   "shard": 17,
+   "schedule": "week_before",
+   "status": "designed",
+   "assets": [
+    "m_ancient_archway",
+    "m_cementery_pillar_vari",
+    "m_enchanted_lantern_tre",
+    "m_england_mystic_ston",
+    "m_high_detail_fantasy",
+    "m_luminous_paper_flower",
+    "m_verdant_ring_of_stone",
+    "m_a_stylized_stump_base"
+   ],
+   "scene": {
+    "local": "A little forest spirit",
+    "greet": "Shh. When night comes, the shadows come with it.",
+    "sequence": [
+     "travel",
+     "enter_place",
+     "meet_people",
+     "frozen_head",
+     "befriend",
+     "head_freed",
+     "shard",
+     "farewell"
+    ]
+   }
+  },
+  {
+   "id": "B18",
+   "name": "Mother Tree",
+   "biome": "blossom_groves",
+   "at": {
+    "x": -3630,
+    "z": 4950
+   },
+   "setting": "SW shore, giant pink-blossom tree",
+   "look": "Giant pink-blossom tree",
+   "head": "the_mother_tree",
+   "creatures": [
+    "star_foxes"
+   ],
+   "game": {
+    "name": "Blossom climb",
+    "template": "race"
+   },
+   "challenge": {
+    "name": "Carry water spirits to heal the roots",
+    "template": "escort"
+   },
+   "shard": 18,
+   "schedule": "night",
+   "status": "designed",
+   "order": 6,
+   "assets": [
+    "m_enchanted_forest_thro",
+    "m_lantern_tree_palace",
+    "m_metaphor_the_tree_of"
+   ],
+   "scene": {
+    "local": "A star fox",
+    "greet": "The great tree is sleeping, and its roots are thirsty.",
+    "sequence": [
+     "travel",
+     "enter_place",
+     "meet_people",
+     "frozen_head",
+     "befriend",
+     "head_freed",
+     "shard",
+     "farewell"
+    ]
+   }
+  },
+  {
+   "id": "B19",
+   "name": "Lantern Cove",
+   "biome": "sandy_beach",
+   "at": {
+    "x": -4538,
+    "z": 6270
+   },
+   "setting": "SW harbour with piers and boats",
+   "look": "Harbour of piers and boats",
+   "head": "harbour_master",
+   "creatures": [
+    "otters"
+   ],
+   "game": {
+    "name": "Fishing for stars",
+    "template": "party_game"
+   },
+   "challenge": {
+    "name": "Ship battle against a shadow ship",
+    "template": "arena_defence"
+   },
+   "shard": 19,
+   "schedule": "week_before",
+   "status": "designed",
+   "assets": [
+    "m_kalliope_house_comple",
+    "m_stone_lantern"
+   ],
+   "scene": {
+    "local": "An otter",
+    "greet": "Mrrp! The shadow ship stole all our stars.",
+    "sequence": [
+     "travel",
+     "enter_place",
+     "meet_people",
+     "frozen_head",
+     "befriend",
+     "head_freed",
+     "shard",
+     "farewell"
+    ]
+   }
+  },
+  {
+   "id": "B20",
+   "name": "Bridge Pavilions",
+   "biome": "lakes_rivers",
+   "at": {
+    "x": -165,
+    "z": 6435
+   },
+   "setting": "South end of the causeway (**spawn**)",
+   "look": "Pavilions at the bridge foot",
+   "head": "bridge_keeper",
+   "creatures": [
+    "doves_of_light"
+   ],
+   "game": {
+    "name": "Rippling-step dance",
+    "template": "party_game"
+   },
+   "challenge": {
+    "name": "Photo hunt for set moments",
+    "template": "heart_quiz"
+   },
+   "shard": 20,
+   "schedule": "night",
+   "status": "designed",
+   "order": 1,
+   "assets": [
+    "m_floral_wreath_of_spri",
+    "m_marble_pavilion"
+   ],
+   "scene": {
+    "local": "A dove of light",
+    "greet": "Every step on this bridge used to make the water dance.",
+    "sequence": [
+     "travel",
+     "enter_place",
+     "meet_people",
+     "frozen_head",
+     "befriend",
+     "head_freed",
+     "shard",
+     "farewell"
+    ]
+   }
+  },
+  {
+   "id": "B21",
+   "name": "Tidal Observatory",
+   "biome": "sea_cliffs",
+   "at": {
+    "x": -7095,
+    "z": 7590
+   },
+   "setting": "SW headland, white domed observatory",
+   "look": "White domed observatory",
+   "head": "star_astronomer",
+   "creatures": [
+    "glass_jellyfish"
+   ],
+   "game": {
+    "name": "Draw constellations together",
+    "template": "gather_build"
+   },
+   "challenge": {
+    "name": "Telescope puzzle that shows where shards fell",
+    "template": "harmony_puzzle"
+   },
+   "shard": 21,
+   "schedule": "night",
+   "status": "designed",
+   "order": 2,
+   "assets": [
+    "m_ancient_stone_relic",
+    "m_celestial_armillary"
+   ],
+   "scene": {
+    "local": "An apprentice astronomer",
+    "greet": "The shards fell all over the land. The telescope can show us where.",
+    "sequence": [
+     "travel",
+     "enter_place",
+     "meet_people",
+     "frozen_head",
+     "befriend",
+     "head_freed",
+     "shard",
+     "farewell"
+    ]
+   }
+  },
+  {
+   "id": "B22",
+   "name": "Lighthouse",
+   "biome": "sea_cliffs",
+   "at": {
+    "x": -5280,
+    "z": 8745
+   },
+   "setting": "Rock islet off the south coast",
+   "look": "Rock-islet lighthouse",
+   "head": "light_keeper",
+   "creatures": [
+    "seals"
+   ],
+   "game": {
+    "name": "Lighthouse-beam tag",
+    "template": "party_game"
+   },
+   "challenge": {
+    "name": "Guide ships through a storm",
+    "template": "escort"
+   },
+   "shard": 22,
+   "schedule": "week_before",
+   "status": "designed",
+   "assets": [
+    "m_untitled"
+   ],
+   "scene": {
+    "local": "A seal",
+    "greet": "Arf! The lighthouse went dark and the ships are lost.",
+    "sequence": [
+     "travel",
+     "enter_place",
+     "meet_people",
+     "frozen_head",
+     "befriend",
+     "head_freed",
+     "shard",
+     "farewell"
+    ]
+   }
+  },
+  {
+   "id": "B23",
+   "name": "Sea Pavilion",
+   "biome": "coral_reef",
+   "at": {
+    "x": 4455,
+    "z": 9570
+   },
+   "setting": "SE shore, piers out into the reef",
+   "look": "Piers over the reef",
+   "people": "pearl divers",
+   "head": "pearl_diver",
+   "creatures": [
+    "seahorses"
+   ],
+   "game": {
+    "name": "Seahorse race",
+    "template": "race"
+   },
+   "challenge": {
+    "name": "Gather pearls underwater",
+    "template": "gather_build"
+   },
+   "shard": 23,
+   "schedule": "week_before",
+   "status": "designed",
+   "assets": [
+    "m_marble_pavilion"
+   ],
+   "scene": {
+    "local": "A pearl diver",
+    "greet": "The pearls of the sea pavilion hide when they are sad.",
+    "sequence": [
+     "travel",
+     "enter_place",
+     "meet_people",
+     "frozen_head",
+     "befriend",
+     "head_freed",
+     "shard",
+     "farewell"
+    ]
+   }
+  },
+  {
+   "id": "B24",
+   "name": "Reef Shrine",
+   "biome": "coral_reef",
+   "at": {
+    "x": 8085,
+    "z": 8580
+   },
+   "setting": "SE reef, coral shallows",
+   "look": "Coral shrine in the shallows",
+   "head": "coral_priestess",
+   "creatures": [
+    "sea_turtles"
+   ],
+   "game": {
+    "name": "Reef treasure dive",
+    "template": "race"
+   },
+   "challenge": {
+    "name": "the Leviathan rising from the sea",
+    "template": "boss_purification"
+   },
+   "shard": 24,
+   "schedule": "week_before",
+   "status": "designed",
+   "boss": "leviathan",
+   "assets": [
+    "m_ancient_stone_circle"
+   ],
+   "scene": {
+    "local": "A reef child",
+    "greet": "Something huge is stirring beneath the coral.",
+    "sequence": [
+     "travel",
+     "enter_place",
+     "meet_people",
+     "frozen_head",
+     "befriend",
+     "boss_entrance",
+     "head_freed",
+     "shard",
+     "farewell"
+    ]
+   }
+  },
+  {
+   "id": "B25",
+   "name": "Crystal Conservatory",
+   "biome": "flower_meadow",
+   "at": {
+    "x": -1155,
+    "z": -1485
+   },
+   "setting": "Just NW of the palace, a glass dome",
+   "look": "Glass dome of flowers",
+   "head": "gardener_of_glass",
+   "creatures": [
+    "crystal_butterflies"
+   ],
+   "game": {
+    "name": "Make a bouquet for her",
+    "template": "gather_build"
+   },
+   "challenge": {
+    "name": "Grow the glass garden with light beams",
+    "template": "harmony_puzzle"
+   },
+   "shard": 25,
+   "schedule": "night",
+   "status": "designed",
+   "order": 12,
+   "assets": [
+    "m_a_garden_of_cryst",
+    "m_crystal_peaks_pbr",
+    "m_leafspire_cathedral"
+   ],
+   "scene": {
+    "local": "A glass gardener",
+    "greet": "Every flower in the conservatory turned to grey glass.",
+    "sequence": [
+     "travel",
+     "enter_place",
+     "meet_people",
+     "frozen_head",
+     "befriend",
+     "head_freed",
+     "shard",
+     "farewell"
+    ]
+   }
+  },
+  {
+   "id": "B26",
+   "name": "Dragon Roost",
+   "biome": "snow_glacier",
+   "at": {
+    "x": 4983,
+    "z": -2060
+   },
+   "setting": "Chosen on the crescent map (fill thread, Oct 16)",
+   "look": "Snowy crag of dragon nests",
+   "head": "elder_dragon",
+   "creatures": [
+    "dragons"
+   ],
+   "game": {
+    "name": "Dragon-back race",
+    "template": "race"
+   },
+   "challenge": {
+    "name": "the corrupted Storm Dragon",
+    "template": "boss_purification"
+   },
+   "shard": 26,
+   "schedule": "night",
+   "status": "designed",
+   "boss": "storm_dragon",
+   "order": 11,
+   "assets": [
+    "m_infernal_peak",
+    "m_sentinel_peak",
+    "m_volcanic_monolith"
+   ],
+   "scene": {
+    "local": "A dragon keeper",
+    "greet": "The Storm Dragon was our eldest, kindest dragon. Now it only roars.",
+    "sequence": [
+     "travel",
+     "enter_place",
+     "meet_people",
+     "frozen_head",
+     "befriend",
+     "boss_entrance",
+     "head_freed",
+     "shard",
+     "farewell"
+    ]
+   }
+  },
+  {
+   "id": "B27",
+   "name": "Sunsand Oasis",
+   "biome": "dunes",
+   "at": {
+    "x": -2189,
+    "z": 6468
+   },
+   "setting": "Chosen on the crescent map (fill thread, Oct 16)",
+   "look": "Desert dunes",
+   "people": "oasis bazaar",
+   "head": "oasis_keeper",
+   "creatures": [
+    "fennec_foxes"
+   ],
+   "game": {
+    "name": "Sand-surfing race",
+    "template": "race"
+   },
+   "challenge": {
+    "name": "Find the true oasis in the mirage maze",
+    "template": "harmony_puzzle"
+   },
+   "shard": 27,
+   "schedule": "week_before",
+   "status": "designed",
+   "assets": [
+    "m_a_majestic_tiered_str",
+    "m_desert_adobe_courtyar",
+    "m_desert_dwelling",
+    "m_desert_fortress",
+    "m_desert_oasis_palace",
+    "m_desert_ruins"
+   ],
+   "scene": {
+    "local": "A bazaar trader",
+    "greet": "Welcome, travellers! Careful, the Hush hid our oasis in a mirage.",
+    "sequence": [
+     "travel",
+     "enter_place",
+     "meet_people",
+     "frozen_head",
+     "befriend",
+     "head_freed",
+     "shard",
+     "farewell"
+    ]
+   }
+  },
+  {
+   "id": "B28",
+   "name": "Frostbloom Sanctuary",
+   "biome": "snow_glacier",
+   "at": {
+    "x": 2043,
+    "z": -4010
+   },
+   "setting": "Chosen on the crescent map (fill thread, Oct 16)",
+   "look": "Snow peaks",
+   "people": "ice gardens",
+   "head": "snow_weaver",
+   "creatures": [
+    "ice_moths"
+   ],
+   "game": {
+    "name": "Snowball battle",
+    "template": "party_game"
+   },
+   "challenge": {
+    "name": "Carve an ice sculpture together",
+    "template": "gather_build"
+   },
+   "shard": 28,
+   "schedule": "week_before",
+   "status": "designed",
+   "assets": [
+    "m_elven_tower_base_circ",
+    "m_prismatic_peaks",
+    "m_artistic_abstract_cry"
+   ],
+   "scene": {
+    "local": "An ice gardener",
+    "greet": "Snowball fight first, then work. That is the law here.",
+    "sequence": [
+     "travel",
+     "enter_place",
+     "meet_people",
+     "frozen_head",
+     "befriend",
+     "head_freed",
+     "shard",
+     "farewell"
+    ]
+   }
+  },
+  {
+   "id": "B29",
+   "name": "Crystal Caverns",
+   "biome": "bare_rock",
+   "at": {
+    "x": 7367,
+    "z": 1204
+   },
+   "setting": "Chosen on the crescent map (fill thread, Oct 16)",
+   "look": "Glowing caves under the karst",
+   "head": "crystal_miner",
+   "creatures": [
+    "cave_glow_worms"
+   ],
+   "game": {
+    "name": "Minecart race",
+    "template": "race"
+   },
+   "challenge": {
+    "name": "Echo-chime puzzle",
+    "template": "harmony_puzzle"
+   },
+   "shard": 29,
+   "schedule": "week_before",
+   "status": "designed",
+   "assets": [
+    "m_cave_entrance",
+    "m_cave_structures_1",
+    "m_crystal_peaks_pbr",
+    "m_a_large_rainbow_cryst"
+   ],
+   "scene": {
+    "local": "A crystal miner",
+    "greet": "Mind your heads! The caverns are humming the wrong tune.",
+    "sequence": [
+     "travel",
+     "enter_place",
+     "meet_people",
+     "frozen_head",
+     "befriend",
+     "head_freed",
+     "shard",
+     "farewell"
+    ]
+   }
+  },
+  {
+   "id": "B30",
+   "name": "Sky Isles",
+   "biome": "sky",
+   "at": {
+    "x": -5500,
+    "z": 4125
+   },
+   "setting": "Chosen on the crescent map (fill thread, Oct 16), floating about 380 m up",
+   "look": "Floating islands with waterfalls",
+   "head": "cloud_shepherd",
+   "creatures": [
+    "sky_whales"
+   ],
+   "game": {
+    "name": "Cloud-surf gauntlet",
+    "template": "race"
+   },
+   "challenge": {
+    "name": "Guide lost baby whales home",
+    "template": "escort"
+   },
+   "shard": 30,
+   "schedule": "night",
+   "status": "designed",
+   "order": 9,
+   "assets": [
+    "m_floating_stone_island",
+    "m_mossy_monolith"
+   ],
+   "scene": {
+    "local": "A cloud shepherd child",
+    "greet": "The baby sky whales are lost in the grey clouds.",
+    "sequence": [
+     "travel",
+     "enter_place",
+     "meet_people",
+     "frozen_head",
+     "befriend",
+     "head_freed",
+     "shard",
+     "farewell"
+    ]
+   }
+  },
+  {
+   "id": "B31",
+   "name": "Butterfly Meadows",
+   "biome": "flower_meadow",
+   "at": {
+    "x": -8212,
+    "z": 932
+   },
+   "setting": "Chosen on the crescent map (fill thread, Oct 16)",
+   "look": "Flower meadows",
+   "people": "hummingbirds",
+   "head": "meadow_queen",
+   "creatures": [
+    "hummingbirds"
+   ],
+   "game": {
+    "name": "Pet race",
+    "template": "race"
+   },
+   "challenge": {
+    "name": "Paint the flower field",
+    "template": "harmony_puzzle"
+   },
+   "shard": 31,
+   "schedule": "week_before",
+   "status": "designed",
+   "assets": [
+    "m_1000054986_jpg",
+    "m_floral_wreath_of_spri",
+    "m_for_diana_this_beauti",
+    "m_stone_bridge",
+    "m_whispering_willow_of"
+   ],
+   "scene": {
+    "local": "A hummingbird",
+    "greet": "Bzzt! The meadow forgot its colours. Help us paint them back.",
+    "sequence": [
+     "travel",
+     "enter_place",
+     "meet_people",
+     "frozen_head",
+     "befriend",
+     "head_freed",
+     "shard",
+     "farewell"
+    ]
+   }
+  },
+  {
+   "id": "B32",
+   "name": "Starfall Fairground",
+   "biome": "palace_grounds",
+   "at": {
+    "x": -1826,
+    "z": 608
+   },
+   "setting": "Chosen on the crescent map (fill thread, Oct 16)",
+   "look": "Fairground by the palace",
+   "head": "ringmaster",
+   "creatures": [
+    "balloon_creatures"
+   ],
+   "game": {
+    "name": "Carnival games",
+    "template": "party_game"
+   },
+   "challenge": {
+    "name": "Win the fairground finals",
+    "template": "party_game"
+   },
+   "shard": 32,
+   "schedule": "night",
+   "status": "designed",
+   "order": 13,
+   "assets": [
+    "m_bases_pedestals_minis",
+    "m_luminous_paper_flower",
+    "m_marble_pavilion",
+    "m_royal_carriage"
+   ],
+   "scene": {
+    "local": "The ringmaster's assistant",
+    "greet": "Step right up! The fair is grey, but the fun is not over yet!",
+    "sequence": [
+     "travel",
+     "enter_place",
+     "meet_people",
+     "frozen_head",
+     "befriend",
+     "head_freed",
+     "shard",
+     "farewell"
+    ]
+   }
+  }
+ ],
+ "characters": [
+  {
+   "id": "palace_steward",
+   "name": "Palace Steward",
+   "role": "head",
+   "place": "B01",
+   "face": "soft_features",
+   "lines": [
+    "You brought the light all the way home. Look up."
+   ],
+   "status": "designed",
+   "dialogue": {
+    "plea": "The Hush is in the heart of the palace. Bring every shard home.",
+    "freed": "You brought the light all the way home. Look up.",
+    "farewell": "Midnight is almost here. Go stand where the roof will open."
+   }
+  },
+  {
+   "id": "lady_of_tides",
+   "name": "Lady of Tides",
+   "role": "head",
+   "place": "B02",
+   "face": "soft_features",
+   "lines": [
+    "The lake remembers your laugh now. It will sing it back to you."
+   ],
+   "status": "designed",
+   "dialogue": {
+    "plea": "Moonlight still answers you. Catch it for me.",
+    "freed": "The lake remembers your laugh now. It will sing it back to you.",
+    "farewell": "We will sail the lanterns to the palace for your midnight."
+   }
+  },
+  {
+   "id": "bell_warden",
+   "name": "Bell Warden",
+   "role": "head",
+   "place": "B03",
+   "face": "soft_features",
+   "lines": [
+    "Listen. Every bell is ringing your name."
+   ],
+   "status": "designed",
+   "dialogue": {
+    "plea": "The rose window is dark. Only star beams can wake it.",
+    "freed": "Listen. Every bell is ringing your name.",
+    "farewell": "We will ring you in at midnight, all of us at once."
+   }
+  },
+  {
+   "id": "knight_of_roses",
+   "name": "Knight of Roses",
+   "role": "head",
+   "place": "B04",
+   "face": "soft_features",
+   "lines": [
+    "Rise, friends of the Rose Keep. You fought like a story."
+   ],
+   "status": "designed",
+   "dialogue": {
+    "plea": "The thorns are around my heart. Cut them away, friends.",
+    "freed": "Rise, friends of the Rose Keep. You fought like a story.",
+    "farewell": "The knights will ride ahead and keep the road clear for you."
+   }
+  },
+  {
+   "id": "mist_sage",
+   "name": "Mist Sage",
+   "role": "head",
+   "place": "B05",
+   "face": "soft_features",
+   "lines": [
+    "The mist has lifted, and the mountain can see you."
+   ],
+   "status": "designed",
+   "dialogue": {
+    "plea": "Bring the little light through the fog. Do not let it go out.",
+    "freed": "The mist has lifted, and the mountain can see you.",
+    "farewell": "We will bring the clear sky with us to the palace."
+   }
+  },
+  {
+   "id": "lantern_master",
+   "name": "Lantern Master",
+   "role": "head",
+   "place": "B06",
+   "face": "soft_features",
+   "lines": [
+    "Look how the sky fills. Every lantern carries a wish for you."
+   ],
+   "status": "designed",
+   "dialogue": {
+    "plea": "Paint them again. Colour is stronger than shadow.",
+    "freed": "Look how the sky fills. Every lantern carries a wish for you.",
+    "farewell": "Our lanterns will float above the palace at midnight."
+   }
+  },
+  {
+   "id": "keeper_of_echoes",
+   "name": "Keeper of Echoes",
+   "role": "head",
+   "place": "B07",
+   "face": "soft_features",
+   "lines": [
+    "The echoes are back, and the loudest one says happy birthday."
+   ],
+   "status": "designed",
+   "dialogue": {
+    "plea": "Only someone who truly knows her can answer. Who knows her best?",
+    "freed": "The echoes are back, and the loudest one says happy birthday.",
+    "farewell": "We will carry your echoes to the theatre tonight."
+   }
+  },
+  {
+   "id": "arena_champion",
+   "name": "Arena Champion",
+   "role": "head",
+   "place": "B08",
+   "face": "soft_features",
+   "lines": [
+    "Never has the arena seen such a team. The crowd is yours."
+   ],
+   "status": "designed",
+   "dialogue": {
+    "plea": "The Shadow Champion wears my armour. Defeat it and set me free.",
+    "freed": "Never has the arena seen such a team. The crowd is yours.",
+    "farewell": "Every champion will stand guard at your celebration."
+   }
+  },
+  {
+   "id": "canal_mayor",
+   "name": "Canal Mayor",
+   "role": "head",
+   "place": "B09",
+   "face": "soft_features",
+   "lines": [
+    "Every villa has its invitation. The whole city is coming."
+   ],
+   "status": "designed",
+   "dialogue": {
+    "plea": "The canals are still. Make the city move again.",
+    "freed": "Every villa has its invitation. The whole city is coming.",
+    "farewell": "The gondolas will bring the whole city to the palace."
+   }
+  },
+  {
+   "id": "sun_queen",
+   "name": "Sun Queen",
+   "role": "head",
+   "place": "B10",
+   "face": "soft_features",
+   "lines": [
+    "The canyon is singing with water again. The sun is pleased."
+   ],
+   "status": "designed",
+   "dialogue": {
+    "plea": "Turn the waters back to the canyon. It remembers the way.",
+    "freed": "The canyon is singing with water again. The sun is pleased.",
+    "farewell": "We will bring the warmth of the canyon to your night."
+   }
+  },
+  {
+   "id": "arch_guardian",
+   "name": "Arch Guardian",
+   "role": "head",
+   "place": "B11",
+   "face": "soft_features",
+   "lines": [
+    "The giant is smiling again. So is the sea."
+   ],
+   "status": "designed",
+   "dialogue": {
+    "plea": "The stone giant was our friend. Wake the friend inside it.",
+    "freed": "The giant is smiling again. So is the sea.",
+    "farewell": "The giant will carry us to the palace on its shoulders."
+   }
+  },
+  {
+   "id": "baker_of_stories",
+   "name": "Baker of Stories",
+   "role": "head",
+   "place": "B12",
+   "face": "soft_features",
+   "lines": [
+    "Smell that? That is the best cake layer ever baked."
+   ],
+   "status": "designed",
+   "dialogue": {
+    "plea": "One layer from every land. Bake it together and it cannot crack.",
+    "freed": "Smell that? That is the best cake layer ever baked.",
+    "farewell": "This layer goes straight to the palace. Do not peek."
+   }
+  },
+  {
+   "id": "miller_of_winds",
+   "name": "Miller of Winds",
+   "role": "head",
+   "place": "B13",
+   "face": "soft_features",
+   "lines": [
+    "Hear the sails creak? That is the windmill laughing."
+   ],
+   "status": "designed",
+   "dialogue": {
+    "plea": "Turn the great sails together, all in time.",
+    "freed": "Hear the sails creak? That is the windmill laughing.",
+    "farewell": "We will send the good wind ahead to carry you home."
+   }
+  },
+  {
+   "id": "sky_architect",
+   "name": "Sky Architect",
+   "role": "head",
+   "place": "B14",
+   "face": "soft_features",
+   "lines": [
+    "You built something that will outlast us all."
+   ],
+   "status": "designed",
+   "dialogue": {
+    "plea": "Build the bridge together. Every plank holds the next.",
+    "freed": "You built something that will outlast us all.",
+    "farewell": "We will string bridges of light to the palace."
+   }
+  },
+  {
+   "id": "vine_oracle",
+   "name": "Vine Oracle",
+   "role": "head",
+   "place": "B15",
+   "face": "soft_features",
+   "lines": [
+    "The jungle breathes again. Listen to the frogs sing."
+   ],
+   "status": "designed",
+   "dialogue": {
+    "plea": "The vines obey those who trust each other.",
+    "freed": "The jungle breathes again. Listen to the frogs sing.",
+    "farewell": "The jungle will bloom along your road home."
+   }
+  },
+  {
+   "id": "fjord_chieftess",
+   "name": "Fjord Chieftess",
+   "role": "head",
+   "place": "B16",
+   "face": "soft_features",
+   "lines": [
+    "The fjord is free and the whales are coming home."
+   ],
+   "status": "designed",
+   "dialogue": {
+    "plea": "Its heart is not ice. Find the warmth in it.",
+    "freed": "The fjord is free and the whales are coming home.",
+    "farewell": "Our longboats will row the ice lanterns to your midnight."
+   }
+  },
+  {
+   "id": "forest_spirit",
+   "name": "Forest Spirit",
+   "role": "head",
+   "place": "B17",
+   "face": "soft_features",
+   "lines": [
+    "The fireflies remember you now. They will follow you anywhere."
+   ],
+   "status": "designed",
+   "dialogue": {
+    "plea": "Gather the fireflies. Hold the ruin until the dawn of colour.",
+    "freed": "The fireflies remember you now. They will follow you anywhere.",
+    "farewell": "We will light the path to the palace with fireflies."
+   }
+  },
+  {
+   "id": "the_mother_tree",
+   "name": "The Mother Tree",
+   "role": "head",
+   "place": "B18",
+   "face": "soft_features",
+   "lines": [
+    "I have stood for a thousand years, and I have never felt so loved."
+   ],
+   "status": "designed",
+   "dialogue": {
+    "plea": "Bring the water spirits to my roots, little ones.",
+    "freed": "I have stood for a thousand years, and I have never felt so loved.",
+    "farewell": "My blossoms will rain on your celebration."
+   }
+  },
+  {
+   "id": "harbour_master",
+   "name": "Harbour Master",
+   "role": "head",
+   "place": "B19",
+   "face": "soft_features",
+   "lines": [
+    "The harbour sparkles again. The otters want to hold your hand."
+   ],
+   "status": "designed",
+   "dialogue": {
+    "plea": "Sail out and win back the harbour lights.",
+    "freed": "The harbour sparkles again. The otters want to hold your hand.",
+    "farewell": "Every boat in the cove will sail to the palace tonight."
+   }
+  },
+  {
+   "id": "bridge_keeper",
+   "name": "Bridge Keeper",
+   "role": "head",
+   "place": "B20",
+   "face": "soft_features",
+   "lines": [
+    "There. The water is dancing for you again."
+   ],
+   "status": "designed",
+   "dialogue": {
+    "plea": "Dance across the bridge. Wake the ripples.",
+    "freed": "There. The water is dancing for you again.",
+    "farewell": "The bridge will light the way back to the palace."
+   }
+  },
+  {
+   "id": "star_astronomer",
+   "name": "Star Astronomer",
+   "role": "head",
+   "place": "B21",
+   "face": "soft_features",
+   "lines": [
+    "Now the sky has a map, and every star on it leads to you."
+   ],
+   "status": "designed",
+   "dialogue": {
+    "plea": "Line up the lenses. The stars will point the way.",
+    "freed": "Now the sky has a map, and every star on it leads to you.",
+    "farewell": "We will chart the midnight sky for your celebration."
+   }
+  },
+  {
+   "id": "light_keeper",
+   "name": "Light Keeper",
+   "role": "head",
+   "place": "B22",
+   "face": "soft_features",
+   "lines": [
+    "The lighthouse shines again, brighter than it ever has."
+   ],
+   "status": "designed",
+   "dialogue": {
+    "plea": "Guide them through the storm. Be the light.",
+    "freed": "The lighthouse shines again, brighter than it ever has.",
+    "farewell": "Our beam will cross the sky at midnight. Look for it."
+   }
+  },
+  {
+   "id": "pearl_diver",
+   "name": "Pearl Diver",
+   "role": "head",
+   "place": "B23",
+   "face": "soft_features",
+   "lines": [
+    "A string of pearls, one for every friend who dived."
+   ],
+   "status": "designed",
+   "dialogue": {
+    "plea": "Dive deep. The pearls rise for laughter.",
+    "freed": "A string of pearls, one for every friend who dived.",
+    "farewell": "These pearls will shine at your midnight table."
+   }
+  },
+  {
+   "id": "coral_priestess",
+   "name": "Coral Priestess",
+   "role": "head",
+   "place": "B24",
+   "face": "soft_features",
+   "lines": [
+    "The reef glows again, and the Leviathan sings to you."
+   ],
+   "status": "designed",
+   "dialogue": {
+    "plea": "The Leviathan is in pain. Purify it and it will remember us.",
+    "freed": "The reef glows again, and the Leviathan sings to you.",
+    "farewell": "The sea will come to the palace to watch your night."
+   }
+  },
+  {
+   "id": "gardener_of_glass",
+   "name": "Gardener of Glass",
+   "role": "head",
+   "place": "B25",
+   "face": "soft_features",
+   "lines": [
+    "Choose any flower you like. They all grew for you."
+   ],
+   "status": "designed",
+   "dialogue": {
+    "plea": "Light makes glass bloom. Shine on my garden.",
+    "freed": "Choose any flower you like. They all grew for you.",
+    "farewell": "The finest bouquet will wait for you at midnight."
+   }
+  },
+  {
+   "id": "elder_dragon",
+   "name": "Elder Dragon",
+   "role": "head",
+   "place": "B26",
+   "face": "soft_features",
+   "lines": [
+    "Dragons never forget a friend, and now you have a hundred."
+   ],
+   "status": "designed",
+   "dialogue": {
+    "plea": "Ride the young dragons. Show the old one what joy looks like.",
+    "freed": "Dragons never forget a friend, and now you have a hundred.",
+    "farewell": "At midnight, the dragons will paint the sky with fire for you."
+   }
+  },
+  {
+   "id": "oasis_keeper",
+   "name": "Oasis Keeper",
+   "role": "head",
+   "place": "B27",
+   "face": "soft_features",
+   "lines": [
+    "The oasis flows again. Drink, rest, and take a lantern of sand."
+   ],
+   "status": "designed",
+   "dialogue": {
+    "plea": "Only true friends can see the real water. Find it together.",
+    "freed": "The oasis flows again. Drink, rest, and take a lantern of sand.",
+    "farewell": "The desert will send its warmest stars to your celebration."
+   }
+  },
+  {
+   "id": "snow_weaver",
+   "name": "Snow Weaver",
+   "role": "head",
+   "place": "B28",
+   "face": "soft_features",
+   "lines": [
+    "The ice is clear as glass now, and it holds your reflection."
+   ],
+   "status": "designed",
+   "dialogue": {
+    "plea": "Carve something beautiful together, and the frost will let go.",
+    "freed": "The ice is clear as glass now, and it holds your reflection.",
+    "farewell": "We will carve the cake stand for your midnight."
+   }
+  },
+  {
+   "id": "crystal_miner",
+   "name": "Crystal Miner",
+   "role": "head",
+   "place": "B29",
+   "face": "soft_features",
+   "lines": [
+    "The caverns are glowing again. Take the brightest crystal."
+   ],
+   "status": "designed",
+   "dialogue": {
+    "plea": "Find the true echo, and the crystals will sing it back.",
+    "freed": "The caverns are glowing again. Take the brightest crystal.",
+    "farewell": "Our crystals will light the theatre at midnight."
+   }
+  },
+  {
+   "id": "cloud_shepherd",
+   "name": "Cloud Shepherd",
+   "role": "head",
+   "place": "B30",
+   "face": "soft_features",
+   "lines": [
+    "The whole sky is singing. The whales will never forget you."
+   ],
+   "status": "designed",
+   "dialogue": {
+    "plea": "Guide the little ones home. They will follow kind voices.",
+    "freed": "The whole sky is singing. The whales will never forget you.",
+    "farewell": "The sky whales will swim over the palace at midnight."
+   }
+  },
+  {
+   "id": "meadow_queen",
+   "name": "Meadow Queen",
+   "role": "head",
+   "place": "B31",
+   "face": "soft_features",
+   "lines": [
+    "Every flower here is a little brighter because of you."
+   ],
+   "status": "designed",
+   "dialogue": {
+    "plea": "Paint the field, and the flowers will wake.",
+    "freed": "Every flower here is a little brighter because of you.",
+    "farewell": "The meadow will send a flower crown for your midnight."
+   }
+  },
+  {
+   "id": "ringmaster",
+   "name": "Ringmaster",
+   "role": "head",
+   "place": "B32",
+   "face": "soft_features",
+   "lines": [
+    "Ladies and gentlemen, the champions of the fair!"
+   ],
+   "status": "designed",
+   "dialogue": {
+    "plea": "Win the finals, and the fair will shine again.",
+    "freed": "Ladies and gentlemen, the champions of the fair!",
+    "farewell": "The whole fair will march to the palace with music."
+   }
+  },
+  {
+   "id": "the_hush",
+   "name": "The Hush",
+   "role": "villain",
+   "face": "none",
+   "look": "A jealous shadow of fog and grey glass",
+   "lines": [
+    "Bring the light home before midnight, or the birthday will never come."
+   ]
+  },
+  {
+   "id": "honoree",
+   "name": "Princess",
+   "role": "honoree",
+   "gender": "female"
+  },
+  {
+   "id": "mew",
+   "name": "The Mew",
+   "role": "mew",
+   "gender": "none",
+   "look": "Small pink celestial cat-like spirit with a long tail; original design"
+  }
+ ],
+ "creatures": [
+  {
+   "id": "cloud_koi",
+   "name": "Cloud koi",
+   "kind": "friend",
+   "eyes": false,
+   "moves": "swim",
+   "places": [
+    "B01"
+   ],
+   "render": "skinned_mesh",
+   "status": "idea"
+  },
+  {
+   "id": "bubble_turtles",
+   "name": "Bubble turtles",
+   "kind": "friend",
+   "eyes": false,
+   "moves": "swim",
+   "places": [
+    "B02"
+   ],
+   "render": "skinned_mesh",
+   "status": "idea"
+  },
+  {
+   "id": "crystal_hummingbirds",
+   "name": "Crystal hummingbirds",
+   "kind": "friend",
+   "eyes": false,
+   "moves": "fly",
+   "places": [
+    "B03"
+   ],
+   "render": "skinned_mesh",
+   "status": "idea"
+  },
+  {
+   "id": "winged_unicorns",
+   "name": "Winged unicorns",
+   "kind": "mount",
+   "eyes": false,
+   "moves": "fly",
+   "places": [
+    "B04"
+   ],
+   "render": "skinned_mesh",
+   "status": "idea"
+  },
+  {
+   "id": "moss_deer",
+   "name": "Moss deer",
+   "kind": "friend",
+   "eyes": false,
+   "moves": "walk",
+   "places": [
+    "B05"
+   ],
+   "render": "skinned_mesh",
+   "status": "idea"
+  },
+  {
+   "id": "paper_cranes",
+   "name": "Paper cranes",
+   "kind": "ambient",
+   "eyes": false,
+   "moves": "fly",
+   "places": [
+    "B06"
+   ],
+   "render": "instanced",
+   "status": "idea"
+  },
+  {
+   "id": "star_moths",
+   "name": "Star moths",
+   "kind": "swarm",
+   "eyes": false,
+   "moves": "fly",
+   "places": [
+    "B07"
+   ],
+   "render": "instanced",
+   "status": "idea"
+  },
+  {
+   "id": "griffins",
+   "name": "Griffins",
+   "kind": "mount",
+   "eyes": false,
+   "moves": "fly",
+   "places": [
+    "B08"
+   ],
+   "render": "skinned_mesh",
+   "status": "idea"
+  },
+  {
+   "id": "glow_rays",
+   "name": "Glow rays",
+   "kind": "friend",
+   "eyes": false,
+   "moves": "swim",
+   "places": [
+    "B09"
+   ],
+   "render": "skinned_mesh",
+   "status": "idea"
+  },
+  {
+   "id": "sand_foxes",
+   "name": "Sand foxes",
+   "kind": "friend",
+   "eyes": false,
+   "moves": "walk",
+   "places": [
+    "B10"
+   ],
+   "render": "skinned_mesh",
+   "status": "idea"
+  },
+  {
+   "id": "sea_eagles",
+   "name": "Sea eagles",
+   "kind": "friend",
+   "eyes": false,
+   "moves": "fly",
+   "places": [
+    "B11"
+   ],
+   "render": "skinned_mesh",
+   "status": "idea"
+  },
+  {
+   "id": "bunny_cats",
+   "name": "Bunny-cats",
+   "kind": "friend",
+   "eyes": false,
+   "moves": "hop",
+   "places": [
+    "B12"
+   ],
+   "render": "skinned_mesh",
+   "status": "idea"
+  },
+  {
+   "id": "butterflies",
+   "name": "Butterflies",
+   "kind": "swarm",
+   "eyes": false,
+   "moves": "fly",
+   "places": [
+    "B13"
+   ],
+   "render": "instanced",
+   "status": "idea"
+  },
+  {
+   "id": "young_dragons",
+   "name": "Young dragons",
+   "kind": "friend",
+   "eyes": false,
+   "moves": "fly",
+   "places": [
+    "B14"
+   ],
+   "render": "skinned_mesh",
+   "status": "idea"
+  },
+  {
+   "id": "glow_frogs",
+   "name": "Glow frogs",
+   "kind": "friend",
+   "eyes": false,
+   "moves": "hop",
+   "places": [
+    "B15"
+   ],
+   "render": "skinned_mesh",
+   "status": "idea"
+  },
+  {
+   "id": "sea_whales",
+   "name": "Sea whales",
+   "kind": "giant",
+   "eyes": false,
+   "moves": "swim",
+   "places": [
+    "B16"
+   ],
+   "render": "skinned_mesh",
+   "status": "idea"
+  },
+  {
+   "id": "lantern_moths",
+   "name": "Lantern moths",
+   "kind": "swarm",
+   "eyes": false,
+   "moves": "fly",
+   "places": [
+    "B17"
+   ],
+   "render": "instanced",
+   "status": "idea"
+  },
+  {
+   "id": "star_foxes",
+   "name": "Star foxes",
+   "kind": "friend",
+   "eyes": false,
+   "moves": "walk",
+   "places": [
+    "B18"
+   ],
+   "render": "skinned_mesh",
+   "status": "idea"
+  },
+  {
+   "id": "otters",
+   "name": "Otters",
+   "kind": "friend",
+   "eyes": false,
+   "moves": "swim",
+   "places": [
+    "B19"
+   ],
+   "render": "skinned_mesh",
+   "status": "idea"
+  },
+  {
+   "id": "doves_of_light",
+   "name": "Doves of light",
+   "kind": "ambient",
+   "eyes": false,
+   "moves": "fly",
+   "places": [
+    "B20"
+   ],
+   "render": "instanced",
+   "status": "idea"
+  },
+  {
+   "id": "glass_jellyfish",
+   "name": "Glass jellyfish",
+   "kind": "swarm",
+   "eyes": false,
+   "moves": "float",
+   "places": [
+    "B21"
+   ],
+   "render": "instanced",
+   "status": "idea",
+   "look": "Glowing clusters drifting through the air at night"
+  },
+  {
+   "id": "seals",
+   "name": "Seals",
+   "kind": "friend",
+   "eyes": false,
+   "moves": "swim",
+   "places": [
+    "B22"
+   ],
+   "render": "skinned_mesh",
+   "status": "idea"
+  },
+  {
+   "id": "seahorses",
+   "name": "Seahorses (mounts)",
+   "kind": "mount",
+   "eyes": false,
+   "moves": "swim",
+   "places": [
+    "B23"
+   ],
+   "render": "skinned_mesh",
+   "status": "idea"
+  },
+  {
+   "id": "sea_turtles",
+   "name": "Sea turtles",
+   "kind": "friend",
+   "eyes": false,
+   "moves": "swim",
+   "places": [
+    "B24"
+   ],
+   "render": "skinned_mesh",
+   "status": "idea"
+  },
+  {
+   "id": "crystal_butterflies",
+   "name": "Crystal butterflies",
+   "kind": "swarm",
+   "eyes": false,
+   "moves": "fly",
+   "places": [
+    "B25"
+   ],
+   "render": "instanced",
+   "status": "idea"
+  },
+  {
+   "id": "dragons",
+   "name": "Dragons",
+   "kind": "mount",
+   "eyes": false,
+   "moves": "fly",
+   "places": [
+    "B26"
+   ],
+   "render": "skinned_mesh",
+   "status": "idea"
+  },
+  {
+   "id": "fennec_foxes",
+   "name": "Fennec foxes",
+   "kind": "friend",
+   "eyes": false,
+   "moves": "walk",
+   "places": [
+    "B27"
+   ],
+   "render": "skinned_mesh",
+   "status": "idea"
+  },
+  {
+   "id": "ice_moths",
+   "name": "Ice moths",
+   "kind": "swarm",
+   "eyes": false,
+   "moves": "fly",
+   "places": [
+    "B28"
+   ],
+   "render": "instanced",
+   "status": "idea"
+  },
+  {
+   "id": "cave_glow_worms",
+   "name": "Cave glow-worms",
+   "kind": "swarm",
+   "eyes": false,
+   "moves": "fly",
+   "places": [
+    "B29"
+   ],
+   "render": "instanced",
+   "status": "idea"
+  },
+  {
+   "id": "sky_whales",
+   "name": "Sky whales",
+   "kind": "giant",
+   "eyes": false,
+   "moves": "fly",
+   "places": [
+    "B30"
+   ],
+   "render": "skinned_mesh",
+   "status": "idea",
+   "look": "Slow pods over the valley, aurora trailing from fins"
+  },
+  {
+   "id": "hummingbirds",
+   "name": "Hummingbirds",
+   "kind": "swarm",
+   "eyes": false,
+   "moves": "fly",
+   "places": [
+    "B31"
+   ],
+   "render": "instanced",
+   "status": "idea"
+  },
+  {
+   "id": "balloon_creatures",
+   "name": "Balloon creatures",
+   "kind": "friend",
+   "eyes": false,
+   "moves": "fly",
+   "places": [
+    "B32"
+   ],
+   "render": "skinned_mesh",
+   "status": "idea"
+  },
+  {
+   "id": "the_hush",
+   "name": "The Hush",
+   "kind": "boss",
+   "eyes": false,
+   "size": "giant",
+   "moves": "float",
+   "places": [
+    "B01"
+   ],
+   "behaviour": "Purify, never kill: weak spots glow, it shatters into light and returns to its true colours.",
+   "render": "skinned_mesh",
+   "status": "idea"
+  },
+  {
+   "id": "thorn_golem",
+   "name": "Thorn Golem",
+   "kind": "boss",
+   "eyes": false,
+   "size": "giant",
+   "moves": "walk",
+   "places": [
+    "B04"
+   ],
+   "behaviour": "Purify, never kill: weak spots glow, it shatters into light and returns to its true colours.",
+   "render": "skinned_mesh",
+   "status": "idea"
+  },
+  {
+   "id": "shadow_champion",
+   "name": "Shadow Champion",
+   "kind": "boss",
+   "eyes": false,
+   "size": "large",
+   "moves": "walk",
+   "places": [
+    "B08"
+   ],
+   "behaviour": "Purify, never kill: weak spots glow, it shatters into light and returns to its true colours.",
+   "render": "skinned_mesh",
+   "status": "idea"
+  },
+  {
+   "id": "stone_giant",
+   "name": "Arch Guardian, corrupted",
+   "kind": "boss",
+   "eyes": false,
+   "size": "colossal",
+   "moves": "walk",
+   "places": [
+    "B11"
+   ],
+   "behaviour": "Purify, never kill: weak spots glow, it shatters into light and returns to its true colours.",
+   "render": "skinned_mesh",
+   "status": "idea"
+  },
+  {
+   "id": "ice_serpent",
+   "name": "Ice Serpent",
+   "kind": "boss",
+   "eyes": false,
+   "size": "colossal",
+   "moves": "swim",
+   "places": [
+    "B16"
+   ],
+   "behaviour": "Purify, never kill: weak spots glow, it shatters into light and returns to its true colours.",
+   "render": "skinned_mesh",
+   "status": "idea"
+  },
+  {
+   "id": "leviathan",
+   "name": "Leviathan",
+   "kind": "boss",
+   "eyes": false,
+   "size": "colossal",
+   "moves": "swim",
+   "places": [
+    "B24"
+   ],
+   "behaviour": "Purify, never kill: weak spots glow, it shatters into light and returns to its true colours.",
+   "render": "skinned_mesh",
+   "status": "idea"
+  },
+  {
+   "id": "storm_dragon",
+   "name": "Storm Dragon, corrupted",
+   "kind": "boss",
+   "eyes": false,
+   "size": "colossal",
+   "moves": "fly",
+   "places": [
+    "B26"
+   ],
+   "behaviour": "Purify, never kill: weak spots glow, it shatters into light and returns to its true colours.",
+   "render": "skinned_mesh",
+   "status": "idea"
+  },
+  {
+   "id": "shadow_glass",
+   "name": "Shadow-glass creatures",
+   "kind": "enemy",
+   "eyes": false,
+   "size": "medium",
+   "moves": "walk",
+   "look": "Smoky dark glass; shatter into light and petals",
+   "render": "instanced",
+   "status": "idea"
+  },
+  {
+   "id": "sea_giant",
+   "name": "Giant creatures rising from the sea",
+   "kind": "giant",
+   "eyes": false,
+   "moves": "swim",
+   "look": "Rise at dusk and at the finale",
+   "render": "skinned_mesh",
+   "status": "idea"
+  },
+  {
+   "id": "lantern_fish",
+   "name": "Lantern koi",
+   "kind": "swarm",
+   "eyes": false,
+   "moves": "swim",
+   "look": "Glowing lake at night",
+   "render": "particles",
+   "status": "idea"
+  }
+ ],
+ "pets": [
+  {
+   "id": "star_fox_pet",
+   "creature": "star_foxes",
+   "power": "find_hidden",
+   "follow": "trots at heel, sniffs out secrets",
+   "tease": "hides behind her and pops out"
+  },
+  {
+   "id": "bunny_cat_pet",
+   "creature": "bunny_cats",
+   "power": "heal",
+   "follow": "hops at heel",
+   "tease": "steals her hat"
+  },
+  {
+   "id": "baby_dragon_pet",
+   "creature": "young_dragons",
+   "power": "carry_light",
+   "follow": "flies over the shoulder",
+   "tease": "sneezes sparkles"
+  },
+  {
+   "id": "cloud_koi_pet",
+   "creature": "cloud_koi",
+   "power": "speed",
+   "follow": "swims through the air beside her",
+   "tease": "blows bubbles in her face"
+  },
+  {
+   "id": "glow_frog_pet",
+   "creature": "glow_frogs",
+   "power": "scout",
+   "follow": "hops ahead and back",
+   "tease": "croaks a tune"
+  },
+  {
+   "id": "fennec_pet",
+   "creature": "fennec_foxes",
+   "power": "find_hidden",
+   "follow": "trots ahead",
+   "tease": "digs up flowers"
+  },
+  {
+   "id": "mini_griffin_pet",
+   "creature": "griffins",
+   "power": "shield",
+   "follow": "perches on the shoulder",
+   "tease": "ruffles her hair"
+  },
+  {
+   "id": "crystal_hummingbird_pet",
+   "creature": "crystal_hummingbirds",
+   "power": "fetch",
+   "follow": "orbits her head",
+   "tease": "hovers in front of her nose"
+  }
+ ],
+ "rides": [
+  {
+   "id": "her_carriage",
+   "name": "Rose-gold carriage",
+   "kind": "arrival",
+   "seats": 2,
+   "drawnBy": "winged unicorns",
+   "honoreeOnly": true
+  },
+  {
+   "id": "swan_boat",
+   "name": "Swan boat",
+   "kind": "arrival",
+   "seats": 2
+  },
+  {
+   "id": "petal_carriage",
+   "name": "Petal carriage",
+   "kind": "arrival",
+   "seats": 2
+  },
+  {
+   "id": "cloud_chariot",
+   "name": "Cloud chariot",
+   "kind": "arrival",
+   "seats": 2
+  },
+  {
+   "id": "glass_sleigh",
+   "name": "Glass sleigh",
+   "kind": "arrival",
+   "seats": 2
+  },
+  {
+   "id": "lantern_gondola",
+   "name": "Lantern gondola",
+   "kind": "arrival",
+   "seats": 2
+  },
+  {
+   "id": "winged_carriage",
+   "name": "Winged carriage",
+   "kind": "arrival",
+   "seats": 2
+  },
+  {
+   "id": "flying_ship",
+   "name": "The flying ship",
+   "kind": "group",
+   "seats": 18,
+   "look": "Open deck everyone stands on; carries the group between places"
+  }
+ ],
+ "mew": {
+  "controlledBy": "owner",
+  "eyes": "none",
+  "voice": "mew_sounds_only",
+  "view": {
+   "offsetDeg": [
+    30,
+    50
+   ],
+   "distanceM": [
+    1,
+    2
+   ],
+   "lagS": 0.6,
+   "leashM": 6,
+   "keepCentreClearDuring": [
+    "combat",
+    "race",
+    "cutscene",
+    "puzzle"
+   ]
+  },
+  "actions": [
+   {
+    "id": "upside_down",
+    "name": "Float upside down",
+    "by": "mew",
+    "what": "At the top of her view, tail wagging"
+   },
+   {
+    "id": "magic_blob",
+    "name": "Throw a magic blob",
+    "by": "mew",
+    "what": "Bursts into petals and sparkles on her screen, harmless"
+   },
+   {
+    "id": "circle",
+    "name": "Happy circle",
+    "by": "mew",
+    "what": "When she does well, or laughs on voice"
+   },
+   {
+    "id": "bubble_nap",
+    "name": "Bubble nap",
+    "by": "mew",
+    "what": "Curls up in a bubble; she can carry it"
+   },
+   {
+    "id": "point_way",
+    "name": "Point the way",
+    "by": "mew",
+    "what": "Flies ahead to the next place and looks back"
+   },
+   {
+    "id": "boop",
+    "name": "Boop its nose",
+    "by": "honoree"
+   },
+   {
+    "id": "berry",
+    "name": "Toss a glowing berry",
+    "by": "honoree"
+   },
+   {
+    "id": "tickle",
+    "name": "Tickle",
+    "by": "honoree",
+    "what": "It spins"
+   }
+  ],
+  "reveal": {
+   "cutscene": "finale",
+   "becomes": "the owner's character"
+  }
+ },
+ "players": [
+  {
+   "id": "honoree",
+   "displayName": "{her}",
+   "gender": "female",
+   "group": "honoree",
+   "ride": "her_carriage"
+  },
+  {
+   "id": "owner",
+   "displayName": "The Mew",
+   "gender": "male",
+   "group": "owner"
+  },
+  {
+   "id": "friend_01",
+   "slot": 1,
+   "displayName": "Friend 1",
+   "gender": "female",
+   "group": "ladies"
+  },
+  {
+   "id": "friend_02",
+   "slot": 2,
+   "displayName": "Friend 2",
+   "gender": "female",
+   "group": "ladies"
+  },
+  {
+   "id": "friend_03",
+   "slot": 3,
+   "displayName": "Friend 3",
+   "gender": "female",
+   "group": "ladies"
+  },
+  {
+   "id": "friend_04",
+   "slot": 4,
+   "displayName": "Friend 4",
+   "gender": "female",
+   "group": "ladies"
+  },
+  {
+   "id": "friend_05",
+   "slot": 5,
+   "displayName": "Friend 5",
+   "gender": "female",
+   "group": "ladies"
+  },
+  {
+   "id": "friend_06",
+   "slot": 6,
+   "displayName": "Friend 6",
+   "gender": "female",
+   "group": "ladies"
+  },
+  {
+   "id": "friend_07",
+   "slot": 7,
+   "displayName": "Friend 7",
+   "gender": "female",
+   "group": "ladies"
+  },
+  {
+   "id": "friend_08",
+   "slot": 8,
+   "displayName": "Friend 8",
+   "gender": "male",
+   "group": "men"
+  },
+  {
+   "id": "friend_09",
+   "slot": 9,
+   "displayName": "Friend 9",
+   "gender": "male",
+   "group": "men"
+  },
+  {
+   "id": "friend_10",
+   "slot": 10,
+   "displayName": "Friend 10",
+   "gender": "male",
+   "group": "men"
+  },
+  {
+   "id": "friend_11",
+   "slot": 11,
+   "displayName": "Friend 11",
+   "gender": "male",
+   "group": "men"
+  },
+  {
+   "id": "friend_12",
+   "slot": 12,
+   "displayName": "Friend 12",
+   "gender": "male",
+   "group": "men"
+  },
+  {
+   "id": "friend_13",
+   "slot": 13,
+   "displayName": "Friend 13",
+   "gender": "male",
+   "group": "men"
+  },
+  {
+   "id": "friend_14",
+   "slot": 14,
+   "displayName": "Friend 14",
+   "gender": "male",
+   "group": "men"
+  }
+ ],
+ "templates": [
+  {
+   "id": "harmony_puzzle",
+   "name": "Harmony puzzle",
+   "how": "Pressure pads, mirrors, bells or beams that need several players at once; more than 8 split into two teams with their own nodes",
+   "why": "Nobody can do it alone; people have to talk",
+   "players": {
+    "min": 2,
+    "max": 16
+   },
+   "win": "every node lit at the same time",
+   "status": "designed",
+   "params": {
+    "type": "object",
+    "properties": {
+     "nodes": {
+      "type": "integer"
+     },
+     "kind": {
+      "enum": [
+       "pads",
+       "mirrors",
+       "bells",
+       "beams"
+      ]
+     },
+     "timeLimitS": {
+      "type": "number"
+     }
+    }
+   }
+  },
+  {
+   "id": "race",
+   "name": "Race",
+   "how": "On foot, on creatures, in vehicles or on the flying ship through rings",
+   "why": "Quick fun with a winner, easy to join",
+   "players": {
+    "min": 1,
+    "max": 16
+   },
+   "win": "first across the line; everyone who finishes gets the shard",
+   "status": "designed",
+   "params": {
+    "type": "object",
+    "properties": {
+     "vehicle": {
+      "type": "string"
+     },
+     "rings": {
+      "type": "integer"
+     },
+     "laps": {
+      "type": "integer"
+     }
+    }
+   }
+  },
+  {
+   "id": "arena_defence",
+   "name": "Arena defence",
+   "how": "Waves of shadow-glass creatures; melee and ranged",
+   "why": "Back-to-back teamwork, revive each other",
+   "players": {
+    "min": 1,
+    "max": 16
+   },
+   "win": "survive all waves",
+   "status": "designed",
+   "params": {
+    "type": "object",
+    "properties": {
+     "waves": {
+      "type": "integer"
+     },
+     "enemy": {
+      "type": "string"
+     }
+    }
+   }
+  },
+  {
+   "id": "boss_purification",
+   "name": "Boss purification",
+   "how": "A big corrupted creature with weak spots and warning zones",
+   "why": "The big shared win of each act",
+   "players": {
+    "min": 2,
+    "max": 16
+   },
+   "win": "purify all weak spots",
+   "status": "designed",
+   "params": {
+    "type": "object",
+    "properties": {
+     "boss": {
+      "type": "string"
+     },
+     "weakSpots": {
+      "type": "integer"
+     },
+     "phases": {
+      "type": "integer"
+     }
+    }
+   }
+  },
+  {
+   "id": "party_game",
+   "name": "Party game",
+   "how": "Targets, bubble tag, hide-and-seek, snowball fights, kite battles",
+   "why": "Laughter, no pressure",
+   "players": {
+    "min": 2,
+    "max": 16
+   },
+   "win": "highest score after the timer",
+   "status": "designed"
+  },
+  {
+   "id": "escort",
+   "name": "Escort",
+   "how": "Carry or guide something fragile together (a lantern, spirits, baby whales)",
+   "why": "Everyone protects the same thing",
+   "players": {
+    "min": 1,
+    "max": 16
+   },
+   "win": "the escorted thing arrives with light left",
+   "status": "designed"
+  },
+  {
+   "id": "gather_build",
+   "name": "Team gather and build",
+   "how": "Collect pieces and build something together (a cake layer, a bridge, an ice sculpture)",
+   "why": "Shared creation; each person adds a part",
+   "players": {
+    "min": 2,
+    "max": 16
+   },
+   "win": "every slot filled",
+   "status": "designed"
+  },
+  {
+   "id": "heart_quiz",
+   "name": "Heart quiz and memory",
+   "how": "Questions about her and about each other, echo and photo memory games",
+   "why": "Friends learn about each other; deeply personal",
+   "players": {
+    "min": 2,
+    "max": 16
+   },
+   "win": "answer a set number right as a team",
+   "status": "designed"
+  }
+ ],
+ "weapons": [
+  {
+   "id": "starlight_sword",
+   "name": "Starlight sword",
+   "class": "melee",
+   "vfx": "ribbon trail"
+  },
+  {
+   "id": "rapier",
+   "name": "Starlight rapier",
+   "class": "melee",
+   "vfx": "ribbon trail"
+  },
+  {
+   "id": "petal_scythe",
+   "name": "Petal scythe",
+   "class": "melee",
+   "vfx": "petal arc"
+  },
+  {
+   "id": "light_hammer",
+   "name": "Hammer of light",
+   "class": "melee",
+   "vfx": "shock ring"
+  },
+  {
+   "id": "moon_bow",
+   "name": "Bow of moonlight",
+   "class": "ranged",
+   "vfx": "silver arrows"
+  },
+  {
+   "id": "crystal_staff",
+   "name": "Crystal staff",
+   "class": "ranged",
+   "vfx": "prism bolts"
+  },
+  {
+   "id": "glitter_blaster",
+   "name": "Glitter blaster",
+   "class": "ranged",
+   "vfx": "glitter bolts, homing star shards, bubbles or confetti"
+  },
+  {
+   "id": "crystal_spikes",
+   "name": "Crystal spikes",
+   "class": "ground_magic",
+   "vfx": "spikes erupt in a line"
+  },
+  {
+   "id": "luminous_roots",
+   "name": "Luminous roots",
+   "class": "ground_magic",
+   "vfx": "roots burst up in a ring"
+  },
+  {
+   "id": "lotus_pillars",
+   "name": "Lotus pillars",
+   "class": "ground_magic",
+   "vfx": "pillars rise and trap"
+  },
+  {
+   "id": "duo_burst",
+   "name": "Team burst",
+   "class": "team",
+   "vfx": "two friends on one enemy trigger a combined burst"
+  }
+ ],
+ "outfits": [
+  {
+   "id": "party_gown_rose",
+   "name": "Rose party gown",
+   "slot": "gown",
+   "audience": "female_only",
+   "wearer": "female",
+   "modest": true
+  },
+  {
+   "id": "starlight_gown",
+   "name": "Starlight gown",
+   "slot": "gown",
+   "audience": "female_only",
+   "wearer": "female",
+   "modest": true
+  },
+  {
+   "id": "silk_hijab",
+   "name": "Silk hijab",
+   "slot": "hijab",
+   "audience": "all",
+   "wearer": "female",
+   "modest": true
+  },
+  {
+   "id": "flower_crown",
+   "name": "Flower crown",
+   "slot": "headwear",
+   "audience": "all",
+   "wearer": "any",
+   "modest": true
+  },
+  {
+   "id": "royal_coat",
+   "name": "Royal coat",
+   "slot": "coat",
+   "audience": "all",
+   "wearer": "male",
+   "modest": true
+  },
+  {
+   "id": "star_cape",
+   "name": "Star cape",
+   "slot": "cape",
+   "audience": "all",
+   "wearer": "any",
+   "modest": true
+  },
+  {
+   "id": "knight_armour",
+   "name": "Knight armour set",
+   "slot": "armour",
+   "audience": "all",
+   "wearer": "any",
+   "modest": true
+  }
+ ],
+ "story": {
+  "villain": "the_hush",
+  "macguffin": "The Great Birthday Lantern, cracked into 32 star shards",
+  "acts": [
+   {
+    "id": "act1",
+    "name": "The ladies arrive",
+    "summary": "Female friends ride in through the waterfall gate, cross the bridge, explore the palace and dress up.",
+    "skyPhase": "morning",
+    "cutscenes": [
+     "arrival"
+    ]
+   },
+   {
+    "id": "act2",
+    "name": "Her surprise",
+    "summary": "She opens her link, rides in with the full aerial reveal, is welcomed with confetti, and the Mew bonds with her.",
+    "skyPhase": "morning",
+    "cutscenes": [
+     "arrival",
+     "her_welcome",
+     "mew_bond"
+    ]
+   },
+   {
+    "id": "act3",
+    "name": "The Hush falls",
+    "summary": "The men arrive by flying ship; the Hush cracks the lantern into 32 shards and greys the land.",
+    "skyPhase": "noon",
+    "cutscenes": [
+     "ship_docks",
+     "the_hush"
+    ]
+   },
+   {
+    "id": "act4",
+    "name": "The 32 places",
+    "summary": "Free each head, befriend creatures, play the game, beat the challenge, win the shard; saved people go to the palace.",
+    "skyPhase": "afternoon",
+    "cutscenes": [
+     "travel",
+     "enter_place",
+     "meet_people",
+     "frozen_head",
+     "befriend",
+     "boss_entrance",
+     "head_freed",
+     "shard",
+     "farewell",
+     "tournament"
+    ]
+   },
+   {
+    "id": "act5",
+    "name": "Midnight",
+    "summary": "Final boss, then the roof opens, the floating theatre forms, the cake, and the Mew becomes the owner.",
+    "skyPhase": "night",
+    "cutscenes": [
+     "return_palace",
+     "finale"
+    ]
+   }
+  ]
+ },
+ "clock": {
+  "mode": "real_time_to_midnight",
+  "cycleMinutes": 30,
+  "phases": [
+   {
+    "id": "morning",
+    "name": "Morning",
+    "sunElevDeg": 25,
+    "minutes": 3
+   },
+   {
+    "id": "noon",
+    "name": "Day",
+    "sunElevDeg": 60,
+    "minutes": 10
+   },
+   {
+    "id": "afternoon",
+    "name": "Golden hour",
+    "sunElevDeg": 12,
+    "minutes": 4
+   },
+   {
+    "id": "dusk",
+    "name": "Dusk",
+    "sunElevDeg": -4,
+    "minutes": 3
+   },
+   {
+    "id": "night",
+    "name": "Night",
+    "sunElevDeg": -30,
+    "minutes": 10
+   }
+  ],
+  "timeline": [
+   {
+    "at": "20:30",
+    "phase": "morning",
+    "event": "The ladies arrive, ride in, explore the palace and wardrobe",
+    "cutscene": "arrival"
+   },
+   {
+    "at": "20:45",
+    "phase": "morning",
+    "event": "She arrives: her ride, the aerial reveal, the welcome, the Mew bonds",
+    "cutscene": "mew_bond"
+   },
+   {
+    "at": "21:00",
+    "phase": "noon",
+    "event": "The men arrive by flying ship",
+    "cutscene": "ship_docks"
+   },
+   {
+    "at": "21:10",
+    "phase": "noon",
+    "event": "The Hush cracks the lantern; the quest begins",
+    "cutscene": "the_hush"
+   },
+   {
+    "at": "21:10",
+    "until": "23:30",
+    "phase": "afternoon",
+    "event": "The Grand Path, the tournament, the bosses"
+   },
+   {
+    "at": "23:30",
+    "until": "23:50",
+    "phase": "night",
+    "event": "Final boss at the palace; everyone they saved gathers",
+    "cutscene": "return_palace"
+   },
+   {
+    "at": "00:00",
+    "phase": "night",
+    "event": "The roof opens, the floating theatre, the cake, the reveal",
+    "cutscene": "finale"
+   }
+  ]
+ },
+ "cutscenes": [
+  {
+   "id": "arrival",
+   "name": "Arrival ride and aerial reveal",
+   "trigger": "a player joins",
+   "audience": "joiner",
+   "seconds": 60,
+   "shortSeconds": 20,
+   "skippable": true,
+   "music": "palace_theme",
+   "shots": [
+    {
+     "type": "wide",
+     "seconds": 6,
+     "what": "Dawn at the sea docks outside the crescent; her ride waits, sparkling",
+     "subject": "docks"
+    },
+    {
+     "type": "tracking",
+     "seconds": 8,
+     "what": "The ride sets off across the water towards the white waterfall wall",
+     "subject": "ride"
+    },
+    {
+     "type": "close_up",
+     "seconds": 5,
+     "what": "The waterfall veil parts like curtains; light pours through",
+     "subject": "gate",
+     "vfx": [
+      "mist",
+      "rainbow"
+     ]
+    },
+    {
+     "type": "pov",
+     "seconds": 6,
+     "what": "Riding through the falls; spray, sparkles, then sudden calm",
+     "subject": "gate"
+    },
+    {
+     "type": "establishing_aerial",
+     "seconds": 14,
+     "what": "The camera soars up: the crescent of mountains, 32 places, the palace glowing in the middle",
+     "subject": "crescent"
+    },
+    {
+     "type": "flyover",
+     "seconds": 9,
+     "what": "Down along the long marble bridge; each step ripples in neon colours",
+     "subject": "bridge"
+    },
+    {
+     "type": "crane_up",
+     "seconds": 7,
+     "what": "Up the palace facade, gold petal arch, purple domes",
+     "subject": "palace"
+    },
+    {
+     "type": "dolly_in",
+     "seconds": 5,
+     "what": "The giant doors swing open",
+     "subject": "palace_doors"
+    }
+   ]
+  },
+  {
+   "id": "her_welcome",
+   "name": "Her welcome",
+   "trigger": "the honoree reaches the palace doors",
+   "audience": "all",
+   "seconds": 25,
+   "skippable": false,
+   "music": "palace_theme",
+   "shots": [
+    {
+     "type": "wide",
+     "seconds": 6,
+     "what": "The great hall: her friends waiting in their party outfits",
+     "subject": "hall"
+    },
+    {
+     "type": "close_up",
+     "seconds": 4,
+     "what": "Her friends turn and cheer",
+     "subject": "friends"
+    },
+    {
+     "type": "crane_up",
+     "seconds": 7,
+     "what": "Confetti, petals and lanterns fill the hall; the banner reads Happy Birthday {her}",
+     "subject": "hall",
+     "vfx": [
+      "confetti",
+      "petals"
+     ]
+    },
+    {
+     "type": "two_shot",
+     "seconds": 8,
+     "what": "The Head Courtier bows",
+     "subject": "courtier",
+     "line": {
+      "who": "palace_steward",
+      "text": "Welcome, {her}. Tonight, this whole world is yours."
+     }
+    }
+   ]
+  },
+  {
+   "id": "mew_bond",
+   "name": "The Mew bonds with her",
+   "trigger": "after her welcome",
+   "audience": "all",
+   "seconds": 25,
+   "shots": [
+    {
+     "type": "insert",
+     "seconds": 4,
+     "what": "A small pink glow tumbles down from the chandelier",
+     "subject": "mew"
+    },
+    {
+     "type": "close_up",
+     "seconds": 6,
+     "what": "The Mew, eyeless and smiling, floats upside down in front of her, tail wagging",
+     "subject": "mew"
+    },
+    {
+     "type": "two_shot",
+     "seconds": 7,
+     "what": "It boops her nose and mews",
+     "subject": "mew",
+     "line": {
+      "who": "mew",
+      "text": "Mew!"
+     }
+    },
+    {
+     "type": "orbit",
+     "seconds": 8,
+     "what": "It circles her once, and a ribbon of light ties them together",
+     "subject": "mew",
+     "vfx": [
+      "bond_ribbon"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "ship_docks",
+   "name": "The flying ship docks with the men",
+   "trigger": "the men join",
+   "audience": "all",
+   "seconds": 20,
+   "music": "adventure_theme",
+   "shots": [
+    {
+     "type": "wide",
+     "seconds": 5,
+     "what": "A shadow passes over the palace terrace",
+     "subject": "sky"
+    },
+    {
+     "type": "crane_up",
+     "seconds": 8,
+     "what": "The flying ship sails out of the clouds, sails glowing",
+     "subject": "flying_ship"
+    },
+    {
+     "type": "tracking",
+     "seconds": 7,
+     "what": "It docks at the terrace; the men step down the gangway",
+     "subject": "flying_ship"
+    }
+   ]
+  },
+  {
+   "id": "the_hush",
+   "name": "The Hush falls",
+   "trigger": "21:10 or the host starts it",
+   "audience": "all",
+   "seconds": 45,
+   "skippable": false,
+   "shots": [
+    {
+     "type": "wide",
+     "seconds": 6,
+     "what": "Everyone gathers under the Great Birthday Lantern",
+     "subject": "lantern"
+    },
+    {
+     "type": "crane_up",
+     "seconds": 6,
+     "what": "The sky darkens; a cold grey fog rolls over the mountains",
+     "subject": "sky",
+     "vfx": [
+      "grey_fog"
+     ]
+    },
+    {
+     "type": "close_up",
+     "seconds": 6,
+     "what": "A crack runs across the lantern",
+     "subject": "lantern"
+    },
+    {
+     "type": "wide",
+     "seconds": 8,
+     "what": "The lantern shatters into 32 star shards that streak out across the world",
+     "subject": "sky",
+     "vfx": [
+      "star_trails"
+     ]
+    },
+    {
+     "type": "establishing_aerial",
+     "seconds": 8,
+     "what": "Colour drains from the land, place by place",
+     "subject": "crescent",
+     "vfx": [
+      "colour_drain"
+     ]
+    },
+    {
+     "type": "close_up",
+     "seconds": 6,
+     "what": "The Hush, a jealous shadow of fog and grey glass, speaks",
+     "subject": "the_hush",
+     "line": {
+      "who": "the_hush"
+     }
+    },
+    {
+     "type": "two_shot",
+     "seconds": 5,
+     "what": "The Mew tugs her sleeve and points to the first place",
+     "subject": "mew"
+    }
+   ]
+  },
+  {
+   "id": "tournament",
+   "name": "The Birthday Tournament",
+   "trigger": "arrival at B08",
+   "audience": "all",
+   "seconds": 20,
+   "music": "tournament_fanfare",
+   "shots": [
+    {
+     "type": "establishing_aerial",
+     "seconds": 6,
+     "what": "The colosseum, banners in every colour",
+     "subject": "B08"
+    },
+    {
+     "type": "tracking",
+     "seconds": 8,
+     "what": "The friends walk out into the arena; griffins fly overhead",
+     "subject": "group"
+    },
+    {
+     "type": "title_card",
+     "seconds": 6,
+     "what": "The herald announces the champions",
+     "subject": "B08",
+     "line": {
+      "who": "local",
+      "key": "greet"
+     }
+    }
+   ]
+  },
+  {
+   "id": "return_palace",
+   "name": "Return to the palace",
+   "trigger": "the last shard before the final boss",
+   "audience": "all",
+   "seconds": 30,
+   "music": "adventure_theme",
+   "shots": [
+    {
+     "type": "establishing_aerial",
+     "seconds": 10,
+     "what": "Night falls; every freed people travels to the palace in long lines of light",
+     "subject": "crescent"
+    },
+    {
+     "type": "flyover",
+     "seconds": 10,
+     "what": "Gondolas, longboats, dragons, sky whales and lanterns converge on the palace",
+     "subject": "palace"
+    },
+    {
+     "type": "wide",
+     "seconds": 10,
+     "what": "The Hush waits in the heart of the palace",
+     "subject": "the_hush"
+    }
+   ]
+  },
+  {
+   "id": "finale",
+   "name": "Midnight finale and the reveal",
+   "trigger": "celebrationAt",
+   "audience": "all",
+   "seconds": 300,
+   "skippable": false,
+   "music": "choir_theme",
+   "shots": [
+    {
+     "type": "wide",
+     "seconds": 20,
+     "what": "The clock strikes midnight; the choir begins",
+     "subject": "hall"
+    },
+    {
+     "type": "crane_up",
+     "seconds": 30,
+     "what": "The glass roof opens like a flower",
+     "subject": "palace_roof"
+    },
+    {
+     "type": "tracking",
+     "seconds": 40,
+     "what": "The floor rises into the sky; pavilions and waterfalls form a floating theatre",
+     "subject": "theatre"
+    },
+    {
+     "type": "flyover",
+     "seconds": 40,
+     "what": "Jellyfish swarms, sky whales and dragons breathing flame light the sky",
+     "subject": "sky",
+     "vfx": [
+      "jellyfish",
+      "dragon_fire",
+      "fireworks"
+     ]
+    },
+    {
+     "type": "close_up",
+     "seconds": 30,
+     "what": "The Mew cuts the giant cake with ribbons of light",
+     "subject": "cake"
+    },
+    {
+     "type": "wide",
+     "seconds": 30,
+     "what": "Slices float to every guest by magic",
+     "subject": "guests"
+    },
+    {
+     "type": "two_shot",
+     "seconds": 40,
+     "what": "The Mew glows gold and grows into the owner's human avatar",
+     "subject": "mew",
+     "vfx": [
+      "gold_glow"
+     ]
+    },
+    {
+     "type": "close_up",
+     "seconds": 30,
+     "what": "He calls her name",
+     "subject": "owner",
+     "line": {
+      "who": "owner",
+      "text": "Happy birthday, {her}."
+     }
+    },
+    {
+     "type": "crane_up",
+     "seconds": 40,
+     "what": "Everyone she saved fills the theatre and cheers",
+     "subject": "theatre",
+     "vfx": [
+      "confetti",
+      "petals",
+      "fireworks"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "travel",
+   "name": "Travelling to the next place",
+   "trigger": "the group sets off from a freed place",
+   "audience": "all",
+   "reusable": true,
+   "skippable": true,
+   "seconds": 20,
+   "shortSeconds": 6,
+   "music": "adventure_theme",
+   "shots": [
+    {
+     "type": "tracking",
+     "seconds": 6,
+     "what": "The group rides out together; the ship or their rides lift off",
+     "subject": "group"
+    },
+    {
+     "type": "flyover",
+     "seconds": 8,
+     "what": "Aerial journey over the crescent; the Mew flies ahead and looks back",
+     "subject": "route"
+    },
+    {
+     "type": "title_card",
+     "seconds": 6,
+     "what": "The next place rises over the horizon; its name writes itself in gold light",
+     "subject": "place"
+    }
+   ]
+  },
+  {
+   "id": "enter_place",
+   "name": "Arriving at a place",
+   "trigger": "the group arrives at a place",
+   "audience": "all",
+   "reusable": true,
+   "skippable": true,
+   "seconds": 15,
+   "shortSeconds": 5,
+   "shots": [
+    {
+     "type": "establishing_aerial",
+     "seconds": 6,
+     "what": "Slow orbit high over the place, drained to grey by the Hush",
+     "subject": "place"
+    },
+    {
+     "type": "crane_down",
+     "seconds": 5,
+     "what": "Camera sinks to the plaza; the creatures hide",
+     "subject": "plaza"
+    },
+    {
+     "type": "wide",
+     "seconds": 4,
+     "what": "The group lands; the local runs up to them",
+     "subject": "group"
+    }
+   ]
+  },
+  {
+   "id": "meet_people",
+   "name": "Meeting the people",
+   "trigger": "after arriving",
+   "audience": "all",
+   "reusable": true,
+   "seconds": 15,
+   "shortSeconds": 8,
+   "shots": [
+    {
+     "type": "two_shot",
+     "seconds": 8,
+     "what": "The local greets her and the group",
+     "subject": "local",
+     "line": {
+      "who": "local",
+      "key": "greet"
+     }
+    },
+    {
+     "type": "over_shoulder",
+     "seconds": 7,
+     "what": "The local points to the frozen head",
+     "subject": "head"
+    }
+   ]
+  },
+  {
+   "id": "frozen_head",
+   "name": "The frozen head",
+   "trigger": "the group reaches the head",
+   "audience": "all",
+   "reusable": true,
+   "seconds": 12,
+   "shortSeconds": 6,
+   "shots": [
+    {
+     "type": "dolly_in",
+     "seconds": 7,
+     "what": "Slow push in to the head, frozen in grey glass; a faint glow pulses inside",
+     "subject": "head"
+    },
+    {
+     "type": "close_up",
+     "seconds": 5,
+     "what": "The voice from inside the glass",
+     "subject": "head",
+     "line": {
+      "who": "head",
+      "key": "plea"
+     }
+    }
+   ]
+  },
+  {
+   "id": "befriend",
+   "name": "Befriending the creatures",
+   "trigger": "a creature is befriended for the first time here",
+   "audience": "all",
+   "reusable": true,
+   "skippable": true,
+   "seconds": 8,
+   "shortSeconds": 3,
+   "shots": [
+    {
+     "type": "close_up",
+     "seconds": 4,
+     "what": "The creature peeks out shyly, then comes closer",
+     "subject": "creature"
+    },
+    {
+     "type": "orbit",
+     "seconds": 4,
+     "what": "It circles her and settles beside the group; a capture is taken",
+     "subject": "creature",
+     "vfx": [
+      "sparkles"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "boss_entrance",
+   "name": "Boss entrance",
+   "trigger": "a boss challenge starts",
+   "audience": "all",
+   "reusable": true,
+   "seconds": 12,
+   "music": "battle_theme",
+   "shots": [
+    {
+     "type": "wide",
+     "seconds": 4,
+     "what": "The ground shakes; the sky darkens over the place",
+     "subject": "place"
+    },
+    {
+     "type": "crane_up",
+     "seconds": 5,
+     "what": "The boss rises to full height",
+     "subject": "boss",
+     "vfx": [
+      "shadow_mist"
+     ]
+    },
+    {
+     "type": "title_card",
+     "seconds": 3,
+     "what": "The boss's name slams onto the screen",
+     "subject": "boss"
+    }
+   ]
+  },
+  {
+   "id": "head_freed",
+   "name": "The head is freed",
+   "trigger": "the challenge is won",
+   "audience": "all",
+   "reusable": true,
+   "seconds": 15,
+   "shortSeconds": 8,
+   "shots": [
+    {
+     "type": "close_up",
+     "seconds": 3,
+     "what": "Cracks of light run through the grey glass",
+     "subject": "head"
+    },
+    {
+     "type": "wide",
+     "seconds": 4,
+     "what": "The glass bursts into petals; colour washes outward over the whole place",
+     "subject": "place",
+     "vfx": [
+      "petal_burst",
+      "colour_wave"
+     ]
+    },
+    {
+     "type": "two_shot",
+     "seconds": 8,
+     "what": "The head thanks her",
+     "subject": "head",
+     "line": {
+      "who": "head",
+      "key": "freed"
+     }
+    }
+   ]
+  },
+  {
+   "id": "shard",
+   "name": "The star shard",
+   "trigger": "after the head is freed",
+   "audience": "all",
+   "reusable": true,
+   "seconds": 8,
+   "shortSeconds": 4,
+   "shots": [
+    {
+     "type": "crane_up",
+     "seconds": 4,
+     "what": "A star shard rises out of the place and floats to her hands",
+     "subject": "shard",
+     "vfx": [
+      "star_trail"
+     ]
+    },
+    {
+     "type": "insert",
+     "seconds": 4,
+     "what": "The shard flies up to the lantern in the sky; the count ticks up (5 of 32)",
+     "subject": "sky_lantern"
+    }
+   ]
+  },
+  {
+   "id": "farewell",
+   "name": "Farewell",
+   "trigger": "the group leaves",
+   "audience": "all",
+   "reusable": true,
+   "skippable": true,
+   "seconds": 8,
+   "shortSeconds": 4,
+   "shots": [
+    {
+     "type": "wide",
+     "seconds": 8,
+     "what": "The head and the people set off towards the palace, waving",
+     "subject": "people",
+     "line": {
+      "who": "head",
+      "key": "farewell"
+     }
+    }
+   ]
+  }
+ ],
+ "captures": [
+  {
+   "id": "aerial_reveal",
+   "when": "the aerial reveal"
+  },
+  {
+   "id": "head_freed",
+   "when": "each head freed"
+  },
+  {
+   "id": "race_finish",
+   "when": "every race finish"
+  },
+  {
+   "id": "boss_down",
+   "when": "boss purified"
+  },
+  {
+   "id": "ship_group",
+   "when": "group on the flying ship deck"
+  },
+  {
+   "id": "mew_nap",
+   "when": "the Mew asleep in its bubble"
+  },
+  {
+   "id": "finale",
+   "when": "the whole midnight finale"
+  }
+ ],
+ "music": [
+  {
+   "id": "choir_theme",
+   "name": "Choir theme",
+   "use": "finale"
+  },
+  {
+   "id": "palace_theme",
+   "name": "Palace theme",
+   "use": "palace and wardrobe"
+  },
+  {
+   "id": "adventure_theme",
+   "name": "Adventure theme",
+   "use": "travel"
+  },
+  {
+   "id": "battle_theme",
+   "name": "Battle theme",
+   "use": "bosses and arena"
+  },
+  {
+   "id": "tournament_fanfare",
+   "name": "Tournament fanfare",
+   "use": "B08"
+  }
+ ],
+ "sky": {
+  "layers": [
+   {
+    "id": "aurora_drapes",
+    "what": "Sky drapes / aurora curtains",
+    "render": "long wavy additive strips",
+    "phases": [
+     "dusk",
+     "night"
+    ],
+    "texture": "web-pack/fx/aurora.png"
+   },
+   {
+    "id": "ribbons",
+    "what": "Magical streams and ribbons flowing through the air",
+    "render": "scrolling additive ribbon meshes",
+    "texture": "web-pack/fx/ribbon.png"
+   },
+   {
+    "id": "floating_stones",
+    "what": "Mountain-size floating stones",
+    "render": "few large meshes with image-card far LOD"
+   },
+   {
+    "id": "lanterns",
+    "what": "Floating lanterns",
+    "render": "instanced cards",
+    "phases": [
+     "dusk",
+     "night"
+    ],
+    "texture": "web-pack/fx/lantern.png"
+   },
+   {
+    "id": "stardust",
+    "what": "Air particles, fireflies, stardust",
+    "render": "GPU points",
+    "texture": "web-pack/fx/glow.png"
+   },
+   {
+    "id": "rainbow",
+    "what": "Rainbows",
+    "render": "one shader arc",
+    "phases": [
+     "noon",
+     "afternoon"
+    ]
+   }
+  ]
+ },
+ "assets": [
+  {
+   "id": "tree_pine",
+   "source": "web_pack",
+   "kind": "tree",
+   "near": "web-pack/trees/pine.glb",
+   "card": "web-pack/trees/pine-impostor.webp",
+   "biomes": [
+    "fjord_taiga"
+   ]
+  },
+  {
+   "id": "tree_ancient_oak",
+   "source": "web_pack",
+   "kind": "tree",
+   "near": "web-pack/trees/ancient_oak.glb",
+   "card": "web-pack/trees/ancient_oak-impostor.webp",
+   "biomes": [
+    "temperate_forest"
+   ]
+  },
+  {
+   "id": "tree_ember",
+   "source": "web_pack",
+   "kind": "tree",
+   "near": "web-pack/trees/ember.glb",
+   "card": "web-pack/trees/ember-impostor.webp",
+   "biomes": [
+    "blossom_groves"
+   ]
+  },
+  {
+   "id": "tree_bonsai",
+   "source": "web_pack",
+   "kind": "tree",
+   "near": "web-pack/trees/bonsai.glb",
+   "card": "web-pack/trees/bonsai-impostor.webp",
+   "biomes": [
+    "blossom_groves"
+   ]
+  },
+  {
+   "id": "tree_wisteria",
+   "source": "web_pack",
+   "kind": "tree",
+   "near": "web-pack/trees/wisteria.glb",
+   "card": "web-pack/trees/wisteria-impostor.webp",
+   "biomes": [
+    "blossom_groves"
+   ]
+  },
+  {
+   "id": "tree_fern",
+   "source": "web_pack",
+   "kind": "plant",
+   "near": "web-pack/trees/fern.glb",
+   "card": "web-pack/trees/fern-impostor.webp",
+   "biomes": [
+    "temperate_forest"
+   ]
+  },
+  {
+   "id": "tree_tree",
+   "source": "web_pack",
+   "kind": "tree",
+   "card": "web-pack/trees/tree-impostor.webp",
+   "biomes": [
+    "temperate_forest"
+   ],
+   "notes": "image card only"
+  },
+  {
+   "id": "tree_bush",
+   "source": "web_pack",
+   "kind": "plant",
+   "card": "web-pack/trees/bush-impostor.webp",
+   "biomes": [
+    "flower_meadow"
+   ],
+   "notes": "image card only"
+  },
+  {
+   "id": "m_1000054986_jpg",
+   "source": "meshy_github",
+   "kind": "building",
+   "path": "meshy/Meshy_AI_1000054986_jpg_1016091255",
+   "near": "art-references/world-fill/glb/1000054986_jpg.glb",
+   "sizeM": 5,
+   "places": [
+    "B31"
+   ],
+   "tris": 1118937
+  },
+  {
+   "id": "m_a_3d_image_a_a_tradit",
+   "source": "meshy_github",
+   "kind": "building",
+   "path": "meshy/Meshy_AI_A_3D_image_a_a_tradit_1016093610",
+   "near": "art-references/world-fill/glb/A_3D_image_a_a_tradit.glb",
+   "sizeM": 10,
+   "places": [
+    "B06"
+   ],
+   "tris": 4414561
+  },
+  {
+   "id": "m_a_big_menhir_with_anc",
+   "source": "meshy_github",
+   "kind": "building",
+   "path": "meshy/Meshy_AI_A_big_menhir_with_anc_1016193427",
+   "near": "art-references/world-fill/glb/A_big_menhir_with_anc.glb",
+   "sizeM": 9,
+   "places": [],
+   "tris": 6792,
+   "notes": "wild relic/rock scatter"
+  },
+  {
+   "id": "m_a_colossal_floating_c",
+   "source": "meshy_github",
+   "kind": "building",
+   "path": "meshy/Meshy_AI_A_colossal_floating_c_1016193637",
+   "near": "art-references/world-fill/glb/A_colossal_floating_c.glb",
+   "sizeM": 45,
+   "places": [
+    "B02"
+   ],
+   "tris": 1923304,
+   "notes": "giant floating lotus: finale theatre centrepiece"
+  },
+  {
+   "id": "m_a_garden_of_cryst",
+   "source": "meshy_github",
+   "kind": "rock",
+   "path": "meshy/Meshy_AI_A_garden_of_cryst_1016200539",
+   "near": "art-references/world-fill/glb/A_garden_of_cryst.glb",
+   "sizeM": 10,
+   "places": [
+    "B25"
+   ],
+   "tris": 183711
+  },
+  {
+   "id": "m_a_large_arch_made_fr",
+   "source": "meshy_github",
+   "kind": "building",
+   "path": "meshy/Meshy_AI_A_large_arch_made_fr_1016091236",
+   "near": "art-references/world-fill/glb/A_large_arch_made_fr.glb",
+   "sizeM": 12,
+   "places": [
+    "B15"
+   ],
+   "tris": 631105
+  },
+  {
+   "id": "m_a_majestic_tiered_str",
+   "source": "meshy_github",
+   "kind": "building",
+   "path": "meshy/Meshy_AI_A_majestic_tiered_str_1016100012",
+   "near": "art-references/world-fill/glb/A_majestic_tiered_str.glb",
+   "sizeM": 40,
+   "places": [
+    "B27"
+   ],
+   "tris": 727680
+  },
+  {
+   "id": "m_a_modular_medieval_ho",
+   "source": "meshy_github",
+   "kind": "building",
+   "path": "meshy/Meshy_AI_A_modular_medieval_ho_1016065704",
+   "near": "art-references/world-fill/glb/A_modular_medieval_ho.glb",
+   "sizeM": 18,
+   "places": [
+    "B12"
+   ],
+   "tris": 2364327
+  },
+  {
+   "id": "m_a_parisian_building",
+   "source": "meshy_github",
+   "kind": "building",
+   "path": "meshy/Meshy_AI_A_parisian_building_1016102608",
+   "near": "art-references/world-fill/glb/A_parisian_building.glb",
+   "sizeM": 25,
+   "places": [
+    "B09"
+   ],
+   "tris": 1156243
+  },
+  {
+   "id": "m_a_sandstone_stair_fli",
+   "source": "meshy_github",
+   "kind": "rock",
+   "path": "meshy/Meshy_AI_A_sandstone_stair_fli_1016100020_stylize_fbx",
+   "near": "art-references/world-fill/glb/A_sandstone_stair_fli.glb",
+   "sizeM": 16,
+   "places": [
+    "B10"
+   ],
+   "tris": 421989
+  },
+  {
+   "id": "m_a_sprawling_sandstone",
+   "source": "meshy_github",
+   "kind": "rock",
+   "path": "meshy/Meshy_AI_A_sprawling_sandstone_1016100031",
+   "near": "art-references/world-fill/glb/A_sprawling_sandstone.glb",
+   "sizeM": 50,
+   "places": [
+    "B10"
+   ],
+   "tris": 1545188
+  },
+  {
+   "id": "m_a_very_detailed_and_e",
+   "source": "meshy_github",
+   "kind": "prop",
+   "path": "meshy/Meshy_AI_A_very_detailed_and_e_1016065906",
+   "tris": 859384,
+   "notes": "palace interior: rose in a golden egg, gift piece"
+  },
+  {
+   "id": "m_a_very_large_ancient",
+   "source": "meshy_github",
+   "kind": "building",
+   "path": "meshy/Meshy_AI_A_very_large_ancient__1016100120",
+   "near": "art-references/world-fill/glb/A_very_large_ancient.glb",
+   "sizeM": 120,
+   "places": [
+    "B10"
+   ],
+   "tris": 3486871
+  },
+  {
+   "id": "m_abandoned_chapel_ha",
+   "source": "meshy_github",
+   "kind": "building",
+   "path": "meshy/Meshy_AI_Abandoned_Chapel_Ha_1016004419",
+   "tris": 1263476,
+   "fix": [
+    "cross to star"
+   ]
+  },
+  {
+   "id": "m_an_extravagant_fairy",
+   "source": "meshy_github",
+   "kind": "prop",
+   "path": "meshy/Meshy_AI_An_extravagant_fairy_1016070342",
+   "tris": 9994,
+   "notes": "palace interior: canopy bed, her chamber"
+  },
+  {
+   "id": "m_ancient_archway",
+   "source": "meshy_github",
+   "kind": "building",
+   "path": "meshy/Meshy_AI_Ancient_Archway_1016194541",
+   "near": "art-references/world-fill/glb/Ancient_Archway.glb",
+   "sizeM": 12,
+   "places": [
+    "B17"
+   ],
+   "tris": 780139,
+   "notes": "wild relic/rock scatter"
+  },
+  {
+   "id": "m_ancient_citadel",
+   "source": "meshy_github",
+   "kind": "building",
+   "path": "meshy/Meshy_AI_Ancient_Citadel_1016194142",
+   "tris": 6713785
+  },
+  {
+   "id": "m_ancient_gateway_ruins",
+   "source": "meshy_github",
+   "kind": "building",
+   "path": "meshy/Meshy_AI_Ancient_Gateway_Ruins_1016102421",
+   "near": "art-references/world-fill/glb/Ancient_Gateway_Ruins.glb",
+   "sizeM": 25,
+   "places": [
+    "B15"
+   ],
+   "tris": 1160704,
+   "notes": "wild relic/rock scatter"
+  },
+  {
+   "id": "m_ancient_obelisk",
+   "source": "meshy_github",
+   "kind": "building",
+   "path": "meshy/Meshy_AI_Ancient_Obelisk_1016193831",
+   "near": "art-references/world-fill/glb/Ancient_Obelisk.glb",
+   "sizeM": 14,
+   "places": [],
+   "tris": 113707,
+   "notes": "wild relic/rock scatter"
+  },
+  {
+   "id": "m_ancient_stone_amphith",
+   "source": "meshy_project",
+   "kind": "rock",
+   "near": "art-references/world-fill/glb/Ancient_Stone_Amphith.glb",
+   "sizeM": 190,
+   "places": [
+    "B08"
+   ]
+  },
+  {
+   "id": "m_ancient_stone_circle",
+   "source": "meshy_github",
+   "kind": "rock",
+   "path": "meshy/Meshy_AI_Ancient_Stone_Circle_1016193749",
+   "near": "art-references/world-fill/glb/Ancient_Stone_Circle.glb",
+   "sizeM": 45,
+   "places": [
+    "B24"
+   ],
+   "tris": 1357624,
+   "notes": "wild relic/rock scatter"
+  },
+  {
+   "id": "m_ancient_stone_relic",
+   "source": "meshy_github",
+   "kind": "rock",
+   "path": "meshy/Meshy_AI_Ancient_Stone_Relic_1016090341",
+   "near": "art-references/world-fill/glb/Ancient_Stone_Relic.glb",
+   "sizeM": 8,
+   "places": [
+    "B21"
+   ],
+   "tris": 573807,
+   "notes": "wild relic/rock scatter"
+  },
+  {
+   "id": "m_ancient_stone_structu",
+   "source": "meshy_github",
+   "kind": "rock",
+   "path": "meshy/Meshy_AI_Ancient_Stone_Structu_1016194632",
+   "near": "art-references/world-fill/glb/Ancient_Stone_Structu.glb",
+   "sizeM": 70,
+   "places": [
+    "B15"
+   ],
+   "tris": 2755035
+  },
+  {
+   "id": "m_ancient_stone_temples",
+   "source": "meshy_github",
+   "kind": "rock",
+   "path": "meshy/Meshy_AI_Ancient_Stone_Temples_1016194615",
+   "near": "art-references/world-fill/glb/Ancient_Stone_Temples.glb",
+   "sizeM": 90,
+   "places": [
+    "B15"
+   ],
+   "tris": 1224219,
+   "notes": "wild relic/rock scatter"
+  },
+  {
+   "id": "m_ancient_mystical_worl",
+   "source": "meshy_github",
+   "kind": "building",
+   "path": "meshy/Meshy_AI_Ancient_mystical_worl_1016090234",
+   "tris": 122236
+  },
+  {
+   "id": "m_aurora_whisperwood",
+   "source": "meshy_github",
+   "kind": "building",
+   "path": "meshy/Meshy_AI_Aurora_Whisperwood_1016162823",
+   "tris": 4517862
+  },
+  {
+   "id": "m_baroque_flourish",
+   "source": "meshy_github",
+   "kind": "prop",
+   "path": "meshy/Meshy_AI_Baroque_Flourish_1016063642",
+   "tris": 243317,
+   "notes": "palace interior: wall ornament"
+  },
+  {
+   "id": "m_basalt_arch",
+   "source": "meshy_project",
+   "kind": "building",
+   "near": "art-references/world-fill/glb/Basalt_Arch.glb",
+   "sizeM": 200,
+   "places": [
+    "B11"
+   ]
+  },
+  {
+   "id": "m_bases_pedestals_minis",
+   "source": "meshy_github",
+   "kind": "building",
+   "path": "meshy/Meshy_AI_Bases_Pedestals_Minis_1016084637",
+   "near": "art-references/world-fill/glb/Bases_Pedestals_Minis.glb",
+   "sizeM": 12,
+   "places": [
+    "B32"
+   ],
+   "tris": 1023863
+  },
+  {
+   "id": "m_blossom_pagoda",
+   "source": "meshy_github",
+   "kind": "building",
+   "path": "meshy/Meshy_AI_Blossom_Pagoda_1016194432",
+   "tris": 1322425
+  },
+  {
+   "id": "m_bookshelf_haven",
+   "source": "meshy_github",
+   "kind": "prop",
+   "path": "meshy/Meshy_AI_Bookshelf_Haven_1016134309",
+   "tris": 1090603,
+   "notes": "palace interior: library"
+  },
+  {
+   "id": "m_bridge_of_vines",
+   "source": "meshy_github",
+   "kind": "building",
+   "path": "meshy/Meshy_AI_Bridge_of_Vines_1016134235",
+   "tris": 736539
+  },
+  {
+   "id": "m_casa_encantadora",
+   "source": "meshy_github",
+   "kind": "building",
+   "path": "meshy/Meshy_AI_Casa_Encantadora_1016064528",
+   "tris": 3555597,
+   "fix": [
+    "cross to star"
+   ]
+  },
+  {
+   "id": "m_cave_entrance",
+   "source": "meshy_github",
+   "kind": "rock",
+   "path": "meshy/Meshy_AI_Cave_Entrance_1016100544",
+   "near": "art-references/world-fill/glb/Cave_Entrance.glb",
+   "sizeM": 60,
+   "places": [
+    "B29"
+   ],
+   "tris": 2486853
+  },
+  {
+   "id": "m_cave_formations_colle",
+   "source": "meshy_github",
+   "kind": "rock",
+   "path": "meshy/Meshy_AI_Cave_Formations_Colle_1016195557",
+   "tris": 892844
+  },
+  {
+   "id": "m_cave_structures_1",
+   "source": "meshy_github",
+   "kind": "rock",
+   "path": "meshy/Meshy_AI_Cave_Structures_1_1016100702",
+   "near": "art-references/world-fill/glb/Cave_Structures_1.glb",
+   "sizeM": 30,
+   "places": [
+    "B29"
+   ],
+   "tris": 1115728
+  },
+  {
+   "id": "m_celestial_armillary",
+   "source": "meshy_project",
+   "kind": "building",
+   "near": "art-references/world-fill/glb/Celestial_Armillary.glb",
+   "sizeM": 54,
+   "places": [
+    "B21"
+   ]
+  },
+  {
+   "id": "m_celestial_gothic_wall",
+   "source": "meshy_github",
+   "kind": "prop",
+   "path": "meshy/Meshy_AI_Celestial_Gothic_Wall_1016180531",
+   "tris": 2132688,
+   "notes": "palace interior: palace wall panel"
+  },
+  {
+   "id": "m_cementery_pillar_vari",
+   "source": "meshy_github",
+   "kind": "building",
+   "path": "meshy/Meshy_AI_Cementery_Pillar_Vari_1016111156",
+   "near": "art-references/world-fill/glb/Cementery_Pillar_Vari.glb",
+   "sizeM": 8,
+   "places": [
+    "B17"
+   ],
+   "tris": 2982,
+   "notes": "wild relic/rock scatter"
+  },
+  {
+   "id": "m_church",
+   "source": "meshy_github",
+   "kind": "building",
+   "path": "meshy/Meshy_AI_Church_1016102335",
+   "tris": 1391824,
+   "fix": [
+    "cross to star"
+   ]
+  },
+  {
+   "id": "m_cliff_formations",
+   "source": "meshy_github",
+   "kind": "rock",
+   "path": "meshy/Meshy_AI_Cliff_Formations_1016200600",
+   "near": "art-references/world-fill/glb/Cliff_Formations.glb",
+   "sizeM": 60,
+   "places": [
+    "B11"
+   ],
+   "tris": 1492664
+  },
+  {
+   "id": "m_colorful_courtyard_vi",
+   "source": "meshy_github",
+   "kind": "building",
+   "path": "meshy/Meshy_AI_Colorful_Courtyard_Vi_1016090158",
+   "near": "art-references/world-fill/glb/Colorful_Courtyard_Vi.glb",
+   "sizeM": 40,
+   "places": [
+    "B09"
+   ],
+   "tris": 2219433
+  },
+  {
+   "id": "m_copper_cloud_bonsai",
+   "source": "meshy_project",
+   "kind": "building",
+   "near": "art-references/world-fill/glb/Copper_Cloud_Bonsai.glb",
+   "sizeM": 22,
+   "places": [
+    "B04"
+   ]
+  },
+  {
+   "id": "m_create_a_whimsical_3d",
+   "source": "meshy_github",
+   "kind": "prop",
+   "path": "meshy/Meshy_AI_Create_a_whimsical_3D_1016070851",
+   "tris": 716618,
+   "notes": "palace interior: castle bed"
+  },
+  {
+   "id": "m_crystal_blossom_mirro",
+   "source": "meshy_github",
+   "kind": "rock",
+   "path": "meshy/Meshy_AI_Crystal_Blossom_Mirro_1016065020",
+   "tris": 1123027,
+   "notes": "palace interior: wardrobe mirror"
+  },
+  {
+   "id": "m_crystal_peaks_pbr",
+   "source": "meshy_github",
+   "kind": "rock",
+   "path": "meshy/Meshy_AI_Crystal_Peaks_PBR__1016102059",
+   "near": "art-references/world-fill/glb/Crystal_Peaks_PBR.glb",
+   "sizeM": 30,
+   "places": [
+    "B25",
+    "B29"
+   ],
+   "tris": 1350023
+  },
+  {
+   "id": "m_dark_oriental_gateway",
+   "source": "meshy_github",
+   "kind": "building",
+   "path": "meshy/Meshy_AI_Dark_oriental_gateway_1016102548",
+   "near": "art-references/world-fill/glb/Dark_oriental_gateway.glb",
+   "sizeM": 32,
+   "places": [
+    "B06"
+   ],
+   "tris": 653011
+  },
+  {
+   "id": "m_desert_adobe_courtyar",
+   "source": "meshy_github",
+   "kind": "building",
+   "path": "meshy/Meshy_AI_Desert_Adobe_Courtyar_1016090133",
+   "near": "art-references/world-fill/glb/Desert_Adobe_Courtyar.glb",
+   "sizeM": 20,
+   "places": [
+    "B27"
+   ],
+   "tris": 1017400
+  },
+  {
+   "id": "m_desert_colossus",
+   "source": "meshy_github",
+   "kind": "creature",
+   "path": "meshy/Meshy_AI_Desert_Colossus_1016194205",
+   "tris": 754376,
+   "notes": "not used: sand worm with a toothed mouth; too scary as is"
+  },
+  {
+   "id": "m_desert_dwelling",
+   "source": "meshy_github",
+   "kind": "building",
+   "path": "meshy/Meshy_AI_Desert_Dwelling_1016084916",
+   "near": "art-references/world-fill/glb/Desert_Dwelling.glb",
+   "sizeM": 10,
+   "places": [
+    "B27"
+   ],
+   "tris": 1696536
+  },
+  {
+   "id": "m_desert_fortress",
+   "source": "meshy_github",
+   "kind": "building",
+   "path": "meshy/Meshy_AI_Desert_Fortress_1016100109",
+   "near": "art-references/world-fill/glb/Desert_Fortress.glb",
+   "sizeM": 90,
+   "places": [
+    "B27"
+   ],
+   "tris": 1634428
+  },
+  {
+   "id": "m_desert_monolith",
+   "source": "meshy_github",
+   "kind": "rock",
+   "path": "meshy/Meshy_AI_Desert_Monolith_1016095716",
+   "near": "art-references/world-fill/glb/Desert_Monolith.glb",
+   "sizeM": 40,
+   "places": [],
+   "tris": 1109983,
+   "notes": "wild relic/rock scatter"
+  },
+  {
+   "id": "m_desert_mushroom_rock",
+   "source": "meshy_github",
+   "kind": "tree",
+   "path": "meshy/Meshy_AI_Desert_Mushroom_Rock_1015130328",
+   "near": "art-references/world-fill/glb/Desert_Mushroom_Rock.glb",
+   "sizeM": 35,
+   "places": [
+    "B10"
+   ],
+   "tris": 10302
+  },
+  {
+   "id": "m_desert_oasis_palace",
+   "source": "meshy_github",
+   "kind": "building",
+   "path": "meshy/Meshy_AI_Desert_Oasis_Palace_1016070702",
+   "near": "art-references/world-fill/glb/Desert_Oasis_Palace.glb",
+   "sizeM": 60,
+   "places": [
+    "B27"
+   ],
+   "tris": 2431471
+  },
+  {
+   "id": "m_desert_rock_formation",
+   "source": "meshy_github",
+   "kind": "rock",
+   "path": "meshy/Meshy_AI_Desert_Rock_Formation_1016084807",
+   "near": "art-references/world-fill/glb/Desert_Rock_Formation.glb",
+   "sizeM": 30,
+   "places": [],
+   "tris": 1764127,
+   "notes": "wild relic/rock scatter"
+  },
+  {
+   "id": "m_desert_ruins",
+   "source": "meshy_github",
+   "kind": "building",
+   "path": "meshy/Meshy_AI_Desert_Ruins_1016084951",
+   "near": "art-references/world-fill/glb/Desert_Ruins.glb",
+   "sizeM": 20,
+   "places": [
+    "B27"
+   ],
+   "tris": 888712,
+   "notes": "wild relic/rock scatter"
+  },
+  {
+   "id": "m_desert_sandstone_arch",
+   "source": "meshy_github",
+   "kind": "rock",
+   "path": "meshy/Meshy_AI_Desert_Sandstone_Arch_1016095754",
+   "near": "art-references/world-fill/glb/Desert_Sandstone_Arch.glb",
+   "sizeM": 45,
+   "places": [
+    "B10"
+   ],
+   "tris": 676932
+  },
+  {
+   "id": "m_design_a_regal_prince",
+   "source": "meshy_github",
+   "kind": "prop",
+   "path": "meshy/Meshy_AI_Design_a_regal_prince_1016065928",
+   "tris": 810588,
+   "notes": "palace interior: vanity, wardrobe room"
+  },
+  {
+   "id": "m_domed_palace_model",
+   "source": "meshy_github",
+   "kind": "building",
+   "path": "meshy/Meshy_AI_Domed_Palace_Model_1016070653_generate.fbx",
+   "near": "art-references/world-fill/glb/Domed_Palace_Model.glb",
+   "sizeM": 130,
+   "places": [
+    "B02"
+   ],
+   "tris": 1992392
+  },
+  {
+   "id": "m_elemental_cube_creatu",
+   "source": "meshy_github",
+   "kind": "creature",
+   "path": "meshy/Meshy_AI_Elemental_Cube_Creatu_1016134147",
+   "tris": 1927290,
+   "fix": [
+    "remove eyes"
+   ]
+  },
+  {
+   "id": "m_elephant_rock_formati",
+   "source": "meshy_github",
+   "kind": "rock",
+   "path": "meshy/Meshy_AI_Elephant_Rock_Formati_1016100426",
+   "near": "art-references/world-fill/glb/Elephant_Rock_Formati.glb",
+   "sizeM": 35,
+   "places": [],
+   "tris": 1318033,
+   "notes": "wild relic/rock scatter"
+  },
+  {
+   "id": "m_elven_tower_base_circ",
+   "source": "meshy_github",
+   "kind": "building",
+   "path": "meshy/Meshy_AI_Elven_tower_base_Circ_1016095944",
+   "near": "art-references/world-fill/glb/Elven_tower_base_Circ.glb",
+   "sizeM": 30,
+   "places": [
+    "B05",
+    "B14",
+    "B28"
+   ],
+   "tris": 1339052
+  },
+  {
+   "id": "m_ember_tiled_turret_ho",
+   "source": "meshy_github",
+   "kind": "building",
+   "path": "meshy/Meshy_AI_Ember_Tiled_Turret_Ho_1016085925",
+   "near": "art-references/world-fill/glb/Ember_Tiled_Turret_Ho.glb",
+   "sizeM": 16,
+   "places": [
+    "B12"
+   ],
+   "tris": 1550951
+  },
+  {
+   "id": "m_emberkeep_turret",
+   "source": "meshy_github",
+   "kind": "building",
+   "path": "meshy/Meshy_AI_Emberkeep_Turret_1016064647",
+   "near": "art-references/world-fill/glb/Emberkeep_Turret.glb",
+   "sizeM": 45,
+   "places": [
+    "B05"
+   ],
+   "tris": 1757089
+  },
+  {
+   "id": "m_enchanted_forest_mosa",
+   "source": "meshy_github",
+   "kind": "terrain",
+   "path": "meshy/Meshy_AI_Enchanted_Forest_Mosa_1016201544",
+   "tris": 804122
+  },
+  {
+   "id": "m_enchanted_forest_thro",
+   "source": "meshy_github",
+   "kind": "building",
+   "path": "meshy/Meshy_AI_Enchanted_Forest_Thro_1016065037",
+   "near": "art-references/world-fill/glb/Enchanted_Forest_Thro.glb",
+   "sizeM": 6,
+   "places": [
+    "B18"
+   ],
+   "tris": 95149
+  },
+  {
+   "id": "m_enchanted_lantern_tre",
+   "source": "meshy_github",
+   "kind": "building",
+   "path": "meshy/Meshy_AI_Enchanted_Lantern_Tre_1016065228",
+   "near": "art-references/world-fill/glb/Enchanted_Lantern_Tre.glb",
+   "sizeM": 6,
+   "places": [
+    "B17"
+   ],
+   "tris": 1153326
+  },
+  {
+   "id": "m_enchanted_spiral_towe",
+   "source": "meshy_github",
+   "kind": "building",
+   "path": "meshy/Meshy_AI_Enchanted_Spiral_Towe_1016102721",
+   "near": "art-references/world-fill/glb/Enchanted_Spiral_Towe.glb",
+   "sizeM": 40,
+   "places": [
+    "B14"
+   ],
+   "tris": 396779
+  },
+  {
+   "id": "m_enchanted_thatch_cott",
+   "source": "meshy_github",
+   "kind": "building",
+   "path": "meshy/Meshy_AI_Enchanted_Thatch_Cott_1016064146",
+   "near": "art-references/world-fill/glb/Enchanted_Thatch_Cott.glb",
+   "sizeM": 12,
+   "places": [
+    "B12",
+    "B16"
+   ],
+   "tris": 3649171
+  },
+  {
+   "id": "m_england_mystic_ston",
+   "source": "meshy_github",
+   "kind": "building",
+   "path": "meshy/Meshy_AI__England_Mystic_Ston_1016193730",
+   "near": "art-references/world-fill/glb/England_Mystic_Ston.glb",
+   "sizeM": 60,
+   "places": [
+    "B17"
+   ],
+   "tris": 418900
+  },
+  {
+   "id": "m_erosion_pathway",
+   "source": "meshy_github",
+   "kind": "terrain",
+   "path": "meshy/Meshy_AI_Erosion_Pathway_1016084336",
+   "tris": 1730758
+  },
+  {
+   "id": "m_ethereal_spiral",
+   "source": "meshy_github",
+   "kind": "building",
+   "path": "meshy/Meshy_AI_Ethereal_Spiral_1016091226",
+   "tris": 152917
+  },
+  {
+   "id": "m_fallen_pillar",
+   "source": "meshy_github",
+   "kind": "building",
+   "path": "meshy/Meshy_AI_Fallen_Pillar_1016193912",
+   "near": "art-references/world-fill/glb/Fallen_Pillar.glb",
+   "sizeM": 10,
+   "places": [],
+   "tris": 4254,
+   "notes": "wild relic/rock scatter"
+  },
+  {
+   "id": "m_fantasy_terrain_bases",
+   "source": "meshy_github",
+   "kind": "tree",
+   "path": "meshy/Meshy_AI_Fantasy_Terrain_Bases_1016071141",
+   "tris": 1519494
+  },
+  {
+   "id": "m_floating_stone_island",
+   "source": "meshy_github",
+   "kind": "rock",
+   "path": "meshy/Meshy_AI_Floating_Stone_Island_1016084851",
+   "near": "art-references/world-fill/glb/Floating_Stone_Island.glb",
+   "sizeM": 70,
+   "places": [
+    "B30"
+   ],
+   "tris": 122416
+  },
+  {
+   "id": "m_floral_wreath_of_spri",
+   "source": "meshy_github",
+   "kind": "building",
+   "path": "meshy/Meshy_AI_Floral_Wreath_of_Spri_1016134903",
+   "near": "art-references/world-fill/glb/Floral_Wreath_of_Spri.glb",
+   "sizeM": 7,
+   "places": [
+    "B20",
+    "B31"
+   ],
+   "tris": 1551432
+  },
+  {
+   "id": "m_for_diana_this_beauti",
+   "source": "meshy_github",
+   "kind": "building",
+   "path": "meshy/Meshy_AI_For_Diana_This_beauti_1016065910",
+   "near": "art-references/world-fill/glb/For_Diana_This_beauti.glb",
+   "sizeM": 4,
+   "places": [
+    "B31"
+   ],
+   "tris": 2599142,
+   "notes": "rose swing: a gift spot"
+  },
+  {
+   "id": "m_genkis_khan_army_rook",
+   "source": "meshy_github",
+   "kind": "building",
+   "path": "meshy/Meshy_AI_Genkis_Khan_army_Rook_1016193642",
+   "tris": 1944758,
+   "notes": "not used: chess-piece tower, off style"
+  },
+  {
+   "id": "m_ghotisches_schloss",
+   "source": "meshy_github",
+   "kind": "building",
+   "path": "meshy/Meshy_AI_Ghotisches_Schloss_1016194532",
+   "near": "art-references/world-fill/glb/Ghotisches_Schloss.glb",
+   "sizeM": 95,
+   "places": [
+    "B05"
+   ],
+   "tris": 1732545
+  },
+  {
+   "id": "m_gilded_baroque_flouri",
+   "source": "meshy_github",
+   "kind": "prop",
+   "path": "meshy/Meshy_AI_Gilded_Baroque_Flouri_1016063604",
+   "tris": 208304,
+   "notes": "palace interior: wall ornament"
+  },
+  {
+   "id": "m_gilded_gothic_wall_ca",
+   "source": "meshy_github",
+   "kind": "prop",
+   "path": "meshy/Meshy_AI_Gilded_Gothic_Wall_Ca_1016192558",
+   "tris": 1957878,
+   "notes": "palace interior: palace wall panel"
+  },
+  {
+   "id": "m_golden_fleur_de_lis",
+   "source": "meshy_github",
+   "kind": "prop",
+   "path": "meshy/Meshy_AI_Golden_Fleur_de_lis_1016063557",
+   "tris": 126131,
+   "notes": "palace interior: wall ornament"
+  },
+  {
+   "id": "m_golden_rose_teacup",
+   "source": "meshy_github",
+   "kind": "prop",
+   "path": "meshy/Meshy_AI_Golden_Rose_Teacup_1016064856",
+   "tris": 808544,
+   "notes": "palace interior: tea table"
+  },
+  {
+   "id": "m_gothic_cathedral",
+   "source": "meshy_project",
+   "kind": "building",
+   "near": "art-references/world-fill/glb/Gothic_Cathedral.glb",
+   "sizeM": 160,
+   "places": [
+    "B03"
+   ],
+   "fix": [
+    "cross to star"
+   ]
+  },
+  {
+   "id": "m_herbal_harvest",
+   "source": "meshy_github",
+   "kind": "building",
+   "path": "meshy/Meshy_AI_Herbal_Harvest_1016091424",
+   "near": "art-references/world-fill/glb/Herbal_Harvest.glb",
+   "sizeM": 3,
+   "places": [
+    "B12"
+   ],
+   "tris": 3229443
+  },
+  {
+   "id": "m_high_detail_fantasy",
+   "source": "meshy_github",
+   "kind": "tree",
+   "path": "meshy/Meshy_AI_High_detail_fantasy__1016090651",
+   "near": "art-references/world-fill/glb/High_detail_fantasy.glb",
+   "sizeM": 22,
+   "places": [
+    "B17"
+   ],
+   "tris": 1668676
+  },
+  {
+   "id": "m_high_detail_wall_dec",
+   "source": "meshy_github",
+   "kind": "prop",
+   "path": "meshy/Meshy_AI_High_detail_wall_dec_1016065830",
+   "tris": 608365,
+   "notes": "palace interior: rose wall ornament"
+  },
+  {
+   "id": "m_infernal_peak",
+   "source": "meshy_github",
+   "kind": "rock",
+   "path": "meshy/Meshy_AI_Infernal_Peak_1015165746",
+   "near": "art-references/world-fill/glb/Infernal_Peak.glb",
+   "sizeM": 150,
+   "places": [
+    "B26"
+   ],
+   "tris": 660974
+  },
+  {
+   "id": "m_isle_of_the_stone_spi",
+   "source": "meshy_project",
+   "kind": "rock",
+   "near": "art-references/world-fill/glb/Isle_of_the_Stone_Spi.glb",
+   "sizeM": 220,
+   "places": [
+    "B14"
+   ]
+  },
+  {
+   "id": "m_kalliope_house_comple",
+   "source": "meshy_github",
+   "kind": "building",
+   "path": "meshy/Meshy_AI_Kalliope_House_Comple_1016090421_image-to-3d-texture_fbx",
+   "near": "art-references/world-fill/glb/Kalliope_House_Comple.glb",
+   "sizeM": 12,
+   "places": [
+    "B09",
+    "B19"
+   ],
+   "tris": 682124
+  },
+  {
+   "id": "m_karlskirche_vienna",
+   "source": "meshy_github",
+   "kind": "building",
+   "path": "meshy/Meshy_AI_Karlskirche_Vienna_1016194447",
+   "tris": 2101990,
+   "notes": "not used: real church, crosses",
+   "fix": [
+    "cross to star"
+   ]
+  },
+  {
+   "id": "m_lantern_tree_palace",
+   "source": "meshy_github",
+   "kind": "tree",
+   "path": "meshy/Meshy_AI_Lantern_Tree_Palace_1016070708",
+   "near": "art-references/world-fill/glb/Lantern_Tree_Palace.glb",
+   "sizeM": 120,
+   "places": [
+    "B18"
+   ],
+   "tris": 7719272
+  },
+  {
+   "id": "m_leafspire_cathedral",
+   "source": "meshy_project",
+   "kind": "building",
+   "near": "art-references/world-fill/glb/Leafspire_Cathedral.glb",
+   "sizeM": 100,
+   "places": [
+    "B25"
+   ]
+  },
+  {
+   "id": "m_luminous_paper_flower",
+   "source": "meshy_github",
+   "kind": "building",
+   "path": "meshy/Meshy_AI_Luminous_Paper_Flower_1016064832",
+   "near": "art-references/world-fill/glb/Luminous_Paper_Flower.glb",
+   "sizeM": 4,
+   "places": [
+    "B17",
+    "B32"
+   ],
+   "tris": 3177521
+  },
+  {
+   "id": "m_majestic_castle",
+   "source": "meshy_github",
+   "kind": "building",
+   "path": "meshy/Meshy_AI_Majestic_Castle_1016102747",
+   "tris": 6530634
+  },
+  {
+   "id": "m_majestic_pagoda_palac",
+   "source": "meshy_project",
+   "kind": "building",
+   "near": "art-references/world-fill/glb/Majestic_Pagoda_Palac.glb",
+   "sizeM": 90,
+   "places": [
+    "B06"
+   ]
+  },
+  {
+   "id": "m_majestic_rock_formati",
+   "source": "meshy_github",
+   "kind": "rock",
+   "path": "meshy/Meshy_AI_Majestic_Rock_Formati_1016100751",
+   "near": "art-references/world-fill/glb/Majestic_Rock_Formati.glb",
+   "sizeM": 45,
+   "places": [],
+   "tris": 52980,
+   "notes": "wild relic/rock scatter"
+  },
+  {
+   "id": "m_make_a_terrain",
+   "source": "meshy_github",
+   "kind": "terrain",
+   "path": "meshy/Meshy_AI_Make_a_terrain_1016071105",
+   "tris": 20148
+  },
+  {
+   "id": "m_marble_pavilion",
+   "source": "meshy_github",
+   "kind": "building",
+   "path": "meshy/Meshy_AI_Marble_Pavilion_1016102532",
+   "near": "art-references/world-fill/glb/Marble_Pavilion.glb",
+   "sizeM": 26,
+   "places": [
+    "B01",
+    "B07",
+    "B20",
+    "B23",
+    "B32"
+   ],
+   "tris": 4459455,
+   "notes": "floating theatre pavilions at the finale"
+  },
+  {
+   "id": "m_meadow_rocks",
+   "source": "meshy_project",
+   "kind": "rock",
+   "near": "art-references/world-fill/glb/Meadow_Rocks.glb",
+   "sizeM": 6,
+   "places": [],
+   "notes": "wild relic/rock scatter"
+  },
+  {
+   "id": "m_medieval_cottage",
+   "source": "meshy_project",
+   "kind": "building",
+   "near": "art-references/world-fill/glb/Medieval_Cottage.glb",
+   "sizeM": 12,
+   "places": [
+    "B12"
+   ]
+  },
+  {
+   "id": "m_mediterranean_villa",
+   "source": "meshy_project",
+   "kind": "building",
+   "near": "art-references/world-fill/glb/Mediterranean_Villa.glb",
+   "sizeM": 18,
+   "places": [
+    "B09"
+   ]
+  },
+  {
+   "id": "m_mesa_cliff_wall",
+   "source": "meshy_github",
+   "kind": "rock",
+   "path": "meshy/Meshy_AI_Mesa_Cliff_Wall_1015130343_image-to-3d-texture_fbx",
+   "tris": 405342
+  },
+  {
+   "id": "m_mesa_view",
+   "source": "meshy_github",
+   "kind": "rock",
+   "path": "meshy/Meshy_AI_Mesa_View_1016084352",
+   "tris": 1590226
+  },
+  {
+   "id": "m_metaphor_the_tree_of",
+   "source": "meshy_github",
+   "kind": "tree",
+   "path": "meshy/Meshy_AI_Metaphor_The_Tree_of_1016085934",
+   "near": "art-references/world-fill/glb/Metaphor_The_Tree_of.glb",
+   "sizeM": 35,
+   "places": [
+    "B18"
+   ],
+   "tris": 5120755
+  },
+  {
+   "id": "m_miniature_japanese_sh",
+   "source": "meshy_github",
+   "kind": "building",
+   "path": "meshy/Meshy_AI_Miniature_Japanese_Sh_1016093555",
+   "tris": 1757524
+  },
+  {
+   "id": "m_mossy_monolith",
+   "source": "meshy_github",
+   "kind": "rock",
+   "path": "meshy/Meshy_AI_Mossy_Monolith_1016124758",
+   "near": "art-references/world-fill/glb/Mossy_Monolith.glb",
+   "sizeM": 50,
+   "places": [
+    "B30"
+   ],
+   "tris": 8784,
+   "notes": "wild relic/rock scatter"
+  },
+  {
+   "id": "m_mossy_timber_ruins",
+   "source": "meshy_github",
+   "kind": "building",
+   "path": "meshy/Meshy_AI_Mossy_Timber_Ruins_1016084543",
+   "near": "art-references/world-fill/glb/Mossy_Timber_Ruins.glb",
+   "sizeM": 15,
+   "places": [],
+   "tris": 2175967,
+   "notes": "wild relic/rock scatter"
+  },
+  {
+   "id": "m_mountain",
+   "source": "meshy_github",
+   "kind": "terrain",
+   "path": "meshy/Meshy_AI_Mountain_1016084256",
+   "tris": 43776
+  },
+  {
+   "id": "m_mountain_range",
+   "source": "meshy_github",
+   "kind": "terrain",
+   "path": "meshy/Meshy_AI_Mountain_Range_1016084807",
+   "tris": 942604
+  },
+  {
+   "id": "m_nature_relics_pack",
+   "source": "meshy_github",
+   "kind": "building",
+   "path": "meshy/Meshy_AI_Nature_Relics_Pack_1016132550",
+   "tris": 779056
+  },
+  {
+   "id": "m_object_charmi",
+   "source": "meshy_github",
+   "kind": "prop",
+   "path": "meshy/Meshy_AI__Object_Charmi_1016065951",
+   "tris": 9993,
+   "notes": "palace interior: stained-glass arch"
+  },
+  {
+   "id": "m_object_ornate",
+   "source": "meshy_github",
+   "kind": "prop",
+   "path": "meshy/Meshy_AI__Object_Ornate_1016070030",
+   "tris": 9992,
+   "notes": "palace interior: pink palace door"
+  },
+  {
+   "id": "m_object_decorative_wa",
+   "source": "meshy_github",
+   "kind": "prop",
+   "path": "meshy/Meshy_AI_Object_decorative_wa_1016070038",
+   "tris": 9992,
+   "notes": "palace interior: tall window"
+  },
+  {
+   "id": "m_old_town_clock_tower",
+   "source": "meshy_github",
+   "kind": "building",
+   "path": "meshy/Meshy_AI_Old_Town_Clock_Tower_1016102324",
+   "near": "art-references/world-fill/glb/Old_Town_Clock_Tower.glb",
+   "sizeM": 35,
+   "places": [
+    "B12"
+   ],
+   "tris": 277492
+  },
+  {
+   "id": "m_olive_grove_cottage",
+   "source": "meshy_github",
+   "kind": "building",
+   "path": "meshy/Meshy_AI_Olive_Grove_Cottage_1016090223",
+   "near": "art-references/world-fill/glb/Olive_Grove_Cottage.glb",
+   "sizeM": 22,
+   "places": [
+    "B13"
+   ],
+   "tris": 2783086
+  },
+  {
+   "id": "m_ornate_sandstone_gate",
+   "source": "meshy_github",
+   "kind": "rock",
+   "path": "meshy/Meshy_AI_Ornate_Sandstone_Gate_1016100116",
+   "near": "art-references/world-fill/glb/Ornate_Sandstone_Gate.glb",
+   "sizeM": 25,
+   "places": [
+    "B10"
+   ],
+   "tris": 958627
+  },
+  {
+   "id": "m_ornate_watchtower",
+   "source": "meshy_github",
+   "kind": "building",
+   "path": "meshy/Meshy_AI_Ornate_Watchtower_1016194034",
+   "near": "art-references/world-fill/glb/Ornate_Watchtower.glb",
+   "sizeM": 30,
+   "places": [
+    "B06"
+   ],
+   "tris": 1378533
+  },
+  {
+   "id": "m_pantheon",
+   "source": "meshy_project",
+   "kind": "building",
+   "near": "art-references/world-fill/glb/Pantheon.glb",
+   "sizeM": 60,
+   "places": [
+    "B07"
+   ]
+  },
+  {
+   "id": "m_path_to_the_heavens_p",
+   "source": "meshy_github",
+   "kind": "prop",
+   "path": "meshy/Meshy_AI_Path_to_the_Heavens_P_1016065217",
+   "tris": 108504,
+   "notes": "palace interior: folding screen"
+  },
+  {
+   "id": "m_pine_trees_on_a_rocky",
+   "source": "meshy_github",
+   "kind": "tree",
+   "path": "meshy/Meshy_AI_Pine_Trees_on_a_Rocky_1016133300",
+   "near": "art-references/world-fill/glb/Pine_Trees_on_a_Rocky.glb",
+   "sizeM": 28,
+   "places": [
+    "B16"
+   ],
+   "tris": 9620761
+  },
+  {
+   "id": "m_please_provide_an_ima",
+   "source": "meshy_github",
+   "kind": "building",
+   "path": "meshy/Meshy_AI_Please_provide_an_ima_1016194507",
+   "near": "art-references/world-fill/glb/Please_provide_an_ima.glb",
+   "sizeM": 130,
+   "places": [
+    "B04"
+   ],
+   "tris": 756850
+  },
+  {
+   "id": "m_prismatic_peaks",
+   "source": "meshy_github",
+   "kind": "rock",
+   "path": "meshy/Meshy_AI_Prismatic_Peaks_1016014201",
+   "near": "art-references/world-fill/glb/Prismatic_Peaks.glb",
+   "sizeM": 30,
+   "places": [
+    "B28"
+   ],
+   "tris": 845370
+  },
+  {
+   "id": "m_realistic_zocalo_mexi",
+   "source": "meshy_github",
+   "kind": "building",
+   "path": "meshy/Meshy_AI_Realistic_Zocalo_Mexi_1016194834",
+   "tris": 1215548,
+   "notes": "not used: real cathedral, crosses",
+   "fix": [
+    "cross to star"
+   ]
+  },
+  {
+   "id": "m_ring_village_diorama",
+   "source": "meshy_github",
+   "kind": "building",
+   "path": "meshy/Meshy_AI_Ring_Village_Diorama_1016084950",
+   "near": "art-references/world-fill/glb/Ring_Village_Diorama.glb",
+   "sizeM": 60,
+   "places": [
+    "B14"
+   ],
+   "tris": 621332
+  },
+  {
+   "id": "m_riverbank_terrain_mod",
+   "source": "meshy_github",
+   "kind": "terrain",
+   "path": "meshy/Meshy_AI_Riverbank_Terrain_Mod_1016071157",
+   "tris": 6497531
+  },
+  {
+   "id": "m_rock",
+   "source": "meshy_github",
+   "kind": "rock",
+   "path": "meshy/Meshy_AI_Rock_1016084637",
+   "tris": 1422514
+  },
+  {
+   "id": "m_rock_formation_collec",
+   "source": "meshy_project",
+   "kind": "rock",
+   "near": "art-references/world-fill/glb/Rock_Formation_Collec.glb",
+   "sizeM": 20,
+   "places": [],
+   "notes": "wild relic/rock scatter"
+  },
+  {
+   "id": "m_rocky_archway",
+   "source": "meshy_github",
+   "kind": "rock",
+   "path": "meshy/Meshy_AI_Rocky_Archway_1016193852",
+   "near": "art-references/world-fill/glb/Rocky_Archway.glb",
+   "sizeM": 40,
+   "places": [
+    "B11"
+   ],
+   "tris": 1358189
+  },
+  {
+   "id": "m_rocky_cliffside",
+   "source": "meshy_github",
+   "kind": "rock",
+   "path": "meshy/Meshy_AI_Rocky_Cliffside_1016084816",
+   "tris": 1537429
+  },
+  {
+   "id": "m_rocky_terrain",
+   "source": "meshy_github",
+   "kind": "rock",
+   "path": "meshy/Meshy_AI_Rocky_Terrain_1016071100",
+   "tris": 3505531
+  },
+  {
+   "id": "m_romania_a_semi_real",
+   "source": "meshy_github",
+   "kind": "building",
+   "path": "meshy/Meshy_AI__Romania_A_semi_real_1016194752",
+   "tris": 97815
+  },
+  {
+   "id": "m_royal_carriage",
+   "source": "meshy_github",
+   "kind": "vehicle",
+   "path": "meshy/Meshy_AI_Royal_Carriage_1016070936",
+   "near": "art-references/world-fill/glb/Royal_Carriage.glb",
+   "sizeM": 5,
+   "places": [
+    "B32"
+   ],
+   "tris": 1340854,
+   "notes": "her arrival carriage (rides.her_carriage)"
+  },
+  {
+   "id": "m_royal_portal_gate",
+   "source": "meshy_github",
+   "kind": "building",
+   "path": "meshy/Meshy_AI_Royal_Portal_Gate_1016165217",
+   "near": "art-references/world-fill/glb/Royal_Portal_Gate.glb",
+   "sizeM": 70,
+   "places": [
+    "B01"
+   ],
+   "tris": 4545720
+  },
+  {
+   "id": "m_rubble_pile",
+   "source": "meshy_github",
+   "kind": "rock",
+   "path": "meshy/Meshy_AI_Rubble_Pile_1016084258",
+   "near": "art-references/world-fill/glb/Rubble_Pile.glb",
+   "sizeM": 8,
+   "places": [],
+   "tris": 2960,
+   "notes": "wild relic/rock scatter"
+  },
+  {
+   "id": "m_sentinel_peak",
+   "source": "meshy_github",
+   "kind": "rock",
+   "path": "meshy/Meshy_AI_Sentinel_Peak_1016084238",
+   "near": "art-references/world-fill/glb/Sentinel_Peak.glb",
+   "sizeM": 200,
+   "places": [
+    "B26"
+   ],
+   "tris": 832839
+  },
+  {
+   "id": "m_shrine",
+   "source": "meshy_github",
+   "kind": "building",
+   "path": "meshy/Meshy_AI_Shrine_1016093601",
+   "near": "art-references/world-fill/glb/Shrine.glb",
+   "sizeM": 12,
+   "places": [
+    "B06"
+   ],
+   "tris": 1008863
+  },
+  {
+   "id": "m_skyscraper_sentinel",
+   "source": "meshy_github",
+   "kind": "building",
+   "path": "meshy/Meshy_AI_Skyscraper_Sentinel_1016194056",
+   "tris": 269382,
+   "notes": "not used: modern tower"
+  },
+  {
+   "id": "m_stone",
+   "source": "meshy_github",
+   "kind": "rock",
+   "path": "meshy/Meshy_AI_Stone_1015170300",
+   "near": "art-references/world-fill/glb/Stone.glb",
+   "sizeM": 12,
+   "places": [],
+   "tris": 603837,
+   "notes": "wild relic/rock scatter"
+  },
+  {
+   "id": "m_stone_bridge",
+   "source": "meshy_github",
+   "kind": "rock",
+   "path": "meshy/Meshy_AI_Stone_Bridge_1016111118",
+   "near": "art-references/world-fill/glb/Stone_Bridge.glb",
+   "sizeM": 14,
+   "places": [
+    "B31"
+   ],
+   "tris": 544567
+  },
+  {
+   "id": "m_stone_face",
+   "source": "meshy_github",
+   "kind": "rock",
+   "path": "meshy/Meshy_AI_Stone_Face_1016090612",
+   "tris": 9216,
+   "fix": [
+    "veil face"
+   ]
+  },
+  {
+   "id": "m_stone_fortress",
+   "source": "meshy_github",
+   "kind": "rock",
+   "path": "meshy/Meshy_AI_Stone_Fortress_1016122800",
+   "near": "art-references/world-fill/glb/Stone_Fortress.glb",
+   "sizeM": 70,
+   "places": [
+    "B10"
+   ],
+   "tris": 1547884
+  },
+  {
+   "id": "m_stone_lantern",
+   "source": "meshy_github",
+   "kind": "rock",
+   "path": "meshy/Meshy_AI_Stone_Lantern_1016065234",
+   "near": "art-references/world-fill/glb/Stone_Lantern.glb",
+   "sizeM": 3,
+   "places": [
+    "B06",
+    "B19"
+   ],
+   "tris": 212061,
+   "notes": "wild relic/rock scatter"
+  },
+  {
+   "id": "m_subject_a_commemorat",
+   "source": "meshy_github",
+   "kind": "building",
+   "path": "meshy/Meshy_AI_Subject_A_commemorat_1016111127",
+   "near": "art-references/world-fill/glb/Subject_A_commemorat.glb",
+   "sizeM": 140,
+   "places": [],
+   "tris": 414576,
+   "notes": "the white waterfall gate; arrival"
+  },
+  {
+   "id": "m_terrain_mesh",
+   "source": "meshy_github",
+   "kind": "terrain",
+   "path": "meshy/Meshy_AI_Terrain_mesh_1016071826",
+   "tris": 792533
+  },
+  {
+   "id": "m_timbered_market_house",
+   "source": "meshy_github",
+   "kind": "building",
+   "path": "meshy/Meshy_AI_Timbered_Market_House_1016132201",
+   "near": "art-references/world-fill/glb/Timbered_Market_House.glb",
+   "sizeM": 14,
+   "places": [
+    "B12"
+   ],
+   "tris": 1906817
+  },
+  {
+   "id": "m_urban_debris",
+   "source": "meshy_github",
+   "kind": "building",
+   "path": "meshy/Meshy_AI_Urban_Debris_1016090050",
+   "tris": 2201653,
+   "notes": "not used: city rubble"
+  },
+  {
+   "id": "m_vatican_cityscape_mod",
+   "source": "meshy_github",
+   "kind": "building",
+   "path": "meshy/Meshy_AI_Vatican_Cityscape_Mod_1016194927",
+   "tris": 1728031,
+   "notes": "not used: real place, crosses",
+   "fix": [
+    "cross to star"
+   ]
+  },
+  {
+   "id": "m_verdant_cascade_fount",
+   "source": "meshy_github",
+   "kind": "building",
+   "path": "meshy/Meshy_AI_Verdant_Cascade_Fount_1016064122",
+   "near": "art-references/world-fill/glb/Verdant_Cascade_Fount.glb",
+   "sizeM": 24,
+   "places": [
+    "B01"
+   ],
+   "tris": 2919582
+  },
+  {
+   "id": "m_verdant_palace",
+   "source": "meshy_github",
+   "kind": "building",
+   "path": "meshy/Meshy_AI_Verdant_Palace_1016102521",
+   "near": "art-references/world-fill/glb/Verdant_Palace.glb",
+   "sizeM": 60,
+   "places": [
+    "B15"
+   ],
+   "tris": 299509
+  },
+  {
+   "id": "m_verdant_ring_of_stone",
+   "source": "meshy_github",
+   "kind": "rock",
+   "path": "meshy/Meshy_AI_Verdant_Ring_of_Stone_1016064743",
+   "near": "art-references/world-fill/glb/Verdant_Ring_of_Stone.glb",
+   "sizeM": 20,
+   "places": [
+    "B17"
+   ],
+   "tris": 3147484,
+   "notes": "wild relic/rock scatter"
+  },
+  {
+   "id": "m_vintage_stone_villa",
+   "source": "meshy_project",
+   "kind": "rock",
+   "near": "art-references/world-fill/glb/Vintage_Stone_Villa.glb",
+   "sizeM": 25,
+   "places": [
+    "B10"
+   ]
+  },
+  {
+   "id": "m_volcanic_monolith",
+   "source": "meshy_github",
+   "kind": "rock",
+   "path": "meshy/Meshy_AI_Volcanic_Monolith_1016193930",
+   "near": "art-references/world-fill/glb/Volcanic_Monolith.glb",
+   "sizeM": 60,
+   "places": [
+    "B26"
+   ],
+   "tris": 755622,
+   "notes": "wild relic/rock scatter"
+  },
+  {
+   "id": "m_whimsical_hobbit_dwel",
+   "source": "meshy_github",
+   "kind": "building",
+   "path": "meshy/Meshy_AI_Whimsical_Hobbit_Dwel_1016090727",
+   "near": "art-references/world-fill/glb/Whimsical_Hobbit_Dwel.glb",
+   "sizeM": 9,
+   "places": [
+    "B12"
+   ],
+   "tris": 2178306
+  },
+  {
+   "id": "m_whiskerlynx",
+   "source": "meshy_github",
+   "kind": "creature",
+   "path": "meshy/Meshy_AI_Whiskerlynx_1016090526",
+   "tris": 479816,
+   "notes": "pet candidate once the eyes are removed",
+   "fix": [
+    "remove eyes"
+   ]
+  },
+  {
+   "id": "m_whispering_willow_of",
+   "source": "meshy_github",
+   "kind": "tree",
+   "path": "meshy/Meshy_AI_Whispering_Willow_of__1016031710",
+   "near": "art-references/world-fill/glb/Whispering_Willow_of.glb",
+   "sizeM": 16,
+   "places": [
+    "B31"
+   ],
+   "tris": 3280173
+  },
+  {
+   "id": "m_white_house_ruin_x",
+   "source": "meshy_github",
+   "kind": "building",
+   "path": "meshy/Meshy_AI_White_House_Ruin_X_1016102622",
+   "tris": 3179377,
+   "notes": "not used: real building"
+  },
+  {
+   "id": "m_white_lotus",
+   "source": "meshy_github",
+   "kind": "building",
+   "path": "meshy/Meshy_AI_White_Lotus_1016065159",
+   "near": "art-references/world-fill/glb/White_Lotus.glb",
+   "sizeM": 9,
+   "places": [
+    "B02"
+   ],
+   "tris": 1118635
+  },
+  {
+   "id": "m_windmill_haven",
+   "source": "meshy_project",
+   "kind": "building",
+   "near": "art-references/world-fill/glb/Windmill_Haven.glb",
+   "sizeM": 30,
+   "places": [
+    "B13"
+   ]
+  },
+  {
+   "id": "m_wyrdwood_creations_wo",
+   "source": "meshy_github",
+   "kind": "building",
+   "path": "meshy/Meshy_AI_Wyrdwood_Creations_Wo_1016071506",
+   "tris": 3890224
+  },
+  {
+   "id": "m_a_large_mountain_val",
+   "source": "meshy_github",
+   "kind": "terrain",
+   "path": "meshy/Meshy_AI_a_large_mountain_val_1016071814",
+   "tris": 1130469,
+   "notes": "reference for the crescent caldera shape"
+  },
+  {
+   "id": "m_a_large_rainbow_cryst",
+   "source": "meshy_github",
+   "kind": "rock",
+   "path": "meshy/Meshy_AI_a_large_rainbow_cryst_1016100600",
+   "near": "art-references/world-fill/glb/a_large_rainbow_cryst.glb",
+   "sizeM": 8,
+   "places": [
+    "B29"
+   ],
+   "tris": 93210
+  },
+  {
+   "id": "m_a_stylized_stump_base",
+   "source": "meshy_github",
+   "kind": "building",
+   "path": "meshy/Meshy_AI_a_stylized_stump_base_1016084807",
+   "near": "art-references/world-fill/glb/a_stylized_stump_base.glb",
+   "sizeM": 5,
+   "places": [
+    "B17"
+   ],
+   "tris": 2593500
+  },
+  {
+   "id": "m_artistic_abstract_cry",
+   "source": "meshy_github",
+   "kind": "building",
+   "path": "meshy/Meshy_AI_artistic_abstract_cry_1016200512",
+   "near": "art-references/world-fill/glb/artistic_abstract_cry.glb",
+   "sizeM": 8,
+   "places": [
+    "B28"
+   ],
+   "tris": 99516
+  },
+  {
+   "id": "m_black_and_white_sketc",
+   "source": "meshy_github",
+   "kind": "building",
+   "path": "meshy/Meshy_AI_black_and_white_sketc_1016194937",
+   "tris": 9982,
+   "notes": "not used: modern skyscraper"
+  },
+  {
+   "id": "m_japanese_building",
+   "source": "meshy_github",
+   "kind": "building",
+   "path": "meshy/Meshy_AI_japanese_building_1016111123",
+   "near": "art-references/world-fill/glb/japanese_building.glb",
+   "sizeM": 16,
+   "places": [
+    "B06"
+   ],
+   "tris": 788210
+  },
+  {
+   "id": "m_kleine_dorfkirche",
+   "source": "meshy_github",
+   "kind": "building",
+   "path": "meshy/Meshy_AI_kleine_Dorfkirche_1016102635",
+   "tris": 28438,
+   "fix": [
+    "cross to star"
+   ]
+  },
+  {
+   "id": "m_large_stylized_limest",
+   "source": "meshy_github",
+   "kind": "building",
+   "path": "meshy/Meshy_AI_large_stylized_limest_1016200604",
+   "tris": 732204
+  },
+  {
+   "id": "m_leaning_tower_of_pisa",
+   "source": "meshy_github",
+   "kind": "building",
+   "path": "meshy/Meshy_AI_leaning_tower_of_pisa_1016195245",
+   "tris": 1084167
+  },
+  {
+   "id": "m_low_poly_beautiful_mo",
+   "source": "meshy_github",
+   "kind": "building",
+   "path": "meshy/Meshy_AI_low_poly_beautiful_mo_1016003151",
+   "tris": 326686
+  },
+  {
+   "id": "m_museum_building",
+   "source": "meshy_github",
+   "kind": "building",
+   "path": "meshy/Meshy_AI_museum_building_1016102603",
+   "near": "art-references/world-fill/glb/museum_building.glb",
+   "sizeM": 30,
+   "places": [
+    "B09"
+   ],
+   "tris": 9999
+  },
+  {
+   "id": "m_rocky_terrain_with_te",
+   "source": "meshy_github",
+   "kind": "rock",
+   "path": "meshy/Meshy_AI_rocky_terrain_with_te_1016071134",
+   "tris": 556829
+  },
+  {
+   "id": "m_tokyo_skytree_pod_sli",
+   "source": "meshy_github",
+   "kind": "tree",
+   "path": "meshy/Meshy_AI_tokyo_skytree_pod_sli_1016194305",
+   "tris": 2174622,
+   "notes": "not used: modern tower"
+  },
+  {
+   "id": "m_untitled",
+   "source": "meshy_github",
+   "kind": "building",
+   "path": "meshy/Meshy_AI__1016100131",
+   "near": "art-references/world-fill/glb/untitled.glb",
+   "sizeM": 48,
+   "places": [
+    "B22"
+   ],
+   "tris": 174006,
+   "notes": "golden sun tower used as the lighthouse"
+  },
+  {
+   "id": "m_wood_chair",
+   "source": "meshy_github",
+   "kind": "prop",
+   "path": "meshy/Meshy_AI_wood_chair_1016134232",
+   "tris": 957887,
+   "notes": "palace interior: forest-spirit throne"
+  }
+ ],
+ "quality": [
+  {
+   "id": "low",
+   "maxTris": 600000,
+   "maxDrawCalls": 250,
+   "shadows": "none",
+   "nearRadiusM": 60,
+   "particles": 3000,
+   "bloom": false,
+   "pixelRatio": 0.75,
+   "fullAvatars": 6
+  },
+  {
+   "id": "medium",
+   "maxTris": 1500000,
+   "maxDrawCalls": 500,
+   "shadows": "sun_1024",
+   "nearRadiusM": 120,
+   "particles": 12000,
+   "bloom": true,
+   "pixelRatio": 1,
+   "fullAvatars": 10
+  },
+  {
+   "id": "high",
+   "maxTris": 4000000,
+   "maxDrawCalls": 900,
+   "shadows": "sun_2048",
+   "nearRadiusM": 200,
+   "particles": 40000,
+   "bloom": true,
+   "pixelRatio": 1.5,
+   "fullAvatars": 15
+  }
+ ],
+ "net": {
+  "party": {
+   "friends": 14,
+   "maxPlayers": 16,
+   "voiceCallRangeM": 60,
+   "stateHz": 10,
+   "scaling": "Boss health and wave size grow with the players present (base x (0.5 + 0.1 x players)); party hearts = 3 + players / 2; team games need at least half the party for every node or slot."
+  },
+  "messages": [
+   "join",
+   "state",
+   "emote",
+   "capture",
+   "activity_start",
+   "activity_result",
+   "shard",
+   "cutscene",
+   "mew_action"
+  ]
+ },
+ "cinema": {
+  "look": "Letterbox bars slide in (2.35:1), shallow depth of field, a warm grade, and soft film grain. Every scene is a live camera in the game world, never a video.",
+  "sync": "The host starts a scene for everyone at the same moment (net message \"cutscene\" with id, place and start time), so all friends see it together.",
+  "players": "Friends stand on marks around the subject; first-person players see the camera cut. Their pets and the Mew stay in frame.",
+  "voices": "Characters speak in soft musical babble with subtitles, each with their own pitch. The Mew only mews. No voice acting needed.",
+  "skip": "A reusable scene plays in full the first time and in its short version after that. Unique scenes can be skipped only by majority vote, except the finale.",
+  "pacing": "A full place visit has about 90 seconds of scenes inside roughly 10 minutes of play, so the story never stalls the fun.",
+  "shotTypes": [
+   "establishing_aerial",
+   "flyover",
+   "crane_down",
+   "crane_up",
+   "orbit",
+   "dolly_in",
+   "dolly_out",
+   "tracking",
+   "two_shot",
+   "close_up",
+   "over_shoulder",
+   "pov",
+   "wide",
+   "insert",
+   "title_card",
+   "whip_pan",
+   "fade"
+  ]
+ }
+}

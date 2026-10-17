@@ -41,6 +41,7 @@ export function createTravel(scene, controller, hooks = {}) {
   const tmp = new THREE.Vector3();
 
   const landingFor = (portal) => {
+    if (portal.land) { const l = portal.land; return { pos: new THREE.Vector3(l.x, l.y, l.z), name: l.name, facing: l.facing ?? 0 }; }
     if (portal.kind === 'to') {
       const isl = ISLANDS.find((i) => i.id === portal.to);
       const r = RETURNS.find((x) => x.from === isl.id);
@@ -56,11 +57,11 @@ export function createTravel(scene, controller, hooks = {}) {
     const land = landingFor(portal);
     const a = controller.pos.clone();
     const b = land.pos;
-    const mid = a.clone().lerp(b, 0.5); mid.y = Math.max(a.y, b.y) + 28;
+    const mid = a.clone().lerp(b, 0.5); mid.y = Math.max(a.y, b.y) + 40 + a.distanceTo(b) * 0.08;
     const curve = new THREE.CatmullRomCurve3([
       a.clone(), a.clone().add(new THREE.Vector3(0, 6, 0)), mid, b.clone().add(new THREE.Vector3(0, 10, 0)), b.clone(),
     ]);
-    const dur = Math.max(4.5, curve.getLength() / 32);
+    const dur = Math.min(30, Math.max(4.5, curve.getLength() / 160));
     ride = { curve, t: 0, dur, land };
     controller.locked = true;
     boat.visible = true;

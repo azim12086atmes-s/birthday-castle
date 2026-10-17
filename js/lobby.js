@@ -21,13 +21,15 @@ export function loadProfile() {
     hairColor: p.hairColor || HAIR_COLORS[0],
     scarf: p.scarf || '#f2ead8',
     honoree,
+    mew: !!CONFIG.mewKey && params.get('mew') === CONFIG.mewKey,     // the owner, playing her Mew
   };
+  if (profile.mew) profile.gender = 'male';
   if (honoree) { profile.gender = 'female'; if (!p.name) profile.name = CONFIG.honoreeName; }
   return profile;
 }
 
 export function saveProfile(p) {
-  const { honoree, ...rest } = p; void honoree;
+  const { honoree, mew, ...rest } = p; void honoree; void mew;
   try { localStorage.setItem(KEY, JSON.stringify(rest)); } catch { /* ignore */ }
 }
 

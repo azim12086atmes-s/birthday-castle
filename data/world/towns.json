@@ -1,0 +1,165 @@
+{
+ "B12": {
+  "x": -6600,
+  "z": 2145,
+  "r": 195.2,
+  "e": 60.0,
+  "y": 172.77,
+  "plaza": 38.2,
+  "houses": 200,
+  "houses_before": 104,
+  "style": "medieval",
+  "lanterns": 66,
+  "exits_deg": [
+   -90.9,
+   -59.1,
+   7.8
+  ]
+ },
+ "B20": {
+  "x": -165,
+  "z": 6435,
+  "r": 215.8,
+  "e": 60.0,
+  "y": 5.31,
+  "plaza": 148.4,
+  "houses": 120,
+  "houses_before": 10,
+  "style": "coastal",
+  "lanterns": 40,
+  "exits_deg": [
+   -126.3,
+   122.9
+  ]
+ },
+ "B21": {
+  "x": -7095,
+  "z": 7590,
+  "r": 135.7,
+  "e": 60.0,
+  "y": 6.14,
+  "plaza": 40.7,
+  "houses": 110,
+  "houses_before": 4,
+  "style": "coastal",
+  "lanterns": 33,
+  "exits_deg": [
+   -44.2
+  ]
+ },
+ "B02": {
+  "x": -1732,
+  "z": 3630,
+  "r": 187.5,
+  "e": 60.0,
+  "y": 8.0,
+  "plaza": 89.4,
+  "houses": 120,
+  "houses_before": 12,
+  "style": "asian",
+  "lanterns": 40,
+  "exits_deg": [
+   -163.7,
+   121.6
+  ]
+ },
+ "B06": {
+  "x": 2888,
+  "z": -1155,
+  "r": 155.6,
+  "e": 60.0,
+  "y": 219.99,
+  "plaza": 65.8,
+  "houses": 130,
+  "houses_before": 31,
+  "style": "asian",
+  "lanterns": 43,
+  "exits_deg": [
+   -110.7,
+   -40.4,
+   127.7
+  ]
+ },
+ "B18": {
+  "x": -3630,
+  "z": 4950,
+  "r": 200.8,
+  "e": 60.0,
+  "y": 107.22,
+  "plaza": 70.6,
+  "houses": 130,
+  "houses_before": 15,
+  "style": "forest",
+  "lanterns": 43,
+  "exits_deg": [
+   -146.3,
+   6.3,
+   104.8
+  ]
+ },
+ "B04": {
+  "x": -2640,
+  "z": -1485,
+  "r": 186.3,
+  "e": 60.0,
+  "y": 169.89,
+  "plaza": 88.8,
+  "houses": 150,
+  "houses_before": 13,
+  "style": "medieval",
+  "lanterns": 43,
+  "exits_deg": [
+   -116.0,
+   113.8
+  ]
+ },
+ "B07": {
+  "x": -82,
+  "z": -3465,
+  "r": 219.4,
+  "e": 60.0,
+  "y": 310.14,
+  "plaza": 58.8,
+  "houses": 120,
+  "houses_before": 6,
+  "style": "classical",
+  "lanterns": 40,
+  "exits_deg": [
+   -6.9,
+   71.9
+  ]
+ },
+ "B08": {
+  "x": -2805,
+  "z": -3135,
+  "r": 224.5,
+  "e": 60.0,
+  "y": 185.56,
+  "plaza": 124.0,
+  "houses": 140,
+  "houses_before": 2,
+  "style": "classical",
+  "lanterns": 46,
+  "exits_deg": [
+   -147.8,
+   9.1,
+   90.8
+  ]
+ },
+ "B26": {
+  "x": 4983,
+  "z": -2060,
+  "r": 177.6,
+  "e": 60.0,
+  "y": 591.78,
+  "plaza": 74.3,
+  "houses": 100,
+  "houses_before": 0,
+  "style": "mountain",
+  "lanterns": 32,
+  "exits_deg": [
+   -122.4,
+   162.2
+  ]
+ }
+}
