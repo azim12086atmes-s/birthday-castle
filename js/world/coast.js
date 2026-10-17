@@ -276,11 +276,34 @@ function grove(x, z) {
   return Math.min(1, Math.max(0, (v - 0.3) / 0.22));
 }
 
+// height of the coarse land mesh (132 m cells, split a-d-b / b-d-e like landGeometry)
+const FAR_STEP = 132;
+function farLandH(x, z) {
+  const fx = (x - G.x0) / FAR_STEP, fz = (z - G.z0) / FAR_STEP, i = Math.floor(fx), j = Math.floor(fz), u = fx - i, v = fz - j;
+  const h = (a, b) => terrainHeight(MAIN, G.x0 + a * FAR_STEP, G.z0 + b * FAR_STEP);
+  const b = h(i + 1, j), d = h(i, j + 1);
+  return u + v <= 1 ? h(i, j) + (b - h(i, j)) * u + (d - h(i, j)) * v : h(i + 1, j + 1) + (d - h(i + 1, j + 1)) * (1 - u) + (b - h(i + 1, j + 1)) * (1 - v);
+}
+
 function forests(scene, preset) {
   const spacing = preset.trees >= 200 ? 30 : preset.trees >= 120 ? 40 : 54;
   const range = preset.trees >= 200 ? 2200 : preset.trees >= 120 ? 1600 : 1100;
   const T = 768, geo = treeGeometry(), coneGeo = coniferGeometry();
   const mat = nightGrade(new THREE.MeshLambertMaterial({ vertexColors: true, emissive: '#0c2030', emissiveIntensity: 0.6 }), 'forest');
+  // beyond the fine tiles the land is the coarse mesh, sunk like landMaterial(true): trees follow it there
+  // instead of floating over valleys and ridges
+  const prevC = mat.onBeforeCompile;
+  mat.onBeforeCompile = (sh, r) => {
+    prevC(sh, r);
+    sh.vertexShader = sh.vertexShader.replace('#include <common>', '#include <common>\nattribute float aDy;')
+      .replace('#include <begin_vertex>', `#include <begin_vertex>
+        { vec3 ip = instanceMatrix[3].xyz; float dc = length(ip.xz - cameraPosition.xz);
+          vec2 c0 = vec2(${G.x0.toFixed(1)}, ${G.z0.toFixed(1)}), cc = c0 + (floor((ip.xz - c0) / ${CHUNK}.0) + 0.5) * ${CHUNK}.0;
+          float k = step(${NEAR_R}.0, length(cc - cameraPosition.xz));     // same test that picks the fine tiles
+          float dy = k * (aDy - mix(40.0, 0.0, smoothstep(${DIP_R - 40}.0, ${DIP_R}.0, dc)) - 0.6 - dc * 0.0015);
+          transformed.y += dy / max(length(instanceMatrix[1].xyz), 1e-3); }`);
+  };
+  mat.customProgramCacheKey = () => 'forest-far-ng';
   const tiles = new Map();
   const palette = ['#3f9a52', '#4fae5a', '#2f8a5a', '#5bb86a', '#3a8f70', '#f2a6c8', '#7fd8c8', '#62b04a'];
   const m4 = new THREE.Matrix4(), q = new THREE.Quaternion(), s = new THREE.Vector3(), p = new THREE.Vector3(), c = new THREE.Color(), up = new THREE.Vector3(0, 1, 0);
@@ -300,7 +323,9 @@ function forests(scene, preset) {
     const group = new THREE.Group();
     kinds.forEach((list, kind) => {
       if (!list.length) return;
-      const mesh = new THREE.InstancedMesh(kind ? coneGeo : geo, mat, list.length);
+      const g = (kind ? coneGeo : geo).clone();
+      g.setAttribute('aDy', new THREE.InstancedBufferAttribute(Float32Array.from(list, ([x, y, z]) => farLandH(x, z) - y), 1));
+      const mesh = new THREE.InstancedMesh(g, mat, list.length);
       list.forEach(([x, y, z, a, b, k, f], i) => {
         // big old trees in the hearts of the groves, saplings at their edges
         const sc = (0.45 + a * a * 1.3) * (0.7 + 0.5 * f);
