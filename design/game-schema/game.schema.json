@@ -23,6 +23,8 @@
     "story": { "$ref": "#/$defs/story" },
     "clock": { "$ref": "#/$defs/clock" },
     "cutscenes": { "type": "array", "items": { "$ref": "#/$defs/cutscene" } },
+    "cinema": { "type": "object", "description": "camera language and playback rules for every scene", "additionalProperties": false,
+      "properties": { "look": { "type": "string" }, "sync": { "type": "string" }, "players": { "type": "string" }, "voices": { "type": "string" }, "skip": { "type": "string" }, "pacing": { "type": "string" }, "shotTypes": { "type": "array", "items": { "type": "string" } } } },
     "captures": { "type": "array", "items": { "$ref": "#/$defs/capture" } },
     "music": { "type": "array", "items": { "$ref": "#/$defs/track" } },
     "sky": { "$ref": "#/$defs/sky" },
@@ -84,6 +86,8 @@
         "look": { "$ref": "#/$defs/text" },
         "palette": { "type": "array", "items": { "$ref": "#/$defs/color" }, "maxItems": 6 },
         "head": { "$ref": "#/$defs/id", "description": "character id of the place's head (frozen in grey glass until freed)" },
+        "scene": { "type": "object", "additionalProperties": false, "description": "the visit as scenes: the local who greets the group, and the cutscene order",
+          "properties": { "local": { "type": "string" }, "greet": { "type": "string" }, "sequence": { "type": "array", "items": { "$ref": "#/$defs/id" } } } },
         "people": { "type": "string", "description": "who lives here (crowd NPCs)" },
         "creatures": { "type": "array", "items": { "$ref": "#/$defs/id" }, "description": "creature ids to befriend here" },
         "game": { "$ref": "#/$defs/activity" },
@@ -118,6 +122,8 @@
         "gender": { "enum": ["female", "male", "none"] },
         "face": { "enum": ["veiled", "masked", "soft_features", "none"], "description": "statues are faceless; living characters follow the owner's art direction" },
         "lines": { "type": "array", "items": { "type": "string" }, "description": "short spoken lines (thanks when freed, hints)" },
+        "dialogue": { "type": "object", "additionalProperties": false, "description": "a head's lines in the place-visit scenes",
+          "properties": { "plea": { "type": "string" }, "freed": { "type": "string" }, "farewell": { "type": "string" } } },
         "status": { "$ref": "#/$defs/status" }
       } },
 
@@ -250,7 +256,19 @@
         "seconds": { "type": "number" },
         "skippable": { "type": "boolean" },
         "reusable": { "type": "boolean", "description": "one template used for many places" },
-        "shots": { "type": "array", "items": { "type": "string" } },
+        "shortSeconds": { "type": "number", "description": "length of the short version played on repeats" },
+        "shots": { "type": "array", "items": { "$ref": "#/$defs/shot" } },
+        "music": { "$ref": "#/$defs/id" }
+      } },
+
+    "shot": { "type": "object", "required": ["type", "seconds", "what"], "additionalProperties": false,
+      "properties": {
+        "type": { "enum": ["establishing_aerial", "flyover", "crane_down", "crane_up", "orbit", "dolly_in", "dolly_out", "tracking", "two_shot", "close_up", "over_shoulder", "pov", "wide", "insert", "title_card", "whip_pan", "fade"] },
+        "seconds": { "type": "number" },
+        "what": { "type": "string", "description": "what the shot shows; {her} is the honoree's name" },
+        "subject": { "type": "string", "description": "what the camera frames: a place, character, creature or a named mark" },
+        "line": { "type": "object", "additionalProperties": false, "properties": { "who": { "type": "string", "description": "character id, or local, head or owner" }, "key": { "enum": ["greet", "plea", "freed", "farewell"] }, "text": { "type": "string" } } },
+        "vfx": { "type": "array", "items": { "type": "string" } },
         "music": { "$ref": "#/$defs/id" }
       } },
 

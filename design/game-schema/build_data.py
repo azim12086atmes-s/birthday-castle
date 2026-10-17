@@ -210,6 +210,7 @@ for pl in data['places']:
     if pl['id'] in place_assets: pl['assets'] = place_assets[pl['id']]
 data['world']['arrival'][1]['at'] = dict(x=-710, z=11158); data['world']['arrival'][0]['at'] = dict(x=-710, z=12158)
 data['world']['heightmap'] = 'art-references/world-fill/terrain/ (crescent version, Oct 16)'
+import scenes; scenes.apply(data)
 json.dump(data, open(f'{H}/game-data.json', 'w'), indent=1, ensure_ascii=False)
 import jsonschema
 jsonschema.validate(data, json.load(open(f'{H}/game.schema.json')))

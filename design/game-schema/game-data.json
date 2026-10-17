@@ -160,7 +160,17 @@
     "m_marble_pavilion",
     "m_royal_portal_gate",
     "m_verdant_cascade_fount"
-   ]
+   ],
+   "scene": {
+    "local": "Head Courtier",
+    "greet": "Welcome home, {her}. The whole palace has been waiting for you.",
+    "sequence": [
+     "return_palace",
+     "boss_entrance",
+     "head_freed",
+     "finale"
+    ]
+   }
   },
   {
    "id": "B02",
@@ -193,7 +203,21 @@
     "m_a_colossal_floating_c",
     "m_domed_palace_model",
     "m_white_lotus"
-   ]
+   ],
+   "scene": {
+    "local": "A tide-child",
+    "greet": "The water stopped singing when the Hush came. Can you hear how quiet it is?",
+    "sequence": [
+     "travel",
+     "enter_place",
+     "meet_people",
+     "frozen_head",
+     "befriend",
+     "head_freed",
+     "shard",
+     "farewell"
+    ]
+   }
   },
   {
    "id": "B03",
@@ -223,7 +247,21 @@
    "status": "designed",
    "assets": [
     "m_gothic_cathedral"
-   ]
+   ],
+   "scene": {
+    "local": "The youngest bell ringer",
+    "greet": "Our bells only ring in grey now. Will you help us find the tune?",
+    "sequence": [
+     "travel",
+     "enter_place",
+     "meet_people",
+     "frozen_head",
+     "befriend",
+     "head_freed",
+     "shard",
+     "farewell"
+    ]
+   }
   },
   {
    "id": "B04",
@@ -256,7 +294,22 @@
    "assets": [
     "m_copper_cloud_bonsai",
     "m_please_provide_an_ima"
-   ]
+   ],
+   "scene": {
+    "local": "A squire",
+    "greet": "The Knight of Roses stood against the Thorn Golem alone. Now look at him.",
+    "sequence": [
+     "travel",
+     "enter_place",
+     "meet_people",
+     "frozen_head",
+     "befriend",
+     "boss_entrance",
+     "head_freed",
+     "shard",
+     "farewell"
+    ]
+   }
   },
   {
    "id": "B05",
@@ -288,7 +341,21 @@
     "m_elven_tower_base_circ",
     "m_emberkeep_turret",
     "m_ghotisches_schloss"
-   ]
+   ],
+   "scene": {
+    "local": "A young sage",
+    "greet": "Stay close to the lanterns. The mist forgets anyone who wanders.",
+    "sequence": [
+     "travel",
+     "enter_place",
+     "meet_people",
+     "frozen_head",
+     "befriend",
+     "head_freed",
+     "shard",
+     "farewell"
+    ]
+   }
   },
   {
    "id": "B06",
@@ -325,7 +392,21 @@
     "m_shrine",
     "m_stone_lantern",
     "m_japanese_building"
-   ]
+   ],
+   "scene": {
+    "local": "A lantern maker",
+    "greet": "We made a thousand lanterns for tonight, and every one went grey.",
+    "sequence": [
+     "travel",
+     "enter_place",
+     "meet_people",
+     "frozen_head",
+     "befriend",
+     "head_freed",
+     "shard",
+     "farewell"
+    ]
+   }
   },
   {
    "id": "B07",
@@ -357,7 +438,21 @@
    "assets": [
     "m_marble_pavilion",
     "m_pantheon"
-   ]
+   ],
+   "scene": {
+    "local": "An echo keeper",
+    "greet": "These halls keep every kind word ever spoken here. The Hush is erasing them.",
+    "sequence": [
+     "travel",
+     "enter_place",
+     "meet_people",
+     "frozen_head",
+     "befriend",
+     "head_freed",
+     "shard",
+     "farewell"
+    ]
+   }
   },
   {
    "id": "B08",
@@ -389,7 +484,23 @@
    "order": 10,
    "assets": [
     "m_ancient_stone_amphith"
-   ]
+   ],
+   "scene": {
+    "local": "The herald",
+    "greet": "Champions of every land have come to compete in your honour, {her}!",
+    "sequence": [
+     "travel",
+     "tournament",
+     "enter_place",
+     "meet_people",
+     "frozen_head",
+     "befriend",
+     "boss_entrance",
+     "head_freed",
+     "shard",
+     "farewell"
+    ]
+   }
   },
   {
    "id": "B09",
@@ -423,7 +534,21 @@
     "m_kalliope_house_comple",
     "m_mediterranean_villa",
     "m_museum_building"
-   ]
+   ],
+   "scene": {
+    "local": "A gondolier",
+    "greet": "A hundred invitations, and no one to carry them. Hop in.",
+    "sequence": [
+     "travel",
+     "enter_place",
+     "meet_people",
+     "frozen_head",
+     "befriend",
+     "head_freed",
+     "shard",
+     "farewell"
+    ]
+   }
   },
   {
    "id": "B10",
@@ -460,7 +585,21 @@
     "m_ornate_sandstone_gate",
     "m_stone_fortress",
     "m_vintage_stone_villa"
-   ]
+   ],
+   "scene": {
+    "local": "A sun-child",
+    "greet": "The waterfalls turned to dust. The canyon is so thirsty.",
+    "sequence": [
+     "travel",
+     "enter_place",
+     "meet_people",
+     "frozen_head",
+     "befriend",
+     "head_freed",
+     "shard",
+     "farewell"
+    ]
+   }
   },
   {
    "id": "B11",
@@ -493,7 +632,22 @@
     "m_basalt_arch",
     "m_cliff_formations",
     "m_rocky_archway"
-   ]
+   ],
+   "scene": {
+    "local": "A cliff diver",
+    "greet": "Dare to jump? The sea is waiting below.",
+    "sequence": [
+     "travel",
+     "enter_place",
+     "meet_people",
+     "frozen_head",
+     "befriend",
+     "boss_entrance",
+     "head_freed",
+     "shard",
+     "farewell"
+    ]
+   }
   },
   {
    "id": "B12",
@@ -531,7 +685,21 @@
     "m_old_town_clock_tower",
     "m_timbered_market_house",
     "m_whimsical_hobbit_dwel"
-   ]
+   ],
+   "scene": {
+    "local": "A baker",
+    "greet": "Flour everywhere and no cake! We need every hand.",
+    "sequence": [
+     "travel",
+     "enter_place",
+     "meet_people",
+     "frozen_head",
+     "befriend",
+     "head_freed",
+     "shard",
+     "farewell"
+    ]
+   }
   },
   {
    "id": "B13",
@@ -562,7 +730,21 @@
    "assets": [
     "m_olive_grove_cottage",
     "m_windmill_haven"
-   ]
+   ],
+   "scene": {
+    "local": "A miller",
+    "greet": "The wind still blows, but the sails refuse to turn.",
+    "sequence": [
+     "travel",
+     "enter_place",
+     "meet_people",
+     "frozen_head",
+     "befriend",
+     "head_freed",
+     "shard",
+     "farewell"
+    ]
+   }
   },
   {
    "id": "B14",
@@ -594,7 +776,21 @@
     "m_enchanted_spiral_towe",
     "m_isle_of_the_stone_spi",
     "m_ring_village_diorama"
-   ]
+   ],
+   "scene": {
+    "local": "A sky builder",
+    "greet": "Our city hangs between the pillars, and the bridges are breaking.",
+    "sequence": [
+     "travel",
+     "enter_place",
+     "meet_people",
+     "frozen_head",
+     "befriend",
+     "head_freed",
+     "shard",
+     "farewell"
+    ]
+   }
   },
   {
    "id": "B15",
@@ -628,7 +824,21 @@
     "m_ancient_stone_structu",
     "m_ancient_stone_temples",
     "m_verdant_palace"
-   ]
+   ],
+   "scene": {
+    "local": "A temple guardian",
+    "greet": "Four doors, four hands. The jungle only opens for friends.",
+    "sequence": [
+     "travel",
+     "enter_place",
+     "meet_people",
+     "frozen_head",
+     "befriend",
+     "head_freed",
+     "shard",
+     "farewell"
+    ]
+   }
   },
   {
    "id": "B16",
@@ -660,7 +870,22 @@
    "assets": [
     "m_enchanted_thatch_cott",
     "m_pine_trees_on_a_rocky"
-   ]
+   ],
+   "scene": {
+    "local": "A rower",
+    "greet": "Row with us! The Ice Serpent froze the fjord solid.",
+    "sequence": [
+     "travel",
+     "enter_place",
+     "meet_people",
+     "frozen_head",
+     "befriend",
+     "boss_entrance",
+     "head_freed",
+     "shard",
+     "farewell"
+    ]
+   }
   },
   {
    "id": "B17",
@@ -697,7 +922,21 @@
     "m_luminous_paper_flower",
     "m_verdant_ring_of_stone",
     "m_a_stylized_stump_base"
-   ]
+   ],
+   "scene": {
+    "local": "A little forest spirit",
+    "greet": "Shh. When night comes, the shadows come with it.",
+    "sequence": [
+     "travel",
+     "enter_place",
+     "meet_people",
+     "frozen_head",
+     "befriend",
+     "head_freed",
+     "shard",
+     "farewell"
+    ]
+   }
   },
   {
    "id": "B18",
@@ -729,7 +968,21 @@
     "m_enchanted_forest_thro",
     "m_lantern_tree_palace",
     "m_metaphor_the_tree_of"
-   ]
+   ],
+   "scene": {
+    "local": "A star fox",
+    "greet": "The great tree is sleeping, and its roots are thirsty.",
+    "sequence": [
+     "travel",
+     "enter_place",
+     "meet_people",
+     "frozen_head",
+     "befriend",
+     "head_freed",
+     "shard",
+     "farewell"
+    ]
+   }
   },
   {
    "id": "B19",
@@ -759,7 +1012,21 @@
    "assets": [
     "m_kalliope_house_comple",
     "m_stone_lantern"
-   ]
+   ],
+   "scene": {
+    "local": "An otter",
+    "greet": "Mrrp! The shadow ship stole all our stars.",
+    "sequence": [
+     "travel",
+     "enter_place",
+     "meet_people",
+     "frozen_head",
+     "befriend",
+     "head_freed",
+     "shard",
+     "farewell"
+    ]
+   }
   },
   {
    "id": "B20",
@@ -790,7 +1057,21 @@
    "assets": [
     "m_floral_wreath_of_spri",
     "m_marble_pavilion"
-   ]
+   ],
+   "scene": {
+    "local": "A dove of light",
+    "greet": "Every step on this bridge used to make the water dance.",
+    "sequence": [
+     "travel",
+     "enter_place",
+     "meet_people",
+     "frozen_head",
+     "befriend",
+     "head_freed",
+     "shard",
+     "farewell"
+    ]
+   }
   },
   {
    "id": "B21",
@@ -821,7 +1102,21 @@
    "assets": [
     "m_ancient_stone_relic",
     "m_celestial_armillary"
-   ]
+   ],
+   "scene": {
+    "local": "An apprentice astronomer",
+    "greet": "The shards fell all over the land. The telescope can show us where.",
+    "sequence": [
+     "travel",
+     "enter_place",
+     "meet_people",
+     "frozen_head",
+     "befriend",
+     "head_freed",
+     "shard",
+     "farewell"
+    ]
+   }
   },
   {
    "id": "B22",
@@ -850,7 +1145,21 @@
    "status": "designed",
    "assets": [
     "m_untitled"
-   ]
+   ],
+   "scene": {
+    "local": "A seal",
+    "greet": "Arf! The lighthouse went dark and the ships are lost.",
+    "sequence": [
+     "travel",
+     "enter_place",
+     "meet_people",
+     "frozen_head",
+     "befriend",
+     "head_freed",
+     "shard",
+     "farewell"
+    ]
+   }
   },
   {
    "id": "B23",
@@ -880,7 +1189,21 @@
    "status": "designed",
    "assets": [
     "m_marble_pavilion"
-   ]
+   ],
+   "scene": {
+    "local": "A pearl diver",
+    "greet": "The pearls of the sea pavilion hide when they are sad.",
+    "sequence": [
+     "travel",
+     "enter_place",
+     "meet_people",
+     "frozen_head",
+     "befriend",
+     "head_freed",
+     "shard",
+     "farewell"
+    ]
+   }
   },
   {
    "id": "B24",
@@ -910,7 +1233,22 @@
    "boss": "leviathan",
    "assets": [
     "m_ancient_stone_circle"
-   ]
+   ],
+   "scene": {
+    "local": "A reef child",
+    "greet": "Something huge is stirring beneath the coral.",
+    "sequence": [
+     "travel",
+     "enter_place",
+     "meet_people",
+     "frozen_head",
+     "befriend",
+     "boss_entrance",
+     "head_freed",
+     "shard",
+     "farewell"
+    ]
+   }
   },
   {
    "id": "B25",
@@ -942,7 +1280,21 @@
     "m_a_garden_of_cryst",
     "m_crystal_peaks_pbr",
     "m_leafspire_cathedral"
-   ]
+   ],
+   "scene": {
+    "local": "A glass gardener",
+    "greet": "Every flower in the conservatory turned to grey glass.",
+    "sequence": [
+     "travel",
+     "enter_place",
+     "meet_people",
+     "frozen_head",
+     "befriend",
+     "head_freed",
+     "shard",
+     "farewell"
+    ]
+   }
   },
   {
    "id": "B26",
@@ -975,7 +1327,22 @@
     "m_infernal_peak",
     "m_sentinel_peak",
     "m_volcanic_monolith"
-   ]
+   ],
+   "scene": {
+    "local": "A dragon keeper",
+    "greet": "The Storm Dragon was our eldest, kindest dragon. Now it only roars.",
+    "sequence": [
+     "travel",
+     "enter_place",
+     "meet_people",
+     "frozen_head",
+     "befriend",
+     "boss_entrance",
+     "head_freed",
+     "shard",
+     "farewell"
+    ]
+   }
   },
   {
    "id": "B27",
@@ -1010,7 +1377,21 @@
     "m_desert_fortress",
     "m_desert_oasis_palace",
     "m_desert_ruins"
-   ]
+   ],
+   "scene": {
+    "local": "A bazaar trader",
+    "greet": "Welcome, travellers! Careful, the Hush hid our oasis in a mirage.",
+    "sequence": [
+     "travel",
+     "enter_place",
+     "meet_people",
+     "frozen_head",
+     "befriend",
+     "head_freed",
+     "shard",
+     "farewell"
+    ]
+   }
   },
   {
    "id": "B28",
@@ -1042,7 +1423,21 @@
     "m_elven_tower_base_circ",
     "m_prismatic_peaks",
     "m_artistic_abstract_cry"
-   ]
+   ],
+   "scene": {
+    "local": "An ice gardener",
+    "greet": "Snowball fight first, then work. That is the law here.",
+    "sequence": [
+     "travel",
+     "enter_place",
+     "meet_people",
+     "frozen_head",
+     "befriend",
+     "head_freed",
+     "shard",
+     "farewell"
+    ]
+   }
   },
   {
    "id": "B29",
@@ -1074,7 +1469,21 @@
     "m_cave_structures_1",
     "m_crystal_peaks_pbr",
     "m_a_large_rainbow_cryst"
-   ]
+   ],
+   "scene": {
+    "local": "A crystal miner",
+    "greet": "Mind your heads! The caverns are humming the wrong tune.",
+    "sequence": [
+     "travel",
+     "enter_place",
+     "meet_people",
+     "frozen_head",
+     "befriend",
+     "head_freed",
+     "shard",
+     "farewell"
+    ]
+   }
   },
   {
    "id": "B30",
@@ -1105,7 +1514,21 @@
    "assets": [
     "m_floating_stone_island",
     "m_mossy_monolith"
-   ]
+   ],
+   "scene": {
+    "local": "A cloud shepherd child",
+    "greet": "The baby sky whales are lost in the grey clouds.",
+    "sequence": [
+     "travel",
+     "enter_place",
+     "meet_people",
+     "frozen_head",
+     "befriend",
+     "head_freed",
+     "shard",
+     "farewell"
+    ]
+   }
   },
   {
    "id": "B31",
@@ -1139,7 +1562,21 @@
     "m_for_diana_this_beauti",
     "m_stone_bridge",
     "m_whispering_willow_of"
-   ]
+   ],
+   "scene": {
+    "local": "A hummingbird",
+    "greet": "Bzzt! The meadow forgot its colours. Help us paint them back.",
+    "sequence": [
+     "travel",
+     "enter_place",
+     "meet_people",
+     "frozen_head",
+     "befriend",
+     "head_freed",
+     "shard",
+     "farewell"
+    ]
+   }
   },
   {
    "id": "B32",
@@ -1172,7 +1609,21 @@
     "m_luminous_paper_flower",
     "m_marble_pavilion",
     "m_royal_carriage"
-   ]
+   ],
+   "scene": {
+    "local": "The ringmaster's assistant",
+    "greet": "Step right up! The fair is grey, but the fun is not over yet!",
+    "sequence": [
+     "travel",
+     "enter_place",
+     "meet_people",
+     "frozen_head",
+     "befriend",
+     "head_freed",
+     "shard",
+     "farewell"
+    ]
+   }
   }
  ],
  "characters": [
@@ -1183,9 +1634,14 @@
    "place": "B01",
    "face": "soft_features",
    "lines": [
-    "Thank you for bringing back the light."
+    "You brought the light all the way home. Look up."
    ],
-   "status": "designed"
+   "status": "designed",
+   "dialogue": {
+    "plea": "The Hush is in the heart of the palace. Bring every shard home.",
+    "freed": "You brought the light all the way home. Look up.",
+    "farewell": "Midnight is almost here. Go stand where the roof will open."
+   }
   },
   {
    "id": "lady_of_tides",
@@ -1194,9 +1650,14 @@
    "place": "B02",
    "face": "soft_features",
    "lines": [
-    "Thank you for bringing back the light."
+    "The lake remembers your laugh now. It will sing it back to you."
    ],
-   "status": "designed"
+   "status": "designed",
+   "dialogue": {
+    "plea": "Moonlight still answers you. Catch it for me.",
+    "freed": "The lake remembers your laugh now. It will sing it back to you.",
+    "farewell": "We will sail the lanterns to the palace for your midnight."
+   }
   },
   {
    "id": "bell_warden",
@@ -1205,9 +1666,14 @@
    "place": "B03",
    "face": "soft_features",
    "lines": [
-    "Thank you for bringing back the light."
+    "Listen. Every bell is ringing your name."
    ],
-   "status": "designed"
+   "status": "designed",
+   "dialogue": {
+    "plea": "The rose window is dark. Only star beams can wake it.",
+    "freed": "Listen. Every bell is ringing your name.",
+    "farewell": "We will ring you in at midnight, all of us at once."
+   }
   },
   {
    "id": "knight_of_roses",
@@ -1216,9 +1682,14 @@
    "place": "B04",
    "face": "soft_features",
    "lines": [
-    "Thank you for bringing back the light."
+    "Rise, friends of the Rose Keep. You fought like a story."
    ],
-   "status": "designed"
+   "status": "designed",
+   "dialogue": {
+    "plea": "The thorns are around my heart. Cut them away, friends.",
+    "freed": "Rise, friends of the Rose Keep. You fought like a story.",
+    "farewell": "The knights will ride ahead and keep the road clear for you."
+   }
   },
   {
    "id": "mist_sage",
@@ -1227,9 +1698,14 @@
    "place": "B05",
    "face": "soft_features",
    "lines": [
-    "Thank you for bringing back the light."
+    "The mist has lifted, and the mountain can see you."
    ],
-   "status": "designed"
+   "status": "designed",
+   "dialogue": {
+    "plea": "Bring the little light through the fog. Do not let it go out.",
+    "freed": "The mist has lifted, and the mountain can see you.",
+    "farewell": "We will bring the clear sky with us to the palace."
+   }
   },
   {
    "id": "lantern_master",
@@ -1238,9 +1714,14 @@
    "place": "B06",
    "face": "soft_features",
    "lines": [
-    "Thank you for bringing back the light."
+    "Look how the sky fills. Every lantern carries a wish for you."
    ],
-   "status": "designed"
+   "status": "designed",
+   "dialogue": {
+    "plea": "Paint them again. Colour is stronger than shadow.",
+    "freed": "Look how the sky fills. Every lantern carries a wish for you.",
+    "farewell": "Our lanterns will float above the palace at midnight."
+   }
   },
   {
    "id": "keeper_of_echoes",
@@ -1249,9 +1730,14 @@
    "place": "B07",
    "face": "soft_features",
    "lines": [
-    "Thank you for bringing back the light."
+    "The echoes are back, and the loudest one says happy birthday."
    ],
-   "status": "designed"
+   "status": "designed",
+   "dialogue": {
+    "plea": "Only someone who truly knows her can answer. Who knows her best?",
+    "freed": "The echoes are back, and the loudest one says happy birthday.",
+    "farewell": "We will carry your echoes to the theatre tonight."
+   }
   },
   {
    "id": "arena_champion",
@@ -1260,9 +1746,14 @@
    "place": "B08",
    "face": "soft_features",
    "lines": [
-    "Thank you for bringing back the light."
+    "Never has the arena seen such a team. The crowd is yours."
    ],
-   "status": "designed"
+   "status": "designed",
+   "dialogue": {
+    "plea": "The Shadow Champion wears my armour. Defeat it and set me free.",
+    "freed": "Never has the arena seen such a team. The crowd is yours.",
+    "farewell": "Every champion will stand guard at your celebration."
+   }
   },
   {
    "id": "canal_mayor",
@@ -1271,9 +1762,14 @@
    "place": "B09",
    "face": "soft_features",
    "lines": [
-    "Thank you for bringing back the light."
+    "Every villa has its invitation. The whole city is coming."
    ],
-   "status": "designed"
+   "status": "designed",
+   "dialogue": {
+    "plea": "The canals are still. Make the city move again.",
+    "freed": "Every villa has its invitation. The whole city is coming.",
+    "farewell": "The gondolas will bring the whole city to the palace."
+   }
   },
   {
    "id": "sun_queen",
@@ -1282,9 +1778,14 @@
    "place": "B10",
    "face": "soft_features",
    "lines": [
-    "Thank you for bringing back the light."
+    "The canyon is singing with water again. The sun is pleased."
    ],
-   "status": "designed"
+   "status": "designed",
+   "dialogue": {
+    "plea": "Turn the waters back to the canyon. It remembers the way.",
+    "freed": "The canyon is singing with water again. The sun is pleased.",
+    "farewell": "We will bring the warmth of the canyon to your night."
+   }
   },
   {
    "id": "arch_guardian",
@@ -1293,9 +1794,14 @@
    "place": "B11",
    "face": "soft_features",
    "lines": [
-    "Thank you for bringing back the light."
+    "The giant is smiling again. So is the sea."
    ],
-   "status": "designed"
+   "status": "designed",
+   "dialogue": {
+    "plea": "The stone giant was our friend. Wake the friend inside it.",
+    "freed": "The giant is smiling again. So is the sea.",
+    "farewell": "The giant will carry us to the palace on its shoulders."
+   }
   },
   {
    "id": "baker_of_stories",
@@ -1304,9 +1810,14 @@
    "place": "B12",
    "face": "soft_features",
    "lines": [
-    "Thank you for bringing back the light."
+    "Smell that? That is the best cake layer ever baked."
    ],
-   "status": "designed"
+   "status": "designed",
+   "dialogue": {
+    "plea": "One layer from every land. Bake it together and it cannot crack.",
+    "freed": "Smell that? That is the best cake layer ever baked.",
+    "farewell": "This layer goes straight to the palace. Do not peek."
+   }
   },
   {
    "id": "miller_of_winds",
@@ -1315,9 +1826,14 @@
    "place": "B13",
    "face": "soft_features",
    "lines": [
-    "Thank you for bringing back the light."
+    "Hear the sails creak? That is the windmill laughing."
    ],
-   "status": "designed"
+   "status": "designed",
+   "dialogue": {
+    "plea": "Turn the great sails together, all in time.",
+    "freed": "Hear the sails creak? That is the windmill laughing.",
+    "farewell": "We will send the good wind ahead to carry you home."
+   }
   },
   {
    "id": "sky_architect",
@@ -1326,9 +1842,14 @@
    "place": "B14",
    "face": "soft_features",
    "lines": [
-    "Thank you for bringing back the light."
+    "You built something that will outlast us all."
    ],
-   "status": "designed"
+   "status": "designed",
+   "dialogue": {
+    "plea": "Build the bridge together. Every plank holds the next.",
+    "freed": "You built something that will outlast us all.",
+    "farewell": "We will string bridges of light to the palace."
+   }
   },
   {
    "id": "vine_oracle",
@@ -1337,9 +1858,14 @@
    "place": "B15",
    "face": "soft_features",
    "lines": [
-    "Thank you for bringing back the light."
+    "The jungle breathes again. Listen to the frogs sing."
    ],
-   "status": "designed"
+   "status": "designed",
+   "dialogue": {
+    "plea": "The vines obey those who trust each other.",
+    "freed": "The jungle breathes again. Listen to the frogs sing.",
+    "farewell": "The jungle will bloom along your road home."
+   }
   },
   {
    "id": "fjord_chieftess",
@@ -1348,9 +1874,14 @@
    "place": "B16",
    "face": "soft_features",
    "lines": [
-    "Thank you for bringing back the light."
+    "The fjord is free and the whales are coming home."
    ],
-   "status": "designed"
+   "status": "designed",
+   "dialogue": {
+    "plea": "Its heart is not ice. Find the warmth in it.",
+    "freed": "The fjord is free and the whales are coming home.",
+    "farewell": "Our longboats will row the ice lanterns to your midnight."
+   }
   },
   {
    "id": "forest_spirit",
@@ -1359,9 +1890,14 @@
    "place": "B17",
    "face": "soft_features",
    "lines": [
-    "Thank you for bringing back the light."
+    "The fireflies remember you now. They will follow you anywhere."
    ],
-   "status": "designed"
+   "status": "designed",
+   "dialogue": {
+    "plea": "Gather the fireflies. Hold the ruin until the dawn of colour.",
+    "freed": "The fireflies remember you now. They will follow you anywhere.",
+    "farewell": "We will light the path to the palace with fireflies."
+   }
   },
   {
    "id": "the_mother_tree",
@@ -1370,9 +1906,14 @@
    "place": "B18",
    "face": "soft_features",
    "lines": [
-    "Thank you for bringing back the light."
+    "I have stood for a thousand years, and I have never felt so loved."
    ],
-   "status": "designed"
+   "status": "designed",
+   "dialogue": {
+    "plea": "Bring the water spirits to my roots, little ones.",
+    "freed": "I have stood for a thousand years, and I have never felt so loved.",
+    "farewell": "My blossoms will rain on your celebration."
+   }
   },
   {
    "id": "harbour_master",
@@ -1381,9 +1922,14 @@
    "place": "B19",
    "face": "soft_features",
    "lines": [
-    "Thank you for bringing back the light."
+    "The harbour sparkles again. The otters want to hold your hand."
    ],
-   "status": "designed"
+   "status": "designed",
+   "dialogue": {
+    "plea": "Sail out and win back the harbour lights.",
+    "freed": "The harbour sparkles again. The otters want to hold your hand.",
+    "farewell": "Every boat in the cove will sail to the palace tonight."
+   }
   },
   {
    "id": "bridge_keeper",
@@ -1392,9 +1938,14 @@
    "place": "B20",
    "face": "soft_features",
    "lines": [
-    "Thank you for bringing back the light."
+    "There. The water is dancing for you again."
    ],
-   "status": "designed"
+   "status": "designed",
+   "dialogue": {
+    "plea": "Dance across the bridge. Wake the ripples.",
+    "freed": "There. The water is dancing for you again.",
+    "farewell": "The bridge will light the way back to the palace."
+   }
   },
   {
    "id": "star_astronomer",
@@ -1403,9 +1954,14 @@
    "place": "B21",
    "face": "soft_features",
    "lines": [
-    "Thank you for bringing back the light."
+    "Now the sky has a map, and every star on it leads to you."
    ],
-   "status": "designed"
+   "status": "designed",
+   "dialogue": {
+    "plea": "Line up the lenses. The stars will point the way.",
+    "freed": "Now the sky has a map, and every star on it leads to you.",
+    "farewell": "We will chart the midnight sky for your celebration."
+   }
   },
   {
    "id": "light_keeper",
@@ -1414,9 +1970,14 @@
    "place": "B22",
    "face": "soft_features",
    "lines": [
-    "Thank you for bringing back the light."
+    "The lighthouse shines again, brighter than it ever has."
    ],
-   "status": "designed"
+   "status": "designed",
+   "dialogue": {
+    "plea": "Guide them through the storm. Be the light.",
+    "freed": "The lighthouse shines again, brighter than it ever has.",
+    "farewell": "Our beam will cross the sky at midnight. Look for it."
+   }
   },
   {
    "id": "pearl_diver",
@@ -1425,9 +1986,14 @@
    "place": "B23",
    "face": "soft_features",
    "lines": [
-    "Thank you for bringing back the light."
+    "A string of pearls, one for every friend who dived."
    ],
-   "status": "designed"
+   "status": "designed",
+   "dialogue": {
+    "plea": "Dive deep. The pearls rise for laughter.",
+    "freed": "A string of pearls, one for every friend who dived.",
+    "farewell": "These pearls will shine at your midnight table."
+   }
   },
   {
    "id": "coral_priestess",
@@ -1436,9 +2002,14 @@
    "place": "B24",
    "face": "soft_features",
    "lines": [
-    "Thank you for bringing back the light."
+    "The reef glows again, and the Leviathan sings to you."
    ],
-   "status": "designed"
+   "status": "designed",
+   "dialogue": {
+    "plea": "The Leviathan is in pain. Purify it and it will remember us.",
+    "freed": "The reef glows again, and the Leviathan sings to you.",
+    "farewell": "The sea will come to the palace to watch your night."
+   }
   },
   {
    "id": "gardener_of_glass",
@@ -1447,9 +2018,14 @@
    "place": "B25",
    "face": "soft_features",
    "lines": [
-    "Thank you for bringing back the light."
+    "Choose any flower you like. They all grew for you."
    ],
-   "status": "designed"
+   "status": "designed",
+   "dialogue": {
+    "plea": "Light makes glass bloom. Shine on my garden.",
+    "freed": "Choose any flower you like. They all grew for you.",
+    "farewell": "The finest bouquet will wait for you at midnight."
+   }
   },
   {
    "id": "elder_dragon",
@@ -1458,9 +2034,14 @@
    "place": "B26",
    "face": "soft_features",
    "lines": [
-    "Thank you for bringing back the light."
+    "Dragons never forget a friend, and now you have a hundred."
    ],
-   "status": "designed"
+   "status": "designed",
+   "dialogue": {
+    "plea": "Ride the young dragons. Show the old one what joy looks like.",
+    "freed": "Dragons never forget a friend, and now you have a hundred.",
+    "farewell": "At midnight, the dragons will paint the sky with fire for you."
+   }
   },
   {
    "id": "oasis_keeper",
@@ -1469,9 +2050,14 @@
    "place": "B27",
    "face": "soft_features",
    "lines": [
-    "Thank you for bringing back the light."
+    "The oasis flows again. Drink, rest, and take a lantern of sand."
    ],
-   "status": "designed"
+   "status": "designed",
+   "dialogue": {
+    "plea": "Only true friends can see the real water. Find it together.",
+    "freed": "The oasis flows again. Drink, rest, and take a lantern of sand.",
+    "farewell": "The desert will send its warmest stars to your celebration."
+   }
   },
   {
    "id": "snow_weaver",
@@ -1480,9 +2066,14 @@
    "place": "B28",
    "face": "soft_features",
    "lines": [
-    "Thank you for bringing back the light."
+    "The ice is clear as glass now, and it holds your reflection."
    ],
-   "status": "designed"
+   "status": "designed",
+   "dialogue": {
+    "plea": "Carve something beautiful together, and the frost will let go.",
+    "freed": "The ice is clear as glass now, and it holds your reflection.",
+    "farewell": "We will carve the cake stand for your midnight."
+   }
   },
   {
    "id": "crystal_miner",
@@ -1491,9 +2082,14 @@
    "place": "B29",
    "face": "soft_features",
    "lines": [
-    "Thank you for bringing back the light."
+    "The caverns are glowing again. Take the brightest crystal."
    ],
-   "status": "designed"
+   "status": "designed",
+   "dialogue": {
+    "plea": "Find the true echo, and the crystals will sing it back.",
+    "freed": "The caverns are glowing again. Take the brightest crystal.",
+    "farewell": "Our crystals will light the theatre at midnight."
+   }
   },
   {
    "id": "cloud_shepherd",
@@ -1502,9 +2098,14 @@
    "place": "B30",
    "face": "soft_features",
    "lines": [
-    "Thank you for bringing back the light."
+    "The whole sky is singing. The whales will never forget you."
    ],
-   "status": "designed"
+   "status": "designed",
+   "dialogue": {
+    "plea": "Guide the little ones home. They will follow kind voices.",
+    "freed": "The whole sky is singing. The whales will never forget you.",
+    "farewell": "The sky whales will swim over the palace at midnight."
+   }
   },
   {
    "id": "meadow_queen",
@@ -1513,9 +2114,14 @@
    "place": "B31",
    "face": "soft_features",
    "lines": [
-    "Thank you for bringing back the light."
+    "Every flower here is a little brighter because of you."
    ],
-   "status": "designed"
+   "status": "designed",
+   "dialogue": {
+    "plea": "Paint the field, and the flowers will wake.",
+    "freed": "Every flower here is a little brighter because of you.",
+    "farewell": "The meadow will send a flower crown for your midnight."
+   }
   },
   {
    "id": "ringmaster",
@@ -1524,9 +2130,14 @@
    "place": "B32",
    "face": "soft_features",
    "lines": [
-    "Thank you for bringing back the light."
+    "Ladies and gentlemen, the champions of the fair!"
    ],
-   "status": "designed"
+   "status": "designed",
+   "dialogue": {
+    "plea": "Win the finals, and the fair will shine again.",
+    "freed": "Ladies and gentlemen, the champions of the fair!",
+    "farewell": "The whole fair will march to the palace with music."
+   }
   },
   {
    "id": "the_hush",
@@ -2558,6 +3169,7 @@
     "skyPhase": "morning",
     "cutscenes": [
      "arrival",
+     "her_welcome",
      "mew_bond"
     ]
    },
@@ -2577,9 +3189,15 @@
     "summary": "Free each head, befriend creatures, play the game, beat the challenge, win the shard; saved people go to the palace.",
     "skyPhase": "afternoon",
     "cutscenes": [
+     "travel",
      "enter_place",
-     "head_freed",
+     "meet_people",
+     "frozen_head",
+     "befriend",
      "boss_entrance",
+     "head_freed",
+     "shard",
+     "farewell",
      "tournament"
     ]
    },
@@ -2680,101 +3298,641 @@
   {
    "id": "arrival",
    "name": "Arrival ride and aerial reveal",
-   "trigger": "player joins",
+   "trigger": "a player joins",
    "audience": "joiner",
    "seconds": 60,
+   "shortSeconds": 20,
    "skippable": true,
+   "music": "palace_theme",
    "shots": [
-    "docks",
-    "gate opens",
-    "ride through falls",
-    "aerial sweep",
-    "bridge",
-    "doors"
+    {
+     "type": "wide",
+     "seconds": 6,
+     "what": "Dawn at the sea docks outside the crescent; her ride waits, sparkling",
+     "subject": "docks"
+    },
+    {
+     "type": "tracking",
+     "seconds": 8,
+     "what": "The ride sets off across the water towards the white waterfall wall",
+     "subject": "ride"
+    },
+    {
+     "type": "close_up",
+     "seconds": 5,
+     "what": "The waterfall veil parts like curtains; light pours through",
+     "subject": "gate",
+     "vfx": [
+      "mist",
+      "rainbow"
+     ]
+    },
+    {
+     "type": "pov",
+     "seconds": 6,
+     "what": "Riding through the falls; spray, sparkles, then sudden calm",
+     "subject": "gate"
+    },
+    {
+     "type": "establishing_aerial",
+     "seconds": 14,
+     "what": "The camera soars up: the crescent of mountains, 32 places, the palace glowing in the middle",
+     "subject": "crescent"
+    },
+    {
+     "type": "flyover",
+     "seconds": 9,
+     "what": "Down along the long marble bridge; each step ripples in neon colours",
+     "subject": "bridge"
+    },
+    {
+     "type": "crane_up",
+     "seconds": 7,
+     "what": "Up the palace facade, gold petal arch, purple domes",
+     "subject": "palace"
+    },
+    {
+     "type": "dolly_in",
+     "seconds": 5,
+     "what": "The giant doors swing open",
+     "subject": "palace_doors"
+    }
+   ]
+  },
+  {
+   "id": "her_welcome",
+   "name": "Her welcome",
+   "trigger": "the honoree reaches the palace doors",
+   "audience": "all",
+   "seconds": 25,
+   "skippable": false,
+   "music": "palace_theme",
+   "shots": [
+    {
+     "type": "wide",
+     "seconds": 6,
+     "what": "The great hall: her friends waiting in their party outfits",
+     "subject": "hall"
+    },
+    {
+     "type": "close_up",
+     "seconds": 4,
+     "what": "Her friends turn and cheer",
+     "subject": "friends"
+    },
+    {
+     "type": "crane_up",
+     "seconds": 7,
+     "what": "Confetti, petals and lanterns fill the hall; the banner reads Happy Birthday {her}",
+     "subject": "hall",
+     "vfx": [
+      "confetti",
+      "petals"
+     ]
+    },
+    {
+     "type": "two_shot",
+     "seconds": 8,
+     "what": "The Head Courtier bows",
+     "subject": "courtier",
+     "line": {
+      "who": "palace_steward",
+      "text": "Welcome, {her}. Tonight, this whole world is yours."
+     }
+    }
    ]
   },
   {
    "id": "mew_bond",
    "name": "The Mew bonds with her",
-   "trigger": "honoree reaches the doors",
+   "trigger": "after her welcome",
    "audience": "all",
-   "seconds": 25
-  },
-  {
-   "id": "ship_docks",
-   "name": "Flying ship docks with the men",
-   "trigger": "men join",
-   "audience": "all",
-   "seconds": 20
-  },
-  {
-   "id": "the_hush",
-   "name": "The Hush",
-   "trigger": "21:10 or host start",
-   "audience": "all",
-   "seconds": 45,
+   "seconds": 25,
    "shots": [
-    "sky darkens",
-    "lantern cracks",
-    "32 shards streak out",
-    "colour drains"
+    {
+     "type": "insert",
+     "seconds": 4,
+     "what": "A small pink glow tumbles down from the chandelier",
+     "subject": "mew"
+    },
+    {
+     "type": "close_up",
+     "seconds": 6,
+     "what": "The Mew, eyeless and smiling, floats upside down in front of her, tail wagging",
+     "subject": "mew"
+    },
+    {
+     "type": "two_shot",
+     "seconds": 7,
+     "what": "It boops her nose and mews",
+     "subject": "mew",
+     "line": {
+      "who": "mew",
+      "text": "Mew!"
+     }
+    },
+    {
+     "type": "orbit",
+     "seconds": 8,
+     "what": "It circles her once, and a ribbon of light ties them together",
+     "subject": "mew",
+     "vfx": [
+      "bond_ribbon"
+     ]
+    }
    ]
   },
   {
-   "id": "enter_place",
-   "name": "Entering a place",
-   "trigger": "group arrives at a place",
+   "id": "ship_docks",
+   "name": "The flying ship docks with the men",
+   "trigger": "the men join",
    "audience": "all",
-   "seconds": 8,
-   "reusable": true,
-   "skippable": true
+   "seconds": 20,
+   "music": "adventure_theme",
+   "shots": [
+    {
+     "type": "wide",
+     "seconds": 5,
+     "what": "A shadow passes over the palace terrace",
+     "subject": "sky"
+    },
+    {
+     "type": "crane_up",
+     "seconds": 8,
+     "what": "The flying ship sails out of the clouds, sails glowing",
+     "subject": "flying_ship"
+    },
+    {
+     "type": "tracking",
+     "seconds": 7,
+     "what": "It docks at the terrace; the men step down the gangway",
+     "subject": "flying_ship"
+    }
+   ]
   },
   {
-   "id": "head_freed",
-   "name": "A head is freed",
-   "trigger": "challenge won",
+   "id": "the_hush",
+   "name": "The Hush falls",
+   "trigger": "21:10 or the host starts it",
    "audience": "all",
-   "seconds": 10,
-   "reusable": true
-  },
-  {
-   "id": "boss_entrance",
-   "name": "Boss entrance",
-   "trigger": "boss challenge starts",
-   "audience": "all",
-   "seconds": 12,
-   "reusable": true
+   "seconds": 45,
+   "skippable": false,
+   "shots": [
+    {
+     "type": "wide",
+     "seconds": 6,
+     "what": "Everyone gathers under the Great Birthday Lantern",
+     "subject": "lantern"
+    },
+    {
+     "type": "crane_up",
+     "seconds": 6,
+     "what": "The sky darkens; a cold grey fog rolls over the mountains",
+     "subject": "sky",
+     "vfx": [
+      "grey_fog"
+     ]
+    },
+    {
+     "type": "close_up",
+     "seconds": 6,
+     "what": "A crack runs across the lantern",
+     "subject": "lantern"
+    },
+    {
+     "type": "wide",
+     "seconds": 8,
+     "what": "The lantern shatters into 32 star shards that streak out across the world",
+     "subject": "sky",
+     "vfx": [
+      "star_trails"
+     ]
+    },
+    {
+     "type": "establishing_aerial",
+     "seconds": 8,
+     "what": "Colour drains from the land, place by place",
+     "subject": "crescent",
+     "vfx": [
+      "colour_drain"
+     ]
+    },
+    {
+     "type": "close_up",
+     "seconds": 6,
+     "what": "The Hush, a jealous shadow of fog and grey glass, speaks",
+     "subject": "the_hush",
+     "line": {
+      "who": "the_hush"
+     }
+    },
+    {
+     "type": "two_shot",
+     "seconds": 5,
+     "what": "The Mew tugs her sleeve and points to the first place",
+     "subject": "mew"
+    }
+   ]
   },
   {
    "id": "tournament",
-   "name": "Tournament entrance",
-   "trigger": "arrive at B08",
+   "name": "The Birthday Tournament",
+   "trigger": "arrival at B08",
    "audience": "all",
-   "seconds": 20
+   "seconds": 20,
+   "music": "tournament_fanfare",
+   "shots": [
+    {
+     "type": "establishing_aerial",
+     "seconds": 6,
+     "what": "The colosseum, banners in every colour",
+     "subject": "B08"
+    },
+    {
+     "type": "tracking",
+     "seconds": 8,
+     "what": "The friends walk out into the arena; griffins fly overhead",
+     "subject": "group"
+    },
+    {
+     "type": "title_card",
+     "seconds": 6,
+     "what": "The herald announces the champions",
+     "subject": "B08",
+     "line": {
+      "who": "local",
+      "key": "greet"
+     }
+    }
+   ]
   },
   {
    "id": "return_palace",
    "name": "Return to the palace",
-   "trigger": "last shard before the final boss",
+   "trigger": "the last shard before the final boss",
    "audience": "all",
-   "seconds": 30
+   "seconds": 30,
+   "music": "adventure_theme",
+   "shots": [
+    {
+     "type": "establishing_aerial",
+     "seconds": 10,
+     "what": "Night falls; every freed people travels to the palace in long lines of light",
+     "subject": "crescent"
+    },
+    {
+     "type": "flyover",
+     "seconds": 10,
+     "what": "Gondolas, longboats, dragons, sky whales and lanterns converge on the palace",
+     "subject": "palace"
+    },
+    {
+     "type": "wide",
+     "seconds": 10,
+     "what": "The Hush waits in the heart of the palace",
+     "subject": "the_hush"
+    }
+   ]
   },
   {
    "id": "finale",
-   "name": "Midnight finale and reveal",
+   "name": "Midnight finale and the reveal",
    "trigger": "celebrationAt",
    "audience": "all",
    "seconds": 300,
    "skippable": false,
    "music": "choir_theme",
    "shots": [
-    "roof opens",
-    "floor rises",
-    "pavilions and waterfalls form the theatre",
-    "jellyfish and dragons",
-    "cake cut by ribbons of light",
-    "slices float to guests",
-    "the Mew glows gold and becomes the owner"
+    {
+     "type": "wide",
+     "seconds": 20,
+     "what": "The clock strikes midnight; the choir begins",
+     "subject": "hall"
+    },
+    {
+     "type": "crane_up",
+     "seconds": 30,
+     "what": "The glass roof opens like a flower",
+     "subject": "palace_roof"
+    },
+    {
+     "type": "tracking",
+     "seconds": 40,
+     "what": "The floor rises into the sky; pavilions and waterfalls form a floating theatre",
+     "subject": "theatre"
+    },
+    {
+     "type": "flyover",
+     "seconds": 40,
+     "what": "Jellyfish swarms, sky whales and dragons breathing flame light the sky",
+     "subject": "sky",
+     "vfx": [
+      "jellyfish",
+      "dragon_fire",
+      "fireworks"
+     ]
+    },
+    {
+     "type": "close_up",
+     "seconds": 30,
+     "what": "The Mew cuts the giant cake with ribbons of light",
+     "subject": "cake"
+    },
+    {
+     "type": "wide",
+     "seconds": 30,
+     "what": "Slices float to every guest by magic",
+     "subject": "guests"
+    },
+    {
+     "type": "two_shot",
+     "seconds": 40,
+     "what": "The Mew glows gold and grows into the owner's human avatar",
+     "subject": "mew",
+     "vfx": [
+      "gold_glow"
+     ]
+    },
+    {
+     "type": "close_up",
+     "seconds": 30,
+     "what": "He calls her name",
+     "subject": "owner",
+     "line": {
+      "who": "owner",
+      "text": "Happy birthday, {her}."
+     }
+    },
+    {
+     "type": "crane_up",
+     "seconds": 40,
+     "what": "Everyone she saved fills the theatre and cheers",
+     "subject": "theatre",
+     "vfx": [
+      "confetti",
+      "petals",
+      "fireworks"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "travel",
+   "name": "Travelling to the next place",
+   "trigger": "the group sets off from a freed place",
+   "audience": "all",
+   "reusable": true,
+   "skippable": true,
+   "seconds": 20,
+   "shortSeconds": 6,
+   "music": "adventure_theme",
+   "shots": [
+    {
+     "type": "tracking",
+     "seconds": 6,
+     "what": "The group rides out together; the ship or their rides lift off",
+     "subject": "group"
+    },
+    {
+     "type": "flyover",
+     "seconds": 8,
+     "what": "Aerial journey over the crescent; the Mew flies ahead and looks back",
+     "subject": "route"
+    },
+    {
+     "type": "title_card",
+     "seconds": 6,
+     "what": "The next place rises over the horizon; its name writes itself in gold light",
+     "subject": "place"
+    }
+   ]
+  },
+  {
+   "id": "enter_place",
+   "name": "Arriving at a place",
+   "trigger": "the group arrives at a place",
+   "audience": "all",
+   "reusable": true,
+   "skippable": true,
+   "seconds": 15,
+   "shortSeconds": 5,
+   "shots": [
+    {
+     "type": "establishing_aerial",
+     "seconds": 6,
+     "what": "Slow orbit high over the place, drained to grey by the Hush",
+     "subject": "place"
+    },
+    {
+     "type": "crane_down",
+     "seconds": 5,
+     "what": "Camera sinks to the plaza; the creatures hide",
+     "subject": "plaza"
+    },
+    {
+     "type": "wide",
+     "seconds": 4,
+     "what": "The group lands; the local runs up to them",
+     "subject": "group"
+    }
+   ]
+  },
+  {
+   "id": "meet_people",
+   "name": "Meeting the people",
+   "trigger": "after arriving",
+   "audience": "all",
+   "reusable": true,
+   "seconds": 15,
+   "shortSeconds": 8,
+   "shots": [
+    {
+     "type": "two_shot",
+     "seconds": 8,
+     "what": "The local greets her and the group",
+     "subject": "local",
+     "line": {
+      "who": "local",
+      "key": "greet"
+     }
+    },
+    {
+     "type": "over_shoulder",
+     "seconds": 7,
+     "what": "The local points to the frozen head",
+     "subject": "head"
+    }
+   ]
+  },
+  {
+   "id": "frozen_head",
+   "name": "The frozen head",
+   "trigger": "the group reaches the head",
+   "audience": "all",
+   "reusable": true,
+   "seconds": 12,
+   "shortSeconds": 6,
+   "shots": [
+    {
+     "type": "dolly_in",
+     "seconds": 7,
+     "what": "Slow push in to the head, frozen in grey glass; a faint glow pulses inside",
+     "subject": "head"
+    },
+    {
+     "type": "close_up",
+     "seconds": 5,
+     "what": "The voice from inside the glass",
+     "subject": "head",
+     "line": {
+      "who": "head",
+      "key": "plea"
+     }
+    }
+   ]
+  },
+  {
+   "id": "befriend",
+   "name": "Befriending the creatures",
+   "trigger": "a creature is befriended for the first time here",
+   "audience": "all",
+   "reusable": true,
+   "skippable": true,
+   "seconds": 8,
+   "shortSeconds": 3,
+   "shots": [
+    {
+     "type": "close_up",
+     "seconds": 4,
+     "what": "The creature peeks out shyly, then comes closer",
+     "subject": "creature"
+    },
+    {
+     "type": "orbit",
+     "seconds": 4,
+     "what": "It circles her and settles beside the group; a capture is taken",
+     "subject": "creature",
+     "vfx": [
+      "sparkles"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "boss_entrance",
+   "name": "Boss entrance",
+   "trigger": "a boss challenge starts",
+   "audience": "all",
+   "reusable": true,
+   "seconds": 12,
+   "music": "battle_theme",
+   "shots": [
+    {
+     "type": "wide",
+     "seconds": 4,
+     "what": "The ground shakes; the sky darkens over the place",
+     "subject": "place"
+    },
+    {
+     "type": "crane_up",
+     "seconds": 5,
+     "what": "The boss rises to full height",
+     "subject": "boss",
+     "vfx": [
+      "shadow_mist"
+     ]
+    },
+    {
+     "type": "title_card",
+     "seconds": 3,
+     "what": "The boss's name slams onto the screen",
+     "subject": "boss"
+    }
+   ]
+  },
+  {
+   "id": "head_freed",
+   "name": "The head is freed",
+   "trigger": "the challenge is won",
+   "audience": "all",
+   "reusable": true,
+   "seconds": 15,
+   "shortSeconds": 8,
+   "shots": [
+    {
+     "type": "close_up",
+     "seconds": 3,
+     "what": "Cracks of light run through the grey glass",
+     "subject": "head"
+    },
+    {
+     "type": "wide",
+     "seconds": 4,
+     "what": "The glass bursts into petals; colour washes outward over the whole place",
+     "subject": "place",
+     "vfx": [
+      "petal_burst",
+      "colour_wave"
+     ]
+    },
+    {
+     "type": "two_shot",
+     "seconds": 8,
+     "what": "The head thanks her",
+     "subject": "head",
+     "line": {
+      "who": "head",
+      "key": "freed"
+     }
+    }
+   ]
+  },
+  {
+   "id": "shard",
+   "name": "The star shard",
+   "trigger": "after the head is freed",
+   "audience": "all",
+   "reusable": true,
+   "seconds": 8,
+   "shortSeconds": 4,
+   "shots": [
+    {
+     "type": "crane_up",
+     "seconds": 4,
+     "what": "A star shard rises out of the place and floats to her hands",
+     "subject": "shard",
+     "vfx": [
+      "star_trail"
+     ]
+    },
+    {
+     "type": "insert",
+     "seconds": 4,
+     "what": "The shard flies up to the lantern in the sky; the count ticks up (5 of 32)",
+     "subject": "sky_lantern"
+    }
+   ]
+  },
+  {
+   "id": "farewell",
+   "name": "Farewell",
+   "trigger": "the group leaves",
+   "audience": "all",
+   "reusable": true,
+   "skippable": true,
+   "seconds": 8,
+   "shortSeconds": 4,
+   "shots": [
+    {
+     "type": "wide",
+     "seconds": 8,
+     "what": "The head and the people set off towards the palace, waving",
+     "subject": "people",
+     "line": {
+      "who": "head",
+      "key": "farewell"
+     }
+    }
    ]
   }
  ],
@@ -4833,6 +5991,33 @@
    "shard",
    "cutscene",
    "mew_action"
+  ]
+ },
+ "cinema": {
+  "look": "Letterbox bars slide in (2.35:1), shallow depth of field, a warm grade, and soft film grain. Every scene is a live camera in the game world, never a video.",
+  "sync": "The host starts a scene for everyone at the same moment (net message \"cutscene\" with id, place and start time), so all friends see it together.",
+  "players": "Friends stand on marks around the subject; first-person players see the camera cut. Their pets and the Mew stay in frame.",
+  "voices": "Characters speak in soft musical babble with subtitles, each with their own pitch. The Mew only mews. No voice acting needed.",
+  "skip": "A reusable scene plays in full the first time and in its short version after that. Unique scenes can be skipped only by majority vote, except the finale.",
+  "pacing": "A full place visit has about 90 seconds of scenes inside roughly 10 minutes of play, so the story never stalls the fun.",
+  "shotTypes": [
+   "establishing_aerial",
+   "flyover",
+   "crane_down",
+   "crane_up",
+   "orbit",
+   "dolly_in",
+   "dolly_out",
+   "tracking",
+   "two_shot",
+   "close_up",
+   "over_shoulder",
+   "pov",
+   "wide",
+   "insert",
+   "title_card",
+   "whip_pan",
+   "fade"
   ]
  }
 }
