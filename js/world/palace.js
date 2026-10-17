@@ -1650,7 +1650,7 @@ export function createPalace(scene, preset, { makePortal } = {}) {
   }
   for (const z of [-250, 100]) {
     falls.push(new THREE.PlaneGeometry(16, 52, 1, 12).rotateY(Math.PI / 2).translate(450.6, 26, z));
-    water.push(new THREE.CircleGeometry(17, 24).rotateX(-Math.PI / 2).translate(468, 0.2, z));
+    water.push(new THREE.CircleGeometry(9, 24).rotateX(-Math.PI / 2).translate(460, 0.2, z));      // inside the mesa lip (x 470 drawn)
   }
 
   // ---- lotus fountains (A035) on the roofs ----
