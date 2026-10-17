@@ -52,7 +52,7 @@ const SITES1 = {
   B22: { name: 'Lighthouse', x: -1920, z: 3180, pad: { r: 70, y: 10, e: 50 } },
   B23: { name: 'Sea Pavilion', x: 1620, z: 3480, pad: { r: 110, y: 4, e: 100 } },
   B24: { name: 'Reef Shrine', x: 2940, z: 3120, pad: { r: 60, y: 2.5, e: 40 } },
-  B25: { name: 'Crystal Conservatory', x: -420, z: -540, pad: { r: 80, y: 40, e: 40 } },
+  B25: { name: 'Crystal Conservatory', x: -420, z: -540, pad: { r: 80, y: 40, e: 8 } },
 };
 const EXTRA_PADS1 = [
   { x: -2650, z: 1050, r: 70, y: 4, e: 25 }, { x: -2330, z: 1380, r: 60, y: 4, e: 25 },   // Lagoon City islets
@@ -273,11 +273,12 @@ function palaceGround(x, z) {
   // the plateau the palace stands on, with B25 beside it
   const dx = Math.max(0, x - 470, -425 - x), dz = Math.max(0, -420 - z, z - PAL1.hd);
   const d = Math.hypot(dx, dz);
-  if (z <= PAL1.hd + 2 && d < 260) return [PAL1.y - 0.4, 1 - smooth(0, 260, d)];
+  // (the heightmap holds the plateau and terraces as a sheer mesa in its moat, so the blend is only a lip)
+  if (z <= PAL1.hd + 2 && d < 6) return [PAL1.y - 0.4, 1 - smooth(0, 6, d)];
   for (const T of TERRACES1) {
     if (z > T.z0 - 2 && z <= T.z1 + 2) {
       const e = Math.max(0, ax - T.hw);
-      if (e < 200) return [T.y - 0.4, 1 - smooth(0, 200, e)];
+      if (e < 6) return [T.y - 0.4, 1 - smooth(0, 6, e)];
     }
   }
   return [null, 0];

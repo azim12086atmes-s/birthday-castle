@@ -151,6 +151,7 @@ export function createPaths(scene, quality) {
     // --- bridges: an arched stone deck with low parapets ---
     const deckMat = nightGrade(new THREE.MeshLambertMaterial({ color: '#efe6f0' }), 'bridge');
     for (const b of P.bridges) {
+      if (b.kind === 'viaduct') continue;          // the viaduct models carry their own decks
       const [x0, y0, z0] = b.start, [x1, y1, z1] = b.end;
       const len = Math.hypot(x1 - x0, z1 - z0);
       if (len < 2) continue;

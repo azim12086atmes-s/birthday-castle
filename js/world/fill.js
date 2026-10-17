@@ -10,7 +10,7 @@
 import * as THREE from 'three';
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 import { MeshoptDecoder } from 'three/addons/libs/meshopt_decoder.module.js';
-import { groundAt } from './layout.js';
+import { groundAt, addPad } from './layout.js';
 import { crescentH } from './crescent.js';
 import { MOOD, FOG_COLOR } from './sky.js';
 
@@ -75,16 +75,18 @@ export function createWorldFill(scene, quality) {
       const M = models.get(m);
       if (!M) continue;
       // sit on the game's own ground: the palace terraces and district pads differ a little from the raw crescent
-      // (sky isles and the great ridge's citadels keep their own height)
+      // (sky isles, the great ridge's citadels and the cliff kit's viaducts and sea pillars keep their own height)
       const g = far ? -1 : groundAt(x, z, y + 5);
       const yy = g < 0 ? y : y + THREE.MathUtils.clamp(g - crescentH(x, z), -15, 60);
       const mat = new THREE.Matrix4().compose(new THREE.Vector3(x, yy, z), new THREE.Quaternion().setFromAxisAngle(new THREE.Vector3(0, 1, 0), rot), new THREE.Vector3(s, s, s));
-      M.items.push({ x, z, mat, place, k: far ? 3 : 1 });
+      M.items.push({ x, z, mat, place, k: far === 1 ? 3 : far ? 1.5 : 1 });
       const dims = P.models[m].dims;
-      if (M.tier !== 'prop' && place !== 'sky') footprints.push({ x, z, r: 0.5 * Math.max(dims[0], dims[2]) * s });
+      if (M.tier !== 'prop' && place !== 'sky' && place !== 'cliffs') footprints.push({ x, z, r: 0.5 * Math.max(dims[0], dims[2]) * s });
     }
     ready = true;
   });
+  // the viaducts' level decks are walkable
+  fetch('data/world/viaducts.json').then((r) => r.json()).then((V) => { for (const p of V.pads) addPad({ ...p, y0: p.y - 10.5 }); }).catch(() => {});
 
   // ---- loading -----------------------------------------------------------------
   const queue = [];
@@ -127,7 +129,16 @@ export function createWorldFill(scene, quality) {
         gltf.scene.updateMatrixWorld(true);
         gltf.scene.traverse((o) => {
           if (!o.isMesh) return;
-          const geo = o.geometry.clone().applyMatrix4(o.matrixWorld);
+          const geo = o.geometry.clone();
+          // quantized positions and normals (meshopt) would clamp when transformed: widen them to floats first
+          for (const name of ['position', 'normal']) {
+            const at = geo.attributes[name];
+            if (!at || at.array instanceof Float32Array && !at.isInterleavedBufferAttribute) continue;
+            const f = new Float32Array(at.count * at.itemSize);
+            for (let i = 0; i < at.count; i++) for (let c = 0; c < at.itemSize; c++) f[i * at.itemSize + c] = at.getComponent(i, c);
+            geo.setAttribute(name, new THREE.BufferAttribute(f, at.itemSize));
+          }
+          geo.applyMatrix4(o.matrixWorld);
           const mat = o.material;
           mat.metalness = 0; mat.roughness = Math.max(mat.roughness ?? 1, 0.75);
           const im = new THREE.InstancedMesh(geo, mat, M.items.length);
