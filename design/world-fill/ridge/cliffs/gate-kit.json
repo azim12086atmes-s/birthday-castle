@@ -1,0 +1,43 @@
+[
+{
+"m": "GateTunnel",
+"place": "gate",
+"x": -710.0,
+"y": 0.0,
+"z": 10420.0,
+"rotY": 0.0,
+"scale": 1.0,
+"new": true
+},
+{
+"m": "GatePortalNorth",
+"place": "gate",
+"x": -710.0,
+"y": 0.0,
+"z": 10420.0,
+"rotY": 0.0,
+"scale": 1.0,
+"new": true
+},
+{
+"m": "GateDoor",
+"place": "gate",
+"x": -730.0,
+"y": 688.0,
+"z": 11878.0,
+"rotY": 0.0,
+"scale": 1.0,
+"new": true,
+"door": "west leaf; mirror for the east leaf (scale x -1 at x + width), swing open 100 degrees"
+},
+{
+"m": "CloudPlatform",
+"place": "gate",
+"x": -710.0,
+"y": 0.0,
+"z": 12020.0,
+"rotY": 0.0,
+"scale": 1.0,
+"new": true
+}
+]

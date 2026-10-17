@@ -1,4 +1,5 @@
-"""Arched viaducts and sea pillars for the palace cliffs (owner, Oct 17 14:41).
+"""Sky palace update (Oct 17 19:29): tall tiered arcades for decks at 340-640 m and the 688 m sky bridge (repeat segment).
+Arched viaducts and sea pillars for the palace cliffs (owner, Oct 17 14:41).
 bpy python viaduct.py -- cliffs.json OUTDIR marble.png
 Each bridge in cliffs.json becomes one GLB: a two-tier arcade of tall rose-marble pillars standing in the water,
 pointed lancet arches below and paired small arches above, a deck with balustrades, lanterns and crystal-topped
@@ -8,7 +9,7 @@ import bpy, bmesh, sys, json, math, os
 from mathutils import Vector
 a = sys.argv[sys.argv.index('--') + 1:]
 C = json.load(open(a[0])); OUT = a[1]; TEX = a[2]; os.makedirs(OUT, exist_ok=True)
-DECK = C['deck_y']
+DECK = C.get('deck_y', 110.5)
 
 def reset():
     bpy.ops.wm.read_factory_settings(use_empty=True)
@@ -81,55 +82,66 @@ def lancet(x0, x1, zs, za, n=10):
         right.append((cxr + R * math.cos(ang), zs + R * math.sin(ang)))
     return pts + right[::-1][1:]
 
-def viaduct(B, M, name, L, width):
-    H = B.get('deck', DECK); n = max(2, round(L / 62)); span = L / n; pw = min(5.5, span * 0.09); dep = width - 2
-    b = Builder(); x0 = -L / 2
-    zs1, za1 = H * 0.40, H * 0.74                      # the tall lancets
-    zs2, za2 = H * 0.80, H * 0.92                      # the small paired arches under the deck
-    for i in range(n + 1):                             # pillars, plinths, capitals, cutwaters
-        x = x0 + i * span
-        b.box('base', x - pw * 1.5, x + pw * 1.5, -dep / 2 - 3, dep / 2 + 3, -10, 6)                 # wet plinth
-        b.box('moss', x - pw * 1.55, x + pw * 1.55, -dep / 2 - 3.1, dep / 2 + 3.1, 0.2, 2.4)          # moss band at the water
-        b.box('rose', x - pw, x + pw, -dep / 2 - 1.2, dep / 2 + 1.2, 6, H - 2)                     # shaft (buttressed)
-        b.box('marble', x - pw * 1.25, x + pw * 1.25, -dep / 2 - 1.6, dep / 2 + 1.6, zs1 - 3, zs1)   # impost band
-        b.box('gold', x - pw * 1.3, x + pw * 1.3, -dep / 2 - 1.7, dep / 2 + 1.7, zs1 - 3.6, zs1 - 3)
-        b.box('marble', x - pw * 1.2, x + pw * 1.2, -dep / 2 - 1.5, dep / 2 + 1.5, zs2 - 2, zs2)
-        # cutwater prow up and downstream
-        for s in (-1, 1):
-            b.cyl('base', x, s * (dep / 2 + 3), -10, 10, pw * 1.5, pw * 0.4, 4)
-        # pinnacle over the pillar above the deck, crystal on top
-        for s in (-1, 1):
-            y = s * (width / 2 + 0.2)
-            b.box('marble', x - 1.4, x + 1.4, y - 1.4, y + 1.4, H, H + 7)
-            b.cyl('gold', x, y, H + 7, H + 12, 1.6, 0.15, 8)
-            b.sphere('glow', x, y, H + 13, 0.9)
-    for i in range(n):                                   # arch walls between pillars
-        a0, a1 = x0 + i * span + pw, x0 + (i + 1) * span - pw
-        low = lancet(a0, a1, zs1, za1)
-        outline = low + [(a1, zs2 - 2), (a0, zs2 - 2)]
-        b.wall('marble', outline, -dep / 2, dep / 2)
-        # arch band in gold just proud of the face
-        for s in (-1, 1):
-            band = [(x, z + 0.0) for x, z in lancet(a0 - 0.9, a1 + 0.9, zs1, za1 + 1.4)] + [(x, z) for x, z in lancet(a0, a1, zs1, za1)][::-1]
-            b.wall('gold', band, s * dep / 2, s * (dep / 2 + 0.4))
-        # the paired small arches above
-        mid = (a0 + a1) / 2; q = 1.6
-        for c0, c1 in ((a0, mid - q), (mid + q, a1)):
-            up = lancet(c0, c1, zs2, za2, 6)
-            b.wall('rose', up + [(c1, H - 2), (c0, H - 2)], -dep / 2 + 0.6, dep / 2 - 0.6)
-        b.box('marble', mid - q, mid + q, -dep / 2, dep / 2, zs2 - 2, H - 2)
-    # deck slab, cornice, balustrade, lanterns
-    b.box('marble', -L / 2 - 4, L / 2 + 4, -width / 2 - 0.6, width / 2 + 0.6, H - 2.2, H - 0.05)
-    b.box('gold', -L / 2 - 4, L / 2 + 4, -width / 2 - 0.9, width / 2 + 0.9, H - 2.6, H - 2.2)
-    for s in (-1, 1):
-        y = s * (width / 2 - 0.3)
-        b.box('marble', -L / 2, L / 2, y - 0.3, y + 0.3, H + 0.95, H + 1.2)            # rail
-        k = 0; x = -L / 2
-        while x <= L / 2:
-            b.box('marble', x - 0.18, x + 0.18, y - 0.18, y + 0.18, H, H + 0.95)        # baluster
-            if k % 14 == 7:
-                b.cyl('base', x, y, H, H + 4.2, 0.14, 0.1, 6); b.sphere('lamp', x, y, H + 4.5, 0.45)
+def tiered(b, L, H, width, span, base=-12.0, x0=None, ends=True):
+    """a Pont-du-Gard style arcade: stacked tiers of lancet arches, piers widening and deepening towards the foot,
+    from base up to the deck at H. Tiers ~150 m tall; the top tier carries paired small arches under the deck."""
+    x0 = -L / 2 if x0 is None else x0; n = max(1, round(L / span)); sp = L / n
+    tot = H - base; nt = max(1, round(tot / 150)); th = tot / nt; dep0 = width - 2
+    for t in range(nt):
+        z0, z1 = base + t * th, base + (t + 1) * th; u = (nt - 1 - t) / max(1, nt - 1)        # u = 1 at the foot
+        pw = min(sp * 0.16, 4.0 + 0.045 * sp + 6.0 * u); dep = dep0 + 2 + 16 * u
+        top_t = t == nt - 1
+        for i in range(n + 1):
+            x = x0 + i * sp
+            b.box('rose', x - pw, x + pw, -dep / 2, dep / 2, z0, z1 - (2 if top_t else 0))
+            for s_ in (-1, 1):                                                               # buttress fins up the pier
+                b.box('rose', x - pw * 0.45, x + pw * 0.45, s_ * dep / 2, s_ * (dep / 2 + 2.5 + 4 * u), z0, z1 - th * 0.35)
+                b.cyl('gold', x, s_ * (dep / 2 + 2.5 + 4 * u), z1 - th * 0.35, z1 - th * 0.35 + 9, 1.9, 0.12, 6)
+                b.sphere('glow', x, s_ * (dep / 2 + 2.5 + 4 * u), z1 - th * 0.35 + 10, 1.0)
+            if t == 0:
+                b.box('base', x - pw * 1.4, x + pw * 1.4, -dep / 2 - 3, dep / 2 + 3, base, base + 18)
+                b.box('moss', x - pw * 1.45, x + pw * 1.45, -dep / 2 - 3.1, dep / 2 + 3.1, 0.2, 2.6)
+            b.box('marble', x - pw * 1.15, x + pw * 1.15, -dep / 2 - 0.8, dep / 2 + 0.8, z1 - 5, z1 - 1.5)        # string course
+            b.box('gold', x - pw * 1.2, x + pw * 1.2, -dep / 2 - 1.0, dep / 2 + 1.0, z1 - 5.6, z1 - 5)
+        for i in range(n):
+            a0, a1 = x0 + i * sp + pw, x0 + (i + 1) * sp - pw
+            wdep = dep0 + 8 * u
+            if top_t:
+                zs, za = z0 + th * 0.18, z0 + th * 0.62
+                b.wall('marble', lancet(a0, a1, zs, za) + [(a1, z1 - th * 0.22), (a0, z1 - th * 0.22)], -wdep / 2, wdep / 2)
+                mid = (a0 + a1) / 2; q = 1.8
+                for c0, c1 in ((a0, mid - q), (mid + q, a1)):
+                    b.wall('rose', lancet(c0, c1, z1 - th * 0.22, z1 - th * 0.08, 6) + [(c1, H - 2), (c0, H - 2)], -wdep / 2 + 0.6, wdep / 2 - 0.6)
+                b.box('marble', mid - q, mid + q, -wdep / 2, wdep / 2, z1 - th * 0.22, H - 2)
+            else:
+                zs, za = z0 + th * 0.10, z1 - th * 0.12
+                b.wall('marble', lancet(a0, a1, zs, za) + [(a1, z1), (a0, z1)], -wdep / 2, wdep / 2)
+            for s_ in (-1, 1):
+                band = lancet(a0 - 1.2, a1 + 1.2, zs, za + 2.0) + lancet(a0, a1, zs, za)[::-1]
+                b.wall('gold', band, s_ * wdep / 2, s_ * (wdep / 2 + 0.5))
+    # deck slab, cornice, balustrade, lanterns, pinnacles over each pier
+    b.box('marble', x0 - (4 if ends else 0), x0 + L + (4 if ends else 0), -width / 2 - 0.6, width / 2 + 0.6, H - 2.2, H - 0.05)
+    b.box('gold', x0 - (4 if ends else 0), x0 + L + (4 if ends else 0), -width / 2 - 1.0, width / 2 + 1.0, H - 2.8, H - 2.2)
+    for s_ in (-1, 1):
+        y = s_ * (width / 2 - 0.3)
+        b.box('marble', x0, x0 + L, y - 0.35, y + 0.35, H + 1.0, H + 1.3)
+        k = 0; x = x0 + 1.25
+        while x <= x0 + L:
+            b.box('marble', x - 0.2, x + 0.2, y - 0.2, y + 0.2, H, H + 1.0)
+            if k % 12 == 6: b.cyl('base', x, y, H, H + 4.6, 0.16, 0.11, 6); b.sphere('lamp', x, y, H + 4.9, 0.5)
             x += 2.5; k += 1
+        for i in range(n + 1):
+            x = x0 + i * sp; yy = s_ * (width / 2 + 0.4)
+            b.box('marble', x - 1.6, x + 1.6, yy - 1.6, yy + 1.6, H, H + 8); b.cyl('gold', x, yy, H + 8, H + 14, 1.8, 0.15, 8); b.sphere('glow', x, yy, H + 15, 1.0)
+
+def viaduct(B, M, name, L, width):
+    H = B.get('deck', DECK); b = Builder()
+    tiered(b, L, H, width, span=min(90.0, max(55.0, L / max(1, round(L / 75)))))
+    return b.finish(M, name)
+
+def sky_segment(M, name, L, H, width):
+    """one repeat of the sky bridge: two great spans, piers from the valley floor (y -40) to the deck at H"""
+    b = Builder(); tiered(b, L, H, width, span=L / 2, base=-40.0, ends=False)
     return b.finish(M, name)
 
 def pillars(M):
@@ -190,5 +202,14 @@ reset(); M = mats()
 for nm, b in pillars(M).items():
     for o in list(bpy.data.objects): bpy.data.objects.remove(o)
     objs = b.finish(M, nm); export(objs, f'{OUT}/{nm}.glb')
+SK = C.get('sky')
+if SK:
+    (ax, az), (bx, bz) = SK['bridge']['a'], SK['bridge']['b']; Ls = math.hypot(bx - ax, bz - az); ns = math.ceil(Ls / 240.0); SEG = Ls / ns
+    ry = round(math.atan2(-(bz - az), bx - ax), 5)
+    reset(); M = mats()
+    objs = sky_segment(M, 'SkyBridge_Segment', SEG, SK['deck'], SK['bridge']['width']); export(objs, f'{OUT}/SkyBridge_Segment.glb')
+    segs = [dict(m='SkyBridge_Segment', x=round(ax + (bx - ax) * (k + 0.5) / ns, 2), z=round(az + (bz - az) * (k + 0.5) / ns, 2), y=0.0, rotY=ry, scale=1.0) for k in range(ns)]
+    json.dump(dict(segment=round(SEG, 3), deck=SK['deck'], length=round(Ls, 1), rotY=ry, items=segs, note=f'{ns} copies of one segment end to end along the line'), open(f'{OUT}/skybridge.json', 'w'), indent=0)
+    print('SKY SEGMENTS', ns)
 json.dump(index, open(f'{OUT}/viaducts.json', 'w'), indent=1)
 print('VIADUCTS', len(index))

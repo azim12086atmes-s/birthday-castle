@@ -13,10 +13,11 @@ def glb_dims(path):
     dx, dy, dz = [h - l for h, l in zip(hi, lo)]          # gltf y-up -> [x, z, y] as the game's dims
     return [round(dx, 3), round(dz, 3), round(dy, 3)]
 P = json.load(open(f'{D}/placements.json'))
-kit = lambda m: m.startswith(('CliffWall_', 'Viaduct_', 'SeaPillar_'))
+kit = lambda m: m.startswith(('CliffWall_', 'Viaduct_', 'SeaPillar_', 'SkyBridge_', 'Gate', 'CloudPlatform'))
 farflag = {(i[0], round(i[2], 1), round(i[4], 1)): i[7] for i in P['items'] if len(i) > 7}
 for m in [m for m in P['models'] if kit(m)]: del P['models'][m]
-for f in glob.glob(f'{D}/near/CliffWall_*.glb') + glob.glob(f'{D}/near/Viaduct_*.glb') + glob.glob(f'{D}/near/SeaPillar_*.glb'): os.remove(f)
+for pat in ('CliffWall_', 'Viaduct_', 'SeaPillar_', 'SkyBridge_', 'Gate', 'CloudPlatform'):
+    for f in glob.glob(f'{D}/near/{pat}*.glb'): os.remove(f)
 W = json.load(open(f'{R}/world-placements.json'))['items']
 items = []
 for it in W:
@@ -37,9 +38,18 @@ for k in ('SeaPillar_Basalt', 'SeaPillar_Column', 'SeaPillar_TwinArch', 'SeaPill
 for p in json.load(open(f'{R}/viaducts/pillars.json')): items.append([p['m'], 'cliffs', p['x'], 0.0, p['z'], p['rotY'], p['scale'], 2])
 for w in json.load(open(f'{R}/walls2/cliffwalls.json')):
     add_model(w['m'], f'{R}/walls2/{w["m"]}.glb'); items.append([w['m'], 'cliffs', w['x'], 0.0, w['z'], 0.0, 1.0, 3])
+SB = json.load(open(f'{R}/viaducts/skybridge.json')); add_model('SkyBridge_Segment', f'{R}/viaducts/SkyBridge_Segment.glb')
+for it in SB['items']: items.append([it['m'], 'sky-bridge', it['x'], 0.0, it['z'], it['rotY'], 1.0, 3])   # always near: one instanced mesh
+sk = C['sky']; (ax, az), (bx, bz) = sk['bridge']['a'], sk['bridge']['b']
+pads.append(dict(name='SkyBridge', x=round((ax + bx) / 2, 2), z=round((az + bz) / 2, 2), hw=round(SB['length'] / 2 + 4, 2), hd=round(sk['bridge']['width'] / 2 - 1, 2), a=SB['rotY'], y=sk['deck']))
+T = sk['tunnel']; pl = sk['platform']; z0, z1 = T['z0'] - 30, pl['z']
+pads.append(dict(name='GateTunnel', x=T['x'], z=round((z0 + z1) / 2, 2), hw=round((z1 - z0) / 2, 2), hd=round(T['width'] / 2 - 1, 2), a=round(math.atan2(-1, 0), 5), y=sk['deck']))
+for it in json.load(open(f'{R}/gatekit/gate-kit.json')):
+    if it['m'] not in P['models']: add_model(it['m'], f'{R}/gatekit/{it["m"]}.glb')
+    items.append([it['m'], 'gate', it['x'], it['y'], it['z'], it['rotY'], 1.0, 3])
 P['items'] = items
 json.dump(P, open(f'{D}/placements.json', 'w'), separators=(',', ':'))
-json.dump(dict(note='walkable viaduct decks (study thread, ridge/cliffs2): u runs along each bridge, a = rotY; y is each deck (110.5 top tier, 70.5 middle step)', pads=pads), open(f'{D}/viaducts.json', 'w'), indent=0)
+json.dump(dict(note='walkable decks (study thread, ridge/cliffs3 sky palace): u runs along each bridge, a = rotY; y is each deck (satellite viaducts 340.5 / 500.5 / 640.5, sky bridge and gate tunnel 688)', pads=pads), open(f'{D}/viaducts.json', 'w'), indent=0)
 shutil.copy(f'{R}/paths.json', f'{D}/paths.json')
 for f in ('crescent-h.bin', 'outer-h.bin', 'crescent-colour.jpg', 'outer-colour.jpg'): shutil.copy(f'{R}/game/{f}', f'{D}/{f}')
 print('items', len(items), 'viaducts', len(V), 'walls', len(json.load(open(f'{R}/walls2/cliffwalls.json'))))

@@ -2,9 +2,9 @@
 {
 "m": "CliffWall_palace_mesa_w",
 "place": "cliffs",
-"x": -1187.8,
+"x": -920.68,
 "y": 0.0,
-"z": 130.98,
+"z": 1718.98,
 "rotY": 0.0,
 "scale": 1.0,
 "new": true
@@ -12,29 +12,9 @@
 {
 "m": "CliffWall_palace_mesa_e",
 "place": "cliffs",
-"x": 1096.98,
+"x": 534.08,
 "y": 0.0,
-"z": -143.77,
-"rotY": 0.0,
-"scale": 1.0,
-"new": true
-},
-{
-"m": "CliffWall_plateau_north",
-"place": "cliffs",
-"x": 24.39,
-"y": 0.0,
-"z": -1798.73,
-"rotY": 0.0,
-"scale": 1.0,
-"new": true
-},
-{
-"m": "CliffWall_plateau_B25",
-"place": "cliffs",
-"x": -1318.39,
-"y": 0.0,
-"z": -1717.33,
+"z": 891.71,
 "rotY": 0.0,
 "scale": 1.0,
 "new": true
@@ -42,19 +22,29 @@
 {
 "m": "CliffWall_plateau_northeast",
 "place": "cliffs",
-"x": 1696.24,
+"x": 1597.85,
 "y": 0.0,
-"z": -1362.78,
+"z": -1626.8,
 "rotY": 0.0,
 "scale": 1.0,
 "new": true
 },
 {
-"m": "CliffWall_plateau_west_n",
+"m": "CliffWall_plateau_north",
 "place": "cliffs",
-"x": -2025.5,
+"x": 62.84,
 "y": 0.0,
-"z": -580.27,
+"z": -1889.24,
+"rotY": 0.0,
+"scale": 1.0,
+"new": true
+},
+{
+"m": "CliffWall_plateau_B25",
+"place": "cliffs",
+"x": -1202.72,
+"y": 0.0,
+"z": -1665.34,
 "rotY": 0.0,
 "scale": 1.0,
 "new": true
@@ -62,9 +52,19 @@
 {
 "m": "CliffWall_plateau_east",
 "place": "cliffs",
-"x": 2041.0,
+"x": 2087.66,
 "y": 0.0,
-"z": 150.57,
+"z": -18.15,
+"rotY": 0.0,
+"scale": 1.0,
+"new": true
+},
+{
+"m": "CliffWall_plateau_west_n",
+"place": "cliffs",
+"x": -1867.77,
+"y": 0.0,
+"z": -771.96,
 "rotY": 0.0,
 "scale": 1.0,
 "new": true
@@ -72,9 +72,9 @@
 {
 "m": "CliffWall_plateau_B32",
 "place": "cliffs",
-"x": -1819.19,
+"x": -1998.88,
 "y": 0.0,
-"z": 572.7,
+"z": 641.02,
 "rotY": 0.0,
 "scale": 1.0,
 "new": true
@@ -82,9 +82,9 @@
 {
 "m": "CliffWall_plateau_southeast",
 "place": "cliffs",
-"x": 2155.71,
+"x": 2516.44,
 "y": 0.0,
-"z": 1581.87,
+"z": 1604.29,
 "rotY": 0.0,
 "scale": 1.0,
 "new": true
@@ -92,9 +92,29 @@
 {
 "m": "CliffWall_plateau_southwest",
 "place": "cliffs",
-"x": -2160.1,
+"x": -2106.04,
 "y": 0.0,
-"z": 1719.95,
+"z": 1519.77,
+"rotY": 0.0,
+"scale": 1.0,
+"new": true
+},
+{
+"m": "CliffWall_plateau_shore2",
+"place": "cliffs",
+"x": -3399.9,
+"y": 0.0,
+"z": 4436.41,
+"rotY": 0.0,
+"scale": 1.0,
+"new": true
+},
+{
+"m": "CliffWall_gate_massif",
+"place": "cliffs",
+"x": -723.98,
+"y": 0.0,
+"z": 11133.72,
 "rotY": 0.0,
 "scale": 1.0,
 "new": true

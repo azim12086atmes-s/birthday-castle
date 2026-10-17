@@ -1,0 +1,36 @@
+diff --git a/js/world/layout.js b/js/world/layout.js
+index 3f349e5..dbbe255 100644
+--- a/js/world/layout.js
++++ b/js/world/layout.js
+@@ -16,15 +16,15 @@ export const H_SCALE = S;
+ const WS = S;
+ 
+ // --- the drawn (x1) plan: sheet 04 and build sheet B01 ----------------------------------
+-const PAL1 = { y: 40, hw: 400, hd: 340 };
++const PAL1 = { y: 290, hw: 400, hd: 340 };   // sky palace (Oct 17): 797.5 m world
+ const TERRACES1 = [
+-  { name: 'upper', y: 40, z0: 340, z1: 560, hw: 470 },
+-  { name: 'middle', y: 24, z0: 560, z1: 720, hw: 520 },
+-  { name: 'lower', y: 8, z0: 720, z1: 880, hw: 560 },
++  { name: 'upper', y: 290, z0: 340, z1: 560, hw: 470 },
++  { name: 'middle', y: 270, z0: 560, z1: 720, hw: 520 },
++  { name: 'lower', y: 250, z0: 720, z1: 880, hw: 560 },
+ ];
+ const STAIRS1 = [
+-  [560, 592, 40, 24, 30], [720, 752, 24, 8, 30],                     // centre, either side of the water stair
+-  ...[-1, 1].flatMap((s) => [[560, 592, 40, 24, 12, s * 330], [720, 752, 24, 8, 12, s * 380]]),
++  [560, 592, 290, 270, 30], [720, 752, 270, 250, 30],                     // centre, either side of the water stair
++  ...[-1, 1].flatMap((s) => [[560, 592, 290, 270, 12, s * 330], [720, 752, 270, 250, 12, s * 380]]),
+ ];
+ const LAKE1 = { x: -150, z: 1500, rx: 1650, rz: 620 };
+ const B20_1 = { x: 0, z: 2335, r: 72, y: 5 };
+@@ -326,7 +326,8 @@ export function terrainRaw(x, z) {
+   // the crescent world's ground, with Lantern Lake carved for the causeway
+   let h = crescentH(x, z);
+   const ld = lake1(x / S, z / S);
+-  if (ld < 170) h = lerp((-0.8 - 11 * smooth(0, -280, ld)) * S, Math.max(h, 1.4 * S), smooth(-10, 170, ld));
++  if (ld < 170 && h < 60) h = lerp(   // (the sky palace's rings and walls stand in the heightmap: no carving there)
++    (-0.8 - 11 * smooth(0, -280, ld)) * S, Math.max(h, 1.4 * S), smooth(-10, 170, ld));
+   // flat ground under each district
+   for (const p of PAD_LIST) {
+     const q = Math.hypot(x - p.x, z - p.z);
