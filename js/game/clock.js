@@ -86,11 +86,11 @@ export function createClock(data) {
       else if (tl.onTheNight) elev = elevAtNight(tl.minutes);
       else elev = elevCycle(now);
       state.elev += (elev - state.elev) * 0.02;            // glide, never jump
-      if (Math.abs(elev - state.elev) > 40) state.elev = elev;
+      if (Math.abs(elev - state.elev) > 40 || forcedPhase) state.elev = elev;   // a pinned phase shows at once
       const e = state.elev;
       state.phase = phaseOf(e);
-      state.night = THREE.MathUtils.smoothstep(-e, -6, 14);       // 0 day .. 1 night
-      state.golden = Math.max(0, 1 - Math.abs(e - 6) / 14) * (1 - state.night);
+      state.night = THREE.MathUtils.smoothstep(-e, -10, 8);       // 0 day .. 1 night (dusk, with the sun just down, is mostly night)
+      state.golden = Math.max(0, 1 - Math.abs(e - 5) / 12) * (1 - state.night);
       // the sun swings up and down on its fixed bearing; every sky shader reads SUN_DIR
       const r = Math.cos(THREE.MathUtils.degToRad(Math.max(e, 3)));
       SUN_DIR.set(Math.cos(SUN_AZ) * r, Math.sin(THREE.MathUtils.degToRad(Math.max(e, 3))), Math.sin(SUN_AZ) * r).normalize();

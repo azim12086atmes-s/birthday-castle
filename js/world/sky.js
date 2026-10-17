@@ -349,7 +349,7 @@ export function createSky(scene, preset) {
       extras.halo.material.opacity = 0.55 * n; extras.disk.material.opacity = 0.1 + 0.9 * n;
       extras.novaGlow.material.opacity *= n; extras.nova.material.opacity = n;
       // the rainbow belongs to the day (the celebration brings it back)
-      extras.bow.material.uniforms.uOpacity.value = revealing ? 0.32 : 0.14 * (1 - n);
+      extras.bow.material.uniforms.uOpacity.value = revealing ? 0.32 : 0.14 * (1 - n) * THREE.MathUtils.smoothstep(SUN_DIR.y, 0.15, 0.45);
       clouds.rotation.y = t * 0.0035;
       clouds.material.uniforms.uTime.value = t;
     },

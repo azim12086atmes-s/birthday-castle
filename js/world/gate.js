@@ -4,9 +4,10 @@
 // the falls), four thin side falls down the cliffs, mist at their feet, a faint
 // rainbow by day, and a soft roar that hushes while the veil is open.
 import * as THREE from 'three';
-import { MOOD, FOG_COLOR } from './sky.js';
+import { MOOD, FOG_COLOR, SUN_DIR } from './sky.js';
 
-const VEIL = { x: -709.5, y: 97, z: 11250, w: 182, h: 194 };
+// the falls fill the V of the gap: narrow at the water, wide at the top
+const VEIL = { x: -709.5, y: 100, z: 11250, w: 300, h: 200, bottom: 250, top: 450 };
 const SIDE = [[-1010, 248, 28], [-410, 293, 28], [-1170, 400, 22], [-250, 500, 22]];   // x, top, width (all at z 11250)
 
 function fallMaterial(map, opening) {
@@ -53,7 +54,10 @@ export function createGate(scene) {
   const mats = [];
 
   const veilMat = fallMaterial(tex, true); mats.push(veilMat);
-  const veil = new THREE.Mesh(new THREE.PlaneGeometry(VEIL.w, VEIL.h, 24, 1), veilMat);
+  const veilGeo = new THREE.PlaneGeometry(VEIL.w, VEIL.h, 24, 1);
+  const vp = veilGeo.attributes.position;
+  for (let i = 0; i < vp.count; i++) { const k = (vp.getY(i) + VEIL.h / 2) / VEIL.h; vp.setX(i, vp.getX(i) / VEIL.w * (VEIL.bottom + (VEIL.top - VEIL.bottom) * k)); }
+  const veil = new THREE.Mesh(veilGeo, veilMat);
   veil.position.set(VEIL.x, VEIL.y, VEIL.z);
   group.add(veil);
 
@@ -132,7 +136,7 @@ export function createGate(scene) {
         p.sp.scale.setScalar(p.size * (0.7 + k * 0.6));
         p.sp.material.opacity = 0.35 * Math.sin(k * Math.PI) * (d < 6000 ? 1 : 0);
       }
-      bow.material.uniforms.uOpacity.value = 0.2 * (1 - MOOD.night.value);
+      bow.material.uniforms.uOpacity.value = 0.2 * (1 - MOOD.night.value) * THREE.MathUtils.smoothstep(SUN_DIR.y, 0.15, 0.45);
       roar(THREE.MathUtils.clamp(1 - d / 900, 0, 1) * (1 - 0.7 * so));
     },
     fog(near, far) { for (const m of mats) { m.uniforms.uFogNear.value = near; m.uniforms.uFogFar.value = far; } },

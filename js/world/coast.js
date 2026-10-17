@@ -43,7 +43,8 @@ function rockGrade(m) {
         vec2 rp = vMWorld.xz;
         float rn = mNoise(rp * 0.02) * 0.6 + mNoise(rp * 0.11 + 3.) * 0.4;
         float steep = smoothstep(0.86, 0.62, vMUp + (rn - 0.5) * 0.12);
-        float strata = 0.86 + 0.14 * sin(vMWorld.y * 0.21 + rn * 4.0);
+        // faint, broken strata: warped by noise so they never read as contour lines
+        float strata = 0.95 + 0.05 * sin(vMWorld.y * 0.13 + rn * 9.0 + mNoise(rp * 0.004) * 12.0);
         vec3 rock = mix(vec3(0.56, 0.52, 0.6), vec3(0.74, 0.68, 0.7), rn) * strata;
         float hi = smoothstep(500.0, 1100.0, vMWorld.y);
         diffuseColor.rgb = mix(diffuseColor.rgb, rock, steep * (0.55 + 0.4 * hi) * smoothstep(8.0, 40.0, vMWorld.y));

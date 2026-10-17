@@ -439,7 +439,7 @@ function frame() {
   const sky0 = gameClock.update(Date.now(), celebration.active);
   const wantMood = forcedMood ?? (celebration.active ? 1 : sky0.night);
   mood += (wantMood - mood) * Math.min(1, dt * 0.25);
-  if (Math.abs(wantMood - mood) < 0.001) mood = wantMood;
+  if (Math.abs(wantMood - mood) < 0.001 || params.get('phase')) mood = wantMood;
   sky.update(t, camera);
   applyMood(mood);
   if (forcedMood === null && !celebration.active) applyGolden(sky0.golden);
