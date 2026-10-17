@@ -81,18 +81,29 @@ def paint(h, B, mpp, n, seed=0, outer=False):
     return col, sl
 
 col, sl = paint(h, B, mpp, N)
+# dense towns (town.py): village green between the houses, whatever biome patch the old pad sat in
+if os.path.exists(f'{OUT}/towns.json'):
+    jj_, ii_ = np.meshgrid(np.arange(N), np.arange(N)); vg = mix(C(0.47, 0.71, 0.31), C(0.62, 0.80, 0.40), sstep(ndi.gaussian_filter(np.random.default_rng(5).random((N, N)), 2.0), 0.45, 0.55))
+    for t in json.load(open(f'{OUT}/towns.json')).values():
+        tx, tz = (t['x'] - CX + MAPW / 2) / mpp - 0.5, (t['z'] - CZ + MAPW / 2) / mpp - 0.5
+        dd_ = np.hypot(jj_ - tx, ii_ - tz) * mpp
+        col = mix(col, vg, 1 - sstep(dd_, t['r'] - 10, t['r'] + 50))
 # roads and plazas: warm cream, royal road gold; palace grounds keep their designed colours
 paths = json.load(open(f'{OUT}/paths.json'))
 U = N * 2; rimg = Image.new('L', (U, U)); d = ImageDraw.Draw(rimg); gimg = Image.new('L', (U, U)); dg = ImageDraw.Draw(gimg)
 def px(x, z): return ((x - CX + MAPW / 2) / MAPW * U, (z - CZ + MAPW / 2) / MAPW * U)
+TOWNS = json.load(open(f'{OUT}/towns.json')) if os.path.exists(f'{OUT}/towns.json') else {}
 for p in paths['paths']:
     w = max(2, int(p['width'] / MAPW * U)); dd = dg if p['kind'] == 'royal' else d
+    if p['kind'] == 'alley' and p.get('from_') in TOWNS:          # town streets are 3-8 m on a 10 m grid: the game's ribbons draw them;
+        if p.get('to') != 'main': continue                         # painting every lane at 2 px turned whole towns to sand
+        w = 1
     for (a0, _, c0), (a1, _, c1) in zip(p['points'], p['points'][1:]):    # no paint across water (decks and the causeway carry it)
         ii_, jj_ = (np.array([c0, c1]) - CZ + MAPW / 2) / mpp - 0.5, (np.array([a0, a1]) - CX + MAPW / 2) / mpp - 0.5
         if (ndi.map_coordinates(h, [ii_, jj_], order=1) < 0.5).any(): continue
         dd.line([px(a0, c0), px(a1, c1)], fill=255, width=w)
 for q in paths['plazas']:
-    x, y = px(q['x'], q['z']); r = q['radius'] / MAPW * U; d.ellipse([x - r, y - r, x + r, y + r], fill=255)
+    x, y = px(q['x'], q['z']); r = q['radius'] / MAPW * U; d.ellipse([x - r, y - r, x + r, y + r], fill=170 if q['place'] in TOWNS else 255)
 road = np.asarray(rimg.resize((N, N), Image.BILINEAR)) / 255.0; royal = np.asarray(gimg.resize((N, N), Image.BILINEAR)) / 255.0
 col = mix(col, C(0.93, 0.86, 0.70), np.clip(road * 1.4, 0, 1)); col = mix(col, C(0.99, 0.88, 0.60), np.clip(royal * 1.4, 0, 1))
 pal = ndi.gaussian_filter((B == 21).astype(float), 1.5)
