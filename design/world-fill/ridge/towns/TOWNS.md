@@ -15,7 +15,7 @@ Ten Grand Path places are now compact towns: B12, B20, B21, B02, B06, B18, B04, 
   - lanterns down the lanes.
 - **Ground.** It is flat only out to the town edge (`towns.json` `r`, 136 to 225 m). Past that, terraced hills rise 15 to 80 m between the road exits. Roads and trails keep a 20 m clear strip.
 - **Houses.** They use the place's own house models, or a style pool at natural size where a place had too few: medieval, asian, classical, coastal, forest or mountain.
-- **Light copies.** `*_town` models are 14k-tri copies of the house set; `Stone_Lantern_town` is 2.5k. They have the same look, UVs and textures. They are in `data/world/near` with `tier: "building"` and have 8-view cards in `data/world/cards`.
+- **Light copies.** `*_town` models are 14k-tri copies of the house set; `Stone_Lantern_town` is 2.5k. They have the same look, UVs and textures. They are in `data/world/near` with `tier: "landmark"`, so a whole town stays 3D models out to 450 m (cards only beyond that). They have 8-view cards in `data/world/cards`.
 - **Item tags.** Town items carry `town: hero | plaza | house | lantern`.
 - **Streets.** They are `paths.json` alleys with `from_ = place` and `to = main | lane | ring`, and they replace that place's old alleys. Plaza radii are in `plazas`.
 
@@ -30,7 +30,7 @@ There is a feature about every 420 m along every road: 65 hamlets of 3 to 6 hous
    const TOWN_PADS = { B12: { r: 195.2, e: 60 }, B20: { r: 215.8, e: 60 }, ... };  // from towns.json
    pad: { r: TOWN_PADS[k]?.r ?? s.pad.r * S, ..., e: TOWN_PADS[k]?.e ?? s.pad.e * S }
    ```
-2. **Compress the town models.** Run them through the usual meshopt and WebP pass into near-hd. Keep the `building` range so the houses show from 300 m with cards beyond.
+2. **Compress the town models.** Run them through the usual meshopt and WebP pass into near-hd. Keep `tier: "landmark"` so no house in a town is drawn as a flat card while you stand in or beside it (the owner noticed the cards at 300 m).
 3. **Fix the street colour.** Town streets render near-black or dark blue at night and in the afternoon (the `alley` cobble material in `paths.js`). They should read as warm stone, like the roads.
 4. **Low quality option.** On Low, consider drawing `town: house` items only within 150 m and skipping the verge rocks. There are about 1,300 town houses, 300 roadside houses and 1,250 verge rocks in all, though only one town is ever near.
 

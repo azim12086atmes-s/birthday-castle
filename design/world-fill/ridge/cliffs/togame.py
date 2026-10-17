@@ -50,7 +50,7 @@ for it in json.load(open(f'{R}/gatekit/gate-kit.json')):
     items.append([it['m'], 'gate', it['x'], it['y'], it['z'], it['rotY'], 1.0, 3])
 for f in sorted(glob.glob(f'{R}/townkit/*_town.glb')):                       # light town copies (town.py)
     nm = os.path.basename(f)[:-4]
-    if nm not in P['models']: add_model(nm, f); P['models'][nm]['tier'] = 'building'     # near within ~300 m, its card beyond
+    if nm not in P['models']: add_model(nm, f); P['models'][nm]['tier'] = 'landmark'   # 3D out to 450 m: a whole town stays real models from anywhere in it
 TC = f'{R}/towncards-pack/index.json'
 if os.path.exists(TC):                                                           # far cards for the town copies
     CI = json.load(open(f'{D}/cards/index.json')); tc = json.load(open(TC))
