@@ -1,6 +1,6 @@
-// The world fill (study thread, design/world-fill): 3,126 placed models (landmarks at the
+// The world fill (study thread, design/world-fill): 3,138 placed models (landmarks at the
 // 32 places, the arrival gate, relics, glowing flora, road lanterns, sky isles and citadels,
-// far citadels on the great ridge), drawn from 263 of our Meshy models.
+// far citadels on the great ridge), drawn from 264 of our Meshy models.
 // Each model is one InstancedMesh, so the whole fill costs about one draw
 // call per model in view. Near the player a model draws as its web copy of the layout
 // GLB (about a quarter of the triangles, 1024 px texture); further out it is a picture

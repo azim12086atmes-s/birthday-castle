@@ -113,7 +113,7 @@ AI Mew following you, `?quality=low` for weak machines.
 
 The ground is the study thread's crescent terrain (`data/world/crescent-h.bin`, 1024 x 1024,
 about 20 m a cell, and its painted colour map), with Lantern Lake, the palace terraces, the
-causeway and the district pads laid on top. The 3,126 placed models of the world fill
+causeway and the district pads laid on top. The 3,138 placed models of the world fill
 (`data/world/placements.json`) draw as one InstancedMesh per model. Each model has a near
 copy (about a quarter of the layout triangles, 1024 px texture, `data/world/near/`) and,
 further out, a picture card (`data/world/cards/`, 8 views round the model; the shader shows
