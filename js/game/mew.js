@@ -6,7 +6,7 @@
 //
 // The owner plays it (?mew=<mewKey>): WASD/Space/C to fly, 1-5 for the
 // actions, X to mew. When the owner is not steering, it follows on its own.
-// Its eyes stay closed and smiling, and it only ever speaks in mews.
+// Like every creature in the game it has no eyes, and it only ever speaks in mews.
 import * as THREE from 'three';
 import { toon, glowBasic } from '../world/materials.js';
 import { glowTexture, sparkleTexture, textTexture } from '../world/textures.js';
@@ -19,9 +19,6 @@ function makeMew() {
   const body = new THREE.Mesh(new THREE.SphereGeometry(0.15, 16, 12), fur); body.scale.set(1, 0.9, 1.2);
   const head = new THREE.Mesh(new THREE.SphereGeometry(0.17, 18, 14), fur); head.position.set(0, 0.17, 0.1);
   const ears = [-1, 1].map((s) => { const e = new THREE.Mesh(new THREE.ConeGeometry(0.06, 0.13, 8), fur); e.position.set(s * 0.1, 0.32, 0.08); e.rotation.z = -s * 0.35; return e; });
-  // closed, smiling eyes: two little arcs
-  const lidMat = new THREE.MeshBasicMaterial({ color: '#7a2a5a' });
-  const lids = [-1, 1].map((s) => { const l = new THREE.Mesh(new THREE.TorusGeometry(0.035, 0.008, 4, 10, Math.PI), lidMat); l.position.set(s * 0.065, 0.19, 0.255); l.rotation.z = Math.PI; return l; });
   const feet = [[-0.07, 0.1], [0.07, 0.1], [-0.07, -0.08], [0.07, -0.08]].map(([x, z]) => { const f = new THREE.Mesh(new THREE.SphereGeometry(0.045, 8, 6), fur); f.position.set(x, -0.12, z); return f; });
   // the long thin tail with its oval tip, a chain of beads that waves
   const tail = [];
@@ -34,7 +31,7 @@ function makeMew() {
   const zzz = new THREE.Sprite(new THREE.SpriteMaterial({ map: textTexture('z z z', { font: 'italic 600 40px Georgia, serif', color: '#e8f4ff', glow: '#9fd8ff' }), transparent: true, depthWrite: false }));
   zzz.scale.set(0.5, 0.18, 1); zzz.position.set(0.25, 0.45, 0); zzz.visible = false;
   const pose = new THREE.Group();
-  pose.add(body, head, ...ears, ...lids, ...feet);
+  pose.add(body, head, ...ears, ...feet);
   g.add(pose, aura, bubble, zzz);
   g.userData = { pose, tail, tip, bubble, zzz, aura };
   return g;

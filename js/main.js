@@ -151,7 +151,8 @@ const ui = {
   cutsceneText(text, big) {
     const el = $('cs-text');
     el.style.opacity = 0;
-    setTimeout(() => { el.textContent = text; el.classList.toggle('big', !!big); el.style.opacity = 1; }, 500);
+    clearTimeout(el.tm);
+    el.tm = setTimeout(() => { el.textContent = text; el.classList.toggle('big', !!big); el.style.opacity = 1; }, 500);
   },
   onSkip(fn) { $('skip').onclick = fn; },
 };
@@ -393,9 +394,11 @@ function startGame(p) {
 
   game = { controller, me, travel, remotes, voice, voicePositions, net, hunt, cutscene: null, nearShrine: false, sendAcc: 0, quest, mew, combat, reveal: null };
 
-  if (p.honoree) {
-    game.cutscene = playWelcome({ camera, castle, celebration, controller, target: controller.pos.clone(), ui, onDone: () => { game.cutscene = null; } });
-  }
+  // the arrival ride through the waterfall gate; then her welcome, and the Mew finds her
+  const welcome = () => {
+    game.cutscene = playWelcome({ camera, castle, celebration, controller, target: controller.pos.clone(), ui, onDone: () => { game.cutscene = null; quest.sharedScene('mew_bond'); } });
+  };
+  if (!p.mew) quest.playScene('arrival', { onEnd: p.honoree ? welcome : null });
 }
 
 // ------------------------------------------------------------------- loop --

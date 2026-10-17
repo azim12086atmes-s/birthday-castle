@@ -24,6 +24,29 @@ gold for the next Grand Path stop, pink while a game runs there, mint once freed
 **M** (or ⛵) opens the map. The sky ship lifts you onto its deck and sails there, first
 person. After the Hush the whole party boards together.
 
+## Cinematic scenes (`js/game/cinema.js`)
+
+All 17 schema cutscenes play as live camera moves in the world (letterbox, subtitles, a soft
+babbling voice per speaker; the Mew only mews). Each shot type in `cinema.shotTypes` is one
+camera move round its subject. A reusable scene plays in full the first time on a device and
+in its short version after that; `Skip` ends a reusable scene for you, while unique scenes
+need a majority vote and the finale cannot be skipped (except by the director).
+
+| When | Scenes |
+| --- | --- |
+| Opening the game (not the Mew) | arrival: docks, waterfall gate, aerial reveal, bridge, palace doors |
+| She opens the game | arrival, then her welcome, then mew_bond for everyone |
+| A gentleman joins once she is here | ship_docks: a sky ship brings him to the palace |
+| The Hush | the_hush |
+| Reaching a place (by ship or on foot) | travel while sailing, then enter_place (tournament at B08) and, after the Hush, meet_people with a villager speaking the place's greet line |
+| A place's game starts (after the Hush) | frozen_head with the head's plea |
+| A boss challenge starts | boss_entrance |
+| A head is freed (you are nearby) | head_freed, shard, farewell, using the head's dialogue |
+| Every Grand Path shard home | return_palace |
+| Midnight (Shift+F) | finale; its gold-glow shot reveals the owner if he is online |
+
+`?scenes=0` turns scenes off, `?scenespeed=4` plays them faster for testing.
+
 ## The eight templates (`js/game/activities.js`)
 
 | Template | In the game |

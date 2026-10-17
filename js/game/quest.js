@@ -13,6 +13,7 @@
 import * as THREE from 'three';
 import { CONFIG } from '../config.js';
 import { createActivity } from './activities.js';
+import { createCinema } from './cinema.js';
 import { MEW_ACTIONS, screenSplash } from './mew.js';
 
 const $ = (id) => document.getElementById(id);
@@ -73,6 +74,52 @@ export function createQuest(o) {
     for (const [id, r] of remotes) if (!(r.profile.mew && !S.revealed)) list.push({ id, pos: r.avatar.root.position });
     return list;
   };
+  const group = () => {
+    const ps = players(), c = new THREE.Vector3();
+    if (!ps.length) return controller.pos.clone();
+    for (const q of ps) c.add(q.pos);
+    return c.divideScalar(ps.length);
+  };
+  const ownerRemote = () => [...remotes.values()].find((r) => r.profile.mew);
+  const near = (p, d) => !!p && controller.pos.distanceTo(places.spotOf(p)) < d;
+
+  // ---- cinematic scenes (js/game/cinema.js) ---------------------------------------------
+  const cinema = createCinema({
+    data, camera, controller, ui, places, visuals, combat, scene, director,
+    group, mePos: () => controller.pos,
+    mewPos: () => mew.pos.clone(),
+    ownerPos: () => (isMew ? controller.pos.clone() : ownerRemote()?.avatar.root.position.clone()),
+    ownerName: () => (isMew ? profile.name : ownerRemote()?.profile.name),
+    partner: (forHer) => { const v = herView(); return v && (forHer || !profile.honoree) ? v.head.clone().setY(v.head.y - 0.2) : null; },
+    shipPos: (id) => ships.riderPos(id)?.pos.clone() || null,
+    mewSound: () => mew.sound('mew'),
+    voteSkip: (run) => emit({ k: 'cskip', run }),
+    onState: (on) => {
+      cutscene = on ? cinema : null;
+      controller.locked = on || riding || !hud.map.classList.contains('hidden');
+      if (!on) refreshBeacons();
+    },
+    onShot: (id, shot, c) => {
+      // the Hush: the lantern cracks and its shards streak out to every place
+      if (id === 'the_hush') {
+        if (shot.vfx?.includes('grey_fog')) $('c').style.filter = 'saturate(0.75)';
+        if (shot.vfx?.includes('star_trails')) {
+          visuals.setBroken(true, 0);
+          const L = visuals.lanternPos;
+          places.list.forEach((p, i) => visuals.streak(L.clone(), new THREE.Vector3(p.at.x, 40, p.at.z), 5 + (i % 5), i * 0.12));
+        }
+        if (shot.vfx?.includes('colour_drain')) $('c').style.filter = 'saturate(0.42)';
+      }
+      // the finale: the Mew glows gold and becomes the owner
+      if (id === 'finale' && shot.vfx?.includes('gold_glow') && auth() && !S.revealed && (isMew || ownerRemote())) hostRequest(myId(), { a: 'reveal' });
+      if (id === 'head_freed' && shot.vfx?.includes('colour_wave')) refreshBeacons();
+      void c;
+    },
+  });
+  function playScene(ids, ctx) { cinema.play(ids, ctx); }
+  // a scene everyone watches at the same moment
+  function sharedScene(id, ctx = {}) { emit({ k: 'cut', id, run: Math.random().toString(36).slice(2, 8), ...ctx }); }
+
   const nightPlaces = places.grandPath;
   const nextOnPath = () => nightPlaces.find((p) => !S.shards.includes(p.id)) || null;
 
@@ -124,7 +171,8 @@ export function createQuest(o) {
     try { localStorage.setItem(SAVE_KEY, JSON.stringify(s)); } catch { /* ignore */ }
     if (old.act < 4 && S.act === 4 && !params.get('act')) playHush(old.shards.length);
     for (const id of S.shards) if (!old.shards.includes(id)) headFreed(places.byId[id]);
-    if (old.act < 5 && S.act === 5 && !S.finale) ui.toast('Every shard of the Grand Path is home. Return to the palace for midnight ✦');
+    if (old.act < 5 && S.act === 5 && !S.finale) { ui.toast('Every shard of the Grand Path is home. Return to the palace for midnight ✦'); playScene('return_palace', { run: `ret:${S.v}` }); }
+    if (!old.finale && S.finale && !params.get('act')) playScene('finale', { run: `fin:${S.v}` });
     if (!old.revealed && S.revealed) o.onReveal && o.onReveal();
     const a = S.activity, oa = activity ? activity.meta : null;
     if (!a && activity) endActivity();
@@ -174,6 +222,8 @@ export function createQuest(o) {
     hud.act.querySelector('.light').classList.toggle('hidden', !activity.combat);
     const far = controller.pos.distanceTo(spot) > 220;
     ui.toast(a.stage === 0 ? `${place.name}: ${stageName} begins!${far ? ' Open the map (M) to sail there.' : ''}` : `Now the challenge: ${stageName}`);
+    if (!far && a.stage === 0 && !a.replay && S.act >= 4) playScene('frozen_head', { place, run: `fh:${a.id}` });
+    if (!far && a.stage === 1 && a.tpl === 'boss_purification') playScene('boss_entrance', { place, title: place.challenge?.boss?.name || place.challenge?.name || stageName, run: `boss:${a.id}` });
   }
   function endActivity(silent) {
     if (!activity) return;
@@ -188,9 +238,11 @@ export function createQuest(o) {
     if (!place) return;
     const from = places.spotOf(place).clone().add(new THREE.Vector3(0, 3, 0));
     visuals.streak(from, visuals.lanternPos.clone(), 6);
-    const line = place.headChar?.lines?.[0] || 'Thank you.';
+    const shardText = `Shard ${S.shards.length} of ${places.list.length} flies home to the Great Lantern`;
+    if (!cinema.off && near(place, 320)) { playScene(['head_freed', 'shard', 'farewell'], { place, shardText }); return; }
+    const line = place.headChar?.dialogue?.freed || place.headChar?.lines?.[0] || 'Thank you.';
     ui.toast(`✦ ${place.name} is free! ${place.headChar?.name || 'Its head'}: “${line}”`);
-    titleCard(`${place.name} is free`, `Shard ${S.shards.length} of ${places.list.length} flies home to the Great Lantern`);
+    titleCard(`${place.name} is free`, shardText);
   }
 
   function titleCard(t, s) {
@@ -202,49 +254,21 @@ export function createQuest(o) {
 
   // ---- the Hush: the lantern cracks and the shards scatter -------------------------
   function playHush(alreadyWon) {
-    const L = visuals.lanternPos;
-    const lines = [
-      'Just as the lanterns were lit for her…',
-      'the Hush crept in from the sea, and the music fell still.',
-      `The Great Birthday Lantern cracked into ${places.list.length} star shards.`,
-      'Free every place, win back every shard, and bring the light home before midnight.',
-    ];
-    if (alreadyWon) lines.push(`${alreadyWon} shards from this week's adventures already shine through ✦`);
-    let t = 0, li = -1, cracked = false, done = false;
-    const DUR = 20;
-    controller.locked = true;
-    ui.letterbox(true);
-    const finish = () => {
-      if (done) return; done = true;
-      ui.letterbox(false); ui.cutsceneText('');
-      controller.locked = false; cutscene = null;
-      if (!cracked) visuals.setBroken(true, S.shards.length);
-      refreshBeacons();
-    };
-    ui.onSkip(finish);
     visuals.setBroken(false, 0);
-    cutscene = {
-      update(dt) {
-        if (done) return;
-        t += dt;
-        const k = Math.min(1, t / DUR);
-        const ang = 0.4 + k * 0.9;
-        const dist = 650 + k * 2000;
-        camera.position.set(L.x + Math.sin(ang) * dist, L.y - 380 + k * 500, L.z + Math.cos(ang) * dist);
-        camera.lookAt(L.x, L.y - 100 * k, L.z);
-        if (!cracked && t > 5) {
-          cracked = true;
-          visuals.setBroken(true, 0);
-          places.list.forEach((p, i) => visuals.streak(L.clone(), new THREE.Vector3(p.at.x, 40, p.at.z), 5 + (i % 5), i * 0.12));
-          $('c').style.filter = 'saturate(0.42)';
-        }
-        if (t > 13 && t - dt <= 13) visuals.setBroken(true, S.shards.length);
-        const i = Math.min(lines.length - 1, Math.floor(t / (DUR / lines.length)));
-        if (i !== li) { li = i; ui.cutsceneText(lines[i], i === 2); }
-        if (t >= DUR) finish();
-      },
-      get done() { return done; },
-    };
+    cinema.play('the_hush', { alreadyWon, run: `hush:${S.v}`, onEnd: () => { visuals.setBroken(true, S.shards.length); refreshBeacons(); } });
+    if (cinema.off) refreshBeacons();
+  }
+
+  // ---- place visits: arriving, meeting the people, the frozen head --------------------
+  const visited = new Set();
+  function arriveAt(place) {
+    if (!place || visited.has(place.id)) return;
+    visited.add(place.id);
+    if (cinema.off) { titleCard(place.name, `${place.headChar?.name || ''} · ${place.game.name}`); return; }
+    const freed = S.shards.includes(place.id);
+    const first = place.id === 'B08' && cinema.has('tournament') ? 'tournament' : 'enter_place';
+    const title = `${place.name}`;
+    playScene(freed || S.act < 4 ? [first] : [first, 'meet_people'], { place, title });
   }
 
   // ---- incoming events -------------------------------------------------------------
@@ -252,6 +276,8 @@ export function createQuest(o) {
     if (e.k === 'q') { if (from !== myId()) applySnapshot(e.s); }
     else if (e.k === 'qr') { if (auth()) hostRequest(from, e); }
     else if (e.k === 'qmsg') ui.toast(e.text);
+    else if (e.k === 'cut') playScene(e.id, { run: e.run, shipRider: e.shipRider, title: e.title });
+    else if (e.k === 'cskip') cinema.vote(e.run, from, 1 + remotes.size);
     else if (e.k === 'aop') { if (activity && activity.meta.id === e.aid) activity.apply(e.op, from); }
     else if (e.k === 'ship') ships.start(e.trip);
     else if (e.k === 'mew') {
@@ -277,20 +303,27 @@ export function createQuest(o) {
     emit({ k: 'ship', trip: { id: Math.random().toString(36).slice(2, 8), from: [c.x, c.y, c.z].map((v) => +v.toFixed(1)), to: [to.x, to.y, to.z].map((v) => +v.toFixed(1)), riders, dest: place.id } });
     ui.toast(group ? `All aboard! The sky ship sails for ${place.name}` : `The sky ship sails for ${place.name}`);
   }
-  let rideStart = null, riding = false;
+  let rideStart = null, riding = false, rideDest = null;
   function updateRide() {
     const rp = ships.riderPos(myId());
     if (rp) {
-      if (!riding) { riding = true; rideStart = controller.pos.clone(); }
+      if (!riding) {
+        riding = true; rideStart = controller.pos.clone();
+        const tr = rp.trip, dest = places.byId[tr.dest];
+        if (dest) playScene('travel', { place: dest, title: dest.name, from: tr.fromV?.clone() || rideStart.clone(), to: tr.toV?.clone() || places.spotOf(dest).clone(), shipRider: myId() });
+      }
       controller.locked = true;
+      rideDest = places.byId[rp.trip.dest] || null;
       const deck = rp.pos.clone();
       if (rp.phase === 'board') controller.pos.lerpVectors(rideStart, deck, rp.k * rp.k * (3 - 2 * rp.k));
       else controller.pos.copy(deck);
     } else if (riding) {
       riding = false;
       const land = ships.landingFor(myId()) || controller.pos;
+      const dest = rideDest;
       controller.teleport(land.x, land.y + 0.5, land.z);
       controller.locked = !!cutscene;
+      if (dest) { visited.delete(dest.id); arriveAt(dest); }
     }
     return riding;
   }
@@ -410,7 +443,7 @@ export function createQuest(o) {
     }
 
     // the running game
-    if (activity) {
+    if (activity && !cutscene) {
       actT += dt;
       const spot = places.spotOf(actPlace);
       combat.enabled = activity.combat && !isMew && controller.pos.distanceTo(spot) < 160;
@@ -431,9 +464,10 @@ export function createQuest(o) {
       const d = Math.hypot(controller.pos.x - s.x, controller.pos.z - s.z);
       if (d < 6) nearHead = np;
       const last = seenTitles.get(np.id) || 0;
-      if (Date.now() - last > 300000 && !riding && !cutscene) {
+      if (Date.now() - last > 300000 && !riding && !cutscene && d < 150 && !S.activity) {
         seenTitles.set(np.id, Date.now());
-        titleCard(np.name, `${np.headChar?.name || ''} · ${np.game.name}`);
+        if (visited.has(np.id)) titleCard(np.name, `${np.headChar?.name || ''} · ${np.game.name}`);
+        else arriveAt(np);
       }
     }
 
@@ -456,13 +490,23 @@ export function createQuest(o) {
   }
 
   // late joiners get the state from the host
-  net.on('join', () => { if (auth()) net.sendEvent({ k: 'q', s: JSON.parse(JSON.stringify(S)) }); });
+  net.on('join', (id, prof, fromRoster) => {
+    if (auth()) net.sendEvent({ k: 'q', s: JSON.parse(JSON.stringify(S)) });
+    // the gentlemen arrive by flying ship once she is here
+    if (auth() && !fromRoster && prof && prof.gender === 'male' && !prof.mew && S.act >= 2 && !S.finale && !S.activity) {
+      const to = places.spotOf(places.byId.B01 || places.list[0]);
+      const from = to.clone().add(new THREE.Vector3(700, 600, -1200));
+      const trip = { id: Math.random().toString(36).slice(2, 8), from: [from.x, from.y, from.z].map((v) => +v.toFixed(1)), to: [to.x, to.y, to.z].map((v) => +v.toFixed(1)), riders: [id], dest: null };
+      emit({ k: 'ship', trip });
+      sharedScene('ship_docks', { shipRider: id });
+    }
+  });
   net.on('event', (id, e) => handle(id, e));
   net.on('status', (s) => { if (s === 'host') publish(); });
   refreshBeacons();
 
   return {
-    update, onKey, onTap, prompt, herView, nameOf, request, openMap, sailTo,
+    update, onKey, onTap, prompt, herView, nameOf, request, openMap, sailTo, playScene, sharedScene,
     get state() { return S; },
     get cutscene() { return cutscene; },
     get busy() { return !!activity || !!cutscene || riding; },
