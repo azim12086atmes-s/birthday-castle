@@ -57,6 +57,10 @@ const RANGE = { landmark: [450, 7000], building: [300, 3500], prop: [140, 1200] 
 export function createWorldFill(scene, quality) {
   const q = quality.key === 'low' ? 0.55 : quality.key === 'medium' ? 0.8 : 1;
   const loader = new GLTFLoader().setMeshoptDecoder(MeshoptDecoder);
+  // close up, medium and high draw the full layout meshes (near-hd: every triangle, 2048 px
+  // textures, 1024 for props); low keeps the light quarter-triangle copies. The cliff kit has one copy.
+  const hd = quality.key !== 'low';
+  const dirFor = (kind, name) => (kind === 'near' && hd && !/^(CliffWall|Viaduct|SeaPillar)_/.test(name) ? 'near-hd' : kind);
   const texLoader = new THREE.TextureLoader();
   const cardGeo = new THREE.PlaneGeometry(1, 1);
   let cards = {};
@@ -123,7 +127,7 @@ export function createWorldFill(scene, quality) {
     while (loading < 3 && queue.length) {
       const [M, kind] = queue.shift();
       loading++;
-      loader.load(`data/world/${kind}/${M.name}.glb`, (gltf) => {
+      loader.load(`data/world/${dirFor(kind, M.name)}/${M.name}.glb`, (gltf) => {
         loading--;
         const C = M.copies[kind];
         gltf.scene.updateMatrixWorld(true);
