@@ -1,0 +1,122 @@
+{
+"note": "walkable viaduct decks (study thread, ridge/cliffs2): u runs along each bridge, a = rotY; y is each deck (110.5 top tier, 70.5 middle step)",
+"pads": [
+{
+"name": "Viaduct_palace_B25",
+"x": -963.8,
+"z": -1239.15,
+"hw": 166.5,
+"hd": 5.0,
+"a": 2.23181,
+"y": 110.5
+},
+{
+"name": "Viaduct_palace_B32",
+"x": -1357.5,
+"z": 452.0,
+"hw": 258.6,
+"hd": 5.0,
+"a": -2.82026,
+"y": 110.5
+},
+{
+"name": "Viaduct_palace_north",
+"x": 47.3,
+"z": -1340.75,
+"hw": 245.6,
+"hd": 5.0,
+"a": 1.53554,
+"y": 110.5
+},
+{
+"name": "Viaduct_palace_northeast",
+"x": 1431.1,
+"z": -1252.2,
+"hw": 244.75,
+"hd": 5.0,
+"a": 0.71883,
+"y": 110.5
+},
+{
+"name": "Viaduct_palace_east",
+"x": 1465.6,
+"z": 127.45,
+"hw": 234.05,
+"hd": 5.0,
+"a": -0.0866,
+"y": 110.5
+},
+{
+"name": "Viaduct_palace_west_n",
+"x": -1454.2,
+"z": -402.25,
+"hw": 355.8,
+"hd": 5.0,
+"a": 2.87175,
+"y": 110.5
+},
+{
+"name": "Viaduct_road_B04_B25",
+"x": -2103.7,
+"z": -1287.05,
+"hw": 339.55,
+"hd": 4.0,
+"a": -0.20478,
+"y": 70.5
+},
+{
+"name": "Viaduct_road_B04_B25_2",
+"x": -1517.75,
+"z": -1361.4,
+"hw": 208.35,
+"hd": 4.0,
+"a": 0.43644,
+"y": 110.5
+},
+{
+"name": "Viaduct_road_B07_B25",
+"x": -610.2,
+"z": -2104.6,
+"hw": 286.45,
+"hd": 4.0,
+"a": -1.90944,
+"y": 110.5
+},
+{
+"name": "Viaduct_road_B07_B25_2",
+"x": -902.55,
+"z": -1700.85,
+"hw": 140.85,
+"hd": 4.0,
+"a": -2.54746,
+"y": 110.5
+},
+{
+"name": "Viaduct_road_B08_B25",
+"x": -2287.45,
+"z": -1352.5,
+"hw": 532.95,
+"hd": 4.0,
+"a": -0.25363,
+"y": 110.5
+},
+{
+"name": "Viaduct_trail_road_Ancient_Obelisk",
+"x": 2228.85,
+"z": -391.95,
+"hw": 504.2,
+"hd": 3.0,
+"a": -2.09914,
+"y": 110.5
+},
+{
+"name": "Viaduct_trail_road_Ancient_Archway",
+"x": 2431.85,
+"z": 434.7,
+"hw": 460.0,
+"hd": 3.0,
+"a": -0.45819,
+"y": 110.5
+}
+]
+}
