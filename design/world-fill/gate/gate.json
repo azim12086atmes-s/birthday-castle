@@ -1,0 +1,17 @@
+{
+ "frame": "three.js metres, origin at the palace, x east, z south, y up",
+ "arch": {"model": "Subject_A_commemorat", "x": -709.5, "y": 0.3, "z": 11156.75, "rotY": 0, "scale": 95.34, "size_m": [174, 190, 175], "note": "already in placements"},
+ "veil": {"texture": "waterfall-512x1024.png", "centre": [-709.5, 97, 11250], "width_m": 182, "height_m": 194, "facing": "+z (towards the docks)",
+          "uvRepeat": [3, 2], "scrollV_per_s": 0.45, "tint": [0.92, 0.97, 1.0], "glow": 1.3, "blend": "normal alpha, depthWrite off",
+          "open": {"uniform": "uOpen 0..1", "how": "a gap grows from the centre: alpha *= smoothstep(g - 8, g + 8, |x|) with g = uOpen * width / 2, and each half slides outward by g * 0.3",
+                   "when": "opens over 3 s when a ride comes within 400 m on the gate axis or the arrival scene reaches its shot 3; closes 6 s after it passes"}},
+ "mist": {"texture": "mist-256.png", "where": "a band 200 m wide at the veil foot (y 0 to 40) and at each side fall's foot", "count": 40, "size_m": [30, 60], "rise_m_per_s": 2, "fade_s": 6, "opacity": 0.35},
+ "sideFalls": [
+  {"x": -1010, "z": 11250, "topY": 248, "width_m": 28},
+  {"x": -410, "z": 11250, "topY": 293, "width_m": 28},
+  {"x": -1170, "z": 11250, "topY": 400, "width_m": 22},
+  {"x": -250, "z": 11250, "topY": 500, "width_m": 22}
+ ],
+ "rainbow": "a faint rainbow arc in the mist in front of the veil by day (not at night)",
+ "sound": "a soft roar that grows as you approach and hushes while the veil is open"
+}
