@@ -18,6 +18,13 @@ const mask = new Set();
 const waiting = [];
 export function onPath(x, z) { return mask.has(Math.floor(x / CELL) * 100003 + Math.floor(z / CELL)); }
 export function whenPaths(fn) { waiting.push(fn); }
+// keep the forests out of the towns and roadside hamlets: clear a disc round each building
+export function clearAround(list) {
+  for (const { x, z, r } of list)
+    for (let cx = Math.floor((x - r) / CELL); cx <= Math.floor((x + r) / CELL); cx++)
+      for (let cz = Math.floor((z - r) / CELL); cz <= Math.floor((z + r) / CELL); cz++) mask.add(cx * 100003 + cz);
+  waiting.forEach((fn) => fn());
+}
 function markPath(pts, width) {
   const r = width / 2 + 2;
   for (let i = 1; i < pts.length; i++) {
@@ -33,7 +40,7 @@ const STYLE = {
   royal: { tint: '#f4ebe4', tex: 'flag', rep: 10 },
   road: { tint: '#c9a982', tex: 'earth', rep: 6 },
   trail: { tint: '#bfa17c', tex: 'earth', rep: 3 },
-  alley: { tint: '#d8c8bc', tex: 'cobble', rep: 3 },
+  alley: { tint: '#d9c7a8', tex: 'setts', rep: 3 },     // town streets: warm stone setts (the glass cobbles read as a black floor)
 };
 
 // packed earth with worn wheel ruts and a line of edge stones
@@ -49,11 +56,31 @@ function earthTexture(edges) {
   return t;
 }
 
+// warm sandstone setts in staggered courses, with dark joints and a little wear
+function settsTexture() {
+  const c = document.createElement('canvas'); c.width = c.height = 256;
+  const g = c.getContext('2d'), r = rng(17);
+  g.fillStyle = '#6f6050'; g.fillRect(0, 0, 256, 256);
+  for (let row = 0, y = 0; y < 256; row++, y += 32) {
+    for (let x = (row % 2) * -20; x < 256; x += 40) {
+      const v = 200 + r() * 45, w = 36, h = 28;
+      g.fillStyle = `rgb(${v},${v * 0.9},${v * 0.76})`;
+      g.beginPath(); g.roundRect(x + 2, y + 2, w, h, 5); g.fill();
+      g.fillStyle = 'rgba(255,248,230,0.18)'; g.fillRect(x + 4, y + 3, w - 6, 4);
+      for (let i = 0; i < 6; i++) { const u = 130 + r() * 60; g.fillStyle = `rgba(${u},${u * 0.88},${u * 0.72},0.4)`; g.fillRect(x + 4 + r() * (w - 6), y + 4 + r() * (h - 6), 2, 2); }
+    }
+  }
+  const t = new THREE.CanvasTexture(c);
+  t.wrapS = t.wrapT = THREE.RepeatWrapping; t.colorSpace = THREE.SRGBColorSpace; t.anisotropy = 4;
+  return t;
+}
+
 function material(kind) {
   const st = STYLE[kind];
   let map;
   if (st.tex === 'flag') { map = flagstoneTexture().clone(); map.needsUpdate = true; }
   else if (st.tex === 'cobble') { map = cobbleTexture().clone(); map.needsUpdate = true; }
+  else if (st.tex === 'setts') map = settsTexture();
   else map = earthTexture(kind === 'road');
   map.wrapT = THREE.RepeatWrapping;
   if (st.tex !== 'earth') map.wrapS = THREE.RepeatWrapping;

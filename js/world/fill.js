@@ -12,6 +12,7 @@ import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 import { MeshoptDecoder } from 'three/addons/libs/meshopt_decoder.module.js';
 import { groundAt, addPad } from './layout.js';
 import { crescentH } from './crescent.js';
+import { clearAround } from './paths.js';
 import { MOOD, FOG_COLOR } from './sky.js';
 
 // one material per model: the card strip, its frame size and how high its centre sits
@@ -58,9 +59,10 @@ export function createWorldFill(scene, quality) {
   const q = quality.key === 'low' ? 0.55 : quality.key === 'medium' ? 0.8 : 1;
   const loader = new GLTFLoader().setMeshoptDecoder(MeshoptDecoder);
   // close up, medium and high draw the full layout meshes (near-hd: every triangle, 2048 px
-  // textures, 1024 for props); low keeps the light quarter-triangle copies. The cliff kit has one copy.
+  // textures, 1024 for props); low keeps the light quarter-triangle copies. The cliff kit and the
+  // light town houses (*_town, 14k triangles) have one copy.
   const hd = quality.key !== 'low';
-  const dirFor = (kind, name) => (kind === 'near' && hd && !/^(CliffWall_|Viaduct_|SeaPillar_|SkyBridge_|Gate|CloudPlatform)/.test(name) ? 'near-hd' : kind);
+  const dirFor = (kind, name) => (kind === 'near' && hd && !(/^(CliffWall_|Viaduct_|SeaPillar_|SkyBridge_|Gate|CloudPlatform)/.test(name) || name.endsWith('_town')) ? 'near-hd' : kind);
   const texLoader = new THREE.TextureLoader();
   const cardGeo = new THREE.PlaneGeometry(1, 1);
   let cards = {};
@@ -73,7 +75,9 @@ export function createWorldFill(scene, quality) {
     for (const [name, m] of Object.entries(P.models)) {
       const [n, f] = RANGE[m.tier];
       // cards cost two triangles, so they reach further than the old far copies did
-      models.set(name, { name, tier: m.tier, near: n * Math.max(q, 0.7), far: f * q * 1.3, items: [], copies: { near: null, card: null } });
+      // on Low the town houses draw in full only within 150 m (cards beyond)
+      const near = name.endsWith('_town') && quality.key === 'low' ? Math.min(150, n) : n * Math.max(q, 0.7);
+      models.set(name, { name, tier: m.tier, near, far: f * q * 1.3, items: [], copies: { near: null, card: null } });
     }
     for (const [m, place, x, y, z, rot, s, far] of P.items) {
       const M = models.get(m);
@@ -87,6 +91,11 @@ export function createWorldFill(scene, quality) {
       const dims = P.models[m].dims;
       if (M.tier !== 'prop' && place !== 'sky' && place !== 'cliffs') footprints.push({ x, z, r: 0.5 * Math.max(dims[0], dims[2]) * s });
     }
+    // no tree grows through a town house or a roadside hamlet
+    const clear = [];
+    for (const M of models.values()) if (M.name.endsWith('_town') && M.tier !== 'prop') for (const it of M.items) clear.push({ x: it.x, z: it.z, r: 15 + 0.5 * Math.max(P.models[M.name].dims[0], P.models[M.name].dims[1]) * Math.hypot(it.mat.elements[0], it.mat.elements[1], it.mat.elements[2]) });
+    for (const M of models.values()) if (!M.name.endsWith('_town')) for (const it of M.items) if (it.place === 'roadside') clear.push({ x: it.x, z: it.z, r: 15 });
+    if (clear.length) clearAround(clear);
     ready = true;
   });
   // the viaducts' level decks are walkable
