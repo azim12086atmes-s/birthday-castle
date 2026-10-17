@@ -16,15 +16,15 @@ export const H_SCALE = S;
 const WS = S;
 
 // --- the drawn (x1) plan: sheet 04 and build sheet B01 ----------------------------------
-const PAL1 = { y: 40, hw: 400, hd: 340 };
+const PAL1 = { y: 290, hw: 400, hd: 340 };   // sky palace (Oct 17): 797.5 m world
 const TERRACES1 = [
-  { name: 'upper', y: 40, z0: 340, z1: 560, hw: 470 },
-  { name: 'middle', y: 24, z0: 560, z1: 720, hw: 520 },
-  { name: 'lower', y: 8, z0: 720, z1: 880, hw: 560 },
+  { name: 'upper', y: 290, z0: 340, z1: 560, hw: 470 },
+  { name: 'middle', y: 270, z0: 560, z1: 720, hw: 520 },
+  { name: 'lower', y: 250, z0: 720, z1: 880, hw: 560 },
 ];
 const STAIRS1 = [
-  [560, 592, 40, 24, 30], [720, 752, 24, 8, 30],                     // centre, either side of the water stair
-  ...[-1, 1].flatMap((s) => [[560, 592, 40, 24, 12, s * 330], [720, 752, 24, 8, 12, s * 380]]),
+  [560, 592, 290, 270, 30], [720, 752, 270, 250, 30],                     // centre, either side of the water stair
+  ...[-1, 1].flatMap((s) => [[560, 592, 290, 270, 12, s * 330], [720, 752, 270, 250, 12, s * 380]]),
 ];
 const LAKE1 = { x: -150, z: 1500, rx: 1650, rz: 620 };
 const B20_1 = { x: 0, z: 2335, r: 72, y: 5 };
@@ -139,9 +139,9 @@ export const CASCADE = { z0: 235 * S, z1: 340 * S, hw: 110 * S, water: 30 * S, f
 export const TERRACES = TERRACES1.map((t) => ({ ...t, y: t.y * S, z0: t.z0 * S, z1: t.z1 * S, hw: t.hw * S }));
 // flights of the grand stair between the terraces: [z top, z bottom, y top, y bottom, half width, x]
 export const STAIRS = STAIRS1.map(([za, zb, ya, yb, hw, cx = 0]) => [za * S, zb * S, ya * S, yb * S, hw * S, cx * S]);
-export const CAUSEWAY = { x: 0, z0: 880 * S, z1: 2262 * S, hw: 15, y: 6 };
+export const CAUSEWAY = { x: 0, z0: 1060 * S, z1: 2262 * S, hw: 15, y: 6 };   // starts at the foot of the sky palace's south cliff
 export const B20 = { x: B20_1.x * S, z: B20_1.z * S, r: B20_1.r * S, y: B20_1.y * S };   // Bridge Pavilions plaza: the spawn
-export const SPAWN = { x: 0, z: 2350 * S };
+export const SPAWN = { x: -710, z: 12020 };   // the cloud platform before the mountain gate (sky palace, Oct 17)
 export const PLAZA = { x: 0, z: 362 * S, y: PAL.y, r: 14 * S };       // the cascade's lotus basin at the stair foot
 export const LAKE = { x: LAKE1.x * S, z: LAKE1.z * S, rx: LAKE1.rx * S, rz: LAKE1.rz * S, y: 0 };
 export const SEA_Y = 0;
@@ -326,7 +326,8 @@ export function terrainRaw(x, z) {
   // the crescent world's ground, with Lantern Lake carved for the causeway
   let h = crescentH(x, z);
   const ld = lake1(x / S, z / S);
-  if (ld < 170) h = lerp((-0.8 - 11 * smooth(0, -280, ld)) * S, Math.max(h, 1.4 * S), smooth(-10, 170, ld));
+  if (ld < 170 && h < 60) h = lerp(   // (the sky palace's rings and walls stand in the heightmap: no carving there)
+    (-0.8 - 11 * smooth(0, -280, ld)) * S, Math.max(h, 1.4 * S), smooth(-10, 170, ld));
   // flat ground under each district
   for (const p of PAD_LIST) {
     const q = Math.hypot(x - p.x, z - p.z);
@@ -419,7 +420,6 @@ export function groundHSL(isl, x, z, h) {
 export const PADS = [];
 export function addPad(p) { PADS.push({ ...p, c: Math.cos(p.a || 0), s: Math.sin(p.a || 0) }); }
 export function causewayY(z) {
-  if (z < CAUSEWAY.z0 + 24 * S) return lerp(TERRACES[2].y, CAUSEWAY.y, (z - CAUSEWAY.z0) / (24 * S));
   if (z > CAUSEWAY.z1 - 30 * S) return lerp(CAUSEWAY.y, B20.y, (z - CAUSEWAY.z1 + 30 * S) / (30 * S));
   return CAUSEWAY.y;
 }

@@ -43,7 +43,7 @@ need a majority vote and the finale cannot be skipped (except by the director).
 
 | When | Scenes |
 | --- | --- |
-| Opening the game (not the Mew) | arrival: docks, waterfall gate, aerial reveal, bridge, palace doors |
+| Opening the game (not the Mew) | arrival: cloud platform, the great doors, the white tunnel, aerial reveal, sky bridge, palace doors |
 | She opens the game | arrival, then her welcome, then mew_bond for everyone |
 | A gentleman joins once she is here | ship_docks: a sky ship brings him to the palace |
 | The Hush | the_hush |
@@ -127,10 +127,14 @@ They are made from the layout GLBs with a position-welded simplify; the script i
 thread's notes. Players can walk through the placed models for now.
 - Her name, the friends list, the quiz questions about her, and the reveal line are in
   `js/config.js`.
-- The white waterfall gate (`js/world/gate.js`, kit in `data/world/gate/`) stands under the
-  arch in the south gap; its veil parts when someone comes within 400 m on the gate axis or
-  the arrival scene reaches the falls. The docks and the finale's floating theatre are not
-  built yet.
+- Sky palace (study thread, `design/world-fill/ridge/cliffs/SKY-PALACE.md`): the palace stands
+  at 797.5 m on stepped rings; everyone spawns on the cloud platform (-710, 688, 12020) south of
+  the gate massif. `js/world/gate.js` swings the great doors open when someone comes within
+  140 m (or the arrival scene reaches them), whitens the screen toward the tunnel's middle,
+  drifts a cloud ring round the platform, and pours the waterfall over the north portal,
+  parting round the sky bridge deck within 150 m. The 8 km sky bridge (deck 688 m) runs to the
+  palace's lower terrace; the causeway now starts at the foot of the south cliff, and the sky
+  boat links the Bridge Pavilions and the palace. The finale's floating theatre is not built yet.
 
 ## Magic in the air (`js/world/magic.js`)
 

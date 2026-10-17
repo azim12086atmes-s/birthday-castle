@@ -19,7 +19,7 @@ const lerp = THREE.MathUtils.lerp;
 
 // words for the shots the schema leaves without a line
 const NARRATION = {
-  arrival: { 0: 'Far beyond the sea mountains, a ride is waiting for you…', 2: 'The white falls part like curtains.', 4: 'A crescent of mountains. Thirty-two places. One palace, glowing in the middle.', 7: 'Tonight is a birthday.' },
+  arrival: { 0: 'High above the clouds, a gate in the mountain is waiting for you…', 2: 'The great doors swing open.', 3: 'White light, brighter with every step.', 4: 'A crescent of mountains. Thirty-two places. One palace, glowing in the middle.', 7: 'Tonight is a birthday.' },
   ship_docks: { 0: 'A shadow passes over the palace…', 2: 'The gentlemen have arrived ✦' },
   the_hush: { 0: 'Just as the lanterns were lit for her…', 1: 'the Hush crept in from the sea, and the music fell still.', 3: 'The Great Birthday Lantern shattered into thirty-two star shards.', 4: 'Colour drained from the land, place by place.' },
   return_palace: { 0: 'Night falls. Everyone you freed sets off for the palace.', 1: 'Gondolas, longboats, dragons and lanterns, all heading home.', 2: 'The Hush waits in the heart of the palace.' },
@@ -103,10 +103,11 @@ export function createCinema(o) {
       case 'palace_doors': return { p: new THREE.Vector3(0, CASTLE.y + 50, CASTLE.z), r: 70 };
       case 'palace_roof': return { p: new THREE.Vector3(0, PAL.y + 650, 0), r: 320 };
       case 'theatre': return { p: up(L, -500), r: 260 };
-      case 'docks': return { p: new THREE.Vector3(-710, 4, 12158), r: 140 };
-      case 'gate': return { p: new THREE.Vector3(-710, 90, 11158), r: 150 };
-      case 'ride': return { p: new THREE.Vector3(-710, 6, lerp(12158, 11158, c.k ?? 0)), r: 40 };
-      case 'bridge': return { p: new THREE.Vector3(0, 30, 4300), r: 900 };
+      // the sky palace arrival (Oct 17): the cloud platform, the great doors in the mountain, the tunnel, the sky bridge
+      case 'docks': return { p: new THREE.Vector3(-710, 700, 12020), r: 260 };
+      case 'gate': return { p: new THREE.Vector3(-710, 716, 11880), r: 70 };
+      case 'ride': return { p: new THREE.Vector3(-710, 692, lerp(11960, 10380, c.k ?? 0)), r: 14 };
+      case 'bridge': return { p: new THREE.Vector3(-355, 700, 6420), r: 900 };
       case 'route': {
         if (!c.from || !c.to) return { p: group, r: 200 };
         return { p: c.from.clone().lerp(c.to, 0.5).setY(Math.max(c.from.y, c.to.y) + 150), r: Math.max(200, c.from.distanceTo(c.to) / 2), route: true };
@@ -155,7 +156,7 @@ export function createCinema(o) {
       }
       case 'pov':
         // riding through something big (the falls): the camera passes through it
-        if (r > 40) { pos.copy(P).addScaledVector(dir(yaw), lerp(1.2, -1.2, k) * r).setY(25); look.copy(pos).addScaledVector(dir(yaw), -100).setY(30); break; }
+        if (r > 40) { pos.copy(P).addScaledVector(dir(yaw), lerp(1.2, -1.2, k) * r).setY(P.y - 14); look.copy(pos).addScaledVector(dir(yaw), -100).setY(P.y - 10); break; }
         { const me = up(o.mePos(), 1.6); pos.copy(me).lerp(P, 0.04 * k); }
         break;
       case 'title_card': at(yaw, lerp(3.4, 3.0, s) * r, 0.9 * r); fov = 55; break;
