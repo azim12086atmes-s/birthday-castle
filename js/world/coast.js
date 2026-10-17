@@ -28,7 +28,30 @@ function landMaterial(far) {
     };
     m.customProgramCacheKey = () => 'land-far';
   }
-  return meadowGrade(nightGrade(m, far ? 'land-far' : 'land'));
+  return rockGrade(meadowGrade(nightGrade(m, far ? 'land-far' : 'land')));
+}
+
+// bare rock on the steep slopes and snow on the high crests, at full resolution
+// (the painted colour map holds them only at 20 m a pixel)
+function rockGrade(m) {
+  const prev = m.onBeforeCompile, key = m.customProgramCacheKey;
+  m.onBeforeCompile = (sh, r) => {
+    prev(sh, r);
+    sh.fragmentShader = sh.fragmentShader.replace('#include <alphamap_fragment>', `#include <alphamap_fragment>
+      {
+        vec2 rp = vMWorld.xz;
+        float rn = mNoise(rp * 0.02) * 0.6 + mNoise(rp * 0.11 + 3.) * 0.4;
+        float steep = smoothstep(0.86, 0.62, vMUp + (rn - 0.5) * 0.12);
+        float strata = 0.86 + 0.14 * sin(vMWorld.y * 0.21 + rn * 4.0);
+        vec3 rock = mix(vec3(0.56, 0.52, 0.6), vec3(0.74, 0.68, 0.7), rn) * strata;
+        float hi = smoothstep(500.0, 1100.0, vMWorld.y);
+        diffuseColor.rgb = mix(diffuseColor.rgb, rock, steep * (0.55 + 0.4 * hi) * smoothstep(8.0, 40.0, vMWorld.y));
+        float snow = smoothstep(980.0, 1250.0, vMWorld.y + (rn - 0.5) * 160.0) * smoothstep(0.45, 0.7, vMUp);
+        diffuseColor.rgb = mix(diffuseColor.rgb, vec3(0.97, 0.97, 1.02), snow);
+      }`);
+  };
+  m.customProgramCacheKey = () => (key ? key.call(m) : 'land') + '-rock';
+  return m;
 }
 
 function landGeometry(x0, z0, n, step, skipDeep) {
@@ -158,10 +181,33 @@ function treeGeometry() {
   return g;
 }
 
+function coniferGeometry() {
+  const parts = [];
+  const paint = (g, hex) => {
+    g = g.toNonIndexed(); const c = new THREE.Color(hex), n = g.attributes.position.count, a = new Float32Array(n * 3);
+    for (let i = 0; i < n; i++) { const k = 0.8 + 0.2 * Math.min(1, g.attributes.position.getY(i) / 22); a[i * 3] = c.r * k; a[i * 3 + 1] = c.g * k; a[i * 3 + 2] = c.b * k; }
+    g.setAttribute('color', new THREE.BufferAttribute(a, 3)); g.deleteAttribute('uv'); return g;
+  };
+  parts.push(paint(new THREE.CylinderGeometry(0.4, 0.7, 6, 5, 1, true).translate(0, 3, 0), '#5a4048'));
+  for (const [y, r, h] of [[7, 5.2, 8], [11.5, 4.1, 7], [15.5, 3, 6], [19, 1.9, 5]]) parts.push(paint(new THREE.ConeGeometry(r, h, 7, 1).translate(0, y, 0), '#ffffff'));
+  const g = mergeGeometries(parts);
+  g.computeVertexNormals();
+  return g;
+}
+
+// groves with clearings between them, rather than an even sprinkle
+function grove(x, z) {
+  const n = (a, b) => { const i = Math.floor(a), j = Math.floor(b), f = a - i, g = b - j, h = (u, v) => { const s = Math.sin(u * 127.1 + v * 311.7) * 43758.5453; return s - Math.floor(s); };
+    const fx = f * f * (3 - 2 * f), fz = g * g * (3 - 2 * g);
+    return (h(i, j) * (1 - fx) + h(i + 1, j) * fx) * (1 - fz) + (h(i, j + 1) * (1 - fx) + h(i + 1, j + 1) * fx) * fz; };
+  const v = n(x / 140, z / 140) * 0.65 + n(x / 45 + 7, z / 45 - 3) * 0.35;
+  return Math.min(1, Math.max(0, (v - 0.3) / 0.22));
+}
+
 function forests(scene, preset) {
   const spacing = preset.trees >= 200 ? 30 : preset.trees >= 120 ? 40 : 54;
   const range = preset.trees >= 200 ? 2200 : preset.trees >= 120 ? 1600 : 1100;
-  const T = 768, geo = treeGeometry();
+  const T = 768, geo = treeGeometry(), coneGeo = coniferGeometry();
   const mat = nightGrade(new THREE.MeshLambertMaterial({ vertexColors: true, emissive: '#0c2030', emissiveIntensity: 0.6 }), 'forest');
   const tiles = new Map();
   const palette = ['#3f9a52', '#4fae5a', '#2f8a5a', '#5bb86a', '#3a8f70', '#f2a6c8', '#7fd8c8', '#62b04a'];
@@ -169,24 +215,35 @@ function forests(scene, preset) {
   function build(ti, tj) {
     const r = rng(ti * 7919 + tj * 104729 + 13), pts = [];
     const x0 = ti * T, z0 = tj * T;
-    for (let z = z0; z < z0 + T; z += spacing) for (let x = x0; x < x0 + T; x += spacing) {
-      const px = x + r() * spacing, pz = z + r() * spacing;
-      const h = terrainHeight(MAIN, px, pz), f = forestAt(px, pz, h);
-      if (f > 0 && r() < f) pts.push([px, h, pz, r(), r(), r()]);
+    const step = spacing * 0.6;
+    for (let z = z0; z < z0 + T; z += step) for (let x = x0; x < x0 + T; x += step) {
+      const px = x + r() * step, pz = z + r() * step;
+      const h = terrainHeight(MAIN, px, pz), f = forestAt(px, pz, h) * grove(px, pz);
+      if (f > 0 && r() < f * 1.8) pts.push([px, h, pz, r(), r(), r(), f]);
     }
     if (!pts.length) return null;
-    const mesh = new THREE.InstancedMesh(geo, mat, pts.length);
-    pts.forEach(([x, y, z, a, b, k], i) => {
-      const sc = 0.75 + a * 0.9;
-      q.setFromAxisAngle(up, b * 6.28); s.set(sc, sc * (0.85 + k * 0.4), sc); p.set(x, y - 0.5, z);
-      mesh.setMatrixAt(i, m4.compose(p, q, s));
-      c.set(palette[Math.floor(k * (k < 0.9 ? 5 : palette.length))]);
-      mesh.setColorAt(i, c);
+    // conifers take over up the slopes; broadleaf trees keep the valleys
+    const kinds = [[], []];
+    for (const pt of pts) kinds[r() < THREE.MathUtils.smoothstep(pt[1], 120, 520) * 0.85 + 0.12 ? 1 : 0].push(pt);
+    const group = new THREE.Group();
+    kinds.forEach((list, kind) => {
+      if (!list.length) return;
+      const mesh = new THREE.InstancedMesh(kind ? coneGeo : geo, mat, list.length);
+      list.forEach(([x, y, z, a, b, k, f], i) => {
+        // big old trees in the hearts of the groves, saplings at their edges
+        const sc = (0.45 + a * a * 1.3) * (0.7 + 0.5 * f);
+        q.setFromAxisAngle(up, b * 6.28); s.set(sc, sc * (0.8 + k * 0.5), sc); p.set(x, y - 0.5, z);
+        mesh.setMatrixAt(i, m4.compose(p, q, s));
+        c.set(kind ? (k < 0.5 ? '#2f7a5c' : '#3b8a62') : palette[Math.floor(k * (k < 0.9 ? 5 : palette.length))]);
+        c.offsetHSL((a - 0.5) * 0.04, (b - 0.5) * 0.15, (k - 0.5) * 0.12);
+        mesh.setColorAt(i, c);
+      });
+      mesh.castShadow = false; mesh.receiveShadow = true;
+      mesh.computeBoundingSphere();
+      group.add(mesh);
     });
-    mesh.castShadow = false; mesh.receiveShadow = true;
-    mesh.computeBoundingSphere();
-    scene.add(mesh);
-    return mesh;
+    scene.add(group);
+    return group;
   }
   return {
     update(cam) {

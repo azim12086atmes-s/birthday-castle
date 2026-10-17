@@ -423,6 +423,12 @@ function frame() {
   key.target.position.set(Math.round(focus.x), Math.round(focus.y), Math.round(focus.z));
   key.position.copy(key.target.position).addScaledVector(keyDir, 200);
   coast.update(t, camera);
+  // the haze thins as you climb, so the view from high up stays clear
+  {
+    const hk = THREE.MathUtils.clamp((camera.position.y - 150) / 1400, 0, 1);
+    scene.fog.near = 900 + hk * 5000; scene.fog.far = 16000 + hk * 22000;
+    const wu = coast.sea.material.uniforms; wu.uFogNear.value = scene.fog.near; wu.uFogFar.value = scene.fog.far;
+  }
   islands.update(t);
   castle.update(t, dt, camera);
   nature.update(t);
