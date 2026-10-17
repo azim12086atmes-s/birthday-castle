@@ -1,6 +1,7 @@
-// The world fill (study thread, design/world-fill): 1,521 placed models (landmarks at the
-// 32 places, the arrival gate, relics and rocks across the crescent), drawn from 110 of our
-// Meshy models. Each model is one InstancedMesh, so the whole fill costs about one draw
+// The world fill (study thread, design/world-fill): 3,126 placed models (landmarks at the
+// 32 places, the arrival gate, relics, glowing flora, road lanterns, sky isles and citadels,
+// far citadels on the great ridge), drawn from 263 of our Meshy models.
+// Each model is one InstancedMesh, so the whole fill costs about one draw
 // call per model in view. Near the player a model draws as its web copy of the layout
 // GLB (about a quarter of the triangles, 1024 px texture); further out it is a picture
 // card (study thread, design/world-fill/cards): a strip of 8 views round the model, of
@@ -70,16 +71,17 @@ export function createWorldFill(scene, quality) {
       // cards cost two triangles, so they reach further than the old far copies did
       models.set(name, { name, tier: m.tier, near: n * Math.max(q, 0.7), far: f * q * 1.3, items: [], copies: { near: null, card: null } });
     }
-    for (const [m, place, x, y, z, rot, s] of P.items) {
+    for (const [m, place, x, y, z, rot, s, far] of P.items) {
       const M = models.get(m);
       if (!M) continue;
       // sit on the game's own ground: the palace terraces and district pads differ a little from the raw crescent
-      const g = groundAt(x, z, y + 5);
+      // (sky isles and the great ridge's citadels keep their own height)
+      const g = far ? -1 : groundAt(x, z, y + 5);
       const yy = g < 0 ? y : y + THREE.MathUtils.clamp(g - crescentH(x, z), -15, 60);
       const mat = new THREE.Matrix4().compose(new THREE.Vector3(x, yy, z), new THREE.Quaternion().setFromAxisAngle(new THREE.Vector3(0, 1, 0), rot), new THREE.Vector3(s, s, s));
-      M.items.push({ x, z, mat, place });
+      M.items.push({ x, z, mat, place, k: far ? 3 : 1 });
       const dims = P.models[m].dims;
-      if (M.tier !== 'prop') footprints.push({ x, z, r: 0.5 * Math.max(dims[0], dims[2]) * s });
+      if (M.tier !== 'prop' && place !== 'sky') footprints.push({ x, z, r: 0.5 * Math.max(dims[0], dims[2]) * s });
     }
     ready = true;
   });
@@ -95,7 +97,7 @@ export function createWorldFill(scene, quality) {
   }
   function loadCard(M) {
     const C = M.copies.card, card = cards[M.name];
-    if (!card) { C.status = 'failed'; return; }
+    if (!card) { C.status = 'failed'; M.dirty = true; return; }
     texLoader.load(`data/world/cards/${M.name}.webp`, (tex) => {
       let map = tex;
       if (quality.key !== 'high') {
@@ -112,7 +114,7 @@ export function createWorldFill(scene, quality) {
       C.meshes.push(im);
       C.status = 'ready';
       M.dirty = true;
-    }, undefined, () => { C.status = 'failed'; });
+    }, undefined, () => { C.status = 'failed'; M.dirty = true; });
   }
   function pump() {
     queue.sort((a, b) => a[0].copies[a[1]].dist - b[0].copies[b[1]].dist);
@@ -144,10 +146,12 @@ export function createWorldFill(scene, quality) {
     const near = [], far = [];
     let closest = Infinity;
     for (const it of M.items) {
-      const d = Math.hypot(it.x - cam.x, it.z - cam.z);
+      const d = Math.hypot(it.x - cam.x, it.z - cam.z) / it.k;      // sky and ridge items reach three times as far
       closest = Math.min(closest, d);
       if (d < M.near) near.push(it); else if (d < M.far) far.push(it);
     }
+    // a sky or ridge item whose card is missing draws its near copy from afar instead
+    if (M.copies.card?.status === 'failed') for (let i = far.length - 1; i >= 0; i--) if (far[i].k > 1) near.push(...far.splice(i, 1));
     if (near.length) request(M, 'near', closest);
     if ((near.length || far.length) && Object.keys(cards).length) request(M, 'card', closest);
     const nearOK = M.copies.near?.status === 'ready';

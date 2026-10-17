@@ -113,12 +113,14 @@ AI Mew following you, `?quality=low` for weak machines.
 
 The ground is the study thread's crescent terrain (`data/world/crescent-h.bin`, 1024 x 1024,
 about 20 m a cell, and its painted colour map), with Lantern Lake, the palace terraces, the
-causeway and the district pads laid on top. The 1,521 placed models of the world fill
+causeway and the district pads laid on top. The 3,126 placed models of the world fill
 (`data/world/placements.json`) draw as one InstancedMesh per model. Each model has a near
 copy (about a quarter of the layout triangles, 1024 px texture, `data/world/near/`) and,
 further out, a picture card (`data/world/cards/`, 8 views round the model; the shader shows
 the one facing the camera, half size on Low and Medium); both load as you come within range
 (landmarks 450 m / 7 km, buildings 300 m / 3.5 km, props 140 m / 1.2 km, shorter on Low).
+Sky isles, sky citadels and the far citadels on the great ridge keep their own height and
+reach three times as far; while one has no card it draws its near copy from afar.
 They are made from the layout GLBs with a position-welded simplify; the script is in the
 thread's notes. Players can walk through the placed models for now.
 - Her name, the friends list, the quiz questions about her, and the reveal line are in
