@@ -82,12 +82,15 @@ def paint(h, B, mpp, n, seed=0, outer=False):
 
 col, sl = paint(h, B, mpp, N)
 # roads and plazas: warm cream, royal road gold; palace grounds keep their designed colours
-paths = json.load(open(f'{S}/fill/paths/paths.json'))
+paths = json.load(open(f'{OUT}/paths.json'))
 U = N * 2; rimg = Image.new('L', (U, U)); d = ImageDraw.Draw(rimg); gimg = Image.new('L', (U, U)); dg = ImageDraw.Draw(gimg)
 def px(x, z): return ((x - CX + MAPW / 2) / MAPW * U, (z - CZ + MAPW / 2) / MAPW * U)
 for p in paths['paths']:
-    pts = [px(a, c) for a, _, c in p['points']]; w = max(2, int(p['width'] / MAPW * U))
-    (dg if p['kind'] == 'royal' else d).line(pts, fill=255, width=w, joint='curve')
+    w = max(2, int(p['width'] / MAPW * U)); dd = dg if p['kind'] == 'royal' else d
+    for (a0, _, c0), (a1, _, c1) in zip(p['points'], p['points'][1:]):    # no paint across water (decks and the causeway carry it)
+        ii_, jj_ = (np.array([c0, c1]) - CZ + MAPW / 2) / mpp - 0.5, (np.array([a0, a1]) - CX + MAPW / 2) / mpp - 0.5
+        if (ndi.map_coordinates(h, [ii_, jj_], order=1) < 0.5).any(): continue
+        dd.line([px(a0, c0), px(a1, c1)], fill=255, width=w)
 for q in paths['plazas']:
     x, y = px(q['x'], q['z']); r = q['radius'] / MAPW * U; d.ellipse([x - r, y - r, x + r, y + r], fill=255)
 road = np.asarray(rimg.resize((N, N), Image.BILINEAR)) / 255.0; royal = np.asarray(gimg.resize((N, N), Image.BILINEAR)) / 255.0

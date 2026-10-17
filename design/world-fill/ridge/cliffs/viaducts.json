@@ -1,0 +1,142 @@
+{
+ "Viaduct_palace_north": {
+  "bridge": "palace-north",
+  "x": 46.75,
+  "z": -1325.2,
+  "y": 0.0,
+  "rotY": 1.53554,
+  "scale": 1.0,
+  "length": 460.0,
+  "deck": 110.5
+ },
+ "Viaduct_palace_northeast": {
+  "bridge": "palace-northeast",
+  "x": 1421.25,
+  "z": -1243.6,
+  "y": 0.0,
+  "rotY": 0.7189,
+  "scale": 1.0,
+  "length": 463.3,
+  "deck": 110.5
+ },
+ "Viaduct_palace_east": {
+  "bridge": "palace-east",
+  "x": 1447.65,
+  "z": 125.9,
+  "y": 0.0,
+  "rotY": -0.08665,
+  "scale": 1.0,
+  "length": 432.1,
+  "deck": 110.5
+ },
+ "Viaduct_palace_west_n": {
+  "bridge": "palace-west-n",
+  "x": -1441.55,
+  "z": -398.75,
+  "y": 0.0,
+  "rotY": 2.87175,
+  "scale": 1.0,
+  "length": 685.3,
+  "deck": 110.5
+ },
+ "Viaduct_road_B04_B25": {
+  "bridge": "road:B04-B25",
+  "x": -2063.3,
+  "z": -1252.6,
+  "y": 0.0,
+  "rotY": -0.2118,
+  "scale": 1.0,
+  "length": 514.8,
+  "deck": 110.5
+ },
+ "Viaduct_road_B04_B25_2": {
+  "bridge": "road:B04-B25",
+  "x": -1537.95,
+  "z": -1360.7,
+  "y": 0.0,
+  "rotY": 0.48588,
+  "scale": 1.0,
+  "length": 379.9,
+  "deck": 110.5
+ },
+ "Viaduct_road_B01_B25": {
+  "bridge": "road:B01-B25",
+  "x": -914.0,
+  "z": -1214.85,
+  "y": 0.0,
+  "rotY": 2.34143,
+  "scale": 1.0,
+  "length": 285.1,
+  "deck": 110.5
+ },
+ "Viaduct_road_B01_B32": {
+  "bridge": "road:B01-B32",
+  "x": -1315.7,
+  "z": 654.35,
+  "y": 0.0,
+  "rotY": -2.52458,
+  "scale": 1.0,
+  "length": 307.7,
+  "deck": 110.5
+ },
+ "Viaduct_road_B07_B25": {
+  "bridge": "road:B07-B25",
+  "x": -683.3,
+  "z": -1902.55,
+  "y": 0.0,
+  "rotY": -1.86559,
+  "scale": 1.0,
+  "length": 143.3,
+  "deck": 110.5
+ },
+ "Viaduct_road_B07_B25_2": {
+  "bridge": "road:B07-B25",
+  "x": -902.55,
+  "z": -1700.85,
+  "y": 0.0,
+  "rotY": -2.54746,
+  "scale": 1.0,
+  "length": 281.7,
+  "deck": 110.5
+ },
+ "Viaduct_road_B02_B32": {
+  "bridge": "road:B02-B32",
+  "x": -2203.7,
+  "z": 896.5,
+  "y": 0.0,
+  "rotY": 0.60011,
+  "scale": 1.0,
+  "length": 215.8,
+  "deck": 110.5
+ },
+ "Viaduct_trail_road_A_big_menhir_with_anc": {
+  "bridge": "trail:road-A_big_menhir_with_anc",
+  "x": 1641.45,
+  "z": -1794.85,
+  "y": 0.0,
+  "rotY": -2.85793,
+  "scale": 1.0,
+  "length": 533.4,
+  "deck": 110.5
+ },
+ "Viaduct_trail_road_Ancient_Obelisk": {
+  "bridge": "trail:road-Ancient_Obelisk",
+  "x": 2123.85,
+  "z": -356.2,
+  "y": 0.0,
+  "rotY": -1.981,
+  "scale": 1.0,
+  "length": 610.9,
+  "deck": 110.5
+ },
+ "Viaduct_trail_road_Ancient_Archway": {
+  "bridge": "trail:road-Ancient_Archway",
+  "x": 2220.4,
+  "z": 366.3,
+  "y": 0.0,
+  "rotY": -0.71484,
+  "scale": 1.0,
+  "length": 220.5,
+  "deck": 110.5
+ }
+}
