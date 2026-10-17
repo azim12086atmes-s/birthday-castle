@@ -46,14 +46,16 @@ function rockGrade(m) {
         float steep = smoothstep(0.86, 0.62, vMUp + (rn - 0.5) * 0.12);
         // faint, broken strata: warped by noise so they never read as contour lines
         float strata = 0.95 + 0.05 * sin(vMWorld.y * 0.13 + rn * 9.0 + mNoise(rp * 0.004) * 12.0);
-        vec3 rock = mix(vec3(0.56, 0.52, 0.6), vec3(0.74, 0.68, 0.7), rn) * strata;
+        // the colour map carries baked light (sky occlusion, contact shadows): rock and snow keep its shading
+        float bake = clamp(dot(diffuseColor.rgb, vec3(0.3, 0.59, 0.11)) / 0.5, 0.6, 1.15);
+        vec3 rock = mix(vec3(0.56, 0.52, 0.6), vec3(0.74, 0.68, 0.7), rn) * strata * bake;
         float hi = smoothstep(500.0, 1100.0, vMWorld.y);
         diffuseColor.rgb = mix(diffuseColor.rgb, rock, steep * (0.55 + 0.4 * hi) * smoothstep(8.0, 40.0, vMWorld.y));
         // snow from about 1 km on the old ring; on the great ridge from 2.6 km, with rock on faces over 60 degrees
         float rg = smoothstep(9500.0, 11000.0, length(rp - vec2(-709.5, 2260.5)));
         float sl = mix(980.0, 2600.0, rg);
         float snow = smoothstep(sl, sl + 270.0, vMWorld.y + (rn - 0.5) * 160.0) * smoothstep(mix(0.45, 0.45, rg), mix(0.7, 0.55, rg), vMUp);
-        diffuseColor.rgb = mix(diffuseColor.rgb, vec3(0.97, 0.97, 1.02), snow);
+        diffuseColor.rgb = mix(diffuseColor.rgb, vec3(0.97, 0.97, 1.02) * min(bake, 1.0), snow);
       }`).replace('#include <fog_fragment>', `
       #ifdef USE_FOG
         // the high peaks rise out of the haze, so the great ridge reads from the palace
