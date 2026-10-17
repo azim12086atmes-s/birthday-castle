@@ -129,7 +129,7 @@ data = dict(
         dict(id='cloud_chariot', name='Cloud chariot', kind='arrival', seats=2), dict(id='glass_sleigh', name='Glass sleigh', kind='arrival', seats=2),
         dict(id='lantern_gondola', name='Lantern gondola', kind='arrival', seats=2), dict(id='winged_carriage', name='Winged carriage', kind='arrival', seats=2),
         dict(id='flying_ship', name='The flying ship', kind='group', seats=16, look='Open deck everyone stands on; carries the group between places')],
- mew=dict(controlledBy='owner', eyes='closed_smiling', voice='mew_sounds_only',
+ mew=dict(controlledBy='owner', eyes='none', voice='mew_sounds_only',
    view=dict(offsetDeg=[30, 50], distanceM=[1, 2], lagS=0.6, leashM=6, keepCentreClearDuring=['combat', 'race', 'cutscene', 'puzzle']),
    actions=[dict(id='upside_down', name='Float upside down', by='mew', what='At the top of her view, tail wagging'),
             dict(id='magic_blob', name='Throw a magic blob', by='mew', what='Bursts into petals and sparkles on her screen, harmless'),

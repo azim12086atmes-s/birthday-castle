@@ -162,7 +162,7 @@
     "mew": { "type": "object", "required": ["controlledBy", "view", "actions", "reveal"], "additionalProperties": false,
       "properties": {
         "controlledBy": { "const": "owner" },
-        "eyes": { "enum": ["closed_smiling", "open", "none"], "description": "waiting on the owner" },
+        "eyes": { "const": "none", "description": "owner, Oct 17: no animal has eyes, the Mew included" },
         "voice": { "enum": ["mew_sounds_only", "voice_chat"], "description": "before the reveal" },
         "view": { "type": "object", "required": ["offsetDeg", "distanceM", "lagS"], "additionalProperties": false,
           "properties": {

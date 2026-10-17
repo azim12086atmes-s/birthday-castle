@@ -2182,7 +2182,7 @@
  ],
  "mew": {
   "controlledBy": "owner",
-  "eyes": "closed_smiling",
+  "eyes": "none",
   "voice": "mew_sounds_only",
   "view": {
    "offsetDeg": [
