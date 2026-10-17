@@ -1,0 +1,1053 @@
+{
+ "_doc": "What goes where. size = largest dimension in metres (natural size). layout: center | ring | cluster | float. r = radius in metres, n = count, dy = height above ground, off = [dx, dz] metres from the place centre (x east, z south).",
+ "places": {
+  "ARRIVAL": [
+   {
+    "m": "Subject_A_commemorat",
+    "size": 190,
+    "layout": "center",
+    "note": "white marble gate in the mountain wall",
+    "water": true
+   }
+  ],
+  "B01": [
+   {
+    "m": "Royal_Portal_Gate",
+    "size": 70,
+    "layout": "center",
+    "off": [
+     0,
+     1250
+    ]
+   },
+   {
+    "m": "Verdant_Cascade_Fount",
+    "size": 24,
+    "layout": "ring",
+    "n": 4,
+    "r": 1450
+   },
+   {
+    "m": "Marble_Pavilion",
+    "size": 26,
+    "layout": "ring",
+    "n": 6,
+    "r": 1650
+   }
+  ],
+  "B02": [
+   {
+    "m": "Domed_Palace_Model",
+    "size": 130,
+    "layout": "center"
+   },
+   {
+    "m": "White_Lotus",
+    "size": 9,
+    "layout": "ring",
+    "n": 10,
+    "r": 120,
+    "water": true
+   },
+   {
+    "m": "A_colossal_floating_c",
+    "size": 45,
+    "layout": "float",
+    "n": 1,
+    "r": 0,
+    "dy": 160
+   }
+  ],
+  "B03": [
+   {
+    "m": "Gothic_Cathedral",
+    "size": 160,
+    "layout": "center"
+   }
+  ],
+  "B04": [
+   {
+    "m": "Please_provide_an_ima",
+    "size": 130,
+    "layout": "center"
+   },
+   {
+    "m": "Copper_Cloud_Bonsai",
+    "size": 22,
+    "layout": "ring",
+    "n": 6,
+    "r": 110
+   }
+  ],
+  "B05": [
+   {
+    "m": "Ghotisches_Schloss",
+    "size": 95,
+    "layout": "center"
+   },
+   {
+    "m": "Emberkeep_Turret",
+    "size": 45,
+    "layout": "ring",
+    "n": 2,
+    "r": 120
+   },
+   {
+    "m": "Elven_tower_base_Circ",
+    "size": 30,
+    "layout": "ring",
+    "n": 3,
+    "r": 170
+   }
+  ],
+  "B06": [
+   {
+    "m": "Majestic_Pagoda_Palac",
+    "size": 90,
+    "layout": "center"
+   },
+   {
+    "m": "Dark_oriental_gateway",
+    "size": 32,
+    "layout": "center",
+    "off": [
+     0,
+     150
+    ]
+   },
+   {
+    "m": "japanese_building",
+    "size": 16,
+    "layout": "ring",
+    "n": 6,
+    "r": 120
+   },
+   {
+    "m": "Ornate_Watchtower",
+    "size": 30,
+    "layout": "ring",
+    "n": 2,
+    "r": 170
+   },
+   {
+    "m": "Shrine",
+    "size": 12,
+    "layout": "cluster",
+    "n": 2,
+    "r": 200
+   },
+   {
+    "m": "A_3D_image_a_a_tradit",
+    "size": 10,
+    "layout": "cluster",
+    "n": 4,
+    "r": 220
+   },
+   {
+    "m": "Stone_Lantern",
+    "size": 3,
+    "layout": "ring",
+    "n": 12,
+    "r": 95
+   }
+  ],
+  "B07": [
+   {
+    "m": "Pantheon",
+    "size": 60,
+    "layout": "center"
+   },
+   {
+    "m": "Marble_Pavilion",
+    "size": 22,
+    "layout": "ring",
+    "n": 4,
+    "r": 90
+   }
+  ],
+  "B08": [
+   {
+    "m": "Ancient_Stone_Amphith",
+    "size": 190,
+    "layout": "center"
+   }
+  ],
+  "B09": [
+   {
+    "m": "Mediterranean_Villa",
+    "size": 18,
+    "layout": "cluster",
+    "n": 40,
+    "r": 315
+   },
+   {
+    "m": "Colorful_Courtyard_Vi",
+    "size": 40,
+    "layout": "cluster",
+    "n": 8,
+    "r": 266
+   },
+   {
+    "m": "A_parisian_building",
+    "size": 25,
+    "layout": "cluster",
+    "n": 6,
+    "r": 210
+   },
+   {
+    "m": "Kalliope_House_Comple",
+    "size": 12,
+    "layout": "cluster",
+    "n": 12,
+    "r": 350
+   },
+   {
+    "m": "museum_building",
+    "size": 30,
+    "layout": "center"
+   }
+  ],
+  "B10": [
+   {
+    "m": "A_very_large_ancient",
+    "size": 120,
+    "layout": "center"
+   },
+   {
+    "m": "A_sprawling_sandstone",
+    "size": 50,
+    "layout": "ring",
+    "n": 2,
+    "r": 160
+   },
+   {
+    "m": "Vintage_Stone_Villa",
+    "size": 25,
+    "layout": "cluster",
+    "n": 8,
+    "r": 320
+   },
+   {
+    "m": "Ornate_Sandstone_Gate",
+    "size": 25,
+    "layout": "center",
+    "off": [
+     0,
+     200
+    ]
+   },
+   {
+    "m": "Desert_Sandstone_Arch",
+    "size": 45,
+    "layout": "cluster",
+    "n": 2,
+    "r": 500
+   },
+   {
+    "m": "Desert_Mushroom_Rock",
+    "size": 35,
+    "layout": "cluster",
+    "n": 6,
+    "r": 600
+   },
+   {
+    "m": "Stone_Fortress",
+    "size": 70,
+    "layout": "cluster",
+    "n": 1,
+    "r": 450
+   },
+   {
+    "m": "A_sandstone_stair_fli",
+    "size": 16,
+    "layout": "cluster",
+    "n": 2,
+    "r": 200
+   }
+  ],
+  "B11": [
+   {
+    "m": "Basalt_Arch",
+    "size": 200,
+    "layout": "center"
+   },
+   {
+    "m": "Rocky_Archway",
+    "size": 40,
+    "layout": "cluster",
+    "n": 2,
+    "r": 350
+   },
+   {
+    "m": "Cliff_Formations",
+    "size": 60,
+    "layout": "cluster",
+    "n": 3,
+    "r": 400
+   }
+  ],
+  "B12": [
+   {
+    "m": "Old_Town_Clock_Tower",
+    "size": 35,
+    "layout": "center"
+   },
+   {
+    "m": "Medieval_Cottage",
+    "size": 12,
+    "layout": "cluster",
+    "n": 40,
+    "r": 252
+   },
+   {
+    "m": "A_modular_medieval_ho",
+    "size": 18,
+    "layout": "cluster",
+    "n": 10,
+    "r": 180
+   },
+   {
+    "m": "Timbered_Market_House",
+    "size": 14,
+    "layout": "ring",
+    "n": 8,
+    "r": 70
+   },
+   {
+    "m": "Ember_Tiled_Turret_Ho",
+    "size": 16,
+    "layout": "cluster",
+    "n": 6,
+    "r": 210
+   },
+   {
+    "m": "Enchanted_Thatch_Cott",
+    "size": 12,
+    "layout": "cluster",
+    "n": 8,
+    "r": 288
+   },
+   {
+    "m": "Whimsical_Hobbit_Dwel",
+    "size": 9,
+    "layout": "cluster",
+    "n": 6,
+    "r": 312
+   },
+   {
+    "m": "Herbal_Harvest",
+    "size": 3,
+    "layout": "ring",
+    "n": 6,
+    "r": 55
+   }
+  ],
+  "B13": [
+   {
+    "m": "Windmill_Haven",
+    "size": 30,
+    "layout": "cluster",
+    "n": 5,
+    "r": 350
+   },
+   {
+    "m": "Olive_Grove_Cottage",
+    "size": 22,
+    "layout": "cluster",
+    "n": 4,
+    "r": 300
+   }
+  ],
+  "B14": [
+   {
+    "m": "Isle_of_the_Stone_Spi",
+    "size": 220,
+    "layout": "center"
+   },
+   {
+    "m": "Enchanted_Spiral_Towe",
+    "size": 40,
+    "layout": "cluster",
+    "n": 8,
+    "r": 400
+   },
+   {
+    "m": "Elven_tower_base_Circ",
+    "size": 30,
+    "layout": "cluster",
+    "n": 5,
+    "r": 450
+   },
+   {
+    "m": "Ring_Village_Diorama",
+    "size": 60,
+    "layout": "cluster",
+    "n": 2,
+    "r": 300
+   }
+  ],
+  "B15": [
+   {
+    "m": "Ancient_Stone_Temples",
+    "size": 90,
+    "layout": "center"
+   },
+   {
+    "m": "Ancient_Stone_Structu",
+    "size": 70,
+    "layout": "ring",
+    "n": 1,
+    "r": 160
+   },
+   {
+    "m": "Verdant_Palace",
+    "size": 60,
+    "layout": "ring",
+    "n": 1,
+    "r": 200
+   },
+   {
+    "m": "A_large_arch_made_fr",
+    "size": 12,
+    "layout": "ring",
+    "n": 4,
+    "r": 100
+   },
+   {
+    "m": "Ancient_Gateway_Ruins",
+    "size": 25,
+    "layout": "cluster",
+    "n": 2,
+    "r": 260
+   }
+  ],
+  "B16": [
+   {
+    "m": "Enchanted_Thatch_Cott",
+    "size": 16,
+    "layout": "cluster",
+    "n": 6,
+    "r": 150
+   },
+   {
+    "m": "Pine_Trees_on_a_Rocky",
+    "size": 28,
+    "layout": "cluster",
+    "n": 8,
+    "r": 400
+   }
+  ],
+  "B17": [
+   {
+    "m": "England_Mystic_Ston",
+    "size": 60,
+    "layout": "center"
+   },
+   {
+    "m": "High_detail_fantasy",
+    "size": 22,
+    "layout": "cluster",
+    "n": 10,
+    "r": 260
+   },
+   {
+    "m": "Verdant_Ring_of_Stone",
+    "size": 20,
+    "layout": "cluster",
+    "n": 1,
+    "r": 150
+   },
+   {
+    "m": "Ancient_Archway",
+    "size": 12,
+    "layout": "ring",
+    "n": 3,
+    "r": 70
+   },
+   {
+    "m": "Cementery_Pillar_Vari",
+    "size": 8,
+    "layout": "cluster",
+    "n": 6,
+    "r": 120
+   },
+   {
+    "m": "Enchanted_Lantern_Tre",
+    "size": 6,
+    "layout": "ring",
+    "n": 16,
+    "r": 110
+   },
+   {
+    "m": "a_stylized_stump_base",
+    "size": 5,
+    "layout": "cluster",
+    "n": 8,
+    "r": 220
+   },
+   {
+    "m": "Luminous_Paper_Flower",
+    "size": 4,
+    "layout": "cluster",
+    "n": 20,
+    "r": 200
+   }
+  ],
+  "B18": [
+   {
+    "m": "Lantern_Tree_Palace",
+    "size": 120,
+    "layout": "center"
+   },
+   {
+    "m": "Metaphor_The_Tree_of",
+    "size": 35,
+    "layout": "ring",
+    "n": 4,
+    "r": 150
+   },
+   {
+    "m": "Enchanted_Forest_Thro",
+    "size": 6,
+    "layout": "center",
+    "off": [
+     0,
+     70
+    ]
+   }
+  ],
+  "B19": [
+   {
+    "m": "Kalliope_House_Comple",
+    "size": 12,
+    "layout": "cluster",
+    "n": 8,
+    "r": 200
+   },
+   {
+    "m": "Stone_Lantern",
+    "size": 3,
+    "layout": "ring",
+    "n": 10,
+    "r": 80
+   }
+  ],
+  "B20": [
+   {
+    "m": "Marble_Pavilion",
+    "size": 26,
+    "layout": "ring",
+    "n": 4,
+    "r": 60
+   },
+   {
+    "m": "Floral_Wreath_of_Spri",
+    "size": 7,
+    "layout": "ring",
+    "n": 4,
+    "r": 30
+   }
+  ],
+  "B21": [
+   {
+    "m": "Celestial_Armillary",
+    "size": 54,
+    "layout": "center"
+   },
+   {
+    "m": "Ancient_Stone_Relic",
+    "size": 8,
+    "layout": "ring",
+    "n": 4,
+    "r": 60
+   }
+  ],
+  "B22": [
+   {
+    "m": "untitled",
+    "size": 48,
+    "layout": "center",
+    "note": "golden sun tower as the lighthouse"
+   }
+  ],
+  "B23": [
+   {
+    "m": "Marble_Pavilion",
+    "size": 22,
+    "layout": "ring",
+    "n": 3,
+    "r": 50,
+    "water": true
+   }
+  ],
+  "B24": [
+   {
+    "m": "Ancient_Stone_Circle",
+    "size": 45,
+    "layout": "center",
+    "water": true
+   }
+  ],
+  "B25": [
+   {
+    "m": "Leafspire_Cathedral",
+    "size": 100,
+    "layout": "center"
+   },
+   {
+    "m": "A_garden_of_cryst",
+    "size": 10,
+    "layout": "ring",
+    "n": 4,
+    "r": 90
+   },
+   {
+    "m": "Crystal_Peaks_PBR",
+    "size": 30,
+    "layout": "cluster",
+    "n": 1,
+    "r": 130
+   }
+  ],
+  "B26": [
+   {
+    "m": "Infernal_Peak",
+    "size": 150,
+    "layout": "center"
+   },
+   {
+    "m": "Volcanic_Monolith",
+    "size": 60,
+    "layout": "ring",
+    "n": 3,
+    "r": 180
+   },
+   {
+    "m": "Sentinel_Peak",
+    "size": 200,
+    "layout": "cluster",
+    "n": 2,
+    "r": 450
+   }
+  ],
+  "B27": [
+   {
+    "m": "Desert_Oasis_Palace",
+    "size": 60,
+    "layout": "center"
+   },
+   {
+    "m": "Desert_Fortress",
+    "size": 90,
+    "layout": "center",
+    "off": [
+     260,
+     -120
+    ]
+   },
+   {
+    "m": "Desert_Adobe_Courtyar",
+    "size": 20,
+    "layout": "ring",
+    "n": 4,
+    "r": 120
+   },
+   {
+    "m": "Desert_Dwelling",
+    "size": 10,
+    "layout": "cluster",
+    "n": 10,
+    "r": 260
+   },
+   {
+    "m": "A_majestic_tiered_str",
+    "size": 40,
+    "layout": "cluster",
+    "n": 1,
+    "r": 200
+   },
+   {
+    "m": "Desert_Ruins",
+    "size": 20,
+    "layout": "cluster",
+    "n": 2,
+    "r": 350
+   }
+  ],
+  "B28": [
+   {
+    "m": "Prismatic_Peaks",
+    "size": 30,
+    "layout": "center"
+   },
+   {
+    "m": "artistic_abstract_cry",
+    "size": 8,
+    "layout": "cluster",
+    "n": 8,
+    "r": 160
+   },
+   {
+    "m": "Elven_tower_base_Circ",
+    "size": 28,
+    "layout": "ring",
+    "n": 1,
+    "r": 90
+   }
+  ],
+  "B29": [
+   {
+    "m": "Cave_Entrance",
+    "size": 60,
+    "layout": "center"
+   },
+   {
+    "m": "Cave_Structures_1",
+    "size": 30,
+    "layout": "cluster",
+    "n": 2,
+    "r": 150
+   },
+   {
+    "m": "a_large_rainbow_cryst",
+    "size": 8,
+    "layout": "cluster",
+    "n": 6,
+    "r": 120
+   },
+   {
+    "m": "Crystal_Peaks_PBR",
+    "size": 25,
+    "layout": "cluster",
+    "n": 2,
+    "r": 180
+   }
+  ],
+  "B30": [
+   {
+    "m": "Floating_Stone_Island",
+    "size": 112,
+    "layout": "float",
+    "n": 6,
+    "r": 360,
+    "dy": 0
+   },
+   {
+    "m": "Mossy_Monolith",
+    "size": 80,
+    "layout": "float",
+    "n": 6,
+    "r": 480,
+    "dy": -60
+   }
+  ],
+  "B31": [
+   {
+    "m": "Floral_Wreath_of_Spri",
+    "size": 7,
+    "layout": "ring",
+    "n": 4,
+    "r": 40
+   },
+   {
+    "m": "For_Diana_This_beauti",
+    "size": 4,
+    "layout": "center"
+   },
+   {
+    "m": "Stone_Bridge",
+    "size": 14,
+    "layout": "cluster",
+    "n": 2,
+    "r": 150
+   },
+   {
+    "m": "Whispering_Willow_of",
+    "size": 16,
+    "layout": "cluster",
+    "n": 4,
+    "r": 200
+   },
+   {
+    "m": "1000054986_jpg",
+    "size": 5,
+    "layout": "cluster",
+    "n": 6,
+    "r": 120
+   }
+  ],
+  "B32": [
+   {
+    "m": "Marble_Pavilion",
+    "size": 20,
+    "layout": "center"
+   },
+   {
+    "m": "Royal_Carriage",
+    "size": 5,
+    "layout": "cluster",
+    "n": 3,
+    "r": 80
+   },
+   {
+    "m": "Bases_Pedestals_Minis",
+    "size": 12,
+    "layout": "cluster",
+    "n": 2,
+    "r": 90
+   },
+   {
+    "m": "Luminous_Paper_Flower",
+    "size": 4,
+    "layout": "cluster",
+    "n": 12,
+    "r": 110
+   }
+  ]
+ },
+ "scatter": [
+  {
+   "m": "Meadow_Rocks",
+   "size": 6,
+   "n": 260,
+   "biomes": [
+    8,
+    9,
+    18
+   ]
+  },
+  {
+   "m": "Desert_Rock_Formation",
+   "size": 30,
+   "n": 80,
+   "biomes": [
+    14,
+    6
+   ]
+  },
+  {
+   "m": "Elephant_Rock_Formati",
+   "size": 35,
+   "n": 30,
+   "biomes": [
+    14
+   ]
+  },
+  {
+   "m": "Desert_Monolith",
+   "size": 40,
+   "n": 25,
+   "biomes": [
+    14,
+    6
+   ]
+  },
+  {
+   "m": "Majestic_Rock_Formati",
+   "size": 45,
+   "n": 40,
+   "biomes": [
+    15
+   ]
+  },
+  {
+   "m": "Rubble_Pile",
+   "size": 8,
+   "n": 60,
+   "biomes": [
+    19,
+    17
+   ]
+  },
+  {
+   "m": "Rock_Formation_Collec",
+   "size": 20,
+   "n": 80,
+   "biomes": [
+    7,
+    19,
+    16
+   ]
+  },
+  {
+   "m": "Stone",
+   "size": 12,
+   "n": 60,
+   "biomes": [
+    17,
+    18,
+    19
+   ]
+  },
+  {
+   "m": "Mossy_Timber_Ruins",
+   "size": 15,
+   "n": 12,
+   "biomes": [
+    10,
+    12
+   ]
+  },
+  {
+   "m": "Fallen_Pillar",
+   "size": 10,
+   "n": 15,
+   "biomes": [
+    10,
+    12,
+    13
+   ]
+  },
+  {
+   "m": "Stone_Lantern",
+   "size": 3,
+   "n": 80,
+   "biomes": [
+    21
+   ]
+  },
+  {
+   "m": "Ancient_Obelisk",
+   "size": 14,
+   "n": 45,
+   "biomes": [
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19
+   ],
+   "hilltop": true
+  },
+  {
+   "m": "A_big_menhir_with_anc",
+   "size": 9,
+   "n": 70,
+   "biomes": [
+    8,
+    9,
+    10,
+    17,
+    18,
+    16
+   ],
+   "hilltop": true
+  },
+  {
+   "m": "Ancient_Stone_Relic",
+   "size": 8,
+   "n": 35,
+   "biomes": [
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19
+   ]
+  },
+  {
+   "m": "Ancient_Archway",
+   "size": 12,
+   "n": 25,
+   "biomes": [
+    10,
+    12,
+    13,
+    9
+   ]
+  },
+  {
+   "m": "Ancient_Gateway_Ruins",
+   "size": 25,
+   "n": 14,
+   "biomes": [
+    10,
+    13,
+    12,
+    15
+   ]
+  },
+  {
+   "m": "Verdant_Ring_of_Stone",
+   "size": 20,
+   "n": 10,
+   "biomes": [
+    10,
+    12,
+    8
+   ]
+  },
+  {
+   "m": "Ancient_Stone_Circle",
+   "size": 40,
+   "n": 8,
+   "biomes": [
+    9,
+    17,
+    18
+   ],
+   "hilltop": true
+  },
+  {
+   "m": "Mossy_Monolith",
+   "size": 30,
+   "n": 20,
+   "biomes": [
+    15,
+    10,
+    13
+   ]
+  },
+  {
+   "m": "Cementery_Pillar_Vari",
+   "size": 8,
+   "n": 30,
+   "biomes": [
+    10,
+    12,
+    17
+   ]
+  },
+  {
+   "m": "Desert_Ruins",
+   "size": 20,
+   "n": 12,
+   "biomes": [
+    14,
+    6
+   ]
+  },
+  {
+   "m": "Ancient_Stone_Temples",
+   "size": 60,
+   "n": 3,
+   "biomes": [
+    13
+   ]
+  },
+  {
+   "m": "Volcanic_Monolith",
+   "size": 50,
+   "n": 6,
+   "biomes": [
+    19,
+    20
+   ],
+   "hilltop": true
+  }
+ ]
+}

@@ -1,0 +1,72 @@
+{
+ "Viaduct_palace_B25": {
+  "bridge": "palace-B25",
+  "x": -970.55,
+  "z": -1247.9,
+  "y": 0.0,
+  "rotY": 2.232,
+  "scale": 1.0,
+  "length": 225.0,
+  "deck": 640.5
+ },
+ "Viaduct_palace_north": {
+  "bridge": "palace-north",
+  "x": 48.1,
+  "z": -1362.6,
+  "y": 0.0,
+  "rotY": 1.5353,
+  "scale": 1.0,
+  "length": 415.0,
+  "deck": 640.5
+ },
+ "Viaduct_palace_northeast": {
+  "bridge": "palace-northeast",
+  "x": 1468.9,
+  "z": -1285.3,
+  "y": 0.0,
+  "rotY": 0.71849,
+  "scale": 1.0,
+  "length": 280.0,
+  "deck": 500.5
+ },
+ "Viaduct_palace_east": {
+  "bridge": "palace-east",
+  "x": 1479.0,
+  "z": 128.65,
+  "y": 0.0,
+  "rotY": -0.08678,
+  "scale": 1.0,
+  "length": 375.0,
+  "deck": 640.5
+ },
+ "Viaduct_palace_west_n": {
+  "bridge": "palace-west-n",
+  "x": -1581.15,
+  "z": -437.35,
+  "y": 0.0,
+  "rotY": 2.87178,
+  "scale": 1.0,
+  "length": 395.0,
+  "deck": 500.5
+ },
+ "Viaduct_palace_southeast": {
+  "bridge": "palace-southeast",
+  "x": 1810.7,
+  "z": 1295.7,
+  "y": 0.0,
+  "rotY": -0.62119,
+  "scale": 1.0,
+  "length": 605.0,
+  "deck": 340.5
+ },
+ "Viaduct_palace_southwest": {
+  "bridge": "palace-southwest",
+  "x": -1611.5,
+  "z": 1280.15,
+  "y": 0.0,
+  "rotY": -2.47021,
+  "scale": 1.0,
+  "length": 390.0,
+  "deck": 340.5
+ }
+}

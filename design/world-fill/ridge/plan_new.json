@@ -1,0 +1,2326 @@
+{
+"items": [
+{
+"m": "Golden_Crescent_Dolph",
+"size": 18,
+"n": 4,
+"where": "place",
+"place": "B01",
+"r": 1500,
+"r0": 900
+},
+{
+"m": "Winged_Crescent_Scept",
+"size": 26,
+"n": 2,
+"where": "place",
+"place": "B01",
+"r": 1500,
+"r0": 900
+},
+{
+"m": "Enchanted_Blossom_Tea",
+"size": 9,
+"n": 4,
+"where": "place",
+"place": "B01",
+"r": 1500,
+"r0": 900
+},
+{
+"m": "Ivory_Palace_Courtyar",
+"size": 110,
+"n": 1,
+"where": "place",
+"place": "B02",
+"r": 700,
+"r0": 160
+},
+{
+"m": "Koi_Pond_with_Stone_B",
+"size": 24,
+"n": 3,
+"where": "place",
+"place": "B02",
+"r": 700,
+"r0": 160
+},
+{
+"m": "Golden_Crescent_Dolph",
+"size": 16,
+"n": 2,
+"where": "place",
+"place": "B02",
+"r": 700,
+"r0": 160
+},
+{
+"m": "Stone_Serenity_Bridge",
+"size": 24,
+"n": 2,
+"where": "place",
+"place": "B02",
+"r": 700,
+"r0": 160
+},
+{
+"m": "Crystal_Gate_of_Light",
+"size": 22,
+"n": 2,
+"where": "place",
+"place": "B03",
+"r": 600,
+"r0": 160
+},
+{
+"m": "Celestial_Orrery_of_D",
+"size": 18,
+"n": 1,
+"where": "place",
+"place": "B03",
+"r": 600,
+"r0": 160
+},
+{
+"m": "Orrery_of_the_Starbou",
+"size": 16,
+"n": 1,
+"where": "place",
+"place": "B03",
+"r": 600,
+"r0": 160
+},
+{
+"m": "Celestial_Prism_Reliq",
+"size": 14,
+"n": 2,
+"where": "place",
+"place": "B03",
+"r": 600,
+"r0": 160
+},
+{
+"m": "Amethyst_Citadel",
+"size": 95,
+"n": 1,
+"where": "place",
+"place": "B04",
+"r": 650,
+"r0": 160
+},
+{
+"m": "_Object_Ornate",
+"size": 6,
+"n": 3,
+"where": "place",
+"place": "B04",
+"r": 650,
+"r0": 160
+},
+{
+"m": "_Object_Ornate_2",
+"size": 6,
+"n": 2,
+"where": "place",
+"place": "B04",
+"r": 650,
+"r0": 160
+},
+{
+"m": "Enchanted_Garden_Gate",
+"size": 10,
+"n": 3,
+"where": "place",
+"place": "B04",
+"r": 650,
+"r0": 160
+},
+{
+"m": "Enchanted_Garden_with",
+"size": 30,
+"n": 1,
+"where": "place",
+"place": "B04",
+"r": 650,
+"r0": 160
+},
+{
+"m": "A_massive_tall_scie_2",
+"size": 85,
+"n": 1,
+"where": "place",
+"place": "B05",
+"r": 650,
+"r0": 160
+},
+{
+"m": "Winding_Stone_Tower",
+"size": 18,
+"n": 3,
+"where": "place",
+"place": "B05",
+"r": 650,
+"r0": 160
+},
+{
+"m": "Obsidian_Citadel",
+"size": 40,
+"n": 1,
+"where": "place",
+"place": "B05",
+"r": 650,
+"r0": 160
+},
+{
+"m": "Untitled_6",
+"size": 30,
+"n": 3,
+"where": "place",
+"place": "B06",
+"r": 600,
+"r0": 160
+},
+{
+"m": "Five_Tier_Pagoda_Gard",
+"size": 35,
+"n": 1,
+"where": "place",
+"place": "B06",
+"r": 600,
+"r0": 160
+},
+{
+"m": "Koi_Pond_with_Stone_B",
+"size": 22,
+"n": 2,
+"where": "place",
+"place": "B06",
+"r": 600,
+"r0": 160
+},
+{
+"m": "A_very_large_ancient_",
+"size": 80,
+"n": 1,
+"where": "place",
+"place": "B07",
+"r": 650,
+"r0": 160
+},
+{
+"m": "_Greece_A_floating_i",
+"size": 24,
+"n": 2,
+"where": "place",
+"place": "B07",
+"r": 650,
+"r0": 160
+},
+{
+"m": "Solaris_Citadel",
+"size": 30,
+"n": 1,
+"where": "place",
+"place": "B07",
+"r": 650,
+"r0": 160
+},
+{
+"m": "Runestone_Altar",
+"size": 14,
+"n": 2,
+"where": "place",
+"place": "B08",
+"r": 600,
+"r0": 160
+},
+{
+"m": "Ancient_Stone_Amphith",
+"size": 60,
+"n": 1,
+"where": "place",
+"place": "B08",
+"r": 600,
+"r0": 160
+},
+{
+"m": "Luminous_Coral_Citade",
+"size": 60,
+"n": 1,
+"where": "place",
+"place": "B09",
+"r": 650,
+"r0": 160
+},
+{
+"m": "Untitled_3",
+"size": 18,
+"n": 3,
+"where": "place",
+"place": "B09",
+"r": 650,
+"r0": 160
+},
+{
+"m": "Untitled_4",
+"size": 14,
+"n": 4,
+"where": "place",
+"place": "B09",
+"r": 650,
+"r0": 160
+},
+{
+"m": "Tiki_Pavilion",
+"size": 14,
+"n": 2,
+"where": "place",
+"place": "B09",
+"r": 650,
+"r0": 160
+},
+{
+"m": "Egyptian_Palace",
+"size": 70,
+"n": 1,
+"where": "place",
+"place": "B10",
+"r": 700,
+"r0": 160
+},
+{
+"m": "Sandstone_Palace_Mode",
+"size": 30,
+"n": 2,
+"where": "place",
+"place": "B10",
+"r": 700,
+"r0": 160
+},
+{
+"m": "Untitled_5",
+"size": 20,
+"n": 2,
+"where": "place",
+"place": "B10",
+"r": 700,
+"r0": 160
+},
+{
+"m": "Untitled",
+"size": 15,
+"n": 3,
+"where": "place",
+"place": "B10",
+"r": 700,
+"r0": 160
+},
+{
+"m": "Golden_Crescent_Dolph",
+"size": 24,
+"n": 1,
+"where": "place",
+"place": "B11",
+"r": 500,
+"r0": 160
+},
+{
+"m": "Untitled_5",
+"size": 20,
+"n": 1,
+"where": "place",
+"place": "B11",
+"r": 500,
+"r0": 160
+},
+{
+"m": "Rpg_house",
+"size": 14,
+"n": 4,
+"where": "place",
+"place": "B12",
+"r": 600,
+"r0": 120
+},
+{
+"m": "Timberstone_Tower_Hou",
+"size": 14,
+"n": 3,
+"where": "place",
+"place": "B12",
+"r": 600,
+"r0": 120
+},
+{
+"m": "Toadstool_Tavern",
+"size": 14,
+"n": 2,
+"where": "place",
+"place": "B12",
+"r": 600,
+"r0": 120
+},
+{
+"m": "Medieval_Cottage",
+"size": 12,
+"n": 3,
+"where": "place",
+"place": "B12",
+"r": 600,
+"r0": 120
+},
+{
+"m": "house",
+"size": 14,
+"n": 2,
+"where": "place",
+"place": "B12",
+"r": 600,
+"r0": 120
+},
+{
+"m": "Vinebound_Clocktower",
+"size": 24,
+"n": 1,
+"where": "place",
+"place": "B12",
+"r": 600,
+"r0": 120
+},
+{
+"m": "An_english_country_co",
+"size": 15,
+"n": 3,
+"where": "place",
+"place": "B12",
+"r": 600,
+"r0": 120
+},
+{
+"m": "Mosswood_Teardrop_Hou",
+"size": 7,
+"n": 3,
+"where": "place",
+"place": "B12",
+"r": 600,
+"r0": 120
+},
+{
+"m": "Farmers_Market_Cart",
+"size": 6,
+"n": 3,
+"where": "place",
+"place": "B13",
+"r": 600,
+"r0": 160
+},
+{
+"m": "Rustic_Market_Stall",
+"size": 6,
+"n": 3,
+"where": "place",
+"place": "B13",
+"r": 600,
+"r0": 160
+},
+{
+"m": "Windmill_Haven",
+"size": 22,
+"n": 1,
+"where": "place",
+"place": "B13",
+"r": 600,
+"r0": 160
+},
+{
+"m": "Golden_Tree_of_the_Sk",
+"size": 40,
+"n": 3,
+"where": "place",
+"place": "B14",
+"r": 650,
+"r0": 160
+},
+{
+"m": "Crystal_Tower_of_the_",
+"size": 30,
+"n": 2,
+"where": "place",
+"place": "B14",
+"r": 650,
+"r0": 160
+},
+{
+"m": "A_massive_imperial_pa",
+"size": 90,
+"n": 1,
+"where": "place",
+"place": "B15",
+"r": 700,
+"r0": 160
+},
+{
+"m": "Sapphire_Grove_Citade",
+"size": 20,
+"n": 2,
+"where": "place",
+"place": "B15",
+"r": 700,
+"r0": 160
+},
+{
+"m": "Highly_detailed_ancie",
+"size": 24,
+"n": 2,
+"where": "place",
+"place": "B15",
+"r": 700,
+"r0": 160
+},
+{
+"m": "Watchtower_T1",
+"size": 12,
+"n": 2,
+"where": "place",
+"place": "B16",
+"r": 600,
+"r0": 160
+},
+{
+"m": "Watchtower_T2",
+"size": 12,
+"n": 2,
+"where": "place",
+"place": "B16",
+"r": 600,
+"r0": 160
+},
+{
+"m": "Pin_tree_",
+"size": 26,
+"n": 10,
+"where": "place",
+"place": "B16",
+"r": 600,
+"r0": 160
+},
+{
+"m": "Mushroom_Citadel_on_a",
+"size": 26,
+"n": 1,
+"where": "place",
+"place": "B17",
+"r": 750,
+"r0": 160
+},
+{
+"m": "Nova_Shroom",
+"size": 12,
+"n": 3,
+"where": "place",
+"place": "B17",
+"r": 750,
+"r0": 160
+},
+{
+"m": "Nova_Shroom_2",
+"size": 12,
+"n": 3,
+"where": "place",
+"place": "B17",
+"r": 750,
+"r0": 160
+},
+{
+"m": "The_Enchanted_Mushroo",
+"size": 15,
+"n": 3,
+"where": "place",
+"place": "B17",
+"r": 750,
+"r0": 160
+},
+{
+"m": "Verdant_Citadel_of_th",
+"size": 25,
+"n": 1,
+"where": "place",
+"place": "B17",
+"r": 750,
+"r0": 160
+},
+{
+"m": "Luminous_Crystalline_",
+"size": 20,
+"n": 4,
+"where": "place",
+"place": "B17",
+"r": 750,
+"r0": 160
+},
+{
+"m": "Bioluminescent_Mushro",
+"size": 7,
+"n": 6,
+"where": "place",
+"place": "B17",
+"r": 750,
+"r0": 160
+},
+{
+"m": "Embercap_Bloom",
+"size": 8,
+"n": 4,
+"where": "place",
+"place": "B17",
+"r": 750,
+"r0": 160
+},
+{
+"m": "Luminescent_Mushroom_",
+"size": 10,
+"n": 4,
+"where": "place",
+"place": "B17",
+"r": 750,
+"r0": 160
+},
+{
+"m": "_Object_Ornate_2",
+"size": 5,
+"n": 2,
+"where": "place",
+"place": "B17",
+"r": 750,
+"r0": 160
+},
+{
+"m": "Ember_Tree_of_Knowled",
+"size": 12,
+"n": 2,
+"where": "place",
+"place": "B17",
+"r": 750,
+"r0": 160
+},
+{
+"m": "The_Enchanted_Game_Tr",
+"size": 45,
+"n": 1,
+"where": "place",
+"place": "B18",
+"r": 700,
+"r0": 160
+},
+{
+"m": "The_Lanterned_Heart_T",
+"size": 30,
+"n": 2,
+"where": "place",
+"place": "B18",
+"r": 700,
+"r0": 160
+},
+{
+"m": "Noodle_Tree_of_Life",
+"size": 20,
+"n": 2,
+"where": "place",
+"place": "B18",
+"r": 700,
+"r0": 160
+},
+{
+"m": "Whispering_Willow_of_",
+"size": 15,
+"n": 3,
+"where": "place",
+"place": "B18",
+"r": 700,
+"r0": 160
+},
+{
+"m": "Enchanted_Wisteria_Tr",
+"size": 15,
+"n": 4,
+"where": "place",
+"place": "B18",
+"r": 700,
+"r0": 160
+},
+{
+"m": "Voidlight_Lantern",
+"size": 4.5,
+"n": 10,
+"where": "place",
+"place": "B19",
+"r": 500,
+"r0": 160
+},
+{
+"m": "Tiki_Pavilion",
+"size": 14,
+"n": 2,
+"where": "place",
+"place": "B19",
+"r": 500,
+"r0": 160
+},
+{
+"m": "Gateway_of_the_Rajput",
+"size": 60,
+"n": 1,
+"where": "place",
+"place": "B20",
+"r": 600,
+"r0": 160
+},
+{
+"m": "Stone_Serenity_Bridge",
+"size": 24,
+"n": 2,
+"where": "place",
+"place": "B20",
+"r": 600,
+"r0": 160
+},
+{
+"m": "Untitled_2",
+"size": 30,
+"n": 1,
+"where": "place",
+"place": "B21",
+"r": 500,
+"r0": 160
+},
+{
+"m": "Celestial_Prism_Reliq",
+"size": 14,
+"n": 1,
+"where": "place",
+"place": "B21",
+"r": 500,
+"r0": 160
+},
+{
+"m": "Untitled_5",
+"size": 20,
+"n": 1,
+"where": "place",
+"place": "B22",
+"r": 500,
+"r0": 160
+},
+{
+"m": "Watchtower_T2",
+"size": 12,
+"n": 1,
+"where": "place",
+"place": "B22",
+"r": 500,
+"r0": 160
+},
+{
+"m": "Untitled_3",
+"size": 18,
+"n": 2,
+"where": "place",
+"place": "B23",
+"r": 500,
+"r0": 160
+},
+{
+"m": "Tiki_Pavilion",
+"size": 14,
+"n": 2,
+"where": "place",
+"place": "B23",
+"r": 500,
+"r0": 160
+},
+{
+"m": "Emerald_Dolphin_and_t",
+"size": 16,
+"n": 1,
+"where": "place",
+"place": "B24",
+"r": 500,
+"r0": 160
+},
+{
+"m": "Untitled_3",
+"size": 18,
+"n": 1,
+"where": "place",
+"place": "B24",
+"r": 500,
+"r0": 160
+},
+{
+"m": "Crystal_Lotus_of_Echo",
+"size": 12,
+"n": 2,
+"where": "place",
+"place": "B25",
+"r": 650,
+"r0": 160
+},
+{
+"m": "Crystal_Peaks_PBR_",
+"size": 30,
+"n": 2,
+"where": "place",
+"place": "B25",
+"r": 650,
+"r0": 160
+},
+{
+"m": "_PBR_Hyper_detailed",
+"size": 25,
+"n": 1,
+"where": "place",
+"place": "B25",
+"r": 650,
+"r0": 160
+},
+{
+"m": "Nebula_Bloom",
+"size": 5,
+"n": 5,
+"where": "place",
+"place": "B25",
+"r": 650,
+"r0": 160
+},
+{
+"m": "Twin_Flame_Bloom",
+"size": 5,
+"n": 4,
+"where": "place",
+"place": "B25",
+"r": 650,
+"r0": 160
+},
+{
+"m": "Stylized_Cave_Plants",
+"size": 4,
+"n": 5,
+"where": "place",
+"place": "B25",
+"r": 650,
+"r0": 160
+},
+{
+"m": "Prismatic_Citadel",
+"size": 45,
+"n": 1,
+"where": "place",
+"place": "B25",
+"r": 650,
+"r0": 160
+},
+{
+"m": "Crimson_Spire_Citadel",
+"size": 120,
+"n": 1,
+"where": "place",
+"place": "B26",
+"r": 700,
+"r0": 160
+},
+{
+"m": "Palace_of_the_Golden_",
+"size": 50,
+"n": 1,
+"where": "place",
+"place": "B27",
+"r": 700,
+"r0": 160
+},
+{
+"m": "Palace_of_the_Four_Do",
+"size": 70,
+"n": 1,
+"where": "place",
+"place": "B27",
+"r": 700,
+"r0": 160
+},
+{
+"m": "Tiered_Jaipur_Palace",
+"size": 45,
+"n": 1,
+"where": "place",
+"place": "B27",
+"r": 700,
+"r0": 160
+},
+{
+"m": "wall",
+"size": 8,
+"n": 4,
+"where": "place",
+"place": "B27",
+"r": 700,
+"r0": 160
+},
+{
+"m": "Rustic_Market_Stall",
+"size": 6,
+"n": 2,
+"where": "place",
+"place": "B27",
+"r": 700,
+"r0": 160
+},
+{
+"m": "Crystal_Lattice",
+"size": 18,
+"n": 6,
+"where": "place",
+"place": "B28",
+"r": 600,
+"r0": 160
+},
+{
+"m": "Crystal_Peaks_PBR_",
+"size": 30,
+"n": 3,
+"where": "place",
+"place": "B29",
+"r": 650,
+"r0": 160
+},
+{
+"m": "Rainbow_Bismuth_Citad",
+"size": 20,
+"n": 2,
+"where": "place",
+"place": "B29",
+"r": 650,
+"r0": 160
+},
+{
+"m": "Lantern_Gate_to_the_S",
+"size": 25,
+"n": 2,
+"where": "place",
+"place": "B29",
+"r": 650,
+"r0": 160
+},
+{
+"m": "Crystal_Gate_of_Light",
+"size": 22,
+"n": 1,
+"where": "place",
+"place": "B29",
+"r": 650,
+"r0": 160
+},
+{
+"m": "Nebula_Bloom",
+"size": 5,
+"n": 6,
+"where": "place",
+"place": "B31",
+"r": 650,
+"r0": 160
+},
+{
+"m": "Twin_Flame_Bloom",
+"size": 5,
+"n": 6,
+"where": "place",
+"place": "B31",
+"r": 650,
+"r0": 160
+},
+{
+"m": "Enchanted_Garden_with",
+"size": 30,
+"n": 1,
+"where": "place",
+"place": "B31",
+"r": 650,
+"r0": 160
+},
+{
+"m": "Rainbow_Stage",
+"size": 30,
+"n": 1,
+"where": "place",
+"place": "B32",
+"r": 650,
+"r0": 160
+},
+{
+"m": "Farmers_Market_Cart",
+"size": 6,
+"n": 3,
+"where": "place",
+"place": "B32",
+"r": 650,
+"r0": 160
+},
+{
+"m": "Rustic_Market_Stall",
+"size": 6,
+"n": 3,
+"where": "place",
+"place": "B32",
+"r": 650,
+"r0": 160
+},
+{
+"m": "Enchanted_Blossom_Tea",
+"size": 9,
+"n": 2,
+"where": "place",
+"place": "B32",
+"r": 650,
+"r0": 160
+},
+{
+"m": "Turquoise_Palace_of_G",
+"size": 40,
+"n": 1,
+"where": "place",
+"place": "B32",
+"r": 650,
+"r0": 160
+},
+{
+"m": "Arcane_Rift_Obelisk",
+"size": 15,
+"n": 20,
+"where": "hilltop",
+"smax": 0.45,
+"away": 350
+},
+{
+"m": "Amethyst_Moonstone_Al",
+"size": 16,
+"n": 14,
+"where": "hilltop",
+"smax": 0.45,
+"away": 350
+},
+{
+"m": "Runestone_Altar",
+"size": 14,
+"n": 12,
+"where": "hilltop",
+"smax": 0.45,
+"away": 350
+},
+{
+"m": "Crystal_Gate_of_Light",
+"size": 22,
+"n": 8,
+"where": "hilltop",
+"smax": 0.45,
+"away": 350
+},
+{
+"m": "Stone_Portal",
+"size": 10,
+"n": 12,
+"where": "hilltop",
+"smax": 0.45,
+"away": 350
+},
+{
+"m": "The_Arcane_Gateway",
+"size": 10,
+"n": 10,
+"where": "hilltop",
+"smax": 0.45,
+"away": 350
+},
+{
+"m": "_England_Mystic_Ston",
+"size": 26,
+"n": 6,
+"where": "hilltop",
+"smax": 0.45,
+"away": 350
+},
+{
+"m": "stone_henge",
+"size": 30,
+"n": 6,
+"where": "hilltop",
+"smax": 0.45,
+"away": 350
+},
+{
+"m": "Solaris_Citadel",
+"size": 30,
+"n": 5,
+"where": "hilltop",
+"smax": 0.45,
+"away": 350
+},
+{
+"m": "Celestial_Prism_Reliq",
+"size": 14,
+"n": 8,
+"where": "hilltop",
+"smax": 0.45,
+"away": 350
+},
+{
+"m": "Untitled",
+"size": 15,
+"n": 6,
+"where": "hilltop",
+"smax": 0.45,
+"away": 350
+},
+{
+"m": "Untitled_2",
+"size": 30,
+"n": 6,
+"where": "hilltop",
+"smax": 0.45,
+"away": 350
+},
+{
+"m": "Winding_Stone_Tower",
+"size": 18,
+"n": 8,
+"where": "hilltop",
+"smax": 0.45,
+"away": 350
+},
+{
+"m": "_Romania_A_semi_real",
+"size": 15,
+"n": 8,
+"where": "hilltop",
+"smax": 0.45,
+"away": 350
+},
+{
+"m": "Arcane_Ember_Gate",
+"size": 12,
+"n": 10,
+"where": "hilltop",
+"smax": 0.45,
+"away": 350
+},
+{
+"m": "Winged_Crescent_Scept",
+"size": 26,
+"n": 6,
+"where": "hilltop",
+"smax": 0.45,
+"away": 350
+},
+{
+"m": "Rainbow_Bismuth_Citad",
+"size": 20,
+"n": 6,
+"where": "hilltop",
+"smax": 0.45,
+"away": 350
+},
+{
+"m": "Crystal_Tower_of_the_",
+"size": 30,
+"n": 6,
+"where": "hilltop",
+"smax": 0.45,
+"away": 350
+},
+{
+"m": "Emerald_Gleam_Wall",
+"size": 20,
+"n": 8,
+"where": "hilltop",
+"smax": 0.45,
+"away": 350
+},
+{
+"m": "Frostshard_Warhammer",
+"size": 36,
+"n": 3,
+"where": "hilltop",
+"smax": 0.45,
+"away": 350
+},
+{
+"m": "Celestial_Orrery_of_D",
+"size": 18,
+"n": 3,
+"where": "hilltop",
+"smax": 0.45,
+"away": 350
+},
+{
+"m": "Crystal_Lotus_of_Echo",
+"size": 12,
+"n": 6,
+"where": "hilltop",
+"smax": 0.45,
+"away": 350
+},
+{
+"m": "Golden_Crescent_Dolph",
+"size": 18,
+"n": 4,
+"where": "hilltop",
+"smax": 0.45,
+"away": 350
+},
+{
+"m": "wall",
+"size": 8,
+"n": 8,
+"where": "hilltop",
+"smax": 0.45,
+"away": 350
+},
+{
+"m": "_Object_Charmi",
+"size": 6,
+"n": 6,
+"where": "hilltop",
+"smax": 0.45,
+"away": 350
+},
+{
+"m": "_Object_Charmi_2",
+"size": 6,
+"n": 6,
+"where": "hilltop",
+"smax": 0.45,
+"away": 350
+},
+{
+"m": "A_black_rock_wall_wi",
+"size": 34,
+"n": 6,
+"where": "wild",
+"smax": 0.4,
+"away": 400
+},
+{
+"m": "highly_realistic_dior",
+"size": 22,
+"n": 6,
+"where": "wild",
+"smax": 0.4,
+"away": 400
+},
+{
+"m": "Sapphire_Grove_Citade",
+"size": 20,
+"n": 4,
+"where": "wild",
+"smax": 0.4,
+"away": 400
+},
+{
+"m": "Highly_detailed_ancie",
+"size": 24,
+"n": 6,
+"where": "wild",
+"smax": 0.4,
+"away": 400
+},
+{
+"m": "Ancient_Stone_Arch_Br",
+"size": 30,
+"n": 4,
+"where": "wild",
+"smax": 0.4,
+"away": 400
+},
+{
+"m": "Azure_Dome_Palace",
+"size": 80,
+"n": 1,
+"where": "wild",
+"smax": 0.4,
+"away": 400
+},
+{
+"m": "Tiered_Jaipur_Palace",
+"size": 45,
+"n": 1,
+"where": "wild",
+"smax": 0.4,
+"away": 400
+},
+{
+"m": "Sandstone_Palace_Mode",
+"size": 30,
+"n": 2,
+"where": "wild",
+"smax": 0.4,
+"away": 400
+},
+{
+"m": "Vinebound_Clocktower",
+"size": 24,
+"n": 2,
+"where": "wild",
+"smax": 0.4,
+"away": 400
+},
+{
+"m": "Golden_Tree_of_the_Sk",
+"size": 40,
+"n": 4,
+"where": "wild",
+"smax": 0.4,
+"away": 400
+},
+{
+"m": "A_majestic_forest_fer",
+"size": 12,
+"n": 60,
+"where": "biome",
+"biomes": [
+10,
+13,
+12
+],
+"away": 200
+},
+{
+"m": "A_towering_ancient_oa",
+"size": 25,
+"n": 50,
+"where": "biome",
+"biomes": [
+10,
+9
+],
+"away": 200
+},
+{
+"m": "A_sprawling_forest_bu",
+"size": 24,
+"n": 25,
+"where": "biome",
+"biomes": [
+11,
+8
+],
+"away": 200
+},
+{
+"m": "Ember_Tree",
+"size": 15,
+"n": 20,
+"where": "biome",
+"biomes": [
+11,
+8
+],
+"away": 200
+},
+{
+"m": "Enchanted_Wisteria_Tr",
+"size": 15,
+"n": 30,
+"where": "biome",
+"biomes": [
+11,
+8
+],
+"away": 200
+},
+{
+"m": "Twisted_Indigo_Tree",
+"size": 14,
+"n": 25,
+"where": "biome",
+"biomes": [
+12
+],
+"away": 150
+},
+{
+"m": "Luminous_Crystalline_",
+"size": 20,
+"n": 25,
+"where": "biome",
+"biomes": [
+12
+],
+"away": 150
+},
+{
+"m": "Bioluminescent_Mushro",
+"size": 7,
+"n": 40,
+"where": "biome",
+"biomes": [
+12
+],
+"away": 150
+},
+{
+"m": "Luminescent_Mushroom_",
+"size": 10,
+"n": 25,
+"where": "biome",
+"biomes": [
+12
+],
+"away": 150
+},
+{
+"m": "Embercap_Bloom",
+"size": 8,
+"n": 30,
+"where": "biome",
+"biomes": [
+12
+],
+"away": 150
+},
+{
+"m": "High_detail_fantasy_",
+"size": 12,
+"n": 20,
+"where": "biome",
+"biomes": [
+12
+],
+"away": 150
+},
+{
+"m": "Nova_Shroom",
+"size": 12,
+"n": 8,
+"where": "biome",
+"biomes": [
+12
+],
+"away": 150
+},
+{
+"m": "The_Enchanted_Mushroo",
+"size": 15,
+"n": 8,
+"where": "biome",
+"biomes": [
+12
+],
+"away": 150
+},
+{
+"m": "Pin_tree_",
+"size": 26,
+"n": 80,
+"where": "biome",
+"biomes": [
+16,
+17
+],
+"away": 200
+},
+{
+"m": "Whispering_Willow_of_",
+"size": 15,
+"n": 20,
+"where": "biome",
+"biomes": [
+10,
+8,
+9
+],
+"away": 250
+},
+{
+"m": "The_Lanterned_Heart_T",
+"size": 30,
+"n": 6,
+"where": "biome",
+"biomes": [
+10,
+8,
+9
+],
+"away": 250
+},
+{
+"m": "Noodle_Tree_of_Life",
+"size": 20,
+"n": 6,
+"where": "biome",
+"biomes": [
+10,
+8,
+9
+],
+"away": 250
+},
+{
+"m": "Nebula_Bloom",
+"size": 5,
+"n": 60,
+"where": "biome",
+"biomes": [
+8,
+11,
+12,
+9
+],
+"away": 150
+},
+{
+"m": "Twin_Flame_Bloom",
+"size": 5,
+"n": 50,
+"where": "biome",
+"biomes": [
+8,
+11,
+12,
+9
+],
+"away": 150
+},
+{
+"m": "Stylized_Cave_Plants",
+"size": 4,
+"n": 40,
+"where": "biome",
+"biomes": [
+8,
+11,
+12,
+9
+],
+"away": 150
+},
+{
+"m": "rock",
+"size": 15,
+"n": 40,
+"where": "biome",
+"biomes": [
+7,
+15,
+17,
+18,
+19,
+16
+],
+"away": 200,
+"smax": 0.7
+},
+{
+"m": "Rock_Formations_Colle_2",
+"size": 22,
+"n": 15,
+"where": "biome",
+"biomes": [
+7,
+15,
+17,
+18,
+19,
+16
+],
+"away": 200,
+"smax": 0.7
+},
+{
+"m": "Voidlight_Lantern",
+"size": 4.5,
+"n": 180,
+"where": "roadside",
+"kinds": [
+"road",
+"royal"
+]
+},
+{
+"m": "Watchtower_T1",
+"size": 12,
+"n": 14,
+"where": "roadside",
+"kinds": [
+"road"
+]
+},
+{
+"m": "Watchtower_T2",
+"size": 12,
+"n": 14,
+"where": "roadside",
+"kinds": [
+"road"
+]
+},
+{
+"m": "Farmers_Market_Cart",
+"size": 6,
+"n": 17,
+"where": "plaza"
+},
+{
+"m": "Rustic_Market_Stall",
+"size": 6,
+"n": 17,
+"where": "plaza"
+},
+{
+"m": "Enchanted_Blossom_Tea",
+"size": 9,
+"n": 8,
+"where": "plaza"
+},
+{
+"m": "Untitled_3",
+"size": 18,
+"n": 10,
+"where": "coast",
+"away": 300
+},
+{
+"m": "Untitled_4",
+"size": 14,
+"n": 10,
+"where": "coast",
+"away": 300
+},
+{
+"m": "Tiki_Pavilion",
+"size": 14,
+"n": 8,
+"where": "coast",
+"away": 300
+},
+{
+"m": "Untitled_5",
+"size": 20,
+"n": 6,
+"where": "coast",
+"away": 300
+},
+{
+"m": "Castle_Boat_Diorama",
+"size": 55,
+"n": 6,
+"where": "sea"
+},
+{
+"m": "Floating_Isle_of_Biol",
+"size": 80,
+"n": 4,
+"where": "sky",
+"centre": [
+-700,
+2260
+],
+"r": 9000,
+"alt": [
+260,
+900
+]
+},
+{
+"m": "Floating_Isle_of_Blos",
+"size": 60,
+"n": 4,
+"where": "sky",
+"centre": [
+-700,
+2260
+],
+"r": 9000,
+"alt": [
+260,
+900
+]
+},
+{
+"m": "Floating_Paradise",
+"size": 60,
+"n": 5,
+"where": "sky",
+"centre": [
+-700,
+2260
+],
+"r": 9000,
+"alt": [
+260,
+900
+]
+},
+{
+"m": "Floating_Island_Farm",
+"size": 60,
+"n": 3,
+"where": "sky",
+"centre": [
+-700,
+2260
+],
+"r": 9000,
+"alt": [
+260,
+900
+]
+},
+{
+"m": "Ethereal_Crystal_Isla",
+"size": 60,
+"n": 4,
+"where": "sky",
+"centre": [
+-700,
+2260
+],
+"r": 9000,
+"alt": [
+260,
+900
+]
+},
+{
+"m": "Embercrest_Island",
+"size": 80,
+"n": 3,
+"where": "sky",
+"centre": [
+-700,
+2260
+],
+"r": 9000,
+"alt": [
+260,
+900
+]
+},
+{
+"m": "Magical_floating_isla",
+"size": 80,
+"n": 4,
+"where": "sky",
+"centre": [
+-700,
+2260
+],
+"r": 9000,
+"alt": [
+260,
+900
+]
+},
+{
+"m": "Logic_Island_The_For",
+"size": 100,
+"n": 3,
+"where": "sky",
+"centre": [
+-700,
+2260
+],
+"r": 9000,
+"alt": [
+260,
+900
+]
+},
+{
+"m": "_garden_floating_ga",
+"size": 45,
+"n": 4,
+"where": "sky",
+"centre": [
+-700,
+2260
+],
+"r": 9000,
+"alt": [
+260,
+900
+]
+},
+{
+"m": "_garden_floating_ga_2",
+"size": 45,
+"n": 4,
+"where": "sky",
+"centre": [
+-700,
+2260
+],
+"r": 9000,
+"alt": [
+260,
+900
+]
+},
+{
+"m": "Rocky_Island_Plateau",
+"size": 80,
+"n": 4,
+"where": "sky",
+"centre": [
+-700,
+2260
+],
+"r": 9000,
+"alt": [
+260,
+900
+]
+},
+{
+"m": "Skyward_Ascent_Flying",
+"size": 70,
+"n": 5,
+"where": "sky",
+"centre": [
+-700,
+2260
+],
+"r": 9000,
+"alt": [
+260,
+900
+]
+},
+{
+"m": "The_object_is_a_float",
+"size": 120,
+"n": 3,
+"where": "sky",
+"centre": [
+-700,
+2260
+],
+"r": 9000,
+"alt": [
+260,
+900
+]
+},
+{
+"m": "Treehouse_Island",
+"size": 45,
+"n": 3,
+"where": "sky",
+"centre": [
+-700,
+2260
+],
+"r": 9000,
+"alt": [
+260,
+900
+]
+},
+{
+"m": "Void_Castle_Island",
+"size": 55,
+"n": 2,
+"where": "sky",
+"centre": [
+-700,
+2260
+],
+"r": 9000,
+"alt": [
+260,
+900
+]
+},
+{
+"m": "Floating_Shelves_Form",
+"size": 40,
+"n": 3,
+"where": "sky",
+"centre": [
+-700,
+2260
+],
+"r": 9000,
+"alt": [
+260,
+900
+]
+},
+{
+"m": "_Greece_A_floating_i",
+"size": 26,
+"n": 2,
+"where": "sky",
+"centre": [
+-700,
+2260
+],
+"r": 9000,
+"alt": [
+260,
+900
+]
+},
+{
+"m": "Skybound_Citadel",
+"size": 160,
+"n": 1,
+"where": "sky",
+"centre": [
+-700,
+2260
+],
+"r": 8500,
+"alt": [
+700,
+1500
+]
+},
+{
+"m": "Skyborne_Citadel",
+"size": 170,
+"n": 1,
+"where": "sky",
+"centre": [
+-700,
+2260
+],
+"r": 8500,
+"alt": [
+700,
+1500
+]
+},
+{
+"m": "Celestial_Citadel_of_",
+"size": 240,
+"n": 1,
+"where": "sky",
+"centre": [
+-700,
+2260
+],
+"r": 8500,
+"alt": [
+700,
+1500
+]
+},
+{
+"m": "Azure_Citadel_of_the_",
+"size": 220,
+"n": 1,
+"where": "sky",
+"centre": [
+-700,
+2260
+],
+"r": 8500,
+"alt": [
+700,
+1500
+]
+},
+{
+"m": "Celestial_Golden_Cita",
+"size": 160,
+"n": 1,
+"where": "sky",
+"centre": [
+-700,
+2260
+],
+"r": 8500,
+"alt": [
+700,
+1500
+]
+},
+{
+"m": "Archipelago_of_Innova",
+"size": 300,
+"n": 1,
+"where": "sky",
+"centre": [
+-700,
+2260
+],
+"r": 8500,
+"alt": [
+700,
+1500
+]
+},
+{
+"m": "Skybound_Isles",
+"size": 260,
+"n": 1,
+"where": "sky",
+"centre": [
+-700,
+2260
+],
+"r": 8500,
+"alt": [
+700,
+1500
+]
+},
+{
+"m": "A_fantasy_city_with_t",
+"size": 150,
+"n": 1,
+"where": "sky",
+"centre": [
+-700,
+2260
+],
+"r": 8500,
+"alt": [
+700,
+1500
+]
+},
+{
+"m": "Celestial_Citadel",
+"size": 260,
+"n": 1,
+"where": "sky",
+"centre": [
+-700,
+2260
+],
+"r": 8500,
+"alt": [
+700,
+1500
+]
+},
+{
+"m": "Floating_Paradise",
+"size": 60,
+"n": 4,
+"where": "sky",
+"centre": [
+-5500,
+4125
+],
+"r": 1100,
+"alt": [
+150,
+600
+],
+"place": "B30"
+},
+{
+"m": "Rocky_Island_Plateau",
+"size": 70,
+"n": 4,
+"where": "sky",
+"centre": [
+-5500,
+4125
+],
+"r": 1100,
+"alt": [
+150,
+600
+],
+"place": "B30"
+},
+{
+"m": "_garden_floating_ga",
+"size": 45,
+"n": 4,
+"where": "sky",
+"centre": [
+-5500,
+4125
+],
+"r": 1100,
+"alt": [
+150,
+600
+],
+"place": "B30"
+},
+{
+"m": "Skyward_Ascent_Flying",
+"size": 60,
+"n": 4,
+"where": "sky",
+"centre": [
+-5500,
+4125
+],
+"r": 1100,
+"alt": [
+150,
+600
+],
+"place": "B30"
+},
+{
+"m": "Floating_Shelves_Form",
+"size": 40,
+"n": 4,
+"where": "sky",
+"centre": [
+-5500,
+4125
+],
+"r": 1100,
+"alt": [
+150,
+600
+],
+"place": "B30"
+},
+{
+"m": "Floating_Ice_Castle_I",
+"size": 90,
+"n": 2,
+"where": "sky",
+"centre": [
+2043,
+-4010
+],
+"r": 1500,
+"alt": [
+200,
+700
+]
+},
+{
+"m": "Glowing_Ice_Castle_Is",
+"size": 90,
+"n": 2,
+"where": "sky",
+"centre": [
+2043,
+-4010
+],
+"r": 1500,
+"alt": [
+200,
+700
+]
+},
+{
+"m": "Yuki",
+"size": 14,
+"n": 6,
+"where": "sky",
+"centre": [
+2043,
+-4010
+],
+"r": 1500,
+"alt": [
+200,
+700
+]
+},
+{
+"m": "Lava_Castle_Island",
+"size": 80,
+"n": 2,
+"where": "sky",
+"centre": [
+4983,
+-2060
+],
+"r": 1500,
+"alt": [
+300,
+800
+]
+},
+{
+"m": "Emberfall_Citadel",
+"size": 150,
+"n": 2,
+"where": "ridge",
+"hmin": 120,
+"hmax": 2600,
+"smax": 0.6
+},
+{
+"m": "Crystal_Vanguard_Cita",
+"size": 110,
+"n": 2,
+"where": "ridge",
+"hmin": 120,
+"hmax": 2600,
+"smax": 0.6
+},
+{
+"m": "Ivory_Spire_Citadel",
+"size": 120,
+"n": 2,
+"where": "ridge",
+"hmin": 120,
+"hmax": 2600,
+"smax": 0.6
+},
+{
+"m": "Azure_Crystal_Citadel",
+"size": 130,
+"n": 2,
+"where": "ridge",
+"hmin": 120,
+"hmax": 2600,
+"smax": 0.6
+},
+{
+"m": "Azure_Dome_Palace",
+"size": 90,
+"n": 2,
+"where": "ridge",
+"hmin": 120,
+"hmax": 2600,
+"smax": 0.6
+},
+{
+"m": "Blue_Core_Citadel",
+"size": 90,
+"n": 2,
+"where": "ridge",
+"hmin": 120,
+"hmax": 2600,
+"smax": 0.6
+},
+{
+"m": "A_massive_tall_scie_3",
+"size": 150,
+"n": 2,
+"where": "ridge",
+"hmin": 120,
+"hmax": 2600,
+"smax": 0.6
+},
+{
+"m": "Violet_Sanctum_of_the",
+"size": 80,
+"n": 2,
+"where": "ridge",
+"hmin": 120,
+"hmax": 2600,
+"smax": 0.6
+},
+{
+"m": "The_Cascading_Citadel",
+"size": 90,
+"n": 2,
+"where": "ridge",
+"hmin": 120,
+"hmax": 2600,
+"smax": 0.6
+},
+{
+"m": "Emerald_Palace_with_G",
+"size": 60,
+"n": 2,
+"where": "ridge",
+"hmin": 120,
+"hmax": 2600,
+"smax": 0.6
+},
+{
+"m": "St_Petersbourg_chess",
+"size": 50,
+"n": 1,
+"where": "ridge",
+"hmin": 120,
+"hmax": 2600,
+"smax": 0.6
+},
+{
+"m": "Devils_Tower",
+"size": 320,
+"n": 5,
+"where": "ridge",
+"hmin": 120,
+"hmax": 2600,
+"smax": 0.6
+},
+{
+"m": "Crystal_Citadel",
+"size": 110,
+"n": 2,
+"where": "ridge",
+"hmin": 120,
+"hmax": 2600,
+"smax": 0.6
+},
+{
+"m": "Citadel_of_the_Clouds",
+"size": 300,
+"n": 2,
+"where": "ridge",
+"hmin": 120,
+"hmax": 2600,
+"smax": 0.6
+},
+{
+"m": "Prismatic_Citadel",
+"size": 70,
+"n": 2,
+"where": "ridge",
+"hmin": 120,
+"hmax": 2600,
+"smax": 0.6
+},
+{
+"m": "Palace_of_the_Four_Do_2",
+"size": 70,
+"n": 1,
+"where": "ridge",
+"hmin": 120,
+"hmax": 2600,
+"smax": 0.6
+},
+{
+"m": "Gardenspire_Citadel",
+"size": 110,
+"n": 2,
+"where": "ridge",
+"hmin": 120,
+"hmax": 2600,
+"smax": 0.6
+},
+{
+"m": "Sapphire_Grove_Citade",
+"size": 40,
+"n": 3,
+"where": "ridge",
+"hmin": 120,
+"hmax": 2600,
+"smax": 0.6
+},
+{
+"m": "Winding_Stone_Tower",
+"size": 30,
+"n": 6,
+"where": "ridge",
+"hmin": 120,
+"hmax": 2600,
+"smax": 0.6
+},
+{
+"m": "Untitled_2",
+"size": 40,
+"n": 4,
+"where": "ridge",
+"hmin": 120,
+"hmax": 2600,
+"smax": 0.6
+}
+]
+}

@@ -1,0 +1,24 @@
+model,kit,places,size_note,recolour,replaces
+Stone_Portal,1 terrain,B10 B11 T06 T07,set from the cliff it sits in,sand-rose canyon / blue-grey fjord,hand-made cliff pieces
+Lantern_Gate_to_the_S,1 terrain,B19 or B16,about gate-scale; check on import,lighten rock keep lantern glow,B19 gatehouse placeholder
+Koi_Pond_with_Stone_B,1 terrain,B02 G04 T02,about 12 m (default),lotus pink; check koi eyes,W02 lily pond edge
+Enchanted_Garden_with,1 terrain,Sky Isle I or G03,island scale from the spec x S,palace rose and ivory,sky-isle base and G03 court
+An_english_country_co,1 terrain,FC01-FC08 or Sky Isle IV,clearing 140 m across (plan),plum and cream with pink blossom,forest clearing base
+Enchanted_Garden_Gate,1 terrain,G01 planting kit,instanced hedge about 3 m (default),rose and cream flowers,G01 hedge and meadow drift
+stone_henge,2 relics,B17 Ruin Meadows,about 40 m (default),warm grey-pink keep moss,standing-stone circle
+Celestial_Armillary,2 relics,palace court B21,about 18 m (default),rose-gold rings moon-blue crystal,armillary fountain
+The_Arcane_Gateway,2 relics,sky portals,gate scale from the spec,blue rings to palace cobalt,sky portal gate
+Classical_Sculpture_C,2 relics,court urns A010 A023 gate guardians,split into six parts; urn about 2.5 m (default),rose marble; veil or remove faces,A010 capital A023 finials statues
+Yuki,2 relics,A035 fountain base lotus boat landing,about 6 m across (default),nacre pink with gold,A035 lotus dais
+Stone_Serenity_Bridge,3 bridges,B09 B12 lake and canal bridges,span about 30 m (default),white glossy marble fractal inlay,bridge deck and parapet
+Ancient_Stone_Arch_Br,3 bridges,causeway segments,segment about 40 m (default),white marble,long causeway runs
+Gothic_Iron_Fence,3 bridges,G04 terraces,panel about 3 m (default),gold and white,A015 A023 style rails
+Ember_Tree,4 trees,T02b temple hill gardens,about 30 m,keep gold lighten,T02b gold-leaf tree
+Copper_Cloud_Bonsai,4 trees,terrace planters B05 B06,about 6 m (default),pink blossom,T01 blossom accent tree
+Medieval_Cottage,5 buildings,B12 FC01-FC08,12 x 9 m footprint (plan),plum roof cream plaster,B12 cottage placeholder
+Mosswood_Teardrop_Hou,5 buildings,B12 Glowwood cottages,about 10 m (default),keep,forest cottage
+Mediterranean_Villa,5 buildings,B09 Lagoon City houses,about 18 m (default),cream walls teal roof,B09 house blocks
+Vintage_Stone_Villa,5 buildings,B10 outskirts,about 25 m (default),use one,canyon house
+Gothic_Cathedral,5 buildings,B03 Star Chapel,100 x 160 m from the map x S,navy slate roofs violet glass,B03 body
+Cathedral_Render,5 buildings,B03 alternative or temple hill,from the spec,rose-grey stone,alternative B03
+Leafspire_Cathedral,5 buildings,B17 or B25,B25 180 x 100 m from the map x S,pink and gold,B25 conservatory body

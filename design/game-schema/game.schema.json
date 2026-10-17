@@ -1,0 +1,1660 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "$id": "https://azim12086atmes-s.github.io/birthday-castle/design/game-schema/game.schema.json",
+ "title": "Birthday Quest game data",
+ "description": "One file (game-data.json) describes everything in the game: rules, world, places, people, creatures, pets, rides, games, combat, outfits, story, cutscenes, clock, captures, assets and quality tiers. The engine reads it; designers and Claude edit it. Ids are stable and every cross-reference uses ids.",
+ "type": "object",
+ "required": [
+  "meta",
+  "rules",
+  "world",
+  "places",
+  "characters",
+  "creatures",
+  "templates",
+  "story",
+  "clock",
+  "cutscenes"
+ ],
+ "additionalProperties": false,
+ "properties": {
+  "meta": {
+   "$ref": "#/$defs/meta"
+  },
+  "rules": {
+   "type": "array",
+   "items": {
+    "$ref": "#/$defs/rule"
+   }
+  },
+  "world": {
+   "$ref": "#/$defs/world"
+  },
+  "places": {
+   "type": "array",
+   "items": {
+    "$ref": "#/$defs/place"
+   },
+   "maxItems": 40
+  },
+  "characters": {
+   "type": "array",
+   "items": {
+    "$ref": "#/$defs/character"
+   }
+  },
+  "creatures": {
+   "type": "array",
+   "items": {
+    "$ref": "#/$defs/creature"
+   }
+  },
+  "pets": {
+   "type": "array",
+   "items": {
+    "$ref": "#/$defs/pet"
+   }
+  },
+  "rides": {
+   "type": "array",
+   "items": {
+    "$ref": "#/$defs/ride"
+   }
+  },
+  "mew": {
+   "$ref": "#/$defs/mew"
+  },
+  "players": {
+   "type": "array",
+   "items": {
+    "$ref": "#/$defs/player"
+   }
+  },
+  "templates": {
+   "type": "array",
+   "items": {
+    "$ref": "#/$defs/template"
+   }
+  },
+  "weapons": {
+   "type": "array",
+   "items": {
+    "$ref": "#/$defs/weapon"
+   }
+  },
+  "outfits": {
+   "type": "array",
+   "items": {
+    "$ref": "#/$defs/outfit"
+   }
+  },
+  "story": {
+   "$ref": "#/$defs/story"
+  },
+  "clock": {
+   "$ref": "#/$defs/clock"
+  },
+  "cutscenes": {
+   "type": "array",
+   "items": {
+    "$ref": "#/$defs/cutscene"
+   }
+  },
+  "cinema": {
+   "type": "object",
+   "description": "camera language and playback rules for every scene",
+   "additionalProperties": false,
+   "properties": {
+    "look": {
+     "type": "string"
+    },
+    "sync": {
+     "type": "string"
+    },
+    "players": {
+     "type": "string"
+    },
+    "voices": {
+     "type": "string"
+    },
+    "skip": {
+     "type": "string"
+    },
+    "pacing": {
+     "type": "string"
+    },
+    "shotTypes": {
+     "type": "array",
+     "items": {
+      "type": "string"
+     }
+    }
+   }
+  },
+  "captures": {
+   "type": "array",
+   "items": {
+    "$ref": "#/$defs/capture"
+   }
+  },
+  "music": {
+   "type": "array",
+   "items": {
+    "$ref": "#/$defs/track"
+   }
+  },
+  "sky": {
+   "$ref": "#/$defs/sky"
+  },
+  "assets": {
+   "type": "array",
+   "items": {
+    "$ref": "#/$defs/asset"
+   }
+  },
+  "quality": {
+   "type": "array",
+   "items": {
+    "$ref": "#/$defs/qualityTier"
+   }
+  },
+  "net": {
+   "$ref": "#/$defs/net"
+  }
+ },
+ "$defs": {
+  "id": {
+   "type": "string",
+   "pattern": "^[a-z0-9][a-z0-9_-]*$",
+   "description": "lower-case id, e.g. star_fox"
+  },
+  "placeId": {
+   "type": "string",
+   "pattern": "^B[0-9]{2}$"
+  },
+  "text": {
+   "type": "string",
+   "minLength": 1
+  },
+  "color": {
+   "type": "string",
+   "pattern": "^#[0-9a-fA-F]{6}$"
+  },
+  "vec2": {
+   "type": "object",
+   "required": [
+    "x",
+    "z"
+   ],
+   "additionalProperties": false,
+   "properties": {
+    "x": {
+     "type": "number"
+    },
+    "z": {
+     "type": "number"
+    }
+   },
+   "description": "metres in the world frame: origin at the palace (B01), x east, z south (north is -z), y up"
+  },
+  "vec3": {
+   "type": "object",
+   "required": [
+    "x",
+    "y",
+    "z"
+   ],
+   "additionalProperties": false,
+   "properties": {
+    "x": {
+     "type": "number"
+    },
+    "y": {
+     "type": "number"
+    },
+    "z": {
+     "type": "number"
+    }
+   }
+  },
+  "status": {
+   "enum": [
+    "idea",
+    "designed",
+    "building",
+    "done"
+   ],
+   "description": "how far along this item is"
+  },
+  "schedule": {
+   "enum": [
+    "night",
+    "week_before",
+    "optional"
+   ],
+   "description": "night = part of the 22 Oct evening path; week_before = opens early for friends; optional = free play"
+  },
+  "biome": {
+   "enum": [
+    "temperate_forest",
+    "grassland_farms",
+    "fjord_taiga",
+    "flower_meadow",
+    "lakes_rivers",
+    "blossom_groves",
+    "red_canyon",
+    "sea_cliffs",
+    "karst_pillars",
+    "bare_rock",
+    "palace_grounds",
+    "glowwood",
+    "jungle",
+    "sandy_beach",
+    "dunes",
+    "misty_moor",
+    "lagoon_wetland",
+    "alpine_meadow",
+    "snow_glacier",
+    "coral_reef",
+    "shallow_sea",
+    "deep_ocean",
+    "sky"
+   ]
+  },
+  "meta": {
+   "type": "object",
+   "required": [
+    "title",
+    "version",
+    "celebrationAt",
+    "timezone"
+   ],
+   "additionalProperties": false,
+   "properties": {
+    "title": {
+     "$ref": "#/$defs/text"
+    },
+    "version": {
+     "type": "string",
+     "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"
+    },
+    "celebrationAt": {
+     "type": "string",
+     "format": "date-time",
+     "description": "the midnight moment; the finale starts here"
+    },
+    "timezone": {
+     "type": "string",
+     "description": "IANA zone the clock follows, e.g. Asia/Kolkata"
+    },
+    "honoreeName": {
+     "type": "string",
+     "description": "her name; placeholder until the owner says"
+    },
+    "docs": {
+     "type": "array",
+     "items": {
+      "type": "string",
+      "format": "uri"
+     }
+    }
+   }
+  },
+  "rule": {
+   "type": "object",
+   "required": [
+    "id",
+    "text",
+    "appliesTo"
+   ],
+   "additionalProperties": false,
+   "description": "content rules the build must never break",
+   "properties": {
+    "id": {
+     "$ref": "#/$defs/id"
+    },
+    "text": {
+     "$ref": "#/$defs/text"
+    },
+    "appliesTo": {
+     "type": "array",
+     "items": {
+      "enum": [
+       "creatures",
+       "characters",
+       "statues",
+       "outfits",
+       "symbols",
+       "models",
+       "combat",
+       "voice",
+       "all"
+      ]
+     }
+    }
+   }
+  },
+  "world": {
+   "type": "object",
+   "required": [
+    "sizeKm",
+    "scaleS",
+    "shape",
+    "arrival"
+   ],
+   "additionalProperties": false,
+   "properties": {
+    "sizeKm": {
+     "type": "number"
+    },
+    "scaleS": {
+     "type": "number",
+     "description": "map distances and the palace use x S; other landmarks keep drawn size; Meshy models keep natural size"
+    },
+    "shape": {
+     "$ref": "#/$defs/text"
+    },
+    "heightmap": {
+     "type": "string"
+    },
+    "biomeMap": {
+     "type": "string"
+    },
+    "arrival": {
+     "type": "array",
+     "items": {
+      "type": "object",
+      "required": [
+       "id",
+       "name",
+       "what"
+      ],
+      "additionalProperties": false,
+      "properties": {
+       "id": {
+        "$ref": "#/$defs/id"
+       },
+       "name": {
+        "$ref": "#/$defs/text"
+       },
+       "what": {
+        "$ref": "#/$defs/text"
+       },
+       "at": {
+        "$ref": "#/$defs/vec2"
+       },
+       "cutscene": {
+        "$ref": "#/$defs/id"
+       }
+      }
+     }
+    }
+   }
+  },
+  "place": {
+   "type": "object",
+   "required": [
+    "id",
+    "name",
+    "biome",
+    "look",
+    "head",
+    "creatures",
+    "game",
+    "challenge",
+    "shard",
+    "schedule"
+   ],
+   "additionalProperties": false,
+   "properties": {
+    "id": {
+     "$ref": "#/$defs/placeId"
+    },
+    "name": {
+     "$ref": "#/$defs/text"
+    },
+    "biome": {
+     "$ref": "#/$defs/biome"
+    },
+    "at": {
+     "$ref": "#/$defs/vec2"
+    },
+    "setting": {
+     "type": "string",
+     "description": "where it sits on the map"
+    },
+    "look": {
+     "$ref": "#/$defs/text"
+    },
+    "palette": {
+     "type": "array",
+     "items": {
+      "$ref": "#/$defs/color"
+     },
+     "maxItems": 6
+    },
+    "head": {
+     "$ref": "#/$defs/id",
+     "description": "character id of the place's head (frozen in grey glass until freed)"
+    },
+    "scene": {
+     "type": "object",
+     "additionalProperties": false,
+     "description": "the visit as scenes: the local who greets the group, and the cutscene order",
+     "properties": {
+      "local": {
+       "type": "string"
+      },
+      "greet": {
+       "type": "string"
+      },
+      "sequence": {
+       "type": "array",
+       "items": {
+        "$ref": "#/$defs/id"
+       }
+      }
+     }
+    },
+    "people": {
+     "type": "string",
+     "description": "who lives here (crowd NPCs)"
+    },
+    "creatures": {
+     "type": "array",
+     "items": {
+      "$ref": "#/$defs/id"
+     },
+     "description": "creature ids to befriend here"
+    },
+    "game": {
+     "$ref": "#/$defs/activity"
+    },
+    "challenge": {
+     "$ref": "#/$defs/activity"
+    },
+    "boss": {
+     "$ref": "#/$defs/id",
+     "description": "creature id of the boss, when the challenge is a boss fight"
+    },
+    "shard": {
+     "type": "integer",
+     "minimum": 1,
+     "maximum": 32
+    },
+    "schedule": {
+     "$ref": "#/$defs/schedule"
+    },
+    "order": {
+     "type": "integer",
+     "description": "position on the night's Grand Path (1 = first)"
+    },
+    "music": {
+     "$ref": "#/$defs/id"
+    },
+    "assets": {
+     "type": "array",
+     "items": {
+      "$ref": "#/$defs/id"
+     },
+     "description": "asset ids used to build the place"
+    },
+    "status": {
+     "$ref": "#/$defs/status"
+    }
+   }
+  },
+  "activity": {
+   "type": "object",
+   "required": [
+    "name",
+    "template"
+   ],
+   "additionalProperties": false,
+   "description": "a place's game or challenge: a named re-dressing of one template",
+   "properties": {
+    "name": {
+     "$ref": "#/$defs/text"
+    },
+    "template": {
+     "$ref": "#/$defs/id"
+    },
+    "players": {
+     "type": "object",
+     "properties": {
+      "min": {
+       "type": "integer",
+       "minimum": 1
+      },
+      "max": {
+       "type": "integer"
+      }
+     },
+     "additionalProperties": false
+    },
+    "minutes": {
+     "type": "number"
+    },
+    "params": {
+     "type": "object",
+     "description": "template-specific settings (see that template's params)"
+    },
+    "reward": {
+     "type": "string"
+    }
+   }
+  },
+  "character": {
+   "type": "object",
+   "required": [
+    "id",
+    "name",
+    "role"
+   ],
+   "additionalProperties": false,
+   "properties": {
+    "id": {
+     "$ref": "#/$defs/id"
+    },
+    "name": {
+     "$ref": "#/$defs/text"
+    },
+    "role": {
+     "enum": [
+      "head",
+      "villain",
+      "npc",
+      "crowd",
+      "honoree",
+      "mew"
+     ]
+    },
+    "place": {
+     "$ref": "#/$defs/placeId"
+    },
+    "look": {
+     "type": "string"
+    },
+    "gender": {
+     "enum": [
+      "female",
+      "male",
+      "none"
+     ]
+    },
+    "face": {
+     "enum": [
+      "veiled",
+      "masked",
+      "soft_features",
+      "none"
+     ],
+     "description": "statues are faceless; living characters follow the owner's art direction"
+    },
+    "lines": {
+     "type": "array",
+     "items": {
+      "type": "string"
+     },
+     "description": "short spoken lines (thanks when freed, hints)"
+    },
+    "dialogue": {
+     "type": "object",
+     "additionalProperties": false,
+     "description": "a head's lines in the place-visit scenes",
+     "properties": {
+      "plea": {
+       "type": "string"
+      },
+      "freed": {
+       "type": "string"
+      },
+      "farewell": {
+       "type": "string"
+      }
+     }
+    },
+    "status": {
+     "$ref": "#/$defs/status"
+    }
+   }
+  },
+  "creature": {
+   "type": "object",
+   "required": [
+    "id",
+    "name",
+    "kind",
+    "eyes"
+   ],
+   "additionalProperties": false,
+   "properties": {
+    "id": {
+     "$ref": "#/$defs/id"
+    },
+    "name": {
+     "$ref": "#/$defs/text"
+    },
+    "kind": {
+     "enum": [
+      "friend",
+      "ambient",
+      "mount",
+      "boss",
+      "enemy",
+      "giant",
+      "swarm"
+     ]
+    },
+    "eyes": {
+     "type": "boolean",
+     "const": false,
+     "description": "rule: creatures have no eyes"
+    },
+    "size": {
+     "enum": [
+      "tiny",
+      "small",
+      "medium",
+      "large",
+      "giant",
+      "colossal"
+     ]
+    },
+    "moves": {
+     "enum": [
+      "walk",
+      "hop",
+      "fly",
+      "swim",
+      "float",
+      "slither"
+     ]
+    },
+    "look": {
+     "type": "string"
+    },
+    "glow": {
+     "$ref": "#/$defs/color"
+    },
+    "behaviour": {
+     "type": "string"
+    },
+    "places": {
+     "type": "array",
+     "items": {
+      "$ref": "#/$defs/placeId"
+     }
+    },
+    "render": {
+     "enum": [
+      "mesh",
+      "skinned_mesh",
+      "instanced",
+      "particles",
+      "card"
+     ],
+     "description": "cheapest form that still looks right"
+    },
+    "asset": {
+     "$ref": "#/$defs/id"
+    },
+    "status": {
+     "$ref": "#/$defs/status"
+    }
+   }
+  },
+  "pet": {
+   "type": "object",
+   "required": [
+    "id",
+    "creature",
+    "power",
+    "follow",
+    "tease"
+   ],
+   "additionalProperties": false,
+   "properties": {
+    "id": {
+     "$ref": "#/$defs/id"
+    },
+    "creature": {
+     "$ref": "#/$defs/id"
+    },
+    "power": {
+     "enum": [
+      "find_hidden",
+      "heal",
+      "carry_light",
+      "speed",
+      "shield",
+      "fetch",
+      "scout"
+     ]
+    },
+    "follow": {
+     "type": "string",
+     "description": "how it follows: heel, orbit, perch on shoulder, swim alongside..."
+    },
+    "tease": {
+     "type": "string",
+     "description": "its little tease move"
+    }
+   }
+  },
+  "ride": {
+   "type": "object",
+   "required": [
+    "id",
+    "name",
+    "seats",
+    "kind"
+   ],
+   "additionalProperties": false,
+   "properties": {
+    "id": {
+     "$ref": "#/$defs/id"
+    },
+    "name": {
+     "$ref": "#/$defs/text"
+    },
+    "kind": {
+     "enum": [
+      "arrival",
+      "group",
+      "mount",
+      "race"
+     ]
+    },
+    "seats": {
+     "type": "integer",
+     "minimum": 1
+    },
+    "drawnBy": {
+     "type": "string"
+    },
+    "look": {
+     "type": "string"
+    },
+    "honoreeOnly": {
+     "type": "boolean"
+    },
+    "asset": {
+     "$ref": "#/$defs/id"
+    }
+   }
+  },
+  "mew": {
+   "type": "object",
+   "required": [
+    "controlledBy",
+    "view",
+    "actions",
+    "reveal"
+   ],
+   "additionalProperties": false,
+   "properties": {
+    "controlledBy": {
+     "const": "owner"
+    },
+    "eyes": {
+     "const": "none",
+     "description": "owner, Oct 17: no animal has eyes, the Mew included"
+    },
+    "voice": {
+     "enum": [
+      "mew_sounds_only",
+      "voice_chat"
+     ],
+     "description": "before the reveal"
+    },
+    "view": {
+     "type": "object",
+     "required": [
+      "offsetDeg",
+      "distanceM",
+      "lagS"
+     ],
+     "additionalProperties": false,
+     "properties": {
+      "offsetDeg": {
+       "type": "array",
+       "items": {
+        "type": "number"
+       },
+       "minItems": 2,
+       "maxItems": 2,
+       "description": "angle from the centre of her view it keeps to"
+      },
+      "distanceM": {
+       "type": "array",
+       "items": {
+        "type": "number"
+       },
+       "minItems": 2,
+       "maxItems": 2
+      },
+      "lagS": {
+       "type": "number",
+       "description": "flock-style lag when she turns"
+      },
+      "leashM": {
+       "type": "number",
+       "description": "how far the owner may fly it before it is pulled back"
+      },
+      "keepCentreClearDuring": {
+       "type": "array",
+       "items": {
+        "enum": [
+         "combat",
+         "race",
+         "cutscene",
+         "puzzle"
+        ]
+       }
+      }
+     }
+    },
+    "actions": {
+     "type": "array",
+     "items": {
+      "type": "object",
+      "required": [
+       "id",
+       "name"
+      ],
+      "additionalProperties": false,
+      "properties": {
+       "id": {
+        "$ref": "#/$defs/id"
+       },
+       "name": {
+        "$ref": "#/$defs/text"
+       },
+       "by": {
+        "enum": [
+         "mew",
+         "honoree"
+        ]
+       },
+       "what": {
+        "type": "string"
+       },
+       "key": {
+        "type": "string"
+       }
+      }
+     }
+    },
+    "reveal": {
+     "type": "object",
+     "required": [
+      "cutscene"
+     ],
+     "additionalProperties": false,
+     "properties": {
+      "cutscene": {
+       "$ref": "#/$defs/id"
+      },
+      "becomes": {
+       "type": "string"
+      }
+     }
+    }
+   }
+  },
+  "player": {
+   "type": "object",
+   "required": [
+    "id",
+    "displayName",
+    "gender",
+    "group"
+   ],
+   "additionalProperties": false,
+   "description": "a friend's profile; gender only decides which wardrobe items they can see",
+   "properties": {
+    "id": {
+     "$ref": "#/$defs/id"
+    },
+    "displayName": {
+     "$ref": "#/$defs/text"
+    },
+    "gender": {
+     "enum": [
+      "female",
+      "male"
+     ]
+    },
+    "group": {
+     "enum": [
+      "ladies",
+      "honoree",
+      "men",
+      "owner"
+     ]
+    },
+    "ride": {
+     "$ref": "#/$defs/id"
+    },
+    "pet": {
+     "$ref": "#/$defs/id"
+    },
+    "joinAt": {
+     "type": "string",
+     "format": "date-time"
+    },
+    "slot": {
+     "type": "integer",
+     "minimum": 1,
+     "description": "friend number until the owner gives names"
+    }
+   }
+  },
+  "template": {
+   "type": "object",
+   "required": [
+    "id",
+    "name",
+    "how",
+    "players"
+   ],
+   "additionalProperties": false,
+   "properties": {
+    "id": {
+     "$ref": "#/$defs/id"
+    },
+    "name": {
+     "$ref": "#/$defs/text"
+    },
+    "how": {
+     "$ref": "#/$defs/text"
+    },
+    "why": {
+     "type": "string"
+    },
+    "players": {
+     "type": "object",
+     "properties": {
+      "min": {
+       "type": "integer"
+      },
+      "max": {
+       "type": "integer"
+      }
+     },
+     "additionalProperties": false
+    },
+    "params": {
+     "type": "object",
+     "description": "JSON Schema for the activity.params this template accepts"
+    },
+    "win": {
+     "type": "string"
+    },
+    "status": {
+     "$ref": "#/$defs/status"
+    }
+   }
+  },
+  "weapon": {
+   "type": "object",
+   "required": [
+    "id",
+    "name",
+    "class"
+   ],
+   "additionalProperties": false,
+   "properties": {
+    "id": {
+     "$ref": "#/$defs/id"
+    },
+    "name": {
+     "$ref": "#/$defs/text"
+    },
+    "class": {
+     "enum": [
+      "melee",
+      "ranged",
+      "ground_magic",
+      "team"
+     ]
+    },
+    "vfx": {
+     "type": "string",
+     "description": "always light, petals, glitter: no gore"
+    },
+    "damage": {
+     "type": "number"
+    },
+    "cooldownS": {
+     "type": "number"
+    }
+   }
+  },
+  "outfit": {
+   "type": "object",
+   "required": [
+    "id",
+    "name",
+    "slot",
+    "audience",
+    "modest"
+   ],
+   "additionalProperties": false,
+   "properties": {
+    "id": {
+     "$ref": "#/$defs/id"
+    },
+    "name": {
+     "$ref": "#/$defs/text"
+    },
+    "slot": {
+     "enum": [
+      "gown",
+      "dress",
+      "top",
+      "bottom",
+      "coat",
+      "cape",
+      "headwear",
+      "hijab",
+      "jewellery",
+      "shoes",
+      "wings",
+      "armour",
+      "set"
+     ]
+    },
+    "audience": {
+     "enum": [
+      "all",
+      "female_only"
+     ],
+     "description": "female_only items are not even drawn for male accounts"
+    },
+    "wearer": {
+     "enum": [
+      "female",
+      "male",
+      "any"
+     ]
+    },
+    "modest": {
+     "const": true
+    },
+    "colors": {
+     "type": "array",
+     "items": {
+      "$ref": "#/$defs/color"
+     }
+    }
+   }
+  },
+  "story": {
+   "type": "object",
+   "required": [
+    "villain",
+    "acts"
+   ],
+   "additionalProperties": false,
+   "properties": {
+    "villain": {
+     "$ref": "#/$defs/id"
+    },
+    "macguffin": {
+     "type": "string"
+    },
+    "acts": {
+     "type": "array",
+     "items": {
+      "type": "object",
+      "required": [
+       "id",
+       "name",
+       "summary"
+      ],
+      "additionalProperties": false,
+      "properties": {
+       "id": {
+        "$ref": "#/$defs/id"
+       },
+       "name": {
+        "$ref": "#/$defs/text"
+       },
+       "summary": {
+        "$ref": "#/$defs/text"
+       },
+       "skyPhase": {
+        "$ref": "#/$defs/id"
+       },
+       "cutscenes": {
+        "type": "array",
+        "items": {
+         "$ref": "#/$defs/id"
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "clock": {
+   "type": "object",
+   "required": [
+    "mode",
+    "phases",
+    "timeline"
+   ],
+   "additionalProperties": false,
+   "properties": {
+    "mode": {
+     "enum": [
+      "real_time_to_midnight",
+      "cycle"
+     ],
+     "description": "real_time_to_midnight: the sky follows the real clock and reaches night at celebrationAt"
+    },
+    "cycleMinutes": {
+     "type": "number",
+     "description": "free-play day/night cycle length outside the event"
+    },
+    "phases": {
+     "type": "array",
+     "items": {
+      "type": "object",
+      "required": [
+       "id",
+       "name"
+      ],
+      "additionalProperties": false,
+      "properties": {
+       "id": {
+        "$ref": "#/$defs/id"
+       },
+       "name": {
+        "$ref": "#/$defs/text"
+       },
+       "sunElevDeg": {
+        "type": "number"
+       },
+       "sky": {
+        "$ref": "#/$defs/color"
+       },
+       "fog": {
+        "$ref": "#/$defs/color"
+       },
+       "minutes": {
+        "type": "number"
+       }
+      }
+     }
+    },
+    "timeline": {
+     "type": "array",
+     "items": {
+      "type": "object",
+      "required": [
+       "at",
+       "phase",
+       "event"
+      ],
+      "additionalProperties": false,
+      "properties": {
+       "at": {
+        "type": "string",
+        "pattern": "^[0-2][0-9]:[0-5][0-9]$"
+       },
+       "until": {
+        "type": "string"
+       },
+       "phase": {
+        "$ref": "#/$defs/id"
+       },
+       "event": {
+        "$ref": "#/$defs/text"
+       },
+       "cutscene": {
+        "$ref": "#/$defs/id"
+       }
+      }
+     }
+    }
+   }
+  },
+  "cutscene": {
+   "type": "object",
+   "required": [
+    "id",
+    "name",
+    "trigger"
+   ],
+   "additionalProperties": false,
+   "description": "in-engine camera flights, never video",
+   "properties": {
+    "id": {
+     "$ref": "#/$defs/id"
+    },
+    "name": {
+     "$ref": "#/$defs/text"
+    },
+    "trigger": {
+     "type": "string"
+    },
+    "audience": {
+     "enum": [
+      "all",
+      "honoree",
+      "joiner",
+      "owner"
+     ]
+    },
+    "seconds": {
+     "type": "number"
+    },
+    "skippable": {
+     "type": "boolean"
+    },
+    "reusable": {
+     "type": "boolean",
+     "description": "one template used for many places"
+    },
+    "shortSeconds": {
+     "type": "number",
+     "description": "length of the short version played on repeats"
+    },
+    "shots": {
+     "type": "array",
+     "items": {
+      "$ref": "#/$defs/shot"
+     }
+    },
+    "music": {
+     "$ref": "#/$defs/id"
+    }
+   }
+  },
+  "shot": {
+   "type": "object",
+   "required": [
+    "type",
+    "seconds",
+    "what"
+   ],
+   "additionalProperties": false,
+   "properties": {
+    "type": {
+     "enum": [
+      "establishing_aerial",
+      "flyover",
+      "crane_down",
+      "crane_up",
+      "orbit",
+      "dolly_in",
+      "dolly_out",
+      "tracking",
+      "two_shot",
+      "close_up",
+      "over_shoulder",
+      "pov",
+      "wide",
+      "insert",
+      "title_card",
+      "whip_pan",
+      "fade"
+     ]
+    },
+    "seconds": {
+     "type": "number"
+    },
+    "what": {
+     "type": "string",
+     "description": "what the shot shows; {her} is the honoree's name"
+    },
+    "subject": {
+     "type": "string",
+     "description": "what the camera frames: a place, character, creature or a named mark"
+    },
+    "line": {
+     "type": "object",
+     "additionalProperties": false,
+     "properties": {
+      "who": {
+       "type": "string",
+       "description": "character id, or local, head or owner"
+      },
+      "key": {
+       "enum": [
+        "greet",
+        "plea",
+        "freed",
+        "farewell"
+       ]
+      },
+      "text": {
+       "type": "string"
+      }
+     }
+    },
+    "vfx": {
+     "type": "array",
+     "items": {
+      "type": "string"
+     }
+    },
+    "music": {
+     "$ref": "#/$defs/id"
+    }
+   }
+  },
+  "capture": {
+   "type": "object",
+   "required": [
+    "id",
+    "when"
+   ],
+   "additionalProperties": false,
+   "properties": {
+    "id": {
+     "$ref": "#/$defs/id"
+    },
+    "when": {
+     "$ref": "#/$defs/text"
+    },
+    "framing": {
+     "type": "string"
+    }
+   }
+  },
+  "track": {
+   "type": "object",
+   "required": [
+    "id",
+    "name",
+    "use"
+   ],
+   "additionalProperties": false,
+   "properties": {
+    "id": {
+     "$ref": "#/$defs/id"
+    },
+    "name": {
+     "$ref": "#/$defs/text"
+    },
+    "use": {
+     "type": "string"
+    },
+    "source": {
+     "type": "string",
+     "description": "royalty-free source or commission; empty until chosen"
+    }
+   }
+  },
+  "sky": {
+   "type": "object",
+   "additionalProperties": false,
+   "properties": {
+    "layers": {
+     "type": "array",
+     "items": {
+      "type": "object",
+      "required": [
+       "id",
+       "what",
+       "render"
+      ],
+      "additionalProperties": false,
+      "properties": {
+       "id": {
+        "$ref": "#/$defs/id"
+       },
+       "what": {
+        "$ref": "#/$defs/text"
+       },
+       "render": {
+        "type": "string"
+       },
+       "phases": {
+        "type": "array",
+        "items": {
+         "$ref": "#/$defs/id"
+        }
+       },
+       "texture": {
+        "type": "string"
+       }
+      }
+     }
+    }
+   }
+  },
+  "asset": {
+   "type": "object",
+   "required": [
+    "id",
+    "source",
+    "kind"
+   ],
+   "additionalProperties": false,
+   "properties": {
+    "id": {
+     "$ref": "#/$defs/id"
+    },
+    "source": {
+     "enum": [
+      "meshy_project",
+      "meshy_github",
+      "golden_thread",
+      "procedural",
+      "web_pack"
+     ]
+    },
+    "kind": {
+     "enum": [
+      "building",
+      "landmark",
+      "tree",
+      "plant",
+      "rock",
+      "prop",
+      "creature",
+      "character",
+      "vehicle",
+      "terrain",
+      "fx",
+      "texture"
+     ]
+    },
+    "path": {
+     "type": "string",
+     "description": "path in project files or repo"
+    },
+    "near": {
+     "type": "string",
+     "description": "web near model (GLB)"
+    },
+    "card": {
+     "type": "string",
+     "description": "impostor / image card"
+    },
+    "sizeM": {
+     "type": "number",
+     "description": "natural height or length in metres"
+    },
+    "tris": {
+     "type": "integer"
+    },
+    "places": {
+     "type": "array",
+     "items": {
+      "$ref": "#/$defs/placeId"
+     }
+    },
+    "biomes": {
+     "type": "array",
+     "items": {
+      "$ref": "#/$defs/biome"
+     }
+    },
+    "notes": {
+     "type": "string"
+    },
+    "fix": {
+     "type": "array",
+     "items": {
+      "type": "string"
+     },
+     "description": "rule fixes needed before use (veil a face, remove eyes, cross to star...)"
+    }
+   }
+  },
+  "qualityTier": {
+   "type": "object",
+   "required": [
+    "id",
+    "maxTris",
+    "maxDrawCalls",
+    "shadows"
+   ],
+   "additionalProperties": false,
+   "properties": {
+    "id": {
+     "enum": [
+      "low",
+      "medium",
+      "high"
+     ]
+    },
+    "maxTris": {
+     "type": "integer"
+    },
+    "maxDrawCalls": {
+     "type": "integer"
+    },
+    "shadows": {
+     "enum": [
+      "none",
+      "sun_1024",
+      "sun_2048"
+     ]
+    },
+    "nearRadiusM": {
+     "type": "number",
+     "description": "meshes inside, image cards outside"
+    },
+    "particles": {
+     "type": "integer"
+    },
+    "bloom": {
+     "type": "boolean"
+    },
+    "pixelRatio": {
+     "type": "number"
+    },
+    "fullAvatars": {
+     "type": "integer",
+     "description": "nearest players drawn with full detail; the rest use a simple far avatar"
+    }
+   }
+  },
+  "net": {
+   "type": "object",
+   "additionalProperties": false,
+   "description": "multiplayer state shared over PeerJS",
+   "properties": {
+    "room": {
+     "type": "object",
+     "description": "host-owned state",
+     "properties": {
+      "act": {
+       "type": "string"
+      },
+      "shards": {
+       "type": "array",
+       "items": {
+        "type": "integer"
+       }
+      },
+      "freedHeads": {
+       "type": "array",
+       "items": {
+        "type": "string"
+       }
+      },
+      "activePlace": {
+       "type": "string"
+      },
+      "mewRevealed": {
+       "type": "boolean"
+      }
+     }
+    },
+    "player": {
+     "type": "object",
+     "description": "per player, sent ~15 Hz",
+     "properties": {
+      "id": {
+       "type": "string"
+      },
+      "pos": {
+       "$ref": "#/$defs/vec3"
+      },
+      "yaw": {
+       "type": "number"
+      },
+      "anim": {
+       "type": "string"
+      },
+      "outfit": {
+       "type": "array",
+       "items": {
+        "type": "string"
+       }
+      },
+      "pet": {
+       "type": "string"
+      },
+      "riding": {
+       "type": "string"
+      }
+     }
+    },
+    "messages": {
+     "type": "array",
+     "items": {
+      "type": "string"
+     },
+     "description": "message types: join, state, emote, capture, activity_start, activity_result, shard, cutscene, mew_action"
+    },
+    "party": {
+     "type": "object",
+     "additionalProperties": false,
+     "description": "who can be in the room at once",
+     "properties": {
+      "friends": {
+       "type": "integer",
+       "minimum": 0
+      },
+      "maxPlayers": {
+       "type": "integer",
+       "minimum": 2,
+       "description": "friends + her + the owner (the Mew)"
+      },
+      "voiceCallRangeM": {
+       "type": "number",
+       "description": "open a voice call only to players this close; hang up beyond callRange x 1.5 (voice is silent past voice.far anyway)"
+      },
+      "stateHz": {
+       "type": "number",
+       "description": "position updates per second per player; the host relays everyone's"
+      },
+      "scaling": {
+       "type": "string",
+       "description": "how fights and team games grow with the number of players"
+      }
+     }
+    }
+   }
+  }
+ }
+}

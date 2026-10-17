@@ -1,0 +1,105 @@
+id	source_page	image_url	note
+MOOR-01	https://www.exp-points.com/julia-cui-magic-moorland	https://images.squarespace-cdn.com/content/v1/5d4b249616f93e000149aebd/785873b3-63bf-40bd-918e-117996e054ca/MarketingShot_MagicMoorland_01_CoverShot.png	Magic Moorland cover render
+MOOR-02	https://www.exp-points.com/julia-cui-magic-moorland	https://images.squarespace-cdn.com/content/v1/5d4b249616f93e000149aebd/b1814982-4cbe-4943-84cd-33ac3db7f009/MarketingShot_MagicMoorland_03_1.png	Final render
+MOOR-03	https://www.exp-points.com/julia-cui-magic-moorland	https://images.squarespace-cdn.com/content/v1/5d4b249616f93e000149aebd/46cb133d-5e6a-4b09-90a8-4e41995f5375/MarketingShot_MagicMoorland_02_1.png	Final render
+MOOR-GUIDE	https://www.exp-points.com/julia-cui-magic-moorland	https://images.squarespace-cdn.com/content/v1/5d4b249616f93e000149aebd/11e4e372-2f65-479b-86cc-2ff4cf471a6a/GuidingLines_MM.png	Guiding lines overlay
+MOOR-FRAME	https://www.exp-points.com/julia-cui-magic-moorland	https://images.squarespace-cdn.com/content/v1/5d4b249616f93e000149aebd/d63c1443-9d58-4371-810f-d5c7da03d491/Framing_MM.png	Foreground shadow framing
+MOOR-COMP	https://www.exp-points.com/julia-cui-magic-moorland	https://images.squarespace-cdn.com/content/v1/5d4b249616f93e000149aebd/b4b65a97-018c-402b-93da-3d1bb8adf095/Composition_right.png	Final composition (tree moved behind house)
+MOOR-HOUSES	https://www.exp-points.com/julia-cui-magic-moorland	https://images.squarespace-cdn.com/content/v1/5d4b249616f93e000149aebd/1c9cab78-e67b-4350-9f18-4ba510997dcf/Houses.png	Houses from plank kit
+MOOR-FOLIAGE	https://www.exp-points.com/julia-cui-magic-moorland	https://images.squarespace-cdn.com/content/v1/5d4b249616f93e000149aebd/b55ca4c4-387e-47db-9f1e-3ee94e5a55e5/Foliage.png	Baked foliage atlas
+MOOR-CLOUDS	https://www.exp-points.com/julia-cui-magic-moorland	https://images.squarespace-cdn.com/content/v1/5d4b249616f93e000149aebd/2181d887-f550-40f9-a79d-8cc65d2249e1/Cloud_Collage.png	Cloud mask collage
+MOOR-LUT	https://www.exp-points.com/julia-cui-magic-moorland	https://images.squarespace-cdn.com/content/v1/5d4b249616f93e000149aebd/d058f0b9-b97b-448c-9269-a8b7d0cac29c/LUT_GIF.gif	LUT grading before/after
+MOOR-HOUSELIGHT	https://www.exp-points.com/julia-cui-magic-moorland	https://images.squarespace-cdn.com/content/v1/5d4b249616f93e000149aebd/b01edd64-5141-4793-95a7-1c5351b482a1/LightsHouse_GIF.gif	House spot + interior lights
+KWS-HERO	https://kidswithsticks.com/creating-stylized-art-inspired-by-ghibli-using-unreal-engine-4/	https://kidswithsticks.com/wp-content/uploads/2020/01/2A-1.png	Ghibli-style UE4 scene
+KWS-HERO2	https://kidswithsticks.com/creating-stylized-art-inspired-by-ghibli-using-unreal-engine-4/	https://kidswithsticks.com/wp-content/uploads/2020/01/3A-1.png	Ghibli-style scene 2
+KWS-TREES	https://kidswithsticks.com/creating-stylized-art-inspired-by-ghibli-using-unreal-engine-4/	https://kidswithsticks.com/wp-content/uploads/2020/01/image-7.png	Variety of bushes and trees
+KWS-HEIGHTMASK	https://kidswithsticks.com/creating-stylized-art-inspired-by-ghibli-using-unreal-engine-4/	https://kidswithsticks.com/wp-content/uploads/2020/01/image-8-1024x591.png	Height-mask tint on foliage
+KWS-BG	https://kidswithsticks.com/creating-stylized-art-inspired-by-ghibli-using-unreal-engine-4/	https://kidswithsticks.com/wp-content/uploads/2020/01/Backgrounds-1024x389.png	Painted 2D landscapes on 3D
+KWS-SKY	https://kidswithsticks.com/creating-stylized-art-inspired-by-ghibli-using-unreal-engine-4/	https://kidswithsticks.com/wp-content/uploads/2020/01/unknown-1024x454.png	Sky sphere
+KWS-PAL-MAGIC	https://kidswithsticks.com/creating-stylized-art-inspired-by-ghibli-using-unreal-engine-4/	https://kidswithsticks.com/wp-content/uploads/2020/01/magic-unknown-pallette-1024x153.jpg	Palette: magic & unknown
+KWS-PAL-FREEDOM	https://kidswithsticks.com/creating-stylized-art-inspired-by-ghibli-using-unreal-engine-4/	https://kidswithsticks.com/wp-content/uploads/2020/01/imagination-freedom-pallete-1024x150.jpg	Palette: imagination & freedom
+KWS-PAL-RENEW	https://kidswithsticks.com/creating-stylized-art-inspired-by-ghibli-using-unreal-engine-4/	https://kidswithsticks.com/wp-content/uploads/2020/01/revival-renewal-pallette-1024x149.jpg	Palette: revival & renewal
+PEDRO-MAIN	https://www.exp-points.com/pedro-damasceno-stylized-art-from-concept	https://images.squarespace-cdn.com/content/v1/5d4b249616f93e000149aebd/1578846888631-UPJ7WE1Z2R1DSGZHIWLO/MainShot.jpg	Ghibli-ish house + water, unlit painted
+PEDRO-SKY	https://www.exp-points.com/pedro-damasceno-stylized-art-from-concept	https://images.squarespace-cdn.com/content/v1/5d4b249616f93e000149aebd/1578847617549-HV2HGUTFJPW9C5WDZF8F/example.jpg	Skybox example
+JAN-01	https://jangolmic.artstation.com/projects/L2VGZ5	https://cdna.artstation.com/p/assets/images/images/024/946/538/large/jan-golmic-jangolmic-mountain-river-landscape-01.jpg	Mountain river landscape
+JAN-02	https://jangolmic.artstation.com/projects/L2VGZ5	https://cdnb.artstation.com/p/assets/images/images/024/946/543/large/jan-golmic-jangolmic-mountain-river-landscape-02.jpg	Mountain river landscape
+JAN-04	https://jangolmic.artstation.com/projects/L2VGZ5	https://cdna.artstation.com/p/assets/images/images/024/946/556/large/jan-golmic-jangolmic-mountain-river-landscape-04.jpg	Mountain river landscape
+OWL-01	https://owl_studio.artstation.com/projects/9EmBoW	https://cdna.artstation.com/p/assets/images/images/060/083/762/large/owl-studio-sansara-backgrounds-1.jpg	Sansara stylized backgrounds
+OWL-02	https://owl_studio.artstation.com/projects/9EmBoW	https://cdnb.artstation.com/p/assets/images/images/060/083/765/large/owl-studio-sansara-backgrounds-2.jpg	Sansara
+OWL-03	https://owl_studio.artstation.com/projects/9EmBoW	https://cdna.artstation.com/p/assets/images/images/060/083/768/large/owl-studio-sansara-backgrounds-3.jpg	Sansara
+OWL-04	https://owl_studio.artstation.com/projects/9EmBoW	https://cdna.artstation.com/p/assets/images/images/060/083/772/large/owl-studio-sansara-backgrounds-4.jpg	Sansara
+OWL-05	https://owl_studio.artstation.com/projects/9EmBoW	https://cdnb.artstation.com/p/assets/images/images/060/083/777/large/owl-studio-sansara-backgrounds-5.jpg	Sansara
+OWL-06	https://owl_studio.artstation.com/projects/9EmBoW	https://cdnb.artstation.com/p/assets/images/images/060/083/785/large/owl-studio-sansara-backgrounds-6.jpg	Sansara
+RICCI-01	https://www.artstation.com/artwork/BX2Bk4	https://cdnb.artstation.com/p/assets/images/images/064/630/857/large/roberto-ricci-artstation.jpg	Environment concept (Blender+PS)
+RICCI-02	https://www.artstation.com/artwork/BX2Bk4	https://cdnb.artstation.com/p/assets/images/images/064/630/867/large/roberto-ricci-thumbnails.jpg	Thumbnails
+AAA-PALACE	https://www.artstation.com/artwork/486yzl	https://cdnb.artstation.com/p/assets/images/images/030/200/957/large/aaa-game-art-studio-034-04-a-1.jpg	French-garden palace, fountain, castle
+LUO-01	https://luoyuewen.artstation.com/projects/wGnz9	https://cdnb.artstation.com/p/assets/images/images/008/114/333/large/luoyuewen-luoyuewen-1.jpg	Zen mountain scene
+LUO-02	https://luoyuewen.artstation.com/projects/wGnz9	https://cdnb.artstation.com/p/assets/images/images/008/114/371/large/luoyuewen-luoyuewen-5.jpg	Zen mountain scene
+LUO-03	https://luoyuewen.artstation.com/projects/wGnz9	https://cdnb.artstation.com/p/assets/images/images/008/114/463/large/luoyuewen-luoyuewen-.jpg	Zen mountain scene
+PEAR-01	https://www.artstation.com/artwork/qA2Rmz	https://cdnb.artstation.com/p/assets/images/images/015/856/585/large/pear-lili-5.jpg	Game scene design
+PEAR-02	https://www.artstation.com/artwork/qA2Rmz	https://cdna.artstation.com/p/assets/images/images/015/856/588/large/pear-lili-11.jpg	Game scene design
+GLIU-01	https://gliulian.artstation.com/projects/keNXd	https://cdnb.artstation.com/p/assets/images/images/003/000/811/large/g-liulian-.jpg	Scene concept
+GLIU-02	https://gliulian.artstation.com/projects/keNXd	https://cdnb.artstation.com/p/assets/images/images/003/001/199/large/g-liulian-.jpg	Scene concept
+GLIU-03	https://gliulian.artstation.com/projects/keNXd	https://cdnb.artstation.com/p/assets/images/images/003/001/213/large/g-liulian-g-liulian-02.jpg	Scene concept
+OKP-01	https://okprostudio.artstation.com/projects/k4OmD2	https://cdna.artstation.com/p/assets/images/images/041/197/764/large/o-k-productions-studio-game-bg-01l.jpg	Slot game background
+OKP-02	https://okprostudio.artstation.com/projects/k4OmD2	https://cdna.artstation.com/p/assets/images/images/017/687/688/large/o-k-productions-studio-bg-01.jpg	Slot game background
+OKP-03	https://okprostudio.artstation.com/projects/k4OmD2	https://cdnb.artstation.com/p/assets/images/images/041/197/777/large/o-k-productions-studio-game-bg-04.jpg	Slot game background
+OKP-04	https://okprostudio.artstation.com/projects/k4OmD2	https://cdna.artstation.com/p/assets/images/images/017/687/704/large/o-k-productions-studio-bg-05.jpg	Slot game background
+CHOI-01	https://www.artstation.com/artwork/L2RBWR	https://cdnb.artstation.com/p/assets/images/images/014/566/777/large/peter-choi-topstore-small.jpg	Medieval fantasy village store
+CHOI-02	https://www.artstation.com/artwork/L2RBWR	https://cdnb.artstation.com/p/assets/images/images/014/567/067/large/peter-choi-2.jpg	Village architecture
+CB-YI-HERO	https://www.creativebloq.com/3d/these-blender-environment-art-tricks-make-scenes-feel-instantly-more-cinematic	https://cdn.mos.cms.futurecdn.net/bDrJPAtkPYfk4HSX7s8FKN.jpg	Fantasy fields, cliffs and tower
+CB-YI-CASTLE	https://www.creativebloq.com/3d/these-blender-environment-art-tricks-make-scenes-feel-instantly-more-cinematic	https://cdn.mos.cms.futurecdn.net/t2C96vQfLwheU2pZDRZEAV.jpg	3D fantasy castle and tower
+CB-YI-CANYON	https://www.creativebloq.com/3d/these-blender-environment-art-tricks-make-scenes-feel-instantly-more-cinematic	https://cdn.mos.cms.futurecdn.net/AxJpb44LRjP2bAYz4ke5UY.jpg	Final: castle + canyon
+CB-YI-THUMBS	https://www.creativebloq.com/3d/these-blender-environment-art-tricks-make-scenes-feel-instantly-more-cinematic	https://cdn.mos.cms.futurecdn.net/HG2DGXsv56YyXcn56XtfTd.jpg	B/W silhouette thumbnails
+HLB-HERO	https://www.creativebloq.com/3d/video-game-design/from-pixels-to-polygons-making-hyper-light-breaker-s-cel-shaded-world	https://cdn.mos.cms.futurecdn.net/djS8kNgj67ov7zLETw27va.jpg	Hyper Light Breaker env art
+HLB-TARGET	https://www.creativebloq.com/3d/video-game-design/from-pixels-to-polygons-making-hyper-light-breaker-s-cel-shaded-world	https://cdn.mos.cms.futurecdn.net/y9b4KPmn2HWLn4VEAbZm5M.jpg	Target render: vibrant cel-shaded world
+HLB-HUB	https://www.creativebloq.com/3d/video-game-design/from-pixels-to-polygons-making-hyper-light-breaker-s-cel-shaded-world	https://cdn.mos.cms.futurecdn.net/rdnJjwA4xoWaNkz4DYvLwK.jpg	Hub world buildings, painterly restrained detail
+HLB-SIMPLIFY	https://www.creativebloq.com/3d/video-game-design/from-pixels-to-polygons-making-hyper-light-breaker-s-cel-shaded-world	https://cdn.mos.cms.futurecdn.net/khUefMkgpSeoQJSi6n2Hj.jpg	Reducing detail for style
+HALO-01	https://www.creativebloq.com/3d/inspired-by-halo-this-stunning-sci-fi-landscape-is-a-real-time-render-from-unreal-engine	https://cdn.mos.cms.futurecdn.net/eLK6Nv5N9SpMxdfd9F8ia.jpg	Halo-inspired landscape
+KEEPER-VISTA	https://www.naokotakamoto.com/magic	https://images.squarespace-cdn.com/content/v1/594e76c615d5dbd5695622a4/1781970878912-13J65ZGV8UPCU7B5RQKG/KEEPER-screenshot-021-launch-Vista.png	Keeper: Vista
+KEEPER-GROVE	https://www.naokotakamoto.com/magic	https://images.squarespace-cdn.com/content/v1/594e76c615d5dbd5695622a4/1781970870888-GVHLMG3EOC0A434DCXCT/KEEPER-screenshot-024-launch-Radiant_Grove.png	Keeper: Radiant Grove
+KEEPER-TEMPLE	https://www.naokotakamoto.com/magic	https://images.squarespace-cdn.com/content/v1/594e76c615d5dbd5695622a4/1781970852580-SSDS9663IOIS31VGPLZ7/KEEPER-screenshot-010-OvergrownTemple.png	Keeper: Overgrown Temple
+KEEPER-FIELD	https://www.naokotakamoto.com/magic	https://images.squarespace-cdn.com/content/v1/594e76c615d5dbd5695622a4/1781970843969-QSMDVQ5HFH9IORI7AYOO/KEEPER-screenshot-009-OpenField.png	Keeper: Open Field
+KEEPER-POLLEN	https://www.naokotakamoto.com/magic	https://images.squarespace-cdn.com/content/v1/594e76c615d5dbd5695622a4/1781970861012-1QL3AO4PHHKORLWP7YAN/KEEPER-screenshot-017-Pollen-Jumping-with-Friends.png	Keeper: Pollen jumping
+KEEPER-LIGHTHOUSE	https://www.naokotakamoto.com/magic	https://images.squarespace-cdn.com/content/v1/594e76c615d5dbd5695622a4/1781970843971-UGGDG39MAWF8T6Z04ZXI/KEEPER-screenshot-000-TheLighthouse.png	Keeper: The Lighthouse
+IG25-AVOWED	https://theinspirationgrid.com/editorial/the-15-most-beautiful-games-of-2025/	https://inspgr.id/app/uploads/2025/12/beautiful-games-2025-avowed-02.jpg	Avowed lush forest/towns
+IG25-AVOWED2	https://theinspirationgrid.com/editorial/the-15-most-beautiful-games-of-2025/	https://inspgr.id/app/uploads/2025/12/beautiful-games-2025-avowed-04.jpg	Avowed
+IG25-SPLIT	https://theinspirationgrid.com/editorial/the-15-most-beautiful-games-of-2025/	https://inspgr.id/app/uploads/2025/12/beautiful-games-2025-split-fiction-02.jpg	Split Fiction
+IG25-SPLIT2	https://theinspirationgrid.com/editorial/the-15-most-beautiful-games-of-2025/	https://inspgr.id/app/uploads/2025/12/beautiful-games-2025-split-fiction-04.jpg	Split Fiction
+IG25-SILK	https://theinspirationgrid.com/editorial/the-15-most-beautiful-games-of-2025/	https://inspgr.id/app/uploads/2025/12/beautiful-games-2025-silksong-02.jpg	Silksong layered hand-drawn
+IG25-CLAIR	https://theinspirationgrid.com/editorial/the-15-most-beautiful-games-of-2025/	https://inspgr.id/app/uploads/2025/12/beautiful-games-2025-clair-obscur-02.jpg	Clair Obscur surreal painterly architecture
+IG25-CLAIR2	https://theinspirationgrid.com/editorial/the-15-most-beautiful-games-of-2025/	https://inspgr.id/app/uploads/2025/12/beautiful-games-2025-clair-obscur-04.jpg	Clair Obscur
+IG25-SWORD	https://theinspirationgrid.com/editorial/the-15-most-beautiful-games-of-2025/	https://inspgr.id/app/uploads/2025/12/beautiful-games-2025-sword-of-the-sea-02.jpg	Sword of the Sea: flowing sand, ruins
+IG25-SWORD2	https://theinspirationgrid.com/editorial/the-15-most-beautiful-games-of-2025/	https://inspgr.id/app/uploads/2025/12/beautiful-games-2025-sword-of-the-sea-05.jpg	Sword of the Sea
+IG25-KEEPER	https://theinspirationgrid.com/editorial/the-15-most-beautiful-games-of-2025/	https://inspgr.id/app/uploads/2025/12/beautiful-games-2025-keeper-02.jpg	Keeper
+IG25-HERDLING	https://theinspirationgrid.com/editorial/the-15-most-beautiful-games-of-2025/	https://inspgr.id/app/uploads/2025/12/beautiful-games-2025-herdling-02.jpg	Herdling mountain vistas
+IG25-DK	https://theinspirationgrid.com/editorial/the-15-most-beautiful-games-of-2025/	https://inspgr.id/app/uploads/2025/12/beautiful-games-2025-dk-bananza-02.jpg	DK Bananza vibrant
+VSQ-TOWER	https://vsquad.art/2d-environment/	https://vsquad.art/wp-content/uploads/2026/04/fantasy-clock-tower-final-2d-art.webp	Clock tower, red flag, lush forest
+VSQ-TOWER2	https://vsquad.art/2d-environment/	https://vsquad.art/wp-content/uploads/2026/04/fantasy-clock-tower-final-render.webp	Clock tower + tavern
+VSQ-VILLAGE	https://vsquad.art/2d-environment/	https://vsquad.art/wp-content/uploads/2026/01/casual-2d-environment-design.webp	Whimsical village with towers at sunset
+VSQ-RUINS	https://vsquad.art/2d-environment/	https://vsquad.art/wp-content/uploads/2026/01/realistic-2d-concept-art.webp	Foggy castle ruins, dramatic sky
+VSQ-FOREST	https://vsquad.art/2d-environment/	https://vsquad.art/wp-content/uploads/2026/04/fantasy-forest-environment-sketch.webp	Fantasy forest sketch
+WING-ENV	https://blog.wingfox.com/game-art-difference-between-realistic-and-stylized/	https://blog.wingfox.com/wp-content/uploads/2022/02/3d-stylized-environment.png	3D stylized environment
+WING-ENV2	https://blog.wingfox.com/game-art-difference-between-realistic-and-stylized/	https://blog.wingfox.com/wp-content/uploads/2022/02/stylized-environment-1024x576.png	Stylized environment
+ARG-GLOWFOREST	https://www.argentics.io/creating-immersive-worlds-with-environment-concept-art	https://thb.tildacdn.one/tild6461-6335-4032-b063-353439326138/-/empty/image-asset.jpeg	Enchanted glowing forest
+ARG-WHIMSY	https://www.argentics.io/creating-immersive-worlds-with-environment-concept-art	https://thb.tildacdn.one/tild6261-6631-4736-b639-643435353663/-/empty/environmentartist-18.jpg	Whimsical fantasy environment
+ARG-COAST	https://www.argentics.io/creating-immersive-worlds-with-environment-concept-art	https://thb.tildacdn.one/tild6436-3966-4434-a234-376139623331/-/empty/iE4FXnNnPvYsZYc4q9PN.png	Vibrant coastal town
+ZD-BOTW	https://www.zeldadungeon.net/nintendo-switch-has-games-the-games-that-defined-the-nintendo-switch/	https://artfiles.alphacoders.com/120/thumb-1920-120666.jpg	BotW fan art (the clouds page)
+ZD-HEADER	https://www.zeldadungeon.net/nintendo-switch-has-games-the-games-that-defined-the-nintendo-switch/	https://www.zeldadungeon.net/wp-content/uploads/2025/06/SwitchHasGames-scaled.webp	Header (clouds candidate)
+ZD-BOTWDLC	https://www.zeldadungeon.net/nintendo-switch-has-games-the-games-that-defined-the-nintendo-switch/	https://www.zeldadungeon.net/wp-content/uploads/2025/04/Screenshot-2025-04-10-154639.png	BotW expansion screenshot
+ZD-HK	https://www.zeldadungeon.net/nintendo-switch-has-games-the-games-that-defined-the-nintendo-switch/	https://wallpaperaccess.com/full/1703238.jpg	Hollow Knight wallpaper
+GL-ZELDA	https://gameluster.com/new-zelda-u-concept-art-shows-link-climbing-a-mountain/	https://gameluster.com/wp-content/uploads/2016/06/Zelda-U-artwork-Link-climbing.jpg	BotW concept: climbing, wide landscape
+L80-VAST	https://80.lv/articles/001agt-creating-vast-landscapes-in-ue4	https://cdn.80.lv/api/upload/post/718/images/5d2886687db74/contain_1200x630.jpg	Vast landscapes cover
+L80-LOSTCIV	https://80.lv/articles/001agt-003qxl-005cg-lost-of-civilization-organic-environment-art-in-ue4	https://cdn.80.lv/api/upload/meta/12666/images/5e998e03c260a/contain_1200x630.jpg	Lost civilization palace/gate cover
+L80-PAINTERLY	https://80.lv/articles/turning-2d-concept-art-into-a-detailed-painterly-3d-world	https://cdn.80.lv/api/upload/meta/49677/images/6a7a89aa987b0/contain_1200x630.jpg	Painterly village cover
+L80-VR	https://80.lv/articles/building-a-stylized-game-world-for-vr	https://cdn.80.lv/api/upload/post/7880/images/5d70a2411fece/contain_1200x630.jpg	Stylized VR world cover
+L80-TWIST	https://80.lv/articles/twisting-reality-in-environment-design	https://cdn.80.lv/api/upload/post/4025/images/5d2ca12772b26/contain_1200x630.jpg	Surreal matryoshka street cover
+L80-STYLIZED	https://80.lv/articles/following-the-stylized-trend-in-video-games	https://cdn.80.lv/api/upload/post/1725/images/5d28b75480886/contain_1200x630.jpg	Stylized trend cover
+L80-2D3D	https://80.lv/articles/concept-art-switch-from-2d-to-3d	https://cdn.80.lv/api/upload/post/487/images/5d287c6082f1a/contain_1200x630.jpg	2D→3D concept cover
+YT-1	https://www.youtube.com/watch?v=_jLGxlsVvos	https://i.ytimg.com/vi/_jLGxlsVvos/maxresdefault.jpg	Video thumbnail
+YT-2	https://www.youtube.com/watch?v=7lci5iNxu-Q	https://i.ytimg.com/vi/7lci5iNxu-Q/maxresdefault.jpg	Video thumbnail
+STOCK-WITCHER2	https://blog.stockvault.net/design/awesome-examples-of-game-concept-art/	https://blog.stockvault.net/wp-content/uploads/2012/04/8.jpg	Witcher 2 concept
+STOCK-AVATAR	https://blog.stockvault.net/design/awesome-examples-of-game-concept-art/	https://blog.stockvault.net/wp-content/uploads/2012/04/6.jpg	Avatar: The Game concept
+STOCK-EARTHRISE	https://blog.stockvault.net/design/awesome-examples-of-game-concept-art/	https://blog.stockvault.net/wp-content/uploads/2012/04/10.jpg	Earthrise concept
+PINGLE-FANTREAL	https://pinglestudio.com/blog/top-5-popular-styles-for-3d-game-art-development/	https://pinglestudio.com/wp-content/uploads/2023/04/cylenderrrrrrrrr-1024x578-1.jpg	Fantasy realism (Eternal Cylinder)
+PINGLE-HANDPAINT	https://pinglestudio.com/blog/top-5-popular-styles-for-3d-game-art-development/	https://pinglestudio.com/wp-content/uploads/2023/04/rrr5-1024x579-1.jpg	Hand-painted style

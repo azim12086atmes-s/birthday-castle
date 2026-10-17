@@ -1,0 +1,281 @@
+{
+"segment": 236.219,
+"deck": 688.0,
+"length": 8031.4,
+"rotY": -1.65931,
+"items": [
+{
+"m": "SkyBridge_Segment",
+"x": -10.44,
+"z": 2537.65,
+"y": 0.0,
+"rotY": -1.65931,
+"scale": 1.0
+},
+{
+"m": "SkyBridge_Segment",
+"x": -31.32,
+"z": 2772.94,
+"y": 0.0,
+"rotY": -1.65931,
+"scale": 1.0
+},
+{
+"m": "SkyBridge_Segment",
+"x": -52.21,
+"z": 3008.24,
+"y": 0.0,
+"rotY": -1.65931,
+"scale": 1.0
+},
+{
+"m": "SkyBridge_Segment",
+"x": -73.09,
+"z": 3243.53,
+"y": 0.0,
+"rotY": -1.65931,
+"scale": 1.0
+},
+{
+"m": "SkyBridge_Segment",
+"x": -93.97,
+"z": 3478.82,
+"y": 0.0,
+"rotY": -1.65931,
+"scale": 1.0
+},
+{
+"m": "SkyBridge_Segment",
+"x": -114.85,
+"z": 3714.12,
+"y": 0.0,
+"rotY": -1.65931,
+"scale": 1.0
+},
+{
+"m": "SkyBridge_Segment",
+"x": -135.74,
+"z": 3949.41,
+"y": 0.0,
+"rotY": -1.65931,
+"scale": 1.0
+},
+{
+"m": "SkyBridge_Segment",
+"x": -156.62,
+"z": 4184.71,
+"y": 0.0,
+"rotY": -1.65931,
+"scale": 1.0
+},
+{
+"m": "SkyBridge_Segment",
+"x": -177.5,
+"z": 4420.0,
+"y": 0.0,
+"rotY": -1.65931,
+"scale": 1.0
+},
+{
+"m": "SkyBridge_Segment",
+"x": -198.38,
+"z": 4655.29,
+"y": 0.0,
+"rotY": -1.65931,
+"scale": 1.0
+},
+{
+"m": "SkyBridge_Segment",
+"x": -219.26,
+"z": 4890.59,
+"y": 0.0,
+"rotY": -1.65931,
+"scale": 1.0
+},
+{
+"m": "SkyBridge_Segment",
+"x": -240.15,
+"z": 5125.88,
+"y": 0.0,
+"rotY": -1.65931,
+"scale": 1.0
+},
+{
+"m": "SkyBridge_Segment",
+"x": -261.03,
+"z": 5361.18,
+"y": 0.0,
+"rotY": -1.65931,
+"scale": 1.0
+},
+{
+"m": "SkyBridge_Segment",
+"x": -281.91,
+"z": 5596.47,
+"y": 0.0,
+"rotY": -1.65931,
+"scale": 1.0
+},
+{
+"m": "SkyBridge_Segment",
+"x": -302.79,
+"z": 5831.76,
+"y": 0.0,
+"rotY": -1.65931,
+"scale": 1.0
+},
+{
+"m": "SkyBridge_Segment",
+"x": -323.68,
+"z": 6067.06,
+"y": 0.0,
+"rotY": -1.65931,
+"scale": 1.0
+},
+{
+"m": "SkyBridge_Segment",
+"x": -344.56,
+"z": 6302.35,
+"y": 0.0,
+"rotY": -1.65931,
+"scale": 1.0
+},
+{
+"m": "SkyBridge_Segment",
+"x": -365.44,
+"z": 6537.65,
+"y": 0.0,
+"rotY": -1.65931,
+"scale": 1.0
+},
+{
+"m": "SkyBridge_Segment",
+"x": -386.32,
+"z": 6772.94,
+"y": 0.0,
+"rotY": -1.65931,
+"scale": 1.0
+},
+{
+"m": "SkyBridge_Segment",
+"x": -407.21,
+"z": 7008.24,
+"y": 0.0,
+"rotY": -1.65931,
+"scale": 1.0
+},
+{
+"m": "SkyBridge_Segment",
+"x": -428.09,
+"z": 7243.53,
+"y": 0.0,
+"rotY": -1.65931,
+"scale": 1.0
+},
+{
+"m": "SkyBridge_Segment",
+"x": -448.97,
+"z": 7478.82,
+"y": 0.0,
+"rotY": -1.65931,
+"scale": 1.0
+},
+{
+"m": "SkyBridge_Segment",
+"x": -469.85,
+"z": 7714.12,
+"y": 0.0,
+"rotY": -1.65931,
+"scale": 1.0
+},
+{
+"m": "SkyBridge_Segment",
+"x": -490.74,
+"z": 7949.41,
+"y": 0.0,
+"rotY": -1.65931,
+"scale": 1.0
+},
+{
+"m": "SkyBridge_Segment",
+"x": -511.62,
+"z": 8184.71,
+"y": 0.0,
+"rotY": -1.65931,
+"scale": 1.0
+},
+{
+"m": "SkyBridge_Segment",
+"x": -532.5,
+"z": 8420.0,
+"y": 0.0,
+"rotY": -1.65931,
+"scale": 1.0
+},
+{
+"m": "SkyBridge_Segment",
+"x": -553.38,
+"z": 8655.29,
+"y": 0.0,
+"rotY": -1.65931,
+"scale": 1.0
+},
+{
+"m": "SkyBridge_Segment",
+"x": -574.26,
+"z": 8890.59,
+"y": 0.0,
+"rotY": -1.65931,
+"scale": 1.0
+},
+{
+"m": "SkyBridge_Segment",
+"x": -595.15,
+"z": 9125.88,
+"y": 0.0,
+"rotY": -1.65931,
+"scale": 1.0
+},
+{
+"m": "SkyBridge_Segment",
+"x": -616.03,
+"z": 9361.18,
+"y": 0.0,
+"rotY": -1.65931,
+"scale": 1.0
+},
+{
+"m": "SkyBridge_Segment",
+"x": -636.91,
+"z": 9596.47,
+"y": 0.0,
+"rotY": -1.65931,
+"scale": 1.0
+},
+{
+"m": "SkyBridge_Segment",
+"x": -657.79,
+"z": 9831.76,
+"y": 0.0,
+"rotY": -1.65931,
+"scale": 1.0
+},
+{
+"m": "SkyBridge_Segment",
+"x": -678.68,
+"z": 10067.06,
+"y": 0.0,
+"rotY": -1.65931,
+"scale": 1.0
+},
+{
+"m": "SkyBridge_Segment",
+"x": -699.56,
+"z": 10302.35,
+"y": 0.0,
+"rotY": -1.65931,
+"scale": 1.0
+}
+],
+"note": "34 copies of one segment end to end along the line"
+}

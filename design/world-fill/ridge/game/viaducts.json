@@ -1,0 +1,86 @@
+{
+"note": "walkable decks (study thread, ridge/cliffs3 sky palace): u runs along each bridge, a = rotY; y is each deck (satellite viaducts 340.5 / 500.5 / 640.5, sky bridge and gate tunnel 688)",
+"pads": [
+{
+"name": "Viaduct_palace_B25",
+"x": -970.55,
+"z": -1247.9,
+"hw": 112.5,
+"hd": 6.0,
+"a": 2.232,
+"y": 640.5
+},
+{
+"name": "Viaduct_palace_north",
+"x": 48.1,
+"z": -1362.6,
+"hw": 207.5,
+"hd": 6.0,
+"a": 1.5353,
+"y": 640.5
+},
+{
+"name": "Viaduct_palace_northeast",
+"x": 1468.9,
+"z": -1285.3,
+"hw": 140.0,
+"hd": 6.0,
+"a": 0.71849,
+"y": 500.5
+},
+{
+"name": "Viaduct_palace_east",
+"x": 1479.0,
+"z": 128.65,
+"hw": 187.5,
+"hd": 6.0,
+"a": -0.08678,
+"y": 640.5
+},
+{
+"name": "Viaduct_palace_west_n",
+"x": -1581.15,
+"z": -437.35,
+"hw": 197.5,
+"hd": 6.0,
+"a": 2.87178,
+"y": 500.5
+},
+{
+"name": "Viaduct_palace_southeast",
+"x": 1810.7,
+"z": 1295.7,
+"hw": 302.5,
+"hd": 6.0,
+"a": -0.62119,
+"y": 340.5
+},
+{
+"name": "Viaduct_palace_southwest",
+"x": -1611.5,
+"z": 1280.15,
+"hw": 195.0,
+"hd": 6.0,
+"a": -2.47021,
+"y": 340.5
+},
+{
+"name": "SkyBridge",
+"x": -355.0,
+"z": 6420.0,
+"hw": 4019.7,
+"hd": 11.0,
+"a": -1.65931,
+"y": 688.0
+},
+{
+"name": "GateTunnel",
+"x": -710.0,
+"z": 11205.0,
+"hw": 815.0,
+"hd": 19.0,
+"a": -1.5708,
+"y": 688.0
+}
+]
+}
