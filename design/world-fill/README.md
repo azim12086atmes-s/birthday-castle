@@ -23,3 +23,11 @@ The 20 km map, reshaped into a crescent of sea mountains with the white waterfal
 ## Rules kept
 
 Meshy models keep their own proportions and are sized to real-world sizes; only the palace is enlarged. Churches with crosses, the Whiskerlynx (it has eyes) and the stone face are not placed.
+
+## Geology pass (Oct 17)
+
+`geology.py` reshaped the mountains (about 110 km², places and palace grounds untouched): rivers carved valleys and couloirs over 16 rounds on a 1024 flow grid, slopes steeper than about 40° shed scree, tall mountains gained crests and spurs, and canyon, karst and sea-cliff walls got stepped strata. The colour map gained dark gullies, light ridges, scree, warm and cool rock tints, green on gentle lower slopes, canyon bands, and snow that rests on ledges while steep faces stay rock. Before and after: `ren/geology-mountains.jpg`, `ren/geology-compare.jpg`, `ren/geology-map.jpg`.
+
+- `terrain/` now holds the new heights and colours (same formats as before).
+- `game/crescent-h.bin` and `game/crescent-colour.jpg` are ready for the web game: the same 1024 grid, `uint16 (h + 250) * 20`, as `data/world/` on the game branch. Drop them in.
+- `world-placements.json`: 523 models on reshaped ground had their `y` moved by the height change. The sky-isle pieces (B30) float and were left alone.
