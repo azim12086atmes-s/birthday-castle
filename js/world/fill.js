@@ -101,7 +101,7 @@ export function createWorldFill(scene, quality) {
     texLoader.load(`data/world/cards/${M.name}.webp`, (tex) => {
       let map = tex;
       if (quality.key !== 'high') {
-        // half size on Low and Medium: 110 strips at full size would fill a small GPU
+        // half size on Low and Medium: 264 strips at full size would fill a small GPU
         const cv = document.createElement('canvas'); cv.width = tex.image.width / 2; cv.height = tex.image.height / 2;
         cv.getContext('2d').drawImage(tex.image, 0, 0, cv.width, cv.height);
         map = new THREE.CanvasTexture(cv); tex.dispose();
