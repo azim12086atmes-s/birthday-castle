@@ -75,8 +75,8 @@ export function createWorldFill(scene, quality) {
     for (const [name, m] of Object.entries(P.models)) {
       const [n, f] = RANGE[m.tier];
       // cards cost two triangles, so they reach further than the old far copies did
-      // on Low the town houses draw in full only within 150 m (cards beyond)
-      const near = name.endsWith('_town') && quality.key === 'low' ? Math.min(150, n) : n * Math.max(q, 0.7);
+      // town houses stay 3D across a whole town (r <= 225 m) on every tier, never cards inside it
+      const near = name.endsWith('_town') ? Math.max(260, n * Math.max(q, 0.7)) : n * Math.max(q, 0.7);
       models.set(name, { name, tier: m.tier, near, far: f * q * 1.3, items: [], copies: { near: null, card: null } });
     }
     for (const [m, place, x, y, z, rot, s, far] of P.items) {
@@ -176,7 +176,7 @@ export function createWorldFill(scene, quality) {
     }
     // a sky or ridge item whose card is missing draws its near copy from afar instead
     if (M.copies.card?.status === 'failed') for (let i = far.length - 1; i >= 0; i--) if (far[i].k > 1) near.push(...far.splice(i, 1));
-    if (near.length) request(M, 'near', closest);
+    if (near.length || closest < M.near * 1.8) request(M, 'near', closest);     // fetch a little early, so a town is 3D on arrival
     if ((near.length || far.length) && Object.keys(cards).length) request(M, 'card', closest);
     const nearOK = M.copies.near?.status === 'ready';
     const farOK = M.copies.card?.status === 'ready';
