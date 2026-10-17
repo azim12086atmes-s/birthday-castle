@@ -11,6 +11,7 @@ import { nightGrade, meadowGrade } from './materials.js';
 import { grassTexture, rng } from './textures.js';
 import { S, MAIN, TERRAIN_GRID, terrainHeight, groundHSL, forestAt, lakeDistance } from './layout.js';
 import { MOOD, FOG_COLOR, SUN_DIR, MOON_DIR } from './sky.js';
+import { OUTER_FRAME, outerH } from './crescent.js';
 import { onPath, whenPaths } from './paths.js';
 
 const G = TERRAIN_GRID;
@@ -50,7 +51,13 @@ function rockGrade(m) {
         diffuseColor.rgb = mix(diffuseColor.rgb, rock, steep * (0.55 + 0.4 * hi) * smoothstep(8.0, 40.0, vMWorld.y));
         float snow = smoothstep(980.0, 1250.0, vMWorld.y + (rn - 0.5) * 160.0) * smoothstep(0.45, 0.7, vMUp);
         diffuseColor.rgb = mix(diffuseColor.rgb, vec3(0.97, 0.97, 1.02), snow);
-      }`);
+      }`).replace('#include <fog_fragment>', `
+      #ifdef USE_FOG
+        // the high peaks rise out of the haze, so the great ridge reads from the palace
+        float pk = smoothstep(600.0, 4500.0, vMWorld.y);
+        float fogFactor = smoothstep(fogNear, fogFar * (1.0 + 1.6 * pk), vFogDepth) * (1.0 - 0.35 * pk);
+        gl_FragColor.rgb = mix(gl_FragColor.rgb, fogColor, fogFactor);
+      #endif`);
   };
   m.customProgramCacheKey = () => (key ? key.call(m) : 'land') + '-rock';
   return m;
@@ -74,6 +81,37 @@ function landGeometry(x0, z0, n, step, skipDeep) {
     idx.push(a, d, b, b, d, e);
   }
   if (!idx.length) return null;
+  const g = new THREE.BufferGeometry();
+  g.setAttribute('position', new THREE.BufferAttribute(pos, 3));
+  g.setAttribute('color', new THREE.BufferAttribute(col, 3));
+  g.setAttribute('uv', new THREE.BufferAttribute(uv, 2));
+  g.setIndex(idx);
+  g.computeVertexNormals();
+  return g;
+}
+
+// the great crescent ridge round the map (outer world, 41 km): a coarse ring, sunk out of
+// sight under the coast's own land so the two meet without a seam
+function ridgeGeometry(n) {
+  const O = OUTER_FRAME, step = O.span / n, inset = 400;
+  const inBox = (x, z, d) => x > G.x0 + d && x < G.x0 + G.span - d && z > G.z0 + d && z < G.z0 + G.span - d;
+  const pos = new Float32Array((n + 1) * (n + 1) * 3), col = new Float32Array(pos.length), uv = new Float32Array((n + 1) * (n + 1) * 2);
+  const c = new THREE.Color(), hs = new Float32Array((n + 1) * (n + 1)), inner = new Uint8Array((n + 1) * (n + 1));
+  for (let j = 0, k = 0; j <= n; j++) for (let i = 0; i <= n; i++, k++) {
+    const x = O.x0 + i * step, z = O.z0 + j * step, h = outerH(x, z);
+    hs[k] = h; inner[k] = inBox(x, z, inset) ? 1 : 0;
+    pos[k * 3] = x; pos[k * 3 + 1] = h - (inBox(x, z, 0) ? 80 : 0); pos[k * 3 + 2] = z;
+    uv[k * 2] = x / 5; uv[k * 2 + 1] = z / 5;
+    c.setHSL(...groundHSL(MAIN, x, z, h));
+    col[k * 3] = c.r; col[k * 3 + 1] = c.g; col[k * 3 + 2] = c.b;
+  }
+  const idx = [];
+  for (let j = 0; j < n; j++) for (let i = 0; i < n; i++) {
+    const a = j * (n + 1) + i, b = a + 1, d = a + n + 1, e = d + 1;
+    if (inner[a] && inner[b] && inner[d] && inner[e]) continue;
+    if (Math.max(hs[a], hs[b], hs[d], hs[e]) < -5) continue;
+    idx.push(a, d, b, b, d, e);
+  }
   const g = new THREE.BufferGeometry();
   g.setAttribute('position', new THREE.BufferAttribute(pos, 3));
   g.setAttribute('color', new THREE.BufferAttribute(col, 3));
@@ -159,7 +197,7 @@ function waterMesh() {
         #include <colorspace_fragment>
       }`,
   });
-  const mesh = new THREE.Mesh(new THREE.PlaneGeometry(64000, 64000).rotateX(-Math.PI / 2), mat);
+  const mesh = new THREE.Mesh(new THREE.PlaneGeometry(100000, 100000).rotateX(-Math.PI / 2), mat);
   mesh.frustumCulled = false;
   mesh.name = 'sea';
   return mesh;
@@ -272,6 +310,9 @@ export function createCoast(scene, preset) {
   const far = new THREE.Mesh(landGeometry(G.x0, G.z0, farN, farStep, -24 * S), landMaterial(true));
   far.frustumCulled = false; far.receiveShadow = true;
   group.add(far);
+  const ridge = new THREE.Mesh(ridgeGeometry(preset.trees < 120 ? 192 : 256), far.material);
+  ridge.frustumCulled = false; ridge.name = 'great-ridge';
+  group.add(ridge);
   const nearMat = landMaterial(false);
   const chunks = new Map();
   const sea = waterMesh();

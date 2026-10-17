@@ -53,7 +53,7 @@ const governor = new FrameGovernor(renderer, quality);
 
 const scene = new THREE.Scene();
 scene.fog = new THREE.Fog(FOG_COLOR, 900, 16000);
-const camera = new THREE.PerspectiveCamera(60, innerWidth / innerHeight, 0.3, 32000);
+const camera = new THREE.PerspectiveCamera(60, innerWidth / innerHeight, 0.3, 48000);
 camera.position.set(SPAWN.x, SPAWN_Y + 40, SPAWN.z + 60);
 
 const hemi = new THREE.HemisphereLight('#9fb0ff', '#3a2a6a', 1.6);
@@ -551,7 +551,7 @@ function frame() {
       if (fixed[6] && camera.fov !== fixed[6]) { camera.fov = fixed[6]; camera.updateProjectionMatrix(); }   // ?cam=...,fov for elevation shots
       if (fixed[7]) {                                                     // ?cam=...,fov,halfHeight: a true orthographic elevation
         const hh = fixed[7], hw = hh * camera.aspect;
-        camera.projectionMatrix.makeOrthographic(-hw, hw, hh, -hh, 0.3, 32000); camera.projectionMatrixInverse.copy(camera.projectionMatrix).invert();
+        camera.projectionMatrix.makeOrthographic(-hw, hw, hh, -hh, 0.3, 48000); camera.projectionMatrixInverse.copy(camera.projectionMatrix).invert();
         if (!camera.userData.ortho) { camera.userData.ortho = true; scene.traverse((o) => { if (o.isPoints) o.visible = false; }); }   // point sprites size by depth
       }
     }
