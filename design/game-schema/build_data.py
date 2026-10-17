@@ -87,14 +87,14 @@ for i, n, pw, f, t in PETS:
     pets.append(dict(id=slug(n) + '_pet', creature=i, power=pw, follow=f, tease=t))
 
 TEMPLATES = [
- ('harmony_puzzle', 'Harmony puzzle', 'Pressure pads, mirrors, bells or beams that need several players at once', 'Nobody can do it alone; people have to talk', 2, 8, 'every node lit at the same time'),
- ('race', 'Race', 'On foot, on creatures, in vehicles or on the flying ship through rings', 'Quick fun with a winner, easy to join', 1, 12, 'first across the line; everyone who finishes gets the shard'),
- ('arena_defence', 'Arena defence', 'Waves of shadow-glass creatures; melee and ranged', 'Back-to-back teamwork, revive each other', 1, 12, 'survive all waves'),
- ('boss_purification', 'Boss purification', 'A big corrupted creature with weak spots and warning zones', 'The big shared win of each act', 2, 12, 'purify all weak spots'),
- ('party_game', 'Party game', 'Targets, bubble tag, hide-and-seek, snowball fights, kite battles', 'Laughter, no pressure', 2, 12, 'highest score after the timer'),
- ('escort', 'Escort', 'Carry or guide something fragile together (a lantern, spirits, baby whales)', 'Everyone protects the same thing', 1, 12, 'the escorted thing arrives with light left'),
- ('gather_build', 'Team gather and build', 'Collect pieces and build something together (a cake layer, a bridge, an ice sculpture)', 'Shared creation; each person adds a part', 2, 12, 'every slot filled'),
- ('heart_quiz', 'Heart quiz and memory', 'Questions about her and about each other, echo and photo memory games', 'Friends learn about each other; deeply personal', 2, 12, 'answer a set number right as a team'),
+ ('harmony_puzzle', 'Harmony puzzle', 'Pressure pads, mirrors, bells or beams that need several players at once; more than 8 split into two teams with their own nodes', 'Nobody can do it alone; people have to talk', 2, 16, 'every node lit at the same time'),
+ ('race', 'Race', 'On foot, on creatures, in vehicles or on the flying ship through rings', 'Quick fun with a winner, easy to join', 1, 16, 'first across the line; everyone who finishes gets the shard'),
+ ('arena_defence', 'Arena defence', 'Waves of shadow-glass creatures; melee and ranged', 'Back-to-back teamwork, revive each other', 1, 16, 'survive all waves'),
+ ('boss_purification', 'Boss purification', 'A big corrupted creature with weak spots and warning zones', 'The big shared win of each act', 2, 16, 'purify all weak spots'),
+ ('party_game', 'Party game', 'Targets, bubble tag, hide-and-seek, snowball fights, kite battles', 'Laughter, no pressure', 2, 16, 'highest score after the timer'),
+ ('escort', 'Escort', 'Carry or guide something fragile together (a lantern, spirits, baby whales)', 'Everyone protects the same thing', 1, 16, 'the escorted thing arrives with light left'),
+ ('gather_build', 'Team gather and build', 'Collect pieces and build something together (a cake layer, a bridge, an ice sculpture)', 'Shared creation; each person adds a part', 2, 16, 'every slot filled'),
+ ('heart_quiz', 'Heart quiz and memory', 'Questions about her and about each other, echo and photo memory games', 'Friends learn about each other; deeply personal', 2, 16, 'answer a set number right as a team'),
 ]
 templates = [dict(id=i, name=n, how=h, why=w, players=dict(min=a, max=b), win=wn, status='designed') for i, n, h, w, a, b, wn in TEMPLATES]
 templates[0]['params'] = {'type': 'object', 'properties': {'nodes': {'type': 'integer'}, 'kind': {'enum': ['pads', 'mirrors', 'bells', 'beams']}, 'timeLimitS': {'type': 'number'}}}
@@ -128,7 +128,7 @@ data = dict(
         dict(id='swan_boat', name='Swan boat', kind='arrival', seats=2), dict(id='petal_carriage', name='Petal carriage', kind='arrival', seats=2),
         dict(id='cloud_chariot', name='Cloud chariot', kind='arrival', seats=2), dict(id='glass_sleigh', name='Glass sleigh', kind='arrival', seats=2),
         dict(id='lantern_gondola', name='Lantern gondola', kind='arrival', seats=2), dict(id='winged_carriage', name='Winged carriage', kind='arrival', seats=2),
-        dict(id='flying_ship', name='The flying ship', kind='group', seats=16, look='Open deck everyone stands on; carries the group between places')],
+        dict(id='flying_ship', name='The flying ship', kind='group', seats=18, look='Open deck everyone stands on; carries the group between places')],
  mew=dict(controlledBy='owner', eyes='none', voice='mew_sounds_only',
    view=dict(offsetDeg=[30, 50], distanceM=[1, 2], lagS=0.6, leashM=6, keepCentreClearDuring=['combat', 'race', 'cutscene', 'puzzle']),
    actions=[dict(id='upside_down', name='Float upside down', by='mew', what='At the top of her view, tail wagging'),
@@ -138,7 +138,9 @@ data = dict(
             dict(id='point_way', name='Point the way', by='mew', what='Flies ahead to the next place and looks back'),
             dict(id='boop', name='Boop its nose', by='honoree'), dict(id='berry', name='Toss a glowing berry', by='honoree'), dict(id='tickle', name='Tickle', by='honoree', what='It spins')],
    reveal=dict(cutscene='finale', becomes="the owner's character")),
- players=[],
+ players=[dict(id='honoree', displayName='{her}', gender='female', group='honoree', ride='her_carriage'),
+          dict(id='owner', displayName='The Mew', gender='male', group='owner')]
+         + [dict(id=f'friend_{k:02d}', slot=k, displayName=f'Friend {k}', gender='female' if k <= 7 else 'male', group='ladies' if k <= 7 else 'men') for k in range(1, 15)],
  templates=templates,
  weapons=[dict(id='starlight_sword', name='Starlight sword', **{'class': 'melee'}, vfx='ribbon trail'), dict(id='rapier', name='Starlight rapier', **{'class': 'melee'}, vfx='ribbon trail'),
           dict(id='petal_scythe', name='Petal scythe', **{'class': 'melee'}, vfx='petal arc'), dict(id='light_hammer', name='Hammer of light', **{'class': 'melee'}, vfx='shock ring'),
@@ -191,10 +193,12 @@ data = dict(
                   dict(id='stardust', what='Air particles, fireflies, stardust', render='GPU points', texture='web-pack/fx/glow.png'),
                   dict(id='rainbow', what='Rainbows', render='one shader arc', phases=['noon', 'afternoon'])]),
  assets=[],
- quality=[dict(id='low', maxTris=600000, maxDrawCalls=250, shadows='none', nearRadiusM=60, particles=3000, bloom=False, pixelRatio=0.75),
-          dict(id='medium', maxTris=1500000, maxDrawCalls=500, shadows='sun_1024', nearRadiusM=120, particles=12000, bloom=True, pixelRatio=1),
-          dict(id='high', maxTris=4000000, maxDrawCalls=900, shadows='sun_2048', nearRadiusM=200, particles=40000, bloom=True, pixelRatio=1.5)],
- net=dict(messages=['join', 'state', 'emote', 'capture', 'activity_start', 'activity_result', 'shard', 'cutscene', 'mew_action'])
+ quality=[dict(id='low', maxTris=600000, maxDrawCalls=250, shadows='none', nearRadiusM=60, particles=3000, bloom=False, pixelRatio=0.75, fullAvatars=6),
+          dict(id='medium', maxTris=1500000, maxDrawCalls=500, shadows='sun_1024', nearRadiusM=120, particles=12000, bloom=True, pixelRatio=1, fullAvatars=10),
+          dict(id='high', maxTris=4000000, maxDrawCalls=900, shadows='sun_2048', nearRadiusM=200, particles=40000, bloom=True, pixelRatio=1.5, fullAvatars=15)],
+ net=dict(party=dict(friends=14, maxPlayers=16, voiceCallRangeM=60, stateHz=10,
+   scaling='Boss health and wave size grow with the players present (base x (0.5 + 0.1 x players)); party hearts = 3 + players / 2; team games need at least half the party for every node or slot.'),
+   messages=['join', 'state', 'emote', 'capture', 'activity_start', 'activity_result', 'shard', 'cutscene', 'mew_action'])
 )
 # web pack trees as assets
 for n, sp in [('pine', 'fjord_taiga'), ('ancient_oak', 'temperate_forest'), ('ember', 'blossom_groves'), ('bonsai', 'blossom_groves'), ('wisteria', 'blossom_groves'), ('fern', 'temperate_forest')]:
