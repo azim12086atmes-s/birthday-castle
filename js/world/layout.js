@@ -152,10 +152,12 @@ export const BRANCHES = [
 ];
 
 // --- the districts (sheet 04 table), with the ground each one stands on -----------------
+// the ten Grand Path towns (study thread, data/world/towns.json): flat only out to the town edge, hills beyond
+const TOWN_PADS = { B12: { r: 195.2, e: 60 }, B20: { r: 215.8, e: 60 }, B21: { r: 135.7, e: 60 }, B02: { r: 187.5, e: 60 }, B06: { r: 155.6, e: 60 }, B18: { r: 200.8, e: 60 }, B04: { r: 186.3, e: 60 }, B07: { r: 219.4, e: 60 }, B08: { r: 224.5, e: 60 }, B26: { r: 177.6, e: 60 } };
 // pad: flattened ground { r, y, e (blend width) }
 export const SITES = Object.fromEntries(Object.entries(SITES1).map(([k, s]) => [k, {
   // each district's flat ground sits at the crescent's own height there
-  name: s.name, x: s.x * S, z: s.z * S, pad: { r: s.pad.r * S, y: k === 'B20' ? s.pad.y * S : Math.max(crescentH(s.x * S, s.z * S), 3), e: s.pad.e * S },
+  name: s.name, x: s.x * S, z: s.z * S, pad: { r: TOWN_PADS[k]?.r ?? s.pad.r * S, y: k === 'B20' ? s.pad.y * S : Math.max(crescentH(s.x * S, s.z * S), 3), e: TOWN_PADS[k]?.e ?? s.pad.e * S },
 }]));
 const EXTRA_PADS = EXTRA_PADS1.map((p) => ({ x: p.x * S, z: p.z * S, r: p.r * S, y: Math.max(crescentH(p.x * S, p.z * S), 3), e: p.e * S }));
 
