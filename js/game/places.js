@@ -14,7 +14,11 @@ export function setSpotObstacles(list) { obstacles = list; }
 // A flat, open patch near the place where a game can be played: the pads are
 // flattened ground, but a building usually stands in the middle of each.
 function findSpot(x, z) {
-  if (Math.hypot(x, z) < 50) return new THREE.Vector3(PLAZA.x, PLAZA.y, PLAZA.z);   // the palace: its lotus plaza
+  if (Math.hypot(x, z) < 50) {
+    // the palace: just in front of its lotus basin (the basin itself is a collider)
+    const zz = PLAZA.z + PLAZA.r + 8;
+    return new THREE.Vector3(PLAZA.x, groundAt(PLAZA.x, zz, PLAZA.y + 5) ?? PLAZA.y, zz);
+  }
   const ok = (px, pz) => {
     const h = groundAt(px, pz, 2000);
     if (h < 0.8) return null;

@@ -23,6 +23,9 @@ export function createCombat(scene, camera, data) {
     enabled: false,
     light: 100,
     dimmed: 0,
+    reach: 1,                     // levels widen what counts as a hit
+    regen: 6,                     // light per second while not dimmed
+    armour: 1,                    // a shield pet softens blows
     targets: () => [],            // set by the running game: [{ id, pos, r }]
     onHit: null,                  // (id, weapon) => void
     onHurt: null,
@@ -39,7 +42,8 @@ export function createCombat(scene, camera, data) {
       let best = null, bestD = 90;
       for (const tg of self.targets()) {
         const d = ray.distanceSqToPoint(tg.pos);
-        if (d > tg.r * tg.r) continue;
+        const rr = tg.r * self.reach;
+        if (d > rr * rr) continue;
         const along = tmp.copy(tg.pos).sub(ray.origin).dot(ray.direction);
         if (along > 0 && along < bestD) { bestD = along; best = tg; }
       }
@@ -62,14 +66,14 @@ export function createCombat(scene, camera, data) {
     },
     hurt(n) {
       if (!self.enabled || self.dimmed > 0) return;
-      self.light = Math.max(0, self.light - n);
+      self.light = Math.max(0, self.light - n * self.armour);
       self.onHurt && self.onHurt(self.light);
       if (self.light <= 0) { self.dimmed = 3; self.onDimmed && self.onDimmed(); }
     },
     reset() { self.light = 100; self.dimmed = 0; self.onHurt && self.onHurt(self.light); },
     update(dt) {
       if (self.dimmed > 0) { self.dimmed -= dt; if (self.dimmed <= 0) { self.light = 60; self.onHurt && self.onHurt(self.light); } }
-      else if (self.enabled && self.light < 100) { self.light = Math.min(100, self.light + dt * 2); }
+      else if (self.enabled && self.light < 100) { self.light = Math.min(100, self.light + dt * self.regen); }
       for (let i = bolts.length - 1; i >= 0; i--) {
         const b = bolts[i]; b.t += dt;
         const k = Math.min(1, b.t / b.dur);

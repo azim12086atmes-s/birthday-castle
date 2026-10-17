@@ -30,7 +30,7 @@ function el(tag, attrs = {}, parent) {
 function buildHud() {
   const hud = $('hud');
   const quest = el('div', { id: 'quest', className: 'panel' }, hud);
-  quest.innerHTML = '<div class="act"></div><div class="shards"></div><div class="next"><span class="arrow">➤</span><span class="txt"></span></div><div class="sky"></div>';
+  quest.innerHTML = '<div class="act"></div><div class="goal"></div><div class="shards"></div><div class="next"><span class="arrow">➤</span><span class="txt"></span></div><div class="sky"></div>';
   const act = el('div', { id: 'activity', className: 'panel hidden' }, hud);
   act.innerHTML = '<div class="title"></div><div class="hint"></div><div class="prog"></div><div class="row"><div class="light"><i></i></div><span class="timer"></span></div>';
   const map = el('div', { id: 'map', className: 'modal hidden' }, document.body);
@@ -57,7 +57,8 @@ export function createQuest(o) {
   if (params.get('act')) S.act = +params.get('act');
 
   let shown = JSON.parse(JSON.stringify(S));     // the last state put on screen (the host edits S in place)
-  let activity = null, actPlace = null, actT = 0, reported = false;
+  let activity = null, actPlace = null, actT = 0, reported = false, downs = 0;
+  const hearts = () => 2 + players().length - downs;
   let cutscene = null;
   const seenTitles = new Map();
 
@@ -148,6 +149,7 @@ export function createQuest(o) {
       publish();
     } else if ((r.a === 'won' || r.a === 'skip') && S.activity && (r.aid === S.activity.id || r.a === 'skip')) {
       const a = S.activity, pl = places.byId[a.place];
+      S.lastWin = { aid: a.id, place: a.place, stage: a.stage, tpl: a.tpl, replay: !!a.replay, secs: Math.round(r.secs || 0), limit: r.limit || 180 };
       if (a.stage === 0 && !a.replay) {
         S.activity = { id: Math.random().toString(36).slice(2, 8), place: a.place, stage: 1, tpl: pl.challenge.template, seed: (Math.random() * 1e9) | 0 };
       } else {
@@ -162,7 +164,7 @@ export function createQuest(o) {
     } else if (r.a === 'hush' && S.act < 4) { S.act = 4; publish(); }
     else if (r.a === 'finale') { S.finale = true; S.act = 5; publish(); }
     else if (r.a === 'reveal') { S.revealed = true; publish(); }
-    else if (r.a === 'honoree' && S.act < 2) { S.act = 2; publish(); }
+    else if (r.a === 'honoree' && S.act < 2) { S.act = 2; S.act2At = Date.now(); S.act2Shards = S.shards.length; publish(); }
     else if (r.a === 'reset' && director) { S = { v: S.v, act: 1, shards: [], activity: null, finale: false, revealed: false }; publish(); }
   }
 
@@ -176,10 +178,23 @@ export function createQuest(o) {
     if (old.act < 5 && S.act === 5 && !S.finale) { ui.toast('Every shard of the Grand Path is home. Return to the palace for midnight ✦'); playScene('return_palace', { run: `ret:${S.v}` }); }
     if (!old.finale && S.finale && !params.get('act')) playScene('finale', { run: `fin:${S.v}` });
     if (!old.revealed && S.revealed) o.onReveal && o.onReveal();
+    if (S.lastWin && S.lastWin.aid !== old.lastWin?.aid) rewardWin(S.lastWin);
     const a = S.activity, oa = activity ? activity.meta : null;
     if (!a && activity) endActivity();
     else if (a && (!oa || oa.id !== a.id)) beginActivity(a);
     refreshBeacons();
+  }
+
+  // starlight and a results card for everyone who was there
+  function rewardWin(w) {
+    const place = places.byId[w.place];
+    if (!place || !o.progress || isMew || !near(place, 260)) return;
+    const boss = w.tpl === 'boss_purification';
+    const gained = o.progress.award(w.replay ? 5 : w.stage === 0 ? 15 : boss ? 45 : 30, w.stage === 0 ? 'game' : 'challenge');
+    const stage = w.stage === 0 ? place.game.name : place.challenge.name;
+    const nxt = w.stage === 0 && !w.replay ? `Now the challenge: ${place.challenge.name}` : S.act >= 4 && nextOnPath() ? `Next on the Grand Path: ${nextOnPath().name} (M to sail)` : 'Press M to sail to another place';
+    o.progress.results({ place, stage, seconds: w.secs, limit: w.limit, gained, next: nxt });
+    o.progress.cheer();
   }
 
   function refreshBeacons() {
@@ -216,6 +231,8 @@ export function createQuest(o) {
     actPlace = place;
     combat.targets = () => activity.targets();
     combat.onHit = (id) => ctx.send({ op: 'hit', id });
+    combat.onDimmed = () => emit({ k: 'aop', aid: a.id, op: { op: 'down' } });
+    downs = 0;
     combat.reset();
     const stageName = a.stage === 0 ? place.game.name : place.challenge.name;
     hud.act.classList.remove('hidden');
@@ -280,7 +297,17 @@ export function createQuest(o) {
     else if (e.k === 'qmsg') ui.toast(e.text);
     else if (e.k === 'cut') playScene(e.id, { run: e.run, shipRider: e.shipRider, title: e.title });
     else if (e.k === 'cskip') cinema.vote(e.run, from, 1 + remotes.size);
-    else if (e.k === 'aop') { if (activity && activity.meta.id === e.aid) activity.apply(e.op, from); }
+    else if (e.k === 'aop') {
+      if (!activity || activity.meta.id !== e.aid) return;
+      if (e.op?.op === 'down') {
+        // every knockdown costs the party a heart; when they run out, the light is lost
+        downs++;
+        ui.toast(`${nameOf(from)}'s light went out! ${Math.max(0, hearts())} ♥ left`);
+        if (hearts() < 0 && auth() && !reported) { reported = true; request('fail', { aid: e.aid, place: actPlace.id }); }
+        return;
+      }
+      activity.apply(e.op, from);
+    }
     else if (e.k === 'ship') ships.start(e.trip);
     else if (e.k === 'mew') {
       if (MEW_ACTIONS.includes(e.a)) { if (from !== myId()) mew.act(e.a, false); }
@@ -426,6 +453,23 @@ export function createQuest(o) {
   // ---- per frame ------------------------------------------------------------------
   let clockAcc = 0, honoreeSeen = false;
   const fwd = new THREE.Vector3();
+  function nearestOpen() {
+    let best = null, bd = Infinity;
+    for (const p of places.list) {
+      if (S.shards.includes(p.id)) continue;
+      const d = Math.hypot(p.at.x - controller.pos.x, p.at.z - controller.pos.z);
+      if (d < bd) { bd = d; best = p; }
+    }
+    return best;
+  }
+  function goalText() {
+    if (S.finale) return 'Midnight: the celebration!';
+    if (S.act >= 5) return clock.timelineEvent().onTheNight ? 'Gather at the palace for midnight' : 'Return to the palace for the finale';
+    if (S.activity) { const p = places.byId[S.activity.place]; return `Win ${S.activity.stage === 0 ? p.game.name : p.challenge.name} at ${p.name}`; }
+    if (S.act >= 4) { const n = nextOnPath(); const k = nightPlaces.filter((q) => S.shards.includes(q.id)).length; return n ? `Grand Path ${k + 1}/${nightPlaces.length}: free the head at ${n.name} (E)` : 'Return to the palace'; }
+    return 'Explore: find a glowing pillar, talk to its head (E) and win its game';
+  }
+
   function update(dt, t) {
     ships.update(dt, t);
     updateRide();
@@ -439,6 +483,18 @@ export function createQuest(o) {
       if (auth()) {
         const tl = clock.timelineEvent();
         if (tl.onTheNight && S.act < 4 && tl.minutes >= 21 * 60 + 10 && tl.minutes < 24 * 60) hostRequest(myId(), { a: 'hush' });
+        // other days the story moves on with play: the Hush falls a few minutes after her
+        // surprise (or once she has won a shard), or after three shards if she is not here
+        if (!tl.onTheNight && S.act < 4 && !S.activity && !cutscene) {
+          const since = S.act === 2 && S.act2At ? Date.now() - S.act2At : 0;
+          if ((S.act === 2 && (since > 240000 || S.shards.length > (S.act2Shards ?? 0))) || (S.act === 1 && S.shards.length >= 3)) hostRequest(myId(), { a: 'hush' });
+        }
+        // midnight on the night always brings the finale; otherwise it begins once the
+        // Grand Path is done and someone stands at the palace
+        if (!S.finale && !cutscene) {
+          const atPalace = players().some((q) => q.pos.distanceTo(places.spotOf(places.byId.B01)) < 180);
+          if ((tl.onTheNight && o.celebrating()) || (S.act >= 5 && !tl.onTheNight && atPalace)) hostRequest(myId(), { a: 'finale' });
+        }
         const honoreeHere = profile.honoree || [...remotes.values()].some((r) => r.profile.honoree);
         if (honoreeHere && !honoreeSeen) { honoreeSeen = true; hostRequest(myId(), { a: 'honoree' }); }
       }
@@ -450,10 +506,13 @@ export function createQuest(o) {
       const spot = places.spotOf(actPlace);
       combat.enabled = activity.combat && !isMew && controller.pos.distanceTo(spot) < 160;
       activity.update(dt, actT);
-      if (!reported && activity.won) { reported = true; request('won', { aid: activity.meta.id, place: actPlace.id }); }
+      if (!reported && activity.won) { reported = true; request('won', { aid: activity.meta.id, place: actPlace.id, secs: actT, limit: activity.limit }); }
       else if (!reported && (activity.failed || actT > activity.limit)) { reported = true; request('fail', { aid: activity.meta.id, place: actPlace.id }); }
+    }
+    // (a win or a loss may have just ended the game: the host applies it at once)
+    if (activity && !cutscene) {
       hud.act.querySelector('.prog').textContent = activity.progress();
-      hud.act.querySelector('.timer').textContent = `${Math.max(0, Math.ceil(activity.limit - actT))} s`;
+      hud.act.querySelector('.timer').textContent = `${activity.combat ? '♥'.repeat(Math.max(0, hearts())) + ' · ' : ''}${Math.max(0, Math.ceil(activity.limit - actT))} s`;
       hud.act.querySelector('.light i').style.width = `${combat.light}%`;
       hud.act.classList.toggle('dimmed', combat.dimmed > 0);
     }
@@ -477,7 +536,8 @@ export function createQuest(o) {
     const actName = S.finale || S.act >= 5 ? (acts[5]?.name || 'Midnight') : acts[Math.min(S.act, 4)]?.name;
     hud.quest.querySelector('.act').textContent = actName;
     hud.quest.querySelector('.shards').textContent = `✦ ${S.shards.length} / ${places.list.length} star shards`;
-    const target = S.act >= 5 ? places.byId.B01 : S.activity ? places.byId[S.activity.place] : S.act >= 4 ? nextOnPath() : null;
+    const target = S.act >= 5 ? places.byId.B01 : S.activity ? places.byId[S.activity.place] : S.act >= 4 ? nextOnPath() : nearestOpen();
+    hud.quest.querySelector('.goal').textContent = goalText();
     const nx = hud.quest.querySelector('.next');
     if (target) {
       const ts = target.spot || target.at;
@@ -510,6 +570,7 @@ export function createQuest(o) {
   return {
     update, onKey, onTap, prompt, herView, nameOf, request, openMap, sailTo, playScene, sharedScene,
     get state() { return S; },
+    get activity() { return activity; },
     get cutscene() { return cutscene; },
     get busy() { return !!activity || !!cutscene || riding; },
     get riding() { return riding; },

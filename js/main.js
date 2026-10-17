@@ -24,13 +24,14 @@ import { createStardustHunt, createWishLanterns } from './minigames.js';
 import { createCelebration, playWelcome } from './celebration.js';
 import { Net } from './net.js';
 import { Voice } from './voice.js';
-import { loadProfile, openLobby } from './lobby.js';
+import { loadProfile, openLobby, saveProfile } from './lobby.js';
 import { createClock } from './game/clock.js';
 import { preparePlaces, createPlaceVisuals, setSpotObstacles } from './game/places.js';
 import { createShips } from './game/ship.js';
 import { createCombat } from './game/combat.js';
 import { createMew } from './game/mew.js';
 import { createQuest } from './game/quest.js';
+import { createProgress } from './game/progress.js';
 
 // the game schema: places, cast, creatures, templates, story and clock (design/game-schema)
 const DATA = await fetch('data/game-data.json').then((r) => r.json());
@@ -350,6 +351,7 @@ function startGame(p) {
 
   // ---- the quest, the Mew, weapons and the sky ship (js/game) ----
   const combat = createCombat(scene, camera, DATA);
+  const progress = createProgress({ data: DATA, scene, combat, ui, profile: p, net, remotes, saveProfile });
   combat.onDimmed = () => ui.toast('Your light went out… it comes back in a moment ✦');
   const mew = createMew(scene, DATA, {
     send: (e) => quest && quest.mewSend(e),
@@ -358,7 +360,7 @@ function startGame(p) {
     blobHit: (to) => quest && quest.blobHit(to),
   });
   quest = createQuest({
-    data: DATA, places, visuals: placeVisuals, ships, combat, mew, clock: gameClock, net, controller, camera, profile: p, ui, remotes, scene, gate,
+    data: DATA, places, visuals: placeVisuals, ships, combat, mew, clock: gameClock, net, controller, camera, profile: p, ui, remotes, scene, gate, progress,
     celebrating: () => celebration.active,
     onReveal: () => playReveal(),
   });
@@ -396,13 +398,17 @@ function startGame(p) {
   }
   if (quest.revealed) { mew.hidden = true; for (const r of remotes.values()) if (r.profile.mew) r.avatar.root.visible = true; }
 
-  game = { controller, me, travel, remotes, voice, voicePositions, net, hunt, cutscene: null, nearShrine: false, sendAcc: 0, quest, mew, combat, reveal: null };
+  game = { controller, me, travel, remotes, voice, voicePositions, net, hunt, cutscene: null, nearShrine: false, sendAcc: 0, quest, mew, combat, progress, reveal: null };
 
   // the arrival ride through the waterfall gate; then her welcome, and the Mew finds her
   const welcome = () => {
-    game.cutscene = playWelcome({ camera, castle, celebration, controller, target: controller.pos.clone(), ui, onDone: () => { game.cutscene = null; quest.sharedScene('mew_bond'); } });
+    game.cutscene = playWelcome({ camera, castle, celebration, controller, target: controller.pos.clone(), ui, onDone: () => { game.cutscene = null; quest.sharedScene('mew_bond'); setup(); } });
   };
-  if (!p.mew) quest.playScene('arrival', { onEnd: p.honoree ? welcome : null });
+  // then how to play, and a companion to choose
+  const setup = () => progress.howTo(() => progress.pickPet());
+  progress.bind({ mePos: () => controller.pos });
+  if (!p.mew) quest.playScene('arrival', { onEnd: p.honoree ? welcome : setup });
+  else setup();
 }
 
 // ------------------------------------------------------------------- loop --
@@ -461,6 +467,7 @@ function frame() {
     const flyingMew = g.me.profile?.mew && !g.quest.revealed;
     if (!flyingMew) g.controller.update(dt);
     g.quest.update(dt, t);
+    g.progress.update(dt, t, { pos: g.controller.pos, facing: g.controller.facing });
     if (g.reveal) g.reveal.update(dt);
     // the Mew: steered by the owner on their screen, followed everywhere else
     const ownerRemote = [...g.remotes.values()].find((r) => r.profile.mew);

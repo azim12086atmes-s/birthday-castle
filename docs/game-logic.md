@@ -24,6 +24,14 @@ gold for the next Grand Path stop, pink while a game runs there, mint once freed
 **M** (or ⛵) opens the map. The sky ship lifts you onto its deck and sails there, first
 person. After the Hush the whole party boards together.
 
+## Playing it (`js/game/progress.js`)
+
+- First visit: a how-to-play card, then a companion to pick from the 8 schema pets (eyeless; it follows you on every screen).
+- The quest panel always names the current goal: explore and win games before the Hush, the next Grand Path stop after it, the palace at the end. Before the Hush its arrow points to the nearest place not yet freed.
+- Every win earns starlight (game 15, challenge 30, boss 45, replay 5) and levels: a steadier aim and a faster recovering light. A results card shows the time, stars and what's next.
+- In fights the party has hearts (2 + players). Each time someone's light goes out one is lost; at none the game is lost and the head can be asked again.
+- The story moves on with play: on other days the Hush falls 4 minutes after she arrives (or when she wins a shard), or after 3 shards if she isn't there; on the night at 21:10. The finale starts at midnight on the night, or on other days as soon as the Grand Path is done and someone is at the palace.
+
 ## Cinematic scenes (`js/game/cinema.js`)
 
 All 17 schema cutscenes play as live camera moves in the world (letterbox, subtitles, a soft
