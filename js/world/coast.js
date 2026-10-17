@@ -68,10 +68,10 @@ function rockGrade(m) {
         float m2 = mNoise(sw * vec2(0.05, 0.12) + 7.0) * 0.6 + mNoise(sw * vec2(0.14, 0.33) + 1.0) * 0.4;
         vec3 pc = diffuseColor.rgb;
         float grass = smoothstep(0.72, 0.9, vMUp) * smoothstep(0.015, 0.06, pc.g - max(pc.r, pc.b * 0.95)) * (1.0 - rg);
-        vec3 sunG = pc * vec3(1.14, 1.08, 0.78), coolG = pc * vec3(0.8, 0.94, 1.06);
+        vec3 sunG = pc * vec3(1.07, 1.04, 0.88), coolG = pc * vec3(0.8, 0.94, 1.06);
         vec3 gc = mix(coolG, sunG, smoothstep(0.28, 0.72, m1));
         gc *= mix(1.0, 0.84 + 0.3 * m2, 1.0 - smoothstep(250.0, 1400.0, camD));
-        diffuseColor.rgb = mix(diffuseColor.rgb, gc, grass * 0.9);
+        diffuseColor.rgb = mix(diffuseColor.rgb, gc, grass * 0.75);
         float bank = smoothstep(0.9, 0.78, vMUp) * smoothstep(0.55, 0.7, vMUp) * (1.0 - rg) * smoothstep(3.0, 12.0, vMWorld.y);
         diffuseColor.rgb = mix(diffuseColor.rgb, pc * vec3(1.08, 0.88, 0.74), bank * 0.55);
       }`).replace('#include <emissivemap_fragment>', `#include <emissivemap_fragment>
