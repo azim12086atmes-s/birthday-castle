@@ -13,6 +13,7 @@ import { createEffects } from './world/effects.js';
 import { createAtmosphere } from './world/atmosphere.js';
 import { createWorldFill } from './world/fill.js';
 import { createGate } from './world/gate.js';
+import { createPaths } from './world/paths.js';
 import { SPAWN, MAIN, groundAt } from './world/layout.js';
 import { MEADOW_TIME } from './world/materials.js';
 const SPAWN_Y = groundAt(SPAWN.x, SPAWN.z) ?? MAIN.y;
@@ -141,6 +142,7 @@ const ships = createShips(scene);
 const worldFill = createWorldFill(scene, quality);
 setSpotObstacles(worldFill.footprints);
 const gate = createGate(scene);
+const paths = createPaths(scene, quality);
 
 // --------------------------------------------------------------------- UI --
 const ui = {
@@ -432,6 +434,7 @@ function frame() {
     const wu = coast.sea.material.uniforms; wu.uFogNear.value = scene.fog.near; wu.uFogFar.value = scene.fog.far;
     worldFill.fog(scene.fog.near, scene.fog.far); gate.fog(scene.fog.near, scene.fog.far);
     gate.update(dt, t, camera.position);
+    paths.update();
   }
   islands.update(t);
   castle.update(t, dt, camera);

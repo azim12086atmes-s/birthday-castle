@@ -11,6 +11,7 @@ import { nightGrade, meadowGrade } from './materials.js';
 import { grassTexture, rng } from './textures.js';
 import { S, MAIN, TERRAIN_GRID, terrainHeight, groundHSL, forestAt, lakeDistance } from './layout.js';
 import { MOOD, FOG_COLOR, SUN_DIR, MOON_DIR } from './sky.js';
+import { onPath, whenPaths } from './paths.js';
 
 const G = TERRAIN_GRID;
 const CHUNK = 384, CN = 32;                // fine tiles: 32 cells of 12 m
@@ -219,7 +220,7 @@ function forests(scene, preset) {
     for (let z = z0; z < z0 + T; z += step) for (let x = x0; x < x0 + T; x += step) {
       const px = x + r() * step, pz = z + r() * step;
       const h = terrainHeight(MAIN, px, pz), f = forestAt(px, pz, h) * grove(px, pz);
-      if (f > 0 && r() < f * 1.8) pts.push([px, h, pz, r(), r(), r(), f]);
+      if (f > 0 && r() < f * 1.8 && !onPath(px, pz)) pts.push([px, h, pz, r(), r(), r(), f]);
     }
     if (!pts.length) return null;
     // conifers take over up the slopes; broadleaf trees keep the valleys
@@ -245,6 +246,8 @@ function forests(scene, preset) {
     scene.add(group);
     return group;
   }
+  // once the roads are known, regrow the tiles already built so no tree stands on a road
+  whenPaths(() => { for (const t of tiles.values()) if (t) { scene.remove(t); t.traverse((o) => o.geometry && o.geometry !== geo && o.geometry !== coneGeo && o.geometry.dispose()); } tiles.clear(); });
   return {
     update(cam) {
       const ci = Math.floor(cam.x / T), cj = Math.floor(cam.z / T), n = Math.ceil(range / T) + 1;
@@ -275,6 +278,7 @@ export function createCoast(scene, preset) {
   scene.add(group);
   const woods = forests(scene, preset);
   let lastKey = '';
+  whenPaths(() => { lastKey = ''; });
   return {
     sea,
     update(t, camera) {
