@@ -1,0 +1,232 @@
+[
+{
+"m": "CliffWall_palace_mesa",
+"place": "cliffs",
+"x": 25.35,
+"y": 0.0,
+"z": 266.82,
+"rotY": 0.0,
+"scale": 1.0,
+"new": true
+},
+{
+"m": "CliffWall_plateau_B25",
+"place": "cliffs",
+"x": -1155.0,
+"y": 0.0,
+"z": -1485.0,
+"rotY": 0.0,
+"scale": 1.0,
+"new": true
+},
+{
+"m": "CliffWall_plateau_B32",
+"place": "cliffs",
+"x": -1826.0,
+"y": 0.0,
+"z": 608.0,
+"rotY": 0.0,
+"scale": 1.0,
+"new": true
+},
+{
+"m": "CliffWall_plateau_north",
+"place": "cliffs",
+"x": 60.0,
+"y": 0.0,
+"z": -1700.0,
+"rotY": 0.0,
+"scale": 1.0,
+"new": true
+},
+{
+"m": "CliffWall_plateau_northeast",
+"place": "cliffs",
+"x": 1680.0,
+"y": 0.0,
+"z": -1470.0,
+"rotY": 0.0,
+"scale": 1.0,
+"new": true
+},
+{
+"m": "CliffWall_plateau_east",
+"place": "cliffs",
+"x": 1840.0,
+"y": 0.0,
+"z": 160.0,
+"rotY": 0.0,
+"scale": 1.0,
+"new": true
+},
+{
+"m": "CliffWall_plateau_west_n",
+"place": "cliffs",
+"x": -1880.0,
+"y": 0.0,
+"z": -520.0,
+"rotY": 0.0,
+"scale": 1.0,
+"new": true
+},
+{
+"m": "CliffWall_plateau_southeast",
+"place": "cliffs",
+"x": 2180.0,
+"y": 0.0,
+"z": 1560.0,
+"rotY": 0.0,
+"scale": 1.0,
+"new": true
+},
+{
+"m": "CliffWall_plateau_southwest",
+"place": "cliffs",
+"x": -2140.0,
+"y": 0.0,
+"z": 1700.0,
+"rotY": 0.0,
+"scale": 1.0,
+"new": true
+},
+{
+"m": "CliffWall_stack_00",
+"place": "cliffs",
+"x": -699.5,
+"y": 0.0,
+"z": -1750.01,
+"rotY": 0.0,
+"scale": 1.0,
+"new": true
+},
+{
+"m": "CliffWall_stack_01",
+"place": "cliffs",
+"x": 1250.45,
+"y": 0.0,
+"z": -1700.01,
+"rotY": 0.0,
+"scale": 1.0,
+"new": true
+},
+{
+"m": "CliffWall_stack_02",
+"place": "cliffs",
+"x": 2500.51,
+"y": 0.0,
+"z": -700.01,
+"rotY": 0.0,
+"scale": 1.0,
+"new": true
+},
+{
+"m": "CliffWall_stack_03",
+"place": "cliffs",
+"x": -1749.58,
+"y": 0.0,
+"z": -1250.01,
+"rotY": 0.0,
+"scale": 1.0,
+"new": true
+},
+{
+"m": "CliffWall_stack_04",
+"place": "cliffs",
+"x": 2550.46,
+"y": 0.0,
+"z": 899.99,
+"rotY": 0.0,
+"scale": 1.0,
+"new": true
+},
+{
+"m": "CliffWall_stack_05",
+"place": "cliffs",
+"x": -2549.54,
+"y": 0.0,
+"z": 299.99,
+"rotY": 0.0,
+"scale": 1.0,
+"new": true
+},
+{
+"m": "CliffWall_stack_06",
+"place": "cliffs",
+"x": -1249.57,
+"y": 0.0,
+"z": 2849.99,
+"rotY": 0.0,
+"scale": 1.0,
+"new": true
+},
+{
+"m": "CliffWall_stack_07",
+"place": "cliffs",
+"x": 1250.47,
+"y": 0.0,
+"z": 2999.99,
+"rotY": 0.0,
+"scale": 1.0,
+"new": true
+},
+{
+"m": "CliffWall_stack_08",
+"place": "cliffs",
+"x": -2699.43,
+"y": 0.0,
+"z": 2399.99,
+"rotY": 0.0,
+"scale": 1.0,
+"new": true
+},
+{
+"m": "CliffWall_stack_09",
+"place": "cliffs",
+"x": 200.39,
+"y": 0.0,
+"z": -2350.01,
+"rotY": 0.0,
+"scale": 1.0,
+"new": true
+},
+{
+"m": "CliffWall_stack_10",
+"place": "cliffs",
+"x": -2349.55,
+"y": 0.0,
+"z": -1500.01,
+"rotY": 0.0,
+"scale": 1.0,
+"new": true
+},
+{
+"m": "CliffWall_stack_11",
+"place": "cliffs",
+"x": 2300.4,
+"y": 0.0,
+"z": -1900.01,
+"rotY": 0.0,
+"scale": 1.0,
+"new": true
+},
+{
+"m": "CliffWall_stack_12",
+"place": "cliffs",
+"x": -2399.61,
+"y": 0.0,
+"z": 1099.99,
+"rotY": 0.0,
+"scale": 1.0,
+"new": true
+},
+{
+"m": "CliffWall_stack_13",
+"place": "cliffs",
+"x": 2451.06,
+"y": 0.0,
+"z": -200.02,
+"rotY": 0.0,
+"scale": 1.0,
+"new": true
+}
+]

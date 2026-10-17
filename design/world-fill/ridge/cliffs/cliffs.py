@@ -61,7 +61,7 @@ def cliff(t, top, bot, lc):
     return bot + (top - bot) * f
 h = hw.copy()
 # palace mesa top (the game sets it exactly; this keeps colours and AO right) and its face
-lc = 55 + 25 * (vn(X, Z, 0.02, 5) + 1)
+lc = 32 + 8 * (vn(X, Z, 0.02, 5) + 1)
 h = np.where(dP <= 0, topP, h)
 face = (dP > 0) & (dP < lc)
 h = np.where(face, cliff(dP, topP, base, lc), h)
@@ -76,7 +76,7 @@ h = np.where(t_out >= 0, np.minimum(h, cap), h)
 outer_face = (t_out > -lco) & (t_out < 0)
 h = np.where(outer_face, np.minimum(hw, cliff(-t_out, np.clip(hw, 30, DECK - 8), base, lco)), h)
 # satellite plateaus at deck level, sheer sides
-lcm = 40 + 15 * (vn(X, Z, 0.03, 7) + 1)
+lcm = 30 + 8 * (vn(X, Z, 0.03, 7) + 1)
 h = np.where((dM > 0) & (dM < 190) & (dP > 0), np.minimum(h, np.where(dM < lcm + 120, base, cliff(190 - dM, np.maximum(hw, 30), base, 70))), h)
 h = np.where(dM <= 0, DECK - 0.5, h)
 mface = (dM > 0) & (dM < lcm)
@@ -86,7 +86,7 @@ for s in STACKS:
     q = np.hypot(X - s['x'], Z - s['z']); a = np.arctan2(Z - s['z'], X - s['x'])
     rr = s['r'] * (1 + 0.12 * np.sin(4 * a + s['x']) + 0.07 * np.sin(9 * a + s['z']))
     top = s['h'] + 6 * vn(X, Z, 0.03, 8)
-    h = np.where(q <= rr, top, np.where(q < rr + 35, np.maximum(h, cliff(q - rr, top, base, 35)), h))
+    h = np.where(q <= rr, top, np.where(q < rr + 30, np.maximum(h, cliff(q - rr, top, base, 30)), h))
 # --- bridges: palace mesa to each plateau, then roads that now cross water
 def mesa_edge_point(x, z, towards):
     """walk from (x, z) toward `towards` until leaving the palace mesa; return the lip point"""
