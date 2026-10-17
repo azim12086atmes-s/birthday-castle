@@ -25,10 +25,43 @@ const RIM = /* glsl */`
   #include <opaque_fragment>
 `;
 
+// Macro variation (look pass, Oct 17): a slow world-space wash of warmer and cooler tone plus
+// faint rain streaks down the walls, layered over every tiled texture, so the palace's repeated
+// panels stop reading as one stamp copied across a kilometre of wall.
+const MACRO_VERTEX = /* glsl */`
+  #include <project_vertex>
+  vec4 macroW = vec4(transformed, 1.0);
+  #ifdef USE_INSTANCING
+    macroW = instanceMatrix * macroW;
+  #endif
+  vMacroW = (modelMatrix * macroW).xyz;
+`;
+const MACRO_PARS = /* glsl */`
+  varying vec3 vMacroW;
+  float mcH(vec2 p){ vec3 p3 = fract(vec3(p.xyx) * .1031); p3 += dot(p3, p3.yzx + 33.33); return fract((p3.x + p3.y) * p3.z); }
+  float mcN(vec2 p){ vec2 i = floor(p), f = fract(p); f = f * f * (3. - 2. * f);
+    return mix(mix(mcH(i), mcH(i + vec2(1., 0.)), f.x), mix(mcH(i + vec2(0., 1.)), mcH(i + vec2(1., 1.)), f.x), f.y); }
+`;
+const MACRO_FRAGMENT = /* glsl */`
+  {
+    vec3 w = vMacroW;
+    float mac = mcN(w.xz * 0.018 + w.y * 0.011) * 0.6 + mcN(w.xz * 0.09 - w.y * 0.05 + 5.0) * 0.4;
+    diffuseColor.rgb *= mix(vec3(0.88, 0.88, 0.93), vec3(1.05, 1.02, 0.97), mac);
+    float streak = mcN(vec2((w.x + w.z) * 0.55, w.y * 0.035)) * mcN(vec2((w.x - w.z) * 0.13, w.y * 0.01 + 3.0));
+    diffuseColor.rgb *= 1.0 - 0.1 * smoothstep(0.25, 0.6, streak);
+  }
+`;
+
 export function toon(color, opts = {}) {
   const m = new THREE.MeshToonMaterial({ color, gradientMap: toonRamp(), ...opts });
-  m.onBeforeCompile = (sh) => { sh.fragmentShader = sh.fragmentShader.replace('#include <opaque_fragment>', RIM); };
-  m.customProgramCacheKey = () => 'toon-rim';
+  m.onBeforeCompile = (sh) => {
+    sh.vertexShader = sh.vertexShader.replace('#include <common>', '#include <common>\nvarying vec3 vMacroW;')
+      .replace('#include <project_vertex>', MACRO_VERTEX);
+    sh.fragmentShader = sh.fragmentShader.replace('#include <common>', '#include <common>\n' + MACRO_PARS)
+      .replace('#include <map_fragment>', '#include <map_fragment>\n' + MACRO_FRAGMENT)
+      .replace('#include <opaque_fragment>', RIM);
+  };
+  m.customProgramCacheKey = () => 'toon-rim-macro';
   return m;
 }
 
