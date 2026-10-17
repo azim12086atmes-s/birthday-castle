@@ -107,12 +107,15 @@ The ground is the study thread's crescent terrain (`data/world/crescent-h.bin`, 
 about 20 m a cell, and its painted colour map), with Lantern Lake, the palace terraces, the
 causeway and the district pads laid on top. The 1,521 placed models of the world fill
 (`data/world/placements.json`) draw as one InstancedMesh per model. Each model has a near
-copy (about a quarter of the layout triangles, 1024 px texture, `data/world/near/`) and a
-far copy (about 4%, 256 px, `data/world/far/`); copies load as you come within range
+copy (about a quarter of the layout triangles, 1024 px texture, `data/world/near/`) and,
+further out, a picture card (`data/world/cards/`, 8 views round the model; the shader shows
+the one facing the camera, half size on Low and Medium); both load as you come within range
 (landmarks 450 m / 7 km, buildings 300 m / 3.5 km, props 140 m / 1.2 km, shorter on Low).
 They are made from the layout GLBs with a position-welded simplify; the script is in the
 thread's notes. Players can walk through the placed models for now.
 - Her name, the friends list, the quiz questions about her, and the reveal line are in
   `js/config.js`.
-- The real arrival (docks, waterfall gate, aerial reveal) and the finale's floating
-  theatre are not built yet; the existing welcome cutscene and celebration stand in.
+- The white waterfall gate (`js/world/gate.js`, kit in `data/world/gate/`) stands under the
+  arch in the south gap; its veil parts when someone comes within 400 m on the gate axis or
+  the arrival scene reaches the falls. The docks and the finale's floating theatre are not
+  built yet.

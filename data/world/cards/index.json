@@ -1,0 +1,777 @@
+{
+ "views": "strip of 8 frames of 256 px; frame k is seen from direction (x, z) = (sin 45k, cos 45k) in the model frame; pick k = round(atan2(dx, dz) / 45 deg) mod 8, dx dz = camera minus model rotated by -rotY",
+ "units": "frame, height and radius are in GLB units: multiply by the placement scale. The card is a square of side frame; its centre sits base_from_centre * frame above the model base.",
+ "elevation_deg": 8,
+ "cards": {
+  "1000054986_jpg": {
+   "frame": 1.99893,
+   "base_from_centre": 0.48,
+   "height": 1.92204,
+   "radius": 0.55653,
+   "elevation_deg": 8
+  },
+  "A_3D_image_a_a_tradit": {
+   "frame": 2.56905,
+   "base_from_centre": 0.48,
+   "height": 1.90408,
+   "radius": 1.23512,
+   "elevation_deg": 8
+  },
+  "A_big_menhir_with_anc": {
+   "frame": 2.47724,
+   "base_from_centre": 0.48,
+   "height": 1.93928,
+   "radius": 1.19098,
+   "elevation_deg": 8
+  },
+  "A_colossal_floating_c": {
+   "frame": 2.78807,
+   "base_from_centre": 0.48,
+   "height": 1.89779,
+   "radius": 1.34042,
+   "elevation_deg": 8
+  },
+  "A_garden_of_cryst": {
+   "frame": 2.85263,
+   "base_from_centre": 0.48,
+   "height": 1.27625,
+   "radius": 1.37146,
+   "elevation_deg": 8
+  },
+  "A_large_arch_made_fr": {
+   "frame": 2.2554,
+   "base_from_centre": 0.48,
+   "height": 1.99624,
+   "radius": 1.08433,
+   "elevation_deg": 8
+  },
+  "A_majestic_tiered_str": {
+   "frame": 2.46162,
+   "base_from_centre": 0.48,
+   "height": 1.90272,
+   "radius": 1.18347,
+   "elevation_deg": 8
+  },
+  "A_modular_medieval_ho": {
+   "frame": 2.93876,
+   "base_from_centre": 0.48,
+   "height": 1.66772,
+   "radius": 1.41287,
+   "elevation_deg": 8
+  },
+  "A_parisian_building": {
+   "frame": 1.99705,
+   "base_from_centre": 0.48,
+   "height": 1.92024,
+   "radius": 0.68326,
+   "elevation_deg": 8
+  },
+  "A_sandstone_stair_fli": {
+   "frame": 2.37774,
+   "base_from_centre": 0.48,
+   "height": 1.05319,
+   "radius": 1.14314,
+   "elevation_deg": 8
+  },
+  "A_sprawling_sandstone": {
+   "frame": 2.72081,
+   "base_from_centre": 0.48,
+   "height": 1.90415,
+   "radius": 1.30808,
+   "elevation_deg": 8
+  },
+  "A_very_large_ancient": {
+   "frame": 2.79907,
+   "base_from_centre": 0.48,
+   "height": 1.11482,
+   "radius": 1.34571,
+   "elevation_deg": 8
+  },
+  "Ancient_Archway": {
+   "frame": 2.17549,
+   "base_from_centre": 0.48,
+   "height": 1.85615,
+   "radius": 1.04591,
+   "elevation_deg": 8
+  },
+  "Ancient_Gateway_Ruins": {
+   "frame": 2.71925,
+   "base_from_centre": 0.48,
+   "height": 1.27489,
+   "radius": 1.30733,
+   "elevation_deg": 8
+  },
+  "Ancient_Obelisk": {
+   "frame": 2.08105,
+   "base_from_centre": 0.48,
+   "height": 2.00101,
+   "radius": 0.89617,
+   "elevation_deg": 8
+  },
+  "Ancient_Stone_Amphith": {
+   "frame": 2.80421,
+   "base_from_centre": 0.48,
+   "height": 0.47665,
+   "radius": 1.34818,
+   "elevation_deg": 8
+  },
+  "Ancient_Stone_Circle": {
+   "frame": 2.77587,
+   "base_from_centre": 0.48,
+   "height": 0.76846,
+   "radius": 1.33455,
+   "elevation_deg": 8
+  },
+  "Ancient_Stone_Relic": {
+   "frame": 1.98074,
+   "base_from_centre": 0.48,
+   "height": 1.90456,
+   "radius": 0.57564,
+   "elevation_deg": 8
+  },
+  "Ancient_Stone_Structu": {
+   "frame": 2.44584,
+   "base_from_centre": 0.48,
+   "height": 1.44012,
+   "radius": 1.17589,
+   "elevation_deg": 8
+  },
+  "Ancient_Stone_Temples": {
+   "frame": 2.7887,
+   "base_from_centre": 0.48,
+   "height": 1.11837,
+   "radius": 1.34072,
+   "elevation_deg": 8
+  },
+  "Basalt_Arch": {
+   "frame": 2.51708,
+   "base_from_centre": 0.48,
+   "height": 0.68824,
+   "radius": 1.21013,
+   "elevation_deg": 8
+  },
+  "Bases_Pedestals_Minis": {
+   "frame": 2.75472,
+   "base_from_centre": 0.48,
+   "height": 0.53164,
+   "radius": 1.32438,
+   "elevation_deg": 8
+  },
+  "Cave_Entrance": {
+   "frame": 2.70032,
+   "base_from_centre": 0.48,
+   "height": 0.86603,
+   "radius": 1.29823,
+   "elevation_deg": 8
+  },
+  "Cave_Structures_1": {
+   "frame": 2.71134,
+   "base_from_centre": 0.48,
+   "height": 1.30364,
+   "radius": 1.30353,
+   "elevation_deg": 8
+  },
+  "Celestial_Armillary": {
+   "frame": 2.3786,
+   "base_from_centre": 0.48,
+   "height": 1.8992,
+   "radius": 1.14356,
+   "elevation_deg": 8
+  },
+  "Cementery_Pillar_Vari": {
+   "frame": 2.01251,
+   "base_from_centre": 0.48,
+   "height": 1.9351,
+   "radius": 0.60325,
+   "elevation_deg": 8
+  },
+  "Cliff_Formations": {
+   "frame": 2.07597,
+   "base_from_centre": 0.48,
+   "height": 0.86435,
+   "radius": 0.99806,
+   "elevation_deg": 8
+  },
+  "Colorful_Courtyard_Vi": {
+   "frame": 2.93793,
+   "base_from_centre": 0.48,
+   "height": 1.44799,
+   "radius": 1.41247,
+   "elevation_deg": 8
+  },
+  "Copper_Cloud_Bonsai": {
+   "frame": 1.96988,
+   "base_from_centre": 0.48,
+   "height": 1.89412,
+   "radius": 0.57721,
+   "elevation_deg": 8
+  },
+  "Crystal_Peaks_PBR": {
+   "frame": 2.86263,
+   "base_from_centre": 0.48,
+   "height": 1.79537,
+   "radius": 1.37626,
+   "elevation_deg": 8
+  },
+  "Dark_oriental_gateway": {
+   "frame": 2.2259,
+   "base_from_centre": 0.48,
+   "height": 1.88211,
+   "radius": 1.07015,
+   "elevation_deg": 8
+  },
+  "Desert_Adobe_Courtyar": {
+   "frame": 2.38841,
+   "base_from_centre": 0.48,
+   "height": 0.94342,
+   "radius": 1.14828,
+   "elevation_deg": 8
+  },
+  "Desert_Dwelling": {
+   "frame": 2.56685,
+   "base_from_centre": 0.48,
+   "height": 1.38387,
+   "radius": 1.23406,
+   "elevation_deg": 8
+  },
+  "Desert_Fortress": {
+   "frame": 2.784,
+   "base_from_centre": 0.48,
+   "height": 0.54598,
+   "radius": 1.33846,
+   "elevation_deg": 8
+  },
+  "Desert_Monolith": {
+   "frame": 2.79776,
+   "base_from_centre": 0.48,
+   "height": 0.65132,
+   "radius": 1.34508,
+   "elevation_deg": 8
+  },
+  "Desert_Mushroom_Rock": {
+   "frame": 2.66135,
+   "base_from_centre": 0.48,
+   "height": 1.8998,
+   "radius": 1.27949,
+   "elevation_deg": 8
+  },
+  "Desert_Oasis_Palace": {
+   "frame": 2.55833,
+   "base_from_centre": 0.48,
+   "height": 1.67484,
+   "radius": 1.22997,
+   "elevation_deg": 8
+  },
+  "Desert_Rock_Formation": {
+   "frame": 2.74639,
+   "base_from_centre": 0.48,
+   "height": 0.67768,
+   "radius": 1.32038,
+   "elevation_deg": 8
+  },
+  "Desert_Ruins": {
+   "frame": 2.80298,
+   "base_from_centre": 0.48,
+   "height": 1.46554,
+   "radius": 1.34759,
+   "elevation_deg": 8
+  },
+  "Desert_Sandstone_Arch": {
+   "frame": 2.48248,
+   "base_from_centre": 0.48,
+   "height": 1.11421,
+   "radius": 1.1935,
+   "elevation_deg": 8
+  },
+  "Domed_Palace_Model": {
+   "frame": 2.79879,
+   "base_from_centre": 0.48,
+   "height": 0.97285,
+   "radius": 1.34557,
+   "elevation_deg": 8
+  },
+  "Elephant_Rock_Formati": {
+   "frame": 2.55159,
+   "base_from_centre": 0.48,
+   "height": 1.20317,
+   "radius": 1.22673,
+   "elevation_deg": 8
+  },
+  "Elven_tower_base_Circ": {
+   "frame": 1.99163,
+   "base_from_centre": 0.48,
+   "height": 1.90369,
+   "radius": 0.95751,
+   "elevation_deg": 8
+  },
+  "Ember_Tiled_Turret_Ho": {
+   "frame": 2.22653,
+   "base_from_centre": 0.48,
+   "height": 1.89977,
+   "radius": 1.07045,
+   "elevation_deg": 8
+  },
+  "Emberkeep_Turret": {
+   "frame": 2.70602,
+   "base_from_centre": 0.48,
+   "height": 1.89926,
+   "radius": 1.30097,
+   "elevation_deg": 8
+  },
+  "Enchanted_Forest_Thro": {
+   "frame": 2.75374,
+   "base_from_centre": 0.48,
+   "height": 1.61239,
+   "radius": 1.32391,
+   "elevation_deg": 8
+  },
+  "Enchanted_Lantern_Tre": {
+   "frame": 2.38206,
+   "base_from_centre": 0.48,
+   "height": 1.85878,
+   "radius": 1.14522,
+   "elevation_deg": 8
+  },
+  "Enchanted_Spiral_Towe": {
+   "frame": 2.04936,
+   "base_from_centre": 0.48,
+   "height": 1.97054,
+   "radius": 0.62067,
+   "elevation_deg": 8
+  },
+  "Enchanted_Thatch_Cott": {
+   "frame": 2.78478,
+   "base_from_centre": 0.48,
+   "height": 1.46235,
+   "radius": 1.33884,
+   "elevation_deg": 8
+  },
+  "England_Mystic_Ston": {
+   "frame": 2.92503,
+   "base_from_centre": 0.48,
+   "height": 0.59554,
+   "radius": 1.40627,
+   "elevation_deg": 8
+  },
+  "Fallen_Pillar": {
+   "frame": 2.28415,
+   "base_from_centre": 0.48,
+   "height": 1.57636,
+   "radius": 1.09815,
+   "elevation_deg": 8
+  },
+  "Floating_Stone_Island": {
+   "frame": 2.12861,
+   "base_from_centre": 0.48,
+   "height": 1.908,
+   "radius": 1.02337,
+   "elevation_deg": 8
+  },
+  "Floral_Wreath_of_Spri": {
+   "frame": 1.97007,
+   "base_from_centre": 0.48,
+   "height": 1.8943,
+   "radius": 0.87144,
+   "elevation_deg": 8
+  },
+  "For_Diana_This_beauti": {
+   "frame": 2.24019,
+   "base_from_centre": 0.48,
+   "height": 1.88001,
+   "radius": 1.07702,
+   "elevation_deg": 8
+  },
+  "Ghotisches_Schloss": {
+   "frame": 1.97935,
+   "base_from_centre": 0.48,
+   "height": 1.90322,
+   "radius": 0.94833,
+   "elevation_deg": 8
+  },
+  "Gothic_Cathedral": {
+   "frame": 2.06694,
+   "base_from_centre": 0.48,
+   "height": 1.98744,
+   "radius": 0.97215,
+   "elevation_deg": 8
+  },
+  "Herbal_Harvest": {
+   "frame": 2.03434,
+   "base_from_centre": 0.48,
+   "height": 1.80554,
+   "radius": 0.97805,
+   "elevation_deg": 8
+  },
+  "High_detail_fantasy": {
+   "frame": 1.9772,
+   "base_from_centre": 0.48,
+   "height": 1.90115,
+   "radius": 0.78626,
+   "elevation_deg": 8
+  },
+  "Infernal_Peak": {
+   "frame": 1.97519,
+   "base_from_centre": 0.48,
+   "height": 1.89922,
+   "radius": 0.93081,
+   "elevation_deg": 8
+  },
+  "Isle_of_the_Stone_Spi": {
+   "frame": 2.55725,
+   "base_from_centre": 0.48,
+   "height": 0.89893,
+   "radius": 1.22945,
+   "elevation_deg": 8
+  },
+  "Kalliope_House_Comple": {
+   "frame": 2.77029,
+   "base_from_centre": 0.48,
+   "height": 1.1813,
+   "radius": 1.33187,
+   "elevation_deg": 8
+  },
+  "Lantern_Tree_Palace": {
+   "frame": 2.2632,
+   "base_from_centre": 0.48,
+   "height": 1.89319,
+   "radius": 1.08808,
+   "elevation_deg": 8
+  },
+  "Leafspire_Cathedral": {
+   "frame": 2.15961,
+   "base_from_centre": 0.48,
+   "height": 1.8991,
+   "radius": 1.03827,
+   "elevation_deg": 8
+  },
+  "Luminous_Paper_Flower": {
+   "frame": 2.713,
+   "base_from_centre": 0.48,
+   "height": 1.62462,
+   "radius": 1.30433,
+   "elevation_deg": 8
+  },
+  "Majestic_Pagoda_Palac": {
+   "frame": 2.77665,
+   "base_from_centre": 0.48,
+   "height": 1.83383,
+   "radius": 1.33493,
+   "elevation_deg": 8
+  },
+  "Majestic_Rock_Formati": {
+   "frame": 2.80684,
+   "base_from_centre": 0.48,
+   "height": 1.68864,
+   "radius": 1.34944,
+   "elevation_deg": 8
+  },
+  "Marble_Pavilion": {
+   "frame": 2.35025,
+   "base_from_centre": 0.48,
+   "height": 1.91225,
+   "radius": 1.12993,
+   "elevation_deg": 8
+  },
+  "Meadow_Rocks": {
+   "frame": 2.90941,
+   "base_from_centre": 0.48,
+   "height": 0.57468,
+   "radius": 1.39876,
+   "elevation_deg": 8
+  },
+  "Medieval_Cottage": {
+   "frame": 2.4174,
+   "base_from_centre": 0.48,
+   "height": 1.9993,
+   "radius": 1.16221,
+   "elevation_deg": 8
+  },
+  "Mediterranean_Villa": {
+   "frame": 2.46077,
+   "base_from_centre": 0.48,
+   "height": 1.74297,
+   "radius": 1.18306,
+   "elevation_deg": 8
+  },
+  "Metaphor_The_Tree_of": {
+   "frame": 2.07674,
+   "base_from_centre": 0.48,
+   "height": 1.99687,
+   "radius": 0.89583,
+   "elevation_deg": 8
+  },
+  "Mossy_Monolith": {
+   "frame": 1.97824,
+   "base_from_centre": 0.48,
+   "height": 1.90215,
+   "radius": 0.59757,
+   "elevation_deg": 8
+  },
+  "Mossy_Timber_Ruins": {
+   "frame": 2.70478,
+   "base_from_centre": 0.48,
+   "height": 0.93836,
+   "radius": 1.30037,
+   "elevation_deg": 8
+  },
+  "Old_Town_Clock_Tower": {
+   "frame": 2.07841,
+   "base_from_centre": 0.48,
+   "height": 1.99848,
+   "radius": 0.85914,
+   "elevation_deg": 8
+  },
+  "Olive_Grove_Cottage": {
+   "frame": 2.33037,
+   "base_from_centre": 0.48,
+   "height": 0.63429,
+   "radius": 1.12037,
+   "elevation_deg": 8
+  },
+  "Ornate_Sandstone_Gate": {
+   "frame": 2.3722,
+   "base_from_centre": 0.48,
+   "height": 1.89807,
+   "radius": 1.14048,
+   "elevation_deg": 8
+  },
+  "Ornate_Watchtower": {
+   "frame": 2.55258,
+   "base_from_centre": 0.48,
+   "height": 1.88383,
+   "radius": 1.2272,
+   "elevation_deg": 8
+  },
+  "Pantheon": {
+   "frame": 1.35291,
+   "base_from_centre": 0.48,
+   "height": 0.69531,
+   "radius": 0.65044,
+   "elevation_deg": 8
+  },
+  "Pine_Trees_on_a_Rocky": {
+   "frame": 2.77782,
+   "base_from_centre": 0.48,
+   "height": 1.73544,
+   "radius": 1.33549,
+   "elevation_deg": 8
+  },
+  "Please_provide_an_ima": {
+   "frame": 2.77604,
+   "base_from_centre": 0.48,
+   "height": 1.61807,
+   "radius": 1.33463,
+   "elevation_deg": 8
+  },
+  "Prismatic_Peaks": {
+   "frame": 2.49442,
+   "base_from_centre": 0.48,
+   "height": 1.2006,
+   "radius": 1.19924,
+   "elevation_deg": 8
+  },
+  "Ring_Village_Diorama": {
+   "frame": 2.27711,
+   "base_from_centre": 0.48,
+   "height": 1.92934,
+   "radius": 1.09476,
+   "elevation_deg": 8
+  },
+  "Rock_Formation_Collec": {
+   "frame": 2.5027,
+   "base_from_centre": 0.48,
+   "height": 0.33496,
+   "radius": 1.20322,
+   "elevation_deg": 8
+  },
+  "Rocky_Archway": {
+   "frame": 2.48612,
+   "base_from_centre": 0.48,
+   "height": 1.40285,
+   "radius": 1.19525,
+   "elevation_deg": 8
+  },
+  "Royal_Carriage": {
+   "frame": 2.15748,
+   "base_from_centre": 0.48,
+   "height": 1.07328,
+   "radius": 1.03725,
+   "elevation_deg": 8
+  },
+  "Royal_Portal_Gate": {
+   "frame": 1.97914,
+   "base_from_centre": 0.48,
+   "height": 1.90302,
+   "radius": 0.76842,
+   "elevation_deg": 8
+  },
+  "Rubble_Pile": {
+   "frame": 2.77873,
+   "base_from_centre": 0.48,
+   "height": 0.67726,
+   "radius": 1.33593,
+   "elevation_deg": 8
+  },
+  "Sentinel_Peak": {
+   "frame": 2.07107,
+   "base_from_centre": 0.48,
+   "height": 1.99141,
+   "radius": 0.86611,
+   "elevation_deg": 8
+  },
+  "Shrine": {
+   "frame": 2.61282,
+   "base_from_centre": 0.48,
+   "height": 1.99979,
+   "radius": 1.25616,
+   "elevation_deg": 8
+  },
+  "Stone": {
+   "frame": 1.97856,
+   "base_from_centre": 0.48,
+   "height": 1.90246,
+   "radius": 0.72373,
+   "elevation_deg": 8
+  },
+  "Stone_Bridge": {
+   "frame": 2.70705,
+   "base_from_centre": 0.48,
+   "height": 0.64542,
+   "radius": 1.30147,
+   "elevation_deg": 8
+  },
+  "Stone_Fortress": {
+   "frame": 2.76022,
+   "base_from_centre": 0.48,
+   "height": 1.41939,
+   "radius": 1.32703,
+   "elevation_deg": 8
+  },
+  "Stone_Lantern": {
+   "frame": 2.0752,
+   "base_from_centre": 0.48,
+   "height": 1.99539,
+   "radius": 0.8137,
+   "elevation_deg": 8
+  },
+  "Subject_A_commemorat": {
+   "frame": 2.68732,
+   "base_from_centre": 0.48,
+   "height": 1.99284,
+   "radius": 1.29198,
+   "elevation_deg": 8
+  },
+  "Timbered_Market_House": {
+   "frame": 2.6922,
+   "base_from_centre": 0.48,
+   "height": 1.89935,
+   "radius": 1.29433,
+   "elevation_deg": 8
+  },
+  "Verdant_Cascade_Fount": {
+   "frame": 2.78512,
+   "base_from_centre": 0.48,
+   "height": 1.35499,
+   "radius": 1.339,
+   "elevation_deg": 8
+  },
+  "Verdant_Palace": {
+   "frame": 2.9075,
+   "base_from_centre": 0.48,
+   "height": 1.96994,
+   "radius": 1.39784,
+   "elevation_deg": 8
+  },
+  "Verdant_Ring_of_Stone": {
+   "frame": 2.31646,
+   "base_from_centre": 0.48,
+   "height": 1.89893,
+   "radius": 1.11368,
+   "elevation_deg": 8
+  },
+  "Vintage_Stone_Villa": {
+   "frame": 2.74835,
+   "base_from_centre": 0.48,
+   "height": 1.64206,
+   "radius": 1.32132,
+   "elevation_deg": 8
+  },
+  "Volcanic_Monolith": {
+   "frame": 2.37326,
+   "base_from_centre": 0.48,
+   "height": 1.89805,
+   "radius": 1.14099,
+   "elevation_deg": 8
+  },
+  "Whimsical_Hobbit_Dwel": {
+   "frame": 2.297,
+   "base_from_centre": 0.48,
+   "height": 1.90545,
+   "radius": 1.10433,
+   "elevation_deg": 8
+  },
+  "Whispering_Willow_of": {
+   "frame": 1.97078,
+   "base_from_centre": 0.48,
+   "height": 1.89498,
+   "radius": 0.84495,
+   "elevation_deg": 8
+  },
+  "White_Lotus": {
+   "frame": 2.91971,
+   "base_from_centre": 0.48,
+   "height": 1.38867,
+   "radius": 1.40371,
+   "elevation_deg": 8
+  },
+  "Windmill_Haven": {
+   "frame": 2.21452,
+   "base_from_centre": 0.48,
+   "height": 2.00178,
+   "radius": 1.06467,
+   "elevation_deg": 8
+  },
+  "a_large_rainbow_cryst": {
+   "frame": 2.87724,
+   "base_from_centre": 0.48,
+   "height": 1.65091,
+   "radius": 1.38329,
+   "elevation_deg": 8
+  },
+  "a_stylized_stump_base": {
+   "frame": 2.61225,
+   "base_from_centre": 0.48,
+   "height": 1.50938,
+   "radius": 1.25589,
+   "elevation_deg": 8
+  },
+  "artistic_abstract_cry": {
+   "frame": 2.78203,
+   "base_from_centre": 0.48,
+   "height": 1.99516,
+   "radius": 1.33751,
+   "elevation_deg": 8
+  },
+  "japanese_building": {
+   "frame": 2.08092,
+   "base_from_centre": 0.48,
+   "height": 2.00088,
+   "radius": 0.92826,
+   "elevation_deg": 8
+  },
+  "museum_building": {
+   "frame": 2.85513,
+   "base_from_centre": 0.48,
+   "height": 1.42299,
+   "radius": 1.37266,
+   "elevation_deg": 8
+  },
+  "untitled": {
+   "frame": 2.08,
+   "base_from_centre": 0.48,
+   "height": 2.0,
+   "radius": 0.63809,
+   "elevation_deg": 8
+  }
+ }
+}

@@ -153,7 +153,11 @@ export function createCinema(o) {
         const me = up(o.mePos(), 1.7), a = Math.atan2(me.x - P.x, me.z - P.z);
         pos.copy(me).addScaledVector(dir(a), 3).addScaledVector(dir(a + Math.PI / 2), 1.3).setY(me.y + 0.7); fov = 45; break;
       }
-      case 'pov': { const me = up(o.mePos(), 1.6); pos.copy(me).lerp(P, 0.04 * k); break; }
+      case 'pov':
+        // riding through something big (the falls): the camera passes through it
+        if (r > 40) { pos.copy(P).addScaledVector(dir(yaw), lerp(1.2, -1.2, k) * r).setY(25); look.copy(pos).addScaledVector(dir(yaw), -100).setY(30); break; }
+        { const me = up(o.mePos(), 1.6); pos.copy(me).lerp(P, 0.04 * k); }
+        break;
       case 'title_card': at(yaw, lerp(3.4, 3.0, s) * r, 0.9 * r); fov = 55; break;
       case 'wide': case 'fade': default: at(yaw + 0.15 * k, 3.2 * r, 0.9 * r); fov = 55; break;
     }
@@ -204,7 +208,7 @@ export function createCinema(o) {
     // the camera looks at a subject from where the group is, so the players stand in shot
     const g = o.group();
     const sp = c.place ? places.spotOf(c.place) : null;
-    c.yaw = sp && g.distanceTo(sp) > 1 ? Math.atan2(g.x - sp.x, g.z - sp.z) : 0.3;
+    c.yaw = sp && g.distanceTo(sp) > 1 ? Math.atan2(g.x - sp.x, g.z - sp.z) : 0;
     if (c.place && !local && cut.shots.some((s) => s.subject === 'local' || s.line?.who === 'local')) {
       local = makeLocal(['#ffb3c7', '#b7e4ff', '#d8c7ff', '#c9f2c7'][c.place.id.charCodeAt(2) % 4]);
       const a = c.yaw + 0.9, lp = sp.clone().add(new THREE.Vector3(Math.sin(a) * 5, 0, Math.cos(a) * 5));

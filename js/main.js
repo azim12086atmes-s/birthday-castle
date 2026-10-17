@@ -12,6 +12,7 @@ import { createCreatures } from './world/creatures.js';
 import { createEffects } from './world/effects.js';
 import { createAtmosphere } from './world/atmosphere.js';
 import { createWorldFill } from './world/fill.js';
+import { createGate } from './world/gate.js';
 import { SPAWN, MAIN, groundAt } from './world/layout.js';
 import { MEADOW_TIME } from './world/materials.js';
 const SPAWN_Y = groundAt(SPAWN.x, SPAWN.z) ?? MAIN.y;
@@ -139,6 +140,7 @@ const gameClock = createClock(DATA);
 const ships = createShips(scene);
 const worldFill = createWorldFill(scene, quality);
 setSpotObstacles(worldFill.footprints);
+const gate = createGate(scene);
 
 // --------------------------------------------------------------------- UI --
 const ui = {
@@ -354,7 +356,7 @@ function startGame(p) {
     blobHit: (to) => quest && quest.blobHit(to),
   });
   quest = createQuest({
-    data: DATA, places, visuals: placeVisuals, ships, combat, mew, clock: gameClock, net, controller, camera, profile: p, ui, remotes, scene,
+    data: DATA, places, visuals: placeVisuals, ships, combat, mew, clock: gameClock, net, controller, camera, profile: p, ui, remotes, scene, gate,
     celebrating: () => celebration.active,
     onReveal: () => playReveal(),
   });
@@ -428,6 +430,8 @@ function frame() {
     const hk = THREE.MathUtils.clamp((camera.position.y - 150) / 1400, 0, 1);
     scene.fog.near = 900 + hk * 5000; scene.fog.far = 16000 + hk * 22000;
     const wu = coast.sea.material.uniforms; wu.uFogNear.value = scene.fog.near; wu.uFogFar.value = scene.fog.far;
+    worldFill.fog(scene.fog.near, scene.fog.far); gate.fog(scene.fog.near, scene.fog.far);
+    gate.update(dt, t, camera.position);
   }
   islands.update(t);
   castle.update(t, dt, camera);

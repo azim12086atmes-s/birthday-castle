@@ -113,6 +113,8 @@ export function createQuest(o) {
       // the finale: the Mew glows gold and becomes the owner
       if (id === 'finale' && shot.vfx?.includes('gold_glow') && auth() && !S.revealed && (isMew || ownerRemote())) hostRequest(myId(), { a: 'reveal' });
       if (id === 'head_freed' && shot.vfx?.includes('colour_wave')) refreshBeacons();
+      // the white falls part for the arriving ride
+      if (id === 'arrival' && (shot.subject === 'gate' || shot.subject === 'ride')) o.gate?.part(shot.subject === 'ride' ? 8 : 14);
       void c;
     },
   });
