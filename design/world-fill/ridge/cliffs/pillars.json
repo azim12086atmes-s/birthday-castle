@@ -1,35 +1,35 @@
 [
 {
-"m": "SeaPillar_Basalt",
-"x": -607.4,
-"z": -1248.0,
-"y": 0.0,
-"rotY": 6.146,
-"scale": 0.912
-},
-{
 "m": "SeaPillar_CrystalSpire",
-"x": -798.5,
-"z": 3235.7,
+"x": 1568.2,
+"z": 953.5,
 "y": 0.0,
-"rotY": 1.319,
-"scale": 1.546
+"rotY": 3.707,
+"scale": 1.063
 },
 {
 "m": "SeaPillar_Basalt",
-"x": -413.8,
-"z": 2623.7,
+"x": 533.9,
+"z": 2901.7,
 "y": 0.0,
-"rotY": 5.633,
-"scale": 1.711
+"rotY": 1.898,
+"scale": 1.042
 },
 {
-"m": "SeaPillar_CrystalSpire",
-"x": -2165.9,
-"z": -1548.0,
+"m": "SeaPillar_TwinArch",
+"x": -1398.8,
+"z": -628.5,
 "y": 0.0,
-"rotY": 0.891,
-"scale": 1.393
+"rotY": 5.364,
+"scale": 1.529
+},
+{
+"m": "SeaPillar_Basalt",
+"x": -830.1,
+"z": -1901.4,
+"y": 0.0,
+"rotY": 3.945,
+"scale": 1.238
 },
 {
 "m": "SeaPillar_Basalt",
@@ -56,124 +56,76 @@
 "scale": 1.247
 },
 {
-"m": "SeaPillar_TwinArch",
-"x": -2132.1,
-"z": 265.5,
-"y": 0.0,
-"rotY": 1.993,
-"scale": 1.519
-},
-{
-"m": "SeaPillar_CrystalSpire",
-"x": -1478.2,
-"z": -1528.7,
-"y": 0.0,
-"rotY": 2.636,
-"scale": 0.979
-},
-{
 "m": "SeaPillar_Column",
-"x": -792.2,
-"z": 2487.8,
+"x": -1045.8,
+"z": 3204.9,
 "y": 0.0,
-"rotY": 4.142,
-"scale": 1.742
-},
-{
-"m": "SeaPillar_CrystalSpire",
-"x": 1992.7,
-"z": -650.3,
-"y": 0.0,
-"rotY": 1.398,
-"scale": 1.781
-},
-{
-"m": "SeaPillar_CrystalSpire",
-"x": 188.4,
-"z": -1470.4,
-"y": 0.0,
-"rotY": 5.779,
-"scale": 0.783
-},
-{
-"m": "SeaPillar_Basalt",
-"x": -1420.5,
-"z": 571.2,
-"y": 0.0,
-"rotY": 0.088,
-"scale": 0.86
-},
-{
-"m": "SeaPillar_Column",
-"x": 1485.0,
-"z": 1010.0,
-"y": 0.0,
-"rotY": 4.192,
-"scale": 1.222
-},
-{
-"m": "SeaPillar_Basalt",
-"x": -1805.4,
-"z": -1872.2,
-"y": 0.0,
-"rotY": 5.622,
-"scale": 1.875
-},
-{
-"m": "SeaPillar_Basalt",
-"x": -1666.9,
-"z": -1066.7,
-"y": 0.0,
-"rotY": 5.67,
-"scale": 1.795
-},
-{
-"m": "SeaPillar_Basalt",
-"x": 323.1,
-"z": -1286.1,
-"y": 0.0,
-"rotY": 6.105,
-"scale": 0.789
-},
-{
-"m": "SeaPillar_Column",
-"x": -1555.8,
-"z": -1438.6,
-"y": 0.0,
-"rotY": 2.582,
-"scale": 1.453
-},
-{
-"m": "SeaPillar_CrystalSpire",
-"x": -2306.0,
-"z": 2156.7,
-"y": 0.0,
-"rotY": 0.566,
-"scale": 1.835
-},
-{
-"m": "SeaPillar_CrystalSpire",
-"x": -1373.0,
-"z": -167.8,
-"y": 0.0,
-"rotY": 5.82,
-"scale": 1.714
-},
-{
-"m": "SeaPillar_TwinArch",
-"x": -820.6,
-"z": -1542.4,
-"y": 0.0,
-"rotY": 4.618,
-"scale": 1.442
-},
-{
-"m": "SeaPillar_CrystalSpire",
-"x": -2461.9,
-"z": 1545.0,
-"y": 0.0,
-"rotY": 5.714,
+"rotY": 1.462,
 "scale": 1.876
+},
+{
+"m": "SeaPillar_CrystalSpire",
+"x": -870.2,
+"z": 3018.2,
+"y": 0.0,
+"rotY": 0.361,
+"scale": 1.491
+},
+{
+"m": "SeaPillar_Basalt",
+"x": 1974.3,
+"z": -1053.5,
+"y": 0.0,
+"rotY": 0.836,
+"scale": 0.715
+},
+{
+"m": "SeaPillar_Basalt",
+"x": -1521.8,
+"z": -852.8,
+"y": 0.0,
+"rotY": 2.449,
+"scale": 1.367
+},
+{
+"m": "SeaPillar_TwinArch",
+"x": -1653.7,
+"z": 2057.4,
+"y": 0.0,
+"rotY": 3.786,
+"scale": 1.446
+},
+{
+"m": "SeaPillar_Column",
+"x": 2203.7,
+"z": -185.9,
+"y": 0.0,
+"rotY": 3.071,
+"scale": 1.645
+},
+{
+"m": "SeaPillar_TwinArch",
+"x": -1157.0,
+"z": -1917.4,
+"y": 0.0,
+"rotY": 5.937,
+"scale": 1.887
+},
+{
+"m": "SeaPillar_Column",
+"x": 2359.8,
+"z": 2175.9,
+"y": 0.0,
+"rotY": 0.387,
+"scale": 1.351
+},
+{
+"m": "SeaPillar_Basalt",
+"x": 1764.0,
+"z": 680.7,
+"y": 0.0,
+"rotY": 5.379,
+"scale": 1.77
 },
 {
 "m": "SeaPillar_TwinArch",
@@ -190,6 +142,22 @@
 "y": 0.0,
 "rotY": 5.806,
 "scale": 1.279
+},
+{
+"m": "SeaPillar_Basalt",
+"x": -1022.9,
+"z": -1986.0,
+"y": 0.0,
+"rotY": 1.465,
+"scale": 0.714
+},
+{
+"m": "SeaPillar_TwinArch",
+"x": 1973.9,
+"z": -1175.7,
+"y": 0.0,
+"rotY": 4.888,
+"scale": 1.27
 },
 {
 "m": "SeaPillar_CrystalSpire",
@@ -240,28 +208,28 @@
 "scale": 1.016
 },
 {
-"m": "SeaPillar_CrystalSpire",
-"x": 1698.9,
-"z": -1116.8,
-"y": 0.0,
-"rotY": 1.829,
-"scale": 1.056
-},
-{
-"m": "SeaPillar_CrystalSpire",
-"x": 638.5,
-"z": -1764.0,
-"y": 0.0,
-"rotY": 0.614,
-"scale": 1.431
-},
-{
 "m": "SeaPillar_Basalt",
-"x": -1942.6,
-"z": 2536.5,
+"x": -747.8,
+"z": 3825.0,
 "y": 0.0,
-"rotY": 6.147,
-"scale": 1.409
+"rotY": 3.828,
+"scale": 1.802
+},
+{
+"m": "SeaPillar_Column",
+"x": 2149.8,
+"z": 2195.0,
+"y": 0.0,
+"rotY": 4.211,
+"scale": 1.158
+},
+{
+"m": "SeaPillar_CrystalSpire",
+"x": 2009.7,
+"z": 2121.5,
+"y": 0.0,
+"rotY": 4.462,
+"scale": 0.72
 },
 {
 "m": "SeaPillar_Basalt",
@@ -344,12 +312,12 @@
 "scale": 1.86
 },
 {
-"m": "SeaPillar_Column",
-"x": 1591.4,
-"z": -163.5,
+"m": "SeaPillar_Basalt",
+"x": 1849.2,
+"z": 1210.0,
 "y": 0.0,
-"rotY": 1.81,
-"scale": 0.817
+"rotY": 3.668,
+"scale": 1.262
 },
 {
 "m": "SeaPillar_Basalt",
@@ -360,12 +328,12 @@
 "scale": 1.613
 },
 {
-"m": "SeaPillar_Basalt",
-"x": -1416.1,
-"z": -1202.2,
+"m": "SeaPillar_CrystalSpire",
+"x": 1180.1,
+"z": 4073.7,
 "y": 0.0,
-"rotY": 1.198,
-"scale": 0.784
+"rotY": 3.899,
+"scale": 1.264
 },
 {
 "m": "SeaPillar_TwinArch",
@@ -377,10 +345,42 @@
 },
 {
 "m": "SeaPillar_CrystalSpire",
-"x": 1926.3,
-"z": -1682.2,
+"x": 858.2,
+"z": -1576.5,
 "y": 0.0,
-"rotY": 5.299,
-"scale": 0.958
+"rotY": 0.71,
+"scale": 1.095
+},
+{
+"m": "SeaPillar_Column",
+"x": -1700.3,
+"z": -1645.4,
+"y": 0.0,
+"rotY": 2.536,
+"scale": 1.064
+},
+{
+"m": "SeaPillar_Basalt",
+"x": 1245.3,
+"z": 3948.0,
+"y": 0.0,
+"rotY": 4.367,
+"scale": 1.043
+},
+{
+"m": "SeaPillar_Basalt",
+"x": 1600.6,
+"z": 1861.3,
+"y": 0.0,
+"rotY": 5.197,
+"scale": 1.533
+},
+{
+"m": "SeaPillar_TwinArch",
+"x": 1394.2,
+"z": 3616.0,
+"y": 0.0,
+"rotY": 5.203,
+"scale": 1.419
 }
 ]

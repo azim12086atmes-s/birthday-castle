@@ -1,1 +1,1 @@
-{"name": "CliffWall_plateau_north", "dims": [615.132, 618.132, 123.8], "tris": 7892, "source": "ridge/viaduct.py (Oct 17 cliffs)"}
+{"name": "CliffWall_plateau_north", "dims": [2532.852, 829.4, 145.3], "tris": 15200, "source": "ridge/cliffs/cliffwall2.py (Oct 17 stepped cliffs)"}

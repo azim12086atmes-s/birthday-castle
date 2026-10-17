@@ -1,30 +1,20 @@
 [
 {
-"m": "CliffWall_palace_mesa",
+"m": "CliffWall_palace_mesa_w",
 "place": "cliffs",
-"x": 25.35,
+"x": -1187.8,
 "y": 0.0,
-"z": 266.82,
+"z": 130.98,
 "rotY": 0.0,
 "scale": 1.0,
 "new": true
 },
 {
-"m": "CliffWall_plateau_B25",
+"m": "CliffWall_palace_mesa_e",
 "place": "cliffs",
-"x": -1155.0,
+"x": 1096.98,
 "y": 0.0,
-"z": -1485.0,
-"rotY": 0.0,
-"scale": 1.0,
-"new": true
-},
-{
-"m": "CliffWall_plateau_B32",
-"place": "cliffs",
-"x": -1826.0,
-"y": 0.0,
-"z": 608.0,
+"z": -143.77,
 "rotY": 0.0,
 "scale": 1.0,
 "new": true
@@ -32,9 +22,19 @@
 {
 "m": "CliffWall_plateau_north",
 "place": "cliffs",
-"x": 60.0,
+"x": 24.39,
 "y": 0.0,
-"z": -1700.0,
+"z": -1798.73,
+"rotY": 0.0,
+"scale": 1.0,
+"new": true
+},
+{
+"m": "CliffWall_plateau_B25",
+"place": "cliffs",
+"x": -1318.39,
+"y": 0.0,
+"z": -1717.33,
 "rotY": 0.0,
 "scale": 1.0,
 "new": true
@@ -42,19 +42,9 @@
 {
 "m": "CliffWall_plateau_northeast",
 "place": "cliffs",
-"x": 1680.0,
+"x": 1696.24,
 "y": 0.0,
-"z": -1470.0,
-"rotY": 0.0,
-"scale": 1.0,
-"new": true
-},
-{
-"m": "CliffWall_plateau_east",
-"place": "cliffs",
-"x": 1840.0,
-"y": 0.0,
-"z": 160.0,
+"z": -1362.78,
 "rotY": 0.0,
 "scale": 1.0,
 "new": true
@@ -62,9 +52,29 @@
 {
 "m": "CliffWall_plateau_west_n",
 "place": "cliffs",
-"x": -1880.0,
+"x": -2025.5,
 "y": 0.0,
-"z": -520.0,
+"z": -580.27,
+"rotY": 0.0,
+"scale": 1.0,
+"new": true
+},
+{
+"m": "CliffWall_plateau_east",
+"place": "cliffs",
+"x": 2041.0,
+"y": 0.0,
+"z": 150.57,
+"rotY": 0.0,
+"scale": 1.0,
+"new": true
+},
+{
+"m": "CliffWall_plateau_B32",
+"place": "cliffs",
+"x": -1819.19,
+"y": 0.0,
+"z": 572.7,
 "rotY": 0.0,
 "scale": 1.0,
 "new": true
@@ -72,9 +82,9 @@
 {
 "m": "CliffWall_plateau_southeast",
 "place": "cliffs",
-"x": 2180.0,
+"x": 2155.71,
 "y": 0.0,
-"z": 1560.0,
+"z": 1581.87,
 "rotY": 0.0,
 "scale": 1.0,
 "new": true
@@ -82,9 +92,9 @@
 {
 "m": "CliffWall_plateau_southwest",
 "place": "cliffs",
-"x": -2140.0,
+"x": -2160.1,
 "y": 0.0,
-"z": 1700.0,
+"z": 1719.95,
 "rotY": 0.0,
 "scale": 1.0,
 "new": true

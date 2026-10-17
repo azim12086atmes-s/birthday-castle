@@ -82,7 +82,7 @@ def lancet(x0, x1, zs, za, n=10):
     return pts + right[::-1][1:]
 
 def viaduct(B, M, name, L, width):
-    H = DECK; n = max(2, round(L / 62)); span = L / n; pw = min(5.5, span * 0.09); dep = width - 2
+    H = B.get('deck', DECK); n = max(2, round(L / 62)); span = L / n; pw = min(5.5, span * 0.09); dep = width - 2
     b = Builder(); x0 = -L / 2
     zs1, za1 = H * 0.40, H * 0.74                      # the tall lancets
     zs2, za2 = H * 0.80, H * 0.92                      # the small paired arches under the deck
@@ -185,7 +185,7 @@ for B in C['bridges']:
     export(objs, f'{OUT}/{nm}.glb')
     ax, az = B['a']; bx, bz = B['b']
     index[nm] = dict(bridge=B['id'], x=round((ax + bx) / 2, 2), z=round((az + bz) / 2, 2), y=0.0,
-                     rotY=round(math.atan2(-(bz - az), bx - ax), 5), scale=1.0, length=B['length'] + 60, deck=DECK)
+                     rotY=round(math.atan2(-(bz - az), bx - ax), 5), scale=1.0, length=B['length'] + 60, deck=B.get('deck', DECK))
 reset(); M = mats()
 for nm, b in pillars(M).items():
     for o in list(bpy.data.objects): bpy.data.objects.remove(o)

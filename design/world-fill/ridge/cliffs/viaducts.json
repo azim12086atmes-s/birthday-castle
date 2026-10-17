@@ -1,92 +1,92 @@
 {
+ "Viaduct_palace_B25": {
+  "bridge": "palace-B25",
+  "x": -963.8,
+  "z": -1239.15,
+  "y": 0.0,
+  "rotY": 2.23181,
+  "scale": 1.0,
+  "length": 333.0,
+  "deck": 110.5
+ },
+ "Viaduct_palace_B32": {
+  "bridge": "palace-B32",
+  "x": -1357.5,
+  "z": 452.0,
+  "y": 0.0,
+  "rotY": -2.82026,
+  "scale": 1.0,
+  "length": 517.2,
+  "deck": 110.5
+ },
  "Viaduct_palace_north": {
   "bridge": "palace-north",
-  "x": 46.75,
-  "z": -1325.2,
+  "x": 47.3,
+  "z": -1340.75,
   "y": 0.0,
   "rotY": 1.53554,
   "scale": 1.0,
-  "length": 460.0,
+  "length": 491.2,
   "deck": 110.5
  },
  "Viaduct_palace_northeast": {
   "bridge": "palace-northeast",
-  "x": 1421.25,
-  "z": -1243.6,
+  "x": 1431.1,
+  "z": -1252.2,
   "y": 0.0,
-  "rotY": 0.7189,
+  "rotY": 0.71883,
   "scale": 1.0,
-  "length": 463.3,
+  "length": 489.5,
   "deck": 110.5
  },
  "Viaduct_palace_east": {
   "bridge": "palace-east",
-  "x": 1447.65,
-  "z": 125.9,
+  "x": 1465.6,
+  "z": 127.45,
   "y": 0.0,
-  "rotY": -0.08665,
+  "rotY": -0.0866,
   "scale": 1.0,
-  "length": 432.1,
+  "length": 468.1,
   "deck": 110.5
  },
  "Viaduct_palace_west_n": {
   "bridge": "palace-west-n",
-  "x": -1441.55,
-  "z": -398.75,
+  "x": -1454.2,
+  "z": -402.25,
   "y": 0.0,
   "rotY": 2.87175,
   "scale": 1.0,
-  "length": 685.3,
+  "length": 711.6,
   "deck": 110.5
  },
  "Viaduct_road_B04_B25": {
   "bridge": "road:B04-B25",
-  "x": -2063.3,
-  "z": -1252.6,
+  "x": -2103.7,
+  "z": -1287.05,
   "y": 0.0,
-  "rotY": -0.2118,
+  "rotY": -0.20478,
   "scale": 1.0,
-  "length": 514.8,
-  "deck": 110.5
+  "length": 679.1,
+  "deck": 70.5
  },
  "Viaduct_road_B04_B25_2": {
   "bridge": "road:B04-B25",
-  "x": -1537.95,
-  "z": -1360.7,
+  "x": -1517.75,
+  "z": -1361.4,
   "y": 0.0,
-  "rotY": 0.48588,
+  "rotY": 0.43644,
   "scale": 1.0,
-  "length": 379.9,
-  "deck": 110.5
- },
- "Viaduct_road_B01_B25": {
-  "bridge": "road:B01-B25",
-  "x": -914.0,
-  "z": -1214.85,
-  "y": 0.0,
-  "rotY": 2.34143,
-  "scale": 1.0,
-  "length": 285.1,
-  "deck": 110.5
- },
- "Viaduct_road_B01_B32": {
-  "bridge": "road:B01-B32",
-  "x": -1315.7,
-  "z": 654.35,
-  "y": 0.0,
-  "rotY": -2.52458,
-  "scale": 1.0,
-  "length": 307.7,
+  "length": 416.7,
   "deck": 110.5
  },
  "Viaduct_road_B07_B25": {
   "bridge": "road:B07-B25",
-  "x": -683.3,
-  "z": -1902.55,
+  "x": -610.2,
+  "z": -2104.6,
   "y": 0.0,
-  "rotY": -1.86559,
+  "rotY": -1.90944,
   "scale": 1.0,
-  "length": 143.3,
+  "length": 572.9,
   "deck": 110.5
  },
  "Viaduct_road_B07_B25_2": {
@@ -99,44 +99,34 @@
   "length": 281.7,
   "deck": 110.5
  },
- "Viaduct_road_B02_B32": {
-  "bridge": "road:B02-B32",
-  "x": -2203.7,
-  "z": 896.5,
+ "Viaduct_road_B08_B25": {
+  "bridge": "road:B08-B25",
+  "x": -2287.45,
+  "z": -1352.5,
   "y": 0.0,
-  "rotY": 0.60011,
+  "rotY": -0.25363,
   "scale": 1.0,
-  "length": 215.8,
-  "deck": 110.5
- },
- "Viaduct_trail_road_A_big_menhir_with_anc": {
-  "bridge": "trail:road-A_big_menhir_with_anc",
-  "x": 1641.45,
-  "z": -1794.85,
-  "y": 0.0,
-  "rotY": -2.85793,
-  "scale": 1.0,
-  "length": 533.4,
+  "length": 1065.9,
   "deck": 110.5
  },
  "Viaduct_trail_road_Ancient_Obelisk": {
   "bridge": "trail:road-Ancient_Obelisk",
-  "x": 2123.85,
-  "z": -356.2,
+  "x": 2228.85,
+  "z": -391.95,
   "y": 0.0,
-  "rotY": -1.981,
+  "rotY": -2.09914,
   "scale": 1.0,
-  "length": 610.9,
+  "length": 1008.4,
   "deck": 110.5
  },
  "Viaduct_trail_road_Ancient_Archway": {
   "bridge": "trail:road-Ancient_Archway",
-  "x": 2220.4,
-  "z": 366.3,
+  "x": 2431.85,
+  "z": 434.7,
   "y": 0.0,
-  "rotY": -0.71484,
+  "rotY": -0.45819,
   "scale": 1.0,
-  "length": 220.5,
+  "length": 920.0,
   "deck": 110.5
  }
 }
