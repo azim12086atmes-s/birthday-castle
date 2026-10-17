@@ -325,12 +325,17 @@ export function createQuest(o) {
   // ---- the sky ship --------------------------------------------------------------
   function sailTo(place) {
     const group = S.act >= 4;
-    const riders = group ? [myId(), ...remotes.keys()] : [myId()];
+    const everyone = group ? [myId(), ...remotes.keys()] : [myId()];
+    // the Mew takes no seat: it hovers at her right shoulder all the way
+    const mewId = isMew ? myId() : [...remotes].find(([, r]) => r.profile.mew)?.[0];
+    const herId = profile.honoree ? myId() : [...remotes].find(([, r]) => r.profile.honoree)?.[0];
+    const riders = everyone.filter((id) => id !== mewId);
+    if (!riders.length) riders.push(myId());
     const c = new THREE.Vector3();
     for (const id of riders) c.add(id === myId() ? controller.pos : remotes.get(id).avatar.root.position);
     c.divideScalar(riders.length); c.y += 1;
     const to = places.spotOf(place);
-    emit({ k: 'ship', trip: { id: Math.random().toString(36).slice(2, 8), from: [c.x, c.y, c.z].map((v) => +v.toFixed(1)), to: [to.x, to.y, to.z].map((v) => +v.toFixed(1)), riders, dest: place.id } });
+    emit({ k: 'ship', trip: { id: Math.random().toString(36).slice(2, 8), from: [c.x, c.y, c.z].map((v) => +v.toFixed(1)), to: [to.x, to.y, to.z].map((v) => +v.toFixed(1)), riders, mew: everyone.includes(mewId) && mewId !== riders[0] ? mewId : null, her: herId || null, dest: place.id } });
     ui.toast(group ? `All aboard! The sky ship sails for ${place.name}` : `The sky ship sails for ${place.name}`);
   }
   let rideStart = null, riding = false, rideDest = null;
