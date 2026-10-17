@@ -148,6 +148,7 @@ export function createProgress({ data, scene, combat, ui, profile, net, remotes,
     get starlight() { return P.starlight; },
     award, results, howTo, pickPet, setPet,
     bind(x) { Object.assign(o, x); },
+    petPositions() { return [...live.values()].map((L) => L.mesh.position); },
     cheer() { for (const L of live.values()) combat.burst(L.mesh.position.clone().add(new THREE.Vector3(0, 0.6, 0)), '#ffd47a', 1.5); },
     update(dt, t, me) {
       if (!$('lvl')) applyLevel();

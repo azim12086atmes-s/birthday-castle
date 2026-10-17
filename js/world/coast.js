@@ -40,6 +40,9 @@ function rockGrade(m) {
   m.onBeforeCompile = (sh, r) => {
     prev(sh, r);
     sh.fragmentShader = sh.fragmentShader.replace('#include <alphamap_fragment>', `#include <alphamap_fragment>
+      vec3 mPaint = diffuseColor.rgb;
+      // the great ridge (outer ring): its baked colour map leads, snow included
+      float rg = smoothstep(9500.0, 11000.0, length(vMWorld.xz - vec2(-709.5, 2260.5)));
       {
         vec2 rp = vMWorld.xz;
         float rn = mNoise(rp * 0.02) * 0.6 + mNoise(rp * 0.11 + 3.) * 0.4;
@@ -50,12 +53,19 @@ function rockGrade(m) {
         float bake = clamp(dot(diffuseColor.rgb, vec3(0.3, 0.59, 0.11)) / 0.5, 0.6, 1.15);
         vec3 rock = mix(vec3(0.56, 0.52, 0.6), vec3(0.74, 0.68, 0.7), rn) * strata * bake;
         float hi = smoothstep(500.0, 1100.0, vMWorld.y);
-        diffuseColor.rgb = mix(diffuseColor.rgb, rock, steep * (0.55 + 0.4 * hi) * smoothstep(8.0, 40.0, vMWorld.y));
-        // snow from about 1 km on the old ring; on the great ridge from 2.6 km, with rock on faces over 60 degrees
-        float rg = smoothstep(9500.0, 11000.0, length(rp - vec2(-709.5, 2260.5)));
-        float sl = mix(980.0, 2600.0, rg);
-        float snow = smoothstep(sl, sl + 270.0, vMWorld.y + (rn - 0.5) * 160.0) * smoothstep(mix(0.45, 0.45, rg), mix(0.7, 0.55, rg), vMUp);
+        diffuseColor.rgb = mix(diffuseColor.rgb, rock, steep * (0.55 + 0.4 * hi) * smoothstep(8.0, 40.0, vMWorld.y) * (1.0 - rg));
+        // snow from about 1 km on the old ring
+        float snow = smoothstep(980.0, 1250.0, vMWorld.y + (rn - 0.5) * 160.0) * smoothstep(0.45, 0.7, vMUp) * (1.0 - rg);
         diffuseColor.rgb = mix(diffuseColor.rgb, vec3(0.97, 0.97, 1.02) * min(bake, 1.0), snow);
+      }`).replace('#include <emissivemap_fragment>', `#include <emissivemap_fragment>
+      {
+        // bioluminescence by night: the teal-violet glowwood and the pastel blossom meadows breathe light
+        float glw = clamp((mPaint.b - mPaint.r) * 3.0 + (mPaint.g + mPaint.b - 2.0 * mPaint.r) * 1.2 - 0.25, 0.0, 1.0);
+        float bls = clamp((mPaint.r - mPaint.g) * 3.0 + (mPaint.b - mPaint.g) * 1.5 - 0.2, 0.0, 1.0);
+        float ph = mNoise(vMWorld.xz * 0.01) * 6.2832;
+        float pulse = 0.6 + 0.4 * sin(uMTime * 2.2 + ph);
+        vec3 gc = mix(vec3(0.25, 0.9, 1.0), vec3(0.65, 0.45, 1.0), mNoise(vMWorld.xz * 0.03 + 7.0));
+        totalEmissiveRadiance += (gc * glw * 0.32 + vec3(1.0, 0.55, 0.8) * bls * 0.12) * pulse * uNightG * smoothstep(1.0, 6.0, vMWorld.y) * (1.0 - rg);
       }`).replace('#include <fog_fragment>', `
       #ifdef USE_FOG
         // the high peaks rise out of the haze, so the great ridge reads from the palace

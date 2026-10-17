@@ -129,3 +129,19 @@ thread's notes. Players can walk through the placed models for now.
   arch in the south gap; its veil parts when someone comes within 400 m on the gate axis or
   the arrival scene reaches the falls. The docks and the finale's floating theatre are not
   built yet.
+
+## Magic in the air (`js/world/magic.js`)
+
+Following the study thread's plan (design/vfx/README.md on PR #1):
+- **Sparkles:** small, sharp sparkles fill the air round the viewer. They come in six moods, and the land under the camera sets the mix: glitter everywhere, fireflies low over meadows at night, spores in glowwood, petals by blossom and the palace, seeds on grassland by day, and stardust high up at night.
+- **Ribbons of light:** one instanced draw holds all of them, 24, 64 or 140 by quality tier.
+  - Swift streaks and lazy drifts round the viewer.
+  - Spirals up the palace spires and the light pillars of places within 1.5 km.
+  - A pale gold orbit round the Mew, and small ones round pets.
+  - A trail behind your sky ship.
+- **Night glow:** at night, footsteps leave cyan-violet light rings. The teal-violet glowwood and the blossom meadows in the land colour map breathe light.
+- **Events:**
+  - Freeing a place sends a ring of colour 600 m out, with spirals climbing towards the lantern.
+  - The Hush turns sparkles to grey ash and fades the ribbons.
+  - The finale doubles the spire spirals and adds a meteor shower.
+- **Great ridge:** on the outer ring the baked colour map leads; the game adds no rock or snow there.

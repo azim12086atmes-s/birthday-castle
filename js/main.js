@@ -10,6 +10,7 @@ import { createApproach } from './world/approach.js';
 import { createMeadow } from './world/meadow.js';
 import { createCreatures } from './world/creatures.js';
 import { createEffects } from './world/effects.js';
+import { createMagic } from './world/magic.js';
 import { createAtmosphere } from './world/atmosphere.js';
 import { createWorldFill } from './world/fill.js';
 import { createGate } from './world/gate.js';
@@ -133,6 +134,7 @@ const nature = createNature(scene, quality);
 const meadow = createMeadow(scene, quality);
 const creatures = createCreatures(scene, quality);
 const effects = createEffects(scene, quality);
+const magic = createMagic(scene, quality);
 const atmosphere = createAtmosphere(scene, quality);
 const celebration = createCelebration(scene, effects, sky, castle);
 const lanterns = createWishLanterns(scene);
@@ -361,7 +363,7 @@ function startGame(p) {
     blobHit: (to) => quest && quest.blobHit(to),
   });
   quest = createQuest({
-    data: DATA, places, visuals: placeVisuals, ships, combat, mew, clock: gameClock, net, controller, camera, profile: p, ui, remotes, scene, gate, progress,
+    data: DATA, places, visuals: placeVisuals, ships, combat, mew, clock: gameClock, net, controller, camera, profile: p, ui, remotes, scene, gate, progress, magic,
     celebrating: () => celebration.active,
     onReveal: () => playReveal(),
   });
@@ -413,6 +415,36 @@ function startGame(p) {
 }
 
 // a simple stand-in for a player drawn beyond the full-detail few
+// what the ribbons, sparkles and footstep light need to know about the game this frame
+const magicPlaces = places.list.map((pl) => ({ id: pl.id, at: places.spotOf(pl), freed: false }));
+let trailLast = null;
+function magicCtx(dt) {
+  const ctx = { pixelRatio: governor.ratio };
+  const g = game;
+  if (!g) return ctx;
+  const S = g.quest.state;
+  for (const mp of magicPlaces) mp.freed = S.shards.includes(mp.id);
+  ctx.places = magicPlaces;
+  if (!g.mew.hidden && g.mew.visible !== false) ctx.mew = g.mew.pos;
+  ctx.pets = g.progress.petPositions();
+  ctx.walkers = [['me', g.controller.pos]];
+  for (const [id, r] of g.remotes) if (!(r.profile.mew && !g.quest.revealed)) ctx.walkers.push([id, r.avatar.root.position]);
+  const ride = g.net.id && ships.riderPos(g.net.id);
+  if (ride && ride.phase === 'fly') {
+    const dir = trailLast ? ride.pos.clone().sub(trailLast) : new THREE.Vector3(0, 0, 1);
+    trailLast = ride.pos.clone();
+    if (dir.lengthSq() > 1e-6) ctx.trail = { pos: ride.pos.clone().add(new THREE.Vector3(0, 1.5, 0)), dir: dir.normalize() };
+    else if (g.trailDir) ctx.trail = { pos: ride.pos.clone().add(new THREE.Vector3(0, 1.5, 0)), dir: g.trailDir };
+    if (ctx.trail) g.trailDir = ctx.trail.dir;
+  } else trailLast = null;
+  // the Hush greys the air until the night's places are freed; the finale fills the sky
+  const night = places.grandPath || [];
+  const done = night.filter((pl) => S.shards.includes(pl.id || pl)).length;
+  magic.hush = S.act >= 4 && S.act < 5 && !S.finale ? 1 - done / Math.max(1, night.length) : 0;
+  magic.finale = !!S.finale || celebration.active;
+  return ctx;
+}
+
 function farFigure(prof) {
   // everyone sees the everyday gown here: party gowns show only to ladies, up close
   const col = (prof.gender === 'male' ? OUTFITS[prof.outfit] : OUTFITS[prof.modest])?.color || '#c9b6ff';
@@ -465,7 +497,8 @@ function frame() {
   meadow.update(t, camera);
   approach.update(t, dt, camera);
   creatures.update(t, dt, camera);
-  effects.update(t, dt, camera, governor.ratio);
+  effects.update(t, dt, camera);
+  magic.update(t, dt, camera.position, magicCtx(dt));
   celebration.update(t, dt);
   lanterns.update(t, dt);
   worldFill.update(dt, camera);
@@ -588,4 +621,4 @@ openLobby(profile, {
 if (params.get('cutscene') === '1') {
   window.__previewWelcome = () => game && (game.cutscene = playWelcome({ camera, castle, celebration, controller: game.controller, target: game.controller.pos.clone(), ui, onDone: () => { game.cutscene = null; } }));
 }
-window.__castle = { scene, camera, renderer, places, get game() { return game; } };
+window.__castle = { scene, camera, renderer, places, magic, get game() { return game; } };

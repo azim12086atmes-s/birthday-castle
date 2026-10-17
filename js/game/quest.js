@@ -257,6 +257,7 @@ export function createQuest(o) {
     if (!place) return;
     const from = places.spotOf(place).clone().add(new THREE.Vector3(0, 3, 0));
     visuals.streak(from, visuals.lanternPos.clone(), 6);
+    o.magic?.restore(places.spotOf(place));
     const shardText = `Shard ${S.shards.length} of ${places.list.length} flies home to the Great Lantern`;
     if (!cinema.off && near(place, 320)) { playScene(['head_freed', 'shard', 'farewell'], { place, shardText }); return; }
     const line = place.headChar?.dialogue?.freed || place.headChar?.lines?.[0] || 'Thank you.';
