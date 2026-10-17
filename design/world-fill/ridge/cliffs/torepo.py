@@ -35,6 +35,16 @@ add('SkyBridge_Segment', f'{O}/viaducts/SkyBridge_Segment.glb', 'ridge/cliffs/vi
 for it in json.load(open(f'{O}/viaducts/skybridge.json'))['items']: items.append(dict(it, place='sky-bridge', new=True))
 for it in json.load(open(f'{O}/gatekit/gate-kit.json')):
     add(it['m'], f'{O}/gatekit/{it["m"]}.glb', 'ridge/cliffs/gate.py (Oct 17 gate massif)'); items.append(it)
+# dense towns (town.py): light 14k-tri copies of the house set, their cards, the town plans
+for f in glob.glob(f'{D}/glb2/*_town.*'): os.remove(f)
+for f in sorted(glob.glob(f'{O}/townkit/*_town.glb')): add(os.path.basename(f)[:-4], f, 'ridge/towns/decimate.py (Oct 17 dense towns)')
+models = [m for m in models if not m.endswith('_town') or os.path.exists(f'{D}/glb2/{m}.glb')]
+T = f'{D}/ridge/towns'; os.makedirs(f'{T}/cards', exist_ok=True)
+for f in glob.glob(f'{O}/towncards-pack/*'): shutil.copy(f, f'{T}/cards/')
+for f in ['towns.json', 'roadside.json'] + [os.path.basename(p) for p in glob.glob(f'{O}/town-B*.jpg')]: shutil.copy(f'{O}/{f}', f'{T}/{f}')
+for f in ('town.py', 'decimate.py', 'packtown.py', 'bins.py', 'townmap.py', 'roadside.py', 'TOWNS.md'):
+    if os.path.exists(f'{R}/{f}'): shutil.copy(f'{R}/{f}', f'{T}/{f}')
+W['towns'] = 'Oct 17 21:00: ten Grand Path places rebuilt as dense towns (ridge/towns/town.py); houses carry town=house/lantern/plaza/hero; *_town models are 14k-tri copies'
 W['items'] = items; W['models'] = models
 W['cliffs'] = 'Oct 17 19:29: sky palace (ridge/cliffs/cliffs3.py): palace at 797.5 m, rings 640 / 500 / 340 / 170 to the moat; walls, viaducts, sea pillars are place "cliffs"; the 688 m sky bridge is "sky-bridge"; tunnel, portal, doors and cloud platform are "gate"'
 json.dump(W, open(f'{D}/world-placements.json', 'w'))

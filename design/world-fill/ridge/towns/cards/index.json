@@ -1,0 +1,317 @@
+{
+"A_modular_medieval_ho_town": {
+"frame": 2.93876,
+"base_from_centre": 0.48,
+"height": 1.66772,
+"radius": 1.41287,
+"elevation_deg": 8
+},
+"An_english_country_co_town": {
+"frame": 2.76949,
+"base_from_centre": 0.48,
+"height": 0.87144,
+"radius": 1.33148,
+"elevation_deg": 8
+},
+"Ancient_Archway_town": {
+"frame": 2.17549,
+"base_from_centre": 0.48,
+"height": 1.85615,
+"radius": 1.04591,
+"elevation_deg": 8
+},
+"Ancient_Gateway_Ruins_town": {
+"frame": 2.71925,
+"base_from_centre": 0.48,
+"height": 1.27489,
+"radius": 1.30733,
+"elevation_deg": 8
+},
+"Ancient_Stone_Circle_town": {
+"frame": 2.77587,
+"base_from_centre": 0.48,
+"height": 0.76846,
+"radius": 1.33455,
+"elevation_deg": 8
+},
+"Ancient_Stone_Relic_town": {
+"frame": 1.98074,
+"base_from_centre": 0.48,
+"height": 1.90456,
+"radius": 0.57564,
+"elevation_deg": 8
+},
+"Basalt_Arch_town": {
+"frame": 2.51708,
+"base_from_centre": 0.48,
+"height": 0.68824,
+"radius": 1.21013,
+"elevation_deg": 8
+},
+"Desert_Dwelling_town": {
+"frame": 2.56685,
+"base_from_centre": 0.48,
+"height": 1.38387,
+"radius": 1.23406,
+"elevation_deg": 8
+},
+"Elephant_Rock_Formati_town": {
+"frame": 2.55159,
+"base_from_centre": 0.48,
+"height": 1.20317,
+"radius": 1.22673,
+"elevation_deg": 8
+},
+"Elven_tower_base_Circ_town": {
+"frame": 1.99163,
+"base_from_centre": 0.48,
+"height": 1.90369,
+"radius": 0.95751,
+"elevation_deg": 8
+},
+"Ember_Tiled_Turret_Ho_town": {
+"frame": 2.22653,
+"base_from_centre": 0.48,
+"height": 1.89977,
+"radius": 1.07045,
+"elevation_deg": 8
+},
+"Enchanted_Blossom_Tea_town": {
+"frame": 1.98355,
+"base_from_centre": 0.48,
+"height": 1.90726,
+"radius": 0.92421,
+"elevation_deg": 8
+},
+"Enchanted_Thatch_Cott_town": {
+"frame": 2.78478,
+"base_from_centre": 0.48,
+"height": 1.46235,
+"radius": 1.33884,
+"elevation_deg": 8
+},
+"England_Mystic_Ston_town": {
+"frame": 2.92503,
+"base_from_centre": 0.48,
+"height": 0.59554,
+"radius": 1.40627,
+"elevation_deg": 8
+},
+"Farmers_Market_Cart_town": {
+"frame": 2.42615,
+"base_from_centre": 0.48,
+"height": 0.94458,
+"radius": 1.16642,
+"elevation_deg": 8
+},
+"Herbal_Harvest_town": {
+"frame": 2.03434,
+"base_from_centre": 0.48,
+"height": 1.80554,
+"radius": 0.97805,
+"elevation_deg": 8
+},
+"Kalliope_House_Comple_town": {
+"frame": 2.77029,
+"base_from_centre": 0.48,
+"height": 1.1813,
+"radius": 1.33187,
+"elevation_deg": 8
+},
+"Majestic_Rock_Formati_town": {
+"frame": 2.80684,
+"base_from_centre": 0.48,
+"height": 1.68864,
+"radius": 1.34944,
+"elevation_deg": 8
+},
+"Marble_Pavilion_town": {
+"frame": 2.35025,
+"base_from_centre": 0.48,
+"height": 1.91225,
+"radius": 1.12993,
+"elevation_deg": 8
+},
+"Meadow_Rocks_town": {
+"frame": 2.90941,
+"base_from_centre": 0.48,
+"height": 0.57468,
+"radius": 1.39876,
+"elevation_deg": 8
+},
+"Medieval_Cottage_town": {
+"frame": 2.4174,
+"base_from_centre": 0.48,
+"height": 1.9993,
+"radius": 1.16221,
+"elevation_deg": 8
+},
+"Mediterranean_Villa_town": {
+"frame": 2.46077,
+"base_from_centre": 0.48,
+"height": 1.74297,
+"radius": 1.18306,
+"elevation_deg": 8
+},
+"Mosswood_Teardrop_Hou_town": {
+"frame": 2.47419,
+"base_from_centre": 0.48,
+"height": 1.91069,
+"radius": 1.18951,
+"elevation_deg": 8
+},
+"Mossy_Timber_Ruins_town": {
+"frame": 2.70478,
+"base_from_centre": 0.48,
+"height": 0.93836,
+"radius": 1.30037,
+"elevation_deg": 8
+},
+"Olive_Grove_Cottage_town": {
+"frame": 2.33037,
+"base_from_centre": 0.48,
+"height": 0.63429,
+"radius": 1.12037,
+"elevation_deg": 8
+},
+"Ornate_Watchtower_town": {
+"frame": 2.55258,
+"base_from_centre": 0.48,
+"height": 1.88383,
+"radius": 1.2272,
+"elevation_deg": 8
+},
+"Pine_Trees_on_a_Rocky_town": {
+"frame": 2.77782,
+"base_from_centre": 0.48,
+"height": 1.73544,
+"radius": 1.33549,
+"elevation_deg": 8
+},
+"Rock_Formations_Colle_2_town": {
+"frame": 2.74904,
+"base_from_centre": 0.48,
+"height": 0.3631,
+"radius": 1.32165,
+"elevation_deg": 8
+},
+"Rocky_Archway_town": {
+"frame": 2.48612,
+"base_from_centre": 0.48,
+"height": 1.40285,
+"radius": 1.19525,
+"elevation_deg": 8
+},
+"Rpg_house_town": {
+"frame": 2.44964,
+"base_from_centre": 0.48,
+"height": 1.467,
+"radius": 1.17771,
+"elevation_deg": 8
+},
+"Runestone_Altar_town": {
+"frame": 2.76522,
+"base_from_centre": 0.48,
+"height": 1.02366,
+"radius": 1.32943,
+"elevation_deg": 8
+},
+"Rustic_Market_Stall_town": {
+"frame": 2.4591,
+"base_from_centre": 0.48,
+"height": 1.90203,
+"radius": 1.18226,
+"elevation_deg": 8
+},
+"Shrine_town": {
+"frame": 2.61282,
+"base_from_centre": 0.48,
+"height": 1.99979,
+"radius": 1.25616,
+"elevation_deg": 8
+},
+"Stone_Lantern_town": {
+"frame": 2.0752,
+"base_from_centre": 0.48,
+"height": 1.99539,
+"radius": 0.8137,
+"elevation_deg": 8
+},
+"Stone_town": {
+"frame": 1.97856,
+"base_from_centre": 0.48,
+"height": 1.90246,
+"radius": 0.72373,
+"elevation_deg": 8
+},
+"Tiki_Pavilion_town": {
+"frame": 2.47417,
+"base_from_centre": 0.48,
+"height": 1.08886,
+"radius": 1.18951,
+"elevation_deg": 8
+},
+"Timbered_Market_House_town": {
+"frame": 2.6922,
+"base_from_centre": 0.48,
+"height": 1.89935,
+"radius": 1.29433,
+"elevation_deg": 8
+},
+"Timberstone_Tower_Hou_town": {
+"frame": 1.9953,
+"base_from_centre": 0.48,
+"height": 1.91856,
+"radius": 0.66894,
+"elevation_deg": 8
+},
+"Toadstool_Tavern_town": {
+"frame": 2.08098,
+"base_from_centre": 0.48,
+"height": 2.00094,
+"radius": 0.89281,
+"elevation_deg": 8
+},
+"Vintage_Stone_Villa_town": {
+"frame": 2.74835,
+"base_from_centre": 0.48,
+"height": 1.64206,
+"radius": 1.32132,
+"elevation_deg": 8
+},
+"Watchtower_T1_town": {
+"frame": 1.99597,
+"base_from_centre": 0.48,
+"height": 1.9192,
+"radius": 0.73007,
+"elevation_deg": 8
+},
+"Whimsical_Hobbit_Dwel_town": {
+"frame": 2.297,
+"base_from_centre": 0.48,
+"height": 1.90545,
+"radius": 1.10433,
+"elevation_deg": 8
+},
+"Windmill_Haven_town": {
+"frame": 2.21452,
+"base_from_centre": 0.48,
+"height": 2.00178,
+"radius": 1.06467,
+"elevation_deg": 8
+},
+"house_town": {
+"frame": 2.77122,
+"base_from_centre": 0.48,
+"height": 1.05552,
+"radius": 1.33232,
+"elevation_deg": 8
+},
+"rock_town": {
+"frame": 2.6813,
+"base_from_centre": 0.48,
+"height": 1.0659,
+"radius": 1.28909,
+"elevation_deg": 8
+}
+}

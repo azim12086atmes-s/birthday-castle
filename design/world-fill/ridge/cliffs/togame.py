@@ -16,7 +16,8 @@ P = json.load(open(f'{D}/placements.json'))
 kit = lambda m: m.startswith(('CliffWall_', 'Viaduct_', 'SeaPillar_', 'SkyBridge_', 'Gate', 'CloudPlatform'))
 farflag = {(i[0], round(i[2], 1), round(i[4], 1)): i[7] for i in P['items'] if len(i) > 7}
 for m in [m for m in P['models'] if kit(m)]: del P['models'][m]
-for pat in ('CliffWall_', 'Viaduct_', 'SeaPillar_', 'SkyBridge_', 'Gate', 'CloudPlatform'):
+for m in [m for m in P['models'] if m.endswith('_town')]: del P['models'][m]
+for pat in ('CliffWall_', 'Viaduct_', 'SeaPillar_', 'SkyBridge_', 'Gate', 'CloudPlatform', '*_town'):
     for f in glob.glob(f'{D}/near/{pat}*.glb'): os.remove(f)
 W = json.load(open(f'{R}/world-placements.json'))['items']
 items = []
@@ -47,6 +48,18 @@ pads.append(dict(name='GateTunnel', x=T['x'], z=round((z0 + z1) / 2, 2), hw=roun
 for it in json.load(open(f'{R}/gatekit/gate-kit.json')):
     if it['m'] not in P['models']: add_model(it['m'], f'{R}/gatekit/{it["m"]}.glb')
     items.append([it['m'], 'gate', it['x'], it['y'], it['z'], it['rotY'], 1.0, 3])
+for f in sorted(glob.glob(f'{R}/townkit/*_town.glb')):                       # light town copies (town.py)
+    nm = os.path.basename(f)[:-4]
+    if nm not in P['models']: add_model(nm, f); P['models'][nm]['tier'] = 'building'     # near within ~300 m, its card beyond
+TC = f'{R}/towncards-pack/index.json'
+if os.path.exists(TC):                                                           # far cards for the town copies
+    CI = json.load(open(f'{D}/cards/index.json')); tc = json.load(open(TC))
+    for nm, c in tc.items(): shutil.copy(f'{R}/towncards-pack/{nm}.webp', f'{D}/cards/{nm}.webp'); CI['cards'][nm] = c
+    json.dump(CI, open(f'{D}/cards/index.json', 'w'), separators=(',', ':'))
+TW = set(P['models'])
+for it in W:
+    if it['m'].endswith('_town') and it['m'] in TW: items.append([it['m'], it['place'], it['x'], it['y'], it['z'], it['rotY'], it['scale']])
+if os.path.exists(f'{R}/towns.json'): shutil.copy(f'{R}/towns.json', f'{D}/towns.json')
 P['items'] = items
 json.dump(P, open(f'{D}/placements.json', 'w'), separators=(',', ':'))
 json.dump(dict(note='walkable decks (study thread, ridge/cliffs3 sky palace): u runs along each bridge, a = rotY; y is each deck (satellite viaducts 340.5 / 500.5 / 640.5, sky bridge and gate tunnel 688)', pads=pads), open(f'{D}/viaducts.json', 'w'), indent=0)
