@@ -7,8 +7,10 @@ import { glowTexture, sparkleTexture, cloudTexture, rng } from './textures.js';
 export const FOG_COLOR = new THREE.Color('#2b2466');
 // 0 = golden-hour dusk (before the celebration), 1 = aurora night.
 export const MOOD = { night: { value: 1 } };
-export const SUN_DIR = new THREE.Vector3(-600, 75, -330).normalize();
-export const MOON_DIR = new THREE.Vector3(-260, 330, -520).normalize();
+// sun and moon in the south-west, so they light the palace's south front and the sky bridge
+// (look pass, Oct 17: they used to sit behind the palace and left its face in shade all day)
+export const SUN_DIR = new THREE.Vector3(-560, 75, 420).normalize();
+export const MOON_DIR = new THREE.Vector3(-300, 330, 470).normalize();
 const FOG_DUSK = new THREE.Color('#e4dcea'), FOG_NIGHT = new THREE.Color('#2b2466');
 
 const NOISE = /* glsl */`
@@ -23,13 +25,13 @@ function skyDome(preset) {
   const mat = new THREE.ShaderMaterial({
     side: THREE.BackSide, depthWrite: false, fog: false,
     defines: { OCT: preset.skyOctaves },
-    uniforms: { uTime: { value: 0 }, uCelebrate: { value: 0 }, uReveal: { value: 0 }, uNight: MOOD.night, uSun: { value: SUN_DIR } },
+    uniforms: { uTime: { value: 0 }, uCelebrate: { value: 0 }, uReveal: { value: 0 }, uNight: MOOD.night, uSun: { value: SUN_DIR }, uCam: { value: new THREE.Vector3() }, uHaze: { value: FOG_COLOR } },
     vertexShader: /* glsl */`
       varying vec3 vDir;
       void main(){ vDir = position; vec4 p = modelViewMatrix * vec4(position, 1.); gl_Position = projectionMatrix * p; gl_Position.z = gl_Position.w * 0.9999; }
     `,
     fragmentShader: /* glsl */`
-      uniform float uTime; uniform float uCelebrate; uniform float uReveal; uniform float uNight; uniform vec3 uSun; varying vec3 vDir;
+      uniform float uTime; uniform float uCelebrate; uniform float uReveal; uniform float uNight; uniform vec3 uSun; uniform vec3 uCam; uniform vec3 uHaze; varying vec3 vDir;
       ${NOISE}
       void main(){
         vec3 d = normalize(vDir);
@@ -44,9 +46,9 @@ function skyDome(preset) {
         // golden-hour dusk: warm peach horizon, lilac middle, deep blue top,
         // and a sun glow (Ghibli / BotW evening palette)
         float sunDot = max(dot(d, uSun), 0.);
-        vec3 dz = vec3(0.30, 0.44, 0.82), dm = vec3(0.80, 0.66, 0.88), dh = vec3(1.0, 0.76, 0.58);
+        vec3 dz = vec3(0.16, 0.36, 0.86), dm = vec3(0.42, 0.62, 0.96), dh = vec3(0.92, 0.84, 0.86);   // clear blue day, lilac-pearl horizon (look pass)
         vec3 dusk = mix(dh, dm, smoothstep(-0.02, 0.22, h));
-        dusk = mix(dusk, dz, smoothstep(0.22, 0.85, h));
+        dusk = mix(dusk, dz, smoothstep(0.12, 0.6, h));
         dusk = mix(dusk, vec3(0.74, 0.52, 0.62), smoothstep(0.0, -0.25, h));
         dusk += vec3(1.0, 0.55, 0.25) * pow(sunDot, 10.) * 0.35 + vec3(1., .8, .55) * pow(sunDot, 120.) * 0.3;
         dusk += vec3(1.0, 0.95, 0.8) * smoothstep(0.9993, 0.9997, sunDot) * 1.1;   // sun disk
@@ -93,6 +95,24 @@ function skyDome(preset) {
           }
           col += aur * smoothstep(0.02, 0.25, h) * smoothstep(0.95, 0.5, h) * (0.8 + uCelebrate * 0.3) * mix(0.12, 1., uNight);
         }
+        // high cloud deck (look pass, Oct 17): soft painted cumulus far above the peaks and the
+        // sky palace, seen in true perspective, instead of toy puffs drifting at eye level
+        if (h > 0.0) {
+          float H = 4300. - uCam.y;
+          if (H > 60.) {
+            float t = H / max(h, 0.015);
+            vec2 cp = (uCam.xz + d.xz * t) * 0.00011 + vec2(uTime * 0.0012, uTime * 0.0005);
+            float n1 = fbm(cp), n2 = fbm(cp * 3.3 + 5.1);
+            float cov = smoothstep(0.50, 0.74, n1 * 0.8 + n2 * 0.34);
+            float dens = cov * exp(-t * 0.000028) * smoothstep(0.0, 0.06, h);
+            float sl = pow(max(dot(d, uSun), 0.), 2.);
+            vec3 cDay = mix(vec3(0.74, 0.78, 0.92), vec3(1.08, 1.06, 1.02), smoothstep(0.3, 0.8, n2)) * (0.85 + 0.3 * sl) + vec3(1., .72, .5) * pow(max(dot(d, uSun), 0.), 7.) * 0.45;
+            vec3 cNight = mix(vec3(0.06, 0.06, 0.17), vec3(0.24, 0.24, 0.48), smoothstep(0.35, 0.85, n2));
+            col = mix(col, mix(cDay, cNight, uNight), dens * 0.92);
+          }
+        }
+        // the horizon melts into the same air as the land (look.js), so far ridges and sky meet
+        col = mix(col, uHaze, smoothstep(0.14, -0.02, h) * mix(0.6, 0.35, uNight));
         // circular star trails after midnight (U129, technique T57): faint arcs
         // wheeling slowly round a pole above the castle, brightest at their heads
         if (uCelebrate > 0.) {
@@ -180,7 +200,7 @@ function cloudSea(preset) {
 }
 
 function moonAndStars(group) {
-  const moonPos = new THREE.Vector3(-260, 330, -520);
+  const moonPos = MOON_DIR.clone().multiplyScalar(Math.hypot(260, 330, 520));
   const halo = new THREE.Sprite(new THREE.SpriteMaterial({ map: glowTexture(), color: '#b9c8ff', transparent: true, opacity: 0.55, depthWrite: false, blending: THREE.AdditiveBlending, fog: false }));
   halo.position.copy(moonPos); halo.scale.setScalar(340);
   const disk = new THREE.Mesh(new THREE.CircleGeometry(38, 48), new THREE.MeshBasicMaterial({ color: '#fff6e0', fog: false }));
@@ -326,7 +346,7 @@ export function createSky(scene, preset) {
   const far = new THREE.Group(); far.scale.setScalar(4.5); group.add(far);
   const extras = moonAndStars(far);
   const clouds = stylizedClouds(preset);
-  group.add(clouds);
+  clouds.visible = false;                 // replaced by the high cloud deck in the dome (look pass)
   scene.add(group);
   let revealing = false, lastT = null;
 
@@ -339,6 +359,7 @@ export function createSky(scene, preset) {
       dome.material.uniforms.uTime.value = t;
       sea.material.uniforms.uTime.value = t;
       dome.position.copy(camera.position);
+      dome.material.uniforms.uCam.value.copy(camera.position);
       far.position.set(camera.position.x, 0, camera.position.z);
       clouds.position.set(camera.position.x * 0.6, 0, camera.position.z * 0.6);
       const k = 1 + Math.sin(t * 0.7) * 0.15;

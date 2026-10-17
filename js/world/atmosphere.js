@@ -4,7 +4,7 @@
 import * as THREE from 'three';
 import { rng } from './textures.js';
 import { CASTLE, ISLANDS, groundAt } from './layout.js';
-import { MOOD } from './sky.js';
+import { MOOD, MOON_DIR } from './sky.js';
 
 function shaftMaterial(color, strength) {
   return new THREE.ShaderMaterial({
@@ -27,7 +27,7 @@ export function createAtmosphere(scene, preset) {
   const group = new THREE.Group();
   const r = rng(404);
   const mats = [];
-  const moonDir = new THREE.Vector3(-260, 330, -520).normalize();
+  const moonDir = MOON_DIR.clone();
 
   // moonbeams: long soft cylinders tilted along the moonlight
   for (let i = 0; i < preset.shafts; i++) {

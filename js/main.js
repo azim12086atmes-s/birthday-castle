@@ -14,9 +14,12 @@ import { createMagic } from './world/magic.js';
 import { createAtmosphere } from './world/atmosphere.js';
 import { createWorldFill } from './world/fill.js';
 import { createGate } from './world/gate.js';
+import { createSkyBridge } from './world/skybridge.js';
 import { createPaths } from './world/paths.js';
 import { SPAWN, MAIN, groundAt } from './world/layout.js';
 import { MEADOW_TIME } from './world/materials.js';
+import { installAtmosphere, updateAtmosphere, GradeShader } from './world/look.js';
+installAtmosphere();
 const SPAWN_Y = groundAt(SPAWN.x, SPAWN.z) ?? MAIN.y;
 import { Avatar, OUTFITS } from './avatar.js';
 import { Controller } from './controls.js';
@@ -46,6 +49,9 @@ const canvas = $('c');
 const renderer = new THREE.WebGLRenderer({ canvas, antialias: quality.antialias, powerPreference: 'high-performance' });
 renderer.setSize(innerWidth, innerHeight);
 renderer.outputColorSpace = THREE.SRGBColorSpace;
+// filmic tone curve: bright skies and glowing glass roll off softly instead of clipping to white
+renderer.toneMapping = THREE.ACESFilmicToneMapping;
+renderer.toneMappingExposure = 1.0;
 if (quality.shadows) {
   renderer.shadowMap.enabled = true;
   renderer.shadowMap.type = THREE.PCFSoftShadowMap;
@@ -57,7 +63,7 @@ scene.fog = new THREE.Fog(FOG_COLOR, 900, 16000);
 const camera = new THREE.PerspectiveCamera(60, innerWidth / innerHeight, 0.3, 48000);
 camera.position.set(SPAWN.x, SPAWN_Y + 40, SPAWN.z + 60);
 
-const hemi = new THREE.HemisphereLight('#9fb0ff', '#3a2a6a', 1.6);
+const hemi = new THREE.HemisphereLight('#9fb0ff', '#3a2a6a', 1.0);
 scene.add(hemi);
 const key = new THREE.DirectionalLight('#d8e0ff', 1.6);
 if (quality.shadows) {
@@ -73,10 +79,11 @@ scene.add(warm);
 
 // Lighting mood: golden-hour dusk before the celebration, aurora night during it.
 const LIGHT = {
-  dusk: { sky: new THREE.Color('#fff4ec'), ground: new THREE.Color('#8f8296'), hemi: 1.7, key: new THREE.Color('#fff1dc'), keyI: 3.0, warm: new THREE.Color('#ffd6e6'), warmI: 0.35 },   // bright watercolour day, as the sheets are drawn
-  night: { sky: new THREE.Color('#9fb0ff'), ground: new THREE.Color('#3a2a6a'), hemi: 1.15, key: new THREE.Color('#c4ceff'), keyI: 1.3, warm: new THREE.Color('#ffb7d9'), warmI: 0.5 },
+  // a clear sunlit day: a strong warm sun with real shadows, a cool sky fill and a warm ground bounce
+  dusk: { sky: new THREE.Color('#c9d8ff'), ground: new THREE.Color('#8c7a66'), hemi: 0.95, key: new THREE.Color('#fff0d6'), keyI: 3.0, warm: new THREE.Color('#ffd6e6'), warmI: 0.2 },
+  night: { sky: new THREE.Color('#7f8fff'), ground: new THREE.Color('#2c2258'), hemi: 0.85, key: new THREE.Color('#b9c6ff'), keyI: 1.25, warm: new THREE.Color('#ff9fd0'), warmI: 0.35 },
 };
-LIGHT.golden = { sky: new THREE.Color('#ffd2b0'), ground: new THREE.Color('#8a5a6a'), hemi: 1.45, key: new THREE.Color('#ffb070'), keyI: 2.6, warm: new THREE.Color('#ff9ac0'), warmI: 0.7 };
+LIGHT.golden = { sky: new THREE.Color('#ffc9a6'), ground: new THREE.Color('#7a4a5a'), hemi: 0.8, key: new THREE.Color('#ffae6a'), keyI: 3.0, warm: new THREE.Color('#ff8fb8'), warmI: 0.5 };
 const forcedMood = params.get('night') === '1' ? 1 : params.get('dusk') === '1' ? 0 : null;
 const keyDir = new THREE.Vector3();
 function applyMood(n) {
@@ -99,18 +106,21 @@ function applyGolden(gw) {
 }
 let mood = forcedMood ?? (isCelebration() ? 1 : 0);
 
-let composer = null;
+let composer = null, gradePass = null;
 async function setupBloom() {
-  if (!quality.bloom) return;
-  const [{ EffectComposer }, { RenderPass }, { UnrealBloomPass }, { OutputPass }] = await Promise.all([
+  const [{ EffectComposer }, { RenderPass }, { UnrealBloomPass }, { OutputPass }, { ShaderPass }] = await Promise.all([
     import('three/addons/postprocessing/EffectComposer.js'),
     import('three/addons/postprocessing/RenderPass.js'),
     import('three/addons/postprocessing/UnrealBloomPass.js'),
     import('three/addons/postprocessing/OutputPass.js'),
+    import('three/addons/postprocessing/ShaderPass.js'),
   ]);
-  composer = new EffectComposer(renderer);
+  // every tier renders through the same grade and tone curve, so Low looks like High, only simpler
+  composer = new EffectComposer(renderer, new THREE.WebGLRenderTarget(1, 1, { type: THREE.HalfFloatType }));
   composer.addPass(new RenderPass(scene, camera));
-  composer.addPass(new UnrealBloomPass(new THREE.Vector2(innerWidth / 2, innerHeight / 2), quality.key === 'high' ? 0.4 : 0.32, 0.5, 0.93));
+  if (quality.bloom) composer.addPass(new UnrealBloomPass(new THREE.Vector2(innerWidth / 2, innerHeight / 2), quality.key === 'high' ? 0.35 : 0.28, 0.5, 1.5));   // only lamps, glass and magic glow (HDR target)
+  gradePass = new ShaderPass(GradeShader);
+  composer.addPass(gradePass);
   composer.addPass(new OutputPass());
   composer.setPixelRatio(governor.ratio);
   composer.setSize(innerWidth, innerHeight);
@@ -145,6 +155,8 @@ const ships = createShips(scene);
 const worldFill = createWorldFill(scene, quality);
 setSpotObstacles(worldFill.footprints);
 const gate = createGate(scene);
+const skyBridge = createSkyBridge(scene, quality);
+if (params.get('debug')) window.__look = { scene, camera, renderer };
 const paths = createPaths(scene, quality);
 
 // --------------------------------------------------------------------- UI --
@@ -480,13 +492,15 @@ function frame() {
   key.target.position.set(Math.round(focus.x), Math.round(focus.y), Math.round(focus.z));
   key.position.copy(key.target.position).addScaledVector(keyDir, 200);
   coast.update(t, camera);
-  // the haze thins as you climb, so the view from high up stays clear
+  // one shared atmosphere (look.js): height fog with aerial perspective on every surface
   {
-    const hk = THREE.MathUtils.clamp((camera.position.y - 150) / 1400, 0, 1);
-    scene.fog.near = 900 + hk * 5000; scene.fog.far = 16000 + hk * 22000;
+    updateAtmosphere(mood, forcedMood === null && !celebration.active ? sky0.golden : 0, keyDir, scene.fog.color);
+    FOG_COLOR.copy(scene.fog.color);
+    if (gradePass) gradePass.uniforms.uNight.value = mood;
+    scene.fog.near = 900; scene.fog.far = 16000;
     const wu = coast.sea.material.uniforms; wu.uFogNear.value = scene.fog.near; wu.uFogFar.value = scene.fog.far;
     worldFill.fog(scene.fog.near, scene.fog.far); gate.fog(scene.fog.near, scene.fog.far);
-    gate.update(dt, t, camera.position);
+    gate.update(dt, t, camera.position); skyBridge.update();
     paths.update();
   }
   islands.update(t);

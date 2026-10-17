@@ -82,7 +82,8 @@ function swayMaterial(time, radius, key) {
 
 export function createMeadow(scene, preset) {
   const low = preset.grass < 4000, high = preset.grass >= 8000;
-  const CELL = low ? 1.25 : high ? 0.95 : 1.1, R = low ? 34 : high ? 50 : 42;
+  // a wider, denser blanket so the grass runs on toward the middle distance (look pass)
+  const CELL = low ? 1.2 : high ? 0.8 : 0.95, R = low ? 38 : high ? 70 : 55;
   const span = Math.ceil(R / CELL), maxN = Math.ceil(Math.PI * span * span * 1.05);
   const time = { value: 0 };
   const tufts = new THREE.InstancedMesh(tuftGeometry(low ? 6 : 8), swayMaterial(time, R, 'meadow-tuft'), maxN);
@@ -108,7 +109,7 @@ export function createMeadow(scene, preset) {
       const natural = isl.main ? builtHeight(x, z) === null && th > 0.6 : true;
       if (y !== null && natural && isClearOfBuildings(x, z, -1, isl.y)) {
         const [H, S, L] = groundHSL(isl, x, z, isl.main ? th : y - isl.y);
-        if (H > 0.17 && H < 0.47 && S > 0.35 && L < 0.66) {
+        if (H > 0.15 && H < 0.5 && S > 0.22 && L < 0.75) {
           const drift = vnoise(x * 0.05 + 3, z * 0.05 - 7);
           const bloom = hash(i, j, 3) < (drift > 0.55 ? 0.5 : 0.07);
           c = { x, y, z, H, S, L, rot: hash(i, j, 4) * 6.28, s: 0.75 + hash(i, j, 5) * 0.6, bloom, pet: Math.floor(hash(i, j, 6) * PETALS.length), fx: (hash(i, j, 7) - 0.5) * CELL * 0.6, fz: (hash(i, j, 8) - 0.5) * CELL * 0.6 };
@@ -130,7 +131,7 @@ export function createMeadow(scene, preset) {
       if (nt < maxN) {
         dummy.position.set(c.x, c.y, c.z); dummy.rotation.set(0, c.rot, 0); dummy.scale.set(c.s, c.s * (0.85 + (c.L - 0.3) * 0.8), c.s);
         dummy.updateMatrix(); tufts.setMatrixAt(nt, dummy.matrix);
-        color.setHSL(c.H - 0.01, Math.min(1, c.S + 0.06), c.L * 1.08); tufts.setColorAt(nt++, color);
+        color.setHSL(c.H - 0.01, Math.min(1, c.S + 0.16), c.L * 0.82); tufts.setColorAt(nt++, color);
       }
       if (c.bloom && nf < flowers.instanceMatrix.count) {
         const fx = c.x + c.fx, fz = c.z + c.fz;

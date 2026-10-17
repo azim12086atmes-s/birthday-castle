@@ -14,16 +14,17 @@ import { groundAt, addPad } from './layout.js';
 import { crescentH } from './crescent.js';
 import { clearAround } from './paths.js';
 import { MOOD, FOG_COLOR } from './sky.js';
+import { ATMOS_GLSL, atmosUniforms } from './look.js';
 
 // one material per model: the card strip, its frame size and how high its centre sits
 function cardMaterial(map, card) {
   return new THREE.ShaderMaterial({
     uniforms: {
       uMap: { value: map }, uFrame: { value: card.frame }, uLift: { value: card.base_from_centre * card.frame },
-      uNight: MOOD.night, uFog: { value: FOG_COLOR }, uFogNear: { value: 900 }, uFogFar: { value: 16000 },
+      uNight: MOOD.night, uFog: { value: FOG_COLOR }, uFogNear: { value: 900 }, uFogFar: { value: 16000 }, ...atmosUniforms(FOG_COLOR),
     },
     vertexShader: /* glsl */`
-      uniform float uFrame, uLift; varying vec2 vUv; varying float vK; varying float vDist;
+      uniform float uFrame, uLift; varying vec2 vUv; varying float vK; varying float vDist; varying vec3 vW;
       void main(){
         vec3 base = instanceMatrix[3].xyz, c0 = instanceMatrix[0].xyz;
         float s = length(c0), rot = atan(-c0.z, c0.x);
@@ -33,19 +34,20 @@ function cardMaterial(map, card) {
         vK = mod(floor(ang / 0.7853982 + 0.5) + 16.0, 8.0);
         vec3 right = normalize(vec3(d.y, 0.0, -d.x));
         vec3 w = centre + right * position.x * uFrame * s + vec3(0.0, position.y * uFrame * s, 0.0);
-        vUv = uv;
+        vUv = uv; vW = w;
         vec4 mv = viewMatrix * vec4(w, 1.0);
         vDist = -mv.z;
         gl_Position = projectionMatrix * mv;
       }`,
     fragmentShader: /* glsl */`
       uniform sampler2D uMap; uniform float uNight; uniform vec3 uFog; uniform float uFogNear, uFogFar;
-      varying vec2 vUv; varying float vK; varying float vDist;
+      varying vec2 vUv; varying float vK; varying float vDist; varying vec3 vW;
+      ${ATMOS_GLSL}
       void main(){
         vec4 c = texture2D(uMap, vec2((vK + clamp(vUv.x, 0.002, 0.998)) / 8.0, vUv.y));
         if (c.a < 0.5) discard;
         vec3 col = c.rgb * mix(vec3(1.0), vec3(0.36, 0.46, 0.92), uNight);
-        col = mix(col, uFog, smoothstep(uFogNear, uFogFar, vDist));
+        col = atmosApply(col, vW, uFog);
         gl_FragColor = vec4(col, 1.0);
         #include <colorspace_fragment>
       }`,
@@ -73,6 +75,7 @@ export function createWorldFill(scene, quality) {
 
   fetch('data/world/placements.json').then((r) => r.json()).then((P) => {
     for (const [name, m] of Object.entries(P.models)) {
+      if (name === 'SkyBridge_Segment') continue;      // the sky bridge is drawn by skybridge.js now (look pass)
       const [n, f] = RANGE[m.tier];
       // cards cost two triangles, so they reach further than the old far copies did
       // town houses stay 3D across a whole town (r <= 225 m) on every tier, never cards inside it

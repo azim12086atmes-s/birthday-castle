@@ -1,3 +1,4 @@
+import { ATMOS_GLSL, atmosUniforms } from './look.js';
 // The Starlight Coast itself (sheets 04, 10, 12): the land, the open sea with its
 // uneven wave field, reefs and surf, calm Lantern Lake, and the forests inland.
 //
@@ -51,9 +52,18 @@ function rockGrade(m) {
         float strata = 0.95 + 0.05 * sin(vMWorld.y * 0.13 + rn * 9.0 + mNoise(rp * 0.004) * 12.0);
         // the colour map carries baked light (sky occlusion, contact shadows): rock and snow keep its shading
         float bake = clamp(dot(diffuseColor.rgb, vec3(0.3, 0.59, 0.11)) / 0.5, 0.6, 1.15);
-        vec3 rock = mix(vec3(0.56, 0.52, 0.6), vec3(0.74, 0.68, 0.7), rn) * strata * bake;
+        // rock (look pass): warmer, darker stone with vertical runnels and crevices on the walls and moss on
+        // the ledges, so the cliffs read as carved rock rather than pale plastic under the filmic sun
+        float runnel = mNoise(vec2((rp.x - rp.y) * 0.045, vMWorld.y * 0.0045)) * 0.6 + mNoise(vec2((rp.x + rp.y) * 0.17, vMWorld.y * 0.016)) * 0.4;
+        float crev = smoothstep(0.62, 0.32, runnel);
+        vec3 rock = mix(vec3(0.34, 0.31, 0.34), vec3(0.6, 0.55, 0.53), rn) * strata * bake;
+        rock *= 1.0 - 0.38 * crev;
+        rock = mix(rock, vec3(0.30, 0.42, 0.24) * bake, smoothstep(0.55, 0.82, vMUp) * smoothstep(0.5, 0.75, mNoise(rp * 0.03 + 9.0)) * 0.6);
         float hi = smoothstep(500.0, 1100.0, vMWorld.y);
         diffuseColor.rgb = mix(diffuseColor.rgb, rock, steep * (0.55 + 0.4 * hi) * smoothstep(8.0, 40.0, vMWorld.y) * (1.0 - rg));
+        // the flat tops of the high plateaus (palace mesa, satellites) are green meadow, not bare grey stone
+        float mesa = smoothstep(0.9, 0.97, vMUp) * smoothstep(250.0, 320.0, vMWorld.y) * (1.0 - smoothstep(930.0, 990.0, vMWorld.y)) * (1.0 - rg);
+        diffuseColor.rgb = mix(diffuseColor.rgb, vec3(0.34, 0.5, 0.23) * (0.8 + 0.4 * rn) * bake, mesa * 0.85);
         // snow from about 1 km on the old ring
         float snow = smoothstep(980.0, 1250.0, vMWorld.y + (rn - 0.5) * 160.0) * smoothstep(0.45, 0.7, vMUp) * (1.0 - rg);
         diffuseColor.rgb = mix(diffuseColor.rgb, vec3(0.97, 0.97, 1.02) * min(bake, 1.0), snow);
@@ -85,10 +95,7 @@ function rockGrade(m) {
         totalEmissiveRadiance += (gc * glw * 0.6 + vec3(1.0, 0.55, 0.8) * bls * 0.2) * pulse * uNightG * smoothstep(1.0, 6.0, vMWorld.y) * (1.0 - rg);
       }`).replace('#include <fog_fragment>', `
       #ifdef USE_FOG
-        // the high peaks rise out of the haze, so the great ridge reads from the palace
-        float pk = smoothstep(600.0, 4500.0, vMWorld.y);
-        float fogFactor = smoothstep(fogNear, fogFar * (1.0 + 1.6 * pk), vFogDepth) * (1.0 - 0.35 * pk);
-        gl_FragColor.rgb = mix(gl_FragColor.rgb, fogColor, fogFactor);
+        gl_FragColor.rgb = atmosApply(gl_FragColor.rgb, vMWorld, fogColor);   // the shared haze (look.js); peaks rise out of it
       #endif`);
   };
   m.customProgramCacheKey = () => (key ? key.call(m) : 'land') + '-rock';
@@ -173,12 +180,13 @@ function waterMesh() {
     uniforms: {
       uH: { value: depthTexture() }, uGrid: { value: new THREE.Vector3(G.x0, G.z0, G.span) },
       uTime: { value: 0 }, uNight: MOOD.night, uSun: { value: SUN_DIR }, uMoon: { value: MOON_DIR },
-      uFog: { value: FOG_COLOR }, uFogNear: { value: 900 }, uFogFar: { value: 16000 },
+      uFog: { value: FOG_COLOR }, uFogNear: { value: 900 }, uFogFar: { value: 16000 }, ...atmosUniforms(FOG_COLOR),
     },
     vertexShader: 'varying vec3 vW; void main(){ vec4 w = modelMatrix * vec4(position, 1.); vW = w.xyz; gl_Position = projectionMatrix * viewMatrix * w; }',
     fragmentShader: /* glsl */`
       uniform sampler2D uH; uniform vec3 uGrid; uniform float uTime; uniform float uNight; uniform vec3 uSun; uniform vec3 uMoon;
       uniform vec3 uFog; uniform float uFogNear; uniform float uFogFar; varying vec3 vW;
+      ${ATMOS_GLSL}
       float hsh(vec2 p){ return fract(sin(dot(p, vec2(127.1, 311.7))) * 43758.5453); }
       float vn(vec2 p){ vec2 i = floor(p), f = fract(p); f = f * f * (3. - 2. * f);
         return mix(mix(hsh(i), hsh(i + vec2(1, 0)), f.x), mix(hsh(i + vec2(0, 1)), hsh(i + vec2(1, 1)), f.x), f.y); }
@@ -224,7 +232,7 @@ function waterMesh() {
         float bio = clamp(foam, 0., 1.) * (.5 + .5 * sin(uTime * 2. + vn(p * .2) * 6.));
         c += vec3(.2, .9, 1.) * bio * uNight * .5;
         c = pow(c, vec3(2.2));
-        c = mix(c, uFog, smoothstep(uFogNear, uFogFar, dist));
+        c = atmosApply(c, vW, uFog);
         gl_FragColor = vec4(c, 1.);
         #include <colorspace_fragment>
       }`,

@@ -188,7 +188,7 @@ function ribbonMesh(n) {
         float e = abs(vSide);
         float a = vA * (1.0 - vS * 0.7) * (pow(1.0 - e, 2.0) * 0.55 + smoothstep(0.22, 0.0, e) * 1.0);
         if (a < 0.004) discard;
-        gl_FragColor = vec4(mix(vC, vec3(1.0), smoothstep(0.25, 0.0, e) * 0.5) * a * 2.4, 1.0);
+        gl_FragColor = vec4(mix(vC, vec3(1.0), smoothstep(0.25, 0.0, e) * 0.35) * a * 1.3, 1.0);
       }`,
   });
   const mesh = new THREE.Mesh(g, mat);
@@ -301,19 +301,20 @@ export function createMagic(scene, preset) {
       want.set(key, spec(key, 'spiral', { c: pl.at, seed: (pl.id.charCodeAt(2) * 0.13) % 1, p: [7, 260, 1.2, 0.18], w: 4, cols: pl.freed ? [COL.gold, COL.rose] : [COL.cyan, COL.lilac], pri: 50 - d / 100 }));
     }
     // swift streaks and lazy drifts round the viewer, renewed when they end
-    const nSwift = tier === 'low' ? 5 : tier === 'medium' ? 12 : 22, nDrift = tier === 'low' ? 3 : tier === 'medium' ? 8 : 14;
+    // a few graceful ribbons read as magic; twenty hard white streaks read as glitches (owner, Oct 17)
+    const nSwift = tier === 'low' ? 2 : tier === 'medium' ? 4 : 6, nDrift = tier === 'low' ? 2 : tier === 'medium' ? 4 : 6;
     for (let i = 0; i < nSwift; i++) {
       const key = 'sw' + i, old = slots.find((s) => s && s.key === key);
       if (old && time - old.t0 < old.life && old.c.distanceTo(cam) < 260) { want.set(key, old); continue; }
       const a = r() * Math.PI * 2, rr = 20 + r() * 60, x = cam.x + Math.cos(a) * rr, z = cam.z + Math.sin(a) * rr;
-      want.set(key, spec(key, 'swift', { c: new THREE.Vector3(x, Math.max(ground(x, z), cam.y - 20) + 4 + r() * 14, z), p: [12 + r() * 22, 6 + r() * 10, 0.5 + r() * 0.5, 1.0], w: 2.2 + r() * 1.6, life: 8 + r() * 6, k: i, pri: 30 }));
+      want.set(key, spec(key, 'swift', { c: new THREE.Vector3(x, Math.max(ground(x, z), cam.y - 20) + 4 + r() * 14, z), p: [12 + r() * 22, 6 + r() * 10, 0.35 + r() * 0.3, 1.0], w: 0.7 + r() * 0.6, life: 8 + r() * 6, k: i, pri: 30 }));
     }
     for (let i = 0; i < nDrift; i++) {
       const key = 'dr' + i, old = slots.find((s) => s && s.key === key);
       if (old && time - old.t0 < old.life && old.c.distanceTo(cam) < 400) { want.set(key, old); continue; }
       const a = r() * Math.PI * 2, rr = 20 + r() * 70, x = cam.x + Math.cos(a) * rr, z = cam.z + Math.sin(a) * rr;
       const wd = new THREE.Vector3(0.8 + (r() - 0.5) * 0.4, 0, 0.3 + (r() - 0.5) * 0.4).normalize();
-      want.set(key, spec(key, 'drift', { c: new THREE.Vector3(x, ground(x, z), z), d: wd, p: [140, 4 + r() * 12, 6 + r() * 6, 40], w: 2.4 + r() * 1.6, life: 22, k: i + 3, pri: 25 }));
+      want.set(key, spec(key, 'drift', { c: new THREE.Vector3(x, ground(x, z), z), d: wd, p: [140, 4 + r() * 12, 6 + r() * 6, 40], w: 1.0 + r() * 0.8, life: 22, k: i + 3, pri: 25 }));
     }
     for (const e of events) want.set(e.key, e);
     // keep what is still wanted, free the rest, then fill by priority
