@@ -53,7 +53,8 @@ export function createShips(scene) {
   const trips = new Map();
   const tmp = new THREE.Vector3(), tan = new THREE.Vector3();
 
-  function slot(i) { return new THREE.Vector3((i % 2 ? 1.3 : -1.3), 0.15, -5 + Math.floor(i / 2) * 2.2); }
+  // three abreast in six rows: 18 seats, the whole party of 16 with room to spare
+  function slot(i) { return new THREE.Vector3(((i % 3) - 1) * 1.7, 0.15, -5.4 + Math.floor((i % 18) / 3) * 1.95); }
 
   return {
     // trip: { id, from, to, riders: [ids], dest }

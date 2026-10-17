@@ -58,7 +58,7 @@ export function createQuest(o) {
 
   let shown = JSON.parse(JSON.stringify(S));     // the last state put on screen (the host edits S in place)
   let activity = null, actPlace = null, actT = 0, reported = false, downs = 0;
-  const hearts = () => 2 + players().length - downs;
+  const hearts = () => 3 + Math.floor((activity?.meta.n || players().length) / 2) - downs;
   let cutscene = null;
   const seenTitles = new Map();
 
@@ -145,13 +145,13 @@ export function createQuest(o) {
     const p = places.byId[r.place];
     if (r.a === 'start' && p && !S.activity) {
       const freed = S.shards.includes(p.id);
-      S.activity = { id: Math.random().toString(36).slice(2, 8), place: p.id, stage: 0, tpl: p.game.template, seed: (Math.random() * 1e9) | 0, replay: freed };
+      S.activity = { id: Math.random().toString(36).slice(2, 8), place: p.id, stage: 0, tpl: p.game.template, seed: (Math.random() * 1e9) | 0, replay: freed, n: players().length };
       publish();
     } else if ((r.a === 'won' || r.a === 'skip') && S.activity && (r.aid === S.activity.id || r.a === 'skip')) {
       const a = S.activity, pl = places.byId[a.place];
       S.lastWin = { aid: a.id, place: a.place, stage: a.stage, tpl: a.tpl, replay: !!a.replay, secs: Math.round(r.secs || 0), limit: r.limit || 180 };
       if (a.stage === 0 && !a.replay) {
-        S.activity = { id: Math.random().toString(36).slice(2, 8), place: a.place, stage: 1, tpl: pl.challenge.template, seed: (Math.random() * 1e9) | 0 };
+        S.activity = { id: Math.random().toString(36).slice(2, 8), place: a.place, stage: 1, tpl: pl.challenge.template, seed: (Math.random() * 1e9) | 0, n: players().length };
       } else {
         S.activity = null;
         if (!a.replay && !S.shards.includes(a.place)) S.shards.push(a.place);
@@ -221,7 +221,7 @@ export function createQuest(o) {
     const spot = places.spotOf(place);
     actT = 0; reported = false;
     const ctx = {
-      scene, spot, seed: a.seed, meId: myId(),
+      scene, spot, seed: a.seed, meId: myId(), party: a.n,
       players, mePos: () => controller.pos, nameOf, combat,
       send: (op) => emit({ k: 'aop', aid: a.id, op }),
       toast: ui.toast, isHost: auth, time: () => actT,

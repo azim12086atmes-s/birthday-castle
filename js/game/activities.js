@@ -55,17 +55,24 @@ function base(ctx, tpl) {
     dispose() { disposeTree(root); },
   };
 }
-const n = (ctx) => Math.max(1, ctx.players().length);
+// the party size the host saw when the game began, so every screen scales it alike
+const n = (ctx) => Math.max(1, ctx.party || ctx.players().length);
+// foes and bosses grow with the party: base x (0.5 + 0.1 x players), 16 players at most
+const scale = (ctx) => 0.5 + 0.1 * Math.min(16, n(ctx));
 const atRing = (c, r, a, y) => new THREE.Vector3(c.x + Math.cos(a) * r, y, c.z + Math.sin(a) * r);
 
 // ---- 1. Harmony puzzle: pads that must all glow at once ---------------------------
 function harmony(ctx) {
   const A = base(ctx, 'harmony_puzzle');
-  const nodes = Math.min(6, Math.max(3, n(ctx) + 1));
-  const linger = 3 + 8 / n(ctx);                      // alone you must run; together you just stand
+  // more than 8 players split into two teams, each with its own ring of pads
+  const teams = n(ctx) > 8 ? 2 : 1;
+  const per = teams === 2 ? 5 : Math.min(6, Math.max(3, n(ctx) + 1));
+  const nodes = per * teams;
+  const linger = 3 + 8 / Math.min(8, n(ctx));          // alone you must run; together you just stand
   const pads = [];
   for (let i = 0; i < nodes; i++) {
-    const p = atRing(ctx.spot, 9, (i / nodes) * Math.PI * 2, 0);
+    const t = Math.floor(i / per), c = teams === 2 ? ctx.spot.clone().add(new THREE.Vector3(t ? 16 : -16, 0, 0)) : ctx.spot;
+    const p = atRing(c, teams === 2 ? 7 : 9, ((i % per) / per) * Math.PI * 2, 0);
     p.y = A.ground(p.x, p.z) + 0.05;
     const disc = new THREE.Mesh(new THREE.CircleGeometry(1.6, 28), new THREE.MeshBasicMaterial({ color: '#5a6aa8', transparent: true, opacity: 0.8 }));
     disc.rotation.x = -Math.PI / 2; disc.position.copy(p);
@@ -134,7 +141,7 @@ function arena(ctx) {
   const A = base(ctx, 'arena_defence');
   A.combat = true;
   const waves = 3;
-  const per = Math.min(14, 4 + 2 * n(ctx));
+  const per = Math.max(3, Math.round(8 * scale(ctx)));
   let wave = 0, waveT = 0;
   let foes = [];
   const spawnWave = () => {
@@ -199,7 +206,7 @@ function boss(ctx, place) {
       const m = new THREE.Group();
       m.add(new THREE.Mesh(new THREE.OctahedronGeometry(1, 0), glowBasic('#ff8ad8')), glowSprite('#ff5ac8', 5));
       A.root.add(m);
-      spots.push({ id: `s${phase}_${i}`, hp: 5, m, pos: new THREE.Vector3(), r: 1.8, i });
+      spots.push({ id: `s${phase}_${i}`, hp: Math.max(2, Math.round(5 * scale(ctx))), m, pos: new THREE.Vector3(), r: 1.8, i });
     }
   };
   makeSpots();
@@ -263,7 +270,7 @@ function party(ctx) {
   const A = base(ctx, 'party_game');
   A.combat = true;
   const R = rng(ctx.seed);
-  const goal = 12 + 4 * n(ctx);
+  const goal = Math.round(12 + 4 * Math.min(16, n(ctx)) * 0.8);
   const bubbles = [];
   const bubMat = new THREE.MeshPhongMaterial({ color: '#bfe8ff', emissive: '#5a7aff', emissiveIntensity: 0.3, transparent: true, opacity: 0.45, shininess: 120 });
   const goldMat = new THREE.MeshPhongMaterial({ color: '#ffe08a', emissive: '#c08a20', emissiveIntensity: 0.6, transparent: true, opacity: 0.7, shininess: 120 });

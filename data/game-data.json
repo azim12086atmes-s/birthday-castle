@@ -2787,7 +2787,7 @@
    "id": "flying_ship",
    "name": "The flying ship",
    "kind": "group",
-   "seats": 16,
+   "seats": 18,
    "look": "Open deck everyone stands on; carries the group between places"
   }
  ],
@@ -2866,16 +2866,128 @@
    "becomes": "the owner's character"
   }
  },
- "players": [],
+ "players": [
+  {
+   "id": "honoree",
+   "displayName": "{her}",
+   "gender": "female",
+   "group": "honoree",
+   "ride": "her_carriage"
+  },
+  {
+   "id": "owner",
+   "displayName": "The Mew",
+   "gender": "male",
+   "group": "owner"
+  },
+  {
+   "id": "friend_01",
+   "slot": 1,
+   "displayName": "Friend 1",
+   "gender": "female",
+   "group": "ladies"
+  },
+  {
+   "id": "friend_02",
+   "slot": 2,
+   "displayName": "Friend 2",
+   "gender": "female",
+   "group": "ladies"
+  },
+  {
+   "id": "friend_03",
+   "slot": 3,
+   "displayName": "Friend 3",
+   "gender": "female",
+   "group": "ladies"
+  },
+  {
+   "id": "friend_04",
+   "slot": 4,
+   "displayName": "Friend 4",
+   "gender": "female",
+   "group": "ladies"
+  },
+  {
+   "id": "friend_05",
+   "slot": 5,
+   "displayName": "Friend 5",
+   "gender": "female",
+   "group": "ladies"
+  },
+  {
+   "id": "friend_06",
+   "slot": 6,
+   "displayName": "Friend 6",
+   "gender": "female",
+   "group": "ladies"
+  },
+  {
+   "id": "friend_07",
+   "slot": 7,
+   "displayName": "Friend 7",
+   "gender": "female",
+   "group": "ladies"
+  },
+  {
+   "id": "friend_08",
+   "slot": 8,
+   "displayName": "Friend 8",
+   "gender": "male",
+   "group": "men"
+  },
+  {
+   "id": "friend_09",
+   "slot": 9,
+   "displayName": "Friend 9",
+   "gender": "male",
+   "group": "men"
+  },
+  {
+   "id": "friend_10",
+   "slot": 10,
+   "displayName": "Friend 10",
+   "gender": "male",
+   "group": "men"
+  },
+  {
+   "id": "friend_11",
+   "slot": 11,
+   "displayName": "Friend 11",
+   "gender": "male",
+   "group": "men"
+  },
+  {
+   "id": "friend_12",
+   "slot": 12,
+   "displayName": "Friend 12",
+   "gender": "male",
+   "group": "men"
+  },
+  {
+   "id": "friend_13",
+   "slot": 13,
+   "displayName": "Friend 13",
+   "gender": "male",
+   "group": "men"
+  },
+  {
+   "id": "friend_14",
+   "slot": 14,
+   "displayName": "Friend 14",
+   "gender": "male",
+   "group": "men"
+  }
+ ],
  "templates": [
   {
    "id": "harmony_puzzle",
    "name": "Harmony puzzle",
-   "how": "Pressure pads, mirrors, bells or beams that need several players at once",
+   "how": "Pressure pads, mirrors, bells or beams that need several players at once; more than 8 split into two teams with their own nodes",
    "why": "Nobody can do it alone; people have to talk",
    "players": {
     "min": 2,
-    "max": 8
+    "max": 16
    },
    "win": "every node lit at the same time",
    "status": "designed",
@@ -2906,7 +3018,7 @@
    "why": "Quick fun with a winner, easy to join",
    "players": {
     "min": 1,
-    "max": 12
+    "max": 16
    },
    "win": "first across the line; everyone who finishes gets the shard",
    "status": "designed",
@@ -2932,7 +3044,7 @@
    "why": "Back-to-back teamwork, revive each other",
    "players": {
     "min": 1,
-    "max": 12
+    "max": 16
    },
    "win": "survive all waves",
    "status": "designed",
@@ -2955,7 +3067,7 @@
    "why": "The big shared win of each act",
    "players": {
     "min": 2,
-    "max": 12
+    "max": 16
    },
    "win": "purify all weak spots",
    "status": "designed",
@@ -2981,7 +3093,7 @@
    "why": "Laughter, no pressure",
    "players": {
     "min": 2,
-    "max": 12
+    "max": 16
    },
    "win": "highest score after the timer",
    "status": "designed"
@@ -2993,7 +3105,7 @@
    "why": "Everyone protects the same thing",
    "players": {
     "min": 1,
-    "max": 12
+    "max": 16
    },
    "win": "the escorted thing arrives with light left",
    "status": "designed"
@@ -3005,7 +3117,7 @@
    "why": "Shared creation; each person adds a part",
    "players": {
     "min": 2,
-    "max": 12
+    "max": 16
    },
    "win": "every slot filled",
    "status": "designed"
@@ -3017,7 +3129,7 @@
    "why": "Friends learn about each other; deeply personal",
    "players": {
     "min": 2,
-    "max": 12
+    "max": 16
    },
    "win": "answer a set number right as a team",
    "status": "designed"
@@ -5957,7 +6069,8 @@
    "nearRadiusM": 60,
    "particles": 3000,
    "bloom": false,
-   "pixelRatio": 0.75
+   "pixelRatio": 0.75,
+   "fullAvatars": 6
   },
   {
    "id": "medium",
@@ -5967,7 +6080,8 @@
    "nearRadiusM": 120,
    "particles": 12000,
    "bloom": true,
-   "pixelRatio": 1
+   "pixelRatio": 1,
+   "fullAvatars": 10
   },
   {
    "id": "high",
@@ -5977,10 +6091,18 @@
    "nearRadiusM": 200,
    "particles": 40000,
    "bloom": true,
-   "pixelRatio": 1.5
+   "pixelRatio": 1.5,
+   "fullAvatars": 15
   }
  ],
  "net": {
+  "party": {
+   "friends": 14,
+   "maxPlayers": 16,
+   "voiceCallRangeM": 60,
+   "stateHz": 10,
+   "scaling": "Boss health and wave size grow with the players present (base x (0.5 + 0.1 x players)); party hearts = 3 + players / 2; team games need at least half the party for every node or slot."
+  },
   "messages": [
    "join",
    "state",

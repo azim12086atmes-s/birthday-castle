@@ -17,7 +17,7 @@ import { createPaths } from './world/paths.js';
 import { SPAWN, MAIN, groundAt } from './world/layout.js';
 import { MEADOW_TIME } from './world/materials.js';
 const SPAWN_Y = groundAt(SPAWN.x, SPAWN.z) ?? MAIN.y;
-import { Avatar } from './avatar.js';
+import { Avatar, OUTFITS } from './avatar.js';
 import { Controller } from './controls.js';
 import { createTravel, makeLotusBoat } from './travel.js';
 import { createStardustHunt, createWishLanterns } from './minigames.js';
@@ -268,6 +268,7 @@ function startGame(p) {
     const r = remotes.get(id);
     if (!r) return;
     scene.remove(r.avatar.root, r.boat);
+    if (r.far) scene.remove(r.far);
     remotes.delete(id);
     voice.removePeer(id);
     voicePositions.delete(id);
@@ -411,6 +412,20 @@ function startGame(p) {
   else setup();
 }
 
+// a simple stand-in for a player drawn beyond the full-detail few
+function farFigure(prof) {
+  // everyone sees the everyday gown here: party gowns show only to ladies, up close
+  const col = (prof.gender === 'male' ? OUTFITS[prof.outfit] : OUTFITS[prof.modest])?.color || '#c9b6ff';
+  const g = new THREE.Group();
+  const robe = new THREE.Mesh(new THREE.ConeGeometry(0.42, 1.45, 8), new THREE.MeshLambertMaterial({ color: col }));
+  robe.position.y = 0.72;
+  const head = new THREE.Mesh(new THREE.SphereGeometry(0.19, 8, 6), new THREE.MeshLambertMaterial({ color: prof.skin || '#e8c4a8' }));
+  head.position.y = 1.62;
+  g.add(robe, head);
+  scene.add(g);
+  return g;
+}
+
 // ------------------------------------------------------------------- loop --
 const clock = new THREE.Clock();
 let t = 0;
@@ -487,9 +502,25 @@ function frame() {
     g.me.animate(dt, g.controller.speed, t);
     g.hunt.update(t, dt, g.controller.pos, camera);
 
+    // with 16 players only the nearest few draw in full detail; the rest are simple figures
+    if ((g.lodAcc = (g.lodAcc || 0) - dt) <= 0) {
+      g.lodAcc = 0.5;
+      const FULL = { low: 6, medium: 10, high: 15 }[quality.key] || 10;
+      const list = [...g.remotes.values()].sort((x, y) => x.avatar.root.position.distanceToSquared(g.controller.pos) - y.avatar.root.position.distanceToSquared(g.controller.pos));
+      list.forEach((r, i) => { r.lodFar = i >= FULL; });
+    }
     for (const [id, r] of g.remotes) {
       const a = r.avatar.root;
       a.position.lerp(r.target, Math.min(1, dt * 8));
+      const hiddenMew = r.profile.mew && !g.quest.revealed;
+      if (r.lodFar && !hiddenMew) {
+        if (!r.far) r.far = farFigure(r.profile);
+        a.visible = false; r.far.visible = true;
+        r.far.position.copy(a.position); r.far.rotation.y = a.rotation.y;
+      } else {
+        if (r.far) r.far.visible = false;
+        if (!hiddenMew) a.visible = true;
+      }
       let d = r.facing - a.rotation.y; d = Math.atan2(Math.sin(d), Math.cos(d));
       a.rotation.y += d * Math.min(1, dt * 10);
       r.avatar.animate(dt, r.speed, t);
