@@ -13,12 +13,16 @@ ii, jj = np.mgrid[0:N, 0:N].astype(np.float64)
 u, v = jj / N, ii / N                       # 0..1 image coords, v down = south
 # crescent centre line: lower part of an ellipse around the island
 cx, cy, rx, ry = 0.50, 0.43, 0.455, 0.50
-du, dv = (u - cx) / rx, (v - cy) / ry
+ryn = 0.385                                  # the ring wraps around the back (north) just off the north coast (owner, Oct 17)
+nb = np.clip((cy - v) / 0.18, 0, 1); nb = nb * nb * (3 - 2 * nb)          # 0 in the south half, easing to 1 towards the back
+du, dv = (u - cx) / rx, (v - cy) / np.where(v < cy, ryn, ry)
 r = np.hypot(du, dv); th = np.degrees(np.arctan2(dv, du))   # th 90 = due south
-dist_m = np.abs(r - 1.0) * min(rx, ry) * 20691.0               # distance from the ridge line, metres
-arc = np.clip(1 - np.maximum(0, np.abs(th - 90) - 70) / 22, 0, 1)   # full strength from th 20..160, fading to 0 by -2 / 182 (the open north)
-arc *= (th > -30)
-width = 650 + 250 * fbm(N, 6, 4, 11)
+dist_m = np.abs(r - 1.0) * (min(rx, ry) + (ryn - min(rx, ry)) * nb) * 20691.0   # distance from the ridge line, metres
+# the ring runs all the way round except a wide mouth to the open ocean, centred due north (th -90)
+mouth = np.abs(((th + 90) + 180) % 360 - 180)
+arc = np.clip((mouth - 20) / 14, 0, 1)
+arc *= 1 - 0.2 * nb                                     # the back wall is a little lower than the front
+width = (650 + 250 * fbm(N, 6, 4, 11)) * (1 - 0.3 * nb)
 prof = np.exp(-(dist_m / width) ** 2)
 peaks = (0.35 + 0.65 * np.clip(ridged(N, 9, 7, 21), 0, None)) ** 1.3
 H = (1500 + 450 * fbm(N, 5, 3, 31)) * peaks * prof * arc
