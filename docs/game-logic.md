@@ -131,7 +131,8 @@ thread's notes. Players can walk through the placed models for now.
   compact towns (about 1,300 light `*_town` houses round a plaza, flat only out to the
   `TOWN_PADS` radius in layout.js, hills beyond), plus 172 roadside hamlets, farms, ruins and
   outcrops and about 1,250 verge rocks. Town streets are warm stone setts; trees keep 15 m
-  clear of every town house and roadside site; on Low the houses draw in full only within 150 m.
+  clear of every town house and roadside site; town houses are landmark tier and stay 3D across a whole town on every
+  quality; near copies are fetched from 1.8 times their range so a town is 3D on arrival.
 - Sky palace (study thread, `design/world-fill/ridge/cliffs/SKY-PALACE.md`): the palace stands
   at 797.5 m on stepped rings; everyone spawns on the cloud platform (-710, 688, 12020) south of
   the gate massif. `js/world/gate.js` swings the great doors open when someone comes within
