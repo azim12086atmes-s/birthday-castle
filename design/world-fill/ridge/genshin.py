@@ -69,7 +69,7 @@ def paint(h, B, mpp, n, seed=0, outer=False):
     if not outer:
         snowline = 1050 + 120 * f1; s0, s1 = 1.0, 1.6
     else:
-        snowline = 2500 + 450 * f1 + 250 * f3; s0, s1 = 3.6, 5.6
+        snowline = 2300 + 400 * f1 + 250 * f3; s0, s1 = 4.6, 7.5
     sn = sstep(h, snowline - 80, snowline + 220) * (1 - sstep(sl, s0, s1))
     col = mix(col, mix(C(0.95, 0.97, 1.0), C(0.80, 0.80, 0.96), sstep(sl, 0.4, 1.4)), sn)
     where(M(20), mix(C(0.93, 0.96, 1.0), C(0.80, 0.82, 0.97), sstep(sl, 0.4, 1.0)))
