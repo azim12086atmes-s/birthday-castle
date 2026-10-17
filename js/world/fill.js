@@ -60,7 +60,7 @@ export function createWorldFill(scene, quality) {
   // close up, medium and high draw the full layout meshes (near-hd: every triangle, 2048 px
   // textures, 1024 for props); low keeps the light quarter-triangle copies. The cliff kit has one copy.
   const hd = quality.key !== 'low';
-  const dirFor = (kind, name) => (kind === 'near' && hd && !/^(CliffWall|Viaduct|SeaPillar)_/.test(name) ? 'near-hd' : kind);
+  const dirFor = (kind, name) => (kind === 'near' && hd && !/^(CliffWall_|Viaduct_|SeaPillar_|SkyBridge_|Gate|CloudPlatform)/.test(name) ? 'near-hd' : kind);
   const texLoader = new THREE.TextureLoader();
   const cardGeo = new THREE.PlaneGeometry(1, 1);
   let cards = {};
