@@ -65,7 +65,7 @@ function rockGrade(m) {
         float ph = mNoise(vMWorld.xz * 0.01) * 6.2832;
         float pulse = 0.6 + 0.4 * sin(uMTime * 2.2 + ph);
         vec3 gc = mix(vec3(0.25, 0.9, 1.0), vec3(0.65, 0.45, 1.0), mNoise(vMWorld.xz * 0.03 + 7.0));
-        totalEmissiveRadiance += (gc * glw * 0.32 + vec3(1.0, 0.55, 0.8) * bls * 0.12) * pulse * uNightG * smoothstep(1.0, 6.0, vMWorld.y) * (1.0 - rg);
+        totalEmissiveRadiance += (gc * glw * 0.6 + vec3(1.0, 0.55, 0.8) * bls * 0.2) * pulse * uNightG * smoothstep(1.0, 6.0, vMWorld.y) * (1.0 - rg);
       }`).replace('#include <fog_fragment>', `
       #ifdef USE_FOG
         // the high peaks rise out of the haze, so the great ridge reads from the palace

@@ -49,15 +49,18 @@ function sparkles(count) {
         float band0 = -6.0, band = 30.0, px = 2.5; vec3 c = vec3(1.0, 0.96, 0.9); float tw = 0.7 + 0.3 * sin(t * (2.0 + aSeed * 4.0) + s);
         if (aMode < 0.5) {                                  // glitter: fine twinkling sparkles
           p += vec3(sin(t * 0.3 + s), sin(t * 0.4 + s * 1.3) * 0.6, cos(t * 0.27 + s)) * 1.5;
-          c = mix(vec3(1.0, 0.95, 0.85), aSeed > 0.6 ? vec3(0.45, 0.9, 1.0) : vec3(1.0, 0.82, 0.48), 0.5);
-          tw = pow(0.5 + 0.5 * sin(t * (3.0 + aSeed * 5.0) + s), 3.0); px = 2.0 + aSeed * 2.0;
+          c = mix(vec3(1.0, 0.95, 0.85), aSeed > 0.6 ? vec3(0.45, 0.9, 1.0) : vec3(1.0, 0.82, 0.48), 0.5) * 1.4;
+          tw = pow(0.5 + 0.5 * sin(t * (3.0 + aSeed * 5.0) + s), 3.0); px = 3.0 + aSeed * 3.0;
         } else if (aMode < 1.5) {                           // fireflies: warm, low over the grass, blinking
           band0 = -1.7; band = 3.6;
+          // in loose clusters that blink together
+          float cl = floor(aSeed * 14.0);
+          p.xz = mix(p.xz, vec2(h(cl) - 0.5, h(cl + 3.3) - 0.5) * 80.0, 0.75);
           p += vec3(sin(t * 0.5 + s) * 2.0, sin(t * 0.9 + s) * 0.4, cos(t * 0.43 + s) * 2.0);
-          c = vec3(0.85, 1.0, 0.45); tw = pow(max(0.0, sin(t * 1.3 + s)), 4.0); px = 4.0 + aSeed * 2.0;
+          c = vec3(0.9, 1.0, 0.5) * 1.8; tw = pow(max(0.0, sin(t * 1.3 + cl * 2.1 + aSeed * 1.5)), 3.0); px = 8.0 + aSeed * 4.0;
         } else if (aMode < 2.5) {                           // spores: cyan and violet, rising and swaying
           p += vec3(sin(t * 0.6 + s) * 0.8, t * (0.3 + aSeed * 0.3), cos(t * 0.5 + s) * 0.8);
-          c = aSeed > 0.5 ? vec3(0.4, 0.95, 1.0) : vec3(0.75, 0.6, 1.0); px = 3.0 + aSeed * 1.5;
+          c = (aSeed > 0.5 ? vec3(0.4, 0.95, 1.0) : vec3(0.75, 0.6, 1.0)) * 1.6; px = 6.0 + aSeed * 3.0;
         } else if (aMode < 3.5) {                           // petals: pink and white, fluttering down
           p += vec3(wind.x * t * 1.2 + sin(t * 1.4 + s) * 1.2, -t * (0.6 + aSeed * 0.5), wind.y * t * 1.2 + cos(t * 1.1 + s) * 1.2);
           c = aSeed > 0.4 ? vec3(1.0, 0.62, 0.8) : vec3(1.0, 0.92, 0.95); tw = 0.55; px = 6.0 + aSeed * 3.0;
@@ -67,7 +70,7 @@ function sparkles(count) {
         } else {                                            // stardust: slow falling star specks, high up
           band0 = 4.0; band = 26.0;
           p += vec3(sin(t * 0.2 + s), -t * (0.25 + aSeed * 0.2), cos(t * 0.2 + s));
-          c = vec3(1.0, 0.95, 0.8); tw = pow(0.5 + 0.5 * sin(t * (2.0 + aSeed * 3.0) + s), 2.0); px = 1.8 + aSeed * 1.5;
+          c = vec3(1.0, 0.95, 0.8) * 1.5; tw = pow(0.5 + 0.5 * sin(t * (2.0 + aSeed * 3.0) + s), 2.0); px = 3.0 + aSeed * 2.5;
         }
         // the Hush: everything turns to slow grey ash
         c = mix(c, vec3(0.6, 0.6, 0.64), uHush); p.y -= uHush * t * 0.4;
@@ -170,7 +173,8 @@ function ribbonMesh(n) {
         float age = uTime - aT.x;
         float life = aT.y > 0.0 ? smoothstep(0.0, 1.2, age) * smoothstep(aT.y, aT.y - 1.5, age) : smoothstep(0.0, 2.0, age);
         float dist = length(cameraPosition - p);
-        vA = ok * life * smoothstep(aKind > 4.5 ? 9000.0 : 2200.0, aKind > 4.5 ? 6000.0 : 1300.0, dist) * (1.0 - 0.75 * uHush);
+        float far = aKind > 4.5 ? 9000.0 : aKind > 0.5 && aKind < 1.5 ? 7500.0 : 2200.0;      // meteors and spirals read from afar
+        vA = ok * life * smoothstep(far, far * 0.6, dist) * (1.0 - 0.75 * uHush);
         vec3 c = mix(aColA, aColB, aS);
         c *= 0.85 + 0.35 * sin(aS * 26.0 - uTime * 4.0 + aSeed * 30.0);
         vC = mix(c, vec3(0.62), uHush * 0.8);
@@ -182,9 +186,9 @@ function ribbonMesh(n) {
       void main(){
         // a bright core line with soft glowing edges
         float e = abs(vSide);
-        float a = vA * (1.0 - vS) * (1.0 - vS * 0.4) * (pow(1.0 - e, 3.0) * 0.8 + smoothstep(0.35, 0.0, e) * 0.9);
+        float a = vA * (1.0 - vS * 0.7) * (pow(1.0 - e, 2.0) * 0.55 + smoothstep(0.22, 0.0, e) * 1.0);
         if (a < 0.004) discard;
-        gl_FragColor = vec4(mix(vC, vec3(1.0), smoothstep(0.3, 0.0, e) * 0.35) * a * 1.3, 1.0);
+        gl_FragColor = vec4(mix(vC, vec3(1.0), smoothstep(0.25, 0.0, e) * 0.5) * a * 2.4, 1.0);
       }`,
   });
   const mesh = new THREE.Mesh(g, mat);
@@ -194,7 +198,7 @@ function ribbonMesh(n) {
 
 // ---- footstep light rings: a pool of flat quads -----------------------------------------
 function stepRings(n) {
-  const g = new THREE.InstancedBufferGeometry().copy(new THREE.PlaneGeometry(3.2, 3.2).rotateX(-Math.PI / 2));
+  const g = new THREE.InstancedBufferGeometry().copy(new THREE.PlaneGeometry(4, 4).rotateX(-Math.PI / 2));
   const born = new THREE.InstancedBufferAttribute(new Float32Array(n).fill(-99), 1).setUsage(THREE.DynamicDrawUsage);
   const at = new THREE.InstancedBufferAttribute(new Float32Array(n * 3), 3).setUsage(THREE.DynamicDrawUsage);
   g.setAttribute('aBorn', born); g.setAttribute('aAt', at); g.instanceCount = n;
@@ -212,7 +216,7 @@ function stepRings(n) {
         float d = length(vUv - 0.5) * 2.0, r = 0.12 + 0.82 * sqrt(vK);
         float band = smoothstep(0.1, 0.0, abs(d - r)) + smoothstep(r, 0.0, d) * 0.12;
         vec3 c = mix(vec3(0.42, 0.95, 1.0), vec3(0.72, 0.55, 1.0), d);
-        gl_FragColor = vec4(c * band * (1.0 - vK) * uNight * 0.9, 1.0);
+        gl_FragColor = vec4(c * band * (1.0 - vK) * uNight * 1.8, 1.0);
       }`,
   });
   const mesh = new THREE.Mesh(g, mat);
@@ -280,36 +284,36 @@ export function createMagic(scene, preset) {
   function replan(cam, ctx) {
     want.clear();
     // the Mew always has its pale gold ribbon, and every pet a small one
-    if (ctx.mew) want.set('mew', spec('mew', 'orbit', { c: ctx.mew, p: [1.6, 0, 1.4, 2.6], w: 0.09, cols: [COL.pearl, COL.gold], pri: 100 }));
-    (ctx.pets || []).slice(0, tier === 'low' ? 1 : 6).forEach((p, i) => want.set('pet' + i, spec('pet' + i, 'orbit', { c: p, p: [0.9, 0, 2.0, 2.2], w: 0.05, k: i + 2, pri: 60 - i })));
-    if (ctx.trail) want.set('trail', spec('trail', 'trail', { c: ctx.trail.pos, d: ctx.trail.dir, p: [1.6, 0, 1, 60], w: 1.4, cols: [COL.cyan, COL.rose], pri: 90 }));
+    if (ctx.mew) want.set('mew', spec('mew', 'orbit', { c: ctx.mew, p: [1.6, 0, 1.4, 2.6], w: 0.3, cols: [COL.pearl, COL.gold], pri: 100 }));
+    (ctx.pets || []).slice(0, tier === 'low' ? 1 : 6).forEach((p, i) => want.set('pet' + i, spec('pet' + i, 'orbit', { c: p, p: [0.9, 0, 2.0, 2.2], w: 0.18, k: i + 2, pri: 60 - i })));
+    if (ctx.trail) want.set('trail', spec('trail', 'trail', { c: ctx.trail.pos, d: ctx.trail.dir, p: [1.6, 0, 1, 60], w: 3, cols: [COL.cyan, COL.rose], pri: 90 }));
     // spirals round the palace spires and the light pillars of the places nearby
     SPIRES.forEach(([x, z, top], i) => {
       const c = new THREE.Vector3(x * S, PAL.y, z * S), d = c.distanceTo(cam);
-      if (d > 5000 && !finaleOn) return;
+      if (d > 7500 && !finaleOn) return;
       const n = finaleOn ? 2 : 1;
-      for (let j = 0; j < n; j++) want.set(`sp${i}.${j}${finaleOn ? 'f' : ''}`, spec(`sp${i}.${j}${finaleOn ? 'f' : ''}`, 'spiral', { c, seed: (i * 0.37 + j * 0.5) % 1, p: [10 + (i % 3) * 4, top * S - PAL.y, 1 + j * 0.3, 0.16], w: finaleOn ? 3 : 2, k: i + j, pri: (finaleOn ? 80 : 40) - d / 500 }));
+      for (let j = 0; j < n; j++) want.set(`sp${i}.${j}${finaleOn ? 'f' : ''}`, spec(`sp${i}.${j}${finaleOn ? 'f' : ''}`, 'spiral', { c, seed: (i * 0.37 + j * 0.5) % 1, p: [10 + (i % 3) * 4, top * S - PAL.y, 1 + j * 0.3, 0.16], w: finaleOn ? 10 : 7, k: i + j, pri: (finaleOn ? 80 : 40) - d / 500 }));
     });
     for (const pl of ctx.places || []) {
       const d = pl.at.distanceTo(cam);
       if (d > 1500) continue;
       const key = 'pl' + pl.id + (pl.freed ? 'f' : '');
-      want.set(key, spec(key, 'spiral', { c: pl.at, seed: (pl.id.charCodeAt(2) * 0.13) % 1, p: [7, 260, 1.2, 0.18], w: 1.2, cols: pl.freed ? [COL.gold, COL.rose] : [COL.cyan, COL.lilac], pri: 50 - d / 100 }));
+      want.set(key, spec(key, 'spiral', { c: pl.at, seed: (pl.id.charCodeAt(2) * 0.13) % 1, p: [7, 260, 1.2, 0.18], w: 4, cols: pl.freed ? [COL.gold, COL.rose] : [COL.cyan, COL.lilac], pri: 50 - d / 100 }));
     }
     // swift streaks and lazy drifts round the viewer, renewed when they end
-    const nSwift = tier === 'low' ? 3 : tier === 'medium' ? 6 : 10, nDrift = tier === 'low' ? 2 : 4;
+    const nSwift = tier === 'low' ? 5 : tier === 'medium' ? 12 : 22, nDrift = tier === 'low' ? 3 : tier === 'medium' ? 8 : 14;
     for (let i = 0; i < nSwift; i++) {
       const key = 'sw' + i, old = slots.find((s) => s && s.key === key);
       if (old && time - old.t0 < old.life && old.c.distanceTo(cam) < 260) { want.set(key, old); continue; }
-      const a = r() * Math.PI * 2, rr = 40 + r() * 90, x = cam.x + Math.cos(a) * rr, z = cam.z + Math.sin(a) * rr;
-      want.set(key, spec(key, 'swift', { c: new THREE.Vector3(x, Math.max(ground(x, z), cam.y - 30) + 8 + r() * 22, z), p: [18 + r() * 30, 10 + r() * 14, 0.5 + r() * 0.5, 0.6], w: 0.6 + r() * 0.5, life: 8 + r() * 6, k: i, pri: 30 }));
+      const a = r() * Math.PI * 2, rr = 20 + r() * 60, x = cam.x + Math.cos(a) * rr, z = cam.z + Math.sin(a) * rr;
+      want.set(key, spec(key, 'swift', { c: new THREE.Vector3(x, Math.max(ground(x, z), cam.y - 20) + 4 + r() * 14, z), p: [12 + r() * 22, 6 + r() * 10, 0.5 + r() * 0.5, 1.0], w: 2.2 + r() * 1.6, life: 8 + r() * 6, k: i, pri: 30 }));
     }
     for (let i = 0; i < nDrift; i++) {
       const key = 'dr' + i, old = slots.find((s) => s && s.key === key);
       if (old && time - old.t0 < old.life && old.c.distanceTo(cam) < 400) { want.set(key, old); continue; }
-      const a = r() * Math.PI * 2, rr = 30 + r() * 120, x = cam.x + Math.cos(a) * rr, z = cam.z + Math.sin(a) * rr;
+      const a = r() * Math.PI * 2, rr = 20 + r() * 70, x = cam.x + Math.cos(a) * rr, z = cam.z + Math.sin(a) * rr;
       const wd = new THREE.Vector3(0.8 + (r() - 0.5) * 0.4, 0, 0.3 + (r() - 0.5) * 0.4).normalize();
-      want.set(key, spec(key, 'drift', { c: new THREE.Vector3(x, ground(x, z), z), d: wd, p: [140, 9 + r() * 16, 6 + r() * 6, 90], w: 0.8 + r() * 0.6, life: 22, k: i + 3, pri: 25 }));
+      want.set(key, spec(key, 'drift', { c: new THREE.Vector3(x, ground(x, z), z), d: wd, p: [140, 4 + r() * 12, 6 + r() * 6, 40], w: 2.4 + r() * 1.6, life: 22, k: i + 3, pri: 25 }));
     }
     for (const e of events) want.set(e.key, e);
     // keep what is still wanted, free the rest, then fill by priority
@@ -329,7 +333,7 @@ export function createMagic(scene, preset) {
     // a place's head is freed: the ring of colour, and spirals climbing towards the lantern
     restore(at) {
       wave.position.copy(at).y += 4; wave.visible = true; wave.material.uniforms.uK.value = 0;
-      for (let i = 0; i < 6; i++) events.push(spec(`rs${time}.${i}`, 'spiral', { c: at, seed: i / 6, p: [6 + i * 2, 420, 4 + i * 0.4, 0.22], w: 2.2, k: i, life: 10, pri: 120 }));
+      for (let i = 0; i < 6; i++) events.push(spec(`rs${time}.${i}`, 'spiral', { c: at, seed: i / 6, p: [6 + i * 2, 420, 4 + i * 0.4, 0.22], w: 6, k: i, life: 10, pri: 120 }));
       plan = 0;
     },
     set hush(v) { hush = v; },
@@ -375,7 +379,7 @@ export function createMagic(scene, preset) {
         const lowAlt = THREE.MathUtils.clamp(1 - (cam.y - ground(cam.x, cam.z)) / 60, 0, 1);
         const W0 = air.material.uniforms.uW0.value, W1 = air.material.uniforms.uW1.value;
         const k = Math.min(1, dt * 0.6);
-        W0.lerp({ x: 0.22 + 0.15 * night, y: night * lowAlt * (0.5 + 0.5 * meadow), z: Math.min(0.9, glowwood * 0.8 + night * 0.25) }, k);
+        W0.lerp({ x: 0.3 + 0.2 * night, y: night * lowAlt * (0.75 + 0.25 * meadow), z: Math.min(0.95, glowwood * 0.9 + night * 0.4) }, k);
         W1.lerp({ x: Math.min(0.75, blossom * 0.6) * (1 - night * 0.5), y: meadow * (1 - night) * 0.55 * lowAlt, z: night * 0.55 + (1 - lowAlt) * 0.2 }, k);
       }
 

@@ -89,7 +89,7 @@ export function createClock(data) {
       if (Math.abs(elev - state.elev) > 40 || forcedPhase) state.elev = elev;   // a pinned phase shows at once
       const e = state.elev;
       state.phase = phaseOf(e);
-      state.night = THREE.MathUtils.smoothstep(-e, -10, 8);       // 0 day .. 1 night (dusk, with the sun just down, is mostly night)
+      state.night = THREE.MathUtils.smoothstep(-e, -2, 14);       // 0 day .. 1 night (dusk, the sun 4 degrees down, is a third night: a violet twilight)
       state.golden = Math.max(0, 1 - Math.abs(e - 5) / 12) * (1 - state.night);
       // the sun swings up and down on its fixed bearing; every sky shader reads SUN_DIR
       const r = Math.cos(THREE.MathUtils.degToRad(Math.max(e, 3)));
