@@ -79,7 +79,7 @@ export function createWorldFill(scene, quality) {
       const g = far ? -1 : groundAt(x, z, y + 5);
       const yy = g < 0 ? y : y + THREE.MathUtils.clamp(g - crescentH(x, z), -15, 60);
       const mat = new THREE.Matrix4().compose(new THREE.Vector3(x, yy, z), new THREE.Quaternion().setFromAxisAngle(new THREE.Vector3(0, 1, 0), rot), new THREE.Vector3(s, s, s));
-      M.items.push({ x, z, mat, place, k: far === 1 ? 3 : far ? 1.5 : 1 });
+      M.items.push({ x, z, mat, place, k: far === 3 ? Infinity : far === 1 ? 3 : far ? 1.5 : 1 });      // the cliff walls always draw their near copy (culled by bounds)
       const dims = P.models[m].dims;
       if (M.tier !== 'prop' && place !== 'sky' && place !== 'cliffs') footprints.push({ x, z, r: 0.5 * Math.max(dims[0], dims[2]) * s });
     }
