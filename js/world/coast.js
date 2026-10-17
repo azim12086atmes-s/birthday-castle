@@ -49,7 +49,10 @@ function rockGrade(m) {
         vec3 rock = mix(vec3(0.56, 0.52, 0.6), vec3(0.74, 0.68, 0.7), rn) * strata;
         float hi = smoothstep(500.0, 1100.0, vMWorld.y);
         diffuseColor.rgb = mix(diffuseColor.rgb, rock, steep * (0.55 + 0.4 * hi) * smoothstep(8.0, 40.0, vMWorld.y));
-        float snow = smoothstep(980.0, 1250.0, vMWorld.y + (rn - 0.5) * 160.0) * smoothstep(0.45, 0.7, vMUp);
+        // snow from about 1 km on the old ring; on the great ridge from 2.6 km, with rock on faces over 60 degrees
+        float rg = smoothstep(9500.0, 11000.0, length(rp - vec2(-709.5, 2260.5)));
+        float sl = mix(980.0, 2600.0, rg);
+        float snow = smoothstep(sl, sl + 270.0, vMWorld.y + (rn - 0.5) * 160.0) * smoothstep(mix(0.45, 0.45, rg), mix(0.7, 0.55, rg), vMUp);
         diffuseColor.rgb = mix(diffuseColor.rgb, vec3(0.97, 0.97, 1.02), snow);
       }`).replace('#include <fog_fragment>', `
       #ifdef USE_FOG
