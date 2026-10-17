@@ -21,7 +21,7 @@ Ten Grand Path places are now compact towns: B12, B20, B21, B02, B06, B18, B04, 
 
 ## Along the roads (`roadside.py`, place `roadside`)
 
-There is a feature about every 420 m along every road: 65 hamlets of 3 to 6 houses facing the road, 22 farms with a windmill, 36 ruins with fallen pillars and rubble, and 49 rock outcrops. About 1,250 small rocks line the verges every 90 m. Items carry `town: hamlet | farm | ruin | outcrop | verge`. The rocks and ruins are 9k-tri `*_town` copies too. The ground is not reshaped; each building sits at the lowest corner of its footprint. Sites are listed in `roadside.json`.
+There is a feature about every 420 m along every road: 59 hamlets of 3 to 6 houses facing the road, 22 farms with a windmill, 36 ruins with fallen pillars and rubble, and 48 rock outcrops (none in the gate massif, tunnel, cloud platform or under the sky bridge). About 1,150 small rocks line the verges every 90 m. Items carry `town: hamlet | farm | ruin | outcrop | verge`. The rocks and ruins are 9k-tri `*_town` copies too. The ground is not reshaped; each building sits at the lowest corner of its footprint. Sites are listed in `roadside.json`.
 
 ## What the game code needs (Game logic owns this)
 

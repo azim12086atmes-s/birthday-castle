@@ -50,7 +50,12 @@ allpts = np.array([q for ln in lines for q in ln])
 from scipy.spatial import cKDTree
 road_tree = cKDTree(allpts)
 item_tree = cKDTree(np.array([[it['x'], it['z']] for it in W['items']]))
+def seg_d(x, z, a, b):
+    ax, az = a; bx, bz = b; t = max(0, min(1, ((x - ax) * (bx - ax) + (z - az) * (bz - az)) / ((bx - ax) ** 2 + (bz - az) ** 2)))
+    return math.hypot(x - ax - t * (bx - ax), z - az - t * (bz - az))
 def near_town(x, z, pad):
+    if 9000 < z < 12500 and abs(x + 710) < 700: return True        # gate massif, tunnel and cloud platform (y 688)
+    if seg_d(x, z, (0, 2420), (-710, 10420)) < 120: return True     # under and beside the sky bridge
     for t in TOWNS.values():
         if math.hypot(x - t['x'], z - t['z']) < t['r'] + pad: return True
     return any(math.hypot(x - a, z - b) < 380 for a, b in AT.values())
