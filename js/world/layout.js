@@ -271,13 +271,14 @@ export function lakeDistance(x, z) { return lake1(x / S, z / S) * S; }
 function palaceGround(x, z) {
   const ax = Math.abs(x);
   // the plateau the palace stands on, with B25 beside it
-  const dx = Math.max(0, x - 470, -425 - x), dz = Math.max(0, -420 - z, z - PAL1.hd);
+  // (6 drawn m inside the cliff lip, so the blend ends at the lip and the cliff walls stay clear)
+  const dx = Math.max(0, x - 464, -419 - x), dz = Math.max(0, -414 - z, z - PAL1.hd);
   const d = Math.hypot(dx, dz);
   // (the heightmap holds the plateau and terraces as a sheer mesa in its moat, so the blend is only a lip)
   if (z <= PAL1.hd + 2 && d < 6) return [PAL1.y - 0.4, 1 - smooth(0, 6, d)];
   for (const T of TERRACES1) {
     if (z > T.z0 - 2 && z <= T.z1 + 2) {
-      const e = Math.max(0, ax - T.hw);
+      const e = Math.max(0, ax - (T.hw - 6));
       if (e < 6) return [T.y - 0.4, 1 - smooth(0, 6, e)];
     }
   }
