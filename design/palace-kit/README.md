@@ -35,6 +35,8 @@ They also set the style: the wall's front view is the `style_image` every new pi
 | P10 | Pinnacle turret cluster | roofline | ~60 |
 | P11 | Grand stair flight | cascade and side stairs | stacked, bent |
 | P12 | Grand double doors | Rose Gate leaves, small doors | ~20 |
+| P13 | Arching support pillar | arches joining the cliff plateaus under the palace | along every edge |
+| P14 | Sea pillar segment | tall pillars rising from the water | stacked 3-10x |
 
 Things that cost nothing and are NOT generated: curved bays (bend), left/right (mirror), tower heights (stack), smaller copies (scale), girih panels, lotus dado and brocade bands (textures already in the game).
 
@@ -45,11 +47,11 @@ Each piece: an untextured preview first (about 20 credits), look at it, and text
 | Batch | Pieces | Credits if all kept |
 |---|---|---|
 | Priority 1 | P01-P06 | ~180 |
-| Priority 2 | P07-P10 | ~120 |
+| Priority 2 | P07-P10, P13-P14 | ~180 |
 | Priority 3 | P11-P12 | ~60 |
-| All | 12 | ~360 |
+| All | 14 | ~420 |
 
-A bad preview costs only the 20, so a couple of retries keep the whole kit under ~400. The script refuses to spend past `MESHY_BUDGET` (default 400) and never generates the same piece twice.
+A bad preview costs only the 20, so a couple of retries keep the whole kit under ~480. The script refuses to spend past `MESHY_BUDGET` (default 400, raise it for the full kit) and never generates the same piece twice.
 
 ## Running it
 
