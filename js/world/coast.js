@@ -57,6 +57,23 @@ function rockGrade(m) {
         // snow from about 1 km on the old ring
         float snow = smoothstep(980.0, 1250.0, vMWorld.y + (rn - 0.5) * 160.0) * smoothstep(0.45, 0.7, vMUp) * (1.0 - rg);
         diffuseColor.rgb = mix(diffuseColor.rgb, vec3(0.97, 0.97, 1.02) * min(bake, 1.0), snow);
+      }
+      {
+        // painted ground (study thread, Oct 17): broad sunlit and shaded patches, brushy tufts that hold up to
+        // the middle distance, warm earth on the banks between flats, so the meadows stop reading as flat plastic
+        vec2 wp = vMWorld.xz;
+        float camD = length(vMWorld - cameraPosition);
+        float m1 = mNoise(wp * 0.0042) * 0.55 + mNoise(wp * 0.013 + 2.0) * 0.45;
+        vec2 sw = vec2(wp.x * 0.8 + wp.y * 0.6, -wp.x * 0.6 + wp.y * 0.8);
+        float m2 = mNoise(sw * vec2(0.05, 0.12) + 7.0) * 0.6 + mNoise(sw * vec2(0.14, 0.33) + 1.0) * 0.4;
+        vec3 pc = diffuseColor.rgb;
+        float grass = smoothstep(0.72, 0.9, vMUp) * smoothstep(0.015, 0.06, pc.g - max(pc.r, pc.b * 0.95)) * (1.0 - rg);
+        vec3 sunG = pc * vec3(1.14, 1.08, 0.78), coolG = pc * vec3(0.8, 0.94, 1.06);
+        vec3 gc = mix(coolG, sunG, smoothstep(0.28, 0.72, m1));
+        gc *= mix(1.0, 0.84 + 0.3 * m2, 1.0 - smoothstep(250.0, 1400.0, camD));
+        diffuseColor.rgb = mix(diffuseColor.rgb, gc, grass * 0.9);
+        float bank = smoothstep(0.9, 0.78, vMUp) * smoothstep(0.55, 0.7, vMUp) * (1.0 - rg) * smoothstep(3.0, 12.0, vMWorld.y);
+        diffuseColor.rgb = mix(diffuseColor.rgb, pc * vec3(1.08, 0.88, 0.74), bank * 0.55);
       }`).replace('#include <emissivemap_fragment>', `#include <emissivemap_fragment>
       {
         // bioluminescence by night: the teal-violet glowwood and the pastel blossom meadows breathe light
