@@ -53,11 +53,11 @@ export function createShips(scene) {
   const trips = new Map();
   const tmp = new THREE.Vector3(), tan = new THREE.Vector3();
 
-  // three abreast in six rows: 18 seats, the whole party of 16 with room to spare
+  // three abreast in six rows: 18 seats for the 15 friends; the Mew hovers beside her instead
   function slot(i) { return new THREE.Vector3(((i % 3) - 1) * 1.7, 0.15, -5.4 + Math.floor((i % 18) / 3) * 1.95); }
 
   return {
-    // trip: { id, from, to, riders: [ids], dest }
+    // trip: { id, from, to, riders: [ids], mew, her, dest } (the Mew has no seat)
     start(trip) {
       if (trips.has(trip.id)) return;
       const from = v3(trip.from), to = v3(trip.to);
@@ -73,17 +73,23 @@ export function createShips(scene) {
     // where a rider should be right now (null when not on a trip)
     riderPos(id) {
       for (const tr of trips.values()) {
-        const i = tr.riders.indexOf(id);
+        let i = tr.riders.indexOf(id), at = null;
+        if (i < 0 && id && id === tr.mew) {
+          // the Mew hovers just off her right shoulder, a little ahead so she sees it
+          const h = tr.riders.indexOf(tr.her);
+          at = h >= 0 ? slot(h).add(new THREE.Vector3(-0.9, 0.35, 0.7)) : new THREE.Vector3(0, 1.2, 7.5);
+          i = 0;
+        }
         if (i < 0) continue;
         if (tr.t > BOARD + tr.fly + LAND) return null;
-        const s = slot(i).applyMatrix4(tr.ship.matrixWorld);
+        const s = (at || slot(i)).applyMatrix4(tr.ship.matrixWorld);
         return { pos: s, phase: tr.t < BOARD ? 'board' : tr.t < BOARD + tr.fly ? 'fly' : 'land', k: tr.t < BOARD ? tr.t / BOARD : 1, trip: tr };
       }
       return null;
     },
     landingFor(id) {
       for (const tr of trips.values()) {
-        const i = tr.riders.indexOf(id);
+        const i = id && id === tr.mew ? Math.max(0, tr.riders.indexOf(tr.her)) : tr.riders.indexOf(id);
         if (i >= 0) return tr.toV.clone().add(new THREE.Vector3(Math.cos(i * 1.3) * (3 + i * 0.6), 0, Math.sin(i * 1.3) * (3 + i * 0.6)));
       }
       return null;

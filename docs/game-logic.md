@@ -22,7 +22,8 @@ Light pillars mark all 32 places from far away: blue before the Hush, grey after
 gold for the next Grand Path stop, pink while a game runs there, mint once freed.
 
 **M** (or ⛵) opens the map. The sky ship lifts you onto its deck and sails there, first
-person. After the Hush the whole party boards together.
+person. After the Hush the whole party boards together. The Mew takes no seat: it hovers
+just off her right shoulder for the whole ride.
 
 ## Playing it (`js/game/progress.js`)
 
