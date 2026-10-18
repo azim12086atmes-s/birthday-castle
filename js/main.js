@@ -617,6 +617,9 @@ function frame() {
 }
 
 await setupBloom();
+// compile every shader the world uses behind the loading screen, in parallel where the browser
+// allows, so the first look in each direction doesn't hitch (as Arkenfall warms its programs)
+try { await renderer.compileAsync(scene, camera); } catch (e) { console.warn('shader warm-up', e); }
 requestAnimationFrame(frame);
 setTimeout(() => {
   $('loading').style.opacity = 0;
