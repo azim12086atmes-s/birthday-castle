@@ -55,6 +55,9 @@ function cardMaterial(map, card) {
   });
 }
 
+// scattered props the owner found cluttered and low-mesh
+const CLUTTER = /^(Rubble_Pile|Rock_Formation_Collec|Meadow_Rocks|Stone|Stone_town|Desert_Rock_Formation|A_big_menhir_with_anc|Ancient_Stone_Relic)$/;
+
 // metres: the near copy within the first number, the far copy out to the second
 const RANGE = { landmark: [450, 7000], building: [300, 3500], prop: [140, 1200] };
 
@@ -86,6 +89,9 @@ export function createWorldFill(scene, quality) {
     for (const [m, place, x, y, z, rot, s, far] of P.items) {
       const M = models.get(m);
       if (!M) continue;
+      // world pass 2b (owner, Oct 18: the low-mesh builds add nothing): the scatter along the roads and in
+      // the wilds, and the rubble and rock props everywhere, are gone; places keep their buildings
+      if (place === 'roadside' || place === 'wild' || place === 'road' || CLUTTER.test(m)) continue;
       // sit on the game's own ground: the palace terraces and district pads differ a little from the raw crescent
       // (sky isles, the great ridge's citadels and the cliff kit's viaducts and sea pillars keep their own height)
       const g = far ? -1 : groundAt(x, z, y + 5);
