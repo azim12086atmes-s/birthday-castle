@@ -164,3 +164,13 @@ canvas#c { transition: filter 2s; }
 #pets .grid button { display: flex; flex-direction: column; gap: 2px; padding: 10px; text-align: left; }
 #pets .grid b { color: var(--gold); } #pets .grid span { color: var(--muted); font-size: 13px; }
 #roster { max-height: 46vh; overflow-y: auto; }
+/* pets: a colour swatch, the power, and how it follows; party games menu */
+#pets .grid i { display: block; width: 34px; height: 34px; border-radius: 50%; }
+#pets .grid em { color: var(--muted); font-size: 12px; opacity: 0.8; }
+#pets .grid button.on { outline: 2px solid var(--gold); }
+#pets .close, #party .close { margin-top: 10px; }
+#party .panel { width: min(560px, calc(100vw - 32px)); max-height: calc(100vh - 60px); overflow-y: auto; }
+#party .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 8px; margin-top: 8px; }
+#party .grid button { display: flex; flex-direction: column; gap: 3px; padding: 10px; text-align: left; }
+#party .grid b { color: var(--gold); } #party .grid span { color: var(--muted); font-size: 13px; }
+#results .best { color: var(--gold); margin-top: 4px; font-size: 15px; }

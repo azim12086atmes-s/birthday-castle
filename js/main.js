@@ -424,7 +424,7 @@ function startGame(p) {
   };
   // then how to play, and a companion to choose
   const setup = () => progress.howTo(() => progress.pickPet());
-  progress.bind({ mePos: () => controller.pos });
+  progress.bind({ mePos: () => controller.pos, controller });
   if (!p.mew) quest.playScene('arrival', { onEnd: p.honoree ? welcome : setup });
   else setup();
 }
