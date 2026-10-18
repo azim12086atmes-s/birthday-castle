@@ -110,12 +110,16 @@ function swayMaterial(time, radius, key, blade, inner = 0) {
         ${GROUND_NOISE}`)
       .replace('#include <color_fragment>', `#include <color_fragment>
         ${blade ? `{
-          // the same sunlit and cool patches as the ground beneath, darker at the root, light at the tip
-          float n1 = gNoise(vOrg.xz * 0.0035), n2 = gNoise(vOrg.xz * 0.017 + 3.0);
-          vec3 g = diffuseColor.rgb * vec3(0.74, 1.0, 0.56);
-          g *= mix(vec3(0.78, 0.95, 1.1), vec3(1.16, 1.08, 0.7), smoothstep(0.28, 0.78, n1));
-          g *= 0.82 + 0.34 * n2;
-          diffuseColor.rgb = mix(g * 0.3, g * vec3(1.32, 1.12, 0.55) + vec3(0.1, 0.07, 0.0), smoothstep(0.0, 1.0, vTip));
+          // Arkenfall-style sward colours (linear, dark and saturated, lit up by the sun and tone
+          // curve): a ramp moss > lush > meadow > sedge > dry straw, chosen by 5 m stands and 1.6 m
+          // tussocks, with each blade a little lighter or darker; dark at the root, sunlit at the tip
+          float stand = gNoise(vOrg.xz / 5.3 + vec2(gNoise(vOrg.xz / 13.0) * 1.7, 3.1));
+          float tuss = fract(sin(dot(floor(vOrg.xz / 1.6), vec2(12.9898, 78.233))) * 43758.5453);
+          float cp = clamp(0.55 + (stand - 0.5) * 0.5 + (tuss - 0.5) * 0.2 + (gNoise(vOrg.xz * 0.0035) - 0.5) * 0.35, 0.0, 1.0);
+          vec3 cMoss = vec3(0.083, 0.08, 0.036), cLush = vec3(0.082, 0.155, 0.05), cMeadow = vec3(0.11, 0.18, 0.06), cSedge = vec3(0.17, 0.18, 0.07), cDry = vec3(0.36, 0.28, 0.1);
+          vec3 g = cp < 0.35 ? mix(cMoss, cLush, cp / 0.35) : cp < 0.65 ? mix(cLush, cMeadow, (cp - 0.35) / 0.3) : cp < 0.85 ? mix(cMeadow, cSedge, (cp - 0.65) / 0.2) : mix(cSedge, cDry, (cp - 0.85) / 0.15);
+          g *= 0.84 + 0.32 * fract(vColor.g * 37.0);
+          diffuseColor.rgb = mix(g * 0.45, g * 2.1 + vec3(0.02, 0.015, 0.0), smoothstep(0.0, 1.0, vTip));
           // slow cloud shadows drifting over the field, shared with the ground beneath
           diffuseColor.rgb *= 0.62 + 0.38 * smoothstep(0.32, 0.62, gNoise(vOrg.xz * 0.004 + vec2(uTime * 0.012, uTime * 0.005)));
         }` : `{
