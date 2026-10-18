@@ -1,107 +1,7 @@
-// Air full of magic: golden and bioluminescent stardust, flowing ribbons of
-// light, fireworks and rising sky lanterns. Animated entirely on the GPU.
+// Fireworks and rising sky lanterns for the celebration. The stardust and the
+// ribbons of light moved to magic.js.
 import * as THREE from 'three';
 import { glowTexture, rng } from './textures.js';
-
-function motes(count) {
-  const r = rng(5);
-  const pos = new Float32Array(count * 3), seed = new Float32Array(count), col = new Float32Array(count * 3);
-  const gold = new THREE.Color('#ffd27a'), blue = new THREE.Color('#6fe8ff'), pink = new THREE.Color('#ff9bd6');
-  for (let i = 0; i < count; i++) {
-    pos[i * 3] = (r() - 0.5) * 120; pos[i * 3 + 1] = r() * 40 - 4; pos[i * 3 + 2] = (r() - 0.5) * 120;
-    seed[i] = r();
-    const c = r() < 0.45 ? gold : r() < 0.8 ? blue : pink;
-    col.set([c.r, c.g, c.b], i * 3);
-  }
-  const g = new THREE.BufferGeometry();
-  g.setAttribute('position', new THREE.BufferAttribute(pos, 3));
-  g.setAttribute('aSeed', new THREE.BufferAttribute(seed, 1));
-  g.setAttribute('color', new THREE.BufferAttribute(col, 3));
-  const mat = new THREE.ShaderMaterial({
-    transparent: true, depthWrite: false, blending: THREE.AdditiveBlending, vertexColors: true,
-    uniforms: { uTime: { value: 0 }, uMap: { value: glowTexture() }, uCenter: { value: new THREE.Vector3() }, uScale: { value: 1 } },
-    vertexShader: /* glsl */`
-      uniform float uTime; uniform vec3 uCenter; uniform float uScale; attribute float aSeed; varying vec3 vC; varying float vA;
-      void main(){
-        vec3 p = position;
-        p += vec3(sin(uTime * .3 + aSeed * 40.) * 2., sin(uTime * .5 + aSeed * 20.) * 1.5 + uTime * (.2 + aSeed * .3), cos(uTime * .25 + aSeed * 30.) * 2.);
-        // wrap the field around the viewer so stardust is always nearby
-        vec3 rel = mod(p - uCenter + vec3(60., 4., 60.), vec3(120., 40., 120.)) - vec3(60., 4., 60.);
-        vec4 mv = modelViewMatrix * vec4(uCenter + rel, 1.);
-        gl_Position = projectionMatrix * mv;
-        float tw = .55 + .45 * sin(uTime * (1.5 + aSeed * 3.) + aSeed * 50.);
-        gl_PointSize = (8. + aSeed * 14.) * tw * uScale * (60. / max(-mv.z, 1.));
-        vC = color; vA = tw * smoothstep(60., 30., length(rel.xz));
-      }
-    `,
-    fragmentShader: /* glsl */`
-      uniform sampler2D uMap; varying vec3 vC; varying float vA;
-      void main(){ gl_FragColor = vec4(vC, texture2D(uMap, gl_PointCoord).a * vA); }
-    `,
-  });
-  const pts = new THREE.Points(g, mat);
-  pts.frustumCulled = false;
-  return pts;
-}
-
-function strokes(count) {
-  const SEG = 70;
-  const verts = count * (SEG + 1) * 2;
-  const aS = new Float32Array(verts), aSide = new Float32Array(verts), aSeed = new Float32Array(verts);
-  const index = [];
-  const r = rng(13);
-  let v = 0;
-  for (let k = 0; k < count; k++) {
-    const seed = r();
-    for (let i = 0; i <= SEG; i++) {
-      for (const side of [-1, 1]) { aS[v] = i / SEG; aSide[v] = side; aSeed[v] = seed + k; v++; }
-      if (i < SEG) { const b = k * (SEG + 1) * 2 + i * 2; index.push(b, b + 1, b + 2, b + 1, b + 3, b + 2); }
-    }
-  }
-  const g = new THREE.BufferGeometry();
-  g.setAttribute('position', new THREE.BufferAttribute(new Float32Array(verts * 3), 3));
-  g.setAttribute('aS', new THREE.BufferAttribute(aS, 1));
-  g.setAttribute('aSide', new THREE.BufferAttribute(aSide, 1));
-  g.setAttribute('aSeed', new THREE.BufferAttribute(aSeed, 1));
-  g.setIndex(index);
-  const mat = new THREE.ShaderMaterial({
-    transparent: true, depthWrite: false, blending: THREE.AdditiveBlending, side: THREE.DoubleSide,
-    uniforms: { uTime: { value: 0 } },
-    vertexShader: /* glsl */`
-      uniform float uTime; attribute float aS; attribute float aSide; attribute float aSeed; varying float vS; varying float vSeed;
-      vec3 curve(float u, float k){
-        float R = 30. + fract(k * 7.31) * 70.;
-        float y0 = 8. + fract(k * 3.17) * 45.;
-        vec3 c = vec3(sin(k * 5.) * 30., 0., -20. + cos(k * 3.) * 30.);
-        return c + vec3(R * cos(u), y0 + sin(u * 2.3 + k) * 10., R * .75 * sin(u * 1.3));
-      }
-      void main(){
-        float k = aSeed;
-        float head = uTime * (.06 + fract(k * 1.7) * .05) * (fract(k * 9.1) > .5 ? 1. : -1.) + k * 10.;
-        float u = head - aS * .9;
-        vec3 p = curve(u, k);
-        vec3 t = normalize(curve(u + .01, k) - p);
-        vec3 view = normalize(cameraPosition - p);
-        vec3 side = normalize(cross(t, view));
-        float w = (1. - aS) * (.35 + .25 * sin(aS * 20. - uTime * 3.));
-        p += side * aSide * w;
-        vS = aS; vSeed = k;
-        gl_Position = projectionMatrix * viewMatrix * vec4(p, 1.);
-      }
-    `,
-    fragmentShader: /* glsl */`
-      varying float vS; varying float vSeed;
-      void main(){
-        vec3 gold = vec3(1., .8, .4), blue = vec3(.4, .9, 1.), pink = vec3(1., .5, .9);
-        vec3 c = mix(gold, fract(vSeed * 3.3) > .5 ? blue : pink, vS);
-        gl_FragColor = vec4(c, (1. - vS) * (1. - vS) * .9);
-      }
-    `,
-  });
-  const mesh = new THREE.Mesh(g, mat);
-  mesh.frustumCulled = false;
-  return mesh;
-}
 
 class Fireworks {
   constructor(scene, pool = 8, per = 180) {
@@ -204,18 +104,11 @@ class Lanterns {
 }
 
 export function createEffects(scene, preset) {
-  const m = motes(preset.particles);
-  const s = strokes(preset.strokes);
-  scene.add(m, s);
   const fireworks = new Fireworks(scene);
   const lanterns = new Lanterns(scene, preset.key === 'low' ? 60 : 120);
   return {
     fireworks, lanterns,
-    update(t, dt, camera, pixelRatio = 1) {
-      m.material.uniforms.uTime.value = t;
-      m.material.uniforms.uCenter.value.copy(camera.position);
-      m.material.uniforms.uScale.value = pixelRatio;
-      s.material.uniforms.uTime.value = t;
+    update(t, dt, camera) {
       fireworks.update(dt);
       lanterns.update(t, dt, camera);
     },

@@ -3,7 +3,7 @@
 import * as THREE from 'three';
 import { toon, glowBasic, additive } from './materials.js';
 import { glowTexture, rng } from './textures.js';
-import { ISLANDS, CASTLE, MAIN_ZONES, isClearOfBuildings, groundAt } from './layout.js';
+import { S, ISLANDS, CASTLE, MAIN_ZONES, isClearOfBuildings, groundAt } from './layout.js';
 
 const RAINBOW = ['#ff9bd6', '#c9a6ff', '#7ff3ff', '#8dffb0', '#ffd47a'];
 
@@ -139,7 +139,7 @@ export function createCreatures(scene, preset) {
 
   const unicorns = [0, 1, 2, 3].map((i) => {
     const u = makeUnicorn(r);
-    u.userData.orbit = { R: 230 + i * 60, y: CASTLE.y + 110 + i * 30, speed: (0.09 + r() * 0.05) * (i % 2 ? -1 : 1), off: i * 1.7, cx: CASTLE.x, cz: CASTLE.z - 60 };
+    u.userData.orbit = { R: 1500 + i * 160, y: CASTLE.y + 450 + i * 60, speed: (0.03 + r() * 0.015) * (i % 2 ? -1 : 1), off: i * 1.7, cx: 80, cz: 0 };   // round the palace
     group.add(u); return u;
   });
   // two unicorns grazing in the meadow
@@ -173,7 +173,7 @@ export function createCreatures(scene, preset) {
   for (let i = 0; i < 10; i++) {
     const j = makeJelly(r);
     const a = r() * Math.PI * 2, d = 110 + r() * 160;
-    j.userData.base = new THREE.Vector3(Math.cos(a) * d, 10 + r() * 60, Math.sin(a) * d);
+    j.userData.base = new THREE.Vector3(Math.cos(a) * d * S, 10 + r() * 60, 1500 * S + Math.sin(a) * d * S);   // over Lantern Lake
     group.add(j); jellies.push(j);
   }
 
@@ -220,8 +220,8 @@ export function createCreatures(scene, preset) {
 
       // dragon: a lazy figure-eight over the islands
       const da = t * 0.06;
-      dragon.position.set(Math.sin(da) * 170, 70 + Math.sin(da * 3) * 15, Math.sin(da * 2) * 120);
-      v2.set(Math.sin(da + 0.01) * 170, 70 + Math.sin((da + 0.01) * 3) * 15, Math.sin((da + 0.01) * 2) * 120);
+      dragon.position.set(Math.sin(da) * 1700, 1350 + Math.sin(da * 3) * 60, Math.sin(da * 2) * 1200);
+      v2.set(Math.sin(da + 0.01) * 1700, 1350 + Math.sin((da + 0.01) * 3) * 60, Math.sin((da + 0.01) * 2) * 1200);
       dragon.lookAt(v2);
       const df = Math.sin(t * 2.2) * 0.6;
       dragon.userData.wings[0].rotation.z = -df; dragon.userData.wings[1].rotation.z = df;

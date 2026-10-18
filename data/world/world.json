@@ -1,0 +1,35 @@
+{
+ "encoding": "uint16 little-endian, height_m = value / 7 - 500 (both files; the old crescent-h.bin was value / 20 - 250)",
+ "inner": {
+  "file": "crescent-h.bin",
+  "colour": "crescent-colour.jpg",
+  "grid": 1024,
+  "centre": [
+   -709.5,
+   2260.5
+  ],
+  "width_m": 20691.0,
+  "note": "the playable map, unchanged except where the great ridge rises at its corners"
+ },
+ "outer": {
+  "file": "outer-h.bin",
+  "colour": "outer-colour.jpg",
+  "grid": 1024,
+  "centre": [
+   -709.5,
+   2260.5
+  ],
+  "width_m": 40960.0,
+  "note": "the great crescent ridge round the map; inside the inner box it repeats the inner heights, so draw it only outside that box (or under it) and they meet exactly"
+ },
+ "ridge": {
+  "crest_m": 8900.0,
+  "peak_m": 7784.497007229242,
+  "opens": "east",
+  "inner_edge_km": [
+   10.7,
+   13.2
+  ]
+ },
+ "frame": "three.js metres: origin palace B01, x east, z south, y up"
+}
