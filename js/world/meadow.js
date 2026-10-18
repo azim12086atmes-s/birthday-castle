@@ -7,7 +7,7 @@ import * as THREE from 'three';
 import { nightGrade } from './materials.js';
 import { MOOD } from './sky.js';
 import { GROUND_NOISE } from './ground.js';
-import { MAIN, islandAt, groundAt, builtHeight, terrainHeight, groundHSL, isClearOfBuildings } from './layout.js';
+import { MAIN, TERRAIN_GRID, islandAt, groundAt, builtHeight, terrainHeight, groundHSL, isClearOfBuildings } from './layout.js';
 
 const hash = (i, j, k = 0) => {
   let h = (i * 374761393 + j * 668265263 + k * 2147483647) | 0;
@@ -75,14 +75,69 @@ function flowerGeometry() {
   return g;
 }
 
-function swayMaterial(time, radius, key, blade, inner = 0) {
+// ---- the meadow on the graphics card (after Arkenfall's sward) -----------------------------
+// One draw per field: each instance is a cell of a camera-centred grid, worked out from
+// gl_InstanceID; the shader jitters it by a hash of the world cell (so nothing swims as you walk),
+// reads the ground height from the baked terrain grid and whether grass grows there from a small
+// mask baked round the player. The CPU never touches a blade.
+function gpuVertex(vs, flower) {
+  return vs
+    .replace('#include <common>', `#include <common>
+      uniform float uTime; uniform sampler2D uH; uniform vec4 uHG; uniform sampler2D uMask; uniform vec3 uMaskO;
+      uniform vec4 uField; uniform vec2 uOrigin; ${flower ? 'uniform vec3 uPetals[6]; varying vec3 vPet;' : ''}
+      attribute float aTip; varying float vTip; varying vec3 vOrg;
+      ${GROUND_NOISE}
+      float gHeight(vec2 p) {
+        vec2 f = clamp((p - uHG.xy) / uHG.z, vec2(0.0), vec2(uHG.w - 1.001));
+        ivec2 i = ivec2(floor(f)); vec2 u = fract(f);
+        float a = texelFetch(uH, i, 0).r, b = texelFetch(uH, i + ivec2(1, 0), 0).r, c = texelFetch(uH, i + ivec2(0, 1), 0).r, e = texelFetch(uH, i + ivec2(1, 1), 0).r;
+        return a + (b - a) * u.x + (c - a) * u.y + (a - b - c + e) * u.x * u.y;
+      }
+      vec2 gH22(vec2 p) { vec3 p3 = fract(vec3(p.xyx) * vec3(0.1031, 0.1030, 0.0973)); p3 += dot(p3, p3.yzx + 33.33); return fract((p3.xx + p3.yz) * p3.zy); }`)
+    .replace('#include <begin_vertex>', `#include <begin_vertex>
+      int N = int(uField.y), id = gl_InstanceID;
+      vec2 cell = uOrigin + vec2(float(id - (id / N) * N), float(id / N));
+      vec2 r = gH22(cell), r2 = gH22(cell * 1.618 + 7.3), r3 = gH22(cell + 19.1);
+      vec2 p = (cell + 0.15 + 0.7 * r) * uField.x;
+      float dcam = length(p - cameraPosition.xz);
+      vec2 muv = (p - uMaskO.xy) / uMaskO.z;
+      vec4 m = texture(uMask, muv);
+      float inside = step(0.0, muv.x) * step(muv.x, 1.0) * step(0.0, muv.y) * step(muv.y, 1.0);
+      float fade = (1. - smoothstep(uField.w * 0.62, uField.w * 0.97, dcam)) * (uField.z > 0. ? smoothstep(uField.z * 0.6, uField.z, dcam) : 1.);
+      ${flower
+        ? `// flowers gather in drifts: a few everywhere, many where the drift noise is high
+      float drift = gNoise(p * 0.05 + vec2(3.0, -7.0));
+      float keep = m.r * inside * (drift > 0.55 ? 0.85 : 0.3);
+      int pk = int(floor(r3.y * 5.999)); vPet = uPetals[pk];`
+        : 'float keep = m.r * inside;'}
+      float alive = step(r2.x, keep) * step(0.001, fade);
+      float ang = r2.y * 6.2832, sc = 0.75 + r3.x * 0.6, sy = sc * (0.65 + m.g * 0.7);
+      vec3 lp = transformed;
+      lp.xz = vec2(lp.x * cos(ang) - lp.z * sin(ang), lp.x * sin(ang) + lp.z * cos(ang));
+      lp *= vec3(sc, sy, sc) * fade * alive;
+      vec3 org = vec3(p.x, gHeight(p) - 0.05, p.y);
+      vOrg = org; vTip = aTip;
+      // gusts roll across the field as waves of bending grass, with a quick flutter on top
+      vec2 wdir = normalize(vec2(0.8, 0.5));
+      float gust = gNoise(org.xz * 0.06 - wdir * uTime * 1.6) * 0.8 + gNoise(org.xz * 0.21 - wdir * uTime * 2.4) * 0.3;
+      float bend = aTip * aTip * (0.12 + 0.55 * gust) * sy;
+      lp += vec3(wdir.x, 0.0, wdir.y) * bend; lp.y -= bend * 0.35;
+      lp.x += aTip * 0.04 * sin(uTime * 3.3 + org.z * 1.7) * sy;
+      // the grass parts round the player
+      vec2 away = org.xz - cameraPosition.xz; float da = length(away);
+      if (da < 1.8) { vec2 pu = normalize(away + 1e-4) * (1.0 - da / 1.8) * 0.45 * aTip * sy; lp += vec3(pu.x, 0.0, pu.y); }
+      transformed = org + lp;`);
+}
+
+function swayMaterial(time, radius, key, blade, inner = 0, gpu = null) {
   const m = new THREE.MeshLambertMaterial({ vertexColors: true, side: THREE.DoubleSide });
   m.onBeforeCompile = (sh) => {
     sh.uniforms.uTime = time;
     sh.uniforms.uR = { value: radius };
     sh.uniforms.uR0 = { value: inner };
     sh.uniforms.uGNight = MOOD.night;
-    sh.vertexShader = sh.vertexShader
+    if (gpu) { Object.assign(sh.uniforms, gpu.uniforms); sh.vertexShader = gpuVertex(sh.vertexShader, gpu.flower); }
+    else sh.vertexShader = sh.vertexShader
       .replace('#include <common>', `#include <common>
         uniform float uTime; uniform float uR; uniform float uR0; attribute float aTip; varying float vTip; varying vec3 vOrg;
         ${GROUND_NOISE}`)
@@ -106,7 +161,7 @@ function swayMaterial(time, radius, key, blade, inner = 0) {
         if (da < 1.8) { vec2 pu = normalize(away + 1e-4) * (1.0 - da / 1.8) * 0.45 * aTip; transformed += toLocal * vec3(pu.x, 0.0, pu.y); }`);
     sh.fragmentShader = sh.fragmentShader
       .replace('#include <common>', `#include <common>
-        uniform float uGNight; uniform float uTime; varying float vTip; varying vec3 vOrg;
+        uniform float uGNight; uniform float uTime; varying float vTip; varying vec3 vOrg; ${gpu && gpu.flower ? 'varying vec3 vPet;' : ''}
         ${GROUND_NOISE}`)
       .replace('#include <color_fragment>', `#include <color_fragment>
         ${blade ? `{
@@ -119,11 +174,12 @@ function swayMaterial(time, radius, key, blade, inner = 0) {
           vec3 cMoss = vec3(0.083, 0.08, 0.036), cLush = vec3(0.082, 0.155, 0.05), cMeadow = vec3(0.11, 0.18, 0.06), cSedge = vec3(0.17, 0.18, 0.07), cDry = vec3(0.36, 0.28, 0.1);
           vec3 g = cp < 0.35 ? mix(cMoss, cLush, cp / 0.35) : cp < 0.65 ? mix(cLush, cMeadow, (cp - 0.35) / 0.3) : cp < 0.85 ? mix(cMeadow, cSedge, (cp - 0.65) / 0.2) : mix(cSedge, cDry, (cp - 0.85) / 0.15);
           g *= 0.84 + 0.32 * fract(vColor.g * 37.0);
-          diffuseColor.rgb = mix(g * 0.45, g * 2.1 + vec3(0.02, 0.015, 0.0), smoothstep(0.0, 1.0, vTip));
+          diffuseColor.rgb = mix(g * 0.6, g * 2.7 + vec3(0.03, 0.02, 0.0), smoothstep(0.0, 1.0, vTip));
           // slow cloud shadows drifting over the field, shared with the ground beneath
           diffuseColor.rgb *= 0.62 + 0.38 * smoothstep(0.32, 0.62, gNoise(vOrg.xz * 0.004 + vec2(uTime * 0.012, uTime * 0.005)));
         }` : `{
           // the stem stays green whatever the petals' colour
+          ${gpu ? 'diffuseColor.rgb *= vPet;' : ''}
           if (vTip < 0.5) diffuseColor.rgb = vec3(0.16, 0.3, 0.1);
         }`}`)
       .replace('#include <normal_fragment_maps>', '#include <normal_fragment_maps>\nnormal = normalize(vNormal);')
@@ -139,6 +195,7 @@ function swayMaterial(time, radius, key, blade, inner = 0) {
         // night: tips of the grass breathe a faint bioluminescent glow in patches
         totalEmissiveRadiance += vec3(0.12, 0.55, 0.5) * pow(vTip, 3.0) * uGNight * smoothstep(0.45, 0.8, gNoise(vOrg.xz * 0.08 + uTime * 0.05)) * 0.6;`);
   };
+  m.customProgramCacheKey = () => key + (gpu ? '-gpu' : '');
   return nightGrade(m, key);
 }
 
@@ -165,6 +222,65 @@ export function createMeadow(scene, preset) {
 
   const PETALS = ['#e8323a', '#3f6bff', '#fff6ee', '#e8323a', '#5a7dff', '#ffd84f', '#ff86c0', '#fff6ee'].map((c) => new THREE.Color(c));
   let cacheIsl = null, lastX = Infinity, lastZ = Infinity;
+
+  // ---- the GPU meadow on the main land ----
+  const G = TERRAIN_GRID;
+  const hTex = new THREE.DataTexture(G.data, G.n, G.n, THREE.RedFormat, THREE.FloatType);
+  hTex.minFilter = hTex.magFilter = THREE.NearestFilter; hTex.needsUpdate = true;
+  // where grass grows (r) and how lush it stands (g), 2 m texels over a window round the player,
+  // re-baked a few rows a frame when the player nears its edge (the old mask serves meanwhile)
+  const MT = 2, MN = high ? 200 : low ? 110 : 160, MS = MT * MN;
+  const maskData = [new Uint8Array(MN * MN * 4), new Uint8Array(MN * MN * 4)];
+  let front = 0;
+  const mTex = new THREE.DataTexture(maskData[0], MN, MN, THREE.RGBAFormat);
+  mTex.minFilter = mTex.magFilter = THREE.LinearFilter; mTex.needsUpdate = true;
+  const maskO = new THREE.Vector3(1e9, 1e9, MS);
+  function grows(x, z) {
+    if (islandAt(x, z, MAIN.y) !== MAIN) return null;
+    const th = terrainHeight(MAIN, x, z);
+    if (!(builtHeight(x, z) === null && th > 0.6 && th < 800) || !isClearOfBuildings(x, z, -1, MAIN.y)) return null;
+    let [H, S, Lt] = groundHSL(MAIN, x, z, th);
+    let ok = H > 0.12 && H < 0.55 && S > 0.12 && Lt < 0.8;
+    if (!ok && th > 6 && S < 0.3 && Lt > 0.4 && Lt < 0.85) { ok = true; Lt = 0.36; }
+    if (!ok) return null;
+    const e = 2, sl = Math.hypot(terrainHeight(MAIN, x + e, z) - terrainHeight(MAIN, x - e, z), terrainHeight(MAIN, x, z + e) - terrainHeight(MAIN, x, z - e)) / (2 * e);
+    return sl > 0.75 ? null : Math.min(1, Math.max(0, (Lt - 0.2) / 0.6));
+  }
+  let bake = null;   // { x0, z0, row }
+  function bakeRows(budgetMs) {
+    const t0 = performance.now(), d = maskData[1 - front];
+    while (bake.row < MN && performance.now() - t0 < budgetMs) {
+      const z = bake.z0 + (bake.row + 0.5) * MT;
+      for (let i = 0; i < MN; i++) {
+        const g = grows(bake.x0 + (i + 0.5) * MT, z), k = (bake.row * MN + i) * 4;
+        d[k] = g === null ? 0 : 255; d[k + 1] = g === null ? 0 : Math.round(g * 255);
+      }
+      bake.row++;
+    }
+    if (bake.row >= MN) {
+      front = 1 - front;
+      mTex.image.data = maskData[front]; mTex.needsUpdate = true;
+      maskO.set(bake.x0, bake.z0, MS);
+      bake = null;
+    }
+  }
+  const FIELDS = [
+    { CELL: low ? 0.85 : high ? 0.6 : 0.7, R0: 0, R: low ? 24 : high ? 40 : 32, geo: tuftGeometry(low ? 12 : high ? 16 : 14, 1), key: 'gpu-near' },
+  ];
+  if (!low) FIELDS.push({ CELL: high ? 1.8 : 2.2, R0: high ? 34 : 27, R: high ? 120 : 90, geo: tuftGeometry(14, 1.9), key: 'gpu-mid' });
+  FIELDS.push({ CELL: 1.1, R0: 0, R: FIELDS[0].R, geo: flowerGeometry(), key: 'gpu-flower', flower: true });
+  for (const F of FIELDS) {
+    F.N = Math.ceil((2 * F.R) / F.CELL) + 2;
+    const g = new THREE.InstancedBufferGeometry().copy(F.geo);
+    g.instanceCount = F.N * F.N;
+    F.origin = new THREE.Vector2();
+    const uniforms = { uH: { value: hTex }, uHG: { value: new THREE.Vector4(G.x0, G.z0, G.step, G.n) }, uMask: { value: mTex }, uMaskO: { value: maskO },
+      uField: { value: new THREE.Vector4(F.CELL, F.N, F.R0, F.R) }, uOrigin: { value: F.origin } };
+    if (F.flower) uniforms.uPetals = { value: ['#e8323a', '#3f6bff', '#fff6ee', '#e8323a', '#5a7dff', '#ffd84f'].map((c) => new THREE.Color(c)) };
+    F.mesh = new THREE.Mesh(g, swayMaterial(time, F.R, 'meadow-' + F.key, !F.flower, F.R0, { uniforms, flower: !!F.flower }));
+    F.mesh.frustumCulled = false; F.mesh.visible = false;
+    scene.add(F.mesh);
+  }
   const dummy = new THREE.Object3D(), color = new THREE.Color();
 
   // what grows in one grid cell: null for bare ground, else a tuft and maybe a blossom
@@ -232,8 +348,20 @@ export function createMeadow(scene, preset) {
       const gy = groundAt(p.x, p.z, p.y);
       // only worth drawing when near the ground (riding low or walking)
       const show = gy !== null && p.y - gy < 60;
-      for (const L of LAYERS) { L.tufts.visible = show; if (L.fl) L.fl.visible = show; }
-      if (!show) return;
+      // on the main land the graphics card grows the meadow; the sky isles keep the clump fields
+      const gpuOn = show && isl === MAIN;
+      for (const F of FIELDS) { F.mesh.visible = gpuOn; if (gpuOn) F.origin.set(Math.floor(p.x / F.CELL) - (F.N >> 1), Math.floor(p.z / F.CELL) - (F.N >> 1)); }
+      if (gpuOn) {
+        const cx = maskO.x + MS / 2, cz = maskO.y + MS / 2;
+        if (!bake && Math.max(Math.abs(p.x - cx), Math.abs(p.z - cz)) > MS / 2 - FIELDS[FIELDS.length > 2 ? 1 : 0].R - 8) {
+          bake = { x0: Math.round(p.x / MT) * MT - MS / 2, z0: Math.round(p.z / MT) * MT - MS / 2, row: 0 };
+          // far off the old window (a spawn or a teleport): bake the whole mask at once
+          if (Math.max(Math.abs(p.x - cx), Math.abs(p.z - cz)) > MS / 2) bakeRows(1e9);
+        }
+        if (bake) bakeRows(3);
+      }
+      for (const L of LAYERS) { L.tufts.visible = show && !gpuOn; if (L.fl) L.fl.visible = show && !gpuOn; }
+      if (!show || gpuOn) return;
       if (isl !== cacheIsl) { for (const L of LAYERS) L.cache.clear(); cacheIsl = isl; lastX = Infinity; }
       if (Math.hypot(p.x - lastX, p.z - lastZ) > 2.5) { lastX = p.x; lastZ = p.z; for (const L of LAYERS) rebuild(L, p.x, p.z, isl); }
     },
