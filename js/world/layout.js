@@ -344,24 +344,63 @@ export function terrainRaw(x, z) {
 
 // --- the baked height grid ---------------------------------------------------------------
 const GX0 = -4800 * S, GZ0 = -3400 * S, GSPAN = 9600 * S, GSTEP = 30, GN = GSPAN / GSTEP + 1;
-let grid = null;
+let grid = null, mgrid = null, hm = null;
 function bake() {
-  grid = new Float32Array(GN * GN);
+  grid = new Float32Array(GN * GN); mgrid = new Float32Array(GN * GN); hm = new Float32Array(GN * GN * 2);
   for (let j = 0; j < GN; j++) for (let i = 0; i < GN; i++) {
-    const x = GX0 + i * GSTEP, z = GZ0 + j * GSTEP, h = terrainRaw(x, z);
-    grid[j * GN + i] = h + relief(x, z, h);
+    const x = GX0 + i * GSTEP, z = GZ0 + j * GSTEP, h = terrainRaw(x, z), k = j * GN + i;
+    const m = reliefMask(x, z, h, 120);
+    grid[k] = h + relief(x, z, m);
+    mgrid[k] = reliefMask(x, z, h, 40);
+    hm[k * 2] = grid[k]; hm[k * 2 + 1] = mgrid[k];
   }
+}
+
+// Walking-scale relief (beauty slice, Oct 18). The 30 m height grid can only hold hills; what you
+// feel underfoot in a real meadow is the 3-60 m stuff: swales, knolls, hummocks. It lives in one
+// small tiling height texture (2 m texels, 512 m tile) shared by the CPU (collision, placement,
+// the terrain mesh) and the graphics card (the grass), sampled the same way on both, so the grass
+// sits exactly on the ground. Its strength is a mask baked beside the height grid: off the place
+// pads, roads' towns, the palace grounds, the lake and the high rock.
+const FR_N = 256, FR_T = 2;
+let fine = null;
+function bakeFine() {
+  fine = new Float32Array(FR_N * FR_N);
+  const hsh = (i, j, s) => { let h = (i * 374761393 + j * 668265263 + s * 1442695041) | 0; h = Math.imul(h ^ (h >>> 13), 1274126177); return ((h ^ (h >>> 16)) >>> 0) / 4294967296; };
+  // periodic value noise: P lattice cells across the tile, quintic fade so slopes stay smooth
+  const pn = (u, v, P, s) => {
+    const x = u * P, y = v * P, i = Math.floor(x), j = Math.floor(y), fx = x - i, fy = y - j;
+    const q = (t) => t * t * t * (t * (t * 6 - 15) + 10), a = q(fx), b = q(fy), w = (n) => ((n % P) + P) % P;
+    const h00 = hsh(w(i), w(j), s), h10 = hsh(w(i + 1), w(j), s), h01 = hsh(w(i), w(j + 1), s), h11 = hsh(w(i + 1), w(j + 1), s);
+    return (h00 + (h10 - h00) * a) * (1 - b) + (h01 + (h11 - h01) * a) * b - 0.5;
+  };
+  for (let j = 0; j < FR_N; j++) for (let i = 0; i < FR_N; i++) {
+    const u = i / FR_N, v = j / FR_N;
+    // swales (~64 m), knolls (~21 m, ridged so they read as rounded mounds), hummocks (~8 m)
+    const sw = pn(u, v, 8, 1) * 1.9;
+    const kn = (0.5 - Math.abs(pn(u, v, 24, 2))) * 2 - 0.5;
+    const hu = pn(u, v, 64, 3);
+    fine[j * FR_N + i] = sw + kn * 0.75 + hu * 0.32;
+  }
+}
+export const FINE_RELIEF = { n: FR_N, texel: FR_T, get data() { if (!fine) bakeFine(); return fine; } };
+function fineAt(x, z) {
+  if (!fine) bakeFine();
+  const fx = x / FR_T, fz = z / FR_T, i = Math.floor(fx), j = Math.floor(fz), u = fx - i, v = fz - j, M = FR_N - 1;
+  const i0 = i & M, j0 = j & M, i1 = (i + 1) & M, j1 = (j + 1) & M;
+  const a = fine[j0 * FR_N + i0], b = fine[j0 * FR_N + i1], c = fine[j1 * FR_N + i0], e = fine[j1 * FR_N + i1];
+  return a + (b - a) * u + (c - a) * v + (a - b - c + e) * u * v;
 }
 
 // rolling ground (world pass 2, after Arkenfall): the open land between places rises and falls in
 // knolls and swales instead of lying as one smooth sheet. Kept off the place pads, the palace
 // grounds, the lake and shore, and the high mountains (which have their own shape).
-function relief(x, z, h) {
+function reliefMask(x, z, h, padGap) {
   let m = smooth(3, 18, h) * smooth(800, 500, h);
   if (m <= 0) return 0;
   for (const p of PAD_LIST) {
     const q = Math.hypot(x - p.x, z - p.z);
-    if (q < p.r + p.e + 120) m *= smooth(p.r + p.e, p.r + p.e + 120, q);
+    if (q < p.r + p.e + padGap) m *= smooth(p.r + p.e, p.r + p.e + padGap, q);
   }
   // palace grounds and the spawn shore stay as drawn
   const px = Math.max(0, -760 * S - x, x - 820 * S), pz = Math.max(0, -760 * S - z, z - 1010 * S);
@@ -369,17 +408,62 @@ function relief(x, z, h) {
   const sx = Math.max(0, Math.abs(x) - 260 * S), sz = Math.max(0, 2100 * S - z, z - 2550 * S);
   m *= smooth(0, 160, Math.hypot(sx, sz));
   m *= smooth(170, 320, lake1(x / S, z / S) * S);
+  return m;
+}
+function relief(x, z, m) {
   if (m <= 0) return 0;
   const a = vnoise(x / 260 + 31, z / 260 - 17), b = vnoise(x / 85 - 5, z / 85 + 13);
   return ((a - 0.5) * 10 + (b - 0.5) * 4) * m;
 }
-export const TERRAIN_GRID = { x0: GX0, z0: GZ0, span: GSPAN, step: GSTEP, n: GN, get data() { if (!grid) bake(); return grid; } };
+// data: heights; hm: interleaved height and walking-relief strength (an RG texture for the grass)
+export const TERRAIN_GRID = { x0: GX0, z0: GZ0, span: GSPAN, step: GSTEP, n: GN, get data() { if (!grid) bake(); return grid; }, get hm() { if (!grid) bake(); return hm; } };
+// The tarn and its brook in the beauty slice (Oct 18): a small lake in the valley below the
+// crescent wall, fed by a brook running down the valley floor. Carved into the ground here (and
+// identically in the grass shader, meadow.js), drawn by brook.js.
+export const TARN = { x: -6040, z: 2828, r: 40, level: 171.6, depth: 3.2 };
+// it rises at a spring in the hollow below the saddle (z ≈ 2480) and falls all the way to the tarn
+export const BROOK = [[-5966, 2482], [-5950, 2540], [-5932, 2640], [-5945, 2730], [-5990, 2790], [-6020, 2812]];
+export const BROOK_BOX = [-6140, 2440, -5890, 2930];   // holds the brook and the tarn with its whole bank
+// the tarn's shore wanders: its radius in direction a
+export const tarnR = (a) => TARN.r * (1 + 0.16 * Math.sin(3 * a + 1.3) + 0.08 * Math.sin(5 * a + 0.4));
+function brookDist(x, z) {
+  let best = 1e9;
+  for (let k = 0; k < BROOK.length - 1; k++) {
+    const [ax, az] = BROOK[k], [bx, bz] = BROOK[k + 1], dx = bx - ax, dz = bz - az;
+    const t = Math.max(0, Math.min(1, ((x - ax) * dx + (z - az) * dz) / (dx * dx + dz * dz)));
+    best = Math.min(best, Math.hypot(x - ax - dx * t, z - az - dz * t));
+  }
+  return best;
+}
+// h: the height grid's height, fr: the walking-scale relief on top of it
+function carveWater(x, z, h, fr) {
+  if (x < BROOK_BOX[0] || x > BROOK_BOX[2] || z < BROOK_BOX[1] || z > BROOK_BOX[3]) return h + fr;
+  // the brook: a channel a metre deep with soft banks; its bed keeps to the smooth valley floor (no
+  // hummocks in it), so the water always runs downhill
+  const bd = brookDist(x, z);
+  h += fr * smooth(4, 14, bd);
+  if (bd < 7) h -= 1.0 * (1 - smooth(1.2, 7, bd));
+  const dx = x - TARN.x, dz = z - TARN.z, d = Math.hypot(dx, dz), R = tarnR(Math.atan2(dz, dx)), t = d / R;
+  if (t < 1) return TARN.level - 0.25 - TARN.depth * smooth(1, 0.2, t);
+  if (t < 1 + 34 / R) return TARN.level + 0.2 + (h - TARN.level - 0.2) * smooth(1, 1 + 34 / R, t);
+  return h;
+}
+// open water of the slice here? (no grass, no trees)
+export function sliceWaterAt(x, z, pad = 0) {
+  if (x < BROOK_BOX[0] || x > BROOK_BOX[2] || z < BROOK_BOX[1] || z > BROOK_BOX[3]) return false;
+  const dx = x - TARN.x, dz = z - TARN.z;
+  return Math.hypot(dx, dz) < tarnR(Math.atan2(dz, dx)) + 1 + pad || brookDist(x, z) < 1.6 + pad;
+}
+
 function mainTerrain(x, z) {
   if (!grid) bake();
   const fx = Math.min(GN - 1.001, Math.max(0, (x - GX0) / GSTEP)), fz = Math.min(GN - 1.001, Math.max(0, (z - GZ0) / GSTEP));
   const i = Math.floor(fx), j = Math.floor(fz), u = fx - i, v = fz - j, n = GN;
   const a = grid[j * n + i], b = grid[j * n + i + 1], c = grid[(j + 1) * n + i], e = grid[(j + 1) * n + i + 1];
-  return a + (b - a) * u + (c - a) * v + (a - b - c + e) * u * v;
+  const h = a + (b - a) * u + (c - a) * v + (a - b - c + e) * u * v;
+  const ma = mgrid[j * n + i], mb = mgrid[j * n + i + 1], mc = mgrid[(j + 1) * n + i], me = mgrid[(j + 1) * n + i + 1];
+  const m = ma + (mb - ma) * u + (mc - ma) * v + (ma - mb - mc + me) * u * v;
+  return carveWater(x, z, h, m > 0 ? m * fineAt(x, z) : 0);
 }
 
 export function terrainHeight(isl, x, z) {
@@ -395,6 +479,7 @@ export function terrainHeight(isl, x, z) {
 // forest cover 0..1: woods everywhere inland, thinning on high rock and round the districts
 export function forestAt(x, z, h = mainTerrain(x, z)) {
   const hd = h / S;
+  if (sliceWaterAt(x, z, 5)) return 0;
   if (hd < 3 || hd > 330) return 0;
   let f = smooth(0.38, 0.58, vnoise(x * 0.0035 / S + 11, z * 0.0035 / S - 4) * 0.7 + vnoise(x * 0.015 / S, z * 0.015 / S) * 0.3);
   f *= smooth(330, 240, hd);

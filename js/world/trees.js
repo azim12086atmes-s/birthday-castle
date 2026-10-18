@@ -24,19 +24,47 @@ export const SPECIES = [
   { kind: 'willow', h: [8, 12] },      // 8
   { kind: 'jacaranda', h: [8, 12] },   // 9 violet
   { kind: 'ginkgo', h: [10, 15] },     // 10 gold
+  { kind: 'oak', h: [2.8, 4.4], sink: 0.45 },   // 11 understory: a crown sunk to the ground reads as a shrub
 ];
 export const FERN = null;
 const VARIANTS = 3;
 
-// which tree grows here: pines take over up the slopes; the valleys are mostly oak, plane and
-// birch, with blossom, wisteria, maple, jacaranda, ginkgo and willow scattered through them
-const MIX = [[0, 0.3], [7, 0.13], [6, 0.12], [3, 0.09], [1, 0.09], [9, 0.06], [5, 0.06], [10, 0.05], [8, 0.05], [4, 0.05]];
-export function pickSpecies(r, y) {
-  if (r() < THREE.MathUtils.smoothstep(y, 120, 520) * 0.85 + 0.08) return 2;
-  let x = r();
-  for (const [sp, w] of MIX) { if ((x -= w) <= 0) return sp; }
-  return 0;
+// Woods are made the way a forest really grows (beauty slice, Oct 18): each stand is one kind of
+// wood, a dominant tree with one or two companions, so a hillside reads as an oak wood or a birch
+// grove instead of a catalogue where every tree is a different colour. The bright blossoms are
+// accents: lone specimens out in the meadows and a few at the wood edges, where they are seen.
+export const SHRUB = 11;
+const WOODS = [
+  [0, 0.72, 7, 0.18, 6, 0.1],      // oak wood with plane and birch
+  [6, 0.8, 0, 0.2],                // birch grove
+  [7, 0.6, 0, 0.3, 10, 0.1],       // plane wood with a little ginkgo
+  [0, 0.6, 3, 0.25, 6, 0.15],      // oak and maple
+  [2, 0.75, 6, 0.25],              // pine with birch, on the lower slopes
+];
+const ACCENTS = [1, 9, 5, 3, 10, 8, 4, 1, 9];
+const vn = (x, z) => {
+  const i = Math.floor(x), j = Math.floor(z), f = x - i, g = z - j, h = (u, v) => { const s = Math.sin(u * 127.1 + v * 311.7) * 43758.5453; return s - Math.floor(s); };
+  const fx = f * f * (3 - 2 * f), fz = g * g * (3 - 2 * g);
+  return (h(i, j) * (1 - fx) + h(i + 1, j) * fx) * (1 - fz) + (h(i, j + 1) * (1 - fx) + h(i + 1, j + 1) * fx) * fz;
+};
+// which wood stands here (stands a few hundred metres across)
+export function woodAt(x, z, y) {
+  if (y > 260 || vn(x / 420 + 3.3, z / 420 - 8.1) > 0.82) return 4;
+  const n = vn(x / 330 + 11.7, z / 330 + 4.2) * 0.7 + vn(x / 110, z / 110) * 0.3;
+  return Math.min(3, Math.floor(n * 4.6 - 0.3 < 0 ? 0 : n * 4.6 - 0.3));
 }
+// a tree of the wood w (edge 0..1: 1 at the open edge of the wood)
+export function pickInWood(r, w, edge, y) {
+  if (r() < THREE.MathUtils.smoothstep(y, 160, 520) * 0.9) return 2;
+  if (r() < edge * 0.08) return ACCENTS[Math.floor(r() * ACCENTS.length)];
+  const mix = WOODS[w];
+  let x = r();
+  for (let k = 0; k < mix.length; k += 2) if ((x -= mix[k + 1]) <= 0) return mix[k];
+  return mix[0];
+}
+export const accentTree = (r) => ACCENTS[Math.floor(r() * ACCENTS.length)];
+// the old random mix, for anything that still asks for a single tree
+export function pickSpecies(r, y) { return pickInWood(r, 0, 0.3, y); }
 
 let renderer = null;
 export function setTreeRenderer(r) { renderer = r; }
@@ -192,7 +220,8 @@ function cardMaterialFar(map, rows, dip) {
 }
 
 export function createTreeKit(scene, quality, dip) {
-  const nearR = quality.key === 'low' ? 0 : quality.key === 'medium' ? 110 : 170;
+  // 3D trees out to here (they cast shadows inside the sun's shadow box), picture cards beyond
+  const nearR = quality.key === 'low' ? 0 : quality.key === 'medium' ? 80 : 115;
   const size = quality.key === 'high' ? 192 : 128;
   const count = SPECIES.length * VARIANTS, rows = Math.ceil(count / ATLAS_COLS);
   const kit = { ready: false, count, cardGeo: new THREE.PlaneGeometry(1, 1), cards: [], farMat: null, near: [], nearR, templates: [] };
@@ -213,9 +242,11 @@ export function createTreeKit(scene, quality, dip) {
       const t = grow(sp.kind, 7919 * (next + 1) + 13);
       kit.templates[next] = t;
       kit.cards[next] = photograph(t, size, atlas, next);
-      if (nearR > 0) kit.near[next] = { h: t.box.max.y, meshes: t.parts.map(([geo, mat]) => {
+      // a shrub's branches are under the ground or hidden in its crown: it is drawn as leaves only
+      const parts = sp.sink ? t.parts.filter(([, mat]) => mat !== woodMat) : t.parts;
+      if (nearR > 0) kit.near[next] = { h: t.box.max.y, meshes: parts.map(([geo, mat]) => {
         const im = new THREE.InstancedMesh(geo, mat, 400);
-        im.count = 0; im.frustumCulled = false; im.castShadow = false; im.receiveShadow = true;
+        im.count = 0; im.frustumCulled = false; im.castShadow = true; im.receiveShadow = true;
         scene.add(im);
         return im;
       }) };

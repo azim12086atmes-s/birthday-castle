@@ -9,7 +9,9 @@ export const FOG_COLOR = new THREE.Color('#2b2466');
 export const MOOD = { night: { value: 1 } };
 // sun and moon in the south-west, so they light the palace's south front and the sky bridge
 // (look pass, Oct 17: they used to sit behind the palace and left its face in shade all day)
-export const SUN_DIR = new THREE.Vector3(-560, 75, 420).normalize();
+// beauty slice (Oct 18): the sun stood 6° up, so flat ground got a tenth of its light and every
+// meadow read as grey-green shade; at about 19° the fields are sunlit and shadows still run long
+export const SUN_DIR = new THREE.Vector3(-560, 235, 420).normalize();
 export const MOON_DIR = new THREE.Vector3(-300, 330, 470).normalize();
 const FOG_DUSK = new THREE.Color('#e4dcea'), FOG_NIGHT = new THREE.Color('#2b2466');
 
