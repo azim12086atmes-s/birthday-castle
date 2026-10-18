@@ -59,16 +59,25 @@ function cardMaterial(map, card) {
 const CLUTTER = /^(Rubble_Pile|Rock_Formation_Collec|Meadow_Rocks|Stone|Stone_town|Desert_Rock_Formation|A_big_menhir_with_anc|Ancient_Stone_Relic)$/;
 
 // metres: the near copy within the first number, the far copy out to the second
-const RANGE = { landmark: [450, 7000], building: [300, 3500], prop: [140, 1200] };
+// (owner, Oct 18: no far-off town views; let the hills and the haze cover them, as Arkenfall does)
+const RANGE = { landmark: [450, 7000], building: [300, 1100], prop: [140, 350] };
+const TOWN_FAR = 650;
 
 export function createWorldFill(scene, quality) {
   const q = quality.key === 'low' ? 0.55 : quality.key === 'medium' ? 0.8 : 1;
   const loader = new GLTFLoader().setMeshoptDecoder(MeshoptDecoder);
-  // close up, medium and high draw the full layout meshes (near-hd: every triangle, 2048 px
-  // textures, 1024 for props); low keeps the light quarter-triangle copies. The cliff kit and the
-  // light town houses (*_town, 14k triangles) have one copy.
+  // three steps of detail, as Arkenfall does: the full layout mesh (near-hd: every triangle, 2048 px
+  // textures) only close up on Medium and High, the light quarter-triangle copy (near) out to the
+  // model's range, then a card. Low never fetches near-hd. The cliff kit and the light town houses
+  // (*_town, 14k triangles) have one copy.
   const hd = quality.key !== 'low';
-  const dirFor = (kind, name) => (kind === 'near' && hd && !(/^(CliffWall_|Viaduct_|SeaPillar_|SkyBridge_|Gate|CloudPlatform)/.test(name) || name.endsWith('_town')) ? 'near-hd' : kind);
+  // the town houses step the other way: their own 14k-triangle mesh close up and a fifth of it
+  // (near-lo, 256 px) across the rest of the town, on every tier
+  const isTown = (name) => name.endsWith('_town');
+  const hasHD = (name) => isTown(name) || hd && !/^(CliffWall_|Viaduct_|SeaPillar_|SkyBridge_|Gate|CloudPlatform)/.test(name);
+  const dirOf = (M, kind) => kind === 'card' ? 'cards' : isTown(M.name) ? (kind === 'hd' ? 'near' : 'near-lo') : kind === 'hd' ? 'near-hd' : 'near';
+  const HD_SHARE = 0.4;        // of the near range: 180 m for landmarks, 120 m for buildings, 56 m for props; 90 m for town houses
+  const KEEP = 30;             // seconds a copy nobody draws stays in memory once the camera is well away
   const texLoader = new THREE.TextureLoader();
   const cardGeo = new THREE.PlaneGeometry(1, 1);
   let cards = {};
@@ -84,7 +93,7 @@ export function createWorldFill(scene, quality) {
       // cards cost two triangles, so they reach further than the old far copies did
       // town houses stay 3D across a whole town (r <= 225 m) on every tier, never cards inside it
       const near = name.endsWith('_town') ? Math.max(260, n * Math.max(q, 0.7)) : n * Math.max(q, 0.7);
-      models.set(name, { name, tier: m.tier, near, far: f * q * 1.3, items: [], copies: { near: null, card: null } });
+      models.set(name, { name, tier: m.tier, near, hdR: isTown(name) ? 90 : hasHD(name) ? near * HD_SHARE : 0, far: name.endsWith('_town') ? TOWN_FAR : f * q * 1.3, items: [], copies: { hd: null, near: null, card: null }, closest: Infinity });
     }
     for (const [m, place, x, y, z, rot, s, far] of P.items) {
       const M = models.get(m);
@@ -98,8 +107,9 @@ export function createWorldFill(scene, quality) {
       const g = far ? -1 : groundAt(x, z, y + 5);
       const yy = g < 0 ? y : y + THREE.MathUtils.clamp(g - crescentH(x, z), -15, 60);
       const mat = new THREE.Matrix4().compose(new THREE.Vector3(x, yy, z), new THREE.Quaternion().setFromAxisAngle(new THREE.Vector3(0, 1, 0), rot), new THREE.Vector3(s, s, s));
-      M.items.push({ x, z, mat, place, k: far === 3 ? Infinity : far === 1 ? 3 : far ? 1.5 : 1 });      // the cliff walls always draw their near copy (culled by bounds)
       const dims = P.models[m].dims;
+      // a sphere from the base that surely holds the model, for culling each copy outside the view
+      M.items.push({ x, z, mat, place, k: far === 3 ? Infinity : far === 1 ? 3 : far ? 1.5 : 1, sphere: new THREE.Sphere(new THREE.Vector3(x, yy, z), Math.hypot(...dims) * s) });      // the cliff walls always draw their near copy
       if (M.tier !== 'prop' && place !== 'sky' && place !== 'cliffs') footprints.push({ x, z, r: 0.5 * Math.max(dims[0], dims[2]) * s });
     }
     // no tree grows through a town house or a roadside hamlet
@@ -147,9 +157,10 @@ export function createWorldFill(scene, quality) {
     while (loading < 3 && queue.length) {
       const [M, kind] = queue.shift();
       loading++;
-      loader.load(`data/world/${dirFor(kind, M.name)}/${M.name}.glb`, (gltf) => {
+      loader.load(`data/world/${dirOf(M, kind)}/${M.name}.glb`, (gltf) => {
         loading--;
         const C = M.copies[kind];
+        if (!C) { disposeScene(gltf.scene); return; }       // dropped while it was loading
         gltf.scene.updateMatrixWorld(true);
         gltf.scene.traverse((o) => {
           if (!o.isMesh) return;
@@ -167,25 +178,37 @@ export function createWorldFill(scene, quality) {
           mat.metalness = 0; mat.roughness = Math.max(mat.roughness ?? 1, 0.75);
           if (!/^(SkyBridge_|Sky|Cloud)/.test(M.name)) contactGrade(mat);
           const im = new THREE.InstancedMesh(geo, mat, M.items.length);
-          im.count = 0; im.frustumCulled = true;
+          im.count = 0; im.frustumCulled = false;      // culled per instance in cull()
           scene.add(im);
           C.meshes.push(im);
         });
-        C.status = 'ready';
+        C.status = 'ready'; C.used = performance.now() / 1000;
         M.dirty = true;
-      }, undefined, () => { loading--; M.copies[kind].status = 'failed'; });
+      }, undefined, () => { loading--; if (M.copies[kind]) M.copies[kind].status = 'failed'; });
     }
+  }
+  const disposeMat = (m) => { for (const v of Object.values(m)) if (v && v.isTexture) v.dispose(); m.dispose(); };
+  function disposeScene(root) { root.traverse((o) => { if (o.isMesh) { o.geometry.dispose(); disposeMat(o.material); } }); }
+  // free a copy's GPU memory: travelling the whole crescent would otherwise keep every model it passed
+  function drop(M, kind) {
+    const C = M.copies[kind];
+    for (const im of C.meshes) { scene.remove(im); im.geometry.dispose(); disposeMat(im.material); im.dispose(); }
+    M.copies[kind] = null;
   }
 
   // ---- per model: which instances draw with which copy -----------------------------
   function refresh(M, cam) {
-    const near = [], far = [];
+    const close = [], near = [], far = [];
     let closest = Infinity;
     for (const it of M.items) {
       const d = Math.hypot(it.x - cam.x, it.z - cam.z) / it.k;      // sky and ridge items reach three times as far
       closest = Math.min(closest, d);
-      if (d < M.near) near.push(it); else if (d < M.far) far.push(it);
+      if (d < M.hdR) close.push(it); else if (d < M.near) near.push(it); else if (d < M.far) far.push(it);
     }
+    M.closest = closest;
+    if (close.length || closest < M.hdR * 1.5) request(M, 'hd', closest);
+    // until the full mesh arrives, the close instances draw with the light copy
+    if (M.copies.hd?.status !== 'ready') near.push(...close.splice(0));
     // a sky or ridge item whose card is missing draws its near copy from afar instead
     if (M.copies.card?.status === 'failed') for (let i = far.length - 1; i >= 0; i--) if (far[i].k > 1) near.push(...far.splice(i, 1));
     if (near.length || closest < M.near * 1.8) request(M, 'near', closest);     // fetch a little early, so a town is 3D on arrival
@@ -202,9 +225,27 @@ export function createWorldFill(scene, quality) {
         if (list.length && im.geometry !== cardGeo) im.computeBoundingSphere();
       }
     };
+    const now = performance.now() / 1000;
+    for (const k of ['hd', 'near']) if (M.copies[k]?.status === 'ready' && (k === 'hd' ? close : near).length) M.copies[k].used = now;
+    // 3D copies keep their list and are culled to the view every frame (an instanced mesh is otherwise
+    // drawn whole: a town's 74 cottages behind the camera cost as much as those in front)
+    if (M.copies.hd) M.copies.hd.list = close;
+    if (M.copies.near) M.copies.near.list = nearOK ? near : [];
     // until the near copy arrives, its instances draw as cards
-    put(M.copies.near, nearOK ? near : []);
     put(M.copies.card, nearOK || !farOK ? far : far.concat(near));
+  }
+
+  const frustum = new THREE.Frustum(), pv = new THREE.Matrix4();
+  function cull(C) {
+    const vis = C.list.filter((it) => frustum.intersectsSphere(it.sphere));
+    if (C.vis && C.vis.length === vis.length && vis.every((it, i) => C.vis[i] === it)) return;
+    C.vis = vis;
+    for (const im of C.meshes) {
+      vis.forEach((it, i) => im.setMatrixAt(i, it.mat));
+      im.count = vis.length;
+      im.instanceMatrix.needsUpdate = true;
+      im.visible = vis.length > 0;
+    }
   }
 
   let acc = 0, cursor = 0;
@@ -225,6 +266,13 @@ export function createWorldFill(scene, quality) {
       if (moved && acc > 0.25) { acc = 0; last.copy(camera.position); cursor = 0; }
       for (let k = 0; k < 12 && cursor < list.length; k++, cursor++) refresh(list[cursor], camera.position);
       for (const M of list) if (M.dirty) { M.dirty = false; refresh(M, camera.position); }
+      frustum.setFromProjectionMatrix(pv.multiplyMatrices(camera.projectionMatrix, camera.matrixWorldInverse));
+      for (const M of list) for (const k of ['hd', 'near']) if (M.copies[k]?.status === 'ready' && M.copies[k].list) cull(M.copies[k]);
+      const now = performance.now() / 1000;
+      for (const M of list) for (const k of ['hd', 'near']) {
+        const C = M.copies[k];
+        if (C?.status === 'ready' && now - (C.used ?? now) > KEEP && M.closest > (k === 'hd' ? M.hdR * 2.5 : M.near * 2.5)) drop(M, k);
+      }
     },
   };
 }
