@@ -1,0 +1,114 @@
+// The ground (world pass 2, Oct 17): one clean shader for the whole land, after studying how
+// Arkenfall paints its terrain. It replaces three stacked patches (meadowGrade, rockGrade and the
+// painted-ground block), the tiled grass texture and their constant lilac glow.
+//
+// The study thread's painted colour map (vertex colours) gives the biome: meadow, forest floor,
+// sand, town ground, the baked great ridge. On top of it, in world space and with no texture
+// repeats: meadow greens in sun-warm and cool patches, wildflower drifts (the same drifts the
+// grass field blooms in, so near and far agree), bare earth on the banks, carved rock with strata,
+// runnels and moss on the steep walls, snow on the heights, and a micro relief that bends the
+// light so the ground reads as knolls and tussocks instead of a smooth sheet.
+// At night: moss veins in the rock and the flower drifts breathe a soft bioluminescent light.
+import * as THREE from 'three';
+import { MOOD } from './sky.js';
+
+export const GROUND_TIME = { value: 0 };
+
+// noise shared with the grass field (meadow.js mirrors gHash/gNoise in JS for the flower drifts)
+export const GROUND_NOISE = /* glsl */`
+  float gHash(vec2 p){ vec3 p3 = fract(vec3(p.xyx) * .1031); p3 += dot(p3, p3.yzx + 33.33); return fract((p3.x + p3.y) * p3.z); }
+  float gNoise(vec2 p){ vec2 i = floor(p), f = fract(p); vec2 u = f * f * (3. - 2. * f);
+    return mix(mix(gHash(i), gHash(i + vec2(1., 0.)), u.x), mix(gHash(i + vec2(0., 1.)), gHash(i + vec2(1., 1.)), u.x), u.y); }
+  // drift field: where wildflowers gather (0..1) and which colour each drift is
+  float flowerDrift(vec2 wp){ return smoothstep(0.56, 0.8, gNoise(wp * 0.014 + vec2(3.1, -7.4)) * 0.75 + gNoise(wp * 0.05) * 0.25); }
+  vec3 driftColour(vec2 wp){
+    float h = gHash(floor(wp / 46.0) + 0.5);
+    return h < 0.3 ? vec3(0.95, 0.95, 0.9) : h < 0.5 ? vec3(0.9, 0.16, 0.12) : h < 0.68 ? vec3(0.3, 0.45, 0.95) : h < 0.84 ? vec3(1.0, 0.75, 0.2) : vec3(0.85, 0.45, 0.85);
+  }
+`;
+
+// m: a MeshLambertMaterial with vertexColors (its earlier onBeforeCompile, if any, runs first)
+export function groundGrade(m, key) {
+  const prev = m.onBeforeCompile;
+  m.onBeforeCompile = (sh, r) => {
+    if (prev) prev(sh, r);
+    sh.uniforms.uGTime = GROUND_TIME;
+    sh.uniforms.uGNight = MOOD.night;
+    sh.vertexShader = sh.vertexShader
+      .replace('#include <common>', '#include <common>\nvarying vec3 vGW; varying vec3 vGN;')
+      .replace('#include <project_vertex>', '#include <project_vertex>\nvGW = (modelMatrix * vec4(transformed, 1.0)).xyz; vGN = normalize(mat3(modelMatrix) * objectNormal);');
+    sh.fragmentShader = sh.fragmentShader
+      .replace('#include <common>', `#include <common>
+        uniform float uGTime, uGNight; varying vec3 vGW; varying vec3 vGN;
+        ${GROUND_NOISE}
+        float gRelief(vec2 p){ return gNoise(p * 0.09) * 0.55 + gNoise(p * 0.31 + 4.0) * 0.3 + gNoise(p * 1.1 + 9.0) * 0.15; }
+        vec3 gGlow = vec3(0.0);`)
+      .replace('#include <color_fragment>', `#include <color_fragment>
+      {
+        vec3 P = diffuseColor.rgb;
+        vec2 wp = vGW.xz; float y = vGW.y;
+        float up = normalize(vGN).y;
+        float camD = length(vGW - cameraPosition);
+        float nearF = 1.0 - smoothstep(80.0, 450.0, camD);
+        float n1 = gNoise(wp * 0.0035), n2 = gNoise(wp * 0.017 + 3.0), n3 = gNoise(wp * 0.08 + 7.0), n4 = gNoise(wp * 0.45 + 1.0);
+        // the baked great ridge round the map keeps its own colour map
+        float rg = smoothstep(9500.0, 11000.0, length(wp - vec2(-709.5, 2260.5)));
+        // how much of the painted colour is meadow green
+        float grassy = smoothstep(0.004, 0.05, P.g - max(P.r, P.b * 0.95)) * (1.0 - rg);
+        // meadow: rich greens, warm sunlit patches and cool shaded ones, broken at three scales
+        vec3 g = P * vec3(0.9, 1.06, 0.72);
+        g *= mix(vec3(0.78, 0.95, 1.1), vec3(1.16, 1.08, 0.7), smoothstep(0.28, 0.78, n1));
+        g *= 0.82 + 0.34 * n2;
+        g *= mix(1.0, 0.86 + 0.28 * n3, nearF);
+        g *= mix(1.0, 0.9 + 0.2 * n4, nearF * nearF);
+        // the wind's cat's-paws: a lighter sheen rolling over the far meadows
+        float gust = gNoise(wp * 0.012 + vec2(uGTime * 0.05, uGTime * 0.02));
+        g += vec3(0.05, 0.07, 0.02) * smoothstep(0.55, 0.85, gust) * (1.0 - nearF * 0.7);
+        // wildflower drifts read as a coloured wash beyond the grass field
+        float dr = flowerDrift(wp);
+        g = mix(g, driftColour(wp) * 0.7, dr * 0.35 * smoothstep(40.0, 120.0, camD));
+        vec3 col = mix(P, g, grassy);
+        // bare earth on the banks between the flats
+        float bank = smoothstep(0.9, 0.78, up + (n3 - 0.5) * 0.08) * grassy;
+        vec3 earth = vec3(0.34, 0.25, 0.17) * (0.75 + 0.5 * n3);
+        col = mix(col, earth, bank * 0.7);
+        // carved rock on the steep walls
+        float rn = n2 * 0.6 + n3 * 0.4;
+        float steep = smoothstep(0.74, 0.56, up + (rn - 0.5) * 0.16) * smoothstep(6.0, 30.0, y) * (1.0 - rg * 0.6);
+        float strata = 0.9 + 0.1 * sin(y * 0.21 + rn * 8.0 + gNoise(wp * 0.006) * 10.0);
+        float run = gNoise(vec2((wp.x - wp.y) * 0.05, y * 0.005)) * 0.6 + gNoise(vec2((wp.x + wp.y) * 0.19, y * 0.018)) * 0.4;
+        float crev = smoothstep(0.6, 0.3, run);
+        vec3 rock = mix(vec3(0.3, 0.27, 0.27), vec3(0.58, 0.53, 0.5), rn) * strata * (1.0 - 0.4 * crev);
+        float moss = smoothstep(0.5, 0.78, up + gNoise(wp * 0.04) * 0.25 - 0.1) * (1.0 - smoothstep(900.0, 1100.0, y));
+        rock = mix(rock, vec3(0.2, 0.33, 0.14) * (0.8 + 0.4 * n3), moss * 0.7);
+        col = mix(col, rock, steep);
+        // the flat tops of the high plateaus (palace mesa, satellites) are meadow, not bare grey stone
+        float mesa = smoothstep(0.9, 0.97, up) * smoothstep(250.0, 320.0, y) * (1.0 - smoothstep(930.0, 990.0, y)) * (1.0 - rg);
+        col = mix(col, vec3(0.3, 0.48, 0.2) * (0.8 + 0.4 * rn) * (0.9 + 0.2 * n3), mesa * 0.85);
+        // snow on the heights
+        float snow = smoothstep(1050.0, 1300.0, y + (rn - 0.5) * 200.0) * smoothstep(0.42, 0.68, up) * (1.0 - rg);
+        col = mix(col, vec3(0.95, 0.97, 1.02), snow);
+        diffuseColor.rgb = col;
+        // night: bioluminescent moss in the rock seams and a breath of light in the flower drifts
+        float pulse = 0.65 + 0.35 * sin(uGTime * 1.6 + n2 * 12.0);
+        gGlow = (vec3(0.1, 0.75, 0.85) * crev * moss * steep * 0.5 + driftColour(wp) * dr * grassy * 0.18 * nearF + vec3(0.25, 0.6, 0.45) * grassy * 0.03) * pulse * uGNight;
+      }`)
+      .replace('#include <normal_fragment_maps>', `#include <normal_fragment_maps>
+      {
+        // micro relief: tussocks and knolls bend the light (world-space bump from the relief noise)
+        float camD = length(vGW - cameraPosition);
+        float k = (1.0 - smoothstep(60.0, 400.0, camD)) * 1.4;
+        if (k > 0.0) {
+          vec2 wp = vGW.xz; float e = 0.6;
+          float hx = gRelief(wp + vec2(e, 0.0)) - gRelief(wp - vec2(e, 0.0));
+          float hz = gRelief(wp + vec2(0.0, e)) - gRelief(wp - vec2(0.0, e));
+          vec3 nW = normalize(normalize(vGN) - vec3(hx, 0.0, hz) / (2.0 * e) * k);
+          normal = normalize((viewMatrix * vec4(nW, 0.0)).xyz);
+        }
+      }`)
+      .replace('#include <emissivemap_fragment>', '#include <emissivemap_fragment>\ntotalEmissiveRadiance += gGlow;');
+  };
+  const prevKey = m.customProgramCacheKey;
+  m.customProgramCacheKey = () => (prevKey ? prevKey.call(m) : '') + '-ground-' + key;
+  return m;
+}

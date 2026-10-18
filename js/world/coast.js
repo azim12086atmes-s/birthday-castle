@@ -8,7 +8,8 @@ import { ATMOS_GLSL, atmosUniforms } from './look.js';
 // only within a quality-dependent range.
 import * as THREE from 'three';
 import { mergeGeometries } from 'three/addons/utils/BufferGeometryUtils.js';
-import { nightGrade, meadowGrade } from './materials.js';
+import { nightGrade } from './materials.js';
+import { groundGrade } from './ground.js';
 import { grassTexture, rng } from './textures.js';
 import { S, MAIN, TERRAIN_GRID, terrainHeight, groundHSL, forestAt, lakeDistance } from './layout.js';
 import { MOOD, FOG_COLOR, SUN_DIR, MOON_DIR } from './sky.js';
@@ -20,8 +21,8 @@ const CHUNK = 384, CN = 32;                // fine tiles: 32 cells of 12 m
 const NEAR_R = 900, DIP_R = 600;
 
 function landMaterial(far) {
-  const grass = grassTexture().clone(); grass.needsUpdate = true;
-  const m = new THREE.MeshLambertMaterial({ map: grass, vertexColors: true, emissive: '#10283a', emissiveIntensity: 0.5 });
+  // world pass 2: no tiled grass map and no constant glow; ground.js paints the land in world space
+  const m = new THREE.MeshLambertMaterial({ vertexColors: true });
   if (far) {
     // the coarse land sinks out of sight wherever the fine tiles cover it
     m.onBeforeCompile = (sh) => {
@@ -31,75 +32,7 @@ function landMaterial(far) {
     };
     m.customProgramCacheKey = () => 'land-far';
   }
-  return rockGrade(meadowGrade(nightGrade(m, far ? 'land-far' : 'land')));
-}
-
-// bare rock on the steep slopes and snow on the high crests, at full resolution
-// (the painted colour map holds them only at 20 m a pixel)
-function rockGrade(m) {
-  const prev = m.onBeforeCompile, key = m.customProgramCacheKey;
-  m.onBeforeCompile = (sh, r) => {
-    prev(sh, r);
-    sh.fragmentShader = sh.fragmentShader.replace('#include <alphamap_fragment>', `#include <alphamap_fragment>
-      vec3 mPaint = diffuseColor.rgb;
-      // the great ridge (outer ring): its baked colour map leads, snow included
-      float rg = smoothstep(9500.0, 11000.0, length(vMWorld.xz - vec2(-709.5, 2260.5)));
-      {
-        vec2 rp = vMWorld.xz;
-        float rn = mNoise(rp * 0.02) * 0.6 + mNoise(rp * 0.11 + 3.) * 0.4;
-        float steep = smoothstep(0.86, 0.62, vMUp + (rn - 0.5) * 0.12);
-        // faint, broken strata: warped by noise so they never read as contour lines
-        float strata = 0.95 + 0.05 * sin(vMWorld.y * 0.13 + rn * 9.0 + mNoise(rp * 0.004) * 12.0);
-        // the colour map carries baked light (sky occlusion, contact shadows): rock and snow keep its shading
-        float bake = clamp(dot(diffuseColor.rgb, vec3(0.3, 0.59, 0.11)) / 0.5, 0.6, 1.15);
-        // rock (look pass): warmer, darker stone with vertical runnels and crevices on the walls and moss on
-        // the ledges, so the cliffs read as carved rock rather than pale plastic under the filmic sun
-        float runnel = mNoise(vec2((rp.x - rp.y) * 0.045, vMWorld.y * 0.0045)) * 0.6 + mNoise(vec2((rp.x + rp.y) * 0.17, vMWorld.y * 0.016)) * 0.4;
-        float crev = smoothstep(0.62, 0.32, runnel);
-        vec3 rock = mix(vec3(0.34, 0.31, 0.34), vec3(0.6, 0.55, 0.53), rn) * strata * bake;
-        rock *= 1.0 - 0.38 * crev;
-        rock = mix(rock, vec3(0.30, 0.42, 0.24) * bake, smoothstep(0.55, 0.82, vMUp) * smoothstep(0.5, 0.75, mNoise(rp * 0.03 + 9.0)) * 0.6);
-        float hi = smoothstep(500.0, 1100.0, vMWorld.y);
-        diffuseColor.rgb = mix(diffuseColor.rgb, rock, steep * (0.55 + 0.4 * hi) * smoothstep(8.0, 40.0, vMWorld.y) * (1.0 - rg));
-        // the flat tops of the high plateaus (palace mesa, satellites) are green meadow, not bare grey stone
-        float mesa = smoothstep(0.9, 0.97, vMUp) * smoothstep(250.0, 320.0, vMWorld.y) * (1.0 - smoothstep(930.0, 990.0, vMWorld.y)) * (1.0 - rg);
-        diffuseColor.rgb = mix(diffuseColor.rgb, vec3(0.34, 0.5, 0.23) * (0.8 + 0.4 * rn) * bake, mesa * 0.85);
-        // snow from about 1 km on the old ring
-        float snow = smoothstep(980.0, 1250.0, vMWorld.y + (rn - 0.5) * 160.0) * smoothstep(0.45, 0.7, vMUp) * (1.0 - rg);
-        diffuseColor.rgb = mix(diffuseColor.rgb, vec3(0.97, 0.97, 1.02) * min(bake, 1.0), snow);
-      }
-      {
-        // painted ground (study thread, Oct 17): broad sunlit and shaded patches, brushy tufts that hold up to
-        // the middle distance, warm earth on the banks between flats, so the meadows stop reading as flat plastic
-        vec2 wp = vMWorld.xz;
-        float camD = length(vMWorld - cameraPosition);
-        float m1 = mNoise(wp * 0.0042) * 0.55 + mNoise(wp * 0.013 + 2.0) * 0.45;
-        vec2 sw = vec2(wp.x * 0.8 + wp.y * 0.6, -wp.x * 0.6 + wp.y * 0.8);
-        float m2 = mNoise(sw * vec2(0.05, 0.12) + 7.0) * 0.6 + mNoise(sw * vec2(0.14, 0.33) + 1.0) * 0.4;
-        vec3 pc = diffuseColor.rgb;
-        float grass = smoothstep(0.72, 0.9, vMUp) * smoothstep(0.015, 0.06, pc.g - max(pc.r, pc.b * 0.95)) * (1.0 - rg);
-        vec3 sunG = pc * vec3(1.07, 1.04, 0.88), coolG = pc * vec3(0.8, 0.94, 1.06);
-        vec3 gc = mix(coolG, sunG, smoothstep(0.28, 0.72, m1));
-        gc *= mix(1.0, 0.84 + 0.3 * m2, 1.0 - smoothstep(250.0, 1400.0, camD));
-        diffuseColor.rgb = mix(diffuseColor.rgb, gc, grass * 0.75);
-        float bank = smoothstep(0.9, 0.78, vMUp) * smoothstep(0.55, 0.7, vMUp) * (1.0 - rg) * smoothstep(3.0, 12.0, vMWorld.y);
-        diffuseColor.rgb = mix(diffuseColor.rgb, pc * vec3(1.08, 0.88, 0.74), bank * 0.55);
-      }`).replace('#include <emissivemap_fragment>', `#include <emissivemap_fragment>
-      {
-        // bioluminescence by night: the teal-violet glowwood and the pastel blossom meadows breathe light
-        float glw = clamp((mPaint.b - mPaint.r) * 3.0 + (mPaint.g + mPaint.b - 2.0 * mPaint.r) * 1.2 - 0.25, 0.0, 1.0);
-        float bls = clamp((mPaint.r - mPaint.g) * 3.0 + (mPaint.b - mPaint.g) * 1.5 - 0.2, 0.0, 1.0);
-        float ph = mNoise(vMWorld.xz * 0.01) * 6.2832;
-        float pulse = 0.6 + 0.4 * sin(uMTime * 2.2 + ph);
-        vec3 gc = mix(vec3(0.25, 0.9, 1.0), vec3(0.65, 0.45, 1.0), mNoise(vMWorld.xz * 0.03 + 7.0));
-        totalEmissiveRadiance += (gc * glw * 0.6 + vec3(1.0, 0.55, 0.8) * bls * 0.2) * pulse * uNightG * smoothstep(1.0, 6.0, vMWorld.y) * (1.0 - rg);
-      }`).replace('#include <fog_fragment>', `
-      #ifdef USE_FOG
-        gl_FragColor.rgb = atmosApply(gl_FragColor.rgb, vMWorld, fogColor);   // the shared haze (look.js); peaks rise out of it
-      #endif`);
-  };
-  m.customProgramCacheKey = () => (key ? key.call(m) : 'land') + '-rock';
-  return m;
+  return groundGrade(nightGrade(m, far ? 'land-far' : 'land'), far ? 'far' : 'near');
 }
 
 function landGeometry(x0, z0, n, step, skipDeep) {

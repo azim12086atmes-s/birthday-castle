@@ -347,7 +347,31 @@ const GX0 = -4800 * S, GZ0 = -3400 * S, GSPAN = 9600 * S, GSTEP = 30, GN = GSPAN
 let grid = null;
 function bake() {
   grid = new Float32Array(GN * GN);
-  for (let j = 0; j < GN; j++) for (let i = 0; i < GN; i++) grid[j * GN + i] = terrainRaw(GX0 + i * GSTEP, GZ0 + j * GSTEP);
+  for (let j = 0; j < GN; j++) for (let i = 0; i < GN; i++) {
+    const x = GX0 + i * GSTEP, z = GZ0 + j * GSTEP, h = terrainRaw(x, z);
+    grid[j * GN + i] = h + relief(x, z, h);
+  }
+}
+
+// rolling ground (world pass 2, after Arkenfall): the open land between places rises and falls in
+// knolls and swales instead of lying as one smooth sheet. Kept off the place pads, the palace
+// grounds, the lake and shore, and the high mountains (which have their own shape).
+function relief(x, z, h) {
+  let m = smooth(3, 18, h) * smooth(800, 500, h);
+  if (m <= 0) return 0;
+  for (const p of PAD_LIST) {
+    const q = Math.hypot(x - p.x, z - p.z);
+    if (q < p.r + p.e + 120) m *= smooth(p.r + p.e, p.r + p.e + 120, q);
+  }
+  // palace grounds and the spawn shore stay as drawn
+  const px = Math.max(0, -760 * S - x, x - 820 * S), pz = Math.max(0, -760 * S - z, z - 1010 * S);
+  m *= smooth(0, 160, Math.hypot(px, pz));
+  const sx = Math.max(0, Math.abs(x) - 260 * S), sz = Math.max(0, 2100 * S - z, z - 2550 * S);
+  m *= smooth(0, 160, Math.hypot(sx, sz));
+  m *= smooth(170, 320, lake1(x / S, z / S) * S);
+  if (m <= 0) return 0;
+  const a = vnoise(x / 260 + 31, z / 260 - 17), b = vnoise(x / 85 - 5, z / 85 + 13);
+  return ((a - 0.5) * 10 + (b - 0.5) * 4) * m;
 }
 export const TERRAIN_GRID = { x0: GX0, z0: GZ0, span: GSPAN, step: GSTEP, n: GN, get data() { if (!grid) bake(); return grid; } };
 function mainTerrain(x, z) {
