@@ -14,14 +14,20 @@ export const ATMOS = {
   sun: new Float32Array([0, 0.3, -1, 0.6]),          // xyz light direction, w = glow toward it
   sunCol: new Float32Array([1, 0.8, 0.6, 1 / 650]),  // rgb haze colour toward the light, w = height falloff (1/m)
   params: new Float32Array([1 / 9000, 0, 450, 0.92]),// x density at base (1/m), y base height, z clear distance, w max opacity
+  mist: new Float32Array([1 / 3000, 160, 500, 0]),    // valley mist: x density (1/m), y top height, z clear distance, w time
 };
 const U = {
-  fogSun: { value: ATMOS.sun }, fogSunCol: { value: ATMOS.sunCol }, fogParams: { value: ATMOS.params },
+  fogSun: { value: ATMOS.sun }, fogSunCol: { value: ATMOS.sunCol }, fogParams: { value: ATMOS.params }, fogMist: { value: ATMOS.mist },
 };
 
 // GLSL: the haze any shader can call with its world position.
 export const ATMOS_GLSL = /* glsl */`
-  uniform vec4 fogSun; uniform vec4 fogSunCol; uniform vec4 fogParams;
+  uniform vec4 fogSun; uniform vec4 fogSunCol; uniform vec4 fogParams; uniform vec4 fogMist;
+  float mistHash(vec2 p) { return fract(sin(dot(p, vec2(127.1, 311.7))) * 43758.5453); }
+  float mistNoise(vec2 p) {
+    vec2 i = floor(p), f = fract(p); f = f * f * (3.0 - 2.0 * f);
+    return mix(mix(mistHash(i), mistHash(i + vec2(1.0, 0.0)), f.x), mix(mistHash(i + vec2(0.0, 1.0)), mistHash(i + vec2(1.0, 1.0)), f.x), f.y);
+  }
   float atmosPath(float d, float d0, float d1) {
     float a = clamp(d - d0, 0.0, d1 - d0);
     return a * a / (2.0 * max(d1 - d0, 1.0)) + max(d - d1, 0.0);
@@ -40,6 +46,13 @@ export const ATMOS_GLSL = /* glsl */`
     float dh = h1 - h0;
     float avg = abs(dh) > 1.0 ? (exp(-k * h0) - exp(-k * h1)) / (k * dh) : exp(-k * h0);
     float tau = fogParams.x * avg * atmosPath(dist, fogParams.z * 0.3, fogParams.z * 1.6);
+    // valley mist (after Arkenfall): banks lying low out in the valleys, never close round the
+    // viewer, broken into drifting banks with open lanes between them
+    if (fogMist.x > 0.0) {
+      float low = 1.0 - smoothstep(fogMist.y * 0.3, fogMist.y, wpos.y);
+      float bank = smoothstep(0.3, 0.7, mistNoise(wpos.xz / 2200.0 + fogMist.w * 0.003) * 0.7 + mistNoise(wpos.xz / 700.0 - fogMist.w * 0.005) * 0.3);
+      tau += fogMist.x * max(dist - fogMist.z, 0.0) * low * bank;
+    }
     return (1.0 - exp(-tau)) * fogParams.w;
   }
   vec3 atmosApply(vec3 col, vec3 wpos, vec3 ambient) {
@@ -76,9 +89,10 @@ export function updateAtmosphere(mood, golden, lightDir, fogColor) {
   // day: soft blue-lilac air with a warm glow toward the sun; night: deep indigo, silver toward the moon
   _c.set('#ffd2a6').lerp(new THREE.Color('#ff9f6a'), golden).lerp(new THREE.Color('#7f86d6'), mood);
   ATMOS.sunCol[0] = _c.r; ATMOS.sunCol[1] = _c.g; ATMOS.sunCol[2] = _c.b;
-  ATMOS.sunCol[3] = 1 / THREE.MathUtils.lerp(820, 900, mood);
-  ATMOS.params[0] = 1 / THREE.MathUtils.lerp(6500, 9000, mood);
-  ATMOS.params[2] = THREE.MathUtils.lerp(300, 260, mood);
+  ATMOS.sunCol[3] = 1 / THREE.MathUtils.lerp(1100, 900, mood);
+  ATMOS.params[0] = 1 / THREE.MathUtils.lerp(5000, 9000, mood);
+  ATMOS.params[2] = THREE.MathUtils.lerp(320, 260, mood);
+  ATMOS.mist[0] = THREE.MathUtils.lerp(1 / 4500, 1 / 6000, mood); ATMOS.mist[3] = performance.now() / 1000;
   ATMOS.params[3] = 0.94;
   fogColor.set('#a8c0ec').lerp(new THREE.Color('#d8b7c8'), golden * 0.6).lerp(new THREE.Color('#1d1a4a'), mood);
 }
