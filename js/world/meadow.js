@@ -23,10 +23,10 @@ const vnoise = (x, z) => {
 
 // a clump of tall, thin, curving blades (world pass 2, after Arkenfall's meadows): each blade
 // tapers to a point in three segments and leans outward, so the field reads as soft grass
-function tuftGeometry(blades) {
+function tuftGeometry(blades, spread = 1) {
   const pos = [], col = [], tip = [], nrm = [], idx = [];
   for (let k = 0; k < blades; k++) {
-    const a = hash(k, 3) * Math.PI * 2, rr = 0.03 + Math.sqrt(hash(k, 5)) * 0.5;
+    const a = hash(k, 3) * Math.PI * 2, rr = (0.03 + Math.sqrt(hash(k, 5)) * 0.5) * spread;
     const ox = Math.cos(a) * rr, oz = Math.sin(a) * rr, w = 0.022 + hash(k, 7) * 0.018, h = 0.28 + hash(k, 11) * hash(k, 19) * 0.6;
     const fa = a + (hash(k, 17) - 0.5) * 1.2, ta = fa + Math.PI / 2, lean = 0.15 + hash(k, 13) * 0.35;
     const base = pos.length / 3;
@@ -73,20 +73,23 @@ function flowerGeometry() {
   return g;
 }
 
-function swayMaterial(time, radius, key, blade) {
+function swayMaterial(time, radius, key, blade, inner = 0) {
   const m = new THREE.MeshLambertMaterial({ vertexColors: true, side: THREE.DoubleSide });
   m.onBeforeCompile = (sh) => {
     sh.uniforms.uTime = time;
     sh.uniforms.uR = { value: radius };
+    sh.uniforms.uR0 = { value: inner };
     sh.uniforms.uGNight = MOOD.night;
     sh.vertexShader = sh.vertexShader
       .replace('#include <common>', `#include <common>
-        uniform float uTime; uniform float uR; attribute float aTip; varying float vTip; varying vec3 vOrg;
+        uniform float uTime; uniform float uR; uniform float uR0; attribute float aTip; varying float vTip; varying vec3 vOrg;
         ${GROUND_NOISE}`)
       .replace('#include <begin_vertex>', `#include <begin_vertex>
         vec3 org = (modelMatrix * instanceMatrix * vec4(0., 0., 0., 1.)).xyz;
         vOrg = org; vTip = aTip;
-        float fade = 1. - smoothstep(uR * 0.62, uR * 0.97, length(org.xz - cameraPosition.xz));
+        float dcam = length(org.xz - cameraPosition.xz);
+        // each ring fades out at its edge and the outer ring fades in under the inner one's edge
+        float fade = (1. - smoothstep(uR * 0.62, uR * 0.97, dcam)) * (uR0 > 0. ? smoothstep(uR0 * 0.62 * 0.95, uR0, dcam) : 1.);
         transformed *= fade;
         // gusts roll across the field as waves of bending grass, with a quick flutter on top
         vec2 wdir = normalize(vec2(0.8, 0.5));
@@ -130,66 +133,83 @@ function swayMaterial(time, radius, key, blade) {
 
 export function createMeadow(scene, preset) {
   const low = preset.grass < 4000, high = preset.grass >= 8000;
-  // a wider, denser blanket so the grass runs on toward the middle distance (look pass)
-  const CELL = low ? 1.2 : high ? 0.8 : 0.95, R = low ? 38 : high ? 70 : 55;
-  const span = Math.ceil(R / CELL), maxN = Math.ceil(Math.PI * span * span * 1.05);
   const time = { value: 0 };
-  const tufts = new THREE.InstancedMesh(tuftGeometry(low ? 12 : 18), swayMaterial(time, R, 'meadow-blade', true), maxN);
-  const flowers = new THREE.InstancedMesh(flowerGeometry(), swayMaterial(time, R, 'meadow-flower'), Math.ceil(maxN * 0.4));
-  for (const m of [tufts, flowers]) { m.frustumCulled = false; m.count = 0; m.instanceMatrix.setUsage(THREE.DynamicDrawUsage); scene.add(m); }
-  tufts.setColorAt(0, new THREE.Color()); flowers.setColorAt(0, new THREE.Color());
+  // two rings of grass: dense blades round the player, then wider, sparser clumps out to the
+  // middle distance, so the meadows read as grass as far as the eye settles (world pass 2b)
+  const LAYERS = [
+    { CELL: low ? 1.2 : high ? 0.8 : 0.95, R0: 0, R: low ? 38 : high ? 60 : 50, blades: low ? 12 : 18, spread: 1, flowers: true },
+  ];
+  if (!low) LAYERS.push({ CELL: high ? 2.2 : 2.7, R0: high ? 48 : 40, R: high ? 150 : 110, blades: high ? 16 : 12, spread: 1.9, flowers: false });
+  for (const L of LAYERS) {
+    L.span = Math.ceil(L.R / L.CELL);
+    L.maxN = Math.ceil(Math.PI * (L.span * L.span - (L.R0 / L.CELL) ** 2 * 0.8) * 1.05);
+    L.tufts = new THREE.InstancedMesh(tuftGeometry(L.blades, L.spread), swayMaterial(time, L.R, 'meadow-blade' + (L.R0 ? '-mid' : ''), true, L.R0), L.maxN);
+    L.cache = new Map();
+    const ms = [L.tufts];
+    if (L.flowers) { L.fl = new THREE.InstancedMesh(flowerGeometry(), swayMaterial(time, L.R, 'meadow-flower'), Math.ceil(L.maxN * 0.4)); ms.push(L.fl); L.fl.setColorAt(0, new THREE.Color()); }
+    for (const m of ms) { m.frustumCulled = false; m.count = 0; m.instanceMatrix.setUsage(THREE.DynamicDrawUsage); scene.add(m); }
+    L.tufts.setColorAt(0, new THREE.Color());
+  }
 
   const PETALS = ['#ff86c0', '#fff4f8', '#ffd84f', '#c49bff', '#8fb8ff', '#ff9e9e'].map((c) => new THREE.Color(c));
-  const cache = new Map();
   let cacheIsl = null, lastX = Infinity, lastZ = Infinity;
   const dummy = new THREE.Object3D(), color = new THREE.Color();
 
   // what grows in one grid cell: null for bare ground, else a tuft and maybe a blossom
-  function cell(i, j, isl) {
-    const key = i * 100003 + j;
-    let c = cache.get(key);
+  function cell(L, i, j, isl) {
+    const key = i * 100003 + j, CELL = L.CELL;
+    let c = L.cache.get(key);
     if (c !== undefined) return c;
     c = null;
     const x = (i + 0.15 + hash(i, j, 1) * 0.7) * CELL, z = (j + 0.15 + hash(i, j, 2) * 0.7) * CELL;
     if (islandAt(x, z, isl.y) === isl) {
       const y = groundAt(x, z, isl.y);
       const th = isl.main ? terrainHeight(isl, x, z) : null;
-      const natural = isl.main ? builtHeight(x, z) === null && th > 0.6 : true;
+      const natural = isl.main ? builtHeight(x, z) === null && th > 0.6 && th < 800 : true;
       if (y !== null && natural && isClearOfBuildings(x, z, -1, isl.y)) {
-        const [H, S, L] = groundHSL(isl, x, z, isl.main ? th : y - isl.y);
-        if (H > 0.15 && H < 0.5 && S > 0.22 && L < 0.75) {
+        let [H, S, Lt] = groundHSL(isl, x, z, isl.main ? th : y - isl.y);
+        let ok = H > 0.12 && H < 0.55 && S > 0.12 && Lt < 0.8;
+        // the pale painted ground inland is drawn as meadow by the ground shader: grass grows there too
+        if (!ok && isl.main && th > 6 && S < 0.3 && Lt > 0.4 && Lt < 0.85) { ok = true; H = 0.27; S = 0.5; Lt = 0.36; }
+        if (ok && isl.main) {
+          const e = 2, sl = Math.hypot(terrainHeight(isl, x + e, z) - terrainHeight(isl, x - e, z), terrainHeight(isl, x, z + e) - terrainHeight(isl, x, z - e)) / (2 * e);
+          if (sl > 0.75) ok = false;
+        }
+        if (ok) {
           const drift = vnoise(x * 0.05 + 3, z * 0.05 - 7);
           const bloom = hash(i, j, 3) < (drift > 0.55 ? 0.5 : 0.07);
-          c = { x, y, z, H, S, L, rot: hash(i, j, 4) * 6.28, s: 0.75 + hash(i, j, 5) * 0.6, bloom, pet: Math.floor(hash(i, j, 6) * PETALS.length), fx: (hash(i, j, 7) - 0.5) * CELL * 0.6, fz: (hash(i, j, 8) - 0.5) * CELL * 0.6 };
+          c = { x, y, z, H, S, L: Lt, rot: hash(i, j, 4) * 6.28, s: 0.75 + hash(i, j, 5) * 0.6, bloom, pet: Math.floor(hash(i, j, 6) * PETALS.length), fx: (hash(i, j, 7) - 0.5) * CELL * 0.6, fz: (hash(i, j, 8) - 0.5) * CELL * 0.6 };
         }
       }
     }
-    cache.set(key, c);
+    L.cache.set(key, c);
     return c;
   }
 
-  function rebuild(cx, cz, isl) {
-    if (cacheIsl !== isl || cache.size > maxN * 6) { cache.clear(); cacheIsl = isl; }
-    const ci = Math.floor(cx / CELL), cj = Math.floor(cz / CELL);
+  function rebuild(L, cx, cz, isl) {
+    if (L.cache.size > L.maxN * 6) L.cache.clear();
+    const ci = Math.floor(cx / L.CELL), cj = Math.floor(cz / L.CELL), span = L.span, in0 = Math.max(0, L.R0 - 12) / L.CELL;
     let nt = 0, nf = 0;
     for (let j = -span; j <= span; j++) for (let i = -span; i <= span; i++) {
-      if (i * i + j * j > span * span) continue;
-      const c = cell(ci + i, cj + j, isl);
+      const d2 = i * i + j * j;
+      if (d2 > span * span || d2 < in0 * in0) continue;
+      const c = cell(L, ci + i, cj + j, isl);
       if (!c) continue;
-      if (nt < maxN) {
+      if (nt < L.maxN) {
         dummy.position.set(c.x, c.y, c.z); dummy.rotation.set(0, c.rot, 0); dummy.scale.set(c.s, c.s * (0.85 + (c.L - 0.3) * 0.8), c.s);
-        dummy.updateMatrix(); tufts.setMatrixAt(nt, dummy.matrix);
-        color.setHSL(c.H - 0.01, Math.min(1, c.S + 0.08), c.L); tufts.setColorAt(nt++, color);
+        dummy.updateMatrix(); L.tufts.setMatrixAt(nt, dummy.matrix);
+        color.setHSL(c.H - 0.01, Math.min(1, c.S + 0.08), c.L); L.tufts.setColorAt(nt++, color);
       }
-      if (c.bloom && nf < flowers.instanceMatrix.count) {
+      if (L.fl && c.bloom && nf < L.fl.instanceMatrix.count) {
         const fx = c.x + c.fx, fz = c.z + c.fz;
         dummy.position.set(fx, c.y, fz); dummy.rotation.set(0, c.rot, 0); dummy.scale.setScalar(0.8 + c.s * 0.5);
-        dummy.updateMatrix(); flowers.setMatrixAt(nf, dummy.matrix);
-        flowers.setColorAt(nf++, PETALS[c.pet]);
+        dummy.updateMatrix(); L.fl.setMatrixAt(nf, dummy.matrix);
+        L.fl.setColorAt(nf++, PETALS[c.pet]);
       }
     }
-    tufts.count = nt; flowers.count = nf;
-    for (const m of [tufts, flowers]) { m.instanceMatrix.needsUpdate = true; if (m.instanceColor) m.instanceColor.needsUpdate = true; }
+    L.tufts.count = nt;
+    if (L.fl) L.fl.count = nf;
+    for (const m of [L.tufts, L.fl]) if (m) { m.instanceMatrix.needsUpdate = true; if (m.instanceColor) m.instanceColor.needsUpdate = true; }
   }
 
   return {
@@ -198,11 +218,12 @@ export function createMeadow(scene, preset) {
       const p = camera.position;
       const isl = islandAt(p.x, p.z, p.y) || MAIN;
       const gy = groundAt(p.x, p.z, p.y);
-      // only worth drawing when standing near the ground
-      const show = gy !== null && p.y - gy < 30;
-      tufts.visible = flowers.visible = show;
+      // only worth drawing when near the ground (riding low or walking)
+      const show = gy !== null && p.y - gy < 60;
+      for (const L of LAYERS) { L.tufts.visible = show; if (L.fl) L.fl.visible = show; }
       if (!show) return;
-      if (Math.hypot(p.x - lastX, p.z - lastZ) > CELL * 3 || isl !== cacheIsl) { lastX = p.x; lastZ = p.z; rebuild(p.x, p.z, isl); }
+      if (isl !== cacheIsl) { for (const L of LAYERS) L.cache.clear(); cacheIsl = isl; lastX = Infinity; }
+      if (Math.hypot(p.x - lastX, p.z - lastZ) > 2.5) { lastX = p.x; lastZ = p.z; for (const L of LAYERS) rebuild(L, p.x, p.z, isl); }
     },
   };
 }
