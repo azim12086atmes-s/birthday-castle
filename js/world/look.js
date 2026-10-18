@@ -90,7 +90,7 @@ export function updateAtmosphere(mood, golden, lightDir, fogColor) {
   _c.set('#ffd2a6').lerp(new THREE.Color('#ff9f6a'), golden).lerp(new THREE.Color('#7f86d6'), mood);
   ATMOS.sunCol[0] = _c.r; ATMOS.sunCol[1] = _c.g; ATMOS.sunCol[2] = _c.b;
   ATMOS.sunCol[3] = 1 / THREE.MathUtils.lerp(1100, 900, mood);
-  ATMOS.params[0] = 1 / THREE.MathUtils.lerp(5000, 9000, mood);
+  ATMOS.params[0] = 1 / THREE.MathUtils.lerp(3000, 4500, mood);      // thick enough to swallow far towns (owner, Oct 18)
   ATMOS.params[2] = THREE.MathUtils.lerp(320, 260, mood);
   ATMOS.mist[0] = THREE.MathUtils.lerp(1 / 4500, 1 / 6000, mood); ATMOS.mist[3] = performance.now() / 1000;
   ATMOS.params[3] = 0.94;
