@@ -1,0 +1,11 @@
+import { chromium } from '/opt/node-tools/node_modules/playwright/index.mjs';
+const b = await chromium.launch({ args: ['--use-gl=angle','--use-angle=swiftshader','--enable-unsafe-swiftshader','--ignore-gpu-blocklist'] });
+const p = await b.newPage({ viewport: { width: 960, height: 540 } });
+const by = {}; let tot = 0, n = 0; const big = [];
+p.on('response', async (r) => { try { const buf = await r.body(); const u = new URL(r.url()); const ext = (u.pathname.match(/\.(\w+)$/) || [, '?'])[1]; const dir = u.pathname.split('/').slice(1, 3).join('/'); const k = ext + ' ' + dir; by[k] = (by[k] || 0) + buf.length; tot += buf.length; n++; big.push([buf.length, u.pathname]); } catch {} });
+await p.goto('http://localhost:8080/?quality=high&scenes=0&dusk=1&cam=' + (process.env.CAM || '-5600,185.8,3000,-6400,178,2000,70'), { waitUntil: 'load' });
+await p.waitForTimeout(+(process.env.WAIT || 60000));
+console.log('total MB', (tot / 1e6).toFixed(1), 'files', n);
+console.log(Object.entries(by).sort((a, b) => b[1] - a[1]).slice(0, 15).map(([k, v]) => k + ' ' + (v / 1e6).toFixed(1) + 'MB').join('\n'));
+console.log(big.sort((a, b) => b[0] - a[0]).slice(0, 12).map(([s, u]) => (s / 1e6).toFixed(1) + ' ' + u).join('\n'));
+await b.close();
