@@ -5,6 +5,7 @@
 // place is freed, ash and fading ribbons in the Hush, and the finale's spire spirals and
 // meteor shower. Each system is one draw, moved on the GPU; the CPU only respawns.
 import * as THREE from 'three';
+import { ATMOS } from './look.js';
 import { rng } from './textures.js';
 import { MOOD } from './sky.js';
 import { S, PAL } from './layout.js';
@@ -34,10 +35,10 @@ function sparkles(count) {
     transparent: true, depthWrite: false, blending: THREE.AdditiveBlending, toneMapped: false,
     uniforms: {
       uTime: { value: 0 }, uCenter: { value: new THREE.Vector3() }, uScale: { value: 1 }, uHush: { value: 0 }, uNight: MOOD.night,
-      uW0: { value: new THREE.Vector3(0.3, 0, 0) }, uW1: { value: new THREE.Vector3(0, 0, 0) }, uWind: { value: new THREE.Vector2(0.8, 0.3) },
+      uW0: { value: new THREE.Vector3(0.3, 0, 0) }, uW1: { value: new THREE.Vector3(0, 0, 0) }, uWind: { value: new THREE.Vector2(0.8, 0.3) }, uSun: { value: ATMOS.sun },
     },
     vertexShader: /* glsl */`
-      uniform float uTime, uScale, uHush, uNight; uniform vec3 uCenter, uW0, uW1; uniform vec2 uWind;
+      uniform float uTime, uScale, uHush, uNight; uniform vec3 uCenter, uW0, uW1; uniform vec2 uWind; uniform vec4 uSun;
       attribute float aSeed, aMode; varying vec3 vC; varying float vA, vMode, vRot;
       float h(float n){ return fract(sin(n * 91.7) * 43758.5); }
       void main(){
@@ -81,6 +82,8 @@ function sparkles(count) {
         // fewer sparkles right at the lens: only a third of them come within 15 m
         float near = h(aSeed * 7.7) < 0.35 ? 1.0 : smoothstep(10.0, 16.0, d);
         vA = tw * near * smoothstep(0.8, 2.5, d) * smoothstep(40.0, 28.0, length(rel.xz)) * (1.0 - 0.4 * uHush);
+        // pollen and seeds light up against the sun, as motes do in a sunbeam
+        if (aMode < 0.5 || (aMode > 3.5 && aMode < 4.5)) vA *= 1.0 + 3.0 * pow(max(dot(normalize(uCenter + rel - cameraPosition), uSun.xyz), 0.0), 6.0) * (1.0 - uNight);
         vC = c; vMode = aMode; vRot = t * (0.6 + aSeed) + s;
         gl_Position = projectionMatrix * mv;
         gl_PointSize = px * 2.6 * uScale * clamp(14.0 / max(d, 1.0), 0.55, 1.5);
@@ -381,7 +384,7 @@ export function createMagic(scene, preset) {
         const W0 = air.material.uniforms.uW0.value, W1 = air.material.uniforms.uW1.value;
         const k = Math.min(1, dt * 0.6);
         W0.lerp({ x: 0.3 + 0.2 * night, y: night * lowAlt * (0.75 + 0.25 * meadow), z: Math.min(0.95, glowwood * 0.9 + night * 0.4) }, k);
-        W1.lerp({ x: Math.min(0.75, blossom * 0.6) * (1 - night * 0.5), y: meadow * (1 - night) * 0.55 * lowAlt, z: night * 0.55 + (1 - lowAlt) * 0.2 }, k);
+        W1.lerp({ x: Math.min(0.75, blossom * 0.6) * (1 - night * 0.5), y: (0.25 + meadow * 0.6) * (1 - night) * lowAlt, z: night * 0.55 + (1 - lowAlt) * 0.2 }, k);
       }
 
       // footstep light at night
