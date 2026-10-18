@@ -242,28 +242,27 @@ function forests(scene, preset) {
       const sp = pickSpecies(r, h);
       add(px, pz, sp, f);
       // ferns gather under the broadleaf trees
-      if (sp !== 2 && r() < 0.7) { const a = r() * 6.283, d = 3 + r() * 5, fx = px + Math.cos(a) * d, fz = pz + Math.sin(a) * d; if (!onPath(fx, fz)) add(fx, fz, FERN, f); }
+      if (FERN !== null && sp !== 2 && r() < 0.7) { const a = r() * 6.283, d = 3 + r() * 5, fx = px + Math.cos(a) * d, fz = pz + Math.sin(a) * d; if (!onPath(fx, fz)) add(fx, fz, FERN, f); }
     }
     if (!pts.length) return null;
     const group = new THREE.Group();
     group.userData = { trees: pts, cx: x0 + T / 2, cz: z0 + T / 2 };
-    SPECIES.forEach((sp, i) => {
-      const list = pts.filter((pt) => pt[5] === i);
-      if (!list.length) return;
-      const g = kit.cardGeo.clone();
-      g.setAttribute('aDy', new THREE.InstancedBufferAttribute(Float32Array.from(list, (pt) => pt[6]), 1));
-      const mesh = new THREE.InstancedMesh(g, kit.cardMat[i], list.length);
-      list.forEach(([x, y, z, rot, ht, , , k], j) => {
-        const sc = ht / kit.cardH[i];
-        q.setFromAxisAngle(up, rot); s.setScalar(sc); p.set(x, y - 0.3, z);
-        mesh.setMatrixAt(j, m4.compose(p, q, s));
-        // a touch of colour variety from tree to tree
-        c.setRGB(1, 1, 1).offsetHSL((k - 0.5) * 0.03, 0, (k - 0.5) * 0.12);
-        mesh.setColorAt(j, c);
-      });
-      mesh.frustumCulled = false;
-      group.add(mesh);
+    // every far tree of the tile in one draw: the species' views share one atlas
+    const g = kit.cardGeo.clone(), card = new Float32Array(pts.length * 4);
+    g.setAttribute('aDy', new THREE.InstancedBufferAttribute(Float32Array.from(pts, (pt) => pt[6]), 1));
+    const mesh = new THREE.InstancedMesh(g, kit.farMat, pts.length);
+    pts.forEach(([x, y, z, rot, ht, , , k], j) => {
+      const C = kit.cards[kit.slot(pts[j])], sc = ht / C.height;
+      card.set([C.col, C.row, C.frame * sc, C.lift * sc], j * 4);
+      q.setFromAxisAngle(up, rot); s.setScalar(1); p.set(x, y - 0.3, z);
+      mesh.setMatrixAt(j, m4.compose(p, q, s));
+      // a touch of colour variety from tree to tree
+      c.setRGB(1, 1, 1).offsetHSL((k - 0.5) * 0.03, 0, (k - 0.5) * 0.12);
+      mesh.setColorAt(j, c);
     });
+    g.setAttribute('aCard', new THREE.InstancedBufferAttribute(card, 4));
+    mesh.frustumCulled = false;
+    group.add(mesh);
     scene.add(group);
     return group;
   }
@@ -274,7 +273,7 @@ function forests(scene, preset) {
     // true while the trees wait for their cards to load
     get waiting() { return !built; },
     update(cam) {
-      if (!kit.ready) return;
+      if (!kit.ready) { kit.grow(); return; }
       built = true;
       const ci = Math.floor(cam.x / T), cj = Math.floor(cam.z / T), n = Math.ceil(range / T) + 1;
       for (const [k, t] of tiles) if (t) t.visible = false;
@@ -289,6 +288,7 @@ function forests(scene, preset) {
       nx = 1e9;
     },
     // the 3D trees round the player, refreshed every few metres
+    tick(t) { kit.tick(t); },
     near(cam) {
       if (!kit.ready || Math.hypot(cam.x - nx, cam.z - nz) < 5) return;
       nx = cam.x; nz = cam.z;
@@ -319,6 +319,7 @@ export function createCoast(scene, preset) {
     sea,
     update(t, camera) {
       sea.material.uniforms.uTime.value = t;
+      woods.tick(t);
       sea.position.set(Math.round(camera.position.x / 100) * 100, 0, Math.round(camera.position.z / 100) * 100);
       const cx = camera.position.x, cz = camera.position.z;
       woods.near(camera.position);

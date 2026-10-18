@@ -21,25 +21,27 @@ const vnoise = (x, z) => {
   return a + (b - a) * u + (c - a) * v + (a - b - c + d) * u * v;
 };
 
-// a clump of tall, thin, curving blades (world pass 2, after Arkenfall's meadows): each blade
-// tapers to a point in three segments and leans outward, so the field reads as soft grass
+// a clump of tall, hair-thin blades (look pass 3, after Arkenfall's wheat-gold meadows): each blade
+// is one quad and a tip triangle (3 triangles), so a clump can carry many blades for little cost;
+// the curve comes from the lean and the wind in the shader
 function tuftGeometry(blades, spread = 1) {
   const pos = [], col = [], tip = [], nrm = [], idx = [];
   for (let k = 0; k < blades; k++) {
     const a = hash(k, 3) * Math.PI * 2, rr = (0.03 + Math.sqrt(hash(k, 5)) * 0.5) * spread;
-    const ox = Math.cos(a) * rr, oz = Math.sin(a) * rr, w = 0.022 + hash(k, 7) * 0.018, h = 0.28 + hash(k, 11) * hash(k, 19) * 0.6;
-    const fa = a + (hash(k, 17) - 0.5) * 1.2, ta = fa + Math.PI / 2, lean = 0.15 + hash(k, 13) * 0.35;
+    const ox = Math.cos(a) * rr, oz = Math.sin(a) * rr, w = 0.008 + hash(k, 7) * 0.009, h = 0.42 + hash(k, 11) * hash(k, 19) * 0.6;
+    const fa = a + (hash(k, 17) - 0.5) * 1.2, ta = fa + Math.PI / 2, lean = 0.12 + hash(k, 13) * 0.3;
+    // each blade its own shade: some yellower, some bluer, so the field is never one flat green
+    const v = 0.82 + hash(k, 23) * 0.36, hu = hash(k, 29) - 0.5;
     const base = pos.length / 3;
-    for (let s = 0; s <= 3; s++) {
-      const t = s / 3, ww = w * (1 - t * 0.85), bend = lean * t * t;
-      const cx = ox + Math.cos(fa) * bend, cz = oz + Math.sin(fa) * bend, y = h * t * (1 - 0.15 * t);
-      if (s < 3) pos.push(cx - Math.cos(ta) * ww, y, cz - Math.sin(ta) * ww, cx + Math.cos(ta) * ww, y, cz + Math.sin(ta) * ww);
-      else pos.push(cx, y, cz, cx, y, cz);
-      const c = 0.5 + 0.6 * t;
-      col.push(c, c, c, c, c, c); tip.push(t, t);
-      nrm.push(0, 1, 0, 0, 1, 0);
+    for (const t of [0, 0.55]) {
+      const ww = w * (1 - t * 0.6), bend = lean * t * t, cx = ox + Math.cos(fa) * bend, cz = oz + Math.sin(fa) * bend, y = h * t;
+      pos.push(cx - Math.cos(ta) * ww, y, cz - Math.sin(ta) * ww, cx + Math.cos(ta) * ww, y, cz + Math.sin(ta) * ww);
+      const c = 0.5 + 0.6 * t, r = c * v * (1 + hu * 0.35), g = c * v, bl = c * v * (1 - hu * 0.5);
+      col.push(r, g, bl, r, g, bl); tip.push(t, t); nrm.push(0, 1, 0, 0, 1, 0);
     }
-    for (let s = 0; s < 3; s++) { const q = base + s * 2; idx.push(q, q + 1, q + 3, q, q + 3, q + 2); }
+    pos.push(ox + Math.cos(fa) * lean, h * 0.97, oz + Math.sin(fa) * lean);
+    col.push(1.1 * v * (1 + hu * 0.35), 1.1 * v, 1.1 * v * (1 - hu * 0.5)); tip.push(1); nrm.push(0, 1, 0);
+    idx.push(base, base + 1, base + 3, base, base + 3, base + 2, base + 2, base + 3, base + 4);
   }
   const g = new THREE.BufferGeometry();
   g.setAttribute('position', new THREE.Float32BufferAttribute(pos, 3));
@@ -53,7 +55,7 @@ function tuftGeometry(blades, spread = 1) {
 // a little five-petalled blossom on a stem: petals take the instance colour, the eye stays golden
 function flowerGeometry() {
   const pos = [], col = [], tip = [], nrm = [];
-  const H = 0.42, tri = (a, b, c, ca, cb, cc, t) => {
+  const H = 0.68, tri = (a, b, c, ca, cb, cc, t) => {
     pos.push(...a, ...b, ...c); col.push(...ca, ...cb, ...cc); tip.push(t, t, t); nrm.push(0, 1, 0, 0, 1, 0, 0, 1, 0);
   };
   const stem = [0.25, 0.42, 0.2];
@@ -110,11 +112,16 @@ function swayMaterial(time, radius, key, blade, inner = 0) {
         ${blade ? `{
           // the same sunlit and cool patches as the ground beneath, darker at the root, light at the tip
           float n1 = gNoise(vOrg.xz * 0.0035), n2 = gNoise(vOrg.xz * 0.017 + 3.0);
-          vec3 g = diffuseColor.rgb * vec3(0.9, 1.06, 0.72);
+          vec3 g = diffuseColor.rgb * vec3(0.74, 1.0, 0.56);
           g *= mix(vec3(0.78, 0.95, 1.1), vec3(1.16, 1.08, 0.7), smoothstep(0.28, 0.78, n1));
           g *= 0.82 + 0.34 * n2;
-          diffuseColor.rgb = mix(g * 0.42, g * 1.12 + vec3(0.05, 0.05, 0.0), smoothstep(0.0, 1.0, vTip));
-        }` : ''}`)
+          diffuseColor.rgb = mix(g * 0.3, g * vec3(1.32, 1.12, 0.55) + vec3(0.1, 0.07, 0.0), smoothstep(0.0, 1.0, vTip));
+          // slow cloud shadows drifting over the field, shared with the ground beneath
+          diffuseColor.rgb *= 0.62 + 0.38 * smoothstep(0.32, 0.62, gNoise(vOrg.xz * 0.004 + vec2(uTime * 0.012, uTime * 0.005)));
+        }` : `{
+          // the stem stays green whatever the petals' colour
+          if (vTip < 0.5) diffuseColor.rgb = vec3(0.16, 0.3, 0.1);
+        }`}`)
       .replace('#include <normal_fragment_maps>', '#include <normal_fragment_maps>\nnormal = normalize(vNormal);')
       .replace('#include <emissivemap_fragment>', `#include <emissivemap_fragment>
         #ifdef USE_FOG
@@ -137,9 +144,10 @@ export function createMeadow(scene, preset) {
   // two rings of grass: dense blades round the player, then wider, sparser clumps out to the
   // middle distance, so the meadows read as grass as far as the eye settles (world pass 2b)
   const LAYERS = [
-    { CELL: low ? 1.2 : high ? 0.8 : 0.95, R0: 0, R: low ? 38 : high ? 60 : 50, blades: low ? 12 : 18, spread: 1, flowers: true },
+    { CELL: low ? 0.95 : high ? 0.75 : 0.85, R0: 0, R: low ? 24 : high ? 40 : 32, blades: low ? 16 : high ? 32 : 24, spread: 1, flowers: true },
   ];
-  if (!low) LAYERS.push({ CELL: high ? 2.2 : 2.7, R0: high ? 48 : 40, R: high ? 150 : 110, blades: high ? 16 : 12, spread: 1.9, flowers: false });
+  // beyond it, wider sparser clumps to the middle distance, where the ground shader takes over
+  if (!low) LAYERS.push({ CELL: high ? 2.4 : 2.9, R0: high ? 32 : 26, R: high ? 120 : 90, blades: 14, spread: 1.9, flowers: false });
   for (const L of LAYERS) {
     L.span = Math.ceil(L.R / L.CELL);
     L.maxN = Math.ceil(Math.PI * (L.span * L.span - (L.R0 / L.CELL) ** 2 * 0.8) * 1.05);
@@ -151,7 +159,7 @@ export function createMeadow(scene, preset) {
     L.tufts.setColorAt(0, new THREE.Color());
   }
 
-  const PETALS = ['#ff86c0', '#fff4f8', '#ffd84f', '#c49bff', '#8fb8ff', '#ff9e9e'].map((c) => new THREE.Color(c));
+  const PETALS = ['#e8323a', '#3f6bff', '#fff6ee', '#e8323a', '#5a7dff', '#ffd84f', '#ff86c0', '#fff6ee'].map((c) => new THREE.Color(c));
   let cacheIsl = null, lastX = Infinity, lastZ = Infinity;
   const dummy = new THREE.Object3D(), color = new THREE.Color();
 
@@ -177,7 +185,7 @@ export function createMeadow(scene, preset) {
         }
         if (ok) {
           const drift = vnoise(x * 0.05 + 3, z * 0.05 - 7);
-          const bloom = hash(i, j, 3) < (drift > 0.55 ? 0.5 : 0.07);
+          const bloom = hash(i, j, 3) < (drift > 0.55 ? 0.6 : 0.16);
           c = { x, y, z, H, S, L: Lt, rot: hash(i, j, 4) * 6.28, s: 0.75 + hash(i, j, 5) * 0.6, bloom, pet: Math.floor(hash(i, j, 6) * PETALS.length), fx: (hash(i, j, 7) - 0.5) * CELL * 0.6, fz: (hash(i, j, 8) - 0.5) * CELL * 0.6 };
         }
       }

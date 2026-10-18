@@ -8,7 +8,7 @@ import * as THREE from 'three';
 import { ATMOS } from './look.js';
 import { rng } from './textures.js';
 import { MOOD } from './sky.js';
-import { S, PAL } from './layout.js';
+import { S, PAL, palaceTop } from './layout.js';
 import { crescentH, crescentRGB } from './crescent.js';
 
 const PALETTE = { gold: '#ffd27a', cyan: '#6fe8ff', rose: '#ff9bd6', lilac: '#b89bff', mint: '#8dffcf', pearl: '#fff4e6' };
@@ -17,6 +17,7 @@ const PAIRS = [['gold', 'rose'], ['cyan', 'lilac'], ['mint', 'cyan'], ['rose', '
 // the palace's tallest needle spires (palace.js SPIRES, drawn metres): x, z, top
 const SPIRES = [[-26, 18, 394], [-52, 30, 345], [22, 22, 347], [-78, 34, 316], [155, 60, 258], [-322, 120, 297], [-285, 100, 257],
   [206, -120, 316], [228, -60, 278], [281, -200, 287], [322, -215, 333], [351, -190, 353], [380, -210, 295]];
+for (const sp of SPIRES) sp[2] = Math.round(palaceTop(sp[0], sp[1]) + (sp[2] - palaceTop(sp[0], sp[1])) * 1.6);   // as palace.js: the taller crown
 const KIND = { swift: 0, spiral: 1, drift: 2, orbit: 3, trail: 4, meteor: 5 };
 
 // ---- sparkles: one points field wrapped round the viewer, six moods -------------------

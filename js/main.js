@@ -4,6 +4,7 @@ import { resolveQuality, saveQuality, savedQuality, FrameGovernor } from './qual
 import { createSky, FOG_COLOR, MOOD, SUN_DIR, MOON_DIR } from './world/sky.js';
 import { createIslands, portal as makePortal } from './world/islands.js';
 import { createCoast } from './world/coast.js';
+import { setTreeRenderer } from './world/trees.js';
 import { createPalace } from './world/palace.js';
 import { createNature } from './world/nature.js';
 import { createApproach } from './world/approach.js';
@@ -49,6 +50,7 @@ const quality = resolveQuality(params.get('quality') || undefined);
 const canvas = $('c');
 const renderer = new THREE.WebGLRenderer({ canvas, antialias: quality.antialias, powerPreference: 'high-performance' });
 renderer.setSize(innerWidth, innerHeight);
+setTreeRenderer(renderer);
 renderer.outputColorSpace = THREE.SRGBColorSpace;
 // filmic tone curve: bright skies and glowing glass roll off softly instead of clipping to white
 renderer.toneMapping = THREE.ACESFilmicToneMapping;

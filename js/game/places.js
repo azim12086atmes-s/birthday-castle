@@ -138,7 +138,7 @@ export function createPlaceVisuals(scene, places) {
 
   // ---- the Great Birthday Lantern over the palace ----
   const lantern = new THREE.Group();
-  lantern.position.set(0, PAL.y + 1450, -120);         // above the 1100 m spire
+  lantern.position.set(0, PAL.y + 1650, -120);         // above the tallest spire
   lantern.scale.setScalar(3);
   const coreMat = glowBasic('#ffe9a8');
   const core = new THREE.Mesh(new THREE.IcosahedronGeometry(16, 1), coreMat);
