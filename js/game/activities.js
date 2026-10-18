@@ -4,7 +4,9 @@
 // an answer) travel as small events so every screen stays in step.
 //
 // A controller is: { title, hint, combat, update(dt, t), apply(op), targets(),
-//                    progress(), won, failed, dispose() }
+//                    progress(), goal(), scores, won, failed, dispose() }
+// scores (player id -> points) feed the "stars of the round" on the results card;
+// goal() is where my next target is, so a guiding pet can run there.
 import * as THREE from 'three';
 import { rng, glowTexture, sparkleTexture } from '../world/textures.js';
 import { glowBasic, toon } from '../world/materials.js';
@@ -50,6 +52,9 @@ function base(ctx, tpl) {
     limit: LIMIT[tpl] || 180,
     combat: false, won: false, failed: false,
     targets: () => [],
+    goal: () => null,
+    scores: new Map(),
+    score(id, pts = 1) { this.scores.set(id, (this.scores.get(id) || 0) + pts); },
     apply() {},
     progress: () => '',
     dispose() { disposeTree(root); },
@@ -60,6 +65,13 @@ const n = (ctx) => Math.max(1, ctx.party || ctx.players().length);
 // foes and bosses grow with the party: base x (0.5 + 0.1 x players), 16 players at most
 const scale = (ctx) => 0.5 + 0.1 * Math.min(16, n(ctx));
 const atRing = (c, r, a, y) => new THREE.Vector3(c.x + Math.cos(a) * r, y, c.z + Math.sin(a) * r);
+const nearest = (me, list, pos = (q) => q.pos) => {
+  let best = null, bd = Infinity;
+  for (const q of list) { const p = pos(q), d = Math.hypot(p.x - me.x, p.z - me.z); if (d < bd) { bd = d; best = p; } }
+  return best;
+};
+// pet powers that change a game (schema: pets.power)
+const pickupR = (ctx, r) => r * (ctx.power === 'fetch' ? 2.6 : 1);
 
 // ---- 1. Harmony puzzle: pads that must all glow at once ---------------------------
 function harmony(ctx) {
@@ -88,7 +100,8 @@ function harmony(ctx) {
     const ps = ctx.players();
     let all = true;
     for (const pad of pads) {
-      if (ps.some((q) => Math.hypot(q.pos.x - pad.p.x, q.pos.z - pad.p.z) < 1.8 && Math.abs(q.pos.y - pad.p.y) < 3)) pad.lit = linger;
+      const on = ps.filter((q) => Math.hypot(q.pos.x - pad.p.x, q.pos.z - pad.p.z) < 1.8 && Math.abs(q.pos.y - pad.p.y) < 3);
+      if (on.length) { pad.lit = linger; for (const q of on) A.score(q.id, dt); }
       else pad.lit = Math.max(0, pad.lit - dt);
       const k = pad.lit / linger;
       pad.disc.material.color.setHSL(0.13, 0.9, 0.3 + 0.4 * k);
@@ -98,6 +111,7 @@ function harmony(ctx) {
     if (all) A.won = true;
   };
   A.progress = () => `${pads.filter((p) => p.lit > 0).length} / ${nodes} lit`;
+  A.goal = () => nearest(ctx.mePos(), pads.filter((q) => q.lit < 1), (q) => q.p);
   return A;
 }
 
@@ -126,12 +140,16 @@ function race(ctx) {
     const me = ctx.mePos();
     const target = next < count ? rings[next].p : rings[0].p;
     rings.forEach((r, i) => { r.m.material.color.set(i === next ? '#ffd47a' : i < next ? '#4a5a7a' : '#9fe8ff'); r.m.rotation.z = t; });
-    if (Math.hypot(me.x - target.x, me.z - target.z) < 3.2 && Math.abs(me.y + 1 - target.y) < 4) {
+    if (Math.hypot(me.x - target.x, me.z - target.z) < pickupR(ctx, 3.2) && Math.abs(me.y + 1 - target.y) < 4) {
       next++;
-      if (next > count) ctx.send({ op: 'fin' });
+      if (next > count) ctx.send({ op: 'fin' }); else ctx.send({ op: 'ring' });
     }
   };
-  A.apply = (op, from) => { if (op.op === 'fin' && !finished.includes(from)) { finished.push(from); A.won = true; ctx.toast(`${ctx.nameOf(from)} crossed the line first ✦`); } };
+  A.apply = (op, from) => {
+    if (op.op === 'ring') A.score(from, 1);
+    if (op.op === 'fin' && !finished.includes(from)) { finished.push(from); A.score(from, 10); A.won = true; ctx.toast(`${ctx.nameOf(from)} crossed the line first ✦`); }
+  };
+  A.goal = () => (next < count ? rings[next].p : rings[0].p);
   A.progress = () => next > count ? 'Home!' : `Ring ${Math.min(next + 1, count)} / ${count}${next === count ? ' (back to the start)' : ''}`;
   return A;
 }
@@ -178,11 +196,12 @@ function arena(ctx) {
     }
   };
   A.targets = () => foes.filter((f) => f.hp > 0 && f.m.visible);
-  A.apply = (op) => {
+  A.apply = (op, from) => {
     if (op.op !== 'hit') return;
     const f = foes.find((q) => q.id === op.id);
-    if (f && f.hp > 0) { f.hp--; if (f.hp <= 0) ctx.combat.burst(f.pos, '#d9a8ff', 6); }
+    if (f && f.hp > 0) { f.hp--; A.score(from, 1); if (f.hp <= 0) { A.score(from, 2); ctx.combat.burst(f.pos, '#d9a8ff', 6); } }
   };
+  A.goal = () => nearest(ctx.mePos(), A.targets());
   A.progress = () => `Wave ${Math.min(wave + 1, waves)} / ${waves} · ${foes.filter((f) => f.hp > 0).length} left`;
   return A;
 }
@@ -256,11 +275,12 @@ function boss(ctx, place) {
     }
   };
   A.targets = () => spots.filter((s) => s.hp > 0);
-  A.apply = (op) => {
+  A.apply = (op, from) => {
     if (op.op !== 'hit') return;
     const s = spots.find((q) => q.id === op.id);
-    if (s && s.hp > 0) { s.hp--; if (s.hp <= 0) ctx.combat.burst(s.pos, '#fff2b0', 10); }
+    if (s && s.hp > 0) { s.hp--; A.score(from, 1); if (s.hp <= 0) { A.score(from, 3); ctx.combat.burst(s.pos, '#fff2b0', 10); } }
   };
+  A.goal = () => nearest(ctx.mePos(), A.targets());
   A.progress = () => `Phase ${Math.min(phase + 1, phases)} / ${phases} · weak spots ${spots.filter((s) => s.hp > 0).length}`;
   return A;
 }
@@ -282,7 +302,7 @@ function party(ctx) {
     A.root.add(m);
     bubbles.push({ id: `b${k}`, t0: k * 0.65, base: p, m, pos: p.clone(), r: 1.3, gold, popped: false });
   }
-  const scores = new Map();
+  const scores = A.scores;
   let team = 0;
   A.title = 'Bubble pop';
   A.hint = `Pop ${goal} bubbles together before time runs out. Gold ones count three.`;
@@ -304,9 +324,10 @@ function party(ctx) {
     if (!b || b.popped) return;
     b.popped = true; b.m.visible = false;
     const pts = b.gold ? 3 : 1;
-    team += pts; scores.set(from, (scores.get(from) || 0) + pts);
+    team += pts; A.score(from, pts);
     ctx.combat.burst(b.pos, b.gold ? '#ffe08a' : '#bfe8ff', 4);
   };
+  A.goal = () => nearest(ctx.mePos(), A.targets());
   A.progress = () => `${team} / ${goal}` + [...scores].sort((a, b) => b[1] - a[1]).slice(0, 3).map(([id, s]) => ` · ${ctx.nameOf(id)} ${s}`).join('');
   return A;
 }
@@ -352,12 +373,13 @@ function escort(ctx) {
     else if (k >= 1) A.won = true;
   };
   A.targets = () => wisps.filter((w) => w.m.visible);
-  A.apply = (op) => {
+  A.apply = (op, from) => {
     if (op.op === 'light') { light = Math.min(light, op.v); return; }
     if (op.op !== 'hit') return;
     const w = wisps.find((q) => q.id === op.id);
-    if (w && !w.dead) { w.dead = true; ctx.combat.burst(w.pos, '#d9a8ff', 3); }
+    if (w && !w.dead) { w.dead = true; A.score(from, 2); ctx.combat.burst(w.pos, '#d9a8ff', 3); }
   };
+  A.goal = () => nearest(ctx.mePos(), A.targets()) || spirit.position;
   A.progress = () => `Light ${Math.max(0, light | 0)}% · ${Math.round(Math.min(1, (ctx.time() / travel)) * 100)}% of the way`;
   return A;
 }
@@ -397,7 +419,7 @@ function gather(ctx) {
         if (carrier) q.m.position.set(carrier.pos.x, carrier.pos.y + 2.6, carrier.pos.z);
       } else {
         q.m.position.y = q.p.y + Math.sin(t * 2 + q.i) * 0.25;
-        if (!mine && Math.hypot(me.x - q.p.x, me.z - q.p.z) < 1.8 && !q.asked) { q.asked = true; ctx.send({ op: 'pick', i: q.i }); }
+        if (!mine && Math.hypot(me.x - q.p.x, me.z - q.p.z) < pickupR(ctx, 1.8) && !q.asked) { q.asked = true; ctx.send({ op: 'pick', i: q.i }); }
       }
       q.m.rotation.y = t;
     }
@@ -410,7 +432,7 @@ function gather(ctx) {
     if (op.op === 'pick' && !q.by && !q.used && !pieces.some((x) => x.by === from && !x.used)) q.by = from;
     else if (op.op === 'pick' && q.by !== from) q.asked = false;
     if (op.op === 'drop' && q.by === from && !q.used) {
-      q.used = true; filled++;
+      q.used = true; filled++; A.score(from, 3);
       const k = layers.length;
       const layer = new THREE.Mesh(new THREE.CylinderGeometry(3.2 - k * 0.25, 3.3 - k * 0.25, 0.8, 24), layerMat);
       layer.position.copy(site).add(new THREE.Vector3(0, 0.4 + k * 0.82, 0));
@@ -419,6 +441,10 @@ function gather(ctx) {
     }
   };
   A.progress = () => `${filled} / ${slots} pieces placed`;
+  A.goal = () => {
+    const mine = pieces.find((q) => q.by === ctx.meId && !q.used);
+    return mine ? site : nearest(ctx.mePos(), pieces.filter((q) => !q.by && !q.used), (q) => q.p);
+  };
   return A;
 }
 
@@ -451,7 +477,7 @@ function quiz(ctx) {
     if (op.op !== 'ans' || op.q !== idx || answered.has(idx)) return;
     answered.add(idx);
     const ok = op.i === qs[idx].right;
-    if (ok) right++;
+    if (ok) { right++; A.score(from, 3); }
     const btns = box.querySelectorAll('.a button');
     btns[qs[idx].right]?.classList.add('right');
     if (!ok) btns[op.i]?.classList.add('wrong');
@@ -463,6 +489,18 @@ function quiz(ctx) {
   A.dispose = () => { box.classList.add('hidden'); dispose(); };
   return A;
 }
+
+// for the party games menu: any game, anywhere, with whoever comes
+export const TEMPLATE_INFO = {
+  party_game: ['Bubble pop', 'Pop the rising bubbles together. Gold ones count three.'],
+  race: ['Ring race', 'Run through eight rings in order. First one home wins it for all.'],
+  harmony_puzzle: ['Light the pads', 'Stand on the pads so every one glows at once.'],
+  gather_build: ['Build the cake', 'Carry the glowing pieces, one each, to the golden circle.'],
+  arena_defence: ['Hold the ground', 'Three waves of shadow-glass. Starlight (click) and sword (Q).'],
+  escort: ['Guide the lantern', 'Shoot the wisps before they drink the lantern spirit\'s light.'],
+  boss_purification: ['Boss battle', 'Shoot the weak spots, dodge the red circles, two phases.'],
+  heart_quiz: ['Heart quiz', 'Questions about her, answered as a team.'],
+};
 
 const FACTORY = { harmony_puzzle: harmony, race, arena_defence: arena, boss_purification: boss, party_game: party, escort, gather_build: gather, heart_quiz: quiz };
 

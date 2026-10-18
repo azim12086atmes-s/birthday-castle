@@ -52,6 +52,16 @@ export function createCombat(scene, camera, data) {
       bolts.push({ s, from: camera.position.clone().add(new THREE.Vector3(0, -0.3, 0)), to: end, t: 0, dur: Math.max(0.08, (best ? bestD : 60) / 140) , hit: best });
       return true;
     },
+    // a little dragon breathes a spark at the nearest foe: same hit path as a bolt
+    petShot(from, range = 24) {
+      if (!self.enabled) return false;
+      let best = null, bd = range;
+      for (const tg of self.targets()) { const d = from.distanceTo(tg.pos); if (d < bd) { bd = d; best = tg; } }
+      if (!best) return false;
+      const s = new THREE.Sprite(boltMat); s.scale.setScalar(0.9); scene.add(s);
+      bolts.push({ s, from: from.clone(), to: best.pos.clone(), t: 0, dur: Math.max(0.15, bd / 60), hit: best });
+      return true;
+    },
     swing(pos, facing) {
       if (!self.enabled || self.dimmed > 0) return;
       const m = new THREE.Mesh(arcGeo, arcMat.clone());

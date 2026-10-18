@@ -157,3 +157,11 @@ Following the study thread's plan (design/vfx/README.md on PR #1):
   - The Hush turns sparkles to grey ash and fades the ribbons.
   - The finale doubles the spire spirals and adds a meteor shower.
 - **Great ridge:** on the outer ring the baked colour map leads; the game adds no rock or snow there.
+
+## Party games and pets (Oct 18)
+
+- **P** (or 🎲) opens the party games menu: any of the 8 templates, played where the caller stands. The host turns the pick into `S.invite` for 15 s (0 s when alone), then into an activity with `place: 'party'`, its own `spot`, `replay: true` (no shard), scaled to the players within 120 m.
+- **J** whooshes a far player to a running game (over 120 m away) or an invite (over 30 m). Place games now scale to the players within 300 m of the head instead of the whole room.
+- Every template keeps `scores` (player -> points); the results card shows the top three as "Stars of the round". `goal()` gives my next target.
+- Pet powers all do something: star fox, fennec and glow frog run ahead to `goal()` with a sparkle trail; young dragon breathes a spark at the nearest foe every 3 s (`combat.petShot`); cloud koi +15% move speed (`controller.speedMul`); crystal hummingbird 2.6x pickup reach (race rings, cake pieces); bunny-cat heals, griffin shields (as before).
+- 🐾 changes pet any time; **Z** cuddles it (spin, hop, hearts; shared as `petlove`). Each pet kind has its own shape and motion; still no eyes.

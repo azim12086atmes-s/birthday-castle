@@ -12,7 +12,7 @@
 // Great Birthday Lantern. Shards won during the week count on the night too.
 import * as THREE from 'three';
 import { CONFIG } from '../config.js';
-import { createActivity } from './activities.js';
+import { createActivity, TEMPLATE_INFO } from './activities.js';
 import { createCinema } from './cinema.js';
 import { MEW_ACTIONS, screenSplash } from './mew.js';
 
@@ -35,13 +35,17 @@ function buildHud() {
   act.innerHTML = '<div class="title"></div><div class="hint"></div><div class="prog"></div><div class="row"><div class="light"><i></i></div><span class="timer"></span></div>';
   const map = el('div', { id: 'map', className: 'modal hidden' }, document.body);
   map.innerHTML = '<div class="panel ornate"><h3>Where shall the sky ship sail?</h3><p class="sub"></p><ol class="list"></ol><button class="close">Close</button></div>';
+  const games = el('div', { id: 'party', className: 'modal hidden' }, document.body);
+  games.innerHTML = '<div class="panel ornate"><h3>Party games</h3><p class="sub">Pick a game: everyone gets 15 seconds to join you (J), then it begins right here.</p><div class="grid"></div><button class="close">Close</button></div>';
   const quiz = el('div', { id: 'quiz', className: 'modal hidden' }, document.body);
   quiz.innerHTML = '<div class="panel ornate"><h3>The heart quiz</h3><p class="q"></p><div class="a"></div><p class="who"></p></div>';
   el('div', { id: 'title-card', className: 'hidden' }, document.body).innerHTML = '<div class="t"></div><div class="s"></div>';
   const btns = $('buttons');
   const mapBtn = el('button', { id: 'map-btn', className: 'round', title: 'Map and sky ship (M)', textContent: '⛵' });
-  btns.prepend(mapBtn);
-  return { quest, act, map, quiz, mapBtn };
+  const gamesBtn = el('button', { id: 'party-btn', className: 'round', title: 'Party games (P)', textContent: '🎲' });
+  const petBtn = el('button', { id: 'pet-btn', className: 'round', title: 'Your pet (Z to cuddle it)', textContent: '🐾' });
+  btns.prepend(mapBtn, gamesBtn, petBtn);
+  return { quest, act, map, quiz, mapBtn, games, gamesBtn, petBtn };
 }
 
 export function createQuest(o) {
@@ -53,11 +57,11 @@ export function createQuest(o) {
   acts[4] ||= { name: 'The 32 places' };
 
   let S = { v: 0, act: 1, shards: [], activity: null, finale: false, revealed: false };
-  try { const saved = JSON.parse(localStorage.getItem(SAVE_KEY) || 'null'); if (saved && saved.act) S = { ...S, ...saved, activity: null }; } catch { /* private mode */ }
+  try { const saved = JSON.parse(localStorage.getItem(SAVE_KEY) || 'null'); if (saved && saved.act) S = { ...S, ...saved, activity: null, invite: null }; } catch { /* private mode */ }
   if (params.get('act')) S.act = +params.get('act');
 
   let shown = JSON.parse(JSON.stringify(S));     // the last state put on screen (the host edits S in place)
-  let activity = null, actPlace = null, actT = 0, reported = false, downs = 0;
+  let activity = null, actPlace = null, actT = 0, reported = false, downs = 0, petZap = 3, inviteAt = 0;
   const hearts = () => 3 + Math.floor((activity?.meta.n || players().length) / 2) - downs;
   let cutscene = null;
   const seenTitles = new Map();
@@ -82,7 +86,16 @@ export function createQuest(o) {
     return c.divideScalar(ps.length);
   };
   const ownerRemote = () => [...remotes.values()].find((r) => r.profile.mew);
-  const near = (p, d) => !!p && controller.pos.distanceTo(places.spotOf(p)) < d;
+  // a party game is played wherever it was called, so it carries its own spot
+  const partyPlace = (a) => {
+    const [name] = TEMPLATE_INFO[a.tpl] || ['Party game'];
+    const spot = new THREE.Vector3(...(a.spot || [0, 0, 0]));
+    return { id: 'party', party: true, name: 'Party games', spot, at: spot, game: { name, template: a.tpl }, challenge: { name, template: a.tpl }, bossCreature: { name: 'the Gloom Titan' } };
+  };
+  const placeOf = (id, a) => (id === 'party' ? partyPlace(a || S.activity || S.lastWin || {}) : places.byId[id]);
+  const spotOf = (p) => (p.party ? p.spot : places.spotOf(p));
+  const near = (p, d) => !!p && controller.pos.distanceTo(spotOf(p)) < d;
+  const nearCount = (spot, d) => Math.max(1, players().filter((q) => q.pos.distanceTo(spot) < d).length);
 
   // ---- cinematic scenes (js/game/cinema.js) ---------------------------------------------
   const cinema = createCinema({
@@ -120,6 +133,7 @@ export function createQuest(o) {
     },
   });
   function playScene(ids, ctx) { cinema.play(ids, ctx); }
+  o.progress?.bind({ goal: () => (activity && !cutscene ? activity.goal() : null) });
   // a scene everyone watches at the same moment
   function sharedScene(id, ctx = {}) { emit({ k: 'cut', id, run: Math.random().toString(36).slice(2, 8), ...ctx }); }
 
@@ -145,11 +159,15 @@ export function createQuest(o) {
     const p = places.byId[r.place];
     if (r.a === 'start' && p && !S.activity) {
       const freed = S.shards.includes(p.id);
-      S.activity = { id: Math.random().toString(36).slice(2, 8), place: p.id, stage: 0, tpl: p.game.template, seed: (Math.random() * 1e9) | 0, replay: freed, n: players().length };
+      S.activity = { id: Math.random().toString(36).slice(2, 8), place: p.id, stage: 0, tpl: p.game.template, seed: (Math.random() * 1e9) | 0, replay: freed, n: nearCount(places.spotOf(p), 300) };
+      publish();
+    } else if (r.a === 'party' && TEMPLATE_INFO[r.tpl] && !S.activity && !S.invite && Array.isArray(r.at)) {
+      S.invite = { id: Math.random().toString(36).slice(2, 8), tpl: r.tpl, spot: r.at.map((v) => +(+v).toFixed(1)), by: from, secs: remotes.size ? 15 : 0 };
+      inviteHostAt = Date.now();
       publish();
     } else if ((r.a === 'won' || r.a === 'skip') && S.activity && (r.aid === S.activity.id || r.a === 'skip')) {
-      const a = S.activity, pl = places.byId[a.place];
-      S.lastWin = { aid: a.id, place: a.place, stage: a.stage, tpl: a.tpl, replay: !!a.replay, secs: Math.round(r.secs || 0), limit: r.limit || 180 };
+      const a = S.activity, pl = placeOf(a.place, a);
+      S.lastWin = { aid: a.id, place: a.place, stage: a.stage, tpl: a.tpl, spot: a.spot, replay: !!a.replay, secs: Math.round(r.secs || 0), limit: r.limit || 180 };
       if (a.stage === 0 && !a.replay) {
         S.activity = { id: Math.random().toString(36).slice(2, 8), place: a.place, stage: 1, tpl: pl.challenge.template, seed: (Math.random() * 1e9) | 0, n: players().length };
       } else {
@@ -160,12 +178,24 @@ export function createQuest(o) {
       publish();
     } else if (r.a === 'fail' && S.activity && r.aid === S.activity.id) {
       S.activity = null; publish();
-      emit({ k: 'qmsg', text: `${places.byId[r.place]?.name || 'The place'}: not this time. Speak to the head to try again.` });
+      emit({ k: 'qmsg', text: r.place === 'party' ? 'Not this time! Press P to play again.' : `${places.byId[r.place]?.name || 'The place'}: not this time. Speak to the head to try again.` });
     } else if (r.a === 'hush' && S.act < 4) { S.act = 4; publish(); }
     else if (r.a === 'finale') { S.finale = true; S.act = 5; publish(); }
     else if (r.a === 'reveal') { S.revealed = true; publish(); }
     else if (r.a === 'honoree' && S.act < 2) { S.act = 2; S.act2At = Date.now(); S.act2Shards = S.shards.length; publish(); }
     else if (r.a === 'reset' && director) { S = { v: S.v, act: 1, shards: [], activity: null, finale: false, revealed: false }; publish(); }
+  }
+  // host: once the invite's time is up, the party game begins with everyone who came
+  let inviteHostAt = 0;
+  function hostInvite() {
+    const iv = S.invite;
+    if (!iv || !auth() || Date.now() - (inviteHostAt || 0) < iv.secs * 1000) return;
+    S.invite = null;
+    if (!S.activity) {
+      const spot = new THREE.Vector3(...iv.spot);
+      S.activity = { id: Math.random().toString(36).slice(2, 8), place: 'party', stage: 0, tpl: iv.tpl, spot: iv.spot, seed: (Math.random() * 1e9) | 0, replay: true, n: nearCount(spot, 120) };
+    }
+    publish();
   }
 
   // ---- everyone: show what the state says -------------------------------------------
@@ -178,6 +208,12 @@ export function createQuest(o) {
     if (old.act < 5 && S.act === 5 && !S.finale) { ui.toast('Every shard of the Grand Path is home. Return to the palace for midnight ✦'); playScene('return_palace', { run: `ret:${S.v}` }); }
     if (!old.finale && S.finale && !params.get('act')) playScene('finale', { run: `fin:${S.v}` });
     if (!old.revealed && S.revealed) o.onReveal && o.onReveal();
+    if (S.invite && S.invite.id !== old.invite?.id) {
+      inviteAt = performance.now();
+      inviteHostAt = Date.now();      // so a new host can still start an invite in flight
+      const [gname] = TEMPLATE_INFO[S.invite.tpl];
+      if (S.invite.secs) ui.toast(S.invite.by === myId() ? `You called everyone to ${gname}! It starts in ${S.invite.secs} s` : `${nameOf(S.invite.by)} calls everyone to ${gname}! Press J to join ✦`);
+    }
     if (S.lastWin && S.lastWin.aid !== old.lastWin?.aid) rewardWin(S.lastWin);
     const a = S.activity, oa = activity ? activity.meta : null;
     if (!a && activity) endActivity();
@@ -187,13 +223,15 @@ export function createQuest(o) {
 
   // starlight and a results card for everyone who was there
   function rewardWin(w) {
-    const place = places.byId[w.place];
+    const place = placeOf(w.place, w);
     if (!place || !o.progress || isMew || !near(place, 260)) return;
     const boss = w.tpl === 'boss_purification';
     const gained = o.progress.award(w.replay ? 5 : w.stage === 0 ? 15 : boss ? 45 : 30, w.stage === 0 ? 'game' : 'challenge');
     const stage = w.stage === 0 ? place.game.name : place.challenge.name;
-    const nxt = w.stage === 0 && !w.replay ? `Now the challenge: ${place.challenge.name}` : S.act >= 4 && nextOnPath() ? `Next on the Grand Path: ${nextOnPath().name} (M to sail)` : 'Press M to sail to another place';
-    o.progress.results({ place, stage, seconds: w.secs, limit: w.limit, gained, next: nxt });
+    const nxt = w.stage === 0 && !w.replay ? `Now the challenge: ${place.challenge.name}` : place.party ? 'Press P for another round' : S.act >= 4 && nextOnPath() ? `Next on the Grand Path: ${nextOnPath().name} (M to sail)` : 'Press M to sail to another place';
+    // the stars of the round, from what every screen saw each player do
+    const stars = activity && activity.meta.id === w.aid ? [...activity.scores].filter(([, v]) => v >= 1).sort((a, b) => b[1] - a[1]).slice(0, 3).map(([id, v]) => [nameOf(id), Math.round(v)]) : [];
+    o.progress.results({ place, stage, seconds: w.secs, limit: w.limit, gained, next: nxt, stars });
     o.progress.cheer();
   }
 
@@ -217,11 +255,11 @@ export function createQuest(o) {
 
   function beginActivity(a) {
     if (activity) endActivity(true);
-    const place = places.byId[a.place];
-    const spot = places.spotOf(place);
-    actT = 0; reported = false;
+    const place = placeOf(a.place, a);
+    const spot = spotOf(place);
+    actT = 0; reported = false; petZap = 3;
     const ctx = {
-      scene, spot, seed: a.seed, meId: myId(), party: a.n,
+      scene, spot, seed: a.seed, meId: myId(), party: a.n, power: o.progress?.power,
       players, mePos: () => controller.pos, nameOf, combat,
       send: (op) => emit({ k: 'aop', aid: a.id, op }),
       toast: ui.toast, isHost: auth, time: () => actT,
@@ -239,8 +277,9 @@ export function createQuest(o) {
     hud.act.querySelector('.title').textContent = `${place.name}: ${stageName}`;
     hud.act.querySelector('.hint').textContent = activity.title + '. ' + activity.hint;
     hud.act.querySelector('.light').classList.toggle('hidden', !activity.combat);
-    const far = controller.pos.distanceTo(spot) > 220;
-    ui.toast(a.stage === 0 ? `${place.name}: ${stageName} begins!${far ? ' Open the map (M) to sail there.' : ''}` : `Now the challenge: ${stageName}`);
+    const far = controller.pos.distanceTo(spot) > 120;
+    ui.toast(a.stage === 0 ? `${place.name}: ${stageName} begins!${far && !isMew ? ' Press J to join.' : ''}` : `Now the challenge: ${stageName}`);
+    if (place.party) return;
     if (!far && a.stage === 0 && !a.replay && S.act >= 4) playScene('frozen_head', { place, run: `fh:${a.id}` });
     if (!far && a.stage === 1 && a.tpl === 'boss_purification') playScene('boss_entrance', { place, title: place.challenge?.boss?.name || place.challenge?.name || stageName, run: `boss:${a.id}` });
   }
@@ -310,6 +349,7 @@ export function createQuest(o) {
       activity.apply(e.op, from);
     }
     else if (e.k === 'ship') ships.start(e.trip);
+    else if (e.k === 'petlove') o.progress?.love(from === myId() ? 'me' : from);
     else if (e.k === 'mew') {
       if (MEW_ACTIONS.includes(e.a)) { if (from !== myId()) mew.act(e.a, false); }
       else if (e.a === 'wake') mew.wake();
@@ -382,6 +422,27 @@ export function createQuest(o) {
     hud.map.classList.remove('hidden');
     controller.locked = true;
   }
+  function openGames() {
+    if (S.activity) { ui.toast(`A game is on at ${placeOf(S.activity.place).name}${joinSpot() ? ': press J to join' : ''}`); return; }
+    if (S.invite) { ui.toast(`${TEMPLATE_INFO[S.invite.tpl][0]} is about to start${joinSpot() ? ': press J to join' : ''}`); return; }
+    const grid = hud.games.querySelector('.grid'); grid.innerHTML = '';
+    for (const [tpl, [name, how]] of Object.entries(TEMPLATE_INFO)) {
+      if (tpl === 'heart_quiz' && !(CONFIG.quiz || []).length) continue;
+      const b = el('button', { innerHTML: '<b></b><span></span>' }, grid);
+      b.querySelector('b').textContent = name; b.querySelector('span').textContent = how;
+      b.onclick = () => {
+        closeGames();
+        const g = controller.pos;
+        request('party', { tpl, at: [g.x, g.y, g.z] });
+      };
+    }
+    hud.games.classList.remove('hidden');
+    controller.locked = true;
+  }
+  function closeGames() { hud.games.classList.add('hidden'); controller.locked = !!cutscene; }
+  hud.games.querySelector('.close').onclick = closeGames;
+  hud.gamesBtn.onclick = () => openGames();
+  hud.petBtn.onclick = () => { if (!controller.locked && !isMew) o.progress?.pickPet(null, true); };
   function closeMap() { hud.map.classList.add('hidden'); controller.locked = !!cutscene; }
   hud.map.querySelector('.close').onclick = closeMap;
   hud.mapBtn.onclick = () => openMap();
@@ -399,11 +460,34 @@ export function createQuest(o) {
   }
 
   let nearHead = null;
+  // where a running game or an invite is, if I am too far to play
+  function joinSpot() {
+    if (isMew && !S.revealed) return null;
+    if (S.invite) { const v = new THREE.Vector3(...S.invite.spot); return controller.pos.distanceTo(v) > 30 ? v : null; }
+    if (S.activity) { const v = spotOf(placeOf(S.activity.place)); return controller.pos.distanceTo(v) > 120 ? v : null; }
+    return null;
+  }
+  function joinGame() {
+    const v = joinSpot();
+    if (!v) return false;
+    const a = Math.random() * Math.PI * 2, x = v.x + Math.cos(a) * 6, z = v.z + Math.sin(a) * 6;
+    controller.teleport(x, v.y + 2, z, Math.atan2(v.x - x, v.z - z));
+    combat.burst(controller.pos.clone().add(new THREE.Vector3(0, 1, 0)), '#ffd47a', 5);
+    ui.toast('✦ Whoosh! You joined the game');
+    return true;
+  }
   function prompt() {
     if (cutscene || riding) return '';
+    const js = joinSpot();
+    if (js && S.invite) {
+      const left = Math.max(0, Math.ceil(S.invite.secs - (performance.now() - inviteAt) / 1000));
+      return `Press J to join ${nameOf(S.invite.by)} at ${TEMPLATE_INFO[S.invite.tpl][0]} · ${left} s`;
+    }
+    if (js) return `Press J to join the game at ${placeOf(S.activity.place).name}`;
+    if (S.invite) return `${TEMPLATE_INFO[S.invite.tpl][0]} starts in ${Math.max(0, Math.ceil(S.invite.secs - (performance.now() - inviteAt) / 1000))} s…`;
     if (profile.honoree && mew.sleeping && mew.pos.distanceTo(controller.pos) < 3.5) return mew.carried ? 'Press E to set the bubble down' : 'Press E to carry the sleeping Mew';
     if (nearHead) {
-      if (S.activity) return S.activity.place === nearHead.id ? '' : `${nearHead.headChar?.name || nearHead.name} waits: finish the game at ${places.byId[S.activity.place].name} first`;
+      if (S.activity) return S.activity.place === nearHead.id ? '' : `${nearHead.headChar?.name || nearHead.name} waits: finish the game at ${placeOf(S.activity.place).name} first`;
       return S.shards.includes(nearHead.id) ? `Press E to play ${nearHead.game.name} again` : `Press E to help ${nearHead.headChar?.name || 'the head'}: ${nearHead.game.name}`;
     }
     return '';
@@ -420,6 +504,7 @@ export function createQuest(o) {
   function onKey(e) {
     if (/INPUT|TEXTAREA/.test(document.activeElement?.tagName)) return false;
     if (e.code === 'Escape' && !hud.map.classList.contains('hidden')) { closeMap(); return true; }
+    if (e.code === 'Escape' && !hud.games.classList.contains('hidden')) { closeGames(); return true; }
     if (controller.locked) return false;
     if (e.code === 'KeyM') { openMap(); return true; }
     if (director && e.shiftKey) {
@@ -442,7 +527,10 @@ export function createQuest(o) {
       if (e.code === 'KeyG') { emit({ k: 'mew', a: 'berry' }); return true; }
       if (e.code === 'KeyH' && near) { emit({ k: 'mew', a: 'tickle' }); return true; }
     }
-    if (e.code === 'KeyE' && nearHead && !S.activity) { request('start', { place: nearHead.id }); return true; }
+    if (e.code === 'KeyE' && nearHead && !S.activity && !S.invite) { request('start', { place: nearHead.id }); return true; }
+    if (e.code === 'KeyJ' && joinGame()) return true;
+    if (e.code === 'KeyP') { openGames(); return true; }
+    if (e.code === 'KeyZ' && o.progress?.hasPet) { emit({ k: 'petlove' }); return true; }
     if (e.code === 'KeyQ' && activity?.combat) { combat.swing(controller.pos, controller.facing); return true; }
     return false;
   }
@@ -471,13 +559,14 @@ export function createQuest(o) {
   function goalText() {
     if (S.finale) return 'Midnight: the celebration!';
     if (S.act >= 5) return clock.timelineEvent().onTheNight ? 'Gather at the palace for midnight' : 'Return to the palace for the finale';
-    if (S.activity) { const p = places.byId[S.activity.place]; return `Win ${S.activity.stage === 0 ? p.game.name : p.challenge.name} at ${p.name}`; }
+    if (S.activity) { const p = placeOf(S.activity.place); return p.party ? `Party game: ${p.game.name}` : `Win ${S.activity.stage === 0 ? p.game.name : p.challenge.name} at ${p.name}`; }
     if (S.act >= 4) { const n = nextOnPath(); const k = nightPlaces.filter((q) => S.shards.includes(q.id)).length; return n ? `Grand Path ${k + 1}/${nightPlaces.length}: free the head at ${n.name} (E)` : 'Return to the palace'; }
     return 'Explore: find a glowing pillar, talk to its head (E) and win its game';
   }
 
   function update(dt, t) {
     ships.update(dt, t);
+    if (S.invite) hostInvite();
     updateRide();
     if (cutscene) cutscene.update(dt);
     combat.update(dt);
@@ -509,9 +598,14 @@ export function createQuest(o) {
     // the running game
     if (activity && !cutscene) {
       actT += dt;
-      const spot = places.spotOf(actPlace);
+      const spot = spotOf(actPlace);
       combat.enabled = activity.combat && !isMew && controller.pos.distanceTo(spot) < 160;
       activity.update(dt, actT);
+      // a little dragon breathes sparks at the nearest foe
+      if (combat.enabled && o.progress?.power === 'carry_light' && (petZap -= dt) <= 0) {
+        const pp = o.progress.petPos();
+        petZap = pp && combat.petShot(pp.clone().add(new THREE.Vector3(0, 0.5, 0))) ? 3 : 0.5;
+      }
       if (!reported && activity.won) { reported = true; request('won', { aid: activity.meta.id, place: actPlace.id, secs: actT, limit: activity.limit }); }
       else if (!reported && (activity.failed || actT > activity.limit)) { reported = true; request('fail', { aid: activity.meta.id, place: actPlace.id }); }
     }
@@ -542,7 +636,7 @@ export function createQuest(o) {
     const actName = S.finale || S.act >= 5 ? (acts[5]?.name || 'Midnight') : acts[Math.min(S.act, 4)]?.name;
     hud.quest.querySelector('.act').textContent = actName;
     hud.quest.querySelector('.shards').textContent = `✦ ${S.shards.length} / ${places.list.length} star shards`;
-    const target = S.act >= 5 ? places.byId.B01 : S.activity ? places.byId[S.activity.place] : S.act >= 4 ? nextOnPath() : nearestOpen();
+    const target = S.act >= 5 ? places.byId.B01 : S.activity ? placeOf(S.activity.place) : S.act >= 4 ? nextOnPath() : nearestOpen();
     hud.quest.querySelector('.goal').textContent = goalText();
     const nx = hud.quest.querySelector('.next');
     if (target) {
@@ -582,7 +676,7 @@ export function createQuest(o) {
     get riding() { return riding; },
     get finale() { return S.finale; },
     get revealed() { return S.revealed; },
-    nextPlace: () => { const p = S.activity ? places.byId[S.activity.place] : nextOnPath(); return p ? (p.spot || p.at) : null; },
+    nextPlace: () => { const p = S.activity ? placeOf(S.activity.place) : nextOnPath(); return p ? (p.spot || p.at) : null; },
     emit,
     blobHit(to) { combat.burst(to, '#ff9bd6', 1.5); if (profile.honoree) { screenSplash(); } },
     mewSend(e) { emit({ k: 'mew', ...e }); },

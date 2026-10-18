@@ -116,7 +116,7 @@ export class Controller {
     if (len > 0.01) {
       const fwd = new THREE.Vector3(Math.sin(this.camYaw), 0, Math.cos(this.camYaw));
       const right = new THREE.Vector3().crossVectors(fwd, UP);
-      target.addScaledVector(fwd, iz).addScaledVector(right, ix).normalize().multiplyScalar((run ? 12 : 6) * Math.min(1, len));
+      target.addScaledVector(fwd, iz).addScaledVector(right, ix).normalize().multiplyScalar((run ? 12 : 6) * (this.speedMul || 1) * Math.min(1, len));
       const want = Math.atan2(target.x, target.z);
       let d = want - this.facing;
       d = Math.atan2(Math.sin(d), Math.cos(d));
