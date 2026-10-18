@@ -4,6 +4,7 @@ import { resolveQuality, saveQuality, savedQuality, FrameGovernor } from './qual
 import { createSky, FOG_COLOR, MOOD, SUN_DIR, MOON_DIR } from './world/sky.js';
 import { createIslands, portal as makePortal } from './world/islands.js';
 import { createCoast } from './world/coast.js';
+import { createBrook } from './world/brook.js';
 import { setTreeRenderer } from './world/trees.js';
 import { createPalace } from './world/palace.js';
 import { createNature } from './world/nature.js';
@@ -17,7 +18,7 @@ import { createWorldFill } from './world/fill.js';
 import { createGate } from './world/gate.js';
 import { createSkyBridge } from './world/skybridge.js';
 import { createPaths } from './world/paths.js';
-import { SPAWN, MAIN, groundAt } from './world/layout.js';
+import { SPAWN, MAIN, groundAt, terrainHeight } from './world/layout.js';
 import { MEADOW_TIME } from './world/materials.js';
 import { GROUND_TIME } from './world/ground.js';
 import { installAtmosphere, updateAtmosphere, GradeShader } from './world/look.js';
@@ -140,6 +141,7 @@ addEventListener('resize', () => {
 // ------------------------------------------------------------------- world --
 const sky = createSky(scene, quality);
 const coast = createCoast(scene, quality);
+const brook = createBrook(scene, quality);
 const islands = createIslands(scene, quality);
 const castle = createPalace(scene, quality, { makePortal });
 const approach = createApproach(scene, quality, { makePortal });
@@ -495,6 +497,7 @@ function frame() {
   key.target.position.set(Math.round(focus.x), Math.round(focus.y), Math.round(focus.z));
   key.position.copy(key.target.position).addScaledVector(keyDir, 200);
   coast.update(t, camera);
+  brook.update(t);
   // one shared atmosphere (look.js): height fog with aerial perspective on every surface
   {
     updateAtmosphere(mood, forcedMood === null && !celebration.active ? sky0.golden : 0, keyDir, scene.fog.color);
@@ -597,7 +600,9 @@ function frame() {
     const a = t * 0.05;
     const fixed = params.get('cam')?.split(',').map(Number);
     if (fixed?.length >= 6) {
-      camera.position.set(fixed[0], fixed[1], fixed[2]); camera.lookAt(fixed[3], fixed[4], fixed[5]);
+      // &camh=1: the heights are above the ground (eye-height shots that stay right as the land changes)
+      const gy = params.get('camh') ? (x, z) => terrainHeight(MAIN, x, z) : () => 0;
+      camera.position.set(fixed[0], fixed[1] + gy(fixed[0], fixed[2]), fixed[2]); camera.lookAt(fixed[3], fixed[4] + gy(fixed[3], fixed[5]), fixed[5]);
       if (fixed[6] && camera.fov !== fixed[6]) { camera.fov = fixed[6]; camera.updateProjectionMatrix(); }   // ?cam=...,fov for elevation shots
       if (fixed[7]) {                                                     // ?cam=...,fov,halfHeight: a true orthographic elevation
         const hh = fixed[7], hw = hh * camera.aspect;
@@ -612,6 +617,7 @@ function frame() {
   }
 
   governor.tick(dt);
+  brook.mirror(renderer, scene, camera, t);
   if (composer) composer.render(); else renderer.render(scene, camera);
   requestAnimationFrame(frame);
 }

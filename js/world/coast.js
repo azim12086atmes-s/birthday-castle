@@ -10,7 +10,7 @@ import * as THREE from 'three';
 import { mergeGeometries } from 'three/addons/utils/BufferGeometryUtils.js';
 import { nightGrade } from './materials.js';
 import { groundGrade } from './ground.js';
-import { createTreeKit, SPECIES, FERN, pickSpecies } from './trees.js';
+import { createTreeKit, SPECIES, SHRUB, woodAt, pickInWood, accentTree } from './trees.js';
 import { grassTexture, rng } from './textures.js';
 import { S, MAIN, TERRAIN_GRID, terrainHeight, groundHSL, forestAt, lakeDistance } from './layout.js';
 import { MOOD, FOG_COLOR, SUN_DIR, MOON_DIR } from './sky.js';
@@ -19,6 +19,7 @@ import { onPath, whenPaths } from './paths.js';
 
 const G = TERRAIN_GRID;
 const CHUNK = 384, CN = 32;                // fine tiles: 32 cells of 12 m
+const CN_NEAR = 128, FINE_R = 560;        // and round the player 3 m cells, so the walking-scale relief is real geometry
 const NEAR_R = 900, DIP_R = 600;
 
 function landMaterial(far) {
@@ -36,8 +37,9 @@ function landMaterial(far) {
   return groundGrade(nightGrade(m, far ? 'land-far' : 'land'), far ? 'far' : 'near');
 }
 
-function landGeometry(x0, z0, n, step, skipDeep) {
+function landGeometry(x0, z0, n, step, skipDeep, skirt = 0) {
   const pos = new Float32Array((n + 1) * (n + 1) * 3), col = new Float32Array(pos.length), uv = new Float32Array((n + 1) * (n + 1) * 2);
+  const nrm = skirt ? new Float32Array(pos.length) : null;
   const c = new THREE.Color(), hs = new Float32Array((n + 1) * (n + 1));
   for (let j = 0, k = 0; j <= n; j++) for (let i = 0; i <= n; i++, k++) {
     const x = x0 + i * step, z = z0 + j * step, h = terrainHeight(MAIN, x, z);
@@ -46,6 +48,12 @@ function landGeometry(x0, z0, n, step, skipDeep) {
     uv[k * 2] = x / 5; uv[k * 2 + 1] = z / 5;
     c.setHSL(...groundHSL(MAIN, x, z, h));
     col[k * 3] = c.r; col[k * 3 + 1] = c.g; col[k * 3 + 2] = c.b;
+    if (nrm) {
+      // normals from the height function itself, so neighbouring tiles of any density shade seamlessly
+      const e = step * 0.5, dx = terrainHeight(MAIN, x + e, z) - terrainHeight(MAIN, x - e, z), dz = terrainHeight(MAIN, x, z + e) - terrainHeight(MAIN, x, z - e);
+      const l = Math.hypot(dx, 2 * e, dz);
+      nrm[k * 3] = -dx / l; nrm[k * 3 + 1] = 2 * e / l; nrm[k * 3 + 2] = -dz / l;
+    }
   }
   const idx = [];
   for (let j = 0; j < n; j++) for (let i = 0; i < n; i++) {
@@ -55,6 +63,27 @@ function landGeometry(x0, z0, n, step, skipDeep) {
   }
   if (!idx.length) return null;
   const g = new THREE.BufferGeometry();
+  if (skirt) {
+    // a skirt hangs from the tile's rim, so a fine tile beside a coarser one never shows a crack
+    const P = Array.from(pos), C = Array.from(col), U = Array.from(uv), N = Array.from(nrm), base = (n + 1) * (n + 1);
+    const rim = [];
+    for (let i = 0; i < n; i++) rim.push(i);
+    for (let j = 0; j < n; j++) rim.push(j * (n + 1) + n);
+    for (let i = n; i > 0; i--) rim.push(n * (n + 1) + i);
+    for (let j = n; j > 0; j--) rim.push(j * (n + 1));
+    rim.forEach((v, r) => {
+      P.push(pos[v * 3], pos[v * 3 + 1] - skirt, pos[v * 3 + 2]); C.push(col[v * 3], col[v * 3 + 1], col[v * 3 + 2]);
+      U.push(uv[v * 2], uv[v * 2 + 1]); N.push(nrm[v * 3], nrm[v * 3 + 1], nrm[v * 3 + 2]);
+      const a = v, b = rim[(r + 1) % rim.length], a2 = base + r, b2 = base + (r + 1) % rim.length;
+      idx.push(a, b, a2, b, b2, a2, a, a2, b, b, a2, b2);   // both windings: the skirt shows from either side
+    });
+    g.setAttribute('position', new THREE.Float32BufferAttribute(P, 3));
+    g.setAttribute('color', new THREE.Float32BufferAttribute(C, 3));
+    g.setAttribute('uv', new THREE.Float32BufferAttribute(U, 2));
+    g.setAttribute('normal', new THREE.Float32BufferAttribute(N, 3));
+    g.setIndex(idx);
+    return g;
+  }
   g.setAttribute('position', new THREE.BufferAttribute(pos, 3));
   g.setAttribute('color', new THREE.BufferAttribute(col, 3));
   g.setAttribute('uv', new THREE.BufferAttribute(uv, 2));
@@ -228,21 +257,28 @@ function forests(scene, preset) {
   function build(ti, tj) {
     const r = rng(ti * 7919 + tj * 104729 + 13), pts = [];
     const x0 = ti * T, z0 = tj * T;
-    const step = spacing * 0.6;
-    const add = (px, pz, sp, f) => {
-      const h = terrainHeight(MAIN, px, pz), [lo, hi] = SPECIES[sp].h;
-      // big old trees in the hearts of the groves, saplings at their edges
-      const ht = (lo + (hi - lo) * r() * r()) * (0.7 + 0.35 * f);
-      pts.push([px, h, pz, r() * 6.283, ht, sp, farLandH(px, pz) - h, r()]);
+    const step = spacing * 0.46;
+    const add = (px, pz, sp, f, big = 1) => {
+      const h = terrainHeight(MAIN, px, pz), S0 = SPECIES[sp], [lo, hi] = S0.h;
+      // big old trees in the hearts of the woods, young ones at their edges
+      const ht = (lo + (hi - lo) * r() * r()) * (0.62 + 0.42 * f) * big;
+      pts.push([px, h - (S0.sink || 0) * ht, pz, r() * 6.283, ht, sp, farLandH(px, pz) - h, r()]);
     };
     for (let z = z0; z < z0 + T; z += step) for (let x = x0; x < x0 + T; x += step) {
       const px = x + r() * step, pz = z + r() * step;
-      const h = terrainHeight(MAIN, px, pz), f = forestAt(px, pz, h) * grove(px, pz);
-      if (!(f > 0 && r() < f * 1.8) || onPath(px, pz)) continue;
-      const sp = pickSpecies(r, h);
-      add(px, pz, sp, f);
-      // ferns gather under the broadleaf trees
-      if (FERN !== null && sp !== 2 && r() < 0.7) { const a = r() * 6.283, d = 3 + r() * 5, fx = px + Math.cos(a) * d, fz = pz + Math.sin(a) * d; if (!onPath(fx, fz)) add(fx, fz, FERN, f); }
+      const h = terrainHeight(MAIN, px, pz), fa = forestAt(px, pz, h), f = fa * grove(px, pz);
+      if (onPath(px, pz)) continue;
+      // a wood: dense in its heart (the crowns close over), thinning to a ragged edge
+      const dense = THREE.MathUtils.smoothstep(f, 0.12, 0.62);
+      if (r() < dense * 0.95) {
+        const edge = 1 - THREE.MathUtils.smoothstep(f, 0.2, 0.7);
+        add(px, pz, pickInWood(r, woodAt(px, pz, h), edge, h), f);
+        // understory: shrubs gather at the wood's edge and in its gaps
+        if (r() < 0.22 + edge * 0.5) { const a = r() * 6.283, d = 3 + r() * 4, sx = px + Math.cos(a) * d, sz = pz + Math.sin(a) * d; if (!onPath(sx, sz)) add(sx, sz, SHRUB, 1); }
+      } else if (fa > 0.05 && f < 0.1 && r() < 0.012) {
+        // out in the open meadow, now and then a lone specimen tree in full bloom
+        add(px, pz, accentTree(r), 0.9, 1.15);
+      } else if (fa > 0.05 && f < 0.12 && r() < 0.02) add(px, pz, SHRUB, 0.6);
     }
     if (!pts.length) return null;
     const group = new THREE.Group();
@@ -333,9 +369,10 @@ export function createCoast(scene, preset) {
         const x0 = G.x0 + i * CHUNK, z0 = G.z0 + j * CHUNK;
         if (i < 0 || j < 0 || x0 + CHUNK > G.x0 + G.span || z0 + CHUNK > G.z0 + G.span) continue;
         if (Math.hypot(x0 + CHUNK / 2 - cx, z0 + CHUNK / 2 - cz) > NEAR_R) continue;
-        const k = i + ',' + j;
+        const fineT = Math.hypot(x0 + CHUNK / 2 - cx, z0 + CHUNK / 2 - cz) < FINE_R;
+        const k = i + ',' + j + (fineT ? 'f' : '');
         if (!chunks.has(k)) {
-          const g = landGeometry(x0, z0, CN, CHUNK / CN, -6);
+          const g = fineT ? landGeometry(x0, z0, CN_NEAR, CHUNK / CN_NEAR, -6, 4) : landGeometry(x0, z0, CN, CHUNK / CN, -6, 4);
           let m = null;
           if (g) { m = new THREE.Mesh(g, nearMat); m.receiveShadow = true; group.add(m); }
           chunks.set(k, m);
@@ -343,6 +380,8 @@ export function createCoast(scene, preset) {
         const m = chunks.get(k);
         if (m) m.visible = true;
       }
+      // let go of tiles left far behind
+      if (chunks.size > 90) for (const [k, m] of chunks) if (!m || !m.visible) { if (m) { group.remove(m); m.geometry.dispose(); } chunks.delete(k); }
       woods.update(camera.position);
     },
   };

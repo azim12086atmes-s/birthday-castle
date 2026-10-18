@@ -16,6 +16,13 @@ const CAMS = {
   hills: '-3500,380,4800,-5200,150,2600,60',
   meadow: '-5200,200,3400,-6400,160,2000,62',
   walk: '-5600,185.8,3000,-6400,178,2000,70',
+  // the beauty slice, heights above the ground (run with '&camh=1')
+  s_eye: '-5600,1.7,3000,-6400,1.2,2000,60',
+  s_back: '-6200,1.7,2450,-5400,4,3300,55',
+  s_hill: '-5500,30,3150,-6300,0,2300,60',
+  s_wood: '-5900,1.7,2700,-6300,3,2400,55',
+  s_tarn: '-5975,2.2,2785,-6070,-1,2850,58',
+  s_brook: '-5915,1.7,2580,-5950,0,2720,58',
   walk2: '-4500,104.6,3800,-3000,108,5000,70',
 };
 const only = process.env.ONLY ? process.env.ONLY.split(',') : Object.keys(CAMS);
@@ -31,7 +38,9 @@ for (const k of only) {
   await p.waitForTimeout(+(process.env.WAIT || 25000));
   await p.evaluate(() => { for (const id of ['lobby','entry','overlay']) { const e = document.getElementById(id); if (e) e.style.display = 'none'; } document.querySelectorAll('.panel,.card,#ui,dialog').forEach(e => e.style.display='none'); });
   await p.waitForTimeout(1500);
-  await p.screenshot({ path: `${out}-${k}.jpg`, quality: 80, type: 'jpeg' });
+  const ft = await p.evaluate(() => new Promise((res) => { const t0 = performance.now(); requestAnimationFrame(() => requestAnimationFrame(() => res(Math.round(performance.now() - t0)))); }));
+  console.log(k, 'two frames ms', ft);
+  await p.screenshot({ path: `${out}-${k}.jpg`, quality: 80, type: 'jpeg', timeout: 240000 });
   console.log(k, ((Date.now()-t0)/1000).toFixed(0)+'s', errs.slice(0,3).join(' | '));
   await p.close();
 }

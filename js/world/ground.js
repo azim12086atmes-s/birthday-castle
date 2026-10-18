@@ -21,6 +21,12 @@ export const GROUND_NOISE = /* glsl */`
     return mix(mix(gHash(i), gHash(i + vec2(1., 0.)), u.x), mix(gHash(i + vec2(0., 1.)), gHash(i + vec2(1., 1.)), u.x), u.y); }
   // drift field: where wildflowers gather (0..1) and which colour each drift is
   float flowerDrift(vec2 wp){ return smoothstep(0.56, 0.8, gNoise(wp * 0.014 + vec2(3.1, -7.4)) * 0.75 + gNoise(wp * 0.05) * 0.25); }
+  // the sward (after Arkenfall's meadows): dark, saturated linear greens from moss through lush and
+  // meadow to sedge and dry straw; the grass blades and the ground beneath and beyond them share it
+  vec3 swardColour(float cp){
+    vec3 cMoss = vec3(0.083, 0.08, 0.036), cLush = vec3(0.082, 0.155, 0.05), cMeadow = vec3(0.11, 0.18, 0.06), cSedge = vec3(0.17, 0.18, 0.07), cDry = vec3(0.36, 0.28, 0.1);
+    return cp < 0.35 ? mix(cMoss, cLush, cp / 0.35) : cp < 0.65 ? mix(cLush, cMeadow, (cp - 0.35) / 0.3) : cp < 0.85 ? mix(cMeadow, cSedge, (cp - 0.65) / 0.2) : mix(cSedge, cDry, (cp - 0.85) / 0.15);
+  }
   vec3 driftColour(vec2 wp){
     // blends smoothly from drift to drift: white daisies, red poppies, blue cornflowers, gold, violet
     float a = gNoise(wp * 0.011 + 17.0), b = gNoise(wp * 0.013 - 9.0);
@@ -60,9 +66,12 @@ export function groundGrade(m, key) {
         // how much of the painted colour is meadow green
         float grassy = smoothstep(0.004, 0.05, P.g - max(P.r, P.b * 0.95)) * (1.0 - rg);
         // meadow: rich greens, warm sunlit patches and cool shaded ones, broken at three scales
-        vec3 g = P * vec3(0.6, 0.82, 0.42);
-        g *= mix(vec3(0.78, 0.95, 1.1), vec3(1.16, 1.08, 0.7), smoothstep(0.28, 0.78, n1));
-        g *= 0.82 + 0.34 * n2;
+        // the same sward as the grass blades (meadow.js), seen from afar as the sunlit upper half of
+        // the blades; its small patches fade with distance so they never shimmer
+        float cpG = clamp(0.55 + (gNoise(wp / 5.3 + vec2(gNoise(wp / 13.0) * 1.7, 3.1)) - 0.5) * 0.5 * (1.0 - smoothstep(40.0, 160.0, camD))
+          + (n2 - 0.5) * 0.45 + (n1 - 0.5) * 0.35, 0.0, 1.0);
+        vec3 g = swardColour(cpG) * 2.05;
+        g *= mix(vec3(0.9, 0.97, 1.08), vec3(1.1, 1.04, 0.85), smoothstep(0.28, 0.78, n1));
         g *= mix(1.0, 0.86 + 0.28 * n3, nearF);
         g *= mix(1.0, 0.9 + 0.2 * n4, nearF * nearF);
         // the wind's cat's-paws: a lighter sheen rolling over the far meadows
@@ -78,10 +87,10 @@ export function groundGrade(m, key) {
         // the pale sand of the painted map stays on the beaches: inland and up the banks it greens over
         float lumP = dot(P, vec3(0.3, 0.59, 0.11)), satP = max(P.r, max(P.g, P.b)) - min(P.r, min(P.g, P.b));
         float pale = smoothstep(0.5, 0.66, lumP) * (1.0 - smoothstep(0.12, 0.25, satP)) * smoothstep(5.0, 14.0, y) * (1.0 - smoothstep(600.0, 800.0, y)) * (1.0 - rg);
-        vec3 mg = vec3(0.17, 0.32, 0.1) * mix(vec3(0.8, 0.95, 1.1), vec3(1.15, 1.08, 0.72), smoothstep(0.28, 0.78, n1)) * (0.82 + 0.34 * n2);
+        vec3 mg = swardColour(clamp(0.5 + (n2 - 0.5) * 0.5 + (n1 - 0.5) * 0.35, 0.0, 1.0)) * 2.05 * mix(vec3(0.9, 0.97, 1.08), vec3(1.1, 1.04, 0.85), smoothstep(0.28, 0.78, n1));
         col = mix(col, mg, pale * 0.85);
         // under the grass ring the ground takes the colour of the grass roots, so no pale earth shows between the blades
-        col = mix(col, vec3(0.1, 0.16, 0.055) * (0.85 + 0.3 * n2), (1.0 - smoothstep(30.0, 150.0, camD)) * max(grassy, pale) * 0.9);
+        col = mix(col, swardColour(cpG) * 0.8 * (0.85 + 0.3 * n3), (1.0 - smoothstep(30.0, 150.0, camD)) * max(grassy, pale) * 0.9);
         // slow cloud shadows drifting over the land (the grass blades carry the same ones)
         col *= 0.62 + 0.38 * smoothstep(0.32, 0.62, gNoise(wp * 0.004 + vec2(uGTime * 0.012, uGTime * 0.005)));
         // bare earth on the banks between the flats

@@ -7,7 +7,7 @@ import * as THREE from 'three';
 import { nightGrade } from './materials.js';
 import { MOOD } from './sky.js';
 import { GROUND_NOISE } from './ground.js';
-import { MAIN, TERRAIN_GRID, islandAt, groundAt, builtHeight, terrainHeight, groundHSL, isClearOfBuildings } from './layout.js';
+import { MAIN, TERRAIN_GRID, FINE_RELIEF, TARN, BROOK, BROOK_BOX, sliceWaterAt, islandAt, groundAt, builtHeight, terrainHeight, groundHSL, isClearOfBuildings } from './layout.js';
 
 const hash = (i, j, k = 0) => {
   let h = (i * 374761393 + j * 668265263 + k * 2147483647) | 0;
@@ -28,7 +28,7 @@ function tuftGeometry(blades, spread = 1) {
   const pos = [], col = [], tip = [], nrm = [], idx = [];
   for (let k = 0; k < blades; k++) {
     const a = hash(k, 3) * Math.PI * 2, rr = (0.03 + Math.sqrt(hash(k, 5)) * 0.5) * spread;
-    const ox = Math.cos(a) * rr, oz = Math.sin(a) * rr, w = 0.008 + hash(k, 7) * 0.009, h = 0.42 + hash(k, 11) * hash(k, 19) * 0.6;
+    const ox = Math.cos(a) * rr, oz = Math.sin(a) * rr, w = 0.011 + hash(k, 7) * 0.012, h = 0.42 + hash(k, 11) * hash(k, 19) * 0.6;
     const fa = a + (hash(k, 17) - 0.5) * 1.2, ta = fa + Math.PI / 2, lean = 0.12 + hash(k, 13) * 0.3;
     // each blade its own shade: some yellower, some bluer, so the field is never one flat green
     const v = 0.82 + hash(k, 23) * 0.36, hu = hash(k, 29) - 0.5;
@@ -63,9 +63,9 @@ function flowerGeometry() {
   const P = [1, 1, 1], E = [1.25, 0.95, 0.35];
   for (let k = 0; k < 5; k++) {
     const a = (k / 5) * Math.PI * 2, b = a + 0.55, c = a - 0.55;
-    const tipP = [Math.cos(a) * 0.12, H + 0.025, Math.sin(a) * 0.12];
-    tri([0, H + 0.01, 0], [Math.cos(b) * 0.07, H + 0.02, Math.sin(b) * 0.07], tipP, E, P, P, 1);
-    tri([0, H + 0.01, 0], tipP, [Math.cos(c) * 0.07, H + 0.02, Math.sin(c) * 0.07], E, P, P, 1);
+    const tipP = [Math.cos(a) * 0.075, H + 0.025, Math.sin(a) * 0.075];
+    tri([0, H + 0.01, 0], [Math.cos(b) * 0.045, H + 0.02, Math.sin(b) * 0.045], tipP, E, P, P, 1);
+    tri([0, H + 0.01, 0], tipP, [Math.cos(c) * 0.045, H + 0.02, Math.sin(c) * 0.045], E, P, P, 1);
   }
   const g = new THREE.BufferGeometry();
   g.setAttribute('position', new THREE.Float32BufferAttribute(pos, 3));
@@ -83,15 +83,39 @@ function flowerGeometry() {
 function gpuVertex(vs, flower) {
   return vs
     .replace('#include <common>', `#include <common>
-      uniform float uTime; uniform sampler2D uH; uniform vec4 uHG; uniform sampler2D uMask; uniform vec3 uMaskO;
+      uniform float uTime; uniform sampler2D uH; uniform vec4 uHG; uniform sampler2D uFR; uniform float uFRT; uniform sampler2D uMask; uniform vec3 uMaskO;
       uniform vec4 uField; uniform vec2 uOrigin; ${flower ? 'uniform vec3 uPetals[6]; varying vec3 vPet;' : ''}
       attribute float aTip; varying float vTip; varying vec3 vOrg;
       ${GROUND_NOISE}
+      // the slice's tarn and brook, carved exactly as layout.js carveWater() does
+      uniform vec4 uTarn; uniform vec4 uBrookBox; uniform vec2 uBrook[${BROOK.length}];
+      float sm(float a, float b, float x) { float t = clamp((x - a) / (b - a), 0.0, 1.0); return t * t * (3.0 - 2.0 * t); }
+      float carveWater(vec2 p, float h, float fr) {
+        if (p.x < uBrookBox.x || p.x > uBrookBox.z || p.y < uBrookBox.y || p.y > uBrookBox.w) return h + fr;
+        float bd = 1e9;
+        for (int k = 0; k < ${BROOK.length - 1}; k++) {
+          vec2 a = uBrook[k], d = uBrook[k + 1] - a;
+          float t = clamp(dot(p - a, d) / dot(d, d), 0.0, 1.0);
+          bd = min(bd, length(p - a - d * t));
+        }
+        h += fr * sm(4.0, 14.0, bd);
+        if (bd < 7.0) h -= 1.0 * (1.0 - sm(1.2, 7.0, bd));
+        vec2 q = p - uTarn.xy; float dd = length(q), a = atan(q.y, q.x);
+        float R = uTarn.z * (1.0 + 0.16 * sin(3.0 * a + 1.3) + 0.08 * sin(5.0 * a + 0.4)), t = dd / R;
+        if (t < 1.0) return uTarn.w - 0.25 - ${TARN.depth.toFixed(2)} * sm(1.0, 0.2, t);
+        if (t < 1.0 + 34.0 / R) return uTarn.w + 0.2 + (h - uTarn.w - 0.2) * sm(1.0, 1.0 + 34.0 / R, t);
+        return h;
+      }
       float gHeight(vec2 p) {
         vec2 f = clamp((p - uHG.xy) / uHG.z, vec2(0.0), vec2(uHG.w - 1.001));
         ivec2 i = ivec2(floor(f)); vec2 u = fract(f);
-        float a = texelFetch(uH, i, 0).r, b = texelFetch(uH, i + ivec2(1, 0), 0).r, c = texelFetch(uH, i + ivec2(0, 1), 0).r, e = texelFetch(uH, i + ivec2(1, 1), 0).r;
-        return a + (b - a) * u.x + (c - a) * u.y + (a - b - c + e) * u.x * u.y;
+        vec2 a = texelFetch(uH, i, 0).rg, b = texelFetch(uH, i + ivec2(1, 0), 0).rg, c = texelFetch(uH, i + ivec2(0, 1), 0).rg, e = texelFetch(uH, i + ivec2(1, 1), 0).rg;
+        vec2 hm = a + (b - a) * u.x + (c - a) * u.y + (a - b - c + e) * u.x * u.y;
+        // the walking-scale relief, sampled exactly as layout.js fineAt() does
+        if (hm.y <= 0.0) return carveWater(p, hm.x, 0.0);
+        vec2 ff = p / uFRT; ivec2 fi = ivec2(floor(ff)); vec2 fu = ff - floor(ff); int M = textureSize(uFR, 0).x - 1;
+        float fa = texelFetch(uFR, fi & M, 0).r, fb = texelFetch(uFR, (fi + ivec2(1, 0)) & M, 0).r, fc = texelFetch(uFR, (fi + ivec2(0, 1)) & M, 0).r, fe = texelFetch(uFR, (fi + ivec2(1, 1)) & M, 0).r;
+        return carveWater(p, hm.x, hm.y * (fa + (fb - fa) * fu.x + (fc - fa) * fu.y + (fa - fb - fc + fe) * fu.x * fu.y));
       }
       vec2 gH22(vec2 p) { vec3 p3 = fract(vec3(p.xyx) * vec3(0.1031, 0.1030, 0.0973)); p3 += dot(p3, p3.yzx + 33.33); return fract((p3.xx + p3.yz) * p3.zy); }`)
     .replace('#include <begin_vertex>', `#include <begin_vertex>
@@ -170,9 +194,8 @@ function swayMaterial(time, radius, key, blade, inner = 0, gpu = null) {
           // tussocks, with each blade a little lighter or darker; dark at the root, sunlit at the tip
           float stand = gNoise(vOrg.xz / 5.3 + vec2(gNoise(vOrg.xz / 13.0) * 1.7, 3.1));
           float tuss = fract(sin(dot(floor(vOrg.xz / 1.6), vec2(12.9898, 78.233))) * 43758.5453);
-          float cp = clamp(0.55 + (stand - 0.5) * 0.5 + (tuss - 0.5) * 0.2 + (gNoise(vOrg.xz * 0.0035) - 0.5) * 0.35, 0.0, 1.0);
-          vec3 cMoss = vec3(0.083, 0.08, 0.036), cLush = vec3(0.082, 0.155, 0.05), cMeadow = vec3(0.11, 0.18, 0.06), cSedge = vec3(0.17, 0.18, 0.07), cDry = vec3(0.36, 0.28, 0.1);
-          vec3 g = cp < 0.35 ? mix(cMoss, cLush, cp / 0.35) : cp < 0.65 ? mix(cLush, cMeadow, (cp - 0.35) / 0.3) : cp < 0.85 ? mix(cMeadow, cSedge, (cp - 0.65) / 0.2) : mix(cSedge, cDry, (cp - 0.85) / 0.15);
+          float cp = clamp(0.55 + (stand - 0.5) * 0.5 + (tuss - 0.5) * 0.2 + (gNoise(vOrg.xz * 0.0035) - 0.5) * 0.35 + (gNoise(vOrg.xz * 0.017 + 3.0) - 0.5) * 0.45, 0.0, 1.0);
+          vec3 g = swardColour(cp);
           g *= 0.84 + 0.32 * fract(vColor.g * 37.0);
           diffuseColor.rgb = mix(g * 0.6, g * 2.7 + vec3(0.03, 0.02, 0.0), smoothstep(0.0, 1.0, vTip));
           // slow cloud shadows drifting over the field, shared with the ground beneath
@@ -225,8 +248,10 @@ export function createMeadow(scene, preset) {
 
   // ---- the GPU meadow on the main land ----
   const G = TERRAIN_GRID;
-  const hTex = new THREE.DataTexture(G.data, G.n, G.n, THREE.RedFormat, THREE.FloatType);
+  const hTex = new THREE.DataTexture(G.hm, G.n, G.n, THREE.RGFormat, THREE.FloatType);
   hTex.minFilter = hTex.magFilter = THREE.NearestFilter; hTex.needsUpdate = true;
+  const frTex = new THREE.DataTexture(FINE_RELIEF.data, FINE_RELIEF.n, FINE_RELIEF.n, THREE.RedFormat, THREE.FloatType);
+  frTex.minFilter = frTex.magFilter = THREE.NearestFilter; frTex.needsUpdate = true;
   // where grass grows (r) and how lush it stands (g), 2 m texels over a window round the player,
   // re-baked a few rows a frame when the player nears its edge (the old mask serves meanwhile)
   const MT = 2, MN = high ? 200 : low ? 110 : 160, MS = MT * MN;
@@ -236,7 +261,7 @@ export function createMeadow(scene, preset) {
   mTex.minFilter = mTex.magFilter = THREE.LinearFilter; mTex.needsUpdate = true;
   const maskO = new THREE.Vector3(1e9, 1e9, MS);
   function grows(x, z) {
-    if (islandAt(x, z, MAIN.y) !== MAIN) return null;
+    if (islandAt(x, z, MAIN.y) !== MAIN || sliceWaterAt(x, z, 0.5)) return null;
     const th = terrainHeight(MAIN, x, z);
     if (!(builtHeight(x, z) === null && th > 0.6 && th < 800) || !isClearOfBuildings(x, z, -1, MAIN.y)) return null;
     let [H, S, Lt] = groundHSL(MAIN, x, z, th);
@@ -274,11 +299,11 @@ export function createMeadow(scene, preset) {
     const g = new THREE.InstancedBufferGeometry().copy(F.geo);
     g.instanceCount = F.N * F.N;
     F.origin = new THREE.Vector2();
-    const uniforms = { uH: { value: hTex }, uHG: { value: new THREE.Vector4(G.x0, G.z0, G.step, G.n) }, uMask: { value: mTex }, uMaskO: { value: maskO },
+    const uniforms = { uTarn: { value: new THREE.Vector4(TARN.x, TARN.z, TARN.r, TARN.level) }, uBrookBox: { value: new THREE.Vector4(...BROOK_BOX) }, uBrook: { value: BROOK.map(([x, z]) => new THREE.Vector2(x, z)) }, uH: { value: hTex }, uFR: { value: frTex }, uFRT: { value: FINE_RELIEF.texel }, uHG: { value: new THREE.Vector4(G.x0, G.z0, G.step, G.n) }, uMask: { value: mTex }, uMaskO: { value: maskO },
       uField: { value: new THREE.Vector4(F.CELL, F.N, F.R0, F.R) }, uOrigin: { value: F.origin } };
     if (F.flower) uniforms.uPetals = { value: ['#e8323a', '#3f6bff', '#fff6ee', '#e8323a', '#5a7dff', '#ffd84f'].map((c) => new THREE.Color(c)) };
     F.mesh = new THREE.Mesh(g, swayMaterial(time, F.R, 'meadow-' + F.key, !F.flower, F.R0, { uniforms, flower: !!F.flower }));
-    F.mesh.frustumCulled = false; F.mesh.visible = false;
+    F.mesh.frustumCulled = false; F.mesh.visible = false; F.mesh.receiveShadow = true; F.mesh.userData.noReflect = true;   // the woods' shadows fall across the grass
     scene.add(F.mesh);
   }
   const dummy = new THREE.Object3D(), color = new THREE.Color();
