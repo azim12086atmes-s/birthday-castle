@@ -146,10 +146,11 @@ export function createPaths(scene, quality) {
     for (const p of P.paths) {
       if (p.points.length < 2) continue;
       markPath(p.points, p.width);
-      // over open water the bridges and the causeway carry the way, so the ribbon breaks there
+      // over open water the bridges and the causeway carry the way, and high in the air the sky
+      // bridge carries it (a ribbon there would hang a wall down to the valley), so the ribbon breaks
       let run = [];
       const flush = () => { if (run.length > 1) (byKind[p.kind] ||= []).push(ribbon(run, p.width, false)); run = []; };
-      for (const q of p.points) { if (groundAt(q[0], q[2], q[1] + 3) < 0.5) flush(); else run.push(q); }
+      for (const q of p.points) { if (groundAt(q[0], q[2], q[1] + 3) < 0.5 || q[1] - terrainHeight(MAIN, q[0], q[2]) > 25) flush(); else run.push(q); }
       flush();
     }
     for (const [kind, parts] of Object.entries(byKind)) {
@@ -178,7 +179,7 @@ export function createPaths(scene, quality) {
     // --- bridges: an arched stone deck with low parapets ---
     const deckMat = nightGrade(new THREE.MeshLambertMaterial({ color: '#efe6f0' }), 'bridge');
     for (const b of P.bridges) {
-      if (b.kind === 'viaduct') continue;          // the viaduct models carry their own decks
+      if (b.kind === 'viaduct' || b.kind === 'sky') continue;   // the viaduct models and skybridge.js carry their own decks
       const [x0, y0, z0] = b.start, [x1, y1, z1] = b.end;
       const len = Math.hypot(x1 - x0, z1 - z0);
       if (len < 2) continue;
