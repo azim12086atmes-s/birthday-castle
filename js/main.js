@@ -18,6 +18,7 @@ import { createSkyBridge } from './world/skybridge.js';
 import { createPaths } from './world/paths.js';
 import { SPAWN, MAIN, groundAt } from './world/layout.js';
 import { MEADOW_TIME } from './world/materials.js';
+import { GROUND_TIME } from './world/ground.js';
 import { installAtmosphere, updateAtmosphere, GradeShader } from './world/look.js';
 installAtmosphere();
 const SPAWN_Y = groundAt(SPAWN.x, SPAWN.z) ?? MAIN.y;
@@ -507,7 +508,7 @@ function frame() {
   castle.update(t, dt, camera);
   nature.update(t);
   atmosphere.update(t);
-  MEADOW_TIME.value = t;
+  MEADOW_TIME.value = t; GROUND_TIME.value = t;
   meadow.update(t, camera);
   approach.update(t, dt, camera);
   creatures.update(t, dt, camera);

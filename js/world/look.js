@@ -76,8 +76,8 @@ export function updateAtmosphere(mood, golden, lightDir, fogColor) {
   // day: soft blue-lilac air with a warm glow toward the sun; night: deep indigo, silver toward the moon
   _c.set('#ffd2a6').lerp(new THREE.Color('#ff9f6a'), golden).lerp(new THREE.Color('#7f86d6'), mood);
   ATMOS.sunCol[0] = _c.r; ATMOS.sunCol[1] = _c.g; ATMOS.sunCol[2] = _c.b;
-  ATMOS.sunCol[3] = 1 / THREE.MathUtils.lerp(700, 900, mood);
-  ATMOS.params[0] = 1 / THREE.MathUtils.lerp(16000, 9000, mood);
+  ATMOS.sunCol[3] = 1 / THREE.MathUtils.lerp(520, 900, mood);
+  ATMOS.params[0] = 1 / THREE.MathUtils.lerp(24000, 9000, mood);
   ATMOS.params[2] = THREE.MathUtils.lerp(420, 260, mood);
   ATMOS.params[3] = 0.94;
   fogColor.set('#b4c6ee').lerp(new THREE.Color('#d8b7c8'), golden * 0.6).lerp(new THREE.Color('#1d1a4a'), mood);

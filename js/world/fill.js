@@ -15,6 +15,7 @@ import { crescentH } from './crescent.js';
 import { clearAround } from './paths.js';
 import { MOOD, FOG_COLOR } from './sky.js';
 import { ATMOS_GLSL, atmosUniforms } from './look.js';
+import { contactGrade } from './ground.js';
 
 // one material per model: the card strip, its frame size and how high its centre sits
 function cardMaterial(map, card) {
@@ -157,6 +158,7 @@ export function createWorldFill(scene, quality) {
           geo.applyMatrix4(o.matrixWorld);
           const mat = o.material;
           mat.metalness = 0; mat.roughness = Math.max(mat.roughness ?? 1, 0.75);
+          if (!/^(SkyBridge_|Sky|Cloud)/.test(M.name)) contactGrade(mat);
           const im = new THREE.InstancedMesh(geo, mat, M.items.length);
           im.count = 0; im.frustumCulled = true;
           scene.add(im);

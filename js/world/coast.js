@@ -8,7 +8,9 @@ import { ATMOS_GLSL, atmosUniforms } from './look.js';
 // only within a quality-dependent range.
 import * as THREE from 'three';
 import { mergeGeometries } from 'three/addons/utils/BufferGeometryUtils.js';
-import { nightGrade, meadowGrade } from './materials.js';
+import { nightGrade } from './materials.js';
+import { groundGrade } from './ground.js';
+import { createTreeKit, SPECIES, FERN, pickSpecies } from './trees.js';
 import { grassTexture, rng } from './textures.js';
 import { S, MAIN, TERRAIN_GRID, terrainHeight, groundHSL, forestAt, lakeDistance } from './layout.js';
 import { MOOD, FOG_COLOR, SUN_DIR, MOON_DIR } from './sky.js';
@@ -20,8 +22,8 @@ const CHUNK = 384, CN = 32;                // fine tiles: 32 cells of 12 m
 const NEAR_R = 900, DIP_R = 600;
 
 function landMaterial(far) {
-  const grass = grassTexture().clone(); grass.needsUpdate = true;
-  const m = new THREE.MeshLambertMaterial({ map: grass, vertexColors: true, emissive: '#10283a', emissiveIntensity: 0.5 });
+  // world pass 2: no tiled grass map and no constant glow; ground.js paints the land in world space
+  const m = new THREE.MeshLambertMaterial({ vertexColors: true });
   if (far) {
     // the coarse land sinks out of sight wherever the fine tiles cover it
     m.onBeforeCompile = (sh) => {
@@ -31,75 +33,7 @@ function landMaterial(far) {
     };
     m.customProgramCacheKey = () => 'land-far';
   }
-  return rockGrade(meadowGrade(nightGrade(m, far ? 'land-far' : 'land')));
-}
-
-// bare rock on the steep slopes and snow on the high crests, at full resolution
-// (the painted colour map holds them only at 20 m a pixel)
-function rockGrade(m) {
-  const prev = m.onBeforeCompile, key = m.customProgramCacheKey;
-  m.onBeforeCompile = (sh, r) => {
-    prev(sh, r);
-    sh.fragmentShader = sh.fragmentShader.replace('#include <alphamap_fragment>', `#include <alphamap_fragment>
-      vec3 mPaint = diffuseColor.rgb;
-      // the great ridge (outer ring): its baked colour map leads, snow included
-      float rg = smoothstep(9500.0, 11000.0, length(vMWorld.xz - vec2(-709.5, 2260.5)));
-      {
-        vec2 rp = vMWorld.xz;
-        float rn = mNoise(rp * 0.02) * 0.6 + mNoise(rp * 0.11 + 3.) * 0.4;
-        float steep = smoothstep(0.86, 0.62, vMUp + (rn - 0.5) * 0.12);
-        // faint, broken strata: warped by noise so they never read as contour lines
-        float strata = 0.95 + 0.05 * sin(vMWorld.y * 0.13 + rn * 9.0 + mNoise(rp * 0.004) * 12.0);
-        // the colour map carries baked light (sky occlusion, contact shadows): rock and snow keep its shading
-        float bake = clamp(dot(diffuseColor.rgb, vec3(0.3, 0.59, 0.11)) / 0.5, 0.6, 1.15);
-        // rock (look pass): warmer, darker stone with vertical runnels and crevices on the walls and moss on
-        // the ledges, so the cliffs read as carved rock rather than pale plastic under the filmic sun
-        float runnel = mNoise(vec2((rp.x - rp.y) * 0.045, vMWorld.y * 0.0045)) * 0.6 + mNoise(vec2((rp.x + rp.y) * 0.17, vMWorld.y * 0.016)) * 0.4;
-        float crev = smoothstep(0.62, 0.32, runnel);
-        vec3 rock = mix(vec3(0.34, 0.31, 0.34), vec3(0.6, 0.55, 0.53), rn) * strata * bake;
-        rock *= 1.0 - 0.38 * crev;
-        rock = mix(rock, vec3(0.30, 0.42, 0.24) * bake, smoothstep(0.55, 0.82, vMUp) * smoothstep(0.5, 0.75, mNoise(rp * 0.03 + 9.0)) * 0.6);
-        float hi = smoothstep(500.0, 1100.0, vMWorld.y);
-        diffuseColor.rgb = mix(diffuseColor.rgb, rock, steep * (0.55 + 0.4 * hi) * smoothstep(8.0, 40.0, vMWorld.y) * (1.0 - rg));
-        // the flat tops of the high plateaus (palace mesa, satellites) are green meadow, not bare grey stone
-        float mesa = smoothstep(0.9, 0.97, vMUp) * smoothstep(250.0, 320.0, vMWorld.y) * (1.0 - smoothstep(930.0, 990.0, vMWorld.y)) * (1.0 - rg);
-        diffuseColor.rgb = mix(diffuseColor.rgb, vec3(0.34, 0.5, 0.23) * (0.8 + 0.4 * rn) * bake, mesa * 0.85);
-        // snow from about 1 km on the old ring
-        float snow = smoothstep(980.0, 1250.0, vMWorld.y + (rn - 0.5) * 160.0) * smoothstep(0.45, 0.7, vMUp) * (1.0 - rg);
-        diffuseColor.rgb = mix(diffuseColor.rgb, vec3(0.97, 0.97, 1.02) * min(bake, 1.0), snow);
-      }
-      {
-        // painted ground (study thread, Oct 17): broad sunlit and shaded patches, brushy tufts that hold up to
-        // the middle distance, warm earth on the banks between flats, so the meadows stop reading as flat plastic
-        vec2 wp = vMWorld.xz;
-        float camD = length(vMWorld - cameraPosition);
-        float m1 = mNoise(wp * 0.0042) * 0.55 + mNoise(wp * 0.013 + 2.0) * 0.45;
-        vec2 sw = vec2(wp.x * 0.8 + wp.y * 0.6, -wp.x * 0.6 + wp.y * 0.8);
-        float m2 = mNoise(sw * vec2(0.05, 0.12) + 7.0) * 0.6 + mNoise(sw * vec2(0.14, 0.33) + 1.0) * 0.4;
-        vec3 pc = diffuseColor.rgb;
-        float grass = smoothstep(0.72, 0.9, vMUp) * smoothstep(0.015, 0.06, pc.g - max(pc.r, pc.b * 0.95)) * (1.0 - rg);
-        vec3 sunG = pc * vec3(1.07, 1.04, 0.88), coolG = pc * vec3(0.8, 0.94, 1.06);
-        vec3 gc = mix(coolG, sunG, smoothstep(0.28, 0.72, m1));
-        gc *= mix(1.0, 0.84 + 0.3 * m2, 1.0 - smoothstep(250.0, 1400.0, camD));
-        diffuseColor.rgb = mix(diffuseColor.rgb, gc, grass * 0.75);
-        float bank = smoothstep(0.9, 0.78, vMUp) * smoothstep(0.55, 0.7, vMUp) * (1.0 - rg) * smoothstep(3.0, 12.0, vMWorld.y);
-        diffuseColor.rgb = mix(diffuseColor.rgb, pc * vec3(1.08, 0.88, 0.74), bank * 0.55);
-      }`).replace('#include <emissivemap_fragment>', `#include <emissivemap_fragment>
-      {
-        // bioluminescence by night: the teal-violet glowwood and the pastel blossom meadows breathe light
-        float glw = clamp((mPaint.b - mPaint.r) * 3.0 + (mPaint.g + mPaint.b - 2.0 * mPaint.r) * 1.2 - 0.25, 0.0, 1.0);
-        float bls = clamp((mPaint.r - mPaint.g) * 3.0 + (mPaint.b - mPaint.g) * 1.5 - 0.2, 0.0, 1.0);
-        float ph = mNoise(vMWorld.xz * 0.01) * 6.2832;
-        float pulse = 0.6 + 0.4 * sin(uMTime * 2.2 + ph);
-        vec3 gc = mix(vec3(0.25, 0.9, 1.0), vec3(0.65, 0.45, 1.0), mNoise(vMWorld.xz * 0.03 + 7.0));
-        totalEmissiveRadiance += (gc * glw * 0.6 + vec3(1.0, 0.55, 0.8) * bls * 0.2) * pulse * uNightG * smoothstep(1.0, 6.0, vMWorld.y) * (1.0 - rg);
-      }`).replace('#include <fog_fragment>', `
-      #ifdef USE_FOG
-        gl_FragColor.rgb = atmosApply(gl_FragColor.rgb, vMWorld, fogColor);   // the shared haze (look.js); peaks rise out of it
-      #endif`);
-  };
-  m.customProgramCacheKey = () => (key ? key.call(m) : 'land') + '-rock';
-  return m;
+  return groundGrade(nightGrade(m, far ? 'land-far' : 'land'), far ? 'far' : 'near');
 }
 
 function landGeometry(x0, z0, n, step, skipDeep) {
@@ -205,22 +139,37 @@ function waterMesh() {
         g += d3 * cos(dot(d3, p) * .27 - uTime * 2.6) * .27 * .16;
         g += (vec2(vn(p * .35 + uTime * .3), vn(p * .35 - uTime * .25 + 9.)) - .5) * .5;
         g *= mix(.12, 1., open) * patchy * (1. - smoothstep(1.5, .2, depth) * .6);
+        // ripples ring out round the player wading or swimming, and trail behind as a wake
+        vec2 rp = p - cameraPosition.xz; float rd = length(rp);
+        float nearW = 1. - smoothstep(2.5, 6., cameraPosition.y);
+        if (nearW > 0. && rd < 30.) g += rp / max(rd, .01) * sin(rd * 3.2 - uTime * 6.) * exp(-rd * .16) * .35 * nearW;
+        // fine glitter: the surface catches the light in tiny facets
+        g += (vec2(vn(p * 2.3 + uTime * .9), vn(p * 2.1 - uTime * .8 + 5.)) - .5) * .18 * (1. - smoothstep(30., 200., length(vW - cameraPosition)));
         vec3 n = normalize(vec3(-g.x, 1., -g.y));
         vec3 V = normalize(cameraPosition - vW);
         float dist = length(vW - cameraPosition);
         n = normalize(mix(n, vec3(0., 1., 0.), smoothstep(400., 3000., dist) * .7));
         float fres = pow(1. - max(dot(n, V), 0.), 3.);
-        vec3 shallow = vec3(.32, .9, .84), mid = vec3(.1, .56, .78), deep = vec3(.05, .2, .5);
-        vec3 c = mix(shallow, mid, smoothstep(.4, 5., depth));
-        c = mix(c, deep, smoothstep(5., 28., depth));
+        // clear water: the sandy bed shows through the shallows, then turquoise, then deep blue
+        vec3 bed = vec3(.78, .72, .55) * (.85 + .3 * vn(p * .3));
+        vec3 shallow = vec3(.2, .72, .68), mid = vec3(.06, .4, .55), deep = vec3(.03, .14, .32);
+        vec3 c = mix(bed, shallow, smoothstep(.0, 1.6, depth));
+        c = mix(c, mid, smoothstep(1.2, 7., depth));
+        c = mix(c, deep, smoothstep(6., 30., depth));
+        // light dancing on the bed of the shallows
+        float caus = pow(1. - abs(vn(p * .9 + uTime * .35) - vn(p * .9 - uTime * .3 + 3.)), 8.);
+        c += vec3(.5, .55, .4) * caus * (1. - smoothstep(.5, 4., depth)) * (1. - uNight) * .5;
         // coral gardens on the reef shallows
         float coral = smoothstep(.62, .8, vn(p * .05)) * smoothstep(.6, 1.5, depth) * (1. - smoothstep(3., 6., depth)) * open;
         c = mix(c, vec3(1., .55, .7), coral * .45);
-        vec3 skyD = vec3(1., .82, .86), skyN = vec3(.22, .24, .55);
-        c = mix(c, mix(skyD, skyN, uNight), clamp(fres * .75, 0., .85));
+        // the sky in the water: zenith blue overhead, the hazy horizon at grazing angles
+        vec3 R = reflect(-V, n);
+        vec3 skyD = mix(pow(uFog, vec3(.4545)) * 1.05, vec3(.36, .55, .9), smoothstep(.0, .5, R.y)), skyN = vec3(.12, .14, .38);
+        c = mix(c, mix(skyD, skyN, uNight), clamp(.04 + fres * .9, 0., .9));
         vec3 L = normalize(mix(uSun, uMoon, uNight));
-        float spec = pow(max(dot(reflect(-V, n), L), 0.), 160.);
-        c += mix(vec3(1., .8, .55), vec3(.75, .8, 1.), uNight) * spec * 1.4;
+        float sd = max(dot(R, L), 0.);
+        float spec = pow(sd, 420.) * 3.5 + pow(sd, 48.) * .35;
+        c += mix(vec3(1., .85, .62), vec3(.75, .8, 1.), uNight) * spec;
         // surf: the waterline, and breakers rolling in towards the shore
         float wob = vn(p * .08 + uTime * .2) * 1.4;
         float foam = 1. - smoothstep(.0, .7, depth);
@@ -244,37 +193,6 @@ function waterMesh() {
 }
 
 // --- forests ------------------------------------------------------------------------------
-function treeGeometry() {
-  const parts = [];
-  const paint = (g, hex) => {
-    g = g.toNonIndexed(); const c = new THREE.Color(hex), n = g.attributes.position.count, a = new Float32Array(n * 3);
-    for (let i = 0; i < n; i++) { const k = 0.85 + 0.15 * Math.max(0, g.attributes.position.getY(i) % 7) / 7; a[i * 3] = c.r * k; a[i * 3 + 1] = c.g * k; a[i * 3 + 2] = c.b * k; }
-    g.setAttribute('color', new THREE.BufferAttribute(a, 3)); g.deleteAttribute('uv'); return g;
-  };
-  parts.push(paint(new THREE.CylinderGeometry(0.5, 0.9, 9, 5, 1, true).translate(0, 4.5, 0), '#6a4a5a'));
-  for (const [x, y, z, r] of [[0, 13, 0, 6.5], [2.6, 10.5, 1.2, 4.6], [-2.4, 11, -1.6, 4.4], [0.4, 17, -0.4, 4]]) {
-    const g = new THREE.IcosahedronGeometry(r, 0); g.scale(1, 0.85, 1); g.translate(x, y, z);
-    parts.push(paint(g, '#ffffff'));
-  }
-  const g = mergeGeometries(parts);
-  g.computeVertexNormals();
-  return g;
-}
-
-function coniferGeometry() {
-  const parts = [];
-  const paint = (g, hex) => {
-    g = g.toNonIndexed(); const c = new THREE.Color(hex), n = g.attributes.position.count, a = new Float32Array(n * 3);
-    for (let i = 0; i < n; i++) { const k = 0.8 + 0.2 * Math.min(1, g.attributes.position.getY(i) / 22); a[i * 3] = c.r * k; a[i * 3 + 1] = c.g * k; a[i * 3 + 2] = c.b * k; }
-    g.setAttribute('color', new THREE.BufferAttribute(a, 3)); g.deleteAttribute('uv'); return g;
-  };
-  parts.push(paint(new THREE.CylinderGeometry(0.4, 0.7, 6, 5, 1, true).translate(0, 3, 0), '#5a4048'));
-  for (const [y, r, h] of [[7, 5.2, 8], [11.5, 4.1, 7], [15.5, 3, 6], [19, 1.9, 5]]) parts.push(paint(new THREE.ConeGeometry(r, h, 7, 1).translate(0, y, 0), '#ffffff'));
-  const g = mergeGeometries(parts);
-  g.computeVertexNormals();
-  return g;
-}
-
 // groves with clearings between them, rather than an even sprinkle
 function grove(x, z) {
   const n = (a, b) => { const i = Math.floor(a), j = Math.floor(b), f = a - i, g = b - j, h = (u, v) => { const s = Math.sin(u * 127.1 + v * 311.7) * 43758.5453; return s - Math.floor(s); };
@@ -295,65 +213,69 @@ function farLandH(x, z) {
 
 function forests(scene, preset) {
   const spacing = preset.trees >= 200 ? 30 : preset.trees >= 120 ? 40 : 54;
-  const range = preset.trees >= 200 ? 2200 : preset.trees >= 120 ? 1600 : 1100;
-  const T = 768, geo = treeGeometry(), coneGeo = coniferGeometry();
-  const mat = nightGrade(new THREE.MeshLambertMaterial({ vertexColors: true, emissive: '#0c2030', emissiveIntensity: 0.6 }), 'forest');
+  const range = preset.trees >= 200 ? 3000 : preset.trees >= 120 ? 2000 : 1300;
+  const T = 768;
   // beyond the fine tiles the land is the coarse mesh, sunk like landMaterial(true): trees follow it there
   // instead of floating over valleys and ridges
-  const prevC = mat.onBeforeCompile;
-  mat.onBeforeCompile = (sh, r) => {
-    prevC(sh, r);
-    sh.vertexShader = sh.vertexShader.replace('#include <common>', '#include <common>\nattribute float aDy;')
-      .replace('#include <begin_vertex>', `#include <begin_vertex>
-        { vec3 ip = instanceMatrix[3].xyz; float dc = length(ip.xz - cameraPosition.xz);
-          vec2 c0 = vec2(${G.x0.toFixed(1)}, ${G.z0.toFixed(1)}), cc = c0 + (floor((ip.xz - c0) / ${CHUNK}.0) + 0.5) * ${CHUNK}.0;
-          float k = step(${NEAR_R}.0, length(cc - cameraPosition.xz));     // same test that picks the fine tiles
-          float dy = k * (aDy - mix(40.0, 0.0, smoothstep(${DIP_R - 40}.0, ${DIP_R}.0, dc)) - 0.6 - dc * 0.0015);
-          transformed.y += dy / max(length(instanceMatrix[1].xyz), 1e-3); }`);
-  };
-  mat.customProgramCacheKey = () => 'forest-far-ng';
+  const dip = `{ float dc = length(base.xz - cameraPosition.xz);
+      vec2 c0 = vec2(${G.x0.toFixed(1)}, ${G.z0.toFixed(1)}), cc = c0 + (floor((base.xz - c0) / ${CHUNK}.0) + 0.5) * ${CHUNK}.0;
+      float k = step(${NEAR_R}.0, length(cc - cameraPosition.xz));     // same test that picks the fine tiles
+      base.y += k * (aDy - mix(40.0, 0.0, smoothstep(${DIP_R - 40}.0, ${DIP_R}.0, dc)) - 0.6 - dc * 0.0015); }`;
+  const quality = { key: preset.trees >= 200 ? 'high' : preset.trees >= 120 ? 'medium' : 'low' };
+  const kit = createTreeKit(scene, quality, dip);
   const tiles = new Map();
-  const palette = ['#3f9a52', '#4fae5a', '#2f8a5a', '#5bb86a', '#3a8f70', '#f2a6c8', '#7fd8c8', '#62b04a'];
   const m4 = new THREE.Matrix4(), q = new THREE.Quaternion(), s = new THREE.Vector3(), p = new THREE.Vector3(), c = new THREE.Color(), up = new THREE.Vector3(0, 1, 0);
   function build(ti, tj) {
     const r = rng(ti * 7919 + tj * 104729 + 13), pts = [];
     const x0 = ti * T, z0 = tj * T;
     const step = spacing * 0.6;
+    const add = (px, pz, sp, f) => {
+      const h = terrainHeight(MAIN, px, pz), [lo, hi] = SPECIES[sp].h;
+      // big old trees in the hearts of the groves, saplings at their edges
+      const ht = (lo + (hi - lo) * r() * r()) * (0.7 + 0.35 * f);
+      pts.push([px, h, pz, r() * 6.283, ht, sp, farLandH(px, pz) - h, r()]);
+    };
     for (let z = z0; z < z0 + T; z += step) for (let x = x0; x < x0 + T; x += step) {
       const px = x + r() * step, pz = z + r() * step;
       const h = terrainHeight(MAIN, px, pz), f = forestAt(px, pz, h) * grove(px, pz);
-      if (f > 0 && r() < f * 1.8 && !onPath(px, pz)) pts.push([px, h, pz, r(), r(), r(), f]);
+      if (!(f > 0 && r() < f * 1.8) || onPath(px, pz)) continue;
+      const sp = pickSpecies(r, h);
+      add(px, pz, sp, f);
+      // ferns gather under the broadleaf trees
+      if (sp !== 2 && r() < 0.7) { const a = r() * 6.283, d = 3 + r() * 5, fx = px + Math.cos(a) * d, fz = pz + Math.sin(a) * d; if (!onPath(fx, fz)) add(fx, fz, FERN, f); }
     }
     if (!pts.length) return null;
-    // conifers take over up the slopes; broadleaf trees keep the valleys
-    const kinds = [[], []];
-    for (const pt of pts) kinds[r() < THREE.MathUtils.smoothstep(pt[1], 120, 520) * 0.85 + 0.12 ? 1 : 0].push(pt);
     const group = new THREE.Group();
-    kinds.forEach((list, kind) => {
+    group.userData = { trees: pts, cx: x0 + T / 2, cz: z0 + T / 2 };
+    SPECIES.forEach((sp, i) => {
+      const list = pts.filter((pt) => pt[5] === i);
       if (!list.length) return;
-      const g = (kind ? coneGeo : geo).clone();
-      g.setAttribute('aDy', new THREE.InstancedBufferAttribute(Float32Array.from(list, ([x, y, z]) => farLandH(x, z) - y), 1));
-      const mesh = new THREE.InstancedMesh(g, mat, list.length);
-      list.forEach(([x, y, z, a, b, k, f], i) => {
-        // big old trees in the hearts of the groves, saplings at their edges
-        const sc = (0.45 + a * a * 1.3) * (0.7 + 0.5 * f);
-        q.setFromAxisAngle(up, b * 6.28); s.set(sc, sc * (0.8 + k * 0.5), sc); p.set(x, y - 0.5, z);
-        mesh.setMatrixAt(i, m4.compose(p, q, s));
-        c.set(kind ? (k < 0.5 ? '#2f7a5c' : '#3b8a62') : palette[Math.floor(k * (k < 0.9 ? 5 : palette.length))]);
-        c.offsetHSL((a - 0.5) * 0.04, (b - 0.5) * 0.15, (k - 0.5) * 0.12);
-        mesh.setColorAt(i, c);
+      const g = kit.cardGeo.clone();
+      g.setAttribute('aDy', new THREE.InstancedBufferAttribute(Float32Array.from(list, (pt) => pt[6]), 1));
+      const mesh = new THREE.InstancedMesh(g, kit.cardMat[i], list.length);
+      list.forEach(([x, y, z, rot, ht, , , k], j) => {
+        const sc = ht / kit.cardH[i];
+        q.setFromAxisAngle(up, rot); s.setScalar(sc); p.set(x, y - 0.3, z);
+        mesh.setMatrixAt(j, m4.compose(p, q, s));
+        // a touch of colour variety from tree to tree
+        c.setRGB(1, 1, 1).offsetHSL((k - 0.5) * 0.03, 0, (k - 0.5) * 0.12);
+        mesh.setColorAt(j, c);
       });
-      mesh.castShadow = false; mesh.receiveShadow = true;
-      mesh.computeBoundingSphere();
+      mesh.frustumCulled = false;
       group.add(mesh);
     });
     scene.add(group);
     return group;
   }
   // once the roads are known, regrow the tiles already built so no tree stands on a road
-  whenPaths(() => { for (const t of tiles.values()) if (t) { scene.remove(t); t.traverse((o) => o.geometry && o.geometry !== geo && o.geometry !== coneGeo && o.geometry.dispose()); } tiles.clear(); });
+  whenPaths(() => { for (const t of tiles.values()) if (t) { scene.remove(t); t.traverse((o) => o.geometry && o.geometry !== kit.cardGeo && o.geometry.dispose()); } tiles.clear(); });
+  let nx = 1e9, nz = 1e9, built = false;
   return {
+    // true while the trees wait for their cards to load
+    get waiting() { return !built; },
     update(cam) {
+      if (!kit.ready) return;
+      built = true;
       const ci = Math.floor(cam.x / T), cj = Math.floor(cam.z / T), n = Math.ceil(range / T) + 1;
       for (const [k, t] of tiles) if (t) t.visible = false;
       for (let j = cj - n; j <= cj + n; j++) for (let i = ci - n; i <= ci + n; i++) {
@@ -364,6 +286,13 @@ function forests(scene, preset) {
         const t = tiles.get(k);
         if (t) t.visible = true;
       }
+      nx = 1e9;
+    },
+    // the 3D trees round the player, refreshed every few metres
+    near(cam) {
+      if (!kit.ready || Math.hypot(cam.x - nx, cam.z - nz) < 5) return;
+      nx = cam.x; nz = cam.z;
+      kit.updateNear(cam, tiles.values());
     },
   };
 }
@@ -392,6 +321,8 @@ export function createCoast(scene, preset) {
       sea.material.uniforms.uTime.value = t;
       sea.position.set(Math.round(camera.position.x / 100) * 100, 0, Math.round(camera.position.z / 100) * 100);
       const cx = camera.position.x, cz = camera.position.z;
+      woods.near(camera.position);
+      if (woods.waiting) woods.update(camera.position);
       const key = Math.round(cx / 48) + ',' + Math.round(cz / 48);
       if (key === lastKey) return;
       lastKey = key;
