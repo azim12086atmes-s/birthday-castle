@@ -89,9 +89,10 @@ export function createWorldFill(scene, quality) {
     for (const [m, place, x, y, z, rot, s, far] of P.items) {
       const M = models.get(m);
       if (!M) continue;
-      // world pass 2b (owner, Oct 18: the low-mesh builds add nothing): the scatter along the roads and in
-      // the wilds, and the rubble and rock props everywhere, are gone; places keep their buildings
-      if (place === 'roadside' || place === 'wild' || place === 'road' || CLUTTER.test(m)) continue;
+      // world pass 2b (owner, Oct 18: the low-mesh builds add nothing): the scatter in the wilds and along the
+      // roads, and the rubble and rock props everywhere, are gone; places and the roadside hamlets keep their buildings
+      if (place === 'wild' || place === 'road' || CLUTTER.test(m)) continue;
+      if (place === 'roadside' && (P.models[m].tier === 'prop' || /Rock|Rubble|menhir|Relic/i.test(m))) continue;   // the hamlets stay
       // sit on the game's own ground: the palace terraces and district pads differ a little from the raw crescent
       // (sky isles, the great ridge's citadels and the cliff kit's viaducts and sea pillars keep their own height)
       const g = far ? -1 : groundAt(x, z, y + 5);

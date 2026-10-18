@@ -702,6 +702,11 @@ export function createPalace(scene, preset, { makePortal } = {}) {
     [206, -120, 316, 16], [228, -60, 278, 12], [281, -200, 287, 18], [322, -215, 333, 22], [351, -190, 353, 26], [380, -210, 295, 18]];
   const DOME_TOWERS = [[35, 60, 16, 258, 23], [113, 0, 17, 252, 20]];           // [x, z, r, dome base, dome height]
   const CONE = { x: 0, z: -280, r: 22, top: 255 };
+  // taller crown (owner, 18 Oct: "the palace height is still low"): the spires rise half as high again
+  // above their roofs, the dome towers and the north cone by a third, so the silhouette soars
+  for (const sp of SPIRES) sp[2] = Math.round(palaceTop(sp[0], sp[1]) + (sp[2] - palaceTop(sp[0], sp[1])) * 1.6);
+  for (const t of DOME_TOWERS) t[3] = Math.round(palaceTop(t[0], t[1]) + (t[3] - palaceTop(t[0], t[1])) * 1.35);
+  CONE.top = Math.round(palaceTop(CONE.x, CONE.z) + (CONE.top - palaceTop(CONE.x, CONE.z)) * 1.35);
   const COURT = { x: -70, z: -150, r: 30 };                                      // the human-scale roof court on the crown garden
   const CONSERVATORIES = [[290, -100, 90], [290, 40, 90]];
   const WHEELS = [[176, -160], [176, 75]];
@@ -1483,7 +1488,7 @@ export function createPalace(scene, preset, { makePortal } = {}) {
   for (const [x, z, topY, w] of SPIRES) {
     const y0 = roofAt(x, z), needleH = Math.min(topY * 0.16, (topY - y0) * 0.32), lantH = 1.4 * w, shaftTop = topY - needleH - lantH;
     kit.frame(x, 0, z);
-    const stages = shaftTop - y0 > 90 ? 3 : 2, sh = (shaftTop - y0) / stages;
+    const stages = Math.max(2, Math.min(6, Math.round((shaftTop - y0) / 55))), sh = (shaftTop - y0) / stages;
     for (let k = 0; k < stages; k++) {
       const ww = w * (1 - k * 0.12), yb = y0 + k * sh;
       const cr = ww / 2 / 0.924;                                                                          // eight-sided, a glass light on every face

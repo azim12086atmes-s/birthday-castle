@@ -60,7 +60,7 @@ export function groundGrade(m, key) {
         // how much of the painted colour is meadow green
         float grassy = smoothstep(0.004, 0.05, P.g - max(P.r, P.b * 0.95)) * (1.0 - rg);
         // meadow: rich greens, warm sunlit patches and cool shaded ones, broken at three scales
-        vec3 g = P * vec3(0.9, 1.06, 0.72);
+        vec3 g = P * vec3(0.78, 1.0, 0.6);
         g *= mix(vec3(0.78, 0.95, 1.1), vec3(1.16, 1.08, 0.7), smoothstep(0.28, 0.78, n1));
         g *= 0.82 + 0.34 * n2;
         g *= mix(1.0, 0.86 + 0.28 * n3, nearF);
@@ -78,8 +78,12 @@ export function groundGrade(m, key) {
         // the pale sand of the painted map stays on the beaches: inland and up the banks it greens over
         float lumP = dot(P, vec3(0.3, 0.59, 0.11)), satP = max(P.r, max(P.g, P.b)) - min(P.r, min(P.g, P.b));
         float pale = smoothstep(0.5, 0.66, lumP) * (1.0 - smoothstep(0.12, 0.25, satP)) * smoothstep(5.0, 14.0, y) * (1.0 - smoothstep(600.0, 800.0, y)) * (1.0 - rg);
-        vec3 mg = vec3(0.3, 0.5, 0.18) * mix(vec3(0.8, 0.95, 1.1), vec3(1.15, 1.08, 0.72), smoothstep(0.28, 0.78, n1)) * (0.82 + 0.34 * n2);
+        vec3 mg = vec3(0.25, 0.45, 0.15) * mix(vec3(0.8, 0.95, 1.1), vec3(1.15, 1.08, 0.72), smoothstep(0.28, 0.78, n1)) * (0.82 + 0.34 * n2);
         col = mix(col, mg, pale * 0.85);
+        // under the grass ring the ground takes the colour of the grass roots, so no pale earth shows between the blades
+        col = mix(col, col * vec3(0.55, 0.68, 0.42), (1.0 - smoothstep(30.0, 150.0, camD)) * max(grassy, pale) * 0.85);
+        // slow cloud shadows drifting over the land (the grass blades carry the same ones)
+        col *= 0.62 + 0.38 * smoothstep(0.32, 0.62, gNoise(wp * 0.004 + vec2(uGTime * 0.012, uGTime * 0.005)));
         // bare earth on the banks between the flats
         float bank = smoothstep(0.9, 0.78, up + (n3 - 0.5) * 0.08) * grassy;
         vec3 earth = vec3(0.34, 0.25, 0.17) * (0.75 + 0.5 * n3);
