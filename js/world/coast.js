@@ -19,7 +19,8 @@ import { onPath, whenPaths } from './paths.js';
 
 const G = TERRAIN_GRID;
 const CHUNK = 384, CN = 32;                // fine tiles: 32 cells of 12 m
-const CN_NEAR = 128, FINE_R = 560;        // and round the player 3 m cells, so the walking-scale relief is real geometry
+// and round the player finer cells (3 m on high, 4 m on medium, 6 m on low), so the walking-scale relief is real geometry
+const nearCells = (preset) => preset.trees >= 200 ? [128, 560] : preset.trees >= 120 ? [96, 480] : [64, 400];
 const NEAR_R = 900, DIP_R = 600;
 
 function landMaterial(far) {
@@ -344,6 +345,7 @@ export function createCoast(scene, preset) {
   ridge.frustumCulled = false; ridge.name = 'great-ridge';
   group.add(ridge);
   const nearMat = landMaterial(false);
+  const [CN_NEAR, FINE_R] = nearCells(preset);
   const chunks = new Map();
   const sea = waterMesh();
   group.add(sea);
