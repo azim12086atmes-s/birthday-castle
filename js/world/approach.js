@@ -5,7 +5,8 @@
 // everyone arrives) to the palace. Arched bridges branch off to the two lake
 // islands, and every footstep on the causeway sends out a ring of neon light.
 import * as THREE from 'three';
-import { toon, glowBasic, additive, nightGrade } from './materials.js';
+import { glowBasic, additive, nightGrade } from './materials.js';
+import { palaceStone as toon, gardenPavingTexture } from './palace-gardens.js';
 import { glowTexture, rng } from './textures.js';
 import { Kit, box, cyl, lathe, cap, scaleUV, waterMaterial, haloPoints } from './kit.js';
 import { S, TERRACES, STAIRS, CAUSEWAY, B20, BRANCHES, LAKE, PAL, PLAZA, causewayY, branchY, addCollider, lakeDistance } from './layout.js';
@@ -37,19 +38,7 @@ function deckTex() {
   return tex(c);
 }
 // terrace garden (40 m tile): lawn beds edged with 600 mm stone, 3 to 6 m walks, rose borders
-function terraceTex() {
-  const [c, g] = cv(512, 512);
-  g.fillStyle = '#f2e2da'; g.fillRect(0, 0, 512, 512);
-  const beds = [[24, 24, 200, 200], [288, 24, 200, 200], [24, 288, 200, 200], [288, 288, 200, 200]];
-  for (const [x, y, w, h] of beds) {
-    g.fillStyle = '#d8c8c0'; g.fillRect(x - 6, y - 6, w + 12, h + 12);
-    g.fillStyle = '#5aa44f'; g.fillRect(x, y, w, h);
-    g.strokeStyle = '#2f6a3a'; g.lineWidth = 10; g.strokeRect(x + 5, y + 5, w - 10, h - 10);
-    for (let k = 0; k < 40; k++) { g.fillStyle = ['#f6a6c8', '#ff7fb0', '#ffe3ef', '#c88ae0'][k % 4]; g.beginPath(); g.arc(x + 10 + R() * (w - 20), y + 10 + R() * 18, 4, 0, Math.PI * 2); g.fill(); g.beginPath(); g.arc(x + 10 + R() * (w - 20), y + h - 12 - R() * 14, 4, 0, Math.PI * 2); g.fill(); }
-  }
-  star8(g, 256, 256, 22, '#e2b44c'); star8(g, 0, 0, 22, '#e2b44c'); star8(g, 512, 0, 22, '#e2b44c'); star8(g, 0, 512, 22, '#e2b44c'); star8(g, 512, 512, 22, '#e2b44c');
-  return tex(c);
-}
+function terraceTex() { return gardenPavingTexture(); }
 // retaining wall: a carved arcade with grotto fountains glowing blue (sheet 15 middle terrace)
 function arcadeTex() {
   const [c, g] = cv(256, 128), [e, ge] = cv(256, 128);
@@ -94,13 +83,13 @@ export function createApproach(scene, preset, { makePortal } = {}) {
   const stepsTex = (() => { const [c, g] = cv(64, 64); g.fillStyle = '#fbf3ee'; g.fillRect(0, 0, 64, 64); g.fillStyle = '#e8c9c6'; g.fillRect(0, 50, 64, 14); g.fillStyle = '#d9b25a'; g.fillRect(0, 48, 64, 2); return tex(c); })();
   const arc = arcadeTex();
   const mats = {
-    ivory: toon('#ffffff', { vertexColors: true, emissive: '#2a1838', emissiveIntensity: 0.3 }),
-    gold: toon('#ffffff', { vertexColors: true, emissive: '#6a4a10', emissiveIntensity: 0.55 }),
-    deck: toon('#ffffff', { map: deckTex(), vertexColors: true, emissive: '#2a1838', emissiveIntensity: 0.3 }),
-    terrace: nightGrade(new THREE.MeshLambertMaterial({ map: terraceTex(), vertexColors: true, emissive: '#10202a', emissiveIntensity: 0.4 }), 'terrace'),
+    ivory: toon('#ffffff', { vertexColors: true, emissive: '#2a1838', emissiveIntensity: 0.025 }),
+    gold: toon('#ffffff', { vertexColors: true, emissive: '#6a4a10', emissiveIntensity: 0.08 }),
+    deck: toon('#ffffff', { map: deckTex(), vertexColors: true, emissive: '#2a1838', emissiveIntensity: 0.025 }),
+    terrace: toon('#ffffff', { map: terraceTex(), vertexColors: true, roughness: .95 }),
     arcade: toon('#ffffff', { map: arc.map, emissiveMap: arc.glow, emissive: '#7fd0ff', emissiveIntensity: 0.5, vertexColors: true }),
-    steps: toon('#ffffff', { map: stepsTex, vertexColors: true, emissive: '#2a1838', emissiveIntensity: 0.3 }),
-    rail: toon('#ffffff', { map: railTex(), alphaTest: 0.5, side: THREE.DoubleSide, vertexColors: true, emissive: '#2a1838', emissiveIntensity: 0.3 }),
+    steps: toon('#ffffff', { map: stepsTex, vertexColors: true, emissive: '#2a1838', emissiveIntensity: 0.025 }),
+    rail: toon('#ffffff', { map: railTex(), alphaTest: 0.5, side: THREE.DoubleSide, vertexColors: true, emissive: '#2a1838', emissiveIntensity: 0.025 }),
     dome: toon('#ffffff', { vertexColors: true, emissive: '#1a2a5a', emissiveIntensity: 0.4 }),
   };
   const water = [], falls = [], lamps = [], cypress = [], blossoms = [], willows = [], clumps = [], avenue = [], posts = [], fountains = [], benches = [];

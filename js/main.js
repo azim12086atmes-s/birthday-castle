@@ -9,6 +9,7 @@ import { setTreeRenderer } from './world/trees.js';
 import { createPalace } from './world/palace.js';
 import { createNature } from './world/nature.js';
 import { createApproach } from './world/approach.js';
+import { createPalaceGardens } from './world/palace-gardens.js';
 import { createMeadow } from './world/meadow.js';
 import { createCreatures } from './world/creatures.js';
 import { createEffects } from './world/effects.js';
@@ -145,6 +146,7 @@ const brook = createBrook(scene, quality);
 const islands = createIslands(scene, quality);
 const castle = createPalace(scene, quality, { makePortal });
 const approach = createApproach(scene, quality, { makePortal });
+const palaceGardens = createPalaceGardens(scene, quality, { clearRoof: castle.roofGardenClear });
 const nature = createNature(scene, quality);
 const meadow = createMeadow(scene, quality);
 const creatures = createCreatures(scene, quality);
@@ -516,6 +518,7 @@ function frame() {
   MEADOW_TIME.value = t; GROUND_TIME.value = t;
   meadow.update(t, camera);
   approach.update(t, dt, camera);
+  palaceGardens.update(t, camera);
   creatures.update(t, dt, camera);
   effects.update(t, dt, camera);
   magic.update(t, dt, camera.position, magicCtx(dt));
@@ -647,4 +650,4 @@ openLobby(profile, {
 if (params.get('cutscene') === '1') {
   window.__previewWelcome = () => game && (game.cutscene = playWelcome({ camera, castle, celebration, controller: game.controller, target: game.controller.pos.clone(), ui, onDone: () => { game.cutscene = null; } }));
 }
-window.__castle = { scene, camera, renderer, places, magic, get game() { return game; } };
+window.__castle = { scene, camera, renderer, places, magic, palaceGardens, get game() { return game; } };

@@ -11,7 +11,8 @@
 // Laptop plan: the massing is one merged mesh per material; the instanced detail
 // (spirelets, trees, lanterns, garlands) shows within about 5 km.
 import * as THREE from 'three';
-import { toon, glowBasic, additive, nightGrade } from './materials.js';
+import { glowBasic, additive, nightGrade } from './materials.js';
+import { palaceStone as toon, gardenPavingTexture } from './palace-gardens.js';
 import { glowTexture, rng } from './textures.js';
 import { Kit, box, cyl, lathe, cap, scaleUV, wallBox, waterMaterial, haloPoints, roseWindowTexture } from './kit.js';
 import { pointedArchShape, pointedArchPath, archFrameGeometry } from './arch.js';
@@ -163,19 +164,7 @@ function domeTex() {
   return tex(c);
 }
 // roof garden (64 m tile): square beds framed by 3 m paths with gold star inlays
-function gardenTex() {
-  const [c, g] = cv(512, 512), P = 24;
-  g.fillStyle = '#f3dfd8'; g.fillRect(0, 0, 512, 512);
-  for (let j = 0; j < 4; j++) for (let i = 0; i < 4; i++) {
-    const x = i * 128 + P / 2, y = j * 128 + P / 2, s = 128 - P;
-    g.fillStyle = '#2f6a3a'; g.fillRect(x, y, s, s);
-    g.fillStyle = (i + j) % 2 ? '#4f9a4f' : '#5aa452'; g.fillRect(x + 7, y + 7, s - 14, s - 14);
-    if ((i * 3 + j) % 7 === 2) { g.fillStyle = '#7ad0ff'; g.beginPath(); g.arc(x + s / 2, y + s / 2, 26, 0, Math.PI * 2); g.fill(); g.strokeStyle = '#fbf4ee'; g.lineWidth = 5; g.stroke(); continue; }
-    for (let k = 0; k < 26; k++) { g.fillStyle = ['#f6a6c8', '#ffe3ef', '#c88ae0', '#ff8fb8'][k % 4]; g.beginPath(); g.arc(x + 12 + R() * (s - 24), y + 12 + R() * (s - 24), 3 + R() * 4, 0, Math.PI * 2); g.fill(); }
-  }
-  for (let j = 0; j <= 4; j++) for (let i = 0; i <= 4; i++) star8(g, i * 128, j * 128, 11, '#e2b44c');
-  return tex(c);
-}
+function gardenTex() { return gardenPavingTexture(); }
 // court floor: rose and ivory pavers, gold eight-point star inlays (sheet 16)
 function courtFloorTex() {
   const [c, g] = cv(256, 256);
@@ -627,26 +616,13 @@ export function createPalace(scene, preset, { makePortal } = {}) {
   body.add(detail); group.add(body);
   const kit = new Kit();
   const am = artifactMaterials();
-  // a glossy sheen: a fixed key light from upper left gives every dome and gold piece its shine
-  const glossy = (m, k) => {
-    const prev = m.onBeforeCompile;
-    m.onBeforeCompile = (sh) => {
-      prev(sh);
-      sh.fragmentShader = sh.fragmentShader.replace('#include <opaque_fragment>', `{
-        vec3 gV = normalize(vViewPosition), gH = normalize(normalize(vec3(-0.45, 0.6, 0.66)) + gV);
-        float gD = max(dot(normal, gH), 0.0);
-        outgoingLight += vec3(1.0, 0.94, 1.0) * (pow(gD, 60.0) * 1.2 + pow(gD, 9.0) * 0.16) * ${k.toFixed(2)};
-      }
-      #include <opaque_fragment>`);
-    };
-    m.customProgramCacheKey = () => 'toon-rim-gloss-' + k;
-    return m;
-  };
+  // Physical roughness and metal response replace the fixed camera-space shine.
+  const glossy = (m, k) => { m.roughness = .55 - k * .14; m.metalness = .15 + k * .3; return m; };
   const tile = (t, emissive, opts = {}) => toon('#ffffff', { map: t.map, emissiveMap: t.glow, emissive, emissiveIntensity: 0.5, vertexColors: true, ...opts });
   const steps = (() => { const [c, g] = cv(64, 64); g.fillStyle = '#fbf3ee'; g.fillRect(0, 0, 64, 64); g.fillStyle = '#e8c9c6'; g.fillRect(0, 50, 64, 14); g.fillStyle = '#d9b25a'; g.fillRect(0, 48, 64, 2); return tex(c); })();
   const garden = gardenTex(), dome = domeTex(), jali = jaliTex(), lancetT = lancetTex(), starWin = starWinTex();
   const mats = {
-    ivory: toon('#ffffff', { vertexColors: true, emissive: '#2a1838', emissiveIntensity: 0.3 }),
+    ivory: toon('#ffffff', { vertexColors: true, emissive: '#2a1838', emissiveIntensity: 0.025 }),
     podium: tile(podiumTex(), '#ffb070'),
     wing: tile(wingTex(), '#a99bff'),
     tower: tile(towerTex(), '#ffd36a'),
@@ -656,25 +632,25 @@ export function createPalace(scene, preset, { makePortal } = {}) {
     lancetDark: tile(lancetT, '#3a46c8', { side: THREE.DoubleSide }),
     starwin: tile(starWin, '#8a90ff', { side: THREE.DoubleSide }),     // the small arched windows: dark cobalt
     gate: tile(gateTex(), '#9a9cff', { side: THREE.DoubleSide }),
-    dome: glossy(toon('#ffffff', { map: dome, vertexColors: true, emissive: '#2a1040', emissiveIntensity: 0.4 }), 1),
-    gold: glossy(toon('#ffffff', { vertexColors: true, emissive: '#6a4a10', emissiveIntensity: 0.55 }), 0.7),
-    garden: nightGrade(new THREE.MeshLambertMaterial({ map: garden, vertexColors: true, emissive: '#10202a', emissiveIntensity: 0.4 }), 'roof-garden'),
-    paving: toon('#ffffff', { map: courtFloorTex(), vertexColors: true, emissive: '#2a1838', emissiveIntensity: 0.3 }),
-    steps: toon('#ffffff', { map: steps, vertexColors: true, emissive: '#2a1838', emissiveIntensity: 0.3 }),
+    dome: glossy(toon('#ffffff', { map: dome, vertexColors: true, emissive: '#2a1040', emissiveIntensity: 0.04 }), 1),
+    gold: glossy(toon('#ffffff', { vertexColors: true, emissive: '#6a4a10', emissiveIntensity: 0.08 }), 0.7),
+    garden: toon('#ffffff', { map: garden, vertexColors: true, roughness: .95 }),
+    paving: toon('#ffffff', { map: courtFloorTex(), vertexColors: true, emissive: '#2a1838', emissiveIntensity: 0.025 }),
+    steps: toon('#ffffff', { map: steps, vertexColors: true, emissive: '#2a1838', emissiveIntensity: 0.025 }),
     rose: new THREE.MeshBasicMaterial({ map: roseWindowTexture(), toneMapped: false }),
     rose12: toon('#ffffff', { map: rose12Tex(), emissive: '#8a7cff', emissiveIntensity: 0.5, vertexColors: true }),
     crystal: am.crystal,
     brocade: glossy(toon('#ffffff', { map: brocadeTex(), vertexColors: true, emissive: '#5a3a10', emissiveIntensity: 0.5 }), 0.6),
-    petal: toon('#ffffff', { map: petalTex(), vertexColors: true, emissive: '#2a1838', emissiveIntensity: 0.3 }),
-    medallion: toon('#ffffff', { map: medallionTex(), vertexColors: true, emissive: '#3040c0', emissiveIntensity: 0.45 }),
-    carve: toon('#ffffff', { map: carveTex(), vertexColors: true, emissive: '#2a1838', emissiveIntensity: 0.3 }),
-    band: toon('#ffffff', { map: archBandTex(), vertexColors: true, emissive: '#2a2050', emissiveIntensity: 0.35 }),
-    ashlar: toon('#ffffff', { map: ashlarTex(), vertexColors: true, emissive: '#2a1838', emissiveIntensity: 0.3 }),
-    shaft: toon('#ffffff', { map: shaftTex(), vertexColors: true, emissive: '#2a1838', emissiveIntensity: 0.3 }),
-    pier: toon('#ffffff', { map: pierTex(), vertexColors: true, emissive: '#2a1838', emissiveIntensity: 0.3 }),
-    gable: toon('#ffffff', { map: gableTex(88, 48), vertexColors: true, emissive: '#2a1838', emissiveIntensity: 0.3 }),
-    corbel: toon('#ffffff', { map: corbelTex(), alphaTest: 0.5, vertexColors: true, emissive: '#2a1838', emissiveIntensity: 0.3 }),
-    jali: toon('#ffffff', { map: jali, alphaTest: 0.5, side: THREE.DoubleSide, vertexColors: true, emissive: '#2a1838', emissiveIntensity: 0.3 }),
+    petal: toon('#ffffff', { map: petalTex(), vertexColors: true, emissive: '#2a1838', emissiveIntensity: 0.025 }),
+    medallion: toon('#ffffff', { map: medallionTex(), vertexColors: true, emissive: '#3040c0', emissiveIntensity: 0.045 }),
+    carve: toon('#ffffff', { map: carveTex(), vertexColors: true, emissive: '#2a1838', emissiveIntensity: 0.025 }),
+    band: toon('#ffffff', { map: archBandTex(), vertexColors: true, emissive: '#2a2050', emissiveIntensity: 0.0255 }),
+    ashlar: toon('#ffffff', { map: ashlarTex(), vertexColors: true, emissive: '#2a1838', emissiveIntensity: 0.025 }),
+    shaft: toon('#ffffff', { map: shaftTex(), vertexColors: true, emissive: '#2a1838', emissiveIntensity: 0.025 }),
+    pier: toon('#ffffff', { map: pierTex(), vertexColors: true, emissive: '#2a1838', emissiveIntensity: 0.025 }),
+    gable: toon('#ffffff', { map: gableTex(88, 48), vertexColors: true, emissive: '#2a1838', emissiveIntensity: 0.025 }),
+    corbel: toon('#ffffff', { map: corbelTex(), alphaTest: 0.5, vertexColors: true, emissive: '#2a1838', emissiveIntensity: 0.025 }),
+    jali: toon('#ffffff', { map: jali, alphaTest: 0.5, side: THREE.DoubleSide, vertexColors: true, emissive: '#2a1838', emissiveIntensity: 0.025 }),
     water: waterMaterial(0.3, false, true),
     fall: waterMaterial(1, true, true),
     glass: additive('#bfe4ff', { opacity: 0.32, side: THREE.DoubleSide }),
@@ -873,7 +849,7 @@ export function createPalace(scene, preset, { makePortal } = {}) {
     if (PALACE_PLANS[k]) {                                       // a planned tier: rounded wings, walls dressed in real detail
       const pts = PALACE_PLANS[k];
       kit.add('ashlar', prism(pts, BASE[k], t, 12, 12), '#fff4f0', '#f0b8c0');                     // rose marble, deepening toward the foot
-      kit.add('garden', roofPlane(pts, t + 0.15), '#ffffff');
+      kit.add('garden', roofPlane(pts, t + 0.015), '#ffffff');
       const great = (x) => [-168, -92, 92, 168].some((c) => Math.abs(x - c) < 29) || Math.abs(x) < 62;
       edgesOf(pts).forEach((e) => {
         const back = e.nz < -0.7;
@@ -891,7 +867,7 @@ export function createPalace(scene, preset, { makePortal } = {}) {
       return;
     }
     kit.add(key, wallBox(w, t - BASE[k], d, cx, BASE[k], cz, tw, th), tint);
-    kit.add('garden', scaleUV(new THREE.PlaneGeometry(w, d).rotateX(-Math.PI / 2).translate(cx, t + 0.15, cz), w / 64, d / 64), '#ffffff');
+    kit.add('garden', scaleUV(new THREE.PlaneGeometry(w, d).rotateX(-Math.PI / 2).translate(cx, t + 0.015, cz), w / 64, d / 64), '#ffffff');
     kit.add('ivory', box(w + 2, 2.2, d + 2, cx, t - 2.2, cz), PEARL);                                  // cornice
     kit.add('gold', box(w + 2.4, 0.5, d + 2.4, cx, t - 2.9, cz), GOLD);
     // jali parapet with a gold rail and rose garlands; none where a tier meets the one beside it
@@ -923,7 +899,7 @@ export function createPalace(scene, preset, { makePortal } = {}) {
     if (b.kind === 'wing') {                                                  // a stepped wing on the ground-storey roof
       const h = b.top - 52;
       kit.add('ashlar', prism(b.pts, 48, b.top, 12, 12), '#fff4f0', '#f0b8c0');
-      kit.add('garden', roofPlane(b.pts, b.top + 0.15), '#ffffff');
+      kit.add('garden', roofPlane(b.pts, b.top + 0.015), '#ffffff');
       edgesOf(b.pts).forEach((e) => {
         if (e.nz < -0.7) return;
         parapet(e, b.top);
@@ -943,7 +919,7 @@ export function createPalace(scene, preset, { makePortal } = {}) {
     const front = edgesOf(b.pts)[0];
     const pts = b.pts.map((q, i) => (i < 2 ? [q[0] - front.nx * recess, q[1] - front.nz * recess] : q));
     kit.add(recess ? 'ivory' : 'ashlar', prism(pts, -4, b.top, 12, 12), recess ? '#eebcc4' : '#fff4f0', recess ? null : '#f0b8c0');
-    kit.add('garden', roofPlane(b.pts, b.top + 0.15), '#ffffff');
+    kit.add('garden', roofPlane(b.pts, b.top + 0.015), '#ffffff');
     const es = edgesOf(pts), ef = es[0];
     edgesOf(b.pts).forEach((e) => { if (e.nz > -0.7) parapet(e, b.top); });
     if (recess) arcadeFront(ef, 0, b.top, b.kind === 'return' ? 14 : 16);
@@ -1722,7 +1698,7 @@ export function createPalace(scene, preset, { makePortal } = {}) {
   for (const [x, y, z, s] of halosD) glows.push([wx(x), wy(y), wz(z), s * S]);
   const halos = haloPoints(glows, [1, 0.85, 0.7]);
   group.add(halos);
-  group.traverse((o) => { if (o.isMesh) { o.castShadow = false; o.receiveShadow = o.material !== mats.glass; } });
+  group.traverse((o) => { if (o.isMesh) { o.castShadow = !o.material.transparent && o.material !== mats.garden && o.material !== mats.glass; o.receiveShadow = o.material !== mats.glass; } });
 
   // ---- colliders, in world metres ----
   PALACE_TIERS.forEach(([x0, x1, z0, z1, t], k) => { if (!PALACE_PLANS[k]) addCollider({ minX: wx(x0), maxX: wx(x1), minZ: wz(z0), maxZ: wz(z1), y0: 0, y1: wy(t) - 3 }); });
@@ -1753,6 +1729,7 @@ export function createPalace(scene, preset, { makePortal } = {}) {
   let gateOpen = 0, gateTarget = 0, gateHold = 0;
   return {
     group, portals,
+    roofGardenClear: (x, z, r) => clear(x / S, z / S, r / S),
     gatePosition: new THREE.Vector3(0, CASTLE.y, GATE.z),
     rosePosition: new THREE.Vector3(0, wy(roseY), wz(GZ)),
     setGate(open, instant = false) { gateTarget = open ? 1 : 0; gateHold = 60; if (instant) gateOpen = gateTarget; },
@@ -1764,8 +1741,8 @@ export function createPalace(scene, preset, { makePortal } = {}) {
       mats.water.uniforms.uTime.value = t; mats.fall.uniforms.uTime.value = t;
       halos.material.uniforms.uTime.value = t;
       const n = MOOD.night.value;
-      for (const k of ['podium', 'wing', 'tower', 'spire', 'drum', 'lancet', 'gate']) mats[k].emissiveIntensity = 0.3 + 0.75 * n;
-      leafMat.emissiveIntensity = 0.45 + 0.6 * n;
+      for (const k of ['podium', 'wing', 'tower', 'spire', 'drum', 'lancet', 'gate']) mats[k].emissiveIntensity = 0.035 + 0.48 * n;
+      leafMat.emissiveIntensity = 0.015 + 0.08 * n;
       mats.rose.color.setScalar(0.65 + 0.45 * n);
       sprayMat.opacity = 0.22 + 0.06 * Math.sin(t * 3);
       for (const p of portals) p.disk.material.uniforms.uTime.value = t;
@@ -1787,7 +1764,7 @@ export function createPalace(scene, preset, { makePortal } = {}) {
 function buildRoofCourt(group, mats, am, out, X, Y, Z) {
   const HX = 60, HZ = 45, top = Y + 0.5, low = Y - 30, high = Y + 400;
   const kit = new Kit().frame(X, Y, Z);
-  const floor = new THREE.Mesh(new THREE.PlaneGeometry(HX * 2, HZ * 2).rotateX(-Math.PI / 2), toon('#ffffff', { map: (() => { const t = courtFloorTex(); t.repeat.set(HX / 8, HZ / 8); return t; })(), emissive: '#2a1838', emissiveIntensity: 0.3 }));
+  const floor = new THREE.Mesh(new THREE.PlaneGeometry(HX * 2, HZ * 2).rotateX(-Math.PI / 2), toon('#ffffff', { map: (() => { const t = courtFloorTex(); t.repeat.set(HX / 8, HZ / 8); return t; })(), emissive: '#2a1838', emissiveIntensity: 0.025 }));
   floor.position.set(X, top, Z); group.add(floor);
   addPad({ x: X, z: Z, hw: HX, hd: HZ, y: top, y0: low });
   // lotus balustrade round the court, open on the south side
