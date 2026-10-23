@@ -133,6 +133,12 @@ export function palaceRoofY(x, z) {
 // The Rose Gate (A003): 54 x 93 m drawn, its sill on the podium roof, its face at z 205.
 export const GATE = { w: 54 * S, h: 93 * S, sill: 52 * S, z: 205 * S };
 export const CASTLE = { x: 0, z: GATE.z, y: PAL.y + GATE.sill, base: PAL.y };   // z: gate face, y: gate sill
+const GATE_SPRING = (93 - 54 * 0.866) * S;
+export const PALACE_ENTRANCE = Object.freeze({
+  minX: -27 * S, maxX: 27 * S, minZ: 171 * S, maxZ: 205 * S,
+  y0: CASTLE.y, y1: CASTLE.y + GATE_SPRING, colliderY0: CASTLE.y - 2,
+  floorY: CASTLE.y, ceilingY: CASTLE.y + GATE_SPRING,
+});
 // The cascade court cuts the podium: a water stair between twin flights, from the gate landing down to the upper terrace.
 export const CASCADE = { z0: 235 * S, z1: 340 * S, hw: 110 * S, water: 30 * S, flights: [[-72.5 * S, 42.5 * S], [72.5 * S, 42.5 * S]] };
 // G04 terrace gardens from the palace down to the lake (sheet 15): upper, middle, lower
@@ -541,6 +547,11 @@ export function builtHeight(x, z, y = 0) {
     const dx = x - p.x, dz = z - p.z, u = dx * p.c - dz * p.s, v = dx * p.s + dz * p.c;
     if (Math.abs(u) <= p.hw && Math.abs(v) <= p.hd) return p.y;
   }
+  // The cut-through arch has a level walkable vestibule floor. Check this before the tier
+  // roof query, which otherwise returns the upper storey or leaves the lower level unsupported.
+  if (x >= PALACE_ENTRANCE.minX && x <= PALACE_ENTRANCE.maxX
+    && z >= PALACE_ENTRANCE.minZ && z <= PALACE_ENTRANCE.maxZ
+    && y >= PALACE_ENTRANCE.floorY - 1 && y <= PALACE_ENTRANCE.ceilingY + 1) return PALACE_ENTRANCE.floorY;
   const ax = Math.abs(x);
   // up on the palace: the gate landing and the garden roof of whichever tier you stand on
   const roof = palaceRoofY(x, z);

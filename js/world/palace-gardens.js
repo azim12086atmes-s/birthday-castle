@@ -117,7 +117,7 @@ export function createPalaceGardens(scene, preset, { clearRoof = () => true } = 
     }
     return false;
   }
-  function addBed(x, y, z, a, b, angle, seed, roof = false) {
+  function addBed(x, y, z, a, b, angle, seed, roof = false, { trees = 2, hedge = true } = {}) {
     const cs = Math.cos(angle), sn = Math.sin(angle);
     if (blocked(x, z, y, Math.max(a, b) * 1.12)) return;
     // Bounds, existing architecture and the actual local roof are sampled, not guessed.
@@ -133,11 +133,11 @@ export function createPalaceGardens(scene, preset, { clearRoof = () => true } = 
       const key = ix + ',' + iz; if (!index.has(key)) index.set(key, []); index.get(key).push(bed);
     }
     // Clipped, rounded hedges and multi-crown trees produce depth even in long views.
-    for (let k = 0; k < 18; k++) {
+    for (let k = 0; hedge && k < 18; k++) {
       const t = k / 18 * TAU, u = Math.cos(t) * a * .77, v = Math.sin(t) * b * .77;
       hedges.push([x + u * cs - v * sn, y + .75, z + u * sn + v * cs, 1.9 + hash(k, seed) * .8, .7 + hash(k, seed, 1) * .35, 1.4, '#526b3b']);
     }
-    for (let k = 0; k < 2; k++) {
+    for (let k = 0; k < trees; k++) {
       const sign = k ? 1 : -1, u = a * .38 * sign, h = 6 + hash(seed, k, 7) * 6;
       const tx = x + u * cs, tz = z + u * sn;
       trunks.push([tx, y + h * .35, tz, .32, h * .7, .32]);
@@ -175,6 +175,12 @@ export function createPalaceGardens(scene, preset, { clearRoof = () => true } = 
       if (Math.abs((palaceRoofY(x, z) ?? -9999) - y) > .01 || !clearRoof(x, z, 30)) continue;
       addBed(x, y + .07, z, 27 + hash(seed, 3) * 5, 20 + hash(seed, 7) * 4, (hash(seed, 4) - .5) * .5, seed, true);
     }
+  }
+
+  // Human-scale planting inside the existing court: the central avenue, cake,
+  // west fountain, east pool, conservatory and corner kiosks stay clear.
+  for (const [i, [dx, dz, a, b]] of [[-37,33,9,3],[22,34,10,3],[-50,-18,3,7],[35,0,2,11],[-39,-25,9,3]].entries()) {
+    addBed(-192.5+dx,1392.04,-412.5+dz,a,b,0,90000+i,false,{trees:0,hedge:false});
   }
 
   function batch(name, geometry, material, rows, colorAt = -1) {
@@ -248,6 +254,8 @@ export function createPalaceGardens(scene, preset, { clearRoof = () => true } = 
   const capacity = low ? 8500 : high ? 32000 : 19000;
   const grass = new THREE.InstancedMesh(tuftGeo(), plantMaterial(tuftTexture()), capacity);
   const flowers = new THREE.InstancedMesh(flowerGeo(), plantMaterial(flowerTexture(), true), Math.floor(capacity * .34));
+  grass.name = 'palace-garden-grass';
+  flowers.name = 'palace-garden-flowers';
   for (const m of [grass, flowers]) { m.count = 0; m.frustumCulled = false; m.receiveShadow = true; m.instanceMatrix.setUsage(THREE.DynamicDrawUsage); m.setColorAt(0, new THREE.Color()); group.add(m); }
   // Golden Thread's detailed leaf sprays sit over smooth canopy masses up close.
   const leafGeo = new THREE.PlaneGeometry(1, 1), luv = leafGeo.attributes.uv;
@@ -269,9 +277,10 @@ export function createPalaceGardens(scene, preset, { clearRoof = () => true } = 
     leaves.count = n; leaves.instanceMatrix.needsUpdate = true; if (leaves.instanceColor) leaves.instanceColor.needsUpdate = true;
   }
   const spacing = low ? .86 : .66, radius = low ? 40 : high ? 68 : 53, N = Math.ceil(radius * 2 / spacing);
-  let bake = null, focusX = Infinity, focusZ = Infinity;
+  let bake = null, focusX = Infinity, focusY = Infinity, focusZ = Infinity;
+  let cameraX = Infinity, cameraY = Infinity, cameraZ = Infinity, nearCamera = false;
   const flowerColors = ['#ead6d5', '#d29bb5', '#c5b7d6', '#eee1bd', '#b582a9'];
-  function startBake(p) { bake = { ix: Math.floor(p.x / spacing) - (N >> 1), iz: Math.floor(p.z / spacing) - (N >> 1), row: 0, nt: 0, nf: 0, y: p.y }; focusX = p.x; focusZ = p.z; leafWindow(p); }
+  function startBake(p) { bake = { ix: Math.floor(p.x / spacing) - (N >> 1), iz: Math.floor(p.z / spacing) - (N >> 1), row: 0, nt: 0, nf: 0, y: p.y }; focusX = p.x; focusY = p.y; focusZ = p.z; leafWindow(p); }
   function bakeRows(rows) {
     const b = bake; if (!b) return;
     for (let k = 0; k < rows && b.row < N; k++, b.row++) for (let col = 0; col < N; col++) {
@@ -299,12 +308,31 @@ export function createPalaceGardens(scene, preset, { clearRoof = () => true } = 
       MEADOW_TIME.value = t;
       for (const lamp of lamps) lamp.material.emissiveIntensity = MOOD.night.value * 1.8;
       if (!camera) return;
-      const p = camera.position, near = beds.some(b => Math.abs(p.y - b.y) < 65 && Math.hypot(p.x - b.x, p.z - b.z) < radius + Math.max(b.a, b.b));
+      const p = camera.position;
+      cameraX = p.x; cameraY = p.y; cameraZ = p.z;
+      const near = beds.some(b => Math.abs(p.y - b.y) < 65 && Math.hypot(p.x - b.x, p.z - b.z) < radius + Math.max(b.a, b.b));
+      nearCamera = near;
       grass.visible = flowers.visible = leaves.visible = near;
       if (!near) return;
-      if (!bake && Math.hypot(p.x - focusX, p.z - focusZ) > 8) startBake(p);
-      if (bake && Math.hypot(p.x - focusX, p.z - focusZ) > radius * .6) startBake(p);
+      const moved = Math.hypot(p.x - focusX, p.z - focusZ);
+      const climbed = Math.abs(p.y - focusY);
+      if (!bake && (moved > 8 || climbed > 8)) startBake(p);
+      if (bake && (moved > radius * .6 || climbed > 8)) startBake(p);
       bakeRows(low ? 10 : 16);
+    },
+    get plantBakeStatus() {
+      return {
+        near: nearCamera,
+        baking: !!bake,
+        settled: nearCamera && !bake && Math.hypot(cameraX - focusX, cameraZ - focusZ) <= 8 && Math.abs(cameraY - focusY) <= 8,
+        row: bake?.row ?? N,
+        rows: N,
+        focus: { x: focusX, y: focusY, z: focusZ },
+        camera: { x: cameraX, y: cameraY, z: cameraZ },
+        grass: grass.count,
+        flowers: flowers.count,
+        leaves: leaves.count,
+      };
     },
     dispose() {
       const geos = new Set(), mats = new Set(); group.traverse(o => { if (o.geometry) geos.add(o.geometry); if (o.material) mats.add(o.material); });

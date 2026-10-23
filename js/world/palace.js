@@ -16,7 +16,8 @@ import { palaceStone as toon, gardenPavingTexture } from './palace-gardens.js';
 import { glowTexture, rng } from './textures.js';
 import { Kit, box, cyl, lathe, cap, scaleUV, wallBox, waterMaterial, haloPoints, roseWindowTexture } from './kit.js';
 import { pointedArchShape, pointedArchPath, archFrameGeometry } from './arch.js';
-import { S, PAL, PALACE_TIERS, PALACE_PLANS, PALACE_BLOCKS, inPlan, tierContains, palaceTop, GATE, CASTLE, CASCADE, PLAZA, PORTALS, addCollider, addPad } from './layout.js';
+import { archWallGeometry, fanlightGeometry, spandrelGeometry, rectangularPortalFrame, subtractEntrance } from './palace-entrance.js';
+import { S, PAL, PALACE_TIERS, PALACE_PLANS, PALACE_BLOCKS, inPlan, tierContains, palaceTop, GATE, CASTLE, CASCADE, PLAZA, PORTALS, PALACE_ENTRANCE, COLLIDERS, addCollider, addPad } from './layout.js';
 import {
   IVORY, PEARL, ROSE, GOLD, paint, merge, finialGeo, spireletGeo, cypressGeo, blossomGeo, orangeTreeGeo, roseClumpGeo,
   postLampGeo, hangingLanternGeo, lotusFountainGeo, benchGeo, artifactMaterials, instances, tiledInstances,
@@ -610,6 +611,7 @@ const wx = (x) => x * S, wz = (z) => z * S, wy = (y) => BY + y * S;
 // built into `body`, which is scaled by S. Human-scale things (stair lamps, the roof court)
 // go straight into `group` in world metres.
 export function createPalace(scene, preset, { makePortal } = {}) {
+  const colliderStart = COLLIDERS.length;
   const group = new THREE.Group(); group.name = 'palace';
   const body = new THREE.Group(); body.name = 'palace-body'; body.position.set(0, BY, 0); body.scale.setScalar(S);
   const detail = new THREE.Group(); detail.name = 'palace-detail';
@@ -628,10 +630,10 @@ export function createPalace(scene, preset, { makePortal } = {}) {
     tower: tile(towerTex(), '#ffd36a'),
     spire: tile(spireTex(), '#9fa8ff'),
     drum: tile(drumTex(), '#a99bff'),
-    lancet: tile(lancetT, '#b0a8ff', { side: THREE.DoubleSide }),
-    lancetDark: tile(lancetT, '#3a46c8', { side: THREE.DoubleSide }),
-    starwin: tile(starWin, '#8a90ff', { side: THREE.DoubleSide }),     // the small arched windows: dark cobalt
-    gate: tile(gateTex(), '#9a9cff', { side: THREE.DoubleSide }),
+    lancet: tile(lancetT, '#b0a8ff', { side: THREE.DoubleSide, polygonOffset: true, polygonOffsetFactor: -1, polygonOffsetUnits: -2 }),
+    lancetDark: tile(lancetT, '#3a46c8', { side: THREE.DoubleSide, polygonOffset: true, polygonOffsetFactor: -1, polygonOffsetUnits: -2 }),
+    starwin: tile(starWin, '#8a90ff', { side: THREE.DoubleSide, polygonOffset: true, polygonOffsetFactor: -1, polygonOffsetUnits: -2 }),     // the small arched windows: dark cobalt
+    gate: tile(gateTex(), '#9a9cff', { side: THREE.DoubleSide, polygonOffset: true, polygonOffsetFactor: -1, polygonOffsetUnits: -2 }),
     dome: glossy(toon('#ffffff', { map: dome, vertexColors: true, emissive: '#2a1040', emissiveIntensity: 0.04 }), 1),
     gold: glossy(toon('#ffffff', { vertexColors: true, emissive: '#6a4a10', emissiveIntensity: 0.08 }), 0.7),
     garden: toon('#ffffff', { map: garden, vertexColors: true, roughness: .95 }),
@@ -641,7 +643,7 @@ export function createPalace(scene, preset, { makePortal } = {}) {
     rose12: toon('#ffffff', { map: rose12Tex(), emissive: '#8a7cff', emissiveIntensity: 0.5, vertexColors: true }),
     crystal: am.crystal,
     brocade: glossy(toon('#ffffff', { map: brocadeTex(), vertexColors: true, emissive: '#5a3a10', emissiveIntensity: 0.5 }), 0.6),
-    petal: toon('#ffffff', { map: petalTex(), vertexColors: true, emissive: '#2a1838', emissiveIntensity: 0.025 }),
+    petal: toon('#ffffff', { map: petalTex(), vertexColors: true, emissive: '#2a1838', emissiveIntensity: 0.025, polygonOffset: true, polygonOffsetFactor: -1, polygonOffsetUnits: -2 }),
     medallion: toon('#ffffff', { map: medallionTex(), vertexColors: true, emissive: '#3040c0', emissiveIntensity: 0.045 }),
     carve: toon('#ffffff', { map: carveTex(), vertexColors: true, emissive: '#2a1838', emissiveIntensity: 0.025 }),
     band: toon('#ffffff', { map: archBandTex(), vertexColors: true, emissive: '#2a2050', emissiveIntensity: 0.0255 }),
@@ -714,10 +716,23 @@ export function createPalace(scene, preset, { makePortal } = {}) {
   });
   const onEdge = (k, e) => k.frame(e.mx, 0, e.mz, -e.ang);
   // prism walls round an outline, textured in whole tiles per edge
-  const prism = (pts, y0, y1, tileW, tileH) => {
+  const prism = (pts, y0, y1, tileW, tileH, doorway = null) => {
     const pos = [], uv = [], h = y1 - y0, vr = Math.max(1, Math.round(h / tileH));
     for (const e of edgesOf(pts)) {
       const [ax, az] = e.a, [bx, bz] = e.b, ur = Math.max(1, Math.round(e.len / tileW));
+      if (doorway && doorway.zs.some((z) => Math.abs(az - z) < 1e-6 && Math.abs(bz - z) < 1e-6)) {
+        // A true rectangular aperture through the T2 front face, not a texture over a solid wall.
+        const x0 = Math.min(ax, bx), x1 = Math.max(ax, bx), sh = new THREE.Shape();
+        sh.moveTo(x0, y0); sh.lineTo(x1, y0); sh.lineTo(x1, y1); sh.lineTo(x0, y1); sh.closePath();
+        const hole = new THREE.Path();
+        hole.moveTo(doorway.minX, doorway.y0); hole.lineTo(doorway.maxX, doorway.y0);
+        hole.lineTo(doorway.maxX, doorway.y1); hole.lineTo(doorway.minX, doorway.y1); hole.closePath(); sh.holes.push(hole);
+        const g = new THREE.ShapeGeometry(sh, 1), p = g.attributes.position, guv = g.attributes.uv;
+        for (let i = 0; i < p.count; i++) guv.setXY(i, (p.getX(i) - x0) / tileW, (p.getY(i) - y0) / tileH);
+        if(e.nz<0)g.rotateY(Math.PI);
+        kit.add('ashlar', g.translate(0, 0, az), '#fff4f0', '#f0b8c0');
+        continue;
+      }
       pos.push(ax, y0, az, bx, y0, bz, bx, y1, bz, ax, y0, az, bx, y1, bz, ax, y1, az);
       uv.push(0, 0, ur, 0, ur, vr, 0, 0, ur, vr, 0, vr);
     }
@@ -848,7 +863,8 @@ export function createPalace(scene, preset, { makePortal } = {}) {
     const [key, tint, tw, th] = LOOK[k], w = x1 - x0, d = z1 - z0, cx = (x0 + x1) / 2, cz = (z0 + z1) / 2;
     if (PALACE_PLANS[k]) {                                       // a planned tier: rounded wings, walls dressed in real detail
       const pts = PALACE_PLANS[k];
-      kit.add('ashlar', prism(pts, BASE[k], t, 12, 12), '#fff4f0', '#f0b8c0');                     // rose marble, deepening toward the foot
+      const gateCut = k === 1 ? { zs: [FRONT], minX: -GW / 2, maxX: GW / 2, y0: SILL, y1: SILL + GH - GW * 0.866 } : null;
+      kit.add('ashlar', prism(pts, BASE[k], t, 12, 12, gateCut), '#fff4f0', '#f0b8c0');             // rose marble, deepening toward the foot
       kit.add('garden', roofPlane(pts, t + 0.015), '#ffffff');
       const great = (x) => [-168, -92, 92, 168].some((c) => Math.abs(x - c) < 29) || Math.abs(x) < 62;
       edgesOf(pts).forEach((e) => {
@@ -918,7 +934,8 @@ export function createPalace(scene, preset, { makePortal } = {}) {
     const recess = b.kind === 'arcade' || b.kind === 'return' ? 4 : 0;
     const front = edgesOf(b.pts)[0];
     const pts = b.pts.map((q, i) => (i < 2 ? [q[0] - front.nx * recess, q[1] - front.nz * recess] : q));
-    kit.add(recess ? 'ivory' : 'ashlar', prism(pts, -4, b.top, 12, 12), recess ? '#eebcc4' : '#fff4f0', recess ? null : '#f0b8c0');
+    const hallCut = b.kind === 'hall' ? { zs: [191, 179], minX: -GW / 2, maxX: GW / 2, y0: SILL, y1: SILL + GH - GW * 0.866 } : null;
+    kit.add(recess ? 'ivory' : 'ashlar', prism(pts, -4, b.top, 12, 12, hallCut), recess ? '#eebcc4' : '#fff4f0', recess ? null : '#f0b8c0');
     kit.add('garden', roofPlane(b.pts, b.top + 0.015), '#ffffff');
     const es = edgesOf(pts), ef = es[0];
     edgesOf(b.pts).forEach((e) => { if (e.nz > -0.7) parapet(e, b.top); });
@@ -984,7 +1001,10 @@ export function createPalace(scene, preset, { makePortal } = {}) {
     kit.add('ivory', new THREE.TorusGeometry(11.4 * kq, 0.9 * kq, 5, 28).translate(x, y + 52 * (h / 69), z - 0.7), PEARL);   // the rose's stone ring
     kit.add('gold', new THREE.TorusGeometry(10.4 * kq, 0.35, 4, 28).translate(x, y + 52 * (h / 69), z - 0.3), GOLD);
     // (no gable over these in the owner's hi-res elevation: the arch rises into carved rose spandrels)
-    kit.add('petal', scaleUV(new THREE.PlaneGeometry(w + 9.6, 136.4 - y - hs).translate(x, (136.4 + y + hs) / 2, z - 1.3), (w + 9.6) / 10, (136.4 - y - hs) / 10), '#ffffff');   // rose petal relief in the spandrels (owner, 12 Oct)
+    const spandrel = spandrelGeometry(w + 9.6, 136.4 - y, 136.4 - y, w, h);
+    const spuv = spandrel.attributes.uv, spp = spandrel.attributes.position;
+    for (let i = 0; i < spp.count; i++) spuv.setXY(i, (spp.getX(i) + (w + 9.6) / 2) / 10, spp.getY(i) / 10);
+    kit.add('petal', spandrel.translate(x, y, z - 1.3), '#ffffff');                                    // rose relief outside the pane's arch
     kit.add('gold', finialGeo(1.4).translate(x, y + h + 5.6, z + 1.4), GOLD);                           // a gold fleuron at the apex
     for (const sd of [-1, 1]) {
       kit.add('ivory', cyl(0.8, 0.8, hs, 8, x + sd * (w / 2 + 2.6), y, z + 0.8), PEARL);                  // colonnette
@@ -1035,8 +1055,26 @@ export function createPalace(scene, preset, { makePortal } = {}) {
   // G6 rose-glass lancet strips beside the piers; G7 the stained-glass door: lights, tracery tree, star medallion
   const PF = GZ + 9, PW = 44, GB = 148, GA = 196;                           // porch front, gable half width, base, apex
   const ORD = [0, 1, 2, 3, 4].map((k) => ({ w: GW + 3 + k * 3.2, h: GH + 2 + k * 2, z: GZ + 0.6 + k * 1.6 }));
-  kit.add('wing', wallBox(110, GB - 50, GZ - FRONT, 0, 50, (FRONT + GZ) / 2, 27.5, GB - 50), PEARL);
-  kit.add('gate', archPanel(GW, GH).translate(0, SILL, GZ + 0.2), '#ffffff');
+  // The old backing box and fixed full-height pane made this look like a closed gate even
+  // after its lower leaves swung away. Keep the 14 m deep masonry, but cut a real arch through it.
+  const gateWall = new THREE.Mesh(paint(archWallGeometry(110, SILL, GB, GW, GH, SILL, GZ - FRONT).translate(0, 0, FRONT), PEARL), mats.wing);
+  gateWall.name = 'palace-gate-arch-wall'; gateWall.castShadow = gateWall.receiveShadow = true; body.add(gateWall);
+  const spring = GH - GW * 0.866, ceiling = SILL + spring;
+  const fanlight = new THREE.Mesh(paint(fanlightGeometry(GW, GH).translate(0, SILL, GZ + 0.2), '#ffffff'), mats.gate);
+  fanlight.name = 'palace-gate-fanlight'; fanlight.castShadow = false; body.add(fanlight);
+  // A level gallery, 34 drawn metres deep, continuing through the central arcaded hall.
+  const galleryFloor = new THREE.Mesh(paint(scaleUV(new THREE.PlaneGeometry(GW, GZ - 171).rotateX(-Math.PI / 2).translate(0, SILL + 0.015, (171 + GZ) / 2), 1.5, 1.5), '#ffffff'), mats.paving);
+  galleryFloor.name = 'palace-gate-vestibule-floor'; galleryFloor.receiveShadow = true; body.add(galleryFloor);
+  for (const side of [-1, 1]) {
+    const wall = new THREE.Mesh(paint(box(1.1, spring, GZ - 171, side * (GW / 2 + 0.55), SILL, (171 + GZ) / 2), PEARL), mats.ivory);
+    wall.name = `palace-gate-vestibule-side-${side}`; wall.castShadow = wall.receiveShadow = true; body.add(wall);
+  }
+  const galleryCeiling = new THREE.Mesh(paint(box(GW + 2.2, 1.1, GZ - 171, 0, ceiling, (171 + GZ) / 2), PEARL), mats.wing);
+  galleryCeiling.name = 'palace-gate-vestibule-ceiling'; galleryCeiling.castShadow = galleryCeiling.receiveShadow = true; body.add(galleryCeiling);
+  const backFrame = new THREE.Mesh(paint(rectangularPortalFrame(60, SILL, ceiling + 1.65, GW, SILL, ceiling, 1.2).translate(0, 0, 171), PEARL), mats.wing);
+  backFrame.name = 'palace-gate-vestibule-inner-arch'; backFrame.castShadow = backFrame.receiveShadow = true; body.add(backFrame);
+  const backWall = new THREE.Mesh(paint(box(GW + 2.2, spring, 0.6, 0, SILL, 170.7), PEARL), mats.ivory);
+  backWall.name = 'palace-gate-vestibule-back-wall'; backWall.castShadow = backWall.receiveShadow = true; body.add(backWall);
   ORD.forEach(({ w, h, z }, k) => {
     kit.add('ivory', archFrameGeometry(w, h, 1.8, 1.6).translate(0, SILL - 0.4, z), k === 4 ? ROSE : (k % 2 ? IVORY : PEARL));
     if (k === 1 || k === 3) kit.add('gold', new THREE.TubeGeometry(pointedArchPath(w + 0.2, h + 0.4), 48, k === 1 ? 0.7 : 0.5, 6, false).translate(0, SILL - 0.4, z + 0.8), GOLD);   // gold rolls
@@ -1171,15 +1209,27 @@ export function createPalace(scene, preset, { makePortal } = {}) {
     pool.scale.set(GW * 1.6, 1, 30); pool.position.set(0, SILL + 0.5, GZ + 12); body.add(pool);
   }
   // G7 the door leaves: the lower half of the stained-glass door, each swinging on its jamb
-  const lt = doorTex(), leafMat = toon('#ffffff', { map: lt.map, emissiveMap: lt.glow, emissive: '#b0a0ff', emissiveIntensity: 0.6, side: THREE.DoubleSide });
+  const lt = doorTex(), leafMat = toon('#ffffff', { map: lt.map, emissiveMap: lt.glow, emissive: '#b0a0ff', emissiveIntensity: 0.6, side: THREE.DoubleSide, polygonOffset: true, polygonOffsetFactor: -1, polygonOffsetUnits: -2 });
   const hs = hsp;
   const leaves = [-1, 1].map((sd) => {
     const pivot = new THREE.Group(); pivot.position.set(sd * GW / 2, SILL, GZ + 0.4);
     const geo = new THREE.PlaneGeometry(GW / 2, hs).translate(-sd * GW / 4, hs / 2, 0), uv = geo.attributes.uv;
     for (let i = 0; i < uv.count; i++) uv.setXY(i, (sd < 0 ? 0 : 0.5) + uv.getX(i) * 0.5, uv.getY(i) * (hs / GH));
     const leaf = new THREE.Mesh(geo, leafMat);
+    leaf.name = sd < 0 ? 'palace-gate-leaf-left' : 'palace-gate-leaf-right';
     pivot.add(leaf); body.add(pivot);
-    return { pivot, s: sd };
+    return { pivot, leaf, s: sd };
+  });
+  let gateOpen = 0, gateTarget = 0, gateHold = 0;
+  const leafColliders = leaves.map(() => ({ minX: 0, maxX: 0, minZ: 0, maxZ: 0, y0: CASTLE.y, y1: CASTLE.y + hs * S, gateLeaf: true }));
+  const updateLeafColliders = () => leaves.forEach(({ s }, i) => {
+    const c = leafColliders[i], a = s * gateOpen * 1.45, ca = Math.cos(a), sa = Math.sin(a);
+    const x0 = s < 0 ? 0 : -GW / 2, x1 = s < 0 ? GW / 2 : 0;
+    const px = s * GW / 2, pz = GZ + 0.4;
+    const xa = px + x0 * ca, xb = px + x1 * ca;
+    const za = pz - x0 * sa, zb = pz - x1 * sa;
+    c.minX = Math.min(xa, xb) * S - 0.4; c.maxX = Math.max(xa, xb) * S + 0.4;
+    c.minZ = Math.min(za, zb) * S - 0.4; c.maxZ = Math.max(za, zb) * S + 0.4;
   });
 
   // ---- the cascade court: a three-basin water stair between curved sideways stairs (owner, 12 Oct):
@@ -1702,12 +1752,18 @@ export function createPalace(scene, preset, { makePortal } = {}) {
 
   // ---- colliders, in world metres ----
   PALACE_TIERS.forEach(([x0, x1, z0, z1, t], k) => { if (!PALACE_PLANS[k]) addCollider({ minX: wx(x0), maxX: wx(x1), minZ: wz(z0), maxZ: wz(z1), y0: 0, y1: wy(t) - 3 }); });
-  addCollider({ minX: wx(-55), maxX: wx(55), minZ: wz(FRONT), maxZ: wz(GZ + 1), y0: 0, y1: wy(182) });             // the gate block
+  addCollider({ minX: wx(-55), maxX: wx(55), minZ: wz(FRONT), maxZ: wz(GZ), y0: 0, y1: wy(182) });                // the gate frame; aperture is carved below
   addCollider({ minX: -CASCADE.water, maxX: CASCADE.water, minZ: CASCADE.z0, maxZ: CASCADE.z1, y0: 0, y1: CASTLE.y - 2 });   // the water stair
   for (const c of solids) {
     if (c.r !== undefined) addCollider({ x: wx(c.x), z: wz(c.z), r: c.r * S, y0: wy(c.y0), y1: wy(c.y1) });
     else addCollider({ minX: wx(c.minX), maxX: wx(c.maxX), minZ: wz(c.minZ), maxZ: wz(c.maxZ), y0: wy(c.y0), y1: wy(c.y1) });
   }
+  // Carve only this palace's colliders; other world structures retain their original bounds.
+  const palaceColliders = COLLIDERS.splice(colliderStart);
+  const portalCut = { ...PALACE_ENTRANCE, y0: PALACE_ENTRANCE.colliderY0 };
+  COLLIDERS.push(...palaceColliders.flatMap((c) => subtractEntrance(c, portalCut)));
+  updateLeafColliders();
+  leafColliders.forEach(addCollider);
   scene.add(group);
 
   // portals: from the upper terrace up to the roof court and back down
@@ -1726,18 +1782,21 @@ export function createPalace(scene, preset, { makePortal } = {}) {
   const centre = new THREE.Vector3(wx(30), wy(150), 0);
   // the gate stands closed, showing its glass, and swings open as someone walks up the cascade;
   // the celebration can hold it open or shut for a while
-  let gateOpen = 0, gateTarget = 0, gateHold = 0;
   return {
     group, portals,
     roofGardenClear: (x, z, r) => clear(x / S, z / S, r / S),
     gatePosition: new THREE.Vector3(0, CASTLE.y, GATE.z),
     rosePosition: new THREE.Vector3(0, wy(roseY), wz(GZ)),
-    setGate(open, instant = false) { gateTarget = open ? 1 : 0; gateHold = 60; if (instant) gateOpen = gateTarget; },
+    vestibule: { ...PALACE_ENTRANCE },
+    gateOpening: () => gateOpen,
+    gateLeaves: leaves.map(({ leaf, pivot }, i) => ({ leaf, pivot, collider: leafColliders[i] })),
+    setGate(open, instant = false) { gateTarget = open ? 1 : 0; gateHold = 60; if (instant) gateOpen = gateTarget; updateLeafColliders(); },
     update(t, dt, camera) {
       if (gateHold > 0) gateHold -= dt || 0.016;
       else if (camera) gateTarget = Math.hypot(camera.position.x, camera.position.z - GATE.z) < 450 && camera.position.y < CASTLE.y + 300 ? 1 : 0;
       gateOpen += (gateTarget - gateOpen) * Math.min(1, (dt || 0.016) * 0.6);
       for (const { pivot, s } of leaves) pivot.rotation.y = s * gateOpen * 1.45;
+      updateLeafColliders();
       mats.water.uniforms.uTime.value = t; mats.fall.uniforms.uTime.value = t;
       halos.material.uniforms.uTime.value = t;
       const n = MOOD.night.value;
